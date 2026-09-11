@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Banknote, Building2, CalendarClock } from "lucide-react";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg, sectionY, sectionYLoose, focusRing } from "@/components/ui/layout-utils";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
+import { CoverageCards, type CoverageItem } from "@accounting-network/web-shared/design/marketing/CoverageCards";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { LEAD_PROOF_POINTS } from "@/lib/blog-category-copy";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { calculateEquityPartnerBuyIn } from "@/lib/tools/compute/equity-partner-buyin";
 import { equityPartnerBuyInConfig } from "@/lib/tools/premium/configs/equity-partner-buyin";
@@ -106,20 +114,20 @@ type ExampleRow = { label: string; value: string; strong?: boolean };
 
 function ExampleTable({ rows }: { rows: ExampleRow[] }) {
   return (
-    <div className="overflow-x-auto rounded-xl border border-[var(--border)]">
+    <div className="overflow-x-auto rounded-xl ring-1 ring-slate-200/70">
       <table className="w-full text-sm">
         <tbody>
           {rows.map((r, i) => (
             <tr
               key={i}
-              className={`border-b border-[var(--border)] last:border-0 ${
-                r.strong ? "bg-[var(--surface-elevated)]" : "bg-white"
+              className={`border-b border-slate-200 last:border-0 ${
+                r.strong ? "bg-slate-100" : "bg-white"
               }`}
             >
-              <td className={`px-4 py-3 ${r.strong ? "font-semibold text-[var(--ink)]" : "text-[var(--ink-soft)]"}`}>
+              <td className={`px-4 py-3 ${r.strong ? "font-semibold text-slate-900" : "text-slate-600"}`}>
                 {r.label}
               </td>
-              <td className={`px-4 py-3 text-right tabular-nums ${r.strong ? "font-bold text-[var(--ink)]" : "text-[var(--ink-soft)]"}`}>
+              <td className={`px-4 py-3 text-right tabular-nums ${r.strong ? "font-bold text-slate-900" : "text-slate-600"}`}>
                 {r.value}
               </td>
             </tr>
@@ -133,6 +141,38 @@ function ExampleTable({ rows }: { rows: ExampleRow[] }) {
 function routeLabel(r: string) {
   return { personalLoan: "Personal loan with ITA 2007 s.398 relief", firmLoan: "Firm-facilitated loan", stagedDrawings: "Staged drawings" }[r] ?? r;
 }
+
+/**
+ * The route summary the prose intro had no visual for (DS 0.2).
+ *
+ * Every string in it is DERIVED, never authored: the titles are the existing
+ * `routeLabel()` values, the row labels are the ones the worked-example tables
+ * below already render verbatim ("Monthly net cost", "s.398 relief",
+ * "Effective monthly cost", "Nil (firm deducts)", "Annual drawings diverted",
+ * "Interest cost", "Nil"), and every figure comes out of `example1`, the same
+ * model call the tables use. The hard rule of 2026-09-11 forbids new copy, so
+ * the figure cannot drift from the model and no sentence is written.
+ */
+const routeCards: CoverageItem[] = [
+  {
+    title: routeLabel("personalLoan"),
+    body: `Monthly net cost ${gbp(example1.fundingRoutes.personalLoan.monthlyNetCostAfterRelief)}`,
+    outcome: `s.398 relief ${gbp(example1.fundingRoutes.personalLoan.qualifyingLoanInterestRelief)}`,
+    icon: Banknote,
+  },
+  {
+    title: routeLabel("firmLoan"),
+    body: `Effective monthly cost ${gbp(example1.fundingRoutes.firmLoan.monthlyNetCostAfterRelief)}`,
+    outcome: "s.398 relief Nil (firm deducts)",
+    icon: Building2,
+  },
+  {
+    title: routeLabel("stagedDrawings"),
+    body: `Annual drawings diverted ${gbp(example1.fundingRoutes.stagedDrawings.annualDrawingsReduction)}`,
+    outcome: "Interest cost Nil",
+    icon: CalendarClock,
+  },
+];
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 
@@ -149,9 +189,10 @@ export default function EquityPartnerBuyInPage() {
     <>
       <JsonLd data={faqSchema ? [webApp, faqSchema] : [webApp]} />
 
-      {/* Hero */}
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+      {/* Hero: navy motif band, the standard tool-page opening (F.5). */}
+      <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             variant="light"
             items={[
@@ -161,254 +202,267 @@ export default function EquityPartnerBuyInPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/90">
-              Premium tool · 2026/27 rates
-            </p>
-            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <Eyebrow onDark>Premium tool · 2026/27 rates</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-6xl">
               Equity partner buy-in modeller
             </h1>
-            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-200 sm:text-lg">
               Compare three funding routes for your capital contribution, calculate the tax relief available under ITA 2007 s.398 on qualifying loan interest, and see your payback horizon against the profit-share uplift.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[var(--surface)]">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl space-y-16">
+      {/* Intro. White ground, so the derived route cards run slate (a card's
+          ground opposes its section's). */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="space-y-4 text-base leading-relaxed text-slate-700 sm:text-lg">
+            <p>
+              Becoming an equity partner in a law firm typically requires placing a capital contribution into the partnership. The contribution sits in your capital account, earns a return through your profit-share allocation, and is returned (in most firms) when you leave. What varies considerably is how you fund the contribution in the first place, and the tax treatment of each route.
+            </p>
+            <p>
+              The three main routes are a personal loan, a firm-facilitated arrangement and a staged build from drawings. A personal loan has one significant tax advantage: interest paid on a loan taken out to acquire an interest in a qualifying partnership is relievable against income tax under ITA 2007 s.398. For a higher-rate taxpayer, that relief reduces the effective cost of the interest by 40 pence in every pound. For someone in the personal allowance taper band (income between £100,000 and £125,140), the effective rate is 60%.
+            </p>
+            <p>
+              The modeller below compares all three routes side by side for your specific figures. The worked examples further down show how the numbers play out in two common scenarios: a mid-size firm requiring £75,000 and a regional firm requiring £150,000.
+            </p>
+          </div>
+          <CoverageCards items={routeCards} columns={3} tone="slate" />
+          <ExampleFigureNote className="mt-4" />
+        </div>
+      </section>
 
-            {/* Intro */}
-            <div className="prose prose-slate max-w-none">
-              <p>
-                Becoming an equity partner in a law firm typically requires placing a capital contribution into the partnership. The contribution sits in your capital account, earns a return through your profit-share allocation, and is returned (in most firms) when you leave. What varies considerably is how you fund the contribution in the first place, and the tax treatment of each route.
+      {/* The tool, on slate-50 (F.5). */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Free interactive tool</Eyebrow>
+          <EquityPartnerCalculator />
+        </div>
+      </section>
+
+      {/* SSR worked examples */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20" aria-labelledby="worked-examples-heading">
+        <div className={siteContainerLg}>
+          <h2
+            id="worked-examples-heading"
+            className="scroll-mt-24 text-2xl font-bold text-slate-900 sm:text-4xl"
+          >
+            Worked examples
+          </h2>
+          <p className="mt-3 text-base leading-relaxed text-slate-700 sm:text-lg">
+            The two examples below are computed from the same model as the calculator above. They illustrate how the choice of funding route changes materially depending on the buy-in amount and the borrower's marginal tax rate.
+          </p>
+
+          {/* Example 1 */}
+          <div className="mt-8 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-700">
+              Example 1
+            </p>
+            <h3 className="mt-1 text-xl font-bold text-slate-900">
+              Mid-size firm, £75,000 buy-in, higher-rate taxpayer
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              A senior associate on £65,000 taxable income joins as an equity partner in a firm with a £900,000 profit pool. The firm requires a £75,000 capital contribution. They hold 8% profit share after admission.
+            </p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-3">
+              <div>
+                <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Personal loan (ITA 2007 s.398)
+                </p>
+                <ExampleTable
+                  rows={[
+                    { label: "Monthly repayment",        value: gbp(example1.fundingRoutes.personalLoan.monthlyRepayment) },
+                    { label: "Year-1 interest",          value: gbp(Math.round(75000 * 0.065)) },
+                    { label: "s.398 relief at 40%",      value: gbp(example1.fundingRoutes.personalLoan.qualifyingLoanInterestRelief), strong: true },
+                    { label: "Monthly net cost",         value: gbp(example1.fundingRoutes.personalLoan.monthlyNetCostAfterRelief), strong: true },
+                    { label: "Payback",                  value: yr(example1.fundingRoutes.personalLoan.paybackHorizonYears) },
+                  ]}
+                />
+              </div>
+              <div>
+                <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Firm-facilitated loan
+                </p>
+                <ExampleTable
+                  rows={[
+                    { label: "Monthly repayment",        value: gbp(example1.fundingRoutes.firmLoan.monthlyRepayment) },
+                    { label: "s.398 relief",             value: "Nil (firm deducts)" },
+                    { label: "Effective monthly cost",   value: gbp(example1.fundingRoutes.firmLoan.monthlyNetCostAfterRelief), strong: true },
+                    { label: "Payback",                  value: yr(example1.fundingRoutes.firmLoan.paybackHorizonYears) },
+                  ]}
+                />
+              </div>
+              <div>
+                <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Staged drawings (3 years)
+                </p>
+                <ExampleTable
+                  rows={[
+                    { label: "Annual drawings diverted", value: gbp(example1.fundingRoutes.stagedDrawings.annualDrawingsReduction), strong: true },
+                    { label: "Interest cost",            value: "Nil" },
+                    { label: "Payback from full capital",value: yr(example1.fundingRoutes.stagedDrawings.paybackHorizonYears) },
+                  ]}
+                />
+              </div>
+            </div>
+            <div className="mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70">
+              <p className="text-sm font-semibold text-slate-900">
+                Annual profit-share uplift: {gbp(example1.profitShareUplift)}
               </p>
-              <p>
-                The three main routes are a personal loan, a firm-facilitated arrangement and a staged build from drawings. A personal loan has one significant tax advantage: interest paid on a loan taken out to acquire an interest in a qualifying partnership is relievable against income tax under ITA 2007 s.398. For a higher-rate taxpayer, that relief reduces the effective cost of the interest by 40 pence in every pound. For someone in the personal allowance taper band (income between £100,000 and £125,140), the effective rate is 60%.
-              </p>
-              <p>
-                The modeller below compares all three routes side by side for your specific figures. The worked examples further down show how the numbers play out in two common scenarios: a mid-size firm requiring £75,000 and a regional firm requiring £150,000.
+              <p className="mt-1 text-sm text-slate-600">
+                Best route: {routeLabel(example1.bestRoute)}
               </p>
             </div>
+            <ExampleFigureNote className="mt-4" />
+          </div>
 
-            {/* Interactive premium calculator */}
-            <div>
-              <div className="mb-4 flex items-center gap-2">
-                <span className="inline-block rounded bg-[var(--primary)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
-                  Free interactive tool
-                </span>
+          {/* Example 2 */}
+          <div className="mt-6 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-700">
+              Example 2
+            </p>
+            <h3 className="mt-1 text-xl font-bold text-slate-900">
+              Regional firm, £150,000 buy-in, staged drawings route
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              A senior associate on £90,000 taxable income joins a regional firm with a £1,200,000 profit pool, requiring a £150,000 capital contribution at 12% profit share. The associate prefers to avoid personal borrowing and instead stages the capital over four years from drawings.
+            </p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-3">
+              <div>
+                <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Personal loan (ITA 2007 s.398)
+                </p>
+                <ExampleTable
+                  rows={[
+                    { label: "Monthly repayment",        value: gbp(example2.fundingRoutes.personalLoan.monthlyRepayment) },
+                    { label: "Year-1 interest",          value: gbp(Math.round(150000 * 0.065)) },
+                    { label: "s.398 relief at 40%",      value: gbp(example2.fundingRoutes.personalLoan.qualifyingLoanInterestRelief), strong: true },
+                    { label: "Monthly net cost",         value: gbp(example2.fundingRoutes.personalLoan.monthlyNetCostAfterRelief), strong: true },
+                    { label: "Payback",                  value: yr(example2.fundingRoutes.personalLoan.paybackHorizonYears) },
+                  ]}
+                />
               </div>
-              <EquityPartnerCalculator />
+              <div>
+                <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Firm-facilitated loan
+                </p>
+                <ExampleTable
+                  rows={[
+                    { label: "Monthly repayment",        value: gbp(example2.fundingRoutes.firmLoan.monthlyRepayment) },
+                    { label: "s.398 relief",             value: "Nil (firm deducts)" },
+                    { label: "Effective monthly cost",   value: gbp(example2.fundingRoutes.firmLoan.monthlyNetCostAfterRelief), strong: true },
+                    { label: "Payback",                  value: yr(example2.fundingRoutes.firmLoan.paybackHorizonYears) },
+                  ]}
+                />
+              </div>
+              <div>
+                <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Staged drawings (4 years)
+                </p>
+                <ExampleTable
+                  rows={[
+                    { label: "Annual drawings diverted", value: gbp(example2.fundingRoutes.stagedDrawings.annualDrawingsReduction), strong: true },
+                    { label: "Interest cost",            value: "Nil" },
+                    { label: "Payback from full capital",value: yr(example2.fundingRoutes.stagedDrawings.paybackHorizonYears) },
+                  ]}
+                />
+              </div>
             </div>
-
-            {/* SSR worked examples */}
-            <section aria-labelledby="worked-examples-heading">
-              <h2
-                id="worked-examples-heading"
-                className="font-serif text-2xl font-semibold text-[var(--ink)]"
-              >
-                Worked examples
-              </h2>
-              <p className="mt-3 text-base leading-relaxed text-[var(--ink-soft)]">
-                The two examples below are computed from the same model as the calculator above. They illustrate how the choice of funding route changes materially depending on the buy-in amount and the borrower's marginal tax rate.
+            <div className="mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70">
+              <p className="text-sm font-semibold text-slate-900">
+                Annual profit-share uplift: {gbp(example2.profitShareUplift)}
               </p>
-
-              {/* Example 1 */}
-              <div className="mt-8 rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-8">
-                <p className="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">
-                  Example 1
-                </p>
-                <h3 className="mt-1 font-serif text-xl font-semibold text-[var(--ink)]">
-                  Mid-size firm, £75,000 buy-in, higher-rate taxpayer
-                </h3>
-                <p className="mt-2 text-sm text-[var(--ink-soft)]">
-                  A senior associate on £65,000 taxable income joins as an equity partner in a firm with a £900,000 profit pool. The firm requires a £75,000 capital contribution. They hold 8% profit share after admission.
-                </p>
-                <div className="mt-6 grid gap-6 sm:grid-cols-3">
-                  <div>
-                    <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
-                      Personal loan (ITA 2007 s.398)
-                    </p>
-                    <ExampleTable
-                      rows={[
-                        { label: "Monthly repayment",        value: gbp(example1.fundingRoutes.personalLoan.monthlyRepayment) },
-                        { label: "Year-1 interest",          value: gbp(Math.round(75000 * 0.065)) },
-                        { label: "s.398 relief at 40%",      value: gbp(example1.fundingRoutes.personalLoan.qualifyingLoanInterestRelief), strong: true },
-                        { label: "Monthly net cost",         value: gbp(example1.fundingRoutes.personalLoan.monthlyNetCostAfterRelief), strong: true },
-                        { label: "Payback",                  value: yr(example1.fundingRoutes.personalLoan.paybackHorizonYears) },
-                      ]}
-                    />
-                  </div>
-                  <div>
-                    <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
-                      Firm-facilitated loan
-                    </p>
-                    <ExampleTable
-                      rows={[
-                        { label: "Monthly repayment",        value: gbp(example1.fundingRoutes.firmLoan.monthlyRepayment) },
-                        { label: "s.398 relief",             value: "Nil (firm deducts)" },
-                        { label: "Effective monthly cost",   value: gbp(example1.fundingRoutes.firmLoan.monthlyNetCostAfterRelief), strong: true },
-                        { label: "Payback",                  value: yr(example1.fundingRoutes.firmLoan.paybackHorizonYears) },
-                      ]}
-                    />
-                  </div>
-                  <div>
-                    <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
-                      Staged drawings (3 years)
-                    </p>
-                    <ExampleTable
-                      rows={[
-                        { label: "Annual drawings diverted", value: gbp(example1.fundingRoutes.stagedDrawings.annualDrawingsReduction), strong: true },
-                        { label: "Interest cost",            value: "Nil" },
-                        { label: "Payback from full capital",value: yr(example1.fundingRoutes.stagedDrawings.paybackHorizonYears) },
-                      ]}
-                    />
-                  </div>
-                </div>
-                <div className="mt-6 rounded-xl bg-[var(--surface-elevated)] p-4">
-                  <p className="text-sm font-semibold text-[var(--ink)]">
-                    Annual profit-share uplift: {gbp(example1.profitShareUplift)}
-                  </p>
-                  <p className="mt-1 text-sm text-[var(--ink-soft)]">
-                    Best route: {routeLabel(example1.bestRoute)}
-                  </p>
-                </div>
-              </div>
-
-              {/* Example 2 */}
-              <div className="mt-6 rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-8">
-                <p className="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">
-                  Example 2
-                </p>
-                <h3 className="mt-1 font-serif text-xl font-semibold text-[var(--ink)]">
-                  Regional firm, £150,000 buy-in, staged drawings route
-                </h3>
-                <p className="mt-2 text-sm text-[var(--ink-soft)]">
-                  A senior associate on £90,000 taxable income joins a regional firm with a £1,200,000 profit pool, requiring a £150,000 capital contribution at 12% profit share. The associate prefers to avoid personal borrowing and instead stages the capital over four years from drawings.
-                </p>
-                <div className="mt-6 grid gap-6 sm:grid-cols-3">
-                  <div>
-                    <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
-                      Personal loan (ITA 2007 s.398)
-                    </p>
-                    <ExampleTable
-                      rows={[
-                        { label: "Monthly repayment",        value: gbp(example2.fundingRoutes.personalLoan.monthlyRepayment) },
-                        { label: "Year-1 interest",          value: gbp(Math.round(150000 * 0.065)) },
-                        { label: "s.398 relief at 40%",      value: gbp(example2.fundingRoutes.personalLoan.qualifyingLoanInterestRelief), strong: true },
-                        { label: "Monthly net cost",         value: gbp(example2.fundingRoutes.personalLoan.monthlyNetCostAfterRelief), strong: true },
-                        { label: "Payback",                  value: yr(example2.fundingRoutes.personalLoan.paybackHorizonYears) },
-                      ]}
-                    />
-                  </div>
-                  <div>
-                    <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
-                      Firm-facilitated loan
-                    </p>
-                    <ExampleTable
-                      rows={[
-                        { label: "Monthly repayment",        value: gbp(example2.fundingRoutes.firmLoan.monthlyRepayment) },
-                        { label: "s.398 relief",             value: "Nil (firm deducts)" },
-                        { label: "Effective monthly cost",   value: gbp(example2.fundingRoutes.firmLoan.monthlyNetCostAfterRelief), strong: true },
-                        { label: "Payback",                  value: yr(example2.fundingRoutes.firmLoan.paybackHorizonYears) },
-                      ]}
-                    />
-                  </div>
-                  <div>
-                    <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
-                      Staged drawings (4 years)
-                    </p>
-                    <ExampleTable
-                      rows={[
-                        { label: "Annual drawings diverted", value: gbp(example2.fundingRoutes.stagedDrawings.annualDrawingsReduction), strong: true },
-                        { label: "Interest cost",            value: "Nil" },
-                        { label: "Payback from full capital",value: yr(example2.fundingRoutes.stagedDrawings.paybackHorizonYears) },
-                      ]}
-                    />
-                  </div>
-                </div>
-                <div className="mt-6 rounded-xl bg-[var(--surface-elevated)] p-4">
-                  <p className="text-sm font-semibold text-[var(--ink)]">
-                    Annual profit-share uplift: {gbp(example2.profitShareUplift)}
-                  </p>
-                  <p className="mt-1 text-sm text-[var(--ink-soft)]">
-                    Best route (by model): {routeLabel(example2.bestRoute)}
-                  </p>
-                  <p className="mt-1 text-sm text-[var(--ink-soft)]">
-                    Note: the staged route avoids interest but delays full profit-share for four years, making the personal loan numerically preferable for a higher-rate taxpayer on this buy-in size.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* Methodology */}
-            <section aria-labelledby="methodology-heading">
-              <h2
-                id="methodology-heading"
-                className="font-serif text-2xl font-semibold text-[var(--ink)]"
-              >
-                Methodology
-              </h2>
-              <div className="mt-4 space-y-3 text-base leading-relaxed text-[var(--ink-soft)]">
-                {equityPartnerBuyInConfig.explainer.paragraphs.map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
-                <p>
-                  The recommendation score weights net monthly cost (60%) and payback horizon (40%) against the other two routes, normalised to 100. It is a directional comparison only: the optimal route for any individual depends on firm structure, existing debt, personal allowance position, pension contributions, and the firm's willingness to offer a facilitated arrangement.
-                </p>
-                <p>
-                  Rates used: income tax 2026/27 (personal allowance £12,570, basic rate 20% to £50,270, higher rate 40% to £125,140, additional rate 45% above £125,140; PA taper at £100,000). Loan amortisation uses the standard annuity formula. First-year interest approximated as principal multiplied by the annual rate (conservative; overstates relief in early years of an amortising loan).
-                </p>
-              </div>
-            </section>
-
-            {/* FAQs */}
-            <section aria-labelledby="faq-heading">
-              <h2
-                id="faq-heading"
-                className="font-serif text-2xl font-semibold text-[var(--ink)]"
-              >
-                Frequently asked questions
-              </h2>
-              <dl className="mt-6 space-y-4">
-                {faqs.map((f) => (
-                  <div
-                    key={f.question}
-                    className="rounded-2xl border border-[var(--border)] bg-white p-6"
-                  >
-                    <dt className="font-serif text-lg font-semibold text-[var(--ink)]">
-                      {f.question}
-                    </dt>
-                    <dd className="mt-3 text-base leading-relaxed text-[var(--ink-soft)]">
-                      {f.answer}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-
-            {/* CTA */}
-            <div className="rounded-2xl bg-[var(--primary)] p-8 text-white sm:p-10">
-              <h2 className="font-serif text-2xl font-semibold text-white sm:text-3xl">
-                Want a specialist to review your buy-in structure?
-              </h2>
-              <p className="mt-3 text-base leading-relaxed text-white/80 sm:text-lg">
-                The right funding route depends on your specific marginal rate, the firm's partnership deed, and whether ITA 2007 s.398 qualifying conditions are met in your case. We model the full picture as part of our partner tax planning work, with no obligation.
+              <p className="mt-1 text-sm text-slate-600">
+                Best route (by model): {routeLabel(example2.bestRoute)}
               </p>
-              <Link
-                href="/contact"
-                className={`mt-6 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-white px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-white hover:text-[var(--primary)] ${focusRing}`}
-                data-cta="equity-partner-buyin-page-cta"
-                data-cta-goal="form"
-                data-cta-placement="tool-page"
-              >
-                Book a free consultation
-              </Link>
+              <p className="mt-1 text-sm text-slate-600">
+                Note: the staged route avoids interest but delays full profit-share for four years, making the personal loan numerically preferable for a higher-rate taxpayer on this buy-in size.
+              </p>
             </div>
-
+            <ExampleFigureNote className="mt-4" />
           </div>
         </div>
       </section>
+
+      {/* Methodology */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="methodology-heading">
+        <div className={siteContainerLg}>
+          <h2
+            id="methodology-heading"
+            className="scroll-mt-24 text-2xl font-bold text-slate-900 sm:text-4xl"
+          >
+            Methodology
+          </h2>
+          <div className="mt-4 space-y-3 text-base leading-relaxed text-slate-700 sm:text-lg">
+            {equityPartnerBuyInConfig.explainer.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+            <p>
+              The recommendation score weights net monthly cost (60%) and payback horizon (40%) against the other two routes, normalised to 100. It is a directional comparison only: the optimal route for any individual depends on firm structure, existing debt, personal allowance position, pension contributions, and the firm's willingness to offer a facilitated arrangement.
+            </p>
+            <p>
+              Rates used: income tax 2026/27 (personal allowance £12,570, basic rate 20% to £50,270, higher rate 40% to £125,140, additional rate 45% above £125,140; PA taper at £100,000). Loan amortisation uses the standard annuity formula. First-year interest approximated as principal multiplied by the annual rate (conservative; overstates relief in early years of an amortising loan).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs. Hand-rolled <dl> KEPT by manager override: the kit's collapsible
+          drops closed answers out of the server HTML. Container restyled only. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20" aria-labelledby="faq-heading">
+        <div className={siteContainerLg}>
+          <h2
+            id="faq-heading"
+            className="scroll-mt-24 text-2xl font-bold text-slate-900 sm:text-4xl"
+          >
+            Frequently asked questions
+          </h2>
+          <dl className="mt-6 space-y-4">
+            {faqs.map((f) => (
+              <div
+                key={f.question}
+                className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70"
+              >
+                <dt className="text-lg font-bold text-slate-900">
+                  {f.question}
+                </dt>
+                <dd className="mt-3 text-base leading-relaxed text-slate-700">
+                  {f.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {/* Closing ask. `contained` rather than the navy band: the site footer is
+          navy and navy never touches navy (DS 0.1), and the contained variant
+          is the kit's own answer to that adjacency, so no tail band of
+          authored copy is needed. Title, description and the /contact link are
+          the page's existing closing copy verbatim; the CTA triple is
+          byte-unchanged on the same element type. */}
+      <div id="get-expert-help" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          title="Want a specialist to review your buy-in structure?"
+          description="The right funding route depends on your specific marginal rate, the firm's partnership deed, and whether ITA 2007 s.398 qualifying conditions are met in your case. We model the full picture as part of our partner tax planning work, with no obligation."
+          proofPoints={LEAD_PROOF_POINTS}
+          form={<LeadForm redirectOnSuccess={false} />}
+          footnote={
+            <Link
+              href="/contact"
+              className={`inline-flex min-h-11 items-center justify-center rounded-full border-2 border-slate-900 px-6 py-2.5 text-sm font-semibold text-slate-900 transition-all hover:bg-slate-900 hover:text-white ${focusRing}`}
+              data-cta="equity-partner-buyin-page-cta"
+              data-cta-goal="form"
+              data-cta-placement="tool-page"
+            >
+              Book a free consultation
+            </Link>
+          }
+        />
+      </div>
     </>
   );
 }

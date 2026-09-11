@@ -4,13 +4,10 @@
  * a real in-body link to a specific /calculators/<slug> page, because tabs
  * render <button role="tab">, not <a href>. See DESIGN_SYSTEM.md 0.4.
  *
- * STATE OF THIS SITE: no <CalculatorTabs component exists here yet. The
- * calculator fleet is still plain routes under /calculators. So
- * `requireLiveUsage` is false, otherwise the guard would fail for the honest
- * reason that the component it protects has not been ported. The per-page
- * assertions arm themselves automatically the moment a page renders the tag,
- * and the "no tabs component yet" test below fails loudly at that point so
- * `requireLiveUsage` gets flipped back to true rather than left false forever.
+ * STATE OF THIS SITE: `/calculators` renders `<CalculatorTabs` in its Tier 1
+ * band (phase 4, WP3), so `requireLiveUsage` is TRUE: the guard now fails if
+ * no page renders the component, which would mean it was passing vacuously.
+ * The Tier 2 directory carries the literal crawl href the guard scans for.
  *
  * Both exemption lists stay empty. A route earns an entry only on a recorded
  * owner decision, never because a page edit tripped the guard.
@@ -31,7 +28,7 @@ registerCalculatorTabsCrawlPathGuard({
   toolIndexRoute: "/calculators",
   noPriorInBodyLinks: [],
   ownerRemovedInBodyLinks: [],
-  requireLiveUsage: false,
+  requireLiveUsage: true,
 });
 
 function pageFiles(dir: string): string[] {
@@ -45,16 +42,11 @@ function pageFiles(dir: string): string[] {
 }
 
 describe("calculator tabs component adoption", () => {
-  it("no page renders the tabs component yet, so requireLiveUsage may stay false", () => {
-    const pages = pageFiles(APP_DIR).filter((p) =>
-      readFileSync(p, "utf8").includes(TABS_TAG),
-    );
-    expect(
-      pages.map((p) => p.replace(/\\/g, "/")),
-      "a page now renders " +
-        TABS_TAG +
-        ". Set requireLiveUsage: true in this file so the guard stops being " +
-        "allowed to pass vacuously.",
-    ).toEqual([]);
+  it("the /calculators index is the page that renders the tabs component", () => {
+    const pages = pageFiles(APP_DIR)
+      .filter((p) => readFileSync(p, "utf8").includes(TABS_TAG))
+      .map((p) => p.replace(/\\/g, "/"));
+    expect(pages.length, "no page renders " + TABS_TAG + " any more, so requireLiveUsage: true is now the honest failure.").toBeGreaterThan(0);
+    expect(pages.some((p) => p.endsWith("app/calculators/page.tsx"))).toBe(true);
   });
 });

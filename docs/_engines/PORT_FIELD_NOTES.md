@@ -100,6 +100,7 @@ CTAs. Also worth recording: the source declares 16 `data-cta` ids
 (`grep -rohE 'data-cta="[a-z0-9_]+"' <site>/web/src | sort -u | wc -l`) and only 5 render, because
 several sit in config branches this site does not use. A guard pinning only the rendered set leaves
 11 unprotected.
+PROMOTED: folded into playbook trap T22. Kept here for the instrument and the Trade numbers.
 
 ---
 
@@ -151,6 +152,21 @@ estate undeployable for nine days.
 Deriving command: `python scripts/check_dependency_closure.py`
 RULE: the closure check belongs in EVERY builder brief's acceptance tests, not only the
 pre-deploy gate. A new import gets its declaration in the same commit. Playbook trap T24.
+
+**2026-09-11, Solicitors phase 4. A NEWER BUILD_ID does not mean a fresh artefact: Next's
+incremental cache served a stale prerender.** Playbook trap T2 says to check `BUILD_ID` mtime
+against the newest source file before trusting a build. That check PASSED here and the build
+was still wrong: `/calculators/law-firm-sale-cgt` rendered the generic gate wording and had
+LOST `data-cta="see_result"`, a live id with 73 recorded events, even though the source passed
+its own label and id correctly. It looked exactly like a builder regression and was not.
+How it surfaced: the sweep's total `data-cta` count fell by one while NO route fell below its
+baseline, so the gate stayed green. Diffing my own two sweep runs found the single route.
+Deriving command, which is the point of the note:
+`grep -o "<a string you changed in this build>" .next/server/app/<route>.html`
+`rm -rf .next/cache && npx next build` then re-grep; the string appeared.
+RULE: T2's mtime check is necessary and NOT sufficient. Prove the ARTEFACT contains a string
+you changed in this build, not merely that the build is younger than the source. When a
+rendered page contradicts source you have just read, suspect the cache before the builder.
 
 **A real build is part of verification, not an optional extra.** `tsc` and the test suite
 both pass a server/client boundary error; only a production build catches it.
@@ -253,6 +269,7 @@ sits on AND whether any already declares its own utility. A class whose consumer
 ground needs a layer, not a different hex. And the blast radius of moving a rule into a layer is
 every utility it was beating, not the one you meant: list what is inside the block afterwards with
 `awk '/^@layer components/,/^}$/' <file> | grep -E '^\s+\.'` (on Trade, exactly one selector).
+PROMOTED: now playbook trap T30. Kept here for the three instances and the first-fix regression.
 
 ---
 
@@ -414,6 +431,7 @@ about different subjects. Trade's pre-port button was the utility
 RULE: label every contrast row by SOURCE, utility or token. Measure a utility from the rendered DOM
 or by converting the emitted `oklch()`, never from a v3 hex table, and self-test any converter
 against a canvas read out of the running build.
+PROMOTED: now playbook trap T28. Kept here for the drift figures and the two-instrument reconciliation.
 
 **2026-09-11, Trade. A long `browser_check.mjs` run looks dead while it is working, and concluding
 it died costs you the baseline.** It shows no browser process between page batches and buffers its
@@ -500,6 +518,7 @@ finding: glossary and locations breach, blog and resources do not.
 RULE: when you record a gate, name the committed command that satisfies it in the same edit. If that
 command does not exist, building it is part of recording the gate. And never measure colour with a
 parser while a browser is already open.
+PROMOTED: now playbook trap T29. Kept here for the 102-against-79 miscount that exposed it.
 
 **2026-09-11, Trade. An orchestrator keeping small work is how the manager's context goes.** The
 manager did a contrast re-derivation, an instrument change and a set of document corrections inline,

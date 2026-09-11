@@ -65,6 +65,22 @@
   --btn-ground-hover: #a01829;   /* white label 7.90 */
   --btn-ground-active: #881337;  /* rose-900, white label 9.57 */
 
+  /* Calculator warning semantics. Read by the shared <Calculator> renderer
+     (packages/web-shared/tools/components/Calculator.tsx:131, :141), which
+     falls back to amber-400 #fbbf24 / #451a03 when these are absent. Both
+     usages sit INSIDE the navy (slate-900) result panel.
+     Ladder W1 (DESIGN_DELTA section 1), STEP 1 in both places: amber-700 for
+     the filled verdict chip, its on-dark partner amber-400 for the headline
+     accent. Never red: the brand IS red-family, so a penalty on red would read
+     as brand furniture. Measured:
+       #b45309 chip on #0f172a          3.76  (graphic, floor 3:1)
+       #ffffff label on #b45309         4.83  (text, floor 4.5:1)
+       the kit default #451a03 on it    4.35  FAILS, which is why fg is set
+       #fbbf24 accent text on #0f172a  10.87  (text, floor 4.5:1) */
+  --calc-warn-bg: #b45309;       /* amber-700, W1 step 1 */
+  --calc-warn-fg: #ffffff;
+  --calc-warn-accent: #fbbf24;   /* amber-400, W1 step 1 on-dark */
+
   /* Cream hero surface for the kit's heroCreamSurface (Property's value). */
   --hero-cream: #fbfaf7;
 

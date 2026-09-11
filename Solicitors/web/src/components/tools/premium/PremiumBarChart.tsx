@@ -85,6 +85,12 @@ export function PremiumBarChart({
   const scale = (v: number) => (v / maxVal) * plotH;
 
   return (
+    <>
+    {/* The bars are decoration. The wrapper is aria-hidden, so the whole SVG
+        subtree is REMOVED from the accessibility tree, so the img role and
+        label that used to sit on the svg were dead code and were deleted. The data
+        itself is published as a real table below, off-screen, built from the
+        SAME formatValue helper the bar labels use, so the two cannot disagree. */}
     <div
       style={{ height: CHART_HEIGHT }}
       aria-hidden="true"
@@ -94,8 +100,6 @@ export function PremiumBarChart({
         viewBox={`0 0 ${plotW} ${CHART_HEIGHT}`}
         preserveAspectRatio="xMidYMid meet"
         className="w-full h-full"
-        role="img"
-        aria-label="Bar chart comparing values across groups"
       >
         {/* Horizontal grid lines */}
         {[0.25, 0.5, 0.75, 1].map((frac) => {
@@ -126,7 +130,7 @@ export function PremiumBarChart({
                 x={groupX + groupWidth / 2}
                 y={CHART_HEIGHT - 4}
                 textAnchor="middle"
-                fontSize={9}
+                fontSize={11}
                 fill="var(--ink-soft)"
               >
                 {groupLabel.length > 12 ? groupLabel.slice(0, 11) + "…" : groupLabel}
@@ -160,7 +164,7 @@ export function PremiumBarChart({
                         x={barX + barWidth / 2}
                         y={barY - 3}
                         textAnchor="middle"
-                        fontSize={8}
+                        fontSize={11}
                         fill="var(--ink)"
                         fontWeight={500}
                       >
@@ -180,7 +184,7 @@ export function PremiumBarChart({
             {series.map((s, i) => (
               <g key={s.dataKey} transform={`translate(${i * 140}, 0)`}>
                 <rect x={0} y={-8} width={10} height={10} fill={s.color} rx={1} />
-                <text x={14} y={0} fontSize={8} fill="var(--ink-soft)">
+                <text x={14} y={0} fontSize={11} fill="var(--ink-soft)">
                   {s.label}
                 </text>
               </g>
@@ -189,5 +193,30 @@ export function PremiumBarChart({
         )}
       </svg>
     </div>
+
+    <table className="sr-only">
+      <caption>{spec.valueAxisLabel ?? "Comparison"}</caption>
+      <thead>
+        <tr>
+          <th scope="col">Group</th>
+          {series.map((s) => (
+            <th key={s.dataKey} scope="col">
+              {s.label}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((datum, gi) => (
+          <tr key={gi}>
+            <th scope="row">{String(datum.name)}</th>
+            {series.map((s) => (
+              <td key={s.dataKey}>{formatValue(Number(datum[s.dataKey] ?? 0), format)}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    </>
   );
 }

@@ -149,7 +149,7 @@ export const partnerTaxReserveTool: GenericTool = {
   ],
   related: [
     { label: "LLP Profit Share Allocation Calculator", href: "/calculators/llp-profit-share-allocation" },
-    { label: "FA 2014 Salaried Member Test", href: "/calculators/fa2014-salaried-member" },
-    { label: "Solicitor Take-Home Calculator", href: "/calculators/solicitor-take-home" },
+    { label: "FA 2014 Salaried Member Test", href: "/calculators/fa-2014-salaried-member" },
+    { label: "Solicitor Take-Home Calculator", href: "/calculators/partnership-vs-llp-take-home" },
   ],
 };

@@ -15,6 +15,7 @@
 import { Calculator } from "@accounting-network/web-shared/tools/components/Calculator";
 import { getGenericTool } from "@/lib/tools/registry";
 import { CalcResultCta } from "@/components/tools/CalcResultCta";
+import { ResultGate } from "@/components/calculators/ResultGate";
 
 export function CalculatorClient({
   slug,
@@ -30,6 +31,21 @@ export function CalculatorClient({
       tool={tool}
       variant={variant}
       resultCta={variant === "page" ? <CalcResultCta campaign={slug} /> : undefined}
+      // Page variant only: the RESULT COLUMN is held behind the capture
+      // interstitial. Embeds are never gated (variant === "embed" leaves the
+      // wrapper undefined, so Calculator falls back to its identity default).
+      // CalcResultCta is NOT retired here: Calculator renders it as a sibling
+      // BELOW the grid, outside the wrapped column, so it is unaffected by the
+      // gate and no live copy is removed from 13 indexed pages.
+      resultWrapper={
+        variant === "page"
+          ? (node) => (
+              <ResultGate campaign={slug} ground="navy">
+                {node}
+              </ResultGate>
+            )
+          : undefined
+      }
     />
   );
 }

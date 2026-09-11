@@ -564,7 +564,7 @@
     "/contact": 0,
     "/locations": 0,
     "/blog": 0,
-    "/calculators": 0,
+    "/calculators": 6,
     "/solicitor-guides": 0,
     "/for-partners": 7,
     "/for-firm-buyers": 1,
@@ -834,7 +834,7 @@
   },
   "totalLinks": 5343,
   "totalCtas": 774,
-  "totalDashes": 441,
+  "totalDashes": 447,
   "restatements": [
     {
       "date": "2026-09-11",
@@ -864,6 +864,21 @@
         "/blog/practice-accounting": 0
       },
       "reason": "Phase 3 gave the ten solicitor-guides the standard table of contents, which echoes each guide's own h2 and h3 text and renders twice (mobile and desktop). Those headings already contain en-dashes in published copy, e.g. 'Rule 2 - Client money separation' with an en-dash. The added counts are duplicates of body text already inside the ceiling, not new copy: sra-accounts-rules-essentials moved 21 to 53 and its two TOC blocks carry 16 dashes each, accounting for the 32 exactly. The owner's hard rule of 2026-09-11 forbids rewriting the headings, so the ceiling is restated rather than the copy changed. Additionally, /blog/practice-accounting also moved, 1 to 0, because the pre-port page serialised a fatter client payload whose serialised post fields carried the dash; the phase 3 projection drops those fields from the payload, so the character no longer appears in the page source. No copy changed on that route.",
+      "deriving_command": "node docs/_engines/instruments/sweep.mjs --site=Solicitors --base=http://localhost:<port> --sample=9999"
+    },
+    {
+      "date": "2026-09-11",
+      "phase": "4",
+      "routes": [
+        "/calculators"
+      ],
+      "before": {
+        "/calculators": 0
+      },
+      "after": {
+        "/calculators": 6
+      },
+      "reason": "Phase 4 put CalculatorTabs on the calculators index, so the index now mounts real calculators instead of only linking to them. The six em-dashes are in those tools' own published intro and result copy, for example sra-client-account-reserve.ts:17 'covering shortfall remediation, residual balances and contingency', committed in bd562dbd6 long before the port. No copy was written or edited; existing copy became visible on one more route, and the owner's hard rule of 2026-09-11 forbids rewriting it. Same class as the phase 3 table-of-contents echo.",
       "deriving_command": "node docs/_engines/instruments/sweep.mjs --site=Solicitors --base=http://localhost:<port> --sample=9999"
     }
   ]

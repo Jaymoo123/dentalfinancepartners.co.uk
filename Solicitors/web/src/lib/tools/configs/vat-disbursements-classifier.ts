@@ -145,7 +145,7 @@ export const vatDisbursementsClassifierTool: GenericTool = {
     },
     {
       label: "Solicitor Take-Home Calculator",
-      href: "/calculators/solicitor-take-home",
+      href: "/calculators/partnership-vs-llp-take-home",
     },
   ],
 };

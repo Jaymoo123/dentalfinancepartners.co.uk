@@ -21,18 +21,14 @@
  * added; if a second gated fleet tool ships, lift the gate into the shared
  * renderer behind a GenericTool flag instead of copying this file.
  */
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Field } from "@accounting-network/web-shared/tools/components/Field";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
-import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import type { CalcValues } from "@accounting-network/web-shared/tools/types";
-import { ResultGateModal } from "@/components/tools/premium/ResultGateModal";
 import { CalcResultCta } from "@/components/tools/CalcResultCta";
+import { ResultGate } from "@/components/calculators/ResultGate";
 import { lawFirmSaleCgtTool } from "@/lib/tools/configs/law-firm-sale-cgt";
-
-// The gate interstitial shows at most once per session (mirrors PremiumCalculator).
-let gateModalShownThisSession = false;
 
 const tool = lawFirmSaleCgtTool;
 
@@ -45,16 +41,11 @@ export function LawFirmSaleCgtCalculator() {
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Gate: never for already-converted visitors; reveals on any dismiss.
-  // Start gated so the pre-reveal state is the SSR markup (no result flash);
-  // isConverted reads visit memory (client-only), so ungate after mount.
-  const [gated, setGated] = useState(true);
-  const [revealed, setRevealed] = useState(false);
-  const [gateOpen, setGateOpen] = useState(false);
-  useEffect(() => {
-    if (isConverted() || gateModalShownThisSession) setGated(false);
-  }, []);
-  const showResult = !gated || revealed;
+  // Gate: <ResultGate> now owns it. Its `revealed` and `converted` both start
+  // false and only a useEffect can raise them, so the SERVER still renders the
+  // gated state and the figure never flashes - the exact reason the retired
+  // `useState(true)` existed here. Reveal memory is now per-slug, not a
+  // module-global, so revealing this calculator unlocks no other one.
 
   const base = { calculator_slug: tool.slug, placement: "calculator", tool_kind: "standard" };
 
@@ -81,20 +72,6 @@ export function LawFirmSaleCgtCalculator() {
     }, 800);
   };
 
-  const onSeeResult = () => {
-    if (!gateModalShownThisSession) {
-      gateModalShownThisSession = true;
-      setGateOpen(true);
-    } else {
-      setRevealed(true);
-    }
-  };
-
-  const revealFromGate = useCallback(() => {
-    setGateOpen(false);
-    setRevealed(true);
-  }, []);
-
   const result = tool.compute(values);
   const tone = result.headline.tone ?? "default";
 
@@ -116,9 +93,15 @@ export function LawFirmSaleCgtCalculator() {
             ))}
           </div>
 
-          <div className="bg-slate-900 p-6 sm:p-8 text-white">
-            {showResult ? (
-              <>
+          <ResultGate
+            campaign={tool.slug}
+            ground="navy"
+            topicKey="succession-sale"
+            dataCta="see_result"
+            blurb="Your CGT figure and full breakdown are ready."
+            buttonLabel="See your result"
+          >
+            <div className="bg-slate-900 p-6 sm:p-8 text-white">
                 <div className="mb-4 sm:mb-6">
                   <div
                     className={`text-xs sm:text-sm font-bold uppercase tracking-wider mb-2 ${
@@ -161,30 +144,10 @@ export function LawFirmSaleCgtCalculator() {
                 )}
 
                 <CalcResultCta campaign={tool.slug} />
-              </>
-            ) : (
-              // Pre-reveal state: figure computed but held behind the gate button.
-              <div className="flex min-h-[260px] flex-col items-center justify-center gap-3 text-center">
-                <p className="text-sm font-medium text-slate-300">
-                  Your CGT figure and full breakdown are ready.
-                </p>
-                <button
-                  type="button"
-                  onClick={onSeeResult}
-                  className="w-full sm:w-auto min-h-11 rounded-full bg-[var(--brand-primary)] px-6 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-                  data-cta="see_result"
-                >
-                  See your result
-                </button>
-              </div>
-            )}
-          </div>
+            </div>
+          </ResultGate>
         </div>
       </div>
-
-      {gateOpen && (
-        <ResultGateModal campaign={tool.slug} topicKey="succession-sale" onReveal={revealFromGate} />
-      )}
     </>
   );
 }

@@ -17,6 +17,7 @@ function iframeSnippet(slug: string, height: number) {
   height="${height}"
   frameborder="0"
   scrolling="no"
+  loading="lazy"
   title="Law firm calculator"
 ></iframe>
 <script>
@@ -40,7 +41,7 @@ export default function EmbedGalleryPage() {
   return (
     <div className="min-h-screen bg-[var(--surface)] py-12">
       <div className={siteContainerLg}>
-        <h1 className="font-serif text-3xl font-semibold text-[var(--ink)]">
+        <h1 className="text-3xl font-bold text-[var(--ink)]">
           Calculator embed gallery
         </h1>
         <p className="mt-3 text-[var(--ink-soft)]">
@@ -51,17 +52,18 @@ export default function EmbedGalleryPage() {
         <div className="mt-10 space-y-12">
           {tools.map((tool) => (
             <section key={tool.slug}>
-              <h2 className="mb-4 font-serif text-xl font-semibold text-[var(--ink)]">
+              <h2 className="mb-4 text-xl font-bold text-[var(--ink)]">
                 {tool.name}
               </h2>
               <EmbedSnippet code={iframeSnippet(tool.slug, tool.embedHeight)} />
-              <div className="mt-6 border border-[var(--border)] bg-white">
+              <div className="mt-6 overflow-hidden rounded-xl bg-white ring-1 ring-slate-200/70">
                 <iframe
                   src={`/embed/${tool.slug}`}
                   width="100%"
                   height={tool.embedHeight}
                   frameBorder="0"
                   scrolling="no"
+                  loading="lazy"
                   title={`${tool.name} preview`}
                 />
               </div>

@@ -20,7 +20,8 @@
  * calc_computed / calc_result_viewed / cta_click) per packages/web-shared/analytics/types.ts.
  *
  * Result gate: in-blog only, never for converted visitors, reveals on any dismiss.
- * Shows at most once per session (module-level flag, mirrors Property exactly).
+ * Shows at most once per session PER CALCULATOR (sessionStorage, keyed on
+ * config.id via resultGateStorage - a module-level flag unlocked all of them).
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { CalcField, CalcValues } from "@/lib/tools/premium/types";
@@ -33,9 +34,7 @@ import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { btnPrimary } from "@/components/ui/layout-utils";
-
-// The gate interstitial shows at most once per session.
-let gateModalShownThisSession = false;
+import { wasRevealed, rememberRevealed } from "@/components/calculators/resultGateStorage";
 
 /* ---------------------------------------------------------------------------
  * Defaults
@@ -496,6 +495,14 @@ export function PremiumCalculator({
   const [gateOpen, setGateOpen] = useState(false);
   const showResult = !gated || revealed;
 
+  // Reveal memory is PER CALCULATOR (config.id), not a module-global. The old
+  // module-level flag was the "unlock one, unlock all" bug: revealing any
+  // premium calculator suppressed the gate on every other one. Premium ids all
+  // end "-premium", so they cannot collide with a generic registry slug.
+  useEffect(() => {
+    if (wasRevealed(config.id)) setRevealed(true);
+  }, [config.id]);
+
   const base = {
     calculator_slug: config.id,
     placement,
@@ -533,12 +540,8 @@ export function PremiumCalculator({
   // "See your result" button: opens the gate interstitial the first time this
   // session, otherwise reveals directly.
   const onSeeResult = () => {
-    if (!gateModalShownThisSession) {
-      gateModalShownThisSession = true;
-      setGateOpen(true);
-    } else {
-      setRevealed(true);
-    }
+    if (wasRevealed(config.id)) setRevealed(true);
+    else setGateOpen(true);
   };
 
   // Stable identity so the modal's focus/Escape effects are not re-run on
@@ -546,7 +549,8 @@ export function PremiumCalculator({
   const revealFromGate = useCallback(() => {
     setGateOpen(false);
     setRevealed(true);
-  }, []);
+    rememberRevealed(config.id);
+  }, [config.id]);
 
   const result = useMemo<PremiumResult>(
     () => config.compute({ values, rows, scenario }),
