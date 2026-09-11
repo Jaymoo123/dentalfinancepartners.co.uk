@@ -832,3 +832,39 @@ RULE, in three parts:
 Also seen the same session, and handled correctly: `.git/index.lock` held by a sibling's in-flight
 commit. It cleared in 3 seconds. NEVER delete that file to get past it; it belongs to another
 agent's running commit, and removing it corrupts theirs to unblock yours. Poll for it to clear.
+
+---
+
+## 9. Two ways a contrast audit lies to you (2026-09-11, Dentists)
+
+Both found in one phase, both by builders correcting the manager, and both will bite any port
+that themes through CSS variables. Neither is exotic; both produce a clean-looking audit over a
+live failure.
+
+**A. An ALIAS token hides from the grep everyone is using.** `globals.css` defines
+`--accent-strong: var(--gold-strong)`. So `text-[var(--accent-strong)]` IS gold text, and the
+audit grep the whole port had been running, `grep "text-\[var(--gold"`, returns ZERO for it.
+Dentists carried **21 such usages** on `/about` and the legal pages, on light grounds at 3.76,
+invisible to every gold count this port quoted, including the manager's.
+Deriving commands, and note the second is the one that finds the truth:
+```
+grep -rn 'text-\[var(--gold'   <site>/web/src --include=*.tsx | wc -l   # the number everyone quoted
+grep -nE '^\s*--[a-z-]+:\s*var\(--' <site>/web/src/app/globals.css      # every alias in the file
+grep -rn 'text-\[var(--accent' <site>/web/src --include=*.tsx | wc -l   # what the alias hides
+```
+RULE: before auditing a token by name, **enumerate the aliases of that token first** and search
+the alias set, not the name. This is playbook T6 (search by RULE, not by symptom) in its
+cheapest form: the symptom is the token's name, the rule is "gold-valued text on a light
+ground". Any count taken by the naive grep is a FLOOR and must be reported as one.
+
+**B. Alpha defeats a contrast fix that measured correctly.** Twice in one phase, a colour was
+swapped to a passing step and then rendered semi-transparent, which composites it back under
+the floor:
+- chart bars recoloured to `--gold-strong` for **3.32** on the panel, then drawn at
+  `opacity={0.9}`, compositing to **2.89**;
+- an audience-page stat label using `text-[var(--gold)]/90` on `--navy-soft`, **4.24**, where the
+  solid colour measures 5.29 and the plan had classed it with the passing group.
+RULE: measure the COMPOSITED pixel, not the token. Any `/NN` alpha suffix or `opacity=` on or
+above the element invalidates the swatch figure, and a contrast table that lists a token without
+its alpha is not evidence. This is the same family as measuring a button against its own label
+instead of the ground it sits on, which is how this port shipped an invisible hero CTA.
