@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, calculateReadTime, slugifyCategory } from "@/lib/blog";
-import { BlogListWithSearch } from "@accounting-network/web-shared/design/blog/BlogListWithSearch";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { BlogCategoryHub } from "@accounting-network/web-shared/design/blog/BlogCategoryHub";
+import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+import { niche } from "@/config/niche-loader";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { BLOG_CATEGORY_COPY, LEAD_PROOF_POINTS, type BlogCategoryCopy } from "@/lib/blog-category-copy";
 
 /**
  * Slugs that already have hand-built static hub pages under src/app/blog/.
@@ -68,30 +70,43 @@ export default async function BlogCategoryPage({ params }: Props) {
   if (!matchedCategory) notFound();
 
   const allPosts = getAllPosts();
-  const matching = allPosts.filter((p) => slugifyCategory(p.category) === category);
-
-  if (matching.length === 0) notFound();
-
-  const readTimes = new Map<string, number>();
-  for (const p of matching) {
-    readTimes.set(p.slug, calculateReadTime(p.contentHtml));
-  }
-
   // PROJECTION, load-bearing. The old `{...p, categorySlug}` spread serialised
   // every post's contentHtml into this route's client payload (the same defect
   // /blog carried, and the one that pushed Property's /blog past Vercel's
-  // 19 MB limit). The list renders only these six fields.
-  const enriched = matching.map((p) => ({
-    slug: p.slug,
-    title: p.title,
-    summary: p.summary,
-    category: p.category,
-    categorySlug: category,
-    date: p.date,
-  }));
+  // 19 MB limit). The list renders only these five fields, with the read time
+  // precomputed here so contentHtml never crosses the client boundary.
+  //
+  // Slug equality, not raw-label equality: a frontmatter label differing by an
+  // ampersand or a capital would drop the post out of its own hub silently.
+  const posts = allPosts
+    .filter((p) => slugifyCategory(p.category) === category)
+    .map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      summary: p.summary,
+      date: p.date,
+      readTime: calculateReadTime(p.contentHtml),
+    }));
 
-  const siblings = categories.filter((c) => !STATIC_HUB_SLUGS.has(c.slug));
+  if (posts.length === 0) notFound();
 
+  // Same per-category CTA map the article renderer keys on, so the hub and the
+  // articles under it cannot drift (BlogPostRenderer.tsx:99-108).
+  const activeCta = getActiveCta(niche);
+  const variantCopy: BlogCategoryCopy = {
+    heading: activeCta.blog.cta_heading,
+    body: activeCta.blog.cta_body,
+    button: activeCta.blog.cta_button,
+  };
+  const cta: BlogCategoryCopy = isPackagesMode(niche)
+    ? variantCopy
+    : (BLOG_CATEGORY_COPY[category] ?? variantCopy);
+
+  // BreadcrumbList only. The kit's <Breadcrumb> emits its own BreadcrumbList
+  // and BlogCategoryHub emits the CollectionPage with these same values, so
+  // the page-level CollectionPage would be a second identical node. The
+  // duplicate BreadcrumbList is deliberately left in place: structured data is
+  // out of scope for this package, and removing it here would be an SEO change.
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
@@ -103,12 +118,6 @@ export default async function BlogCategoryPage({ params }: Props) {
           { "@type": "ListItem", position: 3, name: matchedCategory.name },
         ],
       },
-      {
-        "@type": "CollectionPage",
-        name: `${matchedCategory.name} articles`,
-        description: `${enriched.length} ${matchedCategory.name.toLowerCase()} articles for UK solicitors and law firms.`,
-        url: `${siteConfig.url}/blog/${category}`,
-      },
     ],
   });
 
@@ -119,67 +128,27 @@ export default async function BlogCategoryPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: jsonLd }}
       />
 
-      <section className={`${sectionY} bg-[var(--surface)]`}>
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: matchedCategory.name },
-            ]}
-          />
-          <div className="mt-6 max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">
-              {matchedCategory.name}
-            </p>
-            <h1 className="mt-4 font-serif text-4xl font-semibold text-[var(--ink)] sm:text-5xl">
-              {matchedCategory.name}
-            </h1>
-            <p className="mt-6 text-lg leading-relaxed text-[var(--muted)] max-w-2xl">
-              {enriched.length} article{enriched.length !== 1 ? "s" : ""} on{" "}
-              {matchedCategory.name.toLowerCase()} for UK solicitors and law firms.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-[var(--border)] bg-white">
-        <div className={siteContainerLg}>
-          <nav aria-label="Other categories" className="flex flex-wrap gap-2 py-6">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 border border-[var(--border)] bg-white px-3 py-1.5 text-sm font-medium text-[var(--ink-soft)] transition-colors hover:border-[var(--primary)] hover:bg-[var(--surface-elevated)] hover:text-[var(--primary)]"
-            >
-              All
-            </Link>
-            {siblings.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/blog/${c.slug}`}
-                className={
-                  c.slug === category
-                    ? "inline-flex items-center gap-2 border border-[var(--primary)] bg-[var(--surface-elevated)] px-3 py-1.5 text-sm font-semibold text-[var(--primary)]"
-                    : "inline-flex items-center gap-2 border border-[var(--border)] bg-white px-3 py-1.5 text-sm font-medium text-[var(--ink-soft)] transition-colors hover:border-[var(--primary)] hover:bg-[var(--surface-elevated)] hover:text-[var(--primary)]"
-                }
-              >
-                {c.name}
-                <span className="font-mono text-xs text-[var(--muted)]">{c.count}</span>
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </section>
-
-      <section className={`bg-[var(--surface)] ${sectionY}`}>
-        <div className={siteContainerLg}>
-          <BlogListWithSearch
-            posts={enriched}
-            categories={siblings}
-            readTimes={readTimes}
-            activeCategory={category}
-          />
-        </div>
-      </section>
+      <BlogCategoryHub
+        categoryName={matchedCategory.name}
+        categorySlug={category}
+        collectionName={`${matchedCategory.name} articles`}
+        description={`${posts.length} ${matchedCategory.name.toLowerCase()} articles for UK solicitors and law firms.`}
+        intro={`${posts.length} article${posts.length !== 1 ? "s" : ""} on ${matchedCategory.name.toLowerCase()} for UK solicitors and law firms.`}
+        sections={[]}
+        cta={{ heading: cta.heading, body: cta.body, submitLabel: cta.button }}
+        posts={posts}
+        // ALL 17, not the 10 derived. The old `filter((c) => !STATIC_HUB_SLUGS
+        // .has(c.slug))` made every hand-built hub unreachable from every
+        // derived hub, including the three largest categories. The kit filters
+        // the current category out of the band itself.
+        categories={categories}
+        siteUrl={siteConfig.url}
+        proofPoints={LEAD_PROOF_POINTS}
+        libraryNote={`${posts.length} ${posts.length === 1 ? "guide" : "guides"} for UK solicitors and law firms.`}
+        form={<LeadForm submitLabel={cta.button} redirectOnSuccess={false} />}
+        heroBackdrop={<SolicitorsBackdrop tone="cream" />}
+        ctaBackdrop={<SolicitorsBackdrop tone="navy" />}
+      />
     </>
   );
 }

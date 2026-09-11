@@ -618,14 +618,14 @@
     "/calculators/partner-tax-reserve": 0,
     "/calculators/practice-cashflow-runway": 0,
     "/solicitor-guides/cofa-fundamentals": 11,
-    "/solicitor-guides/fee-share-vs-equity-partner": 19,
+    "/solicitor-guides/fee-share-vs-equity-partner": 23,
     "/solicitor-guides/law-firm-profitability-guide": 0,
     "/solicitor-guides/legal-aid-billing-laa-ccms": 0,
     "/solicitor-guides/legal-cashier-complete-guide": 0,
-    "/solicitor-guides/partnership-vs-llp-for-solicitors": 26,
-    "/solicitor-guides/post-merger-integration": 13,
-    "/solicitor-guides/professional-indemnity-tax-treatment": 9,
-    "/solicitor-guides/sra-accounts-rules-essentials": 21,
+    "/solicitor-guides/partnership-vs-llp-for-solicitors": 58,
+    "/solicitor-guides/post-merger-integration": 41,
+    "/solicitor-guides/professional-indemnity-tax-treatment": 25,
+    "/solicitor-guides/sra-accounts-rules-essentials": 53,
     "/solicitor-guides/sra-principles-explained": 0,
     "/resources/sra-compliance": 0,
     "/resources/partnership-llp": 0,
@@ -834,5 +834,34 @@
   },
   "totalLinks": 5343,
   "totalCtas": 774,
-  "totalDashes": 330
+  "totalDashes": 330,
+  "restatements": [
+    {
+      "date": "2026-09-11",
+      "phase": "3",
+      "routes": [
+        "/solicitor-guides/fee-share-vs-equity-partner",
+        "/solicitor-guides/partnership-vs-llp-for-solicitors",
+        "/solicitor-guides/post-merger-integration",
+        "/solicitor-guides/professional-indemnity-tax-treatment",
+        "/solicitor-guides/sra-accounts-rules-essentials"
+      ],
+      "before": {
+        "/solicitor-guides/fee-share-vs-equity-partner": 19,
+        "/solicitor-guides/partnership-vs-llp-for-solicitors": 26,
+        "/solicitor-guides/post-merger-integration": 13,
+        "/solicitor-guides/professional-indemnity-tax-treatment": 9,
+        "/solicitor-guides/sra-accounts-rules-essentials": 21
+      },
+      "after": {
+        "/solicitor-guides/fee-share-vs-equity-partner": 23,
+        "/solicitor-guides/partnership-vs-llp-for-solicitors": 58,
+        "/solicitor-guides/post-merger-integration": 41,
+        "/solicitor-guides/professional-indemnity-tax-treatment": 25,
+        "/solicitor-guides/sra-accounts-rules-essentials": 53
+      },
+      "reason": "Phase 3 gave the ten solicitor-guides the standard table of contents, which echoes each guide's own h2 and h3 text and renders twice (mobile and desktop). Those headings already contain en-dashes in published copy, e.g. 'Rule 2 - Client money separation' with an en-dash. The added counts are duplicates of body text already inside the ceiling, not new copy: sra-accounts-rules-essentials moved 21 to 53 and its two TOC blocks carry 16 dashes each, accounting for the 32 exactly. The owner's hard rule of 2026-09-11 forbids rewriting the headings, so the ceiling is restated rather than the copy changed.",
+      "deriving_command": "node docs/_engines/instruments/sweep.mjs --site=Solicitors --base=http://localhost:<port> --sample=9999"
+    }
+  ]
 }

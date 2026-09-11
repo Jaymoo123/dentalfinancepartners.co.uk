@@ -24,6 +24,14 @@ export type HubSection = {
    * undefined, so Property and generalist render byte-identically.
    */
   bullets?: string[];
+  /**
+   * Paragraphs that belong AFTER the list. Without this, a section whose
+   * published shape is paragraph, list, paragraph would come back as paragraph,
+   * paragraph, list: the same words in a different order. That is a copy change,
+   * which the Solicitors owner has ruled out, and it applied to 11 section
+   * blocks across seven hubs. Default undefined.
+   */
+  trailingParagraphs?: string[];
 };
 export type HubCta = { heading: string; body: string; submitLabel: string };
 
@@ -240,6 +248,11 @@ export function BlogCategoryHub({
                         ))}
                       </ul>
                     ) : null}
+                    {s.trailingParagraphs?.map((p, i) => (
+                      <p key={`t${i}`} className="text-base leading-7 text-slate-600">
+                        {p}
+                      </p>
+                    ))}
                   </div>
                 </div>
               ))}
