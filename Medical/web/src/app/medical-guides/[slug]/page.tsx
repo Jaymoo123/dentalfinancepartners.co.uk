@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { CheckCircle2, Clock, Users, BookOpen } from "lucide-react";
-import { siteContainerLg, sectionY, btnPrimary, focusRing } from "@/components/ui/layout-utils";
+import { Clock, Users, BookOpen } from "lucide-react";
+import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { JsonLd } from "@/lib/schema";
 import { siteConfig } from "@/config/site";
 import { MEDICAL_GUIDES, getGuideBySlug, getAllGuideSlugs } from "@/lib/medical-guides-data";
 import { splitLabelledLine } from "@/lib/markdown-utils";
@@ -69,6 +76,47 @@ function renderBody(text: string) {
   });
 }
 
+/**
+ * The calculator that belongs beside each guide. LITERAL hrefs, one per guide,
+ * and every slug resolves against the tool registry. No tabs block renders on
+ * this route (DISPOSITION_SLICE2 B.4 excludes it), so these are plain links
+ * doing plain link work: one more crawlable body anchor per guide page.
+ */
+const GUIDE_CALCULATOR: Record<string, { href: string; label: string }> = {
+  "nhs-pension-annual-allowance": {
+    href: "/calculators/nhs-pension-scheme-pays",
+    label: "NHS Pension Scheme Pays Calculator",
+  },
+  "consultant-private-practice-tax": {
+    href: "/calculators/consultant-private-vs-nhs",
+    label: "Consultant Private versus NHS Income Calculator",
+  },
+  "gp-partnership-accounts": {
+    href: "/calculators/gp-partner-drawings-planner",
+    label: "GP Partner Drawings Planner",
+  },
+  "locum-limited-company-vs-umbrella": {
+    href: "/calculators/locum-tax-calculator",
+    label: "Locum Doctor Tax Calculator",
+  },
+  "medical-expenses-tax-treatment": {
+    href: "/calculators/doctor-expenses-tax-relief",
+    label: "Doctor Expenses Tax Relief Calculator",
+  },
+  "ir35-for-locums": {
+    href: "/calculators/locum-tax-calculator",
+    label: "Locum Doctor Tax Calculator",
+  },
+};
+
+/** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no
+ *  client count, and nothing that implies an in-house team does the work. */
+const MEDICAL_PROOF_POINTS = [
+  { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
+  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "One position, not three", detail: "Practice, pension and personal return read together" },
+];
+
 export default async function MedicalGuidePage({ params }: Props) {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
@@ -78,17 +126,28 @@ export default async function MedicalGuidePage({ params }: Props) {
     .map((s) => MEDICAL_GUIDES.find((g) => g.slug === s))
     .filter(Boolean) as typeof MEDICAL_GUIDES;
 
+  const calculator = GUIDE_CALCULATOR[slug];
+
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Medical guides", href: "/medical-guides" },
     { label: guide.title },
   ];
 
+  /**
+   * Exactly one Article per page, and it is the only page-level node this route
+   * adds: the visible Breadcrumb already emits the single BreadcrumbList.
+   * No FAQPage is emitted here, and that is deliberate rather than an omission:
+   * `MedicalGuide` carries no `faqs` array, so there is no rendered Q&A pair to
+   * bind schema to, and a FAQPage built out of section headings would be
+   * authored schema with nothing on the page answering to it.
+   */
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: guide.title,
     description: guide.metaDescription,
+    articleSection: guide.eyebrow,
     author: {
       "@type": "Organization",
       name: siteConfig.name,
@@ -108,18 +167,16 @@ export default async function MedicalGuidePage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <JsonLd data={articleSchema} />
 
       {/* Hero */}
-      <section className="bg-[var(--navy)] text-white">
-        <div className={`${siteContainerLg} py-14 sm:py-18`}>
+      <section className="relative overflow-hidden bg-[var(--navy)] py-16 sm:py-20">
+        <MedicalBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb variant="light" items={breadcrumbItems} />
-          <div className="mt-6 max-w-3xl">
+          <div className="max-w-3xl">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="rounded-full bg-[var(--copper)]/20 border border-[var(--copper)]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-light)]">
+              <span className="rounded-full border border-[var(--copper)]/40 bg-[var(--copper)]/20 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-light)]">
                 {guide.eyebrow}
               </span>
               <span className="flex items-center gap-1.5 text-xs text-white/60">
@@ -127,7 +184,7 @@ export default async function MedicalGuidePage({ params }: Props) {
                 {guide.readTime} read
               </span>
             </div>
-            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl">
+            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               {guide.title}
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/80 sm:text-lg">
@@ -148,108 +205,87 @@ export default async function MedicalGuidePage({ params }: Props) {
         </div>
       </section>
 
-      {/* Guide content */}
-      <div className="bg-white">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-3xl">
-
-            {/* Sections */}
-            <div className="space-y-10">
-              {guide.sections.map((section, i) => (
-                <div key={i} id={`section-${i}`} className="scroll-mt-24">
-                  <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl border-l-4 border-[var(--copper)] pl-4">
-                    {section.heading}
-                  </h2>
-                  <div className="mt-1">
-                    {renderBody(section.body)}
-                  </div>
+      {/* Guide body. The max-w-3xl clamp that wrapped the whole guide is gone;
+          the container is the clamp. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="space-y-10">
+            {guide.sections.map((section, i) => (
+              <div key={i} id={`section-${i}`} className="scroll-mt-24">
+                <h2 className="border-l-4 border-[var(--copper)] pl-4 text-xl font-bold text-[var(--ink)] sm:text-2xl">
+                  {section.heading}
+                </h2>
+                <div className="mt-1 max-w-3xl">
+                  {renderBody(section.body)}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
 
-            {/* Key points */}
-            <div className="mt-12 rounded-3xl bg-[var(--navy)] p-6 sm:p-8">
-              <h2 className="text-xl font-bold text-white sm:text-2xl">
-                Key points for UK doctors
+          {/* Key points */}
+          <div className="mt-12 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:p-8">
+            <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
+              Key points for UK doctors
+            </h2>
+            <DrawnTickList className="mt-6" items={guide.keyPoints} tickClassName="text-emerald-600" />
+          </div>
+
+          {/* Related blog posts. A link LIST, not cards: on the thinnest guide
+              these are two of the route's five body links. */}
+          {guide.relatedPosts && guide.relatedPosts.length > 0 && (
+            <div className="mt-10">
+              <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
+                Related articles
               </h2>
-              <ul className="mt-6 space-y-4">
-                {guide.keyPoints.map((point, i) => (
-                  <li key={i} className="flex gap-3">
-                    <CheckCircle2 className="h-5 w-5 shrink-0 text-[var(--copper-light)] mt-0.5" />
-                    <span className="text-sm leading-relaxed text-white/85 sm:text-base">{point}</span>
+              <ul className="mt-5 space-y-3">
+                {guide.relatedPosts.map((post) => (
+                  <li key={post.href}>
+                    <Link
+                      href={post.href}
+                      className={`inline-flex items-center gap-2 text-sm font-medium text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4 hover:text-[var(--copper-strong)] ${focusRing} rounded`}
+                    >
+                      <BookOpen className="h-4 w-4 shrink-0 text-[var(--copper)]" />
+                      {post.title}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
+          )}
 
-            {/* Related blog posts */}
-            {guide.relatedPosts && guide.relatedPosts.length > 0 && (
-              <div className="mt-10">
-                <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
-                  Related articles
-                </h2>
-                <ul className="mt-5 space-y-3">
-                  {guide.relatedPosts.map((post) => (
-                    <li key={post.href}>
-                      <Link
-                        href={post.href}
-                        className={`inline-flex items-center gap-2 text-sm font-medium text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4 hover:text-[var(--copper-strong)] ${focusRing} rounded`}
-                      >
-                        <BookOpen className="h-4 w-4 shrink-0 text-[var(--copper)]" />
-                        {post.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* CTA */}
-            <div className="mt-12 rounded-3xl border border-[var(--copper)]/25 bg-[var(--background)] p-6 sm:p-8">
-              <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
-                Need personalised advice?
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-                These guides give you the framework; your specific numbers and circumstances are what matter. Our GP accountants and medical accounting specialists work exclusively with UK doctors.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-4">
-                <Link href="/contact" className={btnPrimary}>
-                  Book a free consultation
-                </Link>
-                <Link href="/free-practice-health-check" className={`inline-flex min-h-12 items-center justify-center rounded-full border border-[var(--navy)]/25 px-6 py-3 text-sm font-semibold text-[var(--navy)] transition-all hover:border-[var(--navy)] hover:bg-[var(--navy)]/5 ${focusRing}`}>
-                  Free practice health check
-                </Link>
-              </div>
-            </div>
-          </div>
+          {calculator ? (
+            <p className="mt-10 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+              To put numbers on this, run the{" "}
+              <Link
+                href={calculator.href}
+                className={`font-semibold text-[var(--copper-strong)] underline decoration-2 underline-offset-4 ${focusRing} rounded`}
+              >
+                {calculator.label}
+              </Link>
+              . It is free to use, and the figure appears on the page.
+            </p>
+          ) : null}
         </div>
-      </div>
+      </section>
 
       {/* Related guides */}
       {relatedGuidesData.length > 0 && (
-        <section className="bg-[var(--background)] border-t border-[var(--border)]">
-          <div className={`${siteContainerLg} py-12 sm:py-16`}>
+        <section className="bg-slate-50 py-12 sm:py-16">
+          <div className={siteContainerLg}>
+            <Eyebrow>More reading</Eyebrow>
             <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
               More medical guides
             </h2>
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {relatedGuidesData.map((g) => (
-                <Link
-                  key={g.slug}
-                  href={`/medical-guides/${g.slug}`}
-                  className={`group rounded-xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
-                >
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--copper-strong)]">
-                    {g.eyebrow}
-                  </span>
-                  <h3 className="mt-2 text-base font-bold text-[var(--ink)] leading-snug group-hover:text-[var(--navy)] sm:text-lg">
-                    {g.title}
-                  </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-[var(--muted)] line-clamp-2">{g.summary}</p>
-                  <span className="mt-3 inline-block text-sm font-semibold text-[var(--copper-strong)]">Read guide →</span>
-                </Link>
-              ))}
-            </div>
+            <RelatedArticles
+              className="mt-8"
+              columns={3}
+              items={relatedGuidesData.map((g) => ({
+                href: `/medical-guides/${g.slug}`,
+                title: g.title,
+                excerpt: g.summary,
+                kind: "guide" as const,
+              }))}
+            />
             <div className="mt-8">
               <Link href="/medical-guides" className={`inline-flex items-center gap-2 text-sm font-semibold text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4 ${focusRing} rounded`}>
                 <BookOpen className="h-4 w-4" />
@@ -259,6 +295,18 @@ export default async function MedicalGuidePage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <div id="book" className="scroll-mt-24" data-cta="guide_book" data-cta-goal="form" data-cta-placement="medical_guide">
+        <LeadCTAPanel
+          contained
+          ground="white"
+          title="Need the answer for your own numbers?"
+          description="This guide gives you the framework; your own figures and circumstances are what decide the answer. Send your position and we will match you with a firm that works with doctors every day."
+          proofPoints={MEDICAL_PROOF_POINTS}
+          footnote="No obligation. If the specialist firm thinks your position is already right, they will tell you so."
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
+        />
+      </div>
     </>
   );
 }

@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CTASection } from "@/components/ui/CTASection";
-import { contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { CalculatorTabs } from "@/components/tools/CalculatorTabs";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { JsonLd, buildServicePageSchema, buildFaqPage } from "@/lib/schema";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
-import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
-import { serviceTiers, siteStats } from "@/config/service-tiers";
-import { allTools, toolPath } from "@/lib/tools/registry";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { serviceTiers } from "@/config/service-tiers";
+import { allTools } from "@/lib/tools/registry";
 
 // Retitled 2026-08-26. Title and H1 already carried "medical accounting", which
 // is right: this page's own head is "medical accounting" (127 impr @80.5) and
@@ -44,7 +48,7 @@ export const metadata: Metadata = {
 const sections = [
   {
     title: "GP Tax & Accounts",
-    body: "Year-end accounts and tax returns tailored for GPs, whether salaried or partners. We handle NHS and private income splits, partnership profit shares, and ensure full compliance with HMRC and NHS pension reporting.",
+    body: "Year-end accounts and tax returns for GPs, whether salaried or partners. NHS and private income splits, partnership profit shares, and HMRC and NHS pension reporting are read as one position rather than three.",
     links: [{ href: "/blog/gp-partnership-tax-complete-guide", label: "GP partnership tax guide" }],
   },
   {
@@ -54,24 +58,32 @@ const sections = [
   },
   {
     title: "Locum Tax & Compliance",
-    body: "Tax planning and Self Assessment support for locum doctors. We specialise in managing multiple income streams, claiming professional expenses correctly, and ensuring efficient tax payments across engagements.",
+    body: "Tax planning and Self Assessment support for locum doctors. The work is several income streams at once, professional expenses claimed correctly, and tax payments managed across engagements rather than discovered in January.",
     links: [{ href: "/blog/locum-doctor-expenses-what-you-can-claim", label: "Locum expenses guide" }],
   },
   {
     title: "Private Practice Incorporation",
-    body: "Structured advice on setting up a limited company for your private practice. We cover profit extraction, corporation tax planning, and maintaining optimal tax efficiency between personal and business finances.",
+    body: "Structured advice on setting up a limited company for your private practice. It covers profit extraction, corporation tax planning, and how the personal and company positions sit against each other.",
     links: [{ href: "/blog/medical-practice-incorporation-step-by-step", label: "Incorporation guide" }],
   },
   {
     title: "Medical Expense Claims",
-    body: "Maximising legitimate expense claims for medical professionals, including professional subscriptions, indemnity insurance, equipment, and travel. We ensure claims are robust and fully compliant with HMRC rules.",
+    body: "Legitimate expense claims for medical professionals: professional subscriptions, indemnity, equipment and travel. Claims are made defensible against HMRC's own stated position rather than against a generic list.",
     links: [{ href: "/blog/medical-professional-expenses-what-is-claimable", label: "Claimable expenses" }],
   },
   {
     title: "Consultant Tax Planning",
-    body: "Comprehensive tax services for hospital consultants balancing NHS work, private practice, and additional roles. We coordinate multiple income sources, pension contributions, and personal tax liabilities.",
-    links: [],
+    body: "Tax work for hospital consultants balancing NHS work, private practice and additional roles. Multiple income sources, pension contributions and personal tax liabilities are coordinated in one return.",
+    links: [{ href: "/medical-guides/consultant-private-practice-tax", label: "Consultant private practice tax guide" }],
   },
+];
+
+/** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no
+ *  client count, and nothing that implies an in-house team does the work. */
+const MEDICAL_PROOF_POINTS = [
+  { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
+  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];
 
 const SERVICES_FAQS = [
@@ -127,175 +139,186 @@ export default function ServicesPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
+      <JsonLd data={orgSchema} />
       <JsonLd data={serviceSchema} />
       {faqSchema ? <JsonLd data={faqSchema} /> : null}
-      <div className={`${contentNarrow} ${sectionY}`}>
-        <Breadcrumb
-          suppressJsonLd
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Services" },
-          ]}
-        />
-        <h1 className="text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
-          Medical accounting services for UK doctors
-        </h1>
-        <div className="mt-8">
-          <StatsBar stats={siteStats} />
-        </div>
-        <p className="mt-8 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-          Medical accounting for GPs, consultants, locums and GP practices across the UK. The list below is the actual shape of the work rather than a menu: six areas, each of which has a specific technical problem at its centre, and most doctors need two or three of them rather than all six.
-        </p>
-        <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
-          Accounting for doctors differs from general practice accounting in what has to be read, not in the standards applied. PCSE remittances, NHSBSA pension savings statements, Status Determination Statements from NHS Trusts, superannuation certificates, agency self-billing invoices and partnership profit allocations are all documents a generalist rarely handles and a medical accountant handles weekly.
-        </p>
 
-        <ol className="mt-10 list-none space-y-10 pl-0 sm:mt-12 sm:space-y-12">
-          {sections.map((s, i) => (
-            <li key={s.title}>
-              <h2 className="text-xl font-bold leading-snug text-[var(--ink)] sm:text-2xl">
-                <span className="text-[var(--accent-strong)]">{i + 1}. </span>
-                {s.title}
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{s.body}</p>
-              {s.links.length > 0 ? (
-                <p className="mt-4 text-sm">
-                  Related:{" "}
-                  {s.links.map((l, idx) => (
-                    <span key={l.href}>
-                      {idx > 0 ? " · " : null}
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-[var(--navy)] py-16 sm:py-20">
+        <MedicalBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <Breadcrumb
+            variant="light"
+            suppressJsonLd
+            items={[{ label: "Home", href: "/" }, { label: "Services" }]}
+          />
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center rounded-full border border-[var(--copper)]/40 bg-[var(--copper)]/20 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-light)]">
+              Medical accounting services
+            </div>
+            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+              Medical accounting services for UK doctors
+            </h1>
+            <p className="mt-5 text-base leading-relaxed text-white/80 sm:text-lg">
+              Six areas of work, each with a specific technical problem at its centre. Which of them apply depends on your position, and the fastest way to find out is to describe it.
+            </p>
+            <div className="mt-8">
+              <Link href="#book" className={btnPrimary}>
+                Tell us what you need
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What medical accounting actually reads */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl">
+            <p className="text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+              Medical accounting for GPs, consultants, locums and GP practices across the UK. The list below is the actual shape of the work rather than a menu: six areas, each of which has a specific technical problem at its centre. Which of them apply depends on your position.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
+              Accounting for doctors differs from general practice accounting in what has to be read, not in the standards applied. PCSE remittances, NHSBSA pension savings statements, Status Determination Statements from NHS Trusts, superannuation certificates, agency self-billing invoices and partnership profit allocations are all documents a generalist rarely handles and a medical accountant handles weekly.
+            </p>
+          </div>
+
+          {/* Six equivalent service areas, so a grid rather than a numbered
+              list: the numbering implied a sequence they do not have. The
+              "Related:" links survive the conversion; the per-item /contact
+              link does not, because it duplicates the header CTA. */}
+          <div className="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {sections.map((s) => (
+              <div key={s.title} className="flex flex-col rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+                <h2 className="text-lg font-bold leading-snug text-[var(--ink)] sm:text-xl">{s.title}</h2>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-[var(--ink-soft)]">{s.body}</p>
+                {s.links.length > 0 ? (
+                  <p className="mt-4 text-sm">
+                    Related:{" "}
+                    {s.links.map((l) => (
                       <Link
+                        key={l.href}
                         href={l.href}
-                        className={`font-medium text-[var(--accent-strong)] underline ${focusRing} rounded`}
+                        className={`font-medium text-[var(--copper-strong)] underline ${focusRing} rounded`}
                       >
                         {l.label}
                       </Link>
-                    </span>
-                  ))}
-                </p>
-              ) : null}
-              <p className="mt-4 text-sm">
-                <Link
-                  href="/contact"
-                  className={`inline-flex min-h-10 items-center font-semibold text-[var(--accent-strong)] underline ${focusRing} rounded`}
-                >
-                  Ask about this service
-                </Link>
-              </p>
-            </li>
-          ))}
-        </ol>
+                    ))}
+                  </p>
+                ) : null}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-        {/* Where we help */}
-        <section className="mt-12 sm:mt-16">
-          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
+      {/* Where we help */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Coverage</Eyebrow>
+          <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
             Where we help
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-            We work with GPs, consultants, and locum doctors throughout the UK. Location pages cover local context and how to book.
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+            Enquiries come from GPs, consultants and locum doctors throughout the UK. Location pages cover local context and how to book.
           </p>
-          <ul className="mt-6 grid list-none gap-3 pl-0 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 grid list-none gap-3 pl-0 sm:grid-cols-2 lg:grid-cols-3">
             {siteConfig.locations.map((loc) => {
               const city = loc.slug.charAt(0).toUpperCase() + loc.slug.slice(1);
               return (
                 <li key={loc.slug}>
                   <Link
                     href={`/locations/${loc.slug}`}
-                    className={`flex items-center justify-between rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--accent-strong)] hover:shadow-sm ${focusRing}`}
+                    className={`flex items-center justify-between rounded-xl bg-white p-4 ring-1 ring-slate-200 transition-all hover:ring-[var(--copper)] ${focusRing}`}
                   >
                     <span className="text-sm font-semibold text-[var(--ink)]">{city}</span>
-                    <span className="text-xs font-medium text-[var(--accent-strong)]">GP accountant →</span>
+                    <span className="text-xs font-medium text-[var(--copper-strong)]">GP accountant</span>
                   </Link>
                 </li>
               );
             })}
           </ul>
-        </section>
+        </div>
+      </section>
 
-        {/* Try our calculators */}
-        <section className="mt-12 sm:mt-16">
-          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
+      {/* Ten free calculators. Three of them mount here as tabs so a reader can
+          run one where they are standing; all ten keep a crawlable anchor in
+          the plain list below, because a tabs block emits buttons, not links.
+          A CARD pointing at a calculator is the artefact that is gone from
+          both halves. DISPOSITION_SLICE2 B.2, recorded manager decision. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Free calculators</Eyebrow>
+          <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
             Ten free medical tax calculators
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-            Instant estimates covering NHS Pension annual allowance and the taper, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings, salaried GP versus partner, and the private practice incorporation comparison. We ask once whether a specialist should confirm your figure, and you can skip that and still see it.
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+            Instant estimates covering NHS Pension annual allowance and the taper, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings, salaried GP versus partner, and the private practice incorporation comparison. Three of them run below, starting with the{" "}
+            <Link href="/calculators/nhs-pension-annual-allowance" className={`font-medium text-[var(--copper-strong)] underline ${focusRing} rounded`}>
+              NHS Pension annual allowance calculator
+            </Link>
+            . We ask once whether a specialist should confirm your figure, and you can skip that and still see it.
           </p>
-          {/* Driven off the tool registry rather than a hand-written list of
-              three. The hand-written list said "3 free calculators" while ten
-              were live, so the page understated itself by seven. */}
-          <ul className="mt-6 grid list-none gap-4 pl-0 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8">
+            <CalculatorTabs tabs={["annualallowance", "locumtax", "incorporation"]} />
+          </div>
+          <h3 className="mt-12 text-lg font-bold text-[var(--ink)] sm:text-xl">All ten calculators</h3>
+          <ul className="mt-4 grid list-none gap-x-8 gap-y-2 pl-0 sm:grid-cols-2">
             {allTools().map((c) => (
-              <li key={c.slug}>
+              <li key={c.slug} className="text-sm leading-relaxed">
                 <Link
-                  href={toolPath(c.slug)}
-                  className={`block rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:border-[var(--accent-strong)] hover:shadow-sm ${focusRing}`}
+                  href={`/calculators/${c.slug}`}
+                  className={`font-semibold text-[var(--copper-strong)] underline decoration-2 underline-offset-4 ${focusRing} rounded`}
                 >
-                  <h3 className="text-sm font-bold text-[var(--ink)]">{c.name}</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.oneLiner}</p>
-                  <span className="mt-3 block text-xs font-semibold text-[var(--accent-strong)]">Open calculator →</span>
+                  {c.name}
                 </Link>
+                <span className="ml-2 text-[var(--muted)]">{c.oneLiner}</span>
               </li>
             ))}
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section className="mt-12 sm:mt-16">
-          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
+      {/* How we work with you */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>How it works</Eyebrow>
+          <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
             How we work with you
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
             From free self-serve tools to full-service medical accounting.
           </p>
-          <div className="mt-6">
-            <ServiceTiers tiers={serviceTiers} featuredBadge="Most popular" />
+          <div className="mt-8">
+            {/* featuredBadge="" explicitly, not omitted: omitting it leaves the
+                shared component rendering its own default badge, which is a
+                claim about what other readers chose. */}
+            <ServiceTiers tiers={serviceTiers} featuredBadge="" />
           </div>
-        </section>
-
-        {/* Added 2026-08-26: the corepage pack showed page-1 competitors
-            carrying a median of 4.5 FAQs against our 1, and FAQPage MISSING
-            from this page's commercial schema checklist. */}
-        <section className="mt-12 sm:mt-16">
-          <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
-            Questions about medical accounting services
-          </h2>
-          <div className="mt-6 space-y-3">
-            {SERVICES_FAQS.map((faq) => (
-              <details key={faq.question} className="group rounded-xl border border-[var(--border)] bg-[var(--surface)] open:shadow-sm">
-                <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-[var(--ink)] [&::-webkit-details-marker]:hidden">
-                  <span className="flex items-center justify-between gap-4">
-                    {faq.question}
-                    <span className="text-[var(--accent-strong)] transition-transform group-open:rotate-45" aria-hidden>+</span>
-                  </span>
-                </summary>
-                <div className="border-t border-[var(--border)] px-5 py-4 text-sm leading-relaxed text-[var(--muted)]">
-                  <p>{faq.answer}</p>
-                </div>
-              </details>
-            ))}
-          </div>
-        </section>
-
-        <div className="mt-12 space-y-8 sm:mt-16 sm:space-y-10">
-          <CTASection
-            title="Book a short scoping call"
-            description="Walk us through your professional structure: your NHS commitments, private practice, and financial goals for the year ahead."
-            primaryHref="/contact"
-            secondaryHref="/blog"
-            secondaryLabel="Read related articles"
-          />
-          <CTASection
-            title="Prefer to start with content?"
-            description="Our articles are written for UK medical professionals: practical, sector-specific, and free of generic tax advice."
-            primaryHref="/blog"
-            primaryLabel="Open the blog"
-            secondaryHref="/about"
-            secondaryLabel="Why we specialise"
-          />
         </div>
+      </section>
+
+      {/* Added 2026-08-26: the corepage pack showed page-1 competitors
+          carrying a median of 4.5 FAQs against our 1, and FAQPage MISSING
+          from this page's commercial schema checklist. SERVICES_FAQS is the
+          single binding: it feeds both this section and buildFaqPage above. */}
+      <FaqSection
+        className="bg-white py-12 sm:py-16 lg:py-20"
+        eyebrow="FAQ"
+        title="Questions about medical accounting services"
+        faqs={SERVICES_FAQS}
+      />
+
+      <div id="book" className="scroll-mt-24" data-cta="services_book" data-cta-goal="form" data-cta-placement="services">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          title="Book a short scoping call"
+          description="Walk us through your professional structure: your NHS commitments, private practice, and financial goals for the year ahead. We match the enquiry to a firm that works with doctors every day."
+          proofPoints={MEDICAL_PROOF_POINTS}
+          footnote="No obligation. If the specialist firm thinks your position is already right, they will tell you so."
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
+        />
       </div>
     </>
   );

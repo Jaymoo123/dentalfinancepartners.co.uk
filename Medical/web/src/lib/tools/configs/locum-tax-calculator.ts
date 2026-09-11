@@ -84,13 +84,13 @@ export const locumTaxTool: GenericTool = {
         tone: "good" as const,
       },
       rows,
-      note: "For self-employed locum doctors. 2025/26 tax year. Includes Class 4 NI. Does not include Class 2 NI (~£3.70/week). Standard tax code assumed.",
+      note: "For self-employed locum doctors. 2025/26 tax year. Includes Class 4 NI. Class 2 NI has not been a required payment since 6 April 2024, so nothing is included for it. Standard tax code assumed.",
     };
   },
   explainer: {
     heading: "How this calculator works",
     paragraphs: [
-      "The calculator applies the 2025/26 personal allowance of £12,570 (no taper above £100,000 for self-employed; the taper applies to adjusted net income), the three income tax bands, and Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above. Class 2 NI (approximately £3.70/week) is not included in this estimate.",
+      "The calculator applies the 2025/26 personal allowance of £12,570 (no taper above £100,000 for self-employed; the taper applies to adjusted net income), the three income tax bands, and Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above. Class 2 National Insurance stopped being a required payment on 6 April 2024, so nothing is included for it.",
       "Your gross locum income minus allowable expenses and pension contributions gives your net income. Tax, NI and any student loan repayments are calculated on that net figure. Student loan thresholds and rates vary by plan.",
     ],
   },
@@ -103,7 +103,7 @@ export const locumTaxTool: GenericTool = {
     {
       question: "Do I pay Class 2 as well as Class 4 NI?",
       answer:
-        "Class 2 NI is around £3.70 per week (approximately £192/year) and is not included in this calculator. It is usually collected via your self-assessment return along with Class 4. Class 2 is being phased out but is still payable in 2025/26.",
+        "No. Class 2 has not been a required payment since 6 April 2024. If your profits are at or above the small profits threshold you are treated as having paid it, and you keep your state pension entitlement without paying anything. Below that threshold you can pay Class 2 voluntarily to protect your record, at £3.65 a week for 2026/27. Class 4 is the contribution you actually pay, and it is in this calculator.",
     },
     {
       question: "What student loan plan am I on?",

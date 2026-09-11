@@ -25,7 +25,12 @@
  * Annual-variable figures (must be re-checked each year):
  *   AMAP_RATE_1   55p — car/van first 10,000 miles from 6 Apr 2026 (FA 2026 ground truth).
  *   AMAP_RATE_2   25p — above 10,000 miles.
- *   GMC_FEE       £481 — GMC annual retention fee (standard full rate) from 1 April 2026,
+ *   GMC_FEE       NOT STATED. house_positions section 8 flags the GMC retention fee
+ *                 UNVERIFIED as at 2026-08-26: the GMC fee regulations and the fees
+ *                 page both return HTTP 403 to automated fetches, so the figure this
+ *                 file used to carry (£481) had no primary source. The rule there is
+ *                 explicit: no page may state a GMC fee until a human reads the
+ *                 regulations. The input defaults to 0 and the reader enters their own.
  *                 up from £463; a user-editable default, CONFIRM live at
  *                 https://www.gmc-uk.org before quoting to clients.
  *
@@ -82,11 +87,11 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
       id: "gmcFees",
       label: "GMC registration / retention fees",
       type: "currency",
-      default: 481,
+      default: 0,
       min: 0,
       max: 2000,
       step: 1,
-      help: "Annual retention fee (£481 standard full rate from 1 April 2026; confirm at gmc-uk.org)",
+      help: "Your annual GMC retention fee. Take it from your own GMC receipt or gmc-uk.org: this site does not state a figure, because the GMC fee regulations could not be read at source (house_positions section 8, UNVERIFIED)."
     },
     {
       id: "indemnity",
@@ -188,8 +193,8 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
       "Salaried doctors and hospital consultants can claim relief on employee expenses by submitting a P87 to HMRC, or by including them in a self-assessment return. GP partners and locums deduct these costs directly from trading profit on the self-assessment return, which reduces both income tax and Class 4 National Insurance.",
       "A common myth is that doctors have an HMRC flat-rate expense (often quoted as £185). They do not. HMRC's agreed flat-rate table (EIM32712) has no entry for doctors: the £185 figure belongs to ambulance staff on active service, and nurses and several allied roles get £125. Doctors instead claim their actual professional costs. GMC fees, defence body subscriptions and royal college fees are all on HMRC's approved List 3 of professional bodies, so they are deductible in full on the actual amount paid.",
       "Business mileage relief uses the HMRC Approved Mileage Allowance Payment (AMAP) rates. From 6 April 2026 the car and van rate for the first 10,000 business miles rises to 55p per mile, then drops to 25p per mile above that. Salaried GPs doing home visits or travelling between sites can claim for miles not reimbursed by their employer at the approved rate.",
-      "Worked example 1 (higher-rate GP): GMC fee £481, indemnity £4,000, royal college £500, CPD £1,200, 3,000 business miles at 55p per mile (£1,650). Total allowable: £7,831. Tax relief at 40%: £3,132.",
-      "Worked example 2 (basic-rate salaried GP, low mileage): GMC fee £481, indemnity £2,500, BMA £250, CPD £600, no itemised mileage. Total allowable: £3,831. Tax relief at 20%: £766. Alternatively, if mileage to home visits adds 2,000 miles (£1,100 AMAP), the allowable rises to £4,931 and relief to £986.",
+      "Worked example 1 (higher-rate GP): indemnity £4,000, royal college £500, CPD £1,200, 3,000 business miles at 55p per mile (£1,650). Total allowable on those four: £7,350, and tax relief at 40% is £2,940. Add your own GMC retention fee to both figures.",
+      "Worked example 2 (basic-rate salaried GP, low mileage): indemnity £2,500, BMA £250, CPD £600, no itemised mileage. Total allowable on those three: £3,350, and tax relief at 20% is £670. If mileage to home visits adds 2,000 miles (£1,100 AMAP), the allowable rises to £4,450 and relief to £890. Add your own GMC retention fee to whichever applies.",
     ],
   },
   faqs: [
@@ -211,7 +216,7 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
     {
       question: "Do GMC fees qualify for tax relief?",
       answer:
-        "Yes. GMC registration and annual retention fees are a professional subscription allowable for tax relief because GMC registration is a legal requirement to practise as a doctor in the UK. The standard full-rate annual retention fee is £481 from 1 April 2026 (up from £463); confirm the current figure at gmc-uk.org before claiming, and note reduced rates apply on lower incomes.",
+        "Yes. GMC registration and annual retention fees are a professional subscription allowable for tax relief, because GMC registration is a legal requirement to practise as a doctor in the UK. We do not quote the fee here: take the figure from your own GMC receipt or from gmc-uk.org. Reduced rates apply on lower incomes, so the amount is not the same for every doctor.",
     },
     {
       question: "Can GP partners claim the same expenses?",

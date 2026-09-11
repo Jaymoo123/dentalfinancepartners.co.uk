@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CTASection } from "@/components/ui/CTASection";
-import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { ArrowRight, CalendarClock, Stethoscope, Users } from "lucide-react";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { CoverageCards } from "@accounting-network/web-shared/design/marketing/CoverageCards";
+import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { btnPrimary, btnOnDark, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts } from "@/lib/blog";
+import { getPostBySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { buildAccountingService } from "@accounting-network/web-shared/schema";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -22,13 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
+  const meta = cityMeta[slug];
   return {
     title: `Medical Accountants in ${cityName} for GPs and Consultants`,
-    description: `Specialist GP accountant in ${cityName} for doctors, consultants & medical practices. NHS pension planning, locum tax, private practice incorporation. Book free consultation.`,
+    description: meta.description,
     alternates: { canonical },
     openGraph: {
       title: `Medical Accountants in ${cityName} for GPs and Consultants`,
-      description: `Specialist GP accountant in ${cityName}. NHS pension planning, locum tax, private practice advice.`,
+      description: meta.social,
       url: canonical,
       type: "website",
       images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -36,114 +44,152 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: `Medical Accountants in ${cityName} for GPs and Consultants`,
-      description: `Specialist GP accountant in ${cityName} for medical professionals.`,
+      description: meta.social,
       images: [siteConfig.publisherLogoUrl],
     },
   };
 }
 
-const cityContent: Record<string, {
-  intro: string;
-  areas: string;
-  whyLocal: string;
-  services: { title: string; desc: string }[];
-}> = {
+/**
+ * Per-city metadata. Written once per city rather than templated off the city
+ * name, and phrased to the matching model: the enquiry is matched to a
+ * specialist firm, so no line may assert an accountant sitting in the city.
+ * The visible body and the JSON-LD below say the same thing.
+ */
+const cityMeta: Record<string, { description: string; social: string }> = {
   london: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across London. Whether you're based in Harley Street, the City, Canary Wharf, or anywhere across Greater London, we provide expert GP accounting and tax services tailored to medical professionals.",
-    areas: "We work with doctors across Central London, North London, South London, East London, and West London, including Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
-    whyLocal: "London has the highest concentration of medical professionals in the UK, from GP surgeries in every borough to major teaching hospitals and private consulting rooms. We understand the London medical landscape, including higher practice costs, competitive private markets, and the complex mix of NHS and private income streams.",
-    services: [
-      {
-        title: "GP partnership accounting",
-        desc: "London GP practices often have complex partnership structures with multiple partners and salaried GPs. We handle partnership accounts, profit allocation, tax returns, and NHS pension reconciliation.",
-      },
-      {
-        title: "Consultant tax planning",
-        desc: "For London consultants balancing NHS hospital work with private practice, we manage your mixed income streams, optimize tax efficiency, and handle NHS pension annual allowance complexities.",
-      },
-      {
-        title: "Locum doctor tax returns",
-        desc: "London locums working across multiple practices need specialist tax support. We handle self assessment, expense claims, payment on account, and advise on VAT registration thresholds.",
-      },
-    ],
+    description:
+      "GPs, consultants and medical practices across London matched with specialist medical accountants. NHS Pension annual allowance, partnership accounts, private practice and locum tax.",
+    social:
+      "London medical enquiries matched with accountants who work with doctors. NHS Pension, GP partnership accounts, private practice and locum tax.",
   },
   manchester: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Manchester. Whether you're based in the City Centre, Salford, Trafford, or anywhere across Greater Manchester, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
-    whyLocal: "Manchester's medical sector is thriving, with a strong mix of NHS GP surgeries, private clinics, and teaching hospitals. We understand the local healthcare landscape and the specific financial challenges Manchester-based doctors face, from practice management to private work alongside NHS commitments.",
-    services: [
-      {
-        title: "GP partnership accounting",
-        desc: "Manchester GP practices range from small partnerships to large multi-site operations. We handle partnership accounts, profit shares, tax returns, and NHS pension reporting.",
-      },
-      {
-        title: "Consultant tax planning",
-        desc: "For Manchester consultants with NHS and private income, we manage your tax position, optimize pension contributions, and handle annual allowance calculations.",
-      },
-      {
-        title: "Locum doctor tax returns",
-        desc: "Manchester locums need reliable tax support for multiple income sources. We handle self assessment, expense optimization, and quarterly tax planning.",
-      },
-    ],
+    description:
+      "Greater Manchester doctors and GP practices matched with accountants whose work is medical. Partnership accounts, NHS Pension annual allowance, locum tax and private income.",
+    social:
+      "Greater Manchester medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and locum tax.",
   },
   birmingham: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Birmingham. Whether you're in the City Centre, Edgbaston, Solihull, or anywhere across the West Midlands, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Birmingham City Centre, Edgbaston, Solihull, Sutton Coldfield, Dudley, Sandwell, Walsall, Wolverhampton, and the wider West Midlands region.",
-    whyLocal: "Birmingham is a major medical hub with diverse GP practices, teaching hospitals, and private clinics. We understand the local healthcare economy and the financial needs of Birmingham-based doctors, from NHS contract management to private practice growth.",
-    services: [
-      {
-        title: "GP partnership accounting",
-        desc: "Birmingham GP practices need specialist accounting for partnership structures, profit allocation, and NHS pension reconciliation. We provide year-round support and strategic tax advice.",
-      },
-      {
-        title: "Consultant tax planning",
-        desc: "For Birmingham consultants managing NHS and private work, we handle tax returns, pension planning, and income optimization across multiple revenue streams.",
-      },
-      {
-        title: "Locum doctor tax returns",
-        desc: "Birmingham locums working across the West Midlands need expert tax support. We manage self assessment, expense claims, and tax efficiency strategies.",
-      },
-    ],
+    description:
+      "Birmingham and West Midlands doctors matched with specialist medical accountants. GP partnership accounts, PCSE reconciliation, NHS Pension annual allowance and consultant private practice.",
+    social:
+      "Birmingham and West Midlands medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and private practice.",
   },
   leeds: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Leeds. Whether you're in the City Centre, Chapel Allerton, Roundhay, or anywhere across West Yorkshire, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Leeds City Centre, Chapel Allerton, Roundhay, Headingley, Horsforth, Wetherby, and the wider West Yorkshire region including Bradford, Wakefield, and Huddersfield.",
-    whyLocal: "Leeds has a strong medical sector with established GP practices, teaching hospitals, and growing private healthcare provision. We understand the Yorkshire healthcare landscape and the financial priorities of Leeds-based doctors.",
-    services: [
-      {
-        title: "GP partnership accounting",
-        desc: "Leeds GP practices benefit from specialist accounting for partnership structures, NHS contract management, and tax-efficient profit extraction. We provide comprehensive year-round support.",
-      },
-      {
-        title: "Consultant tax planning",
-        desc: "For Leeds consultants with NHS hospital roles and private practice work, we manage your tax position, pension contributions, and annual allowance calculations.",
-      },
-      {
-        title: "Locum doctor tax returns",
-        desc: "Leeds locums need reliable tax support for multiple engagements. We handle self assessment, expense optimization, and payment on account management.",
-      },
-    ],
+    description:
+      "Leeds and West Yorkshire doctors matched with accountants who work only with medical clients. Partnership accounts, NHS Pension annual allowance, Scheme Pays and locum tax returns.",
+    social:
+      "Leeds and West Yorkshire medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and locum tax.",
   },
   bristol: {
-    intro: "We're specialist medical accountants serving GPs, consultants, and medical practice owners across Bristol. Whether you're in Clifton, the City Centre, or anywhere across the South West, we provide expert GP accounting and tax services for medical professionals.",
-    areas: "We work with doctors across Bristol City Centre, Clifton, Redland, Westbury-on-Trym, and the wider South West region including Bath, Gloucester, Cheltenham, and Exeter.",
-    whyLocal: "Bristol's medical sector combines established GP practices with innovative private healthcare providers. We understand the South West healthcare market and the financial needs of Bristol-based doctors, from practice management to private work expansion.",
-    services: [
-      {
-        title: "GP partnership accounting",
-        desc: "Bristol GP practices need specialist support for partnership accounts, profit allocation, and NHS pension planning. We provide strategic tax advice and year-round financial guidance.",
-      },
-      {
-        title: "Consultant tax planning",
-        desc: "For Bristol consultants managing NHS and private income, we handle tax returns, pension optimization, and income structuring across multiple roles.",
-      },
-      {
-        title: "Locum doctor tax returns",
-        desc: "Bristol locums working across the South West need expert tax management. We handle self assessment, expense claims, and tax efficiency planning.",
-      },
-    ],
+    description:
+      "Bristol and South West doctors matched with specialist medical accountants. GP partnership accounts, NHS Pension annual allowance, private practice incorporation and locum tax.",
+    social:
+      "Bristol and South West medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and private practice.",
   },
 };
+
+/**
+ * The three service lines are the same three on every city page, so they live
+ * once. Only the per-city `desc` varies, and `services` below is indexed
+ * against this array. `/services` carries the same three titles and should
+ * import this constant; that edit is outside this file's scope.
+ */
+const SERVICE_LINES = [
+  { title: "GP partnership accounting", icon: Users },
+  { title: "Consultant tax planning", icon: Stethoscope },
+  { title: "Locum doctor tax returns", icon: CalendarClock },
+];
+
+/**
+ * `related` is three FLAT blog slugs. Medical's blog URLs are `/blog/<slug>`;
+ * `/blog/<category>/<slug>` 404s here, so the kind pill is set explicitly
+ * rather than derived from the href (the kit derives a one-segment /blog path
+ * as a category hub, which these are not).
+ *
+ * The first slug on every city is that city's own article, so the rail carries
+ * one genuinely local link. The other two follow the three service lines above
+ * and differ per city, so five competing local pages do not ship an identical
+ * three-card block.
+ */
+const cityContent: Record<string, {
+  intro: string;
+  areas: string[];
+  whyLocal: string;
+  services: string[];
+  related: string[];
+}> = {
+  london: {
+    intro: "Enquiries from GPs, consultants and medical practice owners across London are matched with specialist medical accountants. Whether you are in Harley Street, the City, Canary Wharf or anywhere across Greater London, you are put in front of a firm that works with doctors rather than a general practice accountant.",
+    areas: ["Westminster", "Camden", "Islington", "Hackney", "Tower Hamlets", "Southwark", "Lambeth", "Wandsworth", "Hammersmith and Fulham", "Kensington and Chelsea", "Central London", "North London", "South London", "East London", "West London"],
+    whyLocal: "London has the highest concentration of medical professionals in the UK, from GP surgeries in every borough to major teaching hospitals and private consulting rooms. The firms in the network understand the London medical landscape, including higher practice costs, competitive private markets, and the complex mix of NHS and private income streams.",
+    services: [
+      "London GP practices often have complex partnership structures with multiple partners and salaried GPs. Partnership accounts, profit allocation, tax returns and NHS pension reconciliation are handled together.",
+      "For London consultants balancing NHS hospital work with private practice, mixed income streams, tax efficiency and NHS pension annual allowance complexities are read as one position.",
+      "London locums working across multiple practices need specialist tax support: self assessment, expense claims, payments on account, and advice on the VAT registration threshold.",
+    ],
+    related: ["gp-accountant-london", "gp-partnership-tax-complete-guide", "private-practice-tax-nhs-and-private-income"],
+  },
+  manchester: {
+    intro: "Enquiries from GPs, consultants and medical practice owners across Manchester are matched with specialist medical accountants. Whether you are in the City Centre, Salford, Trafford or anywhere across Greater Manchester, you are put in front of a firm whose work is medical.",
+    areas: ["Manchester City Centre", "Salford", "Trafford", "Stockport", "Oldham", "Rochdale", "Bury", "Bolton", "Wigan"],
+    whyLocal: "Manchester's medical sector is thriving, with a strong mix of NHS GP surgeries, private clinics and teaching hospitals. The firms in the network understand the local healthcare landscape and the specific financial questions Manchester-based doctors bring, from practice management to private work alongside NHS commitments.",
+    services: [
+      "Manchester GP practices range from small partnerships to large multi-site operations. Partnership accounts, profit shares, tax returns and NHS pension reporting are handled together.",
+      "For Manchester consultants with NHS and private income, the tax position, pension contributions and annual allowance calculations are worked through in one place.",
+      "Manchester locums need reliable tax support across several income sources: self assessment, expenses claimed properly, and tax set aside before it is due.",
+    ],
+    related: ["gp-accountant-manchester", "nhs-pension-annual-allowance-complete-guide", "locum-doctor-tax-complete-guide"],
+  },
+  birmingham: {
+    intro: "Enquiries from GPs, consultants and medical practice owners across Birmingham are matched with specialist medical accountants. Whether you are in the City Centre, Edgbaston, Solihull or anywhere across the West Midlands, you are put in front of a firm that works with doctors.",
+    areas: ["Birmingham City Centre", "Edgbaston", "Solihull", "Sutton Coldfield", "Dudley", "Sandwell", "Walsall", "Wolverhampton"],
+    whyLocal: "Birmingham is a major medical hub with diverse GP practices, teaching hospitals and private clinics. The firms in the network understand the local healthcare economy and the financial questions Birmingham-based doctors bring, from NHS contract income to private practice growth.",
+    services: [
+      "Birmingham GP practices need specialist accounting for partnership structures, profit allocation and NHS pension reconciliation, with year-round support rather than one conversation a year.",
+      "For Birmingham consultants managing NHS and private work, tax returns, pension planning and income structured across several revenue streams are handled together.",
+      "Birmingham locums working across the West Midlands need expert tax support: self assessment, expense claims, and a tax position that does not surprise them in January.",
+    ],
+    related: ["gp-accountant-birmingham", "gp-partner-vs-salaried-gp-tax-comparison", "medical-professional-expenses-what-is-claimable"],
+  },
+  leeds: {
+    intro: "Enquiries from GPs, consultants and medical practice owners across Leeds are matched with specialist medical accountants. Whether you are in the City Centre, Chapel Allerton, Roundhay or anywhere across West Yorkshire, you are put in front of a firm whose work is medical.",
+    areas: ["Leeds City Centre", "Chapel Allerton", "Roundhay", "Headingley", "Horsforth", "Wetherby", "Bradford", "Wakefield", "Huddersfield"],
+    whyLocal: "Leeds has a strong medical sector with established GP practices, teaching hospitals and growing private healthcare provision. The firms in the network understand the Yorkshire healthcare landscape and the financial priorities Leeds-based doctors bring to a first conversation.",
+    services: [
+      "Leeds GP practices benefit from specialist accounting for partnership structures, NHS contract income and tax-efficient profit extraction, supported through the year.",
+      "For Leeds consultants with NHS hospital roles and private practice work, the tax position, pension contributions and annual allowance calculations are read together.",
+      "Leeds locums need reliable tax support across several engagements: self assessment, expenses claimed properly, and payments on account managed rather than discovered.",
+    ],
+    related: ["gp-accountant-leeds", "gp-partner-drawings-vs-profit-tax-reserving", "nhs-pension-scheme-pays-doctors-deadlines"],
+  },
+  bristol: {
+    intro: "Enquiries from GPs, consultants and medical practice owners across Bristol are matched with specialist medical accountants. Whether you are in Clifton, the City Centre or anywhere across the South West, you are put in front of a firm that works with doctors.",
+    areas: ["Bristol City Centre", "Clifton", "Redland", "Westbury-on-Trym", "Bath", "Gloucester", "Cheltenham", "Exeter"],
+    whyLocal: "Bristol's medical sector combines established GP practices with newer private healthcare providers. The firms in the network understand the South West healthcare market and the financial questions Bristol-based doctors bring, from practice management to expanding private work.",
+    services: [
+      "Bristol GP practices need specialist support for partnership accounts, profit allocation and NHS pension planning, with advice available through the year rather than at year end only.",
+      "For Bristol consultants managing NHS and private income, tax returns, pension optimisation and income structuring across several roles are handled as one position.",
+      "Bristol locums working across the South West need expert tax management: self assessment, expense claims, and a clear view of what to set aside.",
+    ],
+    related: ["gp-accountant-bristol", "private-practice-incorporation-complete-guide", "locum-doctor-expenses-what-you-can-claim"],
+  },
+};
+
+/** Hero trust row. Mechanisms only: no fee, no turnaround, no client count,
+ *  and nothing implying an in-house team in the city. */
+const TRUST_POINTS = [
+  "Medical work only",
+  "Matched to a specialist firm",
+  "NHS pension, practice and personal return read together",
+];
+
+/** Closing-panel proof points, same three mechanisms. */
+const MEDICAL_PROOF_POINTS = [
+  { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
+  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "One position, not three", detail: "Practice, pension and personal return read together" },
+];
 
 export default async function LocationPage({ params }: Props) {
   const { slug } = await params;
@@ -154,28 +200,45 @@ export default async function LocationPage({ params }: Props) {
 
   const content = cityContent[slug];
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
-  const posts = getAllPosts().slice(0, 3);
+
+  // Flat /blog/<slug> only. A slug that ever stops resolving drops out rather
+  // than rendering a link to a 404.
+  const related = content.related
+    .map((s) => getPostBySlug(s))
+    .filter((p): p is NonNullable<typeof p> => p !== null)
+    .map((p) => ({
+      href: `/blog/${p.slug}`,
+      title: p.title,
+      excerpt: p.summary,
+      kind: "article" as const,
+    }));
 
   // AccountingService (LocalBusiness sub-type). Phone is intentionally omitted:
   // the business publishes no public phone, so no telephone is emitted in JSON-LD.
-  const jsonLd = JSON.stringify(
-    buildAccountingService(
-      {
-        name: siteConfig.name,
-        description: siteConfig.description,
-        city: cityName,
-        url: `${siteConfig.url}/locations/${slug}`,
-        areaServed: [cityName],
-      },
-      {
-        siteUrl: siteConfig.url,
-        siteName: siteConfig.name,
-        legalName: siteConfig.legalName,
-        description: siteConfig.description,
-        publisherLogoUrl: siteConfig.publisherLogoUrl,
-      },
-    ),
-  );
+  //
+  // The postal-address node the shared builder always attaches is DELETED here.
+  // There is no office in this city: an enquiry is matched to a firm in the
+  // partner network. A machine-readable addressLocality is a stronger claim than the
+  // prose, and it was contradicting it. areaServed (emitted below as City) is
+  // the honest construct for "this area is served".
+  const service = buildAccountingService(
+    {
+      name: siteConfig.name,
+      description: siteConfig.description,
+      city: cityName,
+      url: `${siteConfig.url}/locations/${slug}`,
+      areaServed: [cityName],
+    },
+    {
+      siteUrl: siteConfig.url,
+      siteName: siteConfig.name,
+      legalName: siteConfig.legalName,
+      description: siteConfig.description,
+      publisherLogoUrl: siteConfig.publisherLogoUrl,
+    },
+  ) as Record<string, unknown>;
+  delete service.address;
+  const jsonLd = JSON.stringify(service);
 
   return (
     <>
@@ -183,85 +246,121 @@ export default async function LocationPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd }}
       />
-      <div className={`${contentNarrow} ${sectionY}`}>
-        <Breadcrumb
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Locations", href: "/locations" },
-            { label: cityName },
-          ]}
-        />
-        <h1 className="text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
-          GP Accountant {cityName}
-        </h1>
-        <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-          {content.intro}
-        </p>
 
-        <div className="mt-10 rounded-xl border border-[var(--medical-teal)]/20 bg-gradient-to-br from-[var(--medical-teal)]/5 to-transparent p-6 sm:mt-12 sm:p-8">
-          <h2 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
-            Areas we serve in {cityName}
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
-            {content.areas}
-          </p>
+      <section className="relative flex min-h-[300px] items-center overflow-hidden bg-slate-900 py-10 sm:min-h-[350px] sm:py-12 lg:py-14">
+        <MedicalBackdrop tone="navy" />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            {/* Not suppressed: the script above is AccountingService only, so
+                this is the page's single BreadcrumbList. */}
+            <Breadcrumb
+              variant="light"
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Locations", href: "/locations" },
+                { label: cityName },
+              ]}
+            />
+            <Eyebrow onDark>{cityName}</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-6xl">
+              GP accountant {cityName}
+            </h1>
+            <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg">
+              {content.intro}
+            </p>
+            {/* The list inherits its text colour, so it is set here: the kit
+                only colours the tick. */}
+            <DrawnTickList
+              items={TRUST_POINTS}
+              className="mt-6 list-none space-y-3 pl-0 text-sm text-slate-200 sm:mt-8 sm:text-base"
+            />
+            <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
+              <Link
+                href="#book"
+                data-cta={`location_${slug}_hero_book`}
+                data-cta-placement="location_hero"
+                data-cta-goal="form"
+                className={btnPrimary}
+              >
+                Speak to a medical accountant in {cityName}
+              </Link>
+              <Link
+                href="#services"
+                data-cta={`location_${slug}_hero_services`}
+                data-cta-placement="location_hero"
+                className={btnOnDark}
+              >
+                What the work covers
+              </Link>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <section className="mt-12 sm:mt-16">
-          <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
+      <section className="bg-slate-50 py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <Eyebrow>Areas covered</Eyebrow>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+            Areas we cover in and around {cityName}
+          </h2>
+          <ul className="mt-6 flex list-none flex-wrap gap-2 pl-0">
+            {content.areas.map((area) => (
+              <li
+                key={area}
+                className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 ring-1 ring-slate-200"
+              >
+                {area}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" className="scroll-mt-24 bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>The work</Eyebrow>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
             Medical accounting services in {cityName}
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg">
             {content.whyLocal}
           </p>
-          <div className="mt-8 space-y-6 sm:mt-10">
-            {content.services.map((service) => (
-              <div key={service.title} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-                <h3 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
-                  {service.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-                  {service.desc}
-                </p>
-              </div>
-            ))}
+          <div className="mt-10">
+            <CoverageCards
+              columns={3}
+              tone="slate"
+              items={SERVICE_LINES.map((line, i) => ({
+                title: line.title,
+                body: content.services[i],
+                icon: line.icon,
+              }))}
+            />
+          </div>
+        </div>
+      </section>
+
+      {related.length > 0 && (
+        <section className="bg-slate-50 py-16 sm:py-20">
+          <div className={siteContainerLg}>
+            <Eyebrow>Further reading</Eyebrow>
+            {/* Deliberately NOT "articles about {city}". One of the three is the
+                city's own article; the other two are topical. The heading only
+                claims what the rail actually holds. */}
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
+              Guides on the work above
+            </h2>
+            <RelatedArticles items={related} columns={3} className="mt-8" />
           </div>
         </section>
+      )}
 
-        {posts.length > 0 && (
-          <section className="mt-12 sm:mt-16">
-            <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
-              Related articles
-            </h2>
-            <ul className="mt-6 space-y-4">
-              {posts.map((p) => (
-                <li key={p.slug}>
-                  <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent-strong)]">
-                      {p.category}
-                    </p>
-                    <h3 className="mt-2 text-base font-bold text-[var(--ink)] sm:text-lg">
-                      <Link
-                        href={`/blog/${p.slug}`}
-                        className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
-                      >
-                        {p.title}
-                      </Link>
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{p.summary}</p>
-                  </article>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* Sibling cities */}
-        <section className="mt-12 sm:mt-16">
-          <h2 className="text-lg font-bold text-[var(--ink)] sm:text-xl">
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>Other cities</Eyebrow>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
             Medical accountants in other UK cities
           </h2>
-          <ul className="mt-4 grid list-none gap-3 pl-0 sm:grid-cols-2">
+          <ul className="mt-6 grid list-none gap-3 pl-0 sm:grid-cols-2 lg:grid-cols-4">
             {siteConfig.locations
               .filter((l) => l.slug !== slug)
               .map((l) => {
@@ -270,23 +369,30 @@ export default async function LocationPage({ params }: Props) {
                   <li key={l.slug}>
                     <Link
                       href={`/locations/${l.slug}`}
-                      className={`flex items-center justify-between rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--medical-teal)]/50 hover:shadow-sm ${focusRing}`}
+                      data-cta={`location_${slug}_sibling_${l.slug}`}
+                      data-cta-placement="location_siblings"
+                      className={`flex items-center justify-between gap-2 rounded-xl bg-white p-4 shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-md hover:ring-[var(--copper)] ${focusRing}`}
                     >
-                      <span className="text-sm font-semibold text-[var(--ink)]">{siblingCity}</span>
-                      <span className="text-xs font-medium text-[var(--accent-strong)]">GP accountant →</span>
+                      <span className="text-sm font-bold text-slate-900">{siblingCity}</span>
+                      <ArrowRight aria-hidden className="h-4 w-4 shrink-0 text-[var(--copper-deep)]" />
                     </Link>
                   </li>
                 );
               })}
           </ul>
-        </section>
-
-        <div className="mt-12 sm:mt-16">
-          <CTASection
-            title={`Book a consultation with a ${cityName} medical accountant`}
-            description="Tell us about your role and financial priorities. We'll arrange a short introductory call to discuss how we can support your medical practice."
-          />
         </div>
+      </section>
+
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="white"
+          title={`Book a consultation with a ${cityName} medical accountant`}
+          description="Tell us about your role and your financial priorities. Your enquiry is matched with a specialist medical accounting firm for a short introductory call."
+          proofPoints={MEDICAL_PROOF_POINTS}
+          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Request a consultation" />}
+        />
       </div>
     </>
   );

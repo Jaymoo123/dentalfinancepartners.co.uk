@@ -1,6 +1,4 @@
 import type { ServiceTier } from "@accounting-network/web-shared/components/ServiceTiers";
-import type { StatItemConfig } from "@accounting-network/web-shared/components/StatsBar";
-import { siteConfig } from "@/config/site";
 
 export const serviceTiers: ServiceTier[] = [
   {
@@ -50,29 +48,12 @@ export const serviceTiers: ServiceTier[] = [
 ];
 
 // ponytail: stats verified from codebase — see comments
-export const siteStats: StatItemConfig[] = [
-  {
-    icon: "🧮",
-    value: "10",
-    // registry.ts exports 10 tools in the tools array
-    label: "Free calculators",
-  },
-  {
-    icon: "📋",
-    value: "6",
-    // services/page.tsx sections array has 6 items
-    label: "Service areas",
-  },
-  {
-    icon: "📖",
-    value: "9+",
-    // 9 subdirectories under src/app/blog
-    label: "Specialist guides",
-  },
-  {
-    icon: "📍",
-    // Derived, never hardcoded: niche.config.json locations feed /locations.
-    value: String(siteConfig.locations.length),
-    label: "Locations covered",
-  },
-];
+/* `siteStats` retired 2026-09-11 (design port phase 5). It was a four-tile
+   strip rendered on / and /services. Both consumers now derive their own
+   counts at the call site, so this export had no consumer left, and a stats
+   array that nothing renders is exactly the kind of thing that goes stale
+   unnoticed: two of its four values already had (a "1 day / Response time"
+   turnaround promise, banned estate-wide, and a "9+ Specialist guides" that
+   counted blog subdirectories rather than the six guides). Recover it from
+   git history if a strip is wanted again; derive the numbers, never retype
+   them. */

@@ -175,7 +175,7 @@ export const salariedDoctorTakeHomeTool: GenericTool = {
     {
       question: "What is not included in this calculator?",
       answer:
-        "This calculator does not cover: Class 2 NI (small flat charge for self-employed income, around £3.70 per week in 2025/26, usually collected via self-assessment); Benefits in Kind (e.g. private medical cover from the NHS); partnership profit shares for GP partners (use the GP Partner Drawings Planner instead); locum income through a personal service company (use the Locum Doctor Tax Calculator); or the NHS Pension Annual Allowance charge if your pension growth exceeds your tapered limit.",
+        "This calculator does not cover: Class 2 NI (not a required payment since 6 April 2024; payable voluntarily at £3.65 a week for 2026/27 to protect a state pension record); Benefits in Kind (e.g. private medical cover from the NHS); partnership profit shares for GP partners (use the GP Partner Drawings Planner instead); locum income through a personal service company (use the Locum Doctor Tax Calculator); or the NHS Pension Annual Allowance charge if your pension growth exceeds your tapered limit.",
     },
   ],
 

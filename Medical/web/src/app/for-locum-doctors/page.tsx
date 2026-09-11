@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Accountants for Locum Doctors | IR35, Ltd Company & Tax Returns",
     description:
-      "IR35 status reviews, limited company vs umbrella analysis, locum expense claims, and NHS pension guidance. 100% medical focus.",
+      "IR35 status reviews, limited company vs umbrella analysis, locum expense claims, and NHS pension guidance.",
     url: `${siteConfig.url}/for-locum-doctors`,
     type: "website",
     images: [{ url: `/api/og?title=${encodeURIComponent("Accountants for Locum Doctors | IR35, Ltd Company & Tax Returns")}`, width: 1200, height: 630, alt: "Accountants for Locum Doctors | IR35, Ltd Company & Tax Returns" }],
@@ -33,15 +33,28 @@ const data: AudienceStage = {
   slug: "for-locum-doctors",
   role: "locum-doctors",
   displayRole: "Locum Doctors",
+  displayRoleLower: "locum doctors",
   badge: "Self-employed locums · Limited company · IR35",
   heroHeading: "Accountants for locum doctors across the UK",
   intro:
     "Locum medicine buys clinical flexibility at the price of a genuinely complicated financial position. IR35 status is decided engagement by engagement and by the working arrangement rather than the wording of the contract. Which expenses are allowable depends on your travel pattern, not on a standard list. The choice between a limited company, an umbrella and sole trader status moves your take-home meaningfully and the right answer changes with your earnings level. And NHS Pension accrual on locum work only happens if Forms A and B are actually completed and submitted. An accountant who sees locum doctors regularly gets all four right; one who does not usually gets at least one wrong.",
+  // Statutory figures only, each re-derived 2026-09-11 against
+  // docs/medical/house_positions.md. The two figures that previously sat here
+  // ("100% medical work only", "1 day reply to enquiries") were a client-base
+  // claim and a response-time promise: neither is in house_positions and both
+  // are barred, so they do not republish.
   stats: [
-    { value: "100%", label: "Medical work only" },
-    { value: "1 day", label: "Reply to enquiries" },
-    { value: "£90k", label: "VAT threshold, taxable turnover only" },
-    { value: "£50k", label: "MTD for Income Tax, live since Apr 2026" },
+    // house_positions 6: VAT registration threshold £90,000, taxable
+    // (non-exempt) turnover only.
+    { target: 90, prefix: "£", suffix: "k", label: "VAT registration, taxable turnover only" },
+    // house_positions 9: MTD for Income Tax, £50,000 from 6 April 2026, live.
+    { target: 50, prefix: "£", suffix: "k", label: "MTD for Income Tax, live since April 2026" },
+    // house_positions 2.C: a freelance locum cannot pension work that ended
+    // more than 10 weeks ago.
+    { target: 10, suffix: " weeks", label: "Deadline to pension locum work" },
+    // house_positions 2.C: top NHS pension member contribution tier for
+    // 2026/27, on pensionable pay of £67,669 and above.
+    { target: 12.5, decimals: 1, suffix: "%", label: "Top pension contribution tier, 2026/27" },
   ],
   concerns: [
     {
@@ -52,7 +65,7 @@ const data: AudienceStage = {
     {
       icon: Building2,
       title: "Should I be a limited company, sole trader, or use an umbrella?",
-      body: "The right answer depends on your income level, the IR35 status of your engagements, whether you have a spouse or partner with pension headroom, and how much administrative complexity you are willing to manage. We model the net take-home under all three structures at your actual earnings level before making a recommendation.",
+      body: "The right answer depends on your income level, the IR35 status of your engagements, whether you have a spouse or partner with pension headroom, and how much administrative complexity you are willing to manage. The net take-home under all three structures is modelled at your actual earnings level before any recommendation.",
     },
     {
       icon: Receipt,
@@ -62,7 +75,7 @@ const data: AudienceStage = {
     {
       icon: List,
       title: "How do I handle multiple income streams?",
-      body: "Locum doctors often receive income from GP agencies, direct practice contracts, bank shifts, private clinics, and out-of-hours providers simultaneously. Each may be treated differently for IR35, NI, and pension purposes. We map each income stream, ensure correct tax treatment, and produce a single clear self-assessment return.",
+      body: "Locum doctors often receive income from GP agencies, direct practice contracts, bank shifts, private clinics, and out-of-hours providers simultaneously. Each may be treated differently for IR35, NI, and pension purposes. Each income stream is mapped, its tax treatment settled separately, and a single clear self-assessment return produced.",
     },
     {
       icon: Phone,
@@ -72,7 +85,7 @@ const data: AudienceStage = {
     {
       icon: TrendingDown,
       title: "What happens when I earn over the VAT threshold?",
-      body: "If your locum income from taxable engagements exceeds £90,000 in a rolling 12-month period, VAT registration is required. Most GP surgery work is VAT-exempt (medical services), but agency fees and certain other services are taxable. We monitor your position and register you at the right time to avoid penalties.",
+      body: "If your locum income from taxable engagements exceeds £90,000 in a rolling 12-month period, VAT registration is required. Most GP surgery work is VAT-exempt (medical services), but agency fees and certain other services are taxable. The rolling position is monitored and registration made at the right time to avoid penalties.",
     },
   ],
   services: [
@@ -82,37 +95,37 @@ const data: AudienceStage = {
     },
     {
       title: "IR35 status review per engagement",
-      body: "We review each of your engagements against the IR35 tests: personal service, control, mutuality of obligation, and integration. Where status is borderline, we advise on structuring changes. We keep you updated as HMRC guidance on GP locum status evolves.",
+      body: "Each engagement is reviewed against the IR35 tests: personal service, control, mutuality of obligation, and integration. Where status is borderline, the options for structuring the engagement differently are set out. HMRC guidance on GP locum status keeps moving, so the review is a standing one rather than a one-off.",
     },
     {
       title: "Limited company setup and ongoing compliance",
-      body: "If a limited company is the right structure for your income level and IR35 position, we set it up correctly: shareholder structure, PSC payroll, corporation tax return, company accounts, and dividend extraction optimised across all your income. We also handle the NHS pension interaction.",
+      body: "If a limited company is the right structure for your income level and IR35 position, it is set up correctly: shareholder structure, PSC payroll, corporation tax return, company accounts, and dividend extraction read across all your income. The NHS pension interaction is settled alongside it.",
     },
     {
       title: "Locum expense claim review and optimisation",
-      body: "We review up to three years of prior locum tax returns for under-claimed expenses and file amendments where the gap is material. New locum clients typically see a meaningful recovery from missed indemnity, GMC, CPD, and mileage claims. Going forward, we provide a personalised expense guide and review annually.",
+      body: "Up to three years of prior locum tax returns are reviewed for under-claimed expenses and amendments filed where the gap is material. Indemnity, GMC, CPD and mileage are where the gaps usually sit. Going forward, you get a personalised expense guide and an annual review.",
     },
     {
       title: "VAT registration and compliance",
-      body: "We monitor your cumulative taxable turnover, register you at the right point, advise on VAT scheme selection (flat rate may be beneficial for locums), and handle quarterly VAT returns.",
+      body: "Your cumulative taxable turnover is monitored, registration made at the right point, VAT scheme selection weighed (flat rate suits some locums), and quarterly VAT returns handled.",
     },
     {
       title: "NHS pension guidance for locums",
-      body: "We clarify your pension entitlement type, review your pensionable earnings each year, check annual allowance position, and advise on whether additional pension contributions or a separate personal pension sit alongside your NHS pension in a tax-efficient way.",
+      body: "Your pension entitlement type is clarified, your pensionable earnings reviewed each year, your annual allowance position checked, and whether additional contributions or a separate personal pension sit tax-efficiently alongside the NHS scheme worked through.",
     },
   ],
   faqs: [
     {
       q: "I have been operating as a sole trader. Should I switch to a limited company?",
-      a: "The case for switching depends on three things: your sustained locum income level (above roughly £80,000 per year), the IR35 status of your main engagements (outside IR35 is needed to benefit from the company structure), and whether you have flexibility over when you draw income or a spouse/partner with pension headroom. Below £80,000, the administrative burden of running a company usually outweighs the tax saving. We model your specific numbers before making a recommendation.",
+      a: "It turns on the IR35 status of your main engagements (outside IR35 is needed to benefit from a company at all), on how much of the income you can leave in the company rather than drawing it, and on whether a spouse or partner has pension headroom. There is no income level at which a company is automatically better: corporation tax at 19% up to £50,000 of profit and 25% above £250,000, plus dividend tax at 10.75%, 35.75% or 39.35% for 2026/27, has to beat income tax and Class 4 on the same profit, and the company carries its own compliance cost on top. Your specific numbers are modelled before any recommendation.",
     },
     {
       q: "My agency says I am inside IR35. What does that mean for my tax?",
-      a: "If an agency issues a Status Determination Statement (SDS) saying you are inside IR35, the agency is required to deduct income tax and NI from your fees before paying you, as if you were an employee. You cannot run this income through a limited company tax-efficiently. You can challenge the SDS if you believe it is incorrect by using the client-led disagreement process. We review SDS decisions and advise whether a challenge is warranted.",
+      a: "If an agency issues a Status Determination Statement (SDS) saying you are inside IR35, the agency is required to deduct income tax and NI from your fees before paying you, as if you were an employee. You cannot run this income through a limited company tax-efficiently. You can challenge the SDS if you believe it is incorrect by using the client-led disagreement process. SDS decisions are reviewed and the prospects of a challenge assessed before one is raised.",
     },
     {
       q: "Can I claim the cost of my car as a locum doctor?",
-      a: "Yes, but only the business portion. Travel from home to your first engagement is typically not allowable (it is ordinary commuting). Travel between separate practices or to separate engagements in a day is allowable. If you use your car for both personal and business purposes, you claim either the approved mileage rate (55p per mile for the first 10,000 business miles in 2026/27, then 25p per mile) or the actual business proportion of all running costs and capital allowances. We assess which method gives you the better deduction based on your vehicle and mileage.",
+      a: "Yes, but only the business portion. Travel from home to your first engagement is typically not allowable (it is ordinary commuting). Travel between separate practices or to separate engagements in a day is allowable. If you use your car for both personal and business purposes, you claim either the approved mileage rate (55p per mile for the first 10,000 business miles in 2026/27, then 25p per mile) or the actual business proportion of all running costs and capital allowances. Which method gives the better deduction depends on your vehicle and your mileage, and is assessed before the return is filed.",
     },
     {
       q: "Forms A and B, or a Type 2 certificate? Which applies to me?",
@@ -120,17 +133,25 @@ const data: AudienceStage = {
     },
     {
       q: "What records should I keep as a locum doctor?",
-      a: "Income: all sessional fee invoices and agency payment summaries, bank statements showing receipts. Expenses: receipts or invoices for all claimed items, a mileage log with dates, locations, and purpose for all professional travel. Pension: type 2 certificates or type 1 P60 statements. The self-assessment record-keeping requirement is five years from the filing deadline. We provide a simple record-keeping template when you join.",
+      a: "Income: all sessional fee invoices and agency payment summaries, bank statements showing receipts. Expenses: receipts or invoices for all claimed items, a mileage log with dates, locations, and purpose for all professional travel. Pension: type 2 certificates or type 1 P60 statements. The self-assessment record-keeping requirement is five years from the filing deadline. A simple record-keeping template is provided at the start.",
     },
   ],
   ctaTitle: "Talk to an accountant who works with locum doctors",
   ctaBody:
     "A free 30-minute call covering your current structure, your IR35 position engagement by engagement, whether any locum work is at risk of falling outside the 10-week pension window, and the expense claims that look under-made. No obligation.",
+  calculatorTabs: ["locumtax"],
+  // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
+  // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).
   relatedCalculators: [
     {
       href: "/calculators/locum-tax-calculator",
       name: "Locum Doctor Tax Calculator",
-      desc: "Enter your gross locum income, allowable expenses, and student loan plan. See your net take-home and estimated tax bill. 2025/26 and 2026/27 rates.",
+      desc: "Enter gross locum income, allowable expenses and your student loan plan to see net take-home and the estimated tax bill.",
+    },
+    {
+      href: "/calculators/doctor-expenses-tax-relief",
+      name: "Doctor Expenses Tax Relief",
+      desc: "Price the relief on indemnity, GMC and BMA fees, CPD, equipment and motor across a locum year.",
     },
   ],
   relatedGuides: [

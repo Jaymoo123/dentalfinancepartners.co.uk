@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
-import { CTASection } from "@/components/ui/CTASection";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
@@ -77,7 +79,7 @@ const whenYouNeedHelp = [
   },
   {
     title: "You are considering reducing NHS commitments",
-    body: "Opting out stops 2015 section accrual at 1/54th of pensionable earnings and gives up death in service and ill health cover with it. Partial retirement from age 55 is usually the better understood alternative, and the two are rarely compared properly.",
+    body: "Opting out stops 2015 section accrual at 1/54th of pensionable earnings and gives up death in service and ill health cover with it. Partial retirement from age 55, rising to 57 on and after 6 April 2028 under Finance Act 2022 s.10, is usually the better understood alternative, and the two are rarely compared properly.",
   },
   {
     title: "You have received an annual allowance charge",
@@ -212,7 +214,7 @@ export default function NHSPensionPage() {
               Two routes add to an NHS pension: Added Pension, which buys extra defined benefit accrual inside the scheme, and Money Purchase AVCs, a separate defined contribution pot. Both attract income tax relief, and both count towards your £60,000 annual allowance for 2026/27. For a hospital consultant or GP partner already inside the taper, buying more can cost more than it saves.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact" /* No bg override here. btnPrimary already paints --btn-ground (#a0622b,
+              <Link href="#book" /* No bg override here. btnPrimary already paints --btn-ground (#a0622b,
                   white label 4.91); appending bg-[var(--copper)] put a SECOND background
                   utility on the same element, the later one in the stylesheet won, and
                   the site's flagship pillar shipped its primary CTA at 3.79 against a
@@ -231,7 +233,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               What is NHS additional pension, and how is it different from an NHS AVC?
             </h2>
@@ -277,7 +279,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               Does additional pension count towards the annual allowance?
             </h2>
@@ -322,7 +324,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">When do you need specialist NHS pension advice?</h2>
             <div className="mt-8 sm:mt-10 space-y-5 sm:space-y-6">
               {whenYouNeedHelp.map((item) => (
@@ -338,7 +340,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">Common NHS pension mistakes</h2>
             <div className="mt-8 sm:mt-10 space-y-5 sm:space-y-6">
               {commonMistakes.map((item) => (
@@ -372,15 +374,25 @@ export default function NHSPensionPage() {
               tracks annual allowance charges across UK registered schemes from HMRC and NHSBSA open data.
             </p>
           </div>
-          <div className="max-w-5xl mx-auto">
+          <div className="w-full">
+            {/* The registry tool, rendered by slug. Phase 4 gates it inside
+                CalculatorClient, so this line is not changed and there is no
+                second gate here. */}
             <CalculatorClient slug="nhs-pension-annual-allowance" />
           </div>
+          <p className="mt-6 text-center text-sm text-slate-600">
+            It also has{" "}
+            <Link href="/calculators/nhs-pension-annual-allowance" className="font-semibold text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4">
+              its own page, with the worked method and the FAQ
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               What happens to your pension if you retire on ill health grounds?
             </h2>
@@ -396,7 +408,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               What is a deferred NHS pension, and what is an adult dependant pension?
             </h2>
@@ -407,7 +419,7 @@ export default function NHSPensionPage() {
               An adult dependant pension is the ongoing payment to a surviving spouse, civil partner or qualifying partner, and it sits alongside any lump sum death benefit. The lump sum side is tested against the Lump Sum and Death Benefit Allowance of £1,073,100 for 2026/27, the framework that replaced the lifetime allowance from 6 April 2024. Entitlement turns on service length and on whether death happens in service, in deferment or after retirement, so read the scheme's own scenario guidance before assuming a figure.
             </p>
             <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
-              Partial retirement is the option most often missed here, because it lets you draw between 20% and 100% of accrued benefits from age 55 while continuing to work and re-accrue, provided pensionable pay or commitment falls by at least 10% for twelve months. Our{" "}
+              Partial retirement is the option most often missed here, because it lets you draw between 20% and 100% of accrued benefits from age 55 while continuing to work and re-accrue, provided pensionable pay or commitment falls by at least 10% for twelve months. Age 55 is the normal minimum pension age today, but Finance Act 2022 s.10 raises it to 57 on and after 6 April 2028, so anyone under 53 now should plan to 57 unless they held an unqualified right to take benefits earlier under the scheme rules on 4 November 2021. Our{" "}
               <Link href="/blog/nhs-pension-partial-retirement-doctors-guide" className="text-[var(--navy)] underline decoration-[var(--copper)] decoration-2 underline-offset-4">
                 partial retirement guide
               </Link>{" "}
@@ -423,7 +435,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               How do you sort out NHS pension contact details when your record is wrong?
             </h2>
@@ -447,7 +459,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl mb-8 sm:mb-10">How an NHS pension planning review runs</h2>
             <div className="space-y-6 sm:space-y-8">
               {processSteps.map((step) => (
@@ -470,7 +482,7 @@ export default function NHSPensionPage() {
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             <div className="bg-[var(--navy)] p-6 sm:p-10 text-white">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">What an NHS pension review gives you</h2>
               <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base text-slate-200">
@@ -486,27 +498,33 @@ export default function NHSPensionPage() {
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">NHS pension questions doctors ask</h2>
-            <dl className="mt-8 space-y-5 sm:space-y-6">
-              {faqs.map((f) => (
-                <div key={f.q} className="border-l-4 border-slate-300 bg-slate-50 p-6 sm:p-8">
-                  <dt className="text-lg sm:text-xl font-bold text-slate-900">{f.q}</dt>
-                  <dd className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{f.a}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <CTASection
-        title="Get your NHS pension review"
-        description="Book a free consultation. We'll review your pension position and give you clear guidance on managing annual allowance."
-        primaryLabel="Book free consultation"
+      {/* One binding: `faqs` feeds both this section and buildFaqPage above. */}
+      <FaqSection
+        className="bg-white py-12 sm:py-16 lg:py-20"
+        eyebrow="FAQ"
+        title="NHS pension questions doctors ask"
+        faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))}
       />
+
+      <div id="book" className="scroll-mt-24" data-cta="nhs_pension_book" data-cta-goal="form" data-cta-placement="nhs_pension">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          title="Get your NHS pension position reviewed"
+          description="Send your pension position and we will match you with a firm that works with doctors every day. They read the input amount, the taper and any Scheme Pays election together rather than one at a time."
+          proofPoints={MEDICAL_PROOF_POINTS}
+          footnote="No obligation. If the specialist firm thinks your position is already right, they will tell you so."
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
+        />
+      </div>
     </>
   );
 }
+
+/** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no
+ *  client count, and nothing that implies an in-house team does the work. */
+const MEDICAL_PROOF_POINTS = [
+  { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
+  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "One position, not three", detail: "Practice, pension and personal return read together" },
+];

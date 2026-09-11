@@ -34,15 +34,27 @@ const data: AudienceStage = {
   slug: "for-gps",
   role: "gps",
   displayRole: "GP Practices, Partners & Salaried GPs",
+  displayRoleLower: "GP practices, partners and salaried GPs",
   badge: "Partnership accounts · Profit allocation · Superannuation",
   heroHeading: "GP practice accountants for partnerships and their partners",
   intro:
     "A GP practice is two jobs of accounting stacked on top of each other. There is the partnership itself, whose income arrives as global sum weighted by Carr-Hill, QOF achievement, enhanced services, PCN and DES payments and reimbursements, and whose accounts have to carry notional rent, capital and current accounts and a profit allocation that changes whenever a partner joins or leaves. Then there is each partner individually, with a profit share, superannuation already deducted at source, and often locum, out-of-hours or private income alongside it. Accountants for GP practices have to make both sets of figures agree, which is where generalist practice accounting most often comes apart.",
+  // Statutory figures only, each re-derived 2026-09-11 against
+  // docs/medical/house_positions.md. The two figures that previously sat here
+  // ("100% medical work only", "1 day reply to enquiries") were a client-base
+  // claim and a response-time promise: neither is in house_positions and both
+  // are barred, so they do not republish.
   stats: [
-    { value: "100%", label: "Medical work only" },
-    { value: "1 day", label: "Reply to enquiries" },
-    { value: "£60k", label: "Annual allowance, 2026/27" },
-    { value: "£260k", label: "Adjusted income taper point, 2026/27" },
+    // house_positions 2.B: annual allowance £60,000 for 2026/27.
+    { target: 60, prefix: "£", suffix: "k", label: "Annual allowance, 2026/27" },
+    // house_positions 2.B: taper starts at adjusted income above £260,000.
+    { target: 260, prefix: "£", suffix: "k", label: "Adjusted income taper point, 2026/27" },
+    // house_positions 2.B: the taper only bites if threshold income also
+    // exceeds £200,000.
+    { target: 200, prefix: "£", suffix: "k", label: "Threshold income test, 2026/27" },
+    // house_positions 2.B: unused allowance carries forward from the three
+    // previous tax years.
+    { target: 3, label: "Carry-forward years" },
   ],
   concerns: [
     {
@@ -63,12 +75,12 @@ const data: AudienceStage = {
     {
       icon: FileText,
       title: "How do I handle mixed NHS and private income?",
-      body: "A salaried GP with additional private sessions, a locum shift here and there, and a share of partnership superannuation creates a genuinely complicated tax picture. We reconcile every income stream, ensure NHS superannuation is reported correctly, and check that private income is returned on self-assessment without duplication.",
+      body: "A salaried GP with additional private sessions, a locum shift here and there, and a share of partnership superannuation creates a genuinely complicated tax picture. Every income stream is reconciled, NHS superannuation is reported correctly, and private income is returned on self-assessment without duplication.",
     },
     {
       icon: Building2,
       title: "What does our partnership profit share look like on my return?",
-      body: "GP partnership accounts require specific treatment: allocation of notional rent, reimbursed expenses, individual superannuation contributions, and profit shares that change throughout the year when partners join or leave. We prepare partnership accounts and individual returns in a coordinated way so nothing is counted twice or missed.",
+      body: "GP partnership accounts require specific treatment: allocation of notional rent, reimbursed expenses, individual superannuation contributions, and profit shares that change throughout the year when partners join or leave. Partnership accounts and individual returns are prepared as one coordinated piece of work, so nothing is counted twice or missed.",
     },
     {
       icon: Receipt,
@@ -78,22 +90,22 @@ const data: AudienceStage = {
     {
       icon: Shield,
       title: "Should my practice incorporate?",
-      body: "Practice incorporation is sometimes the right move for GPs with significant private income outside the partnership and non-working spouse or adult children with pension headroom. It is rarely the right move for a standard salaried or partner GP earning only NHS income. We model the numbers before recommending any structural change.",
+      body: "Practice incorporation is sometimes the right move for GPs with significant private income outside the partnership and non-working spouse or adult children with pension headroom. It is rarely the right move for a standard salaried or partner GP earning only NHS income. The numbers are modelled before any structural change is recommended.",
     },
     {
       icon: Users,
       title: "We have a new partner joining. What are the tax implications?",
-      body: "Admitting a new partner mid-year creates a change-of-basis period, affects the partnership profit shares, and requires careful handling of the incoming partner's NHS pension membership and superannuation contributions. We coordinate across all partners to ensure the transition is handled correctly and files on time.",
+      body: "Admitting a new partner mid-year creates a change-of-basis period, affects the partnership profit shares, and requires careful handling of the incoming partner's NHS pension membership and superannuation contributions. Coordination across all partners is what keeps the transition correct and the returns on time.",
     },
   ],
   services: [
     {
       title: "GP self-assessment and partnership tax returns",
-      body: "All income streams returned correctly: NHS salary or partnership share, private sessions, locum shifts, rental income, investment income. GP self-assessment filed accurately and inside the deadline. We coordinate partner and practice returns where applicable.",
+      body: "All income streams returned correctly: NHS salary or partnership share, private sessions, locum shifts, rental income, investment income. GP self-assessment filed accurately and inside the deadline. Partner and practice returns are coordinated where both apply.",
     },
     {
       title: "NHS pension annual allowance modelling",
-      body: "We calculate your pension input amounts for the NHS Pension Scheme each year, model the tapered annual allowance against your adjusted income, and flag where Scheme Pays elections may reduce or defer a charge. Modelling is done before the charge crystallises, not after.",
+      body: "Your pension input amounts for the NHS Pension Scheme are calculated each year, the tapered annual allowance is modelled against your adjusted income, and Scheme Pays elections are flagged where they may reduce or defer a charge. Modelling is done before the charge crystallises, not after.",
     },
     {
       title: "GP partnership accounts preparation",
@@ -101,11 +113,11 @@ const data: AudienceStage = {
     },
     {
       title: "Medical expense claim review",
-      body: "We review your current and prior year expense claims against HMRC's stated position on medical professional expenses. Where we find under-claimed amounts, we file amendments. Going forward, we provide a personalised expense guide for your specific role.",
+      body: "Current and prior year expense claims are reviewed against HMRC's stated position on medical professional expenses. Where under-claimed amounts turn up, amendments are filed. Going forward, you get a personalised expense guide for your specific role.",
     },
     {
       title: "Practice structure advice",
-      body: "Analysis of whether incorporation, a limited liability partnership, or a different profit-sharing arrangement better suits your practice's composition, income mix, and medium-term plans. We model the tax cost of any structural change before you commit.",
+      body: "Analysis of whether incorporation, a limited liability partnership, or a different profit-sharing arrangement better suits your practice's composition, income mix, and medium-term plans. The tax cost of any structural change is modelled before you commit.",
     },
     {
       title: "GP tax planning and annual review",
@@ -127,33 +139,46 @@ const data: AudienceStage = {
     },
     {
       q: "I received an NHS pension annual allowance charge. What should I do?",
-      a: "First, verify the HMRC calculation: the NHSBSA issues Pension Savings Statements, but there are known errors in pension input amounts, particularly for members who changed scheme section or had mid-year changes to pensionable pay. If the charge is correct, assess whether a Scheme Pays election makes sense, which defers and capitalises the charge against your eventual pension benefits. We work through both steps for GP clients in this position.",
+      a: "First, verify the HMRC calculation: the NHSBSA issues Pension Savings Statements, but there are known errors in pension input amounts, particularly for members who changed scheme section or had mid-year changes to pensionable pay. If the charge is correct, assess whether a Scheme Pays election makes sense, which defers and capitalises the charge against your eventual pension benefits. Both steps are worked through, in that order.",
     },
     {
       q: "Can I claim for use of my home as a consulting room?",
-      a: "If you genuinely use a room at home exclusively for NHS or private consulting, a proportion of household costs is allowable. The calculation involves floor area ratios and the proportion of time the room is used professionally. HMRC scrutinises home office claims for GPs, so the claim needs to be defensible. We document it correctly from the outset rather than risking an HMRC challenge later.",
+      a: "If you genuinely use a room at home exclusively for NHS or private consulting, a proportion of household costs is allowable. The calculation involves floor area ratios and the proportion of time the room is used professionally. HMRC scrutinises home office claims for GPs, so the claim needs to be defensible. It is documented properly from the outset rather than risking an HMRC challenge later.",
     },
     {
       q: "My practice uses a different year-end to the tax year. Does that matter?",
-      a: "From 2023/24 all self-employed income is taxed on a tax-year basis regardless of your accounting year-end, following HMRC's basis period reform. If your practice year-end is not 31 March or 5 April, there will be a transitional overlap profit adjustment that we handle in the transition year and going forward. It matters for your payments on account, so we model the cash flow implications alongside the tax position.",
+      a: "From 2023/24 all self-employed income is taxed on a tax-year basis regardless of your accounting year-end, following HMRC's basis period reform. If your practice year-end is not 31 March or 5 April, there will be a transitional overlap profit adjustment to handle in the transition year and going forward. It matters for your payments on account, so the cash flow implications are modelled alongside the tax position.",
     },
     {
       q: "As a salaried GP, do I need to file a self-assessment?",
-      a: "If you have additional income beyond your salaried NHS pay (private sessions, locum shifts, BMA sessional work, rental income, investment income above the threshold), or if your total income exceeds £100,000 (which triggers the personal allowance taper), then yes. Many salaried GPs think their employer handles everything via PAYE, then face an unexpected self-assessment requirement. We identify this early and register you on time.",
+      a: "If you have additional income beyond your salaried NHS pay (private sessions, locum shifts, BMA sessional work, rental income, investment income above the threshold), or if your total income exceeds £100,000 (which triggers the personal allowance taper), then yes. Many salaried GPs think their employer handles everything via PAYE, then face an unexpected self-assessment requirement. Catching it early means registering on time rather than explaining a late return.",
     },
     {
       q: "How long does the onboarding process take?",
-      a: "We handle professional clearance with your existing accountant and request the records we need. Most onboarding is complete within two to three weeks. We pick up from the current position rather than asking you to restart from scratch. You can switch mid-year without disruption to your filing timeline.",
+      a: "Professional clearance with your existing accountant is handled for you and the records requested. Most onboarding is complete within two to three weeks. The work picks up from your current position rather than asking you to restart from scratch. You can switch mid-year without disruption to your filing timeline.",
     },
   ],
   ctaTitle: "Talk to a GP practice accountant",
   ctaBody:
     "A free 30-minute scoping call. Whether you are enquiring as a practice or as an individual partner or salaried GP, the call covers your current setup, your NHS Pension position, and any expense claims that look under-made. No obligation.",
+  calculatorTabs: ["annualallowance"],
+  // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
+  // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).
   relatedCalculators: [
     {
       href: "/calculators/nhs-pension-annual-allowance",
       name: "NHS Pension Annual Allowance Calculator",
-      desc: "Enter your threshold income and annual pension growth from your NHSBSA statement to see your tapered allowance and any potential charge. 2025/26 rates.",
+      desc: "Enter your threshold income and annual pension growth from your NHSBSA statement to see your tapered allowance and any potential charge.",
+    },
+    {
+      href: "/calculators/gp-partner-drawings-planner",
+      name: "GP Partner Drawings Planner",
+      desc: "Plan drawings against profit share, superannuation and the tax set aside for a partner's own return.",
+    },
+    {
+      href: "/calculators/salaried-gp-vs-partner",
+      name: "Salaried GP versus Partner",
+      desc: "Compare a salaried post with a partnership share on take-home, pension accrual and filing obligations.",
     },
   ],
   relatedGuides: [

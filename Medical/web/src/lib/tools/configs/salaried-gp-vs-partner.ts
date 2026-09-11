@@ -178,7 +178,7 @@ export const salariedGpVsPartnerTool: GenericTool = {
     {
       question: "What is not included in this calculator?",
       answer:
-        "It does not model: Class 2 NI (small flat charge for the self-employed, usually collected via self-assessment); the practice's employer NIC or employer superannuation costs (these affect the practice, not the individual's net pay); NHS pension accrual value or the Annual Allowance charge (use the NHS Pension Annual Allowance Calculator); seniority or other add-ons; partnership buy-in costs; or tax code adjustments. It assumes the whole profit share is superannuable, which may differ from your certificate of pensionable profit.",
+        "It does not model: Class 2 NI (not a required payment since 6 April 2024; voluntary only); the practice's employer NIC or employer superannuation costs (these affect the practice, not the individual's net pay); NHS pension accrual value or the Annual Allowance charge (use the NHS Pension Annual Allowance Calculator); seniority or other add-ons; partnership buy-in costs; or tax code adjustments. It assumes the whole profit share is superannuable, which may differ from your certificate of pensionable profit.",
     },
   ],
 

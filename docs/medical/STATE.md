@@ -6,7 +6,7 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-11 (design port Phase 4; nothing deployed since 2026-08-26).
+Last updated: 2026-09-11 (design port Phase 5; nothing deployed since 2026-08-26).
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
 
@@ -324,6 +324,135 @@ harness reports the command as failed, so kill by PID from `netstat -ano | grep 
 and `taskkill //PID <pid> //F`; re-editing `niche.config.json` by parsing and re-dumping
 JSON rewrites every escaped character in the file, so edit the lines and never round-trip
 it.
+
+## 2026-09-11 - DESIGN PORT PHASE 5 (homepage, pillars, locations). Built, reviewed once, fixed twice. Nothing deployed.
+
+Cadence changed here at the owner's instruction: ONE review round per phase instead of two
+plus a re-review, and out-of-phase defects logged rather than fixed. The one round returned
+FAIL with three criticals, so the round earned its place.
+
+**What landed.** The homepage rebuilt to the section-B anatomy (618 to 818 lines); `/services`,
+`/nhs-pension`, `/medical-guides` and its six guide pages; the four `/for-*` audience pages
+through `AudienceStageLayout`; the locations index and five city pages; a net-new
+`CalculatorTabs` (WAI-ARIA tablist, roving tabindex, hash deep links, one tabpanel in the
+server HTML) adopted on seven routes; a net-new `calculator-tabs-crawl-path` guard test.
+
+**The crawl-path arithmetic, which is why the tabs adoption is not what the spec said.** A tab
+strip renders a `button role="tab"`, not an anchor, so converting calculator link cards to
+tabs DELETES crawlable anchors. `/services` would have lost nine and `/medical-guides` two.
+The arrangement that satisfies both rules is a three-tab block ABOVE a plain link list, so the
+reader gets a tool where they stand and every anchor survives. Every route with a tab strip
+also carries at least one literal `/calculators/<slug>` href, because the guard is a source
+scan and cannot see through a constant. Result: every route finished ABOVE its floor, not at
+it, where the spec's own plan would have landed three routes exactly on the line.
+
+**THE THREE CRITICALS, all compliance, all live in rendered output, none visible in the page
+copy:**
+
+1. **Five city pages emitted `PostalAddress` structured data claiming an office in London,
+   Manchester, Birmingham, Leeds and Bristol.** We have none. The phase rewrote the visible
+   prose to the matching model and added a comment beside that very script block without
+   touching the claim inside it. The machine-readable version is the stronger assertion and
+   the one a search engine acts on. Address deleted, `areaServed` kept. The only
+   `PostalAddress` left on the site is the genuine registered office on the site-wide
+   Organization node.
+2. **`/for-consultants` advertised "100% medical focus" and `/for-junior-doctors`
+   "Medical-only" in their meta descriptions**, the text Google renders in results. Both are
+   the barred client-base claim, and both sat in files whose own comments said the claim had
+   been removed: it had been removed from the stat tiles only.
+3. **Five city meta descriptions asserted an accountant located in each city**, contradicting
+   the body of the same page. Rewritten per city, not one template with the name swapped.
+
+**Figures: ten of sixteen audience-page statistics could not be sourced and did not ship.**
+The removed set included two response-time promises, two "100% medical only" client-base
+claims, a "zero hidden fees" claim and an "F1-ST8 all training grades" claim that appears
+nowhere in house_positions. Replacements all carry a section reference: annual allowance and
+taper (2.B), contribution tiers and the Form B ten-week rule (2.C), VAT registration (6), MTD
+(9), Class 4 and the income tax bands (5, 22).
+
+**Other factual defects fixed, each against house_positions:**
+
+- A **student loan threshold the site's own calculator disagreed with**: `/for-junior-doctors`
+  published 27,295 and worked a "780 a year" figure off it, while the calculators use 28,470,
+  and one compute file uses 29,385 having re-pinned 2026/27. There is NO student loan section
+  in house_positions, so no figure is verifiable. The page now describes the mechanism and
+  points at the calculator. **The compute discrepancy is open, see below.**
+- **Class 2 National Insurance told to be paid weekly** in three calculator configs
+  (locum-tax, salaried-doctor-take-home, salaried-gp-vs-partner), which section 8 forbids in
+  terms. The arithmetic was always right, only the copy was wrong: nothing in
+  `lib/tools/compute/` ever charged Class 2.
+- **A GMC retention fee of 481** published as a default input, in two worked examples and an
+  FAQ on the expenses calculator. Section 8 flags that fee UNVERIFIED (the GMC returns HTTP
+  403 to automated fetches) and says no page may state a figure. The input now defaults to
+  zero and asks the doctor for their own.
+- **A worked take-home comparison that was arithmetically wrong**, not merely stale: it put a
+  sole trader on 100,000 at "approximately 55,000 to 60,000" net, where the actual figure is
+  about 69,300, and cited the 60 percent personal-allowance band as biting at 100,000 where it
+  does not yet. All three net figures removed in favour of the rate mechanism.
+- **Unsourced incorporation thresholds** ("80,000 to 100,000", "saves 5,000 to 15,000
+  annually") on two audience pages and five places in the guides data. Section 5 carries no
+  such threshold and its writing rule forbids presenting incorporation as a clear tax win.
+- **Partial retirement stated as "from age 55"** on `/nhs-pension` twice, with no mention that
+  the normal minimum pension age rises to 57 on 6 April 2028 (section 18, FA 2022 s.10). A
+  doctor aged 53 was being invited to plan against an age they will not have.
+- **"Most doctors" framing**, a locked rule, including one instance this phase introduced.
+- **Roughly 70 in-house-actor sentences** ("we file", "we prepare", "we handle", "we advise",
+  "we model") across the five pillar and audience files and the guides data. The site matches
+  an enquiry to a regulated firm; it does not do the work, and its privacy policy says so.
+- Six guide meta descriptions and one meta title still tagged "2025/26" over bodies that now
+  state 2026/27 figures.
+
+**Presentation defects fixed:**
+
+- The net-new tab strip's selected label was white on `primary-600`, which measures **3.19**
+  against a 4.5 floor at the 14px it renders at below `sm`. It failed AA on mobile on all
+  seven host routes including the homepage. Moved to `--btn-ground` (4.91), the ground every
+  other button on the site uses. The eight category-hub links had the same colour as text and
+  moved to `primary-700` (5.05).
+- **The homepage copper straplines and category chips**, the last known contrast failures on
+  the site, deferred by every earlier phase because the homepage always belonged to a later
+  one. Now on `--copper-deep`.
+- **The inheritance trap, third instance**: the homepage lead panel's privacy policy link
+  measured 1.04 on navy. `globals.css` carries `a { color: var(--navy) }` in `@layer base`,
+  and a direct element rule beats an INHERITED value, so any anchor without its own colour
+  utility renders navy whatever its parent says. Same root cause as the blog hero breadcrumb
+  and the footer.
+- `/for-gps` rendered "gp practices, partners and salaried gps" in three visible headings,
+  because `displayRole.toLowerCase()` ate the acronym. The other three audiences survived only
+  by having no acronym in their names.
+
+**Retired:** the auto-rotating testimonial carousel (no `prefers-reduced-motion` handling at
+all, an unconditional 8-second interval, so retiring it is a straight accessibility gain); the
+specialist-versus-generalist comparison table, which had ONE data column and therefore compared
+nothing; the `siteStats` export, dead once both consumers derived their own counts, and two of
+its four values were already wrong.
+
+**Verification, re-run after the last change:** 138/138 URLs clean, 0 link-floor breaches
+(5,391 links), 0 data-cta regressions (655 total), 0 dash regressions (7 site-wide), and
+**browser_check at 390/768/1024/1440 over the phase's routes returned 0 findings**, the first
+fully clean run of this port. Build exit 0 at 162 pages. 486 tests. `tsc` clean.
+
+**Noise generated: none.** Nothing pushed, no CI run, no deploy.
+
+**OPEN, and each needs a decision rather than a guess:**
+
+- **Student loan thresholds are unsourced and the calculators disagree.** Three configs use
+  28,470; `lib/tools/compute/locum-tax.ts` uses 29,385 and calls 28,470 the stale 2025/26
+  value. house_positions has no student loan section at all. Either someone verifies the
+  current thresholds and adds a section, or the student loan line comes out of those
+  calculators. A calculator that outputs a number from an unsourced rate is the defect.
+- **`packages/web-shared/schema/local-business.ts` attaches `PostalAddress` unconditionally**,
+  so every other estate site consuming `buildAccountingService` still emits a city address it
+  probably cannot support. Medical is fixed at the consumer. Making `address` opt-in is a
+  one-line root fix but changes Property and the other ported sites, so it is not this port's
+  to take.
+- **The five city pages are near-duplicates of each other** in body prose (pairwise similarity
+  0.66 to 0.70 with the city name masked), even though their article rails are genuinely
+  distinct. Either they get real per-city content or the set gets cut to fewer cities done
+  properly.
+- Owner gates M-C6, M-C7, M-C11 and M-C12 remain open and untaken.
+
+---
 
 ## 2026-09-11 - DESIGN PORT PHASE 4 (the calculators). Built, reviewed twice, fixed. Nothing deployed.
 

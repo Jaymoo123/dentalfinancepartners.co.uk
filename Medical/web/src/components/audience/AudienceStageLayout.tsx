@@ -1,256 +1,230 @@
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
-import { siteContainerLg, btnOnDark, focusRing } from "@/components/ui/layout-utils";
+import { CoverageCards } from "@accounting-network/web-shared/design/marketing/CoverageCards";
+import { ProcessTimeline } from "@accounting-network/web-shared/design/marketing/ProcessTimeline";
+import { StatsCounter } from "@accounting-network/web-shared/design/marketing/StatsCounter";
+import type { StatItem } from "@accounting-network/web-shared/design/marketing/StatsCounter";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteContainerLg, btnPrimary, btnSecondary, focusRing } from "@/components/ui/layout-utils";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { CalculatorTabs } from "@/components/tools/CalculatorTabs";
+import type { TabKey } from "@/components/tools/CalculatorTabs";
 import { JsonLd, buildAudiencePageSchema } from "@/lib/schema";
 
 export type AudienceStage = {
   slug: string;
   role: string;
   displayRole: string;
+  /**
+   * The mid-sentence form of `displayRole`, because `.toLowerCase()` on it
+   * destroys the acronym: "GP Practices, Partners & Salaried GPs" became
+   * "gp practices, partners & salaried gps" in three visible headings on
+   * /for-gps. The other three audiences survived that only by luck, having no
+   * acronym in their name. Authored per page rather than derived, because no
+   * transform knows which letters are an acronym.
+   */
+  displayRoleLower?: string;
   badge: string;
   heroHeading: string;
   intro: string;
-  stats: { value: string; label: string }[];
+  /** Statutory figures only. Every value carries a house_positions reference in
+   *  the page file that supplies it; a figure that cannot be re-derived there
+   *  does not publish. */
+  stats: StatItem[];
   concerns: { icon: LucideIcon; title: string; body: string }[];
   services: { title: string; body: string }[];
   faqs: { q: string; a: string }[];
   ctaTitle: string;
   ctaBody: string;
   relatedGuides?: { href: string; title: string; body: string }[];
+  /**
+   * Crawlable per-calculator links. These are LINKS, not cards: the tabs below
+   * render `<button role="tab">` and delete no anchor only because this list
+   * spells every `/calculators/<slug>` href out in the page file that owns it.
+   * See DISPOSITION_SLICE2 B.1.
+   */
   relatedCalculators?: { href: string; name: string; desc: string }[];
+  /** Which calculators mount as tabs on this route (DISPOSITION_SLICE2 B.3). */
+  calculatorTabs?: TabKey[];
 };
 
 type Props = { data: AudienceStage };
+
+/** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no
+ *  client count, and nothing that implies an in-house team does the work. */
+const MEDICAL_PROOF_POINTS = [
+  { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
+  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "One position, not three", detail: "Practice, pension and personal return read together" },
+];
 
 export function AudienceStageLayout({ data }: Props) {
   return (
     <>
       {/* Answer-ready structured data for AI engines (BreadcrumbList + Service
           + FAQPage). Built once in @/lib/schema so every /for-* audience page
-          emits it. The FAQ mirrors the visible Q&A below verbatim. */}
+          emits it. The FAQ mirrors the visible Q&A below verbatim. The visible
+          breadcrumb suppresses its own node so only one BreadcrumbList ships. */}
       <JsonLd data={buildAudiencePageSchema(data)} />
+
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#000d1f] via-[var(--navy)] to-[var(--navy-soft)]">
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(ellipse 70% 50% at 20% 0%, rgba(184,115,51,0.10), transparent 60%), radial-gradient(ellipse 60% 45% at 80% 100%, rgba(184,115,51,0.07), transparent 55%)",
-          }}
-        />
-        <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20`}>
-          <nav aria-label="Breadcrumb" className="mb-6">
-            <ol className="flex flex-wrap items-center gap-2 text-sm text-white/60">
-              <li>
-                <Link href="/" className={`hover:text-white/90 transition-colors ${focusRing} rounded`}>
-                  Home
-                </Link>
-              </li>
-              <li aria-hidden className="text-white/40">/</li>
-              <li className="font-medium text-white/80">For {data.displayRole}</li>
-            </ol>
-          </nav>
-          <div className="mt-8 max-w-3xl">
+      <section className="relative overflow-hidden bg-[var(--navy)] py-16 sm:py-20">
+        <MedicalBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <Breadcrumb
+            variant="light"
+            suppressJsonLd
+            items={[{ label: "Home", href: "/" }, { label: `For ${data.displayRole}` }]}
+          />
+          <div className="max-w-3xl">
             <div className="inline-flex items-center rounded-full bg-[var(--copper)]/20 border border-[var(--copper)]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-light)]">
               {data.badge}
             </div>
             <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               {data.heroHeading}
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-white/80 sm:text-lg max-w-2xl">
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
               {data.intro}
             </p>
+            <div className="mt-8">
+              <Link href="#book" className={btnPrimary}>
+                Ask a medical accountant about your position
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Stats bar */}
-      <section className="bg-[var(--navy)] py-8 sm:py-10">
+      {/* Statutory figures strip. White, so it does not touch the navy hero. */}
+      <section className="border-b border-slate-200 bg-white py-5 sm:py-7">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
-            {data.stats.map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-2xl font-bold text-[var(--copper-light)] sm:text-3xl lg:text-4xl">
-                  {s.value}
-                </div>
-                <div className="mt-1.5 text-xs font-semibold uppercase tracking-wider text-white/70 sm:text-sm">
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
+          <StatsCounter stats={data.stats} />
+          <ExampleFigureNote
+            className="mt-4 text-center"
+            label="Statutory figures for the tax year shown. Your own position is what decides the answer."
+          />
         </div>
       </section>
 
       {/* Concerns grid */}
       <section className="bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-6xl">
-            <div className="mb-12 max-w-3xl">
-              <h2 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">
-                What we hear from {data.displayRole.toLowerCase()}
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                The questions and concerns that come up most in the first conversation.
-              </p>
-            </div>
-            <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {data.concerns.map((c) => {
-                const Icon = c.icon;
-                return (
-                  <div
-                    key={c.title}
-                    className="rounded-xl border border-[var(--border)] bg-[var(--background)] p-6 transition-all hover:border-[var(--copper)] hover:shadow-md hover:shadow-[var(--copper-soft)]"
-                  >
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--navy)]">
-                      <Icon className="h-5 w-5 text-[var(--copper-light)]" strokeWidth={2} />
-                    </div>
-                    <h3 className="mt-5 text-base font-bold text-[var(--ink)] sm:text-lg">
-                      {c.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">{c.body}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="bg-[var(--background)] py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>What we hear</Eyebrow>
             <h2 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">
-              How we work with {data.displayRole.toLowerCase()}
+              What we hear from {data.displayRoleLower ?? data.displayRole.toLowerCase()}
             </h2>
-            <div className="mt-10 space-y-5">
-              {data.services.map((s, i) => (
-                <div
-                  key={s.title}
-                  className="flex gap-5 rounded-xl border-l-4 border-[var(--copper)] bg-white p-6"
-                >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--navy)] font-mono text-sm font-bold text-[var(--copper-light)]">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <div className="min-w-0">
-                    <h3 className="text-base font-bold text-[var(--ink)] sm:text-lg">{s.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">{s.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+              The questions and concerns that come up most in the first conversation.
+            </p>
+          </div>
+          <CoverageCards items={data.concerns} columns={3} tone="slate" />
+        </div>
+      </section>
+
+      {/* How the work runs. A numbered list of stages is a sequence, not a card
+          stack, so it renders on the kit timeline. */}
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <Eyebrow>How it works</Eyebrow>
+          <h2 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">
+            How we work with {data.displayRoleLower ?? data.displayRole.toLowerCase()}
+          </h2>
+          <div className="mt-10">
+            <ProcessTimeline
+              steps={data.services.map((s, i) => ({
+                n: String(i + 1).padStart(2, "0"),
+                title: s.title,
+                body: s.body,
+              }))}
+            />
           </div>
         </div>
       </section>
 
-      {/* Calculator tools */}
+      {/* Calculators: tabs to run one here, links so the anchors survive. */}
       {data.relatedCalculators && data.relatedCalculators.length > 0 && (
-        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 sm:py-12">
+        <section className="bg-white py-12 sm:py-16">
           <div className={siteContainerLg}>
-            <div className="mx-auto max-w-4xl">
-              <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
-                Try our free calculators
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-                Free, instant estimates. We ask once if you want a specialist check, and that is skippable.
-              </p>
-              <div className="mt-6 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {data.relatedCalculators.map((c) => (
-                  <Link
-                    key={c.href}
-                    href={c.href}
-                    className={`group block rounded-xl border border-[var(--border)] bg-white p-5 transition-all hover:border-[var(--copper)] hover:shadow-md ${focusRing}`}
-                  >
-                    <h3 className="text-sm font-bold text-[var(--ink)] group-hover:text-[var(--copper-strong)]">{c.name}</h3>
-                    <p className="mt-1.5 text-xs leading-relaxed text-[var(--muted)]">{c.desc}</p>
-                    <span className="mt-3 block text-xs font-semibold text-[var(--copper-strong)]">Open calculator →</span>
-                  </Link>
-                ))}
+            <Eyebrow>Free calculators</Eyebrow>
+            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
+              Run the numbers before you send anything
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+              Free to use, on 2026/27 rates. We ask once whether a specialist should check your figure, and skipping that still shows it.
+            </p>
+            {data.calculatorTabs && data.calculatorTabs.length > 0 ? (
+              <div className="mt-8">
+                <CalculatorTabs tabs={data.calculatorTabs} />
               </div>
-            </div>
+            ) : null}
+            <ul className="mt-8 space-y-3 pl-0">
+              {data.relatedCalculators.map((c) => (
+                <li key={c.href} className="text-sm leading-relaxed text-[var(--muted)]">
+                  <Link
+                    href={c.href}
+                    className={`font-semibold text-[var(--copper-strong)] underline decoration-2 underline-offset-4 ${focusRing} rounded`}
+                  >
+                    {c.name}
+                  </Link>
+                  <span className="ml-2">{c.desc}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       )}
 
-      {/* Lead form CTA */}
-      <section className="bg-[var(--surface)] py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-4xl">
-            <div className="rounded-3xl border border-[var(--copper)]/25 bg-white p-8 sm:p-12">
-              <div className="mb-8 text-center">
-                <div className="inline-flex items-center gap-2 rounded-full bg-[var(--copper-soft)] px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--copper-deep)]">
-                  Free consultation
-                </div>
-                <h2 className="mt-4 text-3xl font-bold text-[var(--ink)] sm:text-4xl">
-                  {data.ctaTitle}
-                </h2>
-                <p className="mt-3 text-base leading-relaxed text-[var(--muted)] sm:text-lg max-w-2xl mx-auto">
-                  {data.ctaBody}
-                </p>
-              </div>
-              <LeadForm redirectOnSuccess={false} submitLabel="Book my free consultation" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Lead capture. redirectOnSuccess stays FALSE: flipping it is a funnel
+          change on four routes and it has not been decided. */}
+      <div id="book" className="scroll-mt-24" data-cta="audience_book" data-cta-goal="form" data-cta-placement="audience">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          title={data.ctaTitle}
+          description={data.ctaBody}
+          proofPoints={MEDICAL_PROOF_POINTS}
+          footnote="No obligation. If the specialist firm thinks your position is already right, they will tell you so."
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
+        />
+      </div>
 
-      {/* FAQs */}
-      <section className="bg-[var(--background)] py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl text-center mb-10">
-              Common questions from {data.displayRole.toLowerCase()}
-            </h2>
-            <div className="space-y-4">
-              {data.faqs.map((f) => (
-                <div
-                  key={f.q}
-                  className="rounded-xl border-l-4 border-[var(--border)] bg-white p-6 transition-colors hover:border-[var(--copper)] sm:p-7"
-                >
-                  <h3 className="text-lg font-bold text-[var(--ink)]">{f.q}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{f.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <FaqSection
+        className="bg-white py-12 sm:py-16 lg:py-20"
+        eyebrow="FAQ"
+        title={`Common questions from ${data.displayRoleLower ?? data.displayRole.toLowerCase()}`}
+        faqs={data.faqs.map((f) => ({ question: f.q, answer: f.a }))}
+      />
 
-      {/* Related guides */}
+      {/* Related guides. Light ground: this is the last section before the navy
+          footer, and navy never touches navy. */}
       {data.relatedGuides && data.relatedGuides.length > 0 && (
-        <section className="bg-[var(--navy)] py-12 text-center">
+        <section className="bg-slate-50 py-12 sm:py-16">
           <div className={siteContainerLg}>
-            <div className="mx-auto max-w-4xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--copper-light)]">
-                Want to read first?
-              </p>
-              <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
-                Background reading from our guide library
-              </h2>
-              <div className="mt-10 grid gap-4 text-left sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {data.relatedGuides.map((g) => (
-                  <Link
-                    key={g.href}
-                    href={g.href}
-                    className={`group block rounded-xl border border-white/15 bg-white/5 p-5 transition-all hover:border-[var(--copper)] hover:bg-white/10 ${focusRing}`}
-                  >
-                    <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--copper-light)] mb-2">
-                      Medical guide
-                    </p>
-                    <h3 className="text-base font-bold text-white group-hover:text-[var(--copper-light)]">
-                      {g.title}
-                    </h3>
-                    <p className="mt-2 text-xs leading-relaxed text-white/70">{g.body}</p>
-                  </Link>
-                ))}
-              </div>
-              <div className="mt-8">
-                <Link href="/medical-guides" className={btnOnDark}>
-                  Browse all guides
-                </Link>
-              </div>
+            <Eyebrow>Want to read first?</Eyebrow>
+            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
+              Background reading from our guide library
+            </h2>
+            <RelatedArticles
+              className="mt-8"
+              columns={3}
+              items={data.relatedGuides.map((g) => ({
+                href: g.href,
+                title: g.title,
+                excerpt: g.body,
+                kind: "guide" as const,
+              }))}
+            />
+            <div className="mt-8">
+              <Link href="/medical-guides" className={btnSecondary}>
+                Browse all guides
+              </Link>
             </div>
           </div>
         </section>

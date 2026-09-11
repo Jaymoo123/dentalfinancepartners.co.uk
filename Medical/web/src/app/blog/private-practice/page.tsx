@@ -475,7 +475,7 @@ function OtherTopics({ topics }: { topics: Array<{ slug: string; name: string; c
           href="/blog"
           data-cta="blog_hub_all_articles"
           data-cta-placement="blog_other_topics"
-          className={`mt-8 inline-flex items-center gap-1.5 rounded py-1 text-sm font-bold text-primary-600 transition-colors hover:text-primary-700 sm:text-base ${focusRing}`}
+          className={`mt-8 inline-flex items-center gap-1.5 rounded py-1 text-sm font-bold text-primary-700 transition-colors hover:text-primary-800 sm:text-base ${focusRing}`}
         >
           All articles and guides
         </Link>
