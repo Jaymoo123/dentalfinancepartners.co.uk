@@ -39,6 +39,11 @@ export function NextStepOffer() {
       <Link
         href={offer.href}
         data-cta="next_step"
+        // No authored placement meant autoCapture fell back to nearestSection,
+        // which emits the nearest h2's TEXT (see the live `see_result` rows,
+        // one of which is a machine-translated Italian heading). `next_step`
+        // has never fired, so there is no series to split by fixing it.
+        data-cta-placement="next_step"
         data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
         onClick={() => trackPersonalization("clicked", action)}
         className="mt-5 inline-flex items-center justify-center rounded-lg bg-[var(--primary)] px-5 py-2.5 font-semibold text-white hover:opacity-90"

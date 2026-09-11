@@ -7,6 +7,16 @@
  * the rest of the session once dismissed. Measured via personalization_* events.
  *
  * Styled with the site's CSS variable tokens (--primary, --ink, etc.).
+ *
+ * KNOWN DEAD 2026-09-11, not fixed here. `evaluate("returning_bar")` needs
+ * `ctx.lastTopic ?? ctx.entryTopic`, both of which come from visitMemory, which
+ * is only written when AnalyticsProvider is given a `deriveTopic` prop. This
+ * site's root layout does not pass one (Property does, via a thin client
+ * wrapper), so both are permanently null and this component has returned null
+ * on every render since 2026-07-05: zero `personalization_shown` rows with
+ * surface='returning_bar', against 675 for deep_scroll_modal. Wiring the prop
+ * also changes which offer the sticky bar shows on topic-less routes, i.e. it
+ * changes visible copy, so it is an owner decision, not an instrumentation fix.
  */
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -48,6 +58,8 @@ export function ReturningBar() {
           <Link
             href={offer.href}
             data-cta="returning_bar"
+            // Never fired (see below), so no live placement series to split.
+            data-cta-placement="returning_bar"
             data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
             onClick={() => trackPersonalization("clicked", action)}
             className="rounded bg-white px-3 py-1.5 font-semibold text-[var(--primary)] hover:bg-white/90"
@@ -58,6 +70,7 @@ export function ReturningBar() {
             type="button"
             aria-label="Dismiss"
             data-cta="returning_bar_close"
+            data-cta-placement="returning_bar"
             onClick={() => {
               try {
                 window.sessionStorage.setItem(DISMISS_KEY, "1");

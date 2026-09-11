@@ -156,9 +156,13 @@ export default function BlogIndexPage() {
                 "Profit shares, the salaried member rules and the tax that follows each structure",
             },
             {
-              title: "Positions traced to source",
-              detail:
-                "Every rule and figure we quote is cited to the SRA rules, HMRC published guidance, case law or the legislation itself",
+              // Property's own house line, verbatim in substance:
+              // packages/web-shared/design/blog/BlogCategoryHub.tsx:22 reads
+              // "Same accountant every time / You are not passed around a team".
+              // Owner confirmed 2026-09-11 that Property is the reference, so
+              // this site carries the same claim rather than a weaker invention.
+              title: "Same accountant every time",
+              detail: "You are not passed around a team",
             },
           ]}
           form={<LeadForm redirectOnSuccess={false} />}

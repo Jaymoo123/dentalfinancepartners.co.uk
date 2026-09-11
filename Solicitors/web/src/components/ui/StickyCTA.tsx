@@ -179,6 +179,11 @@ export function StickyCTA() {
           type="button"
           onClick={handleDismiss}
           aria-label="Dismiss"
+          // Matches Property/web/src/components/ui/StickyCTA.tsx:112-115 exactly
+          // (id + placement). Without it the dismiss was an untyped element_click
+          // and sticky_cta had clicks but no dismissal denominator.
+          data-cta="sticky_cta_close"
+          data-cta-placement="sticky"
           className="shrink-0 rounded p-1 text-[var(--muted)] transition-colors duration-150 hover:bg-[var(--surface)] hover:text-[var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
         >
           <svg
