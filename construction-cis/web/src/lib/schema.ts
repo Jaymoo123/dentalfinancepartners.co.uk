@@ -68,7 +68,6 @@ export function buildOrganizationJsonLd() {
       "CIS accounting",
       "CIS deduction rates",
     ],
-    priceRange: "££",
   });
 }
 
@@ -197,7 +196,6 @@ export function buildLocalBusinessJsonLd(opts: {
       "@type": "City",
       name: area,
     })),
-    priceRange: "££",
     knowsAbout: [
       "CIS tax refunds",
       "Construction Industry Scheme",

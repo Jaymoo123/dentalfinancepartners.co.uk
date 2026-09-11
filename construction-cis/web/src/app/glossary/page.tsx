@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen, ArrowRight } from "lucide-react";
+import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
@@ -9,7 +10,7 @@ import { GLOSSARY } from "./[slug]/data";
 export const metadata: Metadata = {
   title: `CIS Glossary`,
   description:
-    "Plain-English definitions of CIS, tax and construction accounting terms. Deduction rates, gross payment status, self assessment, VAT and more. Verified for 2025/26.",
+    "Plain-English definitions of CIS, tax and construction accounting terms. Deduction rates, gross payment status, self assessment, VAT and more. Updated for 2026/27.",
   alternates: { canonical: `${siteConfig.url}/glossary` },
   openGraph: {
     title: "CIS Glossary | Construction Tax Terms Explained",
@@ -60,7 +61,7 @@ export default function GlossaryIndexPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-orange-500 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="mb-4 inline-flex items-center gap-2 font-geist-mono text-xs font-medium uppercase tracking-[0.1em] text-orange-400">
               <BookOpen className="h-3.5 w-3.5" />
               Plain English definitions
             </div>
@@ -69,7 +70,7 @@ export default function GlossaryIndexPage() {
             </h1>
             <p className="mt-4 text-lg text-neutral-300 leading-relaxed">
               {entries.length > 0
-                ? `${entries.length} definitions of the terms UK construction subcontractors and contractors actually need to understand. Written by specialist CIS accountants. All figures verified for 2025/26.`
+                ? `${entries.length} definitions of the terms UK construction subcontractors and contractors actually need to understand. Written by specialist CIS accountants. All figures updated for 2026/27.`
                 : "Specialist CIS accountants explaining the terms UK construction subcontractors and contractors need to understand. Definitions being added now."}
             </p>
           </div>
@@ -77,9 +78,9 @@ export default function GlossaryIndexPage() {
       </section>
 
       {/* Term listing */}
-      <section className="bg-stone-50 py-16 sm:py-20">
+      <section className="bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-6xl mx-auto">
+          <div>
             {entries.length === 0 ? (
               <div className="border border-neutral-200 bg-white p-10 text-center">
                 <BookOpen className="h-10 w-10 text-orange-300 mx-auto mb-4" />
@@ -87,21 +88,24 @@ export default function GlossaryIndexPage() {
                   Definitions coming soon
                 </h2>
                 <p className="text-neutral-600 max-w-md mx-auto">
-                  We are adding plain-English CIS and construction tax definitions
-                  now. Check back shortly, or{" "}
+                  We are adding plain-English CIS and construction tax
+                  definitions now. If you have a specific question, you can{" "}
                   <Link
                     href="/contact"
-                    className="text-orange-600 underline hover:text-orange-700 font-semibold"
+                    className="text-orange-700 underline hover:text-orange-800 font-semibold"
                   >
                     book a free call
                   </Link>{" "}
-                  if you have a specific question.
+                  and ask us directly.
                 </p>
               </div>
             ) : (
               categories.map((cat) => (
                 <div key={cat} className="mb-12 last:mb-0">
-                  <h2 className="text-2xl font-bold text-neutral-900 mb-6 pb-3 border-b border-neutral-200">
+                  <p className="font-geist-mono text-xs font-medium uppercase tracking-[0.1em] text-neutral-600">
+                    {byCategory[cat].length} definitions
+                  </p>
+                  <h2 className="mt-2 mb-6 text-2xl font-bold text-neutral-900">
                     {cat}
                   </h2>
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -109,12 +113,12 @@ export default function GlossaryIndexPage() {
                       <Link
                         key={e.slug}
                         href={`/glossary/${e.slug}`}
-                        className="group block bg-white border border-neutral-200 p-5 hover:bg-white hover:border-orange-500 hover:shadow-md transition-all"
+                        className="group block rounded-xl bg-white border border-slate-200 p-5 hover:border-orange-500 hover:shadow-md transition-all"
                       >
                         <h3 className="text-lg font-bold text-neutral-900 group-hover:text-orange-700 transition-colors">
                           {e.term}
                         </h3>
-                        <div className="mt-3 flex items-center text-orange-600 font-semibold text-sm">
+                        <div className="mt-3 flex items-center text-orange-700 font-semibold text-sm">
                           Read definition
                           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </div>
@@ -127,6 +131,31 @@ export default function GlossaryIndexPage() {
           </div>
         </div>
       </section>
+
+      {/* Section D.3 closing ask. `contained` so the last band under <main> is
+          light (cream), never navy against the navy footer: DESIGN_SYSTEM
+          section 9. Static band in the page body, nothing interruptive. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          title="Looked up the term, still not sure where you stand?"
+          description="A definition tells you what a rule is. It does not tell you what it does to your figures. Tell us where you are up to and we will tell you what it means for your CIS position this year."
+          proofPoints={[
+            {
+              title: "CIS specialists only",
+              detail: "Construction tax is the whole of what we do, not a sideline.",
+            },
+            {
+              title: "Fixed fees, no surprises",
+              detail: "Quoted before we start, so you see the number first.",
+            },
+            {
+              title: "No hard sell, no obligation",
+              detail: "If your position is already right, we will say so.",
+            },
+          ]}
+        />
+      </div>
     </>
   );
 }

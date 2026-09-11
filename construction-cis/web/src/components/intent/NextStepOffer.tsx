@@ -29,7 +29,7 @@ export function NextStepOffer() {
 
   return (
     <aside className="my-10 rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8">
-      <p className="text-xs font-bold uppercase tracking-wider text-orange-600">
+      <p className="text-xs font-bold uppercase tracking-wider text-[var(--accent-strong)]">
         {offer.reason}
       </p>
       <h3 className="mt-2 text-xl font-bold text-slate-900">{offer.title}</h3>

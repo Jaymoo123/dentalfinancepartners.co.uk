@@ -19,7 +19,7 @@ export function CalcResultCta({ campaign }: { campaign: string; label?: string }
         heading="Confirm your figure with a CIS specialist"
         blurb="Estimates get you close. A specialist confirms your exact deductions, what you can reclaim, and the route to your refund. No obligation."
         submitLabel="Get my figure checked"
-        className="rounded-2xl border-l-4 border-orange-500 bg-slate-50 p-5 sm:p-6"
+        className="rounded-xl border-l-4 border-[var(--accent)] bg-slate-50 p-6 sm:p-8"
       />
     </div>
   );

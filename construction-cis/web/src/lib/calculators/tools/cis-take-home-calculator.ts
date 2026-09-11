@@ -121,7 +121,7 @@ export const cisTakeHomeCalculator: GenericTool = {
         "With GPS your deduction rate drops to 0%, so your contractor pays the full invoice amount with no withholding. On a gross labour income of £40,000 per year, a 20% deduction withholds £8,000 that would otherwise stay in your business throughout the year. GPS improves cash flow significantly, particularly for businesses with regular VAT, material and wage outgoings to meet before the self-assessment refund arrives. GPS requires passing the three qualifying tests on business type, annual turnover and a clean tax compliance record.",
     },
     {
-      question: "I am deducted at 30% — how do I get to 20%?",
+      question: "I am deducted at 30%. How do I get to 20%?",
       answer:
         "Register for CIS through HMRC, which is free and can be done online or by phone. Once registered, contractors are required to verify your status before making the first payment under CIS, and your deduction rate moves from 30% to 20% immediately from that point. Future payments will be deducted at the registered rate. Any 30% deductions already suffered before registration can still be credited against your tax bill when you file your Self Assessment return.",
     },

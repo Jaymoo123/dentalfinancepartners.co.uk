@@ -73,6 +73,16 @@
   --warn-4-on-dark: #a5b4fc;    /* indigo-300. 8.96 on slate-900. The 300 step, not the 400,
                                    because indigo-400 sits 41.4 RGB units from blue-400. */
 
+  /* The shared calculator's verdict chip and warn headline read these, falling back to
+     amber (#fbbf24 / #451a03) when a site defines nothing. Amber is this site's BRAND
+     family, so the fallback renders a warning as brand furniture. Defined here so the
+     kit's warn branches land on the T-W1 ladder instead. The chip is a ground carrying
+     a label, so it takes --warn-1 with white on it (4.83); the headline is text on the
+     calculator's slate-900 panel, so it takes the on-dark twin (6.45). */
+  --calc-warn-bg: var(--warn-1);
+  --calc-warn-fg: #ffffff;
+  --calc-warn-accent: var(--warn-1-on-dark);
+
   /* Button grounds. White label on each: 5.18 / 7.31 / 9.37. */
   --btn-ground: #c2410c;        /* orange-700 */
   --btn-ground-hover: #9a3412;  /* orange-800 */

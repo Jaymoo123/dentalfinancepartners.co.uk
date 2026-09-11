@@ -321,7 +321,12 @@ function HeadlineCard({ result }: { result: PremiumResult }) {
   const tone = result.headline.tone ?? "good";
   const accentClass =
     tone === "warn"
-      ? "bg-amber-50 border-amber-200"
+      // Warning ladder T-W1 step 1 (--warn-1, red-600). Amber is this site's BRAND
+      // family (DESIGN_DELTA §1), so a warn tone must never render in it. Ground is
+      // unchanged: there is no --warn-1-tint token and inventing one is a phase 1
+      // token-layer change. red-600 on --surface-elevated #ffffff = 4.83, over the
+      // 3:1 graphics floor for a border.
+      ? "bg-[var(--surface-elevated)] border-[var(--warn-1)]"
       : "bg-[var(--surface-elevated)] border-[var(--border)]";
   return (
     <div className={`rounded-xl border p-4 ${accentClass}`}>
@@ -567,7 +572,7 @@ export function PremiumCalculator({
     <>
       <div
         ref={rootRef}
-        className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-sm"
+        className="overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-sm"
       >
         {/* Top accent bar -- orange brand token */}
         <div className="h-1 bg-[var(--accent)]" />

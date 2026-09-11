@@ -118,7 +118,7 @@ export default function CisInvoiceTemplatePage() {
           <div className="mt-10 grid gap-6 lg:grid-cols-3 lg:gap-8">
             {downloads.map((d) => (
               <article key={d.title} className="flex flex-col bg-white border border-neutral-200 border-t-4 border-t-orange-500 p-6 sm:p-8">
-                <div className="text-xs font-bold uppercase tracking-wider text-orange-600">{d.tag}</div>
+                <div className="text-xs font-bold uppercase tracking-wider text-[var(--accent-strong)]">{d.tag}</div>
                 <h3 className="mt-2 text-lg font-bold text-neutral-900">{d.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">{d.body}</p>
                 <div className="mt-6 flex flex-wrap gap-3">

@@ -41,7 +41,7 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/blog":
     "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by specialist CIS accountants.",
   "/glossary":
-    "Plain-English definitions of CIS, tax and construction accounting terms. Deduction rates, gross payment status, self assessment, VAT and more. Verified for 2025/26.",
+    "Plain-English definitions of CIS, tax and construction accounting terms. Deduction rates, gross payment status, self assessment, VAT and more. Updated for 2026/27.",
   "/locations":
     "CIS accountants for construction subcontractors and contractors across the UK. Find your local CIS tax expert in London, Manchester, Birmingham and beyond.",
   "/research":

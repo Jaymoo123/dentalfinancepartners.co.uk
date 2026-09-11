@@ -327,7 +327,7 @@ export default function HomePage() {
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
-                  <div className="mt-4 flex items-center text-orange-600 font-semibold text-sm">
+                  <div className="mt-4 flex items-center text-[var(--accent-strong)] font-semibold text-sm">
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -408,7 +408,7 @@ export default function HomePage() {
             <span className="text-orange-600">We handle CIS-specific tax.</span>
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            The materials split, the mileage rate, GPS qualification tests, April 2026 nil returns, EPS real-time reclaims: these are things a generalist accountant handles occasionally. We deal with them every week across a large CIS client base.
+            The materials split, the mileage rate, GPS qualification tests, April 2026 nil returns, EPS real-time reclaims: these are things a generalist accountant handles occasionally. They are routine in construction, and CIS is the only thing we specialise in.
           </p>
           <div className="mt-12 overflow-x-auto border border-neutral-200">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
@@ -456,7 +456,7 @@ export default function HomePage() {
               Your accountant should understand how CIS works
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-orange-200">
-              The deduction base, GPS qualification, April 2026 nil returns, EPS real-time reclaims. We see these issues every week, so we know where the refunds and risks are.
+              The deduction base, GPS qualification, April 2026 nil returns, EPS real-time reclaims. CIS is the only thing we work on, so we know where the refunds and risks are.
             </p>
           </div>
         </div>

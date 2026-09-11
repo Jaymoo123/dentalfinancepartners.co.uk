@@ -45,7 +45,7 @@ function hasRealFirstName(firstName: string): boolean {
 /** Post-YES SMS/WhatsApp ack. Under 160 chars, no STOP line (the lead just opted in). */
 function buildAckBody(firstName: string): string {
   const name = hasRealFirstName(firstName) ? ` ${firstName}` : "";
-  return `Great, thank you${name}. A specialist will call you shortly. Nothing to prepare. Speak soon.`;
+  return `Great, thank you${name}. A specialist will call you. Nothing to prepare. Speak soon.`;
 }
 
 async function fetchLead(leadId: string): Promise<LeadRow | null> {

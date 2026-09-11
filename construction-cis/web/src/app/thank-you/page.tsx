@@ -84,7 +84,7 @@ export default async function ThankYouPage({
                 Need to add anything? Send a follow-up through the{" "}
                 <Link
                   href="/contact"
-                  className="font-medium text-slate-900 underline underline-offset-4 hover:text-orange-600"
+                  className="font-medium text-slate-900 underline underline-offset-4 hover:text-[var(--accent-strong)]"
                 >
                   contact form
                 </Link>
@@ -104,7 +104,7 @@ export default async function ThankYouPage({
           {!bookingToken && (
             <p className="mt-8 text-sm text-neutral-500">
               Want to read up first?{" "}
-              <Link href="/blog" className="font-medium text-orange-600 underline underline-offset-4">
+              <Link href="/blog" className="font-medium text-[var(--accent-strong)] underline underline-offset-4">
                 Browse our CIS guides
               </Link>
               .

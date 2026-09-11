@@ -22,14 +22,6 @@ export type CityData = {
   population?: string;
   /** Geo coordinates for LocalBusiness JSON-LD. */
   geo?: { lat: number; lng: number };
-  /** Optional hero image (Pexels or similar). */
-  heroImage?: {
-    url: string;
-    alt: string;
-    photographer: string;
-    photographer_url: string;
-    pexels_url: string;
-  };
 };
 
 export const CITIES: Record<string, CityData> = {

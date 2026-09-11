@@ -195,7 +195,7 @@ export default function CisRefundPage() {
                 ].map(([status, rate, note], i) => (
                   <tr key={status} className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-neutral-50" : "bg-white"}`}>
                     <th scope="row" className="px-5 py-4 font-semibold text-neutral-900 sm:px-6">{status}</th>
-                    <td className="px-5 py-4 font-bold text-orange-600 sm:px-6">{rate}</td>
+                    <td className="px-5 py-4 font-bold text-[var(--accent-strong)] sm:px-6">{rate}</td>
                     <td className="px-5 py-4 text-neutral-600 sm:px-6">{note}</td>
                   </tr>
                 ))}

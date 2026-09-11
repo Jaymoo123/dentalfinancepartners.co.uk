@@ -17,10 +17,10 @@ export const cisBackYearsCalculator: GenericTool = {
   ctaLabel: "Claim your back-years CIS refund →",
   embedHeight: 820,
   fields: [
-    // YEAR 1 — 2025/26
+    // YEAR 1: 2025/26
     {
       id: "y1_gross",
-      label: "2025/26 — Gross CIS income",
+      label: "2025/26: Gross CIS income",
       type: "currency",
       default: 42000,
       step: 1000,
@@ -28,7 +28,7 @@ export const cisBackYearsCalculator: GenericTool = {
     },
     {
       id: "y1_expenses",
-      label: "2025/26 — Total expenses (materials + allowable costs)",
+      label: "2025/26: Total expenses (materials + allowable costs)",
       type: "currency",
       default: 9000,
       step: 500,
@@ -36,14 +36,14 @@ export const cisBackYearsCalculator: GenericTool = {
     },
     {
       id: "y1_otherIncome",
-      label: "2025/26 — Other income",
+      label: "2025/26: Other income",
       type: "currency",
       default: 0,
       step: 500,
     },
     {
       id: "y1_cisDeducted",
-      label: "2025/26 — CIS deducted at source",
+      label: "2025/26: CIS deducted at source",
       type: "currency",
       default: 6600,
       step: 100,
@@ -55,31 +55,31 @@ export const cisBackYearsCalculator: GenericTool = {
       type: "toggle",
       default: true,
     },
-    // YEAR 2 — 2024/25
+    // YEAR 2: 2024/25
     {
       id: "y2_gross",
-      label: "2024/25 — Gross CIS income",
+      label: "2024/25: Gross CIS income",
       type: "currency",
       default: 38000,
       step: 1000,
     },
     {
       id: "y2_expenses",
-      label: "2024/25 — Total expenses (materials + allowable costs)",
+      label: "2024/25: Total expenses (materials + allowable costs)",
       type: "currency",
       default: 8000,
       step: 500,
     },
     {
       id: "y2_otherIncome",
-      label: "2024/25 — Other income",
+      label: "2024/25: Other income",
       type: "currency",
       default: 0,
       step: 500,
     },
     {
       id: "y2_cisDeducted",
-      label: "2024/25 — CIS deducted at source",
+      label: "2024/25: CIS deducted at source",
       type: "currency",
       default: 6000,
       step: 100,
@@ -90,31 +90,31 @@ export const cisBackYearsCalculator: GenericTool = {
       type: "toggle",
       default: true,
     },
-    // YEAR 3 — 2023/24
+    // YEAR 3: 2023/24
     {
       id: "y3_gross",
-      label: "2023/24 — Gross CIS income",
+      label: "2023/24: Gross CIS income",
       type: "currency",
       default: 35000,
       step: 1000,
     },
     {
       id: "y3_expenses",
-      label: "2023/24 — Total expenses (materials + allowable costs)",
+      label: "2023/24: Total expenses (materials + allowable costs)",
       type: "currency",
       default: 7000,
       step: 500,
     },
     {
       id: "y3_otherIncome",
-      label: "2023/24 — Other income",
+      label: "2023/24: Other income",
       type: "currency",
       default: 0,
       step: 500,
     },
     {
       id: "y3_cisDeducted",
-      label: "2023/24 — CIS deducted at source",
+      label: "2023/24: CIS deducted at source",
       type: "currency",
       default: 5600,
       step: 100,
@@ -125,31 +125,31 @@ export const cisBackYearsCalculator: GenericTool = {
       type: "toggle",
       default: false,
     },
-    // YEAR 4 — 2022/23
+    // YEAR 4: 2022/23
     {
       id: "y4_gross",
-      label: "2022/23 — Gross CIS income",
+      label: "2022/23: Gross CIS income",
       type: "currency",
       default: 30000,
       step: 1000,
     },
     {
       id: "y4_expenses",
-      label: "2022/23 — Total expenses (materials + allowable costs)",
+      label: "2022/23: Total expenses (materials + allowable costs)",
       type: "currency",
       default: 6000,
       step: 500,
     },
     {
       id: "y4_otherIncome",
-      label: "2022/23 — Other income",
+      label: "2022/23: Other income",
       type: "currency",
       default: 0,
       step: 500,
     },
     {
       id: "y4_cisDeducted",
-      label: "2022/23 — CIS deducted at source",
+      label: "2022/23: CIS deducted at source",
       type: "currency",
       default: 4800,
       step: 100,
@@ -216,7 +216,7 @@ export const cisBackYearsCalculator: GenericTool = {
       const result = calcYear(y.gross, y.exp, y.other, y.deducted);
       totalRefund += result;
       rows.push({
-        label: `${y.label} — estimated ${result >= 0 ? "refund" : "balance to pay"}`,
+        label: `${y.label}: estimated ${result >= 0 ? "refund" : "balance to pay"}`,
         value:
           result >= 0 ? gbp(result) : `(${gbp(Math.abs(result))})`,
       });

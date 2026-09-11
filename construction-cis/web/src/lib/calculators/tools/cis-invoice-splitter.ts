@@ -39,9 +39,9 @@ export const cisInvoiceSplitter: GenericTool = {
       type: "select",
       default: "registered",
       options: [
-        { value: "gps", label: "0% — Gross Payment Status" },
-        { value: "registered", label: "20% — Registered subcontractor" },
-        { value: "unregistered", label: "30% — Unregistered subcontractor" },
+        { value: "gps", label: "0%: Gross Payment Status" },
+        { value: "registered", label: "20%: Registered subcontractor" },
+        { value: "unregistered", label: "30%: Unregistered subcontractor" },
       ],
     },
     {
@@ -93,7 +93,7 @@ export const cisInvoiceSplitter: GenericTool = {
         { label: "Net received from contractor (ex-VAT)", value: gbp(netReceived), strong: true },
         { label: "VAT position", value: vatNote },
       ],
-      note: "The contractor must not apply CIS to your materials — only to the labour element. Keep receipts for all materials you supply. The contractor must issue you a written CIS payment and deduction statement within 14 days of this payment.",
+      note: "The contractor must not apply CIS to your materials, only to the labour element. Keep receipts for all materials you supply. The contractor must issue you a written CIS payment and deduction statement within 14 days of this payment.",
     };
   },
   explainer: {

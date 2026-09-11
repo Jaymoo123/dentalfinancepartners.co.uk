@@ -43,7 +43,7 @@ const services = [
     Icon: ShieldCheck,
     body: [
       "GPS means no CIS deduction at all: you receive every payment in full and settle the tax yourself. To qualify you must pass three tests: the business test (UK construction work through a bank account), the turnover test (£30,000 net of materials for a sole trader, or £30,000 per director / £100,000 for a company), and the compliance test (12 months clean tax record).",
-      "From 6 April 2026, GPS can be revoked immediately without notice where HMRC considers you knew or should have known about fraudulent supply chain connections. A 5-year reapplication ban applies. Director liability under Finance Bill 2026 ss.62A/62B reaches up to 30% of the tax lost. Keeping GPS now requires active due diligence.",
+      "From 6 April 2026, GPS can be revoked immediately without notice where HMRC considers you knew or should have known about fraudulent supply chain connections. A 5-year reapplication ban applies. Finance Act 2026 inserts FA 2004 ss.62A/62B: a payment made in the knowledge of a deliberate CIS failure carries a penalty of 20% of that payment, and a return made in that knowledge carries a liability equal to the whole sum the return treats as paid. Keeping GPS now requires active due diligence.",
       "We manage the GPS application, assess whether you meet the three tests, and maintain the compliance record. We also guide you through the ongoing due diligence required to protect the status under the April 2026 rules.",
     ],
   },

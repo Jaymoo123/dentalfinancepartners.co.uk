@@ -48,11 +48,36 @@ const SRC = join(__dirname, "..", "..");
  * must arrive with a placement and a goal rather than silently without.
  */
 const PINNED = [
+  // Phase 3 / WP-C1, ADDITIVE. The 45 /for/[slug] hero primaries pointed at
+  // /contact and the LeadForm further down the same page was unreachable: 24
+  // sessions, 0 form views, 0 form starts (FUNNEL_BASELINE.md:171,244). The
+  // button now scrolls to #book. A NEW id, deliberately: reusing an existing
+  // one would merge two different asks, and adding placement/goal to
+  // `next_step` on these same 45 routes would split the locked
+  // `next_step|null|null` 109 into 64 + 45 (PHASE3_PLAN section 1g, trap 22).
+  // Goal is `form` because the destination is an on-page form, matching
+  // `next_step`'s own /contact branch, not the hero_primary `lead` convention
+  // used where the CTA leaves the page.
+  "src/app/for/[slug]/page.tsx|for_hero_book|hero|form",
+  // Phase 4 / WP-D2, ADDITIVE, owner gate 1. The 12 /calculators/[slug] routes
+  // already carried a LeadForm at #get-expert-help and nothing on the page
+  // pointed at it; the only ask in the hero was the header button. The hero now
+  // carries its own primary scrolling to that form. A NEW id, for the same
+  // reason for_hero_book is one: reusing `hero_primary` would merge the
+  // homepage's single off-page CTA with 12 on-page ones, and adding
+  // placement/goal to an existing id would split a locked baseline triple
+  // (trap 22). Goal is `form` because the destination is an on-page form
+  // anchor, per this site's taxonomy; `lead` is for a CTA that leaves the page.
+  "src/app/calculators/[slug]/page.tsx|calc_hero_help|hero|form",
   // Phase 2 / WP-B5, ADDITIVE. /blog made no ask at all: 110 sessions, 42 form
   // views, 0 completions over 19 days. A new id splits no existing history, so
   // the five baseline triples are untouched. Placement/goal follow the site's
   // own `hero_primary|hero|lead`, not Property's `hero_book`.
   "src/app/blog/page.tsx|blog_index_primary|hero|lead",
+  // Phase 3 / WP-C3, ADDITIVE. The 50 glossary entry pages made no ask at all.
+  // In-page anchor to the closing LeadCTAPanel on the same route, so it splits
+  // no existing history: the five baseline triples are untouched.
+  "src/app/glossary/[slug]/page.tsx|glossary_entry_book|article|form",
   "src/app/contact/page.tsx|contact_pricing_link|contact|null",
   "src/app/page.tsx|hero_primary|hero|lead",
   "src/app/page.tsx|home_cta_primary|home_cta|lead",

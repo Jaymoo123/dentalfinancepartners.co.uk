@@ -2568,7 +2568,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS300 monthly cycle and nil returns",
         body:
-          "CIS300 returns are due by the 19th of the month following each tax month. From 6 April 2026, nil returns are mandatory in any month where no subcontractor payments are made (the nil-return obligation was removed in 2015 and reinstated this year). Late filing penalties start at £100 on day one and escalate to £300 or 5% of the CIS liability at 6 months, and £300 or 100% of the liability at 12 months. Stop-start project schedules mean many contractors have nil-return obligations they are not aware of.",
+          "CIS300 returns are due by the 19th of the month following each tax month. From 6 April 2026, nil returns are mandatory in any month where no subcontractor payments are made (the nil-return obligation was removed in 2015 and reinstated this year). Late filing penalties start at £100 on day one and escalate to £300 or 5% of the CIS liability at 6 months, and a further £300 or 5% at 12 months. A separate additional penalty of up to £3,000 or 100% of the CIS deductions applies only where information is withheld deliberately. Stop-start project schedules mean many contractors have nil-return obligations they are not aware of.",
       },
       {
         title: "The April 2026 'knew or should have known' standard",
@@ -2578,7 +2578,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "Knowledge-based penalty under FA 2004 ss.62A/62B",
         body:
-          "Where a contractor makes a payment knowing (or having reason to know) that a connected party has deliberately failed to comply with CIS obligations, FA 2004 s.62A (inserted by FA 2026) creates a penalty of 20% of the payment. The same 20%-of-sums liability applies to returns made in that knowledge under s.62A/62B. Where deliberate behaviour by a company produces penalties, HMRC can also pursue company officers personally under existing officer-liability rules. Documented pre-payment due diligence is the primary defence.",
+          "Where a contractor makes a payment knowing (or having reason to know) that a connected party has deliberately failed to comply with CIS obligations, FA 2004 s.62A (inserted by FA 2026) creates a penalty of 20% of the payment. For a return made in that knowledge, s.62B charges an amount equal to the sum the return treats as paid on account of the person's liabilities, that is 100% of the sum returned with no percentage reduction. Where deliberate behaviour by a company produces penalties, HMRC can also pursue company officers personally under existing officer-liability rules. Documented pre-payment due diligence is the primary defence.",
       },
     ],
     howWeHelp: [
@@ -2797,7 +2797,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "Due diligence at scale under the April 2026 anti-fraud rules",
         body:
-          "Finance Act 2026 introduced the 'knew or should have known' standard for GPS revocation and the 20%-of-payment knowledge-based penalty under FA 2004 ss.62A/62B. For a housebuilder paying 40 subcontractors, the due-diligence obligation (CIS re-verification, Companies House legitimacy check, bank account name verification before each payment) must be applied to every subcontractor, every payment cycle. One undocumented payment is not a minor omission under the new regime: it is evidence of failing the 'should have known' standard.",
+          "Finance Act 2026 introduced the 'knew or should have known' standard for GPS revocation and the knowledge-based penalties under FA 2004 ss.62A/62B (s.62A 20% of the payment, s.62B 100% of the sum a false return treats as paid). For a housebuilder paying 40 subcontractors, the due-diligence obligation (CIS re-verification, Companies House legitimacy check, bank account name verification before each payment) must be applied to every subcontractor, every payment cycle. One undocumented payment is not a minor omission under the new regime: it is evidence of failing the 'should have known' standard.",
       },
       {
         title: "Deduction statement volume",
@@ -2880,7 +2880,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "April 2026 due-diligence exposure from the agency's own subcontractors",
         body:
-          "Where a labour agency itself sub-engages other agencies or labour-supply businesses, it has contractor-side CIS obligations of its own. Under Finance Act 2026, the 'knew or should have known' standard and the FA 2004 ss.62A/62B knowledge-based penalty (20% of the payment) apply to the agency as payer. Labour supply chains are a known vector for CIS fraud. An agency paying another labour business without documented verification, Companies House checks and bank-name confirmation is exposed to GPS revocation and the knowledge-based penalty regime.",
+          "Where a labour agency itself sub-engages other agencies or labour-supply businesses, it has contractor-side CIS obligations of its own. Under Finance Act 2026, the 'knew or should have known' standard and the FA 2004 ss.62A/62B knowledge-based penalties (s.62A 20% of the payment, s.62B 100% of the sum a false return treats as paid) apply to the agency as payer. Labour supply chains are a known vector for CIS fraud. An agency paying another labour business without documented verification, Companies House checks and bank-name confirmation is exposed to GPS revocation and the knowledge-based penalty regime.",
       },
     ],
     howWeHelp: [

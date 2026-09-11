@@ -144,6 +144,21 @@ export function SiteFooter({ nav }: { nav?: NavItem[] }) {
                 </Link>
               </li>
             ))}
+            {/* Build credit, ported verbatim from Property's SiteFooter (same
+                bg-slate-900 ground, so its gradient-on-navy contrast work carries
+                over unchanged). ml-auto pushes it clear of the legal links so it
+                reads as a credit rather than a fourth policy link. */}
+            <li className="w-full pt-1 sm:ml-auto sm:w-auto sm:pt-0">
+              <a
+                href="https://www.doublewiredcreative.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Website design and build by Double Wired Creative"
+                className={`bg-gradient-to-r from-[#818cf8] to-[#fb923c] bg-clip-text text-xs font-semibold text-transparent transition-all duration-200 hover:[text-shadow:0_0_6px_rgba(129,140,248,0.35),0_0_6px_rgba(251,146,60,0.35)] ${focusRing} rounded`}
+              >
+                Built by Double Wired Creative
+              </a>
+            </li>
           </ul>
           <p className="max-w-3xl text-xs leading-relaxed text-slate-400">
             {siteConfig.company.legalDisclosure}

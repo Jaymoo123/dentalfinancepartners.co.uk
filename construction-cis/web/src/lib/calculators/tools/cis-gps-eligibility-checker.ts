@@ -154,7 +154,7 @@ export const cisGpsEligibilityChecker: GenericTool = {
     paragraphs: [
       "The business test requires that you carry out construction operations in the UK within the meaning of the CIS rules and that you receive payments through a bank account. Most registered CIS subcontractors satisfy this test automatically, and it is rarely the reason an application fails.",
       "The turnover test compares your net CIS turnover (total CIS receipts minus VAT and materials) over the last 12 months against the threshold for your business structure. For a sole trader the threshold is £30,000. For a partnership it is £30,000 per partner or £100,000 for the partnership as a whole. For a limited company it is £30,000 per director or £100,000 in total. For a closely controlled company (five or fewer controllers) the threshold is £30,000 per controller. Net turnover is what matters: labour-only subcontractors will find their net figure equals their gross CIS income, while those who supply significant materials may find their net turnover is considerably lower than their invoice total.",
-      "The compliance test requires that all Self Assessment, PAYE, VAT and CIS300 returns were filed on time and that no tax payments are overdue over the previous 12 months. From April 2026, HMRC has the power to revoke GPS immediately, with no advance notice, where a contractor is found to have connections with fraudulent supply-chain activity on a 'knew or should have known' standard. A five-year reapplication ban applies, and directors of limited companies can face personal penalties of up to 30% of the tax HMRC considers lost.",
+      "The compliance test requires that all Self Assessment, PAYE, VAT and CIS300 returns were filed on time and that no tax payments are overdue over the previous 12 months. From April 2026, HMRC has the power to revoke GPS immediately, with no advance notice, where a contractor is found to have connections with fraudulent supply-chain activity on a 'knew or should have known' standard. A five-year reapplication ban applies. Where a company is penalised, HMRC can pursue an officer personally under the officer-liability rules, including a decision notice under FA 2004 s.72B requiring an officer to pay up to 100% of the company's s.72A penalty.",
     ],
   },
   faqs: [
@@ -166,7 +166,7 @@ export const cisGpsEligibilityChecker: GenericTool = {
     {
       question: "What changed with GPS in April 2026?",
       answer:
-        "From 6 April 2026, HMRC can revoke GPS immediately with no advance notice if a contractor is found to have connections with fraudulent supply-chain activity, on a 'knew or should have known' standard. A five-year reapplication ban applies. Directors of limited companies can face personal penalties of up to 30% of the tax HMRC considers lost. These changes were introduced to tackle organised fraud within CIS supply chains.",
+        "From 6 April 2026, HMRC can revoke GPS immediately with no advance notice if a contractor is found to have connections with fraudulent supply-chain activity, on a 'knew or should have known' standard. A five-year reapplication ban applies. Where a company is penalised, HMRC can pursue an officer personally under the officer-liability rules: a decision notice under FA 2004 s.72B can require an officer to pay up to 100% of the company's s.72A penalty. These changes were introduced to tackle organised fraud within CIS supply chains.",
     },
     {
       question: "How do I apply for GPS?",

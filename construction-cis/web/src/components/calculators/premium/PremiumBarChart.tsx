@@ -84,109 +84,145 @@ export function PremiumBarChart({
 
   const scale = (v: number) => (v / maxVal) * plotH;
 
+  const caption = spec.valueAxisLabel
+    ? `${spec.valueAxisLabel} compared across ${groupCount} groups`
+    : "Comparison of values across groups";
+
   return (
-    <div
-      style={{ height: CHART_HEIGHT }}
-      aria-hidden="true"
-      className="w-full overflow-hidden"
-    >
-      <svg
-        viewBox={`0 0 ${plotW} ${CHART_HEIGHT}`}
-        preserveAspectRatio="xMidYMid meet"
-        className="w-full h-full"
-        role="img"
-        aria-label="Bar chart comparing values across groups"
-      >
-        {/* Horizontal grid lines */}
-        {[0.25, 0.5, 0.75, 1].map((frac) => {
-          const y = CHART_PADDING.top + plotH - scale(maxVal * frac);
-          return (
-            <line
-              key={frac}
-              x1={CHART_PADDING.left}
-              y1={y}
-              x2={plotW - CHART_PADDING.right}
-              y2={y}
-              stroke="var(--border)"
-              strokeWidth={1}
-              strokeDasharray="4 3"
-            />
-          );
-        })}
+    <>
+      <div style={{ height: CHART_HEIGHT }} className="w-full overflow-hidden">
+        <svg
+          viewBox={`0 0 ${plotW} ${CHART_HEIGHT}`}
+          preserveAspectRatio="xMidYMid meet"
+          className="w-full h-full"
+          role="img"
+          aria-label={`${caption}. The exact values are in the table that follows.`}
+        >
+          {/* Horizontal grid lines. Decorative: aria-hidden so no assistive
+              technology that flattens the SVG subtree announces them. */}
+          {[0.25, 0.5, 0.75, 1].map((frac) => {
+            const y = CHART_PADDING.top + plotH - scale(maxVal * frac);
+            return (
+              <line
+                key={frac}
+                aria-hidden="true"
+                x1={CHART_PADDING.left}
+                y1={y}
+                x2={plotW - CHART_PADDING.right}
+                y2={y}
+                stroke="var(--border)"
+                strokeWidth={1}
+                strokeDasharray="4 3"
+              />
+            );
+          })}
 
-        {/* Bars and labels */}
-        {data.map((datum, gi) => {
-          const groupX = leftOffset + gi * (groupWidth + GROUP_GAP);
-          const groupLabel = String(datum.name);
+          {/* Bars and labels */}
+          {data.map((datum, gi) => {
+            const groupX = leftOffset + gi * (groupWidth + GROUP_GAP);
+            const groupLabel = String(datum.name);
 
-          return (
-            <g key={gi}>
-              {/* Group label */}
-              <text
-                x={groupX + groupWidth / 2}
-                y={CHART_HEIGHT - 4}
-                textAnchor="middle"
-                fontSize={9}
-                fill="var(--ink-soft)"
-              >
-                {groupLabel.length > 12 ? groupLabel.slice(0, 11) + "..." : groupLabel}
-              </text>
-
-              {series.map((s, si) => {
-                const val = Number(datum[s.dataKey] ?? 0);
-                const barH = scale(val);
-                const barX = groupX + si * (barWidth + BAR_GAP);
-                const barY = CHART_PADDING.top + plotH - barH;
-
-                return (
-                  <g key={s.dataKey}>
-                    <rect
-                      x={barX}
-                      y={barY}
-                      width={barWidth}
-                      height={Math.max(0, barH)}
-                      fill={s.color}
-                      rx={2}
-                      ry={2}
-                      opacity={0.9}
-                    >
-                      <title>
-                        {s.label}: {formatValue(val, format)}
-                      </title>
-                    </rect>
-                    {barH > 20 && (
-                      <text
-                        x={barX + barWidth / 2}
-                        y={barY - 3}
-                        textAnchor="middle"
-                        fontSize={8}
-                        fill="var(--ink)"
-                        fontWeight={500}
-                      >
-                        {shortValue(val, format)}
-                      </text>
-                    )}
-                  </g>
-                );
-              })}
-            </g>
-          );
-        })}
-
-        {/* Legend */}
-        {series.length > 1 && (
-          <g transform={`translate(${CHART_PADDING.left}, ${CHART_PADDING.top - 4})`}>
-            {series.map((s, i) => (
-              <g key={s.dataKey} transform={`translate(${i * 140}, 0)`}>
-                <rect x={0} y={-8} width={10} height={10} fill={s.color} rx={1} />
-                <text x={14} y={0} fontSize={8} fill="var(--ink-soft)">
-                  {s.label}
+            return (
+              <g key={gi}>
+                {/* Group label */}
+                <text
+                  aria-hidden="true"
+                  x={groupX + groupWidth / 2}
+                  y={CHART_HEIGHT - 4}
+                  textAnchor="middle"
+                  fontSize={9}
+                  fill="var(--ink-soft)"
+                >
+                  {groupLabel.length > 12 ? groupLabel.slice(0, 11) + "..." : groupLabel}
                 </text>
+
+                {series.map((s, si) => {
+                  const val = Number(datum[s.dataKey] ?? 0);
+                  const barH = scale(val);
+                  const barX = groupX + si * (barWidth + BAR_GAP);
+                  const barY = CHART_PADDING.top + plotH - barH;
+
+                  return (
+                    <g key={s.dataKey}>
+                      <rect
+                        aria-hidden="true"
+                        x={barX}
+                        y={barY}
+                        width={barWidth}
+                        height={Math.max(0, barH)}
+                        fill={s.color}
+                        rx={2}
+                        ry={2}
+                        opacity={0.9}
+                      >
+                        <title>
+                          {s.label}: {formatValue(val, format)}
+                        </title>
+                      </rect>
+                      {barH > 20 && (
+                        <text
+                          aria-hidden="true"
+                          x={barX + barWidth / 2}
+                          y={barY - 3}
+                          textAnchor="middle"
+                          fontSize={8}
+                          fill="var(--ink)"
+                          fontWeight={500}
+                        >
+                          {shortValue(val, format)}
+                        </text>
+                      )}
+                    </g>
+                  );
+                })}
               </g>
+            );
+          })}
+
+          {/* Legend */}
+          {series.length > 1 && (
+            <g aria-hidden="true" transform={`translate(${CHART_PADDING.left}, ${CHART_PADDING.top - 4})`}>
+              {series.map((s, i) => (
+                <g key={s.dataKey} transform={`translate(${i * 140}, 0)`}>
+                  <rect x={0} y={-8} width={10} height={10} fill={s.color} rx={1} />
+                  <text x={14} y={0} fontSize={8} fill="var(--ink-soft)">
+                    {s.label}
+                  </text>
+                </g>
+              ))}
+            </g>
+          )}
+        </svg>
+      </div>
+
+      {/* TD-21. The chart above is a picture; these are its values as real text
+          nodes in a real table, so a screen reader reaches every number by row
+          and column header rather than being handed one flattened aria-label. */}
+      <table className="sr-only">
+        <caption>{caption}</caption>
+        <thead>
+          <tr>
+            <th scope="col">Group</th>
+            {series.map((s) => (
+              <th key={s.dataKey} scope="col">
+                {s.label}
+              </th>
             ))}
-          </g>
-        )}
-      </svg>
-    </div>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((datum, gi) => (
+            <tr key={gi}>
+              <th scope="row">{String(datum.name)}</th>
+              {series.map((s) => (
+                <td key={s.dataKey}>
+                  {formatValue(Number(datum[s.dataKey] ?? 0), format)}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 }

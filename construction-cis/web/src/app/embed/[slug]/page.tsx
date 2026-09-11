@@ -40,7 +40,7 @@ export default async function CalculatorEmbedPage({ params }: Props) {
           href={`${siteConfig.url}/calculators/${tool.slug}?utm_source=partner-embed&utm_medium=iframe&utm_campaign=${tool.slug}`}
           target="_blank"
           rel="noopener"
-          className="text-xs text-slate-500 hover:text-orange-600 transition-colors"
+          className="text-xs text-slate-500 hover:text-[var(--accent-strong)] transition-colors"
         >
           Powered by <span className="font-bold text-slate-700">{siteConfig.name}</span> &middot; specialist UK CIS accountants
         </a>

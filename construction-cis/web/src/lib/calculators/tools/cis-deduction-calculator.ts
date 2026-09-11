@@ -39,9 +39,9 @@ export const cisDeductionCalculator: GenericTool = {
       type: "select",
       default: "registered",
       options: [
-        { value: "gps", label: "Gross Payment Status — deduct 0%" },
-        { value: "registered", label: "Registered subcontractor — deduct 20%" },
-        { value: "unregistered", label: "Unregistered / not verified — deduct 30%" },
+        { value: "gps", label: "Gross Payment Status: deduct 0%" },
+        { value: "registered", label: "Registered subcontractor: deduct 20%" },
+        { value: "unregistered", label: "Unregistered / not verified: deduct 30%" },
       ],
     },
     {
@@ -81,12 +81,12 @@ export const cisDeductionCalculator: GenericTool = {
         { label: "Net payment to subcontractor", value: gbp(netToPay), strong: true },
         { label: "HMRC remittance (CIS300 + payment)", value: gbp(cisDeducted), strong: true },
         ...(drc
-          ? [{ label: "VAT note", value: "DRC applies — you account for VAT separately" }]
+          ? [{ label: "VAT note", value: "DRC applies, you account for VAT separately" }]
           : []),
       ],
       note:
         status === "unregistered"
-          ? "This subcontractor is unregistered or could not be verified. The 30% rate applies. You must verify subcontractors with HMRC before making the first payment — failure to do so does not reduce your liability."
+          ? "This subcontractor is unregistered or could not be verified. The 30% rate applies. You must verify subcontractors with HMRC before making the first payment. Failure to do so does not reduce your liability."
           : "You must issue a written CIS payment and deduction statement to the subcontractor within 14 days of making this payment. File your CIS300 monthly return and pay the deducted amount to HMRC by the 22nd of the following tax month (19th for cheque).",
     };
   },

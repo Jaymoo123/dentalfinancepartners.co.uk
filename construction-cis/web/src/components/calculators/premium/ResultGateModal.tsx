@@ -105,7 +105,7 @@ export function ResultGateModal({
 
         <p
           id="calc_result_gate-heading"
-          className="text-xs font-bold uppercase tracking-wider text-[var(--dark)]"
+          className="text-[11px] font-semibold uppercase tracking-wide text-[var(--dark)] sm:text-xs"
         >
           Before you see your result
         </p>

@@ -34,7 +34,7 @@ export function MobileToolSlot({ topic }: { topic: TopicKey }) {
       heading={t?.ctaCopy || "Get your figure from a CIS specialist"}
       blurb="Our interactive tool is built for a larger screen. Tell us your situation and a CIS specialist will send your figure and the sensible next step, with no obligation."
       submitLabel="Send me my figure"
-      className="rounded-2xl border-l-4 border-[var(--accent)] bg-[var(--surface-elevated)] p-5 sm:p-6"
+      className="rounded-xl border-l-4 border-[var(--accent)] bg-[var(--surface-elevated)] p-6 sm:p-8"
     />
   );
 }

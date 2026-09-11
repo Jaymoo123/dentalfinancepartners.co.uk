@@ -343,7 +343,7 @@ export const cisPenaltyCalculator: GenericTool = {
     {
       question: "Can HMRC charge more than the fixed penalty amounts?",
       answer:
-        "Yes, at the 12-month stage. Where HMRC determines that a failure was deliberate, or deliberate and concealed, the charge rises to the greater of 100% of the CIS deductions due or £3,000 per return. This tool does not assume deliberate withholding. If you have received a notice citing deliberate withholding, take specialist advice before responding.",
+        "Yes, at the 12-month stage. Where HMRC determines that a failure was deliberate and concealed, the charge rises to the greater of 100% of the CIS deductions due or £3,000 per return. This tool does not assume deliberate withholding. If you have received a notice citing deliberate withholding, take specialist advice before responding.",
     },
     {
       question: "Will the penalty show on a compliance record?",

@@ -270,7 +270,7 @@ export function LeadForm({
       {showTradeSelect && (
         <div>
           <label htmlFor="trade" className={labelClass}>
-            Your trade <span className="font-normal text-neutral-500">(optional)</span>
+            Your trade <span className="font-normal text-neutral-600">(optional)</span>
           </label>
           <select
             id="trade"
@@ -298,7 +298,7 @@ export function LeadForm({
         <div>
           <label htmlFor="subbieCount" className={labelClass}>
             How many subcontractors do you pay?{" "}
-            <span className="font-normal text-neutral-500">(optional)</span>
+            <span className="font-normal text-neutral-600">(optional)</span>
           </label>
           <select
             id="subbieCount"
@@ -389,7 +389,7 @@ export function LeadForm({
 
       <div>
         <label htmlFor="message" className={labelClass}>
-          Message <span className="font-normal text-neutral-500">(optional)</span>
+          Message <span className="font-normal text-neutral-600">(optional)</span>
         </label>
         <textarea
           id="message"
@@ -420,7 +420,7 @@ export function LeadForm({
         <div className="space-y-4 px-4 pb-4 pt-2">
           <div>
             <label htmlFor="situation" className={labelClass}>
-              Your situation <span className="font-normal text-neutral-500">(optional)</span>
+              Your situation <span className="font-normal text-neutral-600">(optional)</span>
             </label>
             <textarea
               id="situation"
@@ -437,7 +437,7 @@ export function LeadForm({
           </div>
           <div>
             <label htmlFor="prompted" className={labelClass}>
-              What&apos;s prompted this now? <span className="font-normal text-neutral-500">(optional)</span>
+              What&apos;s prompted this now? <span className="font-normal text-neutral-600">(optional)</span>
             </label>
             <textarea
               id="prompted"
@@ -454,7 +454,7 @@ export function LeadForm({
           </div>
           <div>
             <label htmlFor="callGoal" className={labelClass}>
-              What would make a call worthwhile? <span className="font-normal text-neutral-500">(optional)</span>
+              What would make a call worthwhile? <span className="font-normal text-neutral-600">(optional)</span>
             </label>
             <textarea
               id="callGoal"
@@ -477,7 +477,7 @@ export function LeadForm({
           tick-box. */}
       <p className="text-xs leading-relaxed text-neutral-600">
         {siteConfig.leadConsentText} See our{" "}
-        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-orange-600 underline">
+        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--accent-strong)] underline">
           Privacy Policy
         </a>
         .
@@ -509,7 +509,7 @@ export function LeadForm({
         {status === "loading" ? "Sending..." : status === "success" ? "Sent" : submitLabel}
       </button>
 
-      <p className="text-xs leading-relaxed text-neutral-500">
+      <p className="text-xs leading-relaxed text-neutral-600">
         A specialist CIS accountant will be in touch. Your details are stored securely.
       </p>
     </form>

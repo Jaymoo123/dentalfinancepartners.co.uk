@@ -12,7 +12,8 @@
  * Mount once in src/app/calculators/[slug]/page.tsx after <CalculatorClient slug={slug}>.
  *
  * TOKEN HARDENING: no var(--gold), no var(--navy), no var(--primary).
- * The label eyebrow chip uses bg-[var(--dark)] (slate) text-orange-300.
+ * The label eyebrow chip ground is var(--dark) (slate-900 #0f172a) with text-orange-300,
+ * which renders #ffb86a at 10.47 on that ground (DESIGN_DELTA 2.1).
  */
 import { topicForCalcSlug, getTopic } from "@/lib/intent/taxonomy";
 import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
@@ -41,7 +42,7 @@ export function CalculatorPageResources({
       <div className="flex items-center gap-3">
         <span
           className="inline-block px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-orange-300"
-          style={{ background: "#1e293b" }}
+          style={{ background: "var(--dark)" }}
         >
           Go deeper
         </span>

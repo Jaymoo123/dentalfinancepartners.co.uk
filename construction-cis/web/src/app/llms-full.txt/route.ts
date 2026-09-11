@@ -47,28 +47,28 @@ affairs, see https://${niche.domain}/contact.
 
 The following free calculators are available on this site:
 
-- CIS Refund Estimator — https://${niche.domain}/calculators/cis-refund-estimator
+- CIS Refund Estimator · https://${niche.domain}/calculators/cis-refund-estimator
   Estimate your annual CIS tax refund after deductions, materials, expenses and personal allowance.
 
-- CIS Take-Home Calculator — https://${niche.domain}/calculators/cis-take-home-calculator
+- CIS Take-Home Calculator · https://${niche.domain}/calculators/cis-take-home-calculator
   See your net take-home from a CIS invoice after the deduction, with annualised view.
 
-- CIS Deduction Calculator — https://${niche.domain}/calculators/cis-deduction-calculator
+- CIS Deduction Calculator · https://${niche.domain}/calculators/cis-deduction-calculator
   Work out the correct CIS deduction to withhold from a subcontractor payment (contractor-side).
 
-- CIS Self Assessment Calculator — https://${niche.domain}/calculators/cis-self-assessment-calculator
+- CIS Self Assessment Calculator · https://${niche.domain}/calculators/cis-self-assessment-calculator
   Calculate your annual Self Assessment liability and whether you are owed a refund or owe a balance.
 
-- CIS GPS Eligibility Checker — https://${niche.domain}/calculators/cis-gps-eligibility-checker
+- CIS GPS Eligibility Checker · https://${niche.domain}/calculators/cis-gps-eligibility-checker
   Check whether you qualify for Gross Payment Status and eliminate the 20% deduction entirely.
 
-- CIS vs PAYE Comparison — https://${niche.domain}/calculators/cis-vs-paye-comparison
+- CIS vs PAYE Comparison · https://${niche.domain}/calculators/cis-vs-paye-comparison
   Compare take-home pay as a CIS subcontractor versus PAYE employment at the same gross earnings.
 
-- CIS Invoice Splitter — https://${niche.domain}/calculators/cis-invoice-splitter
+- CIS Invoice Splitter · https://${niche.domain}/calculators/cis-invoice-splitter
   Split a CIS invoice correctly between labour and materials to avoid being over-deducted.
 
-- CIS Back Years Calculator — https://${niche.domain}/calculators/cis-back-years-calculator
+- CIS Back Years Calculator · https://${niche.domain}/calculators/cis-back-years-calculator
   Estimate your cumulative CIS refund across up to four previous tax years.
 
 ${glossarySection}`,

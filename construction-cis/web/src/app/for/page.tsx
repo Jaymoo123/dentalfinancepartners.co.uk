@@ -20,7 +20,7 @@ export default function ForIndexPage() {
       <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="section-label mb-6">Who we work with</div>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Specialist CIS accounting for every construction trade.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
@@ -30,12 +30,13 @@ export default function ForIndexPage() {
       </section>
 
       {/* Individual trades grid */}
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
+      <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <h2 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">
-            For individual trades
+          <div className="section-label mb-4">For individual trades</div>
+          <h2 className="mt-2 max-w-3xl text-2xl font-bold tracking-tight sm:text-4xl">
+            Every trade that falls within the scheme.
           </h2>
-          <p className="text-neutral-400 text-sm mb-8 max-w-2xl">
+          <p className="mt-4 text-neutral-600 text-base mb-8 max-w-2xl">
             Self-employed subcontractors and sole traders working under CIS. We handle CIS refunds, gross payment status applications and Self Assessment for every trade that falls within the scheme.
           </p>
           <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -43,29 +44,30 @@ export default function ForIndexPage() {
               <Link
                 key={type.slug}
                 href={`/for/${type.slug}`}
-                className="group block bg-white/5 border border-white/10 p-5 sm:p-6 transition-all hover:bg-orange-600/20 hover:border-orange-400/40"
+                className="group block border border-neutral-200 bg-white p-5 sm:p-6 transition-all hover:border-orange-700 hover:shadow-sm"
               >
-                <span className="text-base font-bold text-white group-hover:text-orange-300 transition-colors">
+                <span className="text-base font-bold text-neutral-900 group-hover:text-orange-800 transition-colors">
                   {type.title}
                 </span>
-                <p className="mt-2 text-sm text-neutral-400 group-hover:text-neutral-300 transition-colors line-clamp-2">
+                <p className="mt-2 text-sm text-neutral-600 line-clamp-2">
                   {type.intro.split(".")[0]}.
                 </p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-orange-400 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-orange-700 group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Construction businesses grid — hidden when empty */}
+      {/* Construction businesses grid, hidden when empty */}
       {businessSegment.length > 0 && (
-        <section className="bg-neutral-800 py-12 sm:py-16 lg:py-20">
+        <section className="bg-white py-12 sm:py-16 lg:py-20">
           <div className={siteContainerLg}>
-            <h2 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">
-              For construction businesses
+            <div className="section-label mb-4">For construction businesses</div>
+            <h2 className="mt-2 max-w-3xl text-2xl font-bold tracking-tight sm:text-4xl">
+              Contractors with employer-side CIS obligations.
             </h2>
-            <p className="text-neutral-400 text-sm mb-8 max-w-2xl">
+            <p className="mt-4 text-neutral-600 text-base mb-8 max-w-2xl">
               Limited companies, main contractors and construction businesses with employer-side CIS obligations. We cover monthly CIS300 returns, EPS deduction reclaims, supply-chain due diligence and the April 2026 anti-fraud compliance requirements.
             </p>
             <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -73,15 +75,15 @@ export default function ForIndexPage() {
                 <Link
                   key={type.slug}
                   href={`/for/${type.slug}`}
-                  className="group block bg-white/5 border border-white/10 p-5 sm:p-6 transition-all hover:bg-orange-600/20 hover:border-orange-400/40"
+                  className="group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-orange-700 hover:bg-white hover:shadow-sm"
                 >
-                  <span className="text-base font-bold text-white group-hover:text-orange-300 transition-colors">
+                  <span className="text-base font-bold text-neutral-900 group-hover:text-orange-800 transition-colors">
                     {type.title}
                   </span>
-                  <p className="mt-2 text-sm text-neutral-400 group-hover:text-neutral-300 transition-colors line-clamp-2">
+                  <p className="mt-2 text-sm text-neutral-600 line-clamp-2">
                     {type.intro.split(".")[0]}.
                   </p>
-                  <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-orange-400 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-orange-700 group-hover:translate-x-1 transition-all" />
                 </Link>
               ))}
             </div>
@@ -90,11 +92,11 @@ export default function ForIndexPage() {
       )}
 
       {/* Why trade knowledge matters */}
-      <section className="bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
+      <section className="bg-[var(--hero-cream)] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
             <div className="section-label mb-4">Why trade knowledge matters</div>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-4xl">
               CIS works differently across trades.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-600 sm:text-lg">

@@ -1,5 +1,20 @@
 # TRADE (construction-cis) SECTION-GROUNDS BASELINE
 
+> **READ FIRST, 2026-09-11: `_port/browser_baseline.json` IS OKLCH-BLIND ON CONTRAST.** That
+> capture was taken BEFORE the instrument was repaired, so every oklch-coloured element is
+> simply absent from it rather than recorded as passing. Its contrast half is therefore
+> untrustworthy: a review read it as evidence and reported 16 routes with "NEW problems" that
+> were not new, only newly visible. The section-grounds half of this document is unaffected
+> (it was recomputed with the fixed instrument, see the update below).
+>
+> Consequences until it is replaced:
+>
+> - A re-capture with the repaired instrument is REQUIRED before the Phase 5 review. It needs a
+>   running server, so it is a deliberate, scheduled step, not a side effect of another task.
+> - Until that re-capture lands, a "NEW" contrast finding derived from a diff against
+>   `browser_baseline.json` must be checked against the source file before it is believed.
+>   Absence from the baseline is not evidence that a colour was ever passing.
+
 Authoritative pre-Phase-3 measurement of DESIGN_SYSTEM section 9 ("consecutive bands must not
 share a ground", "navy must never touch navy") across the whole site. Written to give Phase 3 a
 closure gate it can actually pass or fail. Read-only exercise: no code was edited to produce it.

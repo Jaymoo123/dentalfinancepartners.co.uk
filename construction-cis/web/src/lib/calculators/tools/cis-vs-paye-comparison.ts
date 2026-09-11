@@ -86,14 +86,14 @@ export const cisVsPayeComparison: GenericTool = {
       rows: [
         { label: "Gross earnings", value: gbp(gross) },
         { label: "", value: "" },
-        { label: "CIS path — income tax", value: gbp(cisIncomeTax) },
-        { label: "CIS path — Class 4 NI", value: gbp(cisNi) },
+        { label: "CIS path: income tax", value: gbp(cisIncomeTax) },
+        { label: "CIS path: Class 4 NI", value: gbp(cisNi) },
         {
-          label: "CIS path — allowable expenses benefit",
+          label: "CIS path: allowable expenses benefit",
           value: `−${gbp(expenses)} off taxable profit`,
         },
         {
-          label: "CIS path — annual take-home",
+          label: "CIS path: annual take-home",
           value: gbp(cisTakeHome),
           strong: true,
         },
@@ -102,15 +102,15 @@ export const cisVsPayeComparison: GenericTool = {
           value: gbp(cisAdvanceDeducted),
         },
         { label: "", value: "" },
-        { label: "PAYE path — income tax", value: gbp(payeIncomeTax) },
-        { label: "PAYE path — employee NI (Class 1)", value: gbp(payeNi) },
+        { label: "PAYE path: income tax", value: gbp(payeIncomeTax) },
+        { label: "PAYE path: employee NI (Class 1)", value: gbp(payeNi) },
         {
-          label: "PAYE path — annual take-home",
+          label: "PAYE path: annual take-home",
           value: gbp(payeTakeHome),
           strong: true,
         },
       ],
-      note: "This comparison uses 2026/27 rates. CIS income tax is at 20%/40%; Class 4 NI at 6%/2% (£12,570–£50,270). PAYE income tax is identical; employee Class 1 NI is 8% up to £50,270 and 2% above. The CIS advance deducted at source is recovered through Self Assessment — annual take-home figures assume the refund is received. PAYE figures assume no employment benefits or pension contributions.",
+      note: "This comparison uses 2026/27 rates. CIS income tax is at 20%/40%; Class 4 NI at 6%/2% (£12,570–£50,270). PAYE income tax is identical; employee Class 1 NI is 8% up to £50,270 and 2% above. The CIS advance deducted at source is recovered through Self Assessment. Annual take-home figures assume the refund is received. PAYE figures assume no employment benefits or pension contributions.",
     };
   },
   explainer: {

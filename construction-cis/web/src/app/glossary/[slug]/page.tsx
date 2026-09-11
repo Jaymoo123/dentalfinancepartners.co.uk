@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
+import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./data";
@@ -79,7 +80,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-orange-500 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="mb-4 inline-flex items-center gap-2 font-geist-mono text-xs font-medium uppercase tracking-[0.1em] text-orange-400">
               <BookOpen className="h-3.5 w-3.5" />
               {entry.category}
             </div>
@@ -91,26 +92,36 @@ export default async function GlossaryEntryPage({ params }: Props) {
       </section>
 
       {/* Definition body */}
-      <article className="bg-white py-12 sm:py-16">
+      <article className="bg-white pt-12 sm:pt-16">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
+          <div>
             <div
               className="article-body prose-blog"
               dangerouslySetInnerHTML={{ __html: entry.body }}
             />
 
-            {/* Lead CTA */}
-            <div className="mt-12 bg-neutral-900 p-8 text-white">
-              <h2 className="text-xl font-bold sm:text-2xl">
-                Not sure how this applies to your CIS position?
+            {/* Section D.3 mid-article ask. A light card inside a white
+                article, not a navy block: DESIGN_SYSTEM section 9 keeps navy
+                for full bands. Points at the panel at the foot of the page, so
+                the reader does not leave the definition to convert. */}
+            <div className="mt-12 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+              <h2 className="text-xl font-bold text-neutral-900 sm:text-2xl">
+                Not sure how {entry.term} applies to your own CIS position?
               </h2>
-              <p className="mt-3 text-base text-neutral-200">
-                Book a free call with a specialist CIS accountant. We will
-                review your deductions, check your returns and tell you exactly
-                where you stand. Plain English, no obligation.
+              <p className="mt-3 text-base text-neutral-700">
+                A definition tells you what the rule is. A specialist CIS
+                accountant can tell you what it does to your figures. We will
+                read your deductions and your returns and tell you where you
+                stand, in plain English.
               </p>
-              <Link href="/contact" className={`${btnPrimary} mt-6`}>
-                Book a free call
+              <Link
+                href="#book"
+                data-cta="glossary_entry_book"
+                data-cta-placement="article"
+                data-cta-goal="form"
+                className={`${btnPrimary} mt-6`}
+              >
+                Check my CIS position
               </Link>
             </div>
 
@@ -125,12 +136,12 @@ export default async function GlossaryEntryPage({ params }: Props) {
                     <li key={r.slug}>
                       <Link
                         href={`/glossary/${r.slug}`}
-                        className="group block bg-stone-50 border border-neutral-200 p-4 hover:border-orange-500 hover:bg-white transition-all"
+                        className="group block rounded-xl bg-slate-50 border border-slate-200 p-4 hover:border-orange-500 hover:bg-white transition-all"
                       >
                         <p className="text-sm font-bold text-neutral-900 group-hover:text-orange-700 transition-colors">
                           {r.term}
                         </p>
-                        <div className="mt-2 flex items-center text-orange-600 text-xs font-semibold">
+                        <div className="mt-2 flex items-center text-orange-700 text-xs font-semibold">
                           Read
                           <ArrowRight className="ml-1 h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
                         </div>
@@ -141,6 +152,32 @@ export default async function GlossaryEntryPage({ params }: Props) {
               </section>
             )}
           </div>
+        </div>
+
+        {/* Section D.3 closing ask. Inside the <article> on purpose: the tail
+            of <main> stays `</article>` and the last painted band is the
+            panel's cream, never navy against the navy footer. Static band in
+            the page body, nothing interruptive. */}
+        <div id="book" className="mt-12 scroll-mt-24 sm:mt-16">
+          <LeadCTAPanel
+            contained
+            title="Get this checked against your own numbers"
+            description="Definitions are the easy part. Tell us where you are up to with CIS and we will tell you what it means for your money this year."
+            proofPoints={[
+              {
+                title: "CIS specialists only",
+                detail: "Construction tax is the whole of what we do, not a sideline.",
+              },
+              {
+                title: "Fixed fees, no surprises",
+                detail: "Quoted before we start, so you see the number first.",
+              },
+              {
+                title: "No hard sell, no obligation",
+                detail: "If your position is already right, we will say so.",
+              },
+            ]}
+          />
         </div>
       </article>
     </>

@@ -77,8 +77,8 @@ export default function EmbedGalleryPage() {
 
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">How to embed (2 steps)</h2>
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">How to embed (2 steps)</h2>
             <ol className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
               <li>
                 <strong>1. Paste the calculator.</strong> Copy the iframe snippet for the
@@ -99,18 +99,18 @@ export default function EmbedGalleryPage() {
 
       <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">The calculators</h2>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">The calculators</h2>
           {CALCULATORS.length === 0 ? (
             <p className="mt-6 text-slate-600">Calculator tools coming soon.</p>
           ) : (
             <div className="mt-8 space-y-10">
               {CALCULATORS.map((c) => (
-                <div key={c.slug} className="rounded-2xl border-2 border-slate-200 bg-white p-6 sm:p-8">
+                <div key={c.slug} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <h3 className="text-xl font-bold text-slate-900 sm:text-2xl">{c.name}</h3>
                     <Link
                       href={`/calculators/${c.slug}`}
-                      className="text-sm font-semibold text-orange-600 hover:text-orange-700"
+                      className="text-sm font-semibold text-[var(--accent-strong)] hover:text-[var(--btn-ground-hover)]"
                     >
                       Preview the full page &rarr;
                     </Link>
@@ -128,8 +128,8 @@ export default function EmbedGalleryPage() {
 
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl bg-slate-900 p-8 text-center text-white sm:p-10">
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">
+          <div className="rounded-xl bg-slate-900 p-6 text-center text-white sm:p-8 lg:p-10">
+            <h2 className="text-2xl font-bold text-white sm:text-4xl">
               Want a calculator built for your audience?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-200">

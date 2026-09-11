@@ -61,6 +61,10 @@ const KNOWN_EYEBROW_CONSUMERS = [
   // --hero-cream (#fafaf7) = 4.95, above the 4.5 text floor.
   { file: "components/marketing/LeadCTAPanel.tsx", line: 129 },
   { file: "components/marketing/LeadCTAPanel.tsx", line: 131 },
+  // Phase 3 / WP-C4. The resource guide hero eyebrow, on all 3 /resources/[topic]
+  // routes. DARK ground (bg-neutral-900 #171717), so it carries text-orange-400
+  // (#ff8904), 7.54 there. The bare default would have been 3.43 and failed.
+  { file: "app/resources/[topic]/page.tsx", line: 73 },
 ];
 
 /** Same className match used to enumerate occurrences AND to check the pinned ones. */

@@ -45,8 +45,8 @@ const aprilChanges = [
     body: "GPS removed on fraud grounds now triggers a 5-year ban on reapplication (previously 1 year). The cash-flow cost is severe: roughly £100,000 a year for a contractor earning £500,000, because 20% is deducted at source on every payment instead of 0% with GPS.",
   },
   {
-    title: "Director liability up to 30%",
-    body: "Finance Bill 2026 ss.62A/62B allow individual directors to face penalties of up to 30% of the tax HMRC considers lost due to fraudulent transactions. The liability reaches the individual, not just the company.",
+    title: "Knowledge-based penalties and officer liability",
+    body: "Finance Act 2026 inserts FA 2004 ss.62A and 62B. A person who makes a payment under a construction contract knowing, or having reason to know, that a connected party has deliberately failed to comply with CIS faces a penalty of 20% of that payment (s.62A). Where a return is made in that same knowledge, the liability is an amount equal to the whole sum the return treats as paid (s.62B). Where a company is penalised, HMRC can pursue an officer personally under the officer-liability rules, including a decision notice under FA 2004 s.72B requiring an officer to pay up to 100% of the company's s.72A penalty.",
   },
   {
     title: "Due diligence is now essential",
@@ -127,7 +127,7 @@ export default function GrossPaymentStatusPage() {
                 ].map(([turnover, gps, noGps], i) => (
                   <tr key={turnover} className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-neutral-50" : "bg-white"}`}>
                     <th scope="row" className="px-5 py-4 font-semibold text-neutral-900 sm:px-6">{turnover}</th>
-                    <td className="px-5 py-4 font-semibold text-orange-600 sm:px-6">{gps}</td>
+                    <td className="px-5 py-4 font-semibold text-[var(--accent-strong)] sm:px-6">{gps}</td>
                     <td className="px-5 py-4 text-neutral-600 sm:px-6">{noGps}</td>
                   </tr>
                 ))}
@@ -195,7 +195,7 @@ export default function GrossPaymentStatusPage() {
             The April 2026 GPS anti-fraud rules: why maintenance now matters.
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            Finance Bill 2026 introduced a tougher GPS regime in force from 6 April 2026. Qualifying is no longer the end of the story. Keeping GPS now requires active ongoing due diligence.
+            Finance Act 2026 introduced a tougher GPS regime in force from 6 April 2026. Qualifying is no longer the end of the story. Keeping GPS now requires active ongoing due diligence.
           </p>
           <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {aprilChanges.map((item) => (

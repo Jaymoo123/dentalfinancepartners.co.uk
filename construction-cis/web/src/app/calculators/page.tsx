@@ -57,7 +57,7 @@ export default function CalculatorsPage() {
           <h1 className="mt-6 max-w-3xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             Free CIS tax calculators
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
             Free tools for UK CIS subcontractors and contractors. Estimate your refund, check gross
             payment status eligibility, and work out your take-home pay.
           </p>
@@ -71,7 +71,7 @@ export default function CalculatorsPage() {
           ) : (
             categories.map((cat) => (
               <div key={cat} className="mb-12 last:mb-0">
-                <h2 className="text-xl font-bold text-slate-900 sm:text-2xl">{cat}</h2>
+                <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">{cat}</h2>
                 <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                   {tools
                     .filter((t) => t.category === cat)
@@ -81,11 +81,11 @@ export default function CalculatorsPage() {
                         href={`/calculators/${t.slug}`}
                         className="group block rounded-2xl border-2 border-slate-200 bg-white p-6 transition-colors hover:border-orange-500"
                       >
-                        <h3 className="text-lg font-bold text-slate-900 group-hover:text-orange-700">
+                        <h3 className="text-base font-bold text-slate-900 group-hover:text-[var(--accent-strong)] sm:text-lg">
                           {t.name}
                         </h3>
                         <p className="mt-2 text-sm leading-relaxed text-slate-600">{t.oneLiner}</p>
-                        <span className="mt-4 inline-block text-sm font-semibold text-orange-600">
+                        <span className="mt-4 inline-block text-sm font-semibold text-[var(--accent-strong)]">
                           Open calculator &rarr;
                         </span>
                       </Link>
@@ -99,7 +99,7 @@ export default function CalculatorsPage() {
             <p>
               <Link
                 href="/embed"
-                className="text-sm font-semibold text-slate-500 hover:text-orange-600"
+                className="text-sm font-semibold text-slate-600 hover:text-[var(--accent-strong)]"
               >
                 Run a construction or trade site? Embed any of these calculators for free &rarr;
               </Link>
@@ -107,7 +107,7 @@ export default function CalculatorsPage() {
           </div>
 
           <div className="mt-12 sm:mt-16 bg-slate-900 p-6 sm:p-10 text-center text-white">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl font-bold text-white sm:text-4xl">
               Need help interpreting your results?
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed text-slate-200 max-w-3xl mx-auto">

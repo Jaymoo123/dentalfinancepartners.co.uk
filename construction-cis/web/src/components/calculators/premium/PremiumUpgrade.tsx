@@ -32,7 +32,7 @@ import { MobileToolSlot } from "./MobileToolSlot";
 function ToolLoading() {
   return (
     <div
-      className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-sm"
+      className="overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-sm"
       style={{ minHeight: 480 }}
       aria-busy="true"
     >
@@ -92,7 +92,7 @@ export function PremiumUpgrade({
     >
       <div className="mb-3 flex items-center gap-2">
         {/* Dark (slate) chip: construction-cis brand fill, white label. No --navy. */}
-        <span className="inline-block bg-[var(--dark)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white rounded">
+        <span className="inline-block rounded bg-[var(--dark)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white sm:text-xs">
           Free interactive tool
         </span>
       </div>
