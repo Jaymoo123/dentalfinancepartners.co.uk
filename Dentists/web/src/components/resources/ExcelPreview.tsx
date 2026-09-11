@@ -143,7 +143,6 @@ const DEFAULT_CAPTION =
 
 const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
   // Asset 1: Associate take-home model (topic associate)
-  // calcAssociateTakeHome(120000, 50, 8, 3000, 0) -> netCash 41408, totalTax 10792
   // incomeTax 8312, class4 2300.6 -> ~2301, class2 179.4 -> total rounded
   associate: {
     layout: "single",
@@ -178,12 +177,12 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
       {
         kind: "data",
         left: { label: "Practice profit", value: { text: "£120,000", v: "blue" } },
-        right: { label: "Net cash (partnership)", value: { text: "£76,732", v: "numStrong" } },
+        right: { label: "Net cash (partnership)", value: { text: "£76,911", v: "numStrong" } },
       },
       {
         kind: "data",
         left: { label: "Active NHS Pension member", value: { text: "Yes", v: "blueText" } },
-        right: { label: "Total tax (partnership)", value: { text: "£43,268", v: "num" } },
+        right: { label: "Total tax (partnership)", value: { text: "£43,089", v: "num" } },
       },
       {
         kind: "data",
@@ -195,7 +194,7 @@ const SPECS: Partial<Record<TopicKey, PreviewSpec>> = {
         left: undefined,
         right: { label: "Total tax and admin (Ltd)", value: { text: "£47,721", v: "num" } },
       },
-      { kind: "headline", text: "Sole trader or partnership keeps £4,210 more, and preserves NHS Pension accrual" },
+      { kind: "headline", text: "Sole trader or partnership keeps £4,632 more, and preserves NHS Pension accrual" },
       { kind: "blank" },
       { kind: "blank" },
       { kind: "blank" },

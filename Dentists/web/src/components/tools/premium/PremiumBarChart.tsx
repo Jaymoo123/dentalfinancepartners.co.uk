@@ -7,7 +7,6 @@
  * and the site's CSS variable tokens. Fixed height (180px) so there is no CLS.
  * No recharts, no radix, no new npm dependencies.
  *
- * Token discipline: uses var(--gold), var(--navy), var(--border), var(--ink),
  * var(--ink-soft). Dentists does NOT define --primary; no var(--gold) here.
  *
  * Bar rendering:
@@ -176,7 +175,7 @@ export function PremiumBarChart({
                       fill={s.color}
                       rx={2}
                       ry={2}
-                      opacity={0.9}
+                      
                     >
                       <title>
                         {s.label}: {formatValue(val, format)}

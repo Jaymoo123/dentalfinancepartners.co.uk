@@ -312,7 +312,7 @@ export function build(): ExcelJS.Workbook {
     "This matches the calcAssociateTakeHome() formula in the site calculator.",
     "",
     "NHS Pension: treated as deductible from taxable profit (practitioner arrangement).",
-    "It reduces both income tax and Class 4 NI. Class 2 is based on profit before pension.",
+    "It reduces both income tax and Class 4 NI.",
     "",
     "This is a directional model. Your actual position depends on student loan repayments,",
     "Marriage Allowance, other income, and local NHS Pension tier. Speak to a specialist.",
