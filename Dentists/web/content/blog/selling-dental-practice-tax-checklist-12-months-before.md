@@ -101,7 +101,7 @@ faqs:
 
 <p>Also consider your personal income in the year of sale. If you have high practice profits in that year, your income may exceed £125,140, removing your personal allowance and potentially triggering the tapered annual allowance on your pension (the capital gain itself does not count as income for these thresholds, but the drawings and handover income that come with a sale year do). You can sometimes manage this by deferring some practice drawings or by selling in a year when your practice income is lower.</p>
 
-<p>A <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> can give you a rough estimate of the sale price, but the tax modelling requires a full financial projection. Do not rely on a single year's figures.</p>
+<p>A <a href="/calculators/practice-valuation">practice valuation calculator</a> can give you a rough estimate of the sale price, but the tax modelling requires a full financial projection. Do not rely on a single year's figures.</p>
 
 <h2>Step 7: Review Your Will and Estate Planning</h2>
 

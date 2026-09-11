@@ -107,7 +107,7 @@ faqs:
 <li><strong>Document the agreement.</strong> The sale and purchase agreement must specify the price, payment dates, and any earn-out or deferred consideration terms. Use a solicitor experienced in dental practice sales.</li>
 <li><strong>Plan your BADR position.</strong> Ensure you retain at least 5% shares and voting rights for 24 months before each tranche. If you sell below 5% in an early tranche, later disposals may not qualify.</li>
 <li><strong>Consider the NHS Pension impact.</strong> If you are in the 1995 or 2008 section, a phased sale may affect your final salary calculation. Speak to an NHS Pension specialist.</li>
-<li><strong>Review your personal tax position.</strong> A phased sale can interact with your other income, dividend allowance, and pension contributions. Use our <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> to model different scenarios.</li>
+<li><strong>Review your personal tax position.</strong> A phased sale can interact with your other income, dividend allowance, and pension contributions. Use our <a href="/calculators/practice-valuation">practice valuation calculator</a> to model different scenarios.</li>
 </ol>
 
 <h2>Case Study: Phased Sale in Practice</h2>

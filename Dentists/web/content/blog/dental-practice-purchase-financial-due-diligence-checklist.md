@@ -155,7 +155,7 @@ faqs:
 
 <p>Use a structured checklist like the one above and tick off each item as you verify it. If something does not add up, ask for clarification. If the seller cannot or will not provide evidence, that is a red flag.</p>
 
-<p>For a downloadable version of this checklist, see our <a href="/dental-guides/practice-purchase-financial-due-diligence">Practice Purchase Financial Due Diligence Guide</a>. You can also use our <a href="/calculators/practice-valuation-calculator">Practice Valuation Calculator</a> to test different assumptions about UDA values, goodwill multiples, and EBITDA adjustments.</p>
+<p>For a downloadable version of this checklist, see our <a href="/dental-guides/practice-purchase-financial-due-diligence">Practice Purchase Financial Due Diligence Guide</a>. If the asking price is the part you are testing, <a href="/blog/goodwill-and-practice-sale/goodwill-valuation-methods-dental-uk-2026">the valuation methods used on dental goodwill</a> explain what the multiple is actually being applied to. You can also use our <a href="/calculators/practice-valuation">Practice Valuation Calculator</a> to test different assumptions about UDA values, goodwill multiples, and EBITDA adjustments.</p>
 
 <p>Every practice is different. The figures and rules in this article are general guidance for the 2026/27 tax year. Your specific situation may require different treatment. Speak to a dental-specialist accountant before committing to any purchase.</p>
 

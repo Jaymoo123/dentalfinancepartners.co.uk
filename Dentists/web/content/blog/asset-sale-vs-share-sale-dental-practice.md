@@ -127,7 +127,7 @@ faqs:
 <ul>
 <li><strong>Model the tax of each structure before you negotiate.</strong> For an incorporated practice, run the company asset sale (two layers, no BADR) against the share sale (one layer, BADR if conditions are met) so the gap is visible.</li>
 <li><strong>Engage a dental-specialist solicitor</strong> who understands practice sales and NHS contract transfer rules, and a dental accountant to model the tax.</li>
-<li><strong>Get a professional practice valuation.</strong> Our <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> gives an initial estimate of the goodwill and assets.</li>
+<li><strong>Get a professional practice valuation.</strong> Our <a href="/calculators/practice-valuation">practice valuation calculator</a> gives an initial estimate of the goodwill and assets.</li>
 <li><strong>Conduct financial due diligence,</strong> which is heavier in a share sale because the buyer inherits the company's past. Our <a href="/dental-guides/practice-purchase-financial-due-diligence">financial due diligence guide</a> sets out the key areas.</li>
 <li><strong>Agree the purchase-price allocation</strong> in an asset sale. The split between goodwill, equipment and lease affects both sides' tax positions and should be negotiated, not left to chance. Our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a> covers the detail.</li>
 <li><strong>Check the NHS contract</strong> for change-of-control and assignment provisions, and engage the commissioner early.</li>

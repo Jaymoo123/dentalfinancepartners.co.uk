@@ -149,7 +149,7 @@ faqs:
 <li><strong>Get a dental-specific valuation:</strong> A general practice valuer may not understand how NHS UDA rates and private fee income affect premises value. Use a valuer who specialises in dental practices.</li>
 <li><strong>Review the lease terms:</strong> If buying leasehold, check the lease length, rent review mechanism, repairing obligations, and any restrictions on assignment or subletting. A lease under 15 years can significantly reduce the practice sale value.</li>
 <li><strong>Check NHS contract terms:</strong> Some NHS contracts require the practice to be owner-occupied. Others are silent on the point. Your solicitor should review the contract alongside the lease or freehold purchase.</li>
-<li><strong>Model the numbers:</strong> Use a <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> to estimate the impact of freehold vs leasehold on your sale price. Factor in the tax relief difference over your expected holding period.</li>
+<li><strong>Model the numbers:</strong> Use a <a href="/calculators/practice-valuation">practice valuation calculator</a> to estimate the impact of freehold vs leasehold on your sale price. How the price splits between goodwill and the property matters as much as the headline figure, and <a href="/blog/goodwill-and-practice-sale/how-much-of-dental-practice-price-is-goodwill">the goodwill share of a dental practice price</a> sets out where that line usually falls. Factor in the tax relief difference over your expected holding period.</li>
 <li><strong>Speak to a dental-specialist accountant:</strong> The interaction between premises ownership, corporation tax, CGT, and NHS pension is complex. A general accountant may miss opportunities or create tax traps.</li>
 </ol>
 

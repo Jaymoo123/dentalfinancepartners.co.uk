@@ -77,7 +77,7 @@ imageCredit:
 
 <p>In Scotland, practices operate under the Statement of Dental Remuneration (SDR) item-of-service system, not UDAs. In Wales and Northern Ireland, different contract types apply. Your due diligence must be tailored to the relevant jurisdiction.</p>
 
-<p>Use our <a href="/calculators/nhs-uda-value-calculator">NHS UDA value calculator</a> to model the financial impact of different UDA rates and volumes.</p>
+<p>Use our <a href="/calculators/uda-value">NHS UDA value calculator</a> to model the financial impact of different UDA rates and volumes.</p>
 
 <h2>3. TUPE Obligations: Staff Contracts and Associate Arrangements</h2>
 
@@ -148,7 +148,7 @@ imageCredit:
 <li><strong>Section 162 incorporation relief:</strong> If you are transferring an existing unincorporated practice into a company, you may defer CGT on goodwill by taking shares instead of cash.</li>
 </ul>
 
-<p>Compare the tax efficiency of different structures using our <a href="/calculators/practice-profit-extraction-calculator">practice profit extraction calculator</a>.</p>
+<p>Compare the tax efficiency of different structures using our <a href="/calculators/principal-extraction">practice profit extraction calculator</a>.</p>
 
 <h2>9. Financing and Affordability: Can You Service the Debt?</h2>
 

@@ -105,7 +105,7 @@ const howWeWorkItems = [
   {
     n: "04",
     title: "VAT and mixed-supply advice",
-    body: "Dental practices often supply a mix of exempt and standard-rated services. Getting this wrong creates problems. We review your VAT position and advise accordingly, particularly relevant for practices with significant laboratory or facial aesthetics income.",
+    body: "Dental practices often supply a mix of exempt and standard-rated services. Getting this wrong creates problems. We review your VAT position and advise accordingly. This is particularly relevant for practices with significant laboratory or facial aesthetics income.",
   },
   {
     n: "05",

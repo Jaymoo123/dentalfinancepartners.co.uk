@@ -248,7 +248,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
           "The genuine commercial expenses an associate incurs are deductible in the self-assessment return. The ones that go missing are rarely exotic: mileage between practices, the annual indemnity premium, and a phone apportionment nobody ever documented.",
         ],
         bullets: [
-          "Indemnity insurance (Dental Protection, MDU, MDDUS), fully allowable trade expense",
+          "Indemnity insurance (Dental Protection, MDU, MDDUS): fully allowable trade expense",
           "GDC retention fee and any specialist register fees",
           "CPD courses, online and in-person, where genuinely relevant to your clinical practice",
           "Professional subscriptions to BDA, college memberships, specialty associations",

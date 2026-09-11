@@ -14,7 +14,7 @@ faqs:
 - question: How much of a practice price is typically goodwill?
   answer: Goodwill typically represents 60-80% of total practice purchase price. Tangible assets (chairs, lights, X-ray, compressors, sterilisation equipment, plus any inherited fixtures and fittings) make up the balance. For a typical mid-size mixed-NHS-private practice trading at, say, £750,000, you'd expect roughly £500,000-£600,000 of that allocated to goodwill and £150,000-£250,000 to tangible assets. The exact split matters for capital allowances on the buyer side and CGT treatment on the seller side, so the allocation in the sale documents is not just a formality.
 - question: What's the BADR rate in 2025/26 and 2026/27?
-  answer: Business Asset Disposal Relief is charged at 14% in 2025/26 (the year ending 5 April 2026) on qualifying gains up to a £1m lifetime limit. The rate rises to 18% from 6 April 2026 onwards. The lifetime limit is per individual, not per disposal, if you've previously claimed BADR on another business sale, the unused balance is what's available. The £1m limit has been fixed since 2020 and is not indexed for inflation.
+  answer: Business Asset Disposal Relief is charged at 14% in 2025/26 (the year ending 5 April 2026) on qualifying gains up to a £1m lifetime limit. The rate rises to 18% from 6 April 2026 onwards. The lifetime limit is per individual, not per disposal; if you've previously claimed BADR on another business sale, the unused balance is what's available. The £1m limit has been fixed since 2020 and is not indexed for inflation.
 - question: What is Section 162 incorporation relief and when does it apply?
   answer: Section 162 TCGA 1992 is the relief that defers CGT on goodwill when an unincorporated business (sole trader or partnership) is transferred to a limited company in exchange for shares. The deferred gain reduces the base cost of the shares received; when those shares are later sold, the deferred gain crystallises. The whole business must be transferred (not just part of it). Section 162 is sometimes used pre-sale to convert an unincorporated practice into a limited company before the share sale, where BADR may then apply on the share disposal. Whether it's the right route depends on the wider tax position, the timing horizon, and the relative rates at the point of disposal.
 - question: How does goodwill amortisation tax relief work?
@@ -45,7 +45,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li><strong>NHS-heavy single-handed practices in lower-demand regions</strong>: roughly 0.6-0.9× normalised EBITDA. Lower demand reflects buyer caution about NHS contract reform exposure and the difficulty of running a single-handed NHS practice without burnout.</li>
-<li><strong>Mixed NHS/private multi-surgery practices in normal-demand regions</strong>: roughly 0.9-1.2× normalised EBITDA. The sweet spot for many buyers: NHS underwrites baseline revenue, private offers margin upside.</li>
+<li><strong>Mixed NHS/private multi-surgery practices in normal-demand regions</strong>: roughly 0.9-1.2× normalised EBITDA. This is the sweet spot for many buyers, because NHS underwrites baseline revenue while private offers margin upside.</li>
 <li><strong>Private-focused practices in high-demand regions</strong>: roughly 1.1-1.4× normalised EBITDA, sometimes higher for prime locations (Central London, prime South Coast, prestige West Country). High-margin private income with low NHS contract risk commands a premium.</li>
 <li><strong>Corporate acquirer premium</strong>: corporate dental groups will sometimes pay above market multiples for practices that fit their consolidation strategy. The strategic value to the corporate (e.g., filling a geographic gap, adding a specific specialty capability) drives the premium.</li>
 </ul>
@@ -81,7 +81,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>1 April 2019 onwards</strong>: relief reinstated in modified form by Finance Act 2019. Tax relief at 6.5% per year (15-year amortisation period for tax purposes) for goodwill acquired with a qualifying business.</li>
 </ul>
 
-<p>For practice buyers in 2025/26, every acquisition you complete will have goodwill in the post-1-April-2019 regime, so the 6.5% relief is available. The relief is claimed in the corporation tax computation each year. If your acquisition accountant doesn't proactively claim it, you'll lose the relief: there's no automatic relief, you have to elect for it.</p>
+<p>For practice buyers in 2025/26, every acquisition you complete will have goodwill in the post-1-April-2019 regime, so the 6.5% relief is available. The relief is claimed in the corporation tax computation each year. If your acquisition accountant doesn't proactively claim it, you'll lose the relief: there's no automatic relief; you have to elect for it.</p>
 
 <p>For practice owners who acquired pre-1 April 2019, the goodwill in your accounts is either being amortised with no tax relief (the 8 July 2015 to 31 March 2019 window) or with relief at the pre-2015 rate. Both positions are locked in by the acquisition date; you can't retroactively access the post-April-2019 6.5% relief.</p>
 

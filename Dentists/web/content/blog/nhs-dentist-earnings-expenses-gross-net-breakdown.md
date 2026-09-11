@@ -182,7 +182,7 @@ faqs:
 
 <p>London is the clearest outlier. Gross earnings of £168,000 sit almost exactly on the national average, but expenses of £91,100 are the second-highest of any region, producing a net income of £76,800, the lowest of any English region. The expense ratio of 54.2 percent against 47.4 percent for North East and Yorkshire illustrates how sharply London premises costs, staffing costs and laboratory rates can erode the same headline gross. A London dentist nets £11,100 a year less than a counterpart in North East and Yorkshire on a very similar gross, simply because of the overhead structure. At the other end, the South West combines the lowest expense ratio in England at 44.7 percent with the second-highest net income at £88,700.</p>
 
-<p>This gap has direct implications for practice valuation, for whether a London practice justifies incorporation, and for the return on any capital invested in a London practice acquisition. Our guide on <a href="/blog/practice-finance/how-much-of-dental-practice-price-is-goodwill">how much of a dental practice price is goodwill</a> discusses how the profitability position feeds into what a buyer should pay.</p>
+<p>This gap has direct implications for practice valuation, for whether a London practice justifies incorporation, and for the return on any capital invested in a London practice acquisition. Our guide on <a href="/blog/goodwill-and-practice-sale/how-much-of-dental-practice-price-is-goodwill">how much of a dental practice price is goodwill</a> discusses how the profitability position feeds into what a buyer should pay.</p>
 
 <h2>The trend: gross, expenses and net from 2017/18</h2>
 

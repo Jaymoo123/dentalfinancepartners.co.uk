@@ -32,13 +32,13 @@ faqs:
 
 <p>Before diving into planning, you need a clear picture of your current financial position. This means understanding your practice's revenue streams, cost structure, and profitability patterns.</p>
 
-<p>Most UK dental practices operate with mixed revenue streams – NHS contracts, private treatments, and potentially specialist services. Each stream has different margins, payment terms, and growth potential. <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">Understanding your NHS-private mix</a> is crucial for effective planning.</p>
+<p>Most UK dental practices operate with mixed revenue streams: NHS contracts, private treatments, and potentially specialist services. Each stream has different margins, payment terms, and growth potential. <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">Understanding your NHS-private mix</a> is crucial for effective planning.</p>
 
 <p>Your practice likely faces predictable seasonal variations too. January often sees reduced private treatment uptake, while December might bring a surge as patients use remaining insurance benefits. Identifying these patterns helps inform your cash flow planning.</p>
 
 <h2>Building Your Annual Budget</h2>
 
-<p>A robust <strong>dental practice financial planning</strong> process starts with annual budgeting. This isn't about restricting spending – it's about making informed decisions and avoiding nasty surprises.</p>
+<p>A robust <strong>dental practice financial planning</strong> process starts with annual budgeting. This isn't about restricting spending; it's about making informed decisions and avoiding nasty surprises.</p>
 
 <h3>Revenue Forecasting</h3>
 
@@ -48,7 +48,7 @@ faqs:
 
 <h3>Cost Planning</h3>
 
-<p>Dental practices typically face both fixed and variable costs. Fixed costs include rent, insurance, and basic staffing. Variable costs fluctuate with activity levels – clinical supplies, lab fees, and associate payments.</p>
+<p>Dental practices typically face both fixed and variable costs. Fixed costs include rent, insurance, and basic staffing. Variable costs fluctuate with activity levels: clinical supplies, lab fees, and associate payments.</p>
 
 <ul>
 <li>Staff costs usually represent 35-45% of practice revenue</li>
@@ -65,7 +65,7 @@ faqs:
 
 <h3>13-Week Rolling Forecasts</h3>
 
-<p>Create a rolling 13-week cash flow forecast, updating it weekly. Include all expected receipts – NHS payments, private treatment fees, and any other income. Factor in all outgoings including payroll, supplier payments, loan repayments, and tax obligations.</p>
+<p>Create a rolling 13-week cash flow forecast, updating it weekly. Include all expected receipts: NHS payments, private treatment fees, and any other income. Factor in all outgoings including payroll, supplier payments, loan repayments, and tax obligations.</p>
 
 <p>This timeframe captures three full months plus one week, helping you spot potential pinch points before they become critical. If your forecast shows a £15k shortfall in week 8, you have time to arrange temporary overdraft facilities or accelerate some private treatment plans.</p>
 

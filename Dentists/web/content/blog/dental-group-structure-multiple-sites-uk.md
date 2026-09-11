@@ -118,7 +118,7 @@ faqs:
 
 <p>Professional indemnity insurance typically needs to cover all entities in the group. Consider whether to arrange this centrally or at individual practice level. Central arrangements can be more cost-effective but ensure coverage is adequate for all activities.</p>
 
-<p>Separate practice companies limit cross-contamination of regulatory issues, employment disputes, and commercial problems. However, they don't eliminate all risks – personal guarantees often link principals to multiple entities.</p>
+<p>Separate practice companies limit cross-contamination of regulatory issues, employment disputes, and commercial problems. However, they don't eliminate all risks: personal guarantees often link principals to multiple entities.</p>
 
 <h2>Exit Planning Considerations</h2>
 

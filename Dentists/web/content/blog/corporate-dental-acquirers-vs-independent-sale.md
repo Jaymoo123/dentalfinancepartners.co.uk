@@ -129,7 +129,7 @@ faqs:
 
 <p>Get an independent professional valuation before approaching any buyer, and use it as your benchmark rather than a buyer's opening number. Our <a href="/services/practice-valuation">practice valuation service</a> uses maintainable-earnings multiples and market comparables specific to your region and practice mix.</p>
 
-<p>Review your NHS contract. Check the per-UDA value, the annual target and the clawback position, and use our <a href="/calculators/nhs-uda-value-calculator">NHS UDA value calculator</a> to understand the contract's financial profile. A contract with a history of clawback weakens any sale.</p>
+<p>Review your NHS contract. Check the per-UDA value, the annual target and the clawback position, and use our <a href="/calculators/uda-value">NHS UDA value calculator</a> to understand the contract's financial profile. A contract with a history of clawback weakens any sale.</p>
 
 <p>Pin down your tax position early. BADR's two-year qualifying period and the earnings normalisation behind a credible valuation both need roughly 24 months of lead time, so the planning starts well before you go to market. Model the deal structure, not just the price: a higher headline offer loaded with an earn-out taxed at the main CGT rate can net less than a lower all-cash offer that sits inside BADR. Speak to a dental-specialist accountant before signing heads of terms.</p>
 

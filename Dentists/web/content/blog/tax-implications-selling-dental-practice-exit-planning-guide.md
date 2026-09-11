@@ -104,7 +104,7 @@ imageCredit:
 <ul>
 <li>Review your business structure (sole trader, partnership, or limited company) and consider whether incorporation would be beneficial before sale.</li>
 <li>Ensure you meet the BADR qualifying conditions, including the two-year ownership and 5% shareholding requirement if applicable.</li>
-<li>Get a professional practice valuation from a specialist dental valuer. Use our <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> for an initial estimate.</li>
+<li>Get a professional practice valuation from a specialist dental valuer. Use our <a href="/calculators/practice-valuation">practice valuation calculator</a> for an initial estimate.</li>
 <li>Consult an NHS pension specialist to understand the impact of the sale on your benefits.</li>
 <li>Review your Will and estate planning to ensure the sale proceeds are distributed tax-efficiently.</li>
 <li>Work with a dental-specialist accountant who understands the nuances of practice sales. Our <a href="/services/practice-accounting">practice accounting services</a> are designed for principals.</li>

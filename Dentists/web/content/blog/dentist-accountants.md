@@ -59,7 +59,7 @@ imageCredit:
 
 <p>For associates working under NHS contracts, the accountant needs to understand how UDA income interacts with self-employment status. HMRC tests for self-employment using control, substitution, mutuality of obligation, financial risk, and integration. The BDA's model associate agreement does not guarantee self-employed status. Each case rests on actual working practice. A specialist accountant knows this and will structure your engagement accordingly.</p>
 
-<p>You can use our <a href="/calculators/nhs-uda-value-calculator">NHS UDA value calculator</a> to check what your effective UDA rate is and compare it against regional benchmarks.</p>
+<p>You can use our <a href="/calculators/uda-value">NHS UDA value calculator</a> to check what your effective UDA rate is and compare it against regional benchmarks.</p>
 
 <h2>VAT Exemptions and Borderline Services</h2>
 

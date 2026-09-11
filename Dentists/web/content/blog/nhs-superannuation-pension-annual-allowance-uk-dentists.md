@@ -58,7 +58,7 @@ faqs:
 
 <p>If you exceed your annual allowance, you can potentially use carry forward to offset the charge. You can carry forward unused annual allowance from the previous three tax years, but only if you were a member of a pension scheme in those years.</p>
 
-<p>The carry forward rules work on a 'use it or lose it' basis – you must use the oldest unused allowance first. This makes planning crucial, as you can't bank unused allowance indefinitely.</p>
+<p>The carry forward rules work on a 'use it or lose it' basis: you must use the oldest unused allowance first. This makes planning crucial, as you can't bank unused allowance indefinitely.</p>
 
 <p>Many dentists find that strategic planning around carry forward can help manage pension contributions more effectively, particularly when planning career transitions or changes in working patterns.</p>
 
@@ -81,7 +81,7 @@ faqs:
 
 <p>However, you shouldn't wait for these statements if you think you may have an annual allowance charge. The responsibility for calculating and reporting any charge lies with you, and this must be included in your <a href="/blog/associate-tax/associate-dentist-tax-guide-uk">Self Assessment return</a>.</p>
 
-<p>The deadline for paying any annual allowance charge is 31 January following the end of the relevant tax year – the same deadline as your income tax.</p>
+<p>The deadline for paying any annual allowance charge is 31 January following the end of the relevant tax year, the same deadline as your income tax.</p>
 
 <h2>When to Seek Professional Advice</h2>
 
@@ -96,7 +96,7 @@ faqs:
 
 <p>The interaction between pension contributions, income tax, and practice finances means that pension planning shouldn't be considered in isolation from your overall financial strategy.</p>
 
-<p>Getting this wrong can be expensive – annual allowance charges of £20,000+ are not uncommon for high-earning dentists who haven't planned properly. Professional advice typically pays for itself through better planning and avoiding unnecessary charges.</p>
+<p>Getting this wrong can be expensive: annual allowance charges of £20,000+ are not uncommon for high-earning dentists who haven't planned properly. Professional advice typically pays for itself through better planning and avoiding unnecessary charges.</p>
 
 <h2>Annual Allowance Tax Charges</h2>
 <p>When you exceed your pension annual allowance, you pay tax on the excess at your marginal rate. For a 40% taxpayer, breaching the allowance by £10,000 means a £4,000 tax charge.</p>

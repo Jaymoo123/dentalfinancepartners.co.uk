@@ -128,7 +128,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Not getting a professional valuation:</strong> DIY valuations using online calculators or rules of thumb are not defensible in a tax enquiry or to a lender.</li>
 </ul>
 
-<p>If you are considering buying or selling a practice, start with our <a href="/calculators/practice-valuation-calculator">practice valuation calculator</a> for a rough benchmark, then engage a specialist valuer for the formal work.</p>
+<p>If you are considering buying or selling a practice, start with our <a href="/calculators/practice-valuation">practice valuation calculator</a> for a rough benchmark, then engage a specialist valuer for the formal work.</p>
 
 <h2>How Lenders View Goodwill</h2>
 

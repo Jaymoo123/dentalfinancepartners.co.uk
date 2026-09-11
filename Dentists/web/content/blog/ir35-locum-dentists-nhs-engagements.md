@@ -107,4 +107,4 @@ faqs:
 
 <p>If you are a locum dentist working with NHS contractors, we recommend speaking to a dental-specialist accountant who understands the nuances of NHS engagements. They can help you structure your affairs to minimise risk and ensure compliance.</p>
 
-<p>For more guidance, see our <a href="/for-locum-dentists">dedicated page for locum dentists</a> and our <a href="/services/locum-dentist-tax">locum dentist tax services</a>. You can also use our <a href="/calculators/locum-cost-benefit-calculator">locum cost-benefit calculator</a> to compare the financial impact of inside vs outside IR35 engagements.</p>
+<p>For more guidance, see our <a href="/for-locum-dentists">dedicated page for locum dentists</a> and our <a href="/services/locum-dentist-tax">locum dentist tax services</a>. You can also use our <a href="/calculators/locum-structure">locum cost-benefit calculator</a> to compare the financial impact of inside vs outside IR35 engagements.</p>

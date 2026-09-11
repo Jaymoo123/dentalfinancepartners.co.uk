@@ -59,7 +59,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>London has specific challenges: high property costs, competitive markets, and unique opportunities. A dental accountant based in London understands local practice values, typical associate rates, and how London-specific factors affect your tax position.</p>
 
-<p>They should also understand the practical aspects of working in London – from congestion charge implications to the best ways to structure practice ownership in high-value areas.</p>
+<p>They should also understand the practical aspects of working in London, from congestion charge implications to the best ways to structure practice ownership in high-value areas.</p>
 
 <h2>Key Questions to Ask Potential Accountants</h2>
 
@@ -102,13 +102,13 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>What a London practice pays is driven by the shape of the work rather than by the postcode alone: whether there is a limited company and payroll, whether the practice is VAT-registered with standard-rated cosmetic or product income and therefore a partial exemption calculation, how many NHS contracts and performers sit behind the year-end reconciliation, and whether the annual NHS Pension certificate is included or billed separately.</p>
 
-<p>Don't choose based on price alone. A cheaper accountant who misses tax planning opportunities or makes compliance errors will cost you more in the long run. Focus on value – what you get for your investment.</p>
+<p>Don't choose based on price alone. A cheaper accountant who misses tax planning opportunities or makes compliance errors will cost you more in the long run. Focus on value: what you get for your investment.</p>
 
 <p>Ask for the fee structure up front and, more usefully, for the scope it buys. The question that separates a firm worth instructing from one that is not is what happens when something changes mid-year: an incorporation, a second site, a first VAT registration, an HMRC enquiry. A firm that can tell you in advance how each of those is handled is easy to budget for. One that cannot will find the answer later, at your expense.</p>
 
 <h2>The Importance of Proactive Advice</h2>
 
-<p>The best dental accountants don't just complete your accounts – they provide ongoing strategic advice. They should contact you before year-end to discuss tax planning opportunities and help you make informed decisions about practice development.</p>
+<p>The best dental accountants don't just complete your accounts; they provide ongoing strategic advice. They should contact you before year-end to discuss tax planning opportunities and help you make informed decisions about practice development.</p>
 
 <p>This might include advice on timing equipment purchases, structuring practice sales, or optimising your income mix between employed and self-employed work.</p>
 

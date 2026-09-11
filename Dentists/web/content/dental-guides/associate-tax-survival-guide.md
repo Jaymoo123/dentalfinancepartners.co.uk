@@ -51,7 +51,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <h3>Financial risk</h3>
 
-<p>Do you carry genuine financial risk? A self-employed contractor invests in their own tools (loupes, instruments, CPD), bears the risk of bad debt, pays their own indemnity, can lose money on a bad week, and finances their own income gaps. An employee bears none of those risks. Most dental associates do carry real financial risk: they pay for their own indemnity, they buy their own loupes and equipment, they cover their own CPD, and this is one of the stronger pillars for self-employed status.</p>
+<p>Do you carry genuine financial risk? A self-employed contractor invests in their own tools (loupes, instruments, CPD), bears the risk of bad debt, pays their own indemnity, can lose money on a bad week, and finances their own income gaps. An employee bears none of those risks. Most dental associates do carry real financial risk: they pay for their own indemnity, they buy their own loupes and equipment, they cover their own CPD. This is one of the stronger pillars for self-employed status.</p>
 
 <h3>Integration</h3>
 

@@ -132,8 +132,6 @@ export function ResultGateModal({
           successText="Thanks, that is with a specialist dental accountant. Your result is below."
           className="mt-2"
           messagePlaceholder="The more detail the better. Tell us about your practice situation, rough figures, and what you are trying to work out. A couple of sentences is ideal."
-          messageMinLength={40}
-          messageMinWords={8}
           onSuccess={onReveal}
         />
 

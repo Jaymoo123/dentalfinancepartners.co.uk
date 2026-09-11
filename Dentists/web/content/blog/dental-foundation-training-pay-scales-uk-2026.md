@@ -79,7 +79,7 @@ faqs:
 <li>Monthly net pay: £28,457 / 12 = <strong>£2,371</strong></li>
 </ul>
 
-<p>This is a rough estimate. Your actual deductions will depend on your exact salary, pension contribution rate, and student loan plan. Use our <a href="/calculators/associate-take-home-calculator">associate take-home calculator</a> to run your own figures (it works for salaried roles too).</p>
+<p>This is a rough estimate. Your actual deductions will depend on your exact salary, pension contribution rate, and student loan plan. Use our <a href="/calculators/associate-take-home">associate take-home calculator</a> to run your own figures (it works for salaried roles too).</p>
 
 <h2>Can Foundation Dentists Earn Extra Income?</h2>
 

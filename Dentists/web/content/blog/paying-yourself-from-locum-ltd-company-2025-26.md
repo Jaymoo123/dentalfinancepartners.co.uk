@@ -103,7 +103,7 @@ faqs:
 <ul>
 <li>Step 1: Determine your IR35 status for each engagement. Separate inside-IR35 income from outside-IR35 income in your accounting records.</li>
 <li>Step 2: Set your salary at £12,570 (or slightly higher if you need NHS Pension relevant earnings). Process this through payroll monthly or quarterly.</li>
-<li>Step 3: Pay corporation tax on your profits. Use the <a href="/calculators/practice-profit-extraction-calculator">practice profit extraction calculator</a> to model your numbers.</li>
+<li>Step 3: Pay corporation tax on your profits. Use the <a href="/calculators/principal-extraction">practice profit extraction calculator</a> to model your numbers.</li>
 <li>Step 4: Declare and pay dividends from post-tax profits, staying within your available retained earnings. Issue dividend vouchers and keep board minutes.</li>
 <li>Step 5: Review your total income. If your combined salary and dividends exceed £100,000, you lose personal allowance at £1 for every £2 over. This creates a 60% marginal tax trap on extraction between £100,000 and £125,140.</li>
 <li>Step 6: Consider pension contributions from the company. Employer pension contributions are an allowable expense (no NI, no benefit in kind), and they reduce corporation tax. This can be more efficient than extracting profit as salary or dividend and then contributing personally.</li>
@@ -120,6 +120,6 @@ faqs:
 
 <p>This article sets out the general principles, but your specific situation will differ. A locum dentist doing three days a week in NHS practices with a mix of inside and outside IR35 contracts faces different decisions from a locum doing exclusively private work through a single agency.</p>
 
-<p>If you are unsure about your IR35 status, your NHS Pension position, or the optimal extraction mix, speak to a dental-specialist accountant. The <a href="/services/locum-dentist-tax">locum dentist tax services</a> page on this site explains how we help locum dentists structure their limited company affairs. You can also use the <a href="/calculators/locum-cost-benefit-calculator">locum cost-benefit calculator</a> to compare different extraction scenarios before making a decision.</p>
+<p>If you are unsure about your IR35 status, your NHS Pension position, or the optimal extraction mix, speak to a dental-specialist accountant. The <a href="/services/locum-dentist-tax">locum dentist tax services</a> page on this site explains how we help locum dentists structure their limited company affairs. You can also use the <a href="/calculators/locum-structure">locum cost-benefit calculator</a> to compare different extraction scenarios before making a decision.</p>
 
 <p>The key takeaway is this: for a locum dentist operating outside IR35, a salary of £12,570 plus dividends from post-tax profits is almost always the most tax-efficient extraction strategy in 2026/27. But the numbers shift if IR35 applies, if NHS Pension contributions matter, or if your total income pushes you into the personal allowance taper. Model your own figures, or let a specialist accountant do it for you.</p>

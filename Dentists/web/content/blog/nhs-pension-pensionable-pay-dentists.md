@@ -170,6 +170,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Speak to a dental-specialist accountant.</strong> Pensionable pay interacts with tax, incorporation, and practice sale planning. A generalist accountant may miss the nuances.</li>
 </ol>
 
-<p>For more detail on how the NHS Pension Scheme works for dentists, see our <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme Essentials for Dentists guide</a>. If you are an associate trying to understand your take-home pay after pension contributions, use our <a href="/calculators/associate-take-home-calculator">Associate Take-Home Calculator</a>.</p>
+<p>For more detail on how the NHS Pension Scheme works for dentists, see our <a href="/dental-guides/nhs-pension-scheme-essentials-for-dentists">NHS Pension Scheme Essentials for Dentists guide</a>. If you are an associate trying to understand your take-home pay after pension contributions, use our <a href="/calculators/associate-take-home">Associate Take-Home Calculator</a>.</p>
 
 <p>For principals, understanding pensionable pay is part of broader <a href="/services/practice-accounting">practice accounting</a>. And if you are a locum dentist, our <a href="/services/locum-dentist-tax">locum dentist tax services</a> can help you structure your pension contributions correctly.</p>

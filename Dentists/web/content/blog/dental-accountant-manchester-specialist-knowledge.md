@@ -57,7 +57,7 @@ faqs:
 
 <p>If you run both NHS and private services, your accounts become more complex. A dental accountant Manchester should understand how to separate these income streams properly and optimise your <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS-private mix for maximum profitability</a>.</p>
 
-<p>This isn't just about compliance – it's about strategy. The right accountant helps you understand which services generate the best margins and how to structure your practice accordingly.</p>
+<p>This isn't just about compliance; it's about strategy. The right accountant helps you understand which services generate the best margins and how to structure your practice accordingly.</p>
 
 <h2>Local Knowledge vs Specialist Expertise</h2>
 
@@ -77,7 +77,7 @@ faqs:
 
 <h3>Management Accounts and Cash Flow</h3>
 
-<p>Regular management accounts help you track performance against budget. A good <strong>specialist accountant</strong> produces monthly reports that highlight key performance indicators specific to dental practices – not generic business metrics.</p>
+<p>Regular management accounts help you track performance against budget. A good <strong>specialist accountant</strong> produces monthly reports that highlight key performance indicators specific to dental practices, not generic business metrics.</p>
 
 <p>Cash flow forecasting becomes critical when managing NHS payments, which often arrive months after treatment delivery. Your accountant should help you plan for these timing differences.</p>
 
@@ -89,7 +89,7 @@ faqs:
 
 <h3>Practice Acquisition Support</h3>
 
-<p>If you're buying a practice in Manchester, your accountant should understand <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">dental-specific due diligence requirements</a>. They need to spot red flags that generic accountants might miss – like NHS contract risks or hidden compliance issues.</p>
+<p>If you're buying a practice in Manchester, your accountant should understand <a href="/blog/buying-a-practice/practice-acquisition-financial-due-diligence">dental-specific due diligence requirements</a>. They need to spot red flags that generic accountants might miss, like NHS contract risks or hidden compliance issues.</p>
 
 <p>The Manchester dental market is competitive for acquisitions. Having an accountant who understands practice valuations and can move quickly on opportunities gives you a significant advantage.</p>
 
