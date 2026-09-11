@@ -79,7 +79,7 @@ export function HubArticleList({
           <article
             key={post.slug}
             hidden={Math.floor(i / postsPerPage) + 1 !== currentPage}
-            className="rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:border-primary-600 hover:shadow-md"
+            className="rounded-xl ring-1 ring-slate-200/70 bg-white shadow-sm transition-all hover:ring-primary-600 hover:shadow-md"
           >
             <Link
               href={`/blog/${post.categorySlug ?? categorySlug}/${post.slug}`}

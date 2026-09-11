@@ -107,3 +107,31 @@ export const BLOG_CATEGORY_COPY: Record<string, BlogCategoryCopy> = {
     button: "Request a tax review",
   },
 };
+
+/**
+ * The three proof points on every closing lead panel across the blog subsystem.
+ * Lifted VERBATIM out of `src/app/blog/page.tsx` so `/blog`, the ten derived
+ * hubs and the seven hand-built hubs read one source and cannot drift, and so
+ * the hub work packages do not contend for the same file. Not one character of
+ * this copy changed in the move.
+ *
+ * The third is Property's own house line
+ * (`packages/web-shared/design/blog/BlogCategoryHub.tsx:22`); the owner
+ * confirmed 2026-09-11 that Property is the reference for this site.
+ */
+export const LEAD_PROOF_POINTS = [
+  {
+    title: "SRA Accounts Rules 2019",
+    detail:
+      "Client account, five-weekly reconciliations under Rule 8.3, and the Rule 12 accountant's report",
+  },
+  {
+    title: "Partnership, LLP and incorporated",
+    detail:
+      "Profit shares, the salaried member rules and the tax that follows each structure",
+  },
+  {
+    title: "Same accountant every time",
+    detail: "You are not passed around a team",
+  },
+];

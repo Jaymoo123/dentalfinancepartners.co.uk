@@ -391,6 +391,22 @@ Before starting a site, capture and put in the prompts:
     reasoned about as "19 sites so the default protects Property" is reasoning about
     the wrong set, and the first Solicitors fix made exactly that error: it wired the
     prop on one consumer and left the other still broken.
+    - `BlogCategoryHub.heading` and `HubSection.bullets` (added 2026-09-11, Solicitors
+      phase 3). Both default to undefined, so Property and generalist render
+      byte-identically. `heading` overrides the h1 ONLY, leaving `categoryName` to drive
+      the breadcrumb, the essentials eyebrow and the library heading: a ported site whose
+      hub h1 reads "Complete VAT Guide for UK Law Firms" over a "VAT and Compliance"
+      breadcrumb can adopt the component without retitling either, which would be a copy
+      and SEO change. `bullets` renders a `list-disc` list after a section's paragraphs,
+      because six of Solicitors' seven hand-built hubs carry list blocks inside their
+      published prose and flattening them into paragraphs would restructure copy the
+      reader has seen and drop the list semantics a screen reader announces.
+    - `BlogSidebarCta.buttonClassName` (added phase 2) keeps the `primary-600` recipe by
+      default and lets a site whose button ground is its brand hex pass its own.
+    - The kit blog CARD RECIPE was corrected to the contract in phases 2 and 3
+      (`BlogListWithSearch`, `HubArticleList`, `BlogCategoryHub`): `ring-1 ring-slate-200/70`,
+      not `border border-slate-200`. Consumer set derived by grep, NOT assumed: generalist
+      and Solicitors only. Property keeps local copies and is unaffected.
     Do not add rival props for either; these are the supported hooks.
 
 ---

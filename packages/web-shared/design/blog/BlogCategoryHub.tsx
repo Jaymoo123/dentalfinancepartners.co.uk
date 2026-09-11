@@ -13,7 +13,18 @@ import {
   siteContainerLg,
 } from "../layout-utils";
 
-export type HubSection = { heading: string; paragraphs: string[] };
+export type HubSection = {
+  heading: string;
+  paragraphs: string[];
+  /**
+   * Optional bulleted points rendered after the paragraphs. Added for ported
+   * sites whose existing hub prose already contains list blocks: flattening a
+   * published list into paragraphs would restructure copy the reader has seen
+   * and would drop the list semantics a screen reader announces. Default
+   * undefined, so Property and generalist render byte-identically.
+   */
+  bullets?: string[];
+};
 export type HubCta = { heading: string; body: string; submitLabel: string };
 
 const PROPERTY_PROOF_POINTS = [
@@ -51,8 +62,19 @@ export function BlogCategoryHub({
   ctaBackdrop,
   proofPoints = PROPERTY_PROOF_POINTS,
   libraryNote,
+  heading,
 }: {
   categoryName: string;
+  /**
+   * The visible h1, when it is not the category name. Defaults to
+   * `categoryName`, which is what Property and generalist rely on.
+   * `categoryName` still drives the breadcrumb, the essentials eyebrow and the
+   * library heading, so a site whose hub h1 reads "Complete VAT Guide for UK
+   * Law Firms" over a "VAT and Compliance" breadcrumb can adopt this component
+   * without rewriting either. Retitling an h1 or a breadcrumb would be a copy
+   * and SEO change, which the owner has ruled out.
+   */
+  heading?: string;
   categorySlug: string;
   /**
    * `CollectionPage.name` in the JSON-LD. Defaults to `categoryName`, but seven
@@ -163,7 +185,7 @@ export function BlogCategoryHub({
               ]}
             />
             <h1 className="mt-6 text-4xl font-bold text-slate-900 sm:text-5xl lg:text-6xl">
-              {categoryName}
+              {heading ?? categoryName}
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
               {intro}
@@ -211,6 +233,13 @@ export function BlogCategoryHub({
                         {p}
                       </p>
                     ))}
+                    {s.bullets && s.bullets.length > 0 ? (
+                      <ul className="list-disc space-y-2 pl-5 text-base leading-7 text-slate-600">
+                        {s.bullets.map((b, i) => (
+                          <li key={i}>{b}</li>
+                        ))}
+                      </ul>
+                    ) : null}
                   </div>
                 </div>
               ))}
@@ -240,7 +269,7 @@ export function BlogCategoryHub({
             // changing either side of this.
             <HubArticleList posts={posts} categorySlug={categorySlug} />
           ) : (
-            <p className="rounded-xl border border-slate-200 bg-white p-8 text-center text-slate-600">
+            <p className="rounded-xl ring-1 ring-slate-200/70 bg-white p-8 text-center text-slate-600">
               No articles in this topic yet. Check back shortly.
             </p>
           )}
@@ -271,7 +300,7 @@ export function BlogCategoryHub({
                 href={`/blog/${topic.slug}`}
                 data-cta={`blog_hub_topic_${topic.slug}`}
                 data-cta-placement="other_topics"
-                className={`inline-flex min-h-12 items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-900 shadow-sm transition-all hover:border-primary-600 hover:text-primary-700 hover:shadow-md sm:text-base ${focusRing}`}
+                className={`inline-flex min-h-12 items-center gap-2 rounded-xl ring-1 ring-slate-200/70 bg-white px-5 py-3 text-sm font-bold text-slate-900 shadow-sm transition-all hover:ring-primary-600 hover:text-primary-700 hover:shadow-md sm:text-base ${focusRing}`}
               >
                 {topic.name}
                 {/* slate-500, not their slate-400: on white the count read at

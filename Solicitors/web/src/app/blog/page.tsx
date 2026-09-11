@@ -16,6 +16,7 @@ import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/Le
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { LEAD_PROOF_POINTS } from "@/lib/blog-category-copy";
 import { genericTools, toolPath } from "@/lib/tools/registry";
 
 export const metadata: Metadata = {
@@ -144,27 +145,7 @@ export default function BlogIndexPage() {
         <LeadCTAPanel
           title="Rather have someone read your firm's numbers than read the archive?"
           description="A free consultation with an accountant who works with SRA regulated firms every day. Tell us how the practice is structured and what is on your mind, and we will come back with clear next steps."
-          proofPoints={[
-            {
-              title: "SRA Accounts Rules 2019",
-              detail:
-                "Client account, five-weekly reconciliations under Rule 8.3, and the Rule 12 accountant's report",
-            },
-            {
-              title: "Partnership, LLP and incorporated",
-              detail:
-                "Profit shares, the salaried member rules and the tax that follows each structure",
-            },
-            {
-              // Property's own house line, verbatim in substance:
-              // packages/web-shared/design/blog/BlogCategoryHub.tsx:22 reads
-              // "Same accountant every time / You are not passed around a team".
-              // Owner confirmed 2026-09-11 that Property is the reference, so
-              // this site carries the same claim rather than a weaker invention.
-              title: "Same accountant every time",
-              detail: "You are not passed around a team",
-            },
-          ]}
+          proofPoints={LEAD_PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} />}
           backdrop={<SolicitorsBackdrop tone="navy" />}
           footnote="No obligation and no hard sell. If your position is already right, we will say so."
