@@ -16,7 +16,7 @@ keyTakeaways:
   - "A tronc run by an independent troncmaster is a compliant distribution route and removes employer and employee NIC on those payments."
 faqs:
   - question: "When did the Tips Act 2023 come into force?"
-    answer: "The Employment (Allocation of Tips) Act 2023 (2023 c. 13) came into force on 1 October 2024. It is not forthcoming legislation; it applies now."
+    answer: "The main duties in the Employment (Allocation of Tips) Act 2023 (2023 c. 13), sections 1 to 8 and 10 to 12, came into force on 1 October 2024 by SI 2024/829 regulation 3. Section 9 commenced earlier, on 31 July 2023. It is not forthcoming legislation; the main duties apply now."
   - question: "Do employers have to give all tips to staff?"
     answer: "Yes. Since 1 October 2024, employers must pass on 100% of qualifying tips to workers without any deduction. See the statutory Code of Practice at gov.uk."
   - question: "Can an employer take a deduction from tips for card-processing fees?"
@@ -46,7 +46,8 @@ faqs:
 
 <p>The Act captures tips, gratuities and service charges that are received or controlled by the employer, whether paid by cash or card. A tip handed directly by a customer to an individual member of staff and kept by that person (never pooled or handled by the employer) falls outside the employer duties, though it remains <a href="https://www.gov.uk/tips-at-work">the individual worker's own tax responsibility</a>. In practice, almost all card-payment tips and pooled cash collections pass through employer control and are therefore qualifying tips subject to the Act.</p>
 
-<p>The Act has applied since <strong>1 October 2024</strong>. There is no further phase-in or grace period.</p>
+<p>The main duties have applied since <strong>1 October 2024</strong> (sections 1 to 8 and 10 to 12, commenced by SI 2024/829 regulation 3; section 9 commenced on 31 July 2023). There is no further phase-in or grace period.</p>
+<p>The Act governs how tips must be <em>allocated</em>. It does not govern how they are <em>taxed</em>. For the National Insurance treatment, and the conditions a tronc must meet for the NIC disregard to apply, see <a href="/blog/tips-and-tronc/tronc-scheme">tronc schemes and the NIC exemption</a>.</p>
 
 <h2>The four employer duties</h2>
 

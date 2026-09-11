@@ -161,7 +161,7 @@ howToSteps:
 
 <p>SBRR is unaffected by this change. If your rateable value is within the SBRR band, you still claim SBRR from your council in the normal way. The end of RHL relief does not affect your entitlement to SBRR.</p>
 
-<p>If you were previously benefiting from RHL relief and your rateable value is above £15,000, the lower 2026-27 multipliers for RHL properties in England now apply to your bill instead. For the detail on multipliers and how they work for your type of premises, see our <a href="/services/business-rates-relief">business rates review service</a> page.</p>
+<p>If you were previously benefiting from RHL relief and your rateable value is above £15,000, the lower 2026-27 multipliers for RHL properties in England now apply to your bill instead. For what happened to RHL relief, the five 2026-27 multipliers and which one applies to your premises, see our full guide to <a href="/blog/business-rates/retail-hospitality-and-leisure-relief-scheme">the retail, hospitality and leisure relief scheme and what replaced it</a>. For the detail on how multipliers work for your type of premises, see our <a href="/services/business-rates-relief">business rates review service</a> page.</p>
 
 <h2>What happens if your rateable value changes</h2>
 
