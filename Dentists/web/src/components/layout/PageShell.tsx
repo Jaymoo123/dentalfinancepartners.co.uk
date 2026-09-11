@@ -9,6 +9,7 @@ import { DentalMark } from "@/components/brand/DentalMark";
 import { DentistsBackdrop } from "@/components/layout/DentistsBackdrop";
 import { SisterSites } from "@/components/layout/SisterSites";
 import { siteConfig } from "@/config/site";
+import { StickyCTA } from "@/components/ui/StickyCTA";
 import { niche } from "@/config/niche-loader";
 // ExitIntentModal unmounted: SpecialistWidget (mounted in layout.tsx) subsumes
 // exit-intent and handles the stand-down. Component file kept on disk for revert.
@@ -50,7 +51,13 @@ const wordmark = {
  * deliberately NOT used: it is the unfiltered, group-less list, and taking it
  * would drop the Calculators groups and 13 links.
  *
- * StickyCTA is deliberately NOT mounted here: it moves to the homepage only
+ * StickyCTA IS mounted here, site-wide, exactly as the pre-port shell did
+ * (18b4f25f PageShell.tsx:26). Manager decision 2026-09-11: this site is NOT
+ * Property. 83% of sessions land on blog articles and sticky_cta is one of only
+ * seven data-cta ids that has ever fired here, so narrowing it to the homepage
+ * would remove a live capture surface from ~281 routes. That is a cadence change
+ * on a capture surface and is an OWNER decision, not a port decision.
+ * Superseded note: the phase 2 plan recommended homepage-only
  * (app/page.tsx), matching Property and generalist. The kit shell mounts none.
  */
 export function PageShell({ children, nav }: { children: ReactNode; nav?: NavItem[] }) {
@@ -116,6 +123,7 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
       }}
     >
       {children}
+      <StickyCTA />
     </KitPageShell>
   );
 }

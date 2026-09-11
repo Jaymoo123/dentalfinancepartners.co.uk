@@ -440,3 +440,38 @@ main {
   font-size: 0.875em;
   font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 }
+
+
+/* ---------------------------------------------------------------------------
+   FOOTER GROUND OVERRIDES (phase 2 review, blocker + high)
+
+   The kit footer was authored against Property's slate-900. Dentists paints it
+   NAVY via DentistsBackdrop, and two kit steps stop clearing their floors on
+   that darker, bluer ground. Measured, self-tested against slate-500/white=4.76:
+
+     focus ring  primary-600 #2d4a6f  ->  1.90 on --navy, 1.53 on --navy-soft
+     headings    primary-400 #5c80ab  ->  4.19 on --navy, 3.39 on --navy-soft
+
+   The ring is the worse of the two: 27 footer links per page, on all 309
+   routes, with a keyboard indicator that is effectively invisible. This is the
+   phase 1 lesson repeating in the footer, so the rule is the same one: measure
+   against the SECTION ground, never against the component's own default.
+
+   Fixed here and NOT in the kit. The kit is shared with Property and both other
+   ported sites, and the standing rule is never to change Property, even
+   indirectly (playbook T12). These rules are scoped to <footer> so they cannot
+   leak into the header, which sits on white and where primary-600 measures 9.05
+   and is correct.
+
+   DELETE THESE when the kit takes a ring/heading prop and Dentists passes it.
+   --------------------------------------------------------------------------- */
+footer .focus-visible\:outline-primary-600:focus-visible {
+  /* primary-400: 4.19 on --navy, 3.39 on --navy-soft, both past the 3:1 graphics floor */
+  outline-color: var(--color-primary-400);
+}
+
+footer .text-primary-400 {
+  /* primary-300: 6.82 on --navy, 5.51 on --navy-soft, both past the 4.5:1 text floor.
+     These column headings are text-xs/sm bold, which is NOT large text, so 4.5 applies. */
+  color: var(--color-primary-300);
+}
