@@ -84,6 +84,23 @@ open fires `personalization_shown` with `surface='deep_scroll_modal'`. Nothing n
 RULE: before proposing instrumentation to fix an absence, find the event the component actually
 emits and query that. Caught by a sibling slice agent reading the code path, not by the data.
 
+**2026-09-11, Trade. A CTA COUNT cannot detect trap 22, so there is now an instrument that records
+the triple.** `docs/_engines/instruments/cta_snapshot.mjs`, new this session. Trap 22 flips
+`data-cta-goal` and `data-cta-placement` for the same button and the same destination, so the count
+is identical before and after and `sweep_baseline.json`'s CTA count proves nothing. What splits the
+live funnel at cutover, and reads as a drop that never happened, is the triple. The instrument
+records `(id, placement, goal, href)` per route, asserts the served page title before measuring
+anything (section 5), and also picks up `data-cta-id`, the misspelling that exists in the wild.
+On Trade: 5 distinct triples over 246 routes and 620 tags
+(`docs/construction-cis/_port/cta_baseline.json`, `distinct_triples`), and the identical set
+re-derived after the chrome rewrite, which is how trap 22 was cleared by measurement rather than by
+assumption.
+RULE: snapshot the triples BEFORE the first chrome commit; diff after every phase touching chrome or
+CTAs. Also worth recording: the source declares 16 `data-cta` ids
+(`grep -rohE 'data-cta="[a-z0-9_]+"' <site>/web/src | sort -u | wc -l`) and only 5 render, because
+several sit in config branches this site does not use. A guard pinning only the rendered set leaves
+11 unprotected.
+
 ---
 
 ## 2. The shared kit (`packages/web-shared/design/`)
@@ -220,6 +237,22 @@ hex can clear the 3:1 graphics floor and fail the 4.5:1 text floor, so one brand
 cannot serve graphic, text-on-white and ground-under-white-text roles at once.** Medical
 mints `--brand-primary-text` and `--brand-primary-ground` for the other two roles; see
 playbook section 8 item 11.
+
+**2026-09-11, Trade. Third instance of the unlayered-beats-utility trap in one file, and the first
+fix made it worse.** `construction-cis/web/src/app/globals.css:209-225` carries the whole incident in
+its comment. `.eyebrow` was declared unlayered, so its `color` silently beat `text-orange-400` on its
+own consumers (`/about` and `/contact`, both `className="eyebrow text-orange-400"` on
+`bg-neutral-900`), which had correctly chosen the on-dark step. A first fix pass recoloured the
+unlayered rule toward the light-ground reading, which fixes the one white consumer and regresses both
+dark ones. The correct fix was to move the rule into `@layer components` so a consumer utility wins:
+`#fb923c` on `#262626` = 6.69, and the light-ground consumer passes on the default at 5.18. Instance
+two is the heading `line-height` rule in the same file, deliberately unlayered on the same mechanism
+and documented as such.
+RULE: before changing a colour on a shared class, enumerate its consumers and check what ground each
+sits on AND whether any already declares its own utility. A class whose consumers disagree about
+ground needs a layer, not a different hex. And the blast radius of moving a rule into a layer is
+every utility it was beating, not the one you meant: list what is inside the block afterwards with
+`awk '/^@layer components/,/^}$/' <file> | grep -E '^\s+\.'` (on Trade, exactly one selector).
 
 ---
 
@@ -363,6 +396,41 @@ JSON.** A round-trip rewrites every escaped character in the file: a pound sign 
 insertions and 55 deletions, which is unreviewable and hides whatever else changed.
 RULE: edit the lines in place. The same applies to any hand-authored JSON in this repo.
 
+**2026-09-11, Trade. Every DESIGN_DELTA in this programme computes contrast from Tailwind v3 hex
+constants, and Tailwind v4 does not emit those colours.** v4 ships its ramps as `oklch()`
+(`node_modules/tailwindcss/theme.css:26-29`), which resolves to materially different sRGB:
+`orange-400` renders `#ff8904` not `#fb923c`, 69 summed RGB units of drift, and 500 and 600 drift 38
+each. Across Trade's 17 binding contrast rows, 10 drifted, by at most 0.38, and **no verdict
+changed**: every pass stayed a pass, every fail stayed a fail
+(`docs/construction-cis/DESIGN_DELTA.md:136-151`). A precision problem, not a decision problem, but
+that table is what five later phases measure against.
+The sharp half: **a ramp UTILITY and a CSS custom property do not render the same colour.**
+`bg-orange-500` renders the oklch value (`#ff6900`, 2.89 on white); `--accent: #f97316` renders the
+literal hex (2.80). That is what reconciled an apparent disagreement between two instruments on this
+port, where the hand computation said 2.80 and `browser_check.mjs` said 2.89 and both were right
+about different subjects. Trade's pre-port button was the utility
+(`git show HEAD~1:construction-cis/web/src/components/ui/layout-utils.ts`, `btnPrimary`,
+`bg-orange-500`); the ported button is `bg-[var(--btn-ground)]`.
+RULE: label every contrast row by SOURCE, utility or token. Measure a utility from the rendered DOM
+or by converting the emitted `oklch()`, never from a v3 hex table, and self-test any converter
+against a canvas read out of the running build.
+
+**2026-09-11, Trade. A long `browser_check.mjs` run looks dead while it is working, and concluding
+it died costs you the baseline.** It shows no browser process between page batches and buffers its
+log, so one `ps` sample plus an empty log tail reads as a corpse. The manager read it that way,
+started a second run, and two concurrent runs write the same `--baseline` path, which is the
+collision the instrument's own docstring warns about (`browser_check.mjs:56`, `:91`, `:497`).
+RULE: check for the OUTPUT FILE, not the process, and never start a second `--save-baseline` run.
+Pass your own `--out` and `--baseline`.
+
+**2026-09-11, Trade. Traps are numbered in the PLAYBOOK, and the rollout doc has a rival numbering
+that does not mean the same thing.** A re-review reported "trap 27 does not exist" after checking
+`PROPERTY_STANDARD_ROLLOUT.md`, whose section 7 carries its OWN incident list numbered 1 to 15. T27
+is real and lives at `docs/_engines/DESIGN_PORT_PLAYBOOK.md:738`.
+RULE: "T<n>" means the playbook, section 6 (T1-T21) and section 14 (T22-T27). Cite it with a line
+number; an absence in the rollout doc proves nothing.
+`grep -nE '^\*\*T[0-9]+\.' docs/_engines/DESIGN_PORT_PLAYBOOK.md` lists every one.
+
 ---
 
 ## 6. What the ports keep finding that is not design work
@@ -419,6 +487,27 @@ ONE file, three lines. The ladder is net-new, and the sweep is nearly free.
 RULE: when pricing a semantic-ramp reassignment, split the usage list into semantics, brand
 furniture and exempt surfaces BEFORE quoting a cost. A raw colour-family count prices the wrong
 thing by an order of magnitude, in both directions.
+
+**2026-09-11, Trade. A blocking gate that names a check nobody can run decays into a deferral.** The
+delta recorded a BLOCKING item requiring a "section-grounds scan" before the owner walk. No committed
+instrument performed one: the scan behind the figure was a throwaway script that no longer existed.
+Worse, it parsed colours textually, `oklch()` defeated it, and it scored every unresolved ground as
+light, producing 102 breaching routes where the real figure is 79 and naming `/blog` and `/resources`
+as in breach when neither is (`docs/construction-cis/DESIGN_DELTA.md:234-246`). Fixed by adding a
+real `--grounds` mode to `docs/_engines/instruments/browser_check.mjs` (read the comment above
+`const GROUNDS`, `:83-89`), which resolves colour through the browser and reproduces the corrected
+finding: glossary and locations breach, blog and resources do not.
+RULE: when you record a gate, name the committed command that satisfies it in the same edit. If that
+command does not exist, building it is part of recording the gate. And never measure colour with a
+parser while a browser is already open.
+
+**2026-09-11, Trade. An orchestrator keeping small work is how the manager's context goes.** The
+manager did a contrast re-derivation, an instrument change and a set of document corrections inline,
+because each one looked too small to delegate. Collectively they were not small, and the owner
+corrected it.
+RULE: the test is not "is this small enough to do myself", it is "is there a reason only the manager
+can do this". The carve-outs are git, serialised builds, deploys, migrations, owner comms, and the
+judgement at a gate. Everything else, audits and instrument work included, goes to an agent.
 
 ---
 

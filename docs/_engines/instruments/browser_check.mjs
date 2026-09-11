@@ -80,6 +80,13 @@ const BASE = flag("base", "http://localhost:3000").replace(/\/$/, "");
 const WIDTHS = flag("widths", "390,768,1024,1440").split(",").map(Number);
 const SHOTS = flag("shots", "");
 const SAVE = has("save-baseline");
+// Section grounds (DESIGN_SYSTEM section 9): consecutive bands must not share a ground and
+// navy must never touch navy. Added 2026-09-11 because a port recorded a BLOCKING gate that
+// said "re-run the section-grounds scan" when no committed instrument performed one: the
+// scan behind both of its counts was a throwaway script, and the first count was wrong by 23
+// routes because it parsed colours textually and oklch() defeated it. The browser resolves
+// colour; a parser guesses. This mode only reports, and it is reported alongside the rest.
+const GROUNDS = has("grounds");
 const ARTICLE_DEPTH = Number(flag("article-depth", "3"));
 const BASELINE = path.resolve(flag("baseline", `docs/${SITE.toLowerCase()}/_port/browser_baseline.json`));
 const OUT = path.resolve(flag("out", `tmp/browser_check_${SITE}_${Date.now()}.json`));
@@ -308,7 +315,45 @@ const PROBE = () => {
     };
   });
 
-  return { overflow, contrast, anchorGaps, headings, unrendered, unparsed, selfTest, height: doc.scrollHeight };
+  // --- section grounds -------------------------------------------------------
+  // Every opaque band in document order, then the footer, so the caller can see
+  // both "two bands share a ground" and "the page tail runs into the footer".
+  // getComputedStyle gives resolved sRGB, which is the whole point: the parser
+  // that defeated the first attempt could not read oklch().
+  const opaque = (c) => c && c !== "transparent" && !/rgba\(\s*0\s*,\s*0\s*,\s*0\s*,\s*0\s*\)/.test(c);
+  const bandsOf = (root) =>
+    Array.from(root ? root.querySelectorAll(":scope > section, :scope > div[class*='bg-']") : [])
+      .map((el) => {
+        const bg = getComputedStyle(el).backgroundColor;
+        return opaque(bg) ? bg : null;
+      })
+      .filter(Boolean);
+
+  const mainEl = document.querySelector("main");
+  const bands = bandsOf(mainEl);
+  const footerEl = document.querySelector("footer");
+  const footerGround = footerEl ? getComputedStyle(footerEl).backgroundColor : null;
+
+  // A ground counts as dark if its relative luminance is low. 0.18 sits well
+  // below every cream/white surface in the estate and well above every navy.
+  const lumOf = (c) => {
+    const m = c && c.match(/\d+(\.\d+)?/g);
+    if (!m) return null;
+    const f = (v) => { v = Number(v) / 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+    return 0.2126 * f(m[0]) + 0.7152 * f(m[1]) + 0.0722 * f(m[2]);
+  };
+  const isDark = (c) => { const l = lumOf(c); return l !== null && l < 0.18; };
+
+  const adjacentSame = [];
+  for (let i = 1; i < bands.length; i++) {
+    if (bands[i] === bands[i - 1]) adjacentSame.push({ index: i, ground: bands[i] });
+  }
+  const lastBand = bands.length ? bands[bands.length - 1] : null;
+  const darkOnDark = !!(lastBand && footerGround && isDark(lastBand) && isDark(footerGround));
+
+  const grounds = { bands, footerGround, lastBand, adjacentSame, darkOnDark };
+
+  return { overflow, contrast, anchorGaps, headings, unrendered, unparsed, selfTest, grounds, height: doc.scrollHeight };
 };
 
 // ---------------------------------------------------------------------------
@@ -423,6 +468,13 @@ for (const width of WIDTHS) {
     for (const c of newContrast) console.log(`      [contrast] ${c}`);
     for (const a of newAnchors) console.log(`      [anchor]   ${a}`);
     for (const n of newNoise) console.log(`      [noise]    ${n}`);
+    if (GROUNDS && probe.grounds) {
+      const g = probe.grounds;
+      if (g.darkOnDark)
+        console.log(`      [grounds]  dark band touches dark footer: last=${g.lastBand} footer=${g.footerGround}`);
+      for (const a of g.adjacentSame)
+        console.log(`      [grounds]  bands ${a.index - 1} and ${a.index} share ${a.ground}`);
+    }
   }
   await page.close();
 }
@@ -467,4 +519,36 @@ console.log(
     `${unparsedTotal} unparseable colour(s)`,
 );
 for (const b of blind.slice(0, 20)) console.log(`      [unchecked] ${b}`);
+
+// ---------------------------------------------------------------------------
+// Section grounds summary (only with --grounds). DESIGN_SYSTEM section 9:
+// consecutive bands must not share a ground, and navy must never touch navy.
+// Reported, never exit-code: a red run is a notification, and this mode exists
+// to answer "has the breach closed yet", which is a question, not a defect.
+if (GROUNDS) {
+  const byRoute = {};
+  for (const r of report) {
+    if (!r.grounds) continue;
+    // One entry per route; widths do not change a ground.
+    byRoute[r.route] ||= r.grounds;
+  }
+  const darkOnDark = Object.entries(byRoute).filter(([, g]) => g.darkOnDark).map(([r]) => r);
+  const adjacent = Object.entries(byRoute).filter(([, g]) => g.adjacentSame.length).map(([r]) => r);
+  const family = (r) => {
+    const seg = r.split("/").filter(Boolean)[0];
+    return seg ? "/" + seg : "/";
+  };
+  const tally = (list) => {
+    const t = {};
+    for (const r of list) t[family(r)] = (t[family(r)] || 0) + 1;
+    return Object.entries(t).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}`).join(", ");
+  };
+  console.log(`\nSECTION GROUNDS, ${Object.keys(byRoute).length} route(s) measured`);
+  console.log(`  dark band touching the footer: ${darkOnDark.length}${darkOnDark.length ? "  [" + tally(darkOnDark) + "]" : ""}`);
+  console.log(`  adjacent bands sharing a ground: ${adjacent.length}${adjacent.length ? "  [" + tally(adjacent) + "]" : ""}`);
+  if (darkOnDark.length) {
+    console.log(`  first 10: ${darkOnDark.slice(0, 10).join(" ")}`);
+  }
+}
+
 process.exit(failures ? 1 : 0);
