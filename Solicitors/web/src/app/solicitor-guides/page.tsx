@@ -176,7 +176,7 @@ export default function SolicitorGuidesIndex() {
             href="/calculators"
             data-cta="guides_calculators_all"
             data-cta-placement="calculator_bridge"
-            className={`mt-8 inline-flex items-center gap-1.5 rounded py-1 text-sm font-bold text-primary-700 transition-colors hover:text-primary-800 sm:text-base ${focusRing}`}
+            className={`mt-8 inline-flex min-h-11 items-center gap-1.5 rounded py-1 text-sm font-bold text-primary-700 transition-colors hover:text-primary-800 sm:text-base ${focusRing}`}
           >
             View all {genericTools().length} calculators
             <ArrowRight aria-hidden className="h-4 w-4" />

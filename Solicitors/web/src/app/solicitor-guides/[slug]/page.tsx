@@ -113,7 +113,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                     data-cta="guide_skip_to_form"
                     data-cta-placement="guide_header"
                     data-cta-goal="form"
-                    className="inline-flex items-center gap-2 py-0.5 text-sm font-semibold text-rose-700 hover:text-rose-800 underline underline-offset-4"
+                    className="inline-flex min-h-12 items-center gap-2 py-0.5 text-sm font-semibold text-rose-700 hover:text-rose-800 underline underline-offset-4"
                   >
                     Skip to enquiry form ↓
                   </a>

@@ -42,7 +42,31 @@ export default function PracticeFinancePillarPage() {
       readTime: calculateReadTime(p.contentHtml),
     }));
 
+  // Page-level BreadcrumbList, restored verbatim from the pre-port page so this
+  // route emits exactly the structured data it emitted before. The kit's
+  // <Breadcrumb> emits a second one; that duplication is the published state and
+  // the ten derived hubs still carry it, so it stays.
+  const jsonLd = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+          { "@type": "ListItem", position: 3, name: "Practice Finance & Cash Flow" },
+        ],
+      },
+    ],
+  });
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
+      />
+
     <BlogCategoryHub
       categoryName="Practice Finance & Cash Flow"
       heading="Complete Practice Finance Guide for UK Law Firms"
@@ -116,5 +140,6 @@ export default function PracticeFinancePillarPage() {
       heroBackdrop={<SolicitorsBackdrop tone="cream" />}
       ctaBackdrop={<SolicitorsBackdrop tone="navy" />}
     />
+    </>
   );
 }

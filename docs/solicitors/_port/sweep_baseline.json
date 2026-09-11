@@ -596,7 +596,7 @@
     "/blog/sra-accounts-rules": 0,
     "/blog/conveyancing-compliance": 0,
     "/blog/compliance-risk-colp-cofa": 0,
-    "/blog/practice-accounting": 1,
+    "/blog/practice-accounting": 0,
     "/blog/structure-incorporation": 0,
     "/blog/fee-earner-tax-compensation": 0,
     "/blog/firm-acquisition-merger": 0,
@@ -834,7 +834,7 @@
   },
   "totalLinks": 5343,
   "totalCtas": 774,
-  "totalDashes": 330,
+  "totalDashes": 441,
   "restatements": [
     {
       "date": "2026-09-11",
@@ -844,23 +844,26 @@
         "/solicitor-guides/partnership-vs-llp-for-solicitors",
         "/solicitor-guides/post-merger-integration",
         "/solicitor-guides/professional-indemnity-tax-treatment",
-        "/solicitor-guides/sra-accounts-rules-essentials"
+        "/solicitor-guides/sra-accounts-rules-essentials",
+        "/blog/practice-accounting"
       ],
       "before": {
         "/solicitor-guides/fee-share-vs-equity-partner": 19,
         "/solicitor-guides/partnership-vs-llp-for-solicitors": 26,
         "/solicitor-guides/post-merger-integration": 13,
         "/solicitor-guides/professional-indemnity-tax-treatment": 9,
-        "/solicitor-guides/sra-accounts-rules-essentials": 21
+        "/solicitor-guides/sra-accounts-rules-essentials": 21,
+        "/blog/practice-accounting": 1
       },
       "after": {
         "/solicitor-guides/fee-share-vs-equity-partner": 23,
         "/solicitor-guides/partnership-vs-llp-for-solicitors": 58,
         "/solicitor-guides/post-merger-integration": 41,
         "/solicitor-guides/professional-indemnity-tax-treatment": 25,
-        "/solicitor-guides/sra-accounts-rules-essentials": 53
+        "/solicitor-guides/sra-accounts-rules-essentials": 53,
+        "/blog/practice-accounting": 0
       },
-      "reason": "Phase 3 gave the ten solicitor-guides the standard table of contents, which echoes each guide's own h2 and h3 text and renders twice (mobile and desktop). Those headings already contain en-dashes in published copy, e.g. 'Rule 2 - Client money separation' with an en-dash. The added counts are duplicates of body text already inside the ceiling, not new copy: sra-accounts-rules-essentials moved 21 to 53 and its two TOC blocks carry 16 dashes each, accounting for the 32 exactly. The owner's hard rule of 2026-09-11 forbids rewriting the headings, so the ceiling is restated rather than the copy changed.",
+      "reason": "Phase 3 gave the ten solicitor-guides the standard table of contents, which echoes each guide's own h2 and h3 text and renders twice (mobile and desktop). Those headings already contain en-dashes in published copy, e.g. 'Rule 2 - Client money separation' with an en-dash. The added counts are duplicates of body text already inside the ceiling, not new copy: sra-accounts-rules-essentials moved 21 to 53 and its two TOC blocks carry 16 dashes each, accounting for the 32 exactly. The owner's hard rule of 2026-09-11 forbids rewriting the headings, so the ceiling is restated rather than the copy changed. Correction to that sentence: /blog/practice-accounting also moved, 1 to 0, because the pre-port page serialised a fatter client payload whose serialised post fields carried the dash; the phase 3 projection drops those fields from the payload, so the character no longer appears in the page source. No copy changed on that route.",
       "deriving_command": "node docs/_engines/instruments/sweep.mjs --site=Solicitors --base=http://localhost:<port> --sample=9999"
     }
   ]
