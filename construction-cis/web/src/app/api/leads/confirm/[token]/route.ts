@@ -58,7 +58,7 @@ export async function GET(_req: NextRequest, ctx: Ctx) {
   // action attribute. The token is a validated base64url HMAC, so the pathname
   // is injection-safe.
   const actionUrl = new URL(_req.url).pathname;
-  const html = `<!DOCTYPE html><html lang="en"><head>${COMMON_HEAD}<title>Confirm your call request</title><style>${PAGE_STYLE}</style></head><body><h1>Confirm your call request</h1><p>Click the button below to confirm that you would like us to call you. We will be in touch shortly.</p><form method="POST" action="${actionUrl}"><button type="submit">Yes, confirm my call</button></form></body></html>`;
+  const html = `<!DOCTYPE html><html lang="en"><head>${COMMON_HEAD}<title>Confirm your call request</title><style>${PAGE_STYLE}</style></head><body><h1>Confirm your call request</h1><p>Click the button below to confirm that you would like us to call you. We will be in touch.</p><form method="POST" action="${actionUrl}"><button type="submit">Yes, confirm my call</button></form></body></html>`;
 
   return new NextResponse(html, {
     status: 200,

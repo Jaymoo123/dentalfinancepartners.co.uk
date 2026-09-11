@@ -127,7 +127,7 @@ export const cisRefundEstimator: GenericTool = {
     heading: "How CIS tax refunds work",
     paragraphs: [
       "CIS deductions are taken from your labour payments at source, before any account is made for your personal allowance, business expenses or materials costs. A registered subcontractor on a 20% deduction rate may pay 20% on every labour pound received, even if their actual income tax liability for the year is far lower.",
-      "The refund is calculated at the end of the tax year through a Self Assessment return. Your total CIS deductions are offset against your actual tax and National Insurance liability, and HMRC refunds the difference. The average CIS subcontractor is owed around £2,000 back per year.",
+      "The refund is calculated at the end of the tax year through a Self Assessment return. Your total CIS deductions are offset against your actual tax and National Insurance liability, and HMRC refunds the difference. Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed).",
       "This calculator applies the 2026/27 rates: personal allowance of £12,570, income tax at 20% (basic) and 40% (higher rate), and Class 4 NI at 6% up to £50,270 and 2% above. It does not include Class 2 NI, which is £0 for profits above the £7,105 small profits threshold.",
     ],
   },
@@ -135,7 +135,7 @@ export const cisRefundEstimator: GenericTool = {
     {
       question: "What is the average CIS refund?",
       answer:
-        "The average CIS subcontractor is owed around £2,000 back per year. The actual figure depends on your total gross income, materials costs, allowable expenses and whether you have other income sources. Subcontractors with high materials costs or significant business expenses typically see higher refunds.",
+        "Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed). The actual figure depends on your total gross income, materials costs, allowable expenses and whether you have other income sources. Subcontractors with high materials costs or significant business expenses typically see higher refunds.",
     },
     {
       question: "How long does a CIS refund take?",

@@ -2,18 +2,68 @@
 
 ## PICKUP BLOCK (read this first) - design port, 2026-09-11
 
-**Where it stands.** The Property-standard design port is at **PHASE 0 COMPLETE, NOTHING BUILT,
+**Where it stands.** The Property-standard design port is at **PHASE 2 BUILT AND REVIEWED,
 NOTHING DEPLOYED.** Phase 0 artefacts are committed at `4d2bfeaa` and live in
 `docs/construction-cis/_port/` (README, BRAND_LAYER, three DISPOSITION slices, LIVE_DEFECTS,
 FUNNEL_BASELINE, link_baseline.json, sweep_baseline.json, browser_baseline.json) plus the brand
 contract at `docs/construction-cis/DESIGN_DELTA.md`. Over 3,000 lines of file-by-file spec. Read
 the slices before touching code: they are the spec, this file is the state.
 
-**What is next.** Phase 1: token foundation, then `layout-utils`, then the guard tests and the
-pre-port CTA-triple snapshot, then chrome. The numbered execution order for the whole port is
-`_port/DISPOSITION_SLICE3.md` section 10. Phase 1 runs ALONE and FIRST: the brand ramp blocks
-every other package, because kit components emit `primary-*` classes that render as nothing until
-the ramp lands.
+**Phase 1 is COMPLETE.** Token layer, chrome and the guard suite, committed at `405faf37` and
+tagged `port-construction-cis-phase1`. The brand ramp is in, so kit components emitting `primary-*`
+classes now render. Nothing from phase 1 is deployed either: deploy is owner-gated, every time.
+
+**Phase 2 is BUILT AND REVIEWED but NOT COMMITTED at the time of writing** (the blog family: the
+`/blog` index, the 8 category hubs and the 82-route article template). The plan it was built
+against is `_port/PHASE2_PLAN.md`. The manager holds the commit; if you are reading this after it
+landed, find it with `git log --oneline -- construction-cis/` above `405faf37`.
+
+**What phase 2 achieved, measured.**
+- `/blog` articles crawlable from their own index: **12 of 82 to 82 of 82**. Baseline evidence is
+  `_port/PHASE2_PLAN.md` section 1a. The sliced grid became a `hidden`-attribute grid, per
+  `DESIGN_SYSTEM.md` section 4e.
+- `/blog` page weight: **2,309,255 to 277,429 bytes, an 88% drop**, by projecting the post list to
+  its card fields instead of spreading every article's full `contentHtml` into the client payload.
+- `/blog` gained a real capture surface. It had none.
+- All **82 of 82** articles gained a per-category enquiry section, each verified present with its
+  anchor and its accessible label.
+- The five locked `data-cta` triples came through **byte-identical at 246 / 246 / 109 / 18 / 1**,
+  with two additive new ids.
+- Tests **412 to 417**, then higher again with the gap fixes. Build green at **275 pages**. Sweep
+  **246 of 246 routes clean**, zero dead internal links, zero link-floor breaches.
+
+**The larger half of phase 2 was NOT design work.** It closed live defects:
+- A blog post overstating the **12-month CIS penalty as 100% of deductions**, where the tier is
+  £300 or 5%.
+- A banned turnaround promise that turned out to be far wider than filed. `_port/LIVE_DEFECTS.md`
+  records the re-swept truth as **23 breaches across 19 files, all 23 now closed** (TD-13, TD-14,
+  TD-14b, TD-14c). Four soft "shortly" / "Speak soon" instances survive in **transactional email**
+  valedictions, deliberately left and out of scope.
+- **A test that was asserting the banned promise**, so the suite would have gone red if anyone
+  removed it.
+- The **refund-average claim restated with attribution** on the homepage, `/cis-refund`, both
+  search snippets, the calculator, **33 trade-page stat tiles** (TD-33, 18 of them uncaveated) and
+  **10 city pages** that had published it as our own clients' results (TD-10). Residual tier, still
+  open and low priority: instances that are hedged as typical or illustrative, which house
+  positions section 13 permits, but carry no source. Logged as **TD-34**.
+- An **invisible button label measuring 1.00 contrast** on most articles.
+- The **8 topic hubs still shipping full article bodies**.
+
+**Open owner decisions, plain language.**
+1. The ground-truth penalty phrase contradicts itself and leaves out one statutory tier. Needs his
+   word on the wording before anything cites it.
+2. The header call-to-action renders below its breakpoint. Fixing it shifts what the analytics
+   count, so the before and after will not compare cleanly.
+3. **79 routes still end dark-on-dark. Tracked as blocking.**
+4. The tick and numeral colours.
+5. The designer credit.
+6. The four soft "shortly" / "Speak soon" lines in transactional email, deliberately left.
+
+**What is next. Phase 3: the article and pillar templates, plus hubs and indexes.** Scope is
+`/for` and its **45** trade pages, `/glossary` and its **50** terms, `/locations` and its **25**
+cities, and `/resources`. The numbered execution order for the whole port is
+`_port/DISPOSITION_SLICE3.md` section 10. Note that the **79 dark-on-dark routes are mostly
+glossary and locations**, so phase 3 closes most of that blocking item as a side effect.
 
 **Owner decisions already taken 2026-09-11, do not re-ask.**
 - Brand stays orange (`#f97316` = orange-500). Warning and penalty semantics move OFF orange.
@@ -24,9 +74,13 @@ the ramp lands.
 
 **What not to re-measure, and what not to trust.**
 - Production SHA `18b4f25f39cd0c4aa084e582d69a87c8a10710ac`, from the Vercel production TARGET,
-  not the deployments listing. Working tree equals production for `construction-cis/`.
+  not the deployments listing. **This was true at phase 0 and is no longer true:** phase 1
+  (`405faf37`) is committed and phase 2 is in the working tree, neither deployed, so the working
+  tree is now AHEAD of production for `construction-cis/`. The SHA is still the right production
+  reference to diff against.
 - Baseline: 246 routes, 5,301 internal links, 620 `data-cta`, 36 dashes, 246/246 routes clean,
-  0 dead internal links. Build green at 275 pages.
+  0 dead internal links. Build green at 275 pages. Phase 2 re-measured the sweep and the build and
+  they still read 246/246 clean and 275 pages, so this line is a live check, not just a baseline.
 - **The dash target is 2, not 0.** The sweep regex counts en-dashes too, and 2 of the 36 are
   legitimate numeric ranges that `LIVE_DEFECTS.md` TD-28 protects. All 36 sit on 6 calculator
   pages.
@@ -46,9 +100,10 @@ the ramp lands.
   `MSYS_NO_PATHCONV=1` and quote them as `"//"`.
 - `python` works on this machine; `python3` is a Microsoft Store stub.
 
-**Live defects found that are NOT design work: 32, plus 2 in the shared kit.** Full catalogue with
-file and line in `_port/LIVE_DEFECTS.md` (TD-01 to TD-30, TD-K1, TD-K2), plus TD-31 and TD-32
-raised by slice 3. The ones that matter most:
+**Live defects found that are NOT design work: 37, plus 2 in the shared kit.** Full catalogue with
+file and line in `_port/LIVE_DEFECTS.md` (TD-01 to TD-35, with TD-14b and TD-14c, plus TD-K1 and
+TD-K2), where TD-31 and TD-32 were raised by slice 3 and TD-33, TD-34 and TD-35 by the phase-2
+sweeps. The count was 32 before phase 2. The ones that matter most:
 1. `priceRange: "££"` publishes our own fee band in JSON-LD on 26 surfaces, and the same line
    is forked in `packages/web-shared/schema/local-business.ts:127`, so fixing one end alone leaves
    it live.
@@ -56,7 +111,8 @@ raised by slice 3. The ones that matter most:
    `house_positions.md` bans BY NAME as a corrected fabrication. The same lines also misattribute
    it to "Finance Bill 2026".
 3. A third-party marketing refund average republished as OUR client base's average on 10 city
-   pages.
+   pages. **CLOSED 2026-09-11** (TD-10), along with 33 trade-page stat tiles the prose sweep never
+   saw (TD-33). The hedged-but-unsourced remainder is TD-34, open and low priority.
 4. `s.62B` given as 20% where it is 100%, and the 12-month CIS300 penalty as 100% where it is 5%.
    Note: the 2026-06-16 session below records s.62B as fixed. It is live again, or was never fully
    swept. Re-verify rather than assume.
@@ -69,7 +125,7 @@ raised by slice 3. The ones that matter most:
 7. The burger appears below 1024px but the drawer is `md:hidden`, so **navigation is unreachable
    between 768px and 1023px.** Verified against the rendered DOM.
 8. `/blog` server HTML carries **12 of 82** articles, because the list slices behind button
-   pagination. The blog is 54% of this site's traffic.
+   pagination. The blog is 54% of this site's traffic. **CLOSED in phase 2: 82 of 82.**
 9. `StickyCTA.tsx:147` ships `data-cta-id`, which `autoCapture.ts` does not match, so the site's
    only persistent site-wide CTA has never once recorded a click.
 

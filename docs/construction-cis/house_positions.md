@@ -120,6 +120,14 @@ No em-dashes anywhere (commas, parentheses, full stops, middle dots only). Briti
 - **5% de minimis.** If the reverse charge would apply to **5% or less** of the value of an invoice, **normal VAT rules apply** to the whole invoice (the reverse charge is ignored).
 - **Practical writing rule for sessions:** list the **five conditions as a cumulative ALL-of test**, then handle the **end-user exception** and the **5% de minimis** explicitly. Any DRC page must include **worked examples** (a sample invoice showing the reverse-charge wording, and a common end-user scenario), because generic DRC guides are thin (SITE_PLAN §7, #8). Do NOT conflate "end user" with being the main contractor. Cross-ref §1 (CIS-registered status), §5 (CIS registration).
 
+### 7a. Addendum: VAT registration and deregistration thresholds (verified 2026-09-11)
+
+- **VAT registration threshold: £90,000** of taxable turnover in the last 12 months (rolling), or expected in the next 30 days alone. **In force from 1 April 2024** (up from £85,000) and **unchanged by FA 2026**.
+- **VAT deregistration threshold: £88,000** of expected taxable turnover in the next 12 months. Same commencement, **1 April 2024** (up from £83,000). Deregistration is an application, not automatic, and the standard cancellation limit is not available to non-established taxable persons (NETPs).
+- **CIS relevance.** The threshold is **taxable turnover**, which is a different base from the §2 GPS net-turnover test (that one excludes VAT and materials) and from the §8 MTD ITSA gross-income test. Do not cross-apply the three. A subcontractor crossing £90,000 becomes VAT-registered, which is condition 2 of the five-part DRC test above (§7), so registration is usually what pulls a trade into the reverse charge.
+- **Practical writing rule for sessions:** use **£90,000 registration / £88,000 deregistration, both from 1 April 2024**. State the rolling-12-month basis and the separate 30-day forward test. Never describe either figure as new or as an FA 2026 change. Cross-ref §7 (DRC condition 2), §2 (different turnover base), §8 (different income base).
+- **Source.** GOV.UK, "VAT: increasing the registration and deregistration thresholds" (policy paper): "The 12-month taxable turnover threshold which determines whether a person must be registered for VAT will increase from £85,000 to £90,000"; "... whether a person may apply for deregistration will increase from £83,000 to £88,000"; "The changes to both the registration and deregistration thresholds will take effect from 1 April 2024." Registration figure re-checked live against GOV.UK "VAT registration: when to register" on 2026-09-11 (£90,000); deregistration limit also carried in VAT Notice 700/11 supplement (£88,000).
+
 ---
 
 ## 8. Making Tax Digital for Income Tax (MTD ITSA) and CIS (locked, 2026-06-12)

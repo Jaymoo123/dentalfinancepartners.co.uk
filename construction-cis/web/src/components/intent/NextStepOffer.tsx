@@ -39,7 +39,7 @@ export function NextStepOffer() {
         data-cta="next_step"
         data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
         onClick={() => trackPersonalization("clicked", action)}
-        className="mt-5 inline-flex items-center justify-center rounded-lg bg-orange-500 px-5 py-2.5 font-semibold text-white hover:bg-orange-600"
+        className="mt-5 inline-flex items-center justify-center rounded-lg bg-[var(--btn-ground)] px-5 py-2.5 font-semibold text-white hover:bg-[var(--btn-ground-hover)]"
       >
         {buttonLabel}
       </Link>

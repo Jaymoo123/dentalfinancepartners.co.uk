@@ -61,12 +61,17 @@ export const serviceTiers: ServiceTier[] = [
  * Verification notes:
  * - "12 free calculators" — 12 entries in src/lib/calculators/registry.ts GENERIC array.
  * - "7 specialist services" — 7 service cards in src/app/services/page.tsx services array.
- * - "57+ guides" — site memory notes ~57 posts; also visible in blog content files.
- * - "24h response" — stated on homepage keyStats, /contact, /cis-refund, /gross-payment-status pages.
+ * - "80+ guides" — `ls construction-cis/web/content/blog/*.md | wc -l` = 82 on
+ *   2026-09-11 (TD-29; the old "57+" came from a stale site-memory note). Stated
+ *   as a floor so the figure does not go stale downwards as posts are added.
+ * - "45 trades" — `grep -c '^    slug:' src/data/trade-types.ts` = 45 on 2026-09-11,
+ *   matching the 45 live `/for/[slug]` pages. Replaced the old "24h / Response
+ *   guarantee" stat (TD-13): a turnaround promise is banned in capture copy and is
+ *   false under the pool model, where independent firms do the responding.
  */
 export const siteStats: StatItemConfig[] = [
   { icon: "🧮", value: "12", label: "Free CIS calculators" },
   { icon: "📋", value: "7", label: "Specialist services" },
-  { icon: "📖", value: "57+", label: "CIS guides and articles" },
-  { icon: "⚡", value: "24h", label: "Response guarantee" },
+  { icon: "📖", value: "80+", label: "CIS guides and articles" },
+  { icon: "🏗️", value: "45", label: "Construction trades covered" },
 ];

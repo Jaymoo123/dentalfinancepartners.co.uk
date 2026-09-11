@@ -46,12 +46,24 @@ export default async function BlogCategoryPage({ params }: Props) {
   if (!cat) notFound();
 
   const allPosts = getAllPosts();
-  const categoryPosts = allPosts
-    .filter((p) => slugifyCategory(p.category) === category)
-    .map((p) => ({ ...p, categorySlug: getCategorySlug(p) }));
+  const rawCategoryPosts = allPosts.filter((p) => slugifyCategory(p.category) === category);
+
+  // Project to card metadata only, same six fields as /blog. Spreading the whole
+  // post here serialized every article's contentHtml into the client flight
+  // payload: 26 occurrences and 810 KB on /blog/cis-basics alone. The list never
+  // reads contentHtml, and tsc cannot catch the spread (no excess-property check
+  // on a variable), so the projection is the guard.
+  const categoryPosts = rawCategoryPosts.map((p) => ({
+    title: p.title,
+    summary: p.summary,
+    category: p.category,
+    slug: p.slug,
+    date: p.date,
+    categorySlug: getCategorySlug(p),
+  }));
 
   const readTimes = new Map(
-    categoryPosts.map((p) => [p.slug, calculateReadTime(p.contentHtml)])
+    rawCategoryPosts.map((p) => [p.slug, calculateReadTime(p.contentHtml)])
   );
 
   return (

@@ -811,9 +811,13 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(GENERIC.length).toBe(3);
   });
 
-  it("GENERIC Q&A 1 is about response speed (reply within one working day)", () => {
-    expect(GENERIC[0].q).toMatch(/quickly|how.*reply/i);
-    expect(GENERIC[0].a).toMatch(/working day/i);
+  // TD-14: no turnaround promise. Q&A 1 says what happens next, not how fast.
+  it("GENERIC Q&A 1 says what happens next and promises no turnaround", () => {
+    expect(GENERIC[0].q).toMatch(/what happens/i);
+    expect(GENERIC[0].a).toMatch(/come back to you/i);
+    expect(`${GENERIC[0].q} ${GENERIC[0].a}`).not.toMatch(
+      /24 ?h|working day|same[- ]day|quickly|guarantee/i,
+    );
   });
 
   it("GENERIC Q&A 2 is about the first call being free", () => {

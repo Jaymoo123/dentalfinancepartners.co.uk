@@ -13,15 +13,10 @@
  * hub against the CORPUS instead: `getAllPosts().length` is the denominator, and
  * the rule is that the list must map the full array and hide off-page cards.
  *
- * WHY `it.fails` ON THE RULE ASSERTION. The fix is not in this work package's
- * files (`src/components/blog/*` belongs to the chrome/blog builder), and a
- * guard that is red on arrival emails the owner on every push until someone
- * else lands it. `it.fails` is vitest's idiom for a known defect: it passes
- * while the defect stands, and the moment the list is changed to hide rather
- * than slice it reports "expected test to fail" to whoever made that change.
- *
- * >>> WHEN YOU FIX `BlogListWithSearch`: delete the `.fails` below and delete
- * >>> this note. The assertion is already the correct one.
+ * FIXED IN PHASE 2 (WP-B2). `BlogListWithSearch` now maps the full array and
+ * hides off-page cards, so the assertion below is a real `it` and a live guard
+ * against the defect returning. It was wrapped in `it.fails` while the defect
+ * stood.
  *
  * The predicate is IMPORTED from the kit template, not re-implemented, so this
  * site is asserting the estate's rule and not a local paraphrase of it. The
@@ -54,12 +49,12 @@ describe("blog hub keeps every post in the server HTML", () => {
     expect(/getAllPosts\(\)\s*\.slice\(/.test(index)).toBe(false);
   });
 
-  it("BlogListWithSearch.tsx exists and is non-trivial (guards the .fails below from a silent rename/delete)", () => {
+  it("BlogListWithSearch.tsx exists and is non-trivial (guards the assertion below from a silent rename/delete)", () => {
     expect(existsSync(LIST)).toBe(true);
     expect(src.length).toBeGreaterThan(500);
   });
 
-  it.fails(
+  it(
     `renders all ${getAllPosts().length} posts, hiding off-page cards rather than slicing them out`,
     () => {
       const check = checkHubArticleList(src, "posts");

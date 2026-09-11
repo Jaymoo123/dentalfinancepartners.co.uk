@@ -107,6 +107,16 @@
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: #ffffff;
+  /* Kit escape hatches. --brand-primary is --accent (#f97316), which measures 2.80
+     on white: fine as a decorative ground, a failure the moment the kit puts TEXT in
+     it or WHITE text on it. Undefined, both hatches fall back to --brand-primary and
+     the kit's MiniCapture privacy link (2.69 rendered) and its btnPrimary submit
+     (2.80 white-on-orange-500) fail. Point them at the same values the site's own
+     btnPrimary uses: 5.18 / 7.31. Grounds that are purely decorative read
+     --brand-primary directly and are untouched by these. */
+  --brand-primary-text: var(--accent-strong);        /* #c2410c, 5.18 on white */
+  --brand-primary-ground: var(--btn-ground);         /* #c2410c, white label 5.18 */
+  --brand-primary-ground-hover: var(--btn-ground-hover); /* #9a3412, white label 7.31 */
 
   /* Glow channels the shared design layer keys off, recomputed for orange. Undeclared they
      would inherit Property's emerald fallbacks. */
@@ -290,13 +300,26 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.75;
 }
 
+/* Every markdown heading carries an id (addHeadingIds), and every in-page jump
+   on an article lands on one. Without an offset the sticky header eats the
+   heading the reader just jumped to. One rule closes 30 of TD-22's 31 anchor
+   targets; the 31st is #enquiry-form, which carries scroll-mt-24 on the element
+   itself because it is authored in the template, not in markdown. */
+.prose-blog [id] {
+  scroll-margin-top: 6rem;
+}
+
 .prose-blog h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   padding-left: 1rem;
-  border-left: 4px solid var(--accent);
+  /* --accent (#f97316) measures 2.80 on white, below the 3:1 graphics floor,
+     and this border is meaning-bearing: it marks where a section starts, on
+     every h2 of all 82 articles. DESIGN_DELTA §1 permits --accent for grounds
+     and decorative motif strokes only. --btn-ground (#c2410c) measures 5.18. */
+  border-left: 4px solid var(--btn-ground);
   font-size: 1.875rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.02em;
 }
@@ -305,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2.25rem;
   margin-bottom: 0.75rem;
   font-size: 1.375rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.015em;
 }
@@ -316,19 +339,38 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ink-soft);
 }
 
-.prose-blog a {
-  color: var(--accent-strong);
-  font-weight: 500;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: color 0.15s;
-}
+/* The anchor rules live in @layer components, NOT unlayered, and the layer is
+   the whole point. Same mechanism, same resolution as .eyebrow above.
+   Incident, 2026-09-11 (FOURTH instance of playbook trap T30 in this file):
+   this block was unlayered, so its `color` beat the Tailwind utility on its own
+   consumers. ToolIsland writes `text-white` on a `bg-[var(--btn-ground)]`
+   anchor, and --btn-ground IS --accent-strong (#c2410c), so the unlayered rule
+   painted the label the same colour as its own ground: ratio 1.00, an invisible
+   button label on every mapped-category article. `not-prose` does not help:
+   .prose-blog is hand-rolled CSS, not the typography plugin, so it does not
+   honour that escape hatch.
+   Why the layer and not `.prose-blog a:not([class*="bg-"])` or `!text-white`:
+   both are per-consumer patches that leave the NEXT authored utility losing to
+   this rule, which is how T30 reached four instances. A layer makes the class
+   of bug impossible for every consumer at once, and it restores the authored
+   intent (a component that picks its own colour gets it).
+   Markdown body links carry no classes, so they are unaffected: they keep
+   --accent-strong (5.18 on white) and the underline on all 82 articles. */
+@layer components {
+  .prose-blog a {
+    color: var(--accent-strong);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
 
-.prose-blog a:hover {
-  /* hover must not be LESS readable than rest state: --accent measured 2.80
-     against the rest state's 5.18. */
-  color: var(--btn-ground-hover);
+  .prose-blog a:hover {
+    /* hover must not be LESS readable than rest state: --accent measured 2.80
+       against the rest state's 5.18. */
+    color: var(--btn-ground-hover);
+  }
 }
 
 .prose-blog ul,

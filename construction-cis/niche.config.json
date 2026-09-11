@@ -21,7 +21,7 @@
   },
   "domain": "www.tradetaxspecialists.co.uk",
   "tagline": "Specialist CIS accountants for UK construction trades",
-  "description": "Trade Tax Specialists. Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status applications, sole trader and limited company compliance. The average CIS subcontractor overpays around £2,000 a year. We claim it back, then keep you compliant. Fixed fees, plain English.",
+  "description": "Trade Tax Specialists. Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status applications, sole trader and limited company compliance. Third-party reported averages put a registered CIS subcontractor's annual refund at around £2,000 (illustrative, not guaranteed). We claim it back, then keep you compliant. Fixed fees, plain English.",
   "brand": {
     "primary_color": "#f97316",
     "logo_path": "/brand/primary-logo.png",
@@ -342,7 +342,7 @@
         },
         "blog": {
           "cta_heading": "Most CIS subcontractors are owed money back.",
-          "cta_body": "The average CIS subcontractor overpays around £2,000 a year in tax deductions. Book a free call with a specialist CIS accountant. We will review your deductions, identify what you are owed, and handle the reclaim. Plain English, no jargon.",
+          "cta_body": "Third-party reported averages put a registered CIS subcontractor's annual refund at around £2,000 (illustrative, not guaranteed). Book a free call with a specialist CIS accountant. We will review your deductions, identify what you are owed, and handle the reclaim. Plain English, no jargon.",
           "cta_button": "Book a free call"
         },
         "home_cta": {
@@ -358,11 +358,6 @@
     "sticky_primary": "Check your CIS refund",
     "sticky_secondary": "Most CIS subcontractors are owed money back. Speak to a specialist.",
     "sticky_button": "Book a free call"
-  },
-  "blog": {
-    "cta_heading": "Most CIS subcontractors are owed money back.",
-    "cta_body": "The average CIS subcontractor overpays around £2,000 a year in tax deductions. Book a free call with a specialist CIS accountant. We will review your deductions, identify what you are owed, and handle the reclaim. Plain English, no jargon.",
-    "cta_button": "Book a free call"
   },
   "shared_components_version": "1.0.0",
   "last_sync": null

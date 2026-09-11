@@ -12,10 +12,13 @@
  * Hard hex fallbacks where Tailwind cannot use CSS vars.
  *
  * Stand-down: sets bfp_assistant_active="1" in sessionStorage.
- * ExitIntentModal.tsx:87 already reads this key. Do NOT edit ExitIntentModal.
+ * Its only reader was ExitIntentModal.tsx, which the phase 2 blog port deleted
+ * (0 importers). Nothing in src reads the key today, so the write is currently
+ * a no-op in effect. It stays, and the key name is FROZEN: a future suppressed
+ * surface should inherit the flag rather than invent a second one.
  *
  * Storage prefix: bfp (FROZEN). Never ptp_/dfp_/cfp_.
- *   bfp_assistant_active     - stand-down flag for ExitIntentModal
+ *   bfp_assistant_active     - stand-down flag, written here and read nowhere
  *   bfp_assistant_autoopened - auto-open once-per-session guard
  *   bfp_journey              - journey entries (via journeyModel.ts)
  *
@@ -138,7 +141,8 @@ export function SpecialistWidget() {
     setUnread(0);
   }, []);
 
-  // Init the journey model + flag the assistant active (so ExitIntentModal stands down).
+  // Init the journey model + set the assistant-active stand-down flag. The flag
+  // has no reader in src today (see the header note); the write is unchanged.
   useEffect(() => {
     if (!active || typeof window === "undefined") return;
     initJourneyModel();
@@ -376,7 +380,7 @@ export function SpecialistWidget() {
             </span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">Trade Tax Specialists</p>
-              <p className="truncate text-[11px] text-white/70">A specialist replies within one working day</p>
+              <p className="truncate text-[11px] text-white/70">A specialist CIS accountant will be in touch</p>
             </div>
             <button
               type="button"

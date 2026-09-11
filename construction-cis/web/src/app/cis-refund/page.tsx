@@ -7,7 +7,7 @@ import { buildHowToJsonLd } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "CIS Tax Refund Service | Claim Back Your CIS Deductions",
   description:
-    "CIS tax refund service for UK construction subcontractors. The average CIS subcontractor is owed around £2,000 back. We calculate, claim and handle every step.",
+    "CIS tax refund service for UK construction subcontractors. Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed). We calculate, claim and handle every step.",
 };
 
 const howItWorks = [
@@ -85,10 +85,10 @@ export default function CisRefundPage() {
         <div className={siteContainerLg}>
           <div className="section-label mb-6">CIS tax refund</div>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            The average CIS subcontractor is owed around £2,000 back.
+            Claim back the CIS deductions you have overpaid.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            CIS deductions are taken before any expenses or allowances are applied. Most registered subcontractors overpay across the year. We calculate the full refund, handle the claim and deal with HMRC on your behalf.
+            CIS deductions are taken before any expenses or allowances are applied. Most registered subcontractors overpay across the year, and third-party reported averages put the annual refund at around £2,000 (illustrative, not guaranteed). We calculate the full refund, handle the claim and deal with HMRC on your behalf.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
             <Link href="/contact" className={btnPrimary}>
@@ -227,7 +227,7 @@ export default function CisRefundPage() {
               <div className="mt-8 space-y-3">
                 {[
                   "CIS specialists, not a general accounting practice",
-                  "24-hour response guarantee",
+                  "A specialist CIS accountant will be in touch",
                   "Fixed fees, quoted before we start",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">

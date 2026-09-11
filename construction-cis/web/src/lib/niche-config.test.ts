@@ -6,6 +6,7 @@
  */
 
 import { describe, it, expect } from "vitest";
+import { getActiveCta } from "@accounting-network/web-shared/lib/niche-config";
 import { niche } from "@/config/niche-loader";
 
 describe("niche config", () => {
@@ -40,9 +41,25 @@ describe("niche config", () => {
     expect(niche.content_strategy.source_identifier).toBeTruthy();
   });
 
-  it("has blog cta_heading and cta_button", () => {
-    expect(niche.blog.cta_heading).toBeTruthy();
-    expect(niche.blog.cta_button).toBeTruthy();
+  // TD-30: the top-level `blog` block was a byte-identical duplicate of
+  // cta.variants.leadgen.blog and only this test read it, so a correction to the
+  // rendered copy left an uncorrected twin in the file and the test passed either
+  // way. The block is gone; this now watches the copy BlogPostRenderer renders.
+  it("the rendered blog CTA copy is present", () => {
+    const blog = getActiveCta(niche).blog;
+    expect(blog.cta_heading).toBeTruthy();
+    expect(blog.cta_body).toBeTruthy();
+    expect(blog.cta_button).toBeTruthy();
+  });
+
+  // TD-11 / house_positions.md §13: the ~£2,000 refund average is third-party
+  // reported and must never be published as a flat population fact.
+  it("the rendered blog CTA caveats the £2,000 refund average (TD-11)", () => {
+    const body = getActiveCta(niche).blog.cta_body;
+    if (body.includes("£2,000")) {
+      expect(body).toMatch(/illustrative, not guaranteed/i);
+      expect(body).not.toMatch(/average CIS subcontractor overpays/i);
+    }
   });
 
   it("has 8 categories", () => {

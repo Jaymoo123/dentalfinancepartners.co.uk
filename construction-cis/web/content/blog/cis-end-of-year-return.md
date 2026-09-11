@@ -4,13 +4,6 @@ slug: cis-end-of-year-return
 date: '2026-07-14'
 updatedDate: '2026-07-14'
 author: Trade Tax Specialists Editorial Team
-image: "https://images.pexels.com/photos/7821879/pexels-photo-7821879.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-altText: "Accountant reviewing financial documents and receipts at a desk at year end."
-imageCredit:
-  photographer: "Tima Miroshnichenko"
-  photographerUrl: "https://www.pexels.com/@tima-miroshnichenko"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/an-accountant-reviewing-documents-7821879/"
 category: CIS Compliance
 metaTitle: "CIS End of Year: What Contractors and Subcontractors Must Do"
 metaDescription: "There is no annual CIS return. What year-end actually means under the Construction Industry Scheme: final CIS300, EPS deadlines, SA deductions, and how limited companies claim their repayment."

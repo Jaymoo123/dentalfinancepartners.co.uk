@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   // Unconditionally neutral: no free-call framing in the tab title regardless of variant.
   title: "Contact | CIS Accountants for Trades",
   description:
-    "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. We respond within one working day.",
+    "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. A specialist CIS accountant will be in touch.",
 };
 
 export default function ContactPage() {
@@ -56,7 +56,7 @@ export default function ContactPage() {
                   },
                   {
                     n: "02",
-                    title: "We are in touch within 24 hours",
+                    title: "A specialist CIS accountant gets in touch",
                     body: "A specialist CIS accountant will respond to arrange a short call. Not a sales team, not a call centre.",
                   },
                   {

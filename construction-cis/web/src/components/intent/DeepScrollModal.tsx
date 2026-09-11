@@ -40,7 +40,11 @@ export function DeepScrollModal() {
   useEffect(() => {
     if (!action || open || shownThisSession) return;
     if (isSuppressed(action.topic)) return;
-    // Shared per-session cap with ExitIntentModal: only one topic-offer modal per session.
+    // Per-session cap of one topic-offer modal. The key was shared with
+    // ExitIntentModal, which the phase 2 blog port deleted, so this component is
+    // now its only writer and reader. Kept rather than folded into the module
+    // flag above, because sessionStorage survives a page load and module state
+    // does not: the cadence is one modal per SESSION, not per page.
     try {
       if (window.sessionStorage.getItem("bfp_modal_shown") === "1") return;
     } catch { /* ignore */ }
@@ -117,7 +121,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-orange-500 px-4 py-2.5 text-center font-semibold text-white hover:bg-orange-600"
+            className="rounded-lg bg-[var(--btn-ground)] px-4 py-2.5 text-center font-semibold text-white hover:bg-[var(--btn-ground-hover)]"
           >
             {primaryLabel}
           </Link>

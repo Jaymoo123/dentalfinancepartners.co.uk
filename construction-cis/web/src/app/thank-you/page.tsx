@@ -7,7 +7,7 @@ import BookingPicker from "@/components/forms/BookingPicker";
 export const metadata: Metadata = {
   title: "Thank you | Your enquiry is on its way",
   description:
-    "Thanks for contacting Trade Tax Specialists. A specialist CIS accountant will be in touch within one working day.",
+    "Thanks for contacting Trade Tax Specialists. A specialist CIS accountant will be in touch to arrange a short call.",
   robots: { index: false },
 };
 

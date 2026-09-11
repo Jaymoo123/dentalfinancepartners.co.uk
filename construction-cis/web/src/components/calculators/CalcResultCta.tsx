@@ -17,7 +17,7 @@ export function CalcResultCta({ campaign }: { campaign: string; label?: string }
         formId="calc_result"
         messagePrefix={`[Calculator: ${campaign}]`}
         heading="Confirm your figure with a CIS specialist"
-        blurb="Estimates get you close. A specialist confirms your exact deductions, what you can reclaim, and the quickest route to your refund. No obligation, and we reply within one working day."
+        blurb="Estimates get you close. A specialist confirms your exact deductions, what you can reclaim, and the route to your refund. No obligation."
         submitLabel="Get my figure checked"
         className="rounded-2xl border-l-4 border-orange-500 bg-slate-50 p-5 sm:p-6"
       />

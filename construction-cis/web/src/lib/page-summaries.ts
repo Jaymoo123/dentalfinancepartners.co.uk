@@ -27,11 +27,11 @@
  */
 export const PAGE_SUMMARIES: Record<string, string> = {
   "/":
-    "Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status, sole trader and limited company accounting. The average CIS subcontractor overpays around £2,000 a year.",
+    "Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status, sole trader and limited company accounting. Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed).",
   "/services":
     "CIS accounting for UK construction subcontractors and contractors: CIS refunds, GPS applications, sole trader SA, limited company EPS reclaim and CIS300 returns.",
   "/cis-refund":
-    "CIS tax refund service for UK construction subcontractors. The average CIS subcontractor is owed around £2,000 back. We calculate, claim and handle every step.",
+    "CIS tax refund service for UK construction subcontractors. Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed). We calculate, claim and handle every step.",
   "/gross-payment-status":
     "CIS Gross Payment Status application and maintenance service. GPS eliminates the 20% deduction entirely. We manage the application, the three qualifying tests and ongoing April 2026 compliance.",
   "/for":
@@ -49,7 +49,7 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/about":
     "Specialist CIS accountants for UK construction trades. We only work with CIS subcontractors and contractors, so we understand the rules that a generalist accountant will not.",
   "/contact":
-    "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. We respond within one working day.",
+    "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. A specialist CIS accountant will be in touch.",
   "/cis-invoice-template":
     "Free CIS subcontractor invoice template for UK construction. Labour and materials split, CIS deduction line, plus standard VAT, domestic reverse charge and non-VAT versions. Excel and PDF.",
   "/cis-payment-deduction-statement-template":

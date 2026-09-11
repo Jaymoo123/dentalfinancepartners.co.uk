@@ -36,7 +36,7 @@ export default function AboutPage() {
               The same applies to gross payment status, contractor CIS300 obligations, the EPS real-time reclaim route for limited company subcontractors, and the April 2026 anti-fraud changes that affected GPS applications. These are not things that come up occasionally for us. They are the core of what we do.
             </p>
             <p>
-              We work on a fixed-fee basis. You know what you are paying before we start. We respond within one working day. You deal with specialist CIS accountants, not a call centre.
+              We work on a fixed-fee basis. You know what you are paying before we start. You deal with specialist CIS accountants, not a call centre.
             </p>
           </div>
           <div className="mt-12">

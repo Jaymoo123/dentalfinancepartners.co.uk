@@ -26,7 +26,7 @@ export const tradeTypes: TradeType[] = [
       "Self-employed plumbers are among the most consistently overpaid workers in CIS. The 20% deduction on labour income adds up fast across a full year of jobs, and materials costs (pipework, fittings, boiler parts) are excluded from the deduction base entirely. The result: most plumbing subcontractors have a significant CIS refund sitting unclaimed at HMRC.",
     stats: [
       { value: "20%", label: "Deducted on labour by main contractors" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "0%", label: "Deducted on materials costs" },
     ],
     challenges: [
@@ -99,7 +99,7 @@ export const tradeTypes: TradeType[] = [
       "Self-employed electricians working under CIS have 20% taken from their labour payments every month. Add up materials (cable, consumer units, accessories) that should be excluded from the deduction base, and many electricians are overpaying by several thousand pounds a year. That money is recoverable.",
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "55p", label: "Mileage rate per mile from April 2026" },
     ],
     challenges: [
@@ -163,7 +163,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
       { value: "0%", label: "Deducted on materials" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {
@@ -225,7 +225,7 @@ export const tradeTypes: TradeType[] = [
       "Groundworkers are among the most reliably CIS-taxed workers in construction. Foundations, drainage, earthworks, utilities installation: these are almost always CIS-registered contracts with a main contractor deducting 20% from every labour payment. The refund opportunity is significant, particularly because groundwork often involves substantial plant hire and materials costs that should be excluded from the deduction base.",
     stats: [
       { value: "20%", label: "Deducted on labour by main contractors" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "55p", label: "Van and car mileage rate from April 2026" },
     ],
     challenges: [
@@ -288,7 +288,7 @@ export const tradeTypes: TradeType[] = [
       "Roofing subcontractors work almost exclusively under CIS contracts, making the tax refund position particularly relevant. Tiles, slates, felt, battens, lead, guttering: materials costs are a significant proportion of roofing work and should all be excluded from the CIS deduction base. If your main contractor is not splitting this correctly, you are overpaying.",
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "£30,000", label: "GPS turnover threshold (net of materials)" },
     ],
     challenges: [
@@ -356,7 +356,7 @@ export const tradeTypes: TradeType[] = [
       "General builders and multi-trade sole traders often have the most complex CIS position of any construction worker. Multiple contractors, varied work types, significant materials supply and the need to manage both CIS subcontractor income and any contractor-side obligations make getting the accounts right genuinely important.",
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "19th", label: "Monthly CIS return deadline for contractors" },
     ],
     challenges: [
@@ -419,7 +419,7 @@ export const tradeTypes: TradeType[] = [
       "Gas engineers working under CIS face a specific combination of professional registration costs (Gas Safe is a significant annual expense), materials supply that is often excluded from the deduction base, and the same 20% deduction on labour income as every other CIS trade. The professional compliance costs are entirely allowable and often underchimed.",
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "100%", label: "Gas Safe registration: allowable expense" },
     ],
     challenges: [
@@ -482,7 +482,7 @@ export const tradeTypes: TradeType[] = [
       "Painters and decorators working under CIS on commercial or new-build residential projects have 20% taken from their labour payments. The materials split matters here too: paint, filler, tape, dust sheets, brushes and rollers you supply should be excluded from the deduction base. Over a full year, the recoverable overpayment adds up.",
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "55p", label: "AMAP mileage rate from April 2026" },
     ],
     challenges: [
@@ -545,7 +545,7 @@ export const tradeTypes: TradeType[] = [
       "Scaffolding subcontractors working under CIS operate in one of the more specialised construction trades. The capital cost of scaffold equipment, significant materials supply (tubes, boards, fittings, base plates) and the specialist nature of the work create a distinct tax picture. Most scaffolding subbies have a meaningful CIS refund available.",
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "£30,000", label: "GPS qualification threshold (net)" },
     ],
     challenges: [
@@ -608,7 +608,7 @@ export const tradeTypes: TradeType[] = [
       "Civil and structural engineers working as self-employed subcontractors in construction operate in one of the most technically demanding corners of the CIS scheme. Heavy civil works, infrastructure contracts, plant hire and materials supply all create a complex deduction picture. Getting it right matters more as earnings grow.",
     stats: [
       { value: "20%", label: "Deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "£30,000", label: "GPS qualification threshold (net of materials)" },
     ],
     challenges: [
@@ -676,7 +676,7 @@ export const tradeTypes: TradeType[] = [
       "Bricklaying is one of the most consistently cited trades in HMRC's own CIS worked examples, and with good reason. The split between labour and materials on a bricklayer's invoice is specific and easy to get wrong, with most errors costing subcontractors money rather than the contractor.",
     stats: [
       { value: "20%", label: "CIS deducted on labour" },
-      { value: "~£2,000", label: "Average annual overpayment" },
+      { value: "~£2,000", label: "Illustrative annual CIS overpayment" },
       { value: "0%", label: "Deducted with Gross Payment Status" },
     ],
     challenges: [
@@ -744,7 +744,7 @@ export const tradeTypes: TradeType[] = [
       "Plasterers operate across some of the most materials-intensive work in construction. Plaster, plasterboard, bonding compounds, skimming materials and specialist tools all add up to a cost base that CIS deductions completely ignore. Most plastering subcontractors are owed a refund at the end of each tax year.",
     stats: [
       { value: "20%", label: "CIS deducted on labour" },
-      { value: "~£2,000", label: "Typical annual overpayment" },
+      { value: "~£2,000", label: "Illustrative annual CIS overpayment" },
       { value: "6%", label: "Class 4 NI on profits up to £50,270" },
     ],
     challenges: [
@@ -949,7 +949,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "CIS deducted on labour" },
       { value: "£30,000", label: "Turnover test for GPS" },
-      { value: "~£2,000", label: "Typical annual overpayment" },
+      { value: "~£2,000", label: "Illustrative annual CIS overpayment" },
     ],
     challenges: [
       {
@@ -1017,7 +1017,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on labour payments only" },
       { value: "0%", label: "Deducted on materials (timber, sheet goods, ironmongery)" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {
@@ -1095,7 +1095,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on labour payments only" },
       { value: "0%", label: "Deducted on tiles, adhesive and grout" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {
@@ -1168,7 +1168,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on labour payments only" },
       { value: "0%", label: "Deducted on glass units, frames and sealants" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {
@@ -1235,7 +1235,7 @@ export const tradeTypes: TradeType[] = [
       "Steel fixers are one of the most labour-intensive trades in construction. On most contracts, the rebar and reinforcement materials are supplied by the main contractor, meaning a steel fixer's invoice is almost entirely labour. That matters for CIS because the 20% deduction applies to the full labour payment with very little materials offset to reduce the base, making the deduction rate more impactful than for trades that supply significant materials. It also means that allowable expenses, correct registration and GPS eligibility become the main tools for reducing the annual tax burden.",
     stats: [
       { value: "20%", label: "Deducted on labour (often the full invoice)" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "£30,000", label: "GPS turnover threshold (net of materials)" },
     ],
     challenges: [
@@ -1309,7 +1309,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on labour payments only" },
       { value: "0%", label: "Deducted on MF grid, board and acoustic tiles" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {
@@ -1776,7 +1776,7 @@ export const tradeTypes: TradeType[] = [
       "Insulation installers working on new-build sites or retrofit schemes typically work under CIS because they are subcontractors to a main contractor. ECO4 and other government-backed retrofit programmes route work through approved main contractors, meaning self-employed installers receive CIS-deducted payments whether or not they realise it. The materials content of insulation work (rigid board, mineral wool, spray foam, membranes) is significant and should be excluded from the deduction base on every job.",
     stats: [
       { value: "20%", label: "CIS deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "0%", label: "Deducted on materials supplied" },
     ],
     challenges: [
@@ -1854,7 +1854,7 @@ export const tradeTypes: TradeType[] = [
       "Steel erection is predominantly a labour-only trade. Most steel erector subcontractors supply their own labour and specialist working-at-height equipment but not the structural steelwork itself, which is designed and supplied by the main contractor or steel fabricator. That labour-only position means the full payment is within the CIS deduction base, making registration, expenses and gross payment status critical to managing the tax position correctly.",
     stats: [
       { value: "20%", label: "CIS deducted on labour payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "£30,000", label: "GPS qualification threshold (net CIS turnover)" },
     ],
     challenges: [
@@ -1927,7 +1927,7 @@ export const tradeTypes: TradeType[] = [
       "Shopfitting sits within CIS as a specified construction operation. Internal fit-out, fixtures, joinery, flooring and the installation of power and data cabling as part of a commercial fit-out project all fall within the scheme. The complication for shopfitters is the mixed supply contract: jobs often blend elements that are clearly CIS-subject with supply-only elements (manufactured units, furniture, equipment) that may not be. Getting the deduction base right on every job requires attention.",
     stats: [
       { value: "20%", label: "CIS deducted on labour element of fit-out payments" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "0%", label: "Deducted on qualifying materials costs" },
     ],
     challenges: [
@@ -2005,7 +2005,7 @@ export const tradeTypes: TradeType[] = [
       "Fencing contractors face a genuine scope question before CIS even enters the picture: is the work they are carrying out a construction operation at all? The answer depends on context, not just on the fact that fencing is involved. Construction-site fencing (security hoardings, boundary fencing on a development, permanent fencing forming part of a built structure) is within CIS. Agricultural fencing on farmland that has no connection to a building project is generally outside it. Getting that boundary wrong, in either direction, has real consequences.",
     stats: [
       { value: "20%", label: "CIS deducted on qualifying fencing contracts" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "0%", label: "Deducted on materials (posts, rails, wire, panels)" },
     ],
     challenges: [
@@ -2078,7 +2078,7 @@ export const tradeTypes: TradeType[] = [
       "Landscapers face a more important CIS scope question than almost any other trade: not every landscaping job is a construction operation, and HMRC draws the line in a specific place. Routine grounds maintenance, gardening and estate upkeep are outside CIS. Landscaping that forms part of a new-build development, a site clearance or a construction contract is inside it. That boundary determines whether a main contractor is right to deduct from your payments at all, and whether you have a refund sitting unclaimed with HMRC.",
     stats: [
       { value: "20%", label: "CIS deducted on qualifying construction landscaping" },
-      { value: "~£2,000", label: "Average first-year CIS refund" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "0%", label: "Deducted on materials (turf, plants, aggregates, topsoil)" },
     ],
     challenges: [
@@ -2162,7 +2162,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on labour element of CIS payments" },
       { value: "0%", label: "Deducted on plant hire costs (passed on at cost)" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {
@@ -2244,7 +2244,7 @@ export const tradeTypes: TradeType[] = [
       "Drainage contractors work across one of the most clearly defined areas of CIS. Installation, repair and maintenance of drainage systems are listed construction operations under s.74(2) Finance Act 2004. Whether you are laying new drainage on a housing development, carrying out CCTV surveys ahead of remediation, or undertaking utilities-adjacent pipework, the CIS deduction applies to your labour income. The allowable expense pool is substantial: drainage pipe, chambers and materials should be excluded from the deduction base, and the capital cost of CCTV survey equipment, jetting vehicles and specialist plant qualifies for capital allowances.",
     stats: [
       { value: "20%", label: "Deducted on labour by main contractors" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "£30,000", label: "GPS turnover threshold (net of materials)" },
     ],
     challenges: [
@@ -2317,7 +2317,7 @@ export const tradeTypes: TradeType[] = [
       "Cladding installers work across one of the most active and technically demanding sectors of UK construction. Post-Grenfell remediation programmes have driven substantial volumes of recladding work on existing buildings, and fire-rated cladding systems now make up a significant share of new-build facade contracts. Cladding installation is an alteration to a building and falls squarely within CIS as a construction operation under s.74(2) Finance Act 2004. The allowable expense picture is strong: cladding panels, fixings, rails and insulation boards should be excluded from the deduction base, while working-at-height equipment and training costs add to the expense pool.",
     stats: [
       { value: "20%", label: "Deducted on labour by main contractors" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
       { value: "55p", label: "Mileage rate per mile from April 2026" },
     ],
     challenges: [
@@ -2401,7 +2401,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on labour on CIS contracts" },
       { value: "0%", label: "Deducted on materials (aggregate, pavers, edgings)" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {
@@ -2474,7 +2474,7 @@ export const tradeTypes: TradeType[] = [
     stats: [
       { value: "20%", label: "Deducted on site installation and fixing (CIS)" },
       { value: "0%", label: "CIS deduction on pure off-site workshop fabrication" },
-      { value: "~£2,000", label: "Average first-year CIS refund (illustrative)" },
+      { value: "~£2,000", label: "Illustrative first-year CIS refund" },
     ],
     challenges: [
       {

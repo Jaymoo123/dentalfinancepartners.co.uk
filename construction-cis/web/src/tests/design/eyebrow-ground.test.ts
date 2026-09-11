@@ -48,6 +48,19 @@ const KNOWN_EYEBROW_CONSUMERS = [
   { file: "app/about/page.tsx", line: 16 },
   { file: "app/contact/page.tsx", line: 20 },
   { file: "app/not-found.tsx", line: 8 },
+  // Phase 2 / WP-B1. The article header card's category eyebrow. LIGHT ground:
+  // the card is bg-neutral-50 (#fafafa) inside a bg-white <article>, and the
+  // bare default --accent-strong (#c2410c) measures 4.96 there, above the 4.5
+  // text floor, so no colour utility is wanted. Renders on all 82 articles.
+  { file: "components/blog/BlogPostRenderer.tsx", line: 108 },
+  // Phase 2 / WP-B5. LeadCTAPanel's two variants, spelled out as two literal
+  // classNames rather than one conditional so this guard can see both.
+  // DARK (navy variant): carries text-orange-400 (#ff8904), 7.54 on #171717 and
+  // 10.59 on the panel's own ground --dark (#0f172a). LIGHT (contained variant,
+  // the one /blog renders): bare default --accent-strong (#c2410c) on
+  // --hero-cream (#fafaf7) = 4.95, above the 4.5 text floor.
+  { file: "components/marketing/LeadCTAPanel.tsx", line: 129 },
+  { file: "components/marketing/LeadCTAPanel.tsx", line: 131 },
 ];
 
 /** Same className match used to enumerate occurrences AND to check the pinned ones. */

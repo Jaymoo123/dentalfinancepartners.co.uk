@@ -101,7 +101,7 @@ export default function DetailsForm({
       <div className="border border-orange-200 bg-orange-50 p-6 text-center">
         <p className="text-lg font-bold text-slate-900">Thank you, that is everything we need</p>
         <p className="mt-2 text-base text-slate-700">
-          A specialist will be in touch shortly. If you would like to pick a time that suits
+          A specialist will be in touch. If you would like to pick a time that suits
           you, you can book a callback below.
         </p>
         {bookingToken && (

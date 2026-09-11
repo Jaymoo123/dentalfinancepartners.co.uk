@@ -35,15 +35,15 @@ const packagesMode = isPackagesMode(niche);
 export const metadata: Metadata = {
   title: "CIS Accountants & Construction Tax Specialists | UK",
   description:
-    "Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status, sole trader and limited company accounting. The average CIS subcontractor overpays around £2,000 a year.",
+    "Specialist CIS accountants for UK construction subcontractors and contractors. CIS tax refunds, gross payment status, sole trader and limited company accounting. Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed).",
   alternates: { canonical: siteConfig.url },
 };
 
 const keyStats = [
-  { value: "~£2,000", label: "Average CIS subcontractor overpayment per year" },
+  { value: "4 years", label: "How far back a CIS refund can be claimed" },
   { value: "1.4m+", label: "CIS-registered subcontractors in the UK" },
   { value: "20%", label: "Deducted on labour (0% with GPS)" },
-  { value: "24h", label: "Response guarantee" },
+  { value: "55p", label: "Mileage rate for the first 10,000 miles" },
 ];
 
 const testimonials = [
@@ -184,7 +184,7 @@ export default function HomePage() {
             </div>
             <div className="hero-reveal-delay">
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300 sm:text-xl">
-                We are CIS accountants for UK construction subcontractors and contractors. The average CIS subcontractor overpays around £2,000 a year in tax deductions. We claim it back, then keep you compliant.
+                We are CIS accountants for UK construction subcontractors and contractors. Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed). We claim it back, then keep you compliant.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 <HeroOffer
@@ -528,7 +528,7 @@ export default function HomePage() {
               <div className="mt-8 space-y-4">
                 {[
                   { title: "CIS specialists only", sub: "We do not work with non-construction clients" },
-                  { title: "24-hour response time", sub: "Usually the same day" },
+                  { title: "A specialist CIS accountant gets in touch", sub: "Not a sales team, not a call centre" },
                   { title: "Fixed fees, no surprises", sub: "Quoted before we start" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
                 ].map((item) => (
@@ -548,7 +548,7 @@ export default function HomePage() {
               {packagesMode ? (
                 <>
                   <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-2">Prefer to send a message?</h3>
-                  <p className="text-sm text-neutral-600 mb-4 sm:mb-6">Tell us where you are up to and we will come back within one working day.</p>
+                  <p className="text-sm text-neutral-600 mb-4 sm:mb-6">Tell us where you are up to and a specialist CIS accountant will be in touch.</p>
                   <LeadForm submitLabel="Send enquiry" />
                 </>
               ) : (

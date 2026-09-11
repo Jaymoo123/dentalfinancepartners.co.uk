@@ -4,13 +4,6 @@ slug: how-long-large-construction-firms-take-to-pay-subcontractors
 date: '2026-07-23'
 updatedDate: '2026-07-23'
 author: Trade Tax Specialists Editorial Team
-image: "https://images.pexels.com/photos/8961042/pexels-photo-8961042.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-altText: "Person reviewing an invoice and paperwork at a desk with a laptop."
-imageCredit:
-  photographer: "Nataliya Vaitkevich"
-  photographerUrl: "https://www.pexels.com/@n-voitkevich"
-  source: "Pexels"
-  sourceUrl: "https://www.pexels.com/photo/person-holding-white-printer-paper-8961042/"
 category: CIS Compliance
 metaTitle: "How Long Do Big Construction Firms Take to Pay? The Data"
 metaDescription: "225 large construction firms' own payment data: median 33 days to pay, one in four over 45 days. What it means for subcontractor cashflow and CIS."

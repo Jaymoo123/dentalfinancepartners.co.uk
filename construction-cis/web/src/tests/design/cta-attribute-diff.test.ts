@@ -48,6 +48,11 @@ const SRC = join(__dirname, "..", "..");
  * must arrive with a placement and a goal rather than silently without.
  */
 const PINNED = [
+  // Phase 2 / WP-B5, ADDITIVE. /blog made no ask at all: 110 sessions, 42 form
+  // views, 0 completions over 19 days. A new id splits no existing history, so
+  // the five baseline triples are untouched. Placement/goal follow the site's
+  // own `hero_primary|hero|lead`, not Property's `hero_book`.
+  "src/app/blog/page.tsx|blog_index_primary|hero|lead",
   "src/app/contact/page.tsx|contact_pricing_link|contact|null",
   "src/app/page.tsx|hero_primary|hero|lead",
   "src/app/page.tsx|home_cta_primary|home_cta|lead",
@@ -129,6 +134,49 @@ describe("data-cta triple snapshot (trap 22)", () => {
       `header_primary.href is "${href}", so header_nav_primary now emits goal="pricing". ` +
         "cta_baseline.json pins goal=\"contact\" on 246 routes: changing it splits vw_cta_performance history.",
     ).toBe(true);
+  });
+
+  /**
+   * The kit triple. `extractTriples` walks src/ only, so the one CTA this site
+   * renders from outside src/ was unpinned: `blog_sidebar_book|sidebar|form`,
+   * arriving from `packages/web-shared/design/blog/BlogSidebarCta.tsx` on 82
+   * article routes. A placement or goal flip inside the kit would have passed
+   * this site's guard while splitting vw_cta_performance, which is trap 22 with
+   * the edit one directory further away. The kit is shared by Trade, generalist,
+   * Medical and Solicitors (Property keeps a local copy of the same file), so the
+   * guard pins it rather than the kit defending itself.
+   *
+   * Two halves, because the rendered placement is the kit DEFAULT: the kit's
+   * declared triple, and the fact that BlogPostRenderer does not pass
+   * `ctaPlacement`. Pinning only the kit would pass while the host overrode the
+   * placement; pinning only the host would pass while the default moved.
+   */
+  it("the kit's blog sidebar CTA triple is unchanged", () => {
+    const kit = join(
+      SRC, "..", "..", "..",
+      "packages", "web-shared", "design", "blog", "BlogSidebarCta.tsx",
+    );
+    const lines = readFileSync(kit, "utf8").split("\n");
+    const i = lines.findIndex((l) => attr("data-cta", l) !== undefined);
+    expect(i, "no data-cta found in the kit BlogSidebarCta: the extractor is stale").toBeGreaterThan(-1);
+    const window = lines.slice(Math.max(0, i - 4), i + 5);
+    const triple = [
+      attr("data-cta", lines[i]),
+      window.map((l) => attr("data-cta-placement", l)).find((v) => v !== undefined),
+      window.map((l) => attr("data-cta-goal", l)).find((v) => v !== undefined),
+    ].join("|");
+    expect(triple).toBe("blog_sidebar_book|ctaPlacement|form");
+
+    // The default the condition above resolves to, and the host's non-override.
+    expect(readFileSync(kit, "utf8")).toMatch(/ctaPlacement\s*=\s*"sidebar"/);
+    const host = readFileSync(
+      join(SRC, "components", "blog", "BlogPostRenderer.tsx"), "utf8",
+    );
+    expect(
+      /ctaPlacement=/.test(host),
+      "BlogPostRenderer now passes ctaPlacement, so the rendered placement is no longer the kit default \"sidebar\". " +
+        "That is a placement flip on 82 routes: record it here and in the deploy-watch note.",
+    ).toBe(false);
   });
 
   it("StickyCTA still carries no data-cta (TD-32), so its rename is visible here", () => {

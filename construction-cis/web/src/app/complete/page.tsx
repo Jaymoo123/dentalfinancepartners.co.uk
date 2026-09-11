@@ -83,8 +83,8 @@ export default async function CompletePage({
           <div className="border border-orange-200 bg-orange-50 p-6 text-center">
             <p className="text-lg font-bold text-slate-900">You are all set</p>
             <p className="mt-2 text-base text-slate-700">
-              We have everything we need. A specialist from our partner network will be in touch
-              shortly. If you would like to pick a time that suits you, you can book a callback below.
+              We have everything we need. A specialist from our partner network will be in touch.
+              If you would like to pick a time that suits you, you can book a callback below.
             </p>
             {bookingToken && (
               <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>

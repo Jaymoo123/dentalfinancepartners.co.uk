@@ -2,10 +2,21 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import type { BlogPost } from "@/types/blog";
+/**
+ * Card metadata only. The list must never receive `contentHtml`: this is a client
+ * component, so anything on the prop is serialized into the flight payload.
+ */
+export type BlogListPost = {
+  title: string;
+  summary: string;
+  category: string;
+  slug: string;
+  date: string;
+  categorySlug: string;
+};
 
 type BlogListWithSearchProps = {
-  posts: Array<BlogPost & { categorySlug: string }>;
+  posts: BlogListPost[];
   categories: Array<{ slug: string; name: string; count: number }>;
   readTimes: Map<string, number>;
   activeCategory?: string;
@@ -64,8 +75,17 @@ export function BlogListWithSearch({
   }, [posts, searchQuery, sortBy, activeCategory]);
 
   const totalPages = Math.ceil(filteredAndSortedPosts.length / postsPerPage);
-  const startIndex = (currentPage - 1) * postsPerPage;
-  const paginatedPosts = filteredAndSortedPosts.slice(startIndex, startIndex + postsPerPage);
+
+  // DESIGN_SYSTEM.md 4e: paginate by HIDING, never by slicing. Pagination is
+  // client state behind <button>s, so a sliced grid leaves cards 13..N out of the
+  // server HTML and the corpus uncrawlable from its own index. Every card is
+  // rendered; `visibleOrder` carries each card's position in the filtered and
+  // sorted order, which drives both the `hidden` attribute and the CSS `order`
+  // (the DOM order stays the server's, so sorting still works while hiding).
+  const visibleOrder = useMemo(
+    () => new Map(filteredAndSortedPosts.map((p, i) => [p.slug, i])),
+    [filteredAndSortedPosts]
+  );
 
   const handleSearchChange = (query: string) => {
     setSearchQuery(query);
@@ -122,8 +142,8 @@ export function BlogListWithSearch({
         </p>
       )}
 
-      {paginatedPosts.length === 0 ? (
-        <div className="mt-8 border border-neutral-200 bg-[#fafaf7] p-8 text-center">
+      {filteredAndSortedPosts.length === 0 ? (
+        <div className="mt-8 rounded-xl border border-neutral-200 bg-[var(--hero-cream)] p-8 text-center">
           <p className="text-base text-neutral-500">
             {searchQuery
               ? `No articles found matching "${searchQuery}". Try a different search term.`
@@ -132,16 +152,20 @@ export function BlogListWithSearch({
         </div>
       ) : (
         <>
-          <ul className="mt-8 space-y-4 sm:space-y-5">
-            {paginatedPosts.map((p) => {
+          <ul className="mt-8 flex flex-col gap-4 sm:gap-5">
+            {posts.map((p) => {
               const readTime = readTimes.get(p.slug) ?? 0;
+              const visibleIndex = visibleOrder.get(p.slug);
+              const offPage =
+                visibleIndex === undefined ||
+                Math.floor(visibleIndex / postsPerPage) + 1 !== currentPage;
               return (
-                <li key={p.slug}>
-                  <article className="border border-neutral-200 bg-[#fafaf7] p-5 sm:p-6 transition-shadow hover:shadow-md">
+                <li key={p.slug} hidden={offPage} style={{ order: visibleIndex ?? 0 }}>
+                  <article className="rounded-xl border border-neutral-200 bg-[var(--hero-cream)] p-5 sm:p-6 transition-shadow hover:shadow-md">
                     <p className="text-[11px] font-bold uppercase tracking-wider text-orange-700">
                       {p.category}
                     </p>
-                    <h2 className="mt-2 text-lg font-semibold text-neutral-900 sm:text-xl">
+                    <h2 className="mt-2 text-lg font-bold text-neutral-900 sm:text-xl">
                       <Link
                         href={`/blog/${p.categorySlug}/${p.slug}`}
                         className="hover:text-orange-700 transition-colors"
@@ -150,7 +174,11 @@ export function BlogListWithSearch({
                       </Link>
                     </h2>
                     <p className="mt-2 text-sm leading-relaxed text-neutral-500 sm:text-base">{p.summary}</p>
-                    <div className="mt-4 flex items-center gap-3 text-sm text-neutral-400">
+                    {/* --ink-whisper (#737373), not text-neutral-400: #a3a3a3 on the
+                        --hero-cream card measures 2.47, below the 4.5 text floor, on
+                        every card of /blog and all 8 hubs. --ink-whisper is 4.64 there
+                        and was retargeted in Phase 1 for exactly this. */}
+                    <div className="mt-4 flex items-center gap-3 text-sm text-[var(--ink-whisper)]">
                       {p.date ? (
                         <time dateTime={p.date}>
                           {new Intl.DateTimeFormat("en-GB", {
@@ -169,7 +197,13 @@ export function BlogListWithSearch({
             })}
           </ul>
 
-          {totalPages > 1 && !searchQuery && (
+          {/* Search results paginate too. The pager used to carry `&& !searchQuery`,
+              which meant a search matching more than 12 articles rendered 12 and
+              offered no way to the rest: cards 13..N keep `hidden`, so they are
+              unreachable by scroll and by browser find. `handleSearchChange` already
+              resets to page 1, and `totalPages` is computed off the filtered list,
+              so clearing the search returns to the unfiltered first page. */}
+          {totalPages > 1 && (
             <nav className="mt-8 sm:mt-12" aria-label="Pagination">
               <div className="flex items-center justify-center gap-2 flex-wrap">
                 {currentPage > 1 && (

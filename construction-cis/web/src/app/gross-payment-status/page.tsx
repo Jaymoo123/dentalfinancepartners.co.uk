@@ -237,7 +237,7 @@ export default function GrossPaymentStatusPage() {
               <div className="mt-8 space-y-3">
                 {[
                   "CIS specialists, not a general practice",
-                  "24-hour response guarantee",
+                  "A specialist CIS accountant will be in touch",
                   "Fixed fees, quoted before we start",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">

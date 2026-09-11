@@ -184,7 +184,7 @@ faqs:
 
 <p>On the figures in the worked example (£8,000 a month gross CIS labour, 20% rate), a sole trader accumulates £19,200 locked at HMRC over a full year before the January Self Assessment deadline releases any of it. The same limited company, using the EPS correctly, recovers most of that credit each month against its PAYE bill.</p>
 
-<p>The limited-company structure brings additional costs: CT filing, dividend extraction (2026/27 rates: 10.75% basic, 35.75% higher, 39.35% additional), employer NIC at 15% above £5,000, and accountancy fees typically £150 to £250 a month for a company with full CIS compliance. The structure decision should weigh all of those, not just the EPS timing benefit. Our guide to <a href="/blog/cis-basics/cis-sole-trader-vs-limited-company">CIS sole trader versus limited company</a> works through the full comparison.</p>
+<p>The limited-company structure brings additional costs: CT filing, dividend extraction (2026/27 rates: 10.75% basic, 35.75% higher, 39.35% additional), employer NIC at 15% above £5,000, and accountancy fees. Trade-reported market ranges put full-service limited-company fees at roughly £150 to £250 a month for a company with full CIS compliance; that is a market range rather than a published rate, and it is not a quote. The structure decision should weigh all of those, not just the EPS timing benefit. Our guide to <a href="/blog/cis-basics/cis-sole-trader-vs-limited-company">CIS sole trader versus limited company</a> works through the full comparison.</p>
 
 <h2>The alternative: Gross Payment Status</h2>
 

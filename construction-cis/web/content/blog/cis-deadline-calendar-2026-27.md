@@ -195,7 +195,7 @@ generator: "claude-sonnet-4-6 | wave-3 | 2026-06-12"
 </tbody>
 </table>
 
-<p>The 12-month escalation point is particularly dangerous for contractors who avoid addressing late returns. A return that has been outstanding for a year can attract a penalty equal to 100% of the CIS deductions that should have been reported. On a return covering £5,000 of CIS deductions, that is a £5,000 penalty on top of the deductions themselves. For a full breakdown of how penalties accumulate and how to appeal, see our guide to <a href="/blog/cis-compliance/cis-penalties-and-appeals">CIS penalties and appeals</a>.</p>
+<p>The 12-month escalation point is particularly dangerous for contractors who avoid addressing late returns. A return outstanding for a year attracts a further £300 or 5% of the CIS deductions on that return, whichever is higher, on top of the £100, the £200 and the six-month charge of £300 or 5% already applied. Where HMRC concludes that information was withheld deliberately, a separate additional penalty of up to £3,000 or 100% of the CIS deductions can apply as well, so on a return covering £5,000 of deductions the deliberate-withholding layer alone could reach £5,000. For a full breakdown of how penalties accumulate and how to appeal, see our guide to <a href="/blog/cis-compliance/cis-penalties-and-appeals">CIS penalties and appeals</a>.</p>
 
 <h2>Self Assessment deadlines for CIS subcontractors (2026/27)</h2>
 
