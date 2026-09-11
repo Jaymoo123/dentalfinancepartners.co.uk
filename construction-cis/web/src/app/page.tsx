@@ -89,7 +89,7 @@ const painPoints = [
 const servicesOverview = [
   {
     title: "CIS tax refunds",
-    body: "We calculate the full refund you are owed, account for all allowable expenses, and submit your Self Assessment return. Most subcontractors receive their refund within 8 to 12 weeks.",
+    body: "We calculate the full refund you are owed, account for all allowable expenses, and submit your Self Assessment return.",
     href: "/cis-refund",
     Icon: BadgePoundSterling,
   },
@@ -157,7 +157,7 @@ const faqs = [
   {
     question: "Do I need a CIS accountant?",
     answer:
-      "Not strictly, but a specialist CIS accountant will identify overpayments a generalist misses. The materials split, mileage at the correct rate, capital allowances on tools and equipment, and the GPS application process all require specific knowledge of how CIS works. Most subcontractors recoup our fees many times over in the first year's refund alone.",
+      "Not strictly, but a specialist CIS accountant will identify overpayments a generalist misses. The materials split, mileage at the correct rate, capital allowances on tools and equipment, and the GPS application process all require specific knowledge of how CIS works.",
   },
   {
     question: "How do I claim back CIS deductions?",
@@ -406,7 +406,7 @@ export default function HomePage() {
             The CIS mechanics we handle, area by area.
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            A CIS refund can be claimed up to four years back. There are more than 1.4 million CIS-registered subcontractors in the UK, and 20% is deducted on labour, or 0% once gross payment status is in place. Mileage runs at 55p per mile for the first 10,000 miles from April 2026. Each of those is a number on your return, and each one is somewhere a return goes wrong.
+            A CIS refund can be claimed up to four years back. There are more than 1.4 million CIS-registered subcontractors in the UK, and deductions are taken from the labour element only, at 20% for a registered subcontractor, 30% if you are not registered, or 0% once gross payment status is in place. Mileage runs at 55p per mile for the first 10,000 miles from April 2026. Each of those is a number on your return, and each one is somewhere a return goes wrong.
           </p>
           <div className="mt-12 overflow-x-auto rounded-xl border border-neutral-200">
             <table className="w-full min-w-[36rem] text-left text-sm sm:text-base">

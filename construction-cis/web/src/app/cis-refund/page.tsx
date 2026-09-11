@@ -244,7 +244,7 @@ export default function CisRefundPage() {
             },
             {
               title: "A specialist CIS accountant will be in touch",
-              detail: "You speak to someone who works on CIS returns every week.",
+              detail: "Not a sales team, not a call centre.",
             },
             {
               title: "Fixed fees, quoted before we start",

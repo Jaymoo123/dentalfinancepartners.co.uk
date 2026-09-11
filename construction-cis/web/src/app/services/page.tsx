@@ -36,7 +36,7 @@ const services = [
     body: [
       "The 20% CIS deduction is taken before any expenses or allowances are applied. Most registered sole-trader subcontractors overpay across the year. We calculate the full refund you are owed, account for every allowable expense (mileage at 55p per mile from April 2026, tools, PPE, van costs, professional subscriptions), and submit your Self Assessment return.",
       "We check your deduction slips for the correct deduction base. CIS deductions apply to the labour element only: the cost of materials you supply is excluded. Where a main contractor has been deducting from the full invoice value, we identify the overpayment and recover it.",
-      "Most subcontractors receive their refund within 8 to 12 weeks of a correctly filed return. We follow up with HMRC where delays occur.",
+      "We follow up with HMRC where a repayment is delayed.",
     ],
   },
   {
