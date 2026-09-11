@@ -1,0 +1,2428 @@
+{
+  "/|mobile": [
+    "p \"Why dentists choose us\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"What the work looks like\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Area: Practice acquisition and structuri\" ratio=2.64 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"Practical guidance\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Practice finance\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \"Buying a practice\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"The reality\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Why choose a specialist\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Who we work with\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Self-employed · NHS & private\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Sole trader · Limited company · Partners\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Group structures · Acquisition support\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/services|mobile": [
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=16px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/about|mobile": [
+    "a \"blog\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"NHS/private reporting\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"associate Self Assessment\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "requestfailed: https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk net::ERR_SSL_PROTOCOL_ERROR",
+    "console: Failed to load resource: net::ERR_SSL_PROTOCOL_ERROR [https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk]",
+    "console: Failed to fetch RSC payload for http://localhost:3141/blog/associate-tax/associate-dentist-tax-self-assessment-uk. Falling back to browser navigation. TypeError [http://localhost:3141/_next/static/chunks/18-b7067745673704dc.js]"
+  ],
+  "/contact|mobile": [
+    "a \"Privacy Policy\" ratio=2.54 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations|mobile": [
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog|mobile": [
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators|mobile": [
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides|mobile": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice purchase\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-associates|mobile": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "p \"You have spent real time on this. A quic\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-principals|mobile": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-practice-buyers|mobile": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-locum-dentists|mobile": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/free-practice-health-check|mobile": [
+    "button \"Continue\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research|mobile": [
+    "p \"Updated Mar 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated NHS England Digital 2024/25 edit\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated CQC Care Directory 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated Apr 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dental-activity-index|mobile": [
+    "a \"English Contractor Monthly General Denta\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the activity data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dentist-earnings-index|mobile": [
+    "a \"Dental Earnings and Expenses Estimates, \" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the earnings time series (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-practice-density|mobile": [
+    "a \"CQC Care Directory\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Mid-2024 Population Estimates\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the density data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-company-formation-index|mobile": [
+    "a \"Companies House Advanced Search API\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the formation data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/privacy-policy|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/terms|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/cookie-policy|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/london|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/manchester|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/associate-tax|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-accounting|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/capital-allowances-and-equipment|mobile": [
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/buying-a-practice|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-contracts|mobile": [
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale|mobile": [
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/vat-and-compliance|mobile": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-pension|mobile": [
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/locum-tax|mobile": [
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/general|mobile": [
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/specialist-services|mobile": [
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/uda-value|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/associate-take-home|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-valuation|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-purchase|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-sale-cgt|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/locum-structure|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/principal-extraction|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/sdr-scotland|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/superannuation-contributions|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/equipment-capital-allowance|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-owner-income-benchmark|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/dental-tax-deductions|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/nhs-pension-aa-taper|mobile": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/associate-tax-survival-guide|mobile": [
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-profit-extraction-partnership-vs-ltd|mobile": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/goodwill-valuation-and-sale-playbook|mobile": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-contract-essentials-for-dentists|mobile": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-pension-scheme-essentials-for-dentists|mobile": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-purchase-financial-due-diligence|mobile": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate-incorporation|mobile": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-question scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#rates scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ltd scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-layer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#verdict scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ir35 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate|mobile": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#status scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#income-tax scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#national-insurance scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#expenses scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#lab-costs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#self-assessment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#records scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/principal|mobile": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-decision scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#limited-company scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#comparison scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#director-loan scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/buying|mobile": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#before-you-start scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#valuation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#normalised-ebitda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-contract scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#financial-due-diligence scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/selling|mobile": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-youre-selling scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#cgt-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#gain-calculation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-vs-asset scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#earn-outs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#reinvestment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/nhs|mobile": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#uda-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#effective-uda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#benchmarks scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#real-value scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#under-delivery scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-trap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-officers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#annual-certificate scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance/100-percent-dental-practice-finance|mobile": [
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#can-you-really-buy-a-dental-practice-with-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-professional-category-why-lenders-back-dentists scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-100-actually-covers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-criteria-what-makes-you-eligible scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#security-and-personal-guarantees-when-there-is-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability-how-much-you-can-actually-borrow scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#when-100-is-not-offered-and-how-to-bridge-the-gap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#where-a-broker-and-an-accountant-fit-in scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice|mobile": [
+    "p \"Key takeaways\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#why-the-sale-structure-matters-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#asset-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-the-buyer-acquires scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller-unincorporated-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-double-tax-trap-on-a-company-asset-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#key-differences-asset-sale-vs-share-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-nhs-contract-continuity-vs-novation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#vat-in-a-dental-practice-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#practical-steps-for-both-parties scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#summary-key-takeaways scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/|tablet": [
+    "p \"Why dentists choose us\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"What the work looks like\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Area: Practice acquisition and structuri\" ratio=2.64 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"Practical guidance\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Practice finance\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \"Buying a practice\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"The reality\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Why choose a specialist\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Who we work with\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Self-employed · NHS & private\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Sole trader · Limited company · Partners\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Group structures · Acquisition support\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/services|tablet": [
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/about|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "requestfailed: https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk net::ERR_SSL_PROTOCOL_ERROR",
+    "console: Failed to load resource: net::ERR_SSL_PROTOCOL_ERROR [https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk]",
+    "console: Failed to fetch RSC payload for http://localhost:3141/blog/associate-tax/associate-dentist-tax-self-assessment-uk. Falling back to browser navigation. TypeError [http://localhost:3141/_next/static/chunks/18-b7067745673704dc.js]"
+  ],
+  "/contact|tablet": [
+    "a \"Privacy Policy\" ratio=2.54 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations|tablet": [
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog|tablet": [
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators|tablet": [
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides|tablet": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice purchase\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-associates|tablet": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-principals|tablet": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "p \"You have spent real time on this. A quic\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-practice-buyers|tablet": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-locum-dentists|tablet": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/free-practice-health-check|tablet": [
+    "button \"Continue\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research|tablet": [
+    "p \"Updated Mar 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated NHS England Digital 2024/25 edit\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated CQC Care Directory 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated Apr 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dental-activity-index|tablet": [
+    "a \"English Contractor Monthly General Denta\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the activity data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dentist-earnings-index|tablet": [
+    "a \"Dental Earnings and Expenses Estimates, \" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the earnings time series (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-practice-density|tablet": [
+    "a \"CQC Care Directory\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Mid-2024 Population Estimates\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the density data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-company-formation-index|tablet": [
+    "a \"Companies House Advanced Search API\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the formation data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/privacy-policy|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/terms|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/cookie-policy|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/london|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/manchester|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/associate-tax|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-accounting|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/capital-allowances-and-equipment|tablet": [
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/buying-a-practice|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-contracts|tablet": [
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale|tablet": [
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/vat-and-compliance|tablet": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-pension|tablet": [
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/locum-tax|tablet": [
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/general|tablet": [
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/specialist-services|tablet": [
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/uda-value|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/associate-take-home|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-valuation|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-purchase|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-sale-cgt|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/locum-structure|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/principal-extraction|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/sdr-scotland|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/superannuation-contributions|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/equipment-capital-allowance|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-owner-income-benchmark|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/dental-tax-deductions|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/nhs-pension-aa-taper|tablet": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/associate-tax-survival-guide|tablet": [
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-profit-extraction-partnership-vs-ltd|tablet": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/goodwill-valuation-and-sale-playbook|tablet": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-contract-essentials-for-dentists|tablet": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-pension-scheme-essentials-for-dentists|tablet": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-purchase-financial-due-diligence|tablet": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate-incorporation|tablet": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-question scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#rates scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ltd scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-layer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#verdict scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ir35 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate|tablet": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#status scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#income-tax scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#national-insurance scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#expenses scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#lab-costs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#self-assessment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#records scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/principal|tablet": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-decision scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#limited-company scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#comparison scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#director-loan scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/buying|tablet": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#before-you-start scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#valuation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#normalised-ebitda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-contract scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#financial-due-diligence scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/selling|tablet": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-youre-selling scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#cgt-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#gain-calculation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-vs-asset scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#earn-outs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#reinvestment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/nhs|tablet": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#uda-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#effective-uda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#benchmarks scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#real-value scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#under-delivery scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-trap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-officers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#annual-certificate scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance/100-percent-dental-practice-finance|tablet": [
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#can-you-really-buy-a-dental-practice-with-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-professional-category-why-lenders-back-dentists scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-100-actually-covers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-criteria-what-makes-you-eligible scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#security-and-personal-guarantees-when-there-is-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability-how-much-you-can-actually-borrow scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#when-100-is-not-offered-and-how-to-bridge-the-gap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#where-a-broker-and-an-accountant-fit-in scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice|tablet": [
+    "p \"Key takeaways\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#why-the-sale-structure-matters-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#asset-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-the-buyer-acquires scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller-unincorporated-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-double-tax-trap-on-a-company-asset-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#key-differences-asset-sale-vs-share-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-nhs-contract-continuity-vs-novation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#vat-in-a-dental-practice-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#practical-steps-for-both-parties scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#summary-key-takeaways scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/|laptop": [
+    "p \"Why dentists choose us\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"What the work looks like\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Area: Practice acquisition and structuri\" ratio=2.64 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"Practical guidance\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Practice finance\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \"Buying a practice\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"The reality\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Why choose a specialist\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Who we work with\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Self-employed · NHS & private\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Sole trader · Limited company · Partners\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Group structures · Acquisition support\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/services|laptop": [
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/about|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "requestfailed: https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk net::ERR_SSL_PROTOCOL_ERROR",
+    "console: Failed to load resource: net::ERR_SSL_PROTOCOL_ERROR [https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk]",
+    "console: Failed to fetch RSC payload for http://localhost:3141/blog/associate-tax/associate-dentist-tax-self-assessment-uk. Falling back to browser navigation. TypeError [http://localhost:3141/_next/static/chunks/18-b7067745673704dc.js]"
+  ],
+  "/contact|laptop": [
+    "a \"Privacy Policy\" ratio=2.54 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations|laptop": [
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog|laptop": [
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators|laptop": [
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides|laptop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice purchase\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-associates|laptop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-principals|laptop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-practice-buyers|laptop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "p \"You have spent real time on this. A quic\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-locum-dentists|laptop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/free-practice-health-check|laptop": [
+    "button \"Continue\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research|laptop": [
+    "p \"Updated Mar 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated NHS England Digital 2024/25 edit\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated CQC Care Directory 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated Apr 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dental-activity-index|laptop": [
+    "a \"English Contractor Monthly General Denta\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the activity data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dentist-earnings-index|laptop": [
+    "a \"Dental Earnings and Expenses Estimates, \" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the earnings time series (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-practice-density|laptop": [
+    "a \"CQC Care Directory\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Mid-2024 Population Estimates\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the density data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-company-formation-index|laptop": [
+    "a \"Companies House Advanced Search API\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the formation data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/privacy-policy|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/terms|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/cookie-policy|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/london|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/manchester|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/associate-tax|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-accounting|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/capital-allowances-and-equipment|laptop": [
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/buying-a-practice|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-contracts|laptop": [
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale|laptop": [
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/vat-and-compliance|laptop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-pension|laptop": [
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/locum-tax|laptop": [
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/general|laptop": [
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/specialist-services|laptop": [
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/uda-value|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/associate-take-home|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-valuation|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-purchase|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-sale-cgt|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/locum-structure|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/principal-extraction|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/sdr-scotland|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/superannuation-contributions|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/equipment-capital-allowance|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-owner-income-benchmark|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/dental-tax-deductions|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/nhs-pension-aa-taper|laptop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/associate-tax-survival-guide|laptop": [
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-profit-extraction-partnership-vs-ltd|laptop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/goodwill-valuation-and-sale-playbook|laptop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-contract-essentials-for-dentists|laptop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-pension-scheme-essentials-for-dentists|laptop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-purchase-financial-due-diligence|laptop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate-incorporation|laptop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-question scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#rates scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ltd scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-layer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#verdict scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ir35 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate|laptop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#status scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#income-tax scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#national-insurance scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#expenses scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#lab-costs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#self-assessment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#records scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/principal|laptop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-decision scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#limited-company scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#comparison scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#director-loan scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/buying|laptop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#before-you-start scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#valuation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#normalised-ebitda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-contract scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#financial-due-diligence scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/selling|laptop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-youre-selling scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#cgt-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#gain-calculation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-vs-asset scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#earn-outs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#reinvestment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/nhs|laptop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#uda-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#effective-uda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#benchmarks scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#real-value scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#under-delivery scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-trap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-officers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#annual-certificate scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance/100-percent-dental-practice-finance|laptop": [
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#can-you-really-buy-a-dental-practice-with-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-professional-category-why-lenders-back-dentists scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-100-actually-covers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-criteria-what-makes-you-eligible scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#security-and-personal-guarantees-when-there-is-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability-how-much-you-can-actually-borrow scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#when-100-is-not-offered-and-how-to-bridge-the-gap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#where-a-broker-and-an-accountant-fit-in scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice|laptop": [
+    "p \"Key takeaways\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#why-the-sale-structure-matters-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#asset-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-the-buyer-acquires scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller-unincorporated-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-double-tax-trap-on-a-company-asset-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#key-differences-asset-sale-vs-share-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-nhs-contract-continuity-vs-novation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#vat-in-a-dental-practice-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#practical-steps-for-both-parties scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#summary-key-takeaways scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/|desktop": [
+    "p \"Why dentists choose us\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"What the work looks like\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Area: Practice acquisition and structuri\" ratio=2.64 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"Practical guidance\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Practice finance\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \"Buying a practice\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"The reality\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Why choose a specialist\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Who we work with\" ratio=3.47 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "p \"Self-employed · NHS & private\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Sole trader · Limited company · Partners\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Group structures · Acquisition support\" ratio=3.47 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/services|desktop": [
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "span \"✓\" ratio=2.75 floor=3 size=18px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/about|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "requestfailed: https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk net::ERR_SSL_PROTOCOL_ERROR",
+    "console: Failed to load resource: net::ERR_SSL_PROTOCOL_ERROR [https://localhost:3141/blog/associate-tax/associate-dentist-tax-guide-uk]",
+    "console: Failed to fetch RSC payload for http://localhost:3141/blog/associate-tax/associate-dentist-tax-self-assessment-uk. Falling back to browser navigation. TypeError [http://localhost:3141/_next/static/chunks/18-b7067745673704dc.js]"
+  ],
+  "/contact|desktop": [
+    "a \"Privacy Policy\" ratio=2.54 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations|desktop": [
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \"View local page →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog|desktop": [
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "span \"View guide\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators|desktop": [
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Practice accounting\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "p \"Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Open calculator →\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides|desktop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS Pension\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice purchase\" ratio=3.76 floor=4.5 size=11px color=rgb(158, 127, 74)",
+    "span \"Read guide →\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-associates|desktop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-principals|desktop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-practice-buyers|desktop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/for-locum-dentists|desktop": [
+    "p \"Free 10-minute practice health check\" ratio=3.31 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/free-practice-health-check|desktop": [
+    "button \"Continue\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research|desktop": [
+    "p \"Updated Mar 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated NHS England Digital 2024/25 edit\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated CQC Care Directory 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated Apr 2026\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dental-activity-index|desktop": [
+    "a \"English Contractor Monthly General Denta\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the activity data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/nhs-dentist-earnings-index|desktop": [
+    "a \"Dental Earnings and Expenses Estimates, \" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the earnings time series (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-practice-density|desktop": [
+    "a \"CQC Care Directory\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Mid-2024 Population Estimates\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the density data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/research/dental-company-formation-index|desktop": [
+    "a \"Companies House Advanced Search API\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "a \"Download the formation data (CSV)\" ratio=3.76 floor=4.5 size=14px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/privacy-policy|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/terms|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/cookie-policy|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/london|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/locations/manchester|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/associate-tax|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-accounting|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/capital-allowances-and-equipment|desktop": [
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Capital Allowances & Equipment\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/buying-a-practice|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-contracts|desktop": [
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Contracts\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale|desktop": [
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Goodwill & Practice Sale\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/vat-and-compliance|desktop": [
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/nhs-pension|desktop": [
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"NHS Pension\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/locum-tax|desktop": [
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Locum Tax\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/general|desktop": [
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"General\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/specialist-services|desktop": [
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"Specialist Services\" ratio=3.76 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/uda-value|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/associate-take-home|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-valuation|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-purchase|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-sale-cgt|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/locum-structure|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/principal-extraction|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/sdr-scotland|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/superannuation-contributions|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/equipment-capital-allowance|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/practice-owner-income-benchmark|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/dental-tax-deductions|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/calculators/nhs-pension-aa-taper|desktop": [
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Take the free practice health check\" ratio=2.75 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/associate-tax-survival-guide|desktop": [
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-profit-extraction-partnership-vs-ltd|desktop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/goodwill-valuation-and-sale-playbook|desktop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · NHS contracts\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-contract-essentials-for-dentists|desktop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/nhs-pension-scheme-essentials-for-dentists|desktop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/dental-guides/practice-purchase-financial-due-diligence|desktop": [
+    "p \"Pillar guide · Associate tax\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice structure\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "p \"Pillar guide · Practice sale\" ratio=3.76 floor=4.5 size=10px color=rgb(158, 127, 74)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(255, 255, 255)",
+    "a \"Privacy Policy\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate-incorporation|desktop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-question scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#rates scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ltd scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-layer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#verdict scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ir35 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/associate|desktop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#status scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#income-tax scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#national-insurance scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#expenses scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#lab-costs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#self-assessment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#records scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/principal|desktop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-decision scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#sole-trader scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#limited-company scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#comparison scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#director-loan scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/buying|desktop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#before-you-start scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#valuation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#normalised-ebitda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-contract scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#financial-due-diligence scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#capital-allowances scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#structure scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/selling|desktop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-youre-selling scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#cgt-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#badr scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#timing scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#gain-calculation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-vs-asset scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#earn-outs scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#reinvestment scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/resources/nhs|desktop": [
+    "p \"Dental Finance Partners free resource\" ratio=2.75 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "a \"Privacy Policy\" ratio=2.43 floor=4.5 size=12px color=rgb(184, 151, 93)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#uda-basics scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#effective-uda scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#benchmarks scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#real-value scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#under-delivery scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#nhs-pension scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-trap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#pension-officers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#annual-certificate scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#next-steps scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/practice-finance/100-percent-dental-practice-finance|desktop": [
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#can-you-really-buy-a-dental-practice-with-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-professional-category-why-lenders-back-dentists scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-100-actually-covers scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-criteria-what-makes-you-eligible scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#on-the-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#security-and-personal-guarantees-when-there-is-no-deposit scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#affordability-how-much-you-can-actually-borrow scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#when-100-is-not-offered-and-how-to-bridge-the-gap scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#where-a-broker-and-an-accountant-fit-in scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/goodwill-and-practice-sale/asset-sale-vs-share-sale-dental-practice|desktop": [
+    "p \"Key takeaways\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "p \"About the author\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "a \"Learn more about our team →\" ratio=2.75 floor=4.5 size=14px color=rgb(184, 151, 93)",
+    "p \"You have spent real time on this. A quic\" ratio=3.32 floor=4.5 size=12px color=rgb(158, 127, 74)",
+    "span \", Accounting for UK dentists — nothing e\" ratio=1.10 floor=3 size=16px color=oklch(0.968 0.007 247.896)",
+    "span \"www.dentalfinancepartners.co.uk\" ratio=3.60 floor=4.5 size=12px color=oklch(0.554 0.046 257.417)",
+    "#main scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#why-the-sale-structure-matters-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#asset-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#what-the-buyer-acquires scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller-unincorporated-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-double-tax-trap-on-a-company-asset-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#share-sale-how-it-works-for-a-dental-practice scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#tax-treatment-for-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#key-differences-asset-sale-vs-share-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#the-nhs-contract-continuity-vs-novation scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#vat-in-a-dental-practice-sale scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-buyer scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#which-structure-suits-the-seller scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#practical-steps-for-both-parties scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#summary-key-takeaways scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ]
+}

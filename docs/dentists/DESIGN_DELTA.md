@@ -121,11 +121,13 @@ buttons sit on the 700 step), white on emerald-700 = 5.48, white on slate-900 = 
 
 | Row | Status |
 |---|---|
-| Brand swatch: navy primary, gold demoted to non-text accent | **PROPOSED, awaiting owner** |
-| Warning ladder D-W1 (red-600 / pink-700 / purple-800) | **PROPOSED, awaiting owner** |
-| Capture-surface scope | **Awaiting owner.** No new lead surface proposed |
-| Route retirements | **Awaiting owner.** Each needs a GSC read first (playbook T14) |
-| Pricing removal (15 files, live) | **Awaiting owner.** It is a standing rule breach, but the policy call is his |
+| Brand swatch: navy primary, gold demoted to non-text accent | **TAKEN 2026-09-11: APPROVED.** Owner chose "navy for buttons and links, gold stays as decoration". Gold is NOT darkened and the existing navy-on-gold buttons stay |
+| Warning ladder D-W1 (red-600 / pink-700 / purple-800) | **TAKEN 2026-09-11: APPROVED** as part of the swatch decision |
+| Port timing against the 18 armed measurement windows to 2026-10-07 | **TAKEN 2026-09-11: start now, accept the re-baseline.** Owner chose to proceed rather than wait. Deploy is still separately gated, so the reset only lands on deploy day |
+| Pricing removal (15 files, live) | **TAKEN 2026-09-11: remove ALL of it, rewritten individually.** Includes the 21 turnaround-promise lines and the "fixed fees" / "transparent pricing" framing. No two pages may read the same |
+| Named competitor firm in a live article | **TAKEN 2026-09-11: rewrite the passage out.** Article and URL stay, the passage naming the rival and repeating its turnaround claim goes |
+| Capture-surface scope | No new lead surface proposed, so no gate needed |
+| Route retirements | **Still open.** Each needs a GSC read first (playbook T14). Not asked yet, deliberately: recommending a deletion without traffic evidence is guessing |
 | Deploy | **Never autonomous** |
 
 ## 5. Locked pre-port analytics values (playbook T22, and it has bitten two sites)
