@@ -19,8 +19,9 @@
  * 2026-09-11 forbids writing new visible strings, so no `sub` line is carried.
  *
  * Tabs render buttons, not anchors, so a page using this component must ALSO
- * carry a literal in-body link to a specific /calculators/<slug> page. That is
- * the `calculator-tabs-crawl-path` guard, and it is a source scan.
+ * carry an in-body href to a specific /calculators/<slug> page. That is the
+ * `calculator-tabs-crawl-path` guard, and it is a source scan; it reads the
+ * templated form, href={`/calculators/${slug}`}, as well as a literal.
  */
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
@@ -65,8 +66,8 @@ const TAB_ICONS: Record<TabKey, LucideIcon> = {
 };
 
 /**
- * The five the /calculators index leads with. Every listed panel mounts and
- * downloads its calculator, so five is the ceiling: do not pad this list.
+ * The five the /calculators index leads with. Only the active panel mounts,
+ * so the list costs one tab button each, but keep it short anyway.
  */
 export const INDEX_HEADLINE_TABS: TabKey[] = [
   "clientreserve",
@@ -171,7 +172,10 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
               role="tab"
               type="button"
               aria-selected={selected}
-              aria-controls={`calc-panel-${tab.key}`}
+              /* Only the active panel exists in the DOM, so only the active
+                 tab may claim aria-controls: a reference to an absent id is
+                 worse than none. */
+              aria-controls={selected ? `calc-panel-${tab.key}` : undefined}
               tabIndex={selected ? 0 : -1}
               onKeyDown={(event) => onTabKeyDown(event, tab.key)}
               onClick={() => setActive(tab.key)}
@@ -208,18 +212,24 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
         })}
       </div>
 
+      {/* ONLY the active panel is rendered. `hidden` is not a dedupe or crawl
+          signal, so rendering all five put ~47% of each detail page's body
+          text into this route's HTML verbatim. Cost of the fix: the first
+          press of a tab mounts that calculator instead of revealing a
+          pre-rendered one. */}
       <div className="mt-6 sm:mt-8">
-        {shown.map((tab) => (
-          <div
-            key={tab.key}
-            id={`calc-panel-${tab.key}`}
-            role="tabpanel"
-            aria-labelledby={`calc-tab-${tab.key}`}
-            hidden={active !== tab.key}
-          >
-            <CalculatorClient slug={TAB_SLUGS[tab.key]} variant="page" />
-          </div>
-        ))}
+        {shown
+          .filter((tab) => tab.key === active)
+          .map((tab) => (
+            <div
+              key={tab.key}
+              id={`calc-panel-${tab.key}`}
+              role="tabpanel"
+              aria-labelledby={`calc-tab-${tab.key}`}
+            >
+              <CalculatorClient slug={TAB_SLUGS[tab.key]} variant="page" />
+            </div>
+          ))}
       </div>
     </div>
   );

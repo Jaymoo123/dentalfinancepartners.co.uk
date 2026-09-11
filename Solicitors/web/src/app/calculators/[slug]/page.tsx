@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { JsonLd, buildWebApplication, buildFaqPage } from "@/lib/schema";
 import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
+import { BESPOKE_CALCULATOR_SLUGS } from "@/lib/tools/bespoke-routes";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LEAD_PROOF_POINTS } from "@/lib/blog-category-copy";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
@@ -19,7 +20,7 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return allTools()
-    .filter((t) => t.kind === "generic")
+    .filter((t) => t.kind === "generic" && !BESPOKE_CALCULATOR_SLUGS.includes(t.slug))
     .map((t) => ({ slug: t.slug }));
 }
 

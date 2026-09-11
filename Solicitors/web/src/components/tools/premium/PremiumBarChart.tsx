@@ -89,8 +89,11 @@ export function PremiumBarChart({
     {/* The bars are decoration. The wrapper is aria-hidden, so the whole SVG
         subtree is REMOVED from the accessibility tree, so the img role and
         label that used to sit on the svg were dead code and were deleted. The data
-        itself is published as a real table below, off-screen, built from the
-        SAME formatValue helper the bar labels use, so the two cannot disagree. */}
+        itself is published as a real table below, off-screen, from the same
+        `data`/`series` arrays the bars are drawn from. The table uses
+        `formatValue` (full precision, as the <title> tooltips do); the visible
+        bar labels use `shortValue`, which abbreviates by design. Same numbers,
+        different precision. */}
     <div
       style={{ height: CHART_HEIGHT }}
       aria-hidden="true"

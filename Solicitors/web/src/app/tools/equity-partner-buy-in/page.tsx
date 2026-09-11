@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Banknote, Building2, CalendarClock } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
-import { CoverageCards, type CoverageItem } from "@accounting-network/web-shared/design/marketing/CoverageCards";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { LEAD_PROOF_POINTS } from "@/lib/blog-category-copy";
@@ -142,37 +140,8 @@ function routeLabel(r: string) {
   return { personalLoan: "Personal loan with ITA 2007 s.398 relief", firmLoan: "Firm-facilitated loan", stagedDrawings: "Staged drawings" }[r] ?? r;
 }
 
-/**
- * The route summary the prose intro had no visual for (DS 0.2).
- *
- * Every string in it is DERIVED, never authored: the titles are the existing
- * `routeLabel()` values, the row labels are the ones the worked-example tables
- * below already render verbatim ("Monthly net cost", "s.398 relief",
- * "Effective monthly cost", "Nil (firm deducts)", "Annual drawings diverted",
- * "Interest cost", "Nil"), and every figure comes out of `example1`, the same
- * model call the tables use. The hard rule of 2026-09-11 forbids new copy, so
- * the figure cannot drift from the model and no sentence is written.
- */
-const routeCards: CoverageItem[] = [
-  {
-    title: routeLabel("personalLoan"),
-    body: `Monthly net cost ${gbp(example1.fundingRoutes.personalLoan.monthlyNetCostAfterRelief)}`,
-    outcome: `s.398 relief ${gbp(example1.fundingRoutes.personalLoan.qualifyingLoanInterestRelief)}`,
-    icon: Banknote,
-  },
-  {
-    title: routeLabel("firmLoan"),
-    body: `Effective monthly cost ${gbp(example1.fundingRoutes.firmLoan.monthlyNetCostAfterRelief)}`,
-    outcome: "s.398 relief Nil (firm deducts)",
-    icon: Building2,
-  },
-  {
-    title: routeLabel("stagedDrawings"),
-    body: `Annual drawings diverted ${gbp(example1.fundingRoutes.stagedDrawings.annualDrawingsReduction)}`,
-    outcome: "Interest cost Nil",
-    icon: CalendarClock,
-  },
-];
+// The intro route-summary cards were removed on 2026-09-11: their labels were
+// assembled into new sentences, which the no-new-copy rule forbids.
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 
@@ -228,7 +197,6 @@ export default function EquityPartnerBuyInPage() {
               The modeller below compares all three routes side by side for your specific figures. The worked examples further down show how the numbers play out in two common scenarios: a mid-size firm requiring £75,000 and a regional firm requiring £150,000.
             </p>
           </div>
-          <CoverageCards items={routeCards} columns={3} tone="slate" />
           <ExampleFigureNote className="mt-4" />
         </div>
       </section>

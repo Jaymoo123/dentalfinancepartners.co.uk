@@ -22,15 +22,6 @@ export const metadata: Metadata = {
   openGraph: { title: TITLE, description: DESCRIPTION, url: `${siteConfig.url}/calculators`, type: "website" },
 };
 
-/**
- * The one card whose href is spelled out rather than built from the slug.
- * `CalculatorTabs` renders <button role="tab">, so this page owes one literal
- * in-body /calculators/<slug> link; the calculator-tabs-crawl-path guard is a
- * SOURCE scan, so it has to be able to read the string. Rendered output, card
- * order and copy are identical to the mapped branch.
- */
-const CRAWL_PATH_SLUG = "sra-client-account-reserve";
-
 export default function CalculatorsIndexPage() {
   const breadcrumbItems = [{ label: "Home", href: "/" }, { label: "Calculators" }];
   const tools = allTools().filter((t) => t.kind === "generic");
@@ -85,17 +76,11 @@ export default function CalculatorsIndexPage() {
       <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {tools.map((t) =>
-              t.slug === CRAWL_PATH_SLUG ? (
-                <Link key={t.slug} href="/calculators/sra-client-account-reserve" className={cardClass}>
-                  {cardBody(t)}
-                </Link>
-              ) : (
-                <Link key={t.slug} href={`/calculators/${t.slug}`} className={cardClass}>
-                  {cardBody(t)}
-                </Link>
-              ),
-            )}
+            {tools.map((t) => (
+              <Link key={t.slug} href={`/calculators/${t.slug}`} className={cardClass}>
+                {cardBody(t)}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

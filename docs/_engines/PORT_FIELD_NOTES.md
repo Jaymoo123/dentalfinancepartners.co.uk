@@ -182,6 +182,29 @@ Deriving command: `python scripts/check_dependency_closure.py`
 RULE: the closure check belongs in EVERY builder brief's acceptance tests, not only the
 pre-deploy gate. A new import gets its declaration in the same commit. Playbook trap T24.
 
+**2026-09-11, Solicitors phase 4. TWO ROUTES CAN CLAIM ONE URL, and the build is a coin
+toss.** `/calculators/law-firm-sale-cgt` has a bespoke page AND was still emitted by the
+generic `[slug]` route's `generateStaticParams`, because its config is `kind: "generic"`. Both
+prerender to the SAME file, `.next/server/app/calculators/law-firm-sale-cgt.html`, and
+whichever renders last wins. The generic render has no `dataCta`, so the page silently lost
+`data-cta="see_result"`, a LIVE id with 73 recorded events, while the bespoke source was
+correct all along.
+Why it is nasty: it is NON-DETERMINISTIC. One build showed the bespoke render with the id
+present, the next showed the generic one without it, with no source change in between, which
+sent me hunting a stale cache that was not the cause. Its baseline floor was 3 and the page
+still emitted 3, so every per-route gate stayed green. It surfaced ONLY as a one-unit drop in
+the sweep's TOTAL data-cta count.
+Deriving commands, in order:
+`grep -c "<a section only the bespoke page has>" .next/server/app/<route>.html` -> 0 means the
+generic route won.
+`grep -n "kind:" src/lib/tools/configs/<slug>.ts` -> `generic` while a static page exists.
+RULE: any site with BOTH a `[slug]` catch-all and static sibling pages must exclude the static
+slugs from `generateStaticParams`, and needs a guard test asserting it. Solicitors now has
+`src/tests/calculator-route-collision.test.ts`, which also asserts the exclusion list equals
+the on-disk directories, so the next bespoke page cannot reintroduce it.
+COROLLARY for the CTA gate: a per-route floor cannot see this class at all. Diff the TOTAL as
+well as the per-route counts, and when the total moves, find the route before moving on.
+
 **2026-09-11, Solicitors phase 4. A NEWER BUILD_ID does not mean a fresh artefact: Next's
 incremental cache served a stale prerender.** Playbook trap T2 says to check `BUILD_ID` mtime
 against the newest source file before trusting a build. That check PASSED here and the build
