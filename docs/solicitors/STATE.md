@@ -409,6 +409,79 @@ the five `/services/[slug]` routes absent from `sitemap.xml`.
 
 ---
 
+## 2026-09-11 - INDEPENDENT POST-BUILD VERIFICATION PASS (orchestrator). Nothing deployed. No code changed.
+
+Owner instruction this session: do NOT deploy. A local production build was served for an owner
+walk on port 3411 and every gate was re-measured from a from-scratch build. Three independent
+read-only audits ran against that server: hard-rule copy, structural parity vs Property and
+generalist, and design quality vs `DESIGN_DELTA.md`. Every audit claim below was re-verified by
+the orchestrator before being recorded; three high-profile claims did NOT survive.
+
+**ALL GATES HOLD, re-measured, served title asserted first.** Build exit 0 at **294** prerendered
+HTML files; sweep 273/274 clean; **0 link-floor breaches**, 10,692 unique internal links; **0
+data-cta regressions** across 1,507; **0 dash regressions** across 444; Solicitors **18 files /
+219 tests**; web-shared **19 / 406**; tsc clean; dependency closure OK across 19 sites. The three
+dead links the sweep names (`/resources`, `/calculators/solicitor-take-home`,
+`/calculators/fee-share-vs-equity-partner`) are the known pre-existing set, not port damage.
+
+**ONE REAL HARD-RULE BREACH, OWNER RULING NEEDED.**
+`Solicitors/web/src/lib/blog-category-copy.ts` is a NEW file added in phase 2 (`2876e38b`). It
+carries 17 authored CTA triples (heading, body, button) plus `LEAD_PROOF_POINTS`, published on
+all 196 articles and 17 category hubs, where pre-port those pages carried one generic CTA. It is
+well-sourced prose (VAT Notice 700 s.25.1.1, Brabners, SRA Accounts Rules 2019 five-weekly
+reconciliation) but it is net-new published words on 213 pages and it is NOT on the disclosed
+exceptions list. Options: retrospective owner exception, or revert to the pre-port generic CTA.
+
+**THREE AUDIT CLAIMS FALSIFIED, recorded so they are not re-raised.**
+- "`LeadCTAPanel` defaults publish 'Book your free consultation' on ~35 routes as net-new copy":
+  FALSE. The string has four hits in Solicitors' own `niche.config.json`, `/contact` and `/` at
+  BOTH `18b4f25f` and `HEAD`, identical.
+- "`BlogSidebarCta` hardcodes net-new 'Free, no obligation. The form is just below.'": FALSE. The
+  same line exists at `18b4f25f:packages/web-shared/design/blog/BlogSidebarCta.tsx:34`.
+- "`/thank-you` is missing `NoticeCard` and `WhatToExpectCard` vs both references": NOT A GAP. The
+  file's own comment at `thank-you/page.tsx:24` records the deliberate refusal, because those
+  items would be net-new copy. Same reasoning retires the "six unadopted marketing components"
+  and "thin services index" findings: all would require authoring visible words.
+
+**THE SEO HALF OF THE HARD RULE IS CLEAN.** Sitemap, robots, config and the route tree are
+byte-unchanged across the port; no route added or deleted.
+
+**THREE REAL PARITY GAPS, ALL COPY-NEUTRAL, all verified by direct count:**
+1. Breadcrumbs never migrated: **28** Solicitors files use the local pre-port
+   `components/ui/Breadcrumb.tsx`, **0** use `packages/web-shared/design/primitives/Breadcrumb.tsx`;
+   generalist moved **29** pages across. Ours also builds its own `BreadcrumbList` JSON-LD.
+2. Ramp conversion skipped: **475** `var(--...)` uses in Solicitors TSX against generalist **59**
+   and Property **122**. This is what keeps the contrast instrument blind (trap T25) and it is the
+   same blind spot that hid three live accessibility failures found in phase 6.
+3. Standard section wrappers on **13** files against Property **43** and generalist **36**;
+   services, contact, calculators, thank-you and research render without them.
+
+**FIVE QUALITY BLOCKERS, verified against rendered server HTML:**
+1. **`/` renders ZERO `<h1>`.** Confirmed PRE-EXISTING, not a port regression: `18b4f25f`'s
+   homepage also had none (`BrandLogoHero` and no `<h1>`). Every other route has exactly one.
+   Fixing it publishes a new heading, so it is owner-gated by the hard rule.
+2. The homepage hero wordmark is still the PRE-PORT mark: no `Scale` icon and line2 "UK", against
+   `DESIGN_DELTA.md:86-87` which APPROVED icon `Scale` and line2 "SPECIALIST ACCOUNTANTS". It
+   disagrees with the correct header lockup rendered 60px above it. The line2 change is a visible
+   copy change, so it is owner-gated despite being an approved contract row.
+3. Pill `rounded-full` CTAs survive across **25** TSX files against the contract's square 4px
+   corner (`DESIGN_DELTA.md:108-112`). Purely visual, copy-neutral, fixable.
+4. Focus ring on the navy hero measures **2.38:1**, under the 3:1 floor; the contract pins
+   `outline-primary-600` (6.83). Copy-neutral, fixable.
+5. `/resources` is a 404 while **8 `/resources/[topic]` children return 200 AND are published in
+   `sitemap.xml`** with zero inbound internal links. Quantified for the first time here: this is
+   eight live indexed orphans under a dead parent, which is materially worse than "a 404 on the
+   decision list".
+
+**WHAT LANDED AND VERIFIES, so the port is not half-done:** tokens, CSS layering discipline, the
+rose ramp, the W1 warning ladder, card recipes, the footer lockup, the ledger backdrop motif
+(path data present on all 22 routes sampled, both tones) and all three of the contract's named
+live contrast fixes. The chrome (header, footer, lead panel, breadcrumbs, sticky CTA) all render
+in SERVER HTML, not just in source. Four of the five blockers sit in `app/page.tsx`: the homepage
+is the surface the port under-served.
+
+**Nothing in this pass changed a single line of site code.** No commit, no deploy, no push.
+
 ## PORT STATUS 2026-09-11: ALL SIX PHASES BUILT, REVIEWED AND TAGGED. NOTHING DEPLOYED.
 
 `port-solicitors-phase0` through `port-solicitors-phase6`. Production serves `18b4f25f`.
