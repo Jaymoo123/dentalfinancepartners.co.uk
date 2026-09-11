@@ -41,7 +41,7 @@ faqs:
 
 <p>If you take locum work as a doctor and run it through your own limited company, the off-payroll working rules (better known as <strong>IR35</strong>) decide whether HMRC treats that income as if you were an employee. Getting it wrong can mean unexpected tax, lost National Insurance and avoidable penalties, so it is worth understanding exactly how the rules apply to medical locum work in 2026/27.</p>
 
-<p>This guide is the pillar reference for <strong>locum doctor IR35</strong>: who decides your status, what a Status Determination Statement is, the April 2024 PAYE offset, and why a sole-trader locum sits outside the rules entirely. It is general information, not personal advice. We are accountants who specialise in medical and GP finances, and a quick review of your own contracts is usually the fastest way to be sure.</p>
+<p>This guide is the pillar reference for <strong>locum doctor IR35</strong>: who decides your status, what a Status Determination Statement is, the April 2024 PAYE offset, and why a sole-trader locum sits outside the rules entirely. It is general information, not personal advice. We publish on medical and GP finances and match enquiries to a regulated firm in our specialist partner network, and a quick review of your own contracts by that firm is usually the fastest way to be sure.</p>
 
 <h2>What IR35 means for a locum doctor</h2>
 

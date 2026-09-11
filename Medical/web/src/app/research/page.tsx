@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
 import { siteConfig } from "@/config/site";
-import snapshot from "@/data/nhs-aa-index.json";
-import type { AaIndexSnapshot } from "@/lib/research/nhs-aa-index";
-
-const data = snapshot as unknown as AaIndexSnapshot;
 
 export const metadata: Metadata = {
   title: "Medical tax research and data | Medical Accountants UK",
@@ -34,57 +32,66 @@ const reports = [
   },
 ];
 
-// Suppress unused variable warning; headline is accessed via data.headline at runtime
-void data.headline;
-
 export default function ResearchIndexPage() {
   return (
     <>
-      <section className="hero-brand py-12 sm:py-16">
-        <div className="hero-inner">
-          <div className={siteContainerLg}>
+      {/* `relative overflow-hidden` on the section and `relative z-10` on the
+          content are the MedicalBackdrop host contract. */}
+      <section className="relative overflow-hidden bg-slate-900 py-10 sm:py-12 lg:py-14">
+        <MedicalBackdrop tone="navy" />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
             <Breadcrumb
               variant="light"
               items={[{ label: "Home", href: "/" }, { label: "Research" }]}
             />
-            <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            <Eyebrow onDark>Open data</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-6xl">
               Medical tax research and data
             </h1>
-            <p className="mt-4 max-w-3xl text-lg text-white/80">
-              Original, sourced reads on NHS pensions, the annual allowance and doctors&rsquo; tax, built
-              entirely from official open data. Free to read and cite with attribution.
+            <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg">
+              Original, sourced reads on NHS pensions, the annual allowance and doctors&rsquo; tax,
+              built entirely from official open data. Free to read and cite with attribution.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[var(--background)] py-10 sm:py-14">
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="grid gap-6 sm:grid-cols-2">
             {reports.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 transition hover:border-[var(--copper)] hover:shadow-md sm:p-8"
+                className="group rounded-xl bg-white p-6 ring-1 ring-slate-200/70 transition hover:ring-[var(--brand-primary)] sm:p-8"
               >
-                <div className="text-3xl font-bold text-[var(--copper-strong)] sm:text-4xl">{r.stat}</div>
-                <div className="mt-1 text-sm text-[var(--muted)]">{r.statLabel}</div>
-                <h2 className="mt-5 text-xl font-bold text-[var(--navy)] group-hover:text-[var(--copper-strong)]">
+                {/* 3xl/4xl, so the 3:1 large-text floor applies; --copper-strong
+                    measures 4.91 on white and clears the 4.5 floor regardless. */}
+                <div className="text-3xl font-bold text-[var(--copper-strong)] sm:text-4xl">
+                  {r.stat}
+                </div>
+                <div className="mt-1 text-sm text-slate-600">{r.statLabel}</div>
+                <h2 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-[var(--copper-deep)]">
                   {r.title}
                 </h2>
-                <p className="mt-2 text-base leading-relaxed text-[var(--ink-soft)]">{r.blurb}</p>
+                <p className="mt-2 text-base leading-relaxed text-slate-700">{r.blurb}</p>
 
-                {/* Small stat highlights row */}
-                <div className="mt-4 grid grid-cols-3 gap-2 border-t border-[var(--border)] pt-4">
+                {/* Highlight figures are text-sm font-bold, so the 4.5 floor
+                    applies at small size: --copper-deep (7.32 on white), not
+                    --copper (3.79) and not --copper-strong (4.91, no headroom). */}
+                <div className="mt-4 grid grid-cols-3 gap-2 border-t border-slate-200 pt-4">
                   {r.highlights.map((h) => (
                     <div key={h.value} className="text-center">
-                      <div className="text-sm font-bold text-[var(--copper-strong)]">{h.value}</div>
-                      <div className="mt-0.5 text-[10px] leading-tight text-[var(--muted)]">{h.label}</div>
+                      <div className="text-sm font-bold text-[var(--copper-deep)]">{h.value}</div>
+                      <div className="mt-0.5 text-[10px] leading-tight text-slate-600">
+                        {h.label}
+                      </div>
                     </div>
                   ))}
                 </div>
 
-                <p className="mt-4 text-xs text-[var(--muted)]">{r.updated}</p>
+                <p className="mt-4 text-xs text-slate-600">{r.updated}</p>
               </Link>
             ))}
           </div>

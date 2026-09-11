@@ -34,8 +34,8 @@ export default function PrivacyPolicyPage() {
         ]}
       />
       <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
-      <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 11 September 2026</p>
+      <div className="mt-8 space-y-5 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
           &quot;we&quot;, &quot;us&quot; and &quot;our&quot;, collects, uses and protects your personal information
@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
           Act 2018.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">1. Who we are (data controller)</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">1. Who we are (data controller)</h2>
         <p>
           The data controller responsible for your personal data is {company.legalName}, which trades as{" "}
           {siteConfig.name}:
@@ -57,16 +57,17 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           If you have any questions about this policy or wish to exercise your rights, please contact us through our{" "}
-          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
+          <Link href="/contact" className="font-semibold text-[var(--accent-strong)] underline underline-offset-2">contact page</Link>.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">2. What information we collect</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">2. What information we collect</h2>
         <p>We collect the following personal information through the Site:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>Enquiry forms:</strong> when you submit an enquiry (including through the form that may appear if
-            you are about to leave a page), we collect your name, email address, phone number, the type of medical
-            professional you are, your message, and the page you submitted from.
+            <strong>Enquiry forms:</strong> when you submit an enquiry, whether through a form on a page, a short
+            form inside an article, or the help panel that can open at the corner of the screen, we collect your name, email address,
+            phone number, the type of medical professional you are, your message, and the page you submitted from. Which of
+            these we ask for depends on the form: the help panel asks only for your email address and your message.
           </li>
           <li>
             <strong>Email sign-ups:</strong> if you subscribe to our updates or download a guide, we collect your email
@@ -78,9 +79,10 @@ export default function PrivacyPolicyPage() {
           </li>
           <li>
             <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages viewed,
-            device and browser type, and an approximate country derived from your IP address). Our hosting provider may
-            also log technical request data for security and performance. See our{" "}
-            <Link href="/cookie-policy" className="text-[var(--accent-strong)] underline">cookie policy</Link> for detail.
+            scrolling, clicks and form steps, device and browser type, and the approximate country, region, city and time
+            zone our hosting provider derives from your IP address). We do not store your IP address itself. Our hosting
+            provider may also log technical request data for security and performance. See our{" "}
+            <Link href="/cookie-policy" className="font-semibold text-[var(--accent-strong)] underline underline-offset-2">cookie policy</Link> for detail.
           </li>
         </ul>
         <p>
@@ -89,7 +91,7 @@ export default function PrivacyPolicyPage() {
           asked for.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">3. Why we use your information</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">3. Why we use your information</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to regulated firms in our specialist partner network so that they can provide the advice you have requested.
@@ -104,7 +106,7 @@ export default function PrivacyPolicyPage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">4. Our lawful basis</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">4. Our lawful basis</h2>
         <p>
           When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f)
           of the UK GDPR) to handle it and to share it with regulated firms from our specialist partner
@@ -122,7 +124,7 @@ export default function PrivacyPolicyPage() {
           specifically measuring and improving the Site and keeping it secure and protected against misuse.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">5. Who we share your information with</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">5. Who we share your information with</h2>
         <p>
           When you submit an enquiry, we share information about you and your enquiry with regulated firms
           from our <strong>specialist partner network</strong>, so that they can contact you and provide the
@@ -139,8 +141,10 @@ export default function PrivacyPolicyPage() {
         </p>
         <p>
           <strong>More than one firm may receive your enquiry.</strong> We work with a network of specialist
-          firms rather than a single firm, and we do not name the individual firms on this website. Firms
-          are first shown a short summary of your enquiry with your name and contact details removed, and
+          firms rather than a single firm. We do not name any firm before you enquire, because which firms
+          take your enquiry up depends on what it is about. After you have sent one, we may tell you that we
+          work closely with Aswatax, a firm of Chartered Tax Advisers, and that it may be their team who
+          contacts you. Firms are first shown a short summary of your enquiry with your name and contact details removed, and
           only a firm that decides it can help receives your details in full. Up to <strong>three</strong>
           firms in the profession your enquiry concerns may take it up that way. Separately, up to{" "}
           <strong>three</strong> firms in related professions, such as mortgage and finance brokers,
@@ -163,9 +167,11 @@ export default function PrivacyPolicyPage() {
         </p>
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
         <ul className="list-disc space-y-2 pl-6">
-          <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
-          <li><strong>Google Analytics:</strong> website analytics and performance measurement.</li>
-          <li><strong>Vercel:</strong> website hosting and content delivery.</li>
+          <li>
+            <strong>Supabase:</strong> secure database hosting for form submissions and for the analytics events
+            described above (EU-hosted).
+          </li>
+          <li><strong>Vercel:</strong> website hosting, content delivery and page-speed measurement.</li>
           <li><strong>Resend:</strong> sending the emails we use to confirm your details and to respond to you.</li>
           <li><strong>Twilio:</strong> sending the text messages we use to confirm your details.</li>
           <li>
@@ -175,12 +181,19 @@ export default function PrivacyPolicyPage() {
           <li><strong>Companies House:</strong> looking up publicly available information where you mention a company.</li>
         </ul>
         <p>
+          We also use <strong>Google Analytics</strong> to measure how the Site is used. Google acts as an
+          independent controller for some of its own purposes in respect of that data, rather than purely on our
+          instructions. It loads only if you have not opted out, and our{" "}
+          <Link href="/cookie-policy" className="font-semibold text-[var(--accent-strong)] underline underline-offset-2">cookie policy</Link>{" "}
+          sets out exactly what it stores and how to stop it.
+        </p>
+        <p>
           Some of these providers process data outside the United Kingdom. Where they do, we rely on a valid
           transfer mechanism under the UK GDPR.
         </p>
         <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">6. How long we keep your information</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">6. How long we keep your information</h2>
         <p>
           We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry,
           after which it is deleted. If you subscribe to our email updates, we keep your email address until you
@@ -188,7 +201,7 @@ export default function PrivacyPolicyPage() {
           demonstrate that consent was given.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">7. Your rights</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">7. Your rights</h2>
         <p>Under UK data protection law you have the right to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Access</strong> the personal data we hold about you.</li>
@@ -201,7 +214,7 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           To exercise any of these rights, please contact us through our{" "}
-          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>. We will respond
+          <Link href="/contact" className="font-semibold text-[var(--accent-strong)] underline underline-offset-2">contact page</Link>. We will respond
           within one month.
         </p>
         <p>
@@ -211,21 +224,22 @@ export default function PrivacyPolicyPage() {
             href="https://ico.org.uk/make-a-complaint/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--accent-strong)] underline"
+            className="font-semibold text-[var(--accent-strong)] underline underline-offset-2"
           >
             ico.org.uk/make-a-complaint
           </a>
           . We would, however, welcome the chance to address your concerns first.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">8. Cookies and analytics</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">8. Cookies and analytics</h2>
         <p>
-          We use cookies and similar technologies for analytics, so we can understand how the Site is used and improve it.
-          For full details of what we use and how to manage or opt out, please see our{" "}
-          <Link href="/cookie-policy" className="text-[var(--accent-strong)] underline">cookie policy</Link>.
+          We use cookies and similar browser storage for analytics, so we can understand how the Site is used and
+          improve it. You can stop all of it at any time using the <strong>&quot;Do not track me&quot;</strong> button
+          in the footer of every page. For the full list of what is stored, and the other ways to manage it, please see
+          our <Link href="/cookie-policy" className="font-semibold text-[var(--accent-strong)] underline underline-offset-2">cookie policy</Link>.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">9. How we protect your data and international transfers</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">9. How we protect your data and international transfers</h2>
         <p>
           Form submissions are stored securely and access is restricted to authorised staff only. Some of our service
           providers (for example, Vercel) are based outside the UK and EEA. Where data is transferred internationally, we
@@ -233,16 +247,16 @@ export default function PrivacyPolicyPage() {
           Contractual Clauses.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">10. Changes to this policy</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">10. Changes to this policy</h2>
         <p>
           We may update this privacy policy from time to time. The &quot;Last updated&quot; date at the top of this page
           shows when it was last revised. We encourage you to review this policy periodically.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">11. Contact us</h2>
+        <h2 className="mt-10 text-2xl font-bold text-[var(--ink)] sm:text-3xl">11. Contact us</h2>
         <p>
           If you have any questions about this privacy policy or how we handle your data, please contact us through our{" "}
-          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
+          <Link href="/contact" className="font-semibold text-[var(--accent-strong)] underline underline-offset-2">contact page</Link>.
         </p>
       </div>
     </div>

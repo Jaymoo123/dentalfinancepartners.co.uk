@@ -207,7 +207,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The headline of any <strong>GP partner vs salaried GP tax comparison</strong> is that the partner route can offer slightly lower National Insurance and broader expense relief, but the difference is often smaller than expected and comes with extra responsibility and risk. Tax should inform the decision, not drive it.</p>
 
-<p>Because the calculation depends on your actual profit share, salary, expenses and pension position, and because the rules change, it pays to model both routes properly. As specialist medical accountants for UK doctors and GPs, we help partners and salaried GPs alike compare the routes, plan around the annual allowance, and stay compliant. Get in touch for a calculation based on your own circumstances.</p>
+<p>Because the calculation depends on your actual profit share, salary, expenses and pension position, and because the rules change, it pays to model both routes properly. We publish this research rather than file returns, so send an enquiry and we will match it to a regulated firm in our specialist partner network that compares the routes, plans around the annual allowance and keeps partners and salaried GPs compliant. Get in touch for a calculation based on your own circumstances.</p>
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Ready to compare your own numbers?</p>

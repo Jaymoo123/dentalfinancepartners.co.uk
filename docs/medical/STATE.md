@@ -6,7 +6,7 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-11 (design port Phase 5; nothing deployed since 2026-08-26).
+Last updated: 2026-09-11 (design port Phase 6, PORT BUILT; nothing deployed since 2026-08-26).
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
 
@@ -324,6 +324,108 @@ harness reports the command as failed, so kill by PID from `netstat -ano | grep 
 and `taskkill //PID <pid> //F`; re-editing `niche.config.json` by parsing and re-dumping
 JSON rewrites every escaped character in the file, so edit the lines and never round-trip
 it.
+
+## 2026-09-11 - DESIGN PORT PHASE 6 (contact, about, legal, research, interruptive, machine surfaces, retirements). THE PORT IS BUILT. Nothing deployed.
+
+Last build phase. One review round, then a fix pass. Phases 0 to 6 are all committed and tagged;
+production still serves `18b4f25f`.
+
+**What landed.** `/about` and `/contact` rewritten to the partner-network truth; the cookie policy
+rewritten in full and the privacy policy corrected; `/terms` restyled; `/research` and its index;
+`/resources/[topic]`; `/thank-you` and `/complete`; `/free-practice-health-check`; the interruptive
+stack restyled with no behaviour change; `robots.ts`; `.hero-brand` retired from `globals.css`
+once its last consumer went; `TestimonialSlider` deleted; two net-new guard files carrying 52
+assertions.
+
+**The in-house-practice claim, finally closed, and it was the last one.** `/about` was written as a
+working firm: "our entire client base consists of GPs, consultants, locum doctors and medical
+practice owners", "you work directly with qualified accountants", "direct access to your dedicated
+GP accountant", "fixed-fee pricing with no hidden charges". One click from a privacy policy
+disclosing that enquiries go to regulated firms in a partner network. Both pages now say plainly:
+"We are not the firm that files your return. We publish the research and we route the enquiry."
+
+Then the review found the same claim still on the FRONT DOOR, which the port had made worse by
+fixing everything around it: the homepage meta read "Accountants for UK doctors only" and its hero
+"Accountants working with doctors and nobody else", so a reader landing on the homepage and
+clicking About got two different stories about what this business is. Fixed, along with four blog
+surfaces saying "we act for GP partners, salaried GPs, locum doctors and consultants across
+Merseyside" and a `/for-gps` meta description. A sweep found two more the review had not listed.
+
+**The legal pages are now true rather than aspirational.**
+- The cookie policy documented a Universal Analytics site we do not run, claimed IP anonymisation
+  and a 14-month retention nobody could verify, and said we set "no strictly necessary cookies"
+  while the site writes storage keys. It now describes GA4, enumerates all **18** browser storage
+  keys with what each is for (the disposition said "roughly 12"), states that we set **zero**
+  first-party cookies (`document.cookie` appears nowhere in the codebase), and puts the footer
+  opt-out first rather than buried. Every claim was traced to the code and driven in a browser by
+  the reviewer: the GA4 cookie names, the measurement id, the opt-out actually stopping the script,
+  and "we never store your IP address" (the track handler reads only Vercel's country, city, region
+  and timezone headers).
+- The privacy policy stopped describing an exit-intent modal that no longer exists, widened an
+  understated surface, and stopped claiming we never name a partner firm while `/thank-you` and the
+  lead form's success card name Aswatax. That post-submit introduction is owner-approved and
+  correct, so the policy sentence was what changed: no firm is named **before** an enquiry.
+- Unbriefed and correct: the builder found Google Analytics listed as a processor "who process data
+  on our instructions only", which is not defensible for GA4. Moved to an independent-controller
+  paragraph.
+
+**The interruptive stack was restyle-only and was proved to be.** Every changed line in
+`ReturningBar`, `DeepScrollModal`, `NextStepOffer`, `SpecialistWidget` and `StickyCTA` is a
+className; `StickyCTA`'s diff is empty. No threshold, timing, cadence, trigger, dismissal rule or
+storage key moved. Nothing interruptive was added.
+
+**Two guard tests could not fail, and one of them guarded the most important thing on the site.**
+- The `data-cta` guard scraped ids with a regex over raw source, so it matched `see_result` inside
+  an explanatory COMMENT and could not see the live emission, which is a ternary. Deleting that
+  branch left the guard green. `see_result` is the busiest interaction on the site and
+  FUNNEL_BASELINE says not to remove it without a measurement plan.
+- The guard named "no interruptive surface was added" only asserted four names were PRESENT,
+  matched them in docstrings as well as mounts, never checked `NextStepOffer`, and could not detect
+  an addition at all.
+Both rewritten and both proved by mutation: deleting the `see_result` branch now fails, and mounting
+a sixth interruptive surface now fails. The builder had already found and fixed the identical
+blindness in its own storage-key guard; this was the same bug twice more.
+
+**Also fixed:** the two live white-on-copper labels the guard had recorded as known-open on the
+calculator routes (white on `--copper` measures 3.79; moved to `--btn-ground` at 4.91), which then
+failed the guard until its open list was emptied in the same commit, which is exactly the mechanism
+it was built for. `/complete` and `/book` joined `/thank-you` in robots.txt: all three are
+post-submit, none is in the sitemap, and nothing crawlable links to them.
+
+**Verification, after the last change:** 138/138 URLs clean, 0 link-floor breaches (5,391 links),
+0 data-cta regressions (663 total), and **0 em-dashes site-wide**, down from 59 at Phase 0. Build
+exit 0 at 162 pages, sitemap 138. Medical 538 tests, web-shared 406, `tsc` clean, dependency
+closure OK across 19 sites. Browser check at 390/768/1024/1440 over 48 page-loads spanning every
+phase: the only findings are the two documented instrument artifacts, the off-screen honeypot label
+and the `/nhs-pension` overlay hero whose true ratio is 11.24.
+
+**Noise generated: none.** Nothing pushed, no CI run, no deploy.
+
+**OPEN FOR THE OWNER, each a decision rather than a defect:**
+
+1. **Google Analytics is collecting nothing.** The Content Security Policy allows
+   `www.google-analytics.com` but not `region1.google-analytics.com`, where GA4 routes UK and EU
+   traffic, so the browser refuses the beacon. GA4 sets its cookies and transmits nothing. This is
+   pre-existing and not from this port, but the cookie and privacy pages just written describe
+   measurement that is not actually happening. Either fix the policy line or soften the wording.
+2. **The homepage H1 and four `/for-*` titles still read "Accountants for X".** They are this
+   site's search head terms, so changing them is an SEO decision rather than a copy fix, and the
+   port stopped at the body copy and the meta descriptions.
+3. **"Free consultation" appears across the site.** Strictly it promises what a partner firm will
+   do. It is in the site config and predates the port.
+4. **Student loan thresholds are unsourced and the calculators disagree** (three use 28,470, one
+   uses 29,385 and calls the first stale). house_positions has no student loan section.
+5. **`packages/web-shared/schema/local-business.ts` attaches a `PostalAddress` unconditionally**, so
+   every other estate site consuming it still emits a city address. Medical is fixed at the
+   consumer.
+6. **The five city pages are near-duplicates** in body prose.
+7. **"Most doctors" appears 22 times in blog bodies**, always as a statement about doctors generally
+   rather than about our clients. The rule bans the phrase outright; the port enforced it in new
+   copy and did not sweep the corpus.
+8. **`/resources` (the index) is deliberately not built**: net-new copy, and nothing links to it.
+9. Owner gates M-C6, M-C7, M-C11 and M-C12 remain open.
+
+---
 
 ## 2026-09-11 - DESIGN PORT PHASE 5 (homepage, pillars, locations). Built, reviewed once, fixed twice. Nothing deployed.
 

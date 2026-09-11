@@ -138,8 +138,8 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>For practice-wide financial systems that sit around payroll, our <a href="/blog/gp-bookkeeping-guide-uk">GP bookkeeping guide</a> and <a href="/blog/gp-accounting-software">GP accounting software guide</a> are useful companions.</p>
 
-<h2>How we can help</h2>
+<h2>Where to take it next</h2>
 
-<p>We act for GP practices, partnerships and individual doctors and understand the payroll mechanics that generic providers miss: PAYE and RTI for a mixed clinical and administrative team, NHS pension reporting through PCSE, auto-enrolment for non-NHS-scheme staff, employer NIC and the Employment Allowance, and locum status. If you want practice payroll handled by people who know the NHS pension and GMS contract environment, our <a href="/services">specialist medical accountancy services</a> include payroll for practices, and you can <a href="/contact">get in touch</a> to discuss what your practice needs.</p>
+<p>We publish this research, we do not run your payroll. What separates a specialist from a generic payroll provider is the mechanics above: PAYE and RTI for a mixed clinical and administrative team, NHS pension reporting through PCSE, auto-enrolment for non-NHS-scheme staff, employer NIC and the Employment Allowance, and locum status. If you want practice payroll handled by people who know the NHS pension and GMS contract environment, see what we cover on the <a href="/services">specialist medical accountancy services</a> page, or <a href="/contact">send an enquiry</a> and we will match it to a regulated firm in our specialist partner network that works with GP practices.</p>
 
 <p>This article is general information for UK GP practices and doctors, not personal advice. Payroll, pension and IR35 treatment depends on your practice's specific facts, so take advice before acting.</p>

@@ -39,7 +39,9 @@ export default function CalculatorsIndexPage() {
         <MedicalBackdrop />
         <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-[var(--copper)] px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            {/* --btn-ground, not raw copper: white on #b87333 measures 3.79 against a
+                4.5 floor and this chip carries 12px bold text, not a graphic. */}
+            <div className="inline-flex items-center gap-2 bg-[var(--btn-ground)] px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <Calculator className="h-3.5 w-3.5" />
               Free tools
             </div>

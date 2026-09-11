@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalHealthCheckWizard } from "@/components/health-check/MedicalHealthCheckWizard";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
+import { siteContainerLg, sectionY, focusRingOnDark } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 const TITLE = "Free Medical Practice Health Check for UK Doctors";
@@ -83,19 +85,19 @@ function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
       <div className="text-2xl font-bold text-white sm:text-3xl">{value}</div>
-      <div className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--copper-light)]/90">{label}</div>
+      <div className="mt-1 text-xs font-semibold uppercase tracking-wide text-slate-300">{label}</div>
     </div>
   );
 }
 
 function Step({ num, title, body }: { num: string; title: string; body: string }) {
   return (
-    <div className="rounded-xl border border-[var(--border)] bg-white p-6">
-      <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--copper-soft)] text-base font-bold text-[var(--copper-deep)]">
+    <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70">
+      <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--copper-soft)] text-base font-bold text-[var(--copper-deep)]">
         {num}
       </div>
-      <h3 className="mt-4 text-lg font-bold text-[var(--ink)]">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{body}</p>
+      <h3 className="mt-4 text-lg font-bold text-slate-900">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-slate-700">{body}</p>
     </div>
   );
 }
@@ -123,19 +125,19 @@ export default function FreePracticeHealthCheckPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero */}
-      <section className="bg-[var(--navy)] text-white">
-        <div className={`${siteContainerLg} py-14 sm:py-20`}>
+      {/* Hero. `relative overflow-hidden` on the section and `relative z-10` on
+          the content are the MedicalBackdrop host contract. */}
+      <section className="relative overflow-hidden bg-slate-900 py-10 text-white sm:py-12 lg:py-14">
+        <MedicalBackdrop tone="navy" />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb variant="light" items={breadcrumbItems} />
-          <div className="mt-8 max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[var(--copper)]/20 border border-[var(--copper)]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--copper-light)]">
-              Free · 5 minutes · No obligation
-            </div>
-            <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+          <div className="mt-6 max-w-3xl">
+            <Eyebrow onDark>Free, 5 minutes, no obligation</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-6xl">
               Free practice health check for UK doctors
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-              Five medical-specific questions. We flag the NHS pension, tax structure, IR35, private practice, and compliance items most worth reviewing in your specific position. On-screen results plus a follow-up email — no PDF wall, no sales sequences.
+            <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg">
+              Five medical-specific questions. We flag the NHS pension, tax structure, IR35, private practice, and compliance items most worth reviewing in your specific position. On-screen results plus a follow-up email, with no PDF wall and no sales sequences.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
               <Stat value="5" label="Questions" />
@@ -147,8 +149,9 @@ export default function FreePracticeHealthCheckPage() {
         </div>
       </section>
 
-      {/* Wizard */}
-      <section className="bg-[var(--background)]">
+      {/* Wizard. It renders its own white card, so the section ground here is
+          the coloured one that card needs to sit on. */}
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-2xl">
             <MedicalHealthCheckWizard />
@@ -157,10 +160,10 @@ export default function FreePracticeHealthCheckPage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-white border-y border-[var(--border)]">
+      <section className="border-y border-slate-200 bg-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl">
-            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               How the check works
             </h2>
             <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -185,20 +188,20 @@ export default function FreePracticeHealthCheckPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[var(--background)]">
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl text-center">
+            <h2 className="text-center text-2xl font-bold text-slate-900 sm:text-3xl">
               Frequently asked
             </h2>
             <dl className="mt-10 space-y-5">
               {FAQS.map((f) => (
                 <div
                   key={f.question}
-                  className="rounded-xl border-l-4 border-[var(--copper)] bg-white p-6 sm:p-7"
+                  className="rounded-xl border-l-4 border-[var(--brand-primary)] bg-white p-6 ring-1 ring-slate-200/70 sm:p-7"
                 >
-                  <dt className="text-lg font-bold text-[var(--ink)]">{f.question}</dt>
-                  <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{f.answer}</dd>
+                  <dt className="text-lg font-bold text-slate-900">{f.question}</dt>
+                  <dd className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">{f.answer}</dd>
                 </div>
               ))}
             </dl>
@@ -207,11 +210,12 @@ export default function FreePracticeHealthCheckPage() {
       </section>
 
       {/* Related guides */}
-      <section className="bg-[var(--navy)] text-white">
-        <div className={`${siteContainerLg} ${sectionY}`}>
+      <section className="relative overflow-hidden bg-slate-900 text-white">
+        <MedicalBackdrop tone="navy" />
+        <div className={`${siteContainerLg} ${sectionY} relative z-10`}>
           <div className="mx-auto max-w-4xl">
             <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--copper-light)]">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-300">
                 Want to read first?
               </p>
               <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
@@ -223,15 +227,15 @@ export default function FreePracticeHealthCheckPage() {
                 <Link
                   key={g.href}
                   href={g.href}
-                  className={`group block rounded-xl border border-white/15 bg-white/5 p-5 transition-all hover:border-[var(--copper)] hover:bg-white/10 ${focusRing}`}
+                  className={`group block rounded-xl bg-white/5 p-5 ring-1 ring-white/15 transition-all hover:bg-white/10 hover:ring-[var(--copper-light)] ${focusRingOnDark}`}
                 >
-                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--copper-light)] mb-2">
+                  <p className="mb-2 text-[10px] font-bold uppercase tracking-wide text-[var(--copper-light)]">
                     Medical guide
                   </p>
                   <h3 className="text-base font-bold text-white group-hover:text-[var(--copper-light)]">
                     {g.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/70">{g.body}</p>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-300">{g.body}</p>
                 </Link>
               ))}
             </div>

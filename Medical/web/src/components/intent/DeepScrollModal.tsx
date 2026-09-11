@@ -95,13 +95,13 @@ export function DeepScrollModal() {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-3">
-          <h2 className="text-lg font-bold text-[var(--navy)]">{offer.title}</h2>
+          <h2 className="text-lg font-bold text-slate-900">{offer.title}</h2>
           <button
             type="button"
             aria-label="Close"
             data-cta="deep_scroll_close"
             onClick={() => close(true)}
-            className="text-[var(--muted)] hover:text-[var(--navy)]"
+            className="text-slate-600 hover:text-slate-900"
           >
             &times;
           </button>
@@ -109,7 +109,7 @@ export function DeepScrollModal() {
         <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-[var(--copper-strong)]">
           {offer.reason}
         </p>
-        <p className="mt-2 text-sm text-[var(--ink-soft)]">{offer.blurb}</p>
+        <p className="mt-2 text-sm text-slate-700">{offer.blurb}</p>
         <div className="mt-5 flex flex-col gap-2">
           <Link
             href={offer.href}
@@ -119,7 +119,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-xl bg-[var(--copper)] px-4 py-2.5 text-center font-semibold text-white hover:bg-[var(--copper-strong)]"
+            className="min-h-12 rounded-xl bg-[var(--btn-ground)] px-4 py-2.5 text-center font-semibold text-white transition-colors hover:bg-[var(--btn-ground-hover)]"
           >
             {primaryLabel}
           </Link>
@@ -129,7 +129,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-xl border border-[var(--border)] px-4 py-2.5 text-center font-semibold text-[var(--navy)] hover:bg-[var(--surface-elevated)]"
+            className="min-h-12 rounded-xl px-4 py-2.5 text-center font-semibold text-slate-900 ring-1 ring-slate-200/70 transition-colors hover:bg-slate-50"
           >
             {secondaryLabel}
           </Link>

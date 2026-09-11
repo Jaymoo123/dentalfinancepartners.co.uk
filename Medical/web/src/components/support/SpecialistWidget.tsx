@@ -367,7 +367,7 @@ export function SpecialistWidget() {
           style={{ height: "min(72dvh, 34rem)" }}
         >
           {/* Agent header: navy background, copper accents */}
-          <div className="flex items-center gap-3 bg-[var(--navy)] px-4 py-3 text-white">
+          <div className="flex items-center gap-3 bg-slate-900 px-4 py-3 text-white">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--copper)] ring-2 ring-white/15">
               <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -375,13 +375,13 @@ export function SpecialistWidget() {
             </span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">Medical Accountants UK</p>
-              <p className="truncate text-[11px] text-white/70">Matched to a specialist medical accountant</p>
+              <p className="truncate text-[11px] text-slate-300">Matched to a specialist medical accountant</p>
             </div>
             <button
               type="button"
               aria-label="Close"
               onClick={closePanel}
-              className="flex min-h-11 min-w-11 items-center justify-center shrink-0 text-2xl leading-none text-white/70 hover:text-white"
+              className="flex min-h-11 min-w-11 shrink-0 items-center justify-center text-2xl leading-none text-slate-300 hover:text-white"
             >
               &times;
             </button>
@@ -418,7 +418,7 @@ export function SpecialistWidget() {
                   <a
                     href={`/calculators/${calcSlug}`}
                     onClick={() => onChip("calculator")}
-                    className="inline-flex items-center rounded-full border border-[var(--copper)]/30 bg-white px-3 py-3 text-sm font-medium text-[var(--navy)] hover:bg-[var(--copper-soft)]"
+                    className="inline-flex items-center rounded-xl bg-white px-3 py-3 text-sm font-medium text-slate-900 ring-1 ring-[var(--brand-primary)]/30 hover:bg-[var(--copper-soft)]"
                   >
                     See your numbers
                   </a>
@@ -426,7 +426,7 @@ export function SpecialistWidget() {
                 <a
                   href="/contact"
                   onClick={() => onChip("call")}
-                  className="inline-flex items-center rounded-full border border-[var(--copper)]/30 bg-white px-3 py-3 text-sm font-medium text-[var(--navy)] hover:bg-[var(--copper-soft)]"
+                  className="inline-flex items-center rounded-xl bg-white px-3 py-3 text-sm font-medium text-slate-900 ring-1 ring-[var(--brand-primary)]/30 hover:bg-[var(--copper-soft)]"
                 >
                   Book a free call
                 </a>
@@ -440,7 +440,7 @@ export function SpecialistWidget() {
               <button
                 type="button"
                 onClick={() => onChip("question")}
-                className="w-full rounded-xl bg-[var(--navy)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90"
+                className="min-h-12 w-full rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
               >
                 Ask a specialist
               </button>
@@ -472,7 +472,7 @@ export function SpecialistWidget() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full rounded-xl bg-[var(--navy)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60"
+                  className="min-h-12 w-full rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
                 >
                   {status === "loading" ? "Sending..." : "Send to a specialist"}
                 </button>
@@ -491,7 +491,7 @@ export function SpecialistWidget() {
 
       {/* Proactive peek: clicking opens the panel. */}
       {!open && peekVisible && peekLine && (
-        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-xl border border-[var(--copper)]/20 bg-white p-3 shadow-2xl">
+        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-xl bg-white p-3 shadow-2xl ring-1 ring-[var(--brand-primary)]/20">
           <button
             type="button"
             onClick={() => handleOpen(true)}
@@ -516,7 +516,7 @@ export function SpecialistWidget() {
         type="button"
         onClick={() => (open ? setOpen(false) : handleOpen(false))}
         data-cta="specialist_widget"
-        className="relative flex items-center gap-2 rounded-full bg-[var(--navy)] px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:opacity-90"
+        className="relative flex min-h-12 items-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-2xl transition-opacity hover:opacity-90"
       >
         {!open && unread > 0 && (
           <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">

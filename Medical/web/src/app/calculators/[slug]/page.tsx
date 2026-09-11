@@ -80,7 +80,9 @@ export default async function CalculatorPage({
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-[var(--copper)] px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            {/* --btn-ground, not raw copper: white on #b87333 measures 3.79 against a
+                4.5 floor and this chip carries 12px bold text, not a graphic. */}
+            <div className="inline-flex items-center gap-2 bg-[var(--btn-ground)] px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <CalcIcon className="h-3.5 w-3.5" />
               Free calculator
             </div>
@@ -88,7 +90,7 @@ export default async function CalculatorPage({
             <p className="mt-4 text-lg text-white/80 leading-relaxed">{tool.intro}</p>
             <a
               href="#get-expert-help"
-              className="mt-6 inline-block border-b-4 border-[var(--copper-strong)] bg-[var(--copper)] px-8 py-3 text-base font-bold text-white transition-all hover:opacity-90"
+              className="mt-6 inline-block border-b-4 border-[var(--copper-deep)] bg-[var(--btn-ground)] px-8 py-3 text-base font-bold text-white transition-all hover:bg-[var(--btn-ground-hover)]"
               data-cta="calc_hero_help"
               data-cta-goal="form"
               data-cta-placement="calculator_hero"

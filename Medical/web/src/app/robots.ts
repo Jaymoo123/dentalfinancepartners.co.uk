@@ -17,7 +17,17 @@ import { siteConfig } from "@/config/site";
 export default function robots(): MetadataRoute.Robots {
   const base = siteConfig.url.replace(/\/$/, "");
 
-  const disallow = ["/api/", "/thank-you"];
+  // /admin is the login-gated in-app console and /embed is the calculator
+  // iframe surface. Neither is a page anyone should reach from a SERP, and
+  // /admin/analytics/* carries no route-level `robots` export, so this list is
+  // the only thing keeping it out of an index. /book and /complete are covered
+  // by their own `robots: { index: false }` metadata.
+  /* /complete sits beside /thank-you: both are post-submit surfaces, neither is
+     in the sitemap, and neither is linked from anywhere crawlable. Blocking one
+     and not the other was an inconsistency a review caught. /book is the third
+     of the same kind: it is token-gated post-submit and must never be a public
+     destination. */
+  const disallow = ["/api/", "/thank-you", "/complete", "/book", "/admin", "/embed"];
 
   // ---------------------------------------------------------------------------
   // TRAINING BOTS — LLM corpus crawlers (ALLOWED; delete block to opt out)

@@ -3,7 +3,9 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { LeadForm } from "@/components/forms/LeadForm";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPage } from "@/lib/schema";
@@ -266,9 +268,15 @@ function Section({
   );
 }
 
+/** Chart caption. Renders as `<figcaption>`: every call site sits inside the
+ *  `<figure>` that wraps a Recharts SVG, and the caption IS that figure's
+ *  accessible name (it names series, units and period). The charts carried no
+ *  accessible name of any kind before the port. */
 function Caption({ children }: { children: ReactNode }) {
   return (
-    <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] italic">{children}</p>
+    <figcaption className="mt-3 text-sm leading-relaxed text-[var(--muted)] italic">
+      {children}
+    </figcaption>
   );
 }
 
@@ -314,8 +322,11 @@ export default function AaIndexPage() {
       {/* ------------------------------------------------------------------ */}
       {/* Hero                                                                */}
       {/* ------------------------------------------------------------------ */}
-      <section className="hero-brand py-12 sm:py-16">
-        <div className="hero-inner">
+      {/* `relative overflow-hidden` on the section and `relative z-10` on the
+          content are the MedicalBackdrop host contract. */}
+      <section className="relative overflow-hidden bg-slate-900 py-10 sm:py-12 lg:py-14">
+        <MedicalBackdrop tone="navy" />
+        <div className="relative z-10">
           <div className={siteContainerLg}>
             <Breadcrumb
               variant="light"
@@ -325,14 +336,12 @@ export default function AaIndexPage() {
                 { label: "Annual Allowance Pension Tax Index" },
               ]}
             />
-            <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-[var(--copper-light)]">
-              Annual Allowance Pension Tax Index
-            </p>
-            <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            <Eyebrow onDark>Annual Allowance Pension Tax Index</Eyebrow>
+            <h1 className="max-w-4xl text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-5xl">
               The annual allowance, the lifetime allowance and NHS doctors: pension tax charges
               across UK registered pension schemes
             </h1>
-            <p className="mt-4 max-w-3xl text-lg text-white/80">
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg">
               The pension lifetime allowance was abolished on 6 April 2024. It was replaced by a
               lump sum allowance of £268,275 and a lump sum and death benefit allowance of
               £1,073,100, both unchanged for 2026/27. This page sets those caps against HMRC&rsquo;s
@@ -374,7 +383,7 @@ export default function AaIndexPage() {
 
             {/* Key facts box */}
             <div className="rounded-xl border border-[var(--copper)]/20 bg-[var(--copper)]/5 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-[var(--copper-strong)]">
+              <h2 className="text-lg font-bold text-[var(--copper-deep)]">
                 Key facts on annual allowance and lifetime allowance pension tax
               </h2>
               <ul className="mt-4 space-y-2 text-base leading-relaxed text-[var(--ink)]">
@@ -469,14 +478,16 @@ export default function AaIndexPage() {
                 pension growth, and the member carries on accruing. These are gross counts, so a doctor
                 who appears in one year is still an active or deferred member of the scheme.
               </p>
-              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
-                <SchemePaysValueChart series={schemePaysData} />
-              </div>
+              <figure className="not-prose mt-6">
+                <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
+                  <SchemePaysValueChart series={schemePaysData} />
+                </div>
               <Caption>
                 Scheme Pays reporting through the Accounting for Tax return began in 2012/13, so this
                 series does not extend earlier. The PODS digital service (from 2020/21) improved
                 reporting and may lift later years. All UK registered pension schemes (HMRC).
               </Caption>
+              </figure>
 
               <p className="font-semibold text-[var(--navy)]">
                 The charges got smaller as they got commoner
@@ -560,9 +571,10 @@ export default function AaIndexPage() {
                 your pension over the year, not the contributions you paid in, and in a defined-benefit
                 scheme like the NHS one those two numbers are nothing like each other.
               </p>
-              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
-                <SaIndividualsChart series={saData} />
-              </div>
+              <figure className="not-prose mt-6">
+                <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
+                  <SaIndividualsChart series={saData} />
+                </div>
               <Caption>
                 All UK registered pension schemes (HMRC). The Taper marker (2016/17) shows where the
                 count also began including members caught by the tapered allowance and the money
@@ -574,6 +586,7 @@ export default function AaIndexPage() {
                 Accounting for Tax figures, not to this Self Assessment count, so 2024/25 is charted
                 here.
               </Caption>
+              </figure>
               <div className="rounded-xl border-l-4 border-[var(--copper)] bg-[var(--copper)]/5 p-4">
                 <p className="font-semibold text-[var(--navy)]">The 2016/17 taper widening</p>
                 <p className="mt-1 text-sm text-[var(--ink-soft)]">
@@ -617,14 +630,16 @@ export default function AaIndexPage() {
                 again in 2024/25, from 24,950 to 30,440, with the allowance unchanged, so that rise is
                 pension growth and reporting catching up rather than a policy change.
               </p>
-              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
-                <AllowancePathChart series={allowancePath} />
-              </div>
+              <figure className="not-prose mt-6">
+                <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
+                  <AllowancePathChart series={allowancePath} />
+                </div>
               <Caption>
                 The standard annual allowance, set by policy. It fell from £215,000 (2006/07) to
                 £40,000, then rose to £60,000 from 2023/24 and held there for 2024/25. Falling allowances, not just larger
                 pensions, drove the rise in charges. All UK schemes.
               </Caption>
+              </figure>
             </Section>
 
             {/* Section 4: The lifetime allowance and what replaced it */}
@@ -971,9 +986,10 @@ export default function AaIndexPage() {
                 fully calculated at the snapshot date (26 September 2024). These figures count the
                 standard allowance only and do not include members caught solely by the taper.
               </p>
-              <div className="not-prose mt-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-6">
-                <NhsExceededChart series={nhsData} />
-              </div>
+              <figure className="not-prose mt-6">
+                <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
+                  <NhsExceededChart series={nhsData} />
+                </div>
               <Caption>
                 NHS Pension Scheme, England and Wales. A point-in-time NHSBSA Freedom of Information
                 snapshot (data as at 26 September 2024, on the pre-McCloud-rollback basis). Counts
@@ -981,6 +997,7 @@ export default function AaIndexPage() {
                 caught by the taper are not included. The 2021/22 officer spike (46,135) reflects that
                 year&rsquo;s high CPI revaluation of the 2015 scheme.
               </Caption>
+              </figure>
 
               {/* Secondary NHS table */}
               <div className="not-prose mt-8 overflow-x-auto">
@@ -1354,7 +1371,7 @@ export default function AaIndexPage() {
             </Section>
 
             {/* Conversion block */}
-            <div className="mt-10 rounded-xl border-2 border-[var(--copper)]/20 bg-gradient-to-br from-[var(--copper)]/5 to-[var(--navy-light)]/10 p-8 sm:p-10">
+            <div className="mt-10 rounded-xl bg-gradient-to-br from-[var(--copper)]/5 to-[var(--navy-light)]/10 p-8 ring-1 ring-[var(--copper)]/20 sm:p-10">
               <h2 className="text-2xl font-bold text-[var(--navy)] sm:text-3xl">
                 Concerned about your annual allowance position?
               </h2>
@@ -1367,18 +1384,21 @@ export default function AaIndexPage() {
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
                 <Link
                   href="/calculators/nhs-pension-annual-allowance"
-                  className="text-[var(--copper-strong)] hover:underline"
+                  className="text-[var(--copper-deep)] hover:underline"
                 >
                   NHS pension annual allowance calculator &rarr;
                 </Link>
                 <Link
                   href="/nhs-pension"
-                  className="text-[var(--ink-soft)] hover:text-[var(--copper-strong)]"
+                  className="text-[var(--ink-soft)] hover:text-[var(--copper-deep)]"
                 >
                   NHS pension planning guide &rarr;
                 </Link>
               </div>
-              <div className="mt-8">
+              {/* The form gets its own WHITE card on the tinted panel. A lead
+                  form rendered bare on a coloured ground is what shipped
+                  invisible field labels on 88 article pages here. */}
+              <div className="mt-8 rounded-xl bg-white p-5 ring-1 ring-slate-200/70 sm:p-8">
                 <LeadForm redirectOnSuccess={false} submitLabel="Request a review" />
               </div>
             </div>
