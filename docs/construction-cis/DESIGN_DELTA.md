@@ -231,39 +231,103 @@ and 3.43 for article links and 2.47 for the footer fine print. Two methods, same
 
 ### 3a. Open breach created by this port, tracked and must close before deploy
 
-**Navy touches navy on 79 of 246 routes (32%).** Phase 1 flipped the footer ground from light to
-slate-900 per section C. On those routes the last opaque section is already `#1e293b`, so the page
-now ends with two dark bands and no light break, which DESIGN_SYSTEM section 9 forbids
-("navy must never touch navy"). Families: `/glossary` **50**, `/locations` **25**, plus
-`/cis-refund`, `/gross-payment-status`, `/cis-invoice-template` and
-`/cis-payment-deduction-statement-template`.
+#### 3a.1 Navy touches navy at the footer: **29 of 246 routes (12%)**
 
-**Corrected 2026-09-11.** The first count was 102 and named `/blog` 18 and `/resources` 3 as well.
-Both were FALSE POSITIVES, and glossary and locations were each one too high. The reviewer's first
-scan used a colour parser that failed silently on `oklch()` and scored every unresolved ground as
-light. `/blog` and `/resources` are NOT in breach and are removed from the closure plan below. The
-old number is recorded here so nobody re-derives 79 against a remembered 102 and concludes the
-breach grew.
+Phase 1 flipped the footer ground from light to slate-900 per section C. On those routes the last
+opaque band in `<main>` is already dark, so the page ends with two dark bands and no light break,
+which DESIGN_SYSTEM section 9 forbids ("navy must never touch navy").
 
-This is an intermediate state in an UNDEPLOYED port, and it is recorded here rather than patched
-across 102 routes because every one of those closing blocks is rebuilt by a later phase that will
-give it the correct light tail: glossary and locations in phase 3, the two pillars in phase 5, and
-the two template pages in phase 6. Patching them now would be written twice and thrown away once.
+| Family | Routes | Last band | Owner |
+|---|---|---|---|
+| `/locations/[slug]` | **25** | `#171717` neutral-900, the closing contact CTA at `locations/[slug]/page.tsx:275` | **Phase 3**, one template edit fixes all 25 |
+| `/cis-refund`, `/gross-payment-status` | **2** | `bg-[#1e293b]` | Phase 5 (pillars), one edit each |
+| `/cis-invoice-template`, `/cis-payment-deduction-statement-template` | **2** | `bg-[#1e293b]` | Phase 6 (templates), one edit each |
+| **Total** | **29** | | |
 
-**It is therefore a blocking item on the port's definition of done, not a deferral.** If any family
-has not closed by the owner walk, the footer flip is held back rather than shipped in breach.
+**CORRECTED TWICE, and both wrong numbers are kept here on purpose. A quietly corrected number
+teaches nothing.**
 
-The check is now a committed instrument, because the re-review correctly pointed out that this gate
-named a verification nobody could perform: the scan that produced both counts was a throwaway
-script that no longer exists, which is the TD-07 shape of a rule everyone believes is enforced and
-nothing enforces. Run:
+- **The first count was 102**, and named `/blog` 18 and `/resources` 3 as well. Both were FALSE
+  POSITIVES, and glossary and locations were each one too high. Cause: the scan behind it was a
+  throwaway script that parsed colours as text and was silently defeated by `oklch()`, scoring
+  every unresolved ground as light.
+- **The second count was 79**, families `/glossary` 50 and `/locations` 25 plus the four standalone
+  routes. **That was also a measurement error, and from the same class of bug, this time inside the
+  committed instrument written to replace the throwaway script.** Two defects, both found and fixed
+  on 2026-09-11:
+  - its `isDark` also parsed colour as text, dividing the first number of `oklch(0.984 0.003
+    247.858)` by 255 and scoring a near-white stone as dark, so EVERY `oklch()` ground classified
+    dark and the raw run reported 81;
+  - its band selector matched `section` and `div[class*='bg-']` but not `<article>`, and
+    `/glossary/[slug]` ends in `<article class="bg-white">`. The whole family was scored on its
+    navy hero three screens up the page. **All 50 glossary routes were false positives.**
+- **`/glossary` is NOT in breach: 50 becomes 0, and no fix should be written for it.** The family's
+  tail is a white `<article>` that already gives the footer the light break section 9 requires. If
+  Phase 3 touches the family it must keep that light tail, and should note that turning the
+  `<article>` into a `<section>` would make the family visible to the instrument for the first time.
+- `/locations` 25 and the four standalone routes stood through all three counts.
 
+So the sequence is 102 (parser defeated by oklch), 79 (instrument defeated by oklch AND blind to
+`<article>`), **29 (verified)**. Nobody should re-derive 29 against a remembered 79 or 102 and
+conclude the breach shrank: it never was 102 or 79.
+
+**Phase 3 closes 25 of the 29, not 75 of 79.** The blocking item therefore survives Phase 3 by
+design and closes in Phases 5 and 6.
+
+#### 3a.2 Adjacent bands sharing a ground: **48 of 246 routes (20%)**, PRE-EXISTING, now tracked
+
+**Decision 2026-09-11: track it here, as a second row.** DESIGN_SYSTEM section 9 forbids adjacency
+in the same breath as it forbids navy on navy, so tracking one and not the other leaves the port
+shipping a known section-9 breach on a fifth of the site, and **one of the 48 is literally navy on
+navy** (`/for` index, bands 0 and 1 both `#171717` neutral-900, `for/page.tsx:20` and `:33`), which
+is the exact clause 3a.1 already quotes. 46 of the 48 are `/for` pages, already inside Phase 3
+scope, so the marginal cost of tracking it is close to zero.
+
+| Family | Routes | Shared ground | Owner |
+|---|---|---|---|
+| `/for/[slug]` | **45** | white on white: FAQ at `for/[slug]/page.tsx:169` then the NextStepOffer wrapper at `:204` | **Phase 3**, one template edit fixes all 45 |
+| `/for` index | **1** | `#171717` on `#171717`, **navy on navy inside the page** | **Phase 3**, one edit |
+| `/` | **1** | `#fafaf9` on `#fafaf9`, `page.tsx:236` and `:245` | Phase 5, one line |
+| `/services` | **1** | white on white, `services/page.tsx:168` and `:184` | Phase 5, one line |
+| **Total** | **48** | | **four edits** |
+
+**Recorded as PRE-EXISTING AND INHERITED, not as damage created by this port.** Evidence:
+`services/page.tsx` has not been touched since before Phase 0; Phase 2 touched `page.tsx` and
+`for/[slug]/page.tsx` but changed no ground in either
+(`git show 6575bbb69 -- <file> | grep '^[-+].*bg-'` returns nothing). The footer flip did not cause
+any of the 48. No route appears in both 3a.1 and 3a.2.
+
+#### 3a.3 Why this is recorded rather than patched now
+
+Every closing block in 3a.1 is rebuilt by a later phase that will give it the correct light tail:
+`/locations` in Phase 3, the two pillars in Phase 5, the two template pages in Phase 6. Patching
+them now would be written twice and thrown away once.
+
+**It is a blocking item on the port's definition of done, not a deferral.** If either row has not
+closed to its expected figure by the owner walk, the footer flip is held back rather than shipped
+in breach.
+
+#### 3a.4 The gate, and how to run it
+
+The check is a committed instrument, because the re-review correctly pointed out that this gate
+named a verification nobody could perform. **As of 2026-09-11 the instrument's own summary line is
+the gate and can be read directly**: both defects above are fixed in code, and the mode now carries
+a self-test that asserts a known light and a known dark value in both `rgb()` and `oklch()` form
+and refuses to report if any of the four is misclassified.
+
+```bash
+curl -s http://localhost:PORT/ | grep -o '<title>[^<]*</title>'   # must contain: CIS Accountants
+
+MSYS_NO_PATHCONV=1 node docs/_engines/instruments/browser_check.mjs --site=construction-cis   --base=http://localhost:PORT --grounds --sample=200 --widths=1440 --out=<scratch>/grounds.json
 ```
-node docs/_engines/instruments/browser_check.mjs --site=construction-cis --base=http://localhost:PORT --grounds
-```
 
-It must resolve colours through the browser, not parse them: `oklch()` is exactly what defeated the
-first count.
+Expected once Phase 3 closes: `dark band touching the footer: 4` (Phase 5 and 6 routes only) and
+`adjacent bands sharing a ground: 2` (`/` and `/services`). Full provenance, per-route lists,
+per-family diagnosis with file and line for every one of the 77 breaching routes, and the two
+residual blind spots in the gate are in `_port/GROUNDS_BASELINE.md`.
+
+It must resolve colours through the browser, not parse them: `oklch()` is exactly what defeated
+both discredited counts.
 
 ## 4. Owner-input state (appendix K rows)
 

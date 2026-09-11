@@ -318,31 +318,95 @@ const PROBE = () => {
   // --- section grounds -------------------------------------------------------
   // Every opaque band in document order, then the footer, so the caller can see
   // both "two bands share a ground" and "the page tail runs into the footer".
-  // getComputedStyle gives resolved sRGB, which is the whole point: the parser
-  // that defeated the first attempt could not read oklch().
-  const opaque = (c) => c && c !== "transparent" && !/rgba\(\s*0\s*,\s*0\s*,\s*0\s*,\s*0\s*\)/.test(c);
+  //
+  // DEFECT FIXED 2026-09-11, the SAME class of bug this mode was written to
+  // replace. The first version ran its own `c.match(/\d+(\.\d+)?/g)` over the
+  // computed string and treated the captures as 0-255 sRGB channels. That is
+  // right for rgb(23, 23, 23) and catastrophically wrong for oklch(): from
+  // oklch(0.984 0.003 247.858), a near-WHITE stone, it captured 0.984, divided
+  // by 255 and scored it DARK. EVERY oklch() ground classified dark, and
+  // Tailwind v4 emits oklch() throughout this estate, so a raw run reported 81
+  // dark-on-dark breaches where the truth is 29. Colour is never parsed here
+  // now: it is PAINTED onto the 1x1 canvas above and read back, the same path
+  // the contrast findings already use, which is exact for rgb/rgba/hex/named/
+  // oklch/lab/color() and anything else the browser can parse, because the
+  // browser does the conversion. `rgb()` also returns the resolved ALPHA, which
+  // is how opacity is judged below.
+  //
+  // Second defect, same date: the selector was `:scope > section, :scope >
+  // div[class*='bg-']`, so an <article> was invisible to it. A page whose tail
+  // is <article class="bg-white"> reported only its navy hero as a band and was
+  // scored on that; all 50 glossary term pages were false positives. Every
+  // element that can be a full-width band is matched now. BOUNDING: direct
+  // children of <main> ONLY, and a plain <div> still has to carry a `bg-` class.
+  // The semantic tags are safe to take unconditionally because a direct child of
+  // <main> that is a <section>/<article>/<aside>/<header>/<footer> IS a band by
+  // construction. Trade-off: a band whose ground arrives by some route other
+  // than a `bg-` utility on a direct-child <div> is still missed, which is the
+  // conservative direction (a miss under-reports, it does not invent a breach),
+  // and loosening the div rule would start counting inline wrappers as bands.
+  //
+  // Transparency, honestly: a band at alpha < 1 is not an opaque ground. The old
+  // `opaque()` only string-matched the single literal rgba(0, 0, 0, 0), so any
+  // other partially transparent ground, rgba(15, 23, 42, 0.5) included, sailed
+  // through as solid. The painted alpha is checked instead, on the same >= 250
+  // threshold the contrast paint stack uses.
+  const groundOf = (el) => {
+    const p = rgb(getComputedStyle(el).backgroundColor);
+    return p && p[3] >= 250 ? p : null;
+  };
+  const key = (p) => `rgb(${p[0]}, ${p[1]}, ${p[2]})`;
+  const BAND_SEL =
+    ":scope > section, :scope > article, :scope > aside, :scope > header, :scope > footer, :scope > div[class*='bg-']";
   const bandsOf = (root) =>
-    Array.from(root ? root.querySelectorAll(":scope > section, :scope > div[class*='bg-']") : [])
-      .map((el) => {
-        const bg = getComputedStyle(el).backgroundColor;
-        return opaque(bg) ? bg : null;
-      })
-      .filter(Boolean);
+    Array.from(root ? root.querySelectorAll(BAND_SEL) : [])
+      .map(groundOf)
+      .filter(Boolean)
+      .map(key);
 
   const mainEl = document.querySelector("main");
   const bands = bandsOf(mainEl);
   const footerEl = document.querySelector("footer");
-  const footerGround = footerEl ? getComputedStyle(footerEl).backgroundColor : null;
+  const footerPaint = footerEl ? groundOf(footerEl) : null;
+  const footerGround = footerPaint ? key(footerPaint) : null;
 
-  // A ground counts as dark if its relative luminance is low. 0.18 sits well
-  // below every cream/white surface in the estate and well above every navy.
-  const lumOf = (c) => {
-    const m = c && c.match(/\d+(\.\d+)?/g);
-    if (!m) return null;
-    const f = (v) => { v = Number(v) / 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
-    return 0.2126 * f(m[0]) + 0.7152 * f(m[1]) + 0.0722 * f(m[2]);
-  };
-  const isDark = (c) => { const l = lumOf(c); return l !== null && l < 0.18; };
+  // A ground counts as dark if its REAL relative luminance is low, `lum()` above,
+  // fed by the painted pixel. Threshold 0.18, unchanged in intent and value:
+  // every dark ground in this estate sits an order of magnitude below it
+  // (slate-900 #0f172a = 0.0088, #1e293b = 0.0218, neutral-900 #171717 = 0.0086)
+  // and every light one sits five times above it (white = 1.0000, #fafaf9 =
+  // stone-50 = 0.9553, #fafaf7 = 0.9541). The nearest ground to the line is
+  // 0.158 away on the dark side and 0.775 away on the light side, so the exact
+  // figure is not load-bearing; it only has to separate two clusters that are
+  // already separated by a factor of 44.
+  const isDarkPaint = (p) => !!p && lum(p.slice(0, 3)) < 0.18;
+  const darkKeys = new Set();
+  for (const el of mainEl ? mainEl.querySelectorAll(BAND_SEL) : []) {
+    const p = groundOf(el);
+    if (isDarkPaint(p)) darkKeys.add(key(p));
+  }
+  if (isDarkPaint(footerPaint)) darkKeys.add(footerGround);
+  const isDark = (k) => darkKeys.has(k);
+
+  // GROUNDS SELF-TEST. Same discipline as the contrast pairs: a classifier that
+  // has not proved itself does not get to fail a phase. A known light and a known
+  // dark value in BOTH rgb() and oklch() form, because oklch() is exactly what
+  // broke the first version, and the oklch values are the real Tailwind v4
+  // emissions for slate-900 and stone-50.
+  const groundsSelfTest = (() => {
+    const cases = [
+      ["rgb(15, 23, 42)", true],
+      ["rgb(255, 255, 255)", false],
+      ["oklch(0.208 0.042 265.755)", true],
+      ["oklch(0.985 0.001 106.423)", false],
+    ];
+    const measured = cases.map(([c, want]) => {
+      const p = rgb(c);
+      const got = isDarkPaint(p);
+      return { value: c, want, got, luminance: p ? +lum(p.slice(0, 3)).toFixed(4) : null, pass: got === want };
+    });
+    return { ok: measured.every((m) => m.pass), measured };
+  })();
 
   const adjacentSame = [];
   for (let i = 1; i < bands.length; i++) {
@@ -351,7 +415,7 @@ const PROBE = () => {
   const lastBand = bands.length ? bands[bands.length - 1] : null;
   const darkOnDark = !!(lastBand && footerGround && isDark(lastBand) && isDark(footerGround));
 
-  const grounds = { bands, footerGround, lastBand, adjacentSame, darkOnDark };
+  const grounds = { bands, footerGround, lastBand, adjacentSame, darkOnDark, selfTest: groundsSelfTest };
 
   return { overflow, contrast, anchorGaps, headings, unrendered, unparsed, selfTest, grounds, height: doc.scrollHeight };
 };
@@ -377,6 +441,7 @@ if (!SAVE) {
 const report = [];
 let failures = 0;
 let selfTestResult = null;
+let groundsSelfTestResult = null;
 const coverage = {}; // route -> label -> unrendered subtree roots
 
 for (const width of WIDTHS) {
@@ -436,6 +501,7 @@ for (const width of WIDTHS) {
       await new Promise((r) => setTimeout(r, 1200));
       probe = await page.evaluate(PROBE);
       if (probe.selfTest && !selfTestResult) selfTestResult = probe.selfTest;
+      if (probe.grounds?.selfTest && !groundsSelfTestResult) groundsSelfTestResult = probe.grounds.selfTest;
       if (SHOTS) {
         const slug = route === "/" ? "home" : route.slice(1).replace(/\//g, "_");
         await page.screenshot({
@@ -526,6 +592,24 @@ for (const b of blind.slice(0, 20)) console.log(`      [unchecked] ${b}`);
 // Reported, never exit-code: a red run is a notification, and this mode exists
 // to answer "has the breach closed yet", which is a question, not a defect.
 if (GROUNDS) {
+  // The classifier proves itself before it is allowed to fail a phase, exactly as
+  // the contrast maths does above. Gated inside --grounds so a run without the
+  // flag is byte-for-byte the run it always was.
+  if (!groundsSelfTestResult || !groundsSelfTestResult.ok) {
+    console.error(
+      `
+GROUNDS SELF-TEST FAILED: ${JSON.stringify(groundsSelfTestResult)}. ` +
+        `Expected rgb(15, 23, 42) and oklch(0.208 0.042 265.755) dark, ` +
+        `rgb(255, 255, 255) and oklch(0.985 0.001 106.423) light. ` +
+        `Every grounds figure below would be noise; fix the instrument before reporting.`,
+    );
+    process.exit(2);
+  }
+  console.log(
+    `
+grounds self-test OK: ` +
+      groundsSelfTestResult.measured.map((m) => `${m.value} lum=${m.luminance} ${m.got ? "dark" : "light"}`).join("; "),
+  );
   const byRoute = {};
   for (const r of report) {
     if (!r.grounds) continue;
