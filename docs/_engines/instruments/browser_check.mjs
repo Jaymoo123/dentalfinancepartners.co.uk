@@ -368,12 +368,31 @@ const PROBE = () => {
   // class), then filtered twice so wrappers and cards do not become "bands":
   //   1. it must span >= 90% of <main>'s width - a band is full-bleed by
   //      definition, a card or a column is not;
-  //   2. any candidate that CONTAINS another candidate is dropped - so a wrapper
-  //      like <div id="book"> yields its three real bands instead of itself, and
-  //      no band is ever counted twice at two depths.
-  // That keeps the conservative direction of the old rule (a ground arriving by
-  // some route other than a bg- utility is still missed, which under-reports
-  // rather than inventing a breach) while ending the fixed-depth blindness.
+  //   2. any candidate CONTAINED BY another candidate is dropped - the OUTERMOST
+  //      full-width candidate is the band, and no band is counted twice at two
+  //      depths.
+  // The wrapper case still works and is worth stating because it is not obvious:
+  // <div id="book"> carries no `bg-` class, so it is NOT a candidate, so
+  // outermost-wins still yields its three real bands rather than itself. A
+  // wrapper that DOES carry a ground is reported once, as itself, which is the
+  // honest answer: it IS the ground the visitor sees.
+  //
+  // FOURTH defect, 2026-09-11, introduced by the repair directly above and caught
+  // the same day. Rule 2 was written the other way round - a candidate containing
+  // another was dropped in favour of its full-width descendants. Below 1440px most
+  // inner elements are full width, so an ordinary <section class="bg-white"> was
+  // replaced by four or five of its own children and the mode reported PHANTOM
+  // runs of white-on-white, plus a fake navy-on-navy tail on /calculators where
+  // the hero's inner wrapper became a second navy "band". It also destroyed the
+  // one genuine /cis-refund finding the previous repair had just proved, because
+  // the two bands at distance 2.84 were both replaced by their children.
+  // The commit message for that repair claimed the new rule "under-reports rather
+  // than inventing a breach". That claim was FALSE: it invented eight. An
+  // instrument repair is a code change like any other and needed its own
+  // adversarial check - which is why band DISCOVERY now has a self-test of its
+  // own below, on a fixture, at two widths, and the mode refuses to report if it
+  // fails. Three repairs of one function is evidence it needed a test, not a
+  // fourth fix.
   const groundOf = (el) => {
     const p = rgb(getComputedStyle(el).backgroundColor);
     return p && p[3] >= 250 ? p : null;
@@ -386,7 +405,7 @@ const PROBE = () => {
     const cand = Array.from(root.querySelectorAll(BAND_SEL)).filter(
       (el) => el.getBoundingClientRect().width >= full,
     );
-    return cand.filter((el) => !cand.some((o) => o !== el && el.contains(o)));
+    return cand.filter((el) => !cand.some((o) => o !== el && o.contains(el)));
   };
 
   // PERCEPTUAL ground comparison, 2026-09-11. Grounds were compared by STRING
@@ -460,11 +479,48 @@ const PROBE = () => {
       const got = !!(a && b) && sameGround(a, b);
       return { a: x, b: y, want, got, distance: d === null ? null : +d.toFixed(2), pass: got === want };
     });
+    // BAND DISCOVERY SELF-TEST, added 2026-09-11 after the fourth defect. Both of
+    // the last two defects lived in discovery, which neither existing self-test
+    // touched: the classifier and the threshold were proved while the thing that
+    // decides WHAT to classify was not. The fixture is built here rather than read
+    // off a live page on purpose - a site's markup changes and a self-test must not.
+    // It encodes both cases the rule has to satisfy at once:
+    //   fx1 = an outer band that CONTAINS a full-width descendant carrying a bg-
+    //         class. Must be reported ONCE, as itself.
+    //   fx2/fx3 = two real bands inside a plain <div> wrapper with no ground of its
+    //         own, the Trade `<div id="book">` shape. Must both be found.
+    //   a narrow card, which must never qualify.
+    // Run at two container widths because the defect was width-dependent: at 1440
+    // the wrong rule happened to give the right answer and only 390/768/1024 showed
+    // it. Expected answer is the data-fx list ["fx1","fx2","fx3"], in document order.
+    const discovery = (() => {
+      const host = document.createElement("div");
+      host.style.cssText = "position:fixed;top:-10000px;left:0;visibility:hidden";
+      host.innerHTML =
+        '<section data-fx="fx1" style="background:#fff">' +
+        '<div class="bg-white" style="width:100%">full-width child, not a band</div>' +
+        "</section>" +
+        '<div id="fx-wrap">' +
+        '<section data-fx="fx2" style="background:#eee">wrapped band</section>' +
+        '<section data-fx="fx3" style="background:#ddd">wrapped band</section>' +
+        "</div>" +
+        '<div class="bg-red" style="width:120px">card</div>';
+      document.body.appendChild(host);
+      const want = "fx1,fx2,fx3";
+      const cases = [390, 1024].map((w) => {
+        host.style.width = `${w}px`;
+        const got = bandEls(host).map((el) => el.dataset.fx || el.id || el.className || el.tagName).join(",");
+        return { width: w, want, got, pass: got === want };
+      });
+      host.remove();
+      return { cases, pass: cases.every((c) => c.pass) };
+    })();
     return {
-      ok: measured.every((m) => m.pass) && pairs.every((p) => p.pass),
+      ok: measured.every((m) => m.pass) && pairs.every((p) => p.pass) && discovery.pass,
       measured,
       threshold: SAME_GROUND,
       pairs,
+      discovery,
     };
   })();
 
@@ -567,7 +623,11 @@ for (const width of WIDTHS) {
       await new Promise((r) => setTimeout(r, 1200));
       probe = await page.evaluate(PROBE);
       if (probe.selfTest && !selfTestResult) selfTestResult = probe.selfTest;
-      if (probe.grounds?.selfTest && !groundsSelfTestResult) groundsSelfTestResult = probe.grounds.selfTest;
+      // Keep the FIRST result, but let any FAILING one displace it: the discovery
+      // self-test is width-sensitive by design and a pass at 1440 must not hide a
+      // failure at 390, which is exactly how the fourth defect stayed invisible.
+      if (probe.grounds?.selfTest && (!groundsSelfTestResult || !probe.grounds.selfTest.ok))
+        groundsSelfTestResult = probe.grounds.selfTest;
       if (SHOTS) {
         const slug = route === "/" ? "home" : route.slice(1).replace(/\//g, "_");
         await page.screenshot({
@@ -670,7 +730,8 @@ GROUNDS SELF-TEST FAILED: ${JSON.stringify(groundsSelfTestResult)}. ` +
         `Expected rgb(15, 23, 42) and oklch(0.208 0.042 265.755) dark, ` +
         `rgb(255, 255, 255) and oklch(0.985 0.001 106.423) light, ` +
         `rgb(250, 250, 247) vs rgb(250, 250, 249) the SAME ground and ` +
-        `rgb(255, 255, 255) vs rgb(250, 250, 249) DIFFERENT grounds. ` +
+        `rgb(255, 255, 255) vs rgb(250, 250, 249) DIFFERENT grounds, ` +
+        `and band discovery to return exactly fx1,fx2,fx3 on the fixture at 390 and 1024. ` +
         `Every grounds figure below would be noise; fix the instrument before reporting.`,
     );
     process.exit(2);
@@ -682,7 +743,9 @@ grounds self-test OK: ` +
       `; same-ground threshold ${groundsSelfTestResult.threshold} -> ` +
       groundsSelfTestResult.pairs
         .map((p) => `${p.a} vs ${p.b} d=${p.distance} ${p.got ? "SAME" : "DIFFERENT"}`)
-        .join("; "),
+        .join("; ") +
+      `; band discovery -> ` +
+      groundsSelfTestResult.discovery.cases.map((c) => `@${c.width} [${c.got}]`).join(" "),
   );
   const byRoute = {};
   for (const r of report) {

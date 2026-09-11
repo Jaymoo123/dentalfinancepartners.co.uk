@@ -625,15 +625,19 @@ grounds although they differ by about 0.001 in lightness and render as one conti
 which is the exact defect the check exists to find.
 Deriving command and the decisive lines, before and after, same server, same routes:
 ```
-MSYS_NO_PATHCONV=1 node docs/_engines/instruments/browser_check.mjs --site=construction-cis   --base=http://localhost:3167 --widths=1440 --grounds --out=tmp/bc_g.json "//cis-refund"
+MSYS_NO_PATHCONV=1 node docs/_engines/instruments/browser_check.mjs --site=construction-cis   --base=http://localhost:3167 --widths=1440 --grounds --out=tmp/bc_g.json /cis-refund
 before:  adjacent bands sharing a ground: 0
 after:   [grounds]  bands 4 and 5 share a ground: rgb(250, 250, 249) / rgb(250, 250, 247) (distance 2.84)
          adjacent bands sharing a ground: 1  [/cis-refund 1]
 ```
 Repaired at `browser_check.mjs` in the `--grounds` block: candidates are now matched at ANY depth
 under `<main>` (semantic band tags unconditionally, a plain `<div>` still only with a `bg-` class),
-then filtered to those spanning >= 90% of `<main>`'s width and de-nested by dropping any candidate
-that contains another, so a wrapper yields its real bands and nothing is counted twice. Comparison
+then filtered to those spanning >= 90% of `<main>`'s width and de-nested. **CORRECTION, same day:
+the de-nesting sentence originally written here said "dropping any candidate that CONTAINS another".
+That was the rule as shipped and it was wrong, see the third-repair entry below. The rule is the
+other way round: drop any candidate CONTAINED BY another, outermost wins.** The wrapper case still
+works because `<div id="book">` carries no `bg-` class and is therefore not a candidate at all.
+Comparison
 is the redmean weighted-sRGB distance with threshold 3, just above the ~2.3 JND; the estate's real
 alternation (white vs stone-50) measures 15.72 and stays distinct.
 RULE, and it is the general one: **an instrument that reports zero because it never looked is
@@ -658,12 +662,44 @@ RULE: a gate's message and its predicate are two separate things and drift apart
 threshold appears in both, derive one from the other or assert them against a fixture that sits
 between them.
 
-**2026-09-11. This is the SECOND repair of `--grounds`, and that is the durable finding.** It
-shipped at `61e9b6b2` with three defects, was repaired at `bf231f1a`, and is repaired again here
-for two more, both of the same family: it could not see what it was asked to judge. Treat every
-grounds figure taken before this repair as UNVERIFIED, not merely stale, and re-derive rather than
-re-quote. Specifically, Trade's "0 adjacent, 0 dark-touching-footer" is withdrawn: the adjacency
-half was never measured on any route with a wrapped closing band.
+**2026-09-11. This is now the THIRD repair of `--grounds`, and THE SECOND REPAIR INTRODUCED THE
+DEFECT THE THIRD FIXED. That is the durable finding, and this entry is corrected in place rather
+than answered by a rival one.** It shipped at `61e9b6b2` with three defects, was repaired at
+`bf231f1a`, repaired again at `f5313a68` for two more, and that repair's de-nesting rule was
+inverted: it dropped the OUTER full-width band in favour of its full-width descendants. Below
+1440px most inner elements are full width, so an ordinary `<section class="bg-white">` was replaced
+by four or five of its own children and the mode INVENTED phantom white-on-white runs, plus a fake
+navy-on-navy tail on `/calculators` where the hero's inner wrapper became a second navy band. It
+also destroyed the one genuine `/cis-refund` finding that same repair had just proved, because both
+bands at distance 2.84 were replaced by their children.
+`f5313a68`'s own commit message claimed the new rule "under-reports rather than inventing a breach".
+**That claim was FALSE. It invented eight.** Decisive lines, same server, same three routes, all
+four widths:
+```
+before:  dark band touching the footer: 1  [/calculators 1]
+         adjacent bands sharing a ground: 3  [/cis-refund 1, /gross-payment-status 1, /calculators 1]
+after:   dark band touching the footer: 0
+         adjacent bands sharing a ground: 0
+```
+The band sequences after the fix are now IDENTICAL at 390/768/1024/1440 and match an independent
+direct walk: `/cis-refund` 6 bands, `/gross-payment-status` 5 (the `<div id="book">` band is the
+last one on both), `/calculators` 2 ending white against a navy footer, so the dark tail was never
+real. The genuine 2.84 adjacency is still caught: constructed on `/cis-refund` it reports
+`bands 6 and 7 share a ground: rgb(250, 250, 247) / rgb(250, 250, 249) (distance 2.84)` at both
+390 and 1440.
+RULE, and it is the one worth carrying: **a repair to a shared instrument is a code change like any
+other and needs its own adversarial check.** Neither existing self-test covered band DISCOVERY,
+which is where the last two defects both lived: the classifier and the same-ground threshold were
+pinned while the thing deciding WHAT to classify was not. The third repair of one function is
+evidence that the function needed a TEST, not another fix. `--grounds` now carries a discovery
+self-test on a built-in fixture (an outer band containing a full-width `bg-` child, two bands inside
+a plain wrapper, and a narrow card), asserted at two widths because the defect was width-dependent
+and happened to give the right answer at 1440. Proven to bite: flipping the containment comparison
+back exits 2 with `discovery ... got "bg-white,fx2,fx3"` and prints no grounds figures at all.
+QUOTABLE, for this port, as of this repair: Trade `/cis-refund`, `/gross-payment-status` and
+`/calculators` = **0 adjacent bands sharing a ground and 0 dark bands touching the footer**, at all
+four widths. Every other route's grounds figure, and every grounds figure taken anywhere before this
+repair, remains UNVERIFIED: re-derive, do not re-quote.
 
 
 ---
