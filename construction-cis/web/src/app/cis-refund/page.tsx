@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LeadForm } from "@/components/forms/LeadForm";
+import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildHowToJsonLd } from "@/lib/schema";
 
@@ -80,14 +81,19 @@ export default function CisRefundPage() {
           }),
         }}
       />
-      {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1e293b] py-16 sm:py-20">
+      {/* Hero. Cream, not navy: section 4a puts the pillar heroes on --hero-cream
+          so the page opens light and the dark grounds are spent on the table
+          headers and the chrome. Copy unchanged. */}
+      <section className="bg-[var(--hero-cream)] py-16 sm:py-20">
         <div className={siteContainerLg}>
+          <Breadcrumb
+            items={[{ label: "Home", href: "/" }, { label: "CIS tax refund" }]}
+          />
           <div className="section-label mb-6">CIS tax refund</div>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             Claim back the CIS deductions you have overpaid.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600">
             CIS deductions are taken before any expenses or allowances are applied. Most registered subcontractors overpay across the year, and third-party reported averages put the annual refund at around £2,000 (illustrative, not guaranteed). We calculate the full refund, handle the claim and deal with HMRC on your behalf.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -99,7 +105,7 @@ export default function CisRefundPage() {
       </section>
 
       {/* How the refund works */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9]">
+      <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">The service</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -110,7 +116,7 @@ export default function CisRefundPage() {
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
             {howItWorks.map((item) => (
-              <div key={item.heading} className="bg-white border border-neutral-200 p-6 sm:p-8 border-t-4 border-t-orange-500">
+              <div key={item.heading} className="border border-neutral-200 border-t-4 border-t-[var(--btn-ground)] bg-white p-6 sm:p-8">
                 <h3 className="text-lg font-bold text-neutral-900">{item.heading}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
               </div>
@@ -125,7 +131,7 @@ export default function CisRefundPage() {
       </section>
 
       {/* Why subcontractors overpay */}
-      <section className="border-b border-neutral-200 bg-white">
+      <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">Why you overpay</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -135,7 +141,7 @@ export default function CisRefundPage() {
             {whyOverpay.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-orange-500 bg-neutral-50 p-6 sm:p-8"
+                className="border border-neutral-200 border-l-4 border-l-[var(--btn-ground)] bg-white p-6 sm:p-8"
               >
                 <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
@@ -146,7 +152,7 @@ export default function CisRefundPage() {
       </section>
 
       {/* What we need from you */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9]">
+      <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">What we need from you</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -158,7 +164,7 @@ export default function CisRefundPage() {
           <ul className="mt-10 space-y-3">
             {whatWeNeed.map((item, i) => (
               <li key={i} className="flex items-start gap-4 bg-white border border-neutral-200 p-5">
-                <div className="h-8 w-8 flex items-center justify-center bg-orange-500 text-white font-bold text-sm flex-shrink-0">
+                <div className="h-8 w-8 flex flex-shrink-0 items-center justify-center bg-[var(--btn-ground)] text-sm font-bold text-white">
                   {i + 1}
                 </div>
                 <span className="text-base leading-relaxed text-neutral-700">{item}</span>
@@ -169,7 +175,7 @@ export default function CisRefundPage() {
       </section>
 
       {/* CIS deduction rates table */}
-      <section className="border-b border-neutral-200 bg-white">
+      <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">Deduction rates</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -181,7 +187,7 @@ export default function CisRefundPage() {
           <div className="mt-10 overflow-x-auto border border-neutral-200 bg-white">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
               <thead>
-                <tr className="bg-[#1e293b] text-white">
+                <tr className="bg-slate-900 text-white">
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Status</th>
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Deduction rate</th>
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">How to get there</th>
@@ -212,45 +218,53 @@ export default function CisRefundPage() {
         </div>
       </section>
 
-      {/* CTA with form */}
-      <section className="bg-[#1e293b] py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
-            <div>
-              <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">
-                Find out what you are owed
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-                Book a free call. We will review your CIS deduction history and tell you exactly what refund to expect. No hard sell, no obligation.
-              </p>
-              <div className="mt-8 space-y-3">
-                {[
-                  "CIS specialists, not a general accounting practice",
-                  "A specialist CIS accountant will be in touch",
-                  "Fixed fees, quoted before we start",
-                ].map((point) => (
-                  <div key={point} className="flex items-center gap-3 text-neutral-300">
-                    <div className="h-5 w-5 flex items-center justify-center bg-orange-500 text-white text-xs font-bold flex-shrink-0">✓</div>
-                    <span className="text-sm sm:text-base">{point}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-8 text-sm text-neutral-400">
-                We help subcontractors across all construction trades.{" "}
-                <Link href="/for" className={`font-medium text-orange-400 underline underline-offset-4 hover:text-orange-300 transition-colors ${focusRing}`}>
-                  See the trades we cover
-                </Link>
-                .
-              </p>
-            </div>
-            <div className="bg-white p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4 sm:mb-6">Start your refund claim</h3>
-              <LeadForm submitLabel="Request a callback" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section D.3 closing ask. This was a full-bleed slate-800 navy band and so
+          the last opaque band under <main>, running straight into the slate-900
+          footer: DESIGN_SYSTEM section 9 forbids navy touching navy, and this
+          route was 1 of the 29 in the DESIGN_DELTA 3a.1 breach. `contained`
+          renders the panel on --hero-cream, so the tail is white (rates table
+          section is --surface), cream (panel), navy (footer). The same LeadForm
+          is inside the panel, so no capture is lost, and every visible string is
+          passed explicitly from this route's own published copy rather than
+          taken from the component defaults. No data-cta id here, so trap 22's
+          locked triples do not move. Static band in the page body: nothing
+          interruptive. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          eyebrow="Get started"
+          title="Find out what you are owed"
+          description="Book a free call. We will review your CIS deduction history and tell you exactly what refund to expect. No hard sell, no obligation."
+          formTitle="Start your refund claim"
+          submitLabel="Request a callback"
+          proofPoints={[
+            {
+              title: "CIS specialists, not a general accounting practice",
+              detail: "Construction tax is the whole of what we do, not a sideline.",
+            },
+            {
+              title: "A specialist CIS accountant will be in touch",
+              detail: "You speak to someone who works on CIS returns every week.",
+            },
+            {
+              title: "Fixed fees, quoted before we start",
+              detail: "No work begins until you have agreed the scope.",
+            },
+          ]}
+          footnote={
+            <>
+              We help subcontractors across all construction trades.{" "}
+              <Link
+                href="/for"
+                className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 ${focusRing}`}
+              >
+                See the trades we cover
+              </Link>
+              .
+            </>
+          }
+        />
+      </div>
     </>
   );
 }

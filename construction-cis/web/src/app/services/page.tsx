@@ -5,6 +5,9 @@ import {
   focusRing,
   siteContainerLg,
 } from "@/components/ui/layout-utils";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
+import { siteConfig } from "@/config/site";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
@@ -104,19 +107,79 @@ const services = [
   },
 ];
 
+/**
+ * Service + OfferCatalog JSON-LD. Deliberately hand-built rather than
+ * buildServiceJsonLd(): that helper emits a single Service with no catalogue,
+ * and the point here is to declare the seven services this page actually
+ * documents. NO price, priceRange, offers.price or priceSpecification anywhere:
+ * this site publishes no pricing (section I), and an OfferCatalog is valid
+ * without one.
+ */
+const servicesJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "CIS accounting services",
+  description: metadata.description,
+  url: `${siteConfig.url}/services`,
+  serviceType: "Construction Industry Scheme accounting",
+  areaServed: "United Kingdom",
+  provider: {
+    "@type": "ProfessionalService",
+    name: siteConfig.name,
+    url: siteConfig.url,
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "CIS accounting services",
+    itemListElement: services.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.title,
+        description: service.body[0],
+        url: `${siteConfig.url}/services#${service.id}`,
+      },
+    })),
+  },
+});
+
 export default function ServicesPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1e293b] py-16 sm:py-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: servicesJsonLd }}
+      />
+
+      {/* Hero. Cream, not the old navy: the band below it is the white stats
+          strip and the page tail is now a cream capture panel, so the dark
+          ground moves off the top of the page entirely (DESIGN_DELTA 3a.2). */}
+      <section className="border-b border-neutral-200 bg-[var(--hero-cream)] py-16 sm:py-20">
         <div className={siteContainerLg}>
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Services" },
+            ]}
+          />
           <div className="section-label mb-6">What we do</div>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             CIS accounting services for subcontractors and contractors.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600">
             Every service is built around how CIS works in practice. We do not offer general accountancy services to non-construction clients.
           </p>
+          <div className="mt-10">
+            <Link
+              href="#book"
+              data-cta="services_hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+              className={`${btnPrimary} text-base px-8 py-3.5 text-center`}
+            >
+              Book a free call
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -137,10 +200,10 @@ export default function ServicesPage() {
                 <article
                   key={service.id}
                   id={service.id}
-                  className="scroll-mt-24 bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-orange-500 transition-all"
+                  className="scroll-mt-24 bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-[var(--accent-strong)] transition-all"
                 >
                   <div className="flex items-start gap-4 mb-5">
-                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center bg-orange-500">
+                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center bg-[var(--btn-ground)]">
                       <Icon className="h-7 w-7 text-white" strokeWidth={1.75} />
                     </div>
                     <div>
@@ -176,39 +239,53 @@ export default function ServicesPage() {
               Start with our free calculators or speak to us directly. Fixed fees, no surprises.
             </p>
           </div>
-          <ServiceTiers tiers={serviceTiers} featuredBadge="Most Popular" />
+          <ServiceTiers tiers={serviceTiers} featuredBadge="" />
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="border-t border-neutral-200 bg-white py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            Ready to talk through your CIS position?
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
-            Book a free introductory call. We will review your deduction history and tell you plainly what you are owed and how we would handle it.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/contact" className={btnPrimary}>
-              Book a free call
-            </Link>
-            <Link
-              href="/contact"
-              className={`inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-orange-500 underline-offset-4 hover:text-neutral-900 transition-colors ${focusRing}`}
-            >
-              Get in touch
-            </Link>
-          </div>
-          <p className="mt-10 text-sm text-neutral-500">
-            We work with all construction trades.{" "}
-            <Link href="/for" className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800 transition-colors">
-              See the trades we cover
-            </Link>
-            .
-          </p>
-        </div>
-      </section>
+      {/* The closing ask. /services previously offered two bare /contact links
+          and no form at all; the capture now sits on the page where the reader
+          finishes. `contained` renders it on cream, so the white tiers band
+          above and the navy footer below are both separated (DESIGN_SYSTEM
+          section 9: navy must never touch navy, and the last band stays light).
+          A static band in the page body: no overlay, no timer, no trigger. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          eyebrow="Free consultation"
+          formTitle="Book your free call"
+          submitLabel="Request a callback"
+          title="Ready to talk through your CIS position?"
+          description="Book a free introductory call. We will review your deduction history and tell you plainly what you are owed and how we would handle it."
+          proofPoints={[
+            {
+              title: "CIS is all we do",
+              detail: "Every service on this page is built around how the scheme works in practice.",
+            },
+            {
+              title: "Construction only",
+              detail: "We do not offer general accountancy services to non-construction clients.",
+            },
+            {
+              title: "Seven specialist services",
+              detail: "Refunds, gross payment status, Self Assessment, limited company, contractor returns, VAT and expenses.",
+            },
+          ]}
+          footnote={
+            <>
+              We work with all construction trades.{" "}
+              <Link
+                href="/for"
+                className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 hover:text-neutral-900 transition-colors ${focusRing}`}
+              >
+                See the trades we cover
+              </Link>
+              .
+            </>
+          }
+        />
+      </div>
+
     </>
   );
 }

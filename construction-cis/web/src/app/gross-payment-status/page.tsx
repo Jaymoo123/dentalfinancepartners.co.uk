@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LeadForm } from "@/components/forms/LeadForm";
+import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildHowToJsonLd } from "@/lib/schema";
 
@@ -81,14 +82,18 @@ export default function GrossPaymentStatusPage() {
           }),
         }}
       />
-      {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1e293b] py-16 sm:py-20">
+      {/* Hero. Cream, not navy: section 4a puts the pillar heroes on --hero-cream.
+          Copy unchanged. */}
+      <section className="bg-[var(--hero-cream)] py-16 sm:py-20">
         <div className={siteContainerLg}>
+          <Breadcrumb
+            items={[{ label: "Home", href: "/" }, { label: "Gross payment status" }]}
+          />
           <div className="section-label mb-6">Gross payment status</div>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             Get CIS gross payment status, and keep it.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600">
             GPS means no CIS deduction at all. You receive every payment in full. The April 2026 anti-fraud changes make applying for GPS straightforward but keeping it requires active due diligence. We manage both.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -100,7 +105,7 @@ export default function GrossPaymentStatusPage() {
       </section>
 
       {/* What GPS means */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9]">
+      <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">The value of GPS</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -112,7 +117,7 @@ export default function GrossPaymentStatusPage() {
           <div className="mt-10 overflow-x-auto border border-neutral-200 bg-white">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
               <thead>
-                <tr className="bg-[#1e293b] text-white">
+                <tr className="bg-slate-900 text-white">
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Annual CIS turnover (labour)</th>
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider text-orange-300 sm:px-6">With GPS (0%)</th>
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Without GPS (20%)</th>
@@ -141,7 +146,7 @@ export default function GrossPaymentStatusPage() {
       </section>
 
       {/* Qualifying tests */}
-      <section className="border-b border-neutral-200 bg-white">
+      <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">Qualifying for GPS</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -152,8 +157,8 @@ export default function GrossPaymentStatusPage() {
           </p>
           <div className="mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
             {qualifyingTests.map((test) => (
-              <div key={test.number} className="border-l-2 border-orange-500 pl-6">
-                <span className="font-mono text-sm font-medium text-orange-500 uppercase tracking-widest">{test.number}</span>
+              <div key={test.number} className="border-l-2 border-[var(--btn-ground)] pl-6">
+                <span className="font-mono text-sm font-medium uppercase tracking-widest text-[var(--accent-strong)]">{test.number}</span>
                 <h3 className="mt-1 text-xl font-semibold text-neutral-900">{test.title}</h3>
                 <p className="mt-3 text-base leading-relaxed text-neutral-600">{test.body}</p>
               </div>
@@ -161,12 +166,12 @@ export default function GrossPaymentStatusPage() {
           </div>
 
           <div className="mt-12 overflow-x-auto border border-neutral-200 bg-white">
-            <div className="px-5 py-3 bg-neutral-50 border-b border-neutral-200">
+            <div className="border-b border-neutral-200 bg-[var(--surface)] px-5 py-3">
               <h3 className="text-base font-bold text-neutral-900">Turnover thresholds by entity type (net of VAT and materials)</h3>
             </div>
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
               <thead>
-                <tr className="bg-[#1e293b] text-white">
+                <tr className="bg-slate-900 text-white">
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Entity type</th>
                   <th scope="col" className="px-5 py-4 font-bold text-sm uppercase tracking-wider sm:px-6">Net annual CIS turnover required</th>
                 </tr>
@@ -188,7 +193,7 @@ export default function GrossPaymentStatusPage() {
       </section>
 
       {/* April 2026 changes */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9]">
+      <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">April 2026 changes</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -201,7 +206,7 @@ export default function GrossPaymentStatusPage() {
             {aprilChanges.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-orange-500 bg-white p-6 sm:p-8"
+                className="border border-neutral-200 border-l-4 border-l-[var(--warn-3)] bg-white p-6 sm:p-8"
               >
                 <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
@@ -222,52 +227,59 @@ export default function GrossPaymentStatusPage() {
         </div>
       </section>
 
-      {/* CTA with form */}
-      <section className="bg-[#1e293b] py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
-            <div>
-              <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">
-                Apply for gross payment status
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-                Book a free call. We will assess whether you meet the three qualifying tests and explain the process. No hard sell, no obligation.
-              </p>
-              <div className="mt-8 space-y-3">
-                {[
-                  "CIS specialists, not a general practice",
-                  "A specialist CIS accountant will be in touch",
-                  "Fixed fees, quoted before we start",
-                ].map((point) => (
-                  <div key={point} className="flex items-center gap-3 text-neutral-300">
-                    <div className="h-5 w-5 flex items-center justify-center bg-orange-500 text-white text-xs font-bold flex-shrink-0">✓</div>
-                    <span className="text-sm sm:text-base">{point}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-8 text-sm text-neutral-400">
-                Also interested in a CIS refund?{" "}
-                <Link href="/cis-refund" className={`font-medium text-orange-400 underline underline-offset-4 hover:text-orange-300 transition-colors ${focusRing}`}>
-                  See our refund service
-                </Link>
-                .
-              </p>
-              <p className="mt-3 text-sm text-neutral-400">
-                We help all construction trades.{" "}
-                <Link href="/for" className={`font-medium text-orange-400 underline underline-offset-4 hover:text-orange-300 transition-colors ${focusRing}`}>
-                  See who we work with
-                </Link>
-                .
-              </p>
-            </div>
-            <div className="bg-white p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4 sm:mb-6">Apply for GPS</h3>
-              <LeadForm submitLabel="Request a callback" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section D.3 closing ask. This was a full-bleed slate-800 navy band and so
+          the last opaque band under <main>, running into the slate-900 footer:
+          DESIGN_SYSTEM section 9 forbids navy touching navy, and this route was
+          1 of the 29 in the DESIGN_DELTA 3a.1 breach. `contained` renders the
+          panel on --hero-cream, so the tail is white (April 2026 section),
+          cream (panel), navy (footer). Same LeadForm, so no capture is lost, and
+          every visible string is passed explicitly from this route's own
+          published copy rather than left to the component defaults. No data-cta
+          id, so trap 22's locked triples do not move. Static band in the page
+          body: nothing interruptive. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          eyebrow="Get started"
+          title="Apply for gross payment status"
+          description="Book a free call. We will assess whether you meet the three qualifying tests and explain the process. No hard sell, no obligation."
+          formTitle="Apply for GPS"
+          submitLabel="Request a callback"
+          proofPoints={[
+            {
+              title: "CIS specialists, not a general practice",
+              detail: "Construction tax is the whole of what we do, not a sideline.",
+            },
+            {
+              title: "A specialist CIS accountant will be in touch",
+              detail: "You speak to someone who works on CIS returns every week.",
+            },
+            {
+              title: "Fixed fees, quoted before we start",
+              detail: "No work begins until you have agreed the scope.",
+            },
+          ]}
+          footnote={
+            <>
+              Also interested in a CIS refund?{" "}
+              <Link
+                href="/cis-refund"
+                className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 ${focusRing}`}
+              >
+                See our refund service
+              </Link>
+              . We help all construction trades.{" "}
+              <Link
+                href="/for"
+                className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 ${focusRing}`}
+              >
+                See who we work with
+              </Link>
+              .
+            </>
+          }
+        />
+      </div>
     </>
   );
 }

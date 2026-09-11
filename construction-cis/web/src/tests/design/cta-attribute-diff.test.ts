@@ -78,7 +78,25 @@ const PINNED = [
   // In-page anchor to the closing LeadCTAPanel on the same route, so it splits
   // no existing history: the five baseline triples are untouched.
   "src/app/glossary/[slug]/page.tsx|glossary_entry_book|article|form",
+  // Phase 5 / WP-E2, ADDITIVE. /services carried no capture at all: two bare
+  // /contact links and no form on the page. It now closes on a LeadCTAPanel at
+  // #book and the hero points at it. A NEW id, for the same reason
+  // for_hero_book and calc_hero_book are new ones: the two baseline CTAs on
+  // this route are chrome, and reusing or re-goaling either would split
+  // vw_cta_performance at the cutover (trap 22). Goal is `form` because the
+  // destination is an on-page form anchor, per this site's taxonomy.
+  "src/app/services/page.tsx|services_hero_book|hero|form",
   "src/app/contact/page.tsx|contact_pricing_link|contact|null",
+  // Phase 5 / WP-E1, ADDITIVE. The homepage hero made no on-page ask: all three
+  // hero CTAs left the page, and the LeadForm in the closing band had nothing
+  // pointing at it. The hero secondary now scrolls to #book. A NEW id, for the
+  // same reason for_hero_book and calc_hero_help are new: `hero_primary` renders
+  // on this ONE route site-wide, so repointing it at #book would rewrite the
+  // whole series rather than split it, and `lead` would then mean the opposite
+  // here of what it means on all 245 other routes (trap 22). Goal is `form`,
+  // this site's taxonomy for an on-page form anchor; `lead` is for a CTA that
+  // leaves the page. `hero_primary` below is unchanged, href included.
+  "src/app/page.tsx|home_hero_book|hero|form",
   "src/app/page.tsx|hero_primary|hero|lead",
   "src/app/page.tsx|home_cta_primary|home_cta|lead",
   "src/app/page.tsx|home_cta_secondary|home_cta|contact",
