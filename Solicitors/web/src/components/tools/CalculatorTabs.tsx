@@ -66,8 +66,8 @@ const TAB_ICONS: Record<TabKey, LucideIcon> = {
 };
 
 /**
- * The five the /calculators index leads with. Only the active panel mounts,
- * so the list costs one tab button each, but keep it short anyway.
+ * The five the /calculators index leads with. Only panels the user opens
+ * mount, so the list costs one tab button each, but keep it short anyway.
  */
 export const INDEX_HEADLINE_TABS: TabKey[] = [
   "clientreserve",
@@ -97,7 +97,21 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
       icon: TAB_ICONS[key],
       label: getGenericTool(TAB_SLUGS[key])!.name,
     }));
-  const [active, setActive] = useState<TabKey>(shown[0]?.key ?? "clientreserve");
+  const first = shown[0]?.key ?? "clientreserve";
+  const [active, setActive] = useState<TabKey>(first);
+  /**
+   * Panels the user has actually opened. Seeded with the first tab ONLY, and
+   * that seed is the whole server render: there is no effect, no storage read
+   * and no prop that can widen it before hydration, so a server pass always
+   * emits exactly one tabpanel and the duplicate-content fix stands. It only
+   * ever grows (a union, never a delete), so a panel visited once stays
+   * mounted behind `hidden` and keeps its form state across later switches.
+   */
+  const [visited, setVisited] = useState<Set<TabKey>>(() => new Set([first]));
+  const select = (key: TabKey) => {
+    setActive(key);
+    setVisited((prev) => (prev.has(key) ? prev : new Set(prev).add(key)));
+  };
   const tabRefs = useRef<Partial<Record<TabKey, HTMLButtonElement | null>>>({});
 
   /**
@@ -109,7 +123,7 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
     const index = shown.findIndex((t) => t.key === from);
     if (index === -1) return;
     const next = shown[(index + delta + shown.length) % shown.length];
-    setActive(next.key);
+    select(next.key);
     tabRefs.current[next.key]?.focus();
   };
 
@@ -127,13 +141,13 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
         break;
       case "Home":
         event.preventDefault();
-        setActive(shown[0].key);
+        select(shown[0].key);
         tabRefs.current[shown[0].key]?.focus();
         break;
       case "End": {
         event.preventDefault();
         const last = shown[shown.length - 1].key;
-        setActive(last);
+        select(last);
         tabRefs.current[last]?.focus();
         break;
       }
@@ -145,7 +159,7 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
   useEffect(() => {
     const applyHash = () => {
       const hash = window.location.hash.replace("#", "");
-      if (tabs.some((key) => key === hash)) setActive(hash as TabKey);
+      if (tabs.some((key) => key === hash)) select(hash as TabKey);
     };
     applyHash();
     window.addEventListener("hashchange", applyHash);
@@ -172,13 +186,13 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
               role="tab"
               type="button"
               aria-selected={selected}
-              /* Only the active panel exists in the DOM, so only the active
-                 tab may claim aria-controls: a reference to an absent id is
-                 worse than none. */
-              aria-controls={selected ? `calc-panel-${tab.key}` : undefined}
+              /* Only VISITED panels exist in the DOM, so only those tabs may
+                 claim aria-controls: a reference to an absent id is worse
+                 than none. */
+              aria-controls={visited.has(tab.key) ? `calc-panel-${tab.key}` : undefined}
               tabIndex={selected ? 0 : -1}
               onKeyDown={(event) => onTabKeyDown(event, tab.key)}
-              onClick={() => setActive(tab.key)}
+              onClick={() => select(tab.key)}
               className={`relative flex min-h-12 items-center gap-3 rounded-xl border-2 p-3 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 sm:p-4 ${
                 selected
                   ? "border-primary-600 bg-primary-600 shadow-md"
@@ -212,20 +226,23 @@ export function CalculatorTabs({ tabs = INDEX_HEADLINE_TABS }: { tabs?: TabKey[]
         })}
       </div>
 
-      {/* ONLY the active panel is rendered. `hidden` is not a dedupe or crawl
+      {/* Only VISITED panels are rendered. `hidden` is not a dedupe or crawl
           signal, so rendering all five put ~47% of each detail page's body
-          text into this route's HTML verbatim. Cost of the fix: the first
-          press of a tab mounts that calculator instead of revealing a
-          pre-rendered one. */}
+          text into this route's HTML verbatim. The visited set starts as the
+          first tab alone and only grows on a click/key/hash selection, all of
+          which are client-side, so the server HTML still carries exactly one
+          panel. Cost: the first press of a tab mounts that calculator; every
+          later return to it reveals the mount it already has, state intact. */}
       <div className="mt-6 sm:mt-8">
         {shown
-          .filter((tab) => tab.key === active)
+          .filter((tab) => visited.has(tab.key))
           .map((tab) => (
             <div
               key={tab.key}
               id={`calc-panel-${tab.key}`}
               role="tabpanel"
               aria-labelledby={`calc-tab-${tab.key}`}
+              hidden={tab.key !== active}
             >
               <CalculatorClient slug={TAB_SLUGS[tab.key]} variant="page" />
             </div>
