@@ -173,3 +173,172 @@ exactly the Phase 5 and Phase 6 routes.
 Nothing in the brief was skipped. The browser check was deliberately scoped as
 instructed (28 loads + 8 attribution loads on the two Phase 6 routes), not the
 full 664.
+
+---
+
+# FINAL VERIFICATION (2026-09-11, post both gap-fix rounds)
+
+Server: `next start` on `http://localhost:3167`, built from HEAD. Served title
+asserted before every measurement: `CIS Accountants &amp; Construction Tax
+Specialists | UK`. All runs used the committed instruments in
+`docs/_engines/instruments/`, each with its own `--out` in the session
+scratchpad. No baseline file was written.
+
+## A. Sweep
+
+`sweep.mjs --site=construction-cis --base=http://localhost:3167 --sample=9999
+--sha=18b4f25f39cd0c4aa084e582d69a87c8a10710ac
+--baseline=docs/construction-cis/_port/link_baseline.json`
+
+```
+246/246 URLs clean, 0/18 internal links dead, 0 LINK-FLOOR breaches (6750 links
+total), 0 data-cta regressions (814 total), 0 dash regressions (2 total)
+```
+
+| Figure | Value | Previous | Verdict |
+|---|---|---|---|
+| Routes clean | 246/246 | 246/246 | unchanged |
+| Dead internal links | 0 | 0 | unchanged |
+| Link-floor breaches | 0 at 6,750 links | 0 at 6,750 | unchanged |
+| Dashes | 2 | 2 | at target, the 2 protected numeric ranges survive |
+| Total `data-cta` | **814** | 816 | **-2, exactly as predicted** |
+
+The -2 is attributed, not inferred. Each pillar now serves exactly three
+`data-cta` nodes, all of them `<a>` or `<button>`:
+
+- `/cis-refund`: `header_nav_primary`, `cis_refund_hero_book` (`hero|form`,
+  `href="#book"`), `specialist_widget`.
+- `/gross-payment-status`: `header_nav_primary`, `gps_hero_book` (`hero|form`,
+  `href="#book"`), `specialist_widget`.
+
+The `<div id="book" class="scroll-mt-24">` wrapper on both routes carries no
+`data-cta` attribute at all. 4 to 3 on each route = -2 total. Route-collision
+check: total and per-route move together. The per-route floor against the
+pre-port baseline reports 0 regressions, and the CTA attribute diff below
+reports MISSING 0 across all 246 routes, so no id was lost under cover of the
+drop.
+
+## B. CTA continuity
+
+`cta_snapshot.mjs http://localhost:3167 link_baseline.json <out>`, then a full
+`(id, placement, goal, href)` set diff per route against `cta_baseline.json`.
+246 routes scanned, 814 cta tags, 14 distinct triples.
+
+**MISSING: 0.** ADDED: 194 instances across 9 additive ids from phases 2 to 5
+(`blog_sidebar_book` 82, `glossary_entry_book` 50, `for_hero_book` 45,
+`calc_hero_help` 12, and `home_hero_book`, `services_hero_book`,
+`cis_refund_hero_book`, `gps_hero_book`, `blog_index_primary` at 1 each).
+
+The 5 LOCKED triples, byte-identical to baseline:
+
+| Triple | Live | Baseline |
+|---|---|---|
+| `header_nav_primary\|header\|contact` | 246 | 246 |
+| `specialist_widget\|null\|null` | 246 | 246 |
+| `next_step\|null\|null` | 109 | 109 |
+| `next_step\|null\|form` | 18 | 18 |
+| `hero_primary\|hero\|lead` | 1 | 1 |
+
+**PASS.** `cis_refund_book_panel` and `gps_book_panel` appear zero times in the
+live snapshot. They were never in the pre-port baseline, having been added in
+phase 5 and removed in the fix round, so their removal costs no recorded id, and
+nothing else left with them: MISSING is 0.
+
+## C. Section grounds, repaired instrument
+
+`browser_check.mjs --grounds` over `/`, `/services`, `/cis-refund`,
+`/gross-payment-status`, `/calculators`, `/contact`, `/blog`, `/about`,
+`/for/electricians`, `/locations/manchester` at 390/768/1024/1440.
+
+Self-test lines, verbatim:
+
+```
+self-test OK (slate-500/white 4.76, slate-400/white 2.56)
+```
+
+```
+grounds self-test OK: rgb(15, 23, 42) lum=0.0088 dark; rgb(255, 255, 255) lum=1 light; oklch(0.208 0.042 265.755) lum=0.0089 dark; oklch(0.985 0.001 106.423) lum=0.9553 light; same-ground threshold 3 -> rgb(250, 250, 247) vs rgb(250, 250, 249) d=2.84 SAME; rgb(255, 255, 255) vs rgb(250, 250, 249) d=15.72 DIFFERENT; band discovery -> @390 [fx1,fx2,fx3] @1024 [fx1,fx2,fx3]
+```
+
+Unparseable colours: **0**. Coverage caveat carried by the run: 70 subtrees on
+`/blog` were unrendered at every width and are therefore unchecked.
+
+```
+SECTION GROUNDS, 10 route(s) measured
+  dark band touching the footer: 0
+  adjacent bands sharing a ground: 0
+```
+
+Band counts per width:
+
+| Route | 390 | 768 | 1024 | 1440 |
+|---|---|---|---|---|
+| `/` | 13 | 13 | 13 | 13 |
+| `/services` | 5 | 5 | 5 | 5 |
+| `/cis-refund` | 6 | 6 | 6 | 6 |
+| `/gross-payment-status` | 5 | 5 | 5 | 5 |
+| `/calculators` | 2 | 2 | 2 | 2 |
+| `/contact` | 2 | 2 | 2 | 2 |
+| `/blog` | 4 | 4 | 4 | 4 |
+| `/about` | 2 | 2 | 2 | 2 |
+| `/for/electricians` | 8 | 8 | 8 | **7** |
+| `/locations/manchester` | 7 | 7 | 7 | 7 |
+
+Nine of ten routes are stable across all four widths. `/for/electricians` loses
+one band at 1440: the `rgb(255, 247, 237)` entry sitting between two light
+bands. That is not classifier instability and not a design defect. The only
+orange-50 node on the page is a single in-prose callout,
+`class="my-10 rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8"`,
+whose width tracks the prose column; it clears the full-width-candidate
+threshold up to 1024 and stops clearing it at 1440. The band that disappears is
+that callout, not a section. No figure here is compared with any pre-repair
+number.
+
+## D. Contrast
+
+Same run, scoped to the Phase 5 routes plus six controls, against
+`browser_baseline.json` re-captured today from the phase-4 build.
+
+`self-test OK (slate-500/white 4.76, slate-400/white 2.56)`; **0 unparseable
+colours**; 40 page-loads, **0 with NEW problems**; 0 horizontal overflow; 0
+console errors, page errors or failed requests.
+
+**NEW findings: none.** All 28 distinct contrast rows observed are already in
+the baseline. For the record, labelled by source:
+
+| Route | Node | Ratio | Source |
+|---|---|---|---|
+| `/`, `/services` | `span "tick"` | 2.80, floor 3 | **TOKEN** `rgb(249, 115, 22)` = `--accent: #f97316`. The 4 known tick-glyph survivors. |
+| `/contact` | `span "01"/"02"/"03"` | 2.76, floor 3 | **UTILITY** `oklch(0.705 0.213 47.604)` = `text-orange-500` |
+| `/calculators` | `a "Home"`, `span "Calculators"` | 3.76 / 1.72, floor 4.5 | **UTILITY**, neutral breadcrumb text |
+
+No row carried an `/NN` alpha or an `opacity=`, so no swatch figure is invalid.
+
+## E. Rendered spot-checks
+
+| Check | Result |
+|---|---|
+| 45 `/for/<slug>` hrefs on `/` | **PASS.** 45 hrefs, 45 unique. |
+| `href="#book"` on `/cis-refund` and `/gross-payment-status` | **PASS.** 1 each, was 0. `id="book"` also 1 each. |
+| Nothing inside either `#book` band resolves to a `data-cta` ancestor | **PASS.** Each `#book` subtree contains 11 form controls and 0 `data-cta` occurrences; all three `data-cta` nodes on each route are `<a>`/`<button>`, so none can be an ancestor of a form control. |
+| `/services` 7 section ids | **PASS.** `cis-refund`, `cis300-returns`, `expenses`, `gross-payment-status`, `limited-company`, `sole-trader-sa`, `vat-mtd`. |
+| `/services` `featuredBadge` emits no badge | **PASS.** Passed as `""` at `services/page.tsx:242`; the `tier.featured && featuredBadge` guard short-circuits. 0 badge wrappers and 0 "Most Popular" in the served HTML. |
+| Homepage JSON-LD | **PASS.** 5 blocks, all parse, 0 `BreadcrumbList`, exactly 1 `FAQPage` with 4 Question/Answer pairs. Every question and every answer is present in the body text, each question exactly once: one binding, not two copies. |
+| Breadcrumbs on the other three Phase 5 routes | **PASS.** `/services`, `/cis-refund`, `/gross-payment-status` each render one `aria-label="Breadcrumb"` nav and one `BreadcrumbList` block. |
+| Consent wording unchanged | **PASS.** "By submitting this enquiry you confirm you understand this." The only diff to `components/forms/` since `18b4f25f` is the privacy-policy link colour moving from `text-orange-600` to `var(--accent-strong)`. |
+| No interruptive surface | **PASS.** No modal, banner, popup or exit-intent on `/`. The single `popup` string match is `aria-haspopup="true"` on the nav disclosure button. |
+
+## Things in this brief that are false
+
+1. The brief says to diff CTAs "against `_port/cta_baseline.json`" using
+   `cta_snapshot.mjs`. The instrument's second positional argument is a routes
+   source and must carry a `links` key, which `cta_baseline.json` does not have.
+   `link_baseline.json` was used to enumerate the 246 routes and the triple diff
+   was done afterwards against `cta_baseline.json` by key. Same finding as the
+   previous reviewer's point 4; the brief still carries it.
+2. Nothing else. The predicted -2, the locked triples, the `#book` link counts
+   and the badge suppression all measured as stated.
+
+## Not done
+
+Nothing. No fix applied, no source file touched, no git write run.
