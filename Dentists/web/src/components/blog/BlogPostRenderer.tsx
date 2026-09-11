@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
+import { BlogSidebarCta } from "@accounting-network/web-shared/design/blog/BlogSidebarCta";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { ctaCopyForCategory } from "@/lib/blog/cta-copy";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { buildBlogPostingJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
@@ -57,6 +60,15 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
     post.schema?.trim() ||
     buildBlogPostingJsonLd(post, `/blog/${categorySlug}/${post.slug}`);
 
+  // ONE copy binding for the closing panel, its submit label and the sidebar
+  // card, so the card cannot advertise a different ask from the form it jumps
+  // to. Falls back to the site-wide niche string for an unmapped slug.
+  const ctaCopy = ctaCopyForCategory(categorySlug, {
+    heading: activeCta.blog.cta_heading,
+    body: activeCta.blog.cta_body,
+    button: activeCta.blog.cta_button,
+  });
+
   const takeaways =
     post.keyTakeaways && post.keyTakeaways.length > 0 ? post.keyTakeaways : null;
   const showUpdated = post.updatedDate && post.updatedDate !== post.date;
@@ -89,95 +101,105 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         dangerouslySetInnerHTML={{ __html: jsonLd }}
       />
 
-      <section className="relative h-[420px] sm:h-[480px] lg:h-[520px] overflow-hidden">
-        {post.image ? (
-          <Image
-            src={post.image}
-            alt={post.altText || post.title}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover scale-105 blur-[2px]"
-          />
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--navy)] via-[var(--navy-soft)] to-[var(--navy-muted)]" />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy)]/95 via-[var(--navy)]/70 to-[var(--navy)]/40" />
-        <div className={`${siteContainerLg} relative z-10 h-full flex items-end pb-10 sm:pb-14`}>
-          <div className="max-w-4xl">
-            <Breadcrumb
-              variant="light"
-              items={[
-                { label: "Home", href: "/" },
-                { label: "Blog", href: "/blog" },
-                { label: post.category, href: `/blog/${categorySlug}` },
-                { label: post.title },
-              ]}
-            />
-            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[var(--gold)]">
-              {post.category}
-            </p>
-            <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
-              {post.h1}
-            </h1>
-            <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/70">
-              {readTime > 0 && <span>{readTime} min read</span>}
-              {post.date && (
-                <>
-                  {readTime > 0 ? <span aria-hidden>·</span> : null}
-                  <time dateTime={post.date}>Published {formatUkDate(post.date)}</time>
-                </>
-              )}
-              {showUpdated && (
-                <>
-                  <span aria-hidden>·</span>
-                  <time dateTime={post.updatedDate}>Updated {formatUkDate(post.updatedDate!)}</time>
-                </>
-              )}
-            </p>
-          </div>
-        </div>
-        {post.imageCredit?.photographer ? (
-          <p className="absolute bottom-2 right-3 z-10 text-[10px] text-white/50">
-            Photo:{" "}
-            {post.imageCredit.photographerUrl ? (
-              <a
-                href={post.imageCredit.photographerUrl}
-                target="_blank"
-                rel="noopener nofollow"
-                className="underline hover:text-white/80"
-              >
-                {post.imageCredit.photographer}
-              </a>
-            ) : (
-              post.imageCredit.photographer
-            )}
-            {post.imageCredit.source ? (
-              <>
-                {" / "}
-                {post.imageCredit.sourceUrl ? (
-                  <a
-                    href={post.imageCredit.sourceUrl}
-                    target="_blank"
-                    rel="noopener nofollow"
-                    className="underline hover:text-white/80"
-                  >
-                    {post.imageCredit.source}
-                  </a>
-                ) : (
-                  post.imageCredit.source
-                )}
-              </>
-            ) : null}
-          </p>
-        ) : null}
-      </section>
-
       <article className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-[1fr_250px] lg:gap-12">
             <div className="max-w-4xl">
-              <div className="mb-8 pb-8 border-b border-[var(--border)]">
+              {/* Header card, replacing the 520px blurred photo hero. The photo
+                  moves into the body as a figure below, which is where its
+                  Pexels credit goes with it. */}
+              <header className="rounded-xl bg-slate-50 p-6 sm:p-8">
+                <Breadcrumb
+                  items={[
+                    { label: "Home", href: "/" },
+                    { label: "Blog", href: "/blog" },
+                    { label: post.category, href: `/blog/${categorySlug}` },
+                    { label: post.title },
+                  ]}
+                />
+                <p className="mt-2 text-xs font-bold uppercase tracking-wider text-primary-700">
+                  {post.category}
+                </p>
+                <h1 className="mt-3 text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
+                  {post.h1}
+                </h1>
+                <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-[var(--ink-soft)]">
+                  {readTime > 0 && <span>{readTime} min read</span>}
+                  {post.date && (
+                    <>
+                      {readTime > 0 ? <span aria-hidden>·</span> : null}
+                      <time dateTime={post.date}>Published {formatUkDate(post.date)}</time>
+                    </>
+                  )}
+                  {showUpdated && (
+                    <>
+                      <span aria-hidden>·</span>
+                      <time dateTime={post.updatedDate}>Updated {formatUkDate(post.updatedDate!)}</time>
+                    </>
+                  )}
+                </p>
+                {/* Same-page jump, not a new surface: 83% of sessions land on an
+                    article and the only form that converts is 2,000 words below. */}
+                <a
+                  href="#enquiry-form"
+                  data-cta="blog_skip_to_form"
+                  data-cta-placement="article_header"
+                  data-cta-goal="form"
+                  className="mt-6 inline-flex items-center gap-2 py-0.5 text-sm font-semibold text-primary-700 underline underline-offset-4 hover:text-primary-800"
+                >
+                  Skip to enquiry form ↓
+                </a>
+              </header>
+
+              {post.image ? (
+                <figure className="mt-10">
+                  <Image
+                    src={post.image}
+                    alt={post.altText || post.title}
+                    width={1200}
+                    height={630}
+                    priority
+                    sizes="(min-width: 1024px) 60rem, 100vw"
+                    className="w-full rounded-xl border border-[var(--border)] object-cover"
+                  />
+                  {post.imageCredit?.photographer ? (
+                    <figcaption className="mt-2 text-xs text-[var(--muted)]">
+                      Photo:{" "}
+                      {post.imageCredit.photographerUrl ? (
+                        <a
+                          href={post.imageCredit.photographerUrl}
+                          target="_blank"
+                          rel="noopener nofollow"
+                          className="underline hover:text-[var(--ink)]"
+                        >
+                          {post.imageCredit.photographer}
+                        </a>
+                      ) : (
+                        post.imageCredit.photographer
+                      )}
+                      {post.imageCredit.source ? (
+                        <>
+                          {" / "}
+                          {post.imageCredit.sourceUrl ? (
+                            <a
+                              href={post.imageCredit.sourceUrl}
+                              target="_blank"
+                              rel="noopener nofollow"
+                              className="underline hover:text-[var(--ink)]"
+                            >
+                              {post.imageCredit.source}
+                            </a>
+                          ) : (
+                            post.imageCredit.source
+                          )}
+                        </>
+                      ) : null}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              ) : null}
+
+              <div className="mt-10 mb-8 pb-8 border-b border-[var(--border)]">
                 {post.author ? (
                   <p className="text-sm font-semibold text-[var(--ink)]">{post.author}</p>
                 ) : null}
@@ -305,7 +327,9 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               ) : null}
 
               <aside className="mt-16 flex gap-5 items-start bg-[var(--surface)] border border-[var(--border)] p-6 sm:p-8 rounded-lg">
-                <div className="hidden sm:block shrink-0 w-14 h-14 rounded-full bg-[var(--gold)]/10 text-[var(--gold)] flex items-center justify-center">
+                {/* `hidden sm:flex`, not `sm:block`: block beat the flex in the
+                    old stack and the icon was never centred. */}
+                <div className="hidden sm:flex shrink-0 w-14 h-14 rounded-full bg-[var(--gold)]/10 text-[var(--gold)] items-center justify-center">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
@@ -322,42 +346,53 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
 
               <NextStepOffer />
 
-              <div className="mt-16 border-2 border-[var(--gold)]/20 bg-gradient-to-br from-[var(--gold)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
-                <h2 className="text-2xl font-bold text-primary-700 sm:text-3xl">
-                  {activeCta.blog.cta_heading}
+              <section
+                id="enquiry-form"
+                aria-labelledby="enquiry-form-heading"
+                className="mt-16 scroll-mt-24 border-2 border-[var(--gold)]/20 bg-gradient-to-br from-[var(--gold)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl"
+              >
+                <h2 id="enquiry-form-heading" className="text-2xl font-bold text-primary-700 sm:text-3xl">
+                  {ctaCopy.heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
-                  {activeCta.blog.cta_body}
+                  {ctaCopy.body}
                 </p>
                 <div className="mt-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={activeCta.blog.cta_button} />
+                  <LeadForm redirectOnSuccess={false} submitLabel={ctaCopy.button} />
                 </div>
-              </div>
+              </section>
 
               {related.length > 0 ? (
                 <section className="mt-16" aria-labelledby="related-heading">
                   <h2 id="related-heading" className="text-2xl font-bold text-[var(--ink)] mb-8">
                     Related articles
                   </h2>
-                  <ul className="space-y-4">
-                    {related.map((r) => (
-                      <li key={r.slug}>
-                        <Link
-                          href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="block border-l-4 border-[var(--border)] bg-[var(--surface)] p-6 transition-all hover:border-[var(--gold)] hover:bg-white hover:shadow-md"
-                        >
-                          <h3 className="text-lg font-bold text-[var(--ink)]">{r.title}</h3>
-                          <p className="mt-2 text-sm text-[var(--muted)]">{r.summary}</p>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  {/* Kit grid. One link per card either way, so the internal
+                      link count on every article route is unchanged. */}
+                  <RelatedArticles
+                    items={related.map((r) => ({
+                      href: `/blog/${r.categorySlug}/${r.slug}`,
+                      title: r.title,
+                      excerpt: r.summary,
+                    }))}
+                  />
                 </section>
               ) : null}
             </div>
 
             <aside className="hidden lg:block">
-              <div className="sticky top-24">
+              {/* One sticky container owning the clamp for card + TOC. The TOC
+                  component carries its own sticky/clamp too; harmless, and its
+                  file is not this package's. */}
+              <div className="sticky top-24 max-h-[calc(100vh-7rem)] space-y-5 overflow-y-auto">
+                <BlogSidebarCta
+                  copy={{ heading: ctaCopy.heading, body: ctaCopy.body }}
+                  buttonLabel={ctaCopy.button}
+                  // Gold ground, navy label (6.23) on the card's slate-900
+                  // ground. The kit default primary-600 is this site's navy and
+                  // would read as a navy button on a near-navy card.
+                  buttonClassName="bg-[var(--gold)] text-[var(--navy)] hover:bg-[var(--gold-strong)]"
+                />
                 <TableOfContents headings={headings} />
               </div>
             </aside>

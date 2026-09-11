@@ -475,3 +475,21 @@ footer .text-primary-400 {
      These column headings are text-xs/sm bold, which is NOT large text, so 4.5 applies. */
   color: var(--color-primary-300);
 }
+
+
+/* ---------------------------------------------------------------------------
+   ANCHOR SCROLL OFFSET (phase 3, manager-direct)
+
+   Every in-page heading target on this site had scroll-margin-top: 0 under a
+   sticky header, so a table-of-contents jump landed with the heading hidden
+   BEHIND the header. Measured across the corpus in phase 0: 505 anchor links
+   against 665 targets, all at 0.
+
+   6rem clears the sticky header at every breakpoint. Applied here rather than in
+   the article template because it must also cover the 6 dental-guides and the 6
+   resource topics, which later packages own; one rule beats three edits that can
+   drift apart.
+   --------------------------------------------------------------------------- */
+.article-body.prose-blog :is(h2, h3)[id] {
+  scroll-margin-top: 6rem;
+}
