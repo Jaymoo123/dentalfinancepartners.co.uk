@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { getAllPosts, getAllCategories, calculateReadTime, slugifyCategory } from "@/lib/blog";
-import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { getAllPosts, getAllCategories, slugifyCategory } from "@/lib/blog";
+import { DentalCategoryHub } from "@/components/blog/DentalCategoryHub";
 
 /**
  * Slugs that already have hand-built static hub pages under src/app/blog/.
@@ -19,7 +16,8 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
  * All remaining category slugs (goodwill-and-practice-sale, nhs-contracts,
  * nhs-pension, capital-allowances-and-equipment, general, locum-tax,
  * specialist-services) get a derived hub here automatically without any extra
- * file needed.
+ * file needed. All twelve now render the same component; the split is a routing
+ * detail, not a design one.
  */
 const STATIC_HUB_SLUGS = new Set([
   "associate-tax",
@@ -73,109 +71,18 @@ export default async function BlogCategoryPage({ params }: Props) {
   const matchedCategory = categories.find((c) => c.slug === category);
   if (!matchedCategory) notFound();
 
-  const allPosts = getAllPosts();
-  const enriched = allPosts
-    .filter((p) => slugifyCategory(p.category) === category)
-    .map((p) => ({ ...p, categorySlug: category }));
+  const count = getAllPosts().filter((p) => slugifyCategory(p.category) === category).length;
+  if (count === 0) notFound();
 
-  if (enriched.length === 0) notFound();
-
-  const readTimes = new Map<string, number>();
-  for (const p of enriched) {
-    readTimes.set(p.slug, calculateReadTime(p.contentHtml));
-  }
-
-  // Show all non-static-hub categories in the sibling nav strip.
-  const siblings = categories.filter((c) => !STATIC_HUB_SLUGS.has(c.slug));
-
-  const jsonLd = JSON.stringify({
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
-          { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
-          { "@type": "ListItem", position: 3, name: matchedCategory.name },
-        ],
-      },
-      {
-        "@type": "CollectionPage",
-        name: `${matchedCategory.name} articles`,
-        description: `${enriched.length} ${matchedCategory.name.toLowerCase()} articles for UK dental professionals.`,
-        url: `${siteConfig.url}/blog/${category}`,
-      },
-    ],
-  });
-
+  // `sections` is deliberately empty: the seven briefings these hubs need are
+  // WP5's package (PHASE3_BUILD_PLAN §3), and the kit hub renders no essentials
+  // band at all when the array is empty, so the page is whole without them.
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLd }}
-      />
-
-      <section className={`${sectionY} bg-[var(--surface)]`}>
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: matchedCategory.name },
-            ]}
-          />
-          <div className="mt-6 max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-wider text-[var(--gold-strong)]">
-              {matchedCategory.name}
-            </p>
-            <h1 className="mt-4 font-serif text-4xl font-semibold text-[var(--navy)] sm:text-5xl">
-              {matchedCategory.name}
-            </h1>
-            <p className="mt-6 text-lg leading-relaxed text-[var(--muted)] max-w-2xl">
-              {enriched.length} article{enriched.length !== 1 ? "s" : ""} on{" "}
-              {matchedCategory.name.toLowerCase()} for UK dental professionals.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-[var(--border)] bg-white">
-        <div className={siteContainerLg}>
-          <nav aria-label="Other categories" className="flex flex-wrap gap-2 py-6">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 border border-[var(--border)] bg-white px-3 py-1.5 text-sm font-medium text-[var(--ink-soft)] transition-colors hover:border-[var(--gold)] hover:bg-[var(--surface-elevated)] hover:text-[var(--navy)]"
-            >
-              All
-            </Link>
-            {siblings.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/blog/${c.slug}`}
-                className={
-                  c.slug === category
-                    ? "inline-flex items-center gap-2 border border-[var(--gold)] bg-[var(--surface-elevated)] px-3 py-1.5 text-sm font-semibold text-[var(--navy)]"
-                    : "inline-flex items-center gap-2 border border-[var(--border)] bg-white px-3 py-1.5 text-sm font-medium text-[var(--ink-soft)] transition-colors hover:border-[var(--gold)] hover:bg-[var(--surface-elevated)] hover:text-[var(--navy)]"
-                }
-              >
-                {c.name}
-                <span className="font-mono text-xs text-[var(--muted)]">{c.count}</span>
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </section>
-
-      <section className={`bg-[var(--surface)] ${sectionY}`}>
-        <div className={siteContainerLg}>
-          <BlogListWithSearch
-            posts={enriched}
-            categories={siblings}
-            readTimes={readTimes}
-            activeCategory={category}
-          />
-        </div>
-      </section>
-    </>
+    <DentalCategoryHub
+      categorySlug={category}
+      categoryName={matchedCategory.name}
+      description={`${count} ${matchedCategory.name.toLowerCase()} articles for UK dental professionals.`}
+      intro={`${count} article${count !== 1 ? "s" : ""} on ${matchedCategory.name.toLowerCase()} for UK dental professionals.`}
+    />
   );
 }

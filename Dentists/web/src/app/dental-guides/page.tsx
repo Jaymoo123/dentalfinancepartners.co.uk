@@ -4,7 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllGuides } from "@/lib/dental-guides";
-import { buildBreadcrumbJsonLd, buildCollectionPage, JsonLd } from "@/lib/schema/index";
+import { buildCollectionPage, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
   title: "Pillar Guides for UK Dentists",
@@ -32,7 +32,8 @@ export default function DentalGuidesIndex() {
     { label: "Home", href: "/" },
     { label: "Dental Guides" },
   ];
-  const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+  // <Breadcrumb> emits its own BreadcrumbList from the same items; a second
+  // one here was a duplicate document.
   const collectionSchema = buildCollectionPage({
     name: "Pillar Guides for UK Dentists",
     description:
@@ -43,7 +44,7 @@ export default function DentalGuidesIndex() {
 
   return (
     <>
-      <JsonLd data={[collectionSchema, breadcrumbSchema]} />
+      <JsonLd data={[collectionSchema]} />
 
       <section className="bg-[var(--navy)] text-white">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
@@ -80,10 +81,12 @@ export default function DentalGuidesIndex() {
                     href={`/dental-guides/${g.slug}`}
                     className={`group flex flex-col rounded-2xl border border-[var(--border)] bg-white p-7 transition-shadow hover:shadow-md ${focusRing}`}
                   >
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--gold-strong)]">
+                    {/* Was --gold-strong: 3.76 on white, a live text fail on
+                        every card. Gold stays as a non-text accent. */}
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-700">
                       {g.eyebrow}
                     </p>
-                    <h2 className="mt-2 font-serif text-xl font-semibold leading-snug text-[var(--ink)] group-hover:text-[var(--gold-strong)]">
+                    <h2 className="mt-2 font-serif text-xl font-semibold leading-snug text-[var(--ink)] group-hover:text-primary-700">
                       {g.title}
                     </h2>
                     <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
@@ -93,7 +96,7 @@ export default function DentalGuidesIndex() {
                       <span>
                         {Math.round(g.wordCount / 200)} min read · {g.wordCount.toLocaleString()} words
                       </span>
-                      <span className="font-semibold text-[var(--gold-strong)]">
+                      <span className="font-semibold text-primary-700">
                         Read guide →
                       </span>
                     </div>
@@ -101,6 +104,17 @@ export default function DentalGuidesIndex() {
                 ))}
               </div>
             )}
+            <p className="mt-10 text-sm leading-relaxed text-[var(--ink-soft)]">
+              Looking for something shorter?{" "}
+              <Link href="/resources" className={`font-semibold text-primary-700 underline underline-offset-4 hover:text-primary-800 ${focusRing}`}>
+                The free resource library
+              </Link>{" "}
+              holds the spreadsheet models and research notes behind these guides, and{" "}
+              <Link href="/blog" className={`font-semibold text-primary-700 underline underline-offset-4 hover:text-primary-800 ${focusRing}`}>
+                the blog
+              </Link>{" "}
+              answers single questions one at a time.
+            </p>
           </div>
         </div>
       </section>

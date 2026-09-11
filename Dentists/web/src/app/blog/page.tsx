@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
-import { btnGold, btnOnDark, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, btnSecondary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { DentistsBackdrop } from "@/components/layout/DentistsBackdrop";
@@ -78,25 +78,29 @@ export default function BlogIndexPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: collectionJsonLd }} />
 
-      {/* Navy motif hero. Buttons are measured against THIS ground, not white:
-          `btnPrimary` is navy on navy (1.00) and is the phase 1 invisible-CTA
-          defect, so the dark-ground recipe is `btnGold` (navy label on gold,
-          6.23) with the ghost outline beside it. */}
+      {/* Cream hero. Buttons are measured against THIS ground, not against their own
+          label: `btnPrimary` is a navy ground (17.15 label, 15.8 against cream) with
+          `btnSecondary`, the navy outline, beside it. Phase 1 shipped a navy button on a
+          NAVY ground here-abouts and measured 1.00, which is why the rule is to measure
+          against the section ground. */}
       <section className="relative flex items-center overflow-hidden py-10 sm:py-12 lg:py-14">
-        <DentistsBackdrop tone="navy" />
+        {/* CREAM, matching Property's /blog and the 12 category hubs beneath this page.
+            WP2 shipped navy here, which diverged from BOTH the reference site and this
+            site's own children. Property wins conflicts (manager, 2026-09-11). */}
+        <DentistsBackdrop tone="light" />
         <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
             <Breadcrumb
-              variant="light"
+              variant="default"
               items={[
                 { label: "Home", href: "/" },
                 { label: "Blog" },
               ]}
             />
-            <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
               Insights for UK dental practices
             </h1>
-            <p className="mt-4 text-lg leading-relaxed text-slate-200 sm:text-xl">
+            <p className="mt-4 text-lg leading-relaxed text-slate-700 sm:text-xl">
               Practical notes on tax, accounts and practice economics, written for associates,
               principals and practice managers, not generic SMEs.
             </p>
@@ -106,7 +110,7 @@ export default function BlogIndexPage() {
                 data-cta="blog_index_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"
-                className={btnGold}
+                className={btnPrimary}
               >
                 Talk to a dental accountant
               </Link>
@@ -114,7 +118,7 @@ export default function BlogIndexPage() {
                 href="#topics"
                 data-cta="blog_index_topics"
                 data-cta-placement="hero"
-                className={btnOnDark}
+                className={btnSecondary}
               >
                 Browse by topic
               </Link>

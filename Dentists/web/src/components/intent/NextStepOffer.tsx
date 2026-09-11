@@ -28,7 +28,11 @@ export function NextStepOffer() {
 
   return (
     <aside className="my-10 rounded-2xl border border-[var(--gold)]/30 bg-[var(--surface-elevated)] p-6 sm:p-8">
-      <p className="text-xs font-bold uppercase tracking-wider text-[var(--gold-strong)]">
+      {/* Was --gold-strong, which is 3.76 on --surface-elevated: a live text
+          fail. primary-700 is 10.28 on the same ground. The BUTTON below stays
+          gold: a navy label on gold is 6.19 and that is the one text job gold
+          keeps. */}
+      <p className="text-xs font-bold uppercase tracking-wider text-primary-700">
         {offer.reason}
       </p>
       <h3 className="mt-2 text-xl font-bold text-[var(--navy)]">{offer.title}</h3>

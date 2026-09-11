@@ -17,6 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/calculators",
     "/dental-guides",
+    // /resources hub added phase 3 WP4. Its /resources/[topic] children were
+    // already listed below while the index itself did not exist; without this the
+    // new hub ships as an orphan, the same defect /services/<slug> still carries.
+    "/resources",
     "/for-associates",
     "/for-principals",
     "/for-practice-buyers",
