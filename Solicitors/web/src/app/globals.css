@@ -523,7 +523,7 @@ li[id^="ref-"],
    so the furniture ends at 114px. 6rem = 96px landed the target 18px under
    the TOC bar. 7.5rem = 120px clears it with 6px to spare. Desktop keeps
    6rem: there is no mobile TOC bar above `lg:`. */
-@media (max-width: 1023.98px) {
+@media (max-width: 63.99rem) {
   #main,
   [id][class*="scroll-mt"],
   li[id^="ref-"],

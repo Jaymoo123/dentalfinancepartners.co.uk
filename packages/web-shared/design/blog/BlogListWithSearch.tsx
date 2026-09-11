@@ -167,7 +167,7 @@ export function BlogListWithSearch({
               const readTime = readTimes.get(p.slug) || 0;
               return (
                 <li key={p.slug}>
-                  <article className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-sm transition-shadow hover:shadow-md sm:p-7">
+                  <article className="rounded-xl bg-[var(--surface)] p-6 shadow-sm ring-1 ring-slate-200/70 transition-shadow hover:shadow-md sm:p-7">
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
                       {p.category}
                     </p>

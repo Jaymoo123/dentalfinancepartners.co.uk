@@ -107,7 +107,7 @@ export default function BlogIndexPage() {
               <Link
                 key={cat.slug}
                 href={`/blog/${cat.slug}`}
-                className={`group block rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200/70 transition-all hover:shadow-md hover:ring-primary-600 ${focusRing}`}
+                className={`group block rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200/70 transition-all hover:shadow-md ${focusRing}`}
               >
                 <h3 className="text-base font-bold text-slate-900 transition-colors group-hover:text-primary-700 sm:text-lg">
                   {cat.name}
@@ -158,7 +158,7 @@ export default function BlogIndexPage() {
             {
               title: "Positions traced to source",
               detail:
-                "Every rule and figure we quote is cited to the SRA Accounts Rules, an HMRC manual or the legislation itself",
+                "Every rule and figure we quote is cited to the SRA rules, HMRC published guidance, case law or the legislation itself",
             },
           ]}
           form={<LeadForm redirectOnSuccess={false} />}
@@ -185,7 +185,7 @@ export default function BlogIndexPage() {
               <Link
                 key={tool.slug}
                 href={toolPath(tool.slug)}
-                className={`inline-flex min-h-12 items-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-slate-900 shadow-sm ring-1 ring-slate-200/70 transition-all hover:text-primary-700 hover:shadow-md hover:ring-primary-600 sm:text-base ${focusRing}`}
+                className={`inline-flex min-h-12 items-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-slate-900 shadow-sm ring-1 ring-slate-200/70 transition-all hover:text-primary-700 hover:shadow-md sm:text-base ${focusRing}`}
               >
                 {tool.name}
               </Link>
