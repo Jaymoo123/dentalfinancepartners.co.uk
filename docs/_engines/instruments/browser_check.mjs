@@ -279,8 +279,14 @@ const PROBE = () => {
       anchorGaps.push(`#${id} -> no such element`);
       continue;
     }
+    // DEFECT FIXED 2026-09-11: this fired at `sm < 24` while PRINTING "want >= 96px".
+    // A target at 32px passed silently under a message claiming a 96px floor, and
+    // every port read the output as though 96 were enforced. The contract says
+    // scroll-mt-24, and 24 on the Tailwind scale is 96px, so the PRINTED rule was the
+    // right one and the test was the typo: 24 was the class number, not a pixel count.
+    // Enforce what is printed.
     const sm = parseFloat(getComputedStyle(t).scrollMarginTop) || 0;
-    if (sm < 24) anchorGaps.push(`#${id} scroll-margin-top=${sm}px (want >= 96px / scroll-mt-24)`);
+    if (sm < 96) anchorGaps.push(`#${id} scroll-margin-top=${sm}px (want >= 96px / scroll-mt-24)`);
   }
 
   // Coverage, not a finding. A `hidden sm:block` subtree renders at no width below
@@ -351,21 +357,60 @@ const PROBE = () => {
   // other partially transparent ground, rgba(15, 23, 42, 0.5) included, sailed
   // through as solid. The painted alpha is checked instead, on the same >= 250
   // threshold the contrast paint stack uses.
+  //
+  // THIRD defect, 2026-09-11, found on Trade phase 5 and the same failure mode as
+  // the first two: the mode could not SEE what it was asked to judge, and reported
+  // zero. `:scope >` bound it to direct children of <main>, and Trade wraps its
+  // three closing bands in a plain <div id="book">, so none of them was ever
+  // examined. "adjacent bands sharing a ground: 0" was not a measurement.
+  // NEW RULE, stated plainly: candidates are matched at ANY depth under <main>
+  // (semantic band tags unconditionally, a plain <div> still only with a `bg-`
+  // class), then filtered twice so wrappers and cards do not become "bands":
+  //   1. it must span >= 90% of <main>'s width - a band is full-bleed by
+  //      definition, a card or a column is not;
+  //   2. any candidate that CONTAINS another candidate is dropped - so a wrapper
+  //      like <div id="book"> yields its three real bands instead of itself, and
+  //      no band is ever counted twice at two depths.
+  // That keeps the conservative direction of the old rule (a ground arriving by
+  // some route other than a bg- utility is still missed, which under-reports
+  // rather than inventing a breach) while ending the fixed-depth blindness.
   const groundOf = (el) => {
     const p = rgb(getComputedStyle(el).backgroundColor);
     return p && p[3] >= 250 ? p : null;
   };
   const key = (p) => `rgb(${p[0]}, ${p[1]}, ${p[2]})`;
-  const BAND_SEL =
-    ":scope > section, :scope > article, :scope > aside, :scope > header, :scope > footer, :scope > div[class*='bg-']";
-  const bandsOf = (root) =>
-    Array.from(root ? root.querySelectorAll(BAND_SEL) : [])
-      .map(groundOf)
-      .filter(Boolean)
-      .map(key);
+  const BAND_SEL = "section, article, aside, header, footer, div[class*='bg-']";
+  const bandEls = (root) => {
+    if (!root) return [];
+    const full = root.clientWidth * 0.9;
+    const cand = Array.from(root.querySelectorAll(BAND_SEL)).filter(
+      (el) => el.getBoundingClientRect().width >= full,
+    );
+    return cand.filter((el) => !cand.some((o) => o !== el && el.contains(o)));
+  };
+
+  // PERCEPTUAL ground comparison, 2026-09-11. Grounds were compared by STRING
+  // EQUALITY, so rgb(250, 250, 247) and rgb(250, 250, 249) counted as two
+  // different grounds. They differ by a lightness of about 0.001, no eye can
+  // separate them, and on Trade they render as one continuous slab: the check
+  // exists to catch exactly that and was structurally unable to. Distance is the
+  // cheap "redmean" weighted sRGB metric (no dependency, no colour-space code),
+  // whose ~2.3 units is the usual just-noticeable-difference figure. THRESHOLD 3:
+  // marginally above that JND, and the estate's real grounds are nowhere near it -
+  // white vs stone-50 rgb(250, 250, 249) measures 15.7, five times the threshold,
+  // so genuinely distinct bands stay distinct while a 2.8-unit rounding difference
+  // merges. Self-tested below on one pair that must merge and one that must not.
+  const dist = (a, b) => {
+    const rm = (a[0] + b[0]) / 2;
+    const [dr, dg, db] = [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
+    return Math.sqrt((2 + rm / 256) * dr * dr + 4 * dg * dg + (2 + (255 - rm) / 256) * db * db);
+  };
+  const SAME_GROUND = 3;
+  const sameGround = (a, b) => dist(a, b) <= SAME_GROUND;
 
   const mainEl = document.querySelector("main");
-  const bands = bandsOf(mainEl);
+  const bandPaints = bandEls(mainEl).map(groundOf).filter(Boolean);
+  const bands = bandPaints.map(key);
   const footerEl = document.querySelector("footer");
   const footerPaint = footerEl ? groundOf(footerEl) : null;
   const footerGround = footerPaint ? key(footerPaint) : null;
@@ -381,10 +426,7 @@ const PROBE = () => {
   // already separated by a factor of 44.
   const isDarkPaint = (p) => !!p && lum(p.slice(0, 3)) < 0.18;
   const darkKeys = new Set();
-  for (const el of mainEl ? mainEl.querySelectorAll(BAND_SEL) : []) {
-    const p = groundOf(el);
-    if (isDarkPaint(p)) darkKeys.add(key(p));
-  }
+  for (const p of bandPaints) if (isDarkPaint(p)) darkKeys.add(key(p));
   if (isDarkPaint(footerPaint)) darkKeys.add(footerGround);
   const isDark = (k) => darkKeys.has(k);
 
@@ -405,12 +447,36 @@ const PROBE = () => {
       const got = isDarkPaint(p);
       return { value: c, want, got, luminance: p ? +lum(p.slice(0, 3)).toFixed(4) : null, pass: got === want };
     });
-    return { ok: measured.every((m) => m.pass), measured };
+    // The perceptual comparison gets the same discipline: one pair that MUST merge
+    // (the real Trade pair the string test split) and one that MUST stay apart
+    // (white vs stone-50, the two grounds a real alternation is built from). A
+    // threshold nobody checked is how this mode was wrong the first two times.
+    const pairs = [
+      ["rgb(250, 250, 247)", "rgb(250, 250, 249)", true],
+      ["rgb(255, 255, 255)", "rgb(250, 250, 249)", false],
+    ].map(([x, y, want]) => {
+      const [a, b] = [rgb(x), rgb(y)];
+      const d = a && b ? dist(a, b) : null;
+      const got = !!(a && b) && sameGround(a, b);
+      return { a: x, b: y, want, got, distance: d === null ? null : +d.toFixed(2), pass: got === want };
+    });
+    return {
+      ok: measured.every((m) => m.pass) && pairs.every((p) => p.pass),
+      measured,
+      threshold: SAME_GROUND,
+      pairs,
+    };
   })();
 
   const adjacentSame = [];
-  for (let i = 1; i < bands.length; i++) {
-    if (bands[i] === bands[i - 1]) adjacentSame.push({ index: i, ground: bands[i] });
+  for (let i = 1; i < bandPaints.length; i++) {
+    if (sameGround(bandPaints[i], bandPaints[i - 1]))
+      adjacentSame.push({
+        index: i,
+        ground: bands[i],
+        previous: bands[i - 1],
+        distance: +dist(bandPaints[i], bandPaints[i - 1]).toFixed(2),
+      });
   }
   const lastBand = bands.length ? bands[bands.length - 1] : null;
   const darkOnDark = !!(lastBand && footerGround && isDark(lastBand) && isDark(footerGround));
@@ -539,7 +605,9 @@ for (const width of WIDTHS) {
       if (g.darkOnDark)
         console.log(`      [grounds]  dark band touches dark footer: last=${g.lastBand} footer=${g.footerGround}`);
       for (const a of g.adjacentSame)
-        console.log(`      [grounds]  bands ${a.index - 1} and ${a.index} share ${a.ground}`);
+        console.log(
+          `      [grounds]  bands ${a.index - 1} and ${a.index} share a ground: ${a.previous} / ${a.ground} (distance ${a.distance})`,
+        );
     }
   }
   await page.close();
@@ -600,7 +668,9 @@ if (GROUNDS) {
       `
 GROUNDS SELF-TEST FAILED: ${JSON.stringify(groundsSelfTestResult)}. ` +
         `Expected rgb(15, 23, 42) and oklch(0.208 0.042 265.755) dark, ` +
-        `rgb(255, 255, 255) and oklch(0.985 0.001 106.423) light. ` +
+        `rgb(255, 255, 255) and oklch(0.985 0.001 106.423) light, ` +
+        `rgb(250, 250, 247) vs rgb(250, 250, 249) the SAME ground and ` +
+        `rgb(255, 255, 255) vs rgb(250, 250, 249) DIFFERENT grounds. ` +
         `Every grounds figure below would be noise; fix the instrument before reporting.`,
     );
     process.exit(2);
@@ -608,7 +678,11 @@ GROUNDS SELF-TEST FAILED: ${JSON.stringify(groundsSelfTestResult)}. ` +
   console.log(
     `
 grounds self-test OK: ` +
-      groundsSelfTestResult.measured.map((m) => `${m.value} lum=${m.luminance} ${m.got ? "dark" : "light"}`).join("; "),
+      groundsSelfTestResult.measured.map((m) => `${m.value} lum=${m.luminance} ${m.got ? "dark" : "light"}`).join("; ") +
+      `; same-ground threshold ${groundsSelfTestResult.threshold} -> ` +
+      groundsSelfTestResult.pairs
+        .map((p) => `${p.a} vs ${p.b} d=${p.distance} ${p.got ? "SAME" : "DIFFERENT"}`)
+        .join("; "),
   );
   const byRoute = {};
   for (const r of report) {

@@ -595,6 +595,77 @@ phase cannot satisfy it, the number belongs to a different phase. A substituted 
 worse than a missing one, because the plan still reads as though it was met.
 PROMOTED: now playbook trap T35. Kept here for the red-on-arrival-by-34 arithmetic.
 
+**2026-09-11, Trade. "The instrument was blind" is an attractive explanation, and it was wrong.**
+Three Trade records asserted that `_port/browser_baseline.json` (11:31) was invalid on CONTRAST
+because `browser_check.mjs` was oklch-blind at the time, so oklch elements were absent rather than
+recorded, and that a review had read that absence as evidence and reported 16 routes with "NEW
+problems" that were only newly visible. A re-capture at 19:55 disproved it. Deriving commands:
+`grep -o 'oklch(' browser_baseline_OLD.json | wc -l` → **2,586 of that capture's 5,466 contrast
+findings already carried `oklch()` colours** (e.g. `button "Do not track me" ratio=2.47
+color=oklch(0.708 0 0)`); and `git log -1 --format=%B bf231f1a`, the supposed repair, says in its
+own words that it fixed the `--grounds` classifier only, with no hunk in the contrast block
+(`git diff bf231f1a~1 bf231f1a -- docs/_engines/instruments/browser_check.mjs`). The canvas-paint
+contrast path dates from the instrument's first commit, `08cee664`. A real GROUNDS defect had been
+over-generalised to the CONTRAST half of the same file, and the whole 5,466 → 352 delta was real
+remediation from phases 3 and 4.
+RULE: **a finding ABSENT from a baseline and a finding that was FIXED are indistinguishable in a
+count.** Before believing "the instrument was blind", test it against the instrument's own
+history: grep the old artefact for the colour form it supposedly could not see, and read the
+repair commit's own message for what it actually repaired. Then confirm the fixed direction the
+same way, because "the element vanished" and "the element was fixed" also look identical in a
+count: check `unrendered` and that the markup is still served before recording a fix.
+
+**2026-09-11, Trade. `--grounds` reported "0 adjacent bands sharing a ground" on routes whose
+closing band it had never looked at.** Two faults, and each on its own produced a clean number
+out of a measurement that did not happen. (1) `bandsOf` selected `:scope > section` etc, direct
+children of `<main>` only; Trade's phase 5 closing band sits inside a `<div id="book">`, so it
+was invisible and `/cis-refund` reported 5 bands where the page has 6. (2) Grounds were compared
+by STRING EQUALITY, so `rgb(250, 250, 247)` and `rgb(250, 250, 249)` counted as two different
+grounds although they differ by about 0.001 in lightness and render as one continuous slab,
+which is the exact defect the check exists to find.
+Deriving command and the decisive lines, before and after, same server, same routes:
+```
+MSYS_NO_PATHCONV=1 node docs/_engines/instruments/browser_check.mjs --site=construction-cis   --base=http://localhost:3167 --widths=1440 --grounds --out=tmp/bc_g.json "//cis-refund"
+before:  adjacent bands sharing a ground: 0
+after:   [grounds]  bands 4 and 5 share a ground: rgb(250, 250, 249) / rgb(250, 250, 247) (distance 2.84)
+         adjacent bands sharing a ground: 1  [/cis-refund 1]
+```
+Repaired at `browser_check.mjs` in the `--grounds` block: candidates are now matched at ANY depth
+under `<main>` (semantic band tags unconditionally, a plain `<div>` still only with a `bg-` class),
+then filtered to those spanning >= 90% of `<main>`'s width and de-nested by dropping any candidate
+that contains another, so a wrapper yields its real bands and nothing is counted twice. Comparison
+is the redmean weighted-sRGB distance with threshold 3, just above the ~2.3 JND; the estate's real
+alternation (white vs stone-50) measures 15.72 and stays distinct.
+RULE, and it is the general one: **an instrument that reports zero because it never looked is
+indistinguishable, in its output, from one that looked and found nothing.** A zero from a scan is
+evidence only if you can say what it examined. Make the instrument print its corpus size (bands
+found, routes measured) next to its findings, and before quoting a zero, verify the scan saw the
+element by name.
+
+**2026-09-11, Trade. The anchor check printed a rule it did not enforce.** `browser_check.mjs:283`
+fired at `sm < 24` while printing `want >= 96px / scroll-mt-24`: 24 was the Tailwind class number
+pasted in as a pixel count. A target at 32px passed silently under a message claiming a 96px floor,
+and every port has read the output as though 96 were enforced. Fixed by enforcing what is printed
+(`sm < 96`), because the contract specifies `scroll-mt-24` and 24 on that scale IS 96px. Proven on
+a constructed fixture, since no live Trade route has a target between 24 and 96: a throwaway static
+page serving `<section id="t32" style="scroll-margin-top:32px">` plus an `<a href="#t32">`, measured
+by both the old and the new rule.
+```
+old rule:  200 desktop //                      (silent, 0 with NEW problems)
+new rule:  [anchor]   #t32 scroll-margin-top=32px (want >= 96px / scroll-mt-24)
+```
+RULE: a gate's message and its predicate are two separate things and drift apart silently. When a
+threshold appears in both, derive one from the other or assert them against a fixture that sits
+between them.
+
+**2026-09-11. This is the SECOND repair of `--grounds`, and that is the durable finding.** It
+shipped at `61e9b6b2` with three defects, was repaired at `bf231f1a`, and is repaired again here
+for two more, both of the same family: it could not see what it was asked to judge. Treat every
+grounds figure taken before this repair as UNVERIFIED, not merely stale, and re-derive rather than
+re-quote. Specifically, Trade's "0 adjacent, 0 dark-touching-footer" is withdrawn: the adjacency
+half was never measured on any route with a wrapped closing band.
+
+
 ---
 
 ## 5b. What the Solicitors port taught, in one block
