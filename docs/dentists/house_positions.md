@@ -135,6 +135,25 @@ Count of primary-source / authoritative URLs fetched: **18** (12 gov.uk + legisl
 - **Authority anchors:** NHSBSA partial-retirement and early-retirement factor guidance (factor tables are NHSBSA/GAD-set).
 - **Practical writing rule:** state partial retirement from 1 Oct 2023, the 20-100% range and the 10% reduction condition. For early retirement lock the PRINCIPLE (permanent actuarial reduction) and point to the NHSBSA factor table, do NOT lock a fixed % reduction. Cross-ref §2.A, §2.B.
 
+### 2.F Member contribution tiers, England and Wales (locked, 2026-09-11, owner-requested verification)
+
+**Position.** The NHS Pension Scheme member contribution structure is **six tiers**, assessed on **actual pensionable pay, not whole-time equivalent**. The RATES have been settled since the final phase came in on **1 April 2024** and are unchanged for 2026/27. The **THRESHOLDS are uprated** and have moved twice since. In force **from 1 April 2026 (2026/27)**:
+
+| Pensionable pay | Member rate |
+|---|---|
+| up to £13,259 | **5.2%** |
+| £13,260 to £28,854 | **6.5%** |
+| £28,855 to £35,155 | **8.3%** |
+| £35,156 to £52,778 | **9.8%** |
+| £52,779 to £67,668 | **10.7%** |
+| £67,669 and above | **12.5%** |
+
+Thresholds were uprated by the **September 2025 CPI figure of 3.8%**. Because the 2026/27 Agenda for Change pay award (3.3%) came in BELOW that CPI figure, there is **no further amendment** to the thresholds within 2026/27. **Employer contribution: 23.7%** of pensionable pay from 1 April 2024, plus a 0.08% administration levy (23.78% all in).
+
+- **Authority anchors:** NHS Employers, "NHS Pension Scheme member contributions" (verified 2026-09-11). NHSBSA's member hub is the primary source but returns HTTP 403 to automated fetches, so NHS Employers was used and the effective date, the CPI uprating figure and the pay-award interaction were all read from it directly.
+- **Why this section exists.** The `superannuation-contributions` calculator shipped **2024/25 thresholds on a page labelled 2026/27**, with an unclosed "VERIFY before publishing" note in its own source (`compute/superannuation-contributions.ts:14`). Drift, at 2026-09-11: 6.5% band top £27,288 against £28,854; 8.3% £33,247 against £35,155; 9.8% £49,913 against £52,778; 10.7% £63,994 against £67,668. Only the 5.2% boundary was still right. **The error pushes a dentist near a boundary into a HIGHER tier than they are in, so it overstates the contribution.** House positions previously carried no tier table at all, which is why nobody could check it.
+- **Practical writing rule for sessions:** the RATES are stable, the THRESHOLDS are not. Never restate a threshold without its tax year, and re-verify the table at the start of each tax year. **Scotland and Northern Ireland run different tier tables**; this one is England and Wales only, so say which nation a figure applies to. Cross-ref §2.C for the practitioner-vs-officer pensionable pay definition and the 43.9% NPE ceiling, which is what feeds this calculation for a practice-owning dentist.
+
 ---
 
 ## 3. NHS dental contracts (locked, 2026-06-03)
