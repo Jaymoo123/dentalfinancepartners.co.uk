@@ -10,10 +10,11 @@ Last updated: 2026-09-11.
 
 ## PICKUP: START HERE if you are a fresh agent on this port
 
-**Where it stands, 2026-09-11.** Phases 0 to 4 are DONE, committed and tagged
-(`port-solicitors-phase0` through `port-solicitors-phase4`). Phases 5 and 6 are not started.
+**Where it stands, 2026-09-11.** Phases 0 to 5 are DONE, committed and tagged
+(`port-solicitors-phase0` through `port-solicitors-phase5`). Phase 6 is the LAST build phase.
 NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design. Your next action
-is Phase 5: the homepage, the services pillar and the locations.
+is Phase 6: contact, the post-submit set, about, research, resources, legal and the
+interruptive restyle.
 
 **Read in this order before acting:**
 1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` in full. Section 12 is your job description
@@ -74,7 +75,7 @@ and its deriving command.
 trust any crawl.** Three wrong-site measurements happened in one session because another
 agent's server held the port and the instrument crawled a different site entirely.
 
-**Phase order from here:** 5 homepage and pillars and locations, then 6 contact,
+**Phase order from here:** 6 contact,
 post-submit, research, resources, legal, interruptive restyle and the rule-based content
 sweep. Each phase: plan, build in parallel work packages, manager-verify, INDEPENDENT
 adversarial review against the rendered DOM, gap-fix, re-review, tag, commit. A review that
@@ -335,6 +336,106 @@ one. Three sessions share this working tree.
 2. The header shows two reds side by side: the wordmark icon and rule at rose-600 `#ec003f`
    (the kit hardcodes `text-primary-600`) against the brand crimson `#c41e3a` on the button.
    Both cleared contrast; the delta asked for the icon to be the brand. Match them?
+
+## 2026-09-11 - PHASE 5 (homepage, services, locations). Nothing deployed.
+
+Commits: `e93c9e00` the phase build, `30d7a75c` review gaps. Tag `port-solicitors-phase5`.
+Production still serves `18b4f25f`. Five packages built IN PARALLEL on disjoint files, at the
+owner's instruction to batch.
+
+**THE BLOCKER NOBODY HAD SPOTTED.** `globals.css` carried ZERO `@layer` blocks, so in Tailwind
+v4 its unlayered `a { color: inherit }` beat every colour utility on every anchor site-wide.
+Any builder styling a link would have shipped a diff that changed nothing on screen. Fourth
+estate instance of T30/T31. Element rules now sit in `@layer base`, class recipes in
+`@layer components`, and THREE rules are deliberately left unlayered with the reason in place:
+the 16px input font-size floor (layering it lets `text-sm` win and brings iOS zoom-on-focus
+back) and the anchor-offset block plus its `max-width: 63.99rem` twin (its selector targets
+elements that CARRY a `scroll-mt` utility, so layering hands the win to `scroll-mt-24` and
+re-breaks every mobile in-page jump under the header and TOC bar).
+The builder corrected the manager's framing: `inherit` computes to the parent colour, so
+layering changed nothing for anchors with no colour utility. Blast radius was 26 anchors, not
+"every anchor on 294 routes". Its remediation list was ROUTED, not filed: two locations cards
+were overriding the house card ring and corner with utilities that had been inert until then.
+
+**AN AGENT REFUSED THE PLAN AND WAS RIGHT.** The plan told three packages to pass
+`LEAD_PROOF_POINTS` to the closing panel. Those are six SITE COPY strings absent from the
+homepage, `/services` and `/locations`, so adding them is new visible copy, and it would have
+failed the very word-multiset check the plan makes the decisive gate. WP2 declined and flagged
+it; the manager overrode WP3 and WP4 mid-flight and both removed it.
+
+**THEN THE SAME RULE BROKE THROUGH THE BACK DOOR, and the review caught it.** `LeadCTAPanel`
+SUPPLIES `eyebrow` and `formTitle` when a caller passes neither, so "Free consultation" and
+"Book your free consultation" appeared on those routes anyway and the homepage rendered the
+latter TWICE. Fixed per route from each route's own pre-port strings where one existed, and
+suppressed where none did. **Kit change, additive:** both labels now render only when
+non-empty, because an empty string left an empty heading carrying its own margin.
+
+**THE TURNAROUND PROMISES WERE REPORTED CLOSED TWICE AND WERE NOT.** Phase 2 claimed all
+eleven. The phase 5 planner found FOUR still live in the services files, plus a "Same-day"
+stat in `config/service-tiers.ts` feeding the homepage `StatsBar`. The review pass then found
+THREE more: `/specialist-vs-generalist-accountant`, `/for-locum-solicitors`, and
+`/for-firm-buyers`, the last found only by sweeping ALL of `src/` rather than a file list.
+**Lesson, and it is the same one as the pricing sweep: sweep by RULE over the whole tree, not
+by the file list you were handed.** Post-fix hits are four, all out of class: a partner email
+reporting MEASURED latency, a code comment, the statutory five-week reconciliation cap, and
+the ban's own docstring.
+
+**PRICING REMOVED, by minimal excision, never by rewriting a sentence:** 7 instances across
+`/services`, `/services/[slug]` and `config/service-tiers.ts`, including the tier values that
+fed the homepage; 2 on `/specialist-vs-generalist-accountant`, **a page NO disposition slice
+lists**, found only because a phase 2 agent swept by rule. Four edits are visible in FAQPage
+structured data and are named in the commits. One excision had become a rewrite and was
+corrected to removal-only.
+WP3 also corrected the brief: three of the "pricing instances" it was handed carry no figure
+and are protected fee-model vocabulary; editing them would have been an unmandated copy
+change. Left alone.
+
+**KIT FIXES, manager-direct, both additive and both verified on generalist:**
+- `BlogCategoryHub`'s "All articles" link measured **4.49** on its slate-50 ground against a
+  4.5 floor, and reads as passing on white (4.70), which is why it survived until layering
+  made the utility win and the ratio got measured. Now `primary-700` (6.01). Hand-computed,
+  self-tested against slate-500 on white = 4.76 and slate-400 on white = 2.56 FIRST.
+  Note it is NOT inert for generalist: its equivalent link moves 4.42 to 8.56, a net
+  improvement but a live visual change to another site shipped under a Solicitors phase.
+- `LeadCTAPanel` gains an optional `formSubtitle`, because adopting the panel on
+  `/services/[slug]` had DELETED a live subline ("We will be in touch."). Deleting published
+  copy is not a design decision.
+
+**A ONE-TOKEN KIT CHANGE WAS SWEPT INTO `e93c9e00` THAT WAS NOT THIS SESSION'S.** A sibling
+session had `LeadCTAPanel`'s footnote `text-slate-500` to `text-slate-600` uncommitted in the
+shared tree when the phase 5 commit staged that file. It darkens small print slightly on
+generalist, Medical and Dentists too. Raised with the owner rather than quietly kept.
+
+**Verification at close**, on a FROM-SCRATCH build: exit 0, 294 prerendered pages; sweep
+273/274 clean, 0 link-floor breaches (10,692 unique internal links), 0 data-cta regressions
+across **1,507**, 0 dash regressions across 444; Solicitors tsc clean and 17 files / 214
+tests; generalist tsc clean; web-shared 19 files / 406 tests; dependency closure OK across 19
+sites.
+
+**TWO SWEEPS WERE VOIDED BEFORE THE ONE ABOVE, both caught by the title assertion**: the first
+crawled construction-cis entirely, because another session held the port and `next start`
+failed to bind; the second returned an empty title because the server had been started from
+the repo root and had no build to serve. The rule this port wrote after three earlier
+incidents paid for itself twice more in one phase.
+
+**Frozen, confirmed untouched, all owner items:** "6 calculators" and "6 pillar guides" on the
+homepage; the closing band that renders no CTA button because the button lives in a
+`packagesMode` branch that never runs; the unsourced lock-up and 26.2% figures; the five
+`/services/[slug]` routes absent from `sitemap.xml`; the 42 em-dashes on `/services/[slug]`.
+
+**Deliberate departures, recorded:**
+- `proofPoints={[]}` on the homepage, `/services` and `/locations`, so the closing panel shows
+  no proof rows.
+- `location_hero_book` and `location_book` were NOT created: both need a visible label that
+  does not exist on those routes today.
+- The `whyLocal` and "Remote service" sections carry an icon but no figure, because a figure
+  would have needed invented words.
+- `county` is cast locally because `packages/web-shared/lib/niche-config.ts` types `locations`
+  as `{ slug, title }` only. Kit type fix is a one-line owner item.
+
+**Carried to phase 6:** `/resources` still 404s; `prose-solicitor` is an orphan CSS block; the
+nav dropdown buttons carry `aria-controls` pointing at ids absent from the page, the same
+defect class corrected on the calculator tablist in phase 4.
 
 ## 2026-09-11 - PHASE 4 (calculators, the result gate, tabs). Nothing deployed.
 
