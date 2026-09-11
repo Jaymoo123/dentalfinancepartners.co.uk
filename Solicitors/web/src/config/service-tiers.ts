@@ -6,13 +6,11 @@ import type { StatItemConfig } from "@accounting-network/web-shared/components/S
  * - 13 calculators: count of entries in src/lib/tools/registry.ts (all kind: "generic")
  * - 10 pillar guides: count of .md files in content/solicitor-guides/
  * - 6 service areas: count of SERVICES array entries in src/app/services/page.tsx
- * - "Same-day regulatory": verbatim from services/page.tsx INCLUDED list
  */
 export const siteStats: StatItemConfig[] = [
   { icon: "🧮", value: "13", label: "Free calculators" },
   { icon: "📖", value: "10", label: "Pillar guides" },
   { icon: "⚖️", value: "6", label: "Service specialisms" },
-  { icon: "✓", value: "Same-day", label: "Response on regulatory questions" },
 ];
 
 /**
@@ -44,7 +42,6 @@ export const serviceTiers: ServiceTier[] = [
       "SRA Accountant's Report (where applicable)",
       "Basic VAT returns",
       "Quarterly check-in with your accountant",
-      "Fixed monthly fee from £180/mo",
     ],
     cta: "Book a scoping call",
     ctaHref: "/contact",

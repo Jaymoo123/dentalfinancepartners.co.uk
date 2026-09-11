@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CTASection } from "@/components/ui/CTASection";
-import { btnPrimary, contentNarrow, focusRing, sectionY } from "@/components/ui/layout-utils";
+import { Video } from "lucide-react";
+import {
+  btnPrimary,
+  btnSecondary,
+  focusRing,
+  sectionY,
+  sectionYLoose,
+  siteContainerLg,
+} from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { JsonLd } from "@/lib/schema/index";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { buildAccountingService } from "@accounting-network/web-shared/schema";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -148,147 +160,221 @@ const cityContent: Record<string, {
 export default async function LocationPage({ params }: Props) {
   const { slug } = await params;
   const loc = siteConfig.locations.find((l) => l.slug === slug);
-  
+
   if (!loc) {
     notFound();
   }
-  
+
   const cityName = slug.charAt(0).toUpperCase() + slug.slice(1);
   const content = cityContent[slug];
-  
+  // ponytail: `county` is in niche.config.json for all five cities but absent
+  // from the shared NicheConfig type, which is off limits this phase. Local
+  // cast, guarded, rather than a type edit in packages/web-shared.
+  const county = (loc as { county?: string } | undefined)?.county;
+
   if (!content) {
     notFound();
   }
-  
+
   const allPosts = getAllPosts();
   const localPosts = allPosts.filter((p) =>
     p.slug.toLowerCase().includes(slug) || p.title.toLowerCase().includes(cityName.toLowerCase())
   );
-  
+
+  // The areas sentence, re-presented as a chip row: same words, same order, a
+  // different presentation instead of a wall of commas. Everything up to and
+  // including " across " stays prose; the rest splits on the commas the
+  // sentence already carries. No word is added or dropped, which is what the
+  // 2026-09-11 hard rule requires. Falls back to the plain sentence if a
+  // future city string has no " across " clause.
+  const acrossAt = content.areas.indexOf(" across ");
+  const areaLead = acrossAt === -1 ? content.areas : content.areas.slice(0, acrossAt + 8);
+  const areaChips =
+    acrossAt === -1 ? [] : content.areas.slice(acrossAt + 8).split(/,\s+/).filter(Boolean);
+
   // No public phone number is published, so phone is intentionally omitted:
   // the builder then emits no `telephone` field in the LocalBusiness JSON-LD.
-  const localBusinessSchema = JSON.stringify(
-    buildAccountingService(
-      {
-        name: `${siteConfig.name} - ${cityName}`,
-        description: siteConfig.description,
-        url: `${siteConfig.url}/locations/${slug}`,
-        city: cityName,
-        areaServed: [cityName],
-      },
-      {
-        siteUrl: siteConfig.url,
-        siteName: siteConfig.name,
-        legalName: siteConfig.legalName,
-        publisherLogoUrl: siteConfig.publisherLogoUrl,
-        email: siteConfig.contact.email,
-      },
-    ),
+  const localBusinessSchema = buildAccountingService(
+    {
+      name: `${siteConfig.name} - ${cityName}`,
+      description: siteConfig.description,
+      url: `${siteConfig.url}/locations/${slug}`,
+      city: cityName,
+      areaServed: [cityName],
+    },
+    {
+      siteUrl: siteConfig.url,
+      siteName: siteConfig.name,
+      legalName: siteConfig.legalName,
+      publisherLogoUrl: siteConfig.publisherLogoUrl,
+      email: siteConfig.contact.email,
+    },
   );
-  
+
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: localBusinessSchema }}
-      />
-      <div className={`${contentNarrow} ${sectionY}`}>
-        <Breadcrumb
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Locations", href: "/locations" },
-            { label: cityName },
-          ]}
-        />
-        
-        <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">
-          {loc.title}
-        </h1>
-        
-        <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-          {content.intro}
-        </p>
-        
-        <div className="mt-10 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-          <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
-            Areas we cover
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-            {content.areas}
-          </p>
+      <JsonLd data={localBusinessSchema} />
+
+      <section className="relative overflow-hidden bg-slate-900">
+        <div className={`${siteContainerLg} ${sectionYLoose} relative z-10`}>
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Locations", href: "/locations" },
+              { label: cityName },
+            ]}
+            variant="light"
+          />
+          {/* Narrow measure on hero copy only; every body section below is
+              siteContainerLg. The eyebrow is the county from siteConfig,
+              existing data rather than new prose. */}
+          <div className="mt-8 max-w-3xl">
+            {county && <Eyebrow onDark>{county}</Eyebrow>}
+            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-5xl">
+              {loc.title}
+            </h1>
+            <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+              {content.intro}
+            </p>
+          </div>
         </div>
-        
-        <div className="mt-10">
-          <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+        <SolicitorsBackdrop tone="navy" />
+      </section>
+
+      <section className="bg-slate-50">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Areas we cover</h2>
+          {areaChips.length > 0 ? (
+            <>
+              <p className="mt-3 text-base leading-relaxed text-slate-600">{areaLead.trim()}</p>
+              <ul className="mt-5 flex list-none flex-wrap gap-2 pl-0">
+                {areaChips.map((area) => (
+                  <li
+                    key={area}
+                    className="inline-flex items-center rounded-xl bg-white px-4 py-2 text-sm text-slate-700 ring-1 ring-slate-200/70"
+                  >
+                    {area}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p className="mt-3 text-base leading-relaxed text-slate-600">{content.areas}</p>
+          )}
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
             Why choose a specialist solicitor accountant in {cityName}?
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">
             {content.whyLocal}
           </p>
         </div>
-        
-        <div className="mt-10">
-          <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+      </section>
+
+      {/* Slate ground so the white .card-flat tiles oppose it. globals.css
+          already carries the standard card recipe (ring, 4px radius): do not
+          inline it here. */}
+      <section className="bg-slate-50">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
             Services for {cityName} solicitors
           </h2>
-          <div className="mt-6 space-y-6">
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
             {content.services.map((service, i) => (
-              <div key={i} className="card-flat">
-                <h3 className="text-lg font-semibold text-[var(--primary)]">
-                  {service.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
-                  {service.desc}
-                </p>
+              <div key={i} className="card-flat h-full">
+                <h3 className="text-lg font-bold text-slate-900">{service.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">{service.desc}</p>
               </div>
             ))}
           </div>
         </div>
-        
-        {localPosts.length > 0 && (
-          <div className="mt-12">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+      </section>
+
+      {/* Dead on this corpus: the filter matches no post for any of the five
+          cities. Left in place deliberately - picking a fallback hub would add
+          links and a heading that do not exist today (owner item). */}
+      {localPosts.length > 0 && (
+        <section className="bg-white">
+          <div className={`${siteContainerLg} ${sectionY}`}>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               {cityName} solicitor accounting guides
             </h2>
-            <ul className="mt-6 space-y-4 pl-0">
+            <ul className="mt-6 grid list-none gap-6 pl-0 md:grid-cols-2">
               {localPosts.slice(0, 5).map((post) => (
-                <li key={post.slug} className="list-none">
+                <li key={post.slug}>
                   <Link
                     href={`/blog/${getCategorySlug(post)}/${post.slug}`}
-                    className={`card-flat block rounded-lg p-4 no-underline transition-shadow hover:shadow-md ${focusRing}`}
+                    className={`group block h-full rounded-xl bg-slate-50 p-6 no-underline ring-1 ring-slate-200/70 transition-shadow hover:shadow-md ${focusRing}`}
                   >
-                    <span className="font-semibold text-[var(--primary)]">{post.title}</span>
+                    <span className="font-bold text-slate-900 group-hover:text-primary-700">
+                      {post.title}
+                    </span>
                     {post.summary && (
-                      <span className="mt-2 block text-sm text-[var(--muted)]">{post.summary}</span>
+                      <span className="mt-2 block text-sm text-slate-600">{post.summary}</span>
                     )}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-        )}
-        
-        <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-          <h2 className="font-serif text-lg font-semibold text-[var(--ink)] sm:text-xl">
-            Remote service for {cityName} solicitors
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-            While we work with many {cityName}-based solicitors and law firms, all our services are available remotely. SRA compliance reviews, partnership tax returns, and practice succession planning can be handled efficiently with secure document sharing and video calls. You don't need to be based in {cityName} to benefit from specialist legal sector accounting.
-          </p>
+        </section>
+      )}
+
+      <section className="bg-white">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <div className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+            <span
+              className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600 ring-1 ring-primary-100"
+              aria-hidden
+            >
+              <Video className="h-6 w-6" strokeWidth={1.75} />
+            </span>
+            <h2 className="mt-4 text-2xl font-bold text-slate-900 sm:text-3xl">
+              Remote service for {cityName} solicitors
+            </h2>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-600">
+              While we work with many {cityName}-based solicitors and law firms, all our services are available remotely. SRA compliance reviews, partnership tax returns, and practice succession planning can be handled efficiently with secure document sharing and video calls. You don't need to be based in {cityName} to benefit from specialist legal sector accounting.
+            </p>
+          </div>
         </div>
-        
-        <div className="mt-10 text-center">
-          <Link href="/contact" className={btnPrimary}>
-            Book free consultation
-          </Link>
-        </div>
-        
-        <div className="mt-12">
-          <CTASection
-            title={`Ready to work with a specialist solicitor accountant in ${cityName}?`}
-            description="Book a free consultation to discuss your practice's accounting needs. We'll provide clear advice with no obligation."
-          />
-        </div>
+      </section>
+
+      {/* One closing ask where there were two stacked (a bare button and a
+          CTASection). The button's own label becomes the panel's form title
+          and the CTASection pair becomes the footnote, so every existing
+          string, href and data-cta id survives unchanged. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="white"
+          title={`Ready to work with a specialist solicitor accountant in ${cityName}?`}
+          description="Book a free consultation to discuss your practice's accounting needs. We'll provide clear advice with no obligation."
+          formTitle="Book free consultation"
+          proofPoints={[]}
+          form={<LeadForm redirectOnSuccess={false} />}
+          footnote={
+            <span className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link
+                href="/contact"
+                className={`${btnPrimary} w-full min-w-0 sm:w-auto`}
+                data-cta="cta-section-primary"
+              >
+                Speak to a specialist
+              </Link>
+              <Link
+                href="/services"
+                className={`${btnSecondary} w-full min-w-0 sm:w-auto`}
+                data-cta="cta-section-secondary"
+              >
+                View services
+              </Link>
+            </span>
+          }
+        />
       </div>
     </>
   );

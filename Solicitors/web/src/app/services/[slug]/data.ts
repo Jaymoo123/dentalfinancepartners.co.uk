@@ -90,14 +90,14 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       body: [
         "A 6-partner LLP in the South East, residential conveyancing volume around £2.4m gross fees. Annual SRA Accountant's Report due 4 months after year-end, 5 fee-earner FA 2014 audits required (3 fixed-share, 2 salaried).",
         "The work: monthly management accounts splitting NHS-style by department (conveyancing / family / commercial), five-weekly client account reconciliations with the bookkeeper's evidence file reviewed quarterly, annual statutory accounts + SA800, FA 2014 audit each quarter, partner-by-partner SA filings in January.",
-        "Fixed monthly fee around £1,800-£2,200 depending on scope. Specialist work (sale planning, partner exit, ABS conversion) priced separately as a one-off engagement.",
+        "Specialist work (sale planning, partner exit, ABS conversion) priced separately as a one-off engagement.",
       ],
     },
     faqs: [
       {
         question: "Are you qualified to deliver the SRA Accountant's Report?",
         answer:
-          "Yes. We are independent of your firm and qualified to deliver the SRA-mandated annual report under the Accounts Rules. The report must be filed within 6 months of your firm's accounting period end. We aim to issue clean reports 4-6 weeks ahead of that deadline so any issues are surfaced early.",
+          "Yes. We are independent of your firm and qualified to deliver the SRA-mandated annual report under the Accounts Rules. The report must be filed within 6 months of your firm's accounting period end.",
       },
       {
         question: "Do you only work with solicitors?",
@@ -112,7 +112,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "How much do you charge?",
         answer:
-          "Essentials tier from £180/month for sole practitioners. Growth tier from £450/month for typical 4-8 partner LLPs. Specialist work (sale, acquisition, ABS conversion) priced as a one-off engagement, typically £4,000-£12,000 depending on complexity. All fixed-fee, no hourly billing on routine work.",
+          "Specialist work (sale, acquisition, ABS conversion) priced as a one-off engagement. All fixed-fee, no hourly billing on routine work.",
       },
     ],
     relatedServices: [
@@ -202,7 +202,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What happens if we miss the 6-month deadline for the Accountant's Report?",
         answer:
-          "The SRA treats late filing as a regulatory matter. A short delay (1-2 months) with a reasonable explanation is typically tolerated. Repeat lateness or unexplained delay can trigger a Forensic Investigation referral, which is materially worse. We aim to issue your report 4-6 weeks ahead of the deadline as a routine matter.",
+          "The SRA treats late filing as a regulatory matter. A short delay (1-2 months) with a reasonable explanation is typically tolerated. Repeat lateness or unexplained delay can trigger a Forensic Investigation referral, which is materially worse.",
       },
       {
         question: "Can you support a newly-appointed COFA?",

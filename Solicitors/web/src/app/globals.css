@@ -148,88 +148,118 @@
   --color-primary-950: oklch(27.1% 0.105 12.094);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* ============================================================
+LAYERING (playbook T30/T31, field notes section 4).
+Tailwind v4 emits every utility into a layer, and UNLAYERED author CSS beats
+every layered rule whatever the specificity. Before this block existed, the
+bare element rule for `a` below (color inherit, text-decoration none) defeated
+every colour and underline utility on every anchor on all 294 routes.
+Element rules live in @layer base, class recipes in @layer components, so a
+consumer utility wins over both. Three rules are left UNLAYERED ON PURPOSE and
+are commented as such at their site; do not "finish the job" by wrapping them.
+============================================================ */
 
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
+@layer base {
 
-body {
-  margin: 0;
-  min-height: 100dvh;
-  min-width: 0;
-  overflow-x: hidden;
-  background: var(--background);
-  color: var(--ink);
-  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
-  line-height: 1.6; /* A.3 body rhythm (was 1.5) */
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  font-family: inherit;
-}
-
-/* Card recipes. Restyled in place rather than deleted: 11 `.card-premium` and 5
-   `.card-flat` consumers update at once, no consumer file is touched. The standard
-   recipe is the house square corner (--radius-xl, 4px) plus a slate-200/70 ring
-   instead of the pre-redesign 1px border and 1rem/0.75rem radius. */
-.card-premium {
-  background: var(--surface);
-  border: 0;
-  border-radius: var(--radius-xl);
-  padding: 2rem;
-  box-shadow:
-    0 0 0 1px var(--card-ring),
-    0 4px 6px -1px rgba(0, 0, 0, 0.05),
-    0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  transition: all 0.2s;
-}
-
-.card-premium:hover {
-  box-shadow:
-    0 0 0 1px var(--card-ring),
-    0 10px 15px -3px rgba(0, 0, 0, 0.08),
-    0 4px 6px -2px rgba(0, 0, 0, 0.04);
-  transform: translateY(-2px);
-}
-
-.card-flat {
-  background: var(--surface);
-  border: 0;
-  border-radius: var(--radius-xl);
-  padding: 1.5rem;
-  box-shadow: 0 0 0 1px var(--card-ring);
-}
-
-.hero-glass {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 1.5rem;
-  padding: 2.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-@media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    box-sizing: border-box;
   }
-}
 
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    min-width: 0;
+    overflow-x: hidden;
+    background: var(--background);
+    color: var(--ink);
+    font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+    line-height: 1.6; /* A.3 body rhythm (was 1.5) */
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+}
+/* end @layer base (element rules) */
+
+@layer components {
+
+  /* Card recipes. Restyled in place rather than deleted: 11 `.card-premium` and 5
+  `.card-flat` consumers update at once, no consumer file is touched. The standard
+  recipe is the house square corner (--radius-xl, 4px) plus a slate-200/70 ring
+  instead of the pre-redesign 1px border and 1rem/0.75rem radius. */
+  .card-premium {
+    background: var(--surface);
+    border: 0;
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow:
+    0 0 0 1px var(--card-ring),
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.2s;
+  }
+
+  .card-premium:hover {
+    box-shadow:
+    0 0 0 1px var(--card-ring),
+    0 10px 15px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+  }
+
+  .card-flat {
+    background: var(--surface);
+    border: 0;
+    border-radius: var(--radius-xl);
+    padding: 1.5rem;
+    box-shadow: 0 0 0 1px var(--card-ring);
+  }
+
+  .hero-glass {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+}
+/* end @layer components (card recipes) */
+
+@layer base {
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+}
+/* end @layer base (reduced motion) */
+
+/* DELIBERATELY UNLAYERED (1 of 3). This is the iOS zoom-on-focus floor: Safari
+zooms the viewport when a focused control's font-size is under 16px. Layering
+it would let any `text-sm` / `text-xs` utility on an input win and bring the
+zoom back. Behaviour here is unchanged by the layering pass by design. */
 input,
 textarea,
 select {
@@ -244,287 +274,304 @@ select {
   }
 }
 
-details summary {
-  cursor: pointer;
-  user-select: none;
+@layer base {
+
+  details summary {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
 }
+/* end @layer base (details summary) */
 
-details summary::-webkit-details-marker {
-  display: none;
-}
+@layer components {
 
-.prose {
-  max-width: 68ch;
-}
+  .prose {
+    max-width: 68ch;
+  }
 
-.prose h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: var(--primary);
-  line-height: 1.2;
-}
+  .prose h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.2;
+  }
 
-.prose h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary);
-  line-height: 1.3;
-}
+  .prose h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.3;
+  }
 
-.prose p {
-  margin-bottom: 1.25rem;
-  line-height: 1.75;
-}
+  .prose p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+  }
 
-.prose ul,
-.prose ol {
-  margin-bottom: 1.25rem;
-  padding-left: 1.5rem;
-}
+  .prose ul,
+  .prose ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
 
-.prose li {
-  margin-bottom: 0.5rem;
-}
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
 
-.prose a {
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
+  .prose a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 
-.prose a:hover {
-  color: var(--primary-soft);
-}
+  .prose a:hover {
+    color: var(--primary-soft);
+  }
 
-.prose strong {
-  font-weight: 600;
-  color: var(--ink);
-}
+  .prose strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
 
-.prose code {
-  background: var(--surface-elevated);
-  padding: 0.125rem 0.375rem;
-  border-radius: 0.25rem;
-  font-size: 0.875em;
-  font-family: ui-monospace, monospace;
-}
+  .prose code {
+    background: var(--surface-elevated);
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    font-family: ui-monospace, monospace;
+  }
 
-.prose blockquote {
-  border-left: 4px solid var(--accent);
-  padding-left: 1.5rem;
-  margin-left: 0;
-  margin-right: 0;
-  font-style: italic;
-  color: var(--ink-soft);
-}
+  .prose blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
 
-/* ============================================================
-   BLOG CONTENT STYLING
-   ============================================================ */
+  /* ============================================================
+  BLOG CONTENT STYLING
+  ============================================================ */
 
-.article-body.prose-blog {
-  max-width: 68ch;
-  color: var(--ink-soft);
-  font-size: 1.0625rem;
-  line-height: 1.75;
-}
-
-@media (min-width: 768px) {
   .article-body.prose-blog {
-    font-size: 1.125rem;
+    max-width: 68ch;
+    color: var(--ink-soft);
+    font-size: 1.0625rem;
+    line-height: 1.75;
   }
-}
 
-.article-body.prose-blog h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  border-left: 4px solid var(--primary);
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--primary);
-  line-height: 1.2;
-}
+  @media (min-width: 768px) {
+    .article-body.prose-blog {
+      font-size: 1.125rem;
+    }
+  }
 
-@media (min-width: 768px) {
   .article-body.prose-blog h2 {
-    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.2;
   }
-}
 
-.article-body.prose-blog h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.375rem;
-  font-weight: 700;
-  color: var(--ink);
-}
+  @media (min-width: 768px) {
+    .article-body.prose-blog h2 {
+      font-size: 2rem;
+    }
+  }
 
-.article-body.prose-blog p {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  line-height: 1.75;
-}
+  .article-body.prose-blog h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
 
-.article-body.prose-blog ul,
-.article-body.prose-blog ol {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  padding-left: 1.75rem;
-}
+  .article-body.prose-blog p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+  }
 
-@media (min-width: 768px) {
   .article-body.prose-blog ul,
   .article-body.prose-blog ol {
-    padding-left: 2rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.75rem;
   }
-}
 
-.article-body.prose-blog li {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.75;
-}
+  @media (min-width: 768px) {
+    .article-body.prose-blog ul,
+    .article-body.prose-blog ol {
+      padding-left: 2rem;
+    }
+  }
 
-.article-body.prose-blog a {
-  color: var(--primary);
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.2s;
-}
+  .article-body.prose-blog li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
+  }
 
-.article-body.prose-blog a:hover {
-  color: var(--primary-soft);
-}
+  .article-body.prose-blog a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
 
-.article-body.prose-blog strong {
-  font-weight: 700;
-  color: var(--ink);
-}
+  .article-body.prose-blog a:hover {
+    color: var(--primary-soft);
+  }
 
-.article-body.prose-blog blockquote {
-  border-left: 4px solid var(--accent);
-  padding-left: 1.5rem;
-  margin: 1.5rem 0;
-  font-style: italic;
-  color: var(--ink-soft);
-}
+  .article-body.prose-blog strong {
+    font-weight: 700;
+    color: var(--ink);
+  }
 
-.article-body.prose-blog table {
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: 1px solid var(--border);
-  border-collapse: collapse;
-  font-size: 0.9375rem;
-}
+  .article-body.prose-blog blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
 
-.article-body.prose-blog th {
-  background: var(--primary);
-  color: white;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
+  .article-body.prose-blog table {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
 
-.article-body.prose-blog td {
-  padding: 0.75rem 1rem;
-  border-top: 1px solid var(--border);
-}
+  .article-body.prose-blog th {
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
 
-.article-body.prose-blog tr:nth-child(even) {
-  background: var(--surface-elevated);
-}
+  .article-body.prose-blog td {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--border);
+  }
 
-.article-body.prose-blog hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
-}
+  .article-body.prose-blog tr:nth-child(even) {
+    background: var(--surface-elevated);
+  }
 
-.article-body.prose-blog img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  margin: 1.5rem 0;
-  border: 1px solid var(--border);
-}
+  .article-body.prose-blog hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+  }
 
-.article-body.prose-blog code {
-  background: var(--surface-elevated);
-  padding: 0.125rem 0.375rem;
-  border-radius: 0.25rem;
-  font-size: 0.9em;
-  font-family: ui-monospace, 'Cascadia Code', monospace;
-  color: var(--primary);
-  font-weight: 600;
-}
+  .article-body.prose-blog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border);
+  }
 
-.article-body.prose-blog pre {
-  background: var(--surface-elevated);
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  overflow-x: auto;
-  margin: 1.5rem 0;
-}
+  .article-body.prose-blog code {
+    background: var(--surface-elevated);
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    font-family: ui-monospace, 'Cascadia Code', monospace;
+    color: var(--primary);
+    font-weight: 600;
+  }
 
-.article-body.prose-blog pre code {
-  background: transparent;
-  padding: 0;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: var(--ink);
-  font-weight: 400;
-}
+  .article-body.prose-blog pre {
+    background: var(--surface-elevated);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
 
-/* In-body aside CTA. The renderer appends one anchor to #enquiry-form inside
-   every <aside> in the article body (decorateAsides), which is the moment the
-   article has just told the reader what a mistake costs. Colour comes from the
-   --btn-ground trio, the same ground every other button on the site uses, so
-   this cannot drift into a second red. */
-.prose-blog aside .aside-cta-row {
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
+  .article-body.prose-blog pre code {
+    background: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--ink);
+    font-weight: 400;
+  }
 
-.prose-blog aside a.aside-cta,
-.prose-blog aside a.aside-cta:hover {
-  display: inline-block;
-  padding: 0.625rem 1.125rem;
-  background: var(--btn-ground);
-  color: white;
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-decoration: none;
-  border-radius: var(--radius-xl, 4px);
-  transition: background-color 0.2s;
-}
+  /* In-body aside CTA. The renderer appends one anchor to #enquiry-form inside
+  every <aside> in the article body (decorateAsides), which is the moment the
+  article has just told the reader what a mistake costs. Colour comes from the
+  --btn-ground trio, the same ground every other button on the site uses, so
+  this cannot drift into a second red. */
+  .prose-blog aside .aside-cta-row {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
 
-.prose-blog aside a.aside-cta:hover {
-  background: var(--btn-ground-hover);
-}
+  .prose-blog aside a.aside-cta,
+  .prose-blog aside a.aside-cta:hover {
+    display: inline-block;
+    padding: 0.625rem 1.125rem;
+    background: var(--btn-ground);
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border-radius: var(--radius-xl, 4px);
+    transition: background-color 0.2s;
+  }
 
-.prose-blog aside a.aside-cta:focus-visible {
-  outline: 2px solid var(--btn-ground);
-  outline-offset: 2px;
+  .prose-blog aside a.aside-cta:hover {
+    background: var(--btn-ground-hover);
+  }
+
+  .prose-blog aside a.aside-cta:focus-visible {
+    outline: 2px solid var(--btn-ground);
+    outline-offset: 2px;
+  }
+
 }
+/* end @layer components (prose, blog body, aside CTA) */
+
+/* DELIBERATELY UNLAYERED (2 and 3 of 3). Both blocks below target elements that
+CARRY a `scroll-mt-*` utility (`[id][class*="scroll-mt"]`). Layering them would
+hand the win to that utility: `scroll-mt-24` is 6rem, so the desktop value would
+survive by coincidence but the sub-`lg` 7.5rem override would be defeated and
+every mobile `#` jump would hide its heading under the sticky header + TOC bar
+again. Left unlayered so the anchor-offset fix keeps working. */
 
 /* Anchor offset under the sticky header. The standard requires scroll-mt-24 on
-   every anchor target; the kit hardcodes `<main id="main">`'s className and
-   forking a file shared by 19 sites to add one utility is not worth it, so the
-   rule lives here. Applies to every in-page anchor target, not just #main:
-   the pre-port browser check found all 428 anchor targets across all 80 checked
-   routes computing scroll-margin-top 0, so every `#` jump hid its own heading
-   under the header. */
+every anchor target; the kit hardcodes `<main id="main">`'s className and
+forking a file shared by 19 sites to add one utility is not worth it, so the
+rule lives here. Applies to every in-page anchor target, not just #main:
+the pre-port browser check found all 428 anchor targets across all 80 checked
+routes computing scroll-margin-top 0, so every `#` jump hid its own heading
+under the header. */
 #main,
 [id][class*="scroll-mt"],
 li[id^="ref-"],
@@ -533,12 +580,12 @@ li[id^="ref-"],
 }
 
 /* Below `lg:` the sticky stack is taller than 6rem: the header is 73px (the
-   h-12 burger plus py-3, plus the 1px bottom border, which beats the
-   min-h-[3.25rem] floor) and the kit's mobile table-of-contents bar pins at
-   `top-16` (64px) and is 50px tall (py-3 + a 20px summary line + border-y),
-   so the furniture ends at 114px. 6rem = 96px landed the target 18px under
-   the TOC bar. 7.5rem = 120px clears it with 6px to spare. Desktop keeps
-   6rem: there is no mobile TOC bar above `lg:`. */
+h-12 burger plus py-3, plus the 1px bottom border, which beats the
+min-h-[3.25rem] floor) and the kit's mobile table-of-contents bar pins at
+`top-16` (64px) and is 50px tall (py-3 + a 20px summary line + border-y),
+so the furniture ends at 114px. 6rem = 96px landed the target 18px under
+the TOC bar. 7.5rem = 120px clears it with 6px to spare. Desktop keeps
+6rem: there is no mobile TOC bar above `lg:`. */
 @media (max-width: 63.99rem) {
   #main,
   [id][class*="scroll-mt"],

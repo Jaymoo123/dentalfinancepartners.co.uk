@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Check, TriangleAlert } from "lucide-react";
 import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { TestimonialSlider } from "@/components/solicitors/TestimonialSlider";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { getAllPosts, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { siteStats, serviceTiers } from "@/config/service-tiers";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { niche } from "@/config/niche-loader";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 
@@ -17,6 +22,10 @@ const packagesMode = isPackagesMode(niche);
 
 const btnMailOutline =
   "inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-transparent px-6 py-3 text-sm font-semibold tracking-tight text-white transition-all duration-200 hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]";
+
+/** Dark-band resource card, the contract recipe (rounded-xl + a ring) on navy/crimson. */
+const resourceCard =
+  "group block rounded-xl bg-white/5 p-6 ring-1 ring-white/20 transition-all hover:bg-white/10 hover:ring-white";
 
 export const metadata: Metadata = {
   title: "Accountants for Solicitors UK 2025/26 | SRA + LLP + Partner Tax",
@@ -151,23 +160,22 @@ export default function HomePage() {
     <>
       {/* Organization + WebSite now ship site-wide from the root layout. */}
 
-      <section
-        className={sectionYLoose}
-        style={{
-          background: "linear-gradient(135deg, rgba(196, 30, 58, 0.75) 0%, rgba(160, 24, 41, 0.80) 100%), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070') center/cover",
-          color: "white",
-        }}
-      >
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-4xl text-center">
+      {/* F.2 band 3. Navy ground plus the ruled-ledger motif. The external
+          Unsplash JPEG and the crimson wash over it are retired (owner decision
+          2026-09-11): the motif is first-party, needs no third-party request,
+          and is the same mark the footer and 27 other surfaces already carry. */}
+      <section className={`relative overflow-hidden bg-slate-900 ${sectionYLoose}`}>
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
             <BrandLogoHero />
             <p className="mt-6 text-xl leading-relaxed text-white/90 md:text-2xl">
               {siteConfig.tagline}
             </p>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
               SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. We understand the unique challenges facing legal practices.
             </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 href={activeCta.hero_primary.href}
                 className={btnPrimary}
@@ -192,19 +200,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white">
+      {/* F.2 band 4. Strip chrome only: StatsBar stays (two of the four values
+          are not numeric, so StatsCounter cannot carry them without new copy). */}
+      <section className="border-b border-slate-200 bg-white py-5 sm:py-7">
         <div className={siteContainerLg}>
           <StatsBar stats={siteStats} />
         </div>
       </section>
 
-      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Trusted by legal professionals
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Trusted by legal professionals</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               Why solicitors choose specialist accountants
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
@@ -212,11 +220,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
             {trustItems.map((item, i) => (
-              <div key={i} className="card-premium text-center">
-                <div className="text-4xl font-bold text-[var(--accent)]">{item.stat}</div>
-                <h3 className="mt-3 text-lg font-semibold text-[var(--primary)]">{item.title}</h3>
+              <div key={i} className="card-premium">
+                <div className="text-4xl font-bold text-[var(--primary)]">{item.stat}</div>
+                <h3 className="mt-3 text-lg font-semibold text-slate-900">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{item.body}</p>
               </div>
             ))}
@@ -224,29 +232,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              What the work looks like
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+      {/* F.2 band 11. Navy band, local slider kept: the kit TestimonialsSection
+          hardcodes Property's own testimonials with no prop (plan section 0.2). */}
+      <section className={`relative overflow-hidden bg-slate-900 ${sectionY}`}>
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            <Eyebrow onDark>What the work looks like</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
               Four situations legal sector accountants see repeatedly
             </h2>
           </div>
-          <div className="mt-10 max-w-3xl mx-auto">
+          <div className="mt-10">
             <TestimonialSlider />
           </div>
         </div>
       </section>
 
-      <section className={sectionY}>
+      {/* F.2 band 12. Card grid to a ruled row list. Every text node the cards
+          carried is still here: category, title, summary, date, bullet, read
+          time, and the "Read article" affordance with its own href. */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Latest insights
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Latest insights</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               Expert guidance for UK solicitors
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
@@ -254,57 +264,61 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
+          <div className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
             {recentPosts.map((post) => {
               const categorySlug = getCategorySlug(post);
               const readTime = calculateReadTime(post.contentHtml);
               return (
-                <article key={post.slug} className="card-flat group">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">
-                    {post.category}
-                  </p>
-                  <h3 className="mt-3 font-serif text-lg font-semibold text-[var(--primary)] leading-tight">
+                <article key={post.slug} className="group py-6">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-8">
+                    <p className="shrink-0 text-xs font-semibold uppercase tracking-wide text-[var(--accent)] sm:w-44">
+                      {post.category}
+                    </p>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="text-lg font-semibold leading-tight text-slate-900">
+                        <Link
+                          href={`/blog/${categorySlug}/${post.slug}`}
+                          className={`transition-colors hover:text-[var(--primary)] ${focusRing} rounded`}
+                        >
+                          {post.title}
+                        </Link>
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)] line-clamp-2">
+                        {post.summary}
+                      </p>
+                      <div className="mt-3 flex items-center gap-3 text-xs text-[var(--muted)]">
+                        {post.date && (
+                          <time dateTime={post.date}>
+                            {new Intl.DateTimeFormat("en-GB", {
+                              day: "numeric",
+                              month: "short",
+                              year: "numeric",
+                            }).format(new Date(post.date))}
+                          </time>
+                        )}
+                        <span>•</span>
+                        <span>{readTime} min read</span>
+                      </div>
+                    </div>
                     <Link
                       href={`/blog/${categorySlug}/${post.slug}`}
-                      className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
+                      className={`inline-flex shrink-0 items-center text-sm font-medium text-[var(--primary)] transition-colors hover:text-[var(--accent-strong)] ${focusRing} rounded`}
                     >
-                      {post.title}
+                      Read article
+                      <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </Link>
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] line-clamp-3">
-                    {post.summary}
-                  </p>
-                  <div className="mt-4 flex items-center gap-3 text-xs text-[var(--muted)]">
-                    {post.date && (
-                      <time dateTime={post.date}>
-                        {new Intl.DateTimeFormat("en-GB", {
-                          day: "numeric",
-                          month: "short",
-                          year: "numeric",
-                        }).format(new Date(post.date))}
-                      </time>
-                    )}
-                    <span>•</span>
-                    <span>{readTime} min read</span>
                   </div>
-                  <Link
-                    href={`/blog/${categorySlug}/${post.slug}`}
-                    className={`mt-4 inline-flex items-center text-sm font-medium text-[var(--primary)] hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
-                  >
-                    Read article
-                    <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
                 </article>
               );
             })}
           </div>
 
-          <div className="mt-10 text-center">
+          <div className="mt-10">
             <Link
               href="/blog"
-              className={`inline-flex items-center min-h-[48px] px-6 py-3 rounded-lg border-2 border-[var(--primary)] bg-transparent text-[var(--primary)] font-medium transition-all hover:bg-[var(--primary)] hover:text-white ${focusRing}`}
+              className={`inline-flex items-center min-h-[48px] px-6 py-3 rounded-full border-2 border-[var(--primary)] bg-transparent text-[var(--primary)] font-medium transition-all hover:bg-[var(--primary)] hover:text-white ${focusRing}`}
             >
               View all articles
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -315,13 +329,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+      {/* F.2 band 5. Restyled in place, NOT the kit ProblemStatement, which
+          hardcodes Property's landlord prose (plan section 0.2 / R1). */}
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              The reality
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>The reality</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               What generalist accountants miss
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
@@ -329,32 +343,37 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
             {realityPoints.map((point, i) => (
-              <div key={i} className="card-flat">
-                <h3 className="text-lg font-semibold text-[var(--primary)]">{point.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">{point.body}</p>
+              <div key={i} className="card-flat flex gap-4">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--primary)]/10 text-[var(--primary)] ring-1 ring-[var(--primary)]/20">
+                  <TriangleAlert aria-hidden className="h-5 w-5" strokeWidth={1.75} />
+                </span>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900">{point.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">{point.body}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+      {/* F.2 band 6. White ground, so the cards take the opposing slate ground
+          via a utility (the .card-premium recipe itself is untouched: plan 0.7). */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Who we work with
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Who we work with</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               Specialist accounting for every type of legal practice
             </h2>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
             {whoWeWorkWith.map((item, i) => (
-              <div key={i} className="card-premium">
-                <h3 className="text-xl font-semibold text-[var(--primary)]">{item.title}</h3>
+              <div key={i} className="card-premium bg-slate-50">
+                <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
                 <p className="mt-2 text-sm font-medium text-[var(--accent)]">{item.subtitle}</p>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--ink-soft)]">{item.body}</p>
               </div>
@@ -363,13 +382,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={sectionY}>
+      {/* F.2 band 8. Six cards stay six; the count is in no visible string. */}
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              How we work
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>How we work</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               Complete accounting for solicitors and law firms
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
@@ -377,25 +395,25 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <ScrollGlowGroup className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {howWeWorkItems.map((item, i) => (
               <div key={i} className="card-flat">
-                <div className="text-3xl font-bold text-[var(--accent)]">{item.n}</div>
-                <h3 className="mt-3 text-lg font-semibold text-[var(--primary)]">{item.title}</h3>
+                <div className="text-3xl font-bold text-[var(--primary)]">{item.n}</div>
+                <h3 className="mt-3 text-lg font-semibold text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">{item.body}</p>
               </div>
             ))}
-          </div>
+          </ScrollGlowGroup>
         </div>
       </section>
 
-      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+      {/* Restyled in place, NOT the kit ComparisonTable, which hardcodes
+          Property's own rows and pills (plan R1). */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Why it matters
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Why it matters</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               Specialist vs generalist accountants
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
@@ -403,23 +421,18 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-xl border border-[var(--border)] bg-white">
+          <div className="mt-12 overflow-hidden rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
             <table className="w-full">
               <thead>
-                <tr style={{ background: "var(--primary)", color: "white" }}>
+                <tr className="bg-slate-900 text-white">
                   <th className="px-6 py-4 text-left text-sm font-semibold">Area</th>
                   <th className="px-6 py-4 text-left text-sm font-semibold">With specialist solicitor accountants</th>
                 </tr>
               </thead>
               <tbody>
                 {specialistRows.map((row, i) => (
-                  <tr
-                    key={i}
-                    style={{
-                      background: i % 2 === 0 ? "white" : "var(--surface-elevated)",
-                    }}
-                  >
-                    <td className="px-6 py-4 text-sm font-medium text-[var(--primary)]">{row.area}</td>
+                  <tr key={i} className={i % 2 === 0 ? "bg-slate-50" : "bg-white"}>
+                    <td className="px-6 py-4 text-sm font-medium text-slate-900">{row.area}</td>
                     <td className="px-6 py-4 text-sm text-[var(--ink-soft)]">{row.detail}</td>
                   </tr>
                 ))}
@@ -429,21 +442,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={sectionY}>
+      {/* F.2 band 7. */}
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Why choose us
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Why choose us</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               Specialist accountants for solicitors
             </h2>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
             {whySpecialistItems.map((item, i) => (
               <div key={i} className="card-premium">
-                <h3 className="text-xl font-semibold text-[var(--primary)]">{item.title}</h3>
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--primary)]/10 text-[var(--primary)] ring-1 ring-[var(--primary)]/20">
+                  <Check aria-hidden className="h-5 w-5" strokeWidth={1.75} />
+                </span>
+                <h3 className="mt-4 text-xl font-semibold text-slate-900">{item.title}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--ink-soft)]">{item.body}</p>
               </div>
             ))}
@@ -451,13 +466,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center mb-10">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              How we can help
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+          <div className="mb-10 max-w-3xl">
+            <Eyebrow>How we can help</Eyebrow>
+            <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
               Choose the level of support that fits your firm
             </h2>
           </div>
@@ -465,10 +478,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* F.2 band 9. Already carries the literal /calculators anchor the
+          contract requires; band 10 (#calculators + CalculatorTabs) is NOT
+          built, it needs a new heading and standfirst (plan R7). */}
       <section className="bg-[var(--primary)] text-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">Free resources</p>
-          <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-white md:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold leading-tight text-white md:text-4xl">
             Tools and guides built specifically for UK law firms
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
@@ -476,31 +492,31 @@ export default function HomePage() {
           </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {!packagesMode ? (
-              <Link href="/free-firm-health-check" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+              <Link href="/free-firm-health-check" className={resourceCard}>
                 <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Diagnostic · 10 min</p>
-                <h3 className="font-serif text-base font-semibold text-white">Free firm health check</h3>
+                <h3 className="text-base font-semibold text-white">Free firm health check</h3>
                 <p className="mt-2 text-xs leading-relaxed text-white/75">
                   15+ solicitor-specific rules across SRA, FA 2014, BADR, structure, MTD.
                 </p>
               </Link>
             ) : null}
-            <Link href="/calculators" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+            <Link href="/calculators" className={resourceCard}>
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">6 calculators</p>
-              <h3 className="font-serif text-base font-semibold text-white">Law firm calculators</h3>
+              <h3 className="text-base font-semibold text-white">Law firm calculators</h3>
               <p className="mt-2 text-xs leading-relaxed text-white/75">
                 Valuation, FA 2014 test, LLP profit share, take-home, PII estimator, SRA reserve.
               </p>
             </Link>
-            <Link href="/solicitor-guides" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+            <Link href="/solicitor-guides" className={resourceCard}>
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">6 pillar guides</p>
-              <h3 className="font-serif text-base font-semibold text-white">Pillar guides</h3>
+              <h3 className="text-base font-semibold text-white">Pillar guides</h3>
               <p className="mt-2 text-xs leading-relaxed text-white/75">
                 SRA Accounts Rules, partnership vs LLP, post-merger, PII, COFA, fee-share vs equity.
               </p>
             </Link>
-            <Link href="/uk-solicitor-tax-rates" className="group block rounded-2xl border border-white/15 bg-white/5 p-6 transition-all hover:border-white hover:bg-white/10">
+            <Link href="/uk-solicitor-tax-rates" className={resourceCard}>
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Reference · 2025/26</p>
-              <h3 className="font-serif text-base font-semibold text-white">UK solicitor tax rates</h3>
+              <h3 className="text-base font-semibold text-white">UK solicitor tax rates</h3>
               <p className="mt-2 text-xs leading-relaxed text-white/75">
                 Income tax, NI, CT, BADR, dividend, CGT, plus legal-sector specifics.
               </p>
@@ -510,14 +526,14 @@ export default function HomePage() {
       </section>
 
       {packagesMode ? (
-        <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
+        <section className={`bg-slate-50 ${sectionY}`}>
           <div className={siteContainerLg}>
             <div className="mx-auto max-w-3xl">
               <div className="text-center">
                 <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
                   Get started
                 </p>
-                <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
+                <h2 className="mt-3 text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
                   {activeCta.home_cta.heading}
                 </h2>
                 <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
@@ -555,48 +571,47 @@ export default function HomePage() {
           </div>
         </section>
       ) : (
-        <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
-          <div className={siteContainerLg}>
-            <div className="mx-auto max-w-3xl">
-              <div className="text-center">
-                <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-                  Get started
-                </p>
-                <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-                  Book your free consultation
-                </h2>
-                <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
-                  Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs.
-                </p>
-              </div>
-
-              <div className="mt-10">
-                <LeadForm />
-              </div>
-            </div>
-          </div>
-        </section>
+        /* F.2 band 13. The live branch. `contained` rather than the navy
+           variant because the band directly above is the crimson resources
+           slab and the band below runs toward the navy footer: two dark fields
+           with no light between them read as one slab (LeadCTAPanel docstring).
+           Heading and body are the existing literals, moved byte for byte, and
+           `eyebrow` carries the existing "Get started" label so no string is
+           lost. No button is rendered: plan R6, an owner item.
+           `proofPoints` is deliberately EMPTY, see the receipt. */
+        <div id="book" className="scroll-mt-24">
+          <LeadCTAPanel
+            eyebrow="Get started"
+            title="Book your free consultation"
+            description="Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs."
+            proofPoints={[]}
+            form={<LeadForm />}
+            contained
+          />
+        </div>
       )}
 
 
-      <section className={sectionY}>
+      {/* F.2 band 14. The <details> becomes the phase-4 <dl> recipe: the same
+          two paragraphs, always rendered (they were already in the server HTML).
+          Not the kit FaqSection, per the phase-4 manager override. */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl">
-            <details className="card-premium">
-              <summary className="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--primary)]">
-                <span>Why do I need a specialist solicitor accountant?</span>
-                <span className="text-2xl text-[var(--accent)]">+</span>
-              </summary>
-              <div className="mt-4 space-y-4 text-sm leading-relaxed text-[var(--ink-soft)]">
+          <dl className="space-y-4">
+            <div className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
+              <dt className="text-lg font-semibold text-slate-900">
+                Why do I need a specialist solicitor accountant?
+              </dt>
+              <dd className="mt-4 space-y-4 text-sm leading-relaxed text-[var(--ink-soft)]">
                 <p>
                   Legal practices face unique accounting challenges that generalist accountants often don't understand. SRA Accounts Rules require strict client money handling, 5-week reconciliations, and annual Accountant's Reports. Partnership and LLP taxation involves complex profit allocations, drawings, and Basis Period Reform implications. VAT on legal services has specific rules around disbursements and counsel fees.
                 </p>
                 <p>
                   A specialist solicitor accountant understands these nuances, ensures regulatory compliance, and provides strategic advice on practice structure, succession planning, and tax optimization. With 26.2% of SRA firm closures due to accounting breaches, having specialist support isn't just helpful, it's essential for protecting your practicing certificate and optimizing your practice finances.
                 </p>
-              </div>
-            </details>
-          </div>
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
 

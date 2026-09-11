@@ -20,6 +20,7 @@ export function LeadCTAPanel({
   description,
   proofPoints,
   formTitle = "Book your free consultation",
+  formSubtitle,
   form,
   footnote,
   contained = false,
@@ -31,6 +32,14 @@ export function LeadCTAPanel({
   description: string;
   proofPoints: ProofPoint[];
   formTitle?: string;
+  /**
+   * Optional line under the form heading. Exists because a ported site had a
+   * live subline ("We will be in touch.") that adopting this panel would
+   * otherwise have deleted, and deleting published copy is not a design
+   * decision. Default undefined, so Property and every other consumer render
+   * byte-identically.
+   */
+  formSubtitle?: string;
   /**
    * The lead-capture form, rendered where Property's `<LeadForm>` sat.
    * Per-site; replaces `@/components/forms/LeadForm`, which is Property-only
@@ -75,6 +84,7 @@ export function LeadCTAPanel({
               description={description}
               proofPoints={proofPoints}
               formTitle={formTitle}
+              formSubtitle={formSubtitle}
               form={form}
               footnote={footnote}
             />
@@ -95,6 +105,7 @@ export function LeadCTAPanel({
           description={description}
           proofPoints={proofPoints}
           formTitle={formTitle}
+          formSubtitle={formSubtitle}
           form={form}
           footnote={footnote}
         />
@@ -119,6 +130,7 @@ function PanelBody({
   description,
   proofPoints,
   formTitle,
+  formSubtitle,
   form,
   footnote,
   dark = false,
@@ -128,6 +140,7 @@ function PanelBody({
   description: string;
   proofPoints: ProofPoint[];
   formTitle: string;
+  formSubtitle?: string;
   form: ReactNode;
   footnote?: ReactNode;
   dark?: boolean;
@@ -162,7 +175,7 @@ function PanelBody({
           ))}
         </ul>
         {footnote && (
-          <p className={`mt-6 max-w-md text-sm leading-relaxed ${dark ? "text-slate-400" : "text-slate-500"}`}>
+          <p className={`mt-6 max-w-md text-sm leading-relaxed ${dark ? "text-slate-400" : "text-slate-600"}`}>
             {footnote}
           </p>
         )}
@@ -171,7 +184,12 @@ function PanelBody({
       <div
         className={`rounded-xl bg-white p-6 sm:p-8 lg:p-10 ${dark ? "" : "ring-1 ring-slate-200 shadow-sm"}`}
       >
-        <h3 className="mb-4 text-xl font-bold text-slate-900 sm:mb-6 sm:text-2xl">{formTitle}</h3>
+        <h3 className={`text-xl font-bold text-slate-900 sm:text-2xl ${formSubtitle ? "mb-2" : "mb-4 sm:mb-6"}`}>
+          {formTitle}
+        </h3>
+        {formSubtitle ? (
+          <p className="mb-4 text-sm text-slate-600 sm:mb-6">{formSubtitle}</p>
+        ) : null}
         {form}
       </div>
     </div>

@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { btnPrimary, focusRing, siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
+import { btnPrimary, btnOnCream, focusRing, siteContainerLg, sectionY, heroCreamSurface } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildService, buildBreadcrumbJsonLd, buildFaqPage, buildOrganizationJsonLd, JsonLd } from "@/lib/schema/index";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 const TITLE = "Accountants for Solicitors and Lawyers UK | SRA, LLP + Partner Tax";
 const DESCRIPTION =
@@ -107,7 +110,6 @@ const PRICING_TIERS = [
   {
     name: "Essentials",
     eyebrow: "Sole practitioners + small firms",
-    monthly: "From £180/mo",
     description: "Compliance floor for sole practitioners and 2-3 fee-earner firms. SRA Accountant's Report, statutory accounts, partnership/personal SA, basic tax planning.",
     features: [
       "Statutory accounts + SA800 / personal SA",
@@ -119,7 +121,6 @@ const PRICING_TIERS = [
   {
     name: "Growth",
     eyebrow: "Mid-sized LLPs + multi-partner",
-    monthly: "From £450/mo",
     description: "For LLPs and partnerships scaling fee-earner headcount. Monthly management accounts, partner-level tax planning, salaried-partner audit, COFA support.",
     features: [
       "Everything in Essentials, plus:",
@@ -133,7 +134,6 @@ const PRICING_TIERS = [
   {
     name: "Specialist",
     eyebrow: "Practice sale + acquisition + complex",
-    monthly: "Bespoke",
     description: "Bespoke engagements: pre-sale planning, post-merger integration, ABS application support, complex partner structure design.",
     features: [
       "Practice valuation + pre-sale planning",
@@ -147,7 +147,6 @@ const PRICING_TIERS = [
 
 const INCLUDED = [
   "Direct line to the senior accountant working your file (no junior triage)",
-  "Same-day response on regulatory or SRA-deadline questions",
   "Fixed monthly fees, no hourly billing on routine work",
   "Quarterly partner / director review meeting included",
   "SRA Accounts Rules in plain English, not regulatory speak",
@@ -164,7 +163,7 @@ const FAQS = [
   {
     question: "Can you complete our SRA Accountant's Report?",
     answer:
-      "Yes. We are independent of your firm and qualified to deliver the SRA-mandated annual Accountant's Report under the Accounts Rules. The report must be filed within six months of your firm's accounting period end. We work to that deadline as the backstop and aim to issue clean reports 4-6 weeks ahead so any issues are surfaced early.",
+      "Yes. We are independent of your firm and qualified to deliver the SRA-mandated annual Accountant's Report under the Accounts Rules. The report must be filed within six months of your firm's accounting period end.",
   },
   {
     question: "We are an LLP. Do you handle the SA800 partnership return?",
@@ -232,25 +231,36 @@ export default function ServicesPage() {
     <>
       <JsonLd data={schemaPayload} />
 
-      {/* Hero */}
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <Breadcrumb items={breadcrumbItems} variant="light" />
-          <div className="mt-8 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">
+      {/* Hero. Cream ground plus the ledger motif, replacing the crimson slab:
+          the port's hero recipe, and it lets the breadcrumb and the secondary
+          button use the standard on-light treatments. Copy is byte-identical. */}
+      <section
+        className={`relative flex min-h-[350px] items-center overflow-hidden py-10 sm:py-12 lg:py-14 ${heroCreamSurface}`}
+      >
+        <SolicitorsBackdrop tone="cream" />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <div className="max-w-3xl">
+            <Breadcrumb items={breadcrumbItems} />
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-600">
               Specialist services
             </p>
-            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-3 text-3xl font-bold leading-[1.15] text-slate-900 sm:text-5xl lg:text-6xl">
               Accountants for UK solicitors and law firms
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
+            <p className="mt-4 text-base leading-7 text-slate-700 sm:mt-6 sm:text-lg">
               Specialist accountants for solicitors and lawyers across the whole of the UK. SRA Accounts Rules + accountant&apos;s report, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. We work with law firms only, on fixed monthly fees, with the senior accountant on your account answering your emails.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className={btnPrimary} style={{background: "white", color: "var(--primary)"}}>
+            <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
+              <Link
+                href="/contact"
+                data-cta="services_hero_book"
+                data-cta-placement="services"
+                data-cta-goal="form"
+                className={btnPrimary}
+              >
                 Book a free scoping call
               </Link>
-              <Link href="/free-firm-health-check" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold tracking-tight text-white backdrop-blur-sm transition-all hover:border-white/60 hover:bg-white/10">
+              <Link href="/free-firm-health-check" className={btnOnCream}>
                 Take the firm health check
               </Link>
             </div>
@@ -258,17 +268,18 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Pricing tiers */}
-      <section className="bg-[var(--surface)]">
+      {/* Engagement tiers. Slate ground, white cards: a card's ground opposes
+          its section's. */}
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--primary)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-700">
               How we engage
             </p>
-            <h2 className="mt-3 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">
               Three engagement tiers
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
               Most firms start on Essentials or Growth, depending on size and complexity. Specialist is bespoke for the harder transactions: sale, acquisition, post-merger.
             </p>
           </div>
@@ -276,10 +287,10 @@ export default function ServicesPage() {
             {PRICING_TIERS.map((tier) => (
               <div
                 key={tier.name}
-                className={`relative rounded-2xl border bg-white p-6 sm:p-7 ${
+                className={`relative rounded-xl bg-white p-6 shadow-sm sm:p-7 ${
                   tier.featured
-                    ? "border-[var(--primary)] shadow-lg ring-2 ring-[var(--primary)]/20"
-                    : "border-[var(--border)]"
+                    ? "shadow-lg ring-2 ring-[var(--primary)]/30"
+                    : "ring-1 ring-slate-200/70"
                 }`}
               >
                 {tier.featured && (
@@ -287,15 +298,14 @@ export default function ServicesPage() {
                     Most chosen
                   </div>
                 )}
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">
                   {tier.eyebrow}
                 </p>
-                <h3 className="mt-2 font-serif text-xl font-semibold text-[var(--ink)]">{tier.name}</h3>
-                <p className="mt-2 font-serif text-lg font-semibold text-[var(--primary)]">{tier.monthly}</p>
-                <p className="mt-4 text-sm leading-relaxed text-[var(--ink-soft)]">{tier.description}</p>
+                <h3 className="mt-2 text-xl font-bold text-slate-900">{tier.name}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-slate-600">{tier.description}</p>
                 <ul className="mt-6 space-y-2">
                   {tier.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-[var(--ink-soft)]">
+                    <li key={f} className="flex items-start gap-2 text-sm text-slate-600">
                       <span className="mt-1.5 inline-flex h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--primary)]" />
                       <span>{f}</span>
                     </li>
@@ -307,14 +317,15 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service cards */}
-      <section className="bg-[var(--background)]">
+      {/* Service cards. White ground, slate cards: the ground oscillates
+          against the band above. */}
+      <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--primary)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-700">
               What we cover
             </p>
-            <h2 className="mt-3 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">
               Six service areas, all legal-sector specific
             </h2>
           </div>
@@ -323,25 +334,25 @@ export default function ServicesPage() {
               <Link
                 key={s.title}
                 href={s.href}
-                className={`group block rounded-2xl border border-[var(--border)] bg-white p-6 transition-all hover:border-[var(--primary)] hover:shadow-md ${focusRing}`}
+                className={`group block rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 transition-all hover:shadow-md hover:ring-[var(--primary)]/40 ${focusRing}`}
               >
-                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)] mb-2">
+                <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">
                   {s.eyebrow}
                 </p>
-                <h3 className="font-serif text-lg font-semibold text-[var(--ink)] group-hover:text-[var(--primary)]">
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700">
                   {s.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">{s.description}</p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">{s.description}</p>
                 <ul className="mt-4 space-y-1.5">
                   {s.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-xs text-[var(--muted)]">
+                    <li key={f} className="flex items-start gap-2 text-xs text-slate-500">
                       <span className="mt-1.5 inline-flex h-1 w-1 flex-shrink-0 rounded-full bg-[var(--primary)]" />
                       <span>{f}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4 text-sm font-semibold text-[var(--primary)] group-hover:underline">
-                  Learn more →
+                <p className="mt-4 text-sm font-semibold text-primary-700 group-hover:underline">
+                  Learn more &rarr;
                 </p>
               </Link>
             ))}
@@ -349,74 +360,93 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* What's included */}
-      <section className="bg-white border-y border-[var(--border)]">
+      {/* What's included. siteContainerLg is the measure, so the old
+          max-w-4xl clamp nested inside it is gone. */}
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--primary)]">
-                Every engagement includes
-              </p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-                Standard across all tiers
-              </h2>
-            </div>
-            <ul className="mt-10 grid gap-4 sm:grid-cols-2">
-              {INCLUDED.map((item) => (
-                <li key={item} className="flex items-start gap-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4">
-                  <span className="mt-1 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--primary)] text-xs font-bold text-white">
-                    ✓
-                  </span>
-                  <span className="text-sm leading-relaxed text-[var(--ink-soft)]">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="bg-[var(--background)]">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-center font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-              Frequently asked
-            </h2>
-            <dl className="mt-10 space-y-5">
-              {FAQS.map((f) => (
-                <div key={f.question} className="rounded-2xl border-l-4 border-[var(--primary)] bg-white p-6 sm:p-7">
-                  <dt className="font-serif text-lg font-semibold text-[var(--ink)]">{f.question}</dt>
-                  <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
-                    {f.answer}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-serif text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">
-              Talk to a legal-sector specialist
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">
-              30-minute scoping call. We&apos;ll tell you which engagement tier fits, what the fee would be, and whether the change is worth making. No drip sequence, no follow-up chase.
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-700">
+              Every engagement includes
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/contact" className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--primary)] transition-colors hover:bg-white/90">
+            <h2 className="mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">
+              Standard across all tiers
+            </h2>
+          </div>
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {INCLUDED.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 rounded-xl bg-white p-4 ring-1 ring-slate-200/70"
+              >
+                <span className="mt-1 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--primary)] text-xs font-bold text-white">
+                  &#10003;
+                </span>
+                <span className="text-sm leading-relaxed text-slate-600">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* FAQ. White ground, slate cards, no body clamp. */}
+      <section className="bg-white">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <h2 className="text-center text-2xl font-bold text-slate-900 sm:text-3xl">
+            Frequently asked
+          </h2>
+          <dl className="mt-10 grid gap-5 lg:grid-cols-2">
+            {FAQS.map((f) => (
+              <div
+                key={f.question}
+                className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-7"
+              >
+                <dt className="text-lg font-bold text-slate-900">{f.question}</dt>
+                <dd className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+                  {f.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {/* Closing ask. Contained variant on a slate ground rather than the
+          full-bleed navy band: this is the last section before the slate-900
+          footer and navy must never touch navy. Heading and description are
+          the old crimson band's own strings, byte for byte, and both of its
+          links survive in the footnote so no href moves. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Free scoping call"
+          title="Talk to a legal-sector specialist"
+          description="30-minute scoping call. We'll tell you which engagement tier fits, what the fee would be, and whether the change is worth making. No drip sequence, no follow-up chase."
+          proofPoints={[]}
+          formTitle="Book your free call"
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />}
+          contained
+          ground="slate"
+          footnote={
+            <>
+              <Link
+                href="/contact"
+                data-cta="services_book"
+                data-cta-placement="services"
+                data-cta-goal="form"
+                className="font-semibold text-primary-700 hover:underline"
+              >
                 Book your scoping call
               </Link>
-              <Link href="/free-firm-health-check" className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/10">
+              {" \u00b7 "}
+              <Link
+                href="/free-firm-health-check"
+                className="font-semibold text-primary-700 hover:underline"
+              >
                 Take the health check
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+            </>
+          }
+        />
+      </div>
     </>
   );
 }

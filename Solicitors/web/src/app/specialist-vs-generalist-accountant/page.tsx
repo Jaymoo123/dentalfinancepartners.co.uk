@@ -47,14 +47,14 @@ const COMPARISON = [
   {
     item: "Fee structure",
     specialist: "Fixed monthly fee, scoped to firm size. Specialist work (sale, acquisition, ABS) priced separately as one-off engagement.",
-    generalist: "Hourly billing common. Total annual cost often higher than specialist due to the inefficiency of learning legal-sector basics.",
+    generalist: "Hourly billing common.",
   },
 ];
 
 const FAQS = [
   {
     question: "Are specialist accountants more expensive?",
-    answer: "Often no. Specialist fees are typically £180-£1,800/month depending on firm size; generalist fees vary widely and are often higher in total because of hourly billing on legal-sector items the generalist needs to learn. The fee gap to a specialist is usually smaller than the value of one missed planning point (BADR timing, Section 162 incorporation, FA 2014 capital structuring).",
+    answer: "Often no. Generalist fees vary widely because of hourly billing on legal-sector items the generalist needs to learn.",
   },
   {
     question: "How do I find a legal-sector-specialist accountant?",
