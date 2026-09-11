@@ -44,11 +44,25 @@
 > **Next:** owner gate (swatch, warning ladder, pricing policy, retirements), then Phase 1.
 >
 > **CORRECTION to this file, 2026-09-11.** The Onboarding section below says "Bing: 0 rows
-> ingested for dentists". That is FALSE and was verified false directly: `bing_query_data`
-> holds **19,226 rows for dentists, 2026-06-03 to 2026-09-07**. Over the last 28 days
-> **Bing sent 1,682 clicks against Google's 109**, a ~15x split and the widest on the
-> estate. Any before-and-after read on this port is a Bing read first. The stale line is
-> struck in place below rather than deleted.
+> ingested for dentists". That is FALSE: `bing_query_data` holds **19,226 rows for dentists,
+> 2026-06-03 to 2026-09-07**. Ingestion is live and current. The stale line is struck in
+> place below rather than deleted.
+>
+> **AND A CORRECTION TO THE CORRECTION, same day, recorded because the wrong number was
+> briefly reported to the owner as verified.** An earlier read of this claimed Bing sent
+> 1,682 clicks against Google's 109 over 28 days, a ~15x split. **That was WRONG.** It came
+> from `SUM(clicks)` over `bing_query_data`, which holds weekly SNAPSHOT buckets of
+> per-query rows: 8,523 rows across only **4 distinct dates**, so the sum counts the same
+> clicks roughly four times and is not a site total at all. This is the documented trap
+> (memory `bing_query_stats_topn_trap`: only `GetRankAndTrafficStats` gives site totals) and
+> the Bing-side twin of the standing "never SUM `gsc_query_data`" rule.
+>
+> **The true figures, pulled fresh from the APIs 2026-09-11:** 28 days, Google **131 clicks
+> / 14,188 impressions** against Bing **109 clicks / 4,954 impressions**. 90 days: Google
+> 320 against Bing 309. Google leads on clicks; Bing earns ~83% of them off a third of the
+> impressions, so it is a strong second channel and must be in any before-and-after read,
+> but it is NOT the dominant one and no decision should be taken as if it were.
+> Evidence and per-route detail: `docs/dentists/_port/SEARCH_EVIDENCE.md`.
 
 The single living state doc for the Dentists site (Dental Finance Partners). The
 methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
@@ -106,7 +120,7 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - Discovery engine: `scripts/topic_gap_finder.py` / `topic_gap_filter.py` generalised + `sites/dentists.discovery.json` (competitors SERP-derived; + architecture/tools + sitemap-lastmod harvest). Producing `docs/dentists/topic_gaps_first_cut.md`.
 
 **Deferred / not on the net-new critical path**
-- ~~Bing: 0 rows ingested for dentists. Needed for the rewrite ROI worklist later, not for net-new (which feeds off competitor crawls). Set up Bing Webmaster + ingest before running the rewrite engine here.~~ **STRUCK 2026-09-11: FALSE.** Ingestion is live and current: 19,226 rows, 2026-06-03 to 2026-09-07, and Bing outperforms Google here 1,682 clicks to 109 over 28 days. Nothing needs setting up. See the PICKUP block at the top of this file.
+- ~~Bing: 0 rows ingested for dentists. Needed for the rewrite ROI worklist later, not for net-new (which feeds off competitor crawls). Set up Bing Webmaster + ingest before running the rewrite engine here.~~ **STRUCK 2026-09-11: FALSE.** Ingestion is live and current: 19,226 rows, 2026-06-03 to 2026-09-07. Nothing needs setting up. Bing is a strong second channel (28d: 109 clicks against Google's 131), NOT the dominant one; an earlier claim of a 15x Bing lead was a summing error over weekly snapshot rows and is corrected in the PICKUP block at the top of this file.
 - Formal `/run-netnew-wave <site> <wave>` conductor command: codify after the proving wave from real experience. Driving Wave 1 manually as conductor for now.
 - `SITE_RULES[dentists]` (competitor/brief_for_opus.py) + `CORE_PAGES[dentists]` (corepage/config.py): add when first running the rewrite / core-page engines for dentists.
 
