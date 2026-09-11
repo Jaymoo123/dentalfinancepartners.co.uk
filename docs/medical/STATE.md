@@ -6,7 +6,7 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-10 (design port Phase 0; nothing deployed since 2026-08-26).
+Last updated: 2026-09-11 (design port Phase 2; nothing deployed since 2026-08-26).
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
 
@@ -180,6 +180,150 @@ any restart, fetch the CSS hash the served HTML references and confirm the serve
 `<title>` came back as "Accountants for Solicitors UK". 3111 and 3121 were occupied by
 earlier ports too. Medical was captured on 3141 after asserting the title. The assertion
 the Solicitors run added has now saved a measurement on two consecutive sites.
+
+## 2026-09-11 - DESIGN PORT PHASE 2 (the chrome). Built, reviewed three times, fixed. Nothing deployed.
+
+Phase 2 moved the site chrome to the shared design kit. Phase 1 had built the token layer,
+`src/lib/nav.ts`, `MedicalBackdrop.tsx` and the stethoscope mark but mounted none of them;
+they are mounted now.
+
+**What landed:** `components/layout/PageShell.tsx` rewritten as per-site wiring around
+`@accounting-network/web-shared/design/chrome/PageShell`, so no chrome markup lives in the
+site any more; `SiteHeader.tsx` (208 lines), `SiteFooter.tsx` (72 lines) and
+`brand/BrandWordmarkHomeLink.tsx` (41 lines) DELETED; `app/layout.tsx` passes
+`nav={buildPrimaryNav()}` built server-side, so the tool registry never reaches the client
+bundle; the duplicate `<StickyCTA />` mount removed from `app/page.tsx`, which is the live
+defect Phase 0 recorded (`/` rendered two stacked fixed bars and dismissing one left the
+other); `niche.config.json` `footer_links` cut from 12 entries to the 3 legal ones (Privacy
+policy, Terms, Cookie policy) with the other 9 re-homed into footer columns derived from the
+same nav the header uses, all 9 verified present in the rendered footer on 6 route types;
+the bare `a` colour block in `globals.css` moved inside `@layer base` plus two new tokens;
+`src/tests/nav-active-state.test.ts` added, consuming the estate guard
+`packages/web-shared/design/guards/nav-active-state.ts` against this site's real built nav
+(Medical has three shared stems, `/blog/*`, `/medical-guides/*`, `/for-*`, so the regression
+it guards is not hypothetical here); a describe-level 30s timeout on
+`api/leads/submit/lead-submit-route.test.ts`. Two additive kit edits, every default
+preserving Property byte-for-byte: `web-shared/leads/MiniCapture.tsx` and
+`web-shared/components/ServiceTiers.tsx`.
+
+StickyCTA cadence is UNCHANGED and deliberately stays site-wide (gate M1 owner default).
+Narrowing it mid-port would make the before/after conversion read unusable.
+
+**Wiring values, stated because they are live analytics segmentation:**
+- `ctaIds` kept verbatim: primary `nav-book-call`, mobilePrimary `mobile-nav-book-call`,
+  secondary `header_nav_secondary`. The mixed hyphen/underscore convention is pre-existing.
+- `ctaContactGoal: "contact"`. The pre-port header computed "contact" for the /contact
+  href; the kit literal is "form". Letting it flip would split this site's own
+  `vw_cta_performance` history at the port boundary.
+- `ctaMobilePlacement: "header_mobile"`. Pre-port the drawer primary emitted NO placement at
+  all, so any value is new rather than flipped, and `header_mobile` is this site's own
+  convention, already emitted by its drawer secondary. Header `data-cta-placement="header"`
+  is likewise NEW on `nav-book-call`, for the same reason.
+- `showBuilderCredit: true`, per the owner decision of 2026-09-11.
+- `resourcesHref: "/medical-guides"`; `companyItems` = About, Contact, Locations.
+- Wordmark strings kept verbatim from the retired component: top "Medical", bottom
+  "Accountants UK". `DISPOSITION_SLICE1.md` A.4 says to pass "Medical Accountants" / "UK";
+  that was wrong. The kit builds the home link's accessible name from these strings
+  (WCAG 2.5.3).
+- No `wordmarkAccentColor`: unlike Solicitors, Medical has no two-reds problem, because the
+  button already renders on `--btn-ground` rather than the raw brand hex.
+
+**The find of the phase, and it is the one to carry to every other site.** The footer's
+invisible navy-on-navy links (measured 1.00 in the Phase 0 baseline) were NOT a footer
+defect. `globals.css` carried `a { color: var(--navy) }` OUTSIDE any CSS layer. Tailwind v4
+emits every utility into a layer, and an UNLAYERED rule beats a layered one whatever the
+specificity, so that one rule beat `text-slate-300`, `text-white` and every other colour
+utility on every `<a>` on the site. It was also painting the header's primary CTA label navy
+on the copper ground at 3.49. Moving the block inside `@layer base` fixed both. Property
+carries no bare `a` rule at all, which is why the kit chrome assumes the utility wins.
+Deriving command: `grep -nE "^[a-zA-Z][^{]*\{" Medical/web/src/app/globals.css` lists every
+unlayered element rule. Still unlayered here and deliberately left to the phase that owns
+forms and tables: `input, textarea, select` (it sets `border-radius: 8px`, so it also beats
+the radius system Phase 1 shipped) and `table, th, td, tr:hover`. Also `.hero-brand`, an
+unlayered CLASS rule, same hazard.
+
+**The layer fix had two consequences that three adversarial reviews caught and the
+instruments did not:**
+- The "Privacy Policy" link in the shared MiniCapture consent notice, i.e. the legally
+  required data-sharing disclosure, had been rendering navy only because of the bug. Once
+  the bug went it rendered brand copper `#b87333` at 3.79 on white, under the 4.5 floor, on
+  98 of 138 routes. `--copper-strong` was tried first and measured only 4.34 on the
+  MiniCapture slate-50 panel, so the fix uses `--copper-deep` `#7d4b22`, the token Phase 1
+  minted for exactly that case.
+- The featured tier CTA "Get in touch" in the shared `ServiceTiers`, the primary conversion
+  button on `/` and `/services`, went from navy-on-copper to white-on-copper 3.79, still
+  under the floor. Fixed by painting its ground with `--btn-ground` `#a0622b`, which is what
+  every other button on the site already uses.
+
+**Two new kit tokens, both CSS custom properties read through a Tailwind arbitrary value
+with a fallback, so a site that does not define them renders byte-identically.** Property
+defines neither. Registered in playbook section 8 item 11 in the same commit.
+- `--brand-primary-text`, read by `MiniCapture.tsx` at the Privacy Policy consent link and
+  the two "Step N of 2" eyebrows as `text-[var(--brand-primary-text,var(--brand-primary))]`.
+  Medical sets it to `--copper-deep`. 9 sites import MiniCapture; only Medical defines it.
+- `--brand-primary-ground`, read by `ServiceTiers.tsx` at the "Most popular" badge and the
+  featured tier CTA as `bg-[var(--brand-primary-ground,var(--brand-primary))]`. Medical sets
+  it to `--btn-ground`.
+The rule both encode: a mid-tone brand hex can clear the 3:1 graphics floor and fail the
+4.5:1 text floor, so one brand token cannot serve graphic, text-on-white and
+ground-under-white-text roles at once.
+
+**Verification, all re-run after the last change, all with the COMMITTED instruments at
+`docs/_engines/instruments/`:**
+- Sweep (`--site=Medical --base=http://localhost:3141 --sample=9999 --article-depth=2`
+  against `docs/medical/_port/link_baseline.json`): **138/138 URLs clean, 0/5 internal links
+  dead, 0 LINK-FLOOR breaches (5,234 links total), 0 `data-cta` regressions (308 total), 0
+  dash regressions (59 total)**. The link total rises from the 3,836 baseline because the
+  grouped header dropdowns and the derived footer columns are new crawlable links; no route
+  lost a link.
+- `browser_check.mjs` at 390 / 768 / 1024 / 1440: **zero horizontal overflow. Footer links
+  measure 12.00 on the navy ground against the 1.00 in the Phase 0 baseline**, which was
+  this phase's binding acceptance test. Instrument self-test OK (slate-500/white 4.76,
+  slate-400/white 2.56).
+- `next build` exit 0, **163 pages, identical to the count at the production SHA**.
+- `tsc --noEmit` clean. **Medical 454 tests passing** (451 before, plus the 3 new nav guard
+  tests). `packages/web-shared` 406 tests passing.
+- `python scripts/check_dependency_closure.py` -> dependency closure OK across 19 sites.
+
+**Noise generated: none.** Nothing pushed, no CI run, no deploy.
+
+**Known and carried forward, not fixed in Phase 2:**
+- Homepage copper paragraphs and category chips measure 3.62 and 3.79 against a 4.5 floor.
+  Pre-existing (the Phase 0 baseline records the same elements at 3.50). They are `<p>` and
+  `<span>`, not links, and the homepage belongs to a later phase.
+- `#main` has `scroll-margin-top: 0` where the instrument wants >= 96px, and it fires on
+  blog routes. Pre-existing: the pre-port local PageShell had no scroll margin either. The
+  fix belongs in the shared kit shell, which two other sites are mid-port on.
+- The kit header emits no `aria-current="page"`; active nav state is colour and border only.
+  Pre-existing, and the new guard test guards the visual state only.
+- The kit drawer has no secondary-CTA slot, so `header_mobile_secondary` is now
+  unrenderable. It never rendered pre-port either: both pre-port secondaries were gated on
+  `activeCta.header_secondary` and neither cta variant defines one. Nothing was lost, but if
+  the site ever switches to the `packages` variant the series would stay dark.
+- Under the `packages` variant the kit computes the secondary CTA goal from the href, where
+  the pre-port header hardcoded "contact". Latent, because the variant is not in use.
+- The two "Step N of 2" eyebrows in MiniCapture never render on Medical: the multi-step form
+  is behind `NEXT_PUBLIC_MINIFORMS_MULTISTEP`, which is not set. That part of the fix is
+  correct by construction but unverified in a rendered page on this site.
+- The footer's sister-site cards (outbound links to dentalfinancepartners.co.uk and
+  accountsforlawyers.co.uk) are gone. **That is owner decision 3, deliberate**, and it cost
+  zero internal links because both were cross-domain. A re-reviewer flagged it as a silent
+  drop; it was decided, so do not re-open it.
+
+**Process note, and it cost the phase a whole set of numbers.** The committed instruments
+live at `docs/_engines/instruments/`, NOT in `scripts/`. The builder searched `scripts/`
+first, did not find them, wrote a private crawler, and reported link and dash numbers nobody
+could reproduce: 5,786 links and a 122/52 dash pair against the instrument's 5,234 and 59. A
+reviewer caught it. **Use the committed instrument, pass your own `--out`, and never report
+a number from a hand-rolled crawler.**
+
+**Three further process notes, all recorded in `docs/_engines/PORT_FIELD_NOTES.md`:**
+git-bash on Windows rewrites route arguments beginning with "/" into Windows paths, so
+prefix with `MSYS_NO_PATHCONV=1`; a backgrounded `next start` can bind the port while the
+harness reports the command as failed, so kill by PID from `netstat -ano | grep ":PORT "`
+and `taskkill //PID <pid> //F`; re-editing `niche.config.json` by parsing and re-dumping
+JSON rewrites every escaped character in the file, so edit the lines and never round-trip
+it.
 
 ---
 

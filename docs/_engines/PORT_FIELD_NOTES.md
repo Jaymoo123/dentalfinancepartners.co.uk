@@ -100,9 +100,11 @@ RULE: derive the consumer list, fix every consumer in the same commit.
 **2026-09-10. The kit footer ships Property's designer credit to whatever site adopts it.**
 A followed outbound link to the design studio, in their indigo/orange gradient, on every
 page. Two sites shipped it without anyone deciding to.
-RULE: pass `showBuilderCredit={false}` unless the studio designed your site. Audit any
-adopted component for outward-facing content generally: external links, third-party assets,
-brand names, `rel` attributes. Playbook trap T27.
+~~RULE: pass `showBuilderCredit={false}` unless the studio designed your site.~~
+**CORRECTED 2026-09-11, owner decision (commit `6966c1f1`): the credit is wanted estate-wide,
+on every ported site. Pass `true`, which is also the kit default.** The rest of the entry
+stands. RULE: audit any adopted component for outward-facing content generally: external
+links, third-party assets, brand names, `rel` attributes. Playbook trap T27.
 
 **Standing rule for kit edits.** Additive only. Every new prop defaults to Property's exact
 current behaviour. Record the prop in playbook section 8 item 11 in the SAME commit, so the
@@ -181,6 +183,43 @@ Every one was caught by an agent told to contradict the brief, and every one was
 
 RULE unchanged, now with eleven instances behind it: the previous port's blueprint is a
 hypothesis. Phase 0 re-derives. An agent that never contradicts the brief is not reading it.
+
+
+**2026-09-11, Medical. The biggest find of that port, and it is a site-level CSS hazard the
+kit chrome silently assumes away: an UNLAYERED element rule beats every Tailwind utility.**
+`Medical/web/src/app/globals.css` carried `a { color: var(--navy) }` outside any CSS layer.
+Tailwind v4 emits every utility into a layer, and an unlayered rule wins over a layered one
+whatever the specificity, so that one declaration beat `text-slate-300`, `text-white` and
+every other colour utility on every `<a>` on the site. Two visible consequences: the footer's
+navy-on-navy links at ratio 1.00, which had been mis-filed for a phase as a footer defect,
+and the header's primary CTA label painted navy on the copper ground at 3.49. Moving the
+block inside `@layer base` fixed both. **Property carries no bare `a` rule at all, which is
+exactly why the kit chrome is written assuming the utility wins.**
+Deriving command, run it in Phase 0 on any site:
+`grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css` lists every unlayered element
+rule. Unlayered CLASS rules (Medical has `.hero-brand`) carry the same hazard and that regex
+does catch them.
+Also worth knowing: the hazard is not only colour. Medical's unlayered
+`input, textarea, select` sets `border-radius: 8px`, so it silently beats the radius system
+the token phase had just shipped.
+RULE: audit `globals.css` for unlayered rules BEFORE blaming a ported component for a
+contrast or radius defect, and before patching the component. The fix is one `@layer base`
+wrapper, and patching the symptom leaves every other `<a>` on the site still wrong.
+
+**2026-09-11, Medical. Fixing that layer bug UNCOVERS defects it was hiding, including a
+legal one.** The consent notice's "Privacy Policy" link in the shared
+`packages/web-shared/leads/MiniCapture.tsx`, i.e. the required data-sharing disclosure, had
+been readable only because the bug forced it navy. With the bug gone it rendered the brand
+copper `#b87333` at 3.79 on white, under the 4.5 floor, on 98 of 138 routes. The featured
+tier CTA in the shared `ServiceTiers`, the site's primary conversion button, went from
+navy-on-copper to white-on-copper at the same 3.79. Neither was caught by an instrument;
+three adversarial reviews caught them.
+RULE: after removing a global colour override, re-measure every surface that was inheriting
+it, shared kit components first. And the general rule both fixes encode: **a mid-tone brand
+hex can clear the 3:1 graphics floor and fail the 4.5:1 text floor, so one brand token
+cannot serve graphic, text-on-white and ground-under-white-text roles at once.** Medical
+mints `--brand-primary-text` and `--brand-primary-ground` for the other two roles; see
+playbook section 8 item 11.
 
 ---
 
@@ -285,6 +324,44 @@ and its deriving command; a baseline without them is invalid for link-floor purp
 writes the file.
 RULE: pass `--sha=<production sha>`. The warning is easy to scroll past, and the artefact it
 leaves behind looks complete.
+
+**2026-09-11, Medical. The committed instruments live at `docs/_engines/instruments/`, NOT in
+`scripts/`, and a builder who cannot find them will write their own.** That is what happened:
+a private crawler produced 5,786 links and a 122/52 dash pair against the committed
+instrument's 5,234 and 59, and those numbers went into a phase report nobody could reproduce.
+A reviewer caught it.
+Deriving command: `ls docs/_engines/instruments/` (`sweep.mjs`, `browser_check.mjs`).
+RULE: use the committed instrument, pass your own `--out` so you do not clobber a sibling
+port's artefact, and never report a link, CTA or dash number from a hand-rolled crawler. If
+an instrument seems to be missing, look in `docs/_engines/` before writing one.
+
+**2026-09-11, Medical. Confirmation of the Trade MSYS finding, on a second site and a second
+instrument.** Under git-bash on Windows, any argument beginning with `/` is rewritten into a
+Windows path, so `browser_check.mjs / /services` silently crawls `C:/Program Files/Git/` and
+`C:/Program Files/Git/services` and fails every navigation.
+RULE unchanged and now twice-observed: prefix with `MSYS_NO_PATHCONV=1`.
+
+**2026-09-11, Medical. A backgrounded `next start` can bind the port while the harness reports
+the command as FAILED.** A later start then fails with EADDRINUSE against your own orphan,
+which reads as another port's server holding the port.
+Deriving and clearing commands: `netstat -ano | grep ":<PORT> "` for the PID, then
+`taskkill //PID <pid> //F`, then re-check the port is free BEFORE starting again.
+RULE: a failed-looking start is not proof that nothing is listening. Check the port, not the
+exit code. This sits alongside the `pkill -f` note: on Windows neither the harness's exit
+status nor `pkill` tells you the truth about a `next start`.
+
+**2026-09-11, Medical. A contrast instrument that cannot resolve `oklch()` reports garbage,
+and the committed one tells you whether it can.** It self-tests and prints the result
+(slate-500 on white 4.76, slate-400 on white 2.56).
+RULE: read the self-test line before quoting any ratio. If you write any colour check
+yourself, convert by drawing the colour on a canvas and reading the pixel back, and self-test
+against those two known values.
+
+**2026-09-11, Medical. Never re-edit a `niche.config.json` by parsing and re-dumping the
+JSON.** A round-trip rewrites every escaped character in the file: a pound sign stored as
+`\u00c2\u00a3` comes back as mojibake, and a 36-line deletion showed up in the diff as 77
+insertions and 55 deletions, which is unreviewable and hides whatever else changed.
+RULE: edit the lines in place. The same applies to any hand-authored JSON in this repo.
 
 ---
 

@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
+import { buildPrimaryNav } from "@/lib/nav";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
@@ -107,7 +108,7 @@ export default function RootLayout({
           >
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
             <IntentProvider>
-              <PageShell>{children}</PageShell>
+              <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
               <ReturningBar />
               <DeepScrollModal />
             </IntentProvider>

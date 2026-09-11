@@ -3,6 +3,14 @@ import Link from "next/link";
 /**
  * Config-driven service-tier cards, extracted from Property's
  * ServiceTiers.tsx (Property stays frozen; this is a parameterised copy).
+ * --brand-primary-ground: OPTIONAL per-site override for the two places the
+ * brand colour is a GROUND under white text (the "Most popular" badge and the
+ * featured tier CTA). Falls back to --brand-primary, so every site that does
+ * not define it renders byte-identically, Property included. It exists because
+ * a mid-tone brand hex can pass the 3:1 graphics floor and fail the 4.5:1 text
+ * floor underneath a white label: Medical's copper #b87333 measures 3.79 that
+ * way, and the featured CTA is the primary conversion button on / and /services.
+ *
  * Brand colour comes from the per-site `--brand-primary` CSS token,
  * matching the MiniCapture extraction pattern (ec38f821).
  */
@@ -40,7 +48,7 @@ export function ServiceTiers({ tiers, featuredBadge = "Most Popular" }: ServiceT
         >
           {tier.featured && featuredBadge && (
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <div className="bg-[var(--brand-primary)] px-4 sm:px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
+              <div className="bg-[var(--brand-primary-ground,var(--brand-primary))] px-4 sm:px-6 py-1.5 text-xs font-bold text-white uppercase tracking-wider whitespace-nowrap">
                 {featuredBadge}
               </div>
             </div>
@@ -62,7 +70,7 @@ export function ServiceTiers({ tiers, featuredBadge = "Most Popular" }: ServiceT
               href={tier.ctaHref}
               className={`w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold transition-all border-t-4 mt-auto min-h-[44px] flex items-center justify-center ${
                 tier.featured
-                  ? "bg-[var(--brand-primary)] border-black/25 text-white hover:opacity-90 active:border-t-2 active:translate-y-0.5"
+                  ? "bg-[var(--brand-primary-ground,var(--brand-primary))] border-black/25 text-white hover:opacity-90 active:border-t-2 active:translate-y-0.5"
                   : "bg-slate-50 border-slate-300 text-slate-900 hover:bg-slate-100 hover:border-[var(--brand-primary)] active:border-t-2 active:translate-y-0.5"
               }`}
             >

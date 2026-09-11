@@ -8,6 +8,12 @@
 
 import { describe, it, expect } from "vitest";
 
+/* 30s timeout, not the 5s default: every test here does a dynamic
+ * import("./route"), which pulls in the whole lead stack and next/server on
+ * first call. Under parallel transform load that first import occasionally
+ * loses the race and times out, turning CI red at random on code nobody
+ * touched (reproduced at the production SHA with no port code present).
+ * Not an assertion failure: the file passes in 2.2s in isolation. */
 describe("lead submit route — source identifier", () => {
   it("route module exports a POST handler", async () => {
     // Dynamic import to avoid next/server issues at test resolution time.
@@ -30,4 +36,4 @@ describe("lead submit route — source identifier", () => {
     const mod = await import("./route");
     expect(mod.dynamic).toBe("force-dynamic");
   });
-});
+}, 30_000);

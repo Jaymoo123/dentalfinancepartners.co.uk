@@ -427,11 +427,17 @@ export function MiniCapture({
     onSuccess?.();
   }
 
+  /* --brand-primary-text: OPTIONAL per-site override for the brand colour where it
+     carries TEXT on white rather than a graphic. Falls back to --brand-primary, so
+     every site that does not define it renders byte-identically (Property included).
+     It exists because a mid-tone brand hex can clear the 3:1 graphics floor and fail
+     the 4.5:1 text floor: Medical's copper #b87333 measures 3.79 on white, and this
+     link is the data-sharing disclosure, so it is the one link that must be legible. */
   // Consent is acknowledgement-by-submission (owner decision 2026-07-17): notice text only, no checkbox.
   const consentNotice = (
     <p className="text-xs leading-relaxed text-slate-500">
       {siteConfig.consentText} See our{" "}
-      <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-[var(--brand-primary)] underline">Privacy Policy</a>.
+      <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-[var(--brand-primary-text,var(--brand-primary))] underline">Privacy Policy</a>.
     </p>
   );
 
@@ -474,7 +480,7 @@ export function MiniCapture({
           <div className="overflow-hidden">
             <div hidden={step !== 0} className={step === 0 ? activeClass : undefined}>
               <div className="space-y-4">
-                <p ref={step1HeaderRef} tabIndex={-1} className="text-xs font-semibold uppercase tracking-wide text-[var(--brand-primary)] outline-none">
+                <p ref={step1HeaderRef} tabIndex={-1} className="text-xs font-semibold uppercase tracking-wide text-[var(--brand-primary-text,var(--brand-primary))] outline-none">
                   Step 1 of 2, about you
                 </p>
                 <div>
@@ -546,7 +552,7 @@ export function MiniCapture({
             </div>
             <div hidden={step !== 1} className={step === 1 ? activeClass : undefined}>
               <div className="space-y-4">
-                <p ref={step2HeaderRef} tabIndex={-1} className="text-xs font-semibold uppercase tracking-wide text-[var(--brand-primary)] outline-none">
+                <p ref={step2HeaderRef} tabIndex={-1} className="text-xs font-semibold uppercase tracking-wide text-[var(--brand-primary-text,var(--brand-primary))] outline-none">
                   Step 2 of 2, contact details
                 </p>
                 <div>

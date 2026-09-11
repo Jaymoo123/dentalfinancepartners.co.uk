@@ -366,6 +366,24 @@ Before starting a site, capture and put in the prompts:
       the kit wordmark and the CTA were visibly different reds. The FOOTER lockup is
       deliberately out of scope: it sits on slate-900 where a mid-tone brand hex fails
       contrast and the `primary-400` step is correct.
+    - `--brand-primary-text` (CSS custom property, added 2026-09-11, Medical Phase 2) — read
+      by `packages/web-shared/leads/MiniCapture.tsx` at the Privacy Policy consent link and
+      the two "Step N of 2" eyebrows, as
+      `text-[var(--brand-primary-text,var(--brand-primary))]`. It is the step of the brand
+      colour that is safe when the brand colour carries TEXT rather than a graphic. A site
+      that does not define it renders byte-identically, and Property does not define it. 9
+      sites import MiniCapture; only Medical defines the token, to `--copper-deep` `#7d4b22`,
+      because brand copper `#b87333` measures 3.79 on white against the 4.5 floor.
+    - `--brand-primary-ground` (CSS custom property, added 2026-09-11, Medical Phase 2) —
+      read by `packages/web-shared/components/ServiceTiers.tsx` at the "Most popular" badge
+      and the featured tier CTA, as `bg-[var(--brand-primary-ground,var(--brand-primary))]`.
+      It is the step of the brand colour that is safe as a GROUND under a white label.
+      Fallback identical, Property does not define it; Medical sets it to `--btn-ground`
+      `#a0622b`. The arbitrary utility with a comma inside `var()` is confirmed emitted by
+      Tailwind 4.3.0, verified in the built CSS.
+      **The rule both tokens encode, and it generalises to every site:** a mid-tone brand hex
+      can clear the 3:1 graphics floor and fail the 4.5:1 text floor, so one brand token
+      cannot serve graphic, text-on-white and ground-under-white-text roles at once.
     **Who actually consumes this component, corrected 2026-09-10:** the kit CHROME is
     imported by the ported sites only (generalist, Solicitors, and Medical when it
     lands). **Property is NOT a consumer**: it keeps its own local `SiteHeader` and

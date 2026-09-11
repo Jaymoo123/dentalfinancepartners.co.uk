@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnPrimary, btnSecondary, focusRing, focusRingOnDark, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug } from "@/lib/blog";
@@ -218,7 +217,6 @@ export default function HomePage() {
 
   return (
     <>
-      <StickyCTA />
       {/* Organization now ships site-wide from the root layout. */}
       {faqSchema && (
         <script

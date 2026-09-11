@@ -70,6 +70,18 @@
   /* Canonical brand tokens for @accounting-network/web-shared components. */
   --brand-primary: var(--copper);
   --brand-primary-strong: var(--copper-strong);
+  /* Brand copper carrying TEXT in kit components: #b87333 measures 3.79 on
+     white, under the 4.5 floor. --copper-strong (4.91 on white) is not enough
+     either, because the surface this actually lands on is the MiniCapture
+     panel's slate-50 ground, where it measures 4.34. --copper-deep is the
+     token Phase 1 minted for exactly that case. Graphics keep
+     --brand-primary, where the floor is 3:1 and copper passes. */
+  --brand-primary-text: var(--copper-deep);
+  /* Brand copper used as a GROUND under a white label in kit components:
+     white on #b87333 measures 3.79. --btn-ground is the step Phase 1 already
+     minted for this exact case (white label 4.91) and is what every button on
+     the site is painted with, so the kit tiers now match them. */
+  --brand-primary-ground: var(--btn-ground);
   --brand-on-primary: #ffffff;
 
   /* Radius chain root. The kit's globals-standard.css @theme derives
@@ -306,15 +318,26 @@ main {
   color: var(--ink);
 }
 
-/* Links */
-a {
-  color: var(--navy);
-  text-decoration: none;
-  transition: color 0.2s;
-}
+/* Links.
+   INSIDE @layer base, deliberately. Tailwind v4 emits every utility into a
+   layer, and an UNLAYERED rule beats a layered one whatever the specificity,
+   so while this block sat outside a layer it beat `text-slate-300`,
+   `text-white` and every other colour utility on every <a> on the site. That
+   is what painted the footer's links navy-on-navy (measured 2.11 against a
+   4.5 floor) and the header's primary CTA label navy on the copper ground
+   (3.49). Property carries no bare `a` rule at all, which is why the kit
+   chrome assumes the utility wins. Keep these defaults for unstyled prose
+   links; never move them back out of the layer. */
+@layer base {
+  a {
+    color: var(--navy);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
 
-a:hover {
-  color: var(--copper-strong);
+  a:hover {
+    color: var(--copper-strong);
+  }
 }
 
 /* Deleted in the Property-standard port, each with zero consumers proven by grep:

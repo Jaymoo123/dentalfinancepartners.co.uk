@@ -82,9 +82,12 @@ current behaviour. Medical must pass both explicitly. **Do not add rival props f
   Pass Medical's OWN pre-port `data-cta-goal` value, so the port does not split this site's
   live funnel history into two series. Derive it from the current `SiteHeader.tsx` before
   replacing it, and state the value you found.
-- `SiteFooter` `showBuilderCredit` (`.../SiteFooter.tsx:65,132`). **Pass `false`.** The kit
-  footer otherwise renders Property's designer credit on every page of this site as a
-  followed outbound link.
+- `SiteFooter` `showBuilderCredit` (`.../SiteFooter.tsx:65,132`). ~~**Pass `false`.**~~
+  **SUPERSEDED by owner decision 2026-09-11 (commit `6966c1f1`), estate-wide: the studio
+  credit now appears on every ported site, not only the one the studio designed. Medical
+  passes `true`.** The instruction above was the Solicitors-era call and is kept here rather
+  than deleted so the reversal is visible; do not re-introduce a `false` "fix". The kit
+  default was already `true`, so a port that passes nothing is correct.
 
 **Phase 2 acceptance test, carried forward from the Phase 1 browser check.** The CURRENT
 footer paints navy links on the navy ground at a measured contrast ratio of **1.00**, i.e.
@@ -96,6 +99,15 @@ work merely changed which labels occupy those slots. It was deliberately NOT fix
 Phase 1, because the footer is replaced wholesale in Phase 2 and patching it first is
 churn. **The ported footer must render every link at 4.5:1 or better on the navy ground,
 measured in the rendered DOM, not asserted.**
+
+**PASSED, 2026-09-11.** `browser_check.mjs` measures the ported footer links at **12.00** on
+the navy ground, against the 1.00 in the Phase 0 baseline, at all four widths. Instrument
+self-test OK (slate-500/white 4.76, slate-400/white 2.56). The root cause was not the footer:
+`globals.css` carried an UNLAYERED `a { color: var(--navy) }`, which beats every layered
+Tailwind colour utility, so it painted every `<a>` on the site navy, including the header CTA
+label on copper at 3.49. Moving the block inside `@layer base` fixed both. Full account, and
+the two contrast consequences it exposed in the shared MiniCapture and `ServiceTiers`, in
+`docs/medical/STATE.md` under Phase 2.
 
 Note for the cutover annotation: `packages/web-shared/` is still moving under this port.
 The Solicitors Phase 1 commits `75d9f48f` and `cb041c9d` landed after Medical's Phase-0
