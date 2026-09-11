@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { StickyCTA } from "@/components/ui/StickyCTA";
 import { btnGold, btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug, getCategorySlug } from "@/lib/blog";
@@ -672,6 +673,9 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+      {/* Moved off the site shell with the chrome port: the kit PageShell
+          mounts none, and Property and generalist both mount it here only. */}
+      <StickyCTA />
     </>
   );
 }
