@@ -32,8 +32,8 @@ const NL = "\n";
 
 // Ratchet. Only ever revise these DOWNWARD.
 const MAX_SRC = 71;
-const MAX_CONTENT = 247;
-const MAX_FRONTMATTER = 3;
+const MAX_CONTENT = 246;
+const MAX_FRONTMATTER = 0;
 
 function filesUnder(dir: string, match: RegExp): string[] {
   const out: string[] = [];

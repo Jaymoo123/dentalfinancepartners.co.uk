@@ -6,14 +6,14 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/solicitors/house_positions.md`, never here.
 
-Last updated: 2026-09-10.
+Last updated: 2026-09-11.
 
 ## PICKUP: START HERE if you are a fresh agent on this port
 
-**Where it stands, 2026-09-11.** Phases 0 and 1 are DONE, committed and tagged
-(`port-solicitors-phase0`, `port-solicitors-phase1`). Phases 2 to 6 are not started.
-NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design. Your next
-action is Phase 2, the blog subsystem.
+**Where it stands, 2026-09-11.** Phases 0, 1 and 2 are DONE, committed and tagged
+(`port-solicitors-phase0`, `port-solicitors-phase1`, `port-solicitors-phase2`). Phases 3 to 6
+are not started. NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design.
+Your next action is Phase 3: article templates (3a) and the category hubs (3b).
 
 **Read in this order before acting:**
 1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` in full. Section 12 is your job description
@@ -74,7 +74,7 @@ and its deriving command.
 trust any crawl.** Three wrong-site measurements happened in one session because another
 agent's server held the port and the instrument crawled a different site entirely.
 
-**Phase order from here:** 2 blog subsystem, 3 article templates and hubs, 4 calculators
+**Phase order from here:** 3 article templates and hubs, 4 calculators
 (including the approved ResultGate), 5 homepage and pillars and locations, 6 contact,
 post-submit, research, resources, legal, interruptive restyle and the rule-based content
 sweep. Each phase: plan, build in parallel work packages, manager-verify, INDEPENDENT
@@ -88,21 +88,34 @@ fuchsia-700, violet-700), off red; Cormorant Garamond is dropped; our own publis
 is removed across all ~15 instances; a skippable calculator ResultGate ships on the generic
 fleet; the footer sister-site block is removed.
 
-**Owner questions still OPEN, bundle them, do not drip:**
-1. Should the designer credit appear on sibling sites the studio did not design? It is
-   currently off for Solicitors and generalist.
-2. The header shows two reds: the wordmark icon and rule at rose-600 `#ec003f` (the kit
-   hardcodes `text-primary-600`) against the brand crimson on the button. Both clear
-   contrast; the delta asked for the icon to be the brand. Match them?
-3. The homepage hero loads an external Unsplash image, a live third-party dependency on the
-   main lead page, where the standard ships zero photography. Replace with the motif?
+**Owner decisions taken 2026-09-11, do not re-ask:** the Double Wired Creative studio credit
+appears ESTATE-WIDE, on every ported site, reversing the phase 1 fix (both consumers pass
+`showBuilderCredit: true`; the kit default was already `true`); the header wordmark takes the
+brand crimson via the new `SiteHeader.wordmarkAccentColor`, so the bar shows ONE red (the
+footer lockup keeps `primary-400`, because the brand hex measures 2.50 on slate-900); the
+homepage Unsplash image is replaced by the approved ledger motif in phase 5.
 
-**Known live defects still to fix, recorded in full below:** our pricing in ~15 places,
-`/resources` 404 linked from 8 pages, the five `/services/[slug]` pages missing from the
-sitemap, 10 dead internal links, four turnaround promises on `/contact`, three WCAG
-failures on the research pages, charts removed from the accessibility tree, an ungated
-duplicate calculator on `/embed`, a stale "6 calculators" claim, and an unsourced lock-up
-figure on the homepage.
+**Owner questions still OPEN, bundle them, do not drip:**
+1. Copy props on the shared `ProblemStatement` rather than a third site mirroring Property's
+   landlord copy locally.
+2. Instrument the 15 never-fired `data-cta` ids during the port? They include every hero,
+   header and homepage CTA, so the funnel cannot currently see its own top.
+3. The sticky CTA dismiss event, which is a new series rather than a restyle.
+4. Is "the same person reads your firm's numbers each time" literally true of the practice?
+   Removed in phase 2 because it cannot be evidenced.
+5. No article has a photograph, a photo credit or a last-updated date, though the code to
+   render all three is now in place. Populate the fields, or drop them?
+
+**Known live defects still to fix, recorded in full below:** our own pricing in 16 places
+(not 15, and two of them are on `/specialist-vs-generalist-accountant`, which no disposition
+slice lists), `/resources` 404, the five `/services/[slug]` pages missing from the sitemap,
+3 remaining dead internal links, three WCAG failures on the research pages, charts removed
+from the accessibility tree on THREE charts (not four), an ungated duplicate calculator on
+`/embed`, a stale "6 calculators" claim, an unsourced lock-up figure on the homepage, and
+34 posts whose `canonical:` points at a redirecting URL.
+
+**CLOSED in phase 2:** all eleven turnaround promises (phase 0 recorded four), nine of the
+ten dead internal links, and the frontmatter em-dash class.
 
 **Transitional state you must not mistake for a bug:** `font-serif` is mapped to the sans
 stack in `globals.css` as a documented no-op, because dropping Cormorant left 193 classes
@@ -303,6 +316,113 @@ one. Three sessions share this working tree.
 2. The header shows two reds side by side: the wordmark icon and rule at rose-600 `#ec003f`
    (the kit hardcodes `text-primary-600`) against the brand crimson `#c41e3a` on the button.
    Both cleared contrast; the delta asked for the icon to be the brand. Match them?
+
+## 2026-09-11 - PHASE 2 (blog subsystem). Nothing deployed.
+
+Commits: `6966c1f1` owner decisions (studio credit estate-wide, one red in the header),
+`9b3c3dab` turnaround-promise sweep and the kit sidebar button prop, plus the phase 2 build
+commit. Production still serves `18b4f25f`.
+
+**Verification at close**, re-derived on the post-fix build and not quoted from phase 1:
+build exit 0 at **294 prerendered pages**, identical to the pre-port baseline; tsc clean on
+Solicitors AND generalist; Solicitors **16 files / 208 tests** (from 15 / 204); web-shared
+**19 files / 406 tests**; dependency closure OK across 19 sites; full crawl of all **274**
+baseline routes with **0 link-floor breaches** (10,511 unique internal links, from 10,510),
+**0 data-cta regressions** (1,170 instances, from 774) and **0 em-dash regressions** (329
+visible, from 330). Dead internal links **10 down to 3**, and the 3 that remain belong to
+phases 4 and 6.
+
+**The CTA check was done properly this time, and the method matters.**
+`link_baseline.json` stores per-route CTA COUNTS only, so it cannot catch a flipped placement
+or goal, which is exactly the defect that got through in phase 1 (trap T22). The production
+SHA was stood up on a second port and the rendered TRIPLES were diffed, id and placement and
+goal: **zero lost, zero changed**, five new ids (`blog_hero_book`, `blog_hero_guides`,
+`blog_calculators_all`, `blog_skip_to_form`, `blog_sidebar_book`). Two of the five emit no
+`data-cta-goal`; that is the kit's own convention for navigational links, not a defect.
+
+**Both review rounds found real defects, as the method requires.** Review 1 PASS-WITH-GAPS:
+two card recipes shipping side by side (`border border-slate-200` against the contract's
+`ring-1 ring-slate-200/70`), a Making Tax Digital claim stated universally where
+`house_positions.md:341` supports only "most", an unevidenced operational promise ("the same
+person reads your firm's numbers each time, not a rota"), and in-page anchors still landing
+under the mobile furniture. All four fixed. The fix pass corrected the manager's own number:
+it measured the mobile sticky stack at 114px and used 7.5rem where the brief said 7rem, which
+would still have landed 2px short.
+
+**A false alarm worth recording, because the method produced it and then killed it.** The
+`/calculators/law-firm-sale-cgt` route appeared to have newly hidden its result behind a gate.
+It had not. `LawFirmSaleCgtCalculator.tsx:50` is `useState(true)` with an explicit comment
+("Start gated so the pre-reveal state is the SSR markup"), unchanged since July and live in
+production today. The fault was the comparison rig: the `C:/port-base` worktree was serving a
+`.next` older than the SHA it claimed, still emitting a copy string removed hours earlier.
+That server has been killed so nobody quotes it again. Field note added.
+
+**Live defects fixed in this phase, none of them design work:**
+- **Eleven turnaround promises across ten files**, not the four on `/contact` recorded in
+  phase 0. They included the homepage closing ask, both calculator result panels, the support
+  widget, the `LeadForm` success message, and a support FAQ whose QUESTION was "How quickly
+  will a specialist reply?", so the answer could not be de-timed in place and the question was
+  rewritten. Swept by rule, site-wide, before the builders opened those files.
+- **Nine dead internal links over ten occurrences**, and six of the seven two-segment ones
+  were in a SOLICITOR GUIDE, not the blog
+  (`content/solicitor-guides/legal-aid-billing-laa-ccms.md`). Two more pointed at
+  `structure-incorporation` for posts whose real category slug is `partnership-llp-structure`.
+  All nine verified to resolve by an independent resolver before and after.
+- Four em-dashes in frontmatter (3 in `metaDescription`, 1 in `summary`), a class the sweep
+  instrument has never counted because it reads body text only, yet which reaches users in
+  search results. Ratchets in `no-em-dash.test.ts` lowered to the true counts: src 71,
+  content 246, frontmatter 0.
+- `/blog` was shipping every post's full `contentHtml` across the client boundary: payload
+  **4,510,652 bytes down to 262,377**, 5.8% of what it was.
+
+**Corrections to the phase 0 brief, all verified against disk.** Every agent corrected it and
+every one was right:
+- The disposition said 181 of 196 posts carry both a `schema` and a `faqs` block, so the
+  renderer's bypass fires and the nested `FAQPage` is dead code. **Every one of those 181
+  `schema:` values is the EMPTY STRING**, so the bypass never fires and the schema is live on
+  all 196. Acting on the first reading would have emitted a SECOND `FAQPage` on every post.
+  A `grep -l` proves a key exists, never that it holds anything.
+- `/blog` does not render its categories twice: the local list component accepted
+  `categories` and `activeCategory` and read neither, exactly like the kit copy it was
+  extracted from. The two were feature-identical, so the local copy was DELETED and both
+  consumers repointed at the kit.
+- `getRelatedPosts` comparing raw category labels is LATENT, not live: its only caller passes
+  the raw label too. Guarded by a test rather than "fixed".
+- `font-serif` is 199 uses, not 193. Published pricing is 16 hits, not 15, and two of them sit
+  on `/specialist-vs-generalist-accountant`, which no disposition slice lists.
+
+**Deliberate calls recorded:**
+- The in-flow closing `LeadCTAPanel` on `/blog` and on articles. An in-flow panel at the end
+  of a page is not interruptive (playbook section 1), so this was a manager decision, not an
+  owner gate. One-line revert if the owner disagrees.
+- The kit list SLICES rather than hides on `/blog`. Property does the same; the
+  hide-never-slice rule is held for the phase 3 hubs, where `hub-article-crawl-path.test.ts`
+  already guards it.
+- `decorateAsides` with its five CSS rules, and the image, image-credit and updated-date
+  branches, are **inert on this corpus**: no post has an aside, an image, a credit or an
+  updated date. The code is correct and renders nothing. Deleting the photographic hero
+  therefore removed nothing a reader could see.
+- `blog_sidebar_book` arrives with the kit sidebar card: a new instrumented element on 196
+  pages, additive, no existing series touched.
+
+**Found and NOT fixed here, carried deliberately:**
+- **34 posts carry a `canonical:` on the old `-and-` category spelling**, so they
+  self-canonicalise to a URL that 308-redirects. Pre-existing, present on the production build
+  too, and a live search-visibility leak. Phase 3 owns that file family.
+- If the dormant `packages` CTA variant were ever switched on, its blog copy would publish our
+  own pricing on all 196 posts. Phase 6 pricing sweep.
+- Roughly 150 em-dashes remain in post BODIES. Phase 6 content sweep, Opus-only.
+
+**OPEN OWNER QUESTIONS carried to the phase 3 bundle:**
+1. Copy props on the shared problem-statement component, rather than a third site mirroring
+   Property's landlord copy locally.
+2. Whether to instrument the 15 never-fired `data-cta` ids during the port. They include every
+   hero, header and homepage CTA, so the funnel currently cannot see its own top.
+3. The sticky CTA dismiss event, which would be a new series rather than a restyle.
+4. Is "the same person reads your firm's numbers each time" literally true of the practice? It
+   has been removed because we cannot evidence it.
+5. No article on the site has a photograph, a photo credit or a last-updated date. The code to
+   render all three is now in place and correct. Populate the fields, or drop them?
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 

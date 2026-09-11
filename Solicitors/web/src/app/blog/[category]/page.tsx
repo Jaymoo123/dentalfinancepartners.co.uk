@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, calculateReadTime, slugifyCategory } from "@/lib/blog";
-import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
+import { BlogListWithSearch } from "@accounting-network/web-shared/design/blog/BlogListWithSearch";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 /**
@@ -68,16 +68,27 @@ export default async function BlogCategoryPage({ params }: Props) {
   if (!matchedCategory) notFound();
 
   const allPosts = getAllPosts();
-  const enriched = allPosts
-    .filter((p) => slugifyCategory(p.category) === category)
-    .map((p) => ({ ...p, categorySlug: category }));
+  const matching = allPosts.filter((p) => slugifyCategory(p.category) === category);
 
-  if (enriched.length === 0) notFound();
+  if (matching.length === 0) notFound();
 
   const readTimes = new Map<string, number>();
-  for (const p of enriched) {
+  for (const p of matching) {
     readTimes.set(p.slug, calculateReadTime(p.contentHtml));
   }
+
+  // PROJECTION, load-bearing. The old `{...p, categorySlug}` spread serialised
+  // every post's contentHtml into this route's client payload (the same defect
+  // /blog carried, and the one that pushed Property's /blog past Vercel's
+  // 19 MB limit). The list renders only these six fields.
+  const enriched = matching.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    summary: p.summary,
+    category: p.category,
+    categorySlug: category,
+    date: p.date,
+  }));
 
   const siblings = categories.filter((c) => !STATIC_HUB_SLUGS.has(c.slug));
 

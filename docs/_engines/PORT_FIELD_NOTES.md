@@ -151,6 +151,18 @@ told to correct the brief if its premise was false. All were correct to push bac
 | The kit's FAQ component is a safe adoption | On generalist yes; on Solicitors it would have STRIPPED answer text from 196 posts, because that site already renders answers in a plain list that IS in the server HTML, and 7 of 1,245 answers contain real HTML the kit would escape. |
 | The site's own STATE.md counts are current | Solicitors' said 149 posts and 6 guides; disk had 196 and 10. Re-measure every number you use. |
 
+
+**2026-09-11, Solicitors phase 2, five more of the same shape.** Every agent corrected the
+brief again; the corrections changed the build each time.
+
+| Assumption carried into the phase | What was actually true |
+|---|---|
+| The site has four turnaround promises, all on `/contact` | Eleven across ten files, including the homepage closing ask, both calculator result panels, the support widget and a support FAQ whose QUESTION was "How quickly will a specialist reply?" so the answer could not be de-timed in place. Sweep by rule, site-wide, before a phase touches those files. |
+| The dead blog links live in `content/blog/` | Nine dead URLs over ten occurrences, and six of the seven two-segment ones were in a SOLICITOR GUIDE, not the blog. Resolve every href in `content/` against real frontmatter, not against the directory you expect. |
+| `/blog` renders its category list twice | It does not. The local list component accepted `categories` and `activeCategory` and never read either, exactly like the kit copy it was extracted from. Read the component body before reporting a duplicate. |
+| The local `BlogListWithSearch` must be kept because the kit copy ignores the category props | Both ignore them, and the two are feature-identical (same search, sort, pagination, read-time props). The local copy was deleted and both consumers repointed at the kit. Compare before you fork. |
+| Three renderer features are load-bearing (hero image, photo credit, updated date) | All 196 posts have `image: ""`, none has `imageCredit` and none has `updatedDate`. The branches are correct and inert. Deleting the photographic hero removed nothing a reader could see. |
+
 **The lesson under all five:** the previous port's blueprint is a starting hypothesis, not
 a specification. Phase 0 re-derives.
 
@@ -195,6 +207,39 @@ results, so sweep frontmatter separately.
 samples 30 articles unless told otherwise. A floor built from a sample cannot prove no harm
 on the other 166 pages.
 RULE: pass `--sample=9999` for a baseline.
+
+**2026-09-11, Solicitors phase 2. A "before" server built from a stale worktree lies, and it
+lies quietly.** Trap T22 needs the FULL `data-cta` attribute set diffed against the pre-port
+page, but `link_baseline.json` stores only per-route CTA COUNTS, so the baseline alone cannot
+catch a flipped placement or goal. The fix is to stand up the production SHA on a second port
+and diff the rendered triples. That worked, and it also produced a false alarm: one calculator
+route appeared to have newly hidden its result behind a gate. It had not. The worktree at
+`C:/port-base` was serving a `.next` built before a July commit, so the component was not in
+its bundle at all, and the same server still served a copy string that had been removed hours
+earlier.
+Deriving command, the one that settles it in a second:
+`curl -s http://localhost:<preport>/<route> | grep -c "<a string you changed today>"`
+A non-zero count means the "before" server is older than you think. Also compare the served
+route's bundle for a symbol you know exists in the current source.
+RULE: before trusting a pre-port server, prove its age with a string whose commit date you
+know. A stale artefact is worse than no baseline, because it produces a confident wrong diff.
+Rebuild it, or kill it so nobody quotes it.
+
+**2026-09-11, Solicitors. `curl` without `-L` makes a component look like it never renders.**
+`/blog/<slug>` 301s to the category-nested URL and returns a 62-byte body. A reviewer checking
+"does the table of contents render" against that body concludes it does not.
+RULE: `curl -L` on any route family that carries a redirect, and check the byte count before
+you conclude anything from an empty grep.
+
+**2026-09-11, Solicitors. Check the VALUE, not the presence of the key.** A phase-0 pass
+reported that 181 of 196 posts carry BOTH a `schema` and a `faqs` frontmatter block, and
+concluded the renderer's `post.schema?.trim() ||` bypass fired on 181 pages and that the
+nested `FAQPage` was dead code. Every one of those 181 values is the EMPTY STRING
+(`127 schema: ""`, `54 schema: ''`), so the bypass never fires and the schema is live on all
+196. Acting on the first reading would have emitted a SECOND `FAQPage` on every post.
+Deriving command:
+`grep -h '^schema:' content/blog/*.md | grep -vE '^schema: *(""|'"''"'| *)$' | wc -l` -> 0
+RULE: `grep -l 'key:'` proves a key exists, never that it holds anything. Print the values.
 
 **THE BIG ONE, three times in one session: the instrument measured the wrong site.**
 `next start` failed to bind because another session held the port, the error went to a log

@@ -2,7 +2,7 @@
 title: "Fee-Share vs Equity Partner: The Two Routes to Senior Status in UK Law Firms"
 slug: "fee-share-vs-equity-partner"
 metaTitle: "Fee-Share vs Equity Partner UK 2025/26: Tax & Career"
-metaDescription: "Fee-share solicitor vs equity partner — the financial, tax, and career comparison. UK 2025/26 with FA 2014 audit, capital contribution, profit share."
+metaDescription: "Fee-share solicitor vs equity partner: the financial, tax, and career comparison. UK 2025/26 with FA 2014 audit, capital contribution, profit share."
 date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 eyebrow: "Pillar guide · Career structure"

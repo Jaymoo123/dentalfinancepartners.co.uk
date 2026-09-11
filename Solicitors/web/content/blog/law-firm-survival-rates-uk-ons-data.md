@@ -131,7 +131,7 @@ faqs:
 
 <h3>Lock-up and cashflow erosion</h3>
 
-<p>Lock-up, the combined time between completing work, raising a bill, and collecting payment, is the primary cashflow lever in legal practice. A firm carrying 180 days of combined WIP and debtor lock-up is financing six months of completed work from its own capital at all times. As fee volumes grow, so does the capital requirement. Firms that grow without actively managing lock-up can find themselves profitable on paper and illiquid in practice. Our guide to <a href="/blog/law-firm-lock-up-reduction">law firm lock-up reduction</a> covers the levers in detail.</p>
+<p>Lock-up, the combined time between completing work, raising a bill, and collecting payment, is the primary cashflow lever in legal practice. A firm carrying 180 days of combined WIP and debtor lock-up is financing six months of completed work from its own capital at all times. As fee volumes grow, so does the capital requirement. Firms that grow without actively managing lock-up can find themselves profitable on paper and illiquid in practice. Our guide to <a href="/blog/practice-finance-cash-flow/law-firm-lock-up-reduction">law firm lock-up reduction</a> covers the levers in detail.</p>
 
 <h3>Undercapitalised succession</h3>
 

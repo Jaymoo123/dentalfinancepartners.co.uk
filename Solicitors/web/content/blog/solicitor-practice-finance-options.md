@@ -6,7 +6,7 @@ generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Solicitor Practice Finance: Funding Options for Law Firms"
-metaDescription: "Bank loans, overdrafts, invoice discounting, and litigation funding — each with different costs and SRA implications. Compare options for your law firm."
+metaDescription: "Bank loans, overdrafts, invoice discounting, and litigation funding each carry different costs and SRA implications. Compare options for your law firm."
 altText: "Professional meeting discussing finance options for UK solicitor practice with documents and calculator on desk"
 image: ""
 h1: "Solicitor Practice Finance Options: A Comprehensive Guide for UK Law Firms"

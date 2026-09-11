@@ -470,6 +470,38 @@ details summary::-webkit-details-marker {
   font-weight: 400;
 }
 
+/* In-body aside CTA. The renderer appends one anchor to #enquiry-form inside
+   every <aside> in the article body (decorateAsides), which is the moment the
+   article has just told the reader what a mistake costs. Colour comes from the
+   --btn-ground trio, the same ground every other button on the site uses, so
+   this cannot drift into a second red. */
+.prose-blog aside .aside-cta-row {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.prose-blog aside a.aside-cta,
+.prose-blog aside a.aside-cta:hover {
+  display: inline-block;
+  padding: 0.625rem 1.125rem;
+  background: var(--btn-ground);
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: var(--radius-xl, 4px);
+  transition: background-color 0.2s;
+}
+
+.prose-blog aside a.aside-cta:hover {
+  background: var(--btn-ground-hover);
+}
+
+.prose-blog aside a.aside-cta:focus-visible {
+  outline: 2px solid var(--btn-ground);
+  outline-offset: 2px;
+}
+
 /* Anchor offset under the sticky header. The standard requires scroll-mt-24 on
    every anchor target; the kit hardcodes `<main id="main">`'s className and
    forking a file shared by 19 sites to add one utility is not worth it, so the
@@ -482,4 +514,20 @@ details summary::-webkit-details-marker {
 li[id^="ref-"],
 .article-body :where(h2, h3, h4)[id] {
   scroll-margin-top: 6rem;
+}
+
+/* Below `lg:` the sticky stack is taller than 6rem: the header is 73px (the
+   h-12 burger plus py-3, plus the 1px bottom border, which beats the
+   min-h-[3.25rem] floor) and the kit's mobile table-of-contents bar pins at
+   `top-16` (64px) and is 50px tall (py-3 + a 20px summary line + border-y),
+   so the furniture ends at 114px. 6rem = 96px landed the target 18px under
+   the TOC bar. 7.5rem = 120px clears it with 6px to spare. Desktop keeps
+   6rem: there is no mobile TOC bar above `lg:`. */
+@media (max-width: 1023.98px) {
+  #main,
+  [id][class*="scroll-mt"],
+  li[id^="ref-"],
+  .article-body :where(h2, h3, h4)[id] {
+    scroll-margin-top: 7.5rem;
+  }
 }

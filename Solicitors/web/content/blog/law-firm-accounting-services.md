@@ -7,7 +7,7 @@ generator: claude/legacy-supabase
 author: "Accounts for Lawyers Editorial Team"
 category: "Practice Finance & Cash Flow"
 metaTitle: "Law Firm Accounting Services | UK Solicitor Specialists"
-metaDescription: "SRA trust accounting, client money compliance, partnership tax, and practice finance — what specialist law firm accounting covers and typical costs."
+metaDescription: "SRA trust accounting, client money compliance, partnership tax, and practice finance: what specialist law firm accounting covers and typical costs."
 altText: "UK solicitor reviewing financial documents with specialist law firm accounting services"
 image: ""
 h1: "Law Firm Accounting Services: Complete Guide for UK Legal Practices"

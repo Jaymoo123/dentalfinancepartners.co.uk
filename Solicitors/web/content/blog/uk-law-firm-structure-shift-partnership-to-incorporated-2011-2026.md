@@ -176,7 +176,7 @@ faqs:
 
 <p>The LLP share of the firm base has stayed broadly flat in absolute terms (1,398 in 2011, 1,421 in 2026), which suggests that LLP formation is continuing at a pace that offsets closures, but without strong growth. The structure remains common among mid-size multi-partner firms where the liability protection is valued and the equity partners have genuine variable profit shares that keep them outside the salaried-member conditions.</p>
 
-<p>For the detail on salaried member analysis, see our guide to the <a href="/blog/structure-incorporation/salaried-member-rules-uk-llps-explained">salaried member rules for UK LLPs</a>.</p>
+<p>For the detail on salaried member analysis, see our guide to the <a href="/blog/partnership-llp-structure/salaried-member-rules-uk-llps-explained">salaried member rules for UK LLPs</a>.</p>
 
 <h3>Incorporated Company (Ltd)</h3>
 
@@ -226,7 +226,7 @@ faqs:
 
 <p>For most new practices and for sole practitioners incorporating for the first time, the Ltd company is the natural choice and the data confirm this is the route almost universally taken. For existing multi-partner firms, the question of whether to retain an LLP or convert to an incorporated structure requires careful analysis of the specific profit levels, extraction strategies, and any goodwill or capital gain that would crystallise on conversion.</p>
 
-<p>For a related discussion of how LLP and partnership structures compare in detail, see our article on <a href="/blog/structure-incorporation/llp-vs-traditional-partnership-uk-law-firms">LLP vs traditional partnership for UK law firms</a> and our guide to <a href="/blog/structure-incorporation/service-company-structure-for-law-firms-tax-vat">service company structures for law firms</a>.</p>
+<p>For a related discussion of how LLP and partnership structures compare in detail, see our article on <a href="/blog/partnership-llp-structure/llp-vs-traditional-partnership-uk-law-firms">LLP vs traditional partnership for UK law firms</a> and our guide to <a href="/blog/structure-incorporation/service-company-structure-for-law-firms-tax-vat">service company structures for law firms</a>.</p>
 
 <h2>Sources</h2>
 
