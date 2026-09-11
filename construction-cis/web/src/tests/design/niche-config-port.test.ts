@@ -69,6 +69,22 @@ describe("construction-cis niche config, port guards", () => {
     expect(dead, `navigation links with no route: ${dead.join(", ")}`).toEqual([]);
   });
 
+  it("keeps cta.variant on leadgen, so the dormant price list stays dormant", () => {
+    // TD-02: `cta.variants.packages` is a complete, authored alternative that
+    // publishes our own monthly prices across the hero, the sticky bar, every
+    // blog CTA and /contact. It does not render only because `variant` is
+    // "leadgen". Flipping one string would publish eleven price claims in one
+    // commit, with no other diff to review. Owner gate 5.
+    const cta = nicheConfig.cta as { variant: string; variants: Record<string, unknown> };
+    // Guards the guard: if the packages variant were removed or renamed, the
+    // assertion below would be protecting nothing and should be revisited.
+    expect(Object.keys(cta.variants)).toContain("packages");
+    expect(
+      cta.variant,
+      "flipping this to 'packages' publishes the dormant monthly price list site-wide",
+    ).toBe("leadgen");
+  });
+
   it("the resolver really can tell a missing route from a present one", () => {
     // Guards the guard: a resolver that returned true unconditionally would make
     // the dead-link assertion above vacuous.

@@ -136,6 +136,9 @@ describe("published statutory penalty figures, site-wide", () => {
     expect(all).toContain("Knowledge-based penalty on payments under FA 2004 s.62A"); // trade-types.ts
     expect(all).toContain("£300 or 5%"); // the correct ladder is present somewhere
     expect(CORPUS.some((c) => c.path.endsWith("niche.config.json"))).toBe(true);
+    // The counterpart of the "Finance Bill 2026" rule below: the live-law
+    // phrasing must be present, or that rule is passing over nothing.
+    expect(all).toContain("Finance Act 2026");
   });
 
   it("TD-08: s.62B is never quantified as a percentage of the sums returned", () => {
@@ -199,5 +202,15 @@ describe("published statutory penalty figures, site-wide", () => {
     for (const w of windows(/\b30\s*(?:%|per ?cent)[^.]{0,120}62[AB]|62[AB][^.]{0,120}\b30\s*(?:%|per ?cent)/i)) {
       expect(w).toMatch(S72A);
     }
+  });
+
+  it("TD-07: the 2026 measures are never called a Bill; Royal Assent was 18 March 2026", () => {
+    // The live law is Finance Act 2026. "Finance Bill 2026" is a statement that
+    // the measures are not yet law, which is false on every page that carries
+    // it. The previous guard for this pinned ONE page's FAQ registry; this one
+    // rides the corpus walk above, so a new page or data file is covered the
+    // day it is added. The window is the containing sentence, so a failure
+    // names the claim, not a character slice of it.
+    expect(windows(/Finance\s+Bill\s+2026/i)).toEqual([]);
   });
 });
