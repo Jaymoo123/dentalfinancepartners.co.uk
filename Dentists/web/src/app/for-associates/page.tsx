@@ -12,10 +12,10 @@ const data: AudienceStage = {
   badge: "Self-employed associates · Ltd-company locums · NHS + private",
   heroHeading: "Accountants who get associate dentist tax right",
   intro:
-    "Most generalist accountants treat associate dentists like any other self-employed professional. They miss the BDA model agreement IR35 risk, under-claim indemnity and CPD, ignore the NHS Pension annual allowance, and produce returns that work but leak. We are dental-only. The questions we ask are different.",
+    "An associate return is not ordinary self-employment. Status rests on how the work actually runs rather than on the BDA model agreement, indemnity and CPD are easy to under-claim, and NHS Pension growth counts towards the annual allowance whether or not anyone checks it. We are dental-only, so those are the questions we open with.",
   stats: [
     { value: "55p", label: "AMAP rate, first 10,000 miles" },
-    { value: "5", label: "IR35 status factors we test" },
+    { value: "50%", label: "Of last year's bill, per payment on account" },
     { value: "£60k", label: "Pension annual allowance" },
     { value: "£50k", label: "MTD sign-up threshold, Apr 2026" },
   ],
@@ -48,7 +48,7 @@ const data: AudienceStage = {
   services: [
     {
       title: "Annual self-assessment and tax return",
-      body: "All associate income (NHS and private), expense claims, NHS Pension contributions, student loan plan, payment on account positions. Filed inside the deadline, never in January.",
+      body: "All associate income (NHS and private), expense claims, NHS Pension contributions, student loan plan, payment on account positions. Records are gathered through the year rather than in the week before the 31 January filing date.",
     },
     {
       title: "Status review against the IR35 tests",
@@ -86,7 +86,7 @@ const data: AudienceStage = {
     },
     {
       q: "How does switching accountant work?",
-      a: "We handle professional clearance with your existing accountant. They release your records to us; we pick up from the current position. The handover typically takes two weeks and is no disruption to your filing. You can switch mid-tax-year without any practical complications. We do this every month.",
+      a: "We write to your existing accountant for professional clearance and for your records, and we pick up from the position they hand over. How long that takes is in their hands, not ours, so we agree with you what is filed by whom before anything moves. You can switch mid-tax-year: the tax year and the filing obligations do not change, only who prepares the return.",
     },
   ],
   ctaTitle: "Get your associate return done properly",

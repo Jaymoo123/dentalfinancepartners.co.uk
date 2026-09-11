@@ -6,7 +6,6 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
-  buildBreadcrumbJsonLd,
   buildCollectionPage,
   JsonLd,
 } from "@/lib/schema/index";
@@ -56,11 +55,13 @@ export default function CalculatorsIndexPage() {
     path: "/calculators",
     numberOfItems: tools.length,
   });
-  const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+  // BreadcrumbList is emitted by <Breadcrumb> itself (components/ui/Breadcrumb.tsx),
+  // from the same items binding. Building a second one here made these pages emit TWO
+  // identical BreadcrumbList documents. One source, one document.
 
   return (
     <>
-      <JsonLd data={[collectionSchema, breadcrumbSchema]} />
+      <JsonLd data={[collectionSchema]} />
 
       <section className="bg-[var(--navy)] text-white">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>

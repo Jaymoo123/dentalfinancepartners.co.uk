@@ -1,10 +1,10 @@
 /**
  * Service sub-page content. Each entry renders at /services/[slug] via
- * the [slug]/page.tsx component. Targets one specific GSC query cluster.
+ * the [slug]/page.tsx component. Each targets one query cluster.
  *
- * The /services/dental-accountants entry is the single most important
- * landing page on the site — it targets the 1,842 90-day impressions
- * the home page currently absorbs at position 65-83.
+ * SERVICE_SLUGS at the foot of this file is the single source of truth for
+ * which children exist: the route's generateStaticParams and app/sitemap.ts
+ * both derive from it, so the two cannot drift.
  */
 
 export type ServiceFaq = { question: string; answer: string };
@@ -46,15 +46,15 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "Dental accountants for UK practices, principals and associates",
       intro:
-        "We work only with dentists. Every client is a dental practice, a dental partnership, a corporate dental group, or a self-employed associate or locum. That focus is the point. Specialist work needs specialist context.",
+        "This is a dentistry-only practice. The work we are set up for is NHS contract reporting, associate and locum tax, practice accounts, profit extraction and sale preparation. That focus is the point, because the decisions that cost a dentist money are rarely the ones a general tax checklist asks about.",
     },
     sections: [
       {
         heading: "Why a specialist dental accountant, not a generalist",
         body: [
-          "Most generalist accountants in the UK have a handful of dental clients on their book. The work gets done, but the sector-specific decisions get missed because the accountant has no pattern to compare against.",
-          "A specialist dental accountant sees the same questions weekly. NHS UDA contract values that differ between regions. The 1995 vs 2008 vs 2015 sections of the NHS Pension Scheme. Goodwill amortisation rules for goodwill acquired post-1 April 2019. The associate self-employment tests after the IR35 reforms. The VAT borderline between exempt clinical work and standard-rated cosmetic treatment.",
-          "Those are not advanced techniques. They are baseline competence for working with dentists. If your accountant cannot quote the current UDA value range across England, Wales and Northern Ireland from memory, they are learning on your account.",
+          "A generalist practice covers every trade at once, and the compliance gets done. What tends to get missed is the sector-specific decision, because there is no dental pattern to read the numbers against.",
+          "The recurring ground is narrow and knowable. UDA values that are contract-specific rather than national. The 1995, 2008 and 2015 sections of the NHS Pension Scheme, with everyone accruing in the 2015 section since 1 April 2022. Fixed-rate goodwill relief at 6.5% a year for goodwill acquired on or after 1 April 2019, with its qualifying-IP condition. Associate employment status after the off-payroll reforms. The VAT borderline between exempt clinical care and standard-rated cosmetic work.",
+          "None of that is advanced technique. It is the baseline for working with dentists. A useful test before you appoint anyone: ask them why there is no national UDA value, and see whether the answer arrives without a pause.",
         ],
       },
       {
@@ -65,7 +65,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         bullets: [
           "Monthly or quarterly management accounts that separate NHS UDA income, private fee income, capitation/plan income and lab fee recharges so you see where margin actually sits",
           "Annual statutory accounts and corporation tax return for limited companies, partnership return and partners' self-assessment for partnerships, sole-trader self-assessment for unincorporated practices",
-          "Salary and dividend extraction modelling each year at the 2025/26 rates, including the NHS Pension contribution interaction and the tapered annual allowance for higher earners",
+          "Salary and dividend extraction modelling each year at the rates for the year in question, including the dividend ordinary and upper rates of 10.75% and 35.75% that apply from 6 April 2026, the NHS Pension contribution interaction and the tapered annual allowance for higher earners",
           "Goodwill amortisation tracking, capital allowance claims on chairs / compressors / X-ray units / autoclaves, Structures and Buildings Allowance for post-October-2018 premises spend",
           "VAT scope review for mixed NHS/private practices, including the borderline cases (tooth whitening, clear aligners, cosmetic bonding)",
           "BADR pre-sale planning, Section 162 incorporation relief modelling, sale-and-leaseback structuring for principals approaching exit",
@@ -74,9 +74,9 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "How we are different from corporate dental accountants",
         body: [
-          "Some dental accountancy firms have grown into corporate-style operations that allocate junior staff to client work and only escalate up the chain when something goes wrong. The named partner is rarely on the call.",
-          "Our model is the opposite. The senior accountant working on your account is the senior accountant. The same person who reviews your year-end is the person you email when an NHS contract reform letter arrives or a buyer wants due diligence by Friday.",
-          "We deliberately stay small enough to keep that real.",
+          "Accountancy firms differ in how the work is staffed. In some, the person who reviews the year-end and the person who answers the email are two different people, and the second one has to go and ask the first.",
+          "We structure it the other way round. The accountant who does the technical work on your account is the accountant you deal with directly, so an NHS contract letter or a buyer's diligence request goes to someone who already knows your numbers.",
+          "That is a decision about how the work is organised. It is not a promise about how fast anything is turned around, and you should ask any firm, including this one, what a realistic timetable looks like for the job in front of you.",
         ],
       },
     ],
@@ -89,12 +89,11 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       "Foundation dentists in their first year of practice",
     ],
     workedExample: {
-      heading: "How we work with a typical mixed practice",
+      heading: "Goodwill relief on a practice bought after April 2019",
       body: [
-        "A two-surgery NHS-and-private practice in the West Midlands. One principal, two associates, three nurses, one hygienist on a self-employed contract. NHS UDA contract worth around £180,000 per year, private fee income around £140,000.",
-        "Day one: we map the existing accounts, the NHS contract documentation, associate agreements, payroll structure and the principal's personal tax position. Within 30 days we produce a baseline management report showing margin by income stream.",
-        "Month one: we identify that the principal is drawing salary above the optimal NI threshold and is missing roughly £4,200/year in NI by doing so. We adjust the payroll. We also identify that goodwill from a 2021 partial buy-out has not had the 6.5% amortisation claim made; we file the amendment for the recoverable years.",
-        "Ongoing: monthly management accounts, quarterly review call, year-end accounts and CT return inside the deadline, personal self-assessment for the principal and a salary-and-dividend annual review every March.",
+        "An illustration of the arithmetic, not an account of a client. A limited company buys a dental practice and £600,000 of the price is attributed to goodwill. Because the acquisition completed on or after 1 April 2019, fixed-rate relief at 6.5% a year is in point, which is £39,000 of relief a year against corporation tax, running down over roughly fifteen years.",
+        "The condition people miss is that the relief applies only where the business acquisition also includes qualifying intellectual property assets, and it is capped at six times that qualifying-IP expenditure. A purchase agreement that never identifies those assets leaves the claim exposed, which is a drafting point at the time of the deal rather than something to discover at the first year end.",
+        "Timing does more work here than price. Goodwill acquired between 8 July 2015 and 31 March 2019 attracts no amortisation relief at all, so two otherwise identical practices bought either side of 1 April 2019 carry a materially different tax cost.",
       ],
     },
     faqs: [
@@ -172,14 +171,14 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "Monthly review, quarterly conversation",
         body: [
-          "Management accounts you do not read are wasted. We package the monthly output as a one-page summary with three to five lines of analysis, plus the underlying detail if you want to drill in. Once a quarter we book a 60-minute call to walk through the trend.",
+          "Management accounts you do not read are wasted. The monthly output is packaged as a one-page summary with a short written read on what moved, plus the underlying detail if you want to drill in. Quarterly, we walk the trend on a call rather than the month.",
           "The point of the call is decisions: are you over-staffing on the dental nurse side, is your private margin growing or stagnating, is your UDA volume trending toward year-end clawback risk, is associate utilisation high enough to justify the split.",
         ],
       },
       {
         heading: "Year-end without the year-end scramble",
         body: [
-          "If management accounts run cleanly month by month, the statutory year-end is a tidy-up, not an event. We close limited company year-ends and file corporation tax returns inside the deadline, not in the last week. Same for partnership returns, partner self-assessments and sole-trader returns.",
+          "If management accounts run cleanly month by month, the statutory year-end is a tidy-up rather than a reconstruction. Company accounts and corporation tax returns, partnership returns, partner self-assessments and sole-trader returns are all built from numbers that have already been reviewed once, which is the part that keeps a year-end calm. Filing dates are statutory, and the timetable for meeting yours is something we agree with you rather than quote here.",
         ],
       },
     ],
@@ -193,7 +192,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "How often will I see management accounts?",
         answer:
-          "Monthly for practices on the Growth or Specialist tier. Quarterly for practices on the Essentials tier. We deliver the report within 15 working days of the month-end close. Quarterly review calls happen in the second week of the following month.",
+          "As often as the agreed scope calls for. Monthly suits a practice tracking margin by income stream through the year, particularly where UDA delivery is running close to the 96% reconciliation line. Quarterly suits a steadier cycle. Reporting dates and review calls are timetabled together when the scope is set, so the date is one you have agreed rather than one you wait on.",
       },
       {
         question: "Do you use specific software (Xero, FreeAgent, QuickBooks)?",
@@ -208,7 +207,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What about MTD for Income Tax?",
         answer:
-          "MTD for Income Tax becomes mandatory from 6 April 2026 for sole-trader and landlord income above £50,000. Many sole-trader dental practices are caught by this. We handle the digital record-keeping setup and quarterly submissions inside the standard fee, not as an add-on.",
+          "MTD for Income Tax has applied since 6 April 2026 where qualifying income (gross trading plus property income, tested on the prior year's return) exceeds £50,000, and the threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Most full-time unincorporated principals and associates are inside it already. Limited companies are not: MTD for Income Tax is an income tax regime, not a corporation tax one. Digital record-keeping setup and the quarterly submissions are compliance scope, so ask for them to be listed explicitly in any engagement letter, ours included.",
       },
     ],
     relatedServices: [
@@ -231,7 +230,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "Tax support for dental associates and locums",
       intro:
-        "Associate dentist tax looks simple until it isn't. Self-employment status, expense claims, the NHS Pension interaction, indemnity treatment, IR35 risk for limited-company locums on NHS contracts. We see all of it weekly and structure your return so you keep what you are entitled to keep, without picking a fight you would lose with HMRC.",
+        "Associate dentist tax looks simple until it isn't. Self-employment status, expense claims, the NHS Pension interaction, indemnity treatment, and off-payroll risk for limited-company locums on NHS engagements. The aim is a return that claims everything you are properly entitled to claim, on a basis that still looks right when HMRC asks how you arrived at it.",
     },
     sections: [
       {
@@ -289,7 +288,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Do I need to incorporate as an associate?",
         answer:
-          "Usually not. Incorporation only typically benefits associates earning above roughly £80,000–£100,000 sustainably, and even then the NHS Pension Scheme interaction can change the answer. We model your specific numbers before recommending the structure.",
+          "Usually not, and the reason is not the one people expect. At typical associate profits the pure tax saving from incorporating is small, and the dividend ordinary and upper rates rising to 10.75% and 35.75% from 6 April 2026 narrowed it further. Against that sits the NHS Pension Scheme: for an incorporated associate only the PAYE salary is pensionable and dividends are not, so accrual can fall sharply. The tax comparison on its own is not the answer. It has to be run beside the pension figure, on your numbers.",
       },
       {
         question: "What about IR35 if I work through a limited company?",
@@ -326,10 +325,10 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     },
     sections: [
       {
-        heading: "How dental practices actually get valued in 2025/26",
+        heading: "How dental practices actually get valued",
         body: [
           "There are two common methods. Earnings-based valuation multiplies normalised EBITDA by a sector-and-region-specific multiple. Percentage-of-fee-income applies a percentage to the gross fee income. Some buyers use a hybrid.",
-          "EBITDA multiples in UK dental in 2025/26 typically range from around 0.6× for NHS-heavy single-handed practices in low-demand regions to 1.4× or higher for private-focused multi-surgery practices in high-demand regions. Corporate buyers benchmark differently again. We model both approaches and reconcile.",
+          "Indicative 2025/26 UK dental ranges: roughly 0.6 to 0.9 times normalised EBITDA for NHS-heavy single-handed practices in lower-demand regions, roughly 0.9 to 1.2 for mixed multi-surgery practices in normal-demand areas, and roughly 1.1 to 1.4 for private-focused practices in high-demand regions, with corporate strategic premiums capable of sitting above that. Treat each as a range and date-tag it, because they move. We model both methods and reconcile them.",
           "Goodwill typically represents 60-80% of the total practice purchase price. Tangible assets (chairs, lights, X-ray, compressors, sterilisation) make up the balance.",
         ],
       },
@@ -351,15 +350,15 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "Tax planning before a practice sale",
         body: [
-          "BADR (Business Asset Disposal Relief) is the lever that matters. For 2025/26 disposals it gives 14% CGT on qualifying gains up to a £1m lifetime limit. From 6 April 2026 the rate rises to 18%. A practice sale completing the day before vs the day after that date is materially different on the tax bill.",
-          "BADR eligibility requires two years of qualifying ownership, employment or officer status, and the qualifying-asset tests. We check this 24 months out, not in the week before completion. If the structure is wrong, fixing it usually takes 12 months minimum because of the two-year qualifying period.",
+          "BADR (Business Asset Disposal Relief) is the lever that matters, and its rate has moved twice. It was 10% to 5 April 2025, 14% for disposals from 6 April 2025 to 5 April 2026, and 18% for disposals from 6 April 2026. The £1m lifetime limit per individual is unchanged. Note also that the date of disposal for CGT is the date of the contract where that contract is unconditional, not completion, so the exchange date can decide which rate band a sale falls into.",
+          "BADR eligibility requires the qualifying conditions to be held throughout the two years to disposal: a trading business or company, and for a share sale 5% of ordinary share capital and 5% of voting rights plus officer or employee status. That is worth checking around 24 months out rather than in the week before completion, because the two-year clock cannot be shortened. Correcting a structure late does not shorten the period; it moves the earliest date you can sell with the relief in hand.",
           "If you are still unincorporated, Section 162 incorporation relief can defer CGT on goodwill when you transfer the whole unincorporated trade to a company in exchange for shares. This is sometimes a sensible move before sale, sometimes not. We model it.",
         ],
       },
       {
         heading: "Buy-side: what to ask the seller before you sign",
         body: [
-          "Most buy-side first-time dental practice buyers see one practice they like, get attached, and skim the diligence. We see the second deal go better than the first because they ask the right questions the second time. We bring the second-time approach to first-time buyers.",
+          "The risk on a first purchase is attachment. Once a buyer has decided this is the practice, diligence quietly turns into confirmation. The questions below are the ones that are awkward to ask in that frame of mind, which is exactly why they belong on a list written before you view anything.",
         ],
         bullets: [
           "Three years of accounts plus the latest management accounts",
@@ -388,12 +387,12 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What's the difference between asset sale and share sale?",
         answer:
-          "Asset sale: the seller's company sells specific assets and goodwill to the buyer. Share sale: the buyer acquires the seller's company outright. Share sales are more buyer-friendly on stamp duty (0.5% on shares vs SDLT scale on practice premises) but more seller-risky because hidden liabilities transfer with the company. Most UK dental sales settle as asset sales for that reason. We model both structures against the buyer's preferred approach.",
+          "Asset sale: the seller's company sells specific assets and goodwill to the buyer. Share sale: the buyer acquires the seller's company outright, and the NHS contract stays inside the company rather than needing novation with commissioner consent. The trade-off is risk, because on a share sale the buyer inherits the company's history including liabilities nobody surfaced, which is why buyers scope diligence differently on the two routes. Stamp taxes also differ between buying shares and buying premises. We model both structures against the buyer's preferred approach.",
       },
       {
         question: "What multiple should I expect on EBITDA?",
         answer:
-          "Range, not a single number. In 2025/26 UK dental, NHS-heavy single-handed practices in regions with low buyer demand can sit at 0.6×-0.8× normalised EBITDA. Private-focused multi-surgery practices in high-demand regions (London, South East, prime South Coast and West Country) can reach 1.4× or higher. Corporate buyers will pay a premium for fit. Quote a single multiple and you will mis-set expectations on either side.",
+          "A range, not a single number. On indicative 2025/26 UK dental benchmarks, NHS-heavy single-handed practices in lower-demand regions sit around 0.6 to 0.9 times normalised EBITDA, mixed multi-surgery practices in normal-demand areas around 0.9 to 1.2, and private-focused practices in high-demand regions around 1.1 to 1.4, with corporate buyers sometimes paying a strategic premium above that for a practice that fits their map. Quote a single multiple and you mis-set expectations on one side or the other.",
       },
       {
         question: "Do you handle the legal side of the sale?",
@@ -438,8 +437,8 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "When the limited company route makes sense",
         body: [
-          "A limited company route earns its administrative cost above roughly £80,000–£100,000 of locum income sustainably, AND when most engagements sit clearly outside IR35, AND when the locum has tax-planning flexibility (e.g. a non-working spouse, deferred income horizon, employer pension capacity).",
-          "Below those thresholds, or with most engagements inside IR35, the Ltd company route delivers little advantage over sole-trader status, and you carry the extra administrative cost and compliance burden for no real upside.",
+          "The company route has to clear three hurdles at once, and income level is only the first. Profit has to be high enough and steady enough that retaining some of it inside the company is worth the running cost. Most engagements have to sit clearly outside IR35, because an inside-IR35 engagement is taxed broadly as employment income whatever the company structure says. And there has to be something to plan with: a genuinely employed spouse, a deferred income horizon, employer pension capacity.",
+          "Miss any one of the three and the company earns nothing. The pure tax saving at ordinary locum profits was never large, and the dividend ordinary and upper rates rising to 10.75% and 35.75% from 6 April 2026 shaved it again, so what is left is the extra filing, the extra records and the extra cost.",
         ],
       },
       {
@@ -475,7 +474,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Should I incorporate as a locum?",
         answer:
-          "Not automatically. Below roughly £80,000–£100,000 of sustained locum income, the administrative cost of running a limited company rarely beats sole-trader status post-tax. The IR35 reforms have removed much of the historical advantage for locums whose engagements are now determined inside IR35. We model your specific income and engagement mix before recommending.",
+          "Not automatically, and no single income figure decides it. Start with your engagement mix: since 6 April 2021 a medium or large practice issues the status determination, and every engagement it puts inside IR35 is taxed broadly as employment income regardless of the company. Then the NHS Pension position, which is more restrictive for a company locum than for a sole-trader locum on the practitioner route. Then, last, the tax arithmetic, which at 2026/27 dividend rates is a smaller factor than either of the first two. We run all three on your numbers before recommending anything.",
       },
       {
         question: "Can I access the NHS Pension Scheme as a locum?",
@@ -490,7 +489,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "I work for an umbrella. What does the umbrella actually do?",
         answer:
-          "The umbrella employs you under a contract of employment, runs PAYE on your earnings, deducts income tax and employee NI, and pays you the net. The engaging practice pays the umbrella, not you. The umbrella takes a fee (commonly £15-£30 per week or 1-2% of gross). Allowable expenses are very limited under umbrella arrangements. Umbrella is convenient and low-admin; tax-efficient it is not.",
+          "The umbrella employs you under a contract of employment, runs PAYE on your earnings, deducts income tax and employee NI and pays you the net. The engaging practice pays the umbrella, not you. The umbrella keeps a margin for doing it, and umbrellas quote that margin differently, some as a weekly amount and some as a percentage of gross, so ask for it in writing both ways before you sign, and check whether employer NIC and the apprenticeship levy are also coming out of the assignment rate. Allowable expenses are very limited under umbrella arrangements. Umbrella is convenient and low-admin. Tax-efficient it is not.",
       },
     ],
     relatedServices: [

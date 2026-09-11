@@ -55,15 +55,24 @@ export const serviceTiers: ServiceTier[] = [
   },
 ];
 
-// Stat verification:
-// 13 calculators — count of entries in Dentists/web/src/lib/tools/registry.ts `tools` array
-// 5 topic guides  — count of named category pages under src/app/blog/ (associate-tax,
-//                   buying-a-practice, practice-accounting, practice-finance, vat-and-compliance)
-// 6 service areas — count of entries in services array in src/app/services/page.tsx
-// 96% UDA line    = HP §3.A clawback threshold (deliver below 96% and the commissioner recovers)
+// Stat verification. Every value below is a count of something in this repo or a figure
+// from docs/dentists/house_positions.md. None of them is a claim about client volume,
+// turnaround or performance.
+//
+// 13 calculators    = entries in `src/lib/tools/configs/` (re-derived 2026-09-11: `ls` -> 13)
+// 5 topic guides    = named category pages under `src/app/blog/` (associate-tax,
+//                     buying-a-practice, practice-accounting, practice-finance,
+//                     vat-and-compliance); re-derived 2026-09-11
+// 5 service pages   = SERVICE_SLUGS in `src/app/services/[slug]/data.ts`. This replaces the
+//                     old "6 service areas covered": that counted the presentational
+//                     `services` array in `app/services/page.tsx` and broke silently if the
+//                     array changed, and "areas covered" read as a scope claim. The new stat
+//                     counts real published pages the reader can open.
+// 96% UDA line      = HP §3.A. Below 96% delivery the commissioner recovers the
+//                     overpayment; 96-100% is carry-forward, not clawback.
 export const siteStats: StatItemConfig[] = [
   { icon: "🧮", value: "13", label: "Free dental calculators" },
   { icon: "📚", value: "5", label: "Specialist topic guides" },
-  { icon: "⚙️", value: "6", label: "Service areas covered" },
+  { icon: "⚙️", value: "5", label: "Specialist service pages" },
   { icon: "📋", value: "96%", label: "UDA delivery clawback line" },
 ];

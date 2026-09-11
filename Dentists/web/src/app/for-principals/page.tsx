@@ -14,10 +14,10 @@ const data: AudienceStage = {
   intro:
     "Running a dental practice is a clinical job, a business management job and a tax-structure job at the same time. Most principals get clinical training; most do not get the structure training. We sit alongside as the specialist tax and finance partner you need without becoming another full-time role to manage.",
   stats: [
-    { value: "13", label: "Categories of dental tax we cover" },
+    { value: "£1m", label: "Annual investment allowance on equipment" },
     { value: "96%", label: "UDA delivery clawback line" },
     { value: "43.9%", label: "NPE ceiling on contract value" },
-    { value: "60+", label: "Posts on NHS contract economics" },
+    { value: "18%", label: "BADR rate from 6 April 2026" },
   ],
   concerns: [
     {
@@ -52,7 +52,7 @@ const data: AudienceStage = {
     },
     {
       title: "Annual profit extraction modelling",
-      body: "Salary and dividend optimisation at 2025/26 rates, employer pension contributions modelled against the tapered annual allowance, spouse employment review, holding company assessment if the structure justifies it.",
+      body: "Salary and dividend optimisation at the rates for the tax year in question, including the dividend ordinary and upper rates rising to 10.75% and 35.75% from 6 April 2026, employer pension contributions modelled against the tapered annual allowance, spouse employment review, holding company assessment if the structure justifies it.",
     },
     {
       title: "Practice valuation refresh annually",
@@ -90,7 +90,7 @@ const data: AudienceStage = {
     },
     {
       q: "How do I switch accountant without disrupting payroll?",
-      a: "Payroll is the highest-risk handover because RTI submissions run continuously. We schedule the switch for the first day of a new payroll period, take over the PAYE scheme via HMRC's online services, and run the first month in parallel with your previous accountant's records to catch any reconciliation gaps. Most switches happen seamlessly; the few that have had hiccups were when the previous accountant delayed releasing data. We have a process for that.",
+      a: "Payroll is the highest-risk handover because RTI submissions run continuously. We schedule the switch for the first day of a new payroll period, take over the PAYE scheme via HMRC's online services, and run the first month in parallel with your previous accountant's records to catch any reconciliation gaps. The variable is how quickly the outgoing accountant releases the payroll data, which is outside our control, so we agree in writing who is responsible for each RTI submission until the handover is complete.",
     },
   ],
   ctaTitle: "Get a second opinion on your practice structure",

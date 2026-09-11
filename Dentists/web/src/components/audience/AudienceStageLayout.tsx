@@ -11,7 +11,6 @@ import {
 import {
   JsonLd,
   buildFaqPage,
-  buildBreadcrumbJsonLd,
 } from "@/lib/schema/index";
 
 export type AudienceStage = {
@@ -44,10 +43,10 @@ export function AudienceStageLayout({ data }: Props) {
   const faqPage = buildFaqPage(
     data.faqs.map((f) => ({ question: f.q, answer: f.a })),
   );
-  const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
-  const schemaPayload = faqPage
-    ? [breadcrumbSchema, faqPage]
-    : [breadcrumbSchema];
+  // BreadcrumbList is emitted by <Breadcrumb> itself (components/ui/Breadcrumb.tsx),
+  // from the same items binding. Building a second one here made all four /for-*
+  // pages emit TWO identical BreadcrumbList documents. One source, one document.
+  const schemaPayload = faqPage ? [faqPage] : [];
 
   return (
     <>
@@ -64,7 +63,7 @@ export function AudienceStageLayout({ data }: Props) {
             <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
               {data.eyebrow}
             </p>
-            <h1 className="mt-2 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
               {data.heroHeading}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
@@ -80,10 +79,10 @@ export function AudienceStageLayout({ data }: Props) {
           <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {data.stats.map((s) => (
               <div key={s.label} className="text-center">
-                <div className="font-serif text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">
+                <div className="text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">
                   {s.value}
                 </div>
-                <div className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--gold)]/90 sm:text-sm">
+                <div className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--gold)] sm:text-sm">
                   {s.label}
                 </div>
               </div>
@@ -96,7 +95,7 @@ export function AudienceStageLayout({ data }: Props) {
       <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
               What we hear from {data.eyebrow.replace(/^For\s+/i, "").toLowerCase()}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
@@ -109,10 +108,10 @@ export function AudienceStageLayout({ data }: Props) {
                 key={c.title}
                 className="rounded-2xl border border-[var(--border)] bg-white p-6 transition-shadow hover:shadow-md"
               >
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--gold-soft)] font-serif text-base font-semibold text-[var(--gold-strong)]">
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--gold-soft)] text-base font-semibold text-[var(--navy)]">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="mt-5 font-serif text-lg font-semibold text-[var(--ink)]">
+                <h3 className="mt-5 text-lg font-semibold text-[var(--ink)]">
                   {c.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
@@ -128,7 +127,7 @@ export function AudienceStageLayout({ data }: Props) {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
               How we work with {data.eyebrow.replace(/^For\s+/i, "").toLowerCase()}
             </h2>
             <div className="mt-10 space-y-5">
@@ -138,12 +137,12 @@ export function AudienceStageLayout({ data }: Props) {
                   className="flex gap-5 rounded-2xl border-l-4 border-[var(--gold)] bg-white p-6 sm:p-7"
                 >
                   <div className="flex-shrink-0">
-                    <div className="font-mono text-sm font-bold tracking-tight text-[var(--gold-strong)]">
+                    <div className="font-mono text-sm font-bold tracking-tight text-[var(--navy)]">
                       {String(i + 1).padStart(2, "0")}
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">
+                    <h3 className="text-lg font-semibold text-[var(--ink)]">
                       {s.title}
                     </h3>
                     <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
@@ -162,10 +161,10 @@ export function AudienceStageLayout({ data }: Props) {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl rounded-3xl border-2 border-[var(--gold)]/30 bg-[var(--gold-soft)] p-8 sm:p-12">
             <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold-strong)]">
-                Free 10-minute practice health check
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--navy)]">
+                Speak to a dentist-only specialist
               </p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+              <h2 className="mt-3 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
                 {data.ctaTitle}
               </h2>
               <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
@@ -183,7 +182,7 @@ export function AudienceStageLayout({ data }: Props) {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl text-center">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl text-center">
               Common questions
             </h2>
             <dl className="mt-10 space-y-5">
@@ -192,7 +191,7 @@ export function AudienceStageLayout({ data }: Props) {
                   key={f.q}
                   className="rounded-2xl border-l-4 border-[var(--gold)] bg-white p-6 sm:p-7"
                 >
-                  <dt className="font-serif text-lg font-semibold text-[var(--ink)]">
+                  <dt className="text-lg font-semibold text-[var(--ink)]">
                     {f.q}
                   </dt>
                   <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
@@ -214,7 +213,7 @@ export function AudienceStageLayout({ data }: Props) {
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
                   Want to read first?
                 </p>
-                <h2 className="mt-3 font-serif text-2xl font-semibold text-white sm:text-3xl">
+                <h2 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
                   Pillar guides for {data.eyebrow.replace(/^For\s+/i, "").toLowerCase()}
                 </h2>
               </div>
@@ -223,12 +222,15 @@ export function AudienceStageLayout({ data }: Props) {
                   <Link
                     key={g.href}
                     href={g.href}
+                    data-cta="audience_related_guide"
+                    data-cta-placement="audience_related_guides"
+                    data-cta-goal="guide"
                     className={`group block rounded-2xl border border-white/15 bg-white/5 p-5 transition-all hover:border-[var(--gold)] hover:bg-white/10 ${focusRing}`}
                   >
                     <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--gold)] mb-2">
                       Pillar guide
                     </p>
-                    <h3 className="font-serif text-base font-semibold text-white group-hover:text-[var(--gold)]">
+                    <h3 className="text-base font-semibold text-white group-hover:text-[var(--gold)]">
                       {g.title}
                     </h3>
                     <p className="mt-2 text-xs leading-relaxed text-white/70">
@@ -238,7 +240,13 @@ export function AudienceStageLayout({ data }: Props) {
                 ))}
               </div>
               <div className="mt-8 text-center">
-                <Link href="/dental-guides" className={btnGold}>
+                <Link
+                  href="/dental-guides"
+                  data-cta="audience_guides_all"
+                  data-cta-placement="audience_related_guides"
+                  data-cta-goal="guide"
+                  className={btnGold}
+                >
                   Browse all pillar guides
                 </Link>
               </div>

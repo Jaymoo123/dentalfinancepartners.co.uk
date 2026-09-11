@@ -7,7 +7,8 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnGold, focusRing, siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
-import { buildService, buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib/schema/index";
+import { SERVICE_SLUGS, SERVICE_SUB_PAGES } from "@/app/services/[slug]/data";
+import { buildService, buildFaqPage, JsonLd } from "@/lib/schema/index";
 
 export const metadata: Metadata = {
   title: "Specialist Dental Accountants UK",
@@ -86,7 +87,7 @@ const services = [
     eyebrow: "Lifecycle",
     title: "Practice purchase and sale support",
     description:
-      "Financial due diligence on the seller&apos;s accounts. EBITDA normalisation. Goodwill valuation against current UK dental market multiples. SDLT and CGT planning. Section 162 relief modelling if you&apos;re incorporating before sale. BADR eligibility check.",
+      "Financial due diligence on the seller's accounts. EBITDA normalisation. Goodwill valuation against current UK dental market multiples. SDLT and CGT planning. Section 162 relief modelling if you're incorporating before sale. BADR eligibility check.",
     features: [
       "Buy-side financial due diligence",
       "Sell-side practice valuation",
@@ -99,7 +100,7 @@ const services = [
     eyebrow: "Operations",
     title: "Payroll, pension and CIS",
     description:
-      "Practice payroll for nurses, hygienists, therapists, treatment co-ordinators and trainees. Auto-enrolment workplace pension administration. CIS if you&apos;re engaging subcontracted lab technicians or refurb contractors. P11D returns and benefit-in-kind handling.",
+      "Practice payroll for nurses, hygienists, therapists, treatment co-ordinators and trainees. Auto-enrolment workplace pension administration. CIS if you're engaging subcontracted lab technicians or refurb contractors. P11D returns and benefit-in-kind handling.",
     features: [
       "Monthly PAYE and RTI submissions",
       "Workplace pension auto-enrolment",
@@ -109,6 +110,17 @@ const services = [
     href: "/contact",
   },
 ];
+
+/** What the card's link actually opens. Three of the six cards point at a guide or at
+ *  the contact form rather than at a service page, and the section standfirst used to
+ *  tell the reader to "click any heading to read the deep-dive page for that service",
+ *  which was false for those three. The label is derived from the href so it cannot
+ *  drift away from the destination again. */
+function cardLinkLabel(href: string): string {
+  if (href.startsWith("/services/")) return "Read the service page";
+  if (href.startsWith("/blog/")) return "Read the guide";
+  return "Talk to us about this";
+}
 
 const included = [
   {
@@ -136,7 +148,7 @@ const included = [
 
 const faqs = [
   {
-    question: "What does a specialist dental accountant do that a generalist accountant doesn&apos;t?",
+    question: "What does a specialist dental accountant do that a generalist accountant doesn't?",
     answer:
       "A specialist understands the NHS contract economics (UDA value variance by contract and region), the NHS Pension scheme structure (1995, 2008 and 2015 sections), goodwill amortisation rules for dental goodwill acquired after 1 April 2019, and the IR35 implications of NHS engagement status for locums. A generalist applies UK SME rules without that sector context, which is where most preventable tax leakage happens.",
   },
@@ -153,7 +165,7 @@ const faqs = [
   {
     question: "Can I switch from my current accountant mid-year?",
     answer:
-      "Yes. We handle professional clearance with your existing accountant, pull across your records, and pick up from where they finished. The handover typically takes two weeks. We do this regularly and it is no disruption to your filing position.",
+      "Yes. Professional clearance with your outgoing accountant, the transfer of your records and the handover of any work in progress are all part of a mid-year move, and none of it changes your filing deadlines. How long it takes depends on how quickly the outgoing firm releases the records, so ask any firm you speak to what they need from you and what they will chase.",
   },
   {
     question: "Do you advise on NHS Pension scheme issues?",
@@ -175,11 +187,12 @@ export default function ServicesPage() {
     serviceType: "Dental Accountancy",
     category: "Specialist Accounting Services",
   });
-  const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+  // BreadcrumbList is NOT built here. The `Breadcrumb` component already emits its
+  // own BreadcrumbList JSON-LD from the same `breadcrumbItems` binding, so building a
+  // second one here double-emitted it and a crawler picked one of the two. Same note
+  // as `app/blog/page.tsx`.
   const faqSchema = buildFaqPage(faqs);
-  const schemaPayload = faqSchema
-    ? [serviceSchema, breadcrumbSchema, faqSchema]
-    : [serviceSchema, breadcrumbSchema];
+  const schemaPayload = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 
   return (
     <>
@@ -193,7 +206,7 @@ export default function ServicesPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
               Specialist dental accountancy
             </p>
-            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
               Accountants who actually understand dental practices
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
@@ -224,7 +237,7 @@ export default function ServicesPage() {
       <section className="bg-[var(--surface)] border-b border-[var(--border)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
               Three service tiers
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
@@ -241,11 +254,11 @@ export default function ServicesPage() {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
               What we actually do for dentists
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
-              These are the six areas of work that come up across our book of dental clients. Click any heading to read the deep-dive page for that service.
+              Six areas of work that come up again and again in UK dental practice. Each card says where its link goes, and the full set of specialist service pages is listed below.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -254,13 +267,13 @@ export default function ServicesPage() {
                 key={service.title}
                 className="flex flex-col rounded-2xl border border-[var(--border)] bg-white p-7 transition-shadow hover:shadow-md"
               >
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--gold-strong)]">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-700">
                   {service.eyebrow}
                 </p>
-                <h3 className="mt-2 font-serif text-xl font-semibold text-[var(--ink)]">
+                <h3 className="mt-2 text-xl font-semibold text-[var(--ink)]">
                   <Link
                     href={service.href}
-                    className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
+                    className={`hover:text-primary-700 transition-colors ${focusRing} rounded`}
                   >
                     {service.title}
                   </Link>
@@ -271,7 +284,7 @@ export default function ServicesPage() {
                 <ul className="mt-6 space-y-2.5">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3 text-sm text-[var(--ink-soft)]">
-                      <span className="mt-0.5 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--gold-soft)] text-[11px] font-bold text-[var(--gold-strong)]">
+                      <span className="mt-0.5 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--gold-soft)] text-[11px] font-bold text-[var(--navy)]">
                         ✓
                       </span>
                       <span>{feature}</span>
@@ -281,9 +294,9 @@ export default function ServicesPage() {
                 <div className="mt-6 pt-5 border-t border-[var(--border)]">
                   <Link
                     href={service.href}
-                    className={`inline-flex items-center gap-1 text-sm font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)] ${focusRing} rounded`}
+                    className={`inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:text-primary-900 ${focusRing} rounded`}
                   >
-                    Read more
+                    {cardLinkLabel(service.href)}
                     <span aria-hidden>→</span>
                   </Link>
                 </div>
@@ -293,11 +306,49 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Specialist service pages.
+          Derived from SERVICE_SLUGS, never hand-listed, so this block cannot promise a
+          page that does not exist and cannot silently drop one that does. Before this
+          block the index reached only three of its five children, and never reached
+          /services/dental-accountants or /services/locum-dentist-tax at all. */}
+      <section className="bg-[var(--surface)] border-t border-[var(--border)]">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+              Specialist service pages
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
+              Every one of these goes into the detail: what the work covers, where the money usually leaks, and the questions worth asking before you appoint anyone.
+            </p>
+            <ul className="mt-10 grid list-none gap-4 pl-0">
+              {SERVICE_SLUGS.map((slug) => {
+                const child = SERVICE_SUB_PAGES[slug];
+                return (
+                  <li key={slug}>
+                    <Link
+                      href={`/services/${slug}`}
+                      className={`block rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 no-underline transition-shadow hover:shadow-md ${focusRing}`}
+                    >
+                      <span className="block text-lg font-semibold text-[var(--navy)]">
+                        {child.eyebrow}
+                      </span>
+                      <span className="mt-2 block text-sm leading-relaxed text-[var(--ink-soft)]">
+                        {child.metaDescription}
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* What's included */}
       <section className="bg-white border-y border-[var(--border)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
               What is included with every engagement
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
@@ -315,7 +366,7 @@ export default function ServicesPage() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">{item.title}</h3>
+                    <h3 className="text-lg font-semibold text-[var(--ink)]">{item.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{item.body}</p>
                   </div>
                 </div>
@@ -329,20 +380,20 @@ export default function ServicesPage() {
       <section className="bg-[var(--background)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
               Frequently asked
             </h2>
             <dl className="mt-10 space-y-6">
               {faqs.map((faq) => (
                 <div key={faq.question} className="rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-7">
-                  <dt
-                    className="font-serif text-lg font-semibold text-[var(--ink)]"
-                    dangerouslySetInnerHTML={{ __html: faq.question }}
-                  />
-                  <dd
-                    className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base"
-                    dangerouslySetInnerHTML={{ __html: faq.answer }}
-                  />
+                  {/* Rendered as plain children, not dangerouslySetInnerHTML. The array is a
+                      single binding feeding both this loop and buildFaqPage(faqs); when this
+                      loop decoded HTML entities and the schema builder did not, the JSON-LD
+                      shipped `doesn&apos;t` where the page showed an apostrophe. T17. */}
+                  <dt className="text-lg font-semibold text-[var(--ink)]">{faq.question}</dt>
+                  <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
+                    {faq.answer}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -358,7 +409,7 @@ export default function ServicesPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
                 Free scoping call
               </p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">
+              <h2 className="mt-3 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">
                 30 minutes, free, no obligation
               </h2>
               <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
@@ -386,7 +437,7 @@ export default function ServicesPage() {
               </ul>
             </div>
             <div className="rounded-2xl border-t-4 border-[var(--gold)] bg-white p-6 shadow-xl sm:p-8 lg:p-10">
-              <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Book your free call</h3>
+              <h3 className="text-xl font-semibold text-[var(--ink)]">Book your free call</h3>
               <p className="mt-2 text-sm text-[var(--muted)]">Tell us the situation and a specialist dental accountant will make contact.</p>
               <div className="mt-6">
                 <LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />

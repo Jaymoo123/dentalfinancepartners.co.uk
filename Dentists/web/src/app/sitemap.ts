@@ -4,6 +4,7 @@ import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/tools/registry";
 import { getAllGuides } from "@/lib/dental-guides";
 import { publishedGuideTopicsWithFile } from "@/lib/resources/content";
+import { SERVICE_SLUGS } from "@/app/services/[slug]/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -58,6 +59,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
+      alternates: hreflang(url),
+    });
+  }
+
+  // Service children (/services/[slug]). Derived from the SAME SERVICE_SLUGS the
+  // route's generateStaticParams uses, so the sitemap cannot drift from the pages
+  // that exist. They were live and indexable but absent here since launch.
+  for (const slug of SERVICE_SLUGS) {
+    const url = `${base}/services/${slug}`;
+    entries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
       alternates: hreflang(url),
     });
   }

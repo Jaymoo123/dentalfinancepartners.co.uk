@@ -14,8 +14,8 @@ const data: AudienceStage = {
   intro:
     "Locum dentists hit a tax structure decision early in working life and live with the consequences for years. Limited company, umbrella, or self-employed sole trader. There is no universally right answer; it depends on your income level, your engagement mix across NHS and private, and the IR35 determinations the practices you work at are issuing.",
   stats: [
-    { value: "3", label: "Structures we compare" },
-    { value: "£80k+", label: "Typical Ltd-co break-even" },
+    { value: "19%", label: "Corporation tax on profits up to £50,000" },
+    { value: "45 days", label: "To dispute a status determination" },
     { value: "2021", label: "When IR35 rules changed for locums" },
     { value: "6% / 2%", label: "Class 4 NIC rates either side of £50,270" },
   ],
@@ -52,7 +52,7 @@ const data: AudienceStage = {
     },
     {
       title: "Annual self-assessment for sole-trader locums",
-      body: "All locum income, expense claims, NHS Pension contributions, student loan plan, payment-on-account schedule. Filed inside the deadline. We track expense receipts via a shared bookkeeping system so you are not chasing them in January.",
+      body: "All locum income, expense claims, NHS Pension contributions, student loan plan, payment-on-account schedule. Expense receipts are tracked through a shared bookkeeping system across the year, rather than being reconstructed in the week before the 31 January filing date.",
     },
     {
       title: "Limited company accounting for PSC locums",
@@ -60,7 +60,7 @@ const data: AudienceStage = {
     },
     {
       title: "IR35 status review per engagement",
-      body: "When a practice issues a Status Determination Statement, we review whether it is correctly issued. Most are; some are not. Where the determination is challengeable we draft the appeal. Where it stands, we restructure the income flow to reflect the deduction.",
+      body: "When a practice issues a Status Determination Statement, we review whether it is correctly issued and whether reasonable care was taken in reaching it. Where the determination is challengeable we draft the appeal. Where it stands, we restructure the income flow to reflect the deduction.",
     },
     {
       title: "Mortgage-ready accounts",

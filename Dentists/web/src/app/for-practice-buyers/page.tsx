@@ -12,12 +12,12 @@ const data: AudienceStage = {
   badge: "First-time buyers · Associate-to-principal · Multi-site acquirers",
   heroHeading: "Buy your dental practice with eyes open",
   intro:
-    "Most first-time practice buyers find a practice they like, fall in love with the building, and skim the financial diligence. We are the second opinion that catches the things that turn into problems six months in. EBITDA normalisation, NHS contract review, associate agreement risk, goodwill split, tax structure.",
+    "It is easy to fall for the building and take the seller's numbers at face value. We are the second opinion on the financial side of the deal: EBITDA normalisation, NHS contract review, associate agreement risk, the goodwill and fixtures split, and the tax structure you buy through.",
   stats: [
     { value: "60-80%", label: "Typical goodwill share of price" },
     { value: "24-month", label: "BADR + Section 162 lead time" },
     { value: "0.6-1.4x", label: "EBITDA multiple range" },
-    { value: "6.5%", label: "Goodwill relief, post-April-2019 buys" },
+    { value: "6.5%", label: "Goodwill relief rate where it qualifies" },
   ],
   concerns: [
     {
@@ -86,7 +86,7 @@ const data: AudienceStage = {
     },
     {
       q: "Do I need a separate solicitor as well as you?",
-      a: "Yes. We handle the financial diligence and tax structure. A specialist dental solicitor handles the contract, legal due diligence, Companies House filings if you are buying a Ltd company, premises lease or freehold transfer, and the completion mechanics. We work alongside two or three solicitors regularly and can recommend introductions.",
+      a: "Yes. We handle the financial diligence and tax structure. A specialist dental solicitor handles the contract, legal due diligence, Companies House filings if you are buying a Ltd company, premises lease or freehold transfer, and the completion mechanics. We work alongside dental solicitors on the financial side of a deal and can make an introduction if you do not already have one.",
     },
   ],
   ctaTitle: "Buy with proper due diligence, not just legal review",

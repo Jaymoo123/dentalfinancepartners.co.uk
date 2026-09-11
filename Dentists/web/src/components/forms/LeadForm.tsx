@@ -418,7 +418,7 @@ export function LeadForm({
           href="/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium text-[var(--accent)] underline"
+          className="font-medium text-primary-700 underline"
         >
           Privacy Policy
         </a>

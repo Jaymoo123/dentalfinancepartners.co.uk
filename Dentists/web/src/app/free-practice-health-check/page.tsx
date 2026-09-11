@@ -5,7 +5,6 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
-  buildBreadcrumbJsonLd,
   buildFaqPage,
   buildService,
   JsonLd,
@@ -79,11 +78,13 @@ export default function FreePracticeHealthCheckPage() {
     serviceType: "Dental Practice Diagnostic",
     category: "Specialist Dental Accountancy Services",
   });
-  const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+  // BreadcrumbList is emitted by <Breadcrumb> itself (components/ui/Breadcrumb.tsx),
+  // from the same items binding. Building a second one here made these pages emit TWO
+  // identical BreadcrumbList documents. One source, one document.
   const faqSchema = buildFaqPage(FAQS);
   const schemaPayload = faqSchema
-    ? [serviceSchema, breadcrumbSchema, faqSchema]
-    : [serviceSchema, breadcrumbSchema];
+    ? [serviceSchema, faqSchema]
+    : [serviceSchema];
 
   return (
     <>

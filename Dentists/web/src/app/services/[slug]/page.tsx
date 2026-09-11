@@ -7,11 +7,12 @@ import { btnGold, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/
 import { siteConfig } from "@/config/site";
 import {
   buildService,
-  buildBreadcrumbJsonLd,
   buildFaqPage,
   JsonLd,
 } from "@/lib/schema/index";
 import { SERVICE_SUB_PAGES, SERVICE_SLUGS } from "./data";
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return SERVICE_SLUGS.map((slug) => ({ slug }));
@@ -63,11 +64,13 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
     serviceType: page.eyebrow,
     category: "Specialist Dental Accountancy Services",
   });
-  const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+  // BreadcrumbList is emitted by <Breadcrumb> itself (components/ui/Breadcrumb.tsx),
+  // from the same items binding. Building a second one here made these pages emit TWO
+  // identical BreadcrumbList documents. One source, one document.
   const faqSchema = buildFaqPage(page.faqs);
   const schemaPayload = faqSchema
-    ? [serviceSchema, breadcrumbSchema, faqSchema]
-    : [serviceSchema, breadcrumbSchema];
+    ? [serviceSchema, faqSchema]
+    : [serviceSchema];
 
   return (
     <>
@@ -81,18 +84,27 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
               {page.eyebrow}
             </p>
-            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
               {page.hero.heading}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
               {page.hero.intro}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className={btnGold}>
+              <Link
+                href="/contact"
+                className={btnGold}
+                data-cta="service_hero_primary"
+                data-cta-placement="service_hero"
+                data-cta-goal="contact"
+              >
                 Book a free scoping call
               </Link>
               <Link
                 href="/free-practice-health-check"
+                data-cta="service_hero_secondary"
+                data-cta-placement="service_hero"
+                data-cta-goal="health_check"
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold tracking-tight text-white backdrop-blur-sm transition-all duration-200 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]"
               >
                 Take the practice health check
@@ -109,7 +121,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
             <div className="space-y-12">
               {page.sections.map((section) => (
                 <section key={section.heading}>
-                  <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+                  <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
                     {section.heading}
                   </h2>
                   <div className="mt-6 space-y-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
@@ -132,10 +144,10 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
 
               {page.workedExample && (
                 <section className="rounded-2xl border-l-4 border-[var(--gold)] bg-[var(--gold-soft)] p-6 sm:p-8">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--gold-strong)]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--navy)]">
                     Worked example
                   </p>
-                  <h2 className="mt-3 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">
+                  <h2 className="mt-3 text-xl font-semibold text-[var(--ink)] sm:text-2xl">
                     {page.workedExample.heading}
                   </h2>
                   <div className="mt-4 space-y-4 text-base leading-relaxed text-[var(--ink-soft)]">
@@ -150,7 +162,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
             {/* Sidebar */}
             <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
               <div className="rounded-2xl border border-[var(--border)] bg-white p-6">
-                <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">
+                <h3 className="text-lg font-semibold text-[var(--ink)]">
                   Who this is for
                 </h3>
                 <ul className="mt-4 space-y-2 text-sm text-[var(--ink-soft)]">
@@ -164,7 +176,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
               </div>
 
               <div className="rounded-2xl border border-[var(--border)] bg-white p-6">
-                <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">
+                <h3 className="text-lg font-semibold text-[var(--ink)]">
                   Related services
                 </h3>
                 <ul className="mt-4 space-y-3 text-sm">
@@ -172,7 +184,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
                     <li key={r.href}>
                       <Link
                         href={r.href}
-                        className={`font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)] ${focusRing} rounded`}
+                        className={`font-semibold text-[var(--navy)] hover:text-[var(--navy-soft)] ${focusRing} rounded`}
                       >
                         → {r.label}
                       </Link>
@@ -182,7 +194,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
               </div>
 
               <div className="rounded-2xl border border-[var(--gold)] bg-[var(--gold-soft)] p-6">
-                <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">
+                <h3 className="text-lg font-semibold text-[var(--ink)]">
                   Useful next step
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
@@ -191,7 +203,10 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
                 </p>
                 <Link
                   href="/free-practice-health-check"
-                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  data-cta="service_sidebar_health_check"
+                  data-cta-placement="service_sidebar"
+                  data-cta-goal="health_check"
+                  className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--navy)] hover:text-[var(--navy-soft)] ${focusRing} rounded`}
                 >
                   Start the health check →
                 </Link>
@@ -205,13 +220,13 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
       <section className="bg-[var(--background)] border-t border-[var(--border)]">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
               Frequently asked
             </h2>
             <dl className="mt-10 space-y-6">
               {page.faqs.map((faq) => (
                 <div key={faq.question} className="rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-7">
-                  <dt className="font-serif text-lg font-semibold text-[var(--ink)]">
+                  <dt className="text-lg font-semibold text-[var(--ink)]">
                     {faq.question}
                   </dt>
                   <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
@@ -232,7 +247,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
                 Free scoping call
               </p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">
+              <h2 className="mt-3 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">
                 {page.ctaHeading}
               </h2>
               <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
@@ -240,7 +255,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
               </p>
             </div>
             <div className="rounded-2xl border-t-4 border-[var(--gold)] bg-white p-6 shadow-xl sm:p-8 lg:p-10">
-              <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Book your free call</h3>
+              <h3 className="text-xl font-semibold text-[var(--ink)]">Book your free call</h3>
               <p className="mt-2 text-sm text-[var(--muted)]">Say what you are dealing with and a dental specialist takes it from there.</p>
               <div className="mt-6">
                 <LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />

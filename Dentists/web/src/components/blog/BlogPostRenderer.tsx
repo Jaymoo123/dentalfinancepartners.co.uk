@@ -226,7 +226,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   className="not-prose rounded-lg border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-6"
                   aria-label="Key takeaways"
                 >
-                  <p className="text-xs font-bold uppercase tracking-wider text-[var(--accent-strong)]">
+                  <p className="text-xs font-bold uppercase tracking-wider text-primary-700">
                     Key takeaways
                   </p>
                   <ul className="mt-3 space-y-2">

@@ -13,6 +13,17 @@ type CTASectionProps = {
   secondaryLabel?: string;
 };
 
+/** Closing panel for the locations index, the city pages and /about.
+ *
+ *  Deliberately kept on a LIGHT ground (`--surface`). The ported footer is navy,
+ *  and this component is the last element before it on every consumer, so a navy
+ *  panel here would put navy against navy. On `--surface` the navy `btnPrimary`
+ *  label measures 17.15 and is the correct primary; `btnGold` is the dark-ground
+ *  recipe and must not be used here.
+ *
+ *  Gold appears only as the decorative rule: a graphic, never text. `--surface` is
+ *  #ffffff here, where gold text measures 2.75 and gold-strong 3.76, so both are
+ *  barred from carrying text on this panel (DESIGN_DELTA.md §2). */
 export function CTASection({
   title,
   description,
@@ -22,23 +33,23 @@ export function CTASection({
   secondaryLabel = "View services",
 }: CTASectionProps) {
   const headingId = useId();
-  
+
   return (
     <section
       className="relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-10"
       aria-labelledby={headingId}
     >
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--gold)]/50 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-[var(--gold)]"
         aria-hidden
       />
       <h2
         id={headingId}
-        className="display-serif max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-[var(--navy)] sm:text-3xl"
+        className="max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-[var(--navy)] sm:text-3xl"
       >
         {title}
       </h2>
-      <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+      <p className="mt-4 max-w-2xl text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
         {description}
       </p>
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
