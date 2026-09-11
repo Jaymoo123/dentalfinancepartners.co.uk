@@ -346,9 +346,24 @@ Before starting a site, capture and put in the prompts:
     - `SiteHeader.ctaContactGoal` — pass the site's own pre-port `data-cta-goal`.
       Default is `"form"`. Getting this wrong splits the site's live funnel history at
       the cutover, so the comparison you read afterwards is against a broken baseline.
+    - `SiteHeader.ctaMobilePlacement` — pass the site's own pre-port
+      `data-cta-placement` for the drawer CTA. Default is `"mobile_menu"`, which is
+      Property's literal. Added `0f4de663`, AFTER the note above was written, because
+      the first fix missed it: `analytics/autoCapture.ts` sends placement in the SAME
+      `cta_click` payload as goal, so it splits the same series. It is the easiest of
+      the three to miss, because the drawer renders only when open and therefore no
+      SSR crawl and no page-source review will ever see it. Read the shipped client
+      bundle.
     - `SiteFooter.showBuilderCredit` — pass `false`. Default is `true`, which puts
       Property's designer credit, a followed outbound link, on every page of the ported
       site.
+    **Who actually consumes this component, corrected 2026-09-10:** the kit CHROME is
+    imported by the ported sites only (generalist, Solicitors, and Medical when it
+    lands). **Property is NOT a consumer**: it keeps its own local `SiteHeader` and
+    `SiteFooter`. The package is shared by 19 sites; these components are not. A fix
+    reasoned about as "19 sites so the default protects Property" is reasoning about
+    the wrong set, and the first Solicitors fix made exactly that error: it wired the
+    prop on one consumer and left the other still broken.
     Do not add rival props for either; these are the supported hooks.
 
 ---
@@ -533,3 +548,169 @@ the six characters `\u00a3`, so a literal grep is useless.
 9. Deploy on the owner's word only.
 10. Archive closed memory entries, clean the scratchpad, report any CI or deploy
     noise you caused.
+
+---
+
+## 12. Your job: you are the ORCHESTRATOR, not the builder
+
+Read this before you touch anything. It is the single biggest determinant of whether a
+port finishes.
+
+**You do not write page code.** You sequence, gate, verify, commit, and talk to the owner.
+Your context is the scarce resource on a six-phase port and it is what runs out first.
+Spend it on judgement, never on file contents.
+
+### 12.1 What you keep, and why each one is on the list
+
+| Kept by you | Because |
+|---|---|
+| All git operations, from the monorepo ROOT | A sibling `<site>/.git` husk silently swallows commits and tags. It bit twice in one session. |
+| `packages/web-shared/` edits | Shared by 19 sites. Additive only, always defaulting to Property's current behaviour. |
+| Every build, serialised | Concurrent builds corrupt a shared `.next`. |
+| Deploys, migrations | Owner-triggered, every time. |
+| Owner communication | Bundled, plain English, one decision at the end. |
+| Spot-checking a claim before repeating it | An agent's summary is not evidence. Open the rendered page yourself. |
+| Per-citation factual back-patches | Where the same figure is right in one context and stale in another. |
+
+### 12.2 What you delegate, and how
+
+Delegate the reading as well as the writing. Inventories, greps, disposition drafting,
+per-phase reality checks and reviews all go to agents that return TABLES, not file dumps.
+
+- **3 to 6 work packages per phase, one agent per package**, launched in ONE message so
+  they run concurrently. Never one agent per file.
+- **Disjoint file sets, enforced by an explicit OFF LIMITS list** naming the other
+  builders' files. Agents respect it; without it they wander.
+- **Agents write their own artefacts.** A disposition slice runs 400 to 650 lines. If the
+  agent hands it back in chat you have burned your context for nothing. Tell it to Write
+  the file and reply with a receipt only.
+- **Serialise anything that blocks.** The brand-layer package blocks every other package
+  in the port, because kit components emit `primary-*` classes that render as nothing
+  until the ramp lands. Run it alone, first.
+
+### 12.3 The receipt: what every agent returns
+
+Fixed shape, terse, no preamble, no praise:
+
+1. Files created, edited or deleted, one line each.
+2. Every acceptance test with its command and its decisive output line.
+3. Link counts against the floor.
+4. Any copy it authored, in full, for your fact-QA.
+5. **Anything in the brief it found to be FALSE.**
+6. Anything it could not do. Never silently skip.
+
+Item 5 is not a courtesy. On the Solicitors port every single agent corrected the brief,
+and they were right every time: a services count, a hub count, a card-usage count, a
+premium-calculator fleet that has no routes and would have emitted five dead links, a
+"first sentence" helper that does not exist on that site, and a recommended button colour
+that was unnecessary because the live brand already cleared contrast. **Reward the
+pushback. An agent that never contradicts you is not reading.**
+
+### 12.4 Model tiering
+
+Opus for anything a human reads, all content, all reviews, all planning. Sonnet only for
+mechanical registry or config work. Never DeepSeek.
+
+---
+
+## 13. Running ports CONCURRENTLY, on one working tree
+
+Several sites are ported at once by separate agents, in the SAME checkout. This is normal
+and it works, but only under a protocol. The failure it prevents is real: nine writers
+once shared a dirty tree, one ran a repo-wide stash to get a baseline word count, hit a
+conflict on pop, and resolved it by restoring a sibling's file to HEAD **while another
+agent was editing it**.
+
+**Binding rules, for you and in every agent brief:**
+
+1. **Never a repository-wide command.** No `git stash`, `git reset`, `git checkout`, no
+   `git add -A` at the root. "Edit only this file" constrains the file, not the
+   repository, and that gap is exactly what let the incident through.
+2. **Stage explicit paths.** Before every commit run `git status --porcelain` and stage
+   only your own. You WILL see other sites' work in progress; leave it alone.
+3. **A claim about repository state is checked with a command**, never inferred from a
+   failed write. "File has been modified since read" on a single-agent file usually means
+   your own earlier write landed.
+4. **Commit at the end of each round**, not the end of the session. Uncommitted batch work
+   is what is actually at risk.
+5. **Ports do not share a `.next`**, because each site builds in its own directory. They
+   DO share the root `node_modules`, so never run a root install mid-flight.
+6. **The one genuinely shared surface is `packages/web-shared/`.** Before touching it, run
+   `git log --oneline -5 -- packages/web-shared/` to see whether a sibling port just
+   changed it. Additive only, Property's behaviour as every default, and record the new
+   prop in section 8 item 11 of this file in the SAME commit, so the next port inherits it
+   instead of inventing a rival.
+7. **Read the field notes first and add to them last:**
+   `docs/_engines/PORT_FIELD_NOTES.md`. That is where concurrent ports teach each other.
+
+**Port numbers are a shared resource too, and this is not a trivial point.** Three
+separate wrong-site measurements happened in one Solicitors session: the server failed to
+bind because another session already held the port, the failure went to a log nobody read,
+and the instrument happily crawled a DIFFERENT SITE and wrote a baseline from it. Twice
+the site was Medical, once generalist.
+
+> **RULE: read the bound port out of the server log, and assert the served page title,
+> before you trust any crawl.** Never assume the port you asked for is the port you got.
+
+Start the server redirecting output to a log, sleep, then parse the actual `localhost:NNNN`
+out of that log and curl the title to confirm it is your site before running any
+instrument against it.
+
+---
+
+## 14. Traps added by the Solicitors port (2026-09-10)
+
+On top of the 21 in section 6. Same contract: each cost real time, each has a rule.
+
+**T22. A design port silently rewrites live analytics segmentation.** Adopting the kit
+chrome flipped `data-cta-goal` from `contact` to `form`, and `data-cta-placement` from
+`header_mobile` to `mobile_menu`, on every route. Same button, same destination, but both
+are live `vw_cta_performance` segmentation values carried in the same `cta_click` payload.
+Left alone, the site's funnel history splits at the cutover and the after-reading is taken
+against a broken baseline: it looks like a drop that never happened.
+RULE: diff the FULL `data-cta` attribute set, id AND placement AND goal, rendered page
+against rendered pre-port page, on every phase that touches chrome or a CTA. An id-only
+diff passes this defect straight through. The drawer CTA renders only when the menu is
+open, so no SSR crawl sees it: read the shipped client bundle.
+
+**T23. The fix pass reasons about the wrong consumer set.** The first fix assumed the kit
+chrome was shared by 19 sites and that a Property-preserving default therefore covered
+everyone. The component is imported by TWO sites, and Property is not one of them. So the
+fix landed on one consumer and left the other broken, in a site already built and awaiting
+its owner walk.
+RULE: before fixing a shared component, grep the import path across the repo and FIX EVERY
+CONSUMER IN THE SAME COMMIT. "Shared by N sites" is a claim; derive it.
+
+**T24. A dependency that resolves only by hoisting accident.** Twice in one phase a new
+import resolved because sibling sites had hoisted the package to the root `node_modules`.
+It builds locally and fails on a clean install, which is the shape that made the estate
+undeployable for nine days.
+RULE: `python scripts/check_dependency_closure.py` belongs in EVERY builder brief's
+acceptance tests, not only the pre-deploy gate. A new import gets its declaration in the
+same commit.
+
+**T25. The contrast instrument cannot resolve `var()` colours.** `browser_check.mjs`
+reported 1,644 contrast findings on a site themed through `text-[var(--primary)]`
+arbitrary values, including ratio 1.00 white-on-white for combinations that actually
+measure 5.84:1 and pass. It falls back to white when it cannot resolve the chain.
+RULE: on a site that themes through CSS variables, the contrast half of the browser
+baseline is UNUSABLE until the port replaces those values with real ramp classes. The
+overflow and anchor halves are sound. Take contrast decisions from a hand-computed table,
+self-tested against slate-500 on white = 4.76 and slate-400 on white = 2.56, and re-capture
+the browser baseline after phase 1. Never hand the owner its raw contrast output.
+
+**T26. Dropping a font leaves its classes pointing at Times.** Retiring a second typeface
+is one line; the 193 `font-serif` classes consuming it are spread across page files that
+later phases own, so they cannot be swept in the same commit without colliding with every
+other package.
+RULE: map the retired family to the surviving one as a documented transitional no-op, so
+pages render correctly for the duration of the port. Each later phase deletes its own
+classes; the mapping goes when the count reaches zero. Never leave a visible regression in
+the tree across phases because the tidy-up belongs to someone else.
+
+**T27. The shared kit carries the reference site's own outbound link.** The kit footer
+credits Property's design studio, as a FOLLOWED external link, on every page of whatever
+site adopts it. Two sites shipped it without anyone deciding to.
+RULE: the T12 family is wider than copy. Audit any adopted component for anything
+outward-facing: external links, third-party assets, brand names, `rel` attributes. Ask the
+owner before a sibling site links out to anyone.

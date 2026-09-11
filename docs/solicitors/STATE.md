@@ -8,6 +8,109 @@ site-specific WHAT and the heartbeat. Ground-truth facts live in
 
 Last updated: 2026-09-10.
 
+## PICKUP: START HERE if you are a fresh agent on this port
+
+**Where it stands, 2026-09-11.** Phases 0 and 1 are DONE, committed and tagged
+(`port-solicitors-phase0`, `port-solicitors-phase1`). Phases 2 to 6 are not started.
+NOTHING IS DEPLOYED and production still serves `18b4f25f`, the old design. Your next
+action is Phase 2, the blog subsystem.
+
+**Read in this order before acting:**
+1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` in full. Section 12 is your job description
+   (you orchestrate, you do not write page code), section 13 is the concurrency protocol,
+   sections 6 and 14 are the 27 named traps.
+2. `docs/_engines/PORT_FIELD_NOTES.md`. What the other ports have already learned. Add to
+   it before you finish.
+3. `docs/solicitors/DESIGN_DELTA.md`. The APPROVED brand contract for this site.
+   Deviating from it is a defect.
+4. `docs/solicitors/_port/DISPOSITION_SLICE1-3.md`. Nearly 1,500 lines of file-by-file
+   spec covering every surface, written in Phase 0. Slice 2 owns calculators, services,
+   locations and the audience pages; slice 3 owns contact, post-submit, about, research,
+   resources, legal and the interruptive stack. **Treat them as a starting hypothesis, not
+   a specification: re-derive anything you rely on.**
+5. `docs/solicitors/house_positions.md`. Ground truth for every published figure.
+6. This file, top to bottom.
+
+**The reference is `Property/web`, always.** Where the shared kit, the generalist port and
+Property disagree, Property wins. The kit at `packages/web-shared/design/` is a de-branded
+extraction FROM Property, so consuming the kit is consuming Property, with the known
+exceptions listed in the field notes.
+
+**Other agents are working in this same checkout right now**, on the Medical port and on a
+content-expansion programme. Their uncommitted files WILL appear in your `git status`.
+Never run a repository-wide git command, never `git add -A` at the root, and stage explicit
+paths only. Full protocol in playbook section 13.
+
+**The verification contract, re-run after every change and not once:**
+
+```
+python scripts/check_dependency_closure.py
+cd Solicitors/web && npx tsc --noEmit
+cd Solicitors/web && npm test
+cd packages/web-shared && npm test          # if you touched the kit
+cd Solicitors/web && npx next build         # serialised, nothing else building
+cd Solicitors/web && npx next start -p <port>   # then crawl it
+node docs/_engines/instruments/sweep.mjs --site=Solicitors --base=http://localhost:<port> --sample=9999 --out=<path>
+```
+
+**Numbers to hold or beat** (the Phase 1 close, all re-derived that day):
+
+| Gate | Value |
+|---|---|
+| Build | exit 0, 294 prerendered pages |
+| Link floor | 0 breaches across 274 routes |
+| Unique internal links | 10,510 (pre-port baseline was 5,343) |
+| `data-cta` | 774, zero regressions |
+| Visible em-dashes | 330, zero regressions |
+| Solicitors tests | 15 files / 204 tests |
+| web-shared tests | 19 files / 406 tests |
+| Dependency closure | OK across 19 sites |
+
+A drop in any of these is a blocker, not a nit. The link floor is the whole safety net:
+`docs/solicitors/_port/link_baseline.json` is the authority and carries the production SHA
+and its deriving command.
+
+**Read the bound port out of the server log and assert the served page title before you
+trust any crawl.** Three wrong-site measurements happened in one session because another
+agent's server held the port and the instrument crawled a different site entirely.
+
+**Phase order from here:** 2 blog subsystem, 3 article templates and hubs, 4 calculators
+(including the approved ResultGate), 5 homepage and pillars and locations, 6 contact,
+post-submit, research, resources, legal, interruptive restyle and the rule-based content
+sweep. Each phase: plan, build in parallel work packages, manager-verify, INDEPENDENT
+adversarial review against the rendered DOM, gap-fix, re-review, tag, commit. A review that
+finds nothing has failed; both Phase 1 reviews found real defects and the second found a
+defect the first fix had introduced.
+
+**Owner decisions already taken, do not re-ask:** crimson `#c41e3a` stays primary with the
+button ground pinned to the brand hex; the warning ladder is W1 (amber-700, orange-700,
+fuchsia-700, violet-700), off red; Cormorant Garamond is dropped; our own published pricing
+is removed across all ~15 instances; a skippable calculator ResultGate ships on the generic
+fleet; the footer sister-site block is removed.
+
+**Owner questions still OPEN, bundle them, do not drip:**
+1. Should the designer credit appear on sibling sites the studio did not design? It is
+   currently off for Solicitors and generalist.
+2. The header shows two reds: the wordmark icon and rule at rose-600 `#ec003f` (the kit
+   hardcodes `text-primary-600`) against the brand crimson on the button. Both clear
+   contrast; the delta asked for the icon to be the brand. Match them?
+3. The homepage hero loads an external Unsplash image, a live third-party dependency on the
+   main lead page, where the standard ships zero photography. Replace with the motif?
+
+**Known live defects still to fix, recorded in full below:** our pricing in ~15 places,
+`/resources` 404 linked from 8 pages, the five `/services/[slug]` pages missing from the
+sitemap, 10 dead internal links, four turnaround promises on `/contact`, three WCAG
+failures on the research pages, charts removed from the accessibility tree, an ungated
+duplicate calculator on `/embed`, a stale "6 calculators" claim, and an unsourced lock-up
+figure on the homepage.
+
+**Transitional state you must not mistake for a bug:** `font-serif` is mapped to the sans
+stack in `globals.css` as a documented no-op, because dropping Cormorant left 193 classes
+across 39 page files that later phases own. Each phase deletes its own; the mapping line
+goes when the count reaches zero.
+
+---
+
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
 
 The Property-standard design port has started. Method:
