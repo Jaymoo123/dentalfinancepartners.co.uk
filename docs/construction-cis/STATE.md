@@ -119,13 +119,20 @@ that names s.72A is legitimate, and flagging it would fire on correct published 
    sweep's scope. Live strings: `src/lib/leads/aux-cron.ts:164` and `src/lib/leads/reply-ack.ts:48`
    and `:181` ("Speak soon"), plus the "call shortly" framing documented at `reply-ack.ts:7`. The
    site-facing tier of this defect (23 breaches across 19 files) is closed.
-5. **The designer credit wording.** Decision TAKEN 2026-09-11 and recorded at
-   `DESIGN_DELTA.md:229`, kept here because it reads like an open item in older notes: the kit
-   footer (`packages/web-shared/design/chrome/SiteFooter.tsx:132`) defaults `showBuilderCredit` to
-   TRUE and ships the studio's credit as a followed outbound link. "Built by" is literally true of
-   Property, which the studio built, and is NOT true of a ported site. Trade's footer is local and
-   has no credit block, so the absence is correct and structural. Do not add one. Re-open only if
-   he wants different wording.
+5. **The designer credit. NOT AN OPEN DECISION. CLOSED 2026-09-11, and the text that stood here
+   was wrong.** This item previously read: *"Trade's footer is local and has no credit block, so
+   the absence is correct and structural. Do not add one."* **That is false on both counts, and it
+   caused a Phase 5 planner to file the credit's presence as the headline defect of the port.** The
+   owner reversed the phase 1 position at 10:42 on 2026-09-11 (`git log -1 --format='%ad%n%B'
+   6966c1f1`): `showBuilderCredit` flips to TRUE on both kit-chrome consumers because "the owner
+   wants the Double Wired Creative credit estate-wide, not only on the site the studio designed".
+   Trade's LOCAL footer carries its own credit block at
+   `src/components/layout/SiteFooter.tsx:150-161`, added by `72fe3261` at 18:39 the same day
+   (`git log -1 --format=%ad 72fe3261`), which is AFTER the reversal and consistent with it. It
+   renders on all 246 routes: `curl -s http://localhost:3167/ | grep -o 'Built by Double Wired
+   Creative'` returns the string. It is a followed outbound link (`rel="noopener noreferrer"`, no
+   `nofollow`), accepted estate-wide by the same decision. **Do not delete it.** See
+   `DESIGN_DELTA.md:229`, superseded in place on the same date.
 6. **The dormant pricing config.** `niche.config.json` carries a complete `packages` CTA variant
    publishing our own price list (£24 / £49 / £79 a month) across the hero, the sticky bar, every
    blog CTA and `/contact`. It does not render today because `cta.variant` is `"leadgen"`, so

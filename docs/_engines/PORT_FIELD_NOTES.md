@@ -158,11 +158,22 @@ may have just changed it.
 **2026-09-11, Medical phase 3. The kit's BLOG components are unusable on a FLAT-URL site, and
 the failure mode is a dead link on every hub.** On Medical `/blog/<category>/<slug>` returns
 404 and `/blog/<slug>` returns 200, so adopting `BlogCategoryHub` as the disposition instructed
-would have published every hub article link dead. Three agents hit it independently, and
-`construction-cis`, the estate's other flat site, had already reached the same conclusion and
-points its shared crawl-path guard at its own local list. Medical mirrors the kit markup
-locally with flat hrefs; the cost is eight similar hub layouts instead of eight data files, and
-no pagination control on the hubs.
+would have published every hub article link dead. Three agents hit it independently. Medical
+mirrors the kit markup locally with flat hrefs; the cost is eight similar hub layouts instead of
+eight data files, and no pagination control on the hubs.
+**CORRECTED IN PLACE 2026-09-11.** This entry previously said "and `construction-cis`, the
+estate's other flat site, had already reached the same conclusion and points its shared
+crawl-path guard at its own local list". **`construction-cis` is NOT flat. Its blog is NESTED,
+the same shape as Property's, so it is not a second data point for this lesson and never was.**
+Evidence: the route directory is `construction-cis/web/src/app/blog/[category]/[slug]/` (there is
+no `src/app/blog/[slug]/`); `construction-cis/web/src/app/blog/page.tsx:63` builds
+`` `${siteConfig.url}/blog/${p.categorySlug}/${p.slug}` ``; and
+`docs/_engines/instruments/sweep.mjs:61` defaults `--article-depth=3` with the comment naming
+Medical as the flat exception. Confirmed live against the Trade production server on :3167:
+`/blog/expenses/allowable-expenses-cis-subcontractor` returns **200**,
+`/blog/allowable-expenses-cis-subcontractor` returns **404** — exactly the inverse of Medical.
+Medical remains the estate's ONLY flat site, and the lesson below is unchanged: the kit blog
+components hardcode Property's nested href and Medical had to mirror them locally.
 Deriving command: `grep -n "href={\`/blog" packages/web-shared/design/blog/*.tsx`, then
 `curl -s -o /dev/null -w "%{http_code}" <base>/blog/<category>/<slug>`.
 RULE: before adopting any kit component that BUILDS a URL, check whether it builds YOUR site's
