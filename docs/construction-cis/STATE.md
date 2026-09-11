@@ -141,14 +141,23 @@ that names s.72A is legitimate, and flagging it would fire on correct published 
    the switch is safe to throw, or accept the risk in writing.
 
 **What the next session must do first, before Phase 5.**
-1. **Re-capture `_port/browser_baseline.json` with the repaired instrument.** The committed capture
-   was taken while `browser_check.mjs` was oklch-blind on contrast, so **every oklch-coloured
-   element is simply ABSENT from it rather than recorded as passing**. A review already read that
-   absence as evidence and reported 16 routes with "NEW problems" that were not new, only newly
-   visible. The instrument was fixed at `bf231f1a`; the baseline was not re-taken because it needs
-   a running server, so it is a deliberate scheduled step, not a side effect. Until it lands, a
-   "NEW" contrast finding derived from a diff against that file must be checked against the source
-   before it is believed. See the READ FIRST block at `_port/GROUNDS_BASELINE.md:3`.
+1. ~~Re-capture `_port/browser_baseline.json`.~~ **DONE 2026-09-11 19:55, and it disproved the
+   reason it was ordered.** This item previously said the 11:31 capture was taken while
+   `browser_check.mjs` was "oklch-blind on contrast", so every oklch-coloured element was ABSENT
+   from it rather than recorded, and that a review had read that absence as evidence and reported
+   16 routes with "NEW problems" that were only newly visible. **That premise is FALSE.**
+   `grep -o 'oklch(' browser_baseline_OLD.json | wc -l` returns **2,586 of the old capture's 5,466
+   contrast findings**; the canvas-paint contrast path dates from the instrument's first commit
+   `08cee664` (2026-08-25); and `git log -1 --format=%B bf231f1a` says in its own words that it
+   repaired the `--grounds` classifier ONLY, with no hunk in the contrast block. The contrast logic
+   is byte-identical across both captures, so **the entire delta is real remediation from phases 3
+   and 4** (`--accent-strong: #c2410c` introduced, `--accent` demoted to non-text use). Outcome:
+   contrast findings **5,466 → 352** (100 → 35 distinct), routes with findings **166 of 166 → 24 of
+   166**, anchor gaps 852 → 668, overflow 0 across 664 loads; identical key set, 664 loads over 166
+   routes at 4 widths, self-test `{"ok":true,"measured":{"slate500OnWhite":4.76,"slate400OnWhite":2.56}}`,
+   0 unparseable colours. Write-up: `_port/BROWSER_BASELINE_RECAPTURE.md`. The GROUNDS defect
+   behind `bf231f1a` was real and is unaffected; see the READ FIRST block at
+   `_port/GROUNDS_BASELINE.md:3`.
 2. **Then Phase 5, per `_port/PHASE5_PLAN.md`.**
 
 **Owner decisions already taken 2026-09-11, do not re-ask.**
@@ -223,8 +232,11 @@ that names s.72A is legitimate, and flagging it would fire on correct published 
   an `lg:hidden` burger. Both are `lg:hidden` now, `SiteHeader.tsx:321-326`.
 - **79 routes dark-on-dark is STALE.** It is 4, and they are Phase 5 and Phase 6 routes.
 - **`browser_check.mjs` resolved every colour on this site (0 unparseable)**, so playbook trap 25
-  does not reproduce here. This is still true, and it is NOT the same thing as the oklch contrast
-  blindness above: the parser resolved the colours and then classified them wrongly.
+  does not reproduce here. Still true, and re-confirmed by the 19:55 re-capture (0 unparseable).
+  **Corrected 2026-09-11 19:55:** this bullet used to add "and it is NOT the same thing as the
+  oklch contrast blindness above". There was no contrast blindness. The oklch defect was confined
+  to the `--grounds` classifier (`git log -1 --format=%B bf231f1a`); the contrast path painted and
+  read back oklch correctly from its first commit `08cee664`.
 
 **An honest note on `_port/PHASE3_PLAN.md`.** Its work packages all carry the acceptance test
 `totalDashes == 2` (`PHASE3_PLAN.md:241`). **That test was unsatisfiable on the day it was
@@ -285,10 +297,16 @@ TD-K2). Still open and worth knowing:
 1. `DetailsForm.tsx:192` tells the user "we only use this to arrange your free review" on the page
    that collects their phone number, against a privacy policy disclosing sharing with up to six
    firms.
-2. **Every primary button on the site is white on orange-500 at 2.80:1**, below even the 3:1
-   graphics floor. Article links measure 3.16, the eyebrow 2.68, the footer fine print 2.42.
-   Measured two independent ways, hand-computed and instrument. The token layer is in; the
-   remaining instances are Phase 5 and 6 surfaces.
+2. ~~Every primary button on the site is white on orange-500 at 2.80:1.~~ **CLOSED 2026-09-11
+   19:55.** This item asserted white-on-orange primary buttons at 2.80-2.89 (**2,477 findings** in
+   the 11:31 capture), article links at 3.16-3.58 and footer fine print at 2.42-2.47 as CURRENT.
+   The 19:55 re-capture reports **0 of each**. The "eyebrow at 2.68" figure was in NEITHER capture
+   and should never have been quoted. This is remediation, not absence: `/` reports
+   `unrendered: []` at both desktop widths and the button markup is still served, white on
+   `var(--btn-ground)` = `--accent-strong` `#c2410c` = 5.18 on white
+   (`curl -s localhost:3167/ | grep -o '<button[^>]*>[^<]*</button>'`). What remains on contrast is
+   352 findings over 24 routes, the largest families being on-orange numerals and small grey
+   metadata; see `_port/BROWSER_BASELINE_RECAPTURE.md`.
 3. `StickyCTA.tsx:147` ships `data-cta-id`, which `autoCapture.ts` does not match, so the site's
    only persistent site-wide CTA has never once recorded a click.
 4. TD-34: refund-average instances that are hedged as typical or illustrative, which house

@@ -1,19 +1,34 @@
 # TRADE (construction-cis) SECTION-GROUNDS BASELINE
 
-> **READ FIRST, 2026-09-11: `_port/browser_baseline.json` IS OKLCH-BLIND ON CONTRAST.** That
-> capture was taken BEFORE the instrument was repaired, so every oklch-coloured element is
-> simply absent from it rather than recorded as passing. Its contrast half is therefore
-> untrustworthy: a review read it as evidence and reported 16 routes with "NEW problems" that
-> were not new, only newly visible. The section-grounds half of this document is unaffected
-> (it was recomputed with the fixed instrument, see the update below).
+> **READ FIRST, CORRECTED 2026-09-11 19:55: THE "OKLCH-BLIND ON CONTRAST" CLAIM WAS FALSE.**
+> This block previously said `_port/browser_baseline.json` (captured 11:31) was untrustworthy on
+> CONTRAST because the instrument was oklch-blind at the time, so oklch-coloured elements were
+> absent from it rather than recorded, and that a review had therefore read absence as evidence
+> and reported 16 routes with "NEW problems" that were only newly visible. **None of that holds.**
+> A GROUNDS defect was over-generalised to the CONTRAST half of the same file. Four checks:
 >
-> Consequences until it is replaced:
+> - `grep -o 'oklch(' browser_baseline_OLD.json | wc -l` → **2,586 of the old capture's 5,466
+>   contrast findings already carry `oklch()` colours**, e.g. `button "Do not track me" ratio=2.47
+>   floor=4.5 size=12px color=oklch(0.708 0 0)`. It was never blind.
+> - The canvas-paint contrast path dates from the instrument's FIRST commit:
+>   `git show 08cee664:docs/_engines/instruments/browser_check.mjs | grep -n fillStyle` (2026-08-25).
+> - `git log -1 --format=%B bf231f1a` says in its own words that it repaired the `--grounds`
+>   classifier only; `git diff bf231f1a~1 bf231f1a -- .../browser_check.mjs` touches no hunk in the
+>   contrast block.
+> - So the contrast logic is byte-identical across the two captures, and the whole delta is REAL
+>   remediation from phases 3 and 4 (`--accent-strong: #c2410c` introduced, `--accent` demoted to
+>   non-text use). Re-capture 19:55: contrast findings **5,466 → 352** (100 → 35 distinct), routes
+>   with findings **166 of 166 → 24 of 166**, anchor gaps 852 → 668, overflow 0 across 664 loads.
+>   Both captures are 664 page-loads over 166 routes at 4 widths. Self-test
+>   `{"ok":true,"measured":{"slate500OnWhite":4.76,"slate400OnWhite":2.56}}`, 0 unparseable colours.
+>   Written up at `_port/BROWSER_BASELINE_RECAPTURE.md`.
 >
-> - A re-capture with the repaired instrument is REQUIRED before the Phase 5 review. It needs a
->   running server, so it is a deliberate, scheduled step, not a side effect of another task.
-> - Until that re-capture lands, a "NEW" contrast finding derived from a diff against
->   `browser_baseline.json` must be checked against the source file before it is believed.
->   Absence from the baseline is not evidence that a colour was ever passing.
+> **The GROUNDS half of the story below is TRUE and stands unchanged**: the `--grounds` mode's
+> `isDark` helper pulled digits out of a colour string and divided by 255, so every `oklch()`
+> ground classified as dark; it could not see `<article>`; and its opacity filter matched one
+> literal value. It reported 102 breaching routes where the real figure is 79, and named two route
+> families that were not in breach. That defect was real and was repaired at `bf231f1a`. It simply
+> never touched contrast.
 
 Authoritative pre-Phase-3 measurement of DESIGN_SYSTEM section 9 ("consecutive bands must not
 share a ground", "navy must never touch navy") across the whole site. Written to give Phase 3 a
