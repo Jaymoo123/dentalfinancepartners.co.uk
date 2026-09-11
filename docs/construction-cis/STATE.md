@@ -1,5 +1,102 @@
 # construction-cis (Trade Tax Specialists) — site state
 
+## PICKUP BLOCK (read this first) - design port, 2026-09-11
+
+**Where it stands.** The Property-standard design port is at **PHASE 0 COMPLETE, NOTHING BUILT,
+NOTHING DEPLOYED.** Phase 0 artefacts are committed at `4d2bfeaa` and live in
+`docs/construction-cis/_port/` (README, BRAND_LAYER, three DISPOSITION slices, LIVE_DEFECTS,
+FUNNEL_BASELINE, link_baseline.json, sweep_baseline.json, browser_baseline.json) plus the brand
+contract at `docs/construction-cis/DESIGN_DELTA.md`. Over 3,000 lines of file-by-file spec. Read
+the slices before touching code: they are the spec, this file is the state.
+
+**What is next.** Phase 1: token foundation, then `layout-utils`, then the guard tests and the
+pre-port CTA-triple snapshot, then chrome. The numbered execution order for the whole port is
+`_port/DISPOSITION_SLICE3.md` section 10. Phase 1 runs ALONE and FIRST: the brand ramp blocks
+every other package, because kit components emit `primary-*` classes that render as nothing until
+the ramp lands.
+
+**Owner decisions already taken 2026-09-11, do not re-ask.**
+- Brand stays orange (`#f97316` = orange-500). Warning and penalty semantics move OFF orange.
+- All six phases run. **Deploy is owner-gated, every time.**
+- Warning ladder T-W1 = red-600 / pink-700 / blue-700 / indigo-900 plus on-dark twins. Four steps,
+  evidenced from this site's own penalty content. See DESIGN_DELTA section 1.
+- `/admin/analytics/**` is EXEMPT from the port and from the ramp sweep (Medical M-L11 precedent).
+
+**What not to re-measure, and what not to trust.**
+- Production SHA `18b4f25f39cd0c4aa084e582d69a87c8a10710ac`, from the Vercel production TARGET,
+  not the deployments listing. Working tree equals production for `construction-cis/`.
+- Baseline: 246 routes, 5,301 internal links, 620 `data-cta`, 36 dashes, 246/246 routes clean,
+  0 dead internal links. Build green at 275 pages.
+- **The dash target is 2, not 0.** The sweep regex counts en-dashes too, and 2 of the 36 are
+  legitimate numeric ranges that `LIVE_DEFECTS.md` TD-28 protects. All 36 sit on 6 calculator
+  pages.
+- Corpus, counted at source: **45** trade types (a `grep -c 'slug:'` wrongly gives 47 because two
+  lines are `slug: string` annotations), **12** calculators with `BESPOKE` empty, **82** blog posts
+  across 8 categories, **50** glossary terms, **25** locations, **3** published resource guides.
+  The older counts further down this file are STALE and struck through.
+- Property does NOT consume the kit chrome. Only `generalist` and `Solicitors` do. Trade runs its
+  own local header and footer, as Property does. Any reasoning of the form "the kit default
+  protects Property" is about a two-consumer set, not the estate.
+- `StatsBar` here is a pure server component printing a literal string, so Generalist's count-up
+  SSR defect does NOT reproduce. Do not "fix" it.
+- The 4 research pages carry no `role="img"` and no `aria-hidden` wrapper, so that defect does not
+  reproduce either. `PremiumBarChart.tsx` DOES (TD-K2, byte-identical on Medical).
+- `browser_check.mjs` resolved every colour on this site (0 unparseable), so trap 25 does not
+  reproduce here. Note that Git Bash mangles bare route arguments into Windows paths: pass
+  `MSYS_NO_PATHCONV=1` and quote them as `"//"`.
+- `python` works on this machine; `python3` is a Microsoft Store stub.
+
+**Live defects found that are NOT design work: 32, plus 2 in the shared kit.** Full catalogue with
+file and line in `_port/LIVE_DEFECTS.md` (TD-01 to TD-30, TD-K1, TD-K2), plus TD-31 and TD-32
+raised by slice 3. The ones that matter most:
+1. `priceRange: "££"` publishes our own fee band in JSON-LD on 26 surfaces, and the same line
+   is forked in `packages/web-shared/schema/local-business.ts:127`, so fixing one end alone leaves
+   it live.
+2. A "30% of the tax lost" director penalty on 3 surfaces plus a calculator, which
+   `house_positions.md` bans BY NAME as a corrected fabrication. The same lines also misattribute
+   it to "Finance Bill 2026".
+3. A third-party marketing refund average republished as OUR client base's average on 10 city
+   pages.
+4. `s.62B` given as 20% where it is 100%, and the 12-month CIS300 penalty as 100% where it is 5%.
+   Note: the 2026-06-16 session below records s.62B as fixed. It is live again, or was never fully
+   swept. Re-verify rather than assume.
+5. `DetailsForm.tsx:192` tells the user "we only use this to arrange your free review" on the page
+   that collects their phone number, against a privacy policy disclosing sharing with up to six
+   firms.
+6. **Every primary button on the site is white on orange-500 at 2.80:1**, below even the 3:1
+   graphics floor, on every page. Article links measure 3.16, the eyebrow 2.68, the footer fine
+   print 2.42. Measured two independent ways, hand-computed and instrument.
+7. The burger appears below 1024px but the drawer is `md:hidden`, so **navigation is unreachable
+   between 768px and 1023px.** Verified against the rendered DOM.
+8. `/blog` server HTML carries **12 of 82** articles, because the list slices behind button
+   pagination. The blog is 54% of this site's traffic.
+9. `StickyCTA.tsx:147` ships `data-cta-id`, which `autoCapture.ts` does not match, so the site's
+   only persistent site-wide CTA has never once recorded a click.
+
+**Conversion reality, and it reorders the work.** Post bot-gate, 19 days to 2026-09-11: **203 clean
+sessions, and 3 leads in the site's entire history** (first 2026-08-17). 4.93 leads per 1,000
+sessions against Property's 10.80. The leak is sessions-to-form-start, 0.99% against Property's
+6.16%, a 6.2x gap, and NOT start-to-complete. By family: blog articles 110 sessions and ZERO
+completions; CIS template pages 27 sessions with 28 download clicks; `/for/[slug]` 24 sessions and
+zero form views; **the homepage got 4 sessions and the three service pillars got 1 between them.**
+So the homepage rebuild stays in scope but is NOT the centrepiece, and the blog plus the template
+family carry the upside. Forms DO already exist on `/for/[slug]` and `/cis-invoice-template`: the
+defect is that the hero CTAs leave the page and the form sits below the FAQ.
+
+**An estate-wide analytics finding, not specific to this site.** `web_events.is_bot` does NOT
+inherit `web_sessions.is_bot`: 18.2% of this site's nominal sessions and 9.0% of Property's are
+flagged bot on the session row and clean on the event rows. Every figure above uses the strict
+both-flags-clean definition. Medical's `_port/FUNNEL_BASELINE.md` numbers are loose-definition and
+are inflated by this.
+
+**Known fragile test, not a port defect.** `src/tests/lead-submit-route.test.ts` does a cold dynamic
+import taking 4.64s against a 5s timeout. It fails under concurrent load and passes isolated. I
+reddened it once myself by running the suite during a build. Raising its timeout is a leftover, not
+port work.
+
+---
+
+
 Last updated 2026-06-16. The 8th estate site. **LIVE + HEALTHY at www.tradetaxspecialists.co.uk** (227 routes). Deployed to prod 2026-06-16 (the DB migrations had ALREADY been applied in the rushed pre-break session, so the site was serving traffic before this session; this deploy shipped the QA-clean content + 4 conversion levers).
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
@@ -34,7 +131,7 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 
 ## RESUME HERE (next manager)
 
-The site carries **35 blog pages** (wave 1 = 15 through the full QA chain; wave 2 = 20 written but NOT yet QA'd), build green (95 static routes). Calculator fleet live (8 tools). Trade pages = 15. Schema layer fully wired. llms-full.txt includes calculator fleet.
+~~The site carries **35 blog pages** (wave 1 = 15 through the full QA chain; wave 2 = 20 written but NOT yet QA'd), build green (95 static routes). Calculator fleet live (8 tools). Trade pages = 15.~~ **STALE. Corrected 2026-09-11: 82 posts, 12 calculators, 45 trade pages, build green at 275 pages. See the PICKUP BLOCK at the top of this file.** Schema layer fully wired. llms-full.txt includes calculator fleet.
 
 Wave-2 posts written 2026-06-12: 5 Opus pillars (cis-april-2026-rule-changes, cis-self-assessment-complete-guide, cis-vs-paye-complete-comparison, gross-payment-status-cash-flow-guide, cis-back-years-refund-guide) + 15 Sonnet clusters (see content/blog/ for full list). Same QA standard: HP-locked figures, no em-dashes, raw HTML body, 6+ FAQs per post. **Wave-2 posts HAVE NOT had the formal QA sweep chain run** (sweeps + judge panels + fact-auditor) — this is the next step before deploy.
 
