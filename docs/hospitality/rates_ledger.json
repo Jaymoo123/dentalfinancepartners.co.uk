@@ -229,28 +229,28 @@
     "key": "draught_relief_beer_wine_spirits_3p5_to_8p5_abv",
     "value": "19.45",
     "unit": "£/litre pure alcohol",
-    "applies_from": "2023-08-01",
+    "applies_from": "2026-02-01",
     "source_url": "https://www.gov.uk/guidance/alcohol-duty-rates",
-    "verified_at": "2026-07-12",
-    "notes": "Draught rate for beer, spirits, wine and other fermented products 3.5% to below 8.5% ABV"
+    "verified_at": "2026-09-11",
+    "notes": "Draught rate for beer, spirits, wine and other fermented products 3.5% to below 8.5% ABV Rate uprated 1 February 2026; the strength-based STRUCTURE dates from 1 August 2023 but this cash rate does not. Alcohol duty uprates on 1 February, not 6 April, so this rate expires inside 2026/27 on 1 February 2027."
   },
   {
     "key": "draught_relief_still_cider_3p5_to_8p5_abv",
     "value": "8.95",
     "unit": "£/litre pure alcohol",
-    "applies_from": "2023-08-01",
+    "applies_from": "2026-02-01",
     "source_url": "https://www.gov.uk/guidance/alcohol-duty-rates",
-    "verified_at": "2026-07-12",
-    "notes": "Draught rate for still cider and sparkling cider 3.5% to 5.5% ABV"
+    "verified_at": "2026-09-11",
+    "notes": "Draught rate for still cider and sparkling cider 3.5% to 5.5% ABV Rate uprated 1 February 2026; the strength-based STRUCTURE dates from 1 August 2023 but this cash rate does not. Alcohol duty uprates on 1 February, not 6 April, so this rate expires inside 2026/27 on 1 February 2027."
   },
   {
     "key": "packaged_beer_duty_3p5_to_8p4_abv",
     "value": "22.58",
     "unit": "£/litre pure alcohol",
-    "applies_from": "2023-08-01",
+    "applies_from": "2026-02-01",
     "source_url": "https://www.gov.uk/guidance/alcohol-duty-rates",
-    "verified_at": "2026-07-12",
-    "notes": "Standard packaged rate for comparison with draught relief rate"
+    "verified_at": "2026-09-11",
+    "notes": "Standard packaged rate for comparison with draught relief rate Rate uprated 1 February 2026; the strength-based STRUCTURE dates from 1 August 2023 but this cash rate does not. Alcohol duty uprates on 1 February, not 6 April, so this rate expires inside 2026/27 on 1 February 2027."
   },
   {
     "key": "mtd_itsa_threshold_from_april_2026",
