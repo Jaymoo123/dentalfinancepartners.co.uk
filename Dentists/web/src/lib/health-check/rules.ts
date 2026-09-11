@@ -32,7 +32,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
         : "At your profit level, a limited company often saves 5-12% net once corporation tax, dividends and director salary are modelled together. Without NHS Pension membership, the main downside of incorporating doesn't apply to you.",
       action:
         "Book a 30-minute scoping call to model both structures with your actual numbers and the NHS Pension impact.",
-      estimatedSaving: nhsActive ? "Variable — pension loss must be netted" : "5-12% of net take-home",
+      estimatedSaving: nhsActive ? "Variable, pension loss must be netted" : "5-12% of net take-home",
       reference: "/dental-guides/practice-profit-extraction-partnership-vs-ltd",
     });
   }
@@ -240,7 +240,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       id: "badr-clock",
       severity: "high",
       category: "exit",
-      title: "BADR 2-year qualifying clock — confirm it's running",
+      title: "BADR 2-year qualifying clock, confirm it's running",
       detail: incorporated
         ? "Business Asset Disposal Relief on a share sale requires 5%+ shareholding, employee/officer status, and 2 years of qualifying ownership. If any of these aren't in place, you forfeit BADR (14% in 2025/26, 18% from 6 April 2026 onwards). On a £1m gain, that's £100,000+ of additional CGT."
         : "BADR on an asset sale of an unincorporated trade requires 2 years of qualifying ownership. The conditions need to be confirmed before the sale completes. Consider whether pre-sale incorporation via Section 162 makes a share-sale structure more attractive.",
@@ -271,7 +271,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "goodwill",
       title: "Practice acquisition due diligence is decisive",
       detail:
-        "The 90 days before completion are where price gets adjusted, structure gets fixed, and post-completion problems get prevented. NHS contract risk, associate agreements, equipment age, premises position, EBITDA normalisation — these each affect the offer.",
+        "The 90 days before completion are where price gets adjusted, structure gets fixed, and post-completion problems get prevented. NHS contract risk, associate agreements, equipment age, premises position, EBITDA normalisation: these each affect the offer.",
       action: "Get specialist due diligence support before submitting an offer.",
       reference: "/dental-guides/practice-purchase-financial-due-diligence",
     });
@@ -284,7 +284,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "exit",
       title: "Pre-sale planning should start 24 months out",
       detail:
-        "BADR eligibility (2-year qualifying period), EBITDA normalisation (showing in the accounts buyers will see), Section 162 incorporation (if pre-sale incorporation is the route) — none of these can be done in the last 6 weeks. The earliest decisions matter most.",
+        "BADR eligibility (2-year qualifying period), EBITDA normalisation (showing in the accounts buyers will see), Section 162 incorporation (if pre-sale incorporation is the route): none of these can be done in the last 6 weeks. The earliest decisions matter most.",
       action:
         "Begin pre-sale planning now even if exit is 3-5 years away.",
       reference: "/dental-guides/goodwill-valuation-and-sale-playbook",
@@ -398,7 +398,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       id: "multi-associate-structure",
       severity: "low",
       category: "structure",
-      title: "Multi-associate practice — check the structure scales",
+      title: "Multi-associate practice, check the structure scales",
       detail:
         "Practices with 2+ associates and 7,500+ UDAs reach the scale where Ltd-co structure (or LLP with multiple members) starts winning meaningfully on tax. The structure that worked when you were single-handed often isn't optimal once you've built a team.",
       action: "Review the structure against current scale.",

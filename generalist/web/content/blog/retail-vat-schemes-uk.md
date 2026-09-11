@@ -31,6 +31,22 @@ faqs:
     answer: "You choose one of the three retail schemes and apply it to your gross daily takings. Under point of sale you take the standard-rated takings your till has already separated and multiply by the VAT fraction of one sixth. Under apportionment you multiply total takings by the ratio of standard-rated purchases to all purchases for resale, then apply the fraction. Under direct calculation you mark the minority-rate goods up to expected selling prices, then apply the fraction to that figure."
   - question: "What records does HMRC expect from a cash retail business?"
     answer: "A daily gross takings record: the till reading or roll for each trading day, cash counted and banked, card settlement, and separately recorded amounts for anything that never rang through the till, such as staff sales, own consumption, refunds and voids. Notice 727 requires the record to be made daily and kept for six years. Making Tax Digital for VAT has applied to all VAT-registered businesses since April 2022, so the totals also have to reach your return through digital records and compatible software."
+  - question: "What is a retail scheme?"
+    answer: "A retail scheme is a permitted method of working out how much output VAT sits inside your gross takings when you cannot issue a VAT invoice for every sale. Retail schemes sit in the Value Added Tax Regulations 1995 (S.I. 1995/2518), regulations 66 to 75, and the methods HMRC accepts are set out in VAT Notice 727. There are three standard methods: point of sale, apportionment and direct calculation. A retail scheme changes how you compute the VAT on your sales; it does not change the rate any item carries."
+  - question: "Do I have to use a retail scheme?"
+    answer: "Only if you sell at more than one VAT rate and cannot issue a VAT invoice for every sale. If every sale is invoiced, you account for VAT in the ordinary way and should not use a retail scheme. If everything you sell carries the same rate, you do not need one either, because a single division of your gross takings by the VAT fraction gives the answer. A retail scheme is the answer to mixed rates plus untraceable individual sales, and you need both conditions before one applies."
+  - question: "Which retail scheme is best for a small shop?"
+    answer: "There is no scheme that is right because a business is small. Point of sale is usually the most accurate where the till rate-codes every product line properly, apportionment suits a shop with clean purchase records but a till that cannot separate rates, and direct calculation suits a shop where only a small, easily priced part of the range sits at the minority rate. The honest method is to run a recent quarter through all three, as this page does, and take the one your records genuinely support."
+  - question: "Can I change retail scheme?"
+    answer: "Yes, but not opportunistically. HMRC expects a scheme to run for a reasonable period, normally to the end of a VAT year, and switching immediately after a favourable calculation invites the question of why. You must also change if you cross a turnover gate, because Apportionment Scheme 1 and Direct Calculation Scheme 1 stop being available above £1 million of tax-exclusive retail turnover. If your method has stopped reflecting how you trade, change it rather than defend it, and check the current conditions in VAT Notice 727."
+  - question: "Do I need HMRC's permission to use a retail scheme?"
+    answer: "You do not apply to use one of the three standard schemes. You adopt it, record which scheme you are using and from when, and apply it consistently across the business. The exception is at the top end: above £130 million of tax-exclusive retail turnover a bespoke scheme agreed with HMRC is mandatory rather than optional. For the conditions attaching to each standard scheme, see VAT Notice 727."
+  - question: "What turnover can I use a retail scheme up to?"
+    answer: "Apportionment Scheme 1 and Direct Calculation Scheme 1 are open up to £1 million of tax-exclusive retail turnover. Apportionment Scheme 2 and Direct Calculation Scheme 2 run up to £130 million, and point of sale is also available up to £130 million, so it carries no £1 million cap. Above £130 million a bespoke scheme agreed with HMRC is mandatory. All of these limits are measured on tax-exclusive retail turnover, not total business turnover, so fully invoiced trade sales sit outside the measurement."
+  - question: "Is a retail scheme the same as the VAT Retail Export Scheme?"
+    answer: "No. A retail scheme under VAT Notice 727 is a method of computing the output VAT inside your own takings. The VAT Retail Export Scheme was a refund scheme allowing qualifying overseas visitors to reclaim VAT on goods carried home personally, and it was withdrawn in Great Britain with effect from 1 January 2021, surviving only in Northern Ireland. The names are similar and the subjects are unrelated."
+  - question: "Is a retail scheme the same as the flat rate scheme?"
+    answer: "No. A retail scheme works out how much output VAT is inside mixed-rate takings, and you still reclaim input VAT in the ordinary way. The Flat Rate Scheme replaces the whole calculation: you pay a single percentage of VAT-inclusive turnover and give up most input VAT recovery, and it is open to businesses expecting taxable turnover of £150,000 or less excluding VAT. They solve different problems and are not alternatives to each other in any ordinary sense."
 keyTakeaways:
   - "Three retail schemes exist and they give different answers on identical takings: worked over one shop's quarter below, point of sale gives £7,000 of output VAT, apportionment £7,142.86 and direct calculation £7,250."
   - "Apportionment Scheme 1 and Direct Calculation Scheme 1 run to £1 million of tax-exclusive retail turnover, Scheme 2 of each runs to £130 million, and above £130 million a bespoke scheme agreed with HMRC is mandatory (VAT Notice 727, limits re-checked 25 August 2026)."
@@ -90,6 +106,63 @@ keyTakeaways:
 <p>Those turnover limits come from VAT Notice 727 and were re-checked against the notice on 25 August 2026. Two points about them are easy to miss. The £1 million and £130 million figures are <em>tax-exclusive retail turnover</em>, not total business turnover, so wholesale or trade-counter sales that carry a full VAT invoice sit outside the measurement. And the £130 million line is not a preference: above it, a bespoke retail scheme agreed with HMRC is compulsory, which is a conversation almost no independent shop will ever have.</p>
 
 <p>Below the gates, the choice is yours to make and it is a calculation, not a category. Nothing about being a convenience store, a bakery or a garden centre puts you on one scheme rather than another. What decides it is your own numbers, run through all three.</p>
+
+<h2>What is a retail scheme?</h2>
+
+<p>A <strong>retail scheme</strong> is a permitted method of working out how much output VAT sits inside your gross takings when your business cannot issue a VAT invoice for every sale. Ordinary VAT accounting assumes an invoice for each supply, with the rate and the tax stated on it. A counter trade selling hundreds of small items a day to customers who neither ask for nor want an invoice cannot work that way, so the rules allow the tax to be extracted from the takings as a whole by an agreed method instead.</p>
+
+<p>The schemes are not an HMRC concession or a piece of published practice. A retail scheme sits in the <strong>Value Added Tax Regulations 1995 (S.I. 1995/2518), regulations 66 to 75</strong>, and the methods HMRC will accept under those regulations are the ones set out in <a href="https://www.gov.uk/guidance/retail-schemes-notice-727">VAT Notice 727</a>. That is the pairing to quote if the method is ever questioned: the regulations give the power, the notice gives the permitted methods.</p>
+
+<p>You need a retail scheme when two things are true at once. You sell at <strong>more than one VAT rate</strong>, and your individual sales are <strong>not separately invoiced</strong>. A shop selling only standard-rated goods does not need one, because every pound of takings carries VAT at the same rate and one division does the job. A business that raises an invoice for every sale does not need one either, whatever it sells, because the rate is already recorded sale by sale. The retail scheme exists for the gap between those two positions, and that gap is where most of the high street trades.</p>
+
+<p>There is no default scheme that applies if you pick none. A mixed-rate shop that simply declares a figure without an identifiable method has, in practice, no way of showing how the number was arrived at, and that is the position HMRC tests first when it looks at a cash retailer. Choosing a scheme, writing down which one you are using and from when, and keeping the records that method depends on is what converts a plausible figure into an evidenced one.</p>
+
+<p>A retail scheme changes how you compute VAT on sales. It does not change what rate any item carries, it does not affect your input VAT recovery, and it is not a reduced-rate arrangement. If the rate coding is wrong, every scheme carries the error through to the return unchanged.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>You need a retail scheme</th>
+      <th>You do not need a retail scheme</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A village shop selling zero-rated groceries and standard-rated confectionery over one till</td>
+      <td>A wholesaler invoicing every trade customer at a stated rate</td>
+    </tr>
+    <tr>
+      <td>A newsagent selling zero-rated newspapers alongside standard-rated soft drinks</td>
+      <td>A plumber invoicing each job individually</td>
+    </tr>
+    <tr>
+      <td>A garden centre selling standard-rated plants and pots alongside zero-rated seeds and plants that produce food</td>
+      <td>A business-to-business printer raising an invoice per order</td>
+    </tr>
+    <tr>
+      <td>A pharmacy mixing zero-rated dispensed drugs with standard-rated retail lines</td>
+      <td>A single-rate takeaway where every sale is standard rated</td>
+    </tr>
+    <tr>
+      <td>A pet shop selling standard-rated pet food alongside zero-rated animal feed lines</td>
+      <td>A business below the £90,000 registration threshold and not registered</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The test the table is really applying is <strong>mixed rates plus untraceable individual sales</strong>. One without the other does not put you into a retail scheme. Which side of the rate line a given product sits on is a separate question, set out on our page on <a href="/blog/vat-and-making-tax-digital/zero-rated-vat">zero-rated VAT</a>. And a shop that also makes <a href="/blog/vat-and-making-tax-digital/vat-exemption">exempt supplies</a>, rather than merely zero-rated ones, has a partial exemption problem on the input side that no retail scheme solves, because the schemes deal with output VAT only.</p>
+
+<p>Where a shop sells goods carrying excise duty, such as alcohol or tobacco, that duty is a separate tax with its own rules and does not enter the retail scheme calculation; the current position is on <a href="https://www.gov.uk/topic/business-tax/alcohol-duties">gov.uk</a>. For retail scheme purposes those lines are simply standard-rated stock like any other.</p>
+
+<h2>A retail scheme is not the VAT Retail Export Scheme</h2>
+
+<p>The two names are close enough that they are regularly confused, and they are unrelated.</p>
+
+<p>A retail scheme under Notice 727 is a method of computing <em>your own</em> output VAT on <em>your own</em> takings. It applies to every sale you make, to any customer, and it runs on your till and purchase records.</p>
+
+<p>The <strong>VAT Retail Export Scheme</strong> was something else entirely: a refund scheme that let a qualifying overseas visitor reclaim the VAT on goods they carried home personally. It was <strong>withdrawn in Great Britain with effect from 1 January 2021</strong>, along with the airside tax-free shopping concession, and it <strong>survives only in Northern Ireland</strong>. A shop in England, Scotland or Wales cannot operate it at all, whatever a supplier or a customer tells you. The detail, including the position for Northern Ireland retailers, is on our separate page on the <a href="/blog/vat-and-making-tax-digital/vat-retail-export-scheme">VAT Retail Export Scheme</a>.</p>
+
+<p>In short: one is how you work out the VAT you owe, the other was how a visitor got VAT back. Adopting a retail scheme has nothing to do with the second, and losing the second changed nothing about the first.</p>
 
 <h2>One shop, one quarter, three answers</h2>
 

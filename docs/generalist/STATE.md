@@ -1,5 +1,29 @@
 # Generalist (Holloway Davies) — site state
 
+> **2026-09-11 - HIGH-STREET MECHANIC WAVE 5 BUILT, NOT DEPLOYED.**
+> 22 assets, 21,680 searches/month: 18 new pages and 4 extensions of live pages. Biggest:
+> `insurance-premium-tax` 5,390/mo, `vat-exemption` 3,390, `nanny-tax` 3,070,
+> `cash-basis` 2,680, `vat-on-second-hand-cars` 1,550. Five picks dropped (two as conflicts
+> with our own pages, one as a competitor service term, one as suspected non-UK residue, and
+> `northern-ireland-retail-movement-scheme` because NIRMS is a Defra SPS labelling scheme,
+> not a VAT matter). Build exit 0, **836 pages up from 818**, all 22 render, FAQ JSON-LD
+> matches frontmatter on all 22, the corpus-wide `first-sentence.test.ts` guard passes,
+> frontmatter lint clean on every new file. All 22 registered in `monitored_pages`.
+>
+> **Two facts locked this wave that most sources get wrong**, both now in house positions:
+> the cash basis turnover thresholds were **ABOLISHED, not raised** (ITTOIA 2005 s.25A and
+> ss.31A-31D omitted from 6 Apr 2024 by FA 2024 Sch 10; HMRC's own BIM70010 is stale and
+> must never be cited), and the **Employment Allowance is NOT available to a nanny employer**
+> (NICA 2014 s.2(3)). Also: the PAYE registration trigger is £96/week, not the LEL, and the
+> queued LEL back-patch is CANCELLED because £6,500 and £6,708 are both right for their own
+> year. VAT Notices 718 and 718/1 are withdrawn and have been re-pointed.
+>
+> **DEPLOY ORDERING, OWNER DECISION OPEN.** Production is still `18b4f25f`. `main` now
+> carries BOTH the completed six-phase design port AND these 22 content assets. Deploying
+> once ships a redesign and 22 pages together and nothing afterwards is attributable.
+> Recommended: walk the redesign, deploy the redesign alone, let it settle, then the content.
+> Programme doc: `docs/_engines/HIGHSTREET_MECHANIC_PROGRAM.md` section 13.
+
 > **2026-09-10 — PORT COMPLETE, ALL SIX PHASES BUILT AND REVIEWED. NOTHING DEPLOYED.**
 > Production is still `18b4f25f` (old design). Next steps, in order: owner dev-server
 > walk, owner decisions below, owner-triggered deploy.

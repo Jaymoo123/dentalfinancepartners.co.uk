@@ -7,18 +7,18 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Locations",
-  description: `${siteConfig.name} — specialist dental practice finance and accounting across the UK. Explore our locations.`,
+  description: `${siteConfig.name}. Specialist dental practice finance and accounting across the UK. Explore our locations.`,
   alternates: { canonical: `${siteConfig.url}/locations` },
   openGraph: {
     title: "Locations",
-    description: `${siteConfig.name} — specialist dental practice finance and accounting across the UK. Explore our locations.`,
+    description: `${siteConfig.name}. Specialist dental practice finance and accounting across the UK. Explore our locations.`,
     url: `${siteConfig.url}/locations`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Locations",
-    description: `${siteConfig.name} — specialist dental practice finance and accounting across the UK. Explore our locations.`,
+    description: `${siteConfig.name}. Specialist dental practice finance and accounting across the UK. Explore our locations.`,
   },
 };
 
@@ -38,7 +38,7 @@ export default function LocationsHubPage() {
       />
       <h1 className="font-serif text-3xl font-semibold leading-tight text-[var(--ink)] sm:text-4xl">Locations</h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        We work with dental practices across the UK. Start from a local page for context — then get in touch for advice
+        We work with dental practices across the UK. Start from a local page for context, then get in touch for advice
         tailored to your structure.
       </p>
 
@@ -64,7 +64,7 @@ export default function LocationsHubPage() {
       <div className="mt-12">
         <CTASection
           title="Not sure which page fits?"
-          description="Tell us where you are based and whether you are an associate or owner — we will point you to the right next step."
+          description="Tell us where you are based and whether you are an associate or owner, and we will point you to the right next step."
         />
       </div>
     </div>

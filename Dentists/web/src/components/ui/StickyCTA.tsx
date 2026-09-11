@@ -20,7 +20,7 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnGold } from "@/components/ui/layout-utils";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
@@ -159,7 +159,7 @@ export function StickyCTA() {
           onClick={() => {
             if (!packagesMode && intentAction) trackPersonalization("clicked", intentAction);
           }}
-          className={`${btnPrimary} shrink-0 whitespace-nowrap`}
+          className={`${btnGold} shrink-0 whitespace-nowrap`}
         >
           {offer.label}
         </a>

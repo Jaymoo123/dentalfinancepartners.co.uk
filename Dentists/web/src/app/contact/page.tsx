@@ -9,18 +9,18 @@ import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config"
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Contact ${siteConfig.name} — enquiries for UK dental practice accounting and tax support.`,
+  description: `Contact ${siteConfig.name}. Enquiries for UK dental practice accounting and tax support.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: "Contact",
-    description: `Contact ${siteConfig.name} — enquiries for UK dental practice accounting and tax support.`,
+    description: `Contact ${siteConfig.name}. Enquiries for UK dental practice accounting and tax support.`,
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact",
-    description: `Contact ${siteConfig.name} — enquiries for UK dental practice accounting and tax support.`,
+    description: `Contact ${siteConfig.name}. Enquiries for UK dental practice accounting and tax support.`,
   },
 };
 

@@ -20,7 +20,7 @@ faqs:
 - question: What's the position on AVCs (Additional Voluntary Contributions)?
   answer: Money Purchase AVCs (MPAVCs) and the Added Pension scheme are two ways for active NHS Pension members to top up pension provision beyond the defined-benefit accrual. MPAVCs contribute to a separate money-purchase pot. Added Pension purchases additional defined-benefit accrual within the scheme. Both attract income tax relief on contributions (subject to the annual allowance, currently £60,000 with taper rules for high earners). Whether AVC, Added Pension or external SIPP is the right top-up route depends on the individual position; an NHS-specialist financial adviser is generally the right person to model this.
 - question: What is the dental practitioner pensions arrangement for sole-trader locums?
-  answer: Self-employed locum dentists doing NHS work can join the NHS Pension Scheme via the practitioner pensions arrangement (subject to scheme rules and current eligibility). Practitioner status applies broadly to dentists in primary care; locums working through this route accrue pension on their NHS earnings, contributing both the employee and (in lieu of an employer) the employer rate. The administrative side runs through NHS Pensions and (often) the engaging practice or commissioner. Limited-company locums have significantly more restrictive access — which is one of the real downsides of incorporating early in a locum career.
+  answer: Self-employed locum dentists doing NHS work can join the NHS Pension Scheme via the practitioner pensions arrangement (subject to scheme rules and current eligibility). Practitioner status applies broadly to dentists in primary care; locums working through this route accrue pension on their NHS earnings, contributing both the employee and (in lieu of an employer) the employer rate. The administrative side runs through NHS Pensions and (often) the engaging practice or commissioner. Limited-company locums have significantly more restrictive access, which is one of the real downsides of incorporating early in a locum career.
 ctaTitle: Get your NHS Pension position reviewed
 ctaBody: 30-minute scoping call. We work with NHS-Pension-specialist financial advisers and can review your section position, McCloud impact, and the pension consequences of any structural changes you're considering.
 metaTitle_prev: 'NHS Pension Scheme for Dentists UK 2025/26: Sections, McCloud'
@@ -63,7 +63,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li>Current accrual section for all active members from 1 April 2022 onwards</li>
-<li>Career Average Revalued Earnings (CARE) — each year you accrue 1/54th of that year's pensionable earnings, revalued each year by CPI + 1.5%</li>
+<li>Career Average Revalued Earnings (CARE): each year you accrue 1/54th of that year's pensionable earnings, revalued each year by CPI + 1.5%</li>
 <li>Normal pension age: linked to the State Pension Age (currently 66, rising)</li>
 <li>The most flexible of the three sections on early retirement, partial retirement, and re-engagement after retirement</li>
 </ul>
@@ -84,7 +84,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>From 1 April 2022 onwards</strong>: all active members accrue in the 2015 section regardless of prior protection status</li>
 </ul>
 
-<p>For an individual dentist, McCloud is generally neutral or positive — you're not losing anything, you may have a better choice at retirement than you would have had under the pre-McCloud transitional rules. The administrative complexity has been handled by NHS Pensions; the choice at retirement is what each affected member needs to be aware of.</p>
+<p>For an individual dentist, McCloud is generally neutral or positive: you're not losing anything, you may have a better choice at retirement than you would have had under the pre-McCloud transitional rules. The administrative complexity has been handled by NHS Pensions; the choice at retirement is what each affected member needs to be aware of.</p>
 
 <h2>Pensionable earnings for dentists</h2>
 
@@ -101,7 +101,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Apportionment between NHS and private work for mixed practices</li>
 </ul>
 
-<p>Contributions are deducted at source through the GDS contract mechanism in England, with year-end reconciliation through the annual certificate. Your contribution rate (employee share) is tiered based on your pensionable earnings level — higher earners pay a higher percentage.</p>
+<p>Contributions are deducted at source through the GDS contract mechanism in England, with year-end reconciliation through the annual certificate. Your contribution rate (employee share) is tiered based on your pensionable earnings level: higher earners pay a higher percentage.</p>
 
 <h3>For incorporated practices (officer-based pension)</h3>
 
@@ -144,9 +144,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The annual allowance is the cap on pensions growth that benefits from tax relief in a tax year. For defined-benefit schemes (which the NHS Pension is), "growth" is measured as the change in the capitalised value of your pension over the year (the "pension input amount"). For a high-earning dental practitioner with significant historic service, this calculation can be complex and can sometimes trigger an annual allowance charge.</p>
 
-<p>The McCloud remedy interacts with this — historic pension input amounts may have been adjusted following the section reversion, with consequential tax corrections. Most affected members have received automated corrections via NHS Pensions and HMRC.</p>
+<p>The McCloud remedy interacts with this: historic pension input amounts may have been adjusted following the section reversion, with consequential tax corrections. Most affected members have received automated corrections via NHS Pensions and HMRC.</p>
 
-<p>Where the annual allowance is breached, the dentist can pay the resulting tax charge personally, or in some cases elect for Scheme Pays — the NHS Pension Scheme pays the tax charge on your behalf in exchange for a reduction in your eventual pension benefit. Whether Scheme Pays is the right choice depends on the long-term value of the benefit reduction against the tax saving today.</p>
+<p>Where the annual allowance is breached, the dentist can pay the resulting tax charge personally, or in some cases elect for Scheme Pays: the NHS Pension Scheme pays the tax charge on your behalf in exchange for a reduction in your eventual pension benefit. Whether Scheme Pays is the right choice depends on the long-term value of the benefit reduction against the tax saving today.</p>
 
 <h2>Partial retirement and re-employment</h2>
 
@@ -166,7 +166,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The "doctors-and-dentists trap" refers to a specific quirk: high-earning dental practitioners can have very large pension input amounts in a single year (because of how dynamising recalculates historic earnings) and trigger large annual allowance charges that catch them by surprise.</p>
 
-<p>The trap was acute under the legacy 1995 / 2008 sections where final salary uplifts could re-value historic accrual significantly. It's softened in the 2015 section because CARE accrual is on each year's earnings as they happen, but it hasn't disappeared entirely — large NHS contract uplifts (e.g., a structural pay rise across the scheme) can still create lumpy pension input amounts.</p>
+<p>The trap was acute under the legacy 1995 / 2008 sections where final salary uplifts could re-value historic accrual significantly. It's softened in the 2015 section because CARE accrual is on each year's earnings as they happen, but it hasn't disappeared entirely: large NHS contract uplifts (e.g., a structural pay rise across the scheme) can still create lumpy pension input amounts.</p>
 
 <p>For dental principals with high earnings and significant historic service, an annual annual-allowance review (alongside normal tax-return work) catches the risk early. Scheme Pays is usually the right answer where a large charge crystallises; paying personally is rarely optimal.</p>
 

@@ -328,7 +328,7 @@ export function HealthCheckWizard() {
           </p>
           <a
             href="/contact"
-            className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[var(--gold-strong)]"
+            className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--btn-ground)] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[var(--btn-ground-hover)]"
           >
             Book a 30-minute scoping call
           </a>
@@ -384,7 +384,7 @@ export function HealthCheckWizard() {
           <button
             type="button"
             onClick={next}
-            className="min-h-12 rounded-full bg-[var(--gold)] px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--gold-strong)]"
+            className="min-h-12 rounded-full bg-[var(--btn-ground)] px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--btn-ground-hover)]"
           >
             Continue
           </button>
@@ -393,7 +393,7 @@ export function HealthCheckWizard() {
             type="button"
             onClick={submit}
             disabled={submitting}
-            className="min-h-12 rounded-full bg-[var(--gold)] px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--gold-strong)] disabled:opacity-60"
+            className="min-h-12 rounded-full bg-[var(--btn-ground)] px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[var(--btn-ground-hover)] disabled:opacity-60"
           >
             {submitting ? "Generating report…" : "Get my practice health check"}
           </button>

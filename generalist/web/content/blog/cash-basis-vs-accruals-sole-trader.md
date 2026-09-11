@@ -29,6 +29,20 @@ faqs:
     answer: "Yes. The cash basis for income tax and your VAT accounting method are separate choices. You can use the VAT cash accounting scheme (which works like the cash basis for VAT) while using accruals for income tax, or the reverse. Neither VAT registration nor your VAT scheme choice affects your eligibility for the income tax cash basis."
   - question: "How are cars and vans treated under the cash basis?"
     answer: "A van or other equipment is deducted in full as an expense when you pay for it under the cash basis. Cars are the exception: the purchase price of a car is never deductible under the cash basis. For a car you either claim capital allowances (the one category of asset where capital allowances survive under the cash basis) or use HMRC's approved mileage rates, 55p per mile for the first 10,000 business miles and 25p thereafter from 2026/27 (45p applied up to 2025/26). Once you claim mileage on a vehicle you cannot also claim capital allowances or actual running costs on it."
+  - question: "What is the difference between the cash and accrual basis of accounting?"
+    answer: "The cash basis recognises a transaction when the money moves; the accrual basis recognises it when the underlying economic event happens. A sale invoiced in March and paid in May is March revenue on the accrual basis and May revenue on the cash basis. The transaction is identical, only the period it is reported in changes. Over the life of a business the totals are the same, so the difference is purely timing, and in the UK it is timing that decides which tax year the profit falls into."
+  - question: "Can a limited company use the cash basis of accounting?"
+    answer: "No. The income tax cash basis sits in Part 2 of ITTOIA 2005, which charges income tax on the trading profits of individuals and partnerships. A company pays corporation tax, and its trading profits are computed under CTA 2009 s.46(1), which requires generally accepted accounting practice. That makes accruals mandatory for a company at any size. The restriction is about legal form rather than turnover, so incorporating removes the choice entirely."
+  - question: "Is the VAT Cash Accounting Scheme the same as the income tax cash basis?"
+    answer: "No, and confusing the two is the most common mix-up on this subject. The VAT Cash Accounting Scheme lets you account for VAT on payments received and made rather than invoices, it is open to limited companies, and it still has thresholds: £1.35 million of estimated VAT taxable turnover to join and £1.6 million to leave. The income tax cash basis has no thresholds at all and is closed to companies. You can be on one and not the other."
+  - question: "Which sections of the legislation set out the cash basis rules?"
+    answer: "ITTOIA 2005 s.24A makes the cash basis the default, s.25B defines excluded trades, s.25C is the election out into generally accepted accounting practice, and s.33A governs capital expenditure. CAA 2001 s.1A switches capital allowances off except for cars. The old turnover provisions at s.25A and ss.31A to 31D were omitted from 6 April 2024 by Finance Act 2024 Schedule 10, so citing those section numbers today points at text that has been emptied out."
+  - question: "Why does the accrual basis exist if the cash basis is simpler?"
+    answer: "Because the two answer different questions. Accruals tells you what a business earned and consumed in a period, which is what a lender, an investor or a buyer wants to know, and it is what every set of published accounts uses. The cash basis tells you what a business received and paid in a period, which is usually enough for a small unincorporated trader and for HMRC. Simplicity is the cash basis's advantage; comparability and a truthful margin are the accrual basis's."
+  - question: "Do partnerships get the same choice as sole traders?"
+    answer: "A partnership where every partner is an individual is treated like a sole trader: the cash basis applies by default and the partnership can elect out. One corporate partner takes the whole partnership out of the cash basis, and a limited liability partnership is outside it whatever its size or membership. So the same salon partnership can be free to use the cash basis one year and required to use accruals the next, purely because of a change in who the partners are."
+  - question: "Does my accounting software decide which basis I am on?"
+    answer: "No. Many bookkeeping packages produce accruals figures by default because that is how they were built, but preparing accruals accounts is not the same as making the election. If you have never elected under s.25C, the statutory default puts you on the cash basis whatever your software produced. The return needs to state which basis the figures were prepared on, so check that the box matches what you actually did rather than assuming the software handled it."
 keyTakeaways:
   - "From 2024/25 the cash basis is the default basis of assessment for sole traders and partnerships of individuals, with no turnover limit; you elect on your Self Assessment return if you want accruals instead."
   - "Limited companies, LLPs, partnerships with a corporate partner and a short list of other excluded businesses must use accruals; the choice only exists for unincorporated businesses."
@@ -59,6 +73,40 @@ keyTakeaways:
 <p>The <strong>accruals basis</strong> (traditional accounting) records income when you invoice and expenses when the bill relates to the period, regardless of when the money moves. It matches income to the work done and requires you to track debtors (money owed to you), creditors (money you owe), stock, prepayments and work in progress.</p>
 
 <p>Both are recognised bases of assessment for self-employment income. The difference is purely timing: over the life of the business the same total profit is taxed, but individual years can look very different, and that is where the tax planning lives.</p>
+
+<h2>Cash vs Accrual Basis of Accounting: The Same Choice, in General Terms</h2>
+
+<p>Before the UK tax rules narrow it, cash vs accrual basis of accounting is a general accounting question, and it has the same answer everywhere: the cash basis recognises a transaction when money moves, the accrual basis recognises it when the underlying economic event happens. A sale made in March and paid for in May is March revenue on the accrual basis and May revenue on the cash basis. Nothing about the transaction changes. Only the period it is reported in changes.</p>
+
+<p>That is why the accrual basis is what every set of published accounts uses. Accruals answers "what did this business earn and consume in this period", which is the question a lender, an investor or a buyer is asking. The cash basis answers "what did this business receive and pay in this period", which is the question a small unincorporated trader and HMRC are usually asking. Both are honest; they answer different questions.</p>
+
+<p>In the UK, who gets to pick is decided entirely by legal form, never by size. The general concept splits into a statutory rule here, and the split runs straight down the line between unincorporated businesses and companies.</p>
+
+<table>
+<thead>
+<tr><th>Free to use the cash basis</th><th>Must use traditional accounting (accruals)</th></tr>
+</thead>
+<tbody>
+<tr><td>A sole trader mechanic, at any turnover, because there is no limit of any kind</td><td>The same mechanic's business after incorporating: a company computes profits under generally accepted accounting practice (CTA 2009 s.46(1))</td></tr>
+<tr><td>A partnership of two individuals running a salon</td><td>The same partnership once a company joins it as a partner</td></tr>
+<tr><td>A self-employed window cleaner with £500,000 of turnover</td><td>A limited liability partnership, whatever its size</td></tr>
+<tr><td>A florist trading as a sole trader</td><td>A florist company, and any excluded trade under <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/25B">ITTOIA 2005 s.25B</a>, such as a business that has claimed research and development allowance</td></tr>
+</tbody>
+</table>
+
+<h3>If you run a limited company, there is no choice to make</h3>
+
+<p>This is the paragraph most general searches actually need. A limited company cannot use the cash basis, and the reason is not that it is too big. The cash basis sits in Part 2 of ITTOIA 2005, which charges <strong>income tax</strong> on the trading profits of individuals and partnerships. A company does not pay income tax on its trading profit. It pays corporation tax, and its profits are computed under <a href="https://www.legislation.gov.uk/ukpga/2009/4/section/46">CTA 2009 s.46(1)</a>, which requires the profits to be calculated in accordance with generally accepted accounting practice. There is simply no cash basis switch in the corporation tax code to turn on, at any turnover, for any company. A company's accounts follow an accounting standard, and the accrual basis is built into every one of them.</p>
+
+<p>So a director asking "should we be on cash or accruals?" is asking a question that has already been answered by the decision to incorporate. The live questions for a company are which accounting standard its accounts are prepared under and how tightly its management figures track them, not which basis of assessment applies.</p>
+
+<h3>The VAT Cash Accounting Scheme is a different thing</h3>
+
+<p>Almost every company director who believes their company is "on the cash basis" has met the <strong>VAT Cash Accounting Scheme</strong>, which lets a business account for VAT on payments received and made rather than on invoices issued and received. It is a VAT scheme, it is open to companies, and it still has thresholds: you can join where estimated VAT taxable turnover is £1.35 million or less for the next 12 months, and you must leave once VAT taxable turnover exceeds £1.6 million (<a href="https://www.gov.uk/vat-cash-accounting-scheme/eligibility">gov.uk, Cash Accounting Scheme eligibility</a>). The income tax cash basis has no thresholds at all and is closed to companies. The two regimes share the word "cash" and nothing else, and you can be on one without the other. Our page on the <a href="/blog/vat-and-making-tax-digital/vat-cash-basis-threshold">VAT cash basis threshold</a> covers that scheme properly.</p>
+
+<h3>The sections the rules actually live in</h3>
+
+<p>The page above states the current positions; here is where to check them. The default is <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/24A">ITTOIA 2005 s.24A</a>, which says trading profits must be calculated on the cash basis unless the trade is an excluded trade or an election has effect. Excluded trades are defined at s.25B. The election out into generally accepted accounting practice is s.25C. Capital expenditure under the cash basis is s.33A, and capital allowances are switched off except for cars by <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/1A">CAA 2001 s.1A</a>. The old turnover machinery at s.25A and ss.31A to 31D was omitted from 6 April 2024 by <a href="https://www.legislation.gov.uk/ukpga/2024/3/schedule/10">Finance Act 2024 Schedule 10</a>, which is why quoting those section numbers today points at emptied-out text. For the rule itself, rather than the comparison, see our page on the <a href="/blog/sole-trader-and-self-employment/cash-basis">cash basis</a>.</p>
 
 <h2>Who Uses Cash Basis Accounting, and Who Cannot</h2>
 

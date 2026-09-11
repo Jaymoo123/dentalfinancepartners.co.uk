@@ -87,7 +87,7 @@ export const udaValueTool: GenericTool = {
         { label: "Cumulative CPI proxy since signing", value: pct(r.cumulativeCpi * 100) },
         { label: "Years since signed", value: String(r.yearsSinceSigned) },
       ],
-      note: "Effective UDA value = contract value divided by UDA volume. Benchmark ranges are 2026/27 indicative; actual rates vary by commissioner and individual contract. Real value uses a 2.5% annual CPI proxy — actual UK CPI has been higher in some years.",
+      note: "Effective UDA value = contract value divided by UDA volume. Benchmark ranges are 2026/27 indicative; actual rates vary by commissioner and individual contract. Real value uses a 2.5% annual CPI proxy, and actual UK CPI has been higher in some years.",
     };
   },
   explainer: {

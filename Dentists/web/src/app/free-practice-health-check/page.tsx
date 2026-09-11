@@ -104,7 +104,7 @@ export default function FreePracticeHealthCheckPage() {
               10 dental-specific questions. We&apos;ll flag the structural, tax,
               NHS Pension, IR35, BADR and goodwill items most worth reviewing in
               your specific position. The output is on-screen plus a follow-up
-              email — no PDF wall, no sales drip.
+              email, with no PDF wall and no sales drip.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
               <Stat value="6" label="Steps" />

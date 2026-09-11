@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandLogoHero } from "@/components/brand/BrandLogoHero";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnGold, btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { getPostBySlug, getCategorySlug } from "@/lib/blog";
 import { TestimonialSlider } from "@/components/dentists/TestimonialSlider";
@@ -52,7 +52,7 @@ const PRACTICAL_SLUGS = [
 const realityPoints = [
   {
     title: "Mixed NHS and private income",
-    body: "Reconciling NHS contract payments alongside private fee income and capitation plans — and understanding what each actually contributes to your profit — is something most generalist accountants simply do not encounter. We do, regularly.",
+    body: "Reconciling NHS contract payments alongside private fee income and capitation plans, and understanding what each actually contributes to your profit, is something most generalist accountants simply do not encounter. We do, regularly.",
   },
   {
     title: "Self assessment confusion for associates",
@@ -64,7 +64,7 @@ const realityPoints = [
   },
   {
     title: "Growth without a financial plan",
-    body: "Buying a second site or taking on an associate feels like the right move — but without proper cash flow modelling and an understanding of how that changes your tax position, it can create as many problems as it solves.",
+    body: "Buying a second site or taking on an associate feels like the right move, but without proper cash flow modelling and an understanding of how that changes your tax position, it can create as many problems as it solves.",
   },
 ];
 
@@ -72,17 +72,17 @@ const whoWeWorkWith = [
   {
     title: "Associate Dentists",
     subtitle: "Self-employed · NHS & private",
-    body: "If you are working as an associate, you are running a small business — whether it feels like it or not. Self assessment, allowable expenses, pension planning, and knowing when incorporation makes sense are all things you should have clear answers on. We handle the compliance and make sure you are not overpaying tax through simple oversights.",
+    body: "If you are working as an associate, you are running a small business, whether it feels like it or not. Self assessment, allowable expenses, pension planning, and knowing when incorporation makes sense are all things you should have clear answers on. We handle the compliance and make sure you are not overpaying tax through simple oversights.",
   },
   {
     title: "Practice Owners",
     subtitle: "Sole trader · Limited company · Partnership",
-    body: "Owning a practice brings a different set of financial questions — payroll for staff and associates, VAT on dental and non-dental income, equipment finance, goodwill, and profit extraction from a limited company. We prepare accounts that are useful, not just compliant, and advise on structure as the practice grows.",
+    body: "Owning a practice brings a different set of financial questions: payroll for staff and associates, VAT on dental and non-dental income, equipment finance, goodwill, and profit extraction from a limited company. We prepare accounts that are useful, not just compliant, and advise on structure as the practice grows.",
   },
   {
     title: "Multi-Practice Groups",
     subtitle: "Group structures · Acquisition support",
-    body: "Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists who are building a group — whether that is two practices or ten — and can support with due diligence, restructuring, and ongoing financial management across the portfolio.",
+    body: "Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists who are building a group, whether that is two practices or ten, and can support with due diligence, restructuring, and ongoing financial management across the portfolio.",
   },
 ];
 
@@ -90,7 +90,7 @@ const howWeWorkItems = [
   {
     n: "01",
     title: "Annual accounts and corporation tax",
-    body: "Prepared accurately, filed on time, and reviewed with you properly — not just emailed over as a PDF you will never open. We explain what the numbers mean for your business.",
+    body: "Prepared accurately, filed on time, and reviewed with you properly, not just emailed over as a PDF you will never open. We explain what the numbers mean for your business.",
   },
   {
     n: "02",
@@ -100,12 +100,12 @@ const howWeWorkItems = [
   {
     n: "03",
     title: "Payroll and associate payments",
-    body: "Running payroll for a dental practice has its own quirks — particularly where associates are paid on a percentage split. We handle this cleanly and make sure the treatment of self-employed associates holds up to scrutiny.",
+    body: "Running payroll for a dental practice has its own quirks, particularly where associates are paid on a percentage split. We handle this cleanly and make sure the treatment of self-employed associates holds up to scrutiny.",
   },
   {
     n: "04",
     title: "VAT and mixed-supply advice",
-    body: "Dental practices often supply a mix of exempt and standard-rated services. Getting this wrong creates problems. We review your VAT position and advise accordingly — particularly relevant for practices with significant laboratory or facial aesthetics income.",
+    body: "Dental practices often supply a mix of exempt and standard-rated services. Getting this wrong creates problems. We review your VAT position and advise accordingly, particularly relevant for practices with significant laboratory or facial aesthetics income.",
   },
   {
     n: "05",
@@ -268,7 +268,7 @@ export default function HomePage() {
           <div className="hero-reveal-delay-2 mt-10 flex flex-wrap items-center gap-4">
             <Link
               href={activeCta.hero_primary.href}
-              className={`${btnPrimary} min-w-0`}
+              className={`${btnGold} min-w-0`}
               data-cta="hero_primary" data-cta-placement="hero"
               data-cta-variant={niche.cta.variant}
             >
@@ -336,7 +336,7 @@ export default function HomePage() {
             <span className="block">from specialists.</span>
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Real-world guidance on associate tax, practice finance, and NHS accounting — written by accountants who work exclusively with UK dental practices. Each article addresses questions we&apos;re actually asked by dentists every week.
+            Real-world guidance on associate tax, practice finance, and NHS accounting, written by accountants who work exclusively with UK dental practices. Each article addresses questions we&apos;re actually asked by dentists every week.
           </p>
           <ul className="mt-12 grid gap-6 sm:grid-cols-3 sm:gap-8">
             {practicalPosts.map((p) => {
@@ -379,7 +379,7 @@ export default function HomePage() {
             <span className="block text-[var(--gold-strong)]">financially underserved.</span>
           </h2>
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Dental income is rarely straightforward. Between NHS UDAs, private fee structures, associate agreements, laboratory costs, and equipment finance, the picture is genuinely complex. A generalist accountant will work with what you give them — but that&apos;s not the same as understanding how a dental practice actually operates.
+            Dental income is rarely straightforward. Between NHS UDAs, private fee structures, associate agreements, laboratory costs, and equipment finance, the picture is genuinely complex. A generalist accountant will work with what you give them, but that&apos;s not the same as understanding how a dental practice actually operates.
           </p>
           <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {realityPoints.map((item) => (
@@ -572,7 +572,7 @@ export default function HomePage() {
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">Rather not pick up the phone first?</p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Fill in the form and one of our dental accountants will be in touch to arrange a short introductory call. No hard sell — just an honest conversation about your situation and whether we&apos;re the right fit.
+                Fill in the form and one of our dental accountants will be in touch to arrange a short introductory call. No hard sell, just an honest conversation about your situation and whether we&apos;re the right fit.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
                 Prefer to call or email? You&apos;ll speak to someone who works with dental practices every day.

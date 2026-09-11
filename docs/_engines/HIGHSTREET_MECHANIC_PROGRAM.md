@@ -315,12 +315,32 @@ would have silently corrupted the conclusions.
 
 ## 11. Open decisions
 
-1. **Wave 1 gating.** Ship the hospitality pilot and read it at 90 days before committing
-   to wave 2, or start wave 2 in parallel because the pilot only gates the page anatomy,
-   not the research behind it? Owner has not answered.
-2. **The four flagged generalist picks** in §5.2 need a keep-or-drop call at PREP.
-3. **Wave 3 site state docs.** Several of the nine sites have no `STATE.md`. One is needed
-   per site before that site's pages run, per `NETNEW_PROGRAM.md` §7.
+**All three decisions below were CLOSED on 2026-09-11. Waves 1 and 2 are BUILT and
+committed to `main`. Nothing is deployed.** See §13 for what actually shipped.
+
+1. ~~**Wave 1 gating.**~~ **CLOSED: full parallel.** Owner ruled waves 1 and 2 run
+   together. The evidence supports it after the fact: hospitality took **9 clicks and
+   2,005 impressions across 35 URLs in 90 days**, so a 90-day pilot read would have been
+   reading noise and could not have gated anything.
+2. ~~**The four flagged generalist picks.**~~ **CLOSED at the Stage 1b gate.**
+   `tax-on-life-insurance-premium` dropped (suspected non-UK residue).
+   `nanny-tax-payroll-services` dropped (competitor service term, not a guide topic).
+   `retail-hospitality-and-leisure-relief-scheme` moved to hospitality and rewritten as a
+   "the scheme ended" page. `northern-ireland-retail-movement-scheme` dropped: NIRMS is a
+   Defra SPS and "Not for EU" labelling scheme, **not a VAT matter at all**.
+3. ~~**Wave 3 site state docs.**~~ **CLOSED: this was already false when written.** All
+   nine sweep sites DO have a `STATE.md`: contractors-ir35, construction-cis, ecommerce,
+   startups-tech, `docs/solicitors/`, `docs/property/`, charities, `docs/agency/`,
+   `docs/medical/`. Note `docs/digital-agency/` exists as a separate directory with no
+   STATE.md; the live one is `docs/agency/STATE.md`.
+
+### New open decision, for the owner
+
+4. **Deploy ordering, generalist.** Production is `18b4f25f`, pre-port. `main` now carries
+   the completed six-phase design port AND 22 wave-2 assets. Deploying once ships a full
+   redesign and 22 content changes together and **nothing afterwards is attributable**.
+   Recommended: walk the redesign, deploy the redesign alone, let it settle, then deploy
+   content. Deploy is owner-triggered either way and nothing here changes that.
 
 ---
 
@@ -335,3 +355,106 @@ would have silently corrupted the conclusions.
 - **Deploy is owner-triggered**, always, and nothing here changes that.
 - **Register every new page in `monitored_pages`** at WRAP, and submit to IndexNow only
   on the owner's word in that turn.
+
+---
+
+## 13. What was built, 2026-09-11
+
+Waves 1 and 2 ran in one session, full parallel, on the owner's ruling. **28 assets on
+`main`. Nothing deployed.**
+
+| | Planned | Built | Extensions of live pages | Dropped |
+|---|---|---|---|---|
+| Wave 1, hospitality | 6 | 4 new | 2 | 1 |
+| Wave 2, generalist | 28 | 18 new | 4 | 5 |
+| **Total** | 34 | **22 new** | **6** | **6** |
+
+### Why 34 became 28, and why that is an improvement
+
+The cannibalisation audit (reasoning route, seeded from `containment.json`, NOT token
+Jaccard) found that **six picks duplicated pages the estate already owned**. Every one of
+those live pages was well under pillar depth (1,300 to 3,200 body words) with near-zero
+impressions, so extending them beat publishing a competing URL. The biggest example is
+`vat-on-food` at 6,640/mo: published as specified it would have become a **fourth**
+food-VAT page on a 19-post site, competing with `vat-on-takeaway-food.md`, which already
+held the five hot-food tests. It instead took that page from 2,210 to 4,320 body words and
+the head term with it.
+
+Five further picks were CONFLICTS between two of our own new pages and were adjudicated to
+a single owner, with the loser's `covers` phrasing folded into the winner.
+
+### Stage 1b, the gate that justified itself
+
+Every §6.2 anchor was verified against primary law. Four findings changed page content
+rather than just citations:
+
+1. **Cash basis turnover thresholds were ABOLISHED, not raised.** ITTOIA 2005 s.25A and
+   ss.31A-31D omitted from 6 April 2024 by FA 2024 Sch 10 paras 4, 6, 47. The common
+   "raised to £300,000" line is wrong. This would have been wrong on five pages at once.
+   **HMRC's own BIM70010 is stale** and still says "election" and "£150,000". Never cite it.
+2. **Employment Allowance is NOT available to a nanny employer** (NICA 2014 s.2(3), narrow
+   s.2(3A) carve-out only). Nanny-payroll marketing routinely says the opposite, so this is
+   a differentiator, not just a correction.
+3. **The PAYE registration trigger is £96 a week** (the secondary threshold), not the LEL.
+   The 2026/27 LEL of £6,708 is a different number for a different purpose.
+4. **Partial exemption has TWO different 50% tests.** De minimis: exempt input tax not over
+   £625/month average AND not over 50% of TOTAL INPUT TAX. The simplified tests use the
+   value of EXEMPT SUPPLIES against all supplies. Conflating them is the misapplication.
+
+**Three proposed corrections were checked and REJECTED**, which matters as much as the
+accepted ones: two gov.uk URLs reported dead both return 200, and HP 21.4's point-of-sale
+wording was already correct. Applying them would have broken working citations and
+introduced an error into a house position.
+
+### House positions corrected (commit `babea2de`, and in the wave-1 commit)
+
+- `rates_ledger.json`: three alcohol rates were stamped `applies_from: 2023-08-01`. Those
+  are the **1 February 2026** rates. Duty uprates on 1 February, so they expire inside
+  2026/27 on 1 Feb 2027.
+- **HP 19 carried NO multiplier figures at all** while pages asserted five of them from a
+  worker-rules summary, two of which appeared in no source. All five verified at the gov.uk
+  effects publication Table 2.A and locked: RHL 38.2p / 43p, non-RHL 43.2p / 48p,
+  high-value 50.8p, RHL exactly 5p below its national equivalent.
+- HP 16: a 20-litre container alone does NOT qualify for draught relief; it must also
+  connect to a qualifying dispense system (F(No.2)A 2023 Pt 2 Ch 2).
+- HP 7: statutory anchor added (SI 2001/1004 Sch 3 Pt X para 5). The manual is practice.
+- HP 8: main Tips Act duties from 1 Oct 2024, but s.9 from 31 Jul 2023.
+- Generalist LEL back-patch **cancelled**: £6,500 (2025/26) and £6,708 (2026/27) are both
+  right for their own year; the dentists figure was early, not stale.
+- Generalist 21.1: VAT Notices 718 and 718/1 are **withdrawn**; re-pointed.
+
+### Method deviations, deliberate
+
+- **No per-lane worktrees** (NETNEW §2.3). Each writer touched exactly one file and no
+  agent was permitted to run git, so the worktree machinery bought nothing and its known
+  drifts (commits landing on lane branches) were pure downside.
+- **Stage 1 and Stage 2 collapsed into one brief pass.** The expensive half, statutory
+  verification with live-URL checks, was already done and locked at Stage 1b.
+- **`sites/generalist.json` left unchanged.** An earlier plan proposed A/B/C lanes; the
+  config carries a standing owner ruling of 2026-07-08 against them, and batch size 1 with
+  parallel sub-agents already IS the parallelism.
+
+### Verified against built output, not just source
+
+Both sites build clean (hospitality exit 0, 77 pages; generalist exit 0, **836 pages, up
+from 818**, exactly the 18 new). All 28 assets render. FAQ JSON-LD count equals the
+frontmatter `faqs` count on every hospitality page. The corpus-wide
+`first-sentence.test.ts` guard passes, which is the check that would have failed all 475
+generalist posts on a single bad opening. Frontmatter lint clean on every new file.
+
+Defects caught and fixed rather than shipped: two metaDescriptions over the 155-character
+site limit, and **15 new pages carrying an `image:` key pointing at an asset that does not
+exist** (invisible to the build, but the og:image 404s; omitting the key falls back to the
+generated OG image).
+
+A brief error was caught by a writer rather than shipped: the alcohol-duty brief priced a
+12% ABV wine at the 3.5-8.5% band rate. 12% ABV sits in the 8.5-22% band.
+
+### Still open
+
+- Wave 3, the 22-page cross-site sweep, is NOT built. Note that `construction-cis` (4
+  picks) and `dentists` both had design ports in flight on 2026-09-11, so the sweep must
+  check port state per site before it starts.
+- The calculator track (§7) is NOT built. The nanny calculator sequences WITH the
+  household-employer pages, which now exist.
+- Deploy ordering, §11 decision 4.

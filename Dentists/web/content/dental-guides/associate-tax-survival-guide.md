@@ -33,7 +33,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <p>The starting question for every UK dental associate is status: are you genuinely self-employed for tax purposes, or are HMRC likely to view your working arrangement as disguised employment?</p>
 
-<p>Most dental associates work under a BDA model associate agreement (or a practice's own variant) and treat themselves as self-employed. The BDA model agreement is well-drafted to support self-employed status, but it does not — and cannot — guarantee that HMRC and the tribunals will accept the status on its face. They look at the actual working arrangement, not the paperwork. The relevant case law (Boss v Stickland, Dimensions Healthcare v Gloucestershire CC and others) confirms that the substance of the relationship determines status, not the contract label.</p>
+<p>Most dental associates work under a BDA model associate agreement (or a practice's own variant) and treat themselves as self-employed. The BDA model agreement is well-drafted to support self-employed status, but it does not, and cannot, guarantee that HMRC and the tribunals will accept the status on its face. They look at the actual working arrangement, not the paperwork. The relevant case law (Boss v Stickland, Dimensions Healthcare v Gloucestershire CC and others) confirms that the substance of the relationship determines status, not the contract label.</p>
 
 <p>HMRC tests status against five factors. None is decisive on its own; the overall picture matters.</p>
 
@@ -43,15 +43,15 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <h3>Substitution</h3>
 
-<p>Could you, in practice, send another suitably qualified dentist to do your work? A self-employed contractor can substitute; an employee provides personal service only. In dental practice this is a difficult test because regulatory and patient relationships generally require the named clinician. But meaningful substitution rights — for example, a locum-arrangement clause in the contract that the practice would actually honour — support self-employed status. A blanket "personal service only" arrangement weakens it.</p>
+<p>Could you, in practice, send another suitably qualified dentist to do your work? A self-employed contractor can substitute; an employee provides personal service only. In dental practice this is a difficult test because regulatory and patient relationships generally require the named clinician. But meaningful substitution rights (for example, a locum-arrangement clause in the contract that the practice would actually honour) support self-employed status. A blanket "personal service only" arrangement weakens it.</p>
 
 <h3>Mutuality of obligation (MOO)</h3>
 
-<p>Is the practice obliged to offer you work and are you obliged to accept it? Employment has continuing mutual obligation: the employer must provide work, the employee must turn up. A genuine self-employed contractor has no such obligation — each engagement is its own arrangement. In a dental associate context this is tested by whether the practice could leave you with no patients for a week without breaching the contract, and whether you could decline sessions without consequence.</p>
+<p>Is the practice obliged to offer you work and are you obliged to accept it? Employment has continuing mutual obligation: the employer must provide work, the employee must turn up. A genuine self-employed contractor has no such obligation: each engagement is its own arrangement. In a dental associate context this is tested by whether the practice could leave you with no patients for a week without breaching the contract, and whether you could decline sessions without consequence.</p>
 
 <h3>Financial risk</h3>
 
-<p>Do you carry genuine financial risk? A self-employed contractor invests in their own tools (loupes, instruments, CPD), bears the risk of bad debt, pays their own indemnity, can lose money on a bad week, and finances their own income gaps. An employee bears none of those risks. Most dental associates do carry real financial risk — they pay for their own indemnity, they buy their own loupes and equipment, they cover their own CPD — and this is one of the stronger pillars for self-employed status.</p>
+<p>Do you carry genuine financial risk? A self-employed contractor invests in their own tools (loupes, instruments, CPD), bears the risk of bad debt, pays their own indemnity, can lose money on a bad week, and finances their own income gaps. An employee bears none of those risks. Most dental associates do carry real financial risk: they pay for their own indemnity, they buy their own loupes and equipment, they cover their own CPD, and this is one of the stronger pillars for self-employed status.</p>
 
 <h3>Integration</h3>
 
@@ -59,7 +59,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <h3>What this means in practice</h3>
 
-<p>Most UK dental associates pass the status tests because the dental working model — autonomous clinical decision-making, financial responsibility for tools and indemnity, payment by fee split rather than salary — naturally supports self-employment. But not all do. If your day-to-day reality is fixed sessions, no real autonomy, practice-supplied everything, and an arrangement that looks like a salaried role with a "self-employed" label, you have status risk regardless of what the contract says.</p>
+<p>Most UK dental associates pass the status tests because the dental working model (autonomous clinical decision-making, financial responsibility for tools and indemnity, payment by fee split rather than salary) naturally supports self-employment. But not all do. If your day-to-day reality is fixed sessions, no real autonomy, practice-supplied everything, and an arrangement that looks like a salaried role with a "self-employed" label, you have status risk regardless of what the contract says.</p>
 
 <p>If you're unsure, ask a specialist dental accountant to review the working arrangement against the five tests. We do this regularly; it usually takes 30-60 minutes and the answer is rarely ambiguous once the facts are on the table.</p>
 
@@ -138,7 +138,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <p>The pension annual allowance for 2025/26 is £60,000. It tapers down to a minimum of £10,000 once "adjusted income" exceeds £260,000. The taper rate is £1 reduction for every £2 of adjusted income above the threshold.</p>
 
-<p>For high-earning associates (combining NHS and private income above the threshold), the NHS Pension Scheme can deliver a pension input that exceeds the tapered allowance, triggering an annual allowance charge on the excess. The charge is at the marginal rate of income tax — so a higher-rate-taxpayer associate caught by the taper effectively loses 40% of the excess pension growth to tax.</p>
+<p>For high-earning associates (combining NHS and private income above the threshold), the NHS Pension Scheme can deliver a pension input that exceeds the tapered allowance, triggering an annual allowance charge on the excess. The charge is at the marginal rate of income tax, so a higher-rate-taxpayer associate caught by the taper effectively loses 40% of the excess pension growth to tax.</p>
 
 <p>The "Scheme Pays" facility allows the NHS Pension Scheme itself to pay the annual allowance charge from your future pension benefits, rather than you paying it from cash. This is often the right route for affected associates because it preserves cash flow. We model the financial impact of Scheme Pays vs paying the charge directly; for the actual election we work with an FCA-authorised IFA.</p>
 
@@ -156,7 +156,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <p>If you operate as a locum through a limited company (PSC) on NHS engagements, the IR35 rules are now the central tax consideration.</p>
 
-<p>From 6 April 2021, when the engaging practice is a medium or large client (which most NHS dental practices and groups are), the practice — not your PSC — determines your IR35 status for the engagement. The practice issues a Status Determination Statement (SDS) saying whether the engagement is inside or outside IR35.</p>
+<p>From 6 April 2021, when the engaging practice is a medium or large client (which most NHS dental practices and groups are), the practice, not your PSC, determines your IR35 status for the engagement. The practice issues a Status Determination Statement (SDS) saying whether the engagement is inside or outside IR35.</p>
 
 <p>If the engagement is determined <strong>inside IR35</strong>, the fee-payer (typically the practice, sometimes an intermediary agency) operates PAYE-style deductions on your fees before paying your company. The company receives the net. You can't extract that net as salary or dividend tax-efficiently because the tax has already been deducted at source. The economic result is similar to being PAYE-employed by the practice for that engagement, but with the additional limited-company administrative overhead.</p>
 
@@ -201,7 +201,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <ul>
 <li>Register for Self Assessment with HMRC immediately on commencing self-employment.</li>
-<li>Set up a separate business bank account from day one — it makes everything cleaner.</li>
+<li>Set up a separate business bank account from day one: it makes everything cleaner.</li>
 <li>Start tracking expenses immediately, even small ones. Building the habit early avoids a January scramble.</li>
 <li>Get an accountant lined up before your first year-end, not in the December rush.</li>
 </ul>

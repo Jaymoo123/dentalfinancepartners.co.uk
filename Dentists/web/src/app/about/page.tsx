@@ -8,12 +8,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "Why we focus on UK dental practices, associates, and owners — specialist accounting without generic SME boilerplate.",
+    "Why we focus on UK dental practices, associates, and owners. Specialist accounting without generic SME boilerplate.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: "About us",
     description:
-      "Why we focus on UK dental practices, associates, and owners — specialist accounting without generic SME boilerplate.",
+      "Why we focus on UK dental practices, associates, and owners. Specialist accounting without generic SME boilerplate.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About us",
     description:
-      "Why we focus on UK dental practices, associates, and owners — specialist accounting without generic SME boilerplate.",
+      "Why we focus on UK dental practices, associates, and owners. Specialist accounting without generic SME boilerplate.",
   },
 };
 
@@ -38,14 +38,14 @@ export default function AboutPage() {
         About {siteConfig.name}
       </h1>
       <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-        We set out to build an accounting practice that could keep pace with UK dentistry — mixed payment models,
-        changing associate relationships, and serious capital decisions — without treating your practice like a generic
+        We set out to build an accounting practice that could keep pace with UK dentistry (mixed payment models,
+        changing associate relationships, and serious capital decisions) without treating your practice like a generic
         small business.
       </p>
       <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">How we work</h2>
       <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
         <li>Plain language, partner-led advice you can act on.</li>
-        <li>Monthly discipline where it matters — not just a rush every January.</li>
+        <li>Monthly discipline where it matters, not just a rush every January.</li>
         <li>Tax and governance that stands up when HMRC, funders, or buyers ask questions.</li>
       </ul>
       <h2 className="mt-10 font-serif text-xl font-semibold text-[var(--ink)] sm:text-2xl">Evidence-led content</h2>
@@ -54,7 +54,7 @@ export default function AboutPage() {
         <Link href="/blog" className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}>
           blog
         </Link>{" "}
-        is written for dentists and practice managers who need UK context — not recycled US tax tips. Start with{" "}
+        is written for dentists and practice managers who need UK context, not recycled US tax tips. Start with{" "}
         <Link
           href="/blog/practice-accounting/nhs-private-mix-dental-accounts"
           className={`text-[var(--accent-strong)] underline ${focusRing} rounded`}
@@ -73,7 +73,7 @@ export default function AboutPage() {
       <div className="mt-10 sm:mt-12">
         <CTASection
           title="See if we are a fit"
-          description="Tell us about your role — associate, owner, or group — and what you want to fix in the next 12 months."
+          description="Tell us about your role (associate, owner, or group) and what you want to fix in the next 12 months."
         />
       </div>
     </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { btnPrimary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnGold, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
   buildService,
@@ -88,7 +88,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
               {page.hero.intro}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className={btnPrimary}>
+              <Link href="/contact" className={btnGold}>
                 Book a free scoping call
               </Link>
               <Link

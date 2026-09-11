@@ -15,7 +15,7 @@ export const practiceSaleCgtTool: GenericTool = {
   metaDescription:
     "Estimate what you keep from selling your dental practice after Capital Gains Tax and Business Asset Disposal Relief at 2026/27 rates. Indicative valuation range from normalised EBITDA.",
   intro:
-    "Enter your normalised EBITDA, practice mix and region to get an indicative valuation range, then see your estimated net proceeds after Capital Gains Tax at 2026/27 rates — including Business Asset Disposal Relief (BADR) at 18%.",
+    "Enter your normalised EBITDA, practice mix and region to get an indicative valuation range, then see your estimated net proceeds after Capital Gains Tax at 2026/27 rates, including Business Asset Disposal Relief (BADR) at 18%.",
   fields: [
     {
       id: "ebitda",
@@ -88,8 +88,8 @@ export const practiceSaleCgtTool: GenericTool = {
       type: "select",
       default: "yes",
       options: [
-        { value: "yes", label: "Yes — I expect to qualify" },
-        { value: "no", label: "No — not eligible or not claiming" },
+        { value: "yes", label: "Yes, I expect to qualify" },
+        { value: "no", label: "No, not eligible or not claiming" },
       ],
       help: "BADR reduces CGT to 18% on qualifying gains up to £1,000,000 lifetime. Two-year minimum holding period and genuine business interest required.",
     },
@@ -136,7 +136,7 @@ export const practiceSaleCgtTool: GenericTool = {
           : `No BADR claimed; CGT at ${(CGT_BASIC_RATE * 100).toFixed(0)}%/${(CGT_HIGHER_RATE * 100).toFixed(0)}% on net gain`,
         positive: true,
       },
-      note: "2026/27 CGT rates throughout. BADR at 18% from 6 April 2026 (gov.uk). Standard CGT 18% within any remaining basic-rate band, 24% above, both from 30 October 2024. Annual exempt amount £3,000. The chargeable gain defaults to the mid-point goodwill figure; it excludes tangible assets (which attract different tax treatment) and any base cost. Actual gain depends on your original cost, any enhancement expenditure, and how the sale is structured. BADR eligibility requires meeting two-year minimum holding and genuine business interest conditions — these are your responsibility to confirm. Earn-out arrangements attract CGT at standard rates on each payment as it falls due. Estimates, not advice; take specialist tax advice before any practice disposal.",
+      note: "2026/27 CGT rates throughout. BADR at 18% from 6 April 2026 (gov.uk). Standard CGT 18% within any remaining basic-rate band, 24% above, both from 30 October 2024. Annual exempt amount £3,000. The chargeable gain defaults to the mid-point goodwill figure; it excludes tangible assets (which attract different tax treatment) and any base cost. Actual gain depends on your original cost, any enhancement expenditure, and how the sale is structured. BADR eligibility requires meeting two-year minimum holding and genuine business interest conditions, and these are your responsibility to confirm. Earn-out arrangements attract CGT at standard rates on each payment as it falls due. Estimates, not advice; take specialist tax advice before any practice disposal.",
     };
   },
   explainer: {

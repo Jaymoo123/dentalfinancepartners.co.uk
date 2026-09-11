@@ -12,9 +12,9 @@ faqs:
 - question: What's a typical EBITDA multiple for a UK dental practice in 2025/26?
   answer: There is no single multiple. EBITDA multiples in UK dental in 2025/26 range from around 0.6× for NHS-heavy single-handed practices in lower-demand regions to 1.4× or higher for private-focused multi-surgery practices in high-demand locations (London, South East, prime South Coast and West Country). Corporate buyers paying for fit can stretch above 1.4×. Quote a single multiple to a seller or buyer and you'll mis-set expectations on either side. The realistic number depends on private/NHS mix, region, surgery count, contract stability, associate retention, lease/freehold position and demand for that specific practice type.
 - question: How much of a practice price is typically goodwill?
-  answer: Goodwill typically represents 60-80% of total practice purchase price. Tangible assets — chairs, lights, X-ray, compressors, sterilisation equipment, plus any inherited fixtures and fittings — make up the balance. For a typical mid-size mixed-NHS-private practice trading at, say, £750,000, you'd expect roughly £500,000-£600,000 of that allocated to goodwill and £150,000-£250,000 to tangible assets. The exact split matters for capital allowances on the buyer side and CGT treatment on the seller side, so the allocation in the sale documents is not just a formality.
+  answer: Goodwill typically represents 60-80% of total practice purchase price. Tangible assets (chairs, lights, X-ray, compressors, sterilisation equipment, plus any inherited fixtures and fittings) make up the balance. For a typical mid-size mixed-NHS-private practice trading at, say, £750,000, you'd expect roughly £500,000-£600,000 of that allocated to goodwill and £150,000-£250,000 to tangible assets. The exact split matters for capital allowances on the buyer side and CGT treatment on the seller side, so the allocation in the sale documents is not just a formality.
 - question: What's the BADR rate in 2025/26 and 2026/27?
-  answer: Business Asset Disposal Relief is charged at 14% in 2025/26 (the year ending 5 April 2026) on qualifying gains up to a £1m lifetime limit. The rate rises to 18% from 6 April 2026 onwards. The lifetime limit is per individual, not per disposal — if you've previously claimed BADR on another business sale, the unused balance is what's available. The £1m limit has been fixed since 2020 and is not indexed for inflation.
+  answer: Business Asset Disposal Relief is charged at 14% in 2025/26 (the year ending 5 April 2026) on qualifying gains up to a £1m lifetime limit. The rate rises to 18% from 6 April 2026 onwards. The lifetime limit is per individual, not per disposal, if you've previously claimed BADR on another business sale, the unused balance is what's available. The £1m limit has been fixed since 2020 and is not indexed for inflation.
 - question: What is Section 162 incorporation relief and when does it apply?
   answer: Section 162 TCGA 1992 is the relief that defers CGT on goodwill when an unincorporated business (sole trader or partnership) is transferred to a limited company in exchange for shares. The deferred gain reduces the base cost of the shares received; when those shares are later sold, the deferred gain crystallises. The whole business must be transferred (not just part of it). Section 162 is sometimes used pre-sale to convert an unincorporated practice into a limited company before the share sale, where BADR may then apply on the share disposal. Whether it's the right route depends on the wider tax position, the timing horizon, and the relative rates at the point of disposal.
 - question: How does goodwill amortisation tax relief work?
@@ -31,7 +31,7 @@ reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-<p><strong>Most dental principals spend more on the legal side of a sale than the financial side</strong>, then wonder why the tax bill ends up larger than expected and the buyer's offer came in lower than the valuation they'd been working with. The goodwill work — valuation, normalisation, tax structure, pre-sale planning — is what determines what you walk away with.</p>
+<p><strong>Most dental principals spend more on the legal side of a sale than the financial side</strong>, then wonder why the tax bill ends up larger than expected and the buyer's offer came in lower than the valuation they'd been working with. The goodwill work (valuation, normalisation, tax structure, pre-sale planning) is what determines what you walk away with.</p>
 
 <p>This guide is the playbook. It covers how UK dental practice goodwill is actually valued in 2025/26 (with realistic ranges by region and practice type), the post-April-2019 amortisation rules, the BADR rate change taking effect on 6 April 2026, Section 162 incorporation relief mechanics, and the 24-month pre-sale timeline that captures the planning properly.</p>
 
@@ -45,7 +45,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li><strong>NHS-heavy single-handed practices in lower-demand regions</strong>: roughly 0.6-0.9× normalised EBITDA. Lower demand reflects buyer caution about NHS contract reform exposure and the difficulty of running a single-handed NHS practice without burnout.</li>
-<li><strong>Mixed NHS/private multi-surgery practices in normal-demand regions</strong>: roughly 0.9-1.2× normalised EBITDA. The sweet spot for many buyers — NHS underwrites baseline revenue, private offers margin upside.</li>
+<li><strong>Mixed NHS/private multi-surgery practices in normal-demand regions</strong>: roughly 0.9-1.2× normalised EBITDA. The sweet spot for many buyers: NHS underwrites baseline revenue, private offers margin upside.</li>
 <li><strong>Private-focused practices in high-demand regions</strong>: roughly 1.1-1.4× normalised EBITDA, sometimes higher for prime locations (Central London, prime South Coast, prestige West Country). High-margin private income with low NHS contract risk commands a premium.</li>
 <li><strong>Corporate acquirer premium</strong>: corporate dental groups will sometimes pay above market multiples for practices that fit their consolidation strategy. The strategic value to the corporate (e.g., filling a geographic gap, adding a specific specialty capability) drives the premium.</li>
 </ul>
@@ -65,7 +65,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>The total practice price has to be allocated between goodwill (intangible) and tangible assets (chairs, equipment, fixtures, fittings, vehicles if any). The allocation matters for both sides:</p>
 
 <ul>
-<li><strong>Seller side</strong>: goodwill disposal proceeds go to CGT (with potential BADR). Tangible asset disposals each have their own tax treatment — some give rise to capital allowance balancing charges, some to chargeable gains depending on the asset category.</li>
+<li><strong>Seller side</strong>: goodwill disposal proceeds go to CGT (with potential BADR). Tangible asset disposals each have their own tax treatment: some give rise to capital allowance balancing charges, some to chargeable gains depending on the asset category.</li>
 <li><strong>Buyer side</strong>: goodwill acquired post-1 April 2019 receives tax relief at 6.5% per year. Tangible assets typically receive 100% first-year relief under AIA (chairs, X-rays, autoclaves, etc.) or 3% per year SBA (qualifying premises spend post-29 October 2018).</li>
 </ul>
 
@@ -77,11 +77,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li><strong>Pre-8 July 2015</strong>: tax relief generally available on amortisation over the asset's accounting life</li>
-<li><strong>8 July 2015 to 31 March 2019</strong>: relief withdrawn for goodwill acquired in this window — generally no tax relief on amortisation</li>
+<li><strong>8 July 2015 to 31 March 2019</strong>: relief withdrawn for goodwill acquired in this window, generally no tax relief on amortisation</li>
 <li><strong>1 April 2019 onwards</strong>: relief reinstated in modified form by Finance Act 2019. Tax relief at 6.5% per year (15-year amortisation period for tax purposes) for goodwill acquired with a qualifying business.</li>
 </ul>
 
-<p>For practice buyers in 2025/26, every acquisition you complete will have goodwill in the post-1-April-2019 regime, so the 6.5% relief is available. The relief is claimed in the corporation tax computation each year. If your acquisition accountant doesn't proactively claim it, you'll lose the relief — there's no automatic relief, you have to elect for it.</p>
+<p>For practice buyers in 2025/26, every acquisition you complete will have goodwill in the post-1-April-2019 regime, so the 6.5% relief is available. The relief is claimed in the corporation tax computation each year. If your acquisition accountant doesn't proactively claim it, you'll lose the relief: there's no automatic relief, you have to elect for it.</p>
 
 <p>For practice owners who acquired pre-1 April 2019, the goodwill in your accounts is either being amortised with no tax relief (the 8 July 2015 to 31 March 2019 window) or with relief at the pre-2015 rate. Both positions are locked in by the acquisition date; you can't retroactively access the post-April-2019 6.5% relief.</p>
 
@@ -96,7 +96,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The 4 percentage point increase translates directly to additional tax on the same gain. On a £1m qualifying gain (the full lifetime limit), the difference is £40,000 of additional CGT for a 2026/27 disposal vs a 2025/26 disposal.</p>
 
-<p>This creates a real planning question for principals approaching a sale in late 2025 or early 2026. Completing the sale on 5 April 2026 (the last day of 2025/26) vs completing on 6 April 2026 (the first day of 2026/27) is potentially £40,000 different on the tax bill. The rule is that the gain accrues on the date of disposal — typically the contract completion date for a share or asset sale. Trying to engineer the completion date precisely is a real risk because deals slip; relying on a target completion of 31 March 2026 is sensible, but a buffer week or two is sensible too.</p>
+<p>This creates a real planning question for principals approaching a sale in late 2025 or early 2026. Completing the sale on 5 April 2026 (the last day of 2025/26) vs completing on 6 April 2026 (the first day of 2026/27) is potentially £40,000 different on the tax bill. The rule is that the gain accrues on the date of disposal, typically the contract completion date for a share or asset sale. Trying to engineer the completion date precisely is a real risk because deals slip; relying on a target completion of 31 March 2026 is sensible, but a buffer week or two is sensible too.</p>
 
 <h3>BADR eligibility conditions</h3>
 
@@ -141,8 +141,8 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li>First conversation with a dental-specialist accountant about exit planning</li>
-<li>Realistic valuation refresh — what is the practice actually worth today, and what would it be worth in 24 months with optimisation?</li>
-<li>BADR eligibility audit — are you on track to qualify? If not, what needs to change?</li>
+<li>Realistic valuation refresh: what is the practice actually worth today, and what would it be worth in 24 months with optimisation?</li>
+<li>BADR eligibility audit: are you on track to qualify? If not, what needs to change?</li>
 <li>Decision on incorporation route (if unincorporated): Section 162 incorporation now, or asset sale at exit?</li>
 </ul>
 

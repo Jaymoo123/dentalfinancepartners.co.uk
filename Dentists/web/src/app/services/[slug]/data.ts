@@ -165,7 +165,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "Cost allocation that matches how a dental practice actually runs",
         body: [
-          "Generalist accounting allocates costs by type — salaries, rates, light and heat. That tells you the total, not the relevant detail.",
+          "Generalist accounting allocates costs by type: salaries, rates, light and heat. That tells you the total, not the relevant detail.",
           "We allocate the costs that vary by income mix: associate fee splits against the income they generate, lab fees against the treatment that triggered them, materials against private vs NHS volume, surgery rent against surgery utilisation. The result is a real margin by income stream, not a notional average.",
         ],
       },
@@ -248,7 +248,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
           "The genuine commercial expenses an associate incurs are deductible in the self-assessment return. The ones that go missing are rarely exotic: mileage between practices, the annual indemnity premium, and a phone apportionment nobody ever documented.",
         ],
         bullets: [
-          "Indemnity insurance (Dental Protection, MDU, MDDUS) — fully allowable trade expense",
+          "Indemnity insurance (Dental Protection, MDU, MDDUS), fully allowable trade expense",
           "GDC retention fee and any specialist register fees",
           "CPD courses, online and in-person, where genuinely relevant to your clinical practice",
           "Professional subscriptions to BDA, college memberships, specialty associations",
@@ -268,7 +268,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "NHS Pension scheme: still valuable, but watch the annual allowance",
         body: [
-          "Many associates default into the NHS Pension Scheme and stay there without reviewing. The default is usually right — the scheme remains one of the most valuable in the UK. But high-earning principals and high-earning associates with significant private income on top can hit the tapered annual allowance and trigger a tax charge.",
+          "Many associates default into the NHS Pension Scheme and stay there without reviewing. The default is usually right, because the scheme remains one of the most valuable in the UK. But high-earning principals and high-earning associates with significant private income on top can hit the tapered annual allowance and trigger a tax charge.",
           "We model pensionable pay against the tapered allowance threshold and flag where Scheme Pays may make sense. We do not give regulated pension advice; for transfer or access decisions we work with an FCA-authorised IFA.",
         ],
       },
@@ -458,7 +458,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
           "Indemnity insurance: deductible regardless of structure (genuinely necessary cost)",
           "GDC retention: deductible",
           "CPD courses, conferences and learning materials: deductible if clinically relevant",
-          "Travel between practices: deductible (not home-to-first-practice — that is commute)",
+          "Travel between practices: deductible (not home-to-first-practice, which is commute)",
           "Loupes, instruments, lab coats and clinical equipment: deductible",
           "Subscriptions to clinical journals and specialty associations: deductible",
           "Accountancy fees: deductible",

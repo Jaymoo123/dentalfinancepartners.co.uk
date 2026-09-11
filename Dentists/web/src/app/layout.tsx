@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { PageShell } from "@/components/layout/PageShell";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
@@ -17,12 +17,6 @@ const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
 });
 
 const siteUrl = siteConfig.url;
@@ -76,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body
-        className={`${plusJakarta.variable} ${cormorant.variable} ${plusJakarta.className} antialiased`}
+        className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
         {/* Site-wide entity graph: canonical Organization (+ Companies House
             sameAs) and WebSite nodes emitted once here so every page carries

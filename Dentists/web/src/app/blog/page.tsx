@@ -9,12 +9,12 @@ import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "UK dental accounting and tax articles for associates, practice owners, and managers — NHS/private mixes, compliance, and profit.",
+    "UK dental accounting and tax articles for associates, practice owners, and managers. NHS/private mixes, compliance, and profit.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     title: "Blog",
     description:
-      "UK dental accounting and tax articles for associates, practice owners, and managers — NHS/private mixes, compliance, and profit.",
+      "UK dental accounting and tax articles for associates, practice owners, and managers. NHS/private mixes, compliance, and profit.",
     url: `${siteConfig.url}/blog`,
     type: "website",
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog",
     description:
-      "UK dental accounting and tax articles for associates, practice owners, and managers — NHS/private mixes, compliance, and profit.",
+      "UK dental accounting and tax articles for associates, practice owners, and managers. NHS/private mixes, compliance, and profit.",
   },
 };
 

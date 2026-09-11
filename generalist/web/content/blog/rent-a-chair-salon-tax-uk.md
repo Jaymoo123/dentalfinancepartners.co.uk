@@ -29,6 +29,10 @@ faqs:
     answer: "Splitting the invoice does not create an exempt element. The salon is making one standard-rated supply of facilities, and relabelling part of it as rent for the floor space does not change what is being supplied. A genuinely separate room let with no services attached can still be exempt land, but that is fact-specific and is not what a chair in a working salon floor looks like."
   - question: "What happens if HMRC decides the chair renters are really employees?"
     answer: "The salon becomes responsible for the Pay As You Earn (PAYE) tax and National Insurance contributions (NIC) that should have been operated, with interest and potentially penalties. Employer NIC runs at 15% on earnings above the £5,000 secondary threshold from 6 April 2025, reduced by the £10,500 Employment Allowance if the salon qualifies. There is a separate employment-law exposure on top, because employee status brings holiday pay, minimum wage and pension auto-enrolment duties."
+  - question: "Is rent a chair exempt from VAT as a supply of land?"
+    answer: "Almost always no. VATA 1994 Sch 9 Group 1 Item 1 paragraph (ma) takes the grant of facilities to someone supplying hairdressing services out of the land exemption, so a rent-a-chair deal is a standard-rated supply of facilities rather than exempt land. Exemption is restored only where the grant is of a clearly demarcated area, an entire building, floor or defined area, with no related hairdressing services supplied alongside it. Both limbs have to hold."
+  - question: "What services make a rent a chair deal standard rated?"
+    answer: "Anything supplied with the space that relates to hairdressing. HMRC's VAT Land and Property Manual at VATLP19820 gives assistants, appointment booking and towel laundering as examples, and washbasins, reception cover and a client waiting area work the same way. Those are not ancillary to a licence to occupy a space, they are an integral part of one taxable supply of facilities, so once they are in the package the whole charge is standard rated."
   - question: "What should a chair-rental agreement say?"
     answer: "It should describe the arrangement that actually happens: a fixed rent for use of the facilities, the stylist setting their own prices and keeping their own takings, the stylist buying their own products and kit, freedom to take bookings elsewhere, and no salon control over hours. It should also state whether the rent is inclusive or exclusive of VAT, because that single line decides who absorbs the 20% when the salon crosses the registration threshold."
 keyTakeaways:
@@ -93,13 +97,56 @@ keyTakeaways:
 
 <p>Two consequences follow that salons regularly miss. First, if you are not VAT registered you charge no VAT on chair rent, because you charge no VAT on anything, but the rental income still counts toward the threshold that decides whether you have to register. Second, if you are registered and have been invoicing chair rent with no VAT on it, the VAT was still due. Where the agreement is silent on VAT, the amount you charged is usually treated as VAT inclusive, so the VAT comes out of the rent you already received rather than being added on top of it.</p>
 
-<p>The exception, and it is narrow: a genuinely separate room, let with no services attached, can still be an exempt supply of land. A chair on an open salon floor with shared basins, reception, towels, heat and light is not it. Treat the separate-room position as something to establish carefully rather than something to assume.</p>
+<p>The exception, and it is narrow: a clearly demarcated area, let with no related hairdressing services attached, can still be an exempt supply of land. A chair on an open salon floor with shared basins, reception, towels, heat and light is not it. The next section sets out exactly where that line falls, because it is the part of the rule most salons assume in their own favour without testing.</p>
 
 <h2>Can the Rent Be Split Into Rent Plus Services?</h2>
 
 <p>No. Splitting the invoice into a "rent" line and a "services" line does not create an exempt element. What the salon supplies is one thing, facilities for a stylist to work from, and it is standard rated as a whole. Relabelling the paperwork changes the paperwork.</p>
 
 <p>This matters because the split is often suggested with good intentions, usually to make the rent look cheaper to a stylist who cannot recover VAT. It does not reduce the VAT and it makes the position harder to defend, because an invoice that describes an exempt supply the salon is not making is evidence against the salon rather than for it.</p>
+
+<h2 id="rent-a-chair">Rent a Chair: Land or Facilities, and Why the Answer Decides the VAT</h2>
+
+<p>When people search "rent a chair" they are usually asking one underlying VAT question without knowing it: is the salon letting out land, which would be exempt, or supplying facilities, which is standard rated? Everything else follows from that. The statutory answer is in <a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/9">VATA 1994 Schedule 9, Group 1, Item 1, paragraph (ma)</a>, which excludes from the land exemption "the grant of facilities to a person who uses the facilities wholly or mainly to supply hairdressing services". That paragraph was inserted by Finance Act 2012 and has applied since 1 October 2012.</p>
+
+<p>The accompanying Notes to Group 1 restore exemption in one situation only, and its shape is precise. The grant has to be of a <strong>clearly demarcated area</strong>, meaning exclusive use of an entire building, an entire floor, or a defined area, and it has to come with <strong>no related hairdressing services</strong> supplied alongside it. Both limbs are required. A defined area on its own is not enough, which is the half of the test that salons tend to drop.</p>
+
+<p>HMRC's position on what tips a grant back onto the standard-rated side is published in its VAT Land and Property Manual at <a href="https://www.gov.uk/hmrc-internal-manuals/vat-land-and-property/vatlp19820">VATLP19820</a>. Chair rentals there include a chair with rights of access, or a clearly defined area, supplied together with services related to hairdressing such as assistants, appointment booking and towel laundering. The manual states the conclusion flatly: "When a hairdressing salon rents chair spaces to individual self-employed stylists, the salon's supplies to the individual stylists will be taxable."</p>
+
+<p>The reason those services are decisive is a single-supply point rather than a bookkeeping one. Assistants, reception cover, an appointment booking system, towel laundering, washbasins and a client waiting area are not ancillary to a licence to occupy a space. They are an integral part of one taxable supply of facilities for a stylist to work from. Once they are in the package, there is no land supply left to exempt, however the rent is described.</p>
+
+<h3>Which Side of the Line Is Your Arrangement On?</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard rated: a supply of facilities</th>
+      <th>Potentially exempt land: a clearly demarcated area with no related services</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A stylist renting a chair on the salon floor while the salon's reception takes the bookings</td>
+      <td>An entire self-contained first floor let to a stylist who takes their own bookings and employs their own help</td>
+    </tr>
+    <tr>
+      <td>A chair let with towel laundering included and a shared washbasin available</td>
+      <td>A defined treatment room let with no services at all, where the tenant supplies everything used in it</td>
+    </tr>
+    <tr>
+      <td>A barber's chair let with a junior assistant provided by the shop</td>
+      <td>A separately accessed unit within the building, let as land and nothing else</td>
+    </tr>
+    <tr>
+      <td>A beauty room let with the use of the salon's client waiting area and card machine</td>
+      <td>A demarcated area let where the only thing supplied is the space itself</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Read the right-hand column as the exception it is, not as a menu. Every row on that side is fact-specific, it has to be established on how the arrangement genuinely runs, and it survives only while the services stay out. Adding one of the left-hand column's features later, a shared basin or the salon taking the calls, moves the arrangement across the line from that point on. Relabelling an invoice does not move it back, and an agreement that describes an exempt letting the salon is not actually making is evidence against the salon.</p>
+
+<p>If the underlying question is whose supply this is at all, rather than what rate it carries, that is a separate and prior point covered in our guide to <a href="/blog/vat-and-making-tax-digital/agent-or-principal">agent or principal and what counts as your turnover for VAT</a>.</p>
 
 <h2>Does Chair Rent Count Toward the Salon's £90,000 VAT Threshold?</h2>
 

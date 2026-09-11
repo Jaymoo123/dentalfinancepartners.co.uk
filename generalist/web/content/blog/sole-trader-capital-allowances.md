@@ -208,15 +208,48 @@ faqs:
 
 <p>Instead of claiming capital allowances and actual running costs on a car, you can use the approved mileage allowance payment (AMAP) rate. For 2026/27 the rate is 55p per mile for the first 10,000 business miles, then 25p (the first-10,000-miles rate rose from 45p to 55p from 6 April 2026, per <a href="https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances" target="_blank" rel="noopener">HMRC's AMAP guidance</a>). The AMAP rate covers depreciation, insurance, fuel and servicing. If you use the mileage rate for a vehicle, you cannot also claim capital allowances on that vehicle. Pick one method and apply it consistently for as long as you own the vehicle.</p>
 
-<h2>Capital Allowances Under the Cash Basis</h2>
+<h2 id="cash-basis-capital-allowances">Cash Basis Capital Allowances: What the Statute Actually Says</h2>
 
 <p>If you use the cash basis for your Self Assessment return, you do not use the capital allowances system at all. Instead, you deduct the full cost of qualifying assets as a business expense in the year you pay for them. The tax result is the same as claiming 100% AIA, but without maintaining pools or tracking WDA schedules.</p>
 
 <p>When you sell an asset, bring the proceeds into income as a business receipt in the year you receive payment.</p>
 
+<p>Two provisions do the work. <a href="https://www.legislation.gov.uk/ukpga/2001/2/section/1A" target="_blank" rel="noopener">CAA 2001 s.1A</a> switches off entitlement to capital allowances for a cash basis business, with a carve-out at s.1A(4) that keeps cars inside the regime. <a href="https://www.legislation.gov.uk/ukpga/2005/5/section/33A" target="_blank" rel="noopener">ITTOIA 2005 s.33A</a> then supplies the positive rule: capital expenditure is deducted as an ordinary expense when paid, unless the item sits on the s.33A excluded list. Never describe this as claiming the AIA on the cash basis; there is no AIA to claim.</p>
+
+<h3>The s.33A Excluded List Is Wider Than Cars</h3>
+
+<p>Cars are the exception most people know about, and they are not the only one. Section 33A also refuses a deduction for expenditure on land and buildings, non-depreciating assets, financial assets, non-qualifying intangible assets, and anything incurred on or in connection with the acquisition or disposal of a business or part of a business. A sole trader who buys a shop, a lease or a retiring competitor's client list and deducts the cost as an expense has an error on the return, not an accelerated deduction. The s.33A(14) meaning of a car is taken from CAA 2001 Part 2.</p>
+
+<table>
+<thead>
+<tr>
+<th>Cash basis: deducted as an expense when paid</th>
+<th>Stays capital, no deduction (ITTOIA 2005 s.33A)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A mechanic's £2,800 diagnostic rig</td>
+<td>The mechanic's car, which remains in capital allowances (CAA 2001 s.1A(4))</td>
+</tr>
+<tr>
+<td>A cafe's £1,400 espresso machine</td>
+<td>The premises the cafe buys, and the land under them</td>
+</tr>
+<tr>
+<td>A joiner's £950 of power tools</td>
+<td>The joiner's purchase of a retiring competitor's business</td>
+</tr>
+<tr>
+<td>A salon's £700 of styling stations</td>
+<td>A financial asset, or a non-qualifying intangible such as a purchased licence</td>
+</tr>
+</tbody>
+</table>
+
 <p>For cars under the cash basis, the rule is different: you cannot deduct the purchase cost outright. You either claim actual vehicle costs apportioned for private use (including a depreciation charge calculated as original cost minus estimated residual value over the period of business use), or you use the mileage rate. Most cash-basis sole traders use the mileage rate for cars to avoid the complexity.</p>
 
-<p>The cash basis is now the default method for most sole traders and partnerships. If your accounting is on the accruals basis, the full capital allowances system (AIA, FYA, WDA, pools) applies. For guidance on which method suits your business, see our article on <a href="/blog/sole-trader-and-self-employment/cash-basis-vs-accruals-sole-trader">cash basis vs accruals for sole traders</a>.</p>
+<p>The cash basis is now the default method for most sole traders and partnerships. If your accounting is on the accruals basis, the full capital allowances system (AIA, FYA, WDA, pools) applies. For guidance on which method suits your business, see our article on <a href="/blog/sole-trader-and-self-employment/cash-basis-vs-accruals-sole-trader">cash basis vs accruals for sole traders</a>. Our <a href="/blog/sole-trader-and-self-employment/cash-basis">cash basis guide</a> covers the rules as a whole, and <a href="/blog/sole-trader-and-self-employment/cash-basis-allowable-expenses">cash basis allowable expenses</a> shows where capital spend sits alongside everything else you deduct.</p>
 
 <h2>Disposals, Balancing Charges and Balancing Allowances</h2>
 

@@ -43,7 +43,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>In England, commissioning is now handled by NHS England regional teams. In Wales, by NHS Wales and Local Health Boards. In Northern Ireland, by the Health and Social Care Board. In Scotland, dental treatment is reimbursed item-by-item under the Statement of Dental Remuneration (SDR) rather than via UDA contracts, so the structure differs significantly there.</p>
 
-<p>For England, Wales and Northern Ireland, the dominant contract mechanism uses Units of Dental Activity (UDAs) as the measurement currency. Different treatments are worth different numbers of UDAs, and the practice has to deliver a contracted total over the year. Each UDA has a monetary value attached to that specific contract — and that's the single most-misunderstood part of how NHS dental funding works.</p>
+<p>For England, Wales and Northern Ireland, the dominant contract mechanism uses Units of Dental Activity (UDAs) as the measurement currency. Different treatments are worth different numbers of UDAs, and the practice has to deliver a contracted total over the year. Each UDA has a monetary value attached to that specific contract, and that's the single most-misunderstood part of how NHS dental funding works.</p>
 
 <h2>Why your UDA value is not the national average</h2>
 
@@ -52,12 +52,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>In England, current individual contract UDA values typically range from around <strong>£15 to over £45 per UDA</strong>, with most contracts clustering between £25 and £35. The variance comes from three factors:</p>
 
 <ul>
-<li><strong>The 2006 baseline</strong> — when GDS contracts were introduced, the value of each new contract was calibrated against the practice's historical "test year" gross fees from the old NHS dental system, divided by the practice's contracted UDA target. Practices with high historical fee income relative to UDA volume ended up with high-value contracts; the opposite is also true.</li>
-<li><strong>Annual contract uplifts</strong> — uplifts have varied year to year. Some years the percentage has lagged behind cost inflation, materially eroding the real value of a contract over time.</li>
-<li><strong>Commissioner-specific variations</strong> — local commissioning teams have at times adjusted contract values for specific reasons (e.g., to attract dental provision to under-served areas, or as part of contract renegotiation at sale).</li>
+<li><strong>The 2006 baseline</strong>: when GDS contracts were introduced, the value of each new contract was calibrated against the practice's historical "test year" gross fees from the old NHS dental system, divided by the practice's contracted UDA target. Practices with high historical fee income relative to UDA volume ended up with high-value contracts; the opposite is also true.</li>
+<li><strong>Annual contract uplifts</strong>: uplifts have varied year to year. Some years the percentage has lagged behind cost inflation, materially eroding the real value of a contract over time.</li>
+<li><strong>Commissioner-specific variations</strong>: local commissioning teams have at times adjusted contract values for specific reasons (e.g., to attract dental provision to under-served areas, or as part of contract renegotiation at sale).</li>
 </ul>
 
-<p>This is why two practices with identical UDA contracts on paper — say, 8,000 UDAs per year — can have very different annual contract values. One might be earning £200,000 (at £25/UDA), another £280,000 (at £35/UDA), for the same clinical workload. When you're modelling a practice acquisition or comparing two contracts, the per-UDA value is the number that matters, not the headline contract value or the UDA count.</p>
+<p>This is why two practices with identical UDA contracts on paper (say, 8,000 UDAs per year) can have very different annual contract values. One might be earning £200,000 (at £25/UDA), another £280,000 (at £35/UDA), for the same clinical workload. When you're modelling a practice acquisition or comparing two contracts, the per-UDA value is the number that matters, not the headline contract value or the UDA count.</p>
 
 <h2>GDS, PDS, and ODS: the contract types explained</h2>
 
@@ -65,7 +65,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>GDS (General Dental Services)</h3>
 
-<p>The standard ongoing NHS dental contract introduced in 2006. GDS contracts are designed to be continuing — there's no end date — and they cover the standard range of NHS dental treatment for the contracted patient population. The vast majority of NHS dental contracts in England are GDS contracts.</p>
+<p>The standard ongoing NHS dental contract introduced in 2006. GDS contracts are designed to be continuing (there's no end date) and they cover the standard range of NHS dental treatment for the contracted patient population. The vast majority of NHS dental contracts in England are GDS contracts.</p>
 
 <p>GDS contracts are valued in UDAs. The contract specifies the annual UDA target the practice must deliver and the value the commissioner pays per UDA. Treatment is grouped into three (or, since contract reform, sometimes a different number of) bands, with each band worth a different number of UDAs.</p>
 
@@ -99,7 +99,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Patient charges and the practice's share</h2>
 
-<p>Patients pay an NHS contribution toward most treatment (with exemptions for under-18s, pregnant women, those on certain benefits, and others). The patient charge for each band is set centrally — for 2025/26, the standard NHS patient charges in England are:</p>
+<p>Patients pay an NHS contribution toward most treatment (with exemptions for under-18s, pregnant women, those on certain benefits, and others). The patient charge for each band is set centrally. For 2025/26, the standard NHS patient charges in England are:</p>
 
 <ul>
 <li>Band 1: £27.40</li>
@@ -108,7 +108,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Urgent treatment: £27.40</li>
 </ul>
 
-<p>Important: the patient charge is collected by the practice but goes towards the contract value, not on top of it. If your contract is worth £200,000 a year, the patient charges you collect reduce the NHS top-up payment correspondingly. The patient charge does not represent additional income — it represents a portion of your contract income paid by the patient instead of by the NHS.</p>
+<p>Important: the patient charge is collected by the practice but goes towards the contract value, not on top of it. If your contract is worth £200,000 a year, the patient charges you collect reduce the NHS top-up payment correspondingly. The patient charge does not represent additional income: it represents a portion of your contract income paid by the patient instead of by the NHS.</p>
 
 <p>This is one of the most-misunderstood mechanics for new practice buyers. If you're acquiring a practice and the seller's accounts show "NHS treatment income" gross of patient charges, you need to confirm this is the contract value (not contract value plus patient charges, which would be double-counting).</p>
 
@@ -129,10 +129,10 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>NHS dental contract reform has been on the policy agenda for years. The current direction (as of the 2025/26 tax year) includes:</p>
 
 <ul>
-<li><strong>Banding flexibility</strong> — adjustments to how UDAs are allocated within bands to better reflect treatment complexity</li>
-<li><strong>Preventive funding</strong> — increased emphasis on preventive treatment, with proposals for separately-funded preventive packages</li>
-<li><strong>Recall intervals</strong> — alignment with NICE recommended recall intervals (which can be longer than the historical six-monthly default for low-risk patients)</li>
-<li><strong>Carry-over and flexibility</strong> — limited carry-over of unused UDAs into the next contract year for some commissioning arrangements</li>
+<li><strong>Banding flexibility</strong>: adjustments to how UDAs are allocated within bands to better reflect treatment complexity</li>
+<li><strong>Preventive funding</strong>: increased emphasis on preventive treatment, with proposals for separately-funded preventive packages</li>
+<li><strong>Recall intervals</strong>: alignment with NICE recommended recall intervals (which can be longer than the historical six-monthly default for low-risk patients)</li>
+<li><strong>Carry-over and flexibility</strong>: limited carry-over of unused UDAs into the next contract year for some commissioning arrangements</li>
 </ul>
 
 <p>The detail is in flux. Pilots have been run in specific commissioning areas. The Department of Health and Social Care has indicated further reform is intended but the timing and final shape have shifted multiple times. For practice planning purposes, the realistic assumption is that the UDA mechanism continues through 2025/26 with incremental reform rather than wholesale replacement, and that any larger reform would have phased implementation over multiple years.</p>
@@ -149,7 +149,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Share sale</h3>
 
-<p>If the buyer is acquiring the seller's existing limited company that holds the contract, the contract stays with the company. No novation is needed because the contracting party hasn't changed. This is one of the reasons share sales of NHS-heavy practices can be attractive — the contract transfer risk is lower. But share sales carry their own risks (inherited liabilities, latent issues in the company's history) that asset sales avoid.</p>
+<p>If the buyer is acquiring the seller's existing limited company that holds the contract, the contract stays with the company. No novation is needed because the contracting party hasn't changed. This is one of the reasons share sales of NHS-heavy practices can be attractive: the contract transfer risk is lower. But share sales carry their own risks (inherited liabilities, latent issues in the company's history) that asset sales avoid.</p>
 
 <h3>Contract transfer due diligence</h3>
 
@@ -168,7 +168,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Most UK dental practices today run a mixed NHS and private model. The strategic question for principals is the split. NHS provides baseline revenue with low patient acquisition cost (patients come to you because they need NHS treatment); private provides higher margin but requires you to compete for patients.</p>
 
-<p>From a tax perspective, both NHS and private clinical income are VAT-exempt under VATA 1994 Schedule 9 Group 7 when supplied by a registered dental professional in the course of their profession. The borderline is purely cosmetic treatment without a medical purpose — tooth whitening is the classic borderline case HMRC scrutinises. We cover the VAT-on-dental detail in a separate guide.</p>
+<p>From a tax perspective, both NHS and private clinical income are VAT-exempt under VATA 1994 Schedule 9 Group 7 when supplied by a registered dental professional in the course of their profession. The borderline is purely cosmetic treatment without a medical purpose: tooth whitening is the classic borderline case HMRC scrutinises. We cover the VAT-on-dental detail in a separate guide.</p>
 
 <p>From a practice planning perspective, the split shapes everything: practice valuation multiples (private-heavy practices typically command higher multiples), staff structure (hygienist throughput matters more on private practices), capacity planning, marketing investment. There's no universally right ratio; it depends on the practice's location, patient demographics, and the principal's preferences. The question to ask each year is: is the current split delivering the margin and lifestyle I want, and is the trend going where I want it to go?</p>
 
@@ -195,7 +195,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>Clean up your UDA delivery position 12-24 months before listing. Stable, at-target delivery supports valuation; volatility or recent clawback notices reduce buyer confidence and price.</li>
 <li>Make sure your accounts cleanly separate NHS contract value from patient charges to avoid buyer questions in due diligence.</li>
-<li>Speak to a specialist dental accountant 24 months before sale about BADR and Section 162 incorporation relief — the qualifying period is two years and the planning needs to start early.</li>
+<li>Speak to a specialist dental accountant 24 months before sale about BADR and Section 162 incorporation relief: the qualifying period is two years and the planning needs to start early.</li>
 </ul>
 
 <p>Our practice accounting and practice valuation services cover all of these. If you want a 30-minute scoping call on your specific NHS contract position, book one via the form below.</p>

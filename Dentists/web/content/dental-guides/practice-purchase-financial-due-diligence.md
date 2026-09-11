@@ -16,11 +16,11 @@ faqs:
   - question: "What's the difference between asset sale and share sale?"
     answer: "Asset sale: the buyer purchases specific assets (goodwill, equipment, lease/freehold, NHS contract by novation) from the seller's business. The seller's company is left behind with any historical liabilities and gets wound up by the seller post-completion. Share sale: the buyer acquires the seller's existing limited company, inheriting all assets, liabilities and historical obligations. Most UK dental practice sales settle as asset sales because they're cleaner for the buyer (no hidden liability transfer) and the SDLT and stamp duty arithmetic typically still works. Share sales make sense in specific cases: multi-contract acquisitions where novation risk is high, or where the seller's company holds valuable contracts that would lose value on transfer."
   - question: "How do I check the NHS contract is transferable?"
-    answer: "The contract documentation will identify the commissioning body (NHS England regional team, NHS Wales, HSCB Northern Ireland). The buyer's solicitor formally applies for the contract to be novated to the new owner. The commissioner has discretion: most clean novations are approved on standard terms, but some commissioners use the sale trigger to renegotiate value or contractual obligations. We've seen specific cases where a sale-triggered renegotiation reduced UDA value by 5-10%, materially changing the deal. Always speak to the commissioner pre-completion if there's any ambiguity — better to discover renegotiation risk before signing than after."
+    answer: "The contract documentation will identify the commissioning body (NHS England regional team, NHS Wales, HSCB Northern Ireland). The buyer's solicitor formally applies for the contract to be novated to the new owner. The commissioner has discretion: most clean novations are approved on standard terms, but some commissioners use the sale trigger to renegotiate value or contractual obligations. We've seen specific cases where a sale-triggered renegotiation reduced UDA value by 5-10%, materially changing the deal. Always speak to the commissioner pre-completion if there's any ambiguity, better to discover renegotiation risk before signing than after."
   - question: "Should I buy via a new limited company or in my personal name?"
     answer: "A new limited company is the standard route for most buyers. Reasons: limited liability, separates practice finances from personal, easier to bring in a future business partner or sell on, allows employer pension contributions for the principal, gives access to corporation tax rates on retained profit. The exception is when you're acquiring as a partnership with another dentist and the partnership structure suits the working arrangement, or when you're acquiring an unincorporated practice and intend to operate it unincorporated for a few years before incorporating later. We model the alternatives during diligence so the structure decision is made before offer."
   - question: "What happens to the staff when I buy?"
-    answer: "Employed staff (nurses, hygienists on PAYE contracts, treatment co-ordinators, receptionists) transfer via TUPE — their employment moves to the new owner on their existing terms. You can't unilaterally reduce their pay or notice them out without proper process for a defined period after completion. Self-employed associates have their agreements either novated to you or renegotiated; you have more flexibility but you must respect the contractual notice periods. Practising staff with their own GDC registrations remain professionally regulated regardless of who employs them; you just inherit the employment relationship."
+    answer: "Employed staff (nurses, hygienists on PAYE contracts, treatment co-ordinators, receptionists) transfer via TUPE, their employment moves to the new owner on their existing terms. You can't unilaterally reduce their pay or notice them out without proper process for a defined period after completion. Self-employed associates have their agreements either novated to you or renegotiated; you have more flexibility but you must respect the contractual notice periods. Practising staff with their own GDC registrations remain professionally regulated regardless of who employs them; you just inherit the employment relationship."
 ctaTitle: "Get buy-side financial due diligence on the practice you're looking at"
 ctaBody: "30-minute scoping call. Tell us about the practice you're considering and we'll outline what we'd dig into in DD and what the price defence looks like."
 ---
@@ -37,7 +37,7 @@ ctaBody: "30-minute scoping call. Tell us about the practice you're considering 
 
 <ul>
 <li>Three consecutive years of full statutory accounts (if the practice is a limited company) or self-assessment-grade trading accounts (if sole trader or partnership)</li>
-<li>Latest management accounts year-to-date — this matters because the gap between the last filed accounts and today could be 12+ months</li>
+<li>Latest management accounts year-to-date: this matters because the gap between the last filed accounts and today could be 12+ months</li>
 <li>Fixed asset register with acquisition date, original cost, and depreciation policy for each item</li>
 <li>List of any one-off items in each year (equipment refresh, premises spend, goodwill amortisation from a previous buy-out, etc.)</li>
 <li>Aged debtor list (who owes the practice money and how old it is)</li>
@@ -90,11 +90,11 @@ ctaBody: "30-minute scoping call. Tell us about the practice you're considering 
 
 <h3>One-off items stripped out</h3>
 
-<p>Equipment refresh, premises buy-out costs, COVID restart spend, one-off legal costs, exceptional bonuses — anything that won't recur for the buyer should be added back. Equally, anything the seller hasn't been spending that the buyer will need to spend (e.g., the equipment is overdue for replacement and the buyer will face that cost in year one) should be subtracted.</p>
+<p>Equipment refresh, premises buy-out costs, COVID restart spend, one-off legal costs, exceptional bonuses: anything that won't recur for the buyer should be added back. Equally, anything the seller hasn't been spending that the buyer will need to spend (e.g., the equipment is overdue for replacement and the buyer will face that cost in year one) should be subtracted.</p>
 
 <h3>Goodwill amortisation from previous acquisitions</h3>
 
-<p>If the seller acquired the practice (or a portion of it) themselves and has been amortising the goodwill, that amortisation is a non-cash expense in the accounts. Strip it out — the buyer's goodwill purchase will have its own amortisation profile.</p>
+<p>If the seller acquired the practice (or a portion of it) themselves and has been amortising the goodwill, that amortisation is a non-cash expense in the accounts. Strip it out: the buyer's goodwill purchase will have its own amortisation profile.</p>
 
 <h3>Personal expenses through the business</h3>
 
@@ -110,7 +110,7 @@ ctaBody: "30-minute scoping call. Tell us about the practice you're considering 
 
 <h3>Contract value vs national average</h3>
 
-<p>Per our NHS Contract Essentials guide, individual contract UDA values vary widely. A practice with a £180,000 contract on 6,000 UDAs has a £30/UDA value — at the higher end. A practice with a £180,000 contract on 8,000 UDAs has a £22.50/UDA value — at the lower end. Two practices with the same nominal contract value can have very different clinical workloads. Always look at the per-UDA value.</p>
+<p>Per our NHS Contract Essentials guide, individual contract UDA values vary widely. A practice with a £180,000 contract on 6,000 UDAs has a £30/UDA value, at the higher end. A practice with a £180,000 contract on 8,000 UDAs has a £22.50/UDA value, at the lower end. Two practices with the same nominal contract value can have very different clinical workloads. Always look at the per-UDA value.</p>
 
 <h3>Year-to-date UDA delivery</h3>
 
@@ -154,7 +154,7 @@ ctaBody: "30-minute scoping call. Tell us about the practice you're considering 
 
 <h3>Buyer vehicle</h3>
 
-<p>New limited company is the standard. Reasons: limited liability, employer pension contributions to the new principal, future flexibility on partner introduction or onward sale, separation from personal finances. The alternative — buying as an individual or partnership — has narrow use cases.</p>
+<p>New limited company is the standard. Reasons: limited liability, employer pension contributions to the new principal, future flexibility on partner introduction or onward sale, separation from personal finances. The alternative (buying as an individual or partnership) has narrow use cases.</p>
 
 <h3>SDLT on premises</h3>
 
@@ -172,9 +172,9 @@ ctaBody: "30-minute scoping call. Tell us about the practice you're considering 
 
 <ul>
 <li>Most lenders want to see the buyer's own self-assessment for the last 2-3 years to confirm income stability before lending</li>
-<li>Lenders will scrutinise the deal economics independently — they'll want to see normalised EBITDA, projected post-completion P&L, and the loan repayment schedule</li>
+<li>Lenders will scrutinise the deal economics independently: they'll want to see normalised EBITDA, projected post-completion P&L, and the loan repayment schedule</li>
 <li>Loan-to-value lower than 80% generally gets you better terms; higher than 90% is harder to secure and gets you less favourable terms</li>
-<li>Variable vs fixed rate is a real choice — fixed rates for the first 3-5 years are common and worth modelling against the variable scenario</li>
+<li>Variable vs fixed rate is a real choice: fixed rates for the first 3-5 years are common and worth modelling against the variable scenario</li>
 </ul>
 
 <h2>Post-completion: the first 90 days</h2>

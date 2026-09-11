@@ -311,10 +311,10 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-[var(--gold)]">About the author</p>
+                  <p className="text-sm font-bold uppercase tracking-wider text-primary-700">About the author</p>
                   <p className="mt-1 text-lg font-bold text-[var(--ink)]">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-[var(--ink-soft)] leading-relaxed">{niche.description}</p>
-                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-[var(--gold)] hover:underline">
+                  <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-primary-700 hover:underline">
                     Learn more about our team →
                   </Link>
                 </div>
@@ -323,7 +323,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
               <NextStepOffer />
 
               <div className="mt-16 border-2 border-[var(--gold)]/20 bg-gradient-to-br from-[var(--gold)]/5 to-[var(--accent)]/5 p-8 sm:p-10 rounded-2xl">
-                <h2 className="text-2xl font-bold text-[var(--gold)] sm:text-3xl">
+                <h2 className="text-2xl font-bold text-primary-700 sm:text-3xl">
                   {activeCta.blog.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">

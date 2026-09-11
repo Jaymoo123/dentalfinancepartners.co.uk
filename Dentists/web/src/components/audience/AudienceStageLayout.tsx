@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LeadForm } from "@/components/forms/LeadForm";
 import {
-  btnPrimary,
+  btnGold,
   focusRing,
   sectionY,
   sectionYLoose,
@@ -238,7 +238,7 @@ export function AudienceStageLayout({ data }: Props) {
                 ))}
               </div>
               <div className="mt-8 text-center">
-                <Link href="/dental-guides" className={btnPrimary}>
+                <Link href="/dental-guides" className={btnGold}>
                   Browse all pillar guides
                 </Link>
               </div>

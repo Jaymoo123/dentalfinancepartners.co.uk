@@ -35,7 +35,7 @@ ctaBody: "30-minute scoping call. We will model partnership vs LLP vs limited co
 
 <p>The default if you've never restructured. You are personally taxed on your share of practice profit at income tax + Class 2/4 NI rates. Simple to administer; no separate corporate accounts; profit and tax flow through to you personally each year.</p>
 
-<p>For a single principal, "sole trader" applies. For two or more principals sharing the practice, it's a "general partnership" — same tax treatment, profit share defined by the partnership agreement.</p>
+<p>For a single principal, "sole trader" applies. For two or more principals sharing the practice, it's a "general partnership": same tax treatment, profit share defined by the partnership agreement.</p>
 
 <h3>LLP (Limited Liability Partnership)</h3>
 
@@ -47,7 +47,7 @@ ctaBody: "30-minute scoping call. We will model partnership vs LLP vs limited co
 
 <h2>The headline tax comparison at 2025/26 rates</h2>
 
-<p>Headline rates only — the full position depends on personal allowance, pensions, and other income. But this gives the broad shape:</p>
+<p>Headline rates only: the full position depends on personal allowance, pensions, and other income. But this gives the broad shape:</p>
 
 <h3>Sole-trader / partnership</h3>
 
@@ -79,7 +79,7 @@ ctaBody: "30-minute scoping call. We will model partnership vs LLP vs limited co
 <li>Practice profit £150,000 (additional-rate principal): ~43% sole-trader vs ~43% Ltd (broadly equal)</li>
 </ul>
 
-<p>These numbers are illustrative — actual position depends on the precise extraction strategy, personal allowance taper, and other income. With the higher dividend rates from 6 April 2026, the Ltd route has become slightly less attractive than in earlier years. The point is: <strong>the headline tax saving from incorporation alone is small in 2026/27, and in some cases negative</strong>. The reasons to incorporate are usually about other factors: NHS Pension flexibility, retained earnings for practice investment, spouse employment, future sale planning.</p>
+<p>These numbers are illustrative: actual position depends on the precise extraction strategy, personal allowance taper, and other income. With the higher dividend rates from 6 April 2026, the Ltd route has become slightly less attractive than in earlier years. The point is: <strong>the headline tax saving from incorporation alone is small in 2026/27, and in some cases negative</strong>. The reasons to incorporate are usually about other factors: NHS Pension flexibility, retained earnings for practice investment, spouse employment, future sale planning.</p>
 
 <h2>What NHS Pension membership does to the decision</h2>
 
@@ -143,7 +143,7 @@ ctaBody: "30-minute scoping call. We will model partnership vs LLP vs limited co
 
 <h3>Step 1: Director's salary at the optimal level</h3>
 
-<p>Pay yourself a director's salary at £12,570 (the personal allowance — no income tax) up to perhaps £30,000 if you want NHS Pension pensionable earnings to be higher. Above that, additional salary is more expensive than dividend because of employer NI on the salary.</p>
+<p>Pay yourself a director's salary at £12,570 (the personal allowance, no income tax) up to perhaps £30,000 if you want NHS Pension pensionable earnings to be higher. Above that, additional salary is more expensive than dividend because of employer NI on the salary.</p>
 
 <h3>Step 2: Employer pension contribution</h3>
 

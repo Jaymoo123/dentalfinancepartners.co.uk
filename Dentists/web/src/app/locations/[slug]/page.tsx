@@ -56,8 +56,8 @@ const cityContent: Record<string, {
 }> = {
   london: {
     intro: "We're specialist dental accountants serving dental practices, associates, and owners across London. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, we provide expert accounting and tax services tailored specifically to the dental sector.",
-    areas: "We work with dental professionals across Central London, North London, South London, East London, and West London — including the City of London, Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
-    whyLocal: "London has one of the highest concentrations of dental practices in the UK, from single-chair private practices in Harley Street to large NHS-focused clinics in outer boroughs. We understand the local market, the competitive landscape, and the specific challenges London-based dentists face — from higher operating costs to complex mixed-income structures.",
+    areas: "We work with dental professionals across Central London, North London, South London, East London, and West London, including the City of London, Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
+    whyLocal: "London has one of the highest concentrations of dental practices in the UK, from single-chair private practices in Harley Street to large NHS-focused clinics in outer boroughs. We understand the local market, the competitive landscape, and the specific challenges London-based dentists face, from higher operating costs to complex mixed-income structures.",
     services: [
       {
         title: "Associate dentist tax & self assessment",
@@ -76,7 +76,7 @@ const cityContent: Record<string, {
   manchester: {
     intro: "We're specialist dental accountants serving dental practices, associates, and owners across Manchester. Whether you're based in the City Centre, Salford, Trafford, or anywhere across Greater Manchester, we provide expert accounting and tax services tailored specifically to the dental sector.",
     areas: "We work with dental professionals across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
-    whyLocal: "Manchester's dental sector is diverse, with a strong mix of NHS and private practices. We understand the local market dynamics, from high-street mixed practices to specialist referral clinics, and the financial challenges Manchester-based dentists face — including NHS contract management and associate recruitment.",
+    whyLocal: "Manchester's dental sector is diverse, with a strong mix of NHS and private practices. We understand the local market dynamics, from high-street mixed practices to specialist referral clinics, and the financial challenges Manchester-based dentists face, including NHS contract management and associate recruitment.",
     services: [
       {
         title: "Associate dentist tax & self assessment",

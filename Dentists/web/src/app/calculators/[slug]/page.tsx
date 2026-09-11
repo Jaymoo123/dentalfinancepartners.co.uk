@@ -158,7 +158,7 @@ export default async function CalculatorPage({
             <div className="mt-8">
               <Link
                 href="/free-practice-health-check"
-                className={`inline-flex min-h-12 items-center rounded-full bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[var(--gold-strong)] ${focusRing}`}
+                className={`inline-flex min-h-12 items-center rounded-full bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-[var(--navy)] transition-colors hover:bg-[var(--gold-strong)] ${focusRing}`}
                 data-cta="calculator-page-cta"
               >
                 Take the free practice health check

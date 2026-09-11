@@ -15,12 +15,28 @@ export {
   contentNarrow,
   sectionY,
   sectionYLoose,
-  btnPrimary,
-  btnSecondary,
   btnOnDark,
   btnOnCream,
   heroCreamSurface,
 } from "@accounting-network/web-shared/design/layout-utils";
+
+import {
+  btnPrimary as kitBtnPrimary,
+  btnSecondary as kitBtnSecondary,
+} from "@accounting-network/web-shared/design/layout-utils";
+
+/** The kit bakes `focus-visible:outline-primary-600` into the button recipes, so
+ *  overriding the exported `focusRing` constant below never reached them. On the navy
+ *  grounds this site uses, primary-600 #2d4a6f measures 1.90 and the keyboard indicator
+ *  disappears. primary-400 #5c80ab is 4.19 on navy and 4.09 on white, so the same swap
+ *  the focusRing override makes is applied to the recipe strings themselves.
+ *  ponytail: a string replace, not a forked copy of the kit's class lists, which would
+ *  drift the moment the kit changes. */
+const dentalRing = (recipe: string) =>
+  recipe.replace("outline-primary-600", "outline-primary-400");
+
+export const btnPrimary = dentalRing(kitBtnPrimary);
+export const btnSecondary = dentalRing(kitBtnSecondary);
 
 /** LOCAL OVERRIDE of the kit's `focusRing`, which outlines primary-600.
  *  Dentists puts interactive controls on the navy `.hero-brand` ground, where primary-600

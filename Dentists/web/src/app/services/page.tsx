@@ -4,7 +4,7 @@ import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceT
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { btnPrimary, focusRing, siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
+import { btnGold, focusRing, siteContainerLg, sectionY, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { buildService, buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib/schema/index";
@@ -200,7 +200,7 @@ export default function ServicesPage() {
               We work only with UK dentists. Principals, partners, associates, locums and corporate dental groups. From NHS contract reporting through profit extraction to practice purchase and sale.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className={btnPrimary}>
+              <Link href="/contact" className={btnGold}>
                 Book a free scoping call
               </Link>
               <Link

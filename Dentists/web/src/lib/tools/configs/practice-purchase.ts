@@ -140,10 +140,10 @@ export const practicePurchaseTool: GenericTool = {
       ],
       verdict: {
         text: coverOk
-          ? `EBITDA covers repayments ${coverRatio.toFixed(2)}x — above the 1.2x rule-of-thumb minimum`
+          ? `EBITDA covers repayments ${coverRatio.toFixed(2)}x, above the 1.2x rule-of-thumb minimum`
           : aff.annualRepayment === 0
             ? "Enter interest rate and term to see the repayment sense-check"
-            : `EBITDA covers repayments only ${coverRatio.toFixed(2)}x — below the 1.2x rule-of-thumb minimum`,
+            : `EBITDA covers repayments only ${coverRatio.toFixed(2)}x, below the 1.2x rule-of-thumb minimum`,
         positive: coverOk,
       },
       note: "Indicative valuation only. EBITDA multiples reflect 2025/26 UK dental market ranges; actual multiples vary significantly by buyer type, NHS contract security, CQC position, and local competition. Interest rate and loan term are your own assumptions. The 1.2x cover ratio is a rule of thumb, not a lending requirement. Tangible assets are added at book value; a surveyor or equipment valuer may give a different figure. Not advice; take specialist financial and legal advice before committing to an acquisition.",
