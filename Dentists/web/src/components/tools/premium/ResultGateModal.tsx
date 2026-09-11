@@ -13,12 +13,16 @@
  *
  * Behaviour mirrors the Solicitors and Property gates exactly.
  *
- * TOKEN DISCIPLINE: Dentists does NOT define --primary. Tokens used:
- *   - var(--gold): accent border on the modal card
- *   - var(--accent): focus rings
+ * TOKEN DISCIPLINE (corrected 2026-09-11, phase 6). Tokens used:
+ *   - var(--gold): accent border on the modal card. Non-text only.
+ *   - primary-400 (via the shared `focusRing`): focus indicators. The old
+ *     focus:ring-[var(--accent)] resolved through the alias to gold, which is
+ *     2.75 on this card's white ground and missed the 3:1 non-text floor.
+ *     primary-400 #5c80ab is 4.09 on white.
  *   - var(--navy): backdrop scrim (bg-[var(--navy)]/60)
  *   - var(--muted), var(--ink): text hierarchy
- * No var(--gold) anywhere.
+ * The previous "No var(--gold) anywhere" line contradicted the line above it
+ * and the card border it describes. Gold is present, as a border, deliberately.
  *
  * Three non-negotiables (Section 4 of the brief):
  *   1. Escape hatch ALWAYS reveals (X, backdrop click, Esc, "No thanks" link).
@@ -33,6 +37,7 @@
  *   - result_gate_skip is a cta_id VALUE on the allowlisted cta_click event, not a new name.
  */
 import { useCallback, useEffect, useRef } from "react";
+import { focusRing } from "@/components/ui/layout-utils";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";
 import { MiniCapture } from "@/components/forms/MiniCapture";
@@ -95,7 +100,7 @@ export function ResultGateModal({
         <button
           type="button"
           onClick={skip}
-          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-lg text-[var(--muted)] hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          className={`absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-lg text-[var(--muted)] transition-colors duration-150 hover:bg-[var(--surface-elevated)] hover:text-[var(--ink)] ${focusRing}`}
           aria-label="Skip and show my result"
         >
           <svg
@@ -138,7 +143,7 @@ export function ResultGateModal({
         <button
           type="button"
           onClick={skip}
-          className="mt-4 block w-full text-center text-xs text-[var(--muted)] underline underline-offset-2 hover:text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          className={`mt-4 block w-full rounded-lg py-1 text-center text-xs text-[var(--muted)] underline underline-offset-2 transition-colors duration-150 hover:text-[var(--ink)] ${focusRing}`}
         >
           No thanks, just show my result
         </button>

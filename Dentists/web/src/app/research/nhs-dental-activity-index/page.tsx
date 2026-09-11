@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { LeadForm } from "@/components/forms/LeadForm";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPage } from "@/lib/schema/faq-page";
@@ -12,6 +10,16 @@ import {
   RecoveryIndexChart,
   RegionalRecoveryChart,
 } from "@/components/research/DentalActivityCharts";
+import {
+  ChartPanel,
+  ClosingPanel,
+  KeyFindings,
+  OtherSeries,
+  ReportFaqs,
+  ReportHero,
+  ReportSection,
+  reportLink,
+} from "@/components/research/report-ui";
 import {
   fmtNumber,
   fmtIndex,
@@ -108,38 +116,21 @@ const datasetSchema = {
     },
   ],
   variableMeasured: [
-    "Monthly NHS dental UDAs delivered -- England national",
-    "Monthly NHS dental courses of treatment (COT) -- England national",
-    "Monthly Band 1 courses -- England national",
-    "Monthly Band 2 courses -- England national",
-    "Monthly Band 3 courses -- England national",
-    "Monthly urgent treatment courses -- England national",
+    "Monthly NHS dental UDAs delivered, England national",
+    "Monthly NHS dental courses of treatment (COT), England national",
+    "Monthly Band 1 courses, England national",
+    "Monthly Band 2 courses, England national",
+    "Monthly Band 3 courses, England national",
+    "Monthly urgent treatment courses, England national",
     "Recovery Index vs 2019/20 baseline (100 = pre-Covid level)",
-    "Annual UDA delivery by ICB commissioner -- England regional",
+    "Annual UDA delivery by ICB commissioner, England regional",
   ],
 };
-
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
-      <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
-    </section>
-  );
-}
 
 export default function NHSDentalActivityIndexPage() {
   const lastMonth = headline.last_settled_month;
   const recovIdx = headline.last_month_recovery_index;
+  const firstMonth = series.national[0].month;
 
   return (
     <>
@@ -156,233 +147,222 @@ export default function NHSDentalActivityIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPage(faqs)) }}
       />
 
-      {/* Hero */}
-      <section className="hero-brand py-12 sm:py-16">
-        <div className={`hero-inner ${siteContainerLg}`}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Research", href: "/research" },
-              { label: "NHS Dental Activity Recovery Index" },
-            ]}
-          />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-[var(--gold)]">
-            NHS Dental Activity Recovery Index
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            NHS dental activity recovery: which regions are still below pre-Covid levels?
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+      <ReportHero
+        crumb="NHS Dental Activity Recovery Index"
+        eyebrow="NHS Dental Activity Recovery Index"
+        title="NHS dental activity, month by month, against the pre-Covid baseline"
+        intro={
+          <>
             A monthly index of NHS dental UDA delivery in England, benchmarked against the 2019/20
-            average (= 100). National and regional data from NHSBSA open data. Settled to{" "}
+            average set to 100. National and ICB-level figures from NHSBSA open data, settled to{" "}
             {monthLabel(lastMonth)}
             {meta.provisional_months.length > 0
-              ? `, with ${monthLabel(meta.latest_month)} shown as provisional`
+              ? `, with ${monthLabel(meta.latest_month)} charted as provisional and excluded from every figure below`
               : ""}
             .
-          </p>
+          </>
+        }
+        stats={[
+          {
+            value: fmtNumber(headline.last_month_uda),
+            label: `UDAs delivered in ${monthLabel(lastMonth)}`,
+          },
+          {
+            value: fmtIndex(recovIdx),
+            label: "Recovery Index, where 100 is the 2019/20 pre-Covid baseline",
+          },
+          {
+            value: `${headline.months_below_90}`,
+            label: `months below 90 on the Recovery Index since ${monthLabel(firstMonth)}`,
+          },
+        ]}
+      />
 
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            <Stat
-              value={fmtNumber(headline.last_month_uda)}
-              label={`UDAs delivered in ${monthLabel(lastMonth)}`}
-            />
-            <Stat
-              value={fmtIndex(recovIdx)}
-              label="Recovery Index (100 = 2019/20 pre-Covid baseline)"
-            />
-            <Stat
-              value={`${headline.months_below_90} months`}
-              label={`below 90 on the Recovery Index since ${monthLabel(series.national[0].month)}`}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
+      <section className="bg-[var(--background)]">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl">
+          <div className="max-w-4xl py-10 sm:py-14">
+            <KeyFindings
+              note={
+                <>
+                  Source: NHSBSA English Contractor Monthly General Dental Activity, under the Open
+                  Government Licence v3.0. Figures may be cited with attribution to Dental Finance
+                  Partners.
+                </>
+              }
+            >
+              <li>
+                NHS dental activity in England reached a Recovery Index of{" "}
+                <strong>{fmtIndex(recovIdx)}</strong> in {monthLabel(lastMonth)}, meaning delivery
+                was{" "}
+                {recovIdx !== null && recovIdx < 100
+                  ? `${fmtIndex(100 - recovIdx)} points below`
+                  : recovIdx !== null
+                  ? `${fmtIndex(recovIdx - 100)} points above`
+                  : "at"}{" "}
+                the pre-Covid 2019/20 monthly average.
+              </li>
+              <li>
+                The pre-Covid monthly baseline is{" "}
+                <strong>{fmtNumber(headline.baseline_monthly_avg_uda)}</strong> UDAs across all
+                England NHS dental contracts, the mean month of April 2019 to March 2020. That
+                baseline is the 100 in the index.
+              </li>
+              {headline.yoy_pct_uda !== null && (
+                <li>
+                  UDA delivery is <strong>{fmtPercent(headline.yoy_pct_uda)}</strong> year on year.{" "}
+                  {headline.yoy_basis}
+                </li>
+              )}
+              <li>
+                <strong>{headline.months_below_90}</strong> of the{" "}
+                {series.national.length} months in the series since {monthLabel(firstMonth)} sit
+                below 90 on the index, which is the scale of the gap the recovery had to close.
+              </li>
+              <li>
+                Per-ICB recovery indices cannot be calculated from public data. ICB boundaries
+                changed in 2022, so no pre-2022 per-ICB baseline exists. The regional chart below
+                shows trailing-twelve-month UDA volume by ICB instead, which is the measure the
+                published data can actually support.
+              </li>
+            </KeyFindings>
 
-            {/* Key findings */}
-            <div className="rounded-2xl border border-[var(--gold)]/20 bg-amber-50/60 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-[var(--navy)]">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
-                <li>
-                  NHS dental activity in England reached a Recovery Index of{" "}
-                  <strong>{fmtIndex(recovIdx)}</strong> in {monthLabel(lastMonth)}, meaning
-                  activity was{" "}
-                  {recovIdx !== null && recovIdx < 100
-                    ? `${fmtIndex(100 - recovIdx)} points below`
-                    : recovIdx !== null
-                    ? `${fmtIndex(recovIdx - 100)} points above`
-                    : "at"}{" "}
-                  the pre-Covid 2019/20 monthly average.
-                </li>
-                <li>
-                  Per-ICB recovery indices cannot be calculated from public data: ICB boundaries changed in 2022, so no pre-2022 per-ICB baseline exists. The regional chart below shows trailing-twelve-month UDA volume by ICB, which is the correct measure of relative NHS dental capacity by area.
-                </li>
-                <li>
-                  The pre-Covid monthly baseline average was{" "}
-                  {fmtNumber(headline.baseline_monthly_avg_uda)} UDAs across all England NHS
-                  dental contracts. This baseline is used as 100 in the Recovery Index.
-                </li>
-                {headline.yoy_pct_uda !== null && (
-                  <li>
-                    UDA delivery is{" "}
-                    <strong>{fmtPercent(headline.yoy_pct_uda)}</strong> year on year.{" "}
-                    {headline.yoy_basis}
-                  </li>
-                )}
-                <li>
-                  Recovery is uneven: some ICBs have exceeded pre-Covid levels while others
-                  remain well below. Regions with structural dentist shortages showed the slowest
-                  recovery.
-                </li>
-              </ul>
-              <p className="mt-4 text-xs text-neutral-500">
-                Source: NHSBSA English Contractor Monthly General Dental Activity, under the Open
-                Government Licence v3.0. Figures may be cited with attribution to Dental Finance
-                Partners.
-              </p>
-            </div>
-
-            <Section id="national" title="National monthly UDA delivery">
+            <ReportSection id="national" title="National monthly UDA delivery">
               <p>
-                The chart shows total NHS dental UDAs delivered per month across all NHS contracts
-                in England. The sharp fall in 2020 reflects practice closures and restricted
-                capacity during the Covid-19 pandemic. The 2021 to 2022 period shows gradual
-                recovery as restrictions eased.
+                Total NHS dental UDAs delivered per month across all NHS contracts in England. The
+                collapse in 2020 is practice closures and restricted capacity during the Covid-19
+                pandemic; 2021 and 2022 are the climb back.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <ChartPanel>
                 <NationalActivityChart monthly={series.national} />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="recovery" title="Recovery Index vs 2019/20 baseline">
+            <ReportSection id="recovery" title="Recovery Index against the 2019/20 baseline">
               <p>
                 The Recovery Index expresses monthly UDA delivery as a percentage of the average
-                monthly UDA figure for 2019/20 (the last full NHS year before Covid, April 2019 to
-                March 2020), which is set to 100. A value of 80 means the month delivered 80% of
-                the pre-Covid average; a value above 100 means delivery has surpassed it. The
-                dashed line marks the baseline.
+                month of 2019/20 (April 2019 to March 2020, the last full NHS year before Covid),
+                which is set to 100. A value of 80 means the month delivered 80% of the pre-Covid
+                average; a value above 100 means delivery has passed it. The dashed line marks the
+                baseline.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <ChartPanel>
                 <RecoveryIndexChart monthly={series.national} />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="regional" title="UDA volume by ICB commissioner area">
+            <ReportSection id="regional" title="UDA volume by ICB commissioner area">
               <p>
-                The chart ranks all {series.regional.length} ICB commissioner areas by their contracted UDA volume over the trailing twelve settled months ({monthLabel(meta.regional_window[0])} to {monthLabel(meta.regional_window[1])}). Per-ICB recovery indices against a 2019/20 baseline cannot be calculated from public data because ICB boundaries changed in 2022, making pre-ICB baselines unavailable. UDA volume is the correct measure of relative NHS dental capacity by area.
+                The chart ranks the twenty largest of the {series.regional.length} ICB commissioner
+                areas by contracted UDA volume over the trailing twelve settled months (
+                {monthLabel(meta.regional_window[0])} to {monthLabel(meta.regional_window[1])}). A
+                per-ICB recovery index against a 2019/20 baseline cannot be built from public data,
+                because ICB boundaries changed in 2022 and the pre-change areas do not map onto the
+                current ones. Volume is what the data supports, and it is the clearest public
+                measure of relative NHS dental capacity by area.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <ChartPanel>
                 <RegionalRecoveryChart regional={series.regional} />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="methodology" title="Methodology and sources">
+            <ReportSection id="methodology" title="Methodology and sources">
               <p>
                 <strong>Data source.</strong> All UDA and course-of-treatment counts come from the
                 NHSBSA English Contractor Monthly General Dental Activity dataset, published monthly
-                via the NHSBSA open data portal. Each monthly CSV covers all NHS GDS and PDS dental
-                contracts in England, with one row per contract per month. Data is published under
-                the Open Government Licence v3.0.
+                on the NHSBSA open data portal. Each monthly CSV covers every NHS GDS and PDS dental
+                contract in England, one row per contract per month, under the Open Government
+                Licence v3.0.
               </p>
               <p>
                 <strong>Recovery Index.</strong> The baseline is the mean monthly UDA total for
-                April 2019 to March 2020 (NHS financial year 2019/20). The Recovery Index for each
-                month is computed as (month UDA total / baseline average) times 100. A score of 100
-                means delivery matches the pre-Covid average; below 100 means under-recovery.
+                April 2019 to March 2020 (NHS financial year 2019/20), which is{" "}
+                {fmtNumber(headline.baseline_monthly_avg_uda)} UDAs. Each month&apos;s index is that
+                month&apos;s UDA total divided by the baseline, times 100. 100 means delivery
+                matches the pre-Covid average; below 100 is under-recovery.
               </p>
               <p>
-                <strong>Regional series.</strong> Regional figures aggregate UDA volume per ICB commissioner across the trailing twelve settled months ({monthLabel(meta.regional_window[0])} to {monthLabel(meta.regional_window[1])}); provisional in-year months are excluded. ICB boundaries changed in 2022 (from CCG to ICB); because no consistent pre-2022 per-ICB baseline exists, per-ICB recovery indices cannot be calculated and are not shown. UDA volume by ICB is the appropriate public-data measure of relative NHS dental capacity by area.
+                <strong>Regional series.</strong> Regional figures aggregate UDA volume per ICB
+                commissioner across the trailing twelve settled months (
+                {monthLabel(meta.regional_window[0])} to {monthLabel(meta.regional_window[1])});
+                provisional in-year months are excluded. ICB boundaries changed in 2022 (from CCG to
+                ICB), so no consistent pre-2022 per-ICB baseline exists and no per-ICB recovery
+                index is published here.
               </p>
               <p>
-                <strong>Caveats.</strong> UDA counts measure contracted NHS activity only. Private
-                dental activity is excluded. The 2020/21 data is not comparable to other years due
-                to mandatory practice closures. Some months may be subject to late submission
-                revisions. The series is settled to {monthLabel(meta.last_settled_month)}; any later
-                month comes from the NHSBSA in-year file, is marked provisional in the data, and is
-                excluded from the headline figures above. Courses of treatment sum the Band 1,
-                Band 2, Band 3 and urgent bands; NHSBSA reported Band 2 as a single column to March
-                2023 and as 2A, 2B and 2C from April 2023, and both forms are read. Generated{" "}
+                <strong>Caveats.</strong> UDA counts measure contracted NHS activity only, so
+                private dental work is outside them entirely. The 2020/21 year is not comparable
+                with any other, because of mandatory closures. Months can be revised for late
+                submissions. The series is settled to {monthLabel(meta.last_settled_month)}; any
+                later month comes from the NHSBSA in-year file, is flagged provisional in the data,
+                and is excluded from every headline figure. Courses of treatment sum the Band 1,
+                Band 2, Band 3 and urgent bands; NHSBSA reported Band 2 as one column to March 2023
+                and as 2A, 2B and 2C from April 2023, and both forms are read. Generated{" "}
                 {meta.generated_at}.
               </p>
-              <ul className="not-prose mt-2 space-y-1 text-sm">
+              <ul className="not-prose mt-2 space-y-2 text-sm">
                 {meta.sources.map((s) => (
                   <li key={s.name}>
-                    <a
-                      href={s.portal}
-                      className="font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)]"
-                      rel="nofollow"
-                    >
+                    <a href={s.portal} className={reportLink} rel="nofollow">
                       {s.name}
                     </a>{" "}
-                    <span className="text-neutral-500">({s.publisher})</span>
+                    <span className="text-[var(--muted)]">({s.publisher})</span>
                   </li>
                 ))}
               </ul>
               <p className="text-sm">
                 <Link
                   href={`${PAGE_PATH}/data`}
-                  className="font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_data_download"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
                   Download the activity data (CSV)
                 </Link>
               </p>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-[var(--muted)]">
                 Free to cite and republish with attribution to Dental Finance Partners. This page is
-                a data summary and does not constitute financial or business advice on any individual
-                practice or contract.
+                a data summary and does not constitute financial or business advice on any
+                individual practice or contract.
               </p>
-            </Section>
+            </ReportSection>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-[var(--gold)]/20 bg-gradient-to-br from-amber-50 to-yellow-50/50 p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-[var(--navy)] sm:text-3xl">
-                Understanding your NHS contract and UDA position
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Low recovery rates in your region affect both access to care and practice
-                profitability. Whether you are an associate dentist planning your UDA commitment, a
-                principal assessing contract value, or a buyer evaluating a practice acquisition, the
-                NHS UDA landscape is central to your financial planning. Our dental accountants work
-                exclusively with dental professionals.
+            <ClosingPanel heading="Understanding your NHS contract and UDA position">
+              <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
+                UDA delivery is the mechanism that turns clinical time into NHS income, and the
+                clawback rules mean under-delivery and over-delivery are not symmetrical. Whether
+                you are an associate weighing a UDA commitment, a principal valuing a contract, or a
+                buyer pricing a practice, this is the number the rest of the model sits on. Our
+                dental accountants work exclusively with dental professionals.
               </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
                 <Link
                   href="/for-principals"
-                  className="text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_pillar_link"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
-                  For practice principals &rarr;
+                  For practice principals
                 </Link>
                 <Link
                   href="/for-associates"
-                  className="text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_pillar_link"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
-                  For associate dentists &rarr;
+                  For associate dentists
                 </Link>
               </div>
               <div className="mt-8">
                 <LeadForm redirectOnSuccess={false} submitLabel="Speak to a dental accountant" />
               </div>
-            </div>
+            </ClosingPanel>
 
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <OtherSeries current={PAGE_PATH} />
+
+            <ReportFaqs faqs={faqs} />
           </div>
         </div>
       </section>

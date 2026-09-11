@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
+import { btnPrimary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import BookingPicker from "@/components/forms/BookingPicker";
 
 /**
@@ -26,26 +25,28 @@ export default async function BookPage({
   const token = (params.t ?? "").trim();
 
   return (
-    <section className="bg-white py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="bg-[var(--background)]">
+      <div className={`${siteContainerLg} ${sectionY}`}>
         <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-[var(--navy)] sm:text-4xl">
+          <h1 className="text-center font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
             Book your free review call
           </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-[var(--navy)]/70">
-            Pick a day and a time window that suits you. A dental accountant will call you then, no
-            obligation.
+          <p className="mt-4 text-center text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+            Pick a day and a time window that suits you. A dental accountant from our specialist partner
+            network will call you then, no obligation.
           </p>
           <div className="mt-10">
             {token ? (
-              <BookingPicker token={token} />
+              <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-8">
+                <BookingPicker token={token} />
+              </div>
             ) : (
-              <div className="border-2 border-[var(--navy)]/20 bg-slate-50 p-6 text-center">
-                <p className="text-base text-[var(--navy)]/70">
+              <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 text-center sm:p-8">
+                <p className="text-base leading-relaxed text-[var(--muted)]">
                   This page needs the personal link from your email or text message. If you cannot
                   find it, use the contact form and we will arrange your review.
                 </p>
-                <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+                <Link href="/contact" className={`${btnPrimary} mt-6`}>
                   Go to the contact form
                 </Link>
               </div>

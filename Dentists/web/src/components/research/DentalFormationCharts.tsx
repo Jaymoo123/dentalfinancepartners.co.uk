@@ -2,7 +2,15 @@
 
 /**
  * Client-side charts for the Dental Company Formation Index page.
- * Navy/gold brand palette (Dental Finance Partners).
+ *
+ * Palette and accessibility rules are the folder's: see `DentalDensityCharts`
+ * for the series-colour floor and `ChartDataTable` for why the values live in a
+ * sibling table rather than inside the svg.
+ *
+ * The monthly chart splits one measure into settled and provisional months.
+ * They are told apart by dash pattern as well as colour, and the accessible
+ * table labels every month settled or provisional in words, so the distinction
+ * survives for a reader who never sees the line.
  */
 
 import {
@@ -16,6 +24,7 @@ import {
   YAxis,
 } from "recharts";
 
+import { ChartDataTable } from "@/components/research/ChartDataTable";
 import {
   ChartContainer,
   ChartTooltip,
@@ -23,6 +32,7 @@ import {
   type ChartConfig,
 } from "@/components/ui/chart";
 import {
+  fmtNumber,
   monthLabel,
   monthLabelShort,
   type DentalFormationMonth,
@@ -51,75 +61,85 @@ export function MonthlyFormationChart({
 
   const config = {
     settled: { label: "New dental companies (settled)", color: "var(--chart-1)" },
-    provisional: { label: "New dental companies (provisional)", color: "var(--chart-2)" },
+    provisional: { label: "New dental companies (provisional)", color: "var(--chart-4)" },
   } satisfies ChartConfig;
 
   const tickInterval = Math.max(0, Math.ceil(data.length / 12) - 1);
 
   return (
-    <ChartContainer config={config} className="aspect-auto h-[280px] w-full">
-      <AreaChart
-        accessibilityLayer
-        data={data}
-        margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
-      >
-        <defs>
-          <linearGradient id="fill-dental-settled" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="var(--color-settled)" stopOpacity={0.4} />
-            <stop offset="95%" stopColor="var(--color-settled)" stopOpacity={0.05} />
-          </linearGradient>
-        </defs>
-        <CartesianGrid vertical={false} strokeDasharray="3 3" />
-        <XAxis
-          dataKey="tick"
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-          minTickGap={20}
-          interval={tickInterval}
-          fontSize={11}
-        />
-        <YAxis
-          width={44}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={4}
-          fontSize={11}
-        />
-        <ChartTooltip
-          content={
-            <ChartTooltipContent
-              indicator="dot"
-              labelFormatter={(_, payload) => {
-                const m = payload?.[0]?.payload?.month as string | undefined;
-                return m ? monthLabel(m) : "";
-              }}
-            />
-          }
-        />
-        <Area
-          dataKey="settled"
-          name="New dental companies (settled)"
-          type="monotone"
-          stroke="var(--color-settled)"
-          strokeWidth={2}
-          fill="url(#fill-dental-settled)"
-          dot={false}
-          connectNulls={false}
-        />
-        <Area
-          dataKey="provisional"
-          name="New dental companies (provisional)"
-          type="monotone"
-          stroke="var(--color-provisional)"
-          strokeWidth={2}
-          strokeDasharray="4 2"
-          fill="none"
-          dot={false}
-          connectNulls={false}
-        />
-      </AreaChart>
-    </ChartContainer>
+    <>
+      <ChartDataTable
+        caption="New dental limited companies incorporated under SIC 86230, by month"
+        columns={["Month", "New dental companies", "Status"]}
+        rows={data.map((d) => [
+          monthLabel(d.month),
+          fmtNumber(d.count),
+          provisionalSet.has(d.month) ? "Provisional" : "Settled",
+        ])}
+      />
+      <ChartContainer aria-hidden config={config} className="aspect-auto h-[280px] w-full">
+        <AreaChart
+          data={data}
+          margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
+        >
+          <defs>
+            <linearGradient id="fill-dental-settled" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="var(--color-settled)" stopOpacity={0.4} />
+              <stop offset="95%" stopColor="var(--color-settled)" stopOpacity={0.05} />
+            </linearGradient>
+          </defs>
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
+          <XAxis
+            dataKey="tick"
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            minTickGap={20}
+            interval={tickInterval}
+            fontSize={11}
+          />
+          <YAxis
+            width={44}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={4}
+            fontSize={11}
+          />
+          <ChartTooltip
+            content={
+              <ChartTooltipContent
+                indicator="dot"
+                labelFormatter={(_, payload) => {
+                  const m = payload?.[0]?.payload?.month as string | undefined;
+                  return m ? monthLabel(m) : "";
+                }}
+              />
+            }
+          />
+          <Area
+            dataKey="settled"
+            name="New dental companies (settled)"
+            type="monotone"
+            stroke="var(--color-settled)"
+            strokeWidth={2}
+            fill="url(#fill-dental-settled)"
+            dot={false}
+            connectNulls={false}
+          />
+          <Area
+            dataKey="provisional"
+            name="New dental companies (provisional)"
+            type="monotone"
+            stroke="var(--color-provisional)"
+            strokeWidth={2}
+            strokeDasharray="4 2"
+            fill="none"
+            dot={false}
+            connectNulls={false}
+          />
+        </AreaChart>
+      </ChartContainer>
+    </>
   );
 }
 
@@ -139,34 +159,40 @@ export function AnnualFormationChart({ annual }: { annual: DentalFormationAnnual
   } satisfies ChartConfig;
 
   return (
-    <ChartContainer config={config} className="aspect-auto h-[260px] w-full">
-      <BarChart
-        accessibilityLayer
-        data={data}
-        margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
-      >
-        <CartesianGrid vertical={false} strokeDasharray="3 3" />
-        <XAxis
-          dataKey="year"
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-          fontSize={11}
-        />
-        <YAxis
-          width={44}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={4}
-          fontSize={11}
-        />
-        <ChartTooltip
-          cursor={{ fill: "rgba(184,151,93,0.08)" }}
-          content={<ChartTooltipContent indicator="dot" />}
-        />
-        <Bar dataKey="count" name="New dental companies" fill="var(--color-count)" radius={[4, 4, 0, 0]} />
-      </BarChart>
-    </ChartContainer>
+    <>
+      <ChartDataTable
+        caption="New dental limited companies incorporated under SIC 86230, by complete calendar year"
+        columns={["Year", "New dental companies"]}
+        rows={data.map((d) => [d.year, fmtNumber(d.count)])}
+      />
+      <ChartContainer aria-hidden config={config} className="aspect-auto h-[260px] w-full">
+        <BarChart
+          data={data}
+          margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
+        >
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
+          <XAxis
+            dataKey="year"
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            fontSize={11}
+          />
+          <YAxis
+            width={44}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={4}
+            fontSize={11}
+          />
+          <ChartTooltip
+            cursor={{ fill: "rgba(184,151,93,0.08)" }}
+            content={<ChartTooltipContent indicator="dot" />}
+          />
+          <Bar dataKey="count" name="New dental companies" fill="var(--color-count)" radius={[4, 4, 0, 0]} />
+        </BarChart>
+      </ChartContainer>
+    </>
   );
 }
 
@@ -188,33 +214,39 @@ export function SeasonalityChart({ data }: { data: SeasonalityPoint[] }) {
   const grandAvg = data.reduce((s, d) => s + d.avg, 0) / (data.length || 1);
 
   return (
-    <ChartContainer config={config} className="aspect-auto h-[240px] w-full">
-      <BarChart
-        accessibilityLayer
-        data={data}
-        margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
-      >
-        <CartesianGrid vertical={false} strokeDasharray="3 3" />
-        <XAxis dataKey="month" tickLine={false} axisLine={false} tickMargin={8} fontSize={11} />
-        <YAxis width={44} tickLine={false} axisLine={false} tickMargin={4} fontSize={11} />
-        <ReferenceLine
-          y={grandAvg}
-          stroke="#001b3d"
-          strokeDasharray="4 2"
-          strokeWidth={1}
-          label={{ value: "Annual avg", fill: "#001b3d", fontSize: 10, position: "insideTopRight" }}
-        />
-        <ChartTooltip
-          cursor={{ fill: "rgba(184,151,93,0.08)" }}
-          content={<ChartTooltipContent indicator="dot" />}
-        />
-        <Bar
-          dataKey="avg"
-          name="Average formations"
-          radius={[4, 4, 0, 0]}
-          fill="var(--color-avg)"
-        />
-      </BarChart>
-    </ChartContainer>
+    <>
+      <ChartDataTable
+        caption={`Average new dental company formations by calendar month, with an annual monthly average of ${fmtNumber(grandAvg)}`}
+        columns={["Calendar month", "Average new dental companies"]}
+        rows={data.map((d) => [d.month, fmtNumber(d.avg)])}
+      />
+      <ChartContainer aria-hidden config={config} className="aspect-auto h-[240px] w-full">
+        <BarChart
+          data={data}
+          margin={{ left: 8, right: 8, top: 8, bottom: 0 }}
+        >
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
+          <XAxis dataKey="month" tickLine={false} axisLine={false} tickMargin={8} fontSize={11} />
+          <YAxis width={44} tickLine={false} axisLine={false} tickMargin={4} fontSize={11} />
+          <ReferenceLine
+            y={grandAvg}
+            stroke="var(--ink)"
+            strokeDasharray="4 2"
+            strokeWidth={1}
+            label={{ value: "Annual avg", fill: "var(--ink)", fontSize: 10, position: "insideTopRight" }}
+          />
+          <ChartTooltip
+            cursor={{ fill: "rgba(184,151,93,0.08)" }}
+            content={<ChartTooltipContent indicator="dot" />}
+          />
+          <Bar
+            dataKey="avg"
+            name="Average formations"
+            radius={[4, 4, 0, 0]}
+            fill="var(--color-avg)"
+          />
+        </BarChart>
+      </ChartContainer>
+    </>
   );
 }

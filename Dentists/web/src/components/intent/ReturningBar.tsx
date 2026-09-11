@@ -6,10 +6,13 @@
  * their last topic. Suppressed for the rest of the session once dismissed.
  * Measured via personalization_* events.
  *
- * Styled with Dental Finance Partners navy/gold brand tokens.
+ * Navy ground, so gold is doing the one job the design delta keeps for it: a
+ * gold button with a NAVY label (6.23). Restyle only. The returning-visitor
+ * predicate, the dismiss key and the session suppression are untouched.
  */
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { focusRing } from "@/components/ui/layout-utils";
 import { useIntent, trackPersonalization } from "./IntentProvider";
 
 const DISMISS_KEY = "dfp_returning_bar_dismissed";
@@ -38,7 +41,11 @@ export function ReturningBar() {
   const offer = action.offer;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--navy)] bg-[var(--navy)] text-white shadow-2xl">
+    <div
+      role="region"
+      aria-label="Welcome back"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--gold)] bg-[var(--navy)] text-white shadow-2xl"
+    >
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 text-sm">
         <span className="min-w-0">
           <span className="font-semibold">Welcome back. {offer.reason}.</span>{" "}
@@ -50,7 +57,7 @@ export function ReturningBar() {
             data-cta="returning_bar"
             data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
             onClick={() => trackPersonalization("clicked", action)}
-            className="rounded bg-[var(--gold)] px-3 py-1.5 font-semibold text-[var(--navy)] hover:bg-[var(--gold-strong)]"
+            className={`rounded-lg bg-[var(--gold)] px-3 py-1.5 font-bold text-[var(--navy)] transition-colors duration-150 hover:bg-[var(--gold-strong)] ${focusRing}`}
           >
             {offer.title}
           </Link>
@@ -67,7 +74,7 @@ export function ReturningBar() {
               setDismissed(true);
               trackPersonalization("dismissed", action);
             }}
-            className="text-white/60 hover:text-white"
+            className={`rounded-lg p-1 text-white/70 transition-colors duration-150 hover:bg-white/10 hover:text-white ${focusRing}`}
           >
             &times;
           </button>

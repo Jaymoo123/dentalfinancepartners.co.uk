@@ -26,8 +26,8 @@
  * `relative z-10`, or the texture paints over the copy. The kit footer already
  * satisfies both.
  *
- * `.hero-brand` stays in `globals.css` untouched: `app/page.tsx` and the five
- * `research/*` pages still consume the class and belong to later phases
+ * `.hero-brand` and `.hero-inner` have been DELETED from globals.css at the phase 6
+ * close: this component replaced their last consumer. Nothing renders those classes.
  * (playbook T26).
  */
 

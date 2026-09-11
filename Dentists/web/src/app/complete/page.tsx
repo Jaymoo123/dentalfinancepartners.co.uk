@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
+import { btnPrimary, btnGold, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
@@ -21,18 +20,27 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+/** Shared card shell for the two "we cannot use this link" states and the all-set state. */
+function Card({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 text-center sm:p-8">
+      {children}
+    </div>
+  );
+}
+
 /** Shared "needs the personal link" fallback, cloned from /book. */
 function NeedsLinkCard() {
   return (
-    <div className="border-2 border-[var(--navy)]/20 bg-slate-50 p-6 text-center">
-      <p className="text-base text-[var(--navy)]/70">
+    <Card>
+      <p className="text-base leading-relaxed text-[var(--muted)]">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
-      <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+      <Link href="/contact" className={`${btnPrimary} mt-6`}>
         Go to the contact form
       </Link>
-    </div>
+    </Card>
   );
 }
 
@@ -52,15 +60,15 @@ export default async function CompletePage({
     const verdict = verifyLeadToken(token, "profile");
     if (!verdict.ok) {
       inner = (
-        <div className="border-2 border-[var(--navy)]/20 bg-slate-50 p-6 text-center">
-          <p className="text-base text-[var(--navy)]/70">
+        <Card>
+          <p className="text-base leading-relaxed text-[var(--muted)]">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
-          <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+          <Link href="/contact" className={`${btnPrimary} mt-6`}>
             Go to the contact form
           </Link>
-        </div>
+        </Card>
       );
     } else {
       let missing: ("name" | "phone")[] = ["name", "phone"];
@@ -89,34 +97,40 @@ export default async function CompletePage({
           bookingToken = null;
         }
         inner = (
-          <div className="border-2 border-[var(--gold)] bg-[var(--gold-soft)] p-6 text-center">
-            <p className="text-lg font-bold text-[var(--navy)]">You are all set</p>
-            <p className="mt-2 text-base text-[var(--navy)]/70">
+          // Confirmation state gets the navy ground, so the gold CTA is the sanctioned
+          // 6.23 pairing rather than 2.75 gold-on-white.
+          <div className="rounded-2xl bg-[var(--navy)] p-6 text-center sm:p-8">
+            <p className="text-lg font-semibold text-white">You are all set</p>
+            <p className="mt-3 text-base leading-relaxed text-white/85">
               We have everything we need. A specialist firm from our partner network may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
             {bookingToken && (
-              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+              <Link href={`/book?t=${bookingToken}`} className={`${btnGold} mt-6`}>
                 Book a callback
               </Link>
             )}
           </div>
         );
       } else {
-        inner = <DetailsForm token={token} missing={missing} />;
+        inner = (
+          <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
+            <DetailsForm token={token} missing={missing} />
+          </div>
+        );
       }
     }
   }
 
   return (
-    <section className="bg-white py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="bg-[var(--background)]">
+      <div className={`${siteContainerLg} ${sectionY}`}>
         <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-[var(--navy)] sm:text-4xl">
+          <h1 className="text-center font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
             Complete your details
           </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-[var(--navy)]/70">
+          <p className="mt-4 text-center text-base leading-relaxed text-[var(--muted)] sm:text-lg">
             Add the last detail we need and a specialist firm from our partner network will be in
             touch to arrange your free dental practice finance review, no obligation.
           </p>

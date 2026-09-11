@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { btnPrimary, siteContainer } from "@/components/ui/layout-utils";
+import { btnPrimary, btnSecondary, focusRing, siteContainer } from "@/components/ui/layout-utils";
 
 export default function Error({
   error,
@@ -28,7 +28,7 @@ export default function Error({
           </div>
         </div>
         
-        <h1 className="font-serif text-3xl font-semibold text-[var(--navy)] sm:text-4xl">
+        <h1 className="text-3xl font-semibold text-[var(--navy)] sm:text-4xl">
           Something went wrong
         </h1>
         
@@ -53,7 +53,7 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-lg border-2 border-[var(--border)] bg-white px-6 py-3 text-base font-semibold text-[var(--navy)] transition-colors hover:bg-[var(--surface)] focus:outline-none focus:ring-2 focus:ring-[var(--gold)] focus:ring-offset-2"
+            className={btnSecondary}
           >
             Go home
           </Link>
@@ -61,7 +61,7 @@ export default function Error({
 
         <p className="mt-8 text-sm text-[var(--muted)]">
           Need help?{" "}
-          <a href="/contact" className="font-semibold text-[var(--accent-strong)] hover:text-[var(--accent)]">
+          <a href="/contact" className={`font-semibold text-primary-700 underline underline-offset-4 hover:text-primary-800 ${focusRing} rounded`}>
             Contact us
           </a>
           {" "}and we will get back to you.

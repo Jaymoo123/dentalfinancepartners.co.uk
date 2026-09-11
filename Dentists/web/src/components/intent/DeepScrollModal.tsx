@@ -6,10 +6,14 @@
  * review). Modal overlay = no layout shift. Frequency-capped: one per session
  * (module flag) and a 30-day per-topic suppress. Measured.
  *
- * Styled with Dental Finance Partners navy/gold brand tokens.
+ * Styled with the design kit's navy primary ramp. Gold stays a non-text accent:
+ * it carries no copy on this modal's white card (3.76 at --gold-strong).
+ * Restyle only. Every trigger, cap, storage key and dismissal path below is
+ * untouched.
  */
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { btnPrimary, btnSecondary, focusRing } from "@/components/ui/layout-utils";
 import { useIntent, trackPersonalization } from "./IntentProvider";
 
 const SUPPRESS_DAYS = 30;
@@ -41,8 +45,11 @@ export function DeepScrollModal() {
   useEffect(() => {
     if (!action || open || shownThisSession) return;
     if (isSuppressed(action.topic)) return;
-    // Shared per-session cap with ExitIntentModal: at most ONE topic-offer
-    // modal per session, whichever surface fires first (QA finding, wave 2).
+    // Per-session cap: at most ONE topic-offer modal per session, whichever
+    // surface fires first (QA finding, wave 2). It was shared with the
+    // ExitIntentModal, which was unmounted and is now deleted; the key and the
+    // cap stay exactly as they are, because the key is FROZEN and clearing it
+    // would re-show the modal to every returning visitor.
     try {
       if (window.sessionStorage.getItem("dfp_modal_shown") === "1") return;
       window.sessionStorage.setItem("dfp_modal_shown", "1");
@@ -85,25 +92,31 @@ export function DeepScrollModal() {
       className="fixed inset-0 z-50 flex items-end justify-center bg-black/40 p-4 sm:items-center"
       role="dialog"
       aria-modal="true"
+      aria-labelledby="deep_scroll_modal-heading"
       onClick={() => close(true)}
     >
       <div
-        className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl"
+        className="w-full max-w-md rounded-2xl border-l-4 border-[var(--gold)] bg-white p-6 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-3">
-          <h2 className="text-lg font-bold text-[var(--navy)]">{offer.title}</h2>
+          <h2
+            id="deep_scroll_modal-heading"
+            className="text-lg font-bold text-[var(--ink)]"
+          >
+            {offer.title}
+          </h2>
           <button
             type="button"
             aria-label="Close"
             data-cta="deep_scroll_close"
             onClick={() => close(true)}
-            className="text-[var(--muted)] hover:text-[var(--navy)]"
+            className={`-m-1 rounded-lg p-1 text-[var(--muted)] hover:text-[var(--ink)] ${focusRing}`}
           >
             &times;
           </button>
         </div>
-        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-[var(--gold-strong)]">
+        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-700)]">
           {offer.reason}
         </p>
         <p className="mt-2 text-sm text-[var(--ink-soft)]">{offer.blurb}</p>
@@ -116,7 +129,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-[var(--gold)] px-4 py-2.5 text-center font-semibold text-[var(--navy)] hover:bg-[var(--gold-strong)]"
+            className={`${btnPrimary} w-full`}
           >
             {primaryLabel}
           </Link>
@@ -126,7 +139,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg border border-[var(--border)] px-4 py-2.5 text-center font-semibold text-[var(--navy)] hover:bg-[var(--surface-elevated)]"
+            className={`${btnSecondary} w-full`}
           >
             {secondaryLabel}
           </Link>

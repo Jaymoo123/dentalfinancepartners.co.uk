@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import {
+  contentNarrow,
+  focusRing,
+  sectionY,
+  sectionYLoose,
+  siteContainerLg,
+} from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+
+/** Body link: navy primary-700 (11.13 on the --background ground, 11.64 on white).
+ *  --accent-strong is gold-strong and measures 3.76, a text fail, which is why no
+ *  legal page links through the accent token. */
+const legalLink = `text-primary-700 underline underline-offset-4 hover:text-primary-800 ${focusRing} rounded`;
+
+/** GA4 sets exactly two cookies: `_ga` and `_ga_<measurement id without the G- prefix>`.
+ *  Derived from the configured id so the name cannot drift from what actually runs. */
+const gaPropertyCookie = `_ga_${niche.seo.google_analytics_id.replace(/^G-/, "")}`;
 
 export const metadata: Metadata = {
   title: "Cookie policy",
@@ -23,25 +39,36 @@ export const metadata: Metadata = {
 
 export default function CookiePolicyPage() {
   return (
-    <div className={`${contentNarrow} ${sectionY}`}>
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Cookie policy" },
-        ]}
-      />
-      <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Cookie policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
-      <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
+    <>
+      <section className="bg-[var(--navy)] text-white">
+        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Cookie policy" },
+            ]}
+            variant="light"
+          />
+          <div className="mt-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">Legal</p>
+            <h1 className="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">Cookie policy</h1>
+            <p className="mt-5 text-sm text-white/85">Last updated: 18 June 2026</p>
+          </div>
+        </div>
+      </section>
+      <div className={`${contentNarrow} ${sectionY} prose-blog space-y-6 text-[var(--ink-soft)]`}>
         <p>
           This policy describes how {siteConfig.company.legalName} (trading as {siteConfig.name}) uses cookies and similar technologies on our website. Cookies are small text files stored on your device that help us understand how visitors use our Site and improve your experience.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">1. What cookies we use</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)] sm:text-2xl">1. What cookies we use</h2>
 
-        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Essential cookies</h3>
+        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Essential cookies and storage</h3>
         <p>
-          We do not currently use any strictly necessary cookies. Our Site functions without requiring cookies for basic operation.
+          We do not set any cookies on the public pages of the Site, and those pages work whether or not your browser accepts cookies. We do store a small amount of information in your browser, described in the sections below: two random analytics identifiers, and, if you opt out of analytics, a record of that choice so it survives between visits. The opt-out record is the one item we would keep whatever you chose, because without it we could not honour your decision.
+        </p>
+        <p>
+          A single sign-in cookie is used in the private, staff-only part of the Site. Visitors cannot reach that area and it is never set by browsing the public pages.
         </p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">First-party analytics</h3>
@@ -58,20 +85,18 @@ export default function CookiePolicyPage() {
         </p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>_ga:</strong> Distinguishes unique users. Expires after 2 years.
+            <strong>_ga:</strong> Distinguishes one browser from another. Expires after 2 years.
           </li>
           <li>
-            <strong>_gid:</strong> Distinguishes unique users. Expires after 24 hours.
-          </li>
-          <li>
-            <strong>_gat_gtag_*:</strong> Used to throttle request rate. Expires after 1 minute.
+            <strong>{gaPropertyCookie}:</strong> Keeps the state of your visit for this website&apos;s Google Analytics
+            property. Expires after 2 years.
           </li>
         </ul>
         <p>
-          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. IP addresses are anonymised. Data is retained for 14 months.
+          Google Analytics collects information such as pages visited, time spent on pages, browser type, device type, and referral source. It does not store your IP address: your IP address is used to work out an approximate location and is then discarded. How long Google keeps this analytics data is a setting on our Google Analytics property, and the longest period Google allows us to choose is 14 months.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">2. Purpose of cookies</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)] sm:text-2xl">2. Purpose of cookies</h2>
         <p>We use cookies to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Understand which pages are most useful to dental professionals</li>
@@ -83,7 +108,7 @@ export default function CookiePolicyPage() {
           We do <strong>not</strong> use cookies for advertising, remarketing, or selling your data to third parties.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">3. How to manage cookies</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)] sm:text-2xl">3. How to manage cookies</h2>
         <p>You can control and manage cookies in several ways:</p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">On this site</h3>
@@ -101,7 +126,7 @@ export default function CookiePolicyPage() {
               href="https://support.google.com/chrome/answer/95647"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--accent-strong)] underline"
+              className={legalLink}
             >
               Google Chrome
             </a>
@@ -111,7 +136,7 @@ export default function CookiePolicyPage() {
               href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--accent-strong)] underline"
+              className={legalLink}
             >
               Mozilla Firefox
             </a>
@@ -121,7 +146,7 @@ export default function CookiePolicyPage() {
               href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--accent-strong)] underline"
+              className={legalLink}
             >
               Safari
             </a>
@@ -131,7 +156,7 @@ export default function CookiePolicyPage() {
               href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--accent-strong)] underline"
+              className={legalLink}
             >
               Microsoft Edge
             </a>
@@ -145,27 +170,27 @@ export default function CookiePolicyPage() {
             href="https://tools.google.com/dlpage/gaoptout"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--accent-strong)] underline"
+            className={legalLink}
           >
             Google Analytics Opt-out Browser Add-on
           </a>
           .
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">4. Changes to this policy</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)] sm:text-2xl">4. Changes to this policy</h2>
         <p>
           We may update this cookie policy from time to time. The &quot;Last updated&quot; date at the top of this page shows when it was last revised.
         </p>
 
-        <h2 className="font-serif text-xl font-semibold text-[var(--ink)]">5. Contact us</h2>
+        <h2 className="text-xl font-semibold text-[var(--ink)] sm:text-2xl">5. Contact us</h2>
         <p>
           If you have questions about our use of cookies, please contact us via our{" "}
-          <Link href="/contact" className="text-[var(--accent-strong)] underline">
+          <Link href="/contact" className={legalLink}>
             contact page
           </Link>
           .
         </p>
       </div>
-    </div>
+    </>
   );
 }

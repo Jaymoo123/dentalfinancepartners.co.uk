@@ -132,13 +132,14 @@
   --color-background: var(--background);
   --color-foreground: var(--ink);
   --font-sans: var(--font-plus-jakarta);
-  /* TRANSITIONAL NO-OP (playbook T26). Cormorant Garamond is retired, but 127
-     `font-serif` and 17 `display-serif` class usages still sit in .tsx files
-     that phases 2 to 6 own. Mapping the retired family onto the survivor keeps
-     every one of them rendering in Plus Jakarta Sans instead of falling back to
-     Times for the duration of the port. Each later phase deletes its own
-     classes; DELETE THIS LINE (and .display-serif below) when both counts reach
-     zero. */
+  /* TRANSITIONAL NO-OP (playbook T26). Cormorant Garamond is retired. As at the
+     phase 6 close, `display-serif` is at ZERO usages and its rule has been
+     deleted, but **41 `font-serif` usages remain** across 12 .tsx files
+     (health-check Wizard 11, dental-guides [slug] 7, free-practice-health-check
+     9, and nine others). Mapping the retired family onto the survivor keeps
+     every one rendering in Plus Jakarta Sans rather than falling back to Times.
+     DELETE THIS LINE when `grep -rc "font-serif" src --include=*.tsx` reaches
+     zero, and NOT before: deleting it today breaks 41 live usages. */
   --font-serif: var(--font-plus-jakarta);
 }
 
@@ -189,37 +190,8 @@ main {
   min-width: 0;
 }
 
-/* Hero - deep navy with soft light drift (clean, not busy) */
-.hero-brand {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 38%, var(--navy-soft) 100%);
-  color: var(--background);
-}
 
-.hero-brand::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse 80% 55% at 100% 0%, var(--gold-soft), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(255, 255, 255, 0.06), transparent 50%);
-}
 
-.hero-brand::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.4;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.04'%3E%3Cpath d='M28 0v56M0 28h56'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-.hero-brand > .hero-inner {
-  position: relative;
-  z-index: 1;
-}
 
 /* Transform-only motion - no opacity keyframes (avoids invisible hero on first
    paint / SSR). This deliberately overrides the shared kit's fadeInUp variant of
@@ -265,12 +237,6 @@ main {
    (DISPOSITION_SLICE1 B.2 claims two uses of .eyebrow-gold; there are none).
    The eyebrow idiom comes from the kit's EyebrowRule from here on. */
 
-/* TRANSITIONAL NO-OP (playbook T26), pair of the --font-serif map above.
-   Cormorant is retired; this keeps the 18 surviving `display-serif` usages in
-   Plus Jakarta rather than Times. Delete with the --font-serif line. */
-.display-serif {
-  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
-}
 
 .card-premium {
   border: 1px solid var(--border);
@@ -294,17 +260,6 @@ main {
   border-radius: var(--radius-xl);
 }
 
-/* Section eyebrow. Was --gold-strong, which measures 3.76 on white and 3.32 on
-   --surface-elevated: a live text fail on all 12 homepage usages. Gold is barred
-   from text on a light ground, so this moves to primary-700 (11.64 on white).
-   The consuming markup is untouched; this is a token-layer repair only. */
-.section-label {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--color-primary-700);
-}
 
 .article-body.prose-blog {
   line-height: 1.65;

@@ -20,7 +20,7 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
-import { btnGold } from "@/components/ui/layout-utils";
+import { btnGold, focusRing } from "@/components/ui/layout-utils";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
@@ -168,7 +168,7 @@ export function StickyCTA() {
           type="button"
           onClick={handleDismiss}
           aria-label="Dismiss"
-          className="shrink-0 rounded p-1 text-white/50 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]"
+          className={`shrink-0 rounded-lg p-1 text-white/70 transition-colors duration-150 hover:bg-white/10 hover:text-white ${focusRing}`}
         >
           <svg
             aria-hidden="true"

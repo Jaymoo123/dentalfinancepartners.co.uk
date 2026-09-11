@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { LeadForm } from "@/components/forms/LeadForm";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPage } from "@/lib/schema/faq-page";
@@ -13,6 +11,16 @@ import {
   SeasonalityChart,
   type SeasonalityPoint,
 } from "@/components/research/DentalFormationCharts";
+import {
+  ChartPanel,
+  ClosingPanel,
+  KeyFindings,
+  OtherSeries,
+  ReportFaqs,
+  ReportHero,
+  ReportSection,
+  reportLink,
+} from "@/components/research/report-ui";
 import {
   fmtNumber,
   fmtPercent,
@@ -27,18 +35,28 @@ const { meta, headline, incorporations } = data;
 const PAGE_PATH = "/research/dental-company-formation-index";
 
 // ---------------------------------------------------------------------------
-// Seasonality: average formations by calendar month (2016-2025 full years)
+// Seasonality, derived from the committed monthly series.
+//
+// Two figures on this page are computed here rather than asserted: the average
+// month-by-month profile the chart draws, and how many complete calendar years
+// actually peak in March. The page used to say the March spike appeared "across
+// all years"; the committed data does not support that, so the sentence now
+// states the count the data gives and recomputes it when the data changes.
 // ---------------------------------------------------------------------------
 const MONTH_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const SEASONALITY_FROM = 2016;
+const SEASONALITY_TO = 2025;
+
+const settledMonths = incorporations.monthly.filter(
+  (row) => !meta.provisional_months.includes(row.month),
+);
 
 const seasonalityData: SeasonalityPoint[] = (() => {
-  const provisional = new Set(meta.provisional_months);
   const sums: number[] = Array(12).fill(0);
   const counts: number[] = Array(12).fill(0);
-  for (const row of incorporations.monthly) {
-    if (provisional.has(row.month)) continue;
+  for (const row of settledMonths) {
     const year = Number(row.month.slice(0, 4));
-    if (year < 2016 || year > 2025) continue;
+    if (year < SEASONALITY_FROM || year > SEASONALITY_TO) continue;
     const mi = Number(row.month.slice(5, 7)) - 1;
     sums[mi] += Number(row["86230"] ?? 0);
     counts[mi]++;
@@ -48,6 +66,34 @@ const seasonalityData: SeasonalityPoint[] = (() => {
     avg: counts[i] > 0 ? Math.round(s / counts[i]) : 0,
     isMarch: i === 2,
   }));
+})();
+
+const monthlyAverage = Math.round(
+  seasonalityData.reduce((sum, d) => sum + d.avg, 0) / seasonalityData.length,
+);
+const marchAverage = seasonalityData[2].avg;
+const lowestMonth = seasonalityData.reduce((lo, d) => (d.avg < lo.avg ? d : lo));
+
+/** Complete calendar years in the settled series, and how many of them peak in
+ *  March. Both numbers are counted, not stated. */
+const { completeYears, marchPeakYears } = (() => {
+  const byYear = new Map<number, Map<number, number>>();
+  for (const row of settledMonths) {
+    const year = Number(row.month.slice(0, 4));
+    if (year < SEASONALITY_FROM || year > SEASONALITY_TO) continue;
+    const months = byYear.get(year) ?? new Map<number, number>();
+    months.set(Number(row.month.slice(5, 7)), Number(row["86230"] ?? 0));
+    byYear.set(year, months);
+  }
+  let complete = 0;
+  let march = 0;
+  for (const months of byYear.values()) {
+    if (months.size < 12) continue;
+    complete++;
+    const peak = [...months.entries()].reduce((hi, e) => (e[1] > hi[1] ? e : hi));
+    if (peak[0] === 3) march++;
+  }
+  return { completeYears: complete, marchPeakYears: march };
 })();
 
 // ---------------------------------------------------------------------------
@@ -80,9 +126,9 @@ const faqs = [
       "Operating through a limited company can be more tax-efficient than sole-trader or partnership status at higher income levels. A dental company can pay a small salary plus dividends, potentially reducing income tax and National Insurance compared with being taxed entirely on self-employment income. The rise in dental company formations also reflects new practice ownership, associate dentists stepping up to principals, and practice acquisitions structured through holding companies.",
   },
   {
-    question: "Why is there a March peak in dental company formations?",
+    question: "Is there a March peak in dental company formations?",
     answer:
-      "March falls just before the UK tax year ends on 5 April. Dentists who incorporate before 6 April can start their company accounting period at the beginning of the new tax year, which simplifies overlap and avoids a split-year calculation. Incorporating in March captures a full year of company-level tax efficiency from day one. This tax-year-boundary incentive produces a consistent spike in the data across all years.",
+      `March is the busiest month on average across ${SEASONALITY_FROM} to ${SEASONALITY_TO}, at ${marchAverage} formations against a monthly average of ${monthlyAverage}, and it is the peak month in ${marchPeakYears} of the ${completeYears} complete years in that window. March falls just before the UK tax year ends on 5 April, and a dentist who incorporates before 6 April can open the company accounting period at the start of the new tax year. The pattern is a strong tendency in the data rather than a rule that holds every year.`,
   },
   {
     question: "Where does this data come from?",
@@ -142,33 +188,9 @@ const datasetSchema = {
   ],
 };
 
-// ---------------------------------------------------------------------------
-// UI helpers
-// ---------------------------------------------------------------------------
-
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
-      <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
-    </section>
-  );
-}
-
-// ---------------------------------------------------------------------------
-
 export default function DentalCompanyFormationIndexPage() {
   const settledThrough = meta.incorporations_settled_through;
-  const lastSettled = headline.last_settled_month;
+  const firstMonth = incorporations.monthly[0]?.month;
 
   return (
     <>
@@ -185,220 +207,209 @@ export default function DentalCompanyFormationIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPage(faqs)) }}
       />
 
-      {/* Hero */}
-      <section className="hero-brand py-12 sm:py-16">
-        <div className={`hero-inner ${siteContainerLg}`}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Research", href: "/research" },
-              { label: "Dental Company Formation Index" },
-            ]}
-          />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-[var(--gold)]">
-            Dental Company Formation Index
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+      <ReportHero
+        crumb="Dental Company Formation Index"
+        eyebrow="Dental Company Formation Index"
+        title={
+          <>
             New dental company incorporations rose {fmtPercent(decade.change_pct, false)} between{" "}
             {decade.from_year} and {decade.to_year}
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+          </>
+        }
+        intro={
+          <>
             A monthly index of new limited company formations under SIC 86230 (General dental
-            practice activities), compiled from Companies House public records. Updated{" "}
-            {monthLabel(settledThrough)}.
-          </p>
+            practice activities), compiled from the Companies House public register. Settled to{" "}
+            {monthLabel(settledThrough)}, with the most recent{" "}
+            {meta.provisional_months.length} months held back as provisional.
+          </>
+        }
+        stats={[
+          {
+            value: fmtNumber(headline.dental_cos_ttm),
+            label: "dental companies incorporated in the last twelve settled months",
+          },
+          {
+            value: fmtPercent(headline.dental_cos_yoy_pct),
+            label: `year-on-year change in ${monthLabel(headline.last_settled_month)}`,
+          },
+          {
+            value: fmtPercent(decade.change_pct, false),
+            label: `more dental companies formed in ${decade.to_year} than in ${decade.from_year}`,
+          },
+        ]}
+      />
 
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            <Stat
-              value={fmtNumber(headline.dental_cos_ttm)}
-              label="dental companies incorporated in the last 12 months"
-            />
-            <Stat
-              value={fmtPercent(headline.dental_cos_yoy_pct)}
-              label={`year-on-year change in ${monthLabel(lastSettled)}`}
-            />
-            <Stat
-              value={fmtPercent(decade.change_pct, false)}
-              label={`more dental companies than in ${decade.from_year}`}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
+      <section className="bg-[var(--background)]">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl">
+          <div className="max-w-4xl py-10 sm:py-14">
+            <KeyFindings
+              note={
+                <>
+                  Source: Companies House Advanced Search API, under the Open Government Licence
+                  v3.0. The most recent {meta.provisional_months.length} months are provisional, a
+                  Companies House indexing lag, and are excluded from every figure above and below.
+                </>
+              }
+            >
+              <li>
+                New dental companies under SIC 86230 grew from{" "}
+                <strong>{fmtNumber(decade.from_value)}</strong> in {decade.from_year} to{" "}
+                <strong>{fmtNumber(decade.to_value)}</strong> in {decade.to_year}, a rise of{" "}
+                {fmtPercent(decade.change_pct, false)}.
+              </li>
+              <li>
+                In the twelve settled months to {monthLabel(settledThrough)},{" "}
+                <strong>{fmtNumber(headline.dental_cos_ttm)}</strong> new dental companies were
+                incorporated.
+              </li>
+              <li>
+                The busiest single month in the series is{" "}
+                <strong>{fmtNumber(headline.peak_value)}</strong> incorporations in{" "}
+                {monthLabel(headline.peak_month)}.
+              </li>
+              <li>
+                March is the busiest month of the year on average, at {marchAverage} formations
+                against a monthly average of {monthlyAverage}, and it is the peak month in{" "}
+                {marchPeakYears} of the {completeYears} complete years from {SEASONALITY_FROM} to{" "}
+                {SEASONALITY_TO}. The 6 April tax-year boundary is the obvious explanation, and the
+                exceptions are worth noting rather than smoothing over.
+              </li>
+            </KeyFindings>
 
-            {/* Key findings */}
-            <div className="rounded-2xl border border-[var(--gold)]/20 bg-amber-50/60 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-[var(--navy)]">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
-                <li>
-                  New dental companies (SIC 86230) grew from{" "}
-                  <strong>{fmtNumber(decade.from_value)}</strong> in {decade.from_year} to{" "}
-                  <strong>{fmtNumber(decade.to_value)}</strong> in {decade.to_year}, a rise of{" "}
-                  {fmtPercent(decade.change_pct, false)}.
-                </li>
-                <li>
-                  In the 12 months to {monthLabel(settledThrough)},{" "}
-                  <strong>{fmtNumber(headline.dental_cos_ttm)}</strong> new dental companies were
-                  incorporated under SIC 86230.
-                </li>
-                <li>
-                  The all-time monthly record was{" "}
-                  <strong>{fmtNumber(headline.peak_value)}</strong> dental companies incorporated in{" "}
-                  {monthLabel(headline.peak_month)}.
-                </li>
-                <li>
-                  A consistent March spike is visible in the data across all years, driven by
-                  dentists incorporating before the 6 April tax-year boundary to capture a full year
-                  of company-level tax efficiency from day one.
-                </li>
-              </ul>
-              <p className="mt-4 text-xs text-neutral-500">
-                Source: Companies House Advanced Search API, under the Open Government Licence v3.0.
-                The most recent {meta.provisional_months.length} months of data are provisional
-                (Companies House indexing lag) and are excluded from the headline figures above.
-              </p>
-            </div>
-
-            <Section id="annual" title="Dental company formations by year">
+            <ReportSection id="annual" title="Dental company formations by year">
               <p>
-                Each bar shows the number of new dental limited companies incorporated in that
-                calendar year under SIC 86230. Only complete calendar years are shown. The
-                post-2020 surge reflects both a broader rise in UK company formation and growing
-                awareness of the tax advantages of operating through a limited dental company.
+                Each bar is the number of new dental limited companies incorporated in that calendar
+                year under SIC 86230. Only complete calendar years are shown. The post-2020 step up
+                runs alongside a broader rise in UK company formation generally, so it should not be
+                read as a dentistry-specific effect on its own.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <ChartPanel>
                 <AnnualFormationChart annual={incorporations.annual} />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="monthly" title="Monthly trend">
+            <ReportSection id="monthly" title="Monthly trend">
               <p>
-                The same measure shown month by month from mid-2015 to the present. The long climb
-                is visible, with March spikes each year. The dashed tail marks the most recent{" "}
+                The same measure month by month from {firstMonth ? monthLabel(firstMonth) : "the start of the series"} to{" "}
+                {monthLabel(settledThrough)}. The dashed tail marks the most recent{" "}
                 {meta.provisional_months.length} months, which are provisional because Companies
                 House indexes very recent incorporations with a short lag.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <ChartPanel>
                 <MonthlyFormationChart
                   monthly={incorporations.monthly}
                   provisionalMonths={meta.provisional_months}
                 />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="seasonality" title="Tax-year seasonality in dental incorporations">
+            <ReportSection id="seasonality" title="Tax-year seasonality in dental incorporations">
               <p>
-                Averaged across 2016 to 2025, new dental company formations show a consistent
-                March spike: the month before the UK tax year closes on 5 April runs well above
-                the calendar-year monthly mean. The pattern is visible across every year in the
-                series.
+                Averaged across {SEASONALITY_FROM} to {SEASONALITY_TO}, new dental company
+                formations run highest in March, at {marchAverage} against the monthly average of{" "}
+                {monthlyAverage}. {lowestMonth.month} is the quietest month, at {lowestMonth.avg}.
               </p>
               <p>
-                The most likely driver is tax-year-boundary planning. A dentist who incorporates
-                before 6 April can open the company accounting period at the start of the new tax
-                year, avoiding a split-year calculation and capturing a full year of company-level
-                tax efficiency immediately. April itself falls back sharply as the pre-year-end
-                rush completes. December is the seasonal low.
+                The likeliest driver is the tax-year boundary. A dentist who incorporates before 6
+                April can open the company accounting period at the start of the new tax year,
+                avoiding a split-year calculation. April stays above the annual average rather than
+                collapsing, so the effect looks like a pull-forward of a few weeks rather than a
+                cliff. And it is a tendency, not a law: March is the peak month in{" "}
+                {marchPeakYears} of {completeYears} complete years, not all of them.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
-                <p className="mb-3 text-xs text-neutral-500">
-                  Average monthly dental company formations (SIC 86230, 2016-2025). Reference line
-                  shows the annual average.
+              <ChartPanel>
+                <p className="mb-3 text-xs text-[var(--muted)]">
+                  Average monthly dental company formations, SIC 86230, {SEASONALITY_FROM} to{" "}
+                  {SEASONALITY_TO}. The reference line is the annual monthly average.
                 </p>
                 <SeasonalityChart data={seasonalityData} />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="methodology" title="Methodology and sources">
+            <ReportSection id="methodology" title="Methodology and sources">
               <p>
-                <strong>Incorporations.</strong> For each month, we query the Companies House
+                <strong>Incorporations.</strong> For each month we query the Companies House
                 Advanced Search API for companies incorporated under SIC 86230 (General dental
                 practice activities). Counts are gross: a company that has since been dissolved
-                still appears on the register, so the series carries no survivorship bias. The
-                most recent {meta.provisional_months.length} months are provisional and excluded
-                from headline figures.
+                still appears on the register, so the series carries no survivorship bias. The most
+                recent {meta.provisional_months.length} months are provisional and excluded from
+                every headline figure.
               </p>
               <p>
-                <strong>Updated.</strong> Incorporations to {monthLabel(settledThrough)} (settled
-                data). Data generated {monthLabel(meta.generated_at.slice(0, 7))}.
+                <strong>What the count is not.</strong> An incorporation is a company registered
+                under a dental SIC code, not a new practice opening. A restructure, a holding
+                company over an existing practice, or a company that never trades all count once
+                each, and none of them is a new surgery.
               </p>
-              <ul className="not-prose mt-2 space-y-1 text-sm">
+              <p>
+                <strong>Updated.</strong> Incorporations to {monthLabel(settledThrough)}, settled
+                data. Generated {monthLabel(meta.generated_at.slice(0, 7))}.
+              </p>
+              <ul className="not-prose mt-2 space-y-2 text-sm">
                 {meta.sources.map((s) => (
                   <li key={s.name}>
-                    <a
-                      href={s.url}
-                      className="font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)]"
-                      rel="nofollow"
-                    >
+                    <a href={s.url} className={reportLink} rel="nofollow">
                       {s.name}
                     </a>{" "}
-                    <span className="text-neutral-500">({s.publisher})</span>
+                    <span className="text-[var(--muted)]">({s.publisher})</span>
                   </li>
                 ))}
               </ul>
               <p className="text-sm">
                 <Link
                   href={`${PAGE_PATH}/data`}
-                  className="font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_data_download"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
                   Download the formation data (CSV)
                 </Link>
               </p>
-              <p className="text-sm text-neutral-500">
-                Free to cite and republish with attribution to Dental Finance Partners. This page
-                is a data summary and does not constitute financial or tax advice.
+              <p className="text-sm text-[var(--muted)]">
+                Free to cite and republish with attribution to Dental Finance Partners. This page is
+                a data summary and does not constitute financial or tax advice.
               </p>
-            </Section>
+            </ReportSection>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-[var(--gold)]/20 bg-gradient-to-br from-amber-50 to-yellow-50/50 p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-[var(--navy)] sm:text-3xl">
-                Considering incorporating your dental practice?
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                The rise in dental company formations reflects a genuine financial advantage for
-                many dentists. Whether you are an associate thinking about your first company,
-                a principal restructuring an existing practice, or buying a practice through a
-                holding company, getting the structure right matters. Our dental accountants
-                work exclusively with dental professionals.
+            <ClosingPanel heading="Considering incorporating your dental practice?">
+              <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
+                The rise in the chart above is a trend, not advice. Whether a company beats staying
+                self-employed depends on your income level, what you need to draw, what you can
+                leave in, and how your NHS contract is held. Whether you are an associate looking at
+                a first company, a principal restructuring, or a buyer acquiring through a holding
+                company, the structure is worth modelling before it is registered. We act for dental
+                professionals only.
               </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
                 <Link
                   href="/for-principals"
-                  className="text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_pillar_link"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
-                  For practice principals &rarr;
+                  For practice principals
                 </Link>
                 <Link
                   href="/for-associates"
-                  className="text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_pillar_link"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
-                  For associate dentists &rarr;
+                  For associate dentists
                 </Link>
               </div>
               <div className="mt-8">
                 <LeadForm redirectOnSuccess={false} submitLabel="Speak to a dental accountant" />
               </div>
-            </div>
+            </ClosingPanel>
 
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <OtherSeries current={PAGE_PATH} />
+
+            <ReportFaqs faqs={faqs} />
           </div>
         </div>
       </section>

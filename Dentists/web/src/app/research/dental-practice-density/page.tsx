@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { LeadForm } from "@/components/forms/LeadForm";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPage } from "@/lib/schema/faq-page";
@@ -11,6 +9,17 @@ import {
   DensityByRegionChart,
   LocationCountByRegionChart,
 } from "@/components/research/DentalDensityCharts";
+import {
+  ChartPanel,
+  ClosingPanel,
+  DataTableWrap,
+  KeyFindings,
+  OtherSeries,
+  ReportFaqs,
+  ReportHero,
+  ReportSection,
+  reportLink,
+} from "@/components/research/report-ui";
 import {
   fmtDensity,
   fmtNumber,
@@ -22,6 +31,19 @@ const data = snapshot as unknown as DentalPracticeDensitySnapshot;
 const { meta, headline, regions } = data;
 
 const PAGE_PATH = "/research/dental-practice-density";
+
+/** Regions with a population denominator, so a density can be computed. The CQC
+ *  directory also carries a small number of locations with no region recorded;
+ *  they are in the England total and cannot be in any regional rate. */
+const knownRegions = regions.filter((r) => r.per_100k !== null);
+const knownLocations = knownRegions.reduce((sum, r) => sum + r.dental_locations, 0);
+const unplacedLocations = headline.total_dental_locations - knownLocations;
+const densityGap =
+  headline.highest_density_per_100k !== null && headline.lowest_density_per_100k !== null
+    ? headline.highest_density_per_100k - headline.lowest_density_per_100k
+    : null;
+const topLondonLa = regions.find((r) => r.region === headline.highest_density_region)
+  ?.top_local_authorities?.[0];
 
 export const metadata: Metadata = {
   title: "Dental Practice Density by Region | England",
@@ -54,7 +76,7 @@ const faqs = [
   {
     question: "Why does London have the highest dental density?",
     answer:
-      "London has both a high absolute number of dental practices and a concentration of private dental practices serving a dense, mobile population. The capital's higher average income also sustains a larger private sector. Westminster alone has over 260 CQC-registered dental locations. However, access is uneven within London: outer boroughs have lower densities than the centre.",
+      `London has the largest absolute number of CQC-registered dental locations of any England region${topLondonLa ? `, and one local authority, ${topLondonLa.local_authority}, accounts for ${topLondonLa.count} of them` : ""}. The published data measures locations and population, not ownership or patient mix, so it shows where practices are rather than why. Access is also uneven within the region: a regional rate averages over boroughs that differ widely from each other.`,
   },
   {
     question: "What does dental access mean for my practice finances?",
@@ -111,27 +133,10 @@ const datasetSchema = {
   ],
 };
 
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
-      <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
-    </section>
-  );
-}
+const th = "py-2 pr-4 text-left text-sm font-semibold text-[var(--ink)]";
+const td = "py-2 pr-4 text-sm text-[var(--ink-soft)]";
 
 export default function DentalPracticeDensityPage() {
-  const knownRegions = regions.filter((r) => r.per_100k !== null);
-
   return (
     <>
       <script
@@ -147,244 +152,229 @@ export default function DentalPracticeDensityPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPage(faqs)) }}
       />
 
-      {/* Hero */}
-      <section className="hero-brand py-12 sm:py-16">
-        <div className={`hero-inner ${siteContainerLg}`}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Research", href: "/research" },
-              { label: "Dental Practice Density" },
-            ]}
-          />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-[var(--gold)]">
-            Dental Practice Density Index
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            England dental desert map: practices per 100,000 population by region
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+      <ReportHero
+        crumb="Dental Practice Density"
+        eyebrow="Dental Practice Density Index"
+        title="England dental desert map: practices per 100,000 people, by region"
+        intro={
+          <>
             How many CQC-registered dental practices are there per 100,000 people in each England
-            region? Data from the CQC Care Directory ({meta.cqc_data_date}) combined with ONS
-            mid-2024 population estimates.
-          </p>
+            region? Built from the CQC Care Directory of {meta.cqc_data_date} and ONS mid-2024
+            population estimates, and free to cite with attribution.
+          </>
+        }
+        stats={[
+          {
+            value: fmtNumber(headline.total_dental_locations),
+            label: "CQC-registered dental locations in England",
+          },
+          {
+            value: fmtDensity(headline.england_per_100k),
+            label: "dental locations per 100,000 people, England average",
+          },
+          {
+            value: fmtDensity(headline.highest_density_per_100k),
+            label: `per 100,000 in ${headline.highest_density_region ?? "the densest region"}, the highest of any region`,
+          },
+        ]}
+      />
 
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            <Stat
-              value={fmtNumber(headline.total_dental_locations)}
-              label="CQC-registered dental locations in England"
-            />
-            <Stat
-              value={`${fmtDensity(headline.england_per_100k)}`}
-              label="per 100,000 population (England average)"
-            />
-            <Stat
-              value={`${fmtDensity(headline.highest_density_per_100k)}`}
-              label={`per 100k in ${headline.highest_density_region ?? "n/a"} (highest)`}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
+      <section className="bg-[var(--background)]">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl">
+          <div className="max-w-4xl py-10 sm:py-14">
+            <KeyFindings
+              note={
+                <>
+                  Source: CQC Care Directory ({meta.cqc_data_date}) and ONS Mid-2024 Population
+                  Estimates, both under the Open Government Licence v3.0. Figures may be cited with
+                  attribution to Dental Finance Partners.
+                </>
+              }
+            >
+              <li>
+                England has <strong>{fmtNumber(headline.total_dental_locations)}</strong>{" "}
+                CQC-registered dental locations, an average of{" "}
+                <strong>{fmtDensity(headline.england_per_100k)}</strong> per 100,000 people against
+                the ONS mid-2024 population.
+              </li>
+              <li>
+                <strong>{headline.highest_density_region}</strong> is the densest region at{" "}
+                <strong>{fmtDensity(headline.highest_density_per_100k)}</strong> locations per
+                100,000 people.
+              </li>
+              <li>
+                <strong>{headline.lowest_density_region}</strong> is the thinnest at{" "}
+                <strong>{fmtDensity(headline.lowest_density_per_100k)}</strong> per 100,000, a gap
+                of {fmtDensity(densityGap)} per 100,000 against the densest region.
+              </li>
+              <li>
+                The CQC directory registers NHS, mixed and private dental locations alike. This is a
+                geographic access measure: it counts practice locations, not individual dentists or
+                dental chairs.
+              </li>
+            </KeyFindings>
 
-            {/* Key findings */}
-            <div className="rounded-2xl border border-[var(--gold)]/20 bg-amber-50/60 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-[var(--navy)]">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
-                <li>
-                  England has <strong>{fmtNumber(headline.total_dental_locations)}</strong> CQC-registered
-                  dental locations, an average of <strong>{fmtDensity(headline.england_per_100k)}</strong> per
-                  100,000 population (ONS mid-2024).
-                </li>
-                <li>
-                  <strong>{headline.highest_density_region}</strong> has the highest density at{" "}
-                  <strong>{fmtDensity(headline.highest_density_per_100k)}</strong> per 100,000, driven by
-                  a concentration of private practices in central areas.
-                </li>
-                <li>
-                  <strong>{headline.lowest_density_region}</strong> has the lowest density at{" "}
-                  <strong>{fmtDensity(headline.lowest_density_per_100k)}</strong> per 100,000, a gap of{" "}
-                  {fmtDensity(
-                    headline.highest_density_per_100k !== null && headline.lowest_density_per_100k !== null
-                      ? headline.highest_density_per_100k - headline.lowest_density_per_100k
-                      : null
-                  )}{" "}
-                  per 100k against the highest-density region.
-                </li>
-                <li>
-                  The CQC directory registers both NHS and private dental locations. The density
-                  measure is a geographic access proxy: it counts practice locations, not individual
-                  dentists or dental chairs.
-                </li>
-              </ul>
-              <p className="mt-4 text-xs text-neutral-500">
-                Source: CQC Care Directory ({meta.cqc_data_date}) and ONS Mid-2024 Population
-                Estimates, both under the Open Government Licence v3.0. Figures may be cited with
-                attribution to Dental Finance Partners.
-              </p>
-            </div>
-
-            <Section id="density" title="Dental locations per 100,000 population by region">
+            <ReportSection id="density" title="Dental locations per 100,000 people, by region">
               <p>
                 The chart ranks England regions by CQC-registered dental locations per 100,000
-                population. This is the standard access measure: higher means more practices
-                relative to the local population.
+                people. Higher means more practices relative to the local population.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <ChartPanel>
                 <DensityByRegionChart regions={knownRegions} />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="count" title="Total dental locations by region">
+            <ReportSection id="count" title="Total dental locations by region">
               <p>
-                The chart shows the raw count of CQC-registered dental locations by region.
-                Regions with large populations naturally have more practices in absolute terms,
-                which is why the per-100k measure is the better access indicator.
+                The same directory counted in absolute terms. Regions with large populations
+                naturally hold more practices, which is why the per-100,000 measure is the better
+                access indicator and the raw count is the better capacity one.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <ChartPanel>
                 <LocationCountByRegionChart regions={regions} />
-              </div>
-            </Section>
+              </ChartPanel>
+            </ReportSection>
 
-            <Section id="by-region" title="Regional breakdown">
-              <p>The table below shows all England regions with dental location counts, regional
-              population, and the per-100k density figure.</p>
-              <div className="not-prose mt-4 overflow-x-auto">
-                <table className="w-full border-collapse text-sm">
+            <ReportSection id="by-region" title="Regional breakdown">
+              <p>
+                Every England region with a population denominator, with its location count, its
+                mid-2024 population and the resulting rate.
+              </p>
+              <DataTableWrap>
+                <table className="w-full border-collapse">
+                  <caption className="sr-only">
+                    CQC-registered dental locations, mid-2024 population and dental locations per
+                    100,000 people, by England region
+                  </caption>
                   <thead>
-                    <tr className="border-b-2 border-neutral-300 text-left">
-                      <th className="py-2 pr-4 font-bold text-neutral-900">Region</th>
-                      <th className="py-2 pr-4 font-bold text-neutral-900">Dental locations</th>
-                      <th className="py-2 pr-4 font-bold text-neutral-900">Population (mid-2024)</th>
-                      <th className="py-2 font-bold text-neutral-900">Per 100k</th>
+                    <tr className="border-b-2 border-[var(--border)]">
+                      <th scope="col" className={th}>Region</th>
+                      <th scope="col" className={th}>Dental locations</th>
+                      <th scope="col" className={th}>Population (mid-2024)</th>
+                      <th scope="col" className={th}>Per 100,000</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {regions
-                      .filter((r) => r.per_100k !== null)
-                      .map((r) => (
-                        <tr key={r.region} className="border-b border-neutral-200">
-                          <td className="py-2 pr-4 font-semibold text-neutral-900">{r.region}</td>
-                          <td className="py-2 pr-4 text-neutral-700">{fmtNumber(r.dental_locations)}</td>
-                          <td className="py-2 pr-4 text-neutral-700">{fmtNumber(r.population)}</td>
-                          <td className="py-2 font-semibold text-[var(--navy)]">{fmtDensity(r.per_100k)}</td>
-                        </tr>
-                      ))}
-                    <tr className="border-t-2 border-neutral-300">
-                      <td className="py-2 pr-4 font-bold text-[var(--navy)]">England (known regions)</td>
-                      <td className="py-2 pr-4 font-bold text-neutral-900">
-                        {fmtNumber(knownRegions.reduce((s, r) => s + r.dental_locations, 0))}
+                    {knownRegions.map((r) => (
+                      <tr key={r.region} className="border-b border-[var(--border)]">
+                        <th scope="row" className={`${th} font-semibold`}>{r.region}</th>
+                        <td className={td}>{fmtNumber(r.dental_locations)}</td>
+                        <td className={td}>{fmtNumber(r.population)}</td>
+                        <td className={`${td} font-semibold text-[var(--ink)]`}>
+                          {fmtDensity(r.per_100k)}
+                        </td>
+                      </tr>
+                    ))}
+                    <tr className="border-t-2 border-[var(--border)]">
+                      <th scope="row" className={`${th} font-bold`}>England (placed regions)</th>
+                      <td className={`${td} font-bold text-[var(--ink)]`}>
+                        {fmtNumber(knownLocations)}
                       </td>
-                      <td className="py-2 pr-4 font-bold text-neutral-900">
+                      <td className={`${td} font-bold text-[var(--ink)]`}>
                         {fmtNumber(headline.england_population)}
                       </td>
-                      <td className="py-2 font-bold text-[var(--navy)]">
+                      <td className={`${td} font-bold text-[var(--ink)]`}>
                         {fmtDensity(headline.england_per_100k)}
                       </td>
                     </tr>
                   </tbody>
                 </table>
-              </div>
-            </Section>
+              </DataTableWrap>
+              {unplacedLocations > 0 && (
+                <p className="text-sm text-[var(--muted)]">
+                  {fmtNumber(unplacedLocations)} of the {fmtNumber(headline.total_dental_locations)}{" "}
+                  locations in the directory carry no region, so they are in the England total and
+                  in no regional rate. The England rate above is computed on the{" "}
+                  {fmtNumber(knownLocations)} placed locations.
+                </p>
+              )}
+            </ReportSection>
 
-            <Section id="methodology" title="Methodology and sources">
+            <ReportSection id="methodology" title="Methodology and sources">
               <p>
-                <strong>Dental location data.</strong> All dental location counts come from the CQC
-                Care Directory, a monthly CSV release by the Care Quality Commission. We filter
-                to rows where the Service types column equals exactly &apos;Dentist&apos;. Locations are
-                counted by the Region column in the CQC dataset. The CQC registers all dental
-                practices operating in England, regardless of whether they accept NHS patients.
-                Counts are point-in-time as at {meta.cqc_data_date}.
+                <strong>Dental location data.</strong> All location counts come from the CQC Care
+                Directory, a monthly CSV release by the Care Quality Commission. We filter to rows
+                where the Service types column equals exactly &apos;Dentist&apos;, and count by the
+                Region column in the CQC dataset. The CQC registers every dental practice operating
+                in England, whether or not it accepts NHS patients. Counts are point-in-time as at{" "}
+                {meta.cqc_data_date}.
               </p>
               <p>
-                <strong>Population data.</strong> Regional population denominators are ONS Mid-2024
-                Population Estimates for England regions, published 26 September 2025. The ONS
-                &apos;East of England&apos; region maps to the CQC &apos;East&apos; label, which is normalised
+                <strong>Population data.</strong> Regional denominators are ONS Mid-2024 Population
+                Estimates for England regions, published 26 September 2025. The ONS &apos;East of
+                England&apos; region maps to the CQC &apos;East&apos; label, which is normalised
                 accordingly.
               </p>
               <p>
-                <strong>Caveats.</strong> The CQC directory may include locations that have closed
-                or are inactive but not yet deregistered. A location is a practice address, not an
-                individual dentist. Scotland, Wales, and Northern Ireland are regulated by separate
-                bodies (Care Inspectorate, Healthcare Inspectorate Wales, RQIA) and are not
-                included. Data generated {meta.generated_at}.
+                <strong>Caveats.</strong> The directory may include locations that have closed or
+                gone inactive but are not yet deregistered. A location is a practice address, not an
+                individual dentist, and practices differ in size. Scotland, Wales and Northern
+                Ireland are regulated by separate bodies (Care Inspectorate, Healthcare Inspectorate
+                Wales, RQIA) and are not included. Data generated {meta.generated_at}.
               </p>
-              <ul className="not-prose mt-2 space-y-1 text-sm">
+              <ul className="not-prose mt-2 space-y-2 text-sm">
                 {meta.sources.map((s) => (
                   <li key={s.name}>
-                    <a
-                      href={s.url}
-                      className="font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)]"
-                      rel="nofollow"
-                    >
+                    <a href={s.url} className={reportLink} rel="nofollow">
                       {s.name}
                     </a>{" "}
-                    <span className="text-neutral-500">({s.publisher})</span>
+                    <span className="text-[var(--muted)]">({s.publisher})</span>
                   </li>
                 ))}
               </ul>
               <p className="text-sm">
                 <Link
                   href={`${PAGE_PATH}/data`}
-                  className="font-semibold text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_data_download"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
                   Download the density data (CSV)
                 </Link>
               </p>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-[var(--muted)]">
                 Free to cite and republish with attribution to Dental Finance Partners. This page is
                 a data summary and does not constitute financial or business advice.
               </p>
-            </Section>
+            </ReportSection>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-[var(--gold)]/20 bg-gradient-to-br from-amber-50 to-yellow-50/50 p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-[var(--navy)] sm:text-3xl">
-                How does practice density affect your finances?
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Practice density shapes patient demand, private fee potential, goodwill values, and
-                NHS contract attractiveness in your area. Whether you are buying, selling, or
-                planning your next move, understanding the local market is essential. Our dental
-                accountants work exclusively with dental professionals across all regions.
+            <ClosingPanel heading="How does practice density affect your finances?">
+              <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
+                Density shapes patient demand, private fee potential, goodwill values and how
+                attractive an NHS contract is in a given area. Whether you are buying, selling or
+                planning your next move, the local market picture is one of the inputs. Our dental
+                accountants work exclusively with dental professionals, across every region in the
+                table above.
               </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
                 <Link
                   href="/for-practice-buyers"
-                  className="text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_pillar_link"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
-                  For practice buyers &rarr;
+                  For practice buyers
                 </Link>
                 <Link
                   href="/for-principals"
-                  className="text-[var(--gold-strong)] hover:text-[var(--gold)]"
+                  className={reportLink}
+                  data-cta="research_pillar_link"
+                  data-cta-placement="research_report"
+                  data-cta-goal="content"
                 >
-                  For practice principals &rarr;
+                  For practice principals
                 </Link>
               </div>
               <div className="mt-8">
                 <LeadForm redirectOnSuccess={false} submitLabel="Speak to a dental accountant" />
               </div>
-            </div>
+            </ClosingPanel>
 
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <OtherSeries current={PAGE_PATH} />
+
+            <ReportFaqs faqs={faqs} />
           </div>
         </div>
       </section>
