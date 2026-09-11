@@ -390,3 +390,47 @@ That is one template edit, not new capture on 46 pages.
 RULE: before concluding a family has no capture surface, grep the template for the form component
 and curl one rendered page. Then ask the better question, which is whether anything on the page
 points AT the form.
+
+---
+
+## 8. Concurrency incidents (the rule exists and was still broken)
+
+**2026-09-11, Dentists. A sibling agent's repo-wide `git add` swept 28 Dentists files into a
+commit titled "feat(generalist): high-street mechanic wave 5" (`f75438bf`).** The Dentists port
+had staged its own paths explicitly, ran `git diff --cached --name-only` to confirm the set was
+clean, and in the seconds between that check and `git commit` a sibling staged and committed the
+whole tree. The port's phase 1 gap-fix is therefore committed under another site's message, with
+no Dentists commit to find it by.
+
+Nothing was lost and nothing was corrupted: `git diff HEAD -- Dentists/` was empty afterwards and
+`git show f75438bf:<file>` confirmed every fix intact and byte-identical to the verified build.
+The damage is purely to the audit trail, which is the thing a six-phase port depends on.
+
+Deriving commands, run in this order, because the second is the one that tells you what happened:
+```
+git diff --cached --name-only | grep -v "^<Site>/"     # foreign paths in YOUR index
+for sha in $(git log --format=%h -4); do \
+  echo "$sha $(git show --name-only --format='' $sha | grep -c '^<Site>/')"; done
+git status --porcelain <Site>/                          # empty = someone committed your work
+```
+
+Why the existing rule did not prevent it: §13 rule 1 binds the agent READING it. It cannot bind the
+sibling that never read it, and staging is a whole-repository operation on a shared index, so one
+agent's `git add -A` captures every other agent's uncommitted work regardless of how carefully they
+staged. **An explicit-path discipline protects the repo from you; it does not protect you from the
+repo.**
+
+RULE, in three parts:
+1. **Treat the index as shared, hostile state.** Stage and commit as ONE command
+   (`git add <paths> && git commit`), never as two steps with a check in between. The gap between
+   them is the whole vulnerability, and it is seconds wide.
+2. **After every commit, verify what YOU actually committed**, not that a commit happened:
+   `git show --name-only --format="" HEAD | grep -c "^<Site>/"`. A clean `git status` afterwards
+   proves your files are committed; it does NOT prove they are in YOUR commit.
+3. **Never fix this by rewriting history.** With four ports live in one tree, a rebase or amend
+   destroys siblings' work to tidy your own log. Record where the work actually landed, in the
+   site's STATE.md, and move on. A misleading commit message is cheap; a corrupted sibling is not.
+
+Also seen the same session, and handled correctly: `.git/index.lock` held by a sibling's in-flight
+commit. It cleared in 3 seconds. NEVER delete that file to get past it; it belongs to another
+agent's running commit, and removing it corrupts theirs to unblock yours. Poll for it to clear.
