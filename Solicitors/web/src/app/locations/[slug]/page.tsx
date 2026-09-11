@@ -294,9 +294,9 @@ export default async function LocationPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Dead on this corpus: the filter matches no post for any of the five
-          cities. Left in place deliberately - picking a fallback hub would add
-          links and a heading that do not exist today (owner item). */}
+      {/* Renders where the filter matches (London does); empty for cities with
+          no matching post. No fallback hub: that would add links and a heading
+          that do not exist today (owner item). */}
       {localPosts.length > 0 && (
         <section className="bg-white">
           <div className={`${siteContainerLg} ${sectionY}`}>
@@ -324,9 +324,11 @@ export default async function LocationPage({ params }: Props) {
         </section>
       )}
 
-      <section className="bg-white">
+      {/* Slate ground: white here ran three white bands in a row (local guides,
+          this section, the CTA panel) on cities that have local guides. */}
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+          <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
             <span
               className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600 ring-1 ring-primary-100"
               aria-hidden
@@ -351,6 +353,7 @@ export default async function LocationPage({ params }: Props) {
         <LeadCTAPanel
           contained
           ground="white"
+          eyebrow=""
           title={`Ready to work with a specialist solicitor accountant in ${cityName}?`}
           description="Book a free consultation to discuss your practice's accounting needs. We'll provide clear advice with no obligation."
           formTitle="Book free consultation"

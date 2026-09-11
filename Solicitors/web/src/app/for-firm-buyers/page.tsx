@@ -82,7 +82,7 @@ const data: AudienceStage = {
     },
     {
       q: "How long should pre-acquisition due diligence take?",
-      a: "Financial DD: 3-6 weeks once the data room is open. Legal DD runs in parallel. Regulatory DD (SRA history, PII claims, AML compliance) is critical for law firm acquisitions and adds another 1-2 weeks. We aim for a unified DD report within 6 weeks of data room access.",
+      a: "Financial DD: 3-6 weeks once the data room is open. Legal DD runs in parallel. Regulatory DD (SRA history, PII claims, AML compliance) is critical for law firm acquisitions and adds another 1-2 weeks.",
     },
     {
       q: "What's the post-completion checklist?",

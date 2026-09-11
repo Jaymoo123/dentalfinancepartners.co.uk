@@ -582,6 +582,7 @@ export default function HomePage() {
         <div id="book" className="scroll-mt-24">
           <LeadCTAPanel
             eyebrow="Get started"
+            formTitle=""
             title="Book your free consultation"
             description="Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs."
             proofPoints={[]}

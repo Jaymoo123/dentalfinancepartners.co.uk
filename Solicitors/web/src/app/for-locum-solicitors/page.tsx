@@ -64,7 +64,7 @@ const data: AudienceStage = {
     },
     {
       title: "Mortgage-ready accounts",
-      body: "Lenders want SA302s with consistent income for sole-trader consultants or 2 years of company accounts for Ltd-co consultants. We produce both inside 48 hours of request and work with the legal-sector-friendly mortgage advisers who lend on professional income.",
+      body: "Lenders want SA302s with consistent income for sole-trader consultants or 2 years of company accounts for Ltd-co consultants. We produce both and work with the legal-sector-friendly mortgage advisers who lend on professional income.",
     },
   ],
   faqs: [

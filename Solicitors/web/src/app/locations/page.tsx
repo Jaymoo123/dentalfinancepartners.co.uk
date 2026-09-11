@@ -117,6 +117,8 @@ export default function LocationsHubPage() {
         <LeadCTAPanel
           contained
           ground="slate"
+          eyebrow=""
+          formTitle=""
           title="Not based in these cities?"
           description="We work with solicitors and law firms nationwide. Contact us to discuss your legal practice accounting needs regardless of location."
           proofPoints={[]}

@@ -11,7 +11,7 @@ const DESCRIPTION = "What a legal-sector-specialist accountant does that a gener
 const COMPARISON = [
   {
     item: "SRA Accountant's Report delivery",
-    specialist: "Delivered annually 4-6 weeks ahead of the 6-month SRA deadline. Clean working file. De minimis exemption (Rule 12.2) check applied automatically.",
+    specialist: "Clean working file. De minimis exemption (Rule 12.2) check applied automatically.",
     generalist: "Often delivered close to the deadline. Working file built fresh each year. De minimis exemption rarely flagged for eligible small firms (who continue paying for a report they don't need).",
   },
   {
@@ -54,7 +54,7 @@ const COMPARISON = [
 const FAQS = [
   {
     question: "Are specialist accountants more expensive?",
-    answer: "Often no. Generalist fees vary widely because of hourly billing on legal-sector items the generalist needs to learn.",
+    answer: "Generalist fees vary widely because of hourly billing on legal-sector items the generalist needs to learn.",
   },
   {
     question: "How do I find a legal-sector-specialist accountant?",

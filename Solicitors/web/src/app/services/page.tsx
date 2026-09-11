@@ -417,12 +417,12 @@ export default function ServicesPage() {
           links survive in the footnote so no href moves. */}
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free scoping call"
+          eyebrow=""
           title="Talk to a legal-sector specialist"
           description="30-minute scoping call. We'll tell you which engagement tier fits, what the fee would be, and whether the change is worth making. No drip sequence, no follow-up chase."
           proofPoints={[]}
-          formTitle="Book your free call"
-          form={<LeadForm redirectOnSuccess={false} submitLabel="Book a free call" />}
+          formTitle=""
+          form={<LeadForm redirectOnSuccess={false} />}
           contained
           ground="slate"
           footnote={

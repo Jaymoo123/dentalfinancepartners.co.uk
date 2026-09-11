@@ -19,6 +19,11 @@ export function LeadCTAPanel({
   title,
   description,
   proofPoints,
+  // Both labels render only when non-empty. A ported site may adopt this panel
+  // on a route whose published copy contains no such label, and the owner of
+  // that site forbade adding copy; an empty string used to leave an empty
+  // heading with its own margin. Every existing caller passes a real string or
+  // takes the default, so nothing else changes.
   formTitle = "Book your free consultation",
   formSubtitle,
   form,
@@ -148,7 +153,7 @@ function PanelBody({
   return (
     <div className="grid items-start gap-8 sm:gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
       <div>
-        <Eyebrow onDark={dark}>{eyebrow}</Eyebrow>
+        {eyebrow ? <Eyebrow onDark={dark}>{eyebrow}</Eyebrow> : null}
         <h2 className={`text-2xl font-bold sm:text-4xl ${dark ? "text-white" : "text-slate-900"}`}>{title}</h2>
         <p
           className={`mt-4 text-lg leading-relaxed sm:mt-6 sm:text-xl ${dark ? "text-slate-200" : "text-slate-600"}`}
@@ -184,9 +189,11 @@ function PanelBody({
       <div
         className={`rounded-xl bg-white p-6 sm:p-8 lg:p-10 ${dark ? "" : "ring-1 ring-slate-200 shadow-sm"}`}
       >
-        <h3 className={`text-xl font-bold text-slate-900 sm:text-2xl ${formSubtitle ? "mb-2" : "mb-4 sm:mb-6"}`}>
-          {formTitle}
-        </h3>
+        {formTitle ? (
+          <h3 className={`text-xl font-bold text-slate-900 sm:text-2xl ${formSubtitle ? "mb-2" : "mb-4 sm:mb-6"}`}>
+            {formTitle}
+          </h3>
+        ) : null}
         {formSubtitle ? (
           <p className="mb-4 text-sm text-slate-600 sm:mb-6">{formSubtitle}</p>
         ) : null}
