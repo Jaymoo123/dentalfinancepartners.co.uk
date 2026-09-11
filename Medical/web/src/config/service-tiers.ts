@@ -1,5 +1,6 @@
 import type { ServiceTier } from "@accounting-network/web-shared/components/ServiceTiers";
 import type { StatItemConfig } from "@accounting-network/web-shared/components/StatsBar";
+import { siteConfig } from "@/config/site";
 
 export const serviceTiers: ServiceTier[] = [
   {
@@ -13,7 +14,7 @@ export const serviceTiers: ServiceTier[] = [
       "Salaried doctor take-home pay",
       "GP partner drawings planner",
       "Consultant private vs NHS comparison",
-      "No email gate or sign-up required",
+      "Free to use, and the one ask is skippable",
     ],
     cta: "Open free calculators",
     ctaHref: "/calculators",
@@ -27,7 +28,6 @@ export const serviceTiers: ServiceTier[] = [
       "Medical expense claims review",
       "GP tax and practice accounts",
       "Consultant tax planning",
-      "Responds within one working day",
     ],
     cta: "Get in touch",
     ctaHref: "/contact",
@@ -70,9 +70,9 @@ export const siteStats: StatItemConfig[] = [
     label: "Specialist guides",
   },
   {
-    icon: "📅",
-    value: "1 day",
-    // Claimed on homepage (page.tsx) and contact page: "We respond within one working day"
-    label: "Response time",
+    icon: "📍",
+    // Derived, never hardcoded: niche.config.json locations feed /locations.
+    value: String(siteConfig.locations.length),
+    label: "Locations covered",
   },
 ];

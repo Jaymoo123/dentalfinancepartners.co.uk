@@ -154,7 +154,7 @@ export function AudienceStageLayout({ data }: Props) {
                 Try our free calculators
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-                Instant estimates. No email address required.
+                Free, instant estimates. We ask once if you want a specialist check, and that is skippable.
               </p>
               <div className="mt-6 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {data.relatedCalculators.map((c) => (

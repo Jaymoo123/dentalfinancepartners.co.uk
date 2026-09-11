@@ -222,7 +222,7 @@ export default function ServicesPage() {
             Ten free medical tax calculators
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-            Instant estimates covering NHS Pension annual allowance and the taper, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings, salaried GP versus partner, and the private practice incorporation comparison. No email gate, no sign-up.
+            Instant estimates covering NHS Pension annual allowance and the taper, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings, salaried GP versus partner, and the private practice incorporation comparison. We ask once whether a specialist should confirm your figure, and you can skip that and still see it.
           </p>
           {/* Driven off the tool registry rather than a hand-written list of
               three. The hand-written list said "3 free calculators" while ten

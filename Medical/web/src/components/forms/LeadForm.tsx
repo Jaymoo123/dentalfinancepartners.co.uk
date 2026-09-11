@@ -193,7 +193,7 @@ export function LeadForm({
         role="status"
       >
         <p className="font-semibold">Thank you. We have your message.</p>
-        <p className="mt-2 text-sm">We will come back within one working day.</p>
+        <p className="mt-2 text-sm">A firm from our specialist partner network will be in touch.</p>
         <p className="mt-2 text-sm text-emerald-900">
           For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it may
           be their team who gets in touch.

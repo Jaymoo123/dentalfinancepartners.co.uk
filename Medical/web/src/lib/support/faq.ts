@@ -31,8 +31,8 @@ export type Faq = { q: string; a: string };
 /** Generic Q&As shown when no topic is known. */
 export const GENERIC: Faq[] = [
   {
-    q: "How quickly will a specialist reply?",
-    a: "Within one working day, and usually sooner. Leave your email and a one-line question and a specialist medical accountant will come back to you personally.",
+    q: "Who replies to my enquiry?",
+    a: "Leave your email and a one-line question. We match it to a firm from our specialist partner network, and an accountant who works with doctors comes back to you directly.",
   },
   {
     q: "Is the first conversation free?",

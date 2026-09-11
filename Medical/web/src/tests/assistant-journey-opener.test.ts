@@ -879,8 +879,14 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(GENERIC.length).toBe(3);
   });
 
-  it("GENERIC Q&A 1 is about response speed", () => {
-    expect(GENERIC[0].q).toMatch(/quickly|how.*reply|reply/i);
+  /* Was "is about response speed". The answer no longer promises a speed,
+     because turnaround promises are a locked estate rule and the reply comes
+     from the matched partner firm rather than from us, so the question was
+     rewritten to "Who replies to my enquiry?" and this assertion follows it.
+     Asserting the topic is still worth doing: this slot is the first thing the
+     assistant offers, and it feeds FAQ structured data. */
+  it("GENERIC Q&A 1 is about who replies", () => {
+    expect(GENERIC[0].q).toMatch(/who.*repl|repl/i);
   });
 
   it("GENERIC Q&A 2 is about the first call being free", () => {

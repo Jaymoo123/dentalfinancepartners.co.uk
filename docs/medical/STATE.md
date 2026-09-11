@@ -6,7 +6,7 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-11 (design port Phase 3; nothing deployed since 2026-08-26).
+Last updated: 2026-09-11 (design port Phase 4; nothing deployed since 2026-08-26).
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
 
@@ -324,6 +324,100 @@ harness reports the command as failed, so kill by PID from `netstat -ano | grep 
 and `taskkill //PID <pid> //F`; re-editing `niche.config.json` by parsing and re-dumping
 JSON rewrites every escaped character in the file, so edit the lines and never round-trip
 it.
+
+## 2026-09-11 - DESIGN PORT PHASE 4 (the calculators). Built, reviewed twice, fixed. Nothing deployed.
+
+Scope: the result gate across the whole calculator fleet, the two calculator routes, and
+the copy that the gate makes false. Deliberately NOT in this phase and logged instead: the
+calculator tab strips on `/services`, `/medical-guides` and the four `/for-*` pages, which
+belong with those pages in phase 5.
+
+**The live defect this phase existed to stop multiplying.** `calc_result_gate` showed
+**6 form starts, 6 form_error, 0 submits** (2026-08-23 to 2026-09-10). `ResultGateModal`
+passed `messageMinLength={40}` / `messageMinWords={8}` against estate defaults of 20/4,
+the only call site on the site that raised the floor, and `validateStep1` rejects before
+the contact step, so a submit was impossible. Both props dropped. Extending that component
+to ten more calculators without fixing it would have shipped a form that cannot be
+submitted to 18 surfaces.
+
+**What landed.** `ResultGate` extracted from `PremiumCalculator` as the wrapper both tiers
+use; `HeldResult` ported so the real figure sits behind frosted glass rather than a
+placeholder; per-calculator `sessionStorage` keys (`ma_calc_revealed_generic_<slug>` /
+`ma_calc_revealed_premium_<toolId>`) replacing `gateModalShownThisSession`, a single
+module-scope boolean that was the live "unlock one, unlock all" bug; `CalcResultCta`
+deleted. **The gate is wired at `CalculatorClient` and nowhere else**, which is what gates
+`/nhs-pension` as well as the ten calculator routes: a per-route gate would have left the
+site's flagship pillar open, which is exactly how the generalist port failed this phase.
+The four ids that exist in BOTH the generic and premium namespaces are why the keys and
+the lead payload are tier-prefixed.
+
+**Verified in a real browser by the reviewer, not asserted:** all four skip routes reveal;
+a revealed calculator stays revealed across navigation; revealing a generic calculator
+leaves its premium twin still gated; inputs stay editable while the result is held; the
+held state is in the pre-hydration HTML with no hydration warnings; `isConverted()` still
+exempts a visitor who has already enquired.
+
+**Copy, because the gate made a stated differentiator false.** Eight strings across seven
+files promised "no email gate" / "no sign-up" / "no email address required", including a
+homepage section headline and an indexed meta description. All rewritten to what is now
+true: the inputs are never blocked, the figure is never withheld, the site asks once per
+calculator, every ask is skippable in one click, embeds are never gated.
+
+**Turnaround promises removed estate-rule-wide**, eight surfaces, not the two the spec
+named: the homepage trust tile and contact block, `/contact` body AND its three metadata
+strings (description, openGraph, twitter, which a body-copy grep never sees), the lead
+form success message, the assistant widget, the support FAQ question and answer, and the
+in-article mini form. `service-tiers.ts` lost a "Responds within one working day" feature
+and its "1 day / Response time" stat, replaced by a derived locations count.
+
+**The resource form came off the calculator pages, decided on the numbers.** With a lead
+panel and a gate on the same page it would have been three asks. Its record: ONE lead in
+five months (Supabase `leads`, source=medical, `extras.resource_gate`, non-test), against
+25 Medical leads all time of which 22 came from `/contact`. Email delivery was never wired
+(`RESOURCE_EMAIL_DELIVERY_ENABLED = false`), so it collected an address before handing over
+a file it hands over anyway. The guide link and a direct workbook download stay. Two-line
+revert.
+
+**What the reviews caught that the instruments could not:**
+- `data-cta="see_result"` was deleted with the old reveal button. It is the busiest
+  interaction on the site (29 presses since 2026-07-06) and FUNNEL_BASELINE says in terms
+  not to remove it without a measurement plan. The premium tier now keeps `see_result`
+  verbatim and the generic fleet gets `calc_see_result`, so the 54% skip-rate baseline
+  stays comparable and the two fleets stay separable.
+- The ten generic calculators were getting the generic modal heading; `topicKey` is now
+  threaded from `topicForCalcSlug(slug)`.
+- A homepage trust tile claimed "eight specialisms". Nothing on this site counts to eight.
+  Replaced with the four `/for-*` audience pages, which is derivable by counting routes.
+- `/contact`'s search snippet still promised a 24-hour response after the visible copy was
+  fixed.
+- The kit `LeadCTAPanel` eyebrow and footnote measured 4.35 on its tinted ground, a
+  net-new AA failure on 11 routes. slate-500 to slate-600 on the light branch only.
+- Three calculators alias to another topic's resource record, so they offered a LOCUM
+  workbook under their own specialism heading. The guide link was already guarded on slug;
+  the workbook was not, because an XlsxAsset carries no slug. Guarded on its path.
+- **The flagship pillar's primary CTA measured 3.79.** `/nhs-pension` appended
+  `bg-[var(--copper)]` on top of `btnPrimary`, so two background utilities sat on one
+  element and the later one in the stylesheet won. Computed background read
+  rgb(184,115,51) while `--btn-ground` on the same element read #a0622b. One class removed.
+
+**Verification, re-run after the last change:** 138/138 URLs clean, 0 link-floor breaches
+(5,383 links), 0 data-cta regressions (606 total, up from 565 after phase 3), 0 dash
+regressions (7 site-wide). Build exit 0 at 162 pages. Medical 479 tests, web-shared 406.
+`tsc` clean on Medical, Solicitors, generalist and Dentists. Dependency closure OK across
+19 sites. Browser check at 390/768/1024/1440 leaves only the two documented instrument
+artifacts on `/nhs-pension` (white text over an absolutely-positioned overlay sibling, true
+ratio 11.24) and the honeypot label.
+
+**Noise generated: none.** Nothing pushed, no CI run, no deploy.
+
+**Owner gates from slice 2 still open and NOT taken in this phase:** M-C6 (nine of ten
+calculator configs carry no `workedExamples`), M-C7 (`/embed` mounts ten live iframes at
+once), M-C8 and M-C9 (the five location pages share three blog posts and need their own
+FAQs), M-C10 (16 stats on the `/for-*` strips need re-deriving against house_positions),
+M-C11 (`redirectOnSuccess` on the four `/for-*` pages), M-C12 (seven `/medical-guides`
+routes emit no page-level structured data).
+
+---
 
 ## 2026-09-11 - DESIGN PORT PHASE 3 (the blog subsystem). Built, reviewed twice, fixed, re-reviewed FAIL, fixed again. Nothing deployed.
 

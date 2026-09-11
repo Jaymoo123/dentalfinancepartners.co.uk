@@ -130,7 +130,7 @@ const data: AudienceStage = {
     {
       href: "/calculators/private-practice-incorporation",
       name: "Private Practice Incorporation Calculator",
-      desc: "Compare sole trader vs limited company net take-home on your private practice income. Instant, no sign-up.",
+      desc: "Compare sole trader vs limited company net take-home on your private practice income. Instant, and free to use.",
     },
   ],
   relatedGuides: [

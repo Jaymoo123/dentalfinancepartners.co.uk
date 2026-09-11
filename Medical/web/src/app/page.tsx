@@ -172,14 +172,24 @@ const trustItems = [
     body: "No general practice clients from outside medicine. Every enquiry that comes through this site is from a GP, consultant, locum, junior doctor or a practice, which is why the same NHS Pension and partnership questions get answered rather than researched.",
   },
   {
-    title: "Free calculators, no email gate",
+    title: "Free calculators, figure on the page",
     stat: "10",
-    body: "Ten medical tax calculators covering NHS Pension annual allowance, tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings and the incorporation comparison. No sign-up, no email required.",
+    body: "Ten medical tax calculators covering NHS Pension annual allowance, tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings and the incorporation comparison. We ask once whether a specialist should confirm your figure, and you can skip that and still see it.",
   },
   {
-    title: "Answered by a working day",
-    stat: "1 day",
-    body: "Enquiries sent through this site get a reply within one working day, and the first conversation is a scoping call rather than a sales call.",
+    /* No turnaround promise here, and none anywhere else on the site: it is a
+       locked estate rule, and this one was also the wrong claim to make, because
+       the reply comes from the partner firm rather than from us. The tile keeps
+       the useful half, which is what the first conversation actually is. */
+    title: "Matched to how you are paid",
+    /* The stat is the number of /for-* audience pages this site actually
+       publishes, which is the claim the tile makes: four ways of being paid as
+       a doctor, each with its own page. An earlier draft said "8 specialisms",
+       which nothing on this site counts to, and an adversarial review was right
+       to call it invented. Every sibling tile's number is derivable: 100% is
+       the medical-only claim, 10 is the calculator fleet. */
+    stat: "4",
+    body: "GPs, hospital consultants, locum doctors and junior doctors each have their own page here, because each is paid differently and taxed differently. Your enquiry goes to a firm from a specialist partner network, matched to which of those you are, and the first conversation is about whether they can help.",
   },
 ];
 
@@ -544,9 +554,8 @@ export default function HomePage() {
                   </Link>
                 ) : null}
               </div>
-              <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
-              <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Prefer to write? Use the form and one of our medical accountants will come back to you, usually the same working day.
+                            <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+                Prefer to write? Use the form and we will match your enquiry to a specialist firm from the partner network, who will come back to you directly.
               </p>
             </div>
             ) : (
@@ -566,8 +575,7 @@ export default function HomePage() {
                   Contact us
                 </Link>
               </div>
-              <p className="mt-10 text-sm font-medium text-[var(--ink)]">We respond within one working day.</p>
-              <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+                            <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
                 Fill in the form and a medical accountant will be in touch to arrange a short introductory call. No hard sell, just a conversation about your situation and whether this is the right fit.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">

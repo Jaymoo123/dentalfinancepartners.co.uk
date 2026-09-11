@@ -9,6 +9,9 @@ import { CalculatorClient } from "@/components/tools/CalculatorClient";
 import { getGenericTool, allTools } from "@/lib/tools/registry";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { humaniseKey, formatValue } from "@/lib/worked-example-format";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
 import Link from "next/link";
 
 export const dynamicParams = false;
@@ -65,8 +68,9 @@ export default async function CalculatorPage({
     <>
       <JsonLd data={faqSchema ? [webApp, faqSchema] : [webApp]} />
 
-      <section className="bg-[var(--navy)] py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-[var(--navy)] py-12 sm:py-16">
+        <MedicalBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             variant="light"
             items={[
@@ -82,6 +86,15 @@ export default async function CalculatorPage({
             </div>
             <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">{tool.name}</h1>
             <p className="mt-4 text-lg text-white/80 leading-relaxed">{tool.intro}</p>
+            <a
+              href="#get-expert-help"
+              className="mt-6 inline-block border-b-4 border-[var(--copper-strong)] bg-[var(--copper)] px-8 py-3 text-base font-bold text-white transition-all hover:opacity-90"
+              data-cta="calc_hero_help"
+              data-cta-goal="form"
+              data-cta-placement="calculator_hero"
+            >
+              Ask a medical accountant about your figure
+            </a>
           </div>
         </div>
       </section>
@@ -164,31 +177,72 @@ export default async function CalculatorPage({
               </section>
             )}
 
-            <div className="mt-12 bg-[var(--navy)] p-8 sm:p-10 text-white">
-              <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                Need help interpreting your results?
-              </h2>
-              <p className="mt-3 text-base sm:text-lg text-white/80 leading-relaxed">
-                These calculators provide simplified estimates based on standard rates. Your actual position depends on your NHS pension position, carry-forward entitlement, IR35 status, and income from all sources. We model the full picture as part of our advisory work.
-              </p>
-              {/* Per-route cta id, never a shared one: vw_cta_performance groups
-                  without page_path, so a reused id silently merges all ten
-                  calculators into one uninterpretable row (rollout doc trap 6).
-                  Same pattern as calculators/page.tsx (calculator-gallery-<slug>).
-                  Split from the shared "calculator-page-cta" on 2026-08-26. */}
-              <Link
-                href="/contact"
-                className="mt-6 inline-block bg-[var(--copper)] border-b-4 border-[var(--copper-strong)] px-8 py-3 text-base font-bold text-white hover:opacity-90 transition-all"
-                data-cta={`calculator-page-cta-${slug}`}
-                data-cta-goal="form"
-                data-cta-placement="calculator"
-              >
-                {tool.ctaLabel ?? "Book a free consultation"}
-              </Link>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* NET-NEW: `tool.related` shipped as dead data until now. Six of the ten
+          configs carry it; the four without render nothing. Plain links, not
+          cards: 12 of the 15 entries point at another calculator, and a
+          calculator is never a card (rollout §0.4). Hrefs are authored flat
+          (`/blog/<slug>`), which is this site's blog URL shape. */}
+      {tool.related && tool.related.length > 0 && (
+        <section className="bg-slate-50 py-12 sm:py-16">
+          <div className={siteContainerLg}>
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Related tools and reading</h2>
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+              {tool.related.map((r) => (
+                <li key={r.href}>
+                  <Link
+                    href={r.href}
+                    className="block rounded-xl bg-white px-5 py-4 text-base font-semibold text-slate-900 ring-1 ring-slate-200 transition-all hover:text-[var(--copper-strong)] hover:ring-[var(--copper)]"
+                    data-cta={`calculator-related-${slug}`}
+                    data-cta-placement="calculator_related"
+                  >
+                    {r.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {/* Per-route cta id, never a shared one: vw_cta_performance groups
+          without page_path, so a reused id silently merges all ten
+          calculators into one uninterpretable row (rollout doc trap 6).
+          Same pattern as calculators/page.tsx (calculator-gallery-<slug>).
+          Split from the shared "calculator-page-cta" on 2026-08-26. The id and
+          both data-cta-* values are carried verbatim off the retired navy box;
+          autoCapture resolves them with closest("[data-cta]"), so the wrapper
+          tags every click inside the panel, submit included.
+          `contained` because nothing follows this panel but the navy footer. */}
+      <div
+        id="get-expert-help"
+        className="scroll-mt-24"
+        data-cta={`calculator-page-cta-${slug}`}
+        data-cta-goal="form"
+        data-cta-placement="calculator"
+      >
+        <LeadCTAPanel
+          contained
+          ground={tool.related && tool.related.length > 0 ? "white" : "slate"}
+          title="Need help interpreting your result?"
+          description="These calculators give a simplified estimate on standard rates. Your actual position depends on your NHS pension record, carry-forward entitlement, IR35 status and income from all sources. Send your position and we will match you with a firm that reads the full picture."
+          proofPoints={MEDICAL_PROOF_POINTS}
+          formTitle={tool.ctaLabel ?? "Book a free consultation"}
+          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
+        />
+      </div>
     </>
   );
 }
+
+/** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no
+ *  client count, and nothing that implies an in-house team does the work. */
+const MEDICAL_PROOF_POINTS = [
+  { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
+  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "One position, not three", detail: "Practice, pension and personal return read together" },
+];

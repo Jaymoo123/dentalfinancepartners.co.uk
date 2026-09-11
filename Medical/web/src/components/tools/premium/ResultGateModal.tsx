@@ -3,13 +3,15 @@
 /**
  * Result-gate interstitial for the Medical Accountants UK premium calculator tier.
  *
- * Shown at most once per session when a reader presses "See your result" on an
- * in-blog premium calculator. Offers a qualified capture before revealing the
+ * Shown when a reader presses "See my result" on a gated calculator, generic or
+ * premium. ResultGate owns when that is: once per calculator, with the reveal
+ * remembered per calculator in sessionStorage. Offers a qualified capture before revealing the
  * figure, with an always-present escape so the result is NEVER walled off:
  *   - Submitting the form reveals the result and marks the visitor converted.
  *   - Closing any way (X button, "No thanks" link, backdrop click, Esc key)
  *     reveals the result without capture.
- *   - This gate is in-blog only; calculator-page and embed placements never gate.
+ *   - Embeds never gate. Premium gates in-blog only; the generic fleet gates on
+ *     every page surface, including the /nhs-pension pillar.
  *
  * TOKEN DISCIPLINE: Medical uses navy #001b3d + copper #b87333. Tokens:
  *   - var(--gold): accent border on the modal card (alias -> copper)
@@ -21,7 +23,9 @@
  * Three non-negotiables (Section 4 of the brief):
  *   1. Escape hatch ALWAYS reveals (X, backdrop click, Esc, "No thanks" link).
  *   2. isConverted() visitors are NEVER gated (checked by PremiumCalculator).
- *   3. Once per session (module-level flag in PremiumCalculator).
+ *   3. Asked once per calculator (per-calculator sessionStorage key, in ResultGate).
+ *      Message floors are the estate defaults (20 chars / 4 words, capture-steps.ts);
+ *      this call site previously raised them to 40/8 and no submit was possible.
  *
  * topicKey is threaded as a PROP (never re-derived from the URL).
  *
@@ -37,11 +41,14 @@ import { MiniCapture } from "@/components/forms/MiniCapture";
 
 export function ResultGateModal({
   campaign,
+  tier = "premium",
   topicKey = null,
   onReveal,
 }: {
   /** Calculator id (toolId), for the lead message + the skip diagnostic. */
   campaign: string;
+  /** "generic" or "premium"; only used to disambiguate the lead payload. */
+  tier?: "generic" | "premium";
   /** Resolved intent topic, threaded down from PremiumUpgrade (never re-derived from the URL). */
   topicKey?: TopicKey | null;
   /** Reveal the result + close the gate. Called on submit and on every dismiss. */
@@ -120,18 +127,21 @@ export function ResultGateModal({
 
         <MiniCapture
           formId="calc_result_gate"
-          messagePrefix={`[Result gate: ${campaign}]`}
+          /* The tier is in the prefix because four ids are BOTH a generic slug
+             and a premium tool id, so without it two leads from two different
+             calculators arrive indistinguishable in the leads table. The
+             sessionStorage keys were namespaced for the same reason; the lead
+             payload was not, until a review caught it. */
+          messagePrefix={`[Result gate: ${tier}/${campaign}]`}
           heading={
             topic?.ctaCopy ||
             "Want a specialist to check your figure?"
           }
           blurb="A calculator gives the shape of the answer. NHS pensions, the annual allowance taper and private-practice incorporation are unforgiving in the detail. Tell us your situation and a specialist medical accountant will confirm your exact figure and the sensible next step, with no obligation."
           submitLabel="Get my figure confirmed"
-          successText="Thanks, we will be in touch within one working day. Your result is below."
+          successText="Thanks. We will match you with a specialist medical accountant from our partner network, who will contact you about your figure. Your result is below."
           className="mt-2"
           messagePlaceholder="The more detail the better. Tell us about your NHS pension situation or private practice, rough figures, and what you are trying to work out. A couple of sentences is ideal."
-          messageMinLength={40}
-          messageMinWords={8}
           onSuccess={onReveal}
         />
 

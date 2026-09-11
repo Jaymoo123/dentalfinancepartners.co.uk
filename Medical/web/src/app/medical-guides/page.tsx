@@ -119,7 +119,7 @@ export default function MedicalGuidesPage() {
               Free calculators for UK doctors
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
-              Use alongside the guides to estimate your numbers. Instant results, no email required.
+              Use alongside the guides to estimate your numbers. The figure appears on the page, and the one ask before it is skippable.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
               {[

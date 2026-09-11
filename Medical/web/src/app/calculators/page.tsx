@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Calculator, ArrowRight } from "lucide-react";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/tools/registry";
 
@@ -15,7 +18,7 @@ import { allTools } from "@/lib/tools/registry";
 export const metadata: Metadata = {
   title: "NHS Pension Annual Allowance Calculator & Doctor Tax Calculators",
   description:
-    "Ten free calculators for UK doctors: NHS Pension annual allowance and tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings, salaried GP versus partner, and incorporation. 2026/27 rates, no sign-up.",
+    "Ten free calculators for UK doctors: NHS Pension annual allowance and tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings, salaried GP versus partner, and incorporation. 2026/27 rates, free to use.",
   alternates: { canonical: `${siteConfig.url}/calculators` },
   openGraph: {
     title: "NHS Pension Annual Allowance Calculator & Doctor Tax Calculators",
@@ -32,8 +35,9 @@ export default function CalculatorsIndexPage() {
 
   return (
     <>
-      <section className="bg-[var(--navy)] py-16 sm:py-20">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-[var(--navy)] py-16 sm:py-20">
+        <MedicalBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[var(--copper)] px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <Calculator className="h-3.5 w-3.5" />
@@ -46,8 +50,8 @@ export default function CalculatorsIndexPage() {
               Ten free calculators for UK doctors, all on 2026/27 rates. Work out your NHS Pension annual allowance and
               whether the taper applies, model a Scheme Pays election, check your tiered superannuation contribution,
               estimate locum tax, plan GP partner drawings, compare salaried GP against partner, and test whether
-              incorporating private practice is worth the pension accrual it costs. No email gate and no sign-up: every
-              calculator gives you the figure on the page.
+              incorporating private practice is worth the pension accrual it costs. Free to use and nothing is withheld:
+              we ask once before showing a result, and skipping the ask reveals the figure straight away.
             </p>
           </div>
         </div>
@@ -79,6 +83,33 @@ export default function CalculatorsIndexPage() {
           </div>
         </div>
       </section>
+
+      {/* Per-route cta id: vw_cta_performance groups without page_path, so a
+          shared id would merge this panel with the ten calculator pages. */}
+      <div
+        id="get-expert-help"
+        className="scroll-mt-24"
+        data-cta="calc_index_help"
+        data-cta-goal="form"
+        data-cta-placement="calculator_index"
+      >
+        <LeadCTAPanel
+          contained
+          title="Not sure which figure applies to you?"
+          description="Send your position and we will match you with a firm that works with doctors every day. They read your NHS pension, your practice position and your personal return together."
+          proofPoints={MEDICAL_PROOF_POINTS}
+          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
+        />
+      </div>
     </>
   );
 }
+
+/** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no
+ *  client count, and nothing that implies an in-house team does the work. */
+const MEDICAL_PROOF_POINTS = [
+  { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
+  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "One position, not three", detail: "Practice, pension and personal return read together" },
+];

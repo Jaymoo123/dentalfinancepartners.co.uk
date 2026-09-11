@@ -10,18 +10,18 @@ import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config"
 
 export const metadata: Metadata = {
   title: { absolute: "Contact Medical Accountants UK | Speak to a Specialist" },
-  description: `Contact ${siteConfig.name} for GP accounting and medical tax enquiries. NHS pension planning, locum tax, private practice advice. 24-hour response.`,
+  description: `Contact ${siteConfig.name} for GP accounting and medical tax enquiries. NHS pension planning, locum tax, private practice advice, matched to a specialist firm.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: "Contact Medical Accountants UK | Speak to a Specialist",
-    description: "Book free consultation for GP accounting and medical tax advice. 24-hour response time.",
+    description: "Book a free consultation on GP accounting and medical tax. We match your enquiry to a firm that works with doctors every day.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Medical Accountants UK | Speak to a Specialist",
-    description: "Book free consultation for GP accounting and medical tax advice. 24-hour response time.",
+    description: "Book a free consultation on GP accounting and medical tax. We match your enquiry to a firm that works with doctors every day.",
   },
 };
 
@@ -68,15 +68,17 @@ export default function ContactPage() {
             <h2 className="text-lg font-bold text-[var(--ink)]">Get in touch</h2>
             <dl className="mt-6 space-y-5 text-sm">
               <div>
+                {/* No turnaround promise, and no "we will respond": the reply comes
+                    from the matched partner firm, not from us. Both are locked
+                    estate rules and the Response time row that used to sit beside
+                    this one went with the same edit. /contact is rewritten in full
+                    to the partner-network truth in a later phase (owner decision 5);
+                    this is the promise coming out now rather than shipping again. */}
                 <dt className="font-medium text-[var(--ink)]">Enquiries</dt>
                 <dd className="mt-2 text-[var(--ink-soft)]">
-                  Use the form to get in touch and we will respond by phone or email within one working day.
-                </dd>
-              </div>
-              <div>
-                <dt className="font-medium text-[var(--ink)]">Response time</dt>
-                <dd className="mt-2 text-[var(--ink-soft)]">
-                  Within 24 hours, typically same working day
+                  Use the form to get in touch. We read what you send, match it to a
+                  firm from our specialist partner network, and that firm contacts you
+                  by phone or email.
                 </dd>
               </div>
             </dl>
@@ -87,7 +89,7 @@ export default function ContactPage() {
             <ul className="mt-4 space-y-3 text-sm text-[var(--ink-soft)]">
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--coral)] text-xs font-bold text-white">1</span>
-                <span>We'll review your enquiry and respond within 24 hours</span>
+                <span>We read your enquiry and match it to a firm from our specialist partner network</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[var(--coral)] text-xs font-bold text-white">2</span>

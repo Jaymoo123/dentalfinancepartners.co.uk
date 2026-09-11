@@ -212,7 +212,13 @@ export default function NHSPensionPage() {
               Two routes add to an NHS pension: Added Pension, which buys extra defined benefit accrual inside the scheme, and Money Purchase AVCs, a separate defined contribution pot. Both attract income tax relief, and both count towards your £60,000 annual allowance for 2026/27. For a hospital consultant or GP partner already inside the taper, buying more can cost more than it saves.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact" className={`${btnPrimary} bg-[var(--copper)] border-[var(--copper-strong)] text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}>
+              <Link href="/contact" /* No bg override here. btnPrimary already paints --btn-ground (#a0622b,
+                  white label 4.91); appending bg-[var(--copper)] put a SECOND background
+                  utility on the same element, the later one in the stylesheet won, and
+                  the site's flagship pillar shipped its primary CTA at 3.79 against a
+                  4.5 floor. Measured, not guessed: computed background was
+                  rgb(184,115,51) while --btn-ground on the same element read #a0622b. */
+                className={`${btnPrimary} text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}>
                 Book pension planning review
               </Link>
               <Link href="#calculator" className={`${btnSecondary} bg-white/10 border-white text-white hover:bg-white/20 text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}>

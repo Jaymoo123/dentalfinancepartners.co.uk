@@ -36,7 +36,13 @@ export function Eyebrow({ children, onDark = false }: { children: ReactNode; onD
   return (
     <p
       className={`mb-3 flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-wide sm:text-xs ${
-        onDark ? "text-slate-300" : "text-slate-500"
+        /* slate-600, not slate-500, on light grounds: this eyebrow renders on
+           the LeadCTAPanel's tinted panel as well as on white, and slate-500
+           measures 4.35 there against a 4.5 floor. slate-600 clears it on both.
+           The onDark branch is untouched, because darkening a neutral for light
+           grounds is what made four breadcrumbs worse on navy in an earlier
+           phase of this programme. */
+        onDark ? "text-slate-300" : "text-slate-600"
       }`}
     >
       <EyebrowRule onDark={onDark} />
