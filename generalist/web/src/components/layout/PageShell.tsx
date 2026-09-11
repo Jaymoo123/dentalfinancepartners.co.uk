@@ -70,10 +70,10 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
         backdrop: <GeneralistBackdrop tone="navy" />,
         consentToggle: <ConsentToggle className="inline-block py-1 text-xs text-slate-400 underline hover:text-white hover:no-underline" />,
         resourcesHref: "/fundamentals",
-        // The kit footer credits the studio that designed PROPERTY, as a
-        // followed outbound link on every page. This site never carried it
-        // before its port and the studio did not design it.
-        showBuilderCredit: false,
+        // Owner decision 2026-09-11: the studio credit appears estate-wide,
+        // not only on the site they designed. Followed outbound link; this site
+        // did not carry one pre-port.
+        showBuilderCredit: true,
         // No /book route here, and a second /contact entry would collide with
         // the Contact link's key; /services lives here so the route keeps its
         // footer presence now that footer_links is legal-only.

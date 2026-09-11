@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
-import type { ComponentType } from "react";
+import type { ComponentType, CSSProperties } from "react";
 import { btnPrimary, focusRing, siteContainerXl } from "../layout-utils";
 import type { NavItem } from "./nav";
 
@@ -15,6 +15,8 @@ export type WordmarkIcon = ComponentType<{
   className?: string;
   strokeWidth?: number;
   "aria-hidden"?: boolean;
+  /** Optional, so a caller can colour the mark off-ramp (`wordmarkAccentColor`). */
+  style?: CSSProperties;
 }>;
 
 export type NavCta = { label: string; href: string };
@@ -88,6 +90,17 @@ export type SiteHeaderProps = {
   wordmarkTop: string;
   /** Replaces `BrandWordmarkHomeLink`'s `WORDMARK_BOTTOM` constant. */
   wordmarkBottom: string;
+  /**
+   * Optional CSS colour for the light-header wordmark's icon and rule. Default
+   * undefined keeps the `primary-600` ramp step, which is what both consumers
+   * rendered before this prop existed. A site whose brand hex is NOT a ramp
+   * step passes it here (Solicitors: the brand crimson sits between rose-600
+   * and rose-700, so the ramp step and the button ground were two visibly
+   * different reds in the same header). The footer lockup is deliberately NOT
+   * covered: it sits on slate-900, where a mid-tone brand hex fails contrast
+   * and the `primary-400` step is the correct on-dark colour.
+   */
+  wordmarkAccentColor?: string;
 };
 
 /**
@@ -98,7 +111,17 @@ export type SiteHeaderProps = {
  * that's the only markup reproduced here. SiteFooter carries its own
  * footer-size rendering of the same `wordmarkIcon`/`wordmarkTop`/`wordmarkBottom`.
  */
-function Wordmark({ icon: Icon, top, bottom }: { icon: WordmarkIcon; top: string; bottom: string }) {
+function Wordmark({
+  icon: Icon,
+  top,
+  bottom,
+  accentColor,
+}: {
+  icon: WordmarkIcon;
+  top: string;
+  bottom: string;
+  accentColor?: string;
+}) {
   const homeLabel = `${top} ${bottom}, home`;
   return (
     <Link
@@ -107,12 +130,21 @@ function Wordmark({ icon: Icon, top, bottom }: { icon: WordmarkIcon; top: string
       title={homeLabel}
       className={`group flex min-w-0 items-center gap-2 leading-none ${focusRing} rounded-xl px-1 py-0.5 max-w-[13rem] sm:max-w-none`}
     >
-      <Icon aria-hidden strokeWidth={2.25} className="logo-house h-5 w-5 shrink-0 text-primary-600 sm:h-6 sm:w-6" />
+      <Icon
+        aria-hidden
+        strokeWidth={2.25}
+        className="logo-house h-5 w-5 shrink-0 text-primary-600 sm:h-6 sm:w-6"
+        style={accentColor ? { color: accentColor } : undefined}
+      />
       <span className="flex min-w-0 flex-col leading-none">
         <span className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-slate-900 sm:text-xs sm:tracking-[0.2em]">
           {top}
         </span>
-        <span aria-hidden className="mt-0.5 h-0.5 w-full bg-primary-600" />
+        <span
+          aria-hidden
+          className="mt-0.5 h-0.5 w-full bg-primary-600"
+          style={accentColor ? { backgroundColor: accentColor } : undefined}
+        />
         <span className="pt-1 text-[0.6rem] font-bold uppercase tracking-[0.32em] text-slate-900 sm:text-[0.65rem] sm:tracking-[0.38em]">
           {bottom}
         </span>
@@ -314,6 +346,7 @@ export function SiteHeader({
   wordmarkIcon,
   wordmarkTop,
   wordmarkBottom,
+  wordmarkAccentColor,
 }: SiteHeaderProps) {
   const cta = { ...DEFAULT_CTA_IDS, ...ctaIds };
   // Falls back to the caller-supplied fallbackNav so the header still renders
@@ -353,7 +386,12 @@ export function SiteHeader({
       <div
         className={`${siteContainerXl} flex min-h-[3.25rem] items-center justify-between gap-3 py-3 sm:min-h-16 sm:gap-4`}
       >
-        <Wordmark icon={wordmarkIcon} top={wordmarkTop} bottom={wordmarkBottom} />
+        <Wordmark
+          icon={wordmarkIcon}
+          top={wordmarkTop}
+          bottom={wordmarkBottom}
+          accentColor={wordmarkAccentColor}
+        />
 
         {/*
          * The header_secondary CTA below renders the same label and href as a top-level
@@ -481,7 +519,12 @@ export function SiteHeader({
                   <MenuIcon open />
                 </button>
               </div>
-              <Wordmark icon={wordmarkIcon} top={wordmarkTop} bottom={wordmarkBottom} />
+              <Wordmark
+          icon={wordmarkIcon}
+          top={wordmarkTop}
+          bottom={wordmarkBottom}
+          accentColor={wordmarkAccentColor}
+        />
             </div>
             <nav aria-label="Mobile" className="flex flex-1 flex-col gap-1 overflow-y-auto p-3">
               {navItems.map((item) => {

@@ -354,9 +354,18 @@ Before starting a site, capture and put in the prompts:
       the three to miss, because the drawer renders only when open and therefore no
       SSR crawl and no page-source review will ever see it. Read the shipped client
       bundle.
-    - `SiteFooter.showBuilderCredit` — pass `false`. Default is `true`, which puts
-      Property's designer credit, a followed outbound link, on every page of the ported
-      site.
+    - `SiteFooter.showBuilderCredit` — OWNER DECISION 2026-09-11 REVERSED THIS: the
+      studio credit now appears estate-wide, on every ported site, not only the one the
+      studio designed. Both consumers pass `true`. The default was already `true`, so a
+      new port that passes nothing is correct; do not re-introduce a `false` "fix".
+    - `SiteHeader.wordmarkAccentColor` (added 2026-09-11) — optional CSS colour for the
+      LIGHT header wordmark's icon and rule. Default undefined keeps `primary-600`, which
+      is what both consumers rendered before the prop existed. Pass it when the site's
+      brand hex is not a ramp step, or the header shows two different versions of the
+      brand colour: Solicitors' crimson `#c41e3a` sits between rose-600 and rose-700, so
+      the kit wordmark and the CTA were visibly different reds. The FOOTER lockup is
+      deliberately out of scope: it sits on slate-900 where a mid-tone brand hex fails
+      contrast and the `primary-400` step is correct.
     **Who actually consumes this component, corrected 2026-09-10:** the kit CHROME is
     imported by the ported sites only (generalist, Solicitors, and Medical when it
     lands). **Property is NOT a consumer**: it keeps its own local `SiteHeader` and

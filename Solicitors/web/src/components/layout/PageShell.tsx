@@ -20,6 +20,13 @@ const wordmark = {
   wordmarkIcon: Scale,
   wordmarkTop: WORDMARK_TOP,
   wordmarkBottom: WORDMARK_BOTTOM,
+  // Owner decision 2026-09-11: one red in the header. The kit's light wordmark
+  // defaults to the primary-600 ramp step (rose-600 #e11d48), which sat beside
+  // the brand crimson #c41e3a on the CTA as a visibly different red. The brand
+  // hex measures 5.84 on white, well past the 3:1 graphics floor. The footer
+  // lockup is untouched: on slate-900 the brand hex is 2.50 and rose-400 is
+  // the correct on-dark step (DESIGN_DELTA section 1, wordmark row).
+  wordmarkAccentColor: "var(--brand-primary)",
 };
 
 /**
@@ -88,11 +95,10 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
             { label: "Locations", href: "/locations" },
             { label: "Free firm health check", href: "/free-firm-health-check" },
           ],
-          // The kit footer credits the studio that designed PROPERTY, as a
-          // followed outbound link on every page. They did not design this site,
-          // and the credit's indigo/orange gradient belongs to no palette here.
-          // Property keeps it by default; this site opts out.
-          showBuilderCredit: false,
+          // Owner decision 2026-09-11: the studio credit appears estate-wide,
+          // not only on the site they designed. Followed outbound link, rendered
+          // in the studio's own indigo/orange gradient rather than this palette.
+          showBuilderCredit: true,
         }}
       >
         {children}
