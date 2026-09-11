@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { CTASection } from "@/components/ui/CTASection";
-import { btnPrimary, sectionY, siteContainerLg } from "@/components/ui/layout-utils";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
+import {
+  btnOnDark,
+  btnPrimary,
+  btnSecondary,
+  sectionY,
+  sectionYLoose,
+  siteContainerLg,
+} from "@/components/ui/layout-utils";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { TopicSection } from "@accounting-network/web-shared/design/marketing/TopicSection";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -76,131 +86,144 @@ const commonIssues = [
 export default function SRACompliancePage() {
   return (
     <>
-      <section
-        className={sectionY}
-        style={{
-          background: "linear-gradient(135deg, rgba(196, 30, 58, 0.75) 0%, rgba(160, 24, 41, 0.80) 100%), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070') center/cover",
-          color: "white",
-        }}
-      >
-        <div className={siteContainerLg}>
+      {/* Navy motif hero replaces the crimson-over-stock-photo gradient. The
+          brand hex measures 3.06 on slate-900, so nothing here is brand-tinted
+          text; the breadcrumb takes the light variant and its items are
+          byte-unchanged, so the BreadcrumbList JSON-LD is untouched. */}
+      <section className="relative overflow-hidden bg-slate-900">
+        <div className={`${siteContainerLg} ${sectionYLoose} relative z-10`}>
           <Breadcrumb
             items={[{ label: "SRA Compliance", href: "/sra-compliance" }]}
+            variant="light"
           />
 
-          <div className="mx-auto mt-8 max-w-3xl text-center">
-            <h1 className="font-serif text-4xl font-bold leading-tight md:text-5xl">
+          <div className="mt-8 max-w-3xl">
+            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-5xl">
               SRA Accounts Rules compliance and trust accounting
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-white/90">
+            <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
               Expert client money management, trust accounting, and SRA compliance for solicitors and law firms. We ensure your client accounts meet regulatory standards and protect your practicing certificate.
             </p>
-            <div className="mt-10">
-              <Link href="/contact" className={btnPrimary} style={{ background: "white", borderColor: "white", color: "var(--primary)" }}>
+            <div className="mt-8">
+              <Link href="/contact" className={btnOnDark}>
                 Book free compliance review
               </Link>
             </div>
           </div>
         </div>
+        <SolicitorsBackdrop tone="navy" />
       </section>
 
-      <section className={sectionY}>
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              The challenge
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-              SRA compliance is getting harder
-            </h2>
-            <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
-              26.2% of SRA firm closures in 2024-25 were due to accounting breaches—up from 18.6% the previous year. With heightened regulatory scrutiny and increasingly complex Accounts Rules, you need specialist accountants who understand SRA compliance as well as you do.
-            </p>
-          </div>
+      {/* The six service tiles are this band's visual: they re-present the
+          compliance work the standfirst above names, and invent no words.
+          Slate tiles oppose the white section ground. */}
+      <TopicSection
+        id="the-challenge"
+        eyebrow="The challenge"
+        title="SRA compliance is getting harder"
+        tone="white"
+        figure={
+          <ul className="mt-8 grid list-none gap-6 pl-0 md:grid-cols-2 lg:grid-cols-3">
+            {complianceAreas.map((area) => (
+              <li key={area.title} className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
+                <h3 className="text-lg font-bold text-slate-900">{area.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-700">{area.description}</p>
+              </li>
+            ))}
+          </ul>
+        }
+      >
+        <p>
+          26.2% of SRA firm closures in 2024-25 were due to accounting breaches—up from 18.6% the previous year. With heightened regulatory scrutiny and increasingly complex Accounts Rules, you need specialist accountants who understand SRA compliance as well as you do.
+        </p>
+      </TopicSection>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {complianceAreas.map((area, i) => (
-              <div key={i} className="card-premium">
-                <h3 className="text-lg font-semibold text-[var(--primary)]">{area.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
-                  {area.description}
+      {/* White cards on the slate ground. The impact line is direct-labelled
+          ("Impact:"), so nothing rests on hue; violet-700 measures 7.10 on
+          white and keeps the escalation reading without colliding with the
+          crimson brand. */}
+      <TopicSection
+        id="common-issues"
+        eyebrow="Common issues"
+        title="What we help you avoid"
+        tone="slate"
+        figure={
+          <ul className="mt-8 grid list-none gap-6 pl-0">
+            {commonIssues.map((issue) => (
+              <li key={issue.title} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70">
+                <h3 className="text-lg font-bold text-slate-900">{issue.title}</h3>
+                <p className="mt-2 text-sm font-semibold text-violet-700">Impact: {issue.impact}</p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-700">
+                  <strong className="text-slate-900">Our solution:</strong> {issue.solution}
                 </p>
-              </div>
+              </li>
             ))}
-          </div>
-        </div>
-      </section>
+          </ul>
+        }
+      >
+        <p>
+          These are the most common SRA compliance issues we see when solicitors come to us from generalist accountants:
+        </p>
+      </TopicSection>
 
-      <section className={sectionY} style={{ background: "var(--surface-elevated)" }}>
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Common issues
+      <TopicSection
+        id="get-started"
+        eyebrow="Get started"
+        title="Book your free compliance review"
+        tone="white"
+        figure={
+          <div className="mt-8 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+            <h3 className="text-lg font-bold text-slate-900">Free SRA compliance review</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              We'll review your current client money procedures and identify any compliance gaps—no obligation, no charge.
             </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-              What we help you avoid
-            </h2>
-            <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
-              These are the most common SRA compliance issues we see when solicitors come to us from generalist accountants:
-            </p>
-          </div>
-
-          <div className="mx-auto mt-12 max-w-4xl space-y-6">
-            {commonIssues.map((issue, i) => (
-              <div key={i} className="card-premium">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-[var(--primary)]">{issue.title}</h3>
-                    <p className="mt-2 text-sm font-medium text-red-600">
-                      Impact: {issue.impact}
-                    </p>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
-                      <strong className="text-[var(--primary)]">Our solution:</strong> {issue.solution}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className={sectionY}>
-        <div className={siteContainerLg}>
-          <div className="mx-auto max-w-3xl">
-            <div className="text-center">
-              <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-                Get started
-              </p>
-              <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl">
-                Book your free compliance review
-              </h2>
-              <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
-                Whether you're concerned about SRA compliance, need help with client account reconciliations, or want to ensure your trust accounting is correct, we're here to help. Fill in the form below and we'll arrange a short introductory call.
-              </p>
-            </div>
-
-            <div className="mx-auto mt-10 max-w-2xl rounded-xl border border-[var(--border)] bg-white p-8 shadow-sm">
-              <h3 className="text-center text-xl font-semibold text-[var(--primary)]">
-                Free SRA compliance review
-              </h3>
-              <p className="mt-2 text-center text-sm text-[var(--ink-soft)]">
-                We'll review your current client money procedures and identify any compliance gaps—no obligation, no charge.
-              </p>
-              <div className="mt-6">
-                <Link href="/contact" className={btnPrimary + " w-full"}>
-                  Request compliance review
-                </Link>
-              </div>
+            <div className="mt-6">
+              <Link href="/contact" className={btnPrimary}>
+                Request compliance review
+              </Link>
             </div>
           </div>
-        </div>
-      </section>
+        }
+      >
+        <p>
+          Whether you're concerned about SRA compliance, need help with client account reconciliations, or want to ensure your trust accounting is correct, we're here to help. Fill in the form below and we'll arrange a short introductory call.
+        </p>
+      </TopicSection>
 
-      <CTASection 
-        title="Ensure your SRA compliance is watertight"
-        description="Book a free compliance review to identify any gaps in your client money procedures."
-      />
+      {/* One closing ask. The retired CTASection's two links survive verbatim as
+          the panel footnote so `cta-section-primary` and `cta-section-secondary`
+          keep their ids, labels and hrefs and no live series forks. Contained on
+          slate, so a navy panel never touches the navy footer. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          eyebrow=""
+          formTitle=""
+          title="Ensure your SRA compliance is watertight"
+          description="Book a free compliance review to identify any gaps in your client money procedures."
+          proofPoints={[]}
+          form={<LeadForm redirectOnSuccess={false} />}
+          footnote={
+            <span className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link
+                href="/contact"
+                className={`${btnPrimary} w-full min-w-0 sm:w-auto`}
+                data-cta="cta-section-primary"
+              >
+                Speak to a specialist
+              </Link>
+              <Link
+                href="/services"
+                className={`${btnSecondary} w-full min-w-0 sm:w-auto`}
+                data-cta="cta-section-secondary"
+              >
+                View services
+              </Link>
+            </span>
+          }
+        />
+      </div>
     </>
   );
 }

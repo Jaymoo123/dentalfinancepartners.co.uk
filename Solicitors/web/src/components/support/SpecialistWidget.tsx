@@ -15,8 +15,10 @@
  * re-tailors each time, and fires instantly on exit-intent or form friction.
  * It stops the moment the visitor opens it (or has converted / opted out).
  *
- * Stand-down: sets afl_assistant_active so ExitIntentModal knows the assistant
- * is live and stands down (never two exit prompts at once).
+ * Stand-down: sets afl_assistant_active, the flag the old blog ExitIntentModal
+ * read so the two exit prompts never fired together. That component was deleted
+ * in phase 6 (zero importers); the flag is kept as the stand-down contract for
+ * any future exit-intent surface.
  *
  * Cadence thresholds: [30_000, 70_000, 120_000, 180_000] ms (verbatim from Property).
  */
@@ -133,7 +135,7 @@ export function SpecialistWidget() {
     setUnread(0);
   }, []);
 
-  // Init the journey model + flag the assistant active (so ExitIntentModal stands down).
+  // Init the journey model + flag the assistant active (stand-down contract, see header).
   useEffect(() => {
     if (!active || typeof window === "undefined") return;
     initJourneyModel();
@@ -457,7 +459,14 @@ export function SpecialistWidget() {
                 <input type="text" name="enquiry_ref" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0" />
                 <input type="email" name="email" required placeholder="Your email" autoComplete="email" maxLength={100} className={inputClass} />
                 <textarea name="question" required rows={2} maxLength={500} placeholder="Your message to a specialist" className={inputClass} />
-                {error && <p className="text-xs font-medium text-red-600">{error}</p>}
+                {error && (
+                  <p role="alert" className="flex items-start gap-1.5 text-xs font-medium text-[var(--form-error)]">
+                    <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" className="mt-px h-4 w-4 shrink-0">
+                      <path fillRule="evenodd" d="M18 10A8 8 0 1 1 2 10a8 8 0 0 1 16 0Zm-9-4a1 1 0 1 1 2 0v4a1 1 0 1 1-2 0V6Zm1 8.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Z" clipRule="evenodd" />
+                    </svg>
+                    {error}
+                  </p>
+                )}
                 <button
                   type="submit"
                   disabled={status === "loading"}
@@ -480,7 +489,7 @@ export function SpecialistWidget() {
 
       {/* Proactive peek: clicking opens the panel. */}
       {!open && peekVisible && peekLine && (
-        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-2xl border border-[var(--primary)]/20 bg-white p-3 shadow-2xl">
+        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-xl bg-white p-3 shadow-2xl ring-1 ring-slate-200/70">
           <button
             type="button"
             onClick={() => handleOpen(true)}
@@ -511,9 +520,9 @@ export function SpecialistWidget() {
           <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">
             <span
               aria-hidden="true"
-              className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-60 motion-reduce:animate-none"
+              className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--brand-primary)] opacity-60 motion-reduce:animate-none"
             />
-            <span className="relative flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-[11px] font-bold text-white shadow-sm ring-2 ring-white">
+            <span className="relative flex h-5 min-w-5 items-center justify-center rounded-full bg-[var(--brand-primary)] px-1 text-[11px] font-bold text-white shadow-sm ring-2 ring-white">
               {unread}
             </span>
           </span>

@@ -19,7 +19,7 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
@@ -148,15 +148,15 @@ export function StickyCTA() {
     <div
       role="region"
       aria-label="Talk to a solicitor accountant"
-      className="fixed bottom-0 left-0 right-0 z-50 border-t border-[var(--border)] bg-white/95 shadow-lg backdrop-blur-sm"
+      className="fixed bottom-0 left-0 right-0 z-50 border-t-4 border-[var(--brand-primary)] bg-slate-900 shadow-lg"
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className={`${siteContainerLg} flex items-center justify-between gap-4 py-3`}>
         {/* Copy block */}
         <div className="min-w-0 flex-1">
-          <p className="truncate text-sm font-semibold text-[var(--primary)]">
+          <p className="truncate text-sm font-semibold text-white">
             {offer.primary}
           </p>
-          <p className="mt-0.5 hidden text-xs leading-snug text-[var(--muted)] sm:block">
+          <p className="mt-0.5 hidden text-xs leading-snug text-slate-300 sm:block">
             {offer.secondary}
           </p>
         </div>
@@ -184,7 +184,7 @@ export function StickyCTA() {
           // and sticky_cta had clicks but no dismissal denominator.
           data-cta="sticky_cta_close"
           data-cta-placement="sticky"
-          className="shrink-0 rounded p-1 text-[var(--muted)] transition-colors duration-150 hover:bg-[var(--surface)] hover:text-[var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+          className="flex min-h-12 min-w-12 shrink-0 items-center justify-center rounded p-1 text-slate-300 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           <svg
             aria-hidden="true"

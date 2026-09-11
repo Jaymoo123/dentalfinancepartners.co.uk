@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPage } from "@/lib/schema/faq-page";
@@ -115,11 +116,30 @@ const datasetSchema = {
 
 // ---------------------------------------------------------------------------
 
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+/**
+ * Grounds are set explicitly per section and oscillate white / slate-50, which
+ * replaces the `border-t first:border-t-0` auto-separator device. The tail
+ * section is light so the navy footer never abuts navy.
+ */
+function Section({
+  id,
+  title,
+  tone = "white",
+  children,
+}: {
+  id: string;
+  title: string;
+  tone?: "white" | "slate";
+  children: ReactNode;
+}) {
+  const ground =
+    tone === "slate"
+      ? "bg-slate-50 ring-1 ring-slate-200/70 rounded-xl px-5 py-8 sm:px-8 sm:py-10"
+      : "bg-white py-10";
   return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
+    <section id={id} className={`mt-6 scroll-mt-24 ${ground}`}>
+      <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">{title}</h2>
+      <div className="mt-4 space-y-4 text-base leading-relaxed text-slate-700">{children}</div>
     </section>
   );
 }
@@ -128,7 +148,7 @@ function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
       <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
+      <div className="mt-1 text-sm text-slate-300">{label}</div>
     </div>
   );
 }
@@ -169,8 +189,9 @@ export default function LawFirmSurvivalIndexPage() {
       )}
 
       {/* Hero */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`relative z-10 ${siteContainerLg}`}>
           <Breadcrumb
             variant="light"
             items={[
@@ -179,14 +200,14 @@ export default function LawFirmSurvivalIndexPage() {
               { label: "Law Firm Survival Index" },
             ]}
           />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-[var(--primary)]">
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-rose-300">
             Law Firm Survival Index
           </p>
           <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             {fmtPct(headline.legal_activities_5yr_pct_2019)} of law firms survive five years, vs{" "}
             {fmtPct(headline.all_industry_5yr_pct_2019)} across all industries
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+          <p className="mt-4 max-w-3xl text-lg text-slate-300">
             A sourced read on UK law firm survival rates, drawn from ONS Business Demography official
             open data. Covering SIC 691 (Legal activities) vs the all-industry benchmark across 2019
             to 2023 birth cohorts.
@@ -216,12 +237,12 @@ export default function LawFirmSurvivalIndexPage() {
       {/* Body */}
       <section className="bg-white py-10 sm:py-14">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl">
+          <div>
 
             {/* Key findings */}
-            <div className="rounded-2xl border border-[var(--primary)]/20 bg-[var(--primary)]/5 p-6 sm:p-8">
+            <div className="rounded-xl border border-[var(--primary)]/20 bg-[var(--primary)]/5 p-6 sm:p-8">
               <h2 className="text-lg font-bold text-[var(--primary)]">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
+              <ul className="mt-4 space-y-2 text-base leading-relaxed text-slate-800">
                 <li>
                   Legal businesses (SIC 691) have a five-year survival rate of{" "}
                   <strong>{fmtPct(headline.legal_activities_5yr_pct_2019)}</strong> for the 2019
@@ -247,7 +268,7 @@ export default function LawFirmSurvivalIndexPage() {
                   disproportionately high share of long-term survivors.
                 </li>
               </ul>
-              <p className="mt-4 text-xs text-neutral-500">
+              <p className="mt-4 text-xs text-slate-500">
                 Source: ONS Business Demography 2024, Table 5.2a (SIC group survival, births 2019).
                 Open Government Licence v3.0. Figures may be cited with attribution to Accounts for
                 Lawyers.
@@ -261,7 +282,7 @@ export default function LawFirmSurvivalIndexPage() {
                 grey). The legal sector outperforms at every horizon, with the gap widening as time
                 passes.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                 <SurvivalComparisonChart
                   legalPcts={legalPcts}
                   allPcts={allPcts}
@@ -270,70 +291,70 @@ export default function LawFirmSurvivalIndexPage() {
               </div>
             </Section>
 
-            <Section id="cohort-table" title="Survival by cohort (all available years)">
+            <Section id="cohort-table" title="Survival by cohort (all available years)" tone="slate">
               <p>
                 The table shows survival data for SIC 691 (Legal activities) and the all-industry
                 average for each birth year. Later cohorts have fewer follow-up years available.
                 Five-year data exists only for the 2019 cohort.
               </p>
               <div className="not-prose mt-4 overflow-x-auto">
-                <table className="w-full border-collapse text-sm">
+                <table className="w-full border-collapse text-sm tabular-nums">
                   <thead>
-                    <tr className="border-b-2 border-neutral-300 text-left">
-                      <th className="py-2 pr-3 font-bold text-neutral-900">Cohort</th>
-                      <th className="py-2 pr-2 text-right font-bold text-neutral-900">Births</th>
-                      <th className="py-2 pr-2 text-right font-bold text-neutral-900">1yr %</th>
-                      <th className="py-2 pr-2 text-right font-bold text-neutral-900">2yr %</th>
-                      <th className="py-2 pr-2 text-right font-bold text-neutral-900">3yr %</th>
-                      <th className="py-2 pr-2 text-right font-bold text-neutral-900">5yr %</th>
+                    <tr className="border-b-2 border-slate-300 text-left">
+                      <th className="py-2 pr-3 font-bold text-slate-900">Cohort</th>
+                      <th className="py-2 pr-2 text-right font-bold text-slate-900">Births</th>
+                      <th className="py-2 pr-2 text-right font-bold text-slate-900">1yr %</th>
+                      <th className="py-2 pr-2 text-right font-bold text-slate-900">2yr %</th>
+                      <th className="py-2 pr-2 text-right font-bold text-slate-900">3yr %</th>
+                      <th className="py-2 pr-2 text-right font-bold text-slate-900">5yr %</th>
                     </tr>
                   </thead>
                   <tbody>
                     {survival_by_cohort.map((c) => (
-                      <tr key={c.birth_year} className="border-b border-neutral-200">
-                        <td className="py-2 pr-3 font-semibold text-neutral-900">
+                      <tr key={c.birth_year} className="border-b border-slate-200">
+                        <td className="py-2 pr-3 font-semibold text-slate-900">
                           {c.birth_year} Legal (SIC 691)
                         </td>
-                        <td className="py-2 pr-2 text-right text-neutral-700">
+                        <td className="py-2 pr-2 text-right text-slate-700">
                           {fmtNumber(c.sic_691_births)}
                         </td>
-                        <td className="py-2 pr-2 text-right text-neutral-700">
+                        <td className="py-2 pr-2 text-right text-slate-700">
                           {fmtPct(c.sic_691_1yr_pct)}
                         </td>
-                        <td className="py-2 pr-2 text-right text-neutral-700">
+                        <td className="py-2 pr-2 text-right text-slate-700">
                           {fmtPct(c.sic_691_2yr_pct)}
                         </td>
-                        <td className="py-2 pr-2 text-right text-neutral-700">
+                        <td className="py-2 pr-2 text-right text-slate-700">
                           {fmtPct(c.sic_691_3yr_pct)}
                         </td>
-                        <td className="py-2 pr-2 text-right text-neutral-700">
+                        <td className="py-2 pr-2 text-right text-slate-700">
                           {fmtPct(c.sic_691_5yr_pct)}
                         </td>
                       </tr>
                     ))}
                     {/* All-industry row for 2019 */}
-                    <tr className="border-b-2 border-neutral-300 bg-neutral-50">
-                      <td className="py-2 pr-3 text-neutral-500">2019 All industry</td>
-                      <td className="py-2 pr-2 text-right text-neutral-500">
+                    <tr className="border-b-2 border-slate-300 bg-slate-50">
+                      <td className="py-2 pr-3 text-slate-500">2019 All industry</td>
+                      <td className="py-2 pr-2 text-right text-slate-500">
                         {fmtNumber(cohort2019.all_industry_births)}
                       </td>
-                      <td className="py-2 pr-2 text-right text-neutral-500">
+                      <td className="py-2 pr-2 text-right text-slate-500">
                         {fmtPct(cohort2019.all_industry_1yr_pct)}
                       </td>
-                      <td className="py-2 pr-2 text-right text-neutral-500">
+                      <td className="py-2 pr-2 text-right text-slate-500">
                         {fmtPct(cohort2019.all_industry_2yr_pct)}
                       </td>
-                      <td className="py-2 pr-2 text-right text-neutral-500">
+                      <td className="py-2 pr-2 text-right text-slate-500">
                         {fmtPct(cohort2019.all_industry_3yr_pct)}
                       </td>
-                      <td className="py-2 pr-2 text-right text-neutral-500">
+                      <td className="py-2 pr-2 text-right text-slate-500">
                         {fmtPct(cohort2019.all_industry_5yr_pct)}
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-slate-500">
                 Source: ONS Business Demography 2024, Tables 5.2a-5.2e and Table 4.2. Open Government
                 Licence v3.0. 5-year data available only for 2019 cohort; later cohorts have fewer
                 follow-up years.
@@ -372,21 +393,21 @@ export default function LawFirmSurvivalIndexPage() {
                   >
                     ONS Business Demography Reference Table
                   </a>{" "}
-                  <span className="text-neutral-500">(Office for National Statistics)</span>
+                  <span className="text-slate-500">(Office for National Statistics)</span>
                 </li>
               </ul>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-slate-500">
                 Data is published under the Open Government Licence v3.0. Free to cite with
                 attribution to Accounts for Lawyers.
               </p>
             </Section>
 
             {/* CTA */}
-            <div className="mt-10 rounded-2xl border-2 border-[var(--primary)]/20 bg-[var(--primary)]/5 p-8 sm:p-10">
+            <div className="mt-10 rounded-xl border-2 border-[var(--primary)]/20 bg-[var(--primary)]/5 p-8 sm:p-10">
               <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
                 Supporting the financial health of your law firm
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
                 High survival rates reflect a resilient sector, but survival and profitability are
                 not the same thing. Cash flow, partner drawings, WIP management and tax efficiency
                 are the levers that separate a profitable practice from one that merely survives. Our
@@ -404,14 +425,14 @@ export default function LawFirmSurvivalIndexPage() {
 
             {/* FAQ */}
             <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
+              <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
                 Frequently asked questions
               </h2>
               <div className="mt-6 space-y-6">
                 {faqs.map((f, i) => (
                   <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
+                    <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
+                    <p className="mt-2 text-base leading-relaxed text-slate-700">{f.answer}</p>
                   </div>
                 ))}
               </div>

@@ -31,7 +31,7 @@ export function ResourceGate({
       heading={t?.ctaCopy || "Get a free review of your firm's position"}
       blurb="Tell us about your firm and a specialist will review your situation and the most practical next step, with no obligation."
       submitLabel="Request my free review"
-      className="my-10 rounded-2xl border-l-4 border-[var(--primary)] bg-[var(--surface-elevated)] p-6 sm:p-8"
+      className="my-10 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8"
       postSubmit="redirect"
     />
   );

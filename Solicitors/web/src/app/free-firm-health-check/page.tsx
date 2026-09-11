@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { HealthCheckWizard } from "@/components/health-check/Wizard";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
@@ -83,17 +84,18 @@ export default function FreeFirmHealthCheckPage() {
     <>
       <JsonLd data={schemaPayload} />
 
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+      <section className="relative overflow-hidden bg-slate-900">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} ${sectionYLoose} relative z-10`}>
           <Breadcrumb items={breadcrumbItems} variant="light" />
           <div className="mt-8 max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/30 px-3 py-1.5 text-xs font-semibold text-white uppercase tracking-[0.16em]">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white">
               Free · 10 minutes · No obligation
             </div>
-            <h1 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-5 text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-5xl">
               Free firm health check for UK solicitors
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-slate-200 sm:text-lg">
               Ten or so solicitor-specific questions. We&apos;ll flag the SRA compliance, FA 2014 Salaried Member, BADR, post-merger and structural items most worth reviewing in your specific position. The output is on-screen plus a follow-up email — no PDF wall, no sales drip.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -106,71 +108,67 @@ export default function FreeFirmHealthCheckPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--surface)]">
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-3xl">
+          <div className="max-w-3xl">
             <HealthCheckWizard />
           </div>
         </div>
       </section>
 
-      <section className="bg-white border-y border-[var(--border)]">
+      <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-              How the check works
-            </h2>
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
-              <Step num="1" title="Answer 10-ish questions" body="Six short steps covering your role, firm type, structure, client money volume, COFA status, and sale / buy plans. Optional notes at the end if you want to flag a specific concern." />
-              <Step num="2" title="On-screen findings" body="15+ diagnostic rules run on your answers. Items are prioritised: Priority (impactful + actionable), Notable, Tweaks, FYI. You see the top five immediately." />
-              <Step num="3" title="Follow-up call (optional)" body="We follow up to your email once with the full report and offer a 30-minute scoping call to put real numbers against the items. If you don't reply, we don't chase." />
-            </div>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+            How the check works
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <Step num="1" title="Answer 10-ish questions" body="Six short steps covering your role, firm type, structure, client money volume, COFA status, and sale / buy plans. Optional notes at the end if you want to flag a specific concern." />
+            <Step num="2" title="On-screen findings" body="15+ diagnostic rules run on your answers. Items are prioritised: Priority (impactful + actionable), Notable, Tweaks, FYI. You see the top five immediately." />
+            <Step num="3" title="Follow-up call (optional)" body="We follow up to your email once with the full report and offer a 30-minute scoping call to put real numbers against the items. If you don't reply, we don't chase." />
           </div>
         </div>
       </section>
 
-      <section className="bg-[var(--background)]">
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl text-center">
-              Frequently asked
-            </h2>
-            <dl className="mt-10 space-y-5">
-              {FAQS.map((f) => (
-                <div key={f.question} className="rounded-2xl border-l-4 border-[var(--primary)] bg-white p-6 sm:p-7">
-                  <dt className="font-serif text-lg font-semibold text-[var(--ink)]">{f.question}</dt>
-                  <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{f.answer}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+            Frequently asked
+          </h2>
+          {/* Plain <dl>, not the kit accordion: one array feeds this and the
+              FAQPage JSON-LD, and the accordion keeps closed answers out of the
+              server HTML (phase 4 manager override). */}
+          <dl className="mt-8 space-y-4">
+            {FAQS.map((f) => (
+              <div key={f.question} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-7">
+                <dt className="text-lg font-bold text-slate-900">{f.question}</dt>
+                <dd className="mt-3 text-base leading-relaxed text-slate-700">{f.answer}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">
-                Want to read first?
-              </p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold text-white sm:text-3xl">
-                Background reading from our pillar library
-              </h2>
-            </div>
-            <div className="mt-10 grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {RELATED_GUIDES.map((g) => (
-                <Link
-                  key={g.href}
-                  href={g.href}
-                  className={`group block rounded-2xl border border-white/15 bg-white/5 p-5 transition-all hover:border-white hover:bg-white/10 ${focusRing}`}
-                >
-                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Pillar guide</p>
-                  <h3 className="font-serif text-base font-semibold text-white">{g.title}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/70">{g.body}</p>
-                </Link>
-              ))}
-            </div>
+      <section className="relative overflow-hidden bg-slate-900">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} ${sectionY} relative z-10`}>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-300">
+            Want to read first?
+          </p>
+          <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+            Background reading from our pillar library
+          </h2>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
+            {RELATED_GUIDES.map((g) => (
+              <Link
+                key={g.href}
+                href={g.href}
+                className={`group block rounded-xl bg-white/5 p-5 ring-1 ring-white/15 transition-all hover:bg-white/10 hover:ring-white ${focusRing}`}
+              >
+                <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-rose-300">Pillar guide</p>
+                <h3 className="text-base font-bold text-white">{g.title}</h3>
+                <p className="mt-2 text-xs leading-relaxed text-slate-300">{g.body}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -199,18 +197,18 @@ const RELATED_GUIDES = [
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
-      <div className="font-serif text-2xl font-semibold text-white sm:text-3xl">{value}</div>
-      <div className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-white/80">{label}</div>
+      <div className="text-2xl font-bold tabular-nums text-white sm:text-3xl">{value}</div>
+      <div className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-300">{label}</div>
     </div>
   );
 }
 
 function Step({ num, title, body }: { num: string; title: string; body: string }) {
   return (
-    <div className="rounded-2xl border border-[var(--border)] bg-white p-6">
-      <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--primary)]/10 font-serif text-base font-semibold text-[var(--primary)]">{num}</div>
-      <h3 className="mt-4 font-serif text-lg font-semibold text-[var(--ink)]">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{body}</p>
+    <div className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
+      <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-rose-50 text-base font-bold tabular-nums text-rose-700">{num}</div>
+      <h3 className="mt-4 text-lg font-bold text-slate-900">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-slate-700">{body}</p>
     </div>
   );
 }

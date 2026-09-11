@@ -261,11 +261,11 @@ export function HealthCheckWizard() {
   if (result) {
     const topItems = result.opportunities.slice(0, 5);
     return (
-      <div className="rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-8 lg:p-10">
+      <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8 lg:p-10">
         <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-700">
           Firm health check complete
         </p>
-        <h3 className="mt-2 font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+        <h3 className="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">
           We found {result.opportunities.length} planning items in your specific position.
         </h3>
         <p className="mt-3 text-[var(--ink-soft)]">
@@ -281,17 +281,17 @@ export function HealthCheckWizard() {
 
         {topItems.length > 0 && (
           <div className="mt-8">
-            <h4 className="font-serif text-lg font-semibold text-[var(--ink)]">
+            <h4 className="text-lg font-bold text-slate-900">
               The first things we&apos;d look at
             </h4>
             <ul className="mt-4 space-y-4">
               {topItems.map((o) => (
                 <li
                   key={o.id}
-                  className="rounded-2xl border-l-4 border-[var(--primary)] bg-[var(--surface)] p-5"
+                  className="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200/70"
                 >
                   <div className="flex items-start justify-between gap-3">
-                    <h5 className="font-serif text-base font-semibold text-[var(--ink)]">
+                    <h5 className="text-base font-bold text-slate-900">
                       {o.title}
                     </h5>
                     <SeverityPill severity={o.severity} />
@@ -313,8 +313,8 @@ export function HealthCheckWizard() {
           </div>
         )}
 
-        <div className="mt-8 rounded-2xl border border-[var(--primary)] bg-[var(--primary)]/5 p-6">
-          <h4 className="font-serif text-lg font-semibold text-[var(--ink)]">Talk it through</h4>
+        <div className="mt-8 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
+          <h4 className="text-lg font-bold text-slate-900">Talk it through</h4>
           <p className="mt-2 text-sm text-[var(--ink-soft)]">
             These directional flags are useful, but a 30-minute call with a legal-sector specialist accountant on real numbers is where the value sits. No obligation, no sales drip.
           </p>
@@ -334,7 +334,7 @@ export function HealthCheckWizard() {
   }
 
   return (
-    <div className="rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-8">
+    <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
       <div className="flex items-center justify-between text-xs font-semibold text-[var(--muted)]">
         <span>Step {step} of {totalSteps}</span>
         <span>{progress}% complete</span>
@@ -352,8 +352,15 @@ export function HealthCheckWizard() {
         {step === 6 && <Step6 a={a} update={update} />}
       </div>
 
+      {/* The one retained red: a form error. The icon direct-labels it so
+          nothing rests on hue alone. red-600 on white measures 4.83. */}
       {error && (
-        <p role="alert" className="mt-4 text-sm text-red-600">{error}</p>
+        <p role="alert" className="mt-4 flex items-start gap-2 text-sm text-red-600">
+          <svg className="mt-0.5 h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+          </svg>
+          {error}
+        </p>
       )}
 
       <div className="mt-8 flex items-center justify-between gap-3">
@@ -402,7 +409,7 @@ function Label({ children }: { children: React.ReactNode }) {
 function Step1({ a, update }: { a: Answers; update: <K extends keyof Answers>(k: K, v: Answers[K]) => void }) {
   return (
     <>
-      <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">First, about you</h3>
+      <h3 className="text-xl font-bold text-slate-900">First, about you</h3>
       <div>
         <Label>Your name</Label>
         <input type="text" autoComplete="name" value={a.name} onChange={(e) => update("name", e.target.value)} className={inputCls} placeholder="e.g. Sarah Khan" />
@@ -422,7 +429,7 @@ function Step1({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
 function Step2({ a, update }: { a: Answers; update: <K extends keyof Answers>(k: K, v: Answers[K]) => void }) {
   return (
     <>
-      <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Your role and firm</h3>
+      <h3 className="text-xl font-bold text-slate-900">Your role and firm</h3>
       <div>
         <Label>Your primary role</Label>
         <select value={a.role} onChange={(e) => update("role", e.target.value as Role)} className={inputCls}>
@@ -451,7 +458,7 @@ function Step2({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
 function Step3({ a, update }: { a: Answers; update: <K extends keyof Answers>(k: K, v: Answers[K]) => void }) {
   return (
     <>
-      <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Structure and numbers</h3>
+      <h3 className="text-xl font-bold text-slate-900">Structure and numbers</h3>
       <div>
         <Label>Entity structure</Label>
         <select value={a.entity} onChange={(e) => update("entity", e.target.value as Entity)} className={inputCls}>
@@ -478,7 +485,7 @@ function Step3({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
 function Step4({ a, update }: { a: Answers; update: <K extends keyof Answers>(k: K, v: Answers[K]) => void }) {
   return (
     <>
-      <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">SRA compliance</h3>
+      <h3 className="text-xl font-bold text-slate-900">SRA compliance</h3>
       <div>
         <Label>Client money volume</Label>
         <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
@@ -513,7 +520,7 @@ function Step4({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
 function Step5({ a, update }: { a: Answers; update: <K extends keyof Answers>(k: K, v: Answers[K]) => void }) {
   return (
     <>
-      <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Future plans</h3>
+      <h3 className="text-xl font-bold text-slate-900">Future plans</h3>
       <div>
         <Label>Sale / purchase / succession plans</Label>
         <select value={a.exitHorizon} onChange={(e) => update("exitHorizon", e.target.value as ExitHorizon)} className={inputCls}>
@@ -539,7 +546,7 @@ function Step5({ a, update }: { a: Answers; update: <K extends keyof Answers>(k:
 function Step6({ a, update }: { a: Answers; update: <K extends keyof Answers>(k: K, v: Answers[K]) => void }) {
   return (
     <>
-      <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">Review</h3>
+      <h3 className="text-xl font-bold text-slate-900">Review</h3>
       <p className="text-sm text-[var(--ink-soft)]">
         Last check before we generate. We&apos;ll show your top items on this page and follow up to <strong>{a.email}</strong>.
       </p>
@@ -606,26 +613,32 @@ function ReviewRow({ label, value }: { label: string; value: string }) {
 }
 
 function CountTile({ label, value, tone }: { label: string; value: number; tone: "high" | "medium" | "low" | "info" }) {
+  // Severity ladder off red (phase 6): red is reserved for the form error at
+  // :356, which keeps role="alert" and its icon. Escalation direction and the
+  // direct labels are unchanged. Ratios on their own grounds: violet-700 on
+  // violet-50 6.48, amber-700 on amber-50 4.84, both AA at this size. The
+  // former `opacity-80` on the label is dropped: at 80% over violet-50 the
+  // blend measures 4.44 and fails.
   const tones = {
-    high: "border-red-200 bg-red-50 text-red-900",
-    medium: "border-amber-200 bg-amber-50 text-amber-900",
-    low: "border-emerald-200 bg-emerald-50 text-emerald-900",
-    info: "border-blue-200 bg-blue-50 text-blue-900",
+    high: "border-violet-200 bg-violet-50 text-violet-700",
+    medium: "border-amber-200 bg-amber-50 text-amber-700",
+    low: "border-emerald-200 bg-emerald-50 text-emerald-800",
+    info: "border-blue-200 bg-blue-50 text-blue-800",
   };
   return (
     <div className={`rounded-xl border p-3 ${tones[tone]}`}>
-      <div className="text-xs font-semibold uppercase tracking-[0.14em] opacity-80">{label}</div>
-      <div className="mt-1 font-serif text-2xl font-bold">{value}</div>
+      <div className="text-xs font-semibold uppercase tracking-[0.14em]">{label}</div>
+      <div className="mt-1 text-2xl font-bold tabular-nums">{value}</div>
     </div>
   );
 }
 
 function SeverityPill({ severity }: { severity: "high" | "medium" | "low" | "info" }) {
   const styles = {
-    high: "bg-red-100 text-red-900 border-red-200",
-    medium: "bg-amber-100 text-amber-900 border-amber-200",
-    low: "bg-emerald-100 text-emerald-900 border-emerald-200",
-    info: "bg-blue-100 text-blue-900 border-blue-200",
+    high: "border-violet-200 bg-violet-50 text-violet-700",
+    medium: "border-amber-200 bg-amber-50 text-amber-700",
+    low: "border-emerald-200 bg-emerald-50 text-emerald-800",
+    info: "border-blue-200 bg-blue-50 text-blue-800",
   };
   const labels = { high: "Priority", medium: "Notable", low: "Tweak", info: "FYI" };
   return (

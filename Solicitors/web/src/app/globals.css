@@ -119,9 +119,9 @@
   --color-foreground: var(--ink);
   --font-sans: var(--font-plus-jakarta);
   /* TRANSITIONAL, remove when the last font-serif class goes. The Property
-     standard is a single sans face, so Cormorant was dropped in phase 1. But 193
-     `font-serif` classes still sit across 39 page files that later phases own,
-     and with no --font-serif wiring they would fall back to the browser's Times
+     standard is a single sans face, so Cormorant was dropped in phase 1. But
+     `font-serif` classes still sit in page files that later phases own, and
+     with no --font-serif wiring they would fall back to the browser's Times
      or Georgia: a visible regression on those pages for the duration of the
      port. Pointing font-serif at the sans stack makes those classes a no-op, so
      the pages render correctly today and each later phase deletes its own
@@ -227,15 +227,6 @@ are commented as such at their site; do not "finish the job" by wrapping them.
     border-radius: var(--radius-xl);
     padding: 1.5rem;
     box-shadow: 0 0 0 1px var(--card-ring);
-  }
-
-  .hero-glass {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 1.5rem;
-    padding: 2.5rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 
 }

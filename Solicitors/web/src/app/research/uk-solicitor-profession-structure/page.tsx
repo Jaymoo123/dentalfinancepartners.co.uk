@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPage } from "@/lib/schema/faq-page";
@@ -123,16 +124,35 @@ function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
       <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
+      <div className="mt-1 text-sm text-slate-300">{label}</div>
     </div>
   );
 }
 
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+/**
+ * Grounds are set explicitly per section and oscillate white / slate-50, which
+ * replaces the `border-t first:border-t-0` auto-separator device. The tail
+ * section is light so the navy footer never abuts navy.
+ */
+function Section({
+  id,
+  title,
+  tone = "white",
+  children,
+}: {
+  id: string;
+  title: string;
+  tone?: "white" | "slate";
+  children: ReactNode;
+}) {
+  const ground =
+    tone === "slate"
+      ? "bg-slate-50 ring-1 ring-slate-200/70 rounded-xl px-5 py-8 sm:px-8 sm:py-10"
+      : "bg-white py-10";
   return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
+    <section id={id} className={`mt-6 scroll-mt-24 ${ground}`}>
+      <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">{title}</h2>
+      <div className="mt-4 space-y-4 text-base leading-relaxed text-slate-700">{children}</div>
     </section>
   );
 }
@@ -143,13 +163,13 @@ function Bar({ label, value, max, suffix }: { label: string; value: number; max:
   return (
     <div className="not-prose">
       <div className="flex items-baseline justify-between text-sm">
-        <span className="font-medium text-neutral-800">{label}</span>
-        <span className="font-semibold text-neutral-900">
+        <span className="font-medium text-slate-800">{label}</span>
+        <span className="font-semibold text-slate-900">
           {fmtNumber(value)}
           {suffix}
         </span>
       </div>
-      <div className="mt-1 h-3 w-full overflow-hidden rounded bg-neutral-100">
+      <div className="mt-1 h-3 w-full overflow-hidden rounded bg-slate-100">
         <div className="h-full rounded bg-[var(--primary)]" style={{ width: `${pct}%` }} />
       </div>
     </div>
@@ -177,8 +197,9 @@ export default function UKSolicitorProfessionStructurePage() {
       )}
 
       {/* Hero */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`relative z-10 ${siteContainerLg}`}>
           <Breadcrumb
             variant="light"
             items={[
@@ -187,13 +208,13 @@ export default function UKSolicitorProfessionStructurePage() {
               { label: "UK Solicitor Profession Structure" },
             ]}
           />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-[var(--primary)]">
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-rose-300">
             UK Solicitor Profession Structure
           </p>
           <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             {fmtNumber(roll.on_the_roll)} on the roll, {fmtNumber(roll.with_practising_certificate)} practising
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+          <p className="mt-4 max-w-3xl text-lg text-slate-300">
             A sourced, aggregate read on the SRA-regulated solicitor profession in England and
             Wales: the roll versus the practising population, and how the constitution mix of
             regulated firms has shifted. Compiled from SRA and Law Society annual statistics.
@@ -224,12 +245,12 @@ export default function UKSolicitorProfessionStructurePage() {
       {/* Body */}
       <section className="bg-white py-10 sm:py-14">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl">
+          <div>
 
             {/* Key findings */}
-            <div className="rounded-2xl border border-[var(--primary)]/20 bg-[var(--primary)]/5 p-6 sm:p-8">
+            <div className="rounded-xl border border-[var(--primary)]/20 bg-[var(--primary)]/5 p-6 sm:p-8">
               <h2 className="text-lg font-bold text-[var(--primary)]">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
+              <ul className="mt-4 space-y-2 text-base leading-relaxed text-slate-800">
                 <li>
                   There are <strong>{fmtNumber(roll.on_the_roll)}</strong> solicitors on the roll in
                   England and Wales, but only <strong>{fmtNumber(roll.with_practising_certificate)}</strong>{" "}
@@ -260,7 +281,7 @@ export default function UKSolicitorProfessionStructurePage() {
                   to the mix of firms that exist today.
                 </li>
               </ul>
-              <p className="mt-4 text-xs text-neutral-500">
+              <p className="mt-4 text-xs text-slate-500">
                 Sources: Solicitors Regulation Authority Regulated Community Statistics and The Law
                 Society of England and Wales Annual Statistics (aggregate data). SRA statistics used
                 with attribution; not OGL. No named-firm data. Figures may be cited with attribution
@@ -276,7 +297,7 @@ export default function UKSolicitorProfessionStructurePage() {
                 The two counts diverge because admission is permanent, while a practising
                 certificate lapses whenever a solicitor stops practising.
               </p>
-              <div className="not-prose mt-6 space-y-4 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <div className="not-prose mt-6 space-y-4 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                 <Bar label="On the roll" value={roll.on_the_roll} max={roll.on_the_roll} />
                 <Bar
                   label="Holding a practising certificate"
@@ -289,14 +310,14 @@ export default function UKSolicitorProfessionStructurePage() {
                   max={roll.on_the_roll}
                 />
               </div>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-slate-500">
                 Source: SRA Regulated Community Statistics and Law Society Annual Statistics
                 (aggregate counts). Around {roll.not_practising_pct}% of admitted solicitors are not
                 currently exercising a practising certificate.
               </p>
             </Section>
 
-            <Section id="firm-structure" title="How SRA-regulated firms are structured">
+            <Section id="firm-structure" title="How SRA-regulated firms are structured" tone="slate">
               <p>
                 The chart below shows the approximate share of the existing SRA-regulated firm base
                 by constitution type. Incorporated companies have become the dominant form, LLPs
@@ -304,7 +325,7 @@ export default function UKSolicitorProfessionStructurePage() {
                 stock measure: it describes the firms that are regulated today, not how many new
                 firms register each year.
               </p>
-              <div className="not-prose mt-6 space-y-4 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <div className="not-prose mt-6 space-y-4 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                 <Bar
                   label="Incorporated company (2026)"
                   value={firm_structure.incorporated_pct_latest}
@@ -325,7 +346,7 @@ export default function UKSolicitorProfessionStructurePage() {
                   suffix="%"
                 />
               </div>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-slate-500">
                 Source: Solicitors Regulation Authority, Regulated Community Statistics. Aggregate
                 shares of the regulated firm base; percentages are approximate and subject to SRA
                 revision. SRA statistics used with attribution; no named-firm data.
@@ -334,62 +355,62 @@ export default function UKSolicitorProfessionStructurePage() {
 
             <Section id="data-table" title="Summary figures">
               <div className="not-prose mt-4 overflow-x-auto">
-                <table className="w-full border-collapse text-sm">
+                <table className="w-full border-collapse text-sm tabular-nums">
                   <thead>
-                    <tr className="border-b-2 border-neutral-300 text-left">
-                      <th className="py-2 pr-3 font-bold text-neutral-900">Measure</th>
-                      <th className="py-2 text-right font-bold text-neutral-900">Value</th>
+                    <tr className="border-b-2 border-slate-300 text-left">
+                      <th className="py-2 pr-3 font-bold text-slate-900">Measure</th>
+                      <th className="py-2 text-right font-bold text-slate-900">Value</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-neutral-200">
-                      <td className="py-2 pr-3 text-neutral-700">Solicitors on the roll</td>
-                      <td className="py-2 text-right font-semibold text-neutral-900">
+                    <tr className="border-b border-slate-200">
+                      <td className="py-2 pr-3 text-slate-700">Solicitors on the roll</td>
+                      <td className="py-2 text-right font-semibold text-slate-900">
                         {fmtNumber(roll.on_the_roll)}
                       </td>
                     </tr>
-                    <tr className="border-b border-neutral-200">
-                      <td className="py-2 pr-3 text-neutral-700">With a practising certificate</td>
-                      <td className="py-2 text-right font-semibold text-neutral-900">
+                    <tr className="border-b border-slate-200">
+                      <td className="py-2 pr-3 text-slate-700">With a practising certificate</td>
+                      <td className="py-2 text-right font-semibold text-slate-900">
                         {fmtNumber(roll.with_practising_certificate)}
                       </td>
                     </tr>
-                    <tr className="border-b border-neutral-200">
-                      <td className="py-2 pr-3 text-neutral-700">Not currently practising</td>
-                      <td className="py-2 text-right font-semibold text-neutral-900">
+                    <tr className="border-b border-slate-200">
+                      <td className="py-2 pr-3 text-slate-700">Not currently practising</td>
+                      <td className="py-2 text-right font-semibold text-slate-900">
                         {fmtNumber(roll.not_practising)} ({roll.not_practising_pct}%)
                       </td>
                     </tr>
-                    <tr className="border-b border-neutral-200">
-                      <td className="py-2 pr-3 text-neutral-700">
+                    <tr className="border-b border-slate-200">
+                      <td className="py-2 pr-3 text-slate-700">
                         Incorporated firms, {firm_structure.baseline_year} to 2026
                       </td>
-                      <td className="py-2 text-right font-semibold text-neutral-900">
+                      <td className="py-2 text-right font-semibold text-slate-900">
                         {firm_structure.incorporated_pct_2011}% &rarr; {firm_structure.incorporated_pct_latest}%
                       </td>
                     </tr>
-                    <tr className="border-b border-neutral-200">
-                      <td className="py-2 pr-3 text-neutral-700">LLP share (2026)</td>
-                      <td className="py-2 text-right font-semibold text-neutral-900">
+                    <tr className="border-b border-slate-200">
+                      <td className="py-2 pr-3 text-slate-700">LLP share (2026)</td>
+                      <td className="py-2 text-right font-semibold text-slate-900">
                         {firm_structure.llp_pct_latest}%
                       </td>
                     </tr>
-                    <tr className="border-b border-neutral-200">
-                      <td className="py-2 pr-3 text-neutral-700">Partnership share (2026)</td>
-                      <td className="py-2 text-right font-semibold text-neutral-900">
+                    <tr className="border-b border-slate-200">
+                      <td className="py-2 pr-3 text-slate-700">Partnership share (2026)</td>
+                      <td className="py-2 text-right font-semibold text-slate-900">
                         {firm_structure.partnership_pct_latest}%
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-slate-500">
                 Source: SRA Regulated Community Statistics and Law Society Annual Statistics.
                 Aggregate data, used with attribution under the SRA custom licence; not OGL.
               </p>
             </Section>
 
-            <Section id="methodology" title="Methodology and sources">
+            <Section id="methodology" title="Methodology and sources" tone="slate">
               <p>
                 <strong>Roll and practising certificates.</strong> The counts of solicitors on the
                 roll and holding practising certificates are aggregate figures published in the
@@ -423,7 +444,7 @@ export default function UKSolicitorProfessionStructurePage() {
                     >
                       {s.name}
                     </a>{" "}
-                    <span className="text-neutral-500">({s.publisher})</span>
+                    <span className="text-slate-500">({s.publisher})</span>
                   </li>
                 ))}
               </ul>
@@ -435,18 +456,18 @@ export default function UKSolicitorProfessionStructurePage() {
                   Download the summary data (CSV)
                 </Link>
               </p>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-slate-500">
                 SRA statistics used with attribution; not OGL. Aggregate data only; no named-firm
                 data. Free to cite with attribution to Accounts for Lawyers.
               </p>
             </Section>
 
             {/* CTA */}
-            <div className="mt-10 rounded-2xl border-2 border-[var(--primary)]/20 bg-[var(--primary)]/5 p-8 sm:p-10">
+            <div className="mt-10 rounded-xl border-2 border-[var(--primary)]/20 bg-[var(--primary)]/5 p-8 sm:p-10">
               <h2 className="text-2xl font-bold text-[var(--primary)] sm:text-3xl">
                 Structuring or restructuring your practice?
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
                 The shift towards incorporation is clear across the profession, but the right
                 structure depends on your profit level, how you extract income, and your regulatory
                 position with the SRA. Our team works exclusively with solicitors and law firms and
@@ -464,14 +485,14 @@ export default function UKSolicitorProfessionStructurePage() {
 
             {/* FAQ */}
             <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
+              <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
                 Frequently asked questions
               </h2>
               <div className="mt-6 space-y-6">
                 {faqs.map((f, i) => (
                   <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
+                    <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
+                    <p className="mt-2 text-base leading-relaxed text-slate-700">{f.answer}</p>
                   </div>
                 ))}
               </div>

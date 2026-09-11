@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
+import { btnPrimary, btnSecondary, focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildBreadcrumbJsonLd, buildFaqPage, buildService, JsonLd } from "@/lib/schema/index";
 
@@ -78,31 +79,32 @@ export default function LawFirmChartOfAccountsTemplatePage() {
       <JsonLd data={schemaPayload} />
 
       {/* Hero */}
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+      <section className="relative overflow-hidden bg-slate-900">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} ${sectionYLoose} relative z-10`}>
           <Breadcrumb items={breadcrumbItems} variant="light" />
           <div className="mt-8 max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/30 px-3 py-1.5 text-xs font-semibold text-white uppercase tracking-[0.16em]">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white">
               Free download · Excel + PDF · No email required
             </div>
-            <h1 className="mt-5 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-5 text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-5xl">
               Law firm chart of accounts template
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-slate-200 sm:text-lg">
               A free UK law firm chart of accounts with client-money control accounts, department fee codes and SRA Accounts Rules notes built in. Download as Excel or PDF and import directly into QuickBooks or Xero.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="/downloads/law-firm-chart-of-accounts.xlsx"
                 download
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--primary)] hover:bg-white/90 transition-colors"
+                className={`inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}
               >
                 Download Excel (.xlsx)
               </a>
               <a
                 href="/downloads/law-firm-chart-of-accounts.pdf"
                 download
-                className="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20 transition-colors"
+                className={`inline-flex min-h-12 items-center justify-center rounded-full border-2 border-white px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-slate-900 ${focusRing}`}
               >
                 Download PDF
               </a>
@@ -112,16 +114,15 @@ export default function LawFirmChartOfAccountsTemplatePage() {
       </section>
 
       {/* What a chart of accounts is */}
-      <section className="bg-white border-y border-[var(--border)]">
+      <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               What a chart of accounts is for a law firm
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-[var(--ink-soft)]">
+            <p className="mt-5 text-base leading-relaxed text-slate-700">
               A chart of accounts is the numbered list of every ledger account your practice uses to record financial transactions. Each transaction, a fee billed, a salary paid, a disbursement advanced, gets posted to one account code. Your profit and loss account, balance sheet and VAT return are all built from these coded entries.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
+            <p className="mt-4 text-base leading-relaxed text-slate-700">
               For a law firm, the chart of accounts has to do something that a general business chart does not: it must separate the firm's own money from client money at the ledger level. The SRA Accounts Rules require firms to keep client money segregated in a dedicated client bank account and to be able to demonstrate, at any time, that the balance held equals the total owed to clients. That demonstration happens through the reconciliation of two linked accounts: the client bank account (1002) and the client account control liability (2001).
             </p>
             <div className="mt-10 grid gap-6 md:grid-cols-4">
@@ -131,25 +132,23 @@ export default function LawFirmChartOfAccountsTemplatePage() {
                 { range: "4000s", label: "Income", desc: "Professional fees by department (conveyancing, litigation, private client, commercial) and interest received." },
                 { range: "7000s", label: "Expenditure", desc: "Salaries, PII, practising certificates, professional subs, rent, IT, marketing, bank charges, irrecoverable disbursements." },
               ].map((item) => (
-                <div key={item.range} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">
-                  <div className="font-serif text-2xl font-semibold text-[var(--primary)]">{item.range}</div>
-                  <div className="mt-1 text-sm font-semibold text-[var(--ink)]">{item.label}</div>
-                  <p className="mt-2 text-xs leading-relaxed text-[var(--ink-soft)]">{item.desc}</p>
+                <div key={item.range} className="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200/70">
+                  <div className="text-2xl font-bold tabular-nums text-rose-700">{item.range}</div>
+                  <div className="mt-1 text-sm font-semibold text-slate-900">{item.label}</div>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-700">{item.desc}</p>
                 </div>
               ))}
             </div>
-          </div>
         </div>
       </section>
 
       {/* Why law firms are different */}
-      <section className="bg-[var(--surface)]">
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               Why law firms need client-money control accounts that general businesses do not
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-[var(--ink-soft)]">
+            <p className="mt-5 text-base leading-relaxed text-slate-700">
               When a client pays funds in advance, for example a conveyancing completion amount or a probate bond, that money is not income. It belongs to the client and must sit in a ring-fenced client bank account. The firm is acting as custodian, not owner.
             </p>
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -171,27 +170,25 @@ export default function LawFirmChartOfAccountsTemplatePage() {
                   body: "The Compliance Officer for Finance and Administration is responsible for ensuring the firm complies with the SRA Accounts Rules. The COFA must be satisfied that the reconciliation process is operating correctly and that any breaches are reported to the SRA where required.",
                 },
               ].map((item) => (
-                <div key={item.title} className="rounded-2xl border-l-4 border-[var(--primary)] bg-white p-6">
-                  <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">{item.body}</p>
+                <div key={item.title} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70">
+                  <h3 className="text-lg font-bold text-slate-900">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-700">{item.body}</p>
                 </div>
               ))}
             </div>
-          </div>
         </div>
       </section>
 
       {/* How to adapt the codes */}
-      <section className="bg-white border-y border-[var(--border)]">
+      <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               How to adapt the codes for your firm
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-[var(--ink-soft)]">
+            <p className="mt-5 text-base leading-relaxed text-slate-700">
               The codes in this template are a starting point. Most firms will need to extend them to match their own structure and practice areas.
             </p>
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-8 space-y-4">
               {[
                 {
                   heading: "Sub-code by department",
@@ -210,91 +207,86 @@ export default function LawFirmChartOfAccountsTemplatePage() {
                   body: "If your firm does legal aid work, you may need additional income codes to split LAA-funded fees from private fees, and potentially separate WIP accounts for matter types that are reported differently for LAA billing purposes.",
                 },
               ].map((item, i) => (
-                <li key={item.heading} className="flex items-start gap-4 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 sm:p-6">
-                  <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/10 font-serif text-base font-semibold text-[var(--primary)]">
+                <li key={item.heading} className="flex items-start gap-4 rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200/70 sm:p-6">
+                  <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-rose-50 text-base font-bold tabular-nums text-rose-700">
                     {i + 1}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[var(--ink)]">{item.heading}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{item.body}</p>
+                    <h3 className="font-bold text-slate-900">{item.heading}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-700">{item.body}</p>
                   </div>
                 </li>
               ))}
             </ul>
-          </div>
         </div>
       </section>
 
       {/* Download section */}
-      <section id="downloads" className="bg-[var(--surface)]">
+      <section id="downloads" className="scroll-mt-24 bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl text-center">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               Download the template
             </h2>
-            <p className="mt-4 text-center text-sm leading-relaxed text-[var(--ink-soft)]">
+            <p className="mt-4 text-sm leading-relaxed text-slate-700">
               No email required. Both formats are free.
             </p>
             <div className="mt-8 grid gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-[var(--border)] bg-white p-7 flex flex-col">
-                <div className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--primary)]">Excel format</div>
-                <h3 className="mt-2 font-serif text-xl font-semibold text-[var(--ink)]">law-firm-chart-of-accounts.xlsx</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-[var(--ink-soft)]">
+              <div className="flex flex-col rounded-xl bg-white p-7 ring-1 ring-slate-200/70">
+                <div className="text-xs font-bold uppercase tracking-[0.14em] text-rose-700">Excel format</div>
+                <h3 className="mt-2 text-xl font-bold text-slate-900">law-firm-chart-of-accounts.xlsx</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-700">
                   Full chart with colour-coded categories, a Code Ranges summary sheet, and notes on client-money reconciliation and SRA Accounts Rules requirements. Import directly into QuickBooks or Xero as CSV.
                 </p>
                 <a
                   href="/downloads/law-firm-chart-of-accounts.xlsx"
                   download
-                  className="mt-6 inline-flex items-center justify-center rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--primary)]/90 transition-colors"
+                  className={`mt-6 ${btnPrimary}`}
                 >
                   Download Excel (.xlsx)
                 </a>
               </div>
-              <div className="rounded-2xl border border-[var(--border)] bg-white p-7 flex flex-col">
-                <div className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--primary)]">PDF format</div>
-                <h3 className="mt-2 font-serif text-xl font-semibold text-[var(--ink)]">law-firm-chart-of-accounts.pdf</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-[var(--ink-soft)]">
+              <div className="flex flex-col rounded-xl bg-white p-7 ring-1 ring-slate-200/70">
+                <div className="text-xs font-bold uppercase tracking-[0.14em] text-rose-700">PDF format</div>
+                <h3 className="mt-2 text-xl font-bold text-slate-900">law-firm-chart-of-accounts.pdf</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-700">
                   A one-page summary of all account codes and names, suitable for printing and pinning in your accounts office. Includes SRA reconciliation notes and QuickBooks/Xero import guidance.
                 </p>
                 <a
                   href="/downloads/law-firm-chart-of-accounts.pdf"
                   download
-                  className="mt-6 inline-flex items-center justify-center rounded-full border border-[var(--border)] bg-white px-6 py-3 text-sm font-semibold text-[var(--ink)] hover:bg-[var(--surface)] transition-colors"
+                  className={`mt-6 ${btnSecondary}`}
                 >
                   Download PDF
                 </a>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="bg-[var(--background)]">
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl text-center">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
               Frequently asked
             </h2>
-            <dl className="mt-10 space-y-5">
+            <dl className="mt-8 space-y-4">
               {FAQS.map((f) => (
-                <div key={f.question} className="rounded-2xl border-l-4 border-[var(--primary)] bg-white p-6 sm:p-7">
-                  <dt className="font-serif text-lg font-semibold text-[var(--ink)]">{f.question}</dt>
-                  <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{f.answer}</dd>
+                <div key={f.question} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-7">
+                  <dt className="text-lg font-bold text-slate-900">{f.question}</dt>
+                  <dd className="mt-3 text-base leading-relaxed text-slate-700">{f.answer}</dd>
                 </div>
               ))}
             </dl>
-          </div>
         </div>
       </section>
 
       {/* Related guides */}
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">Further reading</p>
-              <h2 className="mt-3 font-serif text-2xl font-semibold text-white sm:text-3xl">
+      <section className="relative overflow-hidden bg-slate-900">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} ${sectionY} relative z-10`}>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-300">Further reading</p>
+              <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
                 Related solicitor guides
               </h2>
             </div>
@@ -319,15 +311,14 @@ export default function LawFirmChartOfAccountsTemplatePage() {
                 <Link
                   key={g.href}
                   href={g.href}
-                  className={`group block rounded-2xl border border-white/15 bg-white/5 p-5 transition-all hover:border-white hover:bg-white/10 ${focusRing}`}
+                  className={`group block rounded-xl bg-white/5 p-5 ring-1 ring-white/15 transition-all hover:bg-white/10 hover:ring-white ${focusRing}`}
                 >
-                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/80 mb-2">Pillar guide</p>
-                  <h3 className="font-serif text-base font-semibold text-white">{g.title}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/70">{g.body}</p>
+                  <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-rose-300">Pillar guide</p>
+                  <h3 className="text-base font-bold text-white">{g.title}</h3>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-300">{g.body}</p>
                 </Link>
               ))}
             </div>
-          </div>
         </div>
       </section>
     </>

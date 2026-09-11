@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
@@ -56,8 +57,9 @@ const reports = [
 export default function ResearchIndexPage() {
   return (
     <>
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`relative z-10 ${siteContainerLg}`}>
           <Breadcrumb
             variant="light"
             items={[{ label: "Home", href: "/" }, { label: "Research" }]}
@@ -65,29 +67,29 @@ export default function ResearchIndexPage() {
           <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Law firm research and data
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+          <p className="mt-4 max-w-3xl text-lg text-slate-300">
             Original, sourced reads on UK law firm structure, incorporation trends and survival
             rates, built entirely from official open data. Free to read and cite with attribution.
           </p>
         </div>
       </section>
 
-      <section className="bg-white py-10 sm:py-14">
+      <section className="bg-slate-50 py-10 sm:py-14">
         <div className={siteContainerLg}>
           <div className="grid gap-6 sm:grid-cols-2">
             {reports.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-2xl border border-neutral-200 p-6 transition hover:border-[var(--primary)] hover:shadow-md sm:p-8"
+                className="group rounded-xl bg-white p-6 ring-1 ring-slate-200/70 transition hover:ring-[var(--primary)] hover:shadow-md sm:p-8"
               >
                 <div className="text-3xl font-bold text-[var(--primary)] sm:text-4xl">{r.stat}</div>
-                <div className="mt-1 text-sm text-neutral-500">{r.statLabel}</div>
-                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-[var(--primary)]">
+                <div className="mt-1 text-sm text-slate-500">{r.statLabel}</div>
+                <h2 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-[var(--primary)]">
                   {r.title}
                 </h2>
-                <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
-                <p className="mt-4 text-xs text-neutral-400">Updated {r.updated}</p>
+                <p className="mt-2 text-base leading-relaxed text-slate-600">{r.blurb}</p>
+                <p className="mt-4 text-xs text-slate-500">Updated {r.updated}</p>
               </Link>
             ))}
           </div>

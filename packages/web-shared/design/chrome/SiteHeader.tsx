@@ -256,7 +256,11 @@ function DesktopDropdown({ item, pathname }: { item: NavItem; pathname: string }
         type="button"
         aria-expanded={open}
         aria-haspopup="true"
-        aria-controls={menuId}
+        // Only reference the panel while it exists. The dropdown and the drawer
+        // are unmounted when closed, so a permanent aria-controls points at an
+        // absent id, which assistive tech reports as a broken reference. Same
+        // defect the Solicitors calculator tablist carried in phase 4.
+        aria-controls={open ? menuId : undefined}
         onClick={() => setOpen((v) => !v)}
         className={`flex items-center gap-1 whitespace-nowrap px-3 py-2 text-sm font-bold transition-colors border-b-2 xl:px-4 ${focusRing} ${
           active || open
@@ -475,7 +479,7 @@ export function SiteHeader({
             type="button"
             className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-xl border-2 border-slate-200 bg-white text-slate-900 hover:bg-slate-50 hover:border-slate-300 lg:hidden ${focusRing}`}
             aria-expanded={open}
-            aria-controls={panelId}
+            aria-controls={open ? panelId : undefined}
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((v) => !v)}
           >

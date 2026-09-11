@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { SolicitorsBackdrop } from "@/components/layout/SolicitorsBackdrop";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { focusRing, sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildBreadcrumbJsonLd, buildFaqPage, JsonLd } from "@/lib/schema/index";
@@ -70,93 +72,95 @@ export default function UkSolicitorTaxRatesPage() {
     <>
       <JsonLd data={schemaPayload} />
 
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+      <section className="relative overflow-hidden bg-slate-900">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} ${sectionYLoose} relative z-10`}>
           <Breadcrumb items={breadcrumbItems} variant="light" />
           <div className="mt-8 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/90">Reference · UK 2026/27</p>
-            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">UK Solicitor Tax Rates 2026/27</h1>
-            <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">Quick reference for the rates and thresholds that matter most to UK solicitors and law firm partners. Income tax bands, NI, corporation tax, BADR, dividend tax, FA 2014 Salaried Member rules, SRA Accounts Rules thresholds, PII minimums.</p>
+            <Eyebrow onDark>Reference · UK 2026/27</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-5xl">UK Solicitor Tax Rates 2026/27</h1>
+            <p className="mt-5 text-base leading-relaxed text-slate-200 sm:text-lg">Quick reference for the rates and thresholds that matter most to UK solicitors and law firm partners. Income tax bands, NI, corporation tax, BADR, dividend tax, FA 2014 Salaried Member rules, SRA Accounts Rules thresholds, PII minimums.</p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[var(--surface)]">
+      <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">UK 2026/27 general rates</h2>
-            <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)]">
-              <table className="w-full text-sm">
-                <thead className="bg-[var(--primary)] text-white">
-                  <tr><th className="px-4 py-3 text-left font-semibold">Item</th><th className="px-4 py-3 text-left font-semibold">Rate / Threshold</th><th className="px-4 py-3 text-left font-semibold">Note</th></tr>
-                </thead>
-                <tbody className="divide-y divide-[var(--border)] bg-white">
-                  {BANDS.map((b, i) => (
-                    <tr key={i}>
-                      <td className="px-4 py-3 font-medium text-[var(--ink)]">{b.label}</td>
-                      <td className="px-4 py-3 font-semibold text-[var(--primary)]">{b.value}</td>
-                      <td className="px-4 py-3 text-xs text-[var(--ink-soft)]">{b.note}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">UK 2026/27 general rates</h2>
+          <div className="mt-8 overflow-x-auto rounded-xl ring-1 ring-slate-200/70">
+            <RateTable rows={BANDS} valueHeading="Rate / Threshold" />
           </div>
         </div>
       </section>
 
-      <section className="bg-[var(--background)]">
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Legal-sector specifics</h2>
-            <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)]">
-              <table className="w-full text-sm">
-                <thead className="bg-[var(--primary)] text-white">
-                  <tr><th className="px-4 py-3 text-left font-semibold">Item</th><th className="px-4 py-3 text-left font-semibold">Value</th><th className="px-4 py-3 text-left font-semibold">Note</th></tr>
-                </thead>
-                <tbody className="divide-y divide-[var(--border)] bg-white">
-                  {LEGAL_SECTOR.map((b, i) => (
-                    <tr key={i}>
-                      <td className="px-4 py-3 font-medium text-[var(--ink)]">{b.label}</td>
-                      <td className="px-4 py-3 font-semibold text-[var(--primary)]">{b.value}</td>
-                      <td className="px-4 py-3 text-xs text-[var(--ink-soft)]">{b.note}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Legal-sector specifics</h2>
+          <div className="mt-8 overflow-x-auto rounded-xl bg-white ring-1 ring-slate-200/70">
+            <RateTable rows={LEGAL_SECTOR} valueHeading="Value" />
           </div>
         </div>
       </section>
 
-      <section className="bg-white border-y border-[var(--border)]">
+      <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Frequently asked</h2>
-            <dl className="mt-8 space-y-5">
-              {FAQS.map((f) => (
-                <div key={f.question} className="rounded-2xl border-l-4 border-[var(--primary)] bg-[var(--surface)] p-6">
-                  <dt className="font-serif text-lg font-semibold text-[var(--ink)]">{f.question}</dt>
-                  <dd className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">{f.answer}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Frequently asked</h2>
+          {/* Plain <dl>, not the kit accordion: one array feeds this and the
+              FAQPage JSON-LD (phase 4 manager override). */}
+          <dl className="mt-8 space-y-4">
+            {FAQS.map((f) => (
+              <div key={f.question} className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
+                <dt className="text-lg font-bold text-slate-900">{f.question}</dt>
+                <dd className="mt-3 text-base leading-relaxed text-slate-700">{f.answer}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
-      <section className="bg-[var(--primary)] text-white">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-serif text-2xl font-semibold text-white sm:text-3xl">Want these applied to your firm?</h2>
-            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">A reference page is fine for the rates themselves. The value is in how they interact across your specific position. Book a 30-minute scoping call to walk through your numbers.</p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/free-firm-health-check" className={`inline-flex min-h-12 items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--primary)] transition-colors hover:bg-white/90 ${focusRing}`}>Take the firm health check</Link>
-              <Link href="/contact" className={`inline-flex min-h-12 items-center rounded-full border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 ${focusRing}`}>Book a call</Link>
+      <section className="relative overflow-hidden bg-slate-900">
+        <SolicitorsBackdrop tone="navy" />
+        <div className={`${siteContainerLg} ${sectionY} relative z-10`}>
+          <div className="max-w-3xl">
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">Want these applied to your firm?</h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-200 sm:text-lg">A reference page is fine for the rates themselves. The value is in how they interact across your specific position. Book a 30-minute scoping call to walk through your numbers.</p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link href="/free-firm-health-check" className={`inline-flex min-h-12 items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}>Take the firm health check</Link>
+              <Link href="/contact" className={`inline-flex min-h-12 items-center rounded-full border-2 border-white px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-slate-900 ${focusRing}`}>Book a call</Link>
             </div>
           </div>
         </div>
       </section>
     </>
+  );
+}
+
+/** One table body for both rate tables: same markup, different rows. */
+function RateTable({
+  rows,
+  valueHeading,
+}: {
+  rows: { label: string; value: string; note: string }[];
+  valueHeading: string;
+}) {
+  return (
+    <table className="w-full text-sm">
+      <thead className="bg-slate-900 text-white">
+        <tr>
+          <th className="px-4 py-3 text-left font-semibold">Item</th>
+          <th className="px-4 py-3 text-left font-semibold">{valueHeading}</th>
+          <th className="px-4 py-3 text-left font-semibold">Note</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-200 bg-white">
+        {rows.map((b, i) => (
+          <tr key={i}>
+            <td className="px-4 py-3 font-medium text-slate-900">{b.label}</td>
+            <td className="px-4 py-3 font-semibold tabular-nums text-rose-700">{b.value}</td>
+            <td className="px-4 py-3 text-xs text-slate-600">{b.note}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 }

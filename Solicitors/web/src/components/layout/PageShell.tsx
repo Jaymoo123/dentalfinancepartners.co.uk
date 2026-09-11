@@ -11,8 +11,8 @@ import { StickyCTA } from "@/components/ui/StickyCTA";
 import { WORDMARK_TOP, WORDMARK_BOTTOM } from "@/components/brand/BrandWordmarkHomeLink";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-// ExitIntentModal unmounted: SpecialistWidget (mounted in layout.tsx) subsumes
-// exit-intent and handles the stand-down. Component file kept on disk for revert.
+// Exit-intent lives in SpecialistWidget (mounted in layout.tsx), which subsumes it
+// and handles the stand-down. The old blog ExitIntentModal was deleted in phase 6.
 
 const activeCta = getActiveCta(niche);
 
