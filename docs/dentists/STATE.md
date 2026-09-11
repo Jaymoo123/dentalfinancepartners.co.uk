@@ -1,5 +1,55 @@
 # Dentists — program state (living heartbeat)
 
+> ## PICKUP — design port, Phase 0 COMPLETE 2026-09-11. No code written, nothing deployed.
+>
+> **Where it stands.** Phase 0 baseline captured for the Property-standard design port.
+> Production is `18b4f25f` (2026-09-09, READY) and `git diff 18b4f25f..HEAD -- Dentists/`
+> is EMPTY, so nothing pending rides this cutover. This is the cleanest baseline of the
+> four ports. Baseline build: **321/321 static pages, exit 0**, `BUILD_ID` newer than all
+> source (trap T2 cleared).
+>
+> **Artefacts** (all under `docs/dentists/_port/`, plus `docs/dentists/DESIGN_DELTA.md`):
+> `DISPOSITION_SLICE1-3.md` (993 lines), `FUNNEL_BASELINE.md` (332), `LIVE_DEFECTS.md`
+> (372), `sweep_baseline.json`. The delta is the brand contract and is PROPOSED, not
+> approved.
+>
+> **Link-floor baseline, from production SHA `18b4f25f`:** 283 URLs, 5,537 unique internal
+> links, 808 `data-cta`, 1,186 dashes. Any decrease in the first two is a blocker.
+> NOTE the filename: this site's floor lives in `sweep_baseline.json`, not
+> `link_baseline.json`. Same `["links"]`/`["dashes"]` shape the playbook §5 crawl consumes.
+>
+> **The number that sets this port's priorities.** Dentists converts at **4.44 leads per
+> 1,000 sessions against Property's 9.83** (2026-08-23 to 2026-09-11, post bot-gate only,
+> 19 days). A 2.2x gap, far tighter than Solicitors' 8.5x. Top of funnel BEATS Property
+> (form starts 6.44% vs 5.60%, calculator use 20.6% vs 13.3%). The leak is
+> **start-to-complete, 6.9% against 17.9%**. 83% of sessions land on blog articles, which
+> produced 24 of 30 form starts and **zero completions**; both completions came from
+> `/contact` off 6 sessions. So the value in this port is the blog subsystem and the
+> article template, NOT the homepage.
+>
+> **Locked pre-port analytics values** (playbook T22, has bitten two sites). Phase 2 must
+> pass `ctaContactGoal="contact"` and `ctaMobilePlacement="header_mobile"`. Kit defaults
+> `"form"` / `"mobile_menu"` would split this site's funnel history at the cutover.
+>
+> **What NOT to re-ask or re-derive.** Re-measured on disk 2026-09-11: 223 blog posts,
+> 6 dental-guides, 6 resource topics, 2 locations, 13 calculators, 43 static `page.tsx`,
+> **309 addressable routes (292 public)**, and **7 templates render 262 of them**. The
+> pound sign is the LITERAL `£` in this site's source (no unicode-escape trap, unlike
+> generalist) EXCEPT `src/data/*.json|csv`, where money is bare numbers formatted at render
+> by `fmtGBP`, so a `£` grep is blind to the research layer. The blog category filter
+> already keys on `slugifyCategory`; do not "fix" it. `brand.primary_color: "#2563eb"` in
+> `niche.config.json` is never consumed for rendering, but blue IS hardcoded into the OG
+> image routes, so share cards carry an accent that appears nowhere on the site.
+>
+> **Next:** owner gate (swatch, warning ladder, pricing policy, retirements), then Phase 1.
+>
+> **CORRECTION to this file, 2026-09-11.** The Onboarding section below says "Bing: 0 rows
+> ingested for dentists". That is FALSE and was verified false directly: `bing_query_data`
+> holds **19,226 rows for dentists, 2026-06-03 to 2026-09-07**. Over the last 28 days
+> **Bing sent 1,682 clicks against Google's 109**, a ~15x split and the widest on the
+> estate. Any before-and-after read on this port is a Bing read first. The stale line is
+> struck in place below rather than deleted.
+
 The single living state doc for the Dentists site (Dental Finance Partners). The
 methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 `REWRITE_PROGRAM.md`, `ENGINE_MAP_AND_ONBOARDING.md`); this doc holds only the
@@ -56,7 +106,7 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - Discovery engine: `scripts/topic_gap_finder.py` / `topic_gap_filter.py` generalised + `sites/dentists.discovery.json` (competitors SERP-derived; + architecture/tools + sitemap-lastmod harvest). Producing `docs/dentists/topic_gaps_first_cut.md`.
 
 **Deferred / not on the net-new critical path**
-- Bing: 0 rows ingested for dentists. Needed for the rewrite ROI worklist later, not for net-new (which feeds off competitor crawls). Set up Bing Webmaster + ingest before running the rewrite engine here.
+- ~~Bing: 0 rows ingested for dentists. Needed for the rewrite ROI worklist later, not for net-new (which feeds off competitor crawls). Set up Bing Webmaster + ingest before running the rewrite engine here.~~ **STRUCK 2026-09-11: FALSE.** Ingestion is live and current: 19,226 rows, 2026-06-03 to 2026-09-07, and Bing outperforms Google here 1,682 clicks to 109 over 28 days. Nothing needs setting up. See the PICKUP block at the top of this file.
 - Formal `/run-netnew-wave <site> <wave>` conductor command: codify after the proving wave from real experience. Driving Wave 1 manually as conductor for now.
 - `SITE_RULES[dentists]` (competitor/brief_for_opus.py) + `CORE_PAGES[dentists]` (corepage/config.py): add when first running the rewrite / core-page engines for dentists.
 
