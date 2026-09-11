@@ -1,6 +1,93 @@
 # Dentists — program state (living heartbeat)
 
-> ## PICKUP — design port, Phase 0 COMPLETE 2026-09-11. No code written, nothing deployed.
+> ## PICKUP — design port, PHASE 1 COMPLETE + TAGGED 2026-09-11. NOTHING DEPLOYED.
+>
+> Tag `port-dentists-phase1`. Commits: `9936547a` (phase 0), `e62029fa` (owner decisions),
+> `f1197d7a` (brand layer + content remediation), the fix pass (swept into `f75438bf`, see
+> below), `f1df9e93` (phase 1 close). Production is still `18b4f25f`.
+>
+> **NEXT: phase 2, chrome adoption.** Plan written and verified:
+> `docs/dentists/_port/PHASE2_BUILD_PLAN.md` (753 lines, 5 work packages, WP1/WP3/WP4
+> concurrent then WP2 serial). Phase 3 plan is `PHASE3_BUILD_PLAN.md`, phases 4-6 scope is
+> `PHASE456_SCOPE.md`. Read those before re-planning anything.
+>
+> **DO NOT RE-ASK THESE. Owner decisions taken 2026-09-11:** navy primary ramp with gold
+> demoted to a non-text accent; warning ladder D-W1 (red-600 / pink-700 / purple-800);
+> start the port now and accept the re-baseline of the 18 armed windows; remove ALL
+> published pricing, rewritten individually; rewrite out the named competitor passage;
+> drop the calculator message floor on Dentists ONLY and leave the nine siblings as a
+> comparison group; retire NO route and fix the broken links instead. Separately, the owner
+> ruled estate-wide (`6966c1f1`) that the studio credit STAYS, so phase 2 passes nothing
+> for `showBuilderCredit` and inherits `true`.
+>
+> **Phase 1 verification at close** (re-run after the last content change, not once):
+> build 321/321 exit 0, page count unchanged from the pre-port baseline; tsc clean;
+> tests 434/434; dependency closure OK across 19 sites; frontmatter parses on all 235
+> content files; sweep against the production-SHA baseline = 283/283 URLs clean,
+> **0 dead internal links (from 23), 0 link-floor breaches at 5,537 links exactly,
+> 0 `data-cta` regressions at 808 exactly, 0 dashes**.
+>
+> **What phase 1 actually changed:** the token layer (navy `primary-*` ramp, D-W1 warning
+> ladder, slate neutrals, radius chain, `components.json`, `layout-utils` reduced to a kit
+> re-export), 44 locked-rule content breaches across 29 files, 21 dead links, the capture
+> floor, and two inherited accessibility defects (the focus ring measured 1.90 on this
+> site's navy ground; `.section-label` was gold-on-white at 3.76).
+>
+> **THE THREE THINGS THAT NEARLY SHIPPED, each caught by a different check. Read these
+> before phase 2, because phase 2 touches the same surfaces:**
+> 1. **The port made the hero CTA invisible.** Moving `btnPrimary` to navy put it on
+>    sections whose own ground is the same `#001b3d`: measured 1.00. The white label read,
+>    the button had no shape. Caught by the adversarial review, NOT by the build, the tests
+>    or `tsc`. Dark-ground CTAs now use `btnGold` (6.23), which is also what the site
+>    rendered pre-port. RULE for phase 2: measure a button against the SECTION ground, never
+>    against its own label.
+> 2. **A rewritten FAQ answer broke the production build** by putting a colon-space inside
+>    an unquoted YAML scalar. `tsc`, `npm test` and the agent's own reported frontmatter
+>    parse ALL passed it. Only a real `next build` caught it. A re-runnable parser check
+>    over all 235 files now exists; use it after any frontmatter edit.
+> 3. **Fixing dead links COST two pages a unique internal link each.** Both already linked
+>    the calculator via their template, so the corrected body link collapsed into a
+>    duplicate (trap T14). Build green, links resolving, site fine, floor down. ONLY the
+>    link floor catches this. Restored with a genuinely relevant article each, never padding.
+>
+> **Corrections to this doc's own earlier claims, left visible rather than deleted:**
+> the "6 dead links" figure was a SAMPLE (the crawler checks sampled link targets), the true
+> census was **23**; a competing estimate of 21 was also wrong. The blog route does NOT set
+> `dynamicParams=false` and redirects a wrong category rather than 404ing, so 20 of the 23
+> were hard 404s and one was a wasted hop.
+>
+> **Two dead links deliberately LEFT, outside what the owner approved:**
+> `src/app/about/page.tsx:66` points at a post that does not exist, and
+> `src/app/contact/page.tsx:44` points at `/pricing`, a route planned and never built
+> (`StickyCTA.tsx:93` still branches on it). Both need the owner's word.
+>
+> **NOT ASSERTED, do not repeat it as fact:** the resolved capture floor. The 40-char /
+> 8-word override is gone, so it falls to the estate default, which is 20/4 with
+> `NEXT_PUBLIC_MINIFORMS_MULTISTEP` on and 10/0 with it off. The Vercel API would not return
+> that flag's production value. Read it off the deployed page at cutover.
+>
+> **AUDIT-TRAIL WARNING.** The phase 1 gap fix is NOT in a Dentists commit. A sibling
+> agent's repo-wide `git add` swept 28 Dentists files into `f75438bf`
+> ("feat(generalist): high-street mechanic wave 5"). Nothing was lost and the content is
+> byte-identical to the verified build, but `git log -- Dentists/` will not show it. History
+> was deliberately NOT rewritten, with four ports live in one tree. See
+> `docs/_engines/PORT_FIELD_NOTES.md` section 8.
+>
+> **The conversion finding that outranks the design work.** `ResultGateModal` hardcoded a
+> 40-character / 8-word message floor against an estate default of 20. Dentists recorded 23
+> gate starts, **49 `form_error` events every one on the message field, and 0 submits**.
+> Property overrides nothing and converts. **Nine sibling sites still carry this override
+> and Property does not.** Dentists is now the test case; read it ~2026-09-25 against that
+> baseline before touching the other nine.
+>
+> **The honest scoreboard for this port.** Head terms sit at average position 45 (5,106
+> impressions, 8 clicks, 90d). At position 45 no redesign wins a click: that is an AUTHORITY
+> problem and the owner has parked it deliberately. Judge this port on pages that already
+> rank, e.g. `uda-value-explained` at position 6.6 with 6,833 impressions.
+>
+> ---
+>
+> ## Phase 0 record, kept for the baseline numbers
 >
 > **Where it stands.** Phase 0 baseline captured for the Property-standard design port.
 > Production is `18b4f25f` (2026-09-09, READY) and `git diff 18b4f25f..HEAD -- Dentists/`
