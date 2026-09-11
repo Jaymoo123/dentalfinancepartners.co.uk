@@ -15,7 +15,7 @@
  * (from 1 Apr 2024) + 0.08% administration levy = 23.78% of pensionable pay.
  *
  * FIGURES TRACED (all in compute/associate-incorporation.ts):
- * - 2026/27 income tax, Class 4 6%/2%, Class 2 £3.45/week.
+ * - 2026/27 income tax, Class 4 6%/2%. Class 2 removed from 6 Apr 2024 (HP §8).
  * - Employer NIC 15% above £5,000 (from 6 Apr 2025); £12,570 optimal salary.
  * - CT 19%/26.5% marginal/25%; dividends 10.75%/35.75%/39.35% (FA 2026 s.4).
  * - NHS employer-equivalent 23.78%: an ESTIMATE, scheme-rule caveats in copy.
@@ -121,7 +121,7 @@ export const associateIncorporationConfig: PremiumToolConfig = {
           { label: "Net cash after tax", value: gbp(r.soleTrader.net), strong: true },
           { label: "Income tax", value: gbp(r.soleTrader.incomeTax) },
           { label: "Class 4 NIC", value: gbp(r.soleTrader.class4Ni) },
-          { label: "Class 2 NIC", value: gbp(r.soleTrader.class2Ni) },
+          { label: "Class 2 NIC (not payable from 6 Apr 2024)", value: gbp(r.soleTrader.class2Ni) },
           { label: "NHS Pension employer-equivalent value", value: gbp(r.pensionEmployerValue), strong: true },
         ],
         best: !r.ltdWins,
@@ -203,14 +203,14 @@ export const associateIncorporationConfig: PremiumToolConfig = {
     kind: "groupedBar",
     valueFormat: "currency",
     series: [
-      { dataKey: "net", label: "Net cash after tax", color: "var(--gold)" },
+      { dataKey: "net", label: "Net cash after tax", color: "var(--gold-strong)" },
       { dataKey: "pension", label: "NHS Pension employer value", color: "var(--navy)" },
     ],
   },
   explainer: {
     heading: "How this comparison works",
     paragraphs: [
-      "Both routes start from the same net fee income: your fee split of gross fees, less lab fees and other deductible expenses. As a sole trader that figure is your taxable profit, charged to income tax at 20%, 40% or 45%, Class 4 National Insurance at 6% up to £50,270 and 2% above, and Class 2 at £3.45 a week. Through a limited company the same income becomes company turnover: a £12,570 director salary (which uses your personal allowance and attracts £1,135.50 of employer NIC at 15% above the £5,000 threshold, with no Employment Allowance for a single-director company), corporation tax at 19% to 25% on the balance, then dividend tax at the 2026/27 rates of 10.75%, 35.75% and 39.35% on full extraction.",
+      "Both routes start from the same net fee income: your fee split of gross fees, less lab fees and other deductible expenses. As a sole trader that figure is your taxable profit, charged to income tax at 20%, 40% or 45%, and Class 4 National Insurance at 6% up to £50,270 and 2% above. Class 2 is not payable: the liability was removed from 6 April 2024. Through a limited company the same income becomes company turnover: a £12,570 director salary (which uses your personal allowance and attracts £1,135.50 of employer NIC at 15% above the £5,000 threshold, with no Employment Allowance for a single-director company), corporation tax at 19% to 25% on the balance, then dividend tax at the 2026/27 rates of 10.75%, 35.75% and 39.35% on full extraction.",
       "The pension layer is what makes this comparison honest. A self-employed associate performing NHS dental services is normally a type-1 practitioner member of the NHS Pension Scheme, and the employer side of that benefit, a 23.7% contribution plus a 0.08% administration levy on pensionable pay, is funded for you. Bill the same work through a limited company and you generally fall out of the practitioner route: the company is not an Employing Authority, so no NHS Pension accrues on that income. The tool prices that forgone employer value at 23.78% of your estimated pensionable earnings and sets it against the headline tax saving.",
       "The verdict compares total annual value: net cash plus pension employer value for the sole trader, against net cash alone for the company. For a typical NHS-weighted associate the pension value swamps the incorporation tax saving. The gap narrows as the private share of your income rises, because private fees were never pensionable in the first place.",
     ],
@@ -228,7 +228,7 @@ export const associateIncorporationPageCopy = {
     "Every generic incorporation calculator will tell you a limited company saves tax. For an associate dentist that answer is often wrong, because it ignores the single most valuable benefit of self-employment in NHS dentistry: type-1 practitioner membership of the NHS Pension Scheme. This calculator runs the full 2026/27 sole trader vs limited company comparison, then prices the pension consequence of incorporating so you can see the real net position.",
   methodology: [
     "Step 1, common base. Gross fees × your fee split, less lab fees on your share and other deductible expenses, gives net fee income. Both routes start here, so the comparison isolates structure, not workload.",
-    "Step 2, sole trader. Net fee income is taxed as trading profit: income tax (personal allowance £12,570, 20%/40%/45%, allowance tapered above £100,000), Class 4 NIC at 6% between £12,570 and £50,270 and 2% above, and Class 2 NIC at £3.45 a week.",
+    "Step 2, sole trader. Net fee income is taxed as trading profit: income tax (personal allowance £12,570, 20%/40%/45%, allowance tapered above £100,000), and Class 4 NIC at 6% between £12,570 and £50,270 and 2% above. Class 2 NIC is not payable from 6 April 2024.",
     "Step 3, limited company. The company pays you a £12,570 salary (no income tax or employee NIC at that level; £1,135.50 employer NIC), deducts £1,800 of admin and accountancy, pays corporation tax at 19% up to £50,000 profit, an effective 26.5% in the marginal band to £250,000, and 25% above, then distributes the balance as dividends taxed at 10.75%, 35.75% and 39.35% (FA 2026 rates, £500 allowance).",
     "Step 4, the pension layer. Pensionable earnings are estimated as the NHS share of your net fees (or your own override). As a sole-trader practitioner member, the employer side of your NHS Pension, a 23.7% contribution plus the 0.08% administration levy, 23.78% in total, is funded on that pay. Incorporating generally forfeits it, so the tool counts 23.78% of pensionable pay as an annual cost of the Ltd route.",
     "Step 5, verdict. Sole-trader total value (net cash plus pension employer value) against Ltd net cash. The tool reports which route is ahead and by how much a year.",

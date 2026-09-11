@@ -47,8 +47,8 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
     // class4: lower=39630*0.06=2378... Wait: class4 is on taxableProfit=52200, not t
     //   class4lower = min(52200,50270)-12570 = 37700; upper = max(0,52200-50270) = 1930
     //   = 37700*0.06 + 1930*0.02 = 2262 + 38.6 = 2300.6
-    // class2: 52200>6725 -> 52*3.45=179.4
-    // totalTax=8312+2300.6+179.4=10792; netCash=52200-10792=41408
+    // class2: 0 (Class 2 removed 6 Apr 2024, HP §8)
+    // totalTax=8312+2300.6=10612.6; netCash=52200-10612.6=41587.4
     // Conservation: netCash+totalTax=41408+10792=52200=taxableProfit (pension=0). Pass.
     const r = calcAssociateTakeHome(120000, 50, 8, 3000, 0);
     expect(r.associateShare).toBe(60000);
@@ -57,10 +57,10 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
     expect(r.taxableProfit).toBe(52200);
     expect(r.incomeTax).toBeCloseTo(8312, 2);
     expect(r.class4Ni).toBeCloseTo(2300.6, 2);
-    expect(r.class2Ni).toBeCloseTo(179.4, 2);
-    expect(r.totalTax).toBeCloseTo(10792, 1);
-    expect(r.netCash).toBeCloseTo(41408, 1);
-    expect(r.effectiveRate).toBeCloseTo(20.674, 2);
+    expect(r.class2Ni).toBe(0);
+    expect(r.totalTax).toBeCloseTo(10612.6, 1);
+    expect(r.netCash).toBeCloseTo(41587.4, 1);
+    expect(r.effectiveRate).toBeCloseTo(20.331, 2);
     // Conservation: netCash + totalTax = taxableProfit (pension=0)
     expect(r.netCash + r.totalTax).toBeCloseTo(52200, 1);
   });
@@ -69,15 +69,15 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
     // associateShare=90000, lab=9000, afterLab=81000, profit=76000, taxableProfit=66000
     // incomeTax: t=66000-12570=53430; basic=37700->7540; higher=15730->6292; IT=13832
     // class4: lower=37700*0.06=2262; upper=(66000-50270)*0.02=314.6; c4=2576.6
-    // class2: 76000>6725 -> 179.4; totalTax=16588; netCash=66000-16588=49412
+    // class2: 0 (removed 6 Apr 2024); totalTax=16408.6; netCash=66000-16408.6=49591.4
     const r = calcAssociateTakeHome(200000, 45, 10, 5000, 10000);
     expect(r.profit).toBeCloseTo(76000, 0);
     expect(r.taxableProfit).toBeCloseTo(66000, 0);
     expect(r.incomeTax).toBeCloseTo(13832, 1);
     expect(r.class4Ni).toBeCloseTo(2576.6, 1);
-    expect(r.class2Ni).toBeCloseTo(179.4, 1);
-    expect(r.totalTax).toBeCloseTo(16588, 0);
-    expect(r.netCash).toBeCloseTo(49412, 0);
+    expect(r.class2Ni).toBe(0);
+    expect(r.totalTax).toBeCloseTo(16408.6, 0);
+    expect(r.netCash).toBeCloseTo(49591.4, 0);
   });
 
   it("TC3: grossFees=300000, associatePct=50, labPct=8, expenses=8000, pension=15000 (PA taper)", () => {
@@ -86,18 +86,18 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
     // t=115000-5070=109930; basic=min(109930,37700)=37700->7540;
     //   higher=min(72230,74870)=72230->28892; add=0; IT=36432
     // class4: taxableProfit=115000; lower=37700*0.06=2262; upper=(115000-50270)*0.02=1294.6; c4=3556.6
-    // class2: 130000>6725 -> 179.4; totalTax=40168; netCash=115000-40168=74832
-    // effectiveRate = 40168/130000*100 = 30.898...%
-    // Conservation: netCash+totalTax=74832+40168=115000=taxableProfit. Pass.
+    // class2: 0 (removed 6 Apr 2024); totalTax=39988.6; netCash=115000-39988.6=75011.4
+    // effectiveRate = 39988.6/130000*100 = 30.760...%
+    // Conservation: netCash+totalTax=75011.4+39988.6=115000=taxableProfit. Pass.
     const r = calcAssociateTakeHome(300000, 50, 8, 8000, 15000);
     expect(r.profit).toBeCloseTo(130000, 0);
     expect(r.taxableProfit).toBeCloseTo(115000, 0);
     expect(r.incomeTax).toBeCloseTo(36432, 1);
     expect(r.class4Ni).toBeCloseTo(3556.6, 1);
-    expect(r.class2Ni).toBeCloseTo(179.4, 1);
-    expect(r.totalTax).toBeCloseTo(40168, 0);
-    expect(r.netCash).toBeCloseTo(74832, 0);
-    expect(r.effectiveRate).toBeCloseTo(30.898, 2);
+    expect(r.class2Ni).toBe(0);
+    expect(r.totalTax).toBeCloseTo(39988.6, 0);
+    expect(r.netCash).toBeCloseTo(75011.4, 0);
+    expect(r.effectiveRate).toBeCloseTo(30.76, 2);
     // Conservation: netCash + totalTax = taxableProfit
     expect(r.netCash + r.totalTax).toBeCloseTo(115000, 1);
   });
@@ -109,15 +109,15 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
     //   basic=37700->7540; higher band top taxable=125140-570=124570, width=124570-37700=86870
     //   higher=min(123430-37700=85730,86870)=85730->34292; add=max(0,123430-37700-85730)=0
     //   IT=41832; c4: lower=37700*0.06=2262; upper=(124000-50270)*0.02=1474.6; c4=3736.6
-    //   class2: 179.4; totalTax=45748 (executed); net=124000-45748=78252
+    //   class2: 0 (removed 6 Apr 2024); totalTax=45568.6; net=124000-45568.6=78431.4
     // Conservation: soleTrader net+tax=77709+46291=124000. Pass.
     // ltd.net: 74868.32394375 (executed)
     // umbrella.net: 71346.6 (executed)
     const r = calcLocumStructure(600, 220, 8000);
     expect(r.grossIncome).toBe(132000);
     expect(r.profit).toBe(124000);
-    expect(r.soleTrader.net).toBeCloseTo(78252, 0);
-    expect(r.soleTrader.tax).toBeCloseTo(45748, 0);
+    expect(r.soleTrader.net).toBeCloseTo(78431.4, 0);
+    expect(r.soleTrader.tax).toBeCloseTo(45568.6, 0);
     // Conservation: soleTrader net + tax = profit
     expect(r.soleTrader.net + r.soleTrader.tax).toBeCloseTo(124000, 0);
     expect(r.ltd.net).toBeCloseTo(74868.32, 1);
@@ -143,7 +143,7 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
       },
       rows: [],
     });
-    expect(result.headline.value).toContain("41,408");
+    expect(result.headline.value).toContain("41,587");
     expect(result.scenarioResults).toHaveLength(3);
     const st = result.scenarioResults?.find((s) => s.id === "sole-trader");
     expect(st?.best).toBe(true);
@@ -156,12 +156,12 @@ describe("Tool 1 · associate-take-home-premium (calcAssociateTakeHome + calcLoc
 
 describe("Tool 2 · principal-extraction-premium (calcPrincipalExtraction)", () => {
   it("TC1: profit=120000, nhsActive=true, pension=0 -- partnership wins, conservation", () => {
-    // partnership.net=76732, partnership.tax=43268; conservation: 76732+43268=120000
+    // partnership.net=76911.4, partnership.tax=43088.6; conservation: sums to 120000
     // (PA-taper higher-band fix: higher band widens as PA tapers from £100k, IT ↓)
     // ltd.net=72279.37, ltd.tax=47720.63; conservation: ~120000
     const r = calcPrincipalExtraction(120000, true, 0);
-    expect(r.partnership.net).toBeCloseTo(76732, 0);
-    expect(r.partnership.tax).toBeCloseTo(43268, 0);
+    expect(r.partnership.net).toBeCloseTo(76911.4, 0);
+    expect(r.partnership.tax).toBeCloseTo(43088.6, 0);
     // Conservation: partnership net + tax = profit (pension=0 so no add-back ambiguity)
     expect(r.partnership.net + r.partnership.tax).toBeCloseTo(120000, 0);
     expect(r.ltd.net).toBeCloseTo(72279.37, 1);
@@ -180,21 +180,21 @@ describe("Tool 2 · principal-extraction-premium (calcPrincipalExtraction)", () 
     const ltdScenario = result.scenarioResults?.find((s) => s.id === "ltd");
     expect(partnershipScenario?.best).toBe(true);
     expect(ltdScenario?.best).toBe(false);
-    expect(result.headline.value).toContain("76,732");
+    expect(result.headline.value).toContain("76,911");
     // NHS-active pension impact row present in breakdown
     const pensionRow = result.breakdown?.find((r) => r.label === "NHS Pension impact");
     expect(pensionRow?.value).toContain("Partnership preserves NHS Pension");
   });
 
   it("TC2: profit=200000, nhsActive=true, pension=40000 -- NHS-active pension impact string", () => {
-    // partnership.net=177161 (includes +pension add-back), partnership.tax=62839
+    // partnership.net=177340.4 (includes +pension add-back), partnership.tax=62659.6
     // (taxable=160000; PA-taper higher-band fix widens the higher band, IT ↓)
-    // Conservation: (177161 - 40000) + 62839 = 200000. Pass.
+    // Conservation: (177340.4 - 40000) + 62659.6 = 200000. Pass.
     // ltd.net=128188.07, ltd.tax=71811.93 (dividend higher-band widens as PA
     // tapers, so less dividend hits the 39.35% additional rate; ltd net ↑)
     const r = calcPrincipalExtraction(200000, true, 40000);
-    expect(r.partnership.net).toBeCloseTo(177161, 1);
-    expect(r.partnership.tax).toBeCloseTo(62839, 1);
+    expect(r.partnership.net).toBeCloseTo(177340.4, 1);
+    expect(r.partnership.tax).toBeCloseTo(62659.6, 1);
     // Conservation: (net - pensionContrib) + tax = profit
     expect(r.partnership.net - 40000 + r.partnership.tax).toBeCloseTo(200000, 0);
     expect(r.ltd.net).toBeCloseTo(128188.07, 1);
@@ -203,11 +203,11 @@ describe("Tool 2 · principal-extraction-premium (calcPrincipalExtraction)", () 
   });
 
   it("TC3: profit=90000, nhsActive=false, pension=0 -- partnership wins, NHS-inactive note", () => {
-    // partnership.net=63332, partnership.tax=26668; conservation: 63332+26668=90000
+    // partnership.net=63511.4, partnership.tax=26488.6; conservation: sums to 90000
     // ltd.net=58112.25, ltd.tax=31887.75; conservation: ~90000
     const r = calcPrincipalExtraction(90000, false, 0);
-    expect(r.partnership.net).toBeCloseTo(63332, 0);
-    expect(r.partnership.tax).toBeCloseTo(26668, 0);
+    expect(r.partnership.net).toBeCloseTo(63511.4, 0);
+    expect(r.partnership.tax).toBeCloseTo(26488.6, 0);
     expect(r.partnership.net + r.partnership.tax).toBeCloseTo(90000, 0);
     expect(r.ltd.net).toBeCloseTo(58112.25, 1);
     expect(r.ltd.tax).toBeCloseTo(31887.75, 1);
@@ -549,9 +549,11 @@ describe("Tool 5 · uda-nhs-premium (calcUdaValue)", () => {
 // ── Registry: hasPremiumTool and getPremiumTool ──────────────────────────────
 
 describe("Premium registry", () => {
-  it("hasPremiumTool returns true for all 5 registered toolIds", async () => {
-    const { hasPremiumTool } = await import("./registry");
+  it("hasPremiumTool returns true for all 6 registered toolIds", async () => {
+    const { hasPremiumTool, PREMIUM_TOOLS } = await import("./registry");
+    expect(Object.keys(PREMIUM_TOOLS)).toHaveLength(6);
     expect(hasPremiumTool("associate-take-home-premium")).toBe(true);
+    expect(hasPremiumTool("associate-incorporation-premium")).toBe(true);
     expect(hasPremiumTool("principal-extraction-premium")).toBe(true);
     expect(hasPremiumTool("practice-purchase-premium")).toBe(true);
     expect(hasPremiumTool("practice-sale-premium")).toBe(true);
@@ -639,8 +641,8 @@ describe("Conservation invariants: compute() output at default inputs", () => {
       },
       rows: [],
     });
-    // headline value should be "£41,408"
-    expect(result.headline.value).toContain("41,408");
+    // headline value should be "£41,587"
+    expect(result.headline.value).toContain("41,587");
     expect(result.headline.tone).toBe("good");
     // No NaN anywhere
     for (const row of result.breakdown ?? []) {

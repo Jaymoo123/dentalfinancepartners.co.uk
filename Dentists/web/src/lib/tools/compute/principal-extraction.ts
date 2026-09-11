@@ -9,6 +9,7 @@
  *   - HMRC 2026/27 bands and rates.
  *   - Employer NI 15% above £5,000 secondary threshold: from 6 Apr 2025.
  *   - Dividend rates 10.75%/35.75%/39.35%: FA 2026 s.4 from 6 Apr 2026.
+ *   - Class 2 NI: NOT PAYABLE. Removed from 6 April 2024 (HP §8, §8.A).
  *
  * Limitations:
  *   - Does NOT model NHS Pension accrual loss from incorporation.
@@ -41,8 +42,6 @@ const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_RATE = 0.25;
 const CT_SMALL_RATE = 0.19;
-const CLASS2_WEEKLY = 3.45;
-const CLASS2_THRESHOLD = 6725;
 const LTD_ADMIN_COST = 2500;
 
 function calcIncomeTax(taxable: number): number {
@@ -129,7 +128,9 @@ export function calcPrincipalExtraction(
 ): PrincipalExtractionResult {
   const partnerIncomeTax = calcIncomeTax(profit - pensionContrib);
   const partnerClass4 = calcClass4(Math.max(0, profit - pensionContrib));
-  const class2 = profit > CLASS2_THRESHOLD ? 52 * CLASS2_WEEKLY : 0;
+  // Class 2 NIC abolished from 6 April 2024 (HP §8). Explicit zero keeps the
+  // result shape unchanged.
+  const class2 = 0;
   const partnershipNet = profit - partnerIncomeTax - partnerClass4 - class2;
 
   const ltdSalary = 12570;

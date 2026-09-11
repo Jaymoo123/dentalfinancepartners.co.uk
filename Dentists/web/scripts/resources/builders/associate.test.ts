@@ -7,7 +7,7 @@
  *
  * Golden case (brief §4.1):
  *   grossFees=120000, associatePct=50, labPct=8, expenses=3000, pension=0
- *   -> netCash=41408, totalTax=10792, incomeTax=8312, class4=2300.6, class2=179.4
+ *   -> netCash=41587.4, totalTax=10612.6, incomeTax=8312, class4=2300.6, class2=0
  *
  * Note: calcAssociateTakeHome defaults in the compute lib tests use labPct=5 / expenses=8000.
  * The brief §4.1 specifies the builder defaults as labPct=8 / expenses=3000 / pension=0,
@@ -46,19 +46,18 @@ import { calcAssociateTakeHome } from "../../../src/lib/tools/compute/associate-
 //   inUpper = max(0, 52200-50270) = 1930
 //   class4 = 37700*0.06 + 1930*0.02 = 2262 + 38.6 = 2300.6. Correct.
 //
-// class2: profit=52200 > 6725 -> 52*3.45=179.4. Correct.
-// totalTax = 8312 + 2300.6 + 179.4 = 10792. Correct.
-// netCash = 52200 - 10792 = 41408. Correct.
+// class2 = 0: Class 2 liability removed from 6 April 2024 (HP §8, §8.A).
+// totalTax = 8312 + 2300.6 = 10612.6. netCash = 52200 - 10612.6 = 41587.4.
 
 describe("associate builder: brief golden case (labPct=8, expenses=3000, pension=0)", () => {
   const res = calcAssociateTakeHome(120000, 50, 8, 3000, 0);
 
-  it("netCash equals brief golden 41408", () => {
-    expect(res.netCash).toBeCloseTo(41408, 0);
+  it("netCash equals corrected golden 41587.4", () => {
+    expect(res.netCash).toBeCloseTo(41587.4, 0);
   });
 
-  it("totalTax equals brief golden 10792", () => {
-    expect(res.totalTax).toBeCloseTo(10792, 0);
+  it("totalTax equals corrected golden 10612.6", () => {
+    expect(res.totalTax).toBeCloseTo(10612.6, 0);
   });
 
   it("incomeTax equals brief golden 8312", () => {
@@ -69,8 +68,8 @@ describe("associate builder: brief golden case (labPct=8, expenses=3000, pension
     expect(res.class4Ni).toBeCloseTo(2300.6, 1);
   });
 
-  it("class2 equals brief golden 179.4", () => {
-    expect(res.class2Ni).toBeCloseTo(179.4, 1);
+  it("class2 is nil from 6 Apr 2024 (HP §8)", () => {
+    expect(res.class2Ni).toBe(0);
   });
 
   it("conservation: netCash + totalTax = taxableProfit", () => {

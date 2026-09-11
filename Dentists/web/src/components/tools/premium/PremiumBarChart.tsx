@@ -88,17 +88,42 @@ export function PremiumBarChart({
   const scale = (v: number) => (v / maxVal) * plotH;
 
   return (
-    <div
-      style={{ height: CHART_HEIGHT }}
-      aria-hidden="true"
-      className="w-full overflow-hidden"
-    >
-      <svg
+    <div className="w-full">
+      {/* Values as real text nodes. The svg below is decorative, so this table is
+          the only accessible route to the numbers. */}
+      <table className="sr-only">
+        <caption>Comparison of values across groups</caption>
+        <thead>
+          <tr>
+            <th scope="col">Group</th>
+            {series.map((s) => (
+              <th key={s.dataKey} scope="col">
+                {s.label}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((datum, gi) => (
+            <tr key={gi}>
+              <th scope="row">{String(datum.name)}</th>
+              {series.map((s) => (
+                <td key={s.dataKey}>
+                  {formatValue(Number(datum[s.dataKey] ?? 0), format)}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div
+        style={{ height: CHART_HEIGHT }}
+        className="w-full overflow-hidden"
+      ><svg
         viewBox={`0 0 ${plotW} ${CHART_HEIGHT}`}
         preserveAspectRatio="xMidYMid meet"
         className="w-full h-full"
-        role="img"
-        aria-label="Bar chart comparing values across groups"
+        aria-hidden="true"
       >
         {/* Horizontal grid lines */}
         {[0.25, 0.5, 0.75, 1].map((frac) => {
@@ -190,7 +215,8 @@ export function PremiumBarChart({
             ))}
           </g>
         )}
-      </svg>
+        </svg>
+      </div>
     </div>
   );
 }

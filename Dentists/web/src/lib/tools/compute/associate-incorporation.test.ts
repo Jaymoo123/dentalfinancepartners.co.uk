@@ -7,7 +7,7 @@
  *   share 90,000; lab 7,200; netFees 78,800.
  *   ST: IT = 37,700*0.2 + 28,530*0.4 = 7,540 + 11,412 = 18,952
  *       C4 = 37,700*0.06 + 28,530*0.02 = 2,262 + 570.60 = 2,832.60
- *       C2 = 179.40; total 21,964; net 56,836.
+ *       C2 = 0 (Class 2 removed 6 Apr 2024, HP §8); total 21,784.60; net 57,015.40.
  *   Ltd: salary 12,570; erNI 1,135.50; ctProfit = 78,800-12,570-1,135.50-1,800
  *        = 63,294.50; CT = 9,500 + 13,294.50*0.265 = 13,023.04; div 50,271.46
  *        divTax: taxable 49,771.46; basic band left 37,700 @10.75% = 4,052.75;
@@ -27,8 +27,9 @@ describe("calcAssociateIncorporation", () => {
     expect(r.netFees).toBe(78800);
     expect(r2(r.soleTrader.incomeTax)).toBe(18952);
     expect(r2(r.soleTrader.class4Ni)).toBe(2832.6);
-    expect(r2(r.soleTrader.class2Ni)).toBe(179.4);
-    expect(r2(r.soleTrader.net)).toBe(56836);
+    // Class 2 NIC abolished 6 Apr 2024 (HP §8): must be exactly zero.
+    expect(r2(r.soleTrader.class2Ni)).toBe(0);
+    expect(r2(r.soleTrader.net)).toBe(57015.4);
     expect(r2(r.ltd.employerNi)).toBe(1135.5);
     expect(r2(r.ltd.ctProfit)).toBe(63294.5);
     expect(r2(r.ltd.corporationTax)).toBe(13023.04);

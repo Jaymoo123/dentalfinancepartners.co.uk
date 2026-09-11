@@ -17,12 +17,12 @@
  *       additional=max(0,107430-37700-69730)=max(0,0)=0
  *       IT=37700*0.20+69730*0.40=7540+27892=35432
  *     class4: lower=37700*0.06=2262; upper=(120000-50270)*0.02=69730*0.02=1394.6; total=3656.6
- *     class2: 120000>6725 -> 52*3.45=179.4
- *     partnershipNet=120000-35432-3656.6-179.4=80732 (with pensionContrib=0)
+ *     class2: 0 (Class 2 removed 6 Apr 2024, HP §8)
+ *     partnershipNet=120000-35432-3656.6=80911.4 (with pensionContrib=0)
  *     Actually: partnershipNetTotal = partnershipNet + pensionContrib
  *       partnershipNet = profit - partnerIncomeTax - partnerClass4 - class2
- *                      = 120000 - 35432 - 3656.6 - 179.4 = 80732
- *       partnershipNetTotal = 80732 + 0 = 80732
+ *                      = 120000 - 35432 - 3656.6 = 80911.4
+ *       partnershipNetTotal = 80911.4 + 0 = 80911.4
  *
  * Hmm, brief §4.1 says partnership.net=76489. Let me re-read the compute lib.
  * The compute lib uses: partnerIncomeTax = calcIncomeTax(profit - pensionContrib)
@@ -33,9 +33,9 @@
  * IT = 37700*0.20 + 69730*0.40 = 7540 + 27892 = 35432
  * class4 = (50270-12570)*0.06 + (120000-50270)*0.02 = 37700*0.06 + 69730*0.02
  *        = 2262 + 1394.6 = 3656.6
- * class2 = 179.4
- * partnershipNet = 120000 - 35432 - 3656.6 - 179.4 = 80732
- * partnershipNetTotal = 80732 + 0 = 80732 (not 76489)
+ * class2 = 0 (removed 6 Apr 2024, HP §8)
+ * partnershipNet = 120000 - 35432 - 3656.6 = 80911.4
+ * partnershipNetTotal = 80911.4 + 0 = 80911.4
  *
  * The brief may use different defaults. Let me just test the actual compute lib
  * at profit=120000 and pin whatever it returns (source of truth approach).
@@ -55,15 +55,16 @@ describe("principal builder: profit=120000, nhsActive=true, pension=0", () => {
     expect(res.ltd.net).toBeGreaterThan(0);
   });
 
-  it("partnership net pinned (brief golden 76732)", () => {
-    // Brief §4.1 golden: partnership.net=76732 at profit=120000, nhsActive=true, pension=0.
+  it("partnership net pinned (corrected golden 76911.4)", () => {
+    // Corrected golden: partnership.net=76911.4 at profit=120000, nhsActive=true, pension=0
+    // (Class 2 removed 6 Apr 2024, HP §8; was 76732).
     // (PA-taper higher-band fix: higher band widens as PA tapers above £100k, IT ↓.)
-    expect(res.partnership.net).toBeCloseTo(76732, 0);
+    expect(res.partnership.net).toBeCloseTo(76911.4, 0);
   });
 
-  it("partnership tax pinned (brief golden 43268)", () => {
-    // Brief §4.1 golden: partnership.tax=43268.
-    expect(res.partnership.tax).toBeCloseTo(43268, 0);
+  it("partnership tax pinned (corrected golden 43088.6)", () => {
+    // Corrected golden: partnership.tax=43088.6 (was 43268 with the abolished Class 2).
+    expect(res.partnership.tax).toBeCloseTo(43088.6, 0);
   });
 
   it("conservation: partnership net + tax = profit", () => {

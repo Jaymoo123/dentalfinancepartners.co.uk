@@ -87,7 +87,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     },
     magnetTitle: "Get the associate take-home model",
     magnetBlurbTemplate:
-      "What you keep from your fees after income tax, Class 4 and Class 2 NIC, with live formulas. A locum structure sheet: sole trader vs limited company vs umbrella side by side.",
+      "What you keep from your fees after income tax and Class 4 NIC, with live formulas. A locum structure sheet: sole trader vs limited company vs umbrella side by side.",
   },
   principal: {
     topic: "principal",

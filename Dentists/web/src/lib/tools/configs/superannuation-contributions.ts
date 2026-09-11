@@ -113,7 +113,7 @@ export const superannuationContributionsTool: GenericTool = {
           strong: true,
         },
       ],
-      note: `Tier rates effective ${TIER_EFFECTIVE_DATE} (England/Wales); thresholds shown are 2024/25 values and are uprated with NHS pay awards, so check the current year's bands if you are near a boundary. Higher-rate relief is claimed via self-assessment, not at source. Employer 23.7% (plus a 0.08% administration levy), the rate from 1 April 2024, is borne by the GDS/PDS contract or practice; it does not reduce your take-home but matters for principal cost modelling.`,
+      note: `Tier thresholds and rates effective ${TIER_EFFECTIVE_DATE}, England and Wales only (Scotland and Northern Ireland run different tier tables). The rates have been settled since 1 April 2024; the thresholds are uprated with NHS pay awards, so check the current year's bands if you are near a boundary. Higher-rate relief is claimed via self-assessment, not at source. Employer 23.7% (plus a 0.08% administration levy), the rate from 1 April 2024, is borne by the GDS/PDS contract or practice; it does not reduce your take-home but matters for principal cost modelling.`,
     };
   },
   explainer: {
@@ -121,10 +121,10 @@ export const superannuationContributionsTool: GenericTool = {
     paragraphs: [
       "For associates, your superannuable (pensionable) earnings are not your gross fee income. The England and Wales convention sets net pensionable earnings at 43.9% of gross NHS fee income. This percentage reflects an assumed expenses deduction built into the GDS contract and has been the standard rate used by NHS Pensions for practitioner assessments. You can adjust it in the advanced options if your contract specifies a different figure.",
       "For principals, net pensionable earnings are your gross NHS contract income minus allowable practice expenses, as calculated on your NHS pension certificate. This figure is provided by NHS England or Wales via your annual certificate and differs from your taxable profit.",
-      "Your member contribution is determined by which tier your pensionable earnings fall into. There are six tiers, from 5.2% (earnings up to £13,259) up to 12.5% (above £63,994, 2024/25 thresholds). The tier applies to all your pensionable earnings, not just the slice above the threshold. The employer pays 23.7% on top (the rate from 1 April 2024, up from 20.6%), plus a 0.08% administration levy, so 23.78% in total.",
+      "Your member contribution is determined by which tier your pensionable earnings fall into. There are six tiers, from 5.2% (earnings up to £13,259) up to 12.5% (earnings of £67,669 and above) on the 2026/27 England and Wales thresholds. The tier applies to all your pensionable earnings, not just the slice above the threshold. The employer pays 23.7% on top (the rate from 1 April 2024, up from 20.6%), plus a 0.08% administration levy, so 23.78% in total.",
       "Tax relief is available on your member contribution at your marginal rate. For most associates, 20% basic-rate relief is given automatically via the net-pay arrangement. Higher-rate taxpayers (income above £50,270) can claim the additional 20% through self-assessment.",
       "Each year you contribute, you build 1/54th of your pensionable pay as a guaranteed annual pension under the 2015 CARE scheme. This revalues each year by CPI plus 1.5%, providing inflation protection on past accrual.",
-      "Worked example 1: an associate generating £120,000 of gross NHS fee income has net pensionable earnings of £52,680 (43.9%). That falls in the 10.7% tier, so the member contribution is £5,636.76 a year (£469.73 a month). As a higher-rate taxpayer the relief is worth £2,254.70, so the true annual cost is £3,382.06 (£281.84 a month). The practice-side employer contribution at 23.7% is £12,485.16, and the year adds £975.56 of guaranteed annual CARE pension (£52,680 divided by 54).",
+      "Worked example 1: an associate generating £120,000 of gross NHS fee income has net pensionable earnings of £52,680 (43.9%). On the 2026/27 England and Wales thresholds that falls in the 9.8% tier (£35,156 to £52,778), so the member contribution is £5,162.64 a year (£430.22 a month). As a higher-rate taxpayer the relief is worth £2,065.06, so the true annual cost is £3,097.58 (£258.13 a month). The practice-side employer contribution at 23.7% is £12,485.16, and the year adds £975.56 of guaranteed annual CARE pension (£52,680 divided by 54).",
       "Worked example 2: a principal with net pensionable earnings of £85,000 on their NHS certificate sits in the top 12.5% tier, paying £10,625 a year (£885.42 a month). With 40% relief the net cost is £6,375 (£531.25 a month). The employer contribution on those earnings at 23.7% is £20,145, and the year adds £1,574.07 of guaranteed annual CARE pension.",
     ],
   },
@@ -137,7 +137,7 @@ export const superannuationContributionsTool: GenericTool = {
     {
       question: "Does the contribution tier apply to all my earnings or just the excess?",
       answer:
-        "The tier rate applies to all your pensionable earnings, not just the slice above the threshold. If your pensionable earnings are £50,000, you pay 10.7% on the full £50,000 (the 2024/25 tier starting at £49,914), not a blended rate. This means moving into a higher tier affects the contribution on your entire pensionable pay, so earnings near a boundary are worth checking carefully.",
+        "The tier rate applies to all your pensionable earnings, not just the slice above the threshold. If your pensionable earnings are £50,000, you pay 9.8% on the full £50,000 (the 2026/27 England and Wales tier running from £35,156 to £52,778), not a blended rate. This means moving into a higher tier affects the contribution on your entire pensionable pay, so earnings near a boundary are worth checking carefully.",
     },
     {
       question: "What does the 23.7% employer contribution mean for me as an associate?",
@@ -157,7 +157,7 @@ export const superannuationContributionsTool: GenericTool = {
     {
       question: "When were the contribution tiers last changed?",
       answer:
-        "The current six-tier structure was phased in from October 2022, with the final rates (5.2% to 12.5%) in force from 1 April 2024. The rates are settled, but the earnings thresholds are uprated in line with NHS pay awards, so the boundary figures move most years; this tool uses the 2024/25 thresholds. The employer contribution rate is 23.7% from 1 April 2024 (up from 20.6%), plus a 0.08% administration levy, so 23.78% in total. Always verify current bands at nhsbsa.nhs.uk before making financial decisions.",
+        "The current six-tier structure was phased in from October 2022, with the final rates (5.2% to 12.5%) in force from 1 April 2024. The rates are settled, but the earnings thresholds are uprated in line with NHS pay awards, so the boundary figures move most years; this tool uses the 2026/27 England and Wales thresholds, in force from 1 April 2026 after a 3.8% CPI uprating. The employer contribution rate is 23.7% from 1 April 2024 (up from 20.6%), plus a 0.08% administration levy, so 23.78% in total. Always verify current bands at nhsbsa.nhs.uk before making financial decisions.",
     },
   ],
   related: [

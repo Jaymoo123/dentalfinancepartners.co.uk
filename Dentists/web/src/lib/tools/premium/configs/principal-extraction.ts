@@ -161,14 +161,14 @@ export const principalExtractionConfig: PremiumToolConfig = {
     kind: "groupedBar",
     valueFormat: "currency",
     series: [
-      { dataKey: "partnership", label: "Sole trader / partnership", color: "var(--gold)" },
+      { dataKey: "partnership", label: "Sole trader / partnership", color: "var(--gold-strong)" },
       { dataKey: "ltd", label: "Limited company", color: "var(--navy)" },
     ],
   },
   explainer: {
     heading: "How this planner works",
     paragraphs: [
-      "A dental principal or practice owner has two main extraction routes: taking profit directly as a sole trader or partnership (income tax plus Class 4 and Class 2 NIC on the full profit), or channelling it through a limited company (the company pays corporation tax at 19% on small profits up to £50,000 or 25% on profits above £250,000, with marginal relief between; you then take a £12,570 director salary and pay the remainder as dividends). The 2026/27 dividend rates are 10.75% (basic), 35.75% (higher) and 39.35% (additional) following the FA 2026 uplift.",
+      "A dental principal or practice owner has two main extraction routes: taking profit directly as a sole trader or partnership (income tax plus Class 4 NIC on the full profit; Class 2 was removed from 6 April 2024), or channelling it through a limited company (the company pays corporation tax at 19% on small profits up to £50,000 or 25% on profits above £250,000, with marginal relief between; you then take a £12,570 director salary and pay the remainder as dividends). The 2026/27 dividend rates are 10.75% (basic), 35.75% (higher) and 39.35% (additional) following the FA 2026 uplift.",
       "At typical dental practice profit levels, the headline tax gap between the two routes is smaller than many principals expect, and it has narrowed further with the 2026/27 dividend rate increase. Employer NIC at 15% above the £5,000 secondary threshold (effective 6 April 2025) also reduces the Ltd advantage compared with earlier years.",
       "The most important number is not in this tool: it is the actuarial value of the NHS Pension accrual you give up on dividends. A full-rate NHS principal with 10 or more years of active membership ahead can face a pension cost that exceeds the lifetime tax saving from a limited company structure. This tool surfaces the pension-impact flag when you indicate you are an active NHS Pension member, but a full actuarial assessment needs a specialist dental financial planner (HP §2.C).",
     ],

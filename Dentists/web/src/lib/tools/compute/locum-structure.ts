@@ -7,7 +7,9 @@
  * Figures sourced:
  *   - Income tax bands/rates: HMRC 2026/27
  *   - Class 4 NI 6%/2% thresholds: HMRC 2026/27
- *   - Class 2 NI £3.45/week: HMRC 2026/27
+ *   - Class 2 NI: NOT PAYABLE. Removed from 6 April 2024 (HP §8, §8.A). Profits at
+ *     or above the small profits threshold (£7,105, 2026/27) are treated as paid;
+ *     voluntary Class 2 at £3.65/week applies BELOW it only and is not modelled.
  *   - Employer NI 15% above £5,000 secondary threshold: HMRC from 6 Apr 2025
  *   - Employee NI 8% (£12,570–£50,270), 2% above: HMRC 2026/27
  *   - Dividend allowance £500: HMRC 2026/27
@@ -46,8 +48,6 @@ const DIVIDEND_ADDITIONAL = 0.3935;
 const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_RATE = 0.25;
 const CT_SMALL_RATE = 0.19;
-const CLASS2_WEEKLY = 3.45;
-const CLASS2_THRESHOLD = 6725;
 const LTD_ADMIN_COST = 1800;
 const UMBRELLA_MARGIN = 0.05;
 
@@ -139,7 +139,9 @@ export function calcLocumStructure(
     const upper = Math.max(0, profit - CLASS4_UPPER);
     return lower * CLASS4_RATE_LOWER + upper * CLASS4_RATE_UPPER;
   })();
-  const class2 = profit > CLASS2_THRESHOLD ? 52 * CLASS2_WEEKLY : 0;
+  // Class 2 NIC abolished from 6 April 2024 (HP §8). Explicit zero keeps the
+  // result shape unchanged.
+  const class2 = 0;
   const soleTraderNet = profit - soleTraderIncomeTax - soleTraderNi - class2;
 
   // Ltd

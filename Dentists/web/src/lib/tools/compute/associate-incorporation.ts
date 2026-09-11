@@ -9,7 +9,9 @@
  * Figures sourced:
  *   - Income tax bands/rates (PA £12,570, 20%/40%/45%, taper over £100k): HMRC 2026/27
  *   - Class 4 NI 6% (£12,570–£50,270), 2% above: HMRC 2026/27
- *   - Class 2 NI £3.45/week where profit > £6,725: HMRC 2026/27
+ *   - Class 2 NI: NOT PAYABLE. Removed from 6 April 2024 (HP §8, §8.A). Profits at
+ *     or above the small profits threshold (£7,105, 2026/27) are treated as paid;
+ *     voluntary Class 2 at £3.65/week applies BELOW it only and is not modelled.
  *   - Employer NI 15% above £5,000 secondary threshold: HMRC from 6 Apr 2025
  *   - Employee NI 8% (£12,570–£50,270), 2% above: HMRC 2026/27
  *   - Dividend allowance £500; rates 10.75%/35.75%/39.35%: FA 2026 s.4 from 6 Apr 2026
@@ -43,8 +45,6 @@ const CLASS4_RATE_UPPER = 0.02;
 const INCOME_BASIC = 0.2;
 const INCOME_HIGHER = 0.4;
 const INCOME_ADDITIONAL = 0.45;
-const CLASS2_WEEKLY = 3.45;
-const CLASS2_THRESHOLD = 6725;
 const NI_SECONDARY = 5000;
 const EMPLOYER_NI = 0.15;
 const DIVIDEND_ALLOWANCE = 500;
@@ -171,7 +171,9 @@ export function calcAssociateIncorporation(
   // Sole trader
   const stIncomeTax = calcIncomeTax(netFees);
   const stClass4 = calcClass4(netFees);
-  const stClass2 = netFees > CLASS2_THRESHOLD ? 52 * CLASS2_WEEKLY : 0;
+  // Class 2 NIC abolished from 6 April 2024 (HP §8). Explicit zero keeps the
+  // result shape unchanged.
+  const stClass2 = 0;
   const stTotalTax = stIncomeTax + stClass4 + stClass2;
   const stNet = netFees - stTotalTax;
 

@@ -48,8 +48,6 @@ const CT_SMALL_THRESHOLD = 50000;
 const CT_MAIN_THRESHOLD = 250000;
 const CT_MAIN_RATE = 0.25;
 const CT_SMALL_RATE = 0.19;
-const CLASS2_WEEKLY = 3.45;
-const CLASS2_THRESHOLD = 6725;
 const LTD_ADMIN_COST = 2500;
 const LTD_SALARY = 12570;
 
@@ -120,8 +118,8 @@ export function build(): ExcelJS.Workbook {
     { name: "CtMainRate", label: "Corporation Tax: main rate", value: CT_MAIN_RATE, pct: true },
     { name: "CtSmallThresh", label: "Corporation Tax: small profits limit (GBP)", value: CT_SMALL_THRESHOLD },
     { name: "CtMainThresh", label: "Corporation Tax: main rate lower limit (GBP)", value: CT_MAIN_THRESHOLD },
-    { name: "Class2Weekly", label: "Class 2 NI: weekly amount (GBP)", value: CLASS2_WEEKLY },
-    { name: "Class2Threshold", label: "Class 2 NI: small profits threshold (GBP)", value: CLASS2_THRESHOLD },
+    // Class 2 NIC liability was removed from 6 April 2024 (HP §8).
+    { name: "Class2Charge", label: "Class 2 NI: weekly amount (removed from 6 Apr 2024)", value: 0 },
     { name: "LtdSalary", label: "Ltd: director salary (GBP)", value: LTD_SALARY },
     { name: "LtdAdminCost", label: "Ltd: estimated admin cost (GBP)", value: LTD_ADMIN_COST },
   ];
@@ -202,7 +200,7 @@ export function build(): ExcelJS.Workbook {
   wb.definedNames.add("'Your figures'!$E$5", "P_Class4");
 
   labelCell(ws.getCell("D6"), "Class 2 NI");
-  ws.getCell("E6").value = { formula: "IF(In_Profit>Class2Threshold,52*Class2Weekly,0)" } as ExcelJS.CellFormulaValue;
+  ws.getCell("E6").value = { formula: "Class2Charge" } as ExcelJS.CellFormulaValue;
   moneyFmt(ws.getCell("E6"));
   wb.definedNames.add("'Your figures'!$E$6", "P_Class2");
 
@@ -380,7 +378,7 @@ export function build(): ExcelJS.Workbook {
     "No Employment Allowance (single-director restriction). Admin cost GBP2,500.",
     "",
     "Partnership model: sole trader or single principal, no Class 1 NI on profit.",
-    "Class 2 NI at GBP3.45/week if profit above GBP6,725.",
+    "Class 2 NI: not payable. The liability was removed from 6 April 2024.",
     "",
     "NHS Pension: the model does not quantify the accrual you would lose on",
     "incorporation. Over a 10 to 15 year run to retirement, that lost accrual",

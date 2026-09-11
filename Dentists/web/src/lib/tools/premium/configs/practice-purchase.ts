@@ -240,7 +240,7 @@ export const practicePurchaseConfig: PremiumToolConfig = {
     kind: "bar",
     valueFormat: "currency",
     series: [
-      { dataKey: "value", label: "Value", color: "var(--gold)" },
+      { dataKey: "value", label: "Value", color: "var(--gold-strong)" },
     ],
   },
   explainer: {

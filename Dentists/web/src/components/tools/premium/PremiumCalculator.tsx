@@ -34,7 +34,7 @@ import type { TopicKey } from "@/lib/intent/taxonomy";
 import type { PremiumToolConfig, GridRow, PremiumResult, ScenarioResult } from "@/lib/tools/premium/types";
 import { PremiumBarChart } from "./PremiumBarChart";
 import { ResultGateModal } from "./ResultGateModal";
-import { CalcResultCta } from "@/components/tools/CalcResultCta";
+import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
@@ -668,7 +668,7 @@ export function PremiumCalculator({
         {/* In-blog non-gated CTA (converted visitors who see their result instantly). */}
         {placement === "blog" && !gated && !revealed && (
           <div className="border-t border-[var(--border)] bg-white px-5 py-4 sm:px-7">
-            <CalcResultCta campaign={config.id} />
+            <CalcResultCta campaign={config.id} surface="elevated" />
           </div>
         )}
       </div>

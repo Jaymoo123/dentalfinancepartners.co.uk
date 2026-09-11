@@ -8,11 +8,12 @@
  *               Default 43.9% (England/Wales GDS convention; user-editable).
  *   Principal:  net pensionable earnings after deductible expenses (user provides).
  *
- * Member contribution tiers — England/Wales, six-tier structure in force from 1 April 2024
- * Rates (5.2 / 6.5 / 8.3 / 9.8 / 10.7 / 12.5%) are the settled final-phase structure.
- * Thresholds below are the 2024/25 values; they are uprated with AfC pay awards.
- * ⚠ VERIFY before publishing: confirm current-year threshold uprating (2026/27) at
- *   https://www.nhsbsa.nhs.uk/member-hub/your-membership/contribution-rates
+ * Member contribution tiers — England and Wales only (Scotland and Northern Ireland
+ * run different tier tables). Six-tier structure; the rates (5.2 / 6.5 / 8.3 / 9.8 /
+ * 10.7 / 12.5%) are the settled final-phase structure, unchanged since 1 April 2024.
+ * The THRESHOLDS are uprated and moved twice since. The table below is the 2026/27
+ * table in force from 1 April 2026, uprated by the September 2025 CPI figure of 3.8%.
+ * Verified at primary source 2026-09-11 and locked in house_positions.md §2.F.
  *
  * Employer contribution: 23.7% of pensionable pay from 1 April 2024 (up from
  * 20.6%), plus a 0.08% administration levy, so 23.78% in total. The increase
@@ -29,15 +30,15 @@
 /** ponytail: dated config constants so a future rate change is a one-line edit */
 const TIERS_ENGLAND_WALES = [
   { upto: 13259, rate: 0.052 },
-  { upto: 27288, rate: 0.065 },
-  { upto: 33247, rate: 0.083 },
-  { upto: 49913, rate: 0.098 },
-  { upto: 63994, rate: 0.107 },
+  { upto: 28854, rate: 0.065 },
+  { upto: 35155, rate: 0.083 },
+  { upto: 52778, rate: 0.098 },
+  { upto: 67668, rate: 0.107 },
   { upto: Infinity, rate: 0.125 },
 ] as const;
 
 /** Effective date of the tier table above (for display / audit trail) */
-export const TIER_EFFECTIVE_DATE = "1 April 2024";
+export const TIER_EFFECTIVE_DATE = "1 April 2026";
 
 const EMPLOYER_RATE = 0.237;
 const CARE_ACCRUAL_DENOMINATOR = 54;
@@ -96,10 +97,10 @@ export function calcSuperannuation(pensionableEarnings: number): SuperannuationR
 }
 
 // Self-check: associate on £120k gross fees at 43.9% = £52,680 pensionable.
-// Tier: £49,914–£63,994 → 10.7%. Member contrib = £5,636.76. CARE = £975.56.
+// 2026/27 tier: £35,156–£52,778 → 9.8%. Member contrib = £5,162.64. CARE = £975.56.
 if (process.env.NODE_ENV === "test") {
   const r = calcSuperannuation(52680);
-  console.assert(r.memberRate === 0.107, "tier lookup");
-  console.assert(Math.round(r.memberContribution) === 5637, "member contrib");
+  console.assert(r.memberRate === 0.098, "tier lookup");
+  console.assert(Math.round(r.memberContribution) === 5163, "member contrib");
   console.assert(Math.round(r.careGrowthPerYear) === 976, "CARE growth");
 }

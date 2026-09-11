@@ -8,7 +8,7 @@
  *
  * Golden case (brief §4.1, compute lib defaults):
  *   grossFees=120000, associatePct=50, labPct=8, expenses=3000, pension=0
- *   -> netCash=41408, totalTax=10792, incomeTax=8312, class4=2300.6, class2=179.4
+ *   -> netCash=41587.4, totalTax=10612.6, incomeTax=8312, class4=2300.6, class2=0
  *
  * Token note: workbook branded "Dental Finance Partners", navy/gold header ARGB
  * (navy #001b3d = ARGB FF001b3d, gold #b8975d = ARGB FFb8975d).
@@ -24,7 +24,9 @@ const WHITE = "FFFFFFFF";
 const INK = "FF1A1A2E"; // near-black ink
 
 // ---- Locked constants: sourced from associate-take-home.ts ----
-// Income tax 2025/26 (compute lib uses 2025/26 rates)
+// Income tax 2026/27. The personal allowance, basic-rate limit and Class 4
+// rates are unchanged from 2026/27, so these figures are valid for both; the
+// LABEL is 2026/27 to match the site, which no longer publishes 2026/27 anywhere.
 const PERSONAL_ALLOWANCE = 12570;
 const BASIC_RATE_LIMIT = 50270;
 const HIGHER_RATE_LIMIT = 125140;
@@ -36,9 +38,8 @@ const CLASS4_LOWER = 12570;
 const CLASS4_UPPER = 50270;
 const CLASS4_RATE_LOWER = 0.06;
 const CLASS4_RATE_UPPER = 0.02;
-// Class 2 NI (still payable in 2025/26 calculate year for this compute lib)
-const CLASS2_WEEKLY = 3.45;
-const CLASS2_THRESHOLD = 6725;
+// Class 2 NI: liability REMOVED from 6 April 2024 (house positions section 8).
+// Retained as a labelled zero row so a reader who expects the line sees why it is nil.
 
 // ---- Shared style helpers ----
 function navyHeader(cell: ExcelJS.Cell, text: string) {
@@ -86,7 +87,7 @@ export function build(): ExcelJS.Workbook {
     { key: "label", width: 52 },
     { key: "value", width: 18 },
   ];
-  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2025/26)");
+  navyHeader(rates.getCell("A1"), "Locked rates: do not edit (2026/27)");
   rates.mergeCells("A1:B1");
 
   const rateRows: Array<{ name: string; label: string; value: number; pct?: boolean }> = [
@@ -100,8 +101,9 @@ export function build(): ExcelJS.Workbook {
     { name: "Class4Upper", label: "Class 4 NI: upper profits limit (GBP)", value: CLASS4_UPPER },
     { name: "Class4RateLower", label: "Class 4 NI: main rate (below upper limit)", value: CLASS4_RATE_LOWER, pct: true },
     { name: "Class4RateUpper", label: "Class 4 NI: upper rate (above upper limit)", value: CLASS4_RATE_UPPER, pct: true },
-    { name: "Class2Weekly", label: "Class 2 NI: weekly amount (GBP)", value: CLASS2_WEEKLY },
-    { name: "Class2Threshold", label: "Class 2 NI: small profits threshold (GBP)", value: CLASS2_THRESHOLD },
+    // Class 2 NIC liability was removed from 6 April 2024 (HP §8). Kept as a named
+    // zero so the workbook shows plainly that nothing is due.
+    { name: "Class2Charge", label: "Class 2 NI: weekly amount (removed from 6 Apr 2024)", value: 0 },
   ];
 
   rateRows.forEach((r, i) => {
@@ -205,7 +207,7 @@ export function build(): ExcelJS.Workbook {
   // Class 2 NI
   labelCell(ws.getCell("A15"), "Class 2 NI");
   ws.getCell("B15").value = {
-    formula: "IF(ProfitBeforePension>Class2Threshold,52*Class2Weekly,0)",
+    formula: "Class2Charge",
   } as ExcelJS.CellFormulaValue;
   moneyFmt(ws.getCell("B15"));
   wb.definedNames.add("'Your figures'!$B$15", "Class2");
@@ -250,7 +252,7 @@ export function build(): ExcelJS.Workbook {
     { row: 8, label: "Taxable profit", formula: "TaxableProfit", strong: true },
     { row: 10, label: "Income tax", formula: "IncomeTax" },
     { row: 11, label: "Class 4 NI", formula: "Class4" },
-    { row: 12, label: "Class 2 NI", formula: "Class2" },
+    { row: 12, label: "Class 2 NI (not payable from 6 Apr 2024)", formula: "Class2" },
     { row: 13, label: "Total tax and NI", formula: "TotalTax", strong: true },
     { row: 15, label: "Net cash", formula: "NetCash", strong: true },
   ];
@@ -278,14 +280,14 @@ export function build(): ExcelJS.Workbook {
     ["Dental Finance Partners", false],
     ["", false],
     ["This model shows your estimated take-home pay as a dental associate or locum,", false],
-    ["after income tax, Class 4 NI and Class 2 NI, based on 2025/26 rates.", false],
+    ["after income tax, Class 4 NI and Class 2 NI, based on 2026/27 rates.", false],
     ["", false],
     ["How to use:", true],
     ["1. Go to the 'Your figures' tab.", false],
     ["2. Edit the highlighted cells: fees, percentages, expenses, pension.", false],
     ["3. Every figure recalculates automatically.", false],
     ["", false],
-    ["The 'Rates' tab holds the locked 2025/26 rates. Do not edit it.", false],
+    ["The 'Rates' tab holds the locked 2026/27 rates. Do not edit it.", false],
     ["See 'Notes' for assumptions and limitations.", false],
   ];
   startLines.forEach(([text, bold], i) => {
@@ -300,11 +302,11 @@ export function build(): ExcelJS.Workbook {
   const noteLines = [
     "Assumptions and limitations",
     "",
-    "2025/26 rates: income tax personal allowance GBP12,570; basic rate 20% to GBP50,270;",
+    "2026/27 rates: income tax personal allowance GBP12,570; basic rate 20% to GBP50,270;",
     "higher rate 40% to GBP125,140; additional rate 45% above.",
     "",
     "Class 4 NI: 6% between GBP12,570 and GBP50,270, 2% above.",
-    "Class 2 NI: GBP3.45/week (52 weeks) if profit exceeds the GBP6,725 small profits threshold.",
+    "Class 2 NI: not payable. The liability was removed from 6 April 2024; profits at or above the small profits threshold are treated as having paid it.",
     "",
     "Lab deduction: calculated as lab% of gross fees, then scaled by the associate percentage.",
     "This matches the calcAssociateTakeHome() formula in the site calculator.",

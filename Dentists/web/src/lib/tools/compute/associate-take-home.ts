@@ -10,7 +10,10 @@
  *   - Higher rate 40% up to £125,140 — HMRC income tax bands 2026/27 (unchanged)
  *   - Additional rate 45% above £125,140 — HMRC income tax bands 2026/27 (unchanged)
  *   - Class 4 NI 6% (£12,570–£50,270), 2% above — HMRC NI 2026/27 (unchanged)
- *   - Class 2 NI £3.45/week (52 weeks) where profit > £6,725 — HMRC NI 2026/27
+ *   - Class 2 NI: NOT PAYABLE. Class 2 liability was removed from 6 April 2024
+ *     (HP §8, §8.A). Profits at or above the small profits threshold (£7,105 for
+ *     2026/27) are treated as paid. Voluntary Class 2 at £3.65/week is available
+ *     BELOW that threshold only, and is not modelled here.
  *
  * Limitations:
  *   - Excludes student loan repayments.
@@ -29,8 +32,6 @@ const CLASS4_RATE_UPPER = 0.02;
 const INCOME_BASIC = 0.20;
 const INCOME_HIGHER = 0.40;
 const INCOME_ADDITIONAL = 0.45;
-const CLASS2_WEEKLY = 3.45;
-const CLASS2_THRESHOLD = 6725;
 
 function calcIncomeTax(taxable: number): number {
   let pa = PERSONAL_ALLOWANCE;
@@ -83,7 +84,9 @@ export function calcAssociateTakeHome(
   const taxableProfit = profit - nhsPensionEstimate;
   const incomeTax = calcIncomeTax(taxableProfit);
   const class4Ni = calcClass4(Math.max(0, taxableProfit));
-  const class2Ni = profit > CLASS2_THRESHOLD ? 52 * CLASS2_WEEKLY : 0;
+  // Class 2 NIC abolished from 6 April 2024 (HP §8). Kept as an explicit zero so
+  // the result shape is unchanged and the page can show that nothing is due.
+  const class2Ni = 0;
   const totalTax = incomeTax + class4Ni + class2Ni;
   const netCash = taxableProfit - totalTax;
   return {

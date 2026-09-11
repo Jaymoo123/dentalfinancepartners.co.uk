@@ -218,7 +218,7 @@ export const practiceSaleConfig: PremiumToolConfig = {
     kind: "groupedBar",
     valueFormat: "currency",
     series: [
-      { dataKey: "low", label: "Low", color: "var(--gold)" },
+      { dataKey: "low", label: "Low", color: "var(--gold-strong)" },
       { dataKey: "high", label: "High", color: "var(--navy)" },
     ],
   },

@@ -37,10 +37,10 @@ function r(n: number) {
 // incomeTax: t = 42500 - 12570 = 29930; basic = 29930; IT = 29930 * 0.20 = 5986
 // class4Ni: 42500 > 12570, in lower band = min(42500,50270) - 12570 = 29930; upper = 0
 //           = 29930 * 0.06 = 1795.80
-// class2Ni: profit=49000 > 6725 → 52 * 3.45 = 179.40
-// totalTax = 5986 + 1795.80 + 179.40 = 7961.20
-// netCash = 42500 - 7961.20 = 34538.80
-// effectiveRate = (7961.20 / 49000) * 100 = 16.247%
+// class2Ni: 0 — Class 2 liability removed from 6 April 2024 (HP §8, §8.A)
+// totalTax = 5986 + 1795.80 + 0 = 7781.80
+// netCash = 42500 - 7781.80 = 34718.20
+// effectiveRate = (7781.80 / 49000) * 100 = 15.881%
 
 describe("calcAssociateTakeHome — default inputs", () => {
   const res = calcAssociateTakeHome(120000, 50, 5, 8000, 6500);
@@ -51,9 +51,9 @@ describe("calcAssociateTakeHome — default inputs", () => {
   it("taxableProfit", () => expect(r(res.taxableProfit)).toBe(42500));
   it("incomeTax", () => expect(res.incomeTax).toBeCloseTo(5986, 1));
   it("class4Ni", () => expect(res.class4Ni).toBeCloseTo(1795.8, 1));
-  it("class2Ni", () => expect(res.class2Ni).toBeCloseTo(179.4, 1));
-  it("totalTax", () => expect(res.totalTax).toBeCloseTo(7961.2, 1));
-  it("netCash", () => expect(res.netCash).toBeCloseTo(34538.8, 1));
+  it("class2Ni is nil from 6 Apr 2024 (HP §8)", () => expect(res.class2Ni).toBe(0));
+  it("totalTax", () => expect(res.totalTax).toBeCloseTo(7781.8, 1));
+  it("netCash", () => expect(res.netCash).toBeCloseTo(34718.2, 1));
   it("effectiveRate positive", () => expect(res.effectiveRate).toBeGreaterThan(0));
 });
 
@@ -70,9 +70,9 @@ describe("calcAssociateTakeHome — higher-rate scenario", () => {
   // IT = 37700*0.20 + 87440*0.40 + 2860*0.45 = 7540 + 34976 + 1287 = 43803
   // class4: taxable=128000; in lower = min(128000,50270)-12570=37700; upper=max(0,128000-50270)=77730
   //         = 37700*0.06 + 77730*0.02 = 2262 + 1554.6 = 3816.6
-  // class2: profit=134500 > 6725 → 179.4
-  // totalTax = 43803 + 3816.6 + 179.4 = 47799
-  // netCash = 128000 - 47799 = 80201
+  // class2: 0 (removed 6 Apr 2024, HP §8)
+  // totalTax = 43803 + 3816.6 = 47619.6
+  // netCash = 128000 - 47619.6 = 80380.4
   const res = calcAssociateTakeHome(300000, 50, 5, 8000, 6500);
 
   it("incomeTax higher-rate scenario", () => expect(res.incomeTax).toBeCloseTo(43803, 0));
@@ -89,8 +89,8 @@ describe("calcAssociateTakeHome — higher-rate scenario", () => {
 // SoleTrader (no employer NI, no dividends — UNCHANGED from 2025/26):
 //   IT: pa=12570, t=62430, basic=37700, higher=24730; IT=17432
 //   Class4: lower=37700*0.06=2262; upper=(75000-50270)*0.02=494.6; NI=2756.6
-//   Class2: 75000>6725 → 52*3.45=179.4
-//   soleTraderNet=75000-17432-2756.6-179.4=54632
+//   Class2: 0 (removed 6 Apr 2024, HP §8)
+//   soleTraderNet=75000-17432-2756.6=54811.4
 //
 // Ltd (employer NI now 15% above £5,000 threshold; dividends now 10.75%/35.75%):
 //   ltdSalary=12570
@@ -123,7 +123,7 @@ describe("calcAssociateTakeHome — higher-rate scenario", () => {
 // |-------------------|-----------|-----------|----------------------------------|
 // | locum Ltd         | 53014.46  | 51728.79  | NI_SECONDARY↓+EMPLOYER_NI↑+div↑ |
 // | locum umbrella    | 49757.73  | 48928.75  | NI_SECONDARY↓+EMPLOYER_NI↑      |
-// | locum sole trader | 54632     | 54632     | no change (no emp-NI, no div)    |
+// | locum sole trader | 54632     | 54811.4   | Class 2 removed 6 Apr 2024 (HP §8)|
 
 describe("calcLocumStructure — default inputs (450/day, 180 days, £6,000 expenses)", () => {
   const res = calcLocumStructure(450, 180, 6000);
@@ -132,8 +132,8 @@ describe("calcLocumStructure — default inputs (450/day, 180 days, £6,000 expe
   it("profit", () => expect(r(res.profit)).toBe(75000));
 
   // Sole trader: no employer NI and no dividends — figures unchanged from 2025/26
-  it("soleTrader net", () => expect(res.soleTrader.net).toBeCloseTo(54632, 0));
-  it("soleTrader tax", () => expect(res.soleTrader.tax).toBeCloseTo(17432 + 2756.6 + 179.4, 0));
+  it("soleTrader net", () => expect(res.soleTrader.net).toBeCloseTo(54811.4, 0));
+  it("soleTrader tax", () => expect(res.soleTrader.tax).toBeCloseTo(17432 + 2756.6, 0));
 
   // Ltd: employer NI 15%/£5k threshold + dividend rates 10.75%/35.75%
   it("ltd net (2026/27 rates)", () => expect(res.ltd.net).toBeCloseTo(51728.79, 0));
@@ -218,8 +218,8 @@ describe("calcPracticeValuation — floor enforcement", () => {
 //   partnerIncomeTax=calcIncomeTax(150000): pa=0 (taper); bands on taxable income
 //     20%×37700=7540; 40%×(125140-37700=87440)=34976; 45%×(150000-125140=24860)=11187 → 53703
 //   partnerClass4: lower=37700*0.06=2262; upper=(150000-50270)*0.02=1994.6 → 4256.6
-//   class2: 179.4
-//   partnershipNet=150000-53703-4256.6-179.4=91861.0
+//   class2: 0 (removed 6 Apr 2024, HP §8)
+//   partnershipNet=150000-53703-4256.6=92040.4
 //
 // Ltd (employer NI now 15%/£5k threshold; dividends now 10.75%/35.75%):
 //   ltdSalary=12570
@@ -241,7 +241,7 @@ describe("calcPracticeValuation — floor enforcement", () => {
 // Delta table:
 // | case                  | old net   | new net   | driver                           |
 // |-----------------------|-----------|-----------|----------------------------------|
-// | principal partnership | 91232.5   | 91861.0   | PA-taper higher-band fix (IT ↓)  |
+// | principal partnership | 91232.5   | 92040.4   | PA-taper fix + Class 2 removed   |
 // | principal Ltd         | 86712.65  | ~84384    | NI_SECONDARY↓+EMPLOYER_NI↑+div↑ |
 
 describe("calcPrincipalExtraction — default inputs (profit=150000, NHS active, pension=0)", () => {
@@ -249,8 +249,8 @@ describe("calcPrincipalExtraction — default inputs (profit=150000, NHS active,
 
   // Partnership: no employer NI and no dividends. IT reflects the PA-taper
   // higher-band fix (higher band widens to £87,440 when PA is fully tapered).
-  it("partnership net", () => expect(res.partnership.net).toBeCloseTo(91861.0, 0));
-  it("partnership tax", () => expect(res.partnership.tax).toBeCloseTo(53703 + 4256.6 + 179.4, 0));
+  it("partnership net", () => expect(res.partnership.net).toBeCloseTo(92040.4, 0));
+  it("partnership tax", () => expect(res.partnership.tax).toBeCloseTo(53703 + 4256.6, 0));
 
   // Ltd: employer NI 15%/£5k threshold + dividend rates 10.75%/35.75%
   // Exact computed value: 84384.44 (PA taper at >100k makes this sensitive to
@@ -272,8 +272,8 @@ describe("calcPrincipalExtraction — NHS inactive", () => {
 // Partnership (no employer NI, no dividends):
 //   IT(80000): pa=12570, t=67430, basic=37700, higher=29730 → 37700*0.20+29730*0.40=7540+11892=19432
 //   class4: lower=37700*0.06=2262; upper=(80000-50270)*0.02=594.6 → 2856.6
-//   class2: 179.4
-//   partnershipNet=80000-19432-2856.6-179.4=57532
+//   class2: 0 (removed 6 Apr 2024, HP §8)
+//   partnershipNet=80000-19432-2856.6=57711.4
 //
 // Ltd:
 //   ltdEmployerNi=(12570-5000)*0.15=1135.50
@@ -289,7 +289,7 @@ describe("calcPrincipalExtraction — NHS inactive", () => {
 describe("calcPrincipalExtraction — pinned extraction exact figure (profit=80000, NHS inactive, pension=0)", () => {
   const res = calcPrincipalExtraction(80000, false, 0);
 
-  it("partnership net pinned (2026/27)", () => expect(res.partnership.net).toBeCloseTo(57532, 0));
+  it("partnership net pinned (2026/27)", () => expect(res.partnership.net).toBeCloseTo(57711.4, 0));
   it("ltd net pinned (2026/27)", () => expect(res.ltd.net).toBeCloseTo(53390, 0));
   it("ltd net conservation: net + taxes ≈ profit", () => {
     // net + tax includes LTD_ADMIN_COST in tax, so should be close to profit

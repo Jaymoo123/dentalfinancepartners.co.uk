@@ -20,7 +20,7 @@ import { udaNhsConfig } from "./configs/uda-nhs";
 
 /**
  * Map of toolId -> PremiumToolConfig.
- * All five R2 tools: golden tests pass before these entries were added.
+ * All six R2 tools: golden tests pass before these entries were added.
  */
 export const PREMIUM_TOOLS: Record<string, PremiumToolConfig> = {
   "associate-take-home-premium": associateTakeHomeConfig,
