@@ -92,6 +92,19 @@ He is the CEO. He is often away from the keyboard and has less context than you.
 - **Be sparing anyway.** Batch mechanical fixers 3-5 files per agent, not one
   per file. Verify small bounded things inline. Scope before firing. *(2026-08-03:
   an ultracode session blew its limit and killed 4 agents mid-edit.)*
+- **Delegate by default, and delegate the work you are tempted to keep.** The
+  bar is not "is this small enough to do myself", it is "is there a reason only
+  the manager can do this". Investigations, audits, re-derivations, instrument
+  changes, doc rewrites and anything measurable all go to agents, even when the
+  diff looks like three lines. Plan the NEXT phase's delegation at the same time,
+  so future work is shaped for agents rather than absorbed. The manager's own
+  hands are for the carve-outs only: git, serialised builds, deploys, migrations,
+  owner comms, and the judgement call at a gate. *(2026-09-11, mid design-port:
+  "remember to deploy subagents to do most of the work, and work we need to do
+  other parts in future". The manager had done a contrast audit, an instrument
+  change and a set of doc corrections inline because each looked too small to
+  hand over. Collectively they were not small, and they spent the one context
+  that cannot be replaced.)*
 - **Batch independent agent launches into one message** so they run concurrently.
 - **Model tiering:** Haiku for grunt (greps, inventories, mechanical
   verification — never content), Sonnet for mechanical build and mid-complexity,
