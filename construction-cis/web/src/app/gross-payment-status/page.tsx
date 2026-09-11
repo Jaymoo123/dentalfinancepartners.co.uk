@@ -254,17 +254,12 @@ export default function GrossPaymentStatusPage() {
           published copy rather than left to the component defaults. Static band in
           the page body: nothing interruptive.
 
-          `gps_book_panel` is an ADDITIVE id on a wrapper that carried no
-          data-cta, so no locked triple moves (trap 22). autoCapture resolves a
-          click through closest("[data-cta]"), so it attributes this band's
-          conversions rather than leaving them indistinguishable from every
-          other LeadForm on the site. */}
+          The wrapper carries NO data-cta: autoCapture resolves clicks through
+          closest("[data-cta]"), so an id here would swallow every form control
+          and link in the band. LeadForm emits its own lifecycle events. */}
       <div
         id="book"
         className="scroll-mt-24"
-        data-cta="gps_book_panel"
-        data-cta-placement="closing"
-        data-cta-goal="form"
       >
         <LeadCTAPanel
           contained
