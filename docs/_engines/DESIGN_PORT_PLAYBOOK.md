@@ -715,6 +715,14 @@ RULE: diff the FULL `data-cta` attribute set, id AND placement AND goal, rendere
 against rendered pre-port page, on every phase that touches chrome or a CTA. An id-only
 diff passes this defect straight through. The drawer CTA renders only when the menu is
 open, so no SSR crawl sees it: read the shipped client bundle.
+There is now an instrument: `docs/_engines/instruments/cta_snapshot.mjs` records
+`(id, placement, goal, href)` per route, asserts the served page title before measuring so a
+collided port cannot measure a sibling site, and also captures `data-cta-id`, the misspelling
+that exists in the wild. Capture the triples BEFORE the first chrome commit and diff after
+every phase touching chrome or CTAs; the sweep's CTA COUNT is identical before and after and
+cannot detect this flip. On Trade the source declared 16 `data-cta` ids and only 5 rendered,
+because several sit in config branches that site does not use, so a guard pinning only the
+rendered set leaves the rest unprotected.
 
 **T23. The fix pass reasons about the wrong consumer set.** The first fix assumed the kit
 chrome was shared by 19 sites and that a Property-preserving default therefore covered
@@ -757,3 +765,52 @@ site adopts it. Two sites shipped it without anyone deciding to.
 RULE: the T12 family is wider than copy. Audit any adopted component for anything
 outward-facing: external links, third-party assets, brand names, `rel` attributes. Ask the
 owner before a sibling site links out to anyone.
+
+---
+
+## 15. Traps added by the Trade port (2026-09-11)
+
+**T28. Tailwind v4 emits `oklch()`, so every contrast table derived from a v3 hex table is
+wrong, and a ramp utility and a CSS custom property do not render the same colour.**
+`node_modules/tailwindcss/theme.css:26-29` ships `orange-400` as `oklch(75% 0.183 55.934)`,
+which resolves to `#ff8904` and not the v3 `#fb923c`: 69 summed RGB units. 500 is `#ff6900`
+not `#f97316` and 600 is `#f54900` not `#ea580c`, 38 each. Measured across Trade's 17 binding
+rows, 10 drifted, by at most 0.38, and NO verdict changed, so this is a precision problem and
+not a decision problem, but the table is what the later phases measure against. The half that
+bites: `bg-orange-500` renders the oklch value and measures 2.89 on white, while
+`--accent: #f97316` renders the literal hex and measures 2.80. On Trade this reconciled two
+instruments that appeared to disagree, a hand computation at 2.80 against `browser_check.mjs`
+at 2.89, both correct about different subjects
+(`docs/construction-cis/DESIGN_DELTA.md` section 2 preamble).
+RULE: label every row of a contrast table by SOURCE, utility or token. Measure a utility from
+the rendered DOM, or by converting the emitted `oklch()` out of
+`node_modules/tailwindcss/theme.css`, never from a v3 hex table. Self-test any converter
+against two known values before trusting it.
+
+**T29. A gate whose check nobody can run is a deferral, not a gate.** A port recorded a
+BLOCKING item on its definition of done requiring a "section-grounds scan" before the owner
+walk. No committed instrument performed one: the scan behind both of its figures was a
+throwaway script that no longer existed. It also parsed colours as text, so `oklch()` defeated
+it and it scored every unresolved ground as light, reporting 102 breaching routes where the
+real figure is 79 and naming two whole route families as in breach when neither was. Fixed by
+adding a real `--grounds` mode to `docs/_engines/instruments/browser_check.mjs:83-89`, which
+resolves colour through the browser; named at `DESIGN_DELTA.md` section 3a.
+RULE: when you record a gate, name the committed command that satisfies it in the same edit.
+If that command does not exist, building it is part of recording the gate. And never measure
+colour with a parser when a browser is already open.
+
+**T30. An unlayered rule on a shared class silently beats the utility its own consumers chose.**
+Third instance in the programme, first in this shape.
+`construction-cis/web/src/app/globals.css:209-225` declared `.eyebrow` unlayered, so its
+`color` beat `text-orange-400` on the consumers that had correctly picked the on-dark step for
+`bg-neutral-900`. A first fix pass recoloured the unlayered rule toward the light ground, which
+turned a passing value into a failing one on both dark consumers before the missing layer was
+identified as the real defect. The correct fix was `@layer components`, so a consumer utility
+wins. Instance two is the heading `line-height` rule in the same file, deliberately unlayered
+on the same mechanism.
+RULE: before changing a colour on a shared class, enumerate its consumers and check both what
+ground each sits on AND whether any already declares its own utility. A class whose consumers
+disagree about ground needs a layer, not a different hex. Moving a rule into a layer changes
+its precedence against EVERY utility it was beating, not the one you meant, so verify which
+selectors ended up inside the block:
+`awk '/^@layer components/,/^}$/' <file> | grep -E '^\s+\.'`
