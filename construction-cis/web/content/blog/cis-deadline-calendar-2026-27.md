@@ -224,7 +224,7 @@ generator: "claude-sonnet-4-6 | wave-3 | 2026-06-12"
 </tbody>
 </table>
 
-<p>The 31 January deadline is the latest legal date, not the recommended date. A sole-trader CIS subcontractor who files in April or May rather than the following January receives any refund due months earlier. HMRC processes repayments within approximately 5 to 10 working days of a correctly filed online return. Filing in April versus January is the difference between a refund arriving in May and one arriving in February, a wait of roughly nine months for the same money.</p>
+<p>The 31 January deadline is the latest legal date, not the recommended date. A sole-trader CIS subcontractor who files in April or May rather than the following January receives any refund due months earlier. HMRC publishes no processing time for Self Assessment repayments, so the date you file is the part of the timeline you actually control. Filing in April rather than the following January moves the whole process forward by roughly nine months for the same money.</p>
 
 <p>Late Self Assessment filing carries a £100 immediate penalty, with further charges at 3, 6, and 12 months. These are separate from and do not interact with the CIS300 penalty ladder above. For the full Self Assessment process as a CIS subcontractor, see our guide to <a href="/blog/cis-refunds/cis-self-assessment-complete-guide">CIS and Self Assessment</a>. To estimate your refund before you file, try the <a href="/calculators/cis-self-assessment-calculator">CIS Self Assessment calculator</a>.</p>
 

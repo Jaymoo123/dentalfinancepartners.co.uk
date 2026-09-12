@@ -394,7 +394,7 @@ export const CITIES: Record<string, CityData> = {
       },
       {
         "question": "What is the CIS deduction rate and how does the refund work?",
-        "answer": "Registered subcontractors are deducted at 20% on the labour element of their invoices. The materials portion is excluded from the deduction base. At year end you file a self-assessment return that sets your allowable expenses and personal allowance against your gross income, which almost always results in the actual tax owed being less than the total CIS deducted during the year. HMRC repays the difference, typically within 5 to 10 working days of the return being processed. The average illustrative refund is around £2,000 though the actual amount varies by income and expenses."
+        "answer": "Registered subcontractors are deducted at 20% on the labour element of their invoices. The materials portion is excluded from the deduction base. At year end you file a self-assessment return that sets your allowable expenses and personal allowance against your gross income, which almost always results in the actual tax owed being less than the total CIS deducted during the year. HMRC repays the difference. HMRC does not publish a turnaround for Self Assessment repayments and asks you to use its weekly-updated 'Check when you can expect a reply from HMRC' tool, with up to a further 12 weeks possible if the claim is picked up by its security checks. The average illustrative refund is around £2,000 though the actual amount varies by income and expenses."
       }
     ],
     "nearbyAreas": [
@@ -539,7 +539,7 @@ export const CITIES: Record<string, CityData> = {
       },
       {
         "question": "Do I need to be registered for Self Assessment to claim a CIS refund in Edinburgh?",
-        "answer": "Yes. CIS refunds for sole-trader subcontractors are processed through the Self Assessment tax return. If you are not yet registered for Self Assessment, we register you as part of our onboarding process. The refund for the last tax year is typically paid within 5 to 10 working days of HMRC processing the online return."
+        "answer": "Yes. CIS refunds for sole-trader subcontractors are processed through the Self Assessment tax return. If you are not yet registered for Self Assessment, we register you as part of our onboarding process. HMRC publishes no processing time for Self Assessment repayments: it asks you to check its weekly-updated 'Check when you can expect a reply from HMRC' tool, and security checks can add up to a further 12 weeks on top of that date."
       },
       {
         "question": "Can I recover four years of CIS deductions if I have never filed in Edinburgh?",

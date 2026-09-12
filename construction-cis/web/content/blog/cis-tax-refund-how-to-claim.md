@@ -28,7 +28,7 @@ faqs:
 - question: How much CIS tax can I get back?
   answer: There is no fixed amount because the refund depends on your total income, expenses, personal allowance and how much was deducted across the year. Industry data suggests the typical CIS subcontractor refund is around £2,000, though this figure is a market average and not a guarantee. Subcontractors with higher allowable expenses, or those who worked at the unregistered 30% rate for part of the year, often see larger refunds. The only way to know your specific figure is to complete a full Self Assessment return or, for limited companies, to run the EPS reconciliation.
 - question: When will HMRC pay my CIS tax refund?
-  answer: HMRC aims to process Self Assessment repayments within 5 to 10 working days of the return being filed, provided your bank details are held on your Government Gateway account and there are no queries on the return. Filing early in the new tax year (from April) is the single biggest factor in getting paid quickly. Returns filed close to the January deadline can take longer during HMRC's peak processing period. Limited companies using EPS reclaim in real time and do not wait for a year-end repayment.
+  answer: HMRC does not publish a processing time for Self Assessment repayments. It asks you to use its weekly-updated 'Check when you can expect a reply from HMRC' tool for the current date, and warns that a repayment selected for its security checks can take up to a further 12 weeks on top of that date. What you can control is when the clock starts and whether HMRC has what it needs. Make sure your bank details are held on your Government Gateway account, because a repayment with no bank details is issued as a cheque instead. Filing early in the new tax year (from April) is the single biggest factor in getting paid quickly. Returns filed close to the January deadline can take longer during HMRC's peak processing period. Limited companies using EPS reclaim in real time and do not wait for a year-end repayment.
 - question: Can I claim a CIS tax refund for previous years?
   answer: Yes. HMRC allows Self Assessment repayment claims going back four tax years from the current year. For 2026/27 that means you can still claim for 2022/23, 2023/24 and 2024/25 if you have not already done so. Each year needs a separate Self Assessment return. You will need the CIS deduction statements from the relevant contractors for each year. Claims older than four years are out of time.
 - question: Do I need an accountant to claim a CIS refund?
@@ -88,14 +88,16 @@ faqs:
 
 <h3>Step 4. Receive the repayment</h3>
 
-<p>Where a repayment is due, HMRC will pay it to the bank account linked to your Government Gateway account. If no bank details are held, HMRC will issue a cheque. HMRC aims to process online repayments within 5 to 10 working days of the return being submitted. Returns selected for a compliance check can take considerably longer, which is one reason accuracy matters from the outset.</p>
+<p>Where a repayment is due, HMRC will pay it to the bank account linked to your Government Gateway account. If no bank details are held, HMRC will issue a cheque.</p>
+
+<p>HMRC does not publish a processing time for Self Assessment repayments. It asks you to use its weekly-updated "Check when you can expect a reply from HMRC" tool for the current date, and warns that a repayment selected for its security checks can take up to a further 12 weeks on top of that date. Accuracy matters from the outset for exactly that reason: the security check is the one delay that dwarfs everything else on this timeline.</p>
 
 <table>
 <tr><th>Stage</th><th>Action</th><th>Timing</th></tr>
 <tr><td>Tax year ends</td><td>Begin collecting CIS statements from all contractors</td><td>From 6 April</td></tr>
 <tr><td>Register UTR (if needed)</td><td>Apply via Government Gateway</td><td>Allow 10 working days</td></tr>
 <tr><td>File online return</td><td>Log in to Self Assessment, complete SA103F, enter CIS box</td><td>From 6 April; deadline 31 January</td></tr>
-<tr><td>HMRC processes return</td><td>Automatic calculation; repayment triggered if overpaid</td><td>5 to 10 working days after filing</td></tr>
+<tr><td>HMRC processes return</td><td>Automatic calculation; repayment triggered if overpaid</td><td>No published turnaround; check HMRC's weekly-updated "Check when you can expect a reply" tool</td></tr>
 <tr><td>Repayment received</td><td>Bank transfer to account on Government Gateway</td><td>Shortly after processing</td></tr>
 </table>
 

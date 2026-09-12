@@ -140,7 +140,7 @@ export const cisRefundEstimator: GenericTool = {
     {
       question: "How long does a CIS refund take?",
       answer:
-        "HMRC typically processes Self Assessment repayments within 5 to 10 working days of the return being filed online. Returns filed close to the January 31 deadline may take longer due to volume. Filing earlier in the tax year usually results in faster repayment.",
+        "HMRC does not publish a processing time for Self Assessment repayments. It asks you to use its 'Check when you can expect a reply from HMRC' tool, which it updates weekly, and a repayment picked up by its security checks can take up to a further 12 weeks on top of the date that tool gives. What you control is the start of the clock: you cannot file until the tax year ends on 5 April, so filing in April or May rather than the following January is the one lever that reliably brings the money forward.",
     },
     {
       question: "Can a limited company claim a CIS refund?",

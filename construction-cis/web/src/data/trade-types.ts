@@ -55,7 +55,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim",
         body:
-          "We calculate the full CIS refund you are owed, account for allowable expenses (mileage at 55p, tools, materials, van costs, PPE), and submit your Self Assessment return to claim it back. Most plumbers receive their refund within weeks rather than months of submission.",
+          "We calculate the full CIS refund you are owed, account for allowable expenses (mileage at 55p, tools, materials, van costs, PPE), and submit your Self Assessment return to claim it back.",
       },
       {
         title: "Ongoing CIS compliance",
@@ -123,7 +123,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund calculation and claim",
         body:
-          "We calculate your full refund entitlement including all allowable expenses, check your deduction slips for incorrect base amounts, and submit your Self Assessment return. Most electricians receive their refund within weeks rather than months.",
+          "We calculate your full refund entitlement including all allowable expenses, check your deduction slips for incorrect base amounts, and submit your Self Assessment return.",
       },
       {
         title: "Capital allowances on tools and equipment",
@@ -334,7 +334,7 @@ export const tradeTypes: TradeType[] = [
       {
         question: "How long does it take to receive a CIS refund?",
         answer:
-          "HMRC typically processes a CIS refund within weeks rather than months of receiving a correctly filed Self Assessment return. Complex cases or amended returns can take longer. We submit accurately and follow up with HMRC if there are delays.",
+          "HMRC does not publish a processing time for Self Assessment repayments. It asks you to use its weekly-updated 'Check when you can expect a reply from HMRC' tool for the current date, and a repayment selected for security checks can take up to a further 12 weeks on top of that. We submit accurately, which is what keeps a claim out of the check queue, and follow up with HMRC if there are delays.",
       },
     ],
     testimonial: {
@@ -506,7 +506,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim",
         body:
-          "We review your deduction statements, check the materials split, account for all allowable expenses and submit your Self Assessment return. Most painters and decorators receive a refund within weeks rather than months.",
+          "We review your deduction statements, check the materials split, account for all allowable expenses and submit your Self Assessment return.",
       },
       {
         title: "Gross payment status",
@@ -1045,7 +1045,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund calculation and claim",
         body:
-          "We review your payment and deduction statements, verify the labour/materials split on each job, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return to recover the full refund. Most carpenters receive their refund within weeks rather than months of a correctly filed return.",
+          "We review your payment and deduction statements, verify the labour/materials split on each job, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return to recover the full refund.",
       },
       {
         title: "Capital allowances review on tools and equipment",
@@ -1123,7 +1123,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim with correct materials split",
         body:
-          "We review every payment and deduction statement, verify that the deduction base excludes tiles, adhesive and other materials, account for allowable expenses including mileage at 55p per mile and specialist tools, and submit your Self Assessment return. Most tilers receive their refund within weeks rather than months.",
+          "We review every payment and deduction statement, verify that the deduction base excludes tiles, adhesive and other materials, account for allowable expenses including mileage at 55p per mile and specialist tools, and submit your Self Assessment return.",
       },
       {
         title: "Capital allowances on cutting and specialist equipment",
@@ -1264,7 +1264,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund and Self Assessment",
         body:
-          "We calculate your full refund entitlement by accounting for all allowable expenses including tools, PPE, mileage at 55p per mile from April 2026, and any materials you supply. We submit your Self Assessment return to recover the overpayment. Most steel fixers receive their refund within weeks rather than months of a correctly filed return.",
+          "We calculate your full refund entitlement by accounting for all allowable expenses including tools, PPE, mileage at 55p per mile from April 2026, and any materials you supply. We submit your Self Assessment return to recover the overpayment.",
       },
       {
         title: "Gross payment status application and compliance",
@@ -1337,7 +1337,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund with MF grid and board exclusions applied",
         body:
-          "We review your payment and deduction statements, verify that MF grid, suspension components, ceiling tiles and plasterboard are excluded from the deduction base, account for all allowable expenses including mileage at 55p per mile from April 2026, tools and PPE, and submit your Self Assessment return. Most ceiling fixers receive their refund within weeks rather than months of a correctly filed return.",
+          "We review your payment and deduction statements, verify that MF grid, suspension components, ceiling tiles and plasterboard are excluded from the deduction base, account for all allowable expenses including mileage at 55p per mile from April 2026, tools and PPE, and submit your Self Assessment return.",
       },
       {
         title: "Multi-scope invoice review",
@@ -1416,7 +1416,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund calculation and claim",
         body:
-          "We review your deduction slips, verify the labour/materials split on each invoice, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return. Most flooring contractors receive their refund within weeks rather than months of an accurate submission.",
+          "We review your deduction slips, verify the labour/materials split on each invoice, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return.",
       },
       {
         title: "Private vs CIS work: record-keeping structure",
@@ -1805,7 +1805,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim including materials split review",
         body:
-          "We review every deduction statement, verify the labour and materials split, identify any overpayment where the deduction base included materials, and submit your Self Assessment return. Most insulation installers receive their refund within weeks rather than months of a correctly filed return.",
+          "We review every deduction statement, verify the labour and materials split, identify any overpayment where the deduction base included materials, and submit your Self Assessment return.",
       },
       {
         title: "CIS registration and GPS application",
@@ -2646,7 +2646,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "EPS in-year reclaim: the cash-flow difference",
         body:
-          "A limited company suffering CIS deductions can recover them in real time via the Employer Payment Summary, offsetting CIS suffered against the company's PAYE and employer NIC liability each month. Many construction companies do not use this mechanism and instead wait 12 to 18 months for recovery through the Corporation Tax return. The EPS route eliminates the cash-flow gap. The target repayment window once a claim is lodged is 25 working days.",
+          "A limited company suffering CIS deductions can recover them in real time via the Employer Payment Summary, offsetting CIS suffered against the company's PAYE and employer NIC liability each month. Many construction companies do not use this mechanism and instead wait 12 to 18 months for recovery through the Corporation Tax return. The EPS route eliminates the cash-flow gap. HMRC says it will usually respond to a limited-company CIS repayment claim within 8 weeks, and the monthly offset itself is not a claim at all, so nothing is queued.",
       },
       {
         title: "GPS: the per-director turnover test",
@@ -2663,7 +2663,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "EPS CIS reclaim setup and monthly operation",
         body:
-          "We configure the EPS reclaim mechanism for your payroll software, calculate the monthly CIS deduction suffered to offset against your PAYE/NIC liability, and submit the EPS within the payroll deadline cycle. Where your CIS deductions exceed the monthly PAYE liability, we manage the repayment claim with HMRC within the 25-working-day target window.",
+          "We configure the EPS reclaim mechanism for your payroll software, calculate the monthly CIS deduction suffered to offset against your PAYE/NIC liability, and submit the EPS within the payroll deadline cycle. Where your CIS deductions exceed the monthly PAYE liability, the surplus carries forward, and we manage the year-end repayment claim with HMRC, which says it will usually respond within 8 weeks.",
       },
       {
         title: "GPS application and per-director qualification assessment",
@@ -2685,7 +2685,7 @@ export const tradeTypes: TradeType[] = [
       {
         question: "Our company suffers CIS deductions from main contractors. How do we get that money back in-year rather than waiting for year-end?",
         answer:
-          "Via the Employer Payment Summary. Each month, your company can offset the CIS deductions it has suffered against its PAYE and employer NIC liability and remit only the net amount to HMRC. If CIS suffered exceeds your PAYE/NIC liability in a given month, you can apply for a repayment and HMRC's target is to process it within 25 working days. We set up the mechanism and run it monthly so you are not carrying unnecessary deductions on your balance sheet.",
+          "Via the Employer Payment Summary. Each month, your company can offset the CIS deductions it has suffered against its PAYE and employer NIC liability and remit only the net amount to HMRC. If CIS suffered exceeds your PAYE/NIC liability in a given month, the surplus carries forward automatically to the next month, and any credit still unabsorbed at the year end is reclaimed from HMRC, which says it will usually respond to that claim within 8 weeks. We set up the mechanism and run it monthly so you are not carrying unnecessary deductions on your balance sheet.",
       },
       {
         question: "We are a two-director company. What do we each need to earn to qualify for GPS?",

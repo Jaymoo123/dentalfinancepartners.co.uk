@@ -26,13 +26,13 @@ faqs:
   - question: "Does my CIS limited company need to file Self Assessment?"
     answer: "The company files a Corporation Tax return (CT600), not a Self Assessment return. You as a director may still need to file a personal Self Assessment return if you draw dividends, receive director's salary above the personal allowance, or have other income. The company's CIS recovery happens on the payroll side through the EPS, not through anyone's Self Assessment."
   - question: "How do I reclaim CIS via the EPS as a limited company?"
-    answer: "Each month you file an Employer Payment Summary through your payroll software, reporting the CIS deducted from your company's income in that tax month. HMRC reduces the PAYE and NIC your company owes by the same amount. If the CIS deducted exceeds the PAYE due, the surplus carries forward to the following month. Any remaining credit at the year end is set against Corporation Tax or refunded, with a 25-working-day HMRC repayment target."
+    answer: "Each month you file an Employer Payment Summary through your payroll software, reporting the CIS deducted from your company's income in that tax month. HMRC reduces the PAYE and NIC your company owes by the same amount. If the CIS deducted exceeds the PAYE due, the surplus carries forward to the following month. Any remaining credit at the year end is set against Corporation Tax or claimed back, and HMRC says it will usually respond to a limited-company CIS repayment claim within 8 weeks. The monthly offset itself is not a claim HMRC processes, so no turnaround applies to it."
   - question: "Can my limited company hold Gross Payment Status?"
     answer: "Yes. A limited company can hold GPS if it passes the three qualifying tests: the business test (UK construction work, bank account), the turnover test (£30,000 net CIS turnover per director or £100,000 total), and the compliance test (all tax obligations met on time for the past 12 months). From April 2026, keeping GPS also depends on satisfying the ongoing anti-fraud due-diligence duty."
   - question: "What is the GPS turnover test for a limited company?"
     answer: "The turnover test for a limited company requires net annual CIS turnover of at least £30,000 per director or £100,000 in total across the company. 'Net' means excluding VAT and the direct cost of materials, consistent with the labour-only deduction base. A company with two directors each generating £35,000 of net CIS turnover passes the per-director test on £35,000 each, even if the total is below £100,000."
   - question: "What happens to CIS deductions at year end if EPS credits are not fully used?"
-    answer: "Surplus CIS credits unabsorbed by the monthly EPS offsets become a year-end excess. The excess is set against the Corporation Tax liability for the same accounting period first. If the CT liability is smaller than the credit, HMRC refunds the balance as a cash payment. HMRC's target is 25 working days from the final EPS submission for processing EPS repayments."
+    answer: "Surplus CIS credits unabsorbed by the monthly EPS offsets become a year-end excess. The excess is set against the Corporation Tax liability for the same accounting period first. If the CT liability is smaller than the credit, HMRC refunds the balance as a cash payment. HMRC says it will usually respond to a limited-company CIS repayment claim within 8 weeks of the claim being made."
   - question: "How much Corporation Tax does a CIS limited company pay in 2026/27?"
     answer: "The main rate is 25% on profits over £250,000. The small profits rate is 19% on profits under £50,000. Between £50,000 and £250,000, marginal relief applies, producing an effective rate that increases incrementally from 19% to 25%. For most single-director construction companies, profits fall below £50,000 after director's salary, and the 19% rate applies."
   - question: "What are the April 2026 director obligations under the GPS anti-fraud rules?"
@@ -297,9 +297,9 @@ generator: "claude-sonnet-4-6 | wave-3 | 2026-06-12"
 <td>Self Assessment return filed by 31 January</td>
 </tr>
 <tr>
-<td>HMRC repayment target</td>
-<td>25 working days for EPS excess refund</td>
-<td>5-10 working days once SA return processed</td>
+<td>HMRC repayment timescale</td>
+<td>Year-end claim: usually a response within 8 weeks. The monthly offset is not a claim, so none applies</td>
+<td>None published. HMRC points to its weekly-updated "Check when you can expect a reply" tool, plus up to a further 12 weeks if security checks apply</td>
 </tr>
 <tr>
 <td>CIS treated as</td>

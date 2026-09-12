@@ -59,7 +59,7 @@ noindex: true
 
 <p>File a Self Assessment tax return by 31 January following the tax year. Your contractor should give you a CIS deduction statement (form CIS132 or an equivalent statement from their software) showing deductions made. Add the total deductions to the "tax deducted at source" section of the return.</p>
 
-<p>HMRC issues refunds by bank transfer after processing. Simple returns with no unusual features are typically processed within a few weeks. Paper returns take longer.</p>
+<p>HMRC issues refunds by bank transfer after processing. HMRC publishes no processing time for Self Assessment repayments and asks you to use its weekly-updated "Check when you can expect a reply from HMRC" tool for the current date. A repayment selected for its security checks can take up to a further 12 weeks on top of that. Paper returns take longer than online ones.</p>
 
 <h2>Back years</h2>
 
