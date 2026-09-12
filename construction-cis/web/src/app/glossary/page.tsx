@@ -146,8 +146,8 @@ export default function GlossaryIndexPage() {
               detail: "Construction tax is the whole of what we do, not a sideline.",
             },
             {
-              title: "Fixed fees, no surprises",
-              detail: "Quoted before we start, so you see the number first.",
+              title: "Fees agreed before any work starts",
+              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
             },
             {
               title: "No hard sell, no obligation",

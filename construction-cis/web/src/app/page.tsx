@@ -289,7 +289,7 @@ export default function HomePage() {
               </div>
               <div className="mt-8 flex items-center gap-2.5 text-sm text-neutral-400">
                 <ShieldCheck className="h-4 w-4 text-orange-400 flex-shrink-0" aria-hidden />
-                <span className="font-medium">Fixed fees. Plain English. No hard sell.</span>
+                <span className="font-medium">Plain English. No hard sell. No obligation.</span>
               </div>
             </div>
           </div>
@@ -392,7 +392,7 @@ export default function HomePage() {
               From free tools to full CIS accounting.
             </h2>
             <p className="mt-3 text-base text-neutral-600 sm:mt-4 sm:text-lg">
-              Start with our free calculators or speak to us directly. Fixed fees, no surprises.
+              Start with our free calculators or speak to us directly. The specialist firm you speak to sets its own fee and agrees it with you up front.
             </p>
           </div>
           <ServiceTiers tiers={serviceTiers} featuredBadge="" />
@@ -675,7 +675,7 @@ export default function HomePage() {
                 {[
                   { title: "CIS specialists only", sub: "We do not work with non-construction clients" },
                   { title: "A specialist CIS accountant gets in touch", sub: "Not a sales team, not a call centre" },
-                  { title: "Fixed fees, no surprises", sub: "Quoted before we start" },
+                  { title: "Fees agreed before any work starts", sub: "The specialist firm you speak to sets its own fee" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">

@@ -34,7 +34,7 @@ export function WhoWeAreSection() {
             We only work with the construction industry.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-neutral-600 sm:text-lg">
-            We are specialist accountants for CIS subcontractors and contractors. Every client we work with operates in the construction industry under CIS. That focus means we understand the financial specifics of construction work in a way that a general practice does not.
+            We are specialist accountants for CIS subcontractors and contractors. Construction under CIS is the whole of what we do, not a sideline. That focus means we understand the financial specifics of construction work in a way that a general practice does not.
           </p>
           <p className="mt-5 text-base leading-relaxed text-neutral-600 sm:text-lg">
             The same applies to gross payment status, contractor CIS300 obligations, the EPS real-time reclaim route for limited company subcontractors, and the April 2026 anti-fraud changes that affected GPS applications. These are not things that come up occasionally for us. They are the core of what we do.

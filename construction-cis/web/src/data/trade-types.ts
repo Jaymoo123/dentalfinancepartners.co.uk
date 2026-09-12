@@ -249,7 +249,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund from start to finish",
         body:
-          "We review your CIS deduction statements, check the deduction base, calculate all allowable expenses, and submit your Self Assessment claim. For most groundworkers, the refund covers our fee many times over in the first year.",
+          "We review your CIS deduction statements, check the deduction base, calculate all allowable expenses, and submit your Self Assessment claim. Fees are agreed with you before any work starts.",
       },
       {
         title: "Gross payment status application",

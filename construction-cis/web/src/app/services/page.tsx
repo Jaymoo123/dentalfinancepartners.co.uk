@@ -236,7 +236,7 @@ export default function ServicesPage() {
               From free tools to full CIS accounting.
             </h2>
             <p className="mt-3 text-base text-neutral-600">
-              Start with our free calculators or speak to us directly. Fixed fees, no surprises.
+              Start with our free calculators or speak to us directly. The specialist firm you speak to sets its own fee and agrees it with you up front.
             </p>
           </div>
           <ServiceTiers tiers={serviceTiers} featuredBadge="" />

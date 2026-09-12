@@ -282,8 +282,8 @@ export default function CisRefundPage() {
               detail: "Not a sales team, not a call centre.",
             },
             {
-              title: "Fixed fees, quoted before we start",
-              detail: "No work begins until you have agreed the scope.",
+              title: "Fees agreed before any work starts",
+              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
             },
           ]}
           footnote={

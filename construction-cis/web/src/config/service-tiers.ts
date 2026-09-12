@@ -32,7 +32,7 @@ export const serviceTiers: ServiceTier[] = [
       "Materials split verified across deduction slips",
       "Mileage at 55p per mile (from April 2026)",
       "Tools, van costs and PPE claimed",
-      "Fixed fee, quoted before we start",
+      "Fee agreed with you before any work starts",
     ],
     cta: "Get a free call",
     ctaHref: "/contact",
