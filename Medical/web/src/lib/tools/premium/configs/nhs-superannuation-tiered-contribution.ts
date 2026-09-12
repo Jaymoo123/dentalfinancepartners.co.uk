@@ -6,18 +6,18 @@
  *
  * Computes the NHS Pension employee contribution for GPs, locums and
  * hospital doctors using the 2025/26 tiered rate table, plus the deemed
- * employer contribution that feeds the Annual Allowance adjusted-income
- * calculation.
+ * employer contribution credited on the member's behalf.
  *
  * TIERS + deemed employer rate come from the shared single-source module
  * compute/nhs-super-tiers.ts (2026/27 table, cross-checked 2026-07-17). Do NOT
  * re-declare a tier table here.
  *
  * Deemed employer contribution rate: 23.7% of pensionable pay (NHSBSA rate
- * from 1 April 2024 onward, confirmed 2025/26 and 2026/27). This feeds "adjusted
- * income" in the Annual Allowance taper test (threshold income + deemed employer
- * contribution) and is explicitly NOT the same as the pension input amount
- * (capitalised growth), which is calculated separately by NHS Pensions.
+ * from 1 April 2024 onward, confirmed 2025/26 and 2026/27). It is the total
+ * credited on the member's behalf (14.38% employer, 9.4% central) and is NOT an
+ * input to the Annual Allowance taper: adjusted income adds back the PENSION
+ * INPUT AMOUNT (FA 2004 s.228ZA), the capitalised growth NHS Pensions reports on
+ * the member's annual allowance statement. Never use this rate for that test.
  *
  * ponytail: tiered contribution is a stepped (not banded) calculation --
  * one rate applies to the WHOLE pensionable pay. This is correct for the
@@ -169,7 +169,7 @@ export const nhsSuperannuationTieredContributionConfig: PremiumToolConfig = {
         value: gbp(deemedEmployerContribution),
       },
       {
-        label: "Combined pension input proxy (feeds Annual Allowance check)",
+        label: "Total contributions credited this year (not your pension input amount)",
         value: gbp(combinedPensionInput),
       },
       {
@@ -181,8 +181,8 @@ export const nhsSuperannuationTieredContributionConfig: PremiumToolConfig = {
     const note = [
       "2026/27 NHSBSA tiered contribution rates (England and Wales). ",
       "The contribution tier is determined by your total pensionable pay for the year; the rate applies to the whole amount, not just the slice above each threshold. ",
-      "The deemed employer contribution (23.7%) is the employer rate used by NHSBSA from 1 April 2024; this is the figure to add to threshold income when checking whether the Annual Allowance taper applies (adjusted income = threshold income + deemed employer contribution). ",
-      "The combined pension input proxy shown is an approximation; your actual pension input amount (capitalised growth in defined-benefit entitlement) is calculated separately by NHS Pensions and will differ. ",
+      "The deemed employer contribution (23.7%) is the rate credited on the member's behalf by NHSBSA from 1 April 2024; it is money into the scheme, not a figure used in the Annual Allowance taper test. ",
+      "Adjusted income is threshold income plus your pension input amount for the year across all registered schemes, which for the NHS scheme is the capitalised growth in your accrued benefits and arrives on an NHSBSA annual allowance statement. Contributions paid in are a different number, so use the NHS Pension Annual Allowance Calculator with your statement figure to test the taper. ",
       "GP partners and locums report superannuable profit on Form A/B; NHSBSA deducts the employee contribution from drawings at source for partners or via self-assessment for locums. ",
       "Tax relief on contributions is given at your marginal rate via self-assessment or PAYE. ",
       "These are estimates, not advice.",
@@ -205,8 +205,8 @@ export const nhsSuperannuationTieredContributionConfig: PremiumToolConfig = {
     paragraphs: [
       "The NHS Pension Scheme uses a tiered contribution structure where the rate you pay depends on your total pensionable pay or superannuable profit for the year. Unlike income tax, the same rate applies to your whole pay, not just the slice above each threshold. For 2026/27, the tiers range from 5.2% on pay up to £13,259 to 12.5% on pay of £67,669 and above. The NHSBSA reviews these thresholds each April in line with the pay uplift; the six contribution rates are unchanged from 2025/26, with only the pay-band thresholds uplifted by CPI.",
       "GP partners and locums pay contributions on their superannuable profit, not their gross turnover or total drawings. Superannuable profit is broadly your net NHS income after practice expenses but before the superannuation deduction itself. Partners report this figure on Form B each July, with per-session locum earnings declared on Form A for each practice. Salaried GPs and hospital doctors pay contributions on their NHS pensionable pay as shown on payslips and the NHSBSA annual benefit statement.",
-      "In addition to the employee contribution, the NHS also makes a deemed employer contribution (23.7% of pensionable pay from 1 April 2024). This figure is important beyond pension funding: it is the number you add to your threshold income to calculate adjusted income for the Annual Allowance taper test. If your threshold income exceeds £200,000 AND your adjusted income (threshold income plus deemed employer contribution) exceeds £260,000, your Annual Allowance begins to taper down from £60,000 towards a £10,000 floor. Carry this figure directly into the Annual Allowance calculator for your taper check.",
-      "The combined pension input proxy shown by this tool is the sum of the employee and deemed employer contributions. It is an approximation of the pension input amount used in Annual Allowance testing. Your actual pension input amount is the capitalised increase in your defined-benefit entitlement, calculated by NHS Pensions using a standard multiplier (currently 16x for the 2015 CARE scheme). For senior doctors with high pay and significant accrual, the pension input amount can be materially different from the contributions paid, which is why NHSBSA-issued statements are essential before drawing any conclusion about an Annual Allowance breach.",
+      "In addition to the employee contribution, 23.7% of pensionable pay is credited on the member's behalf (the rate from 1 April 2024), of which an employer bears 14.38% and 9.4% is funded centrally. It is a large part of what an NHS post is worth, but it is not the figure used in the Annual Allowance taper test. That test applies where threshold income exceeds £200,000 AND adjusted income exceeds £260,000, and adjusted income is threshold income plus your pension input amount for the year across all registered schemes. Above £260,000 the allowance falls by £1 for every £2, from £60,000 towards a £10,000 floor. Take the pension input amount from your NHSBSA annual allowance statement into the Annual Allowance calculator for your taper check.",
+      "The total credited figure shown by this tool is the sum of the employee and deemed employer contributions. It is what goes into the scheme, and it is not the pension input amount used in Annual Allowance testing. Your pension input amount is the capitalised increase in your defined-benefit entitlement, calculated by NHS Pensions using a standard multiplier (currently 16x for the 2015 CARE scheme). A big pay rise or a jump in pensionable service can make it far larger than the contributions paid in a year when cash income barely moved, which is exactly how doctors get caught by the taper unexpectedly, so an NHSBSA-issued statement is essential before drawing any conclusion about an Annual Allowance breach.",
       "Employee contributions attract income-tax relief at your marginal rate. A higher-rate taxpayer contributing £15,000 pays a net cost of £9,000 after 40% relief. GP partners and locums claim this relief through self-assessment; salaried doctors normally receive it automatically through PAYE coding. National Insurance is not charged on employee pension contributions, which adds a further saving for self-employed doctors paying Class 4 NI.",
     ],
   },

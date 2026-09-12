@@ -304,7 +304,7 @@ export default function IncorporationPillarPage() {
                 data-cta-goal="form"
                 className={btnPrimary}
               >
-                Book free consultation
+                Send your position
               </Link>
               <Link
                 href="#articles"

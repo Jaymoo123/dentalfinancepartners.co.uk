@@ -195,7 +195,7 @@ const SECTIONS: Section[] = [
           },
           {
             label: "Professional subscriptions",
-            detail: "GMC registration, BMA, RCGP and Royal College fees.",
+            detail: "GMC registration, BMA membership (relief restricted to 85%), RCGP and Royal College fees.",
           },
           {
             label: "Medical equipment",

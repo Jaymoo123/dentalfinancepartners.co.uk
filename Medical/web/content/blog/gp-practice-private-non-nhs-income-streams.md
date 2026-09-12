@@ -252,4 +252,4 @@ faqs:
 <li><a href="/blog/gp-practice-management">GP Practice Management</a></li>
 </ul>
 
-<p>This guide is general information and not advice for your specific circumstances. For tailored support, see our <a href="/for-gps">services for GPs</a> or <a href="/contact">get in touch with our medical accounting team</a>.</p>
+<p>This guide is general information and not advice for your specific circumstances. For tailored support, see our <a href="/for-gps">services for GPs</a> or <a href="/contact">send us your position</a> and we will route it to a firm that works with GP practices.</p>

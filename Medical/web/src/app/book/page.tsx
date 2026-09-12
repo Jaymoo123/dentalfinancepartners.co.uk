@@ -13,8 +13,8 @@ import BookingPicker from "@/components/forms/BookingPicker";
  */
 
 export const metadata: Metadata = {
-  title: "Book your free review",
-  description: "Pick a time for your free medical practice finance review call.",
+  title: "Book your review call",
+  description: "Pick a time for a call with a specialist firm about your medical practice finances.",
   robots: { index: false, follow: false },
 };
 
@@ -31,11 +31,12 @@ export default async function BookPage({
       <div className={siteContainerLg}>
         <div className="mx-auto max-w-2xl">
           <h1 className="text-center text-3xl font-bold text-[var(--ink)] sm:text-4xl">
-            Book your free review call
+            Book your review call
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-[var(--muted)]">
-            Pick a day and a time window that suits you. A medical accountant will call you then,
-            no obligation.
+            Pick a day and a time window that suits you. A medical accountant from our specialist partner
+            network will call you then. Booking commits you to nothing, and scope and fees are
+            agreed with that firm.
           </p>
           <div className="mt-10">
             {token ? (

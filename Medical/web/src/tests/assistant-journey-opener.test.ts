@@ -889,8 +889,11 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(GENERIC[0].q).toMatch(/who.*repl|repl/i);
   });
 
-  it("GENERIC Q&A 2 is about the first call being free", () => {
-    expect(GENERIC[1].q).toMatch(/free|first.*conversation/i);
+  /* Was "is the first conversation free?". The fee is the partner firm's to
+     set, not ours to promise, so the slot now asks what enquiring commits you
+     to. The guard still pins the slot's subject. */
+  it("GENERIC Q&A 2 is about what enquiring commits you to", () => {
+    expect(GENERIC[1].q).toMatch(/commit|obligation/i);
   });
 
   it("GENERIC Q&A 3 is about what to have ready", () => {

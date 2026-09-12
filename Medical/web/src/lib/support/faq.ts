@@ -35,8 +35,8 @@ export const GENERIC: Faq[] = [
     a: "Leave your email and a one-line question. We match it to a firm from our specialist partner network, and an accountant who works with doctors comes back to you directly.",
   },
   {
-    q: "Is the first conversation free?",
-    a: "Yes. The first call to understand your situation and point you in the right direction is free, with no obligation.",
+    q: "Does enquiring commit me to anything?",
+    a: "No. We match your enquiry to a firm from our specialist partner network and that firm makes contact. Scope and fees are agreed with them, and nothing is settled until you agree it.",
   },
   {
     q: "What should I have ready?",
@@ -57,7 +57,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
     },
     {
       q: "Does incorporating my private work cost me NHS pension?",
-      a: "Yes, on the incorporated portion. A doctor's ordinary personal service company cannot hold a GMS or PMS contract and company dividends are not NHS pensionable, so private income taken as dividends builds no NHS benefits. For a consultant, only the NHS employment is pensionable, never the private work. Over years to retirement that lost accrual can outweigh the headline tax saving, so we model both sides before you decide.",
+      a: "Yes, on the incorporated portion. A doctor's ordinary personal service company cannot hold a GMS or PMS contract and company dividends are not NHS pensionable, so private income taken as dividends builds no NHS benefits. For a consultant, only the NHS employment is pensionable, never the private work. Over years to retirement that lost accrual can outweigh the headline tax saving, so both sides need modelling before you decide.",
     },
   ],
   "incorporation-private": [

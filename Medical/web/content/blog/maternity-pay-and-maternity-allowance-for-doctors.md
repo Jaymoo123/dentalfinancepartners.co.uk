@@ -215,4 +215,4 @@ faqs:
 
 <p>If you are salaried, confirm the 12-month NHS service test at the 11th week, check whether a salary sacrifice is running through the earnings-assessment weeks, and leave your pension alone. If you are a partner in a practice with a colleague going on leave, agree the cover rate against the SFE cap and diarise the monthly claim.</p>
 
-<p>Where a decision turns on figures, general guidance is no substitute for a calculation on your own numbers. Our team works with GP partners, salaried GPs, locums and practices on exactly these positions. The rates above are for 2026/27 and carry the date they were read at source; confirm your entitlement with the Department for Work and Pensions or your employer before you rely on it.</p>
+<p>Where a decision turns on figures, general guidance is no substitute for a calculation on your own numbers. We match enquiries to regulated firms that work with GP partners, salaried GPs, locums and practices on exactly these positions. The rates above are for 2026/27 and carry the date they were read at source; confirm your entitlement with the Department for Work and Pensions or your employer before you rely on it.</p>

@@ -109,7 +109,7 @@ export function StickyCTA() {
   if (!visible) return null;
   if (isConverted()) return null;
 
-  // Packages mode disables intent offers: they resurface free-call framing
+  // Packages mode disables intent offers: they resurface enquiry framing
   // that competes with the pricing CTA.
   const offer: StickyOffer = !packagesMode && intentAction
     ? {
@@ -121,7 +121,7 @@ export function StickyCTA() {
             ? "Open calculator"
             : intentAction.offer.kind === "guide"
               ? "Get free guide"
-              : "Book a free call",
+              : "Speak to a specialist",
       }
     : defaultOffer;
 

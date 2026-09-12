@@ -56,11 +56,12 @@ const CLASS4_UPPER_PROFIT_LIMIT = 50270;
 
 // NHS employee superannuation tiers: see compute/nhs-super-tiers.ts (2026/27).
 
-// ── Student loan thresholds (2025/26; update if HMRC revises) ─────────────────
+// ── Student loan thresholds (2026/27, verified 2026-08-26 at
+// https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 ) ──
 const STUDENT_LOAN_THRESHOLDS: Record<StudentLoanPlan, number> = {
-  plan1: 26065,
-  plan2: 28470,
-  plan4: 32745,
+  plan1: 26900,
+  plan2: 29385,
+  plan4: 33795,
   none: Infinity,
 };
 

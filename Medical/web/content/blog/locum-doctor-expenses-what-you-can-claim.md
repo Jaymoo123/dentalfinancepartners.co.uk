@@ -80,7 +80,7 @@ faqs:
 <li><strong>Medical indemnity</strong> with the MDU, MPS or MDDUS</li>
 <li>The <strong>GMC annual retention fee</strong> (the fee that maintains your registration and licence to practise)</li>
 <li>Royal College and specialty membership fees on HMRC's approved List 3</li>
-<li>BMA subscription where used for your profession (on List 3)</li>
+<li>BMA subscription where used for your profession (on List 3, which restricts relief to 85% of the annual subscription)</li>
 <li>Locum agency or chambers registration fees</li>
 </ul>
 

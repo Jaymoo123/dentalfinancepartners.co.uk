@@ -26,7 +26,7 @@ schema: ''
 canonical: https://www.medicalaccounts.co.uk/blog/medical-professional-expenses-what-is-claimable
 faqs:
 - question: Can I claim my GMC retention fee against tax?
-  answer: Yes. The GMC annual retention fee is on HMRC's approved List 3, so it is tax-deductible for all UK doctors who pay it to keep their licence to practise. Royal College and specialty memberships and your BMA subscription are also deductible where they appear on List 3. Restoration fees and any penalty fees are not deductible. GP partners include these in the practice accounts, while salaried doctors, consultants and locums claim them on the relevant part of their self-assessment return.
+  answer: Yes. The GMC annual retention fee is on HMRC's approved List 3, so it is tax-deductible for all UK doctors who pay it to keep their licence to practise. Royal College and specialty memberships are also deductible where they appear on List 3, as is your BMA subscription, though List 3 restricts BMA relief to 85% of the annual amount. Restoration fees and any penalty fees are not deductible. GP partners include these in the practice accounts, while salaried doctors, consultants and locums claim them on the relevant part of their self-assessment return.
 - question: What is the mileage rate doctors can claim in 2026/27?
   answer: HMRC's approved mileage allowance payment (AMAP) rate rose to 55p per business mile for the first 10,000 miles from 6 April 2026, then 25p per mile thereafter (2026/27). You can claim mileage for travel between work sites, home visits and travel to temporary workplaces, but ordinary commuting from home to a permanent workplace is not claimable. Keep a mileage log showing the date, destination and business purpose of each journey.
 - question: Is medical indemnity tax-deductible, and do NHS GPs still need their own cover?
@@ -49,7 +49,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li><strong>GMC retention fee</strong> - the annual fee you pay to keep your licence to practise. The GMC is on List 3, so the retention fee is deductible. Restoration fees and any penalty fees are not.</li>
 <li><strong>Royal College membership</strong> - annual subscriptions to the RCGP, RCP, RCS or other specialist colleges on List 3.</li>
-<li><strong>BMA membership</strong> - the BMA subscription is allowable where it appears on List 3.</li>
+<li><strong>BMA membership</strong> - allowable, but restricted. List 3 reads "British Medical Association (J) (tax relief restricted to 85% of annual subscription)", so relief runs on 85% of the subscription, and the "(J)" means an approved journal subscription counts too.</li>
 <li><strong>Faculty memberships</strong> - such as the Faculty of Occupational Medicine or the Faculty of Public Health.</li>
 </ul>
 

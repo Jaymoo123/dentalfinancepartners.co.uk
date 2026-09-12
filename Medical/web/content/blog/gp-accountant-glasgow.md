@@ -64,7 +64,7 @@ faqs:
 <li>NHS pension annual allowance of <strong>£60,000</strong> (2025/26), tapered for high earners where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a £10,000 floor</li>
 <li>GP partnership profit allocation, the SA800 partnership return, and that a partner is taxed on profit share, not drawings</li>
 <li>Mixed NHS and private income, with the Scottish and UK-wide layers applied to each stream</li>
-<li>Professional expenses such as GMC registration, MDU, MPS or MDDUS indemnity and relevant Royal College or BMA fees</li>
+<li>Professional expenses such as GMC registration, MDU, MPS or MDDUS indemnity, relevant Royal College fees and BMA membership (relief restricted to 85%)</li>
 <li>Locum IR35 status for those working through a company (the off-payroll rules have not been abolished)</li>
 <li>Private-practice incorporation decisions, with the NHS pension accrual loss modelled alongside any tax saving</li>
 </ul>
@@ -142,4 +142,4 @@ faqs:
 <li><a href="/blog/gp-tax-deductions-complete-list-2026">GP Tax Deductions: Complete List for 2026</a></li>
 </ul>
 
-<p>If you are ready to get both layers of your tax position right with specialist expertise, <a href="/contact">get in touch</a> to discuss your requirements with our team of qualified medical accountants.</p>
+<p>If you are ready to get both layers of your tax position right with specialist expertise, <a href="/contact">send an enquiry</a> and we will match it to a regulated firm of medical accountants that can discuss your requirements.</p>

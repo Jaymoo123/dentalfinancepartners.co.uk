@@ -30,7 +30,7 @@ faqs:
 - question: What is the difference between a GP partner's drawings and their profit share?
   answer: Drawings are the monthly amounts a partner physically takes from the practice bank account during the year. Profit share is the partner's actual slice of the practice profit for the year, fixed at the year end under the partnership agreement. A GP partner is taxed on their profit share, not on their drawings. Drawings are simply payments on account against the eventual share, trued up once the accounts are finalised.
 - question: How is NHS income recognised in GP practice accounts?
-  answer: 'Core funding comes through the GMS, PMS or APMS contract, principally the Global Sum (a per-patient payment weighted by the Carr-Hill formula), plus QOF (Quality and Outcomes Framework) achievement, enhanced services and PCN or Network Contract DES funding such as ARRS. Dispensing practices also record dispensing income. There is no single national per-patient figure: the values are weighted and uplifted each year, which is why accruals at the year end matter.'
+  answer: 'Core funding comes through the GMS, PMS or APMS contract, principally the Global Sum (a per-patient payment weighted by the Carr-Hill formula), plus QOF (Quality and Outcomes Framework) achievement, enhanced services and PCN or Network Contract DES funding such as ARRS. Dispensing practices also record dispensing income. The Global Sum price is national and fixed for the year, £130.07 per weighted patient for 2026/27 under the Statement of Financial Entitlements Directions 2026, so the figure in a set of accounts varies with the weighted patient count rather than the rate. The rate is uplifted each April, which is one reason accruals at the year end matter.'
 - question: How does the NHS pension appear in GP accounts?
   answer: Employer and employee superannuation deductions are taken from practice income through PCSE before the practice nets down to distributable profit, so pension is woven through the accounts rather than sitting only on a payslip. Type 1 partners certify their pensionable profit each year on the Annual Certificate of Pensionable Profits. High practice profits can push pensionable income into annual allowance territory, so the accounts feed directly into pension planning.
 - question: Does a GP partnership have to follow Making Tax Digital from April 2026?
@@ -90,7 +90,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>NHS general practice is funded through one of three contract types: <strong>GMS</strong> (General Medical Services, nationally negotiated and governed by the Statement of Financial Entitlements), <strong>PMS</strong> (Personal Medical Services, locally agreed) and <strong>APMS</strong> (Alternative Provider Medical Services). Whichever contract applies, the income reaching the accounts breaks down into recognisable streams:</p>
 
 <ul>
-<li><strong>Global Sum.</strong> The core per-patient payment, weighted by the <strong>Carr-Hill formula</strong>, which adjusts the registered list for age, sex, morbidity, list turnover and geography to produce weighted patients. There is no single national per-patient value: it is weighted and uplifted each year, so the figure in your accounts is practice-specific.</li>
+<li><strong>Global Sum.</strong> The core per-patient payment, weighted by the <strong>Carr-Hill formula</strong>, which adjusts the registered list for age and sex, additional needs, list turnover, nursing and residential homes, rurality and geography, and a staff market-forces factor to produce weighted patients. The price itself is national: <strong>£130.07 per weighted patient for 2026/27</strong>, set in the Statement of Financial Entitlements Directions 2026 and uplifted each April. The figure in your accounts is practice-specific because your weighted patient count is, not because the rate is.</li>
 <li><strong>QOF (Quality and Outcomes Framework).</strong> A voluntary, points-based quality scheme. Achievement is measured across the year and the point value is uprated annually, so QOF income is typically accrued at the year end rather than recognised purely on receipt.</li>
 <li><strong>Enhanced services.</strong> Payments for additional services the practice agrees to provide (national or local).</li>
 <li><strong>PCN and Network Contract DES funding.</strong> Income flowing through the Primary Care Network, including the Additional Roles Reimbursement Scheme (ARRS), which reimburses the cost of additional roles such as clinical pharmacists and physiotherapists.</li>
@@ -121,7 +121,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>staff salaries, employer pension and employer National Insurance;</li>
 <li>premises costs (rent or notional/cost rent, rates, utilities, maintenance);</li>
 <li>locum cover for leave, sickness and training;</li>
-<li>the <strong>GMC annual retention fee</strong>, Royal College and specialty membership, and BMA subscription (List 3 items);</li>
+<li>the <strong>GMC annual retention fee</strong>, Royal College and specialty membership, and the BMA subscription (all List 3 items, though List 3 restricts BMA relief to 85% of the annual subscription);</li>
 <li>medical indemnity (MDU, MPS or MDDUS), noting that NHS GP clinical negligence is covered by the state CNSGP scheme, so a GP's own paid indemnity is largely for private, non-clinical and regulatory matters;</li>
 <li>continuing professional development relevant to current practice;</li>
 <li>equipment and IT (usually relieved through capital allowances and the Annual Investment Allowance);</li>
@@ -182,4 +182,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS Pension Annual Allowance: Complete Guide</a></li>
 </ul>
 
-<p>If you need specialist support, our team works with GP partners, salaried GPs and locums across the UK and understands the contracts, the pension and the partnership structure that ordinary accountants do not. Contact us to discuss how we can help you get your practice accounts and tax position right.</p>
+<p>If you need specialist support, send us your position and we will match it to a regulated firm that works with GP partners, salaried GPs and locums across the UK, and that understands the contracts, the pension and the partnership structure ordinary accountants do not. Contact us and that firm will take it from there.</p>

@@ -201,7 +201,7 @@ export default function DetailsForm({
       )}
 
       <p className="mt-3 text-xs text-[var(--muted)]">
-        We only use this to arrange your free review. See our{" "}
+        We only use this to arrange your review call. See our{" "}
         <a
           href="/privacy-policy"
           target="_blank"

@@ -81,7 +81,7 @@ function reviewOffer(
   return {
     kind: "specialist",
     title: t.ctaCopy,
-    blurb: "A free, no-obligation review of your position with a specialist medical accountant.",
+    blurb: "Your position read by a specialist medical accountant from our partner network. Enquiring commits you to nothing.",
     href: "/contact",
     reason,
   };

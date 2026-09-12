@@ -741,9 +741,9 @@ describe("calcGpPartnerDrawings — golden tests", () => {
     expect(r.netAnnual).toBeCloseTo(69240, 0);
   });
 
-  it("plan2 student loan: (60,000-28,470)*0.09=2,837.70", () => {
+  it("plan2 student loan: (60,000-29,385)*0.09=2,755.35 (2026/27 threshold)", () => {
     const r = calcGpPartnerDrawings({ profitShare: 60000, superannuablePay: 60000, studentLoanPlan: "plan2", taxReserveRate: 0 });
-    expect(r.studentLoanRepayment).toBeCloseTo(2837.7, 1);
+    expect(r.studentLoanRepayment).toBeCloseTo(2755.35, 1);
   });
 
   it("5% buffer reduces net by £5,000 on £100k profit", () => {
@@ -763,30 +763,38 @@ describe("calcGpPartnerDrawings — golden tests", () => {
 
 describe("calcConsultantPrivateVsNhs — golden tests (roster Tool 10 worked example)", () => {
   it("roster worked example: NHS £150k, private £70k, extra session £15k", () => {
+    // Re-pinned 2026-09-12: adjusted income is now threshold income plus the
+    // PENSION INPUT AMOUNT (FA 2004 s.228ZA), not 23.7% of pensionable pay.
+    // Pension input amount 35000 (from an AA statement).
     // Threshold (with extra): 150000+70000+15000=235000 (>200000)
-    // Deemed employer: 150000*0.237=35550
-    // Adjusted (with extra): 270550 (>260000 => taper fires)
-    // AA reduction: (270550-260000)/2=5275; AA with: 54725; AA base: 60000 (no taper before)
+    // Adjusted (with extra): 235000+35000=270000 (>260000 => taper fires)
+    // AA reduction: (270000-260000)/2=5000; AA with: 55000; AA base: 60000 (no taper before)
     // Tax(235000): PA=0; 37700*0.2+87440*0.4+(235000-125140)*0.45 = 7540+34976+49437 = 91953
     // Tax(220000): 7540+34976+(220000-125140)*0.45 = 85203; incomeTaxOnSession = 6750
     // Class4(85000)=2956.6; Class4(70000)=2656.6; niOnSession=300
-    // aaChargeImpact=5275*0.45=2373.75; totalCost=9423.75; net=5576.25; EMR=0.62825
+    // aaChargeImpact=5000*0.45=2250; totalCost=9300; net=5700; EMR=0.62
     const r = calcConsultantPrivateVsNhs({
       nhsPensionablePay: 150_000,
+      pensionInputAmount: 35_000,
       existingPrivateIncome: 70_000,
       extraSessionValue: 15_000,
       otherIncome: 0,
     });
     expect(r.aaTapered).toBe(true);
     expect(r.aaBase).toBe(60_000);
-    expect(r.aaWith).toBeCloseTo(54_725, 0);
-    expect(r.aaReduction).toBeCloseTo(5_275, 0);
+    expect(r.aaWith).toBeCloseTo(55_000, 0);
+    expect(r.aaReduction).toBeCloseTo(5_000, 0);
     expect(r.incomeTaxOnSession).toBeCloseTo(6_750, 0);
     expect(r.niOnSession).toBeCloseTo(300, 1);
-    expect(r.aaChargeImpact).toBeCloseTo(2_373.75, 1);
-    expect(r.totalCost).toBeCloseTo(9_423.75, 0);
-    expect(r.netFromSession).toBeCloseTo(5_576.25, 0);
-    expect(r.effectiveMarginalRate).toBeCloseTo(0.6282, 3);
+    expect(r.aaChargeImpact).toBeCloseTo(2_250, 1);
+    expect(r.totalCost).toBeCloseTo(9_300, 0);
+    expect(r.netFromSession).toBeCloseTo(5_700, 0);
+    expect(r.effectiveMarginalRate).toBeCloseTo(0.62, 3);
+
+    // Guard the METHOD, not just the number: adjusted income must be threshold
+    // plus the pension input amount. 23.7% of 150,000 would give 270,550.
+    expect(r.adjustedIncomeWith).toBe(270_000);
+    expect(r.adjustedIncomeWith).not.toBe(235_000 + 150_000 * 0.237);
   });
 
   it("no taper: NHS £100k, private £30k, extra session £10k (threshold stays under £200k)", () => {
@@ -797,6 +805,7 @@ describe("calcConsultantPrivateVsNhs — golden tests (roster Tool 10 worked exa
     // totalCost=5100; netFromSession=4900
     const r = calcConsultantPrivateVsNhs({
       nhsPensionablePay: 100_000,
+      pensionInputAmount: 35_000,
       existingPrivateIncome: 30_000,
       extraSessionValue: 10_000,
       otherIncome: 0,
@@ -829,6 +838,7 @@ describe("calcConsultantPrivateVsNhs — golden tests (roster Tool 10 worked exa
   it("zero extra session value: zero cost and zero EMR", () => {
     const r = calcConsultantPrivateVsNhs({
       nhsPensionablePay: 150_000,
+      pensionInputAmount: 35_000,
       existingPrivateIncome: 70_000,
       extraSessionValue: 0,
       otherIncome: 0,

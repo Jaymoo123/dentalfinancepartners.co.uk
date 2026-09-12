@@ -76,7 +76,7 @@ const data: AudienceStage = {
     {
       icon: GraduationCap,
       title: "What expenses can I claim during training?",
-      body: "BMA membership (if you are self-employed for locum work), GMC retention, MDU or MPS indemnity if paid personally, exam fees for postgraduate qualifications (GMC/MRCS/MRCP etc., subject to conditions), professional journals, and motor between separate clinical sites. What is claimable is read against your employment status and whether you are doing any self-employed work.",
+      body: "BMA membership (if you are self-employed for locum work, and relief is restricted to 85% of the subscription under the BMA's List 3 entry), GMC retention, MDU or MPS indemnity if paid personally, exam fees for postgraduate qualifications (GMC/MRCS/MRCP etc., subject to conditions), professional journals, and motor between separate clinical sites. What is claimable is read against your employment status and whether you are doing any self-employed work.",
     },
     {
       icon: Briefcase,
@@ -134,7 +134,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your junior doctor tax sorted",
   ctaBody:
-    "30-minute call, free. It covers your current tax position, your locum income setup, and your student loan situation. No obligation.",
+    "Send your position and we will match it to a regulated firm that works with doctors. The first call covers your current tax position, your locum income setup, and your student loan situation. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
   calculatorTabs: ["locumtax"],
   // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
   // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).

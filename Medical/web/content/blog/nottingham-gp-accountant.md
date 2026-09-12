@@ -32,9 +32,9 @@ faqs:
   - question: "When should a Nottingham doctor speak to a specialist medical accountant?"
     answer: "Good trigger points are becoming a GP partner, starting private or medico-legal work, income crossing £100,000 (where the personal allowance tapers), a possible NHS pension annual allowance charge, or considering incorporating private work. Earlier is usually cheaper than later, because pension and basis-period planning works best before the tax year ends, not after."
   - question: "Can a Nottingham GP incorporate their practice to save tax?"
-    answer: "Not the NHS practice. A doctor's ordinary personal service company cannot hold a GMS or PMS contract, and income routed through a company is not NHS pensionable, so incorporation is a private-work decision only (medico-legal, occupational health, self-pay clinics, or outside-IR35 locum work). Any tax saving must be weighed against the loss of NHS pension accrual on that income. We model both sides before you decide."
+    answer: "Not the NHS practice. A doctor's ordinary personal service company cannot hold a GMS or PMS contract, and income routed through a company is not NHS pensionable, so incorporation is a private-work decision only (medico-legal, occupational health, self-pay clinics, or outside-IR35 locum work). Any tax saving must be weighed against the loss of NHS pension accrual on that income. Both sides need modelling before you decide, which is what a specialist firm does with your figures."
   - question: "What expenses can a Nottingham GP or locum claim for 2026/27?"
-    answer: "Allowable costs include medical indemnity (MDU, MPS or MDDUS) for private and non-clinical work, the GMC retention fee, BMA and relevant Royal College subscriptions on HMRC List 3, genuine CPD, equipment (usually via the Annual Investment Allowance), and business mileage between sites at 55p per mile for the first 10,000 business miles in 2026/27 (then 25p). Note that NHS GP clinical negligence in England is covered by CNSGP at no subscription, so your own indemnity is mainly for private and non-clinical cover."
+    answer: "Allowable costs include medical indemnity (MDU, MPS or MDDUS) for private and non-clinical work, the GMC retention fee, relevant Royal College subscriptions on HMRC List 3, the BMA subscription (relieved at 85% of the annual amount under its List 3 entry), genuine CPD, equipment (usually via the Annual Investment Allowance), and business mileage between sites at 55p per mile for the first 10,000 business miles in 2026/27 (then 25p). Note that NHS GP clinical negligence in England is covered by CNSGP at no subscription, so your own indemnity is mainly for private and non-clinical cover."
 ---
 
 <p>Finding the right <strong>Nottingham GP accountant</strong> matters because medical taxation barely resembles ordinary self-employment. Whether you are a GP partner in Beeston, a salaried GP in West Bridgford, a consultant at Nottingham University Hospitals, or a locum working across the East Midlands, the technical issues you face (NHS Pension Scheme annual allowance, partnership profit allocation, the prohibition on selling NHS goodwill, and the 2026/27 rate changes) sit well outside what a general high street firm handles day to day.</p>
@@ -99,7 +99,7 @@ faqs:
 <ul>
 <li><strong>Medical indemnity</strong> (MDU, MPS or MDDUS). Remember that NHS GP clinical negligence in England is covered by CNSGP at no subscription from 1 April 2019, so your own cover is mainly for private and non-clinical or regulatory matters.</li>
 <li><strong>GMC retention fee</strong>, which is tax-deductible (restoration and penalty fees are not).</li>
-<li><strong>BMA and Royal College or specialty subscriptions</strong> where on HMRC's approved List 3.</li>
+<li><strong>Royal College or specialty subscriptions</strong> where on HMRC's approved List 3, and the <strong>BMA subscription</strong>, on which List 3 restricts relief to 85%.</li>
 <li><strong>CPD</strong> genuinely relevant to your current practice.</li>
 <li><strong>Equipment</strong>, usually relieved through the Annual Investment Allowance (£1,000,000 a year, 100% relief on qualifying plant and machinery).</li>
 <li><strong>Business mileage</strong> between sites at 55p per mile for the first 10,000 business miles in 2026/27 (raised from 45p on 6 April 2026), then 25p. Home to your first site is non-deductible commuting.</li>
@@ -148,7 +148,7 @@ faqs:
 
 <h2>Getting started</h2>
 
-<p>The usual first step is an initial conversation about your role, your NHS pension position, and any private work, so we can flag the immediate planning opportunities. To talk it through, <a href="/contact">contact</a> our team. We focus on medical and GP accounting, and we understand the specific issues facing Nottingham doctors across the NHS and private sectors.</p>
+<p>The usual first step is an initial conversation about your role, your NHS pension position, and any private work, so the immediate planning opportunities get flagged. To talk it through, <a href="/contact">send an enquiry</a> and we will match it to a regulated firm that works with doctors. We publish on medical and GP accounting only, and the issues facing Nottingham doctors across the NHS and private sectors are the ones these pages are written for.</p>
 
 <h2>Related reading</h2>
 

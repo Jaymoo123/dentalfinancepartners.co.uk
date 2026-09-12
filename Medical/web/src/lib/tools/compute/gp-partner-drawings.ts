@@ -54,9 +54,9 @@ const C4_UPL = 50270;
 
 const SL_THRESHOLDS: Record<StudentLoanPlan, number> = {
   none: Infinity,
-  plan1: 26065,
-  plan2: 28470,
-  plan4: 32745,
+  plan1: 26900,
+  plan2: 29385,
+  plan4: 33795,
 };
 
 function calcPA(income: number): number {

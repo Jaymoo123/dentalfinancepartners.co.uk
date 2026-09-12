@@ -232,7 +232,7 @@ export default async function CalculatorPage({
           title="Need help interpreting your result?"
           description="These calculators give a simplified estimate on standard rates. Your actual position depends on your NHS pension record, carry-forward entitlement, IR35 status and income from all sources. Send your position and we will match you with a firm that reads the full picture."
           proofPoints={MEDICAL_PROOF_POINTS}
-          formTitle={tool.ctaLabel ?? "Book a free consultation"}
+          formTitle={tool.ctaLabel ?? "Send an enquiry"}
           footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
         />

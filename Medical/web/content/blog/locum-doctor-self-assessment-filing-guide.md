@@ -103,7 +103,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>GMC annual retention fee and Royal College or specialty membership.</li>
 <li>Medical indemnity (MDU, MPS or MDDUS) for private and non-clinical cover.</li>
-<li>BMA subscription where on HMRC's approved List 3.</li>
+<li>BMA subscription where on HMRC's approved List 3, claimed at 85% of the annual amount because that is the restriction List 3 carries for the BMA.</li>
 <li>CPD courses and training relevant to your current work.</li>
 <li>Mileage logs for travel between work sites.</li>
 <li>Apportioned phone, internet and home-office costs.</li>

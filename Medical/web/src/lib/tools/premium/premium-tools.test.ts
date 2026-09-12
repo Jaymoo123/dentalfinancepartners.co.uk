@@ -550,7 +550,7 @@ describe("Conservation invariants: compute() at default inputs", () => {
     expect(empRow?.value).toBe("£15,000");
     const deemedRow = result.breakdown?.find((r) => r.label?.startsWith("Deemed employer"));
     expect(deemedRow?.value).toBe("£28,440");
-    const combinedRow = result.breakdown?.find((r) => r.label?.startsWith("Combined"));
+    const combinedRow = result.breakdown?.find((r) => r.label?.startsWith("Total contributions credited"));
     expect(combinedRow?.value).toBe("£43,440");
     const netRow = result.breakdown?.find((r) => r.label?.startsWith("Net cost"));
     expect(netRow?.value).toBe("£9,000");
@@ -603,9 +603,10 @@ describe("Conservation invariants: compute() at default inputs", () => {
   });
 
   it("Tool 10 default (consultant-private-vs-nhs): NHS £150k, existing private £70k, extra session £15k -> taper fires, effective rate >60%", () => {
-    // Worked example from spec: effective marginal rate 62.8%
+    // Worked example from spec, re-pinned 2026-09-12 to the pension input
+    // amount method: effective marginal rate 62.0%.
     const result = consultantPrivateVsNhsConfig.compute({
-      values: { nhsPensionablePay: 150000, existingPrivateIncome: 70000, extraSessionValue: 15000, otherIncome: 0 },
+      values: { nhsPensionablePay: 150000, pensionInputAmount: 35000, existingPrivateIncome: 70000, extraSessionValue: 15000, otherIncome: 0 },
       rows: [],
     });
     expect(result.headline.tone).toBe("warn");

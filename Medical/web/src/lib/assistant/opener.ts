@@ -41,27 +41,27 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   "nhs-pension": [
     "Working out whether your NHS pension growth triggers a charge? I can pull up the annual allowance tool that checks it.",
     "Not sure where you sit against the taper and the £60,000 allowance? I can run you through the quick calculator.",
-    "A free call with a specialist will get your annual allowance and Scheme Pays position straight, want me to set one up?",
+    "A specialist firm can get your annual allowance and Scheme Pays position straight, want me to put your enquiry in front of one?",
   ],
   "incorporation-private": [
     "Weighing up incorporating your private work? I can point you to the comparison in a second.",
     "Sole trader against a limited company for your private practice, with the NHS pension trade-off, there is a tool that shows both. Want me to line it up?",
-    "A free call will confirm whether incorporating is worth it for your private work, and what it costs your pension, shall I arrange it?",
+    "A specialist firm can confirm whether incorporating is worth it for your private work, and what it costs your pension, shall I pass your enquiry on?",
   ],
   locum: [
     "Working out what you actually keep as a locum? I can pull up the calculator that does the fiddly part.",
     "Want a hand seeing your take-home after tax, Class 4 and any student loan? Happy to point you to it.",
-    "A free call with a specialist will confirm the most tax-efficient way to work as a locum, want me to set one up?",
+    "A specialist firm can confirm the most tax-efficient way to work as a locum, want me to send your enquiry over?",
   ],
   "gp-tax": [
     "Sorting how you are taxed as a salaried GP, a partner or a locum? I can point you to a quick answer.",
     "Holding an NHS post plus private or locum sessions? The take-home tool shows the self-employed side. Want me to line it up?",
-    "A free call is the quickest way to get your whole tax position, NHS and private, straight. Fancy a quick call?",
+    "A specialist firm is the quickest way to get your whole tax position, NHS and private, straight. Want me to make the introduction?",
   ],
   "gp-practice": [
     "Anything I can help you find on your practice accounts, partnership drawings or premises? I can point you to a quick answer.",
     "Want a hand keeping on top of your practice finances and the year-end position? Happy to help.",
-    "A free first call with a specialist is the quickest way to get your practice accounts sorted, want me to set one up?",
+    "A specialist firm is the quickest way to get your practice accounts sorted, want me to pass your details on?",
   ],
 };
 
@@ -73,21 +73,21 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
 const COMBO_INCORP_NHS_PENSION: [string, string, string] = [
   "Looking at incorporating your private work and worried about your NHS pension? That is exactly the trade-off to get right, and I can help you start on it.",
   "Incorporating private income against the NHS pension you would give up is a close call for a lot of doctors. Want me to line up the comparison?",
-  "This is exactly what a specialist untangles in one free call. Want me to arrange it?",
+  "This is exactly what a specialist firm untangles. Want me to put it in front of one?",
 ];
 
 /** Used-calculator sanity-check opener. */
 const USED_CALC: [string, string, string] = [
   "You have already run the numbers. Want me to point out anything worth a specialist eye?",
   "The calculator gives a picture; a specialist confirms whether it fits your actual practice. Want a quick check?",
-  "Ready to sanity-check those results? A free call goes further than any calculator.",
+  "Ready to sanity-check those results? A specialist firm goes further than any calculator.",
 ];
 
 /** Fully generic (no topic). */
 const GENERIC: [string, string, string] = [
   "Not sure what you are looking for? I can point you to the right tool or a quick answer.",
   "Happy to help you find what you need. What is the main thing on your mind?",
-  "The quickest way to get a straight answer is a free call with a specialist. Want me to set one up?",
+  "The quickest way to get a straight answer is a specialist firm reading your position. Want me to send it over?",
 ];
 
 /**
@@ -149,7 +149,7 @@ export function exitOpener(profile?: JourneyProfile): string {
   const t = profile?.primaryTopic;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Before you go: a specialist can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
+    return `Before you go: a specialist firm can give you a clearer picture on ${noun}. Want me to send your enquiry over?`;
   }
-  return "Before you go: a free call with a specialist is often the quickest way to get a straight answer. Fancy it?";
+  return "Before you go: a specialist firm reading your position is often the quickest way to get a straight answer. Fancy it?";
 }

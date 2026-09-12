@@ -137,7 +137,7 @@ export function ResultGateModal({
             topic?.ctaCopy ||
             "Want a specialist to check your figure?"
           }
-          blurb="A calculator gives the shape of the answer. NHS pensions, the annual allowance taper and private-practice incorporation are unforgiving in the detail. Tell us your situation and a specialist medical accountant will confirm your exact figure and the sensible next step, with no obligation."
+          blurb="A calculator gives the shape of the answer. NHS pensions, the annual allowance taper and private-practice incorporation are unforgiving in the detail. Tell us your situation and we will match it to a regulated firm that works with doctors, so a specialist medical accountant there can confirm your exact figure and the sensible next step. Enquiring commits you to nothing."
           submitLabel="Get my figure confirmed"
           successText="Thanks. We will match you with a specialist medical accountant from our partner network, who will contact you about your figure. Your result is below."
           className="mt-2"

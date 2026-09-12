@@ -52,7 +52,7 @@ faqs:
 <li>Locum doctor status (sole trader versus a personal service company) and where IR35 sits</li>
 <li>Mixed NHS and private income, and the tax of private clinics, medico-legal work and self-pay practice</li>
 <li>GMS practice funding (Global Sum, the Carr-Hill formula, QOF, enhanced services and PCN income), never UDAs or dental bands</li>
-<li>Allowable expenses specific to doctors (GMC retention fee, indemnity, BMA and Royal College fees)</li>
+<li>Allowable expenses specific to doctors (GMC retention fee, indemnity, Royal College fees, and BMA membership at 85% relief)</li>
 </ul>
 
 <p>These are not areas a general practice accountant tends to see, which is why medical-sector experience usually matters more than a local office address.</p>
@@ -110,7 +110,7 @@ faqs:
 
 <h2>Expenses, VAT and Making Tax Digital</h2>
 
-<p>For doctors, allowable expenses include the GMC annual retention fee, medical indemnity (MDU, MPS or MDDUS, noting that NHS GP clinical negligence in England is state-indemnified through CNSGP from 1 April 2019, so own cover is largely for private and non-clinical matters), BMA and relevant Royal College fees on HMRC's approved List 3, and motor costs between sites at the HMRC mileage rate of <strong>55p per mile for the first 10,000 business miles in 2026/27</strong> (it rose from 45p on 6 April 2026), then 25p thereafter. For the full picture, see our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list</a>.</p>
+<p>For doctors, allowable expenses include the GMC annual retention fee, medical indemnity (MDU, MPS or MDDUS, noting that NHS GP clinical negligence in England is state-indemnified through CNSGP from 1 April 2019, so own cover is largely for private and non-clinical matters), relevant Royal College fees on HMRC's approved List 3, the BMA subscription (also on List 3, but with relief restricted there to 85% of the annual amount), and motor costs between sites at the HMRC mileage rate of <strong>55p per mile for the first 10,000 business miles in 2026/27</strong> (it rose from 45p on 6 April 2026), then 25p thereafter. For the full picture, see our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list</a>.</p>
 
 <p>On VAT, genuine private medical care by a registered practitioner is exempt, and NHS GMS or PMS income is outside the scope, so neither counts towards the registration threshold. The VAT registration threshold is <strong>£90,000</strong> of taxable (non-exempt) turnover (deregistration £88,000) from 1 April 2024. Cosmetic-only work and medico-legal or expert-witness reports can be standard-rated, which is where many private clinics need to watch their position.</p>
 
@@ -118,7 +118,7 @@ faqs:
 
 <h2>How GMS Funding Shapes a Liverpool Practice</h2>
 
-<p>A Liverpool GP practice draws its core funding from the Global Sum, a per-patient payment weighted by the Carr-Hill formula, plus QOF, enhanced services and PCN or Network Contract DES funding (including the Additional Roles Reimbursement Scheme). There is no single national per-patient value, the figures are weighted and uplifted annually, and partner income is a profit share trued up at year-end, not a salary. Understanding how the funding flows through the accounts is central to getting the profit share and the pensionable profit right. For more, see our explainer on <a href="/blog/how-gms-funding-works-global-sum-carr-hill-explained">how GMS funding works</a>.</p>
+<p>A Liverpool GP practice draws its core funding from the Global Sum, a per-patient payment weighted by the Carr-Hill formula, plus QOF, enhanced services and PCN or Network Contract DES funding (including the Additional Roles Reimbursement Scheme). The per-weighted-patient price is national and fixed for the year at £130.07 for 2026/27 under the Statement of Financial Entitlements Directions 2026, uplifted each April; what moves practice to practice is the weighted patient count Carr-Hill produces, not the rate. Partner income is a profit share trued up at year-end, not a salary. Understanding how the funding flows through the accounts is central to getting the profit share and the pensionable profit right. For more, see our explainer on <a href="/blog/how-gms-funding-works-global-sum-carr-hill-explained">how GMS funding works</a>.</p>
 
 <h2>Choosing a GP Accountant in Liverpool</h2>
 

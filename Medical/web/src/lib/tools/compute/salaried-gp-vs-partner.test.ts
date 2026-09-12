@@ -40,11 +40,12 @@ describe("calcGpVsPartner — golden tests (roster worked example)", () => {
   });
 
   it("plan2 student loan applies to both sides on gross", () => {
-    // Salaried 90,000: SL = (90,000-28,470)*0.09 = 61,530*0.09 = 5,537.70
-    // Partner 110,000: SL = (110,000-28,470)*0.09 = 81,530*0.09 = 7,337.70
+    // Plan 2 threshold 2026/27 = 29,385 (was 28,470 for 2025/26; re-pinned 2026-09-12).
+    // Salaried 90,000: SL = (90,000-29,385)*0.09 = 60,615*0.09 = 5,455.35
+    // Partner 110,000: SL = (110,000-29,385)*0.09 = 80,615*0.09 = 7,255.35
     const r = calcGpVsPartner({ salariedPay: 90000, partnerProfitShare: 110000, studentLoanPlan: "plan2" });
-    expect(r.salaried.studentLoanRepayment).toBeCloseTo(5537.7, 1);
-    expect(r.partner.studentLoanRepayment).toBeCloseTo(7337.7, 1);
+    expect(r.salaried.studentLoanRepayment).toBeCloseTo(5455.35, 1);
+    expect(r.partner.studentLoanRepayment).toBeCloseTo(7255.35, 1);
   });
 
   it("additional-rate partner: 150k profit share, PA fully tapered", () => {

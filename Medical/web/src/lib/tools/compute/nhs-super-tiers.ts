@@ -17,12 +17,21 @@
  * Tier 1 upper (£13,259) is frozen (linked to the personal allowance).
  *
  * Deemed employer contribution: 23.7% of pensionable pay (NHSBSA, unchanged for
- * 2025/26 and 2026/27). Used only for the Annual Allowance adjusted-income test.
+ * 2025/26 and 2026/27), the total credited on a member's behalf, of which an
+ * employer bears 14.38% and 9.4% is funded centrally. It is a CONTRIBUTION rate
+ * only. It is NOT the Annual Allowance adjusted-income add-back: adjusted income
+ * adds back the pension input amount (FA 2004 s.228ZA), which for this
+ * defined-benefit scheme is capitalised growth from the member's NHSBSA annual
+ * allowance statement. See compute/nhs-pension.ts for the correct calculation.
  *
  * ponytail: calibration knob — update TIERS_2026_27 each April, nothing else moves.
  */
 
-/** Deemed employer contribution rate (NHSBSA, 2024/25 onward; confirmed 2026/27). */
+/**
+ * Deemed employer contribution rate (NHSBSA, 2024/25 onward; confirmed 2026/27).
+ * Contribution credited on the member's behalf only. Never use it as the
+ * adjusted-income add-back for the Annual Allowance taper.
+ */
 export const NHS_DEEMED_EMPLOYER_RATE = 0.237;
 
 /**

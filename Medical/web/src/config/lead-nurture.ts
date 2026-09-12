@@ -373,8 +373,8 @@ const STEPS: LeadNurtureStep[] = [
         `Got your enquiry, ${c.firstName}`,
         "Just reply with a time that suits and a specialist will call you.",
         [
-          "Thanks for your enquiry, it has just landed with us and a specialist is ready to help.",
-          "The call is a free review of your personal tax position as a doctor, about 20 minutes, with no charge and no obligation.",
+          "Thanks for your enquiry. It has just landed with us, and we match it to a regulated firm from our specialist partner network that works with doctors.",
+          "The call is a specialist reading your personal tax position as a doctor. Scope and fees are agreed with the firm, and replying commits you to nothing.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you, tell us and we will work around it.",
         ],
         "t0_email",
@@ -392,7 +392,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Medical Accountants UK. Thanks for your enquiry. Reply YES and one of our specialists will call you to discuss your tax position. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Medical Accountants UK. Thanks for your enquiry. Reply YES and a specialist firm from our partner network will call you about your tax position. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.confirmUrl]),
     ],
@@ -409,7 +409,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Medical Accountants UK again. Enquiries like yours are exactly what our specialists handle, so we have set aside time this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Medical Accountants UK again. Enquiries like yours are exactly what the firms in our specialist partner network handle. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -443,7 +443,7 @@ const STEPS: LeadNurtureStep[] = [
 
       const paras = [
         "A quick pointer while your enquiry is with us. The NHS pension annual allowance charge catches many doctors off guard, particularly around the time of a pay uplift or a change in pensionable pay. The calculation is not straightforward, and an underpayment discovered late can mean interest on top of the tax itself.",
-        "If that is anywhere near your situation, it is exactly the kind of thing our specialists cover in a free call. There is nothing to prepare and no commitment involved.",
+        "If that is anywhere near your situation, it is exactly the kind of thing the specialist firms in our partner network cover on a first call. There is nothing to prepare and no commitment involved.",
         ...(calcLine ? [calcLine] : []),
         "Whenever suits you, just reply with a day and time and we will arrange it.",
       ];
@@ -499,7 +499,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free review is still available, and if now is not the right moment, that is completely fine.",
+            "Just checking in, and there is genuinely no rush. Your enquiry is still open with us, and if now is not the right moment, that is completely fine.",
             "If something is holding you back, or things have just been busy on the ward or in the practice, a one-line reply is all it takes. Tell us a day and a time, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -605,7 +605,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and we will have one of our medical tax specialists call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and we will match you to a regulated firm that works with doctors, so a specialist there can call you. There is no obligation and nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",
@@ -630,8 +630,8 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "Still happy to help",
           `Reply with ${ask} and we will sort the rest.`,
           [
-            "A quick nudge on the message you sent us yesterday. We would still like to get a specialist on the phone to you this week.",
-            `All we need is ${ask}. Just reply to this email and we will sort the rest. No cost and no obligation at any point.`,
+            "A quick nudge on the message you sent us yesterday. We would still like to get a specialist firm on the phone to you this week.",
+            `All we need is ${ask}. Just reply to this email and we will sort the rest. No obligation at any point.`,
           ],
           "detail_capture_day1",
           {
@@ -653,10 +653,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "One pointer while you decide",
-          "Something doctors often miss, and a free call if you want one.",
+          "Something doctors often miss, and a specialist to call you if you want one.",
           [
             "One quick pointer while your enquiry sits with us. The NHS pension annual allowance taper affects many doctors at consultant and senior GP level, but the thresholds change regularly and it is easy to assume you are below the limit when you are not. A year of unchecked exposure can mean a larger charge than expected when HMRC catches up.",
-            `And if you would like a specialist to look at the full picture for your situation, just reply with ${ask} and we will set up a free call.`,
+            `And if you would like a specialist to look at the full picture for your situation, just reply with ${ask} and we will put you in front of one.`,
           ],
           "detail_capture_day3",
           {
@@ -682,7 +682,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have asked a couple of times now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review of your medical tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are an annual allowance charge notice, a move between employment types, or the first year of private practice income.`,
+            `If you would still like a specialist firm to read your medical tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are an annual allowance charge notice, a move between employment types, or the first year of private practice income.`,
             "All the best.",
           ],
           "detail_capture_day7",

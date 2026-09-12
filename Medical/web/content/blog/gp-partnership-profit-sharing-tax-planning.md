@@ -129,7 +129,7 @@ faqs:
 
 <p>On digital filing, <strong>Making Tax Digital for Income Tax does not apply to general partnerships yet</strong>: partnerships are deferred with no confirmed start date, so a GP partnership is not mandated to file quarterly at partnership level. A partner's own Self Assessment can still be caught where their personal qualifying income (for example sole-trader private or locum work) exceeds <strong>£50,000 from 6 April 2026</strong> (the threshold falls to £30,000 from April 2027 and £20,000 from April 2028). The old £10,000 figure no longer applies.</p>
 
-<p>Allowable partnership and partner expenses (deductible because they are wholly and exclusively for the profession) include medical indemnity for private and non-clinical work, the GMC retention fee, relevant Royal College and BMA subscriptions, and business mileage between sites at the HMRC approved rate of <strong>55p per mile for the first 10,000 business miles in 2026/27 (raised from 45p on 6 April 2026), then 25p per mile</strong>. Remember that NHS GP clinical negligence in England is state-indemnified through CNSGP, so personally paid indemnity is mainly for private, non-clinical or regulatory cover. Our <a href="/blog/gp-tax-deductions-complete-list-2026">complete list of GP tax deductions for 2026</a> covers this in full.</p>
+<p>Allowable partnership and partner expenses (deductible because they are wholly and exclusively for the profession) include medical indemnity for private and non-clinical work, the GMC retention fee, relevant Royal College subscriptions, the BMA subscription (relieved at 85% of the annual amount, not in full), and business mileage between sites at the HMRC approved rate of <strong>55p per mile for the first 10,000 business miles in 2026/27 (raised from 45p on 6 April 2026), then 25p per mile</strong>. Remember that NHS GP clinical negligence in England is state-indemnified through CNSGP, so personally paid indemnity is mainly for private, non-clinical or regulatory cover. Our <a href="/blog/gp-tax-deductions-complete-list-2026">complete list of GP tax deductions for 2026</a> covers this in full.</p>
 
 <h2>Common pitfalls to avoid</h2>
 
@@ -144,7 +144,7 @@ faqs:
 
 <h2>Getting it right with specialist advice</h2>
 
-<p>GP partnership profit allocation sits at the intersection of partnership law, income tax, National Insurance, the NHS pension annual allowance and the premises return. A specialist medical accountant can model different allocation scenarios, show each partner's after-tax and after-pension position, and make sure the deed, the SA800 and each partner's SA104 line up. <a href="/contact">Talk to our medical accounting team</a> if you want your partnership's profit-sharing arrangement reviewed before the next year-end.</p>
+<p>GP partnership profit allocation sits at the intersection of partnership law, income tax, National Insurance, the NHS pension annual allowance and the premises return. A specialist medical accountant can model different allocation scenarios, show each partner's after-tax and after-pension position, and make sure the deed, the SA800 and each partner's SA104 line up. <a href="/contact">Send us your position</a> and we will match it to a specialist firm if you want your partnership's profit-sharing arrangement reviewed before the next year-end.</p>
 
 <h2>Related reading</h2>
 

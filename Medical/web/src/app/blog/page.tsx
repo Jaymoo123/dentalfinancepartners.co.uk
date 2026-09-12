@@ -135,7 +135,7 @@ export default function BlogIndexPage() {
                 data-cta-goal="form"
                 className={btnPrimary}
               >
-                Book a free consultation
+                Send us your position
               </Link>
               <Link
                 href="#articles"
@@ -189,11 +189,11 @@ export default function BlogIndexPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Would you rather we read your figures than have you read the archive?"
-          description="A free consultation with an accountant who works with doctors every day. Tell us how you are paid and what is on your mind, and we will match you to a specialist firm that can take it from there."
+          description="Tell us how you are paid and what is on your mind, and we will match your enquiry to a regulated firm that works with doctors every day. Scope and fees are agreed with that firm, and sending the enquiry commits you to nothing."
           proofPoints={LEAD_PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} />}
           backdrop={<MedicalBackdrop tone="navy" />}
-          footnote="No obligation and no hard sell. If your position is already right, we will say so."
+          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
         />
       </div>
 

@@ -83,7 +83,7 @@ faqs:
 <li>Investment income and let property.</li>
 </ul>
 
-<p>A specialist accountant claims the right allowable expenses (the <strong>GMC retention fee</strong>, indemnity for private and non-clinical work, relevant Royal College and BMA subscriptions, and business mileage at the HMRC rate of <strong>55p per mile for the first 10,000 business miles in 2026/27</strong>, 25p thereafter), applies <strong>Class 4 National Insurance at 6% then 2%</strong> (Class 2 is no longer a required payment), and handles HMRC correspondence. The full deductions checklist is in our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list for 2026</a>, with the process covered in the <a href="/blog/gp-tax-return">GP tax return guide</a> and broader strategy in <a href="/blog/gp-tax-advice">GP tax advice</a>.</p>
+<p>A specialist accountant claims the right allowable expenses (the <strong>GMC retention fee</strong>, indemnity for private and non-clinical work, relevant Royal College subscriptions, the BMA subscription at the 85% HMRC allows on it, and business mileage at the HMRC rate of <strong>55p per mile for the first 10,000 business miles in 2026/27</strong>, 25p thereafter), applies <strong>Class 4 National Insurance at 6% then 2%</strong> (Class 2 is no longer a required payment), and handles HMRC correspondence. The full deductions checklist is in our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list for 2026</a>, with the process covered in the <a href="/blog/gp-tax-return">GP tax return guide</a> and broader strategy in <a href="/blog/gp-tax-advice">GP tax advice</a>.</p>
 
 <h2>Payroll, PAYE and the Practice Team</h2>
 

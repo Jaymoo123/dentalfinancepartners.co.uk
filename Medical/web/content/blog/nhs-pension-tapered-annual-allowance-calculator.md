@@ -20,15 +20,15 @@ keyTakeaways:
 - "The NHS pension taper for 2026/27 bites only when threshold income exceeds £200,000 AND adjusted income exceeds £260,000, so failing either test leaves your full £60,000 allowance intact."
 - "Above the triggers your £60,000 allowance falls by £1 for every £2 of adjusted income over £260,000, down to a £10,000 floor reached once adjusted income hits £360,000."
 - "The figure that uses up your allowance is the defined benefit pension input amount (the capitalised growth on your NHS savings statement), not the contributions deducted from your pay."
-- "Adjusted income adds back the deemed NHS employer contribution, set at 23.7% of pensionable pay from 1 April 2024, which pushes many doctors over the £260,000 trigger."
+- "Adjusted income is threshold income plus your pension input amount across all registered schemes, the capitalised growth shown on your NHSBSA annual allowance statement, and it is never a percentage of your pensionable pay."
 - "The old £240,000 adjusted income limit and the old £4,000 minimum floor are both superseded, and unused allowance can be carried forward from the previous three tax years at each year's own (possibly tapered) amount."
 summary: How to work out your tapered NHS pension annual allowance for 2026/27. We walk through threshold income, adjusted income, the £1-for-£2 reduction and the £10,000 floor, with a worked example for high-earning doctors.
 schema: ''
 faqs:
 - question: How do I work out my NHS pension tapered annual allowance for 2026/27?
-  answer: First check the two trigger tests. Calculate your threshold income (broadly your total taxable income for 2026/27 less your own gross pension input) and your adjusted income (which adds the value of your NHS employer pension build-up). The taper bites only if threshold income is over £200,000 AND adjusted income is over £260,000. Where both are exceeded, your £60,000 annual allowance reduces by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. Below either trigger, you keep the full £60,000.
+  answer: First check the two trigger tests. Calculate your threshold income (broadly your total taxable income for 2026/27 less your own gross pension input) and your adjusted income (threshold income plus your pension input amount for the year across all registered schemes, taken from your NHSBSA annual allowance statement). The taper bites only if threshold income is over £200,000 AND adjusted income is over £260,000. Where both are exceeded, your £60,000 annual allowance reduces by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. Below either trigger, you keep the full £60,000.
 - question: What income counts towards the £200,000 and £260,000 thresholds?
-  answer: Threshold income captures all your taxable income for the year (NHS salary or clinical excellence awards, private practice income, locum sessions, partnership profit share, rental and investment income), reduced by your own gross pension contributions. Adjusted income starts from that wider total and adds back the value of your pension build-up, including the deemed employer contribution to your NHS scheme (the employer rate is 23.7% of pensionable pay from 1 April 2024). It is the gap between the two measures that decides whether the taper applies.
+  answer: Threshold income captures all your taxable income for the year (NHS salary or clinical excellence awards, private practice income, locum sessions, partnership profit share, rental and investment income), reduced by your own gross pension contributions. Adjusted income starts from that wider total and adds back your pension input amount for the year across every registered scheme. The NHS scheme is defined benefit, so its pension input amount is the capitalised growth in the benefits you accrued, reported to you by NHSBSA on an annual allowance statement, and not any contribution rate applied to your pay. It is the gap between the two measures that decides whether the taper applies.
 - question: How much can the taper reduce my annual allowance in 2026/27?
   answer: The standard annual allowance is £60,000 for 2026/27. The taper removes £1 of allowance for every £2 of adjusted income above £260,000, so the allowance is fully tapered to the £10,000 floor once adjusted income reaches £360,000. No doctor is tapered below £10,000, however high their income.
 - question: Can I carry forward unused allowance to reduce a taper charge?
@@ -52,7 +52,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ol>
 <li>Work out your <strong>threshold income</strong> for 2026/27 (total taxable income less your own gross pension input). If it is £200,000 or below, stop, there is no taper.</li>
-<li>Work out your <strong>adjusted income</strong> (the wider total plus the value of your pension build-up, including the deemed NHS employer contribution). If it is £260,000 or below, stop, there is no taper.</li>
+<li>Work out your <strong>adjusted income</strong> (the wider total plus your pension input amount for the year across all registered schemes, taken from your NHSBSA annual allowance statement). If it is £260,000 or below, stop, there is no taper.</li>
 <li>Take adjusted income minus £260,000, halve it, and deduct the result from £60,000.</li>
 <li>If the answer is below £10,000, your tapered allowance is the £10,000 floor.</li>
 </ol>
@@ -84,7 +84,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Partnership profit share for GP partners (taxed on profit share, not drawings)</li>
 </ul>
 
-<p><strong>Adjusted income</strong> starts from that wider total and then adds back the value of your pension build-up so that pension saving cannot be used to dodge the test. For NHS members the key add-back is the deemed employer contribution. The NHS Pension Scheme employer rate is <strong>23.7% of pensionable pay from 1 April 2024</strong>, so the gap between threshold and adjusted income for a high-earning consultant or GP partner can be substantial. It is precisely this add-back that pushes many doctors over the £260,000 adjusted income trigger even when their threshold income is much lower.</p>
+<p><strong>Adjusted income</strong> starts from that wider total and then adds back your <strong>pension input amount</strong> for the year across every registered scheme you belong to, so that pension saving cannot be used to dodge the test. The NHS Pension Scheme is a defined benefit scheme, so its pension input amount is the capitalised growth in your accrued benefits over the year, which NHSBSA reports to you on an annual allowance statement. It is not the contributions paid in, and it is not a percentage of your pensionable pay. That distinction matters in both directions: a big pay rise or a jump in pensionable service can produce a large input amount in a year when your cash income barely moved, which is exactly how doctors get caught by the taper unexpectedly.</p>
 
 <p>A practical consequence: a doctor can be over £200,000 of threshold income but below £260,000 of adjusted income (no taper), or below £200,000 of threshold income with high adjusted income (still no taper, because the £200,000 test is not met). Both gates must be open before the taper applies.</p>
 
@@ -119,7 +119,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <ul>
 <li>Using cash contributions instead of the defined benefit pension input amount from the NHS savings statement</li>
-<li>Forgetting to add the deemed NHS employer contribution into adjusted income</li>
+<li>Forgetting to add your pension input amount into adjusted income, or estimating it as a percentage of pensionable pay instead of taking it from your NHSBSA statement</li>
 <li>Treating the £260,000 test as the only trigger and ignoring the separate £200,000 threshold income gate</li>
 <li>Applying the old £240,000 adjusted income limit or the old £4,000 floor (both superseded; the floor is now £10,000)</li>
 <li>Missing carry forward from the previous three years, or assuming carried-forward years give the full £60,000 when they were tapered</li>

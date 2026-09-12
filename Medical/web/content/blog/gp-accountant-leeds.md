@@ -50,7 +50,7 @@ faqs:
 <li>GP partnership profit sharing, where each partner is taxed on their profit share, not their drawings</li>
 <li>Type 1 (partner) and Type 2 (salaried) pension certification via PCSE, and Locum forms A and B for freelance locums</li>
 <li>Mixed NHS and private income, and how to allocate it correctly</li>
-<li>Allowable professional costs including GMC registration, medical indemnity (MDU, MPS or MDDUS) and BMA subscriptions</li>
+<li>Allowable professional costs including GMC registration, medical indemnity (MDU, MPS or MDDUS) and the BMA subscription, on which relief is restricted to 85% of the annual amount</li>
 <li>IR35 and off-payroll rules for locums who work through a personal service company</li>
 <li>PCN income, the Additional Roles Reimbursement Scheme (ARRS) and how it flows between partners</li>
 </ul>

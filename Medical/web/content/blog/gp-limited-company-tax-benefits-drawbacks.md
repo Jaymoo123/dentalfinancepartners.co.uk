@@ -44,7 +44,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>This guide gives an honest 2026/27 picture: what a company can and cannot do for a GP, the current dividend and corporation tax figures, and the pension trap that catches doctors who only look at the tax saving. It is general information, not advice for your situation. For the mechanics of forming the company see our <a href="/blog/medical-practice-incorporation-step-by-step">step-by-step incorporation guide</a>, and for the rates themselves see <a href="/blog/gp-corporation-tax">GP corporation tax explained</a>.</p>
 
-<h2>The big caveat first: your company cannot hold an NHS contract</h2>
+<h2>The big caveat first: your company almost certainly cannot hold an NHS contract</h2>
 
 <p>Before any tax comparison, the single most important point for GPs: an <strong>NHS GMS or PMS contract sits with GPs, their partnership, or a company limited by shares whose shareholders all qualify</strong>, and a doctor's ordinary personal service company is not one, nor is any company with an outside shareholder such as a spouse. NHS primary medical care funding (the Global Sum weighted by the Carr-Hill formula, plus QOF, enhanced services and PCN or Network Contract DES funding) is paid to that contract holder, not to your company.</p>
 
@@ -71,7 +71,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <h2>The drawbacks, starting with the NHS pension</h2>
 
 <h3>Dividends are not NHS-pensionable</h3>
-<p>This is the drawback that most often kills the case for incorporation. Because your company cannot hold an NHS contract, <strong>income taken through a company is not NHS-pensionable</strong>, and <strong>dividends are not pensionable income</strong> at all. The NHS Pension Scheme is a defined-benefit scheme (everyone now accruing in the 2015 CARE section at 1/54th of pensionable earnings each year), and that accrual is valuable. Every pound you route through a company as a dividend earns zero NHS pension.</p>
+<p>This is the drawback that most often kills the case for incorporation. Because your company will not be a qualifying contract holder, <strong>income taken through a company is not NHS-pensionable</strong>, and <strong>dividends are not pensionable income</strong> at all. The NHS Pension Scheme is a defined-benefit scheme (everyone now accruing in the 2015 CARE section at 1/54th of pensionable earnings each year), and that accrual is valuable. Every pound you route through a company as a dividend earns zero NHS pension.</p>
 
 <p>For a GP partner, pensionable profit is certified each year on the Type 1 Annual Certificate of Pensionable Profits; for a salaried GP it is the Type 2 self-assessment; for a freelance locum it is Locum forms A and B. None of that machinery captures company dividends. A hospital consultant's NHS post is pensionable, but private work through a company is never pensionable. The honest comparison therefore always pairs the tax saving with the <a href="/blog/gp-pension-contributions-tax-relief">pension accrual you give up</a>, and for genuinely NHS-derived income that loss usually swamps the saving.</p>
 

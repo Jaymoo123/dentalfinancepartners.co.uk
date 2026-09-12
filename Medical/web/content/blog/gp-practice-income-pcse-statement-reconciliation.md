@@ -182,8 +182,8 @@ faqs:
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Is your practice recovering everything it is owed from NHS England?</p>
-<p style="margin:0 0 10px;">An underpayment from an out-of-date Global Sum weighting or a missed enhanced service claim can compound over years. A free practice health check will look at whether your PCSE statements are reconciling cleanly and flag any patterns worth querying.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> about your practice income reconciliation.</p>
+<p style="margin:0 0 10px;">An underpayment from an out-of-date Global Sum weighting or a missed enhanced service claim can compound over years. A free practice health check will flag whether your PCSE statements are worth a closer look by a specialist firm.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">tell us about your practice income reconciliation</a> and we will route it to a specialist firm.</p>
 </div>
 
 <p>Tie it to the accounts, because a clean reconciliation feeds accurate trading profit, which feeds the partners' profit share and the year-end accounts; see our <a href="/blog/gp-accounting-guide">GP accounting guide</a> and <a href="/blog/gp-bookkeeping-guide-uk">GP bookkeeping guide</a> for how it joins up. The reconciliation also makes the year-end smoother: when the accounts are prepared, the NHS income has already been checked line by line against source, so there are no late surprises and no scramble to explain a figure that does not match the statement. In effect, a good monthly reconciliation is most of the year-end income work done in advance.</p>
@@ -287,7 +287,7 @@ faqs:
 
 <p>Reconciling NHS income to source is a discipline rather than a one-off, and it is where real money is quietly lost. We help practices set up a repeatable monthly or quarterly reconciliation: pulling the expanded statement, matching each line (Global Sum, QOF, enhanced services, premises, dispensing, PCN and reimbursements) against the current Statement of Financial Entitlements and the practice's contract, identifying variances, and pursuing them through PCSE and, where needed, the ICB. Because we also prepare the practice accounts, the reconciliation feeds straight into an accurate trading-profit figure and a fair profit share for every partner. The aim is that the practice is paid everything it is owed, and that nothing is lost simply because no one checked.</p>
 
-<p>This guide is general information and not advice for your specific circumstances. For tailored support, see our <a href="/for-gps">services for GPs</a> or <a href="/contact">get in touch with our medical accounting team</a>.</p>
+<p>This guide is general information and not advice for your specific circumstances. For tailored support, see our <a href="/for-gps">services for GPs</a> or <a href="/contact">send an enquiry</a> and we will match it to a regulated firm that works with doctors.</p>
 
 <h2>Related Reading</h2>
 

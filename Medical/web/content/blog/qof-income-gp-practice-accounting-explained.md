@@ -241,8 +241,8 @@ faqs:
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Is your QOF accrual keeping each partner's profit share accurate?</p>
-<p style="margin:0 0 10px;">A misaccrued QOF position can overstate or understate profit and distort partner drawings in the same period. A free practice health check will confirm whether your QOF recognition is consistent and whether each partner's tax position reflects genuinely earned income.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> about your practice accounts.</p>
+<p style="margin:0 0 10px;">A misaccrued QOF position can overstate or understate profit and distort partner drawings in the same period. A free practice health check will flag whether your QOF recognition and each partner's tax position are worth a specialist review.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send an enquiry</a> and we will match it to a firm that works on GP practice accounts.</p>
 </div>
 
 <h2>How we help GP practices</h2>

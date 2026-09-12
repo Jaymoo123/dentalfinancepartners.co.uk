@@ -50,7 +50,7 @@ faqs:
 <li>GP <strong>partnership accounts</strong>, profit-share allocation and partner buy-in and buy-out via capital accounts;</li>
 <li><strong>IR35 / off-payroll</strong> status for a locum trading through a personal service company (the rules apply, they have not been abolished or repealed);</li>
 <li>splitting <strong>NHS and private income</strong> cleanly, including the VAT line between exempt medical care and standard-rated medico-legal or cosmetic work;</li>
-<li>profession-specific expenses: GMC retention fee, MDU / MPS / MDDUS indemnity, BMA and Royal College subscriptions, and CPD relevant to current practice.</li>
+<li>profession-specific expenses: GMC retention fee, MDU / MPS / MDDUS indemnity, Royal College subscriptions, BMA membership (where relief is restricted to 85% of the annual subscription), and CPD relevant to current practice.</li>
 </ul>
 
 <p>Getting any of these wrong is expensive. An overlooked annual allowance charge, a missed Scheme Pays election or an incorporation that quietly stops your NHS pension accruing can cost far more than a year of fees.</p>

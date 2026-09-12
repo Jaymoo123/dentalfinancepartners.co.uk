@@ -61,7 +61,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>How GP Practice Income Arises</h2>
 
-<p>Core NHS practice funding comes from the <strong>Global Sum</strong>, a per-patient payment weighted by the <strong>Carr-Hill formula</strong> (which adjusts the registered list for age, sex, morbidity, list turnover and geography), plus the <strong>Quality and Outcomes Framework (QOF)</strong>, enhanced services and <strong>Primary Care Network (Network Contract DES)</strong> funding including the Additional Roles Reimbursement Scheme. Dispensing practices also earn dispensing income. There is no single national per-patient value: the Global Sum and QOF point value are weighted and uplifted each year, so confirm the current figures in the Statement of Financial Entitlements.</p>
+<p>Core NHS practice funding comes from the <strong>Global Sum</strong>, a per-patient payment weighted by the <strong>Carr-Hill formula</strong> (which adjusts the registered list for age and sex, additional needs, list turnover, nursing and residential homes, rurality and geography, and a staff market-forces factor), plus the <strong>Quality and Outcomes Framework (QOF)</strong>, enhanced services and <strong>Primary Care Network (Network Contract DES)</strong> funding including the Additional Roles Reimbursement Scheme. Dispensing practices also earn dispensing income. Both core prices are national: for 2026/27 the Statement of Financial Entitlements Directions 2026 set the Global Sum at <strong>£130.07 per weighted patient</strong> and a QOF achievement point at <strong>£227.95</strong>. What differs between partnerships is the weighted population and the achievement those prices are applied to, and both prices are uplifted each April, so confirm the current year's figures in the Directions before you model anything.</p>
 
 <p>GP income is therefore built from Global Sum, Carr-Hill weighting, QOF, enhanced services and PCN funding. It does not use UDAs or NHS treatment bands (those are dental concepts). All of this income feeds into the partnership's taxable profit, which is then allocated to partners.</p>
 
@@ -117,7 +117,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>GMC annual retention fee, and Royal College or specialty membership fees on HMRC's approved list</li>
 <li>Medical indemnity (MDU, MPS or MDDUS) for private and non-clinical or regulatory matters. NHS GP clinical negligence in England is covered by the state-funded Clinical Negligence Scheme for General Practice (CNSGP) at no subscription, so your own indemnity is mainly for non-NHS work</li>
-<li>BMA subscription where on the approved list, and relevant CPD</li>
+<li>BMA subscription, where the approved list restricts relief to 85% of the annual amount, and relevant CPD</li>
 <li>Business mileage between practice sites</li>
 <li>A reasonable apportionment of home-office, phone and internet costs</li>
 </ul>
@@ -165,8 +165,8 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Not sure whether incorporation makes sense for your private work?</p>
-<p style="margin:0 0 10px;">The answer depends on your private income level, dividend tax position and how much NHS pension accrual you would give up. Our free practice health check takes stock of where your partnership stands and where the planning opportunities are.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> to model the options for your situation.</p>
+<p style="margin:0 0 10px;">The answer depends on your private income level, dividend tax position and how much NHS pension accrual you would give up. Our free practice health check flags where your partnership is most likely to have planning opportunities worth a specialist look.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your position</a> and we will put it in front of a firm that works with GP partnerships.</p>
 </div>
 
 <h2>Self Assessment, Payments on Account and MTD</h2>
@@ -193,7 +193,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>GP partnership tax brings together profit sharing, capital accounts, the NHS goodwill rules, premises and the NHS pension, and the figures move from year to year. Working with a <a href="/services">specialist medical accountant</a> helps you understand your obligations, plan your tax reserve and avoid the common traps, particularly when partners are joining or leaving, when shares change, or when private work or incorporation is on the table.</p>
 
-<p>This guide is general information and not advice for your specific circumstances. For tailored support, <a href="/contact">get in touch with our medical accounting team</a>.</p>
+<p>This guide is general information and not advice for your specific circumstances. For tailored support, <a href="/contact">send an enquiry</a> and we will match it to a regulated firm that works with doctors.</p>
 
 <h2>Related Reading</h2>
 

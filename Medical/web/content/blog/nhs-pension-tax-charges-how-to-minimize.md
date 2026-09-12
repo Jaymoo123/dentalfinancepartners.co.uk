@@ -137,7 +137,7 @@ faqs:
 
 <h2>What can I claim tax back on as a doctor?</h2>
 
-<p>Separately from the pension, most doctors can claim tax back for professional fees and a short list of other costs. The GMC annual retention fee is deductible, and the current amount should be confirmed with the GMC directly rather than taken from a blog. Royal College and specialty membership fees and the BMA subscription are deductible where the body appears on HMRC's approved List 3.</p>
+<p>Separately from the pension, most doctors can claim tax back for professional fees and a short list of other costs. The GMC annual retention fee is deductible, and the current amount should be confirmed with the GMC directly rather than taken from a blog. Royal College and specialty membership fees are deductible where the body appears on HMRC's approved List 3. The BMA is on that list too, but with a restriction attached: relief runs on 85% of the annual subscription, not the whole of it.</p>
 
 <p>Medical indemnity is deductible, and so is continuing professional development genuinely relevant to current practice. Note the CNSGP position: NHS general practice clinical negligence in England has been state indemnified since 1 April 2019, so a GP's own paid indemnity now mostly covers private, non-clinical and regulatory work.</p>
 

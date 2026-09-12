@@ -129,7 +129,7 @@ const data: AudienceStage = {
     },
     {
       q: "Forms A and B, or a Type 2 certificate? Which applies to me?",
-      a: "They are for different people, and mixing them up costs pension. Freelance GP locums use Forms A and B per period of locum work: Form A is approved by the practice, then Form B is submitted to PCSE, and the work must reach PCSE within 10 weeks of the period ending or it cannot be pensioned at all. The Type 2 annual self-assessment is for salaried and solo GPs, and like the Type 1 annual certificate for partners it runs to a 28 February deadline a year in arrears, so the 2025/26 pension year is due by 28 February 2027. Employee contributions are tiered by pensionable pay, with the bands uplifted each 1 April by the previous September's CPI, and the employer rate has been 23.7% of pensionable pay since 1 April 2024. That employer rate is due to be re-set from 1 April 2027 by the 2024 valuation.",
+      a: "They are for different people, and mixing them up costs pension. Freelance GP locums use Forms A and B per period of locum work: Form A is approved by the practice, then Form B is submitted to PCSE, and the work must reach PCSE within 10 weeks of the period ending or it cannot be pensioned at all. The Type 2 annual self-assessment is for salaried and solo GPs, and like the Type 1 annual certificate for partners it runs to a 28 February deadline a year in arrears, so the 2025/26 pension year is due by 28 February 2027. Employee contributions are tiered by pensionable pay, with the bands uplifted each 1 April by the previous September's CPI, and 23.7% of pensionable pay has been credited on a member's behalf since 1 April 2024, of which an employer bears 14.38% and the remaining 9.4% is funded centrally. That rate is due to be re-set from 1 April 2027 by the 2024 valuation.",
     },
     {
       q: "What records should I keep as a locum doctor?",
@@ -138,7 +138,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant who works with locum doctors",
   ctaBody:
-    "A free 30-minute call covering your current structure, your IR35 position engagement by engagement, whether any locum work is at risk of falling outside the 10-week pension window, and the expense claims that look under-made. No obligation.",
+    "A call with a regulated firm from our specialist partner network, covering your current structure, your IR35 position engagement by engagement, whether any locum work is at risk of falling outside the 10-week pension window, and the expense claims that look under-made. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
   calculatorTabs: ["locumtax"],
   // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
   // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).

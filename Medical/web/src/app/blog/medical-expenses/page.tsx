@@ -123,7 +123,7 @@ const SECTIONS: HubSection[] = [
   {
     heading: "Professional Subscriptions and Indemnity",
     paragraphs: [
-      "Subscriptions to professional bodies approved by HMRC are fully deductible against your taxable income. For doctors, the most common claims include GMC registration fees, BMA membership, Royal College subscriptions (RCGP, RCP, RCS and others) and specialist society memberships relevant to your field. HMRC maintains a published list of approved bodies, and any subscription to an organisation on that list qualifies automatically.",
+      "Subscriptions to professional bodies approved by HMRC are deductible against your taxable income under ITEPA 2003 s.344, with the GMC retention fee sitting instead under s.343 as a statutory registration fee. For doctors, the most common claims include GMC registration fees, BMA membership, Royal College subscriptions (RCGP, RCP, RCS and others) and specialist society memberships relevant to your field. HMRC maintains a published list of approved bodies (List 3), and it is also where any per-body restriction is recorded. The BMA carries one: its entry restricts relief to 85% of the annual subscription, so a full claim on what you pay the BMA is an over-claim.",
       "Medical indemnity or defence-organisation subscriptions (such as those paid to the MDU, MPS or MDDUS) are also deductible where you are required to hold cover to practise. Since the state-backed Clinical Negligence Scheme for General Practice (CNSGP) now covers NHS GP work, indemnity costs have shifted, but many doctors still pay for private-practice cover, Good Samaritan cover or enhanced advisory services. These remain allowable provided the cover relates to your professional duties.",
     ],
     figure: (
@@ -131,7 +131,7 @@ const SECTIONS: HubSection[] = [
         title="What the subscription and indemnity claim is built from"
         cards={[
           { title: "GMC registration", detail: "The annual retention fee, deductible as a registration cost." },
-          { title: "BMA and Royal Colleges", detail: "RCGP, RCP, RCS and specialist society fees, where the body is on HMRC's published list." },
+          { title: "BMA and Royal Colleges", detail: "RCGP, RCP, RCS and specialist society fees, where the body is on HMRC's published list. BMA relief is restricted to 85% of the subscription." },
           { title: "Defence organisations", detail: "MDU, MPS or MDDUS subscriptions, where you must hold cover to practise." },
           { title: "What CNSGP changed", detail: "NHS GP clinical work is state-indemnified, so own cover is mainly private, Good Samaritan or advisory." },
         ]}
@@ -298,7 +298,7 @@ export default function MedicalExpensesPillarPage() {
                 data-cta-goal="form"
                 className={btnPrimary}
               >
-                Book free consultation
+                Send an enquiry
               </Link>
               <Link
                 href="#articles"

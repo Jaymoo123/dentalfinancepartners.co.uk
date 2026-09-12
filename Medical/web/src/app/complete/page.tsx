@@ -23,14 +23,14 @@ import DetailsForm from "@/components/forms/DetailsForm";
  * section: a lead form rendered bare on a coloured ground is what shipped
  * invisible field labels on 88 article pages here.
  *
- * `SlimHero.eyebrow` is required and has no default; "Free review" is the only
+ * `SlimHero.eyebrow` is required and has no default; "Review call" is the only
  * string added, and both its words already appear in the standfirst below.
  */
 
 export const metadata: Metadata = {
   title: `Complete your details`,
   description:
-    "Add the last detail we need to arrange your free review with a specialist medical accountant.",
+    "Add the last detail we need to arrange your review call with a specialist medical accountant.",
   robots: { index: false, follow: false },
 };
 
@@ -130,13 +130,14 @@ export default async function CompletePage({
   return (
     <>
       <SlimHero
-        eyebrow="Free review"
+        eyebrow="Review call"
         title="Complete your details"
         backdrop={<MedicalBackdrop tone="navy" />}
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
           Add the last detail we need and a specialist firm from our partner network will be
-          in touch to arrange your free review, no obligation.
+          in touch to arrange your review call. Sending it commits you to nothing, and scope and
+          fees are agreed with that firm.
         </p>
       </SlimHero>
 

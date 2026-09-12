@@ -300,7 +300,7 @@ export default function PrivatePracticePillarPage() {
                 data-cta-goal="form"
                 className={btnPrimary}
               >
-                Book free consultation
+                Get matched to a specialist firm
               </Link>
               <Link
                 href="#articles"

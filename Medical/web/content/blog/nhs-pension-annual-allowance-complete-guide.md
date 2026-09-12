@@ -156,12 +156,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The NHS pension savings statement is the authoritative figure, but it arrives late, often after you have needed it for self assessment planning. Tracking your estimated pension input amount, threshold income and adjusted income through the year, and keeping a running record of unused allowance available to carry forward, turns a reactive scramble into a managed position. Given how the taper, carry forward, Scheme Pays and the McCloud reconciliation interact, most high earning doctors benefit from advice tailored to their scheme membership and income mix.</p>
 
-<p>We are medical accounting specialists who work with consultants, GP partners and locums on exactly these questions. This guide is general information and not personal advice; your position depends on your scheme sections, income and history. If you would like your annual allowance position modelled and your options set out clearly, <a href="/contact">get in touch with our medical accounting team</a> for a conversation about your circumstances.</p>
+<p>We publish on exactly these questions for consultants, GP partners and locums, and we match enquiries to regulated firms that work with doctors. This guide is general information and not personal advice; your position depends on your scheme sections, income and history. If you would like your annual allowance position modelled and your options set out clearly, <a href="/contact">send an enquiry</a> and a specialist firm will take it from there.</p>
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Could you be heading for an annual allowance charge this year?</p>
 <p style="margin:0 0 10px;">The taper catches many GPs by surprise when a profit jump coincides with a high income year. A free practice health check will flag your likely pension input amount, your threshold and adjusted income, and the carry-forward available before you hit a charge.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> to get your annual allowance position modelled.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your figures</a> and we will match them to a firm that models annual allowance positions for doctors.</p>
 </div>
 
 <h2>Recent Changes and the Current Figures</h2>

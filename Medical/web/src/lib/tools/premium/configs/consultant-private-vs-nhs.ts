@@ -14,10 +14,11 @@
  * 1. Threshold income = nhsPensionablePay + existingPrivateIncome + extraSessionValue
  *    + otherIncome. (Own pension contributions not captured here; stated in note.)
  *
- * 2. Adjusted income = threshold income + deemed employer NHS contribution.
- *    Deemed employer rate: DEEMED_EMPLOYER_RATE (23.7% of nhsPensionablePay).
- *    NOT threshold + pension growth (that is tool 1's simplification, which MUST
- *    NOT be reused here -- see TOOL_ROSTER.md §3 and §6).
+ * 2. Adjusted income = threshold income + the pension input amount for the year
+ *    (FA 2004 s.228ZA), taken from the member's annual allowance statement.
+ *    Corrected 2026-09-12: this tool previously added 23.7% of NHS pensionable
+ *    pay, which is the scheme's total contribution rate and not the statutory
+ *    measure. compute/nhs-pension.ts has always used the pension input amount.
  *
  * 3. Taper: BOTH conditions must hold:
  *      threshold income > £200,000
@@ -25,10 +26,9 @@
  *    Reduction = (adjustedIncome - £260,000) / 2, floored at MIN_ALLOWANCE.
  *
  * 4. AA charge impact of extra session = (AA before - AA after) * marginalRate.
- *    We do NOT ask for actual pension input (would require CETV calculations
- *    outside scope); instead we model the charge conservatively as the
- *    reduction in available allowance multiplied by the marginal rate. Stated
- *    clearly in the note.
+ *    This models the cost of the allowance lost, not the whole AA charge, which
+ *    depends on whether total pension input would otherwise have stayed within
+ *    the allowance. Stated clearly in the note.
  *
  * 5. Income-tax band rule (LOCKED, §5):
  *    PA = 12,570 tapered £1 per £2 above £100,000, fully gone at £125,140.
@@ -44,28 +44,23 @@
  *
  * WORKED EXAMPLE (from TOOL_ROSTER.md Tool 10):
  *    NHS pensionable £150k, existing private £70k, extra session £15k, other £0.
+ *    Pension input amount £35k (example assumption, from the AA statement).
  *    Threshold income (with extra): £150k + £70k + £15k = £235k  (>£200k)
- *    Deemed employer: £150k * 23.7% = £35,550
- *    Adjusted income: £235k + £35,550 = £270,550  (>£260k -- taper fires)
- *    AA = £60,000 - (£270,550 - £260,000) / 2 = £60,000 - £5,275 = £54,725
- *    Without extra: threshold £220k, adjusted £255,550 -- adjusted < £260k, NO taper.
- *    AA reduction caused by extra session: £60,000 - £54,725 = £5,275
- *    AA charge impact: £5,275 * 45% = £2,374 (additional-rate band)
+ *    Adjusted income: £235k + £35k = £270,000  (>£260k -- taper fires)
+ *    AA = £60,000 - (£270,000 - £260,000) / 2 = £60,000 - £5,000 = £55,000
+ *    Without extra: threshold £220k, adjusted £255,000 -- adjusted < £260k, NO taper.
+ *    AA reduction caused by extra session: £60,000 - £55,000 = £5,000
+ *    AA charge impact: £5,000 * 45% = £2,250 (additional-rate band)
  *    Income tax on extra £15k: all at 45% (income already £235k) = £6,750
  *    Class 4 NI on extra £15k: all at 2% (private income £85k total, above £50,270) = £300
- *    Total cost of extra session: £6,750 + £300 + £2,374 = £9,424
- *    Net income from extra session: £15,000 - £9,424 = £5,576
- *    Effective marginal rate: 62.8%
+ *    Total cost of extra session: £6,750 + £300 + £2,250 = £9,300
+ *    Net income from extra session: £15,000 - £9,300 = £5,700
+ *    Effective marginal rate: 62.0%
  *
  * No chart: single marginal-outcome output, comparison is before/after inline.
  *
- * CALIBRATION KNOB: DEEMED_EMPLOYER_RATE below -- update when NHSBSA revises
- * the 23.7% employer contribution rate.
  */
 import type { PremiumToolConfig, PremiumResult } from "../types";
-
-// ponytail: calibration knob -- NHSBSA updates this annually, do not bake in
-const DEEMED_EMPLOYER_RATE = 0.237; // 23.7% of NHS pensionable pay (2024/25 onward)
 
 const STANDARD_AA = 60_000;
 const MIN_AA = 10_000;
@@ -171,7 +166,17 @@ export const consultantPrivateVsNhsConfig: PremiumToolConfig = {
       min: 0,
       max: 400_000,
       step: 5_000,
-      help: "Your NHS salary or sessional pay that counts as pensionable. Drives the deemed employer contribution used to test adjusted income.",
+      help: "Your NHS salary or sessional pay that counts as pensionable. Counts toward threshold income.",
+    },
+    {
+      id: "pensionInputAmount",
+      label: "Pension input amount for the year",
+      type: "currency",
+      default: 35_000,
+      min: 0,
+      max: 200_000,
+      step: 1_000,
+      help: "The growth in the value of your pension this year across every registered scheme, as shown on your annual allowance statement. This is the figure adjusted income adds back, and it is not the same as the contributions paid in.",
     },
     {
       id: "existingPrivateIncome",
@@ -211,19 +216,17 @@ export const consultantPrivateVsNhsConfig: PremiumToolConfig = {
     const existingPrivateIncome = Math.max(0, Number(values.existingPrivateIncome) || 0);
     const extraSessionValue = Math.max(0, Number(values.extraSessionValue) || 0);
     const otherIncome = Math.max(0, Number(values.otherIncome) || 0);
-
-    // Deemed employer contribution (calibration knob)
-    const deemedEmployer = nhsPensionablePay * DEEMED_EMPLOYER_RATE;
+    const pensionInputAmount = Math.max(0, Number(values.pensionInputAmount) || 0);
 
     // --- WITHOUT extra session ---
     const totalIncomeBase =
       nhsPensionablePay + existingPrivateIncome + otherIncome;
-    const adjustedIncomeBase = totalIncomeBase + deemedEmployer;
+    const adjustedIncomeBase = totalIncomeBase + pensionInputAmount;
     const aaBase = calcAA(totalIncomeBase, adjustedIncomeBase);
 
     // --- WITH extra session ---
     const totalIncomeWith = totalIncomeBase + extraSessionValue;
-    const adjustedIncomeWith = totalIncomeWith + deemedEmployer;
+    const adjustedIncomeWith = totalIncomeWith + pensionInputAmount;
     const aaWith = calcAA(totalIncomeWith, adjustedIncomeWith);
 
     const aaTapered = aaWith < aaBase;
@@ -308,12 +311,12 @@ export const consultantPrivateVsNhsConfig: PremiumToolConfig = {
           value: `Threshold ${gbp(totalIncomeWith)}, adjusted ${gbp(adjustedIncomeWith)}, AA ${gbp(aaWith)}`,
         },
         {
-          label: "Deemed employer NHS contribution",
-          value: `${gbp(deemedEmployer)} (${(DEEMED_EMPLOYER_RATE * 100).toFixed(1)}% of NHS pensionable pay)`,
+          label: "Pension input amount added to reach adjusted income",
+          value: `${gbp(pensionInputAmount)} (from your annual allowance statement)`,
         },
       ],
       note: taperNote +
-        " 2026/27 basis. Threshold income is the sum of NHS pay, private income and other income (own pension contributions reduce threshold income but are not captured here, so this may be conservative). The AA charge impact is modelled as the AA reduction multiplied by the marginal income-tax rate; your actual charge depends on whether your total pension input this year would otherwise have stayed within the allowance. Carry-forward of unused allowance from the prior three tax years may eliminate the charge entirely. Class 4 NI is computed on the private income element only. These are estimates, not advice." +
+        " 2026/27 basis. Threshold income is the sum of NHS pay, private income and other income (own pension contributions reduce threshold income but are not captured here, so this may be conservative). Adjusted income adds back the pension input amount you entered, per FA 2004 s.228ZA. The AA charge impact is modelled as the AA reduction multiplied by the marginal income-tax rate; your actual charge depends on whether your total pension input this year would otherwise have stayed within the allowance. Carry-forward of unused allowance from the prior three tax years may eliminate the charge entirely. Class 4 NI is computed on the private income element only. These are estimates, not advice." +
         " " + (
           effectiveMarginalRate >= 60
             ? `At an effective marginal rate of ${pct(effectiveMarginalRate)}, the extra session keeps only ${gbp(netFromSession)} of every ${gbp(extraSessionValue)} earned. Before accepting the session, check whether carry-forward allowance removes the AA charge, which could materially improve the net. A specialist medical accountant can model the carry-forward position.`
@@ -328,8 +331,8 @@ export const consultantPrivateVsNhsConfig: PremiumToolConfig = {
     heading: "Why the marginal rate on a private session can exceed 60%",
     paragraphs: [
       "A hospital consultant with a significant NHS salary and growing private practice income faces three separate deductions on each extra private session: income tax at the marginal rate (40% or 45% once total income is above £50,270 or £125,140 respectively), Class 4 National Insurance on the self-employed private income (6% up to £50,270, 2% above, for 2026/27), and potentially an NHS Pension annual allowance charge if the extra income pushes adjusted income above the taper threshold.",
-      "The annual allowance taper is the subtlest and most damaging interaction. The NHS Pension standard annual allowance is £60,000. It tapers downward where BOTH of the following apply: threshold income (broadly all your taxable income) exceeds £200,000, AND adjusted income (threshold income plus the deemed employer NHS pension contribution, currently 23.7% of your NHS pensionable pay) exceeds £260,000. For every £2 of adjusted income above £260,000, the allowance shrinks by £1, down to a minimum of £10,000. A consultant on £150,000 NHS pay and £70,000 existing private income has an adjusted income of roughly £255,550 before any extra session. A single extra session worth £15,000 can push adjusted income to £270,550, triggering taper and reducing the annual allowance from £60,000 to around £54,725. If total pension input for the year exceeds the tapered allowance, the reduction in allowance is charged to income tax at the marginal rate, which at these income levels is 45%. The session that looked like £15,000 gross may net only around £5,500.",
-      "The personal allowance taper adds a further complication between £100,000 and £125,140 of total income. In that band the personal allowance reduces by £1 for every £2 of additional income, creating an effective income-tax rate close to 60% on income in that range. This tool models that interaction correctly by computing the personal allowance and income-tax bands dynamically rather than using a fixed higher-rate band width. Above £125,140 the effective rate drops back to 45%, but the AA taper and Class 4 NI can still push the combined effective marginal rate materially higher. The example worked through in this tool illustrates a combined effective rate approaching 63%.",
+      "The annual allowance taper is the subtlest and most damaging interaction. The NHS Pension standard annual allowance is £60,000. It tapers downward where BOTH of the following apply: threshold income (broadly all your taxable income) exceeds £200,000, AND adjusted income (threshold income plus your pension input amount for the year, the figure on your annual allowance statement) exceeds £260,000. For every £2 of adjusted income above £260,000, the allowance shrinks by £1, down to a minimum of £10,000. A consultant on £150,000 NHS pay and £70,000 existing private income, with a £35,000 pension input amount, has an adjusted income of £255,000 before any extra session. A single extra session worth £15,000 pushes adjusted income to £270,000, triggering the taper and reducing the annual allowance from £60,000 to £55,000. If total pension input for the year exceeds the tapered allowance, the reduction in allowance is charged to income tax at the marginal rate, which at these income levels is 45%. The session that looked like £15,000 gross nets £5,700.",
+      "The personal allowance taper adds a further complication between £100,000 and £125,140 of total income. In that band the personal allowance reduces by £1 for every £2 of additional income, creating an effective income-tax rate close to 60% on income in that range. This tool models that interaction correctly by computing the personal allowance and income-tax bands dynamically rather than using a fixed higher-rate band width. Above £125,140 the effective rate drops back to 45%, but the AA taper and Class 4 NI can still push the combined effective marginal rate materially higher. The example worked through in this tool illustrates a combined effective rate of 62%.",
       "Before declining (or accepting) a private session on marginal-rate grounds, check two things with your accountant. First, whether carry-forward of unused annual allowance from the previous three tax years can eliminate or reduce the AA charge entirely. If you had a lower pension input in prior years, your effective annual allowance for this year may be much higher than £60,000, removing the taper sting. Second, whether your actual pension input amount for the year will breach the tapered allowance. The AA charge only crystallises when pension input (not contributions paid) actually exceeds the allowance. These two factors together can change the net materially, and they are outside what any calculator can model without your personal carry-forward history.",
     ],
   },

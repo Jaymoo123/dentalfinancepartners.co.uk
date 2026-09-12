@@ -34,7 +34,7 @@ faqs:
   - question: "Does Making Tax Digital affect GPs in 2026?"
     answer: "Yes, for many. Making Tax Digital for Income Tax starts on 6 April 2026 for sole traders and landlords with qualifying income over £50,000 (then £30,000 from April 2027 and £20,000 from April 2028). Most full-time locums and unincorporated private GPs exceed £50,000 and are in scope from April 2026. Limited companies are out, and GP partnerships are deferred with no confirmed date, but a partner's own private earnings can still bring them in."
   - question: "What expenses can a GP claim for tax?"
-    answer: "Costs incurred wholly and exclusively for your professional work: medical indemnity (MDU, MPS or MDDUS), the GMC retention fee, BMA and relevant Royal College subscriptions on HMRC's List 3, genuine CPD, equipment (usually via capital allowances), business mileage between sites (HMRC's approved rate is 55p per mile for the first 10,000 business miles in 2026/27, then 25p), a fair home-office apportionment and accountancy fees. Note that NHS GP clinical negligence has been state-indemnified through CNSGP since 1 April 2019, so your own paid indemnity is mainly for private and non-clinical work."
+    answer: "Costs incurred wholly and exclusively for your professional work: medical indemnity (MDU, MPS or MDDUS), the GMC retention fee, relevant Royal College subscriptions on HMRC's List 3, the BMA subscription (List 3 restricts relief on it to 85% of the annual amount), genuine CPD, equipment (usually via capital allowances), business mileage between sites (HMRC's approved rate is 55p per mile for the first 10,000 business miles in 2026/27, then 25p), a fair home-office apportionment and accountancy fees. Note that NHS GP clinical negligence has been state-indemnified through CNSGP since 1 April 2019, so your own paid indemnity is mainly for private and non-clinical work."
   - question: "Do I need a specialist medical accountant rather than a general one?"
     answer: "GP tax sits at the intersection of NHS pension annual allowance rules, partnership profit allocation, GP pension certification (Type 1, Type 2 and locum forms), the prohibition on selling NHS goodwill, and the VAT line between exempt medical care and standard-rated cosmetic or medico-legal work. These are sector-specific points a generalist firm rarely handles day to day, which is where missed allowances and unexpected charges usually come from. This article is general information, not personal advice."
 ---
@@ -82,7 +82,7 @@ faqs:
 <ul>
 <li>Medical indemnity (MDU, MPS or MDDUS)</li>
 <li>The GMC annual retention fee</li>
-<li>BMA membership and relevant Royal College or specialty fees on HMRC's approved List 3</li>
+<li>BMA membership, with relief restricted to 85% of the subscription, and relevant Royal College or specialty fees on HMRC's approved List 3</li>
 <li>CPD genuinely relevant to your current practice</li>
 <li>Equipment and instruments (usually via capital allowances)</li>
 <li>Business mileage between sites at HMRC's approved rate of <strong>55p per mile for the first 10,000 business miles in 2026/27, then 25p</strong> (the rate rose from 45p on 6 April 2026)</li>

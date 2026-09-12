@@ -199,7 +199,7 @@ const SECTIONS: Section[] = [
   {
     heading: "Tax Efficiency Strategies for GPs",
     paragraphs: [
-      "Tax planning for GPs goes beyond claiming allowable expenses. While practice costs, professional subscriptions (BMA, MDU/MPS, RCGP), training courses and business mileage are all deductible, genuine tax efficiency requires a more strategic approach. Pension contributions remain one of the most powerful tools: NHS Pension Scheme contributions attract full income tax relief, and additional voluntary contributions or personal pensions can shelter further income.",
+      "Tax planning for GPs goes beyond claiming allowable expenses. Practice costs, professional subscriptions (BMA, MDU/MPS, RCGP), training courses and business mileage are all deductible, although the BMA is one of the bodies with a restriction attached to it: its HMRC List 3 entry limits relief to 85% of the annual subscription, so only that share of what you pay reduces your taxable profit. Even with those claims made properly, genuine tax efficiency requires a more strategic approach. Pension contributions remain one of the most powerful tools: NHS Pension Scheme contributions attract full income tax relief, and additional voluntary contributions or personal pensions can shelter further income.",
       "For higher-earning GPs, the tapered annual allowance means pension contributions above the threshold trigger tax charges. Understanding where you sit relative to the adjusted income thresholds is critical. The taper removes £1 of the £60,000 allowance for every £2 of adjusted income above £260,000 (2026/27), so a reduction in adjusted income restores half of itself in annual allowance, down to the £10,000 floor.",
     ],
     figure: (
@@ -210,7 +210,7 @@ const SECTIONS: Section[] = [
           {
             label: "Allowable expenses",
             detail:
-              "Practice costs, professional subscriptions (BMA, MDU/MPS, RCGP), training courses and business mileage.",
+              "Practice costs, professional subscriptions (BMA, relief restricted to 85%, plus MDU/MPS and RCGP), training courses and business mileage.",
           },
           {
             label: "NHS Pension Scheme contributions",

@@ -33,7 +33,7 @@ export const locumTaxTool: GenericTool = {
       min: 0,
       max: 100000,
       step: 500,
-      help: "GMC, indemnity, BMA, travel, equipment",
+      help: "GMC, indemnity, BMA (85% of the subscription), travel, equipment",
     },
     {
       id: "pensionContributions",
@@ -98,7 +98,7 @@ export const locumTaxTool: GenericTool = {
     {
       question: "What expenses can a locum doctor deduct?",
       answer:
-        "HMRC allows locum doctors to deduct costs wholly and exclusively incurred for work: GMC registration, medical indemnity (MDU/MPS), BMA membership, CPD and course fees, medical journals and textbooks, motor expenses (business journeys only), professional equipment, and the cost of running a home office if part of your home is used exclusively for administrative work.",
+        "HMRC allows locum doctors to deduct costs wholly and exclusively incurred for work: GMC registration, medical indemnity (MDU/MPS), BMA membership (relief restricted to 85% of the subscription by its HMRC List 3 entry), CPD and course fees, medical journals and textbooks, motor expenses (business journeys only), professional equipment, and the cost of running a home office if part of your home is used exclusively for administrative work.",
     },
     {
       question: "Do I pay Class 2 as well as Class 4 NI?",
@@ -113,7 +113,7 @@ export const locumTaxTool: GenericTool = {
     {
       question: "Should I work through a limited company as a locum?",
       answer:
-        "It depends on your income level, IR35 status across engagements, and NHS pension position. At sustained income above roughly £80,000 to £100,000 from outside-IR35 engagements, a limited company can save materially. Use the Private Practice Incorporation Calculator to model the comparison, or book a free call with a specialist.",
+        "It depends on your income level, IR35 status across engagements, and NHS pension position. At sustained income above roughly £80,000 to £100,000 from outside-IR35 engagements, a limited company can save materially. Use the Private Practice Incorporation Calculator to model the comparison, or send an enquiry and we will match it to a specialist firm.",
     },
   ],
 };

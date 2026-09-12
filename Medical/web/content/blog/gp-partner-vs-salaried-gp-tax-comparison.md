@@ -18,7 +18,7 @@ altText: UK medical professionals reviewing tax documents comparing GP partner v
 h1: 'GP Partner vs Salaried GP Tax Comparison: Complete Guide for 2026/27'
 keyTakeaways:
 - "A GP partner is self-employed, taxed on their profit share via SA800 and SA104; a salaried GP is a PAYE employee taxed at source."
-- "Partners pay Class 4 NIC at 6% on profit between £12,570 and £50,270 and 2% above; salaried GPs pay Class 1 employee NIC."
+- "Partners pay Class 4 NIC at 6% on profit between £12,570 and £50,270 and 2% above; salaried GPs pay Class 1 employee NIC at 8% on the same band, so the partner saves £754 a year once income reaches £50,270."
 - "Both routes accrue NHS Pension in the 2015 CARE section: a partner pensions profit as Type 1, a salaried GP as Type 2."
 - "The pension annual allowance is £60,000 for 2025/26, tapering once threshold income exceeds £200,000 and adjusted income exceeds £260,000."
 - "Partnership adds Self Assessment and payments on account on 31 January and 31 July; the take-home gain over a salaried GP is usually modest."
@@ -28,13 +28,13 @@ faqs:
 - question: Is a GP partner self-employed or an employee?
   answer: A GP partner is self-employed. The partnership files a partnership return (SA800) and each partner's share of the profit flows to the partnership pages (SA104) of their personal Self Assessment return. A partner is taxed on their share of the profit, not on the cash they draw. A salaried GP, by contrast, is an employee taxed through PAYE with Class 1 National Insurance deducted at source.
 - question: How much National Insurance does a GP partner pay compared with a salaried GP?
-  answer: A self-employed GP partner pays Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above £50,270 (2025/26 rates). Class 2 is no longer a required payment from 6 April 2024 (it is treated as paid where profits are at or above the small profits threshold). A salaried GP pays Class 1 employee National Insurance, deducted automatically through PAYE.
+  answer: A self-employed GP partner pays Class 4 National Insurance at 6% on profits between £12,570 and £50,270 and 2% above £50,270 (2026/27 rates, unchanged from 2025/26). A salaried GP pays Class 1 employee National Insurance at 8% on the same band and 2% above it, so on £80,000 the salaried GP pays £3,610.60 and the partner £2,856.60. Class 2 is no longer a required payment from 6 April 2024 (it is treated as paid where profits are at or above the small profits threshold). A salaried GP pays Class 1 employee National Insurance, deducted automatically through PAYE.
 - question: Do GP partners and salaried GPs both get the NHS Pension?
   answer: Yes. Both are active members of the NHS Pension Scheme and both accrue benefits in the 2015 CARE section. A salaried GP pensions their pay as a Type 2 practitioner; a GP partner pensions their NHS profit share and completes an Annual Certificate of Pensionable Profits as a Type 1 practitioner. Higher earners on either route can be caught by the annual allowance taper.
 - question: Is the pension annual allowance £40,000 for high-earning GPs?
   answer: No. The annual allowance is £60,000 for 2025/26. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a floor of £10,000. For the NHS Pension the figure measured is the growth in your benefits (the pension input amount), not the contributions paid.
 - question: Does becoming a GP partner always mean paying less tax?
-  answer: Not always. A partner pays slightly less National Insurance than a salaried GP at the same income and can claim a broader range of business expenses, but the difference is usually modest and depends on the practice's profitability, your profit share and your expenses. Partnership also brings Self Assessment, payments on account, business records and a share of practice risk. The numbers below are illustrative only.
+  answer: Not always. A partner pays less National Insurance than a salaried GP at the same income, £754 a year less once income reaches £50,270, because Class 4 charges 6% where Class 1 charges 8% on the band above £12,570, and a partner can claim a broader range of business expenses. Beyond that fixed National Insurance gap the outcome depends on the practice's profitability, your profit share and your expenses. Partnership also brings Self Assessment, payments on account, business records and a share of practice risk. The numbers below are illustrative only.
 - question: Who handles the tax return for each route?
   answer: A salaried GP's tax and National Insurance are largely settled through PAYE, though many still file a return to claim professional expenses or report other income. A GP partner must file a personal Self Assessment return every year including the partnership pages, and the partnership itself files an SA800. Partners also make payments on account on 31 January and 31 July where their bill exceeds £1,000.
 metaTitle_prev: 'GP Partner vs Salaried GP: Tax & Take-Home Compared 2026/27'
@@ -42,7 +42,7 @@ metaDescription_prev: 'GP partner vs salaried GP: profit share vs salary, Class 
 dateModified: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 ---
-<p>The <strong>GP partner vs salaried GP tax comparison</strong> comes down to one thing first: employment status. A partner is self-employed and taxed on a share of practice profit; a salaried GP is an employee taxed through PAYE. That single difference drives how you pay tax, how you pay National Insurance, how you pension your income and how much paperwork lands on your desk. This guide sets the two routes side by side for 2025/26 and 2026/27.</p>
+<p>The <strong>GP partner vs salaried GP tax comparison</strong> comes down to one thing first: employment status. A partner is self-employed and taxed on a share of practice profit; a salaried GP is an employee taxed through PAYE. That single difference drives how you pay tax, how you pay National Insurance, how you pension your income and how much paperwork lands on your desk. This guide sets the two routes side by side for 2026/27.</p>
 
 <p>Whether you are weighing a partnership offer or reviewing a salaried role, the figures below are general information rather than personal advice, and the worked examples are illustrative only. For a calculation built on your actual profit share, pay and pension position, speak to a specialist medical accountant.</p>
 
@@ -87,18 +87,18 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Salaried GP: Class 1</h3>
 
-<p>A salaried GP pays Class 1 employee National Insurance, deducted at source through PAYE. The practice, as employer, also pays secondary Class 1 National Insurance at 15% on pay above the £5,000 secondary threshold (from 6 April 2025), but that is a cost to the practice and does not reduce the GP's own take-home pay.</p>
+<p>A salaried GP pays Class 1 employee National Insurance, deducted at source through PAYE, at 8% on pay between £12,570 and £50,270 and 2% above £50,270. The practice, as employer, also pays secondary Class 1 National Insurance at 15% on pay above the £5,000 secondary threshold (from 6 April 2025), but that is a cost to the practice and does not reduce the GP's own take-home pay.</p>
 
 <h3>GP Partner: Class 4</h3>
 
-<p>A self-employed GP partner pays Class 4 National Insurance on their profit share. The rates for 2025/26 are:</p>
+<p>A self-employed GP partner pays Class 4 National Insurance on their profit share. The rates for 2026/27, unchanged from 2025/26, are:</p>
 
 <ul>
 <li>Class 4 main rate: <strong>6%</strong> on profits between £12,570 and £50,270</li>
 <li>Class 4 upper rate: <strong>2%</strong> on profits above £50,270</li>
 </ul>
 
-<p>The Class 4 main rate was cut from 9% to 6% from 6 April 2024, so older guides quoting "9%" are out of date. Just as importantly, <strong>Class 2 National Insurance is no longer a required payment from 6 April 2024</strong>: where a partner's profits are at or above the small profits threshold, Class 2 is treated as paid and protects the state pension record without any weekly charge. A self-employed GP should not be paying a separate weekly Class 2 contribution. Across the two systems, the partner's overall National Insurance bill is typically a little lower than an equivalent salaried GP's, though the gap is modest.</p>
+<p>The Class 4 main rate was cut from 9% to 6% from 6 April 2024, so older guides quoting "9%" are out of date. Just as importantly, <strong>Class 2 National Insurance is no longer a required payment from 6 April 2024</strong>: where a partner's profits are at or above the small profits threshold, Class 2 is treated as paid and protects the state pension record without any weekly charge. A self-employed GP should not be paying a separate weekly Class 2 contribution. Across the two systems, the partner's National Insurance bill is lower than an equivalent salaried GP's: Class 4 charges 6% where Class 1 charges 8% on the band between £12,570 and £50,270, so a GP earning at or above £50,270 on either route saves £754 a year as a partner, with both routes charging 2% above that.</p>
 
 <h2>NHS Pension: Both Are Members</h2>
 
@@ -126,7 +126,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>GMC annual retention fee</li>
 <li>Medical indemnity (MDU, MPS or MDDUS), where it relates to the role</li>
-<li>BMA membership and relevant Royal College or specialty fees on HMRC's approved List 3</li>
+<li>BMA membership, where List 3 restricts relief to 85% of the annual subscription, and relevant Royal College or specialty fees on the same approved list</li>
 <li>CPD genuinely relevant to current practice</li>
 <li>Professional journals and reference materials</li>
 </ul>
@@ -167,23 +167,23 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The figures below are simplified and illustrative only, to show how the routes compare in principle. They ignore tiered pension contributions (which vary by pensionable pay), student loans, other income and the detail of each individual's expenses. Your own numbers will differ.</p>
 
-<h3>Example: £80,000 of income, 2025/26</h3>
+<h3>Example: £80,000 of income, 2026/27</h3>
 
 <p><strong>Salaried GP (salary of £80,000):</strong></p>
 <ul>
 <li>Income tax: roughly £19,432 (personal allowance, 20% to £50,270, then 40%)</li>
-<li>Class 1 National Insurance: roughly £2,994 (Class 1 deducted through PAYE)</li>
-<li>Indicative pay before NHS pension contributions: roughly £57,574</li>
+<li>Class 1 National Insurance: £3,610.60 (8% on £12,570 to £50,270, which is £3,016, then 2% on the remaining £29,730, which is £594.60)</li>
+<li>Indicative pay before NHS pension contributions: roughly £56,957</li>
 </ul>
 
 <p><strong>GP Partner (profit share of £80,000):</strong></p>
 <ul>
 <li>Income tax: roughly £19,432 (same bands as above)</li>
-<li>Class 4 National Insurance: roughly £2,856 (6% on £12,570 to £50,270, then 2% above; no Class 2)</li>
-<li>Indicative profit after tax and NIC, before NHS pension contributions: roughly £57,712</li>
+<li>Class 4 National Insurance: £2,856.60 (6% on £12,570 to £50,270, which is £2,262, then 2% on the remaining £29,730, which is £594.60; no Class 2)</li>
+<li>Indicative profit after tax and NIC, before NHS pension contributions: roughly £57,711</li>
 </ul>
 
-<p>At the same headline figure, the National Insurance difference is small (the partner here is only around £138 better off on NIC alone). The partner's real advantage tends to come from claiming a wider range of expenses, which reduces the taxable profit, rather than from the National Insurance rates themselves. A salaried GP who claims few expenses and a partner with a substantial expenses base can end up some way apart, while two GPs with similar deductions end up close together.</p>
+<p>At the same headline figure the partner is <strong>£754 better off on National Insurance alone</strong>. The whole of that gap comes from the main-rate band: Class 1 charges 8% on the £37,700 between the thresholds where Class 4 charges 6%, a two-point difference worth £754 a year, and above £50,270 both routes charge 2% so the figures converge again. That is a real, recurring saving rather than a rounding difference, and it is worth roughly a fortnight of net pay at this income level. It is not, on its own, a reason to become a partner: it sits alongside a wider expenses base on the partner side, and on the other side of the ledger a partner carries practice risk, Self Assessment, payments on account and no statutory sick or maternity pay. A previous version of this page put the gap at around £138, which was produced by an understated Class 1 figure.</p>
 
 <h3>At higher income levels</h3>
 
@@ -201,18 +201,18 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Is partnership worth it?</h3>
 
-<p>For many GPs the decision is about more than tax: control, long-term reward, premises and lifestyle all weigh in. The tax and National Insurance advantage of partnership is usually modest at a like-for-like income, and the 2026/27 dividend and capital-allowance changes do not bear on a straightforward NHS profit share. Our guide to the <a href="/blog/becoming-gp-partner-financial-implications">financial implications of becoming a GP partner</a> and our note on <a href="/blog/gp-partnership-profit-sharing-tax-planning">GP partnership profit-sharing and tax planning</a> go into the wider picture.</p>
+<p>For many GPs the decision is about more than tax: control, long-term reward, premises and lifestyle all weigh in. The National Insurance advantage of partnership is capped at £754 a year at a like-for-like income, and the 2026/27 dividend and capital-allowance changes do not bear on a straightforward NHS profit share. Our guide to the <a href="/blog/becoming-gp-partner-financial-implications">financial implications of becoming a GP partner</a> and our note on <a href="/blog/gp-partnership-profit-sharing-tax-planning">GP partnership profit-sharing and tax planning</a> go into the wider picture.</p>
 
 <h2>Making the Right Choice</h2>
 
-<p>The headline of any <strong>GP partner vs salaried GP tax comparison</strong> is that the partner route can offer slightly lower National Insurance and broader expense relief, but the difference is often smaller than expected and comes with extra responsibility and risk. Tax should inform the decision, not drive it.</p>
+<p>The headline of any <strong>GP partner vs salaried GP tax comparison</strong> is that the partner route carries a fixed National Insurance saving of up to £754 a year, plus broader expense relief, in exchange for practice risk, Self Assessment and the loss of statutory employment rights. The National Insurance gap is real and recurring but it is capped: it stops growing once income passes £50,270, so at consultant-level incomes it is a small share of the total. Tax should inform the decision, not drive it.</p>
 
 <p>Because the calculation depends on your actual profit share, salary, expenses and pension position, and because the rules change, it pays to model both routes properly. We publish this research rather than file returns, so send an enquiry and we will match it to a regulated firm in our specialist partner network that compares the routes, plans around the annual allowance and keeps partners and salaried GPs compliant. Get in touch for a calculation based on your own circumstances.</p>
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Ready to compare your own numbers?</p>
 <p style="margin:0 0 10px;">The tax gap between the partner and salaried routes depends on your profit share, salary, expenses and pension position. A short health check will identify which route looks stronger for your situation and where the planning opportunities sit.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> for a calculation built on your actual numbers.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your position</a> and we will match it to a specialist firm for a calculation built on your actual numbers.</p>
 </div>
 
 <h2>Related Reading</h2>

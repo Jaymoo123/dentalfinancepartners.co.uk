@@ -85,7 +85,7 @@ const data: AudienceStage = {
     {
       icon: Receipt,
       title: "What expenses can I actually claim?",
-      body: "BMA subscription and Royal College fees where they sit on HMRC's approved List 3, GMC retention, CPD and conference costs genuinely relevant to current practice, home consulting room on a defensible apportionment, professional journals, and motor between surgeries at 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) then 25p. Indemnity needs care: since April 2019 the Clinical Negligence Scheme for General Practice has covered NHS general practice clinical negligence in England at no subscription, so a GP's own MDU, MPS or MDDUS cost is now largely for private and non-clinical work. Prior years are reviewed and amendments filed where the gap is material.",
+      body: "BMA subscription and Royal College fees where they sit on HMRC's approved List 3, noting that the BMA's own entry restricts relief to 85% of the annual subscription, GMC retention, CPD and conference costs genuinely relevant to current practice, home consulting room on a defensible apportionment, professional journals, and motor between surgeries at 55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) then 25p. Indemnity needs care: since April 2019 the Clinical Negligence Scheme for General Practice has covered NHS general practice clinical negligence in England at no subscription, so a GP's own MDU, MPS or MDDUS cost is now largely for private and non-clinical work. Prior years are reviewed and amendments filed where the gap is material.",
     },
     {
       icon: Shield,
@@ -160,7 +160,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to a GP practice accountant",
   ctaBody:
-    "A free 30-minute scoping call. Whether you are enquiring as a practice or as an individual partner or salaried GP, the call covers your current setup, your NHS Pension position, and any expense claims that look under-made. No obligation.",
+    "A scoping call with a regulated firm from our specialist partner network. Whether you are enquiring as a practice or as an individual partner or salaried GP, the call covers your current setup, your NHS Pension position, and any expense claims that look under-made. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
   calculatorTabs: ["annualallowance"],
   // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
   // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).

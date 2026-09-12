@@ -326,9 +326,9 @@ export function MedicalHealthCheckWizard() {
 
         <div className="mt-8 rounded-xl bg-[var(--navy)] p-6 text-center">
           <h3 className="text-lg font-bold text-white">Want to put numbers to these?</h3>
-          <p className="mt-2 text-sm text-white/80">30-minute call with a specialist GP accountant, free. We review your specific position, not a checklist.</p>
+          <p className="mt-2 text-sm text-white/80">Send us your position and we will match it to a regulated firm that works with GPs. A specialist there reads your specific position, not a checklist.</p>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
-            <Link href="/contact" className={btnPrimary}>Book your free call</Link>
+            <Link href="/contact" className={btnPrimary}>Send an enquiry</Link>
             <Link href="/medical-guides" className={`inline-flex items-center gap-1.5 rounded-full border border-white/40 px-5 min-h-11 py-2.5 text-sm font-semibold text-white hover:bg-white/10 ${focusRingOnDark}`}>
               Read medical guides
             </Link>

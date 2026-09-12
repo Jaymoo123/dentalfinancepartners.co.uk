@@ -75,7 +75,7 @@ faqs:
 
 <h3>Income Lines</h3>
 
-<p>The income section maps to how a GP practice is funded. You will typically see core NHS funding (the Global Sum and other GMS or PMS contract income), QOF income, enhanced services, Primary Care Network and Network Contract DES funding, premises reimbursement (notional or cost rent), dispensing income where the practice dispenses, and any private or non-NHS income. The exact labels vary between accountants, but every income line is money the practice received or is owed for the year. There is no single national per-patient value to check these against; the funding is weighted and uplifted annually, so treat the income section as a record of what came in rather than something to benchmark line by line.</p>
+<p>The income section maps to how a GP practice is funded. You will typically see core NHS funding (the Global Sum and other GMS or PMS contract income), QOF income, enhanced services, Primary Care Network and Network Contract DES funding, premises reimbursement (notional or cost rent), dispensing income where the practice dispenses, and any private or non-NHS income. The exact labels vary between accountants, but every income line is money the practice received or is owed for the year. The core line is checkable: the Global Sum is paid at a national rate of £130.07 per weighted patient for 2026/27, so dividing it by the practice's weighted population should land on that figure. What you cannot do is judge the income section against a flat per-head yardstick, because the weighted population, not the rate, is what makes one practice's numbers differ from another's.</p>
 
 <h3>Expenditure Lines</h3>
 

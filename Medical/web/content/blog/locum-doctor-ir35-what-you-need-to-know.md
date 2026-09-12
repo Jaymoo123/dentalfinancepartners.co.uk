@@ -123,4 +123,4 @@ faqs:
 
 <h2>How we can help</h2>
 
-<p>IR35 is fact-specific, and the cost of getting it wrong falls on real take-home pay. As <a href="/services">specialist medical accountants</a> we review locum contracts and SDS decisions, model the inside-versus-outside and sole-trader-versus-company outcomes (including the NHS pension impact), and support you through the disagreement process where a determination looks wrong. <a href="/contact">Get in touch</a> for a review of your own arrangements.</p>
+<p>IR35 is fact-specific, and the cost of getting it wrong falls on real take-home pay. We match enquiries to <a href="/services">specialist medical accountants</a> who review locum contracts and SDS decisions, model the inside-versus-outside and sole-trader-versus-company outcomes (including the NHS pension impact), and support you through the disagreement process where a determination looks wrong. <a href="/contact">Send an enquiry</a> to get your own arrangements reviewed.</p>

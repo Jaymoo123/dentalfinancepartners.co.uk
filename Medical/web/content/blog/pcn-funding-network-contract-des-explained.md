@@ -155,8 +155,8 @@ faqs:
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Is your ARRS reimbursement netting off correctly in the practice accounts?</p>
-<p style="margin:0 0 10px;">A misposted ARRS reimbursement flows straight through to each partner's profit share and tax bill. Our free practice health check will show whether your PCN income streams are being recognised correctly and where corrections would be material.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> about your practice accounts.</p>
+<p style="margin:0 0 10px;">A misposted ARRS reimbursement flows straight through to each partner's profit share and tax bill. Our free practice health check will flag whether your PCN income streams are worth a specialist review and where corrections are most likely to be material.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your position</a> and we will route it to a firm that works on practice accounts.</p>
 </div>
 
 <h2>Is PCN Income Subject to VAT, and Is It Pensionable?</h2>

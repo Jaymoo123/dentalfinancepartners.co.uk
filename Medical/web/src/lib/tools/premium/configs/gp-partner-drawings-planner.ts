@@ -107,9 +107,9 @@ function calcClass4NI(profit: number): number {
 type SLPlan = "none" | "plan1" | "plan2" | "plan4";
 const SL_THRESHOLDS: Record<SLPlan, number> = {
   none: Infinity,
-  plan1: 26065,
-  plan2: 28470,
-  plan4: 32745,
+  plan1: 26900,
+  plan2: 29385,
+  plan4: 33795,
 };
 function calcStudentLoan(income: number, plan: SLPlan): number {
   if (plan === "none") return 0;

@@ -118,7 +118,7 @@ faqs:
 
 <p>The commercial questions, incorporating, taking on associates or buying a partner out, follow the same rules here as in any other private healthcare practice, and the existing private-practice material on this site covers them. What a specialist accountant does across healthcare more generally is in the guide to <a href="/blog/healthcare-accountants-uk">healthcare accountants</a>.</p>
 
-<p>If you are working out which side of the register your practice sits on, or what registering for VAT would do to your fees, our work covers the liability position and the arithmetic before you change a price. <a href="/contact">Get in touch to arrange a call.</a></p>
+<p>If you are working out which side of the register your practice sits on, or what registering for VAT would do to your fees, we will match your enquiry to a regulated firm that covers the liability question and the arithmetic before you change a price. <a href="/contact">Get in touch to arrange a call.</a></p>
 
 <h2>Related Reading</h2>
 

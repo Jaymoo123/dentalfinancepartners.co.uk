@@ -133,7 +133,7 @@ faqs:
 
 <p>The decision is rarely about this year's tax bill. It is about whether the value you are building has a buyer when you want one, and on current market structure it does.</p>
 
-<p>If a group has approached you, or you want to know what the practice is worth in a sale, our work covers the structure, the earn-out modelling and the capital gains tax position before anything is agreed. <a href="/contact">Get in touch to arrange a call.</a></p>
+<p>If a group has approached you, or you want to know what the practice is worth in a sale, we will route your enquiry to a regulated firm that covers the structure, the earn-out modelling and the capital gains tax position before anything is agreed. <a href="/contact">Get in touch to arrange a call.</a></p>
 
 <h2>Related Reading</h2>
 

@@ -270,13 +270,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
-                    {/* Mid-article qualified lead capture (free review, medical voice). */}
+                    {/* Mid-article qualified lead capture (specialist-firm review, medical voice). */}
                     <MiniCapture
                       formId="blog_mid_resource"
                       messagePrefix={`[Blog mid: ${categorySlug}] `}
-                      heading="Get a free specialist review"
-                      blurb="Tell us about your situation and a medical accountant will review your position and confirm the next sensible step, with no obligation."
-                      submitLabel="Request my free review"
+                      heading="Get this read by a specialist firm"
+                      blurb="Tell us about your situation and we will match it to a regulated firm that works with doctors. A medical accountant there reviews your position and confirms the next sensible step. Enquiring commits you to nothing."
+                      submitLabel="Request a specialist review"
                       className={`my-10 ${cardShell} sm:p-8`}
                     />
                     {/* InlineMiniLeadForm follows after the qualified capture. */}
@@ -296,9 +296,9 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     <MiniCapture
                       formId="blog_short_resource"
                       messagePrefix={`[Blog short: ${categorySlug}] `}
-                      heading="Get a free specialist review"
-                      blurb="Tell us about your situation and a medical accountant will review your position and confirm the next sensible step, with no obligation."
-                      submitLabel="Request my free review"
+                      heading="Get this read by a specialist firm"
+                      blurb="Tell us about your situation and we will match it to a regulated firm that works with doctors. A medical accountant there reviews your position and confirms the next sensible step. Enquiring commits you to nothing."
+                      submitLabel="Request a specialist review"
                       className={`my-10 ${cardShell} sm:p-8`}
                     />
                   </>

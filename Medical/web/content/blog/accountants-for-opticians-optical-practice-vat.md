@@ -134,7 +134,7 @@ faqs:
 
 <p>Pension access is a point to check, never to assume. NHS Pension Scheme membership turns on your role and your employer, so confirm your own position with the NHS Business Services Authority before treating scheme access as settled. The <a href="/nhs-pension">NHS Pension Scheme guide</a> covers how the scheme itself works.</p>
 
-<p>If you are setting an apportionment method, weighing it against separately disclosed charges, or checking that your practice actually clears the four-question test before you treat any of a price as exempt, our work covers the liability position and the arithmetic behind it. <a href="/contact">Get in touch to arrange a call.</a></p>
+<p>If you are setting an apportionment method, weighing it against separately disclosed charges, or checking that your practice actually clears the four-question test before you treat any of a price as exempt, send us your position and we will match it to a regulated firm that covers the liability question and the arithmetic behind it. <a href="/contact">Get in touch to arrange a call.</a></p>
 
 <h2>Related Reading</h2>
 

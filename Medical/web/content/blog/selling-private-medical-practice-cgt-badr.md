@@ -13,16 +13,16 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/desk-and-chairs-in-doctor-office-7789614/"
 category: "Private Practice"
 metaTitle: "Selling a Private Medical Practice: CGT and BADR"
-metaDescription: "CGT and Business Asset Disposal Relief on selling a private medical practice. BADR rose from 14% to 18% on 6 April 2026, worth £40,000 on a £1m gain."
+metaDescription: "CGT and Business Asset Disposal Relief on selling a private medical practice. BADR is 18% on disposals from 6 April 2026, against a 24% main CGT rate."
 altText: "Consultant and adviser reviewing the sale contract for a private medical clinic"
-h1: "Selling a Private Medical Practice: CGT, Business Asset Disposal Relief and the 2026 Rate Rise"
+h1: "Selling a Private Medical Practice: CGT and Business Asset Disposal Relief at 18%"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold, having been prohibited since 1 April 2004 under what is now SI 2019/251, so no CGT or BADR question arises on it."
-- "The Business Asset Disposal Relief rate is rising in steps: 10% to 5 April 2025, 14% from 6 April 2025, and 18% from 6 April 2026."
-- "BADR is capped at £1,000,000 of qualifying gains per individual over their lifetime, not per disposal, with gains above the limit taxed at the normal CGT rate."
+- "Business Asset Disposal Relief is charged at 18% on disposals from 6 April 2026, which is the rate in force now; 14% and 10% are the earlier bands and apply only to earlier disposals."
+- "BADR is capped at £1,000,000 of qualifying gains per individual over their lifetime under TCGA 1992 section 169N, not per disposal, with gains above the limit taxed at the normal CGT rate."
 - "The qualifying conditions, including holding at least 5% of ordinary share capital and voting rights and being an officer or employee, must be met throughout the two years ending on the date of disposal."
-- "Under TCGA 1992 section 28(1) an unconditional contract is dated when entered into, so an exchange on or before 5 April 2026 keeps the gain in the 14% band even if completion is later."
-summary: "When a doctor sells a genuinely private medical business, capital gains tax applies in full and Business Asset Disposal Relief can cut the rate. This guide walks through the CGT computation, the BADR conditions and limits, and why the rate stepping from 14% to 18% on 6 April 2026 turns disposal timing into a planning decision."
+- "Under TCGA 1992 section 28(1) an unconditional contract is dated when entered into, so the contract date, not completion, fixes which tax year a disposal falls in and which rate band applies."
+summary: "When a doctor sells a genuinely private medical business, capital gains tax applies in full and Business Asset Disposal Relief can cut the rate. This guide walks through the CGT computation, the BADR conditions and limits, and how the contract date under TCGA 1992 section 28 fixes the date of disposal and so the rate band that applies."
 schema: ""
 faqs:
   - question: "Can I sell the goodwill of my private medical practice?"
@@ -30,32 +30,32 @@ faqs:
   - question: "Can a GP sell their NHS practice and claim Business Asset Disposal Relief?"
     answer: "No. NHS GP goodwill cannot be sold, having been prohibited since 1 April 2004 under what is now SI 2019/251, so there is no qualifying disposal and BADR never applies to it. BADR is confined to genuinely private practice disposals and private-company share sales. Our separate guide explains why NHS goodwill is out of scope."
   - question: "What is the current Business Asset Disposal Relief rate?"
-    answer: "The BADR rate is a rising one. It was 10% on disposals to 5 April 2025, 14% on disposals from 6 April 2025 to 5 April 2026, and 18% on disposals from 6 April 2026. The relief is becoming less generous each step, which is why disposal timing now matters."
+    answer: "18%. That is the rate on all gains on qualifying assets disposed of from 6 April 2026, and it is the rate in force now. The earlier bands still matter only for working out the rate on an earlier disposal: 14% on disposals between 6 April 2025 and 5 April 2026, and 10% on disposals on or before 5 April 2025."
   - question: "How much is the BADR lifetime limit?"
-    answer: "Business Asset Disposal Relief is capped at £1,000,000 of qualifying gains per individual over their lifetime, not per disposal. Gains above the limit are taxed at the normal CGT rate. Any prior qualifying disposals you have made already use up part of that lifetime allowance."
+    answer: "Business Asset Disposal Relief is capped at £1,000,000 of qualifying gains per individual over their lifetime under TCGA 1992 section 169N, not per disposal. Gains above the limit are taxed at the normal CGT rate. Any prior qualifying disposals you have made already use up part of that lifetime allowance."
   - question: "How long do I have to own the business to qualify for BADR?"
     answer: "The qualifying conditions must be met throughout the two years ending on the date of disposal. For an unincorporated business that means owning it for at least two years; for a share sale it means holding the shares and meeting the role and shareholding tests for at least two years to the disposal date."
   - question: "What conditions apply if I sell shares in my private medical company?"
     answer: "For at least two years to the disposal you must hold at least 5% of the ordinary share capital and 5% of the voting rights, be entitled to at least 5% of the economic interest (profits available for distribution and assets on a winding up), and be an officer or employee of the company or a group company. The company must also be a trading company or the holding company of a trading group throughout."
-  - question: "Why does selling before or after 6 April 2026 matter?"
-    answer: "The BADR rate steps from 14% to 18% on 6 April 2026. On a £1 million qualifying gain that is the difference between a £140,000 and a £180,000 tax cost, so £40,000 turns purely on which side of the date the disposal falls. Because CGT timing follows the contract date, the distinction is worth raising early."
+  - question: "How much is BADR actually worth now that the rate is 18%?"
+    answer: "It is worth the gap between 18% and the main CGT rate that would otherwise apply. For a higher-rate taxpayer the main rate on assets other than residential property is 24%, so BADR saves 6 percentage points on the qualifying gain: on a £1 million qualifying gain, £180,000 at 18% instead of £240,000 at 24%, a £60,000 saving. That is a real saving but a much smaller one than the old 10% rate delivered, so the relief is worth claiming without being worth distorting a deal for."
   - question: "When is a disposal treated as made for capital gains tax: contract or completion?"
-    answer: "For CGT, timing follows the contract, not completion. Under TCGA 1992 section 28(1), an unconditional contract is treated as made when the contract is entered into, not when the asset is conveyed or the money changes hands. So a binding unconditional contract signed on or before 5 April 2026 falls in the 14% band even if completion is later."
+    answer: "For CGT, timing follows the contract, not completion. Under TCGA 1992 section 28(1), an unconditional contract is treated as made when the contract is entered into, not when the asset is conveyed or the money changes hands. That fixes which tax year the disposal falls in, and so which return it goes on and which rate band applies. A binding unconditional contract exchanged before 6 April 2026 is a 2025/26 disposal at 14% even where completion came later."
   - question: "What is the difference between an unconditional and a conditional contract for CGT timing?"
-    answer: "An unconditional contract is dated when it is entered into (section 28(1)). A conditional contract, including one conditional on a third party's consent or on an option being exercised, is dated when the condition is satisfied (section 28(2)). So a contract conditional on a consent that is only met after 5 April 2026 is dated in the 18% band, which is why the conditional versus unconditional distinction is the technical heart of the timing point."
+    answer: "An unconditional contract is dated when it is entered into (section 28(1)). A conditional contract, including one conditional on a third party's consent or on an option being exercised, is dated when the condition is satisfied (section 28(2)). Whether a contract is one or the other is a question of its actual terms, not of what the parties call it, and it can move a disposal into a later tax year than the signature suggests."
   - question: "Is an asset sale or a share sale better for tax?"
     answer: "It depends on the facts. On an asset sale the individual disposes of goodwill and chargeable assets; on a share sale the individual disposes of the shares, and a company selling its own assets gets no BADR because BADR is a personal relief. Each route has different conditions and different consequences for the buyer, so the comparison should be run for your specific structure."
   - question: "Does my private company need to be a trading company to qualify?"
     answer: "Yes. For a share sale to qualify for BADR the company must be a trading company, or the holding company of a trading group, throughout the two-year period. A consultant's private company is normally trading, but a company sitting on large cash reserves or significant investments can jeopardise its trading status, so it is worth reviewing before a sale."
   - question: "How is the capital gain calculated?"
-    answer: "CGT is charged on the gain, not the whole price. The gain is the proceeds less the base cost (broadly what you paid for or invested in the asset) less allowable costs of acquisition and disposal. The annual exempt amount is set against the gain first, and for 2025/26 that exempt amount is £3,000. Confirm the current year's figure, as it has been reduced."
+    answer: "CGT is charged on the gain, not the whole price. The gain is the proceeds less the base cost (broadly what you paid for or invested in the asset) less allowable costs of acquisition and disposal. The annual exempt amount is set against the gain first, and for 2026/27 that exempt amount is £3,000."
   - question: "Is the sale proceeds pensionable in the NHS scheme?"
     answer: "No. Private income, and any dividends from a private company, are not NHS-pensionable, and a one-off capital sum from a sale is a capital event rather than pensionable pay, so it does not generate NHS accrual either. Only your NHS post is pensionable. This is worth keeping in mind for consultants weighing up the private route."
   - question: "Should I sell now or defer by incorporating instead?"
     answer: "If you are exiting the business, selling and claiming BADR crystallises the gain now at the reduced rate. If you are continuing the business through a company rather than selling out, section 162 incorporation relief can defer the gain by rolling it into the shares instead. They are two ends of the same CGT story, and our incorporation relief guide covers the defer-instead-of-sell route."
 ---
 
-<p>Where a doctor runs a genuinely private business and comes to sell it, that is real saleable value, and the capital gains tax rules apply in full. This is the opposite of the NHS practice, where goodwill cannot be sold at all. This page walks through the capital gains tax computation on a private-practice disposal, how Business Asset Disposal Relief (BADR) cuts the rate, the conditions and limits you have to meet, and why the BADR rate stepping from 14% to 18% on 6 April 2026 turns disposal timing into a planning decision. NHS goodwill is out of scope throughout, and we link to the page that explains why.</p>
+<p>Where a doctor runs a genuinely private business and comes to sell it, that is real saleable value, and the capital gains tax rules apply in full. This is the opposite of the NHS practice, where goodwill cannot be sold at all. This page walks through the capital gains tax computation on a private-practice disposal, how Business Asset Disposal Relief (BADR) cuts the rate, the conditions and limits you have to meet, and how the contract date fixes the date of disposal and so the rate that applies. NHS goodwill is out of scope throughout, and we link to the page that explains why.</p>
 
 <h2>First, what can actually be sold (and what cannot)</h2>
 
@@ -69,7 +69,7 @@ faqs:
 
 <p>The core mechanic is simple to state. Capital gains tax is charged on the gain, not on the whole price you receive. The gain is broadly the proceeds, less the base cost (what you paid for or invested in the asset), less the allowable costs of acquisition and disposal such as professional fees.</p>
 
-<p>The annual exempt amount is set against the gain first. It is modest now, having been reduced over recent years, and for 2025/26 it is £3,000. Because that figure changes, confirm the current year's amount on gov.uk rather than relying on an old number. Against a substantial practice gain it makes little difference, but it is the first deduction in the computation.</p>
+<p>The annual exempt amount is set against the gain first. It is modest now, having been reduced over recent years, and for 2026/27 it is £3,000. Against a substantial practice gain it makes little difference, but it is the first deduction in the computation.</p>
 
 <p>Without any relief, a gain of this kind would be taxed at the standard CGT rates for the year. Business Asset Disposal Relief, where it applies, replaces that with a single reduced rate on the qualifying gain, and the saving can be significant. The contrast between the standard rate and the BADR rate is the whole reason the relief is worth pursuing.</p>
 
@@ -79,13 +79,15 @@ faqs:
 
 <p>Business Asset Disposal Relief charges qualifying gains at a reduced CGT rate instead of the main rate. It is the single most valuable relief on a private-practice sale, and three features define it: the rate, the lifetime limit, and the qualifying period.</p>
 
-<h3>The rate bands</h3>
+<h3>The rate, and what it is worth</h3>
 
-<p>The BADR rate is stated with its dates every time, because it is rising. It was <strong>10%</strong> on disposals to 5 April 2025. It is <strong>14%</strong> on disposals from 6 April 2025 to 5 April 2026. It is <strong>18%</strong> on disposals from 6 April 2026. Each step makes the relief less generous, which is the planning point we return to below.</p>
+<p>The BADR rate on a disposal made now is <strong>18%</strong>, the rate that applies to all gains on qualifying assets disposed of from 6 April 2026. Two earlier bands still exist, and they matter only for working out the rate on a disposal that has already happened or is still to be reported: <strong>14%</strong> on disposals between 6 April 2025 and 5 April 2026, and <strong>10%</strong> on disposals on or before 5 April 2025. If your disposal is still ahead of you, 18% is your rate.</p>
+
+<p>What the relief saves is the gap between 18% and the main CGT rate that would otherwise apply. For a higher-rate taxpayer, the main rate on assets other than residential property is <strong>24%</strong>, so BADR is worth <strong>6 percentage points</strong> on the qualifying gain. On a £1 million qualifying gain that is £180,000 instead of £240,000, a saving of £60,000. It is worth having and worth claiming properly, but it is a far smaller edge than the old 10% rate gave, and that is worth knowing before a deal is bent to secure it.</p>
 
 <h3>The £1 million lifetime limit</h3>
 
-<p>BADR is capped at <strong>£1,000,000 of qualifying gains per individual over their lifetime</strong>. This is a lifetime allowance, not a per-disposal one, so any prior qualifying disposals you have already made use up part of it. Gains above the limit do not get the BADR rate; they fall to the normal CGT rate for the year. If you have claimed the relief before, you need to know how much of the £1 million is left before relying on it.</p>
+<p>BADR is capped at <strong>£1,000,000 of qualifying gains per individual over their lifetime</strong>, under <strong>TCGA 1992 section 169N</strong>. This is a lifetime allowance, not a per-disposal one, so any prior qualifying disposals you have already made use up part of it. Gains above the limit do not get the BADR rate; they fall to the normal CGT rate for the year. If you have claimed the relief before, you need to know how much of the £1 million is left before relying on it.</p>
 
 <h3>The two-year qualifying period</h3>
 
@@ -119,51 +121,51 @@ faqs:
 <li><strong>The trading-company test.</strong> The company must be a trading company, or the holding company of a trading group, for the whole period, the balance-sheet point covered above. Several of these are fixable if caught early and impossible to fix once the two-year clock has run out, which is why they are worth checking a year out rather than a week before exchange.</li>
 </ul>
 
-<h2>The 6 April 2026 rate step as a timing lever</h2>
+<h2>The contract date decides everything: TCGA 1992 section 28</h2>
 
-<p>Because the rate moves from 14% to 18% on 6 April 2026, timing has become a genuine planning decision. On a £1 million qualifying gain, the BADR cost rises from £140,000 at 14% to £180,000 at 18%, a difference of £40,000 turning purely on which side of the date the disposal falls. Those figures are illustrative, but the arithmetic is real, and on a large gain the amount at stake is meaningful.</p>
+<p>The single most misunderstood mechanic in a practice sale is the date of disposal. It is not the day the money lands, and it is not the day the buyer takes over. It is the contract date, and it decides which tax year the gain falls in, which return it goes on, when the tax is due, and which BADR rate band applies to it.</p>
 
 <h3>When is the disposal treated as made?</h3>
 
-<p>The reason timing can be managed at all is that CGT timing follows the contract, not completion. Under <strong>TCGA 1992 section 28(1)</strong>, an unconditional contract is treated as made (and so is the date of disposal) when the contract is entered into, not when the asset is conveyed or the money changes hands. So a binding unconditional contract signed on or before 5 April 2026 falls in the 14% band even if completion happens weeks or months later.</p>
+<p>Under <strong>TCGA 1992 section 28(1)</strong>, where an asset is disposed of under an unconditional contract, the disposal is treated as made when the contract is entered into, not when the asset is conveyed or transferred. Exchange, in other words, not completion. A practice sold under an unconditional contract exchanged in March, completing in July, is a disposal in the tax year of the March exchange, and it belongs on that year's return.</p>
 
 <h3>Conditional contracts</h3>
 
-<p>Under <strong>section 28(2)</strong>, where the contract is conditional, including conditional on a third party's consent or on an option being exercised, the disposal date is when the condition is satisfied. So a contract that is conditional on a consent only obtained after 5 April 2026 is dated in the 18% band, even though it was signed earlier. The conditional versus unconditional distinction is the technical heart of the timing point, and whether a contract is one or the other is a question of its actual terms, not of what the parties call it.</p>
+<p>Under <strong>section 28(2)</strong>, where the contract is conditional, including conditional on a third party's consent or on an option being exercised, the disposal is treated as made when the condition is satisfied. Whether a contract is conditional or unconditional is a question of its actual terms, not of what the parties call it, and a sale hanging on a landlord's consent to assign a lease or on a regulatory approval is the common medical example. A conditional contract can land the disposal in a later tax year than the signature date suggests, and that is the trap: the seller books the gain in the year they signed, and the condition is not met until after 5 April.</p>
 
-<h3>A timing walk-through across the 6 April 2026 step</h3>
+<h3>Where the rule bites in practice</h3>
 
-<p>Three short scenarios show how section 28 decides which rate band a disposal lands in. The dates are illustrative.</p>
+<p>Three situations show the live use of section 28. The dates are illustrative.</p>
 
 <ul>
-<li><strong>Unconditional contract exchanged 2 April 2026, completion 30 June 2026.</strong> The contract is binding and unconditional on exchange, so under section 28(1) the disposal date is 2 April 2026 and the gain falls in the <strong>14%</strong> band, even though the money and the keys change hands in June. Completion after 5 April does not move the disposal date.</li>
-<li><strong>Conditional contract exchanged 2 April 2026, condition met 20 April 2026.</strong> If the sale is conditional on a landlord's consent to assign a lease that only arrives on 20 April 2026, section 28(2) dates the disposal on 20 April, after the step, so the gain falls in the <strong>18%</strong> band. The earlier signature does not help, because the contract was not yet binding in the relevant sense.</li>
-<li><strong>Unconditional contract exchanged 5 April 2026.</strong> An unconditional exchange on the last day of the 14% band fixes the disposal on 5 April and keeps the gain at <strong>14%</strong>. Exchange a day later, on 6 April 2026, and the same gain is taxed at 18%. What matters is the character of the contract on the date of exchange, not the completion date.</li>
+<li><strong>An unconditional contract exchanged before 6 April 2026, completing later.</strong> Say a clinic was sold under a binding unconditional contract exchanged on 2 April 2026, with completion on 30 June 2026. Section 28(1) dates the disposal on 2 April 2026. That makes it a <strong>2025/26</strong> disposal taxed at the <strong>14%</strong> BADR rate, reported on the 2025/26 return, even though the proceeds arrived in the following tax year. Completion in June does not move it.</li>
+<li><strong>A conditional contract signed in one year and satisfied in the next.</strong> If the same sale had been conditional on a landlord's consent to assign that only arrived on 20 April 2026, section 28(2) dates the disposal on 20 April. That is a <strong>2026/27</strong> disposal at <strong>18%</strong>, on a different return, with the tax due a year later. Same signature date, different year, different rate.</li>
+<li><strong>A sale being negotiated now.</strong> A disposal contracted from 6 April 2026 is taxed at 18% whether it is exchanged today or next spring, so the rate is no longer a reason to hurry. What section 28 still decides is which tax year the gain falls into, which is a real question where a seller has other gains, other BADR claims against the £1 million lifetime limit, or a reason to want the liability in one year rather than the next. Where a genuine commercial condition exists, it can shift the year; a condition inserted for no purpose other than to move the date is not the same thing.</li>
 </ul>
 
 <h3>Do not let the tail wag the dog</h3>
 
-<p>Timing a sale to beat the rate step only makes sense if the deal is genuinely ready to complete. An artificially rushed or contrived contract carries its own risks, both commercial and in terms of how it is later viewed. The right way to treat the 6 April 2026 step is as a planning point to raise early with your adviser, so that a deal which is happening anyway is structured on the better side of the date, rather than as a trick to force a sale that is not ready.</p>
+<p>The rate itself is now settled at 18% for any disposal ahead of you, so there is no date to race and nothing to be gained from rushing a contract. What is worth doing is making sure the contract you sign is the contract you think you are signing, so the disposal is dated in the year you expect and the gain is reported in the right one. An artificially contrived contract carries its own risks, commercial and otherwise, and buys nothing on the rate.</p>
 
 <h2>A worked illustration</h2>
 
 <p>The figures below are illustrative only and are used to show the mechanics, not to represent any real client or transaction.</p>
 
-<p>Imagine a single owner sells a private clinic and, after deducting base cost and allowable costs, arrives at a chargeable gain that sits within the £1 million BADR lifetime limit. Suppose the gain is £800,000. If the disposal is dated on or before 5 April 2026, BADR applies at 14%, giving a tax cost of £112,000. If the same disposal is dated from 6 April 2026, BADR applies at 18%, giving £144,000. The timing alone accounts for £32,000 on this illustrative gain.</p>
+<p>Imagine a single owner sells a private clinic and, after deducting base cost and allowable costs, arrives at a chargeable gain that sits within the £1 million BADR lifetime limit. Suppose the gain is £800,000 and the disposal is dated now. BADR applies at 18%, giving a tax cost of £144,000. Without the relief, the same gain taxed at the 24% main rate for a higher-rate taxpayer would cost £192,000, so qualifying for BADR is worth £48,000 on this illustrative gain.</p>
 
-<p>Now suppose the same value is realised instead as a share sale of the owner's private company, and the owner has held at least 5% of the shares and voting rights, has been an officer or employee, and the company has been trading throughout the two years to disposal. The qualifying gain is taxed at the same BADR rate band, so the rate-step arithmetic is identical; what differs is the route to qualification and the consequences for the buyer. The point of the illustration is that the rate band, the date of disposal and the qualifying conditions drive the outcome, not the headline label on the deal.</p>
+<p>Now suppose the same value is realised instead as a share sale of the owner's private company, and the owner has held at least 5% of the shares and voting rights, has been an officer or employee, and the company has been trading throughout the two years to disposal. The qualifying gain is taxed at the same 18% rate, so the arithmetic is identical; what differs is the route to qualification and the consequences for the buyer. The point of the illustration is that qualification, the lifetime limit and the date of disposal drive the outcome, not the headline label on the deal.</p>
 
 <h2>A step-by-step CGT computation</h2>
 
-<p>It helps to see the computation in order, because the annual exempt amount, the lifetime limit and the rate band enter at different points. The numbers are illustrative only. Take an individual disposing of the goodwill and assets of a private clinic, with a disposal dated in the 14% band (on or before 5 April 2026).</p>
+<p>It helps to see the computation in order, because the annual exempt amount, the lifetime limit and the rate enter at different points. The numbers are illustrative only. Take an individual disposing of the goodwill and assets of a private clinic, with the disposal dated now, so at the 18% BADR rate.</p>
 
 <ul>
 <li><strong>Start with the proceeds.</strong> Say the price attributable to chargeable assets and goodwill is £620,000.</li>
 <li><strong>Deduct the base cost.</strong> Broadly what was paid for or invested in the asset; for goodwill built up from scratch this may be small or nil. Suppose it is £20,000 across the assets.</li>
 <li><strong>Deduct allowable costs.</strong> Legal and accountancy costs of the sale are allowable; say £15,000. The gain so far is £620,000 less £20,000 less £15,000, which is £585,000.</li>
-<li><strong>Deduct the annual exempt amount.</strong> For 2025/26 it is £3,000, so the gain becomes £582,000. Confirm the current year's figure on gov.uk, as it has been reduced over recent years.</li>
+<li><strong>Deduct the annual exempt amount.</strong> For 2026/27 it is £3,000, so the gain becomes £582,000.</li>
 <li><strong>Apply the lifetime limit.</strong> The remaining £582,000 sits within the £1,000,000 BADR lifetime limit, assuming no prior qualifying disposals have used it up, so the whole gain qualifies for the BADR rate. If earlier disposals had already used £700,000, only £300,000 would get the BADR rate and the balance would fall to the normal CGT rate.</li>
-<li><strong>Apply the rate.</strong> £582,000 at 14% is a tax cost of £81,480. Dated from 6 April 2026 instead, the same gain at 18% would be £104,760, a difference of £23,280 driven only by the rate step.</li>
+<li><strong>Apply the rate.</strong> £582,000 at the 18% BADR rate is a tax cost of £104,760. The same gain at the 24% main rate, if the relief were not available, would be £139,680, so the relief is worth £34,920 here.</li>
 </ul>
 
 <p>The order matters, and where a gain exceeds the £1m limit, splitting it across the BADR rate (up to the limit) and the standard CGT rate (above it) is part of the same computation.</p>
@@ -196,10 +198,10 @@ faqs:
 <li>Check the two-year clock and the 5% and officer-or-employee tests early, so you are not caught short on qualification.</li>
 <li>Confirm the company's trading status, and review the balance sheet for any cash or investment build-up that could put it in doubt.</li>
 <li>Keep clear records of base cost and any improvement or capital spend, because these reduce the gain.</li>
-<li>Take advice on contract structure (conditional versus unconditional) with the 6 April 2026 step in mind, so the disposal date falls where you intend.</li>
+<li>Take advice on contract structure (conditional versus unconditional) before exchange, so the disposal is dated in the tax year you intend and reported on the right return.</li>
 <li>Work out how much of the £1 million lifetime BADR limit you have already used on earlier disposals.</li>
 </ul>
 
 <h2>How we help doctors selling a private practice</h2>
 
-<p>We advise doctors selling genuinely private practices and private companies: computing the gain, confirming whether the BADR conditions are met, checking the two-year clock and the share and role tests, and reviewing trading status before a sale. Where the 6 April 2026 rate step is in play, we work through the contract-timing position with you so a deal that is happening anyway lands on the right side of the date. We also keep the NHS boundary clean, so nobody assumes a relief that cannot apply to an NHS list. You can read more about how we support <a href="/for-consultants">consultants</a> and <a href="/for-gps">GPs</a>, or get in touch through our <a href="/contact">contact page</a>, and browse our wider <a href="/blog/private-practice">private practice</a> guides.</p>
+<p>We advise doctors selling genuinely private practices and private companies: computing the gain, confirming whether the BADR conditions are met, checking the two-year clock and the share and role tests, and reviewing trading status before a sale. We work through the contract-timing position with you, so the disposal is dated in the tax year you expect and the gain lands on the right return. We also keep the NHS boundary clean, so nobody assumes a relief that cannot apply to an NHS list. You can read more about how we support <a href="/for-consultants">consultants</a> and <a href="/for-gps">GPs</a>, or get in touch through our <a href="/contact">contact page</a>, and browse our wider <a href="/blog/private-practice">private practice</a> guides.</p>

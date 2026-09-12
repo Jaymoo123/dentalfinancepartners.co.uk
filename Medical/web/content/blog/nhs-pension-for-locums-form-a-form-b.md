@@ -119,7 +119,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Missed pensionable months are rarely recoverable.</p>
 <p style="margin:0 0 10px;">If you are not confident your form A and form B cycle is running correctly, or you want to check you are on the right contribution tier across all your practices, a free health check will flag any gaps before they become permanent losses.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> about your locum pension position.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">tell us about your locum pension position</a> and we will match it to a specialist firm.</p>
 </div>
 
 <h2>Self-Assessment and MTD for Locums</h2>
@@ -130,7 +130,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The locum pension forms are administrative rather than difficult, but the cost of getting them wrong is high because a missed month is usually gone for good. A specialist medical accountant can run the monthly form A and form B cycle alongside your bookkeeping and Self Assessment, make sure you are paying in the right contribution tier, recover the employer element from the practices you cover, and flag any annual-allowance exposure before it becomes a charge. As your locum income grows, joining up the pension paperwork with your wider tax planning is where most of the value sits.</p>
 
-<p>If you are unsure how to set up your forms A and B, have realised you may have missed pensionable months, or are weighing up incorporation, our medical accounting team can help. <a href="/contact">Get in touch</a> for a conversation about your situation.</p>
+<p>If you are unsure how to set up your forms A and B, have realised you may have missed pensionable months, or are weighing up incorporation, a firm from our specialist partner network can help. <a href="/contact">Send an enquiry</a> and one of them will be in touch about your situation.</p>
 
 <h2>Related Reading</h2>
 

@@ -240,7 +240,7 @@ export const nhsPensionSchemePaysTool: GenericTool = {
     {
       question: "Is the NHS pension scheme good enough to justify paying an Annual Allowance charge?",
       answer:
-        "Yes for most members, which is why opting out to dodge a charge is usually the wrong fix. Asking is the NHS pension good is really asking what a pound of contribution buys. In the 2015 section it buys 1/54th of pensionable earnings a year for life, revalued at CPI plus 1.5%, with employer money at 23.7% of pensionable pay behind it. The charge is a tax on growth you have already banked. Scheme Pays spreads that charge, whereas opting out surrenders the growth itself.",
+        "Yes for most members, which is why opting out to dodge a charge is usually the wrong fix. Asking is the NHS pension good is really asking what a pound of contribution buys. In the 2015 section it buys 1/54th of pensionable earnings a year for life, revalued at CPI plus 1.5%, with 23.7% of pensionable pay credited on your behalf behind it. The charge is a tax on growth you have already banked. Scheme Pays spreads that charge, whereas opting out surrenders the growth itself.",
     },
     {
       question: "Does electing Scheme Pays reduce the NHS pension death in service lump sum?",

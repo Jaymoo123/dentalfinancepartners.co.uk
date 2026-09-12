@@ -22,14 +22,14 @@ export const nhsSuperannuationTieredContributionTool: GenericTool = {
   name: "NHS Superannuation Contribution Calculator",
   category: "NHS Pension",
   oneLiner:
-    "Pensionable pay or GP superannuable profit in, your 2026/27 tiered NHS Pension employee contribution out, plus the deemed employer figure for the Annual Allowance check.",
+    "Pensionable pay or GP superannuable profit in, your 2026/27 tiered NHS Pension employee contribution out, plus the 23.7% credited on your behalf and your net cost after tax relief.",
   embedHeight: 560,
   metaTitle: "NHS Superannuation Contribution Calculator 2026/27 | GP, Locum & Hospital Tiers",
   metaDescription:
-    "Free NHS superannuation calculator for 2026/27. Enter NHS pensionable pay or GP superannuable profit to get your tiered employee contribution, the 23.7% deemed employer contribution, and your net cost after tax relief. Covers salaried GPs, GP partners, locums and hospital doctors.",
+    "Free NHS superannuation calculator for 2026/27. Enter NHS pensionable pay or GP superannuable profit to get your tiered employee contribution, the 23.7% credited on your behalf, and your net cost after tax relief. Covers salaried GPs, GP partners, locums and hospital doctors.",
 
   intro:
-    "The NHS Pension Scheme charges a tiered employee contribution based on your total pensionable pay or superannuable profit for the year. This calculator applies the 2026/27 NHSBSA tier table, shows the deemed employer contribution (23.7%) that feeds your Annual Allowance adjusted-income test, and estimates your net cost after income-tax relief. GP partners and locums can use the result to complete Form A or Form B.",
+    "The NHS Pension Scheme charges a tiered employee contribution based on your total pensionable pay or superannuable profit for the year. This calculator applies the 2026/27 NHSBSA tier table, shows the deemed employer contribution (23.7%) credited on your behalf, and estimates your net cost after income-tax relief. GP partners and locums can use the result to complete Form A or Form B. It does not work out your Annual Allowance position: that test uses the pension input amount from your NHSBSA annual allowance statement, not these contributions.",
 
   fields: [
     {
@@ -90,7 +90,7 @@ export const nhsSuperannuationTieredContributionTool: GenericTool = {
         value: gbp(r.deemedEmployerContribution),
       },
       {
-        label: "Combined pension input proxy (for the Annual Allowance check)",
+        label: "Total contributions credited this year (not your pension input amount)",
         value: gbp(r.combinedPensionInput),
       },
       {
@@ -112,7 +112,7 @@ export const nhsSuperannuationTieredContributionTool: GenericTool = {
       note:
         "2026/27 NHSBSA tiered contribution rates (England and Wales). The tier is set by your total pensionable pay for the year and the rate applies to the whole amount, not just the slice above each threshold. " +
         roleNote +
-        " The deemed employer contribution (23.7%) is the figure to add to threshold income when checking the Annual Allowance taper (adjusted income = threshold income + deemed employer contribution). The combined pension input proxy is an approximation; your actual pension input amount is calculated separately by NHS Pensions. These are estimates, not advice.",
+        " The deemed employer contribution (23.7%) is money credited on your behalf, not a figure you use for the Annual Allowance taper. Adjusted income is threshold income plus your pension input amount for the year across all registered schemes, which for the NHS scheme is the capitalised growth in your accrued benefits and reaches you on an NHSBSA annual allowance statement. Contributions paid in are not the same number. Use the NHS Pension Annual Allowance Calculator with your statement figure to test the taper. These are estimates, not advice.",
     };
   },
 
@@ -121,9 +121,9 @@ export const nhsSuperannuationTieredContributionTool: GenericTool = {
     paragraphs: [
       "The NHS Pension Scheme uses a tiered contribution structure where the rate you pay depends on your total pensionable pay or superannuable profit for the year. Unlike income tax, the same rate applies to your whole pay, not just the slice above each threshold. For 2026/27, the tiers run from 5.2% on pay up to £13,259 through to 12.5% on pay of £67,669 and above. The NHSBSA reviews the thresholds each April alongside the pay uplift; the six contribution rates are unchanged from 2025/26, with only the pay-band thresholds uplifted by CPI.",
       "What counts as pensionable pay depends on your role. Salaried GPs and hospital doctors use their NHS pensionable pay (the contracted figure on payslips and the NHSBSA annual benefit statement). GP partners and locums pay contributions on superannuable profit, which is broadly net NHS income after practice expenses but before the superannuation deduction itself, not gross turnover or total drawings. Partners report this figure on Form B each July; locums declare per-session earnings on Form A for each practice and carry the total to Form B.",
-      "Alongside your employee contribution, the NHS makes a deemed employer contribution of 23.7% of pensionable pay (the NHSBSA rate from 1 April 2024, unchanged for 2026/27). This figure matters beyond pension funding: it is the number you add to your threshold income to work out adjusted income for the Annual Allowance taper test. If your threshold income exceeds £200,000 and your adjusted income exceeds £260,000, your Annual Allowance tapers down from £60,000 towards a £10,000 floor. Carry the deemed employer figure from this tool straight into the NHS Pension Annual Allowance Calculator.",
-      "The combined pension input proxy shown by this tool is the employee plus deemed employer contributions added together. It is an approximation only. Your actual pension input amount for Annual Allowance purposes is the capitalised growth in your defined-benefit entitlement, calculated by NHS Pensions using a standard multiplier (16x for the 2015 CARE scheme), and it can differ materially from the contributions paid. Always work from your NHSBSA pension savings statement before concluding anything about an Annual Allowance breach.",
-      "Worked example: a GP partner with superannuable profit of £120,000 in 2026/27. £120,000 sits in the top tier (£67,669 and above), so the employee rate is 12.5% on the whole amount: £120,000 x 12.5% = £15,000. The deemed employer contribution is £120,000 x 23.7% = £28,440, giving a combined pension input proxy of £43,440. As a higher-rate taxpayer the partner receives 40% income-tax relief on the £15,000 employee contribution via self-assessment, so the net cost is £15,000 x 60% = £9,000.",
+      "Alongside your employee contribution, 23.7% of pensionable pay is credited on your behalf (the NHSBSA rate from 1 April 2024, unchanged for 2026/27), of which an employer bears 14.38% and 9.4% is funded centrally. It is real money towards your benefits, but it is not a figure you put into the Annual Allowance taper test. Adjusted income is threshold income plus your pension input amount for the year across every registered scheme you belong to, and for a defined-benefit scheme such as the NHS scheme the pension input amount is the capitalised growth in your accrued benefits, not the contributions paid in. NHSBSA sends that figure on an annual allowance statement. If threshold income exceeds £200,000 and adjusted income exceeds £260,000, the Annual Allowance tapers from £60,000 towards a £10,000 floor. Take your statement figure into the NHS Pension Annual Allowance Calculator to test it.",
+      "The total credited figure shown by this tool is the employee plus deemed employer contributions added together. It is what goes into the scheme, and it is not your pension input amount. The pension input amount for Annual Allowance purposes is the capitalised growth in your defined-benefit entitlement, calculated by NHS Pensions using a standard multiplier (16x for the 2015 CARE scheme), and it can differ materially from the contributions paid. A large pay rise or a jump in pensionable service can produce a big input amount in a year when cash income barely moved, which is how doctors get caught unexpectedly. Always work from your NHSBSA pension savings statement before concluding anything about an Annual Allowance breach.",
+      "Worked example: a GP partner with superannuable profit of £120,000 in 2026/27. £120,000 sits in the top tier (£67,669 and above), so the employee rate is 12.5% on the whole amount: £120,000 x 12.5% = £15,000. The deemed employer contribution credited on their behalf is £120,000 x 23.7% = £28,440, so £43,440 in total goes into the scheme for the year. As a higher-rate taxpayer the partner receives 40% income-tax relief on the £15,000 employee contribution via self-assessment, so the net cost is £15,000 x 60% = £9,000. None of these figures is the pension input amount for the Annual Allowance; that comes from the NHSBSA statement.",
       "Employee contributions attract income-tax relief at your marginal rate. GP partners and locums claim it through self-assessment; salaried doctors normally receive it automatically because NHS payroll deducts contributions under a net-pay arrangement before tax is calculated. Note also the cliff-edge effect of the stepped structure: because the rate applies to your whole pay, a small pay rise that pushes you over a tier threshold increases the rate on everything, not just the extra slice. Pay of £67,668 attracts 10.7% (£7,240 or so), while £67,669 attracts 12.5% (£8,459), a jump of over £1,200 for £1 of extra pay.",
     ],
   },
@@ -142,12 +142,12 @@ export const nhsSuperannuationTieredContributionTool: GenericTool = {
     {
       question: "What is the deemed employer contribution and why do I care?",
       answer:
-        "It is the 23.7% of pensionable pay that the NHS contributes on your behalf (the NHSBSA rate from 1 April 2024). You never see it in your pay, but it directly affects your tax position: HMRC's Annual Allowance taper test uses adjusted income, which is your threshold income plus the deemed employer contribution. If threshold income exceeds £200,000 and adjusted income exceeds £260,000, your £60,000 Annual Allowance starts tapering towards £10,000. High-earning GPs and consultants routinely trip this test because of the deemed employer figure, so it is worth calculating even though it is not money out of your pocket.",
+        "It is the 23.7% of pensionable pay credited on your behalf (the NHSBSA rate from 1 April 2024), of which an employer bears 14.38% and 9.4% is funded centrally. You never see it in your pay, and it is worth knowing because it is a large part of what your NHS post is really worth. It is not, however, the figure HMRC's Annual Allowance taper test uses. That test compares threshold income with £200,000 and adjusted income with £260,000, and adjusted income is threshold income plus your pension input amount for the year, which for the NHS scheme is the capitalised growth in your accrued benefits shown on your NHSBSA annual allowance statement. Adding 23.7% of pay instead will give you the wrong answer in either direction.",
     },
     {
       question: "Is the combined figure my pension input amount for Annual Allowance purposes?",
       answer:
-        "No. The combined pension input proxy here is just employee plus deemed employer contributions, which is a useful rough gauge but not the official figure. For a defined-benefit scheme like the NHS Pension, the pension input amount is the capitalised growth in your accrued entitlement over the year, calculated by NHS Pensions using a 16x multiplier on the increase in annual pension. Request or check your NHSBSA pension savings statement for the real number before acting on any Annual Allowance concern.",
+        "No. The combined figure here is just employee plus deemed employer contributions, which tells you what goes into the scheme, not what HMRC measures. For a defined-benefit scheme like the NHS Pension, the pension input amount is the capitalised growth in your accrued entitlement over the year, calculated by NHS Pensions using a 16x multiplier on the increase in annual pension, and it can be far higher or lower than the contributions paid. Request or check your NHSBSA pension savings statement for the real number, then use the NHS Pension Annual Allowance Calculator, before acting on any Annual Allowance concern.",
     },
     {
       question: "How do I get tax relief on my contributions?",

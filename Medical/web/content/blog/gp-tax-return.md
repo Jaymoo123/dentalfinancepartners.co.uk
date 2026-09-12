@@ -84,7 +84,7 @@ faqs:
 <li>each partner's allocated profit share.</li>
 </ul>
 
-<p>There is no single national per-patient value, as the Global Sum and QOF point value are weighted and uplifted each year. For how this practice income is built and shared, see our <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a> and <a href="/blog/gp-partnership-profit-sharing-tax-planning">profit-sharing planning guide</a>.</p>
+<p>Both core prices are national and published: for 2026/27 the Global Sum is <strong>£130.07 per weighted patient</strong> and a QOF achievement point is <strong>£227.95</strong>, under the Statement of Financial Entitlements Directions 2026. Your share of that money differs from another partner's because the weighted patient count and the achievement differ, not because the rate does, and both rates are uplifted each April. For how this practice income is built and shared, see our <a href="/blog/gp-partnership-tax-complete-guide">GP partnership tax guide</a> and <a href="/blog/gp-partnership-profit-sharing-tax-planning">profit-sharing planning guide</a>.</p>
 
 <h3>Each Partner's Personal Return (SA100 plus SA104)</h3>
 
@@ -98,7 +98,7 @@ faqs:
 
 <p>A freelance GP locum trading as a sole trader reports turnover and allowable expenses on the <strong>self-employment pages (SA103)</strong>, and the resulting profit is taxed with Class 4 NIC alongside any other income on the SA100. A salaried GP who also picks up locum sessions or private work needs the SA103 pages on top of their PAYE income. The full mechanics are in our <a href="/blog/locum-doctor-self-assessment-filing-guide">locum doctor self-assessment filing guide</a>, and what you can deduct is set out in our <a href="/blog/locum-doctor-expenses-what-you-can-claim">locum expenses guide</a>.</p>
 
-<p>Allowable costs for self-employed GP income (wholly and exclusively for the profession) commonly include your GMC retention fee, medical defence subscription (MDU, MPS or MDDUS), BMA and relevant Royal College or specialty fees on HMRC's approved list, genuinely relevant CPD, equipment (usually via capital allowances), and business mileage between work sites at the HMRC approved rate of <strong>55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) and 25p thereafter</strong>. Home-to-first-site travel is non-deductible commuting. Our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list</a> covers the full picture, and home-working costs are in our <a href="/blog/gp-home-office-expenses-tax-relief">home office expenses guide</a>.</p>
+<p>Allowable costs for self-employed GP income (wholly and exclusively for the profession) commonly include your GMC retention fee, medical defence subscription (MDU, MPS or MDDUS), relevant Royal College or specialty fees on HMRC's approved list, your BMA subscription (relieved at 85% of the annual amount rather than in full), genuinely relevant CPD, equipment (usually via capital allowances), and business mileage between work sites at the HMRC approved rate of <strong>55p per mile for the first 10,000 business miles in 2026/27 (up from 45p on 6 April 2026) and 25p thereafter</strong>. Home-to-first-site travel is non-deductible commuting. Our <a href="/blog/gp-tax-deductions-complete-list-2026">GP tax deductions list</a> covers the full picture, and home-working costs are in our <a href="/blog/gp-home-office-expenses-tax-relief">home office expenses guide</a>.</p>
 
 <h2>Deadlines and Payments on Account</h2>
 

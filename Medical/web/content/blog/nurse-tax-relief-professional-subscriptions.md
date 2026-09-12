@@ -129,6 +129,6 @@ faqs:
 <li>A real dispute with HMRC, an underpayment nobody can explain, or a compliance check.</li>
 </ul>
 
-<p>If you are a self-employed, agency or bank nurse in one of those positions, our team can look at the whole picture rather than a single claim. <a href="/contact">Get in touch</a> and say which arrangement applies. A nurse on a single PAYE post should claim directly from HMRC instead, and this page has then done its job.</p>
+<p>If you are a self-employed, agency or bank nurse in one of those positions, a specialist firm can look at the whole picture rather than a single claim. <a href="/contact">Send an enquiry</a> and say which arrangement applies, and we will match it to one. A nurse on a single PAYE post should claim directly from HMRC instead, and this page has then done its job.</p>
 
 <p>This is general information about how the rules work, not personal advice about an individual position.</p>

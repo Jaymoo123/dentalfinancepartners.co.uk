@@ -115,9 +115,9 @@ function calcClass4NI(profit: number): number {
 
 const LOAN_THRESHOLDS: Record<StudentLoanPlan, number> = {
   none: Infinity,
-  plan1: 26_065,
-  plan2: 28_470,
-  plan4: 32_745,
+  plan1: 26_900,
+  plan2: 29_385,
+  plan4: 33_795,
 };
 
 function calcStudentLoan(income: number, plan: StudentLoanPlan): number {

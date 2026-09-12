@@ -18,7 +18,7 @@ altText: UK GP reviewing pension contribution documents and tax relief calculati
 h1: 'GP Pension Contributions Tax Relief: Complete Guide for UK Medical Professionals'
 keyTakeaways:
 - "NHS employee pension contributions are deducted under the net pay arrangement, before income tax is calculated, so GPs get relief automatically at their marginal rate with no separate Self Assessment claim."
-- "From 1 April 2026 the scheme runs six member contribution tiers from 5.2% on pensionable pay up to £13,259 rising to 12.5% on pay of £67,669 and above, with a flat 23.7% employer contribution."
+- "From 1 April 2026 the scheme runs six member contribution tiers from 5.2% on pensionable pay up to £13,259 rising to 12.5% on pay of £67,669 and above, with 23.7% of pensionable pay credited on top on the member's behalf, of which an employer bears 14.38% and the remaining 9.4% is funded centrally."
 - "The 2026/27 annual allowance is £60,000, but for the NHS defined-benefit scheme what counts is the pension input amount (the growth in your benefits), not the cash you contribute."
 - "The allowance tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor."
 - "Income routed through a limited company and taken as dividends is not NHS-pensionable, whatever the company is, and an NHS GMS or PMS contract sits with GPs, their partnership or a company whose shareholders all qualify, not a personal service company, so incorporating private work builds no NHS pension."
@@ -73,7 +73,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>12.5% on pensionable pay of £67,669 and above</li>
 </ul>
 
-<p>The tier is set on your actual pensionable pay, so a part-time GP is rated on what they actually earn, not a whole-time-equivalent figure. The <strong>employer contribution</strong> is a flat 23.7% of pensionable pay (centrally funded for most GP roles). All of these contributions receive tax relief through the net pay arrangement as described above.</p>
+<p>The tier is set on your actual pensionable pay, so a part-time GP is rated on what they actually earn, not a whole-time-equivalent figure. On top of the member tier, <strong>23.7% of pensionable pay is credited on the member's behalf</strong>, a rate that has applied since 1 April 2024. That headline figure is not what an employer pays, and the distinction matters the moment you budget a practice post. NHS Employers states that "Employers are responsible for paying 14.38 per cent of contributions, the remaining 9.4 per cent is funded centrally", with a scheme administration levy of 0.08% on top. So use <strong>14.38%</strong> in any calculation of what a practice actually bears, and 23.7% only where the point is the total credited to the member. All of these contributions receive tax relief through the net pay arrangement as described above.</p>
 
 <p>How the pensionable pay figure is set differs by role: a <strong>GP partner</strong> is tiered on their pensionable profit, a <strong>salaried GP</strong> on their pensionable salary, and a <strong>freelance locum</strong> on the income pensioned through Locum forms A and B. Getting the tier right matters, because an under-recorded tier leaves a contribution shortfall to settle later.</p>
 
@@ -115,7 +115,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Are your pension contributions working as efficiently as they could?</p>
 <p style="margin:0 0 10px;">High earners can face a charge when pension growth exceeds the annual allowance, and the taper can reduce your effective limit significantly. A free practice health check will flag your annual allowance exposure and the carry-forward headroom available from the previous three tax years.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">speak to our medical accounting team</a> to review your pension and tax position.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send an enquiry</a> and we will match it to a firm that reviews pension and tax positions for doctors.</p>
 </div>
 
 <h2>Which scheme section your contributions build</h2>

@@ -6,7 +6,7 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-11 (design port Phase 6, PORT BUILT; nothing deployed since 2026-08-26).
+Last updated: 2026-09-12 (claims-audit SERIOUS TIER remediated; nothing deployed since 2026-08-26).
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
 
@@ -1572,3 +1572,175 @@ D/E/F/H per this index, plus the two Carr-Hill frozen-page patches; (3) allied-h
 cluster wave (~10-14 pages, C2 rows 20-23; author the nurses C1 wording fence first);
 (4) /locations local-modifier build (family 2 of the Stage 0 diagnosis); (5) wave G
 ~2026-09-24; (6) owner decision unchanged: GMS/PMS corpus sweep (39 posts + 6 pages).
+
+
+## 2026-09-12 - CLAIMS AUDIT REMEDIATION: the SERIOUS TIER, closed. Nothing deployed.
+
+Owner approved the serious tier of the estate-wide claims audit on 2026-09-12. The audit's
+own verdict is the framing for this entry: `house_positions.md` is source-verified and dated,
+and the site contradicted it anyway. **This was a propagation failure, not a research failure.**
+The answers were already written down; they had not reached the pages. Everything below is a
+propagation fix, and every figure used came out of HP. No new research, no new figures.
+
+Verified at the end of the session from `Medical/web`: `npx tsc --noEmit` clean,
+`npx vitest run` **538 passed / 538**, 23 files.
+
+### Batch 1, the four that produced a WRONG ANSWER
+
+1. **BMA 85% List 3 restriction (HP section 12), missing everywhere it was named.** Corrected
+   across **6 src files and 26 content files**, ~37 mentions. The load-bearing fix is
+   `src/lib/tools/configs/doctor-expenses-tax-relief.ts`: the single "Royal college / BMA /
+   specialist society fees" input was **split into two fields**, and a new `BMA_RELIEF_FRACTION
+   = 0.85` constant now restricts the BMA line before it enters the total, so the calculator
+   hands the doctor the restricted number rather than describing the restriction in prose. That
+   field feeds a figure a doctor puts on a tax return, which is why it was treated as the
+   priority. Two "deductible in full" assertions in the same file's explainer and FAQ were
+   corrected, and its worked example 2 recomputed (allowable 3,350 to 3,312.50, relief 670 to
+   662.50; with mileage 4,450 to 4,412.50 and 890 to 882.50, all GBP). No other worked example
+   on the site added up a BMA figure. BMA mentions that are a *source of guidance* or a
+   *source of income* (the NHS Property Services/BMA standard lease, the BMA's GPC as contract
+   negotiator, BMA sessional work) were deliberately left: they are not expense claims.
+2. **Five calculators held the 2025/26 student loan thresholds.** Updated to the 2026/27
+   values already verified in-repo (Plan 1 GBP 26,900, Plan 2 GBP 29,385, Plan 4 GBP 33,795,
+   all at 9%, gov.uk rates-and-thresholds-for-employers-2026-to-2027):
+   `compute/gp-partner-drawings.ts`, `compute/salaried-doctor-take-home.ts`,
+   `compute/salaried-gp-vs-partner.ts`, `premium/configs/gp-partner-drawings-planner.ts`,
+   `premium/configs/salaried-gp-vs-partner.ts`. `compute/locum-tax.ts` was already correct and
+   is where the verified values came from.
+   **Two unit tests were PINNING the stale values and were therefore protecting the defect.**
+   Both updated to the correct figures with the derivation in the comment, neither weakened:
+   `salaried-gp-vs-partner.test.ts` (5537.70/7337.70 to 5455.35/7255.35) and
+   `medical-tools.test.ts` gp-partner-drawings plan2 (2837.70 to 2755.35). `content/resources/
+   locum.md` already published the size of the error (GBP 75 to GBP 95 a year) and already
+   carried the 2026/27 figures, so the resource page and the five tools now agree.
+3. **The consultant taper calculator used the wrong method and asserted authority for it.**
+   It computed adjusted income as threshold income plus 23.7% of pensionable pay. Per HP
+   section 2.B and FA 2004 s.228ZA the measure for a DB scheme is the **pension input amount**,
+   and `compute/nhs-pension.ts` and `/nhs-pension` already did it correctly.
+   `compute/consultant-private-vs-nhs.ts` now takes a `pensionInputAmount` input and adds that;
+   both the free and premium configs gained a "Pension input amount for the year" field
+   pointing at the NHSBSA annual allowance statement. The sentence claiming the correct method
+   "understates adjusted income and may give you false reassurance" is **deleted**. Worked
+   example rebuilt around a clearly labelled GBP 35,000 assumed input amount: adjusted 270,000,
+   AA 55,000, AA reduction 5,000, charge impact 2,250, total cost 9,300, net 5,700, EMR 62.0%.
+   Golden tests re-pinned, plus a **new guard that asserts the METHOD**, not just the number
+   (`adjustedIncomeWith` must be 270,000 and must NOT equal 235,000 + 150,000 * 0.237).
+4. **`gp-partner-vs-salaried-gp-tax-comparison.md` Class 1 NIC on GBP 80,000.** GBP 2,994 was
+   wrong; correct is **GBP 3,610.60** (8% on 37,700 = 3,016, plus 2% on 29,730 = 594.60).
+   Class 4 restated precisely at GBP 2,856.60. **The conclusion was revisited, not just the
+   figure**: the page said the NI difference was "small" and "GBP 138", which the error
+   produced. The real gap is **GBP 754**, entirely from the 8%-vs-6% main-rate band, converging
+   above 50,270. Six further passages carrying the "modest difference" verdict were rewritten
+   (keyTakeaway, two FAQs, the Class 4 section, the higher-income section, the conclusion), and
+   the page notes the previous figure was wrong. Example retagged 2025/26 to 2026/27 (rates
+   unchanged).
+
+### Batch 2, widest reach
+
+5. **14 pages denied a national Global Sum value.** All corrected to **GBP 130.07 per weighted
+   patient, 2026/27**, SFE Directions 2026 para 3(4) (HP section 3.A), with the **GBP 2.18
+   London Adjustment** added on the London page. 18 passages across 14 files, including four in
+   frontmatter. One extra offender found beyond the brief
+   (`gp-partnership-mutual-assessment-period-what-to-check.md:113`). The legitimate underlying
+   point survives in every rewrite: the **weighted patient count** varies practice to practice,
+   the **price does not**. Where a page also denied a national QOF point value it now carries
+   **GBP 227.95** (HP section 3.B).
+   **JUDGMENT CALL, and it stands: `gp-accountant-edinburgh.md` did NOT get the figure.**
+   HP section 3.A is England (the English GMS SFE). Asserting GBP 130.07 to Lothian GPs would
+   be wrong. The denial was removed and the page now points at the Scottish contract documents,
+   with no figure stated. Flagged for the owner in case he wants it revisited.
+   Also corrected in passing: **two wrong Carr-Hill paraphrases** (the "age, sex, morbidity,
+   list turnover and geography" form HP flags as wrong) in `gp-accounting-guide.md` and
+   `gp-partnership-tax-complete-guide.md`, both now the six SFE factors.
+6. **The payroll page told GP practices they could claim the Employment Allowance, three
+   times.** `content/blog/gp-payroll-services.md` keyTakeaway, FAQ and body all rewritten to
+   HP section 8.A: a typical NHS GP practice **cannot** claim, wholly-or-mainly test at 50% or
+   more, NIM06530 verbatim, the independent-pharmacy contrast, NICA 2014 s.2(1) to (2), the
+   charity exception, and a separate PCN company or federation as a question to answer on its
+   own facts. No GBP 10,500 is netted off anywhere on that page.
+   **`arrs-reimbursement-employing-pcn-staff-tax.md` was already fully correct** on this and was
+   left. Every other Employment Allowance hit (~20) is a doctor's **private-practice company**,
+   not a GP practice, and is correct as written; each was checked individually and left.
+7. **23.7% as an employer COST.** Corrected in `gp-pension-contributions-tax-relief.md` (x2),
+   `src/lib/medical-guides-data.ts` (x3), `src/app/for-locum-doctors/page.tsx`,
+   `src/lib/tools/configs/nhs-pension-scheme-pays.ts`, all now carrying the HP section 2.C
+   split: 23.7% credited on the member's behalf, **of which an employer bears 14.38% and 9.4%
+   is funded centrally**, plus the 0.08% levy. **The ARRS worked example was already right**
+   (50,000 x 14.38% = 7,190, not 11,850) and was left. All opting-out and refund usages are
+   correctly 23.7% per the HP rule and were left.
+8. **BADR planned around 6 April 2026 as a future date.** That date has passed.
+   `selling-private-medical-practice-cgt-badr.md` rewritten from a countdown into current-state
+   advice: **18% is the live rate**, 14% and 10% are bands for earlier disposals only. The
+   entire "6 April 2026 rate step as a timing lever" section became "The contract date decides
+   everything: TCGA 1992 section 28", **keeping all the s.28(1)/s.28(2) technical content**,
+   which is still correct and still useful because it fixes which tax YEAR a disposal falls in.
+   Every "sell before the date" instruction is gone. The page's arithmetic was re-anchored on
+   the live saving (18% vs the 24% main rate: GBP 1m gain 180,000 vs 240,000, saving 60,000;
+   the 582,000 computation now 104,760 vs 139,680, relief worth 34,920). The GBP 1m lifetime
+   limit is now cited to TCGA 1992 s.169N per HP. The other ~20 BADR pages were checked and
+   were already correct in the present tense.
+
+### Batch 3, claims and promises
+
+9. **"Free consultation" copy overpromised partner-firm behaviour, and it was larger than
+   recorded.** We route an enquiry to an independent regulated firm and do not set that firm's
+   fees, so a free call was never ours to promise. Per the owner's ruling the replacement
+   language was taken from what `src/app/about/page.tsx` and `src/app/terms/page.tsx` already
+   say ("We are not the firm that files your return... what that firm charges is a matter for
+   them"; "No accountant-client relationship is created"). ~60 strings across CTA labels, hero
+   panels, the whole booking flow (`/book`, `/complete`, `/thank-you`, `BookingPicker`,
+   `DetailsForm`), the assistant opener, the support FAQ, `lead-nurture.ts` and `aux-cron.ts`.
+   **`lead-nurture.ts` and `aux-cron.ts` had WORDING changed only. No cadence, trigger,
+   recipient, delay or channel was touched.**
+   **Judged TRUE and deliberately kept: every "no obligation" line** (that one IS ours to
+   promise) **and "free practice health check"**, which was verified to be our own on-site
+   wizard and is genuinely free.
+10. **The "we employ accountants" sweep, applied by rule.** ~35 further sentences where we
+    stated or implied we are an accountancy practice: "our medical accounting team", "our team
+    of qualified medical accountants", "we prepare partnership accounts, handle every partner's
+    self-assessment", "as specialist medical accountants we review locum contracts and support
+    you through the disagreement process", "we model both sides". Each rewritten so the actor is
+    the partner firm, or so the sentence describes what we actually do (publish, calculate,
+    match, route), keeping the marketing job. Not a deletion exercise, and not one replacement
+    pasted 20 times.
+11. **NHS Act s.86 relapse: one, found and fixed.**
+    `gp-limited-company-tax-benefits-drawbacks.md` stated the rule as a flat absolute in an H2
+    ("your company cannot hold an NHS contract") and again in the body. That is the exact
+    sentence form HP's 2026-08-26 correction calls "too absolute and wrong as a flat statement".
+    Both softened to the qualifying-contract-holder framing; the page's body paragraph already
+    carried the s.86(3) qualification correctly. The other ~40 occurrences all say "an
+    **ordinary personal service** company" and are correct.
+
+### FOUND BEYOND THE BRIEF, fixed, and the owner should know
+
+**The wrong taper method was not confined to the one calculator named in batch 1.** The same
+"adjusted income = threshold income + 23.7% of pensionable pay" instruction was live in the
+free and premium NHS superannuation tiered-contribution tools, the NHS pension calculator's
+explainer and FAQ, and `nhs-pension-tapered-annual-allowance-calculator.md` (keyTakeaway, two
+FAQs and three body passages). All corrected to the pension input amount from the NHSBSA
+annual allowance statement, with each surface now saying explicitly that a percentage of pay
+gives the wrong answer, and pointing at the AA calculator for the actual test.
+`NHS_DEEMED_EMPLOYER_RATE = 0.237` was **kept** (it is still the correct contribution-credited
+figure) with its comments corrected to forbid the add-back use. One test updated for a renamed
+result row, value assertions unchanged.
+
+### Deliberately NOT touched, per the brief
+
+- `local-business.ts` city address, and the GA4/CSP concern. Both already fixed and verified at
+  source. Left.
+- **"Most doctors" (62 occurrences): no blanket sweep run.** Judged individually; no instance
+  was found asserting an implied statistic, so nothing was changed.
+
+### OPEN, carried forward, NOT done in this pass
+
+- **The ~16 remaining unsourced numbers** and **the 11 other stale statutory figures** from the
+  audit's long tail. Owner scoped these as a separate later pass. Logged here, not fixed.
+- Stale year tags spotted in passing and left for that pass: CGT annual exempt amount tagged
+  "GBP 3,000 (2025/26)" in `accountant-accounting-services.md` and `gp-accountant-liverpool.md`
+  (the figure is right, the tag is stale; HP section 4.A).
+- **Owner decision, one line:** `gp-accountant-edinburgh.md` carries no Global Sum figure
+  because GBP 130.07 is the English SFE rate. Confirm that is the right call for a Scotland
+  page, or commission the Scottish figure.
+- **Call durations** ("about 20 minutes", "30-minute call") survive in the copy. Arguably also
+  the partner firm's to set, on the same logic as the fee. Not swept; owner's call.
+- Nothing here is deployed. Production still serves the pre-port design and the pre-audit copy.

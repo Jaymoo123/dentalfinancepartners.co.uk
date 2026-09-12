@@ -31,8 +31,8 @@
  *                 file used to carry (£481) had no primary source. The rule there is
  *                 explicit: no page may state a GMC fee until a human reads the
  *                 regulations. The input defaults to 0 and the reader enters their own.
- *                 up from £463; a user-editable default, CONFIRM live at
- *                 https://www.gmc-uk.org before quoting to clients.
+ *   BMA_RELIEF_FRACTION  0.85 — HMRC List 3 restricts BMA relief to 85% of the
+ *                 annual subscription. house_positions section 12.
  *
  * ponytail: compute is inline — a separate compute file would add zero reuse value
  * at this tool's complexity level.
@@ -42,6 +42,11 @@ import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { gbp } from "@accounting-network/web-shared/tools/format";
 
 // ponytail: annual-variable knobs — update each year, not baked in as magic numbers
+// HMRC List 3, "Approved professional organisations and learned societies",
+// verbatim entry: "British Medical Association (J) (tax relief restricted to
+// 85% of annual subscription)". house_positions section 12.
+const BMA_RELIEF_FRACTION = 0.85;
+
 const AMAP_RATE_1 = 0.55; // £/mile, first 10,000 miles, 2026/27
 const AMAP_RATE_2 = 0.25; // £/mile, above 10,000 miles, 2026/27
 const AMAP_THRESHOLD = 10000; // miles
@@ -103,13 +108,24 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
       step: 100,
     },
     {
-      id: "royalCollegeBma",
-      label: "Royal college / BMA / specialist society fees",
+      id: "royalCollege",
+      label: "Royal college / specialist society fees",
       type: "currency",
       default: 500,
       min: 0,
       max: 5000,
       step: 50,
+      help: "Enter your BMA subscription separately below: it has its own List 3 restriction.",
+    },
+    {
+      id: "bmaSubscription",
+      label: "BMA subscription",
+      type: "currency",
+      default: 0,
+      min: 0,
+      max: 5000,
+      step: 50,
+      help: "HMRC's List 3 restricts tax relief on the BMA subscription to 85% of the amount paid, so the calculator claims 85% of whatever you enter here.",
     },
     {
       id: "cpdCourses",
@@ -145,13 +161,19 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
     const rate = MARGINAL_RATES[String(values.marginalRate)] ?? 0.4;
     const gmcFees = Math.max(0, Number(values.gmcFees));
     const indemnity = Math.max(0, Number(values.indemnity));
-    const royalCollegeBma = Math.max(0, Number(values.royalCollegeBma));
+    const royalCollege = Math.max(0, Number(values.royalCollege));
+    const bmaSubscription = Math.max(0, Number(values.bmaSubscription));
+    // HMRC List 3: "British Medical Association (J) (tax relief restricted to
+    // 85% of annual subscription)". Claiming the full amount is a wrong number
+    // on a tax return, so the restriction is applied here, not just described.
+    const bmaAllowable = bmaSubscription * BMA_RELIEF_FRACTION;
     const cpdCourses = Math.max(0, Number(values.cpdCourses));
     const journalsEquipment = Math.max(0, Number(values.journalsEquipment));
     const businessMileage = Math.max(0, Number(values.businessMileage));
 
     const amapRelief = calcAmap(businessMileage);
-    const itemisedTotal = gmcFees + indemnity + royalCollegeBma + cpdCourses + journalsEquipment;
+    const itemisedTotal =
+      gmcFees + indemnity + royalCollege + bmaAllowable + cpdCourses + journalsEquipment;
 
     const totalAllowable = itemisedTotal + amapRelief;
     const taxRelief = totalAllowable * rate;
@@ -159,7 +181,14 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
     const rows = [
       { label: "GMC registration / retention fees", value: gbp(gmcFees) },
       { label: "Medical indemnity", value: gbp(indemnity) },
-      { label: "Royal college / BMA / specialist fees", value: gbp(royalCollegeBma) },
+      { label: "Royal college / specialist fees", value: gbp(royalCollege) },
+      {
+        label: "BMA subscription (85% allowable per HMRC List 3)",
+        value:
+          bmaSubscription > 0
+            ? `${gbp(bmaAllowable)} of ${gbp(bmaSubscription)} paid`
+            : gbp(0),
+      },
       { label: "CPD courses and conferences", value: gbp(cpdCourses) },
       { label: "Journals, textbooks and equipment", value: gbp(journalsEquipment) },
       {
@@ -189,12 +218,12 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
   explainer: {
     heading: "What expenses can doctors claim tax relief on?",
     paragraphs: [
-      "HMRC allows doctors to deduct costs that are wholly and exclusively incurred for professional purposes. The main categories are: GMC registration and annual retention fees, medical defence organisation subscriptions (MDU, MPS, MDDUS), royal college and BMA membership, CPD courses, conferences and study days directly related to your clinical practice, medical journals and textbooks, and business mileage where you are not reimbursed.",
+      "HMRC allows doctors to deduct costs that are wholly and exclusively incurred for professional purposes. The main categories are: GMC registration and annual retention fees, medical defence organisation subscriptions (MDU, MPS, MDDUS), royal college membership, BMA membership (relief on which List 3 restricts to 85% of the subscription), CPD courses, conferences and study days directly related to your clinical practice, medical journals and textbooks, and business mileage where you are not reimbursed.",
       "Salaried doctors and hospital consultants can claim relief on employee expenses by submitting a P87 to HMRC, or by including them in a self-assessment return. GP partners and locums deduct these costs directly from trading profit on the self-assessment return, which reduces both income tax and Class 4 National Insurance.",
-      "A common myth is that doctors have an HMRC flat-rate expense (often quoted as £185). They do not. HMRC's agreed flat-rate table (EIM32712) has no entry for doctors: the £185 figure belongs to ambulance staff on active service, and nurses and several allied roles get £125. Doctors instead claim their actual professional costs. GMC fees, defence body subscriptions and royal college fees are all on HMRC's approved List 3 of professional bodies, so they are deductible in full on the actual amount paid.",
+      "A common myth is that doctors have an HMRC flat-rate expense (often quoted as £185). They do not. HMRC's agreed flat-rate table (EIM32712) has no entry for doctors: the £185 figure belongs to ambulance staff on active service, and nurses and several allied roles get £125. Doctors instead claim their actual professional costs. GMC fees, defence body subscriptions and royal college fees are all on HMRC's approved List 3 of professional bodies, so they are deductible on the actual amount paid. The BMA is the exception worth knowing: its List 3 entry restricts tax relief to 85% of the annual subscription, so a doctor claiming the full amount is overclaiming.",
       "Business mileage relief uses the HMRC Approved Mileage Allowance Payment (AMAP) rates. From 6 April 2026 the car and van rate for the first 10,000 business miles rises to 55p per mile, then drops to 25p per mile above that. Salaried GPs doing home visits or travelling between sites can claim for miles not reimbursed by their employer at the approved rate.",
       "Worked example 1 (higher-rate GP): indemnity £4,000, royal college £500, CPD £1,200, 3,000 business miles at 55p per mile (£1,650). Total allowable on those four: £7,350, and tax relief at 40% is £2,940. Add your own GMC retention fee to both figures.",
-      "Worked example 2 (basic-rate salaried GP, low mileage): indemnity £2,500, BMA £250, CPD £600, no itemised mileage. Total allowable on those three: £3,350, and tax relief at 20% is £670. If mileage to home visits adds 2,000 miles (£1,100 AMAP), the allowable rises to £4,450 and relief to £890. Add your own GMC retention fee to whichever applies.",
+      "Worked example 2 (basic-rate salaried GP, low mileage): indemnity £2,500, BMA £250 (of which 85%, or £212.50, is allowable), CPD £600, no itemised mileage. Total allowable on those three: £3,312.50, and tax relief at 20% is £662.50. If mileage to home visits adds 2,000 miles (£1,100 AMAP), the allowable rises to £4,412.50 and relief to £882.50. Add your own GMC retention fee to whichever applies.",
     ],
   },
   faqs: [
@@ -206,7 +235,7 @@ export const doctorExpensesTaxReliefTool: GenericTool = {
     {
       question: "Is there an HMRC flat-rate expense for doctors?",
       answer:
-        "No. HMRC operates a flat-rate job expense scheme for many professions, but doctors are not in the agreed table (EIM32712). Nurses, midwives and several allied health roles have a £125 flat rate, and ambulance staff on active service have £185, but there is no doctors' rate. This is why the £185 figure sometimes quoted for doctors is wrong. Doctors claim their actual costs instead: GMC fees, defence body subscriptions and royal college fees are all deductible in full because those bodies are on HMRC's approved List 3.",
+        "No. HMRC operates a flat-rate job expense scheme for many professions, but doctors are not in the agreed table (EIM32712). Nurses, midwives and several allied health roles have a £125 flat rate, and ambulance staff on active service have £185, but there is no doctors' rate. This is why the £185 figure sometimes quoted for doctors is wrong. Doctors claim their actual costs instead: GMC fees, defence body subscriptions and royal college fees are all deductible because those bodies are on HMRC's approved List 3. Check the List 3 entry for each body, because some carry a restriction: the BMA's entry limits relief to 85% of the annual subscription.",
     },
     {
       question: "Is CPD tax deductible?",

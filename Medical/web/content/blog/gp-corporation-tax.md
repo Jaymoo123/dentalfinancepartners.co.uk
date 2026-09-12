@@ -99,7 +99,7 @@ faqs:
 
 <h2>Which costs reduce a medical company's corporation tax bill?</h2>
 
-<p>Costs incurred wholly and exclusively for the company's trade reduce taxable profit and so reduce your corporation tax bill. For your company they commonly include the GMC annual retention fee, medical indemnity (MDU, MPS or MDDUS), Royal College or specialty membership and BMA subscriptions where the body is on <a href="/blog/nurse-tax-relief-professional-subscriptions">HMRC's approved List 3</a>, CPD genuinely relevant to current practice, professional and accountancy fees, and the business proportion of phone, internet and a home office.</p>
+<p>Costs incurred wholly and exclusively for the company's trade reduce taxable profit and so reduce your corporation tax bill. For your company they commonly include the GMC annual retention fee, medical indemnity (MDU, MPS or MDDUS), Royal College or specialty membership and the BMA subscription where the body is on <a href="/blog/nurse-tax-relief-professional-subscriptions">HMRC's approved List 3</a> (the BMA's List 3 entry restricts relief to 85% of the annual subscription), CPD genuinely relevant to current practice, professional and accountancy fees, and the business proportion of phone, internet and a home office.</p>
 
 <p>Business miles you drive between work sites can be reimbursed at HMRC's approved rates, which rose on 6 April 2026 to <strong>55p per mile for the first 10,000 business miles</strong> and 25p a mile after that for 2026/27. Travel from home to your first site of the day is ordinary commuting and is not allowable.</p>
 

@@ -16,13 +16,14 @@
  *   - Class 4 NI: 6% on £12,570-£50,270, 2% above.
  *   - AA taper: BOTH threshold > £200k AND adjusted > £260k must hold.
  *     Reduction = (adjusted - £260k) / 2, floor £10,000.
- *   - Adjusted income = threshold income + deemed employer NHS contribution.
- *     NOT threshold + growth (tool 1 simplification -- must NOT be reused here).
- *
- * NHS_DEEMED_EMPLOYER_RATE imported from nhs-super-tiers.ts (calibration knob).
+ *   - Adjusted income = threshold income + the TOTAL pension input amount
+ *     (FA 2004 s.228ZA). For a defined-benefit scheme that is the capitalised
+ *     growth in the year, which the member reads off their annual allowance
+ *     statement. Corrected 2026-09-12: this library previously added
+ *     23.7% of NHS pensionable pay instead, which is the scheme's total
+ *     contribution rate and not the statutory measure. compute/nhs-pension.ts
+ *     has always used the pension input amount; the two now agree.
  */
-
-import { NHS_DEEMED_EMPLOYER_RATE } from "./nhs-super-tiers";
 
 // ── 2026/27 income-tax constants ──────────────────────────────────────────────
 const PA_FULL = 12_570;
@@ -43,6 +44,11 @@ const ADJUSTED_LIMIT = 260_000;
 
 export type ConsultantPrivateVsNhsInput = {
   nhsPensionablePay: number;
+  /**
+   * Pension input amount for the year across all registered schemes, from the
+   * annual allowance statement. This is what adjusted income adds back.
+   */
+  pensionInputAmount: number;
   existingPrivateIncome: number;
   extraSessionValue: number;
   otherIncome: number;
@@ -71,7 +77,8 @@ export type ConsultantPrivateVsNhsResult = {
   thresholdWith: number;
   adjustedIncomeWith: number;
 
-  deemedEmployer: number;
+  /** Echoed back so the UI can show what was added to reach adjusted income. */
+  pensionInputAmount: number;
 };
 
 /** Personal allowance after taper. Fully gone at £125,140. */
@@ -131,21 +138,20 @@ export function calcConsultantPrivateVsNhs(
 ): ConsultantPrivateVsNhsResult {
   const {
     nhsPensionablePay,
+    pensionInputAmount,
     existingPrivateIncome,
     extraSessionValue,
     otherIncome,
   } = input;
 
-  const deemedEmployer = nhsPensionablePay * NHS_DEEMED_EMPLOYER_RATE;
-
   // WITHOUT extra session
   const thresholdBase = nhsPensionablePay + existingPrivateIncome + otherIncome;
-  const adjustedIncomeBase = thresholdBase + deemedEmployer;
+  const adjustedIncomeBase = thresholdBase + pensionInputAmount;
   const aaBase = calcAA(thresholdBase, adjustedIncomeBase);
 
   // WITH extra session
   const thresholdWith = thresholdBase + extraSessionValue;
-  const adjustedIncomeWith = thresholdWith + deemedEmployer;
+  const adjustedIncomeWith = thresholdWith + pensionInputAmount;
   const aaWith = calcAA(thresholdWith, adjustedIncomeWith);
 
   const aaTapered = aaWith < aaBase;
@@ -187,6 +193,6 @@ export function calcConsultantPrivateVsNhs(
     adjustedIncomeBase,
     thresholdWith,
     adjustedIncomeWith,
-    deemedEmployer,
+    pensionInputAmount,
   };
 }

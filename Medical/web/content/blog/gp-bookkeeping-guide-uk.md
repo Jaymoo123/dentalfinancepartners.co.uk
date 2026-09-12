@@ -86,7 +86,7 @@ faqs:
 <ul>
 <li><strong>Staff costs.</strong> Usually the largest line: employed staff salaries, employer National Insurance, employer pension contributions and any agency cover. Remember partner drawings and profit share sit outside this entirely, they are distributions of profit, not staff costs.</li>
 <li><strong>Premises costs.</strong> Rent (shown separately where it is paid to partner landlords), rates, utilities, repairs, and the treatment of any owned building.</li>
-<li><strong>Professional and clinical costs.</strong> GMC retention fees, indemnity subscriptions (MDU, MPS or MDDUS), BMA and Royal College membership where on HMRC's approved List 3, and CPD relevant to current practice. A medical-specific point: NHS GP clinical negligence has been state-indemnified through CNSGP since 1 April 2019, so partners' own paid indemnity is now mainly for private, non-clinical or regulatory cover.</li>
+<li><strong>Professional and clinical costs.</strong> GMC retention fees, indemnity subscriptions (MDU, MPS or MDDUS), Royal College membership where on HMRC's approved List 3, BMA membership (also on List 3, with relief restricted to 85% of the subscription), and CPD relevant to current practice. A medical-specific point: NHS GP clinical negligence has been state-indemnified through CNSGP since 1 April 2019, so partners' own paid indemnity is now mainly for private, non-clinical or regulatory cover.</li>
 <li><strong>Equipment.</strong> Clinical and IT equipment is normally relieved through capital allowances (the Annual Investment Allowance gives 100% relief up to £1,000,000), not booked as a simple expense.</li>
 </ul>
 

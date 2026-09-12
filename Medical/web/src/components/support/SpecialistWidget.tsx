@@ -23,7 +23,7 @@
  * blog ExitIntentModal, which is retired and deleted, so the write is a
  * harmless no-op kept for any future exit surface.
  *
- * Chip: "Book a free call" -> /contact (no /book path on Medical).
+ * Chip: "Speak to a specialist" -> /contact (no /book path on Medical).
  * Widget capture: email + message via email_only captureMode through submitMedicalLead.
  * Consent: uses siteConfig.leadConsentText (the partner-network-aware line; the widget
  *   IS an enquiry, so this is correct; no partner firm named in copy beyond that line).
@@ -428,7 +428,7 @@ export function SpecialistWidget() {
                   onClick={() => onChip("call")}
                   className="inline-flex items-center rounded-xl bg-white px-3 py-3 text-sm font-medium text-slate-900 ring-1 ring-[var(--brand-primary)]/30 hover:bg-[var(--copper-soft)]"
                 >
-                  Book a free call
+                  Speak to a specialist
                 </a>
               </div>
             ) : null}
