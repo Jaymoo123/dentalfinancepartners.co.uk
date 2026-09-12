@@ -249,3 +249,70 @@ Project is still NAMED `contractor-finance-partners` (cosmetic).
 | `web_events` | "21 rows" (launch-day figure) | **5,427** |
 | Build size | "153 pages" | **UNVERIFIED at HEAD**; the phase 0 link floor crawled **157 URLs** at SHA `18b4f25f` |
 | Port status | no pickup block at all | see the PICKUP block at the top |
+
+## Port pickup block (2026-09-12, end of session)
+
+**Git is the authority for what is built. Re-derive before planning:**
+```
+git tag -l 'port-*'
+git log --oneline -20 -- contractors-ir35/
+git status --porcelain docs/contractors-ir35/
+python scripts/port_preflight.py
+```
+
+Derived state at close of 2026-09-12:
+
+| Item | State |
+|---|---|
+| Phase 0 (baseline + claims audit) | COMPLETE, serious tier fixed and committed |
+| Phase 1 (chrome) | BUILT, REVIEWED, GAP-FIXED, TAGGED `port-contractors-ir35-phase1` |
+| Phase 2 (blog subsystem) | BUILT and COMMITTED (`e3d0ff7d`), **NOT TAGGED, REVIEW NOT COMPLETE** |
+| Phases 3 to 6 | NOT STARTED. Plan and packages in `_port/PHASE_PLAN.md`; the 14 template-less routes already have recorded anatomies in `_port/P3_ROUTE_ANATOMIES.md` |
+| Pushed | NO. main is ahead of origin |
+| Deployed | NO. Production still serves `18b4f25f` |
+
+**THE ONE OUTSTANDING PIECE OF WORK, and do not skip it:** the phase 2 adversarial
+fidelity review (P2-8) was launched and STOPPED PART-WAY at the owner's end of session.
+Its report was never written, so `_port/P2-8_FIDELITY_REVIEW.md` does not exist and phase 2
+is unreviewed and untagged. Its brief is reconstructable from `PHASE_PLAN.md` §H. Its FIRST
+job is triaging **209 contrast findings** from `browser_check.mjs` on the current build.
+Known at the moment it stopped: 0 overflow findings, 0 anchor findings, instrument
+self-test passed, 0 unparseable colours, so the var() fallback failure mode is NOT in play.
+Its last words were "Methods disagree. Let me settle it by looking at the actual rendered
+pixels", so treat any partial conclusion as unsettled and re-derive.
+Suspected real: `a "Run the numbers"` reported at 1.38 with colour cyan-800, which measures
+7.27 on white, so the ground is either genuinely dark or unresolvable. Suspected false:
+the honeypot `label "Leave blank"` at 1.00, and the homepage hero over its dark gradient.
+
+**Verification standing at close** (build newer than every source edit, BUILD_ID 23:00:41
+against newest source 22:57:47): `next build` exit 0, vitest 448/448, tsc and eslint clean,
+sweep 154/154 URLs clean with 0 dead links, 0 link-floor breaches, 0 data-cta regressions,
+0 dash regressions, internal links 3260, data-cta 433.
+
+**Servers: none. All killed at close, verified with `netstat`.** Nine scratch `.mjs` files a
+stopped agent left in `contractors-ir35/web/` were deleted; the tree is clean.
+
+### Owner decisions open at close (bundle these, do not drip)
+1. The shared header fix. A cascade collision in `packages/web-shared` means the header CTA
+   never hides, so CTA and burger both render below 1024px and the wordmark wraps at 390px.
+   **Property reproduces it**, confirmed in its own built CSS byte order, so the estate-wide
+   chrome fix recorded as landing 2026-08-23 never took effect anywhere. Fixed site-locally
+   here; the durable fix crosses 18 sites.
+2. The timed promise in `packages/web-shared/leads/MiniCapture.tsx:627,707`, under six mounts
+   on this site. The only timed promise still reaching users here.
+3. ZeroBounce receives enquirer emails from the live submit path (`src/lib/leads/verify.ts`)
+   and is not disclosed in the privacy policy.
+4. Both umbrella workbooks cite an "HMRC list" of compliant umbrellas that does not exist.
+   Owner ruled out spending time on the downloadable files, so this is report-only.
+5. Property's own `niche.config.json` description publishes "Fixed fees, 24hr response", a fee
+   claim and a turnaround promise, rendering in its footer and JSON-LD on every page.
+6. The 6 design gates in `DESIGN_DELTA.md` §8 (wordmark icon and lockup among them).
+7. The 21 OWNER DECISION rows in `_port/P0C2_CLAIMS_LEDGER.md`. Phase 6 packages P5-1 and
+   P6-1 are blocked on these.
+8. `/embed/[slug]` ships full site chrome and 24 internal links inside third-party iframes.
+
+### Owner rulings already taken this session, do not re-ask
+- "Free call" STAYS. Property uses free consultation and free review call in 61 places.
+- Do not spend time fixing the downloadable workbooks.
+- Site selection: contractors-ir35 was chosen over the two pre-launch sites.
+

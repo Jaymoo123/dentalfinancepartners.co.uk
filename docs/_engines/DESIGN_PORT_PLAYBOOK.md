@@ -2,9 +2,17 @@
 
 ## STOP. Read this screen before anything else. (2026-09-12)
 
-Five sites are ported (generalist, solicitors, dentists, medical, construction-cis),
-all six phases, tagged, NOT pushed, NOT deployed. Twelve remain. Follow the
-**generalist** flow; it is the one that went well.
+Five sites are ported (generalist, solicitors, dentists, medical, construction-cis), all six
+phases, tagged. A sixth, contractors-ir35, is PART-WAY: phase 0 and phase 1 complete and
+tagged, phase 2 built and committed but NOT tagged and NOT reviewed. NOTHING on any site is
+pushed or deployed. Eleven sites remain untouched. Follow the **generalist** flow; it is the
+one that went well.
+
+**Read section 11 of PORT_FIELD_NOTES.md before the next port.** It carries an estate-wide
+defect: the header chrome fix recorded as shipped 2026-08-23 never took effect on ANY site,
+Property included, because two competing `display` utilities in one class string are a cascade
+race and the loser is silent. Every ported site renders its header CTA and burger together
+below 1024px.
 
 **PREFLIGHT, before you measure anything:**
 ```bash

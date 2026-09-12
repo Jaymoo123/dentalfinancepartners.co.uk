@@ -1092,3 +1092,107 @@ RULE: write the phase's package list down before launch and tick it off at close
 receipt per package. A package is not complete because you remember launching it. Cap
 concurrent agents at 6 and state in every brief whether that agent may delegate; the default
 line is "Do NOT launch subagents." Playbook T39.
+
+---
+
+## 11. What the contractors-ir35 port taught (2026-09-12)
+
+**THE BIG ONE, estate-wide: a chrome fix recorded as shipped on 2026-08-23 never took effect on
+any site, including Property.** `packages/web-shared/design/chrome/SiteHeader.tsx:473` composes
+`{btnPrimary} hidden ... lg:inline-flex`, and `btnPrimary` (`design/layout-utils.ts:30`) OPENS
+with `inline-flex`. In the emitted stylesheet `.inline-flex` sits AFTER `.hidden`, so `hidden` is
+a dead no-op and the header CTA never hides at any width. Both classes are present in the class
+list, which is exactly why source review, diff review and every test pass it.
+Measured on contractors-ir35: pre-port the CTA/burger overlap ran 0-767px; the port WIDENED it to
+0-1023px while its own phase 1 commit claimed the dead zone was fixed. Wordmark wraps to 119x62
+at 390px. Property reproduces it: byte-identical string at
+`Property/web/src/components/layout/SiteHeader.tsx:310`, its own `btnPrimary` also opens
+`inline-flex`, and its built CSS has `.hidden` at 14722 and `.inline-flex` at 14801.
+Deriving command, run on any ported site: compare the byte offset of `.hidden{display:none}`
+against `.inline-flex{display:inline-flex}` in `<site>/web/.next/static/css/*.css`.
+RULE: when a utility is supposed to hide something, verify it in the BUILT CSS ORDER, not in the
+class list. Two competing `display` utilities in one class string is a cascade race and the loser
+is silent. Site-local fix used here: a layered rule keyed on the CTA data attributes, specificity
+0,2,2 inside `@layer utilities`, so it does not depend on source order. The durable fix is in
+web-shared and crosses 18 sites, so it is an owner decision (trap 12).
+
+**A site can be missing `@source` for web-shared, and then NONE of the kit utilities exist.**
+`contractors-ir35/web/src/app/globals.css` had no `@source "../../../../packages/web-shared"`.
+`source("..")` narrows the scan to `src/`, and web-shared resolves through a node_modules symlink
+Tailwind skips. Phase 1 adopted three kit components wholesale and none of their utilities were
+generated at all. A Tailwind class naming a token that does not exist does not error, it silently
+produces nothing, so the header, footer and breadcrumb would have shipped unstyled with every
+test green. The missing `primary-*` ramp was only the visible tip.
+Deriving command: `grep -c "primary-600" <site>/web/.next/static/css/*.css` must be >= 1 after
+adopting any kit chrome. Compare `dentists/web/src/app/globals.css:3`, which has the line.
+RULE: after adopting a kit component on a site that has never used one, prove the utilities exist
+in the COMPILED output before believing anything about colour.
+
+**`sr-only` on a `<table>` does not work, and it causes horizontal overflow.** A chart
+accessibility fix added visually hidden data tables with `sr-only` on the `<table>`.
+`display: table` treats `width` as a MINIMUM, so `width: 1px` is ignored; `overflow: hidden`
+cannot clip the element's own box; and `clip: rect(0,0,0,0)` affects painting only, never the
+scroll region. The table laid out at natural content width and reached the document scroll area:
+390px viewport, `scrollWidth` 979. The wrapper variant gives 390.
+RULE: put `sr-only` on a wrapping `<div>`, never on the table. Verify
+`document.documentElement.scrollWidth <= clientWidth + 1` at 390px, and separately confirm the
+accessibility tree still exposes table, rowgroup, row and columnheader.
+
+**A figure without its scenario is not a figure. Two near-misses in one package.** A claims
+ledger recomputed a CORRECT published saving at zero expenses, declared it wrong, and an agent
+nearly republished a wrong number on it. Then the manager passed a second agent a figure from a
+different sweep (220 days, salary 6,708, zero expenses) as if it were the workbook default curve.
+Both were caught only because one number failed to reconcile with another, and the second only
+because the receiving agent REFUSED to write the line and asked for the calculation.
+RULE: every derived figure travels with its scenario or it does not travel. Reward an agent that
+refuses to write a line it cannot reconcile.
+
+**A trend claim is a defect class no figure sweep finds.** Four surfaces said the
+limited-versus-umbrella advantage WIDENS with day rate. It is non-monotonic: rises, troughs near
+480, peaks near 570, falls to 155 at 700, crosses zero near 750, both turning points being the
+100,000 personal allowance taper hitting the two routes at different rates.
+Deriving method: grep for DIRECTIONAL language, not numbers:
+`wider|widen|narrow|rate rises|high enough|relatively low|comfortably exceeds|scales|break-even`.
+RULE: sweep claims about BEHAVIOUR separately from the figures.
+
+**The config-file trap fired again, and the audit that missed it had searched the repo.**
+`niche.config.json:20` carried "Fixed fees, plain English." in the site `description`, rendering
+in the footer and the Organization JSON-LD on EVERY url while appearing in no page source. A
+phase 0 claims audit concluded the site published no pricing at all.
+RULE: grep the RENDERED HTML of a served build, not only the repo. It is the only method that
+catches copy injected from config.
+
+**Canonical inheritance: one line in a root layout excluded five route families.**
+`alternates: { canonical: siteUrl }` in `src/app/layout.tsx` is inherited by every route that does
+not override it, so about, services, contact, the IR35 hub and all 11 `/for` URLs told Google they
+were duplicates of the homepage. The brief named ONE family.
+Deriving command: `curl -s <base>/<route> | grep -o 'link rel="canonical"'` per family.
+RULE: check every route family, and check the inverse too. Two legitimate point-away cases exist
+here (embed pages, syndicated posts) and forcing self-canonicalisation would have been its own
+defect.
+
+**Undercount, five more instances, and the first OVERcounts.** Canonical: reported 1 family, was
+5. Pricing: the audit found 6 and proposed 0 edits; the re-sweep made 17 across 9 files, 11 of
+them new. Breadcrumb imports: brief said 15, was 14. Charts: brief said 9, was 8. And a ledger
+called a CORRECT saving figure wrong.
+RULE now two-sided: sweep by rule to find what a list omits, and verify the list's positives too.
+
+**Three comments described code that does not exist.** A dead component described as mounted by
+three other files; a chart claiming an accessible prose fallback that was never there; and a port
+report claiming a token broke 12 files when it has zero consumers. One of them had already cost a
+real defect its detection.
+RULE: correct a false comment in the same commit as the code it describes. A comment is a claim,
+never evidence.
+
+**Serialise builds when agents share a site directory.** Four agents running `next build` in one
+`contractors-ir35/web` produced a phantom `pages-manifest.json ENOENT` that read as a real defect.
+Fixed by banning builds in agent briefs and running ONE build at wave close, then executing every
+agent's written verification list against it. Agents returned verification lists (URL, command,
+expected result) instead of running servers, which worked well and is recommended.
+RULE: one builder of a site directory at a time, and that builder is the manager.
+
+**Prove a server's AGE, not just its identity.** A reviewer correctly rejected a server 11 minutes
+older than the working tree. The method that settles it: pick a string whose commit you know and
+diff it across servers. Here "fixed fee" is present pre-port and absent after, and `/about`
+canonicalises to the homepage pre-port and to itself after.
+RULE: assert title AND age before quoting any server.
