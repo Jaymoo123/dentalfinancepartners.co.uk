@@ -174,3 +174,61 @@ neither is a contractor tax figure:
 No LEL, no saving claim, no CT rate, no dividend rate, no IR35 figure of any kind. The
 18 sites share no tax constant through this package; `contractors-ir35` holds all of its
 own in `src/lib/calculators/tax2026.ts`.
+
+---
+
+## Appendix: the gap curve on the workbook's own default assumptions
+
+Requested by the coordinator to close `content/resources/structure.md:32`. Computed
+through `tax2026.ts`; assumptions identical to the run that reproduced £1,931.08:
+**240 billable days, salary £12,570, £6,000 company expenses charged to the limited
+route only, £1,200 umbrella margin.** Gap = limited net take-home minus umbrella net
+take-home (the £6,000 of expenses is money spent, so it is not added back).
+
+| day rate | turnover | limited net | umbrella net | **gap** |
+|---|---|---|---|---|
+| £250 | £60,000 | £41,753.65 | £40,461.30 | **£1,292.36** |
+| £350 | £84,000 | £54,820.40 | £52,513.24 | **£2,307.15** |
+| £500 | £120,000 | £71,820.95 | £69,889.87 | **£1,931.08** |
+| £600 | £144,000 | £81,427.45 | £77,785.97 | **£3,641.47** |
+
+Fuller curve on the same assumptions: £300 £2,666 | £400 £1,948 | £450 £1,589 |
+£550 £3,650 | £650 £1,945 | £700 £155 | £800 **-£160** | £1,000 **-£788** |
+£1,200 **-£1,251**.
+
+**The curve is not monotonic in either direction.** It rises to £2,666 at £300, falls
+to a trough of about £1,370 near £480, rises to a peak of about £3,800 near £570,
+then falls steeply and crosses zero at roughly £750 a day. The two turning points are
+the £100,000 personal-allowance taper: it hits the **umbrella** route first (its gross
+salary crosses £100,000 at about £480/day), which widens the gap, and the **limited**
+route second (total income crosses £100,000 at about £570/day), which closes it again.
+Above that, corporation tax plus 35.75% on dividends overtakes PAYE flattening to 2%
+employee NIC.
+
+**The £5,577 in the earlier sweep did NOT use the default assumptions, and it was not a
+low-end figure.** It was the £600/day point of a different sweep: **220 days, salary
+£6,708, £0 expenses, £1,500 margin**. The "£1,712 to £5,847" range reported earlier is
+the min and max of that sweep, not of the default scenario. On the default assumptions
+the range across £250-£1,200 is **-£1,251 to £3,801**. Stating it plainly: the earlier
+range figure was computed on non-default assumptions and should not be read as the
+workbook's curve.
+
+**The correction it motivated still holds on all three assumption sets.** "The gap
+narrows rather than widens at the highest rates" is true on the default assumptions
+(£3,641 at £600 to £155 at £700 to negative above ~£750), true at £0 expenses with the
+default salary (£5,483 at £600 to £1,479 at £1,200), and true on the original sweep
+(£5,577 to £1,766). Nothing published on the strength of it needs revisiting.
+
+**For `content/resources/structure.md` (another agent's file, reported not edited):**
+- `:32` "the gap may not cover accountant fees when the day rate is relatively low" is
+  **directionally correct at the very bottom** (£1,292 at £250, against accountant fees
+  the same file puts at £1,000-£3,000). But it is only true below about £280 a day: at
+  £300-£350 the gap is *larger* than at the £500 default, so "low rate = small gap"
+  is not a straight line and the trough is near £480, not at the bottom.
+- `:21` "At GBP600 or GBP700 per day the raw gap is substantially wider and limited
+  company wins clearly" is **false on the workbook's own default assumptions at £700**
+  (£155, which no accountant fee covers) and the sign flips negative above about £750.
+  Caveat for whoever fixes it: the flip is driven by the scenario charging £6,000 of
+  expenses to the limited route and nothing to the umbrella route. At £0 expenses the
+  limited route still wins at every rate, by £1,479 to £5,748. The tax curve narrows;
+  it is the fixed expense asymmetry that pushes it through zero.

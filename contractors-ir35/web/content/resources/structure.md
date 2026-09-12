@@ -18,7 +18,7 @@ noindex: true
 <p>The net benefit line is the limited company net take-home minus the umbrella net take-home, then minus your estimate of limited company running costs (account fees, bank account, registered office and so on). A positive net benefit means limited suits you at your rate; negative means umbrella is ahead after costs.</p>
 
 <h2 id="running-costs-matter">Running costs matter</h2>
-<p>The raw take-home gap (before fees) at a GBP500 day rate is typically GBP1,900 to GBP2,000 for 240 days. Accountant fees for a contractor limited company typically run GBP1,000 to GBP3,000 a year depending on the level of service. At GBP2,000 fees the net benefit at GBP500 per day is roughly neutral. At GBP600 or GBP700 per day the raw gap is substantially wider and limited company wins clearly.</p>
+<p>The raw take-home gap (before fees) at a GBP500 day rate is typically GBP1,900 to GBP2,000 for 240 days. Accountant fees for a contractor limited company typically run GBP1,000 to GBP3,000 a year depending on the level of service. At GBP2,000 fees the net benefit at GBP500 per day is roughly neutral. Around GBP600 per day the raw gap is at its widest and limited company wins clearly, but above that it narrows again as more of the dividend is taxed at 35.75%, so check your own rate rather than assuming a higher rate always favours limited.</p>
 <p>The model uses a GBP2,000 default for running costs. Adjust this to reflect your actual quote from an accountant, plus any bank account charges.</p>
 
 <h2 id="ir35-exposure">IR35 exposure</h2>
@@ -29,10 +29,10 @@ noindex: true
 <p>For contractors, the practical effect is that compliant FCSA or Professional Passport accredited umbrellas have become the de facto standard for agency-placed work. Non-compliant or offshore umbrella schemes carry heightened risk as the liability structure incentivises agencies to check compliance. If you are asked to accept a higher take-home via an umbrella scheme that avoids employer NIC, this is very likely a disguised remuneration arrangement carrying both income tax and penalty exposure.</p>
 
 <h2 id="when-umbrella-makes-sense">When umbrella makes sense</h2>
-<p>Umbrella is often the right structure when: the engagement is inside IR35; your day rate is relatively low (the raw take-home gap may not cover accountant fees); the work is short-term or the next engagement is uncertain; you want zero administrative overhead; or the agency requires umbrella for compliance reasons.</p>
+<p>Umbrella is often the right structure when: the engagement is inside IR35; the raw take-home gap at your own rate does not cover accountant fees (this is not a smooth relationship with the rate, so check your own number rather than assuming a low rate means a small gap); the work is short-term or the next engagement is uncertain; you want zero administrative overhead; or the agency requires umbrella for compliance reasons.</p>
 
 <h2 id="when-limited-makes-sense">When limited company makes sense</h2>
-<p>Limited company is often the right structure when: you have a genuine outside IR35 engagement with a well-documented business case for the status; your rate is high enough that the take-home gap comfortably exceeds running costs; you plan to work consistently for the medium term; you want control over timing of drawings and pension contributions; or you have other business activity that benefits from the limited structure.</p>
+<p>Limited company is often the right structure when: you have a genuine outside IR35 engagement with a well-documented business case for the status; the take-home gap at your own rate comfortably exceeds running costs; you plan to work consistently for the medium term; you want control over timing of drawings and pension contributions; or you have other business activity that benefits from the limited structure.</p>
 
 <h2 id="using-the-model">Using the model</h2>
 <p>Enter your day rate, billable days, director salary (GBP6,708, the lower earnings limit, is the usual target for a single-director PSC that cannot claim the Employment Allowance, retaining state pension entitlement for a small slice of employer NIC), allowable expenses, umbrella margin, and your estimate of annual limited company running costs. The model derives the raw gap and net benefit. Adjust any input to test the break-even point for your situation.</p>
