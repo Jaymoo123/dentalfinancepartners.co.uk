@@ -140,7 +140,7 @@ const faqs = [
   {
     question: "Is it still worth running through a limited company?",
     answer:
-      "Outside IR35, almost always yes. The tax savings versus umbrella are significant, typically £5,000–£15,000 a year depending on day rate. Inside IR35, the gap narrows but there are still advantages: pension contributions via the PSC, the small salary band, and the option to work on other contracts outside IR35. We model both for every client.",
+      "Outside IR35, almost always yes, though the gap is smaller than it is often described. Our own published model puts it at around £1,900 to £2,000 a year at £500 a day over 240 days (£6,000 of company expenses, a £1,200 umbrella margin), and at a few thousand pounds a year across most contractor day rates, before accountancy fees. Inside IR35, the gap narrows but there are still advantages: pension contributions via the PSC, the small salary band, and the option to work on other contracts outside IR35. We model both for every client.",
   },
   {
     question: "What are your fees?",

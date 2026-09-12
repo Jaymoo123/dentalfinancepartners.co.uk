@@ -771,6 +771,107 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(allText).toMatch(/24.month/i);
   });
 
+  // ---- Value assertions on the locked house-position constants -------------
+  // The spot-checks above assert the figures someone thought to check. These
+  // assert the VALUE of every locked constant the FAQ set actually publishes,
+  // so a retired figure cannot sit inside a green "house position accuracy"
+  // suite (a stale LEL of GBP6,396 did exactly that until 2026-09-12).
+
+  // Pay-planning: LEL GBP6,708 and primary threshold GBP12,570 (HP section 6, 8)
+  it("pay-planning FAQ states the 2026/27 lower earnings limit as GBP6,708, not a retired value", () => {
+    const allText = faqForTopic("pay-planning")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("GBP6,708");
+    // both currency forms the site uses: "GBP6,396" and "£6,396"
+    expect(allText).not.toContain("6,396"); // 2022/23 LEL
+  });
+
+  it("pay-planning FAQ states the primary threshold as GBP12,570 (HP section 6)", () => {
+    const allText = faqForTopic("pay-planning")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("GBP12,570");
+  });
+
+  // Pay-planning: employer NIC 15% above the GBP5,000 secondary threshold (HP section 6)
+  it("pay-planning FAQ states employer NIC at 15% above the GBP5,000 secondary threshold", () => {
+    const allText = faqForTopic("pay-planning")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("15%");
+    expect(allText).toContain("GBP5,000");
+    expect(allText).not.toContain("13.8%"); // retired employer rate
+    expect(allText).not.toContain("9,100"); // retired secondary threshold
+  });
+
+  // Pay-planning: dividend allowance GBP500 and additional rate 39.35% (HP section 5)
+  it("pay-planning FAQ states the GBP500 dividend allowance and the 39.35% additional rate", () => {
+    const allText = faqForTopic("pay-planning")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("GBP500");
+    expect(allText).toContain("39.35%");
+    expect(allText).not.toContain("8.75%"); // retired ordinary rate
+    expect(allText).not.toContain("33.75%"); // retired upper rate
+  });
+
+  // Company-tax: the CT year is FY2026, and the marginal rate is 26.5% (HP section 7)
+  it("company-tax FAQ is tagged to the financial year starting 1 April 2026", () => {
+    const allText = faqForTopic("company-tax")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("1 April 2026");
+    expect(allText).not.toContain("1 April 2025");
+  });
+
+  it("company-tax FAQ states the 26.5% figure as a marginal-pound rate, not an effective rate", () => {
+    const allText = faqForTopic("company-tax")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("26.5%");
+    expect(allText).toMatch(/marginal pound|marginal rate|on the marginal/i);
+    expect(allText).not.toMatch(/effective rate of about 26\.5/i);
+  });
+
+  // Company-tax: s.455 rate is 35.75%, never the retired 33.75% (HP section 14)
+  it("company-tax FAQ does not quote the retired 33.75% section 455 rate", () => {
+    const allText = faqForTopic("company-tax")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).not.toContain("33.75%");
+    expect(allText).toContain("GBP10,000"); // benefit-in-kind loan threshold
+  });
+
+  // Basics-expenses: AMAP 55p / first 10,000 miles, never the retired 45p (HP section 10)
+  it("basics-expenses FAQ states the first 10,000 miles and does not quote the retired 45p rate", () => {
+    const allText = faqForTopic("basics-expenses")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("10,000");
+    expect(allText).not.toContain("45p");
+  });
+
+  // IR35: PGMOL is [2024] UKSC 29, not 2023 (HP section 2, Citations index)
+  it("ir35 FAQ cites PGMOL with the correct 2024 year", () => {
+    const allText = faqForTopic("ir35")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toContain("PGMOL 2024");
+    expect(allText).not.toContain("PGMOL 2023");
+  });
+
+  // IR35: the outside-vs-umbrella saving is the model's own figure, not a
+  // five-figure claim the compute library cannot reproduce (F2, 2026-09-12).
+  it("ir35 FAQ quotes the outside-vs-umbrella gap as a few thousand, not five figures", () => {
+    const allText = faqForTopic("ir35")
+      .map((f: Faq) => f.a)
+      .join(" ");
+    expect(allText).toMatch(/few thousand/i);
+    expect(allText).toContain("GBP1,900");
+    expect(allText).not.toMatch(/£?10k\+|GBP?15,000|£15,000/);
+  });
+
   // GENERIC shape
   it("GENERIC has exactly 3 Q&As", () => {
     expect(GENERIC.length).toBe(3);

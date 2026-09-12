@@ -41,6 +41,7 @@ export async function generateMetadata({
     title: guide.title,
     description: guide.summary || undefined,
     alternates: { canonical: `${siteConfig.url}/resources/${topic}` },
+    ...(guide.frontmatter.noindex ? { robots: { index: false, follow: true } } : {}),
   };
 }
 

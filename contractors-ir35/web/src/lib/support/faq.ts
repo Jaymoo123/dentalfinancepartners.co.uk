@@ -43,11 +43,11 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
   ir35: [
     {
       q: "How much better off am I outside IR35?",
-      a: "On the same day rate, the gap is typically a few thousand pounds a year, and it widens as rates rise. The outside figure comes from paying yourself a salary and dividends from a limited company (taxed at 10.75% in the basic band from 6 April 2026, HP §5), rather than a straight PAYE salary via an umbrella. The like-for-like calculator shows your exact gap at your rate.",
+      a: "On the same day rate, the gap is typically a few thousand pounds a year: around GBP1,900 to GBP2,000 at GBP500 a day over 240 days (GBP6,000 of company expenses, a GBP1,200 umbrella margin), and it narrows rather than widens at the highest rates, because dividends above the higher-rate threshold are taxed at 35.75% on top of corporation tax. The outside figure comes from paying yourself a salary and dividends from a limited company (taxed at 10.75% in the basic band from 6 April 2026, HP §5), rather than a straight PAYE salary via an umbrella. The like-for-like calculator shows your exact gap at your rate.",
     },
     {
       q: "What decides my IR35 status?",
-      a: "The case-law whole-picture test, not the contract. The three main indicators are control (how, when and where you work), personal service and substitution (can a genuine substitute step in), and mutuality of obligation (is there an obligation to offer and accept work). Working practices outweigh contract wording every time (Ready Mixed Concrete 1968, Atholl House 2022, PGMOL 2023, HP §2).",
+      a: "The case-law whole-picture test, not the contract. The three main indicators are control (how, when and where you work), personal service and substitution (can a genuine substitute step in), and mutuality of obligation (is there an obligation to offer and accept work). Working practices outweigh contract wording every time (Ready Mixed Concrete 1968, Atholl House 2022, PGMOL 2024, HP §2).",
     },
     {
       q: "Is a CEST outside result a guarantee?",
@@ -67,7 +67,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
   "pay-planning": [
     {
       q: "What is the most tax-efficient salary for 2026/27?",
-      a: "There is no single universal answer. For a single-director company that cannot claim the Employment Allowance (EA), the choice is typically the lower earnings limit of GBP6,396 (state pension accrual only, no NIC) or the primary threshold of GBP12,570 (no employee NIC, state pension entitlement, but employer NIC of 15% above GBP5,000 applies). If your company can claim EA, a higher salary may be more efficient. Model both before deciding (HP §8, §17).",
+      a: "There is no single universal answer. For a single-director company that cannot claim the Employment Allowance (EA), the choice is typically the lower earnings limit of GBP6,708 (state pension accrual only, no employee NIC, and employer NIC of GBP256 on the GBP1,708 above the GBP5,000 secondary threshold) or the primary threshold of GBP12,570 (no employee NIC, state pension entitlement, but employer NIC of 15% above GBP5,000 applies). If your company can claim EA, a higher salary may be more efficient. Model both before deciding (HP §8, §17).",
     },
     {
       q: "How are my dividends taxed in 2026/27?",
@@ -77,7 +77,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
   "company-tax": [
     {
       q: "How much corporation tax will my company pay?",
-      a: "For the financial year starting 1 April 2025: 19% on profits up to GBP50,000 (small profits rate), 25% on profits above GBP250,000 (full rate), and marginal relief between GBP50,000 and GBP250,000 (roughly 26.5% on the marginal pound). Both thresholds are divided by the number of associated companies. The Finance Act 2026 left these rates unchanged (HP §7).",
+      a: "For the financial year starting 1 April 2026: 19% on profits up to GBP50,000 (small profits rate), 25% on profits above GBP250,000 (full rate), and marginal relief between GBP50,000 and GBP250,000 (roughly 26.5% on the marginal pound). Both thresholds are divided by the number of associated companies. The Finance Act 2026 left these rates unchanged (HP §7).",
     },
     {
       q: "What is a section 455 charge?",

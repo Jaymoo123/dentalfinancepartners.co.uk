@@ -24,8 +24,6 @@ export function BlogListWithSearch({
 }: BlogListWithSearchProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("date-desc");
-  const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 12;
 
   const filteredAndSortedPosts = useMemo(() => {
     let filtered = posts;
@@ -63,19 +61,12 @@ export function BlogListWithSearch({
     return sorted;
   }, [posts, searchQuery, sortBy, activeCategory]);
 
-  const totalPages = Math.ceil(filteredAndSortedPosts.length / postsPerPage);
-  const startIndex = (currentPage - 1) * postsPerPage;
-  const paginatedPosts = filteredAndSortedPosts.slice(startIndex, startIndex + postsPerPage);
-
-  const handleSearchChange = (query: string) => {
-    setSearchQuery(query);
-    setCurrentPage(1);
-  };
-
-  const handleSortChange = (sort: SortOption) => {
-    setSortBy(sort);
-    setCurrentPage(1);
-  };
+  // ponytail: the whole corpus renders in server HTML (no slice, no page-N
+  // state) so every article is crawlable from the index; search/sort filter the
+  // same list client-side. Add real /blog/page/N routes only if the list grows
+  // big enough to hurt page weight.
+  const handleSearchChange = (query: string) => setSearchQuery(query);
+  const handleSortChange = (sort: SortOption) => setSortBy(sort);
 
   return (
     <div>
@@ -122,7 +113,7 @@ export function BlogListWithSearch({
         </p>
       )}
 
-      {paginatedPosts.length === 0 ? (
+      {filteredAndSortedPosts.length === 0 ? (
         <div className="mt-8 border border-neutral-200 bg-[#fafaf7] p-8 text-center">
           <p className="text-base text-neutral-500">
             {searchQuery
@@ -131,9 +122,8 @@ export function BlogListWithSearch({
           </p>
         </div>
       ) : (
-        <>
-          <ul className="mt-8 space-y-4 sm:space-y-5">
-            {paginatedPosts.map((p) => {
+        <ul className="mt-8 space-y-4 sm:space-y-5">
+          {filteredAndSortedPosts.map((p) => {
               const readTime = readTimes.get(p.slug) ?? 0;
               return (
                 <li key={p.slug}>
@@ -167,34 +157,7 @@ export function BlogListWithSearch({
                 </li>
               );
             })}
-          </ul>
-
-          {totalPages > 1 && !searchQuery && (
-            <nav className="mt-8 sm:mt-12" aria-label="Pagination">
-              <div className="flex items-center justify-center gap-2 flex-wrap">
-                {currentPage > 1 && (
-                  <button
-                    onClick={() => setCurrentPage((p) => p - 1)}
-                    className="min-h-[48px] min-w-[100px] px-4 border border-neutral-300 bg-white text-neutral-900 font-medium text-sm transition-colors hover:border-cyan-700 hover:bg-cyan-50"
-                  >
-                    Previous
-                  </button>
-                )}
-                <span className="text-sm text-neutral-500 font-medium px-4 py-2">
-                  Page {currentPage} of {totalPages}
-                </span>
-                {currentPage < totalPages && (
-                  <button
-                    onClick={() => setCurrentPage((p) => p + 1)}
-                    className="min-h-[48px] min-w-[100px] px-4 border border-neutral-300 bg-white text-neutral-900 font-medium text-sm transition-colors hover:border-cyan-700 hover:bg-cyan-50"
-                  >
-                    Next
-                  </button>
-                )}
-              </div>
-            </nav>
-          )}
-        </>
+        </ul>
       )}
     </div>
   );

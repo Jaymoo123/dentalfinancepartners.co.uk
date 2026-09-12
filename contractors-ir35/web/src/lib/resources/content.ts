@@ -24,6 +24,8 @@ export interface GuideFrontmatter {
   summary?: string;
   version?: string;
   lastReviewed?: string;
+  /** Frontmatter opt-out of indexing: drives the robots meta AND the sitemap. */
+  noindex?: boolean;
 }
 
 export interface GuideHeading {
@@ -66,6 +68,7 @@ export function getGuideByTopic(topic: string): Guide | null {
       // Coerce YAML date objects to string: String(date) is safe for both string + Date.
       version: fm.version == null ? undefined : String(fm.version),
       lastReviewed: fm.lastReviewed == null ? undefined : String(fm.lastReviewed),
+      noindex: fm.noindex === true,
     },
     title: fm.title,
     summary: fm.summary ?? "",
@@ -81,5 +84,16 @@ export function getGuideByTopic(topic: string): Guide | null {
 export function publishedGuideTopicsWithFile(): string[] {
   return publishedGuideTopics().filter((t) =>
     fs.existsSync(path.join(guidesDirectory, `${t}.md`)),
+  );
+}
+
+/**
+ * The published topics whose frontmatter does NOT set `noindex: true`.
+ * The sitemap must use this; generateStaticParams must not (a noindex page is
+ * still built and served, it is just not advertised or indexed).
+ */
+export function indexableGuideTopics(): string[] {
+  return publishedGuideTopicsWithFile().filter(
+    (t) => getGuideByTopic(t)?.frontmatter.noindex !== true,
   );
 }

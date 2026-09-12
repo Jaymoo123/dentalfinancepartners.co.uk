@@ -8,6 +8,7 @@
  * tail for the provisional (indexing-lag) months.
  */
 import { monthLabel, monthLabelShort } from "@/lib/research/contractor-index";
+import { ChartDataTable } from "./ChartDataTable";
 
 type MonthlyRow = Record<string, number | string> & { month: string };
 type AnnualRow = Record<string, number> & { year: number };
@@ -57,10 +58,16 @@ export function AnnualIncorporationsChart({
   const ticks = Array.from({ length: yTicks + 1 }, (_, i) => (maxV / yTicks) * i);
 
   return (
+    <>
+    <ChartDataTable
+      caption="Annual IT consultancy company incorporations by year"
+      columns={["Year", "New companies"]}
+      rows={data.map((d) => [d.year, d.value.toLocaleString("en-GB")])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="Annual IT consultancy company incorporations by year"
+      aria-hidden="true"
+      focusable="false"
       className="h-[280px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -97,6 +104,7 @@ export function AnnualIncorporationsChart({
         );
       })}
     </svg>
+    </>
   );
 }
 
@@ -162,10 +170,20 @@ export function MonthlyIncorporationsChart({
   const labelEvery = Math.max(1, Math.ceil(n / 10));
 
   return (
+    <>
+    <ChartDataTable
+      caption="Monthly IT consultancy company incorporations over time"
+      columns={["Month", "New companies", "Status"]}
+      rows={pts.map((p) => [
+        monthLabel(p.month),
+        p.value.toLocaleString("en-GB"),
+        p.prov ? "Provisional" : "Settled",
+      ])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="Monthly IT consultancy company incorporations over time"
+      aria-hidden="true"
+      focusable="false"
       className="h-[280px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -217,14 +235,15 @@ export function MonthlyIncorporationsChart({
         ) : null
       )}
 
-      {/* Accessible data table fallback is provided in prose on the page; the
-          title elements below give per-point hover values. */}
+      {/* Accessible values live in the sr-only ChartDataTable above; the title
+          elements below give sighted users per-point hover values. */}
       {pts.map((p, i) => (
         <circle key={`pt-${p.month}`} cx={x(i)} cy={y(p.value)} r={6} fill="transparent">
           <title>{`${monthLabel(p.month)}: ${p.value.toLocaleString("en-GB")}${p.prov ? " (provisional)" : ""}`}</title>
         </circle>
       ))}
     </svg>
+    </>
   );
 }
 
@@ -267,10 +286,20 @@ export function ReformOverlayChart({
   };
 
   return (
+    <>
+    <ChartDataTable
+      caption="All-contractor company formations by year, with off-payroll reform dates marked"
+      columns={["Year", "New contractor-sector companies", "Off-payroll reform"]}
+      rows={data.map((d) => [
+        String(d.year),
+        d.value.toLocaleString("en-GB"),
+        reformYears.find((r) => r.year === d.year)?.label ?? "",
+      ])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="All-contractor company formations by year, with off-payroll reform dates marked"
+      aria-hidden="true"
+      focusable="false"
       className="h-[300px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -327,5 +356,6 @@ export function ReformOverlayChart({
         );
       })}
     </svg>
+    </>
   );
 }

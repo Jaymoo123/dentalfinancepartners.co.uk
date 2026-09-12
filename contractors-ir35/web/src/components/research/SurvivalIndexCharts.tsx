@@ -5,6 +5,7 @@
  * client runtime), matching the pattern in ContractorIndexCharts.tsx.
  */
 import type { SurvivalCohortRow } from "@/lib/research/contractor-survival-index";
+import { ChartDataTable } from "./ChartDataTable";
 
 const CYAN = "#0e7490"; // cyan-700, contractor series
 const NEUTRAL = "#a3a3a3"; // neutral-400, all-industries comparator
@@ -54,11 +55,23 @@ export function SurvivalCurveChart({ cohort }: { cohort: SurvivalCohortRow }) {
   const lastContractor = contractorPts.at(-1);
   const lastAllInd = allIndPts.at(-1);
 
+  const pct = (v: number | null) => (v === null ? "no data" : `${v.toFixed(1)}%`);
+
   return (
+    <>
+    <ChartDataTable
+      caption={`Survival curve: contractor SIC groups vs all industries, ${cohort.birth_year} birth cohort`}
+      columns={["Years since incorporation", "Contractor SIC groups still active", "All industries still active"]}
+      rows={years.map((yr) => [
+        yr === 0 ? "Birth" : `Year ${yr}`,
+        pct(yr === 0 ? 100 : cohort.contractor[`y${yr}_pct` as const]),
+        pct(yr === 0 ? 100 : cohort.all_industries[`y${yr}_pct` as const]),
+      ])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="Survival curve: contractor SIC groups vs all industries"
+      aria-hidden="true"
+      focusable="false"
       className="h-[280px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -102,6 +115,7 @@ export function SurvivalCurveChart({ cohort }: { cohort: SurvivalCohortRow }) {
         </text>
       )}
     </svg>
+    </>
   );
 }
 
@@ -135,10 +149,16 @@ export function OneYearTrendChart({ cohorts }: { cohorts: SurvivalCohortRow[] })
   const yTicks = [80, 85, 90, 95, 100];
 
   return (
+    <>
+    <ChartDataTable
+      caption="1-year survival rate by birth-year cohort, contractor SIC groups"
+      columns={["Birth-year cohort", "Survived 1 year"]}
+      rows={data.map((d) => [d.year, `${d.value.toFixed(1)}%`])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="1-year survival rate by birth-year cohort, contractor SIC groups"
+      aria-hidden="true"
+      focusable="false"
       className="h-[240px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -169,5 +189,6 @@ export function OneYearTrendChart({ cohorts }: { cohorts: SurvivalCohortRow[] })
         );
       })}
     </svg>
+    </>
   );
 }

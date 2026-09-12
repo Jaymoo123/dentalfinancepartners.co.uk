@@ -125,7 +125,7 @@ faqs:
 
 <p>A high-profit year creates a corporation-tax bill. If the company retains profit rather than distributing it as salary or dividend, that profit is charged to corporation tax at 19 to 26.5 per cent depending on the profit level and any marginal-relief interaction.</p>
 
-<p>An employer pension contribution is deductible against the company's profit before corporation tax is calculated. A £60,000 contribution on a £100,000 profit reduces the taxable profit to £40,000, saving corporation tax of £11,400 (at 19 per cent) up to £15,900 (at 26.5 per cent) depending on where the profit sits in the marginal band.</p>
+<p>An employer pension contribution is deductible against the company's profit before corporation tax is calculated. A £60,000 contribution on a £100,000 profit reduces the taxable profit to £40,000, cutting the corporation tax bill from £22,750 to £7,600, a saving of £15,150: most of the £60,000 slice removed sits in the marginal-relief band above £50,000, and only the last £10,000 of it comes off at the small-profits rate.</p>
 
 <p>The contribution is also not taxed as income on the director in the year it is paid in (subject to the annual allowance), and the pension pot then grows in a tax-advantaged environment until retirement.</p>
 
@@ -155,9 +155,9 @@ faqs:
 
 <p>An employer pension contribution affects the company's bottom line and so the profit available for dividends. A £60,000 contribution reduces the company's taxable profit by £60,000 and also reduces the post-tax profit available for extraction, because it is paid before corporation tax is calculated. The wider interaction of dividends with corporation tax is covered in our <a href="/blog/pension-and-dividends/contractor-pension-employer-contributions">contractor pension employer-contribution guide</a>.</p>
 
-<p>Take a company with profit of £100,000. A £60,000 employer contribution leaves £40,000 of taxable profit. Corporation tax at 19 per cent is £7,600, leaving £32,400 of post-tax profit. A dividend of that £32,400 attracts dividend tax at 10.75 per cent (2026/27) of £3,483, leaving £28,917 in the director's hands, while the £60,000 sits in the pension.</p>
+<p>Take a company with profit of £100,000. A £60,000 employer contribution leaves £40,000 of taxable profit. Corporation tax at 19 per cent is £7,600 (the £40,000 is at or below the £50,000 small-profits limit), leaving £32,400 of post-tax profit. A dividend of that £32,400, with the £12,570 personal allowance and the £500 dividend allowance applied first and no other income, attracts dividend tax of £2,078, leaving £30,322 in the director's hands, while the £60,000 sits in the pension.</p>
 
-<p>If instead the whole £100,000 were taken as dividend, the company would pay corporation tax at 19 per cent (£19,000), and dividend tax at 10.75 per cent on the £81,000 distributed would be £8,708, leaving £72,292. No pension contribution is made.</p>
+<p>If instead the whole £100,000 were taken as dividend, the company would pay corporation tax of £22,750 (the profit is in the marginal-relief band, so 25 per cent less 3/200 of the £150,000 distance from the upper limit, not the 19 per cent small-profits rate), and the £77,250 distributed would attract dividend tax of £13,644 (only about £37,200 of it falls in the basic-rate band at 10.75 per cent; the balance is taxed at 35.75 per cent), leaving £63,606. No pension contribution is made.</p>
 
 <p>The pension route takes £60,000 out of immediate income-tax and dividend-tax exposure, at the cost of locking it away until retirement. For a contractor with enough income from other years or sources, that trade is usually more tax-efficient. For one who needs maximum current income, the dividend route is the practical choice regardless.</p>
 

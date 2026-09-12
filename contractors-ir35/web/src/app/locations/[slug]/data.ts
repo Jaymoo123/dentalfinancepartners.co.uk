@@ -244,7 +244,7 @@ export const CITIES: Record<string, CityData> = {
       },
       {
         "question": "How much corporation tax will my Birmingham contracting company pay in 2026/27?",
-        "answer": "A small contracting company with profits up to £50,000 pays corporation tax at 19%. Between £50,000 and £250,000 the main 25% rate applies with marginal relief, giving an effective rate of about 26.5% on profits in that band, and above £250,000 the full 25% applies. Those limits are divided by the number of associated companies, so if you and a spouse each run a connected company the bands shrink. We factor this into your salary, dividend and pension planning so profit is extracted efficiently."
+        "answer": "A small contracting company with profits up to £50,000 pays corporation tax at 19%. Between £50,000 and £250,000 the main 25% rate applies with marginal relief, giving an effective marginal rate of about 26.5% on profits in that band, and above £250,000 the full 25% applies. Those limits are divided by the number of associated companies, so if you and a spouse each run a connected company the bands shrink. We factor this into your salary, dividend and pension planning so profit is extracted efficiently."
       },
       {
         "question": "Should an engineering contractor in Birmingham use a limited company or an umbrella?",

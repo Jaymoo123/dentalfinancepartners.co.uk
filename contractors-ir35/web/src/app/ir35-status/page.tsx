@@ -182,7 +182,7 @@ export default function IR35StatusPage() {
             ))}
           </ol>
           <p className="mt-10 text-sm leading-relaxed text-neutral-500 max-w-2xl">
-            Small company exemption: if your end client meets two of the following criteria (turnover not more than £15m, balance sheet not more than £7.5m, fewer than 50 employees, for financial years beginning on or after 6 April 2025), the old rules apply and your PSC self-assesses its own IR35 status. Note the timing lag: a previously medium client cannot fall out of scope before 6 April 2027.
+            Small company exemption: if your end client meets two of the following criteria (turnover not more than £15m, balance sheet not more than £7.5m, not more than 50 employees, met for two consecutive financial years beginning on or after 6 April 2025), the old rules apply and your PSC self-assesses its own IR35 status. Note the timing lag: a previously medium client cannot fall out of scope before 6 April 2027.
           </p>
         </div>
       </section>

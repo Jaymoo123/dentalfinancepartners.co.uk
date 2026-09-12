@@ -5,7 +5,7 @@ import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/calculators/registry";
 import { GLOSSARY } from "@/app/glossary/[slug]/data";
 import { CITIES } from "@/app/locations/[slug]/data";
-import { publishedGuideTopicsWithFile } from "@/lib/resources/content";
+import { indexableGuideTopics } from "@/lib/resources/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -77,8 +77,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Open resource guides (email gate retired 2026-07-18, now indexable).
-  const resourceRoutes: MetadataRoute.Sitemap = publishedGuideTopicsWithFile().map((topic) => ({
+  // Open resource guides. Guides whose frontmatter sets `noindex: true` are
+  // excluded here so the sitemap agrees with the robots meta on the page.
+  const resourceRoutes: MetadataRoute.Sitemap = indexableGuideTopics().map((topic) => ({
     url: `${base}/resources/${topic}`,
     lastModified: now,
     changeFrequency: "monthly" as const,

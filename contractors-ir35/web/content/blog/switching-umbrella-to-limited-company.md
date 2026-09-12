@@ -120,7 +120,7 @@ faqs:
     </tr>
     <tr>
       <td>Employer NIC (15% above £5,000)</td>
-      <td>Deducted from assignment rate: approx. £17,250</td>
+      <td>Deducted from assignment rate: approx. £14,900 (15% of the grossed-up salary, not of the full assignment rate)</td>
       <td>On salary only: approx. £256 (on £6,708)</td>
     </tr>
     <tr>
@@ -131,7 +131,7 @@ faqs:
     <tr>
       <td>Corporation tax (19% on profits up to £50,000)</td>
       <td>Not applicable</td>
-      <td>Approx. £22,750 on £100,000 net profit (25% less marginal relief; 19% applies only up to £50,000)</td>
+      <td>Approx. £26,200 on the £113,036 net profit left after the salary and employer NIC (25% less marginal relief; 19% applies only up to £50,000)</td>
     </tr>
     <tr>
       <td>Income tax on salary</td>

@@ -376,7 +376,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Annual allowance tapering and the NHS pension",
         body:
-          "Locum doctors with higher incomes are subject to the tapered annual allowance, which reduces the pension annual allowance from £60,000 down to £10,000 for those with adjusted income above £260,000. This interacts directly with NHS pension accrual. An annual allowance charge can arise from NHS pension growth alone. We model this carefully, including carry-forward from previous years.",
+          "Locum doctors with higher incomes are subject to the tapered annual allowance, which bites only where threshold income exceeds £200,000 and adjusted income exceeds £260,000, and then cuts the £60,000 annual allowance by £1 for every £2 of adjusted income above £260,000, reaching the £10,000 floor only at £360,000 of adjusted income. This interacts directly with NHS pension accrual. An annual allowance charge can arise from NHS pension growth alone. We model this carefully, including carry-forward from previous years.",
       },
       {
         title: "Multiple income streams and self assessment complexity",
@@ -562,7 +562,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Small company exemption and self-assessment",
         body:
-          "Many marketing and creative contractors work with small companies (start-ups, SMEs, boutique agencies) that meet the small company exemption criteria (turnover not more than £15m, balance sheet not more than £7.5m, fewer than 50 employees, for financial years beginning on or after 6 April 2025). In these cases, the PSC self-assesses its own IR35 status, which is both an opportunity and a responsibility. A clean outside position is likely for genuinely deliverable-based work.",
+          "Many marketing and creative contractors work with small companies (start-ups, SMEs, boutique agencies) that meet the small company exemption criteria (turnover not more than £15m, balance sheet not more than £7.5m, not more than 50 employees, met for two consecutive financial years beginning on or after 6 April 2025). In these cases, the PSC self-assesses its own IR35 status, which is both an opportunity and a responsibility. A clean outside position is likely for genuinely deliverable-based work.",
       },
       {
         title: "Embedded creative roles in large organisations",

@@ -14,6 +14,7 @@
  * Never use var(--gold), var(--navy) or var(--dark) here.
  */
 import type { ChartSpec, ChartResult } from "@/lib/calculators/premium/types";
+import { ChartDataTable } from "@/components/research/ChartDataTable";
 
 const CHART_HEIGHT = 180;
 const CHART_PADDING = { top: 16, right: 8, bottom: 32, left: 8 };
@@ -84,6 +85,19 @@ export function PremiumBarChart({
   const scale = (v: number) => (v / maxVal) * plotH;
 
   return (
+    <>
+    <ChartDataTable
+      caption={
+        spec.valueAxisLabel
+          ? `Chart data: ${spec.valueAxisLabel} by group`
+          : "Chart data: comparison across groups"
+      }
+      columns={["Group", ...series.map((s) => s.label)]}
+      rows={data.map((datum) => [
+        String(datum.name),
+        ...series.map((s) => formatValue(Number(datum[s.dataKey] ?? 0), format)),
+      ])}
+    />
     <div
       style={{ height: CHART_HEIGHT }}
       aria-hidden="true"
@@ -93,8 +107,7 @@ export function PremiumBarChart({
         viewBox={`0 0 ${plotW} ${CHART_HEIGHT}`}
         preserveAspectRatio="xMidYMid meet"
         className="w-full h-full"
-        role="img"
-        aria-label="Bar chart comparing values across groups"
+        focusable="false"
       >
         {/* Horizontal grid lines */}
         {[0.25, 0.5, 0.75, 1].map((frac) => {
@@ -149,9 +162,7 @@ export function PremiumBarChart({
                       ry={2}
                       opacity={0.9}
                     >
-                      <title>
-                        {s.label}: {formatValue(val, format)}
-                      </title>
+                      <title>{`${s.label}: ${formatValue(val, format)}`}</title>
                     </rect>
                     {/* Value label on top of bar when bar is tall enough */}
                     {barH > 20 && (
@@ -188,5 +199,6 @@ export function PremiumBarChart({
         )}
       </svg>
     </div>
+    </>
   );
 }

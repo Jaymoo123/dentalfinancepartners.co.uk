@@ -11,6 +11,7 @@ import type {
   SectionYear,
   CapturedYear,
 } from "@/lib/research/contractor-insolvency-index";
+import { ChartDataTable } from "./ChartDataTable";
 
 const CYAN = "#0e7490"; // cyan-700
 const CYAN_LIGHT = "#67e8f9"; // cyan-300
@@ -51,10 +52,16 @@ export function AnnualInsolvencyChart({ annual }: { annual: InsolvencyYear[] }) 
   const ticks = Array.from({ length: yTicks + 1 }, (_, i) => (maxV / yTicks) * i);
 
   return (
+    <>
+    <ChartDataTable
+      caption="Annual contractor-sector company insolvencies by year"
+      columns={["Year", "Section J+M insolvencies"]}
+      rows={data.map((d) => [d.year, d.value.toLocaleString("en-GB")])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="Annual contractor-sector company insolvencies by year"
+      aria-hidden="true"
+      focusable="false"
       className="h-[280px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -85,6 +92,7 @@ export function AnnualInsolvencyChart({ annual }: { annual: InsolvencyYear[] }) 
         );
       })}
     </svg>
+    </>
   );
 }
 
@@ -142,10 +150,22 @@ export function MonthlyInsolvencyChart({ monthly }: { monthly: InsolvencyMonth[]
   const labelEvery = Math.max(1, Math.ceil(n / 10));
 
   return (
+    <>
+    <ChartDataTable
+      caption="Monthly contractor-sector insolvencies by procedure"
+      columns={["Month", "Creditors' voluntary liquidation", "Compulsory", "Administration", "Total"]}
+      rows={pts.map((p) => [
+        monthLabel(p.month),
+        p.cvl.toLocaleString("en-GB"),
+        p.compulsory.toLocaleString("en-GB"),
+        p.administration.toLocaleString("en-GB"),
+        (p.cvl + p.compulsory + p.administration).toLocaleString("en-GB"),
+      ])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="Monthly contractor-sector insolvencies by procedure"
+      aria-hidden="true"
+      focusable="false"
       className="h-[280px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -185,6 +205,7 @@ export function MonthlyInsolvencyChart({ monthly }: { monthly: InsolvencyMonth[]
         </circle>
       ))}
     </svg>
+    </>
   );
 }
 
@@ -228,10 +249,21 @@ export function CapturedShareChart({
   const ticks = Array.from({ length: yTicks + 1 }, (_, i) => (maxV / yTicks) * i);
 
   return (
+    <>
+    <ChartDataTable
+      caption="Divisions 62/70/71 as a share of Section J+M insolvencies, by year"
+      columns={["Year", "Divisions 62/70/71", "Elsewhere in Section J+M", "Section J+M total"]}
+      rows={data.map((d) => [
+        d.year,
+        d.captured.toLocaleString("en-GB"),
+        d.other.toLocaleString("en-GB"),
+        d.total.toLocaleString("en-GB"),
+      ])}
+    />
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      role="img"
-      aria-label="Divisions 62/70/71 as a share of Section J+M insolvencies, by year"
+      aria-hidden="true"
+      focusable="false"
       className="h-[260px] w-full"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -266,5 +298,6 @@ export function CapturedShareChart({
         );
       })}
     </svg>
+    </>
   );
 }

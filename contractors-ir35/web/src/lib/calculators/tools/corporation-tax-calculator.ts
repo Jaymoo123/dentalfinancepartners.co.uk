@@ -74,7 +74,7 @@ export const corporationTaxCalculator: GenericTool = {
         { label: "Corporation tax due", value: gbp(ct), strong: true },
         { label: "Effective rate", value: pct(effRate), strong: true },
       ],
-      note: "For the 2026/27 financial year, corporation tax is 19% on profits up to £50,000, 25% on profits over £250,000, and the main rate with marginal relief (standard fraction 3/200) in between, giving an effective rate of about 26.5% on profits in the £50,000 to £250,000 band. The £50,000 and £250,000 limits are divided by the number of associated companies (companies under common control), so a contractor and a connected spouse company, or anyone running more than one company, can see the bands shrink. Finance Act 2026 made no change to the corporation tax rates.",
+      note: "For the 2026/27 financial year, corporation tax is 19% on profits up to £50,000, 25% on profits over £250,000, and the main rate with marginal relief (standard fraction 3/200) in between, giving an effective marginal rate of about 26.5% on each extra pound of profit in the £50,000 to £250,000 band. The £50,000 and £250,000 limits are divided by the number of associated companies (companies under common control), so a contractor and a connected spouse company, or anyone running more than one company, can see the bands shrink. Finance Act 2026 made no change to the corporation tax rates.",
     };
   },
   explainer: {
