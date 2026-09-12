@@ -28,6 +28,249 @@ T18, T19, T22, T23, T24, T26, T30.
 
 ---
 
+## DELTA, re-derived 2026-09-12
+
+**Read this before section 0.** This plan was written on 2026-09-11 by a planner standing in front of
+an uncommitted Phase 3 working tree, before Phases 4 and 5 existed. Phases 3, 4 and 5 have since
+landed and are committed. Everything below was re-derived against the tree at `dd935a98`, read-only,
+no build and no server. Where a statement later in this file disagrees with this section, **this
+section wins**.
+
+### DL-1. Phase 3, 4 and 5 are COMMITTED. Section B2 is now actively misleading.
+
+`git status --porcelain -- construction-cis` is **empty**. The working tree is clean. B2's instruction
+to "read the working tree, and do not assume `git log` reflects what the server is serving" was true
+on 2026-09-11 and is false now: `git log` is the record.
+
+Verified with `git log -1 --format='%h %ad %s' --date=short <sha>`:
+
+| sha | what |
+|---|---|
+| `72fe3261` | Phases 3 and 4 build, plus the tax figures they were carrying |
+| `da7ec668` | Phase 5 build: homepage, `/services`, and the two pillars |
+| `aab3886b` | Phase 5 gap-fix, three blockers from the factual review |
+| `8ea5aea9` | Phase 5 review gaps: the orphaned `#book` ask, and the invisible closing band on `/cis-refund` |
+| `05ddb709` | the `#book` panel wrapper was swallowing every click inside the form |
+| `32dc4c90` | Phase 5 artefacts and the re-captured browser baseline |
+| `dd935a98` | Phase 5 re-review and final verification results |
+
+B2's row in section 0a is corrected in place. Its underlying point still stands in one narrow form:
+`DISPOSITION_SLICE3.md` predates all five builds, so it is a hypothesis, not a specification.
+
+### DL-2. Section 4a's triple table and its "798 across 9 triples" arithmetic are superseded.
+
+Deriving command, run at the repo root:
+
+```
+grep -rn 'data-cta' construction-cis/web/src --include=*.tsx --include=*.ts | grep -v tests/
+grep -rn 'data-cta' packages/web-shared/design/blog/BlogSidebarCta.tsx
+```
+
+The authoritative list is `construction-cis/web/src/tests/design/cta-attribute-diff.test.ts`, whose
+`PINNED` array now holds **24 declared triples in `src/`**, plus **one kit triple**
+(`blog_sidebar_book|sidebar|form`, from `packages/web-shared/design/blog/BlogSidebarCta.tsx:56`,
+pinned separately in the same file because the extractor walks `src/` only). **25 declared triples
+in total.** Section 4a's nine are a subset.
+
+Added since section 4a was written, all ADDITIVE, all `goal="form"`:
+
+- `calc_hero_help|hero|form` (`src/app/calculators/[slug]/page.tsx:84`), Phase 4
+- `home_hero_book|hero|form` (`src/app/page.tsx:274`), Phase 5
+- `services_hero_book|hero|form` (`src/app/services/page.tsx:175`), Phase 5
+- `cis_refund_hero_book|hero|form` (`src/app/cis-refund/page.tsx:114`), `8ea5aea9`
+- `gps_hero_book|hero|form` (`src/app/gross-payment-status/page.tsx:114`), `8ea5aea9`
+
+Section 4a also under-listed the pre-existing set: `header_nav_secondary`, `header_mobile_primary`,
+`header_mobile_secondary`, `home_cta_primary`, `home_cta_secondary`, `see_result`,
+`deep_scroll_modal`, `deep_scroll_close`, `returning_bar`, `returning_bar_close`, `hero_cta` and
+`contact_pricing_link` are all declared in source and none appears in that table.
+
+**`cis_refund_book_panel` and `gps_book_panel` DO NOT EXIST and no builder should look for them.**
+`8ea5aea9` added them to the two `#book` wrapper `<div>`s; `05ddb709` removed them again, because
+`autoCapture` resolves through `closest("[data-cta]")` and a wrapper id swallowed every click on the
+form's own controls. Both files now carry an explicit comment saying the wrapper carries no
+`data-cta` (`cis-refund/page.tsx:261-262`, `gross-payment-status/page.tsx:257-258`). **This closes
+the first of the three PHASE5_REVIEW §D open questions before P6-A takes its snapshot: there is
+nothing left to remove.** Do not re-add an id to either wrapper.
+
+**The "798 across 9 triples" arithmetic is withdrawn, not re-stated.** It was a RENDERED count over
+246 routes and cannot be re-derived without a build and a crawl. The five hero ids above each render
+on exactly one static route (`calc_hero_help` on the 12 calculator routes), so the total has moved by
+a small, knowable amount, but nobody should quote a number here that was not measured. **P6-A's
+snapshot is the re-measurement.** Until it exists, section 4a is a list of DECLARED triples only, and
+every count in it is stale.
+
+What has NOT changed, and the whole of section 4b still binds: the five LOCKED triples are
+byte-frozen, `null`s included. `specialist_widget|null|null` is still declared with neither attribute
+at `SpecialistWidget.tsx:560`, and `next_step`'s placement is still absent at `NextStepOffer.tsx:39`.
+
+### DL-3. `cta-attribute-diff.test.ts` is a deliberate tripwire, and P6-F owns it.
+
+`src/tests/design/cta-attribute-diff.test.ts:237-245` asserts that `StickyCTA.tsx` contains
+`data-cta-id=` and does NOT contain `data-cta=`. Read the comment above it: it says in its own words
+that the phase-6 rename ADDS a triple to the snapshot and that the assertion "is the reminder that
+the new row is a new measurement, not a regression". It is a tripwire, not a blocker.
+
+**Therefore: P6-F owns this test file and updates it as part of the TD-32 rename**, the
+`StickyCTA` assertion, and the new `sticky_cta` / `sticky_cta_close` entries in `PINNED`. P6-F must
+call out the new `vw_cta_performance` row **in its commit message and in the deploy note**
+(§11e already requires this; it is restated here because the guard is where it will be noticed).
+
+**This overrides the concurrency note at the end of section 6**, which says no package may edit that
+file. That rule holds for P6-B, P6-C, P6-D and P6-E, which run concurrently and only RUN the guard.
+It does not hold for P6-F, which runs strictly last and alone.
+
+### DL-4. The dark tail on `/cis-refund` and `/gross-payment-status` is already CLOSED. Risk 7 is satisfied.
+
+Section 1d (around line 150), §11c (around lines 711-713) and risk 7 (around line 774) all treat the
+two pillars as owing Phase 5 work. They no longer do. Both closing bands were reworked in `8ea5aea9`.
+
+Verified by reading the current source of both pages: each now ends on
+`<div id="book" className="scroll-mt-24">` wrapping `<LeadCTAPanel contained ...>`, and `contained`
+renders the panel on `--hero-cream`. The band comments state the resulting tails:
+`/cis-refund` = stone-100 (rates), cream (panel), navy (footer); `/gross-payment-status` = white
+(April 2026 section), cream (panel), navy (footer). Neither route's last opaque band under `<main>`
+is dark. `8ea5aea9`'s message also records that only `/cis-refund` had the adjacent-ground breach,
+and that it was fixed at the call site rather than in the shared `LeadCTAPanel` (7 other consumers).
+
+**What is actually owed now: nothing from Phase 5.** The §3a arithmetic becomes
+**25 (Phase 3) + 2 (Phase 5, DONE) + 2 (Phase 6, OWED) = 29.** Phase 6's two are still
+`/cis-invoice-template` and `/cis-payment-deduction-statement-template`, unchanged.
+
+So **risk 7's "the gate cannot close until Phase 5 lands" is now satisfied: Phase 5 has landed.**
+The gate's remaining dependency is Phase 6's own two routes. What risk 7 was protecting against is
+still real in a different form: a green Phase 6 does not by itself prove 0 of 246. The gate is still
+verified by reading the served HTML of the 29 named routes on a production build, never by trusting
+the instrument's boolean, and note that `--grounds` has now been repaired three times
+(`f5313a68`, then `4431cf4d`), so **every grounds figure taken before `4431cf4d` must be re-derived,
+not re-quoted.**
+
+### DL-5. Line numbers inside the four Phase-5 files are DEAD. Re-derive at build time.
+
+`src/app/page.tsx` changed +543/-360, `src/app/cis-refund/page.tsx` +157,
+`src/app/gross-payment-status/page.tsx` +155, `src/app/services/page.tsx` +151.
+
+**Any `file:line` this plan cites inside those four files is untrustworthy.** They are not renumbered
+here, deliberately: a stale number that looks corrected is worse than one flagged as stale. Re-derive
+every one by grepping for the string, not by opening the line. This applies to section 7's ownership
+rows and anything quoting the homepage or either pillar.
+
+Line numbers in files those four commits did not touch are unaffected. The two most load-bearing were
+re-checked and still hold: `SpecialistWidget.tsx:560` and `NextStepOffer.tsx:39`.
+
+### DL-6. The guard count in §11a is wrong. It is 10 today, not 14.
+
+Deriving command: `ls construction-cis/web/src/tests/design/`.
+
+The directory holds **11 files: 10 `*.test.ts` guards, plus `route-exists.ts`**, which is a shared
+test HELPER, not a guard, and has no `it()` blocks. The 10 are `blog-cta-map`,
+`consent-anchor-drift`, `cta-attribute-diff`, `em-dash`, `eyebrow-ground`, `hub-article-crawl-path`,
+`nav-active-state`, `niche-config-port`, `page-summaries`, `penalty-figures`.
+
+Phase 5 added test CASES, not files: `niche-config-port` and `penalty-figures` both grew. Current
+case counts, `grep -cE '^\s+(it|test)\('` per file: blog-cta-map 4, consent-anchor-drift 4,
+cta-attribute-diff 5, em-dash 3, eyebrow-ground 3, hub-article-crawl-path 5, nav-active-state 3,
+niche-config-port 5, page-summaries 4, penalty-figures 6. **42 cases across 10 files.**
+
+**§11a's "All 14 `src/tests/design/*` guards green, including the 3 new ones" is corrected to: all
+13 guards green (10 existing + P6-A's 3 new), plus the `route-exists.ts` helper, which is not a
+guard and is not counted.** Assert the file count as well as the pass count, so a guard that stops
+being collected fails loudly instead of passing silently.
+
+### DL-7. All twelve owner gates are ACCEPTED as recommended. Owner decision, 2026-09-12.
+
+**Nobody stalls on a gate.** Every one of section 10's twelve recommendations is accepted as written.
+Section 10 is annotated per gate. Two clarifications override the plan's own text:
+
+**Gate 3: the ruling is CHANGE NOTHING.** The plan recommends switching the deletion job on and
+giving consent records a real expiry. The ruling is **do what Property does**, and Property was
+checked:
+
+- `Property/web/src/app/privacy-policy/page.tsx:201-203` publishes the **identical two sentences**:
+  enquiry data kept N months "after which it is deleted", and consent records "kept for up to six
+  years, under access controls".
+- `Property/web/vercel.json:9` schedules `/api/cron/lead-retention` daily at 03:30.
+- `Property/web/src/app/api/cron/lead-retention/route.ts:52-55` is **dry-run unless
+  `LEAD_RETENTION_PURGE_ENABLED` is `1` or `true`**, the same condition Trade has.
+- `grep -rn "six years\|six-year" Property/web/src` returns **one hit: that same sentence.** There is
+  no six-year consent expiry job on Property either.
+
+So Trade is a faithful clone of Property here, and **Phase 6 must not "improve" those retention
+sentences.** TD-38 and TD-39 stay filed in `LIVE_DEFECTS.md` as the record, and their remedy is
+**removed from Phase 6's scope**. The underlying gap, published words ahead of shipped code,
+estate-wide, and the job anonymises rather than deletes, is an OWNER item for a separate slot, not
+phase 6 work, and fixing it on Trade alone would put one site out of step with fourteen others.
+
+**Gate 2's other half still applies in full, and is Phase 6 work.** The cookie page must stop calling
+web storage "cookies" (TD-36), must drop the Google Analytics opt-out section for analytics this site
+does not run (TD-16), and must say what is actually recorded: **city, region and timezone against a
+lasting visitor id**, not "only a country" (TD-17). TD-37's absolute "no strictly necessary cookies"
+sentence also stands to be corrected. Nothing in gate 3's ruling touches any of that.
+
+### DL-8. The three PHASE5_REVIEW §D open questions, settled.
+
+`docs/construction-cis/_port/PHASE5_REVIEW.md` section D carries three questions into Phase 6.
+Settled answers:
+
+**1. The two `*_book_panel` ids are already removed.** See DL-2. `05ddb709` took them off both wrapper
+`<div>`s. **P6-A's reference CTA snapshot is therefore safe to take**, and it must be taken against
+the tree as it stands at `dd935a98` or later, never against an artefact captured between `8ea5aea9`
+and `05ddb709`.
+
+**2. CIS refund timing is a defect. Correct it, and sweep by RULE not by page.** The page contradicts
+itself: `src/app/cis-refund/page.tsx:25` (FAQ body, published prose) says **"8 to 12 weeks"**, while
+`:78` (the page's own HowTo schema step) says **"5 to 10 working days"**, and
+`docs/construction-cis/house_positions.md:187` says "SA online repayment: typically 5-10 working
+days" with a separate 25-working-day EPS/company target. A visitor reads one number and Google reads
+the other off the same page. That is a false published statement either way round and it is a defect,
+not a preference.
+
+**Two things a builder must not get wrong here.** First, **the ground-truth figure is scoped**:
+house_positions' 5-10 working days is the HMRC *repayment* step after a return is processed, not the
+end-to-end wait from engagement. The correction may therefore be a re-scoping of the sentence rather
+than a straight number swap, and both halves of the page must end up saying the same thing about the
+same step. Second, **this is not one sentence.** Deriving command:
+
+```
+grep -rn "8 to 12 weeks\|8-12 weeks\|12 weeks" construction-cis/web/src construction-cis/web/content
+```
+
+returns the claim in **`src/data/trade-types.ts` (9 occurrences, which render across the 45
+`/for/[slug]` routes), `src/app/locations/[slug]/data.ts`, and `src/app/cis-refund/page.tsx`**, plus
+a DIFFERENT and separately-sourced "4 to 12 weeks" company-claim figure in two blog posts that is
+attributed and is not part of this defect. Most of those files belong to Phases 3 and 4 by the
+ownership table. **See DL-9: the sweep is scoped to the rule and the whole site, not to Phase 6's
+route list.** Grep the ARITHMETIC and the worked examples as well as the words: the recorded failure
+mode on this site is a corrected sentence sitting above an uncorrected worked example.
+
+**3. Orange tick marks on `/` and `/services`: FIX ON TRADE ONLY.** 19 ticks per page on both
+routes render `text-[var(--brand-primary)]`, which resolves through `--accent` to `#f97316` at
+**2.80 on white** against a 3:1 graphics floor, and `globals.css:43-44` says in its own comment that
+this token "must never carry text on a light ground. Use `--accent-strong`."
+**Change the call sites on those two routes to `--accent-strong`** (`#c2410c`, 5.18 on white).
+**Do NOT change the shared brand token**, and do not change `--accent`: that reaches sites already
+finished, and this is precisely the "fix the hex instead of the consumer" mistake T30 records.
+
+### DL-9. Standing note: a correctness sweep is scoped to the RULE and the WHOLE SITE.
+
+Never to the phase's route list, and never to the file list a brief hands you.
+
+The recorded incident on this site: a banned director-penalty claim survived **two** correction
+passes and stayed live, in body copy AND in `FAQPage` structured data, purely because the file it
+lived in was fenced off for a later phase. The guard written to stop it
+(`src/tests/design/penalty-figures.test.ts`) pinned one data file and stayed green while the same
+figures shipped on 45 pages from `src/data/trade-types.ts`. That is playbook trap T33, and the guard
+now enumerates its corpus programmatically for exactly this reason.
+
+**So:** when Phase 6 closes a CLAIM, a NUMBER, a promise or a compliance sentence, it sweeps every
+`.ts`/`.tsx` under `src/`, every `.md` under `content/`, and `niche.config.json`, structured-data
+strings included, because a `schema:` frontmatter block and an inline `faqs` array both publish and
+neither is visible to an HTML body sweep. Section 7's ownership table governs DESIGN edits. It does
+not fence off a correctness sweep. If the sweep lands a correction in another phase's file, that is
+correct behaviour: record it in the commit message rather than leaving the claim live.
+
+---
+
 ## 0. CORRECTIONS: WHERE THE BRIEF AND `DISPOSITION_SLICE3` ARE STALE OR WRONG
 
 Read these before anything else. Eleven of them change what a builder is told to do, and four of
@@ -38,7 +281,7 @@ them delete work that the disposition specifies.
 | # | Brief claim | Status | Correction |
 |---|---|---|---|
 | B1 | "Require `src/tests/intent-engine.test.ts` passing byte-unchanged as the proof no cadence moved" | **FALSE. That file does not exist.** | `ls construction-cis/web/src/tests/` returns no `intent-engine.test.ts`. The cadence tripwire on this site is **`src/tests/assistant-journey-opener.test.ts`** (872 lines, cadence pinned at `:832-`). Every acceptance row below names the real file. A package told to run a file that does not exist gets a green vitest run over zero matched specs and reads it as proof. |
-| B2 | "`DISPOSITION_SLICE3.md` ... **predates Phases 1 to 3**" | **Half true, and the half that is false is the useful half** | It was written 2026-09-11 and committed in `4d2bfeaa` (Phase 0), so it predates the phase-1/2/3 *builds*. But Phase 3 is **uncommitted working-tree work** (`git status --porcelain -- construction-cis` shows 14 modified files + 3 untracked), so "read the last commit" does not show you the current state either. Builders must read the **working tree**, and must not assume `git log` reflects what the server on :3261 is serving. |
+| B2 | "`DISPOSITION_SLICE3.md` ... **predates Phases 1 to 3**" | **CORRECTED 2026-09-12. The original row is now actively misleading, see DL-1.** | It was written 2026-09-11 and committed in `4d2bfeaa` (Phase 0), so it predates every build, Phases 4 and 5 included: it is a hypothesis, not a specification. **The rest of the original row is void.** It said Phase 3 was uncommitted working-tree work and that `git log` could not be trusted. That was true on 2026-09-11 and is false now. Phases 3+4 are `72fe3261` and Phase 5 is `da7ec668` + `aab3886b` + `8ea5aea9` + `05ddb709`, with artefacts `32dc4c90` and close `dd935a98`. **`git status --porcelain -- construction-cis` is empty: the tree is clean and `git log` IS the record.** |
 | B3 | "`src/lib/schema.ts` had `priceRange` removed in Phase 3; verify nothing else asserts a fee" | **TRUE, both halves, verified** | `grep -n priceRange construction-cis/web/src/lib/schema.ts` = **0 hits** (the Phase 3 diff is `-2` lines on that file). `grep -E 'priceRange\|offers\|price\|AggregateRating\|Review'` across the whole 240-line file = **0 hits**. No fee, offer or rating is asserted anywhere. TD-01's Trade half is CLOSED. |
 | B4 | "The kit fork `packages/web-shared/schema/local-business.ts:127` still carries it for OTHER sites and Trade does not reach it: confirm" | **CONFIRMED** | The line is live (`priceRange: "££"`). Trade's only `@accounting-network/web-shared` import specifiers are `console/*`, `experiments/registries`, `content/feed`, `content/llmsFull`. Nothing under `construction-cis/web/src` imports the barrel (`packages/web-shared/index.ts:15`) or `schema/local-business`. **Trade does not reach it.** Hand up to the orchestrator as TD-K1; **no package in this phase edits the kit.** |
 | B5 | "TD-K2 records `PremiumBarChart.tsx` as an `aria-hidden` chart, **byte-identical** on Trade and Medical" | **The `aria-hidden` half is TRUE. "Byte-identical" is FALSE.** | `aria-hidden="true"` on the wrapper at `src/components/calculators/premium/PremiumBarChart.tsx:90`, `role="img"` on the inner `<svg>` at `:97` (the labelled svg is hidden from AT: the defect is real). But md5 `6727b7a57a5a903a8744323279fa71d6` (Trade) vs `3f9872ca39254447230d8f359c815cf7` (`Medical/web/src/components/tools/premium/PremiumBarChart.tsx`). The files have **diverged**. That matters because TD-K2's remedy ("promote to the kit, fix once, delete the per-site copies") now requires a reconciliation, not a move. Hand the correction up. **Out of this phase's scope either way**: it is the premium calculator's chart, which is Phase 5's surface. |
@@ -147,9 +390,9 @@ page that already has one.
 
 Both pages are on the **dark-tail** list. `GROUNDS_BASELINE.md:248-249` assigns exactly these two of
 the 29 dark-band-touching-footer routes to **Phase 6**; the other two standalones (`/cis-refund`,
-`/gross-payment-status`) are Phase 5's, and `/locations`'s 25 are Phase 3's. **Phase 6 closes 2 of
-29, and the §3a gate cannot close until Phase 5 also lands.** Say so rather than let anyone read a
-green Phase 6 as a closed gate.
+`/gross-payment-status`) were Phase 5's and **are now CLOSED** (`8ea5aea9`, DL-4), and `/locations`'s
+25 are Phase 3's. **Phase 6 closes the last 2 of 29.** A green Phase 6 is still not a closed gate on
+its own: the gate is 0 of 246, read off the served HTML of all 29 routes.
 
 Neither page has a breadcrumb or `BreadcrumbList` JSON-LD, both are indexable, and both hand-roll a
 FAQ block in two different markups for the same job (`<details>` vs `<article>` cards) while feeding
@@ -310,10 +553,30 @@ tokenisation for a single future swap point, **not** a contrast fix. Do not desc
 
 ## 4. INSTRUMENTATION AND THE TRAP 22 CONTRACT
 
-### 4a. The nine live triples, re-verified today against `cta_baseline.json`
+### 4a. The triple set
 
-Measured live on :3261, not read off the file. `cta_baseline.json` (`sha 18b4f25f`, 246 routes,
-`served_title` asserted) is the pre-port truth.
+> **SUPERSEDED 2026-09-12 by DL-2. Read that first.** The table below was measured live on :3261 on
+> 2026-09-11, before Phases 4 and 5 landed. It is now an incomplete subset and its counts are stale.
+> **The current authority is the `PINNED` array in
+> `construction-cis/web/src/tests/design/cta-attribute-diff.test.ts`: 24 declared triples in `src/`
+> plus one kit triple, 25 in total.** Deriving command:
+> `grep -rn 'data-cta' construction-cis/web/src --include=*.tsx --include=*.ts | grep -v tests/`
+> plus `grep -rn 'data-cta' packages/web-shared/design/blog/BlogSidebarCta.tsx`.
+> Added since: `calc_hero_help|hero|form` (Phase 4), `home_hero_book|hero|form`,
+> `services_hero_book|hero|form` (Phase 5), `cis_refund_hero_book|hero|form`,
+> `gps_hero_book|hero|form` (`8ea5aea9`). Also absent below but declared in source:
+> `header_nav_secondary`, `header_mobile_primary`, `header_mobile_secondary`, `home_cta_primary`,
+> `home_cta_secondary`, `see_result`, `deep_scroll_modal`, `deep_scroll_close`, `returning_bar`,
+> `returning_bar_close`, `hero_cta`, `contact_pricing_link`.
+> **`cis_refund_book_panel` and `gps_book_panel` do not exist**: added in `8ea5aea9`, removed in
+> `05ddb709` because a wrapper id swallowed every click inside the form. Do not re-add them.
+> **The "Total 798 across 9 triples" arithmetic below is WITHDRAWN, not restated.** It was a rendered
+> count over 246 routes and cannot be re-derived without a build and a crawl. P6-A's snapshot is the
+> re-measurement; until it exists, quote no total.
+> What still binds unchanged: section 4b. The five LOCKED triples are byte-frozen, `null`s included.
+
+`cta_baseline.json` (`sha 18b4f25f`, 246 routes, `served_title` asserted) is the pre-port truth.
+The 2026-09-11 reading, kept for the record:
 
 | Triple (`id\|placement\|goal`) | Count | Class | Status |
 |---|---|---|---|
@@ -327,8 +590,8 @@ Measured live on :3261, not read off the file. `cta_baseline.json` (`sha 18b4f25
 | `for_hero_book\|hero\|form` | 45 | additive (Phase 3) | verified |
 | `blog_index_primary\|hero\|lead` | 1 | additive (Phase 2) | verified |
 
-**Total 798 across 9 triples** (620 baseline + 178 additive). Arithmetic confirmed:
-246+246+109+18+1 = 620; 82+50+45+1 = 178.
+~~**Total 798 across 9 triples** (620 baseline + 178 additive). Arithmetic confirmed:
+246+246+109+18+1 = 620; 82+50+45+1 = 178.~~ **WITHDRAWN, DL-2. Do not quote this number.**
 
 ### 4b. The rule that D8 corrects, stated as a constraint
 
@@ -488,6 +751,13 @@ surface is `src/tests/design/cta-attribute-diff.test.ts`, which all three **run*
 **edits**: if a package needs that snapshot changed, that is the regression the guard exists for, and
 it stops and reports rather than editing.
 
+**Exception, added 2026-09-12 (DL-3): P6-F OWNS `cta-attribute-diff.test.ts` and updates it.** The
+`:237-245` assertion that `StickyCTA.tsx` carries `data-cta-id=` and not `data-cta=` is a deliberate
+tripwire for the TD-32 rename, and its own comment says so. P6-F flips that assertion and adds
+`sticky_cta` / `sticky_cta_close` to `PINNED`, in the rename commit, and names the new
+`vw_cta_performance` row in the commit message and the deploy note. The no-edit rule above still
+binds P6-B, P6-C, P6-D and P6-E, which run concurrently; P6-F runs strictly last and alone.
+
 ---
 
 ## 7. OFF LIMITS: OWNERSHIP TABLE
@@ -610,6 +880,24 @@ residual (`house_positions.md` §13 permits the framing), TD-20 (`/pricing`, ins
 
 ## 10. OWNER GATES, IN PLAIN LANGUAGE
 
+> **ALL TWELVE ARE ANSWERED. Owner decision, 2026-09-12: every recommendation below is ACCEPTED as
+> written. Gates 1, 2, 4, 5, 6, 7, 8, 9, 10, 11 and 12: build to the recommendation, do not wait,
+> do not re-ask.** Blocking-on-gate is no longer a reason for any package to stop.
+>
+> **Gate 3 is the one exception and its ruling REPLACES the recommendation printed under it: CHANGE
+> NOTHING.** See DL-7. Property publishes the identical two retention sentences
+> (`Property/web/src/app/privacy-policy/page.tsx:201-203`), ships the same daily purge cron
+> (`Property/web/vercel.json:9`) which is equally dry-run unless `LEAD_RETENTION_PURGE_ENABLED` is
+> set (`.../api/cron/lead-retention/route.ts:52-55`), and has no six-year consent expiry job either.
+> Trade is a clone of Property. **Phase 6 must not touch those retention sentences.** TD-38 and
+> TD-39 remain filed as the record; their remedy leaves Phase 6's scope and becomes an owner item for
+> a separate slot, words ahead of code, estate-wide, and the job anonymises rather than deletes.
+> **Gate 2's other half is unaffected and IS Phase 6 work**: stop calling web storage "cookies",
+> drop the Google Analytics opt-out section for analytics this site does not run, and say what is
+> actually recorded, city, region and timezone against a lasting visitor id, not just a country.
+>
+> Record each outcome against its gate below as the phase closes (§11f), dated.
+
 Numbered. Each one names what happens if the answer is "leave it", because that is a real option.
 
 1. **The page that asks for your phone number says we only use it to arrange your review. We then
@@ -625,8 +913,11 @@ Numbered. Each one names what happens if the answer is "leave it", because that 
 3. **Two things our privacy page promises are not things the code does.** We say consent records are
    kept "up to six years" (nothing ever deletes them) and that enquiry data "is deleted" at 24 months
    (the deletion job runs in test mode unless a setting is switched on). Either change the words or
-   change the code. *Recommend: switch the deletion job on and give consent records a real expiry.
-   That is a code change, not a design one, so it may want its own slot.*
+   change the code. ~~*Recommend: switch the deletion job on and give consent records a real expiry.*~~
+   **RULED 2026-09-12: CHANGE NOTHING in Phase 6.** Property publishes the identical sentences and
+   runs the identical dry-run job, so Trade is in step with the estate, not adrift from it. The gap
+   is real and it is estate-wide; it leaves this phase and becomes an owner item for its own slot.
+   **No Phase 6 package edits those two sentences or that cron.** See DL-7.
 4. **The bar at the bottom of every page has never been measured, because of a one-word mistake in
    the code.** Fix the word and add a tag to its close button. This starts a brand-new measurement
    stream rather than changing an old one, so nothing in our history moves. Separately, the bar
@@ -686,7 +977,15 @@ are inherited and must be re-checked, not assumed.
 - [ ] **P6** `md5sum construction-cis/web/src/config/site.ts` = `06814d487e10f00fc9e5780de603c30c`.
 - [ ] **P6** `python scripts/check_dependency_closure.py` green (T24), re-run **after** the deletions.
 - [ ] **P6** A **production build**, never a dev server, is what every measurement below runs against.
-- [ ] **P6** All 14 `src/tests/design/*` guards green, including the 3 new ones.
+- [ ] **P6** All **13** `src/tests/design/*.test.ts` guards green: the **10** that exist today
+      (`blog-cta-map`, `consent-anchor-drift`, `cta-attribute-diff`, `em-dash`, `eyebrow-ground`,
+      `hub-article-crawl-path`, `nav-active-state`, `niche-config-port`, `page-summaries`,
+      `penalty-figures`) plus P6-A's 3 new ones. **Corrected 2026-09-12, DL-6: the old count of 14
+      was wrong.** `route-exists.ts` is in that directory and is a shared test HELPER with no `it()`
+      blocks; it is not a guard and is not counted. Assert the FILE COUNT as well as the pass count,
+      so a guard that stops being collected fails loudly instead of passing silently. Current case
+      counts are 42 across the 10 files (Phase 5 added cases to `niche-config-port` and
+      `penalty-figures`, not new files).
 
 ### 11b. The verification contract, per instrument
 
@@ -706,11 +1005,13 @@ are inherited and must be re-checked, not assumed.
 
 ### 11c. The dark-on-dark closure gate (§3a)
 
-- [ ] Inherited, **and Phase 6 alone cannot close it.** The real total is **29** routes whose last
-      opaque band under `<main>` is dark, not the 79 that was originally recorded. Phase 3 closes 25
-      (`/locations/[slug]`). **P6** closes **2** (`/cis-invoice-template:239`,
-      `/cis-payment-deduction-statement-template:220`). **Phase 5 owns the last 2**
-      (`/cis-refund:216`, `/gross-payment-status:226`).
+- [ ] Inherited. The real total is **29** routes whose last opaque band under `<main>` is dark, not
+      the 79 that was originally recorded. Phase 3 closes 25 (`/locations/[slug]`). **P6** closes
+      **2** (`/cis-invoice-template`, `/cis-payment-deduction-statement-template`; line numbers
+      unverified, grep for the band). **Phase 5's 2 are DONE**: `8ea5aea9` reworked both pillar
+      closing bands onto `LeadCTAPanel contained`, so `/cis-refund` tails stone-100, cream, navy and
+      `/gross-payment-status` tails white, cream, navy. **Corrected 2026-09-12, DL-4: 25 + 2 (done)
+      + 2 (owed) = 29, and Phase 6's two are the only ones outstanding.**
 - [ ] **The gate is: 0 of 246.** Verified by reading the served HTML of the 29 named routes and
       confirming the last opaque band under `<main>` is light, **not** by trusting the instrument's
       boolean. Either tail shape satisfies it: panel-then-FAQ, or `LeadCTAPanel contained` (which
@@ -722,7 +1023,9 @@ are inherited and must be re-checked, not assumed.
 ### 11d. Copy, claims and compliance
 
 - [ ] **P6** Every sentence on the 3 legal pages either matches the code or has been corrected.
-      Section 3's 14 rows are the checklist.
+      Section 3's 14 rows are the checklist, **less rows 6 and 7** (TD-38, TD-39, the two retention
+      sentences), which gate 3's ruling removes from this phase: they stay as published and match
+      Property byte for byte. DL-7.
 - [ ] **P6** No reassurance string anywhere in the port claims something `/privacy-policy:107-136`
       does not support. That page is the reference, never the reverse.
 - [ ] **P6** No consent-adjacent string changed except gate 1's swap to the existing config value.
@@ -771,7 +1074,7 @@ build and a walk.
 | 4 | **A builder restyles `ExcelPreview.tsx` for a day** because the disposition specs six changes to it. | §4.11 is detailed and confident | B8 and section 8 move it to RETIRE, and P6-B's scope does not list it |
 | 5 | **A package runs `intent-engine.test.ts`, gets a green run over zero specs, and calls the cadence proven.** | The brief names a file that does not exist | B1 names the real file; P6-F's acceptance requires `git diff --stat` on that path to be **empty**, which a non-existent file cannot satisfy |
 | 6 | **The grounds instrument reports a false dark-on-dark pass or fail.** | It cannot read `oklch()` and does not see `<article>` | §11b forbids using `darkOnDark` or `bands` as an acceptance test on their own; §11c requires reading the served HTML of the 29 named routes |
-| 7 | **Phase 6 goes green and the §3a gate is reported closed.** | It is the last build phase, so "last" reads as "complete" | §11c states it plainly: Phase 6 closes 2 of 29 and **Phase 5 owns the final 2**. The gate cannot close until Phase 5 lands |
+| 7 | **Phase 6 goes green and the §3a gate is reported closed.** | It is the last build phase, so "last" reads as "complete" | **PARTLY SATISFIED 2026-09-12, DL-4. Phase 5 HAS landed** (`8ea5aea9`) and its 2 routes are closed, so "the gate cannot close until Phase 5 lands" no longer applies. The live half of the risk does: a green Phase 6 still does not prove 0 of 246. §11c stands, read the served HTML of all 29 named routes on a production build, never the instrument's boolean, and note `--grounds` was repaired a third time at `4431cf4d`, so **re-derive every grounds figure taken before it rather than re-quoting one** |
 | 8 | **The research floors are "restored" to +6 by inventing two links.** | The +4 looks like a regression against `PHASE3_PLAN`'s arithmetic | Section 5 flags it as undiagnosed, states both live explanations, and makes the **floor** the acceptance, not the arithmetic |
 | 9 | **Deleting the GA opt-out section drops `/cookie-policy` below its floor.** | It is the only package whose main job is a deletion | +6 headroom covers it, but P6-D's acceptance asserts the floor before and after rather than assuming |
 | 10 | **Someone corrects the `leadConsentText` / privacy-policy plurality "divergence".** | It genuinely looks like an inconsistency | Section 2's closing note: it is deliberate layered transparency, documented in two places, and the honest one-liner collapsed conversion to zero in August |
