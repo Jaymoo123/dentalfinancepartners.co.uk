@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
@@ -64,7 +64,8 @@ export default async function CalculatorToolPage({ params }: Props) {
       <section className="border-b border-neutral-200 bg-neutral-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb
-            variant="light"
+            siteUrl={siteConfig.url}
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Calculators", href: "/calculators" },

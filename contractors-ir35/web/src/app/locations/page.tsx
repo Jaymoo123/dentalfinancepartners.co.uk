@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin, ArrowRight, Building2 } from "lucide-react";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { CITIES } from "./[slug]/data";
 
@@ -110,7 +110,8 @@ export default function LocationsIndexPage() {
       <section className="bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Breadcrumb
-            variant="light"
+            siteUrl={siteConfig.url}
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Locations" },

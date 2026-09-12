@@ -9,7 +9,7 @@ import {
   getCategorySlug,
   slugifyCategory,
 } from "@/lib/blog";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
 import { siteConfig } from "@/config/site";
 
@@ -59,7 +59,8 @@ export default async function BlogCategoryPage({ params }: Props) {
       <section className="border-b border-neutral-200 bg-neutral-900 py-14 sm:py-18">
         <div className={siteContainerLg}>
           <Breadcrumb
-            variant="light"
+            siteUrl={siteConfig.url}
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Blog", href: "/blog" },

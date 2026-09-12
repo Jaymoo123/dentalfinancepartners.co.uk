@@ -1,5 +1,13 @@
 /* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+/* MANDATORY once any packages/web-shared component is rendered. source("..")
+   narrows Tailwind's scan to src/, and web-shared resolves through a workspace
+   symlink under node_modules, which Tailwind skips by default. Without this
+   line the kit chrome adopted in wave 1 (design/chrome/SiteHeader,
+   design/chrome/SiteFooter, design/primitives/Breadcrumb) contributes ZERO
+   utilities to the built CSS and renders unstyled. Same line, same position,
+   as dentists/web/src/app/globals.css:3. See P1-7_RAMP.md. */
+@source "../../../../packages/web-shared";
 @import "tw-animate-css";
 
 /* ============================================================
@@ -42,12 +50,46 @@
   --ring: var(--accent);
   --radius: 0rem;
 
+  /* Radius chain root. web-shared's btnPrimary reads --btn-radius directly
+     (rounded-[var(--btn-radius,9999px)] arbitrary utility, layout-utils.ts:43),
+     not through globals-standard.css's @theme derivation (this file does not
+     import that stylesheet at all — see P1-1_TOKENS.md finding). Undeclared,
+     every kit button falls back to a 9999px pill. --radius-xl kept for parity
+     with the estate's other radius chains even though nothing here reads it
+     directly. Standard is one radius, rounded-xl. */
+  --radius-xl: calc(var(--radius) + 4px);
+  --btn-radius: var(--radius-xl);
+
   --muted: var(--ink-soft);
 
   /* Canonical brand tokens for @accounting-network/web-shared components */
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: #ffffff;
+
+  /* Explicit per-role brand tokens (playbook §8 item 11). cyan-600 #0891b2
+     measures 3.68:1 both as text-on-white and as a ground-under-white-label,
+     failing both roles at once, so no single mid-tone hex can serve graphic +
+     text + ground here. Bind text and ground to their own steps instead of
+     letting --brand-primary do double duty: text-800 = 5.36->7.27, ground-700
+     stays 5.36 (both PASS 4.5). See P1-1_TOKENS.md for the measurements. */
+  --brand-primary-text: var(--accent-strong);  /* cyan-800 #155e75, 7.27 on white */
+  --brand-primary-ground: var(--accent);       /* cyan-700 #0e7490, 5.36 on white */
+
+  /* Chart ramp (playbook §4.6.11): research charts re-ramp through these
+     tokens instead of hand-picking SVG colours. Cyan brand family + slate
+     neutral; every step clears the 3.0 graphics floor on white and four of
+     five clear 4.5 (chart-3 is graphics-floor only, see its own note). See
+     P1-1_TOKENS.md for each ratio. No component wiring in this package --
+     that is chart-component work, out of this file's lease. */
+  --chart-1: #0e7490; /* cyan-700, brand */
+  --chart-2: #155e75; /* cyan-800 */
+  --chart-3: #0891b2; /* cyan-600 -- NOT cyan-400: cyan-400 measures 1.81 on
+                          white, failing even the 3.0 graphics floor. cyan-600
+                          measures 3.68, a graphics-floor PASS (this is a chart
+                          fill, not text, so 3.0 is the correct floor here). */
+  --chart-4: #164e63; /* cyan-900 */
+  --chart-5: #475569; /* slate-600 */
 }
 
 @theme inline {
@@ -60,6 +102,53 @@
   --color-ring: var(--ring);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+/* Primary ramp for the design kit's primary-* utilities (P1-7).
+   ------------------------------------------------------------
+   This site had a single --color-primary and no scale at all, while the kit
+   chrome adopted in wave 1 paints with primary-400/50/600/700/800/900. A
+   Tailwind utility naming a token that does not exist does not error -- it
+   emits nothing -- so those classes were silently painting no colour.
+
+   HOW THE FAILING 600 STEP IS RESOLVED: the ramp's 600 entry is bound to a
+   DARKER value than true cyan-600, not overridden per-recipe. cyan-600
+   #0891b2 measures 3.68:1 both as text on white and as a ground under a white
+   label, failing 4.5 in both roles, and the kit's own btnPrimary hard-codes
+   its ground as var(--btn-ground, var(--color-primary-600)) -- the 600 step IS
+   the button ground. Shifting the dark end of the ramp one cyan step darker
+   from 500 up fixes every kit recipe at once; per-recipe 700 overrides would
+   have to be repeated in web-shared (18 sites, not ours to edit) or chased
+   class by class, which is how one stylesheet ends up with two answers.
+
+   The shift lands the two wave-1 role tokens exactly on the steps the kit
+   consumes for those same roles, so nothing contradicts:
+     --brand-primary-ground  cyan-700 #0e7490  ==  --color-primary-600
+     --brand-primary-text    cyan-800 #155e75  ==  --color-primary-700
+   600 is the site brand hex exactly; 700 is what the kit uses for text on
+   white and for btnPrimary's hover.
+
+   50-400 stay true cyan. 400 is pinned to cyan-400 #22d3ee because that is
+   already this site's established on-dark accent (StickyCTA, P1-5), and the
+   footer's primary-400 sits on the same dark ground -- a uniform shift would
+   have given the site two different on-dark accents. Consequence: the ramp
+   skips cyan-500, so the 400->500 step is a double step. Deliberate.
+
+   Measured ratios for every step actually consumed are in
+   docs/contractors-ir35/_port/P1-7_RAMP.md. 100/200/300/500/950 are minted for
+   scale completeness and are consumed by nothing today. */
+@theme {
+  --color-primary-50: #ecfeff;  /* cyan-50  = --accent-whisper */
+  --color-primary-100: #cffafe; /* cyan-100 */
+  --color-primary-200: #a5f3fc; /* cyan-200 */
+  --color-primary-300: #67e8f9; /* cyan-300 */
+  --color-primary-400: #22d3ee; /* cyan-400, on-dark accent, 9.88 on slate-900 */
+  --color-primary-500: #0891b2; /* cyan-600 (shift starts here) */
+  --color-primary-600: #0e7490; /* cyan-700 = brand, 5.36 under white label */
+  --color-primary-700: #155e75; /* cyan-800, 7.27 as text on white */
+  --color-primary-800: #164e63; /* cyan-900, 9.11 under white label */
+  --color-primary-900: #083344; /* cyan-950 */
+  --color-primary-950: #04212b; /* one step past cyan-950 */
 }
 
 /* ============================================================

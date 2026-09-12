@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { allTools } from "@/lib/calculators/registry";
 
 export const metadata: Metadata = {
@@ -45,7 +45,8 @@ export default function CalculatorsPage() {
       <section className="border-b border-neutral-200 bg-neutral-900 py-14 sm:py-20">
         <div className={siteContainerLg}>
           <Breadcrumb
-            variant="light"
+            siteUrl={siteConfig.url}
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Calculators" },

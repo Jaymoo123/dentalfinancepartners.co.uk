@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./data";
 import { buildDefinedTerm, buildBreadcrumbJsonLd } from "@/lib/schema";
@@ -88,7 +88,8 @@ export default async function GlossaryEntryPage({ params }: Props) {
       <section className="bg-neutral-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <Breadcrumb
-            variant="light"
+            siteUrl={siteConfig.url}
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "IR35 Glossary", href: "/glossary" },

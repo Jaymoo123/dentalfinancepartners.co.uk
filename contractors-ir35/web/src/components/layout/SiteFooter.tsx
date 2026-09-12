@@ -1,76 +1,47 @@
-import Link from "next/link";
-import { focusRing, siteContainerLg } from "@/components/ui/layout-utils";
+import { FileBadge } from "lucide-react";
+import { SiteFooter as KitSiteFooter } from "@accounting-network/web-shared/design/chrome/SiteFooter";
 import { siteConfig } from "@/config/site";
 import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
+/**
+ * Kit adoption (design port P1-3). showBuilderCredit intentionally omitted:
+ * this site did not commission Double Wired Creative, so the credit link
+ * would be neither earned nor on-brand (kit default is Property-only true).
+ *
+ * nav/fallbackNav/companyItems/resourcesHref are left at kit defaults.
+ * niche.config.json's `navigation` is flat (no children/groups), so the
+ * Services/Resources columns derive to empty and are dropped by the kit's
+ * own `.filter((column) => column.items.length > 0)` -- no dead columns.
+ * The kit's DEFAULT_COMPANY_ITEMS (About, Contact, Locations, Book a
+ * consultation) all resolve to real routes on this site (verified: `ls
+ * src/app` has about/, contact/, book/; DESIGN_DELTA.md confirms /locations
+ * live), so nothing invented lands in the footer. Grouping the flat nav
+ * into `navigation[]` groups (Tools: Calculators/Glossary/Research/Resources)
+ * is IA authoring, priced as phase 2 work in DESIGN_DELTA.md §7 -- not done
+ * here.
+ *
+ * footerLinks carries the site's full existing footer_links (9 items,
+ * unchanged) rather than kit convention's legal-only subset, so this package
+ * cannot regress the link floor: everything that linked before still does.
+ *
+ * Wordmark icon/lockup: DESIGN_DELTA.md §1 flags this as an owner BLOCKER,
+ * PROPOSED but not yet picked. Using the delta's own proposal (lucide
+ * FileBadge, "CONTRACTOR TAX" / "ACCOUNTANTS · IR35 SPECIALISTS") rather
+ * than leaving the prop unfillable -- the kit's type requires it. One-line
+ * revert if the owner picks differently or picks the Briefcase fallback.
+ */
 export function SiteFooter() {
-  const year = new Date().getFullYear();
-
-  const links = siteConfig.footer;
-  const colSize = Math.ceil(links.length / 3);
-  const col1 = links.slice(0, colSize);
-  const col2 = links.slice(colSize, colSize * 2);
-  const col3 = links.slice(colSize * 2);
-
   return (
-    <footer className="border-t border-neutral-200 bg-[#fafaf7]">
-      <div className={`${siteContainerLg} pt-16 pb-10 sm:pt-20 sm:pb-12`}>
-        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
-          <div className="min-w-0">
-            <div className="font-mono text-xs uppercase tracking-widest text-cyan-700">
-              {siteConfig.company.legalName}
-            </div>
-            <div className="mt-3 text-xl font-semibold tracking-tight text-neutral-900">
-              {siteConfig.name}
-            </div>
-            <p className="mt-3 max-w-sm text-sm leading-relaxed text-neutral-600">
-              {siteConfig.description}
-            </p>
-            <p className="mt-6 text-sm text-neutral-500">
-              <Link
-                href="/contact"
-                className={`text-cyan-800 hover:text-cyan-900 underline underline-offset-2 ${focusRing}`}
-              >
-                Contact us
-              </Link>
-            </p>
-          </div>
-
-          {[col1, col2, col3].map((col, i) => (
-            <div key={i} className="min-w-0">
-              <ul className="space-y-3">
-                {col.map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className={`text-sm text-neutral-600 transition-colors hover:text-neutral-900 ${focusRing}`}
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-16 border-t border-neutral-200 pt-6 space-y-3">
-          <p className="max-w-3xl text-xs leading-relaxed text-neutral-500">
-            {siteConfig.company.legalDisclosure}
-          </p>
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-xs text-neutral-500">
-              &copy; {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
-            </p>
-            <p className="text-xs text-neutral-500">
-              Specialist contractor accountants. Editorial content only. Book a call for advice specific to your situation.
-            </p>
-          </div>
-          <p className="text-xs text-neutral-500">
-            <ConsentToggle className="underline hover:no-underline text-neutral-500" />
-          </p>
-        </div>
-      </div>
-    </footer>
+    <KitSiteFooter
+      description={siteConfig.description}
+      footerLinks={siteConfig.footer}
+      legalDisclosure={siteConfig.company.legalDisclosure}
+      legalName={siteConfig.company.legalName}
+      tradingName={siteConfig.company.tradingName}
+      wordmarkIcon={FileBadge}
+      wordmarkTop="CONTRACTOR TAX"
+      wordmarkBottom="ACCOUNTANTS · IR35 SPECIALISTS"
+      consentToggle={<ConsentToggle className="text-xs text-slate-400 hover:text-white transition-colors underline hover:no-underline inline-block py-1" />}
+    />
   );
 }

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin, ArrowRight, Mail } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contractorTypes } from "@/data/contractor-types";
@@ -346,7 +346,8 @@ function HeroContent({ city }: { city: (typeof CITIES)[string] }) {
   return (
     <div className="max-w-3xl w-full">
       <Breadcrumb
-        variant="light"
+        siteUrl={siteConfig.url}
+        onDark
         items={[
           { label: "Home", href: "/" },
           { label: "Locations", href: "/locations" },

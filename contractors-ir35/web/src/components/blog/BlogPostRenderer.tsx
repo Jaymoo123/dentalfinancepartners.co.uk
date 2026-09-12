@@ -7,7 +7,8 @@ import { ToolIsland } from "@/components/blog/ToolIsland";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { buildBlogPostingJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { TableOfContents } from "@accounting-network/web-shared/content/TableOfContents";
 import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingProgress";
@@ -97,7 +98,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         <div className={`${siteContainerLg} relative z-10 h-full flex items-end pb-10 sm:pb-14`}>
           <div className="max-w-4xl">
             <Breadcrumb
-              variant="light"
+              siteUrl={siteConfig.url}
+              onDark
               items={[
                 { label: "Home", href: "/" },
                 { label: "Blog", href: "/blog" },

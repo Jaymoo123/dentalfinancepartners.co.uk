@@ -15,6 +15,18 @@
  *  - SSR-safe: renders nothing until mounted (no hydration mismatch).
  *
  * cfp_ storage keys (FROZEN). Petrol-cyan (#0e7490) brand palette.
+ *
+ * RESTYLE (P1-5, design port): visual recipe brought in line with the kit's
+ * `design/marketing/StickyCTA` (border-t-4 accent, left-rule copy block).
+ * The kit component itself is NOT imported: it
+ * renders `border-primary-600`/`bg-primary-600`/`text-primary-400`, and this
+ * site has no `primary-*` Tailwind scale (only a single `--color-primary`
+ * var, see globals.css) plus a scroll trigger (30% of scroll height, no
+ * excluded-route/converted/sessionStorage-dismiss handling) that differs
+ * from this site's shipped behaviour. Per DESIGN_DELTA.md's binding-step
+ * rule, the accent on this dark ground is cyan-400 (9.88:1 on navy), not the
+ * kit's 600 step. All existing behaviour (trigger, persistence, exclusions,
+ * intent personalisation) is preserved verbatim -- restyle only.
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -140,11 +152,11 @@ export function StickyCTA() {
     <div
       role="region"
       aria-label="Talk to a contractor tax specialist"
-      className="fixed bottom-0 left-0 right-0 z-50 bg-neutral-900 shadow-2xl"
+      className="fixed bottom-0 left-0 right-0 z-50 border-t-4 border-cyan-700 bg-neutral-900 shadow-2xl"
     >
       <div className="mx-auto flex w-full max-w-5xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
         {/* Copy block */}
-        <div className="min-w-0 flex-1">
+        <div className="min-w-0 flex-1 border-l-2 border-cyan-700 pl-3 sm:pl-4">
           <p className="truncate text-sm font-semibold text-white">
             {offer.primary}
           </p>
@@ -170,7 +182,7 @@ export function StickyCTA() {
           type="button"
           onClick={handleDismiss}
           aria-label="Dismiss"
-          className="shrink-0 rounded p-1 text-neutral-400 transition-colors duration-150 hover:bg-neutral-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500"
+          className="shrink-0 rounded-lg p-1 text-neutral-400 transition-colors duration-150 hover:bg-neutral-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500"
         >
           <svg
             aria-hidden="true"

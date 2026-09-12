@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } from "@/lib/blog";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
 import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
 
@@ -40,7 +40,8 @@ export default function BlogIndexPage() {
       <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Breadcrumb
-            variant="light"
+            siteUrl={siteConfig.url}
+            onDark
             items={[
               { label: "Home", href: "/" },
               { label: "Blog" },
