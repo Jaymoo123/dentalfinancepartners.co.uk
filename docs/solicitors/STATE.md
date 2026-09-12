@@ -18,6 +18,11 @@ dev server, and ONE owner-triggered cutover deploy from a clean worktree at a pu
 knowingly re-baselines roughly 41 `monitored_pages` rows. The highest-stakes open item is the
 legal-page compliance rewrite, which is the only one with regulatory weight.
 
+**Independent post-build verification pass, `fc04db4b`, 2026-09-11.** A later, independent
+pass re-measured the six-phase gates from a fresh build and they held. It found one real open
+breach, plus several previously-recorded claims that it falsified on re-check. It changed no
+site code. See that commit for the detail rather than restating it here.
+
 **Read in this order before acting:**
 1. `docs/_engines/DESIGN_PORT_PLAYBOOK.md` in full. Section 12 is your job description
    (you orchestrate, you do not write page code), section 13 is the concurrency protocol,

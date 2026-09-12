@@ -770,6 +770,14 @@ baseline is UNUSABLE until the port replaces those values with real ramp classes
 overflow and anchor halves are sound. Take contrast decisions from a hand-computed table,
 self-tested against slate-500 on white = 4.76 and slate-400 on white = 2.56, and re-capture
 the browser baseline after phase 1. Never hand the owner its raw contrast output.
+QUALIFIED 2026-09-11 (Trade): this trap is conditional on HOW a site is themed, not a blanket
+property of the instrument. The contrast path paints the colour onto a 1x1 canvas and reads the
+pixel back, so it resolves `oklch()` literals and named ramp utilities exactly; Trade's 11:31
+capture carried `oklch()` colours on 2,586 of its 5,466 findings and 0 unparseable colours. What
+defeats it is the unresolvable `var()` chain above, not the colour space. The test is the
+instrument's OWN self-test line plus its unparseable-colour count on the site in front of you,
+never an assumption either way. See `PORT_FIELD_NOTES.md` section 5, "the instrument was blind"
+entry, for the incident where assuming it cost a whole record set.
 
 **T26. Dropping a font leaves its classes pointing at Times.** Retiring a second typeface
 is one line; the 193 `font-serif` classes consuming it are spread across page files that

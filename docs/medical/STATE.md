@@ -327,8 +327,8 @@ it.
 
 ## 2026-09-11 - DESIGN PORT PHASE 6 (contact, about, legal, research, interruptive, machine surfaces, retirements). THE PORT IS BUILT. Nothing deployed.
 
-Last build phase. One review round, then a fix pass. Phases 0 to 6 are all committed and tagged;
-production still serves `18b4f25f`.
+Last build phase. One review round, then a fix pass. Phases 0 to 6 are all committed and tagged
+(phase 6: `port-medical-phase6` @ `53b4b09d`); production still serves `18b4f25f`.
 
 **What landed.** `/about` and `/contact` rewritten to the partner-network truth; the cookie policy
 rewritten in full and the privacy policy corrected; `/terms` restyled; `/research` and its index;

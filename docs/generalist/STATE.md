@@ -34,6 +34,10 @@
 > rates, newsletter, legal, interruptive restyle, /team deletion; PASS-WITH-GAPS, fixed).
 > Commits: `a8ba8456` `f96f9d9a` `78fea266` `c0fb02d8` `9c00ad35` `63cf2d5c`.
 >
+> **Tags.** Phases 1, 2 and 3 were tagged at the time. Phases 4, 5 and 6 were built and
+> reviewed but went untagged in the moment; they have now been tagged retroactively at
+> `c0fb02d8` (phase 4), `9c00ad35` (phase 5) and `63cf2d5c` (phase 6).
+>
 > **Verification at close** (re-run after every content change, not once):
 > build 818/818 pages (820 less the two deleted /team routes), generalist 309 tests,
 > web-shared 406 tests, `check_dependency_closure.py` OK across 19 sites, and a crawl of
@@ -142,10 +146,12 @@
 > and build/test green (`aeec8f13` capture machinery + resultWrapper on the shared
 > renderer, web-shared 406 green, closure OK x19; `fcd61b7b` tabs + F.5 templates +
 > two-tier index, 308 tests, 820/820 pages) but its fidelity review was stopped at
-> session close: **RE-RUN IT before tagging phase 4** (prompt pattern = the phase 3
-> review; must check gate UX end-to-end, embeds ungated, premium re-key isolation,
-> index tabs/buckets, link floors, and the amber Employment Allowance warning inside
-> EmployerNICalculator, which likely needs the approved violet warning ramp).
+> session close with the instruction to re-run it before tagging phase 4 (prompt pattern =
+> the phase 3 review; must check gate UX end-to-end, embeds ungated, premium re-key
+> isolation, index tabs/buckets, link floors, and the amber Employment Allowance warning
+> inside EmployerNICalculator, which likely needs the approved violet warning ramp).
+> **CLOSED: the review was re-run (see the 2026-09-10 entry above) and phase 4 is now
+> tagged at `c0fb02d8`.**
 > Highlights landed: O.8 KIT PARITY PASSED (byte-identical geometry vs Property);
 > /blog served HTML ~9MB -> 1.37MB with 461 crawl links kept; link floor UP on every
 > reviewed route; 11 hub briefings dual-QA'd (a real HP defect found + corrected: CT

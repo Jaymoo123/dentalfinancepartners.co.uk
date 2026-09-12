@@ -2,8 +2,8 @@
 
 ## PICKUP BLOCK (read this first) - design port, 2026-09-11
 
-**Where it stands.** The Property-standard design port is at **PHASES 0 TO 4 COMPLETE, COMMITTED
-AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Phases 5 and 6 are PLANNED but NOT BUILT.
+**Where it stands.** The Property-standard design port is at **PHASES 0 TO 5 COMPLETE, COMMITTED
+AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Phase 6 is PLANNED but NOT BUILT.
 
 | phase | tag | commit |
 | --- | --- | --- |
@@ -12,6 +12,7 @@ AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Phases 5 and 6 are PLANNED but N
 | 2 | `port-construction-cis-phase2` | `6575bbb6` |
 | 3 | `port-construction-cis-phase3` | `72fe3261` |
 | 4 | `port-construction-cis-phase4` | `72fe3261` |
+| 5 | `port-construction-cis-phase5` | `dd935a98` (build `da7ec668`, gap-fixes `aab3886b`, `8ea5aea9`, `05ddb709`, artefacts `32dc4c90`) |
 
 Note the last row: **phases 3 and 4 landed in ONE commit**, so the two tags point at the same
 object. **`git diff port-construction-cis-phase3..port-construction-cis-phase4` is therefore an
@@ -40,19 +41,21 @@ history, but it does need all nine.
    `docs/construction-cis/house_positions.md` - the latter is ground truth and it currently
    contradicts itself in the places listed under owner decisions 1 and 2.
 
-**Phases 5 and 6 are PLANNED, NOT BUILT.** Their plans are `_port/PHASE5_PLAN.md` (702 lines) and
-`_port/PHASE6_PLAN.md` (779 lines). Both were written before the phase 3/4 commit landed, so read
-the commit message alongside them.
+**Phase 5 is now built, committed and tagged (see the table above). Phase 6 is PLANNED, NOT
+BUILT.** Its plan is `_port/PHASE6_PLAN.md` (779 lines); phase 5's plan, `_port/PHASE5_PLAN.md`
+(702 lines), is now a build record rather than a forward plan. Both were written before the
+phase 3/4 commit landed, so read the commit message alongside them.
 
-**The measured state, verified.** Every number below is from the verification run recorded in
-`72fe3261`. Build green at **275 pages**. **422 tests across 26 files.** Dependency closure OK
-across **19 sites**. Sweep **246 of 246 routes clean**, **0 dead internal links**, **0 link-floor
-breaches at 6,746 links**. Dashes at **2**, and the 2 are the protected en-dashes inside money
-ranges (`cis-self-assessment-calculator.ts:125`, `cis-vs-paye-comparison.ts:113`, TD-28); a builder
-told to reach zero would corrupt two correct figures. **Ten `data-cta` triples**, with the locked
-five byte-identical at **246 / 246 / 109 / 18 / 1**. Section grounds: **dark-on-dark 4** and
-**adjacent bands sharing a ground 2**, down from 29 and 48, and the survivors are exactly the
-Phase 5 and Phase 6 routes that own them (`_port/GROUNDS_BASELINE.md` section 7).
+**The measured state below was captured at `72fe3261`, BEFORE phase 5 landed. It is now stale
+and must be re-measured against phase 5's commits.** Build was green at **275 pages**. **422
+tests across 26 files.** Dependency closure OK across **19 sites**. Sweep **246 of 246 routes
+clean**, **0 dead internal links**, **0 link-floor breaches at 6,746 links**. Dashes at **2**, and
+the 2 were the protected en-dashes inside money ranges (`cis-self-assessment-calculator.ts:125`,
+`cis-vs-paye-comparison.ts:113`, TD-28); a builder told to reach zero would corrupt two correct
+figures. **Ten `data-cta` triples**, with the locked five byte-identical at **246 / 246 / 109 /
+18 / 1**. Section grounds: **dark-on-dark 4** and **adjacent bands sharing a ground 2**, down from
+29 and 48 at that point (`_port/GROUNDS_BASELINE.md` section 7). None of this reflects phase 5's
+own changes; re-run the sweep before quoting any of these numbers as current.
 
 **What phases 3 and 4 achieved.** Phase 3 took the `/for`, `/locations`, `/glossary` and
 `/resources` families, 126 of 246 routes; phase 4 took the calculator fleet and `/embed`. Eight
@@ -140,7 +143,7 @@ that names s.72A is legitimate, and flagging it would fire on correct published 
    Flipping one string publishes all 11 in one commit. TD-02: strip the figures from the variant so
    the switch is safe to throw, or accept the risk in writing.
 
-**What the next session must do first, before Phase 5.**
+**What the next session must do first, before Phase 6.**
 1. ~~Re-capture `_port/browser_baseline.json`.~~ **DONE 2026-09-11 19:55, and it disproved the
    reason it was ordered.** This item previously said the 11:31 capture was taken while
    `browser_check.mjs` was "oklch-blind on contrast", so every oklch-coloured element was ABSENT
@@ -158,7 +161,7 @@ that names s.72A is legitimate, and flagging it would fire on correct published 
    0 unparseable colours. Write-up: `_port/BROWSER_BASELINE_RECAPTURE.md`. The GROUNDS defect
    behind `bf231f1a` was real and is unaffected; see the READ FIRST block at
    `_port/GROUNDS_BASELINE.md:3`.
-2. **Then Phase 5, per `_port/PHASE5_PLAN.md`.**
+2. **Then Phase 6, per `_port/PHASE6_PLAN.md`.** Phase 5 is already built (see the table above).
 
 **Owner decisions already taken 2026-09-11, do not re-ask.**
 - Brand stays orange (`#f97316` = orange-500). Warning and penalty semantics move OFF orange.

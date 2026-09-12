@@ -1,15 +1,19 @@
 # Dentists — program state (living heartbeat)
 
-> ## PICKUP — design port, PHASE 1 COMPLETE + TAGGED 2026-09-11. NOTHING DEPLOYED.
+> ## PICKUP - design port, ALL SIX PHASES BUILT, REVIEWED AND TAGGED. NOTHING PUSHED, NOTHING DEPLOYED.
 >
-> Tag `port-dentists-phase1`. Commits: `9936547a` (phase 0), `e62029fa` (owner decisions),
-> `f1197d7a` (brand layer + content remediation), the fix pass (swept into `f75438bf`, see
-> below), `f1df9e93` (phase 1 close). Production is still `18b4f25f`.
+> Phase 0: `9936547a`. Then tag + commit per phase:
+> `port-dentists-phase1` @ `f1df9e93`, `port-dentists-phase2` @ `3f2d4d35`,
+> `port-dentists-phase3` @ `39d8a797`, `port-dentists-phase4` @ `5d2f0236`,
+> `port-dentists-phase5` @ `6f986cf3`, `port-dentists-phase6` @ `bdb3f5e7`.
+> (Phase 1 also carries the interim commits `e62029fa`, owner decisions, and `f1197d7a`,
+> brand layer + content remediation, plus the fix pass swept into `f75438bf`, see below.)
+> Main is well ahead of origin; nothing here is pushed. Production is still `18b4f25f`.
 >
-> **NEXT: phase 2, chrome adoption.** Plan written and verified:
-> `docs/dentists/_port/PHASE2_BUILD_PLAN.md` (753 lines, 5 work packages, WP1/WP3/WP4
-> concurrent then WP2 serial). Phase 3 plan is `PHASE3_BUILD_PLAN.md`, phases 4-6 scope is
-> `PHASE456_SCOPE.md`. Read those before re-planning anything.
+> **NEXT: owner walk, then owner decisions, then an owner-triggered deploy.** There is no
+> further build work queued; phases 0-6 are done. `PHASE3_BUILD_PLAN.md` and
+> `PHASE456_SCOPE.md` are build RECORDS of what shipped, not forward plans, read them for
+> history, not for a next step.
 >
 > **DO NOT RE-ASK THESE. Owner decisions taken 2026-09-11:** navy primary ramp with gold
 > demoted to a non-text accent; warning ladder D-W1 (red-600 / pink-700 / purple-800);
@@ -20,7 +24,8 @@
 > ruled estate-wide (`6966c1f1`) that the studio credit STAYS, so phase 2 passes nothing
 > for `showBuilderCredit` and inherits `true`.
 >
-> **Phase 1 verification at close** (re-run after the last content change, not once):
+> **Phase 1 close verification, superseded by phases 2-6, do not quote these as current
+> state** (re-run after the last content change, not once):
 > build 321/321 exit 0, page count unchanged from the pre-port baseline; tsc clean;
 > tests 434/434; dependency closure OK across 19 sites; frontmatter parses on all 235
 > content files; sweep against the production-SHA baseline = 283/283 URLs clean,
@@ -33,8 +38,8 @@
 > floor, and two inherited accessibility defects (the focus ring measured 1.90 on this
 > site's navy ground; `.section-label` was gold-on-white at 3.76).
 >
-> **THE THREE THINGS THAT NEARLY SHIPPED, each caught by a different check. Read these
-> before phase 2, because phase 2 touches the same surfaces:**
+> **THE THREE THINGS THAT NEARLY SHIPPED during phase 1, each caught by a different check.
+> Kept here because later phases touched the same surfaces:**
 > 1. **The port made the hero CTA invisible.** Moving `btnPrimary` to navy put it on
 >    sections whose own ground is the same `#001b3d`: measured 1.00. The white label read,
 >    the button had no shape. Caught by the adversarial review, NOT by the build, the tests
