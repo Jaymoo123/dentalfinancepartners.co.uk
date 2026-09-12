@@ -37,7 +37,7 @@ const reports = [
   {
     href: "/research/uk-construction-insolvency-index",
     title: "UK Construction Insolvency Index",
-    blurb: `Construction insolvencies rose ${insolv.headline.decade.change_pct?.toFixed(0) ?? "n/a"}% from ${insolv.headline.decade.from_year} to ${insolv.headline.decade.to_year}, now broken down by building, civil engineering and specialised trades. The sector consistently accounts for around 17% of all company insolvencies in England and Wales.`,
+    blurb: `Construction insolvencies rose ${insolv.headline.decade.change_pct?.toFixed(0) ?? "n/a"}% from ${insolv.headline.decade.from_year} to ${insolv.headline.decade.to_year}, now broken down by building, civil engineering and specialised trades. Creditors Voluntary Liquidation is the dominant procedure, and its share has risen across the series.`,
     stat: fmtNumber(insolv.headline.ttm_total),
     statLabel: "construction company insolvencies in the trailing 12 months",
     updated: insolvMonthLabel(insolv.meta.data_through),
@@ -65,7 +65,7 @@ export default function ResearchIndexPage() {
     <>
       <section className="bg-neutral-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Research" }]} />
+          <Breadcrumb variant="light" items={[{ label: "Home", href: "/" }, { label: "Research" }]} />
           <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Construction industry research and data
           </h1>
@@ -83,15 +83,15 @@ export default function ResearchIndexPage() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-2xl border border-neutral-200 p-6 transition hover:border-orange-500 hover:shadow-md sm:p-8"
+                className="group rounded-xl p-6 ring-1 ring-neutral-200 transition hover:ring-primary-500 hover:shadow-md sm:p-8"
               >
-                <div className="text-3xl font-bold text-orange-600 sm:text-4xl">{r.stat}</div>
+                <div className="text-3xl font-bold tabular-nums text-primary-700 sm:text-4xl">{r.stat}</div>
                 <div className="mt-1 text-sm text-neutral-500">{r.statLabel}</div>
-                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-orange-600">
+                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-primary-700">
                   {r.title}
                 </h2>
                 <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
-                <p className="mt-4 text-xs text-neutral-400">Updated {r.updated}</p>
+                <p className="mt-4 text-xs text-neutral-600">Updated {r.updated}</p>
               </Link>
             ))}
           </div>

@@ -18,6 +18,11 @@ import {
 } from "@/components/ui/chart";
 import type { PprCompanyRow } from "@/lib/research/ppr-league";
 
+/* The Recharts hover band. Was a raw rgba() of the brand hex, repeated in
+   every chart file: a re-hue in globals.css would have missed all of them.
+   --chart-1 IS that hex, so this is the same pixel, sourced from the token. */
+const CHART_CURSOR_FILL = "color-mix(in srgb, var(--chart-1) 8%, transparent)";
+
 function shortName(name: string, max = 22): string {
   const cleaned = name.replace(/\s+LIMITED$|\s+LTD$|\s+PLC$/i, "");
   return cleaned.length > max ? `${cleaned.slice(0, max - 1)}…` : cleaned;
@@ -67,7 +72,7 @@ export function SlowestPayersChart({
           fontSize={11}
         />
         <ChartTooltip
-          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          cursor={{ fill: CHART_CURSOR_FILL }}
           content={
             <ChartTooltipContent
               indicator="dot"

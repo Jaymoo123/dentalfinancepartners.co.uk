@@ -27,8 +27,11 @@
  * reverted. The gate fails closed in the other direction too: a lead whose stored
  * `consent_text` drifts off the anchor list is locked out of the pool for ever.
  *
- * >>> WHEN YOU FIX TD-15 (point DetailsForm at `siteConfig.leadConsentText`):
- * >>> delete the `.fails` on the last test and delete this note.
+ * TD-15 IS FIXED (phase 6 / P6-C, owner gate 1). `DetailsForm` now renders
+ * `siteConfig.leadConsentText` plus the same Privacy Policy link every other
+ * capture surface appends, so the last test is a live assertion rather than an
+ * `it.fails` placeholder. The `.fails` and the fix-me note it carried were
+ * deleted in the same commit, on this file's own written instruction.
  */
 import { describe, it, expect } from "vitest";
 import { readFileSync, existsSync } from "fs";
@@ -78,7 +81,7 @@ describe("consent wording reaches every capture surface", () => {
     expect(readFileSync(path, "utf8").length).toBeGreaterThan(500);
   });
 
-  it.fails("DetailsForm carries the canonical consent wording (TD-15)", () => {
+  it("DetailsForm carries the canonical consent wording (TD-15)", () => {
     const src = read("components", "forms", "DetailsForm.tsx");
     expect(
       /siteConfig\.leadConsentText/.test(src),

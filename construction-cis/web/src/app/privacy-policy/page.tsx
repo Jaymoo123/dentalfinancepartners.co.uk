@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { contentNarrow, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
@@ -14,6 +15,7 @@ export default function PrivacyPolicyPage() {
   return (
     <section className="bg-white">
       <div className={`${contentNarrow} ${sectionYLoose}`}>
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Privacy policy" }]} />
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Privacy policy</h1>
         <p className="mt-4 text-sm text-neutral-500">Last updated: 10 August 2026</p>
         <div className="prose-blog mt-10 space-y-6">
@@ -38,7 +40,7 @@ export default function PrivacyPolicyPage() {
           </ul>
           <p>
             If you have any questions about this policy or wish to exercise your rights, please contact us through our{" "}
-            <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">contact page</Link>.
+            <Link href="/contact" className="text-primary-700 underline underline-offset-2 hover:text-primary-800">contact page</Link>.
           </p>
 
           <h2>2. What information we collect</h2>
@@ -58,10 +60,17 @@ export default function PrivacyPolicyPage() {
               to and the date and time you agreed, so we can show that consent was given.
             </li>
             <li>
+              {/* TD-17, gate 2. "an approximate country" understated the live
+                  handler, which records country, city, region AND timezone
+                  (packages/web-shared/analytics/server/createTrackHandler.ts:231-234,
+                  written at :148-151) against a persistent visitor id. The IP
+                  itself genuinely is not stored, so that half stands. Same
+                  correction as /cookie-policy, worded to match it. */}
               <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages
-              viewed, device and browser type, and an approximate country derived from your IP address). Our hosting
+              viewed, device and browser type, and the approximate location our hosting provider derives from your
+              IP address: country, city, region and timezone). We do not store the IP address itself. Our hosting
               provider may also log technical request data for security and performance. See our{" "}
-              <Link href="/cookie-policy" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">cookie policy</Link> for detail.
+              <Link href="/cookie-policy" className="text-primary-700 underline underline-offset-2 hover:text-primary-800">cookie policy</Link> for detail.
             </li>
           </ul>
           <p>
@@ -182,7 +191,7 @@ export default function PrivacyPolicyPage() {
           </ul>
           <p>
             To exercise any of these rights, please contact us through our{" "}
-            <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">contact page</Link>.
+            <Link href="/contact" className="text-primary-700 underline underline-offset-2 hover:text-primary-800">contact page</Link>.
             We will respond within one month.
           </p>
           <p>
@@ -192,18 +201,25 @@ export default function PrivacyPolicyPage() {
               href="https://ico.org.uk/make-a-complaint/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-700 underline underline-offset-2 hover:text-orange-800"
+              className="text-primary-700 underline underline-offset-2 hover:text-primary-800"
             >
               ico.org.uk/make-a-complaint
             </a>
             . We would, however, welcome the chance to address your concerns first.
           </p>
 
-          <h2>8. Cookies and analytics</h2>
+          <h2>8. Cookies, browser storage and analytics</h2>
           <p>
-            We use cookies and similar technologies for analytics, so we can understand how the Site is used and
-            improve it. For full details of what we use and how to manage or opt out, please see our{" "}
-            <Link href="/cookie-policy" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">cookie policy</Link>.
+            {/* TD-36. "cookies and similar technologies" was already the right
+                shape here, but the analytics path sets no cookies at all
+                (0 hits for document.cookie across src and
+                packages/web-shared/analytics); it uses browser storage. Named
+                explicitly so this page and /cookie-policy describe the same
+                mechanism. */}
+            We use cookies and similar technologies, including browser storage, for analytics, so we can
+            understand how the Site is used and improve it. For full details of what we use and how to manage or
+            opt out, please see our{" "}
+            <Link href="/cookie-policy" className="text-primary-700 underline underline-offset-2 hover:text-primary-800">cookie policy</Link>.
           </p>
 
           <h2>9. How we protect your data and international transfers</h2>
@@ -224,7 +240,7 @@ export default function PrivacyPolicyPage() {
           <p>
             If you have any questions about this privacy policy or how we handle your data, please contact us through
             our{" "}
-            <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">contact page</Link>.
+            <Link href="/contact" className="text-primary-700 underline underline-offset-2 hover:text-primary-800">contact page</Link>.
           </p>
         </div>
       </div>

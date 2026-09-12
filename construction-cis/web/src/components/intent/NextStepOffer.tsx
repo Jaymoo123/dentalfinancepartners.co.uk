@@ -14,6 +14,7 @@
  */
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
+import { btnPrimary } from "@/components/ui/layout-utils";
 
 export function NextStepOffer() {
   const action = useIntent("next_step");
@@ -28,18 +29,18 @@ export function NextStepOffer() {
         : "Talk to a specialist";
 
   return (
-    <aside className="my-10 rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8">
+    <aside className="my-10 rounded-xl border border-primary-200 bg-primary-50 p-6 sm:p-8">
       <p className="text-xs font-bold uppercase tracking-wider text-[var(--accent-strong)]">
         {offer.reason}
       </p>
-      <h3 className="mt-2 text-xl font-bold text-slate-900">{offer.title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-slate-700">{offer.blurb}</p>
+      <h3 className="mt-2 text-xl font-bold text-[var(--ink)]">{offer.title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{offer.blurb}</p>
       <Link
         href={offer.href}
         data-cta="next_step"
         data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
         onClick={() => trackPersonalization("clicked", action)}
-        className="mt-5 inline-flex items-center justify-center rounded-lg bg-[var(--btn-ground)] px-5 py-2.5 font-semibold text-white hover:bg-[var(--btn-ground-hover)]"
+        className={`${btnPrimary} mt-5`}
       >
         {buttonLabel}
       </Link>

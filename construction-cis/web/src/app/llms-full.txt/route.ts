@@ -1,6 +1,7 @@
 import { buildLlmsFullRoute } from "@accounting-network/web-shared/content/llmsFull";
 import { niche } from "@/config/niche-loader";
 import { GLOSSARY } from "@/app/glossary/[slug]/data";
+import { allTools } from "@/lib/calculators/registry";
 
 export const runtime = "nodejs";
 export const maxDuration = 10;
@@ -29,7 +30,22 @@ function buildGlossarySection(domain: string): string {
   return lines.join("\n");
 }
 
+/**
+ * The calculator fleet, derived from the registry. It used to be a hand-typed
+ * list and had drifted to 8 of the 12 live tools, so four calculators were
+ * invisible to every AI retrieval of this file. Derived means it cannot drift
+ * again: adding a tool to the registry adds it here.
+ */
+function buildCalculatorSection(domain: string): string {
+  return allTools()
+    .map((t) => `
+- ${t.name} · https://${domain}/calculators/${t.slug}
+  ${t.oneLiner}`)
+    .join("");
+}
+
 const glossarySection = buildGlossarySection(niche.domain);
+const calculatorSection = buildCalculatorSection(niche.domain);
 
 export const GET = buildLlmsFullRoute({
   siteUrl: `https://${niche.domain}`,
@@ -39,38 +55,15 @@ This file is a flat, machine-readable dump of every published post on
 ${niche.domain}. It exists for AI retrieval, training, and citation.
 The structured index lives at https://${niche.domain}/llms.txt.
 
-Editorial: all figures use current UK rates. Always verify against gov.uk for
-time-sensitive decisions. For advice specific to your CIS position and tax
-affairs, see https://${niche.domain}/contact.
+Editorial: each article states the tax year and the rates it is written against.
+Rates change, and an older article may describe a superseded position, so always
+check the date on the article and verify against gov.uk before acting. For advice
+specific to your CIS position and tax affairs, see https://${niche.domain}/contact.
 
 ## FREE CIS CALCULATORS
 
 The following free calculators are available on this site:
-
-- CIS Refund Estimator · https://${niche.domain}/calculators/cis-refund-estimator
-  Estimate your annual CIS tax refund after deductions, materials, expenses and personal allowance.
-
-- CIS Take-Home Calculator · https://${niche.domain}/calculators/cis-take-home-calculator
-  See your net take-home from a CIS invoice after the deduction, with annualised view.
-
-- CIS Deduction Calculator · https://${niche.domain}/calculators/cis-deduction-calculator
-  Work out the correct CIS deduction to withhold from a subcontractor payment (contractor-side).
-
-- CIS Self Assessment Calculator · https://${niche.domain}/calculators/cis-self-assessment-calculator
-  Calculate your annual Self Assessment liability and whether you are owed a refund or owe a balance.
-
-- CIS GPS Eligibility Checker · https://${niche.domain}/calculators/cis-gps-eligibility-checker
-  Check whether you qualify for Gross Payment Status and eliminate the 20% deduction entirely.
-
-- CIS vs PAYE Comparison · https://${niche.domain}/calculators/cis-vs-paye-comparison
-  Compare take-home pay as a CIS subcontractor versus PAYE employment at the same gross earnings.
-
-- CIS Invoice Splitter · https://${niche.domain}/calculators/cis-invoice-splitter
-  Split a CIS invoice correctly between labour and materials to avoid being over-deducted.
-
-- CIS Back Years Calculator · https://${niche.domain}/calculators/cis-back-years-calculator
-  Estimate your cumulative CIS refund across up to four previous tax years.
-
+${calculatorSection}
 ${glossarySection}`,
   sections: [
     { dir: "blog", prefix: "blog", title: "BLOG POSTS" },

@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
-import { LeadForm } from "@/components/forms/LeadForm";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { ResearchLayout } from "@/components/research/ResearchLayout";
+import { ResearchSection, FigureCard, DataTableWrap } from "@/components/research/ResearchSection";
+import { btnOnDark, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { SurvivalCurveChart, OneYearTrendChart } from "@/components/research/SurvivalIndexCharts";
@@ -123,96 +122,64 @@ const datasetSchema = {
 };
 
 // ---------------------------------------------------------------------------
-// Presentational helpers
-// ---------------------------------------------------------------------------
-
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
-      <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
-    </section>
-  );
-}
-
-// ---------------------------------------------------------------------------
 
 export default function UKConstructionSurvivalIndexPage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
-      />
-
-      {/* Hero */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Research", href: "/research" },
-              { label: "UK Construction Survival Index" },
-            ]}
-          />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-orange-400">
-            UK Construction Survival Index
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            {HEADLINE_SENTENCE}
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
-            How long UK construction businesses actually last, tracked cohort by cohort from ONS
-            Business Demography data, and compared against the all-industries UK average.
-          </p>
-
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <Stat
-              value={fmtPct(headline.latest_5yr_construction_pct)}
-              label={`of construction businesses born in ${headline.latest_5yr_cohort_year} survived 5 years`}
-            />
-            <Stat
-              value={fmtPointsDiff(headline.latest_5yr_construction_pct, headline.latest_5yr_all_industries_pct)}
-              label="vs the all-industries 5-year survival rate"
-            />
-            <Stat
-              value={fmtPct(headline.latest_1yr_construction_pct)}
-              label={`survived their first year (${headline.latest_1yr_cohort_year} cohort, most recent data)`}
-            />
-            <Stat
-              value={fmtNumber(latestCohort?.construction.births ?? null)}
-              label={`new construction enterprises born in ${latestCohort?.birth_year}`}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
-        <div className={siteContainerLg}>
-          <div className="max-w-4xl">
-
-            {/* Key findings */}
-            <div className="rounded-2xl border border-orange-500/20 bg-orange-50/60 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-orange-800">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
+    <ResearchLayout
+      schemas={[articleSchema, datasetSchema, buildFaqPageJsonLd(faqs)]}
+      breadcrumbLabel="UK Construction Survival Index"
+      eyebrow="UK Construction Survival Index"
+      headline={HEADLINE_SENTENCE}
+      intro={
+        <>
+          How long UK construction businesses actually last, tracked cohort by cohort from ONS
+          Business Demography data, and compared against the all-industries UK average.
+        </>
+      }
+      heroCtas={
+        <>
+          <Link
+            href="#book"
+            data-cta="research_survival_hero_book"
+            data-cta-placement="hero"
+            data-cta-goal="form"
+            className={btnPrimary}
+          >
+            Get a free CIS review
+          </Link>
+          <Link
+            href={`${PAGE_PATH}/data`}
+            data-cta="research_survival_hero_data"
+            data-cta-placement="hero"
+            className={btnOnDark}
+          >
+            Download the data (CSV)
+          </Link>
+        </>
+      }
+      stats={[
+        {
+          value: fmtPct(headline.latest_5yr_construction_pct),
+          label: `of construction businesses born in ${headline.latest_5yr_cohort_year} survived 5 years`,
+        },
+        {
+          value: fmtPointsDiff(
+            headline.latest_5yr_construction_pct,
+            headline.latest_5yr_all_industries_pct,
+          ),
+          label: "vs the all-industries 5-year survival rate",
+        },
+        {
+          value: fmtPct(headline.latest_1yr_construction_pct),
+          label: `survived their first year (${headline.latest_1yr_cohort_year} cohort, most recent data)`,
+        },
+        {
+          value: fmtNumber(latestCohort?.construction.births ?? null),
+          label: `new construction enterprises born in ${latestCohort?.birth_year}`,
+        },
+      ]}
+      keyFindings={
+        <>
                 <li>
                   Of the {fmtNumber(latestCohort?.construction.births ?? null)} construction
                   enterprises born in {headline.latest_5yr_cohort_year},{" "}
@@ -222,14 +189,15 @@ export default function UKConstructionSurvivalIndexPage() {
                 </li>
                 <li>
                   Construction&apos;s survival advantage widens the longer a business has been
-                  trading: at year 2 the gap over the all-industries average is under 1 percentage
-                  point in most cohorts, but by year 5 it has grown to roughly{" "}
+                  trading: at year 2 construction is ahead of the all-industries average in all four
+                  cohorts with published year-2 data, but only by 0.1 to 2.9 percentage points, and
+                  by year 5 the lead has grown to roughly{" "}
                   {fmtPointsDiff(headline.latest_5yr_construction_pct, headline.latest_5yr_all_industries_pct)}.
                 </li>
                 <li>
                   This holds despite construction being consistently the sector with the largest
                   number of company insolvencies in the UK (see our{" "}
-                  <Link href="/research/uk-construction-insolvency-index" className="font-semibold text-orange-700 hover:text-orange-800">
+                  <Link href="/research/uk-construction-insolvency-index" className="font-semibold text-primary-700 hover:text-primary-800">
                     UK Construction Insolvency Index
                   </Link>
                   ): the two measures track different things, a formal insolvency event among
@@ -241,34 +209,64 @@ export default function UKConstructionSurvivalIndexPage() {
                   survived their first year, in line with the {fmtPct(headline.latest_1yr_all_industries_pct)} all-industries
                   figure. The first year is where construction and the wider economy are most alike; the gap opens up from year 2 onwards.
                 </li>
-              </ul>
-              <p className="mt-4 text-xs text-neutral-500">
-                Source: Office for National Statistics, Business Demography (Table 4.2), under the
-                Open Government Licence v3.0. Figures may be cited with attribution to Trade Tax
-                Specialists.
-              </p>
-            </div>
-
-            <Section id="curve" title={`The survival curve: ${headline.latest_5yr_cohort_year} birth cohort`}>
+        </>
+      }
+      source={
+        <>
+          Source: Office for National Statistics, Business Demography (Table 4.2), under the
+          Open Government Licence v3.0. Figures may be cited with attribution to Trade Tax
+          Specialists.
+        </>
+      }
+      conversionTitle="Starting or running a construction business? Get your tax position right from day one."
+      conversionBody={
+        <>
+          Survival averages are no guarantee for any individual business, but cash flow
+          discipline is one of the few factors within your control. Getting CIS deductions,
+          Gross Payment Status and your Self Assessment right protects the cash your business
+          needs to see out the years where survival rates matter most.
+        </>
+      }
+      conversionCtas={
+        <>
+          <Link
+            href="/calculators/cis-refund-estimator"
+            data-cta="research_survival_cta_calculator"
+            data-cta-placement="article"
+            className="text-primary-700 hover:text-primary-800"
+          >
+            CIS refund estimator &rarr;
+          </Link>
+          <Link
+            href="/calculators/cis-gps-eligibility-checker"
+            className="text-primary-700 hover:text-primary-800"
+          >
+            GPS eligibility checker &rarr;
+          </Link>
+        </>
+      }
+      faqs={faqs}
+    >
+            <ResearchSection id="curve" title={`The survival curve: ${headline.latest_5yr_cohort_year} birth cohort`}>
               <p>
                 Of every 100 construction enterprises that started trading in{" "}
                 {headline.latest_5yr_cohort_year}, the chart tracks how many were still active at
                 each anniversary, against the same measure for all UK industries combined.
               </p>
               {latestCohort && (
-                <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <FigureCard>
                   <SurvivalCurveChart cohort={latestCohort} />
-                </div>
+                </FigureCard>
               )}
-            </Section>
+            </ResearchSection>
 
-            <Section id="cohorts" title="Survival by birth-year cohort">
+            <ResearchSection id="cohorts" title="Survival by birth-year cohort">
               <p>
                 Each row is a different birth-year cohort, tracked independently. More recent
                 cohorts have fewer years of data available; blank cells mean that survival year has
                 not yet elapsed and ONS has not yet published it.
               </p>
-              <div className="not-prose mt-4 overflow-x-auto">
+              <DataTableWrap>
                 <table className="w-full border-collapse text-sm">
                   <thead>
                     <tr className="border-b-2 border-neutral-300 text-left">
@@ -290,31 +288,31 @@ export default function UKConstructionSurvivalIndexPage() {
                         <td className="py-2 pr-4 text-right text-neutral-900">{fmtPct(c.construction.y2_pct)}</td>
                         <td className="py-2 pr-4 text-right text-neutral-900">{fmtPct(c.construction.y3_pct)}</td>
                         <td className="py-2 pr-4 text-right text-neutral-900">{fmtPct(c.construction.y4_pct)}</td>
-                        <td className="py-2 text-right font-semibold text-orange-700">{fmtPct(c.construction.y5_pct)}</td>
+                        <td className="py-2 text-right font-semibold text-primary-700">{fmtPct(c.construction.y5_pct)}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
-              </div>
+              </DataTableWrap>
               <p className="mt-4 text-sm text-neutral-600">
                 Row-by-row figures are for Construction only. The all-industries comparison figures
                 are in the CSV download below.
               </p>
-            </Section>
+            </ResearchSection>
 
-            <Section id="trend" title="1-year survival rate over time">
+            <ResearchSection id="trend" title="1-year survival rate over time">
               <p>
                 The one figure available for every cohort in the series is 1-year survival. It has
                 stayed in a narrow band, between 93 and 95%, across all five birth-year cohorts
                 published so far, showing no clear deterioration even through the post-pandemic and
                 cost-inflation period.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <FigureCard>
                 <OneYearTrendChart cohorts={cohorts} />
-              </div>
-            </Section>
+              </FigureCard>
+            </ResearchSection>
 
-            <Section id="methodology" title="Methodology and sources">
+            <ResearchSection id="methodology" title="Methodology and sources">
               <p>
                 <strong>Data source.</strong> The Office for National Statistics (ONS) Business
                 Demography release tracks &quot;enterprises&quot;, businesses registered for VAT or
@@ -348,7 +346,7 @@ export default function UKConstructionSurvivalIndexPage() {
                   <li key={s.name}>
                     <a
                       href={s.release_page}
-                      className="font-semibold text-orange-700 hover:text-orange-800"
+                      className="font-semibold text-primary-700 hover:text-primary-800"
                       rel="nofollow"
                     >
                       {s.name}
@@ -360,7 +358,7 @@ export default function UKConstructionSurvivalIndexPage() {
               <p className="text-sm">
                 <Link
                   href={`${PAGE_PATH}/data`}
-                  className="font-semibold text-orange-700 hover:text-orange-800"
+                  className="font-semibold text-primary-700 hover:text-primary-800"
                 >
                   Download the survival data (CSV)
                 </Link>
@@ -370,55 +368,8 @@ export default function UKConstructionSurvivalIndexPage() {
                 data summary and does not constitute tax or business advice on any individual
                 situation.
               </p>
-            </Section>
+            </ResearchSection>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-orange-500/20 bg-gradient-to-br from-orange-50 to-amber-50 p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-orange-700 sm:text-3xl">
-                Starting or running a construction business? Get your tax position right from day one.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Survival averages are no guarantee for any individual business, but cash flow
-                discipline is one of the few factors within your control. Getting CIS deductions,
-                Gross Payment Status and your Self Assessment right protects the cash your business
-                needs to see out the years where survival rates matter most.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
-                <Link
-                  href="/calculators/cis-refund-estimator"
-                  className="text-orange-700 hover:text-orange-800"
-                >
-                  CIS refund estimator &rarr;
-                </Link>
-                <Link
-                  href="/calculators/cis-gps-eligibility-checker"
-                  className="text-orange-700 hover:text-orange-800"
-                >
-                  GPS eligibility checker &rarr;
-                </Link>
-              </div>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Get a free CIS review" />
-              </div>
-            </div>
-
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    </ResearchLayout>
   );
 }

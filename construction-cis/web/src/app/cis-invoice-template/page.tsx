@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LeadForm } from "@/components/forms/LeadForm";
-import { btnPrimary, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -10,8 +11,14 @@ export const metadata: Metadata = {
     "Free CIS subcontractor invoice template for UK construction. Labour and materials split, CIS deduction line, plus standard VAT, domestic reverse charge and non-VAT versions. Excel and PDF.",
 };
 
+/**
+ * `slug` exists only to build the route-unique `data-cta` ids below. It is not
+ * rendered and it is not derived from `title`: a copy edit to a card heading
+ * must not silently rename a CTA id and split its vw_cta_performance history.
+ */
 const downloads = [
   {
+    slug: "reverse_charge",
     title: "Domestic reverse charge version",
     tag: "Most VAT-registered subcontractors",
     body: "For VAT-registered subcontractors supplying CIS construction services to VAT-registered, CIS-registered customers. Carries the required wording: \"Reverse charge: customer to account for VAT to HMRC\", shows the VAT amount for information and adds no VAT to the amount payable.",
@@ -19,6 +26,7 @@ const downloads = [
     pdf: "/downloads/cis-subcontractor-invoice-template-reverse-charge.pdf",
   },
   {
+    slug: "standard_vat",
     title: "Standard VAT version",
     tag: "End users and excluded supplies",
     body: "For VAT-registered subcontractors invoicing end users, intermediaries who have confirmed end-user status in writing, or supplies outside the reverse charge (zero-rated work, non-CIS supplies). Adds 20% VAT to the invoice total in the normal way.",
@@ -26,6 +34,7 @@ const downloads = [
     pdf: "/downloads/cis-subcontractor-invoice-template-standard-vat.pdf",
   },
   {
+    slug: "no_vat",
     title: "Non-VAT-registered version",
     tag: "Below the VAT threshold",
     body: "For subcontractors who are not VAT registered. No VAT lines at all: labour and materials split, CIS deduction on labour only, amount payable. If you are not VAT registered, the domestic reverse charge cannot apply to your invoices.",
@@ -80,6 +89,10 @@ const faqs = [
   },
 ];
 
+/** Light-ground secondary, matching /cis-refund's hero secondary. */
+const btnLightSecondary =
+  `inline-flex min-h-12 items-center justify-center border border-neutral-300 bg-white px-5 py-2.5 text-sm font-semibold text-neutral-900 transition-colors hover:bg-neutral-50 ${focusRing}`;
+
 export default function CisInvoiceTemplatePage() {
   return (
     <>
@@ -87,14 +100,19 @@ export default function CisInvoiceTemplatePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
-      {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1e293b] py-16 sm:py-20">
+      {/* Hero. Cream, not the untokenised #1e293b it shipped on: the dark
+          grounds on this route are spent on the chrome and the footer, and the
+          page has to tail light (DESIGN_SYSTEM section 9). Copy unchanged. */}
+      <section className="border-b border-neutral-200 bg-[var(--hero-cream)] py-16 sm:py-20">
         <div className={siteContainerLg}>
+          <Breadcrumb
+            items={[{ label: "Home", href: "/" }, { label: "CIS invoice template" }]}
+          />
           <div className="section-label mb-6">Free download</div>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             CIS subcontractor invoice template.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600">
             A free UK invoice template built for CIS subcontractors: labour and materials split out, the CIS deduction calculated on labour only, and three VAT versions including the domestic reverse charge wording HMRC requires. Excel and PDF, no email required.
           </p>
           <div className="mt-10">
@@ -105,8 +123,10 @@ export default function CisInvoiceTemplatePage() {
         </div>
       </section>
 
-      {/* Downloads */}
-      <section id="downloads" className="border-b border-neutral-200 bg-[#fafaf9]">
+      {/* Downloads. scroll-mt-24 closes TD-22: this is the target of the hero
+          CTA above, under a sticky header with smooth scrolling, so without it
+          the heading lands behind the bar. */}
+      <section id="downloads" className="scroll-mt-24 border-b border-neutral-200 bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">Downloads</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -117,18 +137,45 @@ export default function CisInvoiceTemplatePage() {
           </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-3 lg:gap-8">
             {downloads.map((d) => (
-              <article key={d.title} className="flex flex-col bg-white border border-neutral-200 border-t-4 border-t-orange-500 p-6 sm:p-8">
+              <article key={d.title} className="flex flex-col bg-white border border-neutral-200 border-t-4 border-t-[var(--btn-ground)] p-6 sm:p-8">
                 <div className="text-xs font-bold uppercase tracking-wider text-[var(--accent-strong)]">{d.tag}</div>
                 <h3 className="mt-2 text-lg font-bold text-neutral-900">{d.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">{d.body}</p>
+                {/* ADDITIVE ids, one per affordance, on the <a> itself and never
+                    on the wrapping card: autoCapture resolves through
+                    closest("[data-cta]"), so an id on the <article> would
+                    attribute every click in the card, including the body text,
+                    to the download (commit 05ddb709). goal="download" is new
+                    vocabulary, and it is what the click does: these buttons
+                    fetch a file, they do not reach a form or /contact.
+
+                    The six ids these two lines render, written out because the
+                    cta-attribute-diff extractor reads the JSX attribute and so
+                    records the template literal rather than the values:
+                      template_invoice_xlsx_reverse_charge
+                      template_invoice_pdf_reverse_charge
+                      template_invoice_xlsx_standard_vat
+                      template_invoice_pdf_standard_vat
+                      template_invoice_xlsx_no_vat
+                      template_invoice_pdf_no_vat */}
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <a href={d.xlsx} download className={btnPrimary}>
+                  <a
+                    href={d.xlsx}
+                    download
+                    className={btnPrimary}
+                    data-cta={`template_invoice_xlsx_${d.slug}`}
+                    data-cta-placement="downloads"
+                    data-cta-goal="download"
+                  >
                     Excel (.xlsx)
                   </a>
                   <a
                     href={d.pdf}
                     download
-                    className="inline-flex items-center justify-center border border-neutral-300 bg-white px-5 py-2.5 text-sm font-semibold text-neutral-900 hover:bg-neutral-50 transition-colors"
+                    className={btnLightSecondary}
+                    data-cta={`template_invoice_pdf_${d.slug}`}
+                    data-cta-placement="downloads"
+                    data-cta-goal="download"
                   >
                     PDF
                   </a>
@@ -140,7 +187,7 @@ export default function CisInvoiceTemplatePage() {
       </section>
 
       {/* What a CIS invoice must show */}
-      <section className="border-b border-neutral-200 bg-white">
+      <section className="border-b border-neutral-200 bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">What to include</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -148,8 +195,11 @@ export default function CisInvoiceTemplatePage() {
           </h2>
           <ul className="mt-10 space-y-3">
             {mustShow.map(([title, body], i) => (
-              <li key={title} className="flex items-start gap-4 border border-neutral-200 bg-neutral-50 p-5 sm:p-6">
-                <div className="h-8 w-8 flex items-center justify-center bg-orange-500 text-white font-bold text-sm flex-shrink-0">
+              <li key={title} className="flex items-start gap-4 border border-neutral-200 bg-white p-5 sm:p-6">
+                {/* --btn-ground, not orange-500: the numeral carries information,
+                    so the 3:1 graphics floor applies and #f97316 measures 2.80
+                    behind a white glyph (DESIGN_DELTA section 1). */}
+                <div className="h-8 w-8 flex items-center justify-center bg-[var(--btn-ground)] text-white font-bold text-sm flex-shrink-0">
                   {i + 1}
                 </div>
                 <div>
@@ -159,9 +209,9 @@ export default function CisInvoiceTemplatePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-8 max-w-2xl text-sm text-neutral-500">
+          <p className="mt-8 max-w-2xl text-sm text-neutral-600">
             For the full rules on the labour and materials split, including plant hire and what counts as materials, read our guide to{" "}
-            <Link href="/blog/cis-basics/cis-invoice-splitting-labour-materials" className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800 transition-colors">
+            <Link href="/blog/cis-basics/cis-invoice-splitting-labour-materials" className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 hover:text-[var(--btn-ground-hover)] transition-colors ${focusRing}`}>
               CIS invoice splitting
             </Link>
             .
@@ -170,7 +220,7 @@ export default function CisInvoiceTemplatePage() {
       </section>
 
       {/* Reverse charge summary */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9]">
+      <section className="border-b border-neutral-200 bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">Reverse charge rules</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
@@ -191,23 +241,23 @@ export default function CisInvoiceTemplatePage() {
                 body: "The CIS deduction. It is always calculated on the labour element excluding VAT, so the reverse charge changes who accounts for the VAT, not how the CIS deduction works. Labour and materials are still split in exactly the same way.",
               },
             ].map((item) => (
-              <div key={item.heading} className="bg-white border border-neutral-200 border-t-4 border-t-orange-500 p-6 sm:p-8">
+              <div key={item.heading} className="bg-white border border-neutral-200 border-t-4 border-t-[var(--btn-ground)] p-6 sm:p-8">
                 <h3 className="text-lg font-bold text-neutral-900">{item.heading}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
               </div>
             ))}
           </div>
-          <p className="mt-8 max-w-2xl text-sm text-neutral-500">
+          <p className="mt-8 max-w-2xl text-sm text-neutral-600">
             Full guides:{" "}
-            <Link href="/blog/vat-and-mtd/vat-reverse-charge-for-cis-subcontractors" className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800 transition-colors">
+            <Link href="/blog/vat-and-mtd/vat-reverse-charge-for-cis-subcontractors" className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 hover:text-[var(--btn-ground-hover)] transition-colors ${focusRing}`}>
               the reverse charge for subcontractors
             </Link>
             ,{" "}
-            <Link href="/blog/vat-and-mtd/vat-reverse-charge-for-cis-contractors" className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800 transition-colors">
+            <Link href="/blog/vat-and-mtd/vat-reverse-charge-for-cis-contractors" className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 hover:text-[var(--btn-ground-hover)] transition-colors ${focusRing}`}>
               for contractors receiving invoices
             </Link>
             , and{" "}
-            <Link href="/blog/vat-and-mtd/vat-reverse-charge-construction" className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800 transition-colors">
+            <Link href="/blog/vat-and-mtd/vat-reverse-charge-construction" className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 hover:text-[var(--btn-ground-hover)] transition-colors ${focusRing}`}>
               how the construction reverse charge works
             </Link>
             .
@@ -215,50 +265,86 @@ export default function CisInvoiceTemplatePage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="border-b border-neutral-200 bg-white">
+      {/* FAQ. Hand-rolled <details>, the same markup the homepage and the
+          sibling template page use, and deliberately NOT the kit FaqSection:
+          that component wraps answers in a Radix AccordionContent with no
+          forceMount, so a closed answer leaves the server HTML entirely, while
+          buildFaqJsonLd above keeps asserting it. <details> is crawlable
+          closed. Same `faqs` array feeds both, so markup and schema cannot
+          drift. */}
+      <section className="border-b border-neutral-200 bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="section-label mb-4">FAQ</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             CIS invoicing questions, answered.
           </h2>
-          <div className="mt-10 space-y-6 max-w-3xl">
-            {faqs.map((f) => (
-              <details key={f.question} className="group border border-neutral-200 bg-neutral-50 p-5 sm:p-6">
-                <summary className="cursor-pointer list-none font-bold text-neutral-900 marker:content-none">
-                  {f.question}
+          <div className="mt-10 space-y-3 sm:space-y-4 max-w-3xl">
+            {faqs.map((faq) => (
+              <details key={faq.question} className="group border border-neutral-200 bg-white">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-bold text-neutral-900 hover:text-[var(--btn-ground-hover)] transition-colors list-none marker:content-none">
+                  <span>{faq.question}</span>
+                  <span
+                    className="flex-shrink-0 text-[var(--accent-strong)] transition-transform group-open:rotate-45"
+                    aria-hidden
+                  >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
+                    </svg>
+                  </span>
                 </summary>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{f.answer}</p>
+                <div className="border-t border-neutral-100 px-6 pb-6 pt-4 text-sm leading-relaxed text-neutral-600">
+                  {faq.answer}
+                </div>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-[#1e293b] py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
-            <div>
-              <div className="section-label mb-6">Beyond the template</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">
-                Over-deducted on past invoices?
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-                If contractors have been deducting CIS from your materials, or from your full invoice value, the excess is recoverable. We review your deduction statements, correct the position and claim back what you are owed. See our{" "}
-                <Link href="/cis-refund" className="font-medium text-orange-400 underline underline-offset-4 hover:text-orange-300 transition-colors">
-                  CIS refund service
-                </Link>
-                .
-              </p>
-            </div>
-            <div className="bg-white p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-neutral-900 mb-4 sm:mb-6">Ask about a CIS review</h3>
-              <LeadForm submitLabel="Request a callback" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section D.3 closing ask. This was a full-bleed #1e293b band and so the
+          last opaque band under <main>, running straight into the slate-900
+          footer: 1 of the 29 routes in the DESIGN_DELTA 3a.1 breach. `contained`
+          renders the panel on --hero-cream, so the tail is --surface (FAQ),
+          cream (panel), navy (footer). The same LeadForm is inside the panel, so
+          no capture is lost, and the heading, the body and the form title are
+          this page's own published strings rather than the component defaults
+          ("Free consultation" / "Book your free call"), which would publish new
+          copy through a default prop. Static band in the page body: nothing
+          interruptive. The wrapper carries NO data-cta (05ddb709). */}
+      <LeadCTAPanel
+        contained
+        eyebrow="Beyond the template"
+        title="Over-deducted on past invoices?"
+        description="If contractors have been deducting CIS from your materials, or from your full invoice value, the excess is recoverable. We review your deduction statements, correct the position and claim back what you are owed."
+        formTitle="Ask about a CIS review"
+        submitLabel="Request a callback"
+        proofPoints={[
+          {
+            title: "The deduction applies to labour only",
+            detail: "Materials you purchased for the job are excluded from the deduction base.",
+          },
+          {
+            title: "We read the deduction statements, not just the invoices",
+            detail: "The over-deduction shows up in what the contractor actually paid.",
+          },
+          {
+            title: "A specialist CIS accountant will be in touch",
+            detail: "Not a sales team, not a call centre.",
+          },
+        ]}
+        footnote={
+          <>
+            See our{" "}
+            <Link
+              href="/cis-refund"
+              className={`font-medium text-[var(--accent-strong)] underline underline-offset-4 ${focusRing}`}
+            >
+              CIS refund service
+            </Link>
+            .
+          </>
+        }
+      />
     </>
   );
 }

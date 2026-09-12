@@ -1,9 +1,11 @@
 # construction-cis (Trade Tax Specialists) — site state
 
-## PICKUP BLOCK (read this first) - design port, 2026-09-11
+## PICKUP BLOCK (read this first) - design port, 2026-09-12
 
-**Where it stands.** The Property-standard design port is at **PHASES 0 TO 5 COMPLETE, COMMITTED
-AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Phase 6 is PLANNED but NOT BUILT.
+**Where it stands.** The Property-standard design port is at **ALL SIX PHASES BUILT. NOTHING
+DEPLOYED, NOTHING PUSHED.** Phases 0 to 5 are committed and tagged; **phase 6 is in the WORKING
+TREE, uncommitted at the time of writing**, which is the distinction this block has been stale on
+twice, so check `git status --porcelain -- construction-cis` before you trust either half of it.
 
 | phase | tag | commit |
 | --- | --- | --- |
@@ -13,16 +15,68 @@ AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Phase 6 is PLANNED but NOT BUILT
 | 3 | `port-construction-cis-phase3` | `72fe3261` |
 | 4 | `port-construction-cis-phase4` | `72fe3261` |
 | 5 | `port-construction-cis-phase5` | `dd935a98` (build `da7ec668`, gap-fixes `aab3886b`, `8ea5aea9`, `05ddb709`, artefacts `32dc4c90`) |
+| 6 | not tagged yet | instruments `9d196493` (P6-A); P6-B, P6-C, P6-D, P6-E and P6-F in the working tree |
 
-Note the last row: **phases 3 and 4 landed in ONE commit**, so the two tags point at the same
+Note the phase 3/4 rows: **phases 3 and 4 landed in ONE commit**, so the two tags point at the same
 object. **`git diff port-construction-cis-phase3..port-construction-cis-phase4` is therefore an
-EMPTY range**: an empty diff there is correct, not a lost commit. Verify with
-`git rev-parse "port-construction-cis-phase3^{}"` and the same for phase4. Read
-`git log -1 --format=%B 72fe3261` before you touch anything; it is the full account of both phases
-and this block is a compression of it.
+EMPTY range**: an empty diff there is correct, not a lost commit.
 
-The port artefacts live in `docs/construction-cis/_port/` and the brand contract in
-`docs/construction-cis/DESIGN_DELTA.md`. The slices are the spec, this file is the state.
+**What phase 6 changed.** P6-A filed the ledger (TD-31, TD-32, TD-36 to TD-41) and authored three
+guards plus the phase-6 CTA reference. P6-B ported the two template-download pages and tagged all
+ten download affordances. P6-C took `/book`, `/complete` and `/thank-you` as one unit and swapped
+`DetailsForm`'s false "we only use this to arrange your free review" line for the real consent text
+(owner gate 1). P6-E extracted `ResearchLayout` / `ResearchSection` and the four research pages
+inherit it. P6-F restyled the interruptive stack onto the token layer, renamed `StickyCTA`'s
+attribute, derived `llms-full.txt`'s calculator list from the registry, and deleted four dead files.
+**P6-D ran last, out of order, on 2026-09-12** and took `/contact`, `/about`, `/privacy-policy`,
+`/terms` and `/cookie-policy`: navy motif heroes and `Breadcrumb` on the first two, `Breadcrumb` and
+the `text-orange-700` to `text-primary-700` tokenisation on the three legal pages, a closing
+`LeadCTAPanel` and a `#book` anchor on `/about`, `WhatToExpectCard` on `/contact`, and the gate 2 /
+gate 5 / gate 8 copy corrections. **It added NO `data-cta`**, so it moves no measurement and owes
+no new `vw_cta_performance` row.
+
+**The new `vw_cta_performance` rows, for the deploy note.** Twenty in total, every one ADDITIVE:
+six download rows on the two template pages (new goal value `download`), twelve slug-suffixed
+research rows, and **`sticky_cta` + `sticky_cta_close`**. The sticky pair is TD-32: the bar shipped
+`data-cta-id`, which `autoCapture`'s `closest("[data-cta]")` never matched, so the site's only
+persistent CTA had **never emitted a single event**. The rename starts a brand-new measurement
+stream and moves no history, because there is none to move. **Do not read either row as a
+regression.** The 25% scroll threshold was deliberately KEPT against the estate's 30% (owner gate
+4): it is a tuned local deviation. The five LOCKED triples are byte-identical, `null`s included.
+
+**WHAT IS OPEN. Read this before reporting the port complete.**
+1. ~~**P6-D never ran.**~~ **P6-D RAN 2026-09-12 and is in the working tree.** Gates 2 and 5 and
+   the `/about` half of gate 8 are now BUILT; TD-16, TD-17, TD-19, TD-36 and TD-37 are **CLOSED**
+   and TD-18 is **PARTLY closed** (`/about` only). The GA opt-out section is gone. `tsc --noEmit`
+   clean, `vitest run` **438 passed / 29 files**, both tripwires byte-unchanged, `site.ts` md5 still
+   `06814d487e10f00fc9e5780de603c30c`. **What P6-D left open, all of it OUTSIDE its five-file
+   fence and therefore reported rather than reached (DL-9):**
+   - **The "fixed fee" claim shape is on 11 source lines, not the 5 the plan assumed.** TD-18 now
+     carries the full list and the wording to use at every one. 1 fixed (`/about`), **10 live**,
+     including 3 that render on 50+ routes each (`blog/page.tsx:158`, `glossary/page.tsx:149`,
+     `glossary/[slug]/page.tsx:172`) and `src/config/service-tiers.ts:35`. TD-41's two pillar
+     instances are part of that 10.
+   - **`src/components/marketing/MarketingSections.tsx:37` republishes `/about`'s old client-base
+     claim verbatim** ("Every client we work with operates in the construction industry under CIS")
+     on the homepage AND `/contact`, because P6-C/P5 lifted the paragraph out of `/about` before
+     P6-D corrected it. Same locked rule as TD-10. `src/app/page.tsx:411` ("a large CIS client
+     base") is the sibling instance CLAIMS_REGISTER:162 already files as a live breach.
+   - **The positioning question is untouched and still owner-gated**: "We are specialist
+     accountants", "We act for", "we do the rest" and friends, ~64 lines across `trade-types.ts`,
+     `locations/[slug]/data.ts` and six other files (CLAIMS_REGISTER:166, recorded as ONE decision,
+     not 64 defects). P6-D deliberately did not re-voice `/about` alone: that would put one page out
+     of step with 200+ and pre-empt a decision the owner has not made.
+   - **`about_hero_book|hero|form`** is the one `data-cta` `/about`'s new hero link wants. P6-D did
+     not add it because `cta-attribute-diff.test.ts` is fenced off from it. Orchestrator's call.
+   Section 11d of `_port/PHASE6_PLAN.md` is now satisfied for the three legal pages.
+2. **Nothing is deployed and nothing is pushed.** Deploy is user-triggered (`standard_terms` 3).
+3. The dark-on-dark gate is **0 of 246, read off the served HTML of the 29 named routes on a
+   production build**, never off the instrument's boolean. `--grounds` has been repaired three
+   times (`4431cf4d` last), so re-derive every grounds figure rather than re-quoting one.
+4. TD-K1 and TD-K2 are handed to the orchestrator and were edited by nobody here: Trade does not
+   reach either kit module, and TD-K2's two copies have **diverged** (md5s in `PHASE6_PLAN` B5).
+5. Post-walk analytics item, not a build item: run the `personalization_shown` query before anyone
+   adds instrumentation to `DeepScrollModal`. The denominator already exists under that event name.
 
 **Read these, in this order, before you touch anything.** A fresh agent needs no conversation
 history, but it does need all nine.
@@ -32,30 +86,25 @@ history, but it does need all nine.
 2. `docs/_engines/PORT_FIELD_NOTES.md` - what actually bit the sibling ports this week.
 3. This file, whole, including the stale sections below the pickup block that are struck through.
 4. `git log -1 --format=%B 72fe3261` - the full account of phases 3 and 4.
-5. `_port/PHASE5_PLAN.md`, then `_port/PHASE6_PLAN.md` - both written BEFORE that commit landed,
-   so read them against it, not instead of it.
+5. `_port/PHASE6_PLAN.md`, starting at its "DELTA, re-derived 2026-09-12" section, which overrides
+   the body of the plan, and ending at section 10a, which records all twelve gate outcomes.
 6. `DESIGN_DELTA.md` - the brand contract, the warning ladder and the contrast tables.
-7. `_port/LIVE_DEFECTS.md` - TD-01 to TD-35 plus TD-14b/14c and TD-K1/K2.
+7. `_port/LIVE_DEFECTS.md` - TD-01 to TD-41 plus TD-14b/14c and TD-K1/K2.
 8. `_port/CLAIMS_REGISTER.md` - every published claim, with the owner-gated ones flagged.
 9. `_port/GROUNDS_BASELINE.md` (start at its READ FIRST block, `:3`) and
-   `docs/construction-cis/house_positions.md` - the latter is ground truth and it currently
-   contradicts itself in the places listed under owner decisions 1 and 2.
+   `docs/construction-cis/house_positions.md` - the latter is ground truth.
 
-**Phase 5 is now built, committed and tagged (see the table above). Phase 6 is PLANNED, NOT
-BUILT.** Its plan is `_port/PHASE6_PLAN.md` (779 lines); phase 5's plan, `_port/PHASE5_PLAN.md`
-(702 lines), is now a build record rather than a forward plan. Both were written before the
-phase 3/4 commit landed, so read the commit message alongside them.
+**Measured at the end of phase 6, in the working tree, 2026-09-12.** `npx tsc --noEmit` clean.
+`npx vitest run` **438 tests across 29 files, all green**, run from `construction-cis/web` (run it
+from the repo root and you get false failures). `src/tests/design/` holds **13 guards plus the
+`route-exists.ts` helper**, which is not a guard and is not counted. `python
+scripts/check_dependency_closure.py` OK across **19 sites**, re-run AFTER the four deletions.
+`md5sum src/config/site.ts` = `06814d487e10f00fc9e5780de603c30c`, unchanged through all six phases.
+Both tripwires, `src/tests/assistant-journey-opener.test.ts` and `src/tests/lead-payload.test.ts`,
+green and **byte-unchanged** (`git diff --stat` on both paths empty). **No build was run by any
+phase-6 package**: page counts, link floors, sweep figures and grounds figures in the sections below
+predate phase 6 and must be re-measured on a production build before they are quoted.
 
-**The measured state below was captured at `72fe3261`, BEFORE phase 5 landed. It is now stale
-and must be re-measured against phase 5's commits.** Build was green at **275 pages**. **422
-tests across 26 files.** Dependency closure OK across **19 sites**. Sweep **246 of 246 routes
-clean**, **0 dead internal links**, **0 link-floor breaches at 6,746 links**. Dashes at **2**, and
-the 2 were the protected en-dashes inside money ranges (`cis-self-assessment-calculator.ts:125`,
-`cis-vs-paye-comparison.ts:113`, TD-28); a builder told to reach zero would corrupt two correct
-figures. **Ten `data-cta` triples**, with the locked five byte-identical at **246 / 246 / 109 /
-18 / 1**. Section grounds: **dark-on-dark 4** and **adjacent bands sharing a ground 2**, down from
-29 and 48 at that point (`_port/GROUNDS_BASELINE.md` section 7). None of this reflects phase 5's
-own changes; re-run the sweep before quoting any of these numbers as current.
 
 **What phases 3 and 4 achieved.** Phase 3 took the `/for`, `/locations`, `/glossary` and
 `/resources` families, 126 of 246 routes; phase 4 took the calculator fleet and `/embed`. Eight

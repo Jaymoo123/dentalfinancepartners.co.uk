@@ -45,8 +45,11 @@ const SRC = join(__dirname, "..", "..");
 
 /** Every known-good `.eyebrow` occurrence, verified against disk. */
 const KNOWN_EYEBROW_CONSUMERS = [
-  { file: "app/about/page.tsx", line: 16 },
-  { file: "app/contact/page.tsx", line: 20 },
+  // Phase 6 / P6-D. Both heroes kept their dark bg-neutral-900 ground and
+  // their text-orange-400 (7.54 on #171717); the lines moved because the heroes
+  // gained a Breadcrumb and the TradeBackdrop motif wrapper.
+  { file: "app/about/page.tsx", line: 62 },
+  { file: "app/contact/page.tsx", line: 45 },
   { file: "app/not-found.tsx", line: 8 },
   // Phase 2 / WP-B1. The article header card's category eyebrow. LIGHT ground:
   // the card is bg-neutral-50 (#fafafa) inside a bg-white <article>, and the

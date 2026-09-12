@@ -33,6 +33,11 @@ import { monthLabel, monthLabelShort, fmtNumber, fmtPercent } from "@/lib/resear
 import type { ConstructionSegment } from "@/lib/research/construction-index";
 import type { NetFormationAnnualRow } from "@/lib/research/net-formation-index";
 
+/* The Recharts hover band. Was a raw rgba() of the brand hex, repeated in
+   every chart file: a re-hue in globals.css would have missed all of them.
+   --chart-1 IS that hex, so this is the same pixel, sourced from the token. */
+const CHART_CURSOR_FILL = "color-mix(in srgb, var(--chart-1) 8%, transparent)";
+
 type MonthlyRow = Record<string, number | string> & { month: string };
 type AnnualRow = Record<string, number> & { year: number };
 
@@ -80,7 +85,7 @@ export function AnnualIncorporationsChart({
           tickFormatter={(v: number) => v.toLocaleString("en-GB")}
         />
         <ChartTooltip
-          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          cursor={{ fill: CHART_CURSOR_FILL }}
           content={<ChartTooltipContent indicator="dot" />}
         />
         <Bar
@@ -230,7 +235,7 @@ export function SeasonalityChart({ data }: { data: SeasonalityPoint[] }) {
           tickFormatter={(v: number) => v.toLocaleString("en-GB")}
         />
         <ChartTooltip
-          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          cursor={{ fill: CHART_CURSOR_FILL }}
           content={<ChartTooltipContent indicator="dot" />}
         />
         <Bar dataKey="avg" name="Avg incorporations" radius={[4, 4, 0, 0]}>
@@ -285,7 +290,7 @@ export function NetFormationChart({
           tickFormatter={(v: number) => v.toLocaleString("en-GB")}
         />
         <ChartTooltip
-          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          cursor={{ fill: CHART_CURSOR_FILL }}
           content={<ChartTooltipContent indicator="dot" />}
         />
         <Bar dataKey="inc" name="Incorporated" fill="var(--color-inc)" radius={[4, 4, 0, 0]} />

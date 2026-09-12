@@ -124,6 +124,50 @@ const PINNED = [
   'src/components/layout/SiteHeader.tsx|header_mobile_primary|header_mobile|activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"',
   "src/components/layout/SiteHeader.tsx|header_mobile_secondary|header_mobile|contact",
   "src/components/support/SpecialistWidget.tsx|specialist_widget|null|null",
+  // Phase 6 / P6-B, ADDITIVE, owner gate 11. The two template-download pages
+  // carried 10 download affordances and not one data-cta: every one of the 28
+  // recorded downloads arrived as a generic element_click. The invoice page's
+  // six rendered ids are declared as two template literals over the download
+  // variants, which is what this extractor reads (it takes the JSX attribute,
+  // not the rendered value), so six rendered ids collapse to two rows here.
+  // `download` is a NEW goal value, deliberately distinct from `form` and
+  // `contact` so the download family cannot be confused with a capture id in
+  // vw_cta_performance.
+  "src/app/cis-invoice-template/page.tsx|`template_invoice_pdf_${d.slug|downloads|download",
+  "src/app/cis-invoice-template/page.tsx|`template_invoice_xlsx_${d.slug|downloads|download",
+  "src/app/cis-payment-deduction-statement-template/page.tsx|template_pds_pdf_footer|footer|download",
+  "src/app/cis-payment-deduction-statement-template/page.tsx|template_pds_pdf|hero|download",
+  "src/app/cis-payment-deduction-statement-template/page.tsx|template_pds_xlsx_footer|footer|download",
+  "src/app/cis-payment-deduction-statement-template/page.tsx|template_pds_xlsx|hero|download",
+  // Phase 6 / P6-E, ADDITIVE. The four research routes made no ask in the hero
+  // and nothing pointed at the data assets. Three new ids per route, each
+  // SLUG-SUFFIXED: the four pages share a layout, and a shared id would merge
+  // four different surfaces into one vw_cta_performance row (the view groups
+  // without page_path). All ADDITIVE, so no baseline triple moves.
+  "src/app/research/uk-construction-index/page.tsx|research_index_cta_calculator|article|null",
+  "src/app/research/uk-construction-index/page.tsx|research_index_hero_book|hero|form",
+  "src/app/research/uk-construction-index/page.tsx|research_index_hero_data|hero|null",
+  "src/app/research/uk-construction-insolvency-index/page.tsx|research_insolvency_cta_calculator|article|null",
+  "src/app/research/uk-construction-insolvency-index/page.tsx|research_insolvency_hero_book|hero|form",
+  "src/app/research/uk-construction-insolvency-index/page.tsx|research_insolvency_hero_data|hero|null",
+  "src/app/research/uk-construction-payment-practices-league/page.tsx|research_payment_practices_cta_calculator|article|null",
+  "src/app/research/uk-construction-payment-practices-league/page.tsx|research_payment_practices_hero_book|hero|form",
+  "src/app/research/uk-construction-payment-practices-league/page.tsx|research_payment_practices_hero_data|hero|null",
+  "src/app/research/uk-construction-survival-index/page.tsx|research_survival_cta_calculator|article|null",
+  "src/app/research/uk-construction-survival-index/page.tsx|research_survival_hero_book|hero|form",
+  "src/app/research/uk-construction-survival-index/page.tsx|research_survival_hero_data|hero|null",
+  // Phase 6 / P6-F, TD-32. The bar shipped `data-cta-id`, which
+  // autoCapture's closest("[data-cta]") never matched, so the site's only
+  // persistent site-wide CTA has never emitted a single cta_click and its
+  // dismiss carried no id at all. The rename ADDS two vw_cta_performance rows
+  // that have never existed; it moves NO history, because there is none to
+  // move. Said in the rename commit message and in the deploy note so the new
+  // rows are not read as a regression. The id is `sticky_cta`, not the old
+  // attribute's value `sticky_cis_refund`: the old value never reached the
+  // warehouse, so there is nothing to stay consistent with, and the offer this
+  // bar renders is not refund-specific.
+  'src/components/ui/StickyCTA.tsx|sticky_cta|sticky|offer.href.startsWith("/contact") ? "form" : undefined',
+  "src/components/ui/StickyCTA.tsx|sticky_cta_close|sticky|null",
 ];
 
 function attr(name: string, line: string): string | undefined {
@@ -234,13 +278,19 @@ describe("data-cta triple snapshot (trap 22)", () => {
     ).toBe(false);
   });
 
-  it("StickyCTA still carries no data-cta (TD-32), so its rename is visible here", () => {
-    // TD-32: StickyCTA ships `data-cta-id`, which autoCapture never matches, so
-    // the site's only persistent CTA emits nothing. The fix renames it to
-    // `data-cta`, which ADDS a triple to the snapshot above. This assertion is
-    // the reminder that the new row is a new measurement, not a regression.
+  it("StickyCTA carries data-cta and no data-cta-id (TD-32 closed, P6-F)", () => {
+    // TD-32, CLOSED 2026-09-12 by P6-F. StickyCTA shipped `data-cta-id`, which
+    // autoCapture's closest("[data-cta]") never matched, so the site's only
+    // persistent CTA emitted nothing. The rename to `data-cta` ADDED the two
+    // `sticky_cta` / `sticky_cta_close` rows to the snapshot above: a NEW
+    // measurement, not a regression, and no history moved because none existed.
+    // The assertion is flipped rather than deleted, so `data-cta-id` cannot come
+    // back on this file, here or anywhere it is copied from.
     const sticky = readFileSync(join(SRC, "components", "ui", "StickyCTA.tsx"), "utf8");
-    expect(/\bdata-cta=/.test(sticky)).toBe(false);
-    expect(/\bdata-cta-id=/.test(sticky)).toBe(true);
+    expect(/\bdata-cta=/.test(sticky)).toBe(true);
+    expect(
+      /\bdata-cta-id=/.test(sticky),
+      "data-cta-id is back on StickyCTA. autoCapture matches [data-cta] only: this attribute emits nothing.",
+    ).toBe(false);
   });
 });

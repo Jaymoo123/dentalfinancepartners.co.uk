@@ -17,7 +17,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { getActiveCta, isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
 import { useIntent, trackPersonalization } from "@/components/intent/IntentProvider";
@@ -128,9 +128,9 @@ export function StickyCTA() {
     <div
       role="region"
       aria-label="Talk to a CIS specialist"
-      className="fixed bottom-0 left-0 right-0 z-40 bg-slate-900 shadow-2xl"
+      className="fixed bottom-0 left-0 right-0 z-40 border-t-4 border-primary-600 bg-[var(--dark)] shadow-2xl"
     >
-      <div className="mx-auto flex w-full max-w-5xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className={`${siteContainerLg} flex items-center gap-4 py-3`}>
         {/* Copy block */}
         <div className="min-w-0 flex-1">
           <p className="truncate text-sm font-semibold text-white">
@@ -144,7 +144,8 @@ export function StickyCTA() {
         {/* CTA button */}
         <a
           href={offer.href}
-          data-cta-id="sticky_cis_refund"
+          data-cta="sticky_cta"
+          data-cta-placement="sticky"
           data-cta-variant={niche.cta.variant}
           data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
           onClick={() => { if (!packagesMode && intentAction) trackPersonalization("clicked", intentAction); }}
@@ -158,7 +159,9 @@ export function StickyCTA() {
           type="button"
           onClick={handleDismiss}
           aria-label="Dismiss"
-          className="shrink-0 rounded p-1 text-slate-400 transition-colors duration-150 hover:bg-slate-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+          data-cta="sticky_cta_close"
+          data-cta-placement="sticky"
+          className="flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-xl p-1 text-slate-300 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
         >
           <svg
             aria-hidden="true"

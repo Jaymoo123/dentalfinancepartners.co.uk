@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
-import { LeadForm } from "@/components/forms/LeadForm";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { ResearchLayout } from "@/components/research/ResearchLayout";
+import { ResearchSection, FigureCard, DataTableWrap } from "@/components/research/ResearchSection";
+import { btnOnDark, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { SlowestPayersChart } from "@/components/research/PprLeagueChart";
@@ -112,28 +111,6 @@ const datasetSchema = {
 };
 
 // ---------------------------------------------------------------------------
-// Presentational helpers
-// ---------------------------------------------------------------------------
-
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
-      <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
-    </section>
-  );
-}
-
-// ---------------------------------------------------------------------------
 
 export default function UKConstructionPaymentPracticesLeaguePage() {
   const top20 = companies.slice(0, 20);
@@ -141,73 +118,60 @@ export default function UKConstructionPaymentPracticesLeaguePage() {
   const retentionCount = companies.filter((c) => c.retention_clauses_all.trim() === "True").length;
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
-      />
-
-      {/* Hero */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Research", href: "/research" },
-              { label: "UK Construction Payment Practices League" },
-            ]}
-          />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-orange-400">
-            UK Construction Payment Practices League
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            {HEADLINE_SENTENCE}
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
-            A sourced league table of large construction businesses&apos; own statutory payment
-            practice disclosures, built from the government&apos;s Payment Practices Reporting
-            service and cross-checked against Companies House SIC codes so only genuine
-            construction businesses are included.
-          </p>
-
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <Stat
-              value={fmtNumber(headline.n_companies)}
-              label="large construction businesses in the current cohort"
-            />
-            <Stat
-              value={`${fmtNumber(headline.median_days_to_pay)} days`}
-              label="median average time to pay"
-            />
-            <Stat
-              value={`${fmtNumber(headline.slowest?.atp ?? null)} days`}
-              label="the slowest-reported average in the cohort"
-            />
-            <Stat
-              value={`${Math.round((retentionCount / companies.length) * 100)}%`}
-              label="use retention clauses in all their construction contracts"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
-        <div className={siteContainerLg}>
-          <div className="max-w-4xl">
-
-            {/* Key findings */}
-            <div className="rounded-2xl border border-orange-500/20 bg-orange-50/60 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-orange-800">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
+    <ResearchLayout
+      schemas={[articleSchema, datasetSchema, buildFaqPageJsonLd(faqs)]}
+      breadcrumbLabel="UK Construction Payment Practices League"
+      eyebrow="UK Construction Payment Practices League"
+      headline={HEADLINE_SENTENCE}
+      intro={
+        <>
+          A sourced league table of large construction businesses&apos; own statutory payment
+          practice disclosures, built from the government&apos;s Payment Practices Reporting
+          service and cross-checked against Companies House SIC codes so only genuine
+          construction businesses are included.
+        </>
+      }
+      heroCtas={
+        <>
+          <Link
+            href="#book"
+            data-cta="research_payment_practices_hero_book"
+            data-cta-placement="hero"
+            data-cta-goal="form"
+            className={btnPrimary}
+          >
+            Get a free CIS review
+          </Link>
+          <Link
+            href={`${PAGE_PATH}/data`}
+            data-cta="research_payment_practices_hero_data"
+            data-cta-placement="hero"
+            className={btnOnDark}
+          >
+            Download the data (CSV)
+          </Link>
+        </>
+      }
+      stats={[
+        {
+          value: fmtNumber(headline.n_companies),
+          label: "large construction businesses in the current cohort",
+        },
+        {
+          value: `${fmtNumber(headline.median_days_to_pay)} days`,
+          label: "median average time to pay",
+        },
+        {
+          value: `${fmtNumber(headline.slowest?.atp ?? null)} days`,
+          label: "the slowest-reported average in the cohort",
+        },
+        {
+          value: `${Math.round((retentionCount / companies.length) * 100)}%`,
+          label: "use retention clauses in all their construction contracts",
+        },
+      ]}
+      keyFindings={
+        <>
                 <li>
                   Across {fmtNumber(headline.n_companies)} large UK construction businesses with a
                   qualifying construction contract in their most recent statutory filing, the
@@ -231,33 +195,63 @@ export default function UKConstructionPaymentPracticesLeaguePage() {
                   subcontractors alone. See the methodology section for exactly how companies were
                   selected and what the figure does and does not measure.
                 </li>
-              </ul>
-              <p className="mt-4 text-xs text-neutral-500">
-                Source: Payment Practices Reporting service (gov.uk), a statutory disclosure every
-                large UK business must publish twice yearly, cross-referenced against Companies
-                House SIC codes (Open Government Licence v3.0). Figures are each company&apos;s own
-                filing; free to cite with attribution to Trade Tax Specialists.
-              </p>
-            </div>
-
-            <Section id="slowest" title="The 12 slowest-reported payers">
+        </>
+      }
+      source={
+        <>
+          Source: Payment Practices Reporting service (gov.uk), a statutory disclosure every
+          large UK business must publish twice yearly, cross-referenced against Companies
+          House SIC codes (Open Government Licence v3.0). Figures are each company&apos;s own
+          filing; free to cite with attribution to Trade Tax Specialists.
+        </>
+      }
+      conversionTitle="Paid late by a main contractor? Don't let it distort your tax position too."
+      conversionBody={
+        <>
+          Slow payment squeezes subcontractor cash flow, but your CIS deductions and any
+          refund you are owed are not tied to when your customer actually pays you. Our
+          calculators help you keep your own tax position accurate regardless of how your
+          clients pay.
+        </>
+      }
+      conversionCtas={
+        <>
+          <Link
+            href="/calculators/cis-refund-estimator"
+            data-cta="research_payment_practices_cta_calculator"
+            data-cta-placement="article"
+            className="text-primary-700 hover:text-primary-800"
+          >
+            CIS refund estimator &rarr;
+          </Link>
+          <Link
+            href="/calculators/cis-gps-eligibility-checker"
+            className="text-primary-700 hover:text-primary-800"
+          >
+            GPS eligibility checker &rarr;
+          </Link>
+        </>
+      }
+      faqs={faqs}
+    >
+            <ResearchSection id="slowest" title="The 12 slowest-reported payers">
               <p>
                 Ranked by each business&apos;s own most recently filed &quot;average time to
                 pay&quot; figure. The dashed line marks the {fmtNumber(headline.n_companies)}
                 -company cohort median of {fmtNumber(headline.median_days_to_pay)} days.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <FigureCard>
                 <SlowestPayersChart companies={companies} medianDays={headline.median_days_to_pay} />
-              </div>
-            </Section>
+              </FigureCard>
+            </ResearchSection>
 
-            <Section id="league-table" title="Full league table: top 20 slowest">
+            <ResearchSection id="league-table" title="Full league table: top 20 slowest">
               <p>
                 Each row is the business&apos;s own most recent PPR filing. &quot;% over 60
                 days&quot; is the share of that business&apos;s invoices paid more than 60 days
                 after receipt, in the same reporting period.
               </p>
-              <div className="not-prose mt-4 overflow-x-auto">
+              <DataTableWrap>
                 <table className="w-full border-collapse text-sm">
                   <thead>
                     <tr className="border-b-2 border-neutral-300 text-left">
@@ -280,24 +274,24 @@ export default function UKConstructionPaymentPracticesLeaguePage() {
                     ))}
                   </tbody>
                 </table>
-              </div>
+              </DataTableWrap>
               <p className="mt-4 text-sm text-neutral-600">
                 The full {companies.length}-company table, including the fastest payers, is
                 available in the{" "}
-                <Link href={`${PAGE_PATH}/data`} className="font-semibold text-orange-700 hover:text-orange-800">
+                <Link href={`${PAGE_PATH}/data`} className="font-semibold text-primary-700 hover:text-primary-800">
                   CSV download
                 </Link>
                 .
               </p>
-            </Section>
+            </ResearchSection>
 
-            <Section id="fastest" title="For balance: the 10 fastest-reported payers">
+            <ResearchSection id="fastest" title="For balance: the 10 fastest-reported payers">
               <p>
                 The same cohort, ranked the other way: specialist and main contractors, an
                 infrastructure services group, and a couple of property-holding entities within
                 larger retail groups, all reporting a fast average time to pay.
               </p>
-              <div className="not-prose mt-4 overflow-x-auto">
+              <DataTableWrap>
                 <table className="w-full border-collapse text-sm">
                   <thead>
                     <tr className="border-b-2 border-neutral-300 text-left">
@@ -316,10 +310,10 @@ export default function UKConstructionPaymentPracticesLeaguePage() {
                     ))}
                   </tbody>
                 </table>
-              </div>
-            </Section>
+              </DataTableWrap>
+            </ResearchSection>
 
-            <Section id="methodology" title="Methodology, sources and caveats">
+            <ResearchSection id="methodology" title="Methodology, sources and caveats">
               <p>
                 <strong>Selection.</strong> The Payment Practices Reporting (PPR) return asks every
                 large UK business to flag whether it had &quot;qualifying construction
@@ -360,7 +354,7 @@ export default function UKConstructionPaymentPracticesLeaguePage() {
                   <li key={s.name}>
                     <a
                       href={s.url}
-                      className="font-semibold text-orange-700 hover:text-orange-800"
+                      className="font-semibold text-primary-700 hover:text-primary-800"
                       rel="nofollow"
                     >
                       {s.name}
@@ -372,7 +366,7 @@ export default function UKConstructionPaymentPracticesLeaguePage() {
               <p className="text-sm">
                 <Link
                   href={`${PAGE_PATH}/data`}
-                  className="font-semibold text-orange-700 hover:text-orange-800"
+                  className="font-semibold text-primary-700 hover:text-primary-800"
                 >
                   Download the full league table (CSV)
                 </Link>
@@ -382,55 +376,8 @@ export default function UKConstructionPaymentPracticesLeaguePage() {
                 a data summary and does not constitute legal, tax or business advice, and does not
                 allege wrongdoing by any named business.
               </p>
-            </Section>
+            </ResearchSection>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-orange-500/20 bg-gradient-to-br from-orange-50 to-amber-50 p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-orange-700 sm:text-3xl">
-                Paid late by a main contractor? Don&apos;t let it distort your tax position too.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Slow payment squeezes subcontractor cash flow, but your CIS deductions and any
-                refund you are owed are not tied to when your customer actually pays you. Our
-                calculators help you keep your own tax position accurate regardless of how your
-                clients pay.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
-                <Link
-                  href="/calculators/cis-refund-estimator"
-                  className="text-orange-700 hover:text-orange-800"
-                >
-                  CIS refund estimator &rarr;
-                </Link>
-                <Link
-                  href="/calculators/cis-gps-eligibility-checker"
-                  className="text-orange-700 hover:text-orange-800"
-                >
-                  GPS eligibility checker &rarr;
-                </Link>
-              </div>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Get a free CIS review" />
-              </div>
-            </div>
-
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    </ResearchLayout>
   );
 }

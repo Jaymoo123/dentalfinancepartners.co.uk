@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { contentNarrow, sectionYLoose } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
@@ -12,6 +13,7 @@ export default function TermsPage() {
   return (
     <section className="bg-white">
       <div className={`${contentNarrow} ${sectionYLoose}`}>
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms of use" }]} />
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Terms of use</h1>
         <p className="mt-4 text-sm text-neutral-500">Last updated: 18 June 2026</p>
         <div className="prose-blog mt-10 space-y-6">
@@ -26,7 +28,7 @@ export default function TermsPage() {
             The Site is operated by {siteConfig.company.legalName} (trading as {siteConfig.name}), a company
             registered in {siteConfig.company.placeOfRegistration} under company number {siteConfig.company.number},
             with its registered office at {siteConfig.company.registeredOfficeLine}. You can contact us via our{" "}
-            <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
+            <Link href="/contact" className="text-primary-700 underline underline-offset-2 hover:text-primary-800">
               contact page
             </Link>
             .
@@ -136,7 +138,7 @@ export default function TermsPage() {
           <h2>13. Contact us</h2>
           <p>
             Questions about these terms? Contact us via our{" "}
-            <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
+            <Link href="/contact" className="text-primary-700 underline underline-offset-2 hover:text-primary-800">
               contact page
             </Link>
             .

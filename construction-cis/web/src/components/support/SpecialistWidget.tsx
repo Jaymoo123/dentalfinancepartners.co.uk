@@ -8,8 +8,11 @@
  * Suppressed once the visitor has converted (isConverted() from visitMemory).
  *
  * TOKEN HARDENING: no var(--gold), no var(--navy), no var(--primary).
- * Uses: var(--accent) = #f97316 (orange), var(--dark) = #1e293b (slate).
- * Hard hex fallbacks where Tailwind cannot use CSS vars.
+ * Uses var(--accent) for non-text orange, var(--accent-strong) wherever orange
+ * carries text, var(--dark) for the slate ground, var(--form-error) for errors.
+ * Phase 6 removed the last inline hex fallbacks (#1e293b was slate-800 and had
+ * drifted from --dark, which is slate-900): every colour is a token now, so a
+ * re-hue is one edit in globals.css. Thresholds and cadence are unchanged.
  *
  * Stand-down: sets bfp_assistant_active="1" in sessionStorage.
  * Its only reader was ExitIntentModal.tsx, which the phase 2 blog port deleted
@@ -47,6 +50,7 @@ import { useIntentContext } from "@/components/intent/IntentProvider";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { initJourneyModel, recordPath, getJourneyProfile } from "@/lib/intent/journeyModel";
 import { openerFor, exitOpener, frictionOpener } from "@/lib/assistant/opener";
+import { btnPrimary } from "@/components/ui/layout-utils";
 
 type Status = "idle" | "loading" | "success" | "error";
 type Trigger = "cadence" | "exit" | "friction";
@@ -55,7 +59,7 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Orange/slate token input class (no --gold, no --navy, no --primary)
 const inputClass =
-  "mt-1 w-full rounded-lg border-2 border-gray-200 bg-white px-3 py-2 text-base text-[var(--dark)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/25 min-h-12 touch-manipulation";
+  "mt-1 w-full rounded-xl border-2 border-[var(--hairline)] bg-white px-3 py-2 text-base text-[var(--ink)] focus:border-[var(--btn-ground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/25 min-h-12 touch-manipulation";
 
 // Cadence thresholds: 30s / 70s / 120s / 180s of VISIBLE page time.
 const CADENCE_THRESHOLDS_MS = [30_000, 70_000, 120_000, 180_000];
@@ -365,14 +369,13 @@ export function SpecialistWidget() {
         <div
           role="dialog"
           aria-label="Trade Tax Specialists assistant"
-          className="mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl"
+          className="mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-xl border border-[var(--hairline)] bg-white shadow-2xl"
           style={{ height: "min(72dvh, 34rem)" }}
         >
           {/* Header: slate background, orange accent */}
-          <div className="flex items-center gap-3 px-4 py-3 text-white" style={{ background: "#1e293b" }}>
+          <div className="flex items-center gap-3 bg-[var(--dark)] px-4 py-3 text-white">
             <span
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full ring-2 ring-white/15"
-              style={{ background: "#f97316" }}
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] ring-2 ring-white/15"
             >
               <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -393,18 +396,17 @@ export function SpecialistWidget() {
           </div>
 
           {/* Conversation */}
-          <div className="flex-1 space-y-3 overflow-y-auto bg-gray-50 p-4">
+          <div className="flex-1 space-y-3 overflow-y-auto bg-[var(--surface)] p-4">
             {peekLine && (
               <div className="flex items-start gap-2">
                 <span
-                  className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full"
-                  style={{ background: "#f97316" }}
+                  className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)]"
                 >
                   <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
-                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-gray-200 bg-white px-3 py-2 text-sm leading-relaxed text-gray-800 shadow-sm">
+                <div className="max-w-[82%] rounded-xl rounded-tl-sm border border-[var(--hairline)] bg-white px-3 py-2 text-sm leading-relaxed text-[var(--ink)] shadow-sm">
                   {peekLine}
                 </div>
               </div>
@@ -412,14 +414,13 @@ export function SpecialistWidget() {
             {status === "success" ? (
               <div className="flex items-start gap-2">
                 <span
-                  className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full"
-                  style={{ background: "#f97316" }}
+                  className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)]"
                 >
                   <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </span>
-                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-orange-100 bg-orange-50 px-3 py-2 text-sm font-medium text-gray-900 shadow-sm">
+                <div className="max-w-[82%] rounded-xl rounded-tl-sm border border-primary-100 bg-primary-50 px-3 py-2 text-sm font-medium text-[var(--ink)] shadow-sm">
                   Thanks, a specialist has your message and will be in touch by email. For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it may be their team who replies. Please check your inbox and spam folder so our reply is not missed.
                 </div>
               </div>
@@ -429,7 +430,7 @@ export function SpecialistWidget() {
                   <a
                     href={`/calculators/${calcSlug}`}
                     onClick={() => onChip("calculator")}
-                    className="inline-flex items-center rounded-full border border-orange-200 bg-white px-3 py-3 text-sm font-medium text-gray-800 hover:bg-orange-50"
+                    className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--btn-ground)] bg-white px-4 py-3 text-sm font-bold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
                   >
                     See your numbers
                   </a>
@@ -437,7 +438,7 @@ export function SpecialistWidget() {
                 <a
                   href="/contact"
                   onClick={() => onChip("contact")}
-                  className="inline-flex items-center rounded-full border border-orange-200 bg-white px-3 py-3 text-sm font-medium text-gray-800 hover:bg-orange-50"
+                  className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--btn-ground)] bg-white px-4 py-3 text-sm font-bold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
                 >
                   Get in touch
                 </a>
@@ -447,12 +448,11 @@ export function SpecialistWidget() {
 
           {/* Footer: primary action reveals composer */}
           {!composing && status !== "success" && (
-            <div className="border-t border-gray-200 bg-white p-3">
+            <div className="border-t border-[var(--hairline)] bg-white p-3">
               <button
                 type="button"
                 onClick={() => onChip("question")}
-                className="w-full rounded-lg px-4 py-3 text-sm font-semibold text-white hover:opacity-90"
-                style={{ background: "#1e293b" }}
+                className={`${btnPrimary} w-full`}
               >
                 Ask a specialist
               </button>
@@ -461,7 +461,7 @@ export function SpecialistWidget() {
 
           {/* Composer */}
           {composing && status !== "success" && (
-            <div className="border-t border-gray-200 bg-white p-3">
+            <div className="border-t border-[var(--hairline)] bg-white p-3">
               <form
                 onSubmit={onSubmit}
                 className="space-y-2"
@@ -502,23 +502,21 @@ export function SpecialistWidget() {
                   placeholder="Your message to a specialist"
                   className={inputClass}
                 />
-                {error && <p className="text-xs font-medium text-red-600">{error}</p>}
+                {error && <p className="text-xs font-medium text-[var(--form-error)]">{error}</p>}
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full rounded-lg px-4 py-3 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60"
-                  style={{ background: "#1e293b" }}
+                  className={`${btnPrimary} w-full`}
                 >
                   {status === "loading" ? "Sending..." : "Send to a specialist"}
                 </button>
-                <p className="text-[11px] leading-relaxed text-gray-500">
+                <p className="text-[11px] leading-relaxed text-[var(--ink-whisper)]">
                   {siteConfig.leadConsentText} See our{" "}
                   <a
                     href="/privacy-policy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold underline"
-                    style={{ color: "#1e293b" }}
+                    className="font-semibold text-[var(--accent-strong)] underline"
                   >
                     Privacy Policy
                   </a>
@@ -532,11 +530,11 @@ export function SpecialistWidget() {
 
       {/* Proactive peek */}
       {!open && peekVisible && peekLine && (
-        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-2xl border border-orange-200 bg-white p-3 shadow-2xl">
+        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-xl border border-primary-200 bg-white p-3 shadow-2xl">
           <button
             type="button"
             onClick={() => handleOpen(true)}
-            className="flex-1 text-left text-sm font-medium leading-snug text-gray-800 hover:text-gray-900"
+            className="flex-1 text-left text-sm font-medium leading-snug text-[var(--ink)] hover:opacity-80"
           >
             {peekLine}
           </button>
@@ -544,7 +542,7 @@ export function SpecialistWidget() {
             type="button"
             aria-label="Dismiss"
             onClick={dismissPeek}
-            className="-mr-1 -mt-1 flex min-h-11 min-w-11 items-center justify-center shrink-0 rounded p-1 text-gray-400 hover:text-gray-600"
+            className="-mr-1 -mt-1 flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-xl p-1 text-[var(--ink-whisper)] transition-colors duration-150 hover:bg-neutral-100 hover:text-[var(--ink)]"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -558,15 +556,13 @@ export function SpecialistWidget() {
         type="button"
         onClick={() => (open ? setOpen(false) : handleOpen(false))}
         data-cta="specialist_widget"
-        className="relative flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:opacity-90"
-        style={{ background: "#1e293b" }}
+        className="relative flex min-h-12 items-center gap-2 rounded-full bg-[var(--dark)] px-5 py-3 text-sm font-bold text-white shadow-2xl transition-opacity duration-150 hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
       >
         {!open && unread > 0 && (
           <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">
             <span
               aria-hidden="true"
-              className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60 motion-reduce:animate-none"
-              style={{ background: "#f97316" }}
+              className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--accent)] opacity-60 motion-reduce:animate-none"
             />
             <span className="relative flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-[11px] font-bold text-white shadow-sm ring-2 ring-white">
               {unread}

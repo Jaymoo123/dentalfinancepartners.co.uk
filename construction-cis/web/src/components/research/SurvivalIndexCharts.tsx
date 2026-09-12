@@ -29,6 +29,11 @@ import {
 } from "@/components/ui/chart";
 import type { SurvivalCohortRow } from "@/lib/research/survival-index";
 
+/* The Recharts hover band. Was a raw rgba() of the brand hex, repeated in
+   every chart file: a re-hue in globals.css would have missed all of them.
+   --chart-1 IS that hex, so this is the same pixel, sourced from the token. */
+const CHART_CURSOR_FILL = "color-mix(in srgb, var(--chart-1) 8%, transparent)";
+
 // ---------------------------------------------------------------------------
 // Survival curve: Construction vs all industries, for one cohort year
 // ---------------------------------------------------------------------------
@@ -124,7 +129,7 @@ export function OneYearTrendChart({ cohorts }: { cohorts: SurvivalCohortRow[] })
           tickFormatter={(v: number) => `${v}%`}
         />
         <ChartTooltip
-          cursor={{ fill: "rgba(249,115,22,0.08)" }}
+          cursor={{ fill: CHART_CURSOR_FILL }}
           content={<ChartTooltipContent indicator="dot" />}
         />
         <Bar dataKey="value" name="1-year survival rate" fill="var(--color-value)" radius={[4, 4, 0, 0]} />

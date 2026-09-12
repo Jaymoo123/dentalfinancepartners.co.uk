@@ -957,6 +957,45 @@ Numbered. Each one names what happens if the answer is "leave it", because that 
     component that nothing on the site has ever rendered.** *Recommend: yes, and in the last commit
     of the phase so the history stays easy to bisect.* Blocks P6-F's final commit.
 
+### 10a. GATE OUTCOMES, RECORDED 2026-09-12 (§11f)
+
+Closed by P6-F at the end of the phase. "Built" means the change is in the working tree and the
+suite is green on it; **nothing is deployed** (§11g). Where a gate's work belongs to a package that
+did not run, that is said plainly rather than reported as closed.
+
+| Gate | Ruling | Outcome, 2026-09-12 | Where |
+|---|---|---|---|
+| 1 | Use the correct `DetailsForm` wording | **BUILT** by P6-C. The page now renders `siteConfig.leadConsentText` plus the Privacy Policy link, the same string every other capture surface uses. `site.ts` untouched, md5 still `06814d48...`, `lead-payload.test.ts` green and byte-unchanged | `src/components/forms/DetailsForm.tsx:204` |
+| 2 | Delete the GA opt-out section, stop calling web storage "cookies", say what is actually stored | **BUILT** by P6-D, 2026-09-12 (it ran last, out of order). GA opt-out section deleted; the page now distinguishes a cookie from browser storage and names `localStorage`/`sessionStorage`; it says country, city, region AND timezone and drops the word "anonymous"; the absolute "no strictly necessary cookies" is qualified to name the admin sign-in cookie. Every claim re-verified in the handler and the login route before writing, not from the plan. The IP-location correction was made in BOTH published places (row 3 of section 3). TD-16, TD-17, TD-36, TD-37 CLOSED | `src/app/{cookie-policy,privacy-policy}/page.tsx` |
+| 3 | **CHANGE NOTHING** (DL-7) | **HONOURED.** No package edited the two retention sentences or the cron. Verified by re-grep: `privacy-policy` `:166-167` and `:169` are as published, matching Property byte for byte. TD-38 and TD-39 stay filed as the record and leave the phase | `src/app/privacy-policy/page.tsx` |
+| 4 | Fix the attribute, KEEP the 25% | **BUILT** by P6-F. `data-cta-id` → `data-cta="sticky_cta"` + `data-cta-placement="sticky"`, and `sticky_cta_close` on the dismiss. `SCROLL_THRESHOLD` 500 and the `0.25` factor are **unchanged**. TD-32 CLOSED. **Two new `vw_cta_performance` rows, no history moved**: in the commit message and in the deploy note | `src/components/ui/StickyCTA.tsx` |
+| 5 | Delete the self-referential "contact us directly" block | **BUILT** by P6-D. Deleted, replaced with `WhatToExpectCard` (all strings passed explicitly, each checked against `/privacy-policy` section 5). Floor arithmetic: the deleted `<a>` pointed at `/contact`, already a chrome destination (`SiteFooter.tsx:28`), so **0 unique internal destinations lost**; the added `Breadcrumb` points at `/`, also chrome. Floor 14, live 20, still 20. No compensating link invented. TD-19 CLOSED | `src/app/contact/page.tsx` |
+| 6 | Link the three orphaned guides | **NOT PHASE 6 WORK** by its own terms, and no package touched `src/app/resources/**`. Still owed as a linking decision | n/a |
+| 7 | Keep the calculator capture form and measure it | **PHASE 5'S SURFACE.** No Phase 6 package touched `src/components/calculators/**`. Nothing changed, which is the ruling | n/a |
+| 8 | Remove both remaining turnaround promises | **BUILT, both halves.** The assistant widget's sentence was already closed in the 2026-09-11 TD-14 sweep (`SpecialistWidget.tsx:383`); P6-F re-verified it. P6-D closed the `/about` half on 2026-09-12. **Correction to this gate's own wording**: by the time P6-D read the file, `about/page.tsx:39` carried NO turnaround promise, only the fee claim. The 19-file TD-13/TD-14 sweep had already taken the turnaround half out; the gate text was stale, not the page. The fee half is now "Fees are agreed before any work starts. The specialist firm you speak to sets its own fee and agrees it with you up front", which is the wording TD-18 pins for all 11 call sites of the claim shape. TD-18 PARTLY CLOSED: `/about` done, **10 instances still live** in other packages' files | `src/app/about/page.tsx` |
+| 9 | Keep the three "Speak soon", drop the word "shortly" | **NOT PHASE 6 WORK.** `src/lib/leads/**` is off limits to every package (section 7) and no package touched it. The one-line change is still owed in its own slot | n/a |
+| 10 | Add a closing ask to the statement-template page | **BUILT** by P6-B. `LeadCTAPanel` at `cis-payment-deduction-statement-template/page.tsx:325`. Not a popup, nothing appears on its own | that file |
+| 11 | Tag the ten download buttons | **BUILT** by P6-B. Six pinned rows in `cta-attribute-diff.test.ts` (the invoice page's six rendered ids are declared as two template literals, which is what the extractor reads). New goal value `download`, deliberately distinct so the download family cannot be confused with a capture id | both template pages |
+| 12 | Delete the four unused files in the last commit | **BUILT** by P6-F, in the final commit. 525 lines. Unmount re-verified at deletion time, not at plan time: `grep` for each resolved specifier across `src`, `scripts`, `content` and `packages` returned **0 importers** for all four. `tsc --noEmit` clean and `check_dependency_closure.py` green **after** the deletion | see section 8 |
+
+~~**The gap this table exists to make visible: P6-D did not run.**~~ **CLOSED 2026-09-12: P6-D ran
+last, alone, on its own five files.** §11d's "every sentence on the 3 legal pages either matches the
+code or has been corrected" is now **satisfied**, less rows 6 and 7 which gate 3 removed from scope
+and which were not touched (re-verified: `privacy-policy` sections 6 is as published). Suite green at
+**438 / 29 files**, `tsc` clean, both tripwires byte-unchanged, `site.ts` md5 unmoved.
+
+**The gap that REPLACES it, and it is bigger than the one it closes.** The "fixed fee" claim shape
+TD-18 describes is on **11 source lines, not the 3 the entry lists**, and 10 of them are in other
+packages' files: `src/config/service-tiers.ts:35`, `src/app/page.tsx:292,395,678`,
+`src/app/services/page.tsx:239`, `src/app/cis-refund/page.tsx:285`,
+`src/app/gross-payment-status/page.tsx:281` (= TD-41), `src/app/blog/page.tsx:158`,
+`src/app/glossary/page.tsx:149` and `src/app/glossary/[slug]/page.tsx:172` (that last pair renders on
+50+ routes). P6-D established ONE wording and put it live on `/about`; per DL-9 the sweep is scoped
+to the rule and the whole site, so these are the orchestrator's to route to that wording rather than
+to a rival one. Separately, `src/components/marketing/MarketingSections.tsx:37` still republishes
+`/about`'s OLD client-base sentence on the homepage and `/contact`, having lifted it before P6-D
+corrected it.
+
 **Standing, and not a gate because the answer is already no:** no new modal, banner, toast, popup or
 exit-intent, and no change to any existing trigger, threshold or cadence. The interruptive stack in
 this phase is **restyle only**.

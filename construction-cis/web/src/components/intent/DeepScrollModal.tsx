@@ -9,6 +9,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
+import { btnPrimary } from "@/components/ui/layout-utils";
 
 const SUPPRESS_DAYS = 30;
 const suppressKey = (topic: string) => `bfp_deepscroll_${topic}`;
@@ -93,25 +94,25 @@ export function DeepScrollModal() {
       onClick={() => close(true)}
     >
       <div
-        className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl"
+        className="w-full max-w-md rounded-xl border-t-4 border-primary-600 bg-white p-6 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-3">
-          <h2 className="text-lg font-bold text-slate-900">{offer.title}</h2>
+          <h2 className="text-lg font-bold text-[var(--ink)]">{offer.title}</h2>
           <button
             type="button"
             aria-label="Close"
             data-cta="deep_scroll_close"
             onClick={() => close(true)}
-            className="text-slate-600 hover:text-slate-900"
+            className="flex min-h-11 min-w-11 items-center justify-center rounded-xl text-[var(--ink-soft)] transition-colors duration-150 hover:bg-neutral-100 hover:text-[var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
           >
             &times;
           </button>
         </div>
-        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-orange-700">
+        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-[var(--accent-strong)]">
           {offer.reason}
         </p>
-        <p className="mt-2 text-sm text-slate-600">{offer.blurb}</p>
+        <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{offer.blurb}</p>
         <div className="mt-5 flex flex-col gap-2">
           <Link
             href={offer.href}
@@ -121,7 +122,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-[var(--btn-ground)] px-4 py-2.5 text-center font-semibold text-white hover:bg-[var(--btn-ground-hover)]"
+            className={`${btnPrimary} w-full`}
           >
             {primaryLabel}
           </Link>
@@ -131,7 +132,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg border border-slate-200 px-4 py-2.5 text-center font-semibold text-slate-700 hover:bg-slate-50"
+            className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border-2 border-[var(--hairline)] px-4 py-2.5 text-center font-semibold text-[var(--ink)] transition-colors duration-150 hover:bg-neutral-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
           >
             {secondaryLabel}
           </Link>

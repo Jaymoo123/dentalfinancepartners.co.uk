@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
-import { LeadForm } from "@/components/forms/LeadForm";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { ResearchLayout } from "@/components/research/ResearchLayout";
+import { ResearchSection, FigureCard, DataTableWrap } from "@/components/research/ResearchSection";
+import { btnOnDark, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import {
@@ -26,6 +25,20 @@ const { meta, headline, insolvencies, divisions } = data;
 const { decade } = headline;
 
 const PAGE_PATH = "/research/uk-construction-insolvency-index";
+
+// Derived from the shipped snapshot so the prose cannot drift from the data.
+const fullYears = insolvencies.annual.filter((r) => r.year < 2026);
+const cvlShares = fullYears.map((r) => ({ year: r.year, pct: (r.cvl / r.total) * 100 }));
+const cvlLowest = cvlShares.reduce((a, b) => (b.pct < a.pct ? b : a));
+const cvlHighest = cvlShares.reduce((a, b) => (b.pct > a.pct ? b : a));
+const cvlLatest = cvlShares.at(-1)!;
+const peakYear = fullYears.reduce((a, b) => (b.total > a.total ? b : a));
+const cvaShares = fullYears.map((r) => ({ year: r.year, pct: (r.cva / r.total) * 100 }));
+const cvaHighest = cvaShares.reduce((a, b) => (b.pct > a.pct ? b : a));
+const cvaFirstSubOne = cvaShares.find((r) => r.pct < 1)!;
+const receivershipHighest = fullYears
+  .map((r) => ({ year: r.year, pct: (r.receivership / r.total) * 100 }))
+  .reduce((a, b) => (b.pct > a.pct ? b : a));
 
 const HEADLINE_SENTENCE = `UK construction company insolvencies rose ${fmtPercent(decade.change_pct, false)} between ${decade.from_year} and ${decade.to_year}`;
 
@@ -50,12 +63,12 @@ const faqs = [
   {
     question: "Why is construction the highest-insolvency sector in the UK?",
     answer:
-      "Construction companies face several structural pressures that make insolvency more common than in other sectors. Fixed-price contracts leave contractors exposed when material or labour costs rise unexpectedly. Retentions (money held back by clients) create cash-flow gaps that can last months or years. Payment chains are long, so an upstream contractor's difficulties quickly pass downstream to subcontractors. Thin margins and high working capital requirements mean that even a single large contract going wrong can be terminal. These are not recent phenomena: construction has consistently accounted for around 17% of all company insolvencies in England and Wales, despite being a smaller share of overall economic output.",
+      "Construction companies face several structural pressures that make insolvency more common than in other sectors. Fixed-price contracts leave contractors exposed when material or labour costs rise unexpectedly. Retentions (money held back by clients) create cash-flow gaps that can last months or years. Payment chains are long, so an upstream contractor's difficulties quickly pass downstream to subcontractors. Thin margins and high working capital requirements mean that even a single large contract going wrong can be terminal. These are not recent phenomena: construction insolvencies were already climbing before the pandemic, from 2,793 in 2016 to 3,513 in 2019, and the sector has run above that pre-pandemic level every year since 2022.",
   },
   {
     question: "What is a Creditors Voluntary Liquidation (CVL)?",
     answer:
-      "A CVL is the most common insolvency procedure for construction companies. The company's directors resolve to wind up the business voluntarily when they conclude it cannot pay its debts. A licensed insolvency practitioner is appointed as liquidator to realise assets and distribute proceeds to creditors. In construction, CVLs typically account for around 75 to 80% of all insolvency events, reflecting the frequency with which directors choose to wind up rather than entering court-led procedures.",
+      `A CVL is the most common insolvency procedure for construction companies. The company's directors resolve to wind up the business voluntarily when they conclude it cannot pay its debts. A licensed insolvency practitioner is appointed as liquidator to realise assets and distribute proceeds to creditors. In construction, the CVL share of all insolvency events has risen over this series: it ranged from ${fmtPercent(cvlLowest.pct, false)} in ${cvlLowest.year} to ${fmtPercent(cvlHighest.pct, false)} in ${cvlHighest.year}, stayed between 62 and 65% throughout 2016 to 2019, and stood at ${fmtPercent(cvlLatest.pct, false)} in ${cvlLatest.year}. Directors choose to wind up voluntarily far more often than they enter court-led procedures.`,
   },
   {
     question: "Where does this data come from?",
@@ -137,28 +150,6 @@ const datasetSchema = {
 };
 
 // ---------------------------------------------------------------------------
-// Presentational helpers
-// ---------------------------------------------------------------------------
-
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl bg-white/5 p-5 ring-1 ring-white/10">
-      <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-neutral-300">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
-    </section>
-  );
-}
-
-// ---------------------------------------------------------------------------
 
 export default function UKConstructionInsolvencyIndexPage() {
   const lastMonth = headline.last_settled_month;
@@ -177,77 +168,65 @@ export default function UKConstructionInsolvencyIndexPage() {
   ];
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPageJsonLd(faqs)) }}
-      />
-
-      {/* Hero */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Research", href: "/research" },
-              { label: "UK Construction Insolvency Index" },
-            ]}
-          />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-orange-400">
-            UK Construction Insolvency Index
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            {HEADLINE_SENTENCE}
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
-            A sourced, monthly read on construction company insolvencies across the UK, drawn from
-            Insolvency Service public records. Covering all SIC Section F construction businesses,
-            broken down by insolvency procedure. Updated {monthLabel(meta.data_through)}.
-          </p>
-
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <Stat
-              value={fmtNumber(headline.ttm_total)}
-              label="construction company insolvencies in the trailing 12 months"
-            />
-            <Stat
-              value={fmtNumber(headline.last_month_cvl)}
-              label={`CVLs in ${monthLabel(lastMonth)}, the most common procedure`}
-            />
-            <Stat
-              value={fmtPercent(decade.change_pct, false)}
-              label={`more insolvencies in ${decade.to_year} than in ${decade.from_year}`}
-            />
-            <Stat
-              value={fmtNumber(headline.peak_total)}
-              label={`insolvencies in ${monthLabel(headline.peak_month)}, the highest month on record`}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
-        <div className={siteContainerLg}>
-          <div className="max-w-4xl">
-
-            {/* Key findings */}
-            <div className="rounded-2xl border border-orange-500/20 bg-orange-50/60 p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-orange-800">Key findings</h2>
-              <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
+    <ResearchLayout
+      schemas={[articleSchema, datasetSchema, buildFaqPageJsonLd(faqs)]}
+      breadcrumbLabel="UK Construction Insolvency Index"
+      eyebrow="UK Construction Insolvency Index"
+      headline={HEADLINE_SENTENCE}
+      intro={
+        <>
+          A sourced, monthly read on construction company insolvencies across the UK, drawn from
+          Insolvency Service public records. Covering all SIC Section F construction businesses,
+          broken down by insolvency procedure. Updated {monthLabel(meta.data_through)}.
+        </>
+      }
+      heroCtas={
+        <>
+          <Link
+            href="#book"
+            data-cta="research_insolvency_hero_book"
+            data-cta-placement="hero"
+            data-cta-goal="form"
+            className={btnPrimary}
+          >
+            Get a free CIS review
+          </Link>
+          <Link
+            href={`${PAGE_PATH}/data`}
+            data-cta="research_insolvency_hero_data"
+            data-cta-placement="hero"
+            className={btnOnDark}
+          >
+            Download the data (CSV)
+          </Link>
+        </>
+      }
+      stats={[
+        {
+          value: fmtNumber(headline.ttm_total),
+          label: "construction company insolvencies in the trailing 12 months",
+        },
+        {
+          value: fmtNumber(headline.last_month_cvl),
+          label: `CVLs in ${monthLabel(lastMonth)}, the most common procedure`,
+        },
+        {
+          value: fmtPercent(decade.change_pct, false),
+          label: `more insolvencies in ${decade.to_year} than in ${decade.from_year}`,
+        },
+        {
+          value: fmtNumber(headline.peak_total),
+          label: `insolvencies in ${monthLabel(headline.peak_month)}, the highest month on record`,
+        },
+      ]}
+      keyFindings={
+        <>
                 <li>
                   Construction insolvencies rose {fmtPercent(decade.change_pct, false)} from{" "}
                   {fmtNumber(decade.from_total)} in {decade.from_year} to{" "}
-                  {fmtNumber(decade.to_total)} in {decade.to_year}, the highest annual total since
-                  records began in this series.
+                  {fmtNumber(decade.to_total)} in {decade.to_year}. The highest annual total in the
+                  series is {fmtNumber(peakYear.total)} in {peakYear.year}, so {decade.to_year} sits
+                  just below the peak rather than at it.
                 </li>
                 <li>
                   In the trailing 12 months to {monthLabel(meta.data_through)},{" "}
@@ -256,10 +235,13 @@ export default function UKConstructionInsolvencyIndexPage() {
                   the Insolvency Service data.
                 </li>
                 <li>
-                  Creditors Voluntary Liquidation (CVL) is overwhelmingly the dominant procedure,
-                  accounting for roughly 75 to 80% of construction insolvencies in every year
-                  tracked. Directors choose voluntary wind-up far more often than creditors force a
-                  compulsory liquidation through the courts.
+                  Creditors Voluntary Liquidation (CVL) is the dominant procedure in every year, and
+                  its share has risen across the series: from {fmtPercent(cvlLowest.pct, false)} of
+                  construction insolvencies in {cvlLowest.year} to a peak of{" "}
+                  {fmtPercent(cvlHighest.pct, false)} in {cvlHighest.year}, and{" "}
+                  {fmtPercent(cvlLatest.pct, false)} in {cvlLatest.year}. Directors choose voluntary
+                  wind-up far more often than creditors force a compulsory liquidation through the
+                  courts, and increasingly so.
                 </li>
                 <li>
                   The 2022 to 2023 surge followed the end of pandemic-era insolvency restrictions
@@ -273,15 +255,46 @@ export default function UKConstructionInsolvencyIndexPage() {
                   CVLs, {fmtNumber(headline.last_month_compulsory)} compulsory liquidations, and{" "}
                   {fmtNumber(headline.last_month_administration)} administrations.
                 </li>
-              </ul>
-              <p className="mt-4 text-xs text-neutral-500">
-                Source: Insolvency Service, Company Insolvency Statistics (record-level data), under
-                the Open Government Licence v3.0. England, Wales and Scotland. Figures may be cited
-                with attribution to Trade Tax Specialists.
-              </p>
-            </div>
-
-            <Section id="annual" title="Construction insolvencies by year">
+        </>
+      }
+      source={
+        <>
+          Source: Insolvency Service, Company Insolvency Statistics (record-level data), under
+          the Open Government Licence v3.0. England, Wales and Scotland. Figures may be cited
+          with attribution to Trade Tax Specialists.
+        </>
+      }
+      conversionTitle="Working in construction? Protect your CIS position."
+      conversionBody={
+        <>
+          High insolvency rates in construction affect every part of the payment chain,
+          including subcontractors operating under CIS. Understanding your gross payment
+          status, your refund entitlements, and your tax position is a practical buffer
+          against client-side financial difficulties. Our calculators help you model your CIS
+          refund and GPS eligibility.
+        </>
+      }
+      conversionCtas={
+        <>
+          <Link
+            href="/calculators/cis-refund-estimator"
+            data-cta="research_insolvency_cta_calculator"
+            data-cta-placement="article"
+            className="text-primary-700 hover:text-primary-800"
+          >
+            CIS refund estimator &rarr;
+          </Link>
+          <Link
+            href="/calculators/cis-gps-eligibility-checker"
+            className="text-primary-700 hover:text-primary-800"
+          >
+            GPS eligibility checker &rarr;
+          </Link>
+        </>
+      }
+      faqs={faqs}
+    >
+            <ResearchSection id="annual" title="Construction insolvencies by year">
               <p>
                 Each bar shows the total number of construction company insolvencies registered in
                 that calendar year (complete years only). The sharp rise from 2022 reflects the
@@ -289,12 +302,12 @@ export default function UKConstructionInsolvencyIndexPage() {
                 dip is largely attributable to those temporary restrictions, not underlying
                 improvement in sector health.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <FigureCard>
                 <AnnualInsolvencyChart annual={insolvencies.annual} />
-              </div>
-            </Section>
+              </FigureCard>
+            </ResearchSection>
 
-            <Section id="monthly" title="The monthly trend by procedure">
+            <ResearchSection id="monthly" title="The monthly trend by procedure">
               <p>
                 The stacked area chart shows monthly insolvency registrations from January 2016,
                 broken down by the three main procedures: CVL (orange), compulsory liquidation
@@ -302,12 +315,12 @@ export default function UKConstructionInsolvencyIndexPage() {
                 2023. The narrowing of the compulsory band during 2020 to 2021 is the direct effect
                 of the pandemic restrictions.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <FigureCard>
                 <MonthlyInsolvencyChart monthly={insolvencies.monthly} />
-              </div>
-            </Section>
+              </FigureCard>
+            </ResearchSection>
 
-            <Section id="procedures" title="Breakdown by procedure">
+            <ResearchSection id="procedures" title="Breakdown by procedure">
               <p>
                 The table shows the number of construction company insolvencies by procedure type in{" "}
                 {latestFullAnnual ? String(latestFullAnnual.year) : "the latest full year"}.
@@ -315,7 +328,7 @@ export default function UKConstructionInsolvencyIndexPage() {
                 category, triggered by creditor petitions to the court.
               </p>
               {latestFullAnnual && (
-                <div className="not-prose mt-4 overflow-x-auto">
+                <DataTableWrap>
                   <table className="w-full border-collapse text-sm">
                     <thead>
                       <tr className="border-b-2 border-neutral-300 text-left">
@@ -343,19 +356,19 @@ export default function UKConstructionInsolvencyIndexPage() {
                         );
                       })}
                       <tr className="border-b border-neutral-300">
-                        <td className="py-2 pr-4 font-bold text-orange-700">Total</td>
-                        <td className="py-2 pr-4 text-right font-bold text-orange-700">
+                        <td className="py-2 pr-4 font-bold text-primary-700">Total</td>
+                        <td className="py-2 pr-4 text-right font-bold text-primary-700">
                           {fmtNumber(latestFullAnnual.total)}
                         </td>
-                        <td className="py-2 text-right font-bold text-orange-700">100%</td>
+                        <td className="py-2 text-right font-bold text-primary-700">100%</td>
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </DataTableWrap>
               )}
-            </Section>
+            </ResearchSection>
 
-            <Section id="sub-sector" title="Insolvencies by construction sub-sector">
+            <ResearchSection id="sub-sector" title="Insolvencies by construction sub-sector">
               <p>
                 Every construction insolvency falls into one of three SIC divisions: Division 41
                 (building construction, mainly housebuilders and commercial developers), Division
@@ -364,10 +377,10 @@ export default function UKConstructionInsolvencyIndexPage() {
                 joinery, painting and other trades most CIS subcontractors work in). The chart
                 shows how the three have moved since 2016.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <FigureCard>
                 <DivisionInsolvencyChart annual={divisions.annual} />
-              </div>
-              <div className="not-prose mt-6 overflow-x-auto">
+              </FigureCard>
+              <DataTableWrap>
                 <table className="w-full border-collapse text-sm">
                   <thead>
                     <tr className="border-b-2 border-neutral-300 text-left">
@@ -400,18 +413,21 @@ export default function UKConstructionInsolvencyIndexPage() {
                     ))}
                   </tbody>
                 </table>
-              </div>
+              </DataTableWrap>
               <p className="mt-4 text-sm text-neutral-600">
                 Division 41 (building) insolvencies have risen the fastest of the three since{" "}
                 {divisions.headline.decade_from_year}, up{" "}
-                {fmtPercent(divisions.headline.decade_change_pct_by_division.div41, false)}, roughly
-                double the growth rate in civil engineering (Division 42). Division 43
+                {fmtPercent(divisions.headline.decade_change_pct_by_division.div41, false)} against{" "}
+                {fmtPercent(divisions.headline.decade_change_pct_by_division.div42, false)} in civil
+                engineering (Division 42), more than five times the growth rate, and{" "}
+                {fmtPercent(divisions.headline.decade_change_pct_by_division.div43, false)} in
+                specialised trades (Division 43). Division 43
                 (specialised trades) remains the largest single contributor by volume in every
                 year of the series.
               </p>
-            </Section>
+            </ResearchSection>
 
-            <Section id="methodology" title="Methodology and sources">
+            <ResearchSection id="methodology" title="Methodology and sources">
               <p>
                 <strong>Data source.</strong> Counts are drawn from the Insolvency Service
                 record-level data file, published monthly as part of the Company Insolvency
@@ -439,8 +455,12 @@ export default function UKConstructionInsolvencyIndexPage() {
                 may partly reflect growth in the total number of active construction companies rather
                 than a worsening of sector conditions. The pandemic years (2020 to 2021) are not
                 comparable to other years because temporary legislation suppressed compulsory
-                liquidations. CVA and receivership counts are low (typically under 1% each) and
-                should be read as indicative only.
+                liquidations. CVA and receivership counts are low and should be read as indicative
+                only: CVAs peaked at {fmtPercent(cvaHighest.pct, false)} of construction
+                insolvencies in {cvaHighest.year}, ran between 1.7 and 2.4% from 2016 to 2019, and
+                have been under 1% in every year from {cvaFirstSubOne.year} onwards, while
+                receivership has never exceeded {fmtPercent(receivershipHighest.pct, false)} in any
+                year of the series.
               </p>
               <p>
                 <strong>Updated.</strong> Data through {monthLabel(meta.data_through)} (latest
@@ -451,7 +471,7 @@ export default function UKConstructionInsolvencyIndexPage() {
                   <li key={s.name}>
                     <a
                       href={s.release_page}
-                      className="font-semibold text-orange-700 hover:text-orange-800"
+                      className="font-semibold text-primary-700 hover:text-primary-800"
                       rel="nofollow"
                     >
                       {s.name}
@@ -463,7 +483,7 @@ export default function UKConstructionInsolvencyIndexPage() {
               <p className="text-sm">
                 <Link
                   href={`${PAGE_PATH}/data`}
-                  className="font-semibold text-orange-700 hover:text-orange-800"
+                  className="font-semibold text-primary-700 hover:text-primary-800"
                 >
                   Download the insolvency data (CSV)
                 </Link>
@@ -473,56 +493,8 @@ export default function UKConstructionInsolvencyIndexPage() {
                 data summary and does not constitute insolvency or tax advice on any individual
                 situation.
               </p>
-            </Section>
+            </ResearchSection>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-orange-500/20 bg-gradient-to-br from-orange-50 to-amber-50 p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-orange-700 sm:text-3xl">
-                Working in construction? Protect your CIS position.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                High insolvency rates in construction affect every part of the payment chain,
-                including subcontractors operating under CIS. Understanding your gross payment
-                status, your refund entitlements, and your tax position is a practical buffer
-                against client-side financial difficulties. Our calculators help you model your CIS
-                refund and GPS eligibility.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
-                <Link
-                  href="/calculators/cis-refund-estimator"
-                  className="text-orange-700 hover:text-orange-800"
-                >
-                  CIS refund estimator &rarr;
-                </Link>
-                <Link
-                  href="/calculators/cis-gps-eligibility-checker"
-                  className="text-orange-700 hover:text-orange-800"
-                >
-                  GPS eligibility checker &rarr;
-                </Link>
-              </div>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Get a free CIS review" />
-              </div>
-            </div>
-
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    </ResearchLayout>
   );
 }
