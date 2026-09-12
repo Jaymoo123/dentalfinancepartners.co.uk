@@ -399,11 +399,25 @@ const PROBE = () => {
   };
   const key = (p) => `rgb(${p[0]}, ${p[1]}, ${p[2]})`;
   const BAND_SEL = "section, article, aside, header, footer, div[class*='bg-']";
+  // FIFTH defect, 2026-09-12, and the same failure mode as the third: a band that
+  // exists is not measured, and the mode reports a number over it anyway. The
+  // candidate list was filtered to full-width elements and then outermost-wins was
+  // applied to THAT list, with `groundOf` only run afterwards. So a transparent
+  // <section> wrapping a full-width `bg-` div (a common shape: the section owns the
+  // layout, the inner div owns the ground) won outermost, returned null from
+  // `groundOf`, was dropped by `.filter(Boolean)`, and took the real band with it -
+  // because the grounded inner div had already been eliminated as "contained by
+  // another candidate". Net effect: the visible ground vanished from the sequence,
+  // its neighbours became adjacent to each other, and both counts were computed
+  // over a band list that was missing a band. Fix: a candidate must HAVE an opaque
+  // ground to compete at all, so outermost-wins runs among grounded elements only.
+  // A grounded outer still eats its grounded children exactly as before, which is
+  // what the fourth repair established; only the transparent-outer case changes.
   const bandEls = (root) => {
     if (!root) return [];
     const full = root.clientWidth * 0.9;
     const cand = Array.from(root.querySelectorAll(BAND_SEL)).filter(
-      (el) => el.getBoundingClientRect().width >= full,
+      (el) => el.getBoundingClientRect().width >= full && groundOf(el),
     );
     return cand.filter((el) => !cand.some((o) => o !== el && o.contains(el)));
   };
@@ -414,11 +428,20 @@ const PROBE = () => {
   // separate them, and on Trade they render as one continuous slab: the check
   // exists to catch exactly that and was structurally unable to. Distance is the
   // cheap "redmean" weighted sRGB metric (no dependency, no colour-space code),
-  // whose ~2.3 units is the usual just-noticeable-difference figure. THRESHOLD 3:
-  // marginally above that JND, and the estate's real grounds are nowhere near it -
-  // white vs stone-50 rgb(250, 250, 249) measures 15.7, five times the threshold,
-  // so genuinely distinct bands stay distinct while a 2.8-unit rounding difference
-  // merges. Self-tested below on one pair that must merge and one that must not.
+  // whose ~2.3 units is the usual just-noticeable-difference figure.
+  //
+  // THRESHOLD 3, justified on the two real measurements either side of it rather
+  // than on taste. The MISS that forced this change: rgb(250, 250, 249) against
+  // rgb(250, 250, 247), a delta of 2 on ONE channel out of 255, WCAG relative
+  // luminance 0.9553 vs 0.9541 = a difference of 0.0012, redmean distance 2.84.
+  // String equality scored that as a legitimate change of ground; it renders as one
+  // continuous slab. The nearest GENUINE alternation on the estate is white against
+  // stone-50: luminance 1.0000 vs 0.9553 = 0.0447, redmean distance 15.72. So the
+  // threshold has to fall between 2.84 and 15.72, a factor of 5.5 apart, and 3 sits
+  // just above the JND at the bottom of that gap - far enough below 15.72 that no
+  // real pair of grounds is at risk, far enough above 2.84 that a rounding
+  // difference merges. Self-tested below on both of those exact pairs, one that
+  // must merge and one that must not.
   const dist = (a, b) => {
     const rm = (a[0] + b[0]) / 2;
     const [dr, dg, db] = [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
@@ -485,10 +508,15 @@ const PROBE = () => {
     // decides WHAT to classify was not. The fixture is built here rather than read
     // off a live page on purpose - a site's markup changes and a self-test must not.
     // It encodes both cases the rule has to satisfy at once:
-    //   fx1 = an outer band that CONTAINS a full-width descendant carrying a bg-
-    //         class. Must be reported ONCE, as itself.
+    //   fx1 = an outer band that CONTAINS TWO full-width grounded descendants, the
+    //         stacked-card shape at 390. Must be reported ONCE, as itself. TWO
+    //         children, not one: with a single child of the same colour the
+    //         inverted rule reproduces the parent's sequence exactly and the case
+    //         reads as correct. That is how the fourth defect passed a fixture.
     //   fx2/fx3 = two real bands inside a plain <div> wrapper with no ground of its
     //         own, the Trade `<div id="book">` shape. Must both be found.
+    //   fx4 = a TRANSPARENT full-width wrapper whose ground lives on a full-width
+    //         child. The child is the band; the wrapper must not silently eat it.
     //   a narrow card, which must never qualify.
     // Run at two container widths because the defect was width-dependent: at 1440
     // the wrong rule happened to give the right answer and only 390/768/1024 showed
@@ -498,15 +526,19 @@ const PROBE = () => {
       host.style.cssText = "position:fixed;top:-10000px;left:0;visibility:hidden";
       host.innerHTML =
         '<section data-fx="fx1" style="background:#fff">' +
-        '<div class="bg-white" style="width:100%">full-width child, not a band</div>' +
+        '<div class="bg-white" style="width:100%;background:#fff">full-width child, not a band</div>' +
+        '<div class="bg-white" style="width:100%;background:#fff">nor is this one</div>' +
         "</section>" +
         '<div id="fx-wrap">' +
         '<section data-fx="fx2" style="background:#eee">wrapped band</section>' +
         '<section data-fx="fx3" style="background:#ddd">wrapped band</section>' +
         "</div>" +
+        '<section style="background:transparent">' +
+        '<div data-fx="fx4" class="bg-stone" style="width:100%;background:#fafaf9">grounded child</div>' +
+        "</section>" +
         '<div class="bg-red" style="width:120px">card</div>';
       document.body.appendChild(host);
-      const want = "fx1,fx2,fx3";
+      const want = "fx1,fx2,fx3,fx4";
       const cases = [390, 1024].map((w) => {
         host.style.width = `${w}px`;
         const got = bandEls(host).map((el) => el.dataset.fx || el.id || el.className || el.tagName).join(",");
@@ -731,7 +763,7 @@ GROUNDS SELF-TEST FAILED: ${JSON.stringify(groundsSelfTestResult)}. ` +
         `rgb(255, 255, 255) and oklch(0.985 0.001 106.423) light, ` +
         `rgb(250, 250, 247) vs rgb(250, 250, 249) the SAME ground and ` +
         `rgb(255, 255, 255) vs rgb(250, 250, 249) DIFFERENT grounds, ` +
-        `and band discovery to return exactly fx1,fx2,fx3 on the fixture at 390 and 1024. ` +
+        `and band discovery to return exactly fx1,fx2,fx3,fx4 on the fixture at 390 and 1024. ` +
         `Every grounds figure below would be noise; fix the instrument before reporting.`,
     );
     process.exit(2);

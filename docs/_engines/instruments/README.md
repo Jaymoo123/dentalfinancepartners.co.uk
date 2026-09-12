@@ -81,7 +81,63 @@ its **painted** background, floor 4.5:1 for small and fine-print text and 3:1
 otherwise; `scroll-margin-top` on every element addressed by an in-page anchor;
 computed heading typography for h1-h3 (the unlayered `line-height` rule beats
 every Tailwind utility and only `getComputedStyle` sees it, trap 1); and console
-errors, page errors and failed requests.
+errors, page errors and failed requests. With `--grounds` it also reports the
+section-ground breaches of DESIGN_SYSTEM section 9.
+
+**`cta_snapshot.mjs`** records the full `(id, placement, goal, href)` set per
+route so trap 22 (a button keeping its count while its goal or placement flips)
+is visible. **It now reads `data-cta` off ANY element, not just `<a>` and
+`<button>`.** It was anchors and buttons only until 2026-09-12, which on Trade
+meant two live wrapper-`<div>` ids were invisible to the estate's trap-22
+instrument: sweep counted 816 attributes, this file counted 814.
+
+**A `data-cta` on a non-interactive element is usually a defect in itself**, so
+the run lists them separately and the JSON carries them as
+`non_interactive_ctas`. `autoCapture` resolves every click through
+`closest("[data-cta]")` and then returns, so a wrapper `<div>` around a form
+claims the click of every field inside it (11 form controls per route on Trade)
+and SUBSTITUTES the existing events of any link inside it. The panel then reads
+as the best-converting surface on the site by construction. Panel-level
+attribution belongs on the submit `<button>`.
+
+## The grounds fixture test, and why it exists
+
+```bash
+node docs/_engines/instruments/grounds_fixture_test.mjs
+```
+
+That is the whole command. **No site, no site build and no server of your own**:
+it starts its own http server on a free port, serves six hand-written pages,
+runs the shipped `browser_check.mjs --grounds` against them as a child process
+at 390 and 1440, reads the answers out of the `--out` JSON and stops the server.
+It needs what the instrument needs, puppeteer-core and the installed Edge, and
+nothing else. Exit 0 = every case correct, exit 1 = the grounds logic has
+regressed.
+
+**Run it after any edit to `bandEls`, `groundOf`, `sameGround` or
+`SAME_GROUND`.** The `--grounds` mode was repaired three times in one day and
+each repair introduced the next defect, because every repair was verified
+against a live site whose correct answer nobody independently knew. The six
+cases are the defects that actually shipped:
+
+| Case | The defect it pins |
+|---|---|
+| `/near-identical` | two grounds 2/255 apart on one channel must read as ONE ground. String equality scored `rgb(250,250,249)` vs `rgb(250,250,247)` (luminance delta 0.0012, redmean distance 2.84) as a legitimate change of band |
+| `/wrapped-in-div` | a band inside `<div id="book" class="scroll-mt-24">` must be measured. The walker was `main > section` and reported 0 over three bands it never looked at |
+| `/transparent-wrapper` | a transparent full-width wrapper must not swallow the grounded child that is the real band |
+| `/dark-on-dark` | a genuinely dark band running into a dark footer must still be reported |
+| `/genuine-oscillation` | a healthy light/dark/light alternation, each band holding full-width inner cards, must report NOTHING. The inverted containment filter replaced bands with their children and invented white-on-white runs below 1440 |
+| `/single-band` | a one-band page says nothing |
+
+Both layers were proven to bite by mutation, not asserted: flipping the
+comparison back to string equality, the walker back to `main > section`, the
+containment filter back to `el.contains(o)`, or removing the grounded-candidate
+guard each turns the run red.
+
+`browser_check.mjs` also keeps its own in-page discovery self-test on a fixture
+it builds inside the probe, at two widths, and refuses to report any grounds
+figure if it fails. The two are deliberately separate: the in-page one is edited
+by whoever is editing the logic, this one is not.
 
 ## The self-test, and the spec bug it caught
 
