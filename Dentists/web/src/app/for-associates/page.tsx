@@ -12,7 +12,7 @@ const data: AudienceStage = {
   badge: "Self-employed associates · Ltd-company locums · NHS + private",
   heroHeading: "Accountants who get associate dentist tax right",
   intro:
-    "An associate return is not ordinary self-employment. Status rests on how the work actually runs rather than on the BDA model agreement, indemnity and CPD are easy to under-claim, and NHS Pension growth counts towards the annual allowance whether or not anyone checks it. We are dental-only, so those are the questions we open with.",
+    "An associate return is not ordinary self-employment. Status rests on how the work actually runs rather than on the BDA model agreement, indemnity and CPD are easy to under-claim, and NHS Pension growth counts towards the annual allowance whether or not anyone checks it. Our team at Dental Finance Partners works exclusively with UK dentists, so those are the questions we open with.",
   stats: [
     { value: "55p", label: "AMAP rate, first 10,000 miles" },
     { value: "50%", label: "Of last year's bill, per payment on account" },
@@ -22,7 +22,7 @@ const data: AudienceStage = {
   concerns: [
     {
       title: "Am I really self-employed?",
-      body: "The BDA model contract on file does not automatically mean self-employed status. HMRC and the tribunals test the actual working arrangement against control, substitution, mutuality of obligation, financial risk and integration. We review the reality, not just the paperwork.",
+      body: "The BDA model contract on file does not automatically mean self-employed status. HMRC and the tribunals test the actual working arrangement against control, substitution, mutuality of obligation, financial risk and integration. A specialist from our partner network reviews the reality, not just the paperwork.",
     },
     {
       title: "What expenses can I actually claim?",
@@ -34,15 +34,15 @@ const data: AudienceStage = {
     },
     {
       title: "What about the NHS Pension Scheme?",
-      body: "Still one of the most valuable schemes in the UK. But high-earning associates can hit the tapered annual allowance and trigger a charge. We model pensionable pay against the threshold and flag where Scheme Pays may make sense.",
+      body: "Still one of the most valuable schemes in the UK. But high-earning associates can hit the tapered annual allowance and trigger a charge. A specialist from our partner network models pensionable pay against the threshold and flags where Scheme Pays may make sense.",
     },
     {
       title: "How do I handle multiple practice engagements?",
-      body: "Different practices may classify the same locum work differently for IR35. Travel between practices is deductible (not home-to-first-practice). Apportioning materials and motor by practice matters for an accurate return. We map it out per engagement.",
+      body: "Different practices may classify the same locum work differently for IR35. Travel between practices is deductible (not home-to-first-practice). Apportioning materials and motor by practice matters for an accurate return. A specialist from our partner network maps it out per engagement.",
     },
     {
       title: "I'm worried about HMRC challenges",
-      body: "HMRC scrutinises three things on dental associate returns: status, expenses, and undeclared private income. We structure your records so each is defensible, and we represent you if HMRC opens an enquiry.",
+      body: "HMRC scrutinises three things on dental associate returns: status, expenses, and undeclared private income. A specialist from our partner network structures your records so each is defensible, and can act for you if HMRC opens an enquiry.",
     },
   ],
   services: [
@@ -52,7 +52,7 @@ const data: AudienceStage = {
     },
     {
       title: "Status review against the IR35 tests",
-      body: "We look at how the work actually runs, not what the contract says. Where status risk exists we tell you and structure to reduce it. If a practice issues an inside-IR35 SDS we walk you through the implications.",
+      body: "A specialist from our partner network looks at how the work actually runs, not what the contract says. Where status risk exists they tell you and structure to reduce it. If a practice issues an inside-IR35 SDS they walk you through the implications.",
     },
     {
       title: "Expense claim review for past three years",
@@ -70,7 +70,7 @@ const data: AudienceStage = {
   faqs: [
     {
       q: "I'm an associate earning around £75,000. Should I incorporate?",
-      a: "Usually not at that level. The administrative cost of running a limited company (formation, separate filings, corporation tax return, PSC payroll, dividend administration) typically outweighs the tax saving below roughly £80,000-£100,000 of sustained associate income. The IR35 reforms have removed much of the historical advantage where engagements are determined inside IR35. We model your specific numbers before recommending the structure.",
+      a: "Usually not at that level. The administrative cost of running a limited company (formation, separate filings, corporation tax return, PSC payroll, dividend administration) typically outweighs the tax saving below roughly £80,000-£100,000 of sustained associate income. The IR35 reforms have removed much of the historical advantage where engagements are determined inside IR35. A specialist dental accountant from our partner network models your specific numbers before recommending the structure.",
     },
     {
       q: "Can I claim my GDC retention fee as an expense?",
@@ -82,16 +82,16 @@ const data: AudienceStage = {
     },
     {
       q: "If I'm on the NHS Pension Scheme, can I also have a private pension?",
-      a: "Yes. The annual allowance (£60,000 for 2025/26, tapered down to £10,000 at very high adjusted income) is the cap across all your pension arrangements combined, including the NHS Pension Scheme growth and any private pension contributions. We model the total pension input value against your annual allowance and flag where Scheme Pays may apply.",
+      a: "Yes. The annual allowance (£60,000 for 2025/26, tapered down to £10,000 at very high adjusted income) is the cap across all your pension arrangements combined, including the NHS Pension Scheme growth and any private pension contributions. A specialist from our partner network models the total pension input value against your annual allowance and flags where Scheme Pays may apply.",
     },
     {
       q: "How does switching accountant work?",
-      a: "We write to your existing accountant for professional clearance and for your records, and we pick up from the position they hand over. How long that takes is in their hands, not ours, so we agree with you what is filed by whom before anything moves. You can switch mid-tax-year: the tax year and the filing obligations do not change, only who prepares the return.",
+      a: "Your new firm writes to your existing accountant for professional clearance and for your records, and picks up from the position they hand over. How long that takes is in the outgoing accountant's hands, so what is filed by whom gets agreed with you before anything moves. You can switch mid-tax-year: the tax year and the filing obligations do not change, only who prepares the return.",
     },
   ],
   ctaTitle: "Get your associate return done properly",
   ctaBody:
-    "30-minute scoping call, free. We look at your current set-up, flag the expenses you're missing, and tell you honestly whether incorporation is on the table yet.",
+    "30-minute scoping call, free. A specialist from our partner network looks at your current set-up, flags the expenses you're missing, and tells you honestly whether incorporation is on the table yet.",
   relatedGuides: [
     {
       href: "/dental-guides/associate-tax-survival-guide",
@@ -106,7 +106,7 @@ const data: AudienceStage = {
     {
       href: "/services/associate-tax",
       title: "Associate Tax Service",
-      body: "How we structure annual returns and ongoing tax planning for dental associates.",
+      body: "How annual returns and ongoing tax planning are structured for dental associates.",
     },
   ],
 };

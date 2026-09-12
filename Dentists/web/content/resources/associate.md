@@ -1,7 +1,7 @@
 ---
 topic: associate
 title: "Associate and locum tax guide: take-home pay, NI and allowable expenses 2025/26"
-summary: What dental associates and locums keep after income tax, Class 4 NI and Class 2 NI, with a clear walk-through of the allowable expenses most dentists miss.
+summary: What dental associates and locums keep after income tax and Class 4 National Insurance, with a clear walk-through of the allowable expenses most dentists miss.
 version: "2025/26"
 lastReviewed: "July 2025"
 ---
@@ -34,9 +34,9 @@ lastReviewed: "July 2025"
 
 <h2 id="national-insurance">National Insurance for associates</h2>
 
-<p>From 6 April 2024, Class 2 National Insurance was removed for most self-employed people. The weekly charge of £3.45 still applies for 2025/26 if your profits exceed the small profits threshold of £6,725, but you are treated as having paid it rather than paying it directly through your tax return. This protects your state pension entitlement.</p>
+<p>Class 2 National Insurance is no longer payable. From 6 April 2024 the Class 2 liability was removed: if your profits are at or above the small profits threshold (£7,105 for 2026/27) you are treated as having paid Class 2, so your state pension record is protected and there is nothing to pay. If your profits are below that threshold, you can pay voluntary Class 2 at £3.65 a week (2026/27) to keep the record intact.</p>
 
-<p>Class 4 NI applies on self-employed profit at 6% between £12,570 and £50,270, then 2% above. There is no Class 4 below £12,570.</p>
+<p>Class 4 NI applies on self-employed profit at 6% between £12,570 and £50,270, then 2% above (2025/26 and 2026/27). There is no Class 4 below £12,570.</p>
 
 <h2 id="expenses">Allowable expenses: what you can claim</h2>
 

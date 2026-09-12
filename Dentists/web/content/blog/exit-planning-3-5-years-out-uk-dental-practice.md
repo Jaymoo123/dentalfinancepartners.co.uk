@@ -42,12 +42,12 @@ faqs:
 
 <p>Get a professional valuation from a dental-specialist valuer. Do not rely on a rule-of-thumb percentage of fee income. That method is too crude for planning purposes. Use the valuation to identify what drives value in your practice and where you are underperforming.</p>
 
-<p>We offer a <a href="/services/practice-valuation">practice valuation service</a> that gives you a detailed breakdown of your goodwill, EBITDA, and comparable sales data.</p>
+<p>A <a href="/services/practice-valuation">specialist dental accountant from our partner network</a> can give you a detailed breakdown of your goodwill, EBITDA, and comparable sales data.</p>
 
 <h2>Step 2: Clean Up Your Accounts and Tax Position</h2>
 <p>Buyers will scrutinise your last three years of accounts. They want to see consistent, growing profits. They also want to see that you have not been extracting profit in ways that artificially depress the earnings figure.</p>
 
-<p>Common problems we see in pre-sale accounts include:</p>
+<p>Common problems in pre-sale accounts include:</p>
 <ul>
 <li>High personal expenses run through the company (cars, travel, entertaining) that reduce EBITDA but are not sustainable post-sale.</li>
 <li>Spouse salaries that are above market rate for the work done. A buyer will add these back to EBITDA, but it creates negotiation friction.</li>
@@ -86,7 +86,7 @@ faqs:
 
 <p>Owners who want to pass the practice to a family member rather than sell to a third party or incoming partner will find the tax structuring and NHS contract considerations covered in our guide to <a href="/blog/goodwill-and-practice-sale/dental-practice-succession-planning-family-transfer">dental practice succession planning for family transfers</a>.</p>
 
-<p>Our <a href="/for-principals">services for principals</a> include advice on partnership structures and succession planning.</p>
+<p>Our <a href="/for-principals">guidance for principals</a> covers partnership structures and succession planning.</p>
 
 <h2>Step 6: Optimise Your Tax Position Before the Sale</h2>
 <p>Tax on a dental practice sale can be significant. The structure of the sale (share sale vs asset sale) and your personal circumstances determine how much you keep.</p>
@@ -121,7 +121,7 @@ faqs:
 <p>Think about the seasonality of dental practice sales. Most deals complete in the spring or autumn. If you want to sell in a particular tax year, work backwards from that date to plan your marketing timeline.</p>
 
 <h2>Common Mistakes in Dental Practice Exit Planning</h2>
-<p>We see the same errors repeated by practice owners who do not plan ahead:</p>
+<p>The same errors come up again and again with practice owners who do not plan ahead:</p>
 <ul>
 <li><strong>Waiting too long</strong>: Starting the process six months before you want to sell leaves no time to fix problems or implement tax strategies.</li>
 <li><strong>Overvaluing the practice</strong>: An unrealistic valuation based on wishful thinking rather than market data will put off serious buyers.</li>

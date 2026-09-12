@@ -7,11 +7,11 @@ generator: claude/legacy-supabase
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
 metaTitle: "Dental Practice R&D Tax Credits: Eligibility & Claims Guide"
-metaDescription: "New treatment techniques, custom digital workflows, and material research can all qualify. Eligibility criteria and claiming process for dental practices."
+metaDescription: "Most dental practice activity does not qualify for R&D tax relief. What HMRC actually requires, and how the merged scheme works for practices."
 altText: "Dental practitioner reviewing R&D tax credit documentation at a modern UK dental practice"
 image: ""
 h1: "R&D Tax Credits for Dental Practices: Eligibility & Claims"
-summary: "Many dental practices can claim R&D tax credits for innovation projects but don't realise they qualify. This guide explains eligibility criteria and the claiming process."
+summary: "R&D tax relief is narrow and most dental practice activity falls outside it. This guide explains the qualifying test, the merged scheme rates, and how to tell quickly whether you are in scope."
 schema: ""
 faqs:
   - question: "What types of dental innovations qualify for R&D tax credits?"
@@ -22,15 +22,15 @@ faqs:
     answer: "You need comprehensive documentation including a technical report explaining the scientific challenge, systematic approach, and outcomes; detailed expenditure records clearly attributable to R&D activities; time sheets showing staff involvement in qualifying work; and evidence of the innovation process such as project notes, test results, or development records. Contemporary documentation is much stronger than retrospective reconstruction."
 ---
 
-<p>R&D tax credits remain one of the most underutilised tax reliefs available to UK dental practices. Many practice owners assume these credits only apply to pharmaceutical companies or tech firms, but dental practice r&d tax credits can provide significant financial benefits for practices engaged in genuine innovation.</p>
+<p>R&D tax relief is occasionally worth a look for a dental practice, but it is worth saying plainly at the outset: most dental practice activity does not qualify. Delivering treatment well, adopting a new technique that is already established, buying better equipment and improving how the practice runs are all normal business activity, not research and development. The relief is narrow, HMRC scrutinises claims closely, and the sector has attracted poor-quality claims sold on commission.</p>
 
-<p>The relief can reduce your corporation tax bill or provide a cash payment, making it particularly valuable during periods of investment or expansion. However, understanding what qualifies and navigating the claim process requires careful consideration of HMRC's specific criteria.</p>
+<p>Where a practice is genuinely resolving a scientific or technological uncertainty, the relief can reduce a corporation tax bill or produce a cash payment. This guide sets out what HMRC actually requires, so you can tell quickly whether you are in scope before spending anything on a claim.</p>
 
 <h2>What Are R&D Tax Credits for Dental Practices?</h2>
 
 <p>R&D tax credits are a government incentive designed to encourage innovation across all industries. For dental practices, they provide tax relief on qualifying expenditure related to research and development activities that advance dental science or improve patient care through technological innovation.</p>
 
-<p>The relief works by allowing you to deduct up to 230% of qualifying costs from your taxable profits (for SME scheme) or claim a tax credit worth 10% of qualifying expenditure (for RDEC scheme). This can result in substantial tax savings or even cash payments if your practice makes a loss.</p>
+<p>The schemes changed. For accounting periods beginning on or after 1 April 2024 the old SME and RDEC schemes were replaced by a single merged scheme, which gives an R&D expenditure credit at 20% of qualifying expenditure. The credit is taxable and is set against your corporation tax bill, with the balance payable in cash where there is no liability to absorb it. The alternative, Enhanced R&D Intensive Support, is only open to a loss-making SME whose relevant R&D expenditure is at least 30% of its total expenditure, which almost no dental practice will reach.</p>
 
 <p>Unlike some tax reliefs that require pre-approval, dental practice r&d tax credits are claimed retrospectively as part of your corporation tax return. However, the technical requirements mean most successful claims require specialist advice to navigate correctly.</p>
 
@@ -95,7 +95,6 @@ faqs:
 <li>Materials and consumables used in R&D projects</li>
 <li>Software costs where used primarily for R&D</li>
 <li>Subcontractor costs (with restrictions on connected parties)</li>
-<li>Utilities and other overheads directly supporting R&D</li>
 </ul>
 
 <p>You'll need detailed records showing how costs relate specifically to qualifying activities, not general practice running costs.</p>
@@ -117,11 +116,11 @@ faqs:
 
 <h3>Calculating Your Claim Value</h3>
 
-<p>The calculation depends on which scheme applies to your practice. Most dental practices qualify for the SME scheme unless they're part of a larger group or receive significant grant funding.</p>
+<p>For accounting periods beginning on or after 1 April 2024 the merged scheme applies to companies of every size, so a small incorporated dental practice and a large group use the same calculation. Enhanced R&D Intensive Support is the only alternative, and it is restricted to a loss-making SME that meets the 30% R&D intensity condition.</p>
 
-<p>Under the SME scheme, you can deduct 230% of qualifying costs from taxable profits. For example, if you spend £20,000 on qualifying R&D, you can claim tax relief on £46,000. At 25% corporation tax, this saves £11,500.</p>
+<p>Under the merged scheme the credit is 20% of qualifying expenditure. So £20,000 of qualifying spend produces a £4,000 expenditure credit. The credit is itself taxable, so at the 25% main rate of corporation tax the net benefit is £3,000. It is set against your corporation tax liability first, and any remaining amount can be paid out in cash subject to the statutory limits.</p>
 
-<p>If your practice makes a loss, you can instead claim a cash credit of 14.5% of qualifying expenditure (after the 230% enhancement).</p>
+<p>Enhanced R&D Intensive Support, where a company qualifies, works differently: an extra 86% deduction on top of the normal 100% (186% in total) and a payable credit worth up to 14.5% of the surrenderable loss. Check the intensity condition before assuming this route is open, because relevant R&D expenditure has to be at least 30% of total expenditure and a practice with clinical income and staff costs will not usually be close.</p>
 
 <h3>Submission and Timing</h3>
 
@@ -186,19 +185,19 @@ faqs:
 <p>R&D tax credits represent a valuable but often overlooked opportunity for dental practices engaged in genuine innovation. With proper understanding and professional support, they can provide significant financial benefits while encouraging continued advancement in dental care.</p>
 
 <h2>Common Dental R&D Projects</h2>
-<p>These real-world examples help illustrate what typically qualifies for <strong>dental R&D</strong> relief:</p>
+<p>These illustrative examples show the kind of work that can qualify for <strong>dental R&D</strong> relief. They are shown to mark the boundary, not to suggest the relief is widely available: in each case the claim would still stand or fall on evidence of a genuine technological uncertainty and how it was resolved.</p>
 
 <h3>Digital Workflow Development</h3>
 
-<p>A practice spent six months developing an integrated digital workflow connecting intraoral scanners, milling machines, and patient records. The project involved significant trial and error to overcome compatibility issues and optimise treatment times. The development costs qualified for R&D relief.</p>
+<p>A practice spent six months developing an integrated digital workflow connecting intraoral scanners, milling machines, and patient records. Where the work involved genuine technical uncertainty about whether the systems could be made to work together, rather than configuration effort, the development costs can qualify.</p>
 
 <h3>Implant Protocol Innovation</h3>
 
-<p>An oral surgery practice developed a new protocol for immediate implant placement in compromised bone sites. The research involved systematic testing of different approaches, detailed outcome tracking, and protocol refinement. Both the research time and materials qualified.</p>
+<p>An oral surgery practice developed a new protocol for immediate implant placement in compromised bone sites. Systematic testing of different approaches with detailed outcome tracking can qualify, but refining an established clinical technique is not enough on its own: the advance has to be in science or technology, not in the practitioner's own skill.</p>
 
 <h3>Orthodontic Treatment Systems</h3>
 
-<p>A specialist practice created custom software to predict treatment outcomes using AI analysis of patient photos. The development process, including failed attempts and iterative improvements, qualified for <strong>innovation relief</strong>.</p>
+<p>A specialist practice created custom software to predict treatment outcomes using AI analysis of patient photos. Software development of this kind is the likeliest qualifying activity in a dental setting, and the failed attempts count as much as the successful ones.</p>
 
 <h2>Qualifying Costs and Documentation</h2>
 <p>Understanding which costs qualify is crucial for maximising your <strong>research and development</strong> claim.</p>
@@ -214,11 +213,11 @@ faqs:
 <li>Protocol development and refinement</li>
 </ul>
 
-<p>Keep detailed time records showing who worked on projects and for how long. A principal dentist earning £150,000 spending 10% of their time on qualifying R&D could contribute £15,000 to the claim.</p>
+<p>Keep detailed time records showing who worked on projects and for how long. Qualifying staffing costs are salaries and wages, employer Class 1 National Insurance and pension contributions for directors and employees directly and actively engaged in the R&D, apportioned to the time actually spent on it. Profit taken as dividends is not a staffing cost, so an owner-director on a small salary and large dividends has very little to bring into a claim.</p>
 
-<h3>Materials and Equipment</h3>
+<h3>Materials and Software</h3>
 
-<p>Consumable materials used in R&D projects qualify fully. Equipment and software qualify proportionally based on R&D use. If you buy a £50,000 CBCT scanner and use it 20% for R&D, you can claim £10,000.</p>
+<p>Consumable items used up in the R&D project qualify, in proportion to their use in the R&D, and so do licence fees for software used in the project. Capital expenditure does not qualify: buying a CBCT scanner, a mill or a surgery fit-out is not qualifying R&D expenditure, however the equipment is later used. Capital spending is dealt with by the capital allowances rules instead, which is a separate claim.</p>
 
 <h3>Documentation Requirements</h3>
 

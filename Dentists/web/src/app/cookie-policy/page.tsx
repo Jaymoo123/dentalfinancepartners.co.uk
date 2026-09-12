@@ -65,7 +65,7 @@ export default function CookiePolicyPage() {
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Essential cookies and storage</h3>
         <p>
-          We do not set any cookies on the public pages of the Site, and those pages work whether or not your browser accepts cookies. We do store a small amount of information in your browser, described in the sections below: two random analytics identifiers, and, if you opt out of analytics, a record of that choice so it survives between visits. The opt-out record is the one item we would keep whatever you chose, because without it we could not honour your decision.
+          We set no cookies of our own on the public pages of the Site. Our own analytics use browser storage rather than cookies: two random identifiers, and, if you opt out of analytics, a record of that choice so it survives between visits. The opt-out record is the one item we would keep whatever you chose, because without it we could not honour your decision. Google Analytics does set cookies on the public pages unless you have opted out, and those cookies are listed below.
         </p>
         <p>
           A single sign-in cookie is used in the private, staff-only part of the Site. Visitors cannot reach that area and it is never set by browsing the public pages.
@@ -76,12 +76,12 @@ export default function CookiePolicyPage() {
           We run our own privacy-first analytics so we can understand how visitors use the Site and improve it. To do this we store two random identifiers in your browser (a visitor identifier and a session identifier) and record anonymous interaction events such as pages viewed, scrolling, clicks and form steps. The lawful basis is our legitimate interest in measuring and improving the Site.
         </p>
         <p>
-          This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect your name, email or phone number in these events, and we do not sell or share this data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all analytics on your device.
+          This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect your name, email or phone number in these events, and we do not sell or share this data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page. That stops our first-party analytics on your device straight away, and stops Google Analytics loading on the pages you view after that.
         </p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Analytics cookies (Google Analytics)</h3>
         <p>
-          We use Google Analytics to understand how visitors interact with our Site. This helps us improve content and user experience. Google Analytics sets the following cookies:
+          We use Google Analytics to understand how visitors interact with our Site. This helps us improve content and user experience. Google Analytics runs by default on the public pages, on the same legitimate-interest basis as our own analytics, and stops running if you opt out. When it runs, it sets the following cookies:
         </p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
@@ -113,7 +113,7 @@ export default function CookiePolicyPage() {
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">On this site</h3>
         <p>
-          Use the &quot;Do not track me&quot; link in the footer of any page to opt out of our first-party analytics and Google Analytics. Your choice is stored on your device and takes effect immediately. You can re-enable analytics from the same link.
+          Use the &quot;Do not track me&quot; link in the footer of any page to opt out of our first-party analytics and Google Analytics. Your choice is stored on your device. Our own analytics stop immediately and Google Analytics is not loaded on the pages you view after that. Any Google Analytics cookies already on your device stay there until they expire or you delete them in your browser settings. You can re-enable analytics from the same link.
         </p>
 
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Browser settings</h3>

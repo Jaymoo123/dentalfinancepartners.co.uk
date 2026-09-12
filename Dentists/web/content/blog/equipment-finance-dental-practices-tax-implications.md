@@ -164,4 +164,4 @@ faqs:
 
 <p>Equipment finance decisions affect your tax position for years, and the optimal route turns on your profit level, cash flow, whether you intend to keep the kit and your VAT and partial-exemption position. A specialist dental accountant can model the methods against your numbers, point the AIA at the right pool, time a large purchase against your year-end and the April 2026 WDA step, and make sure a section 198 election is in place if the equipment comes with a practice purchase.</p>
 
-<p>If you want help evaluating equipment finance options for your practice, <a href="/contact">our team specialises in dental practice finances</a> and can model the tax treatment of each route for your situation.</p>
+<p>If you want help evaluating equipment finance options for your practice, <a href="/contact">our team can introduce you to a specialist dental accountant from our partner network</a> who will model the tax treatment of each route for your situation.</p>

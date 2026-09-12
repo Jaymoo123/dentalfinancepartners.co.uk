@@ -18,8 +18,8 @@ lastReviewed: "July 2026"
 
 <ul>
 <li>Income tax: personal allowance £12,570; basic rate 20% to £50,270; higher rate 40% to £125,140; additional rate 45% above. Allowance tapers at £1 for every £2 above £100,000.</li>
-<li>Class 4 NIC: 6% on profit between £12,570 and £50,270; 2% above.</li>
-<li>Class 2 NIC: £3.45 per week where profit exceeds £6,725 (treated as paid via Self Assessment).</li>
+<li>Class 4 NIC: 6% on profit between £12,570 and £50,270; 2% above (2026/27).</li>
+<li>Class 2 NIC: no longer payable. The liability was removed from 6 April 2024, and profit at or above the small profits threshold (£7,105 for 2026/27) is treated as having paid it.</li>
 <li>Director salary (Ltd route): £12,570, which sits within the personal allowance and avoids income tax and employee NIC. Employer NIC at 15% applies above the £5,000 secondary threshold, giving £1,135.50 of employer NIC on a £12,570 salary for a single-director company with no Employment Allowance.</li>
 <li>Corporation tax: 19% on profits up to £50,000; 25% main rate above £250,000; 26.5% effective marginal rate between £50,000 and £250,000.</li>
 <li>Dividend tax: 10.75% (ordinary rate, up to basic-rate band); 35.75% (upper rate, higher-rate band); 39.35% (additional rate). Dividend allowance £500. These rates apply under Finance Act 2026 section 4, rising two points from the 2025/26 rates.</li>
@@ -28,7 +28,7 @@ lastReviewed: "July 2026"
 
 <h2 id="sole-trader">How the sole trader route is taxed</h2>
 
-<p>As a self-employed associate, your taxable profit is your associate share of gross fees, less lab costs on your share and other allowable expenses. Income tax applies at the rates above. Class 4 NIC applies on profit between £12,570 and £50,270 at 6% and above £50,270 at 2%. Class 2 NIC of £3.45 per week is treated as paid if profit exceeds £6,725.</p>
+<p>As a self-employed associate, your taxable profit is your associate share of gross fees, less lab costs on your share and other allowable expenses. Income tax applies at the rates above. Class 4 NIC applies on profit between £12,570 and £50,270 at 6% and above £50,270 at 2% (2026/27). Class 2 NIC is no longer payable: the liability was removed from 6 April 2024, and profit at or above the small profits threshold (£7,105 for 2026/27) is treated as having paid it.</p>
 
 <p>Your NHS Pension contributions are deducted at source by the NHS Business Services Authority and are allowable against taxable profit, reducing both income tax and Class 4 NIC. The employer-equivalent value, roughly 23.78% of pensionable earnings, is funded on your behalf by NHS England and the commissioning arrangements. You do not pay it; it accrues as pension benefit on top of your fee income.</p>
 

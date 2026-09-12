@@ -366,8 +366,8 @@ export default function NHSDentistEarningsPage() {
                 A benchmark only tells you where you sit. What you keep depends on structure,
                 expenses claimed, pension treatment and how income is drawn. Whether you are an
                 associate comparing yourself with the national average, a principal reviewing
-                extraction, or a buyer reading goodwill against income, that is the work. We act for
-                dental professionals only.
+                extraction, or a buyer reading goodwill against income, that is the work. Our partner
+                network acts for dental professionals only.
               </p>
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
                 <Link

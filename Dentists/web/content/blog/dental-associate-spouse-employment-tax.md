@@ -171,6 +171,6 @@ faqs:
 <li><strong>Speak to a dental accountant:</strong> Before implementing anything, get advice from an accountant who understands dental practice finances. The rules are nuanced, and a mistake can be costly.</li>
 </ol>
 
-<p>If you are a dental associate considering employing your spouse, we can help you structure the arrangement correctly. Our team specialises in <a href="/services/dental-accountants">dental accountancy</a> and can review your specific situation, set up payroll, and ensure you stay compliant with HMRC rules. <a href="/contact">Contact us</a> for a free initial discussion.</p>
+<p>If you are a dental associate considering employing your spouse, we can put you in touch with the right specialist. A <a href="/services/dental-accountants">specialist dental accountant from our partner network</a> can review your specific situation, set up payroll, and make sure you stay compliant with HMRC rules. <a href="/contact">Contact us</a> for a free initial discussion.</p>
 
 <p>For more guidance on associate tax planning, see our <a href="/dental-guides/associate-tax-survival-guide">Associate Tax Survival Guide</a>.</p>

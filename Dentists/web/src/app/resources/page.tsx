@@ -91,7 +91,7 @@ export default function ResourcesIndex() {
               {TITLE}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-              The working models and research notes we use when we sit down with a dentist.
+              The working models and research notes behind the decisions a dentist actually faces.
               Each one is a full written walk-through of the numbers, and most come with the
               spreadsheet behind it. Nothing here is gated: no sign-up, no email address, no
               form between you and the file.

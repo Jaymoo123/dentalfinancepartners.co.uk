@@ -48,7 +48,7 @@ const services = [
     eyebrow: "Tax",
     title: "Tax planning for dentists",
     description:
-      "Proactive planning across the tax year, not just at year end. We model salary and dividend extraction, NHS Pension interaction, employer pension contributions, and timing decisions for principals, partners and associates working through limited companies.",
+      "Proactive planning across the tax year, not just at year end. A specialist from our partner network models salary and dividend extraction, NHS Pension interaction, employer pension contributions, and timing decisions for principals, partners and associates working through limited companies.",
     features: [
       "Salary and dividend optimisation 2025/26 rates",
       "Employer pension contributions for principals",
@@ -61,7 +61,7 @@ const services = [
     eyebrow: "Structure",
     title: "Incorporation and partnership structure",
     description:
-      "Sole trader, expense-share partnership, full LLP, limited company, holding-company structure. Each shape has different NHS Pension consequences, different goodwill treatment and different exit economics. We model the trade-offs in your specific numbers.",
+      "Sole trader, expense-share partnership, full LLP, limited company, holding-company structure. Each shape has different NHS Pension consequences, different goodwill treatment and different exit economics. A specialist from our partner network models the trade-offs in your specific numbers.",
     features: [
       "Sole trader vs partnership vs Ltd modelling",
       "Section 162 incorporation relief analysis",
@@ -137,11 +137,11 @@ const included = [
   },
   {
     title: "Proactive, not just compliance",
-    body: "We do not wait to be asked. If your salary and dividend split is leaking tax, if your goodwill amortisation election was missed, if your NHS Pension annual allowance is heading toward a charge, we flag it before you ask.",
+    body: "A specialist firm does not wait to be asked. If your salary and dividend split is leaking tax, if your goodwill amortisation election was missed, if your NHS Pension annual allowance is heading toward a charge, they flag it before you ask.",
   },
   {
     title: "NHS Pension scheme awareness",
-    body: "Decisions that look obvious in isolation, incorporating, drawing dividends, employing a spouse, can quietly reduce NHS Pension benefits or trigger annual allowance charges. We factor pension consequences into every structural decision.",
+    body: "Decisions that look obvious in isolation, incorporating, drawing dividends, employing a spouse, can quietly reduce NHS Pension benefits or trigger annual allowance charges. Pension consequences get factored into every structural decision.",
   },
 ];
 
@@ -170,7 +170,7 @@ const faqs = [
   {
     question: "Do you advise on NHS Pension scheme issues?",
     answer:
-      "We model the financial impact of pension decisions: annual allowance charges, the tapered allowance interaction with high earnings, McCloud remedy choices for members with 1995 or 2008 section legacy benefits, the dental retainer vs full membership question. For specific pension advice on accessing benefits or making transfer decisions we work alongside an FCA-authorised IFA.",
+      "A specialist from our partner network models the financial impact of pension decisions: annual allowance charges, the tapered allowance interaction with high earnings, McCloud remedy choices for members with 1995 or 2008 section legacy benefits, the dental retainer vs full membership question. For specific pension advice on accessing benefits or making transfer decisions they work alongside an FCA-authorised IFA.",
   },
 ];
 
@@ -255,7 +255,7 @@ export default function ServicesPage() {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-              What we actually do for dentists
+              What the work covers for dentists
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
               Six areas of work that come up again and again in UK dental practice. Each card says where its link goes, and the full set of specialist service pages is listed below.
@@ -413,7 +413,7 @@ export default function ServicesPage() {
                 30 minutes, free, no obligation
               </h2>
               <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-                We will review your practice structure, NHS contract position and current accountant set-up, then give you clear recommendations. If we are not the right fit, we will tell you and suggest who is.
+                A specialist from our partner network will review your practice structure, NHS contract position and current accountant set-up, then give you clear recommendations. If they are not the right fit, they will tell you and suggest who is.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-white/85">
                 <li className="flex items-start gap-3">

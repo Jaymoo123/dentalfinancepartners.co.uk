@@ -122,4 +122,4 @@ faqs:
 
 <p>If you want to understand how the year-end position interacts with these changes, our explainer on <a href="/blog/nhs-contracts/nhs-dental-contract-clawback-explained">how NHS dental contract clawback works</a> sets out the reconciliation framework that continues to apply.</p>
 
-<p>If you would like to discuss how contract reform affects your particular practice finances, contact our team. We work with practice owners, associates and locum dentists across the UK to plan tax and profitability around the NHS contract as it actually stands, and to keep that plan current as reform is confirmed.</p>
+<p>If you would like to discuss how contract reform affects your particular practice finances, contact our team. We will introduce you to a specialist dental accountant from our partner network who works with practice owners, associates and locum dentists across the UK, and who can plan tax and profitability around the NHS contract as it actually stands and keep that plan current as reform is confirmed.</p>

@@ -157,6 +157,6 @@ faqs:
 
 <p>Freehold gives you control and capital growth. Leasehold gives you flexibility and higher annual tax relief. Neither is inherently better. The right choice depends on your financial position, your risk appetite, and how you plan to exit the practice.</p>
 
-<p>If you are considering buying a dental practice and need help comparing freehold vs leasehold options, our team at Dental Finance Partners can help. We work with practice buyers to model the tax and cashflow implications of each structure. <a href="/for-practice-buyers">Contact us for a practice purchase review</a>.</p>
+<p>If you are considering buying a dental practice and need help comparing freehold vs leasehold options, our team at Dental Finance Partners can help. We will introduce you to a specialist dental accountant from our partner network who works with practice buyers to model the tax and cashflow implications of each structure. <a href="/for-practice-buyers">Contact us for a practice purchase review</a>.</p>
 
 <p>For more on practice purchase financial due diligence, see our guide: <a href="/dental-guides/practice-purchase-financial-due-diligence">Practice Purchase Financial Due Diligence</a>.</p>

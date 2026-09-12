@@ -134,4 +134,4 @@ faqs:
 
 <p>Work with a dental-specialist accountant and solicitor who understand NHS commissioning and contract law. The cost of professional advice is small compared to the risk of a failed sale or a contract that loses value after completion.</p>
 
-<p>If you are considering buying or selling a dental practice, speak to our team at Dental Finance Partners. We provide <a href="/services/practice-accounting">practice accounting</a> and <a href="/services/practice-valuation">valuation services</a> tailored to NHS and mixed practices.</p>
+<p>If you are considering buying or selling a dental practice, speak to our team at Dental Finance Partners. We will introduce you to a specialist dental accountant from our partner network who provides <a href="/services/practice-accounting">practice accounting</a> and <a href="/services/practice-valuation">valuation services</a> tailored to NHS and mixed practices.</p>

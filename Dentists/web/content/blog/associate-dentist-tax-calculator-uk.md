@@ -60,10 +60,10 @@ faqs:
 
 <h3>Step 3: Calculate National Insurance</h3>
 
-<p>Class 2 National Insurance is £3.45 per week if your profits exceed £6,725. Class 4 National Insurance is:</p>
+<p>Class 2 National Insurance is no longer payable. The liability was removed from 6 April 2024, and profit at or above the small profits threshold (£7,105 for 2026/27) is treated as having paid it, so your state pension record is protected with nothing to pay. Class 4 National Insurance is:</p>
 
 <ul>
-<li>9% on profits between £12,570 and £50,270</li>
+<li>6% on profits between £12,570 and £50,270</li>
 <li>2% on profits above £50,270</li>
 </ul>
 

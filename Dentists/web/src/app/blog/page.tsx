@@ -184,11 +184,11 @@ export default function BlogIndexPage() {
           contained
           ground="white"
           title="Get a dental specialist on your numbers"
-          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will come back with a clear view of your options. No obligation and no hard sell. If your current arrangement is already right for you, we will say so."
+          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will put you in front of a specialist dental accountant from our partner network. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
           proofPoints={[
             { title: "Dental practices only", detail: "NHS pensions, UDAs and practice sales every day" },
             { title: "One accountant throughout", detail: "You speak to the person doing the work" },
-            { title: "Answers in writing", detail: "What we advise, and the reasoning behind it" },
+            { title: "Answers in writing", detail: "The advice you get, and the reasoning behind it" },
           ]}
           form={<LeadForm redirectOnSuccess={false} submitLabel="Request a call back" />}
         />

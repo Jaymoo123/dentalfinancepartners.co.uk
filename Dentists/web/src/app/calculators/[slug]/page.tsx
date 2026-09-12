@@ -189,7 +189,7 @@ export default async function CalculatorPage({
           ground="white"
           eyebrow="Before you act on this"
           title="Check this against your real position"
-          description="A calculator works from the figures you type into it. Your actual position also depends on your NHS Pension record, how the practice is set up, and what you are planning next. Tell us where you are and we will come back with a clear view of your options. No obligation, and if what you are doing already suits you we will say so."
+          description="A calculator works from the figures you type into it. Your actual position also depends on your NHS Pension record, how the practice is set up, and what you are planning next. Tell us where you are and we will put you in front of a specialist dental accountant from our partner network. No obligation, and if what you are doing already suits you they will say so."
           proofPoints={[
             {
               title: "Built around dental income",
@@ -197,7 +197,7 @@ export default async function CalculatorPage({
             },
             {
               title: "Your figures, not a template",
-              detail: "We work from your accounts and your pension record",
+              detail: "The work starts from your accounts and your pension record",
             },
             {
               title: "The reasoning, not just the number",

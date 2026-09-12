@@ -21,7 +21,7 @@ lastReviewed: "July 2025"
 <li>Additional rate: 45% above £125,140.</li>
 </ul>
 
-<p>The personal allowance tapers away for profits above £100,000 at £1 for every £2 above the threshold. Class 4 NI applies at 6% between £12,570 and £50,270, and 2% above. Class 2 NI at £3.45 a week applies if profit exceeds £6,725.</p>
+<p>The personal allowance tapers away for profits above £100,000 at £1 for every £2 above the threshold. Class 4 NI applies at 6% between £12,570 and £50,270, and 2% above (2026/27). Class 2 NI is no longer payable: the liability was removed from 6 April 2024, and profits at or above the small profits threshold (£7,105 for 2026/27) are treated as having paid it, so the state pension record is protected with nothing to pay.</p>
 
 <p>There is no employer NI, no corporation tax and no dividend tax. The structure is simple and the NHS Pension accrues on your full net pensionable earnings.</p>
 
@@ -45,7 +45,7 @@ lastReviewed: "July 2025"
 <p>At a practice profit of £120,000 in 2026/27, the rough comparison is as follows. These are approximations: your exact position depends on other income, pension contributions and allowable costs.</p>
 
 <ul>
-<li>Sole trader: income tax around £35,432, Class 4 NI around £3,657, Class 2 around £179. Net in pocket approximately £80,732.</li>
+<li>Sole trader: income tax around £39,432 and Class 4 NI around £3,657. No Class 2 is payable. Net in pocket approximately £76,911. The income tax figure includes the personal allowance taper described above, which at £120,000 of profit leaves an allowance of £2,570.</li>
 <li>Limited company (salary plus dividends, no pension, admin cost £2,500): total tax, NI and costs somewhat higher than the sole trader route once the corporation tax, dividend tax and employer NI are combined. Net in pocket somewhat lower.</li>
 </ul>
 

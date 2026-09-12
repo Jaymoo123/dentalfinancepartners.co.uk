@@ -128,7 +128,7 @@ export function AudienceStageLayout({ data }: Props) {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl">
             <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-              How we work with {data.eyebrow.replace(/^For\s+/i, "").toLowerCase()}
+              How the work runs for {data.eyebrow.replace(/^For\s+/i, "").toLowerCase()}
             </h2>
             <div className="mt-10 space-y-5">
               {data.services.map((s, i) => (

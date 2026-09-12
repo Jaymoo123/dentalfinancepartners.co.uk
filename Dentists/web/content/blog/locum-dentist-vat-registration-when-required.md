@@ -138,4 +138,4 @@ faqs:
 
 <p>If you are unsure whether any of your services are standard-rated, or if you are close to the threshold, speak to a dental-specialist accountant. The rules are fact-specific, and getting it wrong can mean penalties and interest on unpaid VAT.</p>
 
-<p>For tailored advice on your specific situation, <a href="/contact">contact our team</a> of dental accountants who understand locum work.</p>
+<p>For tailored advice on your specific situation, <a href="/contact">contact our team</a> and we will arrange an introduction to a dental accountant from our specialist partner network who understands locum work.</p>

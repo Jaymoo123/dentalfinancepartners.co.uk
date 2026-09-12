@@ -18,14 +18,14 @@ faqs:
   - question: "What expenses do most dental associates miss?"
     answer: "The most-commonly-missed allowable expenses on dental associate returns: motor expenses between practices (often claimed at the wrong rate or not at all), home office apportionment (where the associate genuinely does practice admin from home), CPD course costs (including online courses), indemnity premium (sometimes left off when paid annually rather than monthly), loupes and personal instruments, professional subscriptions (BDA, specialty associations), phone and internet apportionment, and accountancy fees themselves. Work through that list against your last return line by line: if any item is missing entirely, the return is understating the claim, and the mileage rate in particular rose to 55p for the first 10,000 business miles from 6 April 2026."
   - question: "How does an associate buy back additional NHS Pension service?"
-    answer: "Members of the NHS Pension Scheme can buy Additional Pension via Additional Pension Contributions (APCs) or transfer in previous pension service from approved schemes. For dental associates the main option is buying additional accrual within the 2015 CARE section through a lump sum or instalment APC arrangement. The cost is determined actuarially based on the additional pension being purchased. This is a regulated pension decision; we model the financial impact but for the actual purchase we work alongside an FCA-authorised IFA."
+    answer: "Members of the NHS Pension Scheme can buy Additional Pension via Additional Pension Contributions (APCs) or transfer in previous pension service from approved schemes. For dental associates the main option is buying additional accrual within the 2015 CARE section through a lump sum or instalment APC arrangement. The cost is determined actuarially based on the additional pension being purchased. This is a regulated pension decision; a specialist dental accountant can model the financial impact, but the purchase itself needs an FCA-authorised IFA."
   - question: "How do I prepare for a mortgage as a self-employed dental associate?"
     answer: "Most mainstream lenders accept self-employed dental income with two consecutive years of SA302s and HMRC tax overview documents. Some specialist lenders accept one year of SA302s for dentists, recognising the income stability the profession provides. The key requirements are: stable or growing self-employment income year-on-year, no large unexplained income spikes, accountancy fees and other professional costs treated consistently across years, and clean tax payments on time. You can download both the SA302 and the tax year overview yourself from your HMRC online account once a return has been filed and processed, so it is worth pulling them before you apply rather than during. The usual hold-up is a late or amended return, which changes what the overview shows and leaves the lender looking at a mismatch."
 ctaTitle: "Get your associate tax return done properly"
-ctaBody: "30-minute scoping call with a dentist-only specialist. We will review your current self-assessment, flag the expenses you're missing, and tell you honestly whether incorporation is on the table yet."
+ctaBody: "30-minute scoping call with a dentist-only specialist from our partner network. They will review your current self-assessment, flag the expenses you're missing, and tell you honestly whether incorporation is on the table yet."
 ---
 
-<p><strong>Most UK dental associates default into self-employment, file Self Assessment, and never get a second opinion on whether the structure is optimal.</strong> The default is usually right, but the execution is often weak. We see returns where indemnity is missing, motor is claimed at the wrong rate, CPD is unclaimed, and the BDA model contract is treated as a guarantee of self-employed status when HMRC and tribunals make clear it isn't.</p>
+<p><strong>Most UK dental associates default into self-employment, file Self Assessment, and never get a second opinion on whether the structure is optimal.</strong> The default is usually right, but the execution is often weak. The recurring pattern on associate returns is indemnity missing, motor claimed at the wrong rate, CPD unclaimed, and the BDA model contract treated as a guarantee of self-employed status when HMRC and tribunals make clear it isn't.</p>
 
 <p>This guide is the working reference for UK dental associates. It covers the five HMRC tests for self-employed status, every expense category that an associate can legitimately claim, how the NHS Pension Scheme interacts with associate earnings (especially at the tapered annual allowance level), the IR35 risk that hits limited-company locums on NHS engagements, and the practical mechanics of mortgage-ready accounts. If you're a self-employed associate, a salaried associate with private income on the side, a limited-company locum, or a newly qualified dentist about to start associate work, this is the reference you need.</p>
 
@@ -61,11 +61,11 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <p>Most UK dental associates pass the status tests because the dental working model (autonomous clinical decision-making, financial responsibility for tools and indemnity, payment by fee split rather than salary) naturally supports self-employment. But not all do. If your day-to-day reality is fixed sessions, no real autonomy, practice-supplied everything, and an arrangement that looks like a salaried role with a "self-employed" label, you have status risk regardless of what the contract says.</p>
 
-<p>If you're unsure, ask a specialist dental accountant to review the working arrangement against the five tests. We do this regularly; it usually takes 30-60 minutes and the answer is rarely ambiguous once the facts are on the table.</p>
+<p>If you're unsure, ask a specialist dental accountant to review the working arrangement against the five tests. It is routine work: it usually takes 30-60 minutes and the answer is rarely ambiguous once the facts are on the table.</p>
 
 <h2>The full allowable expenses checklist</h2>
 
-<p>Every UK self-employed dental associate can deduct legitimate business expenses from their taxable profit. The list below covers everything we routinely claim for associate clients; if your current return doesn't include most of these, you're under-claiming.</p>
+<p>Every UK self-employed dental associate can deduct legitimate business expenses from their taxable profit. The list below covers the categories a dental associate can routinely claim; if your current return doesn't include most of these, you're under-claiming.</p>
 
 <h3>Professional indemnity insurance</h3>
 
@@ -140,7 +140,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <p>For high-earning associates (combining NHS and private income above the threshold), the NHS Pension Scheme can deliver a pension input that exceeds the tapered allowance, triggering an annual allowance charge on the excess. The charge is at the marginal rate of income tax, so a higher-rate-taxpayer associate caught by the taper effectively loses 40% of the excess pension growth to tax.</p>
 
-<p>The "Scheme Pays" facility allows the NHS Pension Scheme itself to pay the annual allowance charge from your future pension benefits, rather than you paying it from cash. This is often the right route for affected associates because it preserves cash flow. We model the financial impact of Scheme Pays vs paying the charge directly; for the actual election we work with an FCA-authorised IFA.</p>
+<p>The "Scheme Pays" facility allows the NHS Pension Scheme itself to pay the annual allowance charge from your future pension benefits, rather than you paying it from cash. This is often the right route for affected associates because it preserves cash flow. A specialist dental accountant can model the financial impact of Scheme Pays against paying the charge directly; the election itself is a regulated pension decision that needs an FCA-authorised IFA.</p>
 
 <h3>McCloud remedy for legacy section members</h3>
 
@@ -150,7 +150,7 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <h3>Buying additional pension</h3>
 
-<p>Members can buy Additional Pension via Additional Pension Contributions (APCs). For dental associates the main usefulness is buying additional 2015 CARE section accrual through a lump-sum or instalment APC arrangement, particularly for associates who took breaks from the scheme in earlier career and want to top up. The cost is actuarially determined. We model the financial value of an APC purchase vs alternative pension or investment options; for the regulated advice on the actual purchase we work with an FCA-authorised IFA.</p>
+<p>Members can buy Additional Pension via Additional Pension Contributions (APCs). For dental associates the main usefulness is buying additional 2015 CARE section accrual through a lump-sum or instalment APC arrangement, particularly for associates who took breaks from the scheme in earlier career and want to top up. The cost is actuarially determined. A specialist dental accountant can model the financial value of an APC purchase against alternative pension or investment options; the regulated advice on the purchase itself has to come from an FCA-authorised IFA.</p>
 
 <h2>IR35 for limited-company locums on NHS engagements</h2>
 
@@ -162,11 +162,11 @@ ctaBody: "30-minute scoping call with a dentist-only specialist. We will review 
 
 <p>If the engagement is determined <strong>outside IR35</strong>, the fee-payer pays your company gross. You then run your company in the normal way: small salary, dividend extraction, employer pension contributions, etc.</p>
 
-<p>In practice, a limited-company locum dentist working across multiple NHS practices may have some engagements inside IR35 and some outside, with different tax treatment for each. This is workable but adds complexity. We model the realistic post-tax outcome across your engagement mix before recommending whether the limited-company route still makes sense.</p>
+<p>In practice, a limited-company locum dentist working across multiple NHS practices may have some engagements inside IR35 and some outside, with different tax treatment for each. This is workable but adds complexity. The realistic post-tax outcome across your whole engagement mix is what needs modelling before you decide whether the limited-company route still makes sense.</p>
 
 <h2>Mortgage-ready accounts for self-employed associates</h2>
 
-<p>One of the most common reasons associate dentists come to us is to get mortgage-ready accounts. Most mainstream lenders accept self-employed dental income with two consecutive years of SA302s and HMRC tax overview documents. Some specialist lenders accept one year of SA302s for dentists, recognising the relative income stability of the profession.</p>
+<p>One of the most common reasons associate dentists go looking for a specialist accountant is to get mortgage-ready accounts. Most mainstream lenders accept self-employed dental income with two consecutive years of SA302s and HMRC tax overview documents. Some specialist lenders accept one year of SA302s for dentists, recognising the relative income stability of the profession.</p>
 
 <p>The mechanics:</p>
 

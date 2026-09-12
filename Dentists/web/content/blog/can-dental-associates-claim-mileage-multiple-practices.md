@@ -154,7 +154,7 @@ faqs:
 
 <h2>Talk to a dental accountant</h2>
 
-<p>Mileage is straightforward in principle, but the line between commuting and business travel, the temporary-workplace test, and the choice of method are all places where associates lose relief or overclaim. At Dental Finance Partners we work with associate dentists across the UK and can review your travel pattern, confirm which journeys qualify, and set up a log that stands up to scrutiny. If you would like a second look at your mileage position, <a href="/contact">contact our team</a> for an initial discussion.</p>
+<p>Mileage is straightforward in principle, but the line between commuting and business travel, the temporary-workplace test, and the choice of method are all places where associates lose relief or overclaim. At Dental Finance Partners we work with associate dentists across the UK, and a specialist dental accountant from our partner network can review your travel pattern, confirm which journeys qualify, and set up a log that stands up to scrutiny. If you would like a second look at your mileage position, <a href="/contact">contact our team</a> for an initial discussion.</p>
 
 <h2>Mileage checklist for associates</h2>
 

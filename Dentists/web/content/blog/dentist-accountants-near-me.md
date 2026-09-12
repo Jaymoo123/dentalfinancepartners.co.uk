@@ -78,7 +78,7 @@ imageCredit:
 </ul>
 
 <h2>Common Mistakes Dentists Make with General Accountants</h2>
-<p>Here are the most frequent errors we see when dentists use a non-specialist accountant.</p>
+<p>Here are the most frequent errors that surface when dentists use a non-specialist accountant.</p>
 
 <ul>
 <li><strong>Missing the NHS pension annual allowance charge.</strong> A general accountant may not calculate pension input amounts correctly, leading to unexpected tax bills.</li>
@@ -106,11 +106,11 @@ imageCredit:
 <h2>How to Start Your Search</h2>
 <p>Begin by asking colleagues in your local dental network. The BDA's regional groups and online forums are good places to get recommendations <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. You can also search the ICAEW's "Find a Chartered Accountant" tool and filter by sector <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
 <p>When you have a shortlist, arrange a free initial consultation. Most dental-specialist accountants offer this. Use the time to ask specific questions about your situation. For example, if you are an associate considering a practice purchase, ask how they would structure the deal and what tax reliefs are available.</p>
-<p>At Dental Finance Partners, we specialise in dental accounting and tax. We work with associates, principals, locums, and practice buyers across the UK. Our team understands the specific rules that apply to dental professionals, from NHS pension planning to practice valuation and MTD compliance. <a href="/services">Contact us</a> to discuss your needs.</p>
+<p>Our team at Dental Finance Partners works exclusively with UK dentistry. We are not an accounting practice: we publish the guides, calculators and research on this site, and we introduce associates, principals, locums and practice buyers to a specialist dental accountant from our partner network, matched to the rules that actually apply to you, from NHS pension planning to practice valuation and MTD compliance. <a href="/services">Tell us what you need</a> and we will arrange a short introductory call.</p>
 
 <h2>Final Thoughts</h2>
 <p>Searching for "dentist accountants near me" is a sensible first step, but the key is finding someone with genuine dental expertise. A specialist accountant will save you money, reduce your tax risk, and help you make better financial decisions. Do not settle for a generalist who treats your dental practice like any other small business.</p>
-<p>If you are ready to work with a team that understands dentistry, <a href="/services/dental-accountants">explore our dental accounting services</a> or <a href="/contact">book a free initial consultation</a>.</p>
+<p>If you are ready to work with an accountant who understands dentistry, <a href="/services/dental-accountants">see what a dental-specialist engagement covers</a> or <a href="/contact">ask us for a free introductory call</a>.</p>
 
 <h2>Sources</h2>
 <ol>

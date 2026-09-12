@@ -3,7 +3,6 @@ import { gbp, pct } from "@accounting-network/web-shared/tools/format";
 import {
   calcSuperannuation,
   memberTierRate,
-  ASSOCIATE_DEFAULT_PENSIONABLE_PCT,
   TIER_EFFECTIVE_DATE,
 } from "@/lib/tools/compute/superannuation-contributions";
 
@@ -13,52 +12,23 @@ export const superannuationContributionsTool: GenericTool = {
   name: "NHS Superannuation Earnings & Contribution Calculator",
   category: "NHS Pension",
   oneLiner:
-    "Superannuable earnings from NHS fee income, member contribution tier rate, employer cost, tax relief saving, and projected CARE pension growth.",
+    "Member contribution tier rate from your net pensionable earnings, employer cost, tax relief saving, and projected CARE pension growth.",
   embedHeight: 620,
   metaTitle: "NHS Dentist Superannuation Calculator UK 2026",
   metaDescription:
     "Calculate your NHS superannuable earnings as a dental associate or principal. Member contribution tier, employer 23.7%, net-of-tax cost, and 1/54th CARE pension accrual. England and Wales rates.",
   intro:
-    "Enter your NHS fee income or net pensionable earnings to see your superannuation contribution tier, annual employee and employer costs, the saving after tax relief, and how much guaranteed CARE pension you build in one year.",
+    "Enter the net pensionable earnings figure from your own NHS pension paperwork to see your superannuation contribution tier, annual employee and employer costs, the saving after tax relief, and how much guaranteed CARE pension you build in one year.",
   fields: [
     {
-      id: "practitionerType",
-      label: "Practitioner type",
-      type: "select",
-      default: "associate",
-      options: [
-        { value: "associate", label: "Associate (% of gross fee income)" },
-        { value: "principal", label: "Principal / practice owner (net pensionable earnings)" },
-      ],
-    },
-    {
-      id: "grossFees",
-      label: "Gross NHS fee income (£/yr, associates)",
+      id: "pensionableEarnings",
+      label: "Net pensionable earnings (£/yr)",
       type: "currency",
-      default: 120000,
+      default: 0,
       min: 0,
       max: 500000,
       step: 1000,
-    },
-    {
-      id: "pensionablePct",
-      label: "Pensionable earnings percentage (England/Wales convention: 43.9%)",
-      type: "number",
-      default: ASSOCIATE_DEFAULT_PENSIONABLE_PCT,
-      min: 1,
-      max: 100,
-      step: 0.1,
-      suffix: "%",
-      advanced: true,
-    },
-    {
-      id: "principalNetEarnings",
-      label: "Net pensionable earnings (£/yr, principals)",
-      type: "currency",
-      default: 80000,
-      min: 0,
-      max: 500000,
-      step: 1000,
+      help: "This is not your gross NHS fee income, and there is no percentage of gross that reliably produces it. Take the figure from your own paperwork: practitioners use the net pensionable earnings on their annual certificate of pensionable profits (the NHS pension certificate you or your accountant submit to NHSBSA), and a performer on a GDS or PDS contract uses the amount the contract provider has allocated to them, shown on the Annual Reconciliation Report. If you do not have either to hand, ask the practice or NHSBSA rather than estimating.",
     },
     {
       id: "higherRateTaxpayer",
@@ -68,20 +38,13 @@ export const superannuationContributionsTool: GenericTool = {
     },
   ],
   compute(values) {
-    const isAssociate = values.practitionerType === "associate";
-    const grossFees = Number(values.grossFees);
-    const pensionablePct = Number(values.pensionablePct);
-    const principalNetEarnings = Number(values.principalNetEarnings);
     const higherRate = values.higherRateTaxpayer === true;
-
-    const pensionableEarnings = isAssociate
-      ? grossFees * (pensionablePct / 100)
-      : principalNetEarnings;
+    const pensionableEarnings = Number(values.pensionableEarnings);
 
     if (pensionableEarnings <= 0) {
       return {
         headline: { label: "Pensionable earnings", value: "£0", tone: "warn" as const },
-        note: "Enter your fee income or net pensionable earnings to see your contribution.",
+        note: "Enter the net pensionable earnings from your NHS pension certificate or your Annual Reconciliation Report allocation to see your contribution.",
       };
     }
 
@@ -119,20 +82,20 @@ export const superannuationContributionsTool: GenericTool = {
   explainer: {
     heading: "How NHS superannuation is calculated for dental practitioners",
     paragraphs: [
-      "For associates, your superannuable (pensionable) earnings are not your gross fee income. The England and Wales convention sets net pensionable earnings at 43.9% of gross NHS fee income. This percentage reflects an assumed expenses deduction built into the GDS contract and has been the standard rate used by NHS Pensions for practitioner assessments. You can adjust it in the advanced options if your contract specifies a different figure.",
-      "For principals, net pensionable earnings are your gross NHS contract income minus allowable practice expenses, as calculated on your NHS pension certificate. This figure is provided by NHS England or Wales via your annual certificate and differs from your taxable profit.",
+      "Your superannuable (pensionable) earnings are not your gross NHS fee income, and this calculator will not guess them for you. For a practitioner, net pensionable earnings are NHS-derived income after the scheme's permitted expenses, as set out on the annual certificate of pensionable profits submitted to NHSBSA. That figure differs from your taxable profit. For a performer on a GDS or PDS contract, the pensionable amount is whatever the contract provider has allocated to you and declared on the Annual Reconciliation Report.",
+      "There is a 43.9% figure in this area and it is widely misquoted. It is the ceiling on the net pensionable earnings that can be declared against a single GDS or PDS contract, expressed as a share of that contract's Total Contract Value, and it covers every dentist working on the contract combined. It is not a rate that turns one dentist's gross fees into their pensionable pay, and a dentist cannot claim a colleague's share of the pool. Use your own allocated or certified figure instead.",
       "Your member contribution is determined by which tier your pensionable earnings fall into. There are six tiers, from 5.2% (earnings up to £13,259) up to 12.5% (earnings of £67,669 and above) on the 2026/27 England and Wales thresholds. The tier applies to all your pensionable earnings, not just the slice above the threshold. The employer pays 23.7% on top (the rate from 1 April 2024, up from 20.6%), plus a 0.08% administration levy, so 23.78% in total.",
       "Tax relief is available on your member contribution at your marginal rate. For most associates, 20% basic-rate relief is given automatically via the net-pay arrangement. Higher-rate taxpayers (income above £50,270) can claim the additional 20% through self-assessment.",
       "Each year you contribute, you build 1/54th of your pensionable pay as a guaranteed annual pension under the 2015 CARE scheme. This revalues each year by CPI plus 1.5%, providing inflation protection on past accrual.",
-      "Worked example 1: an associate generating £120,000 of gross NHS fee income has net pensionable earnings of £52,680 (43.9%). On the 2026/27 England and Wales thresholds that falls in the 9.8% tier (£35,156 to £52,778), so the member contribution is £5,162.64 a year (£430.22 a month). As a higher-rate taxpayer the relief is worth £2,065.06, so the true annual cost is £3,097.58 (£258.13 a month). The practice-side employer contribution at 23.7% is £12,485.16, and the year adds £975.56 of guaranteed annual CARE pension (£52,680 divided by 54).",
+      "Worked example 1: an associate whose certificate shows net pensionable earnings of £52,680. On the 2026/27 England and Wales thresholds that falls in the 9.8% tier (£35,156 to £52,778), so the member contribution is £5,162.64 a year (£430.22 a month). As a higher-rate taxpayer the relief is worth £2,065.06, so the true annual cost is £3,097.58 (£258.13 a month). The practice-side employer contribution at 23.7% is £12,485.16, and the year adds £975.56 of guaranteed annual CARE pension (£52,680 divided by 54).",
       "Worked example 2: a principal with net pensionable earnings of £85,000 on their NHS certificate sits in the top 12.5% tier, paying £10,625 a year (£885.42 a month). With 40% relief the net cost is £6,375 (£531.25 a month). The employer contribution on those earnings at 23.7% is £20,145, and the year adds £1,574.07 of guaranteed annual CARE pension.",
     ],
   },
   faqs: [
     {
-      question: "Why is only 43.9% of my gross fees counted as pensionable pay?",
+      question: "Where do I find my net pensionable earnings figure?",
       answer:
-        "The 43.9% rate is the England and Wales convention for calculating net pensionable earnings for GDS associates. It represents gross NHS fee income after a deemed expenses deduction agreed with NHS Pensions. It is not the same as your actual expenses. The convention is set out in the NHS Pension Scheme regulations for practitioners and is applied by NHS England when issuing your annual pension certificate. Wales uses the same rate. Scotland uses a different system based on the Statement of Dental Remuneration.",
+        "From your own NHS pension paperwork, not from a percentage of your gross fees. A practitioner takes it from the annual certificate of pensionable profits submitted to NHSBSA, which starts from NHS-derived income and applies the scheme's permitted expenses rules. A performer on a GDS or PDS contract takes the amount the contract provider has allocated to them, which is reconciled on the Annual Reconciliation Report. The 43.9% figure you may have seen is the ceiling on declared net pensionable earnings for a whole contract, shared across every dentist on it, so applying it to your own gross fees can give a badly wrong answer in either direction. If neither document is to hand, ask the practice or NHSBSA.",
     },
     {
       question: "Does the contribution tier apply to all my earnings or just the excess?",
@@ -152,7 +115,7 @@ export const superannuationContributionsTool: GenericTool = {
     {
       question: "How is this different in Scotland and Wales?",
       answer:
-        "Wales uses the same England/Wales contribution tier structure and the 43.9% pensionable earnings convention. Scotland operates under the Scottish Public Pensions Agency (SPPA) rather than the NHSBSA. Scottish dental practitioners working under the Statement of Dental Remuneration (SDR) have pensionable earnings calculated differently, and contribution rates may differ. If you work in Scotland, check your figures directly with the SPPA.",
+        "Wales uses the same England and Wales contribution tier structure and the same certificate-based approach to net pensionable earnings. Scotland operates under the Scottish Public Pensions Agency (SPPA) rather than the NHSBSA. Scottish dental practitioners working under the Statement of Dental Remuneration (SDR) have pensionable earnings calculated differently, and contribution rates may differ. If you work in Scotland, check your figures directly with the SPPA.",
     },
     {
       question: "When were the contribution tiers last changed?",

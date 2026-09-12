@@ -125,11 +125,11 @@ export default function CalculatorsIndexPage() {
         contained
         eyebrow="Next step"
         title="Ask a dental accountant what your figures mean"
-        description="A calculator gives you a number. What it cannot tell you is whether the way you are set up is the right one for the position you are in. Send us the figures you have just run and we will come back with a plain view of what they imply for your NHS and private mix, your pension, and whatever you are planning next."
+        description="A calculator gives you a number. What it cannot tell you is whether the way you are set up is the right one for the position you are in. Send us the figures you have just run and a specialist dental accountant from our partner network will come back with a plain view of what they imply for your NHS and private mix, your pension, and whatever you are planning next."
         proofPoints={[
           { title: "Dentistry is all we do", detail: "UDAs, superannuation and practice sales are routine here" },
-          { title: "Your workings, checked", detail: "We show which assumptions move the answer, and by how much" },
-          { title: "A straight recommendation", detail: "If your current set-up already fits, we will say so" },
+          { title: "Your workings, checked", detail: "You see which assumptions move the answer, and by how much" },
+          { title: "A straight recommendation", detail: "If your current set-up already fits, they will say so" },
         ]}
         formTitle="Send us your figures"
         form={<LeadForm redirectOnSuccess={false} submitLabel="Ask about my figures" />}

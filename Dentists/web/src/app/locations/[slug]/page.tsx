@@ -55,40 +55,40 @@ const cityContent: Record<string, {
   services: { title: string; desc: string }[];
 }> = {
   london: {
-    intro: "We're specialist dental accountants serving dental practices, associates, and owners across London. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, we provide expert accounting and tax services tailored specifically to the dental sector.",
+    intro: "We put dental practices, associates, and owners across London in front of specialist dental accountants from our partner network. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, the firm that picks up your enquiry works specifically in the dental sector.",
     areas: "We work with dental professionals across Central London, North London, South London, East London, and West London, including the City of London, Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Hammersmith & Fulham, Kensington & Chelsea, and surrounding boroughs.",
     whyLocal: "London has one of the highest concentrations of dental practices in the UK, from single-chair private practices in Harley Street to large NHS-focused clinics in outer boroughs. We understand the local market, the competitive landscape, and the specific challenges London-based dentists face, from higher operating costs to complex mixed-income structures.",
     services: [
       {
         title: "Associate dentist tax & self assessment",
-        desc: "Most associates in London are self-employed. We handle your self assessment, ensure all legitimate expenses are claimed, and advise on when incorporation makes sense as your income grows.",
+        desc: "Most associates in London are self-employed. A specialist from our partner network handles your self assessment, makes sure all legitimate expenses are claimed, and advises on when incorporation makes sense as your income grows.",
       },
       {
         title: "Practice owner accounting & tax planning",
-        desc: "For London practice owners, we provide year-end accounts, corporation tax returns, VAT advice, and strategic tax planning to optimize profit extraction and minimize your tax burden.",
+        desc: "For London practice owners, the firms in our partner network provide year-end accounts, corporation tax returns, VAT advice, and strategic tax planning to optimize profit extraction and minimize your tax burden.",
       },
       {
         title: "Practice acquisition & due diligence",
-        desc: "Buying a practice in London is a significant investment. We provide pre-purchase financial due diligence, help you understand the true profitability, and advise on structuring the acquisition.",
+        desc: "Buying a practice in London is a significant investment. A specialist from our partner network provides pre-purchase financial due diligence, helps you understand the true profitability, and advises on structuring the acquisition.",
       },
     ],
   },
   manchester: {
-    intro: "We're specialist dental accountants serving dental practices, associates, and owners across Manchester. Whether you're based in the City Centre, Salford, Trafford, or anywhere across Greater Manchester, we provide expert accounting and tax services tailored specifically to the dental sector.",
+    intro: "We put dental practices, associates, and owners across Manchester in front of specialist dental accountants from our partner network. Whether you're based in the City Centre, Salford, Trafford, or anywhere across Greater Manchester, the firm that picks up your enquiry works specifically in the dental sector.",
     areas: "We work with dental professionals across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
     whyLocal: "Manchester's dental sector is diverse, with a strong mix of NHS and private practices. We understand the local market dynamics, from high-street mixed practices to specialist referral clinics, and the financial challenges Manchester-based dentists face, including NHS contract management and associate recruitment.",
     services: [
       {
         title: "Associate dentist tax & self assessment",
-        desc: "Most associates in Manchester are self-employed. We handle your self assessment, ensure all legitimate expenses are claimed, and advise on when incorporation makes sense as your income grows.",
+        desc: "Most associates in Manchester are self-employed. A specialist from our partner network handles your self assessment, makes sure all legitimate expenses are claimed, and advises on when incorporation makes sense as your income grows.",
       },
       {
         title: "Practice owner accounting & tax planning",
-        desc: "For Manchester practice owners, we provide year-end accounts, corporation tax returns, VAT advice, and strategic tax planning to optimize profit extraction and minimize your tax burden.",
+        desc: "For Manchester practice owners, the firms in our partner network provide year-end accounts, corporation tax returns, VAT advice, and strategic tax planning to optimize profit extraction and minimize your tax burden.",
       },
       {
         title: "Practice acquisition & due diligence",
-        desc: "Buying a practice in Manchester requires careful financial analysis. We provide pre-purchase due diligence, help you understand the true profitability, and advise on structuring the acquisition.",
+        desc: "Buying a practice in Manchester requires careful financial analysis. A specialist from our partner network provides pre-purchase due diligence, helps you understand the true profitability, and advises on structuring the acquisition.",
       },
     ],
   },
@@ -251,7 +251,7 @@ export default async function LocationPage({ params }: Props) {
           <div className="mx-auto max-w-3xl">
             <CTASection
               title={`Speak to a dental accountant in ${cityName}`}
-              description="Tell us about your practice structure and we'll explain how we can help with your accounting, tax, and financial planning."
+              description="Tell us about your practice structure and we will put you in front of a specialist dental accountant from our partner network who can help with your accounting, tax, and financial planning."
             />
           </div>
         </div>

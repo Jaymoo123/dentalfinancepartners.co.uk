@@ -12,7 +12,7 @@ const data: AudienceStage = {
   badge: "First-time buyers · Associate-to-principal · Multi-site acquirers",
   heroHeading: "Buy your dental practice with eyes open",
   intro:
-    "It is easy to fall for the building and take the seller's numbers at face value. We are the second opinion on the financial side of the deal: EBITDA normalisation, NHS contract review, associate agreement risk, the goodwill and fixtures split, and the tax structure you buy through.",
+    "It is easy to fall for the building and take the seller's numbers at face value. We put you in front of a second opinion on the financial side of the deal, a specialist dental accountant from our partner network: EBITDA normalisation, NHS contract review, associate agreement risk, the goodwill and fixtures split, and the tax structure you buy through.",
   stats: [
     { value: "60-80%", label: "Typical goodwill share of price" },
     { value: "24-month", label: "BADR + Section 162 lead time" },
@@ -22,41 +22,41 @@ const data: AudienceStage = {
   concerns: [
     {
       title: "Are the seller's accounts telling the real story?",
-      body: "Sellers normalise their accounts before listing. Sometimes the normalisation is reasonable; sometimes it is generous. We unwind the adjustments and rebuild the realistic post-acquisition P&L from the perspective of you as the new owner.",
+      body: "Sellers normalise their accounts before listing. Sometimes the normalisation is reasonable; sometimes it is generous. A specialist from our partner network unwinds the adjustments and rebuilds the realistic post-acquisition P&L from the perspective of you as the new owner.",
     },
     {
       title: "What multiple should I be paying?",
-      body: "EBITDA multiples in UK dental in 2025/26 range roughly 0.6x for NHS-heavy single-handed practices in low-demand regions to 1.4x+ for private-focused multi-surgery in prime locations. Corporate buyers benchmark differently again. We give you a defensible position.",
+      body: "EBITDA multiples in UK dental in 2025/26 range roughly 0.6x for NHS-heavy single-handed practices in low-demand regions to 1.4x+ for private-focused multi-surgery in prime locations. Corporate buyers benchmark differently again. A specialist from our partner network gives you a defensible position.",
     },
     {
       title: "Is the NHS contract transferable and stable?",
-      body: "NHS contract novation depends on the commissioner. Some contracts are clean novations; others require new contract negotiation that can change UDA value. We read the contract documentation and the recent commissioner correspondence before you complete.",
+      body: "NHS contract novation depends on the commissioner. Some contracts are clean novations; others require new contract negotiation that can change UDA value. The firm that picks up your enquiry reads the contract documentation and the recent commissioner correspondence before you complete.",
     },
     {
       title: "How should I finance this?",
-      body: "Specialist dental lenders typically offer 70-90% loan-to-value on practice goodwill+assets, with 10-15 year terms. Some require a deposit you can fund personally. Others stretch on associate income. We model the cash flow against the loan repayment to confirm the deal services itself.",
+      body: "Specialist dental lenders typically offer 70-90% loan-to-value on practice goodwill+assets, with 10-15 year terms. Some require a deposit you can fund personally. Others stretch on associate income. A specialist from our partner network models the cash flow against the loan repayment to confirm the deal services itself.",
     },
     {
       title: "Asset sale or share sale?",
-      body: "Most UK dental sales settle as asset sales. The buyer takes goodwill plus specific assets; the seller's company is left behind. Share sales transfer the company as-is, including any hidden liabilities. We model both and tell you which the seller will accept.",
+      body: "Most UK dental sales settle as asset sales. The buyer takes goodwill plus specific assets; the seller's company is left behind. Share sales transfer the company as-is, including any hidden liabilities. A specialist from our partner network models both and tells you which the seller will accept.",
     },
     {
       title: "Should I incorporate before or after purchase?",
-      body: "Depends on whether you are buying as an individual via asset sale (often yes, then incorporate later or simultaneously), via a newly-formed limited company (typical and straightforward), or by share sale (acquire the seller's existing company). We model each route.",
+      body: "Depends on whether you are buying as an individual via asset sale (often yes, then incorporate later or simultaneously), via a newly-formed limited company (typical and straightforward), or by share sale (acquire the seller's existing company). A specialist from our partner network models each route.",
     },
   ],
   services: [
     {
       title: "Pre-offer financial due diligence",
-      body: "We review the seller's last 3 years of accounts, latest management accounts, payroll, associate agreements and NHS contract documentation. We produce a normalised EBITDA and a recommended offer range with reasoning.",
+      body: "A specialist from our partner network reviews the seller's last 3 years of accounts, latest management accounts, payroll, associate agreements and NHS contract documentation, then produces a normalised EBITDA and a recommended offer range with reasoning.",
     },
     {
       title: "NHS contract risk review",
-      body: "We read the GDS/PDS/ODS contract, the most recent UDA reconciliation, and any variation letters. If the contract is moving in a way that changes value (reform proposals, commissioner reorganisation, performance band review), we flag it.",
+      body: "The GDS/PDS/ODS contract, the most recent UDA reconciliation, and any variation letters all get read. If the contract is moving in a way that changes value (reform proposals, commissioner reorganisation, performance band review), it gets flagged before you commit.",
     },
     {
       title: "Tax structure for the purchase",
-      body: "Buying personally vs via a new Ltd vs via a partnership / LLP, asset sale vs share sale, SDLT planning on the premises if freehold, VAT recovery on capital expenditure. We model the tax cost of each route alongside the financial DD.",
+      body: "Buying personally vs via a new Ltd vs via a partnership / LLP, asset sale vs share sale, SDLT planning on the premises if freehold, VAT recovery on capital expenditure. A specialist from our partner network models the tax cost of each route alongside the financial DD.",
     },
     {
       title: "Cash flow modelling against financing",
@@ -64,7 +64,7 @@ const data: AudienceStage = {
     },
     {
       title: "Post-completion accounts setup",
-      body: "After completion we set up the bookkeeping system, payroll scheme, NHS Pension arrangements, and capital allowance claims including the Section 198 fixtures election. We then run management accounts monthly so you see how the practice is actually performing vs the projection.",
+      body: "After completion the firm you appoint sets up the bookkeeping system, payroll scheme, NHS Pension arrangements, and capital allowance claims including the Section 198 fixtures election, then runs management accounts monthly so you see how the practice is actually performing vs the projection.",
     },
   ],
   faqs: [
@@ -74,7 +74,7 @@ const data: AudienceStage = {
     },
     {
       q: "What's a fair EBITDA multiple to pay in 2025/26?",
-      a: "Range, not a single number. An NHS-heavy single-handed practice with strong staff and a stable contract in a normal-demand region might trade at 0.7-0.9x normalised EBITDA. A private-focused two-surgery practice in a high-demand region might trade at 1.1-1.4x. Corporate buyers paying for fit and consolidation can stretch above 1.4x. The right multiple depends on the practice characteristics, not a benchmark number; we calibrate per practice.",
+      a: "Range, not a single number. An NHS-heavy single-handed practice with strong staff and a stable contract in a normal-demand region might trade at 0.7-0.9x normalised EBITDA. A private-focused two-surgery practice in a high-demand region might trade at 1.1-1.4x. Corporate buyers paying for fit and consolidation can stretch above 1.4x. The right multiple depends on the practice characteristics, not a benchmark number, and it gets calibrated per practice.",
     },
     {
       q: "How does the SDLT on the premises work?",
@@ -85,13 +85,13 @@ const data: AudienceStage = {
       a: "Self-employed associates: their agreements transfer or get renegotiated; you can choose to keep them, vary their fee split, or notice them out (subject to their notice periods). Employed associates and other employees: TUPE transfer of undertaking applies if you are acquiring the business as a going concern, which protects their employment terms; you cannot reduce their terms or notice them without proper process for a defined period after completion.",
     },
     {
-      q: "Do I need a separate solicitor as well as you?",
-      a: "Yes. We handle the financial diligence and tax structure. A specialist dental solicitor handles the contract, legal due diligence, Companies House filings if you are buying a Ltd company, premises lease or freehold transfer, and the completion mechanics. We work alongside dental solicitors on the financial side of a deal and can make an introduction if you do not already have one.",
+      q: "Do I need a separate solicitor as well as an accountant?",
+      a: "Yes. The financial diligence and tax structure sit with a specialist dental accountant from our partner network. A specialist dental solicitor handles the contract, legal due diligence, Companies House filings if you are buying a Ltd company, premises lease or freehold transfer, and the completion mechanics. They are two separate appointments, and the accountant who picks up your enquiry will expect you to have both.",
     },
   ],
   ctaTitle: "Buy with proper due diligence, not just legal review",
   ctaBody:
-    "30-minute scoping call about the practice you are looking at. We will tell you what we would dig into in DD and whether the asking price looks defensible.",
+    "30-minute scoping call about the practice you are looking at, with a specialist from our partner network. They will tell you what they would dig into in DD and whether the asking price looks defensible.",
   relatedGuides: [
     {
       href: "/dental-guides/practice-purchase-financial-due-diligence",

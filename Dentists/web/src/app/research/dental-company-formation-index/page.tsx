@@ -379,8 +379,8 @@ export default function DentalCompanyFormationIndexPage() {
                 self-employed depends on your income level, what you need to draw, what you can
                 leave in, and how your NHS contract is held. Whether you are an associate looking at
                 a first company, a principal restructuring, or a buyer acquiring through a holding
-                company, the structure is worth modelling before it is registered. We act for dental
-                professionals only.
+                company, the structure is worth modelling before it is registered. Our partner
+                network acts for dental professionals only.
               </p>
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
                 <Link

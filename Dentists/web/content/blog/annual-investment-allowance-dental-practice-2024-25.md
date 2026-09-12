@@ -119,7 +119,7 @@ imageCredit:
 
 <p>The AIA also interacts with the <strong>super-deduction</strong> (which ended on 31 March 2023) and the <strong>full expensing</strong> regime for companies (introduced from 1 April 2023). Full expensing gives 100% relief on qualifying plant and machinery for companies, with no cap. However, full expensing does not apply to second-hand assets, whereas the AIA does. For most dental practices, the AIA remains the more flexible option because it covers both new and used equipment.</p>
 
-<p>If you are buying a practice, the capital allowances on the fixtures and fittings you acquire can be substantial. You should instruct a capital allowances specialist to prepare a valuation and agree a section 198 election with the seller. Our <a href="/services/practice-accounting">practice accounting team</a> can coordinate this for you.</p>
+<p>If you are buying a practice, the capital allowances on the fixtures and fittings you acquire can be substantial. You should instruct a capital allowances specialist to prepare a valuation and agree a section 198 election with the seller. A <a href="/services/practice-accounting">specialist dental accountant from our partner network</a> can coordinate this for you.</p>
 
 <h2>Common Mistakes Dentists Make With the AIA</h2>
 
@@ -139,7 +139,7 @@ imageCredit:
 
 <p>For most dental practices, the AIA is the most generous relief because it gives 100% upfront relief up to £1 million. If your annual equipment spend is below £1 million, you will likely use the AIA exclusively. If you spend more than £1 million in a year, the excess goes into the main pool or special rate pool, attracting writing-down allowances in future years.</p>
 
-<p>If you are an associate dentist buying your own equipment (for example, loupes, a microscope, or a surgical kit), you can claim the AIA on those purchases as long as they are used wholly for your practice income. Associates who are self-employed can claim capital allowances on their Self Assessment return. Our <a href="/services/associate-tax">associate tax service</a> can help you structure these claims correctly.</p>
+<p>If you are an associate dentist buying your own equipment (for example, loupes, a microscope, or a surgical kit), you can claim the AIA on those purchases as long as they are used wholly for your practice income. Associates who are self-employed can claim capital allowances on their Self Assessment return. A <a href="/services/associate-tax">specialist dental accountant from our partner network</a> can help you structure these claims correctly.</p>
 
 <p>Locum dentists working through a limited company can also claim the AIA on equipment they buy for their locum work. However, if the equipment is used partly for non-business purposes, the AIA is not available. You would instead claim writing-down allowances on the business-use proportion. See our <a href="/services/locum-dentist-tax">locum dentist tax page</a> for more details.</p>
 

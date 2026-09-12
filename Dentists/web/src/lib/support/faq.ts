@@ -83,11 +83,11 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
   selling: [
     {
       q: "How much tax will I pay when I sell my practice?",
-      a: "Business Asset Disposal Relief gives a reduced Capital Gains Tax rate on qualifying gains up to a £1m lifetime limit: 14% for disposals to 5 April 2026, then 18% from 6 April 2026. Gains above the limit are taxed at 24%. Completing each side of that date can change the bill, so the timing matters.",
+      a: "Business Asset Disposal Relief gives a reduced Capital Gains Tax rate on qualifying gains up to a £1m lifetime limit per person. The rate is 18% for disposals from 6 April 2026 (it was 14% for disposals between 6 April 2025 and 5 April 2026, and 10% before that). Gains above the lifetime limit are taxed at the standard Capital Gains Tax rate for non-residential assets, 18% within any remaining basic-rate band and 24% above it (2026/27). Whether you qualify at all is what moves the number most, so that is where to start.",
     },
     {
-      q: "Can I fix the 14% rate if I sell around April 2026?",
-      a: "An unconditional exchange of contracts on or before 5 April 2026 fixes the 14% rate even if completion follows later. A contract conditional on something like NHS contract novation does not, because the disposal date is when the condition is met. This is a live planning lever, so take advice on the wording.",
+      q: "What has to be true for me to get the 18% rate?",
+      a: "The qualifying conditions have to be met throughout the 2 years to disposal: a trading business or trading company, and for a share sale at least 5% of the ordinary share capital and 5% of the voting rights plus being an officer or employee. Because the clock runs for 2 years, a structure change made shortly before a sale can put the relief out of reach. Timing also turns on the contract, not completion: for an unconditional contract the disposal date is the date of exchange, while a contract conditional on something like NHS contract novation is treated as disposed of when that condition is met. Contact our team and a specialist dental accountant from our partner network can check your position.",
     },
   ],
   nhs: [

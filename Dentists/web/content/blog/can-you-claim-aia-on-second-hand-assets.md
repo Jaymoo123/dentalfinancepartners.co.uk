@@ -164,7 +164,7 @@ imageCredit:
 
 <p>However, the rules around connected persons, gifts, and assets you already owned can be tricky. If you are buying a practice with existing equipment, the position is more complex and depends on the seller's capital allowance history. Professional advice is essential to get the allocation right and avoid missing out on relief.</p>
 
-<p>For a full review of your practice's capital allowance position, including AIA claims on second-hand assets, contact our team of <a href="/services/dental-accountants">dental accountants</a> who specialise in the dental sector.</p>
+<p>For a full review of your practice's capital allowance position, including AIA claims on second-hand assets, contact our team and we will introduce you to a <a href="/services/dental-accountants">specialist dental accountant from our partner network</a> who works in the dental sector.</p>
 
 <h2>Sources</h2>
 <ol>

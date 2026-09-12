@@ -53,7 +53,7 @@ describe("NHS Pension member tiers, England and Wales, from 1 April 2026 (HP §2
     expect(memberTierRate(63995)).toBe(0.107); // old table said 12.5%
   });
 
-  it("worked example 1: associate, £120,000 gross fees at 43.9% pensionable", () => {
+  it("worked example 1: associate, £52,680 net pensionable earnings", () => {
     const r = calcSuperannuation(52680);
     expect(r.memberRate).toBe(0.098);
     expect(r.memberContribution).toBeCloseTo(5162.64, 2);

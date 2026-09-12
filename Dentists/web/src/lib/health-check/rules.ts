@@ -242,7 +242,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "exit",
       title: "BADR 2-year qualifying clock: confirm it's running",
       detail: incorporated
-        ? "Business Asset Disposal Relief on a share sale requires 5%+ shareholding, employee/officer status, and 2 years of qualifying ownership. If any of these aren't in place, you forfeit BADR (14% in 2025/26, 18% from 6 April 2026 onwards). On a £1m gain, that's £100,000+ of additional CGT."
+        ? "Business Asset Disposal Relief on a share sale requires 5%+ shareholding, employee/officer status, and 2 years of qualifying ownership. If any of these aren't in place, you forfeit BADR (18% on qualifying gains for disposals from 6 April 2026). On a £1m gain, that's £100,000+ of additional CGT."
         : "BADR on an asset sale of an unincorporated trade requires 2 years of qualifying ownership. The conditions need to be confirmed before the sale completes. Consider whether pre-sale incorporation via Section 162 makes a share-sale structure more attractive.",
       action:
         "Verify the BADR conditions now and plan the structure-at-sale before listing.",
@@ -256,10 +256,10 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       id: "badr-rate-change",
       severity: "high",
       category: "exit",
-      title: "BADR rate rises from 14% to 18% on 6 April 2026",
+      title: "BADR is now 18%, so the qualifying conditions carry the value",
       detail:
-        "If a sale can complete before 6 April 2026, the lower 14% rate applies (subject to the 2-year qualifying period and £1m lifetime limit). The 4 percentage point rate increase is £40,000 of additional CGT per £1m of gain.",
-      action: "Pressure-test whether bringing the completion date forward is feasible.",
+        "Business Asset Disposal Relief is 18% on qualifying gains for disposals from 6 April 2026 (it was 14% for disposals between 6 April 2025 and 5 April 2026, and 10% before that). The relief is capped at a £1m lifetime limit per person and needs the qualifying conditions met throughout the 2 years to disposal, so the planning value is now in securing those conditions rather than in the completion date.",
+      action: "Confirm the 2-year qualifying conditions are already met, and check how much of your £1m lifetime limit is left.",
       reference: "/dental-guides/goodwill-valuation-and-sale-playbook",
     });
   }
@@ -371,10 +371,10 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
         id: "mtd-itsa-2026",
         severity: "medium",
         category: "compliance",
-        title: "MTD ITSA hits you from April 2026",
+        title: "MTD ITSA applies to you now",
         detail:
-          "Self-employed individuals with qualifying income above £50,000 must submit quarterly digital returns from 6 April 2026. Spreadsheet-only workflows won't be compliant.",
-        action: "Move to MTD-compatible software well before the deadline.",
+          "Self-employed individuals with qualifying income above £50,000 have been in scope for Making Tax Digital for Income Tax since 6 April 2026: digital records and quarterly updates are required. Spreadsheet-only workflows are not compliant.",
+        action: "Move to MTD-compatible software now if you have not already.",
       });
     } else if (a.profitPreTax >= 30000) {
       out.push({

@@ -161,4 +161,4 @@ faqs:
 
 <p>Work with a dental-specialist accountant and a qualified valuer so the allocation is both commercially sensible and tax-efficient. Every practice is different, and a one-size-fits-all approach to the split can cost real money in unnecessary tax.</p>
 
-<p>If you are considering buying or selling a dental practice, speak to our team. We provide <a href="/services/practice-valuation">practice valuation services</a> and <a href="/services/dental-accountants">dental accounting</a> tailored to your situation.</p>
+<p>If you are considering buying or selling a dental practice, speak to our team. We will introduce you to a specialist dental accountant from our partner network who provides <a href="/services/practice-valuation">practice valuation</a> and <a href="/services/dental-accountants">dental accounting</a> support tailored to your situation.</p>

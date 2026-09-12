@@ -139,4 +139,4 @@ faqs:
 
 <p>Selling a dental practice is a major financial event. With proper planning, you can keep more of the proceeds and avoid surprises. Start the process now, even if you are not sure when you will sell. The tax savings are worth the effort.</p>
 
-<p>For a detailed walkthrough of the sale process, see our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a>. If you need help modelling your specific situation, <a href="/contact">contact our team</a> of dental-specialist accountants.</p>
+<p>For a detailed walkthrough of the sale process, see our <a href="/dental-guides/goodwill-valuation-and-sale-playbook">goodwill valuation and sale playbook</a>. If you need help modelling your specific situation, <a href="/contact">contact our team</a> and we will arrange an introduction to a dental-specialist accountant from our partner network.</p>

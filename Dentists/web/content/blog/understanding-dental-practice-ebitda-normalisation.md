@@ -166,7 +166,7 @@ faqs:
 
 <p>If you expect to sell within the next two or three years, start tidying the numbers now. Reduce or remove private-benefit expenses so the accounts speak for themselves. Keep a clear record of any genuine one-off costs so you can evidence the add-back. Document the owner's role and hours so a buyer can see exactly which functions need replacing and at what cost. The cleaner the accounts in the run-up, the smaller the gap a buyer has to bridge between reported profit and a believable normalised figure.</p>
 
-<p>Work with a dental-specialist accountant who normalises practice accounts routinely. A generalist may not know that dental motor costs are commonly adjusted, or that the right replacement for a clinical principal is an associate cost on the owner's own income rather than a flat salary. We offer a <a href="/free-practice-health-check">free practice health check</a> that includes a preliminary EBITDA normalisation, giving you a realistic range before you commission a formal valuation.</p>
+<p>Work with a dental-specialist accountant who normalises practice accounts routinely. A generalist may not know that dental motor costs are commonly adjusted, or that the right replacement for a clinical principal is an associate cost on the owner's own income rather than a flat salary. Book a <a href="/free-practice-health-check">free practice health check</a> with our team and we will arrange an introduction to a specialist dental accountant from our partner network who can put a preliminary normalisation together, giving you a realistic range before you commission a formal valuation.</p>
 
 <h2>How the Normalised EBITDA Sits Against the Tax on a Sale</h2>
 

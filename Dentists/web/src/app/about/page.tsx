@@ -18,12 +18,12 @@ const aboutLink = `text-primary-700 underline underline-offset-4 hover:text-prim
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "Why we focus on UK dental practices, associates, and owners. Specialist accounting without generic SME boilerplate.",
+    "Why we focus on UK dental practices, associates, and owners. Specialist dental focus without generic SME boilerplate.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: "About us",
     description:
-      "Why we focus on UK dental practices, associates, and owners. Specialist accounting without generic SME boilerplate.",
+      "Why we focus on UK dental practices, associates, and owners. Specialist dental focus without generic SME boilerplate.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About us",
     description:
-      "Why we focus on UK dental practices, associates, and owners. Specialist accounting without generic SME boilerplate.",
+      "Why we focus on UK dental practices, associates, and owners. Specialist dental focus without generic SME boilerplate.",
   },
 };
 
@@ -55,9 +55,9 @@ export default function AboutPage() {
               About {siteConfig.name}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-              We set out to build an accounting practice that could keep pace with UK dentistry (mixed payment
-              models, changing associate relationships, and serious capital decisions) without treating your
-              practice like a generic small business.
+              We set out to build a route into specialist advice that could keep pace with UK dentistry (mixed
+              payment models, changing associate relationships, and serious capital decisions) without treating
+              your practice like a generic small business.
             </p>
           </div>
         </div>
@@ -66,9 +66,9 @@ export default function AboutPage() {
       <div className={`${contentNarrow} ${sectionY}`}>
         <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">How we work</h2>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-[var(--ink-soft)]">
-          <li>Plain language, partner-led advice you can act on.</li>
+          <li>Plain language guides and calculators you can act on.</li>
           <li>Monthly discipline where it matters, not just a rush every January.</li>
-          <li>Tax and governance that stands up when HMRC, funders, or buyers ask questions.</li>
+          <li>A specialist dental accountant from our partner network, not a generalist who has never seen a UDA schedule.</li>
         </ul>
 
         <h2 className="mt-12 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Evidence-led content</h2>

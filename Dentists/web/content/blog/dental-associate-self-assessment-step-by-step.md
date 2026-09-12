@@ -122,4 +122,4 @@ faqs:
 
 <p>Filing your self assessment return correctly and on time is a straightforward process once you understand the rules. If you are unsure about any aspect, speak to a dental-specialist accountant who deals with associate tax returns every day.</p>
 
-<p>For more detailed guidance on associate-specific tax issues, see our <a href="/dental-guides/associate-tax-survival-guide">Associate Tax Survival Guide</a>. If you need help preparing your return, our team at <a href="/services/associate-tax">Dental Finance Partners</a> specialises in dental associate tax and can handle the filing for you.</p>
+<p>For more detailed guidance on associate-specific tax issues, see our <a href="/dental-guides/associate-tax-survival-guide">Associate Tax Survival Guide</a>. If you need help preparing your return, our team at <a href="/services/associate-tax">Dental Finance Partners</a> can introduce you to a specialist dental accountant from our partner network who works in dental associate tax and can take the filing on for you.</p>

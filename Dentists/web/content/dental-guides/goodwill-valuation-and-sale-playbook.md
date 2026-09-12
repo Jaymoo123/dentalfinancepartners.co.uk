@@ -190,9 +190,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Post-completion handover begins</li>
 </ul>
 
-<h2>What we'd do if you brought us in pre-sale</h2>
+<h2>What pre-sale planning should cover</h2>
 
-<p>Our pre-sale planning engagement typically starts 18-24 months before target exit. The work covers:</p>
+<p>Pre-sale planning needs to start 18-24 months before target exit. By the time a buyer is at the table most of it is out of reach. The work covers:</p>
 
 <ul>
 <li>Valuation refresh against current market multiples for your specific practice type and region</li>

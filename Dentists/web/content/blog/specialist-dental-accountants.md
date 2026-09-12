@@ -80,7 +80,7 @@ imageCredit:
 
 <p>For locum dentists working through a limited company, off-payroll IR35 rules apply if the engaging practice is a medium or large client. Since 6 April 2021, the practice (not the locum's PSC) determines status for medium and large clients. A specialist dental accountant will advise on whether your locum structure is inside or outside IR35 and what steps to take if HMRC challenges it.</p>
 
-<p>Our <a href="/services/associate-tax">associate tax service</a> covers these issues in detail, and our <a href="/dental-guides/associate-tax-survival-guide">associate tax survival guide</a> provides practical guidance.</p>
+<p>Our <a href="/services/associate-tax">associate tax page</a> sets out what that support covers, and our <a href="/dental-guides/associate-tax-survival-guide">associate tax survival guide</a> provides practical guidance.</p>
 
 <h2>Capital Allowances on Dental Equipment</h2>
 
@@ -128,7 +128,7 @@ imageCredit:
 
 <p>For most UK dentists, the question is not whether you need an accountant. It is whether you need one who understands dentistry as well as you do.</p>
 
-<p>Contact our team to discuss your situation. We work with associates, principals, locums, and practice buyers across the UK. Visit our <a href="/services">services page</a> to learn more, or book a call through our <a href="/contact">contact page</a>.</p>
+<p>Contact our team to discuss your situation. Dental Finance Partners works exclusively with UK dentistry, and we introduce associates, principals, locums and practice buyers across the UK to a specialist dental accountant from our partner network. Visit our <a href="/services">services page</a> to see what that covers, or ask for a short introductory call through our <a href="/contact">contact page</a>.</p>
 
 <h2>Sources</h2>
 <ol>

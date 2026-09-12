@@ -3,10 +3,14 @@
  *
  * England/Wales convention. Scotland uses different tier bands (note in FAQ).
  *
- * Superannuable earnings:
- *   Associate:  net pensionable earnings = gross NHS fee income × pensionable_pct
- *               Default 43.9% (England/Wales GDS convention; user-editable).
- *   Principal:  net pensionable earnings after deductible expenses (user provides).
+ * Superannuable earnings are an INPUT, not something this module derives. Net
+ * pensionable earnings (NPE) come from the practitioner's own NHS pension
+ * paperwork: the annual certificate of pensionable profits for a practitioner,
+ * or the provider's Annual Reconciliation Report allocation for a performer on
+ * a GDS/PDS contract. There is no per-dentist percentage of gross fees that
+ * produces NPE. The 43.9% figure in HP §2.C is the ceiling on declared NPE for
+ * a WHOLE contract, covering every dentist on it combined, so it must never be
+ * applied to one dentist's gross fee income.
  *
  * Member contribution tiers — England and Wales only (Scotland and Northern Ireland
  * run different tier tables). Six-tier structure; the rates (5.2 / 6.5 / 8.3 / 9.8 /
@@ -42,9 +46,6 @@ export const TIER_EFFECTIVE_DATE = "1 April 2026";
 
 const EMPLOYER_RATE = 0.237;
 const CARE_ACCRUAL_DENOMINATOR = 54;
-
-/** Associate convention: net pensionable earnings as % of gross NHS fee income */
-export const ASSOCIATE_DEFAULT_PENSIONABLE_PCT = 43.9;
 
 export function memberTierRate(pensionableEarnings: number): number {
   for (const tier of TIERS_ENGLAND_WALES) {
@@ -96,8 +97,8 @@ export function calcSuperannuation(pensionableEarnings: number): SuperannuationR
   };
 }
 
-// Self-check: associate on £120k gross fees at 43.9% = £52,680 pensionable.
-// 2026/27 tier: £35,156–£52,778 → 9.8%. Member contrib = £5,162.64. CARE = £975.56.
+// Self-check: NPE of £52,680 sits in the 2026/27 £35,156–£52,778 band → 9.8%.
+// Member contrib = £5,162.64. CARE = £975.56.
 if (process.env.NODE_ENV === "test") {
   const r = calcSuperannuation(52680);
   console.assert(r.memberRate === 0.098, "tier lookup");

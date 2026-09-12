@@ -159,4 +159,4 @@ faqs:
 
 <p>Every practice is different. The figures and rules in this article are general guidance for the 2026/27 tax year. Your specific situation may require different treatment. Speak to a dental-specialist accountant before committing to any purchase.</p>
 
-<p>Our team at <a href="/services/dental-accountants">Dental Finance Partners</a> works exclusively with UK dentists. We can review the seller's accounts, model the tax implications of different purchase structures, and help you negotiate from a position of knowledge. <a href="/contact">Contact us</a> for an initial discussion.</p>
+<p>Our team at <a href="/services/dental-accountants">Dental Finance Partners</a> works exclusively with UK dentists. We will introduce you to a specialist dental accountant from our partner network who can review the seller's accounts, model the tax implications of different purchase structures, and help you negotiate from a position of knowledge. <a href="/contact">Contact us</a> for an initial discussion.</p>

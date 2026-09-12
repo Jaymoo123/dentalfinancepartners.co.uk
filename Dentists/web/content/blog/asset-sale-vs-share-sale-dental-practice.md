@@ -141,4 +141,4 @@ faqs:
 <li><strong>Rates to keep current:</strong> BADR 14% to 5 April 2026 then 18%, £1m lifetime limit, £3,000 annual exempt amount, main CGT 18% / 24%, corporation tax 19% to 25% with marginal relief, and dividend rates of 10.75% / 35.75% / 39.35% from 6 April 2026.</li>
 <li><strong>Always take professional advice</strong> from a dental-specialist accountant and solicitor before fixing the structure.</li>
 </ul>
-<p>If you are buying or selling a dental practice, our team at <a href="/services/practice-valuation">Dental Finance Partners</a> can help you model the tax consequences of each structure and choose the most tax-efficient route. <a href="/contact">Contact us</a> for a confidential discussion.</p>
+<p>If you are buying or selling a dental practice, our team at <a href="/services/practice-valuation">Dental Finance Partners</a> can introduce you to a specialist dental accountant from our partner network who will model the tax consequences of each structure and help you choose the most tax-efficient route. <a href="/contact">Contact us</a> for a confidential discussion.</p>

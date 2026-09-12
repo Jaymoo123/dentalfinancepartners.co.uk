@@ -272,8 +272,8 @@ export function HealthCheckWizard() {
         </h3>
         <p className="mt-3 text-[var(--ink-soft)]">
           Below are the top items worth reviewing. We will follow up on the email
-          you supplied (<strong>{a.email}</strong>) to talk through any of them in
-          detail.
+          you supplied (<strong>{a.email}</strong>) so a specialist can talk any of
+          them through in detail.
         </p>
 
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -286,7 +286,7 @@ export function HealthCheckWizard() {
         {topItems.length > 0 && (
           <div className="mt-8">
             <h4 className="font-serif text-lg font-semibold text-[var(--ink)]">
-              The first things we&apos;d look at
+              The first things worth looking at
             </h4>
             <ul className="mt-4 space-y-4">
               {topItems.map((o) => (

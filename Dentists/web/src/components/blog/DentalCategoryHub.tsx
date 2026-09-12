@@ -43,7 +43,7 @@ export type { HubSection };
 const LEAD_PROOF_POINTS = [
   { title: "Dental practices only", detail: "NHS pensions, UDAs and practice sales every day" },
   { title: "One accountant throughout", detail: "You speak to the person doing the work" },
-  { title: "Answers in writing", detail: "What we advise, and the reasoning behind it" },
+  { title: "Answers in writing", detail: "The advice you get, and the reasoning behind it" },
 ];
 
 export function DentalCategoryHub({

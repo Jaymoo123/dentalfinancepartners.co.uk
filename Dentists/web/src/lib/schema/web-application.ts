@@ -39,7 +39,10 @@ export function buildWebApplication({
     },
     inLanguage: "en-GB",
     provider: {
-      "@type": "AccountingService",
+      // Organization, not AccountingService: this site publishes guidance and
+      // introduces dentists to regulated firms, it does not itself provide
+      // accounting services (matches the terms page and buildBlogPostingJsonLd).
+      "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
     },

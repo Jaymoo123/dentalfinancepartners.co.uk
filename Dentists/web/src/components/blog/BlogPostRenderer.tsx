@@ -339,7 +339,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   <p className="mt-1 text-lg font-bold text-[var(--ink)]">{niche.display_name}</p>
                   <p className="mt-2 text-sm text-[var(--ink-soft)] leading-relaxed">{niche.description}</p>
                   <Link href="/about" className="mt-3 inline-block text-sm font-semibold text-primary-700 hover:underline">
-                    Learn more about our team →
+                    Learn more about {niche.display_name} →
                   </Link>
                 </div>
               </aside>

@@ -68,7 +68,7 @@ imageCredit:
 
 <p>Items that do NOT qualify for AIA include cars (unless you are a driving instructor or similar), land, and buildings. However, the cost of integral building fixtures such as electrical systems, plumbing, and air conditioning may qualify for the special rate pool at 6% per year rather than the AIA.</p>
 
-<p>If you buy an existing dental practice, you need to identify which elements of the purchase price relate to qualifying plant and machinery. This is done through a capital allowances election under section 198 of the Capital Allowances Act 2001. Without this election, you may lose the ability to claim AIA on fixtures you have effectively paid for. Our <a href="/services/practice-accounting">practice accounting services</a> can help you structure this correctly at acquisition.</p>
+<p>If you buy an existing dental practice, you need to identify which elements of the purchase price relate to qualifying plant and machinery. This is done through a capital allowances election under section 198 of the Capital Allowances Act 2001. Without this election, you may lose the ability to claim AIA on fixtures you have effectively paid for. A <a href="/services/practice-accounting">specialist dental accountant from our partner network</a> can help you structure this correctly at acquisition.</p>
 
 <h2>How to Claim the AIA as a UK Dentist</h2>
 
@@ -101,7 +101,7 @@ imageCredit:
 
 <p>Several recurring errors cause dentists to miss out on AIA relief or face HMRC enquiries.</p>
 
-<p><strong>Mistake 1: Not identifying fixtures in a practice purchase.</strong> When you buy an existing practice, the seller may have already claimed capital allowances on fixtures. Without a section 198 election, you cannot claim AIA on those fixtures again. You need a formal apportionment of the purchase price between goodwill, property, and plant. Our <a href="/services/practice-valuation">practice valuation services</a> include capital allowances analysis as part of the due diligence process.</p>
+<p><strong>Mistake 1: Not identifying fixtures in a practice purchase.</strong> When you buy an existing practice, the seller may have already claimed capital allowances on fixtures. Without a section 198 election, you cannot claim AIA on those fixtures again. You need a formal apportionment of the purchase price between goodwill, property, and plant. A <a href="/services/practice-valuation">specialist dental accountant from our partner network</a> can include capital allowances analysis as part of the due diligence process.</p>
 
 <p><strong>Mistake 2: Claiming AIA on cars.</strong> Cars are specifically excluded from the AIA. You must use the main pool (14%) or special rate pool (6%) depending on CO2 emissions. A common error is treating a practice vehicle as qualifying plant.</p>
 
@@ -125,7 +125,7 @@ imageCredit:
 
 <p>Associate dentists who are self-employed can claim AIA on equipment they buy for their own use. This includes handpieces, curing lights, loupes, and other instruments. However, associates typically do not own the major surgery equipment, so their qualifying expenditure is usually modest.</p>
 
-<p>Locum dentists working through a limited company can also claim AIA on equipment the company purchases. If you buy a portable X-ray unit or sterilisation equipment for use across multiple practices, the AIA applies. However, remember the off-payroll IR35 rules: if your locum company is inside IR35, you cannot claim capital allowances because the deemed employment payment already accounts for the income. Our <a href="/services/locum-dentist-tax">locum dentist tax services</a> can help you navigate this area.</p>
+<p>Locum dentists working through a limited company can also claim AIA on equipment the company purchases. If you buy a portable X-ray unit or sterilisation equipment for use across multiple practices, the AIA applies. However, remember the off-payroll IR35 rules: if your locum company is inside IR35, you cannot claim capital allowances because the deemed employment payment already accounts for the income. A <a href="/services/locum-dentist-tax">specialist dental accountant from our partner network</a> can help you navigate this area.</p>
 
 <p>Foundation dentists and salaried associates cannot claim AIA because they are employees. Their equipment costs are typically reimbursed by the practice or claimed through employment expenses on form P87.</p>
 
@@ -152,7 +152,7 @@ imageCredit:
 
 <p>If you are buying a practice, fitting out new surgeries, or upgrading equipment, factor the AIA into your cash flow projections. The 100% relief in year one can make a significant difference to your tax bill and your ability to reinvest in the practice.</p>
 
-<p>For personalised advice on capital allowances and equipment planning, contact our team. We work with practice owners, associates, and locums across the UK to optimise their tax position.</p>
+<p>For personalised advice on capital allowances and equipment planning, contact our team. We will introduce you to a specialist dental accountant from our partner network who works with practice owners, associates, and locums across the UK to optimise their tax position.</p>
 
 <h2>Sources</h2>
 <ol>
