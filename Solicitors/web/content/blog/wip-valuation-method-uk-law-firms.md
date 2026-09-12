@@ -169,8 +169,8 @@ faqs:
 <li>Supported by appropriate recoverability assessments</li>
 </ul>
 
-<p>If you are unsure whether your current method is correct, or if you are considering a change, we recommend a review of your firm's accounting policies. Our team at Accounts for Lawyers specialises in <a href="/services/solicitor-accountants">solicitor accounting</a> and can help you choose and implement the right WIP valuation method for your practice.</p>
+<p>If you are unsure whether your current method is correct, or if you are considering a change, we recommend a review of your firm's accounting policies. Accounts for Lawyers connects law firms with regulated accountancy firms in our specialist <a href="/services/solicitor-accountants">solicitor accounting</a> network, and the partner firm we match you with can help you choose and implement the right WIP valuation method for your practice.</p>
 
-<p>We also provide <a href="/services/cofa-compliance-support">COFA compliance support</a> to ensure your firm's accounting policies meet SRA requirements.</p>
+<p>We can also match you with a partner firm for <a href="/services/cofa-compliance-support">COFA compliance support</a>, so your firm's accounting policies meet SRA requirements.</p>
 
 <p>Contact us to discuss your firm's WIP valuation approach and ensure your accounts reflect the true economic position of your practice.</p>

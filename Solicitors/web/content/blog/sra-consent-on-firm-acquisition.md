@@ -186,4 +186,4 @@ faqs:
 
 <p>If you answer no to any of these, pause and seek advice. The SRA will not grant consent if the application is incomplete or the buyer is not ready to take on the regulatory responsibilities of owning a law firm.</p>
 
-<p>For a full review of your acquisition plans, including a compliance health check and financial projections, <a href="/free-firm-health-check">book a free firm health check</a> with our team. We specialise in advising solicitors on firm acquisitions, SRA consent, and post-completion integration.</p>
+<p>For a full review of your acquisition plans, including a compliance health check and financial projections, <a href="/free-firm-health-check">book a free firm health check</a> with our team. We connect solicitors with regulated accountancy firms in our specialist partner network that advise on firm acquisitions, SRA consent, and post-completion integration.</p>

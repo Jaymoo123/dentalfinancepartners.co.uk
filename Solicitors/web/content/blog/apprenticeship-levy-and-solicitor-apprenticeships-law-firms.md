@@ -154,7 +154,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Treat training-cost deductibility as a separate question</strong> from the levy mechanism.</li>
 </ol>
 
-<p>If you are working out whether your firm pays the levy, how to use the pot, or how to fund a solicitor apprentice against the current rules, our team helps law firms plan the levy and the apprenticeship-funding route alongside the rest of their payroll and cash flow.</p>
+<p>If you are working out whether your firm pays the levy, how to use the pot, or how to fund a solicitor apprentice against the current rules, we can connect you with a firm in our partner network that helps law firms plan the levy and the apprenticeship-funding route alongside the rest of their payroll and cash flow.</p>
 
 <h2>Related Reading</h2>
 

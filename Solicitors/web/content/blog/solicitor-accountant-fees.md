@@ -116,7 +116,7 @@ faqs:
 
 <p>Because the drivers vary so much, the only reliable way to understand your cost is a quote built around your firm: its structure, partner numbers, client money profile, VAT position, payroll and the scope you want. A specialist can map those drivers to a clear scope and an accurate fee, rather than a generic estimate that may not fit.</p>
 
-<p>If you want a tailored quote for specialist legal-sector accounting, or a second opinion on a proposal you have already received, <a href="/contact">contact us</a> for a confidential discussion. We work with UK law firms of every size, from sole practitioners to multi-partner LLPs, and we will set out exactly what your engagement would cover before you commit.</p>
+<p>If you want a tailored quote for specialist legal-sector accounting, or a second opinion on a proposal you have already received, <a href="/contact">contact us</a> for a confidential discussion. We work with UK law firms of every size, from sole practitioners to multi-partner LLPs, and the partner firm we match you with will set out exactly what your engagement would cover before you commit.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">Related Guide</p>

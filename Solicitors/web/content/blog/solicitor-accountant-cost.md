@@ -108,11 +108,11 @@ faqs:
 
 <p>The cost of a solicitor accountant is a function of your firm, not a fixed figure you can look up. Structure, partner and fee-earner numbers, client money complexity under the SRA Accounts Rules, VAT, payroll, and the depth of advisory you want all move it. Understanding these drivers puts you in control: you can see which parts of the scope are required and which are a choice, you can keep recurring work efficient by keeping your records tidy, and you can brief any prospective accountant properly.</p>
 
-<p>For a number that actually reflects your firm, the next step is a tailored quote rather than a generic range. Tell us how your practice is structured and what you need, and we will scope it accurately.</p>
+<p>For a number that actually reflects your firm, the next step is a tailored quote rather than a generic range. Tell us how your practice is structured and what you need, and we will put the brief to a regulated firm in our specialist partner network that can scope it accurately.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">Request a tailored quote</p>
-<p style="color: var(--muted); margin-bottom: 1rem;">Every firm is different, so we scope the work to your structure, your client money position, and the services you actually need. Tell us about your practice and we will give you an accurate, no-obligation quote.</p>
+<p style="color: var(--muted); margin-bottom: 1rem;">Every firm is different, so the work is scoped to your structure, your client money position, and the services you actually need. Tell us about your practice and we will get you an accurate, no-obligation quote from a regulated firm in our specialist partner network.</p>
 <p><a href="/contact" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Get a tailored quote for your firm →</a></p>
 </div>
 

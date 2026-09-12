@@ -189,7 +189,7 @@ schema: ''
 <li><strong>IT and data:</strong> Case management system, data protection compliance, cybersecurity insurance.</li>
 </ul>
 
-<p>Work through each item systematically. If you are not comfortable reviewing the financials yourself, engage a solicitor accountant who specialises in law firm transactions. Our team at Accounts for Lawyers provides <a href="/services/practice-valuation">practice valuation services</a> and can support you through the due diligence process.</p>
+<p>Work through each item systematically. If you are not comfortable reviewing the financials yourself, engage a solicitor accountant who specialises in law firm transactions. Accounts for Lawyers can introduce you to a firm in our partner network that provides <a href="/services/practice-valuation">practice valuation services</a> and can support you through the due diligence process.</p>
 
 <h2>Common Pitfalls to Avoid</h2>
 
@@ -207,4 +207,4 @@ schema: ''
 
 <p>Financial due diligence is not optional when buying a law firm. It is the process that protects you from overpaying, inheriting hidden liabilities, or buying a business that is not viable. A structured firm DD checklist, a thorough seller accounts review, and a careful WIP review are the three pillars of a successful purchase.</p>
 
-<p>If you are considering buying a law firm and want expert support, speak to our team. We are solicitor accountants who understand the unique financial and regulatory challenges of law firm transactions. <a href="/contact">Contact us</a> to discuss your situation.</p>
+<p>If you are considering buying a law firm and want expert support, speak to us. We connect law firms with regulated accountancy firms in our partner network that understand the unique financial and regulatory challenges of law firm transactions. <a href="/contact">Contact us</a> to discuss your situation.</p>

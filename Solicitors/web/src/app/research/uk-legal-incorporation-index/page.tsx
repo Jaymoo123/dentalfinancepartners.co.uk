@@ -64,7 +64,7 @@ const faqs = [
   {
     question: "Is incorporation right for my law firm?",
     answer:
-      "That depends on your profit level, how much you retain in the business, your personal tax position, and whether the SRA's requirements for recognised bodies apply to your practice type. There is no universal answer: some firms benefit significantly from incorporation, others find that LLP or even sole practitioner structures remain more efficient. The right starting point is a firm-specific tax analysis that models both routes under current rates. Our team specialises in exactly this comparison for solicitors and law firms.",
+      "That depends on your profit level, how much you retain in the business, your personal tax position, and whether the SRA's requirements for recognised bodies apply to your practice type. There is no universal answer: some firms benefit significantly from incorporation, others find that LLP or even sole practitioner structures remain more efficient. The right starting point is a firm-specific tax analysis that models both routes under current rates. The specialist firms in our partner network do exactly this comparison for solicitors and law firms.",
   },
 ];
 
@@ -432,8 +432,8 @@ export default function UKLegalIncorporationIndexPage() {
               <p className="mt-4 text-base leading-relaxed text-slate-600">
                 The structural shift is clear, but incorporation is not right for every practice.
                 The tax saving depends on your profit level, how much you draw, and whether you
-                retain funds in the company. Our team works exclusively with solicitors and law firms
-                and can model both routes for your specific situation.
+                retain funds in the company. We work exclusively with solicitors and law firms, and the partner firm we
+                match you with can model both routes for your specific situation.
               </p>
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
                 <Link href="/calculators" className="text-[var(--primary)] hover:opacity-80">

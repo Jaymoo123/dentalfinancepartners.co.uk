@@ -49,7 +49,7 @@ export default function CookiePolicyPage() {
           We run our own privacy-first analytics so we can understand how visitors use the Site and improve it. To do this we store two random identifiers in your browser (a visitor identifier and a session identifier) and record anonymous interaction events such as pages viewed, scrolling, clicks and form steps. The lawful basis is our legitimate interest in measuring and improving the Site.
         </p>
         <p>
-          This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect your name, email or phone number in these events, and we do not sell or share this data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all analytics on your device.
+          We do not store your IP address. We do store the approximate location and time zone our hosting provider derives from your connection, namely country, region, city and time zone, together with your browser and operating system family. We do not collect your name, email or phone number in these events, and we do not sell or share this data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all analytics on your device.
         </p>
 
         <h3 className="mt-4 text-lg font-semibold text-slate-900">Analytics cookies (Google Analytics)</h3>
@@ -61,10 +61,10 @@ export default function CookiePolicyPage() {
             <strong>_ga:</strong> Distinguishes unique users. Expires after 2 years.
           </li>
           <li>
-            <strong>_gid:</strong> Distinguishes unique users. Expires after 24 hours.
+            <strong>_ga_G-N6ZPRB3DSQ:</strong> Maintains the Google Analytics 4 session state for this Site. Expires after 2 years.
           </li>
           <li>
-            <strong>_gat_gtag_*:</strong> Used to throttle request rate. Expires after 1 minute.
+            <strong>_gat_gtag_*:</strong> Where the Google tag sets it, used to throttle the request rate. Expires after 1 minute.
           </li>
         </ul>
         <p>

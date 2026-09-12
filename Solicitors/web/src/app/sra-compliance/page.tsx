@@ -44,7 +44,7 @@ const complianceAreas = [
   },
   {
     title: "SRA Accountant's Reports",
-    description: "Annual Accountant's Reports prepared by qualified reporting accountants. We review your client money handling, identify any issues, and provide the required report to the SRA.",
+    description: "The annual report has to come from an independent accountant holding a practising certificate from a recognised supervisory body. We connect you with one from our specialist partner network and help you get the client money records ready, so nothing surfaces late.",
   },
   {
     title: "COFA support",

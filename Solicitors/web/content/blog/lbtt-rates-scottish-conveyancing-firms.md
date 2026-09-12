@@ -136,7 +136,7 @@ faqs:
 
 <h2>Common LBTT Mistakes by Conveyancing Solicitors</h2>
 
-<p>Based on our experience advising law firms, the most frequent LBTT errors include:</p>
+<p>The most frequent LBTT errors in practice include:</p>
 
 <ul>
 <li>Treating LBTT as a slab tax and applying a single rate to the whole price, instead of calculating it progressively band by band.</li>
@@ -168,4 +168,4 @@ faqs:
 
 <p>LBTT is a devolved, Scotland-only tax with its own progressive band structure, its own thresholds and its own filing regime. Conveyancing solicitors must stay current with the rates, the 8% ADS, the first-time buyer relief and the 30-day deadline, and must never confuse LBTT with SDLT or LTT. Getting it wrong can cost a firm money and reputation.</p>
 
-<p>If you are unsure about any aspect of LBTT compliance, or need support with your firm's accounting and regulatory obligations, contact us. We specialise in advising law firms on tax, compliance and practice management, and a conversation with a legal-sector-specialist accountant can save you from costly mistakes.</p>
+<p>If you are unsure about any aspect of LBTT compliance, or need support with your firm's accounting and regulatory obligations, contact us. We connect law firms with regulated accountancy firms that advise on tax, compliance and practice management, and a conversation with a legal-sector-specialist accountant can save you from costly mistakes.</p>

@@ -168,9 +168,9 @@ schema: ''
 
 <p>This is why volume matters in conveyancing — single-matter losses are common, and profitability comes from converting at scale. It's also why conveyancing-heavy firms are most exposed to PII claims and SRA scrutiny: high volume of client money flowing through, tight margins per matter, and lower fee-earner experience on average.</p>
 
-<h2>What we'd do if you brought us in (for the firm side)</h2>
+<h2>What a partner firm would do if you brought them in (for the firm side)</h2>
 
-<p>Our conveyancing-firm engagement focuses on the operational economics:</p>
+<p>We match you with a regulated accountancy firm in our partner network. A conveyancing-firm engagement with that firm focuses on the operational economics:</p>
 
 <ul>
 <li>Fee-earner productivity and per-matter economics review</li>

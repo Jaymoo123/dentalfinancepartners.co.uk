@@ -91,7 +91,7 @@ faqs:
 
 <h2>Common Mistakes Solicitors Make with PII and Tax</h2>
 
-<p>Despite the straightforward rules, we see several recurring errors in our work with law firms.</p>
+<p>Despite the straightforward rules, several errors recur across law firms.</p>
 
 <p><strong>Mistake 1: Treating PII as a personal expense.</strong> Some solicitors pay their PII from a personal bank account and then forget to claim it. If you are a partner, the firm should pay. If you are a locum, you can pay personally and claim. But you must claim.</p>
 
@@ -123,7 +123,7 @@ faqs:
 
 <p>The SRA Accounts Rules do not directly affect the tax treatment of PII. But there is a connection. The rules require firms to maintain adequate PII as a condition of authorisation. If you fail to hold PII, you risk regulatory action. That is a separate issue from tax.</p>
 
-<p>However, the cost of complying with the SRA Accounts Rules, including the cost of the accountant's report, is also deductible. If you need help with the accountant's report or with ensuring your firm's compliance, we offer <a href="/services/sra-accounts-rules">SRA Accounts Rules support</a>.</p>
+<p>However, the cost of complying with the SRA Accounts Rules, including the cost of the accountant's report, is also deductible. If you need help with the accountant's report or with your firm's compliance, our <a href="/services/sra-accounts-rules">SRA Accounts Rules support</a> page explains how we connect you with a regulated firm in our specialist partner network.</p>
 
 <h2>Practical Steps for Solicitors</h2>
 
@@ -143,7 +143,7 @@ faqs:
 
 <p>For more detailed guidance on PII and tax, see our <a href="/solicitor-guides/professional-indemnity-tax-treatment">professional indemnity tax treatment guide</a>. If you are a partner considering your firm's structure, our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP guide</a> may also be relevant.</p>
 
-<p>We also offer a <a href="/calculators/indemnity-premium-estimator">PII premium estimator</a> to help you budget for this cost, and we provide <a href="/services/cofa-compliance-support">COFA compliance support</a> for firms that need help with regulatory requirements.</p>
+<p>We also offer a <a href="/calculators/indemnity-premium-estimator">PII premium estimator</a> to help you budget for this cost, and firms that need help with regulatory requirements can be matched with a partner firm through our <a href="/services/cofa-compliance-support">COFA compliance support</a> page.</p>
 
 <p>Finally, if you are buying or selling a law firm, PII costs are a key factor in practice valuation. Our <a href="/services/practice-valuation">practice valuation service</a> can help you understand how PII affects the price.</p>
 

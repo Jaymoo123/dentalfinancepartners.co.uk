@@ -132,9 +132,9 @@ faqs:
 
 <p>Building financial controls for conveyancing is not a one-off task. The SRA Accounts Rules change, the volume of transactions grows, and the risk of fraud evolves. A legal-sector-specialist accountant can help you design controls that are both compliant and practical.</p>
 
-<p>We work with conveyancing solicitors across the UK, from sole practitioners handling 10 completions a month to multi-partner firms handling 200. Our services include <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance reviews</a>, <a href="/services/cofa-compliance-support">COFA compliance support</a>, and bespoke financial control frameworks for conveyancing practices.</p>
+<p>We work with conveyancing solicitors across the UK, from sole practitioners handling 10 completions a month to multi-partner firms handling 200, matching them with regulated accountancy firms in our partner network. Those firms provide <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance reviews</a>, <a href="/services/cofa-compliance-support">COFA compliance support</a>, and bespoke financial control frameworks for conveyancing practices.</p>
 
-<p>We also offer a <a href="/free-firm-health-check">free firm health check</a> that assesses your current controls against SRA expectations. It takes 30 minutes and gives you a clear action plan.</p>
+<p>Start with a <a href="/free-firm-health-check">free firm health check</a>. It takes 30 minutes, establishes where your current controls sit against SRA expectations, and matches you with the right partner firm.</p>
 
 <h2>Final Thoughts</h2>
 

@@ -83,7 +83,7 @@ faqs:
 <h3>SRA Accounts Rules Compliance</h3>
 <p>Every conveyancing firm must comply with the SRA Accounts Rules. Ask for the last three accountant's reports. If any report was qualified, understand why. A qualified report is a red flag that the firm has systemic accounting problems.</p>
 
-<p>Check whether the firm has a COFA (Compliance Officer for Finance and Administration) and a COLP (Compliance Officer for Legal Practice). If the COFA is the seller and they plan to leave after the sale, you need to appoint a replacement before completion. Our <a href="/services/cofa-compliance-support">COFA compliance support service</a> can help you prepare.</p>
+<p>Check whether the firm has a COFA (Compliance Officer for Finance and Administration) and a COLP (Compliance Officer for Legal Practice). If the COFA is the seller and they plan to leave after the sale, you need to appoint a replacement before completion. A partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a> can help you prepare.</p>
 
 <p>Ask for a copy of the firm's most recent SRA annual return. Check whether the firm has any ongoing investigations or regulatory action. You can search the SRA's public register for any history of fines or interventions.</p>
 
@@ -102,7 +102,7 @@ faqs:
 <h3>Valuation Methods for Conveyancing Firms</h3>
 <p>Conveyancing firms are typically valued on a multiple of normalised profit. The multiple depends on the quality of the referral sources, the stability of the fee-earner team, and the firm's compliance record. A well-run firm with diverse referral sources and a strong team might achieve 2 to 3 times normalised profit. A firm with concentration risk or compliance issues might attract a lower multiple.</p>
 
-<p>Normalised profit adjusts for one-off costs, owner-remuneration above market rate, and non-recurring items. For example, if the seller pays themselves £150,000 but a replacement fee-earner would cost £80,000, the normalised profit is higher by £70,000. Our <a href="/services/practice-valuation">practice valuation service</a> can help you calculate a fair price.</p>
+<p>Normalised profit adjusts for one-off costs, owner-remuneration above market rate, and non-recurring items. For example, if the seller pays themselves £150,000 but a replacement fee-earner would cost £80,000, the normalised profit is higher by £70,000. A partner firm providing <a href="/services/practice-valuation">practice valuation</a> can help you calculate a fair price.</p>
 
 <h3>Earn-Outs and Retention</h3>
 <p>Many conveyancing firm acquisitions use an earn-out structure. The seller receives an initial payment plus additional payments based on the firm's performance over one to three years. This aligns the seller's incentive with the buyer's need to retain referral sources and fee-earners.</p>
@@ -135,4 +135,4 @@ faqs:
 <li>Plan post-acquisition integration for systems, clients, and referral sources.</li>
 </ul>
 
-<p>Buying a conveyancing law firm is a complex transaction that requires specialist advice. Speak to a legal-sector-specialist accountant and a solicitor with M&A experience before you proceed. Our team at Accounts for Lawyers can help you with due diligence, valuation, and post-acquisition integration. <a href="/contact">Contact us</a> to discuss your plans.</p>
+<p>Buying a conveyancing law firm is a complex transaction that requires specialist advice. Speak to a legal-sector-specialist accountant and a solicitor with M&A experience before you proceed. Accounts for Lawyers can match you with a regulated firm in our partner network that handles due diligence, valuation, and post-acquisition integration. <a href="/contact">Contact us</a> to discuss your plans.</p>

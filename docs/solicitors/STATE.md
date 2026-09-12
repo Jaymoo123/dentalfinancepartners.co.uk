@@ -6,7 +6,186 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/solicitors/house_positions.md`, never here.
 
-Last updated: 2026-09-11.
+Last updated: 2026-09-12.
+
+## CLAIMS AUDIT REMEDIATION, SERIOUS TIER, 2026-09-12 (BUILT, NOT DEPLOYED)
+
+Owner decision 2026-09-12 approved fixing the serious tier of the estate-wide claims audit on
+this site now. Three batches were in scope: false statements of law, claims to professional
+qualifications we do not hold, and compliance copy describing code that does not run. The long
+tail of uncited numbers was explicitly OUT of scope and is logged at the bottom of this entry.
+
+Positioning ruling that settled every wording question: match what the site already publishes
+legally. `src/app/terms/page.tsx` section 2 already says the site does not constitute accounting,
+tax, financial or legal advice, and `src/app/privacy-policy/page.tsx` already says enquiries pass
+to "regulated firms in our specialist partner network so that they can provide the advice you
+have requested". The marketing copy contradicted both. Nothing new was invented; a contradiction
+was removed. There is no `src/lib/team.ts` on this site, so the privacy policy is the canonical
+source for the partner-network framing.
+
+Verification: `npx tsc --noEmit` clean and `npx vitest run` 18 files / 219 tests green, both run
+from `Solicitors/web`. No test pinned any copy that was corrected. No git operations run.
+Roughly 140 files changed across `Solicitors/`. NOTHING DEPLOYED.
+
+### Batch 1, false statements of law, all fixed
+
+- **SRA Rule 12.2 thresholds were INVERTED on eight surfaces.** Published: "no more than £10,000
+  client money at any time AND average not exceeding £250". Correct, per HP section 5.G:
+  **average not exceeding £10,000 AND maximum not exceeding £250,000**. Fixed at
+  `src/app/services/[slug]/data.ts` (three places), `src/app/uk-solicitor-tax-rates/page.tsx`
+  (which also had the two roles swapped in its labels), `public/llms.txt`,
+  `src/lib/health-check/rules.ts`, and `content/solicitor-guides/sra-accounts-rules-essentials.md`
+  (frontmatter FAQ, so it was live in JSON-LD, plus the body list). `src/lib/tools/compute/`
+  already had this correct behind two invariant tests, which is exactly why the other eight
+  surfaces were never caught: the guard covered the compute lib only, not the prose surfaces.
+- **Rule 12.1 trigger conflated with the Rule 12.2 exemption** in `src/lib/health-check/rules.ts`.
+  The rule fired on `clientMoneyVolume === "none"` and then told the user the de minimis
+  exemption applied, which HP section 5.G expressly forbids. Split into two rules: `none` now
+  returns a Rule 12.1 no-trigger finding, and the new `very-low` branch returns the Rule 12.2
+  exemption check with both correct limbs.
+- **A fabricated VAT regime** in `content/blog/vat-on-counsel-fees-uk-solicitors.md`: "since
+  1 March 2017 a domestic reverse charge applies between VAT-registered solicitors and
+  barristers". No such regime has ever existed. The domestic reverse charge covers construction
+  services (from 1 March 2021) and certain specified goods. It was in a keyTakeaway, an FAQ
+  answer live in FAQPage JSON-LD, an H2, the metaDescription, the summary and nine further
+  places the audit had not listed. Regime removed entirely; the worked example built on it was
+  DELETED rather than patched, because it was arithmetic on a regime that does not exist and it
+  instructed firms to tell barristers not to charge VAT and then bill the client notional VAT the
+  client also reclaimed. Rewritten to HP section 6.B: counsel is by default a supply TO THE FIRM,
+  with the disbursement route as the narrow client-agency exception and the HMRC concession
+  flagged as mutually exclusive with reclaiming the input VAT. The article's pre-existing claim
+  that "most counsel fees are genuine disbursements" was the same inversion and also went.
+- **Flat Rate Scheme inversion** in `content/blog/flat-rate-scheme-for-uk-solicitors.md`, which
+  cost readers money. It said the rate "drops to 12% for a low cost trader" and recommended FRS
+  on that basis. Correct: the term is **limited cost trader** and the rate is **16.5%**, HIGHER
+  than the 14.5% legal-services rate, which is what makes FRS usually unattractive. The site's
+  own `do-uk-solicitors-charge-vat.md` already said 16.5%, so the site contradicted itself. The
+  conclusion was genuinely rewritten, not find-and-replaced: FRS now reads as usually worse for a
+  law firm, with the narrow surviving case stated and a six-step test the reader can run. Three
+  further defects were found in the same passage and fixed: the limited-cost-trader second limb
+  was stated wrongly, the test was described as annual when it is per VAT period, and one example
+  used a £500,000 turnover firm that cannot be on FRS at all (join £150,000, leave £230,000).
+  That example was removed rather than repaired.
+- **VAT disbursement conditions understated as four** in
+  `src/lib/tools/compute/vat-disbursements-classifier.ts` and its config. It is the **EIGHT**
+  conditions at VAT Notice 700 section 25.1.1, all of which must be met. Fixed in the intro,
+  metaDescription, oneLiner, explainer, FAQ live in JSON-LD, and the output row, which now reads
+  "X of 8". The questionnaire was extended from four booleans to all eight conditions.
+- **Two wrong preset verdicts in the same tool.** `counsel-fees` returned a bare "True
+  disbursement, outside scope of VAT" with no caveat, contradicting HP section 6.B; it now
+  returns fact-specific with the supply-to-the-firm default spelled out. `land-registry`
+  returned a flat "true disbursement" for search AND registration fees, which HP section 6.A
+  calls the pre-Brabners error; it now splits the two and states the Brabners use test, with the
+  postal-search concession noted as withdrawn from 1 December 2020 by R&C Brief 6 (2020). Three
+  further presets that returned unhedged verdicts (`stamp-duty`, `court-fees`, `search-indemnity`)
+  gained evidence notes.
+- **Place of supply, B2C, inverted** in `content/blog/vat-on-overseas-clients-uk-legal-services.md`.
+  It said B2C legal services to a private client abroad are UK-supplied at 20%. VATA 1994
+  Schedule 4A paragraph 16 puts them OUTSIDE THE SCOPE. The page was instructing firms to charge
+  VAT on out-of-scope supplies. Rule corrected and cited; the worked example was replaced rather
+  than recomputed, because the old one used UK conveyancing, which is land-related (Sch 4A para 1)
+  and therefore right for the wrong reason, teaching the wrong rule. The same error was also at
+  four further locations the audit had not listed.
+- **Legal aid VAT** in `content/blog/vat-registration-solicitors.md` said legal aid work is
+  "typically exempt". It is **standard-rated** (HP section 6.F), billed net with the funder
+  adding VAT at source, tax point on case completion (VATTOS8560 / VATTOS8570). The error caused
+  understated turnover and a wrong input-tax restriction. NOTE: the 2026-06-12 back-patch entry
+  in this doc claims "legal aid corrected to standard-rated"; that pass missed this file.
+
+### Batch 2, qualification and capability claims, all fixed
+
+- **The worst instance**, `src/app/services/page.tsx`, FAQ answering "Can you complete our SRA
+  Accountant's Report?" with "Yes. We are independent of your firm and qualified to deliver the
+  SRA-mandated annual Accountant's Report under the Accounts Rules." It was live in FAQPage
+  JSON-LD, and `content/blog/when-is-an-sra-accountants-report-required.md` on this same site
+  correctly states the reporting accountant must hold an ICAEW, ACCA or ICAS practising
+  certificate and be independent, so the site refuted itself. Now answers truthfully: we connect
+  the firm with an appropriately qualified independent reporting accountant and help get the
+  records ready. A near-identical FAQ in `src/app/services/[slug]/data.ts` had the same claim and
+  was fixed the same way.
+- Same class fixed at `content/blog/when-is-an-sra-accountants-report-required.md` ("We prepare
+  SRA accountant's reports"), `src/app/sra-compliance/page.tsx` ("Annual Accountant's Reports
+  prepared by qualified reporting accountants"), `public/llms.txt` ("Accounts for Lawyers is a UK
+  accountancy practice"), `content/solicitor-guides/sra-principles-explained.md` ("We are
+  accountants"), and `content/solicitor-guides/sra-accounts-rules-essentials.md` ("We aim to
+  issue reports 4-6 weeks ahead of the deadline").
+- **The systemic class was swept BY RULE**, not against the audit's list, across the whole tree
+  in four parallel slices (`src/` plus `public/`, blog a-l, blog m-z, guides plus resources). The
+  rule: no sentence may state or imply that we employ accountants, are an accountancy practice,
+  hold an accountancy qualification, or ourselves perform accountancy, audit, reporting-accountant
+  or tax-filing work. Roughly 130 instances were rewritten across about 120 files. This was a
+  rewrite for truth, not a deletion exercise: each sentence kept its marketing job, reframed as
+  "we connect you with a regulated firm in our partner network that does X" or as an impersonal
+  statement of what good practice requires. "Specialist", "legal-sector" and "we work with law
+  firms every day" all stayed, because those are true. Page titles and H1s that are search-term
+  category labels ("Solicitor Accountant London") were left, per the ruling, with the sentences
+  around them made true.
+- Two sentences were CUT rather than re-attributed, because re-attributing them would have been
+  invention: "Our team includes former COFAs and legal-sector accountants" and "Our team includes
+  specialists in solicitor accounting".
+- **`Solicitors/niche.config.json`** carried the two highest-visibility remaining claims, because
+  its `description` renders as the author bio on every blog post and its `tagline` renders in the
+  homepage hero. Both fixed, plus `homepage_description`. JSON re-validated.
+- **Five false LocalBusiness localities.** `src/app/locations/[slug]/page.tsx` called the shared
+  `buildAccountingService`, which always emits a PostalAddress with `addressLocality` set to the
+  city, asserting London, Manchester, Birmingham, Leeds and Bristol offices that do not exist.
+  Property already solved this: it builds the node inline with NO address and `areaServed` as a
+  City contained in the United Kingdom. That shape was ported here. The shared builder in
+  `packages/web-shared/` was deliberately NOT touched, because it is estate-wide and outside this
+  site's scope; **the same defect very likely exists on every other site that calls
+  `buildAccountingService`, and that is an estate-wide item for someone else.**
+
+### Batch 3, compliance copy describing code that does not run, fixed
+
+- `src/app/cookie-policy/page.tsx` disclosed `_gid`, a Universal Analytics cookie this GA4-only
+  site (G-N6ZPRB3DSQ) never sets, while NOT disclosing the `_ga_*` it does set. Replaced.
+- The same page said "we do not store your IP address (only a country derived from it)". Verified
+  against the code, not the comment: `packages/web-shared/analytics/server/createTrackHandler.ts`
+  reads and stores country, city, region AND timezone from the Vercel edge headers, plus browser
+  and OS family. The IP itself is genuinely not stored. Policy now describes what the code does.
+- `src/app/privacy-policy/page.tsx` cited "our published grading rubric". No such page exists
+  anywhere on the site (grepped `src`, `content` and `public`; the phrase appeared exactly once,
+  in that sentence). It now describes the grading without claiming a published document.
+- The privacy policy's 24-month retention sentence was NOT touched, per the owner's ruling: it
+  matches Property exactly and is recorded as a separate estate-wide item.
+
+### OPEN: needs an owner ruling
+
+- **IR35 size test, house position looks STALE, do not "fix" the pages.**
+  `docs/solicitors/house_positions.md:339` states the Companies Act 2006 medium/large test as
+  turnover over £10.2m and balance sheet over £5.1m. Several pages
+  (`consultant-solicitor-structures-uk.md`, `locum-solicitor-ir35-rules-2025-26.md`,
+  `paralegal-employment-status-and-tax-uk.md`) state £15m / £7.5m for financial years beginning
+  on or after 6 April 2025, with the two-consecutive-year lag explained correctly (first
+  affecting off-payroll determinations in 2027/28). The PAGES appear to be right and the house
+  position stale. Nothing was changed either way. Needs an owner or HP-lock ruling, and the HP
+  entry should then be re-locked.
+- `src/app/services/page.tsx` and `src/lib/schema/service.ts` still emit
+  `"@type": "AccountingService"` JSON-LD for the site as a whole. Property does the same, so the
+  shape was left alone, but it is arguably the same class of claim in structured data and
+  changing a schema type is an SEO decision. Owner call.
+- `niche.config.json` `homepage_h1` is still "Specialist Accountants for Solicitors & Law Firms".
+  Left under the titles-and-H1s carve-out, but it is the single most prominent survivor and the
+  owner may want it changed.
+- Several pages now attribute specific fee quotes ("£150-£300 per month", "£4,000-£10,000"
+  conversion cost) to a partner firm. They are pricing claims made on a third party's behalf.
+  Whoever owns pricing should decide whether they stay.
+
+### OUT OF SCOPE this pass, logged not fixed
+
+- The roughly 570 uncited numbers across the site.
+- The lock-up, valuation and break-even multi-value tables.
+- The pricing-model residue: Essentials / Growth / Specialist tiers, "fixed monthly fees" in
+  metadata.
+- The turnaround promises in `sra-accounts-rules-essentials.md` (the capability half of those
+  sentences WAS fixed; the timing half was left).
+- Roughly 115 pre-existing em-dashes across the content tree, including in the five location
+  pages. None were introduced by this pass; three were removed incidentally in rewritten
+  sentences.
+- `public/resources/*.xlsx` and `public/downloads/*` are binaries that were not opened. If any
+  carries a cover-sheet capability claim, it is unswept.
+- `run-off-cover-cessation-and-tax-treatment.md:110-118` has a pre-existing punctuation defect in
+  five bullets (commas where full stops or colons belong).
 
 ## PICKUP: START HERE if you are a fresh agent on this port
 

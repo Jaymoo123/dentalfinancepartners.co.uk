@@ -52,7 +52,7 @@ function parseGuideFile(filePath: string): Guide {
     hero: fm.hero ?? "",
     faqs: fm.faqs ?? [],
     ctaTitle: fm.ctaTitle ?? "Talk to a legal-sector specialist",
-    ctaBody: fm.ctaBody ?? "30-minute scoping call. We will review your position and tell you honestly whether we are the right fit.",
+    ctaBody: fm.ctaBody ?? "30-minute scoping call. We will look at your position and tell you honestly whether a partner firm is the right fit.",
     contentHtml: contentWithIds,
     wordCount: contentWithIds.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length,
   };

@@ -26,7 +26,7 @@ faqs:
 - question: Who in the firm should own legal aid billing?
   answer: 'In most firms it is a shared discipline between the fee-earner, who knows the file and the work done, and the cashier or legal aid billing clerk, who knows the schemes, the codes and the submission mechanics. Larger legal aid practices employ dedicated legal aid billing staff or costs draftspeople for certificated and Crown Court work. The COFA has an oversight interest because legal aid receipts and any client-account interaction fall within Accounts Rules discipline, but day-to-day billing accuracy sits with the billing function.'
 ctaTitle: Get your legal aid billing running clean
-ctaBody: 30-minute scoping call. Whether you want to cut rejection rates, tighten your CCMS workflow, or forecast cash flow around the LAA payment cycle, we help legal aid practices bill accurately and get paid faster.
+ctaBody: 30-minute scoping call. Whether you want to cut rejection rates, tighten your CCMS workflow, or forecast cash flow around the LAA payment cycle, we connect legal aid practices with specialists who help them bill accurately and get paid faster.
 ---
 <p><strong>Legal aid billing is a discipline of its own.</strong> The rate is set for you, the route is fixed by the scheme, and the money only lands if the claim is submitted the way the Legal Aid Agency (LAA) expects. Get the fee scheme, the codes and the evidence right and the claim pays. Get any of them wrong and it comes back, or worse, it is time-barred.</p>
 
@@ -171,7 +171,7 @@ ctaBody: 30-minute scoping call. Whether you want to cut rejection rates, tighte
 
 <h2>How We Help Legal Aid Practices</h2>
 
-<p>We work with publicly funded firms on the finance side of legal aid, which sits alongside the billing discipline covered here:</p>
+<p>We work with publicly funded firms and connect them with a regulated accountancy firm in our specialist partner network. The finance side of legal aid sits alongside the billing discipline covered here:</p>
 
 <ul>
 <li>Cash-flow forecasting built around the LAA payment cycle, POAs and monthly payments</li>

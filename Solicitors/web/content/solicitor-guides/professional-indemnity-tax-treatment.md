@@ -22,7 +22,7 @@ faqs:
   - question: "Do I need PII as a consultant solicitor working through a Ltd company?"
     answer: "Almost always yes. If you're providing legal services under your own SRA practising certificate, you need PII to the MTC: £2m minimum. Some engagement structures have the engaging firm's PII covering you; clarify this contractually before relying on it. Most consultants carry their own policy."
 ctaTitle: "Get your PII renewal handled properly"
-ctaBody: "30-minute scoping call. We work alongside your PII broker on the financial and tax side; coordinated renewal pricing, run-off planning, and claim handling."
+ctaBody: "30-minute scoping call. We connect you with a regulated accountancy firm in our partner network that works alongside your PII broker on the financial and tax side; coordinated renewal pricing, run-off planning, and claim handling."
 ---
 
 <p><strong>PII is the largest single regulatory cost for most UK law firms.</strong> The SRA Minimum Terms and Conditions set the floor on cover; the open market sets the price; the October renewal cycle dominates law firm cash planning. Premiums are tax-deductible, which is the only good news in an otherwise expensive obligation.</p>
@@ -209,9 +209,9 @@ ctaBody: "30-minute scoping call. We work alongside your PII broker on the finan
 <li><strong>Excess discipline</strong>: a higher excess saves premium; a higher excess also means more cost when a claim arises. Model both scenarios on your claims expectation, not your wishful claims expectation.</li>
 </ul>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens when you bring us in</h2>
 
-<p>We don't broker PII; that's the specialist broker's job. We work alongside the broker on:</p>
+<p>We don't broker PII; that's the specialist broker's job. We connect you with a regulated accountancy firm in our specialist partner network, which works alongside the broker on:</p>
 
 <ul>
 <li>Renewal information preparation (financial data, projections, mix analysis)</li>

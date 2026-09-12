@@ -183,9 +183,9 @@ schema: ''
 
 <p>Regional and high-street rates have risen more modestly because the underlying cost pressures are smaller and the client base is more rate-sensitive.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>For a law firm benchmarking its own rates against the market, we provide:</p>
+<p>We match you with a regulated accountancy firm in our partner network. For a law firm benchmarking its own rates against the market, that firm provides:</p>
 
 <ul>
 <li>Rate review comparing your current list rates to firms of your type and region</li>

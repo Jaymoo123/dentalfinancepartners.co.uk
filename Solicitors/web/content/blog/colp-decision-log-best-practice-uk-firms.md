@@ -67,7 +67,7 @@ faqs:
 
 <h2>What the SRA Expects to See in a Decision Log</h2>
 
-<p>The SRA does not publish a template for decision logs. But from our experience advising firms that have undergone SRA inspections, the following elements are consistently expected:</p>
+<p>The SRA does not publish a template for decision logs. But in firms that have undergone SRA inspections, the following elements are consistently expected:</p>
 
 <ul>
 <li><strong>Date of decision</strong> and date of entry (these may differ)</li>
@@ -168,7 +168,7 @@ faqs:
 
 <p>External advice does not absolve the COLP of responsibility, but it demonstrates that the decision was made on an informed basis. The SRA views this positively.</p>
 
-<p>If you are a COLP or COFA looking for support with your firm's compliance framework, we can help. Our team specialises in <a href="/services/cofa-compliance-support">COFA compliance support</a> and can review your decision log as part of a broader compliance health check. We also offer <a href="/services/sra-accounts-rules">SRA Accounts Rules advisory</a> for firms that need technical accounting input on client money issues.</p>
+<p>If you are a COLP or COFA looking for support with your firm's compliance framework, we can help. We match law firms with partner firms that specialise in <a href="/services/cofa-compliance-support">COFA compliance support</a> and can review your decision log as part of a broader compliance health check, and with partner firms offering <a href="/services/sra-accounts-rules">SRA Accounts Rules advisory</a> where you need technical accounting input on client money issues.</p>
 
 <p>For a broader overview of the COLP and COFA roles, see our <a href="/solicitor-guides/cofa-fundamentals">COFA fundamentals guide</a>. If you are considering a change in firm structure, our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP guide</a> covers the compliance implications of each structure.</p>
 

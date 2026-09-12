@@ -141,4 +141,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Review the last twelve months for any interest that was due but not accounted for, and correct it promptly if found.</li>
 </ol>
 
-<p>If you would like a second pair of eyes on your interest policy, your de minimis, or how interest is moving between client and office account, our team works only with law firms and reviews this as part of a broader client-money compliance check. Contact us for a <a href="/free-firm-health-check">free firm health check</a> focused on your SRA Accounts Rules compliance.</p>
+<p>If you would like a second pair of eyes on your interest policy, your de minimis, or how interest is moving between client and office account, we work only with law firms, and the partner firm we match you with reviews this as part of a broader client-money compliance check. Contact us for a <a href="/free-firm-health-check">free firm health check</a> focused on your SRA Accounts Rules compliance.</p>

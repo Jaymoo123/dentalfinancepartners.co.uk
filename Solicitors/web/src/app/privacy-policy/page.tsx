@@ -126,8 +126,8 @@ export default function PrivacyPolicyPage() {
           When you submit an enquiry, we share information about you and your enquiry with regulated firms
           from our <strong>specialist partner network</strong>, so that they can contact you and provide the
           advice you asked for. What we share is: your name, telephone number and email address; your
-          enquiry message; the type of work it describes, the grade we give it under our published grading
-          rubric and a one-line summary of what you are asking for; the role and any description of it you
+          enquiry message; the type of work it describes, a quality grade we assign it from the detail you
+          provided, and a one-line summary of what you are asking for; the role and any description of it you
           gave; your practice or company name if you gave one; the rough area you are in; whether we were
           able to confirm your contact details and when; and the website, page and form your enquiry came
           from, together with the notice you were shown. We do this on the basis of our{" "}

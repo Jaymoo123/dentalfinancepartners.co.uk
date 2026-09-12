@@ -10,7 +10,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 
 const TITLE = "Accountants for Solicitors and Lawyers UK | SRA, LLP + Partner Tax";
 const DESCRIPTION =
-  "Specialist accountants for solicitors and law firms across the UK. SRA Accounts Rules + accountant's reports, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. Fixed monthly fees.";
+  "Specialist accountancy matching for solicitors and law firms across the UK. SRA Accounts Rules + accountant's reports, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. Fixed monthly fees.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -30,7 +30,7 @@ const SERVICES = [
     eyebrow: "Regulatory",
     title: "SRA Accounts Rules + accountant's report",
     description:
-      "We handle the SRA-mandated annual accountant's report, the five-weekly client account reconciliations, and the COFA support that keeps the report clean. The report is the floor. The work is making sure the firm's client account handling never gives the SRA a reason to ask.",
+      "We connect you with a partner firm for the SRA-mandated annual accountant's report, the five-weekly client account reconciliations, and the COFA support that keeps the report clean. The report is the floor. The work is making sure the firm's client account handling never gives the SRA a reason to ask.",
     features: [
       "SRA Accountant's Report annually within 6 months of period end",
       "Five-weekly client account reconciliations",
@@ -43,7 +43,7 @@ const SERVICES = [
     eyebrow: "Structure",
     title: "Partnership + LLP accounting",
     description:
-      "LLPs and partnerships are tax-transparent: members pay personal tax on their share of profit. The work is the allocation methodology, the Salaried Member Rules (FA 2014) audit, and the partner-by-partner self-assessment. We do it cleanly.",
+      "LLPs and partnerships are tax-transparent: members pay personal tax on their share of profit. The work is the allocation methodology, the Salaried Member Rules (FA 2014) audit, and the partner-by-partner self-assessment. Your partner firm does it cleanly.",
     features: [
       "LLP accounts + SA800 partnership tax return",
       "Salaried Member Rules audit (Conditions A/B/C)",
@@ -56,7 +56,7 @@ const SERVICES = [
     eyebrow: "Tax",
     title: "Tax planning for partners and fee-earners",
     description:
-      "Proactive across the tax year. We model partner drawings, retained earnings, capital contributions and pension contribution timing at current rates. For salaried partners we audit the FA 2014 conditions so you know exactly which side of the line you're on.",
+      "Proactive across the tax year. Your partner firm models partner drawings, retained earnings, capital contributions and pension contribution timing at current rates. For salaried partners it audits the FA 2014 conditions so you know exactly which side of the line you're on.",
     features: [
       "Partner self-assessment and quarterly drawings reconciliation",
       "Spouse employment in the firm (defensibility audit)",
@@ -82,7 +82,7 @@ const SERVICES = [
     eyebrow: "Compliance",
     title: "COFA + COLP compliance support",
     description:
-      "If you've just stepped into the COFA or COLP role, or you've taken over from someone who left in a hurry, we help you bed in the controls. SRA Accounts Rules in plain English, a five-weekly reconciliation rhythm that actually holds, and breach reporting templates.",
+      "If you've just stepped into the COFA or COLP role, or you've taken over from someone who left in a hurry, we match you with a firm that helps you bed in the controls. SRA Accounts Rules in plain English, a five-weekly reconciliation rhythm that actually holds, and breach reporting templates.",
     features: [
       "COFA onboarding for new appointments",
       "Reconciliation rhythm + evidence file setup",
@@ -95,7 +95,7 @@ const SERVICES = [
     eyebrow: "Payroll",
     title: "Law firm payroll + auto-enrolment",
     description:
-      "Trainees, paralegals, fee-earners, salaried partners. Each goes through PAYE under different employment-status reasoning. We run the payroll, manage the workplace pension, and audit the salaried-partner status quarterly so it never drifts.",
+      "Trainees, paralegals, fee-earners, salaried partners. Each goes through PAYE under different employment-status reasoning. Your partner firm runs the payroll, manages the workplace pension, and audits the salaried-partner status quarterly so it never drifts.",
     features: [
       "PAYE + RTI submissions",
       "Workplace pension auto-enrolment compliance",
@@ -146,7 +146,7 @@ const PRICING_TIERS = [
 ];
 
 const INCLUDED = [
-  "Direct line to the senior accountant working your file (no junior triage)",
+  "Direct line to the senior partner-firm accountant working your file (no junior triage)",
   "Fixed monthly fees, no hourly billing on routine work",
   "Quarterly partner / director review meeting included",
   "SRA Accounts Rules in plain English, not regulatory speak",
@@ -163,32 +163,32 @@ const FAQS = [
   {
     question: "Can you complete our SRA Accountant's Report?",
     answer:
-      "Yes. We are independent of your firm and qualified to deliver the SRA-mandated annual Accountant's Report under the Accounts Rules. The report must be filed within six months of your firm's accounting period end.",
+      "Not ourselves. The reporting accountant must hold a current practising certificate from a recognised supervisory body such as the ICAEW, the ACCA or the ICAS, and must be independent of your firm. What we do is connect you with an appropriately qualified independent reporting accountant from our specialist partner network, and help you get your client account records, reconciliations and breach log into a state the report can be built from. The report has to be obtained within six months of your firm's accounting period end, and delivered to the SRA only if it is qualified.",
   },
   {
     question: "We are an LLP. Do you handle the SA800 partnership return?",
     answer:
-      "Yes, including the per-member allocation, the salaried-member FA 2014 audit, and each partner's personal self-assessment. We co-ordinate the LLP accounts filing at Companies House with the partnership tax return and personal returns so the picture is consistent across all three filings.",
+      "Yes, through a firm in our partner network: the per-member allocation, the salaried-member FA 2014 audit, and each partner's personal self-assessment. The LLP accounts filing at Companies House is co-ordinated with the partnership tax return and the personal returns so the picture is consistent across all three filings.",
   },
   {
     question: "What is the FA 2014 Salaried Member audit?",
     answer:
-      "The Finance Act 2014 introduced rules that deem a member of an LLP as an employee for tax purposes if all three conditions are met: Condition A — disguised salary is at least 80% of total reward; Condition B — limited rights to influence the LLP's affairs; Condition C — capital contribution less than 25% of disguised salary. If all three apply, PAYE runs on drawings. We audit quarterly because the position can drift as the firm grows.",
+      "The Finance Act 2014 introduced rules that deem a member of an LLP as an employee for tax purposes if all three conditions are met: Condition A — disguised salary is at least 80% of total reward; Condition B — limited rights to influence the LLP's affairs; Condition C — capital contribution less than 25% of disguised salary. If all three apply, PAYE runs on drawings. The audit is worth running quarterly because the position can drift as the firm grows.",
   },
   {
     question: "We are thinking about converting from partnership to LLP. Help?",
     answer:
-      "Yes. The conversion preserves the tax-transparent treatment but adds limited liability for members and a Companies House filing obligation. Most firms benefit; a minority don't (typically very small practices where the admin overhead outweighs the liability protection). We model the conversion economics, draft the partnership agreement updates required, and co-ordinate the Companies House process.",
+      "Yes. The conversion preserves the tax-transparent treatment but adds limited liability for members and a Companies House filing obligation. Most firms benefit; a minority don't (typically very small practices where the admin overhead outweighs the liability protection). The partner firm we match you with models the conversion economics, drafts the partnership agreement updates required, and co-ordinates the Companies House process.",
   },
   {
-    question: "Are you accountants for solicitors across the whole UK?",
+    question: "Do you cover solicitors across the whole UK?",
     answer:
-      "Yes. We are accountants for solicitors and law firms nationally, working remotely with practices from Cornwall to Scotland. Legal-sector accounting is location-independent (SRA Accounts Rules, LLP and partnership tax, and the annual Accountant's Report are the same wherever the firm sits), so we serve clients across England, Wales, Scotland and Northern Ireland rather than by postcode. Meetings run by video call, with the senior accountant on your file directly reachable.",
+      "Yes. Our partner network covers solicitors and law firms nationally, working remotely with practices from Cornwall to Scotland. Legal-sector accounting is location-independent (SRA Accounts Rules, LLP and partnership tax, and the annual Accountant's Report are the same wherever the firm sits), so firms we work with sit across England, Wales, Scotland and Northern Ireland rather than by postcode. Meetings run by video call, with the senior accountant on your file directly reachable.",
   },
   {
-    question: "Do you act as accountants for lawyers and barristers?",
+    question: "Do you cover lawyers and barristers?",
     answer:
-      "Yes. Solicitors and law firm partners are the core of the book, and we also act for barristers, legal-sector consultants and conveyancers. The regulatory frame differs (barristers are BSB-regulated and do not hold client money the way solicitors do under the SRA Accounts Rules), so we scope the engagement to the specific practice type rather than applying a single legal-sector template.",
+      "Yes. Solicitors and law firm partners are the core of the book, and we also cover barristers, legal-sector consultants and conveyancers. The regulatory frame differs (barristers are BSB-regulated and do not hold client money the way solicitors do under the SRA Accounts Rules), so the engagement is scoped to the specific practice type rather than applying a single legal-sector template.",
   },
   {
     question: "How are your fees structured?",
@@ -248,7 +248,7 @@ export default function ServicesPage() {
               Accountants for UK solicitors and law firms
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-700 sm:mt-6 sm:text-lg">
-              Specialist accountants for solicitors and lawyers across the whole of the UK. SRA Accounts Rules + accountant&apos;s report, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. We work with law firms only, on fixed monthly fees, with the senior accountant on your account answering your emails.
+              Specialist accountancy matching for solicitors and lawyers across the whole of the UK. SRA Accounts Rules + accountant&apos;s report, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. We work with law firms only, on fixed monthly fees, with the senior accountant on your account answering your emails.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
@@ -419,7 +419,7 @@ export default function ServicesPage() {
         <LeadCTAPanel
           eyebrow=""
           title="Talk to a legal-sector specialist"
-          description="30-minute scoping call. We'll tell you which engagement tier fits, what the fee would be, and whether the change is worth making. No drip sequence, no follow-up chase."
+          description="30-minute scoping call. We'll tell you which engagement tier fits, what the fee would be, and which partner firm is the right match. No drip sequence, no follow-up chase."
           proofPoints={[]}
           formTitle=""
           form={<LeadForm redirectOnSuccess={false} />}

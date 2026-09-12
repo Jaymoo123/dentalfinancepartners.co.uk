@@ -200,9 +200,9 @@ schema: ''
 <li>Modelled comparison genuinely favours corporate structure on your specific numbers</li>
 </ul>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>Our structure-review engagement covers:</p>
+<p>We match you with a regulated accountancy firm in our partner network. A structure-review engagement with that firm covers:</p>
 
 <ul>
 <li>Three-structure comparison on actual numbers: partnership / LLP / Ltd</li>

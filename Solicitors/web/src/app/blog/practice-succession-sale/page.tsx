@@ -128,7 +128,7 @@ export default function PracticeSuccessionPillarPage() {
       ]}
       cta={{
         heading: "Planning Your Practice Exit?",
-        body: "Our specialist solicitor accountants help law firm owners plan tax-efficient exits and maximise practice value. Get expert guidance on succession planning, valuation, and sale preparation.",
+        body: "The specialist solicitor accountants we match you with help law firm owners plan tax-efficient exits and maximise practice value. Get expert guidance on succession planning, valuation, and sale preparation.",
         submitLabel: SUBMIT_LABEL,
       }}
       posts={posts}

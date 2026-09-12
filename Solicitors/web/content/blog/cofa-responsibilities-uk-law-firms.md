@@ -124,7 +124,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Escalate early.</strong> If something looks wrong and you are not sure, raise it with management and take advice. Sitting on a possible breach is worse than reporting one that turns out to be minor.</li>
 </ul>
 
-<p>You can use our <a href="/calculators/sra-client-account-reserve">SRA client account reserve calculator</a> to sense-check your client money position against the rules, and a specialist solicitor-sector accountant can review your systems before the annual report. Our <a href="/services/cofa-compliance-support">COFA compliance support</a> service offers reconciliation review, breach-register health checks, and accountant's-report preparation, and our <a href="/services/solicitor-accountants">solicitor accountants</a> team works exclusively with law firms.</p>
+<p>You can use our <a href="/calculators/sra-client-account-reserve">SRA client account reserve calculator</a> to sense-check your client money position against the rules, and a specialist solicitor-sector accountant can review your systems before the annual report. A partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a> offers reconciliation review, breach-register health checks, and accountant's-report preparation, and the <a href="/services/solicitor-accountants">solicitor accountants</a> in our partner network work exclusively with law firms.</p>
 
 <h2>Common Pitfalls the COFA Should Watch For</h2>
 

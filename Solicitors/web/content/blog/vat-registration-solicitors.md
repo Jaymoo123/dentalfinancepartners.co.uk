@@ -18,6 +18,7 @@ keyTakeaways:
   - "Voluntary registration below £90,000 lets you recover input VAT but forces a 20% charge on clients who may not reclaim it."
   - "Registered firms file quarterly VAT returns due one month and seven days after quarter end, with digital records under Making Tax Digital."
   - "The cash accounting scheme is available below £1.35 million turnover, letting you account for VAT when payments are received."
+  - "Legal Aid Agency funded work is a standard-rated taxable supply, not exempt, so legal aid income counts towards the £90,000 threshold and the firm accounts for output VAT on it."
 schema: ""
 faqs:
   - question: "Can solicitors register for VAT voluntarily below the threshold?"
@@ -26,6 +27,8 @@ faqs:
     answer: "Only some disbursements count towards VAT registration. Genuine third-party payments where you act purely as an agent (like Land Registry fees paid directly to the registry) don't count. However, services you provide like photocopying, travel expenses, or administrative charges do count towards the £90,000 threshold."
   - question: "What are the main compliance obligations after VAT registration?"
     answer: "VAT-registered solicitors must submit quarterly VAT returns (due one month and seven days after quarter end), maintain digital records under Making Tax Digital rules, and use compatible software for submissions. You must also charge VAT on services, issue VAT invoices, and keep detailed records of all transactions."
+  - question: "Is legal aid work exempt from VAT?"
+    answer: "No. Legal Aid Agency funded work is a standard-rated taxable supply. A VAT-registered firm bills the Legal Aid Agency net of VAT, the funder adds VAT at source under the firm's VAT mandate, and the firm accounts for that output VAT to HMRC. Legal aid income therefore counts towards the £90,000 registration threshold and does not restrict input tax recovery. The tax point arises on case completion, so a standard monthly payment relating to a completed case creates no new tax point, while the part offset against ongoing or future work is a pre-payment that does."
 ---
 
 <p>VAT registration for solicitors becomes mandatory when your practice turnover exceeds specific thresholds set by HMRC. Understanding when and how to register is essential for compliance and avoiding penalties that can significantly impact your practice finances.</p>
@@ -66,9 +69,13 @@ faqs:
 
 <h2>Special Considerations for Legal Services</h2>
 
-<p>Some legal services have specific VAT treatment that affects VAT registration for solicitors. Certain services to overseas clients may be zero-rated or outside the scope of UK VAT, potentially reducing your taxable turnover.</p>
+<p>Some legal services have specific VAT treatment that affects VAT registration for solicitors. Certain services to overseas clients fall outside the scope of UK VAT under the place of supply rules in VATA 1994 s.7A and Schedule 4A, which can reduce the turnover counted towards the registration threshold without restricting input tax recovery.</p>
 
-<p>Legal aid work is typically exempt from VAT, meaning it doesn't count towards registration thresholds but also prevents VAT recovery on related expenses.</p>
+<p>Legal aid work is a common source of error. Legal Aid Agency funded work is a <strong>standard-rated taxable supply</strong>, not an exempt one. A VAT-registered firm submits its legal aid bill net of VAT, the funder adds VAT at source in line with the firm's VAT mandate, and the firm still accounts for that output VAT to HMRC. Because it is a taxable supply, legal aid income <strong>counts towards the £90,000 registration threshold</strong> and it does not restrict input tax recovery on the costs of doing the work.</p>
+
+<p>The tax point on legal aid work falls on case completion (see HMRC's guidance at VATTOS8560 and VATTOS8570). A standard monthly payment or payment on account that relates to a case already completed creates no fresh tax point, because the tax point has already arisen. The part of such a payment that is offset against ongoing or future work is a pre-payment and does create a tax point when it is received.</p>
+
+<p>Genuinely exempt income is a narrower category for a law firm, covering for example certain insurance-related supplies and financial intermediary services. Exempt income of that kind does not count towards the registration threshold and does restrict input tax recovery, which is what brings partial exemption into play. Treating legal aid as exempt understates taxable turnover and produces an input tax restriction that should never have been made.</p>
 
 <p>Property-related legal services may involve complex VAT rules, particularly for commercial property transactions where different rates might apply to various elements of your service.</p>
 

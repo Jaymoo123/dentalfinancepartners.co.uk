@@ -145,6 +145,6 @@ faqs:
 
 <p>Every equity partner package should be tailored to the specific circumstances of the firm and its partners. There is no one-size-fits-all solution. The key is to understand the tax implications of each element and to document the arrangements clearly in the LLP agreement.</p>
 
-<p>If you are reviewing your firm's equity partner reward structure, we recommend speaking to a legal-sector-specialist accountant who understands the unique tax and regulatory environment for UK solicitors. Our team at Accounts for Lawyers works exclusively with law firms and can help you design a tax-efficient partner package that supports your firm's growth.</p>
+<p>If you are reviewing your firm's equity partner reward structure, we recommend speaking to a legal-sector-specialist accountant who understands the unique tax and regulatory environment for UK solicitors. Accounts for Lawyers works exclusively with law firms, and can match you with a regulated firm in our partner network that will help you design a tax-efficient partner package supporting your firm's growth.</p>
 
 <p><a href="/services/llp-accounts">Our LLP accounting services</a> are designed for law firms of all sizes. We also offer <a href="/services/cofa-compliance-support">COFA compliance support</a> to ensure your partner transactions meet SRA requirements. For partners considering their options, our <a href="/calculators/llp-profit-share-allocation">LLP profit share allocation calculator</a> can help model different scenarios.</p>

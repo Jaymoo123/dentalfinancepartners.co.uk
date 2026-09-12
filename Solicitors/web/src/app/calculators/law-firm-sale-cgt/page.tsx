@@ -146,7 +146,7 @@ export default function LawFirmSaleCgtPage() {
       <div id="get-expert-help" className="scroll-mt-24">
         <LeadCTAPanel
           title="Planning an exit or succession?"
-          description="This calculator gives directional figures based on published 2026/27 rates. The real answer depends on BADR eligibility for each seller, the goodwill and WIP allocation in the sale agreement, your partnership or shareholders' agreement, and timing. We model the full picture, including income tax on WIP, as part of our exit planning work."
+          description="This calculator gives directional figures based on published 2026/27 rates. The real answer depends on BADR eligibility for each seller, the goodwill and WIP allocation in the sale agreement, your partnership or shareholders' agreement, and timing. A firm from our partner network models the full picture, including income tax on WIP, as part of the exit planning work."
           proofPoints={LEAD_PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} />}
           backdrop={<SolicitorsBackdrop tone="navy" />}

@@ -48,12 +48,12 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "Why a specialist solicitor accountant, not a generalist",
         body: [
           "Generalist accountants handle a handful of solicitor clients between their main book. The compliance gets done; the sector-specific decisions get missed because the accountant has no pattern to compare against.",
-          "A specialist solicitor accountant sees the same questions weekly. The five-weekly client account reconciliation rhythm (Rule 8.3, not the monthly that most generalists default to). The de minimis exemption for the SRA Accountant's Report (£10,000 client money at any time AND £250 average — not a single turnover threshold). The FA 2014 Salaried Member Rules with Conditions A + B + C. The 6.5% goodwill amortisation rate for post-April-2019 acquisitions, with no relief for the 8 July 2015 to 31 March 2019 window.",
+          "A specialist solicitor accountant sees the same questions weekly. The five-weekly client account reconciliation rhythm (Rule 8.3, not the monthly that most generalists default to). The de minimis exemption for the SRA Accountant's Report (an average client-account balance not exceeding £10,000 AND a maximum not exceeding £250,000 across the period, not a single turnover threshold). The FA 2014 Salaried Member Rules with Conditions A + B + C. The 6.5% goodwill amortisation rate for post-April-2019 acquisitions, with no relief for the 8 July 2015 to 31 March 2019 window.",
           "These are not advanced techniques. They are baseline competence. A generalist who can't quote Rule 8.3 from memory is learning on your account.",
         ],
       },
       {
-        heading: "What we actually do across a year",
+        heading: "What the work actually covers across a year",
         body: [
           "Compliance is the floor. The work is the decisions that compliance reveals.",
         ],
@@ -69,11 +69,11 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         ],
       },
       {
-        heading: "How we are different from corporate legal-sector accountants",
+        heading: "How our partner firms differ from corporate legal-sector accountants",
         body: [
           "Some legal-sector accountancy firms have grown into corporate operations that allocate junior staff to client work and only escalate up when something goes wrong. The named partner is rarely on the call.",
-          "Our model is the opposite. The senior accountant working on your account is the senior accountant. The same person who reviews your year-end is the person you email when a buyer wants due diligence by Friday or a new COFA needs onboarding.",
-          "We deliberately stay small enough to keep that real.",
+          "The firms we match you with work the opposite way. The senior accountant working on your account is the senior accountant. The same person who reviews your year-end is the person you email when a buyer wants due diligence by Friday or a new COFA needs onboarding.",
+          "We match firm to firm deliberately, so that stays real.",
         ],
       },
     ],
@@ -95,9 +95,9 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     },
     faqs: [
       {
-        question: "Are you qualified to deliver the SRA Accountant's Report?",
+        question: "Who delivers the SRA Accountant's Report?",
         answer:
-          "Yes. We are independent of your firm and qualified to deliver the SRA-mandated annual report under the Accounts Rules. The report must be filed within 6 months of your firm's accounting period end.",
+          "Not us. The reporting accountant must hold a current practising certificate from a recognised supervisory body such as the ICAEW, the ACCA or the ICAS, and must be independent of your firm. We connect you with an appropriately qualified independent reporting accountant from our specialist partner network, and help you get your client account records, reconciliations and breach log into a state the report can be built from. The report must be obtained within 6 months of your firm's accounting period end.",
       },
       {
         question: "Do you only work with solicitors?",
@@ -107,7 +107,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Can you handle our existing software (Leap, Clio, ProClaim)?",
         answer:
-          "Yes. Most of our clients run Xero or QuickBooks as the financial system, integrated with a practice management system (Leap, Clio, ProClaim, ALB, SOS Connect). We are software-agnostic; whatever you use, we will work with it. We do encourage moving from desktop-only to cloud-based systems where you are still on Sage 50 or older Iris.",
+          "Yes. Most firms we work with run Xero or QuickBooks as the financial system, integrated with a practice management system (Leap, Clio, ProClaim, ALB, SOS Connect). Our partner firms are software-agnostic; whatever you use, they will work with it. Moving from desktop-only to cloud-based systems is worth doing where you are still on Sage 50 or older Iris.",
       },
       {
         question: "How much do you charge?",
@@ -136,7 +136,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "SRA Accounts Rules compliance for UK law firms",
       intro:
-        "The annual SRA Accountant's Report is the floor. The work is making sure your firm's client account handling never gives the SRA a reason to look further. We deliver the report, support the COFA, and audit the controls.",
+        "The annual SRA Accountant's Report is the floor. The work is making sure your firm's client account handling never gives the SRA a reason to look further. We connect you with the firm that delivers the report, supports the COFA, and audits the controls.",
     },
     sections: [
       {
@@ -149,13 +149,13 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
           "Rule 7: client money interest must be paid to the client when 'fair' — a test based on amount and length of time held",
           "Rule 8.3: reconciliations of every client account and the office account must be performed at least every five weeks (NOT monthly — five weeks is the maximum interval)",
           "Rule 12: an annual SRA Accountant's Report is required within 6 months of the firm's accounting period end, unless a de minimis exemption applies",
-          "Rule 12.2: de minimis exemption — firm held no more than £10,000 client money at any time during the period AND average client money balance not exceeding £250",
+          "Rule 12.2 de minimis exemption: the client money held did not exceed an average of £10,000 AND a maximum of £250,000 across the accounting period",
         ],
       },
       {
-        heading: "How we work an SRA Accountant's Report",
+        heading: "How an SRA Accountant's Report is worked",
         body: [
-          "We are independent of your firm and qualified to deliver the report. The typical engagement runs as follows.",
+          "The reporting accountant must be independent of your firm and hold a current practising certificate. The typical engagement runs as follows.",
         ],
         bullets: [
           "Initial scoping call to confirm the period end, the volume of client matters, and any known issues",
@@ -192,7 +192,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "We only hold tiny amounts of client money. Do we still need a report?",
         answer:
-          "Possibly not. The Rule 12.2 de minimis exemption applies if the firm held no more than £10,000 of client money at any time during the period AND the average client money balance did not exceed £250. Both conditions must be met. Many small firms qualify but few realise. We can review your client account activity and confirm whether you qualify.",
+          "Possibly not. The Rule 12.2 de minimis exemption applies where the client money held did not exceed an average of £10,000 across the accounting period AND a maximum of £250,000 at any point in it. Both limbs must be met, and the test is widely misquoted, so measure both from your reconciliations rather than estimating.",
       },
       {
         question: "How often must we reconcile our client account?",
@@ -207,7 +207,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Can you support a newly-appointed COFA?",
         answer:
-          "Yes. New-COFA onboarding is a separate engagement: we walk you through the Accounts Rules in plain English (not regulatory speak), set up your reconciliation rhythm and evidence file, build your breach decision log template, and provide a quarterly check-in for the first year so the role beds in properly.",
+          "Yes. New-COFA onboarding is a separate engagement with a partner firm: it walks you through the Accounts Rules in plain English (not regulatory speak), sets up your reconciliation rhythm and evidence file, builds your breach decision log template, and includes a quarterly check-in for the first year so the role beds in properly.",
       },
     ],
     relatedServices: [
@@ -218,7 +218,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your SRA Accountant's Report in safe hands",
     ctaBody:
-      "30-minute scoping call. We confirm whether the de minimis exemption applies, the period end, and a fixed fee for the report and any control improvements.",
+      "30-minute scoping call. The call confirms whether the de minimis exemption applies, the period end, and a fixed fee for the report and any control improvements.",
   },
 
   "llp-accounts": {
@@ -231,7 +231,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "LLP and partnership accounting for UK law firms",
       intro:
-        "Members of an LLP are self-employed for tax even though the LLP has separate legal personality. Salaried members can be deemed employees by the FA 2014 rules. The allocation, audit, and partner-by-partner self-assessment is what we do.",
+        "Members of an LLP are self-employed for tax even though the LLP has separate legal personality. Salaried members can be deemed employees by the FA 2014 rules. The allocation, audit, and partner-by-partner self-assessment is what the partner firm we match you with does.",
     },
     sections: [
       {
@@ -256,13 +256,13 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "Why the FA 2014 audit matters quarterly",
         body: [
           "The position is dynamic. A salaried partner who passed the three-condition test last year might fail this year if their bonus rises, their capital contribution proportion changes, or their role expands.",
-          "Quarterly audit catches drift early. We model each salaried/fixed-share partner against the three conditions and either confirm partner-tax treatment continues, or flag the trigger requiring PAYE. The wrong answer for the wrong year can trigger PAYE backdating and HMRC interest.",
+          "Quarterly audit catches drift early. Your partner firm models each salaried/fixed-share partner against the three conditions and either confirm partner-tax treatment continues, or flag the trigger requiring PAYE. The wrong answer for the wrong year can trigger PAYE backdating and HMRC interest.",
         ],
       },
       {
         heading: "Partner capital + interest relief",
         body: [
-          "Partners typically buy in to an LLP with a capital contribution. Borrowing to fund the buy-in attracts qualifying loan interest relief under ITA 2007 s.398: the interest paid on the loan is deductible from the partner's personal taxable income. The relief is per-partner; we set up the documentation so it's claimable each year on the partner's self-assessment.",
+          "Partners typically buy in to an LLP with a capital contribution. Borrowing to fund the buy-in attracts qualifying loan interest relief under ITA 2007 s.398: the interest paid on the loan is deductible from the partner's personal taxable income. The relief is per-partner, and your partner firm sets up the documentation so it is claimable each year on the partner's self-assessment.",
         ],
       },
     ],
@@ -287,12 +287,12 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What happens to partner accounts when a partner leaves?",
         answer:
-          "The LLP agreement governs. Typically the leaving partner is entitled to their capital contribution back (sometimes phased over 1-3 years), their final allocation of profit up to leaving date, and any vested deferred compensation. The accounting treatment requires careful tracking; we manage the partner ledger across the transition.",
+          "The LLP agreement governs. Typically the leaving partner is entitled to their capital contribution back (sometimes phased over 1-3 years), their final allocation of profit up to leaving date, and any vested deferred compensation. The accounting treatment requires careful tracking, and your partner firm manages the partner ledger across the transition.",
       },
       {
         question: "Should we convert from general partnership to LLP?",
         answer:
-          "For most multi-partner firms, yes. LLP gives limited liability protection while preserving the partnership tax treatment. The conversion is administratively simple. The exception is very small firms (2 partners, low turnover) where the Companies House filing obligation may outweigh the liability protection. We model the conversion economics on a per-firm basis.",
+          "For most multi-partner firms, yes. LLP gives limited liability protection while preserving the partnership tax treatment. The conversion is administratively simple. The exception is very small firms (2 partners, low turnover) where the Companies House filing obligation may outweigh the liability protection. Your partner firm models the conversion economics on a per-firm basis.",
       },
     ],
     relatedServices: [
@@ -303,7 +303,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your LLP accounting onto specialist hands",
     ctaBody:
-      "30-minute scoping call. We confirm scope, audit your FA 2014 position, and quote a fixed monthly fee.",
+      "30-minute scoping call. We confirm scope, match you to the right firm, and come back with a fixed monthly fee.",
   },
 
   "practice-valuation": {
@@ -350,7 +350,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "Section 162 incorporation relief",
         body: [
           "Section 162 TCGA 1992 defers CGT on goodwill when an unincorporated trade is transferred to a company in exchange for shares. For law firms approaching sale, the typical play is: incorporate via Section 162 now, hold the shares for 2+ years to qualify for BADR on the eventual share sale, then sell the shares. The deferred goodwill gain rolls into the share base cost.",
-          "This route works when the share sale BADR position beats the asset sale alternative. We model both on actual firm numbers before recommending.",
+          "This route works when the share sale BADR position beats the asset sale alternative. Your partner firm models both on actual firm numbers before recommending.",
         ],
       },
       {
@@ -398,7 +398,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What's the difference between an asset sale and a share sale?",
         answer:
-          "For a law firm structured as an LLP, the sale is typically an asset sale (the buyer acquires the goodwill, WIP, and tangible assets). For a law firm incorporated as a limited company, the sale can be a share sale (the buyer acquires the company). Asset sales suit buyers who don't want to inherit historic liabilities; share sales suit sellers who want a cleaner BADR position. We model both.",
+          "For a law firm structured as an LLP, the sale is typically an asset sale (the buyer acquires the goodwill, WIP, and tangible assets). For a law firm incorporated as a limited company, the sale can be a share sale (the buyer acquires the company). Asset sales suit buyers who don't want to inherit historic liabilities; share sales suit sellers who want a cleaner BADR position. Your partner firm models both.",
       },
       {
         question: "When should pre-sale planning start?",
@@ -427,7 +427,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "COFA and COLP compliance support",
       intro:
-        "If you've just stepped into the COFA or COLP role, or you've inherited one from someone who left in a hurry, the SRA Accounts Rules and the COLP responsibilities can feel suddenly substantial. We help you bed in the controls so the role doesn't dominate the day job.",
+        "If you've just stepped into the COFA or COLP role, or you've inherited one from someone who left in a hurry, the SRA Accounts Rules and the COLP responsibilities can feel suddenly substantial. We match you with a firm that helps you bed in the controls so the role doesn't dominate the day job.",
     },
     sections: [
       {
@@ -459,7 +459,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         ],
       },
       {
-        heading: "How we support new-COFA onboarding",
+        heading: "How new-COFA onboarding is supported",
         body: [
           "Most new COFAs inherit a function that has been quietly running for years. The challenge is understanding what 'good' looks like in your specific firm and where the risks actually sit.",
         ],
@@ -474,7 +474,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "When to use this engagement vs full accountancy",
         body: [
-          "Some firms want COFA compliance support but already have a perfectly competent accountant for the rest of the work. We deliver this engagement on a standalone basis — quarterly review meetings, breach log review, year-end SRA report co-ordination — without disturbing the existing accountancy relationship.",
+          "Some firms want COFA compliance support but already have a perfectly competent accountant for the rest of the work. This engagement runs on a standalone basis — quarterly review meetings, breach log review, year-end SRA report co-ordination — without disturbing the existing accountancy relationship.",
         ],
       },
     ],
@@ -494,7 +494,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What's the difference between a breach and a 'material breach'?",
         answer:
-          "All breaches of the Accounts Rules should be recorded in the firm's breach log. Material breaches must be notified to the SRA. The materiality test depends on context: amount, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. We help calibrate the call — over-reporting wastes SRA attention and creates a long compliance file; under-reporting risks regulatory action.",
+          "All breaches of the Accounts Rules should be recorded in the firm's breach log. Material breaches must be notified to the SRA. The materiality test depends on context: amount, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. A specialist accountant can help calibrate the call — over-reporting wastes SRA attention and creates a long compliance file; under-reporting risks regulatory action.",
       },
       {
         question: "How often should the COFA report to the management team?",
@@ -504,7 +504,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "We've just had an SRA Forensic Investigation visit. Help?",
         answer:
-          "Yes — a Forensic Investigation requires careful handling and we can co-ordinate the accountancy-side response. The investigation typically requests the working file, breach log, reconciliation evidence, and matter-level samples. We help you compile the response, identify any historic issues that need disclosure, and remediate any control gaps. The faster and cleaner the response, the better the regulatory outcome.",
+          "Yes. A Forensic Investigation requires careful handling, and a firm from our partner network can co-ordinate the accountancy-side response. The investigation typically requests the working file, breach log, reconciliation evidence, and matter-level samples. They help you compile the response, identify any historic issues that need disclosure, and remediate any control gaps. The faster and cleaner the response, the better the regulatory outcome.",
       },
     ],
     relatedServices: [

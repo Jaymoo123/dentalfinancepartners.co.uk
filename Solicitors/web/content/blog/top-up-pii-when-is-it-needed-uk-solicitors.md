@@ -105,9 +105,9 @@ faqs:
 
 <h2>How We Help Solicitors with PII and Compliance</h2>
 
-<p>At Accounts for Lawyers, we work with UK solicitors and law firms on the financial and regulatory aspects of PII. We help firms budget for premiums, assess whether top-up cover is needed, and ensure compliance with the SRA Accounts Rules. Our team includes specialists in <a href="/services/solicitor-accountants">solicitor accounting</a> and <a href="/services/cofa-compliance-support">COFA compliance support</a>.</p>
+<p>At Accounts for Lawyers, we work with UK solicitors and law firms on the financial and regulatory aspects of PII by connecting them with regulated accountancy firms in our specialist partner network. The partner firm we match you with can help the practice budget for premiums, assess whether top-up cover is needed, and stay compliant with the SRA Accounts Rules. See our <a href="/services/solicitor-accountants">solicitor accounting</a> and <a href="/services/cofa-compliance-support">COFA compliance support</a> pages.</p>
 
-<p>If you are unsure whether your firm needs top-up PII, or if you want to model the cost against your budget, contact us. We can help you make an informed decision based on your firm's specific risk profile.</p>
+<p>If you are unsure whether your firm needs top-up PII, or if you want to model the cost against your budget, contact us and we will match you with a partner firm that can help you make an informed decision based on your firm's specific risk profile.</p>
 
 <p>For a broader overview of PII and tax, see our <a href="/solicitor-guides/professional-indemnity-tax-treatment">guide to PII tax treatment for solicitors</a>. If you are a partner considering your firm's structure, read our comparison of <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership versus LLP for solicitors</a>.</p>
 

@@ -2,36 +2,27 @@
  * VAT on Disbursements Classifier — pure compute (no React/window/fetch).
  *
  * LEGAL BASIS:
- * - HMRC VAT Notice 700 §25.1 (agent vs principal / disbursement vs recharge).
+ * - HMRC VAT Notice 700 §25.1.1: EIGHT conditions, ALL of which must be met
+ *   before a payment can be treated as a disbursement outside the scope of VAT.
+ *   (HP §6. Do NOT describe this as a four-factor test.)
+ * - HMRC VAT manual VTAXPER37000 to VTAXPER40000 (agency and disbursements).
  * - Brabners LLP v HMRC [2017] UKFTT 0666 (TC): electronic search fee treated
- *   as recharge because Brabners contracted as principal and consumed the data
- *   directly; the supply was to the firm, not the client. Binding for identical
- *   fact patterns; persuasive where facts are analogous.
- * - Law Society Practice Note on VAT and disbursements (updated post-Brabners).
- * - HMRC VAT Manual VATSC70020 (disbursements: agent test).
+ *   as part of the firm's own standard-rated supply because the firm used and
+ *   interpreted the search result in its advice. Revenue and Customs Brief 6
+ *   (2020) withdrew the postal-search concession from 1 December 2020, so the
+ *   postal/electronic distinction no longer decides it (HP §6.A).
+ * - Counsel's fees: the DEFAULT is a supply TO THE FIRM, not a disbursement
+ *   (HP §6.B). The disbursement route is the narrow agency exception.
  *
- * AGENT TEST (all 4 factors must be satisfied for true disbursement):
- *   1. The firm acted as agent — the client authorised the firm to incur the
- *      cost on their behalf and the supplier contracted with the client (or
- *      would treat the client as the contracting party).
- *   2. The client actually consumed / received the supply (not the firm).
- *   3. The firm passed the cost on at exactly the amount charged by the supplier
- *      (no mark-up or margin).
- *   4. The cost is shown separately on the firm's VAT invoice / client bill and
- *      identifiable as a third-party cost.
- *
- * PRESET TREATMENTS (orthodox HMRC position unless flagged as contested):
- *   - court-fees: true disbursement (firm acts as agent, exact pass-through)
- *   - land-registry: true disbursement
- *   - local-auth-search: CONTESTED — paper/postal = disbursement; electronic =
- *       recharge post-Brabners if firm subscribed as principal to a data provider
- *   - counsel-fees: true disbursement (client retained counsel, firm arranged)
- *   - medical-records: true disbursement if supplier invoices the firm as agent
- *       for the client; recharge if firm holds own contract with records provider
- *   - expert-reports: usually disbursement; recharge if firm is party to retainer
- *   - stamp-duty: disbursement (HMRC/SDLT is paid direct; firm is collecting agent)
- *   - search-indemnity: typically disbursement (passed directly at cost)
- *   - custom: full 4-factor questionnaire used
+ * THE EIGHT CONDITIONS (VAT Notice 700 §25.1.1):
+ *   1. The firm acted as the client's agent when paying the third party.
+ *   2. The client received and used the goods or services.
+ *   3. The client was responsible for paying the third party.
+ *   4. The client authorised the firm to make the payment.
+ *   5. The client knew the goods or services would be supplied by a third party.
+ *   6. The outlay is shown separately on the firm's invoice.
+ *   7. The firm recovers only the exact amount paid to the third party.
+ *   8. The goods or services are clearly additional to the firm's own supply.
  */
 
 export type CostType =
@@ -47,14 +38,22 @@ export type CostType =
 
 export type VatDisbursementsInput = {
   costType: CostType;
-  /** Did the firm contract with the supplier as agent for the client? */
+  /** 1. Did the firm act as the client's agent when paying the third party? */
   firmActedAsAgent: boolean;
-  /** Did the client (not the firm) consume the supply? */
-  clientConsumed: boolean;
-  /** Is the cost passed to the client at the exact amount charged by the supplier? */
-  exactPassThrough: boolean;
-  /** Is the cost itemised separately on the client bill? */
+  /** 2. Did the client (not the firm) receive and use the supply? */
+  clientReceivedAndUsed: boolean;
+  /** 3. Was the client responsible for paying the third party? */
+  clientResponsibleForPayment: boolean;
+  /** 4. Did the client authorise the firm to make the payment? */
+  clientAuthorisedPayment: boolean;
+  /** 5. Did the client know a third party would make the supply? */
+  clientKnewThirdPartySupply: boolean;
+  /** 6. Is the outlay shown separately on the firm's invoice? */
   itemisedSeparately: boolean;
+  /** 7. Does the firm recover only the exact amount paid? */
+  exactPassThrough: boolean;
+  /** 8. Is the supply clearly additional to the firm's own supply? */
+  clearlyAdditional: boolean;
 };
 
 export type VatDisbursementsResult = {
@@ -64,49 +63,60 @@ export type VatDisbursementsResult = {
   vatTreatment: string;
   billingGuidance: string;
   caveat: string | null;
-  factorsMet: number;
-  factorsNeeded: number;
+  conditionsMet: number;
+  conditionsNeeded: number;
 };
 
-// Preset overrides — apply before evaluating questionnaire answers
-// positive = true means disbursement (outside VAT); false = recharge; null = use questionnaire
+export const CONDITIONS_NEEDED = 8;
+
+// Preset treatments. A preset with a note carries the hedge the orthodox
+// position requires; never return an unqualified "true disbursement" for a
+// cost type whose treatment turns on the facts.
 const PRESETS: Record<CostType, { verdict: "disbursement" | "recharge" | "contested" | null; note: string | null }> = {
   "court-fees": {
     verdict: "disbursement",
-    note: null,
+    note:
+      "Court and tribunal fees are the clean case: the fee is payable by the client, the firm is a pure conduit, and the amount is passed through exactly. Keep the authority to pay and the itemised bill line as evidence that all eight conditions in VAT Notice 700 §25.1.1 were met.",
   },
   "land-registry": {
-    verdict: "disbursement",
-    note: null,
-  },
-  "local-auth-search": {
-    // ponytail: split verdict here — paper = disbursement, electronic = contested/recharge post-Brabners
-    // We cannot distinguish paper vs electronic from a single select, so return contested with a clear note.
+    // HP §6.A: a flat "true disbursement" for Land Registry fees is the
+    // pre-Brabners error, because search fees and registration fees are not
+    // the same animal. Registration fees pass through; search fees turn on use.
     verdict: "contested",
     note:
-      "Paper/postal local authority searches are orthodox disbursements. Electronic searches obtained via a data aggregator (e.g. TM Group, Groundsure) are treated as recharged services under Brabners v HMRC [2017] UKFTT 0666: the firm is the contracting party and the data is consumed by the firm before being reported to the client. VAT is chargeable on the full recharge amount.",
+      "Land Registry fees split two ways. A registration fee the client is liable for, paid by the firm as a conduit and passed on exactly, is a disbursement. A SEARCH fee is different: under Brabners LLP v HMRC [2017] UKFTT 0666 (TC) and Revenue and Customs Brief 6 (2020), if the firm uses or interprets the search result in its own advice, the fee is part of the firm's standard-rated supply and VAT is due on the recharge. The postal-search concession ended on 1 December 2020, so post versus electronic no longer decides it. Classify registration and search lines separately.",
+  },
+  "local-auth-search": {
+    verdict: "contested",
+    note:
+      "Under Brabners LLP v HMRC [2017] UKFTT 0666 (TC) the test is how the firm USES the search result, not how it was obtained. If the firm interprets the result and reports on it to the client, the fee is a cost component of the firm's own standard-rated supply and VAT is chargeable on the full recharge. Only a result passed to the client unused and uninterpreted, meeting all eight conditions, can be a disbursement. Revenue and Customs Brief 6 (2020) withdrew the postal-search concession from 1 December 2020.",
   },
   "counsel-fees": {
-    verdict: "disbursement",
-    note: null,
+    // HP §6.B: the DEFAULT is a supply to the firm. Returning a bare
+    // "true disbursement" here was the defect this preset used to carry.
+    verdict: "contested",
+    note:
+      "The default position is that counsel's fee is a supply TO THE FIRM, which the firm uses in making its own onward supply to the client: recover the input VAT on counsel's fee note and charge output VAT on your total fee, counsel's element included. Counsel's fee is a disbursement only in the narrower case where counsel acts as the CLIENT's agent, in the client's name and on the client's instruction (some direct-access arrangements). HMRC's long-standing concession lets a firm pass counsel's VAT-bearing fee note to the client as a disbursement, but only where the firm does not itself reclaim that input VAT. You cannot do both.",
   },
   "medical-records": {
     verdict: "contested",
     note:
-      "Where the firm holds a direct contract with a medical records retrieval provider, the supply is made to the firm (principal) and the cost is a recharge, so VAT applies. Where the medical provider invoices the client directly and the firm pays as agent, it is a true disbursement. Check your supplier contract.",
+      "Where the firm holds a direct contract with a medical records retrieval provider, the supply is made to the firm as principal and the cost is a standard-rated recharge. Where the provider supplies the client and the firm pays as the client's agent, it can be a disbursement if all eight conditions are met. Check your supplier contract.",
   },
   "expert-reports": {
     verdict: "contested",
     note:
-      "If the client retained the expert directly (firm arranged on the client's behalf), this is a disbursement. If the firm is the named party to the instruction letter or retainer, the supply is to the firm and the recharge to the client is VATable.",
+      "If the client retained the expert directly and the firm merely arranged and paid on the client's behalf, this can be a disbursement. If the firm is the named party to the instruction letter or retainer, the supply is to the firm and the recharge to the client is standard-rated.",
   },
   "stamp-duty": {
     verdict: "disbursement",
-    note: null,
+    note:
+      "SDLT, LBTT and LTT are taxes the client is liable for, paid over by the firm as a conduit. Show the exact amount separately on the bill and keep the client's authority to pay.",
   },
   "search-indemnity": {
-    verdict: "disbursement",
-    note: null,
+    verdict: "contested",
+    note:
+      "A search indemnity policy taken out in the client's name and passed on at cost can be a disbursement. Where the firm holds the policy or block cover in its own name, the supply is to the firm and the recharge is standard-rated. Check whose name is on the policy.",
   },
   custom: {
     verdict: null,
@@ -116,26 +126,26 @@ const PRESETS: Record<CostType, { verdict: "disbursement" | "recharge" | "contes
 
 const VERDICT_LABELS: Record<"disbursement" | "recharge" | "contested", string> = {
   disbursement: "True disbursement: outside scope of VAT",
-  recharge: "Recharge: VATable at firm's standard rate",
-  contested: "Contested: fact-specific, review contract",
+  recharge: "Recharge: VATable at the firm's standard rate",
+  contested: "Fact-specific: check the conditions against this matter",
 };
 
 const VAT_TREATMENT: Record<"disbursement" | "recharge" | "contested", string> = {
   disbursement:
-    "Do not charge VAT on this item. Show it separately on the VAT invoice as a disbursement. The amount must match the supplier's invoice exactly. The firm cannot reclaim input VAT on this cost.",
+    "Do not charge VAT on this item. Show it separately on the VAT invoice as a disbursement. The amount must match the third party's charge exactly. The firm cannot reclaim input VAT on this cost.",
   recharge:
     "Charge VAT at the standard rate (20%) on this item. The firm can reclaim input VAT on the original supplier cost. Show the net recharge plus VAT on the fee note.",
   contested:
-    "VAT treatment depends on the specific contract with the supplier. Review the supplier invoice and your retainer terms before deciding. Seek advice from your VAT-registered accountant.",
+    "The treatment turns on the facts of the matter and the terms of the supplier contract. Work through all eight conditions in VAT Notice 700 §25.1.1 for this specific cost before billing.",
 };
 
 const BILLING_GUIDANCE: Record<"disbursement" | "recharge" | "contested", string> = {
   disbursement:
-    "On the client bill: show as a separate line 'Disbursement: [description], [amount]'. Do not include in the VAT calculation. Retain the supplier's invoice as evidence.",
+    "On the client bill: show as a separate line 'Disbursement: [description], [amount]'. Do not include it in the VAT calculation. Retain the third party's invoice as evidence.",
   recharge:
-    "On the client bill: show as 'Expenses/Recharge: [description], [net] + VAT at 20%'. Include in the VAT return as a taxable supply at the standard rate.",
+    "On the client bill: show as 'Expenses/Recharge: [description], [net] + VAT at 20%'. Include it in the VAT return as a standard-rated supply.",
   contested:
-    "Seek written advice before billing. If uncertain, the safer default is to treat as a recharge and charge VAT, since underdeclaring VAT carries greater risk than overdeclaring.",
+    "Decide the treatment on the facts before billing. Where it is genuinely finely balanced, the lower-risk default is to treat the cost as a recharge and charge VAT, because under-declaring output VAT carries the greater exposure.",
 };
 
 export function classifyVatDisbursement(input: VatDisbursementsInput): VatDisbursementsResult {
@@ -150,20 +160,24 @@ export function classifyVatDisbursement(input: VatDisbursementsInput): VatDisbur
       vatTreatment: VAT_TREATMENT[v],
       billingGuidance: BILLING_GUIDANCE[v],
       caveat: preset.note,
-      factorsMet: 4,
-      factorsNeeded: 4,
+      conditionsMet: v === "disbursement" ? CONDITIONS_NEEDED : 0,
+      conditionsNeeded: CONDITIONS_NEEDED,
     };
   }
 
-  // Custom / questionnaire path: count HMRC agent-test factors
-  const factors = [
+  // Custom / questionnaire path: all eight VAT Notice 700 §25.1.1 conditions.
+  const conditions = [
     input.firmActedAsAgent,
-    input.clientConsumed,
-    input.exactPassThrough,
+    input.clientReceivedAndUsed,
+    input.clientResponsibleForPayment,
+    input.clientAuthorisedPayment,
+    input.clientKnewThirdPartySupply,
     input.itemisedSeparately,
+    input.exactPassThrough,
+    input.clearlyAdditional,
   ];
-  const factorsMet = factors.filter(Boolean).length;
-  const allMet = factorsMet === 4;
+  const conditionsMet = conditions.filter(Boolean).length;
+  const allMet = conditionsMet === CONDITIONS_NEEDED;
 
   const verdict = allMet ? "disbursement" : "recharge";
 
@@ -174,10 +188,10 @@ export function classifyVatDisbursement(input: VatDisbursementsInput): VatDisbur
     vatTreatment: VAT_TREATMENT[verdict],
     billingGuidance: BILLING_GUIDANCE[verdict],
     caveat:
-      factorsMet === 3
-        ? "Three of the four HMRC agent-test factors are met. A single failing factor means this is treated as a recharge. Review the failing condition, it may be correctable by adjusting how the cost is contracted or billed."
+      conditionsMet === CONDITIONS_NEEDED - 1
+        ? "Seven of the eight conditions in VAT Notice 700 §25.1.1 are met. A single failing condition makes the payment part of the firm's own standard-rated supply. Review the failing condition: it is sometimes correctable by changing how the cost is contracted, authorised or billed."
         : null,
-    factorsMet,
-    factorsNeeded: 4,
+    conditionsMet,
+    conditionsNeeded: CONDITIONS_NEEDED,
   };
 }

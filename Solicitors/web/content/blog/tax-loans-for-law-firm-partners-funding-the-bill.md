@@ -154,7 +154,7 @@ faqs:
 <li><strong>Attack lock-up.</strong> The durable fix is shortening work-in-progress and debtor days so profit becomes cash before the tax falls due.</li>
 </ol>
 
-<p>If you are weighing how to fund a partner tax demand, our team works with law firm partners on the cash-flow, the reserving discipline and the honest deductibility position behind these facilities. Talk to us before you sign, not after.</p>
+<p>If you are weighing how to fund a partner tax demand, the regulated firms in our specialist partner network work with law firm partners on the cash-flow, the reserving discipline and the honest deductibility position behind these facilities. Talk to us before you sign, not after.</p>
 
 <h2>Related Reading</h2>
 

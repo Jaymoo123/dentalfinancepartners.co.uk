@@ -146,6 +146,6 @@ faqs:
 
 <p>While the MTC is an insurance matter, it has significant financial and accounting implications for your firm. Your accountant should understand how PII premiums affect your profit and loss account, how run-off costs impact partner drawings, and what disclosures are required in your annual accounts.</p>
 
-<p>At Accounts for Lawyers, we specialise in law firm accounting and compliance. We work with COFAs and partners to ensure their PII arrangements are compliant and cost-effective. We can also help you model the financial impact of run-off cover on your retirement or exit plans.</p>
+<p>At Accounts for Lawyers, we connect law firms with regulated accountancy firms in our specialist partner network. The partner firm we match you with can check that your PII arrangements are compliant and cost-effective, and can model the financial impact of run-off cover on your retirement or exit plans.</p>
 
 <p>Contact us to discuss your firm's PII compliance or book a <a href="/free-firm-health-check">free firm health check</a> to identify any gaps in your current arrangements.</p>

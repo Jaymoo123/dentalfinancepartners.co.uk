@@ -134,7 +134,7 @@ export default async function CalculatorPage({
       <div id="get-expert-help" className="scroll-mt-24">
         <LeadCTAPanel
           title="Need help interpreting your results?"
-          description="These calculators give directional figures based on published rates. Your actual position depends on firm structure, basis period adjustments, existing capital contributions, and your specific revenue profile. We model the full picture as part of our advisory work."
+          description="These calculators give directional figures based on published rates. Your actual position depends on firm structure, basis period adjustments, existing capital contributions, and your specific revenue profile. A firm from our partner network models the full picture as part of the advisory work."
           proofPoints={LEAD_PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} />}
           backdrop={<SolicitorsBackdrop tone="navy" />}

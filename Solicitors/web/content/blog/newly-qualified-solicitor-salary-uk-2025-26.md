@@ -218,7 +218,7 @@ schema: ''
 
 <p>Plan 2 student loans charge 9% on income above £27,295. At Magic Circle NQ salaries, the annual student loan repayment is approximately £8,000-£14,000, material on the take-home position. Voluntary additional repayments rarely make sense for high earners because the loan is typically written off after 30 years and the effective interest rate is below the rate the NQ can earn on alternative investments.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens if you ask us for help</h2>
 
 <p>Most NQs don't need an accountant. PAYE handles the basics. The case for tax help becomes clear when:</p>
 
@@ -229,4 +229,4 @@ schema: ''
 <li>You're approaching partnership and want to plan for the structural change in tax treatment</li>
 </ul>
 
-<p>For most NQs, a one-off 30-minute call at the qualification jump is sufficient. We model the pension contribution decision, salary sacrifice availability, and the year-1 self-assessment requirement. For ongoing tax support for senior solicitors and partners, see our <a href="/for-partners">For partners</a> service page. For junior associates building investment portfolios alongside qualifying, see our <a href="/for-junior-solicitors">For junior solicitors</a> page.</p>
+<p>For most NQs, a one-off 30-minute call at the qualification jump is sufficient. On that call the partner firm we match you with models the pension contribution decision, salary sacrifice availability, and the year-1 self-assessment requirement. For ongoing tax support for senior solicitors and partners, see our <a href="/for-partners">For partners</a> service page. For junior associates building investment portfolios alongside qualifying, see our <a href="/for-junior-solicitors">For junior solicitors</a> page.</p>

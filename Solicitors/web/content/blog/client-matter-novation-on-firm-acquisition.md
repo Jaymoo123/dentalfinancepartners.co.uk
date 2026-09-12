@@ -166,7 +166,7 @@ faqs:
 <li>Prepare the COFA's report for the new firm's first accounting period.</li>
 </ul>
 
-<p>At Accounts for Lawyers, we work exclusively with UK solicitors and law firms. We understand the SRA requirements and the tax treatment of practice acquisitions. If you are buying or merging a law firm, <a href="/contact">contact us</a> to discuss how we can support the novation process.</p>
+<p>At Accounts for Lawyers, we work exclusively with UK solicitors and law firms, connecting them with regulated accountancy firms in our partner network. If you are buying or merging a law firm, <a href="/contact">contact us</a> and we will match you with a partner firm that understands the SRA requirements and the tax treatment of practice acquisitions.</p>
 
 <h2>Final Thoughts</h2>
 

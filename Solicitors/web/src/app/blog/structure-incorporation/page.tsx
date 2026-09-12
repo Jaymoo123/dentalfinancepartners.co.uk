@@ -111,7 +111,7 @@ export default function StructureIncorporationPillarPage() {
       ]}
       cta={{
         heading: "Considering a Change in Structure?",
-        body: "Our specialist solicitor accountants can model the tax implications of LLP conversion, incorporation, or any structural change for your practice. Get expert advice tailored to your firm.",
+        body: "The specialist solicitor accountants in our partner network can model the tax implications of LLP conversion, incorporation, or any structural change for your practice. Get expert advice tailored to your firm.",
         submitLabel: SUBMIT_LABEL,
       }}
       posts={posts}

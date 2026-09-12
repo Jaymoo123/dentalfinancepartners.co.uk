@@ -22,7 +22,7 @@ faqs:
   - question: "Can a partner / LLP member retire mid-year?"
     answer: "Yes — the partnership/LLP agreement governs the mechanics. The retiring partner is typically entitled to their capital contribution back (sometimes phased over 1-3 years), their final allocation of profit up to leaving date, and any vested deferred compensation. Tax-wise the retirement is treated as a part-disposal of their partnership interest — BADR may apply on any gain, subject to the qualifying conditions and £1m lifetime limit."
 ctaTitle: "Get the right structure for your law firm"
-ctaBody: "30-minute scoping call. We model partnership vs LLP on your actual numbers and confirm whether conversion (or staying put) is the right call."
+ctaBody: "30-minute scoping call. We scope the question, then connect you with a regulated accountancy firm in our partner network that models partnership vs LLP on your actual numbers and confirms whether conversion (or staying put) is the right call."
 ---
 
 <p><strong>Most multi-partner UK law firms are LLPs, not general partnerships.</strong> The conversion happened largely in the 2000s after LLPs were introduced in 2001. But the structural choice still recurs — for new firms, for small partnerships considering conversion, and for understanding the FA 2014 Salaried Member Rules that can quietly turn "partners" into "employees" for tax purposes.</p>
@@ -199,9 +199,9 @@ ctaBody: "30-minute scoping call. We model partnership vs LLP on your actual num
 <li>You've modelled both and Ltd genuinely wins on your numbers</li>
 </ul>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens when you bring us in</h2>
 
-<p>Our structure-review engagement covers:</p>
+<p>We connect you with a regulated accountancy firm in our specialist partner network. A structure-review engagement typically covers:</p>
 
 <ul>
 <li>Three-structure tax comparison on your actual numbers</li>

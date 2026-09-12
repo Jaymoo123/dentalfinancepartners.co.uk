@@ -120,7 +120,7 @@ faqs:
 
 <p>Covenants interact with the move in practical ways: they affect which clients the team may approach, whether and how the move can be announced, and the risk of a dispute or an injunction application. Crucially, the client's free choice of solicitor, a regulatory principle, sits alongside and can cut across a non-solicitation covenant: a client who decides on their own initiative to follow a trusted adviser is exercising a right the regulator protects.</p>
 
-<p>This is legal-practice territory rather than accountancy, and the case law is fact-sensitive. Treat covenants as a flag to take specialist legal advice early, before any approach to clients or staff, rather than something to interpret from the agreement alone. Our role is to make sure the tax and capital-account consequences of whatever is agreed are handled correctly.</p>
+<p>This is legal-practice territory rather than accountancy, and the case law is fact-sensitive. Treat covenants as a flag to take specialist legal advice early, before any approach to clients or staff, rather than something to interpret from the agreement alone. The partner firm's role is to make sure the tax and capital-account consequences of whatever is agreed are handled correctly.</p>
 
 <h2>PII, Run-Off and Continuity of Cover</h2>
 

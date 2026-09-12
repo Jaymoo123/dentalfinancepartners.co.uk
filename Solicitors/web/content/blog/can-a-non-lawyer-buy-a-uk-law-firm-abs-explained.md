@@ -180,9 +180,9 @@ schema: ''
 <li><strong>Inadequate compliance infrastructure.</strong> Plans for the COLP and COFA roles, AML supervision and PII arrangements have to be credible.</li>
 </ul>
 
-<h2>How we support an ABS acquisition</h2>
+<h2>How a partner firm supports an ABS acquisition</h2>
 
-<p>Our ABS support covers the financial and tax side, working alongside the ABS specialist solicitor on the regulatory application:</p>
+<p>We match you with a regulated accountancy firm in our partner network. Its ABS engagement covers the financial and tax side, working alongside the ABS specialist solicitor on the regulatory application:</p>
 
 <ul>
 <li>Pre-application financial model and an entity-and-ownership structure recommendation</li>

@@ -208,9 +208,9 @@ faqs:
 
 <p>For firms with true partnership capital accounts and goodwill appreciation, the exit return can be materially larger than the buy-in amount — sometimes 2-5x depending on firm growth.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>Our partner-side advisory engagement covers:</p>
+<p>We match you with a regulated accountancy firm in our partner network. A partner-side advisory engagement with that firm covers:</p>
 
 <ul>
 <li>Buy-in financing comparison: bank, specialist lender, family financing options</li>

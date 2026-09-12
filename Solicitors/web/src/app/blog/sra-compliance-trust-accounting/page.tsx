@@ -128,7 +128,7 @@ export default function SRACompliancePillarPage() {
       ]}
       cta={{
         heading: "Need SRA Compliance Support?",
-        body: "Our specialist solicitor accountants help law firms maintain SRA compliance while optimising their financial performance. Get expert guidance tailored to your practice.",
+        body: "The specialist solicitor accountants we match you with help law firms maintain SRA compliance while optimising their financial performance. Get expert guidance tailored to your practice.",
         submitLabel: SUBMIT_LABEL,
       }}
       posts={posts}

@@ -102,7 +102,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The starting point is simple: counsel's fee is a supply to your firm. You recover the input VAT and charge output VAT on your bill, and the counsel element sits inside your standard-rated supply to the client. Step away from that default only where the facts genuinely put counsel in the client's shoes (the disbursement exception) or where you use the HMRC concession to re-address counsel's fee note, and in neither of those cases do you also reclaim the VAT yourself.</p>
 
-<p>Because the treatment turns on the facts of each instruction, firms that handle counsel regularly benefit from a settled house policy and a quick check at the point of billing. For tailored support on counsel-fee VAT and the wider VAT position of your firm, our team works with law firms across England and Wales.</p>
+<p>Because the treatment turns on the facts of each instruction, firms that handle counsel regularly benefit from a settled house policy and a quick check at the point of billing. For tailored support on counsel-fee VAT and the wider VAT position of your firm, we match law firms across England and Wales with regulated accountancy firms in our partner network.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

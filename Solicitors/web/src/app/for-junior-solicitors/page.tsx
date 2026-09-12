@@ -12,7 +12,7 @@ const data: AudienceStage = {
   badge: "Trainees · Newly-qualified · 2-5 years PQE · SQE candidates",
   heroHeading: "Tax support for junior solicitors and trainees",
   intro:
-    "The tax position changes fast in the first 5 years. Trainee on PAYE. SQE costs (sometimes employer-funded, sometimes not). Newly-qualified with significant student debt and a higher salary band. Associate bonuses that trigger higher-rate tax for the first time. We help you stay on top of all of it.",
+    "The tax position changes fast in the first 5 years. Trainee on PAYE. SQE costs (sometimes employer-funded, sometimes not). Newly-qualified with significant student debt and a higher salary band. Associate bonuses that trigger higher-rate tax for the first time. We put you with a specialist who keeps you on top of all of it.",
   stats: [
     { value: "100%", label: "SQE prep costs (if employer pays)" },
     { value: "£12,570", label: "Personal allowance 2025/26" },
@@ -30,7 +30,7 @@ const data: AudienceStage = {
     },
     {
       title: "I just qualified. My salary jumped to higher-rate. What do I do?",
-      body: "Most newly-qualified solicitors hit higher-rate tax for the first time. Pension contributions become more attractive (40% relief instead of 20%). Salary-sacrifice schemes (if your firm offers them) save the higher-rate tax on the sacrificed amount. Charitable gift aid extends your basic-rate band. We help model the year.",
+      body: "Most newly-qualified solicitors hit higher-rate tax for the first time. Pension contributions become more attractive (40% relief instead of 20%). Salary-sacrifice schemes (if your firm offers them) save the higher-rate tax on the sacrificed amount. Charitable gift aid extends your basic-rate band. Your partner firm helps model the year.",
     },
     {
       title: "I have £80k of student loan debt. How does it interact with my salary?",
@@ -52,7 +52,7 @@ const data: AudienceStage = {
     },
     {
       title: "Higher-rate transition planning",
-      body: "The year you move from basic to higher rate, several things change. Pension contributions become 40% relievable. Gift aid extends your basic-rate band. Personal savings allowance halves from £1,000 to £500. We model the year so you don't leave reliefs on the table.",
+      body: "The year you move from basic to higher rate, several things change. Pension contributions become 40% relievable. Gift aid extends your basic-rate band. Personal savings allowance halves from £1,000 to £500. Your partner firm models the year so you don't leave reliefs on the table.",
     },
     {
       title: "Personal allowance taper management",
@@ -60,11 +60,11 @@ const data: AudienceStage = {
     },
     {
       title: "Student loan + savings strategy",
-      body: "Plan 2 / Plan 5 student loan repayment modelling against your salary trajectory. Voluntary repayment makes sense for some, doesn't for others. We model both alongside ISA / SIPP / mortgage-deposit goals.",
+      body: "Plan 2 / Plan 5 student loan repayment modelling against your salary trajectory. Voluntary repayment makes sense for some, doesn't for others. Your partner firm models both alongside ISA / SIPP / mortgage-deposit goals.",
     },
     {
       title: "Salary sacrifice + benefits review",
-      body: "Many firms offer salary sacrifice for pension, EV cars, cycle-to-work, holiday-purchase. The tax efficiency varies materially. We model what's actually worthwhile for your specific position.",
+      body: "Many firms offer salary sacrifice for pension, EV cars, cycle-to-work, holiday-purchase. The tax efficiency varies materially. Your partner firm models what's actually worthwhile for your specific position.",
     },
   ],
   faqs: [
@@ -74,7 +74,7 @@ const data: AudienceStage = {
     },
     {
       q: "Can I claim my SQE costs against tax?",
-      a: "Depends on the structure. If your employer pays, you don't have a tax claim (your employer does). If you pay yourself with no employer reimbursement, the relief is harder — generally only available where the SQE is 'training for current employment duties' (continuing professional development) rather than 'training to qualify for a new employment' (initial qualification training). The line is fact-specific. We can review your specific position.",
+      a: "Depends on the structure. If your employer pays, you don't have a tax claim (your employer does). If you pay yourself with no employer reimbursement, the relief is harder — generally only available where the SQE is 'training for current employment duties' (continuing professional development) rather than 'training to qualify for a new employment' (initial qualification training). The line is fact-specific. Your partner firm can review your specific position.",
     },
     {
       q: "Should I make pension contributions as a junior associate?",

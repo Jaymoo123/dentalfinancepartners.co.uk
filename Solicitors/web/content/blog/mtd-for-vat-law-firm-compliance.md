@@ -140,7 +140,7 @@ faqs:
 
 <p>Consider using a specialist solicitor accountant who understands both the SRA Accounts Rules and MTD for VAT. Generalist accountants may not appreciate the nuances of client account treatment or the partial exemption rules that apply to some legal services.</p>
 
-<p>We offer <a href="/services/cofa-compliance-support">COFA compliance support</a> specifically for law firms navigating MTD for VAT and other digital reporting requirements. Our team works with Xero, QuickBooks, and bridging software to ensure your firm meets HMRC's standards.</p>
+<p>Our <a href="/services/cofa-compliance-support">COFA compliance support</a> page is for law firms navigating MTD for VAT and other digital reporting requirements: we connect you with a regulated accountancy firm in our specialist partner network, and the advice on software, digital links and record-keeping comes from that firm.</p>
 
 <p>For a broader overview of how digital reporting affects your firm, read our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a> which covers record-keeping requirements that overlap with MTD for VAT.</p>
 
@@ -150,4 +150,4 @@ faqs:
 
 <p>The best approach is to treat MTD for VAT as an opportunity to improve your firm's financial controls. Digital records reduce errors, save time, and provide better data for decision-making. The upfront cost of software and training is small compared to the long-term benefits of compliance.</p>
 
-<p>If you are unsure whether your current setup is compliant, speak to a legal-sector-specialist accountant. We can review your VAT processes, recommend software, and help you implement MTD for VAT in your law firm. Contact us for a <a href="/free-firm-health-check">free firm health check</a> to assess your MTD readiness.</p>
+<p>If you are unsure whether your current setup is compliant, speak to a legal-sector-specialist accountant. We can connect you with a regulated firm in our specialist partner network that will review your VAT processes, recommend software, and help you implement MTD for VAT in your law firm. Contact us for a <a href="/free-firm-health-check">free firm health check</a> to start that conversation.</p>

@@ -179,7 +179,7 @@ faqs:
 
 <p>Your accountant can help with the financial aspects of the investigation, such as reviewing client account records, preparing reconciliations, and explaining accounting entries to the SRA. They can also advise on whether your accounting systems need improvement to prevent future issues.</p>
 
-<p>If you need support with SRA compliance, our <a href="/services/cofa-compliance-support">COFA compliance support service</a> can help you build robust systems. For help with client account reconciliations and SRA Accounts Rules, see our <a href="/services/sra-accounts-rules">SRA Accounts Rules services</a>.</p>
+<p>If you need support with SRA compliance, a partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a> can help you build robust systems. For help with client account reconciliations and SRA Accounts Rules, see our <a href="/services/sra-accounts-rules">SRA Accounts Rules services</a>.</p>
 
 <h2>Conclusion</h2>
 

@@ -123,6 +123,6 @@ faqs:
 
 <p>The SRA expects firms to have appropriate cyber risk management in place, and cyber insurance is a key part of that. The COFA should ensure the policy is reviewed annually, documented in the risk register, and paid correctly.</p>
 
-<p>If you are unsure whether your firm's cyber insurance policy meets the tax and regulatory requirements, speak to a legal-sector-specialist accountant. We can review your policy wording, check the VAT treatment, and ensure the deduction is claimed correctly in your firm's accounts.</p>
+<p>If you are unsure whether your firm's cyber insurance policy meets the tax and regulatory requirements, speak to a legal-sector-specialist accountant. We can connect you with a regulated firm in our specialist partner network that will review your policy wording, check the VAT treatment, and make sure the deduction is claimed correctly in your firm's accounts.</p>
 
 <p>For more guidance on law firm compliance and tax, see our <a href="/solicitor-guides/cofa-fundamentals">COFA fundamentals guide</a> and our <a href="/services/cofa-compliance-support">COFA compliance support services</a>. If you are considering a practice sale or merger, our <a href="/services/practice-valuation">practice valuation services</a> can help you assess the impact of cyber risk on your firm's value.</p>

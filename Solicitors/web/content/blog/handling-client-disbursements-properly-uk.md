@@ -117,7 +117,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Conduct a periodic audit of disbursement entries on client ledgers. Look for patterns where VAT may have been incorrectly omitted.</li>
 </ul>
 
-<p>For a deeper dive into the SRA Accounts Rules, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a>. If you need support with your COFA responsibilities, our <a href="/services/cofa-compliance-support">COFA compliance support service</a> can help.</p>
+<p>For a deeper dive into the SRA Accounts Rules, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a>. If you need support with your COFA responsibilities, we can match you with a partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a>.</p>
 
 <h2>Disbursements and the Accountant's Report</h2>
 
@@ -163,4 +163,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are a COFA or a partner responsible for compliance, review your firm's disbursement procedures now. A small error in VAT treatment on a single matter can compound across hundreds of matters and trigger a significant HMRC assessment.</p>
 
-<p>For tailored advice on your firm's specific circumstances, speak to a legal-sector-specialist accountant. We work with solicitors across all practice areas and firm sizes. <a href="/contact">Contact us</a> to discuss your firm's compliance needs.</p>
+<p>For tailored advice on your firm's specific circumstances, speak to a legal-sector-specialist accountant. We match solicitors across all practice areas and firm sizes with accountants in our partner network. <a href="/contact">Contact us</a> to discuss your firm's compliance needs.</p>

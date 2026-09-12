@@ -134,6 +134,6 @@ faqs:
 
 <p>GDPR compliance costs are a normal part of running a <strong>law firm</strong> in 2025. Most are fully deductible as revenue expenditure. Hardware costs may attract capital allowances. Fines are never deductible. The key is to keep clear records and to distinguish revenue from capital.</p>
 
-<p>If you are unsure whether a particular cost qualifies, speak to a legal-sector-specialist accountant. We can review your firm's data protection spending and ensure you claim every relief you are entitled to.</p>
+<p>If you are unsure whether a particular cost qualifies, speak to a legal-sector-specialist accountant. We can connect you with a regulated firm in our specialist partner network that will review your firm's data protection spending and make sure you claim every relief you are entitled to.</p>
 
 <p>For more on related compliance topics, see our guide on <a href="/solicitor-guides/cofa-fundamentals">COFA Fundamentals</a> and our <a href="/services/cofa-compliance-support">COFA Compliance Support</a> page. You may also find our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules Essentials</a> guide useful for understanding your broader regulatory obligations.</p>

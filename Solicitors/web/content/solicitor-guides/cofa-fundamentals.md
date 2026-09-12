@@ -195,9 +195,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The annual Accountant's Report relationship matters. A new COFA who doesn't engage with the firm's accountant until 2 weeks before the SRA deadline is heading for a stressful month. Build the relationship early; quarterly contact is reasonable.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens when you bring us in</h2>
 
-<p>Our COFA support engagement covers:</p>
+<p>We connect you with a regulated accountancy firm in our specialist partner network. A COFA support engagement typically covers:</p>
 
 <ul>
 <li>New-COFA onboarding (half-day session on the Accounts Rules in plain English; specific firm risk profile review; reconciliation rhythm setup)</li>
@@ -205,7 +205,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Direct line for the "is this a breach?" question that inevitably arises in month 4</li>
 <li>Breach decision log template and reporting template</li>
 <li>Pre-inspection readiness review</li>
-<li>Annual Accountant's Report delivery</li>
+<li>Introduction to an independent reporting accountant for the annual Accountant's Report, and help getting the records ready for it</li>
 </ul>
 
 <p>If you've just been appointed, or your predecessor has just left, or you've inherited the role alongside something else and it's not getting the attention it needs, book a scoping call.</p>

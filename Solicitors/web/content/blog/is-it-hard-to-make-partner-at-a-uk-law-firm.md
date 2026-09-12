@@ -209,9 +209,9 @@ faqs:
 
 <p>Some senior solicitors take a consultancy structure with their existing firm — typically self-employed via PSC, working flexibly. Loses partner profit upside but retains professional standing and avoids partnership administrative burden.</p>
 
-<h2>What we'd do if you brought you in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>For senior associates approaching the partnership decision, our personal tax and structural review covers:</p>
+<p>We match you with a regulated accountancy firm in our partner network. For senior associates approaching the partnership decision, that firm's personal tax and structural review covers:</p>
 
 <ul>
 <li>Modelling of partnership year-1 financial position on the specific firm's compensation structure</li>
@@ -221,4 +221,4 @@ faqs:
 <li>Self-assessment compliance setup for year 1</li>
 </ul>
 
-<p>For senior associates considering lateral partnership at a different firm, we model the offer and identify the structural questions worth asking before signing. Book a 30-minute scoping call below if you're at the decision point.</p>
+<p>For senior associates considering lateral partnership at a different firm, the partner firm models the offer and identifies the structural questions worth asking before signing. Book a 30-minute scoping call below if you're at the decision point.</p>

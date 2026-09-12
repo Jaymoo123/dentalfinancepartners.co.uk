@@ -175,11 +175,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If the integration was done properly, the accountant's report should be unqualified. If there are gaps or errors, the report may be qualified, which triggers an SRA referral.</p>
 
-<p>We recommend engaging a reporting accountant who specialises in law firm mergers. Our team at <a href="/services/sra-accounts-rules">Accounts for Lawyers</a> has experience with post-merger SRA reports and can advise on the documentation required.</p>
+<p>We recommend engaging a reporting accountant who specialises in law firm mergers. Through our <a href="/services/sra-accounts-rules">SRA Accounts Rules service</a> we can connect you with a regulated firm in our specialist partner network that handles post-merger reports and can advise on the documentation required.</p>
 
 <h2>Common Pitfalls in Post-Merger Integration</h2>
 
-<p>Based on our work with merging law firms, these are the most common issues we see:</p>
+<p>These are the issues that most often go wrong when two law firms merge:</p>
 <ul>
 <li><strong>Rushing the client matter migration.</strong> Firms that try to migrate all matters in a weekend often find errors months later. Allow at least two weeks for a careful migration with testing.</li>
 <li><strong>Ignoring residual balances.</strong> Old client account balances that are not reconciled before migration create a mess that is hard to clean up.</li>

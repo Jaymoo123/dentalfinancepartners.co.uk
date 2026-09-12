@@ -141,4 +141,4 @@ faqs:
 
 <p>Start with a simple cash flow forecast. Review your WIP funding approach. Tighten your client account processes. Align partner drawings with cash reality. And measure your lock-up days every month.</p>
 
-<p>If you would like a structured review of your firm's cash flow position, our team of legal-sector-specialist accountants can help. We work exclusively with UK solicitors and understand the specific pressures of your practice. <a href="/contact">Contact us</a> for a confidential discussion.</p>
+<p>If you would like a structured review of your firm's cash flow position, the legal-sector-specialist accountants in our partner network can help. We work exclusively with UK solicitors and understand the specific pressures of your practice. <a href="/contact">Contact us</a> for a confidential discussion.</p>

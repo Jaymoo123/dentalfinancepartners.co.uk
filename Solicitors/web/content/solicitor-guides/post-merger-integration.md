@@ -10,11 +10,11 @@ summary: "The practical playbook for the first 90 days after a UK law firm merge
 hero: "Most law firm merger value is gained or lost in the first 90 days post-completion. Client matter novation, PII continuity, SRA notification, accounts system migration — the to-do list is long but each item has known mechanics. This is the structured playbook for the senior partner project-managing the integration."
 faqs:
   - question: "Does the SRA need to consent to a law firm merger?"
-    answer: "Notification is required for material changes; consent depends on the deal structure. Pure asset purchase (buyer acquires goodwill, WIP, equipment, client book) with both entities continuing or with the seller dissolving requires SRA notification. Share purchase of an incorporated firm may require an ABS licence application if the ownership structure changes. New COFA / COLP appointments need SRA notification within 7 days. We co-ordinate with the regulatory solicitor on the SRA-side filings."
+    answer: "Notification is required for material changes; consent depends on the deal structure. Pure asset purchase (buyer acquires goodwill, WIP, equipment, client book) with both entities continuing or with the seller dissolving requires SRA notification. Share purchase of an incorporated firm may require an ABS licence application if the ownership structure changes. New COFA / COLP appointments need SRA notification within 7 days. The finance workstream co-ordinates with the regulatory solicitor on the SRA-side filings."
   - question: "How long does client matter novation take?"
     answer: "3-8 weeks post-completion for typical conveyancing-heavy firms; longer for litigation-heavy firms where individual client consent is more sensitive. Bulk novation letters work for residential conveyancing and similar high-volume practices. Bespoke client communications are required for sensitive matters (personal injury, family, criminal). The SRA Accounts Rules require client money for transferred matters to be held in the new firm's client account from completion."
   - question: "What happens to PII at completion?"
-    answer: "PII continuity is critical. If both firms have policies with different insurers, the position can be: (i) seller's policy runs to next renewal with run-off cover post-renewal, (ii) acquiring firm's policy extends to cover the acquired matters from completion, or (iii) a new combined policy is issued from completion. The structure depends on the deal type and renewal timing. We work with the firm's PII broker before completion."
+    answer: "PII continuity is critical. If both firms have policies with different insurers, the position can be: (i) seller's policy runs to next renewal with run-off cover post-renewal, (ii) acquiring firm's policy extends to cover the acquired matters from completion, or (iii) a new combined policy is issued from completion. The structure depends on the deal type and renewal timing. The position should be settled with the firm's PII broker before completion."
   - question: "How do client account transfers work?"
     answer: "On completion day the acquiring firm opens (or has open) client accounts in its own name. Client money for transferred matters moves from the seller's client account to the acquirer's client account by interbank transfer, matched to the matter ledger. Each transfer is recorded and reconciled. The reconciliation evidence is critical for the next SRA Accountant's Report — it shows the transfer was clean and the matters' client money is in the right place from day one."
   - question: "When does the merger appear on the firm's tax return?"
@@ -22,7 +22,7 @@ faqs:
   - question: "How do we onboard the inherited fee-earners?"
     answer: "Day-1 priority is payroll and PII coverage. Day-1 to day-30: cultural integration meetings, IT and case management system setup, SRA notification of practice changes for each fee-earner, professional subscriptions transferred, conflict checks across the combined client base. By day-90 the inherited team should be operating as fee-earners of the merged firm with no operational distinction from the existing team."
 ctaTitle: "Get your merger integration project-managed properly"
-ctaBody: "30-minute scoping call. We confirm scope, build the first-90-day plan, and quote a fixed engagement fee."
+ctaBody: "30-minute scoping call. We confirm scope, then connect you with a regulated accountancy firm in our partner network that builds the first-90-day plan and quotes a fixed engagement fee."
 ---
 
 <p><strong>Most law firm merger value is gained or lost in the first 90 days post-completion.</strong> The deal itself takes 12-20 weeks from heads of terms to completion. The integration that follows determines whether the combined firm hits the merger thesis or quietly underperforms while the deal lawyers move on.</p>
@@ -200,9 +200,9 @@ ctaBody: "30-minute scoping call. We confirm scope, build the first-90-day plan,
 
 <p>The combined firm doesn't operate as one. Two factions persist. Eventually one wins, but the lost productivity in the meantime is significant. Prevent by senior partner explicit leadership on culture from day 1.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens when you bring us in</h2>
 
-<p>Our post-merger integration engagement covers the financial and operational mechanics. We project-manage:</p>
+<p>We connect you with a regulated accountancy firm in our specialist partner network. A post-merger integration engagement covers the financial and operational mechanics:</p>
 
 <ul>
 <li>Client account migration and reconciliation</li>
@@ -210,9 +210,9 @@ ctaBody: "30-minute scoping call. We confirm scope, build the first-90-day plan,
 <li>WIP and matter ledger import</li>
 <li>VAT position review and HMRC liaison</li>
 <li>First three months of management accounts in the merged form</li>
-<li>SRA Accountant's Report co-ordination for the first merged year-end</li>
+<li>Co-ordination with an independent reporting accountant for the first merged year-end Accountant's Report</li>
 </ul>
 
-<p>The regulatory solicitor handles the SRA notification mechanics, novation letters, and partnership/LLP agreement amendments. We work in tandem.</p>
+<p>The regulatory solicitor handles the SRA notification mechanics, novation letters, and partnership/LLP agreement amendments. The finance workstream runs in tandem with it.</p>
 
 <p>If you've signed heads of terms or are in due diligence on a deal, book a 30-minute scoping call below.</p>

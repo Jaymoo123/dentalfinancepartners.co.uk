@@ -172,9 +172,9 @@ schema: ''
 <li><strong>Practice management software financing</strong>: some PMS providers offer 0-2% APR financing on the first-year subscription, reducing upfront cash drag.</li>
 </ul>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>Our start-up engagement covers:</p>
+<p>We match you with a regulated accountancy firm in our partner network. A start-up engagement with that firm covers:</p>
 
 <ul>
 <li>Pre-launch cash flow modelling on your specific practice area, location and personal lifestyle inputs</li>
@@ -186,4 +186,4 @@ schema: ''
 
 <p>Solicitors starting new firms often underestimate the working capital requirement and run out of cash in month 8-10 — usually because the cash conversion cycle is slower than they expected and personal living costs absorb more reserves than budgeted. Working through the numbers in detail before launch — not after — is the difference between a firm that scales and one that closes inside year 2.</p>
 
-<p>Book a 30-minute scoping call below if you're planning to start in the next 6 months. We'll model your specific numbers and tell you honestly what the realistic working capital requirement looks like.</p>
+<p>Book a 30-minute scoping call below if you're planning to start in the next 6 months, and we will match you with a partner firm that can model your specific numbers and tell you honestly what the realistic working capital requirement looks like.</p>

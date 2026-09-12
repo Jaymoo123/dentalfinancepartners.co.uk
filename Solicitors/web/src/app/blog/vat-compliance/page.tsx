@@ -130,7 +130,7 @@ export default function VATCompliancePillarPage() {
       ]}
       cta={{
         heading: "Need VAT Compliance Support?",
-        body: "Our specialist solicitor accountants help law firms navigate VAT requirements and ensure compliance. Get expert guidance on registration, disbursements, and VAT accounting.",
+        body: "The specialist solicitor accountants we match you with help law firms navigate VAT requirements and ensure compliance. Get expert guidance on registration, disbursements, and VAT accounting.",
         submitLabel: SUBMIT_LABEL,
       }}
       posts={posts}

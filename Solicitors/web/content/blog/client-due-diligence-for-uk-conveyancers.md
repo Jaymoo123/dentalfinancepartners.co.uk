@@ -183,7 +183,7 @@ faqs:
 
 <p>CDD conveyancing is a regulatory requirement, but it is also a professional skill. If you are unsure about a particular client or transaction, speak to your COFA or a legal-sector-specialist accountant. They can help you assess risk, structure your procedures, and ensure compliance with the SRA Accounts Rules.</p>
 
-<p>For more detailed guidance on the SRA Accounts Rules and how they interact with CDD, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules Essentials guide</a>. If you need support with your COFA responsibilities, our <a href="/services/cofa-compliance-support">COFA compliance support service</a> can help.</p>
+<p>For more detailed guidance on the SRA Accounts Rules and how they interact with CDD, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules Essentials guide</a>. If you need support with your COFA responsibilities, we can match you with a partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a>.</p>
 
 <p>For firms considering a merger or acquisition, our <a href="/solicitor-guides/post-merger-integration">post-merger integration guide</a> covers how to harmonise CDD policies across merged practices.</p>
 

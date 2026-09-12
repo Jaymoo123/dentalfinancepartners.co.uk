@@ -12,9 +12,9 @@ faqs:
 - question: How often must we reconcile our client account?
   answer: At least every five weeks (Rule 8.3). This is the regulatory maximum interval, not a target. Monthly reconciliation is good practice and gives buffer; five weeks is the cap. The reconciliation must compare the client account ledger total with the bank statement and explain any differences.
 - question: When is the de minimis exemption from the annual Accountant's Report available?
-  answer: 'Rule 12.2 of the SRA Accounts Rules: the firm held no more than £10,000 client money at any time during the period AND the average client money balance did not exceed £250. Both conditions must be met. Many small firms qualify but few realise — we routinely review eligibility for firms that have always assumed they need a report.'
+  answer: 'Rule 12.2 of the SRA Accounts Rules: across the accounting period the client-account balance did not exceed an average of £10,000 AND a maximum of £250,000. Both limbs must be met. Many small firms qualify but few realise, so it is worth checking the figures for the period before commissioning a report. We can help a firm establish whether it qualifies.'
 - question: What happens if we miss the 6-month deadline for the Accountant's Report?
-  answer: The SRA treats late filing as a regulatory matter. Short delay (1-2 months) with a reasonable explanation is typically tolerated. Repeat lateness or unexplained delay can trigger a Forensic Investigation referral, which is materially worse. We aim to issue reports 4-6 weeks ahead of the deadline as a routine.
+  answer: The SRA treats late filing as a regulatory matter. Short delay (1-2 months) with a reasonable explanation is typically tolerated. Repeat lateness or unexplained delay can trigger a Forensic Investigation referral, which is materially worse. Good practice is to have the reporting accountant engaged and the records ready well ahead of the deadline rather than in the final weeks.
 - question: What's the difference between a breach and a 'material breach'?
   answer: 'All breaches of the Accounts Rules should be recorded in the firm''s breach log. Material breaches must be notified to the SRA. The materiality test depends on context: amount, duration, whether client money was put at risk, whether the breach indicates systemic control failure. Over-reporting wastes SRA attention; under-reporting risks regulatory action. The COFA exercises judgement.'
 - question: Can a non-solicitor be the COFA?
@@ -22,7 +22,7 @@ faqs:
 - question: How should we handle client money interest?
   answer: SRA Accounts Rules require firms to pay client money interest when 'fair'. The test depends on the amount held and the length of time. Small amounts and short holding periods typically don't require interest to be paid. The firm must have a written client money interest policy, accessible to clients, and apply it consistently. Policy that says one thing and practice that does another is a breach.
 ctaTitle: Get your SRA Accounts Rules onto specialist hands
-ctaBody: 30-minute scoping call. We confirm whether the de minimis exemption applies, audit your reconciliation rhythm, and quote a fixed fee for the annual Accountant's Report.
+ctaBody: 30-minute scoping call. We help you confirm whether the de minimis exemption applies, look at your reconciliation rhythm, and connect you with an independent reporting accountant for the annual Accountant's Report.
 metaTitle_prev: 'SRA Accounts Rules UK 2025/26: Client Money, Reconciliations'
 metaDescription_prev: The SRA Accounts Rules for UK law firms in plain English. Client money discipline, five-weekly reconciliations, annual accountant's report, de minimis exemption, COFA duties.
 dateModified: '2026-06-12'
@@ -30,7 +30,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 ---
 <p><strong>The SRA Accounts Rules are short on paper but heavy in operation.</strong> Every firm holding client money has to run a reconciliation discipline that holds at SRA inspection. The current version of the rules took effect on 25 November 2019 and has been amended several times since. The headline rules are short; the operational discipline is what matters.</p>
 
-<p>This guide is the practical playbook. We cover what the rules actually require, where firms typically slip, the de minimis exemption that many small firms could claim, common breaches we see in practice, and what the COFA's role actually involves.</p>
+<p>This guide is the practical playbook. We cover what the rules actually require, where firms typically slip, the de minimis exemption that many small firms could claim, the common breaches seen in practice, and what the COFA's role actually involves.</p>
 
 <h2>The headline rules in plain English</h2>
 
@@ -61,11 +61,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>The exemption from the Annual Accountant's Report applies when both of the following are true throughout the accounting period:</p>
 
 <ul>
-<li>The firm held no more than £10,000 client money at any time during the period</li>
-<li>The average client money balance did not exceed £250</li>
+<li>The average client-account balance across the period did not exceed £10,000</li>
+<li>The maximum client-account balance at any point in the period did not exceed £250,000</li>
 </ul>
 
-<p>Both conditions must be met. Many small firms qualify but few realise — the assumption is often "we have client money therefore we need a report", missing that the threshold is per-period not per-firm. We routinely review eligibility for firms that have always assumed they need a report.</p>
+<p>Both conditions must be met. Many small firms qualify but few realise — the assumption is often "we have client money therefore we need a report", missing that the threshold is per-period not per-firm. We can help a firm establish whether it qualifies before it commissions a report it does not need.</p>
 
 <h2>The five-weekly reconciliation rhythm in practice</h2>
 
@@ -78,7 +78,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><strong>Evidence file</strong>: bank statement, ledger extract, reconciliation working, exception report, signed off by the COFA. Filed by date in a structured way the SRA inspector can read.</li>
 </ul>
 
-<h2>Common breaches we see in practice</h2>
+<h2>Common breaches seen in practice</h2>
 
 <p>Most breaches are operational, not deliberate. The list below covers the recurring ones — fixing the process beats firefighting individual breaches.</p>
 
@@ -207,14 +207,14 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Any SRA correspondence and the firm's response history</li>
 </ul>
 
-<p>The faster and cleaner the response, the better the regulatory outcome. We help firms prepare for inspections proactively — getting the working file into a state where any reasonable request can be answered inside an hour.</p>
+<p>The faster and cleaner the response, the better the regulatory outcome. We connect firms with specialists who prepare for inspections proactively — getting the working file into a state where any reasonable request can be answered inside an hour.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens when you bring us in</h2>
 
-<p>Our SRA Accounts Rules engagement covers:</p>
+<p>We connect you with a regulated accountancy firm in our specialist partner network. An SRA Accounts Rules engagement typically covers:</p>
 
 <ul>
-<li>Annual Accountant's Report delivered 4-6 weeks ahead of the SRA deadline</li>
+<li>Introduction to an independent reporting accountant for the annual Accountant's Report, with the records readied ahead of the SRA deadline</li>
 <li>Quarterly review of the reconciliation evidence file and breach log</li>
 <li>COFA support including the materiality-call sounding board for grey-area breaches</li>
 <li>De minimis exemption review (often saves smaller firms a report fee they didn't need to pay)</li>

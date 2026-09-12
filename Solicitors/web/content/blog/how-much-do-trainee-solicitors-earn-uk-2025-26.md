@@ -184,7 +184,7 @@ schema: ''
 
 <p>SQE preparation costs (£15,000-£25,000) are typically funded by the employing firm at Magic Circle, US firms, Silver Circle and most National firms. Smaller regional firms and high-street firms increasingly fund SQE but the picture is more variable than at the City top tier.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>When a trainee actually needs an accountant</h2>
 
 <p>Most trainees and newly-qualified solicitors don't need an accountant, as PAYE handles tax automatically. The case for tax help gets stronger when:</p>
 

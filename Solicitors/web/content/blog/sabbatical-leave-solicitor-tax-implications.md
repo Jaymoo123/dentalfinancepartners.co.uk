@@ -114,4 +114,4 @@ faqs:
 
 <p>A sabbatical can be a valuable break for a solicitor, but the tax implications are not trivial. PAYE continuity, partnership profit allocation, pension contribution limits, and capital gains tax all need careful planning. The key is to maintain your employment or partnership status during the break, agree the terms in writing, and take advice from a legal-sector specialist accountant before you go.</p>
 
-<p>For a detailed review of your specific situation, contact our team at <a href="/contact">Accounts for Lawyers</a>. We advise solicitors and law firm partners on tax planning for sabbaticals, partnership exits, and practice succession.</p>
+<p>For a detailed review of your specific situation, contact our team at <a href="/contact">Accounts for Lawyers</a>. We connect solicitors and law firm partners with regulated accountancy firms in our specialist partner network for tax planning on sabbaticals, partnership exits, and practice succession.</p>

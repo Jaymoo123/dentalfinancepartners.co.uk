@@ -166,6 +166,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Most law firms use a generalist accountant who does not specialise in the SRA Accounts Rules. That is a risk. A specialist solicitor accountant understands the nuances of the <strong>bank account split</strong>, the reconciliation requirements, and the annual accountant's report process.</p>
 
-<p>We work with firms of all sizes, from sole practitioners to multi-partner LLPs. Our <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance service</a> includes a review of your client account procedures, a mock accountant's report, and ongoing support for your COFA.</p>
+<p>We work with firms of all sizes, from sole practitioners to multi-partner LLPs. Our <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance service</a> matches you with a regulated firm in our specialist partner network, and that firm reviews your client account procedures, carries out a mock accountant's report, and supports your COFA.</p>
 
-<p>If you are a partner in a firm that handles client money, do not leave compliance to chance. <a href="/contact">Contact us</a> for a free initial consultation. We will review your current setup and tell you where the risks are.</p>
+<p>If you are a partner in a firm that handles client money, do not leave compliance to chance. <a href="/contact">Contact us</a> for a free initial consultation. We will put you in touch with a partner firm that can review your current setup and tell you where the risks are.</p>

@@ -91,7 +91,7 @@ faqs:
 
 <p>For a fixed-share partner on parental leave, the partnership agreement may provide for a reduced fixed share during leave. For example, the partner might receive 60% of their normal fixed share for the first 6 months of leave, then 40% for the next 6 months. This is still taxed as partnership profit, not as employment income.</p>
 
-<p>However, fixed-share partners are more likely to be caught by the Salaried Member Rules. If Conditions A, B, and C are all met, the partner is deemed an employee for tax purposes. In that case, the LLP must operate PAYE on their drawings, and the partner may be entitled to SMP from the LLP. This is a complex area, and we advise fixed-share partners to seek professional advice before taking parental leave.</p>
+<p>However, fixed-share partners are more likely to be caught by the Salaried Member Rules. If Conditions A, B, and C are all met, the partner is deemed an employee for tax purposes. In that case, the LLP must operate PAYE on their drawings, and the partner may be entitled to SMP from the LLP. This is a complex area, and fixed-share partners should take professional advice before going on parental leave.</p>
 
 <p>For more detail on the distinction between equity and fixed-share partners, see our guide: <a href="/solicitor-guides/fee-share-vs-equity-partner">Fee Share vs Equity Partner: Tax and Legal Differences</a>.</p>
 
@@ -144,4 +144,4 @@ faqs:
 
 <p>However, the practical implications can be complex. Cash flow mismatches between drawings and profit share, pension contribution limits, and capital account requirements all need careful planning. We recommend that every solicitor partner takes professional advice from a legal-sector-specialist accountant before going on parental leave.</p>
 
-<p>For a full review of your partnership deed and tax position, <a href="/contact">contact our team</a> of solicitor accountants. We can help you model your parental leave tax position and ensure your partnership agreement is fit for purpose.</p>
+<p>For a full review of your partnership deed and tax position, <a href="/contact">contact our team</a>. We will match you with a regulated firm in our specialist partner network that can model your parental leave tax position and check that your partnership agreement is fit for purpose.</p>

@@ -47,7 +47,7 @@ const LEGAL_SECTOR = [
   { label: "Condition C threshold", value: "<25%", note: "Capital contribution as % of disguised salary" },
   { label: "SRA Accounts Rules reconciliation cap", value: "5 weeks", note: "Rule 8.3 maximum interval — NOT monthly" },
   { label: "SRA Accountant's Report deadline", value: "6 months", note: "After firm's accounting period end" },
-  { label: "Rule 12.2 de minimis exemption", value: "£10,000 / £250", note: "Peak client money / average balance — both must be met" },
+  { label: "Rule 12.2 de minimis exemption", value: "£10,000 / £250,000", note: "Average client-account balance / maximum balance across the period — both must be met" },
   { label: "PII minimum cover (unincorporated)", value: "£2m", note: "Per claim, no aggregate at this level" },
   { label: "PII minimum cover (incorporated)", value: "£3m", note: "Per claim, no aggregate at this level" },
   { label: "PII run-off cover minimum", value: "6 years", note: "Post-cessation under SRA Minimum Terms and Conditions" },

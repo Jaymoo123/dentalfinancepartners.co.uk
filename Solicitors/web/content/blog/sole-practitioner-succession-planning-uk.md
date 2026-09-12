@@ -172,7 +172,7 @@ faqs:
 
 <h2>Common Mistakes to Avoid</h2>
 
-<p>Based on our experience advising sole practitioner solicitors, these are the most common pitfalls:</p>
+<p>These are the most common pitfalls for a sole practitioner:</p>
 
 <ul>
 <li><strong>No plan at all.</strong> The biggest mistake. Without a plan, the SRA may intervene and your clients suffer.</li>
@@ -195,4 +195,4 @@ faqs:
 <li>Ensure your SRA compliance is up to date</li>
 </ul>
 
-<p>For a confidential discussion of your succession options, contact our team. We advise sole practitioner solicitors on practice valuation, SRA compliance, and tax-efficient exit strategies. <a href="/contact">Get in touch</a> to arrange a free initial consultation.</p>
+<p>For a confidential discussion of your succession options, contact our team. We connect sole practitioner solicitors with regulated accountancy firms in our specialist partner network for practice valuation, SRA compliance, and tax-efficient exit strategies. <a href="/contact">Get in touch</a> to arrange a free initial consultation.</p>

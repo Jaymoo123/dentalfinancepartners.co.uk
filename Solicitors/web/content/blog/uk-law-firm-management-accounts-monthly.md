@@ -157,6 +157,6 @@ A: Even a two-partner firm benefits from monthly management accounts. The cost i
 
 <p>For firms that want to go further, consider linking partner profit share to the KPIs in the management accounts. That aligns behaviour with the numbers and makes the monthly review a genuine driver of performance.</p>
 
-<p>If you need help setting up a management account system for your law firm, speak to a legal-sector-specialist accountant who understands the specific economics of solicitors' practices. We can help you design a pack that works for your firm's size, structure, and practice areas.</p>
+<p>If you need help setting up a management account system for your law firm, speak to a legal-sector-specialist accountant who understands the specific economics of solicitors' practices. We can connect you with a regulated firm in our specialist partner network that will design a pack for your firm's size, structure, and practice areas.</p>
 
 <p><a href="/services">Contact us</a> to discuss your firm's management account needs, or explore our <a href="/services/solicitor-accountants">solicitor accountant services</a> for tailored support.</p>

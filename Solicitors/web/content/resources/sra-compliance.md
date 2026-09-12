@@ -30,7 +30,7 @@ lastReviewed: "July 2025"
 
 <p>You cannot use the client account as a banking facility for clients. Every receipt into, transfer between or withdrawal from the client account must be for the purpose of delivering regulated legal services to the client.</p>
 
-<p>In practice this means you cannot hold money for a client where there is no legal matter underpinning it, receive funds and hold them "in case they are needed later", or act as a quasi-bank for a client's cash management. This is one of the most common and most serious breaches. If you are unsure whether a particular transaction is permissible, your COFA should advise. We can help you design compliant processes around payment flows, but enforcement questions belong to the SRA.</p>
+<p>In practice this means you cannot hold money for a client where there is no legal matter underpinning it, receive funds and hold them "in case they are needed later", or act as a quasi-bank for a client's cash management. This is one of the most common and most serious breaches. If you are unsure whether a particular transaction is permissible, your COFA should advise. We can connect you with specialists who help design compliant processes around payment flows, but enforcement questions belong to the SRA.</p>
 
 <h2 id="rule-7-client-interest">Rule 7: client interest</h2>
 
@@ -59,7 +59,7 @@ lastReviewed: "July 2025"
 
 <h3 id="choosing-an-accountant">Choosing an accountant for the report</h3>
 
-<p>The accountant must be qualified and independent: a sole practitioner cannot prepare their own firm's report. The report must be submitted to the SRA within six months of the accounting period end, as noted above. We prepare SRA accountants' reports for law firms and can advise on what the accountant will look at, what records you need to have ready, and how to minimise disruption to the audit.</p>
+<p>The accountant must be qualified and independent: a sole practitioner cannot prepare their own firm's report. The report must be submitted to the SRA within six months of the accounting period end, as noted above. We connect law firms with an appropriately qualified independent reporting accountant, and can help you understand what that accountant will look at, what records you need to have ready, and how to minimise disruption.</p>
 
 <h2 id="operational-reserve">Sizing an operational reserve</h2>
 

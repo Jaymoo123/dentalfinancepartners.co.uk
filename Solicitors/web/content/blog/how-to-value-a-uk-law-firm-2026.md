@@ -169,6 +169,6 @@ faqs:
 
 <p>If you are a solicitor partner considering a sale, a firm buyer evaluating a target, or a COFA advising on succession, take the time to understand the valuation process. A well-prepared valuation protects your financial interests and avoids disputes later.</p>
 
-<p>For a detailed assessment of your firm's value, speak to a legal-sector specialist accountant. We can help you prepare the financial data, model the tax outcomes, and negotiate with confidence. <a href="/services/practice-valuation">Contact our practice valuation team</a> for a confidential discussion.</p>
+<p>For a detailed assessment of your firm's value, speak to a legal-sector specialist accountant. We can match you with a regulated firm in our partner network that will help you prepare the financial data, model the tax outcomes, and negotiate with confidence. <a href="/services/practice-valuation">Ask us about practice valuation</a> for a confidential discussion.</p>
 
 <p>You may also find these resources useful: <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">Partnership vs LLP for Solicitors</a>, <a href="/for-firm-buyers">Guidance for Firm Buyers</a>, and <a href="/calculators/partnership-vs-llp-take-home">Partnership vs LLP Take-Home Calculator</a>.</p>

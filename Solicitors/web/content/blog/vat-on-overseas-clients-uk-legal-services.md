@@ -7,15 +7,16 @@ generator: opus-4.8/netnew-wave
 author: Accounts for Lawyers Editorial Team
 category: VAT & Compliance
 metaTitle: 'VAT on Overseas Clients: a UK Law Firm Place-of-Supply'
-metaDescription: Does UK VAT apply to overseas clients? Place of supply rules for B2B and B2C work, with 20% VAT still due on UK conveyancing whoever the client is.
+metaDescription: Does UK VAT apply to overseas clients? Place of supply rules under VATA 1994 s.7A and Sch 4A para 16, with 20% VAT still due on UK conveyancing whoever the client is.
 altText: UK solicitor reviewing a contract with an overseas client, law firm VAT compliance documents visible
 image: ''
 h1: How Does VAT Apply to Overseas Clients for a UK Law Firm?
-summary: A UK law firm must determine whether VAT applies to overseas clients by applying place of supply rules. The key distinction is whether the client is a business (B2B) or a consumer (B2C), and where the client is established. This guide explains the rules with worked examples for solicitors.
+summary: A UK law firm must determine whether VAT applies to overseas clients by applying the place of supply rules in VATA 1994 s.7A and Schedule 4A. The key distinctions are whether the client is a relevant business person, where the client belongs, and whether the service relates to land. This guide explains the rules with worked examples for solicitors.
 keyTakeaways:
 - VAT on overseas clients turns on the place of supply rules, driven by whether the client is a business (B2B) or a consumer (B2C).
-- For B2B services not relating to land, the place of supply is where the client belongs, so no UK VAT is charged on an overseas business.
-- For B2C services, the place of supply is the UK, so 20% VAT applies even when the private client lives abroad.
+- For B2B services not relating to land, VATA 1994 s.7A(2)(a) puts the place of supply where the client belongs, so no UK VAT is charged on an overseas business.
+- For B2C legal services to a client belonging outside the UK, VATA 1994 Schedule 4A paragraph 16 moves the place of supply to the client's country, so the supply is outside the scope of UK VAT and no VAT is charged.
+- For B2C legal services to a client belonging in the UK, the supplier rule in VATA 1994 s.7A(2)(b) applies and 20% UK VAT is due.
 - Services relating to a specific piece of land are taxed where the land sits, so UK conveyancing always carries 20% UK VAT.
 - For a no-VAT B2B treatment, hold evidence of business status such as a VAT or company registration number, verified via VIES for EU clients.
 schema: ''
@@ -23,7 +24,7 @@ faqs:
 - question: What is the place of supply for a UK solicitor advising a US business on a UK commercial contract?
   answer: If the advice does not relate to land, the place of supply is where the client belongs (the US). The supply is B2B, so no UK VAT is charged. You must hold evidence of the client's business status, such as a US tax ID or company registration number. If the advice relates to UK land (e.g., a property dispute), the place of supply is the UK and UK VAT applies at 20%.
 - question: Do I charge VAT on legal fees for a private client living in France?
-  answer: Yes. For a B2C supply (private individual), the place of supply is where your law firm is established (the UK). You must charge 20% UK VAT on your fees, regardless of the client's residence. The only exception is if the service relates to land outside the UK (e.g., advising on a French property purchase), in which case the place of supply is France and no UK VAT is charged.
+  answer: Generally no. Legal services are a listed category in VATA 1994 Schedule 4A paragraph 16, so where the private client belongs outside the UK the place of supply is the client's country (France) and the supply is outside the scope of UK VAT. You still keep evidence of where the client belongs. The main trap is land, because if the work relates to a specific piece of UK land, such as conveyancing on a UK property, Schedule 4A paragraph 1 puts the place of supply in the UK and 20% UK VAT is due whoever the client is.
 - question: What evidence do I need to treat an overseas client as B2B for VAT purposes?
   answer: HMRC expects you to hold reasonable commercial evidence. This includes the client's VAT registration number (if any), company registration number, business letterhead, or a signed statement from the client confirming their business status. For EU clients, you should verify the VAT number via the VIES system. For non-EU clients, a tax ID or equivalent is sufficient. Retain this evidence with your VAT records.
 - question: Does the land exception apply to all conveyancing work?
@@ -39,7 +40,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>For a <strong>solicitor</strong> or <strong>law firm</strong>, the core question is: where is the supply of your legal services treated as taking place? If the place of supply is the UK, you must charge UK VAT at 20% (unless an exemption applies). If the place of supply is outside the UK, the supply is outside the scope of UK VAT, and you do not charge VAT.</p>
 
-<p>This article explains the rules for <strong>B2C overseas</strong> and <strong>B2B overseas legal</strong> services, with worked examples. It also covers the interaction with the <strong>place of supply</strong> rules for solicitors handling cross-border work.</p>
+<p>This article explains the rules for <strong>B2C overseas</strong> and <strong>B2B overseas legal</strong> services, with worked examples. It also covers the interaction with the <strong>place of supply</strong> rules for solicitors handling cross-border work, including the Schedule 4A overrides for land and for consultancy-type services supplied to overseas private clients.</p>
 
 <h2>The Basic Rule: B2B vs B2C</h2>
 
@@ -47,7 +48,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>B2B Supplies (Business to Business)</h3>
 
-<p>For legal services supplied to a business customer, the place of supply is where the customer belongs. If your client is a business established outside the UK, the place of supply is outside the UK. You do not charge UK VAT.</p>
+<p>For legal services supplied to a relevant business person, the general rule in <strong>VATA 1994 s.7A(2)(a)</strong> puts the place of supply where the customer belongs. If your client is a business established outside the UK, the place of supply is outside the UK, the supply is outside the scope of UK VAT and you do not charge UK VAT. The customer accounts for the tax under its own reverse charge if its country operates one. You still report the supply on your VAT return as an outside-the-scope supply, and you keep evidence of both the customer's business status and its place of belonging.</p>
 
 <p>However, you must obtain and retain evidence that the client is a business. HMRC expects you to hold the client's VAT registration number (if they have one), or other commercial evidence such as a company registration number, business letterhead, or a signed statement from the client confirming their business status.</p>
 
@@ -55,15 +56,17 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>B2C Supplies (Business to Consumer)</h3>
 
-<p>For legal services supplied to a non-business customer (a private individual), the place of supply is where the supplier belongs. If your law firm is established in the UK, the place of supply is the UK. You must charge UK VAT at 20%.</p>
+<p>For legal services supplied to a person who is not a relevant business person, the starting point in <strong>VATA 1994 s.7A(2)(b)</strong> is that the place of supply is where the supplier belongs. Where your UK firm acts for a private client who also belongs in the UK, the place of supply is the UK and you charge UK VAT at 20%.</p>
 
-<p>This applies even if the client is resident overseas. A UK solicitor acting for a private individual in France, the USA, or Australia must charge UK VAT on the fees.</p>
+<p>That supplier rule is overridden where the private client belongs outside the UK. <strong>VATA 1994 Schedule 4A paragraph 16</strong> treats a listed category of services, which includes legal services along with consultancy, accountancy, advertising and data processing, as supplied where the customer belongs when the customer belongs outside the UK and is not a relevant business person. The consequence is that B2C legal work for an overseas private client is <strong>outside the scope of UK VAT</strong>, and no UK VAT is charged.</p>
 
-<p><strong>Example:</strong> A UK law firm acts for a French resident who is selling a UK property. The client is a private individual (B2C). The place of supply is the UK. The firm must charge 20% UK VAT on its legal fees.</p>
+<p>Because the supply would be taxable if it were made in the UK, input tax attributable to it remains recoverable in the ordinary way. Being outside the scope on these grounds does not restrict your input tax.</p>
+
+<p><strong>Example:</strong> A UK law firm advises a private individual resident in France on a contractual dispute with no UK land element. The client is a private individual (B2C) belonging outside the UK. Schedule 4A paragraph 16 applies, the place of supply is France, and the supply is outside the scope of UK VAT. On a fee of £5,000 the firm invoices £5,000 with no VAT, and marks the invoice "Outside the scope of UK VAT". Had the same client belonged in the UK, the fee would have carried VAT of £5,000 x 20% = £1,000, giving £6,000 gross.</p>
 
 <h2>Special Rules for Legal Services: The "Services Relating to Land" Exception</h2>
 
-<p>There is an important exception for services relating to land. If your legal services relate to a specific piece of land, the place of supply is where the land is located, regardless of whether the client is B2B or B2C.</p>
+<p>There is an important exception for services relating to land, set out in <strong>VATA 1994 Schedule 4A paragraph 1</strong>. If your legal services relate to a specific piece of land, the place of supply is where the land is located, regardless of whether the client is B2B or B2C and regardless of where the client belongs. This is the override that catches conveyancers who assume all overseas work escapes UK VAT.</p>
 
 <p>For a UK solicitor handling a conveyancing transaction for a UK property, the land is in the UK. The place of supply is the UK. You charge UK VAT, even if the client is an overseas business.</p>
 
@@ -80,7 +83,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li><strong>Identify the client type:</strong> Is the client a business (B2B) or a private individual (B2C)? Obtain evidence of business status for B2B claims.</li>
 <li><strong>Determine the nature of the service:</strong> Does the service relate to land? If yes, the place of supply is where the land is located.</li>
-<li><strong>Apply the place of supply rule:</strong> For B2B services not relating to land, place of supply is where the client belongs. For B2C services not relating to land, place of supply is where your firm belongs (UK).</li>
+<li><strong>Apply the place of supply rule:</strong> For B2B services not relating to land, the place of supply is where the client belongs (s.7A(2)(a)). For B2C services not relating to land, the place of supply is where your firm belongs (s.7A(2)(b)) unless the client belongs outside the UK, in which case Schedule 4A paragraph 16 moves it to the client's country.</li>
 <li><strong>Document your reasoning:</strong> Keep a clear record of your VAT treatment decision, including the evidence you relied on. This is essential for HMRC compliance.</li>
 <li><strong>Issue the correct invoice:</strong> If no UK VAT is chargeable, issue an invoice stating "Outside the scope of UK VAT" or "Reverse charge applies" (for B2B supplies to EU businesses). If UK VAT is chargeable, show the VAT amount.</li>
 </ul>
@@ -93,9 +96,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>A UK law firm provides corporate advice to a Canadian company. The advice does not relate to any specific land. The client is a business (B2B). The place of supply is Canada (where the client belongs). No UK VAT is charged. The firm holds the client's Canadian business number as evidence.</p>
 
-<h3>Example 2: B2C Overseas Client (UK Probate)</h3>
+<h3>Example 2: B2C Overseas Client (Estate Administration)</h3>
 
-<p>A UK solicitor handles the probate of a UK estate for a beneficiary who lives in Australia. The beneficiary is a private individual (B2C). The service relates to UK assets but is not a service "relating to land" in the narrow VAT sense (it relates to the administration of an estate). The place of supply is the UK (where the supplier belongs). The firm charges 20% UK VAT.</p>
+<p>A UK solicitor is instructed by a private individual who belongs in Australia to administer a UK estate. The client is a private individual (B2C). The work is not a service "relating to land" in the narrow VAT sense, because it is the administration of an estate rather than advice on a specific property. Schedule 4A paragraph 16 applies, the place of supply is Australia, and the fee is outside the scope of UK VAT. The firm charges no UK VAT and retains evidence of where the client belongs. If the retainer later extends to conveying a UK property in the estate, that element is land-related under Schedule 4A paragraph 1 and carries 20% UK VAT.</p>
 
 <h3>Example 3: B2B Overseas Client (UK Conveyancing)</h3>
 
@@ -103,14 +106,16 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Example 4: B2C Overseas Client (Foreign Will)</h3>
 
-<p>A UK solicitor drafts a will for a UK resident who is temporarily living in Dubai. The client is a private individual (B2C). The service does not relate to land. The place of supply is the UK. The firm charges 20% UK VAT.</p>
+<p>A UK solicitor drafts a will for a client whose usual residence remains the UK while they are temporarily working in Dubai. The client is a private individual (B2C) who still belongs in the UK, so Schedule 4A paragraph 16 is not in point. The place of supply is the UK under s.7A(2)(b) and the firm charges 20% UK VAT. Belonging, not a temporary address, is what decides this, so record the basis on which you concluded the client belongs in the UK.</p>
 
 <h2>Common Pitfalls for Law Firms</h2>
 
 <p>Several errors recur in practice. Avoid these:</p>
 
 <ul>
-<li><strong>Assuming all overseas clients are outside VAT:</strong> B2C clients always attract UK VAT unless the service relates to land outside the UK.</li>
+<li><strong>Assuming every private client attracts UK VAT:</strong> a private client belonging outside the UK is covered by Schedule 4A paragraph 16, so the supply is outside the scope. Charging 20% on it is an overcharge you will have to correct.</li>
+<li><strong>Assuming all overseas clients are outside VAT:</strong> land-related work is decided by where the land is, so UK conveyancing carries 20% UK VAT whoever the client is and wherever they belong.</li>
+<li><strong>Failing to evidence where the client belongs:</strong> the paragraph 16 treatment depends on belonging outside the UK, so a contract address alone is thin. Hold the same quality of record you would for a B2B claim.</li>
 <li><strong>Failing to obtain B2B evidence:</strong> HMRC can challenge a no-VAT treatment if you cannot prove the client is a business.</li>
 <li><strong>Misapplying the land exception:</strong> Not all services that touch land are "services relating to land" for VAT purposes. HMRC's guidance is narrow. If in doubt, seek specialist advice.</li>
 <li><strong>Ignoring post-Brexit changes:</strong> Since 1 January 2021, supplies of services to EU businesses are treated the same as supplies to non-EU businesses. The reverse charge still applies, but you must check the client's VAT number validity.</li>

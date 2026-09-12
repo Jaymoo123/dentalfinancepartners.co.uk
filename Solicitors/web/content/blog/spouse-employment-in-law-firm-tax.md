@@ -134,6 +134,6 @@ faqs:
 
 <h2>When to Seek Specialist Advice</h2>
 
-<p>Spouse employment in a law firm is not inherently risky, but it requires careful structuring. If you are a partner considering employing your spouse, or if HMRC has raised questions about an existing arrangement, speak to a legal-sector-specialist accountant. We at Accounts for Lawyers advise solicitors and law firm partners on tax-efficient family employment structures that comply with the wholly and exclusively test, market rate rules, and SRA Accounts Rules.</p>
+<p>Spouse employment in a law firm is not inherently risky, but it requires careful structuring. If you are a partner considering employing your spouse, or if HMRC has raised questions about an existing arrangement, speak to a legal-sector-specialist accountant. Accounts for Lawyers connects solicitors and law firm partners with regulated accountancy firms in our specialist partner network that advise on family employment structures complying with the wholly and exclusively test, market rate rules, and SRA Accounts Rules.</p>
 
-<p>Contact us for a confidential discussion about your firm's situation. We can review your current spouse employment arrangement, benchmark salaries, and recommend adjustments to minimise tax risk.</p>
+<p>Contact us for a confidential discussion about your firm's situation. The partner firm we match you with can review your current spouse employment arrangement, benchmark salaries, and recommend adjustments to minimise tax risk.</p>

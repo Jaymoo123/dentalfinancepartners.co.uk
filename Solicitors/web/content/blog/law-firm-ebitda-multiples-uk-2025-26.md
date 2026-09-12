@@ -27,7 +27,7 @@ faqs:
   - question: "What gets a law firm to a 3x EBITDA multiple?"
     answer: "Specialist positioning in a high-margin practice area with sustainable competitive advantage. Examples: a personal injury firm with a strong CFA / litigation funding partnership and established case throughput; a prestige private client firm with high-net-worth client relationships and complex estate / trust expertise; a niche commercial litigation firm with a track record in specific industry sectors; a regulatory specialist with deep institutional knowledge. Plus partner depth (not key-person risk), demonstrable profit growth, and a buyer who values the strategic fit."
   - question: "Should I sell now or wait?"
-    answer: "Depends on multiple variables. The BADR rate is now 18% (it rose from 14% on 6 April 2026), so the sub-6-April-2026 completion window that saved £40,000 of CGT per £1m of qualifying gain has closed. Any future rate move is the timing factor to watch now. Market conditions also matter, conveyancing-heavy firms may benefit from waiting for property market recovery; specialist firms may benefit from acting now while corporate acquirer appetite is high. Personal circumstances (retirement timing, succession pressure) usually weigh more than market timing. We model both sides on the specific firm's position."
+    answer: "Depends on multiple variables. The BADR rate is now 18% (it rose from 14% on 6 April 2026), so the sub-6-April-2026 completion window that saved £40,000 of CGT per £1m of qualifying gain has closed. Any future rate move is the timing factor to watch now. Market conditions also matter, conveyancing-heavy firms may benefit from waiting for property market recovery; specialist firms may benefit from acting now while corporate acquirer appetite is high. Personal circumstances (retirement timing, succession pressure) usually weigh more than market timing. Both sides should be modelled on the specific firm's position."
 ---
 
 <p><strong>UK law firm EBITDA multiples in 2026/27 range from 0.8x for conveyancing-heavy firms in soft markets to 3x or more for specialist firms with premium positioning.</strong> Most multi-partner LLPs sit at 1.2-2.0x normalised EBITDA. The variance is enormous, and the multiple itself matters less than the normalisation work that determines the EBITDA number being multiplied.</p>
@@ -155,9 +155,9 @@ faqs:
 <li><strong>Months 6 to 0</strong>: live process, due diligence, completion</li>
 </ul>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>Our pre-sale planning engagement covers:</p>
+<p>We match you with a regulated accountancy firm in our partner network. A pre-sale planning engagement with that firm covers:</p>
 
 <ul>
 <li>Realistic valuation on your specific firm's normalised EBITDA, practice area mix and region</li>

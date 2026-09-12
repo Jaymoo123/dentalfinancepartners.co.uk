@@ -135,7 +135,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If the error goes the other way (adding VAT to agency disbursements), the solicitor has overcharged the client. The client may demand a refund of the overpaid VAT. The solicitor must then adjust their VAT return and repay the client.</p>
 
-<p>For COFAs and compliance officers, this is a high-risk area. Our <a href="/services/cofa-compliance-support">COFA compliance support</a> service can help you review your firm's disbursement processes and implement controls.</p>
+<p>For COFAs and compliance officers, this is a high-risk area. A partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a> can help you review your firm's disbursement processes and implement controls.</p>
 
 <h2>Special Cases: SDLT, Land Registry, and Search Fees</h2>
 
@@ -167,6 +167,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Getting disbursement VAT treatment wrong is costly and time-consuming to correct. A solicitor-specialist accountant can review your firm's processes, check your nominal ledger coding, and advise on borderline cases. If you are unsure whether a particular cost is an agency or principal disbursement, ask before you invoice the client.</p>
 
-<p>We work with conveyancing firms of all sizes, from sole practitioners to multi-partner LLPs. If you need a second opinion on your firm's VAT treatment of disbursements, <a href="/contact">contact us</a> for a confidential discussion.</p>
+<p>We match conveyancing firms of all sizes, from sole practitioners to multi-partner LLPs, with accountants in our partner network. If you need a second opinion on your firm's VAT treatment of disbursements, <a href="/contact">contact us</a> for a confidential discussion.</p>
 
 <p>For more on law firm VAT compliance, see our guide on <a href="/services/solicitor-accountants">solicitor accounting services</a> and our <a href="/calculators/sra-client-account-reserve">SRA client account reserve calculator</a>.</p>

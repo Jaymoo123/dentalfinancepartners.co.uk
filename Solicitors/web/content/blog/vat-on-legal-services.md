@@ -115,7 +115,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The core of VAT on legal services is short: legal work is standard-rated at 20%, registration is mandatory once taxable turnover passes £90,000, and only genuine agency disbursements escape VAT. The complexity sits in the edges, particularly disbursements, search fees, counsel's fees and overseas supplies, where a small misclassification repeated across a caseload becomes a material exposure.</p>
 
-<p>If you want a second pair of eyes on how your firm bills VAT, or you are setting up a new service line, our team works with SRA-regulated firms across England and Wales on exactly these questions. You can read more about our <a href="/services">work with law firms</a> or get in touch to talk through your VAT position.</p>
+<p>If you want a second pair of eyes on how your firm bills VAT, or you are setting up a new service line, the regulated firms in our specialist partner network work with SRA-regulated firms across England and Wales on exactly these questions. You can read more about our <a href="/services">work with law firms</a> or get in touch to talk through your VAT position.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">Related Guide</p>

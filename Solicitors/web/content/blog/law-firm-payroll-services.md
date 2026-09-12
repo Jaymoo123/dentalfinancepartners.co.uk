@@ -73,7 +73,7 @@ faqs:
 
 <p>For practices considering outsourcing payroll, start by documenting your current processes and identifying pain points. This helps potential providers understand your needs and propose appropriate solutions.</p>
 
-<p>If you're evaluating payroll options for your legal practice, <a href="/contact">speak to our specialist team</a> who can assess your requirements and explain how professional services could benefit your firm.</p>
+<p>If you're evaluating payroll options for your legal practice, <a href="/contact">speak to us</a> and we will match you with a partner firm that can assess your requirements and explain how professional payroll services could benefit your firm.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

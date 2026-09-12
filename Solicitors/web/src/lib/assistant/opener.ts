@@ -64,7 +64,7 @@ const COMBO_SOLE_INC: [string, string, string] = [
 
 const USED_CALC: [string, string, string] = [
   "Got your numbers? It is worth having a specialist sanity-check them for your firm, free.",
-  "Those figures are a solid start. Want one of our specialists to confirm them on a quick call?",
+  "Those figures are a solid start. Want a specialist from our partner network to confirm them on a quick call?",
   "Shall I set up a free call to walk through what the calculator gave you?",
 ];
 

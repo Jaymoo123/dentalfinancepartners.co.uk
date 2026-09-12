@@ -22,7 +22,7 @@ const data: AudienceStage = {
   concerns: [
     {
       title: "What's a fair multiple for this firm?",
-      body: "Highly dependent on practice area and region. High-street general practice in soft regional markets: 0.8-1.2x normalised profit. Mid-market LLP: 1.2-2x. Specialist firms (PI, niche commercial litigation, prestige private client): 2-3x+. Conveyancing-heavy firms have been depressed by post-2022 market conditions. We model against comparables.",
+      body: "Highly dependent on practice area and region. High-street general practice in soft regional markets: 0.8-1.2x normalised profit. Mid-market LLP: 1.2-2x. Specialist firms (PI, niche commercial litigation, prestige private client): 2-3x+. Conveyancing-heavy firms have been depressed by post-2022 market conditions. Your partner firm models against comparables.",
     },
     {
       title: "How do I value the WIP I'm buying?",
@@ -74,7 +74,7 @@ const data: AudienceStage = {
     },
     {
       q: "Do I buy assets or shares?",
-      a: "For LLPs and partnerships, it's typically an asset purchase (you buy the goodwill, WIP, equipment, and the client book transfers via novation). For incorporated firms (Ltd or PLC), share purchase is possible if you also acquire the SRA-regulated entity. Asset purchases give cleaner liability separation; share purchases give the seller a cleaner BADR position. We model both before recommending.",
+      a: "For LLPs and partnerships, it's typically an asset purchase (you buy the goodwill, WIP, equipment, and the client book transfers via novation). For incorporated firms (Ltd or PLC), share purchase is possible if you also acquire the SRA-regulated entity. Asset purchases give cleaner liability separation; share purchases give the seller a cleaner BADR position. Your partner firm models both before recommending.",
     },
     {
       q: "What's the typical earn-out structure?",

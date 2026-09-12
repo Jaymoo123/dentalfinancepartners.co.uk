@@ -27,7 +27,7 @@ faqs:
   - question: "Do I need SRA consent to buy a UK law firm?"
     answer: "Notification is required for material changes in ownership or management within 7 days. Consent depends on the deal structure. An asset purchase of an LLP's trade typically requires client matter consent and PII continuity rather than direct SRA consent. A share purchase of an incorporated firm may require an Alternative Business Structure licence application if the ownership structure changes. If non-solicitor capital is coming in, the ABS application is a 3 to 6 month process and should be in flight before completion."
   - question: "Should the deal be an asset purchase or a share purchase?"
-    answer: "Most UK law firm acquisitions are asset purchases because the typical seller structure is an LLP and the typical acquirer wants to inherit the goodwill, WIP and equipment without inheriting historic liabilities. Share purchases work better when the seller is incorporated and the goodwill amortisation benefit on the new owner side is meaningful. We model both on the actual numbers before recommending; the right structure depends on the specific firm, the buyer's existing position, and any partner-side BADR considerations."
+    answer: "Most UK law firm acquisitions are asset purchases because the typical seller structure is an LLP and the typical acquirer wants to inherit the goodwill, WIP and equipment without inheriting historic liabilities. Share purchases work better when the seller is incorporated and the goodwill amortisation benefit on the new owner side is meaningful. Both should be modelled on the actual numbers before a route is chosen; the right structure depends on the specific firm, the buyer's existing position, and any partner-side BADR considerations."
 ---
 
 <p><strong>UK law firm purchase prices in 2025/26 typically range from £150,000 for a small sole-practitioner book to £5 million or more for established multi-partner LLPs.</strong> The headline price is calculated as normalised profit times a market multiple, plus the recoverable Work In Progress (WIP) and the net book value of tangible assets. That single formula does most of the work; the variance comes from the multiple, which depends on practice area, firm size, regional buyer demand, and the seller's specific positioning.</p>
@@ -136,9 +136,9 @@ faqs:
 
 <p>For a £3m deal, total transaction costs typically add 2-4 percent of the headline price. Compared to the strategic value of getting the deal right, these costs are small — but they should be in the budget from day 1.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>Our acquisition support engagement covers the buyer's financial work:</p>
+<p>We match you with a regulated accountancy firm in our partner network. An acquisition support engagement with that firm covers the buyer's financial work:</p>
 
 <ul>
 <li>Pre-offer financial due diligence on the target firm's accounts, WIP, and management information</li>
@@ -148,8 +148,8 @@ faqs:
 <li>Post-completion 90-day integration project management</li>
 </ul>
 
-<p>The regulatory solicitor handles SRA-side filings, client novation letters and partnership agreement updates; we work alongside.</p>
+<p>The regulatory solicitor handles SRA-side filings, client novation letters and partnership agreement updates; the partner firm works alongside them.</p>
 
 <p>For a quick read on the typical 90-day playbook after completion, see our <a href="/solicitor-guides/post-merger-integration">post-merger integration pillar guide</a>. For an indicative valuation of any specific firm, the <a href="/calculators/law-firm-valuation">law firm valuation calculator</a> gives a directional number on your inputs.</p>
 
-<p>If you're in due diligence on a specific firm or planning an offer in the next 6 months, book a 30-minute scoping call below. We confirm scope, build the work plan, and quote a fixed engagement fee.</p>
+<p>If you're in due diligence on a specific firm or planning an offer in the next 6 months, book a 30-minute scoping call below. We confirm scope and introduce the partner firm, which builds the work plan and quotes its engagement fee.</p>

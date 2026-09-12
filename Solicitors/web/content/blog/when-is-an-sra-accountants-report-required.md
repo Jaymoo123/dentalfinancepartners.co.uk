@@ -114,7 +114,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>How Accounts for Lawyers Can Help</h2>
 
-<p>We prepare SRA accountant's reports for solicitor firms across England and Wales, from sole-practitioner conveyancers to multi-partner LLPs. We work with your COFA to make sure the report is accurate and obtained in good time, and we help you build the day-to-day controls that keep it unqualified year on year.</p>
+<p>We do not prepare the report ourselves, and nor should we: the reporting accountant has to hold a practising certificate from a recognised supervisory body and be independent of your firm. What we do is connect solicitor firms across England and Wales, from sole-practitioner conveyancers to multi-partner LLPs, with an appropriately qualified independent reporting accountant from our specialist partner network, and work with your COFA on the records the report is built from so it is obtained in good time and stands up unqualified.</p>
 
 <p>If you are not sure whether your firm even needs a report this year, that is exactly the trigger question this guide is about, and we can help you answer it. We can review your client money position against the Rule 12.2 routes and confirm where you stand. We also provide <a href="/services/cofa-compliance-support">COFA compliance support</a> to help you keep proper records throughout the year, and a <a href="/free-firm-health-check">free firm health check</a> to surface any gaps before the deadline.</p>
 

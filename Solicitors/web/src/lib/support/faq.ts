@@ -16,7 +16,7 @@ export type Faq = { q: string; a: string };
 export const GENERIC: Faq[] = [
   {
     q: "Who replies to my question?",
-    a: "A specialist solicitors' accountant, personally. Leave your email and a one-line question and you will get a considered answer rather than a sales call.",
+    a: "A specialist solicitors' accountant from our partner network, personally. Leave your email and a one-line question and you will get a considered answer rather than a sales call.",
   },
   {
     q: "Is the first conversation free?",
@@ -36,7 +36,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
     },
     {
       q: "Is my firm exempt from the accountant's report?",
-      a: "There is a Rule 12.2 exemption for a firm that did hold client money but only small balances: where the client-account balance did not exceed an average of £10,000 AND a maximum of £250,000 in the period. Both limbs must be met. It is not any £250 figure. We can help you check where you fall.",
+      a: "There is a Rule 12.2 exemption for a firm that did hold client money but only small balances: where the client-account balance did not exceed an average of £10,000 AND a maximum of £250,000 in the period. Both limbs must be met. It is not any £250 figure. A specialist accountant can help you check where you fall.",
     },
     {
       q: "How often must I reconcile the client account?",
@@ -44,7 +44,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
     },
     {
       q: "Can I use the client account to move money for a client?",
-      a: "No. Rule 3.3 prohibits using a client account to provide banking facilities: every payment in, transfer or withdrawal must relate to the delivery of regulated services. This is one of the most common breaches. We can help you set up compliant processes, though enforcement questions are for your COFA and the SRA.",
+      a: "No. Rule 3.3 prohibits using a client account to provide banking facilities: every payment in, transfer or withdrawal must relate to the delivery of regulated services. This is one of the most common breaches. A specialist accountant can help you set up compliant processes, though enforcement questions are for your COFA and the SRA.",
     },
     {
       q: "Do I have to pay clients interest on money I hold?",
@@ -84,7 +84,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
   "practice-finance": [
     {
       q: "How do I improve my firm's cash flow?",
-      a: "The core lever is lock-up: the days your money sits as unbilled work in progress plus debtor days. Billing sooner and collecting faster releases cash without new work. We can review your lock-up and the working-capital picture with you.",
+      a: "The core lever is lock-up: the days your money sits as unbilled work in progress plus debtor days. Billing sooner and collecting faster releases cash without new work. A specialist accountant can review your lock-up and the working-capital picture with you.",
     },
   ],
 };

@@ -22,7 +22,7 @@ faqs:
 - question: What is the difference between the Principles and the Codes of Conduct?
   answer: 'The seven Principles are the high-level foundation. The two Codes of Conduct (one for solicitors, one for firms) set out more detailed, outcome-focused standards that flesh out how the Principles are met in day-to-day practice. The Accounts Rules do the same job for client money specifically. Principles first, then Codes and Accounts Rules beneath them.'
 ctaTitle: Get your firm's financial compliance onto specialist hands
-ctaBody: "30-minute scoping call. We work with the SRA Accounts Rules where they meet the Principles day-to-day: client money discipline, the annual Accountant's Report, and the COFA support that keeps integrity failures out of your breach log."
+ctaBody: "30-minute scoping call. We connect you with a regulated accountancy firm in our partner network for the point where the SRA Accounts Rules meet the Principles day-to-day: client money discipline, the annual Accountant's Report, and the COFA support that keeps integrity failures out of your breach log."
 ---
 <p><strong>The seven SRA Principles are the foundation of everything an SRA-regulated firm does.</strong> They are the mandatory professional standards that sit at the very top of the SRA's rulebook, above the Codes of Conduct and above the Accounts Rules. Every more detailed rule is, in the end, an expression of these seven.</p>
 
@@ -84,7 +84,7 @@ ctaBody: "30-minute scoping call. We work with the SRA Accounts Rules where they
 
 <h2>How the Principles interact with the SRA Accounts Rules</h2>
 
-<p>This is the crossover that matters most for firms handling client money, and it is where our own work concentrates. The Accounts Rules are not a separate universe with their own morality. Every specific requirement in the Accounts Rules is a Principle made concrete for the client-money context.</p>
+<p>This is the crossover that matters most for firms handling client money, and it is where the specialists we connect firms with concentrate. The Accounts Rules are not a separate universe with their own morality. Every specific requirement in the Accounts Rules is a Principle made concrete for the client-money context.</p>
 
 <p>Consider the mapping:</p>
 
@@ -156,6 +156,6 @@ ctaBody: "30-minute scoping call. We work with the SRA Accounts Rules where they
 
 <h2>Where we fit</h2>
 
-<p>We are accountants, not the firm's regulatory conscience, and the Principles are ultimately the firm's own responsibility. But the crossover between the Principles and the Accounts Rules is exactly where financial specialists earn their place. A firm whose client money is disciplined, whose reconciliations hold at inspection, and whose breach log shows problems being caught and corrected, is a firm that keeps the integrity and public-trust Principles out of harm's way in the area where they most often fail.</p>
+<p>We connect firms with specialist accountants; nobody outside the firm is its regulatory conscience, and the Principles are ultimately the firm's own responsibility. But the crossover between the Principles and the Accounts Rules is exactly where financial specialists earn their place. A firm whose client money is disciplined, whose reconciliations hold at inspection, and whose breach log shows problems being caught and corrected, is a firm that keeps the integrity and public-trust Principles out of harm's way in the area where they most often fail.</p>
 
-<p>Our engagement covers the annual SRA Accountant's Report delivered ahead of the deadline, quarterly review of the reconciliation evidence file and breach log, COFA support for the grey-area calls, and pre-inspection readiness. If your client-money controls are the part of the Principles you want to be certain about, book a 30-minute scoping call below.</p>
+<p>A partner-firm engagement typically covers the annual SRA Accountant's Report, obtained from an independent accountant ahead of the deadline, regular review of the reconciliation evidence file and breach log, COFA support for the grey-area calls, and pre-inspection readiness. If your client-money controls are the part of the Principles you want to be certain about, book a 30-minute scoping call below.</p>

@@ -183,4 +183,4 @@ faqs:
 
 <p>If you are a salaried partner, check whether you can restructure to avoid the salaried member rules. A genuine capital contribution and management rights can save you and your firm thousands in NI each year.</p>
 
-<p>Every partner's situation is different. Speak to a legal-sector-specialist accountant who understands the salaried partner tax rules and can model the numbers for your specific firm. Our team at Accounts for Lawyers works exclusively with UK solicitors and law firms. <a href="/services/solicitor-accountants">Contact us</a> for a confidential discussion about your compensation structure.</p>
+<p>Every partner's situation is different. Speak to a legal-sector-specialist accountant who understands the salaried partner tax rules and can model the numbers for your specific firm. Accounts for Lawyers works exclusively with UK solicitors and law firms, connecting them with regulated accountancy firms in our specialist partner network. <a href="/services/solicitor-accountants">Contact us</a> for a confidential discussion about your compensation structure.</p>

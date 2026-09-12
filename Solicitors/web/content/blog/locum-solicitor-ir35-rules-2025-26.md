@@ -117,6 +117,6 @@ faqs:
 
 <p>IR35 is a complex area of tax law, and the facts of each locum solicitor engagement are unique. A generalist accountant may not understand the specific regulatory context of the legal profession, such as the SRA's rules on supervision, client money and professional conduct that affect how a locum solicitor works.</p>
 
-<p>A legal-sector-specialist accountant can review your contracts, advise on IR35 status, help you structure your PSC's tax affairs and represent you in an HMRC enquiry. We work with locum solicitors across the UK, from high-street conveyancers to City litigation specialists. Contact us to discuss your situation.</p>
+<p>A legal-sector-specialist accountant can review your contracts, advise on IR35 status, help you structure your PSC's tax affairs and represent you in an HMRC enquiry. We match locum solicitors across the UK, from high-street conveyancers to City litigation specialists, with accountants in our partner network who do that work. Contact us to discuss your situation.</p>
 
 <p>For more on the broader tax and regulatory framework for solicitors, see our <a href="/solicitor-guides">solicitor guides</a> or book a <a href="/free-firm-health-check">free firm health check</a>.</p>

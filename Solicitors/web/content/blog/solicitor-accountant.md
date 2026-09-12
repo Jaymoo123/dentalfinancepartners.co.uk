@@ -243,7 +243,7 @@ faqs:
 
 <p>Regular reviews of your accounting arrangements ensure your accountant continues to meet your needs as regulatory requirements change and your practice develops new service areas or expands into different markets.</p>
 
-<p>For comprehensive specialist accounting services tailored to legal practices, explore our <a href="/services">services</a> or <a href="/contact">contact</a> us to discuss your specific requirements. We understand the unique challenges facing solicitors and provide the specialist support your practice needs to thrive.</p>
+<p>For comprehensive specialist accounting services tailored to legal practices, explore our <a href="/services">services</a> or <a href="/contact">contact</a> us to discuss your specific requirements. We understand the unique challenges facing solicitors, and we connect you with regulated accountancy firms in our specialist partner network that provide the support your practice needs to thrive.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

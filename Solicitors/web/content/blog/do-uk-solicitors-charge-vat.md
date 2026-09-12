@@ -197,9 +197,9 @@ schema: ''
 <li><strong>Cash accounting transition issues</strong>: when moving between schemes, VAT on outstanding invoices and unpaid bills needs careful handling.</li>
 </ul>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What a partner firm would do if you brought them in</h2>
 
-<p>Our VAT support engagement covers:</p>
+<p>We match you with a regulated accountancy firm in our partner network. A VAT support engagement with that firm covers:</p>
 
 <ul>
 <li>VAT registration timing review — voluntary vs threshold-mandated</li>

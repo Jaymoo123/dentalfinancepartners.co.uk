@@ -176,7 +176,7 @@ schema: ''
 
 <p>UK-source partnership profit generally attracts Class 4 NI for UK-resident members. Non-residents are typically exempt from UK Class 4 NI on their UK-source profit, depending on the residence status and any UK-Country social security agreement. The exemption needs specific claim on the non-resident SA.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens if you ask us for help</h2>
 
 <p>Non-resident member tax for UK LLPs is one of the areas where generalist accountants frequently get the position wrong. Common errors:</p>
 
@@ -188,7 +188,7 @@ schema: ''
 <li>Mismatching the partnership SA800 and the non-resident's personal SA</li>
 </ul>
 
-<p>Our cross-border engagement for UK LLPs with non-resident members covers:</p>
+<p>A cross-border engagement with a regulated firm in our specialist partner network covers:</p>
 
 <ul>
 <li>UK-source / non-UK-source allocation methodology</li>

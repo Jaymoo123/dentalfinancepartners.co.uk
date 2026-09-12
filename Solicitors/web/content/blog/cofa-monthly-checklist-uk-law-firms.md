@@ -142,7 +142,7 @@ faqs:
 
 <p>If your firm's compliance burden is growing, or if you are struggling to keep up with the monthly checklist, consider engaging external support. A solicitor accountant who specialises in SRA compliance can review your processes, help you design a reconciliation calendar, and provide a second pair of eyes on your client account reconciliations.</p>
 
-<p>We offer <a href="/services/cofa-compliance-support">COFA compliance support</a> for UK law firms, including monthly compliance reviews and SRA reporting assistance. Our team understands the specific challenges faced by COFAs in solicitors' practices.</p>
+<p>We connect UK law firms with partner firms offering <a href="/services/cofa-compliance-support">COFA compliance support</a>, including monthly compliance reviews and SRA reporting assistance. Those firms understand the specific challenges faced by COFAs in solicitors' practices.</p>
 
 <p>For a deeper dive into the SRA Accounts Rules, see our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a>. If you are considering a change in firm structure, our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP guide for solicitors</a> may be useful.</p>
 
@@ -152,4 +152,4 @@ faqs:
 
 <p>Build a reconciliation calendar that works for your firm. Document every check. And if you need help, do not hesitate to seek it. The cost of a compliance failure far outweighs the cost of getting it right.</p>
 
-<p>If you would like a free health check of your firm's compliance processes, <a href="/free-firm-health-check">book a call with our team</a>. We can review your current checklist and suggest improvements tailored to your practice.</p>
+<p>If you would like a free health check of your firm's compliance processes, <a href="/free-firm-health-check">book a call</a>. We will put you in front of a partner firm that can review your current checklist and suggest improvements tailored to your practice.</p>

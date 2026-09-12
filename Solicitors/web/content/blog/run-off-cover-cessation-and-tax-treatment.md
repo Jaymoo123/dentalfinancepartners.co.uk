@@ -105,7 +105,7 @@ faqs:
 
 <h2>Common Mistakes and How to Avoid Them</h2>
 
-<p>We see several recurring errors when advising law firms on run-off cover tax treatment:</p>
+<p>Several errors recur across law firms on run-off cover tax treatment:</p>
 
 <ul>
 <li><strong>Paying the premium after cessation</strong>, This limits deductibility for partnerships and LLPs. Pay before cessation if possible.</li>
@@ -137,4 +137,4 @@ faqs:
 
 <p>Every firm's circumstances are different. The rules around cessation cover, six-year run-off periods, and run-off premium deductibility can be complex, especially when multiple partners or members are involved. We recommend speaking to a legal-sector-specialist accountant who understands the specific tax treatment of run-off cover for solicitors and law firms.</p>
 
-<p>If you are planning to cease practice or are considering your options, contact us for a confidential discussion. We can help you structure the cessation to minimise tax and ensure full compliance with SRA requirements.</p>
+<p>If you are planning to cease practice or are considering your options, contact us for a confidential discussion. We will match you with a regulated firm in our specialist partner network that can structure the cessation to minimise tax and keep the firm compliant with SRA requirements.</p>

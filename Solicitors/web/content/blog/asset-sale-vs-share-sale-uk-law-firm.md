@@ -122,7 +122,7 @@ faqs:
 
 <p>Buyers generally favour asset sales for the clean break from historic liabilities, and in a competitive process a seller who can offer an asset deal may secure a stronger price than one insisting on a share sale. Where a share sale is the seller's preference, expect the buyer to seek a price adjustment, robust warranties, and a deferred or earn-out element tied to performance or the absence of claims.</p>
 
-<p>For a law firm there is an extra dimension: the buyer will want comfort that the firm's compliance, including its COLP and COFA arrangements, holds up after completion. Weak finance compliance discovered in diligence can dent both price and certainty. Our <a href="/services/cofa-compliance-support">COFA compliance support</a> can help either side assess and tidy this before a deal.</p>
+<p>For a law firm there is an extra dimension: the buyer will want comfort that the firm's compliance, including its COLP and COFA arrangements, holds up after completion. Weak finance compliance discovered in diligence can dent both price and certainty. A partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a> can help either side assess and tidy this before a deal.</p>
 
 <h3>SRA and Regulatory Implications</h3>
 

@@ -162,6 +162,6 @@ You issue a bill to the Smiths for your fees (£1,500) and disbursements (SDLT o
 
 <p>Client account handling in residential conveyancing is straightforward in principle but demanding in practice. The rules are clear: client money belongs to the client, must be held in a client account, must be reconciled regularly, and must be transferred only on proper instructions. The consequences of getting it wrong are severe.</p>
 
-<p>If you are unsure about any aspect of the SRA Accounts Rules, or if you have identified a potential breach, speak to a legal-sector-specialist accountant. We can help you review your procedures, implement robust controls, and prepare your annual accountant's report.</p>
+<p>If you are unsure about any aspect of the SRA Accounts Rules, or if you have identified a potential breach, speak to a legal-sector-specialist accountant. We can match you with a regulated firm in our partner network that will review your procedures, help you implement robust controls, and prepare your annual accountant's report.</p>
 
 <p>Contact us for a confidential discussion about your firm's client account handling.</p>

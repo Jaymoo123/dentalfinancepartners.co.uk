@@ -145,4 +145,4 @@ faqs:
 
 <p>If you are considering a <strong>partnership conversion</strong> or want to review your current structure, speak to a legal-sector-specialist accountant. The decision affects your personal tax position, your exposure to firm debts, and your regulatory compliance. A general accountant may not understand the SRA Accounts Rules or the Salaried Member Rules.</p>
 
-<p>We provide <a href="/services/llp-accounts">LLP accounts services</a> and <a href="/services/practice-valuation">practice valuation</a> for solicitors. Our team works exclusively with law firms. Contact us for a confidential discussion about your firm's structure.</p>
+<p>We connect solicitors with partner firms providing <a href="/services/llp-accounts">LLP accounts services</a> and <a href="/services/practice-valuation">practice valuation</a>. We work exclusively with law firms. Contact us for a confidential discussion about your firm's structure.</p>

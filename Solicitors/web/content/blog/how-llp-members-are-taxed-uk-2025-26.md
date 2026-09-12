@@ -123,7 +123,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Your partnership agreement should set out profit-sharing ratios, capital contributions and the treatment of retained profit clearly. An ambiguous agreement invites HMRC to challenge the profit allocation, with disputes and penalties following. A well-drafted agreement is also the first line of defence against the salaried member rules, because it can be structured so that at least one of the three conditions is reliably not met.</p>
 
-<p>If you are the firm's COFA (Compliance Officer for Finance and Administration), make sure the tax filings line up with the agreement and the accounts. Our <a href="/services/cofa-compliance-support">COFA compliance support service</a> can help you keep those documents aligned.</p>
+<p>If you are the firm's COFA (Compliance Officer for Finance and Administration), make sure the tax filings line up with the agreement and the accounts. A partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a> can help you keep those documents aligned.</p>
 
 <h3>Mind the Timing of Drawings and the Basis</h3>
 

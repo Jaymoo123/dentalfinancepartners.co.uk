@@ -168,6 +168,6 @@ faqs:
 
 <p>The key is to set targets that are challenging but achievable, and to review them regularly. Avoid the common pitfalls of unrealistic hours, ignoring non-chargeable work, and failing to adjust for write-offs. And always ensure that targets do not compromise SRA compliance. A fee earner who meets their target but breaches the Accounts Rules is a liability, not an asset.</p>
 
-<p>If you need help designing fee earner targets for your law firm, or reviewing your current system, speak to a legal-sector-specialist accountant. We work with UK solicitors every day and can help you build a target framework that drives profitability without sacrificing compliance.</p>
+<p>If you need help designing fee earner targets for your law firm, or reviewing your current system, speak to a legal-sector-specialist accountant. We work with UK solicitors every day, and the partner firm we match you with can help you build a target framework that drives profitability without sacrificing compliance.</p>
 
 <p>For more guidance, see our <a href="/services/solicitor-accountants">solicitor accountants services</a> page, or read our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">guide to partnership vs LLP structures</a>. If you are a partner reviewing your profit share, our <a href="/calculators/llp-profit-share-allocation">LLP profit share allocation calculator</a> may help. For COFA support on compliance, visit <a href="/services/cofa-compliance-support">COFA compliance support</a>.</p>

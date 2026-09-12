@@ -132,9 +132,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Employment status is a complex area of tax law, and the consequences of getting it wrong are severe. A solicitor accountant who specialises in the legal sector can help you structure paralegal engagements correctly, review existing arrangements, and represent you if HMRC opens an enquiry.</p>
 
-<p>We advise law firms on paralegal tax status as part of our broader <a href="/services/solicitor-accountants">solicitor accounting services</a>. We can review your current paralegal arrangements, identify areas of risk, and recommend changes to reduce the likelihood of HMRC challenge. If you are already under enquiry, we can prepare your response and negotiate with HMRC on your behalf.</p>
+<p>Our <a href="/services/solicitor-accountants">solicitor accounting services</a> page explains how we connect law firms with regulated accountancy firms in our specialist partner network on questions like paralegal tax status. The partner firm we match you with can review your current paralegal arrangements, identify areas of risk, and recommend changes to reduce the likelihood of HMRC challenge. If you are already under enquiry, that firm can prepare your response and deal with HMRC on your behalf.</p>
 
-<p>We also provide <a href="/services/cofa-compliance-support">COFA compliance support</a> to ensure your firm meets its regulatory obligations when engaging fee-earners of all types.</p>
+<p>We can also match you with a partner firm for <a href="/services/cofa-compliance-support">COFA compliance support</a>, so your firm meets its regulatory obligations when engaging fee-earners of all types.</p>
 
 <h2>Conclusion</h2>
 

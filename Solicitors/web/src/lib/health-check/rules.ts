@@ -22,15 +22,32 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
     });
   }
 
+  // HP §5.G: the Rule 12.1 TRIGGER (held or received any client money) is
+  // distinct from the Rule 12.2 EXEMPTION (held client money, but only small
+  // balances: average not exceeding £10,000 AND maximum not exceeding £250,000).
+  // Never conflate them, and never use any £250 figure.
   if (a.clientMoneyVolume === "none") {
+    out.push({
+      id: "no-client-money-report-trigger",
+      severity: "low",
+      category: "sra-compliance",
+      title: "Confirm you fall outside the Accountant's Report trigger",
+      detail:
+        "Rule 12.1 requires an annual Accountant's Report only from a firm that has held or received client money at any time during the accounting period. A firm that holds none (paying third parties directly, or using a third-party managed account under Rule 11) does not meet the trigger and needs no report. That is a different thing from the Rule 12.2 de minimis exemption, which is for firms that did hold client money but only small balances.",
+      action: "Document the no-client-money position each period, and keep the evidence (bank mandates, TPMA arrangements) that supports it.",
+      reference: "/services/sra-accounts-rules",
+    });
+  }
+
+  if (a.clientMoneyVolume === "very-low") {
     out.push({
       id: "de-minimis-check",
       severity: "low",
       category: "sra-compliance",
-      title: "Confirm de minimis exemption from Accountant's Report",
+      title: "Check the Rule 12.2 de minimis exemption",
       detail:
-        "If your firm genuinely held no client money during the accounting period, the de minimis exemption (Rule 12.2) likely applies — no annual Accountant's Report needed. The exemption is precise: no more than £10,000 client money at any time during the period AND average balance not exceeding £250.",
-      action: "Confirm exemption applies and document the position annually.",
+        "Your firm holds client money, so the Rule 12.1 report trigger is met. The Rule 12.2 exemption can still remove the report obligation, but only where the client account balance across the accounting period did not exceed an average of £10,000 AND a maximum of £250,000. Both limbs must be satisfied, measured from your reconciliations rather than estimated.",
+      action: "Measure the period average and the period maximum from your five-weekly reconciliations, and document the conclusion annually.",
       reference: "/services/sra-accounts-rules",
     });
   }

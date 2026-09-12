@@ -144,7 +144,7 @@ faqs:
 <li><strong>Get a professional valuation.</strong> Do not rely on the seller's asking price. A proper valuation by a legal-sector specialist will give you a realistic purchase price and help you negotiate. See our <a href="/services/practice-valuation">practice valuation services</a>.</li>
 <li><strong>Talk to multiple lenders.</strong> High street banks, specialist law firm lenders, and asset finance providers all have different criteria. A broker who specialises in professional services lending can save time.</li>
 <li><strong>Negotiate vendor financing.</strong> If the seller is retiring, they may prefer a deferred payment to a lump sum. That reduces your upfront cost and gives you time to build cash flow.</li>
-<li><strong>Instruct a legal-sector accountant.</strong> The tax and regulatory issues are specific to law firms. A general accountant may miss the SRA compliance angle or the partner borrowing relief. Our <a href="/services/solicitor-accountants">solicitor accountants</a> team can help.</li>
+<li><strong>Instruct a legal-sector accountant.</strong> The tax and regulatory issues are specific to law firms. A general accountant may miss the SRA compliance angle or the partner borrowing relief. The <a href="/services/solicitor-accountants">solicitor accountants</a> in our partner network can help.</li>
 <li><strong>Check the SRA position.</strong> If the target firm has any regulatory history, get legal advice on whether the acquisition will trigger an SRA investigation.</li>
 </ol>
 
@@ -161,6 +161,6 @@ faqs:
 
 <p>Financing a law firm acquisition is a complex process that requires careful planning, professional advice, and a clear understanding of the SRA regulatory framework. Bank lending, asset finance, and vendor financing each have their place. The best approach is usually a combination of all three, tailored to the specific deal.</p>
 
-<p>If you are a solicitor considering buying a practice, speak to a legal-sector-specialist accountant before you approach a lender. The tax and regulatory issues are too specific to leave to chance. Our team at Accounts for Lawyers can help you structure the deal, prepare the financial projections, and ensure SRA compliance throughout the process.</p>
+<p>If you are a solicitor considering buying a practice, speak to a legal-sector-specialist accountant before you approach a lender. The tax and regulatory issues are too specific to leave to chance. Accounts for Lawyers can match you with a regulated firm in our partner network that will help you structure the deal, prepare the financial projections, and keep the SRA compliance position in order throughout.</p>
 
 <p><a href="/contact">Contact us</a> for a confidential discussion about your law firm acquisition plans.</p>

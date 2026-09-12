@@ -470,8 +470,8 @@ export default function UKSolicitorProfessionStructurePage() {
               <p className="mt-4 text-base leading-relaxed text-slate-600">
                 The shift towards incorporation is clear across the profession, but the right
                 structure depends on your profit level, how you extract income, and your regulatory
-                position with the SRA. Our team works exclusively with solicitors and law firms and
-                can model the options for your specific situation.
+                position with the SRA. We work exclusively with solicitors and law firms, and the partner firm we
+                match you with can model the options for your specific situation.
               </p>
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
                 <Link href="/calculators" className="text-[var(--primary)] hover:opacity-80">

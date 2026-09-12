@@ -187,7 +187,7 @@ faqs:
 
 <p><strong>Allowing fee-earners to self-manage billing.</strong> Without central oversight, some fee-earners will bill promptly and others will not. The firm needs a system, not individual discretion.</p>
 
-<p>For a deeper look at how billing discipline interacts with the SRA Accounts Rules, read our <a href="/services/sra-accounts-rules">SRA Accounts Rules</a> service page. It covers the specific compliance requirements that affect billing and collection processes.</p>
+<p>For a deeper look at how billing discipline interacts with the SRA Accounts Rules, read our <a href="/services/sra-accounts-rules">SRA Accounts Rules</a> page. It covers the specific compliance requirements that affect billing and collection processes.</p>
 
 <h2>Final Thoughts</h2>
 
@@ -195,4 +195,4 @@ faqs:
 
 <p>Quarter end will always be a pressure point. But with the right systems and discipline, it becomes a routine check rather than a crisis. The firm's cash position improves. The partners draw more. The compliance risk reduces.</p>
 
-<p>If your firm needs help reviewing its billing processes, WIP conversion rates, or cash collection performance, speak to a legal-sector-specialist accountant. We work with law firms of all sizes, from sole practitioners to multi-partner LLPs. <a href="/contact">Contact us</a> for a confidential discussion.</p>
+<p>If your firm needs help reviewing its billing processes, WIP conversion rates, or cash collection performance, speak to a legal-sector-specialist accountant. We match law firms of all sizes, from sole practitioners to multi-partner LLPs, with accountants in our partner network who work in the legal sector. <a href="/contact">Contact us</a> for a confidential discussion.</p>

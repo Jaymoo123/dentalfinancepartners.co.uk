@@ -59,7 +59,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Examples of Material Breaches Requiring Notification</h3>
 
-<p>Consider these real scenarios from our work with UK solicitors:</p>
+<p>Consider these scenarios:</p>
 
 <ul>
 <li><strong>Client account shortfall:</strong> A firm inadvertently used client money to pay an office rent bill, creating a £15,000 shortfall. This is a material breach because it involves client money and indicates a control failure.</li>
@@ -131,4 +131,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are a COLP, COFA, or partner in a law firm, make sure your team understands when and how to report breaches. Regular training, clear internal procedures, and access to specialist advice are the best defences against regulatory action.</p>
 
-<p>For tailored guidance on SRA breach notifications, compliance systems, or accountant's reports, speak to the team at Accounts for Lawyers. We specialise in solicitor compliance and can help you navigate the SRA's requirements with confidence.</p>
+<p>For tailored guidance on SRA breach notifications, compliance systems, or accountant's reports, speak to the team at Accounts for Lawyers. We connect law firms with regulated accountancy firms in our specialist partner network, and the partner firm we match you with can help you navigate the SRA's requirements with confidence.</p>

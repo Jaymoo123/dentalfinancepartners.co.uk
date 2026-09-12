@@ -122,7 +122,7 @@ faqs:
 <li><strong>Conversion cost:</strong> Converting an unincorporated firm to a company can crystallise a chargeable gain on goodwill; incorporation relief and the current BADR position need to be modelled before any change.</li>
 </ul>
 
-<p>The structural shift documented in the SRA data reflects thousands of individual firm decisions taken under different tax regimes over 15 years. Yours should be modelled on your actual projected profits and extraction needs. Our team works exclusively with solicitors and law firms and can model the options for your specific situation.</p>
+<p>The structural shift documented in the SRA data reflects thousands of individual firm decisions taken under different tax regimes over 15 years. Yours should be modelled on your actual projected profits and extraction needs. We work exclusively with solicitors and law firms, and can match you with a regulated accountancy firm in our partner network that will model the options for your specific situation.</p>
 
 <h2>Sources</h2>
 

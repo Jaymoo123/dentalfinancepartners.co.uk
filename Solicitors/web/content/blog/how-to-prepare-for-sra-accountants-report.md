@@ -124,7 +124,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Preparing for the report is a specialised task, and a general practice accountant may not understand the specific demands of the SRA Accounts Rules. A <a href="/services/solicitor-accountants">solicitor accountant</a> who works regularly with law firms knows exactly what the reporting accountant tests and can help you build the evidence pack efficiently and run a realistic self-review before the visit.</p>
 
-<p>For firms that want guidance throughout the year rather than only at the period end, we offer <a href="/services/cofa-compliance-support">COFA compliance support</a>. Regular reviews keep the controls in good order, so there are no surprises when the reporting accountant arrives. If you are preparing for your first report as a new firm or a new COFA, our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a> covers the fundamentals.</p>
+<p>For firms that want guidance throughout the year rather than only at the period end, we can match you with a partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a>. Regular reviews keep the controls in good order, so there are no surprises when the reporting accountant arrives. If you are preparing for your first report as a new firm or a new COFA, our <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials guide</a> covers the fundamentals.</p>
 
 <h2>Final Preparation Checklist</h2>
 
@@ -144,6 +144,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The accountant's report is a regulatory requirement, but it is also a useful health check. A clean, unqualified report confirms your systems and controls are working. A qualified report points to weaknesses that need attention. Either way, the process is manageable when you prepare year-round and collate the evidence properly.</p>
 
-<p>If you would like help preparing for your SRA accountant's report, <a href="/contact">contact our team</a> of specialist solicitor accountants. We work with law firms across England and Wales and can help you get the evidence pack right and the controls clean before the report is signed.</p>
+<p>If you would like help preparing for your SRA accountant's report, <a href="/contact">contact us</a> and we will match you with a specialist solicitor accountant from our partner network. We work with law firms across England and Wales, and the partner firm will help you get the evidence pack right and the controls clean before the report is signed.</p>
 </content>
 </invoke>

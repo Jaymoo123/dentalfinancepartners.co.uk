@@ -171,4 +171,4 @@ faqs:
 
 <p>The key is preparation. File your tax returns on time. Keep your accounts in order. Work with a mortgage broker who knows the solicitor market. And speak to a legal-sector-specialist accountant who can structure your finances for the best outcome.</p>
 
-<p>If you are planning a mortgage application and want to review your financial position, contact us for a <a href="/free-firm-health-check">free firm health check</a>. We can help you understand how your profit share, drawings, and capital account affect your borrowing capacity.</p>
+<p>If you are planning a mortgage application and want to review your financial position, contact us for a <a href="/free-firm-health-check">free firm health check</a>. The partner firm we match you with can explain how your profit share, drawings, and capital account affect your borrowing capacity.</p>

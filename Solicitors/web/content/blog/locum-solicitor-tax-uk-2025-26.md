@@ -114,6 +114,6 @@ faqs:
 
 <p>At Accounts for Lawyers, we work exclusively with solicitors and law firms. We understand the specific tax and regulatory issues that locum solicitors face. If you are a locum solicitor unsure about your IR35 status, VAT registration, or the best way to structure your practice, <a href="/contact">contact us</a> for a no-obligation discussion.</p>
 
-<p>For more guidance on related topics, see our guides on <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials</a> and <a href="/solicitor-guides/cofa-fundamentals">COFA fundamentals</a>. If you are a firm engaging locum solicitors, our <a href="/services/cofa-compliance-support">COFA compliance support</a> service can help you manage the risks.</p>
+<p>For more guidance on related topics, see our guides on <a href="/solicitor-guides/sra-accounts-rules-essentials">SRA Accounts Rules essentials</a> and <a href="/solicitor-guides/cofa-fundamentals">COFA fundamentals</a>. If you are a firm engaging locum solicitors, a partner firm providing <a href="/services/cofa-compliance-support">COFA compliance support</a> can help you manage the risks.</p>
 
 <p><em>This article provides general guidance only. Tax rules change, and individual circumstances vary. Always seek advice from a qualified accountant specialising in the legal sector.</em></p>

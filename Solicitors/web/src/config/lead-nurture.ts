@@ -380,7 +380,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Accounts for Lawyers. Thanks for your enquiry. Reply YES and one of our specialists will call you to discuss your firm's accounts. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Accounts for Lawyers. Thanks for your enquiry. Reply YES and a specialist from our partner network will call you to discuss your firm's accounts. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.confirmUrl]),
     ],
@@ -397,7 +397,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Accounts for Lawyers again. Enquiries like yours are exactly what our specialists handle, so we have set aside time this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Accounts for Lawyers again. Enquiries like yours are exactly what the specialists in our partner network handle, so we have set aside time this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -430,7 +430,7 @@ const STEPS: LeadNurtureStep[] = [
         "Partners and LLP members have different tax obligations, and a short call often surfaces the gaps.",
         [
           "A quick pointer while your enquiry is with us. Most law firm partners do not realise that LLP member drawings, profit allocations and personal tax reserves need careful planning from the first year, and the cost of getting it wrong compounds quickly.",
-          "If that is relevant to your situation, it is exactly the kind of thing a short call with our specialists would cover.",
+          "If that is relevant to your situation, it is exactly the kind of thing a short call with a specialist from our partner network would cover.",
           "Whenever suits you, just reply with a day and time and we will arrange it.",
         ],
         "day2_give_email",
@@ -583,7 +583,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and we will have one of our law firm accounts specialists call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and we will have a law firm accounts specialist from our partner network call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",

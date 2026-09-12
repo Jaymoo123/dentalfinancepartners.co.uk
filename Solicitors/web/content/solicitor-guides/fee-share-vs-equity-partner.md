@@ -22,7 +22,7 @@ faqs:
   - question: "What's a 'silver-circle' or 'gold-card' partnership style?"
     answer: "Informal terminology — not regulatory. Some firms use multi-tier structures: junior equity (lower profit share, less capital), senior equity (higher share, more capital, more management). 'Gold-card' typically refers to access to certain firm benefits (parking, hospitality, certain client engagement). 'Silver circle' refers historically to a tier of London firms just outside the Magic Circle. None of these have direct tax consequences but they shape the career trajectory conversation."
 ctaTitle: "Get clarity on your senior-status decision"
-ctaBody: "30-minute scoping call. We model fee-share vs equity on your specific firm's profit and your specific personal tax position."
+ctaBody: "30-minute scoping call. We scope the question, then connect you with a regulated accountancy firm in our partner network that models fee-share vs equity on your firm's profit and your personal tax position."
 ---
 
 <p><strong>Most senior solicitors at multi-partner UK firms reach a choice point:</strong> stay as fee-share / consultant / salaried, or push for equity partnership. Both involve real money; the financial and tax differences are larger than commonly understood from the outside. This guide is the practical comparison.</p>
@@ -165,9 +165,9 @@ ctaBody: "30-minute scoping call. We model fee-share vs equity on your specific 
 
 <p>Some firms have effectively closed equity to new admissions, with future partners admitted only at fixed-share level. Worth understanding the firm's recent admission history before betting on the equity track.</p>
 
-<h2>What we'd do if you brought us in</h2>
+<h2>What happens when you bring us in</h2>
 
-<p>Our personal-tax engagement for senior solicitors covers:</p>
+<p>We connect you with a regulated accountancy firm in our specialist partner network. A personal-tax engagement for a senior solicitor typically covers:</p>
 
 <ul>
 <li>Annual self-assessment with all reliefs claimed (qualifying loan interest, pension contributions, gift aid extending basic-rate band)</li>

@@ -50,7 +50,7 @@ faqs:
 
 <p>For example, a small conveyancing firm in the Midlands was investigated after a client complained that their deposit of £50,000 was held for six weeks post-completion without interest being paid. The firm had no written interest policy. The SRA found a breach of Rule 7.1 and imposed a £5,000 fine plus costs.</p>
 
-<p>If you are a COFA, you should review your client account reconciliation process and interest policy at least quarterly. Our <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance service</a> can help you identify gaps before the SRA does.</p>
+<p>If you are a COFA, you should review your client account reconciliation process and interest policy at least quarterly. A partner firm providing <a href="/services/sra-accounts-rules">SRA Accounts Rules compliance</a> work can help you identify gaps before the SRA does.</p>
 
 <h2>COLP and COFA Failures</h2>
 
@@ -67,7 +67,7 @@ faqs:
 
 <p>In one case, a three-partner firm in Manchester had a COFA who was also the senior partner. He signed off reconciliations without reviewing them. When an audit revealed a £200,000 shortfall in the client account, the SRA investigated both the firm and the COFA personally. The COFA was fined £10,000 and had conditions placed on his practising certificate.</p>
 
-<p>If you are a COFA or COLP, consider our <a href="/services/cofa-compliance-support">COFA compliance support service</a> for a structured review of your firm's controls and reporting obligations.</p>
+<p>If you are a COFA or COLP, consider a partner-firm <a href="/services/cofa-compliance-support">COFA compliance support</a> engagement for a structured review of your firm's controls and reporting obligations.</p>
 
 <h2>Failure to Report Reportable Matters</h2>
 
@@ -132,4 +132,4 @@ faqs:
 <li><strong>Review your COLP and COFA arrangements.</strong> Ensure these roles have the time, authority, and resources to do their job properly.</li>
 </ul>
 
-<p>If you are concerned about your firm's compliance position, speak to a legal-sector-specialist accountant. We can review your controls, help you prepare for an SRA inspection, and advise on reportable matters. Contact us today for a confidential discussion.</p>
+<p>If you are concerned about your firm's compliance position, speak to a legal-sector-specialist accountant. We can match you with a regulated firm in our partner network that will review your controls, help you prepare for an SRA inspection, and advise on reportable matters. Contact us today for a confidential discussion.</p>
