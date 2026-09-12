@@ -29,7 +29,7 @@ import { serviceTiers, siteStats } from "@/config/service-tiers";
 export const metadata: Metadata = {
   title: "Specialist Contractor Accountants | IR35 Advice UK",
   description:
-    "Specialist accountants for UK contractors. IR35 status reviews, limited company tax, umbrella vs Ltd, expenses and pension planning. Fixed fees, plain English.",
+    "Specialist accountants for UK contractors. IR35 status reviews, limited company tax, umbrella vs Ltd, expenses and pension planning. Plain English, no jargon.",
   alternates: { canonical: siteConfig.url },
 };
 
@@ -143,9 +143,9 @@ const faqs = [
       "Outside IR35, almost always yes, though the gap is smaller than it is often described. Our own published model puts it at around £1,900 to £2,000 a year at £500 a day over 240 days (£6,000 of company expenses, a £1,200 umbrella margin), and at a few thousand pounds a year across most contractor day rates, before accountancy fees. Inside IR35, the gap narrows but there are still advantages: pension contributions via the PSC, the small salary band, and the option to work on other contracts outside IR35. We model both for every client.",
   },
   {
-    question: "What are your fees?",
+    question: "How do you work out what a contractor needs?",
     answer:
-      "We work on fixed monthly fees so you always know what you're paying. The exact figure depends on the complexity of your situation: whether you have other income, payroll, VAT, or international exposure. We quote after a short discovery call rather than publishing a price list that won't apply to most clients.",
+      "We start with a short discovery call. What you need depends on the complexity of your situation: whether you have other income, payroll, VAT, or international exposure. We set the scope of work out for you after that call, so you know what is covered before anything starts.",
   },
 ];
 
@@ -194,7 +194,7 @@ export default function HomePage() {
               </div>
               <div className="mt-8 flex items-center gap-2.5 text-sm text-neutral-400">
                 <ShieldCheck className="h-4 w-4 text-cyan-400 flex-shrink-0" aria-hidden />
-                <span className="font-medium">Fixed fees. Plain English. No hard sell.</span>
+                <span className="font-medium">Contractor specialists. Plain English. No hard sell.</span>
               </div>
             </div>
           </div>
@@ -456,7 +456,7 @@ export default function HomePage() {
                 {[
                   { title: "Contractor specialists only", sub: "We do not work with generalist clients" },
                   { title: "A specialist picks it up", sub: "Not a call-centre queue" },
-                  { title: "Fixed fees, no surprises", sub: "Quoted before we start" },
+                  { title: "Scope agreed up front", sub: "You know what is covered before we start" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">

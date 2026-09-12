@@ -29,13 +29,11 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  alternates: {
-    canonical: siteUrl,
-    languages: {
-      "en-GB": siteUrl,
-      "x-default": siteUrl,
-    },
-  },
+  // ponytail: no alternates here on purpose. Root metadata is INHERITED by every
+  // route that does not override it, so a canonical here made /for, /about,
+  // /services, /contact and /ir35-status all canonicalise to the homepage and
+  // drop out of the index. Each page owns its own canonical; the homepage sets
+  // its own in app/page.tsx.
   verification: {
     google: niche.seo.search_console_verification?.google || niche.seo.google_site_verification || undefined,
     yandex: niche.seo.search_console_verification?.yandex || undefined,

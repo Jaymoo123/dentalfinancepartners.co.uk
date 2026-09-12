@@ -16,11 +16,13 @@ import {
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: "Contractor Accountancy Services | Contractor Tax Accountants" },
   description:
     "Specialist accounting services for UK contractors. IR35 status reviews, limited company accounts, corporation tax, salary and dividend planning and expenses.",
+  alternates: { canonical: `${siteConfig.url}/services` },
 };
 
 const services = [

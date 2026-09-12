@@ -19,10 +19,11 @@
  * re-tailors each time, and fires instantly on exit-intent or form friction.
  * Stops the moment the visitor opens it (or has converted / opted out).
  *
- * Stand-down: sets cfp_assistant_active so ExitIntentModal knows the assistant
- * is live and stands down (never two exit prompts at once).
- * ExitIntentModal ALREADY reads this key at ExitIntentModal.tsx:74; only the
- * setter is new here.
+ * Stand-down: sets cfp_assistant_active in sessionStorage. Historically
+ * ExitIntentModal read this key to avoid firing alongside the assistant;
+ * that component was retired (P2-6, dead code, zero importers/mounts), so
+ * this setter currently has no reader. Left in place: harmless, and the
+ * key is cheap to revive a reader for if an exit-intent surface returns.
  *
  * Chip: "Book a free call" -> /contact (no /book path on contractors-ir35).
  * Widget capture: email + message via email_only captureMode through submitContractorLead.
@@ -135,7 +136,8 @@ export function SpecialistWidget() {
     setUnread(0);
   }, []);
 
-  // Init the journey model + flag the assistant active (so ExitIntentModal stands down).
+  // Init the journey model + flag the assistant active in sessionStorage
+  // (historically read by ExitIntentModal, now retired; see file header).
   useEffect(() => {
     if (!active || typeof window === "undefined") return;
     initJourneyModel();

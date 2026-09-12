@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contact | Book a Free Contractor Accountant Call",
   description:
     "Book a free call with a specialist contractor accountant. IR35 status reviews, limited company tax and contractor finances. No obligation.",
+  alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
 export default function ContactPage() {

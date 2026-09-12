@@ -19,7 +19,7 @@ export const contractorTypes: ContractorType[] = [
     headline: "Specialist accountants for IT contractors",
     metaTitle: "Accountants for IT Contractors | IR35 & Limited Company Tax",
     metaDescription:
-      "Specialist contractor accounting for UK IT professionals. IR35 status reviews, PSC tax planning, salary and dividend optimisation. Plain English, fixed fees.",
+      "Specialist contractor accounting for UK IT professionals. IR35 status reviews, PSC tax planning, salary and dividend optimisation. Plain English, no jargon.",
     intro:
       "IT contracting is the largest sector in UK contracting and carries some of the most complex IR35 exposure. Long-running engagements, client-directed methodologies and the reality of how developers and architects actually work can push an engagement toward inside IR35 even when the contract wording looks clean.",
     stats: [
@@ -240,7 +240,7 @@ export const contractorTypes: ContractorType[] = [
     headline: "Specialist accountants for independent management consultants",
     metaTitle: "Accountants for Management Consultants | IR35 & PSC Tax",
     metaDescription:
-      "Tax and IR35 planning for UK independent management consultants. Strategy, operations and change management specialists. Fixed fees, plain English advice.",
+      "Tax and IR35 planning for UK independent management consultants. Strategy, operations and change management specialists. Plain English advice.",
     intro:
       "Independent management consultants typically have a stronger IR35 position than many other contractor types. Engagement-based work, clear deliverables, genuine substitution and multiple clients often support an outside IR35 case. But the position is not automatic and working practice still needs to match the contract.",
     stats: [

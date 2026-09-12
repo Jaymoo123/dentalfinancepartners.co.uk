@@ -3,11 +3,13 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { contractorTypes } from "@/data/contractor-types";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contractor Types We Work With | Specialist IR35 Accountants",
   description:
     "Specialist contractor accounting across every sector: IT, engineering, finance, consulting, NHS locums, oil and gas, legal, marketing and construction.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 
 export default function ForIndexPage() {

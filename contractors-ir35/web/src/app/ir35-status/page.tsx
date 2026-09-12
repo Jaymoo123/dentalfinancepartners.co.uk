@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: "IR35 Contract Review & Status | Contractor Tax Accountants" },
   description:
     "Professional IR35 contract review for UK contractors. We assess your contract terms and working practices against all three tests. Plain English written opinion.",
+  alternates: { canonical: `${siteConfig.url}/ir35-status` },
 };
 
 const statusTests = [

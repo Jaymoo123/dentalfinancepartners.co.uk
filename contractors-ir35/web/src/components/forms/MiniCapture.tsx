@@ -5,7 +5,8 @@
  *
  * Consumers import from "@/components/forms/MiniCapture" and get an identical
  * prop surface to the old local component, so no call sites change (ResourceGate,
- * InlineMiniLeadForm, CalcResultCta, MobileToolSlot, ResultGateModal, ExitIntentModal).
+ * InlineMiniLeadForm, CalcResultCta, MobileToolSlot, ResultGateModal). ExitIntentModal
+ * was retired (P2-6, dead: zero importers/mounts) and no longer consumes this.
  *
  * Multi-step mode: enabled at deploy via NEXT_PUBLIC_MINIFORMS_MULTISTEP=1 (the
  * shared component reads the flag). Single-step (default/unset) preserves the

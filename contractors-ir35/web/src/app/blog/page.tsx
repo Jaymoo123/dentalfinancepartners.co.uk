@@ -68,7 +68,7 @@ export default function BlogIndexPage() {
                 <Link
                   key={cat.slug}
                   href={`/blog/${cat.slug}`}
-                  className="block min-h-[100px] p-5 border border-neutral-200 bg-white transition-all hover:border-cyan-700 hover:shadow-md"
+                  className="block min-h-[100px] rounded-xl p-5 border border-neutral-200 bg-white transition-all hover:border-cyan-700 hover:shadow-md"
                 >
                   <h3 className="text-base font-bold text-neutral-900">{cat.name}</h3>
                   <p className="mt-1 text-sm text-neutral-500">

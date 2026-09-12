@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "About | Specialist Contractor Accountants",
   description:
     "Specialist accountants for UK contractors and IR35. We only work with contractors, so we understand the rules that a generalist accountant will not.",
+  alternates: { canonical: `${siteConfig.url}/about` },
 };
 
 export default function AboutPage() {
@@ -36,7 +38,7 @@ export default function AboutPage() {
               The same applies to salary and dividend planning, contractor expenses, PSC pension strategy, and the mechanics of the off-payroll rules. These are not things that come up occasionally for us. They are the core of what we do.
             </p>
             <p>
-              We work on a fixed-fee basis. You know what you are paying before we start. You deal with specialist accountants, not a call centre.
+              You deal with specialist accountants, not a call centre.
             </p>
           </div>
           <div className="mt-12">

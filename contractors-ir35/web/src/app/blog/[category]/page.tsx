@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 import {
   getAllPosts,
   getAllCategories,
@@ -9,8 +7,9 @@ import {
   getCategorySlug,
   slugifyCategory,
 } from "@/lib/blog";
-import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
-import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
+import { categoryHub, ctaCopyForCategory } from "@/lib/blog-categories";
+import { BlogCategoryHub } from "@accounting-network/web-shared/design/blog/BlogCategoryHub";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 
 type Props = { params: Promise<{ category: string }> };
@@ -26,8 +25,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categories.find((c) => c.slug === category);
   if (!cat) return {};
 
+  const hub = categoryHub(category);
   const title = `${cat.name} | Contractor Tax Guides`;
-  const description = `Practical guides on ${cat.name.toLowerCase()} for UK contractors. IR35, limited company tax and off-payroll rules explained by specialist accountants.`;
+  const description =
+    hub?.description ??
+    `Practical guides on ${cat.name.toLowerCase()} for UK contractors. IR35, limited company tax and off-payroll rules explained by specialist accountants.`;
   const url = `${siteConfig.url}/blog/${category}`;
 
   return {
@@ -48,53 +50,36 @@ export default async function BlogCategoryPage({ params }: Props) {
   const allPosts = getAllPosts();
   const categoryPosts = allPosts
     .filter((p) => slugifyCategory(p.category) === category)
-    .map((p) => ({ ...p, categorySlug: getCategorySlug(p) }));
+    .map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      summary: p.summary,
+      date: p.date,
+      categorySlug: getCategorySlug(p),
+      readTime: calculateReadTime(p.contentHtml),
+    }));
 
-  const readTimes = new Map(
-    categoryPosts.map((p) => [p.slug, calculateReadTime(p.contentHtml)])
-  );
+  const hub = categoryHub(category);
+  const cta = ctaCopyForCategory(category);
 
   return (
-    <>
-      <section className="border-b border-neutral-200 bg-neutral-900 py-14 sm:py-18">
-        <div className={siteContainerLg}>
-          <Breadcrumb
-            siteUrl={siteConfig.url}
-            onDark
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: cat.name },
-            ]}
-          />
-          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-cyan-400">
-            {cat.count} article{cat.count !== 1 ? "s" : ""}
-          </p>
-          <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            {cat.name}
-          </h1>
-          <p className="mt-4 text-base text-neutral-300">
-            Practical guides on {cat.name.toLowerCase()} for UK contractors and PSC directors.
-          </p>
-        </div>
-      </section>
-
-      <section className={`bg-white ${sectionYLoose}`}>
-        <div className={siteContainerLg}>
-          <BlogListWithSearch
-            posts={categoryPosts}
-            categories={categories}
-            readTimes={readTimes}
-            activeCategory={category}
-          />
-
-          <div className="mt-12 text-sm text-neutral-500">
-            <Link href="/blog" className="text-cyan-800 hover:underline">
-              Back to all articles
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+    <BlogCategoryHub
+      categoryName={cat.name}
+      heading={hub?.heading}
+      categorySlug={category}
+      description={hub?.description ?? cat.name}
+      intro={
+        hub?.intro ??
+        `Practical guides on ${cat.name.toLowerCase()} for UK contractors and PSC directors.`
+      }
+      sections={[]}
+      cta={{ heading: cta.heading, body: cta.body, submitLabel: cta.button }}
+      posts={categoryPosts}
+      categories={categories}
+      siteUrl={siteConfig.url}
+      form={<LeadForm submitLabel={cta.button} />}
+      proofPoints={[]}
+      libraryNote={`${cat.count} ${cat.count === 1 ? "guide" : "guides"} on ${cat.name.toLowerCase()}.`}
+    />
   );
 }

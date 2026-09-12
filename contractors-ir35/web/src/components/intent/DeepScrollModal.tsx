@@ -41,8 +41,9 @@ export function DeepScrollModal() {
 
   useEffect(() => {
     if (!action || open || shownThisSession) return;
-    // Shared per-session cap with ExitIntentModal: at most ONE topic-offer
-    // modal per session (QA finding, twins wave; mirrors Dentists).
+    // Per-session cap: at most ONE topic-offer modal per session (QA finding,
+    // twins wave; mirrors Dentists). ExitIntentModal was retired (P2-6, dead
+    // code); this cap key is no longer shared with anything.
     try {
       if (window.sessionStorage.getItem("cfp_modal_shown") === "1") return;
       window.sessionStorage.setItem("cfp_modal_shown", "1");

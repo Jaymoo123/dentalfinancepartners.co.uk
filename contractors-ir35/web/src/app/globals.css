@@ -380,3 +380,54 @@ select:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* ============================================================
+   IN-PAGE ANCHOR TARGETS
+   The header is sticky, so any element a "#id" link lands on must keep 96px
+   clear above it or its own heading is hidden underneath. Headings inside
+   rendered markdown get their ids from addHeadingIds() in lib/markdown-utils
+   (blog + resources), and three resource files carry hand-written ids that
+   helper deliberately leaves alone, so there is no single component to patch:
+   one rule on the shape covers every stamper, present and future.
+   :where() keeps specificity at 0 so an explicit scroll-mt-* utility on a
+   specific heading still wins.
+   ============================================================ */
+:where(h2[id], h3[id], h4[id]) {
+  scroll-margin-top: 6rem; /* = scroll-mt-24, the value used on #main */
+}
+
+/* ============================================================
+   HEADER PRIMARY CTA VISIBILITY (P1-9)
+   The kit header composes `${btnPrimary} hidden ... lg:inline-flex` on the
+   desktop primary CTA. `btnPrimary` itself OPENS with `inline-flex`, so the
+   element carries both `hidden` and `inline-flex` as unmodified, equal
+   specificity utilities, and Tailwind emits `.hidden` BEFORE `.inline-flex`
+   (verified: bytes 14873 vs 14952 of the built stylesheet). `.inline-flex`
+   therefore wins on source order and the CTA never hides at any width — it
+   rendered alongside the burger from 0 to 1023px, crowding the wordmark at
+   390px, which breaches DESIGN_SYSTEM.md §0.8 / §7a.
+
+   Fixed here rather than in the kit because
+   packages/web-shared/design/chrome/SiteHeader.tsx is shared by 18 sites and
+   is an owner-gated change (trap 12), and the component exposes no className
+   prop for this CTA.
+
+   LAYERED deliberately: this sits inside `@layer utilities`, so it is NOT a
+   fourth unlayered block and does not out-rank arbitrary Tailwind utilities.
+   Inside the layer it wins on specificity alone (0,2,2 vs 0,1,0). Blast
+   radius: the `display` of the single header-bar primary CTA anchor. The
+   drawer CTA carries data-cta-placement="header_mobile" and is untouched;
+   any explicit display utility on this exact element would now lose, and
+   there is none.
+   ============================================================ */
+@layer utilities {
+  header a[data-cta-placement="header"][data-cta="header_book"] {
+    display: none;
+  }
+
+  @media (min-width: 64rem) {
+    header a[data-cta-placement="header"][data-cta="header_book"] {
+      display: inline-flex;
+    }
+  }
+}

@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contractorTypes, getContractorType } from "@/data/contractor-types";
+import { siteConfig } from "@/config/site";
 
 export function generateStaticParams() {
   return contractorTypes.map((t) => ({ slug: t.slug }));
@@ -25,6 +26,7 @@ export async function generateMetadata({
   return {
     title: type.metaTitle,
     description: type.metaDescription,
+    alternates: { canonical: `${siteConfig.url}/for/${type.slug}` },
   };
 }
 
@@ -206,7 +208,7 @@ export default async function ContractorTypePage({
                 {[
                   "Specialist in contractor accounting, not a generalist practice",
                   "A contractor specialist reviews your enquiry",
-                  "Fixed fees, quoted before we start",
+                  "Contractor work only, not a general practice sideline",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">
                     <div className="h-5 w-5 flex items-center justify-center bg-cyan-700 text-white text-xs font-bold flex-shrink-0">✓</div>

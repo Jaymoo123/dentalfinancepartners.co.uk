@@ -79,7 +79,6 @@ export function buildOrganizationJsonLd() {
     },
     areaServed: AREA_SERVED,
     knowsAbout: KNOWS_ABOUT,
-    priceRange: "££",
   });
 }
 
@@ -208,7 +207,6 @@ export function buildLocalBusinessJsonLd(opts: {
       "@type": "City",
       name: area,
     })),
-    priceRange: "££",
     knowsAbout: KNOWS_ABOUT,
     ...(opts.serviceTypes && { serviceType: opts.serviceTypes }),
   });

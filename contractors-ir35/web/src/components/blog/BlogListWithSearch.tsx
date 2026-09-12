@@ -114,7 +114,7 @@ export function BlogListWithSearch({
       )}
 
       {filteredAndSortedPosts.length === 0 ? (
-        <div className="mt-8 border border-neutral-200 bg-[#fafaf7] p-8 text-center">
+        <div className="mt-8 rounded-xl border border-neutral-200 bg-[#fafaf7] p-8 text-center">
           <p className="text-base text-neutral-500">
             {searchQuery
               ? `No articles found matching "${searchQuery}". Try a different search term.`
@@ -127,7 +127,7 @@ export function BlogListWithSearch({
               const readTime = readTimes.get(p.slug) ?? 0;
               return (
                 <li key={p.slug}>
-                  <article className="border border-neutral-200 bg-[#fafaf7] p-5 sm:p-6 transition-shadow hover:shadow-md">
+                  <article className="rounded-xl border border-neutral-200 bg-[#fafaf7] p-5 sm:p-6 transition-shadow hover:shadow-md">
                     <p className="text-[11px] font-bold uppercase tracking-wider text-cyan-800">
                       {p.category}
                     </p>
@@ -140,7 +140,16 @@ export function BlogListWithSearch({
                       </Link>
                     </h2>
                     <p className="mt-2 text-sm leading-relaxed text-neutral-500 sm:text-base">{p.summary}</p>
-                    <div className="mt-4 flex items-center gap-3 text-sm text-neutral-400">
+                    {/* text-neutral-500 (#737373), not neutral-400 (#a3a3a3): the
+                        400 shade on this card ground measures 2.47, below the 4.5
+                        text floor, for the date, the separator dot and "N min read"
+                        alike. 500 measures ~4.74 by the same sRGB-luminance method
+                        (self-tested against slate-500 white=4.76, slate-400
+                        white=2.56 -- both land within rounding of this calc).
+                        globals.css defines an unused --ink-whisper token at the
+                        same failing value (#a3a3a3, zero real consumers, verified
+                        by grep) -- unrelated to this fix, not touched. */}
+                    <div className="mt-4 flex items-center gap-3 text-sm text-neutral-500">
                       {p.date ? (
                         <time dateTime={p.date}>
                           {new Intl.DateTimeFormat("en-GB", {

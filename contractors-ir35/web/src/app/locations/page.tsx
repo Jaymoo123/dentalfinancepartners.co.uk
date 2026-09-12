@@ -127,8 +127,8 @@ export default function LocationsIndexPage() {
             </h1>
             <p className="mt-4 text-lg text-neutral-300 leading-relaxed">
               {totalCities > 0
-                ? `Specialist contractor and IR35 accountants serving contractors in ${totalCities} of the UK's biggest contracting markets, entirely remotely. Each city page covers the dominant contractor sectors and the local off-payroll picture. National coverage, remote-first, fixed fees.`
-                : "Specialist contractor and IR35 accountants serving contractors across the UK, entirely remotely. National coverage, remote-first, fixed fees."}
+                ? `Specialist contractor and IR35 accountants serving contractors in ${totalCities} of the UK's biggest contracting markets, entirely remotely. Each city page covers the dominant contractor sectors and the local off-payroll picture. National coverage, remote-first.`
+                : "Specialist contractor and IR35 accountants serving contractors across the UK, entirely remotely. National coverage, remote-first."}
             </p>
           </div>
         </div>

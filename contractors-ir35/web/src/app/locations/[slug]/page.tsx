@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // the brand suffix is not appended a second time.
   const title = `Contractor Accountants in ${city.name} | ${siteConfig.name}`;
 
-  const description = `Specialist contractor and IR35 accountants for ${city.name} contractors. IR35 status, limited company tax, umbrella vs Ltd and self assessment. Fixed fees.`;
+  const description = `Specialist contractor and IR35 accountants for ${city.name} contractors. IR35 status, limited company tax, umbrella vs Ltd and self assessment.`;
 
   return {
     title: { absolute: title },
@@ -69,7 +69,7 @@ export default async function CityPage({ params }: Props) {
   // served rather than a physical office at that postcode).
   const localBusiness = buildLocalBusinessJsonLd({
     name: `${siteConfig.name} - ${city.name}`,
-    description: `Specialist contractor and IR35 accountants serving ${city.name} contractors remotely, nationwide. IR35 status reviews, off-payroll determinations, limited company and PSC tax, umbrella vs limited company comparisons, self assessment and contractor tax planning. Fixed fees.`,
+    description: `Specialist contractor and IR35 accountants serving ${city.name} contractors remotely, nationwide. IR35 status reviews, off-payroll determinations, limited company and PSC tax, umbrella vs limited company comparisons, self assessment and contractor tax planning.`,
     url: `/locations/${city.slug}`,
     city: city.name,
     region: city.region,

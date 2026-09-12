@@ -36,7 +36,7 @@ export const serviceTiers: ServiceTier[] = [
   },
   {
     name: "Done for you",
-    description: "Full ongoing accountancy for contractors and PSC directors. Fixed monthly fee, quoted after a call.",
+    description: "Full ongoing accountancy for contractors and PSC directors. Scope agreed after a call.",
     features: [
       "Annual limited company accounts and CT600",
       "Corporation tax return and Companies House filing",
@@ -44,7 +44,7 @@ export const serviceTiers: ServiceTier[] = [
       "Optimised salary and dividend plan each tax year",
       "PSC employer pension contributions built into planning",
       "Contractor expenses review and claims support",
-      "Fixed monthly fee, no surprises",
+      "Scope agreed up front, no surprises",
     ],
     cta: "Get a quote",
     ctaHref: "/contact",
