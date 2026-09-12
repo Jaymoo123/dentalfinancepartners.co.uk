@@ -5,7 +5,7 @@ import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 export const metadata: Metadata = {
   title: "Contact | Book a Free Contractor Accountant Call",
   description:
-    "Book a free call with a specialist contractor accountant. IR35 status reviews, limited company tax and contractor finances. You will hear back within one working day.",
+    "Book a free call with a specialist contractor accountant. IR35 status reviews, limited company tax and contractor finances. No obligation.",
 };
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
                   },
                   {
                     n: "02",
-                    title: "You hear back within 24 hours",
+                    title: "A specialist gets in touch",
                     body: "A specialist contractor accountant from our partner network will respond to arrange a short call. Not a sales team, not a call centre.",
                   },
                   {

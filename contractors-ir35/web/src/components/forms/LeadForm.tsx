@@ -386,7 +386,7 @@ export function LeadForm({
       {status === "success" && !redirectOnSuccess && (
         <div role="status" className="border border-cyan-200 bg-cyan-50 p-4">
           <p className="text-sm font-medium text-cyan-900">
-            Thanks. You will hear back within 24 hours.
+            Thanks. A specialist will be in touch.
           </p>
           <p className="mt-2 text-sm text-cyan-900">
             For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it
@@ -404,7 +404,7 @@ export function LeadForm({
       </button>
 
       <p className="text-xs leading-relaxed text-neutral-500">
-        You will hear back within 24 hours. Your details are stored securely.
+        A specialist will be in touch. Your details are stored securely.
       </p>
     </form>
   );

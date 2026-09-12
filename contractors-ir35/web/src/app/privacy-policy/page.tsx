@@ -70,7 +70,8 @@ export default function PrivacyPolicyPage() {
             </li>
             <li>
               <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages viewed,
-              device and browser type, and an approximate country derived from your IP address). Our hosting provider may
+              device and browser type, and an approximate location and timezone derived from your IP address, which we
+              do not store). Our hosting provider may
               also log technical request data for security and performance. See our{" "}
               <Link href="/cookie-policy" className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900">cookie policy</Link>{" "}
               for detail.
@@ -122,8 +123,7 @@ export default function PrivacyPolicyPage() {
             When you submit an enquiry, we share information about you and your enquiry with regulated firms
             from our <strong>specialist partner network</strong>, so that they can contact you and provide the
             advice you asked for. What we share is: your name, telephone number and email address; your
-            enquiry message; the type of work it describes, the grade we give it under our published grading
-            rubric and a one-line summary of what you are asking for; the role and any description of it you
+            enquiry message; the type of work it describes, the grade we give it and a one-line summary of what you are asking for; the role and any description of it you
             gave; your practice or company name if you gave one; the rough area you are in; whether we were
             able to confirm your contact details and when; and the website, page and form your enquiry came
             from, together with the notice you were shown. We do this on the basis of our{" "}
@@ -162,11 +162,6 @@ export default function PrivacyPolicyPage() {
             <li><strong>Vercel:</strong> website hosting and content delivery.</li>
             <li><strong>Resend:</strong> sending the emails we use to confirm your details and to respond to you.</li>
             <li><strong>Twilio:</strong> sending the text messages we use to confirm your details.</li>
-            <li>
-              <strong>Anthropic, through the Vercel AI Gateway:</strong> reading your enquiry to grade the type of
-              work it describes and to write the one-line summary we show to firms.
-            </li>
-            <li><strong>Companies House:</strong> looking up publicly available information where you mention a company.</li>
           </ul>
           <p>
             Some of these providers process data outside the United Kingdom. Where they do, we rely on a valid
@@ -214,7 +209,8 @@ export default function PrivacyPolicyPage() {
 
           <h2>8. Cookies and analytics</h2>
           <p>
-            We use cookies and similar technologies for analytics, so we can understand how the Site is used and improve it.
+            We run our own first-party analytics so we can understand how the Site is used and improve it. It stores two
+            random identifiers in your browser rather than using cookies, and we do not use third-party analytics.
             For full details of what we use and how to manage or opt out, please see our{" "}
             <Link href="/cookie-policy" className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900">cookie policy</Link>.
           </p>

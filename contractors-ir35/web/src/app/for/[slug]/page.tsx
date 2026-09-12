@@ -205,7 +205,7 @@ export default async function ContractorTypePage({
               <div className="mt-8 space-y-3">
                 {[
                   "Specialist in contractor accounting, not a generalist practice",
-                  "24-hour response guarantee",
+                  "A contractor specialist reviews your enquiry",
                   "Fixed fees, quoted before we start",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">

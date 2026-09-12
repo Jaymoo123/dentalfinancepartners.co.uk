@@ -125,7 +125,7 @@ export function ResultGateModal({
           }
           blurb="A calculator gives the shape of the answer. IR35 status, the salary and dividend split and the umbrella-vs-limited decision are unforgiving in the detail. Tell us your situation and a contractor specialist will confirm your exact figure and the sensible next step, with no obligation."
           submitLabel="Get my figure confirmed"
-          successText="Thanks, we will be in touch within one working day. Your result is below."
+          successText="Thanks, we will be in touch. Your result is below."
           className="mt-2"
           messagePlaceholder="The more detail the better. Tell us about your contracting situation, rough figures, and what you are trying to work out. A couple of sentences is ideal."
           messageMinLength={40}

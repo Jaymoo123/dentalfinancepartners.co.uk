@@ -776,8 +776,12 @@ describe("faqForTopic: house position accuracy spot-checks", () => {
     expect(GENERIC.length).toBe(3);
   });
 
-  it("GENERIC Q&A 1 is about response speed", () => {
-    expect(GENERIC[0].q).toMatch(/quickly|how.*reply|reply/i);
+  it("GENERIC Q&A 1 is about who answers, and promises no response time", () => {
+    expect(GENERIC[0].q).toMatch(/who|answer/i);
+    // Timed turnaround promises are banned by standing rule.
+    expect(`${GENERIC[0].q} ${GENERIC[0].a}`).not.toMatch(
+      /within (24|one|two|48)|24 ?h(ours?)?\b|working day|same day|right away/i,
+    );
   });
 
   it("GENERIC Q&A 2 is about the first call being free", () => {

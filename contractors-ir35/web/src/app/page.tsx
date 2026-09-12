@@ -34,10 +34,10 @@ export const metadata: Metadata = {
 };
 
 const keyStats = [
-  { value: "£10k+", label: "Typical annual saving outside IR35 vs umbrella" },
+  { value: "~£2k", label: "Modelled annual saving outside IR35 vs umbrella at £500 a day" },
   { value: "~2M", label: "UK contractors affected by IR35" },
   { value: "6 years", label: "HMRC can investigate past IR35 filings" },
-  { value: "24h", label: "Our response guarantee" },
+  { value: "45 days", label: "Clients must answer an SDS disagreement" },
 ];
 
 const testimonials = [
@@ -228,9 +228,9 @@ export default function HomePage() {
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">Real outcomes</div>
+            <div className="section-label mb-4">Composite snapshots</div>
             <h2 id="testimonials-heading" className="text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
-              What we have done for contractors
+              The situations contractors bring us
             </h2>
             <p className="mt-3 text-sm sm:text-base text-neutral-600">
               Composite snapshots based on patterns across our contractor clients. Names and figures anonymised. The tax mechanics are real.
@@ -455,7 +455,7 @@ export default function HomePage() {
               <div className="mt-8 space-y-4">
                 {[
                   { title: "Contractor specialists only", sub: "We do not work with generalist clients" },
-                  { title: "24-hour response time", sub: "Usually the same day" },
+                  { title: "A specialist picks it up", sub: "Not a call-centre queue" },
                   { title: "Fixed fees, no surprises", sub: "Quoted before we start" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
                 ].map((item) => (

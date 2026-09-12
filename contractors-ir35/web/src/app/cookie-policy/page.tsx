@@ -46,9 +46,9 @@ export default function CookiePolicyPage() {
             form steps. The lawful basis is our legitimate interest in measuring and improving the Site.
           </p>
           <p>
-            This data is anonymous. We do not store your IP address (only a country derived from it), we do
-            not collect your name, email or phone number in these events, and we do not sell or share this
-            data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all analytics on your device.
+            This data is anonymous. We do not store your IP address itself. From it we derive and store an
+            approximate location (country, city and region) and your timezone. We do not collect your name,
+            email or phone number in these events, and we do not sell or share this data. You can opt out at any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all analytics on your device.
           </p>
           <h3>Third-party analytics</h3>
           <p>
@@ -56,8 +56,8 @@ export default function CookiePolicyPage() {
             analytics data collected is through our own first-party system described above.
           </p>
 
-          <h2>2. Purpose of cookies</h2>
-          <p>We use cookies to:</p>
+          <h2>2. What we use this data for</h2>
+          <p>We use the analytics data described above to:</p>
           <ul>
             <li>Understand which pages are most useful to contractors and IR35-affected workers</li>
             <li>Identify technical issues or broken links</li>
@@ -118,18 +118,10 @@ export default function CookiePolicyPage() {
             </li>
           </ul>
 
-          <h3>Google Analytics opt-out</h3>
+          <h3>Our own analytics</h3>
           <p>
-            You can opt out of Google Analytics tracking by installing the{" "}
-            <a
-              href="https://tools.google.com/dlpage/gaoptout"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900"
-            >
-              Google Analytics Opt-out Browser Add-on
-            </a>
-            .
+            To opt out of our first-party analytics, use the &quot;Do not track me&quot; link in the footer of
+            every page. It takes effect immediately on your device.
           </p>
 
           <h2>4. Changes to this policy</h2>

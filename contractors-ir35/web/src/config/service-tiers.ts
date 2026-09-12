@@ -53,12 +53,13 @@ export const serviceTiers: ServiceTier[] = [
 
 // Stats verifiable from the codebase:
 // - 10 calculators: registry.ts imports 10 GenericTool entries (0 bespoke)
-// - 58 guides: 58 .md files under contractors-ir35/web/content/blog/
+// - 62 guides: 62 .md files under contractors-ir35/web/content/blog/ (0 drafts)
 // - 6 services: services page defines 6 service cards
-// - 24h response: stated in page.tsx keyStats + contact section
+// - 7 guide categories: distinct `category:` values across content/blog/*.md
+// No response-time stat: timed turnaround promises are banned by standing rule.
 export const siteStats: StatItemConfig[] = [
   { icon: "🧮", value: "10", label: "Free calculators" },
-  { icon: "📄", value: "58", label: "Contractor guides" },
+  { icon: "📄", value: "62", label: "Contractor guides" },
   { icon: "⚙️", value: "6", label: "Core services covered" },
-  { icon: "⏱️", value: "24h", label: "Response guarantee" },
+  { icon: "📚", value: "7", label: "Guide categories" },
 ];

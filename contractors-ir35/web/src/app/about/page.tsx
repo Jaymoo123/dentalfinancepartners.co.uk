@@ -27,16 +27,16 @@ export default function AboutPage() {
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="max-w-3xl space-y-8 text-base leading-relaxed text-neutral-600 sm:text-lg">
             <p>
-              We are specialist accountants for UK contractors and limited company directors. Every client we work with operates through a PSC or is considering doing so. That focus means we understand the financial specifics of contracting in a way that a general practice does not.
+              We are specialist accountants for UK contractors and limited company directors. The work we take on involves a PSC, or someone considering one. That focus means we understand the financial specifics of contracting in a way that a general practice does not.
             </p>
             <p>
-              IR35 is the clearest example. The rules are specific, the rules changed in April 2021, and getting them wrong is expensive. A generalist accountant can read the guidance. We see the practical application of those rules across a large contractor client base every week, so we know where the risks and opportunities actually are.
+              IR35 is the clearest example. The rules are specific, the rules changed in April 2021, and getting them wrong is expensive. A generalist accountant can read the guidance. We work with those rules as they are applied in practice, contract by contract, so we know where the risks and opportunities actually are.
             </p>
             <p>
               The same applies to salary and dividend planning, contractor expenses, PSC pension strategy, and the mechanics of the off-payroll rules. These are not things that come up occasionally for us. They are the core of what we do.
             </p>
             <p>
-              We work on a fixed-fee basis. You know what you are paying before we start. You hear back within one working day. You deal with specialist accountants, not a call centre.
+              We work on a fixed-fee basis. You know what you are paying before we start. You deal with specialist accountants, not a call centre.
             </p>
           </div>
           <div className="mt-12">
