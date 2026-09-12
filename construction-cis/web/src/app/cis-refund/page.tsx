@@ -22,7 +22,7 @@ const howItWorks = [
   },
   {
     heading: "How long does it take?",
-    body: "For a correctly filed sole-trader Self Assessment return, HMRC typically processes and issues the refund within 8 to 12 weeks. Complex cases or amended returns can take longer. For limited companies using the EPS route, deductions are offset month by month with no waiting period. We follow up with HMRC if delays occur.",
+    body: "There is no published HMRC turnaround for a sole-trader Self Assessment repayment. HMRC asks you to use its 'Check when you can expect a reply' tool, which it updates weekly, and it warns that a claim selected for its anti-fraud security checks can take up to a further 12 weeks on top of that date. Limited companies do not wait at all on the EPS route: CIS suffered is offset against the monthly PAYE liability as you go. A year-end limited-company repayment claim is different, and HMRC says it will usually respond to one within 8 weeks.",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function CisRefundPage() {
               },
               {
                 name: "How long it takes",
-                text: "HMRC typically processes Self Assessment repayments within 5 to 10 working days of filing. Limited company EPS reclaims are usually settled within 25 working days of the EPS submission.",
+                text: "HMRC publishes no fixed Self Assessment repayment turnaround and directs claimants to its weekly-updated 'Check when you can expect a reply' tool. Repayments selected for security checks can take up to a further 12 weeks. HMRC says it will usually respond to a limited company CIS repayment claim within 8 weeks; the in-year EPS route offsets CIS suffered monthly with no claim to process.",
               },
             ],
           }),

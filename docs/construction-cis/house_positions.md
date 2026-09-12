@@ -184,7 +184,7 @@ Figures the original §8 plan did not carry but which wave-1 pages needed. Each 
 - **AMAP other vehicles:** motorcycle 24p, bicycle 20p (unchanged by FA 2026).
 - **Use-of-home flat rates:** £10 (25-50 hrs/mo) / £18 (51-100) / £26 (101+), max £312/yr.
 - **AIA:** £1m, 100% first-year deduction. **Auto-enrolment:** 8% total (5% employee / 3% employer).
-- **HMRC CIS helpline:** 0300 200 3210 (Mon-Fri 8am-6pm). **EPS/CIS company repayment target:** 25 working days. **SA online repayment:** typically 5-10 working days.
+- **HMRC CIS helpline:** 0300 200 3210 (Mon-Fri 8am-6pm). **Limited-company CIS repayment claim (year-end, not EPS):** HMRC "will usually respond within 8 weeks" (GOV.UK, last updated 25 Aug 2026). **EPS in-year route:** an offset against monthly PAYE, no HMRC turnaround applies. **SA repayment:** HMRC publishes NO figure and defers to its weekly-updated "Check when you can expect a reply" tool; security checks can add **up to a further 12 weeks** (ICAEW, Dec 2023, quoting HMRC). The 5-working-day figure on GOV.UK is **PAYE P800 online claims only** and must never be restated as a Self Assessment timescale. **Never publish a single end-to-end refund duration: none is sourceable.**
 - **SA refund lookback:** 4 prior tax years. **SA late-filing penalties:** £100 immediate, escalating at 3/6/12 months (distinct from the CIS300 ladder in §4 — never merge them).
 
 ---

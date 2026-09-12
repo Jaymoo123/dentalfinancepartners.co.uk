@@ -55,7 +55,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim",
         body:
-          "We calculate the full CIS refund you are owed, account for allowable expenses (mileage at 55p, tools, materials, van costs, PPE), and submit your Self Assessment return to claim it back. Most plumbers receive their refund within 8 to 12 weeks of submission.",
+          "We calculate the full CIS refund you are owed, account for allowable expenses (mileage at 55p, tools, materials, van costs, PPE), and submit your Self Assessment return to claim it back. Most plumbers receive their refund within weeks rather than months of submission.",
       },
       {
         title: "Ongoing CIS compliance",
@@ -123,7 +123,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund calculation and claim",
         body:
-          "We calculate your full refund entitlement including all allowable expenses, check your deduction slips for incorrect base amounts, and submit your Self Assessment return. Most electricians receive their refund within 8 to 12 weeks.",
+          "We calculate your full refund entitlement including all allowable expenses, check your deduction slips for incorrect base amounts, and submit your Self Assessment return. Most electricians receive their refund within weeks rather than months.",
       },
       {
         title: "Capital allowances on tools and equipment",
@@ -334,7 +334,7 @@ export const tradeTypes: TradeType[] = [
       {
         question: "How long does it take to receive a CIS refund?",
         answer:
-          "HMRC typically processes a CIS refund within 8 to 12 weeks of receiving a correctly filed Self Assessment return. Complex cases or amended returns can take longer. We submit accurately and follow up with HMRC if there are delays.",
+          "HMRC typically processes a CIS refund within weeks rather than months of receiving a correctly filed Self Assessment return. Complex cases or amended returns can take longer. We submit accurately and follow up with HMRC if there are delays.",
       },
     ],
     testimonial: {
@@ -506,7 +506,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim",
         body:
-          "We review your deduction statements, check the materials split, account for all allowable expenses and submit your Self Assessment return. Most painters and decorators receive a refund within 8 to 12 weeks.",
+          "We review your deduction statements, check the materials split, account for all allowable expenses and submit your Self Assessment return. Most painters and decorators receive a refund within weeks rather than months.",
       },
       {
         title: "Gross payment status",
@@ -1045,7 +1045,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund calculation and claim",
         body:
-          "We review your payment and deduction statements, verify the labour/materials split on each job, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return to recover the full refund. Most carpenters receive their refund within 8 to 12 weeks of a correctly filed return.",
+          "We review your payment and deduction statements, verify the labour/materials split on each job, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return to recover the full refund. Most carpenters receive their refund within weeks rather than months of a correctly filed return.",
       },
       {
         title: "Capital allowances review on tools and equipment",
@@ -1123,7 +1123,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim with correct materials split",
         body:
-          "We review every payment and deduction statement, verify that the deduction base excludes tiles, adhesive and other materials, account for allowable expenses including mileage at 55p per mile and specialist tools, and submit your Self Assessment return. Most tilers receive their refund within 8 to 12 weeks.",
+          "We review every payment and deduction statement, verify that the deduction base excludes tiles, adhesive and other materials, account for allowable expenses including mileage at 55p per mile and specialist tools, and submit your Self Assessment return. Most tilers receive their refund within weeks rather than months.",
       },
       {
         title: "Capital allowances on cutting and specialist equipment",
@@ -1264,7 +1264,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund and Self Assessment",
         body:
-          "We calculate your full refund entitlement by accounting for all allowable expenses including tools, PPE, mileage at 55p per mile from April 2026, and any materials you supply. We submit your Self Assessment return to recover the overpayment. Most steel fixers receive their refund within 8 to 12 weeks of a correctly filed return.",
+          "We calculate your full refund entitlement by accounting for all allowable expenses including tools, PPE, mileage at 55p per mile from April 2026, and any materials you supply. We submit your Self Assessment return to recover the overpayment. Most steel fixers receive their refund within weeks rather than months of a correctly filed return.",
       },
       {
         title: "Gross payment status application and compliance",
@@ -1337,7 +1337,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund with MF grid and board exclusions applied",
         body:
-          "We review your payment and deduction statements, verify that MF grid, suspension components, ceiling tiles and plasterboard are excluded from the deduction base, account for all allowable expenses including mileage at 55p per mile from April 2026, tools and PPE, and submit your Self Assessment return. Most ceiling fixers receive their refund within 8 to 12 weeks of a correctly filed return.",
+          "We review your payment and deduction statements, verify that MF grid, suspension components, ceiling tiles and plasterboard are excluded from the deduction base, account for all allowable expenses including mileage at 55p per mile from April 2026, tools and PPE, and submit your Self Assessment return. Most ceiling fixers receive their refund within weeks rather than months of a correctly filed return.",
       },
       {
         title: "Multi-scope invoice review",
@@ -1416,7 +1416,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund calculation and claim",
         body:
-          "We review your deduction slips, verify the labour/materials split on each invoice, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return. Most flooring contractors receive their refund within 8 to 12 weeks of an accurate submission.",
+          "We review your deduction slips, verify the labour/materials split on each invoice, account for all allowable expenses including tools, van costs and mileage at 55p per mile, and submit your Self Assessment return. Most flooring contractors receive their refund within weeks rather than months of an accurate submission.",
       },
       {
         title: "Private vs CIS work: record-keeping structure",
@@ -1805,7 +1805,7 @@ export const tradeTypes: TradeType[] = [
       {
         title: "CIS refund claim including materials split review",
         body:
-          "We review every deduction statement, verify the labour and materials split, identify any overpayment where the deduction base included materials, and submit your Self Assessment return. Most insulation installers receive their refund within 8 to 12 weeks of a correctly filed return.",
+          "We review every deduction statement, verify the labour and materials split, identify any overpayment where the deduction base included materials, and submit your Self Assessment return. Most insulation installers receive their refund within weeks rather than months of a correctly filed return.",
       },
       {
         title: "CIS registration and GPS application",
