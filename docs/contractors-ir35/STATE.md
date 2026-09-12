@@ -1,100 +1,251 @@
 # contractors-ir35 (Contractor Tax Accountants) — site state
 
-Last updated 2026-06-17 (**DEPLOYED + LIVE**). The 7th estate site, the first BORN on the standardised grid (machinery composed before launch rather than retrofitted). Built via `docs/_engines/SITE_SPINUP.md`; **LIVE at https://www.contractortaxaccountants.co.uk** (deployment `dpl_2yVWFsReapZveud5KYwsMj8hfD9W`, 2026-06-17).
+Last re-measured **2026-09-12** (phase 0 of the design port). Every number below carries
+the command that derives it. The previous edition of this file was last touched
+2026-06-17 and had drifted badly; see "What was wrong" at the foot.
 
-## 2026-08-25 — Port-branch merge: nothing pending for this site
+LIVE at https://www.contractortaxaccountants.co.uk. The 7th estate site, the first BORN
+on the standardised grid (machinery composed before launch rather than retrofitted).
+Built via `docs/_engines/SITE_SPINUP.md`.
 
-`design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
-rollout, decision §8.10). Passenger enumeration for this site: **21 commits** were on
-the branch and not in `origin/main`.
+---
 
-**All 21 are already on production, so the merge ships nothing new here.** This site's
-live production deployment is SHA `435cc12e`, deployed 2026-08-24 ~20:2x UTC
-(Vercel API `GET /v9/projects` -> `targets.production.meta.gitCommitSha`, readyState
-READY, read 2026-08-25; this is what the production alias actually points at, which a
-`/v6/deployments` listing alone would not prove), and
-`git log 435cc12e..design/property-redesign-port --oneline -- 'contractors-ir35/'` returns 0.
-Main was BEHIND production for this site, not ahead of it.
+## ⚡ PICKUP — port status DERIVED FROM GIT (2026-09-12)
 
-Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'contractors-ir35/'`.
-Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
-sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+Do not trust the prose below this block over git. These three commands are the authority
+(playbook T38). Re-run them before acting.
 
-## ⚡ RESUME HERE (next manager)
+```
+git tag -l 'port-*'
+git log --oneline -20 -- contractors-ir35/
+git status --porcelain docs/contractors-ir35/
+```
 
-Launch build committed (`b8856199`) and **DEPLOYED 2026-06-17**. Live verification all green: all key routes 200 (home/calculator/research/glossary/location/blog/robots/sitemap/feed/llms), homepage serves real content (not the 404 trap), sitemap base URL = production domain, security headers present, **analytics ingest confirmed (21 web_events rows under site_key `contractors-ir35` → SERVICE_ROLE env set, /admin/analytics + estate console connected)**, an01 browser-pass ALL GREEN. Pre-deploy: build 153 pages green, vitest 39/39, spinup 12 PASS/0 GAP.
+**What they show, run 2026-09-12:**
 
-**Outstanding post-deploy items** (see "Post-deploy" section below): test-lead (Ahmad-protected), GA4, GSC/Bing props + sitemap upload, IndexNow + monitored_pages, real phone.
+- `git tag -l 'port-*'` lists 32 tags: construction-cis phase0-6, dentists phase1-6,
+  generalist phase1-6, medical phase1-6, solicitors phase0-6.
+  **ZERO `port-contractors-ir35-*` tags exist. No port phase is tagged for this site.**
+- `git log --oneline -20 -- contractors-ir35/` has **two** port commits on top:
+  - `6d0155b6` fix(contractors-ir35): figures by arithmetic, the blog index, chart data
+    (2026-09-12 22:07) — carries F2, F5, F6 and P1-DATA
+  - `1340c74d` fix(contractors-ir35): phase 0 claims audit, serious tier
+    (2026-09-12 22:01) — carries F1, F3, F4 and the P0-A/B/C/D/E artefacts
+  - below those, `18b4f25f` (2026-09-09), which is what production serves.
+- `git status --porcelain docs/contractors-ir35/` is **not clean**:
+  `M docs/contractors-ir35/_port/F1_RESOURCES_FIX.md`,
+  `?? docs/contractors-ir35/DESIGN_DELTA.md`,
+  `?? docs/contractors-ir35/_port/PHASE_PLAN.md`.
+  The site tree is also dirty: `M contractors-ir35/web/content/resources/ir35.md`,
+  `M .../resources/structure.md`, `M .../src/app/globals.css`, and three untracked tests
+  (`src/tests/calculator-crawl-path.test.ts`, `hub-article-crawl-path.test.ts`,
+  `nav-active-state.test.ts`). Other agents are working this tree right now.
+
+**Status statement:** phase 0 complete; serious content tier fixed and committed; **no
+port phase tags for this site**; nothing pushed (`git log --oneline origin/main..HEAD | wc -l`
+= **101** commits ahead of `origin/main`); nothing deployed; production serves
+`18b4f25f39cd0c4aa084e582d69a87c8a10710ac` (2026-09-09), per `P0B_DEPLOY_BASELINE.md`.
+
+**Brief correction:** the briefing named `1340c74d` as the single serious-tier commit.
+Git shows **two**: `1340c74d` and the later `6d0155b6`. Everything else in the briefed
+status reproduces.
+
+Phase 0 artefacts live in `docs/contractors-ir35/_port/`. Read them, do not restate them:
+
+| Artefact | Covers |
+|---|---|
+| `P0A_INVENTORY.md` | routes, components, capture surfaces, shared-vs-local, nav, blog frontmatter |
+| `P0B_DEPLOY_BASELINE.md` | production SHA, auto-deploy posture, link floor, DB baselines |
+| `P0C1_CLAIMS_LEDGER.md` | figures and arithmetic claims |
+| `P0C2_CLAIMS_LEDGER.md` | promises, evidence and compliance claims |
+| `P0C3_PUBLIC_ASSETS.md` | public and downloadable asset audit |
+| `P0D_CSS_A11Y.md` | CSS and accessibility hazards |
+| `P0E_CRAWL_INTEGRITY.md` | crawl and link integrity baseline |
+| `sweep_baseline.json` | link floor, 157 URLs at SHA `18b4f25f` |
+| `PHASE0_PACKAGES.md` | phase 0 work packages, family B sizing |
+| `PHASE_PLAN.md` (untracked) | phases 1 to 6 plan |
+| `F1`–`F6` `_FIX.md` | the serious-tier fixes actually applied |
+
+---
+
+## Measured inventory (2026-09-12)
+
+All commands run from `contractors-ir35/web` unless stated.
+
+| Fact | Value | Command |
+|---|---|---|
+| Blog posts | **62** | `ls content/blog/*.md \| wc -l` |
+| Blog categories in config | **7** | `python -c "import json;print(len(json.load(open('../niche.config.json'))['content_strategy']['categories']))"` |
+| Categories used by posts | **7, agreeing exactly with the config** | `grep -h '^category:' content/blog/*.md \| sed 's/category: *//' \| sort -u` |
+| `page.tsx` files | **34** | `find src/app -name page.tsx \| wc -l` |
+| Route handlers (`route.ts`/`.tsx`) | **24** | `find src/app -name 'route.ts' -o -name 'route.tsx' \| wc -l` |
+| All files under `src/app` | **67** | `find src/app -type f \| wc -l` |
+| Components | **37 files (36 `.tsx` + `ui/layout-utils.ts`)** | `find src/components -type f \| wc -l` |
+| Dead components | **1: `blog/ExitIntentModal.tsx`** (0 importers, 0 mounts) | `grep -rn "import.*ExitIntentModal" src \| wc -l`; `grep -rn "<ExitIntentModal" src \| wc -l` |
+| Live capture surfaces | **10** (StickyCTA, SpecialistWidget, ReturningBar, DeepScrollModal, InlineMiniLeadForm, NextStepOffer, CalcResultCta, MobileToolSlot, ResultGateModal, ResourceGate) | see `P0A_INVENTORY.md` §4 |
+| Calculators | **10**, all generic, `BESPOKE` is empty | `grep -c 'Calculator,\|Checker,\|Indicator,' src/lib/calculators/registry.ts`; read `GENERIC` array |
+| Location pages | **10** | `grep -cE '^    "slug": "' 'src/app/locations/[slug]/data.ts'` |
+| `/for/[slug]` pages | **10** | `grep -cE '^    slug: "' src/data/contractor-types.ts` |
+| Glossary terms | **38** | `grep -cE '^    slug: "' 'src/app/glossary/[slug]/data.ts'` |
+| Gated resource topics | **3** (`ir35`, `structure`, `pay-planning`) | `grep -oE 'slug: "[a-z0-9-]+"' src/lib/resources/registry.ts` |
+| Research data assets | **3** (`uk-contractor-index`, `uk-contractor-insolvency-index`, `uk-contractor-survival-index`), each with its own `data/route.ts` | `ls src/app/research` |
+| Nav items | **5, flat, no children** | `python -c "import json;print(json.load(open('../niche.config.json'))['navigation'])"` |
+| Footer links | **9** | same, `footer_links` |
+| **Redirect map** | **NONE.** `next.config.ts` declares no `redirects()`; there is no `vercel.json` in `contractors-ir35/` | `grep -n redirect next.config.ts`; `ls contractors-ir35/vercel.json` |
+| Framework | Next.js `^15.5.14`, React `^19.1.0`, Tailwind `^4` | `grep -n '"next"\|"react"\|"tailwindcss"' package.json` |
+| Design family | **B** | `docs/contractors-ir35/_port/PHASE0_PACKAGES.md:3` |
+
+`niche.config.json` lives at `contractors-ir35/niche.config.json`, **not** under `web/`.
+`src/config/site.ts` is a pure pass-through of it, so the two cannot disagree.
+
+## Consent model — as the code actually behaves
+
+**There is no consent checkbox on this site.** The previous edition of this file claimed
+"rendered consent checkbox (LD-04)"; the code contradicts it.
+
+- `grep -rn 'type="checkbox"' src/components/forms src/components/blog src/components/resources`
+  returns **zero hits**.
+- `src/components/forms/LeadForm.tsx:369-378` renders the wording as a **notice**, with the
+  comment "Data-sharing acknowledgement (legitimate interests, not consent): submitting the
+  enquiry is the affirmative act, so this is shown as a notice, not a tick-box."
+- `LeadForm.tsx:132` posts `consent_given: true` unconditionally, with `consent_text`
+  recording the exact wording shown as the audit trail.
+
+Analytics posture is **opt-out**, declared at `src/app/layout.tsx:97` (`posture="opt-out"`),
+`storagePrefix="cfp"` (line 96, FROZEN). GA4 is gated behind `ConsentedScripts`
+(`layout.tsx:100`) and the measurement id is **empty**, so GA4 renders nothing today
+(`niche.config.json` `seo.google_analytics_id` = `""`).
+
+## Live data layer (queried 2026-09-12, prod Supabase REST)
+
+| Fact | Value |
+|---|---|
+| `sites` row | `site_key=contractors-ir35`, `display_name=Contractor Tax Accountants`, `domain=www.contractortaxaccountants.co.uk`, `active=true` |
+| `gsc_property_url` | `sc-domain:contractortaxaccountants.co.uk` (set) |
+| `bing_property_url` | **NULL.** Bing pulls do not resolve from the registry for this site |
+| `monitored_pages` | **8 rows, all `monitor_until=2026-10-06`, all `rewrite_type=net_new`, `rewrite_date=2026-07-08`. 4 `active`** (`contractor-pension-schemes-sipp`, `engineering-contractors`, `ir35-status`, `it-contractors`) **and 4 `flagged`** (`__home`, `contractor-accountant-fees-cost`, `members-voluntary-liquidation`, `personal-service-company`) |
+| `blog_topics` | **1,257 rows**, **1,117 used**, 140 open |
+| `leads` where `source='contractors-ir35'` | **6** |
+| `web_events` where `site_key='contractors-ir35'` | **5,427** |
+
+Deriving command (all of the above): PostgREST `GET {SUPABASE_URL}/rest/v1/<table>?site_key=eq.contractors-ir35&select=...`
+with `Prefer: count=exact`, credentials from repo-root `.env` (`SUPABASE_URL`, `SUPABASE_KEY`).
+The `monitored_pages` column is `slug`, not `page_slug`.
 
 ## Identity
 
-- site_key `contractors-ir35` · display **"Contractor Tax Accountants"** · domain `www.contractortaxaccountants.co.uk` (bought; exact-match keyword domain; head term "contractor accountant(s)" locked in `MONEY_KEYWORDS.md`)
-- Rebranded 2026-06-16 from "Contractor Finance Partners" everywhere (niche.config, 50 blog `author:`, blog_generator site config, docs, CI; prod `sites` row UPDATEd via migration `20260616000001`). Engine maps (gsc/bing/indexnow) carry the new host in the working tree but their commit is held — see "Uncommitted / entangled" below.
-- Brand: petrol/cyan primary `#0e7490` + amber accent (`#b45309` on white / `#fbbf24` on dark); CTA wordmark + icon at `web/public/brand/`. Spec in `DESIGN_MEMO_2026-06.md`
+- site_key `contractors-ir35` · display **"Contractor Tax Accountants"** · domain
+  `www.contractortaxaccountants.co.uk` (bought; exact-match keyword domain; head term
+  "contractor accountant(s)" locked in `MONEY_KEYWORDS.md`)
+- Rebranded 2026-06-16 from "Contractor Finance Partners" everywhere (niche.config, blog
+  `author:`, blog_generator site config, docs, CI; prod `sites` row UPDATEd via migration
+  `20260616000001`).
+- Brand: petrol/cyan primary `#0e7490` + amber accent (`#b45309` on white / `#fbbf24` on
+  dark); CTA wordmark + icon at `web/public/brand/`. Spec in `DESIGN_MEMO_2026-06.md`
 - Storage prefix **`cfp` FROZEN** (estate registry: ptp/dfp/ma/afl/aff/hd/cfp)
 - Niche economics: CPC £28.12 (highest of all 7), all-specialist SERP; quality is the strategy
 
-## Machinery (all composed; build green 153 pages, 39 tests)
+## Machinery
 
-- Analytics SDK (ConsentProvider/AnalyticsProvider/ConsentedScripts, opt-out posture), storagePrefix `cfp`; /api/track via createTrackHandler({ siteKey }), no key literals (PF-07)
-- /admin/analytics console (shared cookie auth, ADMIN_DASHBOARD_KEY via timingSafeEqual) + /api/admin/login + /api/og (brand colours from config)
-- buildSecurityHeaders; validateNicheConfig; assertFrontmatter; feed.xml + llms-full.txt
-- LeadForm: rendered consent checkbox (LD-04), honeypot, visitor stitching, source `contractors-ir35`
-- Blog apparatus (Dentists-pattern): /blog + /blog/[category]/[slug], canonical `/blog/{category-slug}/{slug}`
+- Analytics SDK (ConsentProvider/AnalyticsProvider/ConsentedScripts, opt-out posture),
+  storagePrefix `cfp`; `/api/track` via `createTrackHandler({ siteKey })`, no key literals (PF-07)
+- `/admin/analytics` console (shared cookie auth, ADMIN_DASHBOARD_KEY via `timingSafeEqual`)
+  + `/api/admin/login` + `/api/og` (brand colours from config)
+- `buildSecurityHeaders` (with `embedPrefix: "embed"` so `/embed/*` can be framed);
+  `validateNicheConfig`; `assertFrontmatter`; `feed.xml` + `llms-full.txt`
+- LeadForm: honeypot, visitor stitching, source `contractors-ir35`, consent **notice**
+  (see "Consent model" above, not a checkbox)
+- Blog apparatus (Dentists-pattern): `/blog` + `/blog/[category]/[slug]`, canonical
+  `/blog/{category-slug}/{slug}`
 - CI: in the build matrix. Vitest wired into `npm test`
-
-## Net-new surfaces (added 2026-06-16, mirrored from construction-cis, cyan, HP-accurate)
-
-- **6 calculators** on a golden-tested 2026/27 tax engine `web/src/lib/calculators/tax2026.ts` (outside/inside IR35 take-home, umbrella-vs-limited, dividend tax, corp tax, salary-dividend) + embed + gallery
-- **IR35 glossary** (DefinedTerm schema) at /glossary
-- **10 location pages** (remote-national framing, no fake offices) at /locations/[slug]
-- **UK Contractor Index** research/data-PR asset at /research/uk-contractor-index — real Companies House crawl (`optimisation_engine/ingestion/ingest_contractor_data.py`; IT consultancy SIC 62020 +43.1% 2016→25, all contractor sectors +64.1%, 136,515 TTM); Article+Dataset JSON-LD + CSV export
-- **AEO/GEO to the Property standard**: robots.ts 40-bot AI allow-list + Disallow /api/; rich `public/llms.txt` + enhanced llms-full header; full schema suite (Organization+WebSite entity graph site-wide, FAQPage, HowTo, DefinedTerm, LocalBusiness, Dataset, Article, speakable `.tldr`); BlogPostRenderer FAQ JSON-LD; all routes SSG
-
-## Data layer (live prod, verified)
-
-- `sites` registry row + `sites_site_key_check` + `leads_source_valid` include the key (migrations `20260613000001/2` applied 2026-06-12; rebrand `20260616000001` applied 2026-06-16)
-- blog_topics: 644 seeded; 225 marked used (`mark_used_wave2.py --apply` done), 419 open
-- Engine maps registered: GSC `_SITE_URL_MAP`, Bing `DEFAULT_SITE_URL`, IndexNow (key `fc84f134…` + public file `web/public/fc84f134ebf231eaec2e26e2646a4ede.txt`, host `www.contractortaxaccountants.co.uk` in `indexing/config.py`). GA4 + GSC enablement = post-domain operator items
+- AEO/GEO to the Property standard: `robots.ts` 40-bot AI allow-list + Disallow `/api/`;
+  rich `public/llms.txt`; schema suite (Organization+WebSite entity graph, FAQPage, HowTo,
+  DefinedTerm, LocalBusiness, Dataset, Article, speakable `.tldr`); all routes SSG
+- IndexNow key `fc84f134…` + public file `web/public/fc84f134ebf231eaec2e26e2646a4ede.txt`
 
 ## Content
 
-- HP-LOCKED ground truth: `house_positions.md` (17 sections, FA 2026-verified). Standing flag: Churchill Knight/Boox MSC litigation undecided (hearings Jun + Nov 2026) — re-check §13 before citing
-- 50 blog pages (15 wave-1 + 35 wave-2), all through the full QA chain; Pexels images backfilled. Trackers `WAVE1_TRACKER.md` / `WAVE2_TRACKER.md`
-- Writing model DECIDED 2026-06-12: Sonnet volume / Opus pillars+judging+repairs / Haiku banned from content (`BAKEOFF_2026-06.md`, memory feedback_no_deepseek_opus_only)
-- Money-keyword map LOCKED: `MONEY_KEYWORDS.md`; FA-2026 stale-figure sweep done (dividend 10.75/35.75, thresholds £15m/£7.5m)
-- 10 static /for/[type] pages + services/ir35-status landing pages, petrol-reskinned and money-keyword-optimised
-- QA at launch: predeploy_gate PASS; Opus accuracy judge SHIP across calculators/glossary/research (0 critical/high); keyword_placement 50/50; word-count 50/50; meta descriptions ≤165 (residual = brand-suffix title length, acceptable)
+- HP-LOCKED ground truth: `house_positions.md` (17 sections, FA 2026-verified). Standing
+  flag: Churchill Knight/Boox MSC litigation undecided (hearings Jun + Nov 2026), re-check
+  §13 before citing
+- 62 blog posts, all through the full QA chain; Pexels images backfilled. Trackers
+  `WAVE1_TRACKER.md` / `WAVE2_TRACKER.md` cover the first 50 only
+- Frontmatter: every post carries title/slug/date/updatedDate/author/image/altText/
+  imageCredit/category/metaTitle/metaDescription/h1/summary/keyTakeaways/sourcesVerifiedAt/
+  faqs with real values. `schema` is present on 61 of 62 and **empty on all of them**;
+  `BlogPostRenderer.tsx:57-61` falls through to generated FAQ JSON-LD, so this is correct
+  behaviour, not a defect. Preserve the `?.trim() ||` fallback. `primaryKeyword` is on
+  13 of 62 and **UNVERIFIED whether anything consumes it**.
+- Writing model DECIDED 2026-06-12: Sonnet volume / Opus pillars+judging+repairs / Haiku
+  banned from content (`BAKEOFF_2026-06.md`)
+- Money-keyword map LOCKED: `MONEY_KEYWORDS.md`
+- Location pages use remote-national framing, no fake offices (`locations/[slug]/data.ts`
+  header comment states it explicitly)
 
-## DEPLOY — DONE 2026-06-17 (record + gotchas for the next site)
+## Deploy record (2026-06-17 launch) and gotchas
 
-Deployed live with `VERCEL_ORG_ID=team_XF9WAygZX7SGk9Fo4tOAnihH VERCEL_PROJECT_ID=prj_AJhtTBB8SMdKluzfCNvwCCqU1yii vercel deploy --prod --yes` from the **repo root** (the repo-root `.vercel` points at Property, hence the env overrides). Build 43s, deployment `dpl_2yVWFsReapZveud5KYwsMj8hfD9W`, aliased to the production domain.
+Vercel project `contractor-finance-partners` (`prj_AJhtTBB8SMdKluzfCNvwCCqU1yii`),
+org `team_XF9WAygZX7SGk9Fo4tOAnihH`, rootDirectory `contractors-ir35/web`.
+Deploy from the **repo root** with both IDs as env overrides (the repo-root `.vercel`
+points at Property). Launch deployment `dpl_2yVWFsReapZveud5KYwsMj8hfD9W`.
 
-**Gotchas hit (this was the FIRST real deploy of a fresh monorepo Vercel project — fix these up-front next time):** the project existed but had never deployed, so its config was incomplete. The CLI's OAuth token is **rejected by the v9 projects settings API** (`invalidToken`), and the CLI has no command for these — so all three had to be toggled in the dashboard (or set with a real `VERCEL_TOKEN`):
+**Auto-deploy is OFF for this project**: `link: null`, so no git repo is connected and
+nothing auto-deploys on push, regardless of `gitProviderOptions.createDeployments`.
+Committing during the port is safe.
+
+Gotchas from the first deploy of a fresh monorepo Vercel project (the CLI OAuth token is
+rejected by the v9 projects settings API, so these need the dashboard or a real
+`VERCEL_TOKEN`):
 1. Framework Preset `Other` → **Next.js**
 2. Root Directory `.` → **contractors-ir35/web**
-3. **"Include files outside the root directory in the build step" → ON.** Without it, only the rootDir subtree is copied into the build, so the `cd ../.. && npm install` step overshoots to `/` and npm dies with `Tracker "idealTree" already exists` (debug log shows `cwd /`). This is the non-obvious one — the 6 live sites have it on via auto workspace detection, which a fresh API-set project does not trigger.
+3. **"Include files outside the root directory in the build step" → ON.** Without it the
+   `cd ../.. && npm install` step overshoots to `/` and npm dies with
+   `Tracker "idealTree" already exists`. This is the non-obvious one.
 
-Env already set: SUPABASE pair, SERVICE_ROLE, ADMIN_DASHBOARD_KEY, `NEXT_PUBLIC_SITE_URL=https://www.contractortaxaccountants.co.uk`. Project still NAMED `contractor-finance-partners` (cosmetic; rename optional). ADMIN_DASHBOARD_KEY value: `.cache/cfp_admin_key.txt` (hand to operator, then delete).
+Env set: SUPABASE pair, SERVICE_ROLE, ADMIN_DASHBOARD_KEY,
+`NEXT_PUBLIC_SITE_URL=https://www.contractortaxaccountants.co.uk`.
+Project is still NAMED `contractor-finance-partners` (cosmetic).
 
-**Live verification done:** routes 200, headers, sitemap domain, an01 browser-pass ALL GREEN, web_events ingest confirmed (21 rows).
+## Still open
 
-## Post-deploy — still open
-
-1. **Test lead (Ahmad protection)**: before submitting, `ALTER TABLE leads DISABLE TRIGGER leads_to_email_trg; ALTER TABLE leads DISABLE TRIGGER leads_to_enrich_trg;` (keep `stitch_lead_to_session_trg` ON — under test). Submit form, verify row + consent fields + stitching, re-enable both triggers, DELETE the test row. Notify route CCs ahmadtirmizey@reflexaccounting.co.uk on EVERY leads insert (no source filter), hence the trigger window
-2. GA4 property → measurement id → `niche.config.json` seo.google_analytics_id + `optimisation_engine/clients/ga4_config.py` → redeploy. GSC domain property + verification → niche.config + enable in gsc config. Bing import from GSC. **Upload sitemap (`/sitemap.xml`) in GSC**
-3. IndexNow: DONE 2026-06-17 (`python -m optimisation_engine.indexing.submit_indexnow --site contractors-ir35 --from-sitemap` → 136 URLs, HTTP 202). Re-run after content changes.
-4. monitored_pages — **DEFERRED on purpose.** Dry-run 2026-06-17 showed all 15 wave-1 baselines = 0 (no GSC/Bing history yet); the detector freezes the baseline at registration and only alerts on *drops*, so a 0 baseline is inert. Re-run once real rankings exist (~28d post-index, ≈2026-07-15) with: `python scripts/register_monitored_batch.py --site contractors-ir35 --slugs what-is-ir35 inside-ir35 outside-ir35 limited-company-vs-umbrella-contractor psc-limited-company-contractor-tax contractor-expenses-allowable-guide contractor-pension-employer-contributions how-to-choose-contractor-accountant off-payroll-working-rules-private-sector sds-status-determination-statement ir35-small-company-exemption flat-rate-vat-limited-cost-trader travel-expenses-inside-ir35 umbrella-company-holiday-pay contractor-pension-carry-forward --commit`
-5. Set the real phone (placeholder `+44 20 0000 0000` in niche.config contact)
-6. Optional: rename the Vercel project to match the brand; commit held-back shared engine-map registrations with the construction-cis/GEO batch
-
-## Committed vs uncommitted (2026-06-17)
-
-**Committed to main** (the self-contained launch build): the whole `contractors-ir35/` tree, `docs/contractors-ir35/`, `sites/contractors-ir35.json`, the experiments registry `packages/web-shared/experiments/registries/contractors.ts`, migration `20260616000001_rebrand_contractors_ir35.sql`, the Contractor Index crawler `optimisation_engine/ingestion/ingest_contractor_data.py`, and the blog_generator `site_configs/contractors_ir35.py` rebrand.
-
-**Held back (entangled with other in-flight estate workstreams — commit with their batches):** the shared engine-map rebrand + registrations in `.github/workflows/ci-build-test.yml`, `optimisation_engine/indexing/config.py`, `clients/gsc_page_client.py`, `clients/bing_query_client.py` (also carries the new GEO Track-B Bing AI fetcher), `blog_generator/cli.py`, `blog_generator/routing_safety.py`, `scripts/frontmatter_lint.py`, `scripts/blog_image_backfill.py`. These mix in construction-cis registrations + the GEO program and are not needed for the deploy (the live build reads niche.config). The contractors host values exist in these files in the working tree; nothing about the deploy depends on committing them.
+1. **Test lead (Ahmad protection)**: before submitting,
+   `ALTER TABLE leads DISABLE TRIGGER leads_to_email_trg; ALTER TABLE leads DISABLE TRIGGER leads_to_enrich_trg;`
+   (keep `stitch_lead_to_session_trg` ON). Submit, verify row + consent fields + stitching,
+   re-enable both, DELETE the test row. The notify route CCs
+   ahmadtirmizey@reflexaccounting.co.uk on EVERY leads insert, hence the trigger window.
+   **UNVERIFIED whether this was ever done**; 6 real leads now exist, so the form works.
+2. **GA4 still unset**: `seo.google_analytics_id` = `""`. GSC property IS registered
+   (`sc-domain:contractortaxaccountants.co.uk`) but `seo.search_console_verification.google`
+   in niche.config is still `""`. **Bing property is NULL in the `sites` registry** and
+   should be filled; Bing is the stronger channel on several estate sites.
+3. IndexNow: ran 2026-06-17 (136 URLs, HTTP 202). Re-run after content changes.
+4. `monitored_pages`: **the old "DEFERRED on purpose" note was wrong.** 8 rows were
+   registered 2026-07-08 and 4 are armed to 2026-10-06. If cutover lands before that date,
+   restate the baselines at cutover so `data-cta`/form churn does not fire owner alarms.
+5. Real phone still placeholder `+44 20 0000 0000` in `niche.config.json` contact.
+6. Optional: rename the Vercel project to match the brand.
+7. `blog/ExitIntentModal.tsx` is dead code. Deleting it is a cleanup; **mounting** it would
+   add a capture surface the site does not currently have, which needs owner sign-off.
 
 ## Parked / post-launch
 
-- Calculators fleet expansion; experiments composition (personalization needs IntentProvider port + live probes); wave 3 (419 pool topics remain); GSC/GA4-dependent engines; Serper topic enrichment
-- Estate-wide deepseek llm_provider value sweep in the other blog configs (stale, path unused) — fold into the volume-model decision
+- Calculator fleet expansion; experiments composition (personalization needs IntentProvider
+  port + live probes); wave 3 (140 pool topics remain); Serper topic enrichment
+
+---
+
+## What was wrong in the previous edition (corrected above)
+
+| Claim | Was | Actually |
+|---|---|---|
+| Blog pages | "50 blog pages (15 wave-1 + 35 wave-2)" | **62** |
+| Calculators | "**6 calculators**" | **10** |
+| Research assets | one (UK Contractor Index) | **3** |
+| LeadForm consent | "rendered consent checkbox (LD-04)" | **no checkbox exists**; a notice, `consent_given` hardcoded true |
+| `monitored_pages` | "DEFERRED on purpose … re-run ~2026-07-15" | **8 rows registered 2026-07-08, 4 armed to 2026-10-06** |
+| `blog_topics` | "644 seeded; 225 used, 419 open" | **1,257 / 1,117 used / 140 open** |
+| Production SHA | `435cc12e` (2026-08-24) | **`18b4f25f`** (2026-09-09) |
+| Held-back engine maps | "uncommitted, entangled" | **all committed**; `git status --porcelain` on those five paths is clean |
+| `web_events` | "21 rows" (launch-day figure) | **5,427** |
+| Build size | "153 pages" | **UNVERIFIED at HEAD**; the phase 0 link floor crawled **157 URLs** at SHA `18b4f25f` |
+| Port status | no pickup block at all | see the PICKUP block at the top |
