@@ -236,7 +236,7 @@ export default async function CityPage({ params }: Props) {
       {/* LOCAL CASE STUDY + MID-PAGE CTA */}
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <Eyebrow>{city.name} case study (anonymised)</Eyebrow>
+          <Eyebrow>{city.name} worked example</Eyebrow>
           <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:p-8">
             <h2 className="text-xl font-bold text-slate-900 sm:text-2xl">
               {city.localCaseStudy.headline}
@@ -246,6 +246,10 @@ export default async function CityPage({ params }: Props) {
             </p>
             <p className="mt-4 text-base leading-relaxed text-slate-700">
               {city.localCaseStudy.body}
+            </p>
+            <p className="mt-4 text-xs leading-relaxed text-slate-500">
+              Illustrative example. It is not a record of a client engagement and the figures are
+              worked through to show how the rules apply, not taken from a real return.
             </p>
           </div>
 

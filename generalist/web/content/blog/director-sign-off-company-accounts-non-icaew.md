@@ -53,7 +53,7 @@ keyTakeaways:
 
 <p>If you prepare the accounts yourself, you are acting as the company's accountant even if you have no qualification. That is legal. But you must ensure the accounts meet the same legal standards that a qualified accountant would follow. That includes correct formats, proper notes, and compliance with FRS 102 or FRS 105 (the UK accounting standards for small companies).</p>
 
-<p>At <a href="/about">Holloway Davies</a>, our experienced team prepares accounts for hundreds of limited companies each year. We see the common mistakes directors make when they go it alone: incorrect classification of director's loans, misstated deferred income, and missing notes on related party transactions. These errors can trigger HMRC enquiries and Companies House filing rejections.</p>
+<p>The common mistakes show up again and again when directors go it alone: incorrect classification of director's loans, misstated deferred income, and missing notes on related party transactions. These errors can trigger HMRC enquiries and Companies House filing rejections.</p>
 
 <h2>The Legal Requirements for Small Company Accounts</h2>
 

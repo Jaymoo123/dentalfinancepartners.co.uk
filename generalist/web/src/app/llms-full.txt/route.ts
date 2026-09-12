@@ -13,8 +13,9 @@ hollowaydavies.co.uk. It exists for AI retrieval, training, and citation.
 The structured index lives at https://www.hollowaydavies.co.uk/llms.txt
 and the current tax rates JSON at /api/uk-tax-rates.json.
 
-Editorial: all tax figures use 2026/27 UK rates as of the date below. Always
-verify against gov.uk for time-sensitive decisions. For advice specific to a
+Editorial: every tax figure is tagged to the tax year it describes, so the same
+file carries 2025/26 and 2026/27 rates side by side. Read the year label, not
+the file date, and always verify against gov.uk for time-sensitive decisions. For advice specific to a
 given business, see https://www.hollowaydavies.co.uk/contact.
 
 `,

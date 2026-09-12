@@ -1,5 +1,135 @@
 # Generalist (Holloway Davies) — site state
 
+> **2026-09-12 - CLAIMS AUDIT, SERIOUS TIER FIXED. NOT DEPLOYED.**
+> Removed every claim that the site holds professional qualifications it does not
+> hold, and rewrote all 193 fabricated location "case studies" as illustrative
+> worked examples. `npx tsc --noEmit` clean, `npx vitest run` 309/309 green.
+> Positioning taken from `src/app/terms/page.tsx:53` and `src/lib/team.ts`: the site
+> is editorial, advice comes from a qualified accountant on the partner team.
+>
+> **Batch 1, qualification claims (all fixed).**
+> - `content/blog/accountant-for-churches-uk.md` - "We carry professional indemnity
+>   insurance. We file your accounts and returns on time, every time" and the
+>   surrounding "we have structured our practice" paragraph, both rewritten to
+>   editorial plus partner-team framing.
+> - `content/blog/accountant-for-construction-subcontractors-cis.md` - "ACCA
+>   qualified. That means they are regulated" turned into reader guidance (check the
+>   register, not the website); "We hold professional indemnity insurance and are
+>   held to professional standards" removed; `metaDescription_prev` "Our accountants
+>   help construction subcontractors" reworded.
+> - `src/components/calculators/CalcResultCta.tsx:21` and
+>   `src/lib/leads/aux-cron.ts:275` - "one of our accountants" to "a qualified
+>   accountant on our partner team". The second is an outbound nurture email.
+> - `content/blog/accountant-for-onlyfans-creators-uk.md` schema frontmatter -
+>   `jobTitle` "Senior Accountant" to "Technical Reviewer" (3 occurrences in the
+>   JSON-LD), matching `src/lib/team.ts:55`.
+> - Rule sweep found 7 more first-person qualification claims the audit missed:
+>   `hmrc-tax-back.md:133` and `mazuma-vs-crunch-online-accountant-comparison.md:41`
+>   both said "We are an accountancy firm";
+>   `accountant-for-self-employed-near-me.md:101` and `quickbooks-accountant-uk.md:78`
+>   both said "we work to high professional standards, carry professional indemnity
+>   insurance"; plus `accountant-for-builders-uk.md:140`,
+>   `accountant-for-etsy-sellers-uk.md:139`, and
+>   `accountant-for-footballers-and-sports-professionals.md:166` ("We are accountants
+>   rather than player representatives").
+> - 11 files carried "our accountants" as a first-person service promise
+>   (eot-pros-and-cons, equipment-and-machinery-finance, the four invoice-finance
+>   pages, secured-business-loans, sell-my-business-guide x2, invoice-finance-for-
+>   ecommerce x2). All now "a qualified accountant on our partner team".
+> - `confirmation-statement-late-penalty-companies-house.md:146` - absolute delivery
+>   guarantee "so your filings are on time, every time" removed. The other "on time,
+>   every time" hits describe a generic accountant, not us, and stand.
+>
+> **Batch 2, fabricated client evidence (all 193 rewritten, none deleted).**
+> - `src/app/locations/[slug]/data.ts` has 193 city entries, each with one
+>   `localCaseStudy`. 98 of them carried £14,720 (199 occurrences across headline and
+>   body) under four mutually incompatible labels. All 193 were rewritten by Opus
+>   agents into illustrative scenarios. Zero remaining occurrences in that file of
+>   "approached us", "came to us", "we worked with", "HMRC accepted", "HMRC agreed",
+>   "We reviewed", "The client", "told us".
+> - Arithmetic now holds inside each example with the rate stated (25% main, 19%
+>   small profits, 20% merged-scheme/RDEC, 20% VAT). Roughly 40 figures were either
+>   recomputed from numbers already present (coventry £14,720 to £21,500 on £86,000
+>   at 25%; wakefield to £18,400; oldham to £35,000; plus canterbury, harrow, romford,
+>   shrewsbury, uxbridge, barnet, ilford, newbury, penzance, weston-super-mare,
+>   paisley, east-kilbride, bradford and ~15 more) or deleted where no sourced figure
+>   could make them true (manchester's £6,400 surrendered-loss repayment, sheffield's
+>   £14,720 qualifying spend, york's £120,000, dundee's £8,400, doncaster's £73,600,
+>   halifax's two monthly figures, chester's £185,000, exeter's £8,400, cheltenham's
+>   £40,000 and £2,400 fee, wigan's £3,600 settlement, dover's £7,000, andover and
+>   winchester's "£4,000 a year in compliance costs", and the payable-credit
+>   double-counts on bournemouth, chelmsford, margate, bridgend, aldershot, hatfield,
+>   stevenage, hertford, macclesfield, nuneaton, kings-lynn). Nothing was invented to
+>   replace a deleted figure.
+> - `src/app/locations/[slug]/page.tsx` - eyebrow changed from "{city} case study
+>   (anonymised)" to "{city} worked example", and a standing disclaimer added under
+>   the body ("Illustrative example. It is not a record of a client engagement...").
+>   `src/app/locations/page.tsx:45` reworded to match.
+> - Three fabricated outcomes hiding OUTSIDE the case-study blocks, in
+>   `sectorEmphasis`, also rewritten: ashford ("We handled exactly that for a
+>   40-vehicle operator... identifying £22,000" and "A manufacturing client in
+>   Stanhope came to us... we recovered £9,800"), hillingdon ("A Brunel spin-out...
+>   came to us... we recovered £38,200"), lincoln ("much like a client we worked with
+>   at Siemens Energy's supply chain").
+>
+> **Item 7** - `data.ts` Nine Elms FAQ "we have never had a claim challenged by HMRC"
+> removed, replaced with a substantive point about thin claims under enquiry.
+>
+> **Item 8, premises (all fixed).** Every assertion of an owned or named permanent
+> space is gone: "our Castlefield meeting space" x2 (Manchester), "our Baltic
+> Triangle base" (Liverpool), "our Town Centre meeting space" (Northampton), "our
+> Town Centre base" (Ipswich), "our Town Centre meeting room" (Ashford), "our Town
+> Centre or Castlefields locations" (Shrewsbury), "our Sutton office" (Croydon), "our
+> Kingston office" and "Yes, we have a meeting space" (Kingston), "our IG1 meeting
+> space" (Ilford), "our Truro Vean or Kenwyn meeting spaces" (Truro), "a private room
+> near Halifax Borough Market" (Halifax), "our central UK base" (Ealing), "our Leeds
+> office" (Bradford). All now read as a booked or hired room, and the Manchester and
+> Kingston FAQs now say plainly that we are remote first and keep no permanent
+> office.
+>
+> **Item 9** - `data.ts` Bradford "we have recovered over £40,000 for one such client"
+> removed; `director-sign-off-company-accounts-non-icaew.md:56` "our experienced team
+> prepares accounts for hundreds of limited companies each year" removed. Both are
+> client-volume/outcome claims banned by `src/app/services/page.tsx:69`.
+>
+> **Batch 3** - `src/app/llms-full.txt/route.ts:16` "all tax figures use 2026/27 UK
+> rates" replaced with "every tax figure is tagged to the tax year it describes, so
+> the same file carries 2025/26 and 2026/27 rates side by side. Read the year label,
+> not the file date."
+>
+> **DELIBERATELY LEFT.**
+> - **The estate-wide "we do the work" voice is now the biggest open claims item, and
+>   it needs an owner decision rather than a sweep.** "our experienced team" appears
+>   in 42 files, and behind it sit hundreds of sentences in the service voice: "We
+>   handle the full handover", "we prepare the return and submit it", "Our experienced
+>   team runs payroll", "We handle the company formation". None claims a
+>   qualification, PI insurance or a regulator, so none is in the serious tier, and at
+>   group level (Ashfield Trading Ltd routing to the partner team) they may be
+>   defensible. Read together they are the connective tissue that makes the site read
+>   as a practice. Fixing them is a positioning decision about whether "we" may
+>   describe partner-team work, not a truth fix, so it was not made unilaterally.
+>   Estimate: 42 files, roughly a full-day pass once the position is settled.
+> - `AccountingService` as the schema.org `@type` for Holloway Davies, used
+>   estate-wide in blog JSON-LD. In scope by the letter of the sweep rule, but it is a
+>   machine-readable business category used across the whole estate and changing it on
+>   one site alone would split the estate's structured data. Owner decision.
+> - **Out of scope by instruction, logged for the later pass:** Companies House fees
+>   frozen at the pre-May-2024 schedule
+>   (`how-to-change-company-name-companies-house.md` and the £50-versus-£12
+>   contradiction), the CS01 £13 figure, the three marginal-relief arithmetic errors,
+>   the surviving cash-basis £150,000 threshold in
+>   `content/fundamentals/self-assessment-tax-return-guide.md:136`, the fee bands in
+>   roughly 12 blog FAQs, and the "reply within 24 hours" promises.
+>
+> **Errors found in the audit brief.** (1) "Roughly 141 location entries carry
+> in-person-meeting boilerplate" is wrong. Nearly every "our office" hit is actually
+> "at YOUR office", meaning the client's premises, which is true and was left alone;
+> the false set was the 16 strings listed above. (2) The brief reads as though all 193
+> blocks carry £14,720; the true split is 199 occurrences inside 98 of the 193, with
+> the other 95 using different invented figures. They were rewritten on the same
+> terms. (3) The cited line numbers `data.ts:6704` and `:395` were correct when the
+> audit ran but have since moved.
+
 > **2026-09-11 - HIGH-STREET MECHANIC WAVE 5 BUILT, NOT DEPLOYED.**
 > 22 assets, 21,680 searches/month: 18 new pages and 4 extensions of live pages. Biggest:
 > `insurance-premium-tax` 5,390/mo, `vat-exemption` 3,390, `nanny-tax` 3,070,
@@ -429,3 +559,23 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - ~~NOTHING DEPLOYED~~ **CORRECTED 2026-08-26: ALL OF IT IS LIVE.** Production SHA for Vercel project `holloway-davies` is `7be12b11`, readyState READY (`GET https://api.vercel.com/v9/projects` -> `targets.production.meta.githubCommitSha`, read 2026-08-26), which is the current tip of `origin/main`. So the six niche waves, rewrite batches 1-3 and the image backfill are all on production. Still open from this wave: `monitored_pages` registration per pack revert paths, and IndexNow submission for the new URLs.
 - Note: research packs reference the 08-25 scratchpad GSC/Bing pulls; a resumed
   session should re-pull fresh data if more than ~a week has passed.
+
+- **2026-09-12 location worked-example ARITHMETIC PASS: CLOSED.**
+  `generalist/web/src/app/locations/[slug]/data.ts`. The earlier pass fixed the
+  dishonest framing (193 invented "case studies" reframed as illustrative worked
+  examples, disclaimer added, engagement voice removed) but left the arithmetic:
+  `\u00a314,720` still appeared 161 times across 84 sentences as the answer to VAT
+  recovery, R&D credits AND corporation tax relief simultaneously, and `\u00a318,400`
+  across 27 towns. Both are gone. 337 figures recomputed from facts stated in their own
+  paragraph at the rate the relief actually calls for (house_positions: CT 25%/19%,
+  merged RDEC 20%, ERIS 86%/14.5%, AIA \u00a31m at 100%, FA 2026 40% FYA, WDA 18%
+  to 14%, VAT 20% and the 1/6 fraction); ~60 trailing "worth roughly \u00aX a year"
+  figures DELETED as uncomputable, sentences kept as mechanism. Headline and body now
+  agree in all 193 (9 headlines were still carrying the old number over a recomputed
+  body). Also swept outside the case-study blocks: unsupported client-outcome figures
+  removed from `sectorEmphasis` (Sunderland, Halifax, Caerphilly, Wolverhampton) and
+  from one Dover FAQ. Result: 212 headline figures, 202 distinct, most-repeated single
+  figure now appears 3 times (\u00a318,400, reached three different ways from three
+  different inputs, each derivable). tsc clean, vitest 309/309. NOT DEPLOYED.
+  Standing rule for this file: a figure is allowed only if the paragraph states the
+  facts that produce it, and the relief is chosen by the scenario, never for variety.

@@ -136,7 +136,7 @@ keyTakeaways:
 <p>If your Etsy turnover crossed £1,000 in the last tax year and you have not registered with HMRC, do it now. The deadline for registering is 5 October following the end of the tax year in which you started trading. Missing it means a penalty.</p>
 
 <h2>How We Can Help</h2>
-<p>At Holloway Davies, we work with Etsy sellers across the UK, from a potter in the Lake District to a printmaker in Manchester's Northern Quarter. We work to the same professional standards as the major firms, but tailored to your small business.</p>
+<p>At Holloway Davies, we work with Etsy sellers across the UK, from a potter in the Lake District to a printmaker in Manchester's Northern Quarter. The guidance here is written against current HMRC rules and reviewed before publication, and the call connects you with a qualified accountant on our partner team.</p>
 
 <p>We handle self assessment, VAT, payroll (if you hire staff or use a packing assistant), and limited company accounts. We use Xero and FreeAgent to connect directly to your Etsy shop, so you do not need to send us spreadsheets every month.</p>
 

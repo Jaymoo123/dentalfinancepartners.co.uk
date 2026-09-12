@@ -28,7 +28,7 @@ faqs:
 - question: What happens if I miss the self assessment deadline for claiming a CIS refund?
   answer: If you file your self assessment return late (after 31 January following the end of the tax year), you lose the right to claim your CIS refund for that year. You also incur an automatic £100 penalty. If you are a limited company, the deadline is 12 months after the end of the accounting period. Do not miss it. A good accountant will file your return well before the deadline to avoid this.
 metaTitle_prev: Accountant for Construction Subcontractors | CIS Tax
-metaDescription_prev: CIS deductions, VAT flat rate, IR35, and more. Our accountants help construction subcontractors keep more of what they earn. Get in touch.
+metaDescription_prev: CIS deductions, VAT flat rate, IR35, and more. A plain-English guide to helping construction subcontractors keep more of what they earn.
 dateModified: '2026-06-12'
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
@@ -107,7 +107,7 @@ keyTakeaways:
 <p>Not all accountants who say they work with contractors actually understand CIS. Here is what to look for.</p>
 
 <ul>
-<li><strong>ACCA qualified.</strong> That means they are regulated and have professional indemnity insurance. Our team at Holloway Davies has <a href="/about">specific experience in the construction sector</a>.</li>
+<li><strong>Qualified and regulated.</strong> ACCA, ICAEW, ICAS or AAT membership means they are supervised by a professional body and carry professional indemnity insurance. Check the register rather than the website. Our <a href="/about">construction coverage</a> explains what to ask.</li>
 <li><strong>Experience with CIS specifically.</strong> Ask them how many construction subcontractors they work with. The answer should be more than a handful.</li>
 <li><strong>They use cloud accounting software.</strong> If they still want paper receipts and spreadsheets, walk away. You need real-time visibility of your tax position.</li>
 <li><strong>They offer fixed fees.</strong> Construction subcontractors do not need surprise bills. A good accountant will quote a fixed monthly or annual fee for your work.</li>
@@ -160,6 +160,6 @@ keyTakeaways:
 <li>Payroll for any employees you take on</li>
 </ul>
 
-<p>We hold professional indemnity insurance and are held to professional standards. That also means we know how to handle HMRC enquiries if one lands on your desk.</p>
+<p>We also cover what to do when an HMRC enquiry lands on your desk, and the call connects you with a qualified accountant on our partner team who can take it on.</p>
 
-<p>If you are a construction subcontractor and want to stop worrying about CIS deductions and start focusing on the work, <a href="/contact">get in touch</a>. We will give you a fixed fee quote and a clear plan for the year ahead.</p>
+<p>If you are a construction subcontractor and want to stop worrying about CIS deductions and start focusing on the work, <a href="/contact">get in touch</a>. The call is free and ends with a clear plan for the year ahead.</p>

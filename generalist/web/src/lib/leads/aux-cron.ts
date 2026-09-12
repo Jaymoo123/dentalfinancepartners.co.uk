@@ -272,7 +272,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
                   `Your free accounting review call is tomorrow, ${windowPhrase}.`,
-                  "One of our accountants will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+                  "A qualified accountant from our partner team will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
                   "If the time no longer works, just reply to this email and I will move it to one that does.",
                 ],
                 signoff: SIGNOFF,

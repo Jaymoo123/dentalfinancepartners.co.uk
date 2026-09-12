@@ -120,11 +120,11 @@ keyTakeaways:
 
 <h2>Why Choose Holloway Davies as Your Accountant for Churches?</h2>
 
-<p>We are not a general practice firm that happens to work with a few charities. We have structured our practice to serve churches and other faith-based organisations. Our team understands the unique pressures you face: balancing mission with financial stewardship, managing volunteer treasurers, and maintaining transparency with your congregation.</p>
+<p>We are not a general-interest publisher that happens to cover a few charities. Our editorial coverage is built around churches and other faith-based organisations, and the pressures that come with them: balancing mission with financial stewardship, managing volunteer treasurers, and maintaining transparency with your congregation.</p>
 
-<p>We work to high professional standards in the UK. We carry professional indemnity insurance. We file your accounts and returns on time, every time. And we are based in the UK, so we understand the specific rules for England, Wales, Scotland, and Northern Ireland.</p>
+<p>Everything here is written against current Charity Commission, OSCR, CCNI and HMRC guidance, and we cover the rules for England, Wales, Scotland and Northern Ireland separately, because they differ. Where you want the filing done rather than explained, the call puts you in front of a qualified accountant on our partner team.</p>
 
-<p>If you are looking for a reliable <strong>accountant for churches</strong>, we would welcome a conversation. <a href="/contact">Contact us</a> to discuss your church's needs. We can start with a free, no-obligation call to see if we are a good fit.</p>
+<p>If you are looking for an <strong>accountant for churches</strong>, we would welcome a conversation. <a href="/contact">Contact us</a> to discuss your church's needs. We start with a free, no-obligation call to work out what you actually need.</p>
 
 <p>For more information on our approach to charity accounting, visit our <a href="/fundamentals">fundamentals page</a>. You can also explore our <a href="/blog/bookkeeping-and-compliance">blog on bookkeeping and compliance</a> for practical tips.</p>
 

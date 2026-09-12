@@ -163,6 +163,6 @@ keyTakeaways:
 
 <h2>What we do, and what we do not</h2>
 
-<p>The work is accountancy: self assessment returns that bring club PAYE, P11D benefits and commercial income together correctly, accounts and corporation tax returns for a personal company, payroll for a company with staff, VAT once turnover crosses the threshold, and the record-keeping that supports the position taken on an agent's fee if HMRC asks. We are accountants rather than player representatives, and we do not hold ourselves out as sports-industry advisers.</p>
+<p>The work is accountancy: self assessment returns that bring club PAYE, P11D benefits and commercial income together correctly, accounts and corporation tax returns for a personal company, payroll for a company with staff, VAT once turnover crosses the threshold, and the record-keeping that supports the position taken on an agent's fee if HMRC asks. The call connects you with a qualified accountant on our partner team, not a player representative, and we do not hold ourselves out as sports-industry advisers.</p>
 
 <p>We do not sell structures. No image rights arrangement, no offshore anything, no investment or pension recommendations, which are regulated advice and a different profession. A sector that has produced two decades of collapsed schemes and follower notices is one where the value of an accountant is that the numbers are right and the evidence exists, and if you want a plan that promises otherwise, we are the wrong firm.</p>

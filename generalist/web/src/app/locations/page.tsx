@@ -42,7 +42,7 @@ const FAQS: FaqEntry[] = [
   {
     question: "What is on each location page?",
     answer:
-      "The sectors that actually drive that local economy, the anchor employers around it, an anonymised case study from a business of that type, and questions we get asked in that area. It is written against the town rather than swapped in from a template, which is why there is one page per location instead of one page with a dropdown.",
+      "The sectors that actually drive that local economy, the anchor employers around it, a worked example for a business of that type, and questions we get asked in that area. It is written against the town rather than swapped in from a template, which is why there is one page per location instead of one page with a dropdown.",
   },
   {
     question: "My town is not on the list. Can you still act for me?",

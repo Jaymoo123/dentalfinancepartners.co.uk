@@ -165,7 +165,7 @@ faqs:
 <p>Sources worth reading first-hand: HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg67800">Capital Gains Manual on EOT relief (CG67800 onwards)</a>, the underlying <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/236H">TCGA 1992 s.236H</a> legislation inserted by Finance Act 2014, the gov.uk <a href="https://www.gov.uk/business-asset-disposal-relief">Business Asset Disposal Relief</a> guidance, and the House of Commons Library briefing on <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10437/">employee ownership trusts (CBP-10437)</a>.</p>
 
 <aside>
-<p><strong>Deciding between an EOT, a trade sale or an MBO?</strong> We give unregulated exit and succession advisory, and our accountants can model the CGT and Business Asset Disposal Relief position on each route before you sign heads of terms. Get the numbers straight first. Use the form below to book an exit tax review, or <a href="/contact">get in touch</a>.</p>
+<p><strong>Deciding between an EOT, a trade sale or an MBO?</strong> We give unregulated exit and succession advisory, and a qualified accountant on our partner team can model the CGT and Business Asset Disposal Relief position on each route before you sign heads of terms. Get the numbers straight first. Use the form below to book an exit tax review, or <a href="/contact">get in touch</a>.</p>
 </aside>
 
 <p>This guidance is general and not a substitute for advice on your own figures. It does not constitute the arranging of finance. Arranging the sale of a company by way of its shares is an exempt activity, but arranging the credit or investment that funds a buyout is regulated and is not something we do.</p>

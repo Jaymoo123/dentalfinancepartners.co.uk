@@ -38,7 +38,7 @@ keyTakeaways:
 
 <p>If you run a small UK business and you are looking for an online accountant, you have probably come across both Mazuma and Crunch. They are two of the biggest names in the space, and they both offer a flat-fee, app-based service aimed at small limited companies, sole traders, and contractors. But they work quite differently under the bonnet.</p>
 
-<p>This article compares Mazuma vs Crunch across the factors that actually matter to a business owner: price, software, what you get for your money, and which type of business each one suits best. We are an accountancy firm ourselves, so we will give you the straight facts without the marketing spin.</p>
+<p>This article compares Mazuma vs Crunch across the factors that actually matter to a business owner: price, software, what you get for your money, and which type of business each one suits best. We make our money from introductions, not from either of these firms, so the comparison is the straight facts without the marketing spin.</p>
 
 <h2>What Mazuma and Crunch Actually Do</h2>
 

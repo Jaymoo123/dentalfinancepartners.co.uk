@@ -130,7 +130,7 @@ keyTakeaways:
 
 <p>Search any of these claims and adverts for tax rebate firms appear above the free HMRC route. Our position is blunt: do not use them. They complete the same forms you can complete yourself, then keep a slice of your money as their fee. Some have used deeds of assignment or nomination paperwork so that refunds, including future ones, were paid to the firm rather than to the taxpayer, a practice HMRC has moved against with its repayment agent rules.</p>
 
-<p>We are an accountancy firm and we do not process rebate claims either: this page exists so you can claim free, directly from HMRC. If your affairs are genuinely complicated, pay a regulated accountant a transparent fee for advice, never a percentage of a refund that was always yours.</p>
+<p>We are not a refund agent and we do not process rebate claims: this page exists so you can claim free, directly from HMRC. If your affairs are genuinely complicated, pay a regulated accountant a transparent fee for advice, never a percentage of a refund that was always yours.</p>
 
 <h2>When an Accountant Genuinely Helps</h2>
 

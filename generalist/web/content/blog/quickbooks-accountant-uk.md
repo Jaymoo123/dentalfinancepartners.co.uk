@@ -75,7 +75,7 @@ keyTakeaways:
 
 <h3>A Recognised Professional Qualification</h3>
 
-<p>Software knowledge is important, but accounting knowledge is non-negotiable. Your accountant should be qualified with a recognised body like the ACCA or CIMA. At Holloway Davies, we work to high professional standards, carry professional indemnity insurance, and are subject to regular practice reviews. A qualified accountant who knows QuickBooks is far more valuable than a bookkeeper who knows the software but cannot advise on corporation tax planning or dividend strategy.</p>
+<p>Software knowledge is important, but accounting knowledge is non-negotiable. Your accountant should be qualified with a recognised body like the ACCA or CIMA. Check the register, ask about professional indemnity cover, and ask when the practice was last reviewed. A qualified accountant who knows QuickBooks is far more valuable than a bookkeeper who knows the software but cannot advise on corporation tax planning or dividend strategy.</p>
 
 <h3>Experience With Your Business Type</h3>
 
