@@ -429,13 +429,37 @@ data-cta regressions** across 1,507; **0 dash regressions** across 444; Solicito
 dead links the sweep names (`/resources`, `/calculators/solicitor-take-home`,
 `/calculators/fee-share-vs-equity-partner`) are the known pre-existing set, not port damage.
 
-**ONE REAL HARD-RULE BREACH, OWNER RULING NEEDED.**
+**~~ONE REAL HARD-RULE BREACH~~ RESOLVED 2026-09-12: DISCLOSED, OWNER-RULED EXCEPTION. THE COPY
+STAYS.**
 `Solicitors/web/src/lib/blog-category-copy.ts` is a NEW file added in phase 2 (`2876e38b`). It
 carries 17 authored CTA triples (heading, body, button) plus `LEAD_PROOF_POINTS`, published on
 all 196 articles and 17 category hubs, where pre-port those pages carried one generic CTA. It is
 well-sourced prose (VAT Notice 700 s.25.1.1, Brabners, SRA Accounts Rules 2019 five-weekly
-reconciliation) but it is net-new published words on 213 pages and it is NOT on the disclosed
-exceptions list. Options: retrospective owner exception, or revert to the pre-port generic CTA.
+reconciliation) but it is net-new published words on **213 pages**.
+
+The owner ruled on 2026-09-12: **do what Property does.** Property was then checked, and Property
+DOES author per-category CTA copy, so per-category CTA copy is the reference behaviour, not a
+deviation from it. Derivation, verified in source so nobody re-raises this:
+- `Property/web/src/components/blog/BlogPostRenderer.tsx:43-96` holds a `CTA_BY_CATEGORY` map with
+  **10 hand-authored entries**, one per category, each with its own heading, body and button, used
+  for blog post pages (consumed at `BlogPostRenderer.tsx:153`, with a generic fallback).
+- Property has **10 static category hub pages** at `Property/web/src/app/blog/<category>/page.tsx`,
+  each passing an authored `cta={{ heading, body, submitLabel }}` into `BlogCategoryHub`. That
+  `cta` prop is **REQUIRED** (`Property/web/src/components/blog/BlogCategoryHub.tsx:57`,
+  `cta: HubCta`, not optional), so a Property hub cannot ship without authored copy.
+- Property does **NOT** centralise these in a `blog-category-copy.ts` file, and it does **NOT**
+  pass every visible prop: `eyebrow` ("Free consultation") and `formTitle` ("Book your free
+  consultation") fall through to `packages/web-shared/design/marketing/LeadCTAPanel.tsx:18,27`
+  defaults, and `proofPoints` + `footnote` are **one shared set across all categories**
+  (`BlogCategoryHub.tsx:199-206`). Ours differs in shape (one shared file, all props authored),
+  not in kind.
+- Generalist independently did the same thing: `8cd06654` "feat(generalist): per-category blog CTA
+  copy map (slug-keyed, one source for panel + sidebar + hub)".
+
+So this is now a **disclosed exception to the copy freeze**, not an open breach, and no revert is
+needed. Two things stay visible: the **~213 pages** of changed CTA words must be accounted for in
+the before-and-after conversion read (a CTA change is exactly the kind of thing that moves that
+number), and **the owner will see this copy on the walk**, so it should not come as a surprise.
 
 **THREE AUDIT CLAIMS FALSIFIED, recorded so they are not re-raised.**
 - "`LeadCTAPanel` defaults publish 'Book your free consultation' on ~35 routes as net-new copy":

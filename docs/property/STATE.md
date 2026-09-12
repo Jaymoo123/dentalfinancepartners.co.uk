@@ -20,6 +20,52 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
+## 2026-09-12 - OWNER ITEM: the privacy notice promises deletion the retention cron does not perform (estate-wide, not urgent)
+
+Surfaced by a design-port planning pass, not by port work, and it is not a port defect. It is a
+words-versus-code gap on a legal page, so it is recorded here rather than lost.
+
+**What the page promises.** `Property/web/src/app/privacy-policy/page.tsx` (§6, lines 199-204)
+publishes two sentences: enquiry data is kept for `{company.enquiryRetentionMonths}` months "from
+the date of your enquiry, after which it is deleted" (the number resolves to **24** via
+`Property/web/src/config/site.ts:72` reading `enquiry_retention_months` from
+`Property/niche.config.json:15`), and "our records of what you were shown and any consent you gave
+are kept for **up to six years**, under access controls".
+
+**What the code does.** The purge job exists and is scheduled: `Property/web/vercel.json:9`
+registers `/api/cron/lead-retention` daily at 03:30. But
+`Property/web/src/app/api/cron/lead-retention/route.ts:51-55` sets `dryRun` to true unless
+`LEAD_RETENTION_PURGE_ENABLED` is `1` or `true`, and
+`Property/web/src/lib/leads/retention.ts:16` states in terms that the job **SHIPS DORMANT**; the
+dry-run path (`retention.ts:201`) returns `anonymised: 0` and writes nothing. **Whether that flag is
+armed in the Vercel production environment is UNVERIFIED from the repo** and this entry deliberately
+asserts neither way; the repo evidence says dormant, the production env has not been read.
+
+Three further facts, all verified:
+1. Even armed, the job **anonymises, it does not delete**: name, email, phone and message are
+   redacted, and `retention.ts:142-145` preserves `consent_text`, `consent_at`, `status`, `source`
+   and `created_at` **unconditionally** as the lawful-basis audit trail. So the published word
+   "deleted" would still overstate the code.
+2. **Nothing anywhere expires consent records at six years.** There is no six-year bound in code.
+3. **Scope, and this is the part that matters.** `RETENTION_MONTHS_BY_SOURCE`
+   (`retention.ts:39-64`) maps roughly 20 site sources (property, ashfield, dentists, medical,
+   solicitors, generalist, care, charities, crypto, ecommerce, hospitality, pharmacies,
+   startups-tech, construction-cis, contractors-ir35, digital-agency + the `agency` alias,
+   divorce-finances, wills-probate). **One cron in the Property app governs retention for the whole
+   estate**, not just Property. The same two sentences are published on at least Trade
+   (`construction-cis/web/src/app/privacy-policy/page.tsx:165-169`, worded "Consent records are kept
+   for up to six years") and, on a quick grep, on most other sites too.
+
+**Three possible actions, owner's call:**
+- (a) **Arm the job** (set `LEAD_RETENTION_PURGE_ENABLED`). This is an **irreversible data action
+  across every site in the estate**, so it needs its own slot and an explicit yes, never as a side
+  effect of another piece of work. No recommendation is made here.
+- (b) **Change the words to match the code** (say anonymised rather than deleted, and either bound
+  the consent records or drop the six-year claim). **This is the only option with no data risk.**
+- (c) **Accept and record**, i.e. decide the gap is tolerable and note the reasoning.
+
+Not urgent and nothing is blocked on it. Nothing was changed in code for this entry.
+
 ## 2026-09-09 — Commercial-capture 28d read (overdue from ~09-02) + consent-repair check
 
 **28d read of the 08-05 commercial-capture deploy (services tier, /landlord-tax, /section-24, /making-tax-digital-landlords, www→apex, locations consolidation), GSC through 09-06:** program pages impressions 1,140→3,827 (3.4x) but clicks 6→15, CTR 0.53%→0.39%, avg position 22.8→40.9 (worse); `/landlord-tax` at position 76 with 0 clicks; **0 leads landed on the three flagship money pages in 33 days** (3 on /services*, 2 on /locations/*). Verdict: **maturing, not failed** — 33 days for brand-new pages, and the window carries three confounders (redesign cutover 08-23, consent incident 08-15..24, bank holiday 08-31). No numeric success bar was ever set and the planned 08-05 baseline snapshot (`property_commercial_baseline.py`) was never run/committed. **Next: 90d read ~03 Nov; set a numeric bar before it. If /landlord-tax hasn't reached ~pos 60s→low-30s by early Oct, the lever is internal links/authority, not content.**
