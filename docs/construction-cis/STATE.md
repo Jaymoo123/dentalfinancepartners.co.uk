@@ -2,10 +2,17 @@
 
 ## PICKUP BLOCK (read this first) - design port, 2026-09-12
 
-**Where it stands.** The Property-standard design port is at **ALL SIX PHASES BUILT. NOTHING
-DEPLOYED, NOTHING PUSHED.** Phases 0 to 5 are committed and tagged; **phase 6 is in the WORKING
-TREE, uncommitted at the time of writing**, which is the distinction this block has been stale on
-twice, so check `git status --porcelain -- construction-cis` before you trust either half of it.
+**Where it stands.** The Property-standard design port is **COMPLETE: ALL SIX PHASES BUILT,
+REVIEWED, COMMITTED AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Next step is the owner
+walk on a dev server, then an owner-triggered deploy.
+
+This block has now been stale THREE times on the same distinction, between what is in the
+working tree and what is committed and tagged. It went stale a third time because it was
+written before phase 6 was committed, and the writer could not know the commit that would
+follow. **So do not trust this table: run `git tag -l 'port-construction-cis-*'` and
+`git status --porcelain -- construction-cis`.** Better, run
+`python scripts/port_preflight.py --site construction-cis`, which exists because of this
+exact file and which caught this instance.
 
 | phase | tag | commit |
 | --- | --- | --- |
@@ -15,7 +22,7 @@ twice, so check `git status --porcelain -- construction-cis` before you trust ei
 | 3 | `port-construction-cis-phase3` | `72fe3261` |
 | 4 | `port-construction-cis-phase4` | `72fe3261` |
 | 5 | `port-construction-cis-phase5` | `dd935a98` (build `da7ec668`, gap-fixes `aab3886b`, `8ea5aea9`, `05ddb709`, artefacts `32dc4c90`) |
-| 6 | not tagged yet | instruments `9d196493` (P6-A); P6-B, P6-C, P6-D, P6-E and P6-F in the working tree |
+| 6 | `port-construction-cis-phase6` | `179d2ce6` (P6-A instruments at `9d196493`; P6-B/C/D/E/F all in `179d2ce6`; claim-class closure follows at `e18647bd`) |
 
 Note the phase 3/4 rows: **phases 3 and 4 landed in ONE commit**, so the two tags point at the same
 object. **`git diff port-construction-cis-phase3..port-construction-cis-phase4` is therefore an

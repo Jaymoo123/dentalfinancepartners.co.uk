@@ -280,6 +280,33 @@ Every one was caught by an agent told to contradict the brief, and every one was
 RULE unchanged, now with eleven instances behind it: the previous port's blueprint is a
 hypothesis. Phase 0 re-derives. An agent that never contradicts the brief is not reading it.
 
+**2026-09-12, retrospective. The briefs were wrong, and arguing back is the only thing that
+caught it. Keep the clause verbatim.** Every agent given "verify against source; if this
+brief is wrong, say so and trust the source" found a real error in its brief. Instances from
+the last five ports, on top of the eleven above: three defects an agent was sent to fix were
+already fixed; two CTA attributes it was told to remove had already been removed; a guide it
+was told to leave alone was carrying the banned figure; a plan said a phase owed work that
+phase had already done; and Property's own `WhatToExpectCard` would have published a fee line
+nobody authored, straight out of its default props.
+RULE: paste the clause into every prompt verbatim (playbook §10.1) and say why it is there.
+Reward the pushback. And note the shape of the last one: **copy Property's ANSWER, not its
+DEFECTS.** Property is the living worked example and the default, but it is evidently wrong
+in places, `FaqSection` (Radix, no `forceMount`, closed answers absent from server HTML while
+the JSON-LD still asserts them) and `NumberedReasons` (animates off keyframe classes its
+siblings lack) alongside that card. Deviate in writing; never fix Property to do it (trap 12).
+
+**2026-09-12, retrospective. Sweeping by the LIST instead of the RULE under-counted every
+single time.** The solicitors audit: a defect listed at 4 places was in 13, one listed at 3
+was in 9, one listed at 6 was in 10. A construction-cis turnaround class was formally declared
+closed at 23 instances across 19 files; the 24th was live in location `intro` strings that
+three prior sweeps had never looked at. And on solicitors the compute library held the
+flat-rate figure CORRECTLY, guarded by two invariant tests, while eight prose surfaces
+published it inverted, which is precisely why nobody caught it.
+RULE: sweep by rule, over the whole site, including frontmatter (`faqs`, `keyTakeaways`,
+`metaTitle`, `metaDescription`, `summary`) and `schema:` JSON-LD strings; search the
+ARITHMETIC and the CONCEPT, not only the string; check the VALUE, not the presence of a key;
+and never take a guarded library value as evidence about the prose. Playbook T6, amended.
+
 
 **2026-09-11, Medical. The biggest find of that port, and it is a site-level CSS hazard the
 kit chrome silently assumes away: an UNLAYERED element rule beats every Tailwind utility.**
@@ -702,6 +729,19 @@ four widths. Every other route's grounds figure, and every grounds figure taken 
 repair, remains UNVERIFIED: re-derive, do not re-quote.
 
 
+**2026-09-12. FOURTH repair of `--grounds`, and the durable finding is that nobody wrote a
+test.** Three repairs in one day, the second introducing the bug the third fixed, a mode that
+invented defects on real routes which then had to be disproved, and counts reported over
+bands it had never measured. It now has a fixture test that runs the SHIPPED instrument
+against its own server: `docs/_engines/instruments/grounds_fixture_test.mjs`, mutation-proven
+against all four historical failures (flip each one back and the test exits non-zero).
+Deriving command, and it is now part of session preflight:
+`node docs/_engines/instruments/grounds_fixture_test.mjs`
+RULE: **an instrument with no test is not an acceptance gate.** A repair to a shared
+instrument is a code change and ships with its own fixture test in the same commit. The
+third repair of one function was evidence the function needed a test, not another fix.
+Playbook trap T29, amended.
+
 ---
 
 ## 5b. What the Solicitors port taught, in one block
@@ -741,6 +781,31 @@ moving on.
 Every port so far has spent roughly a third of its time on live defects nobody knew about.
 Budget for it; do not treat it as scope creep, and record each one in the site's STATE.md
 rather than quietly fixing it.
+
+**2026-09-12, all five ported sites. This section IS the port, and it was run last instead
+of first.** Roughly 60% of the total effort across generalist, solicitors, dentists, medical
+and construction-cis went on content that was false. Almost none of it was design work, and
+every serious instance was found at phase 5 or 6, by an agent doing something else, after
+design work had been built on top of it. Live in production today as this is written:
+- construction-cis: six different unsourced numbers answering one question, two in JSON-LD.
+- solicitors: a fabricated solicitor/barrister domestic reverse charge that has never
+  existed, with a worked example instructing firms to mis-bill; and the flat-rate
+  limited-cost-trader rate published as 12% against the real 16.5%, with the scheme
+  recommended on the strength of the inversion.
+- dentists: invented client testimonials, and a page built entirely on a national UDA rate
+  that does not exist.
+- medical: four calculators handing a doctor a wrong number, with two unit tests PINNING
+  the stale values.
+- generalist: one figure used 199 times across 193 location "case studies" to mean four
+  incompatible things, framed as real clients.
+- several sites: claims to be qualified accountants, to hold professional indemnity
+  insurance, and to be "qualified to deliver the SRA-mandated Accountant's Report", each
+  contradicted by that site's own terms page.
+RULE: run it as a gated phase 0 work package with its own ledger, before any design work
+(playbook §2.1, prompt §10.7, trap T36). Serious tier fixed and committed before phase 1.
+Positioning ruling 2026-09-12: match the terms page. The first-person "we do the work"
+voice stays, because Property uses it heavily; claims to a qualification, a regulator, PI
+insurance or regulated work go.
 
 Recurring shapes, worth checking early on any site:
 
@@ -947,6 +1012,20 @@ RULE, in three parts:
    destroys siblings' work to tidy your own log. Record where the work actually landed, in the
    site's STATE.md, and move on. A misleading commit message is cheap; a corrupted sibling is not.
 
+**2026-09-12, retrospective across the four concurrent ports. Concurrency was pure tax and
+the next ports run ONE SITE AT A TIME.** Measured cost of running four sites in one tree:
+the sibling `git add` incident above; instruments crawling the wrong site three separate
+times (section 5); and NINETEEN orphaned `next start` servers still listening days later,
+seven copies of one site and five of another, which is the direct cause of those wrong-site
+measurements. No offsetting speed gain was observed on any phase.
+Deriving and clearing commands, and they belong in the preflight of every session:
+```
+netstat -ano | grep ":31" | sort -u      # every listener in the ports this programme uses
+taskkill //PID <pid> //F                 # then re-check the port is FREE before starting
+```
+RULE: one site at a time. Kill every orphan you did not start before measuring anything, and
+assert the served page title afterwards. Playbook trap T37 and §13.
+
 Also seen the same session, and handled correctly: `.git/index.lock` held by a sibling's in-flight
 commit. It cleared in 3 seconds. NEVER delete that file to get past it; it belongs to another
 agent's running commit, and removing it corrupts theirs to unblock yours. Poll for it to clear.
@@ -986,3 +1065,30 @@ RULE: measure the COMPOSITED pixel, not the token. Any `/NN` alpha suffix or `op
 above the element invalidates the swatch figure, and a contrast table that lists a token without
 its alpha is not evidence. This is the same family as measuring a button against its own label
 instead of the ground it sits on, which is how this port shipped an invisible hero CTA.
+
+---
+
+## 10. Managing the port: how the manager lost work (2026-09-12)
+
+**Three STATE.md pickup blocks contradicted git.** One said "phase 1 complete, next phase 2"
+when all six phases were built and tagged. Another said two phases were unbuilt when one of
+them was tagged. Dentists' build plans for the last three shipped phases existed on disk and
+were never committed. A fresh agent reading any of them would have redone finished work, and
+that is the exact failure the pickup block exists to prevent.
+Deriving commands, run before you plan anything:
+```
+git tag -l 'port-*'
+git log --oneline -20 -- <site>/
+git status --porcelain docs/<site>/
+```
+RULE: git is the authority for what is built. Update the pickup block in the SAME commit as
+the phase it describes, and do not close a phase until its plan is committed. Playbook T38.
+
+**A whole work package was dropped, and five agents became twenty.** Of six packages in one
+phase, five were launched and one was forgotten; it surfaced only because the last agent
+noticed those routes were byte-unchanged. Separately, sweep agents spawned their own workers
+because nothing in their briefs said not to, and the launch hit the concurrency ceiling.
+RULE: write the phase's package list down before launch and tick it off at close with a
+receipt per package. A package is not complete because you remember launching it. Cap
+concurrent agents at 6 and state in every brief whether that agent may delegate; the default
+line is "Do NOT launch subagents." Playbook T39.

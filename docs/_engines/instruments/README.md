@@ -23,6 +23,19 @@ them: §4.5.
   were written to gitignored `tmp/`, which is why they nearly did not survive and
   why the rollout doc exists at all.
 
+## Before you start: the preflight
+
+```bash
+python scripts/port_preflight.py --site <key>     # add --skip-slow to omit the fixture test
+```
+
+Run this first, every port session. It fails on the four things that sank the
+first five ports: a stray `next start` on 3000-3999 that would make an
+instrument crawl the wrong site, a STATE.md pickup block that contradicts the
+`port-<site>-phase*` tags, an uncommitted file under `docs/*/_port/`, and a
+failing `grounds_fixture_test.mjs`. Manual gate only. Never scheduled, never in
+CI, never pointed at production.
+
 ## Usage
 
 Both take `--site=<key>`, where the key is the repo directory name

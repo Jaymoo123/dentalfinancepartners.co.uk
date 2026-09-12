@@ -1,12 +1,61 @@
 # Design port playbook (Property standard)
 
+## STOP. Read this screen before anything else. (2026-09-12)
+
+Five sites are ported (generalist, solicitors, dentists, medical, construction-cis),
+all six phases, tagged, NOT pushed, NOT deployed. Twelve remain. Follow the
+**generalist** flow; it is the one that went well.
+
+**PREFLIGHT, before you measure anything:**
+```bash
+netstat -ano | grep ":31"            # 19 orphaned `next start` servers were found listening
+taskkill //PID <pid> //F             # kill every one you did not start, then re-check the port is free
+git tag -l 'port-*'                  # THIS is what is built, not STATE.md
+git log --oneline -20 -- <site>/
+node docs/_engines/instruments/grounds_fixture_test.mjs   # an instrument with no passing test is not a gate
+```
+A STATE.md pickup block that disagrees with the tags is wrong; fix it before you plan.
+
+**PHASE ORDER:** 0 baseline capture **+ CLAIMS AND GROUND-TRUTH AUDIT (§2.1, gated,
+serious tier fixed before phase 1 starts)** → 1 chrome → 2 blog → 3 templates and hubs
+→ 4 calculators → 5 homepage, pillars, locations → 6 the rest.
+
+**THE FIVE RULES THAT CARRY THE MOST WEIGHT:**
+1. **Claims defects are phase 0 work, not phase 5 discoveries.** Roughly 60% of the
+   effort on the last five sites went on false content found late by agents doing
+   something else. It is cheap at the start and ruinous at the end. §2.1, T36.
+2. **Sweep by the RULE and the WHOLE SITE, never by the list you were handed.** Every
+   list under-counted: 4 was 13, 3 was 9, 6 was 10, "closed at 23" was 24. Search
+   frontmatter and `schema:` JSON-LD, search the arithmetic as well as the words, and
+   check the VALUE not the presence of a key. T6, T34.
+3. **ONE SITE AT A TIME.** Four concurrent ports in one tree bought no speed and cost a
+   sibling's commit, three wrong-site measurements and 19 orphan servers. §13, T37.
+4. **Put the pushback clause in every prompt, verbatim** (§10.1). Every agent told to
+   contradict a false brief found a real error in it. That is what saved these ports.
+5. **Default to what Property does, unless Property is evidently wrong.** Copy
+   Property's ANSWER, not its DEFECTS, and never change Property to fix one (T12).
+
+**Budget a third of every port for live defects that are not design work.** That is the
+most valuable output a port produces. Report it to the owner as output, not overhead.
+
+Detail: traps in §6, §14-18. Running log in `docs/_engines/PORT_FIELD_NOTES.md`.
+
+---
+
 Site-agnostic method for porting an estate site to the Property design standard.
 Written 2026-09-10 from the generalist port (the O.8 pilot), which ran all six
 phases end to end. Everything here is what actually worked or what actually
 went wrong. Follow it and you skip roughly a day of rediscovery.
 
-**Next site: `Solicitors/` (Accounts for Lawyers, www.accountsforlawyers.co.uk,
-`source_identifier: solicitors`).**
+**Which site is next: derive it, never read it from here.** This line used to name a
+site and went stale the moment that site shipped, which is the same defect as a
+STATE.md that disagrees with its tags. Run `git tag -l 'port-*'` for what is already
+done, take the order from `PROPERTY_STANDARD_ROLLOUT.md`, and confirm with the owner.
+
+Selection principle, from the five that are done: the remaining twelve are mostly
+small (19 to 45 posts against the 82 to 475 just ported), and `digital-agency` is the
+outlier at 90 routes and 306 posts. Prove the phase-0 claims audit on a small site
+before spending it on the big one.
 
 Read alongside:
 - `docs/_engines/PROPERTY_STANDARD_ROLLOUT.md` for programme scope and site order.
@@ -75,7 +124,7 @@ what `phase3` means on a given site.
 
 | Phase | Scope | Notes |
 |---|---|---|
-| 0 | Baseline capture | Production SHA, link-floor baseline, armed monitored_pages, funnel evidence. No code. |
+| 0 | Baseline capture **+ claims audit (§2.1)** | Production SHA, link-floor baseline, armed monitored_pages, funnel evidence, CTA triples, claims ledger. No design code. |
 | 1 | Chrome | Header, footer, shell, tokens, backdrop/motif |
 | 2 | Blog subsystem | Renderer, index, projection |
 | 3 | Article templates, hubs, indexes | 3a templates, 3b hubs |
@@ -85,6 +134,43 @@ what `phase3` means on a given site.
 
 Phase 0 is not optional. Without the link-floor baseline you cannot prove you
 did no harm, and that proof is the whole safety net.
+
+### 2.1 The claims and ground-truth audit (phase 0, gated)
+
+A port is a chrome and template job. A claims audit is a content-integrity job.
+**Mixing them is what turned a one-day port into several**, five times running: on
+every site so far the serious content defects surfaced at phase 5 or 6, found by
+agents sent to do something else, after the design work had already been built on
+top of them. Run it as its own work package in phase 0, before any design work.
+
+It covers, site-wide, by rule, including frontmatter and `schema:` JSON-LD:
+
+- Any published figure with no source in `docs/<site>/house_positions.md`.
+- The same quantity carrying different values in different places. Construction-cis
+  published six different unsourced numbers answering one question, two of them in
+  JSON-LD.
+- Machine-readable output disagreeing with the visible page.
+- Turnaround promises, and any published fee for our own services.
+- **Claims to a qualification, a regulator, professional indemnity insurance, or
+  performing regulated work.** Several sites claimed to be qualified accountants, to
+  hold PI cover, and to be "qualified to deliver the SRA-mandated Accountant's
+  Report", each contradicted by that site's own terms page.
+- Invented clients, testimonials, case studies and client counts. Generalist used one
+  figure 199 times across 193 location "case studies" to mean four incompatible
+  things, framed as real clients.
+- Compliance copy describing code that does not run (T18).
+- Calculator outputs, **including the tests**: four Medical calculators handed a doctor
+  a wrong number with two unit tests PINNING the stale values. A test is not evidence
+  that a figure is right; it is evidence that it has not changed.
+
+**Output: a ledger with a verdict per item** (verified / corrected / unsourced and
+removed / owner decision), each row naming the deriving command. Owner gate on the
+ledger. **The serious tier is fixed and committed before phase 1 starts.** A false
+published statement is never deferred to the phase that owns the file (T34).
+
+**Positioning ruling, 2026-09-12: match what the terms page already says.** The
+estate's first-person "we do the work" voice STAYS, because Property uses it heavily.
+What goes is any claim to a qualification, a regulator, PI insurance, or regulated work.
 
 ---
 
@@ -114,6 +200,16 @@ all planning. Sonnet only for mechanical registry/config work. Never DeepSeek.
 
 **Batch size:** one work package per builder, 3-6 packages per phase. Do not
 spawn one agent per file.
+
+**Write the phase's package list down before launch and tick it off at close.** Of six
+packages in one phase, five were launched and one was forgotten; it was caught only
+because the last agent noticed those routes were byte-unchanged. A package is not
+complete because you remember launching it. The close check is a receipt per package.
+
+**Cap the fan-out at 6 concurrent agents, and say in every brief whether that agent may
+delegate.** Five launched agents became twenty and hit the concurrency ceiling, because
+sweep agents spawned their own workers with nobody having told them not to. Default in
+the brief: "Do NOT launch subagents."
 
 **Every prompt must carry** (the pilot lost time to each of these being absent):
 - The repo root path and the monorepo-root git rule.
@@ -224,6 +320,21 @@ sign, costing a whole second pass to find them.
 RULE: sweep by RULE, with a pattern list per rule, and prove zero hits per rule.
 RULE: whenever a fix is described as "remove all X", ask what representation X
 has in the file before searching for it.
+AMENDED 2026-09-12, and this is the programme's single most repeated method failure.
+**Sweeping by the LIST instead of by the RULE under-counts every time.** The Solicitors
+audit under-counted every item it reported: 4 places was 13, 3 was 9, 6 was 10. A
+turnaround class on construction-cis was formally declared closed at 23 instances across
+19 files while a 24th sat live in location `intro` strings three prior sweeps had never
+looked at. Every agent that swept by rule found more than its brief contained.
+Corollaries, each of which hid a real defect:
+- Sweep `faqs`, `keyTakeaways`, `metaTitle`, `metaDescription`, `summary` and `schema:`
+  JSON-LD strings, not only body copy.
+- Search the ARITHMETIC and the CONCEPT, not only the string. A corrected sentence
+  sitting above an uncorrected worked example defeats a text search.
+- Check the VALUE, not the presence of a key.
+- A correct value in a compute library proves nothing about the prose. On Solicitors the
+  library held the flat-rate figure correctly and two invariant tests guarded it while
+  eight prose surfaces published it inverted, which is exactly why nobody caught it.
 
 **T7. A fix pass can introduce a blocker.** Phase 4's fix wired a result gate on
 one page and left the same component ungated in the tab strip on the two
@@ -262,6 +373,20 @@ carries Property's landlord copy with no copy props; `ComparisonTable` forces a
 RULE: mirror locally rather than shipping the reference site's copy, and log the
 kit gap as an owner item. Never edit the kit to fix it mid-port; that changes
 Property.
+AMENDED 2026-09-12, owner's standing rule: **default to what Property does, unless
+Property is evidently wrong. Copy Property's ANSWER, not its DEFECTS.** Known Property
+behaviours that must NOT be copied:
+- `WhatToExpectCard` default props publish a fee line no page authored.
+- `FaqSection` is a Radix accordion with no `forceMount`, so closed answers are absent
+  from the server HTML while the JSON-LD still asserts them. A crawlability regression
+  on any FAQ-schema page; two sites have now refused it in writing.
+- `NumberedReasons` animates off keyframe classes its siblings do not have.
+When a Property behaviour would publish something false or hide indexable content, say
+so and deviate, in writing, in the site's STATE.md.
+**Trap 12 still binds and is not negotiable: no work bringing another site to the
+standard may change Property in any way, including indirectly via
+`packages/web-shared/`.** The two shared defects above are deliberately left unfixed for
+this reason and are owner-approved items in their own right.
 
 **T13. Removing a prop does not remove its default.** Dropping `featuredBadge`
 left the shared default "Most Popular" rendering.
@@ -435,9 +560,21 @@ Before starting a site, capture and put in the prompts:
 ## 9. Definition of done
 
 A phase is done when: built, manager-verified, adversarially reviewed against
-the rendered DOM, gaps fixed, re-reviewed, tagged, committed.
+the rendered DOM, gaps fixed, re-reviewed, tagged, committed, **its build plan committed,
+and `docs/<site>/STATE.md`'s pickup block updated IN THE SAME COMMIT as the phase it
+describes.** Every package on the phase's written list is ticked off with a receipt.
+
+**Git is the authority for what is built; STATE.md is a claim.** Three pickup blocks
+lied to the next session: one said "phase 1 complete, next phase 2" when all six phases
+were built and tagged, another said two phases were unbuilt when one of them was tagged,
+and Dentists' build plans for the last three shipped phases sat on disk uncommitted. A
+fresh agent reading any of them would have redone finished work. Reconcile against
+`git tag -l 'port-*'` before you plan, and a phase is not closed until its plan is
+committed.
 
 A port is done when all six phases are done and:
+- The phase 0 claims ledger is closed, every serious row fixed, and the residue carried
+  into STATE.md as owner items.
 - Build green, all pages accounted for (a change in page count must be explained).
 - Site tests and, if the kit was touched, `web-shared` tests green.
 - Dependency closure OK across all sites.
@@ -474,8 +611,10 @@ HARD RULES:
 - Do NOT edit `packages/web-shared/` (manager-direct carve-out). If the kit
   blocks you, stop and report it.
 - Other builders are concurrently editing <list>. ALL OFF LIMITS.
-- If any premise in this brief turns out to be false, SAY SO rather than
-  inventing a fix for a defect that does not exist.
+- Do NOT launch subagents. [or: you may launch at most <N>; say which in every brief]
+- VERIFY AGAINST SOURCE. If this brief is wrong, SAY SO and trust the source. Do not
+  invent a fix for a defect that does not exist, and do not re-fix something already
+  fixed. Report every false premise you find as a numbered item.
 
 LOCKED DESIGN DECISIONS: <brand> primary, BUTTONS at the 700 step; warning /
 duty / deadline semantics on <ramp>, never amber or orange; <font>; warm
@@ -496,6 +635,14 @@ OUTPUT (all that returns to the manager; self-contained, no preamble):
 5. Anything you could NOT do and why. Never silently skip.
 Be terse. No praise.
 ```
+
+**Keep the VERIFY AGAINST SOURCE clause verbatim, and know why it is there.** It is the
+single clause with the best record on this programme. Every agent given it found a real
+error in its brief: three defects it was sent to fix were already fixed, two CTA
+attributes it was told to remove had already been removed, a guide it was told to leave
+alone was carrying the banned figure, a plan claimed a phase owed work that phase had
+already done, and Property's own component would have published a fee line nobody
+authored. Reward the pushback. An agent that never contradicts you is not reading.
 
 ### 10.2 Planner (read-only)
 
@@ -593,16 +740,45 @@ Report EVERY breach found and fixed as a table: page, rule, old text, new text.
 Worked example of the escape trap: the pound sign lives in the location data as
 the six characters `\u00a3`, so a literal grep is useless.
 
+### 10.7 Claims and ground-truth audit (phase 0, read-mostly)
+
+```
+You are a CLAIMS AND GROUND-TRUTH AUDITOR for `<site>`. This is NOT design work and you
+will touch no component. Ground truth: `docs/<site>/house_positions.md`. Also read
+`<site>/web/src/app/terms/` and the privacy and cookie pages: a claim that contradicts
+this site's own terms page is a defect whichever one is wrong.
+
+Sweep the WHOLE SITE by RULE, never by a list. Include markdown frontmatter (`faqs`,
+`keyTakeaways`, `metaTitle`, `metaDescription`, `summary`), `schema:` JSON-LD strings,
+data files under `src/data/`, `niche.config.json`, and calculator source AND its tests.
+For each rule give the patterns you searched and prove your hit count.
+
+RULES: published figure with no source in house positions; the same quantity with
+different values in different places; JSON-LD disagreeing with the visible page;
+turnaround promise; our own fee; claim to a qualification, a regulator, professional
+indemnity insurance, or performing regulated work; invented client, testimonial, case
+study or client count; compliance sentence describing code that does not run.
+
+OUTPUT: a LEDGER, one row per item: file:line | the claim as published | the rule it
+breaches | the deriving command | verdict (VERIFIED / CORRECT IN PLACE / UNSOURCED,
+REMOVE / OWNER DECISION) | SEVERITY (serious = false, regulated, or financial; else
+minor). Write it to `docs/<site>/_port/CLAIMS_LEDGER.md` and reply with a receipt and
+the serious-tier count only.
+```
+
 ---
 
 ## 11. Session-one checklist for the next site
 
-1. Load `standard_terms`. Read this playbook and the rollout doc.
+0. Preflight (top of this file): kill orphan servers, prove the port is free, reconcile
+   STATE.md against `git tag -l 'port-*'`, run the instruments' fixture tests.
+1. Load `standard_terms`. Read this playbook and the field notes.
 2. Capture the section 8 parameters. Confirm `source_identifier` from
    `<site>/niche.config.json`, not from memory.
 3. Phase 0: production SHA, link-floor baseline, monitored_pages, funnel
-   evidence. No code.
-4. Owner gate: swatch, capture scope, copy/compliance decisions, deletions.
+   evidence, CTA triples, **and the claims audit (§2.1, §10.7)**. No design code.
+4. Owner gate: the claims ledger first, then swatch, capture scope,
+   copy/compliance decisions, deletions. Fix the serious tier before phase 1.
 5. Phases 1-6, each: plan, build in parallel, verify, adversarial review, fix,
    re-review, tag.
 6. Full verification contract after every content change.
@@ -679,8 +855,19 @@ mechanical registry or config work. Never DeepSeek.
 
 ## 13. Running ports CONCURRENTLY, on one working tree
 
-Several sites are ported at once by separate agents, in the SAME checkout. This is normal
-and it works, but only under a protocol. The failure it prevents is real: nine writers
+**RULING 2026-09-12: DO NOT. Run ONE SITE AT A TIME.** Four sites were ported at once in
+one tree. The measured result was a sibling's repo-wide `git add` sweeping 28 of another
+site's files into the wrong commit, instruments crawling the wrong site three separate
+times, and NINETEEN orphaned `next start` servers still listening days later (seven
+copies of one site, five of another), which is the direct cause of the wrong-site
+measurements. There was no offsetting speed gain. The remaining twelve sites are small,
+19 to 45 posts against the 82 to 475 just done, so serial costs almost nothing.
+
+The rest of this section stands as the protocol for the case where the owner
+nevertheless directs concurrent ports, and for the orphan-server hygiene that is
+mandatory either way (preflight, top of this file).
+
+The failure it prevents is real: nine writers
 once shared a dirty tree, one ran a repo-wide stash to get a baseline word count, hit a
 conflict on pop, and resolved it by restoring a sibling's file to HEAD **while another
 agent was editing it**.
@@ -827,6 +1014,15 @@ resolves colour through the browser; named at `DESIGN_DELTA.md` section 3a.
 RULE: when you record a gate, name the committed command that satisfies it in the same edit.
 If that command does not exist, building it is part of recording the gate. And never measure
 colour with a parser when a browser is already open.
+AMENDED 2026-09-12: **an instrument with no test is not an acceptance gate.** `--grounds`
+was repaired FOUR times, three of them in one day, and the second repair introduced the bug
+the third fixed. It invented defects on real routes that then had to be disproved, and it
+reported counts over bands it had never measured. The third repair of one function was
+evidence the function needed a TEST, not another fix. It now has one:
+`docs/_engines/instruments/grounds_fixture_test.mjs`, which runs the SHIPPED instrument
+against its own server and is mutation-proven against all four historical failures. Run it
+in preflight. Any instrument change ships with a fixture test in the same commit, and an
+instrument that reports zero prints the size of the corpus it examined next to the zero.
 
 **T30. An unlayered rule on a shared class silently beats the utility its own consumers chose.**
 Third instance in the programme, first in this shape.
@@ -917,3 +1113,53 @@ RULE: derive every acceptance number from the phase's OWN scope before you write
 check it against the phase's own out-of-scope list. If the phase cannot satisfy it, the number
 belongs to a different phase. Leaving one in is worse than omitting it: the plan still reads as
 though it was met, and it teaches the next phase that acceptance criteria are negotiable.
+
+---
+
+## 18. Traps from the five-site retrospective (2026-09-12)
+
+Four new. The other lessons of that retrospective AMEND traps already here rather than
+duplicating them: T6 (sweep by rule), T12 (Property's own defects, and trap 12's
+Property freeze), T29 (an instrument with no test is not a gate), T34 (a correctness
+sweep ignores phase boundaries). Read those amendments, not a rival entry.
+
+**T36. Content-integrity defects found at phase 5 are phase 0 defects that were not
+looked for.** Roughly 60% of the total effort on five ports went on content that was
+false, and almost none of it was design work. Every serious instance was found late, by
+an agent doing something else, after design work had been built on top of it: a
+fabricated solicitor/barrister domestic reverse charge with a worked example telling
+firms to mis-bill; the flat-rate limited-cost-trader rate published as 12% when it is
+16.5%, with the scheme recommended on the strength of the inversion; a dentists page
+built entirely on a national UDA rate that does not exist, next to invented
+testimonials; four Medical calculators handing a doctor a wrong number with two unit
+tests pinning the stale values.
+RULE: the claims and ground-truth audit is a gated phase 0 deliverable with its own work
+package and its own ledger (§2.1, prompt §10.7). The serious tier is fixed and committed
+before phase 1 starts. Budget a third of the port for it and report it to the owner as
+the port's most valuable output, not as scope creep.
+
+**T37. Concurrent ports in one working tree are pure tax.** Four at once produced a
+sibling's repo-wide `git add` sweeping 28 of another site's files into the wrong commit,
+three wrong-site instrument runs, and nineteen orphaned `next start` servers still
+listening days later (seven of one site, five of another) which are the direct cause of
+those wrong-site measurements. No offsetting speed gain was observed.
+RULE: ONE SITE AT A TIME (§13). Whatever the ordering, kill every orphan server and
+prove the port is free before any measurement, and assert the served page title.
+
+**T38. A STATE.md pickup block is a claim, and three of them lied to the next session.**
+One said "phase 1 complete, next phase 2" when all six phases were built and tagged;
+another said two phases were unbuilt when one of them was tagged; a third site's build
+plans for its last three shipped phases were on disk and never committed. A fresh agent
+reading any of them redoes finished work.
+RULE: git is the authority. Reconcile against `git tag -l 'port-*'` and the log before
+planning, update the pickup block in the SAME commit as the phase it describes, and do
+not close a phase until its plan is committed.
+
+**T39. A manager loses a work package, and agents fan out without being told not to.**
+Of six packages in one phase, five were launched and one was forgotten; it surfaced only
+because the last agent noticed those routes were byte-unchanged. Separately, five
+launched agents became twenty and hit the concurrency ceiling, because sweep agents
+spawned their own workers.
+RULE: write the phase's package list down before launch and tick it off at close, with a
+receipt per package. Cap concurrent agents at 6, and state in every brief whether that
+agent may delegate. Default: "Do NOT launch subagents."
