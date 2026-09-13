@@ -20,34 +20,42 @@ git status --porcelain docs/contractors-ir35/
 python scripts/port_preflight.py
 ```
 
-Derived state at 2026-09-13: **phases 0 to 6 COMPLETE**, built, gated and tagged.
-**CAVEAT, and it is the one real gap: only phases 1 and 2 received an independent adversarial
-fidelity review. Phases 3, 4, 5 and 6 are tagged WITHOUT one.** The playbook requires one per
-phase, and on this site the phase 2 review overturned the manager's own contrast triage (209
-real failures where he had assumed noise), so the missing reviews are not a formality.
-
+Derived state at 2026-09-13: **PORT COMPLETE. Phases 0 to 6 built, independently reviewed,
+gap-fixed, gated and tagged.**
 
 | Item | State |
 |---|---|
 | Phase 0 (baseline + claims audit) | COMPLETE, serious tier fixed and committed |
-| Phase 1 (chrome) | BUILT, REVIEWED, gap-fixed, TAGGED `port-contractors-ir35-phase1` (`4d7bea00`) |
-| Phase 2 (blog subsystem) | BUILT, REVIEWED, TAGGED `port-contractors-ir35-phase2` (`e3d0ff7d`) |
-| Phases 3 to 6 | BUILT, gated, TAGGED phase3-6 (all at `7bcab0e8`, built concurrently in one wave). **NOT independently reviewed** |
+| Phase 1 (chrome) | BUILT, REVIEWED (`P1-8`), gap-fixed, TAGGED (`4d7bea00`) |
+| Phase 2 (blog subsystem) | BUILT, REVIEWED (`P2-8`), TAGGED (`e3d0ff7d`) |
+| Phase 3 (glossary, locations, research, resources) | BUILT, REVIEWED (`R3`, FAITHFUL-WITH-GAPS), gaps closed, TAGGED (`3d718b71`) |
+| Phase 4 (calculators, embed, premium) | BUILT, REVIEWED (`R4`, FAITHFUL-WITH-GAPS), gaps closed, TAGGED (`3d718b71`) |
+| Phase 5 (homepage, services, pillars) | BUILT, REVIEWED (`R56`, FAITHFUL-WITH-GAPS), gap was an owner ruling, TAGGED (`3d718b71`) |
+| Phase 6 (secondary, post-submit, legal) | BUILT, REVIEWED (`R56`, **FAITHFUL**), TAGGED (`3d718b71`) |
+| Verification lists | EXECUTED (`V1`): 198 items, 175 PASS, 8 CANNOT-RUN, 2 real defects, both fixed |
 | Pushed | NO. main is ahead of origin |
 | Deployed | NO. Production still serves `18b4f25f` |
 
-**THE OUTSTANDING WORK, in priority order:**
-1. **Adversarial fidelity reviews for phases 3, 4, 5 and 6.** None was run. Brief them from
-   `_port/P1-8_FIDELITY_REVIEW.md` and `_port/P2-8_FIDELITY_REVIEW.md`, which are the worked
-   examples. The phase 2 review found 209 real contrast failures the manager had triaged as
-   instrument noise, so treat this as load-bearing, not ceremony.
-2. **Execute the per-package verification lists.** Every builder returned one (33 items for
-   calculators, 16 for premium, 15 for secondary/legal, 16 for the layering sweep, 17 for the
-   renderer) because agents were barred from building. The manager ran the SITE-WIDE gates
-   (build, tests, sweep, browser check, closure, predeploy) and they all pass, but the
-   per-package lists were not individually executed. Rows in those reports marked UNVERIFIED
-   are still unverified.
-3. **Owner walk on the dev server**, then the owner's deploy decision.
+Phase tags 3 to 6 deliberately point at the REVIEWED and gap-fixed commit, not at the build
+commit `7bcab0e8`, because those phases were not complete until their gaps were closed.
+
+**REMAINING WORK: the owner walk on a dev server, then his deploy decision. Nothing else.**
+
+**Verification standing (build newer than every source edit):** `next build` exit 0, vitest
+448/448, tsc and eslint clean, `check_dependency_closure.py` OK across 19 sites,
+`predeploy_gate.py` PASS. Sweep 154/154 URLs clean, 0 dead links, 0 LINK-FLOOR breaches, 0
+`data-cta` regressions, 0 dash regressions, 3300 internal links (2755 pre-port), 514 `data-cta`
+(219 pre-port). Browser gate 0 overflow, 0 anchor; the only 16 contrast reports are the two
+independently confirmed false-positive classes (the hidden honeypot label, and the hero over its
+dark gradient which measures 7.97 and 7.05 against real pixels).
+
+The gate's one pricing warning is a FALSE POSITIVE: it is a third-party umbrella company's margin
+inside advice about comparing quotes, not our own fee.
+
+**P5-8 was NOT unbuilt.** Two reviewers filed the ten location copy blocks as missing. They exist
+for all ten cities, authored pre-port in `b88561992`, and are genuinely city-specific. A builder's
+note of "left untouched" was misread as "empty". Fourth instance this port of a defect two agents
+agreed on that did not exist.
 
 **Verification standing at close** (build newer than every source edit, BUILD_ID 23:00:41
 against newest source 22:57:47): `next build` exit 0, vitest 448/448, tsc and eslint clean,
