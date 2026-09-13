@@ -284,7 +284,24 @@ Six of the ten wrap the shared `MiniCapture`, which means the `--brand-primary-t
 
 ### 5b. Would the port ADD any surface? No.
 
-Nothing in the kit's interruptive set is absent here. The standard's `SpecialistWidget`, `DeepScrollModal`, `StickyCTA` and `ReturningBar` are all already live. **The port adds zero capture surfaces**, so the §4.6.6 owner gate on this site is a confirmation, not a request. Owner question 5 asks for it in one line anyway, because appendix K makes it a BLOCKER every time.
+Nothing in the kit's interruptive set is absent here. The standard's `SpecialistWidget`, `DeepScrollModal`, `StickyCTA` and `ReturningBar` are all already live. **The port adds zero INTERRUPTIVE surfaces**, so the §4.6.6 owner gate on this site is a confirmation, not a request.
+
+**OWNER RULING 2026-09-13, and this clause was previously wrong.** As first written the clause said
+"zero capture surfaces", which the R56 fidelity review correctly read as violated: the port added a
+static `LeadCTAPanel` enquiry form to four routes that had none (`/services`, `/ir35-status`, `/for`,
+`/about`), while a builder quoted the same clause to refuse one on `/contact`. The owner has ruled:
+**KEEP all four.** The reasoning recorded so no future port re-litigates it:
+- The §0 funnel ENDS every page with the ask, and Property works this way, so a page with no closing
+  ask is the deviation, not the other way round.
+- Nothing about these interrupts the reader. They do not pop, gate, time, follow the scroll, or
+  reappear. The interruptive set is genuinely unchanged at four, and that count is what §4.6.6 and the
+  standing no-interruption rule exist to protect.
+- The site takes about 3 enquiries a month, so four well-trafficked pages with no way to enquire is a
+  real cost.
+RULE GOING FORWARD, for this site and worth promoting estate-wide: distinguish an INTERRUPTIVE surface
+(pop-up, modal, sticky bar, scroll trigger, timed widget, returning-visitor bar), which needs the
+owner's yes every time, from a STATIC in-page ask, which is part of the page contract. Only the first
+is gated.
 
 ### 5c. The dead one: `blog/ExitIntentModal.tsx`
 
