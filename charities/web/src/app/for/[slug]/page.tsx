@@ -13,7 +13,7 @@ import { charityTypes, getCharityType } from "@/data/charity-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import {
   CtaBand,
-  FaqAccordion,
+  FaqSection,
   HubSection,
   LinkCardGrid,
   PageHero,
@@ -116,7 +116,7 @@ export default async function CharityTypePage({
           dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(type.faqs) }}
         />
       )}
-      <FaqAccordion faqs={type.faqs} />
+      <FaqSection faqs={type.faqs} />
 
       <CtaBand title="Speak to a specialist.">
         <p>

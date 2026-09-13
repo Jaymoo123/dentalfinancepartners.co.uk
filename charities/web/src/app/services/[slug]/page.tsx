@@ -8,7 +8,7 @@ import { charityServices, getCharityService } from "@/data/charity-services";
 import { buildFaqJsonLd } from "@/lib/schema";
 import {
   CtaBand,
-  FaqAccordion,
+  FaqSection,
   HubSection,
   LinkCardGrid,
   PageHero,
@@ -97,7 +97,7 @@ export default async function ServicePage({
           dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(service.faqs) }}
         />
       )}
-      <FaqAccordion faqs={service.faqs} />
+      <FaqSection faqs={service.faqs} />
 
       <CtaBand title="Speak to a charity accounts specialist.">
         <p>

@@ -70,6 +70,15 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body className="antialiased">
+        {/* The kit stylesheet ships collapsed [data-draw="off"] states that only an
+            observer releases, so without JS the eyebrow rules and the homepage ticks
+            would stay invisible. Show them complete instead. Only the two selectors
+            this site actually mounts. Must live inside <body>: React cannot render
+            <noscript> as a direct child of <html>. */}
+        <noscript>
+          <style>{`.eyebrow-rule[data-draw="off"] { transform: none; }
+            [data-draw="off"] .tick-draw { stroke-dashoffset: 0; }`}</style>
+        </noscript>
         {/* Entity graph (Organization + WebSite) on every page so AI knowledge-graph
             crawlers resolve the firm as one entity via the shared #organization @id. */}
         <script

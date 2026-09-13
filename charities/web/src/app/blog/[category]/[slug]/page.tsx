@@ -108,12 +108,25 @@ export default async function BlogPostPage({ params }: Props) {
   // into an object rather than a string. Serialise whatever shape arrives so the
   // script tag never receives "[object Object]", and supply @context when the
   // frontmatter mapping omits it.
+  //
+  // Three posts carry an `@type: Article` block in that frontmatter. The
+  // template already emits an Article node (`articleSchema`, strictly richer:
+  // it also carries dateModified, url, image and the publisher), so emitting
+  // the frontmatter one as well published two Article nodes and, via its
+  // `author: Organization`, a second Organization node. Drop any frontmatter
+  // node whose @type the template already emits; anything else still ships.
   const rawSchema: unknown = post.schema;
+  const schemaObj =
+    rawSchema && typeof rawSchema === "object" ? (rawSchema as Record<string, unknown>) : null;
+  const duplicatesTemplateNode =
+    schemaObj?.["@type"] === "Article" ||
+    (faqSchema && schemaObj?.["@type"] === "FAQPage") ||
+    (howToSchema && schemaObj?.["@type"] === "HowTo");
   const extraSchema =
     typeof rawSchema === "string"
       ? rawSchema
-      : rawSchema && typeof rawSchema === "object"
-        ? JSON.stringify({ "@context": "https://schema.org", ...(rawSchema as Record<string, unknown>) })
+      : schemaObj && !duplicatesTemplateNode
+        ? JSON.stringify({ "@context": "https://schema.org", ...schemaObj })
         : null;
 
   const headings = extractHeadings(post.contentHtml);

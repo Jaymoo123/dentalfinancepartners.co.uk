@@ -2,6 +2,14 @@
 
 Written 2026-09-13. **Planning only. This document changes no code and no content.**
 
+> **AMENDED 2026-09-14, after the build. The plan below is the plan; §5.1 is what was
+> actually built under each tag.** The wave ran **all of phases 1 to 6 concurrently on
+> disjoint file sets** rather than sequentially, in one commit (`ce37721f`) carrying six
+> tags. Two route families therefore sit under a different tag than §3 and §5 assign them:
+> `/services` and `/for` were planned into phase 5 and `/research` into phase 6, but both
+> were built by the phase-3 hubs package. The tags are cut and are not being recut. §3 and
+> §5 are left as written; do not read them as a record of what happened.
+
 Site key `charities`. Display name **Trustee Tax**. Brand primary `#1a5c4a`
 (`charities/niche.config.json:22`). LIVE at `www.trusteetax.co.uk`.
 
@@ -425,6 +433,44 @@ attributes verbatim; anchor `scroll-margin-top` > 0 measured in the browser; zer
 on internal links across all 72 routes; structured data matches what each page renders.
 
 Tag: `port-charities-phase6`.
+
+---
+
+### 5.1 What was ACTUALLY built under each tag (added 2026-09-14)
+
+All six tags point at **one commit, `ce37721f`** (`git rev-parse port-charities-phase1`
+… `phase6` all return it). Seven packages ran concurrently on disjoint file sets; there
+was one build at wave close and every package's written verification list was executed
+against it. A tag below therefore names a SCOPE, not a separate build or a separate
+review.
+
+| Tag | Plan said (§5) | Built |
+|---|---|---|
+| `phase0` | baselines, claims audit, serious tier fixed | as planned. Commit `78dcd3a5` |
+| `phase1` | chrome and tokens | as planned: `@source`, brand ramp off `#1a5c4a` anchored so primary-600 is the brand, radius scale, kit `PageShell` + `SiteHeader` + `SiteFooter` (net new, there was no header), `layout-utils` migration. `ctaContactGoal`, `ctaMobilePlacement`, `resourcesHref`, `companyItems` all passed explicitly |
+| `phase2` | blog subsystem | as planned: TOC, reading progress, related articles, sidebar CTA, list and category hubs. **Deviation:** the FAQ block stays server-rendered plain HTML rather than adopting the kit accordion, which unmounts closed content and would have put the answers back out of the HTML while the JSON-LD still asserts them |
+| `phase3` | guides and indexes (9 routes) | guides **plus `/services`, `/services/[slug]`, `/for`, `/for/[slug]`, `/research` and the 4 study pages.** One package authored `src/components/hubs/HubParts.tsx` as the shared furniture for all four hub families (11 importers), because they shared the defect and the recipe. §3 and §5 assign these to phases 5 and 6 |
+| `phase4` | calculators and embeds | as planned. `src/components/calculators/CalculatorTabs.tsx` is net new. The baseline 1.49 / 2.63 result-panel failures closed as a side effect of phase 1's `@source`, not by a phase-4 colour change |
+| `phase5` | homepage, services, personas | **homepage only**: 791 lines in one file to 14 composed bands, every hex to tokens. Services and personas went with phase 3 |
+| `phase6` | the rest (12 routes) | `/about`, `/contact`, `/book`, `/complete`, `/thank-you`, the 3 legal pages, the form components, and the anchor `scroll-margin-top` fix. `/research` went with phase 3. `data-cta="thankyou-return-article"` survives byte-identical at `src/app/thank-you/page.tsx:132-133` |
+
+**Live defects found and fixed during the wave, none of them design work:** the homepage
+hero CTA rendering white on white; 16 gov.uk citations publishing as escaped markup on
+`/for/cics` and `/for/social-enterprises`; the calculator result panels rendering white
+because `bg-slate-900` was never compiled; kit components painting from an undeclared
+`var(--primary)` / `var(--accent-strong)`. Recorded in full in `docs/charities/STATE.md`.
+
+**Six kit components were rejected with reasons**, including one that would have broken
+dependency closure and three that depend on keyframes no stylesheet here defines.
+
+Outcome against the gates: build green at 85 pages; `sweep.mjs` 66/66 clean, 0 dead links,
+0 em-dashes, link floor 644 to 1289, `data-cta` 0 to 223; `browser_check.mjs` exit 0 with
+zero contrast rows and zero anchor rows, against 164 contrast rows at baseline.
+
+**What the concurrency cost.** Nothing measurable here, because the packages held disjoint
+file leases and the shared-kit edits were the manager's. What it cost is **attribution**:
+the tags no longer separate the work, so a bisect between `phase3` and `phase5` is not
+available, and §3's phase column can no longer be trusted as a map.
 
 ---
 

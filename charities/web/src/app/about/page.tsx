@@ -6,6 +6,7 @@ import {
   siteContainerLg,
   sectionYLoose,
 } from "@accounting-network/web-shared/design/layout-utils";
+import { PageHero } from "@/components/hubs/HubParts";
 
 export const metadata: Metadata = {
   title: "About | Specialist Charity Accountants",
@@ -18,22 +19,22 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* Brand-ground hero. primary-600 IS #1a5c4a and measures 7.85 on white,
-          so white copy on it clears the 4.5:1 text floor with room to spare.
-          No eyebrow: this page has no label nobody wrote, and inventing one is
-          copy, not design. */}
-      <section className="bg-primary-600 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="max-w-3xl">
-            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              We only work with charities, CICs and social enterprises.
-            </h1>
-            <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-              Because the Charities SORP, fund accounting, Gift Aid and independent examination are specific enough that general accounting experience is not the same as specialist experience.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* One hero vocabulary: the same PageHero the ported hubs use, dark tone,
+          which is the ground generalist gives /about and the nearest reading of
+          the primary-600 block this replaces. Heading and standfirst strings are
+          byte-identical to what shipped; this is a visual change only. The
+          eyebrow is the page name, because PageHero requires one and a label is
+          not the place to make a claim. */}
+      <PageHero
+        eyebrow="About"
+        tone="dark"
+        title="We only work with charities, CICs and social enterprises."
+        crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
+      >
+        <p>
+          Because the Charities SORP, fund accounting, Gift Aid and independent examination are specific enough that general accounting experience is not the same as specialist experience.
+        </p>
+      </PageHero>
 
       <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>

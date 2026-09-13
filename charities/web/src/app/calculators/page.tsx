@@ -35,8 +35,7 @@ export default function CalculatorsPage() {
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg">
               Free tools built on the current Charity Commission and HMRC rules (England and Wales,
-              2026/27). Every figure is sourced and kept up to date. Nothing you type leaves your
-              browser, and there is no sign-up.
+              2026/27). Every figure is sourced and kept up to date.
             </p>
           </div>
         </div>
@@ -111,7 +110,8 @@ export default function CalculatorsPage() {
             <p className="mt-3 text-base leading-7 text-slate-600">
               What it cannot see is your reserves policy, your restricted funds, or how this year&apos;s
               income changes which scrutiny threshold you fall under next year. If you want your own
-              figures checked, tell us about your charity and we will come back to you.
+              figures checked, tell us about your charity and we will arrange a short introductory
+              call.
             </p>
             <Link
               href="/contact"

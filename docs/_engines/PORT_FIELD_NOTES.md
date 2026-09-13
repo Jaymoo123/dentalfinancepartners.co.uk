@@ -1247,7 +1247,7 @@ RULE: assert title AND age before quoting any server.
 
 ---
 
-## 12. What the charities port taught (phase 0, 2026-09-13)
+## 12. What the charities port taught (2026-09-13/14)
 
 **The documented unlayered sweep is still broken, and this is the second consecutive port whose
 documented audit command could not find the defect it describes.** The brace-depth walk in section
@@ -1333,3 +1333,55 @@ RULE: before calling a site's copy false, (a) grep Property for the same string,
 whether the mechanism it describes is site-local or estate-central. Consent text is also
 gate-load-bearing: `consentAllowsSharing` matches on the published wording and
 `Property/web/src/tests/consent-anchor-drift.test.ts` pins it.
+
+### Phases 1 to 6 (2026-09-14)
+
+**A composed utility override ties on specificity and LOSES ON SOURCE ORDER.** `btnPrimary`
+hardcodes `text-white` and its own ground (`packages/web-shared/design/layout-utils.ts`);
+a call site that appends a competing colour produces two single-class rules of equal
+specificity, so the one later in the stylesheet wins, and which one that is depends on
+Tailwind's emission order, not on your class string. Two live defects on this estate are
+now this same shape: the header CTA `hidden` vs `lg:inline-flex`
+(`design/chrome/SiteHeader.tsx:473`) and the charities homepage hero button rendering
+**white on white** since launch.
+RULE: never invert a kit recipe by composition. Write the button out, or drive it from a
+token. Settle any suspected tie by byte offset in the served stylesheet:
+`curl -s <cssbundle> | grep -bo '<selector>'`.
+
+**An undefined CSS custom property invalidates the WHOLE declaration, so the element
+renders nothing and every test stays green.** `bg-[var(--primary)]` with no `--primary`
+declared is not a fallback to black, it is no background at all. charities declared
+neither `--primary` nor `--accent-strong` while adopting components that paint from both,
+so the reading-progress bar was transparent with a clean `browser_check`.
+RULE: before adopting a kit component, sweep it for bare reads:
+`grep -rn 'var(--[a-z-]*)' <component>` and check each name against the site's
+`globals.css`. Both kit families now ship `var(--primary,var(--brand-primary,#0f172a))`
+so the class cannot recur.
+
+**There are TWO copies of several kit components.** `packages/web-shared/design/blog/` and
+`packages/web-shared/content/` both carry `ReadingProgress.tsx` and `TableOfContents.tsx`.
+A survey that checked only one family reached the wrong answer on a live site.
+RULE: `grep -rn "<component>" <site>/web/src` to find which family the site imports BEFORE
+concluding a defect does or does not apply, and patch both families when you patch one.
+
+**A kit component's DEFAULT props can ship dead links.**
+`SiteFooter.companyItems` defaults to `{ label: "Locations", href: "/locations" }`
+(`design/chrome/SiteFooter.tsx:84`), which **404s on every site without location routes**.
+charities has `locations: []`.
+RULE: read every default object in a chrome component's signature and pass the prop. A
+default is a claim about your site that nobody checked.
+
+**`wordmarkIcon` is a component function and cannot cross the RSC boundary.** That is why
+every ported site keeps a thin client shell wrapper around `PageShell`
+(`design/chrome/SiteHeader.tsx:88` types it `WordmarkIcon`). generalist, Solicitors and now
+charities all have one.
+RULE: the wrapper is the required pattern, not a bespoke deviation. Do not raise it as a
+port defect and do not try to delete it.
+
+**Instrument blind spot, stated honestly: `ratio=1.00` with `color=rgb(255, 255, 255)` is
+usually a white-on-gradient artefact, and on this port one of them was a REAL
+white-on-white button.** `browser_baseline.json` carries **64** such rows out of 164; the
+homepage `a "Talk to a charity accountant"` row was the live hero CTA.
+RULE: never dismiss a `ratio=1.00` white row as an artefact and never accept it as a defect
+without proof. Settle each one against the served stylesheet's byte order, at the element
+the row names.

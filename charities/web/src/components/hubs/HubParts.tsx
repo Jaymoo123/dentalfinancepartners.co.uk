@@ -7,8 +7,8 @@
  * grid, an FAQ block and a closing band, and no two of them matched. Eight card
  * recipes, three FAQ treatments, four hero paddings.
  *
- * Everything visual below is the kit's: `Breadcrumb`, `Eyebrow`, the radix
- * `Accordion` primitives, `layout-utils` containers and buttons, and the kit's
+ * Everything visual below is the kit's: `Breadcrumb`, `Eyebrow`,
+ * `layout-utils` containers and buttons, and the kit's
  * corrected card recipe (`ring-1 ring-slate-200/70`, NOT `border
  * border-slate-200`). What is local is the HTML carve-out: `src/data/
  * charity-types.ts` stores inline `<a href>` anchors inside `intro`,
@@ -34,12 +34,6 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { Breadcrumb, type BreadcrumbItem } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@accounting-network/web-shared/design/primitives/accordion";
 import {
   btnPrimary,
   focusRing,
@@ -266,11 +260,18 @@ export function RichCardGrid({
 }
 
 /**
- * The kit `FaqSection` with one change: the answer is a raw HTML string rather
- * than `{faq.answer}`. Everything visual is the kit's accordion primitives.
- * Pair it with `buildFaqJsonLd` in the page, as the kit's own docstring says.
+ * FAQ block. Deliberately a plain `<dl>`, NOT the kit `FaqSection` and not the
+ * kit's radix `Accordion`: that accordion passes no `forceMount`, so every
+ * closed answer is absent from the server HTML while the page's
+ * `buildFaqJsonLd` still asserts it to crawlers. The kit's `AccordionContent`
+ * does spread its props, so `forceMount` could be threaded from here without
+ * editing `packages/web-shared/` — but the blog route
+ * (`src/app/blog/[category]/[slug]/page.tsx`) already settled this site on a
+ * `<dl>` that is always in the DOM, and the two should match. Do not convert
+ * this back to an accordion.
+ * Pair it with `buildFaqJsonLd` in the page.
  */
-export function FaqAccordion({
+export function FaqSection({
   faqs,
   eyebrow = "FAQ",
   title = "Common questions",
@@ -287,20 +288,22 @@ export function FaqAccordion({
       <div className={siteContainerLg}>
         <Eyebrow>{eyebrow}</Eyebrow>
         <h2 className="mb-8 text-2xl font-bold text-slate-900 sm:mb-12 sm:text-4xl">{title}</h2>
-        <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
-          {faqs.map((faq, idx) => (
-            <AccordionItem
+        <dl className="space-y-3 sm:space-y-4">
+          {faqs.map((faq) => (
+            <div
               key={faq.question}
-              value={`faq-${idx}`}
-              className={ground === "slate" ? "bg-white" : "bg-slate-50"}
+              className={`rounded-xl p-4 ring-1 ring-slate-200/70 sm:p-6 ${
+                ground === "slate" ? "bg-white" : "bg-slate-50"
+              }`}
             >
-              <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>
-                <p className={richLink} dangerouslySetInnerHTML={{ __html: faq.answer }} />
-              </AccordionContent>
-            </AccordionItem>
+              <dt className="text-sm font-bold text-slate-900 sm:text-base">{faq.question}</dt>
+              <dd
+                className={`mt-2 text-sm leading-relaxed text-slate-700 sm:text-base ${richLink}`}
+                dangerouslySetInnerHTML={{ __html: faq.answer }}
+              />
+            </div>
           ))}
-        </Accordion>
+        </dl>
       </div>
     </section>
   );

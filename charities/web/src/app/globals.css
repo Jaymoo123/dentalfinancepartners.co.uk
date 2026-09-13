@@ -2,6 +2,15 @@
 @import "tailwindcss" source("..");
 /* Kit components live outside src/, which source("..") excludes, so without this line every utility used only inside packages/web-shared compiles to nothing. */
 @source "../../../../packages/web-shared";
+/* Shared design layer (type rhythm, motion, glow, .related-card, .eyebrow-rule,
+   .tick-draw). Imported by relative path, the same way prose-standard.css below
+   is, because this site's package.json does not list the workspace package in a
+   way a CSS bare specifier is guaranteed to resolve.
+   Ordered AFTER the tailwind import and BEFORE the :root token block, which is
+   the order the file's own header requires. Its --brand-glow* channel tokens
+   fall back to PROPERTY's emerald when undeclared, so every one of them is
+   declared in :root below; see the note there. */
+@import "../../../../packages/web-shared/design/globals-standard.css";
 /* Article bodies here carry class="prose" and the homepage uses .section-label, neither of which had any rule, so without this line those pages render unstyled. */
 @import "../../../../packages/site-styles/prose-standard.css";
 
@@ -49,8 +58,9 @@
      var(--radius-xl) and a same-named property out here would shadow the
      layered theme value and invert the whole scale.
      0rem gives --radius-xl = 4px, the house square corner. Values match
-     packages/web-shared/design/globals-standard.css:38-42 exactly, so importing
-     that file later is a no-op rather than a fight. */
+     packages/web-shared/design/globals-standard.css:38-42 exactly, so the
+     @theme block that file now contributes (imported at the top of this file)
+     is a no-op against the one below rather than a fight. */
   --radius: 0rem;
 
   /* Calculator warning semantics, read by the shared <Calculator> renderer
@@ -66,6 +76,43 @@
   --calc-warn-bg: #b45309;    /* amber-700 */
   --calc-warn-fg: #ffffff;
   --calc-warn-accent: #fbbf24; /* amber-400, on-dark */
+
+  /* ------------------------------------------------------------
+     PROPERTY-FALLBACK SWAP SURFACE.
+
+     Every custom property in packages/web-shared/design/globals-standard.css
+     that carries a LITERAL COLOUR as its var() fallback is declared here. Leave
+     any one of them out and that rule silently paints Property's emerald on this
+     site. The four glow channels are written as "R G B" because the kit consumes
+     them as `rgb(var(--token) / alpha)`; a hex there invalidates the whole
+     declaration.
+
+     Mapped onto this site's own ramp above at the same relative step Property
+     uses within emerald, so the glow reads as this brand rather than a
+     re-tinted Property:
+       --brand-glow        emerald-500 -> primary-500 #3b8871
+       --brand-glow-deep   emerald-600 -> primary-600 #1a5c4a (THE brand)
+       --brand-glow-edge   emerald-400 -> primary-400 #57a88f
+       --brand-glow-faint  emerald-100 -> primary-100 #daf1e8
+     All four are used only as glow/shadow/border decoration on .related-card and
+     [data-glow] cards, which WCAG 1.4.11 exempts; none carries text.
+
+     --hero-cream is NOT in that stylesheet: it is read by
+     packages/web-shared/design/layout-utils.ts:54 as
+     `bg-[var(--hero-cream,#fbfaf7)]`, which is Property's cream and is what
+     every kit hero on this site has been painting. primary-50 is this site's own
+     lightest step and was already measured as a ground under text: 600 on it
+     7.44, 700 9.79, 900 13.99, and PageHero's cream branch sets text-slate-900,
+     all clear of the 4.5:1 floor.
+
+     None of these five names is a Tailwind v4 theme namespace (--color-*,
+     --radius-*, --font-*, --spacing-*, --text-*, --leading-*, --shadow-*), so
+     all five are safe in an unlayered :root. */
+  --brand-glow: 59 136 113;
+  --brand-glow-deep: 26 92 74;
+  --brand-glow-edge: 87 168 143;
+  --brand-glow-faint: 218 241 232;
+  --hero-cream: #f2fbf7;
 }
 
 @theme {
@@ -145,6 +192,19 @@
    and font-family defeated every bg-*, text-* and font-* utility written on
    <body>. Moved into @layer base by this package (P0D_CSS_CONTRAST.md 1.4)
    before the kit chrome starts writing utilities onto that element.
+
+   The kit stylesheet imported at the top of this file brings one more UNLAYERED
+   rule with it, deliberately (its own comment, lines 45-73, explains why):
+
+     h1, h2, h3, h4, h5, h6 { line-height: 1.2; }
+
+   Unlayered, so it beats every leading-* utility on a heading element site-wide.
+   On this site that overrides PageHero's `leading-[1.15]` and the blog index and
+   article `leading-tight`/`leading-snug` headings, which now all render at 1.2.
+   That is the house rhythm Property, generalist and Solicitors already ship, and
+   the documented escape hatch for a deliberate deviation is the `!` modifier
+   (`leading-snug!`). Recorded rather than worked around: matching the siblings is
+   the point of importing the file.
    ============================================================ */
 @layer base {
   body {
@@ -191,6 +251,24 @@
    Tailwind utilities, and within the layer it wins on specificity alone
    (0,2,2 vs 0,1,0).
    ============================================================ */
+
+/* ============================================================
+   ONE COLLISION FROM THE KIT IMPORT, RESTORED.
+   packages/site-styles/prose-standard.css:96 gives `.prose h3` line-height 1.3,
+   inside @layer components. The kit's unlayered h1-h6 { line-height: 1.2 } beats
+   every layered rule whatever its specificity, so importing it silently took
+   article sub-headings from 1.3 to 1.2. That is a value the prose file chose on
+   purpose, and no sibling site imports prose-standard.css, so nothing upstream
+   decided otherwise.
+   Restored here rather than in packages/site-styles (shared, trap 12) and
+   unlayered, because only an unlayered rule can meet an unlayered rule.
+   `.prose h3` is specificity (0,1,1) against the kit's (0,0,1), so it wins on
+   specificity and not on source order. Every other heading line-height in that
+   file already reads 1.2 and is unaffected.
+   ============================================================ */
+.prose h3 {
+  line-height: 1.3;
+}
 
 @layer utilities {
   header a[data-cta-placement="header"][data-cta="header_book"] {

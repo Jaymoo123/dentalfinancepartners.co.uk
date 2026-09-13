@@ -4,8 +4,9 @@ import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } fro
 import { siteConfig } from "@/config/site";
 import { siteContainerLg, btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { BLOG_CTA } from "@/components/blog/blog-cta";
-import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { heroCreamSurface } from "@accounting-network/web-shared/design/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { PageHero } from "@/components/hubs/HubParts";
 import { BlogListWithSearch } from "@accounting-network/web-shared/design/blog/BlogListWithSearch";
 import { HubArticleList } from "@accounting-network/web-shared/design/blog/HubArticleList";
 
@@ -56,41 +57,43 @@ export default function BlogIndexPage() {
 
   return (
     <>
-      <section className="bg-slate-50 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <div className="max-w-3xl">
-            <Breadcrumb
-              siteUrl={siteConfig.url}
-              items={[{ label: "Home", href: "/" }, { label: "Blog" }]}
-            />
-            {/* Published h1, unchanged. */}
-            <h1 className="text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Charity accounting, explained.
-            </h1>
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg">{INTRO}</p>
-          </div>
+      {/* Kit hero, cream tone: /blog is a hub, and /guides, /research, /services
+          and /for already open on the cream PageHero. Its own Breadcrumb and h1
+          were already here and carry over unchanged, strings included. */}
+      <PageHero
+        eyebrow="Blog"
+        title="Charity accounting, explained."
+        crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
+      >
+        <p>{INTRO}</p>
+      </PageHero>
 
-          {categories.length > 0 && (
-            <div className="mt-8">
-              <Eyebrow>Browse by topic</Eyebrow>
-              <nav aria-label="Browse by topic" className="flex flex-wrap gap-3">
-                {categories.map((cat) => (
-                  <Link
-                    key={cat.slug}
-                    href={`/blog/${cat.slug}`}
-                    data-cta={`blog_index_topic_${cat.slug}`}
-                    data-cta-placement="filter_band"
-                    className={chip}
-                  >
-                    {cat.name}
-                    <span className="text-xs font-semibold text-slate-500">{cat.count}</span>
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          )}
-        </div>
-      </section>
+      {/* The topic rail used to live inside the old hero section. PageHero's
+          content column is capped at max-w-3xl and the rail is wider than that,
+          so it becomes its own band on the SAME cream ground, with no top
+          padding, and reads as a continuation of the hero rather than a new
+          band. */}
+      {categories.length > 0 && (
+        <section className={`${heroCreamSurface} pb-10 sm:pb-12`}>
+          <div className={siteContainerLg}>
+            <Eyebrow>Browse by topic</Eyebrow>
+            <nav aria-label="Browse by topic" className="flex flex-wrap gap-3">
+              {categories.map((cat) => (
+                <Link
+                  key={cat.slug}
+                  href={`/blog/${cat.slug}`}
+                  data-cta={`blog_index_topic_${cat.slug}`}
+                  data-cta-placement="filter_band"
+                  className={chip}
+                >
+                  {cat.name}
+                  <span className="text-xs font-semibold text-slate-500">{cat.count}</span>
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </section>
+      )}
 
       <section id="articles" className="scroll-mt-24 bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>
