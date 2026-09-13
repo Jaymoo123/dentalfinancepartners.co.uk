@@ -8,23 +8,23 @@
  *
  * Deliberately NOT a month calendar: the lead is telling us when to call them,
  * not booking a scarce resource, so two taps beat a date grid (mobile-first).
- * House style: charities ink/green tokens, rounded corners, no em-dashes in copy.
+ * House style: the shared kit (primary-* ramp, NoticeCard, kit buttons); no em-dashes in copy.
  */
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary } from "@accounting-network/web-shared/design/layout-utils";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
-// ponytail: literal brand hex, matching layout-utils; no new token layer for two chips.
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-md border px-1.5 sm:px-3 py-2 text-sm font-semibold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a5c4a]";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-xl border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
 const chipIdle =
-  "border-neutral-300 bg-white text-neutral-900 hover:border-[#1a5c4a] hover:bg-[#f0f7f4]";
+  "border-slate-300 bg-white text-slate-900 hover:border-primary-600 hover:bg-primary-50";
 const chipSelected =
-  "border-[#1a5c4a] bg-[#1a5c4a] text-white";
+  "border-primary-600 bg-primary-600 text-white";
 
 export default function BookingPicker({ token }: { token: string }) {
   const days = useMemo(() => upcomingWeekdays(10), []);
@@ -75,9 +75,8 @@ export default function BookingPicker({ token }: { token: string }) {
 
   if (status === "done") {
     return (
-      <div className="rounded-lg border border-[#1a5c4a]/30 bg-[#f0f7f4] p-6 text-center">
-        <p className="text-lg font-semibold text-neutral-900">Callback booked</p>
-        <p className="mt-2 text-base text-neutral-700">
+      <NoticeCard tone="primary" title="Callback booked">
+        <p className="text-base leading-relaxed text-slate-700">
           {confirmedLabel ? (
             <>
               We have you down for <strong>{confirmedLabel}</strong>.
@@ -88,31 +87,31 @@ export default function BookingPicker({ token }: { token: string }) {
           A charity finance specialist will call you then. If your plans change, just reply to any
           of our messages.
         </p>
-        <p className="mt-3 text-sm text-neutral-600">
+        <p className="mt-3 text-sm leading-relaxed text-slate-600">
           The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "expired") {
     return (
-      <div className="rounded-lg border border-neutral-200 bg-[#fafaf9] p-6 text-center">
-        <p className="text-base text-neutral-600">
+      <NoticeCard>
+        <p className="text-base leading-relaxed text-slate-700">
           This booking link has expired. No problem, you can still reach us through the contact
           form and we will arrange your review.
         </p>
-        <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+        <Link href="/contact" className={`${btnPrimary} mt-6`}>
           Go to the contact form
         </Link>
-      </div>
+      </NoticeCard>
     );
   }
 
   return (
     <div className="text-left">
-      <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+      <p className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-600">
         1. Pick a day
       </p>
       <div className="grid grid-cols-5 gap-1 sm:gap-2">
@@ -132,7 +131,7 @@ export default function BookingPicker({ token }: { token: string }) {
         ))}
       </div>
 
-      <p className="mb-3 mt-6 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+      <p className="mb-3 mt-8 text-xs font-bold uppercase tracking-wide text-slate-600">
         2. Pick a time that suits you
       </p>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
@@ -160,11 +159,11 @@ export default function BookingPicker({ token }: { token: string }) {
           {status === "submitting" ? "Booking your callback..." : "Book my free review call"}
         </button>
         {status === "error" && (
-          <p className="mt-3 text-sm font-semibold text-red-700">
+          <p className="mt-3 text-sm font-bold text-red-700">
             Something went wrong saving your slot. Please try again.
           </p>
         )}
-        <p className="mt-3 text-xs text-neutral-500">
+        <p className="mt-3 text-xs text-slate-600">
           No obligation. A charity finance specialist will call you in your chosen window.
         </p>
       </div>

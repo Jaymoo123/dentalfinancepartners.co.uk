@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { btnOnDark, siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 import { charityServices, getCharityService } from "@/data/charity-services";
 import { buildFaqJsonLd } from "@/lib/schema";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import {
+  CtaBand,
+  FaqAccordion,
+  HubSection,
+  LinkCardGrid,
+  PageHero,
+  RichCardGrid,
+} from "@/components/hubs/HubParts";
 
 export function generateStaticParams() {
   return charityServices.map((s) => ({ slug: s.slug }));
@@ -36,112 +45,77 @@ export default async function ServicePage({
 
   return (
     <>
-      <section className="border-b border-neutral-200 bg-[#1a5c4a] py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <Link href="/services" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">
-            All services
+      <PageHero
+        tone="dark"
+        eyebrow={service.title}
+        title={`${service.headline}.`}
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: service.title },
+        ]}
+        actions={
+          <Link href="/contact" className={btnOnDark}>
+            Get in touch
           </Link>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            {service.headline}.
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">{service.intro}</p>
-          <div className="mt-10">
-            <Link href="/contact" className="inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-[#1a5c4a] hover:bg-white/90 transition-colors">
-              Get in touch
-            </Link>
-          </div>
-        </div>
-      </section>
+        }
+      >
+        <p>{service.intro}</p>
+      </PageHero>
 
-      <section className="bg-neutral-800 py-8 sm:py-10">
+      {/* Stat band. slate-800 under the slate-900 hero so the two read as
+          separate bands; the mono figures and the label treatment are the
+          pre-port ones. */}
+      <section className="bg-slate-800 py-8 sm:py-10">
         <div className={siteContainerLg}>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
             {service.stats.map((stat) => (
               <div key={stat.label} className="flex flex-col sm:text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-                <div className="mt-1 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider">{stat.label}</div>
+                <div className="font-mono text-2xl font-bold text-white sm:text-3xl">
+                  {stat.value}
+                </div>
+                <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-300 sm:text-sm">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">The challenges trustees face.</h2>
-          <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
-            {service.challenges.map((item) => (
-              <article key={item.title} className="border border-neutral-200 border-l-4 border-l-[#1a5c4a] bg-neutral-50 p-6 sm:p-8">
-                <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HubSection eyebrow="The problem" title="The challenges trustees face.">
+        <RichCardGrid items={service.challenges} columns={2} tone="slate" />
+      </HubSection>
 
-      <section className="border-b border-neutral-200 bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
-          <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
-            {service.howWeHelp.map((item) => (
-              <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-[#1a5c4a] hover:shadow-md transition-all">
-                <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HubSection eyebrow="The work" title="How we help." ground="slate">
+        <RichCardGrid items={service.howWeHelp} columns={3} tone="white" />
+      </HubSection>
 
       {service.faqs.length > 0 && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(service.faqs) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(service.faqs) }}
+        />
       )}
-      {service.faqs.length > 0 && (
-        <section className="bg-white py-12 sm:py-16 lg:py-20">
-          <div className={siteContainerLg}>
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-3xl">Common questions</h2>
-              <div className="space-y-3 sm:space-y-4">
-                {service.faqs.map((faq) => (
-                  <details key={faq.question} className="group border border-neutral-200 bg-white">
-                    <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-[#1a5c4a] transition-colors list-none">
-                      <span>{faq.question}</span>
-                      <span className="flex-shrink-0 text-[#1a5c4a] transition-transform group-open:rotate-45" aria-hidden>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
-                      </span>
-                    </summary>
-                    <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4">{faq.answer}</div>
-                  </details>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
+      <FaqAccordion faqs={service.faqs} />
 
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to a charity accounts specialist.</h2>
-          <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-            Tell us about your charity, CIC or social enterprise and we will arrange a short introductory call. No obligation.
-          </p>
-          <div className="mt-8">
-            <Link href="/contact" className={btnPrimary}>Get in touch</Link>
-          </div>
-        </div>
-      </section>
+      <CtaBand title="Speak to a charity accounts specialist.">
+        <p>
+          Tell us about your charity, CIC or social enterprise and we will arrange a short
+          introductory call. No obligation.
+        </p>
+      </CtaBand>
 
-      <section className="bg-[#fafaf7] py-12 sm:py-16">
+      <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <p className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-5">Other services</p>
-          <div className="grid gap-3 sm:gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
-            {charityServices.filter((s) => s.slug !== slug).map((s) => (
-              <Link key={s.slug} href={`/services/${s.slug}`} className="group block border border-neutral-200 bg-white p-4 transition-all hover:border-[#1a5c4a] hover:shadow-sm">
-                <span className="text-sm font-semibold text-neutral-800 group-hover:text-[#1a5c4a] transition-colors">{s.title}</span>
-              </Link>
-            ))}
-          </div>
+          <Eyebrow>Other services</Eyebrow>
+          <LinkCardGrid
+            compact
+            columns={5}
+            items={charityServices
+              .filter((s) => s.slug !== slug)
+              .map((s) => ({ href: `/services/${s.slug}`, title: s.title }))}
+          />
         </div>
       </section>
     </>

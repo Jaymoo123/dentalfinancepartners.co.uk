@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { MiniCapture } from "@/components/calculators/MiniCapture";
@@ -9,8 +8,9 @@ import {
   fmtPct,
   type SurvivalIndexSnapshot,
 } from "@/lib/research/survival-index";
-import { buildFaqJsonLd, buildBreadcrumbJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd } from "@/lib/schema";
 import snapshot from "@/data/charity-survival-index.json";
+import { PageHero, ResearchSection as Section, Stat } from "@/components/hubs/HubParts";
 
 const data = snapshot as unknown as SurvivalIndexSnapshot;
 const { meta, headline, cohort_survival, income_band_survival } = data;
@@ -83,29 +83,6 @@ const faqs = [
   },
 ];
 
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl border border-[var(--border)] bg-white p-5 shadow-sm">
-      <div className="text-3xl font-bold text-[var(--brand-primary)] sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-[var(--muted)]">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section
-      id={id}
-      className="scroll-mt-24 border-t border-[var(--border)] py-10 first:border-t-0"
-    >
-      <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-[var(--ink-soft)]">
-        {children}
-      </div>
-    </section>
-  );
-}
-
 export default function CharitySurvivalIndexPage() {
   // Oldest cohort with complete data for the headline survival rate sentence
   const oldest = cohort_survival[0];
@@ -119,39 +96,31 @@ export default function CharitySurvivalIndexPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: buildBreadcrumbJsonLd([
-            { label: "Home", href: "/" },
-            { label: "Research", href: "/research" },
-            { label: "UK Charity Survival and Longevity Index" },
-          ]),
-        }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
 
-      <main>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
-            <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
-              UK Charity Survival and Longevity Index
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-white/85">
+      <PageHero
+        tone="dark"
+        eyebrow="Research"
+        title="UK Charity Survival and Longevity Index"
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Research", href: "/research" },
+          { label: "UK Charity Survival and Longevity Index" },
+        ]}
+      >
+        <p>
               How long do charities actually last? Cohort survival analysis of every England and
               Wales charity registered since 1980, drawn from the Charity Commission full-register
               extract. Updated {generatedDate}.
-            </p>
-            <nav className="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/70">
-              <a href="#survival-by-cohort" className="hover:text-white">Survival by cohort</a>
-              <a href="#survival-by-income" className="hover:text-white">Survival by income band</a>
-              <a href="#faq" className="hover:text-white">FAQ</a>
-              <a href="#methodology" className="hover:text-white">Methodology</a>
-            </nav>
-          </div>
-        </section>
+        </p>
+          <nav className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-slate-300">
+            <a href="#survival-by-cohort" className="rounded py-0.5 hover:text-white">Survival by cohort</a>
+            <a href="#survival-by-income" className="rounded py-0.5 hover:text-white">Survival by income band</a>
+            <a href="#faq" className="rounded py-0.5 hover:text-white">FAQ</a>
+            <a href="#methodology" className="rounded py-0.5 hover:text-white">Methodology</a>
+          </nav>
+      </PageHero>
 
         <div className="mx-auto max-w-4xl px-6">
           <div className="-mt-8 grid gap-4 sm:grid-cols-3">
@@ -186,7 +155,7 @@ export default function CharitySurvivalIndexPage() {
             <div className="overflow-x-auto">
               <table className="mt-2 w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                  <tr className="border-b border-slate-200 text-left text-slate-600">
                     <th className="py-2 pr-4 font-semibold">Cohort year</th>
                     <th className="py-2 pr-4 text-right font-semibold">Registered</th>
                     <th className="py-2 pr-4 text-right font-semibold">Removed</th>
@@ -197,7 +166,7 @@ export default function CharitySurvivalIndexPage() {
                 </thead>
                 <tbody>
                   {cohort_survival.map((row) => (
-                    <tr key={row.cohort_year} className="border-b border-[var(--border)]/60">
+                    <tr key={row.cohort_year} className="border-b border-slate-200/60">
                       <td className="py-2 pr-4 font-medium tabular-nums">{row.cohort_year}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">
                         {fmtNumber(row.registered)}
@@ -221,7 +190,7 @@ export default function CharitySurvivalIndexPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Source: Charity Commission full-register extract (OGL v3.0), {generatedDate}.
               Survival rate = active / (active + removed) within each cohort.
             </p>
@@ -237,7 +206,7 @@ export default function CharitySurvivalIndexPage() {
             <div className="overflow-x-auto">
               <table className="mt-2 w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                  <tr className="border-b border-slate-200 text-left text-slate-600">
                     <th className="py-2 pr-4 font-semibold">Income band at removal</th>
                     <th className="py-2 pr-4 text-right font-semibold">Charities removed</th>
                     <th className="py-2 text-right font-semibold">Median age at removal</th>
@@ -245,7 +214,7 @@ export default function CharitySurvivalIndexPage() {
                 </thead>
                 <tbody>
                   {income_band_survival.map((row) => (
-                    <tr key={row.key} className="border-b border-[var(--border)]/60">
+                    <tr key={row.key} className="border-b border-slate-200/60">
                       <td className="py-2 pr-4">{row.label}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">
                         {fmtNumber(row.removed_count)}
@@ -260,7 +229,7 @@ export default function CharitySurvivalIndexPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Income is each charity&apos;s last reported latest_income before removal (this is not
               necessarily income in the final year; it is the most recent figure available in the
               register). A further {fmtNumber(
@@ -274,7 +243,7 @@ export default function CharitySurvivalIndexPage() {
             <div className="space-y-6">
               {faqs.map((faq, i) => (
                 <div key={i}>
-                  <h3 className="font-semibold text-[var(--ink)]">{faq.question}</h3>
+                  <h3 className="font-semibold text-slate-900">{faq.question}</h3>
                   <p className="mt-2">{faq.answer}</p>
                 </div>
               ))}
@@ -286,7 +255,7 @@ export default function CharitySurvivalIndexPage() {
             <ul className="list-disc space-y-1 pl-6 text-sm">
               {meta.sources.map((s) => (
                 <li key={s.url}>
-                  <a href={s.url} rel="noopener" className="text-[var(--brand-primary)] underline">
+                  <a href={s.url} rel="noopener" className="text-primary-700 underline">
                     {s.name}
                   </a>{" "}
                   ({s.publisher}, {s.licence})
@@ -296,19 +265,19 @@ export default function CharitySurvivalIndexPage() {
             <p className="text-sm">
               <a
                 href={`${PAGE_PATH}/data`}
-                className="font-semibold text-[var(--brand-primary)] underline"
+                className="font-semibold text-primary-700 underline"
               >
                 Download the cohort survival data as CSV
               </a>{" "}
               (free to reuse with attribution to {site.name}).
             </p>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Related:{" "}
-              <Link href="/research/uk-small-charity-finance-index" className="text-[var(--brand-primary)] underline">
+              <Link href="/research/uk-small-charity-finance-index" className="text-primary-700 underline">
                 UK Small Charity Finance Index
               </Link>{" "}
               |{" "}
-              <Link href="/research/uk-charity-scrutiny-cliff" className="text-[var(--brand-primary)] underline">
+              <Link href="/research/uk-charity-scrutiny-cliff" className="text-primary-700 underline">
                 Scrutiny Cliff-Edge Monitor
               </Link>
             </p>
@@ -324,7 +293,6 @@ export default function CharitySurvivalIndexPage() {
             />
           </div>
         </div>
-      </main>
     </>
   );
 }

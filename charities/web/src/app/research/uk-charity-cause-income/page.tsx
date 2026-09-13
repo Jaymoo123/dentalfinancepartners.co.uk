@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { MiniCapture } from "@/components/calculators/MiniCapture";
@@ -9,8 +8,9 @@ import {
   fmtGbp,
   type CauseIncomeSnapshot,
 } from "@/lib/research/cause-income";
-import { buildFaqJsonLd, buildBreadcrumbJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd } from "@/lib/schema";
 import snapshot from "@/data/charity-cause-income.json";
+import { PageHero, ResearchSection as Section, Stat } from "@/components/hubs/HubParts";
 
 const data = snapshot as unknown as CauseIncomeSnapshot;
 const { meta, cause_income } = data;
@@ -92,45 +92,22 @@ const faqs = [
   },
 ];
 
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl border border-[var(--border)] bg-white p-5 shadow-sm">
-      <div className="text-3xl font-bold text-[var(--brand-primary)] sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-[var(--muted)]">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section
-      id={id}
-      className="scroll-mt-24 border-t border-[var(--border)] py-10 first:border-t-0"
-    >
-      <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-[var(--ink-soft)]">
-        {children}
-      </div>
-    </section>
-  );
-}
-
 // ponytail: CSS-width bars, no chart lib for a 24-row ranked list.
 function IncomeChart() {
   return (
     <div className="mt-2 space-y-2" aria-hidden="true">
       {byIncome.map((row) => (
         <div key={row.cause_code} className="flex items-center gap-3 text-sm">
-          <div className="w-56 shrink-0 truncate text-[var(--ink-soft)]" title={row.cause_label}>
+          <div className="w-56 shrink-0 truncate text-slate-700" title={row.cause_label}>
             {row.cause_label}
           </div>
           <div className="flex-1">
             <div
-              className="h-4 rounded-sm bg-[var(--brand-primary)]"
+              className="h-4 rounded-sm bg-primary-600"
               style={{ width: `${Math.max(4, (row.median_income / maxIncome) * 100)}%` }}
             />
           </div>
-          <div className="w-20 shrink-0 text-right tabular-nums text-[var(--ink)]">
+          <div className="w-20 shrink-0 text-right tabular-nums text-slate-900">
             {fmtGbp(row.median_income)}
           </div>
         </div>
@@ -148,40 +125,32 @@ export default function CharityCauseIncomePage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: buildBreadcrumbJsonLd([
-            { label: "Home", href: "/" },
-            { label: "Research", href: "/research" },
-            { label: "UK Charity Cause Income and Reserves Health Index" },
-          ]),
-        }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
 
-      <main>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
-            <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
-              UK Charity Cause Income and Reserves Health Index
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-white/85">
+      <PageHero
+        tone="dark"
+        eyebrow="Research"
+        title="UK Charity Cause Income and Reserves Health Index"
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Research", href: "/research" },
+          { label: "UK Charity Cause Income and Reserves Health Index" },
+        ]}
+      >
+        <p>
               Which charitable causes bring in the most income, and which run closest to the wire on
               reserves? Median income and free-reserves health for every cause classification on the
               England and Wales register, compiled from the Charity Commission full-register extract.
               Updated {generatedDate}.
-            </p>
-            <nav className="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/70">
-              <a href="#income-by-cause" className="hover:text-white">Income by cause</a>
-              <a href="#reserves-by-cause" className="hover:text-white">Reserves health</a>
-              <a href="#faq" className="hover:text-white">FAQ</a>
-              <a href="#methodology" className="hover:text-white">Methodology</a>
-            </nav>
-          </div>
-        </section>
+        </p>
+          <nav className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-slate-300">
+            <a href="#income-by-cause" className="rounded py-0.5 hover:text-white">Income by cause</a>
+            <a href="#reserves-by-cause" className="rounded py-0.5 hover:text-white">Reserves health</a>
+            <a href="#faq" className="rounded py-0.5 hover:text-white">FAQ</a>
+            <a href="#methodology" className="rounded py-0.5 hover:text-white">Methodology</a>
+          </nav>
+      </PageHero>
 
         <div className="mx-auto max-w-4xl px-6">
           <div className="-mt-8 grid gap-4 sm:grid-cols-3">
@@ -219,7 +188,7 @@ export default function CharityCauseIncomePage() {
             <div className="overflow-x-auto">
               <table className="mt-6 w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                  <tr className="border-b border-slate-200 text-left text-slate-600">
                     <th className="py-2 pr-4 font-semibold">Charitable cause</th>
                     <th className="py-2 pr-4 text-right font-semibold">Charities</th>
                     <th className="py-2 pr-4 text-right font-semibold">Median income</th>
@@ -229,12 +198,12 @@ export default function CharityCauseIncomePage() {
                 </thead>
                 <tbody>
                   {byIncome.map((row) => (
-                    <tr key={row.cause_code} className="border-b border-[var(--border)]/60">
+                    <tr key={row.cause_code} className="border-b border-slate-200/60">
                       <td className="py-2 pr-4 font-medium">{row.cause_label}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">
                         {fmtNumber(row.charity_count)}
                       </td>
-                      <td className="py-2 pr-4 text-right tabular-nums font-semibold text-[var(--brand-primary)]">
+                      <td className="py-2 pr-4 text-right tabular-nums font-semibold text-primary-700">
                         {fmtGbp(row.median_income)}
                       </td>
                       <td className="py-2 pr-4 text-right tabular-nums">
@@ -252,7 +221,7 @@ export default function CharityCauseIncomePage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Source: Charity Commission full-register extract (OGL v3.0), {generatedDate}. Median
               income is each charity&apos;s latest reported gross income. Registered, main charities
               only.
@@ -270,7 +239,7 @@ export default function CharityCauseIncomePage() {
             <div className="overflow-x-auto">
               <table className="mt-2 w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                  <tr className="border-b border-slate-200 text-left text-slate-600">
                     <th className="py-2 pr-4 font-semibold">Charitable cause</th>
                     <th className="py-2 pr-4 text-right font-semibold">Median reserves (months)</th>
                     <th className="py-2 text-right font-semibold">Under 3 months of reserves</th>
@@ -278,14 +247,14 @@ export default function CharityCauseIncomePage() {
                 </thead>
                 <tbody>
                   {byUnderReserved.map((row) => (
-                    <tr key={row.cause_code} className="border-b border-[var(--border)]/60">
+                    <tr key={row.cause_code} className="border-b border-slate-200/60">
                       <td className="py-2 pr-4 font-medium">{row.cause_label}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">
                         {row.median_reserves_months != null
                           ? `${row.median_reserves_months} mo`
                           : "n/a"}
                       </td>
-                      <td className="py-2 text-right tabular-nums font-semibold text-[var(--brand-primary)]">
+                      <td className="py-2 text-right tabular-nums font-semibold text-primary-700">
                         {row.under_3_months_reserves_pct != null
                           ? `${row.under_3_months_reserves_pct}%`
                           : "n/a"}
@@ -295,7 +264,7 @@ export default function CharityCauseIncomePage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Source: Charity Commission full-register extract (OGL v3.0), {generatedDate}. Free
               reserves are the trustees&apos; own declared reserves figure from the most recent
               annual return (part B), divided by latest expenditure. &quot;Under 3 months&quot; is
@@ -307,7 +276,7 @@ export default function CharityCauseIncomePage() {
             <div className="space-y-6">
               {faqs.map((faq, i) => (
                 <div key={i}>
-                  <h3 className="font-semibold text-[var(--ink)]">{faq.question}</h3>
+                  <h3 className="font-semibold text-slate-900">{faq.question}</h3>
                   <p className="mt-2">{faq.answer}</p>
                 </div>
               ))}
@@ -319,7 +288,7 @@ export default function CharityCauseIncomePage() {
             <ul className="list-disc space-y-1 pl-6 text-sm">
               {meta.sources.map((s) => (
                 <li key={s.url}>
-                  <a href={s.url} rel="noopener" className="text-[var(--brand-primary)] underline">
+                  <a href={s.url} rel="noopener" className="text-primary-700 underline">
                     {s.name}
                   </a>{" "}
                   ({s.publisher}, {s.licence})
@@ -329,23 +298,23 @@ export default function CharityCauseIncomePage() {
             <p className="text-sm">
               <a
                 href={`${PAGE_PATH}/data`}
-                className="font-semibold text-[var(--brand-primary)] underline"
+                className="font-semibold text-primary-700 underline"
               >
                 Download the cause income and reserves data as CSV
               </a>{" "}
               (free to reuse with attribution to {site.name}).
             </p>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Related:{" "}
-              <Link href="/research/uk-small-charity-finance-index" className="text-[var(--brand-primary)] underline">
+              <Link href="/research/uk-small-charity-finance-index" className="text-primary-700 underline">
                 UK Small Charity Finance Index
               </Link>{" "}
               |{" "}
-              <Link href="/research/uk-charity-survival-index" className="text-[var(--brand-primary)] underline">
+              <Link href="/research/uk-charity-survival-index" className="text-primary-700 underline">
                 UK Charity Survival and Longevity Index
               </Link>{" "}
               |{" "}
-              <Link href="/research/uk-charity-scrutiny-cliff" className="text-[var(--brand-primary)] underline">
+              <Link href="/research/uk-charity-scrutiny-cliff" className="text-primary-700 underline">
                 Scrutiny Cliff-Edge Monitor
               </Link>
             </p>
@@ -361,7 +330,6 @@ export default function CharityCauseIncomePage() {
             />
           </div>
         </div>
-      </main>
     </>
   );
 }

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY } from "@accounting-network/web-shared/design/layout-utils";
 import { siteConfig } from "@/config/site";
-import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 
 const company = siteConfig.company;
 
@@ -31,10 +31,13 @@ export default function PrivacyPolicyPage() {
           { label: "Home", href: "/" },
           { label: "Privacy policy" },
         ]}
+        siteUrl={siteConfig.url}
       />
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-neutral-500">Last updated: 10 August 2026</p>
-      <div className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
+      <header className="border-b border-slate-200 pb-8">
+        <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">Privacy policy</h1>
+        <p className="mt-3 text-sm text-slate-600">Last updated: 10 August 2026</p>
+      </header>
+      <div className="mt-10 space-y-6 text-base leading-relaxed text-slate-700">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
           &quot;we&quot;, &quot;us&quot; and &quot;our&quot;, collects, uses and protects your personal information
@@ -43,12 +46,12 @@ export default function PrivacyPolicyPage() {
           Act 2018.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">1. Who we are (data controller)</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">1. Who we are (data controller)</h2>
         <p>
           The data controller responsible for your personal data is {company.legalName}, which trades as{" "}
           {siteConfig.name}:
         </p>
-        <ul className="list-disc space-y-2 pl-6">
+        <ul className="list-disc space-y-2 pl-6 marker:text-primary-600">
           <li><strong>Registered company name:</strong> {company.legalName}</li>
           <li><strong>Trading name:</strong> {siteConfig.name}</li>
           <li><strong>Company number:</strong> {company.number} (registered in {company.placeOfRegistration})</li>
@@ -56,12 +59,12 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           If you have any questions about this policy or wish to exercise your rights, please contact us through our{" "}
-          <Link href="/contact" className="text-[#1a5c4a] underline hover:text-[#154a3b]">contact page</Link>.
+          <Link href="/contact" className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800">contact page</Link>.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">2. What information we collect</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">2. What information we collect</h2>
         <p>We collect the following personal information through the Site:</p>
-        <ul className="list-disc space-y-2 pl-6">
+        <ul className="list-disc space-y-2 pl-6 marker:text-primary-600">
           <li>
             <strong>Enquiry forms:</strong> when you submit an enquiry, we collect your name, email address, phone
             number, your role (for example, trustee, finance officer or charity CEO), your message, and the page you
@@ -81,7 +84,7 @@ export default function PrivacyPolicyPage() {
             device and browser type, and an approximate location derived from your IP address: country, region, city and
             time zone). Our hosting provider may
             also log technical request data for security and performance. See our{" "}
-            <Link href="/cookie-policy" className="text-[#1a5c4a] underline hover:text-[#154a3b]">cookie policy</Link>{" "}
+            <Link href="/cookie-policy" className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800">cookie policy</Link>{" "}
             for detail.
           </li>
         </ul>
@@ -91,8 +94,8 @@ export default function PrivacyPolicyPage() {
           asked for.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">3. Why we use your information</h2>
-        <ul className="list-disc space-y-2 pl-6">
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">3. Why we use your information</h2>
+        <ul className="list-disc space-y-2 pl-6 marker:text-primary-600">
           <li>
             <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to regulated firms in our specialist partner network so that they can provide the advice you have requested.
           </li>
@@ -106,7 +109,7 @@ export default function PrivacyPolicyPage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-semibold text-neutral-900">4. Our lawful basis</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">4. Our lawful basis</h2>
         <p>
           When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f)
           of the UK GDPR) to handle it and to share it with regulated firms from our specialist partner
@@ -124,7 +127,7 @@ export default function PrivacyPolicyPage() {
           specifically measuring and improving the Site and keeping it secure and protected against misuse.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">5. Who we share your information with</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">5. Who we share your information with</h2>
         <p>
           When you submit an enquiry, we share information about you and your enquiry with regulated firms
           from our <strong>specialist partner network</strong>, so that they can contact you and provide the
@@ -164,7 +167,7 @@ export default function PrivacyPolicyPage() {
           does not change what you pay that firm, and does not affect the advice they give you.
         </p>
         <p>We also use the following service providers, who process data on our instructions only (as our processors):</p>
-        <ul className="list-disc space-y-2 pl-6">
+        <ul className="list-disc space-y-2 pl-6 marker:text-primary-600">
           <li><strong>Supabase:</strong> secure database hosting for form submissions (EU-hosted).</li>
           <li><strong>Vercel:</strong> website hosting and content delivery.</li>
           <li><strong>Resend:</strong> sending the emails we use to confirm your details and to respond to you.</li>
@@ -185,7 +188,7 @@ export default function PrivacyPolicyPage() {
         </p>
         <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">6. How long we keep your information</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">6. How long we keep your information</h2>
         <p>
           We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry.
           After that we anonymise it: your name, email address, telephone number and the message you sent are stripped out
@@ -194,9 +197,9 @@ export default function PrivacyPolicyPage() {
           unsubscribe. Our records of what you were shown and any consent you gave are kept for up to six years, under access controls, so that we can demonstrate the lawful basis for using it.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">7. Your rights</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">7. Your rights</h2>
         <p>Under UK data protection law you have the right to:</p>
-        <ul className="list-disc space-y-2 pl-6">
+        <ul className="list-disc space-y-2 pl-6 marker:text-primary-600">
           <li><strong>Access</strong> the personal data we hold about you.</li>
           <li><strong>Rectify</strong> inaccurate or incomplete data.</li>
           <li><strong>Erase</strong> your data in certain circumstances.</li>
@@ -210,7 +213,7 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           To exercise any of these rights, please contact us through our{" "}
-          <Link href="/contact" className="text-[#1a5c4a] underline hover:text-[#154a3b]">contact page</Link>. We will
+          <Link href="/contact" className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800">contact page</Link>. We will
           respond within one month.
         </p>
         <p>
@@ -220,21 +223,21 @@ export default function PrivacyPolicyPage() {
             href="https://ico.org.uk/make-a-complaint/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#1a5c4a] underline hover:text-[#154a3b]"
+            className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800"
           >
             ico.org.uk/make-a-complaint
           </a>
           . We would, however, welcome the chance to address your concerns first.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">8. Cookies and analytics</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">8. Cookies and analytics</h2>
         <p>
           We use cookies and similar technologies for analytics, so we can understand how the Site is used and improve it.
           For full details of what we use and how to manage or opt out, please see our{" "}
-          <Link href="/cookie-policy" className="text-[#1a5c4a] underline hover:text-[#154a3b]">cookie policy</Link>.
+          <Link href="/cookie-policy" className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800">cookie policy</Link>.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">9. How we protect your data and international transfers</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">9. How we protect your data and international transfers</h2>
         <p>
           Form submissions are stored securely and access is restricted to authorised staff only. Some of our service
           providers (for example, Vercel) are based outside the UK and EEA. Where data is transferred internationally, we
@@ -242,16 +245,16 @@ export default function PrivacyPolicyPage() {
           Contractual Clauses.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">10. Changes to this policy</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">10. Changes to this policy</h2>
         <p>
           We may update this privacy policy from time to time. The &quot;Last updated&quot; date at the top of this page
           shows when it was last revised. We encourage you to review this policy periodically.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">11. Contact us</h2>
+        <h2 className="mt-10 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">11. Contact us</h2>
         <p>
           If you have any questions about this privacy policy or how we handle your data, please contact us through our{" "}
-          <Link href="/contact" className="text-[#1a5c4a] underline hover:text-[#154a3b]">contact page</Link>.
+          <Link href="/contact" className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800">contact page</Link>.
         </p>
       </div>
     </div>

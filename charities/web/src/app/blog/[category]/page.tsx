@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
+import { getAllPosts, getAllCategories, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
+import { btnPrimary, btnSecondary } from "@/components/ui/layout-utils";
+import { BLOG_CTA } from "@/components/blog/blog-cta";
+import { BlogCategoryHub } from "@accounting-network/web-shared/design/blog/BlogCategoryHub";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -14,12 +17,17 @@ export async function generateStaticParams() {
   return getAllCategories().map((c) => ({ category: c.slug }));
 }
 
+/** The published hub description, one definition for metadata and the hero standfirst. */
+function hubDescription(name: string): string {
+  return `Practical guides on ${name.toLowerCase()} for UK charities, CICs and social enterprises.`;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params;
   const cat = getAllCategories().find((c) => c.slug === category);
   if (!cat) return {};
   const title = `${cat.name} | Charity Accounting Guides`;
-  const description = `Practical guides on ${cat.name.toLowerCase()} for UK charities, CICs and social enterprises.`;
+  const description = hubDescription(cat.name);
   const url = `${siteConfig.url}/blog/${category}`;
   return {
     title,
@@ -34,26 +42,67 @@ export default async function CategoryPage({ params }: Props) {
   const cat = getAllCategories().find((c) => c.slug === category);
   if (!cat) notFound();
 
-  const posts = getAllPosts().filter((p) => getCategorySlug(p) === category);
+  const posts = getAllPosts()
+    .filter((p) => getCategorySlug(p) === category)
+    .map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      summary: p.summary,
+      date: p.date,
+      readTime: calculateReadTime(p.contentHtml),
+    }));
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
-      <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
-        <Link href="/blog" className="hover:underline">Blog</Link> / {cat.name}
-      </p>
-      <h1 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900">{cat.name}</h1>
-      <ul className="mt-10 space-y-8">
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blog/${category}/${post.slug}`} className="group block">
-              <h2 className="text-xl font-semibold text-neutral-900 group-hover:underline">
-                {post.title}
-              </h2>
-              <p className="mt-2 text-sm text-neutral-600">{post.metaDescription}</p>
+    <>
+      <BlogCategoryHub
+        categoryName={cat.name}
+        // No `heading` prop: the h1 must stay the published category name, and
+        // BlogCategoryHub.tsx:161 renders `heading ?? categoryName`. Passing
+        // nothing is what keeps the h1 byte-identical to the pre-port page.
+        categorySlug={category}
+        collectionName={`${cat.name} | Charity Accounting Guides`}
+        description={hubDescription(cat.name)}
+        intro={hubDescription(cat.name)}
+        // P3-4 authors the per-hub essentials blocks (src/data/blog-hub-copy.ts).
+        // Empty until then, and BlogCategoryHub.tsx:189 drops the whole section
+        // rather than rendering an empty heading.
+        sections={[]}
+        cta={{ heading: BLOG_CTA.heading, body: BLOG_CTA.body, submitLabel: BLOG_CTA.button }}
+        posts={posts}
+        categories={getAllCategories()}
+        siteUrl={siteConfig.url}
+        // Empty by instruction. The default is Property's three ("Property tax
+        // only", a fee promise, a staffing promise), none of which is true here,
+        // and this site has just had fabricated social proof removed. Never
+        // substitute invented replacements.
+        proofPoints={[]}
+        libraryNote={`${posts.length} ${posts.length === 1 ? "article" : "articles"} on ${cat.name.toLowerCase()}.`}
+        // NOT a lead form. The pre-port hubs carried no capture surface, and
+        // adding one is an owner gate (PHASE_PLAN.md §7), so this slot holds the
+        // same two published routes the rest of the site sends people to. Count
+        // in equals count out across the cutover.
+        form={
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Link
+              href="/contact"
+              data-cta={`blog_hub_${category}_contact`}
+              data-cta-placement="hub_cta_panel"
+              data-cta-goal="contact"
+              className={btnPrimary}
+            >
+              {BLOG_CTA.button}
             </Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+            <Link
+              href="/book"
+              data-cta={`blog_hub_${category}_book`}
+              data-cta-placement="hub_cta_panel"
+              className={btnSecondary}
+            >
+              Book a call
+            </Link>
+          </div>
+        }
+      />
+    </>
   );
 }

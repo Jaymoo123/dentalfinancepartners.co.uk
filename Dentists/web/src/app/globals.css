@@ -64,6 +64,12 @@
      DESIGN_DELTA s1 records under "semantic overrides": it put gold on text
      surfaces the kit assumes are safe. Navy ground with a white label measures
      17.15 and is the approved resolution. */
+  /* Bare --primary. The kit's content components (ReadingProgress bar fill,
+     TableOfContents active state) paint with var(--primary) and NO fallback,
+     so without this the whole declaration is invalid at computed-value time:
+     the progress bar renders transparent. Navy, same value as --brand-primary
+     and as --color-primary-900. */
+  --primary: var(--navy);
   --brand-primary: var(--navy);
   --brand-primary-strong: var(--navy-soft);
   --brand-on-primary: #ffffff;

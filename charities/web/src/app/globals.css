@@ -18,10 +18,188 @@
   --brand-primary: #1a5c4a;
   --brand-primary-strong: #1a5c4a;
   --brand-on-primary: #ffffff;
+
+  /* BARE tokens the kit paints with and supplies NO fallback for, so an
+     undeclared name invalidates the whole declaration and the element renders
+     with nothing (transparent progress fill, colourless TOC active state):
+       --primary        design/blog/ReadingProgress.tsx:36,
+                        design/blog/TableOfContents.tsx:72, :102,
+                        design/blog/BlogListWithSearch.tsx:123, :136,
+                        design/primitives/NumberedPagination.tsx:32, :60
+       --accent-strong  design/blog/BlogListWithSearch.tsx:171, :180
+     Declared site-wide here rather than on the blog subtree, because
+     NumberedPagination is a primitive and any surface may mount it.
+     Mapped to the brand: --brand-primary is #1a5c4a = --color-primary-600,
+     7.85 on white as text, as a button ground and as a graphic, clearing the
+     4.5:1 and 3:1 floors. NumberedPagination.tsx:60 paints white on
+     --primary as the current page: 7.85, PASS.
+     prose-standard.css:138 already resolves --accent-strong then --primary
+     through a chain ending at --brand-primary, so these make the bare readers
+     agree with the chain rather than introduce a second green.
+     Neither name is a Tailwind v4 theme namespace (--color-*, --radius-*,
+     --font-*, --spacing-*, --text-*, --leading-*, --shadow-*), so both are
+     safe in an unlayered :root. */
+  --primary: var(--brand-primary);
+  --accent-strong: var(--brand-primary-strong);
+
+  /* Radius chain root, Property standard (Property/web/src/app/globals.css:70).
+     Deliberately a BARE name: --radius is not a Tailwind v4 theme namespace, so
+     it is safe in an unlayered :root. The namespaced --radius-sm/md/lg/xl that
+     derive from it live in @theme below, because .rounded-xl READS
+     var(--radius-xl) and a same-named property out here would shadow the
+     layered theme value and invert the whole scale.
+     0rem gives --radius-xl = 4px, the house square corner. Values match
+     packages/web-shared/design/globals-standard.css:38-42 exactly, so importing
+     that file later is a no-op rather than a fight. */
+  --radius: 0rem;
+
+  /* Calculator warning semantics, read by the shared <Calculator> renderer
+     (packages/web-shared/tools/components/Calculator.tsx:131, :141), which this
+     site already mounts via src/components/calculators/CalculatorClient.tsx:9.
+     Both usages sit INSIDE the slate-900 (#0f172a) result panel.
+     Declared because the kit FALLBACKS fail: amber-400 #fbbf24 ground with
+     #451a03 label measures 4.35 against a 4.5 text floor. Measured, self-tested:
+       #b45309 chip on #0f172a        3.56  (graphic, floor 3:1)
+       #ffffff label on #b45309       5.02  (text, floor 4.5:1)
+       #fbbf24 accent text on #0f172a 10.69 (text, floor 4.5:1)
+     Not namespaced names, so safe unlayered. */
+  --calc-warn-bg: #b45309;    /* amber-700 */
+  --calc-warn-fg: #ffffff;
+  --calc-warn-accent: #fbbf24; /* amber-400, on-dark */
 }
 
-body {
-  background: var(--background);
-  color: var(--ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+@theme {
+  /* Radius scale. MUST be here, not in :root (see the --radius comment above). */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  /* Read by packages/web-shared/components/ui/layout-utils.ts:43 as
+     rounded-[var(--btn-radius,9999px)]. Undeclared, every kit button arrives as
+     a 9999px pill next to this site's square local buttons
+     (charities/web/src/components/ui/layout-utils.ts:18). */
+  --btn-radius: var(--radius-xl);
+
+  /* ------------------------------------------------------------
+     primary-* ramp, generated from the brand #1a5c4a.
+
+     Derivation. #1a5c4a converts to oklch(42.83% 0.0723 171.07). The ramp keeps
+     that hue fixed at 171.07 and borrows Tailwind 4.3.0's emerald LIGHTNESS and
+     CHROMA curve (node_modules/tailwindcss/theme.css), re-anchored so that step
+     600 IS the brand hex, because 600 is the kit's button ground
+     (packages/web-shared/design/layout-utils.ts:31) and the homepage already
+     hardcodes #1a5c4a 95 times. Chroma is scaled by the emerald ratio
+     C = 0.0723 * (C_emerald_step / C_emerald_600). Lightness below 600 is
+     scaled proportionally (L = 0.4283 * L_em / 0.596); above 600 it is linear
+     from the brand to 98% at step 50. Step 700 lands on #16483a, within a
+     rounding step of the hover green #154a3b this site already paints.
+
+     Steps 300 and 950 are NOT defined: nothing in packages/web-shared or in
+     charities/web/src references them (verified by grep for
+     `-primary-<step>`), and the house rule is no tokens nothing reads.
+
+     Contrast: WCAG 2.x ratios computed by my own oklch -> sRGB -> relative
+     luminance converter against the INSTALLED Tailwind 4.3.0 theme table, not
+     the v3 hex table and not circulated figures. Contrast is symmetric, so each
+     colour has ONE ratio; what differs per role is the FLOOR.
+     ------------------------------------------------------------ */
+  /* 50: light ground under primary-600/700/900 text (SiteHeader.tsx:296, :326,
+     :542; ComparisonTable.tsx:52). Floor 4.5:1 as a ground under text.
+     600 on it 7.44, 700 on it 9.79, 900 on it 13.99. PASS. */
+  --color-primary-50: oklch(98% 0.010 171.066);   /* #f2fbf7 */
+  /* 100 and 200: hairline rings and column borders only
+     (CoverageCards.tsx:83, ComparisonTable.tsx:52). Floor 3:1 applies only if a
+     border is the sole indicator of a control; these are decorative, so WCAG
+     1.4.11 exempts them. Measured on white: 100 = 1.19, 200 = 1.44. ADVISORY,
+     recorded rather than hidden. */
+  --color-primary-100: oklch(93.8% 0.026 171.066); /* #daf1e8 */
+  --color-primary-200: oklch(87.3% 0.046 171.066); /* #b8e0d1 */
+  /* 400: the ON-DARK step. Text on slate-900 #0f172a (SiteFooter.tsx:170,
+     page-blocks.tsx:74, StickyCTA.tsx:137) and graphics on the same ground
+     (SiteFooter.tsx:150, :155, TestimonialsSection.tsx:69). 6.26 against a
+     4.5:1 text floor and a 3:1 graphic floor. PASS both. */
+  --color-primary-400: oklch(67.2% 0.088 171.066); /* #57a88f */
+  /* 500: tint and ring only, always at alpha (LeadCTAPanel.tsx:170). Floor 3:1
+     graphic. 4.23 on white, 4.22 on slate-900. PASS. */
+  --color-primary-500: oklch(57.2% 0.085 171.066); /* #3b8871 */
+  /* 600: THE BRAND. Button ground under white (7.85, floor 4.5:1) and text on
+     white (7.85, floor 4.5:1) and graphic on white (7.85, floor 3:1). One
+     ratio, three floors, all cleared. Identical to --brand-primary, so the kit
+     wordmark and the kit CTA render the same green and
+     SiteHeader.wordmarkAccentColor does not need passing. */
+  --color-primary-600: oklch(42.8% 0.072 171.066); /* #1a5c4a */
+  /* 700: hover ground and light-ground text. White on it 10.33 (floor 4.5:1),
+     it on white 10.33 (floor 4.5:1). PASS. */
+  --color-primary-700: oklch(36.5% 0.059 171.066); /* #16483a */
+  /* 800: active ground. White on it 12.86, floor 4.5:1. PASS. */
+  --color-primary-800: oklch(31% 0.047 171.066);  /* #13382d */
+  /* 900: heavy text on white or on primary-50 (ComparisonTable.tsx:60).
+     14.76 on white, 13.99 on primary-50, floor 4.5:1. PASS. */
+  --color-primary-900: oklch(27.2% 0.038 171.066); /* #102d24 */
+}
+
+/* ============================================================
+   LAYERING (playbook T30/T31). Tailwind v4 puts every generated utility in a
+   layer, and UNLAYERED author CSS beats every layered rule whatever its
+   specificity. body used to sit outside a layer here, so its background, color
+   and font-family defeated every bg-*, text-* and font-* utility written on
+   <body>. Moved into @layer base by this package (P0D_CSS_CONTRAST.md 1.4)
+   before the kit chrome starts writing utilities onto that element.
+   ============================================================ */
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  /* In-page anchor targets. The kit header is sticky from this phase on, so any
+     element a "#id" link lands on must keep clear air above it or its own
+     heading hides underneath. The pre-port baseline measured scroll-margin-top
+     0px on every blog reference anchor. 6rem = 96px = the scroll-mt-24 the kit
+     puts on <main id="main">.
+     :where() holds specificity at 0 and @layer base sits below utilities, so an
+     explicit scroll-mt-* utility on a specific heading still wins twice over. */
+  :where([id]) {
+    scroll-margin-top: 6rem;
+  }
+}
+
+/* ============================================================
+   HEADER PRIMARY CTA VISIBILITY
+   The kit header composes `${btnPrimary} hidden ... lg:inline-flex` on the
+   desktop primary CTA (SiteHeader.tsx:473), and btnPrimary itself OPENS with
+   `inline-flex` (design/layout-utils.ts:31). The element therefore carries
+   `hidden` and `inline-flex` as two unmodified, equal-specificity utilities,
+   and Tailwind emits `.hidden` 79 bytes BEFORE `.inline-flex` in every built
+   stylesheet measured (generalist, Solicitors, Dentists, Property, and this
+   site's own pre-port bundle). `.inline-flex` wins on source order, so `hidden`
+   is a dead no-op and the CTA would render next to the burger from 0 to 1023px.
+
+   Fixed here, not in packages/web-shared: SiteHeader.tsx is shared by every
+   site and changing it is an owner decision (trap 12). This override becomes
+   unnecessary the moment that owner decision lands, i.e. when SiteHeader stops
+   composing a display-toggling variant on top of a recipe that already fixes
+   display (strip the recipe's `inline-flex` before composing). Delete this
+   block then.
+
+   Valid only while this site leaves SiteHeader.ctaIds at the kit default, since
+   the selector keys on data-cta="header_book" (SiteHeader.tsx:469-470). The
+   drawer CTA carries data-cta-placement="header_mobile" and is untouched.
+
+   LAYERED deliberately: inside @layer utilities it does not out-rank arbitrary
+   Tailwind utilities, and within the layer it wins on specificity alone
+   (0,2,2 vs 0,1,0).
+   ============================================================ */
+
+@layer utilities {
+  header a[data-cta-placement="header"][data-cta="header_book"] {
+    display: none;
+  }
+
+  @media (min-width: 64rem) {
+    header a[data-cta-placement="header"][data-cta="header_book"] {
+      display: inline-flex;
+    }
+  }
 }

@@ -120,7 +120,7 @@ export function BlogListWithSearch({
               placeholder="Search articles..."
               value={searchQuery}
               onChange={(e) => handleSearchChange(e.target.value)}
-              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+              className={`w-full min-h-[48px] pl-12 pr-4 py-3 text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] placeholder:text-[var(--muted)] transition-colors focus:border-[var(--primary,var(--brand-primary,#0f172a))] focus:outline-none ${focusRing}`}
             />
           </div>
         </div>
@@ -133,7 +133,7 @@ export function BlogListWithSearch({
             id="blog-sort"
             value={sortBy}
             onChange={(e) => handleSortChange(e.target.value as SortOption)}
-            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary)] focus:outline-none ${focusRing}`}
+            className={`min-h-[48px] px-4 py-3 text-sm sm:text-base rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] transition-colors focus:border-[var(--primary,var(--brand-primary,#0f172a))] focus:outline-none ${focusRing}`}
           >
             <option value="date-desc">Newest First</option>
             <option value="date-asc">Oldest First</option>
@@ -168,7 +168,7 @@ export function BlogListWithSearch({
               return (
                 <li key={p.slug}>
                   <article className="rounded-xl bg-[var(--surface)] p-6 shadow-sm ring-1 ring-slate-200/70 transition-shadow hover:shadow-md sm:p-7">
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong)] sm:text-xs">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--accent-strong,var(--brand-primary-strong,var(--primary,var(--brand-primary,#0f172a))))] sm:text-xs">
                       {p.category}
                     </p>
                     {/* Site sans at the standard card tier, not serif: the serif
@@ -177,7 +177,7 @@ export function BlogListWithSearch({
                     <h2 className="mt-3 text-base font-bold! tracking-normal! leading-snug! text-[var(--ink)] sm:text-lg">
                       <Link
                         href={`/blog/${p.categorySlug}/${p.slug}`}
-                        className={`hover:text-[var(--accent-strong)] transition-colors ${focusRing} rounded`}
+                        className={`hover:text-[var(--accent-strong,var(--brand-primary-strong,var(--primary,var(--brand-primary,#0f172a))))] transition-colors ${focusRing} rounded`}
                       >
                         {p.title}
                       </Link>

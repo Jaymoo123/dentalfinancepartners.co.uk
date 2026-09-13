@@ -24,13 +24,15 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
+import { btnPrimary } from "@accounting-network/web-shared/design/layout-utils";
 
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand,#1a5c4a)] focus:outline-none";
-const labelClass = "block text-sm font-medium text-neutral-900";
-const errorClass = "mt-2 text-xs text-red-600";
-const btnClass =
-  "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[#1a5c4a] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50";
+  "mt-2 w-full min-h-12 touch-manipulation rounded-xl border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-primary-600 focus:outline-none";
+const labelClass = "block text-sm font-bold text-slate-900";
+const errorClass = "mt-2 text-xs font-semibold text-red-700";
+// The kit primary button, forced full width. Nothing about the submit path
+// changes with it: same type="submit", same handler, same disabled logic.
+const btnClass = `${btnPrimary} w-full`;
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -222,7 +224,7 @@ export function LeadForm({
         />
       </div>
 
-      <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500" aria-live="polite">
+      <p className="text-xs font-bold uppercase tracking-wide text-slate-600" aria-live="polite">
         Step {step + 1} of 2 · {step === 0 ? "About you" : "Your details"}
       </p>
 
@@ -257,7 +259,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="message" className={labelClass}>
-              Message <span className="font-normal text-neutral-500">(optional)</span>
+              Message <span className="font-normal text-slate-600">(optional)</span>
             </label>
             <textarea
               id="message"
@@ -278,8 +280,8 @@ export function LeadForm({
             )}
           </div>
 
-          <details className="rounded-lg border border-neutral-200 bg-[#fafaf9]">
-            <summary className="cursor-pointer select-none px-4 py-3 text-sm font-medium text-neutral-500 hover:text-neutral-900">
+          <details className="rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
+            <summary className="cursor-pointer select-none px-4 py-3 text-sm font-semibold text-slate-600 hover:text-slate-900">
               Optional: a bit more detail (helps us prepare)
             </summary>
             <div className="space-y-4 px-4 pb-4 pt-2">
@@ -342,7 +344,7 @@ export function LeadForm({
 
       {step === 1 && (
         <>
-          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-semibold text-neutral-900 outline-none">
+          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-bold text-slate-900 outline-none">
             Where should we send our reply?
           </h3>
 
@@ -420,26 +422,26 @@ export function LeadForm({
           {/* Data-sharing acknowledgement (legitimate interests, not consent):
               submitting the enquiry is the affirmative act, so this is shown
               as a notice, not a tick-box. */}
-          <p className="text-xs leading-relaxed text-neutral-600">
+          <p className="text-xs leading-relaxed text-slate-600">
             {siteConfig.leadConsentText} See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2">
               Privacy Policy
             </a>
             .
           </p>
 
           {errorMessage && (
-            <div role="alert" className="rounded-md border border-red-200 bg-red-50 p-4">
+            <div role="alert" className="rounded-xl bg-red-50 p-4 ring-1 ring-red-200">
               <p className="text-sm text-red-800">{errorMessage}</p>
             </div>
           )}
 
           {status === "success" && !redirectOnSuccess && (
-            <div role="status" className="rounded-md border border-emerald-200 bg-emerald-50 p-4">
-              <p className="text-sm font-medium text-emerald-900">
+            <div role="status" className="rounded-xl bg-primary-50 p-4 ring-1 ring-primary-600/40">
+              <p className="text-sm font-bold text-slate-900">
                 Thanks. We&apos;ll be in touch.
               </p>
-              <p className="mt-2 text-sm text-emerald-900">
+              <p className="mt-2 text-sm leading-relaxed text-slate-700">
                 For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it
                 may be their team who gets in touch.
               </p>
@@ -457,13 +459,13 @@ export function LeadForm({
             <button
               type="button"
               onClick={() => setStep(0)}
-              className="text-sm font-medium text-neutral-500 underline"
+              className="text-sm font-semibold text-slate-600 underline underline-offset-2"
             >
               Back
             </button>
           </div>
 
-          <p className="text-xs leading-relaxed text-neutral-500">
+          <p className="text-xs leading-relaxed text-slate-600">
             We store your details securely.
           </p>
         </>

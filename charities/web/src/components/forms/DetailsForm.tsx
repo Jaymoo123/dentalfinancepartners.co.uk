@@ -7,16 +7,17 @@
  * message): a lead who has already given their name only sees the phone box, and
  * vice versa. Posts to /api/leads/complete with the signed profile token.
  *
- * House style: charities ink/green tokens, no em-dashes in copy.
+ * House style: the shared kit (primary-* ramp, NoticeCard, kit buttons); no em-dashes in copy.
  */
 
 import { useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary } from "@accounting-network/web-shared/design/layout-utils";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[#1a5c4a] focus:outline-none";
+  "mt-2 w-full min-h-12 touch-manipulation rounded-xl border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-primary-600 focus:outline-none";
 
 type MissingField = "name" | "phone";
 
@@ -110,30 +111,28 @@ export default function DetailsForm({
 
   if (status === "success") {
     return (
-      <div className="rounded-lg border border-[#1a5c4a]/30 bg-[#f0f7f4] p-6 text-center">
-        <p className="text-lg font-semibold text-neutral-900">Thank you, that is everything we need</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <NoticeCard tone="primary" title="Thank you, that is everything we need">
+        <p className="text-base leading-relaxed text-slate-700">
           A specialist firm from our partner network will be in touch shortly. If you would like to
           pick a time that suits you, you can book a callback below.
         </p>
         {bookingToken && (
-          <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+          <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-6`}>
             Book a callback
           </Link>
         )}
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "partial") {
     return (
-      <div className="rounded-lg border border-[#1a5c4a]/30 bg-[#f0f7f4] p-6 text-center">
-        <p className="text-lg font-semibold text-neutral-900">Thank you</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <NoticeCard tone="primary" title="Thank you">
+        <p className="text-base leading-relaxed text-slate-700">
           We have saved that. We still need {remainingLabel(remaining)}. We will pop you a quick note
           so you can add it, or you can reply to any of our messages.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
@@ -151,7 +150,7 @@ export default function DetailsForm({
 
       {needsName && (
         <div className="mb-4">
-          <label htmlFor="complete-name" className="block text-sm font-medium text-neutral-900">
+          <label htmlFor="complete-name" className="block text-sm font-bold text-slate-900">
             Full name
           </label>
           <input
@@ -166,13 +165,13 @@ export default function DetailsForm({
             className={inputClass}
             aria-invalid={!!nameError}
           />
-          {nameError && <p className="mt-1.5 text-xs font-medium text-red-600">{nameError}</p>}
+          {nameError && <p className="mt-1.5 text-xs font-semibold text-red-700">{nameError}</p>}
         </div>
       )}
 
       {needsPhone && (
         <div className="mb-4">
-          <label htmlFor="complete-phone" className="block text-sm font-medium text-neutral-900">
+          <label htmlFor="complete-phone" className="block text-sm font-bold text-slate-900">
             Phone
           </label>
           <input
@@ -187,7 +186,7 @@ export default function DetailsForm({
             className={inputClass}
             aria-invalid={!!phoneError}
           />
-          {phoneError && <p className="mt-1.5 text-xs font-medium text-red-600">{phoneError}</p>}
+          {phoneError && <p className="mt-1.5 text-xs font-semibold text-red-700">{phoneError}</p>}
         </div>
       )}
 
@@ -196,18 +195,18 @@ export default function DetailsForm({
       </button>
 
       {status === "error" && (
-        <p className="mt-3 text-sm font-semibold text-red-700">
+        <p className="mt-3 text-sm font-bold text-red-700">
           Something went wrong saving your details. Please try again.
         </p>
       )}
 
-      <p className="mt-3 text-xs text-neutral-500">
+      <p className="mt-3 text-xs text-slate-600">
         We only use this to arrange your free charity finance review. See our{" "}
         <a
           href="/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium text-[#1a5c4a] underline"
+          className="font-semibold text-primary-700 underline underline-offset-2"
         >
           Privacy Policy
         </a>

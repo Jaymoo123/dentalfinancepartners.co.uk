@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
-import {
-  btnPrimary,
-  btnOnTeal,
-  btnSecondary,
-  focusRing,
-  siteContainerLg,
-} from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
   ArrowRight,
@@ -22,6 +15,20 @@ import {
 } from "lucide-react";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { allTools, toolPath } from "@/lib/calculators/registry";
+/* Property-standard kit. The site-local src/components/ui/layout-utils.ts still
+   paints the brand as a colour literal; the kit recipes read the primary-* ramp
+   declared in globals.css @theme, which is what this rebuild is for. */
+import {
+  btnPrimary,
+  btnSecondary,
+  focusRing,
+  sectionY,
+  siteContainerLg,
+} from "@accounting-network/web-shared/design/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
+import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 
 export function generateMetadata(): Metadata {
   return {
@@ -167,6 +174,13 @@ const complianceMoments = [
   },
 ];
 
+const audienceTiles = [
+  { label: "Registered charities", href: "/services/charity-accounts" },
+  { label: "Charitable Incorporated Organisations (CIOs)", href: "/services/charity-accounts" },
+  { label: "Community Interest Companies (CICs)", href: "/for/cics" },
+  { label: "Social enterprises", href: "/for/social-enterprises" },
+];
+
 const guideLinks = [
   { title: "Audit vs independent examination", href: "/guides/audit-vs-independent-examination" },
   { title: "Charity SORP 2026", href: "/guides/charity-sorp-2026" },
@@ -182,6 +196,47 @@ const calculatorLinks = allTools().map((tool) => ({
   title: tool.name,
   href: toolPath(tool.slug),
 }));
+
+const specialistRows = [
+  {
+    area: "Independent examination",
+    detail: "Accounts prepared with the CC31 examination requirements in mind, and an independent examiner connected to your charity",
+  },
+  {
+    area: "SORP-compliant accounts",
+    detail: "Accruals accounts and trustee annual reports to the current SORP (FRS 102), updated for SORP 2026 where applicable",
+  },
+  {
+    area: "Fund accounting",
+    detail: "Restricted and unrestricted income tracked separately from the first transaction",
+  },
+  {
+    area: "Gift Aid",
+    detail: "Declaration review, HMRC claim preparation, donor benefit limit checks, GASDS for small donations",
+  },
+  {
+    area: "Charity VAT",
+    detail: "Business/non-business apportionment, partial exemption, fundraising event exemptions, eligibility declarations",
+  },
+  {
+    area: "CIC34 filing",
+    detail: "Community interest report prepared and filed at Companies House alongside the annual accounts",
+  },
+  {
+    area: "Annual return",
+    detail: "Filed within the 10-month deadline; content calibrated to the charity's income tier",
+  },
+];
+
+/* The three closing promises the "Get started" block carried as icon rows.
+   They stay on the page verbatim, as a drawn tick list, because
+   LeadCTAPanel.proofPoints is deliberately empty on this site (see receipt):
+   nothing is invented, and no fee or turnaround wording is introduced. */
+const closingPromises = [
+  "Charity and social-enterprise specialists only. Charities, CIOs, CICs and social enterprises.",
+  "Book your free, no-obligation call today. Tell us about your organisation and we will arrange a short introductory call.",
+  "England and Wales default. We flag Scotland and ask your jurisdiction upfront.",
+];
 
 const faqs = [
   {
@@ -226,6 +281,10 @@ const faqs = [
   },
 ];
 
+/** Ruled row card used by the tools and guides bands. */
+const rowLink =
+  "group flex items-center justify-between gap-4 rounded-xl bg-white px-5 py-4 text-sm font-semibold text-slate-800 ring-1 ring-slate-200/70 transition-all hover:text-primary-700 hover:ring-primary-600";
+
 export default function HomePage() {
   return (
     <>
@@ -236,38 +295,42 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
 
-      {/* ── Hero ── */}
-      <section className="relative flex items-center min-h-[520px] sm:min-h-[640px] lg:min-h-[720px] overflow-hidden bg-[#0f2e24]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f2e24] via-[#1a5c4a]/90 to-[#0a1f19]" />
-        <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
+      {/* ── 1. Hero ── */}
+      <section className="relative flex min-h-[520px] items-center overflow-hidden bg-primary-900 sm:min-h-[640px] lg:min-h-[720px]">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-600/90 to-primary-900" />
+        <div className={`${siteContainerLg} relative z-10 w-full py-16 sm:py-20`}>
           <div className="max-w-3xl">
-            <div className="mb-6 inline-flex items-center gap-2 bg-[#1a5c4a] border border-[#2d7a62] px-4 py-2 text-xs font-bold uppercase tracking-widest text-emerald-200">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white ring-1 ring-primary-500">
               <Heart className="h-3.5 w-3.5" aria-hidden />
               {siteConfig.name}
             </div>
             <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
               Specialist accountants for UK charities and social enterprises.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-emerald-100 sm:text-xl">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-200 sm:text-xl">
               Independent examination, SORP-compliant accounts, Gift Aid, charity VAT and
               trustee compliance. We work exclusively with charities, CIOs, CICs and social
               enterprises, so every engagement draws on focused sector knowledge.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+            <div className="mt-10 flex flex-col flex-wrap gap-3 sm:flex-row sm:gap-4">
+              {/* Inverted hero button, written out rather than composed from btnPrimary.
+                  btnPrimary hardcodes `text-white` and its own ground, and a composed
+                  override ties on specificity and loses on source order, which rendered
+                  this CTA white on white. Geometry below mirrors btnPrimary exactly. */}
               <Link
                 href="/contact"
-                className={`${btnPrimary} text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center bg-white text-[#1a5c4a] hover:bg-emerald-50 active:bg-emerald-100`}
+                className="inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-bold text-primary-700 transition-all duration-150 hover:bg-primary-50 hover:text-primary-800 active:bg-primary-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
               >
                 Talk to a charity accountant
               </Link>
               <Link
                 href="/services/independent-examination"
-                className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
+                className={`inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl border-2 border-white/40 bg-white/5 px-8 py-3.5 text-base font-bold text-white backdrop-blur-sm transition-all duration-150 hover:border-white/60 hover:bg-white/10 ${focusRing}`}
               >
                 Independent examination
               </Link>
             </div>
-            <div className="mt-8 flex items-center gap-2.5 text-sm text-emerald-300">
+            <div className="mt-8 flex items-center gap-2.5 text-sm text-primary-100">
               <ShieldCheck className="h-4 w-4 flex-shrink-0" aria-hidden />
               <span className="font-medium">Charities, CIOs, CICs and social enterprises only. England and Wales default.</span>
             </div>
@@ -275,19 +338,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Threshold stats bar ── */}
-      <section className="bg-[#1a5c4a] py-8 sm:py-10" aria-label="Key charity compliance thresholds">
+      {/* ── 2. Threshold stats strip ── */}
+      <section className="border-b border-slate-200 bg-white py-8 sm:py-10" aria-label="Key charity compliance thresholds">
         <div className={siteContainerLg}>
           <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {keyStats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <a
                   href={stat.href}
-                  className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono hover:text-emerald-200 transition-colors"
+                  className={`font-mono text-2xl font-bold text-slate-900 underline-offset-4 transition-colors hover:text-primary-700 hover:underline sm:text-3xl lg:text-4xl ${focusRing} rounded`}
                 >
                   {stat.value}
                 </a>
-                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-emerald-200 uppercase tracking-wider">
+                <div className="mt-1.5 text-xs font-semibold text-slate-600 sm:text-sm">
                   {stat.label}
                 </div>
               </div>
@@ -296,11 +359,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Intro strip ── */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-10 sm:py-12">
+      {/* ── 3. Lede ── */}
+      <section className="bg-slate-50 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <p className="max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
-            Most charity trustees are volunteers, not finance professionals. The Charity Commission's
+          <p className="max-w-3xl text-lg leading-relaxed text-slate-700 sm:text-xl">
+            Most charity trustees are volunteers, not finance professionals. The Charity Commission&apos;s
             compliance framework is detailed, the Gift Aid rules have real teeth, and the SORP is
             genuinely technical. We exist to take that burden off the board so trustees can focus on
             the charitable objects.
@@ -308,81 +371,90 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Who we help ── */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      {/* ── 4. Who we work with ── */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">Who we work with</div>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-            Small and medium charities, CIOs, CICs and social enterprises.
-          </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            We focus on organisations that sit below the statutory audit threshold: charities
-            that need an independent examination rather than a full audit, smaller charitable
-            companies preparing SORP-compliant accruals accounts, and CICs that need their
-            CIC34 filed alongside their Companies House accounts. Scotland: our default jurisdiction
-            is England and Wales; please see the{" "}
-            <a href="https://www.oscr.org.uk/" className="underline underline-offset-2 text-[#1a5c4a]">
-              OSCR website
-            </a>{" "}
-            for Scottish charity requirements.
-          </p>
-          <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[
-              { label: "Registered charities", href: "/services/charity-accounts" },
-              { label: "Charitable Incorporated Organisations (CIOs)", href: "/services/charity-accounts" },
-              { label: "Community Interest Companies (CICs)", href: "/for/cics" },
-              { label: "Social enterprises", href: "/for/social-enterprises" },
-            ].map((item) => (
+          <div className="max-w-3xl">
+            <Eyebrow>Who we work with</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+              Small and medium charities, CIOs, CICs and social enterprises.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-700 sm:mt-6 sm:text-lg">
+              We focus on organisations that sit below the statutory audit threshold: charities
+              that need an independent examination rather than a full audit, smaller charitable
+              companies preparing SORP-compliant accruals accounts, and CICs that need their
+              CIC34 filed alongside their Companies House accounts.
+            </p>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {audienceTiles.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className={`group block border border-neutral-200 bg-neutral-50 p-4 text-sm font-semibold text-neutral-800 hover:border-[#1a5c4a] hover:bg-[#f0f7f4] transition-all ${focusRing}`}
+                className={`group block rounded-xl bg-slate-50 p-4 text-sm font-semibold text-slate-800 ring-1 ring-slate-200/70 transition-all hover:bg-primary-50 hover:ring-primary-600 ${focusRing}`}
               >
                 {item.label}
-                <ArrowRight className="mt-2 h-4 w-4 text-neutral-400 group-hover:text-[#1a5c4a] group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="mt-2 h-4 w-4 text-slate-400 transition-all group-hover:translate-x-1 group-hover:text-primary-700" />
               </Link>
             ))}
+          </div>
+          <div className="mt-8 max-w-3xl">
+            <NoticeCard tone="slate" ground="white">
+              <p className="text-left text-sm leading-relaxed text-slate-700 sm:text-base">
+                Scotland: our default jurisdiction is England and Wales; please see the{" "}
+                <a
+                  href="https://www.oscr.org.uk/"
+                  className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800"
+                >
+                  OSCR website
+                </a>{" "}
+                for Scottish charity requirements.
+              </p>
+            </NoticeCard>
           </div>
         </div>
       </section>
 
-      {/* ── Services grid ── */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      {/* ── 5. Services grid ──
+          Not the kit CoverageCards: its cards render no link, and all six of
+          these are internal links in the homepage link floor. */}
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Our services</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight text-slate-900 sm:text-4xl">
               What we do for charities
             </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
+            <p className="mt-3 text-base leading-relaxed text-slate-700 sm:mt-4 sm:text-lg">
               Every service is built around how the Charity Commission framework, HMRC and Companies House
               work in practice for the charity and social-enterprise sector.
             </p>
           </div>
-          <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {servicesOverview.map((item) => {
               const Icon = item.Icon;
               return (
                 <Link
                   key={item.title}
                   href={item.href}
-                  className={`group block border border-neutral-200 bg-white p-6 sm:p-8 transition-all hover:border-[#1a5c4a] hover:shadow-md ${focusRing}`}
+                  className={`group flex flex-col rounded-xl bg-white p-6 ring-1 ring-slate-200/70 transition-all hover:ring-primary-600 hover:shadow-[0_18px_40px_-28px_rgba(15,23,42,0.4)] sm:p-8 ${focusRing}`}
                 >
-                  <div className="flex h-14 w-14 items-center justify-center bg-[#1a5c4a] mb-4 group-hover:bg-[#154a3b] transition-colors">
-                    <Icon className="h-7 w-7 text-white" strokeWidth={1.75} />
-                  </div>
-                  <h3 className="text-lg font-bold text-neutral-900 group-hover:text-[#1a5c4a] transition-colors">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-primary-600 ring-1 ring-primary-100">
+                    <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />
+                  </span>
+                  <h3 className="mt-4 text-base font-bold text-slate-900 group-hover:text-primary-700 sm:text-lg">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
-                  <div className="mt-4 flex items-center text-[#1a5c4a] font-semibold text-sm">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base">{item.body}</p>
+                  <span className="mt-auto flex items-center gap-2 pt-5 text-sm font-semibold text-primary-700">
                     Learn more
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
+                  </span>
                 </Link>
               );
             })}
           </div>
-          <div className="text-center mt-10">
+          <div className="mt-8 sm:mt-10">
             <Link href="/for/social-enterprises" className={btnSecondary}>
               Social enterprises
             </Link>
@@ -390,111 +462,114 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Compliance moments ── */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      {/* ── 6. Compliance moments ── */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">The moments that bring trustees to us</div>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-            The compliance points most charities hit at some stage.
-          </h2>
-          <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
+          <div className="max-w-3xl">
+            <Eyebrow>The moments that bring trustees to us</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+              The compliance points most charities hit at some stage.
+            </h2>
+          </div>
+          <div className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 md:grid-cols-2">
             {complianceMoments.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-[#1a5c4a] bg-neutral-50 p-6 sm:p-8"
+                className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8"
               >
-                <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+                <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base">{item.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Scrutiny threshold strip ── */}
-      <section className="bg-[#1a5c4a] py-10 sm:py-12" aria-label="Charity scrutiny thresholds">
+      {/* ── 7. Scrutiny thresholds table (dark band) ── */}
+      <section className={`bg-primary-900 ${sectionY}`} aria-label="Charity scrutiny thresholds">
         <div className={siteContainerLg}>
-          <div className="mb-6 text-center">
-            <h2 className="text-lg font-bold text-white sm:text-2xl">
+          <div className="max-w-3xl">
+            <Eyebrow onDark>At a glance</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight text-white sm:text-4xl">
               Charity scrutiny thresholds at a glance (England and Wales)
             </h2>
-            <p className="mt-2 text-sm text-emerald-200">
+            <p className="mt-4 text-sm leading-relaxed text-primary-100 sm:text-base">
               These figures apply to financial years ending before 30 September 2026. For years
               ending on or after that date the scrutiny gates rise: examination £40,000, qualified
               examiner and accruals £500,000, audit £1.5m income (or £500,000 income with assets
               over £5m). Scotland is regulated by OSCR with different requirements.{" "}
-              <a href="https://www.oscr.org.uk/" className="underline underline-offset-2 text-emerald-100 hover:text-white">
+              <a href="https://www.oscr.org.uk/" className="font-semibold text-white underline underline-offset-2">
                 See OSCR
               </a>
               .
             </p>
           </div>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[32rem] text-left text-sm sm:text-base border border-[#2d7a62]">
+          <div className="mt-8 overflow-x-auto rounded-xl ring-1 ring-primary-500/50 sm:mt-10">
+            <table className="w-full min-w-[32rem] text-left text-sm sm:text-base">
               <caption className="sr-only">Charity scrutiny threshold summary for England and Wales</caption>
               <thead>
-                <tr className="bg-[#154a3b] text-white">
-                  <th scope="col" className="px-4 py-3 font-bold uppercase tracking-wider text-xs sm:px-6 sm:py-4">Threshold</th>
-                  <th scope="col" className="px-4 py-3 font-bold uppercase tracking-wider text-xs sm:px-6 sm:py-4">Requirement</th>
-                  <th scope="col" className="px-4 py-3 font-bold uppercase tracking-wider text-xs sm:px-6 sm:py-4">Source</th>
+                <tr className="bg-primary-800 text-white">
+                  <th scope="col" className="px-4 py-3 text-xs font-bold uppercase tracking-wide sm:px-6 sm:py-4">Threshold</th>
+                  <th scope="col" className="px-4 py-3 text-xs font-bold uppercase tracking-wide sm:px-6 sm:py-4">Requirement</th>
+                  <th scope="col" className="px-4 py-3 text-xs font-bold uppercase tracking-wide sm:px-6 sm:py-4">Source</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-[#2d7a62] bg-[#1a5c4a]/60">
+                <tr className="border-b border-primary-500/40">
                   <th scope="row" className="px-4 py-3.5 font-semibold text-white sm:px-6 sm:py-4">
                     Income over{" "}
                     <a
                       href="https://www.gov.uk/guidance/how-to-register-your-charity-cc21b"
-                      className="underline underline-offset-2 text-emerald-200 hover:text-white"
+                      className="underline underline-offset-2 text-primary-100 hover:text-white"
                     >
                       £5,000
                     </a>
                   </th>
-                  <td className="px-4 py-3.5 text-emerald-100 sm:px-6 sm:py-4">Must register with the Charity Commission (CIOs always register)</td>
+                  <td className="px-4 py-3.5 text-primary-100 sm:px-6 sm:py-4">Must register with the Charity Commission (CIOs always register)</td>
                   <td className="px-4 py-3.5 sm:px-6 sm:py-4">
                     <a
                       href="https://www.gov.uk/guidance/how-to-register-your-charity-cc21b"
-                      className="underline underline-offset-2 text-emerald-200 hover:text-white text-xs"
+                      className="text-xs underline underline-offset-2 text-primary-100 hover:text-white"
                     >
                       CC21b
                     </a>
                   </td>
                 </tr>
-                <tr className="border-b border-[#2d7a62] bg-[#154a3b]/60">
+                <tr className="border-b border-primary-500/40 bg-primary-800/50">
                   <th scope="row" className="px-4 py-3.5 font-semibold text-white sm:px-6 sm:py-4">
                     Income over{" "}
                     <a
                       href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31"
-                      className="underline underline-offset-2 text-emerald-200 hover:text-white"
+                      className="underline underline-offset-2 text-primary-100 hover:text-white"
                     >
                       £25,000
                     </a>
                   </th>
-                  <td className="px-4 py-3.5 text-emerald-100 sm:px-6 sm:py-4">External scrutiny required: independent examination or audit (£40,000 for financial years ending on or after 30 Sep 2026)</td>
+                  <td className="px-4 py-3.5 text-primary-100 sm:px-6 sm:py-4">External scrutiny required: independent examination or audit (£40,000 for financial years ending on or after 30 Sep 2026)</td>
                   <td className="px-4 py-3.5 sm:px-6 sm:py-4">
                     <a
                       href="https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31"
-                      className="underline underline-offset-2 text-emerald-200 hover:text-white text-xs"
+                      className="text-xs underline underline-offset-2 text-primary-100 hover:text-white"
                     >
                       CC31
                     </a>
                   </td>
                 </tr>
-                <tr className="bg-[#1a5c4a]/60">
+                <tr>
                   <th scope="row" className="px-4 py-3.5 font-semibold text-white sm:px-6 sm:py-4">
                     Income over{" "}
                     <a
                       href="https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d"
-                      className="underline underline-offset-2 text-emerald-200 hover:text-white"
+                      className="underline underline-offset-2 text-primary-100 hover:text-white"
                     >
                       £1m
                     </a>
                   </th>
-                  <td className="px-4 py-3.5 text-emerald-100 sm:px-6 sm:py-4">Statutory audit mandatory (also triggered by income over £250,000 with gross assets over £3.26m; gates rise to £1.5m / £500,000 / £5m for financial years ending on or after 30 Sep 2026)</td>
+                  <td className="px-4 py-3.5 text-primary-100 sm:px-6 sm:py-4">Statutory audit mandatory (also triggered by income over £250,000 with gross assets over £3.26m; gates rise to £1.5m / £500,000 / £5m for financial years ending on or after 30 Sep 2026)</td>
                   <td className="px-4 py-3.5 sm:px-6 sm:py-4">
                     <a
                       href="https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d"
-                      className="underline underline-offset-2 text-emerald-200 hover:text-white text-xs"
+                      className="text-xs underline underline-offset-2 text-primary-100 hover:text-white"
                     >
                       CC15d / CC31
                     </a>
@@ -506,121 +581,91 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Free tools teaser ── */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      {/* ── 8. Free tools ── */}
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
-            <div>
-              <div className="section-label mb-4">Free tools</div>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
-                Calculators to help trustees understand their obligations.
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-neutral-600 sm:text-lg">
-                Our free calculators give trustees a quick read on whether they need an
-                independent examination or a full audit, how much Gift Aid their donors
-                could unlock, and what the GASDS small donations scheme adds. No sign-up,
-                no data stored.
-              </p>
-              <div className="mt-8 space-y-3">
-                {calculatorLinks.map((calc) => (
-                  <Link
-                    key={calc.href}
-                    href={calc.href}
-                    className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#1a5c4a] hover:text-[#1a5c4a] transition-all ${focusRing}`}
-                  >
-                    {calc.title}
-                    <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#1a5c4a] group-hover:translate-x-1 transition-all" />
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div>
-              <div className="section-label mb-4">Guides and resources</div>
-              <h2 className="mt-2 text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                Plain English guides for trustees and finance leads.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                In-depth guides covering the full compliance landscape: from choosing
-                the right charity structure to understanding SORP 2026.
-              </p>
-              <div className="mt-6 space-y-3">
-                {guideLinks.map((guide) => (
-                  <Link
-                    key={guide.href}
-                    href={guide.href}
-                    className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#1a5c4a] hover:text-[#1a5c4a] transition-all ${focusRing}`}
-                  >
-                    {guide.title}
-                    <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#1a5c4a] group-hover:translate-x-1 transition-all" />
-                  </Link>
-                ))}
-              </div>
-            </div>
+          <div className="max-w-3xl">
+            <Eyebrow>Free tools</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+              Calculators to help trustees understand their obligations.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-700 sm:text-lg">
+              Our free calculators give trustees a quick read on whether they need an
+              independent examination or a full audit, how much Gift Aid their donors
+              could unlock, and what the GASDS small donations scheme adds. No sign-up,
+              no data stored.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:mt-10 md:grid-cols-3">
+            {calculatorLinks.map((calc) => (
+              <Link key={calc.href} href={calc.href} className={`${rowLink} ${focusRing}`}>
+                {calc.title}
+                <ArrowRight className="h-4 w-4 shrink-0 text-slate-400 transition-all group-hover:translate-x-1 group-hover:text-primary-700" aria-hidden />
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── Why a specialist ── */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      {/* ── 9. Guides and resources ── */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">Why specialist matters</div>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-            A generalist handles your compliance.{" "}
-            <span className="text-[#1a5c4a]">We handle charity-specific accounting.</span>
-          </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            Fund accounting, restricted income, the independent examination regime, Gift Aid
-            declarations, the SORP, CIC34 reports: a generalist accountant encounters these
-            occasionally. They are the whole of what we work on.
-          </p>
-          <div className="mt-12 overflow-x-auto border border-neutral-200">
+          <div className="max-w-3xl">
+            <Eyebrow>Guides and resources</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+              Plain English guides for trustees and finance leads.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-700 sm:text-lg">
+              In-depth guides covering the full compliance landscape: from choosing
+              the right charity structure to understanding SORP 2026.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:mt-10 md:grid-cols-2">
+            {guideLinks.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className={`${rowLink} bg-slate-50 ${focusRing}`}
+              >
+                {guide.title}
+                <ArrowRight className="h-4 w-4 shrink-0 text-slate-400 transition-all group-hover:translate-x-1 group-hover:text-primary-700" aria-hidden />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 10. Why a specialist ── */}
+      <section className={`bg-slate-50 ${sectionY}`}>
+        <div className={siteContainerLg}>
+          <div className="max-w-3xl">
+            <Eyebrow>Why specialist matters</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+              A generalist handles your compliance.{" "}
+              <span className="text-primary-700">We handle charity-specific accounting.</span>
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-700 sm:mt-6 sm:text-lg">
+              Fund accounting, restricted income, the independent examination regime, Gift Aid
+              declarations, the SORP, CIC34 reports: a generalist accountant encounters these
+              occasionally. They are the whole of what we work on.
+            </p>
+          </div>
+          <div className="mt-8 overflow-x-auto rounded-xl ring-1 ring-slate-200/70 sm:mt-10">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
               <caption className="sr-only">How {siteConfig.name} handles typical charity accounting areas</caption>
               <thead>
-                <tr className="bg-[#1a5c4a] text-white">
-                  <th scope="col" className="px-4 py-3 font-bold text-sm uppercase tracking-wider sm:px-6 sm:py-4">Area</th>
-                  <th scope="col" className="px-4 py-3 font-bold text-sm uppercase tracking-wider sm:px-6 sm:py-4">Our approach</th>
+                <tr className="bg-slate-900 text-white">
+                  <th scope="col" className="px-4 py-3 text-sm font-semibold sm:px-6 sm:py-4">Area</th>
+                  <th scope="col" className="px-4 py-3 text-sm font-semibold sm:px-6 sm:py-4">Our approach</th>
                 </tr>
               </thead>
               <tbody>
-                {[
-                  {
-                    area: "Independent examination",
-                    detail: "Accounts prepared with the CC31 examination requirements in mind, and an independent examiner connected to your charity",
-                  },
-                  {
-                    area: "SORP-compliant accounts",
-                    detail: "Accruals accounts and trustee annual reports to the current SORP (FRS 102), updated for SORP 2026 where applicable",
-                  },
-                  {
-                    area: "Fund accounting",
-                    detail: "Restricted and unrestricted income tracked separately from the first transaction",
-                  },
-                  {
-                    area: "Gift Aid",
-                    detail: "Declaration review, HMRC claim preparation, donor benefit limit checks, GASDS for small donations",
-                  },
-                  {
-                    area: "Charity VAT",
-                    detail: "Business/non-business apportionment, partial exemption, fundraising event exemptions, eligibility declarations",
-                  },
-                  {
-                    area: "CIC34 filing",
-                    detail: "Community interest report prepared and filed at Companies House alongside the annual accounts",
-                  },
-                  {
-                    area: "Annual return",
-                    detail: "Filed within the 10-month deadline; content calibrated to the charity's income tier",
-                  },
-                ].map((row, i) => (
-                  <tr
-                    key={row.area}
-                    className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-neutral-50" : "bg-white"}`}
-                  >
-                    <th scope="row" className="px-4 py-3.5 font-semibold text-neutral-900 sm:px-6 sm:py-4">
+                {specialistRows.map((row, i) => (
+                  <tr key={row.area} className={i % 2 === 1 ? "bg-slate-50" : "bg-white"}>
+                    <th scope="row" className="px-4 py-3.5 font-semibold text-slate-900 sm:px-6 sm:py-4">
                       {row.area}
                     </th>
-                    <td className="px-4 py-3.5 text-neutral-600 sm:px-6 sm:py-4">{row.detail}</td>
+                    <td className="px-4 py-3.5 text-slate-700 sm:px-6 sm:py-4">{row.detail}</td>
                   </tr>
                 ))}
               </tbody>
@@ -629,107 +674,97 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Contact CTA ── */}
-      <section className="relative overflow-hidden bg-[#0f2e24]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a5c4a]/30 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
-        <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div>
-              <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-                Talk to a charity accountant
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-emerald-100">
-                Tell us about your charity, CIC or social enterprise. We will explain what
-                your organisation needs, in plain English, with no obligation.
-              </p>
-              <div className="mt-8 space-y-4">
-                {[
-                  { title: "Charity and social-enterprise specialists only", sub: "Charities, CIOs, CICs and social enterprises" },
-                  { title: "Book your free, no-obligation call today", sub: "Tell us about your organisation and we will arrange a short introductory call" },
-                  { title: "England and Wales default", sub: "We flag Scotland and ask your jurisdiction upfront" },
-                ].map((item) => (
-                  <div key={item.title} className="flex items-center gap-4 text-emerald-100">
-                    <div className="h-12 w-12 flex items-center justify-center bg-[#1a5c4a] text-white font-bold text-xl flex-shrink-0">
-                      ✓
-                    </div>
-                    <div>
-                      <div className="font-bold text-white">{item.title}</div>
-                      <div className="text-sm text-emerald-300">{item.sub}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">
-                Get in touch
-              </h3>
-              <LeadForm submitLabel="Send enquiry" />
-            </div>
-          </div>
+      {/* ── 11. Closing promises, the three rows the old "Get started" block
+              carried. Same ground and no bottom padding, so this reads as the
+              head of the conversion panel below rather than its own band. ── */}
+      <section className="bg-white pt-12 sm:pt-16 lg:pt-20">
+        <div className={siteContainerLg}>
+          <DrawnTickList
+            items={closingPromises}
+            tickClassName="text-primary-600"
+            className="max-w-3xl space-y-3 text-sm leading-relaxed text-slate-700 sm:space-y-4 sm:text-base"
+          />
         </div>
       </section>
 
-      {/* ── FAQ ── */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      {/* ── 12. Conversion panel. `contained` on a white ground, because the
+              navy variant would put a dark field directly above the dark
+              footer. `proofPoints` is deliberately EMPTY: see the receipt. ── */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Get started"
+          title="Talk to a charity accountant"
+          description="Tell us about your charity, CIC or social enterprise. We will explain what your organisation needs, in plain English, with no obligation."
+          proofPoints={[]}
+          formTitle="Get in touch"
+          form={<LeadForm submitLabel="Send enquiry" />}
+          contained
+          ground="white"
+        />
+      </div>
+
+      {/* ── 13. FAQ. Native <details>, not the kit FaqSection: the accordion
+              unmounts closed answers, and this page publishes those answers in
+              FAQ JSON-LD, so they have to stay in the server HTML. ── */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>FAQ</Eyebrow>
+            <h2 className="mb-8 text-2xl font-bold text-slate-900 sm:mb-12 sm:text-4xl">
               Common questions
             </h2>
-            <div className="space-y-3 sm:space-y-4">
-              {faqs.map((faq) => (
-                <details
-                  key={faq.question}
-                  className="group border border-neutral-200 bg-white"
-                >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-[#1a5c4a] transition-colors list-none">
-                    <span>{faq.question}</span>
-                    <span
-                      className="flex-shrink-0 text-[#1a5c4a] transition-transform group-open:rotate-45"
-                      aria-hidden
-                    >
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4">
-                    {faq.answer}
-                  </div>
-                </details>
-              ))}
-            </div>
+          </div>
+          <div className="space-y-3 sm:space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.question}
+                className="group rounded-xl bg-slate-50 ring-1 ring-slate-200/70 transition-colors open:ring-primary-600 hover:ring-primary-600"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-4 text-sm font-bold text-slate-900 transition-colors hover:text-primary-700 sm:px-6 sm:py-5 sm:text-base">
+                  <span>{faq.question}</span>
+                  <span
+                    className="flex-shrink-0 text-primary-600 transition-transform group-open:rotate-45"
+                    aria-hidden
+                  >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="border-t border-slate-200 bg-white px-4 py-4 text-sm leading-relaxed text-slate-700 sm:px-6 sm:py-5 sm:text-base">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── Blog/guides footer strip ── */}
-      <section className="border-t border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      {/* ── 14. Closing guides band ── */}
+      <section className={`border-t border-slate-200 bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="text-center max-w-3xl mx-auto">
-            <div className="section-label mb-4">Charity accounting guides</div>
-            <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow>Charity accounting guides</Eyebrow>
+            <h2 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
               Plain English guidance for trustees and finance leads.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-700 sm:text-lg">
               Articles and guides on independent examination, SORP accounts, Gift Aid,
               charity VAT, CIC filing and trustee compliance. Written for people running
               organisations, not for accountants.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/blog" className={btnPrimary}>
-                Browse all guides
-              </Link>
-              <Link
-                href="/services/independent-examination"
-                className="inline-flex items-center gap-2 text-[#1a5c4a] hover:text-[#154a3b] font-semibold text-sm sm:text-base transition-colors"
-              >
-                Independent examination service
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
+          </div>
+          <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
+            <Link href="/blog" className={btnPrimary}>
+              Browse all guides
+            </Link>
+            <Link
+              href="/services/independent-examination"
+              className={`inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-colors hover:text-primary-800 sm:text-base ${focusRing} rounded`}
+            >
+              Independent examination service
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
           </div>
         </div>
       </section>

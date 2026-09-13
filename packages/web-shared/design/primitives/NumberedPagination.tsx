@@ -29,7 +29,7 @@ export function NumberedPagination({
 
   const base = `inline-flex items-center justify-center min-h-12 rounded-xl border-2 font-medium transition-colors active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed ${focusRing}`;
   const idle =
-    "border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 disabled:hover:border-[var(--border)] disabled:hover:bg-[var(--surface)]";
+    "border-[var(--border)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary,var(--brand-primary,#0f172a))] hover:bg-[var(--primary,var(--brand-primary,#0f172a))]/5 disabled:hover:border-[var(--border)] disabled:hover:bg-[var(--surface)]";
 
   return (
     <nav aria-label="Pagination">
@@ -57,7 +57,7 @@ export function NumberedPagination({
             aria-label={`Page ${page}`}
             className={`${base} w-12 ${
               page === currentPage
-                ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                ? "border-[var(--primary,var(--brand-primary,#0f172a))] bg-[var(--primary,var(--brand-primary,#0f172a))] text-white"
                 : idle
             }`}
           >

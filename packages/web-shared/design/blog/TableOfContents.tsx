@@ -69,8 +69,8 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
                     href={`#${h.id}`}
                     className={`block min-h-[44px] flex items-center px-3 py-2 text-sm rounded transition-colors ${focusRing} ${
                       activeId === h.id
-                        ? "text-[var(--primary)] font-semibold bg-[var(--primary)]/5 border-l-2 border-[var(--primary)]"
-                        : "text-[var(--muted)] hover:text-[var(--ink)] hover:bg-[var(--primary)]/5"
+                        ? "text-[var(--primary,var(--brand-primary,#0f172a))] font-semibold bg-[var(--primary,var(--brand-primary,#0f172a))]/5 border-l-2 border-[var(--primary,var(--brand-primary,#0f172a))]"
+                        : "text-[var(--muted)] hover:text-[var(--ink)] hover:bg-[var(--primary,var(--brand-primary,#0f172a))]/5"
                     }`}
                   >
                     {h.text}
@@ -99,8 +99,8 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
                 href={`#${h.id}`}
                 className={`block px-3 py-2 text-sm rounded transition-colors ${focusRing} ${
                   activeId === h.id
-                    ? "text-[var(--primary)] font-semibold bg-[var(--primary)]/5 border-l-2 border-[var(--primary)]"
-                    : "text-[var(--muted)] hover:text-[var(--ink)] hover:bg-[var(--primary)]/5"
+                    ? "text-[var(--primary,var(--brand-primary,#0f172a))] font-semibold bg-[var(--primary,var(--brand-primary,#0f172a))]/5 border-l-2 border-[var(--primary,var(--brand-primary,#0f172a))]"
+                    : "text-[var(--muted)] hover:text-[var(--ink)] hover:bg-[var(--primary,var(--brand-primary,#0f172a))]/5"
                 }`}
               >
                 {h.text}

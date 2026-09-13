@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { MiniCapture } from "@/components/calculators/MiniCapture";
@@ -11,6 +10,7 @@ import {
   type FinanceIndexSnapshot,
 } from "@/lib/research/finance-index";
 import snapshot from "@/data/uk-small-charity-finance-index.json";
+import { PageHero, ResearchSection as Section, Stat } from "@/components/hubs/HubParts";
 
 const data = snapshot as unknown as FinanceIndexSnapshot;
 const { meta, charities, cics } = data;
@@ -58,24 +58,6 @@ const datasetSchema = {
   ],
 };
 
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl border border-[var(--border)] bg-white p-5 shadow-sm">
-      <div className="text-3xl font-bold text-[var(--brand-primary)] sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-[var(--muted)]">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-24 border-t border-[var(--border)] py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-[var(--ink-soft)]">{children}</div>
-    </section>
-  );
-}
-
 export default function FinanceIndexPage() {
   return (
     <>
@@ -83,21 +65,23 @@ export default function FinanceIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
       />
-      <main>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
-            <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
-              UK Small Charity Finance Index
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-white/85">
+      <PageHero
+        tone="dark"
+        eyebrow="Research"
+        title="UK Small Charity Finance Index"
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Research", href: "/research" },
+          { label: "UK Small Charity Finance Index" },
+        ]}
+      >
+        <p>
               What a normal charity actually looks like financially: every registered England and
               Wales charity, mapped against the scrutiny thresholds that decide whether it needs an
               independent examination or an audit. Compiled from Charity Commission open data,
               updated {generatedDate}.
-            </p>
-          </div>
-        </section>
+        </p>
+      </PageHero>
 
         <div className="mx-auto max-w-4xl px-6">
           <div className="-mt-8 grid gap-4 sm:grid-cols-3">
@@ -123,7 +107,7 @@ export default function FinanceIndexPage() {
             <div className="overflow-x-auto">
               <table className="mt-2 w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                  <tr className="border-b border-slate-200 text-left text-slate-600">
                     <th className="py-2 pr-4 font-semibold">Income band</th>
                     <th className="py-2 pr-4 text-right font-semibold">Charities</th>
                     <th className="py-2 text-right font-semibold">Share</th>
@@ -131,7 +115,7 @@ export default function FinanceIndexPage() {
                 </thead>
                 <tbody>
                   {charities.scrutiny_bands.map((b) => (
-                    <tr key={b.key} className="border-b border-[var(--border)]/60">
+                    <tr key={b.key} className="border-b border-slate-200/60">
                       <td className="py-2 pr-4">{b.label}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">{fmtNumber(b.count)}</td>
                       <td className="py-2 text-right tabular-nums">{fmtPct(b.pct)}</td>
@@ -140,14 +124,14 @@ export default function FinanceIndexPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               The audit band is income-only: charities above £250,000 income also need an audit if
               gross assets exceed £3.26m (£500,000 and £5m for financial years ending on or after
               30 September 2026), so the true audit share is slightly higher. Not sure where
               your charity falls? Use our{" "}
               <Link
                 href="/calculators/independent-examination-vs-audit-checker"
-                className="font-semibold text-[var(--brand-primary)] underline"
+                className="font-semibold text-primary-700 underline"
               >
                 independent examination vs audit checker
               </Link>
@@ -170,7 +154,7 @@ export default function FinanceIndexPage() {
             <div className="overflow-x-auto">
               <table className="mt-2 w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                  <tr className="border-b border-slate-200 text-left text-slate-600">
                     <th className="py-2 pr-4 font-semibold">Year</th>
                     <th className="py-2 pr-4 text-right font-semibold">Registrations</th>
                     <th className="py-2 pr-4 text-right font-semibold">Removals</th>
@@ -179,7 +163,7 @@ export default function FinanceIndexPage() {
                 </thead>
                 <tbody>
                   {charities.flows.map((f) => (
-                    <tr key={f.year} className="border-b border-[var(--border)]/60">
+                    <tr key={f.year} className="border-b border-slate-200/60">
                       <td className="py-2 pr-4">{f.year}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">{fmtNumber(f.registrations)}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">{fmtNumber(f.removals)}</td>
@@ -206,14 +190,14 @@ export default function FinanceIndexPage() {
               <div className="overflow-x-auto">
                 <table className="mt-2 w-full max-w-md text-sm">
                   <thead>
-                    <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                    <tr className="border-b border-slate-200 text-left text-slate-600">
                       <th className="py-2 pr-4 font-semibold">Year</th>
                       <th className="py-2 text-right font-semibold">CIC incorporations</th>
                     </tr>
                   </thead>
                   <tbody>
                     {cics.incorporations_by_year.map((r) => (
-                      <tr key={r.year} className="border-b border-[var(--border)]/60">
+                      <tr key={r.year} className="border-b border-slate-200/60">
                         <td className="py-2 pr-4">{r.year}</td>
                         <td className="py-2 text-right tabular-nums">{fmtNumber(r.count)}</td>
                       </tr>
@@ -221,7 +205,7 @@ export default function FinanceIndexPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-sm text-[var(--muted)]">
+              <p className="text-sm text-slate-600">
                 Incorporation years count companies still on the register (dissolved CICs drop out
                 over time, so early years understate true formation volumes).
               </p>
@@ -233,7 +217,7 @@ export default function FinanceIndexPage() {
             <ul className="list-disc space-y-1 pl-6 text-sm">
               {meta.sources.map((s) => (
                 <li key={s.url}>
-                  <a href={s.url} rel="noopener" className="text-[var(--brand-primary)] underline">
+                  <a href={s.url} rel="noopener" className="text-primary-700 underline">
                     {s.name}
                   </a>{" "}
                   ({s.publisher}, {s.licence})
@@ -243,7 +227,7 @@ export default function FinanceIndexPage() {
             <p className="text-sm">
               <a
                 href={`${PAGE_PATH}/data`}
-                className="font-semibold text-[var(--brand-primary)] underline"
+                className="font-semibold text-primary-700 underline"
               >
                 Download the scrutiny-band data as CSV
               </a>{" "}
@@ -261,7 +245,6 @@ export default function FinanceIndexPage() {
             />
           </div>
         </div>
-      </main>
     </>
   );
 }

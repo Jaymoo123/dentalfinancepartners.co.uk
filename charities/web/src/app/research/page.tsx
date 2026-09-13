@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
+import { siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
+import { HubSection, LinkCardGrid, PageHero } from "@/components/hubs/HubParts";
 import { siteConfig } from "@/config/site";
 import { fmtNumber, fmtGbp, type FinanceIndexSnapshot } from "@/lib/research/finance-index";
 import { type SurvivalIndexSnapshot } from "@/lib/research/survival-index";
@@ -64,66 +65,62 @@ const reports = [
 export default function ResearchIndexPage() {
   return (
     <>
-      <main>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
-            <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
-              Charity finance research and data
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-white/85">
-              Original, sourced reads on England and Wales charity finances and compliance, built
-              entirely from Charity Commission open data. Free to read and cite with attribution.
+      <PageHero
+        eyebrow="Research"
+        title="Charity finance research and data"
+        crumbs={[{ label: "Home", href: "/" }, { label: "Research" }]}
+      >
+        <p>
+          Original, sourced reads on England and Wales charity finances and compliance, built
+          entirely from Charity Commission open data. Free to read and cite with attribution.
+        </p>
+      </PageHero>
+
+      <HubSection
+        eyebrow="The studies"
+        // Derived from the array below, so it cannot disagree with the corpus.
+        title={`${reports.length} ${reports.length === 1 ? "study" : "studies"}`}
+        ground="slate"
+      >
+        <LinkCardGrid
+          columns={3}
+          clampBody={false}
+          items={reports.map((r) => ({
+            href: r.href,
+            title: r.title,
+            body: r.blurb,
+            meta: `Updated ${r.updated}`,
+            stat: r.stat,
+            statLabel: r.statLabel,
+          }))}
+        />
+      </HubSection>
+
+      <section className="bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <div className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
+            <h2 className="text-lg font-bold text-slate-900">About this data</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              All datasets on this page are compiled from the Charity Commission for England and
+              Wales full-register extract, published daily under the Open Government Licence v3.0.
+              Figures are updated when the pipeline is re-run against the latest extract. All data
+              is free to read and cite with attribution to <strong>{siteConfig.name}</strong> and
+              the Charity Commission.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">
+              Source:{" "}
+              <a
+                href="https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download"
+                rel="noopener"
+                className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800"
+              >
+                Charity Commission full-register download
+              </a>{" "}
+              (OGL v3.0).
             </p>
           </div>
-        </section>
-
-        <section className="bg-white py-10 sm:py-14">
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {reports.map((r) => (
-                <Link
-                  key={r.href}
-                  href={r.href}
-                  className="group rounded-2xl border border-[var(--border)] p-6 transition hover:border-[var(--brand-primary)] hover:shadow-md sm:p-8"
-                >
-                  <div className="text-3xl font-bold text-[var(--brand-primary)] sm:text-4xl">
-                    {r.stat}
-                  </div>
-                  <div className="mt-1 text-sm text-[var(--muted)]">{r.statLabel}</div>
-                  <h2 className="mt-5 text-xl font-bold text-[var(--ink)] group-hover:text-[var(--brand-primary)]">
-                    {r.title}
-                  </h2>
-                  <p className="mt-2 text-base leading-relaxed text-[var(--ink-soft)]">{r.blurb}</p>
-                  <p className="mt-4 text-xs text-[var(--muted)]">Updated {r.updated}</p>
-                </Link>
-              ))}
-            </div>
-
-            <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
-              <h2 className="text-lg font-bold text-[var(--ink)]">About this data</h2>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
-                All datasets on this page are compiled from the Charity Commission for England and
-                Wales full-register extract, published daily under the Open Government Licence v3.0.
-                Figures are updated when the pipeline is re-run against the latest extract. All data
-                is free to read and cite with attribution to{" "}
-                <strong>{siteConfig.name}</strong> and the Charity Commission.
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
-                Source:{" "}
-                <a
-                  href="https://register-of-charities.charitycommission.gov.uk/en/register/full-register-download"
-                  rel="noopener"
-                  className="text-[var(--brand-primary)] underline"
-                >
-                  Charity Commission full-register download
-                </a>{" "}
-                (OGL v3.0).
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </>
   );
 }

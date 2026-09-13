@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { MiniCapture } from "@/components/calculators/MiniCapture";
@@ -9,8 +8,9 @@ import {
   fmtGbp,
   type ScrutinyCliffSnapshot,
 } from "@/lib/research/scrutiny-cliff";
-import { buildFaqJsonLd, buildBreadcrumbJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd } from "@/lib/schema";
 import snapshot from "@/data/charity-scrutiny-cliff.json";
+import { PageHero, ResearchSection as Section, Stat } from "@/components/hubs/HubParts";
 
 const data = snapshot as unknown as ScrutinyCliffSnapshot;
 const { meta, cliff_edges } = data;
@@ -92,29 +92,6 @@ const faqs = [
   },
 ];
 
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="rounded-xl border border-[var(--border)] bg-white p-5 shadow-sm">
-      <div className="text-3xl font-bold text-[var(--brand-primary)] sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-[var(--muted)]">{label}</div>
-    </div>
-  );
-}
-
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section
-      id={id}
-      className="scroll-mt-24 border-t border-[var(--border)] py-10 first:border-t-0"
-    >
-      <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-[var(--ink-soft)]">
-        {children}
-      </div>
-    </section>
-  );
-}
-
 export default function ScrutinyCliffPage() {
   const totalInCliff = cliff_edges.reduce((s, e) => s + e.charities_in_cliff, 0);
 
@@ -126,41 +103,33 @@ export default function ScrutinyCliffPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: buildBreadcrumbJsonLd([
-            { label: "Home", href: "/" },
-            { label: "Research", href: "/research" },
-            { label: "Charity Scrutiny Cliff-Edge Monitor" },
-          ]),
-        }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
 
-      <main>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
-            <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
-              UK Charity Scrutiny Cliff-Edge Monitor
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-white/85">
+      <PageHero
+        tone="dark"
+        eyebrow="Research"
+        title="UK Charity Scrutiny Cliff-Edge Monitor"
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Research", href: "/research" },
+          { label: "Charity Scrutiny Cliff-Edge Monitor" },
+        ]}
+      >
+        <p>
               How many charities are close to crossing a threshold that changes what they must file?
               A live count of England and Wales charities within 10% of each statutory scrutiny
               gate, compiled from Charity Commission open data. Updated {generatedDate}. The gates
               tracked here apply to financial years ending before 30 September 2026; they rise to
               £40,000, £500,000 and £1.5m for years ending on or after that date.
-            </p>
-            <nav className="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/70">
-              <a href="#cliff-edges" className="hover:text-white">Cliff-edge counts</a>
-              <a href="#thresholds" className="hover:text-white">What the thresholds mean</a>
-              <a href="#faq" className="hover:text-white">FAQ</a>
-              <a href="#methodology" className="hover:text-white">Methodology</a>
-            </nav>
-          </div>
-        </section>
+        </p>
+          <nav className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-slate-300">
+            <a href="#cliff-edges" className="rounded py-0.5 hover:text-white">Cliff-edge counts</a>
+            <a href="#thresholds" className="rounded py-0.5 hover:text-white">What the thresholds mean</a>
+            <a href="#faq" className="rounded py-0.5 hover:text-white">FAQ</a>
+            <a href="#methodology" className="rounded py-0.5 hover:text-white">Methodology</a>
+          </nav>
+      </PageHero>
 
         <div className="mx-auto max-w-4xl px-6">
           <div className="-mt-8 grid gap-4 sm:grid-cols-3">
@@ -190,7 +159,7 @@ export default function ScrutinyCliffPage() {
             <div className="overflow-x-auto">
               <table className="mt-2 w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--border)] text-left text-[var(--muted)]">
+                  <tr className="border-b border-slate-200 text-left text-slate-600">
                     <th className="py-2 pr-4 font-semibold">Threshold</th>
                     <th className="py-2 pr-4 text-right font-semibold">Cliff zone</th>
                     <th className="py-2 pr-4 text-right font-semibold">
@@ -203,12 +172,12 @@ export default function ScrutinyCliffPage() {
                 </thead>
                 <tbody>
                   {cliff_edges.map((e) => (
-                    <tr key={e.key} className="border-b border-[var(--border)]/60">
+                    <tr key={e.key} className="border-b border-slate-200/60">
                       <td className="py-2 pr-4">{e.label}</td>
                       <td className="py-2 pr-4 text-right tabular-nums">
                         {fmtGbp(e.cliff_floor)} to {fmtGbp(e.threshold)}
                       </td>
-                      <td className="py-2 pr-4 text-right tabular-nums font-semibold text-[var(--brand-primary)]">
+                      <td className="py-2 pr-4 text-right tabular-nums font-semibold text-primary-700">
                         {fmtNumber(e.charities_in_cliff)}
                       </td>
                       <td className="py-2 text-right tabular-nums">
@@ -219,7 +188,7 @@ export default function ScrutinyCliffPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Source: Charity Commission full-register extract (OGL v3.0), {generatedDate}. Active,
               main charities only. &quot;Just crossed&quot; = charities within 10% above the
               threshold who have recently become subject to the higher scrutiny requirement.
@@ -228,58 +197,58 @@ export default function ScrutinyCliffPage() {
 
           <Section id="thresholds" title="What each threshold triggers">
             <div className="space-y-6">
-              <div className="rounded-lg border border-[var(--border)] p-4 sm:p-5">
+              <div className="rounded-lg border border-slate-200 p-4 sm:p-5">
                 <div className="flex items-center gap-3">
-                  <span className="rounded-full bg-[var(--brand-primary)] px-3 py-1 text-xs font-bold text-white">
+                  <span className="rounded-full bg-primary-600 px-3 py-1 text-xs font-bold text-white">
                     £25,000
                   </span>
-                  <h3 className="font-semibold text-[var(--ink)]">Independent examination gate</h3>
+                  <h3 className="font-semibold text-slate-900">Independent examination gate</h3>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">
                   Above £25,000 gross income, a charity must have its accounts examined by an
                   independent examiner before filing with the Commission. The examiner does not need
                   to be a qualified accountant at this level, but must be independent. Currently{" "}
-                  <strong className="text-[var(--ink)]">{fmtNumber(ie_edge.charities_in_cliff)}</strong>{" "}
+                  <strong className="text-slate-900">{fmtNumber(ie_edge.charities_in_cliff)}</strong>{" "}
                   charities sit in the {fmtGbp(ie_edge.cliff_floor)} to {fmtGbp(ie_edge.threshold)}{" "}
                   zone. For financial years ending on or after 30 September 2026 this gate rises to
                   £40,000.
                 </p>
               </div>
 
-              <div className="rounded-lg border border-[var(--border)] p-4 sm:p-5">
+              <div className="rounded-lg border border-slate-200 p-4 sm:p-5">
                 <div className="flex items-center gap-3">
-                  <span className="rounded-full bg-[var(--brand-primary)] px-3 py-1 text-xs font-bold text-white">
+                  <span className="rounded-full bg-primary-600 px-3 py-1 text-xs font-bold text-white">
                     £250,000
                   </span>
-                  <h3 className="font-semibold text-[var(--ink)]">
+                  <h3 className="font-semibold text-slate-900">
                     Accruals and qualified examiner gate
                   </h3>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">
                   Above £250,000 gross income, two things change at once: the charity must switch
                   from receipts and payments accounts to full accruals accounts, and the independent
                   examiner must be a qualified accountant. This is often the most disruptive
                   threshold for growing charities. Currently{" "}
-                  <strong className="text-[var(--ink)]">{fmtNumber(accruals_edge.charities_in_cliff)}</strong>{" "}
+                  <strong className="text-slate-900">{fmtNumber(accruals_edge.charities_in_cliff)}</strong>{" "}
                   charities sit in the {fmtGbp(accruals_edge.cliff_floor)} to{" "}
                   {fmtGbp(accruals_edge.threshold)} zone. For financial years ending on or after 30
                   September 2026 this gate rises to £500,000.
                 </p>
               </div>
 
-              <div className="rounded-lg border border-[var(--border)] p-4 sm:p-5">
+              <div className="rounded-lg border border-slate-200 p-4 sm:p-5">
                 <div className="flex items-center gap-3">
-                  <span className="rounded-full bg-[var(--brand-primary)] px-3 py-1 text-xs font-bold text-white">
+                  <span className="rounded-full bg-primary-600 px-3 py-1 text-xs font-bold text-white">
                     £1,000,000
                   </span>
-                  <h3 className="font-semibold text-[var(--ink)]">Statutory audit gate</h3>
+                  <h3 className="font-semibold text-slate-900">Statutory audit gate</h3>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">
                   Above £1m gross income (or if gross assets exceed £3.26m alongside income over
                   £250,000), a charity needs a full statutory audit by a registered auditor. An
                   audit is substantially more demanding and expensive than an independent
                   examination. Currently{" "}
-                  <strong className="text-[var(--ink)]">{fmtNumber(audit_edge.charities_in_cliff)}</strong>{" "}
+                  <strong className="text-slate-900">{fmtNumber(audit_edge.charities_in_cliff)}</strong>{" "}
                   charities sit in the {fmtGbp(audit_edge.cliff_floor)} to{" "}
                   {fmtGbp(audit_edge.threshold)} zone. The true number approaching audit is higher
                   because the asset test cannot be applied from the public register extract. For
@@ -293,7 +262,7 @@ export default function ScrutinyCliffPage() {
               Not sure which band your charity is in? Use our{" "}
               <Link
                 href="/calculators/independent-examination-vs-audit-checker"
-                className="font-semibold text-[var(--brand-primary)] underline"
+                className="font-semibold text-primary-700 underline"
               >
                 independent examination vs audit checker
               </Link>
@@ -305,7 +274,7 @@ export default function ScrutinyCliffPage() {
             <div className="space-y-6">
               {faqs.map((faq, i) => (
                 <div key={i}>
-                  <h3 className="font-semibold text-[var(--ink)]">{faq.question}</h3>
+                  <h3 className="font-semibold text-slate-900">{faq.question}</h3>
                   <p className="mt-2">{faq.answer}</p>
                 </div>
               ))}
@@ -317,7 +286,7 @@ export default function ScrutinyCliffPage() {
             <ul className="list-disc space-y-1 pl-6 text-sm">
               {meta.sources.map((s) => (
                 <li key={s.url}>
-                  <a href={s.url} rel="noopener" className="text-[var(--brand-primary)] underline">
+                  <a href={s.url} rel="noopener" className="text-primary-700 underline">
                     {s.name}
                   </a>{" "}
                   ({s.publisher}, {s.licence})
@@ -327,19 +296,19 @@ export default function ScrutinyCliffPage() {
             <p className="text-sm">
               <a
                 href={`${PAGE_PATH}/data`}
-                className="font-semibold text-[var(--brand-primary)] underline"
+                className="font-semibold text-primary-700 underline"
               >
                 Download the cliff-edge data as CSV
               </a>{" "}
               (free to reuse with attribution to {site.name}).
             </p>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm text-slate-600">
               Related:{" "}
-              <Link href="/research/uk-small-charity-finance-index" className="text-[var(--brand-primary)] underline">
+              <Link href="/research/uk-small-charity-finance-index" className="text-primary-700 underline">
                 UK Small Charity Finance Index
               </Link>{" "}
               |{" "}
-              <Link href="/research/uk-charity-survival-index" className="text-[var(--brand-primary)] underline">
+              <Link href="/research/uk-charity-survival-index" className="text-primary-700 underline">
                 UK Charity Survival and Longevity Index
               </Link>
             </p>
@@ -355,7 +324,6 @@ export default function ScrutinyCliffPage() {
             />
           </div>
         </div>
-      </main>
     </>
   );
 }

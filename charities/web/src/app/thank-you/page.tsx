@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import { siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
 import BookingPicker from "@/components/forms/BookingPicker";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 
@@ -8,9 +10,14 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const shellClass = "mx-auto max-w-2xl px-6 py-24 text-center";
-const headingClass = "text-3xl font-semibold tracking-tight text-neutral-900";
-const backLinkClass = "mt-8 inline-block font-medium underline";
+// Body section under the slim navy hero. White, because the hero is slate-900
+// and the kit footer is slate-900 too: navy must never touch navy, so none of
+// the three token-gated pages may end on the hero.
+const bodyClass = "bg-white py-12 sm:py-16 md:py-20";
+const innerClass = "mx-auto max-w-2xl text-center";
+const leadClass = "text-base leading-relaxed text-slate-700 sm:text-lg";
+const noteClass = "mt-3 text-sm leading-relaxed text-slate-600";
+const backLinkClass = "font-semibold text-primary-700 underline underline-offset-2";
 
 export default async function ThankYouPage({
   searchParams,
@@ -34,84 +41,105 @@ export default async function ThankYouPage({
 
   if (optedOut) {
     return (
-      <main className={shellClass}>
-        <h1 className={headingClass}>You will not hear from us again about this enquiry</h1>
-        <p className="mt-4 text-neutral-600">
-          We have stopped the reminders. If you change your mind, the contact form is always open.
-        </p>
-        <Link href="/" className={backLinkClass}>
-          Back to the homepage
-        </Link>
-      </main>
+      <>
+        <SlimHero
+          eyebrow="Your enquiry"
+          title="You will not hear from us again about this enquiry"
+        />
+        <section className={bodyClass}>
+          <div className={siteContainerLg}>
+            <div className={innerClass}>
+              <p className={leadClass}>
+                We have stopped the reminders. If you change your mind, the contact form is always open.
+              </p>
+              <Link href="/" className={`${backLinkClass} mt-8 inline-block`}>
+                Back to the homepage
+              </Link>
+            </div>
+          </div>
+        </section>
+      </>
     );
   }
 
   if (confirmed) {
     return (
-      <main className={shellClass}>
-        <h1 className={headingClass}>Confirmed</h1>
-        <p className="mt-4 text-neutral-600">
-          Thanks, that is confirmed. A specialist firm from our partner network will contact you
-          directly.
-        </p>
-        <Link href="/" className={backLinkClass}>
-          Back to the homepage
-        </Link>
-      </main>
+      <>
+        <SlimHero eyebrow="Your enquiry" title="Confirmed" />
+        <section className={bodyClass}>
+          <div className={siteContainerLg}>
+            <div className={innerClass}>
+              <p className={leadClass}>
+                Thanks, that is confirmed. A specialist firm from our partner network will contact you
+                directly.
+              </p>
+              <Link href="/" className={`${backLinkClass} mt-8 inline-block`}>
+                Back to the homepage
+              </Link>
+            </div>
+          </div>
+        </section>
+      </>
     );
   }
 
   return (
-    <main className={shellClass}>
-      <h1 className={headingClass}>Thanks, your enquiry is on its way.</h1>
-      {nurtureArmed ? (
-        <>
-          <p className="mt-4 text-neutral-600">
-            We have just sent you a message to arrange your free charity finance review. Please
-            check your email and phone, and confirm to lock in your callback slot.
-          </p>
-          <p className="mt-3 text-sm text-neutral-500">
-            For specialist tax advisory work, including complex structuring and tax planning, we work
-            closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of
-            advice, it may be their team who contacts you.
-          </p>
-          <p className="mt-3 text-sm text-neutral-500">
-            Cannot see our email? Please check your spam or junk folder, and mark it as not spam so
-            our messages reach you.
-          </p>
-        </>
-      ) : (
-        <p className="mt-4 text-neutral-600">
-          For specialist tax advisory work, including complex structuring and tax planning, we work
-          closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of
-          advice, it may be their team who contacts you.
-        </p>
-      )}
+    <>
+      <SlimHero eyebrow="Your enquiry" title="Thanks, your enquiry is on its way." />
+      <section className={bodyClass}>
+        <div className={siteContainerLg}>
+          <div className={innerClass}>
+            {nurtureArmed ? (
+              <>
+                <p className={leadClass}>
+                  We have just sent you a message to arrange your free charity finance review. Please
+                  check your email and phone, and confirm to lock in your callback slot.
+                </p>
+                <p className={noteClass}>
+                  For specialist tax advisory work, including complex structuring and tax planning, we work
+                  closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of
+                  advice, it may be their team who contacts you.
+                </p>
+                <p className={noteClass}>
+                  Cannot see our email? Please check your spam or junk folder, and mark it as not spam so
+                  our messages reach you.
+                </p>
+              </>
+            ) : (
+              <p className={leadClass}>
+                For specialist tax advisory work, including complex structuring and tax planning, we work
+                closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of
+                advice, it may be their team who contacts you.
+              </p>
+            )}
 
-      {bookingToken ? (
-        <div className="mt-10 rounded-lg border border-neutral-200 bg-white p-4 text-left sm:p-8">
-          <p className="mb-6 text-center text-base font-medium text-neutral-900">
-            Want to skip the back and forth? Pick a time for your call now.
-          </p>
-          <BookingPicker token={bookingToken} />
+            {bookingToken ? (
+              <div className="mt-10 rounded-xl bg-slate-50 p-6 text-left ring-1 ring-slate-200/70 sm:p-8">
+                <p className="mb-6 text-center text-base font-bold text-slate-900">
+                  Want to skip the back and forth? Pick a time for your call now.
+                </p>
+                <BookingPicker token={bookingToken} />
+              </div>
+            ) : null}
+
+            <div className="mt-8 flex flex-col items-center gap-3">
+              <Link href="/" className={backLinkClass}>
+                Back to the homepage
+              </Link>
+              {returnPath && (
+                <Link
+                  href={returnPath}
+                  data-cta="thankyou-return-article"
+                  data-cta-placement="thank_you"
+                  className={backLinkClass}
+                >
+                  Back to the page you were reading
+                </Link>
+              )}
+            </div>
+          </div>
         </div>
-      ) : null}
-
-      <div className="mt-8 flex flex-col items-center gap-3">
-        <Link href="/" className={backLinkClass}>
-          Back to the homepage
-        </Link>
-        {returnPath && (
-          <Link
-            href={returnPath}
-            data-cta="thankyou-return-article"
-            data-cta-placement="thank_you"
-            className="font-medium underline"
-          >
-            Back to the page you were reading
-          </Link>
-        )}
-      </div>
-    </main>
+      </section>
+    </>
   );
 }

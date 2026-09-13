@@ -6,7 +6,8 @@ import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
-import { SiteFooter } from "@/components/layout/SiteFooter";
+import { PageShell } from "@/components/layout/PageShell";
+import { buildPrimaryNav } from "@/components/layout/nav";
 
 const siteUrl = siteConfig.url;
 
@@ -95,8 +96,14 @@ export default function RootLayout({
             noTrackPrefixes={["/admin"]}
           >
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
-            {children}
-            <SiteFooter />
+            {/* Site chrome (header, main landmark, footer) comes from the
+                shared kit via PageShell. It renders children bare on /embed/
+                paths, so embedded calculators stay chrome-free inside a
+                partner's iframe. Admin routes take the chrome too: they are
+                gated and noindex, and excluding them would mean a second shell
+                for no gain. nav is built here, server-side, so the calculator
+                registry never reaches the client bundle. */}
+            <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>
