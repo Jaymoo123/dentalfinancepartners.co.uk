@@ -62,9 +62,27 @@ It does not block this package's specific target, though: web-shared's
 custom property in scope, with or without the kit's `@theme` derivation. So
 defining `--radius-xl` and `--btn-radius` directly in `:root`, as this package
 does, is sufficient to stop web-shared buttons rendering as 9999px pills,
-which is the concrete defect item 3 named. Confirmed the site's own
-`rounded-xl` (33 call sites per the delta's census) is unaffected either way
-since that's a literal Tailwind utility, not an arbitrary `var()` read.
+which is the concrete defect item 3 named. ~~Confirmed the site's own `rounded-xl` (33 call sites per the delta's census) is
+unaffected either way since that's a literal Tailwind utility, not an arbitrary
+`var()` read.~~
+
+**CORRECTION 2026-09-13 (G1). THE STRUCK SENTENCE ABOVE IS FALSE, AND IT IS WHY A
+SITE-WIDE REGRESSION SHIPPED.** In Tailwind v4 `.rounded-xl` IS
+`border-radius: var(--radius-xl)`, so declaring `--radius-xl` in an unlayered
+`:root` shadows the layered theme value and repaints every call site. Measured:
+`rounded-xl` rendered 4px here against 12px pre-port, inverting the scale so
+`rounded-xl` was squarer than `rounded-lg` (8px), across 146 site call sites plus
+42 in the kit and 44 elements on the homepage alone.
+It survived every sweep because F10 hunted unlayered RULES and this is an
+unlayered custom PROPERTY, which that sweep structurally cannot see.
+Fixed by DELETING the shadowing declaration rather than pinning it to `0.75rem`:
+pinning keeps an unlayered shadow of a theme variable alive, which is the bug
+class itself. `--btn-radius: var(--radius-xl, 0.75rem)` preserves the anti-pill
+guard. Detail: `G1_RADIUS_FOOTER.md`.
+RULE: never declare a custom property whose name collides with a Tailwind v4
+theme variable (`--radius-*`, `--color-*`, `--font-*`, `--spacing-*`, `--text-*`,
+`--leading-*`, `--shadow-*`) outside `@theme`. Sweep for the collision by NAME,
+not by whether a utility "looks literal".
 
 **Reporting, not fixing:** whether to add the `@import`/`@source` pair for
 `globals-standard.css` estate-wide parity is a bigger structural change than

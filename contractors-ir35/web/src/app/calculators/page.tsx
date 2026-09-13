@@ -92,8 +92,10 @@ export default function CalculatorsPage() {
         </div>
       </section>
 
-      {/* Tool listing. White body ground, container measure, no inner clamp. */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      {/* Tool listing. §0.1: the cards are bg-white, so the section ground has
+          to be the opposite one or the cards have no edge. slate-50 here, which
+          also matches how the already-ported /calculators/<slug> does it. */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           {categories.length === 0 ? (
             <div className="rounded-xl bg-white p-10 text-center ring-1 ring-neutral-200/70">
@@ -112,7 +114,7 @@ export default function CalculatorsPage() {
                       <Link
                         key={t.slug}
                         href={`/calculators/${t.slug}`}
-                        className="group flex flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 sm:p-6"
+                        className="group flex flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 sm:p-6"
                       >
                         <h3 className="text-lg font-bold text-neutral-900">{t.name}</h3>
                         <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">
@@ -147,7 +149,7 @@ export default function CalculatorsPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           contained
-          ground="slate"
+          ground="white"
           eyebrow="Free call"
           title="Need help interpreting your results?"
           description="These calculators give 2026/27 estimates. For a full review of your IR35 status, the most tax-efficient salary, dividend and pension split, or your umbrella versus limited decision, talk to one of our contractor specialists. We do the work and tell you what is worth changing."

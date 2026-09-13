@@ -89,11 +89,26 @@ export default async function ResourceGuidePage({
               )}
             </p>
           )}
-          {xlsxReady && resource?.xlsx && (
+          {/* §0.5: the hero owes a primary CTA to the on-page form. This is a
+              link to the `#book` anchor that already exists at the foot of the
+              page, so it adds no capture surface. The `data-cta` triple is
+              spelled exactly as the glossary, locations, research, calculators
+              and home heroes spell it. */}
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href="#book"
+              data-cta="hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[var(--accent)] px-8 py-3.5 text-base font-bold text-white transition-colors duration-150 hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+            >
+              Book a free call
+            </a>
+            {xlsxReady && resource?.xlsx && (
               <a
                 href={resource.xlsx.file}
                 download
-                className="mt-5 inline-flex min-h-12 items-center gap-2 rounded-xl bg-[var(--accent)] px-8 py-3.5 text-base font-bold text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+                className="inline-flex min-h-12 items-center gap-2 rounded-xl border border-white/70 px-8 py-3.5 text-base font-bold text-white transition-colors duration-150 hover:bg-white hover:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
               >
                 <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -101,6 +116,7 @@ export default async function ResourceGuidePage({
                 {resource.xlsx.label}
               </a>
             )}
+          </div>
         </div>
       </section>
 

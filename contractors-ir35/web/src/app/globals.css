@@ -48,17 +48,26 @@
   --border: var(--hairline);
   --input: var(--hairline);
   --ring: var(--accent);
-  --radius: 0rem;
+  --radius: 0rem; /* shadcn-convention root; nothing reads it since G1. Do not
+                     derive --radius-xl from it: see the note below. */
 
   /* Radius chain root. web-shared's btnPrimary reads --btn-radius directly
      (rounded-[var(--btn-radius,9999px)] arbitrary utility, layout-utils.ts:43),
      not through globals-standard.css's @theme derivation (this file does not
      import that stylesheet at all — see P1-1_TOKENS.md finding). Undeclared,
-     every kit button falls back to a 9999px pill. --radius-xl kept for parity
-     with the estate's other radius chains even though nothing here reads it
-     directly. Standard is one radius, rounded-xl. */
-  --radius-xl: calc(var(--radius) + 4px);
-  --btn-radius: var(--radius-xl);
+     every kit button falls back to a 9999px pill, so --btn-radius must stay.
+
+     DO NOT redeclare --radius-xl here. Tailwind v4 emits .rounded-xl as
+     border-radius: var(--radius-xl) and emits the theme default
+     --radius-xl: 0.75rem into a LAYERED :root. A declaration in this plain
+     unlayered :root shadows that layered default for every one of the site's
+     rounded-xl call sites, which is how rounded-xl shipped at 4px (squarer
+     than rounded-lg at 8px, an inverted scale) until G1. The old comment
+     claiming "nothing here reads it directly" was false: .rounded-xl reads it.
+     See G1_RADIUS_FOOTER.md. Standard is one radius, rounded-xl = 0.75rem.
+     The literal fallback below covers the case where no rounded-xl utility is
+     generated and Tailwind therefore tree-shakes the theme variable away. */
+  --btn-radius: var(--radius-xl, 0.75rem);
 
   --muted: var(--ink-soft);
 

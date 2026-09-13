@@ -4,9 +4,17 @@ import { siteConfig } from "@/config/site";
 import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 /**
- * Kit adoption (design port P1-3). showBuilderCredit intentionally omitted:
- * this site did not commission Double Wired Creative, so the credit link
- * would be neither earned nor on-brand (kit default is Property-only true).
+ * Kit adoption (design port P1-3). showBuilderCredit is intentionally omitted
+ * so the kit default of `true` applies and the "Built by Double Wired
+ * Creative" credit RENDERS. That is the owner's decision of 2026-09-11,
+ * recorded in commit 6966c1f1: the studio credit is wanted estate-wide, not
+ * only on the site the studio designed, and that commit states explicitly
+ * that "a future port that passes nothing is correct".
+ *
+ * Do NOT "fix" this by passing false. An earlier version of this comment
+ * claimed the omission was meant to disable the credit; that was stale from
+ * the pre-decision phase 1 fix, and it caused two separate reviewers to file
+ * the rendered credit as a defect. The behaviour is correct as it stands.
  *
  * nav/fallbackNav/companyItems/resourcesHref are left at kit defaults.
  * niche.config.json's `navigation` is flat (no children/groups), so the

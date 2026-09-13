@@ -131,20 +131,24 @@ export default async function CalculatorToolPage({ params }: Props) {
           {tool.related && tool.related.length > 0 && (
             <div className="mt-12">
               <h3 className="text-xl font-bold text-neutral-900">Related reading and tools</h3>
-              <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {/* §0.4: "a calculator never gets a related-reading card", and
+                  these entries point at sibling /calculators/<slug> routes.
+                  Pre-port this was a <ul><li><a> bullet list; the list form is
+                  restored and only the link colour is restyled to the ramp.
+                  CalculatorTabs, the remedy §0.4 prescribes, does not exist on
+                  this site (see calculator-crawl-path.test.ts). */}
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-base text-neutral-700">
                 {tool.related.map((r) => (
-                  <a
-                    key={r.href}
-                    href={r.href}
-                    className="group flex items-center justify-between gap-3 rounded-xl bg-white p-5 text-base font-semibold text-neutral-900 ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
-                  >
-                    <span>{r.label}</span>
-                    <span aria-hidden className="shrink-0 text-primary-600">
-                      &rarr;
-                    </span>
-                  </a>
+                  <li key={r.href}>
+                    <a
+                      href={r.href}
+                      className="font-semibold text-primary-600 underline underline-offset-2 hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                    >
+                      {r.label}
+                    </a>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           )}
 
