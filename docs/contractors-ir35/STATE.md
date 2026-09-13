@@ -20,31 +20,34 @@ git status --porcelain docs/contractors-ir35/
 python scripts/port_preflight.py
 ```
 
-Derived state at close of 2026-09-12: **phases 0 to 1 COMPLETE** and tagged; phase 2 built and
-committed but unreviewed and untagged.
+Derived state at 2026-09-13: **phases 0 to 6 COMPLETE**, built, gated and tagged.
+**CAVEAT, and it is the one real gap: only phases 1 and 2 received an independent adversarial
+fidelity review. Phases 3, 4, 5 and 6 are tagged WITHOUT one.** The playbook requires one per
+phase, and on this site the phase 2 review overturned the manager's own contrast triage (209
+real failures where he had assumed noise), so the missing reviews are not a formality.
 
 
 | Item | State |
 |---|---|
 | Phase 0 (baseline + claims audit) | COMPLETE, serious tier fixed and committed |
-| Phase 1 (chrome) | BUILT, REVIEWED, GAP-FIXED, TAGGED `port-contractors-ir35-phase1` |
-| Phase 2 (blog subsystem) | BUILT and COMMITTED (`e3d0ff7d`), **NOT TAGGED, REVIEW NOT COMPLETE** |
-| Phases 3 to 6 | NOT STARTED. Plan and packages in `_port/PHASE_PLAN.md`; the 14 template-less routes already have recorded anatomies in `_port/P3_ROUTE_ANATOMIES.md` |
+| Phase 1 (chrome) | BUILT, REVIEWED, gap-fixed, TAGGED `port-contractors-ir35-phase1` (`4d7bea00`) |
+| Phase 2 (blog subsystem) | BUILT, REVIEWED, TAGGED `port-contractors-ir35-phase2` (`e3d0ff7d`) |
+| Phases 3 to 6 | BUILT, gated, TAGGED phase3-6 (all at `7bcab0e8`, built concurrently in one wave). **NOT independently reviewed** |
 | Pushed | NO. main is ahead of origin |
 | Deployed | NO. Production still serves `18b4f25f` |
 
-**THE ONE OUTSTANDING PIECE OF WORK, and do not skip it:** the phase 2 adversarial
-fidelity review (P2-8) was launched and STOPPED PART-WAY at the owner's end of session.
-Its report was never written, so `_port/P2-8_FIDELITY_REVIEW.md` does not exist and phase 2
-is unreviewed and untagged. Its brief is reconstructable from `PHASE_PLAN.md` §H. Its FIRST
-job is triaging **209 contrast findings** from `browser_check.mjs` on the current build.
-Known at the moment it stopped: 0 overflow findings, 0 anchor findings, instrument
-self-test passed, 0 unparseable colours, so the var() fallback failure mode is NOT in play.
-Its last words were "Methods disagree. Let me settle it by looking at the actual rendered
-pixels", so treat any partial conclusion as unsettled and re-derive.
-Suspected real: `a "Run the numbers"` reported at 1.38 with colour cyan-800, which measures
-7.27 on white, so the ground is either genuinely dark or unresolvable. Suspected false:
-the honeypot `label "Leave blank"` at 1.00, and the homepage hero over its dark gradient.
+**THE OUTSTANDING WORK, in priority order:**
+1. **Adversarial fidelity reviews for phases 3, 4, 5 and 6.** None was run. Brief them from
+   `_port/P1-8_FIDELITY_REVIEW.md` and `_port/P2-8_FIDELITY_REVIEW.md`, which are the worked
+   examples. The phase 2 review found 209 real contrast failures the manager had triaged as
+   instrument noise, so treat this as load-bearing, not ceremony.
+2. **Execute the per-package verification lists.** Every builder returned one (33 items for
+   calculators, 16 for premium, 15 for secondary/legal, 16 for the layering sweep, 17 for the
+   renderer) because agents were barred from building. The manager ran the SITE-WIDE gates
+   (build, tests, sweep, browser check, closure, predeploy) and they all pass, but the
+   per-package lists were not individually executed. Rows in those reports marked UNVERIFIED
+   are still unverified.
+3. **Owner walk on the dev server**, then the owner's deploy decision.
 
 **Verification standing at close** (build newer than every source edit, BUILD_ID 23:00:41
 against newest source 22:57:47): `next build` exit 0, vitest 448/448, tsc and eslint clean,
