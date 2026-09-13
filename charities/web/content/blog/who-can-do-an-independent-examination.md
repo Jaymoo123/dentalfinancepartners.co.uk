@@ -67,4 +67,4 @@ summary: "The answer depends on your charity's gross income. Below £250,000 (£
 <p>A brief written confirmation from the examiner setting out their qualifications and confirming independence is good practice and useful to have on file if the Charity Commission ever raises a query.</p>
 
 <h2>Need an independent examination arranged?</h2>
-<p>If your charity's gross income means you need a member of a listed professional body to carry out the examination, or if you simply want to be sure the appointment is compliant, our <a href="/services/independent-examination">independent examination service</a> covers charities at all income levels. Get in touch via our <a href="/contact">contact page</a> and we will come back within 24 hours.</p>
+<p>If your charity's gross income means you need a member of a listed professional body to carry out the examination, or if you simply want to be sure the appointment is compliant, our <a href="/services/independent-examination">independent examination service</a> covers charities at all income levels. Get in touch via our <a href="/contact">contact page</a>.</p>

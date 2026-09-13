@@ -12,7 +12,6 @@ import { siteConfig } from "@/config/site";
 import {
   ArrowRight,
   ShieldCheck,
-  Quote,
   FileCheck,
   Heart,
   BookOpen,
@@ -21,7 +20,8 @@ import {
   Building2,
   ClipboardList,
 } from "lucide-react";
-import { buildFaqJsonLd, buildOrganizationJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd } from "@/lib/schema";
+import { allTools, toolPath } from "@/lib/calculators/registry";
 
 export function generateMetadata(): Metadata {
   return {
@@ -59,7 +59,7 @@ const keyStats = [
 const servicesOverview = [
   {
     title: "Independent examination",
-    body: "For charities with income between the examination threshold (£25,000, or £40,000 for financial years ending on or after 30 September 2026) and the audit threshold. We conduct the examination, produce the examiner's report, and file with the Commission on time.",
+    body: "For charities with income between the examination threshold (£25,000, or £40,000 for financial years ending on or after 30 September 2026) and the audit threshold. We prepare the accounts with the examination in mind and connect you with an independent examiner.",
     href: "/services/independent-examination",
     Icon: FileCheck,
   },
@@ -110,7 +110,7 @@ const complianceMoments = [
         (£40,000 for financial years ending on or after 30 September 2026), trustees must
         arrange external scrutiny for the first time. Many boards reach this point mid-year
         and are unsure whether they need an independent examination or an audit. We assess
-        the right route and handle the engagement from there.
+        the right route and arrange the engagement from there.
       </>
     ),
   },
@@ -167,24 +167,6 @@ const complianceMoments = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "We crossed £25,000 income mid-year and had no idea we needed an examiner. They explained the process plainly, carried out the examination and filed everything with the Commission well inside the deadline.",
-    attribution: "Trustee, small community charity, East Midlands",
-  },
-  {
-    quote:
-      "Our Gift Aid process was a mess. Declarations were missing donor addresses and we had been claiming on donations where benefits exceeded the limits. They restructured everything and we have claimed correctly ever since.",
-    attribution: "Finance lead, grant-making trust, South East England",
-  },
-  {
-    quote:
-      "As a CIC we are not a charity, but the accounting requirements still catch people out. They know the CIC34, asset-lock rules and corporation tax position. We have never had a late filing.",
-    attribution: "Director, community interest company, Yorkshire",
-  },
-];
-
 const guideLinks = [
   { title: "Audit vs independent examination", href: "/guides/audit-vs-independent-examination" },
   { title: "Charity SORP 2026", href: "/guides/charity-sorp-2026" },
@@ -194,11 +176,12 @@ const guideLinks = [
   { title: "Set up a charity or CIO", href: "/guides/set-up-a-charity-cio" },
 ];
 
-const calculatorLinks = [
-  { title: "Gift Aid calculator", href: "/calculators/calc-gift-aid-calculator" },
-  { title: "IE vs audit threshold checker", href: "/calculators/independent-examination-vs-audit-checker" },
-  { title: "GASDS calculator", href: "/calculators/gasds-small-donations-calculator" },
-];
+// Derived from the calculator registry, which is the source of truth for slugs:
+// a hardcoded copy here shipped a 404 (calc-gift-aid-calculator).
+const calculatorLinks = allTools().map((tool) => ({
+  title: tool.name,
+  href: toolPath(tool.slug),
+}));
 
 const faqs = [
   {
@@ -224,7 +207,7 @@ const faqs = [
   {
     question: "Do you work with CICs as well as charities?",
     answer:
-      "Yes. We prepare accounts and file the CIC34 community interest report for community interest companies. CICs are regulated by the Office of the Regulator of Community Interest Companies, not the Charity Commission, and they cannot claim Gift Aid or charity rate relief. We make sure CIC clients understand what does and does not apply to their structure.",
+      "Yes. We prepare accounts and file the CIC34 community interest report for community interest companies. CICs are regulated by the Office of the Regulator of Community Interest Companies, not the Charity Commission, and they cannot claim Gift Aid or charity rate relief. We make sure CIC boards understand what does and does not apply to their structure.",
   },
   {
     question: "Can you prepare SORP-compliant accounts?",
@@ -246,10 +229,8 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
-      />
+      {/* Organization JSON-LD is emitted once, by the root layout. A second copy
+          here published the entity twice on every homepage visit. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
@@ -590,8 +571,7 @@ export default function HomePage() {
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
             Fund accounting, restricted income, the independent examination regime, Gift Aid
             declarations, the SORP, CIC34 reports: a generalist accountant encounters these
-            occasionally. We deal with them every week across our charity and social-enterprise
-            client base.
+            occasionally. They are the whole of what we work on.
           </p>
           <div className="mt-12 overflow-x-auto border border-neutral-200">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
@@ -606,7 +586,7 @@ export default function HomePage() {
                 {[
                   {
                     area: "Independent examination",
-                    detail: "Conducted to CC31 standards, examiner's report produced, filed with the Commission on schedule",
+                    detail: "Accounts prepared with the CC31 examination requirements in mind, and an independent examiner connected to your charity",
                   },
                   {
                     area: "SORP-compliant accounts",
@@ -649,38 +629,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Anonymised social proof ── */}
-      <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
-        <div className={siteContainerLg}>
-          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">Real outcomes</div>
-            <h2 id="testimonials-heading" className="text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
-              What trustees and finance leads say
-            </h2>
-            <p className="mt-3 text-sm sm:text-base text-neutral-600">
-              Composite accounts based on patterns across our charity and CIC clients.
-              Names and specific figures anonymised. The compliance situations described are real.
-            </p>
-          </div>
-          <div className="grid gap-5 sm:gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <figure
-                key={i}
-                className="relative bg-white border border-neutral-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <Quote className="absolute top-4 right-4 h-6 w-6 text-emerald-200" aria-hidden />
-                <blockquote className="text-base sm:text-lg leading-relaxed text-neutral-800 font-medium pr-8">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-neutral-100 text-xs sm:text-sm font-semibold text-neutral-500">
-                  {t.attribution}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Contact CTA ── */}
       <section className="relative overflow-hidden bg-[#0f2e24]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a5c4a]/30 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
@@ -697,9 +645,8 @@ export default function HomePage() {
               </p>
               <div className="mt-8 space-y-4">
                 {[
-                  { title: "Charity and social-enterprise specialists only", sub: "We do not take general commercial clients" },
-                  { title: "24-hour response", sub: "Usually the same working day" },
-                  { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
+                  { title: "Charity and social-enterprise specialists only", sub: "Charities, CIOs, CICs and social enterprises" },
+                  { title: "Book your free, no-obligation call today", sub: "Tell us about your organisation and we will arrange a short introductory call" },
                   { title: "England and Wales default", sub: "We flag Scotland and ask your jurisdiction upfront" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-emerald-100">

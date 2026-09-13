@@ -67,18 +67,37 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     dateModified: post.updatedDate ?? post.date,
   });
+  // FAQPage markup must match what the page shows (Google structured-data policy).
+  // Some posts already carry their Q&A inside the body HTML; anything that does not
+  // is rendered below, in the server HTML, so nothing is asserted to crawlers only.
+  const bodyText = post.contentHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").toLowerCase();
+  const unrenderedFaqs = (post.faqs ?? []).filter(
+    (f) => !bodyText.includes(f.question.replace(/\s+/g, " ").toLowerCase()),
+  );
   const faqSchema = post.faqs?.length ? buildFaqJsonLd(post.faqs) : null;
   const howToSchema = post.howToSteps?.length
     ? buildHowToJsonLd({ name: post.h1, description: post.metaDescription, steps: post.howToSteps })
     : null;
+
+  // post.schema comes straight from frontmatter, where YAML parses a nested block
+  // into an object rather than a string. Serialise whatever shape arrives so the
+  // script tag never receives "[object Object]", and supply @context when the
+  // frontmatter mapping omits it.
+  const rawSchema: unknown = post.schema;
+  const extraSchema =
+    typeof rawSchema === "string"
+      ? rawSchema
+      : rawSchema && typeof rawSchema === "object"
+        ? JSON.stringify({ "@context": "https://schema.org", ...(rawSchema as Record<string, unknown>) })
+        : null;
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: articleSchema }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema }} />}
       {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: howToSchema }} />}
-      {post.schema && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
+      {extraSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: extraSchema }} />
       )}
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
         <Link href="/blog" className="hover:underline">Blog</Link>{" "}
@@ -110,10 +129,25 @@ export default async function BlogPostPage({ params }: Props) {
         className="prose prose-neutral mt-10 max-w-none"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
+      {unrenderedFaqs.length > 0 && (
+        <section className="mt-12 border-t border-neutral-200 pt-8">
+          <h2 className="text-xl font-semibold tracking-tight text-neutral-900">
+            Frequently asked questions
+          </h2>
+          <dl className="mt-6 space-y-6">
+            {unrenderedFaqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="text-base font-semibold text-neutral-900">{faq.question}</dt>
+                <dd className="mt-2 text-sm leading-relaxed text-neutral-700">{faq.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
       <div className="mt-12 rounded-md border border-neutral-200 p-6">
         <h2 className="text-lg font-semibold text-neutral-900">Need help with your charity&apos;s accounts?</h2>
         <p className="mt-2 text-sm text-neutral-600">
-          Tell us about your charity, CIC or social enterprise and we will come back within 24 hours.
+          Tell us about your charity, CIC or social enterprise and we will arrange a short introductory call.
         </p>
         <Link href="/contact" className="mt-4 inline-block font-medium underline">
           Get in touch

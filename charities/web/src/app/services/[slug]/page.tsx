@@ -124,7 +124,7 @@ export default async function ServicePage({
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to a charity accounts specialist.</h2>
           <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-            Tell us about your charity, CIC or social enterprise and we will reply within 24 hours. No obligation.
+            Tell us about your charity, CIC or social enterprise and we will arrange a short introductory call. No obligation.
           </p>
           <div className="mt-8">
             <Link href="/contact" className={btnPrimary}>Get in touch</Link>

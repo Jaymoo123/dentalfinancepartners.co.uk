@@ -4,7 +4,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "Contact us",
-  description: `Speak to ${siteConfig.name} about accounts, independent examination, Gift Aid, VAT and trustee compliance. We reply within 24 hours.`,
+  description: `Speak to ${siteConfig.name} about accounts, independent examination, Gift Aid, VAT and trustee compliance.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
@@ -13,7 +13,7 @@ export default function ContactPage() {
     <main className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">Contact us</h1>
       <p className="mt-4 text-neutral-600">
-        Tell us about your charity, CIC or social enterprise. We reply within 24 hours.
+        Tell us about your charity, CIC or social enterprise.
       </p>
       <div className="mt-10">
         <LeadForm />

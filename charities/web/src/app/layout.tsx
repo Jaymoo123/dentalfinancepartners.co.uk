@@ -27,13 +27,14 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  alternates: {
-    canonical: siteUrl,
-    languages: {
-      "en-GB": siteUrl,
-      "x-default": siteUrl,
-    },
-  },
+  // No `alternates` here on purpose. Next.js metadata inheritance hands a root
+  // canonical (and root hreflang) to every route that does not set its own, so a
+  // default here silently canonicalises whole route families to the homepage.
+  // Every indexable route declares its own self-referencing canonical in its
+  // page metadata instead. Two deliberate exceptions stay as they are:
+  // /embed/[slug] canonicalises to its parent /calculators/[slug] (the embed is
+  // a duplicate of the tool page), and /book, /complete and /thank-you are
+  // noindex conversion pages, so they need no canonical at all.
   verification: {
     google: niche.seo.search_console_verification?.google || undefined,
     yandex: niche.seo.search_console_verification?.yandex || undefined,

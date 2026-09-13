@@ -151,12 +151,12 @@
   },
   "cta": {
     "sticky_primary": "Speak to a charity accounts specialist",
-    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_secondary": "Book your free, no-obligation call today",
     "sticky_button": "Get in touch"
   },
   "blog": {
     "cta_heading": "Need help with your charity's accounts?",
-    "cta_body": "Tell us about your charity, CIC or social enterprise and we will come back within 24 hours.",
+    "cta_body": "Every charity, CIC and social enterprise is different. If you would like to discuss how this applies to your specific circumstances, fill in the form below and we will arrange a short introductory call.",
     "cta_button": "Get in touch"
   },
   "shared_components_version": "1.0.0",

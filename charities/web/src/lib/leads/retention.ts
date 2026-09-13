@@ -1,11 +1,15 @@
 /**
  * Lead data retention purge (GDPR anonymisation).
  *
- * The privacy notice promises: "We keep enquiry data for
- * {company.enquiryRetentionMonths} months from the date of your enquiry,
- * after which it is deleted." The data-sharing agreement requires
- * deletion/anonymisation of contact details and message content within 3
- * months of the enquiry date.
+ * The privacy notice promises that enquiry data is kept for
+ * {company.enquiryRetentionMonths} months from the date of the enquiry and is
+ * anonymised after that. That published figure is the operative promise:
+ * legal/DSA_TEMPLATE.md clause 11.1 requires deletion or anonymisation no later
+ * than the period the site publishes, and in any event no later than 24 months
+ * from the enquiry, so the DSA is a 24-month ceiling that defers to the notice.
+ * The "within 3 months" obligation this header used to cite came from the DJH
+ * agreement, which was superseded on 10 August 2026 (legal/_archive/README.md)
+ * and binds nothing. This mirror exists to keep the purge matching the notice.
  *
  * We ANONYMISE rather than hard-delete so the consent record and audit trail
  * survive (consent_text, consent_at, status, source, created_at are never

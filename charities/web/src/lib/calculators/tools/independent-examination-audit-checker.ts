@@ -155,7 +155,7 @@ export const independentExaminationAuditChecker: GenericTool = {
     {
       question: "Do the same thresholds apply in Scotland?",
       answer:
-        "No. Scottish charities answer to OSCR and all of them need external scrutiny of some form, however small. The income and asset thresholds also differ. If your charity is registered in Scotland (or cross-border), use the OSCR guidance, not the England and Wales figures in this checker.",
+        "No. Scottish charities answer to OSCR and all of them need external scrutiny of some form, however small. The thresholds that decide the form of that scrutiny also differ: for financial years beginning on or after 1 January 2026 a Scottish charity needs an audit once gross income reaches £1,000,000, or where gross assets exceed £3.26 million, and an independent examination below that. Note the mismatch in how the two regimes date their changes: the Scottish uplift applies to financial years BEGINNING on or after 1 January 2026, while the England and Wales uplift applies to accounting years ENDING on or after 30 September 2026. If your charity is registered in Scotland (or cross-border), use the OSCR guidance, not the England and Wales figures in this checker.",
     },
     {
       question: "When do we have to prepare accruals accounts?",

@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { charityTypes } from "@/data/charity-types";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Sectors We Work With | Charities, CICs and Social Enterprises",
   description:
     "Specialist charity accounting for community interest companies, social enterprises, charitable incorporated organisations, and registered charities of all sizes.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 
 export default function ForIndexPage() {

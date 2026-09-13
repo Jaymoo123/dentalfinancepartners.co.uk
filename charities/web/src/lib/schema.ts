@@ -32,7 +32,6 @@ export function buildOrganizationJsonLd() {
       addressCountry: "GB",
     },
     areaServed: niche.seo.service_areas,
-    priceRange: "££",
     knowsAbout: [
       "charity accounts",
       "Gift Aid",

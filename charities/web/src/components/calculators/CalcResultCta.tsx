@@ -16,7 +16,7 @@ export function CalcResultCta({ campaign }: { campaign: string }) {
         formId="calc_result"
         messagePrefix={`[Calculator: ${campaign}]`}
         heading="Check your position with a charity accounts specialist"
-        blurb="A calculator gives you the shape of the answer. We confirm your exact figures, the reliefs you can claim, and what your trustees need to file. No obligation, and we reply within one working day."
+        blurb="A calculator gives you the shape of the answer. We confirm your exact figures, the reliefs you can claim, and what your trustees need to file. No obligation."
         submitLabel="Get my figures checked"
         className="rounded-2xl border-l-4 border-[var(--brand-primary)] bg-[var(--surface)] p-5 sm:p-6"
       />

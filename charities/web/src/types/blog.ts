@@ -39,8 +39,12 @@ export type BlogFrontmatter = {
   reviewedBy?: string;
   /** Reviewer credentials, becomes the reviewer jobTitle in JSON-LD (e.g. "ICAEW-qualified review"). */
   reviewerCredentials?: string;
-  /** Raw JSON-LD string from the schema builder when present */
-  schema?: string;
+  /**
+   * JSON-LD from frontmatter. YAML mappings parse to an object, so three posts
+   * carry an object here while the schema builder emits a string. The blog post
+   * renderer serialises the object case.
+   */
+  schema?: string | Record<string, unknown>;
   canonical?: string;
   faqs?: BlogFaq[];
   howToSteps?: { name: string; text: string }[];

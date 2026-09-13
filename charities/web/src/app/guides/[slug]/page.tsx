@@ -92,7 +92,7 @@ export default async function GuidePage({ params }: Props) {
 
         <div className="mt-12 rounded-xl border border-[#1a5c4a]/20 bg-[#1a5c4a]/5 px-6 py-5">
           <p className="text-sm font-semibold text-neutral-900">Need advice on your specific situation?</p>
-          <p className="mt-1 text-sm text-neutral-600">Contact us and a charity accounts specialist will reply within 24 hours.</p>
+          <p className="mt-1 text-sm text-neutral-600">Contact us and a charity accounts specialist will get back to you.</p>
           <Link href="/contact" className="mt-3 inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white hover:opacity-90 transition-opacity" style={{ background: "#1a5c4a" }}>
             Get in touch
           </Link>

@@ -28,7 +28,7 @@ export function MiniCapture({
   heading,
   blurb,
   submitLabel = "Request a callback",
-  successText = "Thanks. We'll be in touch within one working day.",
+  successText = "Thanks. We'll be in touch.",
   className = "my-8 rounded-2xl border-l-4 border-[var(--brand-primary)] bg-[var(--surface)] p-6 sm:p-8",
 }: {
   formId: string;

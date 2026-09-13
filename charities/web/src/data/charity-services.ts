@@ -18,9 +18,9 @@ export const charityServices: CharityService[] = [
     headline: "Independent examination for charities below the audit threshold",
     metaTitle: "Independent Examination for Charities | Trustee Tax",
     metaDescription:
-      "Independent examination of charity accounts required by the Charities Act. Fixed fee, Charity Commission compliant, completed within agreed timescales.",
+      "Independent examination of charity accounts required by the Charities Act. Charity Commission compliant accounts, prepared with the examination in mind.",
     intro:
-      "Charities with gross income between £25,000 and £1 million (in England and Wales; £40,000 and £1.5 million for financial years ending on or after 30 September 2026) must have their accounts independently examined rather than audited. The examination provides trustees and the Charity Commission with assurance that the accounts are presented fairly and comply with the Charities SORP.",
+      "In England and Wales, charities with gross income between £25,000 and £1 million normally have their accounts independently examined rather than audited. There is a second audit trigger to check: an audit is also mandatory once gross income exceeds £250,000 and gross assets exceed £3.26 million, so a charity inside that income band can still need an audit. For financial years ending on or after 30 September 2026 the same structure applies on higher figures: £40,000 and £1.5 million, with the combined trigger at £500,000 of income and £5 million of gross assets. The examination provides trustees and the Charity Commission with assurance that the accounts are presented fairly and comply with the Charities SORP.",
     stats: [
       { value: "£25k", label: "Examination threshold (£40k for years ending on or after 30 Sep 2026)" },
       { value: "10 months", label: "Filing deadline after year end (Charity Commission)" },
@@ -46,8 +46,8 @@ export const charityServices: CharityService[] = [
     ],
     howWeHelp: [
       {
-        title: "Conduct the independent examination",
-        body: "We carry out the independent examination of your charity's accounts, confirm compliance with the Charities SORP and provide the signed examiner's report required for Charity Commission filing.",
+        title: "Prepare for the independent examination",
+        body: "We prepare your charity's accounts with the examination in mind, check they comply with the Charities SORP, and connect you with an independent examiner who can produce the examiner's report required for Charity Commission filing.",
       },
       {
         title: "Accounts preparation support",
@@ -193,7 +193,7 @@ export const charityServices: CharityService[] = [
     intro:
       "Gift Aid allows charities to reclaim 25p for every pound donated by UK taxpayers, at no cost to the donor. The Gift Aid Small Donations Scheme (GASDS) extends similar benefits to small cash and contactless donations where no declaration is held. Together they are among the most valuable sources of additional income for eligible charities, yet many claim less than they are entitled to.",
     stats: [
-      { value: "25p", label: "Reclaimed per pound donated via Gift Aid (HP14)" },
+      { value: "25p", label: "Reclaimed per pound donated via Gift Aid" },
       { value: "£8,000", label: "Maximum eligible GASDS donations per connected charity per tax year" },
       { value: "2 years", label: "GASDS claim deadline after end of tax year" },
     ],
@@ -208,7 +208,7 @@ export const charityServices: CharityService[] = [
       },
       {
         title: "GASDS conditions",
-        body: "GASDS is available only to charities that also claim Gift Aid on the same donations in the same tax year (except in the first year). The scheme covers up to £8,000 of qualifying donations per tax year, producing a maximum top-up of £2,000; separately, GASDS donations claimed cannot exceed ten times the Gift Aid claimed in the same year. Many charities are unaware of these limits and conditions.",
+        body: "GASDS applies to small cash and contactless donations of £30 or less on which Gift Aid is not claimed and for which no declaration is held. It is never claimed on the same donation as Gift Aid. What links the two is the matching rule: for every £10 of donations claimed under GASDS the charity must claim Gift Aid on at least £1 of other donations received in the same tax year, so GASDS donations cannot exceed ten times the Gift Aid donations claimed. There is no first-year exemption from the matching rule; what changed on 6 April 2017 was the separate two-year track record needed to be eligible at all. The scheme covers up to £8,000 of qualifying donations per tax year, producing a maximum top-up of £2,000. Many charities are unaware of these limits and conditions.",
       },
       {
         title: "Claim frequency",

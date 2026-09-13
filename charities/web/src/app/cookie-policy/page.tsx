@@ -55,7 +55,8 @@ export default function CookiePolicyPage() {
           is our legitimate interest in measuring and improving the Site.
         </p>
         <p>
-          This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect
+          This data is anonymous. We do not store your IP address. We do store the approximate location our hosting
+          provider derives from it, which is the country, region, city and time zone. We do not collect
           your name, email or phone number in these events, and we do not sell or share this data. You can opt out at
           any time using the &quot;Do not track me&quot; link in the footer of every page, which immediately stops all
           analytics on your device.

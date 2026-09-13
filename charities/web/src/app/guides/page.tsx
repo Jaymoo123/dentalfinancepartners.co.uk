@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllGuides } from "@/lib/guides/content";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Charity Finance Guides | Trustee Tax",
   description:
     "Free guides on charity accounts, independent examination, Gift Aid, charity VAT and trustee compliance from Trustee Tax.",
+  alternates: { canonical: `${siteConfig.url}/guides` },
 };
 
 export default function GuidesIndexPage() {
