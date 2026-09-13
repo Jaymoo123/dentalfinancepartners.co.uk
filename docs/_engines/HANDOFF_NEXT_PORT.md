@@ -21,13 +21,11 @@ and NOTHING IS DEPLOYED. Production serves the pre-port SHA on every site. Eleve
 remain. Do not push and do not deploy: both are owner-triggered, and the walk happens at
 the end once everything is done.
 
-**Inherited debt on contractors-ir35, state it to the owner, do not silently absorb it:**
-phases 3, 4, 5 and 6 were tagged WITHOUT an independent adversarial fidelity review, and
-the per-package verification lists were never executed. The site-wide gates all passed
-(build, tests, sweep, browser check, dependency closure, predeploy gate), but rows marked
-UNVERIFIED in `docs/contractors-ir35/_port/P3-*`, `P4-*`, `P5-*`, `P6-*` are still
-unverified. This is real: the phase 2 review on that site overturned the manager's own
-triage and found 209 REAL contrast failures where he had assumed instrument noise.
+**contractors-ir35 is genuinely finished:** all seven phases built, independently reviewed,
+gap-fixed, gated and tagged. No inherited debt. The reviews were run AFTER the first tagging,
+at the owner's instruction, and they were worth it: they found a site-wide regression that
+rendered every corner radius at 4px instead of 12px with the scale inverted, and a banned card
+affordance the port itself had created. Neither was in any of the 22 verification lists.
 
 WHICH SITE. Derive it, do not read it from a doc. Run `git tag -l 'port-*'` for what is
 done, take the order from `docs/_engines/PROPERTY_STANDARD_ROLLOUT.md`, and confirm with
@@ -94,6 +92,24 @@ the full site chrome leaking into every partner's embedded calculator.
 
 ## TRAPS ADDED BY THE LAST PORT, read these before phase 1
 
+- **NEVER DECLARE A CUSTOM PROPERTY WHOSE NAME COLLIDES WITH A TAILWIND V4 THEME VARIABLE
+  OUTSIDE `@theme`.** `--radius-*`, `--color-*`, `--font-*`, `--spacing-*`, `--text-*`,
+  `--leading-*`, `--shadow-*`. One `--radius-xl` in an unlayered `:root` shadowed the layered
+  theme value, and `.rounded-xl` READS that property, so every corner on the site rendered 4px
+  instead of 12px and the scale inverted (`rounded-xl` squarer than `rounded-lg`). 146 site call
+  sites plus 42 in the kit. Both values were in the shipped stylesheet; the unlayered one won.
+  Delete the shadow rather than pinning it to the right value: pinning keeps the bug class alive.
+  Sweep by NAME collision, not by whether a utility "looks literal". A report on that site
+  asserted `rounded-xl` was "a literal Tailwind utility, not an arbitrary var() read", which is
+  false in v4 and is why it shipped.
+- **THE CALIBRATION FIGURES IN CIRCULATION ARE TAILWIND V3.** slate-500 on white = 4.76 and
+  slate-400 = 2.56 are v3 hexes. v4 paints those steps 4.76 and **2.63**. Self-test against the
+  version the site actually ships, and say which table you used.
+- **AGREEMENT BETWEEN AGENTS IS NOT EVIDENCE.** Four times on the last port, two independent
+  agents agreed on a defect that did not exist: the footer studio credit (the owner's own
+  estate-wide decision), a token said to break 12 files (zero consumers), a contrast failure
+  measured on a stale build, and a content package filed as unbuilt that was fully written. Only
+  the measurement counts, and the measurement has to be on the CURRENT build.
 - **THE AUDIT COMMAND IN OUR OWN DOCS COULD NOT FIND THE DEFECT IT DESCRIBED.**
   `grep -nE "^[a-zA-Z][^{]*\{"` requires the first character to be a letter, so it can
   never match a class selector, which starts with a dot, while the notes claimed it did.
