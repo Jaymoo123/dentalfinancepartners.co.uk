@@ -27,6 +27,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+/**
+ * Bare iframe document. NO PageShell: no header, no footer, no skip link, no
+ * sticky, no lead panel. That is now enforced by `ChromeGate` inside
+ * `PageShell` (see that file for why it is not `app/embed/layout.tsx`), because
+ * the root layout mounts `PageShell` for every route and this document renders
+ * inside a third party's page.
+ *
+ * Section order is tool -> attribution -> resize script. Nothing else, ever.
+ * The canonical points AWAY, at the indexable twin `/calculators/<slug>`: two
+ * tools at one URL each is the point, and the embed must never compete with it.
+ */
 export default async function CalculatorEmbedPage({ params }: Props) {
   const { slug } = await params;
   const tool = getGenericTool(slug);
@@ -40,7 +51,7 @@ export default async function CalculatorEmbedPage({ params }: Props) {
           href={`${siteConfig.url}/calculators/${tool.slug}?utm_source=partner-embed&utm_medium=iframe&utm_campaign=${tool.slug}`}
           target="_blank"
           rel="noopener"
-          className="text-xs text-neutral-500 hover:text-cyan-700 transition-colors"
+          className="text-xs text-neutral-600 transition-colors hover:text-primary-600"
         >
           Powered by <span className="font-bold text-neutral-700">{siteConfig.name}</span> &middot; specialist UK contractor accountants
         </a>

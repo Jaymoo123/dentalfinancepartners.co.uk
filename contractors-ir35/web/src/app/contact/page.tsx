@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -13,23 +14,39 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
+      {/* Hero. Mono eyebrow hand-rolled from utilities: the `.eyebrow` class is
+          UNLAYERED in globals.css and pins `color: var(--accent)`, so no utility
+          can override it. cyan-400 on neutral-900 measures 9.92. */}
+      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <p className="eyebrow text-cyan-400">Get in touch</p>
-          <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Book a free call.
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            Talk through your IR35 position, your current structure, or any contractor tax question. No hard sell, no obligation.
-          </p>
+          <div className="max-w-3xl">
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400">
+              Get in touch
+            </p>
+            <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Book a free call.
+            </h1>
+            <p className="mt-4 text-lg leading-relaxed text-neutral-300">
+              Talk through your IR35 position, your current structure, or any contractor tax question. No hard sell, no obligation.
+            </p>
+            <Link
+              href="#book"
+              className={`${btnPrimary} mt-8 rounded-xl`}
+              data-cta="hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+            >
+              Book a free call
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="bg-[#fafaf7]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+      <section className="bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
           <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
             <div className="min-w-0">
-              <h2 className="text-2xl font-semibold tracking-tight">How it works</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-neutral-900">How it works</h2>
               <ol className="mt-8 space-y-8">
                 {[
                   {
@@ -49,7 +66,7 @@ export default function ContactPage() {
                   },
                 ].map((step) => (
                   <li key={step.n} className="flex gap-5">
-                    <span className="font-mono text-2xl font-semibold text-cyan-700 tabular-nums" aria-hidden>
+                    <span className="font-mono text-2xl font-semibold text-primary-600 tabular-nums" aria-hidden>
                       {step.n}
                     </span>
                     <div className="min-w-0">
@@ -65,8 +82,14 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="border border-neutral-200 bg-white p-6 sm:p-8 lg:p-10">
-              <LeadForm submitLabel="Send enquiry" />
+            {/* The form IS this page's closing ask, so there is no LeadCTAPanel
+                below it: a second capture surface on the capture page asks a
+                reader to do the thing they are already doing. `scroll-mt-24` is
+                load-bearing, the sticky header covers the heading without it. */}
+            <div id="book" className="scroll-mt-24 min-w-0">
+              <div className="rounded-xl bg-white p-6 ring-1 ring-neutral-200/70 sm:p-8 lg:p-10">
+                <LeadForm submitLabel="Send enquiry" />
+              </div>
             </div>
           </div>
         </div>

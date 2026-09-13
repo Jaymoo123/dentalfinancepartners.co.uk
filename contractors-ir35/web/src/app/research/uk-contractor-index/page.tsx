@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
@@ -115,11 +116,29 @@ function Stat({ value, label }: { value: string; label: string }) {
   );
 }
 
+// Section grounds alternate white / slate-50 so two touching bands never share a
+// ground (DESIGN_SYSTEM §0.1). Derived from the live section order rather than
+// hand-set per call site, so a conditional section cannot silently create a clash.
+const SECTION_ORDER: string[] = [
+  "key-facts",
+  "incorporations",
+  "monthly",
+  ...(reform_overlay ? ["reform-overlay"] : []),
+  "breakdown",
+  "methodology",
+  "book",
+  "faq",
+];
+const groundFor = (id: string) =>
+  SECTION_ORDER.indexOf(id) % 2 === 0 ? "bg-white" : "bg-slate-50";
+
 function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
+    <section id={id} className={`scroll-mt-24 ${groundFor(id)} py-12 sm:py-16 lg:py-20`}>
+      <div className={siteContainerLg}>
+        <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
+        <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
+      </div>
     </section>
   );
 }
@@ -184,7 +203,7 @@ export default function UKContractorIndexPage() {
           </p>
 
           {isPlaceholder ? (
-            <p className="mt-4 max-w-3xl rounded-lg border border-amber-400/40 bg-amber-400/10 px-4 py-3 text-sm text-amber-200">
+            <p className="mt-4 max-w-3xl rounded-xl border border-amber-400/40 bg-amber-400/10 px-4 py-3 text-sm text-amber-200">
               Preview build: the figures shown are placeholder values awaiting the Companies House
               ingest. They are illustrative only and not for citation until the live dataset lands.
             </p>
@@ -208,16 +227,23 @@ export default function UKContractorIndexPage() {
               label={`year-on-year change in ${monthLabel(lastSettled)}`}
             />
           </div>
+
+          <a
+            href="#book"
+            data-cta="hero_book"
+            data-cta-placement="hero"
+            data-cta-goal="form"
+            className="mt-8 inline-flex min-h-12 min-w-[10rem] items-center justify-center rounded-xl bg-cyan-700 px-8 py-3.5 text-base font-bold tracking-wide text-white transition-colors duration-150 hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+          >
+            Get a free IR35 review
+          </a>
         </div>
       </section>
 
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
+      {/* Key facts */}
+      <section id="key-facts" className="scroll-mt-24 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl">
-
-            {/* Key facts */}
-            <div className="rounded-2xl border border-cyan-500/20 bg-cyan-50/60 p-6 sm:p-8">
+          <div className="rounded-xl bg-cyan-50/60 p-6 ring-1 ring-cyan-700/20 sm:p-8">
               <h2 className="text-lg font-bold text-cyan-900">Key facts</h2>
               <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
                 <li>
@@ -253,16 +279,18 @@ export default function UKContractorIndexPage() {
                 provisional (Companies House indexing lag) and are excluded from the headline figures
                 above. Figures may be cited with attribution to Contractor Tax Accountants.
               </p>
-            </div>
+          </div>
+        </div>
+      </section>
 
-            <Section id="incorporations" title="IT consultancy company formations by year">
+      <Section id="incorporations" title="IT consultancy company formations by year">
               <p>
                 Each bar shows the number of new companies incorporated in that calendar year under
                 SIC code {PRIMARY}, {meta.sic_labels[PRIMARY]?.toLowerCase()}. Only complete calendar
                 years are shown. IT consultancy is the single largest contractor sector by company
                 formation and the clearest signal of the limited-company route into independent work.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                 <AnnualIncorporationsChart annual={incorporations.annual} sic={PRIMARY} />
               </div>
             </Section>
@@ -273,7 +301,7 @@ export default function UKContractorIndexPage() {
                 most recent {meta.provisional_months.length} months, which are provisional because
                 Companies House indexes very recent incorporations with a short lag.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                 <MonthlyIncorporationsChart
                   monthly={incorporations.monthly}
                   sic={PRIMARY}
@@ -291,7 +319,7 @@ export default function UKContractorIndexPage() {
                   2021, when they extended to medium and large private sector engagers, the point
                   at which most of the contractor market became affected.
                 </p>
-                <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <div className="not-prose mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                   <ReformOverlayChart
                     annual={incorporations.annual}
                     reformYears={reform_overlay.reform_dates.map((r) => ({
@@ -461,50 +489,55 @@ export default function UKContractorIndexPage() {
               </p>
             </Section>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-cyan-200 bg-gradient-to-br from-cyan-50 to-white p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-cyan-900 sm:text-3xl">
-                Going limited? Model your take-home first.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                The rise in contractor-sector companies reflects how most independent professionals
-                now work: through their own limited company. Whether that is right for you turns on
-                your IR35 status. Our calculators show what you would actually keep, inside or outside
-                IR35, on 2026/27 rates.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
-                <Link
-                  href="/calculators/outside-ir35-take-home-calculator"
-                  className="text-cyan-800 hover:text-cyan-900"
-                >
-                  Outside IR35 take-home calculator &rarr;
-                </Link>
-                <Link
-                  href="/calculators/inside-ir35-take-home-calculator"
-                  className="text-cyan-800 hover:text-cyan-900"
-                >
-                  Inside IR35 take-home calculator &rarr;
-                </Link>
-              </div>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />
-              </div>
-            </div>
+      {/* Closing ask: the kit's LeadCTAPanel, the same call shape the locations
+          and glossary routes use. `contained` so no dark band touches the dark
+          footer; ground follows this page's own alternation. `proofPoints` is
+          EMPTY on purpose: the kit/reference defaults publish a fee claim and a
+          turnaround promise, both banned on this site. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground={groundFor("book") === "bg-white" ? "white" : "slate"}
+          eyebrow="Free call"
+          title="Going limited? Model your take-home first."
+          description="The rise in contractor-sector companies reflects how most independent professionals now work: through their own limited company. Whether that is right for you turns on your IR35 status. Our calculators show what you would actually keep, inside or outside IR35, on 2026/27 rates."
+          proofPoints={[]}
+          formTitle="Book your free call"
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />}
+          footnote={
+            <span className="flex flex-wrap gap-x-6 gap-y-2 font-semibold">
+              <Link
+                href="/calculators/outside-ir35-take-home-calculator"
+                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
+              >
+                Outside IR35 take-home calculator &rarr;
+              </Link>
+              <Link
+                href="/calculators/inside-ir35-take-home-calculator"
+                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
+              >
+                Inside IR35 take-home calculator &rarr;
+              </Link>
+            </span>
+          }
+        />
+      </div>
 
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
+      {/* FAQ. Always-open markup: every answer is in server HTML, which is what
+          makes buildFaqJsonLd over the same array truthful. Never a Radix
+          accordion without forceMount (DESIGN_DELTA §4 P2). */}
+      <section id="faq" className={`scroll-mt-24 ${groundFor("faq")} py-12 sm:py-16 lg:py-20`}>
+        <div className={siteContainerLg}>
+          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
+            Frequently asked questions
+          </h2>
+          <div className="mt-6 space-y-6">
+            {faqs.map((f, i) => (
+              <div key={i}>
+                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
+                <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

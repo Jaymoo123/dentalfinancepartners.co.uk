@@ -22,11 +22,22 @@
  * would emit four dead links, so the last test asserts the opposite of the
  * first: no premium toolId is ever linked under /calculators/.
  */
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { existsSync } from "fs";
 import { join } from "path";
+
+// The index's closing ask is the estate `LeadCTAPanel` carrying the real
+// `LeadForm`, and `LeadForm` calls `useRouter()`, which throws outside an app
+// router ("invariant expected app router to be mounted"). Mock the router
+// surface only: renderToStaticMarkup never navigates, and every assertion
+// below is about anchors, not about the form.
+vi.mock("next/navigation", () => ({
+  useRouter: () => ({ push: () => {}, replace: () => {}, refresh: () => {}, prefetch: () => {} }),
+  usePathname: () => "/calculators",
+  useSearchParams: () => new URLSearchParams(),
+}));
 
 // The app's .tsx files are transformed with the classic JSX runtime, which
 // expects a global React. Set it before any component module is rendered.

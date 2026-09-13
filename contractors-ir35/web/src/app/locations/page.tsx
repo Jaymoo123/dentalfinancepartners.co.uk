@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, ArrowRight, Building2 } from "lucide-react";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { ArrowRight, Building2 } from "lucide-react";
+import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { CITIES } from "./[slug]/data";
 
@@ -42,7 +44,7 @@ function CityCard({ slug }: { slug: string }) {
   return (
     <Link
       href={`/locations/${city.slug}`}
-      className="group block bg-white border border-neutral-200 hover:border-cyan-700 hover:shadow-md transition-all overflow-hidden"
+      className="group flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
     >
       {city.heroImage ? (
         <div className="relative h-44 w-full overflow-hidden bg-neutral-100">
@@ -51,30 +53,33 @@ function CityCard({ slug }: { slug: string }) {
             alt={city.heroImage.alt}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
       ) : (
-        <div className="relative h-44 w-full bg-gradient-to-br from-cyan-700 to-cyan-900 flex items-center justify-center">
-          <Building2 className="h-12 w-12 text-white opacity-40" />
+        <div className="relative flex h-44 w-full items-center justify-center bg-gradient-to-br from-primary-600 to-primary-800">
+          <Building2 aria-hidden className="h-12 w-12 text-white opacity-40" />
         </div>
       )}
       <div className="p-5 sm:p-6">
-        <p className="text-xs font-bold uppercase tracking-wider text-neutral-500 mb-1">
+        <p className="mb-1 text-xs font-bold uppercase tracking-wider text-neutral-600">
           {city.region}
         </p>
-        <h3 className="text-xl font-bold text-neutral-900 group-hover:text-cyan-800 transition-colors">
+        <h3 className="text-xl font-bold text-neutral-900">
           Contractor accountants in {city.name}
         </h3>
         {city.keySectors.length > 0 && (
-          <p className="mt-2 text-sm text-neutral-500 leading-relaxed line-clamp-2">
+          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-neutral-600">
             {city.keySectors.slice(0, 3).map((s) => s.name).join(" · ")}
           </p>
         )}
-        <div className="mt-4 flex items-center text-cyan-700 font-semibold text-sm">
+        <span className="mt-4 inline-flex items-center text-sm font-semibold text-primary-600">
           View {city.name} page
-          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-        </div>
+          <ArrowRight
+            aria-hidden
+            className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+          />
+        </span>
       </div>
     </Link>
   );
@@ -86,10 +91,13 @@ function SimpleCityLink({ slug }: { slug: string }) {
   return (
     <Link
       href={`/locations/${city.slug}`}
-      className="group flex items-center justify-between gap-2 border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-700 transition-colors hover:border-cyan-700 hover:bg-cyan-50 hover:text-cyan-800"
+      className="group flex items-center justify-between gap-2 rounded-xl bg-white px-4 py-3 text-sm text-neutral-700 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
     >
       <span className="truncate font-medium">{city.name}</span>
-      <ArrowRight className="h-3 w-3 shrink-0 group-hover:translate-x-0.5 transition-transform" />
+      <ArrowRight
+        aria-hidden
+        className="h-3 w-3 shrink-0 transition-transform group-hover:translate-x-0.5"
+      />
     </Link>
   );
 }
@@ -106,8 +114,10 @@ export default function LocationsIndexPage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-neutral-900 py-16 sm:py-20">
+      {/* Hero. Mono eyebrow rather than the `.eyebrow` class: that rule is
+          UNLAYERED in globals.css and pins `color: var(--accent)`, which
+          measures 3.69 on this ground and cannot be overridden by a utility. */}
+      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Breadcrumb
             siteUrl={siteConfig.url}
@@ -118,82 +128,114 @@ export default function LocationsIndexPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-cyan-700 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              <MapPin className="h-3.5 w-3.5" />
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400">
               UK coverage
-            </div>
-            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            </p>
+            <h1 className="mt-3 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               Contractor and IR35 accountants across the UK
             </h1>
-            <p className="mt-4 text-lg text-neutral-300 leading-relaxed">
+            <p className="mt-4 text-lg leading-relaxed text-neutral-300">
               {totalCities > 0
                 ? `Specialist contractor and IR35 accountants serving contractors in ${totalCities} of the UK's biggest contracting markets, entirely remotely. Each city page covers the dominant contractor sectors and the local off-payroll picture. National coverage, remote-first.`
                 : "Specialist contractor and IR35 accountants serving contractors across the UK, entirely remotely. National coverage, remote-first."}
             </p>
+            <Link
+              href="#book"
+              className={`${btnPrimary} mt-8 rounded-xl`}
+              data-cta="hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+            >
+              Book a free call
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* City listing */}
-      <section className="bg-stone-50 py-16 sm:py-20">
+      {/* City listing. White body ground, container measure, no inner clamp. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-6xl mx-auto">
-            {totalCities === 0 ? (
-              <div className="border border-neutral-200 bg-white p-10 text-center">
-                <Building2 className="h-10 w-10 text-cyan-300 mx-auto mb-4" />
-                <h2 className="text-xl font-bold text-neutral-900 mb-2">
-                  Location pages coming soon
-                </h2>
-                <p className="text-neutral-600 max-w-md mx-auto">
-                  We cover the whole of the UK remotely. Detailed city pages are
-                  being added now. In the meantime,{" "}
-                  <Link
-                    href="/contact"
-                    className="text-cyan-700 underline hover:text-cyan-800 font-semibold"
-                  >
-                    book a free call
-                  </Link>{" "}
-                  and we will help you wherever you contract.
-                </p>
-              </div>
-            ) : (
-              <>
-                {/* Priority cities as cards */}
-                {priorityAvailable.length > 0 && (
-                  <div className="mb-14">
-                    <h2 className="text-2xl font-bold text-neutral-900 mb-6 pb-3 border-b border-neutral-200">
-                      Major UK contractor markets
-                    </h2>
-                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                      {priorityAvailable.map((s) => (
-                        <CityCard key={s} slug={s} />
-                      ))}
-                    </div>
+          {totalCities === 0 ? (
+            <div className="rounded-xl bg-white p-10 text-center ring-1 ring-neutral-200/70">
+              <h2 className="mb-2 text-xl font-bold text-neutral-900">
+                Location pages coming soon
+              </h2>
+              <p className="mx-auto max-w-md text-neutral-600">
+                We cover the whole of the UK remotely. Detailed city pages are
+                being added now. In the meantime,{" "}
+                <Link
+                  href="/contact"
+                  className="font-semibold text-primary-600 underline hover:text-primary-700"
+                >
+                  book a free call
+                </Link>{" "}
+                and we will help you wherever you contract.
+              </p>
+            </div>
+          ) : (
+            <>
+              {/* Priority cities as cards */}
+              {priorityAvailable.length > 0 && (
+                <div className="mb-14">
+                  <h2 className="mb-6 border-b border-neutral-200 pb-3 text-2xl font-bold text-neutral-900">
+                    Major UK contractor markets
+                  </h2>
+                  <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    {priorityAvailable.map((s) => (
+                      <CityCard key={s} slug={s} />
+                    ))}
                   </div>
-                )}
+                </div>
+              )}
 
-                {/* Remaining cities as compact links */}
-                {restSlugs.length > 0 && (
-                  <div className="mb-14 last:mb-0">
-                    <h2 className="text-2xl font-bold text-neutral-900 mb-6 pb-3 border-b border-neutral-200">
-                      More UK locations
-                    </h2>
-                    <p className="mb-4 text-sm text-neutral-600">
-                      {restSlugs.length} further location pages, each with the
-                      local contractor scene and IR35 FAQs.
-                    </p>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
-                      {restSlugs.map((s) => (
-                        <SimpleCityLink key={s} slug={s} />
-                      ))}
-                    </div>
+              {/* Remaining cities as compact links */}
+              {restSlugs.length > 0 && (
+                <div className="mb-14 last:mb-0">
+                  <h2 className="mb-6 border-b border-neutral-200 pb-3 text-2xl font-bold text-neutral-900">
+                    More UK locations
+                  </h2>
+                  <p className="mb-4 text-sm text-neutral-600">
+                    {restSlugs.length} further location pages, each with the
+                    local contractor scene and IR35 FAQs.
+                  </p>
+                  <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                    {restSlugs.map((s) => (
+                      <SimpleCityLink key={s} slug={s} />
+                    ))}
                   </div>
-                )}
-              </>
-            )}
-          </div>
+                </div>
+              )}
+            </>
+          )}
         </div>
       </section>
+
+      {/* Closing ask, `contained` so no dark band touches the dark footer.
+          `proofPoints` intentionally EMPTY, see the glossary index. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          eyebrow="Free call"
+          title="Talk to a contractor and IR35 specialist wherever you contract"
+          description="We act for contractors across the UK entirely remotely. Tell us about your contract and your structure, and we will tell you what is worth changing."
+          proofPoints={[]}
+          formTitle="Book your free call"
+          form={<LeadForm submitLabel="Request a callback" />}
+          footnote={
+            <>
+              No obligation. If you would rather write to us first, use the{" "}
+              <Link
+                href="/contact"
+                className="font-semibold text-primary-600 underline hover:text-primary-700"
+              >
+                contact form
+              </Link>
+              .
+            </>
+          }
+        />
+      </div>
     </>
   );
 }

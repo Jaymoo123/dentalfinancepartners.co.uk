@@ -318,10 +318,13 @@ navy-on-navy links at ratio 1.00, which had been mis-filed for a phase as a foot
 and the header's primary CTA label painted navy on the copper ground at 3.49. Moving the
 block inside `@layer base` fixed both. **Property carries no bare `a` rule at all, which is
 exactly why the kit chrome is written assuming the utility wins.**
-Deriving command, run it in Phase 0 on any site:
-`grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css` lists every unlayered element
+Deriving command, run it in Phase 0 on any site — **CORRECTED 2026-09-13, see the
+2026-09-13 contractors-ir35 entry below; the command and the claim that follows it were
+both wrong and were believed for two phases**:
+~~`grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css` lists every unlayered element
 rule. Unlayered CLASS rules (Medical has `.hero-brand`) carry the same hazard and that regex
-does catch them.
+does catch them.~~ FALSE: `^[a-zA-Z]` requires a letter in column 1 and cannot match `.`, so
+it CANNOT catch a class rule. Use the brace-depth walk in the 2026-09-13 entry instead.
 Also worth knowing: the hazard is not only colour. Medical's unlayered
 `input, textarea, select` sets `border-radius: 8px`, so it silently beats the radius system
 the token phase had just shipped.
@@ -351,11 +354,50 @@ colour utility of its own still renders navy no matter what colour its parent se
 base element rule is still a declaration and inheritance is not. That put the `/blog` hero
 breadcrumb at ratio 1.04, navy on navy, on a component that looked correct in source because the
 parent was `text-white`.
-Deriving command, unchanged from the phase-2 entry:
-`grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css`.
+Deriving command, unchanged from the phase-2 entry — **now corrected, see below**.
 RULE: fix it at the COMPONENT. Give the link its own colour class per variant and never rely on
 inheritance to colour an anchor. Layering the rule makes utilities win; it does not make
 inheritance win.
+
+**2026-09-13, contractors-ir35 (F11). The deriving command above is wrong, and it is why the
+phase-0 audit for this site reported 3 unlayered rules when there were 26.**
+`grep -nE "^[a-zA-Z][^{]*\{"` requires the first character to be a letter, so it cannot match a
+class selector (`.eyebrow`, `.prose-blog`, …) — it was never able to answer the question it was
+being used to answer. A stricter pattern, `^[a-zA-Z.#\[][^{]*\{`, is still not good enough: it
+still reads only the last line of a multi-line selector list (so `.prose-blog ul,` /
+`.prose-blog ol {` is seen as one rule named `.prose-blog ol`), it misses selectors starting
+`*` or `:` (`*, *::before, *::after` and `:where(...)` are both invisible to it), and — the
+actual defect — it has no concept of `@layer` boundaries, which is the real question being
+asked. `.prose-blog a` was beating `text-white` on the ToolIsland CTA across all 62 blog posts
+at ratio 1.38, and `.eyebrow` was beating `text-cyan-400` on `/about` and `/contact` at 3.35.
+Full method and inventory: `docs/contractors-ir35/_port/F10_UNLAYERED_SWEEP.md` §1.
+**Correct method, replaces the grep above:** a brace-depth walk that strips comments and, for
+every rule found, reports the stack of enclosing `@layer` blocks — the answer is `[]`
+(unlayered) or a layer name, never a guess:
+```
+python - <<'PY'
+import re
+s=open('src/app/globals.css',encoding='utf8').read()
+s=re.sub(r'/\*.*?\*/',lambda m:''.join(c if c=='\n' else ' ' for c in m.group()),s,flags=re.S)
+lines=s.split('\n'); stack=[]
+for i,l in enumerate(lines,1):
+    for j,ch in enumerate(l):
+        if ch=='{':
+            k=i-2; pre=[]
+            while k>=0 and lines[k].strip().endswith(','): pre.insert(0,lines[k].strip()); k-=1
+            sel=(' '.join(pre)+' '+l[:j].strip()).strip()
+            lay=[x for x in stack if x.startswith('@layer')]
+            if not sel.startswith(('@layer','@media','@theme','@keyframes')) and sel!=':root':
+                print(f"{i:>5}  {lay[0] if lay else '*** UNLAYERED ***':<18} {sel[:70]}")
+            stack.append(sel)
+        elif ch=='}':
+            stack and stack.pop()
+PY
+```
+**ESTATE-WIDE: every site previously audited with the old `grep -nE "^[a-zA-Z][^{]*\{"` or its
+`^[a-zA-Z.#\[]` variant (Medical, Property, Trade/construction-cis, Generalist, Solicitors,
+Dentists — every port that used the phase-0 command above) has the same undercount and should
+be re-swept with the brace-depth walk before being called clean.
 
 **2026-09-11, Medical phase 3. Two viewport clamps in one column is worse than either alone, and
 both wrong answers look right in source.** The article sidebar holds a CTA card and a table of
@@ -1174,7 +1216,11 @@ defect.
 **Undercount, five more instances, and the first OVERcounts.** Canonical: reported 1 family, was
 5. Pricing: the audit found 6 and proposed 0 edits; the re-sweep made 17 across 9 files, 11 of
 them new. Breadcrumb imports: brief said 15, was 14. Charts: brief said 9, was 8. And a ledger
-called a CORRECT saving figure wrong.
+called a CORRECT saving figure wrong. Sixth instance (F11, 2026-09-13): unlayered CSS rules,
+brief said 3, was 26 — undercount of **23** — and this one's cause was not the auditor, it was
+the documented deriving command (`grep -nE "^[a-zA-Z][^{]*\{"`, section 6 above), which cannot
+match a class selector by construction. See section 6, 2026-09-13 entry, and
+`docs/contractors-ir35/_port/F10_UNLAYERED_SWEEP.md`.
 RULE now two-sided: sweep by rule to find what a list omits, and verify the list's positives too.
 
 **Three comments described code that does not exist.** A dead component described as mounted by

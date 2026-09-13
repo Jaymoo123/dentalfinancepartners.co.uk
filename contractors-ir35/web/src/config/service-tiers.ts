@@ -31,7 +31,10 @@ export const serviceTiers: ServiceTier[] = [
       "Plain English, no jargon, no hard sell",
     ],
     cta: "Book a free call",
-    ctaHref: "/contact",
+    // On-page ask. ServiceTiers renders on / and /services only, and both now
+    // carry `<div id="book">` round the closing LeadCTAPanel. Only the header
+    // CTA and the sticky banner leave for /contact (DESIGN_SYSTEM §0.5).
+    ctaHref: "#book",
     featured: true,
   },
   {
@@ -46,8 +49,10 @@ export const serviceTiers: ServiceTier[] = [
       "Contractor expenses review and claims support",
       "Scope agreed up front, no surprises",
     ],
-    cta: "Get a quote",
-    ctaHref: "/contact",
+    cta: "Talk through the scope",
+    // Same on-page ask. "Get a quote" also read as a price promise on a site
+    // that publishes no fees, so the label states what the call actually is.
+    ctaHref: "#book",
   },
 ];
 

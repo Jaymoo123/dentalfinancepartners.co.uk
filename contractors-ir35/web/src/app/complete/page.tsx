@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
-import { siteConfig } from "@/config/site";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
@@ -24,15 +25,15 @@ export const metadata: Metadata = {
 /** Shared "needs the personal link" fallback. */
 function NeedsLinkCard() {
   return (
-    <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
+    <NoticeCard tone="slate">
       <p className="text-base text-neutral-700">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
-      <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+      <Link href="/contact" className={`${btnPrimary} mt-4 rounded-xl text-base`}>
         Go to the contact form
       </Link>
-    </div>
+    </NoticeCard>
   );
 }
 
@@ -52,15 +53,15 @@ export default async function CompletePage({
     const verdict = verifyLeadToken(token, "profile");
     if (!verdict.ok) {
       inner = (
-        <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
+        <NoticeCard tone="slate">
           <p className="text-base text-neutral-700">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
-          <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+          <Link href="/contact" className={`${btnPrimary} mt-4 rounded-xl text-base`}>
             Go to the contact form
           </Link>
-        </div>
+        </NoticeCard>
       );
     } else {
       let missing: ("name" | "phone")[] = ["name", "phone"];
@@ -89,18 +90,17 @@ export default async function CompletePage({
           bookingToken = null;
         }
         inner = (
-          <div className="border border-cyan-200 bg-cyan-50 p-6 text-center">
-            <p className="text-lg font-bold text-neutral-900">You are all set</p>
-            <p className="mt-2 text-base text-neutral-700">
+          <NoticeCard tone="primary" title="You are all set">
+            <p className="text-base text-neutral-700">
               We have everything we need. An accountant from our partner network will be in touch
               shortly. If you would like to pick a time that suits you, you can book a callback below.
             </p>
             {bookingToken && (
-              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 rounded-xl text-base`}>
                 Book a callback
               </Link>
             )}
-          </div>
+          </NoticeCard>
         );
       } else {
         inner = <DetailsForm token={token} missing={missing} />;
@@ -109,19 +109,20 @@ export default async function CompletePage({
   }
 
   return (
-    <section className="bg-white py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-neutral-900 sm:text-4xl">
-            Complete your details
-          </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-neutral-700">
-            Add the last detail we need and an accountant from our partner network will be in touch
-            to arrange your free IR35 review, no obligation.
-          </p>
-          <div className="mt-10">{inner}</div>
-        </div>
-      </div>
-    </section>
+    <>
+      <SlimHero eyebrow="One last thing" title="Complete your details">
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-300 sm:text-lg">
+          Add the last detail we need and an accountant from our partner network will be in touch
+          to arrange your free IR35 review, no obligation.
+        </p>
+      </SlimHero>
+
+      {/* The branch body is the page's only ask, whichever branch resolves. No
+          LeadCTAPanel: the reader has already converted and is mid-repair. No
+          `max-w-2xl` clamp; the container IS the measure. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>{inner}</div>
+      </section>
+    </>
   );
 }

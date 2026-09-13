@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { fmtNumber, monthLabel, type ContractorIndexSnapshot } from "@/lib/research/contractor-index";
@@ -62,17 +64,26 @@ export default function ResearchIndexPage() {
             Original, sourced reads on UK contractor and personal service company formation trends,
             built entirely from official open data. Free to read and cite with attribution.
           </p>
+          <a
+            href="#book"
+            data-cta="hero_book"
+            data-cta-placement="hero"
+            data-cta-goal="form"
+            className="mt-8 inline-flex min-h-12 min-w-[10rem] items-center justify-center rounded-xl bg-cyan-700 px-8 py-3.5 text-base font-bold tracking-wide text-white transition-colors duration-150 hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+          >
+            Get a free IR35 review
+          </a>
         </div>
       </section>
 
-      <section className="bg-white py-10 sm:py-14">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-6 sm:grid-cols-2">
             {reports.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-2xl border border-neutral-200 p-6 transition hover:border-cyan-600 hover:shadow-md sm:p-8"
+                className="group rounded-xl p-6 ring-1 ring-slate-200/70 transition hover:ring-cyan-700 hover:shadow-md sm:p-8"
               >
                 <div className="text-3xl font-bold text-cyan-700 sm:text-4xl">{r.stat}</div>
                 <div className="mt-1 text-sm text-neutral-500">{r.statLabel}</div>
@@ -80,12 +91,29 @@ export default function ResearchIndexPage() {
                   {r.title}
                 </h2>
                 <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
-                <p className="mt-4 text-xs text-neutral-400">Updated {r.updated}</p>
+                {/* slate-500 #64748b on white = 4.76:1. Was neutral-400 #a3a3a3 = 2.52:1,
+                    the --ink-whisper ramp step, a live contrast failure. */}
+                <p className="mt-4 text-xs text-slate-500">Updated {r.updated}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Closing ask: the kit's LeadCTAPanel, same call shape as the locations
+          and glossary routes. `proofPoints` EMPTY on purpose, see the articles. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          eyebrow="Free call"
+          title="Working out where you sit in this data?"
+          description="We do the work on contractor tax positions every day. Tell us about your contract and we will review your IR35 position and the structure around it on a free call, with no obligation."
+          proofPoints={[]}
+          formTitle="Book your free call"
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />}
+        />
+      </div>
     </>
   );
 }

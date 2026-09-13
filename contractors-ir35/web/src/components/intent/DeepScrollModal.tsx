@@ -101,7 +101,7 @@ export function DeepScrollModal() {
             aria-label="Close"
             data-cta="deep_scroll_close"
             onClick={() => close(true)}
-            className="text-neutral-400 hover:text-neutral-700"
+            className="text-neutral-500 hover:text-neutral-700"
           >
             &times;
           </button>

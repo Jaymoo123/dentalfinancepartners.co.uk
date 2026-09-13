@@ -15,8 +15,17 @@ import {
 } from "lucide-react";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { siteConfig } from "@/config/site";
+
+/* Hand-rolled eyebrows: `.section-label` and `.eyebrow` are UNLAYERED rules in
+   globals.css that pin their own colour and cannot be overridden by a utility. */
+const eyebrowDark =
+  "font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400";
+const eyebrowLight =
+  "font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-700";
 
 export const metadata: Metadata = {
   title: { absolute: "Contractor Accountancy Services | Contractor Tax Accountants" },
@@ -95,27 +104,39 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
+      {/* HOOK. */}
+      <section className="bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-6">What we do</div>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Contractor accountancy services
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            Specialist services for UK contractors and PSC directors. Every service we offer is designed specifically for contracting. We do not offer general accountancy services to non-contractors.
-          </p>
+          {/* Narrow measure on hero copy only. */}
+          <div className="max-w-3xl">
+            <p className={`${eyebrowDark} mb-6`}>What we do</p>
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              Contractor accountancy services
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
+              Specialist services for UK contractors and PSC directors. Every service we offer is designed specifically for contracting. We do not offer general accountancy services to non-contractors.
+            </p>
+            <Link
+              href="#book"
+              className={`${btnPrimary} mt-8 rounded-xl`}
+              data-cta="hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+            >
+              Book a free call
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="border-b border-neutral-200 bg-white py-8 sm:py-10">
+      {/* PROOF. */}
+      <section className="bg-white py-8 sm:py-10">
         <div className={siteContainerLg}>
           <StatsBar stats={siteStats} />
         </div>
       </section>
 
-      {/* Service cards */}
+      {/* SCOPE, part one: the six services. */}
       <section className="bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
@@ -125,20 +146,20 @@ export default function ServicesPage() {
                 <article
                   key={service.id}
                   id={service.id}
-                  className="scroll-mt-24 bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-cyan-700 transition-all"
+                  className="scroll-mt-24 rounded-xl bg-white p-6 ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 sm:p-8"
                 >
                   <div className="flex items-start gap-4 mb-5">
-                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center bg-cyan-700">
+                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-primary-600">
                       <Icon className="h-7 w-7 text-white" strokeWidth={1.75} />
                     </div>
                     <div>
-                      <div className="section-label">{service.label}</div>
+                      <p className={eyebrowLight}>{service.label}</p>
                       <h2 className="mt-2 text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
                         {service.title}
                       </h2>
                     </div>
                   </div>
-                  <div className="space-y-3 border-t border-neutral-100 pt-5">
+                  <div className="space-y-3 border-t border-neutral-200 pt-5">
                     {service.body.map((para, i) => (
                       <p key={i} className="text-sm leading-relaxed text-neutral-600 sm:text-base">
                         {para}
@@ -152,45 +173,57 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service tiers */}
-      <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      {/* SCOPE, part two: the tiers. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <h2 className="mb-8 text-center text-2xl font-bold text-neutral-900 sm:text-3xl">
             Ways to work with us
           </h2>
           <ServiceTiers tiers={serviceTiers} featuredBadge="Most common" />
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="border-t border-neutral-200 bg-white py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            Ready to talk through your situation?
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
-            Book a free introductory call. We will review your position and tell you plainly what we would do differently.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/contact" className={btnPrimary}>
-              Book a free call
-            </Link>
-            <Link
-              href="/contact"
-              className={`inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-cyan-700 underline-offset-4 hover:text-neutral-900 transition-colors ${focusRing}`}
-            >
-              Get in touch
-            </Link>
-          </div>
-          <p className="mt-10 text-sm text-neutral-500">
+          <p className="mt-10 text-sm text-neutral-600">
             We work with all types of UK contractors.{" "}
-            <Link href="/for" className="font-medium text-cyan-800 underline underline-offset-4 hover:text-cyan-900 transition-colors">
+            <Link
+              href="/for"
+              className={`font-medium text-primary-700 underline underline-offset-4 hover:text-primary-800 transition-colors ${focusRing}`}
+            >
               See the sectors we cover
             </Link>
             .
           </p>
         </div>
       </section>
+
+      {/* ASK. `contained` keeps a dark band off the dark footer; `ground="slate"`
+          alternates against the white section above. `proofPoints` intentionally
+          EMPTY: Property's call site passes a fee claim and a turnaround
+          promise, both banned on this site. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          eyebrow="Free call"
+          title="Ready to talk through your situation?"
+          description="Book a free introductory call. We will review your position and tell you plainly what we would do differently."
+          proofPoints={[]}
+          formTitle="Book your free call"
+          form={<LeadForm submitLabel="Request a callback" />}
+          footnote={
+            /* KNOWN CONTRACT: PanelBody renders `footnote` inside a <p>, so a
+               <div> here would be a block in a paragraph and a hydration
+               mismatch. Span only. */
+            <span>
+              No obligation. If you would rather write to us first, use the{" "}
+              <Link
+                href="/contact"
+                className="font-semibold text-primary-700 underline hover:text-primary-800"
+              >
+                contact form
+              </Link>
+              .
+            </span>
+          }
+        />
+      </div>
     </>
   );
 }

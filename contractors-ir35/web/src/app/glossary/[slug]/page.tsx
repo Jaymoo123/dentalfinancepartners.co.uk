@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { BookOpen, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./data";
 import { buildDefinedTerm, buildBreadcrumbJsonLd } from "@/lib/schema";
@@ -84,8 +86,13 @@ export default async function GlossaryEntryPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
       />
 
-      {/* Hero */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
+      {/* Hero. The category was a `bg-cyan-600` pill under a white label, which
+          measures 3.68:1 and fails the 4.5 floor in the ground role; it is now
+          the site's mono eyebrow in the on-dark accent (#22d3ee, 10.96). The
+          `.eyebrow` class itself is unusable here: it is UNLAYERED in
+          globals.css and pins `color: var(--accent)` (3.69 on this ground), so
+          no Tailwind utility can override it. */}
+      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Breadcrumb
             siteUrl={siteConfig.url}
@@ -97,71 +104,107 @@ export default async function GlossaryEntryPage({ params }: Props) {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-cyan-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              <BookOpen className="h-3.5 w-3.5" />
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400">
               {entry.category}
-            </div>
-            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            </p>
+            <h1 className="mt-3 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               {entry.term}
             </h1>
+            <Link
+              href="#book"
+              className={`${btnPrimary} mt-8 rounded-xl`}
+              data-cta="hero_book"
+              data-cta-placement="hero"
+              data-cta-goal="form"
+            >
+              Book a free call
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Definition body */}
-      <article className="bg-white py-12 sm:py-16">
+      {/* Definition body. No `max-w-3xl mx-auto` wrapper: `.prose-blog` already
+          pins its own 65ch reading measure in globals.css, so the clamp only
+          narrowed the page. The freed width becomes the second column (the
+          two-column answer §0.1 asks for), which also promotes the related
+          terms out of the tail. */}
+      <article className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
+          <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-12">
             <div
               className="article-body prose-blog"
               dangerouslySetInnerHTML={{ __html: entry.body }}
             />
 
-            {/* Lead CTA */}
-            <div className="mt-12 bg-neutral-900 p-8 text-white">
-              <h2 className="text-xl font-bold sm:text-2xl">
-                Not sure how this applies to your IR35 position?
-              </h2>
-              <p className="mt-3 text-base text-neutral-200">
-                Book a free call with a specialist contractor accountant. We will
-                review your status, check your contracts and working practices,
-                and tell you exactly where you stand. Plain English, no
-                obligation.
-              </p>
-              <Link href="/contact" className={`${btnPrimary} mt-6`}>
-                Book a free call
-              </Link>
-            </div>
-
-            {/* Related terms */}
             {related.length > 0 && (
-              <section className="mt-12 pt-12 border-t border-neutral-200">
-                <h2 className="text-xl font-bold text-neutral-900 mb-6">
-                  Related terms in {entry.category}
-                </h2>
-                <ul className="grid gap-3 sm:grid-cols-3">
-                  {related.map((r) => (
-                    <li key={r.slug}>
-                      <Link
-                        href={`/glossary/${r.slug}`}
-                        className="group block bg-stone-50 border border-neutral-200 p-4 hover:border-cyan-600 hover:bg-white transition-all"
-                      >
-                        <p className="text-sm font-bold text-neutral-900 group-hover:text-cyan-700 transition-colors">
-                          {r.term}
-                        </p>
-                        <div className="mt-2 flex items-center text-cyan-700 text-xs font-semibold">
-                          Read
-                          <ArrowRight className="ml-1 h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
-                        </div>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
+              <aside
+                className="mt-12 lg:mt-0"
+                aria-labelledby="related-terms-heading"
+              >
+                <div className="lg:sticky lg:top-24">
+                  <h2
+                    id="related-terms-heading"
+                    className="mb-4 text-sm font-bold uppercase tracking-wide text-neutral-900"
+                  >
+                    More in {entry.category}
+                  </h2>
+                  <ul className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+                    {related.map((r) => (
+                      <li key={r.slug} className="flex">
+                        <Link
+                          href={`/glossary/${r.slug}`}
+                          className="group flex h-full w-full flex-col rounded-xl bg-white p-4 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                        >
+                          <span className="text-sm font-bold leading-snug text-neutral-900">
+                            {r.term}
+                          </span>
+                          <span className="mt-2 inline-flex items-center text-xs font-semibold text-primary-600">
+                            Read
+                            <ArrowRight
+                              aria-hidden
+                              className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-0.5"
+                            />
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </aside>
             )}
           </div>
         </div>
       </article>
+
+      {/* Closing ask. Was a square `bg-neutral-900 p-8` box whose only ask left
+          the page for /contact; the panel puts the real form on the page and
+          `contained` keeps a dark band off the dark footer. `proofPoints` stays
+          EMPTY: no authored proof copy exists for this site and the kit's
+          defaults are not ours to publish. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="slate"
+          eyebrow="Free call"
+          title="Not sure how this applies to your IR35 position?"
+          description="Book a free call with a specialist contractor accountant. We will review your status, check your contracts and working practices, and tell you exactly where you stand. Plain English, no obligation."
+          proofPoints={[]}
+          formTitle="Book your free call"
+          form={<LeadForm submitLabel="Request a callback" />}
+          footnote={
+            <>
+              If you would rather write to us first, use the{" "}
+              <Link
+                href="/contact"
+                className="font-semibold text-primary-600 underline hover:text-primary-700"
+              >
+                contact form
+              </Link>
+              .
+            </>
+          }
+        />
+      </div>
     </>
   );
 }

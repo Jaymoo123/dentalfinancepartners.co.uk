@@ -1048,6 +1048,45 @@ its precedence against EVERY utility it was beating, not the one you meant, so v
 selectors ended up inside the block:
 `awk '/^@layer components/,/^}$/' <file> | grep -E '^\s+\.'`
 
+**T30 CORRECTION, 2026-09-13 (contractors-ir35, F11): the deriving command below (and in
+section 1 of this playbook) is wrong, and it is why a phase-0 audit on this site reported 3
+unlayered rules when the real count was 26 — an undercount of 23, believed for two phases.**
+~~`grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css`~~ FALSE claim attached to it:
+that this also catches class rules. It cannot — `^[a-zA-Z]` requires the first character to be
+a letter, and a class selector starts with `.`. A stricter version,
+`^[a-zA-Z.#\[][^{]*\{`, is STILL not good enough: it reads only the last line of a multi-line
+selector list, misses `*` and `:where(...)` selectors, and — the real problem — has no concept
+of `@layer` boundaries at all, which is the actual question being asked ("is this rule inside a
+layer or not"). Two live consequences on this site: `.prose-blog a` beat `text-white` on the
+ToolIsland CTA across all 62 blog posts (ratio 1.38), and `.eyebrow` beat `text-cyan-400` on
+`/about` and `/contact` (ratio 3.35). Method and full inventory:
+`docs/contractors-ir35/_port/F10_UNLAYERED_SWEEP.md` §1.
+**Correct method — a brace-depth walk that reports, per rule, the enclosing `@layer` stack (`[]`
+or a layer name, never a guess):**
+```
+python - <<'PY'
+import re
+s=open('src/app/globals.css',encoding='utf8').read()
+s=re.sub(r'/\*.*?\*/',lambda m:''.join(c if c=='\n' else ' ' for c in m.group()),s,flags=re.S)
+lines=s.split('\n'); stack=[]
+for i,l in enumerate(lines,1):
+    for j,ch in enumerate(l):
+        if ch=='{':
+            k=i-2; pre=[]
+            while k>=0 and lines[k].strip().endswith(','): pre.insert(0,lines[k].strip()); k-=1
+            sel=(' '.join(pre)+' '+l[:j].strip()).strip()
+            lay=[x for x in stack if x.startswith('@layer')]
+            if not sel.startswith(('@layer','@media','@theme','@keyframes')) and sel!=':root':
+                print(f"{i:>5}  {lay[0] if lay else '*** UNLAYERED ***':<18} {sel[:70]}")
+            stack.append(sel)
+        elif ch=='}':
+            stack and stack.pop()
+PY
+```
+**ESTATE-WIDE: every site previously audited with the old grep command (Medical, Property,
+Trade/construction-cis, Generalist, Solicitors, Dentists) carries the same undercount and
+should be re-swept with the brace-depth walk before being called clean on this dimension.**
+
 ---
 
 ## 16. Traps added by the Medical port (2026-09-11)
@@ -1058,8 +1097,8 @@ which made every colour UTILITY win, and the footer was fixed. The blog hero bre
 still navy on navy at ratio 1.04, because its links carried no colour utility of their own
 and relied on a `text-white` parent: inheritance loses to any matching declaration, layered
 or not. The component looked correct in source review for exactly that reason.
-Deriving command: `grep -nE "^[a-zA-Z][^{]*\{" <site>/web/src/app/globals.css` lists every
-element rule that can do this.
+Deriving command: superseded — see the T30 correction above (2026-09-13). This grep only
+finds element rules and cannot see class rules at all; use the brace-depth walk given there.
 RULE: any link component that renders on more than one ground declares its own colour class
 per variant. Never colour an anchor by inheritance on a site whose `globals.css` styles `a`.
 

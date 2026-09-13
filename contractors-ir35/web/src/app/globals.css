@@ -152,38 +152,46 @@
 }
 
 /* ============================================================
-   BASE
+   BASE  (F10)
+   Element-level resets belong in @layer base so that ANY Tailwind utility on
+   the same element wins. Previously unlayered, which inverted the cascade:
+   `<body className="antialiased font-sans">` (layout.tsx:70) could not beat
+   this rule's font-family, and `disabled:opacity-60` on SpecialistWidget.tsx:474
+   could not beat the disabled reset below (it painted 0.5, not 0.6).
+   @keyframes stays outside any layer: keyframes are not cascade-resolved.
    ============================================================ */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
-}
 
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100dvh;
-  background: var(--surface);
-  color: var(--ink);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  font-feature-settings: "ss01" on, "cv11" on;
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    background: var(--surface);
+    color: var(--ink);
+    font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    font-feature-settings: "ss01" on, "cv11" on;
+  }
 }
 
 /* ============================================================
@@ -203,23 +211,35 @@ body {
   }
 }
 
-.font-mono,
-.font-geist-mono {
-  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
-}
+/* LAYERED (F10). These are component recipes, not utilities: inside
+   @layer components every Tailwind utility on the same element wins, which is
+   the behaviour the markup already assumes.
+   `.eyebrow` was the live defect. Its consumers disagree about ground —
+   /about:18 and /contact:18 paint it on bg-neutral-900 and ask for
+   `text-cyan-400`; not-found.tsx:8 (white) and BlogPostRenderer.tsx:136
+   (bg-neutral-50) declare no colour utility at all and rely on var(--accent).
+   Unlayered, var(--accent) #0e7490 beat `text-cyan-400` and painted 3.35:1 on
+   neutral-900. Recolouring cannot serve both grounds; layering serves both:
+   the dark pair get cyan-400 (9.92), the light pair keep #0e7490 (5.36 / 5.13). */
+@layer components {
+  .font-mono,
+  .font-geist-mono {
+    font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  }
 
-.eyebrow {
-  display: inline-block;
-  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-}
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+  }
 
-.hairline {
-  border-top: 1px solid var(--hairline);
+  .hairline {
+    border-top: 1px solid var(--hairline);
+  }
 }
 
 /* ============================================================
@@ -237,148 +257,178 @@ body {
   }
 }
 
-.hero-reveal {
-  animation: fadeInUp 0.6s ease-out;
-}
+@layer components {
+  .hero-reveal {
+    animation: fadeInUp 0.6s ease-out;
+  }
 
-.hero-reveal-delay {
-  animation: fadeInUp 0.8s ease-out;
+  .hero-reveal-delay {
+    animation: fadeInUp 0.8s ease-out;
+  }
 }
 
 /* ============================================================
    UTILITY CLASSES
    ============================================================ */
 
-.section-label {
-  display: inline-block;
-  background: var(--accent);
-  color: white;
-  padding: 0.375rem 0.875rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+/* `.section-label` paints BOTH its own ground and its own ink (white on
+   var(--accent) #0e7490 = 5.36, PASS), so no consumer ever depended on it
+   beating a utility — all 19 consumers add layout utilities only (mb-*).
+   Layered for the same reason as the rest: a future `bg-*`/`text-*` on one of
+   them must win. */
+@layer components {
+  .section-label {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.375rem 0.875rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
 }
 
 /* ============================================================
    BLOG PROSE
    ============================================================ */
 
-.prose-blog {
-  max-width: 65ch;
-  color: var(--ink);
-  font-size: 1.0625rem;
-  line-height: 1.75;
-}
+/* LAYERED (F10). THE 62-BLOG-POST DEFECT.
+   `.prose-blog a` (color: var(--accent-strong) #155e75) was unlayered, so it
+   beat `text-white` on the ToolIsland CTA (components/blog/ToolIsland.tsx:26,
+   `bg-cyan-700 ... text-white`, rendered INSIDE the prose wrapper at
+   BlogPostRenderer.tsx:305). Painted #155e75 on #0e7490 = 1.36:1. `not-prose`
+   on the aside is a Tailwind-typography concept and does nothing here.
+   The same inversion silently beat `text-cyan-700`, `text-neutral-900` and
+   `text-neutral-600` on ToolIsland's three <p> elements via `.prose-blog p`,
+   and every colour utility inside InlineMiniLeadForm / PremiumUpgrade /
+   figure captions, which all render inside this wrapper.
+   Layering, not recolouring: the raw markdown body carries NO utilities, so
+   every .prose-blog rule still governs authored prose exactly as before; only
+   the React islands that ask for their own colours get them back.
+   Blast radius = every utility inside `.prose-blog` that this family was
+   previously beating (colour, margin, padding, border, background,
+   max-width, font-size, line-height). Intended.
+   ============================================================ */
+@layer components {
+  .prose-blog {
+    max-width: 65ch;
+    color: var(--ink);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
 
-.prose-blog h2 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  border-left: 4px solid var(--accent);
-  font-size: 1.875rem;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.02em;
-}
+  .prose-blog h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
 
-.prose-blog h3 {
-  margin-top: 2.25rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.375rem;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.015em;
-}
+  .prose-blog h3 {
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.015em;
+  }
 
-.prose-blog p {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  color: var(--ink-soft);
-}
+  .prose-blog p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--ink-soft);
+  }
 
-.prose-blog a {
-  color: var(--accent-strong);
-  font-weight: 500;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: color 0.15s;
-}
+  .prose-blog a {
+    color: var(--accent-strong);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
 
-.prose-blog a:hover {
-  color: var(--accent);
-}
+  .prose-blog a:hover {
+    color: var(--accent);
+  }
 
-.prose-blog ul,
-.prose-blog ol {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  padding-left: 1.5rem;
-  color: var(--ink-soft);
-}
+  .prose-blog ul,
+  .prose-blog ol {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+    color: var(--ink-soft);
+  }
 
-.prose-blog li {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
+  .prose-blog li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 
-.prose-blog strong {
-  font-weight: 600;
-  color: var(--ink);
-}
+  .prose-blog strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
 
-.prose-blog table {
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border-top: 1px solid var(--hairline);
-  border-bottom: 1px solid var(--hairline);
-  border-collapse: collapse;
-  font-size: 0.9375rem;
-}
+  .prose-blog table {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
 
-.prose-blog th {
-  background: transparent;
-  color: var(--ink);
-  padding: 0.75rem 1rem;
-  text-align: left;
-  font-weight: 600;
-  font-size: 0.8125rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  border-bottom: 1px solid var(--hairline);
-}
+  .prose-blog th {
+    background: transparent;
+    color: var(--ink);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--hairline);
+  }
 
-.prose-blog td {
-  padding: 0.875rem 1rem;
-  border-top: 1px solid var(--hairline);
-  color: var(--ink-soft);
-}
+  .prose-blog td {
+    padding: 0.875rem 1rem;
+    border-top: 1px solid var(--hairline);
+    color: var(--ink-soft);
+  }
 
-.prose-blog tr:nth-child(even) {
-  background: var(--surface);
+  .prose-blog tr:nth-child(even) {
+    background: var(--surface);
+  }
 }
 
 /* ============================================================
    FORM ELEMENTS
    ============================================================ */
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-}
+@layer base {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+  }
 
-button:disabled,
-input:disabled,
-select:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+  button:disabled,
+  input:disabled,
+  select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 /* ============================================================

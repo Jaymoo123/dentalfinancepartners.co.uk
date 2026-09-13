@@ -1,9 +1,59 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionYLoose } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
 import { siteConfig } from "@/config/site";
 
 const company = siteConfig.company;
+
+/**
+ * Section index for the right-hand rail. Labels are copies of the `<h2>` text
+ * on this page, and the ids are the ones set on those headings. Nothing here is
+ * new substance: a restyle of a published legal notice may move copy, never
+ * change it.
+ *
+ * Heading scroll offset is site-wide already: `globals.css` carries
+ * `:where(h2[id], h3[id], h4[id]) { scroll-margin-top: 6rem }`, verified live in
+ * the emitted stylesheet, so these ids inherit the offset without a utility.
+ */
+const SECTIONS = [
+  { id: "who-we-are", label: "1. Who we are (data controller)" },
+  { id: "what-we-collect", label: "2. What information we collect" },
+  { id: "why-we-use-it", label: "3. Why we use your information" },
+  { id: "lawful-basis", label: "4. Our lawful basis" },
+  { id: "who-we-share-with", label: "5. Who we share your information with" },
+  { id: "retention", label: "6. How long we keep your information" },
+  { id: "your-rights", label: "7. Your rights" },
+  { id: "cookies-and-analytics", label: "8. Cookies and analytics" },
+  { id: "security-and-transfers", label: "9. How we protect your data and international transfers" },
+  { id: "changes", label: "10. Changes to this policy" },
+  { id: "contact-us", label: "11. Contact us" },
+];
+
+/** The sticky section index. Shared shape across the three legal pages. */
+function SectionIndex({ sections }: { sections: { id: string; label: string }[] }) {
+  return (
+    <nav aria-label="Sections of this page" className="hidden min-w-0 lg:block">
+      <div className="sticky top-24 rounded-xl bg-neutral-50 p-5 ring-1 ring-neutral-200/70">
+        <p className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-600">
+          On this page
+        </p>
+        <ul className="mt-4 space-y-2 text-sm">
+          {sections.map((s) => (
+            <li key={s.id}>
+              <a
+                href={`#${s.id}`}
+                className="text-neutral-600 underline-offset-2 hover:text-primary-700 hover:underline"
+              >
+                {s.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Privacy policy",
@@ -24,11 +74,23 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="bg-white">
-      <div className={`${contentNarrow} ${sectionYLoose}`}>
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Privacy policy</h1>
-        <p className="mt-4 text-sm text-neutral-500">Last updated: 10 August 2026</p>
-        <div className="prose-blog mt-10 space-y-6">
+    <>
+      {/* The last-updated date is hero fine print rather than a line stranded
+          above the body. The date itself is untouched: a restyle is not a change
+          to the policy, so re-dating it would be a false claim. */}
+      <SlimHero eyebrow="Legal" title="Privacy policy">
+        <p className="mt-4 text-sm text-neutral-400">Last updated: 10 August 2026</p>
+      </SlimHero>
+
+      {/* Two columns, not a `contentNarrow` clamp: §0.1's answer to long prose
+          is to put something useful beside it. The rail is link-positive and
+          gives an eleven-section legal notice linkable clauses.
+          `prose-blog` still sets its own `max-width: 65ch` in globals.css, which
+          is outside this package's lease. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-14">
+        <div className="prose-blog min-w-0 space-y-6">
           <p>
             This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as
             &quot;we&quot;, &quot;us&quot; and &quot;our&quot;, collects, uses and protects your personal information
@@ -37,7 +99,7 @@ export default function PrivacyPolicyPage() {
             Act 2018.
           </p>
 
-          <h2>1. Who we are (data controller)</h2>
+          <h2 id="who-we-are">1. Who we are (data controller)</h2>
           <p>
             The data controller responsible for your personal data is {company.legalName}, which trades as {siteConfig.name}:
           </p>
@@ -52,7 +114,7 @@ export default function PrivacyPolicyPage() {
             <Link href="/contact" className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900">contact page</Link>.
           </p>
 
-          <h2>2. What information we collect</h2>
+          <h2 id="what-we-collect">2. What information we collect</h2>
           <p>We collect the following personal information through the Site:</p>
           <ul>
             <li>
@@ -84,7 +146,7 @@ export default function PrivacyPolicyPage() {
             asked for.
           </p>
 
-          <h2>3. Why we use your information</h2>
+          <h2 id="why-we-use-it">3. Why we use your information</h2>
           <ul>
             <li>
               <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to regulated firms in our specialist partner network so that they can provide the advice
@@ -100,7 +162,7 @@ export default function PrivacyPolicyPage() {
             </li>
           </ul>
 
-          <h2>4. Our lawful basis</h2>
+          <h2 id="lawful-basis">4. Our lawful basis</h2>
           <p>
             When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f)
             of the UK GDPR) to handle it and to share it with regulated firms from our specialist partner
@@ -118,7 +180,7 @@ export default function PrivacyPolicyPage() {
             specifically measuring and improving the Site and keeping it secure and protected against misuse.
           </p>
 
-          <h2>5. Who we share your information with</h2>
+          <h2 id="who-we-share-with">5. Who we share your information with</h2>
           <p>
             When you submit an enquiry, we share information about you and your enquiry with regulated firms
             from our <strong>specialist partner network</strong>, so that they can contact you and provide the
@@ -169,7 +231,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <p>We do not sell your personal data, and we do not use it for third-party advertising.</p>
 
-          <h2>6. How long we keep your information</h2>
+          <h2 id="retention">6. How long we keep your information</h2>
           <p>
             We keep enquiry data for <strong>{company.enquiryRetentionMonths} months</strong> from the date of your enquiry,
             after which it is deleted. If you subscribe to our email updates, we keep your email address until you
@@ -177,7 +239,7 @@ export default function PrivacyPolicyPage() {
             demonstrate that consent was given.
           </p>
 
-          <h2>7. Your rights</h2>
+          <h2 id="your-rights">7. Your rights</h2>
           <p>Under UK data protection law you have the right to:</p>
           <ul>
             <li><strong>Access</strong> the personal data we hold about you.</li>
@@ -207,7 +269,7 @@ export default function PrivacyPolicyPage() {
             . We would, however, welcome the chance to address your concerns first.
           </p>
 
-          <h2>8. Cookies and analytics</h2>
+          <h2 id="cookies-and-analytics">8. Cookies and analytics</h2>
           <p>
             We run our own first-party analytics so we can understand how the Site is used and improve it. It stores two
             random identifiers in your browser rather than using cookies, and we do not use third-party analytics.
@@ -215,7 +277,7 @@ export default function PrivacyPolicyPage() {
             <Link href="/cookie-policy" className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900">cookie policy</Link>.
           </p>
 
-          <h2>9. How we protect your data and international transfers</h2>
+          <h2 id="security-and-transfers">9. How we protect your data and international transfers</h2>
           <p>
             Form submissions are stored securely and access is restricted to authorised staff only. Some of our service
             providers (for example, Vercel) are based outside the UK and EEA. Where data is transferred internationally, we
@@ -223,19 +285,22 @@ export default function PrivacyPolicyPage() {
             Contractual Clauses.
           </p>
 
-          <h2>10. Changes to this policy</h2>
+          <h2 id="changes">10. Changes to this policy</h2>
           <p>
             We may update this privacy policy from time to time. The &quot;Last updated&quot; date at the top of this page
             shows when it was last revised. We encourage you to review this policy periodically.
           </p>
 
-          <h2>11. Contact us</h2>
+          <h2 id="contact-us">11. Contact us</h2>
           <p>
             If you have any questions about this privacy policy or how we handle your data, please contact us through our{" "}
             <Link href="/contact" className="text-cyan-800 underline underline-offset-2 hover:text-cyan-900">contact page</Link>.
           </p>
         </div>
-      </div>
-    </section>
+            <SectionIndex sections={SECTIONS} />
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

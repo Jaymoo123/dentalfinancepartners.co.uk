@@ -32,7 +32,7 @@ import { MobileToolSlot } from "./MobileToolSlot";
 function ToolLoading() {
   return (
     <div
-      className="overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-sm"
+      className="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-neutral-200/70"
       style={{ minHeight: 480 }}
       aria-busy="true"
     >
@@ -44,9 +44,9 @@ function ToolLoading() {
       </div>
       <div className="grid gap-6 p-5 sm:p-7 lg:grid-cols-2">
         <div className="space-y-5">
-          <div className="h-12 animate-pulse rounded-lg bg-[var(--border)]/60" />
-          <div className="h-12 animate-pulse rounded-lg bg-[var(--border)]/60" />
-          <div className="h-12 animate-pulse rounded-lg bg-[var(--border)]/60" />
+          <div className="h-12 animate-pulse rounded-xl bg-[var(--border)]/60" />
+          <div className="h-12 animate-pulse rounded-xl bg-[var(--border)]/60" />
+          <div className="h-12 animate-pulse rounded-xl bg-[var(--border)]/60" />
         </div>
         <div className="space-y-4">
           <div className="h-24 animate-pulse rounded-xl bg-[var(--border)]/60" />
@@ -91,8 +91,12 @@ export function PremiumUpgrade({
       style={{ minHeight: 48 }}
     >
       <div className="mb-3 flex items-center gap-2">
-        {/* Accent chip: cfp petrol-cyan fill, white label. No --primary. */}
-        <span className="inline-block bg-[var(--accent)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white rounded">
+        {/* Eyebrow hand-rolled from utilities. NOT the `.eyebrow` class, which is
+            unlayered at globals.css:211 and pins color: var(--accent), so no
+            utility could override it. Same recipe as /glossary, /locations and
+            /research: font-mono, xs, medium, uppercase, 0.1em tracking.
+            var(--accent) #0e7490 on white = 5.36:1, hand-measured. */}
+        <span className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-[var(--accent)]">
           Free interactive tool
         </span>
       </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
@@ -111,11 +112,29 @@ function Stat({ value, label }: { value: string; label: string }) {
   );
 }
 
+// Section grounds alternate white / slate-50 so two touching bands never share a
+// ground (DESIGN_SYSTEM §0.1). Derived from the section order in one place rather
+// than hand-set per call site.
+const SECTION_ORDER: string[] = [
+  "key-facts",
+  "curve",
+  "cohorts",
+  "trend",
+  "groups",
+  "methodology",
+  "book",
+  "faq",
+];
+const groundFor = (id: string) =>
+  SECTION_ORDER.indexOf(id) % 2 === 0 ? "bg-white" : "bg-slate-50";
+
 function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return (
-    <section id={id} className="scroll-mt-24 border-t border-neutral-200 py-10 first:border-t-0">
-      <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
+    <section id={id} className={`scroll-mt-24 ${groundFor(id)} py-12 sm:py-16 lg:py-20`}>
+      <div className={siteContainerLg}>
+        <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{title}</h2>
+        <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-700">{children}</div>
+      </div>
     </section>
   );
 }
@@ -170,16 +189,23 @@ export default function UKContractorSurvivalIndexPage() {
               label={`new contractor-sector enterprises born in ${latestCohort?.birth_year}`}
             />
           </div>
+
+          <a
+            href="#book"
+            data-cta="hero_book"
+            data-cta-placement="hero"
+            data-cta-goal="form"
+            className="mt-8 inline-flex min-h-12 min-w-[10rem] items-center justify-center rounded-xl bg-cyan-700 px-8 py-3.5 text-base font-bold tracking-wide text-white transition-colors duration-150 hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+          >
+            Get a free IR35 review
+          </a>
         </div>
       </section>
 
-      {/* Body */}
-      <section className="bg-white py-10 sm:py-14">
+      {/* Key facts */}
+      <section id="key-facts" className="scroll-mt-24 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="max-w-4xl">
-
-            {/* Key facts */}
-            <div className="rounded-2xl border border-cyan-500/20 bg-cyan-50/60 p-6 sm:p-8">
+          <div className="rounded-xl bg-cyan-50/60 p-6 ring-1 ring-cyan-700/20 sm:p-8">
               <h2 className="text-lg font-bold text-cyan-900">Key facts</h2>
               <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
                 <li>
@@ -211,16 +237,18 @@ export default function UKContractorSurvivalIndexPage() {
                 under the Open Government Licence v3.0. Figures may be cited with attribution to
                 Contractor Tax Accountants.
               </p>
-            </div>
+          </div>
+        </div>
+      </section>
 
-            <Section id="curve" title={`The survival curve: ${headline.latest_5yr_cohort_year} birth cohort`}>
+      <Section id="curve" title={`The survival curve: ${headline.latest_5yr_cohort_year} birth cohort`}>
               <p>
                 Of every 100 contractor-sector enterprises that started trading in{" "}
                 {headline.latest_5yr_cohort_year}, the chart tracks how many were still active at
                 each anniversary, against the same measure for all UK industries combined.
               </p>
               {latestCohort && (
-                <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+                <div className="not-prose mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                   <SurvivalCurveChart cohort={latestCohort} />
                 </div>
               )}
@@ -273,7 +301,7 @@ export default function UKContractorSurvivalIndexPage() {
                 stayed above 94% in every birth-year cohort published so far, with no clear
                 deterioration through the post-pandemic and cost-inflation period.
               </p>
-              <div className="not-prose mt-6 rounded-2xl border border-neutral-200 p-4 sm:p-6">
+              <div className="not-prose mt-6 rounded-xl bg-white p-4 ring-1 ring-slate-200/70 sm:p-6">
                 <OneYearTrendChart cohorts={cohorts} />
               </div>
             </Section>
@@ -369,44 +397,55 @@ export default function UKContractorSurvivalIndexPage() {
               </p>
             </Section>
 
-            {/* Conversion */}
-            <div className="mt-10 rounded-2xl border-2 border-cyan-200 bg-gradient-to-br from-cyan-50 to-white p-8 sm:p-10">
-              <h2 className="text-2xl font-bold text-cyan-900 sm:text-3xl">
-                Starting or running a contracting business? Get your tax position right from day one.
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Survival averages are no guarantee for any individual business, but getting your
-                IR35 status, expenses and salary and dividend split right protects the cash your
-                company needs between contracts. Our calculators show what you would actually
-                keep, inside or outside IR35, on 2026/27 rates.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
-                <Link href="/calculators/outside-ir35-take-home-calculator" className="text-cyan-800 hover:text-cyan-900">
-                  Outside IR35 take-home calculator &rarr;
-                </Link>
-                <Link href="/calculators/inside-ir35-take-home-calculator" className="text-cyan-800 hover:text-cyan-900">
-                  Inside IR35 take-home calculator &rarr;
-                </Link>
-              </div>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />
-              </div>
-            </div>
+      {/* Closing ask: the kit's LeadCTAPanel, the same call shape the locations
+          and glossary routes use. `contained` so no dark band touches the dark
+          footer; ground follows this page's own alternation. `proofPoints` is
+          EMPTY on purpose: the kit/reference defaults publish a fee claim and a
+          turnaround promise, both banned on this site. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground={groundFor("book") === "bg-white" ? "white" : "slate"}
+          eyebrow="Free call"
+          title="Starting or running a contracting business? Get your tax position right from day one."
+          description="Survival averages are no guarantee for any individual business, but getting your IR35 status, expenses and salary and dividend split right protects the cash your company needs between contracts. Our calculators show what you would actually keep, inside or outside IR35, on 2026/27 rates."
+          proofPoints={[]}
+          formTitle="Book your free call"
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />}
+          footnote={
+            <span className="flex flex-wrap gap-x-6 gap-y-2 font-semibold">
+              <Link
+                href="/calculators/outside-ir35-take-home-calculator"
+                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
+              >
+                Outside IR35 take-home calculator &rarr;
+              </Link>
+              <Link
+                href="/calculators/inside-ir35-take-home-calculator"
+                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
+              >
+                Inside IR35 take-home calculator &rarr;
+              </Link>
+            </span>
+          }
+        />
+      </div>
 
-            {/* FAQ */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <div className="mt-6 space-y-6">
-                {faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-                  </div>
-                ))}
+      {/* FAQ. Always-open markup: every answer is in server HTML, which is what
+          makes buildFaqJsonLd over the same array truthful. Never a Radix
+          accordion without forceMount (DESIGN_DELTA §4 P2). */}
+      <section id="faq" className={`scroll-mt-24 ${groundFor("faq")} py-12 sm:py-16 lg:py-20`}>
+        <div className={siteContainerLg}>
+          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
+            Frequently asked questions
+          </h2>
+          <div className="mt-6 space-y-6">
+            {faqs.map((f, i) => (
+              <div key={i}>
+                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
+                <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -13,12 +13,12 @@ import type {
 } from "@/lib/research/contractor-insolvency-index";
 import { ChartDataTable } from "./ChartDataTable";
 
-const CYAN = "#0e7490"; // cyan-700
-const CYAN_LIGHT = "#67e8f9"; // cyan-300
-const AMBER = "#b45309"; // amber-700
-const NEUTRAL = "#a3a3a3"; // neutral-400
-const GRID = "#e5e7eb"; // neutral-200
-const AXIS_TEXT = "#737373"; // neutral-500
+const CYAN = "var(--chart-1, #0e7490)"; // --chart-1, cyan-700 (5.36 on white)
+const CYAN_LIGHT = "var(--chart-3, #0891b2)"; // --chart-3, cyan-600 (3.68 on white; cyan-300 was 1.45 and failed the 3.0 graphics floor)
+const AMBER = "var(--highlight, #b45309)"; // --highlight, amber-700 (5.02 on white); semantic, not a ramp step
+const NEUTRAL = "var(--chart-5, #475569)"; // --chart-5, slate-600 (7.58 on white; neutral-400 was 2.52 and failed as a label colour)
+const GRID = "var(--hairline, #e5e5e5)"; // --hairline
+const AXIS_TEXT = "var(--chart-5, #475569)"; // --chart-5, slate-600 (7.58 on white; neutral-500 was 4.74)
 
 function niceMax(v: number): number {
   if (v <= 0) return 1;

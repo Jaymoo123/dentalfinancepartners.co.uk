@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { btnPrimary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 import BookingPicker from "@/components/forms/BookingPicker";
 
@@ -25,11 +26,18 @@ export default async function ThankYouPage({
   void returnPath;
 
   return (
-    <section className={`${sectionY} bg-white`}>
-      <div className={siteContainerLg}>
-        <div className="max-w-2xl">
-          {/* Endowed-progress: 3-step indicator showing where the lead is */}
-          <ol className="mb-10 flex items-center gap-0 text-xs">
+    <>
+      <SlimHero eyebrow="Received" title="Thank you." />
+
+      {/* The endowed-progress indicator opens the body rather than the hero.
+          The recorded anatomy puts it inside the hero above the eyebrow, which
+          the shared `SlimHero` cannot express (it exposes `eyebrow`, `title`,
+          `children` and `backdrop`, nothing above the eyebrow) and whose navy
+          ground the indicator's light-ground colours would fail on. Recorded in
+          P6-1_SECONDARY_LEGAL.md. */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <ol className="flex max-w-2xl items-center gap-0 text-xs">
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-500 font-bold text-white">
                 1
@@ -52,20 +60,16 @@ export default async function ThankYouPage({
             </li>
           </ol>
 
-          <p className="font-mono text-xs uppercase tracking-widest text-cyan-700">
-            Received
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-            Thank you.
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-600">
             For specialist tax advisory work, including complex structuring and tax planning, we
             work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
             that level of advice, it may be their team who contacts you.
           </p>
 
+          {/* The picker card's ground is the opposite of its section's (§0.1):
+              a white card on a white section has no edge. */}
           {bookingToken ? (
-            <div className="mt-10 border border-neutral-200 bg-white p-6 shadow-sm">
+            <div className="mt-10 rounded-xl bg-neutral-50 p-6 ring-1 ring-neutral-200/70 sm:p-8">
               <p className="mb-6 text-base font-semibold text-neutral-900">
                 Pick a time for your free IR35 review call
               </p>
@@ -76,16 +80,16 @@ export default async function ThankYouPage({
             </div>
           ) : (
             <>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
                 In the meantime, you might find our IR35 guides useful.
               </p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <Link href="/blog" className={btnPrimary}>
+                <Link href="/blog" className={`${btnPrimary} rounded-xl`}>
                   Browse IR35 guides
                 </Link>
                 <Link
                   href="/"
-                  className="inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-cyan-700 underline-offset-4 hover:text-neutral-900"
+                  className="inline-flex min-h-12 items-center text-sm font-medium text-neutral-700 underline decoration-primary-600 underline-offset-4 hover:text-neutral-900"
                 >
                   Back to home
                 </Link>
@@ -98,7 +102,7 @@ export default async function ThankYouPage({
               Need to add anything? Send a follow-up through the{" "}
               <Link
                 href="/contact"
-                className="font-medium text-cyan-700 underline underline-offset-4 hover:text-cyan-800"
+                className="font-medium text-primary-600 underline underline-offset-4 hover:text-primary-700"
               >
                 contact form
               </Link>
@@ -106,7 +110,7 @@ export default async function ThankYouPage({
             </p>
           )}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

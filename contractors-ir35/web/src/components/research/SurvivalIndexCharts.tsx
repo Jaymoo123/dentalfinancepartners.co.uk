@@ -7,10 +7,10 @@
 import type { SurvivalCohortRow } from "@/lib/research/contractor-survival-index";
 import { ChartDataTable } from "./ChartDataTable";
 
-const CYAN = "#0e7490"; // cyan-700, contractor series
-const NEUTRAL = "#a3a3a3"; // neutral-400, all-industries comparator
-const GRID = "#e5e7eb"; // neutral-200
-const AXIS_TEXT = "#737373"; // neutral-500
+const CYAN = "var(--chart-1, #0e7490)"; // --chart-1, cyan-700 contractor series (5.36 on white)
+const NEUTRAL = "var(--chart-5, #475569)"; // --chart-5, slate-600 all-industries comparator (7.58 on white; neutral-400 was 2.52 and it also holds the "All industries" text label)
+const GRID = "var(--hairline, #e5e5e5)"; // --hairline
+const AXIS_TEXT = "var(--chart-5, #475569)"; // --chart-5, slate-600 (7.58 on white; neutral-500 was 4.74)
 
 function niceMax(v: number): number {
   if (v <= 0) return 10;

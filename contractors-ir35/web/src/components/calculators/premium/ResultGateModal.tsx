@@ -17,6 +17,15 @@
  *   - Neutral backdrop: bg-neutral-900/60
  * No var(--gold), var(--navy) or var(--dark) anywhere.
  *
+ * P4-2 restyle: card recipe is one radius (rounded-xl) + hairline ring
+ * (ring-1 ring-neutral-200/70), keeping the border-l-4 accent flag that
+ * CalcResultCta uses. The eyebrow is hand-rolled from utilities, NOT the
+ * `.eyebrow` class, which is unlayered at globals.css:211 and pins
+ * color: var(--accent) so no utility can override it.
+ * Contrast: both dismiss affordances were text-neutral-400 = 2.52:1 on white,
+ * below the 4.5 floor. Now text-neutral-600 = 7.81:1. Hand-measured; the
+ * automated instrument falls back to white on this var()-themed file and lies.
+ *
  * Three non-negotiables (Section 4 of the brief):
  *   1. Escape hatch ALWAYS reveals (X, backdrop click, Esc, "No thanks" link).
  *   2. isConverted() visitors are NEVER gated (checked by PremiumCalculator).
@@ -85,13 +94,13 @@ export function ResultGateModal({
       <div
         ref={dialogRef}
         tabIndex={-1}
-        className="relative w-full max-w-lg border-l-4 border-[var(--accent)] bg-white p-6 shadow-2xl outline-none sm:p-8 rounded-xl"
+        className="relative w-full max-w-lg rounded-xl border-l-4 border-[var(--accent)] bg-white p-6 shadow-2xl outline-none ring-1 ring-neutral-200/70 sm:p-8"
       >
         {/* X close button */}
         <button
           type="button"
           onClick={skip}
-          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-lg text-neutral-400 hover:text-neutral-800 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-xl text-neutral-600 hover:text-neutral-900 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
           aria-label="Skip and show my result"
         >
           <svg
@@ -111,7 +120,7 @@ export function ResultGateModal({
 
         <p
           id="calc_result_gate-heading"
-          className="text-xs font-bold uppercase tracking-wider text-neutral-500"
+          className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-[var(--muted)]"
         >
           Before you see your result
         </p>
@@ -136,7 +145,7 @@ export function ResultGateModal({
         <button
           type="button"
           onClick={skip}
-          className="mt-4 block w-full text-center text-xs text-neutral-400 underline underline-offset-2 hover:text-neutral-700 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          className="mt-4 block w-full rounded-xl text-center text-xs text-neutral-600 underline underline-offset-2 hover:text-neutral-900 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
         >
           No thanks, just show my result
         </button>

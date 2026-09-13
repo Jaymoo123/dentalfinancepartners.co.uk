@@ -19,6 +19,11 @@
  *   - blurb = contractor desktop-tool copy
  *   - submitLabel="Send me my figure"
  *   - className with left var(--accent) border + surface-elevated background
+ *
+ * P4-2 restyle: rounded-2xl -> rounded-xl + ring-1 ring-neutral-200/70, matching
+ * CalcResultCta exactly. The border-l-4 accent flag is retained; the defect the
+ * standard names is the 2xl radius with a plain border, not the accent edge.
+ * Copy, formId, messagePrefix, role and submitLabel are unchanged.
  */
 import { MiniCapture } from "@/components/forms/MiniCapture";
 import { getTopic, type TopicKey } from "@/lib/intent/taxonomy";
@@ -33,7 +38,7 @@ export function MobileToolSlot({ topic }: { topic: TopicKey }) {
       heading={t?.ctaCopy || "Get your figure from a contractor specialist"}
       blurb="Our interactive tool is built for a larger screen. Tell us your contracting situation and a contractor specialist will send you the figures and the sensible next step, with no obligation."
       submitLabel="Send me my figure"
-      className="rounded-2xl border-l-4 border-[var(--accent)] bg-neutral-50 p-5 sm:p-6"
+      className="rounded-xl border-l-4 border-[var(--accent)] bg-neutral-50 p-5 ring-1 ring-neutral-200/70 sm:p-6"
     />
   );
 }
