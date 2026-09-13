@@ -65,7 +65,9 @@ the full site chrome leaking into every partner's embedded calculator.
   read as a real defect. Ban builds and servers in every agent brief; require each agent to
   return a WRITTEN VERIFICATION LIST instead (URL, command, expected result), then run ONE
   build at wave close and execute every list against it. **Then actually execute them.**
-  That last step was skipped on contractors-ir35 and is now inherited debt.
+  On contractors-ir35 that last step was skipped at first, and running it later found a
+  site-wide regression that none of the 22 lists contained. Execute them at wave close, not
+  after tagging.
 - **PROVE A SERVER'S IDENTITY AND ITS AGE before quoting it.** Assert the served page title,
   then diff a string whose commit date you know. A reviewer correctly rejected a server 11
   minutes older than the working tree. Pick the probe carefully: "fixed fee" matched 1 hit
