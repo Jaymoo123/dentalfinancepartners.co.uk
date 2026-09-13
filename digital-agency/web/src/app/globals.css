@@ -1,5 +1,9 @@
 /* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+/* Kit components live outside src/, which source("..") excludes, so without this line every utility used only inside packages/web-shared compiles to nothing. */
+@source "../../../../packages/web-shared";
+/* Article bodies here carry class="prose" but nothing in the estate defines .prose, so without this line every blog and guide page renders as unstyled text. */
+@import "../../../../packages/site-styles/prose-standard.css";
 @import "tw-animate-css";
 
 /* ============================================================

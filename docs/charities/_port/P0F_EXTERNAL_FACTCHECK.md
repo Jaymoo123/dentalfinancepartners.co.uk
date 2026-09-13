@@ -320,3 +320,117 @@ self-doubt (open flag 3, which the regulations settle outright).
    The brief did not name the files and I was instructed not to edit site files;
    I did not sweep the site source. The fix will need that sweep — and per the
    estate rule, sweep by rule, not by the sentence you were handed.
+
+---
+
+# ADDENDUM 2026-09-13 — Does the £25,000 ANNUAL-RETURN attachment tier move on 30 Sep 2026?
+
+**ANSWER: NO. It stays at £25,000.** It is a different statutory provision from the
+scrutiny gate and S.I. 2026/427 does not touch it.
+
+## 1. Governing provision
+
+Charities Act 2011 **s163(1)** (transmission of the annual report, and with it the
+accounts, to the Commission) — https://www.legislation.gov.uk/ukpga/2011/25/section/163
+
+> "Where a charity's gross income in any financial year exceeds £25,000, a copy of
+> the annual report required to be prepared under section 162 in respect of that
+> year must be transmitted to the Commission" within 10 months of the year end (or
+> longer if the Commission allows).
+
+The annual return itself is **s169**, which carries a different figure and is not in
+play here — https://www.legislation.gov.uk/ukpga/2011/25/section/169
+
+> "(1) ... every registered charity must prepare in respect of each of its financial
+> years an annual return ... (2) Subsection (1) does not apply in relation to any
+> financial year of a charity in which the charity's gross income does not exceed
+> £10,000 (but this subsection does not apply if the charity is constituted as a CIO)."
+
+So the site's tiering (£10,000 return-content gate, £25,000 attach-report gate) maps
+to s169(2) and s163(1) respectively. Neither legislation.gov.uk page records any
+outstanding/unapplied effect on these sections.
+
+## 2. What S.I. 2026/427 actually amends
+
+Read from the instrument text itself (primary, not a "yet to be applied" note):
+https://www.legislation.gov.uk/uksi/2026/427/made
+
+- Art. 1 — in force **30 September 2026**, England and Wales.
+- Art. 2 — Charities Act **1992** ss58, 60, 60B, 61 (fund-raising sums: £10→£15,
+  £1,000→£1,500, £100→£150).
+- Art. 3 — Charities Act **2011**: **s70** £500→£1,000; **s133** £250,000→£500,000;
+  **s144** £1m→£1.5m and £3.26m→£5m; **s145** £25,000→£40,000 and £250,000→£500,000.
+- Art. 4 — Group Accounts Regs 2015, regs 2 and 4: £1m→£1.5m.
+- Art. 5 — transitional.
+
+**s162, s163 and s169 are not amended.** The only £25,000→£40,000 substitution in the
+whole instrument is in **s145 (independent examination)** — the scrutiny gate.
+
+Cross-check, Charity Commission: the "Changes to charity accounting and reporting"
+guidance lists exactly five changing thresholds (IE £25k→£40k, qualified examiner
+£250k→£500k, R&P £250k→£500k, audit £1m/£3.26m→£1.5m/£5m, group £1m→£1.5m) and does
+**not** list the annual-return/report filing threshold —
+https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting
+The £25,000 filing threshold is still stated live at
+https://www.gov.uk/guidance/prepare-a-charity-annual-return
+
+Provenance: the amending provisions above are from the SI text on legislation.gov.uk
+(primary). The Commission pages are corroboration only; nothing here rests on them.
+
+## 3. Answer
+
+The annual-return attachment tier does **not** move on 30 September 2026. It remains
+**£25,000**, governed by s163(1), unchanged.
+
+## 4. Effective-date rule for that tier
+
+**Not applicable — there is no change to date.** s163(1) applies to every financial
+year, unchanged before and after 30 Sep 2026.
+
+For contrast, the scrutiny gate's rule (art. 5(1) of the SI):
+
+> "The amendments made by articles 3(3) to (5) and 4 do not apply in relation to any
+> financial year of a charity ending before 30th September 2026."
+
+i.e. years **ENDING** on or after 30 Sep 2026 — confirming the settled house position,
+and confirming these are two different rules on two different clocks. (Scotland dates
+its own regime by years BEGINNING; out of scope here.)
+
+## 5. Verdict on the 19 mentions in
+`charities/web/content/blog/annual-report-vs-annual-return.md`
+
+**TRUE now, and STILL TRUE after 30 September 2026. No change required, no staleness
+date.** The prior sweep's conclusion (not a miss by the forward-dating commit) is
+confirmed on the merits, not just by classification.
+
+One residual risk to watch, not a defect: the post must never let the £25,000 filing
+tier be read as the scrutiny gate, because from 30 Sep 2026 those figures diverge
+(£25,000 filing vs £40,000 examination). Lines 47-48 and 100-101 present the tiering
+purely as return content and attachments and do not mention examination or audit, so
+there is no collision in this file today. Any future edit that adds a scrutiny
+sentence to this post must use £40,000 for years ending on/after 30 Sep 2026.
+
+## 6. `docs/charities/house_positions.md` position 2
+
+**RIGHT, and silent on the change — correctly so.** Position 2 states the tiering
+(<£10k income and spending only; £10k-£25k questions; >£25k attach report and
+accounts; 10-month deadline) with no forward date. Since nothing moves, the absence
+of a "(rises to £X from 30 Sep 2026)" clause is accurate, not an omission. Contrast
+positions 3-6, which correctly carry the ENDING-on-or-after-30-Sep-2026 uplifts.
+
+**Recommended (manager to route):** add one clarifying clause to position 2 so a
+future writer cannot conflate the two £25,000s, e.g. "this £25,000 is s163(1) and is
+NOT the scrutiny gate in position 3; it does not move on 30 Sep 2026, while the
+scrutiny gate rises to £40,000." Documentation only; no site content change.
+
+## Nothing in the brief found FALSE
+
+Every established premise checked out: the s133/144/145 uplifts, S.I. 2026/427 as the
+instrument, the ENDING-years rule, and the two-different-rules framing. The brief's
+open question resolves in the direction that requires no work.
+
+## Could not verify
+
+- Whether any *other* instrument (not 2026/427) is queued to move s163. Searched the
+  s163 page's amendment record, which shows no outstanding effects, but that record
+  can lag a very recent laying.

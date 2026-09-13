@@ -1,5 +1,9 @@
 /* Tailwind source("..") scans from src/ relative to this file. */
 @import "tailwindcss" source("..");
+/* Kit components live outside src/, which source("..") excludes, so without this line every utility used only inside packages/web-shared compiles to nothing. */
+@source "../../../../packages/web-shared";
+/* Article bodies here carry class="prose" and the homepage uses .section-label, neither of which had any rule, so without this line those pages render unstyled. */
+@import "../../../../packages/site-styles/prose-standard.css";
 
 :root {
   --background: #ffffff;

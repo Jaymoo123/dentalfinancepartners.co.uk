@@ -1,4 +1,8 @@
 ﻿@import "tailwindcss" source("..");
+/* Kit components live outside src/, which source("..") excludes, so without this line every utility used only inside packages/web-shared compiles to nothing. */
+@source "../../../../packages/web-shared";
+/* Article bodies here carry class="prose" and the homepage uses .section-label, neither of which had any rule, so without this line those pages render unstyled. */
+@import "../../../../packages/site-styles/prose-standard.css";
 :root {
   --background: #ffffff; --surface: #f8fafc; --surface-elevated: #ffffff;
   --ink: #0f172a; --ink-soft: #334155; --muted: #475569; --border: #e2e8f0;

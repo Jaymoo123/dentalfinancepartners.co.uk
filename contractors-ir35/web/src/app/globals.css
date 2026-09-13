@@ -9,6 +9,8 @@
    as dentists/web/src/app/globals.css:3. See P1-7_RAMP.md. */
 @source "../../../../packages/web-shared";
 @import "tw-animate-css";
+/* Article bodies here carry class="prose" but nothing in the estate defines .prose, so without this line every blog and guide page renders as unstyled text. */
+@import "../../../../packages/site-styles/prose-standard.css";
 
 /* ============================================================
    DESIGN SYSTEM — Contractor Tax Accountants

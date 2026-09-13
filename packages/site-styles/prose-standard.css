@@ -1,0 +1,266 @@
+/* ============================================================
+   SHARED ARTICLE TYPOGRAPHY + SECTION LABEL
+   ------------------------------------------------------------
+   Why this file exists: ten sites render article bodies with
+   class="prose prose-neutral" (or "prose prose-slate"), but
+   @tailwindcss/typography is installed nowhere in this monorepo
+   and no globals.css carries an @plugin line, so the bare .prose
+   selector had no rule and 161 live pages rendered as unstyled
+   text. Five of those sites also emit .section-label with no rule.
+
+   Base for .prose: Solicitors/web/src/app/globals.css (the only
+   hand-rolled bare .prose in the estate, proven in production),
+   merged with the element coverage from its .article-body.prose-blog
+   block (table, blockquote, code, pre, hr, img, aside) so a whole
+   raw-HTML article body is covered by one selector family.
+   Base for .section-label: contractors-ir35/web/src/app/globals.css.
+
+   WHY THIS FILE IS NOT UNDER packages/web-shared: Property,
+   Dentists, Solicitors, generalist, construction-cis, Medical and
+   contractors-ir35 all carry
+   @source "../../../../packages/web-shared", and "css" is NOT in
+   Tailwind v4's ignored-extension list (auto_source_detection.rs
+   ignores only less/lock/sass/scss/styl/log). A new .css file under
+   that directory is therefore a scanned candidate source and could
+   add utilities to those sites' built CSS. This directory is
+   covered by no @source anywhere, so importing it changes nothing
+   except the rules written below.
+
+   Everything is @layer components wrapped, deliberately: an
+   unlayered rule beats every Tailwind v4 utility, which is the
+   recorded trap behind the contractors-ir35 CTA defect. Layered,
+   a consumer's text-* / bg-* utility still wins.
+
+   Colours come from each consuming site's own tokens via var()
+   chains with literal fallbacks, so a site missing a token still
+   renders a visible colour rather than a transparent one.
+   Token chains used, in order of preference:
+     ink      var(--ink)            fallback #0f172a
+     body     var(--ink-soft)       fallback #334155
+     link     var(--accent-strong) > var(--brand-primary-strong)
+              > var(--primary) > var(--brand-primary), fallback #0f172a
+     accent   var(--accent) > var(--brand-primary), fallback #0f172a
+     rule     var(--border)         fallback #e2e8f0
+     tint     var(--surface)        fallback #f1f5f9
+
+   Deviation from the Solicitors base, deliberate: headings, strong
+   and table headers use the ink token rather than the brand token.
+   Solicitors' primary is dark; several consuming brand tokens are
+   not (ecommerce is #c9861b), and white-on-brand table headers or
+   brand-coloured headings would fail contrast there. Property and
+   digital-agency already use ink for exactly these three, so this
+   is the estate majority, not a new choice.
+
+   Residual known limit: on ecommerce, in-body link colour resolves
+   to its own brand token #c9861b, which measures about 2.9 on
+   white. Links stay underlined so they remain identifiable, but
+   the fix is a darker brand-primary-strong on that site, not here.
+   ============================================================ */
+
+@layer components {
+
+  .prose {
+    max-width: 68ch;
+    color: var(--ink-soft, #334155);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+
+  @media (min-width: 768px) {
+    .prose {
+      font-size: 1.125rem;
+    }
+  }
+
+  .prose h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--ink, #0f172a);
+    line-height: 1.2;
+  }
+
+  @media (min-width: 768px) {
+    .prose h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .prose h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--ink, #0f172a);
+    line-height: 1.3;
+  }
+
+  .prose h4 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--ink, #0f172a);
+  }
+
+  .prose p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose ul {
+    list-style: disc;
+  }
+
+  .prose ol {
+    list-style: decimal;
+  }
+
+  .prose li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
+  }
+
+  /* In-text links only. Tracked CTA buttons carry data-cta and keep their own
+     colours; without the :not() this rule painted link text over button
+     backgrounds, which is the recorded Property defect. */
+  .prose a:not([data-cta]) {
+    color: var(--accent-strong, var(--brand-primary-strong, var(--primary, var(--brand-primary, #0f172a))));
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
+
+  .prose a:not([data-cta]):hover {
+    color: var(--accent, var(--brand-primary, #0f172a));
+  }
+
+  .prose strong {
+    font-weight: 700;
+    color: var(--ink, #0f172a);
+  }
+
+  .prose blockquote {
+    border-left: 4px solid var(--accent, var(--brand-primary, #0f172a));
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--ink-soft, #334155);
+  }
+
+  /* Table rules must not leak into embedded .not-prose components, whose own
+     utility classes would otherwise lose on specificity. */
+  .prose table:not(.not-prose *) {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border, #e2e8f0);
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+
+  .prose th:not(.not-prose *) {
+    background: var(--ink, #0f172a);
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .prose td:not(.not-prose *) {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--border, #e2e8f0);
+  }
+
+  .prose tr:nth-child(even):not(.not-prose *) {
+    background: var(--surface, #f1f5f9);
+  }
+
+  .prose code {
+    background: var(--surface, #f1f5f9);
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    font-family: ui-monospace, monospace;
+    color: var(--ink, #0f172a);
+    font-weight: 600;
+  }
+
+  .prose pre {
+    background: var(--surface, #f1f5f9);
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .prose pre code {
+    background: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .prose hr {
+    border: none;
+    border-top: 1px solid var(--border, #e2e8f0);
+    margin: 2.5rem 0;
+  }
+
+  .prose img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border, #e2e8f0);
+  }
+
+  .prose aside {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 1.75rem;
+    border-left: 4px solid var(--accent, var(--brand-primary, #0f172a));
+    background: var(--surface, #f1f5f9);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .prose aside p:first-child {
+    margin-top: 0;
+    font-weight: 700;
+    color: var(--ink, #0f172a);
+  }
+
+  .prose aside p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Paints both its own ground and its own ink, so no consumer ever depended
+     on it beating a utility: every consumer adds layout utilities only. */
+  .section-label {
+    display: inline-block;
+    background: var(--accent, var(--brand-primary, #0f172a));
+    color: #ffffff;
+    padding: 0.375rem 0.875rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+}

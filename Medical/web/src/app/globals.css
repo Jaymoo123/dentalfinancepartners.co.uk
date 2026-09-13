@@ -3,6 +3,8 @@
 @source "../../../../packages/web-shared";
 @import "tw-animate-css";
 @import "@accounting-network/web-shared/design/globals-standard.css";
+/* Article bodies here carry class="prose" but nothing in the estate defines .prose, so without this line every blog and guide page renders as unstyled text. */
+@import "../../../../packages/site-styles/prose-standard.css";
 
 /*
   UI ground rules (mobile-first) - Medical Accountants UK

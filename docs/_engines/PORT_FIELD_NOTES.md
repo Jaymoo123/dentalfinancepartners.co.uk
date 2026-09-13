@@ -373,7 +373,9 @@ at ratio 1.38, and `.eyebrow` was beating `text-cyan-400` on `/about` and `/cont
 Full method and inventory: `docs/contractors-ir35/_port/F10_UNLAYERED_SWEEP.md` §1.
 **Correct method, replaces the grep above:** a brace-depth walk that strips comments and, for
 every rule found, reports the stack of enclosing `@layer` blocks — the answer is `[]`
-(unlayered) or a layer name, never a guess:
+(unlayered) or a layer name, never a guess. **SUPERSEDED 2026-09-13: the line-based version
+below finds nothing in a built (one-line) stylesheet and breaks on a BOM. Use the character-stream
+`utf-8-sig` version in DESIGN_PORT_PLAYBOOK.md §15 (T30 correction), and see section 12.**
 ```
 python - <<'PY'
 import re
@@ -1242,3 +1244,92 @@ older than the working tree. The method that settles it: pick a string whose com
 diff it across servers. Here "fixed fee" is present pre-port and absent after, and `/about`
 canonicalises to the homepage pre-port and to itself after.
 RULE: assert title AND age before quoting any server.
+
+---
+
+## 12. What the charities port taught (phase 0, 2026-09-13)
+
+**The documented unlayered sweep is still broken, and this is the second consecutive port whose
+documented audit command could not find the defect it describes.** The brace-depth walk in section
+11 above and in `docs/contractors-ir35/_port/F10_UNLAYERED_SWEEP.md` §1 iterates `s.split('\n')`,
+so it returns NOTHING against a built stylesheet: `charities/web/.next/static/css/*.css` is
+**46,359 bytes on ONE line**. It also opens with `encoding='utf8'`, and
+`crypto/web/src/app/globals.css` and `generalist/web/src/app/globals.css` both start `ef bb bf`, so
+the first selector arrives with a BOM glued to it.
+RULE: walk the CSS as a CHARACTER STREAM, not lines, and read it `utf-8-sig`. The same walk then
+works on source and on minified build output, which is the only place layer order is decidable.
+
+**Contrast is symmetric, so a colour has ONE ratio and THREE floors.** `P0D_CSS_CONTRAST.md`
+§4.5: `#1a5c4a` measures 7.85 as a graphic (floor 3.0), as text on white (4.5) and as a ground
+under white text (4.5). A brief that asks for "three ratios" is asking the wrong question, and an
+agent that answers it invents numbers. Calibration correction: Tailwind **v4** `slate-500`
+`#62748e` is **4.77**; 4.76 is the v3 hex `#64748b`. v4 `slate-400` `#90a1b9` = 2.63 (v3 2.56), as
+already recorded.
+
+**`grep -c` is wrong against built CSS and wrong the other way against Next.js HTML.**
+A production stylesheet is one line, so `grep -c` can only return 0 or 1:
+`grep -c primary-600 generalist/web/.next/static/css/1487733c3b9dd0c2.css` returns **1** for **42**
+occurrences (`grep -o … | wc -l`). Next.js HTML serialises the same text twice, once in the DOM and
+once in the RSC flight payload, so `grep -c` OVERstates there: homepage `section-label` counted 16
+was 8 real, "connect you with an independent examiner" counted 2 was 1, "partner firm we work with"
+counted 8 was 4. Both errors happened on this port and one reached an owner report.
+RULE: count built CSS with `grep -o … | wc -l`; report rendered HTML as **per-page presence**
+(`grep -ql` per file, count files), and say which of the two you measured.
+
+**A class that names nothing does not error, it renders nothing.** charities emits
+`class="prose prose-neutral"` on all 24 posts and 8 guides with **zero `.prose` rules** shipped,
+because no typography plugin is installed. `docs/_engines/ESTATE_PROSE_SWEEP_2026-09-13.md`:
+**161 live article pages across TEN deployed sites**. Five sites (charities, crypto, hospitality,
+pharmacies, startups-tech) also emit `section-label` with no rule anywhere in their CSS; the
+charities instance at `src/app/page.tsx:690` sits on `bg-[#0f2e24]` and measures **1.22**.
+Sweep command, per site:
+```
+curl -s <page> | grep -o 'class="[^"]*\bprose\b[^"]*"'
+curl -s <domain>/_next/static/css/<hash>.css | grep -o '\.prose[ {,:]' | wc -l   # 0 = dead class
+```
+Count the SELECTOR (`.prose`), not the substring: `prose-blog` and `not-prose` inflate a raw count
+(Solicitors shows 43 `prose` hits and is fine).
+
+**A pre-existing defect can hide in valid-looking frontmatter.** Three charities posts published
+`[object Object]` as their JSON-LD in production, on exactly the three files that declare a
+`schema:` key: `schema:` is a YAML mapping, gray-matter parses it to an object, the type said
+`string` and the renderer interpolated it.
+RULE: the instrument asserts the JSON-LD **PARSES**, per URL. A check that only looks for the
+`<script type="application/ld+json">` tag passes this defect.
+
+**The claims audit held again, and so did its counter-lesson.** 26 serious rows (the ledger's own
+summary said 25; its table carries S1-S26), **26 of 26 CONFIRMED** against the rendered build,
+0 overstated, 0 false positives, plus **8 further serious rows** only a rendered-HTML sweep could
+find (config-injected copy, `priceRange "££"` on 68 nodes, 116 FAQ pairs with no on-page
+counterpart, sibling files outside a row's scope). Serious total 26 → 34, the same undercount ratio
+as every prior port. Counter-lesson unchanged from section 11: verify the ledger's POSITIVES too:
+four rows were understated in scale, one was mis-located and one minor was mis-graded.
+
+**A work-package split leaks defects at its own seams.** One OFF LIMITS list named
+`src/lib/charity-services.ts`; the file is `src/data/charity-services.ts`, so the fence guarded
+nothing. The homepage was fenced off from the claims agent while assigned to an agent fixing links
+only, so its testimonials, client-base claim, regulated-work line and turnaround promise all
+survived the wave and needed a sixth gap-fix package.
+RULE: every path in an OFF LIMITS list is proved to exist (`ls` it) before the prompt ships, and
+every file assigned to a package has an owner for EVERY defect class in it, not only the package's
+theme.
+
+**Executing the written verification lists at wave close is what caught the last two defects.**
+`V1_PHASE0_VERIFICATION.md`, 30 groups against one production build: it surfaced the `[object
+Object]` JSON-LD and the leaked pipeline artefact "(HP14)" published in the stats strip on
+`/services/gift-aid` (ledger M1, `src/data/charity-services.ts:196`). Its 2 failures were wrong
+expected values in the briefs, not site defects.
+RULE: agents return lists (URL, command, expected result); the manager runs ONE build and executes
+every list against it BEFORE tagging.
+
+**A premise that survives four agents can still be false.** The port ran for some time on the
+belief that charities does not implement the pool routing model and that its consent text was a
+local variant. `docs/_engines/PROPERTY_REFERENCE_ANSWERS.md` §4: the consent text is
+**byte-identical** to Property's, and the pool (`Property/web/src/lib/leads/offer-send.ts`) is
+central, DB-driven and **source-agnostic**. `matchingBuyers` filters `lead_buyers` on
+`sources cs.{<source>}`, so a charities lead reaches the same pool a Property lead does. Whether
+the paragraphs were right to delete is still open at the time of writing; the premise is not.
+RULE: before calling a site's copy false, (a) grep Property for the same string, and (b) establish
+whether the mechanism it describes is site-local or estate-central. Consent text is also
+gate-load-bearing: `consentAllowsSharing` matches on the published wording and
+`Property/web/src/tests/consent-anchor-drift.test.ts` pins it.

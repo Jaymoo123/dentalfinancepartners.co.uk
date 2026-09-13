@@ -195,7 +195,7 @@ export async function promoteIfContactable(leadId: string): Promise<PromoteResul
       // The contactable -> forwarded flip is OPERATOR-driven (owner decision AN-2):
       // it happens when the operator clicks "I have forwarded this to the partner firm" in the
       // handoff email (POST /api/leads/forwarded/[token]), so 'forwarded' means a
-      // real the partner firm hand-over, not merely that our brief email was delivered.
+      // real hand-over to the partner firm, not merely that our brief email was delivered.
     } else {
       // Real send failure after retries: audit it, then alert the operator.
       // leads.status remains 'contactable' so the handoff can be re-attempted later.

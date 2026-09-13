@@ -1,18 +1,20 @@
 # Design port playbook (Property standard)
 
-## STOP. Read this screen before anything else. (2026-09-12)
+## STOP. Read this screen before anything else. (2026-09-13)
 
-Five sites are ported (generalist, solicitors, dentists, medical, construction-cis), all six
-phases, tagged. A sixth, contractors-ir35, is PART-WAY: phase 0 and phase 1 complete and
-tagged, phase 2 built and committed but NOT tagged and NOT reviewed. NOTHING on any site is
-pushed or deployed. Eleven sites remain untouched. Follow the **generalist** flow; it is the
-one that went well.
+Six sites are fully ported (generalist, solicitors, dentists, medical, construction-cis,
+contractors-ir35), all six phases, tagged. A seventh, **charities, is IN PROGRESS: phase 0
+complete and tagged `port-charities-phase0` (`78dcd3a5`), phases 1 to 6 not started.**
+NOTHING on any site is pushed or deployed. Ten sites remain untouched. Follow the
+**generalist** flow; it is the one that went well.
 
-**Read section 11 of PORT_FIELD_NOTES.md before the next port.** It carries an estate-wide
+**Read sections 11 and 12 of PORT_FIELD_NOTES.md before the next port.** Section 11 carries an
+estate-wide
 defect: the header chrome fix recorded as shipped 2026-08-23 never took effect on ANY site,
 Property included, because two competing `display` utilities in one class string are a cascade
 race and the loser is silent. Every ported site renders its header CTA and burger together
-below 1024px.
+below 1024px. Section 12 carries another: `prose` and `section-label` are dead class names on
+ten and five deployed sites, 161 live article pages rendering unformatted.
 
 **PREFLIGHT, before you measure anything:**
 ```bash
@@ -171,6 +173,34 @@ It covers, site-wide, by rule, including frontmatter and `schema:` JSON-LD:
   a wrong number with two unit tests PINNING the stale values. A test is not evidence
   that a figure is right; it is evidence that it has not changed.
 
+**How to COUNT, added 2026-09-13 (charities got this wrong in both directions in one port).**
+`grep -c` understates against built CSS, which is one line: `grep -c primary-600
+generalist/web/.next/static/css/*.css` returns 1 for 42 occurrences. Use `grep -o … | wc -l`.
+`grep -c` OVERstates against Next.js HTML, because the DOM text is serialised again into the RSC
+flight payload: 16 was 8, 2 was 1, 8 was 4. **Report rendered claims as per-page presence (count
+files, `grep -ql` each), never raw match totals, and state which you measured.** Verify the
+ledger's POSITIVES as well as its negatives: counts have now been found overstated as well as
+understated.
+
+**Before calling a site's copy false, check Property.** charities' lead consent text was treated
+as a local variant describing a pool the site does not run. It is **byte-identical to Property's**,
+and the pool (`Property/web/src/lib/leads/offer-send.ts`) is central, DB-driven and source-agnostic,
+so a charities lead reaches the same pool. `docs/_engines/PROPERTY_REFERENCE_ANSWERS.md` §4.
+RULE: grep Property for the same string, and establish whether the mechanism the copy describes is
+site-local or estate-central, before grading the copy. Consent wording is also gate-load-bearing
+(`consentAllowsSharing`, `consent-anchor-drift.test.ts`) and has a conversion incident behind it.
+
+**Also sweep for classes the site emits and nothing defines.** A class that names nothing does not
+error, it renders nothing. charities ships `class="prose prose-neutral"` on 32 article pages with
+zero `.prose` rules (no typography plugin), and five sites emit `section-label` with no rule, one
+of them at contrast 1.22:
+```
+curl -s <page> | grep -o 'class="[^"]*\bprose\b[^"]*"'
+curl -s <domain>/_next/static/css/<hash>.css | grep -o '\.prose[ {,:]' | wc -l   # 0 = dead class
+```
+Count the SELECTOR, not the substring (`prose-blog`, `not-prose` inflate it).
+Estate scope: `docs/_engines/ESTATE_PROSE_SWEEP_2026-09-13.md`, 161 live pages across 10 sites.
+
 **Output: a ledger with a verdict per item** (verified / corrected / unsourced and
 removed / owner decision), each row naming the deriving command. Owner gate on the
 ledger. **The serious tier is fixed and committed before phase 1 starts.** A false
@@ -279,6 +309,23 @@ for route, floor in b["links"].items():
     assert len(set(re.findall(r'href="(/[^"]*)"', html))) >= floor
     assert html.count("—") <= b["dashes"].get(route, 0)
 ```
+
+**Assert the JSON-LD PARSES, per URL** (added 2026-09-13). Three charities posts published
+`[object Object]` as their JSON-LD in production: `schema:` is a YAML mapping, gray-matter parsed
+it to an object, the frontmatter type said `string`, and the renderer interpolated it. Exactly the
+three files that declare the key. A check that only looks for the
+`<script type="application/ld+json">` tag passes this defect:
+```python
+for block in re.findall(r'ld\+json"[^>]*>(.*?)</script>', html, re.S):
+    json.loads(block)          # must not raise, on every URL
+```
+
+**Execute every agent's written verification list at wave close, BEFORE tagging.** Agents return
+lists (URL, command, expected result) and run no servers; the manager runs ONE build and executes
+all of them against it. On charities that pass is what surfaced the JSON-LD defect above and a
+leaked pipeline artefact, "(HP14)", published in the stats strip on `/services/gift-aid`
+(`src/data/charity-services.ts:196`). Expect some failures to be wrong expected values in the
+briefs rather than site defects: 2 of 30 groups were, and both were brief errors.
 
 **Verify on a production build, not a dev server.** If the owner is walking a
 dev server, build in a clean git worktree instead of fighting over `.next`:
@@ -480,7 +527,8 @@ Before starting a site, capture and put in the prompts:
 8. The retirement list and the delete list.
 9. Which kit components are unusable for this site (T12).
 10. `house_positions.md` section numbers for the figures this niche uses.
-11. **The two kit-chrome props that must be passed on every port** (added `cb041c9d`,
+11. **The SIX kit-chrome props that must be considered on every port** (the first added
+    `cb041c9d`,
     both default to Property's exact current behaviour, so a port that forgets them
     inherits Property's, silently):
     - `SiteHeader.ctaContactGoal` — pass the site's own pre-port `data-cta-goal`.
@@ -494,6 +542,12 @@ Before starting a site, capture and put in the prompts:
       the three to miss, because the drawer renders only when open and therefore no
       SSR crawl and no page-source review will ever see it. Read the shipped client
       bundle.
+    - `SiteFooter.resourcesHref` (added to this list 2026-09-13, charities): default is
+      **`"/landlord-tax"`**, Property's own hub. A port that passes nothing derives the whole
+      Resources column from a route the site does not have.
+    - `SiteFooter.companyItems` (added to this list 2026-09-13, charities): default is
+      Property's four routes, **including `/locations`, which 404s on charities**. Pass the
+      site's own, and probe every href in what you pass.
     - `SiteFooter.showBuilderCredit` — OWNER DECISION 2026-09-11 REVERSED THIS: the
       studio credit now appears estate-wide, on every ported site, not only the one the
       studio designed. Both consumers pass `true`. The default was already `true`, so a
@@ -506,6 +560,11 @@ Before starting a site, capture and put in the prompts:
       the kit wordmark and the CTA were visibly different reds. The FOOTER lockup is
       deliberately out of scope: it sits on slate-900 where a mid-tone brand hex fails
       contrast and the `primary-400` step is correct.
+    - **Contrast is symmetric** (2026-09-13): a hex has ONE ratio and THREE FLOORS, 3:1 as a
+      graphic, 4.5:1 as text, 4.5:1 as a ground under text. Ask for one ratio and three verdicts;
+      a brief asking for "three ratios" makes the agent invent numbers. charities' `#1a5c4a`
+      measures 7.85 and clears all three, so it needs neither token below; Medical's copper
+      measured 3.79 and needed both.
     - `--brand-primary-text` (CSS custom property, added 2026-09-11, Medical Phase 2) — read
       by `packages/web-shared/leads/MiniCapture.tsx` at the Privacy Policy consent link and
       the two "Step N of 2" eyebrows, as
@@ -829,6 +888,14 @@ per-phase reality checks and reviews all go to agents that return TABLES, not fi
   they run concurrently. Never one agent per file.
 - **Disjoint file sets, enforced by an explicit OFF LIMITS list** naming the other
   builders' files. Agents respect it; without it they wander.
+- **`ls` every path in an OFF LIMITS list before the prompt ships** (2026-09-13): charities
+  fenced off `src/lib/charity-services.ts`, which does not exist; the file is
+  `src/data/charity-services.ts`, so the fence guarded nothing.
+- **Every file in a package has an owner for EVERY defect class in it, not just the package's
+  theme** (2026-09-13): the charities homepage was fenced off from the claims agent and assigned
+  to an agent fixing links only, so its testimonials, client-base claim, regulated-work line and
+  turnaround promise survived the whole wave and cost a sixth gap-fix package. Split by FILE, then
+  check the claims sweep still covers every file.
 - **Agents write their own artefacts.** A disposition slice runs 400 to 650 lines. If the
   agent hands it back in chat you have burned your context for nothing. Tell it to Write
   the file and reply with a receipt only.
@@ -963,7 +1030,9 @@ measure 5.84:1 and pass. It falls back to white when it cannot resolve the chain
 RULE: on a site that themes through CSS variables, the contrast half of the browser
 baseline is UNUSABLE until the port replaces those values with real ramp classes. The
 overflow and anchor halves are sound. Take contrast decisions from a hand-computed table,
-self-tested against slate-500 on white = 4.76 and slate-400 on white = 2.56, and re-capture
+self-tested against the TAILWIND V4 values, corrected 2026-09-13: slate-500 `#62748e` on white =
+**4.77** and slate-400 `#90a1b9` on white = **2.63** (4.76 and 2.56 are the v3 hexes `#64748b` and
+`#94a3b8`; check which version the site resolves before quoting either pair), and re-capture
 the browser baseline after phase 1. Never hand the owner its raw contrast output.
 QUALIFIED 2026-09-11 (Trade): this trap is conditional on HOW a site is themed, not a blanket
 property of the instrument. The contrast path paints the colour onto a 1x1 canvas and reads the
@@ -1062,25 +1131,30 @@ ToolIsland CTA across all 62 blog posts (ratio 1.38), and `.eyebrow` beat `text-
 `/about` and `/contact` (ratio 3.35). Method and full inventory:
 `docs/contractors-ir35/_port/F10_UNLAYERED_SWEEP.md` §1.
 **Correct method — a brace-depth walk that reports, per rule, the enclosing `@layer` stack (`[]`
-or a layer name, never a guess):**
+or a layer name, never a guess). CORRECTED 2026-09-13 (charities): the earlier version of this
+walk iterated `s.split('\n')` and so returned NOTHING against a built stylesheet, which is ONE
+line (`charities/web/.next/static/css/*.css` = 46,359 bytes, 1 line); and it opened the file
+`utf8`, so a BOM (`crypto` and `generalist` `globals.css` both start `ef bb bf`) glued itself to
+the first selector. Walk the CHARACTER STREAM and read `utf-8-sig`. Run it on BOTH the source and
+the built CSS; only the built CSS decides layer order.**
 ```
 python - <<'PY'
-import re
-s=open('src/app/globals.css',encoding='utf8').read()
+import re,sys
+p=sys.argv[1] if len(sys.argv)>1 else 'src/app/globals.css'
+s=open(p,encoding='utf-8-sig').read()
 s=re.sub(r'/\*.*?\*/',lambda m:''.join(c if c=='\n' else ' ' for c in m.group()),s,flags=re.S)
-lines=s.split('\n'); stack=[]
-for i,l in enumerate(lines,1):
-    for j,ch in enumerate(l):
-        if ch=='{':
-            k=i-2; pre=[]
-            while k>=0 and lines[k].strip().endswith(','): pre.insert(0,lines[k].strip()); k-=1
-            sel=(' '.join(pre)+' '+l[:j].strip()).strip()
-            lay=[x for x in stack if x.startswith('@layer')]
-            if not sel.startswith(('@layer','@media','@theme','@keyframes')) and sel!=':root':
-                print(f"{i:>5}  {lay[0] if lay else '*** UNLAYERED ***':<18} {sel[:70]}")
-            stack.append(sel)
-        elif ch=='}':
-            stack and stack.pop()
+stack=[];buf=[];line=1
+for ch in s:
+    if ch=='\n': line+=1
+    if ch=='{':
+        sel=' '.join(''.join(buf).split())
+        lay=[x for x in stack if x.startswith('@layer')]
+        if not sel.startswith(('@layer','@media','@theme','@keyframes','@supports')) and sel!=':root':
+            print(f"{line:>6}  {lay[-1] if lay else '*** UNLAYERED ***':<18} {sel[:70]}")
+        stack.append(sel);buf=[]
+    elif ch in '};':
+        ch=='}' and stack and stack.pop();buf=[]
+    else: buf.append(ch)
 PY
 ```
 **ESTATE-WIDE: every site previously audited with the old grep command (Medical, Property,
