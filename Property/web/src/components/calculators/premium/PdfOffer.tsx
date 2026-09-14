@@ -13,20 +13,17 @@ import { useEffect, useState } from "react";
 import type { CalcValues, GridRow, PremiumResult } from "@/lib/calculators/premium/types";
 import { PDF_TOOLS, PDF_CTA_ID, buildPdfRequest } from "@/lib/calculators/premium/pdfRequest";
 
-type Offer = { enabled: boolean; link?: string; price_gbp?: number };
+export type Offer = { enabled: boolean; link?: string; price_gbp?: number };
 
-export function PdfOffer(props: {
-  toolId: string;
-  placement: string;
-  values: CalcValues;
-  rows: GridRow[];
-  scenario?: string;
-  result: PremiumResult;
-}) {
-  const { toolId, placement } = props;
+/**
+ * Reads the flag once per mount, only for the three offered tools. Returns the
+ * offer while it is on, else null. PremiumCalculator uses the same value to hide
+ * the free workings and uncap the inputs column, so flag off restores today's
+ * layout exactly.
+ */
+export function usePdfOffer(toolId: string): Offer | null {
   const eligible = PDF_TOOLS.has(toolId);
   const [offer, setOffer] = useState<Offer | null>(null);
-  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     if (!eligible) return;
@@ -42,8 +39,21 @@ export function PdfOffer(props: {
     };
   }, [eligible]);
 
-  if (!eligible || !offer?.enabled || !offer.link) return null;
-  const link = offer.link;
+  return eligible && offer?.enabled && offer.link ? offer : null;
+}
+
+export function PdfOffer(props: {
+  offer: Offer;
+  toolId: string;
+  placement: string;
+  values: CalcValues;
+  rows: GridRow[];
+  scenario?: string;
+  result: PremiumResult;
+}) {
+  const { offer, placement } = props;
+  const [saving, setSaving] = useState(false);
+  const link = offer.link ?? "";
   const price = offer.price_gbp ?? 29;
 
   async function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
@@ -69,8 +79,8 @@ export function PdfOffer(props: {
   }
 
   return (
-    <div className="mt-6 border-t border-slate-200 pt-5">
-      <p className="text-sm font-bold text-slate-900">
+    <div className="mt-6 border-t border-slate-200 pt-6 text-center">
+      <p className="text-base font-bold text-slate-900">
         Want this as a dated PDF with every step shown?
       </p>
       <p className="mt-1 text-sm text-slate-600">
@@ -84,7 +94,7 @@ export function PdfOffer(props: {
         data-cta={PDF_CTA_ID}
         data-cta-placement={placement}
         data-cta-goal="purchase"
-        className="mt-4 inline-flex min-h-12 touch-manipulation items-center justify-center rounded-xl bg-emerald-600 px-8 py-3.5 text-base font-bold text-white transition-colors duration-150 hover:bg-emerald-700 active:bg-emerald-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+        className="mt-5 inline-flex min-h-14 w-full touch-manipulation items-center justify-center rounded-xl bg-emerald-600 px-8 py-4 text-lg font-bold shadow-[0_8px_20px_-10px_rgba(5,150,105,0.6)] text-white transition-colors duration-150 hover:bg-emerald-700 active:bg-emerald-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
       >
         {saving ? "Saving your figures" : `Get the PDF, £${price}`}
       </a>

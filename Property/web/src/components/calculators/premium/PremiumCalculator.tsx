@@ -31,7 +31,7 @@ import type {
   ScenarioResult,
 } from "@/lib/calculators/premium/types";
 import { MiniGrid } from "@/components/calculators/premium/MiniGrid";
-import { PdfOffer } from "@/components/calculators/premium/PdfOffer";
+import { PdfOffer, usePdfOffer } from "@/components/calculators/premium/PdfOffer";
 import {
   Collapsible,
   CollapsibleContent,
@@ -551,6 +551,10 @@ export function PremiumCalculator({
     [config, values, rows, scenario],
   );
 
+  // Paid PDF test (flag-gated, see PdfOffer.tsx). While the offer is on the free
+  // workings are withheld: they are the product. Flag off restores them.
+  const pdfOffer = usePdfOffer(config.id);
+
   const primaryFields = config.fields.filter((f) => f.advanced !== true);
   const advancedFields = config.fields.filter((f) => f.advanced === true);
   const hasAdvanced = advancedFields.length > 0 || Boolean(config.grid);
@@ -576,15 +580,17 @@ export function PremiumCalculator({
       </div>
 
       <div className="grid lg:grid-cols-2">
-        {/* Inputs — on the compact (blog) layout the panel is capped to a fixed
-            height and scrolls, so a tool with many inputs never runs the card too
-            tall. Short tools never reach the cap, so they do not scroll. The full
-            (calculator-page) layout has room, so it is uncapped. */}
-        <div className="p-5 sm:p-7">
+        {/* Inputs. From lg up the column is exactly as tall as the results column
+            and scrolls inside it: the cell is a positioned box that adds nothing to
+            the row height, so the right-hand side always sets the height. Below lg
+            the columns stack, so the compact (blog) layout keeps its fixed cap and
+            the full (calculator-page) layout is uncapped. */}
+        <div className="p-5 sm:p-7 lg:relative lg:p-0">
           <div
             className={cn(
               "space-y-6",
               !full && "max-h-[360px] overflow-y-auto pr-2 [scrollbar-width:thin]",
+              "lg:absolute lg:inset-0 lg:max-h-none lg:overflow-y-auto lg:p-7 lg:pr-5 lg:[scrollbar-width:thin]",
             )}
           >
             {primaryFields.map((f) => (
@@ -639,15 +645,19 @@ export function PremiumCalculator({
               <HeadlineCard result={result} />
               {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
               {full && <ComparisonChart config={config} result={result} />}
-              <Workings result={result} />
-              <PdfOffer
-                toolId={config.id}
-                placement={placement}
-                values={values}
-                rows={rows}
-                scenario={scenario}
-                result={result}
-              />
+              {pdfOffer ? (
+                <PdfOffer
+                  offer={pdfOffer}
+                  toolId={config.id}
+                  placement={placement}
+                  values={values}
+                  rows={rows}
+                  scenario={scenario}
+                  result={result}
+                />
+              ) : (
+                <Workings result={result} />
+              )}
             </>
           ) : (
             <HeldResult
