@@ -126,7 +126,56 @@ bottleneck is indexing, not design - leave it late.** `wills-probate` and
 `divorce-finances` have never launched, so they carry no cutover risk and are the safest
 ports in the estate. The four remaining family-D sites are the cheapest.
 
-## WHERE THE BAR SITS. RESOLVE THIS BEFORE YOU PORT ANYTHING
+## WHERE THE BAR SITS. ANSWERED 2026-09-14. READ THIS BEFORE YOU PORT ANYTHING
+
+**This section used to say the question was open and told you not to port anything until
+the owner ruled. He has now ruled. The answer is below; the history is kept under it
+because the reasoning is what stops it recurring.**
+
+The answer, in three lines:
+
+1. **The gap was kit ADOPTION, not art direction and not content.** The owner named
+   generalist - also a ported site - as one that looks good. Two sites through the same
+   playbook, one over the bar and one under, and the variable between them was that
+   generalist re-exported the shared design kit and crypto hand-rolled its own copies.
+   Full working: `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md`.
+2. **The fix was mechanical and took one session.** Six packages: a webfont, the kit
+   layout and button recipes, the kit `Eyebrow`, the kit `LeadCTAPanel`, a `CryptoBackdrop`
+   and the neutral ramp converted to slate. Commit `7dfe04b3`. The owner's verdict on the
+   result is **"much better"**. No designer was involved, and no content changed.
+3. **The playbook now has a gate for it: `DESIGN_PORT_PLAYBOOK.md` §9.1.** Run it at
+   phase 6 close. It asks the one question no other gate asked - did this site adopt the
+   kit, or reimplement it - and it comes with a counter-rule, because six kit components
+   were correctly DECLINED on crypto and a gate that forced blind adoption would have
+   shipped all six as defects. Read §9.1 whole, not just the command.
+
+**The consequence for the sites already built, and it is the reason this is the first
+thing in the handoff:**
+
+```
+DIR=<site>; P=$DIR/web/src/app/page.tsx
+echo "ping=$(grep -c 'animate-ping' $P) stats=$(grep -c 'StatsCounter' $P) backdrop=$(grep -c 'Backdrop' $P) rounded-full=$(grep -o 'rounded-full' $P|wc -l)"
+```
+
+Property **1/2/3/4** ("wow"), generalist **1/2/3/4** ("looks good"), crypto pre-uplift
+**0/0/0/0** ("not there"). **charities and contractors-ir35 are both 0/0/0/0 today, and
+construction-cis is 0/0/4/0** - it has a `TradeBackdrop`, so it is one marker up on the
+other two and still nowhere near the bar. On the §9.1 gate proper they are worse:
+construction-cis re-exports nothing from the kit (**0 distinct kit components, 0 call
+sites**) and ships **10 `section-label` against 0 `<Eyebrow>`** on its homepage; charities
+loads **no webfont at all** and has **no backdrop**. **All three will read exactly the way
+crypto did when the owner looks at them.**
+
+**Whether to uplift those three is an OWNER DECISION. It has been put to him and he has
+not answered. Do not start one, and do not record it as approved.** What you may do
+without asking is run §9.1 on any site you are about to port and report the table.
+
+The rule that replaces "do not port anything until the owner rules": **no port closes
+without §9.1 passing.** Fix the gate before the next port, not after.
+
+---
+
+### The history, kept because it is the reasoning
 
 The owner walked the finished crypto site next to Property and said:
 
@@ -161,14 +210,21 @@ nothing has to be unwound.
 RULE: **do not start another port until the owner has ruled on what the target actually
 is.** That ruling is the next session's first action, not a port.
 
+**SUPERSEDED 2026-09-14, and the reasoning above is half wrong.** The owner ruled, and the
+answer was not "the design brief needs to change". It was that the port's own scope had
+been under-delivered: phase 1 lists "backdrop/motif" and phase 5 is "a 15-16 section
+rebuild", both were delivered on generalist and neither was delivered on crypto. The method
+was **not** working as designed on the fast ports. The execution gate is what changed
+(§9.1), not the brief. The rule that replaces this one is at the top of this section.
+
 A read-only diagnosis comparing Property against crypto on section anatomy, bespoke
 components, art direction, type scale, density and copy shape - splitting the gap into
 what the port should have carried and did not, what is genuinely bespoke and needs a
 designer, and what is really content rather than design - was commissioned on 2026-09-14
-and lands at `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md`. **It did not exist when
-this handoff was written.** Check for it (`ls docs/_engines/DESIGN_GAP_DIAGNOSIS_*.md`);
-if it is absent, say so to the owner rather than implying it is there, and put the
-question to him directly instead.
+and lands at `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md`. It did not exist when this
+handoff was first written. **It exists now**, committed in `7dfe04b3` (326 lines), and its
+§1, §10 and §12 are the three worth reading first: the four markers, the proposed gate, and
+the nine false premises it found.
 
 ## THE ONE CHANGE THAT MATTERS MOST
 

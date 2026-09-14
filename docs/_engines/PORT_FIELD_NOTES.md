@@ -1627,3 +1627,93 @@ its article disagreed on identical inputs, on adjacent URLs.
 RULE: when a site ships both a tool and prose about the same calculation, run the tool's
 default render against the article's worked example. A disagreement is free evidence and
 neither artefact has to be trusted first.
+
+### Added after the design uplift landed (`7dfe04b3`)
+
+The owner walked the finished port and said it did not look as good as Property. He then
+said, unprompted, that **generalist** looks good, and generalist is also a ported site.
+That control case is what made the gap diagnosable rather than a matter of taste, and the
+whole of `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md` hangs off it.
+
+**A port can pass every gate in the playbook and still not look ported.** crypto cleared
+contrast at four widths, zero overflow, every link floor, the claims ledger and 38 tests,
+and it still read as flat. The cause was not art direction and not content: it was that
+crypto **reimplemented** the shared kit where generalist **adopted** it. generalist's
+`components/ui/layout-utils.ts:6-19` re-exports the kit's containers, sections and button
+recipes; crypto declared all of them locally, and its `btnPrimary` came out square,
+`font-medium`, with no `min-w`, on the most-repeated element on 53 routes. Its own
+`globals.css:52-55` had already declared the `--btn-ground` trio "so the navy button ground
+survives adoption of the kit recipe" - **the tokens were declared for an adoption that
+never happened.**
+RULE: the playbook now carries a kit-adoption gate at phase 6 close (§9.1). Two ported
+sites through the same method, one over and one under the owner's bar, is the only
+evidence that ever settled this. If a future port is judged flat, look for the control
+case before looking for a cause.
+
+**Both of the intuitions we started with were wrong, and they were the obvious two.** The
+owner suspected Property looked better because a UX designer had designed it for its
+niche. I suspected crypto's corpus was too thin. Measurement falsified both:
+
+```
+grep -c '<section' <site>/web/src/app/page.tsx ; wc -l <site>/web/src/app/page.tsx
+```
+crypto's homepage is the **longest** of the three (793 source lines against generalist's
+471 and Property's 537), with the most sections (13 vs ~11 vs 7) and the fullest grids; and
+both crypto and Property run **three dark bands** on the homepage at effectively the same
+ground (`#0e1a3a` against `slate-900` `#0f172b`). Section padding and container widths are
+identical across all three.
+RULE: the next session will reach for "bespoke design" and "thin content" in that order,
+because they are the two explanations that feel true. Both are cheap to test and both were
+false here. Test them before spending on either.
+
+**The cheapest and most visible defect on the whole list was a missing webfont.** crypto
+and charities load none and render in `ui-sans-serif, system-ui`
+(`grep -o 'next/font[a-z/]*' <site>/web/src/app/layout.tsx` returns nothing for either).
+Ten minutes to fix, and it is the loudest "unfinished template" signal a non-technical eye
+reads. Nothing else on the list was as cheap or as visible.
+RULE: check for a webfont in phase 0, not at review. charities still has none.
+
+**Three of the six uplift briefs were themselves the defect, which is the third port
+running.** Each was caught by the agent executing it, not by the manager writing it:
+
+- The kit's button recipes **embed** `focus-visible:outline-primary-600` (`btnOnDark`:
+  `-400`) inside their own class strings, so keeping the site's local `focusRing` constant
+  does **not** protect the focus ring: the failing utility rides inside the recipe. On
+  crypto `--color-primary-600` is `#8f421f`, 2.42:1 on the navy band, under the 3.0 graphic
+  floor. `crypto/web/src/tests/focus-ring.test.ts` now pins it and fails if a future edit
+  re-exports a kit recipe raw.
+- The brief said to copy `GeneralistBackdrop`. It uses a **fixed `viewBox`**, which is the
+  exact shape that causes horizontal overflow, and the port's own overflow gate would have
+  caught it a day later. Trade's mechanism was used instead;
+  `crypto/web/src/components/layout/CryptoBackdrop.tsx` carries no `viewBox`.
+- The brief said to adopt the kit's `story-numeral` rules. **They are not in the kit at
+  all.** They live in Property's own stylesheet, where they light emerald, a token crypto
+  does not declare, so copying them would have shipped Property's brand or nothing.
+
+RULE unchanged and now on its third port: **verify the brief's POSITIVES, not only its
+omissions.** A brief that names a file, a component or a constant is a claim; open it.
+
+**A half-converted ramp is worse than either state.** The neutral-to-slate conversion ran
+as one package that converted the homepage and `/research` and left **41 classes in the
+forms** (session record; the two packages were squashed into `7dfe04b3`, so git shows only
+the finished state - `git show 7dfe04b3 -- crypto/web/src/components/forms | grep '^-' |
+grep -o 'neutral-[0-9]\+' | wc -l` returns **28** for the three form files alone), which
+render on every capture surface. Converted copy then sat directly next to
+unconverted copy on the same page, which reads worse than a site that had never started.
+It took one more package to finish, and the final state is 98 classes across 10 files with
+**zero `neutral-*` classes left in live markup** (the 7 remaining `neutral-` hits in
+`crypto/web/src` are all prose inside comments recording retired pairs).
+RULE: a ramp conversion is all-or-nothing within a site. Scope it by the ramp, not by the
+page, and count forms and shared components in from the start, because they are the files
+every surface pulls in.
+
+**Counting trap, new: `grep -o 'slate-[0-9]*'` over-counts.** `translate-x-1` contains the
+substring `slate-`, and `[0-9]*` matches the empty string, so every transform utility
+scores a hit. Across `crypto/web/src` the naive pattern returns **484** where the
+prefix-anchored one returns **465**.
+RULE: anchor the utility prefix, not the ramp name:
+```
+grep -rhoE '(bg|text|border|ring|from|to|via|divide|outline|placeholder|fill|stroke|accent|caret|shadow|decoration)-slate-[0-9]+' <site>/web/src | wc -l
+```
+The same trap applies to any ramp whose name is a substring of a utility: check before you
+report a ramp count.

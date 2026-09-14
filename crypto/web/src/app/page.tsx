@@ -341,7 +341,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Key figures bar */}
+      {/* Key figures bar.
+          DELIBERATELY NOT the kit's StatsCounter, and this is the decline recorded at the
+          call site rather than only in a commit body. StatsCounter takes `target: number`
+          and renders plain text with no href. Two of these four figures cannot be expressed
+          as a single number ("18% / 24%" and "1 Jan 2027"), a third loses its thousands
+          separator (£3,000 renders £3000), and all four would lose the gov.uk source link
+          that makes them checkable. Adopting it would trade four sources and two correct
+          figures for a count-up animation. Owner decision: if he wants the motion, it needs
+          either four count-able figures (new copy) or an href passthrough on the kit
+          component (a web-shared change, trap 12). */}
       <section
         className="border-b border-slate-200 bg-white py-8 sm:py-10"
         aria-label="Key crypto tax figures 2026/27"

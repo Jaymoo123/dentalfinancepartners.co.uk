@@ -4,47 +4,66 @@
      at the end of this block is older history. Do not trust a prose claim in it over
      `git log` / `git tag -l 'port-crypto*'`. -->
 
-## PICKUP — design port, 2026-09-14
+## PICKUP — design port + design uplift, 2026-09-14
 
-**State in one line: the port is COMPLETE — phase 0, phases 1-6, two independent
-adversarial reviews and the gap-fix wave that answered them are all committed, the
-working tree is clean, and nothing is pushed and nothing is deployed. Production still
-serves the pre-port SHA.**
+**State in one line: the port is COMPLETE and a DESIGN UPLIFT has been run on top of it —
+phase 0, phases 1-6, two independent adversarial reviews, the gap-fix wave that answered
+them, and the uplift (`7dfe04b3`) are all committed, and nothing is pushed and nothing is
+deployed. Production still serves the pre-port SHA.**
+
+**`7dfe04b3` is the current end of the work, not `port-crypto-complete`.** That tag points
+at `f9a96c30`, which is the gap-fix wave and is now two commits behind. A checkout of
+`port-crypto-complete` is missing the entire uplift. No tag was moved or created, because
+this pass had no git write permission. **Recommendation: retag, or add
+`port-crypto-uplift` on `7dfe04b3`, before anyone checks this site out by tag.**
 
 ### Push / deploy status, stated plainly
 
 - `origin/main` is `7b5c0ce8` (`git rev-parse --short origin/main`, re-derived
-  2026-09-14 after the gap-fix wave landed — unchanged). Local `main` is ahead by the
-  three crypto port commits plus `e25412d7`.
+  2026-09-14 after the design uplift landed — unchanged). **Local `main` is ahead by 127
+  commits** (`git rev-list --count origin/main..HEAD`), of which seven are crypto's. An
+  earlier revision of this block said "ahead by the three crypto port commits plus
+  `e25412d7`", which counted only this site's work and read as the whole delta. It is not:
+  the charities, estate and generalist ports are unpushed on the same branch.
 - **Nothing is pushed. Nothing is deployed. Production serves the pre-port SHA.**
   Push and deploy are owner-triggered; do not run them without being asked in that turn.
-- **The working tree is CLEAN** (`git status --porcelain` returns nothing). An earlier
-  revision of this block recorded a dirty tree: that was the gap-fix wave mid-flight and
-  it has since landed as `f9a96c30`. Nothing is outstanding in the tree.
+- **The tree carries four uncommitted DOC edits and no uncommitted code**: this file,
+  `docs/_engines/PORT_FIELD_NOTES.md`, `docs/_engines/DESIGN_PORT_PLAYBOOK.md` and
+  `docs/_engines/HANDOFF_NEXT_PORT.md`, all written in the pass that recorded the uplift.
+  All crypto source is committed at `7dfe04b3`. Check with `git status --porcelain`.
 
 ### Phase commits and tags, DERIVED FROM GIT (not from prose)
 
-The port is **five commits**. `git tag -l 'port-crypto*'` returns **eight** tags: six of
-the phase tags point at one commit, and **`port-crypto-complete` is on the final commit and
-is the one to check out.** A checkout of `port-crypto-phase6` is missing every review fix.
+The port is **six commits, plus the uplift on top of it, seven in all**.
+`git tag -l 'port-crypto*'` returns **eight** tags: six of the phase tags point at one
+commit, and `port-crypto-complete` points at `780ee0fe`. **It is no longer the one to check
+out.** A checkout of `port-crypto-phase6` is missing every review fix; a checkout of
+`port-crypto-complete` is missing the entire design uplift. **Check out `7dfe04b3`.**
 
 | commit | tag(s) | subject | committed |
 |---|---|---|---|
 | `f480c7ec` | `port-crypto-phase0` | `fix(crypto): phase 0 baseline, claims audit, and the serious tier fixed` | 2026-09-14 10:17 +0100 |
 | `666ab0a2` | `port-crypto-phase1` … `phase6` (six tags, one commit) | `feat(crypto): phases 1 to 6 - the Property design standard on a site with no chrome` | 2026-09-14 10:53 +0100 |
 | `f9a96c30` | **none — UNTAGGED** | `fix(crypto): gap-fix wave - two independent adversarial reviews, then the fixes` | 2026-09-14 11:55 +0100 |
+| `cb87416b` | none | `docs(crypto): manager verification record and the post-port link artefact` | 2026-09-14 |
+| `6f48570a` | none | `docs(crypto,engines): state doc and field notes reconciled to the finished port` | 2026-09-14 |
+| `780ee0fe` | **`port-crypto-complete`** | `docs(engines,crypto): handoff rewritten for crypto, and two stale claims corrected` | 2026-09-14 |
+| `7dfe04b3` | **none — UNTAGGED, and this is HEAD** | `feat(crypto): design uplift - adopt the kit the port reimplemented by hand` | 2026-09-14 13:03 +0100 |
+
+Re-derived 2026-09-14 after the uplift:
+`for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
+returns `port-crypto-complete -> 780ee0fe` and the six phase tags on `666ab0a2`.
 
 Deriving commands:
 `for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
-`git log --oneline -4` (`f9a96c30` is `HEAD`)
+`git log --oneline -8` (`7dfe04b3` is `HEAD`)
 
 **Two things to read literally.** First, phases 1 to 6 are ONE commit, not six: they ran
 as one wave with disjoint file sets (`docs/crypto/_port/PHASE0_PACKAGES.md`) and the six
 tags were applied to the same SHA at wave close, so a fresh agent looking for six
-distinct diffs will not find them. Second, **`port-crypto-phase6` is NOT the end of the
-port.** The gap-fix wave that answered both adversarial reviews is `f9a96c30`, it is
-`HEAD`, and it is untagged — a checkout of `port-crypto-phase6` is missing every review
-fix listed below.
+distinct diffs will not find them. Second, **no tag points at the end of this work.**
+`port-crypto-phase6` is missing every review fix listed below; `port-crypto-complete`
+(`780ee0fe`) is missing the design uplift. **`HEAD` is `7dfe04b3` and it is untagged.**
 
 Scale, from `git show --stat`:
 
@@ -53,6 +72,11 @@ Scale, from `git show --stat`:
 | `f480c7ec` (phase 0) | 41 | 34,619 | 167 |
 | `666ab0a2` (phases 1-6) | 38 | 1,749 | 675 |
 | `f9a96c30` (gap-fix) | 32 | 1,438 | 93 |
+| `7dfe04b3` (design uplift) | 24 | 916 | 310 |
+
+`7dfe04b3`'s 24 files include one doc, `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md`
+(326 lines), which is the diagnosis the uplift was built from. The other 23 are crypto
+source.
 
 `f9a96c30` also committed `R1_DESIGN_REVIEW.md` (332 lines) and `R2_CONTENT_REVIEW.md`
 (397 lines), which were untracked until then, plus this state doc and field-notes
@@ -143,6 +167,70 @@ the commit bodies:
   declaration probe against the final build, and the answer is genuinely zero at
   `f9a96c30`. The lesson survives the fix: the defensible claim is "every undeclared name
   is fallback-guarded, checked at the element", or else run the probe and say you ran it.
+
+### The design uplift, `7dfe04b3` — a distinct phase AFTER the port
+
+The port closed against every gate it was given and the owner still said it did not look
+as good as Property. He also said **generalist**, which is another ported site, does look
+good. That control case is what made the gap diagnosable: the ported sites that look good
+**adopted** the shared design kit, and crypto hand-rolled its own copies of everything.
+Full working in `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md` (committed in
+`7dfe04b3`). generalist used 16 distinct kit components across 138 call sites; crypto used
+5 across 20, one of them a marketing component. **The owner's verdict on the result is
+"much better".**
+
+Both starting hypotheses were falsified before any code was written: crypto's homepage is
+**longer** than generalist's (793 source lines against 471, 13 sections against ~11), and
+crypto and Property both run **three dark bands** at effectively the same ground
+(`#0e1a3a` against `#0f172b`). It was neither bespoke art direction nor thin content.
+
+**What was done, six packages:**
+
+| package | what landed |
+|---|---|
+| webfont | crypto loaded **none** and rendered in `ui-sans-serif, system-ui`. `layout.tsx:2-3` now loads `geist/font/sans` and `geist/font/mono` through `next/font`, which emits the `@font-face` rules and binds `--font-geist-sans` / `--font-geist-mono`, consumed by the `globals.css` base rule. |
+| kit layout and button recipes | `components/ui/layout-utils.ts` now imports from `@accounting-network/web-shared/design/layout-utils` instead of declaring everything locally. Square `font-medium` buttons with no `min-w` became the estate's `rounded-xl` / `font-bold` / `min-w-[10rem]`. The homepage went from **0 rounded elements to 13**. |
+| kit `Eyebrow` | Replaced the solid brand-filled `.section-label` chip — the exact recipe the kit's own comment at `packages/web-shared/design/primitives/page-blocks.tsx:27-30` was written to stop — on all **10** homepage instances. Homepage is now `<Eyebrow> 10 / section-label 0`. |
+| kit `LeadCTAPanel` | Adopted for the closing ask, carrying crypto's own four proof points across verbatim rather than taking the component's defaults. **This supersedes the "Kit `LeadCTAPanel` declined" row in the deliberate-calls table below**: the objection was its default `proofPoints` publishing unauthored fee claims, and passing crypto's own points answers it. |
+| `CryptoBackdrop` | `components/layout/CryptoBackdrop.tsx`, 74 lines: a pooled-ledger lattice behind the hero and the closing panel. The piece of art direction phase 1's own scope line lists ("Header, footer, shell, tokens, **backdrop/motif**") and the port skipped. Six of the estate's design components of this kind now exist across the ported sites and Property. |
+| neutral ramp to slate | **98 classes across 10 files**, closing STATE item 10. Zero `neutral-*` classes remain in live markup (`grep -rn 'neutral-[0-9]' crypto/web/src` returns 7 hits, all prose inside comments recording retired pairs). Plus local motion rules so the kit's tick draw works without importing `globals-standard.css`, which leaks Property's emerald and cream. |
+
+**What was DECLINED, and why. This is as important as what was adopted.**
+
+| component | reason it was not adopted |
+|---|---|
+| **`StatsCounter`** | It takes one number and renders no links. Adopting it would have mangled "18% / 24%" and "1 Jan 2027", stripped the separator from "£3,000", and **deleted four gov.uk source links** (`app/page.tsx:23-43`). **Owner decision — see open item 11.** |
+| **`FaqSection`** (again) | Radix with no `forceMount` strips closed answers from the server HTML while the JSON-LD keeps asserting them. That is the defect phase 0 had just closed on 222 answers. Recorded at both call sites: `app/page.tsx:727`, `app/blog/[category]/[slug]/page.tsx:160`. |
+| **`CoverageCards`**, **`CardStack`** | Both render authored bodies as text children, so they would print escaped markup and kill the gov.uk citations on the service pages. |
+| **`ProcessTimeline`** | Needs content this site does not publish. |
+| **`StickyCTA`** | An interruption. Banned. |
+
+**Three of the six briefs were themselves wrong, and the agents executing them caught it:**
+the kit's button recipes **embed** `focus-visible:outline-primary-600`, so keeping crypto's
+local `focusRing` constant was not enough (`src/tests/focus-ring.test.ts`, 28 lines, now
+pins it); `GeneralistBackdrop` uses a fixed `viewBox`, the exact shape that causes
+horizontal overflow, so Trade's mechanism was used instead and `CryptoBackdrop` carries no
+`viewBox`; and the `story-numeral` rules are not in the kit at all but in Property's own
+stylesheet, where they light emerald, a token crypto does not declare.
+
+**Verification, against one build at the uplift close** (`7dfe04b3` commit body):
+
+| metric | value |
+|---|---|
+| pages | **54** |
+| JSON-LD blocks | **147**, **0 parse failures** |
+| FAQ answers asserted vs on-page | **222 of 222 present** |
+| contrast findings at 390/768/1024/1440 | **0** |
+| horizontal overflow | **0** |
+| anchor gaps at four widths | **0** |
+| routes holding their link count | **51 of 51**, 0 dead links |
+| dependency closure | OK across 19 sites |
+| tests | **44 green**, `tsc` clean |
+
+**The kit-adoption gate this produced is now in the playbook at
+`DESIGN_PORT_PLAYBOOK.md` §9.1**, and it runs at phase 6 close on every future port. Its
+counter-rule is the table above: adopt the kit unless adopting it breaks something, and
+record the reason at the call site.
 
 ### Live defects found that were NOT design work
 
@@ -247,7 +335,7 @@ already passed over.
 | Kit **`FaqSection`** declined | It is a Radix accordion with no `forceMount` (`primitives/FaqSection.tsx:34-43`). crypto's native `<details>` keeps answers in the server HTML. Adopting it would have re-opened the asserted-but-absent FAQ defect phase 0 had just closed, on four surfaces that were correct |
 | Kit **`RelatedArticles`** declined | It carries `focus-visible:outline-none` (`blog/RelatedArticles.tsx:106`) whose replacement indicator `.related-card:focus-within` lives in `globals-standard.css`, which crypto does not import. It would have shipped invisible keyboard focus. Substituted `HubArticleList` (R1 V4 confirms) |
 | Kit **`BlogSidebarCta`** and **`BlogCategoryHub`** declined | Each would have added a capture surface. Owner gate |
-| Kit **`LeadCTAPanel`** declined | Its `proofPoints` default publishes claims no page authored ("Fixed fees, quoted upfront"), and it is a further capture surface. R1 V9 confirms `proofPoints` appears in crypto only inside two comments explaining the avoidance |
+| ~~Kit **`LeadCTAPanel`** declined~~ **SUPERSEDED by the uplift (`7dfe04b3`): it is now ADOPTED on the closing ask, with crypto's own four proof points passed explicitly.** The original reason, kept because it is why the adoption had to pass `proofPoints` rather than take the defaults | Its `proofPoints` default publishes claims no page authored ("Fixed fees, quoted upfront"), and it is a further capture surface. R1 V9 confirms `proofPoints` appears in crypto only inside two comments explaining the avoidance |
 | Kit **`SlimHero`** declined | Recorded at its call site with the others; the site uses its own `_parts/PageHero` |
 | Kit **`WhatToExpectCard`** defaults overridden | `DEFAULT_ITEMS` ends "Fixed fee quote if you decide to proceed" and crypto publishes no fees. `contact/page.tsx` passes `items` explicitly; R2 V9 measures "fixed fee" on **0 of 54** pages |
 | **Header-CTA cascade defect fixed site-locally, not in the kit** | The estate-wide defect reproduces here and was confirmed by byte offset. A layered rule in `app/layout.tsx` keyed on the CTA data attributes fixes it without touching `packages/web-shared/` — the durable kit fix crosses 18 sites and is an owner decision (trap 12). R1 V1 measures the override working: `none/none/none/flex/flex` at 390/768/1023/1024/1440 on all 53 routes |
@@ -291,11 +379,29 @@ already passed over.
    **It is the same class as the header-CTA cascade defect**: a real defect whose durable
    fix crosses the estate, so it is an owner decision under trap 12, not a site call.
    These two are now the port's only known-unfixed defects and they are both kit-level.
-10. **The homepage still runs a neutral type and border ramp on a now-`slate` ground**
-    after R1 D4's convergence, and `/about`, `/contact` and `/research` are in the same
-    position. This is **drift, not a defect** — nothing fails a floor — and re-ramping
-    four surfaces is a visible design change, so it is an owner call rather than
-    something a gap-fix wave should have taken unilaterally.
+10. ~~**The homepage still runs a neutral type and border ramp on a now-`slate` ground**~~
+    **CLOSED by the design uplift (`7dfe04b3`).** 98 classes converted across 10 files.
+    Zero `neutral-*` classes remain in live markup; the 7 remaining `neutral-` hits in
+    `crypto/web/src` are prose inside comments recording retired pairs.
+    Deriving command: `grep -rn 'neutral-[0-9]' crypto/web/src`.
+11. **The key-figures strip is static text, because `StatsCounter` was declined.** Property
+    and generalist both run the kit's animated count-up directly under the hero; it is the
+    first motion a visitor sees. crypto's strip stays static because the component takes
+    one number and renders no links, so adopting it as-is would mangle "18% / 24%" and
+    "1 Jan 2027", strip the separator from "£3,000", and **delete four gov.uk source
+    links** (`app/page.tsx:23-43`). **The owner may want the motion.** The cost is either
+    those four source links or new copy written so the figures are single plain numbers.
+    This is a content-and-evidence call, not a design one, which is why it was not taken
+    unilaterally.
+12. **crypto's form input border is `border-slate-300`, which measures 1.49:1 on white and
+    fails the 3.0 graphic floor** — on `LeadForm.tsx:15`, `DetailsForm.tsx:20` and
+    `BookingPicker.tsx:26`, so on every capture surface. **Property fails the same floor
+    with the same colour** (`Property/web/src/components/forms/LeadForm.tsx:19`); it
+    differs only by drawing it at `border-2`, which is a thicker failure, not a passing
+    one. So this is an estate-wide floor question, not a crypto regression, and fixing
+    crypto alone would make it the only site in the estate with a different input border.
+    Owner call. (Same class as items 9 and the header-CTA cascade defect: real, and the
+    durable fix crosses sites.)
 
 ### Orphaned or unowned files
 

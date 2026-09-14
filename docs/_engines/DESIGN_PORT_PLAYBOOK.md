@@ -662,10 +662,80 @@ A port is done when all six phases are done and:
 - `docs/<site>/STATE.md` updated in place with: phase commits, the verification
   numbers, live defects found that were not design work, open owner decisions,
   deliberate calls, orphaned analytics ids, and the leftovers ledger.
+- **The kit-adoption gate below passes, and its table is pasted into STATE.md.**
 - Owner walk on a dev server.
 - Deploy on the owner's word, from a clean worktree at a pushed SHA.
 
 Then archive the closed memory entries and clean the scratchpad.
+
+### 9.1 The kit-adoption gate (added 2026-09-14, run at phase 6 close)
+
+Every other gate in this playbook is a contrast, overflow, link-floor or claims gate.
+**crypto passed all of them and the owner still said it was not there.** It passed while
+sharing almost nothing with the standard it had been ported to: it hand-rolled its own
+copies of the kit's primitives instead of adopting them. generalist, the same method on
+the same playbook, re-exported the kit and cleared the owner's bar. That control case is
+written up in `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md`; the uplift that answered
+it is `7dfe04b3`.
+
+So there is now a gate that asks the one question none of the others did: **did this site
+ADOPT the kit, or REIMPLEMENT it?**
+
+Run this from the monorepo root with `DIR` set to the site's directory. It is read-only.
+
+```bash
+DIR=crypto; P=$DIR/web/src/app/page.tsx
+
+echo "1 layout-utils  : $(grep -c 'web-shared/design/layout-utils' $DIR/web/src/components/ui/layout-utils.ts)"
+echo "2 kit components: $(grep -rho 'web-shared/design/\(marketing\|primitives\)/[A-Za-z-]*' $DIR/web/src | sort -u | wc -l) distinct / $(grep -rho 'web-shared/design/\(marketing\|primitives\)/[A-Za-z-]*' $DIR/web/src | wc -l) call sites"
+echo "2b homepage mktg: $(grep -o 'web-shared/design/marketing/[A-Za-z-]*' $P | wc -l)"
+echo "3 webfont       : $(grep -o 'next/font[a-z/]*\|geist/font[a-z/]*' $DIR/web/src/app/layout.tsx | sort -u | tr '\n' ' ')"
+echo "4 backdrop      : $(ls $DIR/web/src/components/layout/ | grep -ci backdrop)"
+echo "5 eyebrow ratio : Eyebrow=$(grep -o '<Eyebrow' $P | wc -l) section-label=$(grep -o 'section-label' $P | wc -l)"
+```
+
+Expected result, and each row is a BLOCKER on its own:
+
+| # | row | passes when | what a fail looks like |
+|---|---|---|---|
+| 1 | `layout-utils` | **>= 1.** The site's `components/ui/layout-utils.ts` re-exports or imports the kit's. A deliberate deviation (crypto wraps the four button recipes to swap an embedded outline, and keeps `focusRing` local) is fine **only if the reason is written above it in that file.** | `0` means every container, section and button recipe is a hand-rolled copy that will drift. crypto pre-uplift: 0. construction-cis, charities, contractors-ir35 today: 0. |
+| 2 | kit components | **Report the number, always**, next to generalist's **16 distinct / 138 call sites** (diagnosis §1; the same command re-derived 142 on 2026-09-14, so read the call-site figure as an order of magnitude and the distinct count as the real signal). There is no numeric floor, because the uplifted crypto sits at 7/19 and the owner passed it. A port that reports **0 distinct** has not adopted anything and does not close. | construction-cis: 0 distinct / 0 call sites. crypto pre-uplift: 5 / 20, of which 1 was a marketing component. |
+| 2b | homepage marketing | **>= 1.** At least one kit *marketing* component on the homepage, which is the surface the owner forms his impression on. | Property is `n/a`: it is the source, it imports nothing. |
+| 3 | webfont | **non-empty.** The site loads a real webfont through `next/font`. | Empty means the site renders in `ui-sans-serif, system-ui`. crypto and charities both shipped that. It is the loudest "unfinished template" signal a non-technical eye reads and it is ten minutes to fix. charities is still empty today. |
+| 4 | backdrop | **1.** A `<Site>Backdrop` component exists in `components/layout/`. Phase 1's own scope line says "Header, footer, shell, tokens, **backdrop/motif**". | `0`. A flat `bg-gradient-to-br` is a div with a colour on it. contractors-ir35 and charities: 0. |
+| 5 | eyebrow ratio | **`<Eyebrow>` >= `section-label`.** | The kit's own comment at `packages/web-shared/design/primitives/page-blocks.tsx:27-30` says the old recipe "shouted louder than the heading it was introducing". construction-cis ships **10 `section-label` and 0 `<Eyebrow>`** on its homepage. |
+
+Also paste the four-marker row from the diagnosis §1 into STATE.md, because it is the
+cheapest one-line summary of where the site sits:
+
+```bash
+echo "ping=$(grep -c 'animate-ping' $P) stats=$(grep -c 'StatsCounter' $P) backdrop=$(grep -c 'Backdrop' $P) rounded-full=$(grep -o 'rounded-full' $P|wc -l)"
+```
+Property 1/2/3/4 ("wow"), generalist 1/2/3/4 ("looks good"), crypto pre-uplift 0/0/0/0
+("not there"). It is a thermometer, not a blocker: crypto post-uplift is still 0/0/5/1 and
+the owner passed it, because the two zeros are the declines below.
+
+**THE COUNTER-RULE, AND IT MATTERS AS MUCH AS THE GATE. Adopt the kit unless adopting it
+breaks something, and record the reason at the call site.** A gate that forced blind
+adoption would have shipped six defects on crypto alone. Every one of these was declined
+on measurement, not on taste:
+
+- **`StatsCounter`** takes one number and renders no links. Adopting it would have mangled
+  "18% / 24%" and "1 Jan 2027", stripped the separator from "£3,000", and **deleted four
+  gov.uk source links** (`crypto/web/src/app/page.tsx:23-43`).
+- **`FaqSection`** is a Radix accordion with no `forceMount`
+  (`packages/web-shared/design/primitives/FaqSection.tsx:34-43`), so it strips closed
+  answers from the server HTML while the JSON-LD keeps asserting them. That is the exact
+  defect crypto's phase 0 had just closed on 222 answers.
+- **`CoverageCards`** and **`CardStack`** render authored bodies as text children, which
+  would print escaped markup and kill the gov.uk citations on the service pages.
+- **`ProcessTimeline`** needs content the site does not publish.
+- **`StickyCTA`** is an interruption, and those are banned.
+
+A decline is only legitimate when the reason is written **at the call site**, in the file,
+not only in a commit body. crypto's `FaqSection` declines are (`app/page.tsx:727`,
+`app/blog/[category]/[slug]/page.tsx:160`); its `StatsCounter` decline is **not**, and that
+is the shape of gap to close before the next port closes.
 
 ---
 
