@@ -24,6 +24,7 @@ import {
   buildServiceJsonLd,
 } from "@/lib/schema";
 import { JsonLd } from "@/components/ui/JsonLd";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { HeroOffer } from "@/components/intent/HeroOffer";
 import { TradeBackdrop } from "@/components/layout/TradeBackdrop";
 import {
@@ -237,9 +238,7 @@ export default function HomePage() {
         <div className={`${siteContainerLg} relative z-10 w-full py-16 sm:py-20`}>
           <div className="max-w-3xl">
             <div className="hero-reveal">
-              <div className="section-label mb-6">
-                Specialist CIS accountants
-              </div>
+              <Eyebrow onDark>Specialist CIS accountants</Eyebrow>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
                 Specialist CIS accountants for UK construction trades.
               </h1>
@@ -311,7 +310,7 @@ export default function HomePage() {
           landlord copy with no copy props (trap 12), so it is not mirrored. */}
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">What CIS subcontractors come to us with</div>
+          <Eyebrow>What CIS subcontractors come to us with</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             The financial challenges specific to construction trades.
           </h2>
@@ -387,7 +386,11 @@ export default function HomePage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-12">
-            <div className="section-label mb-4">How we work</div>
+            {/* Eyebrow is a flex row (brand rule + label) with no className prop,
+                so a centred band centres it with a wrapper, not text-align. */}
+            <div className="flex justify-center">
+              <Eyebrow>How we work</Eyebrow>
+            </div>
             <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
               From free tools to full CIS accounting.
             </h2>
@@ -405,7 +408,7 @@ export default function HomePage() {
           stats band. */}
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">What we cover</div>
+          <Eyebrow>What we cover</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             The CIS mechanics we handle, area by area.
           </h2>
@@ -455,11 +458,12 @@ export default function HomePage() {
         <TradeBackdrop tone="navy" />
         <div className={`${siteContainerLg} relative z-10`}>
           <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-12">
-            {/* .section-label is white on --btn-ground (5.18), ground-independent,
-                so it replaces the solid orange-500 pill (white on orange-500 =
-                2.89 from the utility, below even the 3:1 graphics floor). */}
-            <div className="section-label mb-4">
-              Every construction trade
+            {/* Kit Eyebrow, onDark: slate-300 text on --dark = 12.03 (text floor
+                4.5) and a primary-400 rule at 7.51 (graphic floor 3.0). It
+                replaces the filled --btn-ground chip, which was legible but
+                shouted over the h2 it introduces. */}
+            <div className="flex justify-center">
+              <Eyebrow onDark>Every construction trade</Eyebrow>
             </div>
             <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
               We work with all UK construction trades
@@ -499,7 +503,9 @@ export default function HomePage() {
       <section id="calculators" className="scroll-mt-24 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-12">
-            <div className="section-label mb-4">Free tools</div>
+            <div className="flex justify-center">
+              <Eyebrow>Free tools</Eyebrow>
+            </div>
             <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
               Work out your position before you speak to anyone.
             </h2>
@@ -540,7 +546,9 @@ export default function HomePage() {
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">Real outcomes</div>
+            <div className="flex justify-center">
+              <Eyebrow>Real outcomes</Eyebrow>
+            </div>
             <h2 id="testimonials-heading" className="mt-2 text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
               What we have done for CIS subcontractors
             </h2>
@@ -574,7 +582,7 @@ export default function HomePage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="mb-8 max-w-3xl sm:mb-12">
-            <div className="section-label mb-4">CIS guides</div>
+            <Eyebrow>CIS guides</Eyebrow>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
               Practical CIS and construction tax guides.
             </h2>
@@ -631,7 +639,7 @@ export default function HomePage() {
         <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
           <div className="grid items-start gap-8 sm:gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
             <div>
-              <div className="section-label mb-6">Get started</div>
+              <Eyebrow onDark>Get started</Eyebrow>
               {packagesMode ? (
                 <>
                   <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">

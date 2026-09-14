@@ -9,7 +9,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 
 const SUPPRESS_DAYS = 30;
 const suppressKey = (topic: string) => `bfp_deepscroll_${topic}`;
@@ -104,7 +104,7 @@ export function DeepScrollModal() {
             aria-label="Close"
             data-cta="deep_scroll_close"
             onClick={() => close(true)}
-            className="flex min-h-11 min-w-11 items-center justify-center rounded-xl text-[var(--ink-soft)] transition-colors duration-150 hover:bg-neutral-100 hover:text-[var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+            className={`flex min-h-11 min-w-11 items-center justify-center rounded-xl text-[var(--ink-soft)] transition-colors duration-150 hover:bg-neutral-100 hover:text-[var(--ink)] ${focusRing}`}
           >
             &times;
           </button>
@@ -132,7 +132,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border-2 border-[var(--hairline)] px-4 py-2.5 text-center font-semibold text-[var(--ink)] transition-colors duration-150 hover:bg-neutral-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+            className={`inline-flex min-h-12 w-full items-center justify-center rounded-xl border-2 border-[var(--hairline)] px-4 py-2.5 text-center font-semibold text-[var(--ink)] transition-colors duration-150 hover:bg-neutral-50 ${focusRing}`}
           >
             {secondaryLabel}
           </Link>

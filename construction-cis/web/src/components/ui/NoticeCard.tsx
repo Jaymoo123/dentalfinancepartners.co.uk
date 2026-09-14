@@ -17,6 +17,19 @@
  * Every consumer sits on a white section, so the slate tone takes --surface and
  * keeps an edge. No default title and no default body: this component publishes
  * nothing the calling route has not written.
+ *
+ * KIT DECLINE (2026-09-14 kit-adoption uplift), on colour, not on taste. The kit
+ * twin is packages/web-shared/design/primitives/NoticeCard.tsx and it is the same
+ * component in every respect but its neutral: its `slate` tone paints bg-slate-50
+ * (#f8fafc) with ring-slate-200, where this one paints --surface (#fafaf9, the
+ * warm stone-50 this site's sections are already built from) with ring-neutral-200.
+ * Every one of the nine call sites sits on a warm ground, so the kit tone would
+ * drop a cool-grey card onto a warm-grey section: 1.00:1 between slate-50 and
+ * --surface, i.e. no edge gained, and a visible hue shift. Its `primary` tone is
+ * a true match and could be adopted alone (bg-primary-50 = orange-50 #fff7ed =
+ * --accent-whisper, the identical value), but splitting one tone off the kit and
+ * keeping the other is drift with extra steps. Revisit if this site ever moves
+ * its surface ramp from stone to slate.
  */
 export function NoticeCard({
   tone = "slate",

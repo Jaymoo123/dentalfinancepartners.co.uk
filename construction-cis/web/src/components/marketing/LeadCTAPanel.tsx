@@ -16,6 +16,19 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
  * NOT an interruptive surface. It is a static band in the page body: no
  * overlay, no timer, no trigger, no dismissal, nothing that fires on its own.
  * Adding an interruptive surface needs the owner's explicit yes.
+ *
+ * KIT DECLINE (2026-09-14 kit-adoption uplift). The kit twin at
+ * packages/web-shared/design/marketing/LeadCTAPanel.tsx has diverged into a
+ * different component, not a restyle: 278 diff lines, and the shape of the API
+ * is the difference. It takes the form as a `form` ReactNode slot and drops
+ * `submitLabel` and `redirectOnSuccess`, which are the two props this site's
+ * LeadForm is configured through at every call site. Rewiring them means editing
+ * the lead form's props on every capture surface, and lead capture is frozen for
+ * this uplift: no consent wording, no data-cta id, no goal, no timeout, no form
+ * count may move. The kit also gained `ground` and `backdrop` props this site
+ * has no use for, since TradeBackdrop is wired in directly here. Nothing visual
+ * is being declined; this is an integration decline. Revisit when lead capture
+ * is unfrozen and the two can be reconciled in one deliberate pass.
  */
 export function LeadCTAPanel({
   eyebrow = "Free consultation",

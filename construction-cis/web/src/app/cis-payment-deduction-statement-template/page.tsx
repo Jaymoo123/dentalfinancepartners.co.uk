@@ -4,6 +4,7 @@ import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd } from "@/lib/schema";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export const metadata: Metadata = {
   title: "Free CIS Payment & Deduction Statement Template (Excel + PDF)",
@@ -129,7 +130,7 @@ export default function CisStatementTemplatePage() {
               { label: "CIS payment and deduction statement template" },
             ]}
           />
-          <div className="section-label mb-6">Free download</div>
+          <Eyebrow>Free download</Eyebrow>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             Free CIS payment and deduction statement template.
           </h1>
@@ -171,7 +172,7 @@ export default function CisStatementTemplatePage() {
       {/* Required fields */}
       <section className="border-b border-neutral-200 bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">What it must contain</div>
+          <Eyebrow>What it must contain</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             The seven fields every CIS statement needs.
           </h2>
@@ -205,7 +206,7 @@ export default function CisStatementTemplatePage() {
       {/* How to fill in */}
       <section className="border-b border-neutral-200 bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">How to fill it in</div>
+          <Eyebrow>How to fill it in</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             Filling in the template, step by step.
           </h2>
@@ -242,7 +243,7 @@ export default function CisStatementTemplatePage() {
           array feeds both, so markup and schema cannot drift. */}
       <section className="border-b border-neutral-200 bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">FAQ</div>
+          <Eyebrow>FAQ</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             CIS statement template questions.
           </h2>

@@ -48,7 +48,9 @@ const KNOWN_EYEBROW_CONSUMERS = [
   // Phase 6 / P6-D. Both heroes kept their dark bg-neutral-900 ground and
   // their text-orange-400 (7.54 on #171717); the lines moved because the heroes
   // gained a Breadcrumb and the TradeBackdrop motif wrapper.
-  { file: "app/about/page.tsx", line: 62 },
+  // 2026-09-14 kit-adoption uplift: +1 line, the page gained an `Eyebrow` import.
+  // Ground, class and colour utility are all unchanged.
+  { file: "app/about/page.tsx", line: 63 },
   { file: "app/contact/page.tsx", line: 45 },
   { file: "app/not-found.tsx", line: 8 },
   // Phase 2 / WP-B1. The article header card's category eyebrow. LIGHT ground:
@@ -62,8 +64,11 @@ const KNOWN_EYEBROW_CONSUMERS = [
   // 10.59 on the panel's own ground --dark (#0f172a). LIGHT (contained variant,
   // the one /blog renders): bare default --accent-strong (#c2410c) on
   // --hero-cream (#fafaf7) = 4.95, above the 4.5 text floor.
-  { file: "components/marketing/LeadCTAPanel.tsx", line: 129 },
-  { file: "components/marketing/LeadCTAPanel.tsx", line: 131 },
+  // 2026-09-14 kit-adoption uplift: +13 lines, the file header gained the kit
+  // LeadCTAPanel decline note. Neither `.eyebrow` line was touched: same two
+  // variants, same grounds, same text-orange-400 on the dark one.
+  { file: "components/marketing/LeadCTAPanel.tsx", line: 142 },
+  { file: "components/marketing/LeadCTAPanel.tsx", line: 144 },
   // Phase 3 / WP-C4. The resource guide hero eyebrow, on all 3 /resources/[topic]
   // routes. DARK ground (bg-neutral-900 #171717), so it carries text-orange-400
   // (#ff8904), 7.54 there. The bare default would have been 3.43 and failed.

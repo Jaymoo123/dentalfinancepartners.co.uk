@@ -4,6 +4,7 @@ import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildHowToJsonLd } from "@/lib/schema";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export const metadata: Metadata = {
   title: "CIS Gross Payment Status | Application & Maintenance Service",
@@ -89,7 +90,7 @@ export default function GrossPaymentStatusPage() {
           <Breadcrumb
             items={[{ label: "Home", href: "/" }, { label: "Gross payment status" }]}
           />
-          <div className="section-label mb-6">Gross payment status</div>
+          <Eyebrow>Gross payment status</Eyebrow>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             Get CIS gross payment status, and keep it.
           </h1>
@@ -124,7 +125,7 @@ export default function GrossPaymentStatusPage() {
       {/* What GPS means */}
       <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">The value of GPS</div>
+          <Eyebrow>The value of GPS</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             What GPS is worth to your business.
           </h2>
@@ -165,7 +166,7 @@ export default function GrossPaymentStatusPage() {
       {/* Qualifying tests */}
       <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">Qualifying for GPS</div>
+          <Eyebrow>Qualifying for GPS</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             The three tests, all of which must be passed.
           </h2>
@@ -212,7 +213,7 @@ export default function GrossPaymentStatusPage() {
       {/* April 2026 changes */}
       <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">April 2026 changes</div>
+          <Eyebrow>April 2026 changes</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             The April 2026 GPS anti-fraud rules: why maintenance now matters.
           </h2>

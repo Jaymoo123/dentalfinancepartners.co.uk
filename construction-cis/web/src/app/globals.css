@@ -11,21 +11,28 @@
    ============================================================ */
 
 /* Primary ramp, Tailwind v4 orange, oklch verbatim from node_modules/tailwindcss/theme.css.
-   #f97316 IS orange-500 exactly and it is niche.config brand.primary_color, so no snapping
-   was needed. TOKENS ONLY: the existing amber and orange utility usages in the page tree are
+   CORRECTED 2026-09-14 (T4): the hex in each comment below was Tailwind **v3**'s orange
+   ramp. These oklch values are v4's, and v4's orange is a different, more saturated ramp
+   (v4 orange-500 is #ff6900, not #f97316). The hexes are now the v4 paint, with the v3
+   value kept in brackets so the next reader recognises the old table on sight.
+   CONSEQUENCE, reported not fixed: --accent below is the literal hex #f97316, so the brand
+   token and `primary-500` are NO LONGER the same paint. The earlier claim that "#f97316 IS
+   orange-500 exactly, so no snapping was needed" was false under v4. Changing --accent is a
+   brand-palette decision and is the owner's, not this file's.
+   TOKENS ONLY: the existing amber and orange utility usages in the page tree are
    NOT swept here. They belong to the phases that own those files. */
 @theme {
   --color-primary-50: oklch(98% 0.016 73.684); /* #fff7ed */
-  --color-primary-100: oklch(95.4% 0.038 75.164); /* #ffedd5 */
-  --color-primary-200: oklch(90.1% 0.076 70.697); /* #fed7aa */
-  --color-primary-300: oklch(83.7% 0.128 66.29); /* #fdba74 */
-  --color-primary-400: oklch(75% 0.183 55.934); /* #fb923c */
-  --color-primary-500: oklch(70.5% 0.213 47.604); /* #f97316 = brand */
-  --color-primary-600: oklch(64.6% 0.222 41.116); /* #ea580c */
-  --color-primary-700: oklch(55.3% 0.195 38.402); /* #c2410c */
-  --color-primary-800: oklch(47% 0.157 37.304); /* #9a3412 */
-  --color-primary-900: oklch(40.8% 0.123 38.172); /* #7c2d12 */
-  --color-primary-950: oklch(26.6% 0.079 36.259); /* #431407 */
+  --color-primary-100: oklch(95.4% 0.038 75.164); /* #ffedd4 (v3 was #ffedd5) */
+  --color-primary-200: oklch(90.1% 0.076 70.697); /* #ffd6a7 (v3 was #fed7aa) */
+  --color-primary-300: oklch(83.7% 0.128 66.29); /* #ffb86a (v3 was #fdba74) */
+  --color-primary-400: oklch(75% 0.183 55.934); /* #ff8904 (v3 was #fb923c) */
+  --color-primary-500: oklch(70.5% 0.213 47.604); /* #ff6900 (v3 was #f97316) */
+  --color-primary-600: oklch(64.6% 0.222 41.116); /* #f54900 (v3 was #ea580c) */
+  --color-primary-700: oklch(55.3% 0.195 38.402); /* #ca3500 (v3 was #c2410c) */
+  --color-primary-800: oklch(47% 0.157 37.304); /* #9f2d00 (v3 was #9a3412) */
+  --color-primary-900: oklch(40.8% 0.123 38.172); /* #7e2a0c (v3 was #7c2d12) */
+  --color-primary-950: oklch(26.6% 0.079 36.259); /* #441306 (v3 was #431407) */
 }
 
 :root {
@@ -282,27 +289,38 @@ h1, h2, h3, h4, h5, h6 {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* ============================================================
-   UTILITY CLASSES
-   ============================================================ */
-
-.section-label {
-  display: inline-block;
-  /* white on --accent (orange-500) measures 2.80, below even the 3:1 graphics
-     floor, on 38 render sites. --btn-ground (orange-700) measures 5.18. */
-  background: var(--btn-ground);
-  color: white;
-  padding: 0.375rem 0.875rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
+/* UTILITY CLASSES: none. `.section-label` was removed on 2026-09-14. It was the
+   last rule in this block and it had zero consumers left: T2/T3 replaced all 48
+   call sites with the kit `<Eyebrow>`. construction-cis does NOT import
+   packages/site-styles/prose-standard.css (only ten sibling sites do), so this
+   file was the ONLY declaration of `.section-label` on this site and deleting it
+   removes the class from this site's output rather than un-shadowing a shared one.
+   If a pill eyebrow is ever wanted back, use the kit, not a local rule. */
 
 /* ============================================================
    BLOG PROSE
    ============================================================ */
 
+/* The WHOLE .prose-blog block lives in @layer components, not just the anchor
+   rules. 2026-09-14: the anchor rules were layered in isolation on 2026-09-11,
+   which fixed the one element that had already produced a visible defect and
+   left the class of bug alive on every other element. `.prose-blog` is not a
+   markdown-only scope: BlogPostRenderer.tsx:262 renders ToolIsland,
+   InlineMiniLeadForm and PremiumUpgrade INSIDE `article-body prose-blog`, and
+   those are ordinary React trees full of utility classes.
+   The live instance this closes, ToolIsland.tsx:19-23, three <p> inside the
+   island:
+     text-[var(--accent-strong)] (#c2410c) rendered as --ink-soft #525252
+     text-neutral-900           (#0a0a0a) rendered as --ink-soft #525252
+     text-neutral-600           rendered as --ink-soft #525252
+     mt-2 on all three rendered as margin-top: 1.25rem
+   Not a contrast failure (#525252 on the island's light panel is comfortably
+   past 4.5) but a fidelity failure: the island's brand eyebrow and its title
+   both rendered as body grey, at body spacing, on every mapped-category
+   article. Layering hands the element back to the utility the author wrote.
+   Markdown bodies carry no classes, so all 82 articles are unaffected: the
+   rules still win there, because nothing competes. */
+@layer components {
 .prose-blog {
   max-width: 65ch;
   color: var(--ink);
@@ -316,6 +334,17 @@ h1, h2, h3, h4, h5, h6 {
    targets; the 31st is #enquiry-form, which carries scroll-mt-24 on the element
    itself because it is authored in the template, not in markdown. */
 .prose-blog [id] {
+  scroll-margin-top: 6rem;
+}
+
+/* The skip link's target. PageShell hardcodes <main id="main"> with no
+   scroll-margin, and #main sits OUTSIDE .prose-blog, so the rule above does not
+   reach it: browser_check measured scroll-margin-top: 0px on it across six
+   routes. Same 6rem as the article headings and as the sibling sites, so a
+   skip-to-content jump does not land with the heading under the sticky header.
+   This is the backstop for #main and for any future anchor that forgets its own
+   scroll-mt-24, not a substitute for one. */
+#main {
   scroll-margin-top: 6rem;
 }
 
@@ -347,6 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   color: var(--ink-soft);
+}
 }
 
 /* The anchor rules live in @layer components, NOT unlayered, and the layer is
@@ -383,6 +413,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Continuation of the layered .prose-blog block above; same reasoning. */
+@layer components {
 .prose-blog ul,
 .prose-blog ol {
   margin-top: 1.25rem;
@@ -431,6 +463,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .prose-blog tr:nth-child(even) {
   background: var(--surface);
+}
 }
 
 /* ============================================================

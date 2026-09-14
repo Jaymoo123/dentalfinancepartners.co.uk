@@ -1,4 +1,5 @@
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 /**
  * The two F.2 marketing blocks the homepage shares with Phase 6's /contact:
@@ -18,18 +19,26 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
  * between the neutral-50 problem band above and the white services band below
  * (DESIGN_SYSTEM section 9, no two adjacent bands share a ground).
  *
- * The .section-label class is a solid --btn-ground pill with a white label
- * (globals.css:289), 5.18:1 and ground-independent, so it is safe on either
- * band. It is deliberately used instead of .eyebrow: .eyebrow's occurrences are
- * pinned by file:line in src/tests/design/eyebrow-ground.test.ts and a new one
- * here would move that pin for no contrast gain.
+ * Eyebrows: the kit `<Eyebrow>` (a brand rule plus slate-600), not the old
+ * `.section-label` solid --btn-ground pill and not `.eyebrow`. The pill was
+ * ground-independent at 5.18:1 and safe, but the kit's own note at
+ * packages/web-shared/design/primitives/page-blocks.tsx:27-30 is the reason it
+ * went: it "shouted louder than the heading it was introducing". slate-600
+ * (v4 #45556c) measures 7.58:1 on white and 7.27:1 on neutral-50 (#fafafa), both
+ * above the 4.5 text floor; the primary-600 rule measures 3.59:1 and 3.44:1
+ * against the 3.0 graphic floor. (Corrected 2026-09-14: this comment used to
+ * name primary-600 as #ea580c, which is Tailwind v3's orange-600. This site
+ * emits v4, whose orange-600 is #f54900. Verdict unchanged, see
+ * src/components/ui/layout-utils.ts for the full ground table and method.) `.eyebrow` is a DIFFERENT class whose
+ * occurrences are pinned by file:line in src/tests/design/eyebrow-ground.test.ts;
+ * nothing here touches it.
  */
 export function WhoWeAreSection() {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
         <div className="max-w-3xl">
-          <div className="section-label mb-4">Who we are</div>
+          <Eyebrow>Who we are</Eyebrow>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             We only work with the construction industry.
           </h2>
@@ -50,7 +59,7 @@ export function WhyChooseUsSection() {
     <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
         <div className="max-w-3xl">
-          <div className="section-label mb-4">Why specialist matters</div>
+          <Eyebrow>Why specialist matters</Eyebrow>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             A generalist handles your compliance.{" "}
             <span className="text-[var(--accent-strong)]">We handle CIS-specific tax.</span>

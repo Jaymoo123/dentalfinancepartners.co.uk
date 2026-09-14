@@ -4,6 +4,7 @@ import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildHowToJsonLd } from "@/lib/schema";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export const metadata: Metadata = {
   title: "CIS Tax Refund Service | Claim Back Your CIS Deductions",
@@ -89,7 +90,7 @@ export default function CisRefundPage() {
           <Breadcrumb
             items={[{ label: "Home", href: "/" }, { label: "CIS tax refund" }]}
           />
-          <div className="section-label mb-6">CIS tax refund</div>
+          <Eyebrow>CIS tax refund</Eyebrow>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             Claim back the CIS deductions you have overpaid.
           </h1>
@@ -124,7 +125,7 @@ export default function CisRefundPage() {
       {/* How the refund works */}
       <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">The service</div>
+          <Eyebrow>The service</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             How the CIS refund works.
           </h2>
@@ -150,7 +151,7 @@ export default function CisRefundPage() {
       {/* Why subcontractors overpay */}
       <section className="bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">Why you overpay</div>
+          <Eyebrow>Why you overpay</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             Why most CIS subcontractors are owed money back.
           </h2>
@@ -171,7 +172,7 @@ export default function CisRefundPage() {
       {/* What we need from you */}
       <section className="bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">What we need from you</div>
+          <Eyebrow>What we need from you</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             What to have ready.
           </h2>
@@ -204,7 +205,7 @@ export default function CisRefundPage() {
           eight routes share. */}
       <section className="bg-stone-100">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">Deduction rates</div>
+          <Eyebrow>Deduction rates</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             CIS deduction rates for 2026/27.
           </h2>

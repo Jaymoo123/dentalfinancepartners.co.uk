@@ -6,6 +6,7 @@ import { NoticeCard } from "@/components/ui/NoticeCard";
 import { WhatToExpectCard } from "@/components/ui/WhatToExpectCard";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 import BookingPicker from "@/components/forms/BookingPicker";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 /**
  * The post-submit surface, on the F.6 skeleton shared with /book and /complete:
@@ -51,7 +52,7 @@ export default async function ThankYouPage({
       <section className="bg-[var(--hero-cream)] py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <div className="section-label mb-6">Received</div>
+            <Eyebrow>Received</Eyebrow>
             <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
               Thank you.
             </h1>
@@ -67,7 +68,7 @@ export default async function ThankYouPage({
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <div className="section-label mb-4">Almost done</div>
+            <Eyebrow>Almost done</Eyebrow>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
               One step left
             </h2>

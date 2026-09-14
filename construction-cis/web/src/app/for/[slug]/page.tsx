@@ -11,6 +11,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { tradeTypes, getTradeType } from "@/data/trade-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export function generateStaticParams() {
   return tradeTypes.map((t) => ({ slug: t.slug }));
@@ -53,7 +54,7 @@ export default async function TradeTypePage({
             <ArrowRight className="h-3 w-3 rotate-180" />
             All trades
           </Link>
-          <div className="section-label mb-6">CIS accounting</div>
+          <Eyebrow onDark>CIS accounting</Eyebrow>
           <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             {type.headline}.
           </h1>
@@ -100,7 +101,7 @@ export default async function TradeTypePage({
       {/* Challenges */}
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">The specific challenges</div>
+          <Eyebrow>The specific challenges</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-2xl font-bold tracking-tight sm:text-4xl">
             What makes {type.title.toLowerCase()} accounting different.
           </h2>
@@ -121,7 +122,7 @@ export default async function TradeTypePage({
       {/* How we help */}
       <section className="border-b border-neutral-200 bg-[var(--hero-cream)] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">How we help</div>
+          <Eyebrow>How we help</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-2xl font-bold tracking-tight sm:text-4xl">
             What we do for {type.title.toLowerCase()}.
           </h2>
@@ -174,6 +175,12 @@ export default async function TradeTypePage({
           dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(type.faqs) }}
         />
       )}
+      {/* NOT the kit FaqSection (packages/web-shared/design/primitives/FaqSection.tsx).
+          It is a Radix accordion mounted without forceMount (FaqSection.tsx:34-43),
+          so closed answers never reach the server HTML while the FAQPage JSON-LD
+          emitted above keeps asserting them. <details> is crawlable closed. The
+          same `type.faqs` array feeds both the markup and the schema, so the two
+          cannot drift. */}
       {type.faqs.length > 0 && (
         <section className="bg-white py-12 sm:py-16 lg:py-20">
           <div className={siteContainerLg}>
@@ -219,7 +226,7 @@ export default async function TradeTypePage({
         <div className={siteContainerLg}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <div className="section-label mb-6">Get started</div>
+              <Eyebrow onDark>Get started</Eyebrow>
               <h2 className="text-2xl font-bold text-white sm:text-4xl">
                 Talk to a specialist {type.title.toLowerCase()} accountant
               </h2>

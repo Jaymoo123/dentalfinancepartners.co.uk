@@ -50,7 +50,7 @@ import { useIntentContext } from "@/components/intent/IntentProvider";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { initJourneyModel, recordPath, getJourneyProfile } from "@/lib/intent/journeyModel";
 import { openerFor, exitOpener, frictionOpener } from "@/lib/assistant/opener";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 
 type Status = "idle" | "loading" | "success" | "error";
 type Trigger = "cadence" | "exit" | "friction";
@@ -430,7 +430,7 @@ export function SpecialistWidget() {
                   <a
                     href={`/calculators/${calcSlug}`}
                     onClick={() => onChip("calculator")}
-                    className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--btn-ground)] bg-white px-4 py-3 text-sm font-bold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+                    className={`inline-flex min-h-11 items-center rounded-full border-2 border-[var(--btn-ground)] bg-white px-4 py-3 text-sm font-bold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 ${focusRing}`}
                   >
                     See your numbers
                   </a>
@@ -438,7 +438,7 @@ export function SpecialistWidget() {
                 <a
                   href="/contact"
                   onClick={() => onChip("contact")}
-                  className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--btn-ground)] bg-white px-4 py-3 text-sm font-bold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+                  className={`inline-flex min-h-11 items-center rounded-full border-2 border-[var(--btn-ground)] bg-white px-4 py-3 text-sm font-bold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 ${focusRing}`}
                 >
                   Get in touch
                 </a>
@@ -556,7 +556,7 @@ export function SpecialistWidget() {
         type="button"
         onClick={() => (open ? setOpen(false) : handleOpen(false))}
         data-cta="specialist_widget"
-        className="relative flex min-h-12 items-center gap-2 rounded-full bg-[var(--dark)] px-5 py-3 text-sm font-bold text-white shadow-2xl transition-opacity duration-150 hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+        className={`relative flex min-h-12 items-center gap-2 rounded-full bg-[var(--dark)] px-5 py-3 text-sm font-bold text-white shadow-2xl transition-opacity duration-150 hover:opacity-90 ${focusRing}`}
       >
         {!open && unread > 0 && (
           <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">

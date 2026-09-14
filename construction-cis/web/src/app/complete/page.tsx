@@ -7,6 +7,7 @@ import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/l
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
 import DetailsForm from "@/components/forms/DetailsForm";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 /**
  * "Complete your details", linked from a nurture email as
@@ -111,7 +112,7 @@ export default async function CompletePage({
       <section className="bg-[var(--hero-cream)] py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <div className="section-label mb-6">Almost there</div>
+            <Eyebrow>Almost there</Eyebrow>
             <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
               Complete your details
             </h1>
@@ -126,7 +127,7 @@ export default async function CompletePage({
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <div className="section-label mb-4">One field left</div>
+            <Eyebrow>One field left</Eyebrow>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
               Where should we call you
             </h2>

@@ -20,6 +20,7 @@ import {
   Receipt,
   Calculator,
 } from "lucide-react";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export const metadata: Metadata = {
   title: { absolute: "CIS Accounting Services | Construction Tax & Compliance" },
@@ -162,7 +163,7 @@ export default function ServicesPage() {
               { label: "Services" },
             ]}
           />
-          <div className="section-label mb-6">What we do</div>
+          <Eyebrow>What we do</Eyebrow>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             CIS accounting services for subcontractors and contractors.
           </h1>
@@ -183,7 +184,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Stats bar */}
+      {/* Stats bar. NOT the kit StatsCounter
+          (packages/web-shared/design/marketing/StatsCounter.tsx): its StatItem type
+          is {target, decimals, prefix, suffix, label} with no icon field, so
+          adopting it silently drops all four icons `siteStats` carries, and "80+"
+          would have to be respelled as target 80 + suffix "+" by hand on a figure
+          this agent is not allowed to retype. StatsBar is already the shared
+          @accounting-network/web-shared/components/StatsBar, so this is an adopted
+          component either way, not a hand-roll. */}
       <section className="bg-white py-8 sm:py-10 border-b border-neutral-200">
         <div className={siteContainerLg}>
           <StatsBar stats={siteStats} />
@@ -207,7 +215,7 @@ export default function ServicesPage() {
                       <Icon className="h-7 w-7 text-white" strokeWidth={1.75} />
                     </div>
                     <div>
-                      <div className="section-label">{service.label}</div>
+                      <Eyebrow>{service.label}</Eyebrow>
                       <h2 className="mt-2 text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
                         {service.title}
                       </h2>
@@ -231,7 +239,7 @@ export default function ServicesPage() {
       <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">How we work</div>
+            <Eyebrow>How we work</Eyebrow>
             <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">
               From free tools to full CIS accounting.
             </h2>

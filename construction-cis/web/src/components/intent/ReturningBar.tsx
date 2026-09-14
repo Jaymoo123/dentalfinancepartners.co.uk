@@ -48,7 +48,7 @@ export function ReturningBar() {
             data-cta="returning_bar"
             data-cta-goal={offer.href.startsWith("/contact") ? "form" : undefined}
             onClick={() => trackPersonalization("clicked", action)}
-            className="inline-flex min-h-11 items-center rounded-xl bg-white px-4 py-2 font-semibold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
+            className="inline-flex min-h-11 items-center rounded-xl bg-white px-4 py-2 font-semibold text-[var(--accent-strong)] transition-colors duration-150 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
           >
             {offer.title}
           </Link>
@@ -65,7 +65,7 @@ export function ReturningBar() {
               setDismissed(true);
               trackPersonalization("dismissed", action);
             }}
-            className="flex min-h-11 min-w-11 items-center justify-center rounded-xl text-slate-300 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
+            className="flex min-h-11 min-w-11 items-center justify-center rounded-xl text-slate-300 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
           >
             &times;
           </button>

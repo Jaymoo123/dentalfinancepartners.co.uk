@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { toolPath } from "@/lib/calculators/registry";
+import { focusRing } from "@/components/ui/layout-utils";
 
 /**
  * Early tool island (capture moment 1): a plain server-rendered card injected
@@ -31,7 +32,7 @@ export function ToolIsland({ tool }: { tool: GenericTool }) {
           still sets. Do NOT unlayer that block. */}
       <Link
         href={toolPath(tool.slug)}
-        className="mt-4 inline-flex min-h-12 items-center justify-center rounded-xl bg-[var(--btn-ground)] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:text-white hover:bg-[var(--btn-ground-hover)] active:bg-[var(--btn-ground-active)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+        className={`mt-4 inline-flex min-h-12 items-center justify-center rounded-xl bg-[var(--btn-ground)] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:text-white hover:bg-[var(--btn-ground-hover)] active:bg-[var(--btn-ground-active)] ${focusRing}`}
       >
         Run the numbers
       </Link>

@@ -4,6 +4,7 @@ import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
 import { TradeBackdrop } from "@/components/layout/TradeBackdrop";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnOnDark, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export const metadata: Metadata = {
   // NOTE: this description is pinned against src/lib/page-summaries.ts by
@@ -140,7 +141,7 @@ export default function AboutPage() {
 
       <section className="bg-neutral-50">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">What we focus on</div>
+          <Eyebrow>What we focus on</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             Three areas, and not much else.
           </h2>

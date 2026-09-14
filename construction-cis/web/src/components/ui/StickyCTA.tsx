@@ -161,7 +161,7 @@ export function StickyCTA() {
           aria-label="Dismiss"
           data-cta="sticky_cta_close"
           data-cta-placement="sticky"
-          className="flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-xl p-1 text-slate-300 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
+          className="flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-xl p-1 text-slate-300 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
         >
           <svg
             aria-hidden="true"

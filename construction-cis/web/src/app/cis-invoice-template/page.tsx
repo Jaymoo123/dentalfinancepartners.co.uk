@@ -4,6 +4,7 @@ import { LeadCTAPanel } from "@/components/marketing/LeadCTAPanel";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd } from "@/lib/schema";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export const metadata: Metadata = {
   title: "CIS Subcontractor Invoice Template UK (Free Excel + PDF Download)",
@@ -108,7 +109,7 @@ export default function CisInvoiceTemplatePage() {
           <Breadcrumb
             items={[{ label: "Home", href: "/" }, { label: "CIS invoice template" }]}
           />
-          <div className="section-label mb-6">Free download</div>
+          <Eyebrow>Free download</Eyebrow>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
             CIS subcontractor invoice template.
           </h1>
@@ -128,7 +129,7 @@ export default function CisInvoiceTemplatePage() {
           the heading lands behind the bar. */}
       <section id="downloads" className="scroll-mt-24 border-b border-neutral-200 bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">Downloads</div>
+          <Eyebrow>Downloads</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             Three versions. Pick the one that matches your VAT position.
           </h2>
@@ -189,7 +190,7 @@ export default function CisInvoiceTemplatePage() {
       {/* What a CIS invoice must show */}
       <section className="border-b border-neutral-200 bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">What to include</div>
+          <Eyebrow>What to include</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             What a CIS invoice must show.
           </h2>
@@ -222,7 +223,7 @@ export default function CisInvoiceTemplatePage() {
       {/* Reverse charge summary */}
       <section className="border-b border-neutral-200 bg-[var(--surface-elevated)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">Reverse charge rules</div>
+          <Eyebrow>Reverse charge rules</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             The VAT domestic reverse charge, in short.
           </h2>
@@ -274,7 +275,7 @@ export default function CisInvoiceTemplatePage() {
           drift. */}
       <section className="border-b border-neutral-200 bg-[var(--surface)]">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <div className="section-label mb-4">FAQ</div>
+          <Eyebrow>FAQ</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
             CIS invoicing questions, answered.
           </h2>

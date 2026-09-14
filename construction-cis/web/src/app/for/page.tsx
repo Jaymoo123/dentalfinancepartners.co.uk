@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { tradeTypes } from "@/data/trade-types";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export const metadata: Metadata = {
   title: "CIS Trades We Work With | Specialist Construction Accountants",
@@ -19,7 +20,7 @@ export default function ForIndexPage() {
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-6">Who we work with</div>
+          <Eyebrow onDark>Who we work with</Eyebrow>
           <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Specialist CIS accounting for every construction trade.
           </h1>
@@ -32,7 +33,7 @@ export default function ForIndexPage() {
       {/* Individual trades grid */}
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">For individual trades</div>
+          <Eyebrow>For individual trades</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-2xl font-bold tracking-tight sm:text-4xl">
             Every trade that falls within the scheme.
           </h2>
@@ -63,7 +64,7 @@ export default function ForIndexPage() {
       {businessSegment.length > 0 && (
         <section className="bg-white py-12 sm:py-16 lg:py-20">
           <div className={siteContainerLg}>
-            <div className="section-label mb-4">For construction businesses</div>
+            <Eyebrow>For construction businesses</Eyebrow>
             <h2 className="mt-2 max-w-3xl text-2xl font-bold tracking-tight sm:text-4xl">
               Contractors with employer-side CIS obligations.
             </h2>
@@ -95,7 +96,7 @@ export default function ForIndexPage() {
       <section className="bg-[var(--hero-cream)] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <div className="section-label mb-4">Why trade knowledge matters</div>
+            <Eyebrow>Why trade knowledge matters</Eyebrow>
             <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-4xl">
               CIS works differently across trades.
             </h2>
