@@ -149,8 +149,8 @@ const calculatorLinks = [
     href: "/calculators/crypto-cgt-estimator",
   },
   {
-    title: "Crypto disclosure and penalty estimator",
-    body: "Estimate the tax and potential penalty exposure from unreported crypto gains, by behaviour band (reasonable care, careless, deliberate) and look-back window.",
+    title: "Crypto disclosure scope estimator",
+    body: "Estimate the scope of an HMRC disclosure on unreported crypto gains: how many past years are assessable (4, 6 or 20) and the tax at stake, by behaviour band (reasonable care, careless, deliberate). Penalties are described in words, not calculated.",
     href: "/calculators/crypto-disclosure-estimator",
   },
   {
@@ -340,7 +340,7 @@ export default function HomePage() {
       </section>
 
       {/* Intro strip */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-10 sm:py-12">
+      <section className="border-b border-neutral-200 bg-slate-50 py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
             Most crypto holders are not tax professionals. The rules are genuinely complex: every
@@ -369,7 +369,7 @@ export default function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
+                className={`group block border border-neutral-200 bg-slate-50 p-5 sm:p-6 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
               >
                 <span className="text-base font-bold text-neutral-900 group-hover:text-[#0e1a3a] transition-colors">
                   {item.title}
@@ -462,7 +462,7 @@ export default function HomePage() {
       </section>
 
       {/* What we actually fix */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-neutral-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="section-label mb-4">The moments that bring people to us</div>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
@@ -525,7 +525,7 @@ export default function HomePage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className={`group block border border-neutral-200 bg-neutral-50 p-6 sm:p-7 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
+                className={`group block border border-neutral-200 bg-slate-50 p-6 sm:p-7 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
               >
                 <h3 className="text-base font-bold text-neutral-900 group-hover:text-[#0e1a3a] transition-colors">
                   {service.title}
@@ -542,7 +542,7 @@ export default function HomePage() {
       </section>
 
       {/* Free tools + data asset */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-neutral-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
@@ -554,7 +554,8 @@ export default function HomePage() {
                 All four calculators are scenario and estimate tools. They state their
                 simplifications openly (the same-day and 30-day matching rules are out of scope
                 for any stateless web tool) and end at &ldquo;your situation has X complexity, speak
-                to us&rdquo;. They never produce a filing-ready figure. No sign-up, no data stored.
+                to us&rdquo;. They never produce a filing-ready figure. No sign-up, and the figures you
+                enter stay in your browser.
               </p>
               <div className="mt-8 space-y-3">
                 {calculatorLinks.map((calc) => (
@@ -633,7 +634,7 @@ export default function HomePage() {
                 {whySpecialist.map((row, i) => (
                   <tr
                     key={row.area}
-                    className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-neutral-50" : "bg-white"}`}
+                    className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-slate-50" : "bg-white"}`}
                   >
                     <th scope="row" className="px-4 py-3.5 font-semibold text-neutral-900 sm:px-6 sm:py-4">
                       {row.area}
@@ -648,7 +649,7 @@ export default function HomePage() {
       </section>
 
       {/* Anonymised social proof */}
-      <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
             <div className="section-label mb-4">Real outcomes</div>
@@ -733,7 +734,7 @@ export default function HomePage() {
               <div className="mt-8 space-y-4">
                 {[
                   { title: "Crypto tax only", sub: "We do not take general commercial or property clients" },
-                  { title: "Read by a specialist", sub: "Your enquiry goes to someone who works on crypto tax, not a call centre" },
+                  { title: "Anonymous until a firm takes it on", sub: "Firms are first shown a summary with your name and contact details removed" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's position with another" },
                   { title: "UK-wide (HMRC)", sub: "Scotland has devolved income tax bands; we flag where they change the outcome" },
                 ].map((item) => (
@@ -760,7 +761,7 @@ export default function HomePage() {
       </section>
 
       {/* Blog footer strip */}
-      <section className="border-t border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className="border-t border-neutral-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
             <div className="section-label mb-4">Guides and analysis</div>

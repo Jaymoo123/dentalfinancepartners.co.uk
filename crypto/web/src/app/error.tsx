@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { btnPrimary, siteContainer } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, siteContainer } from "@/components/ui/layout-utils";
 
 export default function Error({
   error,
@@ -35,14 +35,14 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center border border-neutral-300 bg-white px-6 py-3 text-base font-semibold text-neutral-900 transition-colors hover:bg-neutral-50"
+            className={`inline-flex items-center justify-center border border-neutral-300 bg-white px-6 py-3 text-base font-semibold text-neutral-900 transition-colors hover:bg-slate-50 ${focusRing}`}
           >
             Go home
           </Link>
         </div>
         <p className="mt-8 text-sm text-[var(--muted)]">
           If this keeps happening, please{" "}
-          <Link href="/contact" className="font-semibold text-[var(--accent-strong)] underline">
+          <Link href="/contact" className={`font-semibold text-[var(--accent-strong)] underline ${focusRing}`}>
             get in touch
           </Link>
           .

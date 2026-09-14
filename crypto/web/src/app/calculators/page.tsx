@@ -62,7 +62,7 @@ export default function CalculatorsPage() {
               <Link
                 key={t.slug}
                 href={toolPath(t.slug)}
-                className="group flex flex-col rounded-xl bg-white p-6 ring-1 ring-slate-200/70 transition-shadow hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a] sm:p-8"
+                className="group flex flex-col rounded-xl bg-white p-6 ring-1 ring-slate-200/70 transition-shadow hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] sm:p-8"
               >
                 <span className="text-xs font-semibold uppercase tracking-wide text-primary-700">
                   {t.category}
@@ -91,7 +91,7 @@ export default function CalculatorsPage() {
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
               These tools give you the shape of the answer. Tell us about your situation and we will
-              confirm the figures and the filing position that actually apply to you.
+              talk you through the filing position that applies to it.
             </p>
             <div className="mt-8">
               <Link

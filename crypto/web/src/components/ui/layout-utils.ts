@@ -11,20 +11,23 @@ export const sectionY = "py-16 sm:py-20 lg:py-28";
 
 export const sectionYLoose = "py-20 sm:py-28 lg:py-36";
 
+// --focus-ring (globals.css) is #b86c42, NOT the navy #0e1a3a this used to hardcode. Navy is the
+// band ground, so a navy ring on a navy section measured 1.00 and keyboard focus was invisible on
+// every dark band. Do not point this at --brand-primary or at a ground colour again.
 export const focusRing =
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a]";
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
 
 export const btnPrimary =
-  "inline-flex min-h-12 items-center justify-center bg-[#0e1a3a] px-7 py-3.5 text-base font-medium text-white tracking-wide transition-colors duration-150 hover:bg-[#8f421f] active:bg-[#6e3118] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a]";
+  "inline-flex min-h-12 items-center justify-center bg-[#0e1a3a] px-7 py-3.5 text-base font-medium text-white tracking-wide transition-colors duration-150 hover:bg-[#8f421f] active:bg-[#6e3118] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
 
 export const btnOnTeal =
   "inline-flex min-h-12 items-center justify-center bg-neutral-900 px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-black active:bg-black disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
 
 export const btnSecondary =
-  "inline-flex min-h-12 items-center justify-center border border-neutral-900 bg-transparent px-7 py-3.5 text-sm font-medium text-neutral-900 tracking-wide transition-colors duration-150 hover:bg-neutral-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a]";
+  "inline-flex min-h-12 items-center justify-center border border-neutral-900 bg-transparent px-7 py-3.5 text-sm font-medium text-neutral-900 tracking-wide transition-colors duration-150 hover:bg-neutral-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
 
 export const linkArrow =
-  "inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 transition-opacity hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0e1a3a]";
+  "inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 transition-opacity hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--focus-ring)]";
 
 export const btnOnDark = btnSecondary;
 

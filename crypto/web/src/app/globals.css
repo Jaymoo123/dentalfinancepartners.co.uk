@@ -53,6 +53,59 @@
   --btn-ground: #0e1a3a;
   --btn-ground-hover: #8f421f;
   --btn-ground-active: #6e3118;
+
+  /* Keyboard focus indicator. It was --brand-primary (#0e1a3a), which IS the navy band ground,
+     so on every navy surface the ring painted navy on navy at 1.00 and keyboard focus was
+     invisible. A focus ring is a GRAPHIC, so its floor is 3.0, and it has to clear that floor on
+     every ground this site actually paints, not just the light ones. #b86c42 sits on the
+     burnt-orange action ramp between its 500 and 400 steps and is the one colour that clears 3.0
+     everywhere at once:
+       on white    #ffffff  3.99:1  graphic PASS / text FAIL / ground FAIL
+       on off-white#fafaf9  3.82:1  graphic PASS / text FAIL / ground FAIL
+       on navy     #0e1a3a  4.29:1  graphic PASS / text FAIL / ground FAIL
+       on slate-900#0f172b  4.47:1  graphic PASS / text FAIL / ground FAIL
+       on neutral-800 #262626 3.79:1 graphic PASS / text FAIL / ground FAIL
+     (The text and ground floors are listed for completeness and are not the applicable floor
+     here: this colour never carries text.) No declared ramp step works on its own. #8f421f is
+     7.08 on white but 2.42 on navy and 2.14 on neutral-800; #6e3118 is 1.72 on navy; #a85427 is
+     5.30 on white but 2.86 on neutral-800, which is the band /services/* and /for/* run under
+     their hero; #c9835c is 5.61 on navy but 2.92 on the off-white grounds. One token beats a
+     per-surface flip because the same constant is reused on both grounds by the same components.
+     Literal hex, not the primary-500 utility: the v4 ramp utility emits oklch(), which would not
+     render the colour these sRGB ratios were measured on. */
+  --focus-ring: #b86c42;
+}
+
+/* The kit's EyebrowRule (packages/web-shared/design/primitives/EyebrowRule.tsx) emits
+   class="eyebrow-rule" data-draw="off" 24 times across the 51 sitemap routes (26 counting /book
+   and /thank-you), and the only rule for that class lives in packages/web-shared/design/globals-standard.css, which this site does not
+   import. A class that names nothing does not error, it just renders nothing: the draw-on-scroll
+   reveal the kit was designed around silently never happened here.
+
+   Remedy chosen: declare the rule locally rather than import globals-standard.css. The import
+   drags in Property's emerald and cream (it reads --brand-glow*, --hero-cream) plus every other
+   collapsed [data-draw="off"] state the kit ships, each of which needs an observer to release;
+   on a sibling site that import was banned for exactly that reason and left 64 pages with
+   invisible marks. Crypto uses one consumer of that stylesheet, so 6 lines beat 250 plus five
+   token declarations plus a <noscript> override.
+
+   (scripting: enabled) is what replaces that <noscript>: with JavaScript off the observer can
+   never flip data-draw, so the collapsed state must not apply at all and the mark stays visible
+   in the static HTML. prefers-reduced-motion keeps the same posture as the kit. Unlayered on
+   purpose, like the kit's own copy: nothing on this element carries an origin-* or transform
+   utility to collide with. */
+.eyebrow-rule {
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: no-preference) and (scripting: enabled) {
+  .eyebrow-rule {
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .eyebrow-rule[data-draw="off"] {
+    transform: scaleX(0);
+  }
 }
 
 /* @layer base, not unlayered. Tailwind v4 emits utilities into @layer utilities, and an

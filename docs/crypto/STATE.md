@@ -1,5 +1,297 @@
 # crypto (Crypto Tax Partners) site state
 
+<!-- PICKUP BLOCK: derived from git on 2026-09-14. Everything below the horizontal rule
+     at the end of this block is older history. Do not trust a prose claim in it over
+     `git log` / `git tag -l 'port-crypto*'`. -->
+
+## PICKUP — design port, 2026-09-14
+
+**State in one line: all seven phase tags exist, the build is reviewed twice, a gap-fix
+wave is IN FLIGHT and UNCOMMITTED, nothing is pushed and nothing is deployed. Production
+still serves the pre-port SHA.**
+
+### Push / deploy status, stated plainly
+
+- `origin/main` is `7b5c0ce8` (`git rev-parse --short origin/main`, recorded by P0-D).
+  Local `main` is ahead by the two crypto port commits plus `e25412d7`.
+- **Nothing is pushed. Nothing is deployed. Production serves the pre-port SHA.**
+  Push and deploy are owner-triggered; do not run them without being asked in that turn.
+- **The working tree is DIRTY.** `git status --porcelain` at the time of writing shows
+  15 modified files under `crypto/` plus `docs/crypto/house_positions.md`, and two
+  untracked review documents (`R1_DESIGN_REVIEW.md`, `R2_CONTENT_REVIEW.md`). This is
+  the gap-fix wave answering R2, mid-flight. R1 measured a clean tree at `666ab0a2`;
+  that was true at 10:52 and is no longer true. **Re-read `git status` before assuming
+  anything about the tree.**
+
+### Phase commits and tags, DERIVED FROM GIT (not from prose)
+
+`git tag -l 'port-crypto*'` returns seven tags. Six of them point at one commit.
+
+| tag | commit | subject | committed |
+|---|---|---|---|
+| `port-crypto-phase0` | `f480c7ec` | `fix(crypto): phase 0 baseline, claims audit, and the serious tier fixed` | 2026-09-14 10:17 +0100 |
+| `port-crypto-phase1` | `666ab0a2` | `feat(crypto): phases 1 to 6 - the Property design standard on a site with no chrome` | 2026-09-14 10:53 +0100 |
+| `port-crypto-phase2` | `666ab0a2` | same commit | same |
+| `port-crypto-phase3` | `666ab0a2` | same commit | same |
+| `port-crypto-phase4` | `666ab0a2` | same commit | same |
+| `port-crypto-phase5` | `666ab0a2` | same commit | same |
+| `port-crypto-phase6` | `666ab0a2` | same commit | same |
+
+Deriving command:
+`for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
+
+**Read that table literally: phases 1 to 6 are ONE commit, not six.** They ran as one
+wave with disjoint file sets (`docs/crypto/_port/PHASE0_PACKAGES.md`), and the six tags
+were applied to the same SHA at wave close. A fresh agent looking for six distinct
+diffs will not find them.
+
+Scale, from `git show --stat`:
+
+| commit | files | insertions | deletions |
+|---|---|---|---|
+| `f480c7ec` (phase 0) | 41 | 34,619 | 167 |
+| `666ab0a2` (phases 1-6) | 38 | 1,749 | 675 |
+
+`e25412d7` is **not** a crypto commit. It is
+`docs(engines): carry the charities port's handoff rewrite into the repo`
+(1 file, `docs/_engines/HANDOFF_NEXT_PORT.md`). It is the SHA the pre-port build was
+made from, which is why P0-D quotes it, and it is the correct baseline SHA to read in
+`link_baseline.json` / `browser_baseline.json` despite their `sha` field saying
+`7b5c0ce8` (P0-D defect D0).
+
+### The verification numbers actually measured
+
+Two separate wave-close verifications. **They are different runs over different URL
+sets, and the port's own summary has been conflated before, so both are given here
+with their source.**
+
+Phase 0 close (`f480c7ec` commit body, corroborated by `P0B_RENDERED_SWEEP.md`):
+
+| metric | value |
+|---|---|
+| URLs verified | **51** (the sitemap) |
+| JSON-LD blocks | **95**, **0 parse failures**, 0 `[object Object]` |
+| FAQ answers asserted vs on-page | **222 asserted, 222 counterparts** |
+| canonicals | correct on every family, embed point-away preserved |
+| turnaround promises | 0 |
+| tests | **36 green**, `tsc` clean |
+
+Phases 1-6 close (`666ab0a2` commit body):
+
+| metric | value |
+|---|---|
+| URLs verified | **55** (51 sitemap + `/book`, `/complete`, `/thank-you`, and the funnel/embed set the wave touched) |
+| contrast findings at 390/768/1024/1440 | **0**, against a pre-port baseline that carried a finding on **all 204 page-loads** (P0-D D4: the footer trading-name disclaimer, 3.61 at 12px, 51 routes x 4 widths) |
+| horizontal overflow | **0** |
+| anchor gaps | **0** |
+| `<main>` | exactly 1 per page, no nesting |
+| undeclared custom properties in built CSS | claimed **0** — **see the R1 correction below, this claim is false as stated** |
+| turnaround / fee / qualification claims | 0 |
+| em-dashes in user-facing copy | 0 |
+| tests | **38 green**, `tsc` clean |
+
+Pre-port link floor, from `P0D_BASELINE.md` §2 and `link_baseline.json`:
+**608 unique internal links across 51 routes, per-route floor 8**, and the floor of 8
+is exactly the footer — ten routes had footer-only internal linking. Any per-route
+decrease against `link_baseline.json` is a blocker.
+
+Independent re-derivations by the two reviewers, which are the numbers to trust over
+the commit bodies:
+
+- R2 V1/V2: **147 JSON-LD blocks over 54 pages, 0 unparseable**; **222 of 222** FAQ
+  answers present verbatim in the server HTML. R2's first automated pass reported 4
+  misses and all 4 were artefacts of its own whitespace normalisation.
+- R1 V3: **53/53 routes, zero horizontal overflow at all four widths**,
+  `scrollWidth == clientWidth` exactly.
+- R1 V5: text contrast clean at 1440 and 390; **exactly one flagged row, 54x, and it is
+  a gradient artefact** (the `bg-clip-text` builder credit; its two stops measure 6.0
+  and 8.0 on the footer ground).
+- R1 V11, and this **contradicts the phase 1-6 commit body**: 222 `var(--x)` names used,
+  224 declared, **10 used-but-undeclared**. Every one of the 10 carries an inline
+  fallback, so nothing renders blank and the conclusion is safe, but "zero undeclared"
+  is wrong as written. Do not repeat it.
+
+### Live defects found that were NOT design work
+
+This is the port's most valuable output. Reported as output, not overhead.
+
+Fixed in phase 0 (`f480c7ec`):
+
+| defect | source |
+|---|---|
+| CGT estimator measured the basic-rate band against **gross** income; £37,700 is a taxable-income ceiling. A £30,000 earner with a £20,000 gain was told £3,618 against a true £3,060 | P0-A M3, `lib/calculators/tools/crypto-cgt-estimator.ts:23` |
+| Staking estimator started the **45% additional rate £12,570 too low** and applied the personal allowance flat, hiding the 60% taper band | P0-A M6, `staking-mining-income-estimator.ts:6,13` |
+| Disclosure estimator priced **reasonable care at 0-30%**, which is the *careless* band; reasonable care attracts no penalty. A unit test pinned the wrong value | P0-A S3, `crypto-disclosure-estimator.ts:5` + `.test.ts:6-15` |
+| Trader checker omitted **Class 4 NIC**, the cost that makes trader status worse | P0-A M4 |
+| Staking worked example charged **£670 where £470 is due** (the £1,000 allowance is a deduction, not a threshold) | P0-A S1, `staking-rewards-tax-two-step.md:130` |
+| Swaps worked example claimed **£1,400 exposed where its own table derives £1,200** | P0-A S4, `crypto-to-crypto-swaps-are-disposals.md:156` |
+| **132 FAQPage answers** asserted to crawlers across all 19 blog posts with **no on-page counterpart at all** | P0-B R1 / P0-E E3, `blog/[category]/[slug]/page.tsx:65-73` |
+| **17 authored gov.uk citations per service page rendered as literal escaped markup** — visible as text, dead as links, on all 5 service pages | P0-B R2, `services/[slug]/page.tsx:84` |
+| `/services` and `/for` **canonicalised to the homepage** (root-layout `alternates` inheritance) | P0-B R3 |
+| **Duplicate Organization node** sharing one `@id` with the layout's, disagreeing on `areaServed` | P0-B R6 |
+| `priceRange: "££"` on a site that publishes no prices and says so | P0-B R7 |
+| **A Google Analytics opt-out section on a site with no GA id**, contradicting the same page two paragraphs earlier | P0-A S5, `cookie-policy/page.tsx:141-153`; `google_analytics_id` is `""` |
+| The cookie policy **published one section twice** | phase 0 commit body; R2 V27 confirms the de-duplication held |
+| The cookie policy **understated what is stored from the IP address** (country, region, city and timezone, not country alone) | phase 0 commit body |
+| Research page claimed an **annual update cadence we do not operate**, plus an unsourced growth trend | P0-A S7 |
+| **Turnaround promises in 21 source locations reaching 38 of 51 URLs** — against the 5 the audit first listed | phase 0 commit body; P0-A S6 listed 12 source sites, P0-B R4 measured 32 of 58 URLs |
+
+Fixed in phases 1-6 (`666ab0a2`):
+
+| defect | note |
+|---|---|
+| **Calculator headline labels rendered navy inside the navy result panel at 1.06:1** — invisible, on all four calculators and all four embeds | The brief sent the package after a different element that was passing at 10.9 |
+| **Article tables overflowed at 390px.** Root cause was `.prose table{width:100%}` treating `width` as a minimum, so **all 39 tables** carried the bug, not the 11 that happened to show it | P0-D §3b measured 11 posts; the fix was at the rule |
+| The homepage hero ran navy into a navy stats shelf | |
+| Research citations at **3.73 on navy** | P0-C C11 / P0-D D5 had measured the same elements at 2.48-2.58 on white pre-port |
+| A dead class name (`prose-neutral`) on 19 pages | P0-B R10 |
+| Privacy policy understated IP derivation and claimed **cookies and an opt-out control this site does not have** | |
+
+Still open after both reviews (R1/R2 found them; the gap-fix wave in the working tree
+is addressing some of them right now — check `git diff` before re-fixing):
+
+| id | defect |
+|---|---|
+| R2 C1 | `crypto-backed-loans-collateral-disposals.md:153` published **£2,136 of CGT on a £2,400 gain**, five times the true £432 |
+| R2 C2 | `staking-rewards-tax-two-step.md:97,169` measured the basic-rate band against **gross salary** (£12,700 where £25,270 is right) — the same error phase 0 fixed in the CGT tool, surviving in prose |
+| R2 C11 | `lost-crypto-exchange-collapse-negligible-value.md:29` publishes an **expired 5 April 2026 claim deadline** as live guidance |
+| R2 C12/C9 | `carf-crypto-reporting-2026-explained.md:36,124` floors exposure at 2018-19 against a 20-year deliberate look-back; `how-crypto-is-taxed-uk.md:8` metaDescription says CARF "from 2026" where every body says 2027 |
+| R1 D1/D2 | Focus rings are navy-on-navy at **1.00** on every dark band (`components/ui/layout-utils.ts:15`); `/research/crypto-tax-gap-index` has **zero** focus styling on any interactive element |
+| R1 D3 | `.eyebrow-rule` is emitted **26 times** in the served HTML with no rule in any served stylesheet |
+| R2 C3-C6 | "No sign-up, no data stored" beside four lead forms; a homepage-advertised penalty estimator the tool refuses to compute; "Read by a specialist" contradicted by our own `/privacy-policy` §5; "We confirm your exact figures" against our own `/terms` §2 and §3. **C5 and C6 are copy this port wrote.** |
+
+The **5 October 2026 inverted tense** named in the handoff brief is not evidenced in any
+`_port` document. The dated-deadline class is real and evidenced (R2 C11, the 5 April
+2026 item, in the same file the arithmetic sweep had already read); the 5 October
+instance is not. Re-derive it before writing it into a report.
+
+### Deliberate calls, with the reason
+
+| call | reason |
+|---|---|
+| **Navy `#0e1a3a` stays the ground identity; burnt orange `#8f421f` becomes the action hue, `#6e3118` the strong step.** Owner-approved in session | P0-C §C.5: navy is 17.11:1 on white but **1.04:1 against `--ink`**, so it is legible and carries no semantic signal — it cannot mark an action. `#8f421f` is 7.08:1 and `#6e3118` 9.93:1, clearing the text, ground and graphic floors, and both were **already in the codebase** as the site's own CTA hover/active, so this promoted an existing colour rather than minting a new one. `orange-500` (2.89) and `orange-600` (3.60) were disqualified on measurement |
+| **`/about` closes on a link to `/contact`, not a form** | Property does use a form there. A new lead-capture surface is an owner gate, so the port did not add one. `about/page.tsx:119-130` |
+| Kit **`FaqSection`** declined | It is a Radix accordion with no `forceMount` (`primitives/FaqSection.tsx:34-43`). crypto's native `<details>` keeps answers in the server HTML. Adopting it would have re-opened the asserted-but-absent FAQ defect phase 0 had just closed, on four surfaces that were correct |
+| Kit **`RelatedArticles`** declined | It carries `focus-visible:outline-none` (`blog/RelatedArticles.tsx:106`) whose replacement indicator `.related-card:focus-within` lives in `globals-standard.css`, which crypto does not import. It would have shipped invisible keyboard focus. Substituted `HubArticleList` (R1 V4 confirms) |
+| Kit **`BlogSidebarCta`** and **`BlogCategoryHub`** declined | Each would have added a capture surface. Owner gate |
+| Kit **`LeadCTAPanel`** declined | Its `proofPoints` default publishes claims no page authored ("Fixed fees, quoted upfront"), and it is a further capture surface. R1 V9 confirms `proofPoints` appears in crypto only inside two comments explaining the avoidance |
+| Kit **`SlimHero`** declined | Recorded at its call site with the others; the site uses its own `_parts/PageHero` |
+| Kit **`WhatToExpectCard`** defaults overridden | `DEFAULT_ITEMS` ends "Fixed fee quote if you decide to proceed" and crypto publishes no fees. `contact/page.tsx` passes `items` explicitly; R2 V9 measures "fixed fee" on **0 of 54** pages |
+| **Header-CTA cascade defect fixed site-locally, not in the kit** | The estate-wide defect reproduces here and was confirmed by byte offset. A layered rule in `app/layout.tsx` keyed on the CTA data attributes fixes it without touching `packages/web-shared/` — the durable kit fix crosses 18 sites and is an owner decision (trap 12). R1 V1 measures the override working: `none/none/none/flex/flex` at 390/768/1023/1024/1440 on all 53 routes |
+| `tw-animate-css` **not added** | A new dependency is an owner call |
+
+### Open owner decisions
+
+1. **The composite testimonials block** on `/` ("Real outcomes / What clients say", three
+   attributed quotes under a composite disclosure). Estate house style, pre-dates the
+   port (`git blame` -> `a516e497e`). Open question: can "our client base" and "the
+   compliance situations described are real" be stood behind on a site whose first
+   client is not evidenced. (P0-A M2, R2 O2)
+2. **The three homepage behaviour claims**, all three pre-dating the port by two months:
+   "Many DIY returns omit hundreds of swap events entirely"; "The four errors most DIY
+   crypto returns contain"; "We work with them every week" — the last being a claim
+   about our own trading volume. (R2 O3)
+3. **The site-identity claim in titles and meta.** 54 of 54 pages carry an "accountants"
+   string, `<title>` says "Specialist UK Crypto Tax Accountants", the JSON-LD declares
+   `["ProfessionalService","AccountingService"]`, and `/terms` §2 says no
+   accountant-client relationship is created. **This is an open estate-wide item**, not
+   a crypto regression (Property's own config reads "Specialist property accountants").
+   (P0-B R5, R2 O1)
+4. **`tw-animate-css` is absent from `crypto/web/package.json`.** Confirmed by grep.
+   Adding a dependency is an owner call.
+5. **The kit footer's required `consentToggle` is passed `null`**
+   (`components/ui/PageShell.tsx:85`) while `app/layout.tsx:66` mounts
+   `AnalyticsProvider … posture="opt-out"`. The site ships an opt-out posture with no
+   opt-out control.
+6. **`robots.ts` inconsistency:** `src/app/robots.ts:80` disallows `["/thank-you", "/admin"]`
+   but not `/book` or `/complete`, which are served, carry published copy, and are
+   `noindex, nofollow` by metadata only.
+7. **`monitored_pages` has zero crypto rows** (P0-D §6, scan verified against 1,000 rows
+   across 18 site/status pairs). crypto has no rewrite-decay detector. Arm at cutover?
+8. Phase-0 owner items carried forward: the disclosure-penalty presentation under house
+   position 31, the FCA Wave 6 refresh on `/research/crypto-tax-gap-index`, the
+   "fixed-fee basis" pricing-model claim on `/about`, and the IP understatement that
+   remains in 13 other cookie policies **including Property**.
+
+### Orphaned or unowned files
+
+- **`crypto/web/src/app/_parts/PageHero.tsx`** (new in `666ab0a2`, 56 lines) **had no
+  declared owner in the phase-0 package table.** It is now imported by seven page files
+  (`/about`, `/book`, `/complete`, `/contact`, `/for`, `/services`, `/thank-you`) plus
+  `components/templates/TopicPageLayout.tsx`, which serves `/services/[slug]` (5) and
+  `/for/[slug]` (6) — **nine route families, eighteen URLs**. A shared hero created
+  inside a disjoint-file-set wave and owned by nobody.
+  Deriving command: `grep -rln "_parts/PageHero" crypto/web/src`
+- Also net-new and unowned by the package table: `components/ui/PageShell.tsx`,
+  `components/ui/nav.ts`, `components/templates/TopicPageLayout.tsx`,
+  `components/blog/wrapWideTables.ts` (+ its test).
+
+### Leftovers ledger — reported, not fixed
+
+Each with the document that raised it.
+
+| item | file:line | source |
+|---|---|---|
+| UTF-8 BOM on a source file | `src/app/about/page.tsx:1` (`ef bb bf`) | P0-A M8 |
+| `--surface-elevated` declared, read by nothing | `src/app/globals.css` | P0-C C14 |
+| v3 hex literals retained (`#64748b` x12, a v3 `slate-500`; v4 emits `#62748e`) | across `src/` | P0-C §C.9 step 7 |
+| Dead `text-base` appends on 6 CTAs and a dead `inline-flex` | `src/app/error.tsx:33` + 6 call sites | P0-C C7, C9 |
+| Placeholder phone `+44 20 0000 0000` and an unpublished email sitting in config | `crypto/niche.config.json` `contact.phone`, `contact.email` | P0-B R9 |
+| `cta.sticky_secondary` = "Free, no-obligation reply within 24 hours" renders on 0 URLs — dead copy still carrying a banned promise | `crypto/niche.config.json` | P0-B R9 / P0-A "could not settle" |
+| Research data table has no `<caption>` | `src/app/research/crypto-tax-gap-index/page.tsx:181` | P0-E E4 |
+| `/embed/[slug]` inherits the root-layout footer, so an embedded iframe ships the whole site footer | `src/app/embed/[slug]/page.tsx` | P0-D D6 |
+| `storagePrefix="datp"` matches no crypto brand string; every other site derives it from its brand. Property's is annotated FROZEN, so changing crypto's is a decision | `src/app/layout.tsx:66` | P0-D D9 |
+| Local `MiniCapture` shadows the kit's by name; two mounts per calculator page (pre-existing, deliberately unchanged) | `src/components/calculators/MiniCapture.tsx`; mounts at `calculators/[slug]/page.tsx:107` and `CalcResultCta.tsx:8` | P0-E E7 |
+| `cta_snapshot.mjs` hardcodes `EXPECT_TITLE = "CIS Accountants"` (line 25) and exits 2 on every site but Trade | `docs/_engines/instruments/cta_snapshot.mjs:25` | P0-D D8 |
+| `browser_check.mjs --save-baseline` exits at line 726 before printing the self-test verdict, the unparseable-colour count and the whole `--grounds` summary | `docs/_engines/instruments/browser_check.mjs:726` | P0-D D10 |
+| `link_baseline.json` / `browser_baseline.json` carry `sha: 7b5c0ce8`; the measured build is `e25412d7` | `docs/crypto/_port/*.json` | P0-D D0 |
+| R1 D4: three off-white grounds doing one alternation job (`bg-slate-50` x26, `bg-neutral-50` x12, `bg-[#fafaf9]` x6; Property uses one). ΔE 0.8-2.2 | `app/page.tsx`, `about/`, `contact/`, `research/` | R1 D4 |
+| R1 D5: `/services/*` and `/for/*` run navy straight into `bg-neutral-800` on 12 pages | `components/templates/TopicPageLayout.tsx` | R1 D5 |
+| R1 D6: second live cascade race on the same element, `min-h-10`/`min-w-0` still lose to `btnPrimary`'s `min-h-12`/`min-w-[10rem]`; the site-local override handles `display` only | `app/layout.tsx:38-45` | R1 D6 |
+| R1 D7: heading level skipped h1 -> h3 on 11 pages (`/blog`, 6 category hubs, 4 calculators) | | R1 D7 |
+| R1 D8/D10: the `#main` scroll-offset comment asserts "zero in-page anchors today" (false: 19 posts and `/about` carry them, all covered elsewhere), and quotes byte offsets that no longer match the served sheet (`.hidden` 16552, `.inline-flex` 16631) | `app/layout.tsx:18,38` | R1 D8, D10 |
+| R1 D9: focus ring on the dark footer measures 2.52, under the 3.0 graphic floor, on all 53 pages | kit footer wordmark | R1 D9 |
+| R2 C7: negligible-value backdating published as a "four-year window" in six places and inside `HowTo` JSON-LD. The 4 years is the loss-claim limit; backdating is TCGA 1992 s.24(2). **INFERRED, re-verify at HMRC CG13131 before editing** | `lost-crypto-exchange-collapse-negligible-value.md:36,38,105,141,176,180` | R2 C7 |
+| R2 C8: a named commercial product's defaults asserted as fact and inside a testimonial. Pre-dates the port (`a516e497e`) | `app/page.tsx:105,204` | R2 C8 |
+| R2 C10: `meta.description` still says "Updated annually on FCA wave publication" — latent, one render binding from republishing the cadence the page fix removed | `src/data/uk-crypto-tax-gap-index.json` | R2 C10 |
+| R2 C13: grammatical antecedent error introduced by the crypto rewrite ("so that **it** can provide") | `app/privacy-policy/page.tsx:97` | R2 C13 |
+| R2 C14: the cETN / Innovative Finance ISA dated claims are load-bearing and sit outside `house_positions.md` and `rates_ledger.json`. Add ledger keys | `content/blog/crypto-isa-etn-uk-tax.md:10,13,15,23,27` | R2 C14 |
+
+### R1 design review
+
+**Available and complete.** `docs/crypto/_port/R1_DESIGN_REVIEW.md`, 332 lines, reviewer
+R1, against the rendered DOM at 390/768/1024/1440 over 53 routes plus `/book` and
+`/thank-you`, at `666ab0a2` with the server identity and age both proven.
+
+- **BLOCKING: none.** No new interruption, modal, banner, toast, timed promise or extra
+  capture surface (R1 §3 carries the positive proof).
+- MAJOR: D1-D5. MINOR: D6-D10. Verified-as-fixed, do not churn: V1-V12.
+- **Three checks are NOT MEASURED** because the server R1 was using stopped answering at
+  roughly 60% through the review (R1 did not start or stop it): the **mobile drawer open
+  state** at 390/768 (contrast, focus trap, tab order, Escape, scroll lock), the
+  **calculator result panel's warn/edge branches**, and the **booking picker's day strip
+  at 390** in its populated state. Nothing in R1 clears these. Re-run them once a server
+  is up.
+- R1's F3 is the one to carry: **`getComputedStyle` lies about outlines in this
+  environment** (it reported a white 3px ring where the painted ring was burnt orange
+  2px at offset 2, under a real `:focus-visible`). Every focus-ring number not backed by
+  a screenshot is suspect, and a gap-fix wave that trusts computed `outlineColor` will
+  chase ghosts.
+
+R2, the content review, is at `docs/crypto/_port/R2_CONTENT_REVIEW.md`: 2 blocking,
+6 major, 6 minor, 4 owner decisions, 31 verified-correct checks.
+
+### The port's own source documents
+
+`docs/crypto/_port/`: `PHASE0_PACKAGES.md` (the package table, written before launch),
+`P0A_CLAIMS_LEDGER.md` (7 serious, 8 minor), `P0B_RENDERED_SWEEP.md` (6 serious, 4 minor
+over 58 served URLs), `P0C_CSS_TOKEN_AUDIT.md` (17 findings, the token ramp spec),
+`P0D_BASELINE.md` (10 defects, the instrument baselines), `P0E_STRUCTURAL_INVENTORY.md`
+(8 defects, 1 critical), `R1_DESIGN_REVIEW.md`, `R2_CONTENT_REVIEW.md`, plus
+`link_baseline.json`, `browser_baseline.json`, `cta_snapshot.json` and the raw runs.
+
+---
+
 Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held). Generated by
 `optimisation_engine.ops.spinup_site`. Tranche: **2**.
 

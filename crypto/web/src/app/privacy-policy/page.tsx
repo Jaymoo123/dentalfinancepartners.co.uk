@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
         <h2 className="text-xl font-bold text-[var(--ink)]">3. Why we use your information</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to regulated firms in our specialist partner network so that it can provide the
+            <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to regulated firms in our specialist partner network so that they can provide the
             advice you have requested.
           </li>
           <li>

@@ -232,7 +232,7 @@ faqs:
 
 <p>This means an investor who makes a large number of token swaps with a high aggregate value, but whose net gain is covered by the AEA and carried-forward losses, may still have a Self Assessment filing obligation. Failure to file when required to do so can result in late-filing penalties, even when the tax due is nil.</p>
 
-<p>The Self Assessment registration deadline is <strong>5 October following the end of the tax year</strong> in which the first reportable event arose. For disposals in the 2025/26 tax year (ending 5 April 2026), the registration deadline was 5 October 2026. If you missed it, disclosure is still preferable to continued non-filing.</p>
+<p>The Self Assessment registration deadline is <strong>5 October following the end of the tax year</strong> in which the first reportable event arose. For disposals in the 2025/26 tax year (ending 5 April 2026), the registration deadline is 5 October 2026. If you miss it, disclosure is still preferable to continued non-filing.</p>
 
 <p>If you are not sure whether your disposal proceeds exceed the reporting threshold, a full reconciliation of your swap history is the only reliable way to find out. A rough estimate is not enough: the threshold is a hard statutory test, not a soft guide.</p>
 

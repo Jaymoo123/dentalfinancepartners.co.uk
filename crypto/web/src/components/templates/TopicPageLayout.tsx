@@ -79,16 +79,25 @@ export function TopicPageLayout({
         </div>
       </PageHero>
 
-      {/* Stat strip. Left byte-identical on purpose: text-neutral-400 on
-          bg-neutral-800 measures 5.86:1 and PASSES all three floors, so
-          lightening it would be a change with no defect behind it. */}
-      <section className="bg-neutral-800 py-8 sm:py-10">
+      {/* Stat strip. WHITE, not a second dark band. The navy hero above is the
+          ground identity; a bg-neutral-800 strip under it sat at almost the same
+          luminance (L* 10.3 vs 15.6) and the seam read as one long dark slab
+          with a hue shift. Navy never touches navy. This is the homepage's own
+          answer (`app/page.tsx` key-figures bar), reused rather than invented:
+          white ground, value in brand navy, label in slate-600.
+
+          Re-measured because the ground changed (one ratio, three floors):
+            #0e1a3a value on #ffffff   17.12:1  graphic PASS / text PASS / ground PASS
+            #475569 label on #ffffff    7.57:1  graphic PASS / text PASS / ground PASS
+          The retired pair (text-neutral-400 on bg-neutral-800, 5.86:1) passed
+          too; it is gone because the BAND was wrong, not the type on it. */}
+      <section className="border-b border-slate-200 bg-white py-8 sm:py-10">
         <div className={siteContainerLg}>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col sm:text-center">
-                <div className="font-mono text-2xl font-bold text-white sm:text-3xl">{stat.value}</div>
-                <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-neutral-400 sm:text-sm">
+                <div className="font-mono text-2xl font-bold text-[#0e1a3a] sm:text-3xl">{stat.value}</div>
+                <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-600 sm:text-sm">
                   {stat.label}
                 </div>
               </div>

@@ -1385,3 +1385,195 @@ homepage `a "Talk to a charity accountant"` row was the live hero CTA.
 RULE: never dismiss a `ratio=1.00` white row as an artefact and never accept it as a defect
 without proof. Settle each one against the served stylesheet's byte order, at the element
 the row names.
+
+---
+
+## 13. What the crypto port taught (2026-09-14)
+
+**A site can have NO CHROME AT ALL, and three phase-0 packages found it independently
+before anyone planned a restyle.** crypto shipped **no header, no `<nav>`, no mobile
+drawer, no `<main>` landmark and no skip link on any of 51 routes**. Not a drifted
+breakpoint and not a broken drawer: no header component existed in the repo.
+`crypto/web/src/app/layout.tsx` rendered `ConsentProvider > AnalyticsProvider >
+{children} + SiteFooter` and nothing else. The consequence was measurable in the link
+baseline: **608 unique internal links over 51 routes with a per-route floor of 8, and the
+floor of 8 is exactly the footer** - ten routes had footer-only internal linking
+(`docs/crypto/_port/P0D_BASELINE.md` section 2). Every brief written for this port assumed
+a header existed, and four of its questions were unanswerable as written: measure the
+burger's breakpoint, the drawer's, the nav's, the primary CTA's.
+Deriving command, run before writing any phase-1 brief:
+```
+for p in / /blog /contact /services; do curl -s <base>$p | grep -c '<header\|<nav\|<main'; done
+```
+RULE: phase 0 must establish whether chrome EXISTS before anything plans to restyle it,
+and must say so in one line at the top of the structural inventory. A port of a site with
+no chrome is not a restyle, it is net-new construction, and the phase order changes.
+
+**Corollary, for the CTA baseline: the risk is not flipping the site's literals, it is
+INVENTING them.** crypto carried **one `data-cta` on the entire site**
+(`thankyou-return-article`, and only when a safe `rt` query param is present, which is why
+a plain fetch saw nothing). There was no pre-port drawer CTA goal or placement to
+preserve, so every `data-cta` the kit chrome introduced is net-new analytics with no
+baseline to compare against.
+RULE: on a site with no chrome, record the phase-1 CTA set as a deliberate decision with
+its reason, not as a value validated against a pre-port set. Name the one id that must
+survive byte-identical.
+
+**The brief's own defect can be the defect, four times on one port.** Each of these sent a
+builder after the wrong element:
+- A warn-tone contrast failure named in a brief was **passing at 10.9 on its real ground**;
+  the actual failure in the same component was a brand colour at **1.06:1** - calculator
+  headline labels rendered navy inside the navy result panel, invisible, on all four
+  calculators and all four embeds.
+- "Six `neutral-400` research elements" - `P0C_CSS_TOKEN_AUDIT.md` C11 locates
+  `text-neutral-400` at **three** research lines (`:115, :122, :212`) plus five elsewhere,
+  and the real research failure the port fixed was a different colour at **3.73 on navy**.
+- "17 gov.uk citations per page" - the measured range across the five service pages was
+  **15 to 22** escaped-tag occurrences.
+- "One text-child field" - `{faq.answer}` interpolated as a React text child was **four**
+  affected fields, and the fix belonged at the template, not the field.
+RULE: a builder's first act is to re-derive the brief's own number at the element the
+brief names. Report the correction as a numbered false premise before fixing anything.
+Every package on this port that did this caught a mis-aimed instruction; the cost of the
+check is one grep.
+
+**A fix can propagate the error it was fixing.** Phase 0 correctly fixed the CGT estimator
+for measuring the basic-rate band against **gross** income (37,700 is a taxable-income
+ceiling). The same wave then "corrected" a basic-rate band figure in prose **using the
+same gross-income method that made it wrong**: `staking-rewards-tax-two-step.md:97` was
+left publishing "25,000 of salary, leaving 12,700 of her basic-rate band unused (37,700
+minus 25,000)" where the answer is 25,270. The site's own calculator printed **25,270** on
+identical inputs on the very next URL. Only the independent content review caught it
+(`R2_CONTENT_REVIEW.md` C2).
+Deriving command: `grep -rnoE '.{160}37,700.{160}' <site>/web/content <site>/web/src` -
+every correct occurrence says "taxable income"; the wrong one says "salary".
+RULE: when a wave fixes a METHOD error, re-derive every figure the method touches, in
+prose as well as in code, and cross-check against the site's own tool output on the same
+inputs. A tool and an article disagreeing on identical inputs is a free oracle.
+
+**A sweep finds only the class it was sent for.** The phase-0 arithmetic sweep read all 19
+posts and fixed two worked examples. It missed, **in files it had open**: a 2,136 CGT
+figure on a 2,400 gain (five times the true 432), an **expired 5 April 2026 claim
+deadline** published as live guidance, and a metaDescription putting CARF reporting at
+2026 where every body on the site says 2027. The expired deadline and the tense error were
+found by a different package reading adjacent files for a different reason.
+RULE: dates and tenses are a separate sweep class from arithmetic, and the same file can
+pass one and fail the other. Sweep for `must ... by <date>` / `from <date>` / `will`
+independently, with today's date in hand, and re-run it every time a port crosses a tax
+year or a deadline.
+
+**A grounds scan keyed to named Tailwind scales is blind to arbitrary-value grounds.** The
+`--grounds` capture reported **0 section bands on 27 of 51 routes**, the homepage among
+them, and a brief told a builder there was no section-ground rhythm to preserve. The
+homepage in fact runs **13 deliberate `bg-[#fafaf9]` bands** (R1 D4 measured the full
+inventory post-port: `bg-slate-50` x26, `bg-neutral-50` x12, `bg-[#fafaf9]` x6 inside
+`<main>`). An arbitrary-value ground is invisible to a scale-keyed scan.
+Deriving command: `grep -o 'bg-\[#[0-9a-fA-F]\{3,8\}\]' <served html> | sort | uniq -c`
+alongside the named-scale scan.
+RULE: a zero from a grounds scan means "the scan found nothing it knows how to name", not
+"there is no rhythm". Say which of the two you measured, and scan for `bg-[#...]`
+separately before telling a builder there is nothing to preserve.
+
+**Auditing from the sitemap misses served pages that carry published copy.** crypto's
+sitemap lists **51 URLs**; **54 are served**. `/book`, `/complete` and `/thank-you` are
+live, carry published claims (including "free review call" copy and the site's only
+authored `data-cta`), and were outside every claims audit driven by `sitemap.xml`. The
+sitemap was **correct** to omit them - all three are `noindex, nofollow` - so this is not
+a sitemap defect, it is an audit-scope defect. `robots.ts` compounded it on this site by
+disallowing `/thank-you` but not `/book` or `/complete`.
+Deriving command: enumerate route families from `find <site>/web/src/app -name page.tsx`
+AND from `sitemap.xml`, then diff the two and dispose of every difference explicitly.
+RULE: the audit corpus is what the server serves, not what the sitemap advertises. Publish
+the served-URL inventory with a disposition line per excluded family (crypto's P0-B and
+P0-D both did; that is the pattern).
+
+**`grep -q` and `grep -l` are mutually exclusive, so `grep -ql` prints nothing and a
+harness built on it returns a clean pass for every check.** `-q` suppresses all output and
+exits on first match; `-l` asks for the filename. Combined, the quiet flag wins and the
+harness reads "no match" for a present string and "no match" for an absent one alike.
+Every row goes green.
+RULE: every verification harness carries a **self-test row with one known-present and one
+known-absent string**, and refuses to report if the known-present row does not fire. This
+is the same discipline `browser_check.mjs` already applies to its contrast converter, and
+it costs two lines. Note the sibling instrument hazard found here: `browser_check.mjs`
+`--save-baseline` exits at line 726 **before** printing its self-test verdict, so on a
+baseline run the operator is never shown the evidence the gate passed - quote it from the
+run JSON's `selfTest` field instead.
+
+**A tag-adjacent inline element breaks a naive text-presence check.** R2's first automated
+FAQ pass reported 4 asserted-but-absent answers. **All four were artefacts of its own
+normalisation**: stripping `<strong>` inserts a space next to the following comma, so the
+JSON-LD's "pooling," no longer matches the page's "pooling ,". Re-run with
+alphanumeric-only normalisation and entity decoding: **222 of 222 answers present**.
+RULE: normalise to alphanumerics and decode entities before declaring a FAQ answer absent,
+and re-check every miss by eye. The asserted-but-absent defect is real and this port fixed
+132 genuine instances of it, which is exactly why a false positive in that class is
+expensive.
+
+**A `@theme` ramp must be minted before any kit component is mounted, or the kit renders
+colourless and every test stays green.** crypto had **no `@theme` block and no `primary-*`
+ramp at all** (`P0E_STRUCTURAL_INVENTORY.md` E5), while every kit component styles off
+`text-primary-600` / `bg-primary-600` / `btnPrimary`. On this port the token ramp was run
+as its own package, ALONE, before every visual package, because all of them blocked on it.
+That ordering is the reusable part.
+RULE: token ramp is package one, alone, on any site that has never mounted kit chrome.
+Prove `grep -o "primary-600" <site>/web/.next/static/css/*.css | wc -l` is non-zero after.
+
+**An unlayered `body` rule is a latent trap that only fires when the port touches the
+body.** `crypto/web/src/app/globals.css:11` set `background`, `color` and `font-family` on
+a bare `body`. It was beating nothing (the rendered body carried only `antialiased`), and
+it would have silently beaten the first `bg-*`, `text-*` or `next/font` class any later
+package added, because a v4 utility lives in `@layer utilities` and an unlayered element
+rule outranks every layer. The font case was the live risk: crypto loads no webfont, so a
+port adding Geist via `next/font` would have rendered the system stack with every visual
+test passing.
+RULE: move `body` into `@layer base` in the token-ramp package, BEFORE anything adds a
+font or a body-level utility. A latent cascade trap is worth fixing in the commit that
+would otherwise trigger it.
+
+**"Zero undeclared custom properties" is the wrong claim to make, and it was made.** The
+phase 1-6 commit body asserts zero undeclared names in the built CSS. R1 re-derived
+independently: **222 names used, 224 declared, 10 used-but-undeclared**
+(`--brand-primary-ground-hover`, `--btn-radius`, `--calc-warn-*`, `--hero-cream` and four
+`--default-*font*`). Every one carries an inline fallback, so nothing renders blank and
+the *conclusion* was safe, but the stated check was false and a gap-fix wave repeating it
+would keep being wrong.
+RULE: the defensible claim is "every undeclared name is fallback-guarded, checked at the
+element", not "zero undeclared". State the check you actually ran. An undefined custom
+property with no fallback invalidates the whole declaration - that shipped live on
+Dentists - so the distinction is the entire point.
+
+**A component created inside a disjoint-file-set wave can end up owned by nobody.**
+`crypto/web/src/app/_parts/PageHero.tsx` is net-new in the phase 1-6 commit, appears in no
+row of `PHASE0_PACKAGES.md`, and is now imported by seven page files plus
+`TopicPageLayout.tsx`, reaching **nine route families and eighteen URLs**. So are
+`PageShell.tsx`, `nav.ts`, `TopicPageLayout.tsx` and `wrapWideTables.ts`. The package
+table's file sets were disjoint on the files that EXISTED; the files a wave creates are
+outside it by construction.
+Deriving command at wave close:
+`git diff --stat --diff-filter=A <phase0-tag> HEAD -- <site>/web/src` - every added file
+must be assigned to a package or named in the state doc as shared.
+RULE: at wave close, list the files the wave CREATED and give each one an owner. A shared
+component with no owner is where the next port's cross-cutting defect will live.
+
+**Budget confirmation, third consecutive port: the design work was the smaller half.** On
+crypto the critical path was E1 (no chrome), E2 (no landmark, no skip link), E3 (132
+orphaned FAQ answers) and E5 (no token ramp), all live defects, none of them styling.
+Phase 0 alone fixed six wrong figures handed to users, two schema defects, two canonical
+defects and a compliance section describing code that does not run. Both independent
+reviews then found further live content defects the port's own verification lists had not
+re-read, two of them in copy the port itself wrote.
+RULE unchanged from section 11, now with a third data point: budget a third of every port
+for defects that are not design work, and treat the live-defect list as the port's
+headline OUTPUT, not as overhead.
+
+**Counting corrections, carried intact from section 12 and re-confirmed on this port.**
+`grep -c` UNDERcounts against a one-line built stylesheet (crypto's served sheet is 76,705
+bytes on **zero newlines**), so count with `grep -o ... | wc -l`. `grep -c` OVERcounts
+against Next.js HTML, which serialises DOM text a second time into the RSC flight payload,
+so report rendered findings as **per-page presence** (`grep -l` per file, count files) and
+say which you measured. Both P0-B and R2 declared their counting method at the top of the
+document before any number; do that. New this port: a naive `re.escape` selector probe
+against the built sheet reported **165 dead classes** where the real answer is **5**,
+because Tailwind CSS-escapes `sm\:py-4`, `mt-0\.5` and `bg-\[\#0e1a3a\]` - the probe must
+allow an optional backslash before every non-word character.

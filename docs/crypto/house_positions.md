@@ -288,6 +288,39 @@ basis as universal.
 Source: https://www.gov.uk/corporation-tax-rates
 (re-verified at source 2026-07-14: 25% / 19% / Marginal Relief).
 
+## I. Crypto ETNs and ISAs (added and verified at source 2026-09-14)
+
+Added during the design-port gap-fix wave because the cETN/ISA dates already
+published on the site (`content/blog/crypto-isa-etn-uk-tax.md`) appeared in no
+ground-truth document. Both dates below are now sourced; the copy is correct as
+published and must not be changed without re-verifying these sources.
+
+**34. Cryptoassets cannot be held directly in any ISA. FCA-approved crypto
+Exchange Traded Notes (cETNs) became available to UK retail investors on 8
+October 2025 and can be held in an ISA.** Before that date cETNs were sold to
+professional investors only. HMRC's policy paper states cETNs can be held within
+ISAs and registered pension schemes from 8 October 2025, following the FCA rule
+change.
+Source: https://www.gov.uk/government/publications/tax-treatment-of-cryptoasset-exchange-traded-notes
+(verified at source 2026-09-14: "cETNs can be held within ISAs and registered
+pension schemes" from 8 October 2025 following FCA rule changes).
+
+**35. From 6 April 2026 a UK cryptoasset exchange traded note is a qualifying
+investment for the innovative finance component only, not the stocks and shares
+component; cETNs already held in a stocks and shares account immediately before
+6 April 2026 are grandfathered for as long as they are so held.** The change is
+made by The Individual Savings Account (Amendment) Regulations 2026, SI 2026/248,
+in force 6 April 2026 (reg. 2(5) and its exception).
+Source: https://www.legislation.gov.uk/uksi/2026/248/made
+(verified at source 2026-09-14: coming into force 6 April 2026; cETNs allowed
+under an innovative finance account; not a qualifying security for a stocks and
+shares account unless held there immediately before 6 April 2026).
+
+NOT verified, and therefore not to be restated as a new claim: the further
+assertion that an ISA manager needs separate HMRC approval to offer the
+innovative finance component. It is currently published in the blog copy. Treat
+it as unsourced until someone checks the ISA manager guidance.
+
 ## Presentation rules
 
 - Every rate or figure above must be re-verified against the cited page at build

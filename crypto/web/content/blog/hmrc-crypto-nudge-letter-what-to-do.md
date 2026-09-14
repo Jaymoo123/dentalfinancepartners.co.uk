@@ -161,7 +161,7 @@ howToSteps:
   <li>Contrast that with a taxpayer who saw HMRC guidance, knew gains were taxable, and filed nil returns for 10 years. Even if they now disclose voluntarily, deliberate-behaviour treatment applies, the 20-year window is open, and the penalty percentage is materially higher.</li>
 </ul>
 
-<p>Use our <a href="/calculators/crypto-disclosure-estimator">disclosure and penalty estimator</a> to model scenarios and get a sense of the complexity of your position. The tool ends at "your situation has X complexity, speak to us" and states its simplifications clearly; it does not produce a filing-ready figure.</p>
+<p>Use our <a href="/calculators/crypto-disclosure-estimator">disclosure scope estimator</a> to model scenarios and get a sense of the complexity of your position. The tool ends at "your situation has X complexity, speak to us" and states its simplifications clearly; it does not produce a filing-ready figure.</p>
 
 <h2>What not to do</h2>
 
@@ -188,7 +188,7 @@ howToSteps:
 
 <p>If your crypto history is longer than one or two tax years, involves staking or DeFi activity, spans multiple platforms, or includes any period where you were aware gains were taxable but did not declare them, professional help with the disclosure is not a luxury.</p>
 
-<p>The <a href="/services/hmrc-disclosure">cryptoasset disclosure service</a> page sets out how we approach this work. The <a href="/calculators/crypto-disclosure-estimator">disclosure and penalty estimator</a> is a good starting point if you want to model the rough shape of your position before speaking to anyone.</p>
+<p>The <a href="/services/hmrc-disclosure">cryptoasset disclosure service</a> page sets out how we approach this work. The <a href="/calculators/crypto-disclosure-estimator">disclosure scope estimator</a> is a good starting point if you want to model the rough shape of your position before speaking to anyone.</p>
 
 <p>You can also use our <a href="/for/investors">investor tax hub</a> if you want to understand the underlying CGT rules before working through the disclosure calculation.</p>
 

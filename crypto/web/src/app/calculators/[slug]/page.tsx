@@ -85,10 +85,20 @@ export default async function CalculatorToolPage({ params }: Props) {
 
       {/* The tool. Full container, no inner clamp: a narrower box here would put
           the calculator's edges out of line with the explainer below it, and the
-          result rows need the width. Everything inside this section is
-          client-rendered and is NOT in the static HTML. */}
-      <section className="bg-slate-50">
+          result rows need the width.
+
+          The tool title and the result-panel capture heading are both <h3>, and
+          both are emitted server-side (MEASURED: `curl /calculators/<slug> |
+          grep -o '<h3'` returns them), so without an h2 here the outline skipped
+          h1 -> h3. Their level belongs to the shared renderer
+          (`web-shared/tools/components/Calculator.tsx:111`) and to MiniCapture,
+          neither of which this package owns, so the missing level is supplied
+          here instead. */}
+      <section className="bg-slate-50" aria-labelledby="calculator-tool-heading">
         <div className={`${siteContainerLg} ${sectionY}`}>
+          <h2 id="calculator-tool-heading" className="sr-only">
+            Calculator
+          </h2>
           <CalculatorClient
             slug={tool.slug}
             variant="page"
@@ -156,7 +166,7 @@ export default async function CalculatorToolPage({ params }: Props) {
               formId="calc_page_footer"
               messagePrefix={`[Calculator page: ${tool.slug}]`}
               heading="Want to be sure of your position?"
-              blurb="Tell us about your crypto situation and we will confirm your exact figures and the compliance steps that apply to you. No obligation."
+              blurb="Tell us about your crypto situation and we will talk you through the compliance steps that apply to it. No obligation."
               submitLabel="Request a review"
             />
           </div>

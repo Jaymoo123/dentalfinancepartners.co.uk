@@ -5,7 +5,7 @@ date: "2026-07-15"
 author: ""
 category: "Crypto CGT & Disposals"
 metaTitle: "How Crypto Is Taxed in the UK: 2026 Overview"
-metaDescription: "CGT on disposals, income tax on earned tokens, CARF reporting from 2026. The complete HMRC-cited map of UK crypto tax, with links to every deep-dive."
+metaDescription: "CGT on disposals, income tax on earned tokens, CARF data collection from 2026 and a first report to HMRC in 2027. The HMRC-cited map of UK crypto tax."
 h1: "How Crypto Is Taxed in the UK: The Complete 2026 Overview"
 summary: "A cited map of every UK crypto tax rule: CGT on disposals at 18%/24%, income tax on earned tokens, what you must file and when, and the CARF reporting countdown."
 keyTakeaways:

@@ -18,7 +18,7 @@ export function CalcResultCta({ campaign }: { campaign: string }) {
         formId="calc_result"
         messagePrefix={`[Calculator: ${campaign}]`}
         heading="Check your position with a crypto tax specialist"
-        blurb="A calculator gives you the shape of the answer. We confirm your exact figures, the reliefs you can claim, and what you need to file. No obligation."
+        blurb="A calculator gives you the shape of the answer. Tell us about your position and we will talk you through the reliefs and filing obligations that apply to it. No obligation."
         submitLabel="Get my figures checked"
         /* Sits INSIDE the shared renderer's white card, which already carries a
            4px brand rule down its own left edge, so this one does not repeat it:

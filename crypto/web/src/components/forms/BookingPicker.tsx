@@ -21,9 +21,9 @@ type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
 // ponytail: brand-token chips — border uses CSS var so it adapts if brand tokens shift
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center border px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center border px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
 const chipIdle =
-  "border-neutral-300 bg-white text-neutral-900 hover:border-[var(--brand-primary)] hover:bg-neutral-50";
+  "border-neutral-300 bg-white text-neutral-900 hover:border-[var(--brand-primary)] hover:bg-slate-50";
 const chipSelected =
   "border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white";
 

@@ -40,7 +40,7 @@ export default function ContactPage() {
         </p>
       </PageHero>
 
-      <section id="book" className="scroll-mt-24 bg-neutral-50 py-16 sm:py-20">
+      <section id="book" className="scroll-mt-24 bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
             <div className="space-y-6">

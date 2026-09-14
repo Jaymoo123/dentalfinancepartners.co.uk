@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "UK Crypto Tax Compliance Index",
-    "description": "Verified data on UK cryptoasset ownership levels and the CARF reporting timeline. All figures cited to primary sources. Updated annually on FCA wave publication.",
+    "description": "Verified data on UK cryptoasset ownership levels and the CARF reporting timeline. All figures cited to primary sources. Ownership figures are FCA Wave 5 (2024); the FCA has since published a further wave that is not yet reflected here.",
     "lastUpdated": "2026-07-14",
     "methodology": "Ownership figures from FCA Cryptoassets Consumer Research (annual YouGov omnibus, nationally representative). CARF dates from HMRC guidance. CGT parameters from gov.uk capital-gains-tax pages. No modelled tax gap figures are published here: HMRC does not publish a crypto-specific tax gap, so no estimate is stated."
   },

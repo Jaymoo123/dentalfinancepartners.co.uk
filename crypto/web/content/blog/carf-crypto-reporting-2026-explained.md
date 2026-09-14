@@ -33,7 +33,7 @@ howToSteps:
   - name: "Step 1: Gather your transaction history across all platforms"
     text: "Collect transaction exports from every exchange, wallet, DeFi protocol, and NFT platform you have used. Exports from tools such as Koinly or Recap are a starting point, not a finished answer, particularly for DeFi activity and cross-chain bridges."
   - name: "Step 2: Identify the tax years with open exposure"
-    text: "Determine which tax years from 2018-19 onwards involved disposals, including crypto-to-crypto swaps, that were not reported. These years may carry unpaid Capital Gains Tax or income tax on staking and mining receipts."
+    text: "Determine which tax years involved disposals, including crypto-to-crypto swaps, that were not reported. These years may carry unpaid Capital Gains Tax or income tax on staking and mining receipts."
   - name: "Step 3: Quantify gains and losses including unclaimed capital losses"
     text: "Calculate your position for each affected year, including unreported losses as well as gains. Capital losses must be actively claimed to be usable and are time-limited to four years after the end of the tax year in which they arose."
   - name: "Step 4: Make a voluntary disclosure before any HMRC contact"
@@ -121,7 +121,7 @@ howToSteps:
 
 <ol>
   <li><strong>Gather your transaction history.</strong> Every exchange, wallet, DeFi protocol and NFT platform you have used. Exports from Koinly, Recap or similar tools are a starting point, not a finished answer, particularly for DeFi activity and cross-chain bridges.</li>
-  <li><strong>Identify the tax years with open exposure.</strong> If you disposed of cryptoassets (including crypto-to-crypto swaps, which are taxable disposals under HMRC's rules) in any year from 2018-19 onwards and did not report them, those years may carry unpaid tax.</li>
+  <li><strong>Identify the tax years with open exposure.</strong> If you disposed of cryptoassets (including crypto-to-crypto swaps, which are taxable disposals under HMRC's rules) in any earlier year and did not report them, those years may carry unpaid tax. How far back HMRC can assess depends on behaviour (four, six or twenty years), so 2018-19 is a common practical starting point rather than a fixed boundary.</li>
   <li><strong>Quantify the position, including losses.</strong> Unreported losses are as much a part of the picture as unreported gains. Capital losses must be <a href="https://www.gov.uk/capital-gains-tax/losses">claimed to be usable</a> and are time-limited to four years after the end of the tax year in which they arose.</li>
   <li><strong>Consider voluntary disclosure before any HMRC contact.</strong> If there is unpaid tax, the question is not whether to disclose but when. An unprompted disclosure gives you the most control over the process and the most favourable penalty position.</li>
 </ol>

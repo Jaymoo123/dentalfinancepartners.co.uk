@@ -77,7 +77,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-neutral-50">
+      <section className="bg-slate-50">
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="max-w-3xl">
             <Eyebrow>The work</Eyebrow>

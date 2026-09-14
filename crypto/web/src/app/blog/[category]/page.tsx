@@ -51,6 +51,9 @@ export default async function CategoryPage({ params }: Props) {
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">{cat.name}</h1>
         <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">{hubDescription(cat.name)}</p>
 
+        {/* HubArticleList card titles are <h3>; this is the missing h2 that
+            keeps the outline from skipping a level. See /blog. */}
+        <h2 className="sr-only">{cat.name} articles</h2>
         <div className="mt-10">
           <HubArticleList
             categorySlug={category}

@@ -45,6 +45,11 @@ export default function BlogIndexPage() {
           </nav>
         )}
 
+        {/* The card titles inside HubArticleList are <h3>. Without a section
+            heading above them the outline skipped h1 -> h3. The h3 level is the
+            list component's, shared by every hub, so the level is fixed here
+            where both hubs route through rather than restyling the cards. */}
+        <h2 className="sr-only">All articles</h2>
         <div className="mt-10">
           {posts.length > 0 ? (
             // Every card stays in the server HTML; the off-page ones carry the

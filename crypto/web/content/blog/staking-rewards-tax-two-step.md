@@ -94,7 +94,7 @@ faqs:
 
 <h2>Worked illustration: receipt, income, disposal, CGT</h2>
 
-<p>Alice stakes ETH and receives rewards across the 2026/27 tax year. She is a basic-rate taxpayer with £25,000 of salary, leaving £12,700 of her basic-rate band unused (£37,700 band ceiling minus £25,000 salary).</p>
+<p>Alice stakes ETH and receives rewards across the 2026/27 tax year. She is a basic-rate taxpayer with £25,000 of salary. After her £12,570 personal allowance that is £12,430 of taxable income, so £25,270 of her basic-rate band is unused (the £37,700 ceiling is a taxable-income ceiling: £37,700 minus £12,430).</p>
 
 <p><strong>Step one: income on receipt</strong></p>
 
@@ -166,7 +166,7 @@ faqs:
   </tbody>
 </table>
 
-<p>In this scenario the £3,000 AEA covers the gain entirely. But note: the base cost used for the disposed ETH already reflects the staking receipt values blended into the pool. The income tax on the staking receipts and the CGT on the disposal are independent calculations on different amounts. If Alice had made larger gains or more disposals, the AEA would not have stretched and CGT at 18% (within her remaining basic-rate band, £10,350 once the £2,350 of taxable staking income has used part of it) would apply.</p>
+<p>In this scenario the £3,000 AEA covers the gain entirely. But note: the base cost used for the disposed ETH already reflects the staking receipt values blended into the pool. The income tax on the staking receipts and the CGT on the disposal are independent calculations on different amounts. If Alice had made larger gains or more disposals, the AEA would not have stretched and CGT at 18% (within her remaining basic-rate band, £22,920 once the £2,350 of taxable staking income has used part of it) would apply.</p>
 
 <p>If you want to estimate your own staking income position, our <a href="/calculators/staking-mining-income-estimator">staking and mining income estimator</a> covers the income leg for a given set of receipts. It does not compute the later CGT leg (which depends on your full disposal history and pool), and it ends at a prompt to discuss your situation with us.</p>
 

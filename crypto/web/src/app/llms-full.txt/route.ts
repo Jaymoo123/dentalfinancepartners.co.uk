@@ -54,7 +54,7 @@ Coverage: UK-wide, online-first. All tax content is current to 2026/27 UK figure
 
 - Calculators index: https://${niche.domain}/calculators
 - Crypto CGT estimator: https://${niche.domain}/calculators/crypto-cgt-estimator (s104 pooling and the £3,000 AEA; does not model same-day or 30-day matching, a stated limitation)
-- Crypto disclosure and penalty estimator: https://${niche.domain}/calculators/crypto-disclosure-estimator (behaviour band and look-back window)
+- Crypto disclosure scope estimator: https://${niche.domain}/calculators/crypto-disclosure-estimator (assessable years by behaviour band, and the tax at stake)
 - Investor vs trader status checker: https://${niche.domain}/calculators/investor-vs-trader-checker (badges-of-trade analysis)
 - Staking and mining income estimator: https://${niche.domain}/calculators/staking-mining-income-estimator (income on receipt plus CGT base cost)
 

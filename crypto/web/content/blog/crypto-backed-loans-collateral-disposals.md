@@ -150,7 +150,7 @@ faqs:
     </tr>
     <tr>
       <td>Taxable gain (if AEA already used, basic-rate taxpayer with £10,000 remaining band)</td>
-      <td>£2,400 · £10,000 at 18% = £1,800 · £1,400 at 24% = £336 · total CGT = £2,136 approx.</td>
+      <td>£2,400 · the whole gain fits inside the £10,000 of remaining basic-rate band, so 18% × £2,400 = £432 CGT</td>
     </tr>
   </tbody>
 </table>

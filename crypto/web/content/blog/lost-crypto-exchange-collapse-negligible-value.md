@@ -18,7 +18,7 @@ faqs:
   - question: "Can I claim a tax loss if I lost my crypto private keys?"
     answer: "No. Losing private keys is not a disposal for Capital Gains Tax purposes. HMRC does not treat inaccessible crypto as a chargeable event. A capital loss cannot arise unless the asset itself has become worthless, which requires a negligible value claim, not a lost-access event. See HMRC's Cryptoassets Manual at CRYPTO22400."
   - question: "What is a negligible value claim for crypto?"
-    answer: "A negligible value claim is a formal election you make to HMRC that treats an asset you still hold as if it were disposed of and immediately reacquired at its current (negligible) value. This crystallises an allowable capital loss without an actual sale. It applies where the asset itself has become worthless, for example a rug-pulled token or a dead chain. The claim can be backdated to an earlier date if the asset was already worthless then. See HMRC CRYPTO22500."
+    answer: "A negligible value claim is a formal election you make to HMRC that treats an asset you still hold as if it were disposed of and immediately reacquired at its current (negligible) value. This crystallises an allowable capital loss without an actual sale. It applies where the asset itself has become worthless, for example a rug-pulled token or a dead chain. The claim can be backdated to an earlier date if the asset was already worthless then and you still owned it, but TCGA 1992 section 24(2) limits that earlier date to no more than two years before the start of the tax year in which the claim is made. See HMRC CRYPTO22500."
   - question: "Can I claim a loss on a rug pull?"
     answer: "Possibly. If the token itself has become genuinely worthless (the project has collapsed, the contract is abandoned, the token trades at a negligible fraction of its original value), a negligible value claim under HMRC CRYPTO22500 may be available. The token does not need to be sold. Professional advice is recommended to evidence the claim correctly."
   - question: "Can I claim a tax loss on FTX or a collapsed exchange?"
@@ -26,16 +26,16 @@ faqs:
   - question: "Is losing crypto a disposal for CGT?"
     answer: "No. Losing access to crypto, whether through a forgotten password, lost hardware wallet, or inaccessible seed phrase, is not a disposal. HMRC is explicit on this in CRYPTO22400. The asset remains in your s104 pool at its original cost. Only a sale, swap, gift, or a formal negligible value claim triggers a CGT event."
   - question: "How long do I have to claim a crypto loss?"
-    answer: "Capital losses must normally be claimed within four years of the end of the tax year in which they arose. For example, a loss that arose in the 2021/22 tax year (ending 5 April 2022) must normally be claimed by 5 April 2026. The deadline is not automatic; you must actively report the loss. Late claims may be refused."
+    answer: "Capital losses must normally be claimed within four years of the end of the tax year in which they arose. For example, a loss that arose in the 2022/23 tax year (ending 5 April 2023) must normally be claimed by 5 April 2027. The deadline is not automatic; you must actively report the loss. Late claims may be refused."
   - question: "Can I carry a crypto loss forward?"
     answer: "Yes. Once a capital loss is properly claimed, it can be carried forward indefinitely and offset against future capital gains. There is no time limit on using a loss once it has been validly reported. The key requirement is that the loss must first be claimed in the correct tax year's Self Assessment return."
 howToSteps:
   - name: "Step 1: Identify whether the asset itself is worthless or merely inaccessible"
     text: "Determine whether the token has become genuinely worthless (for example, a rug pull or dead chain) or whether you have simply lost access. Losing private keys does not create a tax loss under HMRC CRYPTO22400. Only a genuinely worthless asset can support a negligible value claim."
   - name: "Step 2: Establish and evidence the date the asset became worthless"
-    text: "Identify the date the token reached negligible value. Gather evidence: trading history, blockchain explorer data showing abandoned activity, and project communications. A negligible value claim can be backdated to an earlier date if the asset was already worthless then, within the four-year claim window."
+    text: "Identify the date the token reached negligible value. Gather evidence: trading history, blockchain explorer data showing abandoned activity, and project communications. A negligible value claim can be backdated to an earlier date if the asset was already worthless then and you still owned it, but under TCGA 1992 section 24(2) that earlier date cannot be more than two years before the start of the tax year in which you make the claim."
   - name: "Step 3: Make a formal negligible value claim in your Self Assessment return"
-    text: "Submit the negligible value claim in your Self Assessment return for the tax year in which the asset became worthless, or backdated within the four-year window. The claim treats the asset as if disposed of and immediately reacquired at negligible value, crystallising an allowable capital loss equal to your original acquisition cost. See HMRC CRYPTO22500."
+    text: "Submit the negligible value claim in your Self Assessment return for the tax year in which the asset became worthless, or backdated to an earlier date within the two-year limit in TCGA 1992 section 24(2). The claim treats the asset as if disposed of and immediately reacquired at negligible value, crystallising an allowable capital loss equal to your original acquisition cost. See HMRC CRYPTO22500."
   - name: "Step 4: Carry the loss forward and offset against future gains"
     text: "Once the loss is properly claimed and accepted, it carries forward indefinitely against future capital gains. Report the brought-forward loss in each subsequent Self Assessment return until it is fully offset. Same-year gains must be offset before carrying forward; this cannot be deferred."
 ---
@@ -102,7 +102,7 @@ howToSteps:
   <li>A token whose smart contract has been exploited and rendered permanently non-functional.</li>
 </ul>
 
-<p>The claim can be backdated to an earlier point in time, provided the asset was already at negligible value on that earlier date. This is practically important: if a rug pull happened in the 2022/23 tax year but you are only now getting your tax affairs in order, you may be able to backdate the claim to the date the token became worthless, provided you can evidence that date.</p>
+<p>The claim can be backdated to an earlier point in time, provided you owned the asset then and it was already at negligible value on that earlier date. The backdating is limited: under <a href="https://www.legislation.gov.uk/ukpga/1992/12/section/24">TCGA 1992 section 24(2)</a> the earlier date can be no more than two years before the start of the tax year in which the claim is made. So a claim made in 2026/27 can be backdated to 6 April 2024 at the earliest. That two-year backdating limit is a different rule from the four-year time limit for claiming a capital loss, and the two are regularly confused.</p>
 
 <p>What counts as "negligible"? HMRC does not fix a precise percentage, but in practice the asset needs to have become substantially worthless, not merely down 80% from its peak. Evidence matters: trading history, blockchain explorer data showing abandoned activity, and project communications are all relevant to supporting the claim.</p>
 
@@ -138,14 +138,14 @@ howToSteps:
 
 <p>Even where a capital loss is clearly available, it does not automatically reduce your tax. You must actively claim it in your Self Assessment return.</p>
 
-<p><a href="https://www.gov.uk/capital-gains-tax/losses">HMRC's guidance on capital losses</a> confirms that losses must normally be claimed within four years of the end of the tax year in which they arose. A negligible value claim must be made in the Self Assessment return for the year in which the asset became worthless (or backdated to that year, within the same four-year window).</p>
+<p><a href="https://www.gov.uk/capital-gains-tax/losses">HMRC's guidance on capital losses</a> confirms that losses must normally be claimed within four years of the end of the tax year in which they arose. A negligible value claim must be made in the Self Assessment return for the year in which the asset became worthless, or backdated to that year where TCGA 1992 section 24(2) allows, which is a separate two-year limit and not the four-year one.</p>
 
 <p>The four-year window is the normal rule. It is not absolute in every circumstance, but it is the deadline to plan around and the one HMRC will apply in the majority of cases.</p>
 
 <p>Practical examples of what this means:</p>
 
 <ul>
-  <li>A rug-pull loss that arose in the 2021/22 tax year (ending 5 April 2022) must normally be claimed by 5 April 2026.</li>
+  <li>A rug-pull loss that arose in the 2021/22 tax year (ending 5 April 2022) had to be claimed by 5 April 2026, so that window has already closed.</li>
   <li>An exchange collapse that happened in the 2022/23 tax year (ending 5 April 2023) must normally be claimed by 5 April 2027.</li>
   <li>If the tax year has already passed and you have not yet filed a return including the loss, you are using up your window now.</li>
 </ul>
@@ -156,7 +156,7 @@ howToSteps:
 
 <p>Once a capital loss is properly claimed, it can be carried forward indefinitely. There is no expiry date on a reported loss. It offsets future capital gains, including gains from the disposal of other cryptoassets, shares, or other chargeable assets.</p>
 
-<p>This makes unreported loss years significant. If you had a genuine negligible value claim in 2022/23 on a rug-pulled token and you did not file a return for that year, the loss is still potentially recoverable, but you need to file an amended or late return to claim it before the four-year window closes.</p>
+<p>This makes unreported loss years significant. If you had a genuine capital loss in 2022/23 and you did not file a return for that year, the loss is still potentially recoverable, but you need to file an amended or late return to claim it before the four-year window closes. Where the loss depends on a negligible value claim, check the separate two-year backdating limit first: a claim made now cannot be backdated as far as 2022/23.</p>
 
 <p>The practical value of a carried-forward loss depends on your future gains. For someone who is still actively holding crypto and expects to realise gains in future years, a loss from a collapsed token in 2022 could offset tax at 18% or 24% on future disposals. For a gain of £20,000, a carried-forward loss of £5,000 saves between £900 and £1,200 in tax, depending on your income tax position.</p>
 
