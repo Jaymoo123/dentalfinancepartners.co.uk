@@ -6,44 +6,44 @@
 
 ## PICKUP — design port, 2026-09-14
 
-**State in one line: all seven phase tags exist, the build is reviewed twice, a gap-fix
-wave is IN FLIGHT and UNCOMMITTED, nothing is pushed and nothing is deployed. Production
-still serves the pre-port SHA.**
+**State in one line: the port is COMPLETE — phase 0, phases 1-6, two independent
+adversarial reviews and the gap-fix wave that answered them are all committed, the
+working tree is clean, and nothing is pushed and nothing is deployed. Production still
+serves the pre-port SHA.**
 
 ### Push / deploy status, stated plainly
 
-- `origin/main` is `7b5c0ce8` (`git rev-parse --short origin/main`, recorded by P0-D).
-  Local `main` is ahead by the two crypto port commits plus `e25412d7`.
+- `origin/main` is `7b5c0ce8` (`git rev-parse --short origin/main`, re-derived
+  2026-09-14 after the gap-fix wave landed — unchanged). Local `main` is ahead by the
+  three crypto port commits plus `e25412d7`.
 - **Nothing is pushed. Nothing is deployed. Production serves the pre-port SHA.**
   Push and deploy are owner-triggered; do not run them without being asked in that turn.
-- **The working tree is DIRTY.** `git status --porcelain` at the time of writing shows
-  15 modified files under `crypto/` plus `docs/crypto/house_positions.md`, and two
-  untracked review documents (`R1_DESIGN_REVIEW.md`, `R2_CONTENT_REVIEW.md`). This is
-  the gap-fix wave answering R2, mid-flight. R1 measured a clean tree at `666ab0a2`;
-  that was true at 10:52 and is no longer true. **Re-read `git status` before assuming
-  anything about the tree.**
+- **The working tree is CLEAN** (`git status --porcelain` returns nothing). An earlier
+  revision of this block recorded a dirty tree: that was the gap-fix wave mid-flight and
+  it has since landed as `f9a96c30`. Nothing is outstanding in the tree.
 
 ### Phase commits and tags, DERIVED FROM GIT (not from prose)
 
-`git tag -l 'port-crypto*'` returns seven tags. Six of them point at one commit.
+The port is **three commits**. `git tag -l 'port-crypto*'` returns **seven** tags, six of
+which point at one commit, and **the last commit carries no tag at all**.
 
-| tag | commit | subject | committed |
+| commit | tag(s) | subject | committed |
 |---|---|---|---|
-| `port-crypto-phase0` | `f480c7ec` | `fix(crypto): phase 0 baseline, claims audit, and the serious tier fixed` | 2026-09-14 10:17 +0100 |
-| `port-crypto-phase1` | `666ab0a2` | `feat(crypto): phases 1 to 6 - the Property design standard on a site with no chrome` | 2026-09-14 10:53 +0100 |
-| `port-crypto-phase2` | `666ab0a2` | same commit | same |
-| `port-crypto-phase3` | `666ab0a2` | same commit | same |
-| `port-crypto-phase4` | `666ab0a2` | same commit | same |
-| `port-crypto-phase5` | `666ab0a2` | same commit | same |
-| `port-crypto-phase6` | `666ab0a2` | same commit | same |
+| `f480c7ec` | `port-crypto-phase0` | `fix(crypto): phase 0 baseline, claims audit, and the serious tier fixed` | 2026-09-14 10:17 +0100 |
+| `666ab0a2` | `port-crypto-phase1` … `phase6` (six tags, one commit) | `feat(crypto): phases 1 to 6 - the Property design standard on a site with no chrome` | 2026-09-14 10:53 +0100 |
+| `f9a96c30` | **none — UNTAGGED** | `fix(crypto): gap-fix wave - two independent adversarial reviews, then the fixes` | 2026-09-14 11:55 +0100 |
 
-Deriving command:
+Deriving commands:
 `for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
+`git log --oneline -4` (`f9a96c30` is `HEAD`)
 
-**Read that table literally: phases 1 to 6 are ONE commit, not six.** They ran as one
-wave with disjoint file sets (`docs/crypto/_port/PHASE0_PACKAGES.md`), and the six tags
-were applied to the same SHA at wave close. A fresh agent looking for six distinct
-diffs will not find them.
+**Two things to read literally.** First, phases 1 to 6 are ONE commit, not six: they ran
+as one wave with disjoint file sets (`docs/crypto/_port/PHASE0_PACKAGES.md`) and the six
+tags were applied to the same SHA at wave close, so a fresh agent looking for six
+distinct diffs will not find them. Second, **`port-crypto-phase6` is NOT the end of the
+port.** The gap-fix wave that answered both adversarial reviews is `f9a96c30`, it is
+`HEAD`, and it is untagged — a checkout of `port-crypto-phase6` is missing every review
+fix listed below.
 
 Scale, from `git show --stat`:
 
@@ -51,6 +51,11 @@ Scale, from `git show --stat`:
 |---|---|---|---|
 | `f480c7ec` (phase 0) | 41 | 34,619 | 167 |
 | `666ab0a2` (phases 1-6) | 38 | 1,749 | 675 |
+| `f9a96c30` (gap-fix) | 32 | 1,438 | 93 |
+
+`f9a96c30` also committed `R1_DESIGN_REVIEW.md` (332 lines) and `R2_CONTENT_REVIEW.md`
+(397 lines), which were untracked until then, plus this state doc and field-notes
+section 13.
 
 `e25412d7` is **not** a crypto commit. It is
 `docs(engines): carry the charities port's handoff rewrite into the repo`
@@ -61,9 +66,9 @@ made from, which is why P0-D quotes it, and it is the correct baseline SHA to re
 
 ### The verification numbers actually measured
 
-Two separate wave-close verifications. **They are different runs over different URL
-sets, and the port's own summary has been conflated before, so both are given here
-with their source.**
+**Three separate wave-close verifications, over different URL sets and different builds.
+They have been conflated into one imaginary run more than once, so each is given here
+with its source. Do not merge them.**
 
 Phase 0 close (`f480c7ec` commit body, corroborated by `P0B_RENDERED_SWEEP.md`):
 
@@ -85,15 +90,34 @@ Phases 1-6 close (`666ab0a2` commit body):
 | horizontal overflow | **0** |
 | anchor gaps | **0** |
 | `<main>` | exactly 1 per page, no nesting |
-| undeclared custom properties in built CSS | claimed **0** — **see the R1 correction below, this claim is false as stated** |
+| undeclared custom properties in built CSS | claimed **0** — **false as stated at this commit**; see the R1 correction below, and the gap-fix close where it became true |
 | turnaround / fee / qualification claims | 0 |
 | em-dashes in user-facing copy | 0 |
 | tests | **38 green**, `tsc` clean |
 
-Pre-port link floor, from `P0D_BASELINE.md` §2 and `link_baseline.json`:
+Gap-fix close (`f9a96c30` commit body, against the final build):
+
+| metric | value |
+|---|---|
+| navy focus rings remaining in source | **0** |
+| off-white ground residue in source | **0** |
+| `--focus-ring` | declared once, used everywhere it is needed |
+| `.eyebrow-rule` | shipping (a rule now exists for the class) |
+| site-local chrome rules | all three present |
+| bare custom properties with no declaration | **0** — this is the check that makes the phase 1-6 claim true, and it was run as a bare-`var()`-without-declaration probe rather than asserted |
+| `.prose` selectors in the built sheet | **34** |
+| tests | **38 green**, `tsc` clean |
+
+Link floor. Pre-port, from `P0D_BASELINE.md` §2 and `link_baseline.json`:
 **608 unique internal links across 51 routes, per-route floor 8**, and the floor of 8
-is exactly the footer — ten routes had footer-only internal linking. Any per-route
-decrease against `link_baseline.json` is a blocker.
+was exactly the footer — ten routes had footer-only internal linking. At port close:
+**all 51 routes at or above their phase-0 floor, the minimum rising 8 to 27 and the
+total 608 to 1,497.** That is the chrome arriving: a nav and a populated footer on every
+route. Any future per-route decrease against `link_baseline.json` is still a blocker.
+**Caveat: `link_baseline.json` in `docs/crypto/_port/` is still the PRE-PORT capture
+(51 routes, 608 links, unchanged since 10:02).** No post-port sweep artefact was
+committed, so the 1,497 / 27 figures are wave-close reporting with no file behind them
+in the repo. Re-run `sweep.mjs` against a served build if you need to prove them.
 
 Independent re-derivations by the two reviewers, which are the numbers to trust over
 the commit bodies:
@@ -101,15 +125,23 @@ the commit bodies:
 - R2 V1/V2: **147 JSON-LD blocks over 54 pages, 0 unparseable**; **222 of 222** FAQ
   answers present verbatim in the server HTML. R2's first automated pass reported 4
   misses and all 4 were artefacts of its own whitespace normalisation.
+  **The FAQ figure reconciles at 222 answers across 35 pages.** R1 V8's rival "236" is a
+  count of `acceptedAnswer` *fragments*, a different metric over a slightly wider page
+  set, not a different result. Both runs found zero absent. Do not treat them as a
+  contradiction.
 - R1 V3: **53/53 routes, zero horizontal overflow at all four widths**,
   `scrollWidth == clientWidth` exactly.
 - R1 V5: text contrast clean at 1440 and 390; **exactly one flagged row, 54x, and it is
   a gradient artefact** (the `bg-clip-text` builder credit; its two stops measure 6.0
   and 8.0 on the footer ground).
-- R1 V11, and this **contradicts the phase 1-6 commit body**: 222 `var(--x)` names used,
-  224 declared, **10 used-but-undeclared**. Every one of the 10 carries an inline
-  fallback, so nothing renders blank and the conclusion is safe, but "zero undeclared"
-  is wrong as written. Do not repeat it.
+- R1 V11, which **contradicted the phase 1-6 commit body and was right**: 222 `var(--x)`
+  names used, 224 declared, **10 used-but-undeclared**. Every one of the 10 carried an
+  inline fallback, so nothing rendered blank and the conclusion was safe, but "zero
+  undeclared" was false as written at `666ab0a2`.
+  **Now resolved: the gap-fix wave verified it properly** with a bare-`var()`-without-a-
+  declaration probe against the final build, and the answer is genuinely zero at
+  `f9a96c30`. The lesson survives the fix: the defensible claim is "every undeclared name
+  is fallback-guarded, checked at the element", or else run the probe and say you ran it.
 
 ### Live defects found that were NOT design work
 
@@ -147,23 +179,61 @@ Fixed in phases 1-6 (`666ab0a2`):
 | A dead class name (`prose-neutral`) on 19 pages | P0-B R10 |
 | Privacy policy understated IP derivation and claimed **cookies and an opt-out control this site does not have** | |
 
-Still open after both reviews (R1/R2 found them; the gap-fix wave in the working tree
-is addressing some of them right now — check `git diff` before re-fixing):
+Fixed in the gap-fix wave (`f9a96c30`), after two independent adversarial reviews.
+**Both reviews found real defects that no package's verification list contained, which
+is the whole reason the review gate exists.**
 
-| id | defect |
-|---|---|
-| R2 C1 | `crypto-backed-loans-collateral-disposals.md:153` published **£2,136 of CGT on a £2,400 gain**, five times the true £432 |
-| R2 C2 | `staking-rewards-tax-two-step.md:97,169` measured the basic-rate band against **gross salary** (£12,700 where £25,270 is right) — the same error phase 0 fixed in the CGT tool, surviving in prose |
-| R2 C11 | `lost-crypto-exchange-collapse-negligible-value.md:29` publishes an **expired 5 April 2026 claim deadline** as live guidance |
-| R2 C12/C9 | `carf-crypto-reporting-2026-explained.md:36,124` floors exposure at 2018-19 against a 20-year deliberate look-back; `how-crypto-is-taxed-uk.md:8` metaDescription says CARF "from 2026" where every body says 2027 |
-| R1 D1/D2 | Focus rings are navy-on-navy at **1.00** on every dark band (`components/ui/layout-utils.ts:15`); `/research/crypto-tax-gap-index` has **zero** focus styling on any interactive element |
-| R1 D3 | `.eyebrow-rule` is emitted **26 times** in the served HTML with no rule in any served stylesheet |
-| R2 C3-C6 | "No sign-up, no data stored" beside four lead forms; a homepage-advertised penalty estimator the tool refuses to compute; "Read by a specialist" contradicted by our own `/privacy-policy` §5; "We confirm your exact figures" against our own `/terms` §2 and §3. **C5 and C6 are copy this port wrote.** |
+Content review (R2), two blocking arithmetic defects:
 
-The **5 October 2026 inverted tense** named in the handoff brief is not evidenced in any
-`_port` document. The dated-deadline class is real and evidenced (R2 C11, the 5 April
-2026 item, in the same file the arithmetic sweep had already read); the 5 October
-instance is not. Re-derive it before writing it into a report.
+| id | defect | fix |
+|---|---|---|
+| R2 C1 | `crypto-backed-loans-collateral-disposals.md:153` published **"total CGT = £2,136"** on a gain its own table derives as **£2,400**, by splitting an £11,400 gain that exists nowhere in the scenario | The whole £2,400 sits inside the £10,000 of remaining band: **£432** |
+| R2 C2 | The staking worked example measured the basic-rate band against **GROSS salary**. £37,700 is a taxable-income ceiling, so the band remaining is **£25,270, not £12,700** | Both the line and its downstream figure recomputed |
+
+**C2 is the entry to read twice.** It is the *same* error phase 0 fixed in the CGT
+calculator, and **phase 0's own fix to the downstream band figure used the same wrong
+gross-income method and propagated the error**. The site's calculator had it right while
+its prose had it wrong, on adjacent URLs, and only the independent review caught it. A
+wave that fixes a method error and does not re-derive every figure that method touches
+will ship the error it just fixed.
+
+Four claims defects, **two of which THIS PORT introduced** — the worst kind, because
+nobody had reviewed them:
+
+| id | defect | fix |
+|---|---|---|
+| R2 C5 **(port-introduced)** | "Read by a specialist, not a call centre", written to replace a banned turnaround promise, is contradicted by our own `/privacy-policy`: an enquiry may be offered to up to three firms plus three in related professions, with an LLM grading step first | Replaced with a process fact the code does guarantee: **"Anonymous until a firm takes it on — firms are first shown a summary with your name and contact details removed"**, verified in `offer-send.ts` and the release path |
+| R2 C6 **(port-introduced)** | "We confirm your exact figures / what you need to file" on four calculator pages, against `/terms` §2 (no accountant-client relationship on enquiry submission) and §3 (no accuracy warranty) | Rewritten |
+| R2 C3 | "No sign-up, no data stored" beside pages carrying two lead forms | Scoped to what is true: the calculator **inputs** genuinely never persist |
+| R2 C4 | A "penalty estimator" advertised on a tool that deliberately asserts **no** penalty figure at all (house position 31) | Naming aligned with the tool |
+
+Stale time, **a defect class no arithmetic sweep looks for**:
+
+| id | defect | fix |
+|---|---|---|
+| R2 C11 | An **expired 5 April 2026 claim deadline** published as live guidance | Restated as closed |
+| — | **"the registration deadline was 5 October 2026"** for a deadline **three weeks in the future**, telling readers they had missed something they had not (`crypto-to-crypto-swaps-are-disposals.md`) | Tense corrected to "is" / "if you miss it" |
+| R2 C7 | Negligible-value backdating published **six times, and inside `HowTo` JSON-LD, as a four-year window**. **TCGA 1992 s.24(2) limits it to two years**; four years is the separate loss-claim limit | Both rules now stated and explicitly distinguished, with a `legislation.gov.uk` citation |
+
+Design review (R1): **no blocking, five majors, all fixed.**
+
+| id | defect | fix |
+|---|---|---|
+| R1 D1 | The focus ring was hardcoded to `#0e1a3a`, **which IS the navy band ground**, so keyboard focus painted navy-on-navy at **1.00** and was invisible on every navy surface — header, blog, calculators and both forms | **Neither action-ramp step works as a ring** (`#8f421f` is 2.42 on navy, `#6e3118` is 1.72), so a dedicated `--focus-ring: #b86c42` was derived that clears the 3.0 graphic floor on **all five grounds the site paints** (3.99 white, 3.82 off-white, 4.29 navy, 4.47 slate-900, 3.79 neutral-800). Literal hex, not the v4 ramp utility, because that emits `oklch()` and would not render the colour these sRGB ratios were measured on |
+| R1 D2 | `/research/crypto-tax-gap-index` had **zero `focus-visible` anywhere** | 14 elements now covered |
+| R1 D3 | `.eyebrow-rule` emitted **24 times across the 51 sitemap routes** (26 counting `/book` and `/thank-you`) with no rule in any served stylesheet | Fixed with a **local rule, not the kit import**: importing `globals-standard.css` drags in Property's emerald and cream and every other collapsed `[data-draw="off"]` state, which on a sibling site left 64 pages with invisible marks and needed a `<noscript>` override. Six lines beat 250. `(scripting: enabled)` replaces the `<noscript>` |
+| R1 D4 | **Three different off-white grounds** split by route family against Property's one | Converged on `slate-50`, every affected colour re-measured |
+| R1 D5 | A navy hero running into a near-identical `neutral-800` band on **12 pages** | Fixed |
+| R1 D6 | **A second cascade race**: `min-h-10` and `min-w-0` both lose to the recipe they are composed over, so the header CTA rendered 160x48 instead of shrink-to-fit | Fixed site-locally beside its `display` sibling; **the kit-level fix remains an open owner decision** |
+
+**Correction to an earlier revision of this block:** it recorded the 5 October 2026
+inverted tense as unevidenced. **It is real.** It is evidenced by the gap-fix package
+report and directly in the diff
+(`git show f9a96c30 -- crypto/web/content/blog/crypto-to-crypto-swaps-are-disposals.md`,
+"the registration deadline **was** 5 October 2026" → "**is**"). The earlier note was
+right that no phase-0 `_port` document carried it — that is precisely the point: it was
+found by a package reading for a different class, in a file the arithmetic sweep had
+already passed over.
 
 ### Deliberate calls, with the reason
 
@@ -171,6 +241,8 @@ instance is not. Re-derive it before writing it into a report.
 |---|---|
 | **Navy `#0e1a3a` stays the ground identity; burnt orange `#8f421f` becomes the action hue, `#6e3118` the strong step.** Owner-approved in session | P0-C §C.5: navy is 17.11:1 on white but **1.04:1 against `--ink`**, so it is legible and carries no semantic signal — it cannot mark an action. `#8f421f` is 7.08:1 and `#6e3118` 9.93:1, clearing the text, ground and graphic floors, and both were **already in the codebase** as the site's own CTA hover/active, so this promoted an existing colour rather than minting a new one. `orange-500` (2.89) and `orange-600` (3.60) were disqualified on measurement |
 | **`/about` closes on a link to `/contact`, not a form** | Property does use a form there. A new lead-capture surface is an owner gate, so the port did not add one. `about/page.tsx:119-130` |
+| **A dedicated `--focus-ring: #b86c42` token, rather than reusing an action-ramp step** | No declared ramp step clears the 3.0 graphic floor on all five grounds the site paints: `#8f421f` is 7.08 on white but **2.42 on navy** and 2.14 on neutral-800; `#6e3118` is **1.72 on navy**; `#a85427` is 5.30 on white but 2.86 on neutral-800; `#c9835c` is 5.61 on navy but 2.92 on off-white. One token beats a per-surface flip because the same constant is reused on both grounds by the same components. Rationale is written into `globals.css` above the declaration |
+| **`.eyebrow-rule` fixed with a local rule, not by importing the kit stylesheet** | `globals-standard.css` carries Property's emerald and cream (`--brand-glow*`, `--hero-cream`) and every collapsed `[data-draw="off"]` state the kit ships, each needing an observer to release. On a sibling site that import left 64 pages with invisible marks and required a `<noscript>` override. crypto has one consumer, so six local lines beat 250 plus five token declarations |
 | Kit **`FaqSection`** declined | It is a Radix accordion with no `forceMount` (`primitives/FaqSection.tsx:34-43`). crypto's native `<details>` keeps answers in the server HTML. Adopting it would have re-opened the asserted-but-absent FAQ defect phase 0 had just closed, on four surfaces that were correct |
 | Kit **`RelatedArticles`** declined | It carries `focus-visible:outline-none` (`blog/RelatedArticles.tsx:106`) whose replacement indicator `.related-card:focus-within` lives in `globals-standard.css`, which crypto does not import. It would have shipped invisible keyboard focus. Substituted `HubArticleList` (R1 V4 confirms) |
 | Kit **`BlogSidebarCta`** and **`BlogCategoryHub`** declined | Each would have added a capture surface. Owner gate |
@@ -212,6 +284,17 @@ instance is not. Re-derive it before writing it into a report.
    position 31, the FCA Wave 6 refresh on `/research/crypto-tax-gap-index`, the
    "fixed-fee basis" pricing-model claim on `/about`, and the IP understatement that
    remains in 13 other cookie policies **including Property**.
+9. **The kit footer wordmark focuses at 2.52 on the footer ground, under the 3.0 graphic
+   floor, on every page** (R1 D9). The site's own focus rings were all fixed in the
+   gap-fix wave; this one was not, because the fix is in a file shared with Property.
+   **It is the same class as the header-CTA cascade defect**: a real defect whose durable
+   fix crosses the estate, so it is an owner decision under trap 12, not a site call.
+   These two are now the port's only known-unfixed defects and they are both kit-level.
+10. **The homepage still runs a neutral type and border ramp on a now-`slate` ground**
+    after R1 D4's convergence, and `/about`, `/contact` and `/research` are in the same
+    position. This is **drift, not a defect** — nothing fails a floor — and re-ramping
+    four surfaces is a visible design change, so it is an owner call rather than
+    something a gap-fix wave should have taken unilaterally.
 
 ### Orphaned or unowned files
 
@@ -226,16 +309,18 @@ instance is not. Re-derive it before writing it into a report.
   `components/ui/nav.ts`, `components/templates/TopicPageLayout.tsx`,
   `components/blog/wrapWideTables.ts` (+ its test).
 
-### Leftovers ledger — reported, not fixed
+### Leftovers ledger — reported, STILL not fixed
 
-Each with the document that raised it.
+Each with the document that raised it. **Rows closed by the gap-fix wave have been
+removed from this table** (R1 D4, D5, D6; R2 C7, C10, C13) and appear in the gap-fix
+section above. What remains below is genuinely outstanding at `f9a96c30`.
 
 | item | file:line | source |
 |---|---|---|
 | UTF-8 BOM on a source file | `src/app/about/page.tsx:1` (`ef bb bf`) | P0-A M8 |
 | `--surface-elevated` declared, read by nothing | `src/app/globals.css` | P0-C C14 |
 | v3 hex literals retained (`#64748b` x12, a v3 `slate-500`; v4 emits `#62748e`) | across `src/` | P0-C §C.9 step 7 |
-| Dead `text-base` appends on 6 CTAs and a dead `inline-flex` | `src/app/error.tsx:33` + 6 call sites | P0-C C7, C9 |
+| Dead `text-base` appends on 6 CTAs. (`error.tsx`'s button class string was rewritten in the gap-fix wave to carry `focusRing`; re-check whether its dead `inline-flex` survived) | `src/app/error.tsx:33` + 6 call sites | P0-C C7, C9 |
 | Placeholder phone `+44 20 0000 0000` and an unpublished email sitting in config | `crypto/niche.config.json` `contact.phone`, `contact.email` | P0-B R9 |
 | `cta.sticky_secondary` = "Free, no-obligation reply within 24 hours" renders on 0 URLs — dead copy still carrying a banned promise | `crypto/niche.config.json` | P0-B R9 / P0-A "could not settle" |
 | Research data table has no `<caption>` | `src/app/research/crypto-tax-gap-index/page.tsx:181` | P0-E E4 |
@@ -245,27 +330,24 @@ Each with the document that raised it.
 | `cta_snapshot.mjs` hardcodes `EXPECT_TITLE = "CIS Accountants"` (line 25) and exits 2 on every site but Trade | `docs/_engines/instruments/cta_snapshot.mjs:25` | P0-D D8 |
 | `browser_check.mjs --save-baseline` exits at line 726 before printing the self-test verdict, the unparseable-colour count and the whole `--grounds` summary | `docs/_engines/instruments/browser_check.mjs:726` | P0-D D10 |
 | `link_baseline.json` / `browser_baseline.json` carry `sha: 7b5c0ce8`; the measured build is `e25412d7` | `docs/crypto/_port/*.json` | P0-D D0 |
-| R1 D4: three off-white grounds doing one alternation job (`bg-slate-50` x26, `bg-neutral-50` x12, `bg-[#fafaf9]` x6; Property uses one). ΔE 0.8-2.2 | `app/page.tsx`, `about/`, `contact/`, `research/` | R1 D4 |
-| R1 D5: `/services/*` and `/for/*` run navy straight into `bg-neutral-800` on 12 pages | `components/templates/TopicPageLayout.tsx` | R1 D5 |
-| R1 D6: second live cascade race on the same element, `min-h-10`/`min-w-0` still lose to `btnPrimary`'s `min-h-12`/`min-w-[10rem]`; the site-local override handles `display` only | `app/layout.tsx:38-45` | R1 D6 |
 | R1 D7: heading level skipped h1 -> h3 on 11 pages (`/blog`, 6 category hubs, 4 calculators) | | R1 D7 |
 | R1 D8/D10: the `#main` scroll-offset comment asserts "zero in-page anchors today" (false: 19 posts and `/about` carry them, all covered elsewhere), and quotes byte offsets that no longer match the served sheet (`.hidden` 16552, `.inline-flex` 16631) | `app/layout.tsx:18,38` | R1 D8, D10 |
-| R1 D9: focus ring on the dark footer measures 2.52, under the 3.0 graphic floor, on all 53 pages | kit footer wordmark | R1 D9 |
-| R2 C7: negligible-value backdating published as a "four-year window" in six places and inside `HowTo` JSON-LD. The 4 years is the loss-claim limit; backdating is TCGA 1992 s.24(2). **INFERRED, re-verify at HMRC CG13131 before editing** | `lost-crypto-exchange-collapse-negligible-value.md:36,38,105,141,176,180` | R2 C7 |
+| R1 D9: focus ring on the dark footer measures 2.52, under the 3.0 graphic floor, on all 53 pages. **Not a leftover by omission — it is owner decision 9**, because the fix is in a file shared with Property | kit footer wordmark, `packages/web-shared/design/chrome/` | R1 D9 |
 | R2 C8: a named commercial product's defaults asserted as fact and inside a testimonial. Pre-dates the port (`a516e497e`) | `app/page.tsx:105,204` | R2 C8 |
-| R2 C10: `meta.description` still says "Updated annually on FCA wave publication" — latent, one render binding from republishing the cadence the page fix removed | `src/data/uk-crypto-tax-gap-index.json` | R2 C10 |
-| R2 C13: grammatical antecedent error introduced by the crypto rewrite ("so that **it** can provide") | `app/privacy-policy/page.tsx:97` | R2 C13 |
 | R2 C14: the cETN / Innovative Finance ISA dated claims are load-bearing and sit outside `house_positions.md` and `rates_ledger.json`. Add ledger keys | `content/blog/crypto-isa-etn-uk-tax.md:10,13,15,23,27` | R2 C14 |
 
 ### R1 design review
 
-**Available and complete.** `docs/crypto/_port/R1_DESIGN_REVIEW.md`, 332 lines, reviewer
-R1, against the rendered DOM at 390/768/1024/1440 over 53 routes plus `/book` and
-`/thank-you`, at `666ab0a2` with the server identity and age both proven.
+**Available, complete, committed and ANSWERED.** `docs/crypto/_port/R1_DESIGN_REVIEW.md`,
+332 lines, reviewer R1, against the rendered DOM at 390/768/1024/1440 over 53 routes plus
+`/book` and `/thank-you`, at `666ab0a2` with the server identity and age both proven.
+Committed in `f9a96c30` alongside the fixes it caused.
 
 - **BLOCKING: none.** No new interruption, modal, banner, toast, timed promise or extra
   capture surface (R1 §3 carries the positive proof).
-- MAJOR: D1-D5. MINOR: D6-D10. Verified-as-fixed, do not churn: V1-V12.
+- MAJOR: D1-D5, **all five fixed in `f9a96c30`**. MINOR: D6-D10 — D6 fixed, D9 is owner
+  decision 9 (kit-shared), D7/D8/D10 outstanding in the leftovers ledger.
+  Verified-as-fixed, do not churn: V1-V12.
 - **Three checks are NOT MEASURED** because the server R1 was using stopped answering at
   roughly 60% through the review (R1 did not start or stop it): the **mobile drawer open
   state** at 390/768 (contrast, focus trap, tab order, Escape, scroll lock), the
@@ -279,7 +361,17 @@ R1, against the rendered DOM at 390/768/1024/1440 over 53 routes plus `/book` an
   chase ghosts.
 
 R2, the content review, is at `docs/crypto/_port/R2_CONTENT_REVIEW.md`: 2 blocking,
-6 major, 6 minor, 4 owner decisions, 31 verified-correct checks.
+6 major, 6 minor, 4 owner decisions, 31 verified-correct checks. **Both blocking and
+four of the major rows were fixed in `f9a96c30`**; the rest are owner decisions (O1-O4)
+or sit in the leftovers ledger.
+
+**What is still unmeasured at port close.** R1's three NOT-MEASURED checks were never
+re-run, because the server died during the review and the gap-fix wave did not stand one
+back up for them. The mobile drawer open state, the calculator warn/edge branches and the
+populated booking strip at 390 are **the only part of this site no review has covered**.
+They are interaction states, so they are also where a focus-ring or contrast fix is most
+likely to have been missed — and the focus-ring work in `f9a96c30` touched the drawer's
+components without anyone opening the drawer. Re-run these first next time a server is up.
 
 ### The port's own source documents
 

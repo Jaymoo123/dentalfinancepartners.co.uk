@@ -1577,3 +1577,53 @@ document before any number; do that. New this port: a naive `re.escape` selector
 against the built sheet reported **165 dead classes** where the real answer is **5**,
 because Tailwind CSS-escapes `sm\:py-4`, `mt-0\.5` and `bg-\[\#0e1a3a\]` - the probe must
 allow an optional backslash before every non-word character.
+
+### Added after the gap-fix wave landed (`f9a96c30`)
+
+**Disjoint file ownership stops agents colliding and strands defects at the seams, so
+budget the mop-up package from the START.** The wave model works: six packages, disjoint
+file sets, one build at close, no collisions. What it cannot do is reach a defect that
+sits between two packages or inside a file a package may read but not write. **Three
+separate packages this session measured a real defect they could not reach** and
+correctly reported it instead of fixing it out of scope. Those reports are the only
+reason the defects survived to the gap-fix wave rather than shipping. On this port the
+mop-up was *discovered* at the end, after two adversarial reviews, and it needed its own
+commit touching 32 files.
+RULE: the package table gets a final row from the start - a mop-up package that owns
+every cross-seam finding, and whose input is the "reported, could not reach" list every
+other package returns. Make "report what you cannot reach" an explicit deliverable of
+every package, not an act of initiative. A defect a package saw and could not touch is
+the cheapest defect in the port; one nobody wrote down is the most expensive.
+
+**`getComputedStyle` misreports outlines in this environment, so a focus audit built on
+computed `outlineColor` chases ghosts.** Under a real `:focus-visible`
+(`el.matches(':focus-visible') === true`) computed style reported
+`outline: rgb(255,255,255) solid 3px; outline-offset: 0px` for a ring that actually
+painted burnt-orange 2px at offset 2, under both `prefers-color-scheme` settings, with no
+3px or white outline rule anywhere in the served CSS. A reviewer nearly filed a false
+BLOCKING on it. The defect that WAS real - a navy ring on the navy band ground, measuring
+1.00 - was established from the emitted rule and a screenshot, not from computed style.
+RULE: for outlines specifically, reason from the emitted rule (which declaration sets
+`outline-color`, and what does the element's ground resolve to) and confirm by screenshot.
+Treat any focus-ring number that is neither rule-derived nor screenshot-backed as
+unmeasured, and say so in the report.
+
+**Use `grep -boF`, never a regex, for any selector containing a backslash, bracket or
+colon.** Tailwind escapes variant and arbitrary-value selectors, so the emitted text is
+`.lg\:inline-flex{`, `.mt-0\.5{`, `.bg-\[\#0e1a3a\]{`. A regex probe for `lg:inline-flex`
+matches nothing and **reads as "not emitted"**, which is the wrong conclusion with the
+right-looking evidence; the same mistake at scale produced a 165-item false-positive
+dead-class list where the true answer was 5. `-F` takes the pattern literally, `-b` gives
+the byte offset that settles cascade order, and the two together are the only reliable
+probe against a one-line built stylesheet.
+RULE: `grep -boF '.lg\:inline-flex{' app.css`. And remember what byte offsets can and
+cannot settle: they settle ORDER between two rules you have already proven exist; only
+the matched-rule list (CDP `CSS.getMatchedStylesForNode`) settles EXISTENCE.
+
+**Corollary on the port's own arithmetic, because it recurred at every scale.** Phase 0
+fixed a gross-vs-taxable band error in a calculator, then propagated the same error into
+its own prose fix. The independent review caught it by noticing the site's calculator and
+its article disagreed on identical inputs, on adjacent URLs.
+RULE: when a site ships both a tool and prose about the same calculation, run the tool's
+default render against the article's worked example. A disagreement is free evidence and
+neither artefact has to be trusted first.
