@@ -92,7 +92,7 @@ export default async function CryptoHubPage({ params }: { params: Promise<{ slug
     <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
         <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to a crypto tax specialist.</h2>
-        <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">Tell us about your {hub.title.toLowerCase()} situation and we will reply within 24 hours.</p>
+        <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">Tell us about your {hub.title.toLowerCase()} situation and we will explain what is involved.</p>
         <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
       </div>
     </section>

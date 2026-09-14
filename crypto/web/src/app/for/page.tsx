@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { cryptoHubs } from "@/data/crypto-hubs";
+import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Crypto Tax by Holder Type | Investors, Traders, DeFi, NFTs and More",
   description: "Specialist crypto tax advice by holder type: investors, day traders, DeFi and staking participants, NFT creators, miners and businesses.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 export default function ForIndexPage() {
   return (<>

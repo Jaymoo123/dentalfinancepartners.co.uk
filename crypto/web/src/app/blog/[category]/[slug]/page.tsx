@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl, buildHowToJsonLd } from "@/lib/schema";
+import { buildOgImageUrl, buildHowToJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -63,15 +63,7 @@ export default async function BlogPostPage({ params }: Props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
       )}
       {!post.schema && post.faqs && post.faqs.length > 0 && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: post.faqs.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: { "@type": "Answer", text: faq.answer.replace(/<[^>]+>/g, "") },
-          })),
-        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(post.faqs) }} />
       )}
       {post.howToSteps && post.howToSteps.length > 0 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildHowToJsonLd(post) }} />
@@ -105,10 +97,31 @@ export default async function BlogPostPage({ params }: Props) {
         className="prose prose-neutral mt-10 max-w-none"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
+      {post.faqs && post.faqs.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">Common questions</h2>
+          <div className="mt-6 space-y-3">
+            {post.faqs.map((faq) => (
+              <details key={faq.question} className="group border border-neutral-200 bg-white">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 font-semibold text-neutral-900 list-none">
+                  <span>{faq.question}</span>
+                  <span className="flex-shrink-0 text-neutral-900 transition-transform group-open:rotate-45" aria-hidden>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
+                  </span>
+                </summary>
+                <div
+                  className="border-t border-neutral-100 px-5 pb-5 pt-4 text-sm leading-relaxed text-neutral-600 [&_a]:underline"
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                />
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
       <div className="mt-12 rounded-md border border-neutral-200 p-6">
         <h2 className="text-lg font-semibold text-neutral-900">Need help with your crypto tax position?</h2>
         <p className="mt-2 text-sm text-neutral-600">
-          Tell us about your situation and we will come back within 24 hours.
+          Tell us about your situation and we will come back to you.
         </p>
         <Link href="/contact" className="mt-4 inline-block font-medium underline">
           Get in touch

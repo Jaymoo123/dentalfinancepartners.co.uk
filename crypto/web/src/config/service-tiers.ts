@@ -45,7 +45,6 @@ export const serviceTiers: ServiceTier[] = [
       "Prior-year amendment or disclosure (up to 20 years for deliberate errors)",
       "Penalty mitigation strategy and written disclosure report",
       "Business and corporate crypto: CT treatment, readily-convertible-asset payroll",
-      "Priority response commitment",
     ],
     cta: "Get in touch",
     ctaHref: "/contact",

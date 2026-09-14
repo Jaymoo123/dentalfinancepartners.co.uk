@@ -7,7 +7,7 @@ export const investorVsTraderChecker: GenericTool = {
   category: "Status and Classification",
   oneLiner: "See how HMRC badges of trade apply to your crypto activity. Almost all individuals are investors (CGT), not traders.",
   metaTitle: "Crypto Investor vs Trader Status Checker | Crypto Tax Partners",
-  metaDescription: "Check whether your UK crypto activity is likely investment (CGT at 18%/24%) or trading (income tax up to 45%). Badges-of-trade analysis. Trader status is rare and usually worse.",
+  metaDescription: "Check whether your UK crypto activity is likely investment (CGT at 18%/24%) or trading (income tax up to 45% plus Class 4 NIC). Badges-of-trade analysis. Trader status is rare and usually worse.",
   intro: "Answer three questions about your activity. The tool applies the HMRC badges of trade and shows whether your position looks like investment (CGT) or trading (income tax). Almost all individuals are investors.",
   embedHeight: 520,
   fields: [
@@ -42,7 +42,7 @@ export const investorVsTraderChecker: GenericTool = {
     return {
       headline: { label: "Likely status", value: "Uncertain", sub: "Multiple badges of trade: specialist review recommended", tone: "warn" },
       verdict: { text: "Uncertain: specialist review recommended", positive: false },
-      note: "Multiple badges of trade are present. HMRC could argue trading status, which would typically mean income tax rates up to 45% rather than CGT at 18%/24%. A specialist review is strongly advisable before filing.",
+      note: "Multiple badges of trade are present. HMRC could argue trading status, which would typically mean income tax rates up to 45% plus Class 4 National Insurance (6% on profits between £12,570 and £50,270, 2% above £50,270) rather than CGT at 18%/24%. A specialist review is strongly advisable before filing.",
     };
   },
   explainer: {
@@ -50,7 +50,7 @@ export const investorVsTraderChecker: GenericTool = {
     paragraphs: [
       "HMRC's Cryptoassets Manual states that it is unlikely that an individual buying and selling cryptoassets would be regarded as carrying on a trade. Trading status is reserved for exceptional cases where the activity amounts to a financial trade on the facts.",
       "The badges of trade (frequency, organisation, profit motive, method of financing) are used to determine status. High volume alone does not create a trade: many high-frequency investors are still CGT taxpayers.",
-      "Trader status is nearly always worse than investor status. Income tax rates run up to 45%, compared with CGT at 18%/24%. Losses would be income losses rather than capital losses, which has its own consequences.",
+      "Trader status is nearly always worse than investor status. Trading profits are charged to income tax at rates running up to 45%, and Class 4 National Insurance is charged on top at 6% on profits between £12,570 and £50,270 and 2% above £50,270, compared with CGT at 18%/24% and no NIC. Losses would be income losses rather than capital losses, which has its own consequences.",
     ],
   },
   faqs: [

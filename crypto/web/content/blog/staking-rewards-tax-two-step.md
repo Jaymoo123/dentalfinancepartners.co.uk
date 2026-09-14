@@ -127,7 +127,7 @@ faqs:
   </tbody>
 </table>
 
-<p>Alice's total income (£25,000 salary + £3,350 staking) is £28,350. The staking income is above the £1,000 allowance, so the full £3,350 is taxable at 20% (basic rate): an income tax charge of £670.</p>
+<p>Alice's total income (£25,000 salary + £3,350 staking) is £28,350. The £1,000 trading and miscellaneous income allowance is deducted from the staking receipts, not applied as an all-or-nothing threshold, so £2,350 (£3,350 minus £1,000) is taxable at 20% (basic rate): an income tax charge of £470.</p>
 
 <p>Her 0.8 ETH from staking enters her ETH section 104 pool at an average cost of £4,187.50 per ETH (total cost £3,350 / 0.8 ETH). Her total ETH pool at 5 March 2027 (before the disposal) comprises 2.8 ETH at an average pool cost of £3,900/ETH, blending earlier purchases with the staking receipts.</p>
 
@@ -166,7 +166,7 @@ faqs:
   </tbody>
 </table>
 
-<p>In this scenario the £3,000 AEA covers the gain entirely. But note: the base cost used for the disposed ETH already reflects the staking receipt values blended into the pool. The income tax on the staking receipts and the CGT on the disposal are independent calculations on different amounts. If Alice had made larger gains or more disposals, the AEA would not have stretched and CGT at 18% (within remaining basic-rate band of £12,700) would apply.</p>
+<p>In this scenario the £3,000 AEA covers the gain entirely. But note: the base cost used for the disposed ETH already reflects the staking receipt values blended into the pool. The income tax on the staking receipts and the CGT on the disposal are independent calculations on different amounts. If Alice had made larger gains or more disposals, the AEA would not have stretched and CGT at 18% (within her remaining basic-rate band, £10,350 once the £2,350 of taxable staking income has used part of it) would apply.</p>
 
 <p>If you want to estimate your own staking income position, our <a href="/calculators/staking-mining-income-estimator">staking and mining income estimator</a> covers the income leg for a given set of receipts. It does not compute the later CGT leg (which depends on your full disposal history and pool), and it ends at a prompt to discuss your situation with us.</p>
 

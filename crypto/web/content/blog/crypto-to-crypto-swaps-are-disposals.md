@@ -153,7 +153,7 @@ faqs:
   </tbody>
 </table>
 
-<p>By Swap 4, the AEA is exhausted. Swaps 4 and 5 produce &pound;1,400 of gains that are fully exposed to CGT. None of these disposals touched pounds. This is how an investor who believes they have &ldquo;not sold anything&rdquo; can accumulate a CGT liability across a year of token-to-token trading.</p>
+<p>The AEA runs out during Swap 4: only &pound;200 of it remains after Swap 3, so &pound;400 of Swap 4's &pound;600 gain and the whole of Swap 5's &pound;800 gain are exposed to CGT. That is &pound;1,200 of the year's &pound;4,200 of gains left chargeable after the &pound;3,000 AEA. None of these disposals touched pounds. This is how an investor who believes they have &ldquo;not sold anything&rdquo; can accumulate a CGT liability across a year of token-to-token trading.</p>
 
 <p>The picture becomes more complicated where some swaps produce losses. Capital losses can be set against gains in the same year, and any excess can, once claimed, be carried forward indefinitely (the claim must normally be made within four years of the end of the relevant tax year). Getting the full picture requires a complete swap-by-swap reconstruction, not a rough estimate.</p>
 

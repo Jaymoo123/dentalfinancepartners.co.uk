@@ -95,7 +95,7 @@ Sitemap: https://${niche.domain}/sitemap.xml
 
 ## Contact
 
-- Contact form: https://${niche.domain}/contact (free, no-obligation reply within 24 hours)
+- Contact form: https://${niche.domain}/contact (free, no obligation)
 
 Below is a flat, machine-readable dump of every published blog post.
 

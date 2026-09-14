@@ -7,7 +7,7 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { cryptoHubs } from "@/data/crypto-hubs";
-import { buildFaqJsonLd, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { ArrowRight, ShieldCheck, Quote } from "lucide-react";
 
@@ -263,10 +263,9 @@ const faqs: { question: string; answer: string }[] = [
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
-      />
+      {/* The root layout already emits the Organization node at this @id on every
+          page. A second node with the same @id is a machine-readable contradiction,
+          so the homepage emits only WebSite, which references it. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildWebsiteJsonLd() }}
@@ -729,7 +728,7 @@ export default function HomePage() {
               <div className="mt-8 space-y-4">
                 {[
                   { title: "Crypto tax only", sub: "We do not take general commercial or property clients" },
-                  { title: "24-hour response", sub: "Usually the same working day" },
+                  { title: "Read by a specialist", sub: "Your enquiry goes to someone who works on crypto tax, not a call centre" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's position with another" },
                   { title: "UK-wide (HMRC)", sub: "Scotland has devolved income tax bands; we flag where they change the outcome" },
                 ].map((item) => (

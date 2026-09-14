@@ -24,7 +24,7 @@ export default function CookiePolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
       <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Cookie policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 15 July 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 14 September 2026</p>
       <div className="mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy describes how {siteConfig.company.legalName} (trading as {siteConfig.name})
@@ -50,23 +50,12 @@ export default function CookiePolicyPage() {
           measuring and improving the Site.
         </p>
         <p>
-          This data is anonymous. We do not store your IP address (only a country derived from it),
-          we do not collect your name, email or phone number in these events, and we do not sell or
-          share this data.
-        </p>
-
-        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">First-party analytics</h3>
-        <p>
-          We run our own privacy-first analytics so we can understand how visitors use the Site and improve
-          it. To do this we store two random identifiers in your browser (a visitor identifier and a session
-          identifier) and record anonymous interaction events such as pages viewed, scrolling, clicks and
-          form steps. The lawful basis is our legitimate interest in measuring and improving the Site.
-        </p>
-        <p>
-          This data is anonymous. We do not store your IP address (only a country derived from it), we do
-          not collect your name, email or phone number in these events, and we do not sell or share this
+          We do not store your IP address. We do record the approximate location and timezone that
+          our hosting provider derives from it (country, region, city and timezone), we do not
+          collect your name, email or phone number in these events, and we do not sell or share this
           data.
         </p>
+
         <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Third-party analytics</h3>
         <p>
           This Site does not use Google Analytics or any other third-party analytics cookies. The only
@@ -138,18 +127,11 @@ export default function CookiePolicyPage() {
           </li>
         </ul>
 
-        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Google Analytics opt-out</h3>
+        <h3 className="mt-4 text-lg font-semibold text-[var(--ink)]">Clearing our analytics identifiers</h3>
         <p>
-          You can opt out of Google Analytics tracking by installing the{" "}
-          <a
-            href="https://tools.google.com/dlpage/gaoptout"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#0e1a3a] underline"
-          >
-            Google Analytics Opt-out Browser Add-on
-          </a>
-          .
+          Our first-party analytics identifiers are held in your browser&apos;s local and session
+          storage rather than in cookies. Clearing site data for this Site in your browser settings
+          removes them, and a new anonymous visitor identifier is created on your next visit.
         </p>
 
         <h2 className="text-xl font-bold text-[var(--ink)]">4. Changes to this policy</h2>

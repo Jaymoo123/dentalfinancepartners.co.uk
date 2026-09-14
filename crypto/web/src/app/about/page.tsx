@@ -22,7 +22,7 @@ export default function AboutPage() {
           <p>We are specialist tax accountants for UK cryptoasset holders: investors, day traders, DeFi and staking participants, NFT creators, miners, and businesses that hold or accept crypto.</p>
           <p>The CARF reporting framework means exchanges will report your data to HMRC for the first time between January and May 2027, covering activity from 1 January 2026. Holders who have not kept accurate records need to act before that data lands.</p>
           <p>We handle CGT s104 pool calculations, HMRC disclosure, Self Assessment including the SA108 cryptoasset pages, staking and mining income classification, and DeFi transaction review.</p>
-          <p>We work on a fixed-fee basis and reply within one working day.</p>
+          <p>Tell us about your position and we will explain what is involved.</p>
         </div>
         <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>

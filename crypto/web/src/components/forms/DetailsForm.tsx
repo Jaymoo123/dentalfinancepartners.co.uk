@@ -113,7 +113,7 @@ export default function DetailsForm({
       <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
         <p className="text-lg font-bold text-neutral-900">Thank you, that is everything we need</p>
         <p className="mt-2 text-base text-neutral-600">
-          A crypto tax specialist will be in touch shortly. If you would like to pick a time that suits
+          A crypto tax specialist will be in touch. If you would like to pick a time that suits
           you, you can book a callback below.
         </p>
         {bookingToken && (

@@ -7,7 +7,7 @@ import data from "@/data/uk-crypto-tax-gap-index.json";
 
 export const metadata: Metadata = {
   title: "UK Crypto Tax Compliance Index | Crypto Tax Partners",
-  description: "Verified data on UK cryptoasset ownership and the CARF reporting timeline. FCA-sourced ownership figures. HMRC CARF first-report deadline: 31 May 2027.",
+  description: "UK cryptoasset ownership from FCA Wave 5 (2024) and the CARF reporting timeline from HMRC guidance. HMRC CARF first-report deadline: 31 May 2027.",
   alternates: { canonical: `${siteConfig.url}/research/crypto-tax-gap-index` },
 };
 
@@ -35,7 +35,7 @@ function CarfCountdown() {
 
 const datasetJsonLd = buildDatasetJsonLd({
   name: "UK Crypto Tax Compliance Index",
-  description: "Verified figures on UK cryptoasset ownership rates, the CARF exchange-reporting timeline, and current CGT parameters for cryptoassets. Primary sources: FCA Cryptoassets Consumer Research and HMRC guidance.",
+  description: "UK cryptoasset ownership rates from FCA Cryptoassets Consumer Research 2024 (Wave 5), the CARF exchange-reporting timeline, and current CGT parameters for cryptoassets. Primary sources: FCA Cryptoassets Consumer Research and HMRC guidance.",
   url: `${siteConfig.url}/research/crypto-tax-gap-index`,
   dateModified: data.meta.lastUpdated,
   sourceOrganizations: [
@@ -63,7 +63,7 @@ export default function CryptoTaxComplianceIndexPage() {
             UK Crypto Tax Compliance Index.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            Verified figures on UK cryptoasset ownership, the CARF exchange-reporting timeline, and what the 31 May 2027 deadline means for holders with unreported gains. Updated annually on FCA wave publication.
+            UK cryptoasset ownership as measured by the FCA in its 2024 consumer research (Wave 5), the CARF exchange-reporting timeline, and what the 31 May 2027 deadline means for holders with unreported gains. Every figure is cited to its primary source. Last updated {data.meta.lastUpdated}.
           </p>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function CryptoTaxComplianceIndexPage() {
               <div className="text-4xl font-bold font-mono text-[#0e1a3a]">{data.ownership.awarenessLabel.split("%")[0]}%</div>
               <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">of UK adults have heard of crypto</div>
               <p className="mt-3 text-sm text-neutral-600">
-                Near-universal awareness, but only 12% have moved from awareness to ownership. The compliance challenge is concentrated in that 12% and grows each year as more people enter the market.
+                Near-universal awareness, but only 12% have moved from awareness to ownership. The compliance challenge is concentrated in that 12%.
               </p>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function CryptoTaxComplianceIndexPage() {
             <a href={data.ownership.sourceUrl} className="underline" target="_blank" rel="noopener noreferrer">
               FCA Cryptoassets Consumer Research 2024 (Wave 5)
             </a>
-            , published November 2024, corrected March 2025. The FCA runs this survey annually; this page is updated on each new wave.
+            , published November 2024, corrected March 2025. The FCA has since published a 2025 wave (Wave 6); the figures above are the Wave 5 figures and have not yet been restated to Wave 6. Check the FCA link for the latest published figure.
           </p>
           <p className="mt-2 text-xs text-neutral-400">
             Note: HMRC does not publish a crypto-specific tax gap figure. No modelled gap estimate is stated here.
@@ -228,7 +228,7 @@ export default function CryptoTaxComplianceIndexPage() {
         <div className={siteContainerLg}>
           <h2 className="text-lg font-bold text-neutral-900 mb-3">About this index</h2>
           <p className="text-sm text-neutral-600 max-w-2xl">
-            This index uses only primary sources: FCA consumer research for ownership levels, HMRC guidance for CARF dates, and gov.uk for CGT rates and disclosure windows. HMRC does not publish a crypto-specific tax gap, so no such estimate appears here. The ownership figure is updated annually when the FCA publishes its next consumer research wave (Wave 6 published 2025; see{" "}
+            This index uses only primary sources: FCA consumer research for ownership levels, HMRC guidance for CARF dates, and gov.uk for CGT rates and disclosure windows. HMRC does not publish a crypto-specific tax gap, so no such estimate appears here. The ownership figures here are FCA Wave 5 (2024). The FCA published a further wave in 2025 which is not yet reflected on this page, so treat the ownership figures as the 2024 position and see{" "}
             <a href={data.ownership.sourceUrl} className="text-[#0e1a3a] underline hover:opacity-75" target="_blank" rel="noopener noreferrer">
               FCA publications
             </a>{" "}

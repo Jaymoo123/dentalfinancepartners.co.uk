@@ -1,0 +1,493 @@
+! 200 mobile  /
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /services
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /for
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /calculators
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /research/crypto-tax-gap-index
+      [contrast] p "Source: FCA Cryptoassets Consumer Resear" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "FCA Cryptoassets Consumer Research 2024 " ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Note: HMRC does not publish a crypto-spe" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Sources: HMRC guidance: collecting crypt" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: collecting cryptoasset da" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: reporting cryptoasset dat" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+      [grounds]  dark band touches dark footer: last=rgb(23, 23, 23) footer=rgb(14, 26, 58)
+! 200 mobile  /about
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /contact
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /privacy-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /cookie-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /terms
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /services/hmrc-disclosure
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /services/crypto-self-assessment
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /services/koinly-recap-reconciliation
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /services/crypto-cgt-planning
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /services/investor-vs-trader-status
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /for/investors
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /for/day-traders
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /for/defi-and-staking
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /for/nft-creators-and-flippers
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /for/miners
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /for/businesses
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /calculators/crypto-cgt-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /calculators/crypto-disclosure-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /calculators/investor-vs-trader-checker
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /calculators/staking-mining-income-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/hmrc-disclosure-and-compliance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/defi-and-complex-transactions
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-for-business
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/staking-mining-and-airdrops
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/trader-status-and-day-trading
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/hmrc-disclosure-and-compliance/can-hmrc-track-crypto-wallets
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/defi-and-complex-transactions/crypto-backed-loans-collateral-disposals
+      [overflow] table. right=417
+      [overflow] thead. right=416
+      [overflow] tr. right=416
+      [overflow] th. right=416
+      [overflow] tbody. right=416
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/crypto-isa-etn-uk-tax
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/hmrc-disclosure-and-compliance/hmrc-crypto-crackdown-2026
+      [overflow] table. right=430
+      [overflow] thead. right=429
+      [overflow] tr. right=429
+      [overflow] th. right=429
+      [overflow] tbody. right=429
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/how-crypto-is-taxed-uk
+      [overflow] table. right=467
+      [overflow] thead. right=467
+      [overflow] tr. right=467
+      [overflow] th. right=467
+      [overflow] tbody. right=467
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/legitimate-ways-reduce-crypto-cgt-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/when-do-i-pay-tax-on-crypto-uk
+      [overflow] table. right=393
+      [overflow] thead. right=392
+      [overflow] tr. right=392
+      [overflow] th. right=392
+      [overflow] tbody. right=392
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/hmrc-disclosure-and-compliance/carf-crypto-reporting-2026-explained
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-for-business/company-crypto-treasury-accounting
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/staking-mining-and-airdrops/crypto-mining-tax-1000-allowance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/crypto-same-day-30-day-rules-worked-example
+      [overflow] table. right=451
+      [overflow] thead. right=451
+      [overflow] tr. right=451
+      [overflow] th. right=451
+      [overflow] tbody. right=451
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/crypto-to-crypto-swaps-are-disposals
+      [overflow] table. right=429
+      [overflow] thead. right=428
+      [overflow] tr. right=428
+      [overflow] th. right=428
+      [overflow] tbody. right=428
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/trader-status-and-day-trading/day-trader-forex-spread-betting-tax-uk
+      [overflow] table. right=604
+      [overflow] thead. right=603
+      [overflow] tr. right=603
+      [overflow] th. right=495
+      [overflow] th. right=603
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/defi-and-complex-transactions/defi-lending-liquidity-pool-disposals
+      [overflow] table. right=520
+      [overflow] thead. right=519
+      [overflow] tr. right=519
+      [overflow] th. right=405
+      [overflow] th. right=519
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/hmrc-disclosure-and-compliance/hmrc-crypto-nudge-letter-what-to-do
+      [overflow] table. right=403
+      [overflow] thead. right=403
+      [overflow] tr. right=403
+      [overflow] th. right=403
+      [overflow] tbody. right=403
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/lost-crypto-exchange-collapse-negligible-value
+      [overflow] table. right=503
+      [overflow] thead. right=502
+      [overflow] tr. right=502
+      [overflow] th. right=502
+      [overflow] tbody. right=502
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-cgt-and-disposals/nft-tax-income-vs-cgt
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/crypto-for-business/paying-staff-in-crypto-paye-nic
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 200 mobile  /blog/staking-mining-and-airdrops/staking-rewards-tax-two-step
+      [overflow] table. right=469
+      [overflow] thead. right=468
+      [overflow] tr. right=468
+      [overflow] th. right=468
+      [overflow] tbody. right=468
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /services
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /for
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /calculators
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /research/crypto-tax-gap-index
+      [contrast] p "Source: FCA Cryptoassets Consumer Resear" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "FCA Cryptoassets Consumer Research 2024 " ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Note: HMRC does not publish a crypto-spe" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Sources: HMRC guidance: collecting crypt" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: collecting cryptoasset da" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: reporting cryptoasset dat" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+      [grounds]  dark band touches dark footer: last=rgb(23, 23, 23) footer=rgb(14, 26, 58)
+! 304 tablet  /about
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /contact
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /privacy-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /cookie-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /terms
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /services/hmrc-disclosure
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /services/crypto-self-assessment
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /services/koinly-recap-reconciliation
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /services/crypto-cgt-planning
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /services/investor-vs-trader-status
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /for/investors
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /for/day-traders
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /for/defi-and-staking
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /for/nft-creators-and-flippers
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /for/miners
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /for/businesses
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /calculators/crypto-cgt-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /calculators/crypto-disclosure-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /calculators/investor-vs-trader-checker
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /calculators/staking-mining-income-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/hmrc-disclosure-and-compliance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/defi-and-complex-transactions
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-for-business
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/staking-mining-and-airdrops
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/trader-status-and-day-trading
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/hmrc-disclosure-and-compliance/can-hmrc-track-crypto-wallets
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/defi-and-complex-transactions/crypto-backed-loans-collateral-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/crypto-isa-etn-uk-tax
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/hmrc-disclosure-and-compliance/hmrc-crypto-crackdown-2026
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/how-crypto-is-taxed-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/legitimate-ways-reduce-crypto-cgt-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/when-do-i-pay-tax-on-crypto-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/hmrc-disclosure-and-compliance/carf-crypto-reporting-2026-explained
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-for-business/company-crypto-treasury-accounting
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/staking-mining-and-airdrops/crypto-mining-tax-1000-allowance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/crypto-same-day-30-day-rules-worked-example
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/crypto-to-crypto-swaps-are-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/trader-status-and-day-trading/day-trader-forex-spread-betting-tax-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/defi-and-complex-transactions/defi-lending-liquidity-pool-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/hmrc-disclosure-and-compliance/hmrc-crypto-nudge-letter-what-to-do
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/lost-crypto-exchange-collapse-negligible-value
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-cgt-and-disposals/nft-tax-income-vs-cgt
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/crypto-for-business/paying-staff-in-crypto-paye-nic
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 tablet  /blog/staking-mining-and-airdrops/staking-rewards-tax-two-step
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /services
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /for
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /calculators
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /research/crypto-tax-gap-index
+      [contrast] p "Source: FCA Cryptoassets Consumer Resear" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "FCA Cryptoassets Consumer Research 2024 " ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Note: HMRC does not publish a crypto-spe" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Sources: HMRC guidance: collecting crypt" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: collecting cryptoasset da" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: reporting cryptoasset dat" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+      [grounds]  dark band touches dark footer: last=rgb(23, 23, 23) footer=rgb(14, 26, 58)
+! 304 laptop  /about
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /contact
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /privacy-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /cookie-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /terms
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /services/hmrc-disclosure
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /services/crypto-self-assessment
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /services/koinly-recap-reconciliation
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /services/crypto-cgt-planning
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /services/investor-vs-trader-status
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /for/investors
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /for/day-traders
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /for/defi-and-staking
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /for/nft-creators-and-flippers
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /for/miners
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /for/businesses
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /calculators/crypto-cgt-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /calculators/crypto-disclosure-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /calculators/investor-vs-trader-checker
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /calculators/staking-mining-income-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/hmrc-disclosure-and-compliance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/defi-and-complex-transactions
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-for-business
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/staking-mining-and-airdrops
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/trader-status-and-day-trading
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/hmrc-disclosure-and-compliance/can-hmrc-track-crypto-wallets
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/defi-and-complex-transactions/crypto-backed-loans-collateral-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/crypto-isa-etn-uk-tax
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/hmrc-disclosure-and-compliance/hmrc-crypto-crackdown-2026
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/how-crypto-is-taxed-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/legitimate-ways-reduce-crypto-cgt-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/when-do-i-pay-tax-on-crypto-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/hmrc-disclosure-and-compliance/carf-crypto-reporting-2026-explained
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-for-business/company-crypto-treasury-accounting
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/staking-mining-and-airdrops/crypto-mining-tax-1000-allowance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/crypto-same-day-30-day-rules-worked-example
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/crypto-to-crypto-swaps-are-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/trader-status-and-day-trading/day-trader-forex-spread-betting-tax-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/defi-and-complex-transactions/defi-lending-liquidity-pool-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/hmrc-disclosure-and-compliance/hmrc-crypto-nudge-letter-what-to-do
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/lost-crypto-exchange-collapse-negligible-value
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-cgt-and-disposals/nft-tax-income-vs-cgt
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/crypto-for-business/paying-staff-in-crypto-paye-nic
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 laptop  /blog/staking-mining-and-airdrops/staking-rewards-tax-two-step
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /services
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /for
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /calculators
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /research/crypto-tax-gap-index
+      [contrast] p "Source: FCA Cryptoassets Consumer Resear" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "FCA Cryptoassets Consumer Research 2024 " ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Note: HMRC does not publish a crypto-spe" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Sources: HMRC guidance: collecting crypt" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: collecting cryptoasset da" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] a "HMRC guidance: reporting cryptoasset dat" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+      [grounds]  dark band touches dark footer: last=rgb(23, 23, 23) footer=rgb(14, 26, 58)
+! 304 desktop /about
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /contact
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /privacy-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /cookie-policy
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /terms
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /services/hmrc-disclosure
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /services/crypto-self-assessment
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /services/koinly-recap-reconciliation
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /services/crypto-cgt-planning
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /services/investor-vs-trader-status
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /for/investors
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /for/day-traders
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /for/defi-and-staking
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /for/nft-creators-and-flippers
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /for/miners
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /for/businesses
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /calculators/crypto-cgt-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /calculators/crypto-disclosure-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /calculators/investor-vs-trader-checker
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /calculators/staking-mining-income-estimator
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/hmrc-disclosure-and-compliance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/defi-and-complex-transactions
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-for-business
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/staking-mining-and-airdrops
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/trader-status-and-day-trading
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/hmrc-disclosure-and-compliance/can-hmrc-track-crypto-wallets
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/defi-and-complex-transactions/crypto-backed-loans-collateral-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/crypto-isa-etn-uk-tax
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/hmrc-disclosure-and-compliance/hmrc-crypto-crackdown-2026
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/how-crypto-is-taxed-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/legitimate-ways-reduce-crypto-cgt-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/when-do-i-pay-tax-on-crypto-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/hmrc-disclosure-and-compliance/carf-crypto-reporting-2026-explained
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-for-business/company-crypto-treasury-accounting
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/staking-mining-and-airdrops/crypto-mining-tax-1000-allowance
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/crypto-same-day-30-day-rules-worked-example
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/crypto-to-crypto-swaps-are-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/trader-status-and-day-trading/day-trader-forex-spread-betting-tax-uk
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/defi-and-complex-transactions/defi-lending-liquidity-pool-disposals
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/hmrc-disclosure-and-compliance/hmrc-crypto-nudge-letter-what-to-do
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/lost-crypto-exchange-collapse-negligible-value
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-cgt-and-disposals/nft-tax-income-vs-cgt
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/crypto-for-business/paying-staff-in-crypto-paye-nic
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+! 304 desktop /blog/staking-mining-and-airdrops/staking-rewards-tax-two-step
+      [contrast] p "Crypto Tax Partners is a trading name of" ratio=3.61 floor=4.5 size=12px color=oklch(0.556 0 0)
+
+baseline written: C:\Users\user\Documents\Accounting\docs\crypto\_port\browser_baseline.json

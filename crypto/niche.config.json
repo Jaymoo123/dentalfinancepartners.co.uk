@@ -93,12 +93,12 @@
   },
   "cta": {
     "sticky_primary": "Speak to a crypto tax specialist",
-    "sticky_secondary": "Free, no-obligation reply within 24 hours",
+    "sticky_secondary": "Free, no-obligation first conversation",
     "sticky_button": "Get in touch"
   },
   "blog": {
     "cta_heading": "Need help with your crypto tax position?",
-    "cta_body": "Tell us about your situation and we will come back within 24 hours.",
+    "cta_body": "Tell us about your situation and we will explain what is involved.",
     "cta_button": "Get in touch"
   },
   "shared_components_version": "1.0.0",

@@ -1,0 +1,279 @@
+{
+  "base": "http://localhost:3171",
+  "title": "Crypto Tax Partners | Specialist UK Crypto Tax Accountants",
+  "captured": "2026-09-14T08:39:08.592Z",
+  "routes": {
+    "/": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/services": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/for": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/calculators": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/research/crypto-tax-gap-index": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/about": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/contact": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/privacy-policy": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/cookie-policy": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/terms": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/services/hmrc-disclosure": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/services/crypto-self-assessment": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/services/koinly-recap-reconciliation": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/services/crypto-cgt-planning": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/services/investor-vs-trader-status": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/for/investors": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/for/day-traders": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/for/defi-and-staking": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/for/nft-creators-and-flippers": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/for/miners": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/for/businesses": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/calculators/crypto-cgt-estimator": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/calculators/crypto-disclosure-estimator": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/calculators/investor-vs-trader-checker": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/calculators/staking-mining-income-estimator": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/hmrc-disclosure-and-compliance": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/defi-and-complex-transactions": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-for-business": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/staking-mining-and-airdrops": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/trader-status-and-day-trading": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/hmrc-disclosure-and-compliance/can-hmrc-track-crypto-wallets": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/defi-and-complex-transactions/crypto-backed-loans-collateral-disposals": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/crypto-isa-etn-uk-tax": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/hmrc-disclosure-and-compliance/hmrc-crypto-crackdown-2026": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/how-crypto-is-taxed-uk": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/legitimate-ways-reduce-crypto-cgt-uk": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/when-do-i-pay-tax-on-crypto-uk": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/hmrc-disclosure-and-compliance/carf-crypto-reporting-2026-explained": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-for-business/company-crypto-treasury-accounting": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/staking-mining-and-airdrops/crypto-mining-tax-1000-allowance": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/crypto-same-day-30-day-rules-worked-example": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/crypto-to-crypto-swaps-are-disposals": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/trader-status-and-day-trading/day-trader-forex-spread-betting-tax-uk": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/defi-and-complex-transactions/defi-lending-liquidity-pool-disposals": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/hmrc-disclosure-and-compliance/hmrc-crypto-nudge-letter-what-to-do": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/lost-crypto-exchange-collapse-negligible-value": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-cgt-and-disposals/nft-tax-income-vs-cgt": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/crypto-for-business/paying-staff-in-crypto-paye-nic": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/blog/staking-mining-and-airdrops/staking-rewards-tax-two-step": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/book": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/complete": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    },
+    "/thank-you": {
+      "status": 200,
+      "ctas": [],
+      "dashes": 0
+    }
+  },
+  "non_interactive_ctas": [],
+  "dash_rendered": {}
+}

@@ -27,7 +27,6 @@ export function buildOrganizationJsonLd() {
       addressCountry: "GB",
     },
     areaServed: niche.seo.service_areas,
-    priceRange: "££",
     knowsAbout: [
       "Crypto Capital Gains Tax UK",
       "HMRC cryptoasset disclosure",
@@ -59,6 +58,14 @@ export function buildWebsiteJsonLd() {
   });
 }
 
+// FAQ answers are authored in this repo and may contain inline HTML (gov.uk
+// citations). Surfaces render that HTML, so JSON-LD asserts the plain-text
+// form: asserted text then equals the text a reader sees, character for
+// character. Answers carry no HTML entities, so a tag strip is exact.
+export function stripHtml(s: string) {
+  return s.replace(/<[^>]+>/g, "");
+}
+
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -66,7 +73,7 @@ export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      acceptedAnswer: { "@type": "Answer", text: stripHtml(faq.answer) },
     })),
   });
 }

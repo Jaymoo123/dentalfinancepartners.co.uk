@@ -5,8 +5,8 @@ import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/reac
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
 import { niche } from "@/config/niche-loader";
 import { SiteFooter } from "@/components/ui/SiteFooter";
+import { buildOrganizationJsonLd } from "@/lib/schema";
 const siteUrl = `https://${niche.domain}`;
-const organizationJsonLd = { "@context": "https://schema.org", "@type": ["ProfessionalService","AccountingService"], "@id": `${siteUrl}#organization`, name: niche.display_name, url: siteUrl, description: niche.description, logo: `${siteUrl}/api/og`, areaServed: "GB" };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: niche.seo.theme_color };
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-GB">
-      <head><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} /></head>
+      <head><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }} /></head>
       <body className="antialiased">
         <ConsentProvider>
           <AnalyticsProvider siteKey={niche.content_strategy.site_key} siteName={niche.display_name} storagePrefix="datp" posture="opt-out" noTrackPrefixes={["/admin"]}>
