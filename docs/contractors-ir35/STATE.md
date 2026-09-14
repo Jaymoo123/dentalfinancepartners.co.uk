@@ -20,8 +20,9 @@ git status --porcelain docs/contractors-ir35/
 python scripts/port_preflight.py
 ```
 
-Derived state at 2026-09-13: **PORT COMPLETE. Phases 0 to 6 built, independently reviewed,
-gap-fixed, gated and tagged.**
+Derived state at 2026-09-14: **PORT COMPLETE. Phases 0 to 6 built, independently reviewed,
+gap-fixed, gated and tagged. PLUS a design uplift on top (`569d3304`, UNTAGGED)** - see the
+uplift section below, which is the end of the work on this site.
 
 | Item | State |
 |---|---|
@@ -64,6 +65,72 @@ sweep 154/154 URLs clean with 0 dead links, 0 link-floor breaches, 0 data-cta re
 
 **Servers: none. All killed at close, verified with `netstat`.** Nine scratch `.mjs` files a
 stopped agent left in `contractors-ir35/web/` were deleted; the tree is clean.
+
+## 2026-09-14: DESIGN UPLIFT (`569d3304`), a distinct phase AFTER the port
+
+Third of four sites through the kit-adoption uplift the owner approved after seeing crypto.
+**Committed, UNTAGGED, not pushed, not deployed.** Every `port-contractors-ir35-phase*` tag
+predates this commit, so a checkout by tag is missing the whole uplift; the end of the work
+is `569d3304` (`git log --oneline -3 -- contractors-ir35/`).
+
+This site already had the webfont, so the gap was the primitives, the backdrop and the
+eyebrows.
+
+**What was done**
+
+- **The live defect, and it is structural to this brand.** The focus ring was the brand
+  cyan, which is ALSO the dark band ground, so it measured **~1.0 against itself** and
+  **2.59** on the `/locations/[slug]` hero gradient, which does host buttons. Replaced with
+  `#0891b2` from the site's own ramp, which clears the 3.0 graphic floor on every flat
+  ground and every gradient stop that hosts a control. **It was proved that no single
+  colour can clear 3.0 on both white and the cyan bands**, so the third colour is the only
+  correct answer rather than a preference. Do not "restore the brand colour" here.
+- **29 elements hand-rolled their own focus outline**, bypassing the module entirely: 11
+  hand-rolled buttons duplicating `btnPrimary`, 18 rings on live controls. All now route
+  through the recipe. The guard was rewritten to **walk every `.tsx` under `src/app` and
+  `src/components` programmatically, with a guards-the-guard assertion**
+  (`contractors-ir35/web/src/tests/focus-ring.test.ts`), because the old guard pinned the
+  shared recipes only and **passed the whole time those 29 bypasses existed**. That test is
+  now the shape §9.1 row 8 tells other sites to copy.
+- **A defect nobody was looking for, fixed by adopting the kit's on-dark button:** the
+  hand-rolled ghost button on the homepage hero used `border-white/30`, **2.47** at the copy
+  column's right edge, under the 3.0 floor for a button's only visible boundary. The kit's
+  `border-white/40` measures **3.20**.
+- A **status-fork backdrop**: a chain of engagements entering a determination node and
+  splitting into the two statuses, **both legs drawn identically on purpose**, because
+  weighting one would assert an answer the site's whole product says depends on the
+  contract. Mounted on 18 content heroes plus the homepage and the six kit `SlimHero`
+  pages. **Declined on `/locations/[slug]`**, where the gradient exposes the most
+  photograph exactly where the texture would sit.
+- **Eyebrows**: this site hand-rolled its own in two module-scope constants, which is why
+  the gate's grep saw zero of them. 17 call sites now use the kit component.
+- Also fixed: a genuine h1-to-h3 heading skip on `/blog`, the skip link's hand-rolled brand
+  colour, and 8 widget controls with no focus ring at all, one of which is the only
+  focusable element on the site sitting on a brand-cyan ground and needed an explicit white
+  ring (`components/support/SpecialistWidget.tsx:384`, the site's one remaining non-token
+  ring and it is deliberate).
+
+**The correction worth keeping: a comment is a claim, never evidence.** A package reported
+`.section-label` and `.eyebrow` as UNLAYERED rules that no utility could override, and the
+manager relayed it. **Both are, and always had been, inside `@layer components`.** What
+actually existed was **15 source comments asserting the false claim**. The comments were
+fixed; no CSS moved. Two of those comments still sit on
+`contractors-ir35/web/src/app/page.tsx:156,163`, correctly now, and they are why the raw
+§9.1 row 5 grep reports `section-label=2` on a homepage that has none.
+
+**Verification, against one build at the uplift close** (`569d3304` commit body): 24
+page-loads at four widths, **zero overflow, zero anchor gaps, zero ring bypasses in
+source**, backdrop rendering on homepage, about and research, `tsc` clean, **456 tests**.
+The four contrast rows the instrument flagged are **one element at four widths**, proven an
+artefact at the element: its scrim is a sibling absolute div rather than an ancestor, so
+background resolution falls back to white and reports 1.00 where the real composite is
+about 7.0 against the worst-case photograph.
+
+**Left open by this uplift.** No new OWNER decision came out of this site; the decisions
+open at port close (the shared header cascade defect and the rest, listed below) are
+unchanged. One documentation item: this site's kit declines say "NOT the kit FaqSection"
+without naming the kit file path, so §9.1 row 2a counts **0 declines** on a site that
+declined correctly. Naming the path makes the counter-rule auditable.
 
 ### Owner decisions open at close (bundle these, do not drip)
 1. The shared header fix. A cascade collision in `packages/web-shared` means the header CTA

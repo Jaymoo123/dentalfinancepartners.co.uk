@@ -1717,3 +1717,127 @@ grep -rhoE '(bg|text|border|ring|from|to|via|divide|outline|placeholder|fill|str
 ```
 The same trap applies to any ramp whose name is a substring of a utility: check before you
 report a ramp count.
+
+### Added after the four-site uplift programme (`ba7b184a`, `569d3304`, `48312e2c`)
+
+crypto's uplift (`7dfe04b3`) got "much better" from the owner, and he approved the same
+work on the three sites that measured flattest: charities, contractors-ir35 and
+construction-cis. All four are committed, none pushed, none deployed. What follows is only
+what generalises off three more runs of the same method.
+
+**Every site's real defect was invisible to every existing gate, and not one of them was
+design taste.** Four uplifts, four live defects, none found by contrast-at-four-widths,
+overflow, link floor, claims or the kit-adoption gate as first written:
+
+- **charities**: keyboard focus was invisible on four dark grounds. The ring was the brand
+  green `#1a5c4a`, 7.85 on white and **1.86 to 2.28** on the grounds the site actually
+  paints. Live since launch.
+- **contractors-ir35**: the same class, plus **29 elements hand-rolling their own ring**,
+  so the token fix could not reach them. Its guard test passed throughout, because it
+  pinned the five shared recipes and the 29 bypasses lived alongside it.
+- **construction-cis**: an **unlayered `.prose-blog p`** beat the in-article tool panels'
+  own classes, so their brand eyebrow and bold title rendered as plain grey body text on
+  every mapped-category article. Not a contrast failure, a fidelity failure, and nothing
+  in the battery measures fidelity.
+- **crypto** (found at its port review, not its uplift): calculator headline labels
+  rendered navy inside the navy result panel at **1.06**, on all four calculators and all
+  four embeds (`docs/crypto/STATE.md:264`).
+
+RULE: budget the uplift the way the playbook budgets a port. A third of it is live defects
+that are not design work, and the design work is what surfaces them.
+
+**A gradient ground has no single colour, so a ring measured against a declared flat colour
+is not measured.** charities' replacement ring `#3b8871` clears 3.0 on all **nine** flat
+grounds the site paints and measures **1.98** at the composited `via` stop of
+`from-primary-900 via-primary-600/90` (`charities/web/src/app/page.tsx:303`), which is
+exactly where both hero CTAs sit. contractors-ir35's measured **2.59** on the cyan
+`/locations/[slug]` hero gradient, which is laid over a photograph.
+RULE: composite **each stop** against what is behind it and take the worst. Where the
+ground is a photograph, state the assumption and bracket it, worst case and best case, and
+say which you are reporting. Enumerate the grounds from source before you measure:
+`grep -rlE 'bg-gradient-to|linear-gradient' <site>/web/src --include=*.tsx --include=*.css`.
+This is now row 7 of the playbook's §9.1 gate.
+
+**A brand colour that is also a band ground measures about 1.0 against itself.** On
+contractors-ir35 the focus ring was the brand cyan and the dark bands are the brand cyan:
+1.00 on `primary-600`, 1.70 on `primary-800`. It was **proved** that no single colour
+clears 3.0 on both white and the cyan bands, which makes a third colour (`#0891b2`, from
+the site's own ramp) the only correct answer rather than a preference.
+RULE: when a brand hue is both the action colour and a section ground, the ring is a
+**third** colour by necessity. Prove the impossibility before choosing it, because the
+proof is what stops the next agent "restoring the brand colour".
+
+**A comment is a claim, never evidence, and this time it cost a whole package.** A
+contractors-ir35 package reported `.section-label` and `.eyebrow` as unlayered rules that
+no utility could override, and the manager relayed it. Both are, and always had been,
+inside `@layer components`. What actually existed was **15 source comments asserting the
+false claim**. The comments were fixed; no CSS moved. The same shape appeared on
+construction-cis as **ten stylesheet hex comments publishing the Tailwind v3 ramp as fact
+while the site emits v4 oklch** (`primary-600` is `#f54900`, not `#ea580c`), plus two
+component files. Every verdict survived, but a v3 hex table sitting in a stylesheet is
+precisely how the next port inherits the error.
+RULE: the estate already had this rule for live surfaces, "a surface is live because
+something renders it". It applies to CSS layering and to colour tables identically. Settle
+layering with the matched-rule list, settle a colour with the value the build emits, and
+treat every hex written in a comment as unverified until you re-derive it.
+
+**The gate itself counted comments as code, in both directions, on three separate rows.**
+Row 2 grepped kit import paths anywhere in `src`, so a package that correctly DECLINED a
+component and wrote the reason at the call site scored as if it had adopted it:
+construction-cis reported **7 distinct / 20 call sites** where the honest figure is
+**2 / 14**, four of the seven matching only inside decline comments. Row 5 carried the same
+flaw inverted, reporting `section-label=2` on contractors-ir35's homepage where both hits
+are one comment explaining that neither class is reachable. The four-marker thermometer had
+it too: it reported crypto at `stats=2`, both hits being the `StatsCounter` decline comment.
+RULE: any gate that greps source counts **imports** for adoption and runs everything else
+over comment-stripped text (`perl -0pe 's{/\*.*?\*/}{}gs; s{//[^\n]*}{}g'`). The corrected
+commands are §9.1. The deeper rule: **a metric that rewards writing a decline gets gamed by
+an honest agent without either of you noticing**, because the honest behaviour and the
+gaming behaviour emit the same bytes.
+
+**A gate that fails a site for the correct outcome is worse than no gate.** Row 2b demanded
+at least one kit marketing component on the homepage. construction-cis correctly declined
+every one of them on measurement: `LeadCTAPanel` would have **deleted two instrumented
+`data-cta` ids and failed a live pinned test**, `StatsCounter` would have silently dropped
+four icons, `TestimonialsSection` hardcodes Property's landlord quotes with no `items`
+prop. It reported `0` and failed the gate for doing the right thing.
+RULE: express an adoption gate as **adopt OR record a measured decline**, and make the two
+mechanically distinguishable (an `import ... from` line adopts; any other reference to the
+kit path is a decline). Otherwise the cheapest way for the next agent to pass is to ship
+the defect. Corollary, and it is what makes the counter-rule auditable: **write the decline
+naming the kit FILE PATH**, not just the component name. construction-cis does
+(`construction-cis/web/src/components/marketing/LeadCTAPanel.tsx:20-31`); charities and
+contractors-ir35 do not, so their correct declines are invisible to the gate that exists to
+protect them.
+
+**The three uplifts each found the previous one's lesson already applied, or inverted.
+Derive, never inherit.**
+
+- The diagnosis implied charities was flat. It was **more kit-adopted than crypto ever
+  was**: 24 eyebrows against zero shouty label chips, and a complete kit page vocabulary
+  across eleven hub templates. The row it actually failed was the import bypass, and that
+  is the row that mattered.
+- crypto, charities and contractors-ir35 each needed a ring carve-out.
+  **construction-cis needed none**: its `primary-600` is byte-identical to the outline it
+  already painted and clears 3.0 on every ring ground, so it is the only one of the four
+  that adopts the kit ring unchanged. Copying the carve-out across would have been noise.
+- Adopting the kit's on-dark button on contractors-ir35 **fixed a defect nobody was looking
+  for**: the hand-rolled ghost button used `border-white/30`, 2.47 at the copy column's
+  right edge, under the 3.0 floor for a button's only visible boundary. The kit's
+  `border-white/40` measures 3.20.
+
+RULE: run the measurement on the site in front of you before applying the last site's fix.
+Three for three, the inherited conclusion was wrong in a different way each time.
+
+**Counting corrections the commits record.** construction-cis is not `0/0/0/0` on the
+four-marker row: it has a `TradeBackdrop` imported 4 times, so only charities and
+contractors-ir35 ever scored zero on all four. Five ported sites had a backdrop before this
+programme, not six, because the sixth is Property and Property is the source, not a port.
+Two agents measuring the same colours on charities disagreed, and it was settled by
+converting the `oklch()` Tailwind v4 actually emits and reproducing the estate's two
+calibration values exactly: the losing table had been measured against the **v3 hex
+constants**, which are different colours. The repo table was right. And on
+contractors-ir35, a reported set of `focus-visible` contrast rows was proven an artefact at
+the element, four rows being one element at four widths whose scrim is a sibling absolute
+div rather than an ancestor, so background resolution fell back to white and reported 1.00
+where the real composite is about 7.0.

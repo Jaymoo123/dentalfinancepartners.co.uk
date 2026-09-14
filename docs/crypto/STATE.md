@@ -11,11 +11,18 @@ phase 0, phases 1-6, two independent adversarial reviews, the gap-fix wave that 
 them, and the uplift (`7dfe04b3`) are all committed, and nothing is pushed and nothing is
 deployed. Production still serves the pre-port SHA.**
 
-**`7dfe04b3` is the current end of the work, not `port-crypto-complete`.** That tag points
-at `f9a96c30`, which is the gap-fix wave and is now two commits behind. A checkout of
-`port-crypto-complete` is missing the entire uplift. No tag was moved or created, because
-this pass had no git write permission. **Recommendation: retag, or add
-`port-crypto-uplift` on `7dfe04b3`, before anyone checks this site out by tag.**
+**CORRECTED 2026-09-14: the tags DID move, and this block said they had not.** Re-derived
+with `for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1
+--abbrev-commit $t)"; done`: **`port-crypto-complete` and `port-crypto-uplift` both point at
+`c3824681`**, the commit that recorded the uplift and wrote the §9.1 gate. An earlier
+edition of this block said the tag pointed at `f9a96c30`, a later line said `780ee0fe`, and
+both said no tag had been moved or created. **Check out `c3824681`. It is the end of
+crypto's work and it carries the uplift.**
+
+**crypto is no longer `HEAD`.** Three sibling uplifts landed on top of it the same day:
+charities `ba7b184a`, contractors-ir35 `569d3304`, construction-cis `48312e2c`. crypto's
+own source is unchanged by all three. Nothing is pushed and nothing is deployed; `main` is
+**131 commits** ahead of `origin/main` (`7b5c0ce8`), re-derived after `48312e2c`.
 
 ### Push / deploy status, stated plainly
 
@@ -34,11 +41,11 @@ this pass had no git write permission. **Recommendation: retag, or add
 
 ### Phase commits and tags, DERIVED FROM GIT (not from prose)
 
-The port is **six commits, plus the uplift on top of it, seven in all**.
-`git tag -l 'port-crypto*'` returns **eight** tags: six of the phase tags point at one
-commit, and `port-crypto-complete` points at `780ee0fe`. **It is no longer the one to check
-out.** A checkout of `port-crypto-phase6` is missing every review fix; a checkout of
-`port-crypto-complete` is missing the entire design uplift. **Check out `7dfe04b3`.**
+The port is **six commits, plus the uplift and its record on top, eight in all**.
+`git tag -l 'port-crypto*'` returns **nine** tags: six phase tags on one commit, plus
+`port-crypto-phase0`, and `port-crypto-complete` and `port-crypto-uplift` both on
+`c3824681`. A checkout of `port-crypto-phase6` is missing every review fix AND the uplift.
+**Check out `c3824681`.**
 
 | commit | tag(s) | subject | committed |
 |---|---|---|---|
@@ -47,23 +54,26 @@ out.** A checkout of `port-crypto-phase6` is missing every review fix; a checkou
 | `f9a96c30` | **none — UNTAGGED** | `fix(crypto): gap-fix wave - two independent adversarial reviews, then the fixes` | 2026-09-14 11:55 +0100 |
 | `cb87416b` | none | `docs(crypto): manager verification record and the post-port link artefact` | 2026-09-14 |
 | `6f48570a` | none | `docs(crypto,engines): state doc and field notes reconciled to the finished port` | 2026-09-14 |
-| `780ee0fe` | **`port-crypto-complete`** | `docs(engines,crypto): handoff rewritten for crypto, and two stale claims corrected` | 2026-09-14 |
-| `7dfe04b3` | **none — UNTAGGED, and this is HEAD** | `feat(crypto): design uplift - adopt the kit the port reimplemented by hand` | 2026-09-14 13:03 +0100 |
+| `780ee0fe` | none | `docs(engines,crypto): handoff rewritten for crypto, and two stale claims corrected` | 2026-09-14 |
+| `7dfe04b3` | none, UNTAGGED | `feat(crypto): design uplift - adopt the kit the port reimplemented by hand` | 2026-09-14 13:03 +0100 |
+| `c3824681` | **`port-crypto-complete`, `port-crypto-uplift`** | `docs(engines,crypto): the kit-adoption gate, and the uplift recorded` | 2026-09-14 |
 
-Re-derived 2026-09-14 after the uplift:
+Re-derived 2026-09-14 after the uplift was recorded:
 `for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
-returns `port-crypto-complete -> 780ee0fe` and the six phase tags on `666ab0a2`.
+returns `port-crypto-complete -> c3824681`, `port-crypto-uplift -> c3824681`, and the six
+phase tags on `666ab0a2`. An earlier edition of this line said `780ee0fe`.
 
 Deriving commands:
 `for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
-`git log --oneline -8` (`7dfe04b3` is `HEAD`)
+`git log --oneline -8` (`HEAD` is `48312e2c`, the construction-cis uplift; crypto's last
+commit is `c3824681`)
 
 **Two things to read literally.** First, phases 1 to 6 are ONE commit, not six: they ran
 as one wave with disjoint file sets (`docs/crypto/_port/PHASE0_PACKAGES.md`) and the six
 tags were applied to the same SHA at wave close, so a fresh agent looking for six
-distinct diffs will not find them. Second, **no tag points at the end of this work.**
-`port-crypto-phase6` is missing every review fix listed below; `port-crypto-complete`
-(`780ee0fe`) is missing the design uplift. **`HEAD` is `7dfe04b3` and it is untagged.**
+distinct diffs will not find them. Second, **`port-crypto-phase6` is missing every review
+fix listed below, and `7dfe04b3` (the uplift itself) is untagged.** The tag to check out is
+`port-crypto-complete` / `port-crypto-uplift`, both on `c3824681`.
 
 Scale, from `git show --stat`:
 

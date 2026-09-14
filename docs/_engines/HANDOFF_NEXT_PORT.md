@@ -13,20 +13,57 @@ FIRST, in this order, before anything else:
 3. Read the STOP block on screen one of `docs/_engines/DESIGN_PORT_PLAYBOOK.md`, then
    section 2.1, then section 8 item 11 (the SIX kit-chrome props), then section 13. Read
    `docs/_engines/PORT_FIELD_NOTES.md` sections 4, 5, 6, 10, 11, 12 and **13**. Section 13
-   is the newest (crypto) and is the one to read twice: it carries the no-chrome case, four
-   briefs that were themselves the defect, a fix that propagated its own error, and three
-   tooling traps that each return a clean-looking false answer.
-4. **The playbook's own STOP block is STALE at this writing.** It says six sites are ported
-   and charities is in progress. Eight are ported. Trust `git tag -l 'port-*'`, and fix the
-   STOP block before you plan.
+   is the newest and is the one to read twice: it carries the no-chrome case, four briefs
+   that were themselves the defect, a fix that propagated its own error, three tooling
+   traps that each return a clean-looking false answer, and - at its foot - the four-site
+   design uplift programme, whose lesson is that every site's real defect was invisible to
+   every gate that existed and none of them was design taste.
+4. The playbook's STOP block was stale and **has been corrected** (2026-09-14): it now says
+   eight ported, four uplifted, and points at the corrected §9.1. Trust
+   `git tag -l 'port-*'` over any prose, including this line.
 
-STATE OF PLAY. **Eight sites are ported: generalist, solicitors, dentists, medical,
-construction-cis, contractors-ir35, charities and crypto.** All phases built, independently
-reviewed, gap-fixed and tagged. Verify with `git tag -l 'port-*'`, which is the only
-authority; STATE.md files narrate, tags record. **NOTHING IS PUSHED AND NOTHING IS
-DEPLOYED. Production serves the pre-port SHA on every site, and 125 commits sit unpushed**
-(`git log --oneline origin/main..HEAD | wc -l`, re-derived 2026-09-14). Push and deploy are
-both owner-triggered, and the walk happens at the end once everything is done.
+STATE OF PLAY. **Eight sites are ported, and four of those eight have also had the design
+uplift.** Ported: generalist, solicitors, dentists, medical, construction-cis,
+contractors-ir35, charities and crypto. All phases built, independently reviewed, gap-fixed
+and tagged. Verify with `git tag -l 'port-*'`, which is the only authority; STATE.md files
+narrate, tags record. **NOTHING IS PUSHED AND NOTHING IS DEPLOYED. Production serves the
+pre-port SHA on every site, and 131 commits sit unpushed**
+(`git rev-list --count origin/main..HEAD`, re-derived 2026-09-14 after `48312e2c`;
+`origin/main` is `7b5c0ce8`).
+
+**UPLIFTED (four, all 2026-09-14, all untagged):** crypto `7dfe04b3`, charities `ba7b184a`,
+contractors-ir35 `569d3304`, construction-cis `48312e2c`. **NOT UPLIFTED, and they do not
+need one:** generalist, solicitors, dentists, medical. Those four pass §9.1 without any
+uplift work, re-derived 2026-09-14 by running the gate on all eight:
+
+| site | layout-utils | kit adopted (distinct / call sites) | homepage marketing | webfont | backdrop | Eyebrow / section-label |
+|---|---|---|---|---|---|---|
+| generalist | 1 | 16 / 142 | 5 adopted | Geist | 1 | 3 / 0 |
+| solicitors | 1 | 8 / 37 | 2 adopted | `next/font/google` | 1 | 9 / 0 |
+| dentists | 2 | 4 / 7 | 2 adopted | `next/font/google` | 1 | 12 / 0 |
+| medical | 1 | 13 / 68 | 5 adopted | `next/font/google` | 1 | 11 / 0 |
+| crypto | 2 | 6 / 18 | 1 adopted | Geist | 1 | 10 / 0 |
+| charities | 2 | 6 / 25 | 2 adopted | Geist | 1 | 9 / 0 |
+| contractors-ir35 | 2 | 5 / 44 | 1 adopted | Geist | 1 | 6 / 0 |
+| construction-cis | 1 | 2 / 14 | 0 adopted, **1 declined and measured** | Geist | 1 | 9 / 0 |
+
+**Do not re-derive this table with the pre-correction commands.** They counted decline
+comments as adoptions and would report construction-cis at 7 / 20 and contractors-ir35 at
+`section-label=2`. Use the block in §9.1, which is the corrected one.
+
+**One thing the gate's new rows do flag on a site nobody uplifted:** generalist carries four
+coloured focus outlines that are not the token
+(`components/forms/BookingPicker.tsx:22`, `components/newsletter/SignupForm.tsx:152`,
+`components/ui/accordion.tsx:31`, `components/ui/StickyCTA.tsx:182`), and **only
+contractors-ir35 and construction-cis carry the guards-the-guard assertion** that stops a
+repo walk passing vacuously (`grep -rl 'guards the guard' <site>/web/src/tests` returns
+nothing on the other six, and crypto and charities have no repo-walking focus guard at
+all). That is a measurement gap, not a verdict: none of generalist's four rings has been
+measured on its ground. Measure before reporting either way. Property itself reports **10**
+non-token rings, so this is not a port defect class.
+
+Next action is the owner walk. Push and deploy are both owner-triggered, and the walk
+happens at the end once everything is done.
 
 ## READ THIS BEFORE YOU CHECK ANYTHING OUT: THE TAGGING TRAP
 
@@ -39,14 +76,27 @@ both owner-triggered, and the walk happens at the end once everything is done.
 | `port-crypto-phase1` … `phase6` (six tags, ONE commit) | `666ab0a2` | phases 1 to 6, one wave |
 | *(untagged)* | `f9a96c30` | **the gap-fix wave: every review fix lives here** |
 | *(untagged)* | `cb87416b` | manager verification record, post-port link artefact |
-| `port-crypto-complete` | `6f48570a` | state doc and field notes reconciled |
+| *(untagged)* | `6f48570a` | state doc and field notes reconciled |
+| *(untagged)* | `7dfe04b3` | **the design uplift** |
+| `port-crypto-complete`, `port-crypto-uplift` | `c3824681` | the uplift recorded, and §9.1 written |
 
-Deriving command:
+Deriving command, re-run 2026-09-14:
 `for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
+
+**Both crypto tags moved on 2026-09-14 and two docs still named the old targets.** An
+earlier edition of this table put `port-crypto-complete` on `6f48570a`, and
+`docs/crypto/STATE.md` put it on `780ee0fe` and said no tag had been moved or created.
+Neither is true: it is `c3824681`, and `port-crypto-uplift` now exists on the same commit.
+Derive, never read.
 
 **A checkout of `port-crypto-phase6` is missing every review fix**: the two blocking
 arithmetic defects, the invisible focus ring, the eyebrow rule, the ground convergence.
 Check out `port-crypto-complete`, never a phase tag.
+
+**The other three uplifts are UNTAGGED.** `git tag -l 'port-*'` shows no tag on `ba7b184a`,
+`569d3304` or `48312e2c`, so on charities, contractors-ir35 and construction-cis the last
+commit touching `<site>/` is the end of the work and **every phase tag on those three
+predates the uplift entirely**. Tagging them is a git write and was not taken.
 
 RULE: **tag the FINAL commit of the port, not just the phases.** `port-<site>-complete` is
 now the contract. The seven other ported sites have phase tags only, so for those the last
@@ -132,7 +182,7 @@ ports in the estate. The four remaining family-D sites are the cheapest.
 the owner ruled. He has now ruled. The answer is below; the history is kept under it
 because the reasoning is what stops it recurring.**
 
-The answer, in three lines:
+The answer, in four lines:
 
 1. **The gap was kit ADOPTION, not art direction and not content.** The owner named
    generalist - also a ported site - as one that looks good. Two sites through the same
@@ -148,30 +198,47 @@ The answer, in three lines:
    kit, or reimplement it - and it comes with a counter-rule, because six kit components
    were correctly DECLINED on crypto and a gate that forced blind adoption would have
    shipped all six as defects. Read §9.1 whole, not just the command.
+4. **The consequence for the sites already built is CLOSED.** The owner approved the same
+   uplift on charities, contractors-ir35 and construction-cis after seeing crypto, and all
+   three shipped on 2026-09-14 (`ba7b184a`, `569d3304`, `48312e2c`). **All four flat sites
+   are done. The other four ported sites - generalist, solicitors, dentists, medical - pass
+   §9.1 without an uplift**, re-derived by running the corrected gate on all eight; the
+   table is in STATE OF PLAY at the top of this file. **There is no outstanding uplift
+   work, and nothing from this programme is pushed or deployed.**
 
-**The consequence for the sites already built, and it is the reason this is the first
-thing in the handoff:**
+The earlier edition of this section said charities and contractors-ir35 were `0/0/0/0`,
+construction-cis `0/0/4/0`, charities had no webfont and no backdrop, and construction-cis
+re-exported nothing from the kit. **All of that was true when written and all of it is now
+false.** Post-uplift, comment-stripped: crypto `0/0/3/1`, charities `0/0/2/0`,
+contractors-ir35 `0/0/2/0`, construction-cis `0/0/4/0`; all four load Geist, all four have a
+backdrop, all four re-export the kit's `layout-utils`.
 
-```
-DIR=<site>; P=$DIR/web/src/app/page.tsx
-echo "ping=$(grep -c 'animate-ping' $P) stats=$(grep -c 'StatsCounter' $P) backdrop=$(grep -c 'Backdrop' $P) rounded-full=$(grep -o 'rounded-full' $P|wc -l)"
-```
-
-Property **1/2/3/4** ("wow"), generalist **1/2/3/4** ("looks good"), crypto pre-uplift
-**0/0/0/0** ("not there"). **charities and contractors-ir35 are both 0/0/0/0 today, and
-construction-cis is 0/0/4/0** - it has a `TradeBackdrop`, so it is one marker up on the
-other two and still nowhere near the bar. On the §9.1 gate proper they are worse:
-construction-cis re-exports nothing from the kit (**0 distinct kit components, 0 call
-sites**) and ships **10 `section-label` against 0 `<Eyebrow>`** on its homepage; charities
-loads **no webfont at all** and has **no backdrop**. **All three will read exactly the way
-crypto did when the owner looks at them.**
-
-**Whether to uplift those three is an OWNER DECISION. It has been put to him and he has
-not answered. Do not start one, and do not record it as approved.** What you may do
-without asking is run §9.1 on any site you are about to port and report the table.
+**The gate itself had to be fixed, and that is the part to read before the next port.**
+§9.1 as first written counted comments as code on three rows, so it rewarded writing a
+decline (construction-cis reported 7 distinct / 20 call sites where the honest figure is
+2 / 14) and it would have **blocked construction-cis for declining every kit marketing
+component correctly**, including one whose adoption would have deleted two instrumented CTA
+ids. Both flaws are fixed, and three rows were added off real defects the three uplifts
+found: a site's own focus ring measured on **every** ground it paints including gradient
+stops, every non-token ring listed for a written reason, and a guard that walks the repo
+with a guards-the-guard assertion. Run the corrected block, not a remembered one.
 
 The rule that replaces "do not port anything until the owner rules": **no port closes
 without §9.1 passing.** Fix the gate before the next port, not after.
+
+### Open OWNER items the uplift programme produced. Record, bundle, do not act
+
+None of these is a defect the programme introduced, and none is blocking. Each is a brand,
+content or estate-wide call the uplift surfaced and deliberately did not take. Full
+reasoning is in each site's STATE.md.
+
+| # | site | item |
+|---|---|---|
+| 1 | crypto | The key-figures strip stays static. `StatsCounter` was declined because it takes one number and renders no links, so adopting it would mangle "18% / 24%" and "1 Jan 2027", strip the separator from "£3,000" and **delete four gov.uk source links** (`crypto/web/src/app/page.tsx:23-43`). The owner may want the motion; the cost is those links or new single-number copy. |
+| 2 | crypto + Property | The form input border is `border-slate-300`, **1.49 on white**, under the 3.0 graphic floor, on every capture surface. Property fails the same floor with the same colour and only draws it at `border-2`, which is a thicker failure. Estate-wide floor question, not a crypto regression. |
+| 3 | construction-cis | `--accent: #f97316` is a **Tailwind v3 literal that no longer matches the site's own ramp** (v4 emits `#f54900` for `primary-600`). It renders a tick glyph at **2.80** against the 3.0 floor, which is the whole of the site's 96 remaining contrast rows. Changing it is a brand-palette call. |
+| 4 | construction-cis | `StickyCTA` (`components/layout/PageShell.tsx:44`) and `ReturningBar` (`app/layout.tsx:101`) are **live interruptions that predate the estate's own rule**, which would not allow either to be added today. They were restyled, never re-approved. Keep or retire is his call. |
+| 5 | generalist | The homepage appends competing size utilities over the recipe (`generalist/web/src/app/page.tsx:284`: `${btnPrimary} px-6 py-3 text-base sm:px-10 sm:py-4 sm:text-lg`). **This is the same cascade race the programme hit three times**, where a composed override ties on specificity and loses on source order. Not yet measured on generalist; measure before deciding. |
 
 ---
 

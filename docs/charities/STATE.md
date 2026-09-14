@@ -7,9 +7,9 @@ brand_locked: true
 
 ## PICKUP: where the design port actually is
 
-**Phases 0 to 6 complete and tagged. Nothing pushed, nothing deployed.** That is exactly
-what the tags say, and this block exists to agree with them rather than to narrate ahead
-of them.
+**Phases 0 to 6 complete and tagged, PLUS a design uplift on top (`ba7b184a`, UNTAGGED).
+Nothing pushed, nothing deployed.** The tags cover the port only; the uplift is the section
+immediately below this block.
 
 | Fact | Value |
 |---|---|
@@ -22,6 +22,72 @@ of them.
 
 Next action is the owner walk, then the nine open decisions below, then deploy. Deploy is
 user-triggered, always.
+
+## 2026-09-14: DESIGN UPLIFT (`ba7b184a`), a distinct phase AFTER the port
+
+Second of four sites through the kit-adoption uplift the owner approved after seeing
+crypto. **Committed, UNTAGGED, not pushed, not deployed.** Every `port-charities-phase*`
+tag predates this commit, so a checkout by tag is missing the whole uplift; the end of the
+work is `ba7b184a` (`git log --oneline -3 -- charities/`).
+
+**The diagnosis was wrong about this site, and measuring it first is what saved the work.**
+charities was already far more kit-adopted than crypto ever was: 24 eyebrows against zero
+of the shouty label chips, and a complete kit page vocabulary across its eleven hub
+templates. The §9.1 row it actually failed was the import bypass, and that was the row that
+mattered.
+
+**What was done**
+
+- **The live defect, which predates the port.** The focus ring was the brand green
+  `#1a5c4a`: 7.85 on white, **1.86 to 2.28 on the four dark grounds the site paints**, so
+  keyboard focus was invisible on the hero and in the footer. Replaced with `#3b8871`, a
+  step from the site's own ramp, which clears the 3.0 graphic floor on all **nine** flat
+  grounds.
+- **19 files imported the button recipes and `focusRing` straight from the kit**, bypassing
+  the site's own module, so the token change could not reach them. All 19 now route through
+  one door, a guard test pins it, and the failing utility is gone from the built CSS.
+- **The gradient carve-out.** The homepage hero is
+  `from-primary-900 via-primary-600/90` (`charities/web/src/app/page.tsx:303`) and the new
+  ring measures **1.98 at the composited via stop**, still a fail. The two CTAs that sit
+  there ship an explicit white ring instead (**8.42** at the worst stop). An audit of every
+  other ground found no second gradient on the site.
+- A **fund-ledger backdrop** (restricted and unrestricted columns under SORP), mounted once
+  in the shared hero so it covers eleven pages plus the homepage.
+- A dark CTA band that ran straight into the dark footer on two routes, which none of the
+  four build packages caught and the mop-up did.
+
+**What was declined, each on measurement, each recorded at the call site**
+
+| declined | why |
+|---|---|
+| `StatsCounter` | takes one number and renders no links; would drop thousands separators from published research figures |
+| `FaqSection` | Radix without `forceMount` strips closed answers from the server HTML while the JSON-LD keeps asserting them, and this site has 43 FAQ answers under an open owner item |
+| `CoverageCards`, `CardStack` | render authored bodies as text children, which would print escaped markup and **kill 16 gov.uk citations** |
+| `ProcessTimeline` | needs content the site does not publish |
+| `StickyCTA` | an interruption, and those are banned |
+| `NumberedReasons` | emits `story-numeral`, which has no rule anywhere in the kit; the only rules in the estate are Property's |
+
+**Verification, against one build at the uplift close** (`ba7b184a` commit body): 24
+page-loads at 390/768/1024/1440, **zero contrast findings, zero overflow, zero anchor
+gaps**, backdrop rendering on the homepage and the shared hero, 7 form files before and
+after, consent wording and every `data-cta` triple byte-identical, `tsc` clean, **65
+tests**.
+
+**The measurement lesson, which is now §9.1 row 7.** A ring measured against a flat fill is
+not measured against a gradient. Two agents measured the same colours and disagreed;
+settled by converting the `oklch()` Tailwind v4 actually emits and reproducing the estate's
+two calibration values exactly. The losing table had been measured against the **v3 hex
+constants**, which are different colours. The repo table was right.
+
+**Left open by this uplift.** No OWNER decision came out of charities; both items are
+engineering, and neither blocks the walk.
+
+1. **No guards-the-guard walk.** charities' focus guard does not enumerate `src` (§9.1 row
+   8 reports `walks=0`), so a hand-rolled ring added tomorrow is invisible to it. The shape
+   to copy is `contractors-ir35/web/src/tests/focus-ring.test.ts`. Cheap, not done here
+   because it was out of this commit's file set.
+2. The 43 FAQ answers already under an open owner item are unchanged by the uplift and
+   still gate any future `FaqSection` adoption.
 
 ### Measured outcomes (from the instruments, recorded in `ce37721f`)
 

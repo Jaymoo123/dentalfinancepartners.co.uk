@@ -3,7 +3,9 @@
 ## PICKUP BLOCK (read this first) - design port, 2026-09-12
 
 **Where it stands.** The Property-standard design port is **COMPLETE: ALL SIX PHASES BUILT,
-REVIEWED, COMMITTED AND TAGGED. NOTHING DEPLOYED, NOTHING PUSHED.** Next step is the owner
+REVIEWED, COMMITTED AND TAGGED, PLUS A DESIGN UPLIFT ON TOP (`48312e2c`, 2026-09-14,
+UNTAGGED). NOTHING DEPLOYED, NOTHING PUSHED.** The uplift section is further down this file
+and `48312e2c` is the end of the work; every phase tag below predates it. Next step is the owner
 walk on a dev server, then an owner-triggered deploy.
 
 This block has now been stale THREE times on the same distinction, between what is in the
@@ -397,6 +399,82 @@ port work.
 
 
 Last updated 2026-06-16. The 8th estate site. **LIVE + HEALTHY at www.tradetaxspecialists.co.uk** (227 routes). Deployed to prod 2026-06-16 (the DB migrations had ALREADY been applied in the rushed pre-break session, so the site was serving traffic before this session; this deploy shipped the QA-clean content + 4 conversion levers).
+
+## 2026-09-14: DESIGN UPLIFT (`48312e2c`), a distinct phase AFTER the port
+
+Fourth and last site of the kit-adoption uplift the owner approved after seeing crypto.
+**Committed, UNTAGGED, not pushed, not deployed.** Every `port-construction-cis-phase*` tag
+predates this commit, so a checkout by tag is missing the whole uplift; the end of the work
+is `48312e2c` (`git log --oneline -3 -- construction-cis/`).
+
+This site scored **worst in the estate on adoption** (zero kit design components) and
+**best on art direction** (it already had the font and a `TradeBackdrop`), so the work was
+the primitives and the labels.
+
+**What was done**
+
+- **The live defect, and it is the owner's complaint made concrete.** An **unlayered
+  `.prose-blog p`** rule was beating the in-article tool panels' own classes, so their brand
+  eyebrow and bold title rendered as plain grey body text on every mapped-category article.
+  Not a contrast failure, a **fidelity** failure, and no existing gate could see it. Fixed
+  by moving the block into `@layer components`.
+- **47 `section-label` call sites became the kit `Eyebrow`**, which on this site is a real
+  change rather than a restyle: the old recipe was a filled orange chip in white caps, the
+  kit's is a short brand rule and quiet slate caps. **This site was the kit's worst instance
+  in the estate.** The dead rule was deleted and **proved dead first**: no dynamic
+  composition, no data-driven use, and this site does not import the shared stylesheet that
+  also declares it, so the deletion genuinely removes the class from the output rather than
+  un-shadowing a sibling.
+- **No focus-ring carve-out was needed, and that is the finding.** This site's
+  `primary-600` is byte-identical to the outline it already painted and clears 3.0 on every
+  ring ground, so it is **the only one of the four that adopts the kit ring unchanged**.
+  Six hand-rolled rings were routed to the token; **three on-dark rings stayed hand-rolled**
+  (`components/intent/ReturningBar.tsx:51,68`, `components/ui/StickyCTA.tsx:164`) because
+  the kit exports no standalone on-dark ring and routing them would have **lowered them
+  from 7.51 to 4.97**.
+- The support widget's floating launcher ring measured **2.89 on white**, below the floor,
+  because the ring lands on the page behind the pill rather than on the pill. And the skip
+  link's target had no scroll offset on six routes, so every jump hid its own heading under
+  the sticky header. Both fixed.
+- **Breadcrumb adopted via a 54-line adapter over the kit primitive**, replacing a 128-line
+  hand-copy: the JSON-LD is shape-identical and every colour improves, including a chevron
+  that went from **1.48 to 4.77**.
+
+**The colour table this site published to itself was Tailwind v3.** Ten hex comments in the
+stylesheet plus two component files stated the v3 ramp as fact while the site emits v4
+`oklch`: `primary-600` is **`#f54900`, not `#ea580c`**. Every verdict survived, but a v3 hex
+table sitting in a stylesheet is precisely how the next port inherits the error.
+
+**What was declined, each with a measured reason recorded at the call site.** This is the
+site that proved the §9.1 homepage-marketing row was wrong: **every** kit marketing
+component was correctly declined, and the row as first written failed the site for it.
+
+| declined | why |
+|---|---|
+| `LeadCTAPanel` | the kit twin has diverged into a different component, not a restyle: it takes the form as a `form` slot and drops `submitLabel` and `redirectOnSuccess`, the two props every capture surface here is configured through. Adopting it would have **deleted two instrumented `data-cta` ids and failed a live pinned test**, with lead capture frozen for the uplift. Integration decline, nothing visual (`components/marketing/LeadCTAPanel.tsx:20-31`) |
+| `StatsCounter` | no icon field: would have silently dropped four icons |
+| `TestimonialsSection` | hardcodes Property's landlord quotes with no `items` prop |
+| `FaqSection`, `CoverageCards`, `CardStack`, `ProcessTimeline`, `NumberedReasons`, `ComparisonTable`, `WhatToExpectCard`, `NoticeCard` | same classes as the sibling sites: server-HTML stripping, authored bodies rendered as text children, or content the site does not publish |
+| `StickyCTA` | an interruption |
+
+**Verification, against one build at the uplift close** (`48312e2c` commit body): 24
+page-loads at four widths, **zero overflow, zero anchor gaps after the fix**,
+`section-label` gone from the built CSS, the eyebrow rule shipping, **4 `data-cta` ids
+unchanged**, `tsc` clean, **443 tests**.
+
+**Open OWNER items this uplift produced**
+
+1. **`--accent` is a v3 literal that no longer matches the site's own ramp.**
+   `--accent: #f97316` (`construction-cis/web/src/app/globals.css:51`) against a v4
+   `primary-600` of `#f54900`. It renders a **pre-existing tick glyph at 2.80 against the
+   3.0 floor**, which is the whole of the **96 remaining contrast rows**. Brand palette, so
+   untouched. Changing it is his call, and the file already warns that a darker accent
+   reads as a fix while breaking the dark-ground consumers.
+2. **`StickyCTA` and `ReturningBar` are live interruptions that predate the estate's own
+   rule.** `StickyCTA` mounts in `components/layout/PageShell.tsx:44` and `ReturningBar` in
+   `app/layout.tsx:101`. **The standing rule would not allow either to be ADDED today**
+   without asking him first. The uplift restyled them and did not re-approve them. Keep or
+   retire is an owner decision, not an engineering one.
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 

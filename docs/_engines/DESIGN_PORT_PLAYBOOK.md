@@ -9,6 +9,13 @@ divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce. Deriv
 list yourself (`git tag -l 'port-*'` against the rollout doc); this line has gone stale
 twice, which is the same defect as a STATE.md contradicting its tags.
 
+**FOUR OF THE EIGHT HAVE ALSO HAD THE DESIGN UPLIFT** (2026-09-14): crypto `7dfe04b3`,
+charities `ba7b184a`, contractors-ir35 `569d3304`, construction-cis `48312e2c`. Only
+crypto's is tagged. The other four ported sites pass the §9.1 kit-adoption gate without
+one. **§9.1 was CORRECTED after that programme: it was counting comments as code on three
+rows and would have blocked a site for declining correctly. Run the block as written there,
+not a remembered one.**
+
 **A PHASE TAG IS NOT THE END OF A PORT.** crypto's six phase-1-to-6 tags sit on ONE commit
 and the review fixes land two commits later, so a checkout of `port-crypto-phase6` is
 missing every one of them. Tag the final commit `port-<site>-complete` and check that out.
@@ -678,42 +685,80 @@ the same playbook, re-exported the kit and cleared the owner's bar. That control
 written up in `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md`; the uplift that answered
 it is `7dfe04b3`.
 
+**Four sites have now been through the uplift**, all on 2026-09-14, all committed, none
+pushed and none deployed: crypto `7dfe04b3` (owner verdict "much better", which is what
+approved the other three), charities `ba7b184a`, contractors-ir35 `569d3304`,
+construction-cis `48312e2c`. Rows 6, 7 and 8 below exist because of defects those three
+found that rows 1 to 5 could not see.
+
 So there is now a gate that asks the one question none of the others did: **did this site
 ADOPT the kit, or REIMPLEMENT it?**
 
 Run this from the monorepo root with `DIR` set to the site's directory. It is read-only.
 
-```bash
-DIR=crypto; P=$DIR/web/src/app/page.tsx
+**CORRECTED 2026-09-14 after the four-site uplift programme.** The first edition of this
+block had two measurement flaws, both found by agents running it for real on
+construction-cis, and both of them the same flaw in opposite directions: **it counted
+comments as code.** Row 2 rewarded writing a decline, row 5 punished explaining one, and
+row 2b would have BLOCKED a site whose every marketing decline was correct. The commands
+below are the fixed ones. Read the notes under the table before you report a number.
 
-echo "1 layout-utils  : $(grep -c 'web-shared/design/layout-utils' $DIR/web/src/components/ui/layout-utils.ts)"
-echo "2 kit components: $(grep -rho 'web-shared/design/\(marketing\|primitives\)/[A-Za-z-]*' $DIR/web/src | sort -u | wc -l) distinct / $(grep -rho 'web-shared/design/\(marketing\|primitives\)/[A-Za-z-]*' $DIR/web/src | wc -l) call sites"
-echo "2b homepage mktg: $(grep -o 'web-shared/design/marketing/[A-Za-z-]*' $P | wc -l)"
-echo "3 webfont       : $(grep -o 'next/font[a-z/]*\|geist/font[a-z/]*' $DIR/web/src/app/layout.tsx | sort -u | tr '\n' ' ')"
-echo "4 backdrop      : $(ls $DIR/web/src/components/layout/ | grep -ci backdrop)"
-echo "5 eyebrow ratio : Eyebrow=$(grep -o '<Eyebrow' $P | wc -l) section-label=$(grep -o 'section-label' $P | wc -l)"
+```bash
+DIR=construction-cis; P=$DIR/web/src/app/page.tsx
+KIT='web-shared/design/(marketing|primitives)/[A-Za-z-]+'
+# Only an IMPORT adopts a component. Everything else that names a kit path is prose.
+IMP=$(grep -rhoE "from \"[^\"]*$KIT\"" $DIR/web/src | grep -oE '(marketing|primitives)/[A-Za-z-]+')
+MKT="$P $(ls $DIR/web/src/components/marketing/*.tsx 2>/dev/null)"
+# Strips block and line comments, so a comment cannot score as markup.
+strip() { perl -0pe 's{/\*.*?\*/}{}gs; s{//[^\n]*}{}g' "$1"; }
+
+echo "1  layout-utils  : $(grep -c 'web-shared/design/layout-utils' $DIR/web/src/components/ui/layout-utils.ts)"
+echo "2  kit adopted   : $(echo "$IMP" | sort -u | grep -c .) distinct / $(echo "$IMP" | grep -c .) call sites"
+echo "2a kit declined  : $(grep -rhE "$KIT" $DIR/web/src | grep -vcE 'from \"') comment references naming a kit path"
+echo "2b homepage mktg : adopted=$(cat $MKT 2>/dev/null | grep -cE 'from \"[^\"]*web-shared/design/marketing/') declined=$(cat $MKT 2>/dev/null | grep -E 'web-shared/design/marketing/' | grep -vcE 'from \"')"
+echo "3  webfont       : $(grep -o 'next/font[a-z/]*\|geist/font[a-z/]*' $DIR/web/src/app/layout.tsx | sort -u | tr '\n' ' ')"
+echo "4  backdrop      : $(ls $DIR/web/src/components/layout/ | grep -ci backdrop)"
+echo "5  eyebrow ratio : Eyebrow=$(strip $P | grep -o '<Eyebrow' | wc -l) section-label=$(strip $P | grep -o 'section-label' | wc -l)"
+echo "6  rings not the token:"
+grep -rnoE 'focus-visible:outline-[A-Za-z0-9_-]+' $DIR/web/src --include=*.tsx | grep -vE 'outline-(2|4|8|none|offset)' | sed "s|$DIR/web/src/|     |"
+echo "7  gradient grounds to measure stop by stop:"
+grep -rlE 'bg-gradient-to|linear-gradient' $DIR/web/src --include=*.tsx --include=*.css | sed "s|$DIR/web/src/|     |"
+echo "8  ring guard    : walks=$(grep -rl 'readdirSync' $DIR/web/src/tests 2>/dev/null | wc -l) guards-the-guard=$(grep -rl 'guards the guard' $DIR/web/src/tests 2>/dev/null | wc -l)"
 ```
 
 Expected result, and each row is a BLOCKER on its own:
 
 | # | row | passes when | what a fail looks like |
 |---|---|---|---|
-| 1 | `layout-utils` | **>= 1.** The site's `components/ui/layout-utils.ts` re-exports or imports the kit's. A deliberate deviation (crypto wraps the four button recipes to swap an embedded outline, and keeps `focusRing` local) is fine **only if the reason is written above it in that file.** | `0` means every container, section and button recipe is a hand-rolled copy that will drift. crypto pre-uplift: 0. construction-cis, charities, contractors-ir35 today: 0. |
-| 2 | kit components | **Report the number, always**, next to generalist's **16 distinct / 138 call sites** (diagnosis §1; the same command re-derived 142 on 2026-09-14, so read the call-site figure as an order of magnitude and the distinct count as the real signal). There is no numeric floor, because the uplifted crypto sits at 7/19 and the owner passed it. A port that reports **0 distinct** has not adopted anything and does not close. | construction-cis: 0 distinct / 0 call sites. crypto pre-uplift: 5 / 20, of which 1 was a marketing component. |
-| 2b | homepage marketing | **>= 1.** At least one kit *marketing* component on the homepage, which is the surface the owner forms his impression on. | Property is `n/a`: it is the source, it imports nothing. |
-| 3 | webfont | **non-empty.** The site loads a real webfont through `next/font`. | Empty means the site renders in `ui-sans-serif, system-ui`. crypto and charities both shipped that. It is the loudest "unfinished template" signal a non-technical eye reads and it is ten minutes to fix. charities is still empty today. |
-| 4 | backdrop | **1.** A `<Site>Backdrop` component exists in `components/layout/`. Phase 1's own scope line says "Header, footer, shell, tokens, **backdrop/motif**". | `0`. A flat `bg-gradient-to-br` is a div with a colour on it. contractors-ir35 and charities: 0. |
-| 5 | eyebrow ratio | **`<Eyebrow>` >= `section-label`.** | The kit's own comment at `packages/web-shared/design/primitives/page-blocks.tsx:27-30` says the old recipe "shouted louder than the heading it was introducing". construction-cis ships **10 `section-label` and 0 `<Eyebrow>`** on its homepage. |
+| 1 | `layout-utils` | **>= 1.** The site's `components/ui/layout-utils.ts` re-exports or imports the kit's. A deliberate deviation (crypto wraps the four button recipes to swap an embedded outline, and keeps `focusRing` local) is fine **only if the reason is written above it in that file.** | `0` means every container, section and button recipe is a hand-rolled copy that will drift. Pre-uplift: crypto 0, construction-cis 0, charities 0, contractors-ir35 0. **All four now report 1 or 2**, re-derived 2026-09-14 after `48312e2c`. |
+| 2 | kit adopted | **Report the number, always**, next to generalist's **16 distinct / 142 call sites**. There is no numeric floor: the uplifted crypto sits at 6 distinct / 18 and the owner passed it. A port that reports **0 distinct** has not adopted anything and does not close. **Read the DISTINCT count as the signal and the call-site count as an order of magnitude.** | construction-cis pre-uplift: 0 distinct / 0 call sites. crypto pre-uplift: 5 / 20, of which 1 was a marketing component. |
+| 2a | kit declined | **Report it, never grade it.** It counts comment references naming a kit path, which is the shape a legitimate decline takes. It is the number the old row 2 was silently ADDING to row 2. It is also a coverage check on the counter-rule: construction-cis reports **6**, and crypto **1**, while charities and contractors-ir35 report **0** even though both declined components correctly, because their decline comments say "NOT the kit FaqSection" without naming the file. | A high row 2a with a low row 2 is a site that declined nearly everything: legitimate only if each decline is measured. |
+| 2b | homepage marketing | **`adopted >= 1` OR `declined >= 1`.** The question is not "did you adopt one", it is "did you adopt one **or record a measured decline**". Counted over the homepage plus `components/marketing/*.tsx`, because the closing panel usually lives in a site-local wrapper the homepage renders. **Telling them apart is mechanical: an `import ... from` line adopts, any other reference to a kit path is a decline.** | `adopted=0 declined=0` is the fail: no kit marketing component and nothing written down about why. Property is `n/a`, it is the source and imports nothing. |
+| 3 | webfont | **non-empty.** The site loads a real webfont through `next/font`. | Empty means the site renders in `ui-sans-serif, system-ui`. crypto and charities both shipped that; **both now load Geist** (`7dfe04b3`, `ba7b184a`). It is the loudest "unfinished template" signal a non-technical eye reads and it is ten minutes to fix. |
+| 4 | backdrop | **1.** A `<Site>Backdrop` component exists in `components/layout/`. Phase 1's own scope line says "Header, footer, shell, tokens, **backdrop/motif**". | `0`. A flat `bg-gradient-to-br` is a div with a colour on it. contractors-ir35 and charities were both `0`; **all eight ported sites now report 1**, re-derived 2026-09-14. |
+| 5 | eyebrow ratio | **`<Eyebrow>` >= `section-label`, measured on comment-stripped source.** | The kit's own comment at `packages/web-shared/design/primitives/page-blocks.tsx:27-30` says the old recipe "shouted louder than the heading it was introducing". construction-cis pre-uplift shipped **10 `section-label` and 0 `<Eyebrow>`** on its homepage; today it is 9/0 the other way, across 47 converted call sites. **The comment trap runs here too, in the opposite direction:** the raw grep reports `section-label=2` on contractors-ir35's homepage, and both hits are inside one comment at `contractors-ir35/web/src/app/page.tsx:156,163` explaining that neither class is reachable. Stripped, it is 0. |
+| 6 | rings not the token | **Every line printed has a reason written at that line.** Any coloured `focus-visible:outline-*` that is not `outline-[var(--focus-ring)]` is a deliberate carve-out or a bypass, and the row cannot tell you which, so it lists them and you read them. Empty is also a pass. | An unexplained line. Legitimate ones today: crypto 5, charities 2, contractors-ir35 1, all explicit white rings on dark grounds; construction-cis 3 `outline-primary-400`, kept because routing them to the token would have **lowered** them from 7.51 to 4.97. |
+| 7 | gradient grounds | **Every file printed has had its ring and its controls measured AT EACH STOP, composited against what is behind it.** A ring measured against a declared flat colour is not measured. | charities' ring cleared 3.0 on all nine flat grounds and measured **1.98** at the composited `via` stop of `from-primary-900 via-primary-600/90` (`charities/web/src/app/page.tsx:303`), where both hero CTAs sit; those two now ship an explicit white ring at 8.42 worst-stop. contractors-ir35 measured **2.59** on the `/locations/[slug]` hero gradient, which hosts buttons. **Where a stop sits over a photograph, state the assumption and bracket it**, worst case and best case, rather than reporting one number. |
+| 8 | ring guard | **`walks=1` or more AND `guards-the-guard=1`.** The guard must enumerate every `.tsx` under `src` programmatically (`readdirSync` walk), not pin the shared recipes, and must carry an assertion that the walk found the corpus. | contractors-ir35's guard passed throughout while **29 elements hand-rolled their own ring**, because it imported `layout-utils` and tested only the five recipes. A token fix could not reach those 29. The rewritten guard is `contractors-ir35/web/src/tests/focus-ring.test.ts`; copy its shape. crypto and charities report `walks=0` today and are the two sites still exposed to that class. |
 
 Also paste the four-marker row from the diagnosis §1 into STATE.md, because it is the
 cheapest one-line summary of where the site sits:
 
 ```bash
-echo "ping=$(grep -c 'animate-ping' $P) stats=$(grep -c 'StatsCounter' $P) backdrop=$(grep -c 'Backdrop' $P) rounded-full=$(grep -o 'rounded-full' $P|wc -l)"
+S=$(perl -0pe 's{/\*.*?\*/}{}gs; s{//[^\n]*}{}g' $P)
+echo "ping=$(echo "$S"|grep -c 'animate-ping') stats=$(echo "$S"|grep -c 'StatsCounter') backdrop=$(echo "$S"|grep -c 'Backdrop') rounded-full=$(echo "$S"|grep -o 'rounded-full'|wc -l)"
 ```
+**Strip the comments here too.** The raw version reports crypto at `stats=2` and both hits
+are the `StatsCounter` decline comment at `crypto/web/src/app/page.tsx:345`, so the marker
+that is supposed to say "this site has no stats strip" says the opposite. Same flaw as
+rows 2 and 5, third surface.
+
 Property 1/2/3/4 ("wow"), generalist 1/2/3/4 ("looks good"), crypto pre-uplift 0/0/0/0
-("not there"). It is a thermometer, not a blocker: crypto post-uplift is still 0/0/5/1 and
-the owner passed it, because the two zeros are the declines below.
+("not there"). It is a thermometer, not a blocker: **post-uplift and comment-stripped,
+crypto is 0/0/3/1, charities 0/0/2/0, contractors-ir35 0/0/2/0 and construction-cis
+0/0/4/0, and the owner passed crypto at those numbers**, because the zeros are the
+declines below and `rounded-full` is a homepage-copy artefact rather than a kit marker.
+Report it; do not chase it.
 
 **THE COUNTER-RULE, AND IT MATTERS AS MUCH AS THE GATE. Adopt the kit unless adopting it
 breaks something, and record the reason at the call site.** A gate that forced blind
@@ -734,8 +779,28 @@ on measurement, not on taste:
 
 A decline is only legitimate when the reason is written **at the call site**, in the file,
 not only in a commit body. crypto's `FaqSection` declines are (`app/page.tsx:727`,
-`app/blog/[category]/[slug]/page.tsx:160`); its `StatsCounter` decline is **not**, and that
-is the shape of gap to close before the next port closes.
+`app/blog/[category]/[slug]/page.tsx:160`); its `StatsCounter` decline was not, and was
+closed in `c3824681` (`crypto/web/src/app/page.tsx:345`).
+
+**Write the decline so a grep can find it: name the kit FILE PATH, not just the component
+name.** `packages/web-shared/design/marketing/LeadCTAPanel.tsx` is countable;
+"NOT the kit FaqSection" is not. construction-cis writes them the countable way
+(`construction-cis/web/src/components/marketing/LeadCTAPanel.tsx:20-31`, and the same shape
+in `ui/NoticeCard.tsx` and `ui/WhatToExpectCard.tsx`, each opening `KIT DECLINE`); charities
+and contractors-ir35 do not, which is why row 2a reads 0 on two sites that declined
+correctly. This is a documentation defect, not an adoption one, but it is the one that
+makes the counter-rule auditable instead of assertable.
+
+**The four-site programme's evidence for row 2b, which is why the row was re-cast.**
+construction-cis declined **every** kit marketing component and each decline was correct
+and measured: `LeadCTAPanel` would have deleted two instrumented `data-cta` ids and failed
+a live pinned test (its API takes the form as a `form` slot and drops `submitLabel` and
+`redirectOnSuccess`, the two props every capture surface on that site is configured
+through, and lead capture was frozen for the uplift); `StatsCounter` has no icon field and
+would have silently dropped four icons; `TestimonialsSection` hardcodes Property's landlord
+quotes with no `items` prop. Under the old row 2b that site reported `0` and failed the
+gate for doing the right thing. **A gate that fails a site for the correct outcome is worse
+than no gate**, because the next agent's cheapest way to pass it is to ship the defect.
 
 ---
 
