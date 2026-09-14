@@ -2,11 +2,22 @@
 
 ## STOP. Read this screen before anything else. (2026-09-13)
 
-Six sites are fully ported (generalist, solicitors, dentists, medical, construction-cis,
-contractors-ir35), all six phases, tagged. A seventh, **charities, is IN PROGRESS: phase 0
-complete and tagged `port-charities-phase0` (`78dcd3a5`), phases 1 to 6 not started.**
-NOTHING on any site is pushed or deployed. Ten sites remain untouched. Follow the
-**generalist** flow; it is the one that went well.
+**Eight sites are fully ported** (generalist, solicitors, dentists, medical,
+construction-cis, contractors-ir35, charities, crypto), tagged. NOTHING on any site is
+pushed or deployed. **Eight sites remain**: digital-agency, wills-probate,
+divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce. Derive that
+list yourself (`git tag -l 'port-*'` against the rollout doc); this line has gone stale
+twice, which is the same defect as a STATE.md contradicting its tags.
+
+**A PHASE TAG IS NOT THE END OF A PORT.** crypto's six phase-1-to-6 tags sit on ONE commit
+and the review fixes land two commits later, so a checkout of `port-crypto-phase6` is
+missing every one of them. Tag the final commit `port-<site>-complete` and check that out.
+
+Read `docs/_engines/HANDOFF_NEXT_PORT.md` first; it is rewritten at the end of each port
+and is the current state. Follow the **charities/crypto** shape: phase 0 alone and gated,
+then phases 1 to 6 as concurrent packages on disjoint file sets, ONE build at wave close
+with every verification list executed before tagging, then two independent adversarial
+reviews and a gap-fix wave. Budget a mop-up package from the start.
 
 **Read sections 11 and 12 of PORT_FIELD_NOTES.md before the next port.** Section 11 carries an
 estate-wide

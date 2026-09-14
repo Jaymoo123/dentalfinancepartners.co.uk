@@ -12,269 +12,431 @@ FIRST, in this order, before anything else:
    had tags to phase 6.
 3. Read the STOP block on screen one of `docs/_engines/DESIGN_PORT_PLAYBOOK.md`, then
    section 2.1, then section 8 item 11 (the SIX kit-chrome props), then section 13. Read
-   `docs/_engines/PORT_FIELD_NOTES.md` sections 4, 5, 6, 10, 11 and **12**. Section 12 is
-   the newest (charities) and carries three estate-wide defects plus two counting
-   corrections to commands our own docs got wrong.
+   `docs/_engines/PORT_FIELD_NOTES.md` sections 4, 5, 6, 10, 11, 12 and **13**. Section 13
+   is the newest (crypto) and is the one to read twice: it carries the no-chrome case, four
+   briefs that were themselves the defect, a fix that propagated its own error, and three
+   tooling traps that each return a clean-looking false answer.
+4. **The playbook's own STOP block is STALE at this writing.** It says six sites are ported
+   and charities is in progress. Eight are ported. Trust `git tag -l 'port-*'`, and fix the
+   STOP block before you plan.
 
-STATE OF PLAY. **Seven sites are ported: generalist, solicitors, dentists, medical,
-construction-cis, contractors-ir35 and charities.** All phases built, independently
+STATE OF PLAY. **Eight sites are ported: generalist, solicitors, dentists, medical,
+construction-cis, contractors-ir35, charities and crypto.** All phases built, independently
 reviewed, gap-fixed and tagged. Verify with `git tag -l 'port-*'`, which is the only
 authority; STATE.md files narrate, tags record. **NOTHING IS PUSHED AND NOTHING IS
-DEPLOYED. Production serves the pre-port SHA on every site, and 119 commits sit
-unpushed** (`git log --oneline origin/main..HEAD | wc -l`). Push and deploy are both
-owner-triggered, and the walk happens at the end once everything is done.
+DEPLOYED. Production serves the pre-port SHA on every site, and 125 commits sit unpushed**
+(`git log --oneline origin/main..HEAD | wc -l`, re-derived 2026-09-14). Push and deploy are
+both owner-triggered, and the walk happens at the end once everything is done.
 
-**charities is genuinely finished, and it ran in ONE session for all seven phases:**
-phase 0 alone and gated (`78dcd3a5`), then phases 1 to 6 as **seven packages running
-concurrently on disjoint file sets**, one build at wave close, every written verification
-list executed against that build (`ce37721f`, one commit, six tags), then two independent
-adversarial reviews against the rendered DOM and a gap-fix wave (`922d1105`). That shape
-works. Phases do NOT have to run sequentially. **"One SITE at a time" still stands**; it
-is concurrency across sites that cost us, never concurrency within one.
+## READ THIS BEFORE YOU CHECK ANYTHING OUT: THE TAGGING TRAP
 
-WHICH SITE. Derive it, do not read it from a doc. Run `git tag -l 'port-*'` for what is
-done, take the order from `docs/_engines/PROPERTY_STANDARD_ROLLOUT.md`, and confirm with
-the owner in one plain-language message. **Ten sites remain** and are mostly small.
-`digital-agency` is the outlier at 90 routes and 306 posts: leave it late. Two sites
-(`wills-probate`, `divorce-finances`) have never launched, so they carry no cutover risk.
+**A phase tag is not the end of a port.** crypto carries seven phase tags plus a
+`port-crypto-complete` tag, and they point at three different commits:
 
-THE ONE CHANGE THAT MATTERS MOST. Phase 0 is baseline capture AND a claims and
-ground-truth audit, gated, with the serious tier fixed and committed BEFORE phase 1
-starts. It worked again on charities: **26 serious rows, 26 of 26 confirmed against the
-rendered build, none overstated and none false, plus 8 further serious rows that only a
-rendered-HTML sweep could find** (config-injected copy, `priceRange "££"` on 68 nodes,
-FAQ pairs with no on-page counterpart). Serious total 26 to 34, the same undercount ratio
-as every prior port. Still budget a third of the port for live defects that are not
-design work: on charities that included a hero CTA that had rendered white on white since
-launch, two hub routes publishing raw escaped HTML as visible body text, calculator
-result panels at 1.49 and 2.63, three posts publishing `[object Object]` as their
-JSON-LD, and 161 unstyled article pages across ten deployed sites.
+| tag | commit | what it is |
+|---|---|---|
+| `port-crypto-phase0` | `f480c7ec` | baseline, claims audit, serious tier fixed |
+| `port-crypto-phase1` … `phase6` (six tags, ONE commit) | `666ab0a2` | phases 1 to 6, one wave |
+| *(untagged)* | `f9a96c30` | **the gap-fix wave: every review fix lives here** |
+| *(untagged)* | `cb87416b` | manager verification record, post-port link artefact |
+| `port-crypto-complete` | `6f48570a` | state doc and field notes reconciled |
+
+Deriving command:
+`for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1 --abbrev-commit $t)"; done`
+
+**A checkout of `port-crypto-phase6` is missing every review fix**: the two blocking
+arithmetic defects, the invisible focus ring, the eyebrow rule, the ground convergence.
+Check out `port-crypto-complete`, never a phase tag.
+
+RULE: **tag the FINAL commit of the port, not just the phases.** `port-<site>-complete` is
+now the contract. The seven other ported sites have phase tags only, so for those the last
+commit touching `<site>/` is the end of the port, not `phase6`
+(`git log --oneline -5 -- <site>/`). Note also that only crypto, charities,
+construction-cis and solicitors have a `phase0` tag at all; generalist, dentists, medical
+and contractors-ir35 do not.
+
+## THE SHAPE THAT WORKED, TWICE NOW. THIS IS THE DEFAULT
+
+charities and crypto both ran all seven phases in ONE session, in this shape:
+
+1. **Phase 0 alone and gated** (`f480c7ec` on crypto): five parallel audit packages
+   (source claims, rendered sweep, CSS/token, instrument baseline, structural inventory),
+   then a serious-tier FIX wave, committed BEFORE phase 1 starts.
+2. **Phases 1 to 6 as concurrent packages on strictly disjoint file sets**
+   (`docs/crypto/_port/PHASE0_PACKAGES.md` is the template: seven packages, file sets
+   written down before launch). The token ramp runs ALONE and first on any site that has
+   never mounted kit chrome, because every visual package blocks on it.
+3. **ONE build at wave close.** Agents never build and never serve. Each returns a WRITTEN
+   VERIFICATION LIST (URL, command, expected result), and the manager executes every list
+   against that one build **before tagging** (`docs/crypto/_port/V1_GAPFIX_VERIFICATION.md`
+   is the record of doing it, three separate runs, deliberately not merged).
+4. **Two independent adversarial reviews against the rendered DOM**, one design, one
+   content (`R1_DESIGN_REVIEW.md`, `R2_CONTENT_REVIEW.md`).
+5. **A gap-fix wave answering both** (`f9a96c30`, 32 files).
+
+Phases do NOT have to run sequentially. **"One SITE at a time" still stands**; it is
+concurrency across sites that cost us, never concurrency within one. Both reviews found
+real defects that no package's verification list contained. That is the whole reason the
+review gate exists, and on crypto two of them were BLOCKING arithmetic.
+
+## BUDGET A MOP-UP PACKAGE FROM THE START. NEWEST STRUCTURAL LESSON
+
+Disjoint file ownership stops agents colliding and **strands defects at the seams**. Three
+separate packages on this port measured a real defect correctly and could not fix it,
+because the file belonged to another package. They reported it instead, which is the only
+reason it survived to the gap-fix wave rather than shipping. One of them, **a second
+cascade race** (`min-h-10` and `min-w-0` both losing to the recipe they are composed over,
+so the header CTA rendered 160x48 instead of shrink-to-fit, `R1_DESIGN_REVIEW.md:112-122`),
+was nearly lost: both packages that found it were fenced out of its only fix point.
+
+On crypto the mop-up was DISCOVERED at the end, after two reviews, and needed its own
+commit over 32 files.
+
+RULE: **the package table gets a final row from the start** - a mop-up package that owns
+every cross-seam finding, whose input is the "reported, could not reach" list every other
+package returns. Make "report what you cannot reach" an explicit DELIVERABLE of every
+package, not an act of initiative. A defect a package saw and could not touch is the
+cheapest defect in the port; one nobody wrote down is the most expensive.
+
+Its second half: **list the files the wave CREATED and give each one an owner.**
+`git diff --stat --diff-filter=A <phase0-tag> HEAD -- <site>/web/src`. Package file sets
+are disjoint over the files that EXISTED; created files are outside the table by
+construction. crypto's `_parts/PageHero.tsx` is net-new, in no package row, and now serves
+nine route families and eighteen URLs, owned by nobody.
+
+## WHICH SITE IS NEXT. DERIVE IT, NEVER READ IT FROM A DOC
+
+A doc naming the next site goes stale, and a stale doc naming a site is the same defect as
+a STATE.md contradicting its tags. Derive it:
+
+1. `git tag -l 'port-*'` for what is done.
+2. `docs/_engines/PROPERTY_STANDARD_ROLLOUT.md` §2 for the estate map and §9 for the
+   sequencing rules.
+3. Confirm with the owner in one plain-language message before you start.
+
+**Eight sites remain**, derived as: 18 site directories, minus the 8 tagged as ported,
+minus Property (the reference, never a port target), minus ashfield (family E,
+owner-locked, excluded from Track 1). That leaves **digital-agency, wills-probate,
+divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce**. (The previous
+handoff said "ten remain" with seven ported; it was counting ashfield and one other as
+targets. Re-derive rather than subtracting from the old number.)
+
+Selection principle: **`digital-agency` is the outlier at 90 routes and 306 posts, and its
+bottleneck is indexing, not design - leave it late.** `wills-probate` and
+`divorce-finances` have never launched, so they carry no cutover risk and are the safest
+ports in the estate. The four remaining family-D sites are the cheapest.
+
+## WHERE THE BAR SITS. RESOLVE THIS BEFORE YOU PORT ANYTHING
+
+The owner walked the finished crypto site next to Property and said:
+
+> "I suppose when I look at Property, and then look at those sites, with Property I think
+> wow, that's well designed. With these sites, that's not the case. However it could be
+> because the UX designer designed Property and put effort into designing it for that
+> niche."
+
+**This is not a defect report and must not be written up as one. The ports met every gate
+they were given.** It is a question about where the bar sits, and the owner has already
+named the likely cause himself.
+
+The mechanism, and it is consistent with the playbook's own scope: a port moves Property's
+design **SYSTEM** - tokens, chrome, templates, components, spacing, card recipes - and
+that transfers mechanically and provably. It does not move Property's **ART DIRECTION**:
+which sections exist and in what order, what the hero is actually doing, the motif, the
+section rhythm, the density, the decisions a designer made for one specific audience.
+`DESIGN_PORT_PLAYBOOK.md` §0 says so in as many words: *"A port moves a site's chrome,
+templates and page anatomy onto Property's design system. It is **not** a content
+programme, an IA change, or a rewrite. Content, URLs and forms stay unless the owner says
+otherwise,"* and every phase brief carries "ALL content and URLs stay" as a locked
+decision (§ prompt templates). **So a ported site can be fully correct against every gate
+in this playbook and still read as flat, because the thing that makes Property read as
+"designed" was never in the port's scope.** If that holds, the method is working exactly
+as specified and it is the DESIGN BRIEF that needs to change, not the execution.
+
+**The consequence, stated plainly: seven other sites are already built to this same target
+and not one of them has been seen by a visitor.** If the target is set too low, every
+further port compounds the cost at zero benefit, because nothing is deployed yet and
+nothing has to be unwound.
+
+RULE: **do not start another port until the owner has ruled on what the target actually
+is.** That ruling is the next session's first action, not a port.
+
+A read-only diagnosis comparing Property against crypto on section anatomy, bespoke
+components, art direction, type scale, density and copy shape - splitting the gap into
+what the port should have carried and did not, what is genuinely bespoke and needs a
+designer, and what is really content rather than design - was commissioned on 2026-09-14
+and lands at `docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md`. **It did not exist when
+this handoff was written.** Check for it (`ls docs/_engines/DESIGN_GAP_DIAGNOSIS_*.md`);
+if it is absent, say so to the owner rather than implying it is there, and put the
+question to him directly instead.
+
+## THE ONE CHANGE THAT MATTERS MOST
+
+Phase 0 is baseline capture AND a claims and ground-truth audit, gated, with the serious
+tier fixed and committed BEFORE phase 1 starts. crypto's phase 0 alone fixed **six wrong
+figures handed to users** (a CGT estimator measuring the basic-rate band against gross
+income; a staking estimator starting the 45% rate £12,570 too low; a disclosure estimator
+pricing reasonable care at the careless band, with a unit test pinning the wrong value; a
+trader checker omitting Class 4 NIC; two worked examples), **132 FAQPage answers asserted
+to crawlers across 19 posts with no on-page counterpart at all**, 17 authored gov.uk
+citations per service page rendering as literal escaped markup, two canonical defects, a
+duplicate Organization node, `priceRange: "££"` on a site that publishes no prices, a
+Google Analytics opt-out section on a site with no GA id, and turnaround promises in **21
+source locations reaching 38 of 51 URLs** against the 5 the audit first listed.
+
+Third consecutive port where the design work was the smaller half. **Budget a third of
+every port for live defects that are not design work, and report that list to the owner as
+the port's headline OUTPUT, not as overhead.**
 
 ## RULES THAT ARE NOT NEGOTIABLE
 
 - **ONE SITE AT A TIME.** Within that site, parallel packages on disjoint file sets are
-  fine and fast.
+  fine and fast, with a mop-up package booked from the start.
 - **SWEEP BY THE RULE AND THE WHOLE SITE, never by the list you were handed.** Every list
-  has undercounted: a canonical defect reported on 1 route family was on 5; an
-  unlayered-CSS audit reported 3 rules where there were 26; a claims ledger's 26 serious
-  rows became 34. Search frontmatter and `schema:` JSON-LD, search the arithmetic as well
-  as the words, and check the VALUE not the presence of a key. **Also verify the list's
-  POSITIVES**: on charities four rows were understated in scale, one was mis-located and
-  one minor was mis-graded, and on the port before it a ledger called a CORRECT figure
-  wrong.
+  has undercounted: 5 turnaround sites were 21; a canonical defect on 1 route family was on
+  5; an unlayered-CSS audit reported 3 rules where there were 26; a claims ledger's 26
+  serious rows became 34. **And verify the list's POSITIVES**: on crypto four briefs named
+  the wrong element (below).
 - **GREP THE RENDERED HTML OF A SERVED BUILD, not only the repo.** A fee claim sat in
-  `niche.config.json` and rendered in the footer and the Organization JSON-LD on every
-  URL while appearing in no page's source.
+  `niche.config.json` and rendered in the footer and the Organization JSON-LD on every URL
+  while appearing in no page's source.
 - **PUT THE PUSHBACK CLAUSE IN EVERY AGENT BRIEF, VERBATIM** (playbook 10.1): "Verify
-  against source. If this brief is wrong, say so and trust the source." It keeps earning
-  its place: on charities it caught two wrong expected values in the manager's own briefs
-  (a phrase counted twice that occurs once, and a route listed as a known carrier that was
-  already clean), and a `return` query param that is actually `rt`.
-- **THE MANAGER IS THE ONLY ONE WHO BUILDS.** Four agents running `next build` in one site
-  directory share one `.next` and produced a phantom `pages-manifest.json ENOENT` that
-  read as a real defect. Ban builds and servers in every agent brief; require each agent
-  to return a WRITTEN VERIFICATION LIST instead (URL, command, expected result), then run
-  ONE build at wave close and **execute every list against it BEFORE tagging.** On
-  charities that step found the `[object Object]` JSON-LD and a leaked pipeline artefact
-  "(HP14)" published in a stats strip; on the port before it, skipping it until after
-  tagging let a site-wide regression through.
+  against source. If this brief is wrong, say so and trust the source." Every package on
+  crypto that did this caught a mis-aimed instruction.
+- **THE MANAGER IS THE ONLY ONE WHO BUILDS.** Ban builds and servers in every agent brief.
+  One build at wave close, every written list executed against it BEFORE tagging.
 - **PROVE A SERVER'S IDENTITY AND ITS AGE before quoting it.** Assert the served page
-  title, then diff a string whose commit date you know. A reviewer correctly rejected a
-  server 11 minutes older than the working tree.
+  title, then diff a string whose commit date you know.
 - **DEFAULT TO WHAT PROPERTY DOES, unless Property is evidently wrong.** Copy Property's
   ANSWER, not its DEFECTS. Known defects not to copy: `WhatToExpectCard` default props
   publish a fee line no page authored; `FaqSection` is a Radix accordion with no
-  `forceMount`; `NumberedReasons` animates off keyframe classes its siblings lack; and its
+  `forceMount`; `NumberedReasons` animates off keyframe classes its siblings lack; its
   `LeadCTAPanel` call site passes "Fixed fees, quoted upfront" and "24-hour response".
-  Pass `proofPoints={[]}` and never invent replacements.
+  Pass `proofPoints={[]}` and never invent replacements. crypto declined `FaqSection`,
+  `RelatedArticles`, `BlogSidebarCta`, `BlogCategoryHub`, `LeadCTAPanel` and `SlimHero`,
+  each with a written reason at the call site. That is the pattern.
 - **NEVER CHANGE PROPERTY, including indirectly via `packages/web-shared/`** (trap 12).
+  crypto fixed the header-CTA cascade defect site-locally with a layered rule keyed on the
+  CTA data attributes. The kit-level fix crosses 18 sites and stays an owner decision.
 - **POSITIONING: match what the site's own terms page already says.** The first-person "we
-  do the work" voice STAYS. "Free call" STAYS (owner ruling: Property uses it in 61
-  places). What goes is any claim to a qualification, a regulator, professional indemnity
-  insurance, or performing regulated work.
+  do the work" voice STAYS. "Free call" STAYS. What goes is any claim to a qualification, a
+  regulator, professional indemnity insurance, or performing regulated work.
 - **Write the phase's work-package list down before you launch it and tick it off at close.**
 - **Cap agent fan-out sensibly and say in every brief whether that agent may delegate.**
   The default line is "Do NOT launch subagents."
 - No new monitor, alert, cron, email, digest, popup, modal or banner, and no change to an
   existing one's timing, trigger or cadence. Ask first, every time. This includes adding a
-  capture surface to a page that had none, and changing when an existing interruption fires.
+  capture surface to a page that had none.
 
-## TRAPS ADDED BY THE CHARITIES PORT, read these before phase 1
+## TRAPS ADDED BY THE CRYPTO PORT, read these before phase 1
 
-- **A COMPOSED OVERRIDE TIES ON SPECIFICITY AND LOSES ON SOURCE ORDER.** `btnPrimary`
-  hardcodes `text-white` and its own ground (`packages/web-shared/design/layout-utils.ts`),
-  so a call site appending a competing colour produces two single-class rules of equal
-  specificity and the later one in the stylesheet wins, which depends on Tailwind's
-  emission order and not on your class string. Two live estate defects are this same
-  shape: the header CTA's `hidden` versus `lg:inline-flex`
-  (`design/chrome/SiteHeader.tsx:473`) and the charities homepage hero button, which had
-  rendered **white on white since launch** because the call site composed `text-primary-700`
-  over the recipe. RULE: never invert a kit recipe by composition. Write the element out,
-  or drive it from a token. Settle any suspected tie by byte offset in the served
-  stylesheet, never from the class list: `curl -s <cssbundle> | grep -bo '<selector>'`.
-- **AN UNDEFINED CSS CUSTOM PROPERTY INVALIDATES THE WHOLE DECLARATION,** so the element
-  renders nothing with every test green. `bg-[var(--primary)]` with no `--primary` declared
-  is not a fallback to black, it is no background at all. charities declared neither
-  `--primary` nor `--accent-strong` while adopting components that paint from both, so the
-  reading-progress bar was transparent with a clean `browser_check`. RULE: sweep every
-  newly adopted kit component for bare reads BEFORE adopting it,
-  `grep -rn 'var(--[a-z-]*)' <component>`, and check each name against the site's
-  `globals.css`. Both kit families now ship `var(--primary,var(--brand-primary,#0f172a))`,
-  so this specific instance cannot recur.
-- **THERE ARE TWO COPIES OF SEVERAL KIT COMPONENTS.** `packages/web-shared/design/blog/`
-  and `packages/web-shared/content/` both carry `ReadingProgress.tsx` and
-  `TableOfContents.tsx`. A survey that checked only one family reached the wrong answer
-  about a live site. RULE: `grep -rn "<component>" <site>/web/src` to establish which
-  family the site imports before concluding a defect applies, and patch both when you
-  patch one.
-- **DENTISTS WAS FOUND CARRYING THAT DEFECT LIVE IN PRODUCTION:** 8 uses of
-  `var(--primary)`, 0 declarations, confirmed against its served stylesheet, so its
-  reading-progress bar filled with nothing. Fixed with one declaration at
-  `Dentists/web/src/app/globals.css:72`. Every other ported site declares both. **Check
-  your own site for this early**, in phase 0, not at review.
-- **A KIT COMPONENT'S DEFAULT PROPS CAN SHIP DEAD LINKS.** `SiteFooter.companyItems`
-  defaults to Property's four routes including `{ label: "Locations", href: "/locations" }`
-  (`design/chrome/SiteFooter.tsx:84`), which 404s on any site without location routes, and
-  `SiteFooter.resourcesHref` defaults to Property's own `/landlord-tax`. Playbook section 8
-  item 11 now lists **SIX** props, not two. RULE: read every default object in a chrome
-  component's signature, pass the prop, and probe every href you pass. A default is a claim
-  about your site that nobody checked.
-- **`wordmarkIcon` IS A COMPONENT FUNCTION AND CANNOT CROSS THE RSC BOUNDARY**
-  (`design/chrome/SiteHeader.tsx:88` types it `WordmarkIcon`), which is why every ported
-  site keeps a thin client shell wrapper around `PageShell`. generalist, Solicitors and
-  charities all have one. RULE: the wrapper is the required pattern, not a bespoke
-  deviation. Do not raise it as a port defect, do not delete it, and do not try to call the
-  kit shell from a server layout.
-- **A CLASS CAN NAME NOTHING, ESTATE-WIDE.** `prose` was emitted on **161 live article
-  pages across TEN deployed sites** with zero `.prose` rules shipped anywhere and no
-  typography plugin installed in the monorepo; five sites also emit `section-label` with no
-  rule (the charities instance sat on `bg-[#0f2e24]` and measured 1.22). Fixed for all ten
-  with one shared stylesheet, `packages/site-styles/prose-standard.css` (`51acda3b`).
-  **It is deliberately NOT in `packages/web-shared/`: Property's `globals.css` carries an
-  `@source` for that directory and Tailwind v4's scanner does not ignore `.css` files, so a
-  new stylesheet there can add rules to Property's own output.** That reasoning generalises
-  to anything new you put in the kit. Per-site check:
-  `curl -s <domain>/_next/static/css/<hash>.css | grep -o '\.prose[ {,:]' | wc -l` (count
-  the SELECTOR, not the substring; `prose-blog` and `not-prose` inflate a raw count).
-- **BANNING A KIT STYLESHEET IMPORT IS THE WRONG REMEDY FOR WRONG-BRAND FALLBACKS.**
-  charities banned `packages/web-shared/design/globals-standard.css` to stop Property's
-  emerald and cream leaking in. The reasoning was right and the remedy was wrong: the cost
-  was that `.related-card:focus-within` is the ONLY focus indicator on related-article
-  links (which carry `focus-visible:outline-none`), so **keyboard focus was invisible on 23
-  article pages**. RULE: import it AND declare the five tokens in the same change
-  (`--brand-glow`, `--brand-glow-deep`, `--brand-glow-edge`, `--brand-glow-faint`,
-  `--hero-cream`). Then add the `<noscript>` override Property carries, because the import
-  activates collapsed `[data-draw="off"]` states that only an observer releases: without
-  it, 64 pages show invisible eyebrow rules.
-- **WARN EVERY PACKAGE ABOUT THE ACCORDION TRAP, NOT JUST THE BLOG ONE.** The hubs package
-  adopted the kit's Radix accordion for FAQs on `/services/[slug]` and `/for/[slug]`, and
-  **17 FAQPage answers across 7 pages were asserted to crawlers while absent from the
-  server HTML.** Phase 0 of this very port had closed that exact defect on the blog, and
-  the manager warned the blog package and not the hubs one. Fixed with a plain `<dl>` that
-  is always in the DOM. GENERALISE: **every file assigned to a package needs an owner for
-  EVERY defect class in it, not just the package's theme**, and **every path in an OFF
-  LIMITS list must be proved to exist (`ls` it)** before the prompt ships. On charities one
-  fence named `src/lib/charity-services.ts` when the file is `src/data/charity-services.ts`,
-  so it guarded nothing, and the homepage was fenced off from the claims agent while
-  assigned to an agent fixing links only, which is why its testimonials, client-base claim,
-  regulated-work line and turnaround promise all survived the wave.
-- **COUNTING TRAPS, IN BOTH DIRECTIONS.** Against built CSS, `grep -c` returns only 0 or 1
-  because the file is one line (46,359 bytes on one line on charities):
-  `grep -c primary-600 generalist/.../*.css` returns **1** for **42** occurrences, so use
-  `grep -o ... | wc -l`. Against Next.js HTML, `grep -c` **OVER**counts, because the same
-  text is serialised again into the RSC flight payload: a `section-label` count of 16 was
-  really 8, and a phrase counted 2 occurs once. RULE: report rendered HTML as **per-page
-  presence** (`grep -ql` per file, count files) and always say which of the two you
-  measured. One of these errors reached an owner report.
-- **A `ratio=1.00` ROW WITH `color=rgb(255, 255, 255)` IS USUALLY A WHITE-ON-GRADIENT
-  INSTRUMENT ARTEFACT, AND ON CHARITIES ONE WAS A REAL WHITE-ON-WHITE BUTTON.**
-  `browser_baseline.json` carried **64** such rows out of 164, and the homepage
-  `a "Talk to a charity accountant"` row was the live hero CTA. RULE: never dismiss one as
-  an artefact and never accept one as a defect without proof. Settle each against the
-  served stylesheet's byte order, at the element the row names.
-- **A SITE-LOCAL GREP PROVES NOTHING ABOUT AN ESTATE-CENTRAL MECHANISM.** Three times on
-  charities an agent concluded a published privacy disclosure was false because it grepped
-  one site, and all three were TRUE: the multi-firm lead pool
-  (`Property/web/src/lib/leads/offer-send.ts`, DB-driven and source-agnostic), the
-  Anthropic grading through the Vercel AI Gateway, and the Companies House enrichment all
-  live in Property's code and are reached from every site through a shared handler and a
-  database trigger. **Two of the three had to be restored after being wrongly removed.**
-  RULE: before calling a site's copy false, (a) grep Property for the same string and
-  (b) establish whether the mechanism is site-local or central. Consent text is also
-  gate-load-bearing: `consentAllowsSharing` matches on the published wording and
-  `Property/web/src/tests/consent-anchor-drift.test.ts` pins it.
+- **A SITE CAN HAVE NO CHROME AT ALL.** crypto shipped **no header, no `<nav>`, no mobile
+  drawer, no `<main>` landmark and no skip link on any of 51 routes**. No header component
+  existed in the repo. Every phase-1 brief written for this port assumed one existed and
+  four of its questions were unanswerable. It was visible in the link baseline: **608
+  internal links over 51 routes, per-route floor 8, and the floor of 8 was exactly the
+  footer** (post-port: min 27, total 1,497). RULE: **phase 0 must establish whether chrome
+  EXISTS** before anyone plans to restyle it, and say so in one line at the top of the
+  structural inventory. A port of a site with no chrome is net-new construction and the
+  phase order changes. Deriving command:
+  `for p in / /blog /contact /services; do curl -s <base>$p | grep -c '<header\|<nav\|<main'; done`
+  Corollary: crypto carried **one `data-cta` on the whole site**, so every kit CTA is
+  net-new analytics with no baseline. Record the phase-1 CTA set as a decision with its
+  reason, and name the one id that must survive byte-identical.
+- **THE BRIEF'S OWN DEFECT CAN BE THE DEFECT. Four times on one port.** (a) A warn-tone
+  contrast failure named in a brief was **passing at 10.9 on its real ground**; the real
+  failure in the same component was a brand colour at **1.06** (calculator headline labels
+  rendered navy inside the navy result panel, invisible, on four calculators and four
+  embeds). (b) "Six `neutral-400` research elements": the audit locates three, and the real
+  research failure was a different colour at 3.73 on navy. (c) "17 gov.uk citations per
+  page": the measured range across five service pages was **15 to 22**. (d) "One text-child
+  field": **four**, and the fix belonged at the template. RULE: a builder's first act is to
+  re-derive the brief's own number at the element the brief names, and report the
+  correction as a numbered false premise before fixing anything. Cost: one grep.
+- **A FIX CAN PROPAGATE THE ERROR IT WAS FIXING.** Phase 0 correctly fixed a calculator for
+  measuring the basic-rate band against **gross** income, then "corrected" a band figure in
+  prose **using the same gross-income method**, publishing 12,700 where the answer is
+  25,270. The site's own calculator printed 25,270 on identical inputs on the next URL.
+  Only the independent content review caught it. RULE: when a wave fixes a METHOD error,
+  **re-derive every sibling with the correct method** rather than pattern-matching the fix,
+  and where a site ships both a tool and prose about the same calculation, run the tool
+  against the article's worked example. A disagreement is free evidence.
+- **A SWEEP FINDS ONLY THE CLASS IT WAS SENT FOR.** The phase-0 arithmetic sweep read all
+  19 posts and fixed two worked examples. **In files it had open** it missed a £2,136
+  figure on a £2,400 gain (true answer £432), an expired deadline, and an inverted tense.
+- **STALE TIME IS ITS OWN DEFECT CLASS and no figure sweep finds it.** An expired 5 April
+  2026 claim deadline published as live guidance, and "the registration deadline **was** 5
+  October 2026" for a deadline three weeks in the FUTURE, telling readers they had missed
+  something they had not. RULE: sweep `must ... by <date>` / `from <date>` / `will` as its
+  own pass, with today's date in hand, and re-run it every time a port crosses a tax year.
+- **A GROUNDS SCAN KEYED TO NAMED TAILWIND SCALES IS BLIND TO ARBITRARY-VALUE GROUNDS.**
+  The `--grounds` capture reported **0 section bands on 27 of 51 routes, homepage included**,
+  and a brief then told a builder there was no section rhythm to preserve. The homepage runs
+  **13 deliberate `bg-[#fafaf9]` bands**. RULE: a zero from a grounds scan means "the scan
+  found nothing it knows how to name". Run
+  `grep -o 'bg-\[#[0-9a-fA-F]\{3,8\}\]' <served html> | sort | uniq -c` alongside it and say
+  which you measured.
+- **AUDITING FROM THE SITEMAP MISSES SERVED PAGES.** crypto's sitemap lists 51 URLs; **54
+  are served.** `/book`, `/complete` and `/thank-you` carry published copy including "free
+  review call" and the site's only authored `data-cta`, and sat outside every claims audit.
+  The sitemap was RIGHT to omit them (all three are `noindex, nofollow`): this is an
+  audit-scope defect, not a sitemap defect. RULE: enumerate the content audit from the
+  routes on disk (`find <site>/web/src/app -name page.tsx`), diff against `sitemap.xml`, and
+  dispose of every difference explicitly.
+- **A BRAND COLOUR CAN NEED THREE ROLES AND A FOURTH TOKEN.** Navy `#0e1a3a` is 17.11 on
+  white and cleared every floor as a GROUND, but sits at **1.04 against the body ink**, so
+  it carries no semantic signal and cannot mark an action. Burnt orange `#8f421f` (7.08) and
+  `#6e3118` (9.93) became the action ramp, both already in the codebase as the site's own
+  hover/active, so nothing was minted. Then **neither ramp step cleared 3.0 on navy**
+  (2.42 and 1.72), so the focus ring needed its own colour: `--focus-ring: #b86c42` clears
+  3.0 on all five grounds the site paints (3.99 / 3.82 / 4.29 / 4.47 / 3.79). Literal hex,
+  not the v4 ramp utility, which emits `oklch()` and would not render the colour the sRGB
+  ratios were measured on. RULE: measure the brand hex on every ground the site paints
+  before assigning it a role, and expect ground, action and focus to be three decisions.
+- **THE PORT'S OWN NEW COPY IS UNREVIEWED COPY.** Two of the worst claims found on this
+  port were **written by this port**, replacing banned ones: "Read by a specialist, not a
+  call centre" (contradicted by our own privacy policy: up to three firms plus three in
+  related professions, with an LLM grading step) and "We confirm your exact figures" on four
+  calculator pages (against `/terms` §2 and §3). RULE: the content review's scope explicitly
+  includes **the port's own new headings, standfirsts, proof points and CTA labels**. Hand
+  the reviewer the diff of new copy as a named input.
+- **TOOLING TRAPS THAT RETURN A CLEAN-LOOKING FALSE ANSWER:**
+  - **`grep -ql` prints nothing**, because `-q` suppresses `-l`. A verification harness
+    built on it returned 0 for every row and read as a clean pass. RULE: **every harness
+    carries a self-test row with one known-present and one known-absent string**, and
+    refuses to report if the known-present row does not fire. Two lines.
+  - **`getComputedStyle` misreports outlines in this environment, cause unexplained.**
+    Under a real `:focus-visible` it reported `rgb(255,255,255) solid 3px, offset 0` for a
+    ring that painted burnt-orange 2px at offset 2, with no such rule in any served sheet.
+    A reviewer nearly filed a false BLOCKING. RULE: for outlines, reason from the emitted
+    rule and confirm by screenshot; treat any focus number that is neither rule-derived nor
+    screenshot-backed as unmeasured, and say so.
+  - **Use `grep -boF`, never a regex, for any selector containing a backslash, bracket or
+    colon.** Tailwind emits `.lg\:inline-flex{`, `.mt-0\.5{`, `.bg-\[\#0e1a3a\]{`. A regex
+    probe matches nothing and reads as "not emitted". The same mistake at scale produced a
+    **165-item dead-class list where the true answer was 5**. Byte offsets settle ORDER
+    between two rules you have proved exist; only the matched-rule list settles EXISTENCE.
+  - **Counting corrections, both directions, re-confirmed.** `grep -c` UNDERcounts against a
+    one-line built stylesheet (crypto's served sheet is 76,705 bytes on zero newlines), so
+    use `grep -o ... | wc -l`. `grep -c` OVERcounts against Next.js HTML, which serialises
+    text again into the RSC flight payload, so report rendered findings as **per-page
+    presence** and always say which of the two you measured.
+- **"ZERO UNDECLARED CUSTOM PROPERTIES" IS THE WRONG CLAIM, AND IT WAS MADE.** The phase
+  1-6 commit body asserted it; R1 re-derived 222 used, 224 declared, **10
+  used-but-undeclared**, every one fallback-guarded. The conclusion was safe, the stated
+  check was false. RULE: claim "every undeclared name is fallback-guarded, checked at the
+  element", or run a bare-`var()`-without-declaration probe and say you ran it. An undefined
+  custom property with **no** fallback invalidates the whole declaration and renders
+  nothing with every test green - that shipped live on Dentists.
+- **A `@theme` RAMP MUST BE MINTED BEFORE ANY KIT COMPONENT IS MOUNTED.** crypto had no
+  `@theme` block and no `primary-*` ramp while every kit component styles off
+  `text-primary-600` / `bg-primary-600` / `btnPrimary`. Token ramp is package one, alone, on
+  any site that has never mounted kit chrome. Prove it after:
+  `grep -o "primary-600" <site>/web/.next/static/css/*.css | wc -l` is non-zero.
+- **AN UNLAYERED `body` RULE IS A LATENT TRAP THAT ONLY FIRES WHEN THE PORT TOUCHES THE
+  BODY.** `globals.css:11` set `background`, `color` and `font-family` on a bare `body`,
+  beating nothing until a later package added a `bg-*`, `text-*` or `next/font` class, which
+  it would then have silently beaten (a v4 utility lives in `@layer utilities`; an unlayered
+  element rule outranks every layer). Move `body` into `@layer base` in the token package.
+- **FIXING `.eyebrow-rule` BY IMPORTING THE KIT STYLESHEET IS THE EXPENSIVE ANSWER.** It
+  was emitted 26 times with no rule anywhere. Importing `globals-standard.css` drags in
+  Property's emerald and cream and every collapsed `[data-draw="off"]` state, which on
+  charities left 64 pages with invisible marks and needed a `<noscript>` override. crypto
+  used six local lines with `(scripting: enabled)` instead. Either answer is defensible;
+  choose it deliberately and write the reason down.
 - Still live from earlier ports, do not rediscover them: **never declare a custom property
-  whose name collides with a Tailwind v4 theme variable outside `@theme`** (`--radius-*`,
-  `--color-*`, `--font-*`, `--spacing-*`, `--text-*`, `--leading-*`, `--shadow-*`); the
-  **calibration figures in circulation are v3** (v4 `slate-500` is **4.77**, `slate-400`
-  **2.63**), and contrast is symmetric, so a hex has ONE ratio and THREE floors (3.0 as a
-  graphic, 4.5 as text, 4.5 as a ground); **agreement between agents is not evidence**, only
-  a measurement on the CURRENT build; **a site can be missing `@source` for
-  `packages/web-shared`** and then no kit utility compiles at all (eight sites were, fixed
-  in `51acda3b`); **the documented unlayered-CSS sweep must walk a character stream read
-  `utf-8-sig`**, not lines, or it finds nothing in built output and trips over a BOM;
-  `sr-only` on a `<table>` does not work; **a comment is a claim, never evidence**;
-  canonical inheritance from a root layout; and **the instrument must assert the JSON-LD
-  PARSES per URL**, because three charities posts published `[object Object]` while the
-  `<script type="application/ld+json">` tag was present.
+  whose name collides with a Tailwind v4 theme variable outside `@theme`**; the
+  **calibration figures in circulation are v3** (v4 `slate-500` is 4.77, `slate-400` 2.63),
+  and contrast is symmetric, so a hex has ONE ratio and THREE floors (3.0 graphic, 4.5 text,
+  4.5 ground); **agreement between agents is not evidence**, only a measurement on the
+  CURRENT build; **a composed override ties on specificity and loses on source order**;
+  **there are two copies of several kit components** (`design/blog/` and `content/`);
+  **kit chrome default props ship dead links** (playbook §8 item 11, SIX props);
+  `wordmarkIcon` cannot cross the RSC boundary so the thin client shell wrapper is the
+  required pattern; **a site can be missing `@source` for `packages/web-shared`**; the
+  unlayered-CSS sweep must walk a character stream read `utf-8-sig`; `sr-only` on a
+  `<table>` does not work; **a comment is a claim, never evidence**; **a site-local grep
+  proves nothing about an estate-central mechanism** (three privacy disclosures were
+  wrongly called false on charities and two had to be restored); and **the instrument must
+  assert the JSON-LD PARSES per URL**.
 
 ## OWNER DECISIONS ALREADY OPEN. Do not re-ask them and do not act on them
 
-1. The shared header cascade defect above. Crosses 18 sites including Property.
+**crypto closed none of these.** It widened three of them and added five.
+
+1. The shared header cascade defect. Crosses 18 sites including Property. **Widened by
+   crypto: `display` was not the whole race - `min-h-10` and `min-w-0` lose the same way,
+   so the kit fix is larger than recorded** (R1 D6).
 2. `packages/web-shared/leads/MiniCapture.tsx` publishes a timed promise under six mounts
    per site.
 3. ZeroBounce receives enquirer emails from the live submit path and is not disclosed in
    the privacy policy.
 4. `packages/web-shared` hardcodes an `AccountingService` schema type and a local-business
-   locality. Property uses plain `Organization` and is right. charities asserts
-   `["ProfessionalService","AccountingService"]` site-locally as well.
-5. The dormant `packages` CTA variant in six niche.config.json files. Cannot be removed
-   per-site: the shared validator requires the key.
-6. Site titles, H1s and meta still assert firm identity. That is the SEO surface, and on
-   charities it sits on all 72 URLs in three independent layers while `/terms` §2 disclaims
-   the relationship.
+   locality. Property uses plain `Organization` and is right.
+5. The dormant `packages` CTA variant in six niche.config.json files. The shared validator
+   requires the key, so it cannot be removed per-site.
+6. Site titles, H1s and meta still assert firm identity while `/terms` §2 disclaims the
+   relationship. **On crypto this is 54 of 54 pages in three independent layers.**
 7. Solicitors IR35 size test: house_positions says £10.2m/£5.1m, three pages say £15m/£7.5m
    with the lag explained correctly. THE PAGES LOOK RIGHT. Do not "correct" them.
-8. Estate-wide retention: privacy pages promise enquiry data is gone at 24 months and
-   consent records kept up to six years. The purge cron is dry-run unless an env flag is
-   set, and even armed it anonymises rather than deletes. One cron governs about twenty
-   sites and arming it is irreversible across all of them. **Partly narrowed by charities,
-   not closed:** the published wording there is now accurate about the mechanism
-   (anonymisation, not deletion) and the reconciliation is written up in
-   `docs/_engines/RETENTION_PROMISE_RECONCILIATION_2026-09-13.md`; the arming decision is
-   untouched.
-9. Property's own `niche.config.json` description publishes "Fixed fees, 24hr response",
-   rendering in its footer and JSON-LD on every page.
+8. Estate-wide retention: the purge cron is dry-run unless an env flag is set, and even
+   armed it anonymises rather than deletes. One cron governs about twenty sites and arming
+   it is irreversible across all of them. Partly narrowed by charities (wording now accurate,
+   `docs/_engines/RETENTION_PROMISE_RECONCILIATION_2026-09-13.md`); the arming is untouched.
+9. Property's own `niche.config.json` description publishes "Fixed fees, 24hr response".
 10. Both umbrella workbooks on contractors-ir35 cite an "HMRC list" of compliant umbrella
     companies that does not exist. Report-only by owner ruling.
-11. **NEW: deploy ordering.** charities, Dentists' one-line `--primary` fix and the ten
-    sites carrying the new shared prose stylesheet are three separate blast radii riding
-    one decision, and none of them is pushed.
-12. **NEW: 43 blog FAQ answers on charities are asserted to Google in wording that does not
-    match the page, 9 of them barely present.** Pre-existing, larger than the review
-    reported, and it needs a content pass rather than a design one.
-13. **NEW: fifteen sites publish that up to six firms may receive an enquiry, with a
-    48-hour cascade to related professions. The coded cap is three and no adjacency step
-    exists.** Copy versus code, found by this port and deliberately not changed.
-14. **NEW: Property's own privacy policy claims a "published grading rubric" that does not
-    exist** (there is a repo document only). charities now says "internal rubric".
-    Property cannot be changed.
-15. **NEW: `/calculators` and `/calculators/[slug]` on charities still run a pre-port hero**
-    against the kit recipe used everywhere else. The exact swap is recorded in
-    `922d1105` and `docs/charities/STATE.md`.
-16. **NEW: `tw-animate-css` is absent from charities' and Dentists' `package.json`**, so the
-    kit accordion's keyframes resolve to nothing on those sites. Ten sites already carry it;
-    adding a dependency is an owner call (T24).
-17. **NEW, from the charities review and not acted on:** the footer studio credit is a
-    dofollow sitewide outbound link on every chromed page. The credit itself is settled; its
-    follow status was decided silently by a port.
+11. **Deploy ordering.** charities, crypto, Dentists' one-line `--primary` fix and the ten
+    sites carrying the new shared prose stylesheet are four blast radii riding one decision,
+    and none of them is pushed.
+12. 43 blog FAQ answers on charities are asserted to Google in wording that does not match
+    the page, 9 of them barely present. Needs a content pass, not a design one.
+13. Fifteen sites publish that up to six firms may receive an enquiry with a 48-hour cascade
+    to related professions. The coded cap is three and no adjacency step exists.
+14. Property's own privacy policy claims a "published grading rubric" that does not exist.
+15. `/calculators` and `/calculators/[slug]` on charities still run a pre-port hero.
+16. **`tw-animate-css` is absent from `package.json` on charities, Dentists AND crypto**, so
+    the kit accordion's keyframes resolve to nothing. Ten sites carry it. Adding a dependency
+    is an owner call (T24).
+17. The footer studio credit is a dofollow sitewide outbound link on every chromed page.
+18. **NEW: the kit footer wordmark focuses at 2.52 on the footer ground, under the 3.0
+    graphic floor, on every page of every chromed site** (R1 D9). crypto's own focus rings
+    were all fixed; this one was not, because the fix is in a file shared with Property.
+    **Same class as item 1: real defect, estate-wide fix, trap 12.** These two are crypto's
+    only known-unfixed defects and both are kit-level.
+19. **NEW: crypto's homepage, `/about`, `/contact` and `/research` still run a neutral type
+    and border ramp on now-`slate` grounds** after R1 D4 converged the off-white grounds.
+    Nothing fails a floor: this is drift, and re-ramping four surfaces is a visible design
+    change, so it is an owner call, not a gap-fix.
+20. **NEW: the kit footer requires a `consentToggle` and crypto passes `null`**
+    (`components/ui/PageShell.tsx:85`) while `app/layout.tsx:66` mounts
+    `AnalyticsProvider … posture="opt-out"`. The site ships an opt-out posture with no
+    opt-out control.
+21. **NEW: `crypto/web/src/app/robots.ts:80` disallows `/thank-you` and `/admin` but not
+    `/book` or `/complete`**, which are served, carry published copy, and are
+    `noindex, nofollow` by metadata only.
+22. **NEW, crypto site-level and carried from its STATE.md:** the composite testimonials
+    block on `/` and the three homepage behaviour claims (all pre-dating the port by two
+    months), and `monitored_pages` has zero crypto rows, so crypto has no rewrite-decay
+    detector. Arm at cutover?
 
-BACKGROUND: `docs/_engines/PORT_FIELD_NOTES.md` (section 12 is charities),
-`docs/_engines/PROPERTY_REFERENCE_ANSWERS.md` for what the central lead machinery actually
-does, `docs/_engines/ESTATE_PROSE_SWEEP_2026-09-13.md`, and
-`docs/charities/_port/` for worked examples of every artefact, including the two
-independent adversarial reviews (`R1_DESIGN_REVIEW.md`, `R2_CONTENT_REVIEW.md`) that are
-now the template for review at wave close.
+## STILL UNMEASURED ON CRYPTO
+
+R1's server died roughly 60% through the review and three interaction states were never
+reached: **the mobile drawer open state** at 390/768 (contrast, focus trap, tab order,
+Escape, scroll lock), **the calculator result panel's warn and edge branches**, and **the
+booking picker's day strip at 390** populated. The focus-ring work in `f9a96c30` touched
+the drawer's components and nobody has opened the drawer since. These are the only part of
+the site no review has covered, and interaction states are exactly where a focus or
+contrast fix gets missed. Re-run them first, next time a server is up.
+
+BACKGROUND: `docs/_engines/PORT_FIELD_NOTES.md` (section 13 is crypto, section 12
+charities), `docs/_engines/PROPERTY_REFERENCE_ANSWERS.md` for what the central lead
+machinery actually does, `docs/_engines/ESTATE_PROSE_SWEEP_2026-09-13.md`, and
+`docs/crypto/_port/` for worked examples of every artefact: the package table written
+before launch, five phase-0 audits, the two independent adversarial reviews, and
+`V1_GAPFIX_VERIFICATION.md`, which is the template for the manager's own verification
+record.
 
 Report to the owner like he is the CEO: recommendation in the first three lines, one
 decision at the end, plain language, no file paths in the question itself.

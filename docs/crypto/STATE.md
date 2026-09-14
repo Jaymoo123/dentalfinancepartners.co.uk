@@ -24,8 +24,9 @@ serves the pre-port SHA.**
 
 ### Phase commits and tags, DERIVED FROM GIT (not from prose)
 
-The port is **three commits**. `git tag -l 'port-crypto*'` returns **seven** tags, six of
-which point at one commit, and **the last commit carries no tag at all**.
+The port is **five commits**. `git tag -l 'port-crypto*'` returns **eight** tags: six of
+the phase tags point at one commit, and **`port-crypto-complete` is on the final commit and
+is the one to check out.** A checkout of `port-crypto-phase6` is missing every review fix.
 
 | commit | tag(s) | subject | committed |
 |---|---|---|---|
