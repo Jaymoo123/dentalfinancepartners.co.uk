@@ -15,16 +15,19 @@ import {
 } from "lucide-react";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { allTools, toolPath } from "@/lib/calculators/registry";
-/* Property-standard kit. The site-local src/components/ui/layout-utils.ts still
-   paints the brand as a colour literal; the kit recipes read the primary-* ramp
-   declared in globals.css @theme, which is what this rebuild is for. */
+/* The site-local module, NOT the kit directly. It re-exports the kit's containers
+   and rhythm byte-identically, and re-grounds `focusRing` and the button recipes
+   onto --focus-ring, because the kit's embedded outline-primary-600 measures 1.88
+   on this page's primary-900 bands. Importing straight from the kit bypassed that
+   and painted the failing ring. All five names below are re-exported locally. */
 import {
   btnPrimary,
   btnSecondary,
   focusRing,
   sectionY,
   siteContainerLg,
-} from "@accounting-network/web-shared/design/layout-utils";
+} from "@/components/ui/layout-utils";
+import CharitiesBackdrop from "@/components/layout/CharitiesBackdrop";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
@@ -298,6 +301,12 @@ export default function HomePage() {
       {/* ── 1. Hero ── */}
       <section className="relative flex min-h-[520px] items-center overflow-hidden bg-primary-900 sm:min-h-[640px] lg:min-h-[720px]">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-600/90 to-primary-900" />
+        {/* AFTER the gradient div, never before it: as the first child an opaque
+            gradient paints straight over the texture (learned on crypto). The
+            section is already `relative overflow-hidden` and the copy below is
+            `relative z-10`, which is the backdrop's host contract, so nothing
+            structural changes here. */}
+        <CharitiesBackdrop />
         <div className={`${siteContainerLg} relative z-10 w-full py-16 sm:py-20`}>
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white ring-1 ring-primary-500">
@@ -316,16 +325,28 @@ export default function HomePage() {
               {/* Inverted hero button, written out rather than composed from btnPrimary.
                   btnPrimary hardcodes `text-white` and its own ground, and a composed
                   override ties on specificity and loses on source order, which rendered
-                  this CTA white on white. Geometry below mirrors btnPrimary exactly. */}
+                  this CTA white on white. Geometry below mirrors btnPrimary exactly.
+
+                  FOCUS RING: white, not --focus-ring and not primary-400. The ring sits
+                  at outline-offset-2, so its ground is the HERO GRADIENT, which runs
+                  from-primary-900 via-primary-600/90. Both CTAs sit near the via stop.
+                  That stop is primary-600 at 90% over the section's own bg-primary-900,
+                  so the ground actually painted there is the COMPOSITE #195746, not bare
+                  #1a5c4a. Re-measured 2026-09-14 on the composite: --focus-ring #3b8871
+                  = 1.98, primary-400 #57a88f = 2.97, both under the 3.0 graphic floor.
+                  (On bare #1a5c4a they are 1.85 and 2.73: same verdict, wrong ground.)
+                  White is 8.42 at that stop and 14.74 on the primary-900 from/to stops:
+                  the only value that clears the floor at every point of the gradient.
+                  Site-wide --focus-ring is unchanged. */}
               <Link
                 href="/contact"
-                className="inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-bold text-primary-700 transition-all duration-150 hover:bg-primary-50 hover:text-primary-800 active:bg-primary-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
+                className="inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-bold text-primary-700 transition-all duration-150 hover:bg-primary-50 hover:text-primary-800 active:bg-primary-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Talk to a charity accountant
               </Link>
               <Link
                 href="/services/independent-examination"
-                className={`inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl border-2 border-white/40 bg-white/5 px-8 py-3.5 text-base font-bold text-white backdrop-blur-sm transition-all duration-150 hover:border-white/60 hover:bg-white/10 ${focusRing}`}
+                className="inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl border-2 border-white/40 bg-white/5 px-8 py-3.5 text-base font-bold text-white backdrop-blur-sm transition-all duration-150 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Independent examination
               </Link>
@@ -705,8 +726,14 @@ export default function HomePage() {
 
       {/* ── 13. FAQ. Native <details>, not the kit FaqSection: the accordion
               unmounts closed answers, and this page publishes those answers in
-              FAQ JSON-LD, so they have to stay in the server HTML. ── */}
-      <section className={`bg-white ${sectionY}`}>
+              FAQ JSON-LD, so they have to stay in the server HTML.
+
+              Ground is slate-50, not white: bands 11 and 12 are one deliberate white
+              run (the promises read as the head of the conversion panel), so a third
+              white band here made a single unbroken white field from the tick list to
+              the footer strip. Cards invert to white on the slate ground, which is the
+              construct bands 5 and 8 already ship. Answer markup is untouched. ── */}
+      <section className={`bg-slate-50 ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
             <Eyebrow>FAQ</Eyebrow>
@@ -718,7 +745,7 @@ export default function HomePage() {
             {faqs.map((faq) => (
               <details
                 key={faq.question}
-                className="group rounded-xl bg-slate-50 ring-1 ring-slate-200/70 transition-colors open:ring-primary-600 hover:ring-primary-600"
+                className="group rounded-xl bg-white ring-1 ring-slate-200/70 transition-colors open:ring-primary-600 hover:ring-primary-600"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-4 text-sm font-bold text-slate-900 transition-colors hover:text-primary-700 sm:px-6 sm:py-5 sm:text-base">
                   <span>{faq.question}</span>
@@ -740,8 +767,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 14. Closing guides band ── */}
-      <section className={`border-t border-slate-200 bg-slate-50 ${sectionY}`}>
+      {/* ── 14. Closing guides band. White, because band 13 is now slate-50 and
+              adjacent bands must not share a ground. White also puts a light field
+              directly above the kit footer's slate-900, which is the separation the
+              footer wants. ── */}
+      <section className={`border-t border-slate-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
             <Eyebrow>Charity accounting guides</Eyebrow>

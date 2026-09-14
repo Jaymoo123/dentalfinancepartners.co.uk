@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { contentNarrow, focusRing } from "@accounting-network/web-shared/design/layout-utils";
+import { contentNarrow, focusRing } from "@/components/ui/layout-utils";
 import { getGuideBySlug, getAllGuideSlugs } from "@/lib/guides/content";
 import { siteConfig } from "@/config/site";
 import { buildArticleJsonLd, buildHowToJsonLd, buildFaqJsonLd } from "@/lib/schema";

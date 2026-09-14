@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
@@ -67,8 +69,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // next/font emits the @font-face rules and binds the families to
+  // --font-geist-sans / --font-geist-mono on <html>. globals.css consumes both
+  // in the @layer base body rule AND in its @theme --font-sans/--font-mono
+  // aliases, so the base rule is what actually sets the page family (nothing
+  // carries a font-* utility on <body>) and `font-sans`/`font-mono` utilities
+  // resolve to the same faces. font-mono is live on /admin.
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="antialiased">
         {/* The kit stylesheet ships collapsed [data-draw="off"] states that only an
             observer releases, so without JS the eyebrow rules and the homepage ticks

@@ -12,7 +12,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@accounting-network/web-shared/design/layout-utils";
+import { btnPrimary } from "@/components/ui/layout-utils";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 

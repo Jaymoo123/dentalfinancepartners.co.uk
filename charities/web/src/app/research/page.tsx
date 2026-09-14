@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { HubSection, LinkCardGrid, PageHero } from "@/components/hubs/HubParts";
 import { siteConfig } from "@/config/site";
 import { fmtNumber, fmtGbp, type FinanceIndexSnapshot } from "@/lib/research/finance-index";

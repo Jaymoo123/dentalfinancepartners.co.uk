@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { PageHero } from "@/components/hubs/HubParts";
 

@@ -5,7 +5,7 @@ import {
   btnPrimary,
   siteContainerLg,
   sectionYLoose,
-} from "@accounting-network/web-shared/design/layout-utils";
+} from "@/components/ui/layout-utils";
 import { PageHero } from "@/components/hubs/HubParts";
 
 export const metadata: Metadata = {

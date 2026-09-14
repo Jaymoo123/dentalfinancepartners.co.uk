@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@accounting-network/web-shared/design/layout-utils";
+import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 

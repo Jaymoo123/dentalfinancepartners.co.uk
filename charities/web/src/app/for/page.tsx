@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { btnPrimary } from "@accounting-network/web-shared/design/layout-utils";
+import { btnPrimary } from "@/components/ui/layout-utils";
 import { HubSection, LinkCardGrid, PageHero } from "@/components/hubs/HubParts";
 import { charityTypes } from "@/data/charity-types";
 import { siteConfig } from "@/config/site";

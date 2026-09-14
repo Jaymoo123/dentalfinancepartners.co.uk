@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
-import { siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { CtaBand, HubSection, LinkCardGrid, PageHero } from "@/components/hubs/HubParts";
 import { charityServices } from "@/data/charity-services";
 import { siteConfig } from "@/config/site";

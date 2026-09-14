@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { btnOnDark, siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
+import { btnOnDark, siteContainerLg } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 import { charityServices, getCharityService } from "@/data/charity-services";

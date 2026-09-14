@@ -13,14 +13,26 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@accounting-network/web-shared/design/layout-utils";
+import { btnPrimary } from "@/components/ui/layout-utils";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
+/** The slot chips are the one control on this site that hand-rolled its own
+ *  focus outline instead of using the `focusRing` constant, so they kept
+ *  `outline-primary-600` after the 2026-09-14 ring change and were the last
+ *  bypass left. Re-grounded onto --focus-ring (#3b8871) so the site has exactly
+ *  one ring colour.
+ *  Not a contrast repair: at outline-offset-2 the ring's ground is the
+ *  CONTAINER behind the chip, and BookingPicker only ever mounts over white
+ *  (/book, /complete) or slate-50 (the /thank-you card), where the old
+ *  #1a5c4a measured 7.85 and 7.08 and already cleared the 3.0 graphic floor.
+ *  #3b8871 measures 4.25 and 3.83 on the same two grounds, both PASS. It also
+ *  stops the ring matching the selected chip's own `border-primary-600`
+ *  (1.00 ring-vs-border before, 1.85 now). */
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-xl border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-xl border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
 const chipIdle =
   "border-slate-300 bg-white text-slate-900 hover:border-primary-600 hover:bg-primary-50";
 const chipSelected =

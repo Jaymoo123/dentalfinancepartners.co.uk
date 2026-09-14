@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
-import { siteContainerLg } from "@accounting-network/web-shared/design/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import BookingPicker from "@/components/forms/BookingPicker";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 

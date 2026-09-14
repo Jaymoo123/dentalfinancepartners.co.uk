@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg, btnPrimary, focusRing } from "@/components/ui/layout-utils";
+import {
+  siteContainerLg,
+  btnPrimary,
+  focusRing,
+  heroCreamSurface,
+} from "@/components/ui/layout-utils";
 import { BLOG_CTA } from "@/components/blog/blog-cta";
-import { heroCreamSurface } from "@accounting-network/web-shared/design/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { PageHero } from "@/components/hubs/HubParts";
 import { BlogListWithSearch } from "@accounting-network/web-shared/design/blog/BlogListWithSearch";

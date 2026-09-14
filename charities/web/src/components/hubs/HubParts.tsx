@@ -19,16 +19,18 @@
  * adopting them verbatim would preserve the defect. These wrappers carry the
  * same kit styling with `dangerouslySetInnerHTML` on those fields instead.
  *
- * NOT adopted, with reasons, so nobody re-tries them without the prerequisite:
- *   - `RelatedArticles`: its only focus indicator is `.related-card:focus-within`,
- *     a rule that ships in `packages/web-shared/design/globals-standard.css`,
- *     which this site deliberately does not import. Its own anchor sets
- *     `focus-visible:outline-none`, so on this site the card would have no
- *     visible keyboard focus at all.
- *   - `TableOfContents` and `ReadingProgress`: both paint their active state
- *     from `var(--primary)`, which this site's globals.css does not declare
- *     (it declares `--brand-primary` and the `--color-primary-*` ramp). Declare
- *     `--primary` in globals.css and both become adoptable.
+ * CORRECTION 2026-09-14. The three declines this docstring used to carry
+ * (`RelatedArticles`, `TableOfContents`, `ReadingProgress`) rested on two
+ * premises that are both false today, and all three components are in fact
+ * already mounted on the blog article route
+ * (`src/app/blog/[category]/[slug]/page.tsx:19-22,143,200,287`):
+ *   - "this site does not import globals-standard.css" is wrong: it is imported
+ *     at `src/app/globals.css:13`, so `.related-card:focus-within`
+ *     (globals-standard.css:243) does resolve here.
+ *   - "this site's globals.css does not declare --primary" is wrong: it is
+ *     declared at `src/app/globals.css:51` as `var(--brand-primary)`.
+ * Do not reinstate either reason. The declines that DO still hold are recorded
+ * on the components below (`FaqSection`, `CtaBand`) and on the card grids.
  */
 import type { ReactNode } from "react";
 import Link from "next/link";
@@ -39,7 +41,8 @@ import {
   focusRing,
   heroCreamSurface,
   siteContainerLg,
-} from "@accounting-network/web-shared/design/layout-utils";
+} from "@/components/ui/layout-utils";
+import CharitiesBackdrop from "@/components/layout/CharitiesBackdrop";
 import { siteConfig } from "@/config/site";
 
 /** Inline-anchor treatment for the HTML-bearing fields, LIGHT grounds. primary-700
@@ -67,6 +70,9 @@ const richLinkOnDark =
  * The breadcrumb is the kit's, which emits its own BreadcrumbList JSON-LD, so a
  * page adopting this hero must drop any page-level `buildBreadcrumbJsonLd`
  * call or it emits the node twice.
+ * The section is already `relative overflow-hidden` with `relative z-10`
+ * content, which is `CharitiesBackdrop`'s host contract, so the backdrop is
+ * mounted here rather than in each of the eleven callers.
  */
 export function PageHero({
   eyebrow,
@@ -90,6 +96,7 @@ export function PageHero({
         dark ? "bg-slate-900" : heroCreamSurface
       }`}
     >
+      <CharitiesBackdrop tone={dark ? "dark" : "cream"} />
       <div className={`${siteContainerLg} relative z-10`}>
         <div className="max-w-3xl">
           <Breadcrumb siteUrl={siteConfig.url} onDark={dark} items={crumbs} />
@@ -331,7 +338,13 @@ export function CtaBand({
   cta?: string;
 }) {
   return (
-    <section className="bg-slate-900 py-12 sm:py-16 lg:py-20">
+    // border-b: on /services and /guides/[slug] this band is the LAST section on
+    // the page and the kit footer is also bg-slate-900 with no top border of its
+    // own (SiteFooter.tsx:138), so the two dark grounds merged into one slab with
+    // no boundary. white/10 is the footer's own divider value (SiteFooter.tsx:195).
+    // On /for/[slug] and /services/[slug] a slate-50 section follows and the
+    // hairline sits invisibly on an already-visible edge.
+    <section className="border-b border-white/10 bg-slate-900 py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-white sm:text-4xl">{title}</h2>

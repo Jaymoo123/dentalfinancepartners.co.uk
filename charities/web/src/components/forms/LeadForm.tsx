@@ -24,7 +24,7 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
-import { btnPrimary } from "@accounting-network/web-shared/design/layout-utils";
+import { btnPrimary } from "@/components/ui/layout-utils";
 
 const fieldClass =
   "mt-2 w-full min-h-12 touch-manipulation rounded-xl border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-primary-600 focus:outline-none";

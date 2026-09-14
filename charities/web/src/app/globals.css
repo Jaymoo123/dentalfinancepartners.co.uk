@@ -113,9 +113,71 @@
   --brand-glow-edge: 87 168 143;
   --brand-glow-faint: 218 241 232;
   --hero-cream: #f2fbf7;
+
+  /* FOCUS RING. Read by src/components/ui/layout-utils.ts, which swaps it into
+     the kit button recipes in place of their embedded outline-primary-600.
+
+     It is NOT --color-primary-600 (#1a5c4a). A focus indicator is a graphic, so
+     its floor is 3.0:1, and contrast is symmetric: one ratio per ground. The
+     ring sits at outline-offset-2, so its ground is the surface BEHIND the
+     control, and this site paints eleven of them. #1a5c4a measured:
+       white 7.85, slate-50 7.51, primary-50/hero-cream 7.45, primary-100 6.63
+       primary-900 1.88 (the HOMEPAGE HERO and the scrutiny band)   FAIL
+       slate-900 2.27 (the KIT FOOTER ground)                        FAIL
+       slate-800 1.86 (/services/[slug] and /for/[slug] strips)      FAIL
+       neutral-900 2.28                                             FAIL
+     So the previous local focusRing left keyboard focus invisible on the hero,
+     the footer and both dark page strips.
+
+     #3b8871 is this site's own --color-primary-500, no new colour:
+       white 4.25, slate-50 4.06, primary-50 4.03, primary-100 3.58,
+       primary-800 3.03, primary-900 3.47, slate-800 3.44, slate-900 4.20,
+       neutral-900 4.22. All PASS the 3.0 graphic floor.
+
+     RECONCILED 2026-09-14 against the INSTALLED Tailwind 4.3.0 theme
+     (node_modules/tailwindcss/theme.css, v4.3.0), by converting the EMITTED
+     oklch() through Oklab -> linear sRGB -> gamut-clipped 8-bit sRGB and then
+     WCAG 2.x relative luminance. Method calibration, both reproduced exactly:
+     v4 slate-500 oklch(55.4% 0.046 257.417) = #62748e = 4.76 on white, and v4
+     slate-400 oklch(70.4% 0.04 256.788) = #90a1b9 = 2.63 on white. Emitted
+     slate hexes are #f8fafc / #1d293d / #0f172b, i.e. the v4 values, NOT the v3
+     hex table (#1e293b / #0f172a), which is what a second circulated table had
+     measured; that table read slate-800 4.79, slate-50 3.83, slate-900 4.88 and
+     is wrong. No verdict changes either way. Only two figures above moved, both
+     by 0.01 of rounding: primary-900 3.48 -> 3.47, slate-800 3.45 -> 3.44.
+
+     GRADIENT GROUNDS. A flat-fill measurement is not valid on a gradient: the
+     ring must clear 3.0 at the WORST stop. This site paints exactly ONE
+     gradient (`grep -rn "bg-gradient" src` = app/page.tsx:302, the homepage
+     hero; the only other gradient the site mounts is the kit footer's
+     bg-clip-text wordmark, which hosts no ring). Its worst stop for this ring
+     is the `via-primary-600/90` mid-tone, which composites over the section's
+     own bg-primary-900 to #195746: --focus-ring measures 1.98 there, a FAIL,
+     which is why the two hero CTAs in app/page.tsx carry an explicit
+     outline-white (8.42 at that stop, 14.7 at the from/to primary-900 stops)
+     instead of this token. The token itself is unchanged, and every OTHER ring
+     ground on the site is a flat fill and passes above.
+     It measures 1.85 on primary-600 and 2.45 on primary-700, which is why
+     neither may become a ring ground: today they carry only decorative chips,
+     a table header row and hover states, none of them focusable, and the two
+     primary-600 controls (CalculatorTabs, BookingPicker) outline at offset-2
+     onto their white/slate-50 container, not onto themselves.
+     Not a Tailwind v4 theme namespace, so safe in an unlayered :root. */
+  --focus-ring: #3b8871;
 }
 
 @theme {
+  /* Webfont. next/font (layout.tsx) defines --font-geist-sans/--font-geist-mono
+     on <html>. Aliasing them HERE is what makes the `font-sans` and `font-mono`
+     UTILITIES resolve to Geist; without it they emit Tailwind's stock
+     ui-sans-serif / ui-monospace stacks and any element carrying one falls back
+     to the system font even though the @layer base body rule has switched.
+     /admin carries font-mono on ten cells, which is why the mono alias exists.
+     The system stack stays as the fallback chain for the seconds before the
+     font loads and for the case where next/font fails to define the variable. */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
   /* Radius scale. MUST be here, not in :root (see the --radius comment above). */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -210,7 +272,12 @@
   body {
     background: var(--background);
     color: var(--ink);
-    font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+    /* THIS rule is what controls font-family on this site. It is inside
+       @layer base, so a `font-sans` utility on <body> would out-rank it -- but
+       <body> carries only `antialiased` (layout.tsx), so nothing competes.
+       Layered is kept deliberately: a future font-* utility on <body> should
+       win, and it will. */
+    font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
   }
 
   /* In-page anchor targets. The kit header is sticky from this phase on, so any

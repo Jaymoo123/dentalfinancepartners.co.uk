@@ -6,7 +6,7 @@ import {
   btnOnDark,
   focusRing,
   siteContainerLg,
-} from "@accounting-network/web-shared/design/layout-utils";
+} from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 import { charityTypes, getCharityType } from "@/data/charity-types";
