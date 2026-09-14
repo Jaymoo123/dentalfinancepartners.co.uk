@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import {
@@ -6,7 +6,6 @@ import {
   focusRing,
   siteContainerLg,
 } from "@/components/ui/layout-utils";
-import { cryptoHubs } from "@/data/crypto-hubs";
 import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { ArrowRight, ShieldCheck, Quote } from "lucide-react";
@@ -317,18 +316,21 @@ export default function HomePage() {
       </section>
 
       {/* Key figures bar */}
-      <section className="bg-[#1a3a6e] py-8 sm:py-10" aria-label="Key crypto tax figures 2026/27">
+      <section
+        className="border-b border-neutral-200 bg-white py-8 sm:py-10"
+        aria-label="Key crypto tax figures 2026/27"
+      >
         <div className={siteContainerLg}>
           <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {keyStats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <a
                   href={stat.href}
-                  className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono hover:text-blue-200 transition-colors"
+                  className={`text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0e1a3a] font-mono underline-offset-4 hover:underline hover:text-[#8f421f] transition-colors ${focusRing}`}
                 >
                   {stat.value}
                 </a>
-                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-blue-200 uppercase tracking-wider">
+                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-neutral-600 uppercase tracking-wider">
                   {stat.label}
                 </div>
               </div>
@@ -373,7 +375,7 @@ export default function HomePage() {
                   {item.title}
                 </span>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500">{item.body}</p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-400 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>
@@ -484,7 +486,8 @@ export default function HomePage() {
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
+            <div className="section-label mb-4">What we do</div>
+            <h2 className="mt-2 text-2xl font-bold text-neutral-900 sm:text-4xl">
               Services
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
@@ -510,7 +513,7 @@ export default function HomePage() {
               },
               {
                 title: "Crypto CGT planning",
-                body: "Disposal sequencing, spouse and civil partner transfers (no-gain no-loss, HP 7), AEA utilisation (£3,000, 2026/27), and loss crystallisation before year-end.",
+                body: "Disposal sequencing, spouse and civil partner transfers (no-gain no-loss), AEA utilisation (£3,000, 2026/27), and loss crystallisation before year-end.",
                 href: "/services/crypto-cgt-planning",
               },
               {
@@ -566,7 +569,7 @@ export default function HomePage() {
                       </div>
                       <p className="mt-1 text-xs leading-relaxed text-neutral-500">{calc.body}</p>
                     </div>
-                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-400 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
               </div>
@@ -581,8 +584,7 @@ export default function HomePage() {
                 sets out what can be verified: how many UK adults hold cryptoassets, on FCA
                 consumer research; the CARF reporting timeline counting down to the 31 May 2027
                 deadline; and the CGT rates and disclosure windows that apply when that data
-                reaches HMRC. Every figure is cited to a primary source and refreshed as those
-                sources update. It is a compliance-awareness resource, not a tax estimate.
+                reaches HMRC. Every figure is cited to a primary source. It is a compliance-awareness resource, not a tax estimate.
               </p>
               <div className="mt-6">
                 <Link
@@ -590,7 +592,7 @@ export default function HomePage() {
                   className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#0e1a3a] hover:text-[#0e1a3a] transition-all ${focusRing}`}
                 >
                   View the UK Crypto Tax Compliance Index
-                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-neutral-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -681,6 +683,9 @@ export default function HomePage() {
       <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl mx-auto">
+            <div className="text-center">
+              <div className="section-label mb-4">Answers</div>
+            </div>
             <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-4xl">
               Common questions
             </h2>

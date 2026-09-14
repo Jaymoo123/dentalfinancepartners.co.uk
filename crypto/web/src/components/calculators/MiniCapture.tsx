@@ -2,14 +2,19 @@
 
 import { useEffect, useState } from "react";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
+import { niche } from "@/config/niche-loader";
+import { btnPrimary } from "@/components/ui/layout-utils";
 import { site } from "@/lib/calculators/site";
 
 type Status = "idle" | "loading" | "success" | "error";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Same recipe as the site's main LeadForm (components/forms/LeadForm.tsx:14),
+// plus a focus RING: a 1px border colour change on its own is a weak focus
+// indicator, and this form is the only one on the calculator pages.
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation border border-[var(--border)] bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-[var(--muted)] shadow-sm focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]/25 transition-colors";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-500 transition-colors focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]/30";
 
 export function MiniCapture({
   formId,
@@ -18,7 +23,11 @@ export function MiniCapture({
   blurb,
   submitLabel = "Request a callback",
   successText = "Thanks. We'll be in touch.",
-  className = "my-8 rounded-2xl border-l-4 border-[var(--brand-primary)] bg-[var(--surface)] p-6 sm:p-8",
+  // Radii and edges on the standard: rounded-xl with a slate ring, not the
+  // pre-port rounded-2xl plus a 4px brand rule. Slate card on a white ground,
+  // so it has an edge; the one caller that mounts this inside the calculator's
+  // own white card passes its own className.
+  className = "rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8",
 }: {
   formId: string;
   messagePrefix: string;
@@ -50,7 +59,7 @@ export function MiniCapture({
     const digits = String(data.get("phone") || "").replace(/\D/g, "");
     if (digits.length < 10) errs.phone = "Enter a phone number we can call you on.";
     if (String(data.get("message") || "").trim().length < 10)
-      errs.message = "Tell us a sentence or two about your business.";
+      errs.message = "Tell us a sentence or two about your situation.";
     setFieldErrors(errs);
     if (Object.keys(errs).length > 0) return;
 
@@ -126,14 +135,19 @@ export function MiniCapture({
           </div>
           <div className="sm:col-span-2">
             <label htmlFor={`${formId}-message`} className="block text-sm font-medium text-[var(--ink)]">
-              About your business
+              About your situation
             </label>
             <textarea
               id={`${formId}-message`}
               name="message"
               rows={3}
               className={inputClass}
-              placeholder="e.g. pub with 12 staff, need help with tronc setup and food VAT"
+              /* Was a HOSPITALITY placeholder ("pub with 12 staff ... tronc
+                 setup and food VAT") on a crypto site, inherited from whichever
+                 site this component was copied from. Now the canonical crypto
+                 string, read from niche.config.json so it cannot drift from the
+                 site's main lead form. */
+              placeholder={niche.lead_form.placeholders.message}
             />
             {fieldErrors.message && <p className="mt-1 text-xs text-red-600">{fieldErrors.message}</p>}
           </div>
@@ -163,7 +177,13 @@ export function MiniCapture({
             <button
               type="submit"
               disabled={status === "loading"}
-              className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[var(--brand-primary)] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
+              /* The site button recipe, not a fourth hand-rolled one. It already
+                 fixes display, size, padding, weight, hover, disabled and a
+                 focus-visible outline this button previously had none of, so
+                 nothing is appended on top of it: a competing single-class
+                 utility would tie on specificity and be settled by Tailwind's
+                 emission order rather than by this class string. */
+              className={btnPrimary}
             >
               {status === "loading" ? "Sending..." : submitLabel}
             </button>

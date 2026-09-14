@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect } from "react";
 import Link from "next/link";
@@ -30,7 +30,7 @@ export default function Error({
           </div>
         )}
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
-          <button onClick={reset} className={`${btnPrimary} inline-flex`}>
+          <button onClick={reset} className={btnPrimary}>
             Try again
           </button>
           <Link
@@ -42,7 +42,7 @@ export default function Error({
         </div>
         <p className="mt-8 text-sm text-[var(--muted)]">
           If this keeps happening, please{" "}
-          <Link href="/contact" className="font-semibold text-[#0e1a3a] underline">
+          <Link href="/contact" className="font-semibold text-[var(--accent-strong)] underline">
             get in touch
           </Link>
           .

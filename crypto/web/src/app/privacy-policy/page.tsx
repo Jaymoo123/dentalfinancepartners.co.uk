@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 
 const company = siteConfig.company;
 
@@ -25,8 +26,12 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[{ label: "Home", href: "/" }, { label: "Privacy policy" }]}
+        siteUrl={siteConfig.url}
+      />
       <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 10 August 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 14 September 2026</p>
       <div className="mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to
@@ -50,7 +55,7 @@ export default function PrivacyPolicyPage() {
         <p>
           If you have any questions about this policy or wish to exercise your rights, please contact
           us through our{" "}
-          <Link href="/contact" className="text-[#0e1a3a] underline">contact page</Link>.
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
 
         <h2 className="text-xl font-bold text-[var(--ink)]">2. What information we collect</h2>
@@ -72,10 +77,11 @@ export default function PrivacyPolicyPage() {
           </li>
           <li>
             <strong>Analytics and technical data:</strong> information about how you use the Site
-            (such as pages viewed, device and browser type, and an approximate country derived from
-            your IP address). Our hosting provider may also log technical request data for security
-            and performance. See our{" "}
-            <Link href="/cookie-policy" className="text-[#0e1a3a] underline">cookie policy</Link>{" "}
+            (such as pages viewed, device and browser type, and the approximate location and
+            timezone our hosting provider derives from your IP address: country, region, city and
+            timezone). We do not store your IP address itself. Our hosting provider may also log
+            technical request data for security and performance. See our{" "}
+            <Link href="/cookie-policy" className="text-[var(--accent-strong)] underline">cookie policy</Link>{" "}
             for detail.
           </li>
         </ul>
@@ -203,7 +209,7 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           To exercise any of these rights, please contact us through our{" "}
-          <Link href="/contact" className="text-[#0e1a3a] underline">contact page</Link>. We will
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>. We will
           respond within one month.
         </p>
         <p>
@@ -213,7 +219,7 @@ export default function PrivacyPolicyPage() {
             href="https://ico.org.uk/make-a-complaint/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0e1a3a] underline"
+            className="text-[var(--accent-strong)] underline"
           >
             ico.org.uk/make-a-complaint
           </a>
@@ -222,10 +228,12 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-xl font-bold text-[var(--ink)]">8. Cookies and analytics</h2>
         <p>
-          We use cookies and similar technologies for analytics, so we can understand how the Site
-          is used and improve it. For full details of what we use and how to manage or opt out,
-          please see our{" "}
-          <Link href="/cookie-policy" className="text-[#0e1a3a] underline">cookie policy</Link>.
+          We run our own first-party analytics so we can understand how the Site is used and improve
+          it. It does not use cookies: the two random identifiers it needs are held in your
+          browser&apos;s local and session storage, and clearing site data for this Site in your
+          browser settings removes them. We do not use Google Analytics or any other third-party
+          analytics. For full details, please see our{" "}
+          <Link href="/cookie-policy" className="text-[var(--accent-strong)] underline">cookie policy</Link>.
         </p>
 
         <h2 className="text-xl font-bold text-[var(--ink)]">9. How we protect your data and international transfers</h2>
@@ -247,7 +255,7 @@ export default function PrivacyPolicyPage() {
         <p>
           If you have any questions about this privacy policy or how we handle your data, please
           contact us through our{" "}
-          <Link href="/contact" className="text-[#0e1a3a] underline">contact page</Link>.
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
       </div>
     </div>

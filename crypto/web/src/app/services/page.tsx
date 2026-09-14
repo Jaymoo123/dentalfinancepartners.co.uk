@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { PageHero } from "@/app/_parts/PageHero";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { sectionY, siteContainerLg } from "@/components/ui/layout-utils";
 import { cryptoServices } from "@/data/crypto-services";
 import { serviceTiers } from "@/config/service-tiers";
 import { siteConfig } from "@/config/site";
@@ -16,33 +17,30 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (<>
-    <section className="border-b border-neutral-200 bg-[#0e1a3a] py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Crypto tax services.</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">Five specialist services built around the tax and compliance obligations that cryptoasset holders actually face.</p>
-      </div>
-    </section>
+    <PageHero eyebrow="Crypto tax services" title="Crypto tax services." items={[{ label: "Home", href: "/" }, { label: "Services" }]}>
+      <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">Five specialist services built around the tax and compliance obligations that cryptoasset holders actually face.</p>
+    </PageHero>
 
-    <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
-      <div className={siteContainerLg}>
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <section className="bg-slate-50">
+      <div className={`${siteContainerLg} ${sectionY}`}>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {cryptoServices.map((service) => (
-            <Link key={service.slug} href={`/services/${service.slug}`} className="group block bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-[#0e1a3a] transition-all">
-              <h2 className="text-xl font-bold tracking-tight text-neutral-900 group-hover:text-[#0e1a3a] transition-colors sm:text-2xl">{service.title}</h2>
+            <Link key={service.slug} href={`/services/${service.slug}`} className="group flex flex-col rounded-xl bg-white p-6 ring-1 ring-slate-200/70 transition-shadow hover:shadow-[0_18px_40px_-28px_rgba(15,23,42,0.4)] sm:p-8">
+              <h2 className="text-lg font-bold tracking-tight text-slate-900 transition-colors group-hover:text-primary-700 sm:text-xl">{service.title}</h2>
               {/* ponytail: card sits inside a Link, so the intro's inline anchors are stripped rather than nested */}
-              <p className="mt-3 text-sm leading-relaxed text-neutral-600 line-clamp-3">{stripHtml(service.intro)}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#0e1a3a]">Learn more</span>
+              <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-slate-600">{stripHtml(service.intro)}</p>
+              <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary-700">Learn more</span>
             </Link>
           ))}
         </div>
       </div>
     </section>
 
-    <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto max-w-3xl text-center mb-10 sm:mb-14">
-          <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">Three service tiers</h2>
-          <p className="mt-4 text-base leading-relaxed text-neutral-600">
+    <section className="border-t border-slate-200 bg-white">
+      <div className={`${siteContainerLg} ${sectionY}`}>
+        <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Three service tiers</h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
             Simple CGT filing for straightforward investors, full reconciliation for complex portfolios, and disclosure support for prior-year corrections. You can move tier at any point.
           </p>
         </div>
@@ -50,21 +48,27 @@ export default function ServicesPage() {
       </div>
     </section>
 
-    <section className="border-t border-neutral-200 bg-[#fafaf9] py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:gap-16 items-start">
+    {/* The site's one enquiry surface on this route, kept where it has always
+        been. Deliberately NOT the kit's LeadCTAPanel: its proofPoints contract
+        is {title, detail}, and this page's three published lines are single
+        sentences with no second half. Adopting the panel would mean either
+        inventing a detail string for each or dropping three lines of published
+        copy, and neither is a design decision. */}
+    <section className="border-t border-slate-200 bg-slate-50">
+      <div className={`${siteContainerLg} ${sectionY}`}>
+        <div className="mx-auto grid max-w-5xl items-start gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">Not sure which service you need?</h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-600">Tell us about your crypto situation and we will explain what is required.</p>
-            <ul className="mt-8 space-y-3 text-sm text-neutral-600">
-              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-[#0e1a3a]">✓</span><span>Reviewed by a crypto tax specialist, not a generalist</span></li>
-              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-[#0e1a3a]">✓</span><span>No obligation, free initial reply</span></li>
-              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-[#0e1a3a]">✓</span><span>We explain what is required before any engagement begins</span></li>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Not sure which service you need?</h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">Tell us about your crypto situation and we will explain what is required.</p>
+            <ul className="mt-8 space-y-3 text-sm text-slate-600">
+              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-primary-700">✓</span><span>Reviewed by a crypto tax specialist, not a generalist</span></li>
+              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-primary-700">✓</span><span>No obligation, free initial reply</span></li>
+              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-primary-700">✓</span><span>We explain what is required before any engagement begins</span></li>
             </ul>
           </div>
-          <div className="bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm">
-            <h3 className="text-xl font-bold text-neutral-900">Get in touch</h3>
-            <p className="mt-2 text-sm text-neutral-500">Tell us what you need and we will come back to you.</p>
+          <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
+            <h3 className="text-xl font-bold text-slate-900">Get in touch</h3>
+            <p className="mt-2 text-sm text-slate-600">Tell us what you need and we will come back to you.</p>
             <div className="mt-6">
               <LeadForm redirectOnSuccess={false} submitLabel="Send enquiry" />
             </div>

@@ -12,7 +12,12 @@ export const cryptoServices: CryptoService[] = [
     title: "HMRC Disclosure",
     headline: "HMRC crypto disclosure for unpaid cryptoasset tax",
     metaTitle: "HMRC Crypto Disclosure Service | Crypto Tax Partners",
-    metaDescription: "Specialist help with HMRC crypto disclosure. Nudge letter response, years assessable by behaviour band, penalty range and voluntary disclosure route.",
+    // "penalty range" removed: the page deliberately declines to publish one
+    // (the FAQ below says "we do not assert a fixed percentage because the
+    // ranges depend on the full facts"), and house_positions.md §31 forbids
+    // asserting a percentage without re-verifying it at build time. A SERP
+    // promise the page does not keep is the defect, not the page's caution.
+    metaDescription: "Specialist help with HMRC crypto disclosure. Nudge letter response, years assessable by behaviour band, s104 pooling and the voluntary disclosure route.",
     intro: "If you have received a nudge letter about cryptoassets, or you know you have undeclared gains before HMRC's Cryptoasset Reporting Framework begins flowing exchange data from January 2027, the right move is a managed, voluntary disclosure, not silence. HMRC operates a dedicated <a href=\"https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets\">cryptoasset disclosure service</a> separate from the general Worldwide Disclosure Facility. Coming forward voluntarily, with a correctly reconstructed position including <a href=\"https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200\">s104 pooling</a> at average cost, puts you in the best possible position on the number of years assessed and the penalty outcome. The firm handles the full process: reconstruct your transaction history, compute the correct liability, prepare and submit the disclosure, and manage HMRC correspondence through to settlement.",
     stats: [
       { value: "4 years", label: "Years HMRC can assess where under-declaration arose from reasonable care (non-deliberate)" },

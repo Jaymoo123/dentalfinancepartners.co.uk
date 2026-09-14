@@ -3,9 +3,62 @@
 @source "../../../../packages/web-shared";
 /* Article bodies here carry class="prose" and the homepage uses .section-label, neither of which had any rule, so without this line those pages render unstyled. */
 @import "../../../../packages/site-styles/prose-standard.css";
-:root {
-  --background: #ffffff; --surface: #f8fafc; --surface-elevated: #ffffff;
-  --ink: #0f172a; --ink-soft: #334155; --muted: #475569; --border: #e2e8f0;
-  --brand-primary: #0e1a3a; --brand-primary-strong: #0e1a3a; --brand-on-primary: #ffffff;
+
+/* Tailwind v4 theme namespace. --color-* MUST be declared here and never in :root:
+   outside @theme the name collides with the v4 namespace and generates no utility.
+   The kit reads --color-primary-600/700/800 BARE (packages/web-shared/design/layout-utils.ts:31)
+   as the fallback of its btnPrimary ground chain. An undefined custom property invalidates the
+   WHOLE declaration, so an undeclared step renders NO background, not a black one, with every
+   test green. This ramp is the burnt-orange action ramp, anchored on the two hexes the site
+   already renders as its CTA hover/active states. Ratios on white:
+     400 3.05 | 500 5.30 | 600 7.08 | 700 9.93 | 800 12.56 | 900 15.43 */
+@theme {
+  --color-primary-50: #fbf3ee;
+  --color-primary-100: #f6e2d6;
+  --color-primary-200: #e9c2a8;
+  --color-primary-400: #c9835c;
+  --color-primary-500: #a85427;
+  --color-primary-600: #8f421f;
+  --color-primary-700: #6e3118;
+  --color-primary-800: #552612;
+  --color-primary-900: #3d1b0d;
 }
-body { background: var(--background); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
+
+:root {
+  --background: #ffffff; --surface: #f8fafc;
+  --ink: #0f172a; --ink-soft: #334155; --muted: #475569; --border: #e2e8f0;
+
+  /* Ground identity. Navy is 17.11:1 on white, so it clears the graphic (3.0), text (4.5) and
+     ground (4.5) floors -- but it sits 1.04:1 against --ink, so it cannot MARK an action: a navy
+     link on a page of near-navy body text is not identifiable as a link. Ground hue and action
+     hue are therefore split. --brand-primary itself is deliberately unchanged. */
+  --brand-primary: #0e1a3a;
+  --brand-primary-ground: #0e1a3a;
+  --brand-on-primary: #ffffff;
+
+  /* Action ramp. #8f421f is 7.08:1 on white and #6e3118 is 9.93:1; both clear all three floors.
+     Both already existed as the CTA hover/active states in
+     crypto/web/src/components/ui/layout-utils.ts, so this promotes a colour the site already
+     renders rather than introducing one. --brand-primary-strong was previously a duplicate of
+     --brand-primary, which made every hover reading it a no-op (prose links, ServiceTiers). */
+  --brand-primary-text: #8f421f;
+  --brand-primary-strong: #8f421f;
+  --primary: #8f421f;
+  --accent: #8f421f;
+  --accent-strong: #6e3118;
+
+  /* The kit's btnPrimary ground chain. Declared so the navy button ground survives adoption of
+     the kit recipe: ground navy, hover and active on the action ramp, which is exactly what the
+     local recipe already renders. */
+  --btn-ground: #0e1a3a;
+  --btn-ground-hover: #8f421f;
+  --btn-ground-active: #6e3118;
+}
+
+/* @layer base, not unlayered. Tailwind v4 emits utilities into @layer utilities, and an
+   UNLAYERED element rule beats every layer whatever the specificity, so unlayered this rule
+   would silently kill the first body-level bg-*, text-* or next/font class any later package
+   adds. */
+@layer base {
+  body { background: var(--background); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
+}

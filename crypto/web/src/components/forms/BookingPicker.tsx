@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 /**
  * Native callback slot picker: next 10 weekdays x 3 call windows, posted to
@@ -14,6 +14,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "@/components/ui/layout-utils";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
@@ -75,9 +76,8 @@ export default function BookingPicker({ token }: { token: string }) {
 
   if (status === "done") {
     return (
-      <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-        <p className="text-lg font-bold text-neutral-900">Callback booked</p>
-        <p className="mt-2 text-base text-neutral-700">
+      <NoticeCard tone="primary" title="Callback booked">
+        <p className="text-base text-neutral-700">
           {confirmedLabel ? (
             <>
               We have you down for <strong>{confirmedLabel}</strong>.
@@ -88,25 +88,25 @@ export default function BookingPicker({ token }: { token: string }) {
           A crypto tax specialist will call you then. If your plans change, just reply to any of our
           messages.
         </p>
-        <p className="mt-3 text-sm text-neutral-500">
+        <p className="mt-3 text-sm text-neutral-600">
           The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "expired") {
     return (
-      <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
-        <p className="text-base text-neutral-600">
+      <NoticeCard>
+        <p className="text-base text-neutral-700">
           This booking link has expired. No problem, you can still reach us through the contact
           form and we will arrange your review.
         </p>
-        <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+        <Link href="/contact" className={`${btnPrimary} mt-4`}>
           Go to the contact form
         </Link>
-      </div>
+      </NoticeCard>
     );
   }
 
@@ -164,7 +164,7 @@ export default function BookingPicker({ token }: { token: string }) {
             Something went wrong saving your slot. Please try again.
           </p>
         )}
-        <p className="mt-3 text-xs text-neutral-500">
+        <p className="mt-3 text-xs text-neutral-600">
           No obligation. A crypto tax specialist will call you in your chosen window.
         </p>
       </div>

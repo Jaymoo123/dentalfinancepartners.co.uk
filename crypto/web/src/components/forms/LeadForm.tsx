@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -11,11 +11,11 @@ import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analy
 import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
 
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] focus:outline-none";
+  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-500 transition-colors focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-primary-500/30";
 const labelClass = "block text-sm font-medium text-neutral-900";
 const errorClass = "mt-2 text-xs text-red-600";
 const btnClass =
-  "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[var(--brand-primary)] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50";
+  "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[var(--btn-ground)] px-6 py-3 text-base font-semibold text-white transition-colors duration-150 hover:bg-[var(--btn-ground-hover)] active:bg-[var(--btn-ground-active)] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -394,7 +394,7 @@ export function LeadForm({
               as a notice, not a tick-box. */}
           <p className="text-xs leading-relaxed text-neutral-600">
             {siteConfig.leadConsentText} See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium text-[var(--accent-strong)] underline">
               Privacy Policy
             </a>
             .
@@ -429,7 +429,7 @@ export function LeadForm({
             <button
               type="button"
               onClick={() => setStep(0)}
-              className="text-sm font-medium text-neutral-500 underline"
+              className="text-sm font-medium text-neutral-600 underline"
             >
               Back
             </button>

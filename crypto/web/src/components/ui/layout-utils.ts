@@ -15,7 +15,7 @@ export const focusRing =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a]";
 
 export const btnPrimary =
-  "inline-flex min-h-12 items-center justify-center bg-[#0e1a3a] px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-[#8f421f] active:bg-[#6e3118] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a]";
+  "inline-flex min-h-12 items-center justify-center bg-[#0e1a3a] px-7 py-3.5 text-base font-medium text-white tracking-wide transition-colors duration-150 hover:bg-[#8f421f] active:bg-[#6e3118] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a]";
 
 export const btnOnTeal =
   "inline-flex min-h-12 items-center justify-center bg-neutral-900 px-7 py-3.5 text-sm font-medium text-white tracking-wide transition-colors duration-150 hover:bg-black active:bg-black disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Cookie policy",
@@ -23,6 +24,10 @@ export const metadata: Metadata = {
 export default function CookiePolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[{ label: "Home", href: "/" }, { label: "Cookie policy" }]}
+        siteUrl={siteConfig.url}
+      />
       <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Cookie policy</h1>
       <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 14 September 2026</p>
       <div className="mt-8 space-y-6 text-[var(--ink-soft)]">
@@ -62,8 +67,8 @@ export default function CookiePolicyPage() {
           analytics data collected is through our own first-party system described above.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">2. Purpose of cookies</h2>
-        <p>We use cookies to:</p>
+        <h2 className="text-xl font-bold text-[var(--ink)]">2. What we use it for</h2>
+        <p>We use the first-party analytics described above to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Understand which pages are most useful to crypto investors and traders</li>
           <li>Identify technical issues or broken links</li>
@@ -71,8 +76,8 @@ export default function CookiePolicyPage() {
           <li>Improve the overall user experience</li>
         </ul>
         <p>
-          We do <strong>not</strong> use cookies for advertising, remarketing, or selling your data
-          to third parties.
+          We do <strong>not</strong> use cookies or any similar technology for advertising,
+          remarketing, or selling your data to third parties.
         </p>
 
         <h2 className="text-xl font-bold text-[var(--ink)]">3. How to manage cookies</h2>
@@ -90,7 +95,7 @@ export default function CookiePolicyPage() {
               href="https://support.google.com/chrome/answer/95647"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#0e1a3a] underline"
+              className="text-[var(--accent-strong)] underline"
             >
               Google Chrome
             </a>
@@ -100,7 +105,7 @@ export default function CookiePolicyPage() {
               href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#0e1a3a] underline"
+              className="text-[var(--accent-strong)] underline"
             >
               Mozilla Firefox
             </a>
@@ -110,7 +115,7 @@ export default function CookiePolicyPage() {
               href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#0e1a3a] underline"
+              className="text-[var(--accent-strong)] underline"
             >
               Safari
             </a>
@@ -120,7 +125,7 @@ export default function CookiePolicyPage() {
               href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#0e1a3a] underline"
+              className="text-[var(--accent-strong)] underline"
             >
               Microsoft Edge
             </a>
@@ -143,7 +148,7 @@ export default function CookiePolicyPage() {
         <h2 className="text-xl font-bold text-[var(--ink)]">5. Contact us</h2>
         <p>
           If you have questions about our use of cookies, please contact us via our{" "}
-          <Link href="/contact" className="text-[#0e1a3a] underline">contact page</Link>.
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
       </div>
     </div>

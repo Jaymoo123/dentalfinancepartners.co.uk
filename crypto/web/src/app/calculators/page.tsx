@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
+import { sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = {
   title: `Free Crypto Tax Calculators`,
@@ -12,28 +15,95 @@ export const metadata: Metadata = {
 export default function CalculatorsPage() {
   const tools = allTools();
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16">
-      <h1 className="text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
-        Crypto tax calculators
-      </h1>
-      <p className="mt-4 max-w-2xl text-lg text-[var(--ink-soft)]">
-        Free scenario tools built on 2026/27 HMRC rules. All calculators are estimation tools only: speak to a specialist before filing.
-      </p>
-      <div className="mt-10 grid gap-6 sm:grid-cols-2">
-        {tools.map((t) => (
-          <Link
-            key={t.slug}
-            href={toolPath(t.slug)}
-            className="block rounded-2xl border border-[var(--border)] bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
-          >
-            <div className="text-xs font-semibold uppercase tracking-wide text-[var(--brand-primary)]">
-              {t.category}
+    <>
+      {/* Hero. Same recipe as /services/[slug] and /for/[slug]: navy ground,
+          breadcrumb, eyebrow, h1, standfirst. The shell owns <main>, so this
+          page starts at a section and its first heading is the h1.
+
+          No hero CTA, unlike the topic pages. The action on this page is the
+          tool list immediately below it, and a "Get in touch" button above the
+          fold competes with it for the same click. The closing panel carries
+          the ask instead. */}
+      <section className="border-b border-neutral-200 bg-[#0e1a3a]">
+        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+          <Breadcrumb
+            items={[{ label: "Home", href: "/" }, { label: "Calculators" }]}
+            siteUrl={site.url}
+            onDark
+          />
+          <div className="max-w-3xl">
+            <Eyebrow onDark>Free tools</Eyebrow>
+            <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Crypto tax calculators.
+            </h1>
+            <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+              {tools.length} free scenario tools built on 2026/27 HMRC rules. No sign-up, no email
+              needed to see a figure. Every one is an estimation tool: speak to a specialist before
+              you file.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* The tool list.
+          Property groups this index by category under its own h3 per category,
+          which works there because sixteen tools fall into six categories. Here
+          four tools fall into four categories, so grouping would produce four
+          headings with one card each and give "HMRC Disclosure" the same weight
+          as the page title. Property's own file carries a comment warning
+          against exactly that shape. One grid, category as a card label. */}
+      <section className="bg-slate-50">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <h2 className="max-w-3xl text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            Pick the question you need answered.
+          </h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {tools.map((t) => (
+              <Link
+                key={t.slug}
+                href={toolPath(t.slug)}
+                className="group flex flex-col rounded-xl bg-white p-6 ring-1 ring-slate-200/70 transition-shadow hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0e1a3a] sm:p-8"
+              >
+                <span className="text-xs font-semibold uppercase tracking-wide text-primary-700">
+                  {t.category}
+                </span>
+                <span className="mt-3 text-lg font-bold text-slate-900 group-hover:text-primary-700">
+                  {t.name}
+                </span>
+                <span className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+                  {t.oneLiner}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Closing ask. A LINK to /contact, the same posture as the topic pages:
+          this page carries no capture surface today and adding one is an owner
+          decision. White ground so the navy panel is not the second navy field
+          running straight into the slate-900 footer. */}
+      <section className="bg-white">
+        <div className={`${siteContainerLg} ${sectionY}`}>
+          <div className="rounded-xl bg-[#0e1a3a] p-8 sm:p-12">
+            <h2 className="max-w-2xl text-2xl font-bold tracking-tight text-white sm:text-3xl">
+              Need help reading your result?
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+              These tools give you the shape of the answer. Tell us about your situation and we will
+              confirm the figures and the filing position that actually apply to you.
+            </p>
+            <div className="mt-8">
+              <Link
+                href="/contact"
+                className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-[#0e1a3a] transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Get in touch
+              </Link>
             </div>
-            <h2 className="mt-2 text-xl font-bold text-[var(--ink)]">{t.name}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{t.oneLiner}</p>
-          </Link>
-        ))}
-      </div>
-    </main>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

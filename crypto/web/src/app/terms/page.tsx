@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Terms of use",
@@ -23,6 +24,10 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Breadcrumb
+        items={[{ label: "Home", href: "/" }, { label: "Terms of use" }]}
+        siteUrl={siteConfig.url}
+      />
       <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Terms of use</h1>
       <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 15 July 2026</p>
       <div className="mt-8 space-y-6 text-[var(--ink-soft)]">
@@ -38,7 +43,7 @@ export default function TermsPage() {
           a company registered in {siteConfig.company.placeOfRegistration} under company number{" "}
           {siteConfig.company.number}, with its registered office at{" "}
           {siteConfig.company.registeredOfficeLine}. You can contact us via our{" "}
-          <Link href="/contact" className="text-[#0e1a3a] underline">contact page</Link>.
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
 
         <h2 className="text-xl font-bold text-[var(--ink)]">2. No advice provided on the Site</h2>
@@ -156,7 +161,7 @@ export default function TermsPage() {
         <h2 className="text-xl font-bold text-[var(--ink)]">13. Contact us</h2>
         <p>
           Questions about these terms? Contact us via our{" "}
-          <Link href="/contact" className="text-[#0e1a3a] underline">contact page</Link>.
+          <Link href="/contact" className="text-[var(--accent-strong)] underline">contact page</Link>.
         </p>
       </div>
     </div>

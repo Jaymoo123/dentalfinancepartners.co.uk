@@ -3,15 +3,18 @@ import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { adminSelect } from "@/lib/supabase/admin";
 import DetailsForm from "@/components/forms/DetailsForm";
+import { PageHero } from "@/app/_parts/PageHero";
 
 /**
  * "Complete your details" page, linked from a nurture email as
  * /complete?t=<signed profile token>. A lead who came in without a name and/or a
  * phone (the email-only "Ask a specialist" widget) fills the gap here so we can
  * forward them. The token identifies the lead; the page only ever asks for the
- * field(s) still below floor, never email. Noindexed like /book.
+ * field(s) still below floor, never email. Noindexed like /book, and like /book
+ * the hero carries no breadcrumb.
  */
 
 export const metadata: Metadata = {
@@ -20,18 +23,18 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-/** Shared "needs the personal link" fallback, cloned from /book. */
+/** Shared "needs the personal link" outcome, cloned from /book. */
 function NeedsLinkCard() {
   return (
-    <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
-      <p className="text-base text-neutral-600">
+    <NoticeCard>
+      <p className="text-base text-neutral-700">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
-      <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+      <Link href="/contact" className={`${btnPrimary} mt-4`}>
         Go to the contact form
       </Link>
-    </div>
+    </NoticeCard>
   );
 }
 
@@ -51,15 +54,15 @@ export default async function CompletePage({
     const verdict = verifyLeadToken(token, "profile");
     if (!verdict.ok) {
       inner = (
-        <div className="border border-neutral-200 bg-neutral-50 p-6 text-center">
-          <p className="text-base text-neutral-600">
+        <NoticeCard>
+          <p className="text-base text-neutral-700">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
-          <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+          <Link href="/contact" className={`${btnPrimary} mt-4`}>
             Go to the contact form
           </Link>
-        </div>
+        </NoticeCard>
       );
     } else {
       let missing: ("name" | "phone")[] = ["name", "phone"];
@@ -88,19 +91,18 @@ export default async function CompletePage({
           bookingToken = null;
         }
         inner = (
-          <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-            <p className="text-lg font-bold text-neutral-900">You are all set</p>
-            <p className="mt-2 text-base text-neutral-600">
+          <NoticeCard tone="primary" title="You are all set">
+            <p className="text-base text-neutral-700">
               We have everything we need. A specialist firm from our partner network may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
             {bookingToken && (
-              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4`}>
                 Book a callback
               </Link>
             )}
-          </div>
+          </NoticeCard>
         );
       } else {
         inner = <DetailsForm token={token} missing={missing} />;
@@ -109,19 +111,19 @@ export default async function CompletePage({
   }
 
   return (
-    <section className="bg-white py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-neutral-900 sm:text-4xl">
-            Complete your details
-          </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-neutral-600">
-            Add the last detail we need and a specialist firm from our partner network will be in
-            touch to arrange your free crypto tax review, no obligation.
-          </p>
-          <div className="mt-10">{inner}</div>
+    <>
+      <PageHero eyebrow="One last thing" title="Complete your details">
+        <p className="mt-4 text-lg leading-relaxed text-white/80">
+          Add the last detail we need and a specialist firm from our partner network will be in
+          touch to arrange your free crypto tax review, no obligation.
+        </p>
+      </PageHero>
+
+      <section className="bg-white py-12 sm:py-16">
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-2xl">{inner}</div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

@@ -20,3 +20,25 @@ from the current tree this session. Production SHA for the baseline: `7b5c0ce8`
 
 Phase 0 closes when: every ledger row is graded, the serious tier is fixed and committed,
 and the owner gate on the ledger is cleared. Phase 1 does not start before that.
+
+---
+
+# Phases 1 to 6, one wave, disjoint file sets
+
+Token ramp ran ALONE first because every visual package blocks on it.
+Action colour OWNER-APPROVED in session: `#8f421f` action, `#6e3118` strong,
+navy `#0e1a3a` stays the ground identity.
+
+| pkg | phase | scope | files owned | status |
+|---|---|---|---|---|
+| P1-TOKENS | 1 | token ramp, `@theme` primary ramp, body into `@layer base`, sub-floor sweep, CTA size | `globals.css`, `components/ui/layout-utils.ts`, listed call sites | DONE |
+| W1 | 1 | chrome: first-ever header, nav, `<main>`, skip link, kit PageShell + client shell wrapper, six kit props | `app/layout.tsx`, `components/ui/SiteFooter.tsx`, new shell | launched |
+| W2 | 2 | blog subsystem, index/category/post, table overflow at 390 | `app/blog/**` | launched |
+| W3 | 3 | service pages + audience hubs + their data files | `app/services/**`, `app/for/**`, `data/` | launched |
+| W4 | 4 | calculators, embed, warn-tone contrast | `app/calculators/**`, `components/calculators/**`, `app/embed/**`, `lib/calculators/` | launched |
+| W5 | 5 | homepage + research, section grounds rhythm | `app/page.tsx`, `app/research/**` | launched |
+| W6 | 6 | contact, book/complete/thank-you, about, legal, error, forms | `app/about contact book complete thank-you privacy-policy cookie-policy terms`, `error.tsx`, `components/forms/` | launched |
+
+Close: ONE build, execute every package's written verification list against it,
+THEN tag. Then two independent adversarial reviews against the rendered DOM
+(one design, one content), then a gap-fix wave.

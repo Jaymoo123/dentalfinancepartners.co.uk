@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 /**
  * "Complete your details" form. A lead who arrived missing a name and/or phone
@@ -13,10 +13,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { btnPrimary } from "@/components/ui/layout-utils";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 transition-colors focus:border-[var(--brand-primary)] focus:outline-none";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 transition-colors focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-primary-500/30";
 
 type MissingField = "name" | "phone";
 
@@ -110,30 +111,28 @@ export default function DetailsForm({
 
   if (status === "success") {
     return (
-      <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-        <p className="text-lg font-bold text-neutral-900">Thank you, that is everything we need</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <NoticeCard tone="primary" title="Thank you, that is everything we need">
+        <p className="text-base text-neutral-700">
           A crypto tax specialist will be in touch. If you would like to pick a time that suits
           you, you can book a callback below.
         </p>
         {bookingToken && (
-          <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+          <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4`}>
             Book a callback
           </Link>
         )}
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "partial") {
     return (
-      <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-        <p className="text-lg font-bold text-neutral-900">Thank you</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <NoticeCard tone="primary" title="Thank you">
+        <p className="text-base text-neutral-700">
           We have saved that. We still need {remainingLabel(remaining)}. We will pop you a quick note
           so you can add it, or you can reply to any of our messages.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
@@ -207,7 +206,7 @@ export default function DetailsForm({
           href="/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium underline"
+          className="font-medium text-[var(--accent-strong)] underline"
         >
           Privacy Policy
         </a>

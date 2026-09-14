@@ -1,9 +1,14 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import data from "@/data/uk-crypto-tax-gap-index.json";
+
+// CarfCountdown derives its figure from Date.now() at render time. Statically
+// prerendered that number freezes at build. One day is the finest granularity
+// the figure has, so revalidating daily is enough to keep it true.
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: "UK Crypto Tax Compliance Index | Crypto Tax Partners",
@@ -23,9 +28,9 @@ function CarfCountdown() {
         UK exchanges must submit their first CARF report to HMRC by{" "}
         <strong className="text-white/80">31 May 2027</strong>, covering the 2026 calendar year. The reporting window opens 1 January 2027.
       </p>
-      <p className="mt-3 text-xs text-white/40">
+      <p className="mt-3 text-xs text-white/70">
         Source:{" "}
-        <a href={data.carfTimeline.sourcesReporting} className="underline hover:text-white/70" target="_blank" rel="noopener noreferrer">
+        <a href={data.carfTimeline.sourcesReporting} className="underline hover:text-white" target="_blank" rel="noopener noreferrer">
           HMRC CARF reporting guidance
         </a>
       </p>
@@ -49,7 +54,7 @@ const datasetJsonLd = buildDatasetJsonLd({
 
 export default function CryptoTaxComplianceIndexPage() {
   return (
-    <main>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       <section className="border-b border-neutral-200 bg-[#0e1a3a] py-16 sm:py-20">
         <div className={siteContainerLg}>
@@ -83,7 +88,7 @@ export default function CryptoTaxComplianceIndexPage() {
           </p>
           <CarfCountdown />
           <p className="mt-6 text-sm text-neutral-500 max-w-2xl">
-            Once the first CARF data reaches HMRC, exchanges can no longer be an invisible corner of holders' finances. The data will cover trades, disposals, and income events across the 2026 tax year. Holders with unreported gains should act before HMRC writes first.
+            Once the first CARF data reaches HMRC, exchanges can no longer be an invisible corner of holders&rsquo; finances. The data will cover trades, disposals, and income events across the 2026 tax year. Holders with unreported gains should act before HMRC writes first.
           </p>
         </div>
       </section>
@@ -97,7 +102,7 @@ export default function CryptoTaxComplianceIndexPage() {
               <div className="text-4xl font-bold font-mono text-[#0e1a3a]">{data.ownership.shareOfUKAdultsLabel}</div>
               <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">of UK adults hold cryptoassets</div>
               <p className="mt-3 text-sm text-neutral-600">
-                Approximately {data.ownership.approximateHolderCount} people, based on the{" "}
+                {data.ownership.approximateHolderCount} people, based on the{" "}
                 <a href={data.ownership.sourceUrl} className="text-[#0e1a3a] underline hover:opacity-75" target="_blank" rel="noopener noreferrer">
                   {data.ownership.source}
                 </a>{" "}
@@ -112,14 +117,14 @@ export default function CryptoTaxComplianceIndexPage() {
               </p>
             </div>
           </div>
-          <p className="mt-4 text-xs text-neutral-400">
+          <p className="mt-4 text-xs text-neutral-600">
             Source:{" "}
             <a href={data.ownership.sourceUrl} className="underline" target="_blank" rel="noopener noreferrer">
               FCA Cryptoassets Consumer Research 2024 (Wave 5)
             </a>
             , published November 2024, corrected March 2025. The FCA has since published a 2025 wave (Wave 6); the figures above are the Wave 5 figures and have not yet been restated to Wave 6. Check the FCA link for the latest published figure.
           </p>
-          <p className="mt-2 text-xs text-neutral-400">
+          <p className="mt-2 text-xs text-neutral-600">
             Note: HMRC does not publish a crypto-specific tax gap figure. No modelled gap estimate is stated here.
           </p>
         </div>
@@ -153,7 +158,7 @@ export default function CryptoTaxComplianceIndexPage() {
               <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">CGT rates on crypto gains</div>
               <p className="mt-2 text-sm text-neutral-600">
                 <a href={data.cgtParameters.sourceUrl} className="text-[#0e1a3a] underline hover:opacity-75" target="_blank" rel="noopener noreferrer">
-                  18% only on the portion of a gain that fits within the taxpayer's remaining basic-rate income tax band
+                  18% only on the portion of a gain that fits within the taxpayer&rsquo;s remaining basic-rate income tax band
                 </a>{" "}
                 (band ceiling {data.cgtParameters.basicRateBandLabel} for {data.cgtParameters.taxYear}); 24% above that threshold. Higher and additional-rate taxpayers pay 24% on the full gain.
               </p>
@@ -179,6 +184,7 @@ export default function CryptoTaxComplianceIndexPage() {
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-8">CARF timeline: what happens when</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
+              <caption className="sr-only">CARF reporting timeline: date and event</caption>
               <thead>
                 <tr className="border-b-2 border-neutral-900">
                   <th className="text-left py-3 pr-8 font-semibold text-neutral-900">Date</th>
@@ -204,12 +210,12 @@ export default function CryptoTaxComplianceIndexPage() {
                 </tr>
                 <tr className="border-b border-neutral-100">
                   <td className="py-3 pr-8 text-neutral-700 font-mono whitespace-nowrap">31 May annually</td>
-                  <td className="py-3 text-neutral-700">Ongoing deadline for each subsequent year's report covering the prior calendar year.</td>
+                  <td className="py-3 text-neutral-700">Ongoing deadline for each subsequent year&rsquo;s report covering the prior calendar year.</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs text-neutral-400">
+          <p className="mt-4 text-xs text-neutral-600">
             Sources:{" "}
             <a href={data.carfTimeline.sourcesCollection} className="underline" target="_blank" rel="noopener noreferrer">
               HMRC guidance: collecting cryptoasset data
@@ -223,25 +229,11 @@ export default function CryptoTaxComplianceIndexPage() {
         </div>
       </section>
 
-      {/* Methodology note */}
-      <section className="bg-white py-10 sm:py-12">
-        <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-3">About this index</h2>
-          <p className="text-sm text-neutral-600 max-w-2xl">
-            This index uses only primary sources: FCA consumer research for ownership levels, HMRC guidance for CARF dates, and gov.uk for CGT rates and disclosure windows. HMRC does not publish a crypto-specific tax gap, so no such estimate appears here. The ownership figures here are FCA Wave 5 (2024). The FCA published a further wave in 2025 which is not yet reflected on this page, so treat the ownership figures as the 2024 position and see{" "}
-            <a href={data.ownership.sourceUrl} className="text-[#0e1a3a] underline hover:opacity-75" target="_blank" rel="noopener noreferrer">
-              FCA publications
-            </a>{" "}
-            for the latest figure). Last updated: {data.meta.lastUpdated}.
-          </p>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
+      <section className="bg-[#0e1a3a] py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">Is your crypto tax position ready for CARF?</h2>
-          <p className="mt-4 text-lg text-neutral-200 max-w-2xl">
+          <p className="mt-4 text-lg text-blue-100 max-w-2xl">
             UK exchanges begin reporting 2026 transaction data to HMRC from January 2027. Holders with unreported gains or income stand on much stronger ground with a voluntary disclosure on file before that data arrives. A 4-year window applies for reasonable care; HMRC may go back 20 years for deliberate non-compliance.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -260,6 +252,21 @@ export default function CryptoTaxComplianceIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+
+      {/* Methodology note */}
+      <section className="bg-white py-10 sm:py-12">
+        <div className={siteContainerLg}>
+          <h2 className="text-lg font-bold text-neutral-900 mb-3">About this index</h2>
+          <p className="text-sm text-neutral-600 max-w-2xl">
+            This index uses only primary sources: FCA consumer research for ownership levels, HMRC guidance for CARF dates, and gov.uk for CGT rates and disclosure windows. HMRC does not publish a crypto-specific tax gap, so no such estimate appears here. The ownership figures here are FCA Wave 5 (2024). The FCA published a further wave in 2025 which is not yet reflected on this page, so treat the ownership figures as the 2024 position and see{" "}
+            <a href={data.ownership.sourceUrl} className="text-[#0e1a3a] underline hover:opacity-75" target="_blank" rel="noopener noreferrer">
+              FCA publications
+            </a>{" "}
+            for the latest figure. Last updated: {data.meta.lastUpdated}.
+          </p>
+        </div>
+      </section>
+
+    </>
   );
 }
