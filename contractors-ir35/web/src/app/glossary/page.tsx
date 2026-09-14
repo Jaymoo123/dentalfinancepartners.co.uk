@@ -7,6 +7,7 @@ import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/Le
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./[slug]/data";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const metadata: Metadata = {
   title: { absolute: `IR35 Glossary | ${siteConfig.name}` },
@@ -53,11 +54,13 @@ export default function GlossaryIndexPage() {
     <>
       {/* Hero. Navy band, breadcrumb onDark, mono eyebrow, h1, standfirst, and a
           primary CTA at the on-page form. The eyebrow is hand-rolled rather than
-          the `.eyebrow` class because that rule is UNLAYERED in globals.css and
-          pins `color: var(--accent)` (#0e7490, 3.69 on this near-black ground),
-          so a `text-primary-400` utility cannot win against it. */}
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
+          the `.eyebrow` class because that rule pins `color: var(--accent)`
+          (#0e7490, 3.69 on this near-black ground). It is `@layer components`,
+          so a `text-primary-400` utility WOULD win against it; hand-rolling is
+          kept because it needs no override at all. */}
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16 lg:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark
@@ -124,7 +127,7 @@ export default function GlossaryIndexPage() {
                     <Link
                       key={e.slug}
                       href={`/glossary/${e.slug}`}
-                      className="group flex flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 sm:p-6"
+                      className="group flex flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] sm:p-6"
                     >
                       <h3 className="text-lg font-bold leading-snug text-neutral-900">
                         {e.term}

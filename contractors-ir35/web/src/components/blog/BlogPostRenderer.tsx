@@ -451,7 +451,7 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       <li key={r.slug} className="flex">
                         <Link
                           href={`/blog/${r.categorySlug}/${r.slug}`}
-                          className="flex h-full w-full flex-col rounded-xl bg-white p-5 sm:p-6 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                          className="flex h-full w-full flex-col rounded-xl bg-white p-5 sm:p-6 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
                         >
                           <span className="mb-2.5 inline-flex w-fit items-center gap-1.5 rounded-full bg-neutral-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-neutral-600">
                             <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-primary-600" />

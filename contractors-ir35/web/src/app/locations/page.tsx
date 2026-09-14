@@ -8,6 +8,7 @@ import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/Le
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { CITIES } from "./[slug]/data";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const metadata: Metadata = {
   title: { absolute: `Contractor Accountants Near You | ${siteConfig.name}` },
@@ -44,7 +45,7 @@ function CityCard({ slug }: { slug: string }) {
   return (
     <Link
       href={`/locations/${city.slug}`}
-      className="group flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+      className="group flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
     >
       {city.heroImage ? (
         <div className="relative h-44 w-full overflow-hidden bg-neutral-100">
@@ -91,7 +92,7 @@ function SimpleCityLink({ slug }: { slug: string }) {
   return (
     <Link
       href={`/locations/${city.slug}`}
-      className="group flex items-center justify-between gap-2 rounded-xl bg-white px-4 py-3 text-sm text-neutral-700 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+      className="group flex items-center justify-between gap-2 rounded-xl bg-white px-4 py-3 text-sm text-neutral-700 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
     >
       <span className="truncate font-medium">{city.name}</span>
       <ArrowRight
@@ -114,11 +115,13 @@ export default function LocationsIndexPage() {
 
   return (
     <>
-      {/* Hero. Mono eyebrow rather than the `.eyebrow` class: that rule is
-          UNLAYERED in globals.css and pins `color: var(--accent)`, which
-          measures 3.69 on this ground and cannot be overridden by a utility. */}
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
+      {/* Hero. Mono eyebrow rather than the `.eyebrow` class: that rule pins
+          `color: var(--accent)`, which measures 3.69 on this ground. It is
+          `@layer components`, so a `text-*` utility WOULD beat it; hand-rolling
+          needs no override at all. */}
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16 lg:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark

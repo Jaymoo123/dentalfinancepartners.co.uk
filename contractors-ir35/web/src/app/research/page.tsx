@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { fmtNumber, monthLabel, type ContractorIndexSnapshot } from "@/lib/research/contractor-index";
 import { fmtPct, type ContractorSurvivalIndexSnapshot } from "@/lib/research/contractor-survival-index";
@@ -12,6 +12,7 @@ import { fmtPercent as fmtInsolvencyPercent, type ContractorInsolvencyIndexSnaps
 import snapshot from "@/data/uk-contractor-index.json";
 import survivalSnapshot from "@/data/uk-contractor-survival-index.json";
 import insolvencySnapshot from "@/data/uk-contractor-insolvency-index.json";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 const cti = snapshot as unknown as ContractorIndexSnapshot;
 const survival = survivalSnapshot as unknown as ContractorSurvivalIndexSnapshot;
@@ -54,8 +55,9 @@ const reports = [
 export default function ResearchIndexPage() {
   return (
     <>
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb siteUrl={siteConfig.url} onDark items={[{ label: "Home", href: "/" }, { label: "Research" }]} />
           <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Contractor economy research and data
@@ -69,7 +71,7 @@ export default function ResearchIndexPage() {
             data-cta="hero_book"
             data-cta-placement="hero"
             data-cta-goal="form"
-            className="mt-8 inline-flex min-h-12 min-w-[10rem] items-center justify-center rounded-xl bg-cyan-700 px-8 py-3.5 text-base font-bold tracking-wide text-white transition-colors duration-150 hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+            className={`mt-8 ${btnPrimary}`}
           >
             Get a free IR35 review
           </a>

@@ -91,9 +91,9 @@ export function PremiumUpgrade({
       style={{ minHeight: 48 }}
     >
       <div className="mb-3 flex items-center gap-2">
-        {/* Eyebrow hand-rolled from utilities. NOT the `.eyebrow` class, which is
-            unlayered at globals.css:211 and pins color: var(--accent), so no
-            utility could override it. Same recipe as /glossary, /locations and
+        {/* Eyebrow hand-rolled from utilities. NOT the `.eyebrow` class, which pins
+            color: var(--accent). That rule is `@layer components`, so a
+            utility WOULD override it; hand-rolling needs no override at all. Same recipe as /glossary, /locations and
             /research: font-mono, xs, medium, uppercase, 0.1em tracking.
             var(--accent) #0e7490 on white = 5.36:1, hand-measured. */}
         <span className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-[var(--accent)]">

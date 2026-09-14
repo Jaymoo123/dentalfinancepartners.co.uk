@@ -182,7 +182,7 @@ export function StickyCTA() {
           type="button"
           onClick={handleDismiss}
           aria-label="Dismiss"
-          className="shrink-0 rounded-lg p-1 text-neutral-400 transition-colors duration-150 hover:bg-neutral-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500"
+          className="shrink-0 rounded-lg p-1 text-neutral-400 transition-colors duration-150 hover:bg-neutral-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
         >
           <svg
             aria-hidden="true"

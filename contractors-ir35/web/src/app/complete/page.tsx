@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
@@ -110,7 +111,7 @@ export default async function CompletePage({
 
   return (
     <>
-      <SlimHero eyebrow="One last thing" title="Complete your details">
+      <SlimHero eyebrow="One last thing" title="Complete your details" backdrop={<ContractorsBackdrop />}>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-300 sm:text-lg">
           Add the last detail we need and an accountant from our partner network will be in touch
           to arrange your free IR35 review, no obligation.

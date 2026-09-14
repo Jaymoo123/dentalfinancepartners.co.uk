@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { toolPath } from "@/lib/calculators/registry";
+import { btnPrimary } from "@/components/ui/layout-utils";
 
 /**
  * Early tool island (capture moment 1): a plain server-rendered card injected
@@ -23,7 +24,7 @@ export function ToolIsland({ tool }: { tool: GenericTool }) {
       <p className="mt-2 text-sm leading-relaxed text-neutral-600">{tool.oneLiner}</p>
       <Link
         href={toolPath(tool.slug)}
-        className="mt-4 inline-block rounded bg-cyan-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cyan-800"
+        className={`mt-4 ${btnPrimary}`}
       >
         Run the numbers
       </Link>

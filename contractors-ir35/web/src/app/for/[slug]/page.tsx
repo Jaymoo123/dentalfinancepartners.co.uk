@@ -11,9 +11,12 @@ import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/Le
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contractorTypes, getContractorType } from "@/data/contractor-types";
 import { siteConfig } from "@/config/site";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
-/* Hand-rolled eyebrows: `.section-label` and `.eyebrow` are UNLAYERED rules in
-   globals.css that pin their own colour and cannot be overridden by a utility. */
+/* Hand-rolled eyebrows. `.section-label` and `.eyebrow` are `@layer components`
+   rules in globals.css that pin their own colour; being layered, a `text-*`
+   utility WOULD beat them. Hand-rolling is kept because it needs no override at
+   all, and because neither class emits the recipe these pages want. */
 const eyebrowDark =
   "font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400";
 const eyebrowLight =
@@ -53,8 +56,9 @@ export default async function ContractorTypePage({
   return (
     <>
       {/* HOOK. */}
-      <section className="bg-neutral-900 py-16 sm:py-20">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-neutral-900 py-16 sm:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Link
             href="/for"
             className={`inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-300 uppercase tracking-wider hover:text-primary-400 transition-colors mb-6 ${focusRing}`}

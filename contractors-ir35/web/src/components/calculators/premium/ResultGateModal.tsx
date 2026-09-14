@@ -20,8 +20,9 @@
  * P4-2 restyle: card recipe is one radius (rounded-xl) + hairline ring
  * (ring-1 ring-neutral-200/70), keeping the border-l-4 accent flag that
  * CalcResultCta uses. The eyebrow is hand-rolled from utilities, NOT the
- * `.eyebrow` class, which is unlayered at globals.css:211 and pins
- * color: var(--accent) so no utility can override it.
+ * `.eyebrow` class, which pins color: var(--accent). That rule is
+ * `@layer components`, so a utility WOULD override it; hand-rolling needs
+ * no override at all.
  * Contrast: both dismiss affordances were text-neutral-400 = 2.52:1 on white,
  * below the 4.5 floor. Now text-neutral-600 = 7.81:1. Hand-measured; the
  * automated instrument falls back to white on this var()-themed file and lies.

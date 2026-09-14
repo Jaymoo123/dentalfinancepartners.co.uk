@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import BookingPicker from "@/components/forms/BookingPicker";
 
@@ -28,7 +29,7 @@ export default async function BookPage({
 
   return (
     <>
-      <SlimHero eyebrow="Your review" title="Book your free IR35 review call">
+      <SlimHero eyebrow="Your review" title="Book your free IR35 review call" backdrop={<ContractorsBackdrop />}>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-300 sm:text-lg">
           Pick a day and a time window that suits you. An accountant will call you then, no
           obligation.

@@ -11,6 +11,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useIntent, trackPersonalization } from "./IntentProvider";
+import { btnPrimary, btnSecondary } from "@/components/ui/layout-utils";
 
 const SUPPRESS_DAYS = 30;
 const suppressKey = (topic: string) => `cfp_deepscroll_${topic}`;
@@ -119,7 +120,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-cyan-700 px-4 py-2.5 text-center font-semibold text-white hover:bg-cyan-800"
+            className={btnPrimary}
           >
             {primaryLabel}
           </Link>
@@ -129,7 +130,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg border border-neutral-200 px-4 py-2.5 text-center font-semibold text-neutral-700 hover:bg-neutral-50"
+            className={btnSecondary}
           >
             {secondaryLabel}
           </Link>

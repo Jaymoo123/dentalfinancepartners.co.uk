@@ -3,8 +3,10 @@ import Link from "next/link";
 import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } from "@/lib/blog";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 import { BlogListWithSearch } from "@/components/blog/BlogListWithSearch";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const metadata: Metadata = {
   title: "IR35 and Contractor Tax Blog | Guides and Articles",
@@ -37,8 +39,9 @@ export default function BlogIndexPage() {
 
   return (
     <>
-      <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark
@@ -47,10 +50,10 @@ export default function BlogIndexPage() {
               { label: "Blog" },
             ]}
           />
-          <p className="mt-6 text-xs font-bold uppercase tracking-wider text-cyan-400">
-            Contractor guides
-          </p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          <div className="mt-6">
+            <Eyebrow onDark>Contractor guides</Eyebrow>
+          </div>
+          <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             IR35 and contractor tax, explained.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
@@ -62,7 +65,17 @@ export default function BlogIndexPage() {
       {categories.length > 0 && (
         <section className="border-b border-neutral-200 bg-[#fafaf7] py-10 sm:py-12">
           <div className={siteContainerLg}>
-            <p className="text-sm font-medium text-neutral-500 mb-4">Browse by topic</p>
+            {/* HEADING LEVEL, not a restyle. This label was a <p>, so the page ran
+                h1 (hero) -> h3 (the category cards below) with nothing at h2, a
+                level skip. It is the section's heading in every sense except the
+                tag, so promoting it is the smallest fix and changes no copy.
+                `leading-normal tracking-normal` cancel the two @layer base
+                heading declarations (line-height 1.1, letter-spacing -0.02em)
+                that no utility on the old <p> was overriding, so the rendered
+                text is unchanged. text-neutral-500 on #fafaf7 = 4.74, PASS 4.5. */}
+            <h2 className="text-sm font-medium leading-normal tracking-normal text-neutral-500 mb-4">
+              Browse by topic
+            </h2>
             <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {categories.map((cat) => (
                 <Link

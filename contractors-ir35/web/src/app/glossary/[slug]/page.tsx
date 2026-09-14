@@ -9,6 +9,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { GLOSSARY } from "./data";
 import { buildDefinedTerm, buildBreadcrumbJsonLd } from "@/lib/schema";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -89,11 +90,12 @@ export default async function GlossaryEntryPage({ params }: Props) {
       {/* Hero. The category was a `bg-cyan-600` pill under a white label, which
           measures 3.68:1 and fails the 4.5 floor in the ground role; it is now
           the site's mono eyebrow in the on-dark accent (#22d3ee, 10.96). The
-          `.eyebrow` class itself is unusable here: it is UNLAYERED in
-          globals.css and pins `color: var(--accent)` (3.69 on this ground), so
-          no Tailwind utility can override it. */}
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
+          `.eyebrow` class is not used here: it pins `color: var(--accent)`
+          (3.69 on this ground). It is `@layer components`, so a `text-*`
+          utility WOULD beat it; hand-rolling needs no override at all. */}
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16 lg:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark
@@ -153,7 +155,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
                       <li key={r.slug} className="flex">
                         <Link
                           href={`/glossary/${r.slug}`}
-                          className="group flex h-full w-full flex-col rounded-xl bg-white p-4 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                          className="group flex h-full w-full flex-col rounded-xl bg-white p-4 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
                         >
                           <span className="text-sm font-bold leading-snug text-neutral-900">
                             {r.term}

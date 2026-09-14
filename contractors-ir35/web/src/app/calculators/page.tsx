@@ -6,6 +6,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { allTools } from "@/lib/calculators/registry";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const metadata: Metadata = {
   title: "Free IR35 and Contractor Tax Calculators 2026/27",
@@ -55,10 +56,14 @@ export default function CalculatorsPage() {
   return (
     <>
       {/* Hero. Mono eyebrow rather than the `.eyebrow` class: that rule is
-          UNLAYERED in globals.css and pins `color: var(--accent)`, which a
-          utility cannot override. primary-400 #22d3ee on neutral-900 = 9.92. */}
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
+          `@layer components` in globals.css and pins `color: var(--accent)`
+          #0e7490, which measures 3.35-3.69 on this site's dark grounds. Being
+          layered, a `text-*` utility now DOES beat it; the hand-roll is kept
+          because it needs no override at all. primary-400 #22d3ee on
+          neutral-900 = 9.92. */}
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16 lg:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark
@@ -114,7 +119,7 @@ export default function CalculatorsPage() {
                       <Link
                         key={t.slug}
                         href={`/calculators/${t.slug}`}
-                        className="group flex flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 sm:p-6"
+                        className="group flex flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] sm:p-6"
                       >
                         <h3 className="text-lg font-bold text-neutral-900">{t.name}</h3>
                         <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">

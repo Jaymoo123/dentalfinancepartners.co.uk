@@ -40,6 +40,7 @@ import { track } from "@accounting-network/web-shared/analytics/track";
 import { onAnalyticsEvent } from "@accounting-network/web-shared/analytics/bus";
 import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { useIntentContext } from "@/components/intent/IntentProvider";
+import { focusRing } from "@/components/ui/layout-utils";
 import { getTopic } from "@/lib/intent/taxonomy";
 import { initJourneyModel, recordPath, getJourneyProfile } from "@/lib/intent/journeyModel";
 import { openerFor, exitOpener, frictionOpener } from "@/lib/assistant/opener";
@@ -380,7 +381,7 @@ export function SpecialistWidget() {
               type="button"
               aria-label="Close"
               onClick={closePanel}
-              className="flex min-h-11 min-w-11 items-center justify-center shrink-0 text-2xl leading-none text-white/70 hover:text-white"
+              className="flex min-h-11 min-w-11 items-center justify-center shrink-0 rounded text-2xl leading-none text-white/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               &times;
             </button>
@@ -417,7 +418,7 @@ export function SpecialistWidget() {
                   <a
                     href={`/calculators/${calcSlug}`}
                     onClick={() => onChip("calculator")}
-                    className="inline-flex items-center rounded-full border border-[var(--accent)]/30 bg-white px-3 py-3 text-sm font-medium text-[var(--ink)] hover:bg-cyan-50"
+                    className={`inline-flex items-center rounded-full border border-[var(--accent)]/30 bg-white px-3 py-3 text-sm font-medium text-[var(--ink)] hover:bg-cyan-50 ${focusRing}`}
                   >
                     See your numbers
                   </a>
@@ -425,7 +426,7 @@ export function SpecialistWidget() {
                 <a
                   href="/contact"
                   onClick={() => onChip("call")}
-                  className="inline-flex items-center rounded-full border border-[var(--accent)]/30 bg-white px-3 py-3 text-sm font-medium text-[var(--ink)] hover:bg-cyan-50"
+                  className={`inline-flex items-center rounded-full border border-[var(--accent)]/30 bg-white px-3 py-3 text-sm font-medium text-[var(--ink)] hover:bg-cyan-50 ${focusRing}`}
                 >
                   Book a free call
                 </a>
@@ -439,7 +440,7 @@ export function SpecialistWidget() {
               <button
                 type="button"
                 onClick={() => onChip("question")}
-                className="w-full rounded-lg bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90"
+                className={`w-full rounded-lg bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90 ${focusRing}`}
               >
                 Ask a specialist
               </button>
@@ -471,13 +472,13 @@ export function SpecialistWidget() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full rounded-lg bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60"
+                  className={`w-full rounded-lg bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60 ${focusRing}`}
                 >
                   {status === "loading" ? "Sending..." : "Send to a specialist"}
                 </button>
                 <p className="text-[11px] leading-relaxed text-neutral-500">
                   {siteConfig.leadConsentText} See our{" "}
-                  <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-semibold text-[var(--accent)] underline">
+                  <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className={`rounded font-semibold text-[var(--accent)] underline ${focusRing}`}>
                     Privacy Policy
                   </a>
                   .
@@ -494,7 +495,7 @@ export function SpecialistWidget() {
           <button
             type="button"
             onClick={() => handleOpen(true)}
-            className="flex-1 text-left text-sm font-medium leading-snug text-[var(--ink)] hover:text-[var(--accent)]"
+            className={`flex-1 rounded text-left text-sm font-medium leading-snug text-[var(--ink)] hover:text-[var(--accent)] ${focusRing}`}
           >
             {peekLine}
           </button>
@@ -502,7 +503,7 @@ export function SpecialistWidget() {
             type="button"
             aria-label="Dismiss"
             onClick={dismissPeek}
-            className="-mr-1 -mt-1 flex min-h-11 min-w-11 items-center justify-center shrink-0 rounded p-1 text-neutral-400 hover:text-[var(--ink)]"
+            className={`-mr-1 -mt-1 flex min-h-11 min-w-11 items-center justify-center shrink-0 rounded p-1 text-neutral-400 hover:text-[var(--ink)] ${focusRing}`}
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -511,11 +512,24 @@ export function SpecialistWidget() {
         </div>
       )}
 
+      {/* Launcher. Every control in this widget gained `focusRing` on 2026-09-14;
+          before that they all fell back to the user-agent outline. Ring grounds:
+          the two chips sit on neutral-50 (3.53), the ask/submit/peek controls on
+          white (3.68), the header close button on the #0e7490 accent strip where
+          #0891b2 measures ~1.1 - that one takes an explicit white ring (5.36).
+          ponytail: this launcher is `fixed`, so its ring ground is whatever the
+          page has scrolled under it. #0891b2 clears 3.0 on every flat ground this
+          site paints (worst slate-100 3.36) but measures ~1.0 if the launcher
+          happens to overlap the primary-700 stats band. Left as is: transient,
+          the shadow-2xl separates it, and the alternative (a white ring) fails
+          outright on the white grounds that are the common case. Upgrade path if
+          it ever matters: a two-tone ring (outline + box-shadow in the opposite
+          polarity), which is a kit-level change. */}
       <button
         type="button"
         onClick={() => (open ? setOpen(false) : handleOpen(false))}
         data-cta="specialist_widget"
-        className="relative flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:opacity-90"
+        className={`relative flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:opacity-90 ${focusRing}`}
       >
         {!open && unread > 0 && (
           <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">

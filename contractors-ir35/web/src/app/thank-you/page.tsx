@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
 import BookingPicker from "@/components/forms/BookingPicker";
 
@@ -27,7 +28,7 @@ export default async function ThankYouPage({
 
   return (
     <>
-      <SlimHero eyebrow="Received" title="Thank you." />
+      <SlimHero eyebrow="Received" title="Thank you." backdrop={<ContractorsBackdrop />} />
 
       {/* The endowed-progress indicator opens the body rather than the hero.
           The recorded anatomy puts it inside the hero above the eyebrow, which

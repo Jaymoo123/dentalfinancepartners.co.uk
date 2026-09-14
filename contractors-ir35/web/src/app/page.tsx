@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { LeadForm } from "@/components/forms/LeadForm";
 import {
+  btnOnDark,
   btnPrimary,
   btnSecondary,
   focusRing,
@@ -25,6 +26,8 @@ import { contractorTypes } from "@/data/contractor-types";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
 
 export const metadata: Metadata = {
@@ -150,13 +153,20 @@ const faqs = [
   },
 ];
 
-/* Eyebrows are hand-rolled from utilities, never `.section-label` or `.eyebrow`:
-   both are UNLAYERED rules in globals.css that pin their own colour from
-   `var(--accent)` and cannot be overridden by a utility. */
-const eyebrowDark =
-  "font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400";
-const eyebrowLight =
-  "font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-700";
+/* Section pre-headers are the kit's Eyebrow block, not `.section-label`, not
+   `.eyebrow`, and no longer the two local constants this file used to carry.
+   The locals were mono caps in saturated brand (primary-700 light,
+   primary-400 dark) - the recipe the kit retired for "shouting louder than
+   the heading it was introducing" (page-blocks.tsx:27-30). The kit puts the
+   brand on a 24px rule and leaves the words on a muted slate.
+
+   Neither `.eyebrow` nor `.section-label` is reachable from this page: the kit
+   block emits neither class. Both are now @layer components in globals.css
+   anyway, so the old "unlayered, cannot be overridden" note no longer holds.
+
+   `.eyebrow-rule` is deliberately undefined on this site: globals-standard.css
+   is not imported here, so EyebrowRule's mark has no collapsed [data-draw=off]
+   state to escape and renders drawn on first paint, with no animation. */
 
 export default function HomePage() {
   return (
@@ -178,13 +188,25 @@ export default function HomePage() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/97 via-neutral-950/90 to-neutral-900/60" />
+        {/* Stacking order, three painted layers and one copy layer:
+              1. <Image fill>          the photograph
+              2. the gradient scrim    opaque at the left where the copy sits
+              3. ContractorsBackdrop   the motif, ON TOP of the scrim
+              4. the container         relative z-10, above all three
+            The backdrop is mounted THIRD, not first. Image, scrim and backdrop
+            are all absolutely positioned with no z-index, so they stack in
+            source order; written before the scrim, the motif would be painted
+            over by an almost-opaque layer and never be seen. Written after it,
+            the motif reads against the dark scrim exactly as it does on the
+            flat-gradient heroes. z-10 on the container keeps the copy clear of
+            all of them. The host contract holds: this section is already
+            `relative overflow-hidden`. */}
+        <ContractorsBackdrop />
         <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
           {/* The only narrow measure on this page: hero copy. */}
           <div className="max-w-3xl">
             <div className="hero-reveal">
-              <p className={`${eyebrowDark} mb-6`}>
-                Specialist contractor accountants
-              </p>
+              <Eyebrow onDark>Specialist contractor accountants</Eyebrow>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
                 IR35, limited company tax,{" "}
                 <span className="text-primary-400">and contractor finances.</span>
@@ -199,7 +221,13 @@ export default function HomePage() {
                     sticky banner leave for /contact. */}
                 <Link
                   href="#book"
-                  className={`${btnPrimary} rounded-xl text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}
+                  /* Bare recipe. The old string appended
+                     `rounded-xl text-base px-6 py-3 sm:px-10 sm:py-4` over a recipe
+                     that already carries `rounded-xl px-8 py-3.5 text-base`: four
+                     single-class utilities tying on specificity, so Tailwind's
+                     emission order picked the winner, not this class string.
+                     `text-center` is kept because the recipe sets no text-align. */
+                  className={`${btnPrimary} text-center`}
                   data-cta="hero_book"
                   data-cta-placement="hero"
                   data-cta-goal="form"
@@ -208,7 +236,13 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/ir35-status"
-                  className={`inline-flex min-h-12 items-center justify-center rounded-xl border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
+                  /* Was a hand-rolled on-dark ghost: border-white/30, bg-white/10,
+                     font-medium, and its own focus ring appended. The kit's
+                     btnOnDark is the same shape at the estate's weight
+                     (border-2 border-white/40, font-bold, backdrop-blur-sm) and
+                     carries the site's --focus-ring inside the string, so the
+                     guard test in src/tests/focus-ring.test.ts can see it. */
+                  className={`${btnOnDark} text-center`}
                 >
                   Understand IR35
                 </Link>
@@ -249,7 +283,7 @@ export default function HomePage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <p className={`${eyebrowLight} mb-4`}>What contractors come to us with</p>
+            <Eyebrow>What contractors come to us with</Eyebrow>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
               The financial challenges that are specific to contracting.
             </h2>
@@ -274,7 +308,11 @@ export default function HomePage() {
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <p className={`${eyebrowLight} mb-4`}>Composite snapshots</p>
+            {/* Eyebrow is a flex row, so it needs centring explicitly inside a
+                text-center block. Same wrapper crypto uses on its centred bands. */}
+            <div className="flex justify-center">
+              <Eyebrow>Composite snapshots</Eyebrow>
+            </div>
             <h2 id="testimonials-heading" className="text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
               The situations contractors bring us
             </h2>
@@ -305,7 +343,7 @@ export default function HomePage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <p className={`${eyebrowLight} mb-4`}>Why specialist matters</p>
+            <Eyebrow>Why specialist matters</Eyebrow>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
               A generalist accountant handles your compliance.{" "}
               <span className="text-primary-700">We handle contractor-specific tax.</span>
@@ -402,7 +440,8 @@ export default function HomePage() {
             })}
           </div>
           <div className="text-center mt-10">
-            <Link href="/services" className={`${btnSecondary} rounded-xl`}>
+            {/* `rounded-xl` dropped: the kit recipe already carries it. */}
+            <Link href="/services" className={btnSecondary}>
               View all services
             </Link>
           </div>
@@ -422,7 +461,9 @@ export default function HomePage() {
       <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <p className={eyebrowDark}>Every contractor type</p>
+            <div className="flex justify-center">
+              <Eyebrow onDark>Every contractor type</Eyebrow>
+            </div>
             <h2 className="mt-3 text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
               We work with all types of UK contractors
             </h2>
@@ -504,7 +545,9 @@ export default function HomePage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
-            <p className={`${eyebrowLight} mb-4`}>Contractor guides</p>
+            <div className="flex justify-center">
+              <Eyebrow>Contractor guides</Eyebrow>
+            </div>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
               Practical IR35 and contractor tax guides.
             </h2>
@@ -512,7 +555,7 @@ export default function HomePage() {
               Plain English articles on IR35 status, off-payroll rules, limited company tax, expenses, dividends and pension planning. Written by specialist contractor accountants, not content agencies.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link href="/blog" className={`${btnPrimary} rounded-xl`}>
+              <Link href="/blog" className={btnPrimary}>
                 Browse all guides
               </Link>
               <Link

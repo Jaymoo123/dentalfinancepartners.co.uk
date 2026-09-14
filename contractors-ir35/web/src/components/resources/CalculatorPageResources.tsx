@@ -12,12 +12,16 @@
  * Mount once in src/app/calculators/[slug]/page.tsx after <CalculatorClient slug={slug}>.
  *
  * TOKEN HARDENING: no var(--gold), no var(--navy), no var(--dark), no var(--primary).
- * The label eyebrow chip uses bg-[var(--accent)] text-white.
+ * The label eyebrow is the shared kit `Eyebrow` (brand rule + restrained caps).
+ * It replaced a solid bg-[var(--accent)] uppercase chip on 2026-09-14: that is the
+ * recipe page-blocks.tsx records as having "shouted louder than the heading it was
+ * introducing".
  */
 import { topicForCalcSlug, getTopic } from "@/lib/intent/taxonomy";
 import { hasEnabledResource, resourceForTopic } from "@/lib/resources/registry";
 import { gateCopy } from "@/lib/resources/copy";
 import { ResourceGate } from "@/components/resources/ResourceGate";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
 export function CalculatorPageResources({
   slug,
@@ -38,14 +42,10 @@ export function CalculatorPageResources({
 
   return (
     <div className="mt-10">
-      <div className="flex items-center gap-3">
-        <span className="inline-block bg-[var(--accent)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
-          Go deeper
-        </span>
-        <p className="text-sm font-semibold text-[var(--ink-soft)]">
-          Get the full {label} model and guide
-        </p>
-      </div>
+      <Eyebrow>Go deeper</Eyebrow>
+      <p className="text-sm font-semibold text-[var(--ink-soft)]">
+        Get the full {label} model and guide
+      </p>
       <ResourceGate
         topic={topic}
         copy={copy}

@@ -73,6 +73,65 @@
 
   --muted: var(--ink-soft);
 
+  /* Keyboard focus indicator, read by every recipe in
+     components/ui/layout-utils.ts as outline-[var(--focus-ring)].
+     ------------------------------------------------------------
+     A focus ring is a GRAPHIC, so its floor is 3.0:1, not 4.5:1, and because it
+     sits at outline-offset-2 its ground is the SURFACE BEHIND the control, not
+     the control's own fill.
+
+     It is NOT the brand cyan. --accent #0e7490 is simultaneously this site's
+     ring colour (as `outline-cyan-700`) and the ground of its cyan bands and
+     hero gradients, so the old ring measured 1.00 against itself. #0891b2 is
+     cyan-600, the value the ramp below already carries at --color-primary-500
+     and at --chart-3; no new colour is minted here.
+
+     Written as a literal hex, not var(--color-primary-500): that theme variable
+     is consumed by no utility today, so Tailwind tree-shakes it out of the
+     emitted stylesheet and the var() would resolve to nothing, invalidating the
+     whole outline-color declaration and painting no ring at all.
+
+     Measured with the sRGB relative-luminance formula, converting Tailwind v4's
+     emitted oklch() for the ramp colours (method reproduces slate-500 on white
+     = 4.77 and slate-400 on white = 2.63). Grounds that can host a ring:
+
+       white                    3.68   PASS 3.0 / fail 4.5 / fail 7.0
+       --surface #fafaf7        3.52   PASS 3.0 / fail 4.5 / fail 7.0
+       neutral-50               3.53   PASS 3.0 / fail 4.5 / fail 7.0
+       cyan-50                  3.54   PASS 3.0 / fail 4.5 / fail 7.0
+       slate-50                 3.52   PASS 3.0 / fail 4.5 / fail 7.0
+       neutral-100              3.38   PASS 3.0 / fail 4.5 / fail 7.0
+       slate-100                3.36   PASS 3.0 / fail 4.5 / fail 7.0  <- worst flat
+       neutral-900              4.11   PASS 3.0 / fail 4.5 / fail 7.0
+       slate-900 (kit footer)   4.85   PASS 3.0 / PASS 4.5 / fail 7.0
+       neutral-950              5.38   PASS 3.0 / PASS 4.5 / fail 7.0
+       cyan-950                 4.85   PASS 3.0 / PASS 4.5 / fail 7.0
+       cyan-900                 3.64   PASS 3.0 / fail 4.5 / fail 7.0
+
+     Gradients have no single colour, so each stop is composited in linear light
+     against what sits behind it. Both hero gradients sit over a photograph whose
+     luminance is not resolvable, so each stop is bracketed black-photo to
+     white-photo; the realistic mid-tone case sits near the black end because the
+     overlays run at 90-97% where the buttons are:
+
+       / (homepage hero, over photo)
+         neutral-950/97   5.38 .. 3.44   <- btnPrimary + focusRing live here
+         neutral-950/90   5.41 .. 1.87
+         neutral-900/60   4.62 .. 1.62   (no ring: copy only)
+       /locations/[slug] (hero, over photo)
+         cyan-950/95      4.88 .. 2.63   <- btnPrimary + Breadcrumb live here
+         cyan-900/90      3.77 .. 1.62
+         neutral-900/60   4.62 .. 1.62   (no ring: Pexels credit only, UA default)
+
+     Two gradients/bands host NO focus ring and are recorded so the next reader
+     does not re-derive them: the /locations card thumbnail
+     (primary-600 -> primary-800) sits INSIDE the card while the card's own ring
+     sits at offset-2 outside it on white; and the primary-700 stats band plus the
+     primary-800/90 editorial break contain only headings, figures and copy. The
+     ring would measure 1.46 / 2.48 / 1.97 on those if anything focusable were
+     ever put there - so if one is, re-measure before shipping it. */
+  --focus-ring: #0891b2;
+
   /* Canonical brand tokens for @accounting-network/web-shared components */
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
@@ -252,6 +311,41 @@
     border-top: 1px solid var(--hairline);
   }
 }
+
+/* `.eyebrow-rule` IS DELIBERATELY NOT DEFINED ON THIS SITE. DO NOT ADD IT.
+   ------------------------------------------------------------------------
+   The kit's `Eyebrow` (design/primitives/page-blocks) renders `EyebrowRule`,
+   which emits `class="eyebrow-rule"` on a 24x2px bar. 17 call sites use it here
+   (page.tsx, blog, the three research indexes, resources/[topic],
+   CalculatorPageResources). The class is declared only in
+   packages/web-shared/design/globals-standard.css, which this site does not
+   import and must not: that sheet carries Property's palette.
+
+   WITH NO RULE THE MARK IS CORRECT. `.eyebrow-rule` contributes only
+   transform-origin, a transition, and `[data-draw="off"] { transform: scaleX(0) }`.
+   Without it there is no collapsed state, so the bar paints at full width on
+   first paint, identically with JavaScript on or off, and never animates. The
+   colour comes from the kit's own bg-primary-400/600 utilities, which this
+   site's ramp already defines. Nothing is missing on screen.
+
+   ADDING IT WOULD BE A REGRESSION RISK, NOT A FIX. The kit's collapsed state is
+   released for the no-JS case by a <noscript> override in the ROOT LAYOUT of the
+   sites that import the sheet. THIS SITE'S src/app/layout.tsx HAS NO SUCH
+   <noscript> (verified: `grep -n noscript src/app/layout.tsx` returns nothing).
+   Copying the rule alone would therefore ship `scaleX(0)` marks that nothing
+   ever releases when JS is off - the exact failure that left 64 pages with
+   invisible marks on a sibling site. crypto and charities each declare a LOCAL
+   rule gated behind
+     @media (prefers-reduced-motion: no-preference) and (scripting: enabled)
+   so the no-JS state is the visible one. That is the only safe shape, and it
+   buys a decorative 600ms draw this site has never had.
+
+   If a future port wants the animation, the work is: the local rule with BOTH
+   media conditions above, and a re-check that no page renders Eyebrow before
+   hydration in a way the observer can miss. Until someone asks for the motion,
+   the laziest correct state is this one - no rule at all. Recorded here rather
+   than in a page file so a grep for `eyebrow-rule` in this repo lands on it.
+   ============================================================ */
 
 /* ============================================================
    ANIMATIONS

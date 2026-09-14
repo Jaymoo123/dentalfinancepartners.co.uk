@@ -4,8 +4,9 @@ import Link from "next/link";
 
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
   buildArticleJsonLd,
@@ -24,6 +25,7 @@ import {
   type ContractorInsolvencyIndexSnapshot,
 } from "@/lib/research/contractor-insolvency-index";
 import snapshot from "@/data/uk-contractor-insolvency-index.json";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 const data = snapshot as unknown as ContractorInsolvencyIndexSnapshot;
 const { meta, headline, insolvencies, sections, captured } = data;
@@ -165,8 +167,9 @@ export default function UKContractorInsolvencyIndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqJsonLd }} />
 
       {/* Hero */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark
@@ -176,10 +179,10 @@ export default function UKContractorInsolvencyIndexPage() {
               { label: "UK Contractor Insolvency Index" },
             ]}
           />
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-cyan-300">
-            UK Contractor Insolvency Index
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+          <div className="mt-6">
+            <Eyebrow onDark>UK Contractor Insolvency Index</Eyebrow>
+          </div>
+          <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             {HEADLINE_SENTENCE}
           </h1>
           <p className="mt-4 max-w-3xl text-lg text-neutral-300">
@@ -213,7 +216,7 @@ export default function UKContractorInsolvencyIndexPage() {
             data-cta="hero_book"
             data-cta-placement="hero"
             data-cta-goal="form"
-            className="mt-8 inline-flex min-h-12 min-w-[10rem] items-center justify-center rounded-xl bg-cyan-700 px-8 py-3.5 text-base font-bold tracking-wide text-white transition-colors duration-150 hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+            className={`mt-8 ${btnPrimary}`}
           >
             Get a free IR35 review
           </a>
@@ -427,13 +430,13 @@ export default function UKContractorInsolvencyIndexPage() {
             <span className="flex flex-wrap gap-x-6 gap-y-2 font-semibold">
               <Link
                 href="/calculators/outside-ir35-take-home-calculator"
-                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
+                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
               >
                 Outside IR35 take-home calculator &rarr;
               </Link>
               <Link
                 href="/calculators/inside-ir35-take-home-calculator"
-                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
+                className="text-cyan-800 underline-offset-2 hover:text-cyan-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
               >
                 Inside IR35 take-home calculator &rarr;
               </Link>

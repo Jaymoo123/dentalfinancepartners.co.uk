@@ -21,12 +21,14 @@
  */
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { btnOnDark, btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 import { getGuideByTopic, publishedGuideTopicsWithFile } from "@/lib/resources/content";
 import { resourceForTopic, isXlsxEnabled } from "@/lib/resources/registry";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import { ResourceGate } from "@/components/resources/ResourceGate";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const dynamicParams = false;
 
@@ -70,12 +72,11 @@ export default async function ResourceGuidePage({
           cyan-300 #67e8f9 12.37. browser_check.mjs cannot resolve the var()
           chains on this route and falls back to white, so no instrument output
           is cited anywhere in this file. */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <p className="text-xs font-bold uppercase tracking-wider text-cyan-300">
-            Contractor Tax Accountants guide
-          </p>
-          <h1 className="mt-2 max-w-4xl text-3xl font-bold text-white sm:text-4xl">
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
+          <Eyebrow onDark>Contractor Tax Accountants guide</Eyebrow>
+          <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl">
             {guide.title}
           </h1>
           {guide.summary && (
@@ -100,7 +101,7 @@ export default async function ResourceGuidePage({
               data-cta="hero_book"
               data-cta-placement="hero"
               data-cta-goal="form"
-              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[var(--accent)] px-8 py-3.5 text-base font-bold text-white transition-colors duration-150 hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+              className={btnPrimary}
             >
               Book a free call
             </a>
@@ -108,7 +109,7 @@ export default async function ResourceGuidePage({
               <a
                 href={resource.xlsx.file}
                 download
-                className="inline-flex min-h-12 items-center gap-2 rounded-xl border border-white/70 px-8 py-3.5 text-base font-bold text-white transition-colors duration-150 hover:bg-white hover:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+                className={`gap-2 ${btnOnDark}`}
               >
                 <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

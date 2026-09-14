@@ -5,6 +5,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { allTools } from "@/lib/calculators/registry";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const metadata: Metadata = {
   title: { absolute: `Embed Our Free IR35 Calculators | ${siteConfig.name}` },
@@ -50,14 +51,18 @@ function iframeSnippet(slug: string, name: string, height: number): string {
 export default function EmbedGalleryPage() {
   return (
     <>
-      {/* Hero. Mono eyebrow, not the `.eyebrow` class: that rule is UNLAYERED
-          in globals.css and pins `color: var(--accent)`, which a utility cannot
-          override. primary-400 #22d3ee on neutral-900 = 9.92.
+      {/* Hero. Mono eyebrow, not the `.eyebrow` class: that rule is
+          `@layer components` in globals.css and pins `color: var(--accent)`
+          #0e7490, which measures 3.35-3.69 on this site's dark grounds. Being
+          layered, a `text-*` utility now DOES beat it; the hand-roll is kept
+          because it needs no override at all. primary-400 #22d3ee on
+          neutral-900 = 9.92.
           NO hero CTA to a lead form here, deliberately: this page's reader is a
           partner site, not a lead, and the ask is a partnership. Recorded in
           P3_ROUTE_ANATOMIES §B5 so it does not read as an omission. */}
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16 lg:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark
@@ -173,7 +178,7 @@ export default function EmbedGalleryPage() {
             <div className="mt-8">
               <Link
                 href="/contact?utm_source=embed-gallery&utm_medium=site&utm_campaign=partnerships"
-                className={`${btnPrimary} rounded-xl text-base px-6 py-3 sm:px-8 sm:py-4`}
+                className={btnPrimary}
               >
                 Talk to us about a partnership
               </Link>

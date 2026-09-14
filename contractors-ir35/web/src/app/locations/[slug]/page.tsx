@@ -229,7 +229,7 @@ export default async function CityPage({ params }: Props) {
                   <Link
                     key={sectorSlug}
                     href={`/for/${sectorSlug}`}
-                    className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-neutral-800 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                    className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-neutral-800 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
                   >
                     {label}
                     <ArrowRight aria-hidden className="h-3.5 w-3.5 text-primary-600" />
@@ -256,7 +256,7 @@ export default async function CityPage({ params }: Props) {
                   key={faq.question}
                   className="group rounded-xl bg-white ring-1 ring-neutral-200/70"
                 >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 transition-colors hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 transition-colors hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]">
                     <span>{faq.question}</span>
                     <span
                       className="flex-shrink-0 text-primary-600 transition-transform group-open:rotate-45"
@@ -318,7 +318,7 @@ export default async function CityPage({ params }: Props) {
                 <li key={p.slug} className="flex">
                   <Link
                     href={`/blog/${getCategorySlug(p)}/${p.slug}`}
-                    className="flex h-full w-full flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 sm:p-6"
+                    className="flex h-full w-full flex-col rounded-xl bg-white p-5 ring-1 ring-neutral-200/70 transition-colors hover:bg-neutral-50 hover:ring-primary-600/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] sm:p-6"
                   >
                     <span className="text-base font-bold leading-snug text-neutral-900 sm:text-lg">
                       {p.title}
@@ -380,9 +380,10 @@ function HeroContent({ city }: { city: (typeof CITIES)[string] }) {
           { label: city.name },
         ]}
       />
-      {/* Mono eyebrow, not the `.eyebrow` class: that rule is UNLAYERED in
-          globals.css and pins `color: var(--accent)` (3.69 here), which no
-          Tailwind utility can override. Replaces a `bg-cyan-700` pill. */}
+      {/* Mono eyebrow, not the `.eyebrow` class: that rule pins
+          `color: var(--accent)` (3.69 here). It is `@layer components`, so a
+          `text-*` utility WOULD beat it; hand-rolling needs no override at
+          all. Replaces a `bg-cyan-700` pill. */}
       <p className="mt-6 font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400">
         {city.region}
       </p>

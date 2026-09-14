@@ -12,6 +12,7 @@ import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -69,11 +70,15 @@ export default async function CalculatorToolPage({ params }: Props) {
         />
       )}
 
-      {/* Hero. Mono eyebrow, not the `.eyebrow` class: that rule is UNLAYERED
-          in globals.css and pins `color: var(--accent)`, which a utility cannot
-          override. primary-400 #22d3ee on neutral-900 = 9.92. */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      {/* Hero. Mono eyebrow, not the `.eyebrow` class: that rule is
+          `@layer components` in globals.css and pins `color: var(--accent)`
+          #0e7490, which measures 3.35-3.69 on this site's dark grounds. Being
+          layered, a `text-*` utility now DOES beat it; the hand-roll is kept
+          because it needs no override at all. primary-400 #22d3ee on
+          neutral-900 = 9.92. */}
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             siteUrl={siteConfig.url}
             onDark
@@ -142,7 +147,7 @@ export default async function CalculatorToolPage({ params }: Props) {
                   <li key={r.href}>
                     <a
                       href={r.href}
-                      className="font-semibold text-primary-600 underline underline-offset-2 hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                      className="font-semibold text-primary-600 underline underline-offset-2 hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]"
                     >
                       {r.label}
                     </a>

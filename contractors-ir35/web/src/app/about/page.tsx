@@ -4,6 +4,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const metadata: Metadata = {
   title: "About | Specialist Contractor Accountants",
@@ -29,11 +30,14 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero. Mono eyebrow hand-rolled from utilities rather than the
-          `.eyebrow` class: that rule is UNLAYERED in globals.css and pins
-          `color: var(--accent)`, which no utility can override. cyan-400 on
-          neutral-900 measures 9.92. */}
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
+          `.eyebrow` class: that rule is `@layer components` in globals.css
+          and pins `color: var(--accent)` #0e7490, which measures 3.35-3.69 on
+          this site's dark grounds. Being layered, a `text-*` utility now DOES
+          beat it; the hand-roll is kept because it needs no override at all.
+          cyan-400 on neutral-900 measures 9.92. */}
+      <section className="relative overflow-hidden bg-neutral-900 py-12 sm:py-16 lg:py-20">
+        <ContractorsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className="max-w-3xl">
             <p className="font-mono text-xs font-medium uppercase tracking-[0.1em] text-primary-400">
               About us

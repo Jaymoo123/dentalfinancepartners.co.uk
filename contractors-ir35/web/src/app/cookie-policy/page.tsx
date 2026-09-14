@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { siteConfig } from "@/config/site";
 
 /**
@@ -68,7 +69,7 @@ export default function CookiePolicyPage() {
       {/* The last-updated date is hero fine print rather than a line stranded
           above the body. The date itself is untouched: a restyle is not a change
           to the document, so re-dating it would be a false claim. */}
-      <SlimHero eyebrow="Legal" title="Cookie policy">
+      <SlimHero eyebrow="Legal" title="Cookie policy" backdrop={<ContractorsBackdrop />}>
         <p className="mt-4 text-sm text-neutral-400">Last updated: 18 June 2026</p>
       </SlimHero>
 
