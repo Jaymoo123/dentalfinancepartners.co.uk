@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 function NeedsLinkCard() {
   return (
     <NoticeCard>
-      <p className="text-base text-neutral-700">
+      <p className="text-base text-slate-700">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
@@ -55,7 +55,7 @@ export default async function CompletePage({
     if (!verdict.ok) {
       inner = (
         <NoticeCard>
-          <p className="text-base text-neutral-700">
+          <p className="text-base text-slate-700">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
@@ -92,7 +92,7 @@ export default async function CompletePage({
         }
         inner = (
           <NoticeCard tone="primary" title="You are all set">
-            <p className="text-base text-neutral-700">
+            <p className="text-base text-slate-700">
               We have everything we need. A specialist firm from our partner network may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.

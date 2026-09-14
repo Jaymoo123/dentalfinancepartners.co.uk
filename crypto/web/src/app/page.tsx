@@ -8,6 +8,9 @@ import {
 } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import CryptoBackdrop from "@/components/layout/CryptoBackdrop";
 import { ArrowRight, ShieldCheck, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -216,6 +219,24 @@ const testimonials = [
   },
 ];
 
+/* The four live compliance lines from the closing panel, carried across verbatim when
+   that panel became the kit's LeadCTAPanel. Adopting the panel with proofPoints={[]}
+   would have deleted published compliant copy, which is not a presentation change.
+   Property's own call site publishes a fee line and a turnaround line: both are banned
+   on this site, and neither appears here. Nothing was invented. */
+const ctaProofPoints = [
+  { title: "Crypto tax only", detail: "We do not take general commercial or property clients" },
+  {
+    title: "Anonymous until a firm takes it on",
+    detail: "Firms are first shown a summary with your name and contact details removed",
+  },
+  { title: "All conversations are confidential", detail: "We never discuss one client's position with another" },
+  {
+    title: "UK-wide (HMRC)",
+    detail: "Scotland has devolved income tax bands; we flag where they change the outcome",
+  },
+];
+
 const faqs: { question: string; answer: string }[] = [
   {
     question: "Do I need a crypto tax accountant or can software do it?",
@@ -277,9 +298,14 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative flex items-center min-h-[520px] sm:min-h-[640px] lg:min-h-[720px] overflow-hidden bg-[#0e1a3a]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0e1a3a] via-[#1a3a6e]/70 to-[#081020]" />
+        {/* After the gradient, not before it: both are unpositioned in the stack, so a
+            backdrop written first would paint UNDER the opaque gradient and never be
+            seen. Copy is relative z-10, so it stays above both. Section is already
+            `relative overflow-hidden`, which is CryptoBackdrop's host contract. */}
+        <CryptoBackdrop />
         <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
           <div className="max-w-3xl">
-            <div className="mb-6 inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-widest text-blue-200">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-widest text-blue-200">
               <ShieldCheck className="h-3.5 w-3.5" aria-hidden />
               {siteConfig.name}
             </div>
@@ -294,13 +320,13 @@ export default function HomePage() {
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
                 href="/contact"
-                className={`inline-flex min-h-12 items-center justify-center bg-white px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-semibold text-[#0e1a3a] hover:bg-blue-50 active:bg-blue-100 transition-colors text-center ${focusRing}`}
+                className={`inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-semibold text-[#0e1a3a] hover:bg-blue-50 active:bg-blue-100 transition-colors text-center ${focusRing}`}
               >
                 Speak to a crypto tax specialist
               </Link>
               <Link
                 href="/services/hmrc-disclosure"
-                className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
+                className={`inline-flex min-h-12 items-center justify-center rounded-xl border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
               >
                 HMRC disclosure service
               </Link>
@@ -317,7 +343,7 @@ export default function HomePage() {
 
       {/* Key figures bar */}
       <section
-        className="border-b border-neutral-200 bg-white py-8 sm:py-10"
+        className="border-b border-slate-200 bg-white py-8 sm:py-10"
         aria-label="Key crypto tax figures 2026/27"
       >
         <div className={siteContainerLg}>
@@ -330,7 +356,7 @@ export default function HomePage() {
                 >
                   {stat.value}
                 </a>
-                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-neutral-600 uppercase tracking-wider">
+                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-slate-600 uppercase tracking-wider">
                   {stat.label}
                 </div>
               </div>
@@ -340,9 +366,9 @@ export default function HomePage() {
       </section>
 
       {/* Intro strip */}
-      <section className="border-b border-neutral-200 bg-slate-50 py-10 sm:py-12">
+      <section className="border-b border-slate-200 bg-slate-50 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <p className="max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
+          <p className="max-w-3xl text-lg leading-relaxed text-slate-700 sm:text-xl">
             Most crypto holders are not tax professionals. The rules are genuinely complex: every
             swap is a disposal, US software applies the wrong pooling method, DeFi protocol
             interactions may themselves be disposals (under HMRC&apos;s current view, not settled
@@ -353,13 +379,13 @@ export default function HomePage() {
       </section>
 
       {/* Who we help: segment routing */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">Who we work with</div>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <Eyebrow>Who we work with</Eyebrow>
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Six holder types, each with a different tax picture.
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             The rules that apply to a long-term investor differ materially from those facing a
             day trader, a DeFi participant, or a company treasury. Choose your situation for
             sector-specific guidance.
@@ -369,13 +395,13 @@ export default function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`group block border border-neutral-200 bg-slate-50 p-5 sm:p-6 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
+                className={`group block rounded-xl border border-slate-200 bg-slate-50 p-5 sm:p-6 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
               >
-                <span className="text-base font-bold text-neutral-900 group-hover:text-[#0e1a3a] transition-colors">
+                <span className="text-base font-bold text-slate-900 group-hover:text-[#0e1a3a] transition-colors">
                   {item.title}
                 </span>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">{item.body}</p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">{item.body}</p>
+                <ArrowRight className="mt-3 h-4 w-4 text-slate-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>
@@ -383,13 +409,11 @@ export default function HomePage() {
       </section>
 
       {/* Flagship lane: HMRC disclosure + CARF urgency */}
-      <section className="border-b border-neutral-200 bg-[#0e1a3a] py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-[#0e1a3a] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <div className="mb-4 inline-block bg-white/10 border border-white/20 px-3 py-1 text-xs font-bold uppercase tracking-widest text-blue-200">
-                Disclosure and nudge letters
-              </div>
+              <Eyebrow onDark>Disclosure and nudge letters</Eyebrow>
               <h2 className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
                 Unreported crypto gains: act before CARF data reaches HMRC.
               </h2>
@@ -422,7 +446,7 @@ export default function HomePage() {
               <div className="mt-8">
                 <Link
                   href="/services/hmrc-disclosure"
-                  className={`inline-flex items-center gap-2 bg-white px-6 py-3 text-sm font-semibold text-[#0e1a3a] hover:bg-blue-50 transition-colors ${focusRing}`}
+                  className={`inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-[#0e1a3a] hover:bg-blue-50 transition-colors ${focusRing}`}
                 >
                   How we handle HMRC disclosure
                   <ArrowRight className="h-4 w-4" />
@@ -450,7 +474,7 @@ export default function HomePage() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="border border-white/20 bg-white/5 p-5 sm:p-6"
+                  className="rounded-xl border border-white/20 bg-white/5 p-5 sm:p-6"
                 >
                   <div className="font-bold text-white">{item.label}</div>
                   <p className="mt-2 text-sm leading-relaxed text-blue-200">{item.body}</p>
@@ -462,20 +486,20 @@ export default function HomePage() {
       </section>
 
       {/* What we actually fix */}
-      <section className="border-b border-neutral-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">The moments that bring people to us</div>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <Eyebrow>The moments that bring people to us</Eyebrow>
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             The four errors most DIY crypto returns contain.
           </h2>
           <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {whatWeActuallyFix.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-[#0e1a3a] bg-white p-6 sm:p-8"
+                className="rounded-xl border border-slate-200 border-l-4 border-l-[#0e1a3a] bg-white p-6 sm:p-8"
               >
-                <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+                <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+                <p className="mt-4 text-base leading-relaxed text-slate-600">{item.body}</p>
               </article>
             ))}
           </div>
@@ -483,14 +507,18 @@ export default function HomePage() {
       </section>
 
       {/* Services grid */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">What we do</div>
-            <h2 className="mt-2 text-2xl font-bold text-neutral-900 sm:text-4xl">
+            {/* Eyebrow is a flex row (brand rule + label) with no className prop,
+                so a centred band centres it with a wrapper rather than text-align. */}
+            <div className="flex justify-center">
+              <Eyebrow>What we do</Eyebrow>
+            </div>
+            <h2 className="mt-2 text-2xl font-bold text-slate-900 sm:text-4xl">
               Services
             </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
               Five specialist service areas covering the full crypto tax compliance picture.
             </p>
           </div>
@@ -525,12 +553,12 @@ export default function HomePage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className={`group block border border-neutral-200 bg-slate-50 p-6 sm:p-7 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
+                className={`group block rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-7 transition-all hover:border-[#0e1a3a] hover:shadow-md ${focusRing}`}
               >
-                <h3 className="text-base font-bold text-neutral-900 group-hover:text-[#0e1a3a] transition-colors">
+                <h3 className="text-base font-bold text-slate-900 group-hover:text-[#0e1a3a] transition-colors">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">{service.body}</p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">{service.body}</p>
                 <div className="mt-4 flex items-center text-[#0e1a3a] font-semibold text-sm">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -542,15 +570,15 @@ export default function HomePage() {
       </section>
 
       {/* Free tools + data asset */}
-      <section className="border-b border-neutral-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <div className="section-label mb-4">Free tools</div>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
+              <Eyebrow>Free tools</Eyebrow>
+              <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
                 Four calculators covering the questions people ask most.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-neutral-600 sm:text-lg">
+              <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
                 All four calculators are scenario and estimate tools. They state their
                 simplifications openly (the same-day and 30-day matching rules are out of scope
                 for any stateless web tool) and end at &ldquo;your situation has X complexity, speak
@@ -562,25 +590,25 @@ export default function HomePage() {
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    className={`group flex items-start justify-between gap-4 border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-[#0e1a3a] ${focusRing}`}
+                    className={`group flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white px-5 py-4 transition-all hover:border-[#0e1a3a] ${focusRing}`}
                   >
                     <div>
-                      <div className="text-sm font-bold text-neutral-900 group-hover:text-[#0e1a3a] transition-colors">
+                      <div className="text-sm font-bold text-slate-900 group-hover:text-[#0e1a3a] transition-colors">
                         {calc.title}
                       </div>
-                      <p className="mt-1 text-xs leading-relaxed text-neutral-500">{calc.body}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-slate-500">{calc.body}</p>
                     </div>
-                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-slate-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
               </div>
             </div>
             <div>
-              <div className="section-label mb-4">Data asset</div>
-              <h2 className="mt-2 text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
+              <Eyebrow>Data asset</Eyebrow>
+              <h2 className="mt-2 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
                 UK Crypto Tax Compliance Index.
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
                 HMRC publishes no crypto-specific tax gap, so we do not invent one. The index
                 sets out what can be verified: how many UK adults hold cryptoassets, on FCA
                 consumer research; the CARF reporting timeline counting down to the 31 May 2027
@@ -590,10 +618,10 @@ export default function HomePage() {
               <div className="mt-6">
                 <Link
                   href="/research/crypto-tax-gap-index"
-                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#0e1a3a] hover:text-[#0e1a3a] transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold text-slate-800 hover:border-[#0e1a3a] hover:text-[#0e1a3a] transition-all ${focusRing}`}
                 >
                   View the UK Crypto Tax Compliance Index
-                  <ArrowRight className="h-4 w-4 text-neutral-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-slate-500 group-hover:text-[#0e1a3a] group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -602,20 +630,20 @@ export default function HomePage() {
       </section>
 
       {/* Why a specialist, not a generalist */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">Why specialist matters</div>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <Eyebrow>Why specialist matters</Eyebrow>
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             A generalist handles your bookkeeping.{" "}
             <span className="text-[#0e1a3a]">We handle the parts of crypto tax that need specialist knowledge.</span>
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             s104 pooling with same-day and 30-day matching, DeFi disposal analysis, the
             badges-of-trade test for day-trading, the correct income-then-CGT two-step for
             staking and mining, and the economics of HMRC disclosure: a generalist encounters
             these infrequently. We work with them every week.
           </p>
-          <div className="mt-12 overflow-x-auto border border-neutral-200">
+          <div className="mt-12 overflow-x-auto rounded-xl border border-slate-200">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
               <caption className="sr-only">
                 How {siteConfig.name} handles common crypto tax areas
@@ -634,12 +662,12 @@ export default function HomePage() {
                 {whySpecialist.map((row, i) => (
                   <tr
                     key={row.area}
-                    className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-slate-50" : "bg-white"}`}
+                    className={`border-b border-slate-200 last:border-0 ${i % 2 === 1 ? "bg-slate-50" : "bg-white"}`}
                   >
-                    <th scope="row" className="px-4 py-3.5 font-semibold text-neutral-900 sm:px-6 sm:py-4">
+                    <th scope="row" className="px-4 py-3.5 font-semibold text-slate-900 sm:px-6 sm:py-4">
                       {row.area}
                     </th>
-                    <td className="px-4 py-3.5 text-neutral-600 sm:px-6 sm:py-4">{row.detail}</td>
+                    <td className="px-4 py-3.5 text-slate-600 sm:px-6 sm:py-4">{row.detail}</td>
                   </tr>
                 ))}
               </tbody>
@@ -652,11 +680,13 @@ export default function HomePage() {
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">Real outcomes</div>
-            <h2 id="testimonials-heading" className="text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
+            <div className="flex justify-center">
+              <Eyebrow>Real outcomes</Eyebrow>
+            </div>
+            <h2 id="testimonials-heading" className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               What clients say
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-neutral-600">
+            <p className="mt-3 text-sm sm:text-base text-slate-600">
               Composite accounts based on patterns across our client base. Names, amounts and
               specific details anonymised. The compliance situations described are real.
             </p>
@@ -665,13 +695,13 @@ export default function HomePage() {
             {testimonials.map((t, i) => (
               <figure
                 key={i}
-                className="relative bg-white border border-neutral-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+                className="relative rounded-xl bg-white border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
               >
                 <Quote className="absolute top-4 right-4 h-6 w-6 text-blue-100" aria-hidden />
-                <blockquote className="text-base leading-relaxed text-neutral-800 font-medium pr-8">
+                <blockquote className="text-base leading-relaxed text-slate-800 font-medium pr-8">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-neutral-100 text-xs sm:text-sm font-semibold text-neutral-500">
+                <figcaption className="mt-5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-slate-500">
                   {t.attribution}
                 </figcaption>
               </figure>
@@ -681,22 +711,26 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className="border-t border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="section-label mb-4">Answers</div>
+            <div className="flex justify-center">
+              <Eyebrow>Answers</Eyebrow>
             </div>
-            <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-4xl">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-4xl">
               Common questions
             </h2>
             <div className="space-y-3 sm:space-y-4">
               {faqs.map((faq) => (
                 <details
                   key={faq.question}
-                  className="group border border-neutral-200 bg-white"
+                  /* Native <details>, deliberately NOT the kit's FaqSection: that is a
+                     Radix accordion with no forceMount, so closed answers leave the
+                     server HTML while the FAQ JSON-LD above still asserts them. Phase 0
+                     closed exactly that defect on this site. Visual treatment only. */
+                  className="group rounded-xl border border-slate-200 bg-white"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-[#0e1a3a] transition-colors list-none">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-slate-900 hover:text-[#0e1a3a] transition-colors list-none">
                     <span>{faq.question}</span>
                     <span
                       className="flex-shrink-0 text-[#0e1a3a] transition-transform group-open:rotate-45"
@@ -707,7 +741,7 @@ export default function HomePage() {
                       </svg>
                     </span>
                   </summary>
-                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4">
+                  <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
                     {faq.answer}
                   </div>
                 </details>
@@ -717,58 +751,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA with LeadForm */}
-      <section className="relative overflow-hidden bg-[#0e1a3a]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a3a6e]/20 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
-        <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div>
-              <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-                Talk to a crypto tax specialist
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-blue-100">
-                Tell us about your situation. We will explain what you need and what the position
-                looks like, in plain English, with no obligation.
-              </p>
-              <div className="mt-8 space-y-4">
-                {[
-                  { title: "Crypto tax only", sub: "We do not take general commercial or property clients" },
-                  { title: "Anonymous until a firm takes it on", sub: "Firms are first shown a summary with your name and contact details removed" },
-                  { title: "All conversations are confidential", sub: "We never discuss one client's position with another" },
-                  { title: "UK-wide (HMRC)", sub: "Scotland has devolved income tax bands; we flag where they change the outcome" },
-                ].map((item) => (
-                  <div key={item.title} className="flex items-center gap-4 text-blue-100">
-                    <div className="h-12 w-12 flex items-center justify-center bg-[#1a3a6e] text-white font-bold text-xl flex-shrink-0">
-                      &#10003;
-                    </div>
-                    <div>
-                      <div className="font-bold text-white">{item.title}</div>
-                      <div className="text-sm text-blue-300">{item.sub}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">
-                Get in touch
-              </h3>
-              <LeadForm submitLabel="Send enquiry" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* CTA: the kit's LeadCTAPanel, replacing the hand-rolled twin of it.
+          Its non-contained variant grounds on bg-slate-900 (#0f172b) rather than the
+          site navy (#0e1a3a); the two are perceptually the same ground and this band is
+          not adjacent to either navy band, so the ground identity is preserved in
+          practice. The contained variant was rejected: it would turn the page's closing
+          ask into a light grey card and drop the homepage from three dark bands to two.
+          All four proof points and the form are the live ones, unchanged.
+
+          The backdrop slot carries CryptoBackdrop, matching Property, generalist,
+          Solicitors and Trade, all of which paint their motif on the closing panel as
+          well as the hero. The slot only renders on this non-contained variant and the
+          panel already supplies the host contract (relative overflow-hidden on the
+          section, relative z-10 on the content), so nothing here has to. */}
+      <LeadCTAPanel
+        eyebrow="Get started"
+        title="Talk to a crypto tax specialist"
+        description="Tell us about your situation. We will explain what you need and what the position looks like, in plain English, with no obligation."
+        proofPoints={ctaProofPoints}
+        formTitle="Get in touch"
+        form={<LeadForm submitLabel="Send enquiry" />}
+        backdrop={<CryptoBackdrop />}
+      />
 
       {/* Blog footer strip */}
-      <section className="border-t border-neutral-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
+      <section className="border-t border-slate-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
-            <div className="section-label mb-4">Guides and analysis</div>
-            <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
+            <div className="flex justify-center">
+              <Eyebrow>Guides and analysis</Eyebrow>
+            </div>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
               Plain English crypto tax guidance for UK holders.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
               Articles and guides on CGT and disposals, HMRC disclosure, staking and mining income,
               DeFi, NFTs, trader status and businesses holding crypto. Written for people managing
               their own tax position, not for accountants.

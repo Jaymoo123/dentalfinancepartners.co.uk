@@ -17,7 +17,7 @@ import { NoticeCard } from "@accounting-network/web-shared/design/primitives/Not
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 transition-colors focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-primary-500/30";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 transition-colors focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-primary-500/30";
 
 type MissingField = "name" | "phone";
 
@@ -112,7 +112,7 @@ export default function DetailsForm({
   if (status === "success") {
     return (
       <NoticeCard tone="primary" title="Thank you, that is everything we need">
-        <p className="text-base text-neutral-700">
+        <p className="text-base text-slate-700">
           A crypto tax specialist will be in touch. If you would like to pick a time that suits
           you, you can book a callback below.
         </p>
@@ -128,7 +128,7 @@ export default function DetailsForm({
   if (status === "partial") {
     return (
       <NoticeCard tone="primary" title="Thank you">
-        <p className="text-base text-neutral-700">
+        <p className="text-base text-slate-700">
           We have saved that. We still need {remainingLabel(remaining)}. We will pop you a quick note
           so you can add it, or you can reply to any of our messages.
         </p>
@@ -150,7 +150,7 @@ export default function DetailsForm({
 
       {needsName && (
         <div className="mb-4">
-          <label htmlFor="complete-name" className="block text-sm font-semibold text-neutral-900">
+          <label htmlFor="complete-name" className="block text-sm font-semibold text-slate-900">
             Full name
           </label>
           <input
@@ -171,7 +171,7 @@ export default function DetailsForm({
 
       {needsPhone && (
         <div className="mb-4">
-          <label htmlFor="complete-phone" className="block text-sm font-semibold text-neutral-900">
+          <label htmlFor="complete-phone" className="block text-sm font-semibold text-slate-900">
             Phone
           </label>
           <input
@@ -200,7 +200,7 @@ export default function DetailsForm({
         </p>
       )}
 
-      <p className="mt-3 text-xs text-neutral-500">
+      <p className="mt-3 text-xs text-slate-500">
         We only use this to arrange your free crypto tax review. See our{" "}
         <a
           href="/privacy-policy"

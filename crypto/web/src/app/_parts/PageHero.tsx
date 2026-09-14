@@ -3,6 +3,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import CryptoBackdrop from "@/components/layout/CryptoBackdrop";
 
 /**
  * The shallow navy page hero, Property's `SlimHero` anatomy rebuilt on crypto's
@@ -17,6 +18,15 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
  * that value instead of adopted and then fought.
  *
  * `_parts` is a Next.js private folder: it holds no route and cannot become one.
+ *
+ * Owner: the backdrop/art-direction package (U4, 2026-09-14). The port left this
+ * file with no declared owner; it now has one. Its props contract, heading level
+ * and breadcrumb behaviour are depended on by nine route families, so a signature
+ * change here is a breaking change for other packages.
+ *
+ * `CryptoBackdrop` is mounted as the first child, which is why the section carries
+ * `relative overflow-hidden` and the container `relative z-10` (the backdrop's host
+ * contract). Do not drop either.
  *
  * Chrome contract (W1): the shell supplies `<main id="main">`, the header and the
  * footer. This is page content, so it opens at `<h1>` and adds no landmark of its
@@ -40,8 +50,9 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="bg-[#0e1a3a] py-12 sm:py-16">
-      <div className={siteContainerLg}>
+    <section className="relative overflow-hidden bg-[#0e1a3a] py-12 sm:py-16">
+      <CryptoBackdrop />
+      <div className={`${siteContainerLg} relative z-10`}>
         <div className="max-w-3xl">
           {items ? <Breadcrumb items={items} siteUrl={siteConfig.url} onDark /> : null}
           <Eyebrow onDark>{eyebrow}</Eyebrow>

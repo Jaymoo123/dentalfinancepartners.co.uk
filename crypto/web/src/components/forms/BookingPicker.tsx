@@ -23,7 +23,7 @@ type Status = "idle" | "submitting" | "done" | "error" | "expired";
 const chipBase =
   "flex min-h-12 touch-manipulation flex-col items-center justify-center border px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
 const chipIdle =
-  "border-neutral-300 bg-white text-neutral-900 hover:border-[var(--brand-primary)] hover:bg-slate-50";
+  "border-slate-300 bg-white text-slate-900 hover:border-[var(--brand-primary)] hover:bg-slate-50";
 const chipSelected =
   "border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white";
 
@@ -77,7 +77,7 @@ export default function BookingPicker({ token }: { token: string }) {
   if (status === "done") {
     return (
       <NoticeCard tone="primary" title="Callback booked">
-        <p className="text-base text-neutral-700">
+        <p className="text-base text-slate-700">
           {confirmedLabel ? (
             <>
               We have you down for <strong>{confirmedLabel}</strong>.
@@ -88,7 +88,7 @@ export default function BookingPicker({ token }: { token: string }) {
           A crypto tax specialist will call you then. If your plans change, just reply to any of our
           messages.
         </p>
-        <p className="mt-3 text-sm text-neutral-600">
+        <p className="mt-3 text-sm text-slate-600">
           The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
@@ -99,7 +99,7 @@ export default function BookingPicker({ token }: { token: string }) {
   if (status === "expired") {
     return (
       <NoticeCard>
-        <p className="text-base text-neutral-700">
+        <p className="text-base text-slate-700">
           This booking link has expired. No problem, you can still reach us through the contact
           form and we will arrange your review.
         </p>
@@ -112,7 +112,7 @@ export default function BookingPicker({ token }: { token: string }) {
 
   return (
     <div className="text-left">
-      <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+      <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
         1. Pick a day
       </p>
       <div className="grid grid-cols-5 gap-1 sm:gap-2">
@@ -132,7 +132,7 @@ export default function BookingPicker({ token }: { token: string }) {
         ))}
       </div>
 
-      <p className="mb-3 mt-6 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+      <p className="mb-3 mt-6 text-sm font-semibold uppercase tracking-wide text-slate-500">
         2. Pick a time that suits you
       </p>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
@@ -164,7 +164,7 @@ export default function BookingPicker({ token }: { token: string }) {
             Something went wrong saving your slot. Please try again.
           </p>
         )}
-        <p className="mt-3 text-xs text-neutral-600">
+        <p className="mt-3 text-xs text-slate-600">
           No obligation. A crypto tax specialist will call you in your chosen window.
         </p>
       </div>

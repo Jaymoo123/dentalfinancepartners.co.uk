@@ -1,4 +1,6 @@
 ﻿import type { Metadata, Viewport } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
@@ -47,6 +49,12 @@ import { buildOrganizationJsonLd } from "@/lib/schema";
       whole block when the kit stops composing display/min-height/min-width on
       top of a recipe that already fixes all three.
 
+      Still needed, and now needed MORE than before: this site's own
+      components/ui/layout-utils.ts used to declare a local btnPrimary with no
+      min-w at all, so only the kit's header CTA was affected. It now re-exports
+      the kit recipe, so min-w-[10rem] is the site-wide primary button box and
+      this patch is the single place that opts the 40px header CTA out of it.
+
       Keyed on data-cta="header_book", so it is valid only while PageShell.tsx
       leaves SiteHeader.ctaIds at the kit default. The drawer CTA carries
       data-cta-placement="mobile_menu" and is untouched. 64rem = the kit's `lg:`. */
@@ -70,8 +78,13 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: niche.display_name, description: niche.description, images: ["/api/og"] },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // next/font emits the @font-face rules and binds the family to
+  // --font-geist-sans / --font-geist-mono on <html>. globals.css consumes those
+  // two variables in the @layer base body rule and in its @theme
+  // --font-sans/--font-mono aliases, so the base rule is what actually sets the
+  // page's family and `font-sans`/`font-mono` resolve to the same faces.
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }} />
       </head>

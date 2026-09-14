@@ -56,7 +56,7 @@ export default function CryptoTaxComplianceIndexPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
-      <section className="border-b border-neutral-200 bg-[#0e1a3a] py-16 sm:py-20">
+      <section className="border-b border-slate-200 bg-[#0e1a3a] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Link
             href="/"
@@ -76,8 +76,8 @@ export default function CryptoTaxComplianceIndexPage() {
       {/* CARF countdown */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">CARF compliance countdown</h2>
-          <p className="mb-8 max-w-2xl text-neutral-600">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">CARF compliance countdown</h2>
+          <p className="mb-8 max-w-2xl text-slate-600">
             The{" "}
             <a href={data.carfTimeline.sourcesCollection} className={`text-[#0e1a3a] underline hover:opacity-75 ${focusRing}`} target="_blank" rel="noopener noreferrer">
               Cryptoasset Reporting Framework
@@ -87,21 +87,21 @@ export default function CryptoTaxComplianceIndexPage() {
             <strong>31 May 2027</strong>. Annual reports follow the same 31 May deadline each year thereafter.
           </p>
           <CarfCountdown />
-          <p className="mt-6 text-sm text-neutral-500 max-w-2xl">
+          <p className="mt-6 text-sm text-slate-500 max-w-2xl">
             Once the first CARF data reaches HMRC, exchanges can no longer be an invisible corner of holders&rsquo; finances. The data will cover trades, disposals, and income events across the 2026 tax year. Holders with unreported gains should act before HMRC writes first.
           </p>
         </div>
       </section>
 
       {/* UK ownership */}
-      <section className="bg-slate-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-8">UK cryptoasset ownership</h2>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-8">UK cryptoasset ownership</h2>
           <div className="grid gap-6 sm:grid-cols-2">
-            <div className="bg-white border border-neutral-200 p-6">
+            <div className="bg-white border border-slate-200 p-6">
               <div className="text-4xl font-bold font-mono text-[#0e1a3a]">{data.ownership.shareOfUKAdultsLabel}</div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">of UK adults hold cryptoassets</div>
-              <p className="mt-3 text-sm text-neutral-600">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">of UK adults hold cryptoassets</div>
+              <p className="mt-3 text-sm text-slate-600">
                 {data.ownership.approximateHolderCount} people, based on the{" "}
                 <a href={data.ownership.sourceUrl} className={`text-[#0e1a3a] underline hover:opacity-75 ${focusRing}`} target="_blank" rel="noopener noreferrer">
                   {data.ownership.source}
@@ -109,22 +109,22 @@ export default function CryptoTaxComplianceIndexPage() {
                 (YouGov survey of 2,199 UK adults, survey date {data.ownership.surveyDate}).
               </p>
             </div>
-            <div className="bg-white border border-neutral-200 p-6">
+            <div className="bg-white border border-slate-200 p-6">
               <div className="text-4xl font-bold font-mono text-[#0e1a3a]">{data.ownership.awarenessLabel.split("%")[0]}%</div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">of UK adults have heard of crypto</div>
-              <p className="mt-3 text-sm text-neutral-600">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">of UK adults have heard of crypto</div>
+              <p className="mt-3 text-sm text-slate-600">
                 Near-universal awareness, but only 12% have moved from awareness to ownership. The compliance challenge is concentrated in that 12%.
               </p>
             </div>
           </div>
-          <p className="mt-4 text-xs text-neutral-600">
+          <p className="mt-4 text-xs text-slate-600">
             Source:{" "}
             <a href={data.ownership.sourceUrl} className={`underline ${focusRing}`} target="_blank" rel="noopener noreferrer">
               FCA Cryptoassets Consumer Research 2024 (Wave 5)
             </a>
             , published November 2024, corrected March 2025. The FCA has since published a 2025 wave (Wave 6); the figures above are the Wave 5 figures and have not yet been restated to Wave 6. Check the FCA link for the latest published figure.
           </p>
-          <p className="mt-2 text-xs text-neutral-600">
+          <p className="mt-2 text-xs text-slate-600">
             Note: HMRC does not publish a crypto-specific tax gap figure. No modelled gap estimate is stated here.
           </p>
         </div>
@@ -133,8 +133,8 @@ export default function CryptoTaxComplianceIndexPage() {
       {/* CGT parameters */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">Current CGT parameters for cryptoassets ({data.cgtParameters.taxYear})</h2>
-          <p className="mb-8 max-w-2xl text-neutral-600">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">Current CGT parameters for cryptoassets ({data.cgtParameters.taxYear})</h2>
+          <p className="mb-8 max-w-2xl text-slate-600">
             These are the rates and thresholds that apply to crypto disposals for individual investors under{" "}
             <a href={data.cgtParameters.sourceUrl} className={`text-[#0e1a3a] underline hover:opacity-75 ${focusRing}`} target="_blank" rel="noopener noreferrer">
               current HMRC guidance
@@ -142,31 +142,31 @@ export default function CryptoTaxComplianceIndexPage() {
             . Almost all individuals are treated as investors for CGT rather than traders.
           </p>
           <div className="grid gap-6 sm:grid-cols-3">
-            <div className="bg-slate-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-3xl font-bold font-mono text-[#0e1a3a]">
                 <a href={data.cgtParameters.allowancesUrl} className={`hover:opacity-75 ${focusRing}`} target="_blank" rel="noopener noreferrer">
                   {data.cgtParameters.annualExemptAmountLabel}
                 </a>
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">CGT annual exempt amount</div>
-              <p className="mt-2 text-sm text-neutral-600">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">CGT annual exempt amount</div>
+              <p className="mt-2 text-sm text-slate-600">
                 Frozen for {data.cgtParameters.taxYear}. Gains below this threshold are not taxable, but every crypto-to-crypto swap counts as a disposal, so active holders exhaust the allowance quickly.
               </p>
             </div>
-            <div className="bg-slate-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-3xl font-bold font-mono text-[#0e1a3a]">18% / 24%</div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">CGT rates on crypto gains</div>
-              <p className="mt-2 text-sm text-neutral-600">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">CGT rates on crypto gains</div>
+              <p className="mt-2 text-sm text-slate-600">
                 <a href={data.cgtParameters.sourceUrl} className={`text-[#0e1a3a] underline hover:opacity-75 ${focusRing}`} target="_blank" rel="noopener noreferrer">
                   18% only on the portion of a gain that fits within the taxpayer&rsquo;s remaining basic-rate income tax band
                 </a>{" "}
                 (band ceiling {data.cgtParameters.basicRateBandLabel} for {data.cgtParameters.taxYear}); 24% above that threshold. Higher and additional-rate taxpayers pay 24% on the full gain.
               </p>
             </div>
-            <div className="bg-slate-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-3xl font-bold font-mono text-[#0e1a3a]">4 / 6 / 20</div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">Disclosure years by behaviour</div>
-              <p className="mt-2 text-sm text-neutral-600">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">Disclosure years by behaviour</div>
+              <p className="mt-2 text-sm text-slate-600">
                 HMRC may assess{" "}
                 <a href={data.disclosureWindows.sourceUrl} className={`text-[#0e1a3a] underline hover:opacity-75 ${focusRing}`} target="_blank" rel="noopener noreferrer">
                   4 years (reasonable care), 6 years (careless), or 20 years (deliberate)
@@ -179,43 +179,43 @@ export default function CryptoTaxComplianceIndexPage() {
       </section>
 
       {/* CARF timeline detail */}
-      <section className="bg-slate-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-8">CARF timeline: what happens when</h2>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-8">CARF timeline: what happens when</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <caption className="sr-only">CARF reporting timeline: date and event</caption>
               <thead>
-                <tr className="border-b-2 border-neutral-900">
-                  <th className="text-left py-3 pr-8 font-semibold text-neutral-900">Date</th>
-                  <th className="text-left py-3 font-semibold text-neutral-900">Event</th>
+                <tr className="border-b-2 border-slate-900">
+                  <th className="text-left py-3 pr-8 font-semibold text-slate-900">Date</th>
+                  <th className="text-left py-3 font-semibold text-slate-900">Event</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-neutral-100">
-                  <td className="py-3 pr-8 text-neutral-700 font-mono whitespace-nowrap">1 Jan 2026</td>
-                  <td className="py-3 text-neutral-700">UK cryptoasset reporting entities begin collecting account-holder and transaction data under CARF.</td>
+                <tr className="border-b border-slate-100">
+                  <td className="py-3 pr-8 text-slate-700 font-mono whitespace-nowrap">1 Jan 2026</td>
+                  <td className="py-3 text-slate-700">UK cryptoasset reporting entities begin collecting account-holder and transaction data under CARF.</td>
                 </tr>
-                <tr className="border-b border-neutral-100">
-                  <td className="py-3 pr-8 text-neutral-700 font-mono whitespace-nowrap">31 Dec 2026</td>
-                  <td className="py-3 text-neutral-700">End of the first CARF collection year. All 2026 transactions now in scope for the first report.</td>
+                <tr className="border-b border-slate-100">
+                  <td className="py-3 pr-8 text-slate-700 font-mono whitespace-nowrap">31 Dec 2026</td>
+                  <td className="py-3 text-slate-700">End of the first CARF collection year. All 2026 transactions now in scope for the first report.</td>
                 </tr>
-                <tr className="border-b border-neutral-100">
-                  <td className="py-3 pr-8 text-neutral-700 font-mono whitespace-nowrap">1 Jan 2027</td>
-                  <td className="py-3 text-neutral-700">First CARF reporting window opens. Platforms begin submitting 2026 data to HMRC.</td>
+                <tr className="border-b border-slate-100">
+                  <td className="py-3 pr-8 text-slate-700 font-mono whitespace-nowrap">1 Jan 2027</td>
+                  <td className="py-3 text-slate-700">First CARF reporting window opens. Platforms begin submitting 2026 data to HMRC.</td>
                 </tr>
-                <tr className="border-b border-neutral-100">
+                <tr className="border-b border-slate-100">
                   <td className="py-3 pr-8 text-[#0e1a3a] font-mono font-semibold whitespace-nowrap">31 May 2027</td>
-                  <td className="py-3 text-neutral-900 font-semibold">First CARF report deadline. All reporting entities must have submitted 2026 data to HMRC by this date.</td>
+                  <td className="py-3 text-slate-900 font-semibold">First CARF report deadline. All reporting entities must have submitted 2026 data to HMRC by this date.</td>
                 </tr>
-                <tr className="border-b border-neutral-100">
-                  <td className="py-3 pr-8 text-neutral-700 font-mono whitespace-nowrap">31 May annually</td>
-                  <td className="py-3 text-neutral-700">Ongoing deadline for each subsequent year&rsquo;s report covering the prior calendar year.</td>
+                <tr className="border-b border-slate-100">
+                  <td className="py-3 pr-8 text-slate-700 font-mono whitespace-nowrap">31 May annually</td>
+                  <td className="py-3 text-slate-700">Ongoing deadline for each subsequent year&rsquo;s report covering the prior calendar year.</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs text-neutral-600">
+          <p className="mt-4 text-xs text-slate-600">
             Sources:{" "}
             <a href={data.carfTimeline.sourcesCollection} className={`underline ${focusRing}`} target="_blank" rel="noopener noreferrer">
               HMRC guidance: collecting cryptoasset data
@@ -256,8 +256,8 @@ export default function CryptoTaxComplianceIndexPage() {
       {/* Methodology note */}
       <section className="bg-white py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-3">About this index</h2>
-          <p className="text-sm text-neutral-600 max-w-2xl">
+          <h2 className="text-lg font-bold text-slate-900 mb-3">About this index</h2>
+          <p className="text-sm text-slate-600 max-w-2xl">
             This index uses only primary sources: FCA consumer research for ownership levels, HMRC guidance for CARF dates, and gov.uk for CGT rates and disclosure windows. HMRC does not publish a crypto-specific tax gap, so no such estimate appears here. The ownership figures here are FCA Wave 5 (2024). The FCA published a further wave in 2025 which is not yet reflected on this page, so treat the ownership figures as the 2024 position and see{" "}
             <a href={data.ownership.sourceUrl} className={`text-[#0e1a3a] underline hover:opacity-75 ${focusRing}`} target="_blank" rel="noopener noreferrer">
               FCA publications

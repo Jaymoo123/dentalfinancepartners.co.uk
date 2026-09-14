@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
 import { PageHero } from "@/app/_parts/PageHero";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { sectionY, siteContainerLg } from "@/components/ui/layout-utils";
@@ -60,11 +61,29 @@ export default function ServicesPage() {
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Not sure which service you need?</h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600">Tell us about your crypto situation and we will explain what is required.</p>
-            <ul className="mt-8 space-y-3 text-sm text-slate-600">
-              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-primary-700">✓</span><span>Reviewed by a crypto tax specialist, not a generalist</span></li>
-              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-primary-700">✓</span><span>No obligation, free initial reply</span></li>
-              <li className="flex items-start gap-3"><span className="mt-0.5 font-bold text-primary-700">✓</span><span>We explain what is required before any engagement begins</span></li>
-            </ul>
+            {/* Kit list, not three hand-rolled rows with a literal "✓" glyph. The
+                three strings are the published ones, unchanged. `tickClassName` is
+                passed because the component's default (primary-400, #c9835c) is
+                tuned for navy and measures 2.4:1 on this slate-50 ground; the 600
+                step (#8f421f) measures 6.7:1 there, clear of the 3.0 graphic floor
+                the mark is held to.
+
+                The draw-on-scroll animation needs a `.tick-draw` rule. The kit's
+                own lives in globals-standard.css, which this site does not import,
+                but this site now declares its own in app/globals.css (the
+                `.tick-draw` block and its prefers-reduced-motion / scripting gate),
+                so the ticks DO draw here. With JavaScript off or under
+                prefers-reduced-motion the collapsed state never applies and every
+                tick renders fully drawn, which is the kit's own end state. */}
+            <DrawnTickList
+              className="mt-8 space-y-3 text-sm text-slate-600"
+              tickClassName="text-primary-600"
+              items={[
+                "Reviewed by a crypto tax specialist, not a generalist",
+                "No obligation, free initial reply",
+                "We explain what is required before any engagement begins",
+              ]}
+            />
           </div>
           <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
             <h3 className="text-xl font-bold text-slate-900">Get in touch</h3>

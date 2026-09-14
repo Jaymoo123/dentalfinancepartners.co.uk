@@ -33,7 +33,7 @@ export default function ContactPage() {
         title="Contact us"
         items={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       >
-        <p className="mt-4 text-lg leading-relaxed text-white/80">
+        <p className="mt-4 text-lg leading-relaxed text-slate-300">
           Tell us about your crypto tax situation. Whether it is a disclosure, a Self Assessment
           with cryptoasset pages or years of unreconciled swaps, start with the form and we will
           take it from there.
@@ -44,12 +44,12 @@ export default function ContactPage() {
         <div className={siteContainerLg}>
           <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
             <div className="space-y-6">
-              <div className="border border-neutral-200 bg-white p-6 sm:p-8">
+              <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
                 <Eyebrow>What we need</Eyebrow>
-                <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
                   What to tell us
                 </h2>
-                <p className="mt-4 text-base leading-relaxed text-neutral-700">
+                <p className="mt-4 text-base leading-relaxed text-slate-700">
                   Roughly what you hold, how you came by it, and which tax years are open. You do
                   not need your figures ready. If you use Koinly, Recap or a similar tool, say so,
                   it changes where we start.
@@ -66,9 +66,9 @@ export default function ContactPage() {
               />
             </div>
 
-            <div className="border border-neutral-200 bg-white p-6 sm:p-8 lg:p-10">
+            <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8 lg:p-10">
               <Eyebrow>No obligation</Eyebrow>
-              <h2 className="mb-6 text-2xl font-semibold tracking-tight text-neutral-900">
+              <h2 className="mb-6 text-2xl font-semibold tracking-tight text-slate-900">
                 Send your enquiry
               </h2>
               <LeadForm redirectOnSuccess submitLabel="Send enquiry" />

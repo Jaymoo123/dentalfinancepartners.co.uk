@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { siteContainerLg, sectionY, btnPrimary } from "@/components/ui/layout-utils";
 import { PageHero } from "@/app/_parts/PageHero";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 
@@ -33,7 +33,7 @@ export default function AboutPage() {
         title="We only work with cryptoasset holders and businesses."
         items={[{ label: "Home", href: "/" }, { label: "About" }]}
       >
-        <p className="mt-4 text-lg leading-relaxed text-white/80">
+        <p className="mt-4 text-lg leading-relaxed text-slate-300">
           CGT pooling rules, HMRC disclosure routes, staking income treatment and the CARF
           compliance deadline are specific enough that general accounting experience is not the
           same as specialist experience.
@@ -41,13 +41,17 @@ export default function AboutPage() {
         {/* The hero had no ask at all, so a reader convinced by the first screen
             had to scroll the whole page to act. Points at the panel on this page
             rather than /contact, so the enquiry is taken where the reader is.
-            Written out rather than composed on `btnPrimary`: that recipe is navy
-            and this ground is navy, and `btnOnDark` on this site is an alias of
-            `btnSecondary`, which is a near-black outline that disappears here. */}
+            Written out rather than composed on `btnPrimary`: that recipe's ground
+            is --btn-ground, which on this site IS the navy this section paints, so
+            the button would vanish into its own band. `btnOnDark` is the kit's
+            ghost outline (border-white/40, bg-white/5) and is a legitimate
+            alternative, but it is the estate's SECONDARY weight and this is the
+            page's only hero ask, so the solid white is kept at the kit's button
+            metrics (rounded-xl, min-w-[10rem], text-base, font-bold) instead. */}
         <div className="mt-8">
           <Link
             href="#book"
-            className="inline-flex min-h-12 items-center justify-center bg-white px-7 py-3.5 text-base font-medium tracking-wide text-[#0e1a3a] transition-colors duration-150 hover:bg-[#f6e2d6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-bold text-[#0e1a3a] transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             Tell us about your position
           </Link>
@@ -58,10 +62,10 @@ export default function AboutPage() {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="max-w-3xl">
             <Eyebrow>Why we exist</Eyebrow>
-            <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
               Specialist, not general
             </h2>
-            <div className="mt-6 space-y-6 text-base leading-relaxed text-neutral-700 sm:text-lg">
+            <div className="mt-6 space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
               <p>
                 We are specialist tax accountants for UK cryptoasset holders: investors, day
                 traders, DeFi and staking participants, NFT creators, miners, and businesses that
@@ -81,7 +85,7 @@ export default function AboutPage() {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="max-w-3xl">
             <Eyebrow>The work</Eyebrow>
-            <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
               What we handle
             </h2>
           </div>
@@ -89,16 +93,16 @@ export default function AboutPage() {
             {whatWeHandle.map((item) => (
               <li
                 key={item}
-                className="border-t border-neutral-200 py-5 text-base leading-relaxed text-neutral-700 last:border-b sm:text-lg"
+                className="border-t border-slate-200 py-5 text-base leading-relaxed text-slate-700 last:border-b sm:text-lg"
               >
                 {item}
               </li>
             ))}
           </ul>
-          <p className="mt-8 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+          <p className="mt-8 max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">
             Tell us about your position and we will explain what is involved.
           </p>
-          <div className="mt-10 max-w-3xl border-t border-neutral-200 pt-8 text-sm text-neutral-600">
+          <div className="mt-10 max-w-3xl border-t border-slate-200 pt-8 text-sm text-slate-600">
             <p>
               {co.tradingName} is a trading name of {co.legalName}, registered in{" "}
               {co.placeOfRegistration} (company no. {co.number}). Registered office:{" "}
@@ -117,22 +121,22 @@ export default function AboutPage() {
           inventing replacements is how a removed claim comes back. */}
       <section className="bg-white py-16 sm:py-20">
         <div id="book" className="mx-auto max-w-3xl scroll-mt-24 px-6">
-          <p className="section-label">Free call</p>
+          <Eyebrow>Free call</Eyebrow>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-[#0e1a3a] sm:text-3xl">
             Tell us where you are
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-neutral-700">
+          <p className="mt-4 text-base leading-relaxed text-slate-700">
             Send us the shape of your position: what you hold, how you came by
             it, and which tax years are open. You do not need your figures
             ready.
           </p>
           <a
             href="/contact"
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-lg bg-[var(--btn-ground)] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[var(--btn-ground-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-strong)]"
+            className={`${btnPrimary} mt-8`}
           >
             Get in touch
           </a>
-          <p className="mt-4 text-sm text-neutral-600">
+          <p className="mt-4 text-sm text-slate-600">
             No obligation and no hard sell. If your position is already right,
             we will say so.
           </p>

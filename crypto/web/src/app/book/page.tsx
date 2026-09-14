@@ -47,7 +47,7 @@ export default async function BookPage({
               <BookingPicker token={token} />
             ) : (
               <NoticeCard>
-                <p className="text-base text-neutral-700">
+                <p className="text-base text-slate-700">
                   This page needs the personal link from your email or text message. If you cannot
                   find it, use the contact form and we will arrange your review.
                 </p>

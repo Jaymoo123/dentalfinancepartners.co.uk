@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
-import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { MiniCapture } from "@/components/calculators/MiniCapture";
 import { buildCalculatorJsonLd, buildFaqPageJsonLd } from "@/lib/calculators/schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
-import { sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { sectionY, siteContainerLg } from "@/components/ui/layout-utils";
+import { PageHero } from "@/app/_parts/PageHero";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -58,30 +57,24 @@ export default async function CalculatorToolPage({ params }: Props) {
         />
       )}
 
-      {/* Hero. The hand-rolled "Home / Calculators / name" text trail is now the
-          kit Breadcrumb: a real nav landmark with an ordered list, a 24px hit
-          area on the links, and the BreadcrumbList JSON-LD the text trail never
-          emitted. The shell owns <main>, so this page opens on a section. */}
-      <section className="border-b border-neutral-200 bg-[#0e1a3a]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Calculators", href: "/calculators" },
-              { label: tool.name },
-            ]}
-            siteUrl={site.url}
-            onDark
-          />
-          <div className="max-w-3xl">
-            <Eyebrow onDark>{tool.category}</Eyebrow>
-            <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl">
-              {tool.name}
-            </h1>
-            <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">{tool.intro}</p>
-          </div>
-        </div>
-      </section>
+      {/* Hero. Was a hand-copy of _parts/PageHero's anatomy rather than a call
+          to it, which is why it never picked up CryptoBackdrop when the backdrop
+          landed. Now it calls PageHero. Same copy, same h1 level, same kit
+          Breadcrumb with the same three items and the same onDark, so the
+          BreadcrumbList JSON-LD is byte-identical; the trail now sits inside the
+          3xl copy column and the hero carries the motif. The shell owns <main>,
+          so this page still opens on a section. */}
+      <PageHero
+        eyebrow={tool.category}
+        title={tool.name}
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Calculators", href: "/calculators" },
+          { label: tool.name },
+        ]}
+      >
+        <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">{tool.intro}</p>
+      </PageHero>
 
       {/* The tool. Full container, no inner clamp: a narrower box here would put
           the calculator's edges out of line with the explainer below it, and the

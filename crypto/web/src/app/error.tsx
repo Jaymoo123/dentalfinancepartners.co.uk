@@ -35,7 +35,7 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className={`inline-flex items-center justify-center border border-neutral-300 bg-white px-6 py-3 text-base font-semibold text-neutral-900 transition-colors hover:bg-slate-50 ${focusRing}`}
+            className={`inline-flex items-center justify-center border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-slate-50 ${focusRing}`}
           >
             Go home
           </Link>

@@ -50,7 +50,7 @@ export default async function ThankYouPage({
         <section className="bg-white py-12 sm:py-16">
           <div className={siteContainerLg}>
             <div className="mx-auto max-w-2xl">
-              <p className="text-base leading-relaxed text-neutral-700">
+              <p className="text-base leading-relaxed text-slate-700">
                 We have stopped the reminders. If you change your mind, the contact form is always
                 open.
               </p>
@@ -71,7 +71,7 @@ export default async function ThankYouPage({
         <section className="bg-white py-12 sm:py-16">
           <div className={siteContainerLg}>
             <div className="mx-auto max-w-2xl">
-              <p className="text-base leading-relaxed text-neutral-700">
+              <p className="text-base leading-relaxed text-slate-700">
                 Thanks, that is confirmed. A specialist firm from our partner network will contact
                 you directly.
               </p>
@@ -114,8 +114,8 @@ export default async function ThankYouPage({
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-2xl">
             {bookingToken && (
-              <div className="border border-neutral-200 p-4 sm:p-8">
-                <p className="mb-6 text-center text-base font-semibold text-neutral-900">
+              <div className="border border-slate-200 p-4 sm:p-8">
+                <p className="mb-6 text-center text-base font-semibold text-slate-900">
                   Want to skip the back and forth? Pick a time for your call now.
                 </p>
                 <BookingPicker token={bookingToken} />

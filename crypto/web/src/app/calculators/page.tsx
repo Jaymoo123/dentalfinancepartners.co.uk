@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
-import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
-import { sectionY, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { sectionY, siteContainerLg } from "@/components/ui/layout-utils";
+import { PageHero } from "@/app/_parts/PageHero";
 
 export const metadata: Metadata = {
   title: `Free Crypto Tax Calculators`,
@@ -16,34 +15,30 @@ export default function CalculatorsPage() {
   const tools = allTools();
   return (
     <>
-      {/* Hero. Same recipe as /services/[slug] and /for/[slug]: navy ground,
-          breadcrumb, eyebrow, h1, standfirst. The shell owns <main>, so this
-          page starts at a section and its first heading is the h1.
+      {/* Hero. Was a hand-copy of _parts/PageHero's anatomy (navy ground, kit
+          Breadcrumb, Eyebrow, h1, standfirst) rather than a call to it, which is
+          why it never picked up CryptoBackdrop when the backdrop landed. Now it
+          calls PageHero. Same copy, same h1, same Breadcrumb component with the
+          same items and the same onDark, so the BreadcrumbList JSON-LD is
+          unchanged; what changes is that the trail now sits inside the 3xl copy
+          column and the hero gets the motif, both of which is what every other
+          route family on this site already does.
 
           No hero CTA, unlike the topic pages. The action on this page is the
           tool list immediately below it, and a "Get in touch" button above the
           fold competes with it for the same click. The closing panel carries
           the ask instead. */}
-      <section className="border-b border-neutral-200 bg-[#0e1a3a]">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <Breadcrumb
-            items={[{ label: "Home", href: "/" }, { label: "Calculators" }]}
-            siteUrl={site.url}
-            onDark
-          />
-          <div className="max-w-3xl">
-            <Eyebrow onDark>Free tools</Eyebrow>
-            <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Crypto tax calculators.
-            </h1>
-            <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
-              {tools.length} free scenario tools built on 2026/27 HMRC rules. No sign-up, no email
-              needed to see a figure. Every one is an estimation tool: speak to a specialist before
-              you file.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Free tools"
+        title="Crypto tax calculators."
+        items={[{ label: "Home", href: "/" }, { label: "Calculators" }]}
+      >
+        <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+          {tools.length} free scenario tools built on 2026/27 HMRC rules. No sign-up, no email
+          needed to see a figure. Every one is an estimation tool: speak to a specialist before
+          you file.
+        </p>
+      </PageHero>
 
       {/* The tool list.
           Property groups this index by category under its own h3 per category,
@@ -96,7 +91,7 @@ export default function CalculatorsPage() {
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-[#0e1a3a] transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-bold text-[#0e1a3a] transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Get in touch
               </Link>
