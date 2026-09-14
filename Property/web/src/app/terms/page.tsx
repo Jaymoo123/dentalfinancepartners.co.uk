@@ -31,7 +31,7 @@ export default function TermsPage() {
         ]}
       />
       <h1 className="text-3xl font-bold text-[var(--ink)] sm:text-4xl">Terms of use</h1>
-      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 18 June 2026</p>
+      <p className="mt-4 text-sm text-[var(--muted)]">Last updated: 14 September 2026</p>
       <div className="prose-blog mt-8 space-y-6 text-[var(--ink-soft)]">
         <p>
           These terms of use govern your access to and use of the {siteConfig.name} website (the &quot;Site&quot;). By accessing or using the Site, you agree to be bound by these terms. If you do not agree, please do not use the Site.
@@ -127,7 +127,20 @@ export default function TermsPage() {
           If any provision of these terms is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
         </p>
 
-        <h2 className="text-xl font-bold text-[var(--ink)]">13. Contact us</h2>
+        <h2 className="text-xl font-bold text-[var(--ink)]">13. Paid documents</h2>
+        <p>
+          Where the Site offers a paid document, the document is a computation from the figures you entered into the
+          calculator, not advice. The price is shown before you buy and includes VAT where VAT applies. We send the
+          document by email to the address you give at checkout, within one working day of payment.
+        </p>
+        <p>
+          You have 14 days to cancel under the Consumer Contracts (Information, Cancellation and Additional Charges)
+          Regulations 2013. Cancel before we send the document and you get a full refund. If the document does not
+          match the figures you entered, tell us within 14 days of delivery and you get a full refund. Contact us via
+          our contact page to cancel or to ask for a refund.
+        </p>
+
+        <h2 className="text-xl font-bold text-[var(--ink)]">14. Contact us</h2>
         <p>
           Questions about these terms? Contact us via our{" "}
           <Link href="/contact" className="text-[var(--accent-strong)] underline">

@@ -31,6 +31,7 @@ import type {
   ScenarioResult,
 } from "@/lib/calculators/premium/types";
 import { MiniGrid } from "@/components/calculators/premium/MiniGrid";
+import { PdfOffer } from "@/components/calculators/premium/PdfOffer";
 import {
   Collapsible,
   CollapsibleContent,
@@ -639,6 +640,14 @@ export function PremiumCalculator({
               {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
               {full && <ComparisonChart config={config} result={result} />}
               <Workings result={result} />
+              <PdfOffer
+                toolId={config.id}
+                placement={placement}
+                values={values}
+                rows={rows}
+                scenario={scenario}
+                result={result}
+              />
             </>
           ) : (
             <HeldResult

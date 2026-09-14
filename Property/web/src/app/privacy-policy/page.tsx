@@ -189,7 +189,12 @@ export default function PrivacyPolicyPage() {
             describes and to write the one-line summary we show to firms.
           </li>
           <li><strong>Companies House:</strong> looking up publicly available information where you mention a company.</li>
+          <li><strong>Stripe:</strong> payment processing for paid documents. Stripe receives your email address and card details; we never see your card number.</li>
         </ul>
+        <p>
+          When you buy a PDF of a calculator result, we store the figures you entered into the calculator and a
+          reference number for 90 days, so that we can produce the document and handle any refund.
+        </p>
         <p>
           Some of these providers process data outside the United Kingdom. Where they do, we rely on a valid transfer
           mechanism under the UK GDPR.

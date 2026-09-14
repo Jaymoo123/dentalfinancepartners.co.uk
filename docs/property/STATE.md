@@ -20,6 +20,51 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
+## 2026-09-14 — Paid PDF concierge test (flag-gated, ships OFF)
+
+**What.** Two-week viability test of self-serve revenue: a "Get the PDF, £29" block under the
+revealed result of the three premium tools (`capital-gains-premium`, `incorporation-premium`,
+`section-24-premium`). Real Stripe Payment Link; the click-time inputs are saved so each PDF
+is produced by hand within one working day. Case: `docs/_engines/AUDIENCE_INTENT_MONETISATION_2026-09-14.md`.
+Owner decisions 09-14: real checkout, CGT included, one price £29, switchable without a deploy,
+partner never copied on any email.
+
+**Where it sits.** After "See your result" -> pop-up -> submit or "No thanks" -> result. Only then,
+under "Show the workings". Pop-up, gate, lead form, calculator maths: untouched. Desktop only
+(the premium tool is `hidden sm:block`).
+
+**Switch.** `site_flags` row `calc_pdf_offer`, value `{enabled, link, price_gbp, started_at}`.
+Ships `enabled:false`. Turn on: set `link` (must start `https://buy.stripe.com/`), `enabled:true`,
+`started_at` = now. Off: `update site_flags set value = value || '{"enabled":false}' where key='calc_pdf_offer';`
+Live within 60s (CDN cache on `/api/calc/pdf-offer`). Missing row, bad shape, table absent = off.
+
+**Files.** `Property/web/src/lib/calculators/premium/pdfRequest.ts` (PDF_TOOLS, buildPdfRequest,
+parseOfferFlag), `components/calculators/premium/PdfOffer.tsx`, one insertion in
+`PremiumCalculator.tsx` after `<Workings>`, `app/api/calc/pdf-offer/route.ts` (GET flag),
+`app/api/calc/pdf-request/route.ts` (POST snapshot -> `calc_pdf_requests`), privacy policy
+(Stripe as processor, 90-day retention line), terms ("Paid documents"), tests
+`src/tests/pdf-offer.test.ts`. Migration `supabase/migrations/20260914000001_calc_pdf_offer.sql`
+(site_flags, calc_pdf_requests, vw_calc_pdf_test). Console: `console/web/src/lib/pdfTestData.ts`
++ `components/PdfTestPanel.tsx` replace the "Sites (last 7 days)" block on the console home.
+
+**Email.** Nothing here writes to `leads`, so the partner CC path (`leads` insert trigger ->
+`/api/leads/notify`) cannot fire. Stripe receipts go to the Stripe account email only. The PDF
+is sent from the owner's own mailbox. Test asserts the route never inserts into `leads`.
+
+**Fulfilment.** Stripe payment -> `client_reference_id` = `calc_pdf_requests.id` -> read
+`payload` -> PDF built in the session scratchpad (per-tool HTML template, puppeteer-core at repo
+root) -> owner emails it -> set `stripe_session_id`, `fulfilled_at`.
+
+**Read.** Console home panel (exposures, clicks, checkouts, paid, revenue, awaiting, kill lines,
+by tool / placement, last 20). Day 7 and day 14 readouts add the channel split via SQL. Kill
+lines: clicks/exposure < 2% or paid/exposure < 1% after ~250 exposures = kill (flag off, remove
+insertion, drop tables). Paid > 2% = build P1 properly. Delete `calc_pdf_requests` rows older
+than 90 days at close.
+
+**Status.** BUILT 2026-09-14, migration NOT applied, NOT pushed, NOT deployed. Owner steps:
+Stripe Payment Link (entity Ashfield Trading Ltd, confirm VAT status), then deploy Property +
+console, then flip the flag.
+
 ## 2026-09-12 - OWNER ITEM: the privacy notice promises deletion the retention cron does not perform (estate-wide, not urgent)
 
 Surfaced by a design-port planning pass, not by port work, and it is not a port defect. It is a
