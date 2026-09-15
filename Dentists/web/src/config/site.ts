@@ -61,7 +61,7 @@ export const siteConfig = {
     : null,
   // Canonical lead-form acknowledgement text (see derivation above). Forms append the link.
   leadConsentText,
-  // leadConsentTextWithFollowUp: swapped live into leadConsentText 2026-07-19 per owner approval.
+  // Passive notice, not a tick-box: submitting the enquiry is the affirmative act.
   /**
    * Consent text for the resource gate (in-house only).
    * ResourceGate is a first-party data capture by Dental Finance Partners.

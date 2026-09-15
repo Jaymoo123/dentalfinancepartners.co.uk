@@ -1,9 +1,10 @@
--- Mandatory data-sharing consent capture on the shared leads table.
+-- Data-sharing acknowledgement capture on the shared leads table.
 --
--- Every lead form across all sites now requires the user to tick a consent
--- checkbox before the form can submit. We persist a small audit trail: the
--- boolean, the EXACT disclosure text the user agreed to (the firm name varies
--- per site, and the wording may change over time), and when they agreed.
+-- Across the estate this is a passive notice under legitimate interests, not
+-- a tick-box: submitting the enquiry is the affirmative act. Ashfield is the
+-- one exception, with a real consent checkbox. We persist a small audit trail
+-- either way: the boolean, the EXACT disclosure text shown (the firm name
+-- varies per site, and the wording may change over time), and when it was shown.
 --
 -- All three columns are nullable / defaulted so that:
 --   * existing rows (captured before this feature) remain valid, and

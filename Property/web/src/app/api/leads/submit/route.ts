@@ -94,7 +94,19 @@ export async function POST(req: Request) {
     source,
     source_url: (body.source_url as string) ?? null,
     submitted_at: (body.submitted_at as string) ?? new Date().toISOString(),
-    consent_given: body.consent_given ?? true,
+    // Recorded from evidence, never defaulted. Until 2026-09-15 this was
+    // `?? true`, so the column said "true" even for a submission that reported
+    // nothing: a field that is always true proves nothing, which is useless in
+    // the one situation it exists for (an enquirer asking a partner firm how they
+    // got their details).
+    //
+    // Two things count as evidence. LeadForm and SpecialistWidget send the flag
+    // explicitly. The shared MiniCapture (also behind ResultGateModal and
+    // MobileToolSlot) sends no flag but does send `consent_text`, the exact
+    // wording it displayed, which is the stronger record of the two. Anything
+    // that shows nothing and sends nothing records false, which is the truth.
+    consent_given:
+      body.consent_given === true || Boolean(((body.consent_text as string) ?? "").trim()),
     consent_text: (body.consent_text as string) ?? null,
     consent_at: (body.consent_at as string) ?? new Date().toISOString(),
     visitor_id: (body.visitor_id as string) ?? null,

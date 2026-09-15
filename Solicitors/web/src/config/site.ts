@@ -61,7 +61,7 @@ export const siteConfig = {
     : null,
   // Canonical lead-form acknowledgement text (see derivation above). Forms append the link.
   leadConsentText,
-  // leadConsentTextWithFollowUp: swapped live into leadConsentText 2026-07-19 per owner approval.
+  // Passive notice, not a tick-box: submitting the enquiry is the affirmative act.
   // In-house-only consent text for resource-gate downloads. Never names a partner;
   // used only when the visitor is consenting to receive a resource from this site.
   // Forms append "See our Privacy Policy." separately.
