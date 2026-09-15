@@ -21,7 +21,7 @@
 import { adminSelect } from "@/lib/supabase/admin";
 import { recordLeadContactEvent } from "@accounting-network/web-shared/lead-nurture/send";
 import type { NurtureLead } from "@accounting-network/web-shared/lead-nurture/config";
-import { buildLeadMessageContext } from "@/config/lead-nurture";
+import { buildLeadMessageContext, SIGNOFF } from "@/config/lead-nurture";
 import { renderLeadServiceEmail } from "@/lib/emails/lead-service-template";
 import { buildLeadChannelSender } from "./channels";
 import { sendContactableHandoff } from "./handoff";
@@ -179,7 +179,7 @@ export async function acknowledgeEmailReply(opts: { leadId: string }): Promise<b
         "There is nothing else for you to do. If anything changes in the meantime, just reply here and I will pick it up.",
       ],
       // No cta/secondary: this is a reply-only service email, nothing to click.
-      signoff: "Speak soon, Junayd at Property Tax Partners",
+      signoff: SIGNOFF,
       footerNote:
         "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk.",
       ...(ctx.optOutUrl ? { optOutUrl: ctx.optOutUrl } : {}),

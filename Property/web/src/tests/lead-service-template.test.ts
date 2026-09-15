@@ -81,17 +81,17 @@ describe("signature block", () => {
 
   it("is present in the html with the 3px #059669 left border and approved lines", () => {
     expect(html).toContain("border-left:3px solid #059669");
-    expect(html).toContain(">Junayd<");
+    expect(html).toContain(">Umair<");
     expect(html).toContain('font-weight:600;color:#059669;line-height:1.5;">Property Tax Partners<');
     expect(html).toContain(
       '<a href="https://www.propertytaxpartners.co.uk" style="color:#64748b;text-decoration:none;">propertytaxpartners.co.uk</a>',
     );
-    expect(html).toContain("junayd@propertytaxpartners.co.uk");
+    expect(html).toContain("umair@propertytaxpartners.co.uk");
   });
 
   it("is present in the plain-text render before the footer lines", () => {
-    expect(text).toContain("Junayd\nProperty Tax Partners\npropertytaxpartners.co.uk");
-    const sigIdx = text.indexOf("Junayd\nProperty Tax Partners");
+    expect(text).toContain("Umair\nProperty Tax Partners\npropertytaxpartners.co.uk");
+    const sigIdx = text.indexOf("Umair\nProperty Tax Partners");
     const footerIdx = text.indexOf(BASE.footerNote);
     expect(sigIdx).toBeGreaterThan(-1);
     expect(footerIdx).toBeGreaterThan(sigIdx);
@@ -100,7 +100,7 @@ describe("signature block", () => {
   it("keeps the caller's signoff line ahead of the signature block", () => {
     expect(html.indexOf("Speak soon,")).toBeGreaterThan(-1);
     expect(html.indexOf("Speak soon,")).toBeLessThan(html.indexOf("border-left:3px solid #059669"));
-    expect(text.indexOf("Speak soon,")).toBeLessThan(text.indexOf("Junayd\nProperty Tax Partners"));
+    expect(text.indexOf("Speak soon,")).toBeLessThan(text.indexOf("Umair\nProperty Tax Partners"));
   });
 });
 

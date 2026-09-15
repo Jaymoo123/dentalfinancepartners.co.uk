@@ -147,7 +147,7 @@ export function ctaLabelFor(missing: MissingContactField[] | undefined): string 
 }
 
 const COMPANY = "Property Tax Partners";
-const SIGNOFF = `Speak soon, the team at ${COMPANY}`;
+export const SIGNOFF = `Speak soon, the team at ${COMPANY}`;
 const FOOTER =
   "You are receiving this because you submitted an enquiry on propertytaxpartners.co.uk.";
 const OPT_OUT = "Reply STOP to opt out.";
@@ -452,7 +452,7 @@ const STEPS: LeadNurtureStep[] = [
         `Got your enquiry, ${c.firstName}`,
         "Just reply with a time that suits and a specialist will call you.",
         [
-          "Thanks for your enquiry, it has just landed with me and a property tax specialist is ready to help.",
+          "Thanks for your enquiry, it has just landed with us and a property tax specialist is ready to help.",
           "The call is a free review of where you stand, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you best, tell me and we will work around it.",
         ],
@@ -522,7 +522,7 @@ const STEPS: LeadNurtureStep[] = [
         `One thing landlords often miss, ${c.firstName}`,
         "Money spent before your first tenant moved in can often be claimed.",
         [
-          "A quick pointer while your enquiry is with me. Most landlords do not realise that money spent before the first tenant moved in, things like repairs, advertising and insurance, can usually be claimed against rental income, even up to seven years later.",
+          "A quick pointer while your enquiry is with us. Most landlords do not realise that money spent before the first tenant moved in, things like repairs, advertising and insurance, can usually be claimed against rental income, even up to seven years later.",
           "If that rings a bell for your property, it is exactly the kind of thing your free review would cover.",
           "Whenever suits, just reply with a day and time and I will get a specialist to call you.",
         ],
@@ -584,7 +584,7 @@ const STEPS: LeadNurtureStep[] = [
           "No rush at all. A one line reply is all it takes.",
           [
             "Just checking in, and there is genuinely no rush. Your free review is still open, and if now is not the right moment, that is completely fine.",
-            "If something is holding you back, or life has simply been busy, a one line reply is all it takes. Give me a day and a time, or ask whatever is on your mind, and I will take it from there.",
+            "If something is holding you back, or life has simply been busy, a one line reply is all it takes. Give us a day and a time, or ask whatever is on your mind, and the team will take it from there.",
           ],
           "day7_email",
           { cta: null, secondary: null },
@@ -605,7 +605,7 @@ const STEPS: LeadNurtureStep[] = [
         `Last one from me, ${c.firstName}`,
         "Stopping the reminders now. The door stays open whenever you need it.",
         [
-          "This is my last note, I will stop the reminders here. No hard feelings at all, the timing has to be right.",
+          "This is our last note, we will stop the reminders here. No hard feelings at all, the timing has to be right.",
           "For what it is worth, the moments a review really earns its keep are a new purchase, a sale, or a Self Assessment bill that looks bigger than it should. If one of those lands, reply to this email, even months from now, and I will pick it straight back up.",
           "All the best with the property.",
         ],
@@ -674,7 +674,7 @@ function buildContactabilityConfig(): LeadNurtureConfig {
 // later touches). No SMS steps: email is the universal prerequisite, and a
 // phone-less SMS step would only self-skip and pollute the send dashboards.
 // Graceful when nameless (the DEFAULT case here): the greeting becomes a
-// first-person introduction ("Hi, Junayd here from Property Tax Partners.")
+// first-person introduction ("Hi, Umair here from Property Tax Partners.")
 // per the approved previews; when a name exists it stays "Hi {firstName},".
 // No subject uses a "Thanks {name}," construction.
 
@@ -727,7 +727,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, Junayd here from Property Tax Partners."),
+            ...detailGreeting(c, "Hi, Umair here from Property Tax Partners."),
           },
         ),
       ];
@@ -752,7 +752,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, Junayd again from Property Tax Partners."),
+            ...detailGreeting(c, "Hi, Umair again from Property Tax Partners."),
           },
         ),
       ];
@@ -777,7 +777,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, Junayd here from Property Tax Partners."),
+            ...detailGreeting(c, "Hi, Umair here from Property Tax Partners."),
           },
         ),
       ];
@@ -804,7 +804,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, Junayd here, one last time."),
+            ...detailGreeting(c, "Hi, Umair here, one last time."),
           },
         ),
       ];

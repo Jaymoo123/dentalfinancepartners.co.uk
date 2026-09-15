@@ -123,10 +123,10 @@ describe("graceful nameless rendering (default case)", () => {
   // Approved previews: nameless leads get a first-person introduction instead
   // of a personal greeting; a named lead keeps "Hi {firstName},".
   const NAMELESS_GREETINGS: Record<string, string> = {
-    detail_capture_t0: "Hi, Junayd here from Property Tax Partners.",
-    detail_capture_day1: "Hi, Junayd again from Property Tax Partners.",
-    detail_capture_day3: "Hi, Junayd here from Property Tax Partners.",
-    detail_capture_day7: "Hi, Junayd here, one last time.",
+    detail_capture_t0: "Hi, Umair here from Property Tax Partners.",
+    detail_capture_day1: "Hi, Umair again from Property Tax Partners.",
+    detail_capture_day3: "Hi, Umair here from Property Tax Partners.",
+    detail_capture_day7: "Hi, Umair here, one last time.",
   };
 
   it("uses the first-person introduction with no malformed personalization", () => {
@@ -147,7 +147,7 @@ describe("graceful nameless rendering (default case)", () => {
     for (const step of steps) {
       for (const m of step.buildMessages(PHONE)) {
         expect(m.text, `${step.key} named greeting`).toContain("Hi Alex,");
-        expect(m.text, `${step.key} no Junayd intro when named`).not.toContain("Hi, Junayd");
+        expect(m.text, `${step.key} no Umair intro when named`).not.toContain("Hi, Umair");
       }
     }
   });

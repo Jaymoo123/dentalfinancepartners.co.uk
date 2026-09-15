@@ -33,6 +33,47 @@ export interface LeadServiceEmail {
    * footer no longer renders it as a link (reply-based opt-out instead).
    */
   optOutUrl?: string;
+  /**
+   * Whose email this is. Omitted means Property Tax Partners signed by Umair,
+   * who is the estate's customer-facing voice on lead follow-ups.
+   *
+   * It exists because one caller, the warm-handoff introduction, sends on behalf
+   * of all 17 estate sites from this one app: a Dentists enquirer must not receive
+   * a Property Tax Partners wordmark and footer. Without this the brand was
+   * hardcoded in three places in the HTML and three more in the text part.
+   */
+  brand?: {
+    /** Two-line wordmark in the header band, e.g. ["DENTAL FINANCE", "PARTNERS"]. */
+    wordmark: [string, string];
+    /** Display name in the signature block. */
+    name: string;
+    /** Bare domain, shown and linked in the signature. */
+    domain: string;
+    /** Person the email is signed by. */
+    signerName: string;
+    /** Contact address shown under the signature. Omit to hide the line. */
+    contactEmail?: string;
+  };
+}
+
+const DEFAULT_BRAND = {
+  wordmark: ["PROPERTY TAX", "PARTNERS"] as [string, string],
+  name: "Property Tax Partners",
+  domain: "propertytaxpartners.co.uk",
+  signerName: "Umair",
+  contactEmail: "umair@propertytaxpartners.co.uk",
+};
+
+/**
+ * Split a brand name into the two-line wordmark the header band expects, keeping
+ * the last word on the second line ("Trade Tax Specialists" -> "TRADE TAX" /
+ * "SPECIALISTS"). A single-word brand puts everything on the first line.
+ */
+export function wordmarkFor(name: string): [string, string] {
+  const words = name.trim().split(/\s+/);
+  if (words.length < 2) return [name.toUpperCase(), ""];
+  const last = words.pop() as string;
+  return [words.join(" ").toUpperCase(), last.toUpperCase()];
 }
 
 function esc(s: string): string {
@@ -42,10 +83,20 @@ function esc(s: string): string {
     .replace(/>/g, "&gt;");
 }
 
+/**
+ * Wordmark text only. Same escaping, but a literal non-breaking space is emitted
+ * as the &nbsp; entity rather than a raw U+00A0 byte: the owner-approved design
+ * golden asserts the entity, and some older clients mangle the raw character.
+ */
+function escWordmark(s: string): string {
+  return esc(s).replace(/ /g, "&nbsp;");
+}
+
 /** System font stack (no web fonts). */
 const FONT = "-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 
 export function renderLeadServiceEmail(e: LeadServiceEmail): { html: string; text: string } {
+  const brand = e.brand ?? DEFAULT_BRAND;
   const paras = e.paragraphs
     .map((p) => `<p style="margin:0 0 16px 0;">${esc(p)}</p>`)
     .join("\n");
@@ -73,8 +124,8 @@ export function renderLeadServiceEmail(e: LeadServiceEmail): { html: string; tex
 <table role="presentation" width="560" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:560px;background-color:#ffffff;border:1px solid #e5e7eb;border-radius:8px;">
 <tr>
 <td style="padding:26px 28px 18px 28px;border-bottom:1px solid #e5e7eb;">
-<div style="font-family:${FONT};font-size:14px;font-weight:700;color:#0f172a;letter-spacing:0.22em;line-height:1.35;">PROPERTY&nbsp;TAX</div>
-<div style="display:inline-block;border-top:2px solid #059669;margin-top:5px;padding-top:5px;font-family:${FONT};font-size:14px;font-weight:700;color:#0f172a;letter-spacing:0.22em;line-height:1.35;">PARTNERS</div>
+<div style="font-family:${FONT};font-size:14px;font-weight:700;color:#0f172a;letter-spacing:0.22em;line-height:1.35;">${escWordmark(brand.wordmark[0])}</div>
+${brand.wordmark[1] ? `<div style="display:inline-block;border-top:2px solid #059669;margin-top:5px;padding-top:5px;font-family:${FONT};font-size:14px;font-weight:700;color:#0f172a;letter-spacing:0.22em;line-height:1.35;">${escWordmark(brand.wordmark[1])}</div>` : ""}
 </td>
 </tr>
 <tr>
@@ -89,10 +140,10 @@ ${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
 <td style="border-left:3px solid #059669;padding:2px 0 2px 14px;font-family:${FONT};">
-<div style="font-size:16px;font-weight:600;color:#0f172a;line-height:1.5;">Junayd</div>
-<div style="font-size:14px;font-weight:600;color:#059669;line-height:1.5;">Property Tax Partners</div>
-<div style="font-size:13px;color:#64748b;line-height:1.6;"><a href="https://www.propertytaxpartners.co.uk" style="color:#64748b;text-decoration:none;">propertytaxpartners.co.uk</a></div>
-<div style="font-size:13px;color:#64748b;line-height:1.6;">junayd@propertytaxpartners.co.uk</div>
+<div style="font-size:16px;font-weight:600;color:#0f172a;line-height:1.5;">${esc(brand.signerName)}</div>
+<div style="font-size:14px;font-weight:600;color:#059669;line-height:1.5;">${esc(brand.name)}</div>
+<div style="font-size:13px;color:#64748b;line-height:1.6;"><a href="https://www.${esc(brand.domain)}" style="color:#64748b;text-decoration:none;">${esc(brand.domain)}</a></div>
+${brand.contactEmail ? `<div style="font-size:13px;color:#64748b;line-height:1.6;">${esc(brand.contactEmail)}</div>` : ""}
 </td>
 </tr>
 </table>
@@ -121,9 +172,9 @@ ${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
     "",
     e.signoff,
     "",
-    "Junayd",
-    "Property Tax Partners",
-    "propertytaxpartners.co.uk",
+    brand.signerName,
+    brand.name,
+    brand.domain,
     "",
     e.footerNote,
     ...(e.optOutUrl ? ["To opt out, just reply STOP."] : []),
