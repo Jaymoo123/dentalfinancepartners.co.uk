@@ -37,6 +37,8 @@ export type IntroLead = {
   full_name: string | null;
   phone: string | null;
   message: string | null;
+  /** What they said they are, e.g. "landlord". The tracker calls this Type. */
+  role: string | null;
   source: string | null;
   status: string | null;
   created_at: string;
@@ -51,11 +53,159 @@ export type IntroLead = {
  * recipient of this email, and the partner is copied on it: an analytics field in
  * here is a tracking disclosure to a customer and a data leak to a third party.
  */
-export const QUOTED_FIELDS = ["Name", "Email", "Phone", "Message"] as const;
+export const QUOTED_FIELDS = ["Name", "Email", "Phone", "Type", "Message"] as const;
+
+/**
+ * Everything the enquirer has told us SINCE the form, gathered for the quoted
+ * block. This exists because the introduction replaces the forwarded lead
+ * notification as how the partner firm receives an enquiry, and the notification
+ * never carried any of it either: a preferred call time sitting in a contact
+ * event is useless if the person making the call cannot see it.
+ */
+export type IntroContext = {
+  /** Human label from the booking flow, e.g. "Tuesday 16 September, morning". */
+  bookedSlot: string | null;
+  /** Their own replies to the follow-ups, oldest first. */
+  replies: { channel: string; body: string }[];
+};
+
+export const EMPTY_INTRO_CONTEXT: IntroContext = { bookedSlot: null, replies: [] };
+
+/** How many replies to quote. Enough for a stated time, short of a transcript. */
+const MAX_QUOTED_REPLIES = 2;
+
+/**
+ * Longest a cleaned reply may be and still be quoted.
+ *
+ * The point of quoting a reply is to carry a scheduling note ("mornings are best",
+ * "call me after 2"). Anything much longer is a substantive email, and reading
+ * real replies showed those are multi-paragraph accounts of someone's affairs that
+ * swamp the introduction. Those are dropped rather than truncated: a half-quoted
+ * enquiry is worse than none, and Umair can forward the thread.
+ */
+const MAX_REPLY_CHARS = 280;
+
+/**
+ * Where a reply stops being the person's own words.
+ *
+ * Email clients append the entire prior thread. Real replies were arriving with
+ * "Hi Junayd," and our own nurture copy quoted back inside them, which in an email
+ * signed by Umair reads as though nobody knows who is handling it.
+ */
+const QUOTE_MARKERS = [
+  /^\s*On .*wrote:/mi,
+  /^\s*-{2,}\s*Original Message/mi,
+  /^\s*_{5,}/m,
+  /^\s*From:\s/mi,
+  /^\s*Sent:\s/mi,
+  /^\s*>/m,
+];
+
+/** Sign-offs that add nothing to a scheduling note. */
+const SIGNATURE_RE = /\b(sent from my (iphone|ipad|android|mobile|samsung)|get outlook for)\b[\s\S]*$/i;
+
+/**
+ * A greeting addressed to one of our own people, with or without punctuation.
+ *
+ * Real replies open "Hi Junayd" on its own line. The generic rule below
+ * deliberately will not touch that, because without a comma it cannot tell where
+ * the greeting ends, and "Hi Monday the 13th works for me" must keep its Monday.
+ * This rule is safe precisely because it only fires on names that are ours, and
+ * leaving them in puts the wrong person's name inside an email signed by Umair.
+ *
+ * Add a name here if the customer-facing voice ever changes again.
+ */
+const INTERNAL_GREETING_RE =
+  /^(hi|hello|hey|dear|good (morning|afternoon|evening))\s+(junayd|umair)[,:]?\s*/i;
+
+/**
+ * A generic leading greeting, which may name anyone. Requires the comma or colon
+ * that marks where the greeting stops, so it can never swallow real content.
+ * Applied after whitespace is collapsed, so the class never spans a line break.
+ */
+const GREETING_RE = /^(hi|hello|hey|dear|good (morning|afternoon|evening))[^,]{0,40}[,:]\s*/i;
+
+/**
+ * Reduce a raw reply to the part worth putting in front of the enquirer and the
+ * partner firm, or null if nothing useful survives.
+ *
+ * URLs are removed outright. A reply body is the one place a tracking parameter
+ * can reach this email (a real reply contained "?utm_source=chatgpt.com"), and
+ * this email is deliberately free of them.
+ */
+export function cleanReplyBody(raw: string): string | null {
+  let body = raw ?? "";
+  for (const marker of QUOTE_MARKERS) {
+    const m = body.match(marker);
+    if (m?.index !== undefined) body = body.slice(0, m.index);
+  }
+  body = body.replace(SIGNATURE_RE, " ");
+  body = body.replace(/<?\bhttps?:\/\/\S+/gi, " ");
+  body = body.replace(/<[^>]*>/g, " ");
+  body = body.replace(/\s+/g, " ").trim();
+  body = body.replace(INTERNAL_GREETING_RE, "").trim();
+  body = body.replace(GREETING_RE, "").trim();
+  if (!body) return null;
+  if (body.length > MAX_REPLY_CHARS) return null;
+  return body;
+}
+
+/**
+ * Read the booking and the replies for one lead.
+ *
+ * `booked` events carry a human label in meta.start, written by the native
+ * booking flow whose own comment says the window "tells them when the lead said
+ * they would pick up" (lib/leads/booking.ts). `replied` events carry the raw text
+ * in meta.body, which is where a time stated in free text ends up, since the
+ * nurture copy invites exactly that ("tell me and we will work around it").
+ *
+ * Best-effort: a failed read returns an empty context so the introduction still
+ * goes, just without the extra detail.
+ */
+export async function gatherIntroContext(leadId: string): Promise<IntroContext> {
+  const res = await adminSelect<{
+    event_type: string;
+    channel: string | null;
+    ts: string;
+    meta: Record<string, unknown> | null;
+  }>("lead_contact_events", {
+    select: "event_type,channel,ts,meta",
+    lead_id: `eq.${leadId}`,
+    event_type: "in.(booked,replied)",
+    order: "ts.asc",
+  });
+  if (!res.ok) {
+    console.error("[handoff-intro] could not read contact events", leadId, res.status);
+    return EMPTY_INTRO_CONTEXT;
+  }
+
+  // Latest booking wins: someone who rebooks means the newer slot.
+  const booked = [...res.data].reverse().find((e) => e.event_type === "booked");
+  const bookedSlot =
+    booked && typeof booked.meta?.start === "string" ? String(booked.meta.start).trim() : null;
+
+  const replies = res.data
+    .filter((e) => e.event_type === "replied" && typeof e.meta?.body === "string")
+    .map((e) => ({ channel: e.channel || "reply", body: cleanReplyBody(String(e.meta?.body)) }))
+    .filter((r): r is { channel: string; body: string } => r.body !== null)
+    .slice(-MAX_QUOTED_REPLIES);
+
+  return { bookedSlot: bookedSlot || null, replies };
+}
 
 export type IntroOutcome =
-  | { ok: true; mode: HandoffMode; providerId: string | null }
-  | { ok: false; reason: string; alreadySent?: boolean };
+  | { ok: true; mode: HandoffMode; providerId: string | null; degraded: boolean }
+  | {
+      ok: false;
+      reason: string;
+      /**
+       * True when no retry will fix this and a person must act. The tracker row is
+       * stamped so it is visible where the triager works, because a refusal nobody
+       * sees is worse than the leak it prevented: everyone believes the partner
+       * firm was emailed and the enquirer hears from no one.
+       */
+      needsHuman?: boolean;
+    };
 
 /* ------------------------------------------------------------------ *
  * Mode
@@ -359,7 +509,11 @@ function ukDate(iso: string): string {
   });
 }
 
-export function buildIntroEmail(lead: IntroLead, brand: Brand) {
+export function buildIntroEmail(
+  lead: IntroLead,
+  brand: Brand,
+  context: IntroContext = EMPTY_INTRO_CONTEXT,
+) {
   const first = firstNameOf(lead.full_name);
   const greeting = first ? `Hi ${first},` : "Hello,";
   const who = first ?? "them";
@@ -369,16 +523,39 @@ export function buildIntroEmail(lead: IntroLead, brand: Brand) {
   const paragraphs = [
     `Thank you for submitting your enquiry with us. My name is Umair, from ${brand.name}.`,
     "For large and complex tax and advisory work such as yours, we partner with Omar and the team at Aswatax. Omar is a Chartered Tax Adviser and the firm is registered with the Chartered Institute of Taxation.",
-    `@Omar are you able to get ${who} booked in as soon as possible to discuss their enquiry.`,
+    // "as soon as possible" contradicts a slot the enquirer already picked, and
+    // they read this email too. So when there IS a booking, name it.
+    //
+    // Deliberately driven by the structured booking only. A time mentioned inside
+    // a free-text reply is NOT parsed: "afternoons after 2 except Thursday" is not
+    // something to be confidently wrong about in front of a customer and a partner
+    // firm. Those replies are quoted verbatim below instead, where Omar reads them
+    // and "as soon as possible" still reads as "promptly" rather than as a clash.
+    context.bookedSlot
+      ? `@Omar are you able to get ${who} booked in for ${context.bookedSlot}, as they requested.`
+      : `@Omar are you able to get ${who} booked in as soon as possible to discuss their enquiry.`,
   ];
 
   // Their own contact details and their own words. Nothing else: see QUOTED_FIELDS.
-  const quoted: [string, string][] = [
+  const quoted: [string, string][] = ([
     ["Name", (lead.full_name || "").trim()],
     ["Email", (lead.email || "").trim()],
     ["Phone", (lead.phone || "").trim()],
+    ["Type", (lead.role || "").trim()],
+    // The call window they chose, so the person ringing knows when to ring.
+    ["Preferred call time", (context.bookedSlot || "").trim()],
     ["Message", (lead.message || "").trim()],
-  ].filter(([, v]) => v) as [string, string][];
+    // Anything they said afterwards, which is where a time given in free text
+    // lives: the follow-ups invite exactly that, and it was previously visible
+    // to nobody making the call.
+    ...context.replies.map(
+      (r, i) =>
+        [
+          context.replies.length > 1 ? `Their reply ${i + 1} (${r.channel})` : `Their reply (${r.channel})`,
+          r.body,
+        ] as [string, string],
+    ),
+  ] as [string, string][]).filter(([, v]) => v);
 
   const submitted = ukDate(lead.created_at);
   const quoteHeading = submitted
@@ -437,6 +614,67 @@ ${quoted
   ].join(NL);
 
   return { subject, html, text };
+}
+
+/**
+ * Last line of defence, run on the rendered email immediately before it is sent.
+ *
+ * cleanReplyBody() removes quoted threads, signatures and URLs from replies, but
+ * it is a set of rules written against the reply shapes present on 2026-09-15.
+ * Someone will eventually reply in a shape nobody anticipated, and this email is
+ * read by a customer and copied to a third party, so "the cleaner probably caught
+ * it" is not good enough.
+ *
+ * This checks the finished text rather than its inputs, and FAILS CLOSED: a hit
+ * means the introduction is not sent and the run reports it, so a human deals with
+ * that one lead by hand. Nothing leaks quietly.
+ *
+ * Returns the reason to refuse, or null to proceed.
+ */
+export function leakedContentReason(
+  text: string,
+  html: string,
+  lead: IntroLead,
+  brand: Brand,
+): string | null {
+  const checks: [string, RegExp][] = [
+    // Analytics and internal identifiers: this email carries none, ever.
+    ["a tracking parameter", /[?&]utm_|utm_source|utm_medium|utm_campaign|gclid=|fbclid=/i],
+    ["an internal identifier", /visitor_id|session_id|lead_id/i],
+    // A reply that still carries the thread an email client appended.
+    ["a quoted email thread", /^\s*On .{0,80}wrote:/mi],
+    ["a quoted email header", /^\s*(From|Sent|To|Subject):\s/mi],
+    ["an email client signature", /sent from my (iphone|ipad|android|mobile|samsung)/i],
+  ];
+  for (const [label, re] of checks) {
+    if (re.test(text) || re.test(html)) return `refused to send: the email contains ${label}`;
+  }
+
+  // The lead's own id must never be visible to them or to the partner firm.
+  if (lead.id && (text.includes(lead.id) || html.includes(lead.id))) {
+    return "refused to send: the email contains the internal lead id";
+  }
+
+  // Anyone who is not the customer-facing voice must not appear. Historic replies
+  // open "Hi Junayd", and this email is signed by Umair.
+  for (const name of ["Junayd"]) {
+    // NB the doubled backslashes: in a template literal "\b" is a backspace
+    // character, which would silently disable this check.
+    if (new RegExp(`\\b${name}\\b`, "i").test(text)) {
+      return `refused to send: the email names ${name}, who is not the sender`;
+    }
+  }
+
+  // Any link other than the sending brand's own domain in the signature.
+  const links = text.match(/https?:\/\/\S+/gi) ?? [];
+  const allowed = brand.domain.replace(/^www\./, "").toLowerCase();
+  for (const link of links) {
+    if (!link.toLowerCase().includes(allowed)) {
+      return "refused to send: the email contains a link we did not put there";
+    }
+  }
+
+  return null;
 }
 
 /* ------------------------------------------------------------------ *
@@ -567,9 +805,32 @@ export async function sendIntro(lead: IntroLead, mode: HandoffMode): Promise<Int
   const recipients = resolveRecipients(mode, lead.email, partner, partnerBcc());
   if (mode !== "live") assertUnarmedSendIsSafe(recipients, operatorEmail());
 
-  const { subject, html, text } = buildIntroEmail(lead, brand);
+  // Best-effort: a failed read still sends the introduction, just without the
+  // booking and replies. Losing the extras is better than losing the handoff.
+  const context = await gatherIntroContext(lead.id);
+  let { subject, html, text } = buildIntroEmail(lead, brand, context);
+
+  // DEGRADE BEFORE REFUSING. The quoted replies are the only part built from text
+  // we did not write, so they are the likely source of anything the cleaner missed.
+  // Dropping them costs a scheduling note; refusing costs the whole introduction,
+  // and a lead nobody is looking at is worse than a lead introduced without its
+  // reply quoted.
+  let degraded = false;
+  if (leakedContentReason(text, html, lead, brand) && context.replies.length > 0) {
+    ({ subject, html, text } = buildIntroEmail(lead, brand, {
+      bookedSlot: context.bookedSlot,
+      replies: [],
+    }));
+    degraded = true;
+  }
   const fromAddress = process.env.LEAD_HANDOFF_FROM || `leads@${brand.domain.replace(/^www\./, "")}`;
   const replyTo = process.env.LEAD_HANDOFF_REPLY_TO || fromAddress;
+
+  // Only now fail closed, on an email that is already stripped back to parts we
+  // assembled ourselves plus the enquirer's own words. Reaching here means
+  // something is wrong that dropping the replies did not fix, so it needs a human.
+  const leak = leakedContentReason(text, html, lead, brand);
+  if (leak) return { ok: false, reason: leak, needsHuman: true };
 
   const subjectPrefixed = mode === "live" ? subject : `[${mode.toUpperCase()}] ${subject}`;
 
@@ -585,7 +846,7 @@ export async function sendIntro(lead: IntroLead, mode: HandoffMode): Promise<Int
       text,
     });
     if (error) return { ok: false, reason: `resend: ${error.message ?? String(error)}` };
-    return { ok: true, mode, providerId: data?.id ?? null };
+    return { ok: true, mode, providerId: data?.id ?? null, degraded };
   } catch (err) {
     return { ok: false, reason: `send threw: ${(err as Error).message}` };
   }

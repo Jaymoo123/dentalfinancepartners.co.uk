@@ -170,7 +170,7 @@ async function fetchLeads(ids: string[]): Promise<Map<string, IntroLead>> {
   for (let i = 0; i < ids.length; i += 100) {
     const batch = ids.slice(i, i + 100);
     const res = await adminSelect<IntroLead>("leads", {
-      select: "id,email,full_name,phone,message,source,status,created_at",
+      select: "id,email,full_name,phone,message,role,source,status,created_at",
       id: `in.(${batch.join(",")})`,
     });
     if (!res.ok) {
@@ -358,6 +358,10 @@ export async function runTrackerSync(): Promise<TrackerRunReport> {
 
   let sentThisRun = 0;
   let capped = false;
+  // Lead id -> what to show the triager in column K when a handoff did not send.
+  // Without this a refusal exists only in a run report nobody reads, and everyone
+  // carries on believing the partner firm was emailed.
+  const notSent = new Map<string, string>();
 
   for (const row of actionable) {
     const lead = leads.get(row.leadId);
@@ -386,17 +390,16 @@ export async function runTrackerSync(): Promise<TrackerRunReport> {
       row.sendEmail === SEND_YES && row.destination !== DEST_OMAR;
 
     if (ambiguous) {
-      push(
-        row,
-        "ambiguous",
-        `column O is "${SEND_YES}" but column N is "${row.destination || "blank"}", so no action taken`,
-      );
+      const detail = `column O is "${SEND_YES}" but column N is "${row.destination || "blank"}", so no action taken`;
+      notSent.set(row.leadId, `NOT SENT: ${detail}`);
+      push(row, "ambiguous", detail);
       continue;
     }
 
     if (wantsIntro) {
       const blocked = await introBlockedReason(lead);
       if (blocked) {
+        notSent.set(lead.id, `NOT SENT: ${blocked}`);
         push(row, "blocked", blocked);
         continue;
       }
@@ -419,13 +422,20 @@ export async function runTrackerSync(): Promise<TrackerRunReport> {
       if (!outcome.ok) {
         // Release so a transient failure retries rather than silently losing it.
         await releaseClaim(lead.id);
+        notSent.set(lead.id, `NOT SENT: ${outcome.reason}`);
         push(row, "blocked", `send failed, claim released: ${outcome.reason}`);
         continue;
       }
       await markIntroSent(lead.id, outcome.providerId, mode);
       sentThisRun += 1;
       await stopChase(lead.id, "handed_to_partner");
-      push(row, "introduced", `sent in ${mode} mode`);
+      push(
+        row,
+        "introduced",
+        outcome.degraded
+          ? `sent in ${mode} mode, without the quoted replies`
+          : `sent in ${mode} mode`,
+      );
       continue;
     }
 
@@ -457,10 +467,20 @@ export async function runTrackerSync(): Promise<TrackerRunReport> {
       const updates = fresh
         .map((r) => {
           const b = bits.get(r.leadId);
-          return b ? { rowNumber: r.rowNumber, ...b } : null;
+          if (!b) return null;
+          // Column K shows the handoff failure when there is one, because that is
+          // the thing a human needs to act on. Otherwise it shows nurture status.
+          const failure = notSent.get(r.leadId);
+          return { leadId: r.leadId, ...b, nurtureStatus: failure ?? b.nurtureStatus };
         })
         .filter((u): u is NonNullable<typeof u> => u !== null);
-      statusRowsWritten = await writeTrackerStatusBatch(updates);
+      const wrote = await writeTrackerStatusBatch(updates);
+      statusRowsWritten = wrote.written;
+      if (wrote.unmatched > 0) {
+        console.error(
+          `[tracker-sync] ${wrote.unmatched} row(s) could not be matched by lead id, not written`,
+        );
+      }
     }
   } catch (err) {
     console.error("[tracker-sync] status write-back failed", err);

@@ -303,40 +303,90 @@ export async function readTrackerRows(): Promise<{
 }
 
 /**
- * Write the four system-owned status columns (J-M) for many rows in one call.
+ * Re-resolve which sheet row currently holds each lead id.
  *
- * Addressed by row number, which is only valid for the snapshot the caller read:
- * new leads insert at row 2 and push everything down. Callers must write back
- * within the same pass they read in, never from a stored row number.
+ * Rows MOVE. Every new lead is inserted at row 2 and pushes everything below it
+ * down, so a row number captured at the start of a pass can point at a different
+ * person by the time the pass writes. Writing a status against the wrong row would
+ * put one enquirer's handoff state on another enquirer's line, in the sheet a human
+ * makes routing decisions from.
  *
- * One batchUpdate rather than a request per row: the tracker is 210 rows and
- * growing, and per-row writes would burn the Sheets quota and take minutes.
- *
- * Writes J to M only. Column N onward belongs to the triager and is never
- * touched by this system.
+ * So the row number is resolved again, from column I, immediately before writing,
+ * and anything that cannot be matched is skipped rather than written by position.
  */
-export async function writeTrackerStatusBatch(
-  updates: {
-    rowNumber: number;
-    verified: string;
-    nurtureStatus: string;
-    bookedSlots: string;
-    contactTrail: string;
-  }[],
-): Promise<number> {
-  if (updates.length === 0) return 0;
-
+export async function resolveRowsByLeadId(): Promise<Map<string, number>> {
   const creds = getCredentials();
   const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
   const tab = process.env.GOOGLE_SHEETS_TAB || "Leads";
   if (!creds || !spreadsheetId) throw new Error("Google Sheets env not configured");
 
   const accessToken = await getAccessToken(creds.clientEmail, creds.privateKey);
-  const data = updates.map((u) => ({
-    range: `${tab}!J${u.rowNumber}:M${u.rowNumber}`,
-    values: [[u.verified, u.nurtureStatus, u.bookedSlots, u.contactTrail]],
-  }));
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/` +
+      `${encodeURIComponent(tab)}!I2:I?majorDimension=COLUMNS`,
+    { headers: { Authorization: `Bearer ${accessToken}` } },
+  );
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new Error(`Sheets row resolve failed (${res.status}): ${detail}`);
+  }
+  const json = (await res.json()) as { values?: string[][] };
+  const column = json.values?.[0] ?? [];
+  const map = new Map<string, number>();
+  column.forEach((id, idx) => {
+    const trimmed = (id ?? "").trim();
+    // First occurrence wins: a duplicated id is a sheet fault, and the newest row
+    // (nearest the top) is the one a human is looking at.
+    if (trimmed && !map.has(trimmed)) map.set(trimmed, idx + 2);
+  });
+  return map;
+}
 
+/**
+ * Write the system-owned status columns for many rows in one call.
+ *
+ * Each update is addressed by LEAD ID, not by the row number the caller happened
+ * to read: see resolveRowsByLeadId above for why. A lead whose row cannot be found
+ * is skipped and counted, never written by position.
+ *
+ * Writes J to M only, and column K may carry a handoff failure rather than the
+ * nurture status: a refusal nobody can see is worse than the problem it prevents,
+ * because everyone believes the partner firm was emailed. Column N onward belongs
+ * to the triager and is never touched.
+ */
+export async function writeTrackerStatusBatch(
+  updates: {
+    leadId: string;
+    verified: string;
+    nurtureStatus: string;
+    bookedSlots: string;
+    contactTrail: string;
+  }[],
+): Promise<{ written: number; unmatched: number }> {
+  if (updates.length === 0) return { written: 0, unmatched: 0 };
+
+  const creds = getCredentials();
+  const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
+  const tab = process.env.GOOGLE_SHEETS_TAB || "Leads";
+  if (!creds || !spreadsheetId) throw new Error("Google Sheets env not configured");
+
+  const rows = await resolveRowsByLeadId();
+  const data: { range: string; values: string[][] }[] = [];
+  let unmatched = 0;
+  for (const u of updates) {
+    const rowNumber = rows.get(u.leadId);
+    if (!rowNumber) {
+      unmatched += 1;
+      continue;
+    }
+    data.push({
+      range: `${tab}!J${rowNumber}:M${rowNumber}`,
+      values: [[u.verified, u.nurtureStatus, u.bookedSlots, u.contactTrail]],
+    });
+  }
+  if (data.length === 0) return { written: 0, unmatched };
+
+  const accessToken = await getAccessToken(creds.clientEmail, creds.privateKey);
   const res = await fetch(
     `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values:batchUpdate`,
     {
@@ -352,5 +402,5 @@ export async function writeTrackerStatusBatch(
     const detail = await res.text().catch(() => "");
     throw new Error(`Sheets status batch write failed (${res.status}): ${detail}`);
   }
-  return updates.length;
+  return { written: data.length, unmatched };
 }
