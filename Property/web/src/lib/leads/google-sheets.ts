@@ -202,3 +202,155 @@ export async function prependLeadRow(values: (string | number)[]): Promise<void>
     throw new Error(`Sheets write failed (${write.status}): ${detail}`);
   }
 }
+
+/* ------------------------------------------------------------------ *
+ * Read side: the triager's decision columns.
+ *
+ * The tracker is the surface Umair already works in, so it is the trigger for
+ * the warm handoff rather than a second place to do the same job. This module
+ * only ever READS his columns; it writes to J-M (the status columns it owns)
+ * and never to N onward.
+ *
+ * Column letters are hard-coded because the sheet's A-I layout is already a
+ * contract shared with the sync webhook and proposal_engine/export_raw_leads.py
+ * (SHEET_WEBHOOK_COLS). Column I carries the lead id, which is the only join
+ * key used here: never name, never email, both of which repeat.
+ *
+ * A column inserted to the LEFT of S shifts these and silently breaks both the
+ * sync and the handoff. New columns go on the right.
+ * ------------------------------------------------------------------ */
+
+/** 0-based indexes into a sheet row, mirroring the live tracker layout. */
+export const TRACKER_COLS = {
+  leadId: 8, // I
+  verified: 9, // J   system-owned
+  nurtureStatus: 10, // K   system-owned
+  bookedSlots: 11, // L   system-owned
+  contactTrail: 12, // M   system-owned
+  destination: 13, // N   Umair: "Omar" | "In-house"
+  sendEmail: 14, // O   Umair: "Send"
+  inHouseContacted: 15, // P   Umair: "Yes"
+} as const;
+
+export type TrackerRow = {
+  /** 1-based sheet row number, for write-back and for human-readable reports. */
+  rowNumber: number;
+  leadId: string;
+  destination: string;
+  sendEmail: string;
+  inHouseContacted: string;
+};
+
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/**
+ * Read every data row of the tracker that carries a usable lead id.
+ *
+ * Rows whose column I is not a UUID are skipped rather than guessed at: a
+ * non-UUID there means the sheet layout has drifted from the webhook contract,
+ * and acting on a misaligned row could email the wrong person. The count of
+ * skipped rows is returned so a caller can surface drift instead of silently
+ * processing fewer leads than the sheet contains.
+ */
+export async function readTrackerRows(): Promise<{
+  rows: TrackerRow[];
+  skippedNoId: number;
+  tab: string;
+}> {
+  const creds = getCredentials();
+  const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
+  const tab = process.env.GOOGLE_SHEETS_TAB || "Leads";
+  if (!creds || !spreadsheetId) {
+    throw new Error("Google Sheets env not configured");
+  }
+
+  const accessToken = await getAccessToken(creds.clientEmail, creds.privateKey);
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/` +
+      `${encodeURIComponent(tab)}!A2:P?majorDimension=ROWS`,
+    { headers: { Authorization: `Bearer ${accessToken}` } },
+  );
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new Error(`Sheets read failed (${res.status}): ${detail}`);
+  }
+  const json = (await res.json()) as { values?: string[][] };
+  const values = json.values ?? [];
+
+  const rows: TrackerRow[] = [];
+  let skippedNoId = 0;
+  const cell = (r: string[], i: number) => (r[i] ?? "").trim();
+
+  values.forEach((r, idx) => {
+    // Range starts at row 2, so sheet row = index + 2.
+    const rowNumber = idx + 2;
+    const leadId = cell(r, TRACKER_COLS.leadId);
+    if (!leadId) return; // genuinely blank row, not drift
+    if (!UUID_RE.test(leadId)) {
+      skippedNoId += 1;
+      return;
+    }
+    rows.push({
+      rowNumber,
+      leadId,
+      destination: cell(r, TRACKER_COLS.destination),
+      sendEmail: cell(r, TRACKER_COLS.sendEmail),
+      inHouseContacted: cell(r, TRACKER_COLS.inHouseContacted),
+    });
+  });
+
+  return { rows, skippedNoId, tab };
+}
+
+/**
+ * Write the four system-owned status columns (J-M) for many rows in one call.
+ *
+ * Addressed by row number, which is only valid for the snapshot the caller read:
+ * new leads insert at row 2 and push everything down. Callers must write back
+ * within the same pass they read in, never from a stored row number.
+ *
+ * One batchUpdate rather than a request per row: the tracker is 210 rows and
+ * growing, and per-row writes would burn the Sheets quota and take minutes.
+ *
+ * Writes J to M only. Column N onward belongs to the triager and is never
+ * touched by this system.
+ */
+export async function writeTrackerStatusBatch(
+  updates: {
+    rowNumber: number;
+    verified: string;
+    nurtureStatus: string;
+    bookedSlots: string;
+    contactTrail: string;
+  }[],
+): Promise<number> {
+  if (updates.length === 0) return 0;
+
+  const creds = getCredentials();
+  const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
+  const tab = process.env.GOOGLE_SHEETS_TAB || "Leads";
+  if (!creds || !spreadsheetId) throw new Error("Google Sheets env not configured");
+
+  const accessToken = await getAccessToken(creds.clientEmail, creds.privateKey);
+  const data = updates.map((u) => ({
+    range: `${tab}!J${u.rowNumber}:M${u.rowNumber}`,
+    values: [[u.verified, u.nurtureStatus, u.bookedSlots, u.contactTrail]],
+  }));
+
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values:batchUpdate`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ valueInputOption: "RAW", data }),
+    },
+  );
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new Error(`Sheets status batch write failed (${res.status}): ${detail}`);
+  }
+  return updates.length;
+}

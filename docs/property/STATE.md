@@ -20,6 +20,101 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
+## 2026-09-15 — Warm handoff to Aswatax, triggered from the Lead Tracker (BUILT + TESTED, NOT ARMED)
+
+**Problem it solves.** Omar (Aswatax) phones referred enquirers cold and some ask how he
+got their details. Not a consent failure: all 17 sites carry the partner-network notice,
+the exact wording is stored per lead in `leads.consent_text`, and the thank-you pages have
+named Aswatax since 09-09. It is a recall failure, read once at submit, days before the call.
+
+**Mechanism.** Umair keeps triaging in the Lead Tracker
+(`1MPxu7utofikLFK60nvDEPs9Y_wjLrbRAEpxKIbv-itM`). Three strict dropdowns drive everything:
+
+| N "Sent to Omar or kept in-house" | O "Send Email?" | P "In-house Lead Contacted?" | Action |
+|---|---|---|---|
+| `Omar` | `Send` | any | introduce, then stop the chase |
+| any | blank | `Yes` | stop the chase, no email |
+| not `Omar` | `Send` | blank | nothing, reported, never guessed |
+| blank | blank | blank | nothing |
+
+Two keys are required to send because the send is irreversible and copies a customer.
+Read from the existing hourly-cron machinery via `readTrackerRows`; joined on column I
+(lead id) only. Runner: `POST /api/leads/tracker-sync` (CRON_SECRET bearer). Deliberately
+NOT on a schedule yet: scheduling it is part of arming.
+
+**Never twice, enforced below the application.** `lead_handoff_intros`
+(`20260915000000`) takes a claim BEFORE sending. Primary key = one per lead; unique index
+on normalised email = one per person. Verified in production: a second claim on the same
+lead, a claim on a different lead with the same email, and a claim on a non-existent lead
+are all rejected by the database. Toggling O off and on, clearing and re-setting N, and
+three further runs produced zero additional sends.
+
+**Self-arming watermark, no arming-day ritual.** `lead_handoff_control` (`20260915000001`)
+holds `watermarked_at`. The first run in ANY mode claims every decision already in the
+sheet and sends nothing. There is deliberately no script and no required env var: a
+one-way step that must be remembered on the right day is what gets lost at a handover.
+**Already run against production on 2026-09-15: 138 historic decisions permanently
+blocked, 72 untriaged rows left eligible, 0 emails sent.**
+
+**Modes.** `LEAD_HANDOFF_MODE` absent or unrecognised means `report` (decides, sends
+nothing). `redirect` sends real mail with every recipient collapsed to
+`LEAD_HANDOFF_OPERATOR_EMAIL` and `[REDIRECT]` on the subject. `live` is the only mode
+that reaches an enquirer. Second independent gate: while unarmed the recipient resolver
+throws on any address that is not the operator's. Plus a per-run cap
+(`LEAD_HANDOFF_MAX_PER_RUN`, default 5) so a bug emails a handful, not the tracker.
+
+**The email.** To the enquirer, CC Omar, BCC the owner, from Umair, reply-to set. Shaped
+as a reply: their own contact details and message quoted below the signature, then one
+line naming Aswatax. Deliberately plain, no card, no wordmark, no buttons: a marketing
+shell is what made the first drafts read as fake. A test fails if the lead id,
+`source_url`, `visitor_id`, `session_id`, quality, tier, price or any `utm_` ever appears
+in the body, because the enquirer receives this and a third party is copied on it.
+
+**Two third-party claims, kept distinct on purpose.** "Omar is a Chartered Tax Adviser" is
+about one named individual and is evidenced in `legal/aswatax/`. "the firm is registered
+with the Chartered Institute of Taxation" is about Aswatax Ltd (12923632) and rests on the
+owner's assertion of 2026-09-15. It is explicitly NOT claimed that the team hold the CTA
+qualification. Do not let these merge.
+
+**Names, measured not imagined.** All 308 live leads were swept through the renderer:
+255 greet by name, 53 fall back, 0 defects. Titles are stripped (19 leads would have read
+"Hi Mr,"), ALL CAPS is normalised (9 leads), hyphens and apostrophes survive, and phone
+numbers, email addresses, symbols, lone titles and single initials fall back to "Hello,"
+rather than guessing. Greeting, subject and the line to Omar read one source and a test
+fails if they ever disagree.
+
+**Sending domains are the real constraint.** Only `propertytaxpartners.co.uk` is verified
+in Resend; `dentalfinancepartners.co.uk` is in `failed` and the other 15 sites have none,
+which is why their nurture already sends from the Property domain. Sending is gated on
+`VERIFIED_SENDING_DOMAINS`, so other sites are refused and reported rather than bouncing.
+Owner's plan covers 3 domains and all 3 slots are already consumed (property, its inbound
+subdomain, the failed dentists one). **Decision 2026-09-15: Property only for now (166 of
+210 tracker leads), Umair forwards other sites to Omar by hand.** Adding a site is one
+line once its DNS is genuinely verified.
+
+**Also in this change.** The owner's name is out of the customer-facing voice: nurture
+greetings, the reply-ack and the shared email signature now read Umair (the other 16 sites
+were already de-personalised, Property was the sole outlier). `lead-service-template.ts`
+had the brand and signer hardcoded in six places, so every site's nurture email rendered a
+Property wordmark; now parameterised with the estate values as defaults. `consent_given`
+no longer defaults to `true` on submit: it is recorded from evidence, either the explicit
+flag (LeadForm, SpecialistWidget) or the stored `consent_text` (MiniCapture,
+ResultGateModal, MobileToolSlot, which send wording but no flag).
+
+**Testing procedure, repeatable.** `Sheet2` of the same spreadsheet is the fixture tab
+(`GOOGLE_SHEETS_TAB=Sheet2`), pointed at the STAGING database, so Umair's live rows and
+production data are never touched. Seed a lead, set N and O, run the endpoint in
+`redirect`. Note the trap: Property `.env.local` points at staging by default, so a run
+meant to touch production must override `SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY`.
+
+**OPEN, owner-gated:**
+- Arming (`LEAD_HANDOFF_MODE=live`), which needs Omar's delivery address
+  (`LEAD_HANDOFF_PARTNER_EMAIL`) and `LEAD_HANDOFF_BCC`.
+- Scheduling the endpoint on the hourly cron.
+- Umair's agreement to being the named voice, since replies reach him.
+- Written confirmation from Aswatax of the CIOT firm registration.
+- Whether `Send` means "system emails Omar" or "Umair already did", or Omar gets two.
+
 ## 2026-09-14 — Paid PDF concierge test (flag-gated, ships OFF)
 
 **What.** Two-week viability test of self-serve revenue: a "Get the PDF, £29" block under the
@@ -61,9 +156,13 @@ lines: clicks/exposure < 2% or paid/exposure < 1% after ~250 exposures = kill (f
 insertion, drop tables). Paid > 2% = build P1 properly. Delete `calc_pdf_requests` rows older
 than 90 days at close.
 
-**Status.** BUILT 2026-09-14, migration NOT applied, NOT pushed, NOT deployed. Owner steps:
-Stripe Payment Link (entity Ashfield Trading Ltd, confirm VAT status), then deploy Property +
-console, then flip the flag.
+**Status.** LIVE 2026-09-14 16:15 UTC. Migration applied to prod and staging (PostgREST needed
+`pg_notify('pgrst','reload schema')` before the new table was visible). Pushed `2963a9ea`
+(feature `0317cb51`, layout `2963a9ea`); Property and console deployed from a clean worktree at
+that SHA; flag ON with `started_at` 2026-09-14T16:15:36Z and the real Payment Link. Local
+click-through verified on staging (row + client_reference_id). Owner still to do: one real £29
+purchase + refund to prove the production path. Reads: day 7 = 2026-09-21, day 14 = 2026-09-28.
+Test rows on staging are not counted (the panel reads prod).
 
 ## 2026-09-12 - OWNER ITEM: the privacy notice promises deletion the retention cron does not perform (estate-wide, not urgent)
 
