@@ -63,12 +63,47 @@ that reaches an enquirer. Second independent gate: while unarmed the recipient r
 throws on any address that is not the operator's. Plus a per-run cap
 (`LEAD_HANDOFF_MAX_PER_RUN`, default 5) so a bug emails a handful, not the tracker.
 
-**The email.** To the enquirer, CC Omar, BCC the owner, from Umair, reply-to set. Shaped
-as a reply: their own contact details and message quoted below the signature, then one
-line naming Aswatax. Deliberately plain, no card, no wordmark, no buttons: a marketing
-shell is what made the first drafts read as fake. A test fails if the lead id,
-`source_url`, `visitor_id`, `session_id`, quality, tier, price or any `utm_` ever appears
-in the body, because the enquirer receives this and a third party is copied on it.
+**The email.** To the enquirer, CC Omar, BCC the owner, from Umair, reply-to set.
+Shaped as a reply, quoting back their own details: Name, Email, Phone, Type,
+Preferred call time, Message, and up to two of their replies. Subject is
+"<Name>'s enquiry", or "Your enquiry" with no usable name. Deliberately plain: no
+card, no wordmark, no buttons, because a marketing shell is what made the first
+drafts read as fake. Nothing is truncated; a 15,000 character enquiry round-trips
+whole.
+
+**It carries what the lead notification carried, plus what nobody carried.** Type
+came from the notification and would have been lost once Umair stops forwarding.
+The booked call window and any reply were already being stored and read by nobody
+making the call. With a booking the ask names the slot ("booked in for Tuesday 16
+September, morning, as they requested"), because "as soon as possible" directly
+under a time they picked reads as nobody having looked. A time in free text is
+deliberately NOT parsed: the reply is quoted verbatim instead.
+
+**Reading real replies changed the design.** Raw email bodies carry quoted
+threads, handset signatures, multi-paragraph accounts, a tracking parameter inside
+a quoted link, and several open "Hi Junayd". So replies are cleaned (thread cut,
+signatures and URLs removed, greetings naming our own people stripped, anything
+over 280 chars dropped rather than truncated). Across 223 property leads that
+keeps 112 replies and drops 21.
+
+**Two layers, then a visible failure.** `leakedContentReason` checks the FINISHED
+email for tracking parameters, internal identifiers, the lead id, quoted headers,
+signatures, anyone who is not the sender, and links outside the sending domain. On
+a hit it DEGRADES first, dropping the quoted replies and re-rendering, and only
+refuses if that still fails. Any non-send (refusal, block, or an ambiguous pair of
+dropdowns) is written to **column K** as `NOT SENT: <reason>`, because a refusal
+nobody sees is worse than the leak it prevented: everyone believes the partner firm
+was emailed and the enquirer hears from nobody.
+
+**Rows move, so writes are addressed by lead id.** Every new lead inserts at row 2
+and pushes the rest down, so the row number is re-resolved from column I
+immediately before writing. Unmatched rows are skipped and logged, never written by
+position. Writes are confined to J-M; N onward belongs to the triager.
+
+**Column audit, verified against the live sheet 2026-09-15:** code indexes match
+headers on both tabs; I is Lead ID; J-M carry no data validation that could reject
+a write; N/O/P dropdowns intact and strict on both tabs. Cosmetic only: Sheet1 A1
+holds a backtick instead of "Received" (nothing reads headers, only positions).
 
 **Two third-party claims, kept distinct on purpose.** "Omar is a Chartered Tax Adviser" is
 about one named individual and is evidenced in `legal/aswatax/`. "the firm is registered
