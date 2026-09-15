@@ -284,6 +284,45 @@ describe("names as they actually arrive", () => {
     }
   });
 
+  it("never truncates the enquiry, however long it is", () => {
+    // This email replaced the forwarded lead notification as how the partner firm
+    // receives an enquiry, so a clipped message means work is quoted on partial
+    // information. The longest real message on 2026-09-15 was 1,860 characters;
+    // this tests an order of magnitude beyond it.
+    const long = Array.from({ length: 400 }, (_, i) => `Sentence number ${i} about the portfolio.`).join(" ");
+    const tail = "FINAL-SENTENCE-MARKER";
+    const message = `${long} ${tail}`;
+    const { text, html } = buildIntroEmail({ ...lead, message }, resolveBrand("property")!);
+    expect(message.length).toBeGreaterThan(15000);
+    expect(text).toContain(message);
+    expect(text).toContain(tail);
+    expect(html).toContain(tail);
+    // No ellipsis or "clipped" artefact introduced anywhere.
+    expect(text).not.toContain("…");
+  });
+
+  it("keeps line breaks in a multi-line enquiry readable", () => {
+    // 158 of 308 real messages contain newlines.
+    const message = ["First point.", "Second point.", "Third point."].join(String.fromCharCode(10));
+    const { text, html } = buildIntroEmail({ ...lead, message }, resolveBrand("property")!);
+    expect(text).toContain(message);
+    expect(html).toContain("First point.<br>Second point.<br>Third point.");
+  });
+
+  it("handles an enquiry with no message at all", () => {
+    // 6 real leads have an empty message: the row is dropped, not left dangling.
+    const { text } = buildIntroEmail({ ...lead, message: null }, resolveBrand("property")!);
+    expect(text).not.toContain("Message:");
+    expect(text).toContain("Name:");
+  });
+
+  it("escapes markup in an enquiry rather than rendering it", () => {
+    const message = "<script>alert(1)</script> & \"quoted\"";
+    const { html } = buildIntroEmail({ ...lead, message }, resolveBrand("property")!);
+    expect(html).not.toContain("<script>");
+    expect(html).toContain("&lt;script&gt;");
+  });
+
   it("possessive handles names ending in s", () => {
     expect(possessive("Sarah")).toBe("Sarah's");
     expect(possessive("James")).toBe("James'");
