@@ -50,11 +50,15 @@ are all rejected by the database. Toggling O off and on, clearing and re-setting
 three further runs produced zero additional sends.
 
 **Self-arming watermark, no arming-day ritual.** `lead_handoff_control` (`20260915000001`)
-holds `watermarked_at`. The first run in ANY mode claims every decision already in the
-sheet and sends nothing. There is deliberately no script and no required env var: a
+holds `watermarked_at`. The first run in ANY mode claims EVERY row in the sheet, decided
+or not (owner decision 2026-09-16: anything present at go-live was handled by hand; only
+leads arriving after go-live are introduced), and sends nothing. There is deliberately no script and no required env var: a
 one-way step that must be remembered on the right day is what gets lost at a handover.
-**Already run against production on 2026-09-15: 138 historic decisions permanently
-blocked, 72 untriaged rows left eligible, 0 emails sent.**
+**Ran against production on 2026-09-15 under the old decided-rows-only rule: 135
+claimed, 0 sent. ARMING STEP: `UPDATE lead_handoff_control SET watermarked_at = NULL`
+immediately before setting mode live, so the first live pass re-watermarks the whole
+sheet as it stands that day.** Sender at arming: `LEAD_HANDOFF_FROM` and
+`LEAD_HANDOFF_REPLY_TO` = `umair@propertytaxpartners.co.uk` (the only inbox Umair reads).
 
 **Modes.** `LEAD_HANDOFF_MODE` absent or unrecognised means `report` (decides, sends
 nothing). `redirect` sends real mail with every recipient collapsed to
