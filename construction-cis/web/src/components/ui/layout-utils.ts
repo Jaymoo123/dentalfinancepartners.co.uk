@@ -77,6 +77,7 @@ export {
   sectionYLoose,
   focusRing,
   btnPrimary,
+  btnPrimaryBase,
   btnSecondary,
   btnOnDark,
   btnOnCream,

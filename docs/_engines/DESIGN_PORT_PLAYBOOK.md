@@ -27,11 +27,12 @@ with every verification list executed before tagging, then two independent adver
 reviews and a gap-fix wave. Budget a mop-up package from the start.
 
 **Read sections 11 and 12 of PORT_FIELD_NOTES.md before the next port.** Section 11 carries an
-estate-wide
-defect: the header chrome fix recorded as shipped 2026-08-23 never took effect on ANY site,
-Property included, because two competing `display` utilities in one class string are a cascade
-race and the loser is silent. Every ported site renders its header CTA and burger together
-below 1024px. Section 12 carries another: `prose` and `section-label` are dead class names on
+estate-wide defect, FIXED 2026-09-16 by owner decision: the header CTA never hid below 1024px on
+any site because `btnPrimary` opened with `inline-flex` and the header composed `hidden` over it.
+The fix splits `btnPrimaryBase` out of `btnPrimary` (kit + the four site-local copies) and the
+header composes from the base; the charities and contractors-ir35 CSS overrides are gone. Measured
+in headless Chrome on Property, Dentists, contractors-ir35, wills-probate at 390/1023/1024.
+RULE stands: verify a hide utility in the RENDERED DOM, never in the class list. Section 12 carries another: `prose` and `section-label` are dead class names on
 ten and five deployed sites, 161 live article pages rendering unformatted.
 
 **PREFLIGHT, before you measure anything:**

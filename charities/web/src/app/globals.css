@@ -336,15 +336,3 @@
 .prose h3 {
   line-height: 1.3;
 }
-
-@layer utilities {
-  header a[data-cta-placement="header"][data-cta="header_book"] {
-    display: none;
-  }
-
-  @media (min-width: 64rem) {
-    header a[data-cta-placement="header"][data-cta="header_book"] {
-      display: inline-flex;
-    }
-  }
-}

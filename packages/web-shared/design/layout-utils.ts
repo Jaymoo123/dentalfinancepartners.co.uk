@@ -27,8 +27,16 @@ export const focusRing =
  *  3.56:1), and L.2 says such sites shift the ground to the 700 step. Declaring
  *  the three tokens in a site's :root is that shift; leaving them undeclared
  *  keeps the 600-step behaviour byte-identically. */
-export const btnPrimary =
-  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-[var(--btn-ground,var(--color-primary-600))] px-8 py-3.5 text-base font-bold text-white transition-all duration-150 hover:bg-[var(--btn-ground-hover,var(--color-primary-700))] active:bg-[var(--btn-ground-active,var(--color-primary-800))] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
+/** btnPrimary without its display, size, padding and text-size utilities, for the
+ *  one caller that sets its own (the header bar CTA). Composing `hidden min-h-10
+ *  px-6` OVER btnPrimary is a cascade race: both utilities land at equal
+ *  specificity and Tailwind's own sort, not our source order, picks the winner,
+ *  silently. That is how the header CTA never hid below 1024px on any site
+ *  between 2026-08-23 and 2026-09-16. Compose from the base instead. */
+export const btnPrimaryBase =
+  "touch-manipulation items-center justify-center rounded-xl bg-[var(--btn-ground,var(--color-primary-600))] font-bold text-white transition-all duration-150 hover:bg-[var(--btn-ground-hover,var(--color-primary-700))] active:bg-[var(--btn-ground-active,var(--color-primary-800))] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
+
+export const btnPrimary = `inline-flex min-h-12 min-w-[10rem] px-8 py-3.5 text-base ${btnPrimaryBase}`;
 
 /** Secondary - brand outline */
 export const btnSecondary =

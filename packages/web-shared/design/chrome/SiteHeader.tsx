@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import type { ComponentType, CSSProperties } from "react";
-import { btnPrimary, focusRing, siteContainerXl } from "../layout-utils";
+import { btnPrimary, btnPrimaryBase, focusRing, siteContainerXl } from "../layout-utils";
 import type { NavItem } from "./nav";
 
 /**
@@ -470,7 +470,7 @@ export function SiteHeader({
             data-cta-placement="header"
             data-cta-goal={ctaPrimary.href.startsWith("/contact") ? ctaContactGoal : "pricing"}
             data-cta-variant={ctaVariant}
-            className={`${btnPrimary} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
+            className={`${btnPrimaryBase} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
           >
             {ctaPrimary.label}
           </Link>

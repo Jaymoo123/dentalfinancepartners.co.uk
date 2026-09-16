@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
-import { btnPrimary, focusRing, siteContainerXl } from "@/components/ui/layout-utils";
+import { btnPrimary, btnPrimaryBase, focusRing, siteContainerXl } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import type { NavItem } from "@/lib/nav";
 import { getActiveCta, getActiveNav } from "@accounting-network/web-shared/lib/niche-config";
@@ -295,7 +295,7 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
               which reads server HTML. */}
           <Link
             href={activeCta.header_primary.href}
-            className={`${btnPrimary} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
+            className={`${btnPrimaryBase} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
             data-cta="header_nav_primary"
             data-cta-placement="header"
             data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "contact" : "pricing"}

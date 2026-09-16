@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
-import { btnPrimary, focusRing, siteContainerXl } from "@/components/ui/layout-utils";
+import { btnPrimary, btnPrimaryBase, focusRing, siteContainerXl } from "@/components/ui/layout-utils";
 import { type NavItem } from "@/config/site";
 import { niche, getActiveCta, getActiveNav } from "@/config/niche-loader";
 
@@ -307,7 +307,7 @@ export function SiteHeader({ nav }: { nav?: NavItem[] } = {}) {
             data-cta-placement="header"
             data-cta-goal={activeCta.header_primary.href.startsWith("/contact") ? "form" : "pricing"}
             data-cta-variant={ctaVariant}
-            className={`${btnPrimary} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
+            className={`${btnPrimaryBase} hidden min-h-10 min-w-0 whitespace-nowrap px-6 py-2 text-sm lg:inline-flex`}
           >
             {activeCta.header_primary.label}
           </Link>

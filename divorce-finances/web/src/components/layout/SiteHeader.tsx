@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import { BrandWordmarkHomeLink } from "@/components/brand/BrandWordmarkHomeLink";
-import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, btnPrimaryBase, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 function MenuIcon({ open }: { open: boolean }) {
@@ -77,7 +77,7 @@ export function SiteHeader() {
         <div className="flex shrink-0 items-center gap-2">
           <Link
             href="/contact"
-            className={`${btnPrimary} hidden min-h-10 px-5 py-2 text-xs sm:inline-flex`}
+            className={`${btnPrimaryBase} hidden min-h-10 px-5 py-2 text-xs sm:inline-flex`}
           >
             Book a free call
           </Link>
