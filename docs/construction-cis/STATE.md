@@ -2,11 +2,14 @@
 
 ## PICKUP BLOCK (read this first) - design port, 2026-09-12
 
+**DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**
+
 **Where it stands.** The Property-standard design port is **COMPLETE: ALL SIX PHASES BUILT,
 REVIEWED, COMMITTED AND TAGGED, PLUS A DESIGN UPLIFT ON TOP (`48312e2c`, 2026-09-14,
-UNTAGGED). NOTHING DEPLOYED, NOTHING PUSHED.** The uplift section is further down this file
-and `48312e2c` is the end of the work; every phase tag below predates it. Next step is the owner
-walk on a dev server, then an owner-triggered deploy.
+UNTAGGED). DEPLOYED 2026-09-16 (`90fbea9c`).** The uplift section is further down this file
+and `48312e2c` is the end of the work; every phase tag below predates it. Remaining, if
+anything: the phase 6 QA-gap note further down and any post-deploy owner decisions, not the
+deploy itself.
 
 This block has now been stale THREE times on the same distinction, between what is in the
 working tree and what is committed and tagged. It went stale a third time because it was
@@ -403,9 +406,10 @@ Last updated 2026-06-16. The 8th estate site. **LIVE + HEALTHY at www.tradetaxsp
 ## 2026-09-14: DESIGN UPLIFT (`48312e2c`), a distinct phase AFTER the port
 
 Fourth and last site of the kit-adoption uplift the owner approved after seeing crypto.
-**Committed, UNTAGGED, not pushed, not deployed.** Every `port-construction-cis-phase*` tag
-predates this commit, so a checkout by tag is missing the whole uplift; the end of the work
-is `48312e2c` (`git log --oneline -3 -- construction-cis/`).
+**Committed, UNTAGGED, not pushed, not deployed** at the time of writing. Every
+`port-construction-cis-phase*` tag predates this commit, so a checkout by tag is missing the
+whole uplift; the end of the work is `48312e2c` (`git log --oneline -3 -- construction-cis/`).
+[deployed 2026-09-16, 90fbea9c]
 
 This site scored **worst in the estate on adoption** (zero kit design components) and
 **best on art direction** (it already had the font and a `TradeBackdrop`), so the work was
@@ -510,7 +514,7 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 
 ~~The site carries **35 blog pages** (wave 1 = 15 through the full QA chain; wave 2 = 20 written but NOT yet QA'd), build green (95 static routes). Calculator fleet live (8 tools). Trade pages = 15.~~ **STALE. Corrected 2026-09-11: 82 posts, 12 calculators, 45 trade pages, build green at 275 pages. See the PICKUP BLOCK at the top of this file.** Schema layer fully wired. llms-full.txt includes calculator fleet.
 
-Wave-2 posts written 2026-06-12: 5 Opus pillars (cis-april-2026-rule-changes, cis-self-assessment-complete-guide, cis-vs-paye-complete-comparison, gross-payment-status-cash-flow-guide, cis-back-years-refund-guide) + 15 Sonnet clusters (see content/blog/ for full list). Same QA standard: HP-locked figures, no em-dashes, raw HTML body, 6+ FAQs per post. **Wave-2 posts HAVE NOT had the formal QA sweep chain run** (sweeps + judge panels + fact-auditor) — this is the next step before deploy.
+Wave-2 posts written 2026-06-12: 5 Opus pillars (cis-april-2026-rule-changes, cis-self-assessment-complete-guide, cis-vs-paye-complete-comparison, gross-payment-status-cash-flow-guide, cis-back-years-refund-guide) + 15 Sonnet clusters (see content/blog/ for full list). Same QA standard: HP-locked figures, no em-dashes, raw HTML body, 6+ FAQs per post. **Wave-2 posts HAVE NOT had the formal QA sweep chain run** (sweeps + judge panels + fact-auditor) — this is a content QA gap, independent of the site's 2026-09-16 production deploy, and remains open.
 
 Conduct rules: Sonnet for judging panels and cluster writes; Opus only for pillars, repairs, and fact-auditing (model-tiering memory: feedback_no_deepseek_opus_only, Amendment 4).
 

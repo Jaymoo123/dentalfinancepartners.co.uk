@@ -8,7 +8,9 @@ site-specific WHAT and the heartbeat. Ground-truth facts live in
 
 Last updated: 2026-09-12 (claims-audit SERIOUS TIER remediated; nothing deployed since 2026-08-26).
 
-## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). Nothing deployed.
+> **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: all six design-port phases, claims-audit serious tier, header CTA fix, favicons).
+
+## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). [deployed 2026-09-16, 90fbea9c]
 
 The Property-standard design port has started. Method:
 `docs/_engines/DESIGN_PORT_PLAYBOOK.md`. Programme artefacts: `docs/medical/_port/`,
@@ -105,7 +107,7 @@ file:line at `docs/medical/_port/LIVE_DEFECTS.md`. The ones that matter most:
   policy still describes an exit-intent form and the live `SpecialistWidget` (auto-opens at
   600ms) is undisclosed.
 
-## 2026-09-10 - DESIGN PORT PHASE 1 (the token layer). Built, reviewed, fixed, re-reviewed. Nothing deployed.
+## 2026-09-10 - DESIGN PORT PHASE 1 (the token layer). Built, reviewed, fixed, re-reviewed. [deployed 2026-09-16, 90fbea9c]
 
 Phase 1 is the token layer only. The chrome (header, footer, shell) is Phase 2 and still
 renders its pre-port markup.
@@ -181,7 +183,7 @@ any restart, fetch the CSS hash the served HTML references and confirm the serve
 earlier ports too. Medical was captured on 3141 after asserting the title. The assertion
 the Solicitors run added has now saved a measurement on two consecutive sites.
 
-## 2026-09-11 - DESIGN PORT PHASE 2 (the chrome). Built, reviewed three times, fixed. Nothing deployed.
+## 2026-09-11 - DESIGN PORT PHASE 2 (the chrome). Built, reviewed three times, fixed. [deployed 2026-09-16, 90fbea9c]
 
 Phase 2 moved the site chrome to the shared design kit. Phase 1 had built the token layer,
 `src/lib/nav.ts`, `MedicalBackdrop.tsx` and the stethoscope mark but mounted none of them;
@@ -325,7 +327,7 @@ and `taskkill //PID <pid> //F`; re-editing `niche.config.json` by parsing and re
 JSON rewrites every escaped character in the file, so edit the lines and never round-trip
 it.
 
-## 2026-09-11 - DESIGN PORT PHASE 6 (contact, about, legal, research, interruptive, machine surfaces, retirements). THE PORT IS BUILT. Nothing deployed.
+## 2026-09-11 - DESIGN PORT PHASE 6 (contact, about, legal, research, interruptive, machine surfaces, retirements). THE PORT IS BUILT. [deployed 2026-09-16, 90fbea9c]
 
 Last build phase. One review round, then a fix pass. Phases 0 to 6 are all committed and tagged
 (phase 6: `port-medical-phase6` @ `53b4b09d`); production still serves `18b4f25f`.
@@ -427,7 +429,7 @@ and the `/nhs-pension` overlay hero whose true ratio is 11.24.
 
 ---
 
-## 2026-09-11 - DESIGN PORT PHASE 5 (homepage, pillars, locations). Built, reviewed once, fixed twice. Nothing deployed.
+## 2026-09-11 - DESIGN PORT PHASE 5 (homepage, pillars, locations). Built, reviewed once, fixed twice. [deployed 2026-09-16, 90fbea9c]
 
 Cadence changed here at the owner's instruction: ONE review round per phase instead of two
 plus a re-review, and out-of-phase defects logged rather than fixed. The one round returned
@@ -556,7 +558,7 @@ fully clean run of this port. Build exit 0 at 162 pages. 486 tests. `tsc` clean.
 
 ---
 
-## 2026-09-11 - DESIGN PORT PHASE 4 (the calculators). Built, reviewed twice, fixed. Nothing deployed.
+## 2026-09-11 - DESIGN PORT PHASE 4 (the calculators). Built, reviewed twice, fixed. [deployed 2026-09-16, 90fbea9c]
 
 Scope: the result gate across the whole calculator fleet, the two calculator routes, and
 the copy that the gate makes false. Deliberately NOT in this phase and logged instead: the
@@ -650,7 +652,7 @@ routes emit no page-level structured data).
 
 ---
 
-## 2026-09-11 - DESIGN PORT PHASE 3 (the blog subsystem). Built, reviewed twice, fixed, re-reviewed FAIL, fixed again. Nothing deployed.
+## 2026-09-11 - DESIGN PORT PHASE 3 (the blog subsystem). Built, reviewed twice, fixed, re-reviewed FAIL, fixed again. [deployed 2026-09-16, 90fbea9c]
 
 Phase 3 is the blog subsystem: 88 articles, 8 category hubs, the `/blog` index. Four
 builders in parallel on disjoint files, then two adversarial reviews, a fix pass, a
@@ -995,7 +997,7 @@ not the 86 a markdown glob returns; a glob misses 52 TSX, TS and derived surface
    including the exact peer list and the method's limits, is `BATCH3_INDEX.md` D13. D12 was closed in the same pass:
    opticians and allied health are still unpackable on the full 44 domains, so the $1.13 unblock remains the only
    route to them. **$0.00 spent, SQL only against the persisted harvest.**
-2. ~~**Write batch 3 waves A and B.**~~ **DONE 2026-08-26, committed `7f834d10`, NOT DEPLOYED.** Nine pages
+2. ~~**Write batch 3 waves A and B.**~~ **DONE 2026-08-26, committed `7f834d10`, DEPLOYED 2026-09-16 (90fbea9c).** Nine pages
    through three rounds: written, fixed against dual QA, then subtracted. Four blocking factual defects were
    caught by the adversarial track and none by the writers, including Employment Allowance advice that was
    backwards in four places and an employer pension rate that overstated a funding gap by 118%. Two ground-truth
@@ -1364,7 +1366,7 @@ only `title` and `description`. With no `alternates.canonical`, Next falls back 
 locations/[slug], services, nhs-pension, terms, research and the homepage). The resources
 route is the single omission. **FIXED same session (2026-09-01): `alternates.canonical`
 added to `generateMetadata`, matching the sibling idiom; `tsc --noEmit` clean. Committed,
-not deployed; rides the next Medical deploy.**
+DEPLOYED 2026-09-16 (90fbea9c).**
 
 Consequence: the two best-positioned non-blog pages on the site (both ~pos 12, 124 combined
 impressions) tell Google they are the homepage. Google has so far declined the instruction and
@@ -1574,7 +1576,7 @@ cluster wave (~10-14 pages, C2 rows 20-23; author the nurses C1 wording fence fi
 ~2026-09-24; (6) owner decision unchanged: GMS/PMS corpus sweep (39 posts + 6 pages).
 
 
-## 2026-09-12 - CLAIMS AUDIT REMEDIATION: the SERIOUS TIER, closed. Nothing deployed.
+## 2026-09-12 - CLAIMS AUDIT REMEDIATION: the SERIOUS TIER, closed. [deployed 2026-09-16, 90fbea9c]
 
 Owner approved the serious tier of the estate-wide claims audit on 2026-09-12. The audit's
 own verdict is the framing for this entry: `house_positions.md` is source-verified and dated,

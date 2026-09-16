@@ -10,6 +10,8 @@ Built via `docs/_engines/SITE_SPINUP.md`.
 
 ---
 
+**DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**
+
 ## ⚡ PICKUP — port status DERIVED FROM GIT (2026-09-12)
 
 **Git is the authority for what is built. Re-derive before planning:**
@@ -34,13 +36,13 @@ uplift section below, which is the end of the work on this site.
 | Phase 5 (homepage, services, pillars) | BUILT, REVIEWED (`R56`, FAITHFUL-WITH-GAPS), gap was an owner ruling, TAGGED (`3d718b71`) |
 | Phase 6 (secondary, post-submit, legal) | BUILT, REVIEWED (`R56`, **FAITHFUL**), TAGGED (`3d718b71`) |
 | Verification lists | EXECUTED (`V1`): 198 items, 175 PASS, 8 CANNOT-RUN, 2 real defects, both fixed |
-| Pushed | NO. main is ahead of origin |
-| Deployed | NO. Production still serves `18b4f25f` |
+| Pushed | YES, 2026-09-16 |
+| Deployed | YES, 2026-09-16 (`90fbea9c`) |
 
 Phase tags 3 to 6 deliberately point at the REVIEWED and gap-fixed commit, not at the build
 commit `7bcab0e8`, because those phases were not complete until their gaps were closed.
 
-**REMAINING WORK: the owner walk on a dev server, then his deploy decision. Nothing else.**
+**REMAINING WORK: none from the port/uplift. DEPLOYED 2026-09-16 (`90fbea9c`).**
 
 **Verification standing (build newer than every source edit):** `next build` exit 0, vitest
 448/448, tsc and eslint clean, `check_dependency_closure.py` OK across 19 sites,
@@ -69,9 +71,10 @@ stopped agent left in `contractors-ir35/web/` were deleted; the tree is clean.
 ## 2026-09-14: DESIGN UPLIFT (`569d3304`), a distinct phase AFTER the port
 
 Third of four sites through the kit-adoption uplift the owner approved after seeing crypto.
-**Committed, UNTAGGED, not pushed, not deployed.** Every `port-contractors-ir35-phase*` tag
-predates this commit, so a checkout by tag is missing the whole uplift; the end of the work
-is `569d3304` (`git log --oneline -3 -- contractors-ir35/`).
+**Committed, UNTAGGED, not pushed, not deployed** at the time of writing. Every
+`port-contractors-ir35-phase*` tag predates this commit, so a checkout by tag is missing the
+whole uplift; the end of the work is `569d3304` (`git log --oneline -3 -- contractors-ir35/`).
+[deployed 2026-09-16, 90fbea9c]
 
 This site already had the webfont, so the gap was the primitives, the backdrop and the
 eyebrows.
@@ -133,11 +136,13 @@ without naming the kit file path, so §9.1 row 2a counts **0 declines** on a sit
 declined correctly. Naming the path makes the counter-rule auditable.
 
 ### Owner decisions open at close (bundle these, do not drip)
-1. The shared header fix. A cascade collision in `packages/web-shared` means the header CTA
-   never hides, so CTA and burger both render below 1024px and the wordmark wraps at 390px.
-   **Property reproduces it**, confirmed in its own built CSS byte order, so the estate-wide
-   chrome fix recorded as landing 2026-08-23 never took effect anywhere. Fixed site-locally
-   here; the durable fix crosses 18 sites.
+1. The shared header fix. A cascade collision in `packages/web-shared` meant the header CTA
+   never hid, so CTA and burger both rendered below 1024px and the wordmark wrapped at 390px.
+   **Property reproduced it**, confirmed in its own built CSS byte order, so the estate-wide
+   chrome fix recorded as landing 2026-08-23 never took effect anywhere. **The kit-level fix
+   landed in `017cea0e` (`btnPrimaryBase` split in `packages/web-shared/design/layout-utils.ts`)
+   and is live estate-wide; the site-local override that used to sit in this site's
+   `globals.css` was deleted in that same commit.**
 2. The timed promise in `packages/web-shared/leads/MiniCapture.tsx:627,707`, under six mounts
    on this site. The only timed promise still reaching users here.
 3. ZeroBounce receives enquirer emails from the live submit path (`src/lib/leads/verify.ts`)

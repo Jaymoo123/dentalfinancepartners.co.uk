@@ -1,6 +1,6 @@
 # Dentists — program state (living heartbeat)
 
-> ## PICKUP - design port, ALL SIX PHASES BUILT, REVIEWED AND TAGGED. NOTHING PUSHED, NOTHING DEPLOYED.
+> ## PICKUP - design port, ALL SIX PHASES BUILT, REVIEWED AND TAGGED. DEPLOYED to production 2026-09-16 from `90fbea9c` (estate-wide release: design port, claims fixes, header CTA fix, favicons).
 >
 > Phase 0: `9936547a`. Then tag + commit per phase:
 > `port-dentists-phase1` @ `f1df9e93`, `port-dentists-phase2` @ `3f2d4d35`,
@@ -8,9 +8,9 @@
 > `port-dentists-phase5` @ `6f986cf3`, `port-dentists-phase6` @ `bdb3f5e7`.
 > (Phase 1 also carries the interim commits `e62029fa`, owner decisions, and `f1197d7a`,
 > brand layer + content remediation, plus the fix pass swept into `f75438bf`, see below.)
-> Main is well ahead of origin; nothing here is pushed. Production is still `18b4f25f`.
+> Production moved to `90fbea9c` on 2026-09-16.
 >
-> **NEXT: owner walk, then owner decisions, then an owner-triggered deploy.** There is no
+> **NEXT: owner walk, then owner decisions on what remains.** No pending deploy; there is no
 > further build work queued; phases 0-6 are done. `PHASE3_BUILD_PLAN.md` and
 > `PHASE456_SCOPE.md` are build RECORDS of what shipped, not forward plans, read them for
 > history, not for a next step.
@@ -226,10 +226,10 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 
 ## Net-new program heartbeat
 - Wave 1 (proving wave): 9 pages WRITTEN + VERIFIED 2026-06-03, awaiting user deploy approval. Build GREEN (208/208 static pages, the 9 new ones generated), repo-wide link floor 0 HARD 404, six-check floor passed (0 new em-dashes). Buckets: A practice-sale/exit (3), B incorporation post-FA-2026 (3), C extraction mechanics (3). HP extended at the gate (§4.A disposal-timing, §5.A s455, §5 employer-cost, §2.B carry-forward, §2.C principal hedge). Not yet committed or deployed.
-- Pages live (net-new): 0 (9 pending deploy).
+- Pages live (net-new): 0 (9 pending deploy) [deployed 2026-06-04, see below; also carried by the 2026-09-16 estate release, 90fbea9c].
 - Pipeline PROVEN end-to-end for dentists: GSC fix → discovery (440 pool) → picks + cannib GREEN → 3-bucket briefs → conductor HP-lock gate → 9 pages → six-check + link floor + green build. Ready to scale to full ~30-page waves after deploy.
 - Wave 2 (15 pages, CLUSTER-BY-CLUSTER): VAT §6 (5), capital allowances §7 (5), NHS pension §2 (5). Written + verified (link floor 0 HARD 404, build green), parked uncommitted. Each cluster gated one HP area; gates extended/corrected house_positions: §6.A-C + Item 2A, §7 WDA 18→14% correction + §7.A-E, §2.C provider refinement + §2.D Scheme Pays + §2.E retirement. house_positions surfaced + fixed its own stale 18% WDA at the §7 gate.
-- TOTAL net-new written (uncommitted, pending deploy): Wave 1 (9) + Wave 2 (15) = 24 dentist pages. Plus a parallel rewrite batch de-staling existing pages (FA-2026 rate-currency + legacy em-dashes, 181→139). Single committer (manager) at deploy.
+- TOTAL net-new written (uncommitted, pending deploy) [deployed 2026-06-04, see below]: Wave 1 (9) + Wave 2 (15) = 24 dentist pages. Plus a parallel rewrite batch de-staling existing pages (FA-2026 rate-currency + legacy em-dashes, 181→139). Single committer (manager) at deploy.
 - DEPLOYED 2026-06-04: committed (cf665616, 191 dentists files surgically staged — Dentists/ + docs/dentists + sites/dentists.* + briefs/dentists, NO other-site files) + vercel prod deploy via deploy-and-index.ps1 -Site dentists. LIVE at www.dentalfinancepartners.co.uk (build web-qrpjh13qx, gate passed); 54 new-page URLs submitted to IndexNow (HTTP 202). The rewrite agent's de-staled existing pages shipped in the same commit. ISR size fine at 204 pages (well under Property's 686). Future waves: deploy as-you-go or batch, user's call.
 - SCALING (user directive): drive net-new toward WAVE 15 (multi-session). Model: one CONDUCTOR SUB-AGENT per wave that COMPOSES its picks from the prior wave's farm + cannib-checks GREEN, then runs cluster-by-cluster (self-gating + source-verifying against the mature house_positions). NOTE: spawned sub-agents have NO Agent tool (cannot nest) — the conductor does brief+page writing itself. Manager reviews each report compactly + relaunches the next wave.
 - WAVE 3 COMPLETE (15 pages, verified): clusters locum/foundation (§1/§8), NHS contract/UDA (§3), practice finance (§5). 39 net-new total (W1 9 + W2 15 + W3 15), all uncommitted. Gate-locked §1.B (DFT £42,408 from 1 Apr 2025), §11 (SRT FA2013 Sch45), §3.A (UDA 96% clawback + 4% carry-forward), §5.B (finance-cost deductibility + CIR £2m). RESOLVED 2 hedges: §3 96% clawback, §2.C NPE=43.9% of TCV (NHSBSA KA-02063). >> MANAGER RE-VERIFY AT DEPLOY REVIEW: the 43.9% NPE figure (conductor resolved a deliberate hedge) + spot-check Wave-3 gate locks.
@@ -244,7 +244,7 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 - SERP META BATCH 1 (2026-06-12): 35 pages re-titled/re-described from fresh 90d GSC + Bing query data, deployed + IndexNow'd; 90-day regression watch in monitored_pages (to 2026-09-10); engine + methodology in docs/_engines/SERP_META_PROGRAM.md; content-gap follow-ups in docs/dentists/opportunity_register_meta_2026-06-12.md.
 - SERP META BATCH 2 (2026-07-08): 10 pages, Opus copy + Sonnet adversarial QA, DEPLOYED + IndexNow'd; monitored to 2026-10-06. how-to-value-a-uk-dental-practice-2026 re-angled to worth-intent to avoid title/query collision with dental-practice-valuation-methods-uk (the stronger page for 'dental practice valuation uk'). Estate readouts: docs/_engines/meta_batch1_verdicts_2026-07.md + OPPORTUNITY_READOUT_2026-07.md. Batch-1 26d pre-read: imp 186->658, clicks 2->4 (uda-value page = cleanest CTR win). Dominant untouched fact: homepage holds 4,825 imp / 1 click and head terms (accountants for dentists 1,081 imp) rank pos 44-70 = AUTHORITY/core-page problem, not meta.
 
-## Wave 5 (gap-discovery batch) — WRITTEN + QA CLEAN 2026-07-09, AWAITING DEPLOY WORD
+## Wave 5 (gap-discovery batch) — WRITTEN + QA CLEAN 2026-07-09 [deployed 2026-09-16, 90fbea9c]
 
 - Source: gap discovery 2026-07 curated batch (6 pending topics; A5 tax-planning hub STRUCK at page-level collision verify as duplicate of the two existing hub pages, rejected in blog_topics).
 - 5 pages written (single lane, batchSize 1, one Sonnet writer per pick in parallel worktrees): dental-practice-succession-planning-family-transfer, wealth-management-for-dentists-uk, dental-hygienist-dcp-tax-employment-status, buying-car-through-limited-company-dentist, vat-loan-dental-practices-uk.
@@ -253,7 +253,7 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 - Tone/GEO review vs 3 live baselines: 3 PASS as-is, A2 opener + A6 audience line polished. No cross-page templating drift.
 - Back-patches: 3 stale-45p AMAP pages corrected (55p from 6 Apr 2026); 13 back-link insertions across 12 existing pages; F-147 GBP85k flag was a false positive.
 - Link floor 0 HARD 404 / 0 SOFT; ONE green build x2 (post-merge, post-QA-fix). monitored_pages registered (net_new, monitor_until 2026-10-07). blog_topics rows flipped to written/used.
-- >> NEXT: deploy on explicit owner word: ./scripts/deploy-and-index.ps1 -Site dentists (purge stale wt dirs not needed - root .vercelignore handles), then IndexNow the 5 URLs.
+- >> DEPLOYED 2026-09-16 (90fbea9c). NEXT: IndexNow the 5 URLs.
 
 ## Blog audit + rewrite program (2026-06-12)
 
@@ -266,7 +266,7 @@ Dentists is indexed and earning impressions for its head family ("accountants fo
 
 ## Claims audit remediation, SERIOUS TIER (2026-09-12)
 
-Owner approved the serious tier on 2026-09-12. Fixed local-first, NOT deployed, NOT committed (manager does all git). Verified from `Dentists/web`: `npx tsc --noEmit` clean, `npx vitest run` 495/495 pass, 0 em-dashes introduced. ~95 files changed, all under `Dentists/`.
+Owner approved the serious tier on 2026-09-12. Fixed local-first, DEPLOYED 2026-09-16 (90fbea9c). Verified from `Dentists/web`: `npx tsc --noEmit` clean, `npx vitest run` 495/495 pass, 0 em-dashes introduced. ~95 files changed, all under `Dentists/`.
 
 **Positioning ruling applied throughout.** Replacement language was taken from the site's own live pages, not invented: terms page s.2 ("does not constitute accounting, tax, financial, or legal advice... No accountant-client relationship is created"), `privacy-policy:113` ("regulated firms in our specialist partner network"), `contact:80` ("your enquiry goes to our specialist partner network rather than to a single in-house team") and `niche.config.json` `partner.name`. The site is a content and lead-gen site that introduces dentists to regulated firms; it is not a practice.
 

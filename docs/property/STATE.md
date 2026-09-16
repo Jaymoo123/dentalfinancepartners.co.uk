@@ -11,6 +11,8 @@
 
 Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel project `prj_Di0U5vYZVPlkm7xcA3p9il9gyDzU` org `team_XF9WAygZX7SGk9Fo4tOAnihH`.
 
+> **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: design port phases including the 0.22a/b/c review passes, claims fixes, header CTA fix, favicons).
+
 > **⚠ STATUS (handoff, 2026-06-02) — TRACK-2 REWRITE PROGRAM COMPLETE. 0 genuine residual (verified corpus-wide by git history over all 686 blog pages). DEPLOYED to production 2026-06-02 — live at www.propertytaxpartners.co.uk (build `property-tax-partners-6u4q7mt7z`); verified sitemap + homepage + rewrites all HTTP 200, and the un-redirected keeper pages now resolve 200.** For a new manager: (a) `reviewedAt`/`dateModified` are UNRELIABLE rewrite markers (added mid-programme) — audit completeness by git history, not frontmatter; (b) the only remaining work is OPTIONAL/non-blocking (deferred SDLT 15→17% sweep §3, held `vat-calculation-calculator`, minor-cleanup §3, and one spotted stale page `2027-property-income-tax-rates-landlords-uk` whose frontmatter still wrongly carves Wales out of the 2027 rates — Wales is IN 22/42/47); (c) redirect-hygiene was fixed this session (§2). The two prior-session items below are LONG SINCE DONE (retained as audit history):
 > 1. **Incorporation-B (8) — DONE (committed `6a86dd97`, 2026-06-02; all 8 re-QA'd 8/8 all_clear, coverage 8/8, predeploy gate PASS, build exit 0, NOT deployed).** Historical resume detail (now complete) retained for audit: (cached in `optimisation_engine/.cache/qa_runner/incorpB/`). Only **2 need re-QA**, then finalise+commit all 8: (a) `property-company-accounting-requirements-hmrc-expectations` — CT-penalty FAQ already FIXED locally (£100/£200 → the doubled £200/£400/£1,000 regime); (b) `property-company-employer-pension-contributions-directors` — only a transient "QA returned nothing" (rate limit), no known content issue. **Resume:** `track2_qa_autofix_runner {batch:'incorpB', slugs:['property-company-accounting-requirements-hmrc-expectations','property-company-employer-pension-contributions-directors'], maxRounds:2}` → merge `incorpB` caches → record/coverage/gate → build → commit the 8 surgically. (6 already all_clear: `corporation-tax-vs-income-tax-landlords-2027` [47→48 fixed], `when-does-property-holding-company-structure-make-sense-uk-landlords` [leaked tags stripped], `incorporation-case-study-10-property-portfolio-200k-mortgage`, `transfer-properties-to-company-phased-guide`, `cgt-property-transfer-limited-company-calculate`, `incorporate-rental-property-without-cgt`.)
 > 2. **Section 24 B2 (3) — DONE (committed `8cdce948`); Section 24 B3 (3) — DONE (committed `34c4fd2b`). Section 24 seconds (B1+B2+B3 = 10) now fully shipped. Incorp-C (3) DONE (`6c44a4cd`). FinanceMortgage pair (2) DONE (`0217b42c` + `33e81ac7`). VATcalc anchor vat-calculator (1) DONE (`b13472b4`, repositioned to commercial-property VAT). VATcalc COMPLETE (3 lanes: vat-calculator `b13472b4` = commercial specialist, vat-how-to-calculate `68b78a5c` = formulas/method, vat-tax-calculator `29bd455b` = net-liability + Flat Rate Scheme; vat-calculation-calculator stays HELD). Named-scope list (B2/B3/Incorp-C/FinanceMortgage/VATcalc) COMPLETE = 22 pages committed this session. User OK'd continuing. non-AIA reversals (4) DONE (`2de9eae9`, incl. 2 manager statute/arithmetic adjudications). AIA-knot briefs generated + corrected (corrections files in `briefs/property/track2/aia/` fix s.187A-not-187B for pooling, s.201-not-198 for the 2yr election, 40%-via-s.52-table, 6%-via-s.104A/D, plus tight cannibalisation steers vs the 11+ live AIA pages: link UP to the pillar, hold narrowest residual intent). AIA knot (5) DONE (`bcafca4d`, 5/5 all_clear via the brief engine + manager corrections files). **This run's SCOPE complete: 31 pages committed (none deployed).** A git-history residual audit (2026-06-02) found the BROADER program ~95% done (207/234 universe rewritten, 17 collapsed/deleted) with **exactly 10 genuine residual pages** still only stale-swept (never ranking-grade rewritten), a cannibalisation-prone S24/mortgage-interest/incorporation cluster: S24 (5) `section-24-2027-tax-year-planning-landlords` + `-uk-landlords` (near-dupe pair), `section-24-higher-rate-taxpayers-changes-2027`, `section-24-mortgage-interest-restriction-uk-landlords`, `section-24-tax-credit-20-percent-basic-rate-relief`; mortgage-interest (2) `mortgage-interest-deductible-landlords-uk-2026`, `tax-relief-mortgage-interest-rented-property-guide`; incorporation (3) `incorporation-holdover-relief-property`, `incorporation-timing-when-to-incorporate-property-portfolio`, `2027-tax-rates-incorporation-decision-property-landlords`. (The CityService location cluster + most reliefs are already DONE per the audit; reviewedAt/dateModified are unreliable markers, use git history.) **UPDATE — the final 10 are now DONE (committed `90e33892`: s24res1 7 + incorpres1 3, all via engine briefs + manager corrections) → TRACK-2 REWRITE PROGRAM COMPLETE, 0 genuine residual. 41 Track-2 pages committed this session (12 commits, none deployed).** Held: `vat-calculation-calculator`. Skipped: 2 deleted CapAll-special pages.
@@ -353,7 +355,7 @@ produced three property-only isolated experiments, built through the §9 machine
   blog_optimizations (baselines in the dossier), then read Bing at 14/28d, Google 28/90d.
   Controls are never edited.
 
-**NEXT SESSION START HERE: [`HANDOFF_2026-08-21.md`](HANDOFF_2026-08-21.md)** (agents
+**Historical (archived 2026-09-16): [`HANDOFF_2026-08-21.md`](_archive/HANDOFF_2026-08-21.md)** (agents
 track + Wave 12 pickup, owner-requested; supersedes HANDOFF_2026-08-20 for sequencing).
 
 ## 0.23 Consent-wording conversion incident — DIAGNOSED + REVERTED ESTATE-WIDE 2026-08-24
@@ -499,14 +501,12 @@ across 19 sites; `predeploy_gate.py --site property` PASS; sweep 98/98 URLs clea
 links, 567 `data-cta`, 0 rendered dashes; `browser_check` exit 0, 140 page-loads, 0 new
 problems. No baseline artefact was re-saved.
 
-**NOT DEPLOYED.** Phase 9 is deploy and it is owner-triggered in the turn it happens. Its
-entry conditions and running order are in `tmp/design_migration/PLAN.md` Phase 9. Two things
-carry into it that are easy to lose: **DECISION A1** requires the whole Property
-`monitored_pages` set to be re-baselined post-deploy (70 cluster rows are armed to 2026-11-19
-and a re-skin triggers no detector, so attribution for that window is knowingly spent), and
-Phase 4 item 8 requires a **Vercel referrer-log check for live calculator embedders** before
-anything that changes embed output ships, because breaking a widget on someone else's site is
-not reversible from our end.
+**DEPLOYED 2026-09-16 (90fbea9c).** Two things carry now that deploy has happened:
+**DECISION A1** requires the whole Property `monitored_pages` set to be re-baselined
+post-deploy (70 cluster rows are armed to 2026-11-19 and a re-skin triggers no detector, so
+attribution for that window is knowingly spent), and Phase 4 item 8 requires a **Vercel
+referrer-log check for live calculator embedders** before anything that changes embed output
+ships next, because breaking a widget on someone else's site is not reversible from our end.
 
 **Open owner decisions at Phase 8 close:** M (the "100+ Landlords served" label, which the
 DECISION L investigation showed cannot be evidenced as a client claim); I (a fee figure on
@@ -518,7 +518,7 @@ placeholder; whether the seven-field `LeadForm` gets an experiment; and whether 
 every Monday since 2026-07-20). Our records saying it was "disabled 2026-07-13" were wrong: it
 FAILED on 07-13, was fixed on 07-19, and has run ever since. It was reported, not stopped.
 
-### 0.22a / 0.22b / 0.22c Owner review passes — 2026-08-23, UNCOMMITTED, NOT DEPLOYED
+### 0.22a / 0.22b / 0.22c Owner review passes — 2026-08-23 [deployed 2026-09-16, 90fbea9c]
 
 **START HERE IF YOU ARE PICKING THIS UP.** Three live review sessions on top of
 `design/property-redesign-port` after Phase 8 closed, all on the same day. The owner walked
@@ -543,7 +543,7 @@ been re-run since Phase 8 and must all be run before any deploy.
 the rendered page off the local dev server and asserting the new strings are present in the
 HTML, not by assuming the edit landed.
 
-### 0.22c Third owner review session — 2026-08-23 late, UNCOMMITTED
+### 0.22c Third owner review session — 2026-08-23 late, UNCOMMITTED [deployed 2026-09-16, 90fbea9c]
 
 Same branch, same dev-server walk. Eight surfaces plus the rulebook itself. **The headline
 outcome is `DESIGN_SYSTEM.md` §0, the page contract**, written at the owner's instruction so
@@ -680,7 +680,7 @@ dep) and, until this session touched it, `book/page.tsx`.
 
 ---
 
-### 0.22b Second owner review session — 2026-08-23 evening, UNCOMMITTED
+### 0.22b Second owner review session — 2026-08-23 evening, UNCOMMITTED [deployed 2026-09-16, 90fbea9c]
 
 Same branch, same dev-server walk, six more surfaces. The rules this session produced are all
 written into `DESIGN_SYSTEM.md` (new sections 4a and 4b, plus additions to 2, 6 and 9). Read
@@ -1087,7 +1087,7 @@ Phase A of HANDOFF_2026-08-20 run to the QA-complete stage in one session. State
 **Remaining WRAP sequence (in order):** finish fix rounds → verify reads on restructured pages → re-run voice scan + em-dash + meta lengths on all touched → equity-gate n/a (wave not cluster) → tsc, vitest incl. new goldens, prod build from Property/web, dependency closure → record qa_verdict batch `wave11` LAST (hash-keyed) → predeploy gate → commit + push. THEN out-of-band completion + link sweep. Deploy/monitored_pages/IndexNow stay OWNER-GATED; deploy approval from §2 of the handoff still stands but this session was told not to use it.
 
 Owner approved the five-phase plan the same day the CGT batch shipped. **START HERE:
-[`HANDOFF_2026-08-20.md`](HANDOFF_2026-08-20.md)** — Wave 11 WRAP + deploy (authorized),
+[`HANDOFF_2026-08-20.md`](_archive/HANDOFF_2026-08-20.md)** — Wave 11 WRAP + deploy (authorized),
 tools family (GO now, ungated from the 09-01 read by owner ruling), rental-income cluster,
 incorporation cluster (conditional on the cannibalisation freeze check), Wave 12
 (brand-fit GATE RESOLVED: on Property with the CGT hook). Delayed by owner: the
@@ -1108,7 +1108,7 @@ Gates: equity gate (now `--cluster cgt`, floor-6 coverage sweep over all 11 pack
 lint, link audit 0/0, word gate, voice CLEAN/MINOR x10, tsc, vitest 1308, prod build,
 dependency closure, predeploy PASS, qa_verdict `cgt1` all_clear (10 slugs).
 house_positions §39 gained the s.191/s.274 sale-below-probate lock.
-**NEXT: owner-triggered deploy via clean worktree, then register the 11 in
+**DEPLOYED 2026-09-16 (90fbea9c). NEXT: register the 11 in
 monitored_pages/blog_optimizations (2 non-blog URLs need `--page-urls`), IndexNow,
 Bing read 14/28d, Google 28/90d.** Open protected-copy calls (deliberately not taken):
 unify the PRR restriction methodology across the letting-relief page's two examples;

@@ -6,10 +6,13 @@
 
 ## PICKUP — design port + design uplift, 2026-09-14
 
+**DEPLOYED to production 2026-09-16 from `90fbea9c`.** (the full design port, the design
+uplift, and everything else committed by that date.)
+
 **State in one line: the port is COMPLETE and a DESIGN UPLIFT has been run on top of it —
 phase 0, phases 1-6, two independent adversarial reviews, the gap-fix wave that answered
-them, and the uplift (`7dfe04b3`) are all committed, and nothing is pushed and nothing is
-deployed. Production still serves the pre-port SHA.**
+them, and the uplift (`7dfe04b3`) are all committed, and pushed and DEPLOYED 2026-09-16
+(`90fbea9c`).**
 
 **CORRECTED 2026-09-14: the tags DID move, and this block said they had not.** Re-derived
 with `for t in $(git tag -l 'port-crypto*'); do echo "$t -> $(git rev-list -n1
@@ -21,19 +24,18 @@ crypto's work and it carries the uplift.**
 
 **crypto is no longer `HEAD`.** Three sibling uplifts landed on top of it the same day:
 charities `ba7b184a`, contractors-ir35 `569d3304`, construction-cis `48312e2c`. crypto's
-own source is unchanged by all three. Nothing is pushed and nothing is deployed; `main` is
-**131 commits** ahead of `origin/main` (`7b5c0ce8`), re-derived after `48312e2c`.
+own source is unchanged by all three. **DEPLOYED 2026-09-16 (`90fbea9c`)**; `main` is no
+longer ahead of `origin/main`.
 
 ### Push / deploy status, stated plainly
 
 - `origin/main` is `7b5c0ce8` (`git rev-parse --short origin/main`, re-derived
-  2026-09-14 after the design uplift landed — unchanged). **Local `main` is ahead by 127
-  commits** (`git rev-list --count origin/main..HEAD`), of which seven are crypto's. An
+  2026-09-14 after the design uplift landed — unchanged as of that date). **PUSHED and
+  DEPLOYED 2026-09-16 from `90fbea9c`**; `main` is no longer ahead of `origin/main`. An
   earlier revision of this block said "ahead by the three crypto port commits plus
   `e25412d7`", which counted only this site's work and read as the whole delta. It is not:
-  the charities, estate and generalist ports are unpushed on the same branch.
-- **Nothing is pushed. Nothing is deployed. Production serves the pre-port SHA.**
-  Push and deploy are owner-triggered; do not run them without being asked in that turn.
+  the charities, estate and generalist ports were on the same branch, and shipped together.
+- **Pushed. Deployed 2026-09-16 (`90fbea9c`). Production serves the ported design.**
 - **The tree carries four uncommitted DOC edits and no uncommitted code**: this file,
   `docs/_engines/PORT_FIELD_NOTES.md`, `docs/_engines/DESIGN_PORT_PLAYBOOK.md` and
   `docs/_engines/HANDOFF_NEXT_PORT.md`, all written in the pass that recorded the uplift.
@@ -323,7 +325,7 @@ Design review (R1): **no blocking, five majors, all fixed.**
 | R1 D3 | `.eyebrow-rule` emitted **24 times across the 51 sitemap routes** (26 counting `/book` and `/thank-you`) with no rule in any served stylesheet | Fixed with a **local rule, not the kit import**: importing `globals-standard.css` drags in Property's emerald and cream and every other collapsed `[data-draw="off"]` state, which on a sibling site left 64 pages with invisible marks and needed a `<noscript>` override. Six lines beat 250. `(scripting: enabled)` replaces the `<noscript>` |
 | R1 D4 | **Three different off-white grounds** split by route family against Property's one | Converged on `slate-50`, every affected colour re-measured |
 | R1 D5 | A navy hero running into a near-identical `neutral-800` band on **12 pages** | Fixed |
-| R1 D6 | **A second cascade race**: `min-h-10` and `min-w-0` both lose to the recipe they are composed over, so the header CTA rendered 160x48 instead of shrink-to-fit | Fixed site-locally beside its `display` sibling; **the kit-level fix remains an open owner decision** |
+| R1 D6 | **A second cascade race**: `min-h-10` and `min-w-0` both lose to the recipe they are composed over, so the header CTA rendered 160x48 instead of shrink-to-fit | Fixed site-locally beside its `display` sibling; **kit-level fix `017cea0e` landed in `packages/web-shared` and is live [deployed 2026-09-16, 90fbea9c]; no site-local override remains** |
 
 **Correction to an earlier revision of this block:** it recorded the 5 October 2026
 inverted tense as unevidenced. **It is real.** It is evidenced by the gap-fix package

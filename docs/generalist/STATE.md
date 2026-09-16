@@ -1,6 +1,10 @@
 # Generalist (Holloway Davies) — site state
 
-> **2026-09-12 - CLAIMS AUDIT, SERIOUS TIER FIXED. NOT DEPLOYED.**
+> **DEPLOYED to production 2026-09-16 from `90fbea9c`.** (claims audit, high-street
+> mechanic wave 5, the six-phase design port, C1 metas + C2 expand, and everything else
+> committed by that date.)
+
+> **2026-09-12 - CLAIMS AUDIT, SERIOUS TIER FIXED. DEPLOYED 2026-09-16 (`90fbea9c`).**
 > Removed every claim that the site holds professional qualifications it does not
 > hold, and rewrote all 193 fabricated location "case studies" as illustrative
 > worked examples. `npx tsc --noEmit` clean, `npx vitest run` 309/309 green.
@@ -130,7 +134,7 @@
 > terms. (3) The cited line numbers `data.ts:6704` and `:395` were correct when the
 > audit ran but have since moved.
 
-> **2026-09-11 - HIGH-STREET MECHANIC WAVE 5 BUILT, NOT DEPLOYED.**
+> **2026-09-11 - HIGH-STREET MECHANIC WAVE 5 BUILT, DEPLOYED 2026-09-16 (`90fbea9c`).**
 > 22 assets, 21,680 searches/month: 18 new pages and 4 extensions of live pages. Biggest:
 > `insurance-premium-tax` 5,390/mo, `vat-exemption` 3,390, `nanny-tax` 3,070,
 > `cash-basis` 2,680, `vat-on-second-hand-cars` 1,550. Five picks dropped (two as conflicts
@@ -148,15 +152,11 @@
 > queued LEL back-patch is CANCELLED because £6,500 and £6,708 are both right for their own
 > year. VAT Notices 718 and 718/1 are withdrawn and have been re-pointed.
 >
-> **DEPLOY ORDERING, OWNER DECISION OPEN.** Production is still `18b4f25f`. `main` now
-> carries BOTH the completed six-phase design port AND these 22 content assets. Deploying
-> once ships a redesign and 22 pages together and nothing afterwards is attributable.
-> Recommended: walk the redesign, deploy the redesign alone, let it settle, then the content.
+> **DEPLOYED 2026-09-16 (`90fbea9c`), redesign and content together.** No pending deploy.
 > Programme doc: `docs/_engines/HIGHSTREET_MECHANIC_PROGRAM.md` section 13.
 
-> **2026-09-10 — PORT COMPLETE, ALL SIX PHASES BUILT AND REVIEWED. NOTHING DEPLOYED.**
-> Production is still `18b4f25f` (old design). Next steps, in order: owner dev-server
-> walk, owner decisions below, owner-triggered deploy.
+> **2026-09-10 — PORT COMPLETE, ALL SIX PHASES BUILT AND REVIEWED. DEPLOYED 2026-09-16
+> (`90fbea9c`).** No pending deploy.
 >
 > **Phases.** 0-4 built in session 2. This session: phase 4 fidelity review (FAIL, fixed,
 > re-reviewed PASS-WITH-GAPS), phase 5 (homepage F.2, pillars, 193 locations; FAIL, fixed,
@@ -268,8 +268,8 @@
 
 
 > **2026-09-09 SESSION 2 CLOSE — PORT PHASES 0-4 BUILT; NEXT = re-run the Phase 4
-> fidelity review, then Phases 5-6.** All local commits, NOTHING DEPLOYED; production
-> untouched at `18b4f25f`. Owner approved the full recommendation bundle same day
+> fidelity review, then Phases 5-6.** All local commits [deployed 2026-09-16, 90fbea9c];
+> Owner approved the full recommendation bundle same day
 > ("go with all recommendations"; recorded in DESIGN_DELTA §§3-4b).
 > Tags: `port-generalist-phase1` `phase2` `phase3` (each built -> adversarially
 > fidelity-reviewed -> gaps fixed -> re-verified). Phase 4 (calculators) is COMMITTED
@@ -324,7 +324,7 @@
 
 **Site:** www.hollowaydavies.co.uk · Vercel project `holloway-davies` · site_key `generalist` · brand: distinct generalist design system (off-white + ink + orange, Geist Sans), james-holloway byline (credential designation removed 2026-06-29).
 
-> **2026-07-19 — C1 metas + C2 expand committed, NOT deployed:** 5-page query-ledger meta batch + construction-accounting-software expand (43323c0a; fabricated software pricing caught + fixed in QA). Awaiting deploy word. Log: `docs/_engines/logs/SESSION_2026-07-19_GROWTH_DAY1.md`.
+> **2026-07-19 — C1 metas + C2 expand committed, DEPLOYED 2026-09-16 (`90fbea9c`):** 5-page query-ledger meta batch + construction-accounting-software expand (43323c0a; fabricated software pricing caught + fixed in QA). Log: `docs/_engines/logs/SESSION_2026-07-19_GROWTH_DAY1.md`.
 
 > **LATEST (2026-06-30, local / UNDEPLOYED):** active **Property-standard PARITY programme** — full handover in **`docs/generalist/PARITY_PROGRAMME_HANDOVER.md`**. Done this run: Waves 0-2 + GEO schema/code; site-wide credential strip; **full factual-accuracy remediation COMPLETE** (356 audited, 281 corrected + 3 fabrications rewritten on-URL); **Wave 3 + 3b GEO keyTakeaways backfill COMPLETE** — answer-boxes now on ALL 356 audited posts (Wave 3 = 74 clean, committed `1e60bf37`; Wave 3b = 282 now-corrected, run `wf_377cb19e-2ad`, incl. regenerating 5 stale pilot boxes); build green, `npm test` 33/33, render/schema verified. Records: `wave3_geo_2026-06-30.md`. **Wave 3b's QA flagged ~60 residual BODY issues** (stale-as-current figures the 1st remediation missed; answer-boxes clean) → `wave3b_body_issues_2026-06-30.md` = **remediation round 2 (manager-direct, owner steer pending).** Then Wave 4 GEN-R2 rewrites (needs fresh GSC pull) or deploy (gated). **Spend posture relaxed 2026-06-30 (owner upgraded); still no waste.**
 
@@ -576,6 +576,6 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
   removed from `sectorEmphasis` (Sunderland, Halifax, Caerphilly, Wolverhampton) and
   from one Dover FAQ. Result: 212 headline figures, 202 distinct, most-repeated single
   figure now appears 3 times (\u00a318,400, reached three different ways from three
-  different inputs, each derivable). tsc clean, vitest 309/309. NOT DEPLOYED.
+  different inputs, each derivable). tsc clean, vitest 309/309. [deployed 2026-09-16, 90fbea9c]
   Standing rule for this file: a figure is allowed only if the paragraph states the
   facts that produce it, and the relief is chosen by the scenario, never for variety.

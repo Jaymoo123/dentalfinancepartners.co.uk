@@ -1,6 +1,10 @@
 # hospitality (Hospitality Tax) site state
 
-> **2026-09-11 - HIGH-STREET MECHANIC WAVE 1 BUILT, NOT DEPLOYED** (commit `4d84b1ee`).
+> **DEPLOYED to production 2026-09-16 from `90fbea9c`.** (high-street mechanic wave 1
+> below, plus everything else committed by that date.)
+
+> **2026-09-11 - HIGH-STREET MECHANIC WAVE 1 BUILT, DEPLOYED 2026-09-16 (`90fbea9c`)**
+> (commit `4d84b1ee`).
 > 6 assets, 11,720 searches/month: 4 new pages (`alcohol-duty` 4,160, `tronc-scheme` 240,
 > `is-there-vat-on-dog-food` 220, `retail-hospitality-and-leisure-relief-scheme` 70) and
 > 2 extensions of live pages (`vat-on-takeaway-food` 2,210 to 4,320 body words, now owning

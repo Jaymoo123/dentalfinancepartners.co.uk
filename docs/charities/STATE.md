@@ -7,8 +7,10 @@ brand_locked: true
 
 ## PICKUP: where the design port actually is
 
+**DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**
+
 **Phases 0 to 6 complete and tagged, PLUS a design uplift on top (`ba7b184a`, UNTAGGED).
-Nothing pushed, nothing deployed.** The tags cover the port only; the uplift is the section
+DEPLOYED 2026-09-16 (`90fbea9c`).** The tags cover the port only; the uplift is the section
 immediately below this block.
 
 | Fact | Value |
@@ -16,19 +18,19 @@ immediately below this block.
 | Tags | `port-charities-phase0` … `port-charities-phase6` (all seven exist, `git tag -l 'port-charities*'`) |
 | Phase 0 commit | `78dcd3a5` |
 | Phases 1 to 6 commit | `ce37721f`. **One commit, six tags.** `git rev-parse port-charities-phase1..phase6` all return `ce37721f` |
-| Pushed | **No** |
-| Deployed | **No** |
-| Production still serves | `958460de` (recorded in `sweep_baseline.json.sha`, derived from Vercel `GET /v9/projects` -> `targets.production.meta.gitCommitSha`) |
+| Pushed | **Yes, 2026-09-16** |
+| Deployed | **Yes, 2026-09-16 (`90fbea9c`)** |
+| Production served (pre-deploy) | `958460de` (recorded in `sweep_baseline.json.sha`, derived from Vercel `GET /v9/projects` -> `targets.production.meta.gitCommitSha`) |
 
-Next action is the owner walk, then the nine open decisions below, then deploy. Deploy is
-user-triggered, always.
+Next action is the nine open decisions below. Deploy is done; nothing else is deploy-gated.
 
 ## 2026-09-14: DESIGN UPLIFT (`ba7b184a`), a distinct phase AFTER the port
 
 Second of four sites through the kit-adoption uplift the owner approved after seeing
-crypto. **Committed, UNTAGGED, not pushed, not deployed.** Every `port-charities-phase*`
-tag predates this commit, so a checkout by tag is missing the whole uplift; the end of the
-work is `ba7b184a` (`git log --oneline -3 -- charities/`).
+crypto. **Committed, UNTAGGED, not pushed, not deployed** at the time of writing. Every
+`port-charities-phase*` tag predates this commit, so a checkout by tag is missing the whole
+uplift; the end of the work is `ba7b184a` (`git log --oneline -3 -- charities/`).
+[deployed 2026-09-16, 90fbea9c]
 
 **The diagnosis was wrong about this site, and measuring it first is what saved the work.**
 charities was already far more kit-adopted than crypto ever was: 24 eyebrows against zero
@@ -127,7 +129,7 @@ These are the port's most valuable output. All were live on `958460de`.
 ## 2026-09-14: Property design port, PHASES 1 to 6 (one wave, seven packages)
 
 Commit `ce37721f`, tags `port-charities-phase1` through `port-charities-phase6`.
-**Nothing pushed, nothing deployed.**
+**Nothing pushed, nothing deployed** at the time of writing. [deployed 2026-09-16, 90fbea9c]
 
 Six phases built in ONE wave by seven parallel packages on disjoint file sets, then one
 build and every package's written verification list executed against it. The tags were cut
@@ -153,7 +155,8 @@ have, the package stopped and flagged it.
 
 ## 2026-09-13: Property design port, PHASE 0 (baselines + gated claims audit)
 
-Commit `78dcd3a5`, tag `port-charities-phase0`. **Nothing pushed, nothing deployed.**
+Commit `78dcd3a5`, tag `port-charities-phase0`. **Nothing pushed, nothing deployed** at the
+time of writing. [deployed 2026-09-16, 90fbea9c]
 
 Phase 0 on this programme is baseline capture plus a gated claims and ground-truth
 audit, with the serious tier fixed and committed before phase 1 is allowed to start.
@@ -253,8 +256,8 @@ The sweep counts **0 `data-cta` across all 66 sitemap URLs**, so there is no pre
 
 ## Live defects: what is fixed in the repo, and what is still live
 
-Everything in this section is **fixed in the repo and still live in production**, because
-nothing is pushed and nothing is deployed. Production serves `958460de`.
+Everything in this section is **fixed in the repo and live in production**, deployed
+2026-09-16 (`90fbea9c`). Production served `958460de` before that deploy.
 
 ### Fixed (was open at phase 0, closed by phases 1 to 6)
 
@@ -273,11 +276,11 @@ nothing is pushed and nothing is deployed. Production serves `958460de`.
   **8 uses of `var(--primary)`, 0 declarations**, confirmed against its served stylesheet.
   Its reading-progress bar fills with nothing. Fixed with **one declaration**,
   `Dentists/web/src/app/globals.css:72` (`--primary: var(--navy)`), mapped to its own navy.
-  **Not deployed.** Property imports neither kit component family, so it is untouched.
+  Deployed 2026-09-16 (`90fbea9c`). Property imports neither kit component family, so it is untouched.
 - **The dead-`prose` defect was estate-wide, not a charities problem.**
   `docs/_engines/ESTATE_PROSE_SWEEP_2026-09-13.md` records **161 live, user-visible blog
   and guide pages across 10 deployed sites**. Fixed for all ten in `51acda3b` with one
-  shared stylesheet. **None of those ten is deployed either.**
+  shared stylesheet. **All ten are now live, deployed 2026-09-16 (`90fbea9c`).**
 
 ### Still open on this site
 
