@@ -222,9 +222,22 @@ export function resolveMode(): HandoffMode {
   return "report";
 }
 
-/** Where redirected mail goes while testing. Also the only address allowed out. */
+/**
+ * Where redirected mail goes while testing. Also the only addresses allowed out.
+ * Comma-separated so a test can reach the triager and the owner together (the
+ * person clicking the dropdown needs to see what his click produced). First is
+ * To, the rest CC. Still a closed list: nothing outside it can be addressed.
+ */
+export function operatorEmails(): string[] {
+  return (process.env.LEAD_HANDOFF_OPERATOR_EMAIL || "")
+    .split(",")
+    .map((a) => a.trim())
+    .filter(Boolean);
+}
+
+/** First operator address, kept for the config probe. */
 export function operatorEmail(): string {
-  return (process.env.LEAD_HANDOFF_OPERATOR_EMAIL || "").trim();
+  return operatorEmails()[0] ?? "";
 }
 
 export function partnerEmail(): string {
@@ -345,22 +358,23 @@ export function resolveRecipients(
     };
   }
 
-  const op = operatorEmail();
-  if (!op) {
+  const ops = operatorEmails();
+  if (ops.length === 0) {
     throw new Error(
       "LEAD_HANDOFF_OPERATOR_EMAIL must be set before an unarmed send: it is the only " +
         "address allowed to receive mail while mode is not 'live'",
     );
   }
-  const redirected: Recipients = { to: op, cc: [], bcc: [] };
-  assertUnarmedSendIsSafe(redirected, op);
+  const redirected: Recipients = { to: ops[0], cc: ops.slice(1), bcc: [] };
+  assertUnarmedSendIsSafe(redirected, ops);
   return redirected;
 }
 
 /** Final assertion immediately before handing anything to the mail provider. */
-export function assertUnarmedSendIsSafe(r: Recipients, op: string): void {
+export function assertUnarmedSendIsSafe(r: Recipients, op: string | string[]): void {
+  const allowed = new Set((Array.isArray(op) ? op : [op]).map((a) => a.trim().toLowerCase()));
   const all = [r.to, ...r.cc, ...r.bcc].filter(Boolean).map((a) => a.trim().toLowerCase());
-  const bad = all.filter((a) => a !== op.trim().toLowerCase());
+  const bad = all.filter((a) => !allowed.has(a));
   if (bad.length) {
     throw new Error(
       `refusing to send while unarmed: ${bad.length} recipient(s) are not the operator address`,
@@ -803,7 +817,7 @@ export async function sendIntro(lead: IntroLead, mode: HandoffMode): Promise<Int
   }
 
   const recipients = resolveRecipients(mode, lead.email, partner, partnerBcc());
-  if (mode !== "live") assertUnarmedSendIsSafe(recipients, operatorEmail());
+  if (mode !== "live") assertUnarmedSendIsSafe(recipients, operatorEmails());
 
   // Best-effort: a failed read still sends the introduction, just without the
   // booking and replies. Losing the extras is better than losing the handoff.

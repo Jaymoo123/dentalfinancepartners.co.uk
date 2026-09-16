@@ -71,6 +71,20 @@ describe("recipient gate", () => {
     expect(r.bcc).toEqual([]);
   });
 
+  it("sends To the first operator and CC the rest, and nothing else, when two are listed", () => {
+    process.env.LEAD_HANDOFF_OPERATOR_EMAIL = "umair@example.com, boss@example.com";
+    const r = resolveRecipients("redirect", lead.email!, "omar@aswatax.example", "x@example.com");
+    expect(r.to).toBe("umair@example.com");
+    expect(r.cc).toEqual(["boss@example.com"]);
+    expect(r.bcc).toEqual([]);
+    expect(() =>
+      assertUnarmedSendIsSafe(
+        { to: "umair@example.com", cc: ["boss@example.com", "enquirer@example.com"], bcc: [] },
+        ["umair@example.com", "boss@example.com"],
+      ),
+    ).toThrow(/refusing to send while unarmed/);
+  });
+
   it("refuses to build an unarmed send with no operator address", () => {
     expect(() =>
       resolveRecipients("redirect", lead.email!, "omar@aswatax.example", ""),
