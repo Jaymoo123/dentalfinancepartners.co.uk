@@ -3,8 +3,8 @@
 ## STOP. Read this screen before anything else. (2026-09-13)
 
 **Eight sites are fully ported** (generalist, solicitors, dentists, medical,
-construction-cis, contractors-ir35, charities, crypto), tagged. NOTHING on any site is
-pushed or deployed. **Eight sites remain**: digital-agency, wills-probate,
+construction-cis, contractors-ir35, charities, crypto), tagged. **ALL EIGHT LIVE 2026-09-16**
+(`9e43db45`, plus Property with the header fix), header measured on every live domain. **Eight sites remain**: digital-agency, wills-probate,
 divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce. Derive that
 list yourself (`git tag -l 'port-*'` against the rollout doc); this line has gone stale
 twice, which is the same defect as a STATE.md contradicting its tags.
