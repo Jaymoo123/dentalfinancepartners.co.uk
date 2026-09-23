@@ -107,6 +107,15 @@ describe("buildSecurityHeaders — opts toggles", () => {
     expect(csp).toContain("https://analytics.google.com");
   });
 
+  // Regression: GA4 sends EU/UK hits to region1.google-analytics.com. Without the
+  // wildcard the CSP blocked every European visitor's /g/collect call, so GA4 recorded
+  // 9 UK sessions against ~5,800 real ones while non-EU traffic reported normally.
+  it("ga: true allows the GA4 regional endpoints used for EU/UK traffic", () => {
+    const csp = getCsp(buildSecurityHeaders({ ga: true }));
+    const connectSrc = csp.split(";").find((d) => d.trim().startsWith("connect-src")) ?? "";
+    expect(connectSrc).toContain("https://*.google-analytics.com");
+  });
+
   it("ga: false (default) does NOT emit GA sources", () => {
     const csp = getCsp(buildSecurityHeaders());
     expect(csp).not.toContain("googletagmanager");

@@ -50,7 +50,11 @@ function buildCsp(opts: SecurityHeaderOpts, isEmbed: boolean): string {
 
   const connectSrc = [
     "'self'",
-    ...(opts.ga ? ["https://www.google-analytics.com", "https://analytics.google.com"] : []),
+    // GA4 routes EU/UK hits to regional endpoints (region1.google-analytics.com and
+    // siblings), so the wildcard is required or every European visitor is blocked by CSP.
+    ...(opts.ga
+      ? ["https://*.google-analytics.com", "https://www.google-analytics.com", "https://analytics.google.com"]
+      : []),
     // Supabase connect-src is omitted from embed pages (embeds don't ingest analytics)
     ...(opts.supabase && !isEmbed ? ["https://*.supabase.co"] : []),
     ...(opts.extraConnectSrc ?? []),
