@@ -31,11 +31,42 @@ export interface SecurityHeaderOpts {
   extraConnectSrc?: string[];
   /** Additional script-src sources beyond the baseline. */
   extraScriptSrc?: string[];
+  /**
+   * Emit the Google AdSense sources. Opt-in per site: ad iframes are refused by
+   * the baseline frame-src 'none', so a site running AdSense must set this or
+   * every unit renders blank with a console CSP violation and no other symptom.
+   * Only the ad-serving sites set it; the rest keep frame-src 'none'.
+   */
+  ads?: boolean;
 }
 
 type HeaderEntry = { key: string; value: string };
 /** Shape expected by Next.js headers() config. */
 export type HeaderBlock = { source: string; headers: HeaderEntry[] };
+
+// AdSense pulls its loader, then ad creatives and Google's ad-traffic-quality
+// beacons, from a spread of hosts. Grouped here so the three directives below
+// stay in sync — a host missing from any one of them breaks ad rendering.
+const ADSENSE_SCRIPT_SRC = [
+  "https://pagead2.googlesyndication.com",
+  "https://tpc.googlesyndication.com",
+  "https://partner.googleadservices.com",
+  "https://www.googletagservices.com",
+  "https://adservice.google.com",
+  "https://*.adtrafficquality.google",
+];
+const ADSENSE_FRAME_SRC = [
+  "https://googleads.g.doubleclick.net",
+  "https://tpc.googlesyndication.com",
+  "https://www.google.com",
+  "https://*.safeframe.googlesyndication.com",
+  "https://*.adtrafficquality.google",
+];
+const ADSENSE_CONNECT_SRC = [
+  "https://pagead2.googlesyndication.com",
+  "https://googleads.g.doubleclick.net",
+  "https://*.adtrafficquality.google",
+];
 
 function buildCsp(opts: SecurityHeaderOpts, isEmbed: boolean): string {
   const isProd = process.env.NODE_ENV === "production";
@@ -45,6 +76,7 @@ function buildCsp(opts: SecurityHeaderOpts, isEmbed: boolean): string {
     "'unsafe-inline'",
     ...(!isProd ? ["'unsafe-eval'"] : []),
     ...(opts.ga ? ["https://www.googletagmanager.com", "https://www.google-analytics.com"] : []),
+    ...(opts.ads ? ADSENSE_SCRIPT_SRC : []),
     ...(opts.extraScriptSrc ?? []),
   ];
 
@@ -57,6 +89,7 @@ function buildCsp(opts: SecurityHeaderOpts, isEmbed: boolean): string {
       : []),
     // Supabase connect-src is omitted from embed pages (embeds don't ingest analytics)
     ...(opts.supabase && !isEmbed ? ["https://*.supabase.co"] : []),
+    ...(opts.ads ? ADSENSE_CONNECT_SRC : []),
     ...(opts.extraConnectSrc ?? []),
   ];
 
@@ -67,7 +100,7 @@ function buildCsp(opts: SecurityHeaderOpts, isEmbed: boolean): string {
     "img-src 'self' data: https: blob:",
     "font-src 'self' data: https://fonts.gstatic.com",
     `connect-src ${connectSrc.join(" ")}`,
-    "frame-src 'none'",
+    opts.ads ? `frame-src ${ADSENSE_FRAME_SRC.join(" ")}` : "frame-src 'none'",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",

@@ -99,7 +99,10 @@ export default function RootLayout({
             posture="opt-out"
             noTrackPrefixes={["/admin", "/embed"]}
           >
-            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <ConsentedScripts
+              gaMeasurementId={niche.seo.google_analytics_id}
+              adsenseClientId="ca-pub-3756285576371279"
+            />
             <IntentProvider>
               {/* Nav built server-side: the Calculators groups come from the
                   tool registry, which must never reach a client bundle. The

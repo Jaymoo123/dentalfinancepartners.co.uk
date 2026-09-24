@@ -175,3 +175,30 @@ describe("buildSecurityHeaders — embedPrefix (SEC-03)", () => {
     expect(blocks[0].source).toBe("/:path*");
   });
 });
+
+// ---------------------------------------------------------------------------
+// AdSense opt-in
+// ---------------------------------------------------------------------------
+
+describe("buildSecurityHeaders — ads", () => {
+  it("keeps frame-src 'none' by default", () => {
+    expect(getCsp(buildSecurityHeaders({ ga: true, supabase: true }))).toContain("frame-src 'none'");
+  });
+
+  it("widens frame-src, script-src and connect-src when ads is set", () => {
+    const csp = getCsp(buildSecurityHeaders({ ga: true, supabase: true, ads: true }));
+    expect(csp).not.toContain("frame-src 'none'");
+    // The loader host must be in script-src or the tag never runs.
+    expect(csp).toContain("script-src");
+    expect(csp).toMatch(/script-src [^;]*https:\/\/pagead2\.googlesyndication\.com/);
+    // Creatives are iframed from doubleclick; missing here means blank units.
+    expect(csp).toMatch(/frame-src [^;]*https:\/\/googleads\.g\.doubleclick\.net/);
+    // Ad-traffic-quality beacons XHR back; missing here means console errors.
+    expect(csp).toMatch(/connect-src [^;]*https:\/\/\*\.adtrafficquality\.google/);
+  });
+
+  it("does not disturb frame-ancestors on embed pages", () => {
+    const blocks = buildSecurityHeaders({ ads: true, embedPrefix: "embed" });
+    expect(getCsp(blocks, "/embed/:path*")).toContain("frame-ancestors *");
+  });
+});

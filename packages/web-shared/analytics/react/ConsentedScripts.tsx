@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Loads the third-party tags (GA4) by default, unless the visitor has explicitly
+ * Loads the third-party tags (GA4, AdSense) by default, unless the visitor has explicitly
  * opted out. The mount guard avoids a server/first-render mismatch and ensures an
  * opted-out visitor never loads them even briefly.
  *
@@ -12,15 +12,23 @@
 import { useEffect, useState } from "react";
 import { useConsent } from "./ConsentProvider";
 import { GoogleAnalytics } from "./GoogleAnalytics";
+import { AdSense } from "./AdSense";
 
 type ConsentedScriptsProps = {
   gaMeasurementId?: string;
+  /** AdSense publisher ID. Empty on every site that does not run ads. */
+  adsenseClientId?: string;
 };
 
-export function ConsentedScripts({ gaMeasurementId = "" }: ConsentedScriptsProps) {
+export function ConsentedScripts({ gaMeasurementId = "", adsenseClientId = "" }: ConsentedScriptsProps) {
   const { state } = useConsent();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   if (!mounted || state === "denied") return null;
-  return <GoogleAnalytics measurementId={gaMeasurementId} />;
+  return (
+    <>
+      <GoogleAnalytics measurementId={gaMeasurementId} />
+      <AdSense clientId={adsenseClientId} />
+    </>
+  );
 }

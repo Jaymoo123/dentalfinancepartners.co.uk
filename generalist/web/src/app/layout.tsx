@@ -115,7 +115,7 @@ export default function RootLayout({
             posture="opt-out"
             noTrackPrefixes={["/admin"]}
           >
-            <ConsentedScripts />
+            <ConsentedScripts adsenseClientId="ca-pub-3756285576371279" />
             <IntentProvider>
               <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
               <ReturningBar />
