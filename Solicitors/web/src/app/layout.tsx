@@ -47,6 +47,10 @@ export const metadata: Metadata = {
   },
   verification: {
     google: niche.seo.google_site_verification,
+    // Server-rendered so the AdSense crawler finds it. The ad loader itself is
+    // client-side behind the consent gate, which is why the snippet method of
+    // site verification fails: the crawler reads raw HTML and never runs it.
+    other: { "google-adsense-account": "ca-pub-3756285576371279" },
   },
   openGraph: {
     type: "website",
