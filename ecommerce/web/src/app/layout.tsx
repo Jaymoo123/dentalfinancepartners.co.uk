@@ -18,6 +18,13 @@ const organizationJsonLd = {
   url: siteUrl,
   description: niche.description,
   logo: `${siteUrl}/api/og`,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: [niche.company!.registered_office.line1, niche.company!.registered_office.line2].filter(Boolean).join(", "),
+    addressLocality: niche.company!.registered_office.city,
+    postalCode: niche.company!.registered_office.postcode,
+    addressCountry: "GB",
+  },
   areaServed: "GB",
   knowsAbout: [
     "VAT registration for online sellers",

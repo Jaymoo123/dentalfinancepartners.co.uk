@@ -161,7 +161,7 @@ const calculatorLinks = [
   {
     title: "Seller take-home calculator",
     body: "Model your true take-home after platform fees, VAT and tax.",
-    href: "/calculators/seller-take-home",
+    href: "/calculators/seller-take-home-calculator",
   },
   {
     title: "VAT threshold tracker",

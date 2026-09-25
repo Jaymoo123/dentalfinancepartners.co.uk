@@ -5,6 +5,63 @@ Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held). Generat
 
 brand_locked: true
 
+## PORT PICKUP (Property design standard) - updated 2026-09-25
+
+**Phase 0 is BUILT and TAGGED (`port-ecommerce-phase0`). Phases 1 to 6 are NOT built.**
+Git is the authority: `git tag -l 'port-ecommerce-*'`. Artefacts live in `docs/ecommerce/_port/`.
+
+Baseline: production SHA `153e5017`, 51 URLs, 707 unique internal links (floor 10), 0 dashes,
+and 1 conditional `data-cta` (`thankyou-return-article` / `thank_you`, rendered only with a
+`?rt=` param) which MUST survive the port byte-identical. Kit adoption at baseline: 0 distinct
+/ 0 call sites, no webfont, no backdrop, `layout-utils` not re-exported. `@source` and
+`prose-standard.css` are already imported, so the charities blocker does not apply here.
+
+Owner decisions taken 2026-09-25, all four acted on in phase 0: render the real analytics
+opt-out control rather than rewrite the policy; fix the calculator maths and add the note;
+50,772 is the canonical 2021 SIC 47910 figure (the monthly sum); and phase 1 uses a darker
+amber for white-on-brand surfaces plus the Geist typeface.
+
+Live defects found in phase 0 and FIXED, none of them design work: a backwards limited-cost
+flat-rate claim published in body copy, key takeaways, FAQs and FAQPage JSON-LD; a cookie
+policy promising an opt-out control the site did not have, with analytics opt-out by default;
+five links to a calculator that 404d, from the homepage, a research page and three audience
+hubs, plus a doubled `/blog/blog-` href and three flat blog URLs missing their category
+segment; `/services`, `/for` and `/vat` all canonicalising to the homepage; a fee claim and a
+turnaround promise on `/about`; one calculator with no additional-rate band at all while
+claiming 2026/27 rates; the personal-allowance taper missing from all three tax calculators;
+the same 2021 quantity published as three different numbers; an expired MTD deadline presented
+as live guidance; a trend sentence contradicted by its own table; and a missing postal address
+in the Organization JSON-LD.
+
+STILL OPEN, carried as owner items:
+- "Within one working day" on the homepage and "within 24 hours" injected onto 28 pages. Both
+  are estate-central and byte-identical to Property's, so removing them here alone would put
+  this site out of step with the estate. Estate-wide ruling needed.
+- `/research/online-seller-index` still renders 50,699 from a different Companies House pull
+  (filtered by current register status). Legitimately a different measurement, now disclosed in
+  the data note. Showing one number on that page is a further decision.
+- The flat-rate comparison table is now rate-agnostic: no sector flat rate is sourced in
+  `house_positions.md` or `rates_ledger.json`, so a numeric column would have been invented.
+- `src/lib/schema.ts` `buildOrganizationJsonLd` is dead (0 call sites) and carries
+  `priceRange: "££"`. Wiring it up would publish a pricing claim.
+- `niche.config.json` placeholder phone `+44 20 0000 0000` is unrendered and cannot be emptied:
+  `packages/web-shared/lib/niche-config.ts:215` requires it non-empty.
+- The formation data is five months stale (settled through April 2026). The prose is now
+  stamped as at that month rather than refreshed.
+
+KNOWN AND CARRIED INTO PHASE 1, not phase-0 work:
+- `prose-blog` is emitted by the three legal pages and defined in no stylesheet this site loads.
+- `#c9861b` measures 3.04:1 on white: it clears the 3:1 graphic floor and fails both 4.5:1 text
+  floors, and the focus ring is currently amber on amber at 1.00:1. No single ring colour can
+  clear 3.0 on every ground this site paints; the impossibility is proved in
+  `_port/P0C_CSS_TOKEN_AUDIT.md`, so phase 1 must ship a two-valued ring.
+- 14 of 23 route shapes render no `<main>`, and there is no skip link and no `id="main"`.
+- `/embed/[slug]` renders full site header and footer inside a partner's iframe.
+- The seasonality chart's 12 monthly values are unreachable as text under `role="img"`.
+- The kit footer's default `companyItems` and `resourcesHref` would ship `/locations` and
+  `/landlord-tax`, both 404 here.
+
+
 > **DEPLOYED TO PRODUCTION 2026-07-16** at https://www.ecommercefinance.co.uk (Vercel CLI, prod). Live battery passed (all key routes 200, apex 308 to www, brand clean). sites.active=true; sitemap submitted to IndexNow. Remaining external: GSC property + Request Indexing, Bing import, GA4 id, real phone, brand logo assets.
 
 > **FINAL BRAND LOCKED 2026-07-16: "Ecommerce Finance" @ ecommercefinance.co.uk** (owner-purchased domain; built under working brand "Ecommerce Tax Partners", all references swapped repo-wide 2026-07-16).

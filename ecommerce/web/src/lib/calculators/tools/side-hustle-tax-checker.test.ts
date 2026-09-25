@@ -239,4 +239,36 @@ describe("calcSideHustle", () => {
       expect(r.incomeTax).toBeGreaterThan(0);
     });
   });
+  // --- Top band and personal-allowance taper (added 2026-09-25, P0A rows 4 and 5) ---
+
+  describe("Case H: personal-allowance taper", () => {
+    it("side profit £110,000, no employment: allowance tapered to £7,570", () => {
+      // gross 111000, costs 1000 -> allowance route, profit 110000
+      // PA = 12570 - (110000-100000)/2 = 7570; effective taxable side profit 102430
+      // tax = 37700*0.20 + 64730*0.40 = 7540 + 25892 = 33432 (untapered 31432)
+      // class4 = 37700*0.06 + 59730*0.02 = 3456.60
+      const r = calcSideHustle(111000, 1000, 0);
+      expect(r.taxableSideProfit).toBe(110000);
+      expect(r.taxAtBasic).toBeCloseTo(7540, 2);
+      expect(r.taxAtHigher).toBeCloseTo(25892, 2);
+      expect(r.taxAtAdditional).toBe(0);
+      expect(r.incomeTax).toBeCloseTo(33432, 1);
+      expect(r.incomeTax - 31432).toBeCloseTo(2000, 1);
+      expect(r.class4Nic).toBeCloseTo(3456.6, 1);
+    });
+  });
+
+  describe("Case I: additional rate above £125,140", () => {
+    it("side profit £150,000, no employment: nil allowance, 45% on the top slice", () => {
+      // PA 0; taxable 150000
+      // basic 37700*0.20 = 7540; higher 87440*0.40 = 34976; additional 24860*0.45 = 11187
+      const r = calcSideHustle(151000, 1000, 0);
+      expect(r.taxableSideProfit).toBe(150000);
+      expect(r.taxAtBasic).toBeCloseTo(7540, 2);
+      expect(r.taxAtHigher).toBeCloseTo(34976, 2);
+      expect(r.taxAtAdditional).toBeCloseTo(11187, 2);
+      expect(r.incomeTax).toBeCloseTo(53703, 1);
+      expect(r.class4Nic).toBeCloseTo(4256.6, 1);
+    });
+  });
 });

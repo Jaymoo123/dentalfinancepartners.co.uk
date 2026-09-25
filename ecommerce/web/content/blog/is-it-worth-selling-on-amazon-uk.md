@@ -81,7 +81,7 @@ faqs:
     </tr>
     <tr>
       <td>2021 (lockdown boom)</td>
-      <td>50,699</td>
+      <td>50,772</td>
       <td>11,198</td>
       <td>22.1%</td>
       <td>71.2%</td>
@@ -122,7 +122,7 @@ faqs:
 
 <p>One reading trap in this table: the "active now" column looks better for recent cohorts (2024 shows 34.7%) but that is simply because those companies have not had time to fail. The fair comparison is the "survived X yr" columns, which compare cohorts at the same age. By that measure, the trend is clearly downward: the 2018 cohort's three-year survival rate was 47.1%; the 2021 lockdown-boom cohort's three-year rate was 31.6%; the 2022 cohort's was 23.4%. The index methodology notes this explicitly, and any interpretation of the data that compares raw active percentages across cohorts of different ages is misleading.</p>
 
-<p>The lockdown year stands out on its own. 2021 brought 50,699 new incorporations in SIC 47910 as sellers rushed to capture the pandemic shift to online spending. By three years in, only 31.6% of that cohort had survived without formal dissolution. Over 39,000 incorporated businesses from that single boom year have already dissolved.</p>
+<p>The lockdown year stands out on its own. 2021 brought 50,772 new incorporations in SIC 47910 (monthly Companies House incorporations for SIC 47910, summed over the calendar year) as sellers rushed to capture the pandemic shift to online spending. By three years in, only 31.6% of that cohort had survived without formal dissolution. Over 39,000 incorporated businesses from that single boom year have already dissolved.</p>
 
 <h2>Why so many fail: the undercosting trap</h2>
 

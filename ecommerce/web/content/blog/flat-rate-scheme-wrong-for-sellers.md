@@ -9,20 +9,20 @@ metaDescription: "The Flat Rate Scheme sounds simpler but costs most goods selle
 h1: "Why the VAT Flat Rate Scheme Is Usually the Wrong Choice for Goods Sellers"
 summary: "The Flat Rate Scheme sounds like an admin shortcut, but the 16.5% limited cost business rate and the loss of input VAT recovery on stock make it a false economy for most ecommerce and marketplace sellers."
 keyTakeaways:
-  - "Most goods sellers are classified as limited cost businesses and must use the 16.5% flat rate, the highest rate in the scheme."
+  - "The 16.5% limited cost business rate applies when relevant goods spend is below 2% of VAT-inclusive turnover or below £1,000 a year, and it is the highest rate in the scheme."
   - "Under FRS you cannot reclaim input VAT on stock purchases, which is a significant cost for any reseller or importer."
   - "The VAT registration threshold is tested on gross sales, not the net payout your marketplace deposits in your bank."
   - "Overseas platform and advertising fees are reverse-charge services; they affect your VAT position even under FRS."
   - "Model the actual numbers for your business before electing; for most goods sellers the standard VAT scheme returns more."
 faqs:
   - question: "Should an ecommerce seller use the Flat Rate Scheme?"
-    answer: "In most cases, no. Goods sellers tend to qualify as limited cost businesses and pay 16.5% under FRS, while also giving up input VAT recovery on stock. The standard VAT scheme usually returns more cash. Model both scenarios for your specific margin and stock cost before deciding."
+    answer: "In most cases, no. Under FRS you give up input VAT recovery on stock, and if your relevant goods spend is below 2% of VAT-inclusive turnover or below £1,000 a year you also pay the 16.5% limited cost rate. Either way the standard VAT scheme usually returns more cash for a goods seller. Model both scenarios for your specific margin and stock cost before deciding."
   - question: "What is the limited cost business rate?"
     answer: "It is 16.5%, and it applies when your spend on relevant goods is less than 2% of your VAT-inclusive turnover, or less than £1,000 a year. See gov.uk/vat-flat-rate-scheme/how-much-you-pay for the full test."
   - question: "Can I reclaim VAT on stock under the Flat Rate Scheme?"
     answer: "No. Under FRS you pay a flat percentage of your gross turnover and keep no input VAT. The scheme is designed for low-cost businesses, not stock-carrying resellers."
   - question: "Am I a limited cost business?"
-    answer: "You are if your spend on relevant goods (broadly, physical goods used in the business, excluding food, vehicles, and capital items) is below 2% of your VAT-inclusive turnover, or below £1,000 a year. Most ecommerce sellers who buy stock cheaply relative to their sales revenue will fail this test."
+    answer: "You are if your spend on relevant goods (broadly, physical goods used in the business, excluding food, vehicles, and capital items) is below 2% of your VAT-inclusive turnover, or below £1,000 a year. Sellers whose relevant goods spend is small relative to their sales revenue meet this test and pay 16.5%."
   - question: "Does the Flat Rate Scheme apply to my Amazon or marketplace fees?"
     answer: "Overseas marketplace and advertising fees are reverse-charge services; you self-account for the VAT on them. Under FRS those fees still affect your position because the reverse-charge output VAT adds to your gross turnover figure against which the flat rate is applied, but you get no input credit for the VAT you self-accounted."
   - question: "When is the Flat Rate Scheme worth it?"
@@ -34,13 +34,13 @@ faqs:
 
 <p>Under the Flat Rate Scheme you pay a single percentage of your gross VAT-inclusive turnover to HMRC and keep the difference between that payment and the 20% VAT you charged customers. The scheme was designed for businesses with very few input costs, where the input VAT recovery under the standard scheme would be small anyway.</p>
 
-<p>For a goods seller the two killers are: (1) most goods sellers are classed as <strong>limited cost businesses</strong> and must use the highest rate in the scheme, 16.5%; and (2) you give up all input VAT recovery on your stock purchases. For a reseller buying £40,000 of stock a year, that foregone recovery is £8,000. The scheme is not a shortcut; it is a tax increase dressed as an admin saving.</p>
+<p>For a goods seller the two killers are: (1) you give up all input VAT recovery on your stock purchases; and (2) if your relevant goods spend falls below 2% of VAT-inclusive turnover, or below £1,000 a year, you are a <strong>limited cost business</strong> and must use the highest rate in the scheme, 16.5%. For a reseller buying £40,000 of stock a year, that foregone recovery is £8,000. The scheme is not a shortcut; it is a tax increase dressed as an admin saving.</p>
 
 <h2>How FRS works (one paragraph)</h2>
 
 <p>Once registered, you charge customers VAT at the standard 20% rate as normal. At the end of each VAT period you apply your flat rate percentage to your gross VAT-inclusive sales (turnover including the VAT you collected) and pay that amount to HMRC. You keep the spread between what you collected from customers and what you pay to HMRC. You do <strong>not</strong> deduct input VAT on purchases (except for a single capital item costing more than £2,000 including VAT). The maths only works in your favour if your flat rate percentage is materially lower than 20% and your input VAT costs are small.</p>
 
-<h2>Killer one: the 16.5% limited cost business rate catches most goods sellers</h2>
+<h2>Killer one: the 16.5% limited cost business rate</h2>
 
 <p>The <a href="https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay">limited cost business test</a> works as follows: if your spend on <em>relevant goods</em> is less than 2% of your VAT-inclusive turnover, or less than £1,000 a year, you must use the 16.5% rate. Relevant goods for this purpose are physical goods you use in your business, but the rules exclude food, drinks, vehicles, fuel for vehicles, capital expenditure items, and goods used for resale if they are not used in the business itself. The practical result is that platform sellers who source cheaply (high-margin resellers, importers with low landed costs relative to selling price) often find their relevant goods spend falls below 2% of turnover, and they are pushed into the 16.5% bracket.</p>
 
@@ -100,7 +100,7 @@ faqs:
     <tr>
       <th></th>
       <th>Standard VAT</th>
-      <th>FRS (16.5% limited cost)</th>
+      <th>FRS</th>
     </tr>
   </thead>
   <tbody>
@@ -127,18 +127,18 @@ faqs:
     <tr>
       <td>Net VAT payable to HMRC</td>
       <td>£11,000</td>
-      <td>£19,800 (16.5% of £120,000 gross)</td>
+      <td>Flat rate percentage applied to £120,000 gross, with no input VAT recovered</td>
     </tr>
     <tr>
       <td><strong>Annual VAT cost difference</strong></td>
-      <td colspan="2"><strong>Standard VAT saves approximately £8,800</strong></td>
+      <td colspan="2"><strong>FRS only wins here if the flat rate payment comes in below £2,000, which is 1.7% of gross turnover</strong></td>
     </tr>
   </tbody>
 </table>
 
 <p>These are illustrative figures. Run the same comparison using your actual stock costs and input VAT, and the direction of the answer will almost always point the same way for a goods seller.</p>
 
-<p>The <a href="/calculators/seller-take-home">seller take-home calculator</a> lets you model the margin impact of your VAT scheme choice alongside your overall cost structure.</p>
+<p>The <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> lets you model the margin impact of your VAT scheme choice alongside your overall cost structure.</p>
 
 <h2>Common failure modes</h2>
 

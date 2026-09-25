@@ -6,6 +6,13 @@ export const PERSONAL_ALLOWANCE = 12570;
 export const BASIC_BAND_CEILING = 50270;
 export const BASIC_RATE = 0.20;
 export const HIGHER_RATE = 0.40;
+export const ADDITIONAL_RATE = 0.45; // ledger key: income_tax_additional_rate
+// Top of the higher-rate band in TAXABLE-income terms; above this the additional rate applies.
+export const HIGHER_RATE_LIMIT = 125140;
+// Width of the basic-rate band in taxable-income terms (£50,270 - £12,570).
+export const BASIC_BAND_WIDTH = 37700; // ledger key: basic_rate_band_ceiling
+// Personal allowance taper: £1 withdrawn per £2 of income above £100,000, nil at £125,140.
+export const TAPER_THRESHOLD = 100000;
 export const CLASS4_LOWER = 12570;
 export const CLASS4_UPPER = 50270;
 export const CLASS4_MAIN = 0.06;
@@ -18,23 +25,35 @@ export const CT_MARGINAL_RELIEF_FRACTION = 3 / 200;
 export const DIVIDEND_ALLOWANCE = 500;
 export const DIVIDEND_BASIC = 0.1075;
 export const DIVIDEND_HIGHER = 0.3575;
+export const DIVIDEND_ADDITIONAL = 0.3935; // ledger key: dividend_rate_additional (FA 2026 s.4)
 // Salary at the employer NIC secondary threshold (£5,000, ledger employer_nic_secondary_threshold_annual):
 // no employer NIC, no employee NIC, fully CT-deductible. Matches the strategy the site's own content recommends.
 export const SALARY = 5000;
 
+/**
+ * Personal allowance after the taper: £1 withdrawn for every £2 of adjusted net
+ * income above £100,000, so the allowance is nil at £125,140.
+ * Source: rates_ledger.json key `personal_allowance` (notes).
+ */
+export function taperedPersonalAllowance(adjustedNetIncome: number): number {
+  return Math.max(0, PERSONAL_ALLOWANCE - Math.max(0, adjustedNetIncome - TAPER_THRESHOLD) / 2);
+}
+
 export interface StVsLtdResult {
   profit: number;
   stTax: number; stNic: number; stTakeHome: number;
-  ltdCt: number; ltdDivTax: number; ltdTakeHome: number;
+  ltdCt: number; ltdSalaryTax: number; ltdDivTax: number; ltdTakeHome: number;
   saving: number;
 }
 
 export function calcStVsLtd(profit: number): StVsLtdResult {
   // Sole trader
-  const stTaxable = Math.max(0, profit - PERSONAL_ALLOWANCE);
-  const stBasic = Math.min(stTaxable, BASIC_BAND_CEILING - PERSONAL_ALLOWANCE);
-  const stHigher = Math.max(0, stTaxable - (BASIC_BAND_CEILING - PERSONAL_ALLOWANCE));
-  const stTax = stBasic * BASIC_RATE + stHigher * HIGHER_RATE;
+  const stPa = taperedPersonalAllowance(profit);
+  const stTaxable = Math.max(0, profit - stPa);
+  const stBasic = Math.min(stTaxable, BASIC_BAND_WIDTH);
+  const stHigher = Math.min(Math.max(0, stTaxable - BASIC_BAND_WIDTH), HIGHER_RATE_LIMIT - BASIC_BAND_WIDTH);
+  const stAdditional = Math.max(0, stTaxable - HIGHER_RATE_LIMIT);
+  const stTax = stBasic * BASIC_RATE + stHigher * HIGHER_RATE + stAdditional * ADDITIONAL_RATE;
   const stClass4 = Math.max(0, Math.min(profit, CLASS4_UPPER) - CLASS4_LOWER) * CLASS4_MAIN
     + Math.max(0, profit - CLASS4_UPPER) * CLASS4_UPPER_RATE;
   const stTakeHome = profit - stTax - stClass4;
@@ -54,18 +73,25 @@ export function calcStVsLtd(profit: number): StVsLtdResult {
   const ltdNetAfterCt = ltdProfitAfterSalary - ltdCt;
   const ltdTotalExtract = SALARY + ltdNetAfterCt;
   const ltdDivAmount = ltdNetAfterCt;
-  // Salary sits below the personal allowance; the unused allowance shelters dividends first
-  const paShelter = Math.max(0, PERSONAL_ALLOWANCE - SALARY);
-  const ltdDivTaxableIncome = Math.max(0, ltdDivAmount - paShelter);
+  // The taper bites on total income (salary + dividends), so a high-profit company
+  // director loses the allowance that shelters the salary as well as the dividends.
+  const ltdPa = taperedPersonalAllowance(ltdTotalExtract);
+  // Salary is the bottom slice of income, so anything of it left uncovered is basic rate.
+  const ltdSalaryTaxable = Math.max(0, SALARY - ltdPa);
+  const ltdSalaryTax = ltdSalaryTaxable * BASIC_RATE;
+  // Unused allowance after the salary shelters the start of the dividends
+  const ltdDivTaxableIncome = Math.max(0, ltdDivAmount - Math.max(0, ltdPa - SALARY));
   // £500 dividend allowance is taxed at 0% but uses the band
-  const basicBandWidth = BASIC_BAND_CEILING - PERSONAL_ALLOWANCE;
-  const ltdDivInBasic = Math.min(ltdDivTaxableIncome, basicBandWidth);
+  const ltdDivInBasic = Math.min(ltdDivTaxableIncome, Math.max(0, BASIC_BAND_WIDTH - ltdSalaryTaxable));
   const ltdDivBasic = Math.max(0, ltdDivInBasic - DIVIDEND_ALLOWANCE);
-  const ltdDivHigher = Math.max(0, ltdDivTaxableIncome - basicBandWidth);
-  const ltdDivTax = ltdDivBasic * DIVIDEND_BASIC + ltdDivHigher * DIVIDEND_HIGHER;
-  const ltdTakeHome = ltdTotalExtract - ltdDivTax;
+  const ltdDivAboveBasic = ltdDivTaxableIncome - ltdDivInBasic;
+  const ltdDivHigher = Math.min(ltdDivAboveBasic, HIGHER_RATE_LIMIT - BASIC_BAND_WIDTH);
+  const ltdDivAdditional = Math.max(0, ltdDivAboveBasic - ltdDivHigher);
+  const ltdDivTax = ltdDivBasic * DIVIDEND_BASIC + ltdDivHigher * DIVIDEND_HIGHER
+    + ltdDivAdditional * DIVIDEND_ADDITIONAL;
+  const ltdTakeHome = ltdTotalExtract - ltdDivTax - ltdSalaryTax;
 
-  return { profit, stTax, stNic: stClass4, stTakeHome, ltdCt, ltdDivTax, ltdTakeHome, saving: ltdTakeHome - stTakeHome };
+  return { profit, stTax, stNic: stClass4, stTakeHome, ltdCt, ltdSalaryTax, ltdDivTax, ltdTakeHome, saving: ltdTakeHome - stTakeHome };
 }
 
 export const soleTraderVsLtdSellersTool: GenericTool = {
@@ -110,19 +136,20 @@ export const soleTraderVsLtdSellersTool: GenericTool = {
         { label: "Sole trader: Class 4 NIC", value: gbp(r.stNic) },
         { label: "Sole trader take-home", value: gbp(r.stTakeHome), strong: true },
         { label: "Ltd: corporation tax", value: gbp(r.ltdCt) },
+        ...(r.ltdSalaryTax > 0 ? [{ label: "Ltd: income tax on salary", value: gbp(r.ltdSalaryTax) }] : []),
         { label: "Ltd: dividend tax", value: gbp(r.ltdDivTax) },
         { label: "Ltd take-home", value: gbp(r.ltdTakeHome), strong: true },
         { label: "Annual saving (Ltd vs ST)", value: gbp(r.saving), strong: true },
       ],
-      note: "This is an estimate for illustration. It assumes no other income, a £5,000 salary (below the employer NIC threshold), full extraction of remaining post-tax profit as dividends, and no additional-rate income. Corporation tax marginal relief between £50,000 and £250,000 is applied. Accountancy costs for a limited company (typically £1,000 to £2,000 per year more) are not included. Speak to an accountant before changing structure.",
+      note: "This is an estimate for illustration. It assumes no other income, a £5,000 salary (below the employer NIC threshold) and full extraction of remaining post-tax profit as dividends. The personal allowance is reduced by £1 for every £2 of income above £100,000 and is nil at £125,140, and both the 45% additional rate of income tax and the 39.35% additional rate of dividend tax are applied above that point. Corporation tax marginal relief between £50,000 and £250,000 is applied. Accountancy costs for a limited company (typically £1,000 to £2,000 per year more) are not included. Speak to an accountant before changing structure.",
     };
   },
   explainer: {
     heading: "When does a limited company save tax for sellers?",
     paragraphs: [
       `At lower profit levels (under roughly £30,000 to £35,000), the tax saving from incorporating a selling business rarely covers the extra accountancy costs. The benefit grows above that level. For marketplace sellers, the key is using the right profit figure: taxable profit after platform fees and cost of goods, not gross revenue, is the number that drives the comparison.`,
-      `As a sole trader, profit above £${PERSONAL_ALLOWANCE.toLocaleString()} is taxed at 20% income tax plus ${CLASS4_MAIN * 100}% <a href="https://www.gov.uk/self-employed-national-insurance-rates">Class 4 NIC</a>. Above £${BASIC_BAND_CEILING.toLocaleString()}, income tax rises to 40%. Both taxes apply to the same profit figure, so the combined rate in the basic band is 26%.`,
-      `A <a href="https://www.gov.uk/corporation-tax-rates">limited company pays corporation tax</a> at ${CT_SMALL_RATE * 100}% on profits up to £${CT_SMALL_THRESHOLD.toLocaleString()} (reduced if there are associated companies), with marginal relief between £50,000 and £250,000. The owner-director takes a low salary up to the £5,000 employer NIC threshold, keeping it free of NIC and deductible for corporation tax, then extracts remaining post-tax profit as <a href="https://www.gov.uk/tax-on-dividends">dividends</a> taxed at ${DIVIDEND_BASIC * 100}% (basic rate, Finance Act 2026 s.4) and ${DIVIDEND_HIGHER * 100}% (higher rate) above the £${DIVIDEND_ALLOWANCE} annual dividend allowance.`,
+      `As a sole trader, profit above £${PERSONAL_ALLOWANCE.toLocaleString()} is taxed at 20% income tax plus ${CLASS4_MAIN * 100}% <a href="https://www.gov.uk/self-employed-national-insurance-rates">Class 4 NIC</a>. Above £${BASIC_BAND_CEILING.toLocaleString()}, income tax rises to 40%, and above £${HIGHER_RATE_LIMIT.toLocaleString()} it rises again to ${ADDITIONAL_RATE * 100}%. Both taxes apply to the same profit figure, so the combined rate in the basic band is 26%. Between £${TAPER_THRESHOLD.toLocaleString()} and £${HIGHER_RATE_LIMIT.toLocaleString()} the personal allowance is withdrawn at £1 for every £2 of income, which is why the effective rate peaks in that window.`,
+      `A <a href="https://www.gov.uk/corporation-tax-rates">limited company pays corporation tax</a> at ${CT_SMALL_RATE * 100}% on profits up to £${CT_SMALL_THRESHOLD.toLocaleString()} (reduced if there are associated companies), with marginal relief between £50,000 and £250,000. The owner-director takes a low salary up to the £5,000 employer NIC threshold, keeping it free of NIC and deductible for corporation tax, then extracts remaining post-tax profit as <a href="https://www.gov.uk/tax-on-dividends">dividends</a> taxed at ${DIVIDEND_BASIC * 100}% (basic rate, Finance Act 2026 s.4), ${DIVIDEND_HIGHER * 100}% (higher rate) and ${DIVIDEND_ADDITIONAL * 100}% (additional rate) above the £${DIVIDEND_ALLOWANCE} annual dividend allowance.`,
       `The £1,000 <a href="https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income">trading allowance</a> is worth noting at the bottom end: sellers with income below £1,000 may pay no tax at all. Above that level, using the allowance instead of actual costs is usually the worse option for goods sellers who have real COGS to deduct. Incorporation at this scale rarely makes sense.`,
     ],
   },

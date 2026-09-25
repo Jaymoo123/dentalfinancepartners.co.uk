@@ -217,9 +217,9 @@
     "caveat": "Incorporations count all companies ever incorporated in that quarter regardless of current status. Dissolutions count companies whose dissolution date falls within that quarter."
   },
   "cohortNote": {
-    "lockdownCohort2021Incorporations": 50768,
-    "lockdownCohort2021IncorporationsLabel": "50,768",
-    "note": "Companies incorporating under SIC 47910 across all four quarters of 2021 (the lockdown e-commerce boom year). See cohortSurvival for the formation-year survival series."
+    "lockdownCohort2021Incorporations": 50772,
+    "lockdownCohort2021IncorporationsLabel": "50,772",
+    "note": "Companies incorporating under SIC 47910 during 2021 (the lockdown e-commerce boom year). This is the canonical 2021 figure for this site: it is the sum of the twelve monthly 2021 counts in online-seller-formation-seasonality.json, which total exactly 50,772. The cohortSurvival47910 2021 row reports 50,699 because it is a separate Companies House Advanced Search pull filtered by current register status; the two pulls are not interchangeable. See cohortSurvival47910 for the formation-year survival series."
   },
   "cohortSurvival47910": {
     "description": "Formation-year cohorts for SIC 47910: companies incorporated in each calendar year, split by current register status (active vs dissolved), with dissolved-by cut-offs 1/2/3 years after the formation year for time-resolved survival. Source: CH Advanced Search company_status + incorporated_from/to + dissolved_to filters.",

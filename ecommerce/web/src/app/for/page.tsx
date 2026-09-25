@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { sellerHubs } from "@/data/for";
+import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Ecommerce and Marketplace Seller Accountants | Who We Help",
   description: "Specialist ecommerce tax support by seller type: Amazon FBA/FBM, Shopify, marketplace sellers (eBay/Etsy/Vinted/TikTok Shop) and dropshippers.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 export default function ForIndexPage() {
   return (<>

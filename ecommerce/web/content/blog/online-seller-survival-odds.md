@@ -49,7 +49,7 @@ faqs:
 
 <p>Source: ONS Business Demography, Table 4.2, 2019 birth cohort, retail broad group vs all industries.<sup><a href="#ref-2">2</a></sup></p>
 
-<p>Two things stand out. First, the curve is front-loaded: nineteen out of twenty retail businesses make it through year one, but by year three barely half remain. Second, retail's disadvantage against the all-industries average is small in years one and two and widens from year three onward, from roughly a tenth of a point behind to four points behind. Whatever is causing retail businesses to close disproportionately, it is not a first-year problem. It shows up later.</p>
+<p>Two things stand out. First, the curve is front-loaded: nineteen out of twenty retail businesses make it through year one, but by year three barely half remain. Second, retail's disadvantage against the all-industries average is small in years one and two and steps up sharply from year three, from roughly a tenth of a point behind to four points behind. Whatever is causing retail businesses to close disproportionately, it is not a first-year problem. It shows up later.</p>
 
 <h2>The caveat: this is retail-wide data, not an online-seller-specific figure</h2>
 
@@ -103,12 +103,12 @@ faqs:
 <p>Three practical adjustments follow from where the curve actually falls.</p>
 
 <ol>
-<li><strong>Model the VAT threshold before you are close to it, not when you cross it.</strong> Waiting until turnover is within touching distance of £90,000 to work out what registration does to your pricing and margin leaves no runway to adjust. The <a href="/calculators/vat-threshold-tracker">VAT threshold tracker</a> and the <a href="/blog/vat-threshold-gross-vs-payout">VAT threshold: gross vs payout</a> page cover the gross-sales rule and the reverse-charge additions that can bring the threshold closer than a bank balance suggests.</li>
+<li><strong>Model the VAT threshold before you are close to it, not when you cross it.</strong> Waiting until turnover is within touching distance of £90,000 to work out what registration does to your pricing and margin leaves no runway to adjust. The <a href="/calculators/vat-threshold-tracker">VAT threshold tracker</a> and the <a href="/blog/vat-and-cross-border-selling/vat-threshold-gross-vs-payout">VAT threshold: gross vs payout</a> page cover the gross-sales rule and the reverse-charge additions that can bring the threshold closer than a bank balance suggests.</li>
 <li><strong>Keep cash reserves higher through the year two to three window specifically.</strong> If the highest-risk period for failure overlaps with the first big reorder and possible VAT registration, that is the period to hold back drawings and build a buffer, rather than increasing personal extraction as revenue grows.</li>
 <li><strong>Model true take-home before committing to the next stock buy, not after.</strong> A reorder sized against gross revenue rather than net margin after fees, cost of goods and tax is the most common way a business enters year two undercapitalised. The <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> runs fees, cost of goods and tax together to show what a pound of gross sales is actually worth before you commit stock cash against it.</li>
 </ol>
 
-<p>The structure decision sits alongside this. Retained profit inside a limited company is taxed at corporation tax rates rather than income tax rates, which matters directly for a business funding its next stock buy from retained cash through the exact years this data flags as highest-risk. See <a href="/blog/sole-trader-vs-ltd-online-sellers">sole trader or limited company for online sellers</a> for the 2026/27 numbers on that trade-off, and use the <a href="/calculators/sole-trader-vs-ltd-sellers">sole-trader-vs-ltd-sellers calculator</a> for your own extraction and reinvestment ratio.</p>
+<p>The structure decision sits alongside this. Retained profit inside a limited company is taxed at corporation tax rates rather than income tax rates, which matters directly for a business funding its next stock buy from retained cash through the exact years this data flags as highest-risk. See <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader or limited company for online sellers</a> for the 2026/27 numbers on that trade-off, and use the <a href="/calculators/sole-trader-vs-ltd-sellers">sole-trader-vs-ltd-sellers calculator</a> for your own extraction and reinvestment ratio.</p>
 
 <h2>Method and caveats</h2>
 

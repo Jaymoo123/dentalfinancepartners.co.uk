@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { vatPages } from "@/data/vat";
+import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Ecommerce VAT Hub | UK Online Seller VAT Guides",
   description: "VAT guidance for UK ecommerce and marketplace sellers: deemed supplier rules, marketplace fee VAT, the £135 import rule, IOSS/OSS, postponed VAT and margin scheme.",
+  alternates: { canonical: `${siteConfig.url}/vat` },
 };
 export default function VatIndexPage() {
   return (<>

@@ -4,22 +4,17 @@ import { gbp } from "@accounting-network/web-shared/tools/format";
 // Reuse the 2026/27 band constants from the sister tool to keep the estate consistent.
 // Source: docs/ecommerce/rates_ledger.json (verified 2026-07-15)
 import {
-  PERSONAL_ALLOWANCE,
-  BASIC_BAND_CEILING,   // £50,270 — the top of the basic-rate band (taxable income)
   BASIC_RATE,
   HIGHER_RATE,
   CLASS4_LOWER,         // £12,570
   CLASS4_UPPER,         // £50,270
   CLASS4_MAIN,          // 6 %
   CLASS4_UPPER_RATE,    // 2 %
+  ADDITIONAL_RATE,      // 45 %
+  HIGHER_RATE_LIMIT,    // £125,140 taxable income: top of the higher-rate band
+  BASIC_BAND_WIDTH,     // £37,700
+  taperedPersonalAllowance,
 } from "./sole-trader-vs-ltd-sellers";
-
-// Additional rate threshold (taxable income): £125,140 = £12,570 + £112,570
-const ADDITIONAL_RATE_THRESHOLD = 125140;
-const ADDITIONAL_RATE = 0.45;
-
-// Width of the basic-rate band in taxable-income terms (£50,270 - £12,570 = £37,700)
-const BASIC_BAND_WIDTH = BASIC_BAND_CEILING - PERSONAL_ALLOWANCE;
 
 export const TRADING_ALLOWANCE = 1000; // ledger key: trading_allowance
 
@@ -121,14 +116,16 @@ export function calcSideHustle(
   const taxableSideProfit = rawProfit;
 
   // Step 4: income tax on side profit.
-  // Personal allowance (£12,570) applies to the combined income picture.
+  // Personal allowance (£12,570, tapered above £100,000) applies to the combined income picture.
   // When employment < PA, the unused portion shelters the start of side profit.
   //
   // Taxable employment income (after PA applied to employment first):
-  const taxableEmp = Math.max(0, safeEmp - PERSONAL_ALLOWANCE);
+  // The taper bites on total income, so it is computed before the allowance is split.
+  const personalAllowance = taperedPersonalAllowance(safeEmp + taxableSideProfit);
+  const taxableEmp = Math.max(0, safeEmp - personalAllowance);
 
   // Any unused personal allowance after absorbing employment income:
-  const unusedPA = Math.max(0, PERSONAL_ALLOWANCE - safeEmp);
+  const unusedPA = Math.max(0, personalAllowance - safeEmp);
 
   // Effective taxable side profit after the unused PA is applied:
   const effectiveTaxableSideProfit = Math.max(0, taxableSideProfit - unusedPA);
@@ -137,8 +134,8 @@ export function calcSideHustle(
   const empUsedInBasic = Math.min(taxableEmp, BASIC_BAND_WIDTH);
   const basicRemaining = Math.max(0, BASIC_BAND_WIDTH - empUsedInBasic);
 
-  // How much of the higher-rate band (£37,700 to £112,570 taxable) is used by employment:
-  const higherBandWidth = ADDITIONAL_RATE_THRESHOLD - PERSONAL_ALLOWANCE - BASIC_BAND_WIDTH; // = 112,570
+  // How much of the higher-rate band (£37,700 to £125,140 of taxable income) is used by employment:
+  const higherBandWidth = HIGHER_RATE_LIMIT - BASIC_BAND_WIDTH; // = 87,440
   const empInHigher = Math.max(0, taxableEmp - BASIC_BAND_WIDTH);
   const empUsedInHigher = Math.min(empInHigher, higherBandWidth);
   const higherRemaining = Math.max(0, higherBandWidth - empUsedInHigher);
@@ -318,7 +315,7 @@ export const sideHustleTaxCheckerTool: GenericTool = {
         tone: "default" as const,
       },
       rows,
-      note: `This is an estimate only. It assumes you are a UK resident sole trader in 2026/27 and does not account for pension contributions, gift aid, or personal-allowance tapering above £100,000. Class 4 NIC is on the side-hustle profit alone. If you owe tax, you need to register for <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> by 5 October after the end of the tax year in which the income arose. If a platform-reporting letter prompted this check, see our <a href="/services/hmrc-letter-online-sales">HMRC letter service</a>. If your gross income is approaching £90,000, check the <a href="/calculators/vat-threshold-tracker">VAT threshold tracker</a>.`,
+      note: `This is an estimate only. It assumes you are a UK resident sole trader in 2026/27 and does not account for pension contributions or gift aid. It does apply the personal-allowance taper, which removes £1 of the £12,570 allowance for every £2 of total income above £100,000 and leaves none of it at £125,140. Class 4 NIC is on the side-hustle profit alone. If you owe tax, you need to register for <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> by 5 October after the end of the tax year in which the income arose. If a platform-reporting letter prompted this check, see our <a href="/services/hmrc-letter-online-sales">HMRC letter service</a>. If your gross income is approaching £90,000, check the <a href="/calculators/vat-threshold-tracker">VAT threshold tracker</a>.`,
     };
   },
   explainer: {
@@ -326,7 +323,7 @@ export const sideHustleTaxCheckerTool: GenericTool = {
     paragraphs: [
       `The checker runs three steps. First, it checks whether your gross side-hustle income is £1,000 or less. If it is, the <a href="https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income">trading allowance</a> means you may not need to file a return or pay any tax.`,
       `If your income exceeds £1,000, the engine compares your actual allowable costs with the £1,000 trading allowance and uses whichever produces the lower taxable profit. Goods sellers with real stock costs often do better using actual costs. The two are mutually exclusive: you cannot deduct the allowance and your costs in the same year.`,
-      `Your taxable side profit then stacks on top of your employment income to determine the correct tax band. This is the key point: if your day-job salary already fills some or all of the basic-rate band (£12,571 to £50,270 of taxable income), your side profit is pushed into the higher rate at 40 per cent. It is not automatically taxed at 20 per cent simply because the profit is small. Class 4 NIC at <a href="https://www.gov.uk/self-employed-national-insurance-rates">6 per cent</a> applies to self-employment profits above £12,570, rising to 2 per cent above £50,270.`,
+      `Your taxable side profit then stacks on top of your employment income to determine the correct tax band. This is the key point: if your day-job salary already fills some or all of the basic-rate band (£12,571 to £50,270 of taxable income), your side profit is pushed into the higher rate at 40 per cent. It is not automatically taxed at 20 per cent simply because the profit is small. Above £125,140 of taxable income the additional rate of 45 per cent applies, and between £100,000 and £125,140 of total income the personal allowance is withdrawn at £1 for every £2, so profit landing in that window is taxed at an effective 60 per cent. Class 4 NIC at <a href="https://www.gov.uk/self-employed-national-insurance-rates">6 per cent</a> applies to self-employment profits above £12,570, rising to 2 per cent above £50,270.`,
       `This tool covers sole-trader income only. If you are considering a limited company, the <a href="/calculators/sole-trader-vs-ltd-sellers">sole-trader vs limited-company calculator</a> compares both structures at your profit level.`,
     ],
   },

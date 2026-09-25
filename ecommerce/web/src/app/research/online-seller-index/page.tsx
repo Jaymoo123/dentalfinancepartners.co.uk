@@ -934,7 +934,7 @@ export default function OnlineSellerIndexPage() {
               HMRC letters about online sales: what to do
             </Link>
             <Link
-              href="/blog/blog-platform-reporting-rules"
+              href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules"
               className="text-sm font-semibold text-[#1a3a5c] hover:underline"
             >
               Platform reporting rules explained
@@ -963,7 +963,7 @@ export default function OnlineSellerIndexPage() {
               Speak to a specialist
             </Link>
             <Link
-              href="/calculators/seller-take-home"
+              href="/calculators/seller-take-home-calculator"
               className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
             >
               Seller take-home calculator

@@ -1,0 +1,992 @@
+{
+  "/|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"VAT compliance service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Deemed-supplier guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Fees VAT guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"HMRC letter service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Reconciliation service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Browse all guides\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/services|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Book a free scoping call\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Updated 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated 2025-11-20\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research/online-seller-index|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"The 40.2% figure is a register snapshot,\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.36 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Incorporations: all companies incorporat\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The denominator is active plus dissolved\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"ONS J4MC, dataset DRSI. 2025 annual aver\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The 2021 peak (30.7%) reflects lockdown-\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: UK Online Seller Business Index\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "a \"Speak to a specialist\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/blog/blog-platform-reporting-rules?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/research/online-seller-survival-index|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Row figures are for the Retail broad ind\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: Online Seller Survival Index, c\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(15, 23, 42)",
+    "p \"Step 1 of 2 · About you\" ratio=3.78 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "label \"I sell on...\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "label \"Message (optional)\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "span \"(optional)\" ratio=3.78 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/about|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/contact|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/privacy-policy|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/cookie-policy|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/terms|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/ecommerce-vat-compliance|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/settlement-payout-reconciliation|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/selling-into-the-eu|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/hmrc-letter-online-sales|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/amazon-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/shopify-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/marketplace-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/dropshippers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/deemed-supplier-establishment|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/vat-on-marketplace-fees|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/135-import-rule|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/ioss-vs-oss|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/postponed-vat-margin-scheme|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/seller-take-home-calculator|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/vat-threshold-tracker|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/sole-trader-vs-ltd-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/side-hustle-tax-checker|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-formation-trends|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"4\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-4 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-3 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-survival-odds|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=12.75px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/bookkeeping-and-inventory/cash-vs-accruals-stock|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory/cogs-inventory-basics|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/ebay-tax-rules-uk|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/etsy-fees-vat-and-tax|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/flat-rate-scheme-wrong-for-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/is-it-worth-selling-on-amazon-uk|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/print-on-demand-tax-uk|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"10.75%/35.75%/39.35%\" ratio=2.90 floor=3 size=15px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/trading-allowance-online-sellers|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/vat-threshold-gross-vs-payout|mobile": [
+    "a \"Contact\" ratio=3.04 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/|tablet": [
+    "a \"VAT compliance service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Deemed-supplier guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Fees VAT guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"HMRC letter service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Reconciliation service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Browse all guides\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/services|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research|tablet": [
+    "p \"Updated 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated 2025-11-20\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research/online-seller-index|tablet": [
+    "p \"The 40.2% figure is a register snapshot,\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.36 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Incorporations: all companies incorporat\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The denominator is active plus dissolved\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"ONS J4MC, dataset DRSI. 2025 annual aver\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The 2021 peak (30.7%) reflects lockdown-\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: UK Online Seller Business Index\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "a \"Speak to a specialist\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/blog/blog-platform-reporting-rules?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/research/online-seller-survival-index|tablet": [
+    "p \"Row figures are for the Retail broad ind\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: Online Seller Survival Index, c\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(15, 23, 42)",
+    "p \"Step 1 of 2 · About you\" ratio=3.78 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "label \"I sell on...\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "label \"Message (optional)\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "span \"(optional)\" ratio=3.78 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/about|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/contact|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/privacy-policy|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/cookie-policy|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/terms|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/ecommerce-vat-compliance|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/settlement-payout-reconciliation|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/selling-into-the-eu|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/hmrc-letter-online-sales|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/amazon-sellers|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/shopify-sellers|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/marketplace-sellers|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/dropshippers|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/deemed-supplier-establishment|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/vat-on-marketplace-fees|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/135-import-rule|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/ioss-vs-oss|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/postponed-vat-margin-scheme|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/seller-take-home-calculator|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/vat-threshold-tracker|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/sole-trader-vs-ltd-sellers|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/side-hustle-tax-checker|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment|tablet": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-formation-trends|tablet": [
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"4\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-4 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-3 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-survival-odds|tablet": [
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/bookkeeping-and-inventory/cash-vs-accruals-stock|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory/cogs-inventory-basics|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/ebay-tax-rules-uk|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/etsy-fees-vat-and-tax|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/flat-rate-scheme-wrong-for-sellers|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/is-it-worth-selling-on-amazon-uk|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/print-on-demand-tax-uk|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers|tablet": [
+    "a \"10.75%/35.75%/39.35%\" ratio=2.90 floor=3 size=15px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/trading-allowance-online-sellers|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/vat-threshold-gross-vs-payout|tablet": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/|laptop": [
+    "a \"VAT compliance service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Deemed-supplier guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Fees VAT guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"HMRC letter service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Reconciliation service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Browse all guides\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/services|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research|laptop": [
+    "p \"Updated 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated 2025-11-20\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research/online-seller-index|laptop": [
+    "p \"The 40.2% figure is a register snapshot,\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.36 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Incorporations: all companies incorporat\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The denominator is active plus dissolved\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"ONS J4MC, dataset DRSI. 2025 annual aver\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The 2021 peak (30.7%) reflects lockdown-\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: UK Online Seller Business Index\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "a \"Speak to a specialist\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/blog/blog-platform-reporting-rules?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/research/online-seller-survival-index|laptop": [
+    "p \"Row figures are for the Retail broad ind\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: Online Seller Survival Index, c\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(15, 23, 42)",
+    "p \"Step 1 of 2 · About you\" ratio=3.78 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "label \"I sell on...\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "label \"Message (optional)\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "span \"(optional)\" ratio=3.78 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/about|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/contact|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/privacy-policy|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/cookie-policy|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/terms|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/ecommerce-vat-compliance|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/settlement-payout-reconciliation|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/selling-into-the-eu|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/hmrc-letter-online-sales|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/amazon-sellers|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/shopify-sellers|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/marketplace-sellers|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/dropshippers|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/deemed-supplier-establishment|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/vat-on-marketplace-fees|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/135-import-rule|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/ioss-vs-oss|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/postponed-vat-margin-scheme|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/seller-take-home-calculator|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/vat-threshold-tracker|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/sole-trader-vs-ltd-sellers|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/side-hustle-tax-checker|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment|laptop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-formation-trends|laptop": [
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"4\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-4 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-3 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-survival-odds|laptop": [
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/bookkeeping-and-inventory/cash-vs-accruals-stock|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory/cogs-inventory-basics|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/ebay-tax-rules-uk|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/etsy-fees-vat-and-tax|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/flat-rate-scheme-wrong-for-sellers|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/is-it-worth-selling-on-amazon-uk|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/print-on-demand-tax-uk|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers|laptop": [
+    "a \"10.75%/35.75%/39.35%\" ratio=2.90 floor=3 size=15px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/trading-allowance-online-sellers|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/vat-threshold-gross-vs-payout|laptop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/|desktop": [
+    "a \"VAT compliance service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Deemed-supplier guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Fees VAT guide →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"HMRC letter service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Reconciliation service →\" ratio=2.91 floor=4.5 size=14px color=rgb(201, 134, 27)",
+    "a \"Browse all guides\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/services|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research|desktop": [
+    "p \"Updated 2026-07-15\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Updated 2025-11-20\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/research/online-seller-index|desktop": [
+    "p \"The 40.2% figure is a register snapshot,\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.36 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Incorporations: all companies incorporat\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The denominator is active plus dissolved\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"ONS J4MC, dataset DRSI. 2025 annual aver\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"The 2021 peak (30.7%) reflects lockdown-\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Source: Companies House Advanced Search \" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: UK Online Seller Business Index\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "a \"Speak to a specialist\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/blog/blog-platform-reporting-rules?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3191/calculators/seller-take-home?_rsc=<hash>]"
+  ],
+  "/research/online-seller-survival-index|desktop": [
+    "p \"Row figures are for the Retail broad ind\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "p \"Cite as: Online Seller Survival Index, c\" ratio=2.58 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "label \"Leave blank\" ratio=1.00 floor=3 size=16px color=rgb(15, 23, 42)",
+    "p \"Step 1 of 2 · About you\" ratio=3.78 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "label \"I sell on...\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "label \"Message (optional)\" ratio=1.00 floor=4.5 size=14px color=oklch(0.205 0 0)",
+    "span \"(optional)\" ratio=3.78 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/about|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/contact|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/privacy-policy|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/cookie-policy|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/terms|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/ecommerce-vat-compliance|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/settlement-payout-reconciliation|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/selling-into-the-eu|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/services/hmrc-letter-online-sales|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/amazon-sellers|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/shopify-sellers|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/marketplace-sellers|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/for/dropshippers|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/deemed-supplier-establishment|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/vat-on-marketplace-fees|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/135-import-rule|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/ioss-vs-oss|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/vat/postponed-vat-margin-scheme|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/seller-take-home-calculator|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/vat-threshold-tracker|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/sole-trader-vs-ltd-sellers|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/calculators/side-hustle-tax-checker|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment|desktop": [
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-formation-trends|desktop": [
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"4\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-4 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-3 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/business-structure-and-tax/online-seller-survival-odds|desktop": [
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"2\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"1\" ratio=3.04 floor=4.5 size=13.5px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "#ref-2 scroll-margin-top=0px (want >= 96px / scroll-mt-24)",
+    "#ref-1 scroll-margin-top=0px (want >= 96px / scroll-mt-24)"
+  ],
+  "/blog/bookkeeping-and-inventory/cash-vs-accruals-stock|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/bookkeeping-and-inventory/cogs-inventory-basics|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/ebay-tax-rules-uk|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/etsy-fees-vat-and-tax|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/flat-rate-scheme-wrong-for-sellers|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/is-it-worth-selling-on-amazon-uk|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/amazon-and-marketplace-selling/print-on-demand-tax-uk|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers|desktop": [
+    "a \"10.75%/35.75%/39.35%\" ratio=2.90 floor=3 size=15px color=rgb(201, 134, 27)",
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/making-tax-digital-and-self-assessment/trading-allowance-online-sellers|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ],
+  "/blog/vat-and-cross-border-selling/vat-threshold-gross-vs-payout|desktop": [
+    "a \"Get in touch\" ratio=3.04 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Ecommerce Finance is a trading name of A\" ratio=2.48 floor=4.5 size=12px color=oklch(0.708 0 0)"
+  ]
+}

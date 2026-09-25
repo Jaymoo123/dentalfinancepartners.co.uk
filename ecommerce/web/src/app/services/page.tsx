@@ -4,9 +4,11 @@ import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceT
 import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { serviceTiers } from "@/config/service-tiers";
 import { ecommerceServices } from "@/data/services";
+import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Ecommerce Tax Services | VAT, Accounts and Seller Compliance",
   description: "Specialist ecommerce accountancy services: VAT compliance, settlement reconciliation, EU selling and HMRC platform-reporting letter response.",
+  alternates: { canonical: `${siteConfig.url}/services` },
 };
 export default function ServicesIndexPage() {
   return (<>

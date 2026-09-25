@@ -114,7 +114,7 @@ faqs:
 
 <p><a href="/calculators/sole-trader-vs-ltd-sellers">Open the sole trader vs limited company calculator for online sellers</a></p>
 
-<p>If you want to model your true take-home after marketplace fees and cost of goods, the <a href="/calculators/seller-take-home">seller take-home calculator</a> works alongside this one.</p>
+<p>If you want to model your true take-home after marketplace fees and cost of goods, the <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> works alongside this one.</p>
 
 <h2>Non-tax factors for sellers</h2>
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "./layout-utils";
+import { ConsentToggle } from "@/components/analytics/ConsentToggle";
 
 export function SiteFooter() {
   return (
@@ -18,7 +19,13 @@ export function SiteFooter() {
             ))}
           </ul>
         </div>
-        <p className="mt-6 text-xs text-neutral-400">{siteConfig.company.legalDisclosure}</p>
+        <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+          <p className="text-xs text-neutral-400">{siteConfig.company.legalDisclosure}</p>
+          {/* Phase 1 replaces this whole footer with packages/web-shared/design/chrome/SiteFooter.tsx,
+              which takes a `consentToggle` node — delete src/components/analytics/ConsentToggle.tsx then.
+              inline-block + py-1 lifts this from a 16px hit area to 24px. */}
+          <ConsentToggle className="inline-block shrink-0 py-1 text-xs text-neutral-400 underline hover:text-neutral-700 hover:no-underline" />
+        </div>
       </div>
     </footer>
   );

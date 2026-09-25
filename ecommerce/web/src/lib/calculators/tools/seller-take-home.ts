@@ -1,5 +1,11 @@
 import type { GenericTool } from "@accounting-network/web-shared/tools/types";
 import { gbp } from "@accounting-network/web-shared/tools/format";
+import {
+  taperedPersonalAllowance,
+  BASIC_BAND_WIDTH,
+  HIGHER_RATE_LIMIT,
+  TAPER_THRESHOLD,
+} from "./sole-trader-vs-ltd-sellers";
 
 // 2026/27 ledger constants, source: docs/ecommerce/rates_ledger.json (verified 2026-07-15)
 export const PERSONAL_ALLOWANCE = 12570;
@@ -38,12 +44,14 @@ export function calcSellerTakeHome(
   const netProfit = grossRevenue - platformFees - cogs - otherCosts;
   const vatDue = vatRegistered ? grossRevenue * VAT_RATE - (cogs + platformFees + otherCosts) * VAT_RATE : 0;
 
-  const taxableIncome = Math.max(0, netProfit - PERSONAL_ALLOWANCE);
+  // Personal allowance is tapered away above £100,000 of net profit (nil at £125,140).
+  const allowance = taperedPersonalAllowance(Math.max(0, netProfit));
+  const taxableIncome = Math.max(0, netProfit - allowance);
   let incomeTax = 0;
   if (taxableIncome > 0) {
-    const basicBand = Math.min(taxableIncome, BASIC_BAND_CEILING - PERSONAL_ALLOWANCE);
-    const higherBand = Math.max(0, Math.min(taxableIncome - (BASIC_BAND_CEILING - PERSONAL_ALLOWANCE), 125140 - BASIC_BAND_CEILING));
-    const additionalBand = Math.max(0, taxableIncome - (125140 - PERSONAL_ALLOWANCE));
+    const basicBand = Math.min(taxableIncome, BASIC_BAND_WIDTH);
+    const higherBand = Math.min(Math.max(0, taxableIncome - BASIC_BAND_WIDTH), HIGHER_RATE_LIMIT - BASIC_BAND_WIDTH);
+    const additionalBand = Math.max(0, taxableIncome - HIGHER_RATE_LIMIT);
     incomeTax = basicBand * BASIC_RATE + higherBand * HIGHER_RATE + additionalBand * ADDITIONAL_RATE;
   }
 
@@ -146,7 +154,7 @@ export const sellerTakeHomeTool: GenericTool = {
         ...(r.vatDue > 0 ? [{ label: "VAT (estimated net)", value: gbp(r.vatDue) }] : []),
         { label: "Estimated take-home", value: gbp(r.takeHome), strong: true },
       ],
-      note: "This is an estimate for illustration only. It assumes sole-trader status with no other income and no other reliefs, and that all costs carry recoverable UK VAT at 20%: imported stock under postponed VAT accounting and reverse-charge marketplace fees net differently, so the VAT line is indicative. Corporation tax rates apply if you trade through a limited company. Speak to an accountant for figures specific to your situation.",
+      note: "This is an estimate for illustration only. It assumes sole-trader status with no other income and no other reliefs. It applies the personal-allowance taper, which removes £1 of the £12,570 allowance for every £2 of net profit above £100,000 and leaves none of it at £125,140, and the 45% additional rate above that point. It assumes all costs carry recoverable UK VAT at 20%: imported stock under postponed VAT accounting and reverse-charge marketplace fees net differently, so the VAT line is indicative. Corporation tax rates apply if you trade through a limited company. Speak to an accountant for figures specific to your situation.",
     };
   },
   explainer: {
@@ -154,7 +162,7 @@ export const sellerTakeHomeTool: GenericTool = {
     paragraphs: [
       "Stage one is gross revenue: the full selling price of each item, before the platform deducts anything. This is also the figure that counts toward the <a href=\"https://www.gov.uk/vat-registration\">£90,000 VAT registration threshold</a>, not the net payout you receive.",
       "Stage two removes marketplace costs: platform referral fees, fulfilment or postage fees and any other charges the platform levies. These come straight off the top before you see any money. This calculator uses the percentage you enter from your own settlement statement rather than any hardcoded schedule, because fee structures change.",
-      `Stage three removes your cost of goods sold and any other business costs. What remains is net profit and that is the figure <a href="https://www.gov.uk/self-employed-national-insurance-rates">HMRC taxes</a>. The personal allowance of £${PERSONAL_ALLOWANCE.toLocaleString()} shields the first portion. Income tax at 20% then applies up to £${BASIC_BAND_CEILING.toLocaleString()} of total income, and 40% above that.`,
+      `Stage three removes your cost of goods sold and any other business costs. What remains is net profit and that is the figure <a href="https://www.gov.uk/self-employed-national-insurance-rates">HMRC taxes</a>. The personal allowance of £${PERSONAL_ALLOWANCE.toLocaleString()} shields the first portion. Income tax at 20% then applies up to £${BASIC_BAND_CEILING.toLocaleString()} of total income, 40% above that, and ${ADDITIONAL_RATE * 100}% above £${HIGHER_RATE_LIMIT.toLocaleString()}. From £${TAPER_THRESHOLD.toLocaleString()} of profit the personal allowance itself is withdrawn at £1 for every £2, so the slice between £${TAPER_THRESHOLD.toLocaleString()} and £${HIGHER_RATE_LIMIT.toLocaleString()} carries an effective 60% income tax rate.`,
       `Stage four is Class 4 NIC, which applies at ${CLASS4_MAIN * 100}% on self-employment profits between £${CLASS4_LOWER.toLocaleString()} and £${CLASS4_UPPER.toLocaleString()}, and ${CLASS4_UPPER_RATE * 100}% above that. It is charged on top of income tax and is specific to self-employment income.`,
     ],
   },

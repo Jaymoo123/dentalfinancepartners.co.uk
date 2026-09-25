@@ -48,7 +48,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Annual accounts and tax returns for seller businesses",
-        body: `We prepare sole-trader <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> returns and limited company accounts for Amazon selling businesses, with COGS and inventory properly recognised and owner extraction structured against current rates. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home">seller take-home calculator</a> to model the options. Generic incorporation and salary/dividend mechanics: <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `We prepare sole-trader <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> returns and limited company accounts for Amazon selling businesses, with COGS and inventory properly recognised and owner extraction structured against current rates. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model the options. Generic incorporation and salary/dividend mechanics: <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
       },
     ],
     faqs: [
@@ -119,7 +119,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Annual accounts and tax returns",
-        body: `We prepare sole-trader Self Assessment returns and limited company accounts for Shopify businesses, with stock and COGS properly recognised. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home">seller take-home calculator</a> to model extraction options. See also <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic salary/dividend and MTD ITSA mechanics at <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `We prepare sole-trader Self Assessment returns and limited company accounts for Shopify businesses, with stock and COGS properly recognised. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model extraction options. See also <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic salary/dividend and MTD ITSA mechanics at <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
       },
     ],
     faqs: [
@@ -249,7 +249,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Annual accounts and Self Assessment",
-        body: `We prepare annual accounts and tax returns for dropshipping sole traders and limited companies, with advertising spend, supplier costs and any import VAT correctly classified. Use our <a href="/calculators/seller-take-home">seller take-home calculator</a> to model extraction. See <a href="/research/online-seller-index">Online Seller Index</a> for sector benchmarks.`,
+        body: `We prepare annual accounts and tax returns for dropshipping sole traders and limited companies, with advertising spend, supplier costs and any import VAT correctly classified. Use our <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model extraction. See <a href="/research/online-seller-index">Online Seller Index</a> for sector benchmarks.`,
       },
     ],
     faqs: [

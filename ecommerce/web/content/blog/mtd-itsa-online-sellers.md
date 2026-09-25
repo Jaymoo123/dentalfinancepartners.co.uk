@@ -151,10 +151,10 @@ howToSteps:
 
 <p><strong>Measuring income per platform instead of in aggregate.</strong> The threshold test is applied to the combined total. A seller active on three platforms who checks each one separately and concludes none triggers the threshold may be significantly wrong. Add them up first.</p>
 
-<p><strong>Leaving reconciliation until the first quarterly update.</strong> The first quarterly update for a seller in scope from 6 April 2026 covers the period to 5 July 2026, with a submission deadline of 5 August 2026. If settlement data for April through June has not been reconciled, the quarterly update is built on guesses. MTD is a recurring discipline, not a year-end job.</p>
+<p><strong>Leaving reconciliation until the first quarterly update.</strong> The first quarterly update for a seller in scope from 6 April 2026 covered the period to 5 July 2026 and had a submission deadline of 5 August 2026, which has now passed. If settlement data for April through June has not been reconciled, the quarterly update is built on guesses. MTD is a recurring discipline, not a year-end job.</p>
 
 <p><strong>Treating platform payouts as income figures.</strong> The net payout after platform fees is not your income. Gross sales are income; platform fees are an expense. Using the payout as the income figure understates income and overstates (or loses track of) the expense deduction. This matters both for the threshold test and for each quarterly update.</p>
 
 <p><strong>Assuming MTD does not apply because "the platform reports it".</strong> Platform reporting is the platform's obligation. MTD ITSA is yours. Both exist simultaneously.</p>
 
-<p>If your current record-keeping is not set up to meet these requirements, <a href="/services/settlement-payout-reconciliation">get in touch about settlement reconciliation and MTD setup</a> or use the <a href="/calculators/seller-take-home">seller take-home calculator</a> to check whether your income level puts you inside the thresholds.</p>
+<p>If your current record-keeping is not set up to meet these requirements, <a href="/services/settlement-payout-reconciliation">get in touch about settlement reconciliation and MTD setup</a> or use the <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to check whether your income level puts you inside the thresholds.</p>

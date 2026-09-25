@@ -1,0 +1,218 @@
+{
+  "ts": "2026-09-25T19:59:09.546Z",
+  "site": "ecommerce",
+  "base": "http://localhost:3191",
+  "sha": "153e5017",
+  "served_title": "Ecommerce and marketplace seller accountants UK",
+  "purpose": "Pre-port data-cta TRIPLE snapshot. sweep_baseline.json records counts; a count cannot detect trap 22, where the same button keeps its count but flips its goal or placement on cutover and splits the live funnel. Diff this file after every phase touching chrome or CTAs.",
+  "routes": 51,
+  "scanned": 51,
+  "non_interactive_ctas": [],
+  "distinct_triples": {},
+  "per_route": {
+    "/": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for": {
+      "count": 0,
+      "ctas": []
+    },
+    "/vat": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research/online-seller-survival-index": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research/online-seller-index": {
+      "count": 0,
+      "ctas": []
+    },
+    "/about": {
+      "count": 0,
+      "ctas": []
+    },
+    "/contact": {
+      "count": 0,
+      "ctas": []
+    },
+    "/privacy-policy": {
+      "count": 0,
+      "ctas": []
+    },
+    "/terms": {
+      "count": 0,
+      "ctas": []
+    },
+    "/cookie-policy": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/ecommerce-vat-compliance": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/settlement-payout-reconciliation": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/selling-into-the-eu": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/hmrc-letter-online-sales": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/amazon-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/shopify-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/dropshippers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/marketplace-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/vat/deemed-supplier-establishment": {
+      "count": 0,
+      "ctas": []
+    },
+    "/vat/vat-on-marketplace-fees": {
+      "count": 0,
+      "ctas": []
+    },
+    "/vat/135-import-rule": {
+      "count": 0,
+      "ctas": []
+    },
+    "/vat/ioss-vs-oss": {
+      "count": 0,
+      "ctas": []
+    },
+    "/vat/postponed-vat-margin-scheme": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/side-hustle-tax-checker": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/sole-trader-vs-ltd-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/business-structure-and-tax": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/seller-take-home-calculator": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/vat-threshold-tracker": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/amazon-and-marketplace-selling": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/bookkeeping-and-inventory": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/platform-reporting-and-hmrc-letters": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/vat-and-cross-border-selling": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/making-tax-digital-and-self-assessment": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/bookkeeping-and-inventory/cash-vs-accruals-stock": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/business-structure-and-tax/online-seller-formation-trends": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/business-structure-and-tax/online-seller-survival-odds": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/bookkeeping-and-inventory/cogs-inventory-basics": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/platform-reporting-and-hmrc-letters/ebay-tax-rules-uk": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/amazon-and-marketplace-selling/etsy-fees-vat-and-tax": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/vat-and-cross-border-selling/flat-rate-scheme-wrong-for-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/amazon-and-marketplace-selling/is-it-worth-selling-on-amazon-uk": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/amazon-and-marketplace-selling/print-on-demand-tax-uk": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/making-tax-digital-and-self-assessment/trading-allowance-online-sellers": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/vat-and-cross-border-selling/vat-threshold-gross-vs-payout": {
+      "count": 0,
+      "ctas": []
+    }
+  }
+}

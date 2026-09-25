@@ -6,25 +6,25 @@ sourcesVerifiedAt: "2026-07-23"
 author: ""
 category: "Business Structure and Tax"
 metaTitle: "UK Online Seller Formations: The 2026 Data"
-metaDescription: "Company formations for UK online sellers rose 656.7% since 2016 but cooled 13.4% YoY. What the data means for sole trader vs limited company."
+metaDescription: "Company formations for UK online sellers rose 656.7% since 2016 but cooled 13.4% YoY as at April 2026. What the data means for sole trader vs limited company."
 h1: "UK Online Seller Company Formations: A Decade of Data and the 2026 Cooldown"
-summary: "SIC 47910 online-seller incorporations rose 656.7% between 2016 and 2025, but the actual peak year was 2023, and the most recent settled month is down 13.4% year-on-year. Here is what a decade of Companies House data says about the incorporation decision today."
+summary: "SIC 47910 online-seller incorporations rose 656.7% between 2016 and 2025, but the actual peak year was 2023, and the latest settled month at the time of writing, April 2026, was down 13.4% year-on-year. Here is what a decade of Companies House data says about the incorporation decision."
 keyTakeaways:
   - "SIC 47910 online-seller incorporations rose from 10,316 in 2016 to 78,065 in 2025, up 656.7% (a 7.6x multiple), but the actual peak year was 2023 at 84,126, not the 2025 endpoint."
-  - "The most recent settled month (April 2026) recorded 5,976 incorporations, down 13.4% year-on-year, with the trailing twelve months at 76,885."
+  - "As at April 2026, the latest settled month at the time of writing, there were 5,976 incorporations, down 13.4% year-on-year, with the trailing twelve months at 76,885."
   - "Quarterly net incorporations (formations minus dissolutions) fell from +10,048 in 2021-Q1 to negative territory by 2024-Q4 (-5,084), before a partial recovery to +5,098 in 2026-Q2."
   - "Companies formed in the 2021 lockdown boom survive worse at the same age than pre-pandemic cohorts: 71.2% reached year 1 and 31.6% reached year 3, against 78.8% and 47.1% for the 2018 cohort."
   - "The adjacent SIC 47990 segment is cooling faster than 47910, down 28.8% year-on-year against 47910's -13.4%."
   - "None of this changes the sole-trader-versus-limited-company tax maths directly; it changes the context, incorporating today is a smaller, more selective wave than the one that formed between 2020 and 2023."
 faqs:
   - question: "Are UK online seller company formations still growing?"
-    answer: "Not at the moment. The most recent settled month of Companies House data (April 2026) shows 5,976 SIC 47910 incorporations, down 13.4% year-on-year, with the trailing twelve months at 76,885. The decade-long headline of +656.7% growth from 2016 to 2025 is real, but the trend has been falling since 2023."
+    answer: "Not as at April 2026, the latest settled month at the time of writing. Companies House data for that month shows 5,976 SIC 47910 incorporations, down 13.4% year-on-year, with the trailing twelve months at 76,885. The decade-long headline of +656.7% growth from 2016 to 2025 is real, but the trend has been falling since 2023."
   - question: "What was the peak year for UK online seller company formations?"
     answer: "2023, with 84,126 SIC 47910 incorporations, according to Companies House data. 2025's total of 78,065 is lower than 2023's, even though it is still 656.7% above the 2016 starting point of 10,316."
   - question: "Did companies formed during the 2020-2021 online-selling boom survive?"
     answer: "Worse than earlier cohorts, on the data available. Of companies incorporated under SIC 47910 in 2021, 71.2% were still on the register a year later and 31.6% after three years, against 78.8% and 47.1% for the 2018 cohort measured at the same ages."
   - question: "Is the slowdown in online-seller formations happening across all related SIC codes?"
-    answer: "No, and the two segments are tracked separately by design. SIC 47910 (the primary online-retail code) is down 13.4% year-on-year on the latest settled month. SIC 47990 (other non-store retail) is down more steeply, 28.8% year-on-year."
+    answer: "No, and the two segments are tracked separately by design. SIC 47910 (the primary online-retail code) was down 13.4% year-on-year in April 2026, the latest settled month at the time of writing. SIC 47990 (other non-store retail) is down more steeply, 28.8% year-on-year."
   - question: "Where does this online-seller formation data come from?"
     answer: "Companies House Advanced Search API incorporation and dissolution records, and the ONS Retail Sales Index (series J4MC), both published under the Open Government Licence v3.0. The full dataset, methodology and caveats are on our online seller business index."
 ---
@@ -48,15 +48,17 @@ faqs:
   </tbody>
 </table>
 
+<p>Annual figures here are the monthly Companies House incorporation counts for SIC 47910, summed over the calendar year.</p>
+
 <p>The actual peak year on record is 2023, at 84,126 incorporations, not 2025. 2025's total sits below 2023's. The single busiest month in the entire series is April 2024, at 10,015 incorporations in that one month<sup><a href="#ref-1">1</a></sup>, a spike well above the surrounding months that is worth treating as an outlier rather than a trend line on its own.</p>
 
 <h2>The lockdown boom and the pullback since</h2>
 
 <p>Quarterly net incorporations (new companies minus dissolutions in the same quarter) show the shape of the cycle more clearly than annual totals. In 2021-Q1, at the height of the pandemic e-commerce surge, SIC 47910 added a net 10,048 companies to the register in a single quarter<sup><a href="#ref-1">1</a></sup>. That net figure fell steadily through 2022 and 2023, turned negative in 2024-Q4 (-5,084 net) and stayed negative through 2025-Q1 (-3,919 net), before a fragile recovery: +485 in 2025-Q2, +566 in 2025-Q3, +1,813 in 2025-Q4, +64 in 2026-Q1, and +5,098 in 2026-Q2<sup><a href="#ref-1">1</a></sup>. The register is growing again, but at roughly half the rate it was adding companies at the start of 2021.</p>
 
-<h2>The most recent data: a 13.4% year-on-year decline</h2>
+<h2>The data as at April 2026: a 13.4% year-on-year decline</h2>
 
-<p>The latest settled month in the dataset is April 2026, with 5,976 SIC 47910 incorporations, down 13.4% on the same month a year earlier. The trailing twelve months to that point total 76,885 incorporations<sup><a href="#ref-1">1</a></sup>. The adjacent SIC 47990 segment (other non-store retail, tracked separately and never blended into the 47910 headline) is falling faster still: down 28.8% year-on-year, with a trailing twelve-month total of 14,828<sup><a href="#ref-1">1</a></sup>. Both codes are cooling at the same time, and the secondary code is cooling harder, which is a useful early-warning cross-check rather than noise from a single data series.</p>
+<p>The latest settled month in the dataset at the time of writing is April 2026, with 5,976 SIC 47910 incorporations, down 13.4% on the same month a year earlier. The trailing twelve months to that point totalled 76,885 incorporations<sup><a href="#ref-1">1</a></sup>. The adjacent SIC 47990 segment (other non-store retail, tracked separately and never blended into the 47910 headline) was falling faster still: down 28.8% year-on-year, with a trailing twelve-month total of 14,828<sup><a href="#ref-1">1</a></sup>. Both codes were cooling at the same time, and the secondary code is cooling harder, which is a useful early-warning cross-check rather than noise from a single data series.</p>
 
 <h2>What happened to the companies formed in the boom</h2>
 
@@ -70,7 +72,7 @@ faqs:
     <tr><td>2018</td><td>18,685</td><td>27.8%</td><td>78.8%</td><td>57.9%</td><td>47.1%</td></tr>
     <tr><td>2019</td><td>22,420</td><td>30.3%</td><td>86.9%</td><td>55.3%</td><td>46.6%</td></tr>
     <tr><td>2020</td><td>44,685</td><td>23.3%</td><td>78.7%</td><td>49.6%</td><td>38.0%</td></tr>
-    <tr><td>2021</td><td>50,699</td><td>22.1%</td><td>71.2%</td><td>40.8%</td><td>31.6%</td></tr>
+    <tr><td>2021</td><td>50,772</td><td>22.1%</td><td>71.2%</td><td>40.8%</td><td>31.6%</td></tr>
     <tr><td>2022</td><td>53,633</td><td>20.0%</td><td>68.5%</td><td>32.0%</td><td>23.4%</td></tr>
   </tbody>
 </table>
@@ -87,7 +89,7 @@ faqs:
 
 <h2>What this means for the sole trader vs limited company decision</h2>
 
-<p>None of this data changes the tax comparison between trading as a sole trader and incorporating; that comparison runs on profit level, extraction need and stock reinvestment, covered in full in <a href="/blog/sole-trader-vs-ltd-online-sellers">sole trader or limited company for online sellers</a>. What it changes is the backdrop against which that decision gets made. Forming a company today is not riding the same wave as 2020 to 2023: net incorporations in the most recent quarter (2026-Q2, +5,098) are running at roughly half the rate of the 2021-Q1 peak (+10,048), and the latest settled month is down 13.4% year-on-year. If your reason to incorporate is "everyone else is doing it", the data no longer supports that as a majority trend the way it did three years ago. If your reason is the profit and reinvestment maths in the linked comparison, that maths has not changed and does not depend on the formation cycle.</p>
+<p>None of this data changes the tax comparison between trading as a sole trader and incorporating; that comparison runs on profit level, extraction need and stock reinvestment, covered in full in <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader or limited company for online sellers</a>. What it changes is the backdrop against which that decision gets made. Forming a company today is not riding the same wave as 2020 to 2023: net incorporations in the most recent quarter in the data (2026-Q2, +5,098) were running at roughly half the rate of the 2021-Q1 peak (+10,048), and the latest settled month, April 2026, was down 13.4% year-on-year. If your reason to incorporate is "everyone else is doing it", the data no longer supports that as a majority trend the way it did three years ago. If your reason is the profit and reinvestment maths in the linked comparison, that maths has not changed and does not depend on the formation cycle.</p>
 
 <p>The survival data adds a second, separate point worth weighing. A large share of the companies formed in the 2021 boom did not make it past year two. Some of that is normal business attrition; some of it likely reflects companies incorporated quickly, without much planning, while the formation rate was accelerating. A seller incorporating now, in a slower and more deliberate formation environment, is not exposed to that same dynamic simply by forming a company, but it is a reminder that incorporation itself is not a growth strategy. See <a href="/for/amazon-sellers">the Amazon seller hub</a> and <a href="/for/shopify-sellers">the Shopify seller hub</a> for platform-specific structure considerations, and use the <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> to run your own numbers rather than relying on the formation cycle as a signal either way.</p>
 
