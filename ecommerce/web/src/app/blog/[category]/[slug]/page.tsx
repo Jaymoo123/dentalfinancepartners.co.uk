@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllPosts, getPostByCategoryAndSlug, getCategorySlug, calculateReadTime } from "@/lib/blog";
+import { getAllPosts, getPostByCategoryAndSlug, getCategorySlug, calculateReadTime, getRelatedPosts } from "@/lib/blog";
+import { extractHeadings } from "@/lib/markdown-utils";
+import { ReadingProgress } from "@accounting-network/web-shared/design/blog/ReadingProgress";
+import { TableOfContents } from "@accounting-network/web-shared/design/blog/TableOfContents";
+import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
 import { siteConfig } from "@/config/site";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
@@ -30,8 +34,16 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostByCategoryAndSlug(category, slug);
   if (!post) notFound();
   const readTime = calculateReadTime(post.contentHtml);
+  const headings = extractHeadings(post.contentHtml);
+  const related = getRelatedPosts(post.slug, post.category, 3).map((p) => ({
+    href: `/blog/${getCategorySlug(p)}/${p.slug}`,
+    title: p.title,
+    excerpt: p.summary || undefined,
+  }));
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-6xl px-6 py-16 lg:grid lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-12 lg:items-start">
+      <ReadingProgress />
+      <div className="max-w-3xl lg:order-1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: post.title, description: post.metaDescription, url: `/blog/${category}/${slug}`, dateModified: post.updatedDate || post.date }) }} />
       {post.faqs && post.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -48,7 +60,20 @@ export default async function BlogPostPage({ params }: Props) {
       </p>
       <h1 className="mt-3 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">{post.h1 || post.title}</h1>
       <p className="mt-3 text-sm text-neutral-500">{post.date} &middot; {readTime} min read{post.author ? ` &middot; ${post.author}` : ""}</p>
+      {headings.length >= 3 && (
+        <div className="mt-8 lg:hidden">
+          <TableOfContents headings={headings} />
+        </div>
+      )}
       <div className="prose prose-neutral mt-10 max-w-none" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
+          That component is a Radix accordion with no `forceMount`, so closed answers
+          are absent from the server HTML. This page emits FAQPage JSON-LD above that
+          asserts every answer, and P0B_RENDERED_SWEEP.md verified 179 of 179 answers
+          present in the rendered HTML. Swapping in the accordion would make the
+          schema assert text the page does not ship, which is the defect a sibling
+          site had to unwind. Native <details> keeps every answer server-rendered and
+          still collapses. Revisit only if the kit gains forceMount. */}
       {post.faqs && post.faqs.length > 0 && (
         <div className="mt-12 border-t border-neutral-200 pt-8">
           <h2 className="text-xl font-bold text-neutral-900">Frequently asked questions</h2>
@@ -67,11 +92,35 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       )}
+      {related.length > 0 && (
+        <div className="mt-12 border-t border-neutral-200 pt-8">
+          <h2 className="text-xl font-bold text-neutral-900">Related reading</h2>
+          {/* Excerpt is the authored frontmatter summary. The kit prefers a
+              firstSentence() excerpt, but this site has no such helper and adding
+              one is a lib change outside this file's lease. */}
+          <RelatedArticles items={related} className="mt-6" />
+        </div>
+      )}
+      {/* DEFERRED, not declined: packages/web-shared/design/blog/BlogSidebarCta.tsx.
+          It adds a new CTA placement and new authored copy, both owner-visible, and
+          this site's data-cta series was created by phase 1 with no history. */}
       <div className="mt-12 border-t border-neutral-200 pt-8">
         <p className="font-semibold text-neutral-900">Need help with your online selling taxes?</p>
         <p className="mt-2 text-sm text-neutral-600">Tell us about your store or marketplace accounts and we will come back within 24 hours.</p>
         <Link href="/contact" className={`${btnPrimary} mt-4`}>Get in touch</Link>
       </div>
+      </div>
+      {headings.length >= 3 && (
+        /* ONE scroll container, and it is this wrapper, not the component.
+           packages/web-shared/design/blog/TableOfContents.tsx deliberately has NO
+           `stickyDesktop` prop (that prop belongs to the OTHER copy,
+           packages/web-shared/content/TableOfContents.tsx): this family expects the
+           host to own `sticky` + the viewport clamp, so both live here and nowhere
+           inside the component. Patching one copy means patching the other. */
+        <aside className="hidden lg:block lg:order-2 lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
+          <TableOfContents headings={headings} />
+        </aside>
+      )}
     </div>
   );
 }

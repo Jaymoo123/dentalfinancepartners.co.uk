@@ -7,8 +7,8 @@ brand_locked: true
 
 ## PORT PICKUP (Property design standard) - updated 2026-09-25
 
-**Phases 0 and 1 are BUILT and TAGGED (`port-ecommerce-phase0`, `port-ecommerce-phase1`).
-Phases 2 to 6 are NOT built.**
+**Phases 0, 1 and 2 are BUILT and TAGGED (`port-ecommerce-phase0`, `-phase1`, `-phase2`).
+Phases 3 to 6 are NOT built.** Phase 3 (services, audience and VAT hubs) is next.
 Git is the authority: `git tag -l 'port-ecommerce-*'`. Artefacts live in `docs/ecommerce/_port/`.
 
 Baseline: production SHA `153e5017`, 51 URLs, 707 unique internal links (floor 10), 0 dashes,
@@ -132,6 +132,65 @@ from inside `ecommerce/web`.
 - The manager runs all git, all builds, every `packages/web-shared/` edit, and talks to the owner.
 - Never change Property, including indirectly through the kit.
 - Nothing is pushed or deployed without the owner asking in that turn.
+
+## PHASE 2 (blog subsystem) - built 2026-09-26
+
+Three route files on the kit: the index, the 6 category hubs and the article template.
+Adopted `design/blog/ReadingProgress`, `TableOfContents`, `RelatedArticles` and
+`HubArticleList`, plus the kit `Breadcrumb` and `Eyebrow`.
+
+DECLINED, each with the reason written at the call site naming the kit file path:
+- `design/primitives/FaqSection` - Radix accordion with no `forceMount`, so it strips closed
+  answers from the server HTML while this page's FAQPage JSON-LD keeps asserting them. The
+  native `<details>` block stays; every answer stays server-rendered.
+- `design/blog/BlogListWithSearch` - hardcodes `postsPerPage = 12` with `useState(1)`, so the
+  server HTML would carry only 12 of 14 articles. **This is live on the sites that DID adopt it:
+  Solicitors (196 posts), Dentists (223), Medical (88), construction-cis (82), charities (24)
+  and Property. Estate decision, in the owner bundle, not ours to take mid-port.**
+- `design/blog/BlogCategoryHub` - mandates a `form` prop wired to `LeadCTAPanel`, which would
+  add a lead-capture surface this site does not have (owner gate), and requires per-category
+  intro, sections and CTA copy that does not exist anywhere on this site.
+DEFERRED, not declined: `design/blog/BlogSidebarCta`. It introduces a new CTA placement and new
+authored copy, both owner-visible, and this site's whole `data-cta` series was created by phase 1.
+
+`.related-card` rules live in `packages/web-shared/design/globals-standard.css`, which this site
+does not import. Six local lines in this site's own amber instead of importing it: importing is
+the recorded expensive answer, it drags Property's emerald and cream and its collapsed draw
+states across, and it left a sibling site with 64 pages of invisible marks. The `:focus-within`
+half is load-bearing: without it a keyboard user tabbing into a card gets no indication which.
+
+TWO DEFECTS THE PORT ITSELF INTRODUCED, both caught by the instrument and both fixed, recorded
+because the shape recurs:
+1. **56 page-loads of anchor failures.** A contents list works by jumping to headings, and those
+   headings had no scroll offset, so every jump landed under the sticky header. Phase 1 had fixed
+   two cases BY NAME (`#main`, the research footnotes) instead of fixing the class. Now `[id]`
+   carries the offset, so every anchor a later phase adds inherits it. Scroll-margin affects
+   nothing but scrolling, so the broad selector is safe.
+2. **26 page-loads, 3 distinct contrast rows.** The kit contents list paints its active link from
+   `--primary`, undeclared here, which fell through to `--brand-primary` and measured 2.76 at
+   14px. Declared as the accessible text step. The brand hex stays `--brand-primary` for
+   decoration, where it passes.
+
+MEASURED AT PHASE-2 CLOSE: build green at 69 pages; tsc and eslint clean; 45 tests; dependency
+closure OK across 19 sites; sweep 51/51 clean, 0 dead links, 0 link-floor breaches, internal
+links 1173 to 1217, 0 dash regressions, CTA series stable at 51 in one triple; 113 JSON-LD
+blocks parse across 51 routes with 0 failures; `browser_check` 204 page-loads at
+390/768/1024/1440 with **0 new problems** on the third pass, self-test OK, 0 unparseable
+colours, 0 unrendered subtrees. Crawlability proven per surface: 14 of 14 articles in `/blog`
+server HTML, and each hub matches its disk count (3, 2, 3, 2, 2, 2).
+
+OPEN from phase 2, for the owner bundle:
+- The kit blog-list 12-article cap, live on six sibling sites (above).
+- Per-category hub copy (intro, essentials, CTA) does not exist. Until it does, the hubs stay
+  list-and-breadcrumb.
+- `keyTakeaways` is parsed and present in all 14 posts and rendered nowhere on the site.
+- No `firstSentence()` excerpt helper in `src/lib/blog.ts`; the related rail uses the authored
+  frontmatter `summary`, which is the better source anyway.
+- `TableOfContents` sticky behaviour is UNMEASURED: one scroll container on the `<aside>`, none
+  inside the component. Measure at 1440x900 after scrolling 6,000px, expect the nav's parent
+  rect top near 96px and exactly one `overflow-y: auto` in the column.
+- `packages/web-shared/content/` holds twins of `TableOfContents` and `ReadingProgress`. This
+  site uses the `design/blog/` family. A patch to one needs the other.
 
 ## PHASE 1 (chrome and tokens) - built 2026-09-25
 

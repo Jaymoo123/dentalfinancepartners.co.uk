@@ -110,6 +110,12 @@
        link and every footnote reference rendered below the 4.5 text floor: 180 measured
        rows across 7 routes at phase-1 close. Point it at the accessible text step. */
     --accent-strong: #8a5e1a;
+    /* Kit components read --primary first and fall back to --brand-primary, the 3.04
+       brand hex. Undeclared, that put the table of contents' active link at 2.76 on its
+       panel (3 measured rows, phase 2). Declared as the accessible text step: kit reads
+       are text and small-graphic uses, and the brand hex stays --brand-primary for
+       decoration, which is where it passes. */
+    --primary: #8a5e1a;
     --brand-primary-ground: #9e6615; /* white label 4.81 */
     --brand-primary-ground-hover: #8a5e1a; /* white label 5.68 */
 
@@ -179,13 +185,34 @@
 }
 
 @layer components {
+  /* The kit's RelatedArticles cards carry .related-card, whose rules live in
+     packages/web-shared/design/globals-standard.css, which this site does NOT import.
+     Importing it is the expensive answer and a recorded one: it drags Property's emerald
+     and cream and its collapsed draw states across, which left a sibling site with 64
+     pages of invisible marks. Six local lines in this site's own amber instead, keyed to
+     the tokens already declared above. The :focus-within half is the load-bearing one:
+     without it a keyboard user tabbing into a card gets no indication of which card. */
+  .related-card {
+    transition: box-shadow 200ms ease, border-color 200ms ease;
+  }
+  .related-card:hover,
+  .related-card:focus-within {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-primary) 22%, transparent),
+      0 18px 40px -10px color-mix(in srgb, var(--brand-primary-ground) 45%, transparent);
+  }
+
   /* Every in-page anchor target needs to clear the sticky header, or a footnote
      jump lands under it. #main measured 80px against the instrument's 96px floor,
      and the research footnote targets (#ref-1..4) measured 0px: both shipped on
      sibling sites. Scoped to elements that are actually anchor targets. */
-  #main,
-  [id^="ref-"],
-  :target {
+  /* Any element with an id can be an in-page anchor target, and a sticky header
+     hides whatever it lands on. Phase 1 named #main and the research footnotes
+     specifically; phase 2's table of contents then linked to every article heading
+     and 56 measured jumps landed under the header. Fixed as a CLASS, not a list:
+     scroll-margin affects nothing but scrolling, so a broad selector is safe and
+     covers every anchor a later phase adds. */
+  [id] {
     scroll-margin-top: 6rem;
   }
 
