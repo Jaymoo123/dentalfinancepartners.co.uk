@@ -1,5 +1,5 @@
 /**
- * PRE-PORT CTA TRIPLE SNAPSHOT for the Trade (construction-cis) design port.
+ * PRE-PORT CTA TRIPLE SNAPSHOT. Site-agnostic: pass --site=<repo dir name>.
  *
  * Why this exists: sweep_baseline.json records the COUNT of data-cta attributes
  * per route, which is enough to catch a CTA disappearing but NOT enough to catch
@@ -17,23 +17,56 @@
  *
  * Run against `next start`, never `next dev`, and assert the served title first.
  */
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, readdir } from "node:fs/promises";
+import path from "node:path";
 
-const BASE = process.argv[2] || "http://localhost:3177";
-const BASELINE = process.argv[3];
-const OUT = process.argv[4];
-const EXPECT_TITLE = "CIS Accountants";
+// GENERALISED 2026-09-25 (ecommerce port, phase 0). This file was hardcoded to
+// construction-cis -- positional args, EXPECT_TITLE "CIS Accountants" and a literal
+// site key in its own output -- while the README and the playbook both document it
+// as `--site=<key>`. Every gate that named it on another site could not run, and a
+// gate whose command does not run is a FAILED gate. Flags now match sweep.mjs and
+// browser_check.mjs; the positional form still works so older recipes do not break.
+const args = process.argv.slice(2);
+const flag = (name, dflt) => {
+  const hit = args.find((a) => a.startsWith(`--${name}=`));
+  return hit ? hit.slice(name.length + 3) : dflt;
+};
+const REPO = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1")), "../../..");
+const positional = args.filter((a) => !a.startsWith("--"));
+
+const SITE = flag("site", "");
+if (!SITE) {
+  console.error("usage: node cta_snapshot.mjs --site=<key> [--base=URL] [--baseline=PATH] [--out=PATH]");
+  process.exit(2);
+}
+const BASE = flag("base", positional[0] || "http://localhost:3000");
+const BASELINE = flag("baseline", positional[1] || `docs/${SITE.toLowerCase()}/_port/sweep_baseline.json`);
+const OUT = flag("out", positional[2] || `tmp/cta_${SITE}_${Date.now()}.json`);
 
 const routes = Object.keys(JSON.parse(await readFile(BASELINE, "utf8")).links);
 
 // Assert we are measuring the right site before trusting anything (field notes s5).
-const home = await (await fetch(BASE + "/")).text();
-const title = (home.match(/<title>([^<]*)<\/title>/) || [, ""])[1];
-if (!title.includes(EXPECT_TITLE)) {
-  console.error(`WRONG SITE on ${BASE}: title is "${title}", expected to contain "${EXPECT_TITLE}"`);
+// Identity comes from the site's own niche.config.json, exactly as sweep.mjs resolves
+// it, because a served <title> is page copy and differs from the brand on most sites.
+const dirs = await readdir(REPO, { withFileTypes: true });
+const siteDir = dirs.find((d) => d.isDirectory() && d.name.toLowerCase() === SITE.toLowerCase())?.name;
+if (!siteDir) {
+  console.error(`no directory named '${SITE}' in ${REPO}`);
   process.exit(2);
 }
-console.log(`title asserted: "${title}"`);
+const cfg = JSON.parse(await readFile(path.join(REPO, siteDir, "niche.config.json"), "utf8"));
+const EXPECT = cfg.display_name || cfg.legal_name;
+if (!EXPECT) {
+  console.error(`${siteDir}/niche.config.json has no display_name`);
+  process.exit(2);
+}
+const home = await (await fetch(BASE + "/")).text();
+const title = (home.match(/<title>([^<]*)<\/title>/) || [, ""])[1];
+if (!home.includes(EXPECT)) {
+  console.error(`WRONG SITE on ${BASE}: title is "${title}", expected the page to carry "${EXPECT}"`);
+  process.exit(2);
+}
+console.log(`identity asserted on ${BASE}: "${EXPECT}" present, title "${title}"`);
 
 // One tag can carry the triple in any attribute order, so capture the whole tag
 // and pick the attributes out of it rather than assuming order.
@@ -110,7 +143,7 @@ await Promise.all(Array.from({ length: 8 }, worker));
 
 const out = {
   ts: new Date().toISOString(),
-  site: "construction-cis",
+  site: SITE,
   base: BASE,
   sha: JSON.parse(await readFile(BASELINE, "utf8")).sha,
   served_title: title,
