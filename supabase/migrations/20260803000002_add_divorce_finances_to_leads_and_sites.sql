@@ -48,12 +48,12 @@ ALTER TABLE sites ADD CONSTRAINT sites_site_key_check
     'niche_screener'::text,'niche_screener_gen1'::text,
     'wills-probate'::text,'divorce-finances'::text]));
 
--- active = false: the site is still held at owner gate G1 (brand and domain
--- undecided), so it must not be picked up by any scheduled job yet.
+-- active = false: brand and domain locked at G1 on 2026-09-25, but the site is
+-- not deployed yet, so it must not be picked up by any scheduled job until it is.
 INSERT INTO sites (site_key, display_name, domain, niche, content_dir,
   git_repo_path, blog_topics_table, active)
-VALUES ('divorce-finances', 'Divorce Finances (placeholder)',
-  'www.divorce-finances-placeholder.co.uk', 'divorce-financial-settlement',
+VALUES ('divorce-finances', 'Divorce Finance Specialists',
+  'www.divorcefinancespecialists.co.uk', 'divorce-financial-settlement',
   'divorce-finances/web/content/blog', 'divorce-finances/web', 'blog_topics',
   false)
 ON CONFLICT (site_key) DO NOTHING;

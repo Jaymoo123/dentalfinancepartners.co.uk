@@ -1,5 +1,5 @@
 /**
- * Probate Compass (wills-probate) lead-nurture composition: the contactability
+ * Estate Planning Specialists (wills-probate) lead-nurture composition: the contactability
  * sequence and detail-capture sequence for wills, probate and estate enquiries.
  *
  * SERVICE-ONLY (compliance): every message is a solicited, non-promotional
@@ -84,10 +84,10 @@ export function ctaLabelFor(missing: MissingContactField[] | undefined): string 
   return "Add your details";
 }
 
-const COMPANY = "Probate Compass";
+const COMPANY = "Estate Planning Specialists";
 const SIGNOFF = `Best wishes, the team at ${COMPANY}`;
 const FOOTER =
-  "You are receiving this because you submitted an enquiry on the Probate Compass website.";
+  "You are receiving this because you submitted an enquiry on the Estate Planning Specialists website.";
 const OPT_OUT = "Reply STOP to opt out.";
 
 function base(): string {
@@ -314,8 +314,8 @@ const STEPS: LeadNurtureStep[] = [
         c,
         "t0_sms",
         willsRoleOf(c) === "bereaved"
-          ? `Hi ${c.firstName}, this is Probate Compass. Thank you for getting in touch. Whenever you are ready, reply YES and a member of the team will call you. No rush at all. ${c.optOutText}`
-          : `Hi ${c.firstName}, this is Probate Compass. Thanks for your enquiry. Reply YES and a member of the team will call you about your estate or probate question. ${c.optOutText}`,
+          ? `Hi ${c.firstName}, this is Estate Planning Specialists. Thank you for getting in touch. Whenever you are ready, reply YES and a member of the team will call you. No rush at all. ${c.optOutText}`
+          : `Hi ${c.firstName}, this is Estate Planning Specialists. Thanks for your enquiry. Reply YES and a member of the team will call you about your estate or probate question. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.bookingUrl]),
     ],
@@ -335,7 +335,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Probate Compass again. Situations like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Estate Planning Specialists again. Situations like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -351,8 +351,8 @@ const STEPS: LeadNurtureStep[] = [
         c,
         "day1_sms",
         willsRoleOf(c) === "bereaved"
-          ? `Hi ${c.firstName}, Probate Compass here. Just a gentle note that your free call is still open whenever you feel ready. Reply YES and we will arrange it around you. ${c.optOutText}`
-          : `Hi ${c.firstName}, following up on your wills and probate enquiry. We have kept some time free this week for a short call. Reply YES and we will call you. ${c.optOutText}`,
+          ? `Hi ${c.firstName}, Estate Planning Specialists here. Just a gentle note that your free call is still open whenever you feel ready. Reply YES and we will arrange it around you. ${c.optOutText}`
+          : `Hi ${c.firstName}, following up on your wills and probate enquiry. We have kept some time free this week for a short call. Reply YES and we will arrange it. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),
     ],
@@ -425,8 +425,8 @@ const STEPS: LeadNurtureStep[] = [
         c,
         "day4_sms",
         willsRoleOf(c) === "bereaved"
-          ? `Hi ${c.firstName}, Probate Compass here. No rush at all, your free call stays open for whenever the time feels right. Reply YES whenever you are ready and we will take it from there. ${c.optOutText}`
-          : `Hi ${c.firstName}, Probate Compass here. Most people we speak to had a question just like yours, and one short call usually clears up weeks of uncertainty. Reply YES and we will call you. ${c.optOutText}`,
+          ? `Hi ${c.firstName}, Estate Planning Specialists here. No rush at all, your free call stays open for whenever the time feels right. Reply YES whenever you are ready and we will take it from there. ${c.optOutText}`
+          : `Hi ${c.firstName}, Estate Planning Specialists here. Most people we speak to had a question just like yours, and one short call usually clears up weeks of uncertainty. Reply YES and we will arrange it. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),
     ],
@@ -556,7 +556,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, thanks for getting in touch with Probate Compass."),
+            ...detailGreeting(c, "Hi, thanks for getting in touch with Estate Planning Specialists."),
           },
         ),
       ];
@@ -581,7 +581,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, following up from Probate Compass."),
+            ...detailGreeting(c, "Hi, following up from Estate Planning Specialists."),
           },
         ),
       ];
@@ -607,7 +607,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, from the team at Probate Compass."),
+            ...detailGreeting(c, "Hi, from the team at Estate Planning Specialists."),
           },
         ),
       ];
@@ -634,7 +634,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           {
             cta: null,
             secondary: null,
-            ...detailGreeting(c, "Hi, one last message from Probate Compass."),
+            ...detailGreeting(c, "Hi, one last message from Estate Planning Specialists."),
           },
         ),
       ];

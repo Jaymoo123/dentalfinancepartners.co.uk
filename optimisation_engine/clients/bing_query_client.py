@@ -85,8 +85,8 @@ DEFAULT_SITE_URL = {
     "crypto":           "https://cryptotaxpartners.co.uk",
     "ecommerce":        "https://ecommercefinance.co.uk",
     "startups-tech":    "https://foundertaxpartners.co.uk",
-    "wills-probate":    "https://www.probate-compass-placeholder.co.uk",
-    "divorce-finances": "https://www.placeholder-divorce-domain.example",
+    "wills-probate":    "https://www.estateplanningspecialists.co.uk",
+    "divorce-finances": "https://www.divorcefinancespecialists.co.uk",
 }
 
 

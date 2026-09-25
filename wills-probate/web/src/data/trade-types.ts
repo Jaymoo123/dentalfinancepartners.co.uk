@@ -23,7 +23,7 @@ export const tradeTypes: TradeType[] = [
     segment: "trade",
     title: "Executors",
     headline: "Clear guidance for people acting as an executor",
-    metaTitle: "First-Time Executor? A Calm, Step-by-Step Starting Point | Probate Compass",
+    metaTitle: "First-Time Executor? A Calm, Step-by-Step Starting Point | Estate Planning Specialists",
     metaDescription:
       "Named as an executor and not sure where to begin? Plain-English guidance on probate, estate valuation and inheritance tax, with free calculators to do the sums.",
     intro:
@@ -83,7 +83,7 @@ export const tradeTypes: TradeType[] = [
     segment: "trade",
     title: "Surviving spouses",
     headline: "Guidance for surviving spouses and civil partners",
-    metaTitle: "Inheritance and Tax After Losing Your Spouse | Probate Compass",
+    metaTitle: "Inheritance and Tax After Losing Your Spouse | Estate Planning Specialists",
     metaDescription:
       "What happens to joint assets, the spouse exemption, and the allowances you inherit. Clear information for widows and widowers, with free calculators.",
     intro:
@@ -139,7 +139,7 @@ export const tradeTypes: TradeType[] = [
     segment: "trade",
     title: "Blended families",
     headline: "Estate planning for blended families",
-    metaTitle: "Wills for Blended Families: Why DIY Is Risky | Probate Compass",
+    metaTitle: "Wills for Blended Families: Why DIY Is Risky | Estate Planning Specialists",
     metaDescription:
       "Second marriages, stepchildren and sideways disinheritance. Why blended families need more than a basic mirror will, explained in plain English.",
     intro:
@@ -194,7 +194,7 @@ export const tradeTypes: TradeType[] = [
     segment: "business",
     title: "Business owners",
     headline: "Succession and inheritance tax planning for business owners",
-    metaTitle: "Inheritance Tax and Succession for Business Owners | Probate Compass",
+    metaTitle: "Inheritance Tax and Succession for Business Owners | Estate Planning Specialists",
     metaDescription:
       "Business relief basics, the rules that changed in April 2026, and why business owners should check their exposure now. Free calculators included.",
     intro:
@@ -254,7 +254,7 @@ export const tradeTypes: TradeType[] = [
     segment: "business",
     title: "Pension holders (2027 changes)",
     headline: "What the 2027 pension and IHT changes mean for you",
-    metaTitle: "Pensions and Inheritance Tax from April 2027: Check Your Exposure | Probate Compass",
+    metaTitle: "Pensions and Inheritance Tax from April 2027: Check Your Exposure | Estate Planning Specialists",
     metaDescription:
       "From 6 April 2027 unused pensions are due to count for inheritance tax. Who is affected, who is not, and a free checker to estimate your exposure.",
     intro:
@@ -310,7 +310,7 @@ export const tradeTypes: TradeType[] = [
     segment: "business",
     title: "Expats",
     headline: "Probate and inheritance tax for expats and UK domicile",
-    metaTitle: "UK Inheritance Tax for Expats and Cross-Border Estates | Probate Compass",
+    metaTitle: "UK Inheritance Tax for Expats and Cross-Border Estates | Estate Planning Specialists",
     metaDescription:
       "Long-term residence rules from 2025, foreign assets and cross-border wills. Careful, plain-English information for expats with UK connections.",
     intro:

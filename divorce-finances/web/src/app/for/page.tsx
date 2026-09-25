@@ -24,7 +24,7 @@ export default function ForIndexPage() {
             Help for every stage of divorce and separation.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            The money side of separating plays out differently for every situation. Audience guides are being built now.
+            The money side of separating plays out differently depending on what you own, what you earn and who depends on you. These guides start from your situation rather than from the law.
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function ForIndexPage() {
       <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <h2 className="text-xs font-semibold text-orange-400 uppercase tracking-wider mb-2">
-            For individual trades
+            For individuals
           </h2>
           <p className="text-neutral-400 text-sm mb-8 max-w-2xl">
             Guides for individuals working through the money side of divorce and separation.
@@ -66,7 +66,7 @@ export default function ForIndexPage() {
               Other situations
             </h2>
             <p className="text-neutral-400 text-sm mb-8 max-w-2xl">
-              Guides for other situations. Being built now.
+              Guides for situations where a business, a partnership or a complex asset is part of the split.
             </p>
             <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {businessSegment.map((type) => (
@@ -99,10 +99,19 @@ export default function ForIndexPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
               <p>
-                Placeholder: real audience copy lands with the content build.
+                Two couples can separate with the same house, the same salaries and the same
+                savings, and still need completely different answers. A pension built over
+                thirty years is not the same asset as thirty years of equity in a home, even
+                when a spreadsheet says they are worth the same. A business that supports one
+                household rarely supports two without something changing. Whether children are
+                involved reshapes almost every decision that follows.
               </p>
               <p>
-                Placeholder: real audience copy lands with the content build. 
+                That is why these guides are organised by situation rather than by legal
+                procedure. Start with the one that matches yours, use the calculators to put
+                real numbers against your own position, and you will walk into any conversation
+                with a solicitor or mediator already knowing what you are dealing with. That
+                tends to be the cheapest hour you will spend on the whole process.
               </p>
             </div>
             <div className="mt-8">

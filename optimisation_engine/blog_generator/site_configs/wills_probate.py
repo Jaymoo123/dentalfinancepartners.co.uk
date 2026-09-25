@@ -1,9 +1,8 @@
-"""Probate Compass (wills-probate) site configuration.
+"""Estate Planning Specialists (wills-probate) site configuration.
 
-Placeholder brand "Probate Compass" / domain "probate-compass-placeholder"
-(2026-07-24). Real brand + domain decided at owner gate G1 pre-deploy; all
-content bodies are brand-agnostic (zero brand-name mentions) so the rewrite
-at G1 is a metadata-only swap.
+Brand locked at owner gate G1 (2026-09-25): Estate Planning Specialists,
+estateplanningspecialists.co.uk. Content bodies are brand-agnostic (zero
+brand-name mentions) so this was a metadata-only swap.
 
 All content rules are defined inline here (no legacy per-site config_supabase.py
 to import from; mirrors construction_cis.py structure).
@@ -331,10 +330,10 @@ This site is an independent information service with free calculators, connectin
 SITE_CONFIG: dict = {
     # --- Identity & routing ---------------------------------------------------
     "site_key": "wills-probate",
-    "display_name": "Probate Compass",
-    "domain": "www.probate-compass-placeholder.co.uk",
-    "site_base_url": "https://www.probate-compass-placeholder.co.uk",
-    "author_name": "Probate Compass Editorial Team",
+    "display_name": "Estate Planning Specialists",
+    "domain": "www.estateplanningspecialists.co.uk",
+    "site_base_url": "https://www.estateplanningspecialists.co.uk",
+    "author_name": "Estate Planning Specialists Editorial Team",
     "output_dir": "wills-probate/web/content/blog",
     "pillar_output_dir": None,
 

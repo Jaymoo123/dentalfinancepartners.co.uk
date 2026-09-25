@@ -1,10 +1,9 @@
-"""Divorce-finances site configuration.
+"""Divorce Finance Specialists (divorce-finances) site configuration.
 
-Placeholder brand "Divorce Finance Compass" / domain "divorce-finance-placeholder"
-(2026-07-24). Real brand + domain decided at owner gate G1 pre-deploy; all
-content bodies are brand-agnostic (zero brand-name mentions) so the rewrite
-at G1 is a metadata-only swap. Mirrors wills_probate.py (sibling legal/YMYL
-niche built the same day).
+Brand locked at owner gate G1 (2026-09-25): Divorce Finance Specialists,
+divorcefinancespecialists.co.uk. Content bodies are brand-agnostic (zero
+brand-name mentions) so this was a metadata-only swap. Mirrors
+wills_probate.py (sibling legal/YMYL niche built the same day).
 
 All content rules are defined inline here (no legacy per-site config_supabase.py
 to import from).
@@ -279,10 +278,10 @@ This site is an independent information service with free calculators, connectin
 SITE_CONFIG: dict = {
     # --- Identity & routing ---------------------------------------------------
     "site_key": "divorce-finances",
-    "display_name": "Divorce Finance Compass",
-    "domain": "www.divorce-finance-placeholder.co.uk",
-    "site_base_url": "https://www.divorce-finance-placeholder.co.uk",
-    "author_name": "Divorce Finance Compass Editorial Team",
+    "display_name": "Divorce Finance Specialists",
+    "domain": "www.divorcefinancespecialists.co.uk",
+    "site_base_url": "https://www.divorcefinancespecialists.co.uk",
+    "author_name": "Divorce Finance Specialists Editorial Team",
     "output_dir": "divorce-finances/web/content/blog",
     "pillar_output_dir": None,
 

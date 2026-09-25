@@ -1,6 +1,6 @@
 {
   "niche_id": "divorce-finances",
-  "display_name": "PLACEHOLDER-DIVORCE-BRAND",
+  "display_name": "Divorce Finance Specialists",
   "legal_name": "Ashfield Trading Ltd",
   "company": {
     "number": "16358723",
@@ -15,16 +15,16 @@
     "enquiry_retention_months": 24
   },
   "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
-  "domain": "placeholder-divorce-domain.example",
+  "domain": "www.divorcefinancespecialists.co.uk",
   "tagline": "Clear, practical guidance on the money side of divorce and separation in the UK",
-  "description": "Plain-English guidance on financial settlements, pensions, tax and the family home for people divorcing or separating in the UK. Free calculators, no jargon. We connect readers with specialist help when their situation needs it.",
+  "description": "Divorce Finance Specialists. Plain-English guidance on financial settlements, pensions, tax and the family home for people divorcing or separating in the UK. Free calculators, no jargon. We connect readers with specialist help when their situation needs it.",
   "brand": {
     "primary_color": "#1d4ed8",
     "logo_path": "/brand/primary-logo.png",
     "publisher_logo_url": "/brand/icon-alt.png"
   },
   "contact": {
-    "email": "hello@placeholder-divorce-domain.example",
+    "email": "hello@divorcefinancespecialists.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

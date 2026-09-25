@@ -5,7 +5,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { tradeTypes } from "@/data/trade-types";
 
 export const metadata: Metadata = {
-  title: "Who We Help | Probate Compass",
+  title: "Who We Help | Estate Planning Specialists",
   description:
     "Plain-English probate, wills and inheritance tax guidance for executors, surviving spouses, blended families, business owners, pension holders and expats.",
 };

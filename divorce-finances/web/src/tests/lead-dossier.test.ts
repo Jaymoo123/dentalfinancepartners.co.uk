@@ -80,7 +80,7 @@ vi.mock("@/lib/leads/channels", () => ({
 const resendSendSpy = vi.fn(async () => ({ data: { id: "em_1" }, error: null }));
 vi.mock("@/lib/resend", () => ({
   getResend: () => ({ emails: { send: resendSendSpy } }),
-  getFromAddress: () => "PLACEHOLDER-DIVORCE-BRAND <ops@x>",
+  getFromAddress: () => "Divorce Finance Specialists <ops@x>",
 }));
 vi.mock("@/lib/lead-routing", () => ({
   resolveLeadTo: () => "operator@example.com",

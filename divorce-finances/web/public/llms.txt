@@ -1,5 +1,5 @@
-# divorce-finances (brand pending)
+# Divorce Finance Specialists (divorce-finances)
 
 > Plain-English guidance on the money side of divorce and separation in the UK: financial settlements, pension sharing, tax on divorce, the family home, maintenance and the process itself.
 
-STUB (scaffold phase): this file is regenerated when the site's content and brand are live. No pages to cite yet.
+STUB (pre-launch): the site is built but not yet published at divorcefinancespecialists.co.uk. There are no citable public URLs yet, so nothing here should be cited or indexed. This file is regenerated at launch with the full index of pillars, blog categories and calculators.

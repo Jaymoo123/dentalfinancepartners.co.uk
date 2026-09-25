@@ -10,8 +10,8 @@
  * can be rotated independently.
  *
  * Configure in Resend dashboard:
- *   Inbound routing domain: probate-compass-placeholder.co.uk (or a reply.* subdomain)
- *   Endpoint URL: https://www.probate-compass-placeholder.co.uk/api/leads/inbound/email
+ *   Inbound routing domain: estateplanningspecialists.co.uk (or a reply.* subdomain)
+ *   Endpoint URL: https://www.estateplanningspecialists.co.uk/api/leads/inbound/email
  *   Events: email.received (inbound only)
  *   Signing secret (whsec_...): set as LEAD_RESEND_INBOUND_SECRET
  *

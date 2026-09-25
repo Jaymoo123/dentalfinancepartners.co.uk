@@ -179,9 +179,9 @@ export async function acknowledgeEmailReply(opts: { leadId: string }): Promise<b
         "There is nothing else for you to do. If anything changes in the meantime, just reply here and I will pick it up.",
       ],
       // No cta/secondary: this is a reply-only service email, nothing to click.
-      signoff: "Speak soon, the team at Probate Compass",
+      signoff: "Speak soon, the team at Estate Planning Specialists",
       footerNote:
-        "You are receiving this because you submitted an enquiry on www.probate-compass-placeholder.co.uk.",
+        "You are receiving this because you submitted an enquiry on www.estateplanningspecialists.co.uk.",
       ...(ctx.optOutUrl ? { optOutUrl: ctx.optOutUrl } : {}),
     });
 

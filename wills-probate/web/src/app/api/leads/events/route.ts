@@ -8,7 +8,7 @@
  *
  * Configure in the Resend dashboard as a SEPARATE webhook endpoint from the
  * subscriber one:
- *   Endpoint URL: https://www.probate-compass-placeholder.co.uk/api/leads/events
+ *   Endpoint URL: https://www.estateplanningspecialists.co.uk/api/leads/events
  *   Events: email.opened, email.clicked, email.bounced, email.complained
  *   Signing secret (starts with whsec_): set as LEAD_RESEND_WEBHOOK_SECRET
  *

@@ -1,6 +1,6 @@
 {
   "niche_id": "wills-probate",
-  "display_name": "Probate Compass",
+  "display_name": "Estate Planning Specialists",
   "legal_name": "Ashfield Trading Ltd",
   "company": {
     "number": "16358723",
@@ -15,16 +15,16 @@
     "enquiry_retention_months": 24
   },
   "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
-  "domain": "www.probate-compass-placeholder.co.uk",
+  "domain": "www.estateplanningspecialists.co.uk",
   "tagline": "Clear, practical guidance on probate, wills and inheritance tax in the UK",
-  "description": "Probate Compass. Plain-English guidance on probate, wills and inheritance tax for UK executors, administrators and people planning their estates. Free calculators, no jargon. We connect readers with specialist help when the estate needs it.",
+  "description": "Estate Planning Specialists. Plain-English guidance on probate, wills and inheritance tax for UK executors, administrators and people planning their estates. Free calculators, no jargon. We connect readers with specialist help when the estate needs it.",
   "brand": {
     "primary_color": "#0f766e",
     "logo_path": "/brand/primary-logo.png",
     "publisher_logo_url": "/brand/icon-alt.png"
   },
   "contact": {
-    "email": "hello@probate-compass-placeholder.co.uk",
+    "email": "hello@estateplanningspecialists.co.uk",
     "phone": "+44 20 0000 0000"
   },
   "navigation": [

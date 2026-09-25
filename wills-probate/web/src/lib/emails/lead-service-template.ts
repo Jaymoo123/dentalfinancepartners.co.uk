@@ -1,5 +1,5 @@
 /**
- * Service-email shell for Probate Compass lead-nurture follow-ups.
+ * Service-email shell for Estate Planning Specialists lead-nurture follow-ups.
  *
  * Renders a centred white card on a #f6f7f8 canvas with the Trade Tax
  * Specialists wordmark, 16px/1.6 body, green-accented signature block, quiet
@@ -73,9 +73,9 @@ ${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
 <td style="border-left:3px solid #059669;padding:2px 0 2px 14px;font-family:${FONT};">
-<div style="font-size:16px;font-weight:600;color:#0f172a;line-height:1.5;">The team at Probate Compass</div>
-<div style="font-size:14px;font-weight:600;color:#059669;line-height:1.5;">Probate Compass</div>
-<div style="font-size:13px;color:#64748b;line-height:1.6;"><a href="https://www.www.probate-compass-placeholder.co.uk" style="color:#64748b;text-decoration:none;">www.probate-compass-placeholder.co.uk</a></div>
+<div style="font-size:16px;font-weight:600;color:#0f172a;line-height:1.5;">The team at Estate Planning Specialists</div>
+<div style="font-size:14px;font-weight:600;color:#059669;line-height:1.5;">Estate Planning Specialists</div>
+<div style="font-size:13px;color:#64748b;line-height:1.6;"><a href="https://www.estateplanningspecialists.co.uk" style="color:#64748b;text-decoration:none;">www.estateplanningspecialists.co.uk</a></div>
 </td>
 </tr>
 </table>
@@ -104,8 +104,8 @@ ${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
     "",
     e.signoff,
     "",
-    "The team at Probate Compass",
-    "www.probate-compass-placeholder.co.uk",
+    "The team at Estate Planning Specialists",
+    "www.estateplanningspecialists.co.uk",
     "",
     e.footerNote,
     ...(e.optOutUrl ? ["To opt out, just reply STOP."] : []),

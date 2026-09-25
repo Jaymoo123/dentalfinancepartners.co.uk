@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Phase-0 deterministic specialist widget for Probate Compass (wills-probate).
+ * Phase-0 deterministic specialist widget for Estate Planning Specialists (wills-probate).
  *
  * A topic-aware proactive assistant that shows a tailored opener, routes to /contact,
  * and captures an email + message via email_only captureMode. No LLM. No booking branch.
@@ -360,7 +360,7 @@ export function SpecialistWidget() {
       {open && (
         <div
           role="dialog"
-          aria-label="Probate Compass assistant"
+          aria-label="Estate Planning Specialists assistant"
           className="mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl"
           style={{ height: "min(72dvh, 34rem)" }}
         >
@@ -375,7 +375,7 @@ export function SpecialistWidget() {
               </svg>
             </span>
             <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-bold leading-tight">Probate Compass</p>
+              <p className="truncate text-sm font-bold leading-tight">Estate Planning Specialists</p>
               <p className="truncate text-[11px] text-white/70">A specialist replies within one working day</p>
             </div>
             <button

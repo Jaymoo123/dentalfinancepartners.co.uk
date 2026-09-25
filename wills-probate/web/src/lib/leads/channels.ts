@@ -1,5 +1,5 @@
 /**
- * Probate Compass lead-nurture channel sender: implements the engine's
+ * Estate Planning Specialists lead-nurture channel sender: implements the engine's
  * ChannelSender over Resend (email) and Twilio REST (SMS + WhatsApp).
  *
  * DORMANCY (safety): real messages leave ONLY when LEAD_NURTURE_ENABLED is set
@@ -35,7 +35,7 @@ function channelEnabled(channel: "email" | "sms" | "whatsapp"): boolean {
 // ── Email (Resend) ─────────────────────────────────────────────────────────
 
 function serviceFrom(): string {
-  const name = process.env.LEAD_SERVICE_FROM_NAME || "Probate Compass";
+  const name = process.env.LEAD_SERVICE_FROM_NAME || "Estate Planning Specialists";
   const email = process.env.LEAD_SERVICE_FROM_EMAIL || "leads@propertytaxpartners.co.uk";
   return `${name} <${email}>`;
 }

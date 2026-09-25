@@ -90,14 +90,14 @@ export function buildIcsForSlot(params: IcsSlotParams): string {
   const startMs = londonToUtcMs(params.date, bounds.startH, bounds.startM);
   const endMs   = londonToUtcMs(params.date, bounds.endH,   bounds.endM);
 
-  const uid     = `${params.leadId}-${params.date}-${params.windowKey}@probate-compass-placeholder.co.uk`;
+  const uid     = `${params.leadId}-${params.date}-${params.windowKey}@estateplanningspecialists.co.uk`;
   const summary = `Probate review call (${params.label})`;
   const desc    = "A specialist will call you in this window. Nothing to prepare.";
 
   return [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Probate Compass//Lead Review//EN",
+    "PRODID:-//Estate Planning Specialists//Lead Review//EN",
     "BEGIN:VEVENT",
     `UID:${uid}`,
     `DTSTART:${toIcsDtStamp(startMs)}`,
@@ -160,10 +160,10 @@ function buildOptOutUrl(leadId: string, base: string): string {
 // Email constants
 // ---------------------------------------------------------------------------
 
-const COMPANY  = "Probate Compass";
+const COMPANY  = "Estate Planning Specialists";
 const SIGNOFF  = `Speak soon, the team at ${COMPANY}`;
 const FOOTER   =
-  "You are receiving this because you submitted an enquiry on www.probate-compass-placeholder.co.uk.";
+  "You are receiving this because you submitted an enquiry on www.estateplanningspecialists.co.uk.";
 
 // ---------------------------------------------------------------------------
 // Booked event meta shape
@@ -268,7 +268,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
                   `Your free probate review call is tomorrow, ${windowPhrase}.`,
-                  "One of our specialists will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+                  "The partner firm we introduce you to will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
                   "If the time no longer works, just reply to this email and we will move it to one that does.",
                 ],
                 signoff: SIGNOFF,

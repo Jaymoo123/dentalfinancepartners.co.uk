@@ -29,8 +29,8 @@ ALTER TABLE sites ADD CONSTRAINT sites_site_key_check
 
 INSERT INTO sites (site_key, display_name, domain, niche, content_dir,
   git_repo_path, blog_topics_table, active)
-VALUES ('wills-probate', 'Probate Compass (placeholder)',
-  'www.probate-compass-placeholder.co.uk', 'wills-probate-estate-planning',
+VALUES ('wills-probate', 'Estate Planning Specialists',
+  'www.estateplanningspecialists.co.uk', 'wills-probate-estate-planning',
   'wills-probate/web/content/blog', 'wills-probate/web', 'blog_topics', false)
 ON CONFLICT (site_key) DO NOTHING;
 
