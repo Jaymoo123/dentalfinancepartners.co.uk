@@ -13,14 +13,17 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, focusRingOnBrand } from "@/components/ui/layout-utils";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
 // ponytail: neutral/amber chips, border uses the brand CSS var so it adapts if tokens shift
+// Ring is picked per state below (focusRing on chipIdle's white ground,
+// focusRingOnBrand on chipSelected's neutral-900 ground): a section class
+// can't express a ring that toggles with the same element's own background.
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)]";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150";
 const chipIdle =
   "border-neutral-200 bg-white text-neutral-900 hover:border-[var(--brand-primary)] hover:bg-amber-50";
 const chipSelected =
@@ -122,7 +125,7 @@ export default function BookingPicker({ token }: { token: string }) {
             type="button"
             onClick={() => setDate(d.iso)}
             aria-pressed={date === d.iso}
-            className={`${chipBase} ${date === d.iso ? chipSelected : chipIdle}`}
+            className={`${chipBase} ${date === d.iso ? `${chipSelected} ${focusRingOnBrand}` : `${chipIdle} ${focusRing}`}`}
           >
             <span className="text-xs font-semibold opacity-80">{d.weekday}</span>
             <span>
@@ -142,7 +145,7 @@ export default function BookingPicker({ token }: { token: string }) {
             type="button"
             onClick={() => setWindowKey(w.key)}
             aria-pressed={windowKey === w.key}
-            className={`${chipBase} ${windowKey === w.key ? chipSelected : chipIdle}`}
+            className={`${chipBase} ${windowKey === w.key ? `${chipSelected} ${focusRingOnBrand}` : `${chipIdle} ${focusRing}`}`}
           >
             <span>{w.label}</span>
             <span className="text-xs font-semibold opacity-80">{w.hours}</span>

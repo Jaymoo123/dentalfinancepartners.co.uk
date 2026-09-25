@@ -30,7 +30,7 @@ export default async function CalculatorPage({ params }: Props) {
   const tool = getGenericTool(slug);
   if (!tool) notFound();
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -58,6 +58,6 @@ export default async function CalculatorPage({ params }: Props) {
           </div>
         </section>
       )}
-    </main>
+    </div>
   );
 }

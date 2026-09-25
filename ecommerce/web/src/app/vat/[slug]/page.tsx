@@ -89,7 +89,7 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
         </div>
       </section>
     )}
-    <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
+    <section className="ground-dark bg-neutral-900 py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
         <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to an ecommerce VAT specialist.</h2>
         <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">Tell us about your VAT situation and we will reply within 24 hours.</p>

@@ -37,7 +37,7 @@ const reports = [
 
 export default function ResearchIndexPage() {
   return (
-    <main>
+    <>
       <section className="border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <p className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-6">Research</p>
@@ -73,6 +73,6 @@ export default function ResearchIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

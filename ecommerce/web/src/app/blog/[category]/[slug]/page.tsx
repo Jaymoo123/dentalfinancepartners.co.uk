@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllPosts, getPostByCategoryAndSlug, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
+import { btnPrimary } from "@/components/ui/layout-utils";
 import { buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
@@ -30,7 +31,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
   const readTime = calculateReadTime(post.contentHtml);
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: post.title, description: post.metaDescription, url: `/blog/${category}/${slug}`, dateModified: post.updatedDate || post.date }) }} />
       {post.faqs && post.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -69,8 +70,8 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="mt-12 border-t border-neutral-200 pt-8">
         <p className="font-semibold text-neutral-900">Need help with your online selling taxes?</p>
         <p className="mt-2 text-sm text-neutral-600">Tell us about your store or marketplace accounts and we will come back within 24 hours.</p>
-        <Link href="/contact" className="mt-4 inline-flex min-h-10 items-center justify-center bg-[#c9861b] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#b5761a] transition-colors">Get in touch</Link>
+        <Link href="/contact" className={`${btnPrimary} mt-4`}>Get in touch</Link>
       </div>
-    </main>
+    </div>
   );
 }

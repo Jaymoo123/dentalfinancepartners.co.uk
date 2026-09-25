@@ -7,7 +7,8 @@ brand_locked: true
 
 ## PORT PICKUP (Property design standard) - updated 2026-09-25
 
-**Phase 0 is BUILT and TAGGED (`port-ecommerce-phase0`). Phases 1 to 6 are NOT built.**
+**Phases 0 and 1 are BUILT and TAGGED (`port-ecommerce-phase0`, `port-ecommerce-phase1`).
+Phases 2 to 6 are NOT built.**
 Git is the authority: `git tag -l 'port-ecommerce-*'`. Artefacts live in `docs/ecommerce/_port/`.
 
 Baseline: production SHA `153e5017`, 51 URLs, 707 unique internal links (floor 10), 0 dashes,
@@ -49,6 +50,78 @@ STILL OPEN, carried as owner items:
 - The formation data is five months stale (settled through April 2026). The prose is now
   stamped as at that month rather than refreshed.
 
+## PHASE 1 (chrome and tokens) - built 2026-09-25
+
+Adopted the shared kit chrome (`PageShell`, `SiteHeader`, `SiteFooter`) behind the thin client
+shell every ported site keeps, because `wordmarkIcon` is a component function and cannot cross
+the RSC boundary. The local `SiteNav.tsx` and `SiteFooter.tsx` are deleted. Geist is mounted and
+declared as a dependency in the same commit.
+
+The six kit-chrome props, each passed explicitly so nothing inherits Property's literal:
+`ctaContactGoal: "contact"`, `ctaMobilePlacement: "header_mobile"` (both INTRODUCED, not
+preserved: this site had no header CTA, so there is no prior series to protect and no before
+and after comparison to make), `resourcesHref: "/vat"` (the default `/landlord-tax` 404s here),
+`companyItems` = About / Contact / Book (the default ships `/locations`, which 404s here, and
+`/book` was an orphan route nothing linked to), `showBuilderCredit` omitted so the estate-wide
+default stands, `wordmarkAccentColor: "#9e6615"` passed explicitly because the value a reader
+expects is the brand hex, which is graphic-grade only.
+
+TOKENS. A `primary-*` ramp is minted inside `@theme`, anchored **`primary-600 = #9e6615`, not
+the brand hex**, because 600 is the step the kit paints button grounds with and white on
+`#c9861b` is 3.04. The brand sits at `primary-400` and keeps every decorative use. The reasoning
+is written above the `@theme` block: do not re-anchor it. `--brand-primary-text` (`#8a5e1a`) and
+`--brand-primary-ground` (`#9e6615`) are now declared, which the kit already read with
+fallbacks, so the live `/services` badge and CTA were fixed with zero component edits.
+
+THE FOCUS RING IS BOUND TO THE GROUND, NOT THE CONTROL. Every ring carries `outline-offset-2`,
+so it is painted outside the control on whatever the section paints. `--focus-ring` defaults to
+the light-ground value and a `.ground-dark` class rebinds it; custom properties inherit, so the
+class goes on the element that actually paints dark and never on an ancestor of a light island
+(the homepage CTA band is deliberately unmarked because it wraps a white form card).
+`focusRingOnBrand` survives as an element-level escape hatch for dark islands such as the
+booking picker's selected chip. P0C proves no single ring colour can work on this palette.
+
+LIVE DEFECTS FOUND AND FIXED IN PHASE 1, none of which is design taste:
+- Every in-article link and every footnote reference rendered at 3.04 against white, below the
+  4.5 text floor, on 180 measured rows across 7 routes. Cause: `prose-standard.css` resolves link
+  colour through `--accent-strong` first, which was undeclared, so it fell through to the brand
+  hex. One token declaration closed all 180.
+- 14 of 23 route shapes rendered no `<main>` at all, and nine more authored their own, which
+  would have nested two landmarks per route once the shell landed. Now exactly one everywhere,
+  and zero on `/embed/*` by design.
+- No skip link existed anywhere. There is one now, and its target clears the sticky header at
+  6rem: it measured 80px against the instrument's 96px floor on the first pass, and the research
+  footnote targets measured 0px.
+- Two hardcoded `bg-[#c9861b]` CTAs with white labels (3.04) and no focus ring at all, on the
+  blog post template and a research page.
+- Three `bg-neutral-900` CTA sections whose rings were correct only by accident and broke the
+  moment the ring default became light.
+- Three competing focus-ring mechanisms in the forms (an outline, a box-shadow ring, and the
+  shared recipe) reduced to one.
+- On a phone the header reached only the wordmark and Contact. The kit drawer replaces that.
+
+MEASURED AT PHASE-1 CLOSE, not assumed: build green at 69 pages; tsc clean; 45 tests pass;
+dependency closure OK across 19 sites; predeploy gate PASS; sweep 51/51 URLs clean, 0 dead links,
+0 LINK-FLOOR breaches, **internal links 707 to 1173**, 0 dash regressions; `browser_check` 204
+page-loads at 390/768/1024/1440 with **0 new problems**, self-test OK, 0 unparseable colours, 0
+unrendered subtrees; `data-cta` 0 to 51, one distinct triple `header_book|header|contact`, which
+is a NEW series created by the port and must never be read as a before-and-after delta; the one
+pre-existing conditional CTA (`thankyou-return-article` / `thank_you`) survives byte-identical,
+proven by grep and by curling `/thank-you?rt=%2Fblog`; the drawer placement `header_mobile`
+confirmed in the shipped client bundle, which is the only place it is visible.
+
+CARRIED, NOT FIXED, and owned by the phase that rebuilds those templates: 88 pre-existing
+contrast rows, all on `/`, `/research` and the two research studies. They are amber link text at
+2.91 on a tinted ground and `neutral-400` small print at 2.58. The instrument reports 0 NEW
+problems, so the port introduced none of them.
+
+OPEN, from phase 1:
+- `packages/web-shared/design/layout-utils.ts:36` rings the kit's own primary button with
+  `outline-primary-600`. On this site that is also the button's ground. The ring is drawn at
+  `outline-offset-2` so it lands on the page, not the button, and it measures 4.81 on white,
+  which passes. Recorded because a reviewer flagged it as 1.00:1 and that reading was wrong.
+- `/research/online-seller-index` has a bordered CTA link with no focus-ring classes at all.
+
 KNOWN AND CARRIED INTO PHASE 1, not phase-0 work:
 - `prose-blog` is emitted by the three legal pages and defined in no stylesheet this site loads.
 - `#c9861b` measures 3.04:1 on white: it clears the 3:1 graphic floor and fails both 4.5:1 text
@@ -86,6 +159,110 @@ Main was BEHIND production for this site, not ahead of it.
 Reproduce the passenger list: `git log 902ea014..435cc12e --oneline -- 'ecommerce/'`.
 Everything on it (estate lead-parity port, pool-model disclosure sweep, FA 2026 factual
 sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before this merge.
+
+## 2026-09-25 - Blog expansion programme: research complete, build not started
+
+Full research waterfall run in one session. Nothing deployed, nothing committed to
+content. Seven docs written, all under `docs/ecommerce/`, all dated 2026-09-25:
+`DEMAND_BASELINE`, `POOL_INTEGRITY`, `COMPETITOR_UNIVERSE`,
+`COMPETITOR_HARVEST_EXTENDED`, `ESTATE_FENCE_CHECK`, `BLOG_EXPANSION_PLAN`,
+`EXISTING_PAGE_DISPOSITIONS`, plus `gap_register_v2`, `pool_classified` and
+`keyword_assignment_map` as JSON.
+
+**THE HEADLINE IS NOT CONTENT, IT IS CRAWL.** GSC `urlInspection.index.inspect` over
+all 33 routes: 4 routes return `coverageState = "URL is unknown to Google"` with
+`lastCrawlTime = None` (never crawled, in the sitemap, serving 200), and **18 of the 29
+indexed pages were last crawled 16-17 July 2026, launch week, and never since**. The
+site's average position of 29.6 is substantially a crawl artefact, not a merit verdict.
+Contributing cause confirmed live on production the same day: `/services`, `/vat` and
+`/for` serve `<link rel="canonical" href="https://www.ecommercefinance.co.uk"/>`, so
+the three hubs have been declaring themselves homepage duplicates since launch. Fixed
+in `286365a8` (port phase 0), on `main`, **NOT DEPLOYED**. Do not judge any page on
+this site, or forecast any content programme, against pre-fix position data.
+
+**Demand baseline (fresh APIs, data through 2026-09-25).** Google 30 clicks / 8,776
+impressions / avg position 29.6 over the 10 weeks since launch; Bing 6 clicks / 405
+impressions / avg position 6.0. 310 distinct Google queries, 182 Bing, **zero overlap
+between the engines**. The two engine reads measure different query sets on this site
+and must never be pooled into one number. IOSS and OSS is 59% of all impressions.
+TRAP: GSC query-dimension rows sum to 3,448 of the 8,776 total (low-volume query
+anonymisation), so the query sum is not the total.
+
+**Pool.** The 2,329 `blog_topics` rows seeded 2026-07-15 were DataForSEO **autocomplete
+only**, every row `search_volume` NULL. Classified: KEEP 1,039 / ADJACENT 800 / DROP 490.
+KEEP rows enriched with real volume and difficulty (1,004 written via PostgREST). Only
+276 have volume above zero and **25 are at 100+/month**. Pool volume is a weak signal
+here; the competitor register is the strong one. Unmeasured is not worthless: the site
+already earns impressions on 310 mostly long-tail queries.
+
+**Competitor evidence.** 58 seed SERPs, 383 domains seen, **54 harvested**, 28,928
+keywords. PLATEAU PROVEN: domains 13 to 54 (4.2x) moved ecommerce-topical survivors
+83 to 116 (1.4x), and all 26 new VENDOR domains contributed zero because
+`peer_ranks_top20` structurally cannot be satisfied by a vendor. The niche is genuinely
+narrow: **8 subjects, 116 keywords, 38,570/month**, EORI alone 46% of it. Difficulty
+across the set runs 0 to 26; this niche is undefended. Age is NOT the gate here, unlike
+Property: e2eaccounting.co.uk first backlink Nov 2024, already 1,512 UK keywords off 183
+URLs.
+
+**Fence ruling upheld and reinforced.** Of 612 generic UK tax keywords the peers rank
+for, 8 subjects (130,690/mo) DIRECT CONFLICT with sister sites (generalist owns small
+business accountant, UTR, Xero, mileage, accounting packages; construction-cis owns CIS
+returns; Property owns Companies House ID verification), 10 subjects (85,270/mo)
+OVERLAP, 6 (121,860/mo) CLEAR. Two CLEAR subjects are legitimately OURS and were nearly
+discarded as generic: **VAT rates by country (20,150/mo)** and **VAT certificate and
+invoice (6,360/mo)**, neither covered anywhere in the estate.
+
+**OWNER DECISION TAKEN 2026-09-25: stay narrow.** Asked to choose between 40-50 narrow
+assets, ~150 via seller-operations content, or ~150 via generic tax content, he chose
+narrow. Budget then raised by him to 50-60 with the instruction that **keyword coverage
+and page count are different numbers**: relevant keywords and grammatical variants get
+absorbed into planned pages as supporting terms, H2s and FAQ entries rather than
+spawning pages or being dropped.
+
+**The plan: 49 net-new assets + 21 existing pages extended.** 30 blog posts, 9 hub and
+`/vat` pages, 4 `/for` hire hubs (2 new, 2 rebuilt), 2 service pages, 3 tools, 1 data
+asset. 49 not 60 deliberately: 14 already rest on pool-only evidence, so 11 more would
+be weaker than the weakest item on the list. Keyword assignment map covers 17,326
+register keywords and all 1,039 KEEP pool phrases; **1,683 register keywords and 1,007
+pool phrases assigned across 42 pages**, each tagged primary / H2 / FAQ. Unassigned is
+9,675 zero-relevance plus 5,458 fenced; the 24.2M unassigned volume figure is
+`hmrc login` at 1.22M and `council tax` at 368k, NOT money left on the table.
+
+**Wave 1 = importing, exporting and EORI**, 15 assets, 12-page cohort. Reads: Bing 28d
+**2026-11-06**, Google 90d **2027-01-07**, reported separately. Success = cohort median
+above 200 impressions at 90d; kill below 100.
+
+**Existing 33 pages:** 7 REWRITE (8 with `/about`, a 99-word stub earning 219
+impressions on the most commercial cluster), 7 EXTEND, 15 LEAVE, 4 INVESTIGATE all
+resolved as the never-crawled routes above. ABSORPTION HEADROOM IS TIGHTER THAN
+ASSUMED: all 14 blog posts run 1,851-2,508 words against the 1,200 coverage ceiling, so
+six of seven EXTEND pages can take FAQ entries and phrasing variants only. The pages
+with real room are `/services/*` at 570-825 words.
+
+**IOSS and OSS verdict: partly a dead end, and the prize was overstated.** Not
+structurally unwinnable (small UK specialists a-wise, goecom, nathantrust, aml.me.uk
+hold genuine top-10 slots, and the comparison queries are held by vendor explainers, not
+gov.uk). But the two largest sub-clusters are lost for different reasons: intermediary
+queries (364 impressions, our largest single concentration) are won by firms that SELL
+IOSS intermediary registration, which we do not, and the OSS queries want an EU-seller
+document our own locked house position says does not apply to GB sellers. **Never
+forecast those 2,037 impressions as recoverable.**
+
+`/vat/135-import-rule` is the one page where the problem is provably the snippet:
+position **9.6 on 915 impressions with zero clicks**.
+
+**Spend this session:** $7.16 DataForSEO ($2.61 universe + $4.55 extended harvest) plus
+$2.07 pool enrichment. 8 subagents.
+
+**Open owner decisions:** (1) deploy `286365a8` and request indexing on the 4 uncrawled
+URLs, (2) the VAT number checker tool, 34,370/mo, sits between CLEAR and fenced,
+(3) wave 2 gates on the Bing read or the Google read, (4) port-before-content sequencing.
+
+**INFRA FAULT:** `SUPABASE_ACCESS_TOKEN` in the repo-root `.env` returns 401
+Unauthorized. The Management API SQL path is dead, which breaks
+`scripts/enrich_blog_topics.py` and every sibling using `_mgmt_sql`. PostgREST
+(`SUPABASE_KEY`) still works and was used instead. Token needs regenerating in the
+Supabase dashboard. No shared script was patched to hide it.
 
 ## Identity
 

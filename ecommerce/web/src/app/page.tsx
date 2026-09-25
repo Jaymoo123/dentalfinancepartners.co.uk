@@ -216,7 +216,7 @@ export default function HomePage() {
         }}
       />
       {/* Hero */}
-      <section className="relative flex items-center min-h-[440px] sm:min-h-[560px] overflow-hidden bg-[#1a2942]">
+      <section className="ground-dark relative flex items-center min-h-[440px] sm:min-h-[560px] overflow-hidden bg-[#1a2942]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a2942] via-[#243550]/80 to-[#0f1c30]" />
         <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
           <div className="max-w-3xl">
@@ -230,10 +230,7 @@ export default function HomePage() {
               {niche.tagline}
             </p>
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link
-                href="/contact"
-                className={`inline-flex min-h-12 items-center justify-center bg-[#c9861b] px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-semibold text-white hover:bg-[#b5761a] transition-colors text-center ${focusRing}`}
-              >
+              <Link href="/contact" className={btnPrimary}>
                 Speak to a seller tax specialist
               </Link>
               <Link

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function CalculatorsPage() {
   const tools = allTools();
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16">
+    <div className="mx-auto max-w-4xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">Ecommerce seller calculators</h1>
       <p className="mt-4 max-w-2xl text-lg text-[var(--ink-soft)]">Free tools for UK online sellers built on current HMRC rates.</p>
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -24,6 +24,6 @@ export default function CalculatorsPage() {
           </Link>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

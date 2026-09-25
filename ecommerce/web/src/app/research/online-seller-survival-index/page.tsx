@@ -76,7 +76,7 @@ const articleSchema = {
 
 export default function OnlineSellerSurvivalIndexPage() {
   return (
-    <main>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -99,7 +99,7 @@ export default function OnlineSellerSurvivalIndexPage() {
       />
 
       {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
+      <section className="ground-dark border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Link
             href="/research"
@@ -361,7 +361,7 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
+      <section className="ground-dark bg-neutral-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Building a retail business that lasts?
@@ -376,6 +376,6 @@ export default function OnlineSellerSurvivalIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

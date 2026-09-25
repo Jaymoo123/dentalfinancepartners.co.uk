@@ -1,13 +1,62 @@
 import type { Metadata, Viewport } from "next";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
+import type { NavItem } from "@accounting-network/web-shared/design/chrome/nav";
 import { niche } from "@/config/niche-loader";
-import { SiteNav } from "@/components/ui/SiteNav";
-import { SiteFooter } from "@/components/ui/SiteFooter";
+import { PageShell } from "@/components/layout/PageShell";
+import { ecommerceServices } from "@/data/services";
+import { vatPages } from "@/data/vat";
+import { TOOLS } from "@/lib/calculators/registry";
 
 const siteUrl = `https://${niche.domain}`;
+
+/**
+ * Primary nav, built here in the server layout and passed down as plain data,
+ * so the calculator registry's compute functions never reach the client bundle
+ * (the kit shell is a client component). Same six top-level entries the old
+ * src/components/ui/SiteNav.tsx rendered, in the same order - no route is added
+ * to or removed from the chrome by this port. The children are new: the kit
+ * header turns them into dropdowns and the kit footer derives its Services and
+ * Resources columns from them, so a section that gains a page gains a chrome
+ * link automatically instead of drifting the way a hand-listed footer does.
+ *
+ * The self-referential first child ("All services", "VAT hub") is deliberate:
+ * the kit's footer column headings are not links, so without it the hub page
+ * itself would have no footer entry. The kit drawer filters it out where the
+ * parent link already covers it.
+ */
+const primaryNav: NavItem[] = [
+  {
+    label: "Services",
+    href: "/services",
+    children: [
+      { label: "All services", href: "/services" },
+      ...ecommerceServices.map((s) => ({ label: s.title, href: `/services/${s.slug}` })),
+    ],
+  },
+  {
+    label: "VAT Hub",
+    href: "/vat",
+    children: [
+      { label: "VAT hub", href: "/vat" },
+      ...vatPages.map((v) => ({ label: v.title, href: `/vat/${v.slug}` })),
+    ],
+  },
+  {
+    label: "Calculators",
+    href: "/calculators",
+    children: [
+      { label: "All calculators", href: "/calculators" },
+      ...TOOLS.map((t) => ({ label: t.name, href: `/calculators/${t.slug}` })),
+    ],
+  },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -89,12 +138,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={GeistSans.variable}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+
+
       </head>
       <body className="antialiased">
         {/*
@@ -112,9 +163,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             noTrackPrefixes={["/admin"]}
           >
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
-            <SiteNav />
-            {children}
-            <SiteFooter />
+            {/* Chrome = the shared kit. PageShell also supplies the skip link,
+                the single <main id="main">, and the /embed/* chrome bypass
+                (partner iframes get no header and no footer). */}
+            <PageShell nav={primaryNav}>{children}</PageShell>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>

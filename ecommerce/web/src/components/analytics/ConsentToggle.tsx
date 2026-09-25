@@ -6,8 +6,12 @@
  * route the cookie policy promises. Opting out writes "denied" via the shared
  * consent module, which the SDK and GA loader honour live.
  *
- * Superseded in phase 1 by packages/web-shared/design/chrome/SiteFooter.tsx,
- * which renders its own toggle. Delete this file with that migration.
+ * PERMANENT, do not delete. An earlier note here said the kit footer supersedes
+ * this file. It does not: packages/web-shared/design/chrome/SiteFooter.tsx has no
+ * consent affordance of its own, it declares `consentToggle` as a REQUIRED ReactNode
+ * prop and renders whatever it is handed. This component is what gets handed to it
+ * (see src/components/layout/PageShell.tsx). Deleting it silently breaks the cookie
+ * policy's promise of a withdrawal route while every test stays green.
  */
 import { useEffect, useState } from "react";
 import { getConsent, setConsent, type ConsentState } from "@accounting-network/web-shared/analytics/consent";

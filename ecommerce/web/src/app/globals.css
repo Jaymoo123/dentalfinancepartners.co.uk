@@ -2,26 +2,309 @@
 @import "tailwindcss" source("..");
 /* Kit components live outside src/, which source("..") excludes, so without this line every utility used only inside packages/web-shared compiles to nothing. */
 @source "../../../../packages/web-shared";
-/* Article bodies here carry class="prose" but nothing in the estate defines .prose, so without this line every blog and guide page renders as unstyled text. */
+/* Article bodies here carry class="prose" but nothing this site otherwise loads defines .prose, so without this line every blog and guide page renders as unstyled text. (packages/site-styles/prose-standard.css is the estate's definition; the claim "nothing in the estate defines .prose" was wrong and is corrected here.) */
 @import "../../../../packages/site-styles/prose-standard.css";
 
-:root {
-  --background: #ffffff;
-  --surface: #f8fafc;
-  --surface-elevated: #ffffff;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --muted: #475569;
-  --border: #e2e8f0;
+/* ===========================================================================
+   PRIMARY RAMP  -  brand amber, anchored on ACCESSIBILITY, not on the hex.
 
-  /* Canonical brand tokens for @accounting-network/web-shared components. */
-  --brand-primary: #c9861b;
-  --brand-primary-strong: #c9861b;
-  --brand-on-primary: #ffffff;
+   READ BEFORE CHANGING. The obvious move is "primary-600 should be the brand
+   colour #c9861b", which is what the sibling ports did. It is wrong here and
+   the measurement says so:
+
+     #c9861b on #ffffff .......... 3.04   graphic PASS (3:1), text FAIL (4.5:1)
+     white on #c9861b ............ 3.04   FAIL
+     white on #b5761a (hover) .... 3.77   FAIL
+     white on #9e6615 (active) ... 4.81   PASS
+     #8a5e1a on #ffffff .......... 5.68   PASS
+
+   The 600 step is the exact step the shared kit paints button GROUNDS with
+   (packages/web-shared/design/layout-utils.ts:37, bg-[var(--btn-ground,
+   var(--color-primary-600))]) and outlines focus rings with. So 600 must be a
+   value that carries white text. #c9861b does not. Anchoring the brand hex at
+   600 would ship a 3.04:1 primary CTA on every page AND it would still test
+   green, because contrast is not a compile error.
+
+   DECISION: the brand hex sits at 400, and 600 = #9e6615, the step this
+   codebase already uses as the button `active` state. Consequences, all
+   measured, all passing:
+     text-primary-700  #8a5e1a on white .............. 5.68  (kit: 18 uses)
+     text-primary-600  #9e6615 on white .............. 4.81  (kit: 11 uses)
+     bg-primary-600    white label on #9e6615 ........ 4.81  (kit: 10 uses)
+     outline-primary-600 on white .................... 4.81  (>= 3.0)
+     outline-primary-600 on #1a2942 (dark footer) .... 3.03  (>= 3.0, thin)
+     text-primary-400  #c9861b on #1a2942 ............ 4.80  (kit: 8 uses, on-dark)
+     bg-primary-800    white label on #6f4b15 ........ 7.80
+
+   THE BRAND IS NOT DEMOTED. --brand-primary stays #c9861b and every decorative
+   use of it (borders, rules, icons, hover tints) is untouched and still clears
+   the 3:1 graphic floor. What moved is only the step that carries TEXT.
+
+   Provenance of each value, so nobody has to guess which are invented:
+     400/500/600/700  ALREADY IN THIS CODEBASE (#c9861b brand, #b5761a hover,
+                      #9e6615 active, #8a5e1a used 6x) - no new colour.
+     50/100/200/300   Tailwind v4 amber tints, i.e. already available utilities.
+     800/900/950      derived by continuing the existing darkening chain at the
+                      same hue. No light-ground text step depends on them; the
+                      kit touches 800 only as a fallback ground (7.80 white).
+   =========================================================================== */
+@theme {
+  --color-primary-50: #fffbeb;
+  --color-primary-100: #fef3c7;
+  --color-primary-200: #fee685;
+  --color-primary-300: #ffd230;
+  --color-primary-400: #c9861b; /* the brand hex. graphic-grade on light, text-grade on dark only */
+  --color-primary-500: #b5761a;
+  --color-primary-600: #9e6615; /* accessible ground: white label 4.81 */
+  --color-primary-700: #8a5e1a; /* accessible text on light: 5.68 */
+  --color-primary-800: #6f4b15;
+  --color-primary-900: #573a10;
+  --color-primary-950: #33220a;
+
+  /* Radius ROOT only. Do NOT add --radius-sm/md/lg/xl here: Tailwind v4 already
+     ships those in its own @theme, 53 non-`rounded-full` utilities across this
+     site resolve through them, and redeclaring them would silently flatten
+     every card on every page. The one thing Tailwind does not ship is the bare
+     `--radius` that packages/web-shared/design/globals-standard.css:38-41 reads
+     to derive its own chain; that file is not imported here, and this
+     declaration is what stops the derivation collapsing if it ever is.
+     0.75rem = Tailwind's own --radius-xl, so the chain would land where the
+     site's existing rounded-xl already sits. */
+  --radius: 0.75rem;
+  --btn-radius: var(--radius);
 }
 
-body {
-  background: var(--background);
-  color: var(--ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+@theme inline {
+  /* The chrome package mounts next/font Geist with variable "--font-geist-sans".
+     The fallback inside the var() is deliberate: until that lands, and on any
+     route where the font fails to load, this still resolves to a real stack
+     instead of invalidating the body font-family declaration outright. */
+  --font-sans: var(--font-geist-sans, ui-sans-serif), system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --surface: #f8fafc;
+    --surface-elevated: #ffffff;
+    --ink: #0f172a;
+    --ink-soft: #334155;
+    --muted: #475569;
+    --border: #e2e8f0;
+
+    /* Canonical brand tokens for @accounting-network/web-shared components. */
+    --brand-primary: #c9861b; /* 3.04 on white: DECORATIVE ONLY, never text */
+    --brand-primary-strong: #c9861b;
+    --brand-on-primary: #ffffff;
+
+    /* The accessible split. Both names are ALREADY READ, with fallbacks, by
+       packages/web-shared/components/ServiceTiers.tsx:51,73 and
+       packages/web-shared/leads/MiniCapture.tsx, and were declared nowhere, so
+       both silently fell back to #c9861b at 3.04:1. Declaring them here fixes
+       the live /services "most popular" badge and its CTA with zero component
+       edits. */
+    --brand-primary-text: #8a5e1a; /* 5.68 on white, 5.44 on #fafaf9 */
+    /* prose-standard.css resolves in-article link colour through
+       --accent-strong first (packages/site-styles/prose-standard.css:138). Undeclared,
+       it fell through to --brand-primary-strong, the 3.04 brand hex, so EVERY in-article
+       link and every footnote reference rendered below the 4.5 text floor: 180 measured
+       rows across 7 routes at phase-1 close. Point it at the accessible text step. */
+    --accent-strong: #8a5e1a;
+    --brand-primary-ground: #9e6615; /* white label 4.81 */
+    --brand-primary-ground-hover: #8a5e1a; /* white label 5.68 */
+
+    /* Button ground trio, read by the kit's btnPrimary recipe
+       (packages/web-shared/design/layout-utils.ts:37) with the 600/700/800
+       primary steps as fallbacks. Same values as the ramp steps, declared
+       explicitly so the button ground does not silently move if the ramp is
+       ever re-anchored. */
+    --btn-ground: #9e6615;
+    --btn-ground-hover: #8a5e1a;
+    --btn-ground-active: #6f4b15;
+
+    /* ---------------------------------------------------------------------
+       FOCUS RING, TWO-VALUED ON PURPOSE. DO NOT COLLAPSE THIS TO ONE VALUE.
+
+       The old ring was outline-[#c9861b], which is 1.00:1 against the amber
+       button it rings - invisible on the most important control on the site.
+       There is no single replacement colour. Proof (P0C section 4): this site
+       paints grounds at relative luminance 1.00000 (#ffffff), 0.95597
+       (neutral-50), 0.91310 (neutral-100), 0.95535 (#fafaf9), 0.02199
+       (#1a2942), 0.29547 (#c9861b), 0.22855 (#b5761a), 0.16826 (#9e6615). For a
+       ring of luminance L to clear 3.0 it must satisfy, per ground, either
+       L <= (g+0.05)/3 - 0.05 or L >= 3(g+0.05) - 0.05. Against #ffffff the
+       lighter branch needs L >= 3.10, impossible, so L <= 0.30000. Against
+       #1a2942 the darker branch needs L <= -0.026, impossible, so L >= 0.16597.
+       Against #9e6615 the admissible set is L <= 0.02275 or L >= 0.60478, and
+       both are outside [0.16597, 0.30000]. The intersection is EMPTY. A
+       brute-force sweep of the sRGB cube at step 17 (4,096 candidates) returns
+       nothing, agreeing with the analysis.
+
+       So the ring is selected by ground, not by preference. Collapsing it back
+       to one value makes the ring invisible somewhere, guaranteed.
+       --------------------------------------------------------------------- */
+    --focus-ring-on-light: #8a5e1a; /* 4.81-5.68 on white / neutral-50/100 / #fafaf9 */
+    --focus-ring-on-brand: #ffffff; /* 3.04 / 3.77 / 4.81 / 14.59 on brand + dark grounds */
+
+    /* The ring is SELECTED BY GROUND, and the selector is this one indirection.
+       Every ring recipe reads outline-[var(--focus-ring)] and nothing else, so
+       the kit-adoption gate's row 6 sees one mechanism rather than a field of
+       per-call-site carve-outs it cannot tell apart from bypasses.
+
+       Why an inherited custom property and not "the button picks its own ring":
+       every ring here carries outline-offset-2, so the outline is painted two
+       pixels OUTSIDE the control, on the SECTION ground, not on the control's
+       own fill. Ground is an ancestor fact, so an inherited variable is exactly
+       the right carrier. Sections that paint dark add `.ground-dark` below.
+
+       Default is the light value because the overwhelming majority of grounds
+       this site paints are white, #fafaf9, #fafaf7, slate-50 or amber-50. */
+    --focus-ring: var(--focus-ring-on-light);
+
+    /* Greys this site already paints as literals, named so they stop being
+       literals. */
+    --ground-subtle: #fafaf9;
+    --ink-navy: #1a2942; /* white label 14.59 */
+  }
+
+  /* This rule used to be unlayered. Unlayered author CSS outranks EVERY
+     Tailwind utility whatever the specificity, so it was one `font-` or `bg-`
+     utility away from silently beating the chrome package's next/font class.
+     It is in @layer base now so utilities win. Keep it here. */
+  body {
+    background: var(--background);
+    color: var(--ink);
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  /* Every in-page anchor target needs to clear the sticky header, or a footnote
+     jump lands under it. #main measured 80px against the instrument's 96px floor,
+     and the research footnote targets (#ref-1..4) measured 0px: both shipped on
+     sibling sites. Scoped to elements that are actually anchor targets. */
+  #main,
+  [id^="ref-"],
+  :target {
+    scroll-margin-top: 6rem;
+  }
+
+  /* Rebinds the focus ring for anything painted on a dark ground: #1a2942,
+     #1a3a5c, neutral-900 and the #8a5e1a brand hero band. Put it on the SECTION
+     that paints the dark fill, never on the control, because the ring lands on
+     the ground two pixels outside the control.
+
+     Custom properties inherit, so do NOT put this on a dark section that
+     contains a light-ground card with focusable children (the homepage CTA band
+     at page.tsx:613 wraps a white LeadForm card): those children would inherit
+     a white ring onto white. Either scope the class to the dark subtree, or, if
+     the dark part holds no focusable element at all, leave it off entirely.
+     That is why the 613 band does not carry it.
+
+     In @layer components deliberately. An unlayered rule outranks every
+     Tailwind utility regardless of specificity, and globals.css has zero
+     unlayered rules by design. */
+  .ground-dark {
+    --focus-ring: var(--focus-ring-on-brand);
+  }
+
+  /* .prose-blog was emitted by the three legal pages (cookie-policy,
+     privacy-policy, terms) and defined in NO stylesheet this site loads, so
+     those pages have been rendering unstyled in production. This definition is
+     generalist/web/src/app/globals.css's, reused rather than re-authored, with
+     its --hairline swapped for this site's --border and its orange link colours
+     swapped for the accessible brand text step. */
+  .prose-blog {
+    max-width: 65ch;
+    color: var(--ink);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+
+  .prose-blog h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+
+  .prose-blog h3 {
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.015em;
+  }
+
+  .prose-blog p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--ink-soft);
+  }
+
+  .prose-blog a {
+    /* --brand-primary-text, not --brand-primary: the brand hex is 3.04 on white
+       and fails the text floor. */
+    color: var(--brand-primary-text);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
+
+  .prose-blog a:hover {
+    /* primary-800, 7.80 on white. Hovering toward the brand hex would drop the
+       link to 3.04 and fail. */
+    color: var(--color-primary-800);
+  }
+
+  .prose-blog ul,
+  .prose-blog ol {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+    color: var(--ink-soft);
+  }
+
+  .prose-blog li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-blog strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .prose-blog table {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+
+  .prose-blog th {
+    background: transparent;
+    color: var(--ink);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .prose-blog td {
+    padding: 0.875rem 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--ink-soft);
+  }
 }

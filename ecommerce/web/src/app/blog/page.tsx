@@ -11,7 +11,7 @@ export default function BlogIndexPage() {
   const posts = getAllPosts();
   const categories = getAllCategories();
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">Ecommerce tax, explained.</h1>
       {categories.length > 0 && (
         <div className="mt-8 flex flex-wrap gap-3">
@@ -32,6 +32,6 @@ export default function BlogIndexPage() {
         ))}
         {posts.length === 0 && <li className="text-neutral-400 text-sm">No posts yet.</li>}
       </ul>
-    </main>
+    </div>
   );
 }

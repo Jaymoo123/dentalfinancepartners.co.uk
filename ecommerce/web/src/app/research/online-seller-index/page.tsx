@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import { buildFaqPage } from "@accounting-network/web-shared/schema";
 import { FormationSeasonalityChart } from "@/components/research/FormationSeasonalityChart";
@@ -74,7 +74,7 @@ export default function OnlineSellerIndexPage() {
   const sec46900 = data.secondarySics.find((s) => s.sicCode === "46900")!;
 
   return (
-    <main>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -92,7 +92,7 @@ export default function OnlineSellerIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPage(faqs)) }}
       />
       {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
+      <section className="ground-dark border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Link
             href="/research"
@@ -944,7 +944,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-neutral-900 py-12 sm:py-16">
+      <section className="ground-dark bg-neutral-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Running an online retail business?
@@ -958,7 +958,7 @@ export default function OnlineSellerIndexPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center bg-[#c9861b] px-8 py-3.5 text-sm font-semibold text-white hover:bg-[#b5761a] transition-colors"
+              className={btnPrimary}
             >
               Speak to a specialist
             </Link>
@@ -971,6 +971,6 @@ export default function OnlineSellerIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

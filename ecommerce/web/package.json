@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@accounting-network/web-shared": "*",
+    "geist": "^1.7.0",
     "gray-matter": "^4.0.3",
     "next": "^15.5.14",
     "react": "^19.1.0",
