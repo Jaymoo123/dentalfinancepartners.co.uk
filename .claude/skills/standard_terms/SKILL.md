@@ -105,15 +105,29 @@ He is the CEO. He is often away from the keyboard and has less context than you.
   change and a set of doc corrections inline because each looked too small to
   hand over. Collectively they were not small, and they spent the one context
   that cannot be replaced.)*
+- **Price a fan-out before you launch it.** Spend is measured in the subscription's usage
+  window, not money, and it is finite. Before any multi-agent wave, judging fan-out or
+  fix-then-retest loop, tell the owner the expected agent count and get his go; report agents
+  used afterwards; never start a second test wave in a session on your own authority; prefer
+  re-grading existing evidence on the fixed code (free) to a fresh wave; default reviewers to
+  Sonnet unless the role has shown it needs Opus. *(2026-09-18: one DWC session ran three
+  two-post test waves at 25 to 30 Opus agents each, a fix round after each, and about 35
+  judging agents, and used roughly a week's allowance. The owner noticed before he was told,
+  having asked that same morning whether the QA chain was overkill.)*
 - **Batch independent agent launches into one message** so they run concurrently.
 - **Model tiering:** Haiku for grunt (greps, inventories, mechanical
   verification — never content), Sonnet for mechanical build and mid-complexity,
   Opus for judgment, reasoning and anything a human reads. Pass `model:`
   explicitly on Agent calls. **Never DeepSeek, anywhere.**
-- **Content is Opus-only.** Every blog body, new or deepened, is written by an
-  Opus-tier agent. Sonnet is allowed for registry/config/redirect work only.
-  *(LOCKED 2026-07-23: Sonnet posts needed so many QA passes that tiering saved
-  nothing.)*
+- **Content is Opus or Fable, never Sonnet.** Every blog body, new or deepened,
+  is written by an Opus-tier or Fable-tier agent. Sonnet is allowed for
+  registry/config/redirect work only. *(LOCKED 2026-07-23 as Opus-only because
+  Sonnet posts needed so many QA passes that tiering saved nothing. WIDENED
+  2026-09-25 by owner ruling: "fable is fine as well as opus, sonnet is not".
+  The trigger was the wills-probate corpus, 89 posts tagged
+  `generator: claude-fable-5`, which a full read found factually sound with zero
+  rewrites needed on quality grounds. Fable does not carry Sonnet's defect
+  rate.)*
 - **Net-new waves: batch size 1.** One subagent per topic, in parallel. No
   A/B/C lanes.
 - **Manager-direct carve-outs:** web-shared edits, git operations, migrations,
