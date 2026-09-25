@@ -50,6 +50,89 @@ STILL OPEN, carried as owner items:
 - The formation data is five months stale (settled through April 2026). The prose is now
   stamped as at that month rather than refreshed.
 
+## START HERE: the next agent picks up at PHASE 2
+
+Written 2026-09-25 at the close of phase 1. Git is the authority for what is built, this block is
+a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it disagrees.
+
+**Opening sequence, in this order, before planning anything:**
+1. Load the `standard_terms` skill. It wins on conflict.
+2. `python scripts/port_preflight.py --site ecommerce`. It must exit 0. Ports 3000 and 3210 are
+   the OWNER'S OWN servers (Double Wired Creative and Property): do not kill them, declare them
+   with `--allow-port 3000 --allow-port 3210`. Kill anything else you did not start.
+3. Read `docs/_engines/DESIGN_PORT_PLAYBOOK.md` STOP block, then 2.1, 8 item 11, 9.1, 13, and
+   `docs/_engines/PORT_FIELD_NOTES.md` sections 4, 5, 6, 10, 11, 12, 13.
+4. Read this site's own artefacts, which are more reliable than any brief you write from memory:
+   `docs/ecommerce/_port/P0A_CLAIMS_LEDGER.md`, `P0B_RENDERED_SWEEP.md`, `P0C_CSS_TOKEN_AUDIT.md`,
+   `P0D_BASELINE.md`, `P0E_STRUCTURAL_INVENTORY.md`.
+
+**What phase 2 is.** The blog subsystem. Three route files, all currently site-local:
+`src/app/blog/page.tsx` (index), `src/app/blog/[category]/page.tsx` (6 category hubs),
+`src/app/blog/[category]/[slug]/page.tsx` (14 posts). Articles are `/blog/<category>/<slug>`, so
+every instrument run needs `--article-depth=3`. Candidate kit adoptions:
+`packages/web-shared/design/blog/` carries `BlogListWithSearch`, `BlogCategoryHub`,
+`HubArticleList`, `RelatedArticles`, `ReadingProgress`, `BlogSidebarCta`, `TableOfContents`.
+
+**Traps that will bite specifically in phase 2, each recorded from a sibling port:**
+- TWO copies of some kit components exist: `packages/web-shared/design/blog/` and
+  `packages/web-shared/content/` both carry `ReadingProgress` and `TableOfContents`. Grep which
+  family this site imports before concluding anything, and patch both if you patch one.
+- The kit `FaqSection` is a Radix accordion with NO `forceMount`: it strips closed answers from
+  the server HTML while FAQ JSON-LD keeps asserting them. This site currently renders 179 FAQ
+  answers that ARE present on the page (P0B verified 179/179). Adopting the accordion would
+  create the exact defect a sibling site had to unwind. Decline it unless you can prove otherwise,
+  and write the decline at the call site naming the kit FILE PATH so the 9.1 gate can count it.
+- Blog bodies are raw HTML through `dangerouslySetInnerHTML` and must never be escaped.
+  `keyTakeaways` must keep list semantics.
+- Article typography comes from `packages/site-styles/prose-standard.css`, already imported. In
+  phase 1 its link colour was fixed by declaring `--accent-strong`. Do not re-fix it, and do not
+  introduce a second prose mechanism.
+- An index that paginates behind a button can carry a fraction of its corpus in the server HTML,
+  and the link floor does NOT catch it because the floor was captured from the same page. Compare
+  article hrefs in the SERVER HTML against the 14 files on disk for `/blog` and each of the 6 hubs.
+- `TableOfContents.stickyDesktop` must be chosen deliberately: two viewport clamps in one column
+  produce a scroll box inside a scroll box, and both wrong arrangements read as correct in source.
+  Measure the bounding rect after scrolling.
+- `BlogSidebarCta.ctaPlacement` is a live analytics dimension. This site's CTA series was CREATED
+  by phase 1 (`header_book|header|contact`, 51 routes) and has no history, so anything you add is
+  also new. Record each value as a decision with its reason, never as a preserved value.
+
+**The gates, every phase, substituting your own port:**
+G0 `python scripts/port_preflight.py --site ecommerce` (declare 3000 and 3210)
+G1 `npm run lint --workspace=ecommerce/web`
+G2 `npm run build --workspace=ecommerce/web` (the MANAGER runs the only build; agents never build)
+G3 `python scripts/check_dependency_closure.py`
+G4 `python scripts/predeploy_gate.py --site ecommerce`
+G5 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/sweep.mjs --site=ecommerce --base=http://localhost:<port> --article-depth=3 --sample=9999 --out=<path>`
+G6 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/browser_check.mjs --site=ecommerce --base=... --article-depth=3 --sample=9999 --out=<path>` (slow, roughly ten minutes, looks dead while working: watch for the OUTPUT FILE, never start a second one)
+G7 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/cta_snapshot.mjs --site=ecommerce --base=... --baseline=docs/ecommerce/_port/sweep_baseline.json --out=<path>`
+G9 `npm test --workspace=ecommerce/web` FROM THE MONOREPO ROOT; the workspace flag does not work
+from inside `ecommerce/web`.
+
+**Numbers to hold yourself to.** Phase-1 close: 51 URLs, **1173** internal links (baseline 707),
+0 dead, 0 dashes, 51 `data-cta` in one triple, 204 browser-check page-loads with 0 new problems,
+45 tests, 69 pages built. Baselines: `_port/sweep_baseline.json`, `_port/browser_baseline.json`,
+`_port/cta_baseline.json`. Phase-1 state: `_port/sweep_postphase1.json`,
+`_port/browser_postphase1.json`, `_port/cta_postphase1.json`.
+
+**Still open across the whole port, do not re-discover these:**
+- 88 pre-existing contrast rows on `/`, `/research` and the two research studies (amber link text
+  at 2.91 on a tinted ground; `neutral-400` small print at 2.58). Owned by phases 5 and 6.
+- The seasonality chart's 12 monthly values are unreachable as text under `role="img"`.
+- `/research/online-seller-index` has a bordered CTA link with no focus-ring classes at all.
+- `src/lib/schema.ts` `buildOrganizationJsonLd` is dead and carries `priceRange: "££"`.
+- The owner items listed further down this file: the two turnaround promises, the 50,699 second
+  Companies House pull, the rate-agnostic flat-rate table, the placeholder phone.
+
+**Rules that cost this port real work when a brief got them wrong:**
+- Every brief carries the 10.1 preamble VERBATIM, including "VERIFY AGAINST SOURCE. If this brief
+  is wrong, SAY SO and trust the source." Every single agent on this site found a real error in
+  its brief. Two of those corrections prevented shipping damage.
+- `ls` every path in an OFF LIMITS list before the prompt ships.
+- The manager runs all git, all builds, every `packages/web-shared/` edit, and talks to the owner.
+- Never change Property, including indirectly through the kit.
+- Nothing is pushed or deployed without the owner asking in that turn.
+
 ## PHASE 1 (chrome and tokens) - built 2026-09-25
 
 Adopted the shared kit chrome (`PageShell`, `SiteHeader`, `SiteFooter`) behind the thin client
