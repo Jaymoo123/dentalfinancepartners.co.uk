@@ -69,7 +69,7 @@ function MultiTooltip({
     .filter((p) => typeof p.value === "number")
     .sort((a, b) => (b.value as number) - (a.value as number));
   return (
-    <div className="min-w-[11rem] rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs shadow-xl">
+    <div className="max-h-[18rem] min-w-[13rem] overflow-y-auto rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs shadow-xl">
       <div className="font-medium text-slate-900">
         {bucket ? fmtDayLongUTC(String(bucket)) : ""}
       </div>
@@ -95,7 +95,15 @@ function MultiTooltip({
   );
 }
 
+/**
+ * Above this many series the legend is taller than the plot it describes, so it
+ * is dropped and identity moves to the tooltip, which names every site on hover.
+ * The estate passed this threshold at 17 sites.
+ */
+const MAX_LEGEND_SERIES = 6;
+
 export function MultiSiteTrendChart({ data, series, label, asPercent = false, note }: Props) {
+  const showLegend = series.length > 1 && series.length <= MAX_LEGEND_SERIES;
   const points = React.useMemo(
     () => data.map((d) => ({ ...d, tick: fmtDayUTC(String(d.bucket)) })),
     [data],
@@ -106,6 +114,11 @@ export function MultiSiteTrendChart({ data, series, label, asPercent = false, no
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <h3 className="text-sm font-bold text-slate-900">{label}</h3>
       {note && <p className="mt-0.5 text-[11px] text-slate-400">{note}</p>}
+      {!showLegend && series.length > 1 && (
+        <p className="mt-0.5 text-[11px] text-slate-400">
+          {series.length} sites. Hover or tap a point for the per-site breakdown.
+        </p>
+      )}
       <div className="mt-3">
         {data.length === 0 ? (
           <div className="flex h-[200px] items-center justify-center rounded-lg border border-dashed border-slate-200 text-xs text-slate-400">
@@ -144,7 +157,9 @@ export function MultiSiteTrendChart({ data, series, label, asPercent = false, no
               <Tooltip
                 content={<MultiTooltip series={series} asPercent={asPercent} />}
               />
-              <Legend wrapperStyle={{ fontSize: 11 }} iconType="plainline" />
+              {showLegend && (
+                <Legend wrapperStyle={{ fontSize: 11 }} iconType="plainline" />
+              )}
               {series.map((s) => (
                 <Line
                   key={s.key}
