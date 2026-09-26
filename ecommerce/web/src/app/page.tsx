@@ -248,7 +248,13 @@ const faqs = [
   },
   {
     q: "Do you work across multiple platforms and marketplaces?",
-    a: "Yes. Most of our seller clients sell across two or more platforms. The challenge is that each platform settles differently, applies fees differently and may have different VAT implications. We work across Amazon FBA and FBM, Shopify, eBay, Etsy, TikTok Shop, Vinted and dropship models.",
+    // "Most of our seller clients sell across two or more platforms" removed:
+    // an aggregate claim about a client base on a site that publishes no client
+    // information anywhere, which is on the site's standing no-claims list. The
+    // phase-0 claims ledger missed it because its grep was `our client` and the
+    // string was `our seller clients`. Nothing else in the answer changed, and
+    // it still answers the question it is under.
+    a: "Yes. Each platform settles differently, applies fees differently and may have different VAT implications. We work across Amazon FBA and FBM, Shopify, eBay, Etsy, TikTok Shop, Vinted and dropship models.",
   },
   {
     q: "Should I trade as a sole trader or a limited company as a seller?",

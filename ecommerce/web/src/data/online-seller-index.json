@@ -13,7 +13,8 @@
       "Marketplace-only sole traders (the Vinted/eBay side-hustle layer) never appear in Companies House. This index measures the incorporated layer only.",
       "Formal dissolution typically lags actual trading closure by weeks to months for voluntary strikes-off.",
       "The secondary SIC series (47990, 46900) are tracked and reported separately and are never blended silently into the SIC 47910 headline.",
-      "2020-Q2 dissolutions are not shown as a series start point because Companies House suspended compulsory strike-off under the Corporate Insolvency and Governance Act 2020 (April to September 2020), making that period anomalously low."
+      "2020-Q2 dissolutions are not shown as a series start point because Companies House suspended compulsory strike-off under the Corporate Insolvency and Governance Act 2020 (April to September 2020), making that period anomalously low.",
+      "The 2021 formation total appears on this page as more than one figure because three separate Companies House Advanced Search pulls sit behind it, and they are not interchangeable. The canonical 2021 figure is 50,772, the sum of the twelve monthly counts. The quarterly series totals 50,768 for the same year because its quarter boundaries are pulled separately. The cohort survival table shows 50,699 because that pull is filtered by current register status. The three are reported as they were pulled and are never blended."
     ],
     "sources": {
       "companies_house": {

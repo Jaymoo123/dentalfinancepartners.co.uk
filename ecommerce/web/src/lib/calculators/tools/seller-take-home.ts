@@ -75,7 +75,10 @@ export const sellerTakeHomeTool: GenericTool = {
     "Join marketplace fees, COGS and UK tax in one place. Enter your gross sales, platform fees and cost of goods to see true take-home after income tax and Class 4 NIC. 2026/27 rates.",
   metaTitle: "Seller Take-Home Calculator: Fees, COGS and Tax UK 2026/27",
   metaDescription:
-    "See your true take-home as a UK marketplace seller. The only calculator that joins platform fees, cost of goods, VAT and income tax in one step. 2026/27 rates.",
+    // "The only calculator that..." removed: an unverifiable claim about every
+    // competitor, shipped in the served meta description. The capability it
+    // described is true and is kept; only the superiority is gone.
+    "See your true take-home as a UK marketplace seller. Joins platform fees, cost of goods, VAT and income tax in one step. 2026/27 rates.",
   intro:
     "Money landing in your bank account is not your take-home. It arrives after the platform has already deducted referral and fulfilment fees, and before HMRC has taken income tax and Class 4 NIC. This calculator works through all four stages: gross sales, minus marketplace fees, minus cost of goods and other costs, then minus tax on the profit that remains. Enter your own fee figures from your platform statement, not a schedule we maintain.",
   ctaLabel: "Get help with your seller tax return",

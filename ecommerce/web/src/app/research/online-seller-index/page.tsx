@@ -944,7 +944,11 @@ export default function OnlineSellerIndexPage() {
               href="/research/online-seller-index/data"
               className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
-              Download the quarterly churn and seasonality data (CSV)
+              {/* "and seasonality" removed: data/route.ts serves
+                  quarter,incorporations,dissolutions,net and no seasonal
+                  series. The link advertised a column the download does not
+                  contain. */}
+              Download the quarterly churn data (CSV)
             </Link>
           </p>
           <p className="mt-2 text-sm">
