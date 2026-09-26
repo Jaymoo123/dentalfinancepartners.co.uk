@@ -14,6 +14,7 @@
  * policy's promise of a withdrawal route while every test stays green.
  */
 import { useEffect, useState } from "react";
+import { focusRing } from "@/components/ui/layout-utils";
 import { getConsent, setConsent, type ConsentState } from "@accounting-network/web-shared/analytics/consent";
 
 export function ConsentToggle({ className = "" }: { className?: string }) {
@@ -29,7 +30,16 @@ export function ConsentToggle({ className = "" }: { className?: string }) {
   };
 
   return (
-    <button type="button" onClick={toggle} className={className || "underline hover:no-underline"}>
+    /* The ring is applied HERE, not at the call site, because the call site is
+       the kit footer slot in src/components/layout/PageShell.tsx and the ring
+       must survive any future re-grounding of that class string. Same single
+       mechanism as every other control: outline-[var(--focus-ring)] at
+       offset-2. The kit footer paints bg-slate-900 (#0f172a) and carries NO
+       .ground-dark, so the token resolves to the light value #8a5e1a there,
+       measured at 3.14 on #0f172a - past the 3:1 non-text floor. Adding
+       .ground-dark to the kit footer would be the better ring (white, 17.85)
+       but that file is the shared kit and is not this site's to change. */
+    <button type="button" onClick={toggle} className={`${focusRing} ${className || "underline hover:no-underline"}`}>
       {optedOut ? "Enable analytics" : "Do not track me"}
     </button>
   );

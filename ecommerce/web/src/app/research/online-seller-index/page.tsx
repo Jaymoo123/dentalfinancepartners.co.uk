@@ -67,9 +67,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "UK Online Seller Business Index | Companies House SIC 47910 Data",
+  title: "Online Seller Index | SIC 47910 Data",
   description:
-    "Quarterly index of UK incorporated online-retail companies: births, deaths and net change derived from Companies House SIC 47910 and ONS internet-retail sales data. Reproducible methodology, open sources.",
+    "Quarterly index of UK incorporated online-retail companies: births, deaths and net change from Companies House SIC 47910 and ONS internet-retail sales data.",
   alternates: {
     canonical: `${siteConfig.url}/research/online-seller-index`,
   },
@@ -151,7 +151,7 @@ export default function OnlineSellerIndexPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
             A quarterly index of the UK incorporated online-retail economy, derived from{" "}
             <a
-              href="https://developer.company-information.service.gov.uk/api/docs/"
+              href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search"
               className={`underline hover:text-white transition-colors ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -211,7 +211,7 @@ export default function OnlineSellerIndexPage() {
           <p className="mb-8 max-w-2xl text-sm text-neutral-500">
             Source:{" "}
             <a
-              href="https://developer.company-information.service.gov.uk/api/docs/"
+              href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search"
               className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -309,7 +309,7 @@ export default function OnlineSellerIndexPage() {
           <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
             2021-Q1 to 2026-Q2. Source:{" "}
             <a
-              href="https://developer.company-information.service.gov.uk/api/docs/"
+              href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search"
               className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -868,7 +868,7 @@ export default function OnlineSellerIndexPage() {
               <strong className="text-neutral-900">Active and dissolved counts.</strong> Live hit
               counts from the{" "}
               <a
-                href="https://developer.company-information.service.gov.uk/api/docs/"
+                href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search"
                 className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -991,7 +991,7 @@ export default function OnlineSellerIndexPage() {
           <p className="max-w-2xl text-sm text-neutral-700 mb-3">
             Since{" "}
             <a
-              href="https://www.gov.uk/guidance/digital-platform-reporting"
+              href="https://www.gov.uk/guidance/selling-goods-or-services-on-a-digital-platform"
               className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"

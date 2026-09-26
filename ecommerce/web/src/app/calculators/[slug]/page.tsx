@@ -8,7 +8,8 @@ import { site } from "@/lib/calculators/site";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 import { buildFaqJsonLd } from "@/lib/schema";
-import { btnPrimary, siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg, sectionY, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -29,7 +30,7 @@ const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white
  * anchors need a colour: primary-700 is #8a5e1a, 5.68 on white. The brand hex
  * #c9861b is 3.04 on white and is never used as text.
  */
-const linkOnLight = "[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800";
+const linkOnLight = `[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800 ${focusRingAuthoredLinks}`;
 
 export function generateStaticParams() {
   return genericTools().map((t) => ({ slug: t.slug }));
@@ -80,8 +81,13 @@ export default async function CalculatorPage({ params }: Props) {
 
         `ground-dark` rebinds --focus-ring to white for the breadcrumb links.
         No light island sits inside this section. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         <div className={crumbOnBrand}>
           <Breadcrumb
             onDark
@@ -90,7 +96,7 @@ export default async function CalculatorPage({ params }: Props) {
           />
         </div>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{tool.name}</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">{tool.oneLiner}</p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">{tool.oneLiner}</p>
       </div>
     </section>
     {/* The tool itself renders from
@@ -136,9 +142,21 @@ export default async function CalculatorPage({ params }: Props) {
         </div>
       </section>
     )}
-    {/* ADOPTION DECLINED on this band:
-        packages/web-shared/design/marketing/LeadCTAPanel.tsx (a lead-capture
-        surface, owner-gated), packages/web-shared/design/marketing/StickyCTA.tsx
+    {/* ADOPTION DECLINED on this band, re-examined after the owner lifted the
+        gate on LeadCTAPanel. It IS adopted on the three content slug templates
+        (services, for, vat), and it is declined HERE for a different and
+        specific reason: packages/web-shared/design/marketing/LeadCTAPanel.tsx
+        requires a `title` and a `description`, and this band publishes neither.
+        It is one link carrying the tool's own `ctaLabel` and nothing else.
+        Handing the component a heading and a paragraph means writing marketing
+        copy for seventeen routes, which this pass must not do, and replacing
+        the link with an embedded form would also remove the route's ONLY
+        /contact link (the hero here carries no CTA, unlike the three content
+        templates), dropping a URL out of the page's internal link set.
+        Owner item: authorise a CTA heading and line for the calculator
+        family, or authorise reusing the sibling templates' pair, and this band
+        becomes the same panel as the other three.
+        Also still declined: packages/web-shared/design/marketing/StickyCTA.tsx
         (an interruption, banned estate-wide),
         packages/web-shared/design/marketing/TestimonialsSection.tsx (hardcodes
         another site's quotes; this site has no authored social proof),

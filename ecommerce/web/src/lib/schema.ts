@@ -61,11 +61,47 @@ export function buildHowToJsonLd(post: { h1: string; metaDescription?: string; h
   };
 }
 
+type DatasetSource = {
+  "@type": "Organization";
+  name: string;
+  url: string;
+  description: string;
+};
+
+/**
+ * The Index page's sources, and the DEFAULT, so that page stays byte-identical.
+ * The survival study passes its own: an adversarial review found it publishing
+ * these two in its Dataset schema while its every figure comes from ONS
+ * Business Demography Table 4.2. Companies House SIC 47910 and the ONS Retail
+ * Sales Index contribute nothing to that page, so the schema was telling Google
+ * a provenance the page itself never claims.
+ */
+const INDEX_SOURCES: DatasetSource[] = [
+  {
+    "@type": "Organization",
+    name: "Companies House",
+    // The old developer.company-information.service.gov.uk/api/docs/ path is a
+    // 404 and was published inside the Dataset schema on BOTH research pages.
+    // This is where the Advanced Company Search reference moved to, and its
+    // body documents the exact parameters these citations name (sic_codes,
+    // company_status, incorporated_from, dissolved_from).
+    url: "https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search",
+    description: "UK companies register data (SIC 47910) under Open Government Licence v3.0",
+  },
+  {
+    "@type": "Organization",
+    name: "Office for National Statistics",
+    url: "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi",
+    description: "ONS Retail Sales Index series J4MC (internet retail as % of all retail) under Open Government Licence v3.0",
+  },
+];
+
 export function buildDatasetJsonLd(opts: {
   name: string;
   description: string;
   url: string;
   dateModified: string;
+  sourceOrganization?: DatasetSource[];
 }) {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -76,6 +112,16 @@ export function buildDatasetJsonLd(opts: {
     dateModified: opts.dateModified,
     inLanguage: "en-GB",
     creator: {
+      // The "@id" RESOLVES and must stay. `buildOrganizationJsonLd` in this
+      // file is indeed dead, but it is not the only definition: app/layout.tsx
+      // declares its own `organizationJsonLd` with the same
+      // `${siteUrl}#organization` id and renders it on EVERY page
+      // (layout.tsx:61 and :145, verified in the served HTML). So this is a
+      // real node reference, which is the whole point of an @id.
+      //
+      // A re-review reported this as a dangling reference and the manager
+      // removed it before checking whether anything emitted the node. Do not
+      // remove it again without grepping app/layout.tsx first.
       "@type": "Organization",
       "@id": `${siteConfig.url}#organization`,
       name: siteConfig.name,
@@ -83,20 +129,7 @@ export function buildDatasetJsonLd(opts: {
     },
     isAccessibleForFree: true,
     license: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    sourceOrganization: [
-      {
-        "@type": "Organization",
-        name: "Companies House",
-        url: "https://developer.company-information.service.gov.uk/api/docs/",
-        description: "UK companies register data (SIC 47910) under Open Government Licence v3.0",
-      },
-      {
-        "@type": "Organization",
-        name: "Office for National Statistics",
-        url: "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi",
-        description: "ONS Retail Sales Index series J4MC (internet retail as % of all retail) under Open Government Licence v3.0",
-      },
-    ],
+    sourceOrganization: opts.sourceOrganization ?? INDEX_SOURCES,
   });
 }
 
@@ -108,6 +141,12 @@ export function buildWebsiteJsonLd() {
     url: siteConfig.url,
     name: siteConfig.name,
     description: siteConfig.description,
+    // The publisher reference RESOLVES and is restored. It was removed on the
+    // reasoning that `buildOrganizationJsonLd` in this file is dead, which is
+    // true but irrelevant: app/layout.tsx declares its own `organizationJsonLd`
+    // carrying the same `${siteUrl}#organization` id and renders it on every
+    // page (layout.tsx:61 and :145, verified in the served HTML). Linking the
+    // WebSite node to the Organization node is the reason both have an @id.
     publisher: { "@id": `${siteConfig.url}#organization` },
     inLanguage: "en-GB",
   });

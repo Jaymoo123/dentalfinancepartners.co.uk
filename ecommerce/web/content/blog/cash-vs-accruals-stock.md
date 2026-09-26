@@ -104,7 +104,7 @@ faqs:
 
 <p>MTD does not mandate accruals accounting. A seller on cash basis can comply with MTD requirements. What MTD does is raise the cost of sloppy bookkeeping: quarterly updates expose year-round inconsistencies rather than letting them surface only at January. If your bookkeeping basis is producing a distorted profit picture, quarterly reporting makes that visible (and potentially problematic) four times a year instead of once.</p>
 
-<p>For a full walkthrough of how MTD quarterly updates work and what records you need to keep, see our <a href="/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers">MTD ITSA guide for online sellers</a>. For the generic mechanics of MTD ITSA (software, submission process, basis-period reform), the <a href="https://hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">Holloway Davies MTD guide</a> covers those in full.</p>
+<p>For a full walkthrough of how MTD quarterly updates work and what records you need to keep, see our <a href="/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers">MTD ITSA guide for online sellers</a>. For the generic mechanics of MTD ITSA (software, submission process, basis-period reform), the <a href="https://www.hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">Holloway Davies MTD guide</a> covers those in full.</p>
 
 <h2>Switching from cash basis to accruals</h2>
 

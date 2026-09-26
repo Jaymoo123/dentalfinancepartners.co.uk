@@ -1,0 +1,691 @@
+{
+  "ts": "2026-09-26T12:36:32.083Z",
+  "site": "ecommerce",
+  "base": "http://localhost:3322",
+  "sha": "153e5017",
+  "served_title": "Ecommerce and marketplace seller accountants UK",
+  "purpose": "Pre-port data-cta TRIPLE snapshot. sweep_baseline.json records counts; a count cannot detect trap 22, where the same button keeps its count but flips its goal or placement on cutover and splits the live funnel. Diff this file after every phase touching chrome or CTAs.",
+  "routes": 51,
+  "scanned": 51,
+  "non_interactive_ctas": [],
+  "distinct_triples": {
+    "header_book|header|contact|data-cta": {
+      "count": 51,
+      "example_routes": [
+        "/",
+        "/calculators",
+        "/research",
+        "/for",
+        "/vat"
+      ],
+      "hrefs": [
+        "/contact"
+      ]
+    }
+  },
+  "per_route": {
+    "/": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/vat": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research/online-seller-survival-index": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research/online-seller-index": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/about": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/contact": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/privacy-policy": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/cookie-policy": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/terms": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/ecommerce-vat-compliance": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/selling-into-the-eu": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/settlement-payout-reconciliation": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/hmrc-letter-online-sales": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/shopify-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/amazon-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/dropshippers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/marketplace-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/vat/135-import-rule": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/vat/deemed-supplier-establishment": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/vat/vat-on-marketplace-fees": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/seller-take-home-calculator": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/business-structure-and-tax": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/amazon-and-marketplace-selling": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/vat/ioss-vs-oss": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/sole-trader-vs-ltd-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/vat-threshold-tracker": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/vat/postponed-vat-margin-scheme": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/side-hustle-tax-checker": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/bookkeeping-and-inventory": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/platform-reporting-and-hmrc-letters": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/vat-and-cross-border-selling": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/making-tax-digital-and-self-assessment": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/business-structure-and-tax/online-seller-formation-trends": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/bookkeeping-and-inventory/cash-vs-accruals-stock": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/business-structure-and-tax/online-seller-survival-odds": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/bookkeeping-and-inventory/cogs-inventory-basics": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/amazon-and-marketplace-selling/etsy-fees-vat-and-tax": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/platform-reporting-and-hmrc-letters/ebay-tax-rules-uk": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/vat-and-cross-border-selling/flat-rate-scheme-wrong-for-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/making-tax-digital-and-self-assessment/mtd-itsa-online-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/amazon-and-marketplace-selling/print-on-demand-tax-uk": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/amazon-and-marketplace-selling/is-it-worth-selling-on-amazon-uk": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/vat-and-cross-border-selling/vat-threshold-gross-vs-payout": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/making-tax-digital-and-self-assessment/trading-allowance-online-sellers": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "contact",
+          "href": "/contact"
+        }
+      ]
+    }
+  }
+}

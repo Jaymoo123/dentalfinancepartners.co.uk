@@ -66,9 +66,28 @@ export function ServiceTiers({ tiers, featuredBadge = "Most Popular" }: ServiceT
                 </li>
               ))}
             </ul>
+            {/*
+              These three tier CTAs are conversion buttons and shipped with NO
+              focus-visible outline at all, so a keyboard user could not see
+              which one they were on. Found by an adversarial review on
+              ecommerce; invisible to the design-port kit-adoption gate because
+              that row only greps a site's own src, and this is a legacy shared
+              component outside design/.
+
+              The ring reads --kit-focus-ring, the same property the kit's own
+              design/layout-utils.ts uses, falling back to --color-primary-600
+              so a site that has not opted in renders a ring where it had none
+              rather than changing anything it already had. offset-2 paints the
+              ring on the section ground, which is white or slate-50 wherever
+              this component is mounted, so the light value is correct.
+
+              Property is unaffected: it runs its own fork at
+              Property/web/src/components/property/ServiceTiers.tsx and imports
+              this file nowhere.
+            */}
             <Link
               href={tier.ctaHref}
-              className={`w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold transition-all border-t-4 mt-auto min-h-[44px] flex items-center justify-center ${
+              className={`w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold transition-all border-t-4 mt-auto min-h-[44px] flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--kit-focus-ring,var(--color-primary-600))] ${
                 tier.featured
                   ? "bg-[var(--brand-primary-ground,var(--brand-primary))] border-black/25 text-white hover:opacity-90 active:border-t-2 active:translate-y-0.5"
                   : "bg-slate-50 border-slate-300 text-slate-900 hover:bg-slate-100 hover:border-[var(--brand-primary)] active:border-t-2 active:translate-y-0.5"

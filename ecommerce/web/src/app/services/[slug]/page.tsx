@@ -3,10 +3,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteConfig } from "@/config/site";
 import { ecommerceServices, getService } from "@/data/services";
 import { buildFaqJsonLd } from "@/lib/schema";
-import { btnPrimary, siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { siteContainerLg, sectionY, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 
 export function generateStaticParams() { return ecommerceServices.map((s) => ({ slug: s.slug })); }
 
@@ -22,8 +25,8 @@ export function generateStaticParams() { return ecommerceServices.map((s) => ({ 
  * On the dark grounds (#8a5e1a hero, neutral-800 stats band) the link is white:
  * 5.68 on the hero, 15.1 on neutral-800.
  */
-const linkOnLight = "[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800";
-const linkOnDark = "[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2";
+const linkOnLight = `[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800 ${focusRingAuthoredLinks}`;
+const linkOnDark = `[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2 ${focusRingAuthoredLinks}`;
 
 /**
  * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
@@ -68,8 +71,13 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         (SiteFooter.tsx:145) already emit href="/" on every page, so the route's
         UNIQUE internal link set is unchanged. It also emits a BreadcrumbList
         JSON-LD; nothing else on this route emits one. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         <div className={crumbOnBrand}>
           <Breadcrumb
             onDark
@@ -83,7 +91,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             the escaped markup on the page and killed the links. Safe: this is
             first-party content committed in src/data/services.ts, never user
             input. */}
-        <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/80 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: service.intro }} />
+        <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/90 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: service.intro }} />
         <div className="mt-10"><Link href="/contact" className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
       </div>
     </section>
@@ -139,15 +147,36 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </div>
     </section>
+    {/* ADOPTION DECLINED (re-examined now that .story-numeral, .story-numeral-rule
+        and num-glow exist in globals.css, which was the earlier reason):
+        packages/web-shared/design/marketing/NumberedReasons.tsx line 128 and
+        packages/web-shared/design/marketing/WhyUsList.tsx line 198 both render
+        `{item.body}` as a TEXT CHILD, and every howWeHelp body in
+        src/data/services.ts is authored HTML. Adopting either would print the
+        anchors as escaped markup, which is the defect this family has already
+        reversed once (CardStack, above). The CSS blocker is cleared; the
+        text-child blocker is not, and the kit is a manager carve-out.
+        The NumberedReasons ANATOMY is taken instead, class for class: the same
+        `.story-numeral` numeral, the same `.story-numeral-rule` under it, the
+        same 01-padded index. No `data-draw` wrapper and no client island: with
+        no ancestor carrying data-draw="off" the numeral renders in its lit
+        state, so the section is finished without JavaScript. The white card,
+        its border and its hover treatment are dropped with it, because nothing
+        in this grid is clickable and a hover affordance on a non-link is a lie.
+        Contrast: the numeral is --color-primary-700 (#8a5e1a), 5.44 on #fafaf7;
+        the rule is bg-primary-600 (#9e6615), a graphic at 4.6 on the same
+        ground, both past their floors. */}
     <section className={`border-b border-neutral-200 bg-[#fafaf7] ${sectionY}`}>
       <div className={siteContainerLg}>
         <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
-          {service.howWeHelp.map((item) => (
-            <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-primary-400 hover:shadow-md transition-all">
-              <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-              <div className={`mt-3 text-sm leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
+        <div className="mt-8 grid gap-8 sm:mt-12 sm:gap-10 md:grid-cols-3">
+          {service.howWeHelp.map((item, i) => (
+            <div key={item.title}>
+              <span className="story-numeral block text-3xl font-bold tabular-nums sm:text-4xl">{String(i + 1).padStart(2, "0")}</span>
+              <span aria-hidden className="story-numeral-rule mt-3 block h-px w-10 bg-primary-600" />
+              <h3 className="mt-4 text-base font-bold text-neutral-900 sm:text-lg">{item.title}</h3>
+              <div className={`mt-2 text-sm leading-relaxed text-neutral-600 sm:text-base ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
         </div>
@@ -190,21 +219,60 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
     )}
-    {/* ADOPTION DECLINED on this band:
-        packages/web-shared/design/marketing/LeadCTAPanel.tsx (adds a
-        lead-capture surface, owner-gated),
-        packages/web-shared/design/marketing/StickyCTA.tsx (an interruption),
+    {/* ADOPTED (the owner lifted the earlier gate on this component):
+        packages/web-shared/design/marketing/LeadCTAPanel.tsx, replacing the
+        hand-rolled heading-plus-button band. generalist calls it 24 times; this
+        family called it zero.
+
+        NO COPY IS AUTHORED OR DROPPED. `title` and `description` are the two
+        strings this band already published, byte for byte. Three of the
+        component's own defaults would have published copy nobody here wrote, so
+        each is explicitly overridden to empty and the component renders nothing
+        in its place: `eyebrow=""` (default "Free consultation", a claim about
+        what we charge), `formTitle=""` (default "Book your free consultation",
+        the same claim) and `proofPoints={[]}` (there is no authored proof-point
+        set on this site; that is an owner item, not something to invent).
+
+        The /contact link this band used to carry is NOT lost from the route:
+        the hero above links /contact, so the page's unique internal link set is
+        unchanged, and the form now converts in place instead of sending the
+        reader to another page to start again.
+
+        `LeadForm` emits no data-cta attribute (grep data-cta over
+        ecommerce/web/src returns only thank-you/page.tsx and PageShell.tsx), so
+        the CTA snapshot is unchanged.
+
+        No `.ground-dark` on this band, deliberately: the component paints
+        bg-slate-900 but the form sits on a WHITE card inside it, and
+        `.ground-dark` on an ancestor of a light island is the defect the rule
+        names. Nothing focusable sits bare on the dark side here, because the
+        eyebrow, the proof points and the footnote are all empty. Contrast on
+        the dark side: white title 17.8, text-slate-200 description 12.9.
+
+        STILL DECLINED here: packages/web-shared/design/marketing/StickyCTA.tsx
+        (an interruption, banned estate-wide),
         packages/web-shared/design/marketing/TestimonialsSection.tsx (hardcodes
-        another site's quotes; this site has no authored social proof) and
-        packages/web-shared/design/marketing/WhatToExpectCard.tsx (its default
-        props publish a fee line nobody here authored).
-        `.ground-dark` rebinds --focus-ring for this section. Do not remove it. */}
-    <section className={`ground-dark bg-neutral-900 ${sectionY}`}>
-      <div className={siteContainerLg}>
-        <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to an ecommerce tax specialist.</h2>
-        <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">Tell us about your situation and we will reply within 24 hours.</p>
-        <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
-      </div>
-    </section>
+        Property's quotes; this site has no authored social proof and inventing
+        it is a claims breach) and
+        packages/web-shared/design/marketing/WhatToExpectCard.tsx, which the
+        owner approved on condition that explicit props are passed: this route
+        has no authored "what to expect" list to pass, and its four defaults are
+        unwritten copy including a fee line. Owner item.
+
+        The component's `backdrop` slot is left EMPTY, also deliberately.
+        EcommerceBackdrop hardcodes `id="ecommerce-settlement-run"` on its SVG
+        pattern; the hero at the top of this route already mounts it, so filling
+        the slot would emit that id twice on one page and `url(#...)` would
+        resolve both references to the first node. A duplicate id is a defect,
+        and a second texture band is not worth one. Fix the id first if this
+        slot is ever wanted. */}
+    <LeadCTAPanel
+      eyebrow=""
+      title="Speak to an ecommerce tax specialist."
+      description="Tell us about your situation and we will reply within 24 hours."
+      proofPoints={[]}
+      formTitle=""
+      form={<LeadForm />}
+    />
   </>);
 }

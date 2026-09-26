@@ -12,9 +12,14 @@ export const metadata: Metadata = {
     description: `Terms of use for the ${siteConfig.name} website. Governing law, disclaimers, and acceptable use policy.`,
     url: `${siteConfig.url}/terms`,
     type: "website",
+    // The root layout sets og/twitter images; declaring openGraph here
+    // REPLACES the parent object rather than merging, so the default card
+    // image has to be repeated or this route ships none.
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/api/og"],
     title: "Terms of use",
     description: `Terms of use for the ${siteConfig.name} website. Governing law, disclaimers, and acceptable use policy.`,
   },

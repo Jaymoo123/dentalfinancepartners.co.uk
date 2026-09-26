@@ -4,8 +4,9 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 import { btnPrimary, siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 export const metadata: Metadata = {
-  title: "About | Specialist UK Ecommerce Accountants",
+  title: "About | Ecommerce Accountants",
   description: `${siteConfig.name} are specialist UK accountants for online sellers.`,
   alternates: { canonical: `${siteConfig.url}/about` },
 };
@@ -34,8 +35,13 @@ export default function AboutPage() {
         Its own docblock scopes it to /thank-you, /book and /complete, which are
         noindex outcome pages and another builder's lease. /about is indexed
         content and keeps the brand hero. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, the
             same call shape as the phase-3 hubs. The Home crumb is not a new
             internal link: the kit header wordmark and footer already emit
@@ -50,7 +56,7 @@ export default function AboutPage() {
           />
         </div>
         <h1 className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">We work with UK online sellers.</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">Ecommerce accounts, VAT, settlement reconciliation and marketplace compliance are specialist enough that general accounting experience is not the same as ecommerce experience.</p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">Ecommerce accounts, VAT, settlement reconciliation and marketplace compliance are specialist enough that general accounting experience is not the same as ecommerce experience.</p>
       </div>
     </section>
     {/* ADOPTED: packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`.

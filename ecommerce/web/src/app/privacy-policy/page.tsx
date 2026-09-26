@@ -14,9 +14,14 @@ export const metadata: Metadata = {
     description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data on this website. UK GDPR compliant.`,
     url: `${siteConfig.url}/privacy-policy`,
     type: "website",
+    // The root layout sets og/twitter images; declaring openGraph here
+    // REPLACES the parent object rather than merging, so the default card
+    // image has to be repeated or this route ships none.
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/api/og"],
     title: "Privacy policy",
     description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data. UK GDPR compliant.`,
   },

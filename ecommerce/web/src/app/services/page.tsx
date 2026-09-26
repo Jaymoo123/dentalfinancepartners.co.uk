@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
@@ -7,8 +8,9 @@ import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-uti
 import { serviceTiers } from "@/config/service-tiers";
 import { ecommerceServices } from "@/data/services";
 import { siteConfig } from "@/config/site";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 export const metadata: Metadata = {
-  title: "Ecommerce Tax Services | VAT, Accounts and Seller Compliance",
+  title: "Ecommerce Tax Services for UK Sellers",
   description: "Specialist ecommerce accountancy services: VAT compliance, settlement reconciliation, EU selling and HMRC platform-reporting letter response.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };
@@ -48,13 +50,18 @@ export default function ServicesIndexPage() {
         ever placed in this hero, and without the rebind its focus ring would
         paint #8a5e1a on an #8a5e1a ground, i.e. 1.00:1. No light island sits
         inside this section. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         <div className={crumbOnBrand}>
           <Breadcrumb onDark siteUrl={siteConfig.url} items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
         </div>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Specialist services for UK online sellers.</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">VAT compliance, settlement reconciliation, EU selling and HMRC letter response.</p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">VAT compliance, settlement reconciliation, EU selling and HMRC letter response.</p>
       </div>
     </section>
     <section className="bg-white border-b border-neutral-200">
@@ -69,26 +76,42 @@ export default function ServicesIndexPage() {
       </div>
     </section>
 
-    {/* ADOPTION DECLINED: packages/web-shared/design/marketing/CoverageCards.tsx.
-        Its cards are <div>s with no link slot, so swapping it in would delete
-        the four /services/<slug> links that are the entire job of this grid,
-        and it requires a LucideIcon value per item, which is an invented icon
-        mapping plus a lucide-react dependency this app does not declare.
-        ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx
-        and packages/web-shared/design/marketing/StickyCTA.tsx. Both add a new
-        lead-capture surface to a page whose CTA snapshot is a gate. */}
+    {/* ADOPTION DECLINED, re-examined: packages/web-shared/design/marketing/CoverageCards.tsx.
+        Half the old reason is gone, lucide-react is now declared in
+        ecommerce/web/package.json. The other half stands and is decisive: its
+        cards are <div>s with no link slot, and on this hub the cards ARE the
+        four /services/<slug> links, which is the entire job of the grid.
+        Adopting it would delete them. It may fit a grid that is not navigation;
+        this one is. It would also still need an invented LucideIcon per record,
+        which no service record carries.
+        The one thing lucide DOES buy here is the affordance the cards lacked:
+        an ArrowRight that slides on hover, the same mark generalist puts on
+        every card-shaped link. Decoration, aria-hidden, text-primary-600
+        (#9e6615, 4.81 on the white card, past the 3.0 graphic floor).
+
+        ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx,
+        which the owner has now approved and which IS adopted on all three slug
+        templates. Not here: it requires a `title` and a `description`, and this
+        hub publishes neither a CTA heading nor a CTA line to hand it. Writing
+        them is authoring marketing copy. Owner item.
+        ADOPTION DECLINED: packages/web-shared/design/marketing/StickyCTA.tsx,
+        an interruption, banned estate-wide. */}
     <section className={`bg-primary-400/5 ${sectionY}`}>
       <div className={siteContainerLg}>
         <Eyebrow>What we do</Eyebrow>
         <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {ecommerceServices.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className={`group block bg-white border border-neutral-200 p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}>
+            <Link key={s.slug} href={`/services/${s.slug}`} className={`group flex flex-col bg-white border border-neutral-200 p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}>
               {/* Hover colour is text-primary-700 (#8a5e1a, 5.68 on white), not
                   the brand hex #c9861b: that hex is 3.04 on white and is
                   decoration only, never text. The card border keeps it, because
                   a border is a graphic and clears the 3:1 floor. */}
               <span className="text-base font-bold text-neutral-900 group-hover:text-primary-700 transition-colors">{s.title}</span>
               <p className="mt-2 text-sm text-neutral-500 line-clamp-2">{s.headline}</p>
+              {/* Affordance only, no label: the card already carries its title
+                  and adding words here would be authoring copy. aria-hidden, so
+                  the accessible name of the link is unchanged. */}
+              <ArrowRight aria-hidden className="mt-4 h-4 w-4 text-primary-600 transition-transform group-hover:translate-x-1" strokeWidth={2} />
             </Link>
           ))}
         </div>

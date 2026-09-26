@@ -101,9 +101,9 @@ export const soleTraderVsLtdSellersTool: GenericTool = {
   category: "Business Structure and Tax",
   oneLiner:
     "Compare sole-trader and limited-company take-home for UK marketplace and ecommerce sellers. Runs on your selling profit after platform fees and COGS using 2026/27 rates.",
-  metaTitle: "Sole Trader vs Ltd for Online Sellers UK | Tax Calculator 2026",
+  metaTitle: "Sole Trader vs Ltd Calculator | UK Online Sellers",
   metaDescription:
-    "Compare sole-trader and limited-company take-home for UK marketplace sellers. Enter profit after platform fees and stock costs. 2026/27 income tax, Class 4 NIC, CT and dividend rates.",
+    "Compare sole-trader and limited-company take-home for UK marketplace sellers. 2026/27 income tax, Class 4 NIC, corporation tax and dividend rates.",
   intro:
     "For marketplace and ecommerce sellers, the structure decision is not the same as for a service business. Stock reinvestment means your taxable profit often exceeds your available cash, and platform fees change the income picture before the tax comparison even starts. This calculator runs the sole-trader and limited-company take-home side by side at your profit level, after you have already deducted platform fees, cost of goods and other business costs. It uses 2026/27 rates for income tax, Class 4 NIC, corporation tax and <a href=\"https://www.gov.uk/tax-on-dividends\">dividend rates under Finance Act 2026</a>.",
   ctaLabel: "Get advice on the right structure for your selling business",

@@ -3,6 +3,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { siteConfig } from "@/config/site";
 import { contentNarrow, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 export const metadata: Metadata = {
   title: "Contact us",
   description: `Speak to ${siteConfig.name} about ecommerce accounts, VAT, marketplace compliance or online seller tax. We reply within 24 hours.`,
@@ -37,8 +38,13 @@ export default function ContactPage() {
         banned estate-wide) and
         packages/web-shared/design/marketing/WhatToExpectCard.tsx (its default
         props publish a fee line nobody here authored). */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         <div className={crumbOnBrand}>
           <Breadcrumb
             onDark
@@ -47,7 +53,7 @@ export default function ContactPage() {
           />
         </div>
         <h1 className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Contact us</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">Tell us about your online selling. We reply within 24 hours.</p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">Tell us about your online selling. We reply within 24 hours.</p>
       </div>
     </section>
     {/* The form itself is src/components/forms/LeadForm.tsx, another builder's

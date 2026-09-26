@@ -107,3 +107,24 @@ export const focusRingOnBrand =
  */
 export const btnPrimary =
   "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-[var(--btn-ground,var(--color-primary-600))] px-8 py-3.5 text-base font-bold text-white transition-all duration-150 hover:bg-[var(--btn-ground-hover,var(--color-primary-700))] active:bg-[var(--btn-ground-active,var(--color-primary-800))] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
+
+/**
+ * The ring for anchors inside AUTHORED HTML (`dangerouslySetInnerHTML`).
+ *
+ * Those anchors are written in the data files, so no call site can put a class
+ * on them. The only reachable handle is a descendant variant on the wrapper,
+ * which is why this is `[&_a]:` rather than a recipe an element carries. It is
+ * the SAME mechanism as `focusRing` above, one variant deeper: same width, same
+ * `outline-offset-2`, same `var(--focus-ring)`. Establishing it once here and
+ * appending it to every authored-HTML wrapper keeps the grep
+ * `outline-\[var\(--focus-ring\)\]` as the single census of rings on this site.
+ *
+ * The token, not a literal colour, because these wrappers sit on BOTH grounds:
+ * `linkOnLight` on white and #fafaf7 (ring #8a5e1a, 5.68 / 5.44) and
+ * `linkOnDark` on the `.ground-dark` primary-700 hero and neutral-800 stats
+ * band (ring #ffffff, past the 3:1 graphic floor on both). A literal would be
+ * wrong on one of the two; `.ground-dark` rebinds the token and the same string
+ * is correct on both.
+ */
+export const focusRingAuthoredLinks =
+  "[&_a]:focus-visible:outline [&_a]:focus-visible:outline-2 [&_a]:focus-visible:outline-offset-2 [&_a]:focus-visible:outline-[var(--focus-ring)]";

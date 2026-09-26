@@ -187,7 +187,33 @@ export function Calculator({
 
           {result.note && (
             <div className="mt-5 border-t border-slate-700 pt-4">
-              <p className="text-xs text-slate-400 leading-relaxed">{result.note}</p>
+              {/*
+                Same treatment, and the same reasoning, as `intro` above:
+                `note` is authored first-party copy committed in each site's
+                lib/.../tools/*.ts, and some of it carries real gov.uk
+                citations. Interpolated as a text child it printed the markup
+                as visible escaped text and the links were inert; an
+                adversarial review found a visitor reading
+                `&lt;a href=&quot;...&quot;&gt;Self Assessment&lt;/a&gt;`
+                on a live calculator.
+
+                Byte-identical on every other site, derived rather than
+                assumed: of all the `note` fields in every tool definition in
+                the monorepo, only ecommerce's side-hustle checker authors
+                markup in one. A note with no markup renders the same either
+                way, Property included.
+
+                The note sits on the slate-900 result panel, so the link must
+                be a LIGHT colour: --brand-primary-text is a dark on-white
+                token on most sites and would be near-invisible here. White
+                with an underline is 17.85 on slate-900 and stays distinct
+                from the slate-400 note text. --calc-note-link lets a site
+                override it without touching the kit.
+              */}
+              <p
+                className="text-xs text-slate-400 leading-relaxed [&_a]:underline [&_a]:underline-offset-2 [&_a]:text-[var(--calc-note-link,#ffffff)]"
+                dangerouslySetInnerHTML={{ __html: result.note }}
+              />
             </div>
           )}
           </div>,

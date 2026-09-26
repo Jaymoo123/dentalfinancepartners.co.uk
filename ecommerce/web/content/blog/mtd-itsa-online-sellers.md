@@ -39,7 +39,7 @@ howToSteps:
   - name: "Connect accounting software to your platforms where integrations exist"
     text: "Automated feeds from Amazon, eBay, Etsy and Shopify reduce manual reconciliation errors. Where no integration exists, import settlement CSVs at least quarterly."
 ---
-<p>Making Tax Digital for Income Tax (MTD ITSA) is not a new tax. It changes how sole-trader sellers keep records and report income. For most sellers the practical question is the same: does it apply to me, and if so, what do I actually need to change? This page answers the seller-specific version of that question. For the generic mechanics (how quarterly updates work, which software qualifies, how to sign up) see the <a href="https://hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">full MTD ITSA guide on Holloway Davies</a>.</p>
+<p>Making Tax Digital for Income Tax (MTD ITSA) is not a new tax. It changes how sole-trader sellers keep records and report income. For most sellers the practical question is the same: does it apply to me, and if so, what do I actually need to change? This page answers the seller-specific version of that question. For the generic mechanics (how quarterly updates work, which software qualifies, how to sign up) see the <a href="https://www.hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">full MTD ITSA guide on Holloway Davies</a>.</p>
 
 <h2>The short answer: does MTD ITSA apply to you?</h2>
 
@@ -145,7 +145,7 @@ howToSteps:
 
 <h2>The generic MTD mechanics: go here for those</h2>
 
-<p>This page covers the seller-specific slice of MTD ITSA. The standard mechanics, including how quarterly updates work, which software is on the HMRC-compatible list, how to sign up and what an End of Period Statement looks like, are covered in full in the <a href="https://hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">MTD ITSA guide on Holloway Davies</a>. For deadline specifics see the <a href="https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline">April 2026 deadline guide</a>.</p>
+<p>This page covers the seller-specific slice of MTD ITSA. The standard mechanics, including how quarterly updates work, which software is on the HMRC-compatible list, how to sign up and what an End of Period Statement looks like, are covered in full in the <a href="https://www.hollowaydavies.co.uk/fundamentals/making-tax-digital-for-income-tax-guide">MTD ITSA guide on Holloway Davies</a>. For deadline specifics see the <a href="https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/mtd-itsa-april-2026-deadline">April 2026 deadline guide</a>.</p>
 
 <h2>Common failure modes for sellers</h2>
 

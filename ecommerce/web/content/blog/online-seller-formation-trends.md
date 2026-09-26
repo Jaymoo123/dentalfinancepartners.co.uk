@@ -106,7 +106,7 @@ faqs:
 <h2>Sources</h2>
 <ol>
   <li id="ref-1">UK Online Seller Business Index and Online Seller Formation Seasonality, <a href="/research/online-seller-index">/research/online-seller-index</a>. Compiled from Companies House public records under the Open Government Licence v3.0. Data pulled 2026-07-15, seasonality data generated 2026-07-23.</li>
-  <li id="ref-2">Companies House Advanced Search API. <a href="https://developer.company-information.service.gov.uk/api/docs/">developer.company-information.service.gov.uk</a>. Published under the Open Government Licence v3.0.</li>
+  <li id="ref-2">Companies House Advanced Search API. <a href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search">developer-specs.company-information.service.gov.uk</a>. Published under the Open Government Licence v3.0.</li>
   <li id="ref-3">Office for National Statistics, Retail Sales Index, series J4MC (internet sales as a proportion of all retailing). <a href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi">ons.gov.uk</a>. Published under the Open Government Licence v3.0.</li>
   <li id="ref-4">UK Online Seller Survival Index, <a href="/research/online-seller-survival-index">/research/online-seller-survival-index</a>. Formation-year cohort survival, compiled from Companies House public records under the Open Government Licence v3.0.</li>
 </ol>

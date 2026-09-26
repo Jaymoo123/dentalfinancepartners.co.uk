@@ -20,10 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params;
   const cat = getAllCategories().find((c) => c.slug === category);
   if (!cat) return {};
-  const title = `${cat.name} | Ecommerce Tax Guides`;
+  const title = `${cat.name} Guides`;
   const description = `Practical guides on ${cat.name.toLowerCase()} for UK online sellers.`;
   const url = `${siteConfig.url}/blog/${category}`;
-  return { title, description, alternates: { canonical: url }, openGraph: { title, description, url, type: "website" } };
+  return { title, description, alternates: { canonical: url }, openGraph: { title, description, url, type: "website", images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }] },
+    twitter: { card: "summary_large_image", title, description, images: ["/api/og"] } };
 }
 
 export default async function CategoryPage({ params }: Props) {

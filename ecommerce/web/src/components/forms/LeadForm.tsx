@@ -501,7 +501,7 @@ export function LeadForm({
             <button
               type="button"
               onClick={() => setStep(0)}
-              className={`text-sm font-medium underline ${mutedClass}`}
+              className={`text-sm font-medium underline ${mutedClass} ${focusRing}`}
             >
               Back
             </button>

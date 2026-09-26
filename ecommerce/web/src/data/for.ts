@@ -48,7 +48,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Annual accounts and tax returns for seller businesses",
-        body: `We prepare sole-trader <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> returns and limited company accounts for Amazon selling businesses, with COGS and inventory properly recognised and owner extraction structured against current rates. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model the options. Generic incorporation and salary/dividend mechanics: <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `We prepare sole-trader <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> returns and limited company accounts for Amazon selling businesses, with COGS and inventory properly recognised and owner extraction structured against current rates. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model the options. Generic incorporation and salary/dividend mechanics: <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
       },
     ],
     faqs: [
@@ -74,7 +74,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         question: "Can HMRC see my Amazon sales?",
-        answer: `Yes. <a href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms">Digital platform reporting rules</a> took effect from 1 January 2024, with first reports covering 2024 due in January 2025. Amazon and other platforms report seller income directly to HMRC. The assumption that marketplace sales are invisible to HMRC is no longer valid. See <a href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules">platform reporting explained</a> and our <a href="/services/hmrc-letter-online-sales">HMRC letter response service</a>.`,
+        answer: `Yes. <a href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms">Digital platform reporting rules</a> took effect from 1 January 2024, and the first reports covering 2024 were due in January 2025. Amazon and other platforms report seller income directly to HMRC. The assumption that marketplace sales are invisible to HMRC is no longer valid. See <a href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules">platform reporting explained</a> and our <a href="/services/hmrc-letter-online-sales">HMRC letter response service</a>.`,
       },
     ],
   },
@@ -105,7 +105,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Inventory, COGS and structure as the business scales",
-        body: `Shopify sellers buying stock for resale need accruals-basis accounts with a proper cost-of-goods-sold figure. Under <a href="https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim33115">BIM33115</a>, closing stock is valued at the lower of cost and net realisable value. Cash-basis accounting that expenses stock when purchased, regardless of when sold, produces a misleading profit figure. As revenue grows, many Shopify sellers consider incorporation; the decision affects income tax, National Insurance and owner extraction. For EU cross-border sales, see <a href="/services/selling-into-the-eu">Selling into the EU</a> and <a href="/vat/135-import-rule">/vat/135-import-rule</a> for low-value direct consignments. Generic incorporation mechanics at <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `Shopify sellers buying stock for resale need accruals-basis accounts with a proper cost-of-goods-sold figure. Under <a href="https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim33115">BIM33115</a>, closing stock is valued at the lower of cost and net realisable value. Cash-basis accounting that expenses stock when purchased, regardless of when sold, produces a misleading profit figure. As revenue grows, many Shopify sellers consider incorporation; the decision affects income tax, National Insurance and owner extraction. For EU cross-border sales, see <a href="/services/selling-into-the-eu">Selling into the EU</a> and <a href="/vat/135-import-rule">/vat/135-import-rule</a> for low-value direct consignments. Generic incorporation mechanics at <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
       },
     ],
     howWeHelp: [
@@ -119,7 +119,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Annual accounts and tax returns",
-        body: `We prepare sole-trader Self Assessment returns and limited company accounts for Shopify businesses, with stock and COGS properly recognised. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model extraction options. See also <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic salary/dividend and MTD ITSA mechanics at <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `We prepare sole-trader Self Assessment returns and limited company accounts for Shopify businesses, with stock and COGS properly recognised. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model extraction options. See also <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic salary/dividend and MTD ITSA mechanics at <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
       },
     ],
     faqs: [
@@ -137,7 +137,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         question: "Can HMRC see my Shopify sales?",
-        answer: `Where Shopify Payments or other platforms fall under <a href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms">digital platform reporting rules</a> (in force from 1 January 2024, first reports due January 2025), HMRC may receive data about your seller income. Regardless of whether your specific gateway reports you, your obligation to register for Self Assessment and VAT (where applicable) exists independently of what platforms report. See <a href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules">platform reporting explained</a>.`,
+        answer: `Where Shopify Payments or other platforms fall under <a href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms">digital platform reporting rules</a> (in force from 1 January 2024, first reports were due January 2025), HMRC may receive data about your seller income. Regardless of whether your specific gateway reports you, your obligation to register for Self Assessment and VAT (where applicable) exists independently of what platforms report. See <a href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules">platform reporting explained</a>.`,
       },
     ],
   },
@@ -156,7 +156,7 @@ export const sellerHubs: SellerHub[] = [
     challenges: [
       {
         title: "Platform reporting is not a tax threshold",
-        body: `From 1 January 2024, <a href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms">digital platforms including eBay, Etsy, Vinted and Amazon must report seller income to HMRC</a>, with first reports covering the 2024 period due in January 2025. The reporting exclusion (fewer than 30 sales and approximately £1,700 in the period) determines whether the platform reports you, not whether you owe tax. Tax liability follows trading status and income levels, not the platform-report trigger. Both directions of confusion are common: panic below the trigger, complacency above it. See <a href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules">platform reporting rules explained</a> and our <a href="/services/hmrc-letter-online-sales">HMRC letter response service</a>.`,
+        body: `From 1 January 2024, <a href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms">digital platforms including eBay, Etsy, Vinted and Amazon must report seller income to HMRC</a>, and the first reports covering the 2024 period were due in January 2025. The reporting exclusion (fewer than 30 sales and approximately £1,700 in the period) determines whether the platform reports you, not whether you owe tax. Tax liability follows trading status and income levels, not the platform-report trigger. Both directions of confusion are common: panic below the trigger, complacency above it. See <a href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules">platform reporting rules explained</a> and our <a href="/services/hmrc-letter-online-sales">HMRC letter response service</a>.`,
       },
       {
         title: "Decluttering vs trading: the badges-of-trade question",
@@ -235,7 +235,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Margin tracking and business structure for high-volume models",
-        body: `Dropshipping businesses often operate on thin margins across high order volumes. Bookkeeping that matches supplier costs to customer sales in the correct period is essential for an accurate profit figure. A business generating consistent revenue needs proper HMRC registration, a <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> return (or limited company accounts), and VAT registration once the threshold is approached. See our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic incorporation mechanics at <a href="https://hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `Dropshipping businesses often operate on thin margins across high order volumes. Bookkeeping that matches supplier costs to customer sales in the correct period is essential for an accurate profit figure. A business generating consistent revenue needs proper HMRC registration, a <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> return (or limited company accounts), and VAT registration once the threshold is approached. See our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic incorporation mechanics at <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
       },
     ],
     howWeHelp: [

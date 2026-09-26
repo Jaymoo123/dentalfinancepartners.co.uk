@@ -172,11 +172,19 @@
        ring internally from packages/web-shared/design/layout-utils.ts, so a
        call site cannot override it: pinned to primary-600 it measured 1.18 on
        the #8a5e1a brand hero and 2.42 on the #1a3a5c research hero, both under
-       the 3:1 graphic floor. The kit reads --kit-focus-ring and falls back to
-       primary-600 when it is absent, so this line is the whole opt-in. It
-       points at --focus-ring rather than a hex, which keeps ONE ring mechanism
-       on this site and means .ground-dark rebinds the kit's ring too. */
-    --kit-focus-ring: var(--focus-ring);
+       the 3:1 graphic floor.
+
+       This MUST be rebound in `.ground-dark` alongside --focus-ring, and it
+       must NOT be written as `var(--focus-ring)`. A custom property whose
+       value is a var() reference is substituted at COMPUTED-VALUE TIME on the
+       element that declares it, so `--kit-focus-ring: var(--focus-ring)` here
+       resolves to the light value at :root and then inherits as that frozen
+       colour; rebinding --focus-ring further down never reaches it. The first
+       version of this opt-in did exactly that and was INERT: an adversarial
+       review measured the kit breadcrumb ring at 1.00 on the amber hero and
+       2.05 on the navy, WORSE than the 1.18 the fix was written to close.
+       Both declarations therefore point at the ground tokens directly. */
+    --kit-focus-ring: var(--focus-ring-on-light);
 
     /* Greys this site already paints as literals, named so they stop being
        literals. */
@@ -244,6 +252,13 @@
      unlayered rules by design. */
   .ground-dark {
     --focus-ring: var(--focus-ring-on-brand);
+    /* The kit's own ring, rebound in lockstep. Kit components build their ring
+       internally from packages/web-shared/design/layout-utils.ts and a call
+       site cannot override it, so without this line every kit breadcrumb on a
+       dark hero rings at 1.00 against its own ground. Both lines point at the
+       ground tokens directly, never at var(--focus-ring): see the note above
+       the :root declaration for why an aliased custom property freezes. */
+    --kit-focus-ring: var(--focus-ring-on-brand);
   }
 
   /* .prose-blog was emitted by the three legal pages (cookie-policy,
@@ -344,5 +359,77 @@
     padding: 0.875rem 1rem;
     border-top: 1px solid var(--border);
     color: var(--ink-soft);
+  }
+}
+
+/* Numeral and rule styles for the shared kit's numbered marketing sections
+   (packages/web-shared/design/marketing/NumberedReasons.tsx and WhyUsList.tsx).
+
+   Ported from Property/web/src/app/globals.css, which is where the recipe was
+   cut, and recoloured onto this site's ramp: Property glows emerald because
+   emerald is its brand. Crypto, Medical and Dentists each hold their own copy
+   for the same reason, so this is the estate pattern rather than a fork.
+
+   The kit component ships no colour of its own, which is why a port that
+   adopts it without these rules renders unstyled numerals. That is exactly why
+   the component was declined here during the port, and copying this block is
+   what lifts the decline.
+
+   Colour is --color-primary-700 (#8a5e1a, 5.68 on white): the numeral is TEXT
+   and needs the 4.5 floor. The glow is the brand hex #c9861b at low alpha,
+   which is decoration and never carries meaning on its own.
+
+   In @layer components deliberately. An unlayered rule outranks every Tailwind
+   utility regardless of specificity, and this file has zero unlayered rules by
+   design. */
+@layer components {
+  .story-numeral {
+    color: var(--color-primary-700);
+    text-shadow: 0 0 18px rgb(201 134 27 / 0.45);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .story-numeral {
+      transition:
+        color 520ms ease-out,
+        text-shadow 520ms ease-out;
+    }
+
+    .story-numeral-rule {
+      transform-origin: left center;
+      transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* The numeral is present and legible before it lights, so a section never
+       reads as half-rendered while it is off screen. neutral-300 on white is
+       decorative-grade only, which is correct for the pre-draw state: the
+       lit state above is the one that has to clear the text floor. */
+    [data-draw="off"] .story-numeral {
+      color: var(--color-neutral-300);
+      text-shadow: 0 0 0 rgb(201 134 27 / 0);
+    }
+
+    [data-draw="off"] .story-numeral-rule {
+      transform: scaleX(0);
+    }
+  }
+}
+
+@keyframes num-glow {
+  0% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+  35% {
+    opacity: 1;
+    text-shadow: 0 0 22px rgba(201, 134, 27, 0.95), 0 0 44px rgba(201, 134, 27, 0.45);
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 22px rgba(201, 134, 27, 0.95), 0 0 44px rgba(201, 134, 27, 0.45);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 rgba(201, 134, 27, 0);
   }
 }

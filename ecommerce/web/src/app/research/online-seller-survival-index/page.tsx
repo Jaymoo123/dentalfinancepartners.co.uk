@@ -37,8 +37,8 @@ const latestCohort =
 const HEADLINE_SENTENCE = `${fmtPct(headline.latest_5yr_retail_pct)} of UK retail enterprises born in ${headline.latest_5yr_cohort_year} were still trading five years later`;
 
 export const metadata: Metadata = {
-  title: "Online Seller Survival Index | How long do UK retailers last? | Ecommerce Finance",
-  description: `${HEADLINE_SENTENCE}, against a ${fmtPct(headline.latest_5yr_all_industries_pct)} all-industries average. Sourced from ONS Business Demography, paired with our SIC 47910 formation data.`,
+  title: "Online Seller Survival Index | UK Retail",
+  description: `${HEADLINE_SENTENCE}, against a ${fmtPct(headline.latest_5yr_all_industries_pct)} all-industries average. Sourced from ONS Business Demography.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
 };
 
@@ -102,6 +102,21 @@ export default function OnlineSellerSurvivalIndexPage() {
               "1-to-5-year survival rates for UK retail-sector enterprises by birth-year cohort, compared against the all-industries UK average, compiled from ONS Business Demography Table 4.2 data.",
             url: PAGE_PATH,
             dateModified: meta.generated_at,
+            // Every figure on this page comes from ONS Business Demography
+            // Table 4.2 (see meta.sources in the committed snapshot). The
+            // builder's default source list is the Index page's Companies
+            // House SIC 47910 plus the ONS Retail Sales Index, neither of
+            // which contributes anything here, so this page was publishing a
+            // provenance its own methodology never claims.
+            sourceOrganization: [
+              {
+                "@type": "Organization",
+                name: "Office for National Statistics",
+                url: "https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/datasets/businessdemographyreferencetable/current",
+                description:
+                  "ONS Business Demography Table 4.2, survival of newly born enterprises by broad industry group (Retail), under Open Government Licence v3.0",
+              },
+            ],
           }),
         }}
       />

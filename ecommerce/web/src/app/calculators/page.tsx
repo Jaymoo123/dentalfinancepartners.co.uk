@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 
 export const metadata: Metadata = {
   title: `Free Ecommerce Tax Calculators`,
-  description: "Free calculators for UK online sellers: seller take-home after tax, VAT threshold tracker and sole trader vs limited company comparison. Built on current HMRC rates.",
+  description: "Free calculators for UK online sellers: take-home after tax, VAT threshold tracker and sole trader vs limited company comparison. 2026/27 HMRC rates.",
   alternates: { canonical: `${site.url}/calculators` },
 };
 
@@ -48,29 +50,43 @@ export default function CalculatorsPage() {
         `ground-dark` is load-bearing: the breadcrumb is the first focusable
         thing in this hero and without the rebind its ring would paint #8a5e1a
         on #8a5e1a, 1.00:1. No light island sits inside this section. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         <div className={crumbOnBrand}>
           <Breadcrumb onDark siteUrl={site.url} items={[{ label: "Home", href: "/" }, { label: "Calculators" }]} />
         </div>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Ecommerce seller calculators</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">Free tools for UK online sellers built on current HMRC rates.</p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">Free tools for UK online sellers built on current HMRC rates.</p>
       </div>
     </section>
-    {/* ADOPTION DECLINED: packages/web-shared/design/marketing/CoverageCards.tsx.
-        Its cards are <div>s with no link slot, so swapping it in would delete
-        the four /calculators/<slug> links that are the entire job of this grid,
-        and it requires a LucideIcon per item, an invented icon mapping plus a
-        lucide-react dependency this app does not declare.
-        ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx
-        and packages/web-shared/design/marketing/StickyCTA.tsx. Both add a new
-        lead-capture surface to a route whose CTA snapshot is a gate. */}
+    {/* ADOPTION DECLINED, re-examined: packages/web-shared/design/marketing/CoverageCards.tsx.
+        lucide-react is now declared in ecommerce/web/package.json, so that half
+        of the old reason is gone. The other half is decisive and unchanged: its
+        cards are <div>s with no link slot, and here the cards ARE the four
+        /calculators/<slug> links, the entire job of the grid. Adopting it would
+        delete them. It may fit a grid that is not navigation; this one is. It
+        would also still need an invented LucideIcon per tool.
+        What lucide buys is the affordance the cards lacked: an ArrowRight that
+        slides on hover, aria-hidden decoration, text-primary-600 (#9e6615,
+        4.81 on the white card, past the 3.0 graphic floor).
+
+        ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx,
+        now owner-approved and adopted on all three content slug templates, but
+        not here: it requires a `title` and a `description` and this hub
+        publishes neither. Writing them is authoring marketing copy. Owner item.
+        ADOPTION DECLINED: packages/web-shared/design/marketing/StickyCTA.tsx,
+        an interruption, banned estate-wide. */}
     <section className={`bg-primary-400/5 ${sectionY}`}>
       <div className={siteContainerLg}>
         <Eyebrow>The tools</Eyebrow>
         <div className="mt-6 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
           {tools.map((t) => (
-            <Link key={t.slug} href={toolPath(t.slug)} className={`group block border border-neutral-200 bg-white p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}>
+            <Link key={t.slug} href={toolPath(t.slug)} className={`group flex flex-col border border-neutral-200 bg-white p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}>
               {/* text-primary-700 (#8a5e1a, 5.68 on white), NOT
                   var(--brand-primary) (#c9861b, 3.04 on white, which
                   globals.css:96 marks decorative only). This 12px uppercase
@@ -79,6 +95,9 @@ export default function CalculatorsPage() {
               <div className="text-xs font-semibold uppercase tracking-wide text-primary-700">{t.category}</div>
               <h2 className="mt-2 text-base font-bold text-neutral-900 group-hover:text-primary-700 transition-colors">{t.name}</h2>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">{t.oneLiner}</p>
+              {/* Affordance only, no label: aria-hidden, so the link's
+                  accessible name is unchanged and no copy is authored. */}
+              <ArrowRight aria-hidden className="mt-4 h-4 w-4 text-primary-600 transition-transform group-hover:translate-x-1" strokeWidth={2} />
             </Link>
           ))}
         </div>

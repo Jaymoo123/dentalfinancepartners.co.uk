@@ -3,10 +3,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteConfig } from "@/config/site";
 import { sellerHubs, getHub } from "@/data/for";
 import { buildFaqJsonLd } from "@/lib/schema";
-import { btnPrimary, siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { siteContainerLg, sectionY, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 
 export function generateStaticParams() { return sellerHubs.map((h) => ({ slug: h.slug })); }
 
@@ -23,8 +26,8 @@ export function generateStaticParams() { return sellerHubs.map((h) => ({ slug: h
  * neutral-800 stats band. Same two recipes as app/services/[slug] and
  * app/vat/[slug].
  */
-const linkOnLight = "[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800";
-const linkOnDark = "[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2";
+const linkOnLight = `[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800 ${focusRingAuthoredLinks}`;
+const linkOnDark = `[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2 ${focusRingAuthoredLinks}`;
 
 /**
  * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
@@ -63,8 +66,13 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
         would be 1.00 against its own ground. Rings paint two pixels outside
         their control, so the white button below is not a light island for this
         purpose. Same treatment the research heroes carry. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, the
             same call the two sibling families now make. The parent crumb keeps
             the authored back-link words verbatim ("All seller types"), so no
@@ -85,7 +93,7 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
             printed as escaped markup and the authored links did not exist.
             Safe: first-party content committed in src/data/for.ts, not user
             input. */}
-        <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/80 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: hub.intro }} />
+        <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/90 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: hub.intro }} />
         <div className="mt-10"><Link href="/contact" className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
       </div>
     </section>
@@ -142,10 +150,25 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
         </div>
       </div>
     </section>
-    {/* ADOPTION DECLINED: packages/web-shared/design/marketing/WhyUsList.tsx.
-        It renders a numbered "why choose us" list. These three are what the
-        work covers, not reasons to pick us, and renumbering them as a pitch
-        changes what the section claims. Also declined here:
+    {/* ADOPTION DECLINED, now for a second and harder reason:
+        packages/web-shared/design/marketing/WhyUsList.tsx and
+        packages/web-shared/design/marketing/NumberedReasons.tsx. The CSS
+        blocker is gone (.story-numeral, .story-numeral-rule and num-glow are
+        now declared in src/app/globals.css), but WhyUsList line 198 and
+        NumberedReasons line 128 both render `{item.body}` as a TEXT CHILD, and
+        every howWeHelp body in src/data/for.ts is authored HTML. Either would
+        print the anchors as escaped markup, which is the defect this family
+        already reversed once on CardStack. WhyUsList also reads as a "why
+        choose us" pitch, and these three are what the work covers.
+        The NumberedReasons ANATOMY is taken instead, class for class: the same
+        `.story-numeral`, the same `.story-numeral-rule`, the same 01-padded
+        index, with no `data-draw` wrapper and no client island, so with no
+        ancestor carrying data-draw="off" the numeral renders lit and the
+        section is finished without JavaScript. The white card and its hover
+        treatment go with it: nothing in this grid is a link, and a hover
+        affordance on a non-link is a lie. Contrast on #fafaf7: numeral
+        --color-primary-700 #8a5e1a 5.44, rule bg-primary-600 #9e6615 4.6 as a
+        graphic. Also declined here:
         packages/web-shared/design/marketing/DrawnTickList.tsx (takes string[];
         there is no bullet list in this data, only title plus body records) and
         packages/web-shared/design/marketing/ComparisonTable.tsx (no comparison
@@ -156,11 +179,13 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
       <div className={siteContainerLg}>
         <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help {hub.title.toLowerCase()}.</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
-          {hub.howWeHelp.map((item) => (
-            <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-primary-400 hover:shadow-md transition-all">
-              <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-              <div className={`mt-3 text-sm leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
+        <div className="mt-8 grid gap-8 sm:mt-12 sm:gap-10 md:grid-cols-3">
+          {hub.howWeHelp.map((item, i) => (
+            <div key={item.title}>
+              <span className="story-numeral block text-3xl font-bold tabular-nums sm:text-4xl">{String(i + 1).padStart(2, "0")}</span>
+              <span aria-hidden className="story-numeral-rule mt-3 block h-px w-10 bg-primary-600" />
+              <h3 className="mt-4 text-base font-bold text-neutral-900 sm:text-lg">{item.title}</h3>
+              <div className={`mt-2 text-sm leading-relaxed text-neutral-600 sm:text-base ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
         </div>
@@ -206,21 +231,49 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
         </div>
       </section>
     )}
-    {/* ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx
-        (adds a lead-capture surface, owner gate),
-        packages/web-shared/design/marketing/StickyCTA.tsx (an interruption,
-        banned estate-wide), packages/web-shared/design/marketing/TestimonialsSection.tsx
-        (ships Property's quotes; this site has none and the claims ledger closed
-        invented social proof) and packages/web-shared/design/marketing/WhatToExpectCard.tsx
-        (its default props publish a fee line nobody authored).
-        `.ground-dark` stays on this section: it is what rebinds --focus-ring to
-        the on-brand white for the button below. */}
-    <section className={`ground-dark bg-neutral-900 ${sectionY}`}>
-      <div className={siteContainerLg}>
-        <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to an ecommerce tax specialist.</h2>
-        <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">Tell us about your {hub.title.toLowerCase()} situation and we will reply within 24 hours.</p>
-        <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
-      </div>
-    </section>
+    {/* ADOPTED (the owner lifted the earlier gate on this component):
+        packages/web-shared/design/marketing/LeadCTAPanel.tsx, replacing the
+        hand-rolled heading-plus-button band, same call as the two sibling slug
+        templates.
+
+        NO COPY IS AUTHORED OR DROPPED. `title` and `description` are the two
+        strings this band already published, including the interpolated
+        `hub.title.toLowerCase()`. Three component defaults would have published
+        copy nobody wrote and are overridden to empty, which the component
+        renders as nothing: `eyebrow=""` (default "Free consultation"),
+        `formTitle=""` (default "Book your free consultation") and
+        `proofPoints={[]}` (no authored proof-point set exists on this site;
+        owner item).
+
+        The /contact link this band carried is not lost: the hero above links
+        /contact, so the route's unique internal link set is unchanged.
+        `LeadForm` emits no data-cta, so the CTA snapshot is unchanged.
+
+        No `.ground-dark`: the component paints bg-slate-900 but the form sits
+        on a WHITE card inside it, and `.ground-dark` on an ancestor of a light
+        island is the defect the rule names. Nothing focusable sits bare on the
+        dark side, because eyebrow, proof points and footnote are all empty.
+        White title 17.8 and text-slate-200 description 12.9 on slate-900.
+        The `backdrop` slot is left empty: EcommerceBackdrop hardcodes
+        id="ecommerce-settlement-run" and the hero already mounts it, so filling
+        the slot would emit that id twice on one page.
+
+        STILL DECLINED: packages/web-shared/design/marketing/StickyCTA.tsx (an
+        interruption, banned estate-wide),
+        packages/web-shared/design/marketing/TestimonialsSection.tsx (ships
+        Property's quotes; this site has none and inventing social proof is a
+        claims breach) and
+        packages/web-shared/design/marketing/WhatToExpectCard.tsx, which the
+        owner approved on condition explicit props are passed: this route has no
+        authored "what to expect" list to pass and the four defaults are
+        unwritten copy including a fee line. Owner item. */}
+    <LeadCTAPanel
+      eyebrow=""
+      title="Speak to an ecommerce tax specialist."
+      description={`Tell us about your ${hub.title.toLowerCase()} situation and we will reply within 24 hours.`}
+      proofPoints={[]}
+      formTitle=""
+      form={<LeadForm />}
+    />
   </>);
 }

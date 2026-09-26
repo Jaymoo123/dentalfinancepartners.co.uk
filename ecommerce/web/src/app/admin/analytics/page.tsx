@@ -44,6 +44,7 @@ import { SnapshotCard } from "@accounting-network/web-shared/console/components/
 import DashboardTabs from "@accounting-network/web-shared/console/components/DashboardTabs";
 import CountrySelect from "@accounting-network/web-shared/console/components/CountrySelect";
 import VisitorsTable, { type VisitorRow } from "@accounting-network/web-shared/console/components/VisitorsTable";
+import { focusRing } from "@/components/ui/layout-utils";
 import { checkAuth } from "./checkAuth";
 import type { Metadata } from "next";
 
@@ -150,7 +151,7 @@ function Breakdown({ title, rows }: { title: string; rows: Array<[string, number
 function Detail({ summary, children }: { summary: string; children: React.ReactNode }) {
   return (
     <details className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
-      <summary className="flex w-full cursor-pointer items-center justify-between gap-2 px-4 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900">
+      <summary className={`flex w-full cursor-pointer items-center justify-between gap-2 px-4 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900 ${focusRing}`}>
         {summary}
       </summary>
       <div className="overflow-x-auto border-t border-slate-100">{children}</div>

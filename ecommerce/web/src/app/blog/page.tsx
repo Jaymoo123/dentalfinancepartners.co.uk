@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 import { focusRing } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = {
-  title: "Ecommerce Tax Blog | UK Online Seller Guides",
+  title: "Ecommerce Tax Guides for Online Sellers",
   description: "Practical guides on VAT, platform reporting, Amazon and marketplace selling, bookkeeping, business structure and Making Tax Digital for UK online sellers.",
   alternates: { canonical: `${siteConfig.url}/blog` },
 };

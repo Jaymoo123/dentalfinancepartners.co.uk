@@ -5,8 +5,11 @@ import { siteConfig } from "@/config/site";
 import { vatPages, getVatPage } from "@/data/vat";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { buildFaqJsonLd } from "@/lib/schema";
-import { btnPrimary, siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { siteContainerLg, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 
 export function generateStaticParams() { return vatPages.map((v) => ({ slug: v.slug })); }
 
@@ -24,8 +27,8 @@ export function generateStaticParams() { return vatPages.map((v) => ({ slug: v.s
  * neutral-800 stats band. Same two recipes as app/services/[slug] and
  * app/for/[slug].
  */
-const linkOnLight = "[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800";
-const linkOnDark = "[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2";
+const linkOnLight = `[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800 ${focusRingAuthoredLinks}`;
+const linkOnDark = `[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2 ${focusRingAuthoredLinks}`;
 
 /**
  * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
@@ -55,8 +58,13 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
         #8a5e1a ground, i.e. 1.00:1. The ground is unchanged: the hex now comes
         from the --color-primary-700 token globals.css anchors on #8a5e1a (white
         on it = 5.68). No light island sits inside this section. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+      {/* Decoration only, aria-hidden, pointer-events-none. The section
+          carries `relative overflow-hidden` and the container below
+          `relative z-10`: that is the backdrop host contract, and getting
+          it wrong paints the texture over the copy. */}
+      <EcommerceBackdrop />
+      <div className={`relative z-10 ${siteContainerLg}`}>
         {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, replacing
             the hand-rolled single back-link. Same /vat href, same "VAT Hub" label;
             it adds the Home crumb (already linked from header and footer, so the
@@ -69,9 +77,16 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
             items={[{ label: "Home", href: "/" }, { label: "VAT Hub", href: "/vat" }, { label: vp.title }]}
           />
         </div>
+        {/* Phase 3 swapped the hero back-link for the kit Breadcrumb and dropped
+            this line with it, leaving all five /vat routes with no h1 and
+            `vp.headline` with no consumer. Restored verbatim from
+            port-ecommerce-phase0, same shape as the two sibling slug templates
+            (app/services/[slug] and app/for/[slug]), trailing full stop
+            included. The breadcrumb stays above it. */}
+        <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{vp.headline}.</h1>
         {/* Authored HTML, first-party content committed in src/data/vat.ts.
             As a text child every anchor printed as escaped markup. */}
-        <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/80 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: vp.intro }} />
+        <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/90 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: vp.intro }} />
         <div className="mt-10"><Link href="/contact" className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
       </div>
     </section>
@@ -140,11 +155,29 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
       <div className={siteContainerLg}>
         <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
-          {vp.howWeHelp.map((item) => (
-            <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-primary-400 hover:shadow-md transition-all">
-              <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-              <div className={`mt-3 text-sm leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
+        {/* DECLINED AGAIN, and the reason has changed. The earlier decline of
+            packages/web-shared/design/marketing/NumberedReasons.tsx and
+            .../WhyUsList.tsx rested on .story-numeral, .story-numeral-rule and
+            num-glow being absent from src/app/globals.css. They are declared
+            now. The remaining blocker is structural and is not going away:
+            NumberedReasons line 128 and WhyUsList line 198 both render
+            `{item.body}` as a TEXT CHILD, and every howWeHelp body in
+            src/data/vat.ts is authored HTML. The kit is a manager carve-out, so
+            neither can be given an HTML branch here.
+            The NumberedReasons ANATOMY is taken instead, class for class, with
+            no `data-draw` wrapper and no client island: with no ancestor
+            carrying data-draw="off" the numeral renders in its lit state, so
+            the band is finished without JavaScript. The white card and its
+            hover treatment are dropped, because nothing here is a link.
+            Contrast on #fafaf7: numeral #8a5e1a 5.44 (text floor 4.5), rule
+            #9e6615 4.6 as a graphic (floor 3.0). */}
+        <div className="mt-8 grid gap-8 sm:mt-12 sm:gap-10 md:grid-cols-3">
+          {vp.howWeHelp.map((item, i) => (
+            <div key={item.title}>
+              <span className="story-numeral block text-3xl font-bold tabular-nums sm:text-4xl">{String(i + 1).padStart(2, "0")}</span>
+              <span aria-hidden className="story-numeral-rule mt-3 block h-px w-10 bg-primary-600" />
+              <h3 className="mt-4 text-base font-bold text-neutral-900 sm:text-lg">{item.title}</h3>
+              <div className={`mt-2 text-sm leading-relaxed text-neutral-600 sm:text-base ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
         </div>
@@ -184,12 +217,44 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
         </div>
       </section>
     )}
-    <section className="ground-dark bg-neutral-900 py-12 sm:py-16 lg:py-20">
-      <div className={siteContainerLg}>
-        <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to an ecommerce VAT specialist.</h2>
-        <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">Tell us about your VAT situation and we will reply within 24 hours.</p>
-        <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
-      </div>
-    </section>
+    {/* ADOPTED (the owner lifted the earlier gate on this component):
+        packages/web-shared/design/marketing/LeadCTAPanel.tsx, replacing the
+        hand-rolled heading-plus-button band, same call as the two sibling slug
+        templates.
+
+        NO COPY IS AUTHORED OR DROPPED. `title` and `description` are the two
+        strings this band already published, byte for byte. Three component
+        defaults would have published copy nobody wrote and are overridden to
+        empty, which the component renders as nothing: `eyebrow=""` (default
+        "Free consultation"), `formTitle=""` (default "Book your free
+        consultation") and `proofPoints={[]}` (no authored proof-point set
+        exists on this site; owner item).
+
+        The /contact link this band carried is not lost: the hero above links
+        /contact, so the route's unique internal link set is unchanged.
+        `LeadForm` emits no data-cta, so the CTA snapshot is unchanged.
+
+        No `.ground-dark`: the component paints bg-slate-900 but the form sits
+        on a WHITE card inside it, and `.ground-dark` on an ancestor of a light
+        island is the defect the rule names. Nothing focusable sits bare on the
+        dark side. White title 17.8, text-slate-200 description 12.9.
+        The `backdrop` slot is left empty: EcommerceBackdrop hardcodes
+        id="ecommerce-settlement-run" and the hero already mounts it, so filling
+        the slot would emit that id twice on one page.
+
+        STILL DECLINED: packages/web-shared/design/marketing/StickyCTA.tsx (an
+        interruption, banned estate-wide), .../TestimonialsSection.tsx (ships
+        Property's quotes; inventing social proof is a claims breach) and
+        .../WhatToExpectCard.tsx, which the owner approved on condition explicit
+        props are passed: this route has no authored "what to expect" list and
+        the four defaults are unwritten copy including a fee line. Owner item. */}
+    <LeadCTAPanel
+      eyebrow=""
+      title="Speak to an ecommerce VAT specialist."
+      description="Tell us about your VAT situation and we will reply within 24 hours."
+      proofPoints={[]}
+      formTitle=""
+      form={<LeadForm />}
+    />
   </>);
 }

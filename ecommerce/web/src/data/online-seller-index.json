@@ -18,7 +18,7 @@
     "sources": {
       "companies_house": {
         "name": "Companies House Advanced Search API",
-        "url": "https://developer.company-information.service.gov.uk/api/docs/",
+        "url": "https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search",
         "licence": "Open Government Licence v3.0",
         "publisher": "Companies House",
         "pullDate": "2026-07-15"

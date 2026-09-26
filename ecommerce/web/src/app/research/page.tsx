@@ -9,9 +9,9 @@ import survivalSnapshot from "@/data/online-seller-survival-index.json";
 import { fmtPct } from "@/lib/research/survival-index";
 
 export const metadata: Metadata = {
-  title: "Ecommerce and online-retail research | Ecommerce Finance",
+  title: "Ecommerce and online-retail research",
   description:
-    "Original, sourced data on the UK online-retail and marketplace-seller economy, built entirely from official Companies House and ONS open data. Free to read and cite.",
+    "Original, sourced data on the UK online-retail and marketplace-seller economy, built from official Companies House and ONS open data. Free to cite.",
   alternates: { canonical: `${siteConfig.url}/research` },
 };
 

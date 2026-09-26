@@ -7,7 +7,7 @@ import { ReadingProgress } from "@accounting-network/web-shared/design/blog/Read
 import { TableOfContents } from "@accounting-network/web-shared/design/blog/TableOfContents";
 import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
 import { siteConfig } from "@/config/site";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
 import { buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: Props) {
           <TableOfContents headings={headings} />
         </div>
       )}
-      <div className="prose prose-neutral mt-10 max-w-none" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <div className={`prose prose-neutral mt-10 max-w-none ${focusRingAuthoredLinks}`} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
       {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
           That component is a Radix accordion with no `forceMount`, so closed answers
           are absent from the server HTML. This page emits FAQPage JSON-LD above that
@@ -80,13 +80,13 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mt-6 space-y-4">
             {post.faqs.map((faq) => (
               <details key={faq.question} className="group border border-neutral-200">
-                <summary className="flex cursor-pointer items-center justify-between gap-4 px-4 py-4 font-semibold text-neutral-900 hover:text-[var(--brand-primary-text)] list-none">
+                <summary className={`flex cursor-pointer items-center justify-between gap-4 px-4 py-4 font-semibold text-neutral-900 hover:text-[var(--brand-primary-text)] list-none ${focusRing}`}>
                   <span>{faq.question}</span>
                   <span className="text-[#c9861b] transition-transform group-open:rotate-45" aria-hidden>
                     <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
                   </span>
                 </summary>
-                <div className="px-4 pb-4 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                <div className={`px-4 pb-4 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 ${focusRingAuthoredLinks}`} dangerouslySetInnerHTML={{ __html: faq.answer }} />
               </details>
             ))}
           </div>

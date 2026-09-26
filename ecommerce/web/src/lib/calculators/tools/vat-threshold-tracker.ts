@@ -27,7 +27,7 @@ export const vatThresholdTrackerTool: GenericTool = {
     "Track your rolling 12-month gross sales against the £90,000 VAT registration threshold. The threshold bites on gross selling price, not the net payout after platform fees.",
   metaTitle: "VAT Threshold Tracker for Online Sellers UK | £90,000 Gross",
   metaDescription:
-    "Check how close your online sales are to the UK VAT registration threshold. The £90,000 test is on gross selling price, not the net payout after platform fees. Updated 2026/27.",
+    "Check how close your online sales are to the UK VAT registration threshold. The £90,000 test is on gross selling price, not net payout. 2026/27 rates.",
   intro:
     "The <a href=\"https://www.gov.uk/vat-registration\">UK VAT registration threshold</a> is £90,000 of taxable turnover in any rolling 12-month period. For marketplace sellers, taxable turnover is the gross selling price of each item before the platform deducts its fees. Sellers who track their bank deposits or net payouts instead of gross sales routinely breach the threshold without realising it, because the payout figure is always lower. Enter your gross sales to see your headroom and your projected breach month.",
   ctaLabel: "Get help with seller VAT registration",
