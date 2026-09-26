@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import { buildFaqPage } from "@accounting-network/web-shared/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -18,6 +20,16 @@ const data = snapshot as unknown as SurvivalIndexSnapshot;
 const { meta, headline, cohorts } = data;
 
 const PAGE_PATH = "/research/online-seller-survival-index";
+
+/**
+ * Contrast wrapper for the adopted kit Breadcrumb, the same string phases 3 and
+ * 4 use on the brand hero. On the #1a3a5c research ground it is parity, not a
+ * fix: packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark
+ * trail slate-300 (7.84:1 here) with slate-400 chevrons (4.54:1), both already
+ * past the 4.5 text and 3.0 graphic floors. Kept so every hero trail on the
+ * site reads the same white: 11.64 links, 8.09 chevrons.
+ */
+const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
 
 const latestCohort =
   cohorts.find((c) => c.birth_year === headline.latest_5yr_cohort_year) ?? cohorts[0];
@@ -98,15 +110,40 @@ export default function OnlineSellerSurvivalIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPage(faqs)) }}
       />
 
-      {/* Hero */}
+      {/* Hero.
+
+          ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, the
+          same trail the phase-3 hub families and the phase-4 calculator
+          template carry. It replaces a hand-rolled uppercase "Research" back
+          link: the word and the /research destination both survive as the
+          trail's middle crumb, and the only href the trail adds is "/", which
+          packages/web-shared/design/chrome/SiteHeader.tsx:128 and
+          SiteFooter.tsx:145 already emit on every page. The route's unique
+          internal link set is therefore unchanged.
+
+          ADOPTION DECLINED here only: `Eyebrow onDark` from
+          packages/web-shared/design/primitives/page-blocks.tsx. The breadcrumb
+          already carries the section label. Eyebrow IS adopted on the light FAQ
+          section below.
+
+          `.ground-dark` stays. This band holds three focusable elements sitting
+          BARE on the dark fill (the trail's Home link and the two source links
+          below), with no white card anywhere inside it, so the white ring is
+          the correct one. This is not the light-island shape documented at
+          src/app/globals.css:226-229. */}
       <section className="ground-dark border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <Link
-            href="/research"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
-          >
-            Research
-          </Link>
+          <div className={crumbOnBrand}>
+            <Breadcrumb
+              onDark
+              siteUrl={siteConfig.url}
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Research", href: "/research" },
+                { label: "Online Seller Survival Index" },
+              ]}
+            />
+          </div>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Online Seller Survival Index.
           </h1>
@@ -115,23 +152,26 @@ export default function OnlineSellerSurvivalIndexPage() {
             all-industries average. Sourced from the{" "}
             <a
               href={meta.release_page}
-              className="underline hover:text-white transition-colors"
+              className={`underline hover:text-white transition-colors ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
               ONS Business Demography
             </a>{" "}
             release, and read alongside our{" "}
-            <Link href="/research/online-seller-index" className="underline hover:text-white transition-colors">
+            <Link href="/research/online-seller-index" className={`underline hover:text-white transition-colors ${focusRing}`}>
               Online Seller Business Index
             </Link>
             .
           </p>
-          <p className="mt-3 text-sm text-white/50">
+          {/* white/50 composites to #8c9cae on this #1a3a5c ground and measures
+              4.15, under the 4.5 floor for 14px text that carries the release
+              date and the licence link. white/60 is #a3b0be, 5.27. */}
+          <p className="mt-3 text-sm text-white/60">
             Table 4.2 last published {meta.release_date}. Published under{" "}
             <a
               href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-              className="underline hover:text-white/70"
+              className={`underline hover:text-white/70 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -142,8 +182,25 @@ export default function OnlineSellerSurvivalIndexPage() {
         </div>
       </section>
 
-      {/* Headline stat cards */}
-      <section className="bg-white py-12 sm:py-16">
+      {/* Headline stat cards.
+
+          ADOPTION DECLINED: packages/web-shared/design/marketing/StatsCounter.tsx,
+          and this is the page it was written for. It takes ONE number and a
+          plain string, renders no markup in the label and emits no link, so
+          every one of these tiles would lose the sourcing that makes it a
+          research asset: the label names the cohort year the figure belongs to,
+          and the body under it names the measure. It is banned on this site for
+          exactly that reason. Also declined, estate-wide or by owner gate:
+          packages/web-shared/design/marketing/LeadCTAPanel.tsx,
+          .../StickyCTA.tsx, .../TestimonialsSection.tsx and
+          .../WhatToExpectCard.tsx.
+
+          ADOPTION DECLINED on the tile labels: `Eyebrow` from
+          packages/web-shared/design/primitives/page-blocks.tsx. It is a SECTION
+          label (mb-3, a leading rule glyph) and these strings are the figures'
+          captions, not section headings; swapping them would put a divider rule
+          between a number and the thing it counts. */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             How long UK retail enterprises last
@@ -193,7 +250,7 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* Survival curve */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             The survival curve: {headline.latest_5yr_cohort_year} birth cohort
@@ -212,7 +269,7 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* Cohort table */}
-      <section className="bg-white py-12 sm:py-16">
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             Survival by birth-year cohort
@@ -252,7 +309,10 @@ export default function OnlineSellerSurvivalIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
+          {/* neutral-400 is 2.52 on white, under the 4.5 text floor. neutral-500 is
+              4.74. The sourcing footnotes are the last place a figure's
+              provenance should go grey. */}
+          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
             Row figures are for the Retail broad industry group only. All-industries comparison
             figures are in the CSV download below.
           </p>
@@ -260,7 +320,7 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* 1-year trend */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             1-year survival rate over time
@@ -276,7 +336,7 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* Methodology */}
-      <section className="bg-white py-10 sm:py-12">
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-lg font-bold text-neutral-900 mb-4">Methodology</h2>
           <div className="max-w-2xl space-y-4 text-sm text-neutral-600">
@@ -297,7 +357,7 @@ export default function OnlineSellerSurvivalIndexPage() {
             <div>
               <strong className="text-neutral-900">Enterprise, not company.</strong> This is a
               different unit to our{" "}
-              <Link href="/research/online-seller-index" className="text-[#1a3a5c] underline hover:opacity-75">
+              <Link href="/research/online-seller-index" className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}>
                 Online Seller Business Index
               </Link>
               , which tracks Companies House limited companies specifically (SIC 47910). The ONS
@@ -322,7 +382,7 @@ export default function OnlineSellerSurvivalIndexPage() {
             <strong>Data licence:</strong> ONS data is published under the{" "}
             <a
               href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-              className="underline"
+              className={`underline ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -331,11 +391,14 @@ export default function OnlineSellerSurvivalIndexPage() {
             .
           </p>
           <p className="mt-3 text-sm">
-            <Link href={`${PAGE_PATH}/data`} className="font-semibold text-[#1a3a5c] hover:underline">
+            <Link href={`${PAGE_PATH}/data`} className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}>
               Download the survival data (CSV)
             </Link>
           </p>
-          <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
+          {/* neutral-400 is 2.52 on white, under the 4.5 text floor. neutral-500 is
+              4.74. The sourcing footnotes are the last place a figure's
+              provenance should go grey. */}
+          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
             Cite as: Online Seller Survival Index, compiled from ONS Business Demography Table 4.2
             (Open Government Licence v3.0). Published by Ecommerce Finance, data generated{" "}
             {meta.generated_at}.
@@ -343,10 +406,26 @@ export default function OnlineSellerSurvivalIndexPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      {/* FAQ.
+
+          ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
+          It is a Radix accordion with no forceMount, so a closed answer is
+          absent from the server HTML while the FAQPage JSON-LD emitted at the
+          top of this page asserts every answer. Declined on the same grounds on
+          the blog template (phase 2), all three hub families (phase 3) and the
+          calculator template (phase 4). These answers are already flat,
+          always-visible markup, which is the strongest version of the same
+          guarantee. Revisit only if the kit gains forceMount, which is a
+          manager carve-out.
+
+          ADOPTED: `Eyebrow` from
+          packages/web-shared/design/primitives/page-blocks.tsx, the same
+          "Questions" label the phase-4 calculator template uses above the same
+          heading. slate-600 on neutral-50 clears the text floor. */}
+      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
+          <Eyebrow>Questions</Eyebrow>
+          <h2 className="mt-2 text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
             Frequently asked questions
           </h2>
           <div className="max-w-2xl space-y-6">
@@ -361,7 +440,7 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* CTA */}
-      <section className="ground-dark bg-neutral-900 py-12 sm:py-16">
+      <section className={`ground-dark bg-neutral-900 ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Building a retail business that lasts?

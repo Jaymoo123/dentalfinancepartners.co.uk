@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { niche } from "@/config/niche-loader";
-import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { btnPrimary, focusRing, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { ecommerceServices } from "@/data/services";
 import { sellerHubs } from "@/data/for";
@@ -206,6 +207,81 @@ const faqs = [
   },
 ];
 
+/**
+ * KIT ADOPTION RECORD FOR THIS ROUTE (section 9.1 row 2b is measured over this
+ * file plus components/marketing/*.tsx, so every decline is written out).
+ *
+ * ADOPTED: packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`, on
+ * every left-aligned content band, matching app/services/[slug], app/vat/[slug]
+ * and app/calculators/[slug]. Measured on this page's two light grounds:
+ * slate-600 label 7.58 on #ffffff and 7.26 on #fafaf9; its primary-600 rule
+ * 4.81 and 4.61. The labels are structural section markers, not claims.
+ * ADOPTED: `sectionY` from packages/web-shared/design/layout-utils.ts (via the
+ * site re-export), replacing eight local `py-12 sm:py-16 lg:py-20` strings. The
+ * only delta is the 20-step moving from lg to md, which is the Property
+ * standard rhythm the port exists to adopt.
+ *
+ * DECLINED, whole route:
+ * - packages/web-shared/design/primitives/Breadcrumb.tsx. This is the root
+ *   document. There is no parent to link to, and the only trail it could draw
+ *   is a self-referential "Home" crumb, which is worse than none: it would add
+ *   a same-page link and a BreadcrumbList JSON-LD asserting a one-item trail.
+ * - packages/web-shared/design/primitives/page-blocks.tsx `CardStack`. Two
+ *   blockers, either fatal. Its `items` is typed `{ title: string; body: string }`
+ *   and every `taxMoments[].body` here is a ReactNode carrying real anchors, so
+ *   it does not typecheck; and line 105 renders the body as a TEXT child, the
+ *   exact defect phase 3 had to reverse on this site's three data files and
+ *   phase 4 on the kit Calculator. Its slate/rounded-xl card surface would also
+ *   repaint every card on the page.
+ * - packages/web-shared/design/marketing/CoverageCards.tsx and
+ *   packages/web-shared/design/marketing/ComparisonTable.tsx. Both import
+ *   lucide-react, which ecommerce/web does not declare as a dependency (checked
+ *   in package.json). CoverageCards additionally needs a per-item icon nobody
+ *   has chosen, and ComparisonTable needs an authored them-against-us row set
+ *   that does not exist here and would be a new comparative claim.
+ * - packages/web-shared/design/marketing/NumberedReasons.tsx. Its resting and
+ *   drawn states come from `.story-numeral` / `.story-numeral-rule`, which are
+ *   defined ONLY in Property/web/src/app/globals.css: not in web-shared at all,
+ *   so there is nothing this site could import. The numerals would ship
+ *   unstyled. Same class of failure as the phase-2 `.related-card` finding.
+ * - packages/web-shared/design/marketing/WhyUsList.tsx and
+ *   packages/web-shared/design/marketing/DrawnTickList.tsx. Both are client
+ *   islands that flatten their content to a single line per item; the "why a
+ *   specialist" material here is paragraph-length argument, and reshaping it
+ *   into list lines would drop the qualifiers, which is authored copy this
+ *   route may not rewrite. WhyUsList also animates the `num-glow` keyframe from
+ *   packages/web-shared/design/globals-standard.css, which this site does not
+ *   import.
+ * - packages/web-shared/design/marketing/ProcessTimeline.tsx. It renders an
+ *   ordered onboarding sequence; no such steps are authored anywhere on this
+ *   site, so adopting it means writing new marketing copy.
+ * - packages/web-shared/design/marketing/ProblemStatement.tsx. It hardcodes
+ *   Property's landlord copy verbatim ("Your rent went up. Your profit
+ *   didn't.") and emits a CTA attribute triple of its own (problem_book /
+ *   problem_statement / form) pointing at "#book", an anchor that does not
+ *   exist on this site. Either one alone is disqualifying. The literal
+ *   attribute name is left unwritten here on purpose: the CTA snapshot gate
+ *   counts occurrences in source, and a comment must not move that count.
+ * - packages/web-shared/design/marketing/TopicSection.tsx. It wraps its
+ *   children in a bg-white / bg-slate-50 band with its own container and
+ *   `Prose` stack. The bands here are heterogeneous (a data table, four grids,
+ *   two two-column splits) and the page's light/dark rhythm alternates
+ *   #ffffff with #fafaf9, so it would repaint the whole page to import a
+ *   heading recipe this file already matches.
+ * - packages/web-shared/design/primitives/NoticeCard.tsx. It is the outcome
+ *   card for the token-gated /book and /complete flows ("link expired", "you
+ *   are all set"). There is no outcome state on the homepage to carry.
+ * - packages/web-shared/design/marketing/StickyCTA.tsx (an interruption, banned
+ *   estate-wide), packages/web-shared/design/marketing/LeadCTAPanel.tsx (adds a
+ *   second lead-capture surface, owner-gated; the CTA band below keeps the
+ *   existing LeadForm untouched),
+ *   packages/web-shared/design/marketing/TestimonialsSection.tsx (hardcodes
+ *   another site's quotes and this site has no authored social proof),
+ *   packages/web-shared/design/marketing/WhatToExpectCard.tsx (its default
+ *   props publish a fee line nobody here authored) and
+ *   packages/web-shared/design/marketing/StatsCounter.tsx (one bare number, no
+ *   links, so it mangles composite figures and deletes their citations).
+ */
 export default function HomePage() {
   return (
     <>
@@ -233,9 +309,21 @@ export default function HomePage() {
               <Link href="/contact" className={btnPrimary}>
                 Speak to a seller tax specialist
               </Link>
+              {/* CONTRAST FIX, measured at each gradient stop composited, per
+                  section 9.1 row 7, because the ground here is a gradient and
+                  not the declared #1a2942 base. Stops: #1a2942, #22334d (the
+                  via #243550 at 80% over the base) and #0f1c30. This control's
+                  own face is bg-white/10 over each of those, and the border was
+                  white/30, which measured 1.94 / 1.87 / 2.01 against that face
+                  and 2.63 / 2.54 / 2.69 against the section ground: below the
+                  3.0 non-text floor at every stop, worst at the via stop.
+                  white/50 measures 3.53 / 3.27 / 3.86 against the face and
+                  4.78 / 4.43 / 5.17 against the ground, so it clears 3.0 at the
+                  worst stop on both readings. The label itself was never in
+                  question: white on the button face is 10.76 / 9.40 / 12.76. */}
               <Link
                 href="/services"
-                className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
+                className={`inline-flex min-h-12 items-center justify-center border border-white/50 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
               >
                 Our services
               </Link>
@@ -272,8 +360,9 @@ export default function HomePage() {
       </section>
 
       {/* Who we help (hubs) */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
+          <Eyebrow>Audiences</Eyebrow>
           <h2 className="max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             Who we work with.
           </h2>
@@ -287,7 +376,7 @@ export default function HomePage() {
               <Link
                 key={hub.slug}
                 href={`/for/${hub.slug}`}
-                className={`group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-[#c9861b] hover:shadow-md ${focusRing}`}
+                className={`group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}
               >
                 <span className="text-base font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
                   {hub.title}
@@ -295,7 +384,7 @@ export default function HomePage() {
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500 line-clamp-2">
                   {hub.headline}
                 </p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="mt-3 h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>
@@ -303,8 +392,9 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className={`border-b border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
         <div className={siteContainerLg}>
+          <Eyebrow>The work</Eyebrow>
           <h2 className="max-w-3xl text-2xl font-bold text-neutral-900 sm:text-4xl">
             Specialist services for online sellers.
           </h2>
@@ -313,7 +403,7 @@ export default function HomePage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className={`group block border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-[#c9861b] hover:shadow-md ${focusRing}`}
+                className={`group block border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}
               >
                 <h3 className="text-base font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
                   {service.title}
@@ -332,8 +422,9 @@ export default function HomePage() {
       </section>
 
       {/* Tax moments strip */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
+          <Eyebrow>The problem</Eyebrow>
           <h2 className="max-w-3xl text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             The seller tax moments that bring owners here.
           </h2>
@@ -414,10 +505,11 @@ export default function HomePage() {
       </section>
 
       {/* Cross-border VAT cluster teaser */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className={`border-b border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
+              <Eyebrow>Depth guides</Eyebrow>
               <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
                 Cross-border and VAT depth guides.
               </h2>
@@ -454,18 +546,18 @@ export default function HomePage() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-[#c9861b] hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
+                    className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                   >
                     {item.label}
-                    <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
                 <Link
                   href="/services/selling-into-the-eu"
-                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-[#c9861b] hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                 >
                   Selling into the EU: full service
-                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -474,10 +566,11 @@ export default function HomePage() {
       </section>
 
       {/* Free tools + Online Seller Index */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
+              <Eyebrow>Tools</Eyebrow>
               <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
                 Free seller tools.
               </h2>
@@ -492,7 +585,7 @@ export default function HomePage() {
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    className={`group flex items-start justify-between gap-4 border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-[#c9861b] ${focusRing}`}
+                    className={`group flex items-start justify-between gap-4 border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-primary-400 ${focusRing}`}
                   >
                     <div>
                       <div className="text-sm font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
@@ -500,7 +593,7 @@ export default function HomePage() {
                       </div>
                       <p className="mt-1 text-xs leading-relaxed text-neutral-500">{calc.body}</p>
                     </div>
-                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
               </div>
@@ -520,10 +613,10 @@ export default function HomePage() {
               <div className="mt-6">
                 <Link
                   href="/research/online-seller-index"
-                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#c9861b] hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                 >
                   View the Online Seller Index
-                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -532,10 +625,11 @@ export default function HomePage() {
       </section>
 
       {/* Why a specialist */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className={`border-b border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
+              <Eyebrow>The difference</Eyebrow>
               <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
                 Why a marketplace specialist, not a generalist accountant?
               </h2>
@@ -581,7 +675,7 @@ export default function HomePage() {
                     body: "Cross-border fulfilment adds establishment-status questions, potential country-level registration obligations and the IOSS intermediary requirement for GB sellers. The consequences of getting it wrong land on the seller.",
                   },
                 ].map((item, i) => (
-                  <div key={i} className="border-l-2 border-[#c9861b] pl-5 py-1">
+                  <div key={i} className="border-l-2 border-primary-400 pl-5 py-1">
                     <p className="text-sm font-semibold text-neutral-800">{item.title}</p>
                     <p className="mt-1 text-sm leading-relaxed text-neutral-600">{item.body}</p>
                   </div>
@@ -593,8 +687,9 @@ export default function HomePage() {
       </section>
 
       {/* FAQs */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
+          <Eyebrow>Questions</Eyebrow>
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
             Common questions from online sellers.
           </h2>
@@ -633,7 +728,7 @@ export default function HomePage() {
       </section>
 
       {/* Blog footer strip */}
-      <section className="border-t border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className={`border-t border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">

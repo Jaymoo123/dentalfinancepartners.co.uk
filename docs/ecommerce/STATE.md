@@ -7,8 +7,9 @@ brand_locked: true
 
 ## PORT PICKUP (Property design standard) - updated 2026-09-26
 
-**Phases 0 to 4 are BUILT and TAGGED (`port-ecommerce-phase0` through `-phase4`).
-Phases 5 and 6 are NOT built.** Phase 5 (homepage and the two research studies) is next.
+**Phases 0 to 5 are BUILT and TAGGED (`port-ecommerce-phase0` through `-phase5`).
+Phase 6 is NOT built.** Phase 6 (about, contact, the token-gated flow, legal, error pages and the
+forms) is the last build phase, then the mop-up, two adversarial reviews and the gap-fix wave.
 Git is the authority: `git tag -l 'port-ecommerce-*'`. Artefacts live in `docs/ecommerce/_port/`.
 
 Baseline: production SHA `153e5017`, 51 URLs, 707 unique internal links (floor 10), 0 dashes,
@@ -50,9 +51,9 @@ STILL OPEN, carried as owner items:
 - The formation data is five months stale (settled through April 2026). The prose is now
   stamped as at that month rather than refreshed.
 
-## START HERE: the next agent picks up at PHASE 5
+## START HERE: the next agent picks up at PHASE 6, the last build phase
 
-Written 2026-09-26 at the close of phase 4. Git is the authority for what is built, this block is
+Written 2026-09-26 at the close of phase 5. Git is the authority for what is built, this block is
 a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it disagrees.
 
 **Opening sequence, in this order, before planning anything:**
@@ -65,74 +66,104 @@ a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it di
 4. Read this site's own artefacts: `docs/ecommerce/_port/P0A_CLAIMS_LEDGER.md`,
    `P0B_RENDERED_SWEEP.md`, `P0C_CSS_TOKEN_AUDIT.md`, `P0D_BASELINE.md`, `P0E_STRUCTURAL_INVENTORY.md`.
 
-**What phase 5 is.** The homepage `src/app/page.tsx` (roughly 620 lines, the largest single file in
-the port) and the two research studies `src/app/research/online-seller-index/page.tsx` and
-`online-seller-survival-index/page.tsx`, plus `src/app/research/page.tsx`. These three carry the
-site's charts (`components/research/FormationSeasonalityChart.tsx`, `SurvivalIndexCharts.tsx`) and
-its only data assets, so they are the pages where a careless component swap destroys sourcing.
+**What phase 6 is.** Ten small surfaces, about 1,900 lines, none of them complicated, and NONE of
+them imports the kit yet (`grep -c 'web-shared/design'` returns 0 on every one):
+`about` (32), `contact` (17), `book` (57), `complete` (127), `thank-you` (212),
+`privacy-policy` (245), `cookie-policy` (143), `terms` (165), `error.tsx` (56), `not-found.tsx` (18),
+plus the three form components `LeadForm.tsx` (506), `DetailsForm.tsx` (218), `BookingPicker.tsx` (176).
 
-**Phase 5 starts from a cleaner base than the earlier phases did.** The colour and focus-ring
-defect class was fixed estate-wide on this site in `3f23c7e7`, which touched the homepage (25
-lines) and the research index (9 micro-labels plus a missing ring). Do NOT re-fix those. Re-derive
-before planning: `grep -rn 'text-\[#c9861b\]' src/app/page.tsx` should return only `aria-hidden`
-glyphs and borders.
+**ADOPT `SlimHero` HERE, and only here.** `packages/web-shared/design/primitives/SlimHero.tsx` was
+declined in every phase from 1 to 5, correctly, because it is not a content-page hero. Its own
+docblock says it is the shallow navy hero for exactly three pages: `/thank-you`, `/book` and
+`/complete`. Phase 6 is where it belongs. Read its host contract first: the section needs
+`relative overflow-hidden` and the content `relative z-10`, or the `HeroBrickBackdrop` texture
+paints over the copy. It takes no breadcrumb by design (all three are noindex, so a trail would be
+fiction) and it must never sit directly on the slate-900 footer, navy on navy.
 
-**BANNED kit components, on this site, with no owner conversation available to an executing agent:**
-`StickyCTA` (an interruption, banned outright estate-wide), `LeadCTAPanel` (adds a lead-capture
-surface, owner gate), `TestimonialsSection` (hardcodes Property's quotes; this site has none and
-the claims ledger closed invented social proof), `WhatToExpectCard` (its DEFAULT PROPS publish a
-fee line nobody authored), `StatsCounter` (takes one number, renders no links, so it mangles
-composite figures and deletes citations). The research pages are exactly where `StatsCounter`
-looks tempting and is most destructive: their stat labels carry the citation. Write every decline
-AT THE CALL SITE naming the kit FILE PATH in full.
+**Three "defects" on the phase-5 browser baseline are FALSE POSITIVES. Do not fix them.** Verified
+2026-09-26 against source:
+- `label "Leave blank" ratio=1.00` is the spam honeypot at `LeadForm.tsx:201`. Its wrapper is
+  `aria-hidden` and positioned at `left: -9999px`, so the instrument is measuring an off-screen
+  element. Not rendered to anyone.
+- `label "I sell on..."` and `label "Message (optional)" ratio=1.00` are near-black
+  (`oklch(0.205 0 0)`) on a white form card, which is about 16:1. A ratio of 1.00 against near-black
+  text means the instrument failed to resolve the ground, not that the text is invisible. This is
+  the T25 class: read the instrument's self-test and its unparseable-colour count, then hand-compute.
+- The TWO REAL ones in that set are `p "Step 1 of 2 · About you"` and `span "(optional)"`, both
+  `oklch(0.556 0 0)` at **3.78** against a 4.5 floor. Those are worth fixing.
 
-**Traps that will bite specifically in phase 5:**
-- `page.tsx:613`, the homepage CTA band, deliberately does NOT carry `.ground-dark`, because it
-  wraps a white LeadForm card and custom properties inherit. `globals.css:231` documents this.
-  Do not "fix" it. By contrast `online-seller-survival-index:364` and `online-seller-index:947`
-  DO carry it correctly, because their focusable content sits bare on the dark ground. Read which
-  shape you have before touching either.
-- The homepage hero is a gradient (`from-[#1a2942] via-[#243550]/80 to-[#0f1c30]`). Section 9.1
-  row 7 requires a gradient ground to be measured AT EACH STOP, composited, not against the
-  declared base colour. No brand-hex text sits there today; if you move a control into it, measure.
-- `FaqSection` has now been declined FIVE times on this site, structurally: it is a Radix accordion
-  with no `forceMount`, so a closed answer is absent from the server HTML while the page's
-  `buildFaqJsonLd` asserts it. Do not re-litigate it.
-- Any kit component that renders an authored string as a TEXT CHILD will print escaped markup on
-  this site, because the data and tool files author real anchors. This has now bitten twice, in
-  phase 3 (the three data files) and phase 4 (the kit `Calculator`). Check what a component does
-  with your content before adopting it.
-- Phases 2, 3 and 4 all proved the same thing: the defects that mattered were invisible in source
-  and only showed up in the browser check. Budget a second and third measurement pass.
+**BANNED kit components, no owner conversation is available to an executing agent:**
+`StickyCTA` (an interruption, banned estate-wide), `LeadCTAPanel` (a lead-capture surface, owner
+gate), `TestimonialsSection` (hardcodes Property's quotes), `WhatToExpectCard` (its DEFAULT PROPS
+publish a fee line nobody authored), `StatsCounter` (one number, no links, deletes citations).
+Write every decline AT THE CALL SITE naming the kit FILE PATH in full.
 
-**What is left after phase 5:** phase 6 the rest (about, contact, book, complete, thank-you, legal,
-error pages, forms), then the mop-up package, two independent adversarial reviews, a gap-fix wave,
-the corrected 9.1 kit-adoption gate, and `port-ecommerce-complete` on the final commit.
+**Traps that will bite specifically in phase 6:**
+- `primitives/NoticeCard.tsx` has been declined five times for having no outcome state to carry.
+  `/book`, `/complete` and `/thank-you` ARE outcome states. This is the phase where it may finally
+  fit. Check it rather than copying the decline forward.
+- `thank-you/page.tsx:20,137,151` and `BookingPicker.tsx:27,29` paint DARK ISLANDS inside light
+  sections and currently take the light focus ring. `.ground-dark` is a SECTION class and cannot
+  express an element-level island, so putting it on their parent would hand a white ring to every
+  light sibling. The recipe they need is `focusRingOnBrand`, already written and documented at
+  `src/components/ui/layout-utils.ts:64-79` and deliberately unused until now. This is what it was
+  kept for.
+- The three legal pages render through `.prose-blog`, which is defined in `globals.css` (it was
+  missing entirely before phase 0 and those pages shipped unstyled). Do not restyle them with
+  utilities that fight that class.
+- `FaqSection` has been declined SIX times, structurally: Radix accordion with no `forceMount`, so
+  closed answers are absent from server HTML while the FAQ JSON-LD asserts them. Do not re-litigate.
+- Any kit component that renders an authored string as a TEXT CHILD prints escaped markup on this
+  site. It has bitten three times now (the data files, the kit `Calculator`, and `CardStack` on the
+  homepage). Check before adopting.
+- `/thank-you` carries the site's ONLY conditional `data-cta` (`thankyou-return-article`, rendered
+  only with a `?rt=` param, so a plain fetch never sees it). It MUST survive byte-identical. It is
+  the one CTA the baseline names explicitly.
 
-**OPEN OWNER ITEMS carried out of phase 4, none of them urgent:**
+**What is left after phase 6:** the mop-up package, two independent adversarial reviews, a gap-fix
+wave, the corrected 9.1 kit-adoption gate, then `port-ecommerce-complete` on the FINAL commit (a
+phase tag is not the end of a port: crypto's six tags sit on one commit and its review fixes land
+two commits later).
+
+**MOP-UP QUEUE, all deliberate deferrals, none urgent:**
+- `vat/page.tsx` and `vat/[slug]/page.tsx` keep a local `py-12 sm:py-16 lg:py-20` where the other
+  families use the kit `sectionY` (`md:py-20`). Not byte-identical, so it moves a breakpoint on five
+  routes.
+- The homepage light band is `#fafaf9`; the ported route families use `#fafaf7`. One of the two
+  should win.
+- The homepage writes the accessible link colour as `hover:text-[var(--brand-primary-text)]` where
+  the ported routes write `text-primary-700`. Same `#8a5e1a`, zero rendered difference, ~20 strings.
+- Four `py-10 sm:py-12` accent bands on the research index left local on purpose (tighter bands).
+- `globals.css:97` declares `--brand-primary-strong` at the same failing hex as `--brand-primary`
+  with ZERO consumers under `src`. An undocumented second alias and a trap for the next port.
+- `FormationSeasonalityChart.tsx` has an identical trough and default branch
+  (`isTrough ? NAVY : NAVY`); the encoding is carried entirely by `fillOpacity`.
+- Both charts' 12 monthly values are unreachable as text under `role="img"`. Carried from phase 1;
+  fixing it needs new markup or authored copy.
+
+**OPEN OWNER ITEMS, carried, none blocking:**
 - `packages/web-shared/tools/components/Calculator.tsx:131` paints its verdict badge white on the
-  brand hex at **3.04**. At `text-xl sm:text-2xl` bold it counts as large text, so it scrapes
-  AA-large (3.0) by 0.04. It is a pass, not a failure, so it was NOT changed. The precise fix is
-  `bg-[var(--brand-primary-ground,var(--brand-primary))]`, which resolves to `#9e6615` (4.81) on
-  the five sites that declare that token and is byte-identical everywhere else. It reaches all 17
-  sites that mount the component, four of them live, so it needs the owner rather than a builder.
-  Only `/calculators/side-hustle-tax-checker` renders a verdict on this site.
+  brand hex at **3.04**. At `text-xl` bold that is large text, so it scrapes AA-large (3.0) by 0.04
+  and is a pass, not a failure. Fix shape: `bg-[var(--brand-primary-ground,var(--brand-primary))]`,
+  which resolves to `#9e6615` (4.81) on the five sites declaring that token and is byte-identical
+  everywhere else. Reaches 17 sites, four live.
 - The kit `Calculator` result panel is `bg-slate-900` while this site's dark bands are
-  `neutral-800`/`neutral-900`, so two near-identical dark greys sit on one page. A kit change,
-  19 sites, cosmetic. Owner call.
-- The kit renders `tool.name` as an `h3`, and phase 4 added the route's `h1` in the hero, so the
-  page now runs h1 to h3 with no h2 until the FAQ. A heading-level prop would be a 19-site change
-  for a minor outline defect. Owner call.
-- `globals.css:97` declares `--brand-primary-strong` at the same failing hex as `--brand-primary`,
-  with ZERO consumers under `ecommerce/web/src`. It is an undocumented second alias and a trap for
-  the next port. Deletable, but `globals.css` edits are manager-direct.
-- `thank-you/page.tsx:20,137,151` and `BookingPicker.tsx:27,29` paint dark islands inside light
-  sections and carry the light focus ring. `layout-utils.ts:64-79` documents `focusRingOnBrand` as
-  the recipe they need. Phase 6 territory.
-
-**Carried into the mop-up package:** `vat/page.tsx` and `vat/[slug]/page.tsx` keep a local
-`py-12 sm:py-16 lg:py-20` where the other families use the kit `sectionY` (`md:py-20`). Not
-byte-identical, so aligning it moves a breakpoint on five routes.
+  `neutral-800`/`neutral-900`, so two near-identical greys sit on one page. Cosmetic, 19 sites.
+- The kit renders `tool.name` as an `h3` and phase 4 added the route `h1`, so the calculator pages
+  run h1 to h3 with no h2 until the FAQ. A heading-level prop is a 19-site change.
+- **CLAIMS ITEM, fix this one first:** `research/online-seller-index` renders BOTH 50,699 (the 2021
+  `everRegistered` cell) and 50,772 (the lockdown-cohort callout). The reconciling note lives at
+  `src/data/online-seller-index.json:222` (`cohortNote.note`) and **renders on no surface**, and it
+  is not in the CSV either. So "disclosed in the data note" is not currently true for a reader.
+- The Index page's CSV link reads "the quarterly churn **and seasonality** data (CSV)" but
+  `data/route.ts` serves quarterly churn only. Rewording it is dropping a claim, so it was left.
+- The research navy `#1a3a5c` has no declared token (51 occurrences monorepo-side). Tokenising it is
+  one `globals.css` line plus a three-file sweep.
+- Chart series separate on colour alone at only **1.38** (amber vs the composited navy at 0.4
+  opacity). Mitigated redundantly by line style, point radius and legend. Raising the all-industries
+  opacity to 1.0 gives 3.83 with no change to which series is which.
+- "Within one working day" (homepage) and "within 24 hours" (28 pages) remain estate-central and
+  byte-identical to Property's. Estate-wide ruling still needed.
 
 **The gates, every phase, substituting your own port:**
 G0 `python scripts/port_preflight.py --site ecommerce` (declare 3000 and 3210)
@@ -148,8 +179,52 @@ from inside `ecommerce/web`.
 
 Note on G9 and the kit: `npm test --workspace=packages/web-shared` and `npx tsc` run from inside
 `packages/web-shared` are both blocked by the sandbox in this environment. The kit compiles through
-the consuming site's build and typecheck, which is what verified the phase-4 kit change. If a
-future kit edit needs the kit's own test suite, ask the owner to allow it rather than skipping it.
+the consuming site's build and typecheck, which is what verified the phase-4 and phase-5 kit
+changes. If a future kit edit needs the kit's own suite, ask the owner to allow it rather than
+skipping it.
+
+## PHASE 5 (homepage and the two research studies) - built 2026-09-26
+
+Three disjoint packages over 2,289 lines: the homepage, the research hub plus the Survival Index,
+and the Online Seller Index plus its chart. Adopted `Eyebrow` (7 call sites on the homepage alone),
+the kit `Breadcrumb` behind the `crumbOnBrand` wrapper on all three research routes, `sectionY`,
+`focusRing` on 21 previously unringed links, and the `primary-*` ramp where a hex was byte-identical
+to a ramp step. Around a dozen kit components declined with measured reasons at their call sites,
+including three that import `lucide-react` (not a declared dependency here) and two whose CSS lives
+only in Property's own `globals.css` and would have shipped unstyled.
+
+**A defect this port INTRODUCED, found and fixed.** Adopting the kit `Breadcrumb` in phases 3, 4 and
+5 shipped a focus ring pinned to `outline-primary-600`, which measured **1.18:1** on the `#8a5e1a`
+brand heroes and **2.42:1** on the `#1a3a5c` research heroes, against a 3:1 graphic floor. A call
+site cannot override it because the component builds its ring internally.
+The fix is OPT-IN on purpose: the kit now reads `--kit-focus-ring` with a `--color-primary-600`
+fallback, and this site declares `--kit-focus-ring: var(--focus-ring)` in `globals.css`, so
+`.ground-dark` rebinds the kit's ring too and the site keeps ONE ring mechanism.
+The obvious fix, reading `--focus-ring` directly, was WRITTEN AND THEN REVERTED: charities,
+contractors-ir35 and crypto declare that as a single flat colour with no dark-ground rebind, and
+charities' own `globals.css` documents its value measuring 1.98 on one of its grounds. Reading it
+would have silently repainted rings on three live sites to an unmeasured value. Every site that does
+not opt in renders byte-identically, Property included.
+
+**The citation apparatus was failing its contrast floor.** Twelve provenance lines across the two
+studies (every "Cite as", every "Source:", the register-snapshot and denominator notes, the ONS
+notes, the "Updated" stamps) rendered `text-neutral-400` at **2.36 to 2.58** against a 4.5 floor, and
+two hero release-date lines at 4.15. On the site's original research that is the content carrying its
+credibility. All twelve are resolved on the browser baseline, which fell from 17 distinct contrast
+findings to 5 with none added.
+
+Also fixed: the homepage hero's secondary button border, measured composited AT EACH GRADIENT STOP
+per 9.1 row 7, was below the 3.0 floor at every stop (worst **1.87**) and is now 3.27 worst-stop. A
+single measurement against the declared base colour would have missed it.
+
+Zero figures changed on either study, 50,699 and 50,772 included. No copy authored beyond structural
+Eyebrow labels. Lint warnings fell 5 to 2 (three dead locals deleted from the Index page).
+
+Gates at close: lint 0 errors, build green, dependency closure OK across 19 sites, predeploy gate
+PASS, sweep 51/51 clean with 0 dead links, 0 link-floor breaches, 0 dash and 0 CTA regressions, CTA
+snapshot identical to baseline, tests 45/45, browser check self-test OK with 204 page-loads and
+**0 new problems** at 390/768/1024/1440.
+
 
 ## PHASE 4 (calculators and the embed surface) - built 2026-09-26
 

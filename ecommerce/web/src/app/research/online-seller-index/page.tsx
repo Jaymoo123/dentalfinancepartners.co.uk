@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, sectionY, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import { buildFaqPage } from "@accounting-network/web-shared/schema";
 import { FormationSeasonalityChart } from "@/components/research/FormationSeasonalityChart";
@@ -16,6 +18,30 @@ import data from "@/data/online-seller-index.json";
 import formationSnapshot from "@/data/online-seller-formation-seasonality.json";
 
 const formationData = formationSnapshot as unknown as FormationSeasonalitySnapshot;
+
+/**
+ * Contrast wrapper for the adopted kit Breadcrumb on the dark hero. Identical
+ * string to the one the phase-3 and phase-4 slug templates use
+ * (app/services/[slug]/page.tsx:37).
+ * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
+ * slate-300 with slate-400 chevrons, written for the kit's navy. On this
+ * study's #1a3a5c the ground-correct palette is applied from the call site:
+ * white 11.64, white/80 8.09.
+ */
+const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
+
+/**
+ * THE RAW HEX ON THIS PAGE IS NOT THE BRAND HEX AND IS NOT CONVERTED.
+ *
+ * `#1a3a5c` is the research studies' own navy, already named in
+ * src/app/globals.css as one of the grounds `.ground-dark` exists for. It
+ * measures 11.64:1 on white as text and 11.64:1 as a graphic, so it breaks no
+ * floor. The `primary-*` ramp is the AMBER ramp (primary-600 #9e6615): swapping
+ * it in would repaint a published data asset's palette, which is a design
+ * decision nobody took, not a token cleanup. The only brand-hex text on this
+ * page was the nine uppercase micro-labels, already moved to
+ * `var(--brand-primary-text)` in commit 3f23c7e7.
+ */
 
 const faqs = [
   {
@@ -50,7 +76,6 @@ export const metadata: Metadata = {
 };
 
 export default function OnlineSellerIndexPage() {
-  const active = data.sic47910.activeCompanies.count;
   const dissolved = data.sic47910.dissolvedCompanies.count;
   const totalEver = data.sic47910.totalEverRegistered.count;
   const activeLabel = data.sic47910.activeCompanies.label;
@@ -58,8 +83,6 @@ export default function OnlineSellerIndexPage() {
   const pullDate = data.meta.lastUpdated;
 
   const quarters = data.quarterlyChurn47910.quarters;
-  const latestQ = quarters[quarters.length - 1];
-  const prevQ = quarters[quarters.length - 2];
 
   // 2021 lockdown cohort
   const cohort2021 = data.cohortNote.lockdownCohort2021IncorporationsLabel;
@@ -92,14 +115,36 @@ export default function OnlineSellerIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqPage(faqs)) }}
       />
       {/* Hero */}
+      {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, replacing
+          the hand-rolled back link. The parent crumb keeps the authored back-link
+          word verbatim ("Research"), so no copy is written or dropped, and the
+          Home crumb is not a new internal link: the kit header wordmark
+          (packages/web-shared/design/chrome/SiteHeader.tsx) and footer already
+          emit href="/" on every page, so this route's UNIQUE internal link set is
+          unchanged. It also emits a BreadcrumbList JSON-LD; nothing else on this
+          route emits one.
+          CARRIED, not fixable from here: the kit Breadcrumb hardcodes the KIT
+          focusRing (outline-primary-600, #9e6615), which measures 2.42:1 against
+          this #1a3a5c ground, under the 3.0 graphic floor. packages/ is a manager
+          carve-out and the ring is not overridable from the call site, so it is
+          reported rather than patched. Before this it was no ring at all.
+          ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
+          Its own header says it is the token-gated noindex hero and is
+          "deliberately not the content-page hero"; its slate-900 ground would
+          also replace this study's #1a3a5c. */}
       <section className="ground-dark border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <Link
-            href="/research"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
-          >
-            Research
-          </Link>
+          <div className={crumbOnBrand}>
+            <Breadcrumb
+              onDark
+              siteUrl={siteConfig.url}
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Research", href: "/research" },
+                { label: "UK Online Seller Business Index" },
+              ]}
+            />
+          </div>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             UK Online Seller Business Index.
           </h1>
@@ -107,7 +152,7 @@ export default function OnlineSellerIndexPage() {
             A quarterly index of the UK incorporated online-retail economy, derived from{" "}
             <a
               href="https://developer.company-information.service.gov.uk/api/docs/"
-              className="underline hover:text-white transition-colors"
+              className={`underline hover:text-white transition-colors ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -116,7 +161,7 @@ export default function OnlineSellerIndexPage() {
             (SIC 47910) and the{" "}
             <a
               href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi"
-              className="underline hover:text-white transition-colors"
+              className={`underline hover:text-white transition-colors ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -125,11 +170,11 @@ export default function OnlineSellerIndexPage() {
             . Company births, deaths and net change from 2021 to 2026. No survey
             estimates: every number is computed from a named official source.
           </p>
-          <p className="mt-3 text-sm text-white/50">
+          <p className="mt-3 text-sm text-white/70">
             Last updated: {pullDate}. Next refresh: {data.meta.nextRefresh}. Published under{" "}
             <a
               href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-              className="underline hover:text-white/70"
+              className={`underline hover:text-white/70 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -141,7 +186,24 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* Headline stat cards */}
-      <section className="bg-white py-12 sm:py-16">
+      {/* ADOPTION DECLINED, and this is the single call site on the site where
+          it looks most tempting:
+          packages/web-shared/design/marketing/StatsCounter.tsx. Its StatItem is
+          one `target: number` with a prefix/suffix and a plain-text label. Two
+          of these three cards are label STRINGS from the snapshot
+          (`activeLabel`, `snapshotPct`), and every card carries a sourcing
+          sentence plus, in the sibling sections, real citation anchors. The
+          component renders no markup in a label and emits no links, so swapping
+          it in would delete the citation attached to every figure on a page
+          whose whole value is that each figure is attributable. Same reason it
+          is declined on the survival study and on app/services/[slug].
+          ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx
+          (adds a lead-capture surface, owner gate),
+          .../marketing/StickyCTA.tsx (an interruption, banned estate-wide),
+          .../marketing/TestimonialsSection.tsx (hardcodes another site's
+          quotes) and .../marketing/WhatToExpectCard.tsx (its default props
+          publish a fee line nobody here authored). */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             UK incorporated online-retail companies (SIC 47910)
@@ -150,7 +212,7 @@ export default function OnlineSellerIndexPage() {
             Source:{" "}
             <a
               href="https://developer.company-information.service.gov.uk/api/docs/"
-              className="text-[#1a3a5c] underline hover:opacity-75"
+              className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -194,7 +256,7 @@ export default function OnlineSellerIndexPage() {
               </p>
             </div>
           </div>
-          <p className="mt-4 text-xs text-neutral-400 max-w-2xl">
+          <p className="mt-4 text-xs text-neutral-500 max-w-2xl">
             The {snapshotPct} figure is a register snapshot, NOT a cohort survival rate. It
             mixes companies of all ages and is inflated by recently formed companies that have not
             yet had time to fail. See the methodology section.
@@ -206,9 +268,17 @@ export default function OnlineSellerIndexPage() {
       <section className="bg-[#1a3a5c]/5 border-t border-b border-[#1a3a5c]/20 py-10 sm:py-12">
         <div className={siteContainerLg}>
           <div className="max-w-2xl">
-            <div className="text-sm font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
-              Lockdown boom cohort
-            </div>
+            {/* ADOPTED: Eyebrow from
+                packages/web-shared/design/primitives/page-blocks.tsx. This is
+                the page's one true section eyebrow (a label introducing the
+                statement below it), so it takes the kit recipe: brand rule plus
+                slate-600 caps. The other eight uppercase micro-labels on this
+                page are CARD badges inside cards and links, not section
+                eyebrows, and Eyebrow's mb-3 rule-and-label would restyle six
+                clickable cards; they keep the
+                `var(--brand-primary-text)` colour commit 3f23c7e7 gave them
+                (5.68 on white). */}
+            <Eyebrow>Lockdown boom cohort</Eyebrow>
             <p className="text-2xl font-bold text-neutral-900 mb-3">
               {cohort2021} SIC 47910 companies incorporated in 2021
             </p>
@@ -222,7 +292,7 @@ export default function OnlineSellerIndexPage() {
               dissolutions climbed from around 6,000 to 7,000 per quarter in 2022 to over
               21,000 per quarter in 2025.
             </p>
-            <p className="mt-3 text-xs text-neutral-400">
+            <p className="mt-3 text-xs text-neutral-600">
               Source: Companies House Advanced Search API, incorporated_from/to filters.
               Retrieved {pullDate}.
             </p>
@@ -231,7 +301,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* Quarterly births and deaths table */}
-      <section className="bg-white py-12 sm:py-16">
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             Quarterly incorporations and dissolutions: SIC 47910
@@ -240,7 +310,7 @@ export default function OnlineSellerIndexPage() {
             2021-Q1 to 2026-Q2. Source:{" "}
             <a
               href="https://developer.company-information.service.gov.uk/api/docs/"
-              className="text-[#1a3a5c] underline hover:opacity-75"
+              className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -291,7 +361,7 @@ export default function OnlineSellerIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
+          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
             Incorporations: all companies incorporating with SIC 47910 in that quarter regardless
             of current status. Dissolutions: companies whose dissolution date falls within that
             quarter. Net = incorporations minus dissolutions.
@@ -300,7 +370,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* Cohort survival */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             Formation-year cohort survival: SIC 47910
@@ -369,7 +439,7 @@ export default function OnlineSellerIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
+          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
             The denominator is active plus dissolved companies only; companies in liquidation,
             administration or live strike-off proceedings sit in neither bucket, so recent-cohort
             figures are slightly overstated. Formal dissolution also lags actual trading closure,
@@ -380,7 +450,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* ONS demand overlay */}
-      <section className="bg-white py-12 sm:py-16">
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             ONS demand-side overlay: internet sales as a proportion of all retail
@@ -389,7 +459,7 @@ export default function OnlineSellerIndexPage() {
             Series J4MC from the{" "}
             <a
               href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi"
-              className="text-[#1a3a5c] underline hover:opacity-75"
+              className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -406,7 +476,7 @@ export default function OnlineSellerIndexPage() {
               <div className="mt-1 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
                 internet retail share of all retail ({latestOns.year})
               </div>
-              <p className="mt-2 text-xs text-neutral-400">
+              <p className="mt-2 text-xs text-neutral-500">
                 ONS J4MC, dataset DRSI. {latestOns.year} annual average.
               </p>
             </div>
@@ -437,7 +507,7 @@ export default function OnlineSellerIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
+          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
             The 2021 peak (30.7%) reflects lockdown-driven online spending, after the jump to
             28.1% in 2020. The subsequent partial reversal reflects in-store recovery. 2025 at
             27.4% shows internet retail settling a few points below that peak as a share of all
@@ -447,7 +517,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* Secondary SIC series */}
-      <section className="bg-white py-12 sm:py-16">
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             Secondary SIC series (labelled separately, never blended)
@@ -506,7 +576,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* Seasonality (engine-derived, monthly series) */}
-      <section className="bg-white py-12 sm:py-16">
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
             Seasonality and the long-run formation trend
@@ -558,7 +628,7 @@ export default function OnlineSellerIndexPage() {
           <div className="bg-white border border-neutral-200 p-4 sm:p-6 max-w-2xl">
             <FormationSeasonalityChart points={deriveSeasonality(formationData)} />
           </div>
-          <p className="mt-4 text-xs text-neutral-400 max-w-2xl">
+          <p className="mt-4 text-xs text-neutral-500 max-w-2xl">
             Source: Companies House Advanced Search API, monthly incorporated_from/to filters,
             SIC 47910. {formationData.meta.provisional_months.length > 0 && (
               <>Excludes provisional months ({formationData.meta.provisional_months.join(", ")}).</>
@@ -569,7 +639,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* What this index measures */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
             What this index measures
@@ -613,7 +683,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* On-funnel links */}
-      <section className="bg-white py-12 sm:py-16">
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
             Tax and compliance context for online sellers
@@ -628,7 +698,7 @@ export default function OnlineSellerIndexPage() {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <Link
               href="/for/amazon-sellers"
-              className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
+              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
@@ -643,7 +713,7 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/for/shopify-sellers"
-              className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
+              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
@@ -658,7 +728,7 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/for/marketplace-sellers"
-              className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
+              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
@@ -673,7 +743,7 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/for/dropshippers"
-              className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
+              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
@@ -691,7 +761,7 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/services/ecommerce-vat-compliance"
-              className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
+              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Service
@@ -707,7 +777,7 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/services/settlement-payout-reconciliation"
-              className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
+              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Service
@@ -734,7 +804,7 @@ export default function OnlineSellerIndexPage() {
             The UK{" "}
             <a
               href="https://www.gov.uk/vat-registration/when-to-register"
-              className="text-[#1a3a5c] underline hover:opacity-75"
+              className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -756,13 +826,13 @@ export default function OnlineSellerIndexPage() {
           <div className="mt-5 flex flex-wrap gap-4">
             <Link
               href="/calculators/vat-threshold-tracker"
-              className="text-sm font-semibold text-[#1a3a5c] hover:underline"
+              className={`text-sm font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               Use the VAT threshold tracker
             </Link>
             <Link
               href="/vat/deemed-supplier-establishment"
-              className="text-sm font-semibold text-[#1a3a5c] hover:underline"
+              className={`text-sm font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               Deemed-supplier and establishment rules
             </Link>
@@ -780,7 +850,7 @@ export default function OnlineSellerIndexPage() {
               (retail sale via mail order houses or via internet), as defined in the{" "}
               <a
                 href="https://resources.companieshouse.gov.uk/sic/"
-                className="text-[#1a3a5c] underline hover:opacity-75"
+                className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -799,7 +869,7 @@ export default function OnlineSellerIndexPage() {
               counts from the{" "}
               <a
                 href="https://developer.company-information.service.gov.uk/api/docs/"
-                className="text-[#1a3a5c] underline hover:opacity-75"
+                className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -824,7 +894,7 @@ export default function OnlineSellerIndexPage() {
               retail as a proportion of all retail sales, seasonally adjusted) from the{" "}
               <a
                 href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi"
-                className="text-[#1a3a5c] underline hover:opacity-75"
+                className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -854,7 +924,7 @@ export default function OnlineSellerIndexPage() {
             <strong>Data licences:</strong> Companies House data is published under the{" "}
             <a
               href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-              className="underline"
+              className={`underline ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -866,13 +936,13 @@ export default function OnlineSellerIndexPage() {
             Update cadence: quarterly. Last updated: {pullDate}. Next scheduled refresh:{" "}
             {data.meta.nextRefresh}.
           </p>
-          <p className="mt-3 text-xs text-neutral-400 max-w-2xl">
+          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
             Cite as: {data.meta.citeAs}
           </p>
           <p className="mt-4 text-sm">
             <Link
               href="/research/online-seller-index/data"
-              className="font-semibold text-[#1a3a5c] hover:underline"
+              className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               Download the quarterly churn and seasonality data (CSV)
             </Link>
@@ -880,7 +950,7 @@ export default function OnlineSellerIndexPage() {
           <p className="mt-2 text-sm">
             <Link
               href="/research/online-seller-survival-index"
-              className="font-semibold text-[#1a3a5c] hover:underline"
+              className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               See the companion Online Seller Survival Index (ONS retail enterprise survival)
             </Link>
@@ -889,7 +959,14 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-12 sm:py-16">
+      {/* ADOPTION DECLINED (sixth time on this site):
+          packages/web-shared/design/primitives/FaqSection.tsx. It is a Radix
+          accordion with no forceMount, so a closed answer is absent from the
+          server HTML while the FAQPage JSON-LD emitted at the top of this page
+          asserts every one of these four answers. These headings are plain
+          server-rendered h3/p and every answer stays in the HTML. Settled, do
+          not re-litigate. */}
+      <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
             Frequently asked questions
@@ -915,7 +992,7 @@ export default function OnlineSellerIndexPage() {
             Since{" "}
             <a
               href="https://www.gov.uk/guidance/digital-platform-reporting"
-              className="text-[#1a3a5c] underline hover:opacity-75"
+              className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -929,13 +1006,13 @@ export default function OnlineSellerIndexPage() {
           <div className="mt-5 flex flex-wrap gap-4">
             <Link
               href="/services/hmrc-letter-online-sales"
-              className="text-sm font-semibold text-[#1a3a5c] hover:underline"
+              className={`text-sm font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               HMRC letters about online sales: what to do
             </Link>
             <Link
               href="/blog/platform-reporting-and-hmrc-letters/platform-reporting-rules"
-              className="text-sm font-semibold text-[#1a3a5c] hover:underline"
+              className={`text-sm font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               Platform reporting rules explained
             </Link>
@@ -944,7 +1021,7 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* CTA */}
-      <section className="ground-dark bg-neutral-900 py-12 sm:py-16">
+      <section className={`ground-dark bg-neutral-900 ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Running an online retail business?

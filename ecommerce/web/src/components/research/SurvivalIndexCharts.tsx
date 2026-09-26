@@ -7,6 +7,28 @@
  *   1. Survival curve for the latest full 5-year cohort: Retail vs all
  *      industries, year 1 through year 5.
  *   2. 1-year survival rate by birth-year cohort, Retail only (trend).
+ *
+ * COLOUR HERE IS DATA ENCODING, NOT DECORATION. Read this before "fixing" it.
+ *
+ * AMBER is the brand hex #c9861b. Every use of it below is a FILL (line stroke,
+ * point, bar), which is a graphic at the 3.0 floor, not text: 3.04 on white.
+ * It is not the text-contrast defect that commit 3f23c7e7 fixed site-wide, and
+ * swapping it for the primary-700 text step would change which series the
+ * reader thinks they are looking at. Leave it.
+ *
+ * Series separation does NOT rest on colour alone: Retail is a solid 2.5px line
+ * with r=4 points, all-industries is a 40%-opacity dashed line with r=3 points,
+ * plus an on-chart legend. Colour-only separation would be thin (amber #c9861b
+ * against the composited navy-at-40% #a3b0be is 1.38), which is exactly why the
+ * dash pattern and the point radii carry the encoding too.
+ *
+ * All chart TEXT is neutral and measured on the white card these charts sit in
+ * (page.tsx renders both inside `bg-white border border-neutral-200`):
+ * axis tick labels #737373 = 4.74, x-axis category labels #525252 = 7.81,
+ * legend and bar data labels #171717 = 17.93. All clear the 4.5 text floor.
+ * GRID #e5e5e5 is 1.26 on white and is deliberately below the graphic floor:
+ * gridlines are not essential information, the y-axis labels and the bar data
+ * labels carry the values, and darkening them would compete with the series.
  */
 import type { SurvivalCohortRow } from "@/lib/research/survival-index";
 

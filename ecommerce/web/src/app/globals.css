@@ -167,6 +167,17 @@
        this site paints are white, #fafaf9, #fafaf7, slate-50 or amber-50. */
     --focus-ring: var(--focus-ring-on-light);
 
+    /* Opts the SHARED KIT's ring into the mechanism above. Kit components such
+       as packages/web-shared/design/primitives/Breadcrumb.tsx build their own
+       ring internally from packages/web-shared/design/layout-utils.ts, so a
+       call site cannot override it: pinned to primary-600 it measured 1.18 on
+       the #8a5e1a brand hero and 2.42 on the #1a3a5c research hero, both under
+       the 3:1 graphic floor. The kit reads --kit-focus-ring and falls back to
+       primary-600 when it is absent, so this line is the whole opt-in. It
+       points at --focus-ring rather than a hex, which keeps ONE ring mechanism
+       on this site and means .ground-dark rebinds the kit's ring too. */
+    --kit-focus-ring: var(--focus-ring);
+
     /* Greys this site already paints as literals, named so they stop being
        literals. */
     --ground-subtle: #fafaf9;

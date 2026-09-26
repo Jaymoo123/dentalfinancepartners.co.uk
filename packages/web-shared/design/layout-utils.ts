@@ -17,8 +17,38 @@ export const sectionY = "py-12 sm:py-16 md:py-20";
 
 export const sectionYLoose = "py-16 sm:py-20 md:py-24 lg:py-28";
 
+/**
+ * Focus ring.
+ *
+ * Every recipe here carries `outline-offset-2`, so the outline paints two
+ * pixels OUTSIDE the control, on whatever the SECTION is painting. What the
+ * ring must contrast with is therefore the ground, which is an ancestor fact
+ * the control cannot know. That is why the colour is read from an inherited
+ * custom property rather than pinned here.
+ *
+ * Why it changed: pinned to `outline-primary-600`, this ring measured 1.18:1
+ * against an amber brand hero and 2.42:1 against a navy one, both under the
+ * 3:1 graphic floor and the first effectively invisible. It is reached through
+ * components like Breadcrumb, whose internal ring a call site cannot override.
+ *
+ * OPT-IN ON PURPOSE. The hook is `--kit-focus-ring`, a variable no site
+ * declared before this change, so every site that does not opt in falls back
+ * to `--color-primary-600` and renders byte-identically. That is deliberate
+ * rather than lazy: the obvious version of this fix reads `--focus-ring`
+ * directly, and three live sites (charities, contractors-ir35, crypto) declare
+ * that as a single FLAT colour with no dark-ground rebind. charities' own
+ * globals.css documents its value measuring 1.98 on one of its grounds.
+ * Reading `--focus-ring` here would therefore have silently repainted rings on
+ * three live sites to a value nobody had measured against the grounds the kit
+ * paints them on, which is a lateral move of unknown sign.
+ *
+ * To opt in, declare `--kit-focus-ring` and rebind it wherever the ground
+ * flips, the way a `.ground-dark` section class already rebinds `--focus-ring`.
+ * Point it at your existing ring token rather than a second hex, so a site
+ * keeps ONE ring mechanism and one grep finds every ring.
+ */
 export const focusRing =
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600";
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--kit-focus-ring,var(--color-primary-600))]";
 
 /** Primary CTA - brand background, white text.
  *  The ground reads --btn-ground/--btn-ground-hover/--btn-ground-active with the
