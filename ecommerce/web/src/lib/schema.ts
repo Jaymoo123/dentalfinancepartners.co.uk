@@ -113,6 +113,23 @@ export function buildWebsiteJsonLd() {
   });
 }
 
+/**
+ * FAQ answers in src/data/{services,for,vat}.ts are authored with real anchors
+ * inside the string, and the templates now render them as HTML so those links
+ * work. Schema.org's acceptedAnswer.text tolerates a limited HTML subset, but
+ * the conventional and safe value is plain text, so the tags come off HERE,
+ * once, rather than at each of the five call sites. Plain-text answers (the
+ * home page and the calculator pages) are unaffected: the regex matches
+ * nothing and the string passes through byte-identical.
+ *
+ * ponytail: a regex, not a parser. The input is first-party content in this
+ * repo, never user input, and it is markup we author, so there is no
+ * adversarial case for a parser to win.
+ */
+function stripTags(html: string) {
+  return html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+}
+
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -120,7 +137,7 @@ export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      acceptedAnswer: { "@type": "Answer", text: stripTags(faq.answer) },
     })),
   });
 }

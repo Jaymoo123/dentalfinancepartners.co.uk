@@ -5,10 +5,10 @@ Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held). Generat
 
 brand_locked: true
 
-## PORT PICKUP (Property design standard) - updated 2026-09-25
+## PORT PICKUP (Property design standard) - updated 2026-09-26
 
-**Phases 0, 1 and 2 are BUILT and TAGGED (`port-ecommerce-phase0`, `-phase1`, `-phase2`).
-Phases 3 to 6 are NOT built.** Phase 3 (services, audience and VAT hubs) is next.
+**Phases 0, 1, 2 and 3 are BUILT and TAGGED (`port-ecommerce-phase0`, `-phase1`, `-phase2`,
+`-phase3`). Phases 4 to 6 are NOT built.** Phase 4 (calculators and the embed surface) is next.
 Git is the authority: `git tag -l 'port-ecommerce-*'`. Artefacts live in `docs/ecommerce/_port/`.
 
 Baseline: production SHA `153e5017`, 51 URLs, 707 unique internal links (floor 10), 0 dashes,
@@ -50,9 +50,9 @@ STILL OPEN, carried as owner items:
 - The formation data is five months stale (settled through April 2026). The prose is now
   stamped as at that month rather than refreshed.
 
-## START HERE: the next agent picks up at PHASE 3
+## START HERE: the next agent picks up at PHASE 4
 
-Written 2026-09-25, updated 2026-09-26 at the close of phase 2. Git is the authority for what is built, this block is
+Written 2026-09-26 at the close of phase 3. Git is the authority for what is built, this block is
 a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it disagrees.
 
 **Opening sequence, in this order, before planning anything:**
@@ -60,20 +60,20 @@ a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it di
 2. `python scripts/port_preflight.py --site ecommerce`. It must exit 0. Ports 3000 and 3210 are
    the OWNER'S OWN servers (Double Wired Creative and Property): do not kill them, declare them
    with `--allow-port 3000 --allow-port 3210`. Kill anything else you did not start.
-3. Read `docs/_engines/DESIGN_PORT_PLAYBOOK.md` STOP block, then 2.1, 8 item 11, 9.1, 13, and
+3. Read `docs/_engines/DESIGN_PORT_PLAYBOOK.md` STOP block, then 2.1, 9.1, 13, and
    `docs/_engines/PORT_FIELD_NOTES.md` sections 4, 5, 6, 10, 11, 12, 13.
 4. Read this site's own artefacts, which are more reliable than any brief you write from memory:
    `docs/ecommerce/_port/P0A_CLAIMS_LEDGER.md`, `P0B_RENDERED_SWEEP.md`, `P0C_CSS_TOKEN_AUDIT.md`,
    `P0D_BASELINE.md`, `P0E_STRUCTURAL_INVENTORY.md`.
 
-**What phase 3 is.** The three hub families and their slug templates, all still site-local:
-`src/app/services/page.tsx` (46 lines) and `services/[slug]/page.tsx` (100 lines, 4 services from
-`src/data/services.ts`); `src/app/for/page.tsx` (32) and `for/[slug]/page.tsx` (100, from
-`src/data/for.ts`); `src/app/vat/page.tsx` (32) and `vat/[slug]/page.tsx` (100, from
-`src/data/vat.ts`). Three packages on disjoint leases, one family each including its data file, is
-the shape that fits. Candidate kit adoptions: `design/primitives/SlimHero`, `page-blocks`,
-`Breadcrumb`, `NoticeCard`, and `design/marketing/CoverageCards`, `TopicSection`, `WhyUsList`,
-`DrawnTickList`, `ComparisonTable`.
+**What phase 4 is.** The four calculators and the embed surface:
+`src/app/calculators/page.tsx` and `calculators/[slug]/page.tsx`, the client island
+`src/components/calculators/CalculatorClient.tsx`, and the embed route. The four slugs are
+`seller-take-home-calculator`, `vat-threshold-tracker`, `sole-trader-vs-ltd-sellers`,
+`side-hustle-tax-checker`. Phase 0 already fixed the maths defects (the missing additional-rate
+band, the personal-allowance taper on all three tax calculators) and added the note the owner
+asked for, so phase 4 is design adoption, NOT a maths rebuild. Re-derive that before planning:
+a phase that re-fixes settled work is the failure mode section 10 of the field notes exists for.
 
 **BANNED kit components, on this site, with no owner conversation available to an executing agent:**
 `StickyCTA` (an interruption, banned outright estate-wide), `LeadCTAPanel` (adds a lead-capture
@@ -84,28 +84,41 @@ composite figures and deletes citations). Write every decline AT THE CALL SITE n
 PATH in full: a decline that does not name the path is invisible to the 9.1 gate that exists to
 protect it.
 
-**Traps that will bite specifically in phase 3:**
-- The three `[slug]` templates ALREADY CARRY `.ground-dark` on their dark CTA sections, placed in
-  phase 1. Do not remove it, and if you move the section, move the class with it. Custom properties
-  inherit, so never put it on an ancestor of a light island: the homepage CTA band is deliberately
-  unmarked because it wraps a white form card.
-- The slug heroes paint `bg-[#8a5e1a]` and hand-roll a white button inside. White on `#8a5e1a` is
-  5.68 and passes, so that ground is fine; if a kit component changes it, re-derive the ratio.
-  The brand hex `#c9861b` is 3.04 on white: decoration only, never text, never a ground under
-  white text.
-- `src/data/for.ts` was corrected in phase 0 (three calculator links). The tool slug is
-  `seller-take-home-calculator`, not `seller-take-home`. Do not revert it.
-- DO NOT AUTHOR NEW MARKETING COPY. Use the strings the data files already publish. Reshaping an
-  existing string for a component is fine; a new claim, a dropped claim or a softened claim is not.
-  Content is Opus-only by house rule, so a copy gap is an owner item, not a builder's licence.
-- Phase 2 proved the shape of the risk in this port: both defects it introduced were invisible in
-  source and only showed up in the browser check (56 anchor failures, then 3 contrast rows). Budget
-  for a second and third measurement pass rather than one.
+**Traps that will bite specifically in phase 4:**
+- `FaqSection` has now been declined FOUR times on this site (blog template in phase 2, all three
+  hub families in phase 3). The reason is structural and still true: it is a Radix accordion with
+  no `forceMount`, so a closed answer is absent from the server HTML while the page's
+  `buildFaqJsonLd` asserts it. Do not re-litigate it. Native `<details>` is the site's answer.
+  Revisit only if the kit gains `forceMount`, which is a manager carve-out.
+- `CardStack` from `packages/web-shared/design/primitives/page-blocks.tsx` renders its body as a
+  TEXT CHILD. Phase 3 adopted it, then had to reverse the adoption, because the data files author
+  real HTML in those strings. Check what a component does with your content before adopting it.
+- The kit `Breadcrumb` ships `text-slate-300` links and `text-slate-400` chevrons. On this site's
+  `#8a5e1a` brand ground those measure 3.76 and about 2.0, both failing. Phase 3 overrode them at
+  the call site. Reuse that wrapper; do not edit the kit.
+- The brand hex `#c9861b` is 3.04 on white: decoration only, never text, never a ground under
+  white text. It is legal on borders and on `aria-hidden` marks, which clear the 3:1 graphic floor.
+- `.ground-dark` is what rebinds `--focus-ring` to white. Any dark band holding a focusable element
+  needs it, and phase 3 found the `neutral-800` stats band missing it on all three families (the
+  default ring measured 2.67 there). Never put it on an ancestor of a light island.
+- Phases 2 and 3 both proved the same thing: the defects that mattered were invisible in source and
+  only showed up in the browser check. Budget a second and third measurement pass.
 
-**What is left after phase 3:** phase 4 calculators and the embed surface, phase 5 homepage and the
-two research studies, phase 6 the rest (about, contact, book, complete, thank-you, legal, error
-pages, forms), then the mop-up package, two independent adversarial reviews, a gap-fix wave, the
-corrected 9.1 kit-adoption gate, and `port-ecommerce-complete` on the final commit.
+**What is left after phase 4:** phase 5 homepage and the two research studies, phase 6 the rest
+(about, contact, book, complete, thank-you, legal, error pages, forms), then the mop-up package,
+two independent adversarial reviews, a gap-fix wave, the corrected 9.1 kit-adoption gate, and
+`port-ecommerce-complete` on the final commit.
+
+**Carried into phase 5, found by the phase-3 browser check and NOT fixed (out of lease):**
+five homepage links render the brand hex `#c9861b` as 14px link text at **2.91** against a 4.5
+floor ("VAT compliance service", "Reconciliation service", "HMRC letter service", "Fees VAT guide",
+"Deemed-supplier guide"). The fix is the one phase 3 used everywhere else: `text-primary-700`
+(`#8a5e1a`, 5.68 on white).
+
+**Carried into the mop-up package:** `vat/page.tsx` and `vat/[slug]/page.tsx` keep a local
+`py-12 sm:py-16 lg:py-20` where services and for now use the kit `sectionY` (`md:py-20`). Not
+byte-identical, so aligning it moves a breakpoint on five routes; deliberately deferred rather
+than smuggled into phase 3.
 
 **The gates, every phase, substituting your own port:**
 G0 `python scripts/port_preflight.py --site ecommerce` (declare 3000 and 3210)
@@ -113,35 +126,45 @@ G1 `npm run lint --workspace=ecommerce/web`
 G2 `npm run build --workspace=ecommerce/web` (the MANAGER runs the only build; agents never build)
 G3 `python scripts/check_dependency_closure.py`
 G4 `python scripts/predeploy_gate.py --site ecommerce`
-G5 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/sweep.mjs --site=ecommerce --base=http://localhost:<port> --article-depth=3 --sample=9999 --out=<path>`
+G5 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/sweep.mjs --site=ecommerce --base=http://localhost:<port> --article-depth=3 --sample=9999 --sha=<sha> --out=<path>`
 G6 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/browser_check.mjs --site=ecommerce --base=... --article-depth=3 --sample=9999 --out=<path>` (slow, roughly ten minutes, looks dead while working: watch for the OUTPUT FILE, never start a second one)
 G7 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/cta_snapshot.mjs --site=ecommerce --base=... --baseline=docs/ecommerce/_port/sweep_baseline.json --out=<path>`
 G9 `npm test --workspace=ecommerce/web` FROM THE MONOREPO ROOT; the workspace flag does not work
 from inside `ecommerce/web`.
 
-**Numbers to hold yourself to.** Phase-2 close: 51 URLs, **1217** internal links (baseline 707,
-phase 1 1173), 0 dead, 0 dashes, 51 `data-cta` in one triple, 113 JSON-LD blocks parsing, 204
-browser-check page-loads with 0 new problems, 45 tests, 69 pages built. Baselines: `_port/sweep_baseline.json`, `_port/browser_baseline.json`,
-`_port/cta_baseline.json`. Phase-1 state: `_port/sweep_postphase1.json`,
-`_port/browser_postphase1.json`, `_port/cta_postphase1.json`.
+## PHASE 3 (services, audience and VAT hubs) - built 2026-09-26
 
-**Still open across the whole port, do not re-discover these:**
-- 88 pre-existing contrast rows on `/`, `/research` and the two research studies (amber link text
-  at 2.91 on a tinted ground; `neutral-400` small print at 2.58). Owned by phases 5 and 6.
-- The seasonality chart's 12 monthly values are unreachable as text under `role="img"`.
-- `/research/online-seller-index` has a bordered CTA link with no focus-ring classes at all.
-- `src/lib/schema.ts` `buildOrganizationJsonLd` is dead and carries `priceRange: "££"`.
-- The owner items listed further down this file: the two turnaround promises, the 50,699 second
-  Companies House pull, the rate-agnostic flat-rate table, the placeholder phone.
+Six route files on the kit, three families on disjoint leases (services, for, vat) plus a
+reconciliation package. Adopted the kit `Breadcrumb`, `Eyebrow`, `sectionY`, `focusRing` and the
+`primary-*` ramp in place of raw hexes, with `.ground-dark` on every brand hero and every dark
+band that holds a focusable element. Roughly a dozen declines are written at their call sites
+naming the kit file path in full, for the 9.1 gate.
 
-**Rules that cost this port real work when a brief got them wrong:**
-- Every brief carries the 10.1 preamble VERBATIM, including "VERIFY AGAINST SOURCE. If this brief
-  is wrong, SAY SO and trust the source." Every single agent on this site found a real error in
-  its brief. Two of those corrections prevented shipping damage.
-- `ls` every path in an OFF LIMITS list before the prompt ships.
-- The manager runs all git, all builds, every `packages/web-shared/` edit, and talks to the owner.
-- Never change Property, including indirectly through the kit.
-- Nothing is pushed or deployed without the owner asking in that turn.
+**The phase's real output was a live defect, not design work.** The three data files author 124
+real HTML anchors inside body strings (`services.ts` 13, `for.ts` 51, `vat.ts` 60), and the
+templates interpolated those strings as React text children. Visitors saw literal escaped
+`<a href="...">` markup as visible body text on all 13 routes, and every authored internal link
+and gov.uk citation was inert. Found independently by all three family builders. Now rendered as
+HTML on every affected field, verified in the rendered DOM: escaped-markup occurrences went to 0
+and total rendered links went 707 to 1,244. `vat.ts` `challenges[].body` carries `<p>`, `<strong>`
+and `<ul>`, so that field renders into a `<div>`, never a `<p>`, to avoid a hydration split.
+`buildFaqJsonLd` in `src/lib/schema.ts` now strips tags once, so `acceptedAnswer.text` stopped
+publishing raw markup; all five callers checked, the two plain-text callers pass through unchanged.
+
+Contrast fixed, every ratio measured rather than assumed: the kit Breadcrumb's slate-300 links
+(3.76) and slate-400 chevrons (about 2.0) on the brand ground, a `text-white/60` hero back link
+(3.19), the brand hex used as hover text (3.04), and the `neutral-800` stats band's default focus
+ring (2.67). The `#8a5e1a` hero ground itself re-derived at 5.68 for white and is fine.
+
+Gates at close: lint 0 errors (5 pre-existing warnings, none in the lease), build green on all 13
+routes, dependency closure OK, predeploy gate PASS, sweep 51/51 clean with 0 dead links, 0
+link-floor breaches, 0 dash and 0 CTA regressions, CTA snapshot identical to baseline (51
+`header_book`, 1 distinct triple), tests 45/45, browser check self-test OK with 204 page-loads and
+**0 new problems** at 390/768/1024/1440.
+
+Data files are byte-identical (md5 unchanged), no copy was authored beyond structural section
+labels, no URL changed, no `data-cta` attribute touched.
+
 
 ## PHASE 2 (blog subsystem) - built 2026-09-26
 

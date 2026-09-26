@@ -3,10 +3,40 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { vatPages, getVatPage } from "@/data/vat";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { buildFaqJsonLd } from "@/lib/schema";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 
 export function generateStaticParams() { return vatPages.map((v) => ({ slug: v.slug })); }
+
+/**
+ * Every `intro`, `stats[].label`, `challenges[].body`, `howWeHelp[].body` and
+ * `faqs[].answer` in src/data/vat.ts is authored HTML (anchors, and in the
+ * challenge bodies whole <p>, <strong> and <ul> blocks), so the strings are
+ * rendered as HTML and the links need a colour: nothing here is inside
+ * `.prose-blog`, and a UA-default link is neither the brand nor legible on the
+ * dark bands.
+ *
+ * primary-700 is #8a5e1a, 5.68 on white and 5.44 on #fafaf7; the brand hex
+ * #c9861b (primary-400) is 3.04 on white and is decoration only. On the dark
+ * grounds the link is white: 5.68 on the primary-700 hero, 15.1 on the
+ * neutral-800 stats band. Same two recipes as app/services/[slug] and
+ * app/for/[slug].
+ */
+const linkOnLight = "[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800";
+const linkOnDark = "[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2";
+
+/**
+ * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
+ * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
+ * slate-300 with slate-400 chevrons, both written for the kit's navy: on
+ * #8a5e1a they measure 3.76:1 and about 2.0:1, under the 4.5 text and 3.0
+ * graphic floors. The kit is a carve-out, so the ground-correct palette is
+ * applied from the call site (white 5.68, white/80 4.3). Identical string on
+ * all three slug templates.
+ */
+const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -20,21 +50,55 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
   const vp = getVatPage(slug);
   if (!vp) notFound();
   return (<>
-    <section className="border-b border-neutral-200 bg-[#8a5e1a] py-16 sm:py-20">
+    {/* `ground-dark` rebinds --focus-ring to the on-brand white for this section.
+        Without it the breadcrumb links and the hero CTA ring in #8a5e1a on an
+        #8a5e1a ground, i.e. 1.00:1. The ground is unchanged: the hex now comes
+        from the --color-primary-700 token globals.css anchors on #8a5e1a (white
+        on it = 5.68). No light island sits inside this section. */}
+    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
       <div className={siteContainerLg}>
-        <Link href="/vat" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">VAT Hub</Link>
-        <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{vp.headline}.</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">{vp.intro}</p>
-        <div className="mt-10"><Link href="/contact" className="inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-[#8a5e1a] hover:bg-white/90 transition-colors">Get in touch</Link></div>
+        {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, replacing
+            the hand-rolled single back-link. Same /vat href, same "VAT Hub" label;
+            it adds the Home crumb (already linked from header and footer, so the
+            route's unique internal-link set is unchanged) and a BreadcrumbList
+            JSON-LD. Nothing else on this route emits one. */}
+        <div className={crumbOnBrand}>
+          <Breadcrumb
+            onDark
+            siteUrl={siteConfig.url}
+            items={[{ label: "Home", href: "/" }, { label: "VAT Hub", href: "/vat" }, { label: vp.title }]}
+          />
+        </div>
+        {/* Authored HTML, first-party content committed in src/data/vat.ts.
+            As a text child every anchor printed as escaped markup. */}
+        <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/80 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: vp.intro }} />
+        <div className="mt-10"><Link href="/contact" className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
       </div>
     </section>
-    <section className="bg-neutral-800 py-8 sm:py-10">
+    {/* `ground-dark` added: this band now carries links (the authored citation
+        anchors in stats[].label), and the default focus ring is #8a5e1a, which
+        is 2.67:1 against neutral-800. The rebind makes it white, 15.1:1. No
+        light island sits inside this section. */}
+    <section className="ground-dark bg-neutral-800 py-8 sm:py-10">
       <div className={siteContainerLg}>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
           {vp.stats.map((stat) => (
             <div key={stat.label} className="flex flex-col sm:text-center">
               <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-              <div className="mt-1 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider">{stat.label}</div>
+              {/* DECLINED: packages/web-shared/design/marketing/StatsCounter.tsx. It
+                  takes a single number and renders no links; these labels are
+                  composite figures carrying their HMRC and EU Commission citations,
+                  which it would delete.
+                  The label is HTML and must be rendered as HTML: the twin template
+                  at src/app/services/[slug]/page.tsx:37 already does this, and
+                  without it every citation anchor in vat.ts printed as literal
+                  escaped markup on the page. Link colour is set here because the
+                  `.prose-blog a` rule is scoped and a UA-default link on
+                  neutral-800 is ~2.3:1; white on neutral-800 is ~12:1. */}
+              <div
+                className={`mt-1 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider ${linkOnDark}`}
+                dangerouslySetInnerHTML={{ __html: stat.label }}
+              />
             </div>
           ))}
         </div>
@@ -42,12 +106,31 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
     </section>
     <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
+        <Eyebrow>The problem</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Key considerations.</h2>
+        {/* DECLINED: packages/web-shared/design/primitives/page-blocks.tsx `CardStack`
+            and packages/web-shared/design/marketing/ComparisonTable.tsx. CardStack
+            renders `{item.body}` as plain text, which is what these bodies already
+            get and must stop getting (see the note below); it also drops the brand
+            left rule that distinguishes this band from the one under it.
+            ComparisonTable needs a them-vs-us row set nobody has authored and
+            imports lucide-react, which ecommerce/web does not declare.
+            DECLINED: packages/web-shared/design/marketing/WhyUsList.tsx and
+            .../DrawnTickList.tsx: both are client islands that restate items as a
+            numbered or ticked list; these are paragraph-length HTML bodies, not
+            list lines, and reshaping them would drop the qualifiers.
+            DECLINED: packages/web-shared/design/primitives/NoticeCard.tsx: a
+            centred single-card outcome notice for the token-gated flows; there is
+            no notice on this route to carry. */}
         <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
           {vp.challenges.map((item) => (
-            <article key={item.title} className="border border-neutral-200 border-l-4 border-l-[#c9861b] bg-neutral-50 p-6 sm:p-8">
+            <article key={item.title} className="border border-neutral-200 border-l-4 border-l-primary-400 bg-neutral-50 p-6 sm:p-8">
               <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+              {/* A <div>, not a <p>: these bodies are whole <p>/<ul> blocks,
+                  and a <p> inside a <p> is invalid HTML that the parser would
+                  split, breaking hydration. `space-y` is not used, because the
+                  authored markup already supplies its own paragraphs. */}
+              <div className={`mt-4 text-base leading-relaxed text-neutral-600 [&>p+p]:mt-4 [&_ul]:mt-4 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mt-1 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </article>
           ))}
         </div>
@@ -55,12 +138,13 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
     </section>
     <section className="border-b border-neutral-200 bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
+        <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
           {vp.howWeHelp.map((item) => (
-            <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-[#c9861b] hover:shadow-md transition-all">
+            <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-primary-400 hover:shadow-md transition-all">
               <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
+              <div className={`mt-3 text-sm leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
         </div>
@@ -72,16 +156,27 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
         <div className={siteContainerLg}>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-3xl">Common questions</h2>
+            {/* DECLINED: packages/web-shared/design/primitives/FaqSection.tsx. It is a
+                Radix accordion with no `forceMount`, so closed answers are absent
+                from the server HTML while the FAQPage JSON-LD above claims them -
+                the same reason src/app/blog/[category]/[slug]/page.tsx:69 declined
+                it. It also renders each answer as `<p>{faq.answer}</p>`, which
+                cannot carry the HMRC citation anchors these answers hold. It emits
+                no JSON-LD of its own, so the single FAQPage block above stands
+                either way. The native <details> below needs no JavaScript and
+                ships every answer in the HTML. */}
             <div className="space-y-3 sm:space-y-4">
               {vp.faqs.map((faq) => (
                 <details key={faq.question} className="group border border-neutral-200 bg-white">
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-[#c9861b] transition-colors list-none">
+                  <summary className={`flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-primary-700 transition-colors list-none ${focusRing}`}>
                     <span>{faq.question}</span>
-                    <span className="flex-shrink-0 text-[#c9861b] transition-transform group-open:rotate-45" aria-hidden>
+                    <span className="flex-shrink-0 text-primary-600 transition-transform group-open:rotate-45" aria-hidden>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
                     </span>
                   </summary>
-                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4">{faq.answer}</div>
+                  {/* Authored HTML. buildFaqJsonLd strips the tags in
+                      src/lib/schema.ts, so the FAQPage above stays plain text. */}
+                  <div className={`px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </details>
               ))}
             </div>
