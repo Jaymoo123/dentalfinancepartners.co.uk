@@ -165,8 +165,13 @@ export default function DetailsForm({
             placeholder="e.g. Jane Smith"
             className={inputClass}
             aria-invalid={!!nameError}
+            aria-describedby={nameError ? "complete-name-error" : undefined}
           />
-          {nameError && <p className="mt-1.5 text-xs font-medium text-red-600">{nameError}</p>}
+          {nameError && (
+            <p id="complete-name-error" className="mt-1.5 text-xs font-medium text-red-600">
+              {nameError}
+            </p>
+          )}
         </div>
       )}
 
@@ -186,8 +191,13 @@ export default function DetailsForm({
             placeholder="A number we can call you on"
             className={inputClass}
             aria-invalid={!!phoneError}
+            aria-describedby={phoneError ? "complete-phone-error" : undefined}
           />
-          {phoneError && <p className="mt-1.5 text-xs font-medium text-red-600">{phoneError}</p>}
+          {phoneError && (
+            <p id="complete-phone-error" className="mt-1.5 text-xs font-medium text-red-600">
+              {phoneError}
+            </p>
+          )}
         </div>
       )}
 
@@ -196,7 +206,7 @@ export default function DetailsForm({
       </button>
 
       {status === "error" && (
-        <p className="mt-3 text-sm font-semibold text-red-700">
+        <p role="alert" className="mt-3 text-sm font-semibold text-red-700">
           Something went wrong saving your details. Please try again.
         </p>
       )}

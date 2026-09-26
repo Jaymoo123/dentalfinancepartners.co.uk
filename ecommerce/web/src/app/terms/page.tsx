@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY, focusRing } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * CHROME ONLY. The legal copy on this page is not reworded, reordered or
+ * restructured by the port; the body renders through `.prose-blog`, which is
+ * defined in src/app/globals.css inside `@layer components` (it was missing
+ * from every stylesheet this site loads until phase 0, so this page shipped
+ * unstyled in production). Nothing here fights that class.
+ *
+ * The only change: every inline link carried
+ * `text-orange-700 underline underline-offset-2 hover:text-orange-800`, a raw
+ * Tailwind orange that is not this site's brand ramp and, being a utility,
+ * OUTRANKED the `.prose-blog a` colour that phase 0 deliberately set to the
+ * accessible brand step. Dropping the colour utilities lets `.prose-blog a`
+ * paint: `var(--brand-primary-text)` = #8a5e1a, 5.68 on white, hovering to
+ * primary-800 #6f4b15 at 7.80. It also supplies the underline and offset, so
+ * nothing is lost. `focusRing` is added because not one of these links had a
+ * focus ring: the ring reads `var(--focus-ring)`, the light-ground value here
+ * (this page paints no dark ground and carries no `.ground-dark`).
+ *
+ * No breadcrumb and no hero: this is a flat single-level legal page reached
+ * from the footer, matching its two siblings.
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx (its
+ * docblock scopes it to /thank-you, /book and /complete),
+ * packages/web-shared/design/primitives/FaqSection.tsx (a Radix accordion with
+ * no forceMount; it would also collapse legal text a reader must be able to
+ * find with ctrl-F) and
+ * packages/web-shared/design/marketing/LeadCTAPanel.tsx,
+ * marketing/StickyCTA.tsx, marketing/TestimonialsSection.tsx,
+ * marketing/WhatToExpectCard.tsx and marketing/StatsCounter.tsx (banned for
+ * this port; a lead-capture surface on a legal page is also wrong on its own
+ * terms).
+ */
 export default function TermsPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
@@ -37,7 +68,7 @@ export default function TermsPage() {
           The Site is operated by {siteConfig.company.legalName} (trading as {siteConfig.name}), a company registered
           in {siteConfig.company.placeOfRegistration} under company number {siteConfig.company.number}, with its
           registered office at {siteConfig.company.registeredOfficeLine}. You can contact us via our{" "}
-          <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
+          <Link href="/contact" className={focusRing}>
             contact page
           </Link>
           .
@@ -154,7 +185,7 @@ export default function TermsPage() {
         <h2>13. Contact us</h2>
         <p>
           Questions about these terms? Contact us via our{" "}
-          <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
+          <Link href="/contact" className={focusRing}>
             contact page
           </Link>
           .

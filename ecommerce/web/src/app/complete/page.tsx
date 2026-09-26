@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
@@ -20,18 +22,26 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-/** Shared "needs the personal link" fallback, cloned from /book. */
+/**
+ * Shared "needs the personal link" fallback, cloned from /book.
+ *
+ * ADOPTED: packages/web-shared/design/primitives/NoticeCard.tsx. Its docblock
+ * says it exists because eight near-copies of this card had started to drift
+ * across /book, /complete, BookingPicker and DetailsForm; two of those eight
+ * are in this file. `tone="slate"` is the neutral dead end, which is the
+ * component's stated meaning for a state that is nobody's fault.
+ */
 function NeedsLinkCard() {
   return (
-    <div className="border-2 border-neutral-200 bg-slate-50 p-6 text-center">
-      <p className="text-base text-neutral-600">
+    <NoticeCard>
+      <p className="text-base leading-relaxed text-neutral-600">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
-      <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+      <Link href="/contact" className={`${btnPrimary} mt-6`}>
         Go to the contact form
       </Link>
-    </div>
+    </NoticeCard>
   );
 }
 
@@ -51,15 +61,15 @@ export default async function CompletePage({
     const verdict = verifyLeadToken(token, "profile");
     if (!verdict.ok) {
       inner = (
-        <div className="border-2 border-neutral-200 bg-slate-50 p-6 text-center">
-          <p className="text-base text-neutral-600">
+        <NoticeCard>
+          <p className="text-base leading-relaxed text-neutral-600">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
-          <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+          <Link href="/contact" className={`${btnPrimary} mt-6`}>
             Go to the contact form
           </Link>
-        </div>
+        </NoticeCard>
       );
     } else {
       let missing: ("name" | "phone")[] = ["name", "phone"];
@@ -87,20 +97,27 @@ export default async function CompletePage({
         } catch {
           bookingToken = null;
         }
+        /* `tone="primary"` is the good outcome the reader wanted, which is the
+           component's own rule that tone is meaning and not decoration. It
+           paints bg-primary-50 (#fffbeb) with a primary-600 ring: the body
+           text neutral-600 measures 7.55:1 on that ground, and the ring is
+           #9e6615 at 40% composited on #fffbeb = 2.2:1, which is decoration on
+           a card edge and carries no information on its own. The old card was
+           bg-amber-50 with a full-strength border in the raw brand hex
+           #c9861b, which is the 3.04 decoration-only colour. */
         inner = (
-          <div className="border-2 border-[var(--brand-primary)] bg-amber-50 p-6 text-center">
-            <p className="text-lg font-bold text-neutral-900">You are all set</p>
-            <p className="mt-2 text-base text-neutral-600">
+          <NoticeCard tone="primary" title="You are all set">
+            <p className="text-base leading-relaxed text-neutral-600">
               We have everything we need. A specialist firm from our partner network may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
             {bookingToken && (
-              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
+              <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-6`}>
                 Book a callback
               </Link>
             )}
-          </div>
+          </NoticeCard>
         );
       } else {
         inner = <DetailsForm token={token} missing={missing} />;
@@ -109,19 +126,24 @@ export default async function CompletePage({
   }
 
   return (
-    <section className="bg-white py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-neutral-900 sm:text-4xl">
-            Complete your details
-          </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-neutral-600">
-            Add the last detail we need and a specialist firm from our partner network will be in
-            touch to arrange your free review call, no obligation.
-          </p>
-          <div className="mt-10">{inner}</div>
+    <>
+      {/* ADOPTED: packages/web-shared/design/primitives/SlimHero.tsx. See the
+          adoption note on src/app/book/page.tsx: same three-page contract,
+          same empty backdrop slot, same 11.90:1 on-dark measurements. */}
+      <SlimHero eyebrow="Your enquiry" title="Complete your details">
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+          Add the last detail we need and a specialist firm from our partner network will be in
+          touch to arrange your free review call, no obligation.
+        </p>
+      </SlimHero>
+
+      {/* White, so the page does not end on the navy hero above the slate-900
+          kit footer. */}
+      <section className={`bg-white ${sectionY}`}>
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-2xl">{inner}</div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

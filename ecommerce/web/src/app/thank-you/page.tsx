@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, btnSecondary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
 import { siteConfig } from "@/config/site";
 import BookingPicker from "@/components/forms/BookingPicker";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
@@ -16,9 +17,59 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * ADOPTED: packages/web-shared/design/primitives/SlimHero.tsx, declined in
+ * every phase from 1 to 5 and correct here: its docblock names /thank-you,
+ * /book and /complete as the three pages it exists for. All three branches
+ * below open on it and none of them ends on it.
+ *
+ * HOST CONTRACT: the component writes `relative overflow-hidden` on its own
+ * section and `relative z-10` on its own container, so the contract binds the
+ * `backdrop` slot rather than the call site. No backdrop is passed: this site
+ * owns no brick/texture motif component, so the slot stays empty and nothing
+ * can paint over the copy. No breadcrumb by design, this route is noindex.
+ *
+ * Body sections are WHITE, not a tinted band: the hero is slate-900 and the
+ * kit footer is slate-900, so navy must never be the last thing on the page.
+ * Eyebrow `onDark` and any standfirst are slate-300 on slate-900 = 11.90:1.
+ */
+const bodyClass = `bg-white ${sectionY}`;
+
+/**
+ * DECLINED on this route, with reasons, for the 9.1 kit-adoption gate:
+ *
+ * - packages/web-shared/design/primitives/NoticeCard.tsx. ADOPTED on /book and
+ *   /complete, declined here. This page is not a card: it is a centred column
+ *   carrying a tick, a three-step progress list and an inline booking picker,
+ *   and NoticeCard is a single ring-1 panel with `text-center` baked in. Boxing
+ *   the whole outcome would be a redesign of the page, not an adoption.
+ * - packages/web-shared/design/marketing/LeadCTAPanel.tsx. A lead-capture
+ *   surface; this page is what a lead lands on AFTER capturing. Owner gate.
+ * - packages/web-shared/design/marketing/StickyCTA.tsx. Banned estate-wide as
+ *   an interruption.
+ * - packages/web-shared/design/primitives/FaqSection.tsx. Declined six times on
+ *   this site: a Radix accordion with no `forceMount`, so closed answers are
+ *   absent from the server HTML. Not re-litigated, and this route has no FAQ.
+ */
+
+/**
+ * A DARK ISLAND inside a white section (bg-neutral-900 chip, brand-amber tick
+ * at 5.90:1, which passes the 3.0 graphic floor and is unchanged).
+ *
+ * NO FOCUS RING APPLIED, deliberately. `focusRingOnBrand`
+ * (src/components/ui/layout-utils.ts:64-79) names this call site, but the
+ * element is a plain <div> wrapping a plain <svg>: no href, no tabIndex, no
+ * interactive role, so it can never take focus and a ring on it would be
+ * unreachable markup. The recipe's real consumer is the one focusable dark
+ * island on the site, src/components/forms/BookingPicker.tsx:27 (the selected
+ * slot button), which is outside this package's lease. Reported, not applied.
+ *
+ * The tick duplicates the heading, so it is aria-hidden rather than announced.
+ */
 const CheckIcon = () => (
   <div className="mb-8 inline-block bg-neutral-900 p-6">
     <svg
+      aria-hidden="true"
       className="h-16 w-16 text-[var(--brand-primary)]"
       fill="none"
       viewBox="0 0 24 24"
@@ -52,13 +103,12 @@ export default async function ThankYouPage({
 
   if (optedOut) {
     return (
-      <section className="bg-white py-20 sm:py-24">
+      <>
+      <SlimHero eyebrow="Your enquiry" title="You will not hear from us again about this enquiry" />
+      <section className={bodyClass}>
         <div className={`${siteContainerLg} text-center`}>
           <div className="mx-auto max-w-2xl">
             <CheckIcon />
-            <h1 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
-              You will not hear from us again about this enquiry
-            </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600">
               We have stopped the reminders. If you change your mind, the contact form is always
               open.
@@ -71,16 +121,18 @@ export default async function ThankYouPage({
           </div>
         </div>
       </section>
+      </>
     );
   }
 
   if (confirmed) {
     return (
-      <section className="bg-white py-20 sm:py-24">
+      <>
+      <SlimHero eyebrow="Your enquiry" title="Confirmed" />
+      <section className={bodyClass}>
         <div className={`${siteContainerLg} text-center`}>
           <div className="mx-auto max-w-2xl">
             <CheckIcon />
-            <h1 className="text-4xl font-bold text-neutral-900 sm:text-5xl">Confirmed</h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600">
               Thanks, that is confirmed. A specialist firm from our partner network will contact you
               directly.
@@ -96,15 +148,17 @@ export default async function ThankYouPage({
           </div>
         </div>
       </section>
+      </>
     );
   }
 
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <>
+    <SlimHero eyebrow="Your enquiry" title="Thank you" />
+    <section className={bodyClass}>
       <div className={`${siteContainerLg} text-center`}>
         <div className="mx-auto max-w-2xl">
           <CheckIcon />
-          <h1 className="text-4xl font-bold text-neutral-900 sm:text-5xl">Thank you</h1>
           {nurtureArmed ? (
             <>
               <p className="mt-6 text-lg leading-relaxed text-neutral-600">
@@ -131,11 +185,19 @@ export default async function ThankYouPage({
           )}
 
           {/* Endowed progress: 3-step journey. Step 2 is "Details received"; the
-              live step is picking a callback window. */}
+              live step is picking a callback window.
+
+              The two completed steps paint DARK ISLANDS (bg-neutral-900 chips)
+              inside this white section. NO FOCUS RING APPLIED: both are
+              <span> elements with no href, tabIndex or interactive role, so
+              neither is focusable and `focusRingOnBrand` has nothing to ring
+              here. Their ticks are aria-hidden: the adjacent text label
+              already says which step it is. */}
           <ol className="mx-auto mt-8 flex max-w-xl flex-col gap-3 text-left sm:flex-row sm:items-center sm:justify-center sm:gap-6">
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-neutral-900">
                 <svg
+                  aria-hidden="true"
                   className="h-4 w-4 text-[var(--brand-primary)]"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -150,6 +212,7 @@ export default async function ThankYouPage({
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-neutral-900">
                 <svg
+                  aria-hidden="true"
                   className="h-4 w-4 text-[var(--brand-primary)]"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -208,5 +271,6 @@ export default async function ThankYouPage({
         </div>
       </div>
     </section>
+    </>
   );
 }

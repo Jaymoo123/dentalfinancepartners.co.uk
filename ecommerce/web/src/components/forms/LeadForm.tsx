@@ -13,8 +13,19 @@ import { focusRing } from "@/components/ui/layout-utils";
 
 const fieldClass =
   `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] ${focusRing}`;
-const labelClass = "block text-sm font-medium text-neutral-900";
-const errorClass = "mt-2 text-xs text-red-600";
+// This form is NOT always on a white card. `/research/online-seller-survival-index`
+// renders it straight onto a `.ground-dark bg-neutral-900` section, where
+// text-neutral-900 labels measured 1.00 and neutral-500 helper text 3.78. The
+// ground is an ancestor fact, exactly like --focus-ring, so each ink recipe
+// carries a `.ground-dark` variant instead of the call site passing a prop.
+// On #171717: neutral-100 16.44, neutral-300 12.09, red-300 9.45.
+const labelClass =
+  "block text-sm font-medium text-neutral-900 [.ground-dark_&]:text-neutral-100";
+const errorClass = "mt-2 text-xs text-red-600 [.ground-dark_&]:text-red-300";
+/** "(optional)" qualifier inside a label. neutral-500 is 4.74 on white, 3.78 on neutral-900. */
+const optionalClass = "font-normal text-neutral-500 [.ground-dark_&]:text-neutral-300";
+/** Secondary ink: 4.74+ on white, and lifted off 3.78 on the dark research ground. */
+const mutedClass = "text-neutral-500 [.ground-dark_&]:text-neutral-300";
 const btnClass =
   // The ground moved off --brand-primary (#c9861b, white label 3.04) onto the
   // accessible --btn-ground step (#9e6615, 4.81). The hover was opacity-90,
@@ -209,7 +220,7 @@ export function LeadForm({
         />
       </div>
 
-      <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500" aria-live="polite">
+      <p className={`text-xs font-semibold uppercase tracking-wider ${mutedClass}`} aria-live="polite">
         Step {step + 1} of 2 &middot; {step === 0 ? "About you" : "Your details"}
       </p>
 
@@ -244,7 +255,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="message" className={labelClass}>
-              Message <span className="font-normal text-neutral-500">(optional)</span>
+              Message <span className={optionalClass}>(optional)</span>
             </label>
             <textarea
               id="message"
@@ -273,7 +284,7 @@ export function LeadForm({
 
       {step === 1 && (
         <>
-          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-semibold text-neutral-900 outline-none">
+          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-semibold text-neutral-900 outline-none [.ground-dark_&]:text-neutral-100">
             Where should we send our reply?
           </h3>
 
@@ -350,7 +361,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="platforms" className={labelClass}>
-              Platforms sold on <span className="font-normal text-neutral-500">(optional)</span>
+              Platforms sold on <span className={optionalClass}>(optional)</span>
             </label>
             <input
               type="text"
@@ -368,7 +379,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="monthly_revenue_band" className={labelClass}>
-              Monthly revenue band <span className="font-normal text-neutral-500">(optional)</span>
+              Monthly revenue band <span className={optionalClass}>(optional)</span>
             </label>
             <select
               id="monthly_revenue_band"
@@ -389,7 +400,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="vat_registered" className={labelClass}>
-              VAT registered? <span className="font-normal text-neutral-500">(optional)</span>
+              VAT registered? <span className={optionalClass}>(optional)</span>
             </label>
             <select
               id="vat_registered"
@@ -409,7 +420,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="stock_location" className={labelClass}>
-              Stock location <span className="font-normal text-neutral-500">(optional)</span>
+              Stock location <span className={optionalClass}>(optional)</span>
             </label>
             <select
               id="stock_location"
@@ -430,7 +441,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="fulfilment_model" className={labelClass}>
-              Fulfilment model <span className="font-normal text-neutral-500">(optional)</span>
+              Fulfilment model <span className={optionalClass}>(optional)</span>
             </label>
             <select
               id="fulfilment_model"
@@ -453,7 +464,7 @@ export function LeadForm({
           {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
               the enquiry is the affirmative act, so this is shown as a notice, not a
               tick-box. */}
-          <p className="text-xs leading-relaxed text-neutral-600">
+          <p className="text-xs leading-relaxed text-neutral-600 [.ground-dark_&]:text-neutral-300">
             {siteConfig.leadConsentText} See our{" "}
             <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
               Privacy Policy
@@ -490,13 +501,13 @@ export function LeadForm({
             <button
               type="button"
               onClick={() => setStep(0)}
-              className="text-sm font-medium text-neutral-500 underline"
+              className={`text-sm font-medium underline ${mutedClass}`}
             >
               Back
             </button>
           </div>
 
-          <p className="text-xs leading-relaxed text-neutral-500">
+          <p className={`text-xs leading-relaxed ${mutedClass}`}>
             We respond within 24 hours and store your details securely.
           </p>
         </>

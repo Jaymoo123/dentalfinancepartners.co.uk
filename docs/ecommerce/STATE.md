@@ -7,9 +7,10 @@ brand_locked: true
 
 ## PORT PICKUP (Property design standard) - updated 2026-09-26
 
-**Phases 0 to 5 are BUILT and TAGGED (`port-ecommerce-phase0` through `-phase5`).
-Phase 6 is NOT built.** Phase 6 (about, contact, the token-gated flow, legal, error pages and the
-forms) is the last build phase, then the mop-up, two adversarial reviews and the gap-fix wave.
+**ALL SIX BUILD PHASES ARE BUILT AND TAGGED (`port-ecommerce-phase0` through `-phase6`).
+The port is NOT finished:** what remains is two independent adversarial reviews, a gap-fix wave,
+the mop-up package, the section 9.1 kit-adoption gate, and `port-ecommerce-complete` on the FINAL
+commit. Nothing has been pushed or deployed; production still serves the pre-port build.
 Git is the authority: `git tag -l 'port-ecommerce-*'`. Artefacts live in `docs/ecommerce/_port/`.
 
 Baseline: production SHA `153e5017`, 51 URLs, 707 unique internal links (floor 10), 0 dashes,
@@ -51,122 +52,124 @@ STILL OPEN, carried as owner items:
 - The formation data is five months stale (settled through April 2026). The prose is now
   stamped as at that month rather than refreshed.
 
-## START HERE: the next agent picks up at PHASE 6, the last build phase
+## START HERE: the build phases are DONE. What remains is CLOSING the port.
 
-Written 2026-09-26 at the close of phase 5. Git is the authority for what is built, this block is
-a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it disagrees.
+Written 2026-09-26 at the close of phase 6. Git is the authority: `git tag -l 'port-ecommerce-*'`
+shows phase0 through phase6. **There is no `port-ecommerce-complete` tag yet, and that is correct:
+the port is not finished.** A phase tag is not the end of a port (crypto's six tags sit on ONE
+commit and its review fixes land two commits later, so a checkout of its phase6 tag is missing
+every one of them).
 
-**Opening sequence, in this order, before planning anything:**
+**Opening sequence, before anything:**
 1. Load the `standard_terms` skill. It wins on conflict.
-2. `python scripts/port_preflight.py --site ecommerce`. It must exit 0. Ports 3000 and 3210 are
-   the OWNER'S OWN servers (Double Wired Creative and Property): do not kill them, declare them
-   with `--allow-port 3000 --allow-port 3210`. Kill anything else you did not start.
-3. Read `docs/_engines/DESIGN_PORT_PLAYBOOK.md` STOP block, then 2.1, 9.1, 13, and
-   `docs/_engines/PORT_FIELD_NOTES.md` sections 4, 5, 6, 10, 11, 12, 13.
-4. Read this site's own artefacts: `docs/ecommerce/_port/P0A_CLAIMS_LEDGER.md`,
-   `P0B_RENDERED_SWEEP.md`, `P0C_CSS_TOKEN_AUDIT.md`, `P0D_BASELINE.md`, `P0E_STRUCTURAL_INVENTORY.md`.
+2. `python scripts/port_preflight.py --site ecommerce --allow-port 3000 --allow-port 3210`. Must
+   exit 0. Ports 3000 and 3210 are the OWNER'S OWN servers; never kill those.
+3. Read `docs/_engines/DESIGN_PORT_PLAYBOOK.md` STOP block, section 4 (the review contract),
+   section 9 and 9.1 (definition of done and the kit-adoption gate).
 
-**What phase 6 is.** Ten small surfaces, about 1,900 lines, none of them complicated, and NONE of
-them imports the kit yet (`grep -c 'web-shared/design'` returns 0 on every one):
-`about` (32), `contact` (17), `book` (57), `complete` (127), `thank-you` (212),
-`privacy-policy` (245), `cookie-policy` (143), `terms` (165), `error.tsx` (56), `not-found.tsx` (18),
-plus the three form components `LeadForm.tsx` (506), `DetailsForm.tsx` (218), `BookingPicker.tsx` (176).
+**ANOTHER SESSION WAS ACTIVE IN THIS REPO on 2026-09-26.** It committed while this port's phase-5
+files were staged and its commit swallowed them under an unrelated console/database message; it
+caught that itself, reset, and recommitted cleanly (`c98d07af`), so nothing was lost. Stage and
+commit ATOMICALLY in one command, and check `git log --oneline -3` before and after.
 
-**ADOPT `SlimHero` HERE, and only here.** `packages/web-shared/design/primitives/SlimHero.tsx` was
-declined in every phase from 1 to 5, correctly, because it is not a content-page hero. Its own
-docblock says it is the shallow navy hero for exactly three pages: `/thank-you`, `/book` and
-`/complete`. Phase 6 is where it belongs. Read its host contract first: the section needs
-`relative overflow-hidden` and the content `relative z-10`, or the `HeroBrickBackdrop` texture
-paints over the copy. It takes no breadcrumb by design (all three are noindex, so a trail would be
-fiction) and it must never sit directly on the slate-900 footer, navy on navy.
+### WHAT REMAINS, in order
 
-**Three "defects" on the phase-5 browser baseline are FALSE POSITIVES. Do not fix them.** Verified
-2026-09-26 against source:
-- `label "Leave blank" ratio=1.00` is the spam honeypot at `LeadForm.tsx:201`. Its wrapper is
-  `aria-hidden` and positioned at `left: -9999px`, so the instrument is measuring an off-screen
-  element. Not rendered to anyone.
-- `label "I sell on..."` and `label "Message (optional)" ratio=1.00` are near-black
-  (`oklch(0.205 0 0)`) on a white form card, which is about 16:1. A ratio of 1.00 against near-black
-  text means the instrument failed to resolve the ground, not that the text is invisible. This is
-  the T25 class: read the instrument's self-test and its unparseable-colour count, then hand-compute.
-- The TWO REAL ones in that set are `p "Step 1 of 2 · About you"` and `span "(optional)"`, both
-  `oklch(0.556 0 0)` at **3.78** against a 4.5 floor. Those are worth fixing.
+**1. Two INDEPENDENT ADVERSARIAL REVIEWS.** Neither reviewer may have built any of it. Give each a
+RUNNING production server and tell it to review the RENDERED DOM by curl, not the source. Playbook
+section 4: "finding nothing is a failed review". Give them the KNOWN AND ACCEPTED list below so
+they do not re-litigate settled decisions. Suggested split: one on claims, figures and JSON-LD; one
+on design, contrast, chrome consistency and the kit-adoption question.
 
-**BANNED kit components, no owner conversation is available to an executing agent:**
-`StickyCTA` (an interruption, banned estate-wide), `LeadCTAPanel` (a lead-capture surface, owner
-gate), `TestimonialsSection` (hardcodes Property's quotes), `WhatToExpectCard` (its DEFAULT PROPS
-publish a fee line nobody authored), `StatsCounter` (one number, no links, deletes citations).
-Write every decline AT THE CALL SITE naming the kit FILE PATH in full.
+**2. A GAP-FIX WAVE** for what they find, then RE-REVIEW. The pilot's phase-4 re-review found a
+blocker the fix pass had introduced.
 
-**Traps that will bite specifically in phase 6:**
-- `primitives/NoticeCard.tsx` has been declined five times for having no outcome state to carry.
-  `/book`, `/complete` and `/thank-you` ARE outcome states. This is the phase where it may finally
-  fit. Check it rather than copying the decline forward.
-- `thank-you/page.tsx:20,137,151` and `BookingPicker.tsx:27,29` paint DARK ISLANDS inside light
-  sections and currently take the light focus ring. `.ground-dark` is a SECTION class and cannot
-  express an element-level island, so putting it on their parent would hand a white ring to every
-  light sibling. The recipe they need is `focusRingOnBrand`, already written and documented at
-  `src/components/ui/layout-utils.ts:64-79` and deliberately unused until now. This is what it was
-  kept for.
-- The three legal pages render through `.prose-blog`, which is defined in `globals.css` (it was
-  missing entirely before phase 0 and those pages shipped unstyled). Do not restyle them with
-  utilities that fight that class.
-- `FaqSection` has been declined SIX times, structurally: Radix accordion with no `forceMount`, so
-  closed answers are absent from server HTML while the FAQ JSON-LD asserts them. Do not re-litigate.
-- Any kit component that renders an authored string as a TEXT CHILD prints escaped markup on this
-  site. It has bitten three times now (the data files, the kit `Calculator`, and `CardStack` on the
-  homepage). Check before adopting.
-- `/thank-you` carries the site's ONLY conditional `data-cta` (`thankyou-return-article`, rendered
-  only with a `?rt=` param, so a plain fetch never sees it). It MUST survive byte-identical. It is
-  the one CTA the baseline names explicitly.
+**3. THE MOP-UP PACKAGE.** Queue below.
 
-**What is left after phase 6:** the mop-up package, two independent adversarial reviews, a gap-fix
-wave, the corrected 9.1 kit-adoption gate, then `port-ecommerce-complete` on the FINAL commit (a
-phase tag is not the end of a port: crypto's six tags sit on one commit and its review fixes land
-two commits later).
+**4. THE SECTION 9.1 KIT-ADOPTION GATE.** Run the block EXACTLY as written in the playbook, not a
+remembered one: its first edition counted comments as code on three rows and would have blocked a
+site whose every decline was correct. This is the gate that asks whether the site ADOPTED the kit
+or REIMPLEMENTED it, and it is the one crypto failed in the owner's eyes after passing every other
+gate. Report row 2 as "N distinct / M call sites" next to generalist's 16/142.
 
-**MOP-UP QUEUE, all deliberate deferrals, none urgent:**
+**5. `port-ecommerce-complete` ON THE FINAL COMMIT.** Not on a phase commit.
+
+### KNOWN AND ACCEPTED, do not re-litigate
+
+- `primitives/FaqSection.tsx` is declined SEVEN times across this site, always structurally: it is a
+  Radix accordion with no `forceMount`, so a closed answer is absent from the server HTML while the
+  page's FAQ JSON-LD asserts it. Native `<details>` is this site's answer. Revisit only if the kit
+  gains `forceMount`, which is a manager carve-out.
+- `marketing/StatsCounter.tsx`, `StickyCTA.tsx`, `LeadCTAPanel.tsx`, `TestimonialsSection.tsx`,
+  `WhatToExpectCard.tsx` are BANNED on this site. Reasons at their call sites.
+- `primitives/SlimHero.tsx` is scoped BY ITS OWN DOCBLOCK to `/thank-you`, `/book` and `/complete`.
+  It is adopted there and correctly declined everywhere else.
+- The research pages keep the navy `#1a3a5c` hero. `/about` was deliberately moved OFF navy onto
+  the brand hero in phase 6, because every other indexed content route paints the brand hero and
+  the navy is a research-only, untokenised hex.
+- The brand hex `#c9861b` is legal on borders, background tints, chart series fills, the favicon and
+  `aria-hidden` glyphs. It is never text. `#8a5e1a` (`primary-700`, `--brand-primary-text`) is the
+  text-grade step at 5.68 on white.
+- ONE contrast finding survives on the browser baseline and it is a FALSE POSITIVE, verified twice:
+  `label "Leave blank" ratio=1.00` is the spam honeypot at `LeadForm.tsx:201`, whose wrapper is
+  `aria-hidden` at `left:-9999px`. Do NOT "fix" it, do not make it visible, do not remove it.
+  **CORRECTION, and the lesson:** an earlier version of this block called the OTHER two `ratio=1.00`
+  labels false positives too. They were REAL. `LeadForm` renders BARE on the
+  `ground-dark bg-neutral-900` CTA section of `/research/online-seller-survival-index` with no white
+  card, so its neutral-900 labels were neutral-900 on neutral-900, invisible on a live page. A
+  builder refused that brief and proved it. Check the ground before calling a 1.00 an artefact.
+
+### MOP-UP QUEUE, all deliberate deferrals
+
 - `vat/page.tsx` and `vat/[slug]/page.tsx` keep a local `py-12 sm:py-16 lg:py-20` where the other
-  families use the kit `sectionY` (`md:py-20`). Not byte-identical, so it moves a breakpoint on five
-  routes.
-- The homepage light band is `#fafaf9`; the ported route families use `#fafaf7`. One of the two
-  should win.
+  families use the kit `sectionY` (`md:py-20`). Moves a breakpoint on five routes.
+- The homepage light band is `#fafaf9`; the ported route families use `#fafaf7`. One should win.
 - The homepage writes the accessible link colour as `hover:text-[var(--brand-primary-text)]` where
-  the ported routes write `text-primary-700`. Same `#8a5e1a`, zero rendered difference, ~20 strings.
-- Four `py-10 sm:py-12` accent bands on the research index left local on purpose (tighter bands).
-- `globals.css:97` declares `--brand-primary-strong` at the same failing hex as `--brand-primary`
+  ported routes write `text-primary-700`. Same `#8a5e1a`, ~20 strings, zero rendered difference.
+- Four `py-10 sm:py-12` accent bands on the research index, left local on purpose.
+- `globals.css:97` declares `--brand-primary-strong` at the same failing hex as `--brand-primary`,
   with ZERO consumers under `src`. An undocumented second alias and a trap for the next port.
 - `FormationSeasonalityChart.tsx` has an identical trough and default branch
   (`isTrough ? NAVY : NAVY`); the encoding is carried entirely by `fillOpacity`.
-- Both charts' 12 monthly values are unreachable as text under `role="img"`. Carried from phase 1;
-  fixing it needs new markup or authored copy.
+- Both charts' 12 monthly values are unreachable as text under `role="img"`. Carried from phase 1.
+- `layout-utils.ts:64-79` documents `focusRingOnBrand` as the recipe for `BookingPicker.tsx:27`.
+  Phase 6 REMOVED it from there (it painted a white ring on the white grid ground at 1.00, because
+  `outline-offset-2` puts the ring outside the chip). The recipe now has zero call sites and its
+  docblock names one that no longer exists. Correct the docblock or delete the recipe.
+- `BookingPicker`'s two chip grids are `aria-pressed` toggles with no group name. A `role="group"`
+  plus `aria-labelledby` pointing at the existing step paragraphs would help; it needs ids on copy
+  elements, so it was judged outside "clearly safe" for the lead path.
+- `DetailsForm` fields carry no `required` attribute although every rendered field is mandatory and
+  validated. Adding it changes validation behaviour, so it was reported not changed.
 
-**OPEN OWNER ITEMS, carried, none blocking:**
-- `packages/web-shared/tools/components/Calculator.tsx:131` paints its verdict badge white on the
-  brand hex at **3.04**. At `text-xl` bold that is large text, so it scrapes AA-large (3.0) by 0.04
-  and is a pass, not a failure. Fix shape: `bg-[var(--brand-primary-ground,var(--brand-primary))]`,
-  which resolves to `#9e6615` (4.81) on the five sites declaring that token and is byte-identical
-  everywhere else. Reaches 17 sites, four live.
-- The kit `Calculator` result panel is `bg-slate-900` while this site's dark bands are
-  `neutral-800`/`neutral-900`, so two near-identical greys sit on one page. Cosmetic, 19 sites.
-- The kit renders `tool.name` as an `h3` and phase 4 added the route `h1`, so the calculator pages
-  run h1 to h3 with no h2 until the FAQ. A heading-level prop is a 19-site change.
-- **CLAIMS ITEM, fix this one first:** `research/online-seller-index` renders BOTH 50,699 (the 2021
-  `everRegistered` cell) and 50,772 (the lockdown-cohort callout). The reconciling note lives at
-  `src/data/online-seller-index.json:222` (`cohortNote.note`) and **renders on no surface**, and it
-  is not in the CSV either. So "disclosed in the data note" is not currently true for a reader.
-- The Index page's CSV link reads "the quarterly churn **and seasonality** data (CSV)" but
-  `data/route.ts` serves quarterly churn only. Rewording it is dropping a claim, so it was left.
-- The research navy `#1a3a5c` has no declared token (51 occurrences monorepo-side). Tokenising it is
-  one `globals.css` line plus a three-file sweep.
-- Chart series separate on colour alone at only **1.38** (amber vs the composited navy at 0.4
-  opacity). Mitigated redundantly by line style, point radius and legend. Raising the all-industries
-  opacity to 1.0 gives 3.83 with no change to which series is which.
-- "Within one working day" (homepage) and "within 24 hours" (28 pages) remain estate-central and
-  byte-identical to Property's. Estate-wide ruling still needed.
+### OPEN OWNER ITEMS, bundle these, none blocking
 
-**The gates, every phase, substituting your own port:**
-G0 `python scripts/port_preflight.py --site ecommerce` (declare 3000 and 3210)
+1. **CLAIMS, do this one first.** `research/online-seller-index` renders BOTH 50,699 (the 2021
+   `everRegistered` cell) and 50,772 (the lockdown-cohort callout). They are legitimately different
+   measurements. The reconciling note lives at `src/data/online-seller-index.json:222`
+   (`cohortNote.note`) and **renders on no surface**, and is not in the CSV either. So "disclosed in
+   the data note" is NOT currently true for a reader.
+2. That page's CSV link reads "the quarterly churn **and seasonality** data (CSV)" but
+   `data/route.ts` serves quarterly churn only. Rewording it is dropping a claim, so it was left.
+3. `packages/web-shared/tools/components/Calculator.tsx:131` paints its verdict badge white on the
+   brand hex at **3.04**. At `text-xl` bold that is large text, so it scrapes AA-large (3.0) by 0.04
+   and is a pass, not a failure. Fix shape: `bg-[var(--brand-primary-ground,var(--brand-primary))]`,
+   resolving to `#9e6615` (4.81) on the five sites that declare that token, byte-identical
+   elsewhere. Reaches 17 sites, four live.
+4. The kit `Calculator` result panel is `bg-slate-900` while this site's dark bands are
+   `neutral-800`/`neutral-900`: two near-identical greys on one page. Cosmetic, 19 sites.
+5. The kit renders `tool.name` as an `h3` and phase 4 added the route `h1`, so calculator pages run
+   h1 to h3 with no h2 until the FAQ. A heading-level prop is a 19-site change.
+6. The research navy `#1a3a5c` has no declared token (51 occurrences monorepo-side). Tokenising it
+   is one `globals.css` line plus a sweep.
+7. Chart series separate on colour alone at **1.38** (amber vs the composited navy at 0.4 opacity),
+   mitigated redundantly by line style, point radius and legend. Raising the all-industries opacity
+   to 1.0 gives 3.83 with no change to which series is which.
+8. "We reply within 24 hours" on `/contact` (metaDescription AND body) and in `LeadForm.tsx` twice,
+   plus "within one working day" on the homepage. Estate-central and byte-identical to Property's.
+   Estate-wide ruling still needed; every builder was told to report and not remove these.
+
+### THE GATES
+G0 `python scripts/port_preflight.py --site ecommerce --allow-port 3000 --allow-port 3210`
 G1 `npm run lint --workspace=ecommerce/web`
 G2 `npm run build --workspace=ecommerce/web` (the MANAGER runs the only build; agents never build)
 G3 `python scripts/check_dependency_closure.py`
@@ -174,14 +177,63 @@ G4 `python scripts/predeploy_gate.py --site ecommerce`
 G5 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/sweep.mjs --site=ecommerce --base=http://localhost:<port> --article-depth=3 --sample=9999 --sha=<sha> --out=<path>`
 G6 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/browser_check.mjs --site=ecommerce --base=... --article-depth=3 --sample=9999 --out=<path>` (slow, roughly fifteen minutes, looks dead while working: watch for the OUTPUT FILE, never start a second one)
 G7 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/cta_snapshot.mjs --site=ecommerce --base=... --baseline=docs/ecommerce/_port/sweep_baseline.json --out=<path>`
+G8 **BY HAND, the crawl cannot do it:** `curl -s 'http://localhost:<port>/thank-you?rt=%2Fblog' | grep -o 'data-cta[^ >]*="[^"]*"'` must show `thankyou-return-article` and `thank_you`, and the same URL WITHOUT `?rt=` must show neither. It is the site's only conditional CTA and no crawl sees it.
 G9 `npm test --workspace=ecommerce/web` FROM THE MONOREPO ROOT; the workspace flag does not work
 from inside `ecommerce/web`.
 
-Note on G9 and the kit: `npm test --workspace=packages/web-shared` and `npx tsc` run from inside
-`packages/web-shared` are both blocked by the sandbox in this environment. The kit compiles through
-the consuming site's build and typecheck, which is what verified the phase-4 and phase-5 kit
-changes. If a future kit edit needs the kit's own suite, ask the owner to allow it rather than
-skipping it.
+Note: `npm test --workspace=packages/web-shared` and `npx tsc` run from INSIDE
+`packages/web-shared` are both blocked by the sandbox here. Kit changes were verified through the
+consuming site's build and typecheck. If a kit edit needs the kit's own suite, ask the owner to
+allow it rather than skipping it.
+
+## PHASE 6 (about, contact, the token-gated flow, legal, error pages and the forms) - built 2026-09-26
+
+The last build phase. Three disjoint packages over roughly 1,900 lines, none of which imported the
+kit before.
+
+**`SlimHero` adopted at last, and only where it belongs.** It was declined in phases 1 to 5,
+correctly: its own docblock scopes it to `/thank-you`, `/book` and `/complete`. `NoticeCard`, also
+declined five times for having no outcome state to carry, fits those same pages and was adopted on
+four call sites. Neither needed modifying.
+
+**INVISIBLE TEXT ON A LIVE PAGE, and the brief got it wrong.** The phase-5 baseline reported three
+labels at `ratio=1.00`. The manager called all three instrument artefacts. A builder disagreed with
+evidence: `LeadForm` renders BARE on the `ground-dark bg-neutral-900` CTA section of
+`/research/online-seller-survival-index`, with no white card, so `text-neutral-900` labels sat on a
+neutral-900 ground. Genuinely invisible, on the form that captures leads. Fixed with
+`[.ground-dark_&]:text-*` variants so the component adapts to the ground it is dropped on, which
+leaves every light host byte-identical. The sweep went beyond the two rows handed over: the step
+indicator, all SIX "(optional)" spans, the error text, the consent paragraph, the Back button and
+the step-2 heading were all lifted the same way (1.00 to 16.44, 3.78 to 12.09, 3.71 to 9.45).
+
+**`focusRingOnBrand` was wired up and WRONG.** It had been applied to `BookingPicker`'s selected
+chip since phase 1. Every ring recipe carries `outline-offset-2`, so the outline paints two pixels
+OUTSIDE the chip on the grid ground, which both hosts paint white: the on-brand white ring measured
+**1.00 on white**. Removed; both states now use `focusRing`, which inherits and rebinds under
+`.ground-dark`.
+
+**Phase 0's link colour was being defeated on every legal page.** All 13 inline links on
+privacy-policy, cookie-policy and terms carried `text-orange-700` Tailwind UTILITIES, which outrank
+the `.prose-blog a` rule in `@layer components`. Dropping the utilities lets the layered rule paint.
+`.prose-blog` itself needed no change. Legal copy proven byte-identical by md5 on all three pages.
+
+Also: `/about` moved off the research navy onto the brand hero (every other indexed content route
+paints it; the navy is research-only and untokenised), the contact shell moved to the standard
+narrow container, and `error.tsx` kept `"use client"` and its `reset` affordance while gaining a
+focus ring it never had.
+
+Accessibility beyond colour: `aria-describedby` and ids wired to the DetailsForm field errors,
+`role="alert"` on two silent submit-failure paragraphs. Field names, the honeypot, validation,
+payload shape and the API endpoint were not touched: they are the lead schema feeding Supabase, the
+email notification and the Sheets sync.
+
+Gates at close: lint 0 errors (2 pre-existing warnings), build green, dependency closure OK across
+19 sites, predeploy gate PASS, sweep 51/51 clean with 0 dead links, 0 link-floor breaches, 0 dash
+and 0 CTA regressions, CTA snapshot identical to baseline, the conditional `?rt=` CTA verified BY
+HAND (present with the param, absent without, attributes unchanged), tests 45/45, browser check
+self-test OK with 204 page-loads and **0 new problems**. Distinct contrast findings fell from 5 to
+**1**, and that one is the honeypot false positive.
+
 
 ## PHASE 5 (homepage and the two research studies) - built 2026-09-26
 

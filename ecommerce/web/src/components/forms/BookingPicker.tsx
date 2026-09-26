@@ -13,15 +13,20 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { btnPrimary, focusRing, focusRingOnBrand } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
 // ponytail: neutral/amber chips, border uses the brand CSS var so it adapts if tokens shift
-// Ring is picked per state below (focusRing on chipIdle's white ground,
-// focusRingOnBrand on chipSelected's neutral-900 ground): a section class
-// can't express a ring that toggles with the same element's own background.
+// ONE ring for both states, `focusRing`. The earlier reasoning (white ring on
+// the selected chip's neutral-900 ground) reads the wrong ground: every recipe
+// carries `outline-offset-2`, so the outline paints two pixels OUTSIDE the
+// chip, on the grid's ground, never on the chip. Both hosts paint that ground
+// white (`/book` `bg-white`, `/thank-you` a `bg-white` card), where
+// --focus-ring-on-brand is #ffffff and measured 1.00. --focus-ring is
+// #8a5e1a there (5.68) and `.ground-dark` rebinds it if a host ever goes dark,
+// so the inherited token already does what a per-state pick was trying to do.
 const chipBase =
   "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150";
 const chipIdle =
@@ -125,7 +130,7 @@ export default function BookingPicker({ token }: { token: string }) {
             type="button"
             onClick={() => setDate(d.iso)}
             aria-pressed={date === d.iso}
-            className={`${chipBase} ${date === d.iso ? `${chipSelected} ${focusRingOnBrand}` : `${chipIdle} ${focusRing}`}`}
+            className={`${chipBase} ${focusRing} ${date === d.iso ? chipSelected : chipIdle}`}
           >
             <span className="text-xs font-semibold opacity-80">{d.weekday}</span>
             <span>
@@ -145,7 +150,7 @@ export default function BookingPicker({ token }: { token: string }) {
             type="button"
             onClick={() => setWindowKey(w.key)}
             aria-pressed={windowKey === w.key}
-            className={`${chipBase} ${windowKey === w.key ? `${chipSelected} ${focusRingOnBrand}` : `${chipIdle} ${focusRing}`}`}
+            className={`${chipBase} ${focusRing} ${windowKey === w.key ? chipSelected : chipIdle}`}
           >
             <span>{w.label}</span>
             <span className="text-xs font-semibold opacity-80">{w.hours}</span>
@@ -163,7 +168,7 @@ export default function BookingPicker({ token }: { token: string }) {
           {status === "submitting" ? "Booking your callback..." : "Book my free review call"}
         </button>
         {status === "error" && (
-          <p className="mt-3 text-sm font-semibold text-red-700">
+          <p role="alert" className="mt-3 text-sm font-semibold text-red-700">
             Something went wrong saving your slot. Please try again.
           </p>
         )}

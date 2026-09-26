@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY, focusRing } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * CHROME ONLY. The legal copy on this page is not reworded, reordered or
+ * restructured by the port; the body renders through `.prose-blog`, which is
+ * defined in src/app/globals.css inside `@layer components` (it was missing
+ * from every stylesheet this site loads until phase 0, so this page shipped
+ * unstyled in production). Nothing here fights that class.
+ *
+ * The only change: every inline link carried
+ * `text-orange-700 underline underline-offset-2 hover:text-orange-800`, a raw
+ * Tailwind orange that is not this site's brand ramp and, being a utility,
+ * OUTRANKED the `.prose-blog a` colour that phase 0 deliberately set to the
+ * accessible brand step. Dropping the colour utilities lets `.prose-blog a`
+ * paint: `var(--brand-primary-text)` = #8a5e1a, 5.68 on white, hovering to
+ * primary-800 #6f4b15 at 7.80. It also supplies the underline and offset, so
+ * nothing is lost. `focusRing` is added because not one of these links had a
+ * focus ring: the ring reads `var(--focus-ring)`, the light-ground value here
+ * (this page paints no dark ground and carries no `.ground-dark`).
+ *
+ * No breadcrumb and no hero: this is a flat single-level legal page reached
+ * from the footer, matching its two siblings.
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx (its
+ * docblock scopes it to /thank-you, /book and /complete),
+ * packages/web-shared/design/primitives/FaqSection.tsx (a Radix accordion with
+ * no forceMount; it would also collapse legal text a reader must be able to
+ * find with ctrl-F) and
+ * packages/web-shared/design/marketing/LeadCTAPanel.tsx,
+ * marketing/StickyCTA.tsx, marketing/TestimonialsSection.tsx,
+ * marketing/WhatToExpectCard.tsx and marketing/StatsCounter.tsx (banned for
+ * this port; a lead-capture surface on a legal page is also wrong on its own
+ * terms).
+ */
 export default function CookiePolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
@@ -86,7 +117,7 @@ export default function CookiePolicyPage() {
               href="https://support.google.com/chrome/answer/95647"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-700 underline underline-offset-2 hover:text-orange-800"
+              className={focusRing}
             >
               Google Chrome
             </a>
@@ -96,7 +127,7 @@ export default function CookiePolicyPage() {
               href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-700 underline underline-offset-2 hover:text-orange-800"
+              className={focusRing}
             >
               Mozilla Firefox
             </a>
@@ -106,7 +137,7 @@ export default function CookiePolicyPage() {
               href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-700 underline underline-offset-2 hover:text-orange-800"
+              className={focusRing}
             >
               Safari
             </a>
@@ -116,7 +147,7 @@ export default function CookiePolicyPage() {
               href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-700 underline underline-offset-2 hover:text-orange-800"
+              className={focusRing}
             >
               Microsoft Edge
             </a>
@@ -132,7 +163,7 @@ export default function CookiePolicyPage() {
         <h2>5. Contact us</h2>
         <p>
           If you have questions about our use of cookies, please contact us via our{" "}
-          <Link href="/contact" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">
+          <Link href="/contact" className={focusRing}>
             contact page
           </Link>
           .
