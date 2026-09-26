@@ -222,7 +222,9 @@ export default async function EstatePage() {
     { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={sumEstateFunnel(startOfTodayUTC.getTime())} /> },
     { key: "d7", label: "Weekly", meta: "Last 7 days", node: <ConversionFunnel totals={sumEstateFunnel(estFrom7.getTime())} /> },
     { key: "d30", label: "Monthly", meta: "Last 30 days", node: <ConversionFunnel totals={sumEstateFunnel(estFrom30.getTime())} /> },
-    { key: "all", label: "All time", meta: "All time", node: <ConversionFunnel totals={sumEstateFunnel(estAllFrom.getTime())} /> },
+    // Funnel rows are bounded to a rolling 90 days (20260926000001); the KPI
+    // carousel above is genuinely all-time because it reads estate_kpis.
+    { key: "all", label: "90 days", meta: "Last 90 days", node: <ConversionFunnel totals={sumEstateFunnel(estAllFrom.getTime())} /> },
   ];
 
   // Weekly average daily visitors, all-time (estate total).
@@ -344,7 +346,7 @@ export default async function EstatePage() {
         {/* Channel comparison */}
         <h2 className="mt-10 text-lg font-bold text-slate-900">Best-converting channel per site</h2>
         <p className="mt-1 text-xs text-slate-500">
-          Highest-converting channel for each site (all-time from vw_channel_conversion_geo).
+          Highest-converting channel for each site (last 90 days).
         </p>
         <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">

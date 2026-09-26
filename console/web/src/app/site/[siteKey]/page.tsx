@@ -259,7 +259,7 @@ function CalculatorsPanel({ placement }: { placement: CalculatorConversionPlacem
   const rows = [...placement].sort((a, b) => b.viewed - a.viewed);
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">Calculators</h2>
+      <h2 className="text-lg font-bold text-slate-900">Calculators (last 90 days)</h2>
       {rows.length === 0 ? (
         <p className="mt-3 text-sm text-slate-400">No calculator data yet.</p>
       ) : (
@@ -302,7 +302,7 @@ function ErrorsPanel({ errors }: { errors: ClientError[] }) {
   const top = errors.slice(0, 10);
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">JS errors</h2>
+      <h2 className="text-lg font-bold text-slate-900">JS errors (last 90 days)</h2>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -339,7 +339,7 @@ function CtaPanel({ rows }: { rows: CtaPerformance[] }) {
   const formCtas = rows.filter((c) => c.goal === "form").sort((a, b) => b.clicks - a.clicks);
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">CTA performance</h2>
+      <h2 className="text-lg font-bold text-slate-900">CTA performance (last 90 days)</h2>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -373,7 +373,7 @@ function CtaPanel({ rows }: { rows: CtaPerformance[] }) {
 function FormDropoffPanel({ rows }: { rows: FormFieldDropoff[] }) {
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">Form-field drop-off</h2>
+      <h2 className="text-lg font-bold text-slate-900">Form-field drop-off (last 90 days)</h2>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -413,7 +413,7 @@ function ContentPanel({ rows }: { rows: SectionAction[] }) {
   const top = rows.slice(0, 10);
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">Content engagement</h2>
+      <h2 className="text-lg font-bold text-slate-900">Content engagement (last 90 days)</h2>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -466,7 +466,7 @@ function ChannelPanel({ rows }: { rows: ChannelConversion[] }) {
     .sort((a, b) => b.sessions - a.sessions);
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">Acquisition by channel</h2>
+      <h2 className="text-lg font-bold text-slate-900">Acquisition by channel (last 90 days)</h2>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -500,7 +500,7 @@ function ChannelPanel({ rows }: { rows: ChannelConversion[] }) {
 function VisitsConvPanel({ rows }: { rows: VisitsBucket[] }) {
   return (
     <div>
-      <h2 className="text-lg font-bold text-slate-900">Visits to conversion</h2>
+      <h2 className="text-lg font-bold text-slate-900">Visits to conversion (last 90 days)</h2>
       <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table className="w-full text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wider text-slate-500">
@@ -1216,7 +1216,9 @@ export default async function SitePage({
     { key: "today", label: "Daily", meta: "Today (since 00:00 UTC)", node: <ConversionFunnel totals={sumFunnel(startOfTodayUTC.getTime())} /> },
     { key: "d7", label: "Weekly", meta: "Last 7 days", node: <ConversionFunnel totals={sumFunnel(from7.getTime())} /> },
     { key: "d30", label: "Monthly", meta: "Last 30 days", node: <ConversionFunnel totals={sumFunnel(from30.getTime())} /> },
-    { key: "all", label: "All time", meta: "All time", node: <ConversionFunnel totals={sumFunnel(allTimeFrom.getTime())} /> },
+    // The funnel view is bounded to a rolling 90 days (20260926000001), so this
+    // page is the widest window available here, not all-time.
+    { key: "all", label: "90 days", meta: "Last 90 days", node: <ConversionFunnel totals={sumFunnel(allTimeFrom.getTime())} /> },
   ];
 
   const visitorRows: VisitorRow[] = visitors.map((v) => {
@@ -1504,8 +1506,8 @@ export default async function SitePage({
         <h2 className="text-lg font-bold text-slate-900">Errors and friction</h2>
         <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
           <SnapshotCard label="JS errors / day" value={String(errorsSeries[errorsSeries.length - 1] ?? 0)} series={errorsSeries} delta={deltaVsPrior(errorsSeries)} invertDelta accent="rose" status={(errorsSeries[errorsSeries.length - 1] ?? 0) > 0 ? "warn" : "ok"} />
-          <Kpi label="Rage clicks" value={String(uxTotals.rage)} />
-          <Kpi label="Dead clicks" value={String(uxTotals.dead)} />
+          <Kpi label="Rage clicks (last 90 days)" value={String(uxTotals.rage)} />
+          <Kpi label="Dead clicks (last 90 days)" value={String(uxTotals.dead)} />
         </div>
         <div className="mt-3 grid gap-3 lg:grid-cols-[1fr_16rem] lg:items-start">
           <ErrorsPanel errors={clientErrors} />
