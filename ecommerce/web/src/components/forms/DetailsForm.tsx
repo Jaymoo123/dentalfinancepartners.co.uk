@@ -207,7 +207,7 @@ export default function DetailsForm({
           href="/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-[var(--brand-primary)] underline"
+          className="font-semibold text-[var(--brand-primary-text)] underline"
         >
           Privacy Policy
         </a>

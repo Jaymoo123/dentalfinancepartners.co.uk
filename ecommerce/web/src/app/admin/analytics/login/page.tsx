@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CONSOLE_NOINDEX_META } from "@accounting-network/web-shared/console/consoleAuth";
+import { focusRing } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = CONSOLE_NOINDEX_META;
 
@@ -36,7 +37,7 @@ export default async function LoginPage({
               type="password"
               autoComplete="current-password"
               required
-              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-cyan-700 focus:outline-none"
+              className={`mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-cyan-700 ${focusRing}`}
               placeholder="Enter key..."
             />
           </div>

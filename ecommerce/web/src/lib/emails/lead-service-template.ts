@@ -35,14 +35,14 @@ export function renderLeadServiceEmail(e: LeadServiceEmail): { html: string; tex
     .join("\n");
 
   const ctaHtml = e.cta
-    ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 22px 0;"><tr><td style="border-radius:6px;background-color:#c9861b;">
-<a href="${e.cta.href}" style="display:inline-block;font-family:${FONT};font-size:16px;font-weight:700;color:#ffffff;text-decoration:none;padding:12px 22px;border-radius:6px;background-color:#c9861b;">${esc(e.cta.label)}</a>
+    ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 22px 0;"><tr><td style="border-radius:6px;background-color:#9e6615;">
+<a href="${e.cta.href}" style="display:inline-block;font-family:${FONT};font-size:16px;font-weight:700;color:#ffffff;text-decoration:none;padding:12px 22px;border-radius:6px;background-color:#9e6615;">${esc(e.cta.label)}</a>
 </td></tr></table>
 `
     : "";
 
   const secondaryHtml = e.secondary
-    ? `<p style="margin:0 0 16px 0;font-size:14px;">Or ${esc(e.secondary.label)}: <a href="${e.secondary.href}" style="color:#c9861b;">confirm here</a>.</p>
+    ? `<p style="margin:0 0 16px 0;font-size:14px;">Or ${esc(e.secondary.label)}: <a href="${e.secondary.href}" style="color:#8a5e1a;">confirm here</a>.</p>
 `
     : "";
 
@@ -74,7 +74,7 @@ ${ctaHtml}${secondaryHtml}<p style="margin:0 0 8px 0;">${esc(e.signoff)}</p>
 <tr>
 <td style="border-left:3px solid #c9861b;padding:2px 0 2px 14px;font-family:${FONT};">
 <div style="font-size:16px;font-weight:600;color:#0f172a;line-height:1.5;">The team at Ecommerce Finance</div>
-<div style="font-size:14px;font-weight:600;color:#c9861b;line-height:1.5;">Ecommerce Finance</div>
+<div style="font-size:14px;font-weight:600;color:#8a5e1a;line-height:1.5;">Ecommerce Finance</div>
 <div style="font-size:13px;color:#64748b;line-height:1.6;"><a href="https://www.ecommercefinance.co.uk" style="color:#64748b;text-decoration:none;">ecommercefinance.co.uk</a></div>
 </td>
 </tr>

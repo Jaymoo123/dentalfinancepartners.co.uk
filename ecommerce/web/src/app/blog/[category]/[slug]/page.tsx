@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mt-6 space-y-4">
             {post.faqs.map((faq) => (
               <details key={faq.question} className="group border border-neutral-200">
-                <summary className="flex cursor-pointer items-center justify-between gap-4 px-4 py-4 font-semibold text-neutral-900 hover:text-[#c9861b] list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 px-4 py-4 font-semibold text-neutral-900 hover:text-[var(--brand-primary-text)] list-none">
                   <span>{faq.question}</span>
                   <span className="text-[#c9861b] transition-transform group-open:rotate-45" aria-hidden>
                     <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>

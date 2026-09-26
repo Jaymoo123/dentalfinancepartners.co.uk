@@ -9,13 +9,20 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
+import { focusRing } from "@/components/ui/layout-utils";
 
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] focus:outline-none";
+  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] ${focusRing}`;
 const labelClass = "block text-sm font-medium text-neutral-900";
 const errorClass = "mt-2 text-xs text-red-600";
 const btnClass =
-  "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[var(--brand-primary)] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50";
+  // The ground moved off --brand-primary (#c9861b, white label 3.04) onto the
+  // accessible --btn-ground step (#9e6615, 4.81). The hover was opacity-90,
+  // which blends the label with the ground and lands at 4.00 on white; the
+  // --btn-ground-hover step (#8a5e1a) is 5.68 opaque instead.
+  // Not the shared `btnPrimary`: that recipe has no `w-full`, and widening or
+  // narrowing this form button is a layout change this pass must not make.
+  `inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[var(--btn-ground)] px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[var(--btn-ground-hover)] disabled:opacity-50 ${focusRing}`;
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 

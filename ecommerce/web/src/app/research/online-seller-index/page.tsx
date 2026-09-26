@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import { buildFaqPage } from "@accounting-network/web-shared/schema";
 import { FormationSeasonalityChart } from "@/components/research/FormationSeasonalityChart";
@@ -206,7 +206,7 @@ export default function OnlineSellerIndexPage() {
       <section className="bg-[#1a3a5c]/5 border-t border-b border-[#1a3a5c]/20 py-10 sm:py-12">
         <div className={siteContainerLg}>
           <div className="max-w-2xl">
-            <div className="text-sm font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+            <div className="text-sm font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
               Lockdown boom cohort
             </div>
             <p className="text-2xl font-bold text-neutral-900 mb-3">
@@ -458,7 +458,7 @@ export default function OnlineSellerIndexPage() {
           </p>
           <div className="grid gap-6 sm:grid-cols-2 max-w-2xl">
             <div className="border border-neutral-200 p-5">
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 SIC 47990
               </div>
               <div className="font-semibold text-neutral-900 mb-1">
@@ -480,7 +480,7 @@ export default function OnlineSellerIndexPage() {
               </div>
             </div>
             <div className="border border-neutral-200 p-5">
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 SIC 46900
               </div>
               <div className="font-semibold text-neutral-900 mb-1">
@@ -630,7 +630,7 @@ export default function OnlineSellerIndexPage() {
               href="/for/amazon-sellers"
               className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
             >
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
               <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
@@ -645,7 +645,7 @@ export default function OnlineSellerIndexPage() {
               href="/for/shopify-sellers"
               className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
             >
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
               <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
@@ -660,7 +660,7 @@ export default function OnlineSellerIndexPage() {
               href="/for/marketplace-sellers"
               className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
             >
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
               <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
@@ -675,7 +675,7 @@ export default function OnlineSellerIndexPage() {
               href="/for/dropshippers"
               className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
             >
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
               <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
@@ -693,7 +693,7 @@ export default function OnlineSellerIndexPage() {
               href="/services/ecommerce-vat-compliance"
               className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
             >
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Service
               </div>
               <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
@@ -709,7 +709,7 @@ export default function OnlineSellerIndexPage() {
               href="/services/settlement-payout-reconciliation"
               className="group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors"
             >
-              <div className="text-xs font-semibold text-[#c9861b] uppercase tracking-wider mb-2">
+              <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Service
               </div>
               <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
@@ -964,7 +964,7 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/calculators/seller-take-home-calculator"
-              className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
             >
               Seller take-home calculator
             </Link>

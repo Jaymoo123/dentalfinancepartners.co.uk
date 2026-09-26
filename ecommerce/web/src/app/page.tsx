@@ -31,7 +31,7 @@ const taxMoments = [
         The{" "}
         <a
           href="https://www.gov.uk/vat-registration"
-          className="underline underline-offset-2 hover:text-[#c9861b]"
+          className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
         >
           £90,000 VAT registration threshold is measured on gross taxable sales
         </a>
@@ -39,7 +39,7 @@ const taxMoments = [
         balance against the threshold will breach it without realising. There is also a forward-look
         test: registration is required if turnover is expected to exceed £90,000 in the next 30 days
         alone. This is the most common late-registration trap for marketplace sellers.{" "}
-        <Link href="/services/ecommerce-vat-compliance" className="font-semibold text-[#c9861b] hover:underline">
+        <Link href="/services/ecommerce-vat-compliance" className="font-semibold text-[var(--brand-primary-text)] hover:underline">
           VAT compliance service &rarr;
         </Link>
       </>
@@ -52,14 +52,14 @@ const taxMoments = [
         Where a seller is not established in the UK,{" "}
         <a
           href="https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces"
-          className="underline underline-offset-2 hover:text-[#c9861b]"
+          className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
         >
           the marketplace is the deemed supplier and accounts for UK VAT
         </a>{" "}
         on those sales. UK-established sellers are outside that mechanism and remain liable
         themselves. Establishment status is the single most consequential VAT fact for any
         marketplace seller. HMRC actively challenges weak establishment claims.{" "}
-        <Link href="/vat/deemed-supplier-establishment" className="font-semibold text-[#c9861b] hover:underline">
+        <Link href="/vat/deemed-supplier-establishment" className="font-semibold text-[var(--brand-primary-text)] hover:underline">
           Deemed-supplier guide &rarr;
         </Link>
       </>
@@ -73,14 +73,14 @@ const taxMoments = [
         under{" "}
         <a
           href="https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a"
-          className="underline underline-offset-2 hover:text-[#c9861b]"
+          className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
         >
           Notice 741A
         </a>
         . You self-account for the VAT, and crucially that reverse-charge value counts toward the
         £90,000 registration threshold. A sub-threshold seller buying large volumes of overseas
         platform and ad fees can tip over the threshold faster than gross sales alone would suggest.{" "}
-        <Link href="/vat/vat-on-marketplace-fees" className="font-semibold text-[#c9861b] hover:underline">
+        <Link href="/vat/vat-on-marketplace-fees" className="font-semibold text-[var(--brand-primary-text)] hover:underline">
           Fees VAT guide &rarr;
         </Link>
       </>
@@ -93,7 +93,7 @@ const taxMoments = [
         From 1 January 2024,{" "}
         <a
           href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms"
-          className="underline underline-offset-2 hover:text-[#c9861b]"
+          className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
         >
           digital platforms must report seller income to HMRC under the OECD model rules
         </a>
@@ -101,7 +101,7 @@ const taxMoments = [
         and approximately £1,700 in the period) determines whether the platform reports you. It is
         not a tax-free threshold. Tax follows trading status. Ignoring an HMRC nudge letter is not a
         strategy.{" "}
-        <Link href="/services/hmrc-letter-online-sales" className="font-semibold text-[#c9861b] hover:underline">
+        <Link href="/services/hmrc-letter-online-sales" className="font-semibold text-[var(--brand-primary-text)] hover:underline">
           HMRC letter service &rarr;
         </Link>
       </>
@@ -116,7 +116,7 @@ const taxMoments = [
         single net figure. Bookkeeping built from bank deposits misstates revenue, understates
         expenses and produces a VAT return that does not reconcile to actual sales. Shopify payouts
         add multiple gateways each settling on different cycles.{" "}
-        <Link href="/services/settlement-payout-reconciliation" className="font-semibold text-[#c9861b] hover:underline">
+        <Link href="/services/settlement-payout-reconciliation" className="font-semibold text-[var(--brand-primary-text)] hover:underline">
           Reconciliation service &rarr;
         </Link>
       </>
@@ -130,7 +130,7 @@ const taxMoments = [
         quarterly updates from{" "}
         <a
           href="https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax"
-          className="underline underline-offset-2 hover:text-[#c9861b]"
+          className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
         >
           6 April 2026
         </a>
@@ -138,7 +138,7 @@ const taxMoments = [
         sole-trader seller cohort is hit first. For generic MTD mechanics and registration see{" "}
         <a
           href="https://hollowaydavies.co.uk"
-          className="underline underline-offset-2 hover:text-[#c9861b]"
+          className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
           rel="noopener"
         >
           hollowaydavies.co.uk
@@ -252,7 +252,7 @@ export default function HomePage() {
             cannot credibly cover: the{" "}
             <a
               href="https://www.gov.uk/vat-registration"
-              className="underline underline-offset-2 hover:text-[#c9861b]"
+              className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
             >
               gross-sales VAT threshold
             </a>{" "}
@@ -261,7 +261,7 @@ export default function HomePage() {
             that turns platform reports into accurate accounts. For general ecommerce accounting see{" "}
             <a
               href="https://hollowaydavies.co.uk"
-              className="underline underline-offset-2 hover:text-[#c9861b]"
+              className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
               rel="noopener"
             >
               hollowaydavies.co.uk
@@ -289,7 +289,7 @@ export default function HomePage() {
                 href={`/for/${hub.slug}`}
                 className={`group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-[#c9861b] hover:shadow-md ${focusRing}`}
               >
-                <span className="text-base font-bold text-neutral-900 group-hover:text-[#c9861b] transition-colors">
+                <span className="text-base font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
                   {hub.title}
                 </span>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500 line-clamp-2">
@@ -315,13 +315,13 @@ export default function HomePage() {
                 href={`/services/${service.slug}`}
                 className={`group block border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-[#c9861b] hover:shadow-md ${focusRing}`}
               >
-                <h3 className="text-base font-bold text-neutral-900 group-hover:text-[#c9861b] transition-colors">
+                <h3 className="text-base font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
                   {service.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500 line-clamp-2">
                   {service.headline}
                 </p>
-                <div className="mt-4 flex items-center text-[#c9861b] font-semibold text-sm">
+                <div className="mt-4 flex items-center text-[var(--brand-primary-text)] font-semibold text-sm">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -364,7 +364,7 @@ export default function HomePage() {
                   <td className="px-4 py-3 text-neutral-600">
                     <a
                       href="https://www.gov.uk/vat-registration"
-                      className="underline underline-offset-2 hover:text-[#c9861b]"
+                      className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
                     >
                       £90,000 gross sales (rolling 12 months)
                     </a>
@@ -376,7 +376,7 @@ export default function HomePage() {
                   <td className="px-4 py-3 text-neutral-600">
                     <a
                       href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms"
-                      className="underline underline-offset-2 hover:text-[#c9861b]"
+                      className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
                     >
                       From 1 January 2024, first reports January 2025
                     </a>
@@ -390,7 +390,7 @@ export default function HomePage() {
                   <td className="px-4 py-3 text-neutral-600">
                     <a
                       href="https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax"
-                      className="underline underline-offset-2 hover:text-[#c9861b]"
+                      className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
                     >
                       £50,000 from 6 April 2026
                     </a>
@@ -426,14 +426,14 @@ export default function HomePage() {
                 The{" "}
                 <a
                   href="https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces"
-                  className="underline underline-offset-2 hover:text-[#c9861b]"
+                  className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
                 >
                   deemed-supplier mechanism
                 </a>
                 , the{" "}
                 <a
                   href="https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk"
-                  className="underline underline-offset-2 hover:text-[#c9861b]"
+                  className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
                 >
                   £135 import rule for direct-to-consumer dropship
                 </a>
@@ -454,7 +454,7 @@ export default function HomePage() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-[#c9861b] hover:text-[#c9861b] transition-all ${focusRing}`}
+                    className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-[#c9861b] hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                   >
                     {item.label}
                     <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
@@ -462,7 +462,7 @@ export default function HomePage() {
                 ))}
                 <Link
                   href="/services/selling-into-the-eu"
-                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-[#c9861b] hover:text-[#c9861b] transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-[#c9861b] hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                 >
                   Selling into the EU: full service
                   <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
@@ -495,7 +495,7 @@ export default function HomePage() {
                     className={`group flex items-start justify-between gap-4 border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-[#c9861b] ${focusRing}`}
                   >
                     <div>
-                      <div className="text-sm font-bold text-neutral-900 group-hover:text-[#c9861b] transition-colors">
+                      <div className="text-sm font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
                         {calc.title}
                       </div>
                       <p className="mt-1 text-xs leading-relaxed text-neutral-500">{calc.body}</p>
@@ -520,7 +520,7 @@ export default function HomePage() {
               <div className="mt-6">
                 <Link
                   href="/research/online-seller-index"
-                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#c9861b] hover:text-[#c9861b] transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#c9861b] hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                 >
                   View the Online Seller Index
                   <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#c9861b] group-hover:translate-x-1 transition-all" />
