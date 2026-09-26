@@ -35,10 +35,7 @@ import {
   getEstateTimeseries,
   type SiteKpis,
 } from "@accounting-network/web-shared/console/estateData";
-import {
-  getTimeseries,
-  getFunnelDaily,
-} from "@accounting-network/web-shared/console/adminData";
+import { getEstateSiteSeries } from "@accounting-network/web-shared/console/adminData";
 import { MultiSiteTrendChart } from "@/components/MultiSiteTrendChart";
 import { buildMultiSiteSeries, buildWeeklyAvgVisitors } from "@/lib/multiSiteSeries";
 import { checkAuth } from "@/lib/checkAuth";
@@ -173,10 +170,22 @@ export default async function EstatePage() {
   // Per-site daily series (30 days) for the estate comparison overlay.
   const cmpFrom = new Date(now.getTime() - 30 * 86400_000).toISOString();
   const activeSites = sites.filter((s) => s.active);
-  const [perSiteSeries, perSiteFunnel] = await Promise.all([
-    Promise.all(activeSites.map((s) => getTimeseries(s.site_key, "1 day", cmpFrom, now.toISOString(), "GB"))),
-    Promise.all(activeSites.map((s) => getFunnelDaily(s.site_key, "GB"))),
-  ]);
+  const estateSeries = await getEstateSiteSeries(
+    cmpFrom,
+    new Date(now.getTime() - 90 * 86400_000).toISOString(),
+    "GB",
+  );
+  const cmpFromDay = cmpFrom.slice(0, 10);
+  const perSiteSeries = activeSites.map((s) =>
+    estateSeries
+      .filter((r) => r.site_key === s.site_key && r.d >= cmpFromDay)
+      .map((r) => ({ bucket: r.d, sessions: r.sessions, humans: r.humans, events: 0, leads: 0 })),
+  );
+  const perSiteFunnel = activeSites.map((s) =>
+    estateSeries
+      .filter((r) => r.site_key === s.site_key)
+      .map((r) => ({ ...r, date: r.d, sessions: r.f_sessions })),
+  );
   const cmp = buildMultiSiteSeries(activeSites, perSiteSeries, perSiteFunnel);
 
   // Estate conversion funnel, windowed: aggregate the per-site daily funnel rows

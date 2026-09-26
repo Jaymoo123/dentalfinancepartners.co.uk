@@ -686,6 +686,37 @@ export function getTimeseries(
   return rest<TimePoint>("rpc/web_timeseries", params);
 }
 
+/**
+ * One (site, day) row from the estate_site_series() RPC: the whole estate's
+ * daily timeseries + funnel in one call. `sessions`/`humans` are the
+ * web_timeseries pair (narrower p_ts_from window); `f_sessions` and the funnel
+ * counts are the vw_web_funnel_daily_v2 pair (wider p_from window).
+ */
+export type EstateSiteSeriesRow = {
+  site_key: string;
+  d: string;
+  sessions: number;
+  humans: number;
+  f_sessions: number;
+  engaged_sessions: number;
+  calc_sessions: number;
+  form_cta_sessions: number;
+  form_start_sessions: number;
+  converted_sessions: number;
+};
+
+export function getEstateSiteSeries(
+  tsFromISO: string,
+  fromISO: string,
+  country = "GB",
+) {
+  return rest<EstateSiteSeriesRow>("rpc/estate_site_series", {
+    p_ts_from: tsFromISO,
+    p_from: fromISO,
+    p_country: country,
+  });
+}
+
 /** Humans-first KPI row from the estate_kpis() RPC (one site, one window). */
 export type SiteKpis = {
   site_key: string;
