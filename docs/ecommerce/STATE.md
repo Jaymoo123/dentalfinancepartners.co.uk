@@ -50,9 +50,9 @@ STILL OPEN, carried as owner items:
 - The formation data is five months stale (settled through April 2026). The prose is now
   stamped as at that month rather than refreshed.
 
-## START HERE: the next agent picks up at PHASE 2
+## START HERE: the next agent picks up at PHASE 3
 
-Written 2026-09-25 at the close of phase 1. Git is the authority for what is built, this block is
+Written 2026-09-25, updated 2026-09-26 at the close of phase 2. Git is the authority for what is built, this block is
 a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it disagrees.
 
 **Opening sequence, in this order, before planning anything:**
@@ -66,36 +66,46 @@ a claim: check `git tag -l 'port-ecommerce-*'` first and fix this block if it di
    `docs/ecommerce/_port/P0A_CLAIMS_LEDGER.md`, `P0B_RENDERED_SWEEP.md`, `P0C_CSS_TOKEN_AUDIT.md`,
    `P0D_BASELINE.md`, `P0E_STRUCTURAL_INVENTORY.md`.
 
-**What phase 2 is.** The blog subsystem. Three route files, all currently site-local:
-`src/app/blog/page.tsx` (index), `src/app/blog/[category]/page.tsx` (6 category hubs),
-`src/app/blog/[category]/[slug]/page.tsx` (14 posts). Articles are `/blog/<category>/<slug>`, so
-every instrument run needs `--article-depth=3`. Candidate kit adoptions:
-`packages/web-shared/design/blog/` carries `BlogListWithSearch`, `BlogCategoryHub`,
-`HubArticleList`, `RelatedArticles`, `ReadingProgress`, `BlogSidebarCta`, `TableOfContents`.
+**What phase 3 is.** The three hub families and their slug templates, all still site-local:
+`src/app/services/page.tsx` (46 lines) and `services/[slug]/page.tsx` (100 lines, 4 services from
+`src/data/services.ts`); `src/app/for/page.tsx` (32) and `for/[slug]/page.tsx` (100, from
+`src/data/for.ts`); `src/app/vat/page.tsx` (32) and `vat/[slug]/page.tsx` (100, from
+`src/data/vat.ts`). Three packages on disjoint leases, one family each including its data file, is
+the shape that fits. Candidate kit adoptions: `design/primitives/SlimHero`, `page-blocks`,
+`Breadcrumb`, `NoticeCard`, and `design/marketing/CoverageCards`, `TopicSection`, `WhyUsList`,
+`DrawnTickList`, `ComparisonTable`.
 
-**Traps that will bite specifically in phase 2, each recorded from a sibling port:**
-- TWO copies of some kit components exist: `packages/web-shared/design/blog/` and
-  `packages/web-shared/content/` both carry `ReadingProgress` and `TableOfContents`. Grep which
-  family this site imports before concluding anything, and patch both if you patch one.
-- The kit `FaqSection` is a Radix accordion with NO `forceMount`: it strips closed answers from
-  the server HTML while FAQ JSON-LD keeps asserting them. This site currently renders 179 FAQ
-  answers that ARE present on the page (P0B verified 179/179). Adopting the accordion would
-  create the exact defect a sibling site had to unwind. Decline it unless you can prove otherwise,
-  and write the decline at the call site naming the kit FILE PATH so the 9.1 gate can count it.
-- Blog bodies are raw HTML through `dangerouslySetInnerHTML` and must never be escaped.
-  `keyTakeaways` must keep list semantics.
-- Article typography comes from `packages/site-styles/prose-standard.css`, already imported. In
-  phase 1 its link colour was fixed by declaring `--accent-strong`. Do not re-fix it, and do not
-  introduce a second prose mechanism.
-- An index that paginates behind a button can carry a fraction of its corpus in the server HTML,
-  and the link floor does NOT catch it because the floor was captured from the same page. Compare
-  article hrefs in the SERVER HTML against the 14 files on disk for `/blog` and each of the 6 hubs.
-- `TableOfContents.stickyDesktop` must be chosen deliberately: two viewport clamps in one column
-  produce a scroll box inside a scroll box, and both wrong arrangements read as correct in source.
-  Measure the bounding rect after scrolling.
-- `BlogSidebarCta.ctaPlacement` is a live analytics dimension. This site's CTA series was CREATED
-  by phase 1 (`header_book|header|contact`, 51 routes) and has no history, so anything you add is
-  also new. Record each value as a decision with its reason, never as a preserved value.
+**BANNED kit components, on this site, with no owner conversation available to an executing agent:**
+`StickyCTA` (an interruption, banned outright estate-wide), `LeadCTAPanel` (adds a lead-capture
+surface, owner gate), `TestimonialsSection` (hardcodes Property's quotes; this site has none and
+the claims ledger closed invented social proof), `WhatToExpectCard` (its DEFAULT PROPS publish a
+fee line nobody authored), `StatsCounter` (takes one number, renders no links, so it mangles
+composite figures and deletes citations). Write every decline AT THE CALL SITE naming the kit FILE
+PATH in full: a decline that does not name the path is invisible to the 9.1 gate that exists to
+protect it.
+
+**Traps that will bite specifically in phase 3:**
+- The three `[slug]` templates ALREADY CARRY `.ground-dark` on their dark CTA sections, placed in
+  phase 1. Do not remove it, and if you move the section, move the class with it. Custom properties
+  inherit, so never put it on an ancestor of a light island: the homepage CTA band is deliberately
+  unmarked because it wraps a white form card.
+- The slug heroes paint `bg-[#8a5e1a]` and hand-roll a white button inside. White on `#8a5e1a` is
+  5.68 and passes, so that ground is fine; if a kit component changes it, re-derive the ratio.
+  The brand hex `#c9861b` is 3.04 on white: decoration only, never text, never a ground under
+  white text.
+- `src/data/for.ts` was corrected in phase 0 (three calculator links). The tool slug is
+  `seller-take-home-calculator`, not `seller-take-home`. Do not revert it.
+- DO NOT AUTHOR NEW MARKETING COPY. Use the strings the data files already publish. Reshaping an
+  existing string for a component is fine; a new claim, a dropped claim or a softened claim is not.
+  Content is Opus-only by house rule, so a copy gap is an owner item, not a builder's licence.
+- Phase 2 proved the shape of the risk in this port: both defects it introduced were invisible in
+  source and only showed up in the browser check (56 anchor failures, then 3 contrast rows). Budget
+  for a second and third measurement pass rather than one.
+
+**What is left after phase 3:** phase 4 calculators and the embed surface, phase 5 homepage and the
+two research studies, phase 6 the rest (about, contact, book, complete, thank-you, legal, error
+pages, forms), then the mop-up package, two independent adversarial reviews, a gap-fix wave, the
+corrected 9.1 kit-adoption gate, and `port-ecommerce-complete` on the final commit.
 
 **The gates, every phase, substituting your own port:**
 G0 `python scripts/port_preflight.py --site ecommerce` (declare 3000 and 3210)
@@ -109,9 +119,9 @@ G7 `MSYS_NO_PATHCONV=1 node docs/_engines/instruments/cta_snapshot.mjs --site=ec
 G9 `npm test --workspace=ecommerce/web` FROM THE MONOREPO ROOT; the workspace flag does not work
 from inside `ecommerce/web`.
 
-**Numbers to hold yourself to.** Phase-1 close: 51 URLs, **1173** internal links (baseline 707),
-0 dead, 0 dashes, 51 `data-cta` in one triple, 204 browser-check page-loads with 0 new problems,
-45 tests, 69 pages built. Baselines: `_port/sweep_baseline.json`, `_port/browser_baseline.json`,
+**Numbers to hold yourself to.** Phase-2 close: 51 URLs, **1217** internal links (baseline 707,
+phase 1 1173), 0 dead, 0 dashes, 51 `data-cta` in one triple, 113 JSON-LD blocks parsing, 204
+browser-check page-loads with 0 new problems, 45 tests, 69 pages built. Baselines: `_port/sweep_baseline.json`, `_port/browser_baseline.json`,
 `_port/cta_baseline.json`. Phase-1 state: `_port/sweep_postphase1.json`,
 `_port/browser_postphase1.json`, `_port/cta_postphase1.json`.
 
