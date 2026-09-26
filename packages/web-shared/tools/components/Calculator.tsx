@@ -109,7 +109,23 @@ export function Calculator({
           </div>
         )}
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">{tool.name}</h3>
-        <p className="mt-2 text-sm sm:text-base text-slate-600">{tool.intro}</p>
+        {/*
+          `intro` is authored first-party copy committed in each site's
+          lib/.../tools/*.ts, and some of it carries real anchors (a gov.uk
+          citation, an internal cross-link). Interpolated as a text child it
+          printed the markup as visible escaped text and the link was inert.
+          Rendered as HTML because the source is the repo, not user input.
+
+          Byte-identical on every site whose intros are plain text, which is
+          16 of the 17 that mount this component, Property included: an intro
+          with no markup renders the same either way. Derived, not assumed,
+          by scanning the `intro` value of all 92 tool definitions in the
+          monorepo; only ecommerce (2 of 4 tools) authors HTML there today.
+        */}
+        <p
+          className="mt-2 text-sm sm:text-base text-slate-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:text-[var(--brand-primary-text,#8a5e1a)]"
+          dangerouslySetInnerHTML={{ __html: tool.intro }}
+        />
       </div>
 
       <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1fr_1.2fr]">
