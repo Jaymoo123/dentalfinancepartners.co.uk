@@ -361,8 +361,11 @@ test wave.
     pages, with the `calc_pdf_offer` flag set off in prod the same day and the PDF day-14
     read recorded first), then the seven blog-kit sites, the four canonical-fix sites and
     the entity block on contractors, care, charities and Medical.
-11. **Wave 1 on the four small sites.** Same chain as Property, about 184 agent runs.
-    Recommend go. OPEN.
+11. **Wave 1 on the four small sites.** DECIDED GO 09-27 ("go on the four sites"). Manifest
+    composition: 20 segment pages (medical 5, contractors 5 plus a services-page rewrite held
+    back, care 2, charities 7) through the S4a chain now, and 40 decision, question and number
+    rows that are blog posts on those sites, through the S4b chain (spec below) once the four
+    sites' post conventions are documented. About 184 agent runs in total.
 
 ## 11. Targets and the monthly read
 
