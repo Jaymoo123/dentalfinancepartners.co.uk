@@ -1,4 +1,17 @@
 {
+  "entity": {
+    "firm": "Medical Accountants UK is a trading name of Ashfield Trading Ltd, registered in England and Wales under company number 16358723, with its registered office at 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL. We publish tax research and calculators for the medical professions, take your enquiry and introduce you to a firm from our specialist partner network.",
+    "serves": "NHS doctors and medical professionals: GP partners and salaried GPs, hospital consultants with NHS and private income, locum and sessional doctors, junior doctors, and GP practices.",
+    "where": "We cover the United Kingdom and enquiries are handled remotely, with the differences between England, Wales, Scotland and Northern Ireland flagged where they change the answer.",
+    "howItWorks": [
+      "You read the research and use the calculators, which are free and need no sign-up.",
+      "You send us your situation through the enquiry form: your role, your income mix and whether a practice is involved.",
+      "We match the enquiry to a firm in our specialist partner network that handles medical work.",
+      "That firm contacts you directly to scope the work, and anything you agree is between you and them."
+    ],
+    "next": "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose.",
+    "notWhatWeAre": "Medical Accountants UK is not an accountancy practice and does not give advice, and it does not file returns or quote fees. The partner firm does the work."
+  },
   "niche_id": "medical",
   "display_name": "Medical Accountants UK",
   "legal_name": "Ashfield Trading Ltd",

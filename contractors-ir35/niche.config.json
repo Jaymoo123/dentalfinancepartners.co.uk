@@ -1,4 +1,17 @@
 {
+  "entity": {
+    "firm": "Contractor Tax Accountants is a trading name of Ashfield Trading Ltd, registered in England and Wales under company number 16358723, with its registered office at 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL. We publish contractor tax research and calculators, take your enquiry and introduce you to a firm from our specialist partner network.",
+    "serves": "UK contractors: PSC directors, workers affected by IR35, and people weighing an umbrella against a limited company.",
+    "where": "We cover the United Kingdom and enquiries are handled remotely.",
+    "howItWorks": [
+      "You read the guides and use the calculators, which are free and need no sign-up.",
+      "You send us your situation through the enquiry form: your day rate, your contract status and what you need looked at.",
+      "We match the enquiry to a firm in our specialist partner network that handles contractor work.",
+      "That firm contacts you directly to scope the work, and anything you agree is between you and them."
+    ],
+    "next": "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose.",
+    "notWhatWeAre": "Contractor Tax Accountants is not an accountancy practice and does not give advice, and it does not review contracts or file returns itself. The partner firm does the work."
+  },
   "niche_id": "contractors-ir35",
   "display_name": "Contractor Tax Accountants",
   "legal_name": "Ashfield Trading Ltd",
