@@ -173,6 +173,54 @@ GSC_CONFIG = {
         "enabled": True,
         "start_date": "2026-05-01",
     },
+
+    "contractors-ir35": {
+        "site_url": "sc-domain:contractortaxaccountants.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "contractors-ir35",
+        "content_dir": "contractors-ir35/web/content/blog",
+        "git_repo_path": "contractors-ir35/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": "2026-05-20",
+    },
+
+    "care": {
+        "site_url": "sc-domain:carehometax.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "care",
+        "content_dir": "care/web/content/blog",
+        "git_repo_path": "care/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": "2026-07-12",
+    },
+
+    "charities": {
+        "site_url": "sc-domain:trusteetax.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "charities",
+        "content_dir": "charities/web/content/blog",
+        "git_repo_path": "charities/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": "2026-07-11",
+    },
 }
 
 # Global settings (apply to all sites unless overridden)
