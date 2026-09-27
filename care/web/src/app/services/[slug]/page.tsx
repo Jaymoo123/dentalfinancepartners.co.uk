@@ -3,8 +3,18 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { careServices, getService } from "@/data/care-services";
-import { buildFaqJsonLd } from "@/lib/schema";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { JsonLd, buildBreadcrumb, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
+
+/* Schema parity fix (mirrors charities' services/[slug]): this route emitted
+   only a hand-rolled FAQPage via lib/schema.buildFaqJsonLd, no Service, no
+   BreadcrumbList. */
+const SCHEMA_OPTS = {
+  siteUrl: siteConfig.url,
+  siteName: siteConfig.name,
+  legalName: siteConfig.legalName,
+  publisherLogoUrl: siteConfig.publisherLogoUrl,
+};
 
 export function generateStaticParams() { return careServices.map((s) => ({ slug: s.slug })); }
 
@@ -20,6 +30,28 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const service = getService(slug);
   if (!service) notFound();
   return (<>
+    <JsonLd
+      data={[
+        buildService(
+          {
+            name: service.title,
+            description: service.metaDescription,
+            url: `/services/${service.slug}`,
+            areaServed: "United Kingdom",
+          },
+          SCHEMA_OPTS,
+        ),
+        buildBreadcrumb(
+          [
+            { label: "Home", href: "/" },
+            { label: "Services", href: "/services" },
+            { label: service.title },
+          ],
+          SCHEMA_OPTS,
+        ),
+        ...(buildFaqPage(service.faqs) ? [buildFaqPage(service.faqs)!] : []),
+      ]}
+    />
     <section className="border-b border-neutral-200 bg-[#5a4d75] py-16 sm:py-20">
       <div className={siteContainerLg}>
         <Link href="/services" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">All services</Link>
@@ -66,7 +98,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </div>
     </section>
-    {service.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(service.faqs) }} />}
     {service.faqs.length > 0 && (
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>

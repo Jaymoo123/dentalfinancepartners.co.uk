@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl, buildHowToJsonLd } from "@/lib/schema";
+import { buildOgImageUrl, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -73,6 +73,27 @@ export default async function BlogPostPage({ params }: Props) {
 
   const bodySplit = splitAtSecondH2(post.contentHtml);
 
+  // FAQPage markup must match what the page shows (Google structured-data
+  // policy). Posts that already cover a question inside the body HTML don't
+  // need it repeated below; render only the FAQs not already answered there,
+  // and emit FAQPage for exactly those rendered ones (mirrors charities'
+  // blog/[category]/[slug] fix). Answers may contain <a> anchors: rendered as
+  // HTML below, but JSON-LD `text` must be plain text, so tags are stripped
+  // for the schema copy only.
+  const bodyText = post.contentHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").toLowerCase();
+  const renderedFaqs = (post.faqs ?? []).filter(
+    (f) => !bodyText.includes(f.question.replace(/\s+/g, " ").toLowerCase()),
+  );
+  const faqSchema =
+    renderedFaqs.length > 0
+      ? buildFaqJsonLd(
+          renderedFaqs.map((f) => ({
+            question: f.question,
+            answer: f.answer.replace(/<[^>]+>/g, "").trim(),
+          })),
+        )
+      : null;
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       {post.schema && (
@@ -80,6 +101,9 @@ export default async function BlogPostPage({ params }: Props) {
       )}
       {post.howToSteps && post.howToSteps.length > 0 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildHowToJsonLd(post) }} />
+      )}
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema }} />
       )}
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
         <Link href="/blog" className="hover:underline">Blog</Link>{" "}
@@ -115,6 +139,29 @@ export default async function BlogPostPage({ params }: Props) {
           </>
         ) : null}
       </article>
+      {renderedFaqs.length > 0 && (
+        <section className="mt-12 border-t border-neutral-200 pt-8" aria-labelledby="faq-heading">
+          <h2 id="faq-heading" className="text-2xl font-bold text-neutral-900">
+            Frequently asked questions
+          </h2>
+          <div className="mt-6 space-y-3 sm:space-y-4">
+            {renderedFaqs.map((faq) => (
+              <details key={faq.question} className="group border border-neutral-200 bg-white">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-[#7d6b9e] transition-colors list-none">
+                  <span>{faq.question}</span>
+                  <span className="flex-shrink-0 text-[#7d6b9e] transition-transform group-open:rotate-45" aria-hidden>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
+                  </span>
+                </summary>
+                <div
+                  className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4"
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                />
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
       {/* LEADS_250 §13 S2: the static "Book a call" text block that lived here
           is replaced by the site's LeadForm (form_id lead_form); heading/body
           copy is unchanged, still the site's existing wording. */}

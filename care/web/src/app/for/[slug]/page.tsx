@@ -3,10 +3,20 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { careHubs, getHub } from "@/data/care-hubs";
-import { buildFaqJsonLd } from "@/lib/schema";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { JsonLd, buildBreadcrumb, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { niche } from "@/config/niche-loader";
+
+/* Schema parity fix (mirrors charities' for/[slug]): this route emitted only
+   a hand-rolled FAQPage via lib/schema.buildFaqJsonLd, no Service, no
+   BreadcrumbList. */
+const SCHEMA_OPTS = {
+  siteUrl: siteConfig.url,
+  siteName: siteConfig.name,
+  legalName: siteConfig.legalName,
+  publisherLogoUrl: siteConfig.publisherLogoUrl,
+};
 
 export function generateStaticParams() { return careHubs.map((h) => ({ slug: h.slug })); }
 
@@ -22,6 +32,28 @@ export default async function CareHubPage({ params }: { params: Promise<{ slug: 
   const hub = getHub(slug);
   if (!hub) notFound();
   return (<>
+    <JsonLd
+      data={[
+        buildService(
+          {
+            name: hub.title,
+            description: hub.metaDescription,
+            url: `/for/${hub.slug}`,
+            areaServed: "United Kingdom",
+          },
+          SCHEMA_OPTS,
+        ),
+        buildBreadcrumb(
+          [
+            { label: "Home", href: "/" },
+            { label: "For", href: "/for" },
+            { label: hub.title },
+          ],
+          SCHEMA_OPTS,
+        ),
+        ...(buildFaqPage(hub.faqs) ? [buildFaqPage(hub.faqs)!] : []),
+      ]}
+    />
     <section className="border-b border-neutral-200 bg-[#5a4d75] py-16 sm:py-20">
       <div className={siteContainerLg}>
         <Link href="/for" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">All provider types</Link>
@@ -71,7 +103,6 @@ export default async function CareHubPage({ params }: { params: Promise<{ slug: 
       </div>
     </section>
     {niche.entity ? <EntityBlock {...niche.entity} /> : null}
-    {hub.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(hub.faqs) }} />}
     {hub.faqs.length > 0 && (
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>

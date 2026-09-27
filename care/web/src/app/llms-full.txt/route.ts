@@ -53,6 +53,8 @@ All figures are current to 2026/27 and verified against primary sources, includi
 - Supported Living (VAT and funding-mix analysis): https://${niche.domain}/for/supported-living
 - Children's Homes (Ofsted-registered provider accounting): https://${niche.domain}/for/childrens-homes
 - Care Startups (CQC registration, financial viability, opening accounts): https://${niche.domain}/for/care-startups
+- Self-Employed Carers and Personal Assistants (CQC carve-out, VAT, sole trader vs company): https://${niche.domain}/for/self-employed-carers-and-personal-assistants
+- Care Franchisees (franchise fee tax treatment, CQC registration, cash flow): https://${niche.domain}/for/care-franchisees
 - Full index: https://${niche.domain}/for
 
 ## Free Calculators And Tools
