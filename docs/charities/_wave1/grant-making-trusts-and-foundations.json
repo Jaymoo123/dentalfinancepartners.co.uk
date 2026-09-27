@@ -1,0 +1,100 @@
+{
+  "slug": "grant-making-trusts-and-foundations",
+  "title": "Grant-Making Trusts and Foundations",
+  "headline": "Accounts and tax for grant-making trusts and foundations",
+  "metaTitle": "Grant-Making Charity Accountants | Trustee Tax",
+  "metaDescription": "Accounts, annual returns and tax for grant-making trusts and family foundations: endowment, total return, grant commitments and related-party grants.",
+  "intro": "An endowment that is held, invested and given away as income changes what the accounts have to show. Investment income and gains are exempt from tax while the money is applied to charitable purposes, so most years bring no tax bill and no return unless HMRC asks or non-charitable expenditure arises. The reporting is where the work sits: which funds are permanent endowment and what trustees may spend, whether the charity invests on a total return basis, when a grant becomes a liability rather than a plan, and how grants to connected people are disclosed. All of it has to hold together before the annual return and the trustees' annual report go in.",
+  "stats": [
+    { "value": "£25,000", "label": "Fund market value above which Commission authority is needed before spending permanent endowment" },
+    { "value": "25%", "label": "Most a charity may borrow from its permanent endowment without Commission authority, repayable within 20 years" },
+    { "value": "10 months", "label": "Deadline for the Charity Commission annual return after the financial year end" },
+    { "value": "1 January 2026", "label": "Charities SORP 2026 applies to accounting periods beginning on or after this date" }
+  ],
+  "challenges": [
+    {
+      "title": "Knowing what the endowment actually permits",
+      "body": "Permanent endowment is property the charity must keep rather than spend. Sections 281 to 284D of the Charities Act 2011 give trustees a power to release it, but the route turns on the market value of the whole fund, not the sum you want to spend. At £25,000 or less trustees can resolve to spend it themselves; above that the Commission must authorise it."
+    },
+    {
+      "title": "Total return and the unapplied balance",
+      "body": "Investing on a total return basis stops the split between income and capital and lets trustees allocate from one pot each year. The accounts must then show the trust for investment, the unapplied total return, and the allocation made. Where a foundation adopted total return years ago and the records thinned out, rebuilding that balance comes first."
+    },
+    {
+      "title": "When a grant becomes a commitment",
+      "body": "Awarding a grant and paying it are different events, and the accounts follow neither the board minute nor the bank statement automatically. A liability arises when the charity has an obligation the recipient can rely on, so multi-year awards, milestone-conditional awards and withdrawable awards land differently. Get it wrong and expenditure shifts between years, distorting reserves."
+    },
+    {
+      "title": "Grants to connected people and organisations",
+      "body": "Family foundations often give to bodies a trustee founded, chairs or works for. That is not prohibited, but it is a related party matter and accruals accounts must disclose it. The conflict needs minuting before the award, and any benefit flowing back to a trustee tested separately."
+    },
+    {
+      "title": "Investment costs, VAT and non-charitable expenditure",
+      "body": "Management charges on the portfolio belong with the cost of generating funds, not buried inside charitable activity, and there is no blanket VAT exemption for charities, so those fees are usually a cost you carry. The tax exemptions are conditional too: grants outside the objects, and certain loans and investments, count as non-charitable expenditure."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Annual accounts under the right framework",
+      "body": "Which framework applies is settled first: receipts and payments where the law still allows it, otherwise accruals accounts under the Charities SORP, applying in its 2026 edition to periods beginning on or after 1 January 2026. See <a href=\"/blog/charity-accounts-and-sorp/charity-sorp-2026-changes\">what changed in SORP 2026</a>."
+    },
+    {
+      "title": "Endowment and total return review",
+      "body": "A specialist reads the trust deed against the statutory powers, separates permanent endowment from expendable funds, and records what trustees may release without Commission authority. Where the charity invests on a total return basis, the unapplied total return is reconstructed and the allocation evidenced."
+    },
+    {
+      "title": "Grant accounting and related-party disclosure",
+      "body": "Awards are tested against the point a commitment becomes a liability, multi-year and conditional grants scheduled, and payments to connected parties picked up from the trustee register. The notes then show who received what, on what terms."
+    },
+    {
+      "title": "Annual return, trustees' report and external scrutiny",
+      "body": "Figures for the annual return and the trustees' annual report come together in one pass, filed within the ten months allowed. Where income triggers independent examination or audit, the file is built for the examiner rather than handed over raw. Start with <a href=\"/calculators/independent-examination-vs-audit-checker\">the scrutiny checker</a> and the <a href=\"/blog/trustee-compliance/trustees-annual-report-guide\">trustees' annual report guide</a>."
+    },
+    {
+      "title": "Tax position and HMRC recognition",
+      "body": "Recognition by HMRC is separate from registration with the Commission, and the exemptions depend on it. The income mix and the portfolio are checked for anything falling outside those exemptions, a view taken on whether a return is due, and any loan or investment that would count as non-charitable expenditure flagged."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a grant-making charity pay tax on its investment income?",
+      "answer": "Generally no. Charities pay no tax on most types of income, investment income included, while the money is used for charitable purposes and the charity is recognised by HMRC. The exemption is conditional: income that does not qualify for relief, or income spent on non-charitable purposes, can bring tax and a return. HMRC can also issue a notice to file at any time."
+    },
+    {
+      "question": "Can trustees spend permanent endowment?",
+      "answer": "Sometimes, and the route depends on the size of the fund rather than the spend. Where the market value of the whole fund is £25,000 or less, trustees can resolve to spend it if satisfied the charity's purposes would be met more effectively that way. Above £25,000 the Commission must authorise the release. Trustees can also borrow up to 25% of the fund's value, repaying within 20 years."
+    },
+    {
+      "question": "What is total return investment and does our foundation need it?",
+      "answer": "It lets trustees treat income and capital growth as one return and decide each year how much to allocate to spending, instead of being limited to dividends and interest. That suits a foundation wanting a steady spending rate from a growth portfolio. It carries reporting consequences: the trust for investment, the unapplied total return and the allocation all appear in the accounts. It is not automatically right for a small fund."
+    },
+    {
+      "question": "When does a grant we have awarded go into the accounts?",
+      "answer": "Expenditure is recognised when the charity has an obligation the recipient can rely on, usually once the award is communicated with no conditions left in the charity's own control. An award still subject to trustee discretion, or dependent on a future condition, is generally not yet a liability. Multi-year awards are split, with amounts payable after twelve months shown separately. Award letters decide this, not minutes."
+    },
+    {
+      "question": "Do we have to disclose grants to organisations our trustees are involved with?",
+      "answer": "Yes, where the accounts are on an accruals basis. Grants to a body a trustee controls, founded, chairs or significantly influences are related party transactions and belong in the notes with enough detail to be understood. The grant itself is usually lawful. What draws criticism is an undisclosed one, or one awarded without the conflicted trustee standing back."
+    },
+    {
+      "question": "Does a small grant-making trust still have to file an annual return?",
+      "answer": "Every registered charity in England and Wales files something. Under £10,000 of income only two totals are entered; the £10,000 to £25,000 band adds the annual return questions; over £25,000 the trustees' annual report and accounts go with it. The deadline is ten months after the year end in every case. Our <a href=\"/blog/trustee-compliance/charity-commission-annual-return-guide\">annual return walkthrough</a> covers what catches trustees out."
+    },
+    {
+      "question": "Does our foundation need an independent examination?",
+      "answer": "It depends on gross income. In England and Wales an examination becomes a legal requirement above £25,000 of gross income, and for accounting years ending on or after 30 September 2026 that gate rises to £40,000. Above the audit thresholds an examination is not enough and a statutory audit is required. A trust deed or funder can require scrutiny the law would not."
+    }
+  ],
+  "sources": [
+    "house_positions.md position 2 (annual return tiering and the 10-month deadline)",
+    "house_positions.md position 3 (independent examination gate £25,000, £40,000 for financial years ending on or after 30 Sep 2026)",
+    "house_positions.md position 4 (audit thresholds sit above the examination gate)",
+    "house_positions.md position 6 (receipts and payments available to non-company charities; companies always accruals)",
+    "house_positions.md position 7 (SORP 2026 applies to accounting periods beginning on or after 1 January 2026)",
+    "house_positions.md position 10 (HMRC recognition is separate from Commission registration)",
+    "house_positions.md position 11 (no tax on most charitable income; a return when non-exempt income or non-charitable expenditure arises)",
+    "house_positions.md position 20 (no blanket VAT exemption for charities)",
+    "house_positions.md position 26 (Scotland is a different regime with universal external scrutiny)",
+    "https://www.gov.uk/guidance/permanent-endowment-rules-for-charities (verified 2026-09-27: permanent endowment defined as property the charity must keep rather than spend; Charities Act 2011 ss281-284D; trustees may spend without Commission authority where the fund's market value is £25,000 or less; borrowing up to 25% of market value, repayable within 20 years, endowment not designated land; total return investment by resolution)"
+  ]
+}

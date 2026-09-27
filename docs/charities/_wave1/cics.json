@@ -1,0 +1,91 @@
+{
+  "slug": "cics",
+  "title": "Community Interest Companies",
+  "headline": "Accounts and tax for community interest companies",
+  "metaTitle": "CIC Accountant | CIC Accounts and Tax | Trustee Tax",
+  "metaDescription": "Looking for a CIC accountant? Corporation tax, the asset lock and dividend cap, CIC34 filing, grant income and payroll for community interest company directors.",
+  "intro": "Company rules, not charity rules, govern a CIC's money, and the first question is what it owes. A CIC is not a charity. It pays corporation tax on its profits like any other company, it cannot claim Gift Aid on donations, and it gets no charitable rate relief. Grant income still has to be recognised correctly, though none of it carries a tax claim. Each year the company files a CIC34 community interest report with its accounts at Companies House, and the asset lock plus the dividend cap on share capital CICs decide what may leave the company at all. If Gift Aid is what you are missing, that is a structure question, and converting to a charity or a CIO is the route. Payroll runs on the ordinary employer rules. Accounts and the CIC34 fall due together, so the year end sets the timetable.",
+  "stats": [
+    { "value": "CIC34", "label": "Community interest report filed with the annual accounts at Companies House every year" },
+    { "value": "Nine months", "label": "Companies Act 2006 s442 filing period for a private company after the accounting reference date" },
+    { "value": "No Gift Aid", "label": "CICs get no charity tax reliefs and pay corporation tax normally" },
+    { "value": "15%", "label": "Employer National Insurance for 2026/27 above the £5,000 secondary threshold" }
+  ],
+  "challenges": [
+    {
+      "title": "Is the corporation tax position really the same as any other company?",
+      "body": "In substance, yes, and that surprises most boards. Trading surpluses are taxable and community purpose changes nothing. What moves the figure is the ordinary company toolkit: when grant and contract income is recognised, which costs are allowable, what the capital spend qualifies for, and whether losses carry forward. Directors often expect relief that does not exist here, and the gap arrives as an unbudgeted bill."
+    },
+    {
+      "title": "What can the asset lock and the dividend cap let you pay out?",
+      "body": "The asset lock keeps assets and profits inside the company or moving only to another asset locked body. A CIC limited by shares faces a dividend cap on top, so a payment that would be routine elsewhere can be a breach here. Directors can draw a reasonable salary through payroll; shareholders cannot simply take the surplus. Choosing between salary, a capped dividend and reinvestment is a board decision that needs the numbers."
+    },
+    {
+      "title": "Will the CIC34 you file satisfy the Regulator?",
+      "body": "It is not a formality bolted to the accounts. The report must describe activities carried out for community benefit, show how directors consulted the people affected, and account for how assets and profits were applied, including any dividend within the cap. A filing fee applies. Reports come back for thin narrative and for numbers that do not reconcile. Our <a href=\"/blog/cics-and-social-enterprises/cic34-form-guide\">CIC34 filing guide</a> works through each section, and the <a href=\"/blog/cics-and-social-enterprises/orcic-cic-regulator-explained\">CIC Regulator</a> sets the expectations."
+    },
+    {
+      "title": "How should grants and donations sit in the accounts?",
+      "body": "Funders restrict money, stage it across years, claw it back on conditions and want reporting that ties to the statutory figures. None of it is Gift Aid, so the accounting treatment does all the work, and income recognised in the wrong period distorts the result and the tax computation together. See <a href=\"/blog/cics-and-social-enterprises/cic-funding-and-grants\">where CIC funding comes from</a>."
+    },
+    {
+      "title": "Would converting to a charity or a CIO be worth it?",
+      "body": "This is the decision behind most CIC enquiries. Charitable status opens Gift Aid and rate relief, and brings Charity Commission registration, trustee duties and restricted objects with it. Conversion must also respect the asset lock. Test it against your own income mix: a CIC earning mainly contract income can gain less than the extra reporting costs. The <a href=\"/guides/cic-complete-guide\">complete CIC guide</a> and our <a href=\"/blog/cics-and-social-enterprises/cic-vs-charity\">CIC or charity comparison</a> set the structures side by side."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Annual accounts and the CIC34 prepared together",
+      "body": "Your accountant prepares the statutory accounts and drafts the community interest report from the same records, so the narrative on community benefit, consultation and asset application reconciles to the figures, both filed inside the nine month window."
+    },
+    {
+      "title": "Corporation tax return reviewed and filed",
+      "body": "A specialist reviews how trading, contract and grant income has been recognised, checks allowable costs and capital claims, prepares the computation and CT600, and gives you the liability and date early enough to budget."
+    },
+    {
+      "title": "Payout options set out against the cap",
+      "body": "Before the board decides, a specialist reviews what the asset lock and any dividend cap permit and puts salary, capped dividend and reinvestment side by side."
+    },
+    {
+      "title": "Payroll, and a structure comparison for the board",
+      "body": "Payroll is operated under RTI, with employer National Insurance at 15% above the £5,000 secondary threshold for 2026/27. Where Gift Aid is the reason you are asking, a specialist reviews your income mix and prepares a written CIC against charity or CIO comparison."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a community interest company pay corporation tax?",
+      "answer": "Yes. A CIC pays corporation tax on its profits in the same way as any other limited company, and community purpose does not create an exemption. What changes the figure is ordinary company tax work: when income is recognised, allowable expenditure, capital allowances and losses brought forward. A CIC is regulated by the Office of the Regulator of Community Interest Companies rather than the Charity Commission, and HMRC treats it as a standard company."
+    },
+    {
+      "question": "Can a CIC claim Gift Aid on donations it receives?",
+      "answer": "No. Gift Aid and charitable rate relief are open only to bodies HMRC recognises as charities, and a CIC is not one. Donations to a CIC are accounted for as income with no tax claim attached, and the same applies to most grants. Where Gift Aid matters enough to change the plan, the question is whether to convert to a charity or a CIO."
+    },
+    {
+      "question": "What has to go in the CIC34, and when is it due?",
+      "answer": "The CIC34 is the community interest report every CIC files at Companies House with its annual accounts, online or by post, and a filing fee applies. It covers the activities carried out for community benefit, how directors consulted the people affected, and how assets and profits were applied, including remuneration and any dividend paid within the cap. Under Companies Act 2006 section 442 a private company has nine months from its accounting reference date to file."
+    },
+    {
+      "question": "How much can a CIC pay its directors and shareholders?",
+      "answer": "Directors can be paid a reasonable salary for work they actually do, run through payroll like any employee, with employer National Insurance at 15% above the £5,000 secondary threshold in 2026/27. Shareholders sit differently. A CIC limited by shares can only pay dividends within the cap set under the CIC regulations, and the asset lock keeps the rest of the value in the company or with another asset locked body. Remuneration and any dividend are both reported in the CIC34."
+    },
+    {
+      "question": "How should grant income appear in CIC accounts?",
+      "answer": "Grants are recognised according to the conditions attached to them, so restricted funding and money staged across years can land in a different period from the one the cash arrived in. That moves the reported result and the taxable profit together. Funders want reporting that reconciles to the filed accounts, which is far easier when income is tracked by fund from the start rather than rebuilt at the year end."
+    },
+    {
+      "question": "Who regulates a CIC, and what happens if we miss a filing?",
+      "answer": "The Office of the Regulator of Community Interest Companies, based at Companies House, approves formation, applies the community interest test and enforces the asset lock. The Charity Commission has no role here. Because a CIC is also an ordinary company, a late filing can bring a Companies House penalty and the Regulator's attention at once, while HMRC deadlines run alongside. One calendar covering all three avoids most of it."
+    }
+  ],
+  "sources": [
+    "House position 22 (a CIC is not a charity; no Gift Aid, no charity rate relief; corporation tax normally; regulated by ORCIC) - https://www.gov.uk/government/organisations/office-of-the-regulator-of-community-interest-companies",
+    "House position 23 (statutory asset lock; dividend cap on CICs limited by shares) - https://www.gov.uk/government/publications/community-interest-companies-how-to-form-a-cic",
+    "House position 24 (CIC34 filed with the accounts, online or by post, filing fee applies; open flag 2 respected, no fee figure stated) - https://www.gov.uk/government/publications/community-interest-companies-business-activities",
+    "House position 25 (structure choice: charity, CIO, charitable company, CIC) - https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure",
+    "House position 27 (employer NIC 15% above the £5,000 secondary threshold, 2026/27) - https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "House position 21 (charitable rate relief, up to 80% mandatory, cited only as what charitable status would open) - https://www.gov.uk/apply-for-business-rate-relief/charitable-rate-relief",
+    "Companies Act 2006 s453 (civil penalty for late filing of accounts), verified 2026-09-27 - https://www.legislation.gov.uk/ukpga/2006/46/section/453",
+    "Companies Act 2006 s442(2)(a) 'nine months after the end of the relevant accounting reference period', verified 2026-09-27 - https://www.legislation.gov.uk/ukpga/2006/46/section/442",
+    "Internal links verified on disk: charities/web/content/guides/cic-complete-guide.md; charities/web/content/blog/cic34-form-guide.md, cic-vs-charity.md, cic-funding-and-grants.md, orcic-cic-regulator-explained.md (category 'CICs and Social Enterprises' resolves to /blog/cics-and-social-enterprises/<slug>)"
+  ]
+}

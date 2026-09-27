@@ -1,0 +1,97 @@
+{
+  "slug": "cios",
+  "title": "Charitable Incorporated Organisations",
+  "headline": "Accounts and tax for charitable incorporated organisations",
+  "metaTitle": "Accountants for CIOs | CIO Accounts | Trustee Tax",
+  "metaDescription": "CIO accounts, the Charity Commission annual return, examination and audit thresholds, converting into a CIO, trading subsidiaries and VAT.",
+  "intro": "A charitable incorporated organisation reports to one regulator. Your CIO registers with the Charity Commission whatever its income and files nothing at Companies House, so there is no confirmation statement and no company accounts. What you do file is an annual return within 10 months of your financial year end, with the trustees' annual report and accounts attached once gross income passes £25,000. The format of those accounts follows your income band, and external scrutiny begins at the same point. Trustees converting an unincorporated charity or a charitable company face a second question: what moves across, and what has to be set up again. Still choosing a structure? See <a href=\"/guides/charity-structures-which-to-choose\">the structures comparison</a> first.",
+  "stats": [
+    { "value": "Commission only", "label": "A CIO registers with the Charity Commission and not with Companies House" },
+    { "value": "Any income", "label": "A CIO must register whatever its income, where other England and Wales charities register above £5,000" },
+    { "value": "10 months", "label": "Deadline for the annual return after the end of the financial year" },
+    { "value": "£25,000", "label": "Gross income above which trustees must arrange an independent examination or an audit (£40,000 for financial years ending on or after 30 September 2026)" }
+  ],
+  "challenges": [
+    {
+      "title": "One regulator, but the filing is not as light as it looks",
+      "body": "Dropping Companies House removes a filing, not the workload. The Commission expects an annual return within 10 months of your year end, and above £25,000 of gross income the trustees' annual report and accounts go with it. Below £10,000 the return asks for income and spending figures alone; from £10,000 up to £25,000 there is a set of return questions to complete as well. Trustees arriving from a company background usually find the report itself takes the time."
+    },
+    {
+      "title": "The accounts format changes with your income band",
+      "body": "Because a CIO is not a company, it can prepare receipts and payments accounts while gross income stays at or below £250,000, rising to £500,000 for accounting years ending on or after 30 September 2026. Above that, accruals accounts under the Charities SORP are required, and a charitable company never has the simpler option at any size. Crossing the boundary brings a change of basis, restated comparatives and different disclosures, all easier handled before the year end."
+    },
+    {
+      "title": "Scrutiny steps up twice, and the second step has two limbs",
+      "body": "Above £25,000 of gross income trustees must arrange an independent examination or an audit. An audit becomes mandatory where gross income exceeds £1m, or where income exceeds £250,000 and gross assets exceed £3.26m. Both of those figures rise for accounting years ending on or after 30 September 2026. The asset limb catches CIOs holding a building on modest income. <a href=\"/calculators/independent-examination-vs-audit-checker\">Check which applies to your year</a>."
+    },
+    {
+      "title": "Converting into a CIO runs on two very different routes",
+      "body": "A charitable company converts directly, and the Commission's guidance is that the charity continues to exist in a different form, keeping its name, its charity number and its existing bank accounts. An unincorporated charity does not convert. A new CIO is registered, assets transfer to it and the old charity closes, so expect a new charity number and a set-up-again list that runs well past the accounts."
+    },
+    {
+      "title": "Trading and VAT do not get simpler",
+      "body": "Primary-purpose trading is exempt without limit. Non-primary-purpose trading is exempt only inside the small trading limits, a three-tier scale set by total income, and breaching it taxes all that trade's profits, not the excess. That is what pushes a growing CIO towards <a href=\"/blog/gift-aid/charity-trading-subsidiary-gift-aid\">a trading subsidiary</a>, which is a company and does file at Companies House. VAT follows the normal rules, compulsory above £90,000 of taxable turnover."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Accounts in the format your band actually requires",
+      "body": "Receipts and payments or SORP accruals accounts are prepared according to gross income and your governing document, every SORP statement is dated to the accounting period it belongs to, and the trustees' annual report is drafted so the narrative matches the numbers."
+    },
+    {
+      "title": "The annual return and the Commission filing",
+      "body": "Filing is handled end to end: the return questions, then the report and accounts where income requires them, inside the 10 month window. Trustee details and the figures on the public register are reconciled to the accounts, because that entry is what funders read first."
+    },
+    {
+      "title": "Independent examination or the audit file",
+      "body": "Which scrutiny level your year falls into is settled first, including the asset limb an income-only reading hides, and whether your examiner must belong to one of the bodies listed in the Charities Act. Where an examination applies, the file is prepared to the examiner's directions. <a href=\"/guides/audit-vs-independent-examination\">The examination and audit guide</a> sets out the difference."
+    },
+    {
+      "title": "The conversion year and what follows it",
+      "body": "For a conversion, or a transfer into a newly registered CIO, closing and opening positions are prepared together, the asset transfer is recorded, and the set-up-again list is worked through: HMRC recognition, Gift Aid, bank mandates, payroll and VAT. <a href=\"/guides/set-up-a-charity-cio\">Setting up a CIO</a> covers the registration side."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a CIO file accounts at Companies House?",
+      "answer": "No. A CIO registers with the Charity Commission only, which is its main structural difference from a charitable company. There is no confirmation statement, no Companies House accounts and no company number. Everything goes to the Commission through the annual return, due within 10 months of your year end, with the report and accounts attached once gross income is above £25,000. A trading subsidiary is a separate company and files at Companies House."
+    },
+    {
+      "question": "When does a CIO need an independent examination or an audit?",
+      "answer": "Gross income decides it. Up to £25,000 the Charities Act requires none, and that ceiling rises to £40,000 for accounting years ending on or after 30 September 2026, although your governing document may require one anyway. An audit is mandatory above £1m of gross income, or above £250,000 with gross assets over £3.26m, becoming £1.5m, or £500,000 with assets over £5m, for years ending on or after 30 September 2026."
+    },
+    {
+      "question": "Can a CIO prepare receipts and payments accounts?",
+      "answer": "Yes, while gross income stays at or below £250,000, because a CIO is not a company. That boundary rises to £500,000 for accounting years ending on or after 30 September 2026. Above it, accruals accounts under the Charities SORP are required. Funders sometimes ask for accruals accounts regardless of your income, so check grant conditions before settling the format."
+    },
+    {
+      "question": "What happens to Gift Aid and bank accounts when we become a CIO?",
+      "answer": "It depends on the route. A charitable company converts directly and the Commission's guidance is that it keeps its name, charity number and existing bank accounts. An unincorporated charity is different: a new CIO is registered, assets transfer and the old charity closes, so there is a new charity number and a fresh application for HMRC recognition before the CIO can claim Gift Aid. Mandates, contracts and staff all need moving deliberately."
+    },
+    {
+      "question": "How is a CIO different from a charitable company?",
+      "answer": "Both give trustees a corporate body, so the organisation itself owns what it owns and signs what it signs. A charitable company registers with the Commission and Companies House; a CIO reports to the Commission alone. A charitable company must always prepare accruals accounts, while a CIO under the income boundary may use receipts and payments. Charity law scrutiny applies to both alike, so the saving sits in duplicated filing."
+    },
+    {
+      "question": "Does a CIO need a trading subsidiary?",
+      "answer": "Only when non-primary-purpose trading outgrows the small trading exemption. That exemption runs on three tiers set by total income, and going over the limit makes all that trade's profits taxable, not only the excess, so the decision is taken ahead of the breach. A subsidiary's profits can be donated up to the parent CIO with no corporation tax due."
+    }
+  ],
+  "sources": [
+    "house_positions.md position 1 (CIO must register whatever its income; £5,000 threshold otherwise) - https://www.gov.uk/guidance/how-to-register-your-charity-cc21b",
+    "house_positions.md position 2 (annual return, tiered content, within 10 months) - https://www.gov.uk/guidance/prepare-a-charity-annual-return",
+    "house_positions.md position 3 (independent examination gate £25,000; £40,000 for FYs ending on or after 30 Sep 2026) - https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31 and https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "house_positions.md position 4 (audit £1m, or £250,000 income with gross assets over £3.26m; £1.5m, or £500,000 with £5m, for FYs ending on or after 30 Sep 2026) - https://www.legislation.gov.uk/ukpga/2011/25/section/144",
+    "house_positions.md position 5 (examiner must belong to a body listed in the Charities Act above the qualified-examiner threshold) - CC31 full guidance",
+    "house_positions.md position 6 (receipts and payments up to £250,000, rising to £500,000; companies always accruals) - CC15d and CC31",
+    "house_positions.md position 7 (SORP statements dated to the accounting period, never 'the new rules') - https://www.charitysorp.org/",
+    "house_positions.md position 9 (public register carries trustees and finances) - https://www.gov.uk/find-charity-information",
+    "house_positions.md position 10 (HMRC recognition is separate from Commission registration) - https://www.gov.uk/charities-and-tax",
+    "house_positions.md position 12 (small trading exemption, three tiers, all profits taxed on breach) - https://www.gov.uk/guidance/charities-and-trading",
+    "house_positions.md position 13 (subsidiary profits donated to the parent escape corporation tax) - https://www.gov.uk/guidance/charities-and-trading",
+    "house_positions.md position 20 (VAT registration compulsory above £90,000 taxable turnover) - https://www.gov.uk/vat-charities",
+    "house_positions.md position 25 (CIO registers with the Commission only; charitable company registers with both) - https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure",
+    "Conversion routes, fetched and verified 2026-09-27: charitable company conversion 'the charity continues to exist but in a different form', keeping its existing name, charity number and bank accounts; an unincorporated charity must set up and register a new CIO, transfer its assets and close the old charity - https://www.gov.uk/guidance/change-your-charity-structure",
+    "Internal links verified on disk 2026-09-27: charities/web/content/guides/charity-structures-which-to-choose.md, set-up-a-charity-cio.md, audit-vs-independent-examination.md; charities/web/content/blog/charity-trading-subsidiary-gift-aid.md (category 'Gift Aid', slugifyCategory gives /blog/gift-aid/...); charities/web/src/lib/calculators/tools/independent-examination-audit-checker.ts (slug independent-examination-vs-audit-checker)"
+  ]
+}

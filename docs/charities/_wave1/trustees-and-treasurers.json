@@ -1,0 +1,102 @@
+{
+  "slug": "trustees-and-treasurers",
+  "title": "Charity Trustees and Treasurers",
+  "headline": "Accounts and filing support for charity trustees and treasurers",
+  "metaTitle": "Accountants for Charity Trustees | Trustee Tax",
+  "metaDescription": "Support for trustees and volunteer treasurers filing charity accounts and the annual return: accounts format, examination or audit, deadlines.",
+  "intro": "You keep the books of a registered charity in England or Wales and the filing year is coming round. Three things decide the work: which accounts format applies, receipts and payments or accruals under the Charities SORP; whether the charity needs an independent examination, an audit, or neither; and what the trustees' annual report must contain. Non-company charities with gross income of £250,000 or less may prepare receipts and payments accounts; charitable companies always prepare accruals accounts. External scrutiny starts once gross income passes £25,000, and an audit is mandatory above £1 million of income, or above £250,000 of income where gross assets exceed £3.26 million. The annual return itself is due 10 months after the year end. The <a href=\"/calculators/independent-examination-vs-audit-checker\">examination versus audit checker</a> settles the scrutiny question. Thresholds rise for accounting years ending on or after 30 September 2026, so check your year end.",
+  "stats": [
+    {
+      "value": "£25,000",
+      "label": "Gross income above which trustees must arrange an independent examination or audit (£40,000 for accounting years ending on or after 30 September 2026)"
+    },
+    {
+      "value": "10 months",
+      "label": "Deadline for the Charity Commission annual return, measured from the financial year end"
+    },
+    {
+      "value": "£250,000",
+      "label": "Income ceiling for receipts and payments accounts at a non-company charity (£500,000 for accounting years ending on or after 30 September 2026)"
+    },
+    {
+      "value": "£1 million",
+      "label": "Income above which a statutory audit is mandatory, or £250,000 of income with gross assets over £3.26 million"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Picking the wrong accounts format",
+      "body": "Receipts and payments accounts are a cash summary with a statement of assets and liabilities. Accruals accounts follow the Charities SORP: a statement of financial activities, a balance sheet and notes. A non-company charity may use receipts and payments only up to £250,000 of gross income. Every charitable company prepares accruals accounts whatever its size, because company law requires it. Treasurers who inherit a spreadsheet tend to continue the format their predecessor used rather than the one the charity now needs."
+    },
+    {
+      "title": "Reading the audit gate as an income test only",
+      "body": "That rule has two limbs. Income over £1 million triggers an audit on its own. So does income over £250,000 combined with gross assets above £3.26 million. A charity with £400,000 of income and a £4 million building is in the audit band even though its income sits in the examination range. Check income alone and you commission an examination that cannot satisfy the requirement. Governing documents and funders can also force an audit below these gates."
+    },
+    {
+      "title": "The annual return and the annual report are different filings",
+      "body": "One is an online form, the other a narrative prepared with the accounts. At income under £10,000 the return carries two totals and nothing else. From £10,000 to £25,000 the return questions have to be answered. Above £25,000 the trustees' annual report and accounts are attached as well, and a missing attachment leaves the filing incomplete on the public register. The <a href=\"/blog/trustee-compliance/charity-commission-annual-return-guide\">annual return guide</a> sets out the split."
+    },
+    {
+      "title": "A thin trustees' annual report",
+      "body": "Your report must cover what the charity did in the year, how that delivered public benefit, who the trustees are and how they were appointed, and how the charity is governed. Reserves, risks and a financial review are expected as income grows. First-time reports are often two paragraphs of activity with no public benefit statement, the omission a case worker notices first."
+    },
+    {
+      "title": "Working out which SORP edition applies",
+      "body": "A new edition of the Charities SORP applies to accounting periods beginning on or after 1 January 2026, so charities cross that boundary at different times. The edition follows the accounting period, not the date of preparation, and comparatives and disclosure notes hang off it."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Settling the format and scrutiny level first",
+      "body": "Before figures are drafted, a specialist reviews your income, gross assets, legal form, year end and governing document, then confirms which accounts format applies and whether an examination or an audit is needed. Because the England and Wales thresholds rise for accounting years ending on or after 30 September 2026, the year end is checked, not assumed."
+    },
+    {
+      "title": "Preparing the accounts",
+      "body": "Your accountant prepares receipts and payments or SORP accruals accounts from your records, keeps restricted and unrestricted funds apart, and reconciles income back to source. Where the accruals route applies, the SORP edition is fixed to the accounting period at the start so the notes are built once."
+    },
+    {
+      "title": "Drafting the trustees' annual report with you",
+      "body": "The narrative comes from what the charity actually did: objects, activities, public benefit, governance, trustee appointments, reserves and risks, at the depth your income calls for. Trustees review and approve it. For the section-by-section shape, see the <a href=\"/blog/trustee-compliance/trustees-annual-report-guide\">guide to the trustees' annual report</a>."
+    },
+    {
+      "title": "Arranging external scrutiny",
+      "body": "Where an examination is needed, an independent examiner carries out the work and issues the report. Above £250,000 of gross income that examiner must belong to one of the professional bodies named in the Charities Act, so eligibility is confirmed before the engagement starts. The <a href=\"/services/independent-examination\">independent examination service</a> covers how that runs."
+    },
+    {
+      "title": "Filing, then the year ahead",
+      "body": "The annual return goes in with the report and accounts attached where income requires it, inside the 10 month window. Afterwards you get a short note on next year: the threshold you sit closest to, the effect of the higher figures once your year end passes 30 September 2026, and what to record differently."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does our charity need an independent examination or an audit?",
+      "answer": "It turns on gross income and gross assets. At or below £25,000 the Charities Act requires no external scrutiny, though your governing document or a funder still can. Above £25,000 trustees must arrange an examination or an audit. An audit is mandatory once income exceeds £1 million, or income exceeds £250,000 and gross assets exceed £3.26 million. For accounting years ending on or after 30 September 2026 those figures become £40,000, £1.5 million, £500,000 and £5 million."
+    },
+    {
+      "question": "Can we prepare receipts and payments accounts?",
+      "answer": "Only if the charity is not a company and its gross income is £250,000 or less, rising to £500,000 for accounting years ending on or after 30 September 2026. Receipts and payments accounts summarise money in and out with a statement of assets and liabilities. Charitable companies prepare accruals accounts whatever their size, because the Companies Act requires it. Charitable incorporated organisations are not companies, so the income test decides."
+    },
+    {
+      "question": "When is the annual return due?",
+      "answer": "Within 10 months of the end of the charity's financial year, so a 31 March year end falls due by 31 January. What goes with it depends on income: two totals only under £10,000, the return questions in the £10,000 to £25,000 band, and over £25,000 the trustees' annual report and accounts as attachments."
+    },
+    {
+      "question": "Which version of the Charities SORP applies to us?",
+      "answer": "The edition follows your accounting period. The new SORP applies to periods beginning on or after 1 January 2026, so a charity with a 31 December year end crosses over a year before one with a 30 June year end. Fix the period first, then the edition, then the disclosures. The <a href=\"/blog/charity-accounts-and-sorp/charity-sorp-2026-changes\">write-up of the 2026 SORP changes</a> covers what moves. Receipts and payments accounts do not follow the SORP at all."
+    },
+    {
+      "question": "We are a Scottish charity. Do these figures apply?",
+      "answer": "No. These are the England and Wales rules set by the Charity Commission. Scottish charities come under OSCR under separate regulations, where every charity needs external scrutiny whatever its income, and where the recent threshold change runs from financial years beginning on or after 1 January 2026 rather than from year ends. Tell us the country of registration at the outset and the work is scoped to that regime."
+    }
+  ],
+  "sources": [
+    "house_positions.md position 2 (annual return, tiered content, due within 10 months) - https://www.gov.uk/guidance/prepare-a-charity-annual-return",
+    "house_positions.md position 3 (independent examination gate £25,000; £40,000 for accounting years ending on or after 30 September 2026, S.I. 2026/427) - https://www.gov.uk/government/publications/independent-examination-of-charity-accounts-trustees-cc31 and https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "house_positions.md position 4 (audit: income over £1m, or income over £250,000 with gross assets over £3.26m; uplift to £1.5m, £500,000 and £5m) - https://www.legislation.gov.uk/ukpga/2011/25/section/144",
+    "house_positions.md position 5 (qualified examiner required over £250,000, £500,000 after the uplift; listed professional bodies) - CC31",
+    "house_positions.md position 6 (receipts and payments up to £250,000, £500,000 after the uplift; companies always accruals) - CC15d and CC31",
+    "house_positions.md position 7 (SORP applies to accounting periods beginning on or after 1 January 2026) - https://www.charitysorp.org/",
+    "house_positions.md position 26 (Scotland: OSCR regime, universal external scrutiny, change runs from financial years beginning on or after 1 January 2026) - https://www.legislation.gov.uk/ssi/2006/218/regulation/11 and https://www.legislation.gov.uk/ssi/2025/341/made",
+    "Trustees' annual report content: Charity Commission CC15d reporting requirements; no figure asserted beyond the position 2 tiers"
+  ]
+}

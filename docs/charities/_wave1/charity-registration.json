@@ -1,0 +1,112 @@
+{
+  "slug": "charity-registration",
+  "title": "Charity Registration and Set-Up",
+  "headline": "Registration and first-year support for new and late-registering charities",
+  "metaTitle": "Charity Registration Accountant | Trustee Tax",
+  "metaDescription": "Support for founders registering a charity in England and Wales: the £5,000 gate, CIO or company, HMRC recognition for Gift Aid, and the first year end.",
+  "intro": "Money came in for a cause first, and the paperwork has caught up since. In England and Wales a charity must register with the Charity Commission once its income goes over £5,000 a year, and a charitable incorporated organisation must register whatever its income. First there is a structure to settle: a CIO, a charitable company, or an unincorporated association. Then a second and separate step, because the tax reliefs, Gift Aid included, depend on recognition by HMRC and not on the Commission. After that come the practical jobs: a bank account in the charity's name, a year end, the first annual return, and accounts that match the money raised. Groups often reach us late, with donations banked and a year to reconstruct, which is a normal starting point. The guide <a href=\"/guides/register-a-charity-step-by-step\">register a charity step by step</a> covers the mechanics; this page is the numbers behind it.",
+  "stats": [
+    {
+      "value": "£5,000",
+      "label": "Income above which a charity in England and Wales must register with the Charity Commission"
+    },
+    {
+      "value": "Any income",
+      "label": "A CIO must register with the Commission whatever its income"
+    },
+    {
+      "value": "10 months",
+      "label": "Deadline for the annual return after the end of the financial year"
+    },
+    {
+      "value": "25p per £1",
+      "label": "Gift Aid claimed on eligible donations once HMRC recognises the charity"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Working out when the £5,000 gate was crossed",
+      "body": "The threshold bites on annual income, and a group running raffles, collections and a grant in the same twelve months crosses it without noticing. The date matters, because the Commission asks for financial information with the application, so where the records are a bank statement and a spreadsheet the income must be rebuilt before anyone can date the duty."
+    },
+    {
+      "title": "Choosing a structure you will not have to unwind",
+      "body": "An unincorporated association forms in an afternoon but leaves trustees personally exposed on contracts and leases, while a CIO or a charitable company carries its own legal identity and its own filing burden. The four forms sit side by side in <a href=\"/guides/charity-structures-which-to-choose\">the structures guide</a>, and changing later means transferring assets."
+    },
+    {
+      "title": "Assuming registration brings Gift Aid with it",
+      "body": "It does not. Recognition by HM Revenue and Customs is a separate application, naming the trustees, the governing document and the bank account. Groups that spend months on the Commission form and none on HMRC leave donations unclaimed. Both steps are set out in <a href=\"/blog/trustee-compliance/hmrc-recognition-vs-charity-registration\">HMRC recognition versus Commission registration</a>."
+    },
+    {
+      "title": "Donations already taken before any of this existed",
+      "body": "Money raised before recognition still belongs in the first accounts, and Gift Aid on it depends on a valid declaration covering those gifts, which a donor can give later and backdate four years. A declaration needs the charity's name, the donor's full name and home address, what it covers, and the statement that the donor must have paid enough tax. Declarations are kept for six years from the end of the accounting period."
+    },
+    {
+      "title": "A first year end nobody has planned",
+      "body": "The year end chosen on the application sets every deadline that follows, starting with the first annual return. What that return must contain is tiered by income, and so is whether the accounts need outside scrutiny at all. The <a href=\"/calculators/independent-examination-vs-audit-checker\">examination and audit checker</a> shows which side of the gate a year lands."
+    },
+    {
+      "title": "Banking evidence trustees cannot produce on the day",
+      "body": "Banks want the registered number, the governing document, identification for every trustee and often a resolution appointing signatories. Funds sitting in a founder's personal account create a reconciliation job and an awkward disclosure later. Assembling the paperwork in order shortens the wait and keeps the opening balances clean."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Getting the income picture straight first",
+      "body": "Before any form is filed, the bank records, collection sheets and grant letters are worked through to establish what came in, from where, and when the £5,000 point was passed. That gives the figures the application asks for and the opening position for the accounts."
+    },
+    {
+      "title": "Comparing the structures against your plans",
+      "body": "Liability, property, employment and funder requirements are set against the CIO, charitable company and unincorporated routes. Where the group is already a community interest company, what conversion involves is set out, including the asset lock. Longer reading sits in <a href=\"/guides/set-up-a-charity-cio\">the CIO set-up guide</a>."
+    },
+    {
+      "title": "Preparing the registration and recognition submissions",
+      "body": "The financial sections of the Charity Commission application and the HMRC recognition submission are drafted together, so trustee details, governing document and bank account agree across both. Run in sequence, Gift Aid becomes claimable as soon as HMRC responds."
+    },
+    {
+      "title": "Putting Gift Aid on a footing that survives a check",
+      "body": "Declaration wording, the record of what each one covers, the retention period and the claim process are set up, including where historic donations can be brought into a claim. Small cash and contactless collections are checked against the small donations scheme, which carries its own annual limit."
+    },
+    {
+      "title": "Carrying you through the first year end",
+      "body": "The first accounts, the trustee annual report where income requires one, and the annual return are prepared to the ten-month deadline, with the scrutiny thresholds checked against the actual year so no examination requirement surfaces in month nine."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do we have to register if we have only raised a few thousand pounds?",
+      "answer": "In England and Wales the duty to register arises once annual income goes over £5,000. Below that a group can still operate for charitable purposes without joining the public register of charities. The exception is a charitable incorporated organisation, which must register whatever its income, because a CIO only exists once the Commission has registered it."
+    },
+    {
+      "question": "What is the difference between a CIO and a charitable company?",
+      "answer": "Both give the organisation its own legal identity, so property is held and contracts signed in the organisation's name. The practical split is the regulator. A CIO registers with the Charity Commission alone. A charitable company must register with the Commission, if eligible, and with Companies House, which brings company filings and company accounting rules alongside the charity ones."
+    },
+    {
+      "question": "Does registering with the Charity Commission give us Gift Aid?",
+      "answer": "No. Gift Aid and the other charity tax reliefs depend on recognition by HM Revenue and Customs, a separate application. Once recognition is in place the charity claims 25p for every £1 of eligible donation, provided a valid declaration is held and the donor has paid at least as much UK income tax or capital gains tax in the year as all their charities will reclaim."
+    },
+    {
+      "question": "We have been taking donations for a year already. Is that a problem?",
+      "answer": "It is common and it is workable. The priority is reconstructing what was received and separating restricted funds from unrestricted ones. Whether Gift Aid can be claimed on those earlier gifts turns on holding a valid declaration that covers them, which a donor can give now and backdate four years. Being straightforward about when income passed £5,000 beats a tidy but inaccurate history."
+    },
+    {
+      "question": "When is our first annual return due?",
+      "answer": "Within ten months of the end of the financial year, and what you file depends on income. Under £10,000 a registered charity reports income and spending only. Between £10,000 and £25,000 it answers the annual return questions. Over £25,000 the trustee annual report and the accounts are attached as well."
+    },
+    {
+      "question": "Will our accounts need examining or auditing in the first year?",
+      "answer": "Only if income takes you over the gate. External scrutiny, meaning an independent examination or an audit, starts once gross income exceeds £25,000, rising to £40,000 for accounting years ending on or after 30 September 2026. Below it the Charities Act requires none, though a governing document or a funder can still call for one, so the trust deed and grant conditions are read first."
+    }
+  ],
+  "sources": [
+    "house_positions.md position 1: registration threshold £5,000; a CIO registers whatever its income. https://www.gov.uk/guidance/how-to-register-your-charity-cc21b",
+    "house_positions.md position 2: annual return tiering (£10,000 and £25,000) and the 10-month deadline. https://www.gov.uk/guidance/prepare-a-charity-annual-return",
+    "house_positions.md position 3: independent examination gate £25,000, £40,000 for accounting years ending on or after 30 September 2026 (S.I. 2026/427). https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "house_positions.md position 10: HMRC recognition is separate from Commission registration. https://www.gov.uk/charities-and-tax",
+    "house_positions.md position 14: Gift Aid 25p per £1 and the donor tax-paid condition. https://www.gov.uk/claim-gift-aid",
+    "house_positions.md position 15: declaration content and six-year retention. https://www.gov.uk/guidance/gift-aid-declarations-claiming-tax-back-on-donations",
+    "gov.uk: a Gift Aid declaration can cover donations made in the previous four years, so historic gifts can be brought into a claim on a later declaration (house positions is silent on backdating). https://www.gov.uk/guidance/gift-aid-declarations-claiming-tax-back-on-donations",
+    "house_positions.md position 17: GASDS referenced only as a separate scheme with its own annual limit; no GASDS figures stated on the page.",
+    "house_positions.md positions 22, 23 and 25: CIC asset lock, and a CIO registers with the Commission only while a charitable company registers with both. https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure",
+    "Internal links verified on disk: charities/web/content/guides/register-a-charity-step-by-step.md, set-up-a-charity-cio.md, charity-structures-which-to-choose.md; charities/web/content/blog/hmrc-recognition-vs-charity-registration.md (category \"Trustee Compliance\", route /blog/[category]/[slug]); charities/web/src/lib/calculators/tools/independent-examination-audit-checker.ts (slug independent-examination-vs-audit-checker, route /calculators/[slug])."
+  ]
+}

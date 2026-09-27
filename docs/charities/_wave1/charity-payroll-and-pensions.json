@@ -1,0 +1,111 @@
+{
+  "slug": "charity-payroll-and-pensions",
+  "title": "Charity Payroll and Pensions",
+  "headline": "Payroll, employer NIC and workplace pensions for charities taking on staff",
+  "metaTitle": "Charity Payroll Services | Trustee Tax",
+  "metaDescription": "Charity payroll services for your first paid employee: PAYE registration, employer NIC, the Employment Allowance, auto-enrolment and volunteer expenses.",
+  "intro": "Moving from volunteers to paid staff turns a charity into an employer, and the obligations start before the first payslip. You register as an employer with HMRC and run PAYE, you account for employer Class 1 National Insurance at 15% on earnings above the £5,000 secondary threshold for 2026/27, and you check whether the charity can claim the Employment Allowance of up to £10,500, which charities and community amateur sports clubs are eligible for. Automatic enrolment duties start on day one: a workplace pension scheme, assessment of every worker, and a declaration of compliance to The Pensions Regulator. Paying a trustee is a different question again and is usually not permitted without express authority. What a first hire triggers, and what it costs, follows.",
+  "stats": [
+    {
+      "value": "15%",
+      "label": "Employer Class 1 National Insurance on earnings above the secondary threshold, 2026/27"
+    },
+    {
+      "value": "£5,000",
+      "label": "Secondary threshold a year (£417 a month) before employer NIC starts, 2026/27"
+    },
+    {
+      "value": "£10,500",
+      "label": "Employment Allowance charities and CASCs can claim against employer NIC"
+    },
+    {
+      "value": "£10,000",
+      "label": "Annual earnings trigger for automatic enrolment of a worker aged 22 to State Pension age"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Registering as an employer before the first payday",
+      "body": "PAYE registration is not instant, and HMRC expects the scheme to be open before the first payment of wages. Boards that agree a start date two weeks out often cannot file a Full Payment Submission on time, and late filing penalties apply to charities exactly as they do to commercial employers."
+    },
+    {
+      "title": "Costing a hire, not just a salary",
+      "body": "A £24,000 post is not a £24,000 budget line. Employer NIC at 15% above the £5,000 threshold, an employer pension contribution of at least 3% of qualifying earnings, holiday cover and any agreed pay rise sit on top. Where the Employment Allowance is available it absorbs up to £10,500 of employer NIC a year, which for one modest post can remove the charge."
+    },
+    {
+      "title": "Automatic enrolment duties land immediately",
+      "body": "Duties begin on the day the first member of staff starts. A worker aged between 22 and State Pension age earning at least £10,000 a year goes into a qualifying scheme, on a minimum total contribution of 8% of qualifying earnings, at least 3% from the employer. Even if nobody meets the trigger, you still write to staff and file a declaration."
+    },
+    {
+      "title": "Paying trustees, and what it triggers if you do",
+      "body": "Trustees generally serve unpaid. Payment for acting as a trustee needs authority in the governing document, from the Charity Commission or under statute, and paying without it creates a recoverable benefit and a reportable issue. Authorised payments are usually taxable income, so PAYE or self-employment reporting follows."
+    },
+    {
+      "title": "Volunteer expenses drifting into taxable pay",
+      "body": "Reimbursing a volunteer for what they actually spent is not pay. A round-sum allowance, an honorarium or a mileage rate above the approved amount can be, and once it is, PAYE and NIC apply and the volunteer's benefits position can change. The fix is a written expenses policy plus receipts, applied from now on."
+    },
+    {
+      "title": "A CIC or trading subsidiary payrolls on different terms",
+      "body": "A <a href=\"/for/cics\">community interest company</a> is not a charity, but it is an employer in exactly the same way. Where a charity and a trading subsidiary share staff, the cost is recharged on a defensible basis, or the charity subsidises taxable trade. Groups also share one apprenticeship levy allowance once a combined pay bill approaches £3 million."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Employer set-up and the first payroll run",
+      "body": "The PAYE scheme is registered against your intended start date, and the first payslips and Full Payment Submissions go out on time. Employment status for anyone engaged as a freelancer is checked before the first payment, not after it."
+    },
+    {
+      "title": "Employer NIC and the Employment Allowance",
+      "body": "The employer NIC position for 2026/27 runs at 15% above the £5,000 secondary threshold, and eligibility for the £10,500 Employment Allowance is checked, including the connected-organisation rules where the charity has a subsidiary. The claim runs through the payroll, so the monthly cash figure reflects it."
+    },
+    {
+      "title": "Auto-enrolment, assessment and the declaration",
+      "body": "Each worker is assessed against the age and earnings tests every pay period, postponement is applied where you want it, and the letters go out. Scheme choice is tested against your payroll software, and the declaration is filed."
+    },
+    {
+      "title": "Trustee payments, volunteers and expenses policy",
+      "body": "Where a payment to a trustee or volunteer is proposed, a specialist reviews the authority relied on, the tax treatment, and the disclosure in the <a href=\"/services/charity-accounts\">annual accounts</a>. The output is a short written expenses and honoraria position the board can adopt."
+    },
+    {
+      "title": "Year-end reporting and the staff-cost note",
+      "body": "P60s, reporting for any benefits in kind, and the staff-cost disclosures are prepared from the same payroll records as the monthly runs. Where <a href=\"/services/charity-bookkeeping\">bookkeeping</a> and payroll run together, restricted-fund salary apportionment comes out of the ledger, not a spreadsheet rebuilt each year."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can a charity claim the Employment Allowance?",
+      "answer": "Yes. Charities, including community amateur sports clubs, are eligible for the Employment Allowance, worth up to £10,500 against employer Class 1 National Insurance. It is claimed through the payroll and reduces the NIC bill until it is used up or the year ends. Connected charities and companies share one allowance, so a charity with a trading subsidiary cannot claim it twice. Check eligibility each tax year rather than assuming it carries forward."
+    },
+    {
+      "question": "How much employer National Insurance will our first hire cost?",
+      "answer": "For 2026/27 employer Class 1 National Insurance is 15% of earnings above the secondary threshold of £5,000 a year, which is £417 a month. On a salary of £24,000 that is 15% of £19,000. If the charity is eligible for the Employment Allowance, up to £10,500 of that liability is covered, which for a post of this size generally removes the charge. Pension contributions sit outside it."
+    },
+    {
+      "question": "Do we have to set up a pension for one part-time employee?",
+      "answer": "You have automatic enrolment duties from the first day you employ anyone, whatever the hours. Whether that person must be enrolled depends on age and earnings: enrolment is mandatory for a worker aged 22 to State Pension age earning at least £10,000 a year. Someone below the trigger can still ask to join, and you may have to contribute. Either way you write to staff and file a declaration with The Pensions Regulator."
+    },
+    {
+      "question": "Can we pay a trustee for doing work for the charity?",
+      "answer": "Usually not without authority. Payment simply for being a trustee needs an express power in the governing document, Commission consent or a statutory route, and it is rare. Payment for a separate service, such as building work, is permitted more often but carries conditions and the trustee withdraws from the decision. Authorised payments are taxable in the trustee's hands, so reporting follows and the accounts disclose them."
+    },
+    {
+      "question": "Are volunteer expenses taxable?",
+      "answer": "Reimbursing a volunteer for costs they actually incurred, with receipts, is not taxable pay. Problems start with round-sum allowances, honoraria, gift vouchers and mileage above the approved rate, which can all be earnings and bring PAYE and National Insurance with them. Payments can also affect a volunteer's own benefit entitlement. A policy that reimburses evidenced actual cost is easy to explain at an independent examination."
+    },
+    {
+      "question": "Does the apprenticeship levy apply to charities?",
+      "answer": "Only to larger ones. The levy is charged at 0.5% of an annual pay bill above £3 million, and every employer has a £15,000 annual allowance to set against it. Most charities are nowhere near it. It matters where a charity and its connected companies have a combined pay bill near the threshold, because they share one £15,000 allowance and decide how it is used."
+    }
+  ],
+  "sources": [
+    "house_positions.md position 27 (employer Class 1 NIC 15% above the £5,000 secondary threshold, £417 a month, 2026/27; Employment Allowance up to £10,500; charities and CASCs eligible)",
+    "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 (15%, £5,000 secondary threshold)",
+    "https://www.gov.uk/claim-employment-allowance and /eligibility (£10,500; charities and CASCs eligible; connected employers share one allowance)",
+    "https://www.gov.uk/workplace-pensions-employers (auto-enrolment: aged 22 to State Pension age, earning at least £10,000 a year; verified 2026-09-27)",
+    "https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay (minimum 8% total, at least 3% employer, on qualifying earnings £6,240 to £50,270; verified 2026-09-27)",
+    "https://www.gov.uk/guidance/pay-apprenticeship-levy (0.5% of a pay bill over £3 million, £15,000 annual allowance shared by connected charities and companies; verified 2026-09-27)",
+    "house_positions.md position 22 (a CIC is not a charity: no charity tax reliefs, Corporation Tax paid normally)",
+    "https://www.gov.uk/government/publications/trustee-expenses-and-payments-cc11 (trusteeship is generally unpaid; reimbursing costs reasonably incurred is not a trustee payment or benefit; verified 2026-09-27)",
+    "https://www.legislation.gov.uk/ukpga/2011/25/section/185 (statutory power to pay a trustee for goods or services, conditions A to D, excludes payment for acting as a trustee; verified 2026-09-27)"
+  ]
+}

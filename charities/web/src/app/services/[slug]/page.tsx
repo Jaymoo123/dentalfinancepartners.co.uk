@@ -60,7 +60,10 @@ export default async function ServicePage({
           </Link>
         }
       >
-        <p>{service.intro}</p>
+        {/* intro carries inline <a> anchors in src/data/charity-services.ts (Wave 1,
+            LEADS_250_PROGRAMME_2026-09-27 S4a); plain {service.intro} escaped them
+            as visible text, matching the defect already fixed on the for/[slug] route. */}
+        <p dangerouslySetInnerHTML={{ __html: service.intro }} />
       </PageHero>
 
       {/* Stat band. slate-800 under the slate-900 hero so the two read as

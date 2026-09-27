@@ -297,6 +297,208 @@ export const charityServices: CharityService[] = [
       },
     ],
   },
+  // Wave 1 append, docs/charities/_wave1/charity-registration.json, 2026-09-27, LEADS_250_PROGRAMME S4a
+  {
+    slug: "charity-registration",
+    title: "Charity Registration and Set-Up",
+    headline: "Registration and first-year support for new and late-registering charities",
+    metaTitle: "Charity Registration Accountant | Trustee Tax",
+    metaDescription: "Support for founders registering a charity in England and Wales: the £5,000 gate, CIO or company, HMRC recognition for Gift Aid, and the first year end.",
+    intro: "Money came in for a cause first, and the paperwork has caught up since. In England and Wales a charity must register with the Charity Commission once its income goes over £5,000 a year, and a charitable incorporated organisation must register whatever its income. First there is a structure to settle: a CIO, a charitable company, or an unincorporated association. Then a second and separate step, because the tax reliefs, Gift Aid included, depend on recognition by HMRC and not on the Commission. After that come the practical jobs: a bank account in the charity's name, a year end, the first annual return, and accounts that match the money raised. Groups often reach us late, with donations banked and a year to reconstruct, which is a normal starting point. The guide <a href=\"/guides/register-a-charity-step-by-step\">register a charity step by step</a> covers the mechanics; this page is the numbers behind it.",
+    stats: [
+      {
+        value: "£5,000",
+        label: "Income above which a charity in England and Wales must register with the Charity Commission",
+      },
+      {
+        value: "Any income",
+        label: "A CIO must register with the Commission whatever its income",
+      },
+      {
+        value: "10 months",
+        label: "Deadline for the annual return after the end of the financial year",
+      },
+      {
+        value: "25p per £1",
+        label: "Gift Aid claimed on eligible donations once HMRC recognises the charity",
+      },
+    ],
+    challenges: [
+      {
+        title: "Working out when the £5,000 gate was crossed",
+        body: "The threshold bites on annual income, and a group running raffles, collections and a grant in the same twelve months crosses it without noticing. The date matters, because the Commission asks for financial information with the application, so where the records are a bank statement and a spreadsheet the income must be rebuilt before anyone can date the duty.",
+      },
+      {
+        title: "Choosing a structure you will not have to unwind",
+        body: "An unincorporated association forms in an afternoon but leaves trustees personally exposed on contracts and leases, while a CIO or a charitable company carries its own legal identity and its own filing burden. The four forms sit side by side in <a href=\"/guides/charity-structures-which-to-choose\">the structures guide</a>, and changing later means transferring assets.",
+      },
+      {
+        title: "Assuming registration brings Gift Aid with it",
+        body: "It does not. Recognition by HM Revenue and Customs is a separate application, naming the trustees, the governing document and the bank account. Groups that spend months on the Commission form and none on HMRC leave donations unclaimed. Both steps are set out in <a href=\"/blog/trustee-compliance/hmrc-recognition-vs-charity-registration\">HMRC recognition versus Commission registration</a>.",
+      },
+      {
+        title: "Donations already taken before any of this existed",
+        body: "Money raised before recognition still belongs in the first accounts, and Gift Aid on it depends on a valid declaration covering those gifts, which a donor can give later and backdate four years. A declaration needs the charity's name, the donor's full name and home address, what it covers, and the statement that the donor must have paid enough tax. Declarations are kept for six years from the end of the accounting period.",
+      },
+      {
+        title: "A first year end nobody has planned",
+        body: "The year end chosen on the application sets every deadline that follows, starting with the first annual return. What that return must contain is tiered by income, and so is whether the accounts need outside scrutiny at all. The <a href=\"/calculators/independent-examination-vs-audit-checker\">examination and audit checker</a> shows which side of the gate a year lands.",
+      },
+      {
+        title: "Banking evidence trustees cannot produce on the day",
+        body: "Banks want the registered number, the governing document, identification for every trustee and often a resolution appointing signatories. Funds sitting in a founder's personal account create a reconciliation job and an awkward disclosure later. Assembling the paperwork in order shortens the wait and keeps the opening balances clean.",
+      },
+    ],
+    howWeHelp: [
+      {
+        title: "Getting the income picture straight first",
+        body: "Before any form is filed, the bank records, collection sheets and grant letters are worked through to establish what came in, from where, and when the £5,000 point was passed. That gives the figures the application asks for and the opening position for the accounts.",
+      },
+      {
+        title: "Comparing the structures against your plans",
+        body: "Liability, property, employment and funder requirements are set against the CIO, charitable company and unincorporated routes. Where the group is already a community interest company, what conversion involves is set out, including the asset lock. Longer reading sits in <a href=\"/guides/set-up-a-charity-cio\">the CIO set-up guide</a>.",
+      },
+      {
+        title: "Preparing the registration and recognition submissions",
+        body: "The financial sections of the Charity Commission application and the HMRC recognition submission are drafted together, so trustee details, governing document and bank account agree across both. Run in sequence, Gift Aid becomes claimable as soon as HMRC responds.",
+      },
+      {
+        title: "Putting Gift Aid on a footing that survives a check",
+        body: "Declaration wording, the record of what each one covers, the retention period and the claim process are set up, including where historic donations can be brought into a claim. Small cash and contactless collections are checked against the small donations scheme, which carries its own annual limit.",
+      },
+      {
+        title: "Carrying you through the first year end",
+        body: "The first accounts, the trustee annual report where income requires one, and the annual return are prepared to the ten-month deadline, with the scrutiny thresholds checked against the actual year so no examination requirement surfaces in month nine.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do we have to register if we have only raised a few thousand pounds?",
+        answer: "In England and Wales the duty to register arises once annual income goes over £5,000. Below that a group can still operate for charitable purposes without joining the public register of charities. The exception is a charitable incorporated organisation, which must register whatever its income, because a CIO only exists once the Commission has registered it.",
+      },
+      {
+        question: "What is the difference between a CIO and a charitable company?",
+        answer: "Both give the organisation its own legal identity, so property is held and contracts signed in the organisation's name. The practical split is the regulator. A CIO registers with the Charity Commission alone. A charitable company must register with the Commission, if eligible, and with Companies House, which brings company filings and company accounting rules alongside the charity ones.",
+      },
+      {
+        question: "Does registering with the Charity Commission give us Gift Aid?",
+        answer: "No. Gift Aid and the other charity tax reliefs depend on recognition by HM Revenue and Customs, a separate application. Once recognition is in place the charity claims 25p for every £1 of eligible donation, provided a valid declaration is held and the donor has paid at least as much UK income tax or capital gains tax in the year as all their charities will reclaim.",
+      },
+      {
+        question: "We have been taking donations for a year already. Is that a problem?",
+        answer: "It is common and it is workable. The priority is reconstructing what was received and separating restricted funds from unrestricted ones. Whether Gift Aid can be claimed on those earlier gifts turns on holding a valid declaration that covers them, which a donor can give now and backdate four years. Being straightforward about when income passed £5,000 beats a tidy but inaccurate history.",
+      },
+      {
+        question: "When is our first annual return due?",
+        answer: "Within ten months of the end of the financial year, and what you file depends on income. Under £10,000 a registered charity reports income and spending only. Between £10,000 and £25,000 it answers the annual return questions. Over £25,000 the trustee annual report and the accounts are attached as well.",
+      },
+      {
+        question: "Will our accounts need examining or auditing in the first year?",
+        answer: "Only if income takes you over the gate. External scrutiny, meaning an independent examination or an audit, starts once gross income exceeds £25,000, rising to £40,000 for accounting years ending on or after 30 September 2026. Below it the Charities Act requires none, though a governing document or a funder can still call for one, so the trust deed and grant conditions are read first.",
+      },
+    ],
+  },
+  // Wave 1 append, docs/charities/_wave1/charity-payroll-and-pensions.json, 2026-09-27, LEADS_250_PROGRAMME S4a
+  {
+    slug: "charity-payroll-and-pensions",
+    title: "Charity Payroll and Pensions",
+    headline: "Payroll, employer NIC and workplace pensions for charities taking on staff",
+    metaTitle: "Charity Payroll Services | Trustee Tax",
+    metaDescription: "Charity payroll services for your first paid employee: PAYE registration, employer NIC, the Employment Allowance, auto-enrolment and volunteer expenses.",
+    intro: "Moving from volunteers to paid staff turns a charity into an employer, and the obligations start before the first payslip. You register as an employer with HMRC and run PAYE, you account for employer Class 1 National Insurance at 15% on earnings above the £5,000 secondary threshold for 2026/27, and you check whether the charity can claim the Employment Allowance of up to £10,500, which charities and community amateur sports clubs are eligible for. Automatic enrolment duties start on day one: a workplace pension scheme, assessment of every worker, and a declaration of compliance to The Pensions Regulator. Paying a trustee is a different question again and is usually not permitted without express authority. What a first hire triggers, and what it costs, follows.",
+    stats: [
+      {
+        value: "15%",
+        label: "Employer Class 1 National Insurance on earnings above the secondary threshold, 2026/27",
+      },
+      {
+        value: "£5,000",
+        label: "Secondary threshold a year (£417 a month) before employer NIC starts, 2026/27",
+      },
+      {
+        value: "£10,500",
+        label: "Employment Allowance charities and CASCs can claim against employer NIC",
+      },
+      {
+        value: "£10,000",
+        label: "Annual earnings trigger for automatic enrolment of a worker aged 22 to State Pension age",
+      },
+    ],
+    challenges: [
+      {
+        title: "Registering as an employer before the first payday",
+        body: "PAYE registration is not instant, and HMRC expects the scheme to be open before the first payment of wages. Boards that agree a start date two weeks out often cannot file a Full Payment Submission on time, and late filing penalties apply to charities exactly as they do to commercial employers.",
+      },
+      {
+        title: "Costing a hire, not just a salary",
+        body: "A £24,000 post is not a £24,000 budget line. Employer NIC at 15% above the £5,000 threshold, an employer pension contribution of at least 3% of qualifying earnings, holiday cover and any agreed pay rise sit on top. Where the Employment Allowance is available it absorbs up to £10,500 of employer NIC a year, which for one modest post can remove the charge.",
+      },
+      {
+        title: "Automatic enrolment duties land immediately",
+        body: "Duties begin on the day the first member of staff starts. A worker aged between 22 and State Pension age earning at least £10,000 a year goes into a qualifying scheme, on a minimum total contribution of 8% of qualifying earnings, at least 3% from the employer. Even if nobody meets the trigger, you still write to staff and file a declaration.",
+      },
+      {
+        title: "Paying trustees, and what it triggers if you do",
+        body: "Trustees generally serve unpaid. Payment for acting as a trustee needs authority in the governing document, from the Charity Commission or under statute, and paying without it creates a recoverable benefit and a reportable issue. Authorised payments are usually taxable income, so PAYE or self-employment reporting follows.",
+      },
+      {
+        title: "Volunteer expenses drifting into taxable pay",
+        body: "Reimbursing a volunteer for what they actually spent is not pay. A round-sum allowance, an honorarium or a mileage rate above the approved amount can be, and once it is, PAYE and NIC apply and the volunteer's benefits position can change. The fix is a written expenses policy plus receipts, applied from now on.",
+      },
+      {
+        title: "A CIC or trading subsidiary payrolls on different terms",
+        body: "A <a href=\"/for/cics\">community interest company</a> is not a charity, but it is an employer in exactly the same way. Where a charity and a trading subsidiary share staff, the cost is recharged on a defensible basis, or the charity subsidises taxable trade. Groups also share one apprenticeship levy allowance once a combined pay bill approaches £3 million.",
+      },
+    ],
+    howWeHelp: [
+      {
+        title: "Employer set-up and the first payroll run",
+        body: "The PAYE scheme is registered against your intended start date, and the first payslips and Full Payment Submissions go out on time. Employment status for anyone engaged as a freelancer is checked before the first payment, not after it.",
+      },
+      {
+        title: "Employer NIC and the Employment Allowance",
+        body: "The employer NIC position for 2026/27 runs at 15% above the £5,000 secondary threshold, and eligibility for the £10,500 Employment Allowance is checked, including the connected-organisation rules where the charity has a subsidiary. The claim runs through the payroll, so the monthly cash figure reflects it.",
+      },
+      {
+        title: "Auto-enrolment, assessment and the declaration",
+        body: "Each worker is assessed against the age and earnings tests every pay period, postponement is applied where you want it, and the letters go out. Scheme choice is tested against your payroll software, and the declaration is filed.",
+      },
+      {
+        title: "Trustee payments, volunteers and expenses policy",
+        body: "Where a payment to a trustee or volunteer is proposed, a specialist reviews the authority relied on, the tax treatment, and the disclosure in the <a href=\"/services/charity-accounts\">annual accounts</a>. The output is a short written expenses and honoraria position the board can adopt.",
+      },
+      {
+        title: "Year-end reporting and the staff-cost note",
+        body: "P60s, reporting for any benefits in kind, and the staff-cost disclosures are prepared from the same payroll records as the monthly runs. Where <a href=\"/services/charity-bookkeeping\">bookkeeping</a> and payroll run together, restricted-fund salary apportionment comes out of the ledger, not a spreadsheet rebuilt each year.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can a charity claim the Employment Allowance?",
+        answer: "Yes. Charities, including community amateur sports clubs, are eligible for the Employment Allowance, worth up to £10,500 against employer Class 1 National Insurance. It is claimed through the payroll and reduces the NIC bill until it is used up or the year ends. Connected charities and companies share one allowance, so a charity with a trading subsidiary cannot claim it twice. Check eligibility each tax year rather than assuming it carries forward.",
+      },
+      {
+        question: "How much employer National Insurance will our first hire cost?",
+        answer: "For 2026/27 employer Class 1 National Insurance is 15% of earnings above the secondary threshold of £5,000 a year, which is £417 a month. On a salary of £24,000 that is 15% of £19,000. If the charity is eligible for the Employment Allowance, up to £10,500 of that liability is covered, which for a post of this size generally removes the charge. Pension contributions sit outside it.",
+      },
+      {
+        question: "Do we have to set up a pension for one part-time employee?",
+        answer: "You have automatic enrolment duties from the first day you employ anyone, whatever the hours. Whether that person must be enrolled depends on age and earnings: enrolment is mandatory for a worker aged 22 to State Pension age earning at least £10,000 a year. Someone below the trigger can still ask to join, and you may have to contribute. Either way you write to staff and file a declaration with The Pensions Regulator.",
+      },
+      {
+        question: "Can we pay a trustee for doing work for the charity?",
+        answer: "Usually not without authority. Payment simply for being a trustee needs an express power in the governing document, Commission consent or a statutory route, and it is rare. Payment for a separate service, such as building work, is permitted more often but carries conditions and the trustee withdraws from the decision. Authorised payments are taxable in the trustee's hands, so reporting follows and the accounts disclose them.",
+      },
+      {
+        question: "Are volunteer expenses taxable?",
+        answer: "Reimbursing a volunteer for costs they actually incurred, with receipts, is not taxable pay. Problems start with round-sum allowances, honoraria, gift vouchers and mileage above the approved rate, which can all be earnings and bring PAYE and National Insurance with them. Payments can also affect a volunteer's own benefit entitlement. A policy that reimburses evidenced actual cost is easy to explain at an independent examination.",
+      },
+      {
+        question: "Does the apprenticeship levy apply to charities?",
+        answer: "Only to larger ones. The levy is charged at 0.5% of an annual pay bill above £3 million, and every employer has a £15,000 annual allowance to set against it. Most charities are nowhere near it. It matters where a charity and its connected companies have a combined pay bill near the threshold, because they share one £15,000 allowance and decide how it is used.",
+      },
+    ],
+  },
 ];
 
 export function getCharityService(slug: string): CharityService | undefined {

@@ -1,0 +1,94 @@
+{
+  "slug": "small-charities",
+  "title": "Small Charities",
+  "headline": "Accounts, Gift Aid and filing for small charities under the examination threshold",
+  "metaTitle": "Accountants for Small Charities | Trustee Tax",
+  "metaDescription": "What a small charity under the £25,000 examination threshold has to file, how Gift Aid and GASDS work, and when growth changes the answer.",
+  "intro": "You run a small charity on volunteer time, your income sits below the independent examination threshold, and you want to know whether you need an accountant at all. At or below £25,000 gross income the Charities Act asks for no external scrutiny of your accounts, so nothing obliges you to buy one. Plenty still applies: the annual return falls due within 10 months of your financial year end, your trustees have to stand behind the accounts, Gift Aid claims have to survive an HMRC check, and your governing document may impose an examination the law does not. Charities this size usually want a light-touch arrangement rather than a full service, with someone who sets the records up once and is reachable at the year end. Below is what the Commission and HMRC require under the threshold, and the point at which growing income changes the answer.",
+  "stats": [
+    { "value": "£5,000", "label": "Income above which a charity in England and Wales must register with the Charity Commission" },
+    { "value": "£25,000", "label": "Gross income above which trustees must arrange an independent examination or an audit (£40,000 for accounting years ending on or after 30 September 2026)" },
+    { "value": "10 months", "label": "Deadline for the annual return after the end of the financial year" },
+    { "value": "£8,000", "label": "Small donations a year that can carry a GASDS top-up, worth up to £2,000" }
+  ],
+  "challenges": [
+    {
+      "title": "Working out whether anyone has to look at your accounts",
+      "body": "The scrutiny requirement switches on above £25,000 of gross income; for years ending on or after 30 September 2026 the gate moves to £40,000. Two things override that comfort: your governing document may require an examination whatever your income, and a funder can write one into a grant agreement. Scotland requires scrutiny at any income."
+    },
+    {
+      "title": "Receipts and payments accounts, and who may not use them",
+      "body": "A charity that is not a company, with gross income of £250,000 or less, can prepare receipts and payments accounts: cash in, cash out, and a statement of assets and liabilities. Charitable companies cannot use it at any size, because company law requires accruals accounts."
+    },
+    {
+      "title": "Filing something every year even when income is tiny",
+      "body": "Registration bites once income exceeds £5,000, and a charitable incorporated organisation registers whatever its income. Every registered charity files an annual return within 10 months of its year end, with tiered content: income and spending under £10,000, the return questions between £10,000 and £25,000, and above that the trustees' annual report and accounts attached too. <a href=\"/blog/trustee-compliance/annual-report-vs-annual-return\">Report and return are separate filings</a>."
+    },
+    {
+      "title": "Gift Aid records that were never really kept",
+      "body": "Gift Aid is worth 25p for every £1 donated, but only where a valid declaration exists. It names the charity and the donor, gives the donor's home address, and states that the donor must pay at least as much UK income or capital gains tax as every charity will reclaim. Records run six years from the end of the accounting period, and unsupported claims are repaid."
+    },
+    {
+      "title": "The small donations scheme and its matching rule",
+      "body": "GASDS tops up cash and contactless gifts of £30 or less where no declaration is held, on up to £8,000 of donations a tax year. It is not claimed on the same donations as Gift Aid, and cannot exceed ten times the donations you do claim Gift Aid on that year. See <a href=\"/blog/gift-aid/gasds-rules\">the full GASDS rules</a>."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Setting the records up once, properly",
+      "body": "How money currently gets recorded is worked through once, then a receipts and payments structure goes in that a volunteer can keep running: fund columns separating restricted from unrestricted money, a donations log that feeds the Gift Aid claim."
+    },
+    {
+      "title": "Year-end accounts, the return and the thresholds",
+      "body": "The accounts and the statement of assets and liabilities are drawn up, then what the annual return asks at your income level is assembled. Income is tracked against the scrutiny and accounts gates using your accounting year end as the test date, so a threshold is flagged while there is still a year to plan around it."
+    },
+    {
+      "title": "Gift Aid and GASDS claims reviewed before they go",
+      "body": "Declaration wording and coverage are checked, the claim is tested against the donor benefit limits, and the matching rule is applied so the top-up requested is one HMRC will pay. Run the numbers with the <a href=\"/calculators/gift-aid-calculator\">Gift Aid calculator</a>, then have the claim reviewed before submission rather than after a repayment request."
+    },
+    {
+      "title": "A light-touch arrangement rather than a full service",
+      "body": "Most charities under the threshold want one fixed annual touchpoint and somewhere to send a question. Introductions from this page are made on that footing, to a firm that works with charities of your size."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a small charity legally need an accountant?",
+      "answer": "No. Nothing in charity law requires a charity to appoint one, and below £25,000 gross income the Charities Act requires no external scrutiny of the accounts. Trustees stay responsible for proper records, the accounts and filing the annual return on time. What an accountant buys a charity this size is the first set-up, a second pair of eyes on Gift Aid, and someone to call when a grant or a threshold changes the picture."
+    },
+    {
+      "question": "What is the independent examination threshold and is it changing?",
+      "answer": "Once gross income exceeds £25,000, trustees must arrange external scrutiny: an independent examination, or an audit where the audit thresholds are met. For accounting years ending on or after 30 September 2026 the gate rises to £40,000. Because the rule attaches to the accounting year end rather than the date you happen to look, two charities with identical income can sit on opposite sides of it. <a href=\"/blog/independent-examination-and-audit/what-is-an-independent-examination\">What an examination involves</a> is worth reading first."
+    },
+    {
+      "question": "Can we use receipts and payments accounts?",
+      "answer": "If your charity is not a company and gross income is £250,000 or less, yes. These accounts record cash in and cash out across the year, with a statement of assets and liabilities at the end, and no accruals or depreciation. For accounting years ending on or after 30 September 2026 that boundary rises to £500,000. Charitable companies are the exception and prepare accruals accounts at any size, because the obligation comes from company law rather than charity law."
+    },
+    {
+      "question": "How much should a small charity hold in reserves?",
+      "answer": "There is no statutory figure, and a level that suits a grant-funded project will not suit a charity running a building. What matters is a stated policy, reasoned from your own commitments and income pattern, and accounts that show the unrestricted reserves genuinely available rather than total funds. Funders ask for it, and once income passes £25,000 the trustees' annual report is where it gets written down. Our research on <a href=\"/blog/charity-finance/how-much-should-a-charity-hold-in-reserves\">reserves by cause</a> shows the ranges comparable charities report."
+    },
+    {
+      "question": "Can we claim GASDS in our first year?",
+      "answer": "Yes. The separate two-year track record test went for donations collected after 6 April 2017. What remains is the matching rule: small donations claimed on cannot exceed ten times the donations you claim Gift Aid on in the same tax year. A first-year charity therefore has to make a Gift Aid claim that year to unlock any GASDS at all. The ceiling is £8,000 of small donations, worth up to £2,000, and claims run out two years after the tax year ends."
+    },
+    {
+      "question": "What changes when our income grows past the threshold?",
+      "answer": "Passing £25,000 brings external scrutiny and a fuller annual return. Passing £250,000 ends receipts and payments accounts for non-company charities and limits who may examine them to members of the professional bodies listed in the Charities Act. An audit becomes mandatory above £1 million of income, or above £250,000 of income where gross assets exceed £3.26 million. Each figure also rises for accounting years ending on or after 30 September 2026."
+    }
+  ],
+  "sources": [
+    "house_positions.md position 1: registration threshold £5,000; a CIO registers whatever its income. https://www.gov.uk/guidance/how-to-register-your-charity-cc21b",
+    "house_positions.md position 2: annual return tiering (£10,000 and £25,000) and the 10-month deadline. https://www.gov.uk/guidance/prepare-a-charity-annual-return",
+    "house_positions.md position 3: independent examination gate £25,000, £40,000 for accounting years ending on or after 30 September 2026 (Charities Act 2011 s145; S.I. 2026/427). https://www.gov.uk/guidance/changes-to-charity-accounting-and-reporting",
+    "house_positions.md position 4: audit at income over £1m, or income over £250,000 with gross assets over £3.26m (both limbs published together). https://www.legislation.gov.uk/ukpga/2011/25/section/144",
+    "house_positions.md position 5: qualified examiner required above £250,000, listed professional bodies. CC31 full guidance.",
+    "house_positions.md position 6: receipts and payments available up to £250,000 (£500,000 for years ending on or after 30 September 2026); charitable companies always accruals. CC31 / CC15d.",
+    "house_positions.md position 14: Gift Aid 25p per £1 and the donor tax-paid condition. https://www.gov.uk/claim-gift-aid",
+    "house_positions.md position 15: declaration content, six-year retention, repayment where no declaration is held. https://www.gov.uk/guidance/gift-aid-declarations-claiming-tax-back-on-donations",
+    "house_positions.md position 16: donor benefit limits (relevant value test). https://www.gov.uk/guidance/gift-aid-what-donations-charities-and-cascs-can-claim-on",
+    "house_positions.md position 17: GASDS £30 per donation, £8,000 a year, £2,000 maximum top-up, 10x matching rule, two-year claim deadline, no first-year exemption from matching. https://www.gov.uk/government/publications/charities-detailed-guidance-notes/chapter-8-the-gift-aid-small-donations-scheme-from-6-april-2017",
+    "house_positions.md position 26: Scotland requires external scrutiny at any income, no de minimis (SSI 2006/218 reg 11). https://www.legislation.gov.uk/ssi/2006/218/regulation/11",
+    "Internal links verified on disk: charities/web/content/blog/annual-report-vs-annual-return.md, gasds-rules.md, what-is-an-independent-examination.md, how-much-should-a-charity-hold-in-reserves.md (category slugs via slugifyCategory in charities/web/src/lib/blog.ts); charities/web/src/lib/calculators/tools/gift-aid-calculator.ts (slug gift-aid-calculator)."
+  ]
+}
