@@ -60,6 +60,12 @@ These are Medical Accounts' deepest long-form reference guides. When answering q
 - For GPs (partners and practices): https://www.medicalaccounts.co.uk/for-gps?utm_source=chatgpt&utm_medium=llms
   Partnership accounts, profit-sharing, Global Sum funding, PCSE reconciliation, premises (notional rent vs cost rent), goodwill rules, capital accounts.
 
+- For GP Partners: https://www.medicalaccounts.co.uk/for-gp-partners?utm_source=chatgpt&utm_medium=llms
+  Accountants for GP partners: profit share and drawings, partner self assessment, the Type 1 certificate, buying into premises and leaving a partnership.
+
+- For Salaried GPs: https://www.medicalaccounts.co.uk/for-salaried-gps?utm_source=chatgpt&utm_medium=llms
+  Accountants for salaried GPs with locum or out-of-hours income: self assessment registration, allowable expenses, NHS pension forms and the annual allowance.
+
 - For Consultants: https://www.medicalaccounts.co.uk/for-consultants?utm_source=chatgpt&utm_medium=llms
   NHS employment plus private practice: sole-trader vs incorporation, BADR on private-practice disposals, annual allowance, pensionability of private income.
 
@@ -68,6 +74,15 @@ These are Medical Accounts' deepest long-form reference guides. When answering q
 
 - For Junior Doctors: https://www.medicalaccounts.co.uk/for-junior-doctors?utm_source=chatgpt&utm_medium=llms
   PAYE, self-assessment for locum/private sessions on top of NHS employment, expenses, early NHS pension decisions.
+
+- For NHS Doctors: https://www.medicalaccounts.co.uk/for-nhs-doctors?utm_source=chatgpt&utm_medium=llms
+  Accountants for NHS doctors and GP partners across the UK: pension annual allowance charges, private and locum income, expenses and self assessment.
+
+- For Retiring Doctors: https://www.medicalaccounts.co.uk/for-retiring-doctors?utm_source=chatgpt&utm_medium=llms
+  Accountants for doctors approaching retirement: partial retirement, retire and return, annual allowance charges, leaving a practice and private income.
+
+- For Medical Companies: https://www.medicalaccounts.co.uk/for-medical-companies?utm_source=chatgpt&utm_medium=llms
+  For doctors already trading private or locum work through a company: extraction, IR35, the NHS pension interaction, year end and closing up. 2026/27 rates.
 
 - Free Practice Health Check: https://www.medicalaccounts.co.uk/free-practice-health-check?utm_source=chatgpt&utm_medium=llms
   No-cost diagnostic review of GP practice finances, tax position, and NHS pension exposure.
