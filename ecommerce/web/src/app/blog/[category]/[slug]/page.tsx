@@ -7,10 +7,27 @@ import { ReadingProgress } from "@accounting-network/web-shared/design/blog/Read
 import { TableOfContents } from "@accounting-network/web-shared/design/blog/TableOfContents";
 import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
 import { siteConfig } from "@/config/site";
-import { btnPrimary, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
+import { niche } from "@/config/niche-loader";
+import { focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
 import { buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
+
+/**
+ * Split body HTML after the second <h2> for the inline mini-form (LEADS_250
+ * S2). Same matchAll-and-slice technique as contractors-ir35's
+ * packages/web-shared/content/blog-splits.ts, indexed to the second heading
+ * instead of a percentage of the remainder. Fewer than two h2s: no split,
+ * form renders after the whole body.
+ */
+function splitAtSecondH2(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  if (headings.length < 2) return { before: html, after: null };
+  const cut = headings[1].index!;
+  return { before: html.slice(0, cut), after: html.slice(cut) };
+}
 
 export const dynamicParams = false;
 
@@ -35,6 +52,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
   const readTime = calculateReadTime(post.contentHtml);
   const headings = extractHeadings(post.contentHtml);
+  const bodySplit = splitAtSecondH2(post.contentHtml);
   const related = getRelatedPosts(post.slug, post.category, 3).map((p) => ({
     href: `/blog/${getCategorySlug(p)}/${p.slug}`,
     title: p.title,
@@ -65,7 +83,13 @@ export default async function BlogPostPage({ params }: Props) {
           <TableOfContents headings={headings} />
         </div>
       )}
-      <div className={`prose prose-neutral mt-10 max-w-none ${focusRingAuthoredLinks}`} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <div className={`prose prose-neutral mt-10 max-w-none ${focusRingAuthoredLinks}`}>
+        <div dangerouslySetInnerHTML={{ __html: bodySplit.before }} />
+        <InlineMiniLeadForm topic={post.category} />
+        {bodySplit.after !== null ? (
+          <div dangerouslySetInnerHTML={{ __html: bodySplit.after }} />
+        ) : null}
+      </div>
       {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
           That component is a Radix accordion with no `forceMount`, so closed answers
           are absent from the server HTML. This page emits FAQPage JSON-LD above that
@@ -92,6 +116,16 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       )}
+      {/* Blog end-of-article capture (LEADS_250 S2), form_id = lead_form.
+          Replaces the text-only CTA that used to sit here after Related
+          reading; now sits before it per spec order. */}
+      <div className="mt-12 border-t border-neutral-200 pt-8">
+        <p className="font-semibold text-neutral-900">{niche.blog.cta_heading}</p>
+        <p className="mt-2 text-sm text-neutral-600">{niche.blog.cta_body}</p>
+        <div className="mt-6 rounded-md border border-neutral-200 p-6">
+          <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+        </div>
+      </div>
       {related.length > 0 && (
         <div className="mt-12 border-t border-neutral-200 pt-8">
           <h2 className="text-xl font-bold text-neutral-900">Related reading</h2>
@@ -101,14 +135,6 @@ export default async function BlogPostPage({ params }: Props) {
           <RelatedArticles items={related} className="mt-6" />
         </div>
       )}
-      {/* DEFERRED, not declined: packages/web-shared/design/blog/BlogSidebarCta.tsx.
-          It adds a new CTA placement and new authored copy, both owner-visible, and
-          this site's data-cta series was created by phase 1 with no history. */}
-      <div className="mt-12 border-t border-neutral-200 pt-8">
-        <p className="font-semibold text-neutral-900">Need help with your online selling taxes?</p>
-        <p className="mt-2 text-sm text-neutral-600">Tell us about your store or marketplace accounts and we will come back within 24 hours.</p>
-        <Link href="/contact" className={`${btnPrimary} mt-4`}>Get in touch</Link>
-      </div>
       </div>
       {headings.length >= 3 && (
         /* ONE scroll container, and it is this wrapper, not the component.

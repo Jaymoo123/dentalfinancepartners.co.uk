@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { CalendarDays, Clock } from "lucide-react";
 import { HubArticleList } from "@accounting-network/web-shared/design/blog/HubArticleList";
 import { TableOfContents } from "@accounting-network/web-shared/design/blog/TableOfContents";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import { buildOgImageUrl, buildHowToJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { wrapWideTables } from "@/components/blog/wrapWideTables";
 import { siteContainerLg } from "@/components/ui/layout-utils";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -19,6 +21,20 @@ import {
 } from "@/lib/blog";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
+
+/**
+ * Split body HTML after the second <h2> for the inline mini-form (LEADS_250
+ * S2). Same matchAll-and-slice technique as contractors-ir35's
+ * packages/web-shared/content/blog-splits.ts, indexed to the second heading
+ * instead of a percentage of the remainder. Fewer than two h2s: no split,
+ * form renders after the whole body.
+ */
+function splitAtSecondH2(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  if (headings.length < 2) return { before: html, after: null };
+  const cut = headings[1].index!;
+  return { before: html.slice(0, cut), after: html.slice(cut) };
+}
 
 export const dynamicParams = false;
 
@@ -71,6 +87,7 @@ export default async function BlogPostPage({ params }: Props) {
   const headings = extractHeadings(post.contentHtml);
   const readTime = calculateReadTime(post.contentHtml);
   const related = getRelatedPosts(post.slug, post.category, 3);
+  const bodySplit = splitAtSecondH2(wrapWideTables(post.contentHtml));
 
   return (
     // No <main> here: the layout shell owns the single <main id="main">.
@@ -149,10 +166,13 @@ export default async function BlogPostPage({ params }: Props) {
 
             {/* scroll-mt-24 = 96px, so a contents link does not park its
                 heading under the sticky header the shell now renders. */}
-            <div
-              className="prose mt-10 max-w-none [&_h2]:scroll-mt-24 [&_h3]:scroll-mt-24"
-              dangerouslySetInnerHTML={{ __html: wrapWideTables(post.contentHtml) }}
-            />
+            <div className="prose mt-10 max-w-none [&_h2]:scroll-mt-24 [&_h3]:scroll-mt-24">
+              <div dangerouslySetInnerHTML={{ __html: bodySplit.before }} />
+              <InlineMiniLeadForm topic={post.category} />
+              {bodySplit.after !== null ? (
+                <div dangerouslySetInnerHTML={{ __html: bodySplit.after }} />
+              ) : null}
+            </div>
 
             {/* Phase-0 FAQ block. Native <details>, deliberately NOT a Radix
                 accordion: every answer asserted in the FAQPage JSON-LD above
@@ -182,25 +202,14 @@ export default async function BlogPostPage({ params }: Props) {
               </section>
             )}
 
-            {/* Text CTA, not a form. This site carries no capture surface on
-                blog articles and none is added here. */}
-            <section className="mt-12 rounded-xl bg-[#0e1a3a] p-8 text-white">
-              <h2 className="text-xl font-semibold">Need help with your crypto tax position?</h2>
-              <p className="mt-3 text-sm leading-relaxed text-slate-200">
-                Tell us about your situation and we will come back to you.
-              </p>
-              {/* Written out rather than composed from btnPrimary: that recipe
-                  already sets bg/text, and two conflicting utilities in one
-                  class string resolve by stylesheet order, not by the order
-                  they are written, so the override is not reliably the winner.
-                  White on navy is 17.11:1; the hover ground #8f421f carries
-                  white at 7.08:1. */}
-              <Link
-                href="/contact"
-                className={`mt-6 inline-flex min-h-12 items-center justify-center bg-white px-7 py-3.5 text-base font-medium tracking-wide text-[#0e1a3a] transition-colors duration-150 hover:bg-primary-600 hover:text-white active:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white`}
-              >
-                Get in touch
-              </Link>
+            {/* Blog end-of-article capture (LEADS_250 S2), form_id = lead_form.
+                Replaces the text-only CTA that used to sit here. */}
+            <section id="enquiry-form" className="mt-12 rounded-xl bg-[#0e1a3a] p-8 text-white">
+              <h2 className="text-xl font-semibold">{niche.blog.cta_heading}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-slate-200">{niche.blog.cta_body}</p>
+              <div className="mt-6 rounded-xl bg-white p-6 sm:p-8">
+                <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+              </div>
             </section>
 
             {related.length > 0 && (

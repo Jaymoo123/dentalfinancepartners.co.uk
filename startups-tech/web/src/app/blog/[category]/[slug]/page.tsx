@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import { buildOgImageUrl, buildHowToJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
@@ -9,8 +10,24 @@ import {
   getCategorySlug,
   calculateReadTime,
 } from "@/lib/blog";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
+
+/**
+ * Split body HTML after the second <h2> for the inline mini-form (LEADS_250
+ * S2). Same matchAll-and-slice technique as contractors-ir35's
+ * packages/web-shared/content/blog-splits.ts, indexed to the second heading
+ * instead of a percentage of the remainder. Fewer than two h2s: no split,
+ * form renders after the whole body.
+ */
+function splitAtSecondH2(html: string): { before: string; after: string | null } {
+  const headings = [...html.matchAll(/<h2[^>]*>/g)];
+  if (headings.length < 2) return { before: html, after: null };
+  const cut = headings[1].index!;
+  return { before: html.slice(0, cut), after: html.slice(cut) };
+}
 
 export const dynamicParams = false;
 
@@ -56,6 +73,7 @@ export default async function BlogPostPage({ params }: Props) {
   const { category, slug } = await params;
   const post = getPostByCategoryAndSlug(category, slug);
   if (!post) notFound();
+  const bodySplit = splitAtSecondH2(post.contentHtml);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -93,18 +111,19 @@ export default async function BlogPostPage({ params }: Props) {
           </ul>
         </aside>
       )}
-      <article
-        className="prose prose-neutral mt-10 max-w-none"
-        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-      />
+      <article className="prose prose-neutral mt-10 max-w-none">
+        <div dangerouslySetInnerHTML={{ __html: bodySplit.before }} />
+        <InlineMiniLeadForm topic={post.category} />
+        {bodySplit.after !== null ? (
+          <div dangerouslySetInnerHTML={{ __html: bodySplit.after }} />
+        ) : null}
+      </article>
       <div className="mt-12 rounded-md border border-neutral-200 p-6">
-        <h2 className="text-lg font-semibold text-neutral-900">Need specialist startup tax advice?</h2>
-        <p className="mt-2 text-sm text-neutral-600">
-          Tell us about your situation and we will come back within 24 hours.
-        </p>
-        <Link href="/contact" className="mt-4 inline-block font-medium underline">
-          Get in touch
-        </Link>
+        <h2 className="text-lg font-semibold text-neutral-900">{niche.blog.cta_heading}</h2>
+        <p className="mt-2 text-sm text-neutral-600">{niche.blog.cta_body}</p>
+        <div className="mt-4">
+          <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+        </div>
       </div>
     </main>
   );
