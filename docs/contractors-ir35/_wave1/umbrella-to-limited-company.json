@@ -1,0 +1,104 @@
+{
+  "slug": "umbrella-to-limited-company",
+  "title": "Umbrella to Limited Company",
+  "headline": "Moving from umbrella to your own limited company",
+  "metaTitle": "Umbrella to Limited Company Accountant | Setup Handled",
+  "metaDescription": "Moving from an umbrella to your own limited company for an outside IR35 contract. Formation, PAYE, VAT, first payroll and dividends handled for 2026/27.",
+  "intro": "You are paid through an umbrella, you have an outside IR35 contract in hand or a client willing to engage a personal service company, and you want the switch handled rather than researched. The work splits three ways: ending the umbrella employment cleanly, incorporating and registering for the right taxes, and getting the first payroll and dividend right so the year does not need unpicking later. Most of it is sequencing. Companies House takes a day; the PAYE scheme, the VAT decision and the timing against a running assignment are where people lose weeks. A specialist reviews where you sit in the assignment and what the umbrella has already taxed. Figures here are 2026/27.",
+  "stats": [
+    {
+      "value": "£90,000",
+      "label": "VAT registration threshold, frozen since 1 April 2024"
+    },
+    {
+      "value": "15%",
+      "label": "Employer NIC above £5,000, funded from your umbrella assignment rate"
+    },
+    {
+      "value": "16.5%",
+      "label": "Flat rate scheme percentage for a limited cost trader"
+    },
+    {
+      "value": "6 April 2026",
+      "label": "Umbrella PAYE joint and several liability starts"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Timing the switch against a running assignment",
+      "body": "Leaving an umbrella part way through an assignment is a contractual question before it is a tax one. The agency has to agree to contract with a company rather than pay you through a provider on its preferred supplier list, the end client has to accept a personal service company, and the umbrella employment has to end on notice. Get the order wrong and there is a week with nothing payable in the chain. On whether the move is worth making, see <a href=\"/blog/umbrella-vs-limited-company/switching-umbrella-to-limited-company\">when umbrella to limited makes sense</a>."
+    },
+    {
+      "title": "What the umbrella has already taxed",
+      "body": "Your umbrella has run PAYE cumulatively since 6 April, so part of your personal allowance and basic rate band is used, and the final payslip should settle accrued holiday pay. Employer National Insurance at 15%, the Apprenticeship Levy at 0.5% and the provider margin all came out of the assignment rate, which is why an umbrella day rate never matched the company equivalent. From 6 April 2026 the agency that contracts with the end client, or the client where there is no agency, is jointly and severally liable for PAYE the umbrella fails to remit; the umbrella stays the employer. There is a walkthrough in <a href=\"/blog/umbrella-vs-limited-company/umbrella-company-deductions-explained\">reading your umbrella payslip</a>."
+    },
+    {
+      "title": "The VAT decision, and the flat rate scheme",
+      "body": "Registration is compulsory once VAT taxable turnover passes £90,000 in a rolling twelve months; deregistration sits at £88,000, both frozen since 1 April 2024. The flat rate scheme needs care: labour only work almost always meets the limited cost trader test, under 2% of turnover or under £1,000 a year on goods, forcing the 16.5% rate and wiping out most of the benefit. The test applies every period. See <a href=\"/blog/mtd-and-compliance/flat-rate-vat-limited-cost-trader\">the limited cost trader rule</a>."
+    },
+    {
+      "title": "First payroll, and the first dividend",
+      "body": "Where you are the only director and there are no other employees, the £10,500 Employment Allowance is not available, so salary targets usually sit between the £5,000 secondary threshold and the £6,708 lower earnings limit, the latter buying a qualifying National Insurance year for a small slice of employer NIC. With the allowance available, £12,570 is often better, and no single salary is optimal for everyone. Dividends are separate: paid from profit after corporation tax, taxed at 10.75%, 35.75% and 39.35% from 6 April 2026."
+    },
+    {
+      "title": "The expenses that change",
+      "body": "Coming out of an umbrella does not open up travel relief automatically. A client site stops being a temporary workplace once you expect to spend more than 40% of your working time there over a period exceeding 24 months, and relief stops when that expectation forms, not at month 24. Outside IR35 keeps the relief subject to that rule; inside, home to client travel is generally not deductible. Mileage in your own car is 55p for the first 10,000 business miles and 25p after, from 6 April 2026. The bigger lever is an employer pension contribution, free of National Insurance and deductible for the company."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A review before you give notice",
+      "body": "The contract offered, the working practices behind it and the rate are weighed together, then what the switch changes in cash terms is set out. Run your own numbers first on the <a href=\"/calculators/umbrella-vs-limited-calculator\">umbrella against limited company calculator</a>. Clean wording over employee like working practices will not hold, so both are checked."
+    },
+    {
+      "title": "Formation and the registrations, in order",
+      "body": "Incorporation, the identity verification alongside it, share structure, registered office, the PAYE scheme, the corporation tax record and the VAT choice. Your accountant prepares each registration and tracks the references as they arrive, so the company can invoice without a gap. Steps are in <a href=\"/blog/contractor-accounting-basics/set-up-limited-company-contractor\">setting up a limited company for contracting</a>."
+    },
+    {
+      "title": "The first payroll and the first dividend",
+      "body": "Payroll is prepared and the real time information filed, with the P45 year to date figures carried over so your tax code starts from the right place. Salary is modelled against Employment Allowance eligibility. Once there is distributable profit, the dividend paperwork follows: board minute, voucher, and a record of what stays behind."
+    },
+    {
+      "title": "The first year of filings, planned not chased",
+      "body": "Annual accounts, the CT600, the confirmation statement, VAT returns on the scheme you picked, and self assessment for your salary and dividends. Dates are fixed at the start against the accounting reference date, and the corporation tax position is looked at before the year closes, while a pension contribution can still move it."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I switch mid-contract, or wait for a renewal?",
+      "answer": "Both happen. The blocker is rarely tax and usually the chain, and some agencies will move you only at renewal while others novate mid-assignment. Ask before you resign, so the umbrella employment ending and the company contract starting line up."
+    },
+    {
+      "question": "What happens to my holiday pay and my P45?",
+      "answer": "Accrued holiday pay is yours and must be paid out rather than retained, so check the final payslip against what you accrued and took. The P45 carries your pay and tax to date, which the company payroll needs so your personal allowance is not given twice."
+    },
+    {
+      "question": "Should I register for VAT straight away?",
+      "answer": "Registration becomes compulsory once VAT taxable turnover exceeds £90,000 in a rolling twelve months, or is expected to within thirty days, and most contractors on a normal rate reach that inside a year. Registering voluntarily earlier lets the company reclaim input VAT and costs a VAT registered client nothing, so the decision turns on your rate and start date."
+    },
+    {
+      "question": "Is the flat rate scheme worth it?",
+      "answer": "Usually not. Labour only contracting almost always fails the goods test, which forces the 16.5% rate and removes nearly all of the gain. Genuine, regular goods spend changes that, so both methods are modelled on your own figures before either is picked."
+    },
+    {
+      "question": "How soon can I take a dividend?",
+      "answer": "Only once there is distributable profit, meaning profit after corporation tax has been provided for, and only with the paperwork behind it. Cash drawn before that is a director's loan, which carries a section 455 charge on the company if still outstanding nine months and one day after the year end."
+    },
+    {
+      "question": "What if a later contract turns out to be inside IR35?",
+      "answer": "Keeping the company is often still sensible. It earns its keep where you also hold outside IR35 work, want to retain profit, or use it for employer pension contributions. For a genuinely inside engagement an umbrella is frequently simpler and cheaper, so plenty of contractors run both. The mix of work drives the answer, not a preference for one structure."
+    }
+  ],
+  "sources": [
+    "docs/contractors-ir35/house_positions.md §6 (employer NIC 15% above £5,000, LEL £6,708, Employment Allowance £10,500 and the single-director exclusion)",
+    "docs/contractors-ir35/house_positions.md §5 and §8 (dividend rates 10.75%/35.75%/39.35% from 6 April 2026, £500 dividend allowance, salary options and the Employment Allowance fork, no single optimal salary)",
+    "docs/contractors-ir35/house_positions.md §9 (VAT registration £90,000 and deregistration £88,000 frozen since 1 April 2024, flat rate scheme, limited cost trader 16.5% tested each period)",
+    "docs/contractors-ir35/house_positions.md §10 (24-month and 40% temporary workplace rule as expectation-based, inside IR35 travel restriction, AMAP 55p/25p from 6 April 2026)",
+    "docs/contractors-ir35/house_positions.md §11 (employer pension contribution deductible against corporation tax, no NIC)",
+    "docs/contractors-ir35/house_positions.md §12 (umbrella deductions: employer NIC, Apprenticeship Levy 0.5%, margin; holiday pay must be paid; Key Information Document; FA 2026 s.24 joint and several liability from 6 April 2026)",
+    "docs/contractors-ir35/house_positions.md §14 (director's loan, s.455 charge where outstanding nine months after the year end)",
+    "docs/contractors-ir35/house_positions.md §17.B, §17.C and §17.D (working practices over contract wording; inside IR35 umbrella against PSC depends on the mix)",
+    "Economic Crime and Corporate Transparency Act 2023, Companies House identity verification compulsory for new directors and PSCs from 18 November 2025 (house positions is silent; assertion in howWeHelp 2)",
+    "docs/contractors-ir35/coverage_map_2026-09.json (row: situation 'Umbrella worker moving to a limited company', need_type segment_page, wave 1, target query 'umbrella to limited company accountant', hp_anchors 8, 12, 6)"
+  ]
+}

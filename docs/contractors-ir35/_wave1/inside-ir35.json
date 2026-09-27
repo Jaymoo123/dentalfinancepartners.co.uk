@@ -1,0 +1,108 @@
+{
+  "slug": "inside-ir35",
+  "title": "Contractors Inside IR35",
+  "headline": "Specialist accountants for contractors caught inside IR35",
+  "metaTitle": "Inside IR35 Accountants | Keep, Close or Go Umbrella",
+  "metaDescription": "Caught inside IR35? What the determination does to your pay, what your limited company can still do, and whether to keep it, close it or move to an umbrella.",
+  "intro": "Your client has determined the engagement inside IR35, so the fee-payer now runs PAYE and employee National Insurance on the money before it reaches your company, and pays employer National Insurance at 15% on top. The income arrives already taxed. Three routes are open and none is automatically right: keep the company trading for outside work, hold it dormant while you sit inside, or close it and take the reserves out. Which one wins turns on your reserves, what you intend to contract on next, and how long the engagement runs. The determination itself is also worth testing before you commit.",
+  "stats": [
+    {
+      "value": "45 days",
+      "label": "Your client's deadline to answer a disagreement"
+    },
+    {
+      "value": "15%",
+      "label": "Employer NIC funded from the assignment rate"
+    },
+    {
+      "value": "0%",
+      "label": "Expenses allowance under Chapter 10 (the 5% is gone)"
+    },
+    {
+      "value": "18%",
+      "label": "BADR rate on disposals from 6 April 2026"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "The determination may not have been made with reasonable care",
+      "body": "A client who applies \"inside\" across a whole category of roles, without looking at the engagement itself, has probably failed the reasonable care test. Where that happens the Status Determination Statement is invalid and the client itself becomes the deemed employer for the PAYE and NIC. The same follows where the statement was never passed down the chain. <a href=\"/blog/ir35-status/sds-status-determination-statement\">What a valid statement looks like</a>."
+    },
+    {
+      "title": "Which chapter applies changes the arithmetic",
+      "body": "Medium and large clients sit under Chapter 10: the fee-payer operates PAYE and there is no 5% administrative expenses allowance. Where the client is small, or wholly overseas with no UK connection, responsibility stays with your own company under Chapter 8 and the 5% deduction survives. Two contractors on the same rate can keep different amounts. <a href=\"/blog/ir35-status/deemed-employment-payment-explained\">How the deemed payment works</a>."
+    },
+    {
+      "title": "Expenses you relied on stop being deductible",
+      "body": "Home to client travel is generally not deductible on an inside engagement: each engagement counts as a separate employment, so that site is a permanent workplace for it. Subsistence on the journey goes with it. Outside engagements keep temporary workplace relief, subject to the 24 month and 40% expectation rule."
+    },
+    {
+      "title": "Deciding what the company does next",
+      "body": "A dormant company costs almost nothing to hold and keeps the door open to outside work. Closing is the bigger step: a Members' Voluntary Liquidation can take reserves out as capital, potentially within Business Asset Disposal Relief at 18% from 6 April 2026, but the winding-up TAAR can recharacterise that as an income dividend where you carry on a same or similar trade within two years."
+    },
+    {
+      "title": "Umbrella arrangements are not all the same",
+      "body": "An umbrella becomes your legal employer and takes the admin away, but employer NIC at 15%, the Apprenticeship Levy and the umbrella's margin all come out of the assignment rate, so it is not comparable with a limited company day rate. From 6 April 2026 the agency contracting with the end client is jointly and severally liable for PAYE the umbrella fails to remit."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Reading the determination against the working practices",
+      "body": "A specialist reads the statement against how the engagement actually runs: control, substitution, mutuality, and whether the reasons given are specific to you or lifted across a role type. Where it looks like a blanket call, the written representations are drafted and the 45 day window tracked. <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">Challenging a determination</a>."
+    },
+    {
+      "title": "Modelling keep, dormant, close and umbrella together",
+      "body": "The four routes are costed on your own figures: reserves in the company, the tax still to come on extracting them, the cost of holding a dormant company, and what an umbrella leaves after employer NIC, the levy and margin. Start with the <a href=\"/calculators/inside-ir35-take-home-calculator\">inside IR35 take-home calculator</a>."
+    },
+    {
+      "title": "Keeping the company compliant while it earns less",
+      "body": "Trading on, dormant or winding down, the filings continue: accounts, the CT600, confirmation statements, PAYE and VAT deregistration, and your self assessment. Inside-IR35 income is tracked so it is not taxed twice when you draw it."
+    },
+    {
+      "title": "Preparing a closure that survives scrutiny",
+      "body": "If closing is the answer, the reserve position is set out, any director's loan cleared before the section 455 charge falls due, and the four TAAR conditions tested against what you plan next. The two year same or similar trade condition is the trap for anyone who expects to keep contracting. <a href=\"/blog/limited-company-tax/closing-contractor-limited-company\">Closing a contractor company</a>."
+    },
+    {
+      "title": "Planning a year that holds both kinds of engagement",
+      "body": "Many contractors hold one inside and one outside engagement in the same year. That mix moves the salary and dividend position, the expenses still available and the room left for an employer pension contribution, the largest lever open to you."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should I close my limited company now that I am inside IR35?",
+      "answer": "Not automatically. The determination attaches to one engagement, not to you permanently, and a dormant company is cheap to hold while you look for outside work. Closing earns its keep where reserves are significant and no outside pipeline is realistic. Check the winding-up TAAR first: where you continue a same or similar trade within two years of the distribution, what you took as capital can be taxed as an income dividend."
+    },
+    {
+      "question": "Can I still claim travel to the client site?",
+      "answer": "Generally no. Each inside engagement is treated as a separate employment, so the client's site is a permanent workplace for it and the journey is ordinary commuting. Subsistence bought on it goes the same way. Travel to a separate outside engagement can still qualify, provided you have not spent, and do not expect to spend, more than 40% of your working time at that site over a period longer than 24 months."
+    },
+    {
+      "question": "How long does my client have to answer if I disagree?",
+      "answer": "Forty five days. Under the client-led disagreement process the end client must consider your written representations and respond within 45 days, either confirming the determination with reasons or issuing a new one. The client still makes the decision, but it cannot ignore you. Where it never took reasonable care over the original statement, or never passed it down the chain, the PAYE liability sits with the client rather than the fee-payer."
+    },
+    {
+      "question": "Is an umbrella better than keeping the company inside IR35?",
+      "answer": "Simpler, not necessarily better. The umbrella employs you and removes the filing burden, but employer NIC, the Apprenticeship Levy and the margin come out of the assignment rate, so compare net figures rather than headline rates. Ask for the Key Information Document before signing and treat an unusually high promised take-home as a warning sign. Holding a dormant company alongside umbrella work keeps your route back to outside engagements open."
+    },
+    {
+      "question": "Does the raised small-company threshold take my client out of scope?",
+      "answer": "Probably not yet. The thresholds rose to turnover of £15m, a balance sheet total of £7.5m and 50 employees for financial years beginning on or after 6 April 2025, and two of the three must be met. The test looks back to the client's last financial year ending before the tax year, and status normally changes over two consecutive years, so a client that counted as medium is unlikely to leave scope before 6 April 2027."
+    },
+    {
+      "question": "Will an inside determination raise questions about my earlier contracts?",
+      "answer": "One determination is not a finding about your history. HMRC can still enquire into earlier years, so the record of each engagement matters: the contract, the working practices, any review taken at the time. Since 6 April 2024 HMRC can set off tax you and the company already paid against a deemed employer's liability, reducing, though not removing, the cost of an earlier outside position that proves wrong."
+    }
+  ],
+  "sources": [
+    "house_positions.md §3 (SDS, reasonable care, client-led disagreement process and 45 days, ITEPA s.61NA and s.61T)",
+    "house_positions.md §4 (Chapter 10 fee-payer PAYE, employer NIC 15%, no 5% allowance; Chapter 8 deemed employment payment retains 5%; ITEPA s.61N, ss.54/58)",
+    "house_positions.md §4.A (off-payroll set-off from 6 April 2024)",
+    "house_positions.md §1 and §1.A (Chapter 8 vs Chapter 10 by client size; CA 2006 s.382 thresholds £15m/£7.5m/50 for financial years beginning on or after 6 April 2025; earliest exit 6 April 2027)",
+    "house_positions.md §10 (inside-IR35 home to client travel not deductible; 24 month and 40% temporary workplace rule)",
+    "house_positions.md §12 (umbrella is the employer; employer NIC 15%, Apprenticeship Levy 0.5%, margin funded from the assignment rate; KID; joint and several liability from 6 April 2026, FA 2026 s.24, ITEPA Chapter 11)",
+    "house_positions.md §14 (director's loan, s.455 at 35.75% on loans made on or after 6 April 2026, 9 months and 1 day, deferred s.458 relief; winding-up TAAR ITTOIA s.396B, four conditions, two year same or similar trade)",
+    "house_positions.md §15 (BADR 18% for disposals on or after 6 April 2026, £1m lifetime limit)",
+    "house_positions.md §11 (employer pension contribution as the principal lever)",
+    "coverage_map_2026-09.json row: need_type segment_page, \"For contractors caught inside IR35\", target query \"inside ir35 accountant\", wave 1"
+  ]
+}

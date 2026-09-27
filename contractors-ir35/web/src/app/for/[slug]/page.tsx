@@ -99,9 +99,13 @@ export default async function ContractorTypePage({
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               {type.headline}.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-              {type.intro}
-            </p>
+            {/* intro/challenges/howWeHelp bodies and FAQ answers carry inline
+                <a href> anchors (see charities' for/[slug]/page.tsx docstring
+                for the same fix); plain {type.intro} escaped the markup. */}
+            <p
+              className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300"
+              dangerouslySetInnerHTML={{ __html: type.intro }}
+            />
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               {/* Primary CTA stays on the page. Only the header CTA and the
                   sticky banner leave for /contact. */}
@@ -155,7 +159,10 @@ export default async function ContractorTypePage({
                 className="rounded-xl bg-neutral-50 p-6 ring-1 ring-neutral-200/70 sm:p-8"
               >
                 <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+                <p
+                  className="mt-4 text-base leading-relaxed text-neutral-600"
+                  dangerouslySetInnerHTML={{ __html: item.body }}
+                />
               </article>
             ))}
           </div>
@@ -201,7 +208,10 @@ export default async function ContractorTypePage({
                 className="rounded-xl bg-neutral-50 p-6 ring-1 ring-neutral-200/70 sm:p-8"
               >
                 <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
+                <p
+                  className="mt-3 text-sm leading-relaxed text-neutral-600"
+                  dangerouslySetInnerHTML={{ __html: item.body }}
+                />
               </div>
             ))}
           </div>
@@ -244,9 +254,10 @@ export default async function ContractorTypePage({
                       </svg>
                     </span>
                   </summary>
-                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-200 pt-4">
-                    {faq.answer}
-                  </div>
+                  <div
+                    className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-200 pt-4"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
                 </details>
               ))}
             </div>

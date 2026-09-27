@@ -1,0 +1,96 @@
+{
+  "slug": "first-contract-outside-ir35",
+  "title": "First Contract Outside IR35",
+  "headline": "Accountants for your first contract outside IR35",
+  "metaTitle": "Accountant for First Contract Outside IR35",
+  "metaDescription": "Going limited for a confirmed outside IR35 contract? Company formation, bank, VAT, payroll, first invoice and first dividend, in the right order for 2026/27.",
+  "intro": "You have a signed contract, a start date and a determination that says outside IR35. What you do not yet have is a company, a business bank account, a payroll scheme, or a clear idea of when the first invoice goes out. That is the situation this page is written for: a professional going limited for the first time because a genuine outside IR35 engagement is about to begin. Sequence matters more than most people expect. Incorporation, the bank account, VAT registration, a PAYE scheme and the first dividend each carry their own timing, and taking them out of order costs you either tax or a fortnight of waiting while the agency holds your invoice. This page sets out the order that works, and what has to happen in the week the first invoice falls due.",
+  "stats": [
+    {
+      "value": "£90,000",
+      "label": "VAT registration threshold, frozen since 1 April 2024"
+    },
+    {
+      "value": "10.75%",
+      "label": "Basic rate dividend tax from 6 April 2026, up from 8.75%"
+    },
+    {
+      "value": "19% to 25%",
+      "label": "Corporation tax on company profits, 2026/27"
+    },
+    {
+      "value": "£6,708",
+      "label": "Lower earnings limit, the common single director salary target for 2026/27"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Getting the set-up steps in the wrong order",
+      "body": "Incorporation is the quick part. What follows is slower: a business bank account that needs identity checks, a PAYE scheme that takes time to issue references, a VAT number that arrives weeks after you apply, and an agency onboarding pack that will not clear until the company details match. Start the slow items first and the first invoice goes out on time. The running order is set out in our <a href=\"/blog/contractor-accounting-basics/first-contract-outside-ir35-checklist\">first outside IR35 contract setup checklist</a>."
+    },
+    {
+      "title": "Deciding whether to register for VAT at all",
+      "body": "Registration is compulsory once VAT taxable turnover passes £90,000 in any rolling 12 months, or is expected to in the next 30 days, and a full time day rate reaches that quickly. Many first time contractors register voluntarily before then, because a VAT registered end client recovers the VAT charged and your invoice costs them no more. The Flat Rate Scheme looks attractive until the limited cost trader test applies: spend less than 2% of turnover on goods and the rate is 16.5%, which wipes out most of the benefit for a labour only contractor."
+    },
+    {
+      "title": "Taking money out before the company has set tax aside",
+      "body": "The bank balance is not yours. Corporation tax runs at 19% on profits up to £50,000 and 25% above £250,000, with marginal relief in between giving an effective rate of about 26.5%, and VAT collected belongs to HMRC. Dividends can only come from profit after corporation tax. First year contractors routinely draw the full balance, then meet a bill nine months later with nothing left to pay it."
+    },
+    {
+      "title": "Outside on paper, employee in practice",
+      "body": "A determination from the client, or a CEST result, is a useful first screen and worth keeping on file. Neither binds a tribunal, and neither survives working practices that contradict them. If the client sets your hours, directs how the work is done and would never accept a substitute, the wording will not hold the position. Both need checking, at the start and on every renewal."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Company formation and the tax registrations",
+      "body": "Formation at Companies House, share structure, registered office, the corporation tax registration, a PAYE scheme where you will run payroll, and a VAT application if you are registering. Each registration is tracked until its reference lands, so you know exactly which step is holding up the agency pack. Background on structure is set out in <a href=\"/blog/contractor-accounting-basics/set-up-limited-company-contractor\">how to set up a limited company for contracting</a>."
+    },
+    {
+      "title": "A read of the contract you have already signed",
+      "body": "The signed contract is read against how the job will really be run: control over hours and method, the substitution right and whether the client would honour it, and whether the role fills what would otherwise be a permanent seat. Where paperwork and practice diverge, you get a plain list of what would need to change."
+    },
+    {
+      "title": "Payroll, VAT returns and the first invoice",
+      "body": "Salary set at a level chosen for your circumstances rather than a default, real time information submissions from the first pay run, and the VAT decision modelled both ways before you commit. Sanity check the numbers yourself with the <a href=\"/calculators/outside-ir35-take-home-calculator\">outside IR35 take home calculator</a> before the first invoice goes out."
+    },
+    {
+      "title": "The first dividend, and its paperwork",
+      "body": "Before money moves, the company needs management figures showing distributable profit, a board minute and a dividend voucher. Timing across the 6 April line matters too, because dividend rates for 2026/27 are 10.75% and 35.75% after the £500 allowance. The split between salary and dividend is modelled for the year rather than guessed monthly, and the <a href=\"/calculators/contractor-salary-dividend-calculator\">salary and dividend calculator</a> shows the shape of it."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long before my start date should I form the company?",
+      "answer": "Four to six weeks is comfortable. Incorporation itself is usually same day, but the business bank account, the PAYE references and a VAT number all run on their own clocks, and agency onboarding will not complete without company and bank details that match. If your start date is next week, the company can still be formed in time to invoice, but expect the bank account and the VAT number to land after you have started work."
+    },
+    {
+      "question": "What salary should I pay myself in the first year?",
+      "answer": "For a single director company with no other employees, the Employment Allowance of £10,500 is not available, so the usual range sits between the secondary threshold of £5,000 and the lower earnings limit of £6,708 for 2026/27. The lower earnings limit protects a qualifying National Insurance year. Where the company can claim the allowance, a salary up to £12,570 is often better. Your other income changes the answer, so model it rather than assume."
+    },
+    {
+      "question": "When can I take my first dividend?",
+      "answer": "Once the company has distributable profit, meaning profit after corporation tax and after allowing for the VAT and payroll it still owes. In practice that is after the first invoice has been paid and the reserves have been checked. Each dividend needs a board minute and a voucher, and the amount belongs in the tax year the payment is made. Drawing money with no distributable profit creates a director loan, not a dividend."
+    },
+    {
+      "question": "My client says they are small, so does the off-payroll regime still apply?",
+      "answer": "If the end client genuinely qualifies as small, the off-payroll rules in Chapter 10 do not apply and responsibility for status stays with your own company under Chapter 8. The small company thresholds rose for financial years beginning on or after 6 April 2025, to turnover of £15m and a balance sheet total of £7.5m, the 50 employee limit unchanged. Because of the two consecutive years rule and the filing lag, the earliest a previously medium client drops out is 6 April 2027. Assume they are still in scope for 2026/27."
+    },
+    {
+      "question": "Can I claim travel to the client site?",
+      "answer": "On an outside IR35 engagement, travel to a temporary workplace is generally allowable, but the workplace stops being temporary once you spend, or expect to spend, more than 40% of your working time there over a period exceeding 24 months. The test turns on expectation, so relief stops when you know the engagement will run past 24 months, not at month 24. Mileage in your own car is 55p a mile for the first 10,000 business miles from 6 April 2026."
+    }
+  ],
+  "sources": [
+    "house_positions.md §1 and §1.A: Chapter 8 vs Chapter 10, small client thresholds £15m / £7.5m / 50 for financial years beginning on or after 6 April 2025, earliest exit 6 April 2027 (ITEPA 2003 s.60A, Companies Act 2006 s.382)",
+    "house_positions.md §5: dividend allowance £500, dividend rates 10.75% / 35.75% / 39.35% from 6 April 2026 (ITA 2007 s.8 as amended by FA 2026 s.4)",
+    "house_positions.md §6: employer NIC 15% above £5,000, LEL £6,708, Employment Allowance £10,500 with the single director exclusion",
+    "house_positions.md §7: corporation tax 19% / 25%, marginal relief 3/200, effective marginal rate about 26.5% (CTA 2010 Part 3)",
+    "house_positions.md §8: salary targets between the £5,000 secondary threshold and the £6,708 LEL, £12,570 where the Employment Allowance is available, no single optimal salary",
+    "house_positions.md §9: VAT registration £90,000 frozen since 1 April 2024, Flat Rate Scheme limited cost trader 16.5% (VATA 1994 Sch 1, VAT Notice 733)",
+    "house_positions.md §10: 24 month and 40% temporary workplace rule (ITEPA 2003 s.339), AMAP 55p / 25p from 6 April 2026",
+    "house_positions.md §14 and CA 2006 Part 23: distributable profit, board minute and dividend voucher before payment, a drawing with no reserves is a director loan (CA 2006 s.830 and s.836, CTA 2010 s.455)",
+    "house_positions.md §17.A and §17.B: CEST is a first screen and does not bind a tribunal, contract review is necessary but not sufficient, working practices over wording",
+    "coverage map row: docs/contractors-ir35/coverage_map_2026-09.json, situation \"First-time contractor going limited for a confirmed outside-IR35 engagement\", target query \"accountant for first contract outside ir35\", hp anchors 1, 1.A, 8, 17"
+  ]
+}

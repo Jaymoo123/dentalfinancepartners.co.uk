@@ -13,81 +13,108 @@ export interface ContractorType {
 }
 
 export const contractorTypes: ContractorType[] = [
+  // it-contractors: docs/contractors-ir35/_wave1/it-contractors.json, 2026-09-27, LEADS_250 S4a
   {
     slug: "it-contractors",
     title: "IT Contractors",
-    headline: "Specialist accountants for IT contractors",
-    metaTitle: "Accountants for IT Contractors | IR35 & Limited Company Tax",
+    headline: "Accountants for IT contractors",
+    metaTitle: "Accountants for IT Contractors | IR35 and PSC Tax",
     metaDescription:
-      "Specialist contractor accounting for UK IT professionals. IR35 status reviews, PSC tax planning, salary and dividend optimisation. Plain English, no jargon.",
+      "For UK software, data, cloud and infrastructure contractors on day rates. Inside and outside IR35, umbrella or PSC, overseas clients, pensions and VAT.",
     intro:
-      "IT contracting is the largest sector in UK contracting and carries some of the most complex IR35 exposure. Long-running engagements, client-directed methodologies and the reality of how developers and architects actually work can push an engagement toward inside IR35 even when the contract wording looks clean.",
+      "You write software, run data platforms or manage cloud infrastructure, and you invoice a day rate through your own limited company. One engagement is outside IR35, the next is inside on almost identical work, and an agency sits in the middle of both. Some clients are abroad. Some months a side project earns a little. So the questions worth answering are practical ones: who decides your status, what a caught engagement does to your take-home, when an umbrella beats keeping the company open, how VAT behaves with an overseas client, and why an employer pension contribution is usually your largest lever. Contract wording and the way a job actually runs rarely describe the same work, and status turns on the second.",
     stats: [
-      { value: "£400–£800", label: "Typical day rate range" },
-      { value: "~350k", label: "IT contractors in the UK" },
-      { value: "Higher", label: "IR35 risk (control test often triggered)" },
+      { value: "5%", label: "Chapter 8 expenses allowance, and it is gone under Chapter 10" },
+      { value: "15%", label: "Employer NIC funded from the assignment rate on an umbrella" },
+      { value: "£60,000", label: "Pension annual allowance for 2026/27, plus carry forward" },
+      { value: "£90,000", label: "VAT registration threshold, frozen since 1 April 2024" },
     ],
     challenges: [
       {
-        title: "Control test in technology roles",
+        title: "Inside on one contract, outside on the next, same skills",
         body:
-          "When a client dictates the technology stack, mandates your hours, requires you to attend daily standups and directs your sprint priorities, they are exercising control, even if your contract says otherwise. HMRC looks at what actually happens, not what the contract states. In software and infrastructure roles, genuine autonomy over how you do the work is the exception, not the rule.",
+          "Status is settled engagement by engagement, and the first question is who settles it. Where the end client is medium or large, Chapter 10 applies: the client issues a Status Determination Statement and the fee-payer, usually the agency nearest your company, operates PAYE before paying you. Where the client is small, or wholly overseas with no UK connection, Chapter 8 applies and your company assesses itself. Embedded delivery is where the control test bites: a client setting the stack, the sprint order and the hours is directing how the work is done.",
       },
       {
-        title: "Mutuality of obligation in long engagements",
+        title: "What being caught actually costs",
         body:
-          "A contract renewal after renewal with the same client (especially if you are filling what would otherwise be a permanent headcount role) builds a picture of mutuality of obligation. The longer you have been with one client, the more important it is that we review the position properly, not just assume the original status still holds.",
+          "Under Chapter 10 the fee-payer deducts PAYE and employee NIC and pays employer NIC at 15% on top, all from the same assignment rate, and no 5% expenses allowance exists in that calculation. Under Chapter 8 your company computes its own deemed employment payment at the year end, keeping the 5% allowance and employer pension contributions. Home to client travel usually stops being deductible once an engagement is inside. Mechanics: <a href=\"/blog/ir35-status/deemed-employment-payment-explained\">the deemed payment guide</a>.",
       },
       {
-        title: "Substitution clauses that are not genuine",
+        title: "An umbrella rate is the cost of employing you",
         body:
-          "Most IT contractor agreements include a substitution clause, but HMRC is sceptical if a client would never actually accept a substitute, or if the contractor has never used the right. We look at whether substitution is contractually unrestricted and practically realistic, not just whether the clause exists.",
+          "The rate quoted on an umbrella assignment is the cost of employing you, not the pay you see. Employer NIC at 15%, the Apprenticeship Levy at 0.5% and the umbrella's margin come out of that figure first, and PAYE and employee NIC then apply to what is left. So a headline rate above a payroll salary can still land lower in your account, and the only fair comparison is net against net. Put your own figures through the <a href=\"/calculators/umbrella-vs-limited-calculator\">umbrella versus limited calculator</a>.",
       },
       {
-        title: "Inside IR35 via an agency chain",
+        title: "Laptops, licences and the research and development question",
         body:
-          "If your end client is a medium or large business, the off-payroll working rules apply and they are responsible for issuing an SDS. Many IT contractors receive inside determinations, often incorrectly. We help you understand your rights and, where the determination is wrong, support the formal disagreement process.",
+          "Hardware, developer tooling, cloud subscriptions, indemnity cover and accountancy fees are ordinary company costs where incurred wholly and exclusively for the business, equipment usually via capital allowances. Research and development relief is narrower than contractors expect: a client project delivered on a day rate is rarely the company's own qualifying project, and where a client funds the work any claim tends to belong to them. Your own product is the case worth examining.",
+      },
+      {
+        title: "Overseas clients, and where your VAT lands",
+        body:
+          "Contracting directly for a business abroad changes two things at once. For IR35, a wholly overseas client with no UK connection leaves the assessment with your company under Chapter 8. For VAT, the general rule puts a business-to-business supply where the customer belongs, so those fees fall outside the scope of UK VAT and do not count towards the £90,000 threshold. <a href=\"/blog/mtd-and-compliance/contractor-vat-registration-guide\">The VAT guide</a> covers the flat rate trap.",
+      },
+      {
+        title: "Dividends are no longer the whole answer",
+        body:
+          "Dividend rates of 10.75%, 35.75% and 39.35% for 2026/27 sit on top of corporation tax already paid, narrowing the gap between extracting profit and leaving it in the company. An employer pension contribution goes in before corporation tax, carries no NIC and is not taxed on you as income, within a £60,000 annual allowance plus up to three years carried forward, and it is not capped by your salary. See <a href=\"/blog/pension-and-dividends/contractor-pension-employer-contributions\">employer contributions</a>.",
       },
     ],
     howWeHelp: [
       {
-        title: "IR35 contract review before signing",
+        title: "Status reviewed before you sign, and again when the job changes",
         body:
-          "Before you sign a new contract, we review both the written terms and discuss how the role will actually work. We identify risk areas and, where possible, recommend changes to wording or working practices that materially improve your position.",
+          "Both the wording and the working practice are covered: who sets priorities, whether a substitute would be accepted, what happens between contracts. Where a determination from the client looks wrong, the client-led disagreement process is open to you.",
       },
       {
-        title: "Limited company tax and annual accounts",
+        title: "The company's filings kept straight",
         body:
-          "Your PSC accounts, CT600, Companies House filings and self assessment handled cleanly each year. For IT contractors we also model the corporation tax position as rates shift, particularly the marginal relief band between £50,000 and £250,000.",
+          "Your accounts, the CT600, the Companies House filings and your self assessment return are prepared together, with the corporation tax position worked through where profits land in the marginal band. Income that arrived already taxed from a fee-payer is tracked so it is not taxed twice.",
       },
       {
-        title: "Salary and dividend optimisation",
+        title: "Extraction modelled rather than assumed",
         body:
-          "We calculate the optimal director salary and dividend split for your personal circumstances each tax year, accounting for your day rate, expenses, pension contributions and any other income you have.",
+          "Salary, dividends and pension are set out together for the year ahead on your own figures: whether the Employment Allowance is available, how much personal allowance other income uses, and what a one-off employer contribution would do in a strong year.",
+      },
+      {
+        title: "VAT and overseas invoicing settled once",
+        body:
+          "The registration question is worked through: whether it is required or worth taking voluntarily, whether the flat rate scheme survives the limited cost trader test at 16.5%, and how invoices to clients outside the UK should be raised and reported.",
       },
     ],
     faqs: [
       {
-        question: "My agency says my contract is outside IR35. Do I need to check?",
+        question:
+          "My agency says the role is outside IR35. Is that the determination?",
         answer:
-          "Yes. Agencies have a commercial interest in making placements, and their view of IR35 status is not a substitute for proper analysis. The SDS obligation sits with the end client (for medium and large businesses), not the agency. We regularly review contracts that have been loosely described as outside IR35 and find the working practices do not support that position.",
+          "No. Where the end client is medium or large, the Status Determination Statement is the client's to issue and the agency is usually only the fee-payer. An agency view carries none of the reasonable care duty the client owes, so ask for the statement and its reasoning. Where the client is small or wholly overseas, no statement is coming: the assessment sits with your own company.",
       },
       {
-        question: "Can I work outside IR35 if I am a developer embedded in a client team?",
+        question:
+          "Can a developer embedded in a client team ever be outside IR35?",
         answer:
-          "It depends on the specifics, but embedded roles are where the control test is most frequently triggered. If you attend daily standups directed by the client, cannot choose your own technology approach, and are expected to be at the client's office or on their systems during set hours, the engagement looks like employment. Changes to working practices (not just contract wording) are sometimes needed.",
+          "It is possible, but embedded delivery is where the control test most often points the other way. If the client sets your hours, assigns your tickets, picks the stack and expects you on their systems at fixed times, the engagement looks like employment whatever the wording says. Real control over delivery, a substitution right the client would honour and gaps between contracts are what count.",
       },
       {
-        question: "Does inside IR35 mean I should close my limited company?",
+        question:
+          "Should I close the limited company if my next contract is inside IR35?",
         answer:
-          "Not necessarily. Even inside IR35, a limited company gives you flexibility to work on other contracts that may be outside IR35. There are also legitimate advantages around pension contributions and the employment allowance. We model the full picture before recommending a change of structure.",
+          "Not automatically. For one genuinely inside engagement an umbrella is usually simpler and often no worse financially, since the company adds cost without a tax advantage on that income. Keeping it open suits you if outside work is likely soon, profit is already retained, or you want to carry on making employer pension contributions. The routes are compared in <a href=\"/blog/umbrella-vs-limited-company/limited-company-vs-umbrella-contractor\">limited company versus umbrella</a>.",
+      },
+      {
+        question:
+          "I invoice a client in the United States. Do I charge VAT?",
+        answer:
+          "For services to a business customer the general rule places the supply where the customer belongs, so a fee invoiced to a United States business is outside the scope of UK VAT and no UK VAT is charged. Those sales also sit outside the £90,000 registration threshold test. Voluntary registration can still pay where you carry input VAT on equipment and software.",
+      },
+      {
+        question:
+          "What do I do with SaaS or app income alongside my day rate?",
+        answer:
+          "Run through the same company it is simply more trading income, taxed at corporation tax rates, and it can push profits into the marginal band. Held outside the company it belongs on your self assessment return and interacts with Making Tax Digital for Income Tax. Either way it shifts the salary and dividend split, so raise it early.",
       },
     ],
-    testimonial: {
-      quote:
-        "The SDS came back inside IR35. We reviewed the actual working arrangements, made three practical changes, and challenged it through the formal process. The revised determination came back outside. £18,000 difference.",
-      attribution: "Senior developer, financial services client (outside IR35 post-challenge)",
-    },
   },
 
   {
@@ -664,6 +691,412 @@ export const contractorTypes: ContractorType[] = [
         question: "I worked on the same development site for 26 months. Are my travel costs still allowable?",
         answer:
           "Once you have exceeded 24 months at a single workplace (or from the point at which it was clear you would do so), that site becomes a permanent workplace and ordinary commuting costs are no longer allowable. At 26 months, you would need to review from the point the 24-month threshold was reached or the expectation of reaching it arose. We can work through the position based on your specific timeline.",
+      },
+    ],
+  },
+  // Wave 1 appends, docs/contractors-ir35/_wave1/*.json, 2026-09-27, LEADS_250 S4a
+  {
+    slug: "first-contract-outside-ir35",
+    title: "First Contract Outside IR35",
+    headline: "Accountants for your first contract outside IR35",
+    metaTitle: "Accountant for First Contract Outside IR35",
+    metaDescription:
+      "Going limited for a confirmed outside IR35 contract? Company formation, bank, VAT, payroll, first invoice and first dividend, in the right order for 2026/27.",
+    intro:
+      "You have a signed contract, a start date and a determination that says outside IR35. What you do not yet have is a company, a business bank account, a payroll scheme, or a clear idea of when the first invoice goes out. That is the situation this page is written for: a professional going limited for the first time because a genuine outside IR35 engagement is about to begin. Sequence matters more than most people expect. Incorporation, the bank account, VAT registration, a PAYE scheme and the first dividend each carry their own timing, and taking them out of order costs you either tax or a fortnight of waiting while the agency holds your invoice. This page sets out the order that works, and what has to happen in the week the first invoice falls due.",
+    stats: [
+      { value: "£90,000", label: "VAT registration threshold, frozen since 1 April 2024" },
+      { value: "10.75%", label: "Basic rate dividend tax from 6 April 2026, up from 8.75%" },
+      { value: "19% to 25%", label: "Corporation tax on company profits, 2026/27" },
+      { value: "£6,708", label: "Lower earnings limit, the common single director salary target for 2026/27" },
+    ],
+    challenges: [
+      {
+        title: "Getting the set-up steps in the wrong order",
+        body:
+          "Incorporation is the quick part. What follows is slower: a business bank account that needs identity checks, a PAYE scheme that takes time to issue references, a VAT number that arrives weeks after you apply, and an agency onboarding pack that will not clear until the company details match. Start the slow items first and the first invoice goes out on time. The running order is set out in our <a href=\"/blog/contractor-accounting-basics/first-contract-outside-ir35-checklist\">first outside IR35 contract setup checklist</a>.",
+      },
+      {
+        title: "Deciding whether to register for VAT at all",
+        body:
+          "Registration is compulsory once VAT taxable turnover passes £90,000 in any rolling 12 months, or is expected to in the next 30 days, and a full time day rate reaches that quickly. Many first time contractors register voluntarily before then, because a VAT registered end client recovers the VAT charged and your invoice costs them no more. The Flat Rate Scheme looks attractive until the limited cost trader test applies: spend less than 2% of turnover on goods and the rate is 16.5%, which wipes out most of the benefit for a labour only contractor.",
+      },
+      {
+        title: "Taking money out before the company has set tax aside",
+        body:
+          "The bank balance is not yours. Corporation tax runs at 19% on profits up to £50,000 and 25% above £250,000, with marginal relief in between giving an effective rate of about 26.5%, and VAT collected belongs to HMRC. Dividends can only come from profit after corporation tax. First year contractors routinely draw the full balance, then meet a bill nine months later with nothing left to pay it.",
+      },
+      {
+        title: "Outside on paper, employee in practice",
+        body:
+          "A determination from the client, or a CEST result, is a useful first screen and worth keeping on file. Neither binds a tribunal, and neither survives working practices that contradict them. If the client sets your hours, directs how the work is done and would never accept a substitute, the wording will not hold the position. Both need checking, at the start and on every renewal.",
+      },
+    ],
+    howWeHelp: [
+      {
+        title: "Company formation and the tax registrations",
+        body:
+          "Formation at Companies House, share structure, registered office, the corporation tax registration, a PAYE scheme where you will run payroll, and a VAT application if you are registering. Each registration is tracked until its reference lands, so you know exactly which step is holding up the agency pack. Background on structure is set out in <a href=\"/blog/contractor-accounting-basics/set-up-limited-company-contractor\">how to set up a limited company for contracting</a>.",
+      },
+      {
+        title: "A read of the contract you have already signed",
+        body:
+          "The signed contract is read against how the job will really be run: control over hours and method, the substitution right and whether the client would honour it, and whether the role fills what would otherwise be a permanent seat. Where paperwork and practice diverge, you get a plain list of what would need to change.",
+      },
+      {
+        title: "Payroll, VAT returns and the first invoice",
+        body:
+          "Salary set at a level chosen for your circumstances rather than a default, real time information submissions from the first pay run, and the VAT decision modelled both ways before you commit. Sanity check the numbers yourself with the <a href=\"/calculators/outside-ir35-take-home-calculator\">outside IR35 take home calculator</a> before the first invoice goes out.",
+      },
+      {
+        title: "The first dividend, and its paperwork",
+        body:
+          "Before money moves, the company needs management figures showing distributable profit, a board minute and a dividend voucher. Timing across the 6 April line matters too, because dividend rates for 2026/27 are 10.75% and 35.75% after the £500 allowance. The split between salary and dividend is modelled for the year rather than guessed monthly, and the <a href=\"/calculators/contractor-salary-dividend-calculator\">salary and dividend calculator</a> shows the shape of it.",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "How long before my start date should I form the company?",
+        answer:
+          "Four to six weeks is comfortable. Incorporation itself is usually same day, but the business bank account, the PAYE references and a VAT number all run on their own clocks, and agency onboarding will not complete without company and bank details that match. If your start date is next week, the company can still be formed in time to invoice, but expect the bank account and the VAT number to land after you have started work.",
+      },
+      {
+        question:
+          "What salary should I pay myself in the first year?",
+        answer:
+          "For a single director company with no other employees, the Employment Allowance of £10,500 is not available, so the usual range sits between the secondary threshold of £5,000 and the lower earnings limit of £6,708 for 2026/27. The lower earnings limit protects a qualifying National Insurance year. Where the company can claim the allowance, a salary up to £12,570 is often better. Your other income changes the answer, so model it rather than assume.",
+      },
+      {
+        question:
+          "When can I take my first dividend?",
+        answer:
+          "Once the company has distributable profit, meaning profit after corporation tax and after allowing for the VAT and payroll it still owes. In practice that is after the first invoice has been paid and the reserves have been checked. Each dividend needs a board minute and a voucher, and the amount belongs in the tax year the payment is made. Drawing money with no distributable profit creates a director loan, not a dividend.",
+      },
+      {
+        question:
+          "My client says they are small, so does the off-payroll regime still apply?",
+        answer:
+          "If the end client genuinely qualifies as small, the off-payroll rules in Chapter 10 do not apply and responsibility for status stays with your own company under Chapter 8. The small company thresholds rose for financial years beginning on or after 6 April 2025, to turnover of £15m and a balance sheet total of £7.5m, the 50 employee limit unchanged. Because of the two consecutive years rule and the filing lag, the earliest a previously medium client drops out is 6 April 2027. Assume they are still in scope for 2026/27.",
+      },
+      {
+        question:
+          "Can I claim travel to the client site?",
+        answer:
+          "On an outside IR35 engagement, travel to a temporary workplace is generally allowable, but the workplace stops being temporary once you spend, or expect to spend, more than 40% of your working time there over a period exceeding 24 months. The test turns on expectation, so relief stops when you know the engagement will run past 24 months, not at month 24. Mileage in your own car is 55p a mile for the first 10,000 business miles from 6 April 2026.",
+      },
+    ],
+  },
+  {
+    slug: "ir35-contract-review",
+    title: "IR35 Contract Review",
+    headline: "IR35 contract reviews for contractors before they sign",
+    metaTitle: "IR35 Contract Review for UK Contractors | 2026/27",
+    metaDescription:
+      "What an IR35 contract review covers in 2026/27: the status tests, written terms against working practices, and the 45-day disagreement process.",
+    intro:
+      "You have a new or renewed contract in front of you, or a client has handed you a determination saying inside IR35 and you think it is wrong. Either way the question is the same: do the written terms and the way the work will actually run point to self-employment or to employment? An IR35 contract review answers that. A specialist reads the contract, the upper-level agreement where an agency sits in the chain, and your account of how the work is really directed, then sets both against the status tests and marks the weak points. Where the client is medium or large it decides your status, so the review also covers reasonable care and the 45-day disagreement route.",
+    stats: [
+      { value: "3", label: "Tests in the irreducible minimum: personal service, control, mutuality" },
+      { value: "45 days", label: "Client deadline to respond to a status disagreement (ITEPA s.61T)" },
+      { value: "6 Apr 2027", label: "Earliest a previously medium client can leave the off-payroll rules" },
+      { value: "[2024] UKSC 29", label: "PGMOL, the Supreme Court's latest word on status" },
+    ],
+    challenges: [
+      {
+        title: "The status tests, without the jargon",
+        body:
+          "There is no statutory definition of employment for tax. Status comes from case law, starting with Ready Mixed Concrete [1968] 2 QB 497: personal service (can you genuinely send a substitute), control (how far the client directs what you do, how, when and where), and mutuality of obligation (an obligation to offer and accept paid work). PGMOL [2024] UKSC 29 confirmed control and mutuality can both be present and still not settle it. What decides it is the whole picture, and whether you are in business on your own account. More in <a href=\"/blog/ir35-status/ir35-status-tests-explained\">the status tests explained</a>.",
+      },
+      {
+        title: "Paperwork is only half of what gets judged",
+        body:
+          "A clean contract sitting on top of employee-like working practices will not hold. HMRC and the tribunals look at what actually happens: who sets your hours, whether you sit inside the client's line management, whether a substitute would ever be accepted. Expect questions about the day to day, not just the clauses. A substitution clause nobody could use is the clearest case.",
+      },
+      {
+        title: "Who decides your status depends on the client's size",
+        body:
+          "Two regimes run side by side. Where the end client is medium or large, the off-payroll rules apply: the client must issue a Status Determination Statement, and PAYE is operated before your invoice is paid by the fee payer, normally the agency closest to your company. Where the client is small, or wholly overseas with no UK connection, the original rules stay with your own company. The small-company thresholds rose for financial years beginning on or after 6 April 2025, but with the filing lag and the two consecutive years rule the earliest a previously medium client leaves scope is 6 April 2027. For 2026/27, assume yours is in.",
+      },
+      {
+        title: "When the determination looks wrong",
+        body:
+          "Under those rules a determination has to carry a conclusion, the reasons behind it and evidence of reasonable care, and it has to reach both you and the next party in the chain. A blanket inside call across a whole category of roles, with no individual assessment, is very likely a failure of reasonable care, which can invalidate the statement and leave the liability with the client. Representations go through the client-led disagreement process, and the client has 45 days to respond. The timetable is in <a href=\"/blog/ir35-status/sds-status-determination-statement\">the guide to determination statements</a>.",
+      },
+      {
+        title: "What a review gives you, and what it does not",
+        body:
+          "Out of a review comes a reasoned read of your position, the terms and practices pulling the wrong way, wording worth renegotiating before signature, and a dated record you can point to later. No guarantee comes with it, because status is decided on the facts of the engagement as it runs. HMRC's CEST tool shares that limit, which is why a determination resting on it is not the last word either.",
+      },
+    ],
+    howWeHelp: [
+      {
+        title: "Reading the whole chain, not one document",
+        body:
+          "A specialist reviews the contract you are being asked to sign and, where an agency sits in between, the upper-level agreement too. Terms in the chain above you can contradict the ones in front of you, which is where clean-looking contracts fall down.",
+      },
+      {
+        title: "Testing the wording against the working practices",
+        body:
+          "Questions about the real engagement follow the read: who directs the work, what happens if you are unavailable, whether you can turn down extra tasks, whose equipment you use. Those answers meet the tests a tribunal would apply.",
+      },
+      {
+        title: "Preparing the case before you sign",
+        body:
+          "Where the risk sits in wording that can be changed, a specialist prepares the amendments to put to the agency or client, and flags the working practices that need to change with them.",
+      },
+      {
+        title: "Building the file behind a disagreement",
+        body:
+          "If a determination is being challenged, a specialist assembles the written representations and the evidence on each test. The step by step route is covered in <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">how to challenge an inside determination</a>.",
+      },
+      {
+        title: "A first read before you commit",
+        body:
+          "Ahead of a full review, the <a href=\"/calculators/ir35-status-indicator\">IR35 status indicator</a> walks the same tests and shows which way each one points. Treat it as a screen telling you whether a review is worth arranging, never as a determination.",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "Can a review guarantee my contract is outside IR35?",
+        answer:
+          "No, and treat any offer of a guarantee with suspicion. Status is a multi-factorial judgement made on the facts of the engagement as it runs, and only a tribunal settles it finally. What you get instead is a reasoned position and a dated record of it. That record matters if HMRC opens an enquiry years later, because it shows care was taken at the time.",
+      },
+      {
+        question:
+          "My client used CEST and it said inside. Is that the end of it?",
+        answer:
+          "Not necessarily. CEST is a screening tool, and HMRC will stand behind a result where the answers are accurate, consistent with the working practices, in line with the guidance and free of avoidance. It does not bind a tribunal, its handling of mutuality of obligation is narrower than the case law, and a result built on answers that do not match the real engagement is worthless. Where the inputs were wrong, so is the output.",
+      },
+      {
+        question:
+          "Who decides my status if my client is a small company?",
+        answer:
+          "Your own company does. The off-payroll rules shift the decision to the end client only where that client is medium or large, or a public body. Where the client is small under the Companies Act tests, or wholly overseas with no UK connection, the original rules apply and your company assesses its own status. That makes a documented review more important, because no client statement stands behind the position.",
+      },
+      {
+        question:
+          "What should I have ready before a review starts?",
+        answer:
+          "The contract you have been offered, the upper-level agreement if an agency is involved, any statement of work or schedule, the determination and its reasons where one has been issued, and a plain description of how the engagement will run day to day. The <a href=\"/blog/ir35-status/ir35-contract-review-checklist\">contract review checklist</a> lists the clauses that matter most.",
+      },
+      {
+        question:
+          "Does a review help if I have already been determined inside?",
+        answer:
+          "Yes. It establishes whether the determination stands up on the tests and whether it was reached with reasonable care, which is the ground most successful disagreements are argued on. The client must respond to representations within 45 days, confirming with reasons or issuing a new statement. Even where it holds, you finish with a clear view of what would have to change for a future renewal.",
+      },
+    ],
+  },
+  {
+    slug: "umbrella-to-limited-company",
+    title: "Umbrella to Limited Company",
+    headline: "Moving from umbrella to your own limited company",
+    metaTitle: "Umbrella to Limited Company Accountant | Setup Handled",
+    metaDescription:
+      "Moving from an umbrella to your own limited company for an outside IR35 contract. Formation, PAYE, VAT, first payroll and dividends handled for 2026/27.",
+    intro:
+      "You are paid through an umbrella, you have an outside IR35 contract in hand or a client willing to engage a personal service company, and you want the switch handled rather than researched. The work splits three ways: ending the umbrella employment cleanly, incorporating and registering for the right taxes, and getting the first payroll and dividend right so the year does not need unpicking later. Most of it is sequencing. Companies House takes a day; the PAYE scheme, the VAT decision and the timing against a running assignment are where people lose weeks. A specialist reviews where you sit in the assignment and what the umbrella has already taxed. Figures here are 2026/27.",
+    stats: [
+      { value: "£90,000", label: "VAT registration threshold, frozen since 1 April 2024" },
+      { value: "15%", label: "Employer NIC above £5,000, funded from your umbrella assignment rate" },
+      { value: "16.5%", label: "Flat rate scheme percentage for a limited cost trader" },
+      { value: "6 April 2026", label: "Umbrella PAYE joint and several liability starts" },
+    ],
+    challenges: [
+      {
+        title: "Timing the switch against a running assignment",
+        body:
+          "Leaving an umbrella part way through an assignment is a contractual question before it is a tax one. The agency has to agree to contract with a company rather than pay you through a provider on its preferred supplier list, the end client has to accept a personal service company, and the umbrella employment has to end on notice. Get the order wrong and there is a week with nothing payable in the chain. On whether the move is worth making, see <a href=\"/blog/umbrella-vs-limited-company/switching-umbrella-to-limited-company\">when umbrella to limited makes sense</a>.",
+      },
+      {
+        title: "What the umbrella has already taxed",
+        body:
+          "Your umbrella has run PAYE cumulatively since 6 April, so part of your personal allowance and basic rate band is used, and the final payslip should settle accrued holiday pay. Employer National Insurance at 15%, the Apprenticeship Levy at 0.5% and the provider margin all came out of the assignment rate, which is why an umbrella day rate never matched the company equivalent. From 6 April 2026 the agency that contracts with the end client, or the client where there is no agency, is jointly and severally liable for PAYE the umbrella fails to remit; the umbrella stays the employer. There is a walkthrough in <a href=\"/blog/umbrella-vs-limited-company/umbrella-company-deductions-explained\">reading your umbrella payslip</a>.",
+      },
+      {
+        title: "The VAT decision, and the flat rate scheme",
+        body:
+          "Registration is compulsory once VAT taxable turnover passes £90,000 in a rolling twelve months; deregistration sits at £88,000, both frozen since 1 April 2024. The flat rate scheme needs care: labour only work almost always meets the limited cost trader test, under 2% of turnover or under £1,000 a year on goods, forcing the 16.5% rate and wiping out most of the benefit. The test applies every period. See <a href=\"/blog/mtd-and-compliance/flat-rate-vat-limited-cost-trader\">the limited cost trader rule</a>.",
+      },
+      {
+        title: "First payroll, and the first dividend",
+        body:
+          "Where you are the only director and there are no other employees, the £10,500 Employment Allowance is not available, so salary targets usually sit between the £5,000 secondary threshold and the £6,708 lower earnings limit, the latter buying a qualifying National Insurance year for a small slice of employer NIC. With the allowance available, £12,570 is often better, and no single salary is optimal for everyone. Dividends are separate: paid from profit after corporation tax, taxed at 10.75%, 35.75% and 39.35% from 6 April 2026.",
+      },
+      {
+        title: "The expenses that change",
+        body:
+          "Coming out of an umbrella does not open up travel relief automatically. A client site stops being a temporary workplace once you expect to spend more than 40% of your working time there over a period exceeding 24 months, and relief stops when that expectation forms, not at month 24. Outside IR35 keeps the relief subject to that rule; inside, home to client travel is generally not deductible. Mileage in your own car is 55p for the first 10,000 business miles and 25p after, from 6 April 2026. The bigger lever is an employer pension contribution, free of National Insurance and deductible for the company.",
+      },
+    ],
+    howWeHelp: [
+      {
+        title: "A review before you give notice",
+        body:
+          "The contract offered, the working practices behind it and the rate are weighed together, then what the switch changes in cash terms is set out. Run your own numbers first on the <a href=\"/calculators/umbrella-vs-limited-calculator\">umbrella against limited company calculator</a>. Clean wording over employee like working practices will not hold, so both are checked.",
+      },
+      {
+        title: "Formation and the registrations, in order",
+        body:
+          "Incorporation, the identity verification alongside it, share structure, registered office, the PAYE scheme, the corporation tax record and the VAT choice. Your accountant prepares each registration and tracks the references as they arrive, so the company can invoice without a gap. Steps are in <a href=\"/blog/contractor-accounting-basics/set-up-limited-company-contractor\">setting up a limited company for contracting</a>.",
+      },
+      {
+        title: "The first payroll and the first dividend",
+        body:
+          "Payroll is prepared and the real time information filed, with the P45 year to date figures carried over so your tax code starts from the right place. Salary is modelled against Employment Allowance eligibility. Once there is distributable profit, the dividend paperwork follows: board minute, voucher, and a record of what stays behind.",
+      },
+      {
+        title: "The first year of filings, planned not chased",
+        body:
+          "Annual accounts, the CT600, the confirmation statement, VAT returns on the scheme you picked, and self assessment for your salary and dividends. Dates are fixed at the start against the accounting reference date, and the corporation tax position is looked at before the year closes, while a pension contribution can still move it.",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "Can I switch mid-contract, or wait for a renewal?",
+        answer:
+          "Both happen. The blocker is rarely tax and usually the chain, and some agencies will move you only at renewal while others novate mid-assignment. Ask before you resign, so the umbrella employment ending and the company contract starting line up.",
+      },
+      {
+        question:
+          "What happens to my holiday pay and my P45?",
+        answer:
+          "Accrued holiday pay is yours and must be paid out rather than retained, so check the final payslip against what you accrued and took. The P45 carries your pay and tax to date, which the company payroll needs so your personal allowance is not given twice.",
+      },
+      {
+        question:
+          "Should I register for VAT straight away?",
+        answer:
+          "Registration becomes compulsory once VAT taxable turnover exceeds £90,000 in a rolling twelve months, or is expected to within thirty days, and most contractors on a normal rate reach that inside a year. Registering voluntarily earlier lets the company reclaim input VAT and costs a VAT registered client nothing, so the decision turns on your rate and start date.",
+      },
+      {
+        question:
+          "Is the flat rate scheme worth it?",
+        answer:
+          "Usually not. Labour only contracting almost always fails the goods test, which forces the 16.5% rate and removes nearly all of the gain. Genuine, regular goods spend changes that, so both methods are modelled on your own figures before either is picked.",
+      },
+      {
+        question:
+          "How soon can I take a dividend?",
+        answer:
+          "Only once there is distributable profit, meaning profit after corporation tax has been provided for, and only with the paperwork behind it. Cash drawn before that is a director's loan, which carries a section 455 charge on the company if still outstanding nine months and one day after the year end.",
+      },
+      {
+        question:
+          "What if a later contract turns out to be inside IR35?",
+        answer:
+          "Keeping the company is often still sensible. It earns its keep where you also hold outside IR35 work, want to retain profit, or use it for employer pension contributions. For a genuinely inside engagement an umbrella is frequently simpler and cheaper, so plenty of contractors run both. The mix of work drives the answer, not a preference for one structure.",
+      },
+    ],
+  },
+  {
+    slug: "inside-ir35",
+    title: "Contractors Inside IR35",
+    headline: "Specialist accountants for contractors caught inside IR35",
+    metaTitle: "Inside IR35 Accountants | Keep, Close or Go Umbrella",
+    metaDescription:
+      "Caught inside IR35? What the determination does to your pay, what your limited company can still do, and whether to keep it, close it or move to an umbrella.",
+    intro:
+      "Your client has determined the engagement inside IR35, so the fee-payer now runs PAYE and employee National Insurance on the money before it reaches your company, and pays employer National Insurance at 15% on top. The income arrives already taxed. Three routes are open and none is automatically right: keep the company trading for outside work, hold it dormant while you sit inside, or close it and take the reserves out. Which one wins turns on your reserves, what you intend to contract on next, and how long the engagement runs. The determination itself is also worth testing before you commit.",
+    stats: [
+      { value: "45 days", label: "Your client's deadline to answer a disagreement" },
+      { value: "15%", label: "Employer NIC funded from the assignment rate" },
+      { value: "0%", label: "Expenses allowance under Chapter 10 (the 5% is gone)" },
+      { value: "18%", label: "BADR rate on disposals from 6 April 2026" },
+    ],
+    challenges: [
+      {
+        title: "The determination may not have been made with reasonable care",
+        body:
+          "A client who applies \"inside\" across a whole category of roles, without looking at the engagement itself, has probably failed the reasonable care test. Where that happens the Status Determination Statement is invalid and the client itself becomes the deemed employer for the PAYE and NIC. The same follows where the statement was never passed down the chain. <a href=\"/blog/ir35-status/sds-status-determination-statement\">What a valid statement looks like</a>.",
+      },
+      {
+        title: "Which chapter applies changes the arithmetic",
+        body:
+          "Medium and large clients sit under Chapter 10: the fee-payer operates PAYE and there is no 5% administrative expenses allowance. Where the client is small, or wholly overseas with no UK connection, responsibility stays with your own company under Chapter 8 and the 5% deduction survives. Two contractors on the same rate can keep different amounts. <a href=\"/blog/ir35-status/deemed-employment-payment-explained\">How the deemed payment works</a>.",
+      },
+      {
+        title: "Expenses you relied on stop being deductible",
+        body:
+          "Home to client travel is generally not deductible on an inside engagement: each engagement counts as a separate employment, so that site is a permanent workplace for it. Subsistence on the journey goes with it. Outside engagements keep temporary workplace relief, subject to the 24 month and 40% expectation rule.",
+      },
+      {
+        title: "Deciding what the company does next",
+        body:
+          "A dormant company costs almost nothing to hold and keeps the door open to outside work. Closing is the bigger step: a Members' Voluntary Liquidation can take reserves out as capital, potentially within Business Asset Disposal Relief at 18% from 6 April 2026, but the winding-up TAAR can recharacterise that as an income dividend where you carry on a same or similar trade within two years.",
+      },
+      {
+        title: "Umbrella arrangements are not all the same",
+        body:
+          "An umbrella becomes your legal employer and takes the admin away, but employer NIC at 15%, the Apprenticeship Levy and the umbrella's margin all come out of the assignment rate, so it is not comparable with a limited company day rate. From 6 April 2026 the agency contracting with the end client is jointly and severally liable for PAYE the umbrella fails to remit.",
+      },
+    ],
+    howWeHelp: [
+      {
+        title: "Reading the determination against the working practices",
+        body:
+          "A specialist reads the statement against how the engagement actually runs: control, substitution, mutuality, and whether the reasons given are specific to you or lifted across a role type. Where it looks like a blanket call, the written representations are drafted and the 45 day window tracked. <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">Challenging a determination</a>.",
+      },
+      {
+        title: "Modelling keep, dormant, close and umbrella together",
+        body:
+          "The four routes are costed on your own figures: reserves in the company, the tax still to come on extracting them, the cost of holding a dormant company, and what an umbrella leaves after employer NIC, the levy and margin. Start with the <a href=\"/calculators/inside-ir35-take-home-calculator\">inside IR35 take-home calculator</a>.",
+      },
+      {
+        title: "Keeping the company compliant while it earns less",
+        body:
+          "Trading on, dormant or winding down, the filings continue: accounts, the CT600, confirmation statements, PAYE and VAT deregistration, and your self assessment. Inside-IR35 income is tracked so it is not taxed twice when you draw it.",
+      },
+      {
+        title: "Preparing a closure that survives scrutiny",
+        body:
+          "If closing is the answer, the reserve position is set out, any director's loan cleared before the section 455 charge falls due, and the four TAAR conditions tested against what you plan next. The two year same or similar trade condition is the trap for anyone who expects to keep contracting. <a href=\"/blog/limited-company-tax/closing-contractor-limited-company\">Closing a contractor company</a>.",
+      },
+      {
+        title: "Planning a year that holds both kinds of engagement",
+        body:
+          "Many contractors hold one inside and one outside engagement in the same year. That mix moves the salary and dividend position, the expenses still available and the room left for an employer pension contribution, the largest lever open to you.",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "Should I close my limited company now that I am inside IR35?",
+        answer:
+          "Not automatically. The determination attaches to one engagement, not to you permanently, and a dormant company is cheap to hold while you look for outside work. Closing earns its keep where reserves are significant and no outside pipeline is realistic. Check the winding-up TAAR first: where you continue a same or similar trade within two years of the distribution, what you took as capital can be taxed as an income dividend.",
+      },
+      {
+        question:
+          "Can I still claim travel to the client site?",
+        answer:
+          "Generally no. Each inside engagement is treated as a separate employment, so the client's site is a permanent workplace for it and the journey is ordinary commuting. Subsistence bought on it goes the same way. Travel to a separate outside engagement can still qualify, provided you have not spent, and do not expect to spend, more than 40% of your working time at that site over a period longer than 24 months.",
+      },
+      {
+        question:
+          "How long does my client have to answer if I disagree?",
+        answer:
+          "Forty five days. Under the client-led disagreement process the end client must consider your written representations and respond within 45 days, either confirming the determination with reasons or issuing a new one. The client still makes the decision, but it cannot ignore you. Where it never took reasonable care over the original statement, or never passed it down the chain, the PAYE liability sits with the client rather than the fee-payer.",
+      },
+      {
+        question:
+          "Is an umbrella better than keeping the company inside IR35?",
+        answer:
+          "Simpler, not necessarily better. The umbrella employs you and removes the filing burden, but employer NIC, the Apprenticeship Levy and the margin come out of the assignment rate, so compare net figures rather than headline rates. Ask for the Key Information Document before signing and treat an unusually high promised take-home as a warning sign. Holding a dormant company alongside umbrella work keeps your route back to outside engagements open.",
+      },
+      {
+        question:
+          "Does the raised small-company threshold take my client out of scope?",
+        answer:
+          "Probably not yet. The thresholds rose to turnover of £15m, a balance sheet total of £7.5m and 50 employees for financial years beginning on or after 6 April 2025, and two of the three must be met. The test looks back to the client's last financial year ending before the tax year, and status normally changes over two consecutive years, so a client that counted as medium is unlikely to leave scope before 6 April 2027.",
+      },
+      {
+        question:
+          "Will an inside determination raise questions about my earlier contracts?",
+        answer:
+          "One determination is not a finding about your history. HMRC can still enquire into earlier years, so the record of each engagement matters: the contract, the working practices, any review taken at the time. Since 6 April 2024 HMRC can set off tax you and the company already paid against a deemed employer's liability, reducing, though not removing, the cost of an earlier outside position that proves wrong.",
       },
     ],
   },

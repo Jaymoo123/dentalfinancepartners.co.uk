@@ -1,0 +1,101 @@
+{
+  "slug": "ir35-contract-review",
+  "title": "IR35 Contract Review",
+  "headline": "IR35 contract reviews for contractors before they sign",
+  "metaTitle": "IR35 Contract Review for UK Contractors | 2026/27",
+  "metaDescription": "What an IR35 contract review covers in 2026/27: the status tests, written terms against working practices, and the 45-day disagreement process.",
+  "intro": "You have a new or renewed contract in front of you, or a client has handed you a determination saying inside IR35 and you think it is wrong. Either way the question is the same: do the written terms and the way the work will actually run point to self-employment or to employment? An IR35 contract review answers that. A specialist reads the contract, the upper-level agreement where an agency sits in the chain, and your account of how the work is really directed, then sets both against the status tests and marks the weak points. Where the client is medium or large it decides your status, so the review also covers reasonable care and the 45-day disagreement route.",
+  "stats": [
+    {
+      "value": "3",
+      "label": "Tests in the irreducible minimum: personal service, control, mutuality"
+    },
+    {
+      "value": "45 days",
+      "label": "Client deadline to respond to a status disagreement (ITEPA s.61T)"
+    },
+    {
+      "value": "6 Apr 2027",
+      "label": "Earliest a previously medium client can leave the off-payroll rules"
+    },
+    {
+      "value": "[2024] UKSC 29",
+      "label": "PGMOL, the Supreme Court's latest word on status"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "The status tests, without the jargon",
+      "body": "There is no statutory definition of employment for tax. Status comes from case law, starting with Ready Mixed Concrete [1968] 2 QB 497: personal service (can you genuinely send a substitute), control (how far the client directs what you do, how, when and where), and mutuality of obligation (an obligation to offer and accept paid work). PGMOL [2024] UKSC 29 confirmed control and mutuality can both be present and still not settle it. What decides it is the whole picture, and whether you are in business on your own account. More in <a href=\"/blog/ir35-status/ir35-status-tests-explained\">the status tests explained</a>."
+    },
+    {
+      "title": "Paperwork is only half of what gets judged",
+      "body": "A clean contract sitting on top of employee-like working practices will not hold. HMRC and the tribunals look at what actually happens: who sets your hours, whether you sit inside the client's line management, whether a substitute would ever be accepted. Expect questions about the day to day, not just the clauses. A substitution clause nobody could use is the clearest case."
+    },
+    {
+      "title": "Who decides your status depends on the client's size",
+      "body": "Two regimes run side by side. Where the end client is medium or large, the off-payroll rules apply: the client must issue a Status Determination Statement, and PAYE is operated before your invoice is paid by the fee payer, normally the agency closest to your company. Where the client is small, or wholly overseas with no UK connection, the original rules stay with your own company. The small-company thresholds rose for financial years beginning on or after 6 April 2025, but with the filing lag and the two consecutive years rule the earliest a previously medium client leaves scope is 6 April 2027. For 2026/27, assume yours is in."
+    },
+    {
+      "title": "When the determination looks wrong",
+      "body": "Under those rules a determination has to carry a conclusion, the reasons behind it and evidence of reasonable care, and it has to reach both you and the next party in the chain. A blanket inside call across a whole category of roles, with no individual assessment, is very likely a failure of reasonable care, which can invalidate the statement and leave the liability with the client. Representations go through the client-led disagreement process, and the client has 45 days to respond. The timetable is in <a href=\"/blog/ir35-status/sds-status-determination-statement\">the guide to determination statements</a>."
+    },
+    {
+      "title": "What a review gives you, and what it does not",
+      "body": "Out of a review comes a reasoned read of your position, the terms and practices pulling the wrong way, wording worth renegotiating before signature, and a dated record you can point to later. No guarantee comes with it, because status is decided on the facts of the engagement as it runs. HMRC's CEST tool shares that limit, which is why a determination resting on it is not the last word either."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Reading the whole chain, not one document",
+      "body": "A specialist reviews the contract you are being asked to sign and, where an agency sits in between, the upper-level agreement too. Terms in the chain above you can contradict the ones in front of you, which is where clean-looking contracts fall down."
+    },
+    {
+      "title": "Testing the wording against the working practices",
+      "body": "Questions about the real engagement follow the read: who directs the work, what happens if you are unavailable, whether you can turn down extra tasks, whose equipment you use. Those answers meet the tests a tribunal would apply."
+    },
+    {
+      "title": "Preparing the case before you sign",
+      "body": "Where the risk sits in wording that can be changed, a specialist prepares the amendments to put to the agency or client, and flags the working practices that need to change with them."
+    },
+    {
+      "title": "Building the file behind a disagreement",
+      "body": "If a determination is being challenged, a specialist assembles the written representations and the evidence on each test. The step by step route is covered in <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">how to challenge an inside determination</a>."
+    },
+    {
+      "title": "A first read before you commit",
+      "body": "Ahead of a full review, the <a href=\"/calculators/ir35-status-indicator\">IR35 status indicator</a> walks the same tests and shows which way each one points. Treat it as a screen telling you whether a review is worth arranging, never as a determination."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can a review guarantee my contract is outside IR35?",
+      "answer": "No, and treat any offer of a guarantee with suspicion. Status is a multi-factorial judgement made on the facts of the engagement as it runs, and only a tribunal settles it finally. What you get instead is a reasoned position and a dated record of it. That record matters if HMRC opens an enquiry years later, because it shows care was taken at the time."
+    },
+    {
+      "question": "My client used CEST and it said inside. Is that the end of it?",
+      "answer": "Not necessarily. CEST is a screening tool, and HMRC will stand behind a result where the answers are accurate, consistent with the working practices, in line with the guidance and free of avoidance. It does not bind a tribunal, its handling of mutuality of obligation is narrower than the case law, and a result built on answers that do not match the real engagement is worthless. Where the inputs were wrong, so is the output."
+    },
+    {
+      "question": "Who decides my status if my client is a small company?",
+      "answer": "Your own company does. The off-payroll rules shift the decision to the end client only where that client is medium or large, or a public body. Where the client is small under the Companies Act tests, or wholly overseas with no UK connection, the original rules apply and your company assesses its own status. That makes a documented review more important, because no client statement stands behind the position."
+    },
+    {
+      "question": "What should I have ready before a review starts?",
+      "answer": "The contract you have been offered, the upper-level agreement if an agency is involved, any statement of work or schedule, the determination and its reasons where one has been issued, and a plain description of how the engagement will run day to day. The <a href=\"/blog/ir35-status/ir35-contract-review-checklist\">contract review checklist</a> lists the clauses that matter most."
+    },
+    {
+      "question": "Does a review help if I have already been determined inside?",
+      "answer": "Yes. It establishes whether the determination stands up on the tests and whether it was reached with reasonable care, which is the ground most successful disagreements are argued on. The client must respond to representations within 45 days, confirming with reasons or issuing a new statement. Even where it holds, you finish with a clear view of what would have to change for a future renewal."
+    }
+  ],
+  "sources": [
+    "docs/contractors-ir35/house_positions.md 2 (status tests, Ready Mixed Concrete [1968] 2 QB 497, PGMOL [2024] UKSC 29, CEST stance and its limits)",
+    "docs/contractors-ir35/house_positions.md 3 (SDS, reasonable care, ITEPA 2003 s.61NA and s.61T, 45-day client-led disagreement process)",
+    "docs/contractors-ir35/house_positions.md 1, 1.A and 4 (Chapter 8 vs Chapter 10, ITEPA s.60A, Companies Act 2006 s.382 thresholds, 6 April 2027 earliest exit, fee-payer operates PAYE under s.61N)",
+    "docs/contractors-ir35/house_positions.md 17.A, 17.B, 17.D, 17.E (CEST never a guarantee, review worthwhile but not sufficient, working practices over wording, blanket determinations)",
+    "https://www.legislation.gov.uk/ukpga/2003/1 (ITEPA 2003 Part 2, Chapters 8 and 10)",
+    "https://www.legislation.gov.uk/ukpga/2006/46/section/382 (Companies Act 2006 s.382 small-company thresholds)",
+    "Internal links verified on disk: contractors-ir35/web/content/blog/{ir35-status-tests-explained,sds-status-determination-statement,challenge-ir35-determination-sds,ir35-contract-review-checklist}.md (category 'IR35 Status' -> /blog/ir35-status/<slug>); src/lib/calculators/tools/ir35-status-indicator.ts registered in src/lib/calculators/registry.ts, path /calculators/<slug>"
+  ]
+}

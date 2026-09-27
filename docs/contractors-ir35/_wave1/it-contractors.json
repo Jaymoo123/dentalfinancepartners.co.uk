@@ -1,0 +1,106 @@
+{
+  "slug": "it-contractors",
+  "title": "IT Contractors",
+  "headline": "Accountants for IT contractors",
+  "metaTitle": "Accountants for IT Contractors | IR35 and PSC Tax",
+  "metaDescription": "For UK software, data, cloud and infrastructure contractors on day rates. Inside and outside IR35, umbrella or PSC, overseas clients, pensions and VAT.",
+  "intro": "You write software, run data platforms or manage cloud infrastructure, and you invoice a day rate through your own limited company. One engagement is outside IR35, the next is inside on almost identical work, and an agency sits in the middle of both. Some clients are abroad. Some months a side project earns a little. So the questions worth answering are practical ones: who decides your status, what a caught engagement does to your take-home, when an umbrella beats keeping the company open, how VAT behaves with an overseas client, and why an employer pension contribution is usually your largest lever. Contract wording and the way a job actually runs rarely describe the same work, and status turns on the second.",
+  "stats": [
+    {
+      "value": "5%",
+      "label": "Chapter 8 expenses allowance, and it is gone under Chapter 10"
+    },
+    {
+      "value": "15%",
+      "label": "Employer NIC funded from the assignment rate on an umbrella"
+    },
+    {
+      "value": "£60,000",
+      "label": "Pension annual allowance for 2026/27, plus carry forward"
+    },
+    {
+      "value": "£90,000",
+      "label": "VAT registration threshold, frozen since 1 April 2024"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Inside on one contract, outside on the next, same skills",
+      "body": "Status is settled engagement by engagement, and the first question is who settles it. Where the end client is medium or large, Chapter 10 applies: the client issues a Status Determination Statement and the fee-payer, usually the agency nearest your company, operates PAYE before paying you. Where the client is small, or wholly overseas with no UK connection, Chapter 8 applies and your company assesses itself. Embedded delivery is where the control test bites: a client setting the stack, the sprint order and the hours is directing how the work is done."
+    },
+    {
+      "title": "What being caught actually costs",
+      "body": "Under Chapter 10 the fee-payer deducts PAYE and employee NIC and pays employer NIC at 15% on top, all from the same assignment rate, and no 5% expenses allowance exists in that calculation. Under Chapter 8 your company computes its own deemed employment payment at the year end, keeping the 5% allowance and employer pension contributions. Home to client travel usually stops being deductible once an engagement is inside. Mechanics: <a href=\"/blog/ir35-status/deemed-employment-payment-explained\">the deemed payment guide</a>."
+    },
+    {
+      "title": "An umbrella rate is the cost of employing you",
+      "body": "The rate quoted on an umbrella assignment is the cost of employing you, not the pay you see. Employer NIC at 15%, the Apprenticeship Levy at 0.5% and the umbrella's margin come out of that figure first, and PAYE and employee NIC then apply to what is left. So a headline rate above a payroll salary can still land lower in your account, and the only fair comparison is net against net. Put your own figures through the <a href=\"/calculators/umbrella-vs-limited-calculator\">umbrella versus limited calculator</a>."
+    },
+    {
+      "title": "Laptops, licences and the research and development question",
+      "body": "Hardware, developer tooling, cloud subscriptions, indemnity cover and accountancy fees are ordinary company costs where incurred wholly and exclusively for the business, equipment usually via capital allowances. Research and development relief is narrower than contractors expect: a client project delivered on a day rate is rarely the company's own qualifying project, and where a client funds the work any claim tends to belong to them. Your own product is the case worth examining."
+    },
+    {
+      "title": "Overseas clients, and where your VAT lands",
+      "body": "Contracting directly for a business abroad changes two things at once. For IR35, a wholly overseas client with no UK connection leaves the assessment with your company under Chapter 8. For VAT, the general rule puts a business-to-business supply where the customer belongs, so those fees fall outside the scope of UK VAT and do not count towards the £90,000 threshold. <a href=\"/blog/mtd-and-compliance/contractor-vat-registration-guide\">The VAT guide</a> covers the flat rate trap."
+    },
+    {
+      "title": "Dividends are no longer the whole answer",
+      "body": "Dividend rates of 10.75%, 35.75% and 39.35% for 2026/27 sit on top of corporation tax already paid, narrowing the gap between extracting profit and leaving it in the company. An employer pension contribution goes in before corporation tax, carries no NIC and is not taxed on you as income, within a £60,000 annual allowance plus up to three years carried forward, and it is not capped by your salary. See <a href=\"/blog/pension-and-dividends/contractor-pension-employer-contributions\">employer contributions</a>."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Status reviewed before you sign, and again when the job changes",
+      "body": "Both the wording and the working practice are covered: who sets priorities, whether a substitute would be accepted, what happens between contracts. Where a determination from the client looks wrong, the client-led disagreement process is open to you."
+    },
+    {
+      "title": "The company's filings kept straight",
+      "body": "Your accounts, the CT600, the Companies House filings and your self assessment return are prepared together, with the corporation tax position worked through where profits land in the marginal band. Income that arrived already taxed from a fee-payer is tracked so it is not taxed twice."
+    },
+    {
+      "title": "Extraction modelled rather than assumed",
+      "body": "Salary, dividends and pension are set out together for the year ahead on your own figures: whether the Employment Allowance is available, how much personal allowance other income uses, and what a one-off employer contribution would do in a strong year."
+    },
+    {
+      "title": "VAT and overseas invoicing settled once",
+      "body": "The registration question is worked through: whether it is required or worth taking voluntarily, whether the flat rate scheme survives the limited cost trader test at 16.5%, and how invoices to clients outside the UK should be raised and reported."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "My agency says the role is outside IR35. Is that the determination?",
+      "answer": "No. Where the end client is medium or large, the Status Determination Statement is the client's to issue and the agency is usually only the fee-payer. An agency view carries none of the reasonable care duty the client owes, so ask for the statement and its reasoning. Where the client is small or wholly overseas, no statement is coming: the assessment sits with your own company."
+    },
+    {
+      "question": "Can a developer embedded in a client team ever be outside IR35?",
+      "answer": "It is possible, but embedded delivery is where the control test most often points the other way. If the client sets your hours, assigns your tickets, picks the stack and expects you on their systems at fixed times, the engagement looks like employment whatever the wording says. Real control over delivery, a substitution right the client would honour and gaps between contracts are what count."
+    },
+    {
+      "question": "Should I close the limited company if my next contract is inside IR35?",
+      "answer": "Not automatically. For one genuinely inside engagement an umbrella is usually simpler and often no worse financially, since the company adds cost without a tax advantage on that income. Keeping it open suits you if outside work is likely soon, profit is already retained, or you want to carry on making employer pension contributions. The routes are compared in <a href=\"/blog/umbrella-vs-limited-company/limited-company-vs-umbrella-contractor\">limited company versus umbrella</a>."
+    },
+    {
+      "question": "I invoice a client in the United States. Do I charge VAT?",
+      "answer": "For services to a business customer the general rule places the supply where the customer belongs, so a fee invoiced to a United States business is outside the scope of UK VAT and no UK VAT is charged. Those sales also sit outside the £90,000 registration threshold test. Voluntary registration can still pay where you carry input VAT on equipment and software."
+    },
+    {
+      "question": "What do I do with SaaS or app income alongside my day rate?",
+      "answer": "Run through the same company it is simply more trading income, taxed at corporation tax rates, and it can push profits into the marginal band. Held outside the company it belongs on your self assessment return and interacts with Making Tax Digital for Income Tax. Either way it shifts the salary and dividend split, so raise it early."
+    }
+  ],
+  "sources": [
+    "docs/contractors-ir35/house_positions.md §1 and §1.A: Chapter 8 versus Chapter 10, client size as the dividing line, wholly overseas client leaves the assessment with the PSC",
+    "docs/contractors-ir35/house_positions.md §3: Status Determination Statement, reasonable care, client-led disagreement process",
+    "docs/contractors-ir35/house_positions.md §4: deemed payment mechanics, 5% allowance retained under Chapter 8 and abolished under Chapter 10, employer NIC 15%",
+    "docs/contractors-ir35/house_positions.md §5 and §8: dividend rates 10.75% / 35.75% / 39.35% for 2026/27, Employment Allowance fork, no single optimal salary",
+    "docs/contractors-ir35/house_positions.md §9: VAT registration threshold £90,000 frozen since 1 April 2024, flat rate limited cost trader 16.5%",
+    "docs/contractors-ir35/house_positions.md §10: allowable expenses, capital allowances on equipment, inside IR35 travel restriction",
+    "docs/contractors-ir35/house_positions.md §11: pension annual allowance £60,000 for 2026/27, three-year carry forward, employer contribution not capped by the director's salary",
+    "docs/contractors-ir35/house_positions.md §12: umbrella deductions from the assignment rate, Apprenticeship Levy 0.5%, joint and several liability from 6 April 2026 under FA 2026 s.24",
+    "docs/contractors-ir35/house_positions.md §17.A, §17.C, §17.D, §17.E: CEST not binding, umbrella versus PSC turns on the inside and outside mix, working practices over wording, blanket determinations",
+    "https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a: business-to-business general rule, supply made where the customer belongs, outside the scope of UK VAT and not counted towards the UK registration threshold. Confirmed 2026-09-27",
+    "CTA 2009 Part 13 as amended by Finance Act 2024 (merged R&D expenditure credit, accounting periods beginning on or after 1 April 2024) and HMRC CIRD: for contracted-out R&D the customer who decided on the work is normally the claimant, so a day-rate client project is rarely the PSC's own qualifying project. House positions is silent on R&D, so this paragraph stays qualitative with no figure. Confirmed 2026-09-27",
+    "docs/contractors-ir35/coverage_map_2026-09.json: row 'Contractor in a named profession looking for a specialist', status PARTIAL, existing page /for/it-contractors, target query 'accountant for it contractors'"
+  ]
+}
