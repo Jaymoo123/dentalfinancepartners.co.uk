@@ -343,16 +343,18 @@ test wave.
    queries Google Ads prices at zero, and ChatGPT names them. The maps keep every failed
    rule on the row. Proposed: on these five sites, selection is by buyer situation, judged on
    leads per 1,000, Bing at 28 days and assistant naming, not Google impressions at 90 days.
-   Recommend yes. OPEN.
+   DECIDED YES 09-27 (owner: "yes to all three"). NETNEW §8.2 rule 3 and the 200-impression
+   kill criterion are suspended for these five sites; the read is leads per 1,000 UK humans,
+   Bing impressions and clicks at 28 days, and the monthly assistant-naming run.
 8. **Wave 1 shape.** Every map puts segment pages first (Property: all 15 Wave 1 rows;
    charities 7 of 15; contractors 6; medical 5; care first). That is page-template and
    schema work at 800 to 1,200 words, not 3,000-word posts, and it pays off on assistant
    naming and Bing rather than Google position. Approve that shape, or keep Wave 1 as blog
-   posts with the segment pages after. Recommend segment pages first. OPEN.
+   posts with the segment pages after. DECIDED 09-27: segment pages first.
 9. **Specialist chat widget on calculator pages.** It still auto-opens top-right on the
    calculator pages. It is the estate-wide widget, not the gate, and was out of scope.
    Leave it for the 4-week read (one variable at a time), or turn off auto-open there?
-   Recommend leave. OPEN.
+   DECIDED 09-27: leave it.
 10. **Deploy.** Everything above is committed locally and not pushed. Say "deploy" and the
     order is: push, dependency-closure check, clean worktree at the pushed SHA, Property
     first (with the `calc_pdf_offer` flag set off in prod the same day and the PDF day-14
