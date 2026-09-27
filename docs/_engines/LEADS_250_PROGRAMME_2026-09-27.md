@@ -355,10 +355,14 @@ test wave.
    calculator pages. It is the estate-wide widget, not the gate, and was out of scope.
    Leave it for the 4-week read (one variable at a time), or turn off auto-open there?
    DECIDED 09-27: leave it.
-10. **Deploy.** Everything above is committed locally and not pushed. Say "deploy" and the
-    order is: push, dependency-closure check, clean worktree at the pushed SHA, Property
-    first (with the `calc_pdf_offer` flag set off in prod the same day and the PDF day-14
-    read recorded first), then the seven blog-kit sites and the four canonical-fix sites.
+10. **Deploy.** Everything above is committed locally and not pushed (20 commits since
+    `d41835bd`). Say "deploy" and the order is: push, dependency-closure check, clean
+    worktree at the pushed SHA, Property first (gate removal, one-form rule, 15 audience
+    pages, with the `calc_pdf_offer` flag set off in prod the same day and the PDF day-14
+    read recorded first), then the seven blog-kit sites, the four canonical-fix sites and
+    the entity block on contractors, care, charities and Medical.
+11. **Wave 1 on the four small sites.** Same chain as Property, about 184 agent runs.
+    Recommend go. OPEN.
 
 ## 11. Targets and the monthly read
 
@@ -666,6 +670,28 @@ JSON-LD and the self-canonical. Manager commits. Deploy on the owner's word.
 run as the pilot of the whole chain (15 writers + 30 QA + 1 integrator = 46 runs), rendered and
 checked before the other four sites start (60 writers + 120 QA + 4 integrators = 184 runs).
 Total Wave 1: about 234 agent runs, approved in principle 09-27 (decision 4).
+
+**S4a STATUS 2026-09-27, late.** Property Wave 1 is BUILT and VERIFIED locally, not deployed.
+Chain run end to end: 15 Opus writers, 15 Opus factual reviews (three pages needed substantive
+corrections: para 17A misapplied and the six-dwellings rule on portfolio, the CIHC letting
+carve-out on SPV and on profit extraction, NRL withholding timing and rebasing dates on
+non-resident), 15 Opus editorial reviews, one cross-page sweep (intro closers varied, consent
+sentence removed from row bodies, openers thinned, all links as anchors, sameness scan clean),
+one Sonnet integrator. All 15 rows in `Property/web/src/data/audiences.ts`, live at
+`/for/<slug>`, in the sitemap, with Service + FAQPage JSON-LD, the entity block and one form.
+QA gate 0 findings, typecheck clean, 1640 tests, build green, headless render at 1280 and 390
+clean. Commits `71c32445`, `efcb0694`. Reviews and sweep: `docs/property/_wave1/qa/`.
+Template and entity block: `89e982ac`. Agent runs for the Property pilot: 47 plus 4 template
+and QA-gate builders and 1 entity-copy writer.
+
+Learned for the four small sites: writers must be told links are `<a href>` anchors from the
+start; stats are strings; the consent sentence belongs to the template not the row; the
+word-band count must include section titles and questions (two pages slipped over on the
+stricter count); the topic pools do not feed these pages, the maps do.
+
+NEXT: the same chain on medical (5 segment pages as files in the existing pattern plus 10
+decision posts via the blog engine), contractors-ir35, care and charities (15 rows each into
+their data arrays). Owner approves the count before launch: about 184 runs.
 
 **Read.** Bing impressions and clicks per page at 28 days, `/for/*` entry leads per 1,000 at 4
 weeks, and the monthly assistant-naming run with the 30-prompt set widened to name each new
