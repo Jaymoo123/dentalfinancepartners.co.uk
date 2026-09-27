@@ -30,9 +30,9 @@ faqs:
   - question: "Does the structure change my VAT position?"
     answer: "No. The welfare exemption follows CQC registration, not the entity type. A CQC-registered provider supplying welfare services makes exempt supplies whether it is a sole trader or a company, and in both cases it cannot recover input VAT on the costs of making those supplies."
   - question: "Does incorporating change what I pay staff?"
-    answer: "Not at all. National Living Wage, employer National Insurance at 15% above the £5,000 secondary threshold and the Employment Allowance of up to £10,500 apply the same way to a sole trader employer and to a company employer. Payroll cost is structure-neutral."
+    answer: "It changes nothing. National Living Wage, employer National Insurance at 15% above the £5,000 secondary threshold and the Employment Allowance of up to £10,500 apply the same way to a sole trader employer and to a company employer. Payroll cost is structure-neutral."
 ---
-<p>Choose the structure before the application, because the Care Quality Commission registers a named legal entity rather than a business idea. For most new care providers the answer is a limited company: it pays corporation tax at 19% on profits up to £50,000 and 25% above £250,000 with marginal relief between, it keeps the trading liability away from your personal assets, and it is the wrapper lenders and local authority commissioners expect to contract with. If you register as an individual and incorporate later, CQC treats that as a change of business type and you complete the provider application again.</p>
+<p>Choose the structure before the application, because the Care Quality Commission registers a named legal entity rather than a business idea. For most new care providers the answer is a limited company. Profit is taxed inside it at 19% up to £50,000 and 25% once it passes £250,000, with marginal relief across the band, you are taxed personally only on what you draw out, and the trading liability sits with the company rather than with you. If you register as an individual and incorporate later, CQC treats that as a change of business type and you complete the provider application again.</p>
 
 <h2>What is CQC actually registering?</h2>
 
@@ -58,7 +58,7 @@ faqs:
 
 <p>Yes, and they are mostly about scale and simplicity. A single registered provider who is also the registered manager, running one small service with modest profits, carries less administration as a sole trader: no company accounts, no confirmation statement, no separate corporation tax return, no dividend paperwork. The <a href="/blog/business-structure-and-acquisition/care-provider-formation-trends">formation data across the sector</a> counts new care companies, not new sole traders, so it tells you incorporation is busy rather than that it is the only workable route.</p>
 
-<p>Two things to weigh against the simplicity. First, liability: a sole trader and the partners in an ordinary partnership are personally exposed to the business's debts, which matters in a sector with heavy fixed payroll and slow fee settlement. Second, <a href="/blog/care-home-accounts-and-funding/mtd-it-care-owner-operators">Making Tax Digital for Income Tax</a>, which brings sole traders and partners with combined self-employment and property income above £50,000 into quarterly reporting from 6 April 2026, with the threshold falling to £30,000 from April 2027. A company director is outside that regime for the company's trading profits.</p>
+<p>Two things to weigh against the simplicity. First, liability: there is no separate legal person on either route, so the business's debts are your debts. Second, <a href="/blog/care-home-accounts-and-funding/mtd-it-care-owner-operators">Making Tax Digital for Income Tax</a>, which brings sole traders and partners with combined self-employment and property income above £50,000 into quarterly reporting from 6 April 2026, with the threshold falling to £30,000 from April 2027. A company director is outside that regime for the company's trading profits.</p>
 
 <h2>How does the structure affect the financial viability statement?</h2>
 
@@ -72,6 +72,6 @@ faqs:
 
 <p>Business Asset Disposal Relief applies to qualifying disposals on either route, taxing the gain at 18% for disposals from 6 April 2026 against the standard 24% higher rate. Both routes need two years of qualifying trading ownership before the disposal, which is another argument for settling the structure at the start rather than restarting the clock later. Note that propco and opco separation can break eligibility, so a structure built purely for property protection can cost relief on exit.</p>
 
-<h2>The order to decide in</h2>
+<h2>What order should you decide in?</h2>
 
 <p>Settle the entity, incorporate or register it, open the bank account in that name, then build the financial viability statement around it and apply. Doing it in that order means the name on the CQC application, on Companies House, on the insurance and on the bank mandate all match, which is what the regulator is checking for. If you are at the start of this, the <a href="/for/care-startups">care start-up hub</a> sets out the rest of the sequence, and a specialist reviews the structure against your funding mix and exit intention before the application is submitted.</p>

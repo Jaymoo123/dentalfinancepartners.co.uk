@@ -4,6 +4,7 @@ slug: "nhs-uniform-tax-relief-laundry-allowance"
 canonical: "https://www.medicalaccounts.co.uk/blog/nhs-uniform-tax-relief-laundry-allowance"
 date: "2026-08-26"
 dateModified: "2026-09-27"
+updatedDate: "2026-09-27"
 generator: claude-opus
 author: "Medical Accountants UK Editorial Team"
 image: "https://images.pexels.com/photos/5900130/pexels-photo-5900130.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

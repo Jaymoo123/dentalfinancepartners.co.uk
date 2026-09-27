@@ -15,14 +15,14 @@ generator: "claude-opus"
 keyTakeaways:
   - "BADR is 18% on qualifying disposals from 6 April 2026, having been 14% in 2025-26 and 10% up to 5 April 2025, so exit models built on the 10% rate understate the tax by 8 percentage points."
   - "The relief is capped at £1 million of lifetime qualifying gains under section 169N of the Taxation of Chargeable Gains Act 1992, and gains above that are taxed at the standard rates."
-  - "Against the standard higher rate of 24%, BADR now saves 6 percentage points, which is £60,000 on a fully relieved £1 million gain rather than the £140,000 the old 10% rate delivered."
+  - "Against the standard higher rate of 24%, BADR now saves 6 percentage points, which is £60,000 on a fully relieved £1 million gain, against £140,000 when the rate was 10% and the standard rate was already 24%."
   - "The qualifying conditions run for two years before the disposal date, so a propco and opco separation or a share reorganisation made close to an exit can remove the relief entirely."
   - "If the business has ceased rather than sold, the assets must be disposed of within three years for the relief to remain available."
 faqs:
   - question: "What is the BADR rate on a care business sale in 2026-27?"
     answer: "18% on qualifying gains for disposals from 6 April 2026. The rate was 10% for disposals on or before 5 April 2025 and 14% for disposals between 6 April 2025 and 5 April 2026. The date that fixes the rate is the date of the disposal, normally the date contracts become unconditional, not the date completion monies are received."
   - question: "How much is Business Asset Disposal Relief actually worth now?"
-    answer: "Six percentage points against the standard higher rate of 24%, on up to £1 million of lifetime qualifying gains. On a £400,000 gain that is £24,000 of tax saved, and on a fully used lifetime limit it is £60,000. When the rate was 10% the same limit was worth £140,000, which is why exit plans written before 2025 overstate the benefit."
+    answer: "Six percentage points against the standard higher rate of 24%, on up to £1 million of lifetime qualifying gains. On a £400,000 gain that is £24,000 of tax saved, and on a fully used lifetime limit it is £60,000. When the rate was 10% and the standard rate was already 24%, the same limit was worth £140,000, which is why exit plans written before 2025 overstate the benefit."
   - question: "Does a propco and opco structure stop me claiming the relief?"
     answer: "It can. The relief applies to the disposal of a trading business or of shares in a trading company. A company that holds the care home property and lets it to a separate operating company may be treated as carrying on an investment activity rather than a trade, which takes its shares outside the relief. The analysis turns on the actual activities of each entity, so it needs reviewing well before a sale rather than during one."
   - question: "What are the ownership conditions for shares in a care company?"
@@ -30,9 +30,9 @@ faqs:
   - question: "I have closed the service rather than sold it. Can I still claim?"
     answer: "Yes, if you dispose of the business assets within three years of the business ceasing and the usual two-year ownership and trading conditions were met up to the cessation date. This matters where a domiciliary agency winds down its contracts and the premises or vehicles are sold afterwards, because the three-year window is a hard limit rather than a guideline."
   - question: "Is an asset sale or a share sale better for the seller?"
-    answer: "They are taxed in different places. On a share sale you dispose of the shares personally and the relief, if available, applies to your gain. On an asset sale the company disposes of the assets, pays corporation tax at 19% up to £50,000 of profit and 25% above £250,000 on any chargeable gains and balancing charges, and the net proceeds still have to come out of the company. Both routes need modelling before heads of terms are signed."
+    answer: "They are taxed in different places. On a share sale you dispose of the shares personally and the relief, if available, applies to your gain. On an asset sale the company disposes of the assets, pays corporation tax on any chargeable gains and balancing charges at 19% up to £50,000 of profit and 25% above £250,000, with marginal relief between, and the net proceeds still have to come out of the company. Both routes need modelling before heads of terms are signed."
 ---
-<p>For disposals from 6 April 2026, Business Asset Disposal Relief taxes qualifying gains on the sale of a care business at 18% rather than the standard higher rate of 24%. The relief is capped at £1 million of qualifying gains across your lifetime, so the most it can now save is £60,000. That is the whole picture in one line, and it is a very different picture from the one most care sector exit plans were written against: when the rate was 10%, the same lifetime limit was worth £140,000.</p>
+<p>For disposals from 6 April 2026, Business Asset Disposal Relief taxes qualifying gains on the sale of a care business at 18% rather than the standard higher rate of 24%. The relief is capped at £1 million of qualifying gains across your lifetime, so the most it can now save is £60,000. That is the whole picture in one line, and it is a very different picture from the one most care sector exit plans were written against: when the rate was 10% and the standard rate was already 24%, the same lifetime limit was worth £140,000.</p>
 
 <h2>What is the rate, and which date fixes it?</h2>
 

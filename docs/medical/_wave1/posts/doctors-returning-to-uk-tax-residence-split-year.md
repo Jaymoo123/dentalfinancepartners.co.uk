@@ -3,6 +3,7 @@ slug: "doctors-returning-to-uk-tax-residence-split-year"
 title: "Returning to the UK as a Doctor: Residence, Split Year and What to File"
 date: "2026-09-27"
 dateModified: "2026-09-27"
+updatedDate: "2026-09-27"
 category: "GP Tax & Accounts"
 metaTitle: "Doctor Returning to the UK: Residence and Filing"
 metaDescription: "Returning to the UK as a doctor: when residence restarts, the split year case you usually meet, the return you file, your pension and your NI record."
@@ -27,7 +28,7 @@ faqs:
   - question: "Can I use the 4-year foreign income and gains regime?"
     answer: "Only if you have been a non-UK tax resident for at least 10 consecutive years and you are still within your first 4 years of UK residence. It replaced the remittance basis on 6 April 2025. You claim it on your Self Assessment return and you choose which foreign income and gains to cover, but the claim costs you the tax-free allowances for income tax and capital gains tax. Foreign employment earnings are not among the income you can claim relief on under the regime."
   - question: "Do I have to register for Self Assessment when I get back?"
-    answer: "Yes, if you start private or locum work, or if you need the residence pages for the year of return. Tell HMRC by 5 October following the end of the tax year concerned. An NHS post alone, taxed through PAYE with nothing else going on, does not usually create a filing obligation by itself, but a split year with foreign income in it does."
+    answer: "Yes, if you start private or locum work, or if you need the residence pages for the year of return. Notification is due by the 5 October after the close of the tax year in question. An NHS post alone, taxed through PAYE with nothing else going on, does not usually create a filing obligation by itself, but a split year with foreign income in it does."
   - question: "What happens to my NHS pension and my National Insurance record?"
     answer: "You can rejoin the NHS Pension Scheme at any time up to age 75, and all members joining or rejoining from 1 April 2023 build up benefits in the 2015 Scheme. You apply in writing to your employer and the employer submits the joiner form. Membership restarts from the first day of the pay period after your employer receives the application and cannot be backdated. Separately, years abroad often leave gaps in your National Insurance record, and voluntary contributions can normally only be paid for the past 6 years."
 ---
@@ -81,6 +82,6 @@ faqs:
 
 <h2>What if private or locum work starts when you get back?</h2>
 
-<p>Tell HMRC by 5 October following the end of the tax year your first paid session fell in. Locum or private profit is stacked on your NHS pay and taxed at your marginal rate, with Class 4 National Insurance at 2% above £50,270. Class 2 is no longer a required payment, and payments on account begin once the bill passes £1,000 with less than 80% collected at source. <a href="/blog/locum-doctor-self-assessment-filing-guide">Our locum filing guide</a> sets out how the pages are completed, and <a href="/blog/locum-doctor-tax-complete-guide">the complete locum tax guide</a> covers expenses and the pension forms.</p>
+<p>The date to work to is the 5 October after the close of the tax year containing your first paid session. Locum or private profit is stacked on your NHS pay and taxed at your marginal rate, with Class 4 National Insurance at 2% above £50,270. Class 2 is no longer a required payment, and payments on account begin once the bill passes £1,000 with less than 80% collected at source. <a href="/blog/locum-doctor-self-assessment-filing-guide">Our locum filing guide</a> sets out how the pages are completed, and <a href="/blog/locum-doctor-tax-complete-guide">the complete locum tax guide</a> covers expenses and the pension forms.</p>
 
 <p>Take it in order. Fix the residence position and the split date first, because it decides which pages you file and which income is in scope. Then register for anything new, and check the pension and National Insurance record while the years abroad are inside the 6-year window. A specialist reviews the residence position before the pages go in, because the case and the date have to hold up against your day counts.</p>

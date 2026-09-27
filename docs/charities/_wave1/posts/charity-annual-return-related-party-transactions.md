@@ -15,7 +15,7 @@ generator: "claude-opus"
 keyTakeaways:
   - "A related party is anyone closely connected to the charity or its trustees: close family, a partner or dependant, a parent or subsidiary body, a joint venture partner, or an organisation those people control or hold substantial influence over."
   - "The Charity Commission treats a business as a connected organisation where a trustee or a trustee's family member holds at least 20% of the shareholding or voting rights."
-  - "The return asks three separate related party things: the single highest value donation received from a related party, whether any grant recipients were related parties, and what trustees were paid for other than out of pocket expenses."
+  - "The return asks three separate related party things: the single highest value donation received from a related party, which only appears where gross income is over £100,000, whether any grant recipients were related parties, and what trustees were paid for other than out of pocket expenses."
   - "The term comes from the Charities SORP, so the people you disclose in the accounts and the people you report in the return should be the same list."
   - "Build the list from your register of interests before you open the return, because the questions ask for values you cannot work out mid form."
 faqs:
@@ -26,7 +26,7 @@ faqs:
   - question: "What is a connected organisation for annual return purposes?"
     answer: "The annual return glossary defines a connected organisation as a business in which a trustee or a family member of a trustee has a substantial interest, and defines substantial interest as holding at least 20% of the shareholding or voting rights. If a trustee and their spouse together hold a fifth of a supplier company, that supplier is a connected organisation."
   - question: "Does the annual return ask us to name related parties?"
-    answer: "No. The related party questions ask for a value and a yes or no, not names. The donation question asks for the value of the single highest value donation received from a related party during the financial period, and the grant question asks whether any of the grant recipients you have already reported were related parties. Names belong in the accounts notes, not the return."
+    answer: "No. The related party questions ask for a value and a yes or no, not names. The donation question, which appears only where your gross income for the period is over £100,000, asks for the value of the single highest value donation received from a related party, and the grant question asks whether any of the grant recipients you have already reported were related parties. Names belong in the accounts notes, not the return."
   - question: "Do trustee expenses count as a related party payment?"
     answer: "Out of pocket expenses are excluded from the trustee payment question, which asks what trustees were paid for other than reimbursed expenses. Reimbursing a trustee for train fares is not a payment for these purposes. Paying that same trustee for consultancy work, or for a role in a trading subsidiary, is."
   - question: "What if we get the related party answer wrong?"
@@ -41,7 +41,7 @@ faqs:
 <p>Start with the trustees themselves, then work outwards. The Commission's own examples cover:</p>
 
 <ul>
-  <li><strong>People close to a trustee.</strong> A close family member, a partner, or a dependant. Spouses and civil partners are the obvious cases, but the Charities Act 2011 treats a couple living together as if married as spouses of each other, and treats a stepchild as a child.</li>
+  <li><strong>People close to a trustee.</strong> A close family member, a partner, or a dependant. Spouses and civil partners are the obvious cases, and where the Charities Act 2011 tests a trustee's connected persons elsewhere, at section 350, it treats a couple living together as if they were married as spouses of each other and treats a stepchild as a child. That is a fair guide to how widely close family reads here.</li>
   <li><strong>Bodies in the charity's own group.</strong> A parent body, a subsidiary, or an organisation the charity is in a joint venture with. Your trading subsidiary is a related party, which is why the <a href="/blog/gift-aid/charity-trading-subsidiary-gift-aid">profit donation from a trading subsidiary</a> is a related party donation as well as a Gift Aid payment.</li>
   <li><strong>Organisations those people control.</strong> A business controlled by a trustee or a trustee's family member, or one in which they have a substantial interest or influence over.</li>
 </ul>
@@ -52,7 +52,7 @@ faqs:
 
 <p>Three questions, and they sit in different parts of the form.</p>
 
-<p><strong>The highest value donation from a related party.</strong> The return asks for the value of your charity's single highest value donation received from a related party during the financial period of the return. It is one figure, not a total and not a list, and it sits with the equivalent questions about the highest donation from a corporate donor and from an individual. The Commission's stated reason for collecting it is to understand financial dependency, which makes conflicts of interest easier to spot.</p>
+<p><strong>The highest value donation from a related party.</strong> Where your gross income for the period is over £100,000, the return asks for the value of your charity's single highest value donation received from a related party during the financial period of the return. Below that income the question does not appear. It is one figure, not a total and not a list, and it sits with the equivalent questions about the highest donation from a corporate donor and from an individual. The Commission's stated reason for collecting it is to understand financial dependency, which makes conflicts of interest easier to spot.</p>
 
 <p><strong>Grants to related parties.</strong> If your charity makes grants, you report the value going to individuals, to other charities, and to other organisations that are not charities. The follow up question asks whether any of those recipients were related parties. Grant makers should expect this one to be the question that takes the longest, because it needs the recipient list checked against the register of interests rather than a figure read off the ledger.</p>
 

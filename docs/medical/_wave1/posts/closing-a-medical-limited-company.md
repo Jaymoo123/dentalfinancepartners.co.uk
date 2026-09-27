@@ -4,6 +4,7 @@ slug: "closing-a-medical-limited-company"
 canonical: "https://www.medicalaccounts.co.uk/blog/closing-a-medical-limited-company"
 date: "2026-09-27"
 dateModified: "2026-09-27"
+updatedDate: "2026-09-27"
 generator: claude-opus
 author: "Medical Accountants UK Editorial Team"
 category: "Incorporation & Company Structures"

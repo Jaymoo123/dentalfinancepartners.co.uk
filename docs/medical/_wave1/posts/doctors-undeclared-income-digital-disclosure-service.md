@@ -3,6 +3,7 @@ slug: "doctors-undeclared-income-digital-disclosure-service"
 title: "Undeclared Private or Locum Income: Should You Use HMRC's Digital Disclosure Service?"
 date: "2026-09-27"
 dateModified: "2026-09-27"
+updatedDate: "2026-09-27"
 category: "Private Practice"
 metaTitle: "Undeclared Private or Locum Income: HMRC Disclosure"
 metaDescription: "Come forward before HMRC writes. Unprompted careless disclosure starts at 0%, prompted at 15%. Careless goes back 6 years, deliberate 20."
@@ -32,7 +33,7 @@ faqs:
     answer: "Not where the behaviour amounts to tax fraud. HMRC operates a separate route for that, the Contractual Disclosure Facility under Code of Practice 9, which covers deliberate behaviour and is requested using form CDF1. HMRC also states it will not accept disclosures that are found to be largely wrong or incomplete when checked, so using the wrong facility or filing a partial disclosure can leave you worse off than before. Where the label is genuinely in doubt, that question gets settled before anything is submitted, not after."
 ---
 
-<p>If you have private practice, locum sessions, medico-legal fees or a rental property that never reached a tax return, the answer in almost every case is to come forward now through HMRC's Digital Disclosure Service rather than wait. The reason is arithmetic rather than conscience. A disclosure made before you have any reason to believe HMRC has discovered the problem is unprompted, and for careless behaviour the penalty range then starts at 0% of the tax. Once HMRC writes to you the same disclosure is prompted, and the range starts at 15%. For deliberate behaviour the floors are 20% unprompted and 35% prompted. How far back you have to go is set by behaviour too: four years where you took reasonable care, six years where you were careless, twenty years where the shortfall was deliberate. Interest is charged daily from the date each year's tax fell due and is not reduced by coming forward, so it grows while you decide. If you cannot pay in one go, time to pay is discussed with HMRC before the disclosure goes in. The one thing that changes all of this is a letter from HMRC, and that is outside your control.</p>
+<p>Private practice, locum sessions, medico-legal fees or a rental property that never reached a tax return: in almost every case the answer is to come forward now through HMRC's Digital Disclosure Service rather than wait. The reason is arithmetic rather than conscience. A disclosure made before you have any reason to believe HMRC has discovered the problem is unprompted, and for careless behaviour the penalty range then starts at 0% of the tax. Once HMRC writes to you the same disclosure is prompted, and the range starts at 15%. For deliberate behaviour the floors are 20% unprompted and 35% prompted. How far back you have to go is set by behaviour too: four years where you took reasonable care, six years where you were careless, twenty years where the shortfall was deliberate. Interest is charged daily from the date each year's tax fell due and is not reduced by coming forward, so it grows while you decide. If you cannot pay in one go, time to pay is discussed with HMRC before the disclosure goes in. The one thing that changes all of this is a letter from HMRC, and that is outside your control.</p>
 
 <h2>How many years do you have to go back?</h2>
 

@@ -3,6 +3,7 @@ slug: "register-self-employed-locum-doctor"
 title: "How to Tell HMRC You Have Started Locum Work"
 date: "2026-09-27"
 dateModified: "2026-09-27"
+updatedDate: "2026-09-27"
 category: "Locum Tax"
 metaTitle: "Registering as a Self Employed Locum Doctor"
 metaDescription: "Started locum sessions? Tell HMRC by 5 October after the tax year, get your UTR, then file by 31 January. Pension forms reach PCSE within 10 weeks."
@@ -71,7 +72,7 @@ faqs:
 <ol>
 <li>A separate bank account for locum income, so the return is a download rather than an excavation.</li>
 <li>Every remittance note or invoice, dated and matched to the session.</li>
-<li>Mileage between sites, with dates and distances. The approved rate is 55p a mile for the first 10,000 business miles in 2026/27 and 25p after that, and home to your first site of the day is commuting, not business travel.</li>
+<li>Mileage between sites, with dates and distances. In 2026/27 the approved rate runs at 55p for the first 10,000 business miles and 25p beyond, and the leg from home to wherever you start the day does not count as business travel.</li>
 <li>Indemnity, GMC retention, Royal College and BMA subscriptions, and any course fees.</li>
 <li>Copies of every Form A and Form B, with the date the session ended written on them.</li>
 <li>Equipment purchases, which usually go through capital allowances rather than straight into expenses.</li>

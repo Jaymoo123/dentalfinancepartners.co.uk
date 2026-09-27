@@ -4,6 +4,7 @@ slug: "medical-practice-incorporation-step-by-step"
 canonical: "https://www.medicalaccounts.co.uk/blog/medical-practice-incorporation-step-by-step"
 date: "2026-04-01"
 dateModified: "2026-09-27"
+updatedDate: "2026-09-27"
 generator: claude-opus
 author: "Medical Accountants UK Editorial Team"
 image: "https://images.pexels.com/photos/6814526/pexels-photo-6814526.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

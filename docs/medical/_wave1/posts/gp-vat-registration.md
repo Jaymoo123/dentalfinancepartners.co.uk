@@ -4,6 +4,7 @@ slug: gp-vat-registration
 canonical: https://www.medicalaccounts.co.uk/blog/gp-vat-registration
 date: '2026-04-01'
 dateModified: '2026-09-27'
+updatedDate: '2026-09-27'
 generator: claude-opus
 author: Medical Accountants UK Editorial Team
 image: "https://images.pexels.com/photos/38783383/pexels-photo-38783383.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

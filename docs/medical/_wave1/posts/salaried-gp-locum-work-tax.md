@@ -3,6 +3,7 @@ slug: "salaried-gp-locum-work-tax"
 title: "Taking Locum Work as a Salaried GP: Register, Tax and Whether a Company Is Worth It"
 date: "2026-09-27"
 dateModified: "2026-09-27"
+updatedDate: "2026-09-27"
 category: "Locum Tax"
 metaTitle: "Salaried GP Locum Work: Tax, Registration, Company"
 metaDescription: "Salaried GP taking locum sessions: register by 5 October, pay 40% plus 2% Class 4 on top of PAYE, pension within 10 weeks, and skip the company."
@@ -19,9 +20,9 @@ keyTakeaways:
 - "Gross locum income above £50,000 puts you inside Making Tax Digital for Income Tax from 6 April 2026, which a limited company would not be."
 faqs:
   - question: "When do I have to tell HMRC I have started locum work?"
-    answer: "By 5 October following the end of the tax year in which your first paid session fell. A session in June 2026 sits in the 2026/27 tax year, which ends on 5 April 2027, so registration is due by 5 October 2027. gov.uk states plainly that if you tell HMRC after that date you could get a penalty. Registering early costs nothing and starts nothing, so there is no reason to wait."
+    answer: "By 5 October following the end of the tax year in which your first paid session fell. A session in June 2026 sits in the 2026/27 tax year, which ends on 5 April 2027, so registration is due by 5 October 2027. gov.uk states plainly that if you tell HMRC after that date you could get a penalty. Registering early costs nothing, but it is registration itself that starts the annual filing obligation."
   - question: "How much tax will I pay on locum sessions if I already have a salaried GP post?"
-    answer: "Locum profit is added on top of your salary, so it is taxed at whatever band your total income reaches. A salaried GP is normally already above £50,270, so the extra profit is taxed at 40% income tax plus 2% Class 4 National Insurance. Class 2 is no longer a required payment from 6 April 2024. If total income passes £100,000 the personal allowance starts to taper, which pushes the effective rate higher still on that slice."
+    answer: "Locum profit is added on top of your salary, so it is taxed at whatever band your total income reaches. A salaried GP is normally already above £50,270, so the extra profit is taxed at 40% income tax plus 2% Class 4 National Insurance. Class 2 has not been a required payment since 6 April 2024. If total income passes £100,000 the personal allowance starts to taper, which pushes the effective rate higher still on that slice."
   - question: "Do I have to pension my locum sessions?"
     answer: "No, it is your choice, but the window is short and unforgiving. The route is the locum forms: your practice signs off Form A, and Form B is the one that actually reaches PCSE. PCSE will reject anything covering work that finished more than 10 weeks earlier, and the contributions themselves must be with the scheme by the seventh day of the month after. Nothing here can be put right afterwards, because the accrual is never created rather than created late."
   - question: "Does a limited company make my locum income cheaper?"
@@ -42,9 +43,9 @@ faqs:
 
 <h2>How much of each locum pound do you keep?</h2>
 
-<p>Roughly 58 pence, on typical salaried GP pay. The profit is added to your employment income, so it is taxed in the band your total reaches: 40% between £50,270 and £125,140 for 2026/27, and 45% above that. On top, Class 4 National Insurance runs at 6% between £12,570 and £50,270 and 2% above £50,270, so most of a salaried GP's locum profit attracts the 2% rate. Class 2 is no longer a required payment from 6 April 2024.</p>
+<p>Roughly 58 pence, on typical salaried GP pay. The profit is added to your employment income, so it is taxed in the band your total reaches: 40% between £50,270 and £125,140 for 2026/27, and 45% above that. On top, Class 4 National Insurance runs at 6% between £12,570 and £50,270 and 2% above £50,270, so most of a salaried GP's locum profit attracts the 2% rate. Class 2 stopped being a required payment on 6 April 2024.</p>
 
-<p>Profit, not turnover, is what is taxed. Indemnity for your private and non-NHS clinical work, the GMC retention fee, subscriptions to bodies on HMRC's approved List 3, relevant CPD and travel between separate engagements in a day all come off first. Mileage runs at 55p for the first 10,000 business miles in 2026/27 and 25p after that, having risen from 45p on 6 April 2026. Home to your first site of the day is commuting and never qualifies. <a href="/blog/locum-doctor-expenses-what-you-can-claim">The expenses guide</a> has the full list, and the <a href="/calculators/locum-tax-calculator">locum tax calculator</a> will size the bill.</p>
+<p>Profit, not turnover, is what is taxed. Indemnity for your private and non-NHS clinical work, the GMC retention fee, subscriptions to bodies on HMRC's approved List 3, relevant CPD and travel between separate engagements in a day all come off first. Mileage runs at 55p for the first 10,000 business miles in 2026/27 and 25p after that, having risen from 45p on 6 April 2026. The trip from home to the first site you work at that day is commuting and never qualifies. <a href="/blog/locum-doctor-expenses-what-you-can-claim">The expenses guide</a> has the full list, and the <a href="/calculators/locum-tax-calculator">locum tax calculator</a> will size the bill.</p>
 
 <h2>When do payments on account start, and why does the bill double?</h2>
 
@@ -54,7 +55,7 @@ faqs:
 
 <p>Through the GP locum forms, and quickly. The practice approves Form A first, Form B then goes to PCSE. PCSE's own rule is that you cannot pension a period of freelance GP locum work that ended more than 10 weeks ago, and forms received after 10 weeks are rejected as not pensionable. Contributions must reach the scheme by the seventh day of the month after. There is no appeal and no late route: the accrual is simply not created.</p>
 
-<p>Your contribution rate is tiered on pensionable pay, and the bands moved on 1 April 2026 while the rates stayed put. For 2026/27 they run 5.2% up to £13,259, 6.5% to £28,854, 8.3% to £35,155, 9.8% to £52,778, 10.7% to £67,668 and 12.5% above that. A band table can be corrected part way through a year, so check it rather than assume it. Separately, as a salaried GP you complete the Type 2 self-assessment form, which runs to a 28 February deadline a year in arrears, so the 2025/26 year is due by 28 February 2027. That form is what gets the right tier recorded against your whole practitioner income. <a href="/blog/nhs-pension-for-locums-form-a-form-b">The Form A and Form B guide</a> covers the mechanics.</p>
+<p>Your contribution rate is tiered on pensionable pay, and the bands moved on 1 April 2026 while the rates stayed put. For 2026/27 they run 5.2% up to £13,259, 6.5% to £28,854, 8.3% to £35,155, 9.8% to £52,778, 10.7% to £67,668 and 12.5% above that. A band table can be corrected part way through a year, so check it rather than assume it. Separately, as a salaried GP you complete the Type 2 self-assessment form. It is filed a year in arrears against a 28 February cut-off, putting 2025/26 on 28 February 2027, and it is what gets the right tier recorded against your whole practitioner income. <a href="/blog/nhs-pension-for-locums-form-a-form-b">The Form A and Form B guide</a> covers the mechanics.</p>
 
 <p>One more measure to watch. Pension growth across the salaried post and the pensioned sessions is tested together against the £60,000 annual allowance for 2026/27, and in a defined benefit scheme it is the capitalised growth in your benefits that counts, not the contributions leaving your payslip. Unused allowance from the previous three tax years carries forward, which usually absorbs a one-off spike.</p>
 

@@ -4,6 +4,7 @@ slug: nhs-pension-scheme-pays-doctors-deadlines
 canonical: https://www.medicalaccounts.co.uk/blog/nhs-pension-scheme-pays-doctors-deadlines
 date: '2026-06-03'
 dateModified: '2026-09-27'
+updatedDate: '2026-09-27'
 generator: claude-opus
 author: Medical Accountants UK Editorial Team
 image: "https://images.pexels.com/photos/7580856/pexels-photo-7580856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -39,7 +40,7 @@ faqs:
 - question: Can I change my mind after electing Scheme Pays?
   answer: An election can be amended but it cannot be revoked. If a corrected input amount changes your charge you revise the election to match, but you cannot cancel it and take the tax back into your own hands. That is why the decision is worth modelling before you elect, and why the charge still has to be reported on your Self Assessment return even when the scheme settles it.
 ---
-<p>If you have an NHS pension annual allowance charge, you have two ways to settle it: pay HMRC from your own money, or elect Scheme Pays and let the NHS scheme pay it in exchange for a permanent reduction in your benefits. The tax is the same either way. What changes is where the money comes from. Mandatory Scheme Pays is a statutory right only where your charge exceeds £2,000 and your pension input amount in a single scheme exceeds the standard £60,000 annual allowance for 2026/27, and a 2026/27 charge must be elected by 31 July 2028. This page is about making the choice, not about how the charge arises. For that, start with the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance complete guide</a>.</p>
+<p>An NHS pension annual allowance charge can be settled in one of two ways: pay HMRC from your own money, or elect Scheme Pays and let the NHS scheme pay it in exchange for a permanent reduction in your benefits. The tax is the same either way. What changes is where the money comes from. Mandatory Scheme Pays is a statutory right only where your charge exceeds £2,000 and your pension input amount in a single scheme exceeds the standard £60,000 annual allowance for 2026/27, and a 2026/27 charge must be elected by 31 July 2028. This page is about making the choice, not about how the charge arises. For that, start with the <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance complete guide</a>.</p>
 
 <h2>Which is better, paying the charge or Scheme Pays?</h2>
 

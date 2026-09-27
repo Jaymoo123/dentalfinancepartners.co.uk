@@ -17,7 +17,7 @@ keyTakeaways:
   - "A grant follows the same test, so a general purpose grant sits under donations and a grant that buys specified delivery sits under charitable activities."
   - "Restricted and unrestricted is a separate question about the fund the money sits in, not a reason to move income between categories."
   - "Trading that is not part of your purposes belongs under other trading activities, and it is the category the small trading limits are tested against."
-  - "Accruals accounts follow the Charities SORP for accounting periods starting on or after 1 January 2026, and the annual return draws its income figures from that analysis."
+  - "Accruals accounts follow the Charities SORP, with SORP 2026 applying to accounting periods starting on or after 1 January 2026, and the annual return draws its income figures from that analysis."
 faqs:
   - question: "What is the difference between income from charitable activities and donations?"
     answer: "Donations and legacies covers income given freely, where the giver receives nothing in return. Income from charitable activities covers income earned by delivering the goods or services that are your charitable purposes, such as a fee paid by a local authority for a place, a service charge to a beneficiary, or a contract to run a project. The question is not who paid or whether the money is restricted, it is whether your charity delivers something specified in exchange."
