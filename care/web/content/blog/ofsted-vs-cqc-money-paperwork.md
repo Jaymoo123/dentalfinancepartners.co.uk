@@ -2,6 +2,7 @@
 title: "Ofsted vs CQC: how the money and registration paperwork actually differs for children's homes"
 slug: "ofsted-vs-cqc-money-paperwork"
 date: "2026-07-15"
+updatedDate: "2026-09-27"
 author: ""
 category: "CQC and Financial Compliance"
 metaTitle: "Ofsted vs CQC: registration money & paperwork compared"
@@ -20,7 +21,7 @@ faqs:
   - question: "Does a children's home have to submit a financial viability statement?"
     answer: "Ofsted assesses the financial standing of applicants as part of its registration process, but the specific evidence required is set out in Ofsted's own guidance rather than the CQC financial viability statement template. The CQC FVS template applies only to CQC-registered providers."
   - question: "Is the tax treatment of a children's home different from a care home?"
-    answer: "No material difference from an operating-cost perspective. Employer NIC, payroll obligations, corporation tax and capital allowances apply in the same way. VAT treatment may differ because CQC-registered welfare suppliers have a specific VAT-exempt status; the VAT position of Ofsted-registered children's homes should be confirmed with a specialist."
+    answer: "No material difference from an operating-cost perspective. Employer NIC, payroll obligations, corporation tax and capital allowances apply in the same way. VAT treatment lands in the same place too: Ofsted is one of the regulators listed in VAT Notice 701/2 section 3.3.1, so an Ofsted-registered children's home is state-regulated and its welfare supplies are exempt under Group 7 of Schedule 9."
   - question: "Can one company run both an Ofsted-registered and a CQC-registered service?"
     answer: "Yes. The same legal entity can hold both registrations. Each regulated service is assessed and registered separately by its respective regulator. Shared payroll, NIC and VAT reporting is handled once at company level, with cost allocation between the services as needed."
   - question: "Who checks a children's home is financially viable?"
@@ -84,7 +85,7 @@ faqs:
 
 <p>The company's payroll runs as a single payroll. Employer NIC at 15% applies to all employees above the £5,000 secondary threshold, regardless of which setting they work in. The Employment Allowance of up to £10,500 is claimed once at company level and offsets the aggregate employer NIC bill. Staff employed across both settings are covered by the same NMW obligations: the £12.71 NLW from 1 April 2026 applies to all eligible workers, sleep-in shift rules apply to any overnight rota in either home, and the misclassification risk applies wherever a rota structure exists.</p>
 
-<p>VAT is handled at company level. The CQC-registered adult care home supplies CQC-regulated welfare services, which are exempt from VAT under Group 7 of Schedule 9 VATA 1994. The VAT treatment of the children's home supply depends on whether the service qualifies under the same welfare exemption; this is a question that requires specific advice rather than an assumption based on the adult-care position.</p>
+<p>VAT is handled at company level. The CQC-registered adult care home supplies CQC-regulated welfare services, which are exempt from VAT under Group 7 of Schedule 9 VATA 1994. The children's home supply sits in the same place. VAT Notice 701/2 section 3.3.1 lists Ofsted among the regulators whose registration makes a provider state-regulated, so the welfare services an Ofsted-registered children's home supplies are exempt under Group 7 of Schedule 9 without any separate approval being needed.</p>
 
 <p>Corporation tax, capital allowances and BADR on any future sale all apply at company level in the standard way, unaffected by which regulator oversees which service.</p>
 

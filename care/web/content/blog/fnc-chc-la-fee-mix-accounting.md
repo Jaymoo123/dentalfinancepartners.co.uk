@@ -2,6 +2,7 @@
 title: "FNC, CHC and local authority fee-mix accounting for nursing homes"
 slug: "fnc-chc-la-fee-mix-accounting"
 date: "2026-07-15"
+updatedDate: "2026-09-27"
 author: ""
 category: "Fees, FNC and Local Authority Rates"
 metaTitle: "FNC, CHC and LA fee-mix accounting for nursing homes"
@@ -175,7 +176,7 @@ faqs:
 <p>Use our <a href="/calculators/true-cost-care-hour-calculator">true cost of care calculator</a> to build the staffing component of this pack, and the <a href="/calculators/care-staffing-cost-margin-calculator">staffing cost and margin calculator</a> for the margin modelling. The <a href="/research/care-provider-business-index">care provider business index</a> gives you quarterly formation and dissolution counts for the sector, which are useful evidence of market pressure but are not fee benchmarks.</p>
 
 <h2>Scotland, Wales and Northern Ireland: different regimes</h2>
-<p>The FNC rates, CHC framework and Care Act statutory guidance described in this post apply in <strong>England only</strong>. Scotland, Wales and Northern Ireland operate separate funding and regulatory regimes for nursing care contributions and continuing healthcare. The nursing-payment mechanics, rates and the frameworks governing local authority fee-setting all differ. If your home operates in Scotland, Wales or Northern Ireland, the England figures in this post do not apply, and you should seek advice specific to the relevant devolved regime.</p>
+<p>The FNC rates, CHC framework and Care Act statutory guidance described in this post apply in <strong>England only</strong>. Scotland, Wales and Northern Ireland operate separate funding and regulatory regimes for nursing care contributions and continuing healthcare. The nursing-payment mechanics, rates and the frameworks governing local authority fee-setting all differ. If your home operates in Scotland, Wales or Northern Ireland, the England figures in this post do not apply, and the position should be checked against the rules of the relevant devolved regime before you rely on any of it.</p>
 
 <h2>Getting your fee-mix model right</h2>
 <p>Accounting for a mixed FNC/CHC/LA/self-funder income base is not an administrative detail; it is the foundation of the financial information you need to run a viable nursing home. The margin picture looks very different depending on which stream fills a void bed, and that difference is invisible unless each stream is tracked separately.</p>
