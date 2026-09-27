@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description: `How ${siteConfig.name} uses cookies, browser storage and analytics, and how you can control them when browsing our CIS accounting site.`,
+  alternates: { canonical: `${siteConfig.url}/cookie-policy` },
 };
 
 export default function CookiePolicyPage() {

@@ -9,6 +9,7 @@ const company = siteConfig.company;
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: `How ${company.legalName} (trading as ${siteConfig.name}) collects and uses personal data on this website. UK GDPR and Data Protection Act 2018 compliant.`,
+  alternates: { canonical: `${siteConfig.url}/privacy-policy` },
 };
 
 export default function PrivacyPolicyPage() {

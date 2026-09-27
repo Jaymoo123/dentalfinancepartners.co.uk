@@ -5,11 +5,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Free CIS Payment & Deduction Statement Template (Excel + PDF)",
   description:
     "Download a free CIS payment and deduction statement template with every field HMRC requires under Regulation 4. Editable Excel version with built-in formulas, plus a printable PDF.",
+  alternates: { canonical: `${siteConfig.url}/cis-payment-deduction-statement-template` },
 };
 
 const XLSX_HREF = "/downloads/cis-payment-deduction-statement-template.xlsx";

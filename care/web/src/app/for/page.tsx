@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { careHubs } from "@/data/care-hubs";
+import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Care Sector Accountants by Provider Type | Who We Help",
   description: "Specialist care sector finance support by provider type: care homes, domiciliary care, supported living, children's homes and care startups.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 export default function ForIndexPage() {
   return (<>

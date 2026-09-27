@@ -7,6 +7,7 @@ import { WhatToExpectCard } from "@/components/ui/WhatToExpectCard";
 import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   // Unconditionally neutral: no free-call framing in the tab title regardless of variant.
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
   title: "Contact | CIS Accountants for Trades",
   description:
     "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. A specialist CIS accountant will be in touch.",
+  alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
 export default function ContactPage() {

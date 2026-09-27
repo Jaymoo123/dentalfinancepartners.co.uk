@@ -4,11 +4,13 @@ import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceT
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { hospitalityServices } from "@/data/hospitality-services";
 import { serviceTiers } from "@/config/service-tiers";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: "Hospitality Accounting Services | Hospitality Tax" },
   description:
     "Hospitality accounting services: tronc scheme setup, payroll, VAT, TOMS and business rates relief. Specialist support for UK restaurants, pubs, hotels, cafes and takeaways.",
+  alternates: { canonical: `${siteConfig.url}/services` },
 };
 
 export default function ServicesPage() {

@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { startupsHubs } from "@/data/startups-hubs";
+import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Startup Accountants by Company Type | Who We Help",
   description: "Specialist startup tax advice by company type: pre-seed founders, funded startups, SaaS companies, software development companies and fintech startups.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 export default function ForIndexPage() {
   return (<>

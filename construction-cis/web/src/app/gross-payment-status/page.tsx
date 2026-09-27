@@ -5,11 +5,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildHowToJsonLd } from "@/lib/schema";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "CIS Gross Payment Status | Application & Maintenance Service",
   description:
     "CIS Gross Payment Status application and maintenance service. GPS eliminates the 20% deduction entirely. We manage the application, the three qualifying tests and ongoing April 2026 compliance.",
+  alternates: { canonical: `${siteConfig.url}/gross-payment-status` },
 };
 
 const qualifyingTests = [

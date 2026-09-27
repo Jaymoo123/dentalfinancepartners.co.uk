@@ -12,6 +12,7 @@ import { tradeTypes, getTradeType } from "@/data/trade-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export function generateStaticParams() {
   return tradeTypes.map((t) => ({ slug: t.slug }));
@@ -30,6 +31,7 @@ export async function generateMetadata({
     // brand template to avoid a double suffix / over-length title.
     title: { absolute: type.metaTitle },
     description: type.metaDescription,
+    alternates: { canonical: `${siteConfig.url}/for/${slug}` },
   };
 }
 

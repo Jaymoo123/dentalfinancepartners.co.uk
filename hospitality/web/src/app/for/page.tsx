@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { hospitalityHubs } from "@/data/hospitality-hubs";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Hospitality Sectors We Work With | Restaurants, Pubs, Hotels and More",
   description:
     "Specialist hospitality accounting for restaurants, pubs and bars, takeaways, hotels, cafes and caterers. Sector-specific advice on tronc, VAT, payroll and accounts.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 
 export default function ForIndexPage() {

@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     template: `%s | ${niche.display_name}`,
   },
   description: niche.description,
-  alternates: {
-    canonical: siteUrl,
-    languages: { "en-GB": siteUrl, "x-default": siteUrl },
-  },
+  // ponytail: no alternates here on purpose. Root metadata is INHERITED by every
+  // route that does not override it, so a canonical here made /for, /services
+  // and the rest canonicalise to the homepage and drop out of the index. Each
+  // page owns its own canonical; the homepage sets its own in app/page.tsx.
   verification: {
     google: niche.seo.search_console_verification?.google || undefined,
     yandex: niche.seo.search_console_verification?.yandex || undefined,

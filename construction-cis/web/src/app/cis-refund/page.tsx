@@ -5,11 +5,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildHowToJsonLd } from "@/lib/schema";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "CIS Tax Refund Service | Claim Back Your CIS Deductions",
   description:
     "CIS tax refund service for UK construction subcontractors. Third-party reported averages put the annual refund for a registered CIS subcontractor at around £2,000 (illustrative, not guaranteed). We calculate, claim and handle every step.",
+  alternates: { canonical: `${siteConfig.url}/cis-refund` },
 };
 
 const howItWorks = [

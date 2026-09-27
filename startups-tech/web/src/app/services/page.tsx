@@ -4,10 +4,12 @@ import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceT
 import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { startupsServices } from "@/data/startups-services";
 import { serviceTiers } from "@/config/service-tiers";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Startup Accountancy Services | R&D, SEIS/EIS, EMI and More",
   description: "Specialist startup accountancy services: R&D tax claims, SEIS/EIS advance assurance, EMI scheme setup, share schemes, fractional CFO and core compliance.",
+  alternates: { canonical: `${siteConfig.url}/services` },
 };
 
 export default function ServicesIndexPage() {

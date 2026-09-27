@@ -5,11 +5,13 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnPrimary, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "CIS Subcontractor Invoice Template UK (Free Excel + PDF Download)",
   description:
     "Free CIS subcontractor invoice template for UK construction. Labour and materials split, CIS deduction line, plus standard VAT, domestic reverse charge and non-VAT versions. Excel and PDF.",
+  alternates: { canonical: `${siteConfig.url}/cis-invoice-template` },
 };
 
 /**

@@ -4,11 +4,13 @@ import { ArrowRight } from "lucide-react";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { tradeTypes } from "@/data/trade-types";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "CIS Trades We Work With | Specialist Construction Accountants",
   description:
     "Specialist CIS accounting for every construction trade. Plumbers, electricians, joiners, groundworkers, roofers, builders, gas engineers, painters, scaffolders and civil engineers.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 
 export default function ForIndexPage() {

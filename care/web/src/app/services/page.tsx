@@ -4,10 +4,12 @@ import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceT
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { careServices } from "@/data/care-services";
 import { serviceTiers } from "@/config/service-tiers";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Care Sector Accountancy Services | Payroll, VAT and More",
   description: "Specialist care sector accountancy services: CQC financial viability statements, care payroll, VAT reviews, and support for buying, selling or starting a care business.",
+  alternates: { canonical: `${siteConfig.url}/services` },
 };
 export default function ServicesIndexPage() {
   return (<>

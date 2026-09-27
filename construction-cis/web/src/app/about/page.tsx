@@ -5,6 +5,7 @@ import { TradeBackdrop } from "@/components/layout/TradeBackdrop";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { btnOnDark, focusRing, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   // NOTE: this description is pinned against src/lib/page-summaries.ts by
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   title: "About | Specialist CIS Accountants for Construction Trades",
   description:
     "Specialist CIS accountants for UK construction trades. We only work with CIS subcontractors and contractors, so we understand the rules that a generalist accountant will not.",
+  alternates: { canonical: `${siteConfig.url}/about` },
 };
 
 /**

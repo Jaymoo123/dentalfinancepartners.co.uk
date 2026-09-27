@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   title: { absolute: "CIS Accounting Services | Construction Tax & Compliance" },
   description:
     "CIS accounting for UK construction subcontractors and contractors: CIS refunds, GPS applications, sole trader SA, limited company EPS reclaim and CIS300 returns.",
+  alternates: { canonical: `${siteConfig.url}/services` },
 };
 
 const services = [
