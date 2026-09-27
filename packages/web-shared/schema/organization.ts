@@ -19,8 +19,11 @@ export function buildOrganization(opts: SiteSchemaOpts): Organization {
     "@context": "https://schema.org",
     "@type": (opts.organizationType as Organization["@type"]) || "ProfessionalService",
     "@id": id,
-    name: opts.legalName || opts.siteName,
-    alternateName: opts.alternateName || opts.siteName,
+    // The brand is the entity assistants name; the company is legalName.
+    name: opts.siteName,
+    ...((opts.alternateName || opts.legalName)
+      ? { alternateName: opts.alternateName || opts.legalName }
+      : {}),
     url: opts.siteUrl,
     ...(opts.legalName ? { legalName: opts.legalName } : {}),
     ...(opts.description ? { description: opts.description } : {}),

@@ -81,7 +81,7 @@ export type SiteSchemaOpts = {
   description?: string;
   tagline?: string;
   /** schema.org @type for the top-level Organization. Defaults to "ProfessionalService". */
-  organizationType?: string;
+  organizationType?: string | string[];
   /** Path-only logo URL, e.g. /brand/icon-alt.png. Combined with siteUrl inside builders. */
   publisherLogoUrl: string;
   email?: string;

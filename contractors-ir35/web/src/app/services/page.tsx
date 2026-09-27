@@ -20,6 +20,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { siteConfig } from "@/config/site";
 import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
+import { buildServicesPageJsonLd } from "@/lib/schema";
 
 /* Hand-rolled eyebrows. `.section-label` and `.eyebrow` are `@layer components`
    rules in globals.css that pin their own colour; being layered, a `text-*`
@@ -99,7 +100,7 @@ const services = [
     Icon: ClipboardList,
     body: [
       "As a limited company director you will typically need to complete a self assessment tax return each year, covering your director salary, any dividends taken, and any other income sources.",
-      "We prepare and file your self assessment return, manage your payment on account position so you are not caught short in January and July, and advise on any reliefs or claims that should be included.",
+      "Your accountant prepares and files your self assessment return, manages your payment on account position so you are not caught short in January and July, and covers any reliefs or claims that should be included.",
     ],
   },
 ];
@@ -107,6 +108,10 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: buildServicesPageJsonLd(services) }}
+      />
       {/* HOOK. */}
       <section className="relative overflow-hidden bg-neutral-900 py-16 sm:py-20">
         <ContractorsBackdrop />

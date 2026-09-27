@@ -1,6 +1,13 @@
 import type { BlogPost } from "@/types/blog";
 import { siteConfig } from "@/config/site";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
+import { contractorTypes } from "@/data/contractor-types";
+import {
+  buildOrganization,
+  referencedOrganization,
+  buildCollectionPage,
+  type SiteSchemaOpts,
+} from "@accounting-network/web-shared/schema";
 
 /** IR35 / contractor-accountancy expertise signals, reused across Organization + LocalBusiness. */
 const KNOWS_ABOUT = [
@@ -50,26 +57,17 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
-/** Build Organization JSON-LD schema for the site */
-export function buildOrganizationJsonLd() {
+/** Site-wide SiteSchemaOpts, shared by every builder ported from web-shared. */
+function siteOpts(): SiteSchemaOpts {
   const office = siteConfig.company.registeredOffice;
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "AccountingService"],
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    // Registered legal entity vs the public-facing trading name (brand).
+  return {
+    siteUrl: siteConfig.url,
+    siteName: siteConfig.name,
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
-    // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
-    url: siteConfig.url,
-    // sameAs links the trading brand to its authoritative public record so AI
-    // answer engines and knowledge graphs resolve the firm to a real entity.
-    sameAs: [
-      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
-    ],
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     description: siteConfig.description,
+    organizationType: ["ProfessionalService", "AccountingService"],
+    publisherLogoUrl: siteConfig.publisherLogoUrl,
     address: {
       "@type": "PostalAddress",
       streetAddress: `${office.line1}, ${office.line2}`,
@@ -77,9 +75,73 @@ export function buildOrganizationJsonLd() {
       postalCode: office.postcode,
       addressCountry: "GB",
     },
+    // Titles of the /for/* contractor-type pages, so knowsAbout tracks the
+    // pages that actually exist instead of a hand-picked list drifting out
+    // of date (matches the care/charities port pattern).
+    knowsAbout: contractorTypes.map((t) => t.title),
+    // sameAs links the trading brand to its authoritative public record, plus
+    // the canonical homepages of the other LEADS_250 programme brands, so AI
+    // answer engines and knowledge graphs tie the trading names together
+    // under the one legal entity.
+    sameAs: [
+      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+      "https://www.propertytaxpartners.co.uk",
+      "https://www.medicalaccounts.co.uk",
+      "https://www.carehometax.co.uk",
+      "https://www.trusteetax.co.uk",
+    ],
+    parentOrganization: {
+      name: "Ashfield Trading Ltd",
+      companyNumber: siteConfig.company.number,
+    },
+  };
+}
+
+/** Build Organization JSON-LD schema for the site */
+export function buildOrganizationJsonLd() {
+  return JSON.stringify({
+    ...buildOrganization(siteOpts()),
+    // The shared builder resolves `name` to legalName-or-siteName and `logo`/
+    // `areaServed` to richer shapes; this site's pre-existing convention (name
+    // = trading brand, logo = bare URL, areaServed = plain city-name list) is
+    // preserved exactly rather than silently changed by the port.
+    name: siteConfig.name,
+    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     areaServed: AREA_SERVED,
-    knowsAbout: KNOWS_ABOUT,
   });
+}
+
+/** Reference to the canonical Organization, for author/publisher on downstream nodes. */
+export function organizationRef() {
+  return referencedOrganization(siteOpts());
+}
+
+/** BreadcrumbList + CollectionPage + ItemList JSON-LD for the /services page. */
+export function buildServicesPageJsonLd(items: { id: string; title: string }[]) {
+  return JSON.stringify([
+    JSON.parse(
+      buildBreadcrumbJsonLd([{ label: "Home", href: "/" }, { label: "Services" }]),
+    ),
+    buildCollectionPage(
+      {
+        name: "Contractor accountancy services",
+        description:
+          "Specialist accounting services for UK contractors. IR35 status reviews, limited company accounts, corporation tax, salary and dividend planning and expenses.",
+        path: "/services",
+      },
+      siteOpts(),
+    ),
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      itemListElement: items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.title,
+        url: `${siteConfig.url}/services#${item.id}`,
+      })),
+    },
+  ]);
 }
 
 /** Build WebSite JSON-LD (entity-graph node, emitted site-wide from the root layout). */
@@ -277,10 +339,10 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     url,
     datePublished: post.date,
     dateModified: post.updatedDate || post.date,
-    author: {
-      "@type": "Person",
-      name: post.author || siteConfig.name,
-    },
+    // post.author is always the fixed "... Editorial Team" string from
+    // frontmatter, never a real named person, so it is faceless-attributed to
+    // the Organization rather than a fabricated Person (E-E-A-T: no fake bylines).
+    author: organizationRef(),
     // Faceless editorial review when present (E-E-A-T signal for answer engines).
     ...(post.reviewedBy && {
       reviewedBy: {

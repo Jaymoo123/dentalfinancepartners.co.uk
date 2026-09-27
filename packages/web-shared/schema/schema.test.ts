@@ -80,7 +80,7 @@ describe("buildOrganization", () => {
     expect(org["@context"]).toBe("https://schema.org");
     expect(org["@type"]).toBe("AccountingService");
     expect(org["@id"]).toBe("https://www.example.co.uk#organization");
-    expect(org.name).toBe("Example Accountants Ltd");
+    expect(org.name).toBe("Example Accountants");
     expect(hasNoUndefined(org)).toBe(true);
   });
 
