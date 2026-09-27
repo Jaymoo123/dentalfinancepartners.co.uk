@@ -361,8 +361,13 @@ test wave.
     pages, with the `calc_pdf_offer` flag set off in prod the same day and the PDF day-14
     read recorded first), then the seven blog-kit sites, the four canonical-fix sites and
     the entity block on contractors, care, charities and Medical.
-    **Owner ruled 2026-09-27 late: deploy everything tonight.** Order: Property, Medical,
-    contractors, care, charities, then Dentists and generalist for the s.464ZA patches.
+    **Owner ruled 2026-09-27 late: deploy everything tonight, then reversed the same night:
+    "hold off on the deploy once everything is done".** Nothing pushed or deployed; all work
+    is committed locally on main and waits for a fresh go. When it comes, the order is
+    Property, Medical, contractors, care, charities, then Dentists and generalist for the
+    s.464ZA patches; runbook = clean worktree at the pushed SHA, `vercel deploy --prod`
+    per project (IDs in memory `vercel_cli_deploy_workflow`), then `calc_pdf_offer` off in
+    prod `site_flags`, then live checks. IndexNow only if asked.
 11. **Wave 1 on the four small sites.** DECIDED GO 09-27 ("go on the four sites"). Manifest
     composition: 20 segment pages (medical 5, contractors 5 plus a services-page rewrite held
     back, care 2, charities 7) through the S4a chain now, and 40 decision, question and number
