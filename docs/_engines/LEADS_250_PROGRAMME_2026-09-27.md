@@ -585,3 +585,88 @@ Opus QA tracks, deploy on the owner's word. Batch size 1. Picks come from the S3
 manifest order. Coverage page spec §8.3 applies (length floor withdrawn). Wave 1 per site is
 the first 15 manifest rows; the owner approves each wave's size before launch and sees the
 agent count (roughly three runs per page).
+
+### S4a. Wave 1 segment pages: template, entity block, QA, writers (BUILD, decided 09-27)
+
+Owner rulings 09-27: segment pages first; selection by buyer situation, volume rule suspended
+on the five sites; planned and documented before building. This is the plan for the pages.
+
+**Where the pages live (from the 09-27 route trace).**
+
+| Site | Route | Driven by | New page = |
+|---|---|---|---|
+| contractors-ir35 | `/for/[slug]` | `src/data/contractor-types.ts` (`ContractorType[]`) | one object appended; route and sitemap fall out |
+| care | `/for/[slug]` | `src/data/care-hubs.ts` | one object appended |
+| charities | `/for/[slug]` | `src/data/charity-types.ts` | one object appended |
+| medical | `/for-<slug>` | one `page.tsx` per page, `AudienceStage` object rendered by the site's `AudienceStageLayout` | one file in the existing pattern, plus a line in `sitemap.ts` |
+| Property | none data-driven today | build `/for/[slug]` + `src/data/audiences.ts` (T1) | one object appended once T1 exists |
+
+**Row shape, identical on every site, so writers produce one shape** (contractors'
+`ContractorType`, already the shape on care and charities): `slug, title, headline, metaTitle
+(≤ 60 chars), metaDescription (≤ 160 chars), intro, stats[{value,label}], challenges[{title,body}],
+howWeHelp[{title,body}], faqs[{question,answer}]`. No `testimonial` (no real ones exist). Medical's
+`AudienceStage` is mapped from this shape by the integrator, not authored separately. Word band
+800 to 1,200 across intro, challenges, howWeHelp and faqs. The buyer's situation is answered in
+the first 150 words of `intro`. Stats only from `house_positions.md` or primary sources, each
+with its source in a trailing `sources` array the template does not render.
+
+**T1, Property route (Sonnet).** `Property/web/src/app/for/[slug]/page.tsx` reading
+`src/data/audiences.ts` (exported `Audience` type = the row shape above, empty array to start).
+Renders with the site's existing `TopicHero`/`TopicSection` blocks, breadcrumb, `EntityBlock`
+(T2) before the FAQ, FAQ, `LeadCTAPanel`. JSON-LD from the shared builders in
+`packages/web-shared/schema/`: `Service`, `FAQPage`, `BreadcrumbList`. `generateStaticParams`
+from the array; `sitemap.ts` maps the array (Property's sitemap is a static list today).
+`/for-letting-agents` stays as it is. `metadata` with self-canonical.
+
+**T2, shared entity block (Sonnet build, Opus copy).**
+`packages/web-shared/design/marketing/EntityBlock.tsx` (the kit's marketing blocks live there).
+Props: `{ firm, serves, where, howItWorks: string[3-4], next, notWhatWeAre }`, all plain strings
+from each site's `niche.config.json` under a new `entity` key. Renders one labelled section
+("Who we are", "Who this is for", "Where", "How it works", "What happens next", "What we are
+not") as semantic HTML a model can lift, no card styling beyond the kit's section primitives.
+Exports `PARTNER_NETWORK_SENTENCE` = the live consent wording verbatim from
+`Property/web/src/config/site.ts:39` ("To answer your enquiry, your details may be shared with a
+firm from our specialist partner network who will contact you. If that firm is unable to help,
+your details may be passed to another firm in the network for the same purpose."). Wired into
+the `for/[slug]` template on contractors, care, charities, into Medical's `AudienceStageLayout`,
+and into T1. Homepages later (A1). The copy for the five `entity` objects is written by one Opus
+agent from three sources only: that consent sentence, each site's live homepage and about copy,
+and `ESTATE_CLAIMS_INTEGRITY` rules (never "chartered", never a named accountant, never "our
+accountants", Ashfield Trading Ltd 16358723 as the operator, "introductions" not "advice").
+
+**T3, QA coverage (Sonnet).** These routes have no automated checks today. One script
+`scripts/check_audience_pages.py` over `**/web/src/data/{audiences,contractor-types,care-hubs,
+charity-types}.ts` and `Medical/web/src/app/for-*/page.tsx`: no em-dash, `metaTitle` ≤ 60,
+`metaDescription` ≤ 160, unique slugs, banned claim strings (chartered, ICAEW, ACCA, CIOT, "our
+accountants", "we are accountants", "our team of", any personal name pattern from the claims
+ledger), every FAQ answer non-empty. Exit non-zero only on a verified defect (a red run emails
+the owner). Add `**/web/src/data/**`, `**/web/src/app/for/**`, `Medical/web/src/app/for-*/**`
+to the `content-quality-check.yml` path globs and call the script there. Also: contractors'
+`for/[slug]` emits no JSON-LD; add `FAQPage` + `Service` from the shared builders.
+
+**Writers (Opus or Fable, one per page, batch size 1).** Input: the map row (`docs/<site>/
+coverage_map_2026-09.json`, `wave = 1`), the site's `house_positions.md`, the site's existing
+`for` rows as the voice sample, the row shape above, NETNEW §5.2 checks that still apply (no
+em-dash, question-shaped headings, one current tax year leads, direct address, statute
+references sparse). Output: one JSON file per page at `docs/<site>/_wave1/<slug>.json` matching
+the row shape plus `sources`. No firm claims, no pricing, no named people. Never the phrase "we
+advise"; the page describes the situation and what a specialist reviews.
+
+**QA (Opus, two per page).** Track A factual: every figure and rule against `house_positions.md`
+and primary law, verdict per figure. Track B editorial and claims: sameness across the site's
+15, AI tells, thin sections, the banned-claims list, meta lengths, the 150-word rule. A page
+ships only with both PASS; a FAIL goes back to its writer once, then to the manager.
+
+**Integrator (Sonnet, one per site).** Appends PASS rows to the data file (Medical: writes
+the page files + sitemap lines), runs `check_audience_pages.py`, typecheck, the site's tests,
+`npm run build`, and greps one rendered page for the entity block, one `<form>`, `FAQPage`
+JSON-LD and the self-canonical. Manager commits. Deploy on the owner's word.
+
+**Order and count.** T1, T2, T3 and the entity copy run first (4 agents). Property's 15 pages
+run as the pilot of the whole chain (15 writers + 30 QA + 1 integrator = 46 runs), rendered and
+checked before the other four sites start (60 writers + 120 QA + 4 integrators = 184 runs).
+Total Wave 1: about 234 agent runs, approved in principle 09-27 (decision 4).
+
+**Read.** Bing impressions and clicks per page at 28 days, `/for/*` entry leads per 1,000 at 4
+weeks, and the monthly assistant-naming run with the 30-prompt set widened to name each new
+page's situation.
