@@ -1,4 +1,5 @@
 import nicheConfigJson from "../../../niche.config.json";
+import type { EntityCopy } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 
 export interface CtaLink {
   label: string;
@@ -50,6 +51,9 @@ export interface NicheConfig {
    *  `descriptor` is an optional suffix shown after the name (e.g. a group
    *  disclosure like "(part of a wider group of companies)"). */
   partner: { name: string; descriptor?: string; privacy_policy_url: string | null } | null;
+  /** Copy for `EntityBlock` on `/for/[slug]` segment pages. Optional until
+   *  niche.config.json carries the key; absent, the block renders nothing. */
+  entity?: EntityCopy;
   domain: string;
   tagline: string;
   description: string;

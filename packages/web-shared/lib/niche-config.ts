@@ -14,6 +14,8 @@
  *   lead_form.{role_label, role_options[], placeholders}.
  */
 
+import type { EntityCopy } from "../design/marketing/EntityBlock";
+
 export interface CtaLink {
   label: string;
   href: string;
@@ -56,6 +58,10 @@ export interface NicheConfig {
   legal_name: string;
   /** Specialist partner firm enquiries are shared with, or null when handled in-house. */
   partner?: { name: string; privacy_policy_url: string | null } | null;
+  /** Copy for `EntityBlock` (packages/web-shared/design/marketing/EntityBlock.tsx) on
+   *  `for/[slug]` segment pages. Optional: absent until a site's niche.config.json
+   *  is given the key, at which point EntityBlock renders; absent, it renders nothing. */
+  entity?: EntityCopy;
   /** Registered-company block. Required for sites that display Companies Act disclosures. */
   company?: {
     number: string;

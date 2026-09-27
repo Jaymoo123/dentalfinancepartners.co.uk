@@ -42,6 +42,7 @@
     "./design/marketing/WhyUsList": "./design/marketing/WhyUsList.tsx",
     "./design/marketing/TestimonialsSection": "./design/marketing/TestimonialsSection.tsx",
     "./design/marketing/StickyCTA": "./design/marketing/StickyCTA.tsx",
+    "./design/marketing/EntityBlock": "./design/marketing/EntityBlock.tsx",
     "./design/blog/RelatedArticles": "./design/blog/RelatedArticles.tsx",
     "./design/blog/HubArticleList": "./design/blog/HubArticleList.tsx",
     "./design/blog/TableOfContents": "./design/blog/TableOfContents.tsx",

@@ -5,6 +5,8 @@ import { siteConfig } from "@/config/site";
 import { careHubs, getHub } from "@/data/care-hubs";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { niche } from "@/config/niche-loader";
 
 export function generateStaticParams() { return careHubs.map((h) => ({ slug: h.slug })); }
 
@@ -66,6 +68,7 @@ export default async function CareHubPage({ params }: { params: Promise<{ slug: 
         </div>
       </div>
     </section>
+    {niche.entity ? <EntityBlock {...niche.entity} /> : null}
     {hub.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(hub.faqs) }} />}
     {hub.faqs.length > 0 && (
       <section className="bg-white py-12 sm:py-16 lg:py-20">

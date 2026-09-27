@@ -89,20 +89,29 @@ export function CardStack({
   items,
   tone = "slate",
   columns = 1,
+  html = false,
 }: {
   items: Array<{ title: string; body: string }>;
   tone?: "slate" | "white";
   columns?: 1 | 2;
+  /** `body` is already-sanitised HTML (writer copy with inline links), not
+   *  plain text. Every existing caller omits this and is unaffected. */
+  html?: boolean;
 }) {
   const surface = tone === "white" ? "bg-white" : "bg-slate-50";
   const layout =
     columns === 2 ? "grid gap-5 sm:gap-6 md:grid-cols-2" : "space-y-5 sm:space-y-6";
+  const bodyClass = "mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700";
   return (
     <div className={`mt-8 sm:mt-10 ${layout}`}>
       {items.map((item) => (
         <div key={item.title} className={`rounded-xl ${surface} p-6 sm:p-8`}>
           <h3 className="text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
-          <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700">{item.body}</p>
+          {html ? (
+            <p className={bodyClass} dangerouslySetInnerHTML={{ __html: item.body }} />
+          ) : (
+            <p className={bodyClass}>{item.body}</p>
+          )}
         </div>
       ))}
     </div>

@@ -8,7 +8,9 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import { charityTypes, getCharityType } from "@/data/charity-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import {
@@ -109,6 +111,8 @@ export default async function CharityTypePage({
           <ArrowRight aria-hidden className="h-4 w-4" />
         </Link>
       </HubSection>
+
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {type.faqs.length > 0 && (
         <script

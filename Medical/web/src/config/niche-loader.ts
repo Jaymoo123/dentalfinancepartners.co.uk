@@ -1,5 +1,6 @@
 import nicheConfigJson from "../../../niche.config.json";
 import type { CtaVariantConfig } from "@accounting-network/web-shared/lib/niche-config";
+import type { EntityCopy } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 
 export interface NicheConfig {
   niche_id: string;
@@ -19,6 +20,9 @@ export interface NicheConfig {
   };
   /** Specialist partner firm enquiries are shared with, or null when handled in-house. */
   partner: { name: string; privacy_policy_url: string | null } | null;
+  /** Copy for `EntityBlock` on `/for-*` audience pages. Optional until this site's
+   *  niche.config.json carries the key; absent, the block renders nothing. */
+  entity?: EntityCopy;
   domain: string;
   tagline: string;
   description: string;

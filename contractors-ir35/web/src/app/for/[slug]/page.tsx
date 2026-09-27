@@ -8,10 +8,22 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { JsonLd, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contractorTypes, getContractorType } from "@/data/contractor-types";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
+
+/* T3 (LEADS_250 S4a): this route emitted no JSON-LD. Shared builders fit
+   ContractorType's shape directly, so no site-local schema.ts addition. */
+const SCHEMA_OPTS = {
+  siteUrl: siteConfig.url,
+  siteName: siteConfig.name,
+  legalName: siteConfig.company.legalName,
+  publisherLogoUrl: siteConfig.publisherLogoUrl,
+};
 
 /* Hand-rolled eyebrows. `.section-label` and `.eyebrow` are `@layer components`
    rules in globals.css that pin their own colour; being layered, a `text-*`
@@ -55,6 +67,21 @@ export default async function ContractorTypePage({
 
   return (
     <>
+      <JsonLd
+        data={[
+          buildService(
+            {
+              name: type.title,
+              description: type.metaDescription,
+              url: `/for/${type.slug}`,
+              serviceType: "Contractor accounting",
+              audience: type.title,
+            },
+            SCHEMA_OPTS,
+          ),
+          ...(buildFaqPage(type.faqs) ? [buildFaqPage(type.faqs)!] : []),
+        ]}
+      />
       {/* HOOK. */}
       <section className="relative overflow-hidden bg-neutral-900 py-16 sm:py-20">
         <ContractorsBackdrop />
@@ -189,6 +216,8 @@ export default async function ContractorTypePage({
           </div>
         </div>
       </section>
+
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {/* FAQ. Native <details>, deliberately NOT the kit's FaqSection: that
           component keeps closed answers out of the server HTML. */}

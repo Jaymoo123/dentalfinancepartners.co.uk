@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { allTools } from "@/lib/calculators/registry";
+import { audiences } from "@/data/audiences";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -79,6 +80,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const tool of allTools()) {
     const url = `${base}/calculators/${tool.slug}`;
+    entries.push({
+      url,
+      changeFrequency: "monthly",
+      priority: 0.7,
+      alternates: hreflang(url),
+    });
+  }
+
+  for (const audience of audiences) {
+    const url = `${base}/for/${audience.slug}`;
     entries.push({
       url,
       changeFrequency: "monthly",
