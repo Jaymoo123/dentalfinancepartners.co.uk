@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
+import { ResultCaptureForm } from "@/components/calculators/ResultCaptureForm";
 import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
@@ -84,7 +85,15 @@ export default async function CalculatorToolPage({ params }: Props) {
             every other section on the page, so its left and right edges did not
             line up with the heading above it or the FAQ below. */}
         <div className={siteContainerLg}>
-          <CalculatorClient slug={tool.slug} variant="page" />
+          {/* ponytail: S1a (09-27) - one form under a calculator. This generic
+              tool had no PageResultCta before (dead prop, unreferenced by any
+              caller), so the result slot goes straight to calc_result_form
+              rather than replacing an existing CTA. */}
+          <CalculatorClient
+            slug={tool.slug}
+            variant="page"
+            resultCta={<ResultCaptureForm campaign={tool.slug} />}
+          />
           <CalculatorPageResources slug={tool.slug} />
         </div>
       </section>

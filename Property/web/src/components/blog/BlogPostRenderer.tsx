@@ -274,15 +274,19 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       <>
                         {/* More content between the tool and the gate. */}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.before }} />
-                        {/* A STEP LATER: the email gate (ask). */}
-                        <GateOrForm topic={topic} />
+                        {/* A STEP LATER: the email gate (ask). ponytail: S1a (09-27)
+                            - one form under a calculator/tool, so this only
+                            renders when there's no premium tool above already
+                            carrying the ask. */}
+                        {hasGate && !hasPremium ? <GateOrForm topic={topic} /> : null}
                         <div dangerouslySetInnerHTML={{ __html: gateSplit.after }} />
                       </>
                     ) : (
                       <>
                         {/* No later break: gate goes directly under the tool, then
-                            the rest of the article. */}
-                        {hasGate ? <GateOrForm topic={topic} /> : null}
+                            the rest of the article. ponytail: S1a (09-27) - skip
+                            when a premium tool already carries the ask. */}
+                        {hasGate && !hasPremium ? <GateOrForm topic={topic} /> : null}
                         <div dangerouslySetInnerHTML={{ __html: earlySplit.after }} />
                       </>
                     )}

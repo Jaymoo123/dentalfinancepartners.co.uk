@@ -601,9 +601,10 @@ export function PremiumCalculator({
         </div>
       </div>
 
-      {placement !== "embed" && (
-        // ponytail: owner 2026-09-27, gate removed, form now inline; compare
-        // calc_result_form against calc_result_gate at 4 weeks
+      {placement === "blog" && (
+        // ponytail: S1a (09-27) - one form under a calculator. On calculator
+        // pages the primary calc_result_form already carries the ask, so the
+        // premium tool only gets its own inline form when embedded in a blog post.
         <div className="border-t border-slate-200 p-5 sm:p-7">
           <ResultCaptureForm campaign={config.id} />
         </div>
