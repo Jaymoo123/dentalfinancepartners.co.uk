@@ -119,7 +119,7 @@ export const careHubs: CareHub[] = [
       },
       {
         title: "Accounts, VAT position and structure",
-        body: "Domiciliary agencies supplying personal care to people in their own homes are <a href=\"https://www.gov.uk/guidance/welfare-services-and-goods-notice-7012\">VAT-exempt welfare suppliers</a> once CQC-registered. That means input VAT on equipment, vehicles and professional services is unrecoverable. We review the full VAT position, structure management accounts around cost-per-hour and delivered-hour volume, and advise on owner extraction. For agencies setting up, see <a href=\"/for/care-startups\">our start-up hub</a> and the <a href=\"/services/start-a-domiciliary-care-agency\">start a domiciliary care agency service</a>.",
+        body: "Domiciliary agencies supplying personal care to people in their own homes are <a href=\"https://www.gov.uk/guidance/welfare-services-and-goods-notice-7012\">VAT-exempt welfare suppliers</a> once CQC-registered. That means input VAT on equipment, vehicles and professional services is unrecoverable. We review the full VAT position, structure management accounts around cost-per-hour and delivered-hour volume, and set out the owner-extraction options. For agencies setting up, see <a href=\"/for/care-startups\">our start-up hub</a> and the <a href=\"/services/start-a-domiciliary-care-agency\">start a domiciliary care agency service</a>.",
       },
     ],
     faqs: [
@@ -186,7 +186,7 @@ export const careHubs: CareHub[] = [
       },
       {
         title: "VAT position review and RCB 2/2025 compliance",
-        body: "We review the VAT treatment of each income stream, the partial-exemption position where any taxable supplies exist, and the group structure against <a href=\"https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry/use-of-vat-grouping-within-the-care-industry\">RCB 2/2025</a>. For groups that have relied on pre-2025 VAT planning advice, we assess exposure and advise on restructuring options that do not fall within the avoidance challenge.",
+        body: "We review the VAT treatment of each income stream, the partial-exemption position where any taxable supplies exist, and the group structure against <a href=\"https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry/use-of-vat-grouping-within-the-care-industry\">RCB 2/2025</a>. For groups that have relied on pre-2025 VAT planning advice, we assess exposure and set out restructuring options that do not fall within the avoidance challenge.",
       },
       {
         title: "Payroll, NIC and Employment Allowance",
@@ -257,7 +257,7 @@ export const careHubs: CareHub[] = [
       },
       {
         title: "Corporation tax, owner extraction and accounts",
-        body: "We prepare statutory accounts and corporate tax returns structured around the <a href=\"https://www.gov.uk/corporation-tax-rates\">19%/25% CT rates</a>. Owner-director extraction is planned around salary to the personal allowance and dividends at the rates effective from <a href=\"https://www.gov.uk/tax-on-dividends\">6 April 2026</a>. For operators with property held in a separate entity, we model the associated-company effect on the CT thresholds and advise on the most efficient extraction route.",
+        body: "We prepare statutory accounts and corporate tax returns structured around the <a href=\"https://www.gov.uk/corporation-tax-rates\">19%/25% CT rates</a>. Owner-director extraction is planned around salary to the personal allowance and dividends at the rates effective from <a href=\"https://www.gov.uk/tax-on-dividends\">6 April 2026</a>. For operators with property held in a separate entity, we model the associated-company effect on the CT thresholds and compare the extraction routes.",
       },
     ],
     faqs: [
@@ -320,11 +320,11 @@ export const careHubs: CareHub[] = [
       },
       {
         title: "Structure, owner extraction and tax planning",
-        body: "We advise on sole trader versus limited company, model the corporation tax and dividend outcome against <a href=\"https://www.gov.uk/corporation-tax-rates\">the 19%/25% CT rates</a> and <a href=\"https://www.gov.uk/tax-on-dividends\">dividend rates from 6 April 2026</a>, and flag the MTD-IT obligations that apply to sole-trader operators above £50,000. For domiciliary agency start-ups, see <a href=\"/for/domiciliary-care\">our domiciliary care hub</a> and <a href=\"/services/start-a-domiciliary-care-agency\">start a domiciliary care agency</a>.",
+        body: "We compare sole trader and limited company, model the corporation tax and dividend outcome against <a href=\"https://www.gov.uk/corporation-tax-rates\">the 19%/25% CT rates</a> and <a href=\"https://www.gov.uk/tax-on-dividends\">dividend rates from 6 April 2026</a>, and flag the MTD-IT obligations that apply to sole-trader operators above £50,000. For domiciliary agency start-ups, see <a href=\"/for/domiciliary-care\">our domiciliary care hub</a> and <a href=\"/services/start-a-domiciliary-care-agency\">start a domiciliary care agency</a>.",
       },
       {
         title: "First-year set-up: payroll, VAT and bookkeeping",
-        body: "We set up payroll with employer NIC correctly modelled, Employment Allowance claimed from day one, and the VAT position documented from the date of CQC registration approval. We also advise on bookkeeping structure so the accounts distinguish fee-payer categories (LA, NHS, self-funder) from the outset. Use the <a href=\"/calculators/true-cost-care-hour-calculator\">true-cost-per-hour calculator</a> and <a href=\"/calculators/funded-nursing-care-fee-mix-calculator\">fee-mix calculator</a> to model your plan before launch. See our <a href=\"/services/care-payroll\">care payroll service</a> and <a href=\"/services/care-vat-review\">care VAT review</a>.",
+        body: "We set up payroll with employer NIC correctly modelled, Employment Allowance claimed from day one, and the VAT position documented from the date of CQC registration approval. We also set the bookkeeping structure so the accounts distinguish fee-payer categories (LA, NHS, self-funder) from the outset. Use the <a href=\"/calculators/true-cost-care-hour-calculator\">true-cost-per-hour calculator</a> and <a href=\"/calculators/funded-nursing-care-fee-mix-calculator\">fee-mix calculator</a> to model your plan before launch. See our <a href=\"/services/care-payroll\">care payroll service</a> and <a href=\"/services/care-vat-review\">care VAT review</a>.",
       },
     ],
     faqs: [

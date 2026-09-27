@@ -217,7 +217,7 @@ export const careServices: CareService[] = [
       },
       {
         title: "Stress-test any VAT-grouping structure against RCB 2/2025",
-        body: `If your structure includes a VAT group, we review it against <a href="https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry/use-of-vat-grouping-within-the-care-industry">HMRC's RCB 2/2025 position</a> before HMRC reviews it for you. Where a structure carries risk, we advise on remediation options. Where it is clean, we document why so there is a clear position to defend.`,
+        body: `If your structure includes a VAT group, we review it against <a href="https://www.gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry/use-of-vat-grouping-within-the-care-industry">HMRC's RCB 2/2025 position</a> before HMRC reviews it for you. Where a structure carries risk, we set out remediation options. Where it is clean, we document why so there is a clear position to defend.`,
       },
     ],
     faqs: [
@@ -373,7 +373,7 @@ export const careServices: CareService[] = [
       },
       {
         title: "Review propco/opco and ownership structure well before exit so BADR is not lost",
-        body: `We review the legal and ownership structure against the <a href="https://www.gov.uk/business-asset-disposal-relief">BADR qualifying conditions</a> with enough time to make changes and allow the 2-year window to run. Where a structure is at risk of breaking eligibility, we advise on remediation options. Where it is clean, we document the position so there is no dispute at the point of disposal.`,
+        body: `We review the legal and ownership structure against the <a href="https://www.gov.uk/business-asset-disposal-relief">BADR qualifying conditions</a> with enough time to make changes and allow the 2-year window to run. Where a structure is at risk of breaking eligibility, we set out remediation options. Where it is clean, we document the position so there is no dispute at the point of disposal.`,
       },
       {
         title: "Prepare the financial information a buyer's due diligence will demand",
@@ -449,7 +449,7 @@ export const careServices: CareService[] = [
     howWeHelp: [
       {
         title: "Set up the right structure and opening accounts, MTD-IT ready if you trade personally",
-        body: `We advise on limited company versus sole trader based on your income level, risk appetite and growth plans. If you incorporate, we set up the opening accounts and establish the owner-director pay structure. If you trade personally, we confirm whether <a href="https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax">MTD-IT applies</a> from the outset and set up compatible record-keeping before HMRC requires it.`,
+        body: `We compare limited company and sole trader against your income level, risk appetite and growth plans. If you incorporate, we set up the opening accounts and establish the owner-director pay structure. If you trade personally, we confirm whether <a href="https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax">MTD-IT applies</a> from the outset and set up compatible record-keeping before HMRC requires it.`,
       },
       {
         title: "Build projections and the CQC financial viability statement together",

@@ -140,7 +140,7 @@ export const charityTypes: CharityType[] = [
     howWeHelp: [
       {
         title: "Structure and tax advice",
-        body: "We explain the accounting and tax implications of CIC, charitable company, CIO and other structures, drawing on the <a href=\"https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure\">Charity Commission's structure guidance</a>. Where a trading subsidiary or restructure is relevant, we model the tax position and advise on implementation.",
+        body: "We explain the accounting and tax implications of CIC, charitable company, CIO and other structures, drawing on the <a href=\"https://www.gov.uk/guidance/charity-types-how-to-choose-a-structure\">Charity Commission's structure guidance</a>. Where a trading subsidiary or restructure is relevant, we model the tax position and set out the implementation steps.",
       },
       {
         title: "Annual accounts and regulatory filings",
@@ -148,7 +148,7 @@ export const charityTypes: CharityType[] = [
       },
       {
         title: "Corporation Tax, VAT and Gift Aid",
-        body: "We calculate and file Corporation Tax returns, advise on VAT registration obligations (the standard <a href=\"https://www.gov.uk/vat-charities\">£90,000 taxable turnover threshold applies</a> unless specific reliefs apply), and handle <a href=\"https://www.gov.uk/claim-gift-aid\">Gift Aid</a> registration and claims for organisations that are registered charities.",
+        body: "We calculate and file Corporation Tax returns, assess VAT registration obligations (the standard <a href=\"https://www.gov.uk/vat-charities\">£90,000 taxable turnover threshold applies</a> unless specific reliefs apply), and handle <a href=\"https://www.gov.uk/claim-gift-aid\">Gift Aid</a> registration and claims for organisations that are registered charities.",
       },
     ],
     faqs: [

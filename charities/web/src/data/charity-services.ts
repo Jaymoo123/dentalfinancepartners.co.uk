@@ -51,7 +51,7 @@ export const charityServices: CharityService[] = [
       },
       {
         title: "Accounts preparation support",
-        body: "Where accounts need correction or restructuring before examination, we advise trustees on what is needed and, if required, assist with preparation.",
+        body: "Where accounts need correction or restructuring before examination, we set out for trustees what is needed and, if required, assist with preparation.",
       },
       {
         title: "Charity Commission filing",
@@ -232,7 +232,7 @@ export const charityServices: CharityService[] = [
     faqs: [
       {
         question: "Can we claim Gift Aid on membership subscriptions?",
-        answer: "It depends on what the member receives in return. If membership provides only the right to receive the charity's publications or attend certain events and the total benefit value does not exceed the applicable donor benefit limits (25% of the donation for amounts up to £100; £25 plus 5% of the excess for amounts over £100; capped at £2,500 in aggregate per year), Gift Aid may still be claimable on the subscription. We review the specific membership structure and advise accordingly.",
+        answer: "It depends on what the member receives in return. If membership provides only the right to receive the charity's publications or attend certain events and the total benefit value does not exceed the applicable donor benefit limits (25% of the donation for amounts up to £100; £25 plus 5% of the excess for amounts over £100; capped at £2,500 in aggregate per year), Gift Aid may still be claimable on the subscription. We review the specific membership structure and confirm where it lands.",
       },
       {
         question: "What is the Gift Aid Small Donations Scheme?",

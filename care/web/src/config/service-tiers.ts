@@ -39,7 +39,7 @@ export const serviceTiers: ServiceTier[] = [
   {
     name: "Advisory",
     description:
-      "Multi-site operators, buyers, sellers and groups who need deal-grade numbers: acquisition due diligence, exit tax planning and propco/opco structure advice, not just filed accounts.",
+      "Multi-site operators, buyers, sellers and groups who need deal-grade numbers: acquisition due diligence, exit tax planning and propco/opco structure review, not just filed accounts.",
     features: [
       "Everything in Growth",
       "Acquisition financial due diligence: fee mix, occupancy and cost base",

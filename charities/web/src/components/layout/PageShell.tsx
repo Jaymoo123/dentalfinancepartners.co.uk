@@ -44,7 +44,7 @@ const wordmark = {
 // decision, so it is carried over verbatim on the legal disclosure rather than
 // being dropped or reworded.
 const IDENTITY_LINE =
-  "Specialist charity accountants. Editorial content only. Speak to us for advice specific to your organisation.";
+  "Specialist charity accountants. Editorial content only. Speak to us about your own organisation.";
 
 export function PageShell({ children, nav }: { children: ReactNode; nav?: NavItem[] }) {
   return (
