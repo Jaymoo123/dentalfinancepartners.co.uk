@@ -5,6 +5,8 @@ import { CtaBand, HubSection, LinkCardGrid, PageHero } from "@/components/hubs/H
 import { charityServices } from "@/data/charity-services";
 import { siteConfig } from "@/config/site";
 import { serviceTiers } from "@/config/service-tiers";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { niche } from "@/config/niche-loader";
 
 export const metadata: Metadata = {
   title: { absolute: "Charity Accounting Services | Trustee Tax" },
@@ -61,6 +63,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       <CtaBand title="Not sure which service you need?">
         <p>

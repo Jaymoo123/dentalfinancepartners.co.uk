@@ -7,6 +7,8 @@ import {
   sectionYLoose,
 } from "@/components/ui/layout-utils";
 import { PageHero } from "@/components/hubs/HubParts";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { niche } from "@/config/niche-loader";
 
 export const metadata: Metadata = {
   title: "About | Specialist Charity Accountants",
@@ -15,8 +17,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const co = siteConfig.company;
-
   return (
     <>
       {/* One hero vocabulary: the same PageHero the ported hubs use, dark tone,
@@ -38,24 +38,19 @@ export default function AboutPage() {
 
       <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          {/* Two columns rather than a clamped prose block: the entity details
-              were a footnote under the text and now sit beside it, which is
-              where a reader checking who we are actually looks. */}
-          <div className="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
-            <div className="min-w-0 space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
-              <p>We are specialist accountants for charities, community interest companies and social enterprises. That focus means we understand the financial specifics of charitable organisations in a way that a general practice does not.</p>
-              <p>The independent examination is the clearest example. Many trustees do not know what the examiner is looking for, what the examiner needs the accounts to include, or how to make the examination process straightforward. We prepare the accounts with the examination in mind and connect you with an independent examiner.</p>
-              <p>The same applies to Gift Aid and GASDS claims, fund accounting for restricted grants, the Charities SORP presentation requirements, and the Charity Commission annual return. These are not things that come up occasionally for us. They are the core of what we do.</p>
-            </div>
-
-            <div className="min-w-0">
-              <div className="rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
-                <p className="text-sm leading-relaxed text-slate-600">{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
-              </div>
-            </div>
+          <div className="min-w-0 space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
+            <p>We are specialist accountants for charities, community interest companies and social enterprises. That focus means we understand the financial specifics of charitable organisations in a way that a general practice does not.</p>
+            <p>The independent examination is the clearest example. Many trustees do not know what the examiner is looking for, what the examiner needs the accounts to include, or how to make the examination process straightforward. We prepare the accounts with the examination in mind and connect you with an independent examiner.</p>
+            <p>The same applies to Gift Aid and GASDS claims, fund accounting for restricted grants, the Charities SORP presentation requirements, and the Charity Commission annual return. These are not things that come up occasionally for us. They are the core of what we do.</p>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-12 border-t border-slate-200 pt-10">
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
+
+      <section className="bg-white">
+        <div className={siteContainerLg}>
+          <div className="pt-10">
             <Link href="/contact" className={btnPrimary}>Get in touch</Link>
           </div>
         </div>
