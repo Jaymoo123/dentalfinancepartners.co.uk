@@ -91,9 +91,10 @@ export function AudienceStageLayout({ data }: Props) {
             <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               {data.heroHeading}
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
-              {data.intro}
-            </p>
+            <p
+              className="mt-5 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg"
+              dangerouslySetInnerHTML={{ __html: data.intro }}
+            />
             <div className="mt-8">
               <Link href="#book" className={btnPrimary}>
                 Ask a medical accountant about your position
@@ -126,7 +127,7 @@ export function AudienceStageLayout({ data }: Props) {
               The questions and concerns that come up most in the first conversation.
             </p>
           </div>
-          <CoverageCards items={data.concerns} columns={3} tone="slate" />
+          <CoverageCards items={data.concerns} columns={3} tone="slate" html />
         </div>
       </section>
 
@@ -145,6 +146,7 @@ export function AudienceStageLayout({ data }: Props) {
                 title: s.title,
                 body: s.body,
               }))}
+              html
             />
           </div>
         </div>
@@ -204,6 +206,7 @@ export function AudienceStageLayout({ data }: Props) {
         eyebrow="FAQ"
         title={`Common questions from ${data.displayRoleLower ?? data.displayRole.toLowerCase()}`}
         faqs={data.faqs.map((f) => ({ question: f.q, answer: f.a }))}
+        html
       />
 
       {/* Related guides. Light ground: this is the last section before the navy

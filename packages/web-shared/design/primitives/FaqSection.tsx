@@ -15,6 +15,7 @@ export function FaqSection({
   faqs,
   className = "bg-white py-12 sm:py-16 lg:py-20",
   tone = "slate",
+  html = false,
 }: {
   eyebrow?: string;
   title?: string;
@@ -22,6 +23,10 @@ export function FaqSection({
   className?: string;
   /** Card surface. Use "white" when the section itself sits on slate-50. */
   tone?: "slate" | "white";
+  /** `answer` is already-sanitised HTML (writer copy with inline links), not
+   *  plain text. Every existing caller omits this and is unaffected. Mirrors
+   *  the `CardStack` `html` prop in page-blocks.tsx. */
+  html?: boolean;
 }) {
   const itemSurface = tone === "white" ? "bg-white" : "bg-slate-50";
   return (
@@ -36,7 +41,7 @@ export function FaqSection({
             <AccordionItem key={faq.question} value={`faq-${idx}`} className={itemSurface}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
               <AccordionContent>
-                <p>{faq.answer}</p>
+                {html ? <p dangerouslySetInnerHTML={{ __html: faq.answer }} /> : <p>{faq.answer}</p>}
               </AccordionContent>
             </AccordionItem>
           ))}

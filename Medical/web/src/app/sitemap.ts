@@ -16,6 +16,10 @@ const STATIC = new Date("2026-06-03");
 const RESEARCH_DATE = new Date("2026-07-06");
 // Resource guides opened as public research pages 2026-07-17.
 const RESOURCES_DATE = new Date("2026-07-17");
+// LEADS_250 wave 1 audience pages (S4a), built and QA'd 2026-09-27. A separate
+// date from CRO_WAVE: these did not exist on 2026-07-05, so dating them into
+// that wave would misrepresent when the content last changed.
+const WAVE1_DATE = new Date("2026-09-27");
 
 // Paths that received content changes in the 2026-07-05 CRO-parity wave.
 // Everything else in staticPaths defaults to STATIC.
@@ -32,6 +36,18 @@ const CRO_WAVE_PATHS = new Set([
 const RESEARCH_PATHS = new Set([
   "/research",
   "/research/annual-allowance-pension-tax-index",
+]);
+
+// LEADS_250 wave 1 audience pages (S4a). Own Set, not folded into
+// CRO_WAVE_PATHS: those four pages are dated to the 2026-07-05 CRO-parity
+// wave, and these five are new 2026-09-27, so sharing the constant would ship
+// a false lastmod.
+const WAVE1_PATHS = new Set([
+  "/for-salaried-gps",
+  "/for-retiring-doctors",
+  "/for-gp-partners",
+  "/for-medical-companies",
+  "/for-nhs-doctors",
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -59,6 +75,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/for-consultants",
     "/for-locum-doctors",
     "/for-junior-doctors",
+    // LEADS_250 wave 1 (S4a), 2026-09-27.
+    "/for-salaried-gps",
+    "/for-retiring-doctors",
+    "/for-gp-partners",
+    "/for-medical-companies",
+    "/for-nhs-doctors",
   ];
 
   const hreflang = (url: string) => ({
@@ -69,7 +91,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}${path}`;
     return {
       url,
-      lastModified: CRO_WAVE_PATHS.has(path) ? CRO_WAVE : RESEARCH_PATHS.has(path) ? RESEARCH_DATE : STATIC,
+      lastModified: CRO_WAVE_PATHS.has(path)
+        ? CRO_WAVE
+        : RESEARCH_PATHS.has(path)
+          ? RESEARCH_DATE
+          : WAVE1_PATHS.has(path)
+            ? WAVE1_DATE
+            : STATIC,
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : 0.7,
       alternates: hreflang(url),

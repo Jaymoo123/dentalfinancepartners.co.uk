@@ -32,6 +32,7 @@ export function CoverageCards({
   tone = "slate",
   columns = 2,
   glow = false,
+  html = false,
 }: {
   items: CoverageItem[];
   /** Columns from `md`. Three suits a set of three; two suits an even set. */
@@ -42,6 +43,10 @@ export function CoverageCards({
    * the cards disappear into the ground.
    */
   tone?: "slate" | "white";
+  /** `body` is already-sanitised HTML (writer copy with inline links), not
+   *  plain text. Every existing caller omits this and is unaffected. Mirrors
+   *  the `CardStack` `html` prop in page-blocks.tsx. */
+  html?: boolean;
   /**
    * Run the one-time staggered glow across the cards the first time the grid is
    * on screen, the same sequence /services uses on its client tiers.
@@ -84,13 +89,22 @@ export function CoverageCards({
             <item.icon aria-hidden className="h-5 w-5" strokeWidth={1.75} />
           </span>
           <h3 className="mt-4 text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
-          <p
-            className={`mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700 ${
-              item.outcome ? "mb-5" : ""
-            }`}
-          >
-            {item.body}
-          </p>
+          {html ? (
+            <p
+              className={`mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700 ${
+                item.outcome ? "mb-5" : ""
+              }`}
+              dangerouslySetInnerHTML={{ __html: item.body }}
+            />
+          ) : (
+            <p
+              className={`mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700 ${
+                item.outcome ? "mb-5" : ""
+              }`}
+            >
+              {item.body}
+            </p>
+          )}
           {item.outcome && (
             <p className="mt-auto flex items-start gap-2.5 border-t border-slate-200 pt-4 text-sm font-semibold text-primary-800">
               <Check aria-hidden className="mt-0.5 h-4 w-4 shrink-0" strokeWidth={2.5} />

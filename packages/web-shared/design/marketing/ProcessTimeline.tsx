@@ -24,8 +24,13 @@ const ANCHOR = 0.66;
 
 export function ProcessTimeline({
   steps,
+  html = false,
 }: {
   steps: Array<{ n: string; title: string; body: string }>;
+  /** `body` is already-sanitised HTML (writer copy with inline links), not
+   *  plain text. Every existing caller omits this and is unaffected. Mirrors
+   *  the `CardStack` `html` prop in page-blocks.tsx. */
+  html?: boolean;
 }) {
   const containerRef = useRef<HTMLOListElement>(null);
   const nodeRefs = useRef<Array<HTMLDivElement | null>>([]);
@@ -126,7 +131,14 @@ export function ProcessTimeline({
               }`}
             >
               <h3 className="text-base font-bold text-slate-900 sm:text-lg">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base">{step.body}</p>
+              {html ? (
+                <p
+                  className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base"
+                  dangerouslySetInnerHTML={{ __html: step.body }}
+                />
+              ) : (
+                <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:mt-3 sm:text-base">{step.body}</p>
+              )}
             </div>
           </li>
         );
