@@ -3,7 +3,8 @@ title: 'UK Tax Brackets 2025/26: Rates, Thresholds and Allowances for Sole Trade
 slug: uk-tax-brackets
 canonical: https://www.hollowaydavies.co.uk/blog/limited-company-tax/uk-tax-brackets
 date: '2026-05-20'
-dateModified: '2026-06-12'
+updatedDate: '2026-09-27'
+dateModified: '2026-09-27'
 generator: sonnet-4.6/track2-rewrite
 author: "James Holloway"
 reviewedBy: "Holloway Davies Editorial Team"
@@ -300,7 +301,7 @@ Corporation tax £16,125 plus dividend income tax £7,847 = <strong>£23,972</st
 <li>Loans made from 6 April 2026: <strong>35.75%</strong> (Finance Act 2026 s.4 increases the dividend upper rate)</li>
 </ul>
 
-<p>The charge is temporary: s.458 relief repays it when the loan is repaid, released or written off, but that relief is deferred to 9 months and 1 day after the end of the accounting period in which repayment occurs. Anti-avoidance rules block repay-and-redraw strategies: the 30-day rule (s.464ZA) and the arrangements rule (s.464C/s.464D) for balances of £15,000 or more. A loan exceeding £10,000 at any point creates a taxable benefit in kind under ITEPA 2003 ss.173 to 191, with Class 1A NIC at 15% on the benefit, reportable on P11D.</p>
+<p>The charge is temporary: s.458 relief repays it when the loan is repaid, released or written off, but that relief is deferred to 9 months and 1 day after the end of the accounting period in which repayment occurs. Anti-avoidance rules block repay-and-redraw strategies: the 30-day rule (s.464ZA(1), renumbered from s.464C with effect from 30 October 2024, with the substance unchanged) and the arrangements rule (s.464ZA(3)) for balances of £15,000 or more where arrangements for replacement borrowing of £5,000 or more exist at the time of repayment. A loan exceeding £10,000 at any point creates a taxable benefit in kind under ITEPA 2003 ss.173 to 191, with Class 1A NIC at 15% on the benefit, reportable on P11D.</p>
 
 <h2>Planning Your Tax Position: Sole Trader versus Limited Company</h2>
 

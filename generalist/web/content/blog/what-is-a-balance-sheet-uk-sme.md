@@ -3,6 +3,7 @@ title: "What is a Balance Sheet? A Plain Guide for UK Directors"
 slug: "what-is-a-balance-sheet-uk-sme"
 canonical: "https://www.hollowaydavies.co.uk/blog/bookkeeping-and-compliance/what-is-a-balance-sheet-uk-sme"
 date: "2026-07-09"
+updatedDate: "2026-09-27"
 author: "Holloway Davies Editorial Team"
 category: "Bookkeeping and Compliance"
 metaTitle: "What is a Balance Sheet? Plain Guide for UK Directors"
@@ -253,7 +254,7 @@ faqs:
 
 <p>The charge is not permanent. When the loan is repaid, released or written off, the company can claim the s.455 charge back under CTA 2010 s.458. But the relief is deferred: it does not come back immediately. It is paid away at the 9-month deadline and returned 9 months and 1 day after the end of the accounting period in which repayment happens. The company must fund the tax first.</p>
 
-<p>Two points directors often miss. First, if the DLA balance exceeds £10,000 at any point during the year, the loan is a <strong>benefit in kind</strong> under ITEPA 2003 ss.173 to 191, reportable on P11D with Class 1A NIC at 15%, unless the director pays interest at HMRC's official rate. Second, do not try to solve an overdrawn DLA by repaying it just before the year end and drawing the same amount out again shortly after. The <strong>30-day rule (CTA 2010 s.464ZA)</strong> blocks this for balances of £15,000 or more; the <strong>arrangements rule (ss.464C/464D)</strong> catches longer patterns.</p>
+<p>Two points directors often miss. First, if the DLA balance exceeds £10,000 at any point during the year, the loan is a <strong>benefit in kind</strong> under ITEPA 2003 ss.173 to 191, reportable on P11D with Class 1A NIC at 15%, unless the director pays interest at HMRC's official rate. Second, do not try to solve an overdrawn DLA by repaying it just before the year end and drawing the same amount out again shortly after. The <strong>30-day rule (CTA 2010 s.464ZA(1), renumbered from s.464C with effect from 30 October 2024, with the substance unchanged)</strong> blocks this where £5,000 or more is repaid and £5,000 or more redrawn within 30 days; the <strong>arrangements rule (s.464ZA(3))</strong> catches longer patterns on balances of £15,000 or more.</p>
 
 <p>For the full mechanics of the directors loan account, including how to clear an overdrawn balance efficiently and how to structure drawings to avoid the problem in the first place, see our dedicated guide: <a href="/blog/director-pay-and-dividends/directors-loan-account-explained">Directors loan account explained</a>.</p>
 

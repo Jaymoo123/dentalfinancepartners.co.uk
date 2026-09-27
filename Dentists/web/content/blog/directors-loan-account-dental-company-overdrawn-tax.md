@@ -3,6 +3,7 @@ title: "Overdrawn Director's Loan Accounts for Dental Practice Owners: s455, BIK
 slug: "directors-loan-account-dental-company-overdrawn-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/directors-loan-account-dental-company-overdrawn-tax"
 date: "2026-06-03"
+updatedDate: "2026-09-27"
 generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"
 category: "Practice accounting"
@@ -31,7 +32,7 @@ faqs:
   - question: "What is HMRC's official rate of interest on director's loans?"
     answer: "The official rate is the benchmark HMRC uses to measure the benefit on a cheap or interest-free loan. It is 3.75% from 6 April 2025 (up from 2.25% in 2024/25), and is kept under review. If the company charges you interest at or above the official rate, there is no beneficial-loan benefit to tax, which is one way to remove the benefit-in-kind charge."
   - question: "What is bed-and-breakfasting and why does HMRC disallow it?"
-    answer: "Bed-and-breakfasting is repaying a director's loan just before the period-end to dodge s455, then redrawing the money shortly after. Anti-avoidance rules block it: under the 30-day rule, repayments of £5,000 or more matched by redraws of £5,000 or more within 30 days are ignored. A separate arrangements rule catches balances of £15,000 or more where there is an intention to redraw, regardless of the 30 days."
+    answer: "Bed-and-breakfasting is repaying a director's loan just before the period-end to dodge s455, then redrawing the money shortly after. Anti-avoidance rules block it: under the 30-day rule, repayments of £5,000 or more matched by redraws of £5,000 or more within 30 days are ignored. A separate arrangements rule catches balances of £15,000 or more where, at the time of repayment, there are arrangements for replacement borrowing of £5,000 or more, regardless of the 30 days. Both limbs now sit in CTA 2010 s.464ZA."
   - question: "Can I clear my loan with a dividend and take it out again?"
     answer: "Clearing an overdrawn loan with a properly declared dividend out of distributable profits is fine, and is one of the standard ways to deal with it. What does not work is declaring a dividend to clear the account on paper and then redrawing the same cash shortly after, because the bed-and-breakfast rules treat that as never having been repaid. The repayment has to be real and the dividend has to be legally payable."
   - question: "What happens if the company writes off my director's loan?"
@@ -93,8 +94,8 @@ faqs:
 <p>The obvious wheeze is to repay the loan just before the period-end, dodge s455, then redraw the money soon after. HMRC anticipated it. Two anti-avoidance rules block the manoeuvre:</p>
 
 <ul>
-<li><strong>The 30-day rule</strong> (section 464ZA). Where <strong>£5,000 or more</strong> is repaid and <strong>£5,000 or more</strong> is redrawn within <strong>30 days</strong>, the repayment is matched against the new advance and ignored for s455. The balance is treated as never having been repaid.</li>
-<li><strong>The arrangements rule</strong> (sections 464C and 464D). Where the balance is <strong>£15,000 or more</strong> and, at the time of repayment, there is an <strong>intention to redraw</strong>, the repayment is ignored regardless of the 30-day window. This catches the slower, more deliberate version of the same plan.</li>
+<li><strong>The 30-day rule</strong> (section 464ZA(1), renumbered from section 464C with effect from 30 October 2024, with the substance unchanged). Where <strong>£5,000 or more</strong> is repaid and <strong>£5,000 or more</strong> is redrawn within <strong>30 days</strong>, the repayment is matched against the new advance and ignored for s455. The balance is treated as never having been repaid.</li>
+<li><strong>The arrangements rule</strong> (section 464ZA(3)). Where the balance is <strong>£15,000 or more</strong> and, at the time of repayment, there are <strong>arrangements for replacement borrowing of £5,000 or more</strong>, the repayment is ignored regardless of the 30-day window. This catches the slower, more deliberate version of the same plan.</li>
 </ul>
 
 <p>The practical effect is that a repayment has to be <strong>real</strong>. Clearing the DLA with cash you genuinely no longer have access to is fine. Declaring a dividend to wipe the account on paper and then drawing the same cash straight back out is not, because the rules treat it as if the repayment never happened. If you want to clear an overdrawn DLA with a dividend, declare a dividend you can lawfully pay and leave the position cleared.</p>
@@ -132,7 +133,7 @@ faqs:
 
 <h2>Worked example D: bed-and-breakfasting fails</h2>
 
-<p>Suppose the owner tries to dodge the s455 in example A. They "repay" the £40,000 two weeks before the 31 March year-end and then redraw £38,000 three weeks later. Because a repayment of £5,000 or more is matched by a redraw of £5,000 or more within 30 days, and there is a clear intention to redraw with a balance well over £15,000, both anti-avoidance limbs apply. The repayment is matched to the new advance and ignored. For s455 purposes the loan is treated as never repaid, and the £13,500 charge stands. The lesson is that only a genuine, permanent reduction counts.</p>
+<p>Suppose the owner tries to dodge the s455 in example A. They "repay" the £40,000 two weeks before the 31 March year-end and then redraw £38,000 three weeks later. Because a repayment of £5,000 or more is matched by a redraw of £5,000 or more within 30 days, and there are arrangements for replacement borrowing on a balance well over £15,000, both anti-avoidance limbs apply. The repayment is matched to the new advance and ignored. For s455 purposes the loan is treated as never repaid, and the £13,500 charge stands. The lesson is that only a genuine, permanent reduction counts.</p>
 
 <h2>Writing off the loan instead of repaying it</h2>
 

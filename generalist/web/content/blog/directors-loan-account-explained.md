@@ -3,6 +3,7 @@ title: "Director's Loan Account: S455, Repayment Rules and Exits"
 slug: "directors-loan-account-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/directors-loan-account-explained"
 date: "2026-08-25"
+updatedDate: "2026-09-27"
 generator: rewrite/track2-full
 author: "Holloway Davies Editorial Team"
 category: "Director Pay and Dividends"
@@ -28,14 +29,14 @@ faqs:
   - question: "Can I avoid the benefit in kind charge on a director's loan?"
     answer: "Yes, two ways. Keep the combined loan balance at £10,000 or below throughout the tax year, in which case no benefit arises at all. Or, above £10,000, pay the company interest at the official rate, 3.75% for 2025/26 and continuing at 3.75% from 6 April 2026, so there is no cheap-loan benefit to tax. Otherwise the notional interest is a taxable benefit reported on a P11D, with Class 1A NIC at 15% for the company."
   - question: "Can I repay my director's loan just before year end and draw it again after?"
-    answer: "Not without consequences. The 30-day rule in CTA 2010 s.464ZA matches repayments of £5,000 or more against new drawings within 30 days either side, so the repayment is treated as never made. For balances of £15,000 or more, the arrangements rule in s.464C catches redrawing even outside 30 days if the intention to redraw existed at the time of repayment. Repayments funded by a genuinely taxed dividend or bonus escape both rules."
+    answer: "Not without consequences. The 30-day rule in CTA 2010 s.464ZA matches repayments of £5,000 or more against new drawings within 30 days, so the repayment is treated as never made. For balances of £15,000 or more, the arrangements rule in s.464ZA(3) catches redrawing even outside 30 days if, at the time of repayment, there were arrangements for replacement borrowing of £5,000 or more. Repayments funded by a genuinely taxed dividend or bonus escape both rules."
   - question: "What happens if my director's loan account is in credit?"
     answer: "A credit balance means the company owes you money, typically from personal spending on company costs or capital you introduced. The company can repay you at any time with no tax charge, because it is simply returning your own money. You can also charge the company interest, which is deductible for the company; it must withhold 20% at source and report it quarterly on form CT61. If the company fails, you rank as an unsecured creditor for the balance."
 keyTakeaways:
   - "S455 tax is fixed by the date the loan is made: 33.75% for loans made in 2025/26, 35.75% for loans made on or after 6 April 2026, payable on balances outstanding 9 months and 1 day after year end."
   - "S455 is repayable under s.458 once the loan clears, but the refund is deferred to 9 months and 1 day after the year of repayment and must be claimed within 4 years."
   - "A loan over £10,000 at any point in the tax year is a benefit in kind unless you pay interest at the official rate of 3.75%, reported on a P11D with Class 1A NIC at 15% for the company."
-  - "The 30-day rule (s.464ZA) voids repayments of £5,000 or more matched with redrawing within 30 days, and the intentions rule (s.464C) catches planned redrawing on balances of £15,000 or more with no time limit."
+  - "The 30-day rule (s.464ZA) voids repayments of £5,000 or more matched with redrawing within 30 days, and the arrangements rule (s.464ZA(3)) catches balances of £15,000 or more where arrangements for replacement borrowing of £5,000 or more existed at the time of repayment, with no time limit."
   - "Writing off a director's loan taxes the director at dividend rates (35.75% higher rate for 2026/27) and HMRC frequently argues Class 1 NIC is due on top; the company gets no corporation tax deduction."
   - "A credit balance is tax-free money on demand; interest you charge the company is deductible for it, paid under 20% withholding through quarterly CT61 returns."
 ---
@@ -81,9 +82,9 @@ keyTakeaways:
 
 <p>The obvious dodge, repay just before the 9 month deadline and redraw straight after, is blocked twice over.</p>
 
-<p>The <strong>30-day rule (CTA 2010 s.464ZA)</strong>: where repayments of £5,000 or more are made and, within 30 days before or after, new loans are drawn, the repayment is matched against the new drawing and treated as never made. The S455 clock keeps running on the original loan.</p>
+<p>The <strong>30-day rule (CTA 2010 s.464ZA(1), renumbered from s.464C with effect from 30 October 2024, with the substance unchanged)</strong>: where repayments of £5,000 or more are made and, within 30 days, new loans of £5,000 or more are drawn, the repayment is matched against the new drawing and treated as never made. The S455 clock keeps running on the original loan.</p>
 
-<p>The <strong>arrangements rule (s.464C and s.464D)</strong>: where the outstanding balance is £15,000 or more and, at the time of repayment, there is an intention or arrangement to redraw, the repayment is denied relief however long you wait. Thirty-one days of patience does not defeat this one; it turns on intention, not timing.</p>
+<p>The <strong>arrangements rule (s.464ZA(3))</strong>: where the outstanding balance is £15,000 or more and, at the time of repayment, there are arrangements for replacement borrowing of £5,000 or more, the repayment is denied relief however long you wait. Thirty-one days of patience does not defeat this one; it turns on the arrangements, not timing.</p>
 
 <p>The safe harbour in both cases is repayment that is itself taxed: a dividend or bonus credited against the loan is real income that has borne tax, so the matching rules do not apply to it. Cash repayments from savings are also fine, provided you do not draw the money straight back out.</p>
 

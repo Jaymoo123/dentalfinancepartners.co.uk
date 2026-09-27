@@ -70,7 +70,7 @@ keyTakeaways:
 
 <p>Rent for residential property is exempt from VAT. Service charges for residential property are also exempt if they are supplied as part of the same exempt supply of accommodation. But if the services are supplied separately (for example, by a separate management company), they may be standard rated.</p>
 
-<p>Zero rated services are rare in service charges. The main example is fuel and power for domestic or charitable use, which is zero rated. If you recharge electricity to a residential tenant at cost, you may be able to apply the zero rate. Commercial tenants pay standard rated VAT on energy.</p>
+<p>Zero rated services are rare in service charges. The main example is fuel and power for domestic or charitable use, which carries the 5% reduced rate under VATA 1994 Schedule 7A Group 1 rather than the zero rate (a temporary 0% applies only to Great Britain electricity from 1 October 2026 to 31 March 2027 under SI 2026/987). If you recharge electricity to a residential tenant at cost, you may be able to apply the reduced rate. Commercial tenants pay standard rated VAT on energy.</p>
 
 <h3>Residential Service Charges and VAT</h3>
 
