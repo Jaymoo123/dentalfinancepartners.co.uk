@@ -27,8 +27,8 @@ keyTakeaways:
 summary: "Private clinical care is exempt from VAT, so only the standard-rated streams count towards the £90,000 threshold. This guide sorts private medical work into exempt and taxable, sets out the rolling 12-month and 30-day registration tests, and covers voluntary registration, partial exemption and the flat rate scheme."
 schema: ''
 faqs:
-- question: "Is there VAT on private medical services?"
-  answer: "Usually not. Private medical care is exempt from VAT in the same way as NHS care, under VATA 1994 Schedule 9 Group 7 Item 1, provided two conditions hold: the work is within the profession you are registered to practise, and its primary purpose is the protection, maintenance or restoration of the patient's health. A private consultation, diagnosis, treatment or follow-up is therefore exempt, not standard-rated. Going private changes who pays you, not the VAT liability of clinical care."
+- question: "Is there a VAT exemption certificate or letter for a GP practice?"
+  answer: "No. HMRC issues no VAT exemption certificate or exemption letter to a GP practice. Exemption is a feature of the supply itself: under VATA 1994 Schedule 9 Group 7, services are exempt where they are within the profession you are registered to practise and their primary purpose is protecting, maintaining or restoring health. A supplier or commissioner asking for written proof is asking about your VAT status, so give your VAT registration number, or confirm the practice is not registered."
 - question: "When does a doctor have to register for VAT?"
   answer: "When taxable turnover passes £90,000. There are two tests. The look back test is a rolling 12 months: once the taxable total for the last 12 months goes over £90,000 you have 30 days from the end of that month to register. The forward look test bites earlier: if you expect taxable turnover to exceed £90,000 in the next 30 days alone, for example on signing a large medico-legal contract, you must register by the end of that 30-day period. Exempt fees and NHS income are excluded from both tests."
 - question: "Are medico-legal reports and expert witness work VATable?"
