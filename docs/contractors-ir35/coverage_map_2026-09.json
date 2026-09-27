@@ -1,0 +1,1159 @@
+[
+  {
+    "situation": "First-time contractor going limited for a confirmed outside-IR35 engagement",
+    "need_type": "segment_page",
+    "working_title": "Accountants for your first contract outside IR35",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "accountant for first contract outside ir35",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0, below the 100 floor; SERP pull returned no organic results",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "1.A",
+      "8",
+      "17"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "First-time contractor going limited for a confirmed outside-IR35 engagement",
+    "need_type": "decision",
+    "working_title": "Limited company or umbrella for a six-month outside-IR35 contract",
+    "status": "COVERED",
+    "existing_page": "/blog/umbrella-vs-limited-company/limited-company-vs-umbrella-contractor",
+    "pool_row_id": null,
+    "target_query": "limited company vs umbrella",
+    "monthly_demand": 110,
+    "peer_ranks": true,
+    "eligibility_rule_failed": null,
+    "word_band": "800-1,200",
+    "calculator": "umbrella-vs-limited-calculator",
+    "hp_anchors": [
+      "1",
+      "8",
+      "12"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "First-time contractor going limited for a confirmed outside-IR35 engagement",
+    "need_type": "question",
+    "working_title": "What to do in the first 30 days after you incorporate",
+    "status": "PARTIAL",
+    "existing_page": "/blog/contractor-accounting-basics/first-contract-outside-ir35-checklist",
+    "pool_row_id": null,
+    "target_query": "setting up a limited company for contracting",
+    "monthly_demand": 70,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 70 a month, below the 100 floor",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "First-time contractor going limited for a confirmed outside-IR35 engagement",
+    "need_type": "number",
+    "working_title": "Day rate to take-home on an outside-IR35 contract",
+    "status": "COVERED",
+    "existing_page": "/calculators/outside-ir35-take-home-calculator",
+    "pool_row_id": null,
+    "target_query": "outside ir35 calculator",
+    "monthly_demand": 2400,
+    "peer_ranks": true,
+    "eligibility_rule_failed": null,
+    "word_band": "n/a, calculator live",
+    "calculator": "outside-ir35-take-home-calculator",
+    "hp_anchors": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "First-time contractor going limited for a confirmed outside-IR35 engagement",
+    "need_type": "question",
+    "working_title": "Company formation, bank account, VAT and PAYE: the order to do them in",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "contractor company formation",
+    "monthly_demand": 10,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 10 a month, below the 100 floor",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "6",
+      "9"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "First-time contractor going limited for a confirmed outside-IR35 engagement",
+    "need_type": "proof",
+    "working_title": "What a first-year contractor company pays in tax, worked example",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "contractor first year accounts",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": "contractor-salary-dividend-calculator",
+    "hp_anchors": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Permanent employee deciding whether to go contracting at all",
+    "need_type": "decision",
+    "working_title": "Is contracting worth it on your salary: the 2026/27 comparison",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "going contracting from permanent employment",
+    "monthly_demand": 0,
+    "peer_ranks": false,
+    "eligibility_rule_failed": "rule 2: no specialist accountant in the top 20, the SERP is recruiters and forums; rule 3: volume 0",
+    "word_band": "800-1,200",
+    "calculator": "contractor-day-rate-calculator",
+    "hp_anchors": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "wave": "not_eligible"
+  },
+  {
+    "situation": "Permanent employee deciding whether to go contracting at all",
+    "need_type": "number",
+    "working_title": "Salary to day rate: what rate replaces your package",
+    "status": "PARTIAL",
+    "existing_page": "/calculators/contractor-day-rate-calculator",
+    "pool_row_id": null,
+    "target_query": "day rate to annual salary calculator",
+    "monthly_demand": 40,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: 40 a month, below the 100 floor",
+    "word_band": "n/a, calculator live",
+    "calculator": "contractor-day-rate-calculator",
+    "hp_anchors": [
+      "5",
+      "6"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Permanent employee deciding whether to go contracting at all",
+    "need_type": "question",
+    "working_title": "What you give up: holiday, sick pay, pension and notice",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "contracting alongside full time job",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "11",
+      "12"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Permanent employee deciding whether to go contracting at all",
+    "need_type": "segment_page",
+    "working_title": "For employees going contracting for the first time",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "going contracting from permanent",
+    "monthly_demand": 0,
+    "peer_ranks": false,
+    "eligibility_rule_failed": "rule 2 and rule 3 both fail on the parent decision",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8"
+    ],
+    "wave": "not_eligible"
+  },
+  {
+    "situation": "Umbrella worker moving to a limited company",
+    "need_type": "segment_page",
+    "working_title": "Moving from umbrella to your own limited company: the setup service",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "umbrella to limited company accountant",
+    "monthly_demand": 10,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 10 a month on the exact phrase",
+    "word_band": "800-1,200",
+    "calculator": "umbrella-vs-limited-calculator",
+    "hp_anchors": [
+      "8",
+      "12",
+      "6"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Umbrella worker moving to a limited company",
+    "need_type": "decision",
+    "working_title": "When umbrella to limited is worth it, and when it is not",
+    "status": "COVERED",
+    "existing_page": "/blog/umbrella-vs-limited-company/switching-umbrella-to-limited-company",
+    "pool_row_id": null,
+    "target_query": "umbrella to limited company",
+    "monthly_demand": 10,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 10 a month, below the 100 floor",
+    "word_band": "800-1,200",
+    "calculator": "umbrella-vs-limited-calculator",
+    "hp_anchors": [
+      "8",
+      "12"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Umbrella worker moving to a limited company",
+    "need_type": "number",
+    "working_title": "Umbrella take-home against limited company take-home on the same rate",
+    "status": "COVERED",
+    "existing_page": "/calculators/umbrella-vs-limited-calculator",
+    "pool_row_id": null,
+    "target_query": "umbrella vs limited calculator",
+    "monthly_demand": 50,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 50 a month, below the 100 floor",
+    "word_band": "n/a, calculator live",
+    "calculator": "umbrella-vs-limited-calculator",
+    "hp_anchors": [
+      "6",
+      "8",
+      "12"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Umbrella worker moving to a limited company",
+    "need_type": "question",
+    "working_title": "Mid-assignment: can you switch while the contract is running",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "switch from umbrella to limited company",
+    "monthly_demand": 0,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "12"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Umbrella worker moving to a limited company",
+    "need_type": "question",
+    "working_title": "Your last umbrella payslip: holiday pay, the KID and what you are owed",
+    "status": "COVERED",
+    "existing_page": "/blog/umbrella-vs-limited-company/umbrella-company-holiday-pay",
+    "pool_row_id": null,
+    "target_query": "umbrella company deductions",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": "umbrella-take-home-calculator",
+    "hp_anchors": [
+      "12"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Inside-IR35 contractor working out what is left and what to do with the company",
+    "need_type": "decision",
+    "working_title": "Inside IR35: keep the company, close it, or go umbrella",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "inside ir35 keep limited company",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured: no volume or SERP pulled for this exact phrase",
+    "word_band": "800-1,200",
+    "calculator": "inside-ir35-take-home-calculator",
+    "hp_anchors": [
+      "1",
+      "4",
+      "12",
+      "14"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Inside-IR35 contractor working out what is left and what to do with the company",
+    "need_type": "number",
+    "working_title": "Inside-IR35 take-home from a day rate",
+    "status": "COVERED",
+    "existing_page": "/calculators/inside-ir35-take-home-calculator",
+    "pool_row_id": null,
+    "target_query": "inside ir35 calculator",
+    "monthly_demand": 3600,
+    "peer_ranks": true,
+    "eligibility_rule_failed": null,
+    "word_band": "n/a, calculator live",
+    "calculator": "inside-ir35-take-home-calculator",
+    "hp_anchors": [
+      "4",
+      "5",
+      "6"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Inside-IR35 contractor working out what is left and what to do with the company",
+    "need_type": "question",
+    "working_title": "What you can still claim inside IR35",
+    "status": "COVERED",
+    "existing_page": "/blog/expenses-and-deductions/travel-expenses-inside-ir35",
+    "pool_row_id": null,
+    "target_query": "inside ir35 what can i claim",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "4",
+      "10"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Inside-IR35 contractor working out what is left and what to do with the company",
+    "need_type": "segment_page",
+    "working_title": "For contractors caught inside IR35",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "inside ir35 accountant",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": "inside-ir35-take-home-calculator",
+    "hp_anchors": [
+      "1",
+      "4",
+      "12"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Inside-IR35 contractor working out what is left and what to do with the company",
+    "need_type": "question",
+    "working_title": "Mixing inside and outside engagements in the same tax year",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "inside and outside ir35 same year",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "4",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor who thinks the client's inside-IR35 determination is wrong",
+    "need_type": "decision",
+    "working_title": "Challenge the SDS or accept it: what each route costs you",
+    "status": "COVERED",
+    "existing_page": "/blog/ir35-status/challenge-ir35-determination-sds",
+    "pool_row_id": null,
+    "target_query": "ir35 status determination statement appeal",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "3",
+      "2"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor who thinks the client's inside-IR35 determination is wrong",
+    "need_type": "segment_page",
+    "working_title": "IR35 contract review service",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "ir35 contract review service",
+    "monthly_demand": 10,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 10 a month on the service phrase, 50 on 'ir35 contract review'; both below the 100 floor",
+    "word_band": "800-1,200",
+    "calculator": "ir35-status-indicator",
+    "hp_anchors": [
+      "2",
+      "3",
+      "17"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor who thinks the client's inside-IR35 determination is wrong",
+    "need_type": "question",
+    "working_title": "What a blanket determination is and why it usually fails reasonable care",
+    "status": "PARTIAL",
+    "existing_page": "/blog/ir35-status/sds-status-determination-statement",
+    "pool_row_id": null,
+    "target_query": "blanket ir35 determination",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "3",
+      "17"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor who thinks the client's inside-IR35 determination is wrong",
+    "need_type": "number",
+    "working_title": "What an inside determination costs you a year against outside",
+    "status": "PARTIAL",
+    "existing_page": "/blog/ir35-status/inside-ir35-take-home-explained",
+    "pool_row_id": null,
+    "target_query": "inside vs outside ir35 pay difference",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": "inside-ir35-take-home-calculator",
+    "hp_anchors": [
+      "4",
+      "5",
+      "6"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor who thinks the client's inside-IR35 determination is wrong",
+    "need_type": "proof",
+    "working_title": "IR35 determination outcomes: what the tribunal record shows",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "ir35 case law outcomes",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "1,200-1,600",
+    "calculator": null,
+    "hp_anchors": [
+      "2",
+      "17"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor choosing, or leaving, an accountant",
+    "need_type": "segment_page",
+    "working_title": "What the contractor service covers and what it costs",
+    "status": "PARTIAL",
+    "existing_page": "/services",
+    "pool_row_id": null,
+    "target_query": "contractor accountant",
+    "monthly_demand": 480,
+    "peer_ranks": true,
+    "eligibility_rule_failed": null,
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "13",
+      "17"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor choosing, or leaving, an accountant",
+    "need_type": "decision",
+    "working_title": "What a contractor accountant should cost in 2026/27",
+    "status": "PARTIAL",
+    "existing_page": "/blog/contractor-accounting-basics/contractor-accountant-fees-cost",
+    "pool_row_id": null,
+    "target_query": "contractor accountant fees",
+    "monthly_demand": 10,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 10 a month on the exact phrase; the parent 'contractor accountant' runs 480",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "13",
+      "17"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor choosing, or leaving, an accountant",
+    "need_type": "question",
+    "working_title": "Switching accountant mid-year: professional clearance and the handover",
+    "status": "PARTIAL",
+    "existing_page": "/blog/contractor-accounting-basics/how-to-switch-contractor-accountant",
+    "pool_row_id": null,
+    "target_query": "contractor accountant switch mid year",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "13"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor choosing, or leaving, an accountant",
+    "need_type": "question",
+    "working_title": "Why a packaged accountant can be an MSC risk",
+    "status": "COVERED",
+    "existing_page": "/blog/contractor-accounting-basics/msc-legislation-contractors",
+    "pool_row_id": null,
+    "target_query": "managed service company accountant",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": "managed-service-company-risk-checker",
+    "hp_anchors": [
+      "13"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor choosing, or leaving, an accountant",
+    "need_type": "proof",
+    "working_title": "What contractors pay for accountancy: a fee benchmark",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "how much does a contractor accountant cost",
+    "monthly_demand": 0,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: measured volume 0 on the exact phrase",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "13"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor restructuring shares with a spouse or partner director",
+    "need_type": "decision",
+    "working_title": "Alphabet shares in a contractor company: when they work",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "alphabet shares limited company",
+    "monthly_demand": 30,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 30 a month, below the 100 floor",
+    "word_band": "1,200-1,600",
+    "calculator": "contractor-salary-dividend-calculator",
+    "hp_anchors": [
+      "5",
+      "8",
+      "17"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor restructuring shares with a spouse or partner director",
+    "need_type": "question",
+    "working_title": "Putting your spouse on the payroll or the share register",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "spouse shareholder limited company",
+    "monthly_demand": 10,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 10 a month, below the 100 floor",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "6",
+      "8"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor restructuring shares with a spouse or partner director",
+    "need_type": "number",
+    "working_title": "Two-director salary and dividend split for 2026/27",
+    "status": "PARTIAL",
+    "existing_page": "/calculators/contractor-salary-dividend-calculator",
+    "pool_row_id": null,
+    "target_query": "contractor salary and dividends calculator",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "n/a, calculator live",
+    "calculator": "contractor-salary-dividend-calculator",
+    "hp_anchors": [
+      "5",
+      "6",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor restructuring shares with a spouse or partner director",
+    "need_type": "question",
+    "working_title": "Associated companies when both spouses run a PSC",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "associated companies contractor",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": "corporation-tax-calculator",
+    "hp_anchors": [
+      "7"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor restructuring shares with a spouse or partner director",
+    "need_type": "segment_page",
+    "working_title": "For two-director contractor companies",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "husband and wife limited company accountant",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "7",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor putting company profit into a pension",
+    "need_type": "decision",
+    "working_title": "Employer pension contribution against dividends in 2026/27",
+    "status": "COVERED",
+    "existing_page": "/blog/pension-and-dividends/contractor-pension-employer-contributions",
+    "pool_row_id": null,
+    "target_query": "contractor pension employer contribution",
+    "monthly_demand": 0,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "11",
+      "5",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor putting company profit into a pension",
+    "need_type": "number",
+    "working_title": "How much your PSC can put in this year, with carry forward",
+    "status": "PARTIAL",
+    "existing_page": "/blog/pension-and-dividends/contractor-pension-carry-forward",
+    "pool_row_id": null,
+    "target_query": "contractor pension calculator",
+    "monthly_demand": 10,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 10 a month, below the 100 floor",
+    "word_band": "n/a, new calculator",
+    "calculator": "MISSING: contractor pension allowance calculator",
+    "hp_anchors": [
+      "11"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor putting company profit into a pension",
+    "need_type": "question",
+    "working_title": "The taper and the MPAA: when your allowance is not the full amount",
+    "status": "PARTIAL",
+    "existing_page": "/blog/pension-and-dividends/contractor-pension-tax-relief",
+    "pool_row_id": null,
+    "target_query": "pension annual allowance taper contractor",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "11"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor putting company profit into a pension",
+    "need_type": "segment_page",
+    "working_title": "For contractors with a high-profit year",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "contractor accountant high profit year",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "11",
+      "7",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor taking money out of, or closing, the company",
+    "need_type": "decision",
+    "working_title": "MVL or strike-off when you close a contractor company",
+    "status": "COVERED",
+    "existing_page": "/blog/limited-company-tax/closing-contractor-limited-company",
+    "pool_row_id": null,
+    "target_query": "closing a contractor limited company",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0; the SERP pull returned no organic results",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "14",
+      "15"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor taking money out of, or closing, the company",
+    "need_type": "question",
+    "working_title": "The winding-up TAAR: the two-year trap if you keep contracting",
+    "status": "PARTIAL",
+    "existing_page": "/blog/limited-company-tax/closing-contractor-limited-company",
+    "pool_row_id": null,
+    "target_query": "mvl contractor",
+    "monthly_demand": 10,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: 10 a month, below the 100 floor",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "14",
+      "15"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor taking money out of, or closing, the company",
+    "need_type": "question",
+    "working_title": "An overdrawn director's loan account and the s.455 charge",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "director loan account contractor",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": "MISSING: s455 director loan calculator",
+    "hp_anchors": [
+      "14"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor taking money out of, or closing, the company",
+    "need_type": "number",
+    "working_title": "What s.455 costs and when you get it back",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "s455 tax calculator",
+    "monthly_demand": 20,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: 20 a month, below the 100 floor",
+    "word_band": "n/a, new calculator",
+    "calculator": "MISSING: s455 director loan calculator",
+    "hp_anchors": [
+      "14"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor taking money out of, or closing, the company",
+    "need_type": "decision",
+    "working_title": "BADR on the final distribution: the rate from April 2026",
+    "status": "PARTIAL",
+    "existing_page": "/blog/limited-company-tax/closing-contractor-limited-company",
+    "pool_row_id": null,
+    "target_query": "badr contractor company",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "15",
+      "14"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "segment_page",
+    "working_title": "Accountants for IT contractors",
+    "status": "PARTIAL",
+    "existing_page": "/for/it-contractors",
+    "pool_row_id": null,
+    "target_query": "accountant for it contractors",
+    "monthly_demand": 50,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 3: 50 a month, below the 100 floor",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8",
+      "17"
+    ],
+    "wave": 1
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "segment_page",
+    "working_title": "Accountants for engineering contractors",
+    "status": "COVERED",
+    "existing_page": "/for/engineering-contractors",
+    "pool_row_id": null,
+    "target_query": "contractor accountant for engineers",
+    "monthly_demand": 0,
+    "peer_ranks": true,
+    "eligibility_rule_failed": "rule 1: we already rank 1st on this query and hold 54 GSC impressions at position 19.1 on 'engineering contractor accountants'",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "segment_page",
+    "working_title": "Accountants for legal contractors",
+    "status": "COVERED",
+    "existing_page": "/for/legal-contractors",
+    "pool_row_id": null,
+    "target_query": "accountants for legal contractors",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 1: 5 GSC impressions at position 19.8 in 90 days",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "segment_page",
+    "working_title": "Accountants for locum doctors",
+    "status": "COVERED",
+    "existing_page": "/for/nhs-locum-doctors",
+    "pool_row_id": null,
+    "target_query": "accountant for locum doctors",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "segment_page",
+    "working_title": "Accountants for oil and gas contractors",
+    "status": "COVERED",
+    "existing_page": "/for/oil-gas-contractors",
+    "pool_row_id": null,
+    "target_query": "accountants for oil & gas contractors",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 1: 14 GSC impressions at position 16.4 in 90 days",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "segment_page",
+    "working_title": "Accountants for management consultants",
+    "status": "COVERED",
+    "existing_page": "/for/management-consultants",
+    "pool_row_id": null,
+    "target_query": "accountant for management consultants",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "segment_page",
+    "working_title": "Accountants for architects and surveyors",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "accountants for architects and surveyors",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured: 1 GSC impression at position 6 in 90 days, no volume pulled",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "8"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor in a named profession looking for a specialist",
+    "need_type": "question",
+    "working_title": "Why the profession changes the IR35 picture but not the tax",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "ir35 by profession",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "2"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor with an overseas client, or a client too small for Chapter 10",
+    "need_type": "decision",
+    "working_title": "Small or overseas client: you determine your own status",
+    "status": "COVERED",
+    "existing_page": "/blog/ir35-status/ir35-small-company-exemption",
+    "pool_row_id": null,
+    "target_query": "ir35 small company exemption",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "1.A"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor with an overseas client, or a client too small for Chapter 10",
+    "need_type": "question",
+    "working_title": "Chapter 8 deemed payment: the 5% allowance you still get",
+    "status": "COVERED",
+    "existing_page": "/blog/ir35-status/deemed-employment-payment-explained",
+    "pool_row_id": null,
+    "target_query": "deemed employment payment",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 1: this is the site's largest blog entry surface, 18 UK humans in 90 days",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "4"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor with an overseas client, or a client too small for Chapter 10",
+    "need_type": "question",
+    "working_title": "Invoicing an overseas client: VAT, place of supply and IR35",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "overseas client ir35",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1",
+      "1.A",
+      "9"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor with an overseas client, or a client too small for Chapter 10",
+    "need_type": "segment_page",
+    "working_title": "For contractors working for overseas clients",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "non uk client contractor tax",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "1.A",
+      "9"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor under HMRC enquiry, or worried about one",
+    "need_type": "decision",
+    "working_title": "IR35 enquiry: what happens and what it can cost",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "ir35 investigation help",
+    "monthly_demand": 0,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 3: measured volume 0",
+    "word_band": "1,200-1,600",
+    "calculator": null,
+    "hp_anchors": [
+      "3",
+      "4.A",
+      "17"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor under HMRC enquiry, or worried about one",
+    "need_type": "question",
+    "working_title": "The off-payroll offset: why the post-2024 bill is smaller",
+    "status": "COVERED",
+    "existing_page": "/blog/ir35-status/fee-payer-liability-ir35",
+    "pool_row_id": null,
+    "target_query": "off payroll set off",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "4.A",
+      "3"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor under HMRC enquiry, or worried about one",
+    "need_type": "decision",
+    "working_title": "IR35 insurance: what the policies cover and what they do not",
+    "status": "MISSING",
+    "existing_page": null,
+    "pool_row_id": null,
+    "target_query": "ir35 insurance",
+    "monthly_demand": 390,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "rule 2: no peer SERP pulled for this query, so the peer test is unproven",
+    "word_band": "800-1,200",
+    "calculator": null,
+    "hp_anchors": [
+      "17",
+      "2"
+    ],
+    "wave": "later"
+  },
+  {
+    "situation": "Contractor under HMRC enquiry, or worried about one",
+    "need_type": "proof",
+    "working_title": "What HMRC's published IR35 compliance activity shows",
+    "status": "PARTIAL",
+    "existing_page": "/research/uk-contractor-index",
+    "pool_row_id": null,
+    "target_query": "hmrc ir35 enquiries",
+    "monthly_demand": null,
+    "peer_ranks": "unchecked",
+    "eligibility_rule_failed": "not measured",
+    "word_band": "1,200-1,600",
+    "calculator": null,
+    "hp_anchors": [
+      "3",
+      "17"
+    ],
+    "wave": "later"
+  }
+]

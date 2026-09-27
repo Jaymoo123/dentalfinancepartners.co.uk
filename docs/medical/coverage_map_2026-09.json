@@ -1,0 +1,1606 @@
+[
+ {
+  "situation": "Salaried GP picking up locum or ad hoc self-employed work",
+  "need_type": "segment_page",
+  "working_title": "Accountants for salaried GPs",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "accountants for salaried gps",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§1",
+   "§2.C",
+   "§8"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Doctor planning retirement, partial retirement or retire and return",
+  "need_type": "segment_page",
+  "working_title": "Accountants for doctors approaching retirement",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "nhs pension retirement advice doctors",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.E",
+   "§2.B",
+   "§4"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Salaried GP or registrar becoming a GP partner",
+  "need_type": "segment_page",
+  "working_title": "Accountants for GP partners",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "accountants for gp partners",
+  "monthly_demand": null,
+  "peer_ranks": false,
+  "eligibility_rule_failed": "rule 2: no specialist peer in the Google top 20 for this exact phrase; peers rank on the adjacent terms",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§3",
+   "§4"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Doctor running a medical limited company, deciding how to take the money",
+  "need_type": "segment_page",
+  "working_title": "Accountants for doctors with a limited company",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "accountant for doctors limited company",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§5",
+   "§19",
+   "§20"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Buyer choosing a medical accountant (the assistant prompt itself)",
+  "need_type": "segment_page",
+  "working_title": "Accountants for NHS doctors and GP partners",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "accountants for nhs doctors",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: site already earns Google impressions on this term (position 40 to 70), so NETNEW says EXTEND not new; programme A3 mandates the page anyway; rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§1",
+   "§3"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "NHS consultant with a substantive post starting or growing private practice",
+  "need_type": "decision",
+  "working_title": "Private practice as a sole trader or through a limited company: how to choose",
+  "status": "PARTIAL",
+  "existing_page": "/blog/medical-practice-incorporation-step-by-step",
+  "pool_row_id": null,
+  "target_query": "private practice sole trader or limited company",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "1200-1600",
+  "calculator": "incorporation-calculator",
+  "hp_anchors": [
+   "§5",
+   "§5.A",
+   "§2.C",
+   "§20"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Salaried GP picking up locum or ad hoc self-employed work",
+  "need_type": "decision",
+  "working_title": "Taking locum work as a salaried GP: register, tax, and whether a company is worth it",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "salaried gp locum work tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": "locum-tax-calculator",
+  "hp_anchors": [
+   "§1",
+   "§1.A",
+   "§2.C"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Clinician facing an NHS pension annual allowance charge",
+  "need_type": "decision",
+  "working_title": "Pay the annual allowance charge yourself or use Scheme Pays",
+  "status": "PARTIAL",
+  "existing_page": "/blog/nhs-pension-scheme-pays-doctors-deadlines",
+  "pool_row_id": null,
+  "target_query": "scheme pays",
+  "monthly_demand": 140,
+  "peer_ranks": true,
+  "eligibility_rule_failed": null,
+  "word_band": "800-1200",
+  "calculator": "nhs-pension-scheme-pays",
+  "hp_anchors": [
+   "§2.B",
+   "§2.D"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Doctor planning retirement, partial retirement or retire and return",
+  "need_type": "decision",
+  "working_title": "Partial retirement, retire and return, or 24-hour retirement: how the three compare",
+  "status": "PARTIAL",
+  "existing_page": "/blog/nhs-pension-partial-retirement-doctors-guide",
+  "pool_row_id": null,
+  "target_query": "retire and return nhs",
+  "monthly_demand": 880,
+  "peer_ranks": false,
+  "eligibility_rule_failed": "rule 2: no specialist peer in the Google top 20; the SERP is NHS, union and forum pages",
+  "word_band": "1200-1600",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.E",
+   "§2.B"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Resident (junior) doctor filing a first return or claiming employment expenses",
+  "need_type": "decision",
+  "working_title": "Doing your own expenses claim or using a repayment agent",
+  "status": "PARTIAL",
+  "existing_page": "/blog/nhs-uniform-tax-relief-laundry-allowance",
+  "pool_row_id": null,
+  "target_query": "doctors tax rebate",
+  "monthly_demand": 30,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§11.A",
+   "§11"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Doctor facing an HMRC enquiry, a penalty or an unprompted disclosure",
+  "need_type": "decision",
+  "working_title": "Undeclared private or locum income: the Digital Disclosure Service route",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "voluntary disclosure hmrc tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "1200-1600",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§9"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Doctor running a medical limited company, deciding how to take the money",
+  "need_type": "decision",
+  "working_title": "Closing a medical company: striking off, MVL and the phoenix TAAR",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "closing a limited company doctor",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "1200-1600",
+  "calculator": null,
+  "hp_anchors": [
+   "§16",
+   "§4"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Doctor working abroad, arriving in the UK, or returning",
+  "need_type": "decision",
+  "working_title": "Returning to the UK: residence, split year and what to file",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "returning to uk doctor tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "1200-1600",
+  "calculator": null,
+  "hp_anchors": [
+   "§8"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Doctor or practice with VAT-liable private income",
+  "need_type": "decision",
+  "working_title": "When private medical work becomes VAT registrable",
+  "status": "PARTIAL",
+  "existing_page": "/blog/gp-vat-registration",
+  "pool_row_id": null,
+  "target_query": "vat on private medical services",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§6",
+   "§6.A"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Salaried GP picking up locum or ad hoc self-employed work",
+  "need_type": "question",
+  "working_title": "How to tell HMRC you have started locum work",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "register as self employed locum doctor",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§9"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "NHS consultant with a substantive post starting or growing private practice",
+  "need_type": "question",
+  "working_title": "Your first self assessment as a consultant: what to register for, when, and payments on account",
+  "status": "PARTIAL",
+  "existing_page": "/blog/accountant-self-assessment",
+  "pool_row_id": null,
+  "target_query": "first tax return doctor",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§9"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "NHS consultant with a substantive post starting or growing private practice",
+  "need_type": "question",
+  "working_title": "What a consultant can claim against private practice income",
+  "status": "PARTIAL",
+  "existing_page": "/blog/medical-professional-expenses-what-is-claimable",
+  "pool_row_id": null,
+  "target_query": "private practice expenses doctors",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": "doctor-expenses-tax-relief",
+  "hp_anchors": [
+   "§8",
+   "§11",
+   "§12"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "NHS consultant with a substantive post starting or growing private practice",
+  "need_type": "question",
+  "working_title": "Indemnity subscriptions, practising privileges and professional fees: what is deductible",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "medical indemnity tax deductible",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§12",
+   "§8"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "NHS consultant with a substantive post starting or growing private practice",
+  "need_type": "proof",
+  "working_title": "Private practice fee and tax burden index",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "private practice tax data uk",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Salaried GP picking up locum or ad hoc self-employed work",
+  "need_type": "number",
+  "working_title": "Salaried GP take-home with locum income on top",
+  "status": "PARTIAL",
+  "existing_page": "/calculators/salaried-doctor-take-home",
+  "pool_row_id": null,
+  "target_query": "doctor take home pay calculator",
+  "monthly_demand": 30,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": "salaried-doctor-take-home",
+  "hp_anchors": [
+   "§8"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor setting up a limited company for locum or agency work",
+  "need_type": "question",
+  "working_title": "Locuming at your own practice: the inside-IR35 trap",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "locum in own practice ir35",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§1.A",
+   "§1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Clinician facing an NHS pension annual allowance charge",
+  "need_type": "segment_page",
+  "working_title": "Accountants for doctors with an annual allowance problem",
+  "status": "PARTIAL",
+  "existing_page": "/nhs-pension",
+  "pool_row_id": null,
+  "target_query": "nhs pension annual allowance",
+  "monthly_demand": 110,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 1: site already earns Google impressions on this term (position 40 to 70), so NETNEW says EXTEND not new; programme A3 mandates the page anyway",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.B",
+   "§2.D"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Clinician facing an NHS pension annual allowance charge",
+  "need_type": "question",
+  "working_title": "Reading your pension input amount and Total Reward Statement",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "pension input amount nhs",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.B",
+   "§2.C"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Clinician facing an NHS pension annual allowance charge",
+  "need_type": "question",
+  "working_title": "Carry forward: using three years of unused annual allowance",
+  "status": "PARTIAL",
+  "existing_page": "/blog/nhs-pension-annual-allowance-complete-guide",
+  "pool_row_id": null,
+  "target_query": "annual allowance carry forward nhs",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.B"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Clinician facing an NHS pension annual allowance charge",
+  "need_type": "question",
+  "working_title": "Can you reduce contributions to stay under the allowance",
+  "status": "PARTIAL",
+  "existing_page": "/blog/nhs-pension-tax-charges-how-to-minimize",
+  "pool_row_id": null,
+  "target_query": "reduce nhs pension contributions annual allowance",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.B",
+   "§14"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor planning retirement, partial retirement or retire and return",
+  "need_type": "question",
+  "working_title": "Tax on the NHS pension lump sum",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "nhs pension lump sum tax",
+  "monthly_demand": 40,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.E",
+   "§17"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor planning retirement, partial retirement or retire and return",
+  "need_type": "question",
+  "working_title": "Abatement: what earnings do to a pension in payment",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "nhs pension abatement",
+  "monthly_demand": 30,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.E"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor planning retirement, partial retirement or retire and return",
+  "need_type": "question",
+  "working_title": "Unused pension funds in the estate for IHT from April 2027",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "pension inheritance tax 2027",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§17",
+   "§18"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor planning retirement, partial retirement or retire and return",
+  "need_type": "number",
+  "working_title": "Partial retirement income and pension modeller",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "partial retirement calculator nhs",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": "new calculator",
+  "hp_anchors": [
+   "§2.E"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Salaried GP or registrar becoming a GP partner",
+  "need_type": "proof",
+  "working_title": "GP partner earnings and drawings index",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "gp partner salary uk data",
+  "monthly_demand": 480,
+  "peer_ranks": true,
+  "eligibility_rule_failed": null,
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§3",
+   "§3.A"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "GP partner running, merging or leaving a practice",
+  "need_type": "question",
+  "working_title": "Partnership incorporation: can a GP practice incorporate at all",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "can a gp practice incorporate",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§3",
+   "§5",
+   "§2.C"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Resident (junior) doctor filing a first return or claiming employment expenses",
+  "need_type": "question",
+  "working_title": "Exam fees, courses and royal college subscriptions: what List 3 allows",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "royal college fees tax relief",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§12",
+   "§11"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Resident (junior) doctor filing a first return or claiming employment expenses",
+  "need_type": "question",
+  "working_title": "Rotational posts: travel, relocation and removal expenses",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "relocation expenses doctors tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§11"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Resident (junior) doctor filing a first return or claiming employment expenses",
+  "need_type": "question",
+  "working_title": "Student loan repayments when you have PAYE and locum income",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "student loan repayment doctors",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor facing an HMRC enquiry, a penalty or an unprompted disclosure",
+  "need_type": "segment_page",
+  "working_title": "Accountants for doctors under an HMRC enquiry",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "hmrc enquiry doctor",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§9"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor facing an HMRC enquiry, a penalty or an unprompted disclosure",
+  "need_type": "question",
+  "working_title": "Late filing and late payment penalties for doctors",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "self assessment penalties",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§20"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor running a medical limited company, deciding how to take the money",
+  "need_type": "question",
+  "working_title": "Corporation tax filing and payment machinery for a small medical company",
+  "status": "PARTIAL",
+  "existing_page": "/blog/gp-corporation-tax",
+  "pool_row_id": null,
+  "target_query": "corporation tax small company deadlines",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§20"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor running a medical limited company, deciding how to take the money",
+  "need_type": "question",
+  "working_title": "Employer pension contributions from the company as an extraction route",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "employer pension contribution limited company director",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§21",
+   "§2.B"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor working abroad, arriving in the UK, or returning",
+  "need_type": "segment_page",
+  "working_title": "Accountants for doctors moving to or returning to the UK",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "overseas doctor uk tax return",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§9"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor working abroad, arriving in the UK, or returning",
+  "need_type": "question",
+  "working_title": "The NHS pension while you are working overseas",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "nhs pension working abroad",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2",
+   "§14"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor on maternity or parental leave with mixed income",
+  "need_type": "question",
+  "working_title": "Pension accrual and contributions during maternity leave",
+  "status": "PARTIAL",
+  "existing_page": "/blog/maternity-pay-and-maternity-allowance-for-doctors",
+  "pool_row_id": null,
+  "target_query": "nhs pension maternity leave",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§13",
+   "§2.C"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor on maternity or parental leave with mixed income",
+  "need_type": "question",
+  "working_title": "Catching up on late returns and missed pension forms after leave",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "late tax return doctor",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§2.C"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor selling a practice or realising goodwill",
+  "need_type": "question",
+  "working_title": "Business relief, the 2.5m allowance and a company holding investments",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "business relief limited company investments",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§15"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor or practice with VAT-liable private income",
+  "need_type": "question",
+  "working_title": "Which private GP and occupational health services are exempt and which are not",
+  "status": "PARTIAL",
+  "existing_page": "/blog/gp-practice-private-non-nhs-income-streams",
+  "pool_row_id": null,
+  "target_query": "private gp services vat",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§6"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor or practice with VAT-liable private income",
+  "need_type": "question",
+  "working_title": "Cosmetic and non-therapeutic treatment: the standard-rated side",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "cosmetic surgery vat",
+  "monthly_demand": 10,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§6"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor with medico-legal, expert-witness or other non-clinical income",
+  "need_type": "question",
+  "working_title": "Teaching, appraisal and media income for a clinician",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "doctor second income tax uk",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Doctor with medico-legal, expert-witness or other non-clinical income",
+  "need_type": "question",
+  "working_title": "Clinical excellence awards and how they are taxed and pensioned",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "clinical excellence awards tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.C",
+   "§8"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Buyer choosing a medical accountant (the assistant prompt itself)",
+  "need_type": "segment_page",
+  "working_title": "City pages, second tier: Glasgow, Edinburgh, Sheffield, Liverpool, Newcastle, Nottingham",
+  "status": "PARTIAL",
+  "existing_page": "/blog/gp-accountant-glasgow",
+  "pool_row_id": null,
+  "target_query": "medical accountant glasgow",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [],
+  "wave": "later"
+ },
+ {
+  "situation": "Allied practice owner (physiotherapist, optician, vet, nurse)",
+  "need_type": "segment_page",
+  "working_title": "Accountants for allied healthcare practices",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "accountants for physiotherapists",
+  "monthly_demand": 10,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "§6"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "NHS consultant with a substantive post starting or growing private practice",
+  "need_type": "segment_page",
+  "working_title": "Accountants for hospital consultants with NHS and private practice income",
+  "status": "COVERED",
+  "existing_page": "/for-consultants",
+  "pool_row_id": null,
+  "target_query": "private practice accountant",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: site already earns Google impressions on this term (position 40 to 70), so NETNEW says EXTEND not new; programme A3 mandates the page anyway; rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§1",
+   "§5",
+   "§2.B"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "NHS consultant with a substantive post starting or growing private practice",
+  "need_type": "number",
+  "working_title": "NHS pay versus private practice take-home",
+  "status": "COVERED",
+  "existing_page": "/calculators/consultant-private-vs-nhs",
+  "pool_row_id": null,
+  "target_query": "consultant take home pay calculator",
+  "monthly_demand": 10,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": "consultant-private-vs-nhs",
+  "hp_anchors": [
+   "§5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Salaried GP picking up locum or ad hoc self-employed work",
+  "need_type": "question",
+  "working_title": "Pensioning locum income: Form A, Form B and the PCSE route",
+  "status": "COVERED",
+  "existing_page": "/blog/nhs-pension-for-locums-form-a-form-b",
+  "pool_row_id": null,
+  "target_query": "nhs pension for locums form a form b",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.C"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor setting up a limited company for locum or agency work",
+  "need_type": "segment_page",
+  "working_title": "Accountants for locum doctors",
+  "status": "COVERED",
+  "existing_page": "/for-locum-doctors",
+  "pool_row_id": null,
+  "target_query": "accountants for locum doctors",
+  "monthly_demand": 50,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: site already earns Google impressions on this term (position 40 to 70), so NETNEW says EXTEND not new; programme A3 mandates the page anyway; rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§1.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor setting up a limited company for locum or agency work",
+  "need_type": "decision",
+  "working_title": "Limited company, umbrella or sole trader for locum work",
+  "status": "COVERED",
+  "existing_page": "/medical-guides/locum-limited-company-vs-umbrella",
+  "pool_row_id": null,
+  "target_query": "locum doctor limited company",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": "locum-tax-calculator",
+  "hp_anchors": [
+   "§1.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor setting up a limited company for locum or agency work",
+  "need_type": "question",
+  "working_title": "IR35 and off-payroll for locum doctors",
+  "status": "COVERED",
+  "existing_page": "/medical-guides/ir35-for-locums",
+  "pool_row_id": null,
+  "target_query": "locum doctor ir35",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§1.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor setting up a limited company for locum or agency work",
+  "need_type": "question",
+  "working_title": "The 2026 umbrella company reforms and joint and several liability",
+  "status": "COVERED",
+  "existing_page": "/blog/locum-doctor-umbrella-company-2026-reforms",
+  "pool_row_id": null,
+  "target_query": "locum umbrella company 2026",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§1.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Clinician facing an NHS pension annual allowance charge",
+  "need_type": "number",
+  "working_title": "Tapered annual allowance and Scheme Pays calculators",
+  "status": "COVERED",
+  "existing_page": "/calculators/nhs-pension-scheme-pays",
+  "pool_row_id": null,
+  "target_query": "nhs pension tax charge calculator",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": "nhs-pension-scheme-pays",
+  "hp_anchors": [
+   "§2.B",
+   "§2.D"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Clinician facing an NHS pension annual allowance charge",
+  "need_type": "proof",
+  "working_title": "Annual allowance and lifetime allowance pension tax index",
+  "status": "COVERED",
+  "existing_page": "/research/annual-allowance-pension-tax-index",
+  "pool_row_id": null,
+  "target_query": "nhs annual allowance charges data",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§2.B"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Salaried GP or registrar becoming a GP partner",
+  "need_type": "decision",
+  "working_title": "Salaried GP or partner: the money, the risk and the tax",
+  "status": "COVERED",
+  "existing_page": "/blog/gp-partner-vs-salaried-gp-tax-comparison",
+  "pool_row_id": null,
+  "target_query": "gp partner vs salaried gp",
+  "monthly_demand": 20,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": "salaried-gp-vs-partner",
+  "hp_anchors": [
+   "§3",
+   "§8"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Salaried GP or registrar becoming a GP partner",
+  "need_type": "question",
+  "working_title": "What buying into a partnership costs and how it is financed",
+  "status": "COVERED",
+  "existing_page": "/blog/financing-gp-partnership-buy-in-tax-relief",
+  "pool_row_id": null,
+  "target_query": "buying into a gp partnership",
+  "monthly_demand": 10,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§4",
+   "§8"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Salaried GP or registrar becoming a GP partner",
+  "need_type": "question",
+  "working_title": "The mutual assessment period: what to check before you sign",
+  "status": "COVERED",
+  "existing_page": "/blog/gp-partnership-mutual-assessment-period-what-to-check",
+  "pool_row_id": null,
+  "target_query": "gp partnership mutual assessment period",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§3",
+   "§4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Salaried GP or registrar becoming a GP partner",
+  "need_type": "question",
+  "working_title": "Last man standing and the premises risk",
+  "status": "COVERED",
+  "existing_page": "/blog/gp-partnership-last-man-standing-premises-risk",
+  "pool_row_id": null,
+  "target_query": "last man standing gp partnership",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Salaried GP or registrar becoming a GP partner",
+  "need_type": "number",
+  "working_title": "GP partner drawings planner",
+  "status": "COVERED",
+  "existing_page": "/calculators/gp-partner-drawings-planner",
+  "pool_row_id": null,
+  "target_query": "gp partner take home pay",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": "gp-partner-drawings-planner",
+  "hp_anchors": [
+   "§3"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "GP partner running, merging or leaving a practice",
+  "need_type": "segment_page",
+  "working_title": "Accountants for GP practices and partnerships",
+  "status": "COVERED",
+  "existing_page": "/for-gps",
+  "pool_row_id": null,
+  "target_query": "gp practice accountants",
+  "monthly_demand": 50,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: site already earns Google impressions on this term (position 40 to 70), so NETNEW says EXTEND not new; programme A3 mandates the page anyway; rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§3"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "GP partner running, merging or leaving a practice",
+  "need_type": "decision",
+  "working_title": "Retiring or leaving a partnership: capital account, cessation and tax",
+  "status": "COVERED",
+  "existing_page": "/blog/retiring-from-gp-partnership-tax-capital-account",
+  "pool_row_id": null,
+  "target_query": "leaving a gp partnership tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§3",
+   "§4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "GP partner running, merging or leaving a practice",
+  "need_type": "question",
+  "working_title": "Reading a set of partnership accounts",
+  "status": "COVERED",
+  "existing_page": "/blog/reading-gp-partnership-accounts-current-capital-accounts",
+  "pool_row_id": null,
+  "target_query": "gp partnership accounts",
+  "monthly_demand": 10,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§3"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "GP partner running, merging or leaving a practice",
+  "need_type": "question",
+  "working_title": "Reconciling PCSE statements to practice income",
+  "status": "COVERED",
+  "existing_page": "/blog/gp-practice-income-pcse-statement-reconciliation",
+  "pool_row_id": null,
+  "target_query": "pcse statement explained",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§3.A",
+   "§3.B"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "GP partner running, merging or leaving a practice",
+  "need_type": "question",
+  "working_title": "Owning versus renting the surgery: SDLT, capital allowances and CGT",
+  "status": "COVERED",
+  "existing_page": "/blog/gp-surgery-premises-own-vs-rent-tax-guide",
+  "pool_row_id": null,
+  "target_query": "gp surgery premises tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§4",
+   "§7",
+   "§7.B"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "GP partner running, merging or leaving a practice",
+  "need_type": "question",
+  "working_title": "Employment Allowance and a GP practice: normally no",
+  "status": "COVERED",
+  "existing_page": "/blog/gp-payroll-services",
+  "pool_row_id": null,
+  "target_query": "employment allowance gp practice",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§8.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Resident (junior) doctor filing a first return or claiming employment expenses",
+  "need_type": "segment_page",
+  "working_title": "Accountants for junior and resident doctors",
+  "status": "COVERED",
+  "existing_page": "/for-junior-doctors",
+  "pool_row_id": null,
+  "target_query": "accountants for junior doctors",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§8",
+   "§11",
+   "§12"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Resident (junior) doctor filing a first return or claiming employment expenses",
+  "need_type": "number",
+  "working_title": "Doctor expenses tax relief calculator",
+  "status": "COVERED",
+  "existing_page": "/calculators/doctor-expenses-tax-relief",
+  "pool_row_id": null,
+  "target_query": "doctor expenses calculator",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": "doctor-expenses-tax-relief",
+  "hp_anchors": [
+   "§11",
+   "§12"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor running a medical limited company, deciding how to take the money",
+  "need_type": "decision",
+  "working_title": "Salary or dividends from a medical company in 2026/27",
+  "status": "COVERED",
+  "existing_page": "/blog/salary-vs-dividend-medical-limited-company-2026",
+  "pool_row_id": null,
+  "target_query": "salary vs dividend doctor limited company",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": "incorporation-calculator",
+  "hp_anchors": [
+   "§5",
+   "§5.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor running a medical limited company, deciding how to take the money",
+  "need_type": "decision",
+  "working_title": "What to do with retained profit: keep, extract or pension it",
+  "status": "COVERED",
+  "existing_page": "/blog/surplus-cash-medical-limited-company-options",
+  "pool_row_id": null,
+  "target_query": "retained profit limited company doctor",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§15",
+   "§21",
+   "§19"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor running a medical limited company, deciding how to take the money",
+  "need_type": "question",
+  "working_title": "The director's loan account, s.455 and s.458",
+  "status": "COVERED",
+  "existing_page": "/blog/consultant-directors-loan-account-s455-medical-company",
+  "pool_row_id": null,
+  "target_query": "directors loan account doctor",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§5",
+   "§5.C"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor on maternity or parental leave with mixed income",
+  "need_type": "decision",
+  "working_title": "Maternity pay, Maternity Allowance and the self-employed side",
+  "status": "COVERED",
+  "existing_page": "/blog/maternity-pay-and-maternity-allowance-for-doctors",
+  "pool_row_id": null,
+  "target_query": "doctor maternity leave tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§13"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor selling a practice or realising goodwill",
+  "need_type": "decision",
+  "working_title": "Selling a private medical practice: CGT and BADR at the 2026 rates",
+  "status": "COVERED",
+  "existing_page": "/blog/selling-private-medical-practice-cgt-badr",
+  "pool_row_id": null,
+  "target_query": "selling private medical practice",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§4",
+   "§4.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor selling a practice or realising goodwill",
+  "need_type": "question",
+  "working_title": "Whether GP practice goodwill can be sold at all",
+  "status": "COVERED",
+  "existing_page": "/blog/can-gp-practice-goodwill-be-sold-nhs-rules",
+  "pool_row_id": null,
+  "target_query": "gp practice goodwill",
+  "monthly_demand": 0,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor or practice with VAT-liable private income",
+  "need_type": "question",
+  "working_title": "Dispensing practice drug VAT",
+  "status": "COVERED",
+  "existing_page": "/blog/dispensing-practice-income-accounts-tax",
+  "pool_row_id": null,
+  "target_query": "dispensing practice vat",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§6.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Doctor with medico-legal, expert-witness or other non-clinical income",
+  "need_type": "decision",
+  "working_title": "Medico-legal and expert-witness income: tax, VAT and structure",
+  "status": "COVERED",
+  "existing_page": "/blog/medico-legal-expert-witness-income-doctors-tax",
+  "pool_row_id": null,
+  "target_query": "medico legal expert witness tax",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§6",
+   "§5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Buyer choosing a medical accountant (the assistant prompt itself)",
+  "need_type": "question",
+  "working_title": "What a medical accountant does and how to choose one",
+  "status": "COVERED",
+  "existing_page": "/blog/healthcare-accountants-uk",
+  "pool_row_id": null,
+  "target_query": "how to choose a medical accountant",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Buyer choosing a medical accountant (the assistant prompt itself)",
+  "need_type": "question",
+  "working_title": "What a specialist costs and what drives the fee",
+  "status": "COVERED",
+  "existing_page": "/blog/gp-accountant-cost",
+  "pool_row_id": null,
+  "target_query": "gp accountant cost",
+  "monthly_demand": null,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Buyer choosing a medical accountant (the assistant prompt itself)",
+  "need_type": "segment_page",
+  "working_title": "City pages: London, Manchester, Birmingham, Leeds, Bristol",
+  "status": "COVERED",
+  "existing_page": "/locations",
+  "pool_row_id": null,
+  "target_query": "medical accountant near me",
+  "monthly_demand": 50,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: site already earns Google impressions on this term (position 40 to 70), so NETNEW says EXTEND not new; programme A3 mandates the page anyway; rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Allied practice owner (physiotherapist, optician, vet, nurse)",
+  "need_type": "question",
+  "working_title": "The VAT register test for physiotherapists and therapists",
+  "status": "COVERED",
+  "existing_page": "/blog/accountants-for-physiotherapists-and-therapists",
+  "pool_row_id": null,
+  "target_query": "accountants for physiotherapists",
+  "monthly_demand": 10,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§6"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Allied practice owner (physiotherapist, optician, vet, nurse)",
+  "need_type": "question",
+  "working_title": "VAT apportionment for optical practices",
+  "status": "COVERED",
+  "existing_page": "/blog/accountants-for-opticians-optical-practice-vat",
+  "pool_row_id": null,
+  "target_query": "accountants for opticians",
+  "monthly_demand": 20,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§6"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Allied practice owner (physiotherapist, optician, vet, nurse)",
+  "need_type": "question",
+  "working_title": "Veterinary practice tax, sale and goodwill",
+  "status": "COVERED",
+  "existing_page": "/blog/accountants-for-vets-veterinary-practice-tax",
+  "pool_row_id": null,
+  "target_query": "accountants for vets",
+  "monthly_demand": 30,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": "rule 3: measured demand below the 100/month band",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Allied practice owner (physiotherapist, optician, vet, nurse)",
+  "need_type": "question",
+  "working_title": "Tax relief for nurses and how employment status changes it",
+  "status": "COVERED",
+  "existing_page": "/blog/nurse-tax-relief-professional-subscriptions",
+  "pool_row_id": null,
+  "target_query": "tax relief for nurses",
+  "monthly_demand": 90,
+  "peer_ranks": "unchecked",
+  "eligibility_rule_failed": null,
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "§12",
+   "§11"
+  ],
+  "wave": "not_eligible"
+ }
+]

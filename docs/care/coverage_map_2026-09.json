@@ -1,0 +1,1346 @@
+[
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "segment_page",
+  "working_title": "Accountants for first-time care home registrations",
+  "status": "COVERED",
+  "existing_page": "/for/care-startups",
+  "pool_row_id": null,
+  "target_query": "care home accountant",
+  "monthly_demand": 90,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP21",
+   "HP22"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "decision",
+  "working_title": "Sole trader, partnership or limited company before you apply to CQC",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "a690839a-54d0-4b2e-8149-bb3daa363be2",
+  "target_query": "cqc registration for new providers",
+  "monthly_demand": 90,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP18",
+   "HP21",
+   "HP28"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "question",
+  "working_title": "How much CQC registration costs in 2026-27",
+  "status": "PARTIAL",
+  "existing_page": "/blog/cqc-and-financial-compliance/cqc-registration-costs-and-finance-guide",
+  "pool_row_id": null,
+  "target_query": "how much does cqc registration cost",
+  "monthly_demand": 140,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject",
+  "word_band": "800-1200",
+  "calculator": "/calculators/cqc-fee-calculator",
+  "hp_anchors": [
+   "HP21"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "question",
+  "working_title": "How long CQC registration takes and what waiting costs you",
+  "status": "COVERED",
+  "existing_page": "/blog/cqc-and-financial-compliance/cqc-registration-timeline-cash-burn-before-trading",
+  "pool_row_id": "a6b77378-a398-468f-88b3-9e5a8929cf98",
+  "target_query": "how long does cqc registration take",
+  "monthly_demand": 110,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP21",
+   "HP22"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "number",
+  "working_title": "CQC fee calculator",
+  "status": "COVERED",
+  "existing_page": "/calculators/cqc-fee-calculator",
+  "pool_row_id": null,
+  "target_query": "cqc registration fees",
+  "monthly_demand": 110,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": "/calculators/cqc-fee-calculator",
+  "hp_anchors": [
+   "HP21"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "proof",
+  "working_title": "The financial viability statement, walked through",
+  "status": "COVERED",
+  "existing_page": "/blog/cqc-and-financial-compliance/cqc-financial-viability-statement-walkthrough",
+  "pool_row_id": null,
+  "target_query": "cqc financial viability statement",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP22"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "question",
+  "working_title": "What CQC accepts as evidence of financial viability",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "cqc statement of financial viability",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP22"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "number",
+  "working_title": "A 24-month opening cash-flow forecast for a CQC application",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "db8b1ee3-f885-4a28-bbdc-648d5c934c45",
+  "target_query": "cqc registration business plan",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "new: 24-month registration cash-flow model",
+  "hp_anchors": [
+   "HP21",
+   "HP22",
+   "HP11",
+   "HP12"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "First-time care home operator going through CQC registration",
+  "need_type": "question",
+  "working_title": "The SIC code to use when you incorporate a care business",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "care home sic code",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP29"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "segment_page",
+  "working_title": "Accountants for new domiciliary care agencies",
+  "status": "COVERED",
+  "existing_page": "/services/start-a-domiciliary-care-agency",
+  "pool_row_id": null,
+  "target_query": "domiciliary care accountants",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP5",
+   "HP6",
+   "HP9"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "decision",
+  "working_title": "How to start a domiciliary care agency: the money decisions in order",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "how to start a domiciliary care agency",
+  "monthly_demand": 50,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP3",
+   "HP21",
+   "HP22"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "question",
+  "working_title": "What it costs to set up a care agency before the first invoice",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "how to set up a care agency",
+  "monthly_demand": 70,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "/calculators/cqc-fee-calculator",
+  "hp_anchors": [
+   "HP21",
+   "HP11",
+   "HP12"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "question",
+  "working_title": "CQC registration for domiciliary care: the finance side",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "7ee8bcee-e6e4-44c6-8ad9-75e18a999b4c",
+  "target_query": "cqc registration domiciliary care",
+  "monthly_demand": 90,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP21",
+   "HP22"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "number",
+  "working_title": "What one care hour actually costs you",
+  "status": "COVERED",
+  "existing_page": "/calculators/true-cost-care-hour-calculator",
+  "pool_row_id": null,
+  "target_query": "true cost of a care hour",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": "/calculators/true-cost-care-hour-calculator",
+  "hp_anchors": [
+   "HP5",
+   "HP6",
+   "HP7",
+   "HP10",
+   "HP11"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "number",
+  "working_title": "The margin on a domiciliary care agency, modelled",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "5b5cf997-42ae-45a2-9b71-d8960943e834",
+  "target_query": "domiciliary care agency profit margin",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "/calculators/true-cost-care-hour-calculator",
+  "hp_anchors": [
+   "HP5",
+   "HP6",
+   "HP7",
+   "HP11",
+   "HP12"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "decision",
+  "working_title": "Do you charge VAT on domiciliary care",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "1e4efc7a-f02e-40db-99b6-b59473e810ca",
+  "target_query": "is domiciliary care vat exempt",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP3",
+   "HP4"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Founder starting a domiciliary care agency",
+  "need_type": "proof",
+  "working_title": "How many domiciliary agencies register, and how many last",
+  "status": "COVERED",
+  "existing_page": "/research/uk-care-business-survival-index",
+  "pool_row_id": null,
+  "target_query": "care business survival rate uk",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP29",
+   "HP30"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Supported living or supported accommodation operator on a local authority framework",
+  "need_type": "segment_page",
+  "working_title": "Accountants for supported living providers",
+  "status": "COVERED",
+  "existing_page": "/for/supported-living",
+  "pool_row_id": null,
+  "target_query": "supported living accountants",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP26"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Supported living or supported accommodation operator on a local authority framework",
+  "need_type": "decision",
+  "working_title": "Supported accommodation that is not personal care: who registers you and what changes for tax",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "04af012e-bf07-47c9-8f54-e4aa3ee2287a",
+  "target_query": "supported accommodation ofsted registration",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP21"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Supported living or supported accommodation operator on a local authority framework",
+  "need_type": "number",
+  "working_title": "A lender-ready 24 to 36 month forecast for a supported living contract",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "942ca4c9-6d79-4f50-8f29-fdd6d972ddb6",
+  "target_query": "supported living business plan",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "new: 36-month contract forecast model",
+  "hp_anchors": [
+   "HP11",
+   "HP12",
+   "HP18",
+   "HP26"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Supported living or supported accommodation operator on a local authority framework",
+  "need_type": "decision",
+  "working_title": "How to structure a supported living company before bidding for a framework place",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "9eb888dc-8dc8-4b48-9ee4-8bde494590fa",
+  "target_query": "how to start a supported living business",
+  "monthly_demand": 50,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP18",
+   "HP26",
+   "HP28"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Supported living or supported accommodation operator on a local authority framework",
+  "need_type": "question",
+  "working_title": "Is supported living rent VAT exempt, and what about the support element",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "supported living vat treatment",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP3",
+   "HP4"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Supported living or supported accommodation operator on a local authority framework",
+  "need_type": "question",
+  "working_title": "Preparing for a local authority fee review",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "8008b560-bed4-4fcd-8a5a-19129d759c38",
+  "target_query": "local authority fee review supported living",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP26"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Children's home operator registering with Ofsted",
+  "need_type": "segment_page",
+  "working_title": "Accountants for children's homes",
+  "status": "COVERED",
+  "existing_page": "/for/childrens-homes",
+  "pool_row_id": null,
+  "target_query": "childrens home accountant",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP21"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Children's home operator registering with Ofsted",
+  "need_type": "question",
+  "working_title": "Ofsted or CQC: how the money and paperwork differ",
+  "status": "COVERED",
+  "existing_page": "/blog/cqc-and-financial-compliance/ofsted-vs-cqc-money-paperwork",
+  "pool_row_id": "b282850b-9efc-4ca6-8b9a-830f23d49a39",
+  "target_query": "ofsted vs cqc registration",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP21"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Children's home operator registering with Ofsted",
+  "need_type": "decision",
+  "working_title": "Opening a children's home: the finance decisions Ofsted will test",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "9beb959b-ead1-409f-a19f-5ccfa6e65649",
+  "target_query": "how to start a childrens home",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP18",
+   "HP21"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Children's home operator registering with Ofsted",
+  "need_type": "number",
+  "working_title": "Cash-flow forecast for an Ofsted children's home application",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "92d0cd1e-7ed6-4ad0-8d1a-5fabb3b6b579",
+  "target_query": "childrens home cashflow forecast",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "new: 24-month registration cash-flow model",
+  "hp_anchors": [
+   "HP11",
+   "HP12",
+   "HP18"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Children's home operator registering with Ofsted",
+  "need_type": "question",
+  "working_title": "Local authority placement fees and how to account for them",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "36cb2d9f-da03-47ef-b7ad-3a1276b243a6",
+  "target_query": "childrens home placement fee accounting",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP26"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Children's home operator registering with Ofsted",
+  "need_type": "decision",
+  "working_title": "Buying an existing children's home",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "01c3f20f-f25f-489d-91a0-a2f26de88d20",
+  "target_query": "buying a childrens home business",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP15",
+   "HP16",
+   "HP17",
+   "HP19"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Solo personal assistant or support worker trading through a limited company",
+  "need_type": "segment_page",
+  "working_title": "Accountants for self-employed carers and personal assistants",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "personal assistant care limited company",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP3",
+   "HP9",
+   "HP18",
+   "HP28"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Solo personal assistant or support worker trading through a limited company",
+  "need_type": "decision",
+  "working_title": "Does a care personal assistant have to register for VAT",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "vat threshold care services",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP3",
+   "HP4"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Solo personal assistant or support worker trading through a limited company",
+  "need_type": "question",
+  "working_title": "Sole trader or limited company as a care PA",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "support worker limited company",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP18",
+   "HP28"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Solo personal assistant or support worker trading through a limited company",
+  "need_type": "question",
+  "working_title": "Self-employed or worker: the status test for carers",
+  "status": "PARTIAL",
+  "existing_page": "/for/domiciliary-care",
+  "pool_row_id": null,
+  "target_query": "self employed carer employment status",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP9"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Solo personal assistant or support worker trading through a limited company",
+  "need_type": "question",
+  "working_title": "Making Tax Digital for a self-employed carer",
+  "status": "PARTIAL",
+  "existing_page": "/blog/care-home-accounts-and-funding/mtd-it-care-owner-operators",
+  "pool_row_id": null,
+  "target_query": "making tax digital care",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP27"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "segment_page",
+  "working_title": "Bookkeeping and payroll for care providers",
+  "status": "COVERED",
+  "existing_page": "/services/care-payroll",
+  "pool_row_id": null,
+  "target_query": "care home payroll",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP5",
+   "HP6",
+   "HP7",
+   "HP10",
+   "HP11",
+   "HP12"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "number",
+  "working_title": "Sleep-in and travel time NMW checker",
+  "status": "COVERED",
+  "existing_page": "/calculators/sleep-in-shift-nmw-compliance-calculator",
+  "pool_row_id": null,
+  "target_query": "sleep in shift pay",
+  "monthly_demand": 40,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": "/calculators/sleep-in-shift-nmw-compliance-calculator",
+  "hp_anchors": [
+   "HP5",
+   "HP6",
+   "HP7"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "question",
+  "working_title": "Sleep-in pay and travel time under NMW",
+  "status": "COVERED",
+  "existing_page": "/blog/payroll-and-workforce-costs/sleep-in-pay-travel-time-nmw",
+  "pool_row_id": null,
+  "target_query": "sleep in pay care",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP5",
+   "HP6"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "number",
+  "working_title": "Care worker pay rates 2026-27",
+  "status": "COVERED",
+  "existing_page": "/blog/payroll-and-workforce-costs/care-worker-pay-rates-2026-27",
+  "pool_row_id": "b8adbf82-a02a-4d62-a1e0-9ae662000494",
+  "target_query": "care worker pay rates 2026",
+  "monthly_demand": 90,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP7",
+   "HP8",
+   "HP11",
+   "HP12"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "question",
+  "working_title": "Holiday pay for irregular-hours care staff",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "holiday pay irregular hours care workers",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP10"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "decision",
+  "working_title": "Salary or dividends for a care company director",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "care company director salary and dividends",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP11",
+   "HP12",
+   "HP18",
+   "HP28"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "number",
+  "working_title": "Agency staff cost and occupancy voids",
+  "status": "COVERED",
+  "existing_page": "/blog/care-home-accounts-and-funding/agency-staff-cost-control-occupancy",
+  "pool_row_id": null,
+  "target_query": "agency care staff rates",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": "/calculators/care-staffing-cost-margin-calculator",
+  "hp_anchors": [
+   "HP7",
+   "HP11"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "question",
+  "working_title": "Corporation tax for a care company: small profits rate and marginal relief",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "care home corporation tax",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP18"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Established operator wanting bookkeeping, payroll and cost control",
+  "need_type": "question",
+  "working_title": "Business rates for care homes",
+  "status": "COVERED",
+  "existing_page": "/blog/business-structure-and-acquisition/business-rates-care-homes",
+  "pool_row_id": null,
+  "target_query": "do care homes pay business rates",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP20"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Buyer of an existing care home",
+  "need_type": "segment_page",
+  "working_title": "Accountants for care home buyers",
+  "status": "COVERED",
+  "existing_page": "/services/buying-a-care-home",
+  "pool_row_id": "3af18ffe-77d0-4aa4-8ec6-b375c8c48185",
+  "target_query": "buying a care home",
+  "monthly_demand": 320,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP15",
+   "HP16",
+   "HP17"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Buyer of an existing care home",
+  "need_type": "question",
+  "working_title": "Share purchase or asset purchase when you buy a care home",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "b744a29c-fddc-4b26-b3eb-43d7a59edb17",
+  "target_query": "buying a care home share or asset purchase",
+  "monthly_demand": 70,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP15",
+   "HP16",
+   "HP17",
+   "HP19"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Buyer of an existing care home",
+  "need_type": "number",
+  "working_title": "Capital allowances on a care home fit-out",
+  "status": "COVERED",
+  "existing_page": "/blog/business-structure-and-acquisition/capital-allowances-care-home-fit-out",
+  "pool_row_id": "1021690d-a52e-480e-88f5-4062c3089d1f",
+  "target_query": "care home capital allowances",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP15",
+   "HP16",
+   "HP17"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Buyer of an existing care home",
+  "need_type": "question",
+  "working_title": "Financial due diligence on a care home purchase",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "care home due diligence",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP15",
+   "HP18",
+   "HP23",
+   "HP26"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Buyer of an existing care home",
+  "need_type": "question",
+  "working_title": "Raising finance to buy a care home",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "raising finance to buy a care home",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP15",
+   "HP18"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Buyer of an existing care home",
+  "need_type": "proof",
+  "working_title": "Care home bed supply and care deserts",
+  "status": "COVERED",
+  "existing_page": "/blog/care-home-accounts-and-funding/care-home-bed-supply-and-care-deserts",
+  "pool_row_id": null,
+  "target_query": "uk care home bed supply",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP29",
+   "HP30"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner selling or exiting a care business",
+  "need_type": "segment_page",
+  "working_title": "Accountants for care home sellers",
+  "status": "COVERED",
+  "existing_page": "/services/selling-a-care-home",
+  "pool_row_id": "4fc7d397-26bd-47bb-9d88-90e4d82bd462",
+  "target_query": "selling a care home",
+  "monthly_demand": 90,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP19"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner selling or exiting a care business",
+  "need_type": "decision",
+  "working_title": "Business Asset Disposal Relief at 18%: what selling a care business costs from April 2026",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "business asset disposal relief care home",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP19",
+   "HP18"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Owner selling or exiting a care business",
+  "need_type": "number",
+  "working_title": "What a care business is worth: the multiples buyers use",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "care home valuation",
+  "monthly_demand": 30,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP19",
+   "HP23"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Owner selling or exiting a care business",
+  "need_type": "question",
+  "working_title": "Selling a domiciliary care agency: the tax on the deal",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "104ed185-25c0-403d-b2c8-c2ae6d0d6a02",
+  "target_query": "selling a domiciliary care agency tax",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP19"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Nursing home operator managing the FNC, CHC and local authority fee mix",
+  "need_type": "segment_page",
+  "working_title": "Accountants for nursing homes",
+  "status": "PARTIAL",
+  "existing_page": "/for/care-homes",
+  "pool_row_id": null,
+  "target_query": "accountants for nursing homes",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP24",
+   "HP25",
+   "HP26"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Nursing home operator managing the FNC, CHC and local authority fee mix",
+  "need_type": "question",
+  "working_title": "FNC, CHC and local authority fee-mix accounting",
+  "status": "COVERED",
+  "existing_page": "/blog/fees-fnc-and-local-authority-rates/fnc-chc-la-fee-mix-accounting",
+  "pool_row_id": "61a35d3a-04ed-4bc6-a0ba-089c9b0c330d",
+  "target_query": "funded nursing care rate",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": "/calculators/funded-nursing-care-fee-mix-calculator",
+  "hp_anchors": [
+   "HP24",
+   "HP25",
+   "HP26"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Nursing home operator managing the FNC, CHC and local authority fee mix",
+  "need_type": "number",
+  "working_title": "FNC fee-mix calculator",
+  "status": "COVERED",
+  "existing_page": "/calculators/funded-nursing-care-fee-mix-calculator",
+  "pool_row_id": null,
+  "target_query": "fnc rate 2026 27",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": "/calculators/funded-nursing-care-fee-mix-calculator",
+  "hp_anchors": [
+   "HP24"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Nursing home operator managing the FNC, CHC and local authority fee mix",
+  "need_type": "question",
+  "working_title": "NHS continuing healthcare: what changes in your accounts when a resident is CHC funded",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "nhs continuing healthcare funding provider",
+  "monthly_demand": 590,
+  "peer_ranks": true,
+  "eligibility_rule_failed": null,
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP25",
+   "HP1"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Nursing home operator managing the FNC, CHC and local authority fee mix",
+  "need_type": "question",
+  "working_title": "Negotiating a local authority fee uplift with fair cost of care evidence",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "fair cost of care",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP26"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Care group deciding its VAT position",
+  "need_type": "segment_page",
+  "working_title": "Care VAT review",
+  "status": "COVERED",
+  "existing_page": "/services/care-vat-review",
+  "pool_row_id": "1e4efc7a-f02e-40db-99b6-b59473e810ca",
+  "target_query": "care home vat exemption",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 1: we already earn impressions on this subject; rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP2",
+   "HP3",
+   "HP4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Care group deciding its VAT position",
+  "need_type": "question",
+  "working_title": "VAT exemption edge cases for care operators",
+  "status": "COVERED",
+  "existing_page": "/blog/vat-and-welfare-exemption/care-home-vat-exemption-edge-cases",
+  "pool_row_id": null,
+  "target_query": "are care homes vat exempt",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP3",
+   "HP4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Care group deciding its VAT position",
+  "need_type": "decision",
+  "working_title": "VAT grouping in care after Revenue and Customs Brief 2/2025",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "vat grouping care industry hmrc",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP2",
+   "HP1"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Care group deciding its VAT position",
+  "need_type": "number",
+  "working_title": "Partial exemption and the de minimis test for a mixed care provider",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "partial exemption care provider de minimis",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "new: partial exemption de minimis checker",
+  "hp_anchors": [
+   "HP4",
+   "HP3"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Care group deciding its VAT position",
+  "need_type": "question",
+  "working_title": "VAT on a care franchise fee",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "3fb89a32-f4b5-47cb-8f26-9211e7c91f9c",
+  "target_query": "vat on care franchise fee",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP4"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Employer sponsoring overseas care workers",
+  "need_type": "number",
+  "working_title": "The true employer cost of sponsoring a care worker",
+  "status": "COVERED",
+  "existing_page": "/blog/payroll-and-workforce-costs/sponsoring-care-workers-true-cost",
+  "pool_row_id": "a56ce112-f07a-491a-81a3-1d79b62338dc",
+  "target_query": "care worker sponsor licence cost",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 4: a page of ours is already the subject, extend rather than add",
+  "word_band": "n/a",
+  "calculator": null,
+  "hp_anchors": [
+   "HP13",
+   "HP14"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Employer sponsoring overseas care workers",
+  "need_type": "question",
+  "working_title": "Sponsor licence fees and ongoing costs, priced per head",
+  "status": "PARTIAL",
+  "existing_page": "/blog/payroll-and-workforce-costs/sponsoring-care-workers-true-cost",
+  "pool_row_id": "94fb146c-1601-40d0-b99b-62cf60f744c6",
+  "target_query": "sponsor licence cost care home",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "new: sponsored worker cost per head",
+  "hp_anchors": [
+   "HP13",
+   "HP14",
+   "HP7",
+   "HP11"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Employer sponsoring overseas care workers",
+  "need_type": "decision",
+  "working_title": "Can you recover sponsorship costs from the worker",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "b75a0427-987b-4597-af8a-35ba2810a243",
+  "target_query": "recovering sponsorship costs from care workers",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP13",
+   "HP14",
+   "HP7"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Buyer of a care franchise",
+  "need_type": "segment_page",
+  "working_title": "Accountants for care franchisees",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "dd074957-d3ff-4171-8a61-f09da8fc58d2",
+  "target_query": "home care franchise uk",
+  "monthly_demand": 110,
+  "peer_ranks": true,
+  "eligibility_rule_failed": null,
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP4",
+   "HP18"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Buyer of a care franchise",
+  "need_type": "decision",
+  "working_title": "Care franchise or independent agency: the cost comparison",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "02522be8-0917-482b-b093-b1fc272f04c3",
+  "target_query": "care franchise cost",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "HP1",
+   "HP4",
+   "HP11",
+   "HP18"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Buyer of a care franchise",
+  "need_type": "question",
+  "working_title": "What a care franchise actually costs in year one",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "07783aff-deb1-4cbf-b0cf-86d877e75ef5",
+  "target_query": "care franchise cost uk",
+  "monthly_demand": 0,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "rule 3: monthly demand below the 100 to 5,000 band",
+  "word_band": "800-1200",
+  "calculator": "/calculators/true-cost-care-hour-calculator",
+  "hp_anchors": [
+   "HP11",
+   "HP12",
+   "HP18"
+  ],
+  "wave": "later"
+ }
+]

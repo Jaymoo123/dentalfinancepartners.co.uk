@@ -1,0 +1,1907 @@
+[
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "segment_page",
+  "working_title": "Accountants for landlords moving property into a limited company",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "accountant to transfer property into limited company",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "1.A",
+   "21",
+   "21.A"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "decision",
+  "working_title": "Should I transfer my buy-to-lets into a limited company in 2026/27",
+  "status": "PARTIAL",
+  "existing_page": "/blog/incorporation-and-company-structures/should-i-incorporate-buy-to-let-portfolio-2026",
+  "pool_row_id": "aa411ad2",
+  "target_query": "should i incorporate my buy to let portfolio",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 1 (we already earn Google impressions on this subject)",
+  "word_band": "800-1200",
+  "calculator": "incorporation-cost-calculator",
+  "hp_anchors": [
+   "21",
+   "21.A",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "decision",
+  "working_title": "How to transfer property into a limited company, step by step",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk",
+  "pool_row_id": "2b54f225",
+  "target_query": "how to transfer property into a limited company",
+  "monthly_demand": 480,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "incorporation-cost-calculator",
+  "hp_anchors": [
+   "1",
+   "5",
+   "21"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "number",
+  "working_title": "What transferring a portfolio actually costs: SDLT plus CGT",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/sdlt-transfer-property-company-cost",
+  "pool_row_id": "0db807ad",
+  "target_query": "cost of transferring property to limited company",
+  "monthly_demand": 30,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rules 1 and 3 (impressions already earned; volume below 100/month)",
+  "word_band": "800-1200",
+  "calculator": "incorporation-cost-calculator",
+  "hp_anchors": [
+   "1",
+   "1.A",
+   "5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "question",
+  "working_title": "Does section 162 incorporation relief apply to my lettings",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords",
+  "pool_row_id": "f50f6df1",
+  "target_query": "section 162 incorporation relief",
+  "monthly_demand": 170,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "5",
+   "21"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "question",
+  "working_title": "Transferring a buy-to-let in negative equity into a company",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "transfer negative equity property to limited company",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "5",
+   "21.1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "question",
+  "working_title": "Selling your own property to your own company: the connected-party rules",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "sell property to my own limited company",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "5",
+   "21.1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord moving personally held buy-to-lets into a limited company",
+  "need_type": "proof",
+  "working_title": "Modelled incorporation cost by portfolio size: SDLT and CGT across ten shapes",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "e33a8e7c",
+  "target_query": "incorporation case study property portfolio",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": "incorporation-cost-calculator",
+  "hp_anchors": [
+   "1",
+   "5",
+   "21.A"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Portfolio landlord incorporating an established lettings partnership",
+  "need_type": "segment_page",
+  "working_title": "Accountants for portfolio landlords incorporating a lettings partnership",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "property partnership incorporation advice",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1.A",
+   "11.C",
+   "5"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Portfolio landlord incorporating an established lettings partnership",
+  "need_type": "decision",
+  "working_title": "Incorporating a property partnership: does Schedule 15 remove the SDLT",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions",
+  "pool_row_id": null,
+  "target_query": "partnership sdlt relief schedule 15",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1.A",
+   "11.C"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Portfolio landlord incorporating an established lettings partnership",
+  "need_type": "question",
+  "working_title": "Does my lettings business actually count as a partnership",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/does-your-business-qualify-as-a-partnership",
+  "pool_row_id": null,
+  "target_query": "is my property business a partnership",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1.A",
+   "11.C"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Portfolio landlord incorporating an established lettings partnership",
+  "need_type": "question",
+  "working_title": "Unpicking a hybrid LLP structure before incorporating",
+  "status": "PARTIAL",
+  "existing_page": "/blog/incorporation-and-company-structures/hybrid-limited-liability-partnership",
+  "pool_row_id": null,
+  "target_query": "hybrid llp property unwind",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "11.C.Y",
+   "1.A"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Portfolio landlord incorporating an established lettings partnership",
+  "need_type": "decision",
+  "working_title": "Phased incorporation: moving a portfolio across in stages",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/incorporation-existing-portfolios-phased-approach",
+  "pool_row_id": "ac225d5a",
+  "target_query": "phased property incorporation",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1.A",
+   "5",
+   "21"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Investor setting up an SPV to buy a first or next property",
+  "need_type": "segment_page",
+  "working_title": "Accountants for landlords setting up a property SPV",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "spv accountant",
+  "monthly_demand": 90,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "21",
+   "21.4",
+   "21.A"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Investor setting up an SPV to buy a first or next property",
+  "need_type": "decision",
+  "working_title": "SPV or personal name for a first buy-to-let purchase",
+  "status": "PARTIAL",
+  "existing_page": "/blog/incorporation-and-company-structures/limited-company-vs-personal-ownership-tax-comparison-2026",
+  "pool_row_id": "650137ac",
+  "target_query": "buy to let limited company or personal name",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 1 (we already earn Google impressions on this subject)",
+  "word_band": "800-1200",
+  "calculator": "rental-income-tax-calculator",
+  "hp_anchors": [
+   "21",
+   "21.4",
+   "4"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Investor setting up an SPV to buy a first or next property",
+  "need_type": "decision",
+  "working_title": "How to set up a property investment company, step by step",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/how-to-set-up-property-investment-company-uk-guide",
+  "pool_row_id": "7c55e80c",
+  "target_query": "how to set up a property investment company",
+  "monthly_demand": 40,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "11",
+   "21"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Investor setting up an SPV to buy a first or next property",
+  "need_type": "number",
+  "working_title": "What an SPV costs to run in year one",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/property-company-running-costs-annual-budget",
+  "pool_row_id": "f5227fe3",
+  "target_query": "property company running costs",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "corporation-tax-calculator",
+  "hp_anchors": [
+   "21.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Investor setting up an SPV to buy a first or next property",
+  "need_type": "question",
+  "working_title": "One SPV or several: structuring a growing portfolio",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/property-investment-company-structure-planning",
+  "pool_row_id": "067e8c0f",
+  "target_query": "spv structure one company or multiple",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "21",
+   "21.8"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Investor setting up an SPV to buy a first or next property",
+  "need_type": "question",
+  "working_title": "Bringing an overseas co-director into a UK property SPV",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "non resident director uk property company",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "11",
+   "17",
+   "21.1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord selling a buy-to-let or a former home",
+  "need_type": "segment_page",
+  "working_title": "Accountants for landlords selling a buy-to-let",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "cgt accountant property sale",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": "capital-gains-tax-calculator",
+  "hp_anchors": [
+   "5",
+   "5.B",
+   "39"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Landlord selling a buy-to-let or a former home",
+  "need_type": "decision",
+  "working_title": "Sell now or keep: the CGT and income comparison for 2026/27",
+  "status": "PARTIAL",
+  "existing_page": "/blog/portfolio-management/when-to-sell-rental-property-key-indicators-landlords",
+  "pool_row_id": "b77f8335",
+  "target_query": "should i sell my buy to let",
+  "monthly_demand": 40,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rules 1 and 3 (impressions already earned; volume below 100/month)",
+  "word_band": "800-1200",
+  "calculator": "cost-of-selling-calculator",
+  "hp_anchors": [
+   "5",
+   "4",
+   "7"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord selling a buy-to-let or a former home",
+  "need_type": "number",
+  "working_title": "Working out the CGT on a buy-to-let sale",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step",
+  "pool_row_id": "876b200d",
+  "target_query": "capital gains tax on selling a rental property",
+  "monthly_demand": 210,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "capital-gains-tax-calculator",
+  "hp_anchors": [
+   "5",
+   "5.B"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord selling a buy-to-let or a former home",
+  "need_type": "question",
+  "working_title": "Reporting and paying within 60 days of completion",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026",
+  "pool_row_id": "65d1073a",
+  "target_query": "60 day cgt return",
+  "monthly_demand": 210,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord selling a buy-to-let or a former home",
+  "need_type": "question",
+  "working_title": "Private Residence Relief on a home you later let out",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/ppr-relief-calculation-former-home-step-by-step",
+  "pool_row_id": "7e92aef5",
+  "target_query": "private residence relief letting",
+  "monthly_demand": 720,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord selling a buy-to-let or a former home",
+  "need_type": "decision",
+  "working_title": "Selling in stages across tax years to use two annual exemptions",
+  "status": "PARTIAL",
+  "existing_page": "/blog/capital-gains-tax/cgt-selling-multiple-properties-same-year",
+  "pool_row_id": "321f9fb8",
+  "target_query": "selling multiple properties same tax year",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": "capital-gains-tax-calculator",
+  "hp_anchors": [
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord selling a buy-to-let or a former home",
+  "need_type": "proof",
+  "working_title": "What it costs to sell a rental property in 2026: fees, tax and net proceeds",
+  "status": "PARTIAL",
+  "existing_page": "/cost-of-selling-a-property",
+  "pool_row_id": null,
+  "target_query": "cost of selling a rental property",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": "cost-of-selling-calculator",
+  "hp_anchors": [
+   "5",
+   "5.B"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Owner gifting property or a share of it to family",
+  "need_type": "segment_page",
+  "working_title": "Accountants for owners gifting property to family",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "gifting property to children tax advice",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "15",
+   "15.3",
+   "22.11"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Owner gifting property or a share of it to family",
+  "need_type": "decision",
+  "working_title": "Gifting a property to an adult child: the five routes compared",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics",
+  "pool_row_id": "81f96ddc",
+  "target_query": "gifting property to children tax",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "5",
+   "15.2",
+   "15.3"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner gifting property or a share of it to family",
+  "need_type": "question",
+  "working_title": "Does the recipient pay SDLT on a gifted property with a mortgage",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/gifting-property-and-deed-of-gift-tax-implications",
+  "pool_row_id": null,
+  "target_query": "sdlt on gifted property with mortgage",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "stamp-duty-calculator",
+  "hp_anchors": [
+   "1.P",
+   "1"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner gifting property or a share of it to family",
+  "need_type": "question",
+  "working_title": "Gifting a share but keeping the rent: the s.102B(3) carve-out",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/gift-with-reservation-of-benefit",
+  "pool_row_id": null,
+  "target_query": "gift with reservation of benefit property",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "15.3",
+   "22.11"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner gifting property or a share of it to family",
+  "need_type": "question",
+  "working_title": "Assigning rental income to a partner by deed: does it work",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "deed of assignment rental income partner",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "24",
+   "24.6",
+   "22.9"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Owner gifting property or a share of it to family",
+  "need_type": "number",
+  "working_title": "Seven-year clock: what a gift of property costs if the donor dies early",
+  "status": "PARTIAL",
+  "existing_page": "/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving",
+  "pool_row_id": "e11e72ff",
+  "target_query": "7 year rule gifting property",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 1 (we already earn Google impressions on this subject)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "15.1",
+   "15.2"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Beneficiary or executor with an inherited property",
+  "need_type": "segment_page",
+  "working_title": "Accountants for executors and beneficiaries of an inherited property",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "probate property tax advice",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "39",
+   "39.A",
+   "15"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Beneficiary or executor with an inherited property",
+  "need_type": "decision",
+  "working_title": "Keep, let or sell an inherited property: the tax fork",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "inherited a rental property what to do",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": "capital-gains-tax-calculator",
+  "hp_anchors": [
+   "39",
+   "5",
+   "15"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Beneficiary or executor with an inherited property",
+  "need_type": "number",
+  "working_title": "CGT on an inherited property: probate base cost and the 60-day clock",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost",
+  "pool_row_id": "f5dacfa8",
+  "target_query": "capital gains tax on inherited property",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "capital-gains-tax-calculator",
+  "hp_anchors": [
+   "39",
+   "5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Beneficiary or executor with an inherited property",
+  "need_type": "question",
+  "working_title": "Inheriting an HMO or a portfolio: structuring the ownership",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "inherited hmo tax structure",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "39",
+   "15.4",
+   "21"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Beneficiary or executor with an inherited property",
+  "need_type": "question",
+  "working_title": "SDLT when you already own an inherited share",
+  "status": "COVERED",
+  "existing_page": "/blog/property-types-and-specialist-tax/a-complete-guide-to-stamp-duty-relief-for-probate-properties",
+  "pool_row_id": null,
+  "target_query": "sdlt inherited property share surcharge",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "stamp-duty-calculator",
+  "hp_anchors": [
+   "1.I",
+   "1"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Non-resident landlord letting or selling UK property from abroad",
+  "need_type": "segment_page",
+  "working_title": "Accountants for non-resident and overseas landlords",
+  "status": "PARTIAL",
+  "existing_page": "/services/non-resident-landlord",
+  "pool_row_id": null,
+  "target_query": "non resident landlord accountant",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "17",
+   "17.4",
+   "17.5"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Non-resident landlord letting or selling UK property from abroad",
+  "need_type": "decision",
+  "working_title": "Living abroad and letting a UK property: what you must file",
+  "status": "COVERED",
+  "existing_page": "/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide",
+  "pool_row_id": "c91f77d6",
+  "target_query": "non resident landlord scheme",
+  "monthly_demand": 880,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "17.5",
+   "16.6"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Non-resident landlord letting or selling UK property from abroad",
+  "need_type": "number",
+  "working_title": "Getting rent paid gross: the NRL approval application",
+  "status": "COVERED",
+  "existing_page": "/blog/non-resident-landlord-tax/nrl-approval-receive-rent-gross-hmrc-guide",
+  "pool_row_id": "85379307",
+  "target_query": "nrl approval receive rent gross",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "17.5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Non-resident landlord letting or selling UK property from abroad",
+  "need_type": "question",
+  "working_title": "Selling UK property while non-resident: NRCGT and the 60-day return",
+  "status": "COVERED",
+  "existing_page": "/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide",
+  "pool_row_id": "495b08e8",
+  "target_query": "selling uk property as a non resident",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rules 1 and 3 (impressions already earned; volume below 100/month)",
+  "word_band": "800-1200",
+  "calculator": "capital-gains-tax-calculator",
+  "hp_anchors": [
+   "17.4",
+   "16.3"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Non-resident landlord letting or selling UK property from abroad",
+  "need_type": "question",
+  "working_title": "Buying more UK property from overseas: the stacked surcharges",
+  "status": "COVERED",
+  "existing_page": "/blog/non-resident-landlord-tax/sdlt-non-resident-2-percent-surcharge",
+  "pool_row_id": "76b83aa6",
+  "target_query": "non resident sdlt surcharge",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "stamp-duty-calculator",
+  "hp_anchors": [
+   "1.O",
+   "1.O.4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Non-resident landlord letting or selling UK property from abroad",
+  "need_type": "question",
+  "working_title": "Does MTD apply to an overseas landlord",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "5e7cc85b",
+  "target_query": "non resident landlord mtd",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": "mtd-checker",
+  "hp_anchors": [
+   "19",
+   "19.11"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "First-time or accidental landlord letting a former home",
+  "need_type": "segment_page",
+  "working_title": "Accountants for first-time and accidental landlords",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "accountant for first time landlord",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "4",
+   "5",
+   "19"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "First-time or accidental landlord letting a former home",
+  "need_type": "decision",
+  "working_title": "Let your old home or sell it: the two-year comparison",
+  "status": "PARTIAL",
+  "existing_page": "/blog/landlord-tax-essentials/accidental-landlord-taxes-a-complete-guide",
+  "pool_row_id": null,
+  "target_query": "renting out my house instead of selling",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 1 (we already earn Google impressions on this subject)",
+  "word_band": "800-1200",
+  "calculator": "rental-income-tax-calculator",
+  "hp_anchors": [
+   "4",
+   "5",
+   "1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "First-time or accidental landlord letting a former home",
+  "need_type": "question",
+  "working_title": "Let to buy: how the two-loan move is taxed",
+  "status": "COVERED",
+  "existing_page": "/blog/property-finance/let-to-buy-mortgages",
+  "pool_row_id": null,
+  "target_query": "let to buy",
+  "monthly_demand": 720,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "stamp-duty-calculator",
+  "hp_anchors": [
+   "1",
+   "4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "First-time or accidental landlord letting a former home",
+  "need_type": "question",
+  "working_title": "Consent to let and the tax that follows",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "consent to let tax implications",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "First-time or accidental landlord letting a former home",
+  "need_type": "number",
+  "working_title": "Your first self assessment as a landlord: what you will owe",
+  "status": "COVERED",
+  "existing_page": "/blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know",
+  "pool_row_id": null,
+  "target_query": "first time landlord tax",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "rental-income-tax-calculator",
+  "hp_anchors": [
+   "4",
+   "41"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Couple restructuring how a jointly owned property is taxed",
+  "need_type": "segment_page",
+  "working_title": "Accountants for couples splitting rental income between them",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "form 17 declaration of trust accountant",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "24",
+   "24.2",
+   "24.3"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Couple restructuring how a jointly owned property is taxed",
+  "need_type": "decision",
+  "working_title": "Shifting rental income to the lower earner: Form 17 and a declaration of trust",
+  "status": "COVERED",
+  "existing_page": "/blog/landlord-tax-essentials/form-17-declaration-beneficial-interest-property-mechanics-filing-revocation",
+  "pool_row_id": null,
+  "target_query": "form 17 hmrc",
+  "monthly_demand": 1300,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "24.1",
+   "24.2",
+   "24.3"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Couple restructuring how a jointly owned property is taxed",
+  "need_type": "question",
+  "working_title": "Adding a spouse to the deeds: CGT and the SDLT trap",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/cgt-property-transfer-spouse",
+  "pool_row_id": "cc35d996",
+  "target_query": "adding spouse to property deeds tax",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "stamp-duty-calculator",
+  "hp_anchors": [
+   "24.4",
+   "1"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Couple restructuring how a jointly owned property is taxed",
+  "need_type": "question",
+  "working_title": "Splitting income between unmarried co-owners",
+  "status": "COVERED",
+  "existing_page": "/blog/landlord-tax-essentials/unmarried-co-owners-property-tax-rental-income-split-actual-beneficial-share",
+  "pool_row_id": null,
+  "target_query": "unmarried couple rental income split",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "24.6"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Couple restructuring how a jointly owned property is taxed",
+  "need_type": "question",
+  "working_title": "Putting shares or property in a child's name: the settlements rules",
+  "status": "PARTIAL",
+  "existing_page": "/blog/incorporation-and-company-structures/gifting-property-to-minor-children-bare-trust-mechanics-tax-traps",
+  "pool_row_id": null,
+  "target_query": "property in child name settlements legislation",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "24.7",
+   "22.9",
+   "22.10"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord with undeclared rental income facing HMRC",
+  "need_type": "segment_page",
+  "working_title": "Accountants for landlords making an HMRC rental income disclosure",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "let property campaign accountant",
+  "monthly_demand": 30,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "27",
+   "27.6",
+   "27.2"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Landlord with undeclared rental income facing HMRC",
+  "need_type": "decision",
+  "working_title": "Let Property Campaign or wait for the letter",
+  "status": "COVERED",
+  "existing_page": "/blog/landlord-tax-essentials/benefits-of-participating-in-the-let-property-campaign",
+  "pool_row_id": null,
+  "target_query": "let property campaign",
+  "monthly_demand": 1900,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "27.6",
+   "27.2"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord with undeclared rental income facing HMRC",
+  "need_type": "number",
+  "working_title": "What a disclosure costs: tax, interest and the penalty bands",
+  "status": "PARTIAL",
+  "existing_page": "/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026",
+  "pool_row_id": null,
+  "target_query": "let property campaign penalties",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 1 (we already earn Google impressions on this subject)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "27.2",
+   "27.3"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord with undeclared rental income facing HMRC",
+  "need_type": "question",
+  "working_title": "How many years back HMRC can go",
+  "status": "COVERED",
+  "existing_page": "/blog/landlord-tax-essentials/hmrc-discovery-assessment-tma-1970-section-29-time-limits-landlords",
+  "pool_row_id": null,
+  "target_query": "how far back can hmrc go rental income",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "27.1"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord who needs someone to file: MTD and self assessment",
+  "need_type": "segment_page",
+  "working_title": "Accountants filing landlord self assessment and MTD quarterly updates",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "landlord self assessment service",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": "mtd-checker",
+  "hp_anchors": [
+   "19",
+   "19.1",
+   "3"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Landlord who needs someone to file: MTD and self assessment",
+  "need_type": "decision",
+  "working_title": "Do I have to join MTD, and when",
+  "status": "COVERED",
+  "existing_page": "/blog/making-tax-digital-mtd/making-tax-digital-property-income-2026-complete-guide",
+  "pool_row_id": null,
+  "target_query": "making tax digital for landlords",
+  "monthly_demand": 2400,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "mtd-checker",
+  "hp_anchors": [
+   "3",
+   "19.1",
+   "19.2"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord who needs someone to file: MTD and self assessment",
+  "need_type": "number",
+  "working_title": "What MTD will cost a landlord in software and time",
+  "status": "PARTIAL",
+  "existing_page": "/blog/making-tax-digital-mtd/best-mtd-software-landlords-2026",
+  "pool_row_id": null,
+  "target_query": "mtd software for landlords cost",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 1 (we already earn Google impressions on this subject)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "19.6"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord who needs someone to file: MTD and self assessment",
+  "need_type": "question",
+  "working_title": "Can I keep using a spreadsheet under MTD",
+  "status": "COVERED",
+  "existing_page": "/blog/making-tax-digital-mtd/mtd-itsa-spreadsheets-with-bridging-software-allowed-mechanics",
+  "pool_row_id": null,
+  "target_query": "mtd spreadsheet bridging software",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "19.14"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Landlord who needs someone to file: MTD and self assessment",
+  "need_type": "question",
+  "working_title": "Jointly owned property under MTD",
+  "status": "COVERED",
+  "existing_page": "/blog/making-tax-digital-mtd/mtd-made-simple-for-landlords-with-jointly-owned-properties",
+  "pool_row_id": null,
+  "target_query": "mtd jointly owned property",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "19.4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner extracting profit from an existing property company",
+  "need_type": "segment_page",
+  "working_title": "Accountants for property company directors taking money out",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "property company accountant profit extraction",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": "property-company-extraction-calculator",
+  "hp_anchors": [
+   "21.1",
+   "21.4",
+   "21.9"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Owner extracting profit from an existing property company",
+  "need_type": "decision",
+  "working_title": "Salary, dividend or director's loan: the extraction order for 2026/27",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27",
+  "pool_row_id": "057a47e8",
+  "target_query": "property company profit extraction",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "property-company-extraction-calculator",
+  "hp_anchors": [
+   "21.1",
+   "21.4",
+   "21.9"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner extracting profit from an existing property company",
+  "need_type": "number",
+  "working_title": "Dividend tax on property company profits at the 2026/27 rates",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/property-company-dividend-tax",
+  "pool_row_id": "b0dfe250",
+  "target_query": "property company dividend tax",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "dividend-tax-calculator",
+  "hp_anchors": [
+   "21.9",
+   "21.4"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner extracting profit from an existing property company",
+  "need_type": "question",
+  "working_title": "Repaying a director's loan without a s.455 charge",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/btl-spv-directors-loan-repayment-strategy-tax-efficient-extraction",
+  "pool_row_id": "cd0af514",
+  "target_query": "director loan account property company",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "21.1"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Owner extracting profit from an existing property company",
+  "need_type": "decision",
+  "working_title": "Closing a property company: strike-off, distribution or MVL",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/how-to-close-a-property-limited-company",
+  "pool_row_id": "c779e749",
+  "target_query": "closing a property company tax",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "42",
+   "21.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Holiday let, Airbnb and serviced accommodation operator",
+  "need_type": "segment_page",
+  "working_title": "Accountants for holiday let and serviced accommodation operators",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "holiday let accountant",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "6",
+   "5.A",
+   "29"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Holiday let, Airbnb and serviced accommodation operator",
+  "need_type": "decision",
+  "working_title": "Life after the FHL rules: how a holiday let is taxed now",
+  "status": "COVERED",
+  "existing_page": "/blog/property-types-and-specialist-tax/abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know",
+  "pool_row_id": null,
+  "target_query": "holiday let tax rules",
+  "monthly_demand": 90,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "6",
+   "5.A"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Holiday let, Airbnb and serviced accommodation operator",
+  "need_type": "question",
+  "working_title": "When a holiday let business must register for VAT",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-types-and-specialist-tax/vat-on-furnished-holiday-lettings-fhl",
+  "pool_row_id": null,
+  "target_query": "holiday let vat threshold",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "29.8",
+   "29.2"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Holiday let, Airbnb and serviced accommodation operator",
+  "need_type": "question",
+  "working_title": "Rent to serviced accommodation: how the R2SA model is taxed",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "rent to serviced accommodation tax",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "28",
+   "29.2",
+   "6"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Holiday let, Airbnb and serviced accommodation operator",
+  "need_type": "number",
+  "working_title": "Airbnb income: what you will actually pay",
+  "status": "COVERED",
+  "existing_page": "/blog/property-types-and-specialist-tax/airbnb-tax-uk-short-term-rental-income-taxed",
+  "pool_row_id": null,
+  "target_query": "airbnb tax uk",
+  "monthly_demand": 140,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "rental-income-tax-calculator",
+  "hp_anchors": [
+   "6",
+   "41"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "HMO, student and commercial landlord",
+  "need_type": "segment_page",
+  "working_title": "Accountants for HMO and multi-let landlords",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "hmo accountant",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "26.9",
+   "25",
+   "30.5"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "HMO, student and commercial landlord",
+  "need_type": "question",
+  "working_title": "Council tax or business rates on an HMO",
+  "status": "COVERED",
+  "existing_page": "/blog/landlord-tax-essentials/property-business-rates-council-tax-landlords",
+  "pool_row_id": "5fbb2681",
+  "target_query": "hmo council tax or business rates",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "30.4",
+   "30.5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "HMO, student and commercial landlord",
+  "need_type": "number",
+  "working_title": "Capital allowances in HMO common parts",
+  "status": "COVERED",
+  "existing_page": "/blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property",
+  "pool_row_id": null,
+  "target_query": "hmo capital allowances",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "capital-allowances-calculator",
+  "hp_anchors": [
+   "25.2",
+   "38"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "HMO, student and commercial landlord",
+  "need_type": "segment_page",
+  "working_title": "Accountants for commercial property investors",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "commercial property accountant uk",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "25.11",
+   "29.3",
+   "1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "HMO, student and commercial landlord",
+  "need_type": "question",
+  "working_title": "Buying a commercial property: the s.198 fixtures election",
+  "status": "COVERED",
+  "existing_page": "/blog/property-types-and-specialist-tax/commercial-property-fixtures-claim-s198-election-purchase-mechanics",
+  "pool_row_id": null,
+  "target_query": "section 198 election fixtures",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "25.11"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Developer or flipper structuring a project",
+  "need_type": "segment_page",
+  "working_title": "Accountants for property developers and flippers",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "property developer accountant",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "28",
+   "28.2",
+   "28.7"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Developer or flipper structuring a project",
+  "need_type": "decision",
+  "working_title": "Investor or developer: the line that decides your tax",
+  "status": "COVERED",
+  "existing_page": "/blog/property-types-and-specialist-tax/are-you-a-property-investor-or-developer",
+  "pool_row_id": null,
+  "target_query": "property flipping tax",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": "corporation-tax-calculator",
+  "hp_anchors": [
+   "28.5",
+   "28.6"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Developer or flipper structuring a project",
+  "need_type": "question",
+  "working_title": "Converting a house into flats: SDLT, VAT and CGT",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-types-and-specialist-tax/vat-commercial-to-residential-conversion-5-percent-reduced-rate-developer-recovery-mechanics",
+  "pool_row_id": null,
+  "target_query": "converting house into flats tax",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "29.7",
+   "29.13",
+   "1.J"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Separating couple dividing property",
+  "need_type": "segment_page",
+  "working_title": "Accountants for separating couples with rental property",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "divorce property tax advice",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1.D",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Separating couple dividing property",
+  "need_type": "decision",
+  "working_title": "Dividing rental property on divorce: the statutory window",
+  "status": "COVERED",
+  "existing_page": "/blog/capital-gains-tax/cgt-divorce-property-transfer-tax-implications",
+  "pool_row_id": null,
+  "target_query": "divorce and buy to let property",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1.D",
+   "5"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Older landlord planning retirement or succession",
+  "need_type": "segment_page",
+  "working_title": "Accountants for landlords planning retirement and succession",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": null,
+  "target_query": "landlord succession planning accountant",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (no measured Google volume); kept because LEADS_250 section 2 A3 selects segment pages on buyer-situation match for assistant retrieval, not on head-term volume",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "22",
+   "22.6",
+   "15.4"
+  ],
+  "wave": 1
+ },
+ {
+  "situation": "Older landlord planning retirement or succession",
+  "need_type": "decision",
+  "working_title": "Winding down a portfolio in retirement: sell, gift or hold to death",
+  "status": "MISSING",
+  "existing_page": null,
+  "pool_row_id": "73d326cb",
+  "target_query": "property portfolio exit strategy retirement",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": "capital-gains-tax-calculator",
+  "hp_anchors": [
+   "5",
+   "15.2",
+   "39"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Older landlord planning retirement or succession",
+  "need_type": "question",
+  "working_title": "A family investment company for the next generation",
+  "status": "COVERED",
+  "existing_page": "/blog/incorporation-and-company-structures/family-investment-company-property-worth-it",
+  "pool_row_id": "d290cd20",
+  "target_query": "family investment company property",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 4 (an existing page is already the subject; action is EXTEND, not a new page)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "21.5",
+   "22.6",
+   "22.13"
+  ],
+  "wave": "not_eligible"
+ },
+ {
+  "situation": "Older landlord planning retirement or succession",
+  "need_type": "number",
+  "working_title": "Inheritance tax on a rental portfolio after the April 2026 cap",
+  "status": "PARTIAL",
+  "existing_page": "/blog/landlord-tax-essentials/business-property-relief-rental-property-iht",
+  "pool_row_id": "e11e72ff",
+  "target_query": "inheritance tax on rental property",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rules 1 and 3 (impressions already earned; volume below 100/month)",
+  "word_band": "800-1200",
+  "calculator": "bpr-apr-allowance-calculator",
+  "hp_anchors": [
+   "15.1",
+   "15.4",
+   "22.1"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in London",
+  "status": "COVERED",
+  "existing_page": "/locations/london",
+  "pool_row_id": "1baf4b37",
+  "target_query": "property accountant london",
+  "monthly_demand": 50,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Manchester",
+  "status": "COVERED",
+  "existing_page": "/locations/manchester",
+  "pool_row_id": "a849a499",
+  "target_query": "property accountant manchester",
+  "monthly_demand": 30,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Birmingham",
+  "status": "COVERED",
+  "existing_page": "/locations/birmingham",
+  "pool_row_id": "83701656",
+  "target_query": "property accountant birmingham",
+  "monthly_demand": 20,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Leeds",
+  "status": "COVERED",
+  "existing_page": "/locations/leeds",
+  "pool_row_id": "7c03de98",
+  "target_query": "property accountant leeds",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Bristol",
+  "status": "COVERED",
+  "existing_page": "/locations/bristol",
+  "pool_row_id": "759ded75",
+  "target_query": "property accountant bristol",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Nottingham",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-accountant-services/property-accountant-nottingham-landlords",
+  "pool_row_id": "76c4c921",
+  "target_query": "property accountant nottingham",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Glasgow",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-accountant-services/property-accountant-glasgow",
+  "pool_row_id": "10a42d19",
+  "target_query": "property accountant glasgow",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Edinburgh",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-accountant-services/property-accountant-edinburgh-landlord-tax-services",
+  "pool_row_id": "666be88b",
+  "target_query": "property accountant edinburgh",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Sheffield",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-accountant-services/why-sheffield-landlords-need-property-accountant",
+  "pool_row_id": "1f4c09f2",
+  "target_query": "property accountant sheffield",
+  "monthly_demand": 10,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Liverpool",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-accountant-services/liverpool-property-accountant-tax-services-landlords",
+  "pool_row_id": "f45e6e12",
+  "target_query": "property accountant liverpool",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Newcastle",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-accountant-services/newcastle-property-accountant-landlord-tax-services",
+  "pool_row_id": "2cddca54",
+  "target_query": "property accountant newcastle",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ },
+ {
+  "situation": "Landlord searching for an accountant in their own city",
+  "need_type": "segment_page",
+  "working_title": "Property accountant in Cardiff",
+  "status": "PARTIAL",
+  "existing_page": "/blog/property-accountant-services/why-cardiff-landlords-need-specialist-property-accountant-2026",
+  "pool_row_id": "86c47528",
+  "target_query": "property accountant cardiff",
+  "monthly_demand": null,
+  "peer_ranks": true,
+  "eligibility_rule_failed": "NETNEW 8.2 rule 3 (measured volume below the 100/month band)",
+  "word_band": "800-1200",
+  "calculator": null,
+  "hp_anchors": [
+   "1",
+   "4",
+   "5"
+  ],
+  "wave": "later"
+ }
+]
