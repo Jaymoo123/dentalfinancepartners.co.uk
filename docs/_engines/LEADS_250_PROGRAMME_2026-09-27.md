@@ -700,6 +700,24 @@ their data arrays). Owner approves the count before launch: about 184 runs.
 weeks, and the monthly assistant-naming run with the 30-prompt set widened to name each new
 page's situation.
 
+**S4a/S4b STATUS 2026-09-27, night (for whoever resumes).** Four-site segment pages: all 20
+rows passed factual, editorial and per-site sweeps. Integrated and COMMITTED: care (`d774ad28`,
+also fixed the for/[slug] template to render HTML bodies), contractors (`71eb6b30`, same
+template fix). Integrators RUNNING at time of writing: medical (five `for-<slug>` page files
+plus sitemap) and charities (five `for` rows incl. the `cics` replacement, two `services`
+rows); commit each when its report is green. Posts: writer briefs at `docs/care/_wave1/
+POST_BRIEF.md` and `docs/charities/_wave1/POST_BRIEF.md`; each post gets Track A then Track B,
+reviews in `docs/<site>/_wave1/qa/posts/`. Medical posts: 10 of 10 written, 7 fully passed,
+3 in review. Contractors: 8 written (DLA and s.455 rows merged into one post), 3 fully passed,
+rest in review. Care and charities: writers starting from the briefs (rows 1 to 13, 1 to 8).
+Remaining after posts: a per-site post sweep (sameness across the site's posts), a per-site
+post integrator (move PASS files into `content/blog/`, run `scripts/validate_blog_content.py
+--site <site>`, typecheck, tests, build, grep one rendered post), commit per site. Then the
+deploy list in decision 10 gains the four small sites. Lessons: the site loaders read
+`updatedDate` (set it alongside `dateModified`); the `for/[slug]` templates on contractors
+and care rendered bodies as text (fixed); house positions on contractors has no settlements
+section and on medical none on disclosure or residence (posts used primary law, flagged).
+
 ### S4b. Wave 1 decision, question and number pages on the four small sites (BUILD, 09-27)
 
 The 40 non-segment Wave 1 rows (medical 10, contractors 9, care 13, charities 8) are blog

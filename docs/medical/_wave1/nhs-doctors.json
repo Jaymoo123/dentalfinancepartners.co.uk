@@ -1,0 +1,100 @@
+{
+  "slug": "nhs-doctors",
+  "title": "NHS Doctors and GP Partners",
+  "headline": "Accountants for NHS doctors and GP partners",
+  "metaTitle": "Accountants for NHS Doctors and GP Partners",
+  "metaDescription": "Accountants for NHS doctors and GP partners across the UK: pension annual allowance charges, private and locum income, expenses and self assessment.",
+  "intro": "As an NHS doctor, your money arrives from more than one place. A consultant post with private clinics on top. A partnership profit share that never matches your drawings. Salaried hours plus locum sessions at weekends. Or an ordinary payslip, until a pension savings statement asks for several thousand pounds you had not budgeted for. It is rarely one question, but how NHS pay, pension input, self-employed profit and a company, if there is one, sit together in one return. That needs someone who already knows why a Form B carries a ten-week clock.",
+  "stats": [
+    {
+      "value": "£60,000",
+      "label": "Pension annual allowance, 2026/27"
+    },
+    {
+      "value": "£260,000",
+      "label": "Adjusted income where tapering starts"
+    },
+    {
+      "value": "10 weeks",
+      "label": "Deadline to pension freelance locum work"
+    },
+    {
+      "value": "55p",
+      "label": "Mileage, first 10,000 business miles, 2026/27"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Is a pension annual allowance charge coming, and is it right?",
+      "body": "The annual allowance is £60,000 for 2026/27, tapering where threshold income exceeds £200,000 and adjusted income exceeds £260,000, by £1 for every £2 above that, to a floor of £10,000. A defined benefit scheme measures the pension input amount, the capitalised growth in your benefits, not what your payslip deducted, so a promotion can create a charge while contributions look unchanged. Unused allowance carries forward three years, and NHSBSA statements are often late and revised, so the figure is checked before anything is paid. The <a href=\"/calculators/nhs-pension-scheme-pays\">Scheme Pays calculator</a> sets out the arithmetic."
+    },
+    {
+      "title": "Private or locum income on top of a payslip",
+      "body": "NHS pay has tax and Class 1 taken at source. Private clinics, medico-legal work, teaching and invoiced locum sessions do not, and they stack on your NHS band, taxed at your top marginal rate with Class 4 at 6% to £50,270 and 2% above. Only NHS work is pensionable, and for GPs only through the practitioner routes, so anything drawn from a company as dividends builds no NHS accrual, and a tax saving has to be set against that loss. Consultants start at <a href=\"/for-consultants\">hospital consultant accountants</a>."
+    },
+    {
+      "title": "Which expenses and subscriptions actually come off",
+      "body": "Two rules run side by side. Against NHS salary: statutory registration fees, subscriptions to bodies on HMRC's approved List 3, where the British Medical Association entry restricts relief to 85%, and the flat rate for your occupational group. Against private or locum profit, on the wholly and exclusively test: indemnity for private and non-clinical cover, mileage between separate sites at the 2026/27 rates of 55p a mile to 10,000 business miles and 25p above that, CPD and equipment. Home to your first site is commuting."
+    },
+    {
+      "title": "Locum sessions, Forms A and B, and the certificates",
+      "body": "Pensioning NHS work outside a salaried post is administrative, and the deadline depends on your role. A freelance GP locum uses Form A, approved by the practice, then Form B to PCSE, and work that ended more than ten weeks ago cannot be pensioned at all. That is accrual lost outright, not a penalty you can settle. Partners file the Type 1 Annual Certificate and salaried or solo GPs the Type 2 self assessment, both by 28 February a year in arrears. Sessional doctors start at <a href=\"/for-locum-doctors\">accountants for locum doctors</a>."
+    },
+    {
+      "title": "Partnership profit, drawings and a shifting profit share",
+      "body": "A GP partner is taxed on a share of partnership profit, not on what was drawn, so drawings and the January bill rarely match. The practice files an SA800 and each share flows to the partnership pages of a personal return with Class 4 on top. Shares move when a partner joins, leaves or goes part time, and practice income needs reconciling to what PCSE paid, notional rent included. Partner-level work sits on <a href=\"/for-gp-partners\">accountants for GP partners</a>."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "One return across NHS pay, private work and partnership share",
+      "body": "Every source is mapped first: P60s and P45s from trust posts, the SA800 share, private and locum profit, dividends and savings. Your accountant prepares one self assessment return from that picture, with Class 4 and any student loan deduction checked against the payroll position."
+    },
+    {
+      "title": "Annual allowance position checked, not accepted",
+      "body": "A specialist reviews the pension input amount on your statement, tests whether tapering bites, brings forward unused allowance and works out what is left. Where a charge stands, mandatory and voluntary Scheme Pays sit side by side with the election deadline and the extended limb for a statement revised on or after 2 May."
+    },
+    {
+      "title": "Expense and subscription review, including earlier years",
+      "body": "Employment expenses and self-employed deductions are separated properly, the correct flat rate taken for your occupational group rather than a generic figure, and each subscription checked against List 3. Earlier returns are amended where an under-claim is material, with the evidence for each claim gathered first."
+    },
+    {
+      "title": "Structure reviewed with the pension loss priced in",
+      "body": "Where private or locum income raises the question, sole trader, partnership and company are modelled at your own numbers: corporation tax, the 2026/27 dividend rates, the cost of running a company, and the NHS accrual given up on dividends. The deadlines that follow, the ten-week locum window included, are tracked from the start."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "I am on a payslip and have never filed a tax return. Do I need one now?",
+      "answer": "You do once income arrives that PAYE has not dealt with: private clinics, medico-legal reports, teaching, an invoiced locum session, or a share of partnership profit. Registration is due by 5 October after the tax year the income arose in, the return by the following 31 January. Budget for payments on account too: where the prior year's liability exceeds £1,000 and less than 80% was collected at source, half again falls due that January and half on 31 July. Doctors in training should read <a href=\"/for-junior-doctors\">accountants for junior doctors</a>."
+    },
+    {
+      "question": "Why is there a pension charge when my contributions have not changed?",
+      "answer": "Because the scheme measures growth in your benefits, not what you paid in. The pension input amount is the increase in the capitalised value of your accrued pension, so a pay uplift or a move up the scale can push it past the £60,000 allowance for 2026/27 while your contribution line looks identical. Above £200,000 threshold income and £260,000 adjusted income it tapers too, to a £10,000 floor."
+    },
+    {
+      "question": "Does private work through a company count towards my NHS pension?",
+      "answer": "No. Only NHS employment, or the practitioner routes for GPs, is pensionable. Money taken out of a company as dividends builds no NHS accrual whatever the company is, and for a hospital consultant private work is never pensionable however it is structured. So an incorporation comparison has to show the accrual given up next to the tax saved, at your own figures."
+    },
+    {
+      "question": "I missed a Form B for a locum session. Can it be sorted later?",
+      "answer": "Usually not. Freelance GP locum work that finished more than ten weeks earlier can no longer be pensioned, and forms arriving after that point are rejected. Unlike a late return this is not a penalty you can pay off: the accrual is gone. Form A needs practice approval before Form B goes in, so submit each period as it finishes rather than batching a quarter."
+    },
+    {
+      "question": "Which page should I read next?",
+      "answer": "Whichever matches your role. Consultants with private income have their own page, as do doctors in training, freelance locums, and GP practices and their partners. Sitting across two, a salaried GP taking locum sessions for instance, start with whichever income is causing the question and say so when you get in touch."
+    }
+  ],
+  "sources": [
+    "docs/medical/house_positions.md §2.B (annual allowance £60,000, taper at £200,000 threshold income and £260,000 adjusted income, £10,000 floor, three-year carry-forward, pension input amount), verified 2026-08-26 and re-confirmed 2026-09-27 at https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates",
+    "docs/medical/house_positions.md §2.C (Type 1 Annual Certificate, Type 2 self assessment, Forms A and B, 10-week rule, 28 February a year in arrears, dividends not pensionable, consultant private work never pensionable)",
+    "docs/medical/house_positions.md §2.D (Scheme Pays, 31 July election deadline, extended limb where a revised statement is issued on or after 2 May)",
+    "docs/medical/house_positions.md §1 (GP partner self-employed, SA800 and partnership pages; salaried GP employed under PAYE; consultant employed with private work outside)",
+    "docs/medical/house_positions.md §3 (practice income, PCSE reconciliation, notional rent, enhanced services)",
+    "docs/medical/house_positions.md §8 (Class 4 at 6% and 2%, mileage 55p then 25p for 2026/27, home to first site is ordinary commuting, payments on account where the prior bill exceeded £1,000 and less than 80% was collected at source)",
+    "docs/medical/house_positions.md §11 and §11.A (occupational flat rate expenses; there is no single NHS rate, so no figure is quoted here)",
+    "docs/medical/house_positions.md §12 (ITEPA 2003 ss.343 and 344, List 3 approval, BMA relief restricted to 85%)",
+    "Self assessment registration by 5 October after the end of the tax year and filing by the following 31 January: TMA 1970 s.7 https://www.legislation.gov.uk/ukpga/1970/9/section/7 and https://www.gov.uk/register-for-self-assessment (house positions is silent on these two dates)",
+    "docs/medical/coverage_map_2026-09.json, row working_title 'Accountants for NHS doctors and GP partners', target query 'accountants for nhs doctors', hp anchors §1 and §3"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "retiring-doctors",
+  "title": "Doctors Approaching Retirement",
+  "headline": "Accountants for doctors approaching retirement",
+  "metaTitle": "NHS Pension Retirement for Doctors | Accountants",
+  "metaDescription": "Accountants for doctors approaching retirement: partial retirement, retire and return, annual allowance charges, leaving a practice and private income.",
+  "intro": "Within a few years of drawing your NHS pension the decision stops being a date and becomes a set of trade-offs. Partial retirement lets you take 20% to 100% of your accrued benefits in up to two events and carry on working, provided your pensionable pay or commitment falls by at least 10% for the first 12 months. Retiring fully and returning later is a different route with different paperwork. Anything drawn before your normal pension age carries a permanent actuarial reduction. Around that sit the annual allowance charges your highest-earning years produce, the capital account if you are leaving a partnership, and the private work you intend to keep. The decisions move each other, so your retirement date is what sequences them.",
+  "stats": [
+    { "value": "20% to 100%", "label": "Benefits you can draw at partial retirement" },
+    { "value": "£60,000", "label": "Pension annual allowance, 2026/27" },
+    { "value": "£268,275", "label": "Lump sum allowance on tax-free lump sums" },
+    { "value": "6 April 2028", "label": "Minimum pension age rises from 55 to 57" }
+  ],
+  "challenges": [
+    {
+      "title": "Which route fits: partial retirement or retire and return?",
+      "body": "Partial retirement has been open to all sections since 1 October 2023. You draw between 20% and 100% of what you have accrued, in up to two events, keep working, and keep accruing in the 2015 section, so long as your pensionable pay or commitment drops by at least 10% for the first year. Retiring and returning means taking your benefits, breaking NHS employment for at least 24 hours, then re-engaging on new terms. <a href=\"/blog/nhs-pension-partial-retirement-doctors-guide\">The partial retirement guide</a> sets out the mechanics."
+    },
+    {
+      "title": "Taking benefits early costs you permanently",
+      "body": "Minimum pension age is 55 today and rises to 57 for benefits taken on or after 6 April 2028, under Finance Act 2022 s.10. Access at 55 after that date needs an unqualified right under the scheme rules on 4 November 2021. Normal pension age is 60 for 1995 service, 65 for 2008 service and State Pension Age for 2015 service. Anything drawn earlier carries an actuarial reduction on NHSBSA factors, and it does not reverse later."
+    },
+    {
+      "title": "Your biggest annual allowance charges arrive last",
+      "body": "Growth is measured as the input amount, the capitalised increase in your benefits, not as contributions paid, so a pay uplift or a jump in partnership profits lands as a large figure in one year. The allowance is £60,000 for 2026/27, and it tapers by £1 for each £2 of adjusted income over £260,000 once threshold income also clears £200,000, and the floor is £10,000. Scheme Pays can settle a charge, but that election closes once all your benefits are taken."
+    },
+    {
+      "title": "What actually changes hands when you leave a practice",
+      "body": "NHS goodwill has been unsellable since 1 April 2004, now under the Primary Medical Services (Prohibition on the Sale of Goodwill) Regulations 2019. A retiring GP partner is paid out on tangible assets, working capital, any owned premises share and the capital account, never on a goodwill multiple. Premises usually sit in a separate property partnership, and the last partner standing can hold the whole liability. <a href=\"/blog/retiring-from-gp-partnership-tax-capital-account\">The capital account and cessation position</a> is where the tax falls."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Side by side modelling of the retirement routes",
+      "body": "Each route is costed on your own figures: full retirement, partial retirement at several drawdown percentages, and retire and return at reduced sessions. The model shows income year by year, the accrual you keep or forgo, and the lump sum against the £268,275 lump sum allowance."
+    },
+    {
+      "title": "Annual allowance position for your final working years",
+      "body": "Input amounts are gathered for the open years, carry forward from the previous three tax years is calculated, and the taper tested on both threshold and adjusted income. Where a charge arises, the self-assessment entry is prepared and mandatory Scheme Pays checked for availability. The <a href=\"/calculators/nhs-pension-annual-allowance\">annual allowance calculator</a> gives you a first read."
+    },
+    {
+      "title": "Scheme Pays elections filed inside the right window",
+      "body": "A 2026/27 charge must be elected by 31 July 2028 under Finance Act 2004 s.237BA. Where NHSBSA issues a revised savings statement on or after 2 May, the window runs to the earlier of three months from it or six years from the end of the tax year. It closes early once you are entitled to all your benefits, under s.237B(6), so deadlines are tracked against your retirement date."
+    },
+    {
+      "title": "Cessation and capital account work when you leave a partnership",
+      "body": "Your final year is reconciled: closing capital account, any overlap or transition profits still open, the premises share and its capital gains treatment, and balancing adjustments on equipment. Type 1 certification runs a year in arrears, so your final certificate falls due the 28 February after that pension year ends. The deed is read against the accounts before the payout is agreed."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I take part of my NHS pension and keep working?",
+      "answer": "Yes. Partial retirement has been available in all sections since 1 October 2023. You can take between 20% and 100% of the benefits you have built up, in up to two events, and carry on working with further accrual in the 2015 section. The condition is that your pensionable pay or commitment falls by at least 10% for the first 12 months, and your employer agrees to that reduction."
+    },
+    {
+      "question": "Will I lose money by drawing benefits before my normal pension age?",
+      "answer": "Benefits taken before normal pension age are reduced permanently, on factors set by NHSBSA and the Government Actuary. Those factors are revised periodically, so the only reliable number is the one on your own statement rather than a percentage quoted elsewhere. Whatever the factor, the reduction then applies for life."
+    },
+    {
+      "question": "Why has my annual allowance charge jumped in my last few years?",
+      "answer": "Defined benefit growth is measured by the increase in the capitalised value of your pension, not by what you paid in, so a pay uplift or a profit jump produces a large input amount in the year it lands. For 2026/27 the allowance is £60,000, cut by £1 for each £2 of adjusted income over £260,000 once threshold income has also passed £200,000, and it stops falling at £10,000. Carry forward from the previous three years is applied first."
+    },
+    {
+      "question": "Should I use Scheme Pays or settle the charge myself?",
+      "answer": "Scheme Pays moves the charge to the scheme in exchange for a permanent benefit reduction, so it is a cash flow choice with a lifetime cost. Mandatory Scheme Pays needs a charge above £2,000 and input above the standard £60,000 allowance in the NHS scheme alone; a charge caused only by the taper is voluntary. A 2026/27 charge must be elected by 31 July 2028. <a href=\"/blog/nhs-pension-scheme-pays-doctors-deadlines\">The Scheme Pays deadlines</a> are set out in full."
+    },
+    {
+      "question": "What do I get paid for my share when I retire from a GP partnership?",
+      "answer": "Your share of tangible assets, working capital and any owned premises, plus whatever the capital account shows, settled on the terms in the deed. NHS goodwill cannot be sold, so no goodwill element arises on the NHS side. Payment is often staged over months or years, and the deed rather than the accounts usually sets the valuation basis."
+    },
+    {
+      "question": "I am keeping my private work. Does any of it count for the NHS pension?",
+      "answer": "No. Private practice, medico-legal work, insurance medicals and occupational health are not NHS-pensionable, and dividends from a company are never pensionable. If you are selling the private practice instead, Business Asset Disposal Relief runs at 18% from 6 April 2026 against a 24% main rate for a higher-rate taxpayer, within a £1m lifetime limit and subject to the two-year conditions."
+    }
+  ],
+  "sources": [
+    "docs/medical/house_positions.md §2.E: partial retirement from 1 October 2023, 20% to 100% in up to two events, at least 10% reduction in pensionable pay or commitment for 12 months, continued accrual in the 2015 section; early retirement carries a permanent actuarial reduction on NHSBSA/GAD factors (no fixed percentage locked); ERRBO.",
+    "docs/medical/house_positions.md §2.B: annual allowance £60,000 for 2026/27, taper above £200,000 threshold income and £260,000 adjusted income at £1 per £2 to a £10,000 floor, three-year carry forward, input amount not contributions, lump sum allowance £268,275. Source cited there: https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates",
+    "docs/medical/house_positions.md §2.D: mandatory Scheme Pays needs a charge over £2,000 and scheme input over £60,000; 31 July deadline in the following year under FA 2004 s.237BA, so a 2026/27 charge by 31 July 2028; extension where a revised statement is issued on or after 2 May; no election once entitled to all benefits, FA 2004 s.237B(6).",
+    "docs/medical/house_positions.md §2 and §2.C: normal pension ages 60 (1995), 65 (2008), State Pension Age (2015); all accrual in the 2015 section from 1 April 2022; company income and dividends are not NHS-pensionable; Type 1 annual certificate due 28 February a year in arrears.",
+    "docs/medical/house_positions.md §18: normal minimum pension age 55, rising to 57 on and after 6 April 2028 (FA 2022 s.10, never FA 2021 s.10); protected pension age requires an unqualified right under the scheme rules on 4 November 2021.",
+    "docs/medical/house_positions.md §4: NHS goodwill unsellable since 1 April 2004, current instrument SI 2019/251; tangibles, premises and capital accounts are what change hands; separate property partnership and last man standing risk; BADR 18% from 6 April 2026 against a 24% main CGT rate for a higher-rate taxpayer, £1m lifetime limit, two-year conditions, private disposals only.",
+    "NHSBSA, retire and return: a break in NHS employment of at least 24 hours is required between the last day of membership and the return to work, and without it retirement benefits are not payable; re-joining the 2015 scheme on return is available to 2008 and 2015 members and, from 1 April 2023, to 1995 section members. https://www.nhsbsa.nhs.uk/24-hour-breaks-following-retire-and-return-claims and https://www.nhsbsa.nhs.uk/member-hub/your-options-flexible-retirement/retire-and-return (read 2026-09-27). House positions is silent on retire and return.",
+    "docs/medical/coverage_map_2026-09.json: row working_title 'Accountants for doctors approaching retirement', situation 'Doctor planning retirement, partial retirement or retire and return', need_type segment_page, wave 1, hp_anchors §2.E, §2.B, §4.",
+    "Internal links verified on disk: Medical/web/content/blog/nhs-pension-partial-retirement-doctors-guide.md, retiring-from-gp-partnership-tax-capital-account.md, nhs-pension-scheme-pays-doctors-deadlines.md; calculator slug nhs-pension-annual-allowance in Medical/web/src/lib/tools/configs/nhs-pension-calculator.ts via Medical/web/src/lib/tools/registry.ts."
+  ]
+}
