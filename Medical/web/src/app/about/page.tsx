@@ -39,26 +39,6 @@ export const metadata: Metadata = {
   },
 };
 
-/* What actually happens to an enquiry, in the order it happens. Traced to the
-   call site, not written from the old marketing copy: LeadForm renders
-   siteConfig.leadConsentText, which says a firm from the specialist partner
-   network makes contact, and the privacy policy caps the network at six firms.
-   No turnaround, no fee, no named accountant: none of those are ours to state. */
-const ENQUIRY_STEPS = [
-  {
-    title: "You tell us your position",
-    body: "Your role, how your income is structured and what is actually on your mind: an annual allowance charge, locum status, a partnership, private work, or a practice you are buying into or leaving.",
-  },
-  {
-    title: "We match it to a specialist firm",
-    body: "Your details go to a regulated firm from our specialist partner network that works with doctors. If that firm cannot help, they may go to another firm in the network for the same purpose, within the cap set out in our privacy policy.",
-  },
-  {
-    title: "That firm contacts you",
-    body: "The firm makes contact by phone or email and takes it from there. Scope, engagement and fees are agreed with them. We are not a party to that, and nothing you send us creates a relationship with an accountant on its own.",
-  },
-];
-
 /* The publishing side, which is the part of the proposition we do run. Each
    tile is a live route, so this section is also the page's crawl path. */
 const WHAT_WE_PUBLISH = [
@@ -143,32 +123,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {niche.entity ? <EntityBlock {...niche.entity} className="bg-white py-16 sm:py-20" /> : null}
+      {niche.entity ? <EntityBlock {...niche.entity} className="bg-slate-50 py-16 sm:py-20" /> : null}
 
-      <section id="how-it-works" className="scroll-mt-24 bg-slate-50 py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <Eyebrow>The handoff</Eyebrow>
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">How an enquiry works</h2>
-          <ol className="mt-8 grid list-none gap-6 pl-0 sm:grid-cols-3">
-            {ENQUIRY_STEPS.map((step, i) => (
-              <li key={step.title} className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70">
-                <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary-50 text-sm font-bold text-primary-700 ring-1 ring-primary-100">
-                  {i + 1}
-                </span>
-                <h3 className="mt-4 text-lg font-bold text-slate-900">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-700">{step.body}</p>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-6 text-sm leading-relaxed text-slate-700">
-            The detail, including how many firms your details can reach and how to opt out, is in our{" "}
-            <Link href="/privacy-policy" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
-              privacy policy
-            </Link>
-            .
-          </p>
-        </div>
-      </section>
+      <p className="mx-auto max-w-3xl px-4 py-6 text-center text-sm leading-relaxed text-slate-700 sm:px-6 lg:px-8">
+        The detail, including how many firms your details can reach and how to opt out, is in our{" "}
+        <Link href="/privacy-policy" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
+          privacy policy
+        </Link>
+        .
+      </p>
 
       <section id="why-medical-only" className="scroll-mt-24 bg-white py-16 sm:py-20">
         <div className={siteContainerLg}>

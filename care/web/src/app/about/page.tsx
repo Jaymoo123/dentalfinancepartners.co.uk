@@ -22,7 +22,7 @@ export default function AboutPage() {
     <section className="bg-white">
       <div className={`${siteContainerLg} ${sectionYLoose}`}>
         <div className="max-w-3xl space-y-8 text-base leading-relaxed text-neutral-600 sm:text-lg">
-          <p>We reply within one working day.</p>
+          <p>We reply within 24 hours.</p>
         </div>
         <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
