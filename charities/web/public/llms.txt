@@ -14,11 +14,17 @@ Sitemap: https://www.trusteetax.co.uk/sitemap.xml
 - [Charity bookkeeping](https://www.trusteetax.co.uk/services/charity-bookkeeping): Ongoing bookkeeping for charities, including fund accounting and restricted grant coding.
 - [Gift Aid](https://www.trusteetax.co.uk/services/gift-aid): Gift Aid and GASDS claim preparation and submission for charities and CASCs.
 - [Charity VAT](https://www.trusteetax.co.uk/services/charity-vat): VAT advice for charities, including fundraising event exemptions and partial exemption.
+- [Charity registration and set-up](https://www.trusteetax.co.uk/services/charity-registration): Support for founders registering a charity in England and Wales: the £5,000 gate, CIO or company, HMRC recognition for Gift Aid, and the first year end.
+- [Charity payroll and pensions](https://www.trusteetax.co.uk/services/charity-payroll-and-pensions): Charity payroll services for your first paid employee: PAYE registration, employer NIC, the Employment Allowance, auto-enrolment and volunteer expenses.
 
 ## Sector pages
 
 - [CICs (community interest companies)](https://www.trusteetax.co.uk/for/cics): Accounts, CIC34 filing, Corporation Tax and asset lock compliance for CIC directors.
 - [Social enterprises](https://www.trusteetax.co.uk/for/social-enterprises): Accounts and compliance for social enterprises and community benefit organisations.
+- [Charitable Incorporated Organisations (CIOs)](https://www.trusteetax.co.uk/for/cios): CIO accounts, the Charity Commission annual return, examination and audit thresholds, converting into a CIO, trading subsidiaries and VAT.
+- [Small charities](https://www.trusteetax.co.uk/for/small-charities): What a small charity under the £25,000 examination threshold has to file, how Gift Aid and GASDS work, and when growth changes the answer.
+- [Charity trustees and treasurers](https://www.trusteetax.co.uk/for/trustees-and-treasurers): Support for trustees and volunteer treasurers filing charity accounts and the annual return: accounts format, examination or audit, deadlines.
+- [Grant-making trusts and foundations](https://www.trusteetax.co.uk/for/grant-making-trusts-and-foundations): Accounts, annual returns and tax for grant-making trusts and family foundations: endowment, total return, grant commitments and related-party grants.
 
 ## Pillar guides
 
