@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BarChart3, Building2, MessageSquare, Check } from "lucide-react";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { niche } from "@/config/niche-loader";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { LeadCTAPanel } from "@/components/property/LeadCTAPanel";
 import { NumberedReasons } from "@/components/property/NumberedReasons";
@@ -123,6 +125,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {/* Stats Bar — matches homepage (cream, counts up on scroll) */}
       <section className="bg-slate-50 py-5 sm:py-7">

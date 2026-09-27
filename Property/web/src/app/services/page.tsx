@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BarChart3, Briefcase, Building2, CalendarClock, Check, FileText, Home, Landmark, Network } from "lucide-react";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { niche } from "@/config/niche-loader";
 import { HeroBrickBackdrop } from "@/components/layout/HeroBrickBackdrop";
 import { ScrollGlowGroup } from "@/components/property/ScrollGlowGroup";
 import { StatsCounter } from "@/components/property/StatsCounter";
@@ -434,6 +436,8 @@ export default function ServicesPage() {
           to price the next step at zero and take the details there and then.
           The old block sent them to /contact to start over, and its secondary
           button pointed back at this same page. */}
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
+
       {/* Anchor for the hero CTA. `scroll-mt` clears the sticky header so the
           panel's heading is not hidden under it on arrival. */}
       <div id="book" className="scroll-mt-24">
