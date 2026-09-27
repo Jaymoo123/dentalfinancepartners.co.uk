@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { btnOnDark, siteContainerLg } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { JsonLd, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { siteConfig } from "@/config/site";
 import { charityServices, getCharityService } from "@/data/charity-services";
-import { buildFaqJsonLd } from "@/lib/schema";
 import {
   CtaBand,
   FaqSection,
@@ -43,8 +43,30 @@ export default async function ServicePage({
   const service = getCharityService(slug);
   if (!service) notFound();
 
+  const schemaOpts = {
+    siteUrl: siteConfig.url,
+    siteName: siteConfig.name,
+    legalName: siteConfig.legalName,
+    publisherLogoUrl: siteConfig.publisherLogoUrl,
+  };
+  const faqSchema = buildFaqPage(service.faqs);
+
   return (
     <>
+      <JsonLd
+        data={[
+          buildService(
+            {
+              name: service.title,
+              description: service.metaDescription,
+              url: `/services/${service.slug}`,
+              areaServed: "United Kingdom",
+            },
+            schemaOpts,
+          ),
+          ...(faqSchema ? [faqSchema] : []),
+        ]}
+      />
       <PageHero
         tone="dark"
         eyebrow={service.title}
@@ -94,12 +116,6 @@ export default async function ServicePage({
         <RichCardGrid items={service.howWeHelp} columns={3} tone="white" />
       </HubSection>
 
-      {service.faqs.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(service.faqs) }}
-        />
-      )}
       <FaqSection faqs={service.faqs} />
 
       <CtaBand title="Speak to a charity accounts specialist.">

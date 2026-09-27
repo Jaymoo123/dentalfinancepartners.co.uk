@@ -9,10 +9,10 @@ import {
 } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { JsonLd, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { charityTypes, getCharityType } from "@/data/charity-types";
-import { buildFaqJsonLd } from "@/lib/schema";
 import {
   CtaBand,
   FaqSection,
@@ -50,8 +50,30 @@ export default async function CharityTypePage({
   const type = getCharityType(slug);
   if (!type) notFound();
 
+  const schemaOpts = {
+    siteUrl: siteConfig.url,
+    siteName: siteConfig.name,
+    legalName: siteConfig.legalName,
+    publisherLogoUrl: siteConfig.publisherLogoUrl,
+  };
+  const faqSchema = buildFaqPage(type.faqs);
+
   return (
     <>
+      <JsonLd
+        data={[
+          buildService(
+            {
+              name: type.title,
+              description: type.metaDescription,
+              url: `/for/${type.slug}`,
+              areaServed: "United Kingdom",
+            },
+            schemaOpts,
+          ),
+          ...(faqSchema ? [faqSchema] : []),
+        ]}
+      />
       <PageHero
         tone="dark"
         eyebrow={type.title}
@@ -114,12 +136,6 @@ export default async function CharityTypePage({
 
       {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
-      {type.faqs.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(type.faqs) }}
-        />
-      )}
       <FaqSection faqs={type.faqs} />
 
       <CtaBand title="Speak to a specialist.">

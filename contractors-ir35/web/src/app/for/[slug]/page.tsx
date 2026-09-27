@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/layout-utils";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
-import { JsonLd, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
+import { JsonLd, buildBreadcrumb, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contractorTypes, getContractorType } from "@/data/contractor-types";
 import { siteConfig } from "@/config/site";
@@ -77,6 +77,14 @@ export default async function ContractorTypePage({
               serviceType: "Contractor accounting",
               audience: type.title,
             },
+            SCHEMA_OPTS,
+          ),
+          buildBreadcrumb(
+            [
+              { label: "Home", href: "/" },
+              { label: "For", href: "/for" },
+              { label: type.title },
+            ],
             SCHEMA_OPTS,
           ),
           ...(buildFaqPage(type.faqs) ? [buildFaqPage(type.faqs)!] : []),
