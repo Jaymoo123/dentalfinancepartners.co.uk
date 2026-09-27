@@ -1,0 +1,101 @@
+{
+  "slug": "rental-income-disclosure",
+  "title": "Landlords Making an HMRC Rental Income Disclosure",
+  "headline": "Accountants for landlords making an HMRC rental income disclosure",
+  "metaTitle": "Let Property Campaign Accountant for Landlords",
+  "metaDescription": "Undeclared rental income? Specialist help with Let Property Campaign and Digital Disclosure Service disclosures: years, penalty bands, interest and payment.",
+  "intro": "You have rental income that was never declared, and either an HMRC letter has arrived or you have decided to come forward before one does. That distinction is the first thing a specialist reviews, because it sets your penalty floor: an unprompted disclosure of a non-deliberate failure to notify can reach 0%, while the same facts disclosed after HMRC makes contact start at 10% under Schedule 41 FA 2008. Next comes the route: residential rental income goes through the Let Property Campaign, commercial or mixed-use property through the Digital Disclosure Service. Then behaviour, which fixes how many years you reconstruct. Your accountant prepares the notification, the year-by-year computation of tax, interest and penalty, and the disclosure inside the 90-day window. Nothing is signed until the route is settled, the number is checkable and the payment position is known.",
+  "stats": [
+    {
+      "value": "4, 6 or 20 years",
+      "label": "How far HMRC can assess: ordinary, careless, deliberate"
+    },
+    {
+      "value": "0% to 10%",
+      "label": "Failure-to-notify penalty floor, unprompted against prompted"
+    },
+    {
+      "value": "90 days",
+      "label": "To disclose and pay once HMRC acknowledges your notification"
+    },
+    {
+      "value": "Since Sept 2013",
+      "label": "The Let Property Campaign has run with no announced end date"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Which route fits, and why it is not a free choice",
+      "body": "Residential landlords, UK resident and non-UK resident, with undisclosed rental income can use the Let Property Campaign. It does not cover companies, trusts or commercial property. Commercial and mixed-use letting goes through the Digital Disclosure Service instead, on the same notify, disclose and pay pattern. Where offshore income or assets are involved, the Worldwide Disclosure Facility and the Failure to Correct rules apply and the penalties change sharply. The <a href=\"/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026\">disclosure mechanics guide</a> walks through each step."
+    },
+    {
+      "title": "How many years you have to go back",
+      "body": "There is no single answer, and six years is the most common wrong one. Under TMA 1970 the ordinary window is 4 years, with no behaviour element. Careless behaviour extends it to 6 years under section 36(1) and deliberate behaviour to 20 years under section 36(1A). Offshore matters carry a separate 12-year window under section 36A, even where nobody was careless. <a href=\"/blog/landlord-tax-essentials/discovery-assessment-time-limits-landlord-tax-enquiries-tma-1970-s29\">How discovery assessments work</a> sets out the tests."
+    },
+    {
+      "title": "Prompted against unprompted, and what it is worth",
+      "body": "Where you never told HMRC you were chargeable, Schedule 41 FA 2008 applies: maximum penalties of 30% for non-deliberate behaviour, 70% for deliberate and 100% for deliberate and concealed. Disclosure mitigates within those bands: unprompted floors of 0% for a non-deliberate failure disclosed within 12 months of the liability arising, then 20% and 30%; prompted floors of 10%, 35% and 50%. Where returns were filed but wrong, Schedule 24 FA 2007 applies, with a 15% prompted floor for careless behaviour."
+    },
+    {
+      "title": "Rebuilding income and expenses without the records",
+      "body": "Few landlords hold clean books going back six or twenty years. Bank statements, tenancy agreements, agent statements, mortgage interest certificates and deposit scheme records are the usual reconstruction sources. Expenses matter as much as income: repairs, agent fees, insurance and the finance cost restriction all reduce what you disclose, and HMRC expects a reasoned basis, not round numbers. Income tax records run to 5 years after the 31 January following the tax year."
+    },
+    {
+      "title": "Interest, and paying what you owe",
+      "body": "Interest runs on the unpaid tax from the date it was originally due, not from the date you disclose, so on old years it is larger than most expect. It is not a penalty, and coming forward does not reduce it. Tax, interest and penalty go in as one figure, payable on submission. Size the tax on a year first with the <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a>."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A first review that fixes the route and the years",
+      "body": "That review covers what income was received, what property it came from, whether any of it is offshore, whether returns were filed, and what HMRC has already sent you. That settles the route and the behaviour category. Nothing is notified until both are, because notification starts a clock."
+    },
+    {
+      "title": "Notification and the 90-day window",
+      "body": "A specialist firm from the partner network prepares and submits the notification. HMRC acknowledges it and issues a disclosure reference, and the 90 days to disclose and pay run from that acknowledgement. Notifying does not create penalty exposure. The work is planned backwards from that deadline, so the computation and payment position are ready in time."
+    },
+    {
+      "title": "A year-by-year computation you can check",
+      "body": "Your accountant prepares a schedule per tax year: rental income, allowable expenses, the finance cost position, tax due, interest to the disclosure date and the penalty at the band claimed. Where records are missing, the assumptions are written down and evidenced, so the basis is visible and defensible."
+    },
+    {
+      "title": "The mitigation case, and what follows",
+      "body": "The penalty band is argued, not filled in. Telling, helping and giving access move a penalty within its band, and the disclosure is prepared so your co-operation is evident from it. Where the facts support suspension of a careless penalty or a reasonable excuse, the point is made at the time rather than on appeal."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is it better to come forward before HMRC writes to me?",
+      "answer": "It usually lowers the penalty floor, the part of the bill you can influence. A disclosure is unprompted only where you had no reason to believe HMRC had discovered it, or was about to. For a failure to notify chargeability, an unprompted non-deliberate disclosure made within 12 months of the liability arising has a 0% floor, against 10% prompted. The tax and interest are the same either way."
+    },
+    {
+      "question": "How many years will I have to disclose?",
+      "answer": "It depends on behaviour, not on the campaign. The ordinary window is 4 years, careless behaviour takes it to 6 and deliberate behaviour to 20, with a 12-year window for offshore matters even without carelessness. A specialist reviews each year separately, because the category can differ between them and the honest characterisation is what the computation rests on."
+    },
+    {
+      "question": "What if I have no records for the early years?",
+      "answer": "Reconstruction is normal and HMRC expects it. Bank statements, agent statements, tenancy agreements and mortgage interest certificates usually carry most of the picture. Where a figure has to be estimated, the method is stated and applied consistently across years rather than left as a round number. Expenses are reconstructed as carefully as income, because leaving them out overstates what you pay."
+    },
+    {
+      "question": "HMRC has already written to me. Can I still use the campaign?",
+      "answer": "Often yes, but the disclosure is then prompted and the floor rises. What the letter is matters more than that it arrived. A nudge letter asking you to check your position is not an assessment, and the reply and its timing carry weight: see the <a href=\"/blog/landlord-tax-essentials/hmrc-nudge-letter-response-playbook-landlords-property-income\">nudge letter playbook</a>. An opened enquiry is different again, so a specialist reads the letter first."
+    },
+    {
+      "question": "What if I cannot pay in full within 90 days?",
+      "answer": "The disclosure is still made on time and a time to pay arrangement is requested alongside it. HMRC asks about your income, outgoings, assets and why payment in full is not possible, then decides case by case. Interest continues to run on the balance. Disclosing and asking beats missing the window the mitigated penalty was agreed against."
+    },
+    {
+      "question": "Could HMRC prosecute me?",
+      "answer": "Criminal prosecution sits outside the campaign routes, and no route other than the Contractual Disclosure Facility carries immunity from it. The campaigns exist for civil settlement. What a specialist can do is match the route to the facts: where deliberate behaviour with prosecution exposure is present, the <a href=\"/blog/landlord-tax-essentials/cop9-contractual-disclosure-facility-landlord-tax-fraud-investigation\">Code of Practice 9 track</a>, with its 60-day acceptance window, is the correct step."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md section 27.1 (TMA 1970 s.29, s.34, s.36, s.36A: 4, 6, 20 and 12 year assessment windows; verified at legislation.gov.uk/ukpga/1970/9/section/36)",
+    "docs/property/house_positions.md section 27.2 (Schedule 24 FA 2007 maxima 30/70/100% and disclosure floors 0/20/30% unprompted, 15/35/50% prompted; F-5 correction: no 12-month qualifier on the Sch 24 careless-unprompted floor; verified at legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/10)",
+    "docs/property/house_positions.md section 27.3 (Schedule 41 FA 2008 maxima 30/70/100% and para 13 floors 0/20/30% unprompted with the 12-month limb on the non-deliberate 0%, 10/35/50% prompted; verified at legislation.gov.uk/ukpga/2008/9/schedule/41)",
+    "docs/property/house_positions.md section 27.5 (Code of Practice 9 and the Contractual Disclosure Facility: HMRC-initiated, 60-day acceptance window, immunity limited to matters disclosed)",
+    "docs/property/house_positions.md section 27.6 (Let Property Campaign open since 9 September 2013 with no announced end date, residential-only eligibility, notify then disclose and pay within 90 days of acknowledgement, notification carries no penalty consequence; Digital Disclosure Service for other UK matters; Worldwide Disclosure Facility and FA 2017 Sch 18 Failure to Correct for offshore)",
+    "docs/property/house_positions.md section 27.7 (TMA 1970 s.12B record retention: 5 years after the 31 January following the tax year for income tax)",
+    "docs/property/coverage_map_2026-09.json (row working_title 'Accountants for landlords making an HMRC rental income disclosure', target query 'let property campaign accountant', hp_anchors 27, 27.6, 27.2)"
+  ]
+}

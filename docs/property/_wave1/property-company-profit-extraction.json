@@ -1,0 +1,98 @@
+{
+  "slug": "property-company-profit-extraction",
+  "title": "Property Company Directors Taking Money Out",
+  "headline": "Accountants for property company directors taking money out",
+  "metaTitle": "Property Company Profit Extraction Accountant",
+  "metaDescription": "Taking money out of your property company? Get the salary, dividend, loan and pension order reviewed and the paperwork prepared by a property tax specialist.",
+  "intro": "You own a property company, profit has built up inside it, and you want it out without paying more tax than you need to. The order you draw in matters more than the total: a director's loan balance comes back to you with no personal tax, dividends are taxed at the 2026/27 rates on top of corporation tax already paid, and salary carries employer National Insurance the company must fund. A specialist looks first at what your director's loan account really stands at, whether the company keeps the small profits rate, and how much profit you actually need to draw. You finish with an extraction order for the tax year and the paperwork prepared to match.",
+  "stats": [
+    {
+      "value": "10.75% / 35.75% / 39.35%",
+      "label": "Dividend rates from 6 April 2026"
+    },
+    {
+      "value": "£500",
+      "label": "Dividend allowance, 2026/27"
+    },
+    {
+      "value": "35.75%",
+      "label": "Section 455 charge on a loan made on or after 6 April 2026"
+    },
+    {
+      "value": "9 months",
+      "label": "After year end before an overdrawn loan is charged"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Dividends against salary at the 2026/27 rates",
+      "body": "From 6 April 2026 the dividend rates are 10.75% basic, 35.75% higher and 39.35% additional, after an allowance of only £500. Basic and higher each rose by two percentage points from the 8.75% and 33.75% of 2025/26, so a mix settled two years ago is no longer the same answer. Salary is deductible against corporation tax, but the company pays employer National Insurance at 15% above the £5,000 secondary threshold, and a sole-director company cannot claim the Employment Allowance. The <a href=\"/calculators/property-company-extraction-calculator\">extraction calculator</a> compares the routes."
+    },
+    {
+      "title": "The director's loan balance you can repay without tax",
+      "body": "If you transferred properties into the company, it almost certainly owes you money, and repaying that credit balance costs no personal tax. It is usually the first route. The trap is exhaustion: drawing monthly against a balance created at incorporation can run a large credit down within four or five years, and the year it empties is the year you move to higher-rate dividends."
+    },
+    {
+      "title": "When the loan runs the other way",
+      "body": "Take out more than the company owes you and the account goes overdrawn, making you a participator with a loan from a close company. Where it is still outstanding nine months and one day after the year end, the company pays a section 455 charge under CTA 2010: 35.75% for loans made on or after 6 April 2026, 33.75% for earlier loans, because the rate follows the dividend upper rate at ITA 2007 s.8(2). It is refunded once you repay, but slowly."
+    },
+    {
+      "title": "What the company pays before you take anything",
+      "body": "Profit is taxed inside the company first: 19% up to £50,000, 25% above £250,000, and marginal relief in between at an effective 26.5%, with the thresholds divided between associated companies. A close investment-holding company loses the small profits rate and pays 25% throughout. Most buy-to-let companies are not caught, because letting land commercially to unconnected tenants is a permitted purpose under CTA 2010 s.18N, but letting to a connected person, or to their spouse or a relative, falls outside it. <a href=\"/calculators/corporation-tax-calculator\">Check the company figure</a> first."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A review of the extraction order for this tax year",
+      "body": "A specialist reviews the company's profit, your other personal income, the director's loan account, the share classes and whether an employer pension contribution is available, then sets out the order to draw in and what each step costs. The output is a sequence with figures attached rather than one number, because the right mix depends on your income outside the company."
+    },
+    {
+      "title": "The director's loan account rebuilt from the records",
+      "body": "Where the loan account has drifted, a specialist reconstructs it from the incorporation paperwork, the bank statements and the expenses you paid personally, and tells you what the balance really is. That figure decides how much can come out with no personal tax, whether a section 455 exposure is building, and the year the credit balance runs out."
+    },
+    {
+      "title": "Payroll, dividend paperwork and the filings that follow",
+      "body": "Your accountant prepares the payroll for any salary drawn, the board minutes and dividend vouchers for each distribution, the section 455 entries on the corporation tax return, and the dividend pages of your self assessment. Accounts and personal return come from the same figures. The <a href=\"/blog/incorporation-and-company-structures/extracting-cash-from-property-spv-extraction-sequence-pillar-2026-27\">sequencing guide</a> shows how this runs across several years."
+    },
+    {
+      "title": "What the enquiry needs from you",
+      "body": "Describe the company and what you want to take out, and the three figures that matter come first: the director's loan credit balance, the profit already taxed at 19% to 25%, and your income outside the company. Those set whether the next pound leaves as a loan repayment, a dividend or an employer pension contribution."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is it better to take salary or dividends from a property company in 2026/27?",
+      "answer": "Neither on its own, because they are taxed in different places. Salary reduces the company's corporation tax but costs employer National Insurance at 15% above the £5,000 secondary threshold, which a sole-director company cannot cover with the Employment Allowance. Dividends come out of profit already taxed at 19% to 25%, then are taxed on you at 10.75%, 35.75% or 39.35% above the £500 allowance. The crossover depends on your other income."
+    },
+    {
+      "question": "Can I take money out of my property company tax free?",
+      "answer": "Only where the company owes it to you. If you funded the company or transferred properties into it, the director's loan credit balance is a debt the company repays, and a repayment is not income, so no personal tax arises. Reimbursed business expenses work the same way. Everything else is salary, a dividend, a pension contribution or a loan, and each carries a tax consequence."
+    },
+    {
+      "question": "What happens if my director's loan account goes overdrawn?",
+      "answer": "The company owes a section 455 charge on any balance still outstanding nine months and one day after its year end. For loans made on or after 6 April 2026 the rate is 35.75%, matching the dividend upper rate; earlier loans carry 33.75%. The charge is refunded after you repay, but the refund follows the company's tax cycle. Repaying shortly before the deadline and redrawing after it is caught by anti-avoidance rules."
+    },
+    {
+      "question": "Can the company pay into my pension instead of paying me a dividend?",
+      "answer": "It can, and for many property company owners it is the cheapest route out. An employer contribution is deductible against corporation tax where it meets the wholly and exclusively test, carries no National Insurance, and is not taxed on you when paid. The annual allowance is £60,000, and unused allowance from earlier years can sometimes be carried forward. The money is locked until pension age."
+    },
+    {
+      "question": "Should I put my spouse on the shares to use their dividend allowance?",
+      "answer": "An outright gift of ordinary shares to a spouse is effective for dividend purposes because of the spouse exception in the settlements legislation, and it is a common property company structure. It has to be a real gift of real shares with full rights, not a paper arrangement leaving you with the income. Shares held for a child under eighteen are different: that income is treated as yours."
+    },
+    {
+      "question": "How much dividend tax will I pay on what I draw this year?",
+      "answer": "It depends on your total income, because dividends sit on top of it. After the £500 allowance, dividends in the basic rate band are taxed at 10.75%, in the higher rate band at 35.75%, and above the additional rate threshold at 39.35%. That sits on top of corporation tax the company has already paid. The <a href=\"/calculators/dividend-tax-calculator\">dividend tax calculator</a> gives the personal figure."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md section 21.1 (directors' loan accounts): credit balances from s.162 incorporation repayable with no personal tax, repayment order loan then dividends then salary then pension, s.455 CTA 2010 charge at the dividend upper rate (33.75% for loans made before 6 April 2026, 35.75% on or after), charge on amounts unpaid 9 months after year end and refundable on repayment, DLA exhaustion trap",
+    "docs/property/house_positions.md section 21.2 (share classes and the settlements legislation): ITTOIA 2005 s.624 with the s.626 spouse exception per Jones v Garnett [2007] UKHL 35, minor-child shares settlor-attributed",
+    "docs/property/house_positions.md section 21.4 (salary vs dividends in a property SPV 2026/27): CT 19% to 50,000, 25% above 250,000, marginal relief effective 26.5%, CTA 2010 Part 3A ss.18A-18N and the associated-company divisor; employer NI 15% above the 5,000 secondary threshold with the sole-director Employment Allowance exclusion; dividend allowance 500; employer pension contributions deductible against CT with a 60,000 annual allowance; s.455 at 35.75% for 2026/27",
+    "docs/property/house_positions.md section 21.9 (dividend rates 2026/27 numeric lock, manager source-verified 2026-07-08): ITA 2007 s.8 as in force from 6 April 2026, ordinary 10.75%, upper 35.75%, additional 39.35%, FA 2026 s.4 amended only the ordinary and upper rates; CTA 2010 s.18N CIHC carve-out for commercial letting to unconnected persons, connectedness condition stated",
+    "docs/property/coverage_map_2026-09.json: row working_title 'Accountants for property company directors taking money out', situation 'Owner extracting profit from an existing property company', target_query 'property company accountant profit extraction', wave 1, hp_anchors 21.1 / 21.4 / 21.9; the four sibling COVERED rows for the same situation (extraction-sequence pillar, property-company-dividend-tax, the BTL director's loan repayment post, how-to-close-a-property-limited-company) are pointed at rather than repeated",
+    "CTA 2010 ss.464C-464D (repayment, bed-and-breakfasting and arrangements rules): source for the FAQ statement that repaying shortly before the section 455 deadline and redrawing after it is caught by anti-avoidance rules; primary law, house positions is silent",
+    "Property/web/src/lib/calculators/registry.ts: property-company-extraction-calculator, dividend-tax-calculator and corporation-tax-calculator are all live generic tools, so all three linked calculator slugs exist",
+    "Property/web/src/config/site.ts line 39: partner network consent wording, quoted verbatim in howWeHelp"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "hmo-and-multi-let-landlords",
+  "title": "HMO and Multi-Let Landlords",
+  "headline": "Accountants for HMO and multi-let landlords",
+  "metaTitle": "HMO Accountant | Multi-Let and Student Landlords",
+  "metaDescription": "Specialist accounting for UK HMO, student and small commercial landlords: licensing costs, bills-included rents, council tax, capital allowances and structure.",
+  "intro": "If you run an HMO, a student let or a small mixed-use building, your tax position looks nothing like a single buy to let. Rent arrives per room, the bills sit with you rather than the tenant, licensing and fire safety work runs alongside ordinary repairs, and a shop on the ground floor pulls a second set of rules into the same return. Four questions come first: which conversion, fire safety and licensing costs are revenue and which are capital, whether your common parts and non-dwelling space carry a capital allowances claim, how council tax or business rates are landing on the building, and whether the profit is better held personally or in a company. Those four are written up against your own figures, and a specialist firm prepares the returns.",
+  "stats": [
+    {
+      "value": "5 or more",
+      "label": "Occupants in two or more households: the mandatory HMO licensing test"
+    },
+    {
+      "value": "£40,000",
+      "label": "Maximum civil penalty per licensing offence from 1 May 2026"
+    },
+    {
+      "value": "One bill",
+      "label": "An HMO in England is a single council tax dwelling, owner liable, since 1 December 2023"
+    },
+    {
+      "value": "£1m",
+      "label": "Annual Investment Allowance, permanent, for qualifying plant"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Which HMO costs are revenue and which are capital",
+      "body": "This line decides your bill, and HMO work sits right on it. Replacing a worn fire door like for like is normally a repair against this year's rent. Fitting fire doors, an alarm system and a protected escape route into a house that never had them, as part of turning it into an HMO, is improvement expenditure that goes to your capital base and waits for a sale."
+    },
+    {
+      "title": "Bills-included rent and what you can deduct",
+      "body": "Multi-let rents are usually quoted with gas, electricity, water, broadband and sometimes cleaning built in. The whole rent is taxable income, and the bills are deductible where they are incurred wholly and exclusively for the rental business, so you are taxed on the margin rather than the headline. Two things catch people out: once rooms are empty you still carry the utilities and the council tax on the whole building, and any part you or your family occupy comes out of the claim. The <a href=\"/calculators/portfolio-profitability-calculator\">portfolio profitability calculator</a> runs the real numbers before you set next year's room rates."
+    },
+    {
+      "title": "Council tax and business rates on an HMO",
+      "body": "Since 1 December 2023 an HMO in England is treated as a single dwelling for council tax, with one band and one bill, and the liability sits with you as owner rather than with the tenants. Older per-room bandings stay on the list until reviewed. Because the bill is yours, void-period council tax is a genuine deductible cost. Where a building has a real commercial element, that part can fall into business rates instead, a separate assessment with its own reliefs."
+    },
+    {
+      "title": "Capital allowances on common parts and mixed-use space",
+      "body": "Plant inside a dwelling-house is barred from capital allowances in a property business by CAA 2001 s.35. HMOs and mixed-use buildings are the exception worth checking. Plant in the common parts, such as a communal boiler, a lift or stair lighting, can qualify, and so can integral features in space that is genuinely not a dwelling: a ground floor shop, office or commercial unit. From April 2026 the main pool writing-down allowance is 14%, the special rate pool stays at 6%, and the Annual Investment Allowance is £1m. Size a claim with the <a href=\"/calculators/capital-allowances-calculator\">capital allowances calculator</a>, and the mechanics sit in <a href=\"/blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property\">the s.35 common parts guide</a>."
+    },
+    {
+      "title": "Whether a company suits a high-yield portfolio",
+      "body": "HMOs are geared and yield-heavy, so the Section 24 finance cost restriction bites hard. As an individual you do not deduct mortgage interest from rental profit; you get a basic rate reducer instead, 20% for 2026/27 and rising to the new 22% property basic rate from 2027/28. A company deducts interest in full before corporation tax. That is not the whole answer: incorporating triggers capital gains tax and stamp duty land tax unless a relief applies, and companies under common control share one set of corporation tax limits rather than a full £50,000 band each. The <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a> gives the personal side first."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A review of conversion and refurbishment spend",
+      "body": "A specialist works through the invoices behind each building and splits them into repairs, improvements and qualifying plant, with a note against each judgement, documented at the time rather than reconstructed later if HMRC asks."
+    },
+    {
+      "title": "A capital allowances position for non-dwelling space",
+      "body": "Where a building has communal plant, integral features or a commercial unit, a specialist identifies the qualifying expenditure and checks the s.35 boundary, and on a commercial purchase checks whether a s.198 fixtures election was agreed inside the two-year window."
+    },
+    {
+      "title": "A structure comparison before you commit",
+      "body": "A specialist models personal ownership against a company on your actual rents, interest and drawings, and prices the move itself: capital gains tax, stamp duty land tax, and the corporation tax limits shared across associated companies."
+    },
+    {
+      "title": "Returns, accounts and quarterly filings prepared",
+      "body": "Your accountant prepares the self assessment or the company accounts and corporation tax return, keeps licensing fees and running costs in the right period, and sets up the digital records Making Tax Digital for Income Tax needs before your start date."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does every HMO need a licence?",
+      "answer": "No. Mandatory licensing applies to an HMO occupied by five or more people forming two or more households, anywhere in England. Below that, a licence is needed only where your local authority has designated an additional scheme for smaller HMOs, or a selective licensing area covering all private rentals. Around seventy authority areas operate selective licensing. Wales, Scotland and Northern Ireland run separate regimes, so a portfolio spread across borders is checked authority by authority."
+    },
+    {
+      "question": "Are HMO licence fees tax deductible?",
+      "answer": "Yes. A licence fee is a running cost of the rental business and is deductible as a revenue expense. Fines and civil penalties are not. From 1 May 2026 the civil penalty for a licensing offence is capped at £40,000 per offence, and a tenant or the local authority can apply for a rent repayment order covering up to two years of rent where a property was let unlicensed."
+    },
+    {
+      "question": "Who pays the council tax on an HMO?",
+      "answer": "You do, as the owner. An HMO in England is treated as a single dwelling with one band and one bill, and the liability regulations put that bill on the owner rather than the residents. Because it is your cost, council tax you pay during voids is deductible against rental profit. If every occupant is a full-time student the property can be exempt, but a mixed household of students and non-students is not."
+    },
+    {
+      "question": "Should I move my HMO portfolio into a limited company?",
+      "answer": "It depends on your gearing, your other income and how long you intend to hold. Companies deduct mortgage interest in full, which matters more for HMOs than for low-yield lets, but the transfer is a disposal for capital gains tax and usually a stamp duty land tax charge, and associated companies share one set of corporation tax thresholds. Model both positions on your own figures before deciding."
+    },
+    {
+      "question": "My building has a shop downstairs. Does that change anything?",
+      "answer": "It changes several things at once. The commercial part can open up capital allowances the flats above cannot, it may be assessed for business rates rather than council tax, rent from it can carry VAT where the property is opted to tax, and buying the whole building may fall under the mixed-use stamp duty land tax rates rather than the residential rates."
+    }
+  ],
+  "sources": [
+    "house_positions.md 26.9 HMO and selective licensing, Housing Act 2004 Parts 2 and 3: s.254 HMO definition, s.61 with SI 2018/221 five-person mandatory test, s.249A civil penalty of £40,000 per offence from 1 May 2026 (SI 2026/319 reg.2), rent repayment orders up to two years (RRA 2025), about 70 selective licensing areas, licence fees deductible under ITTOIA 2005 s.272, penalties not deductible (BIM38500+)",
+    "house_positions.md 30.5 SI 2023/1175 in force 1 December 2023: article 3C of SI 1992/549 treats an HMO as a single dwelling; SI 1992/551 Class C owner liability; void council tax deductible; pre-December-2023 per-room bandings remain until reviewed",
+    "house_positions.md 30.3 Class N all-student exemption against a partly-student household; 30.6 Wales, Scotland and Northern Ireland divergence (Northern Ireland uses domestic rates)",
+    "house_positions.md 25.2 and 38: CAA 2001 s.35 dwelling-house bar with the common parts carve-out, s.33A integral features, s.198 fixtures election and the two-year window, main pool WDA 14% from April 2026 (FA 2026 s.28), special rate pool 6%, AIA £1,000,000 permanent (F(No.2)A 2023 s.8)",
+    "house_positions.md 25.4 CAA 2001 s.270CF(a)(iii): purpose-built student accommodation is residential use and excluded from the structures and buildings allowance",
+    "house_positions.md 4: Section 24 finance cost restriction, 20% reducer for 2026/27 rising to the 22% property basic rate from 2027/28 (FA 2026 Sch 1); does not apply to companies",
+    "house_positions.md 21.A: CTA 2010 s.18A, s.18D and s.18E, £50,000 lower limit and £250,000 upper limit for 2026/27, each divided by one plus the number of associated companies",
+    "house_positions.md 19.2, 19.4 and 19.14: MTD for ITSA qualifying income is gross rental and trading turnover before expenses, joint owners count their own share, and spreadsheets need a digital link to filing software",
+    "house_positions.md 34: ITTOIA 2005 s.272 import gateway and the s.34 wholly-and-exclusively test for allowable running costs",
+    "Existing Property posts complemented rather than repeated: /blog/property-types-and-specialist-tax/hmo-common-parts-capital-allowances-s35-claim-mechanics-multi-tenant-property, /blog/property-types-and-specialist-tax/government-to-end-council-tax-on-hmo-rooms, /blog/property-types-and-specialist-tax/hmo-licensing-fees-tax-deductible-uk-landlords, /blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant, /blog/incorporation-and-company-structures/incorporating-an-hmo-into-a-limited-company-pros-and-cons",
+    "Mixed-use FAQ, primary law (house positions silent): VATA 1994 Sch 10 option to tax on commercial rent; FA 2003 s.55 Table B non-residential and mixed-use SDLT rates on a whole building; LGFA 1988 s.41/s.42 non-domestic rating list for the commercial part",
+    "coverage_map_2026-09.json row: working_title 'Accountants for HMO and multi-let landlords', situation 'HMO, student and commercial landlord', target_query 'hmo accountant', wave 1, hp_anchors 26.9 / 25 / 30.5"
+  ]
+}

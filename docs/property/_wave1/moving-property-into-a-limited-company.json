@@ -1,0 +1,100 @@
+{
+  "slug": "moving-property-into-a-limited-company",
+  "title": "Landlords Moving Property Into a Limited Company",
+  "headline": "Accountants for landlords moving property into a limited company",
+  "metaTitle": "Accountant to Transfer Property Into a Company",
+  "metaDescription": "Moving your buy-to-lets into a limited company? A specialist reviews the SDLT, the CGT and the refinancing before anything moves. For UK landlords.",
+  "intro": "You already own buy-to-lets in your own name and you are working out whether to move them into a limited company, and what that would cost. The real question is whether the stamp duty and capital gains tax on the way in are worth the corporation tax treatment afterwards. A specialist from the partner network starts with the market value and debt on each property, how the lettings are actually run, and who your lender is. Those answers decide whether section 162 incorporation relief is in play and whether a partnership route is open. By the end of it you know the cost of entry, which route fits and where HMRC would push back.",
+  "stats": [
+    {
+      "value": "5%",
+      "label": "Additional dwellings SDLT surcharge the company pays on the transfer"
+    },
+    {
+      "value": "18% / 24%",
+      "label": "CGT rates on residential gains in 2026/27"
+    },
+    {
+      "value": "3 years",
+      "label": "Anti-withdrawal window after a partnership transfer"
+    },
+    {
+      "value": "22% / 42% / 47%",
+      "label": "Property income tax rates from 6 April 2027"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Stamp duty is charged on market value, not on what you pay yourself",
+      "body": "Selling to your own company is a connected-party transaction, so SDLT is worked out on the open market value of each property whatever figure sits on the transfer deed. The company also pays the 5% additional dwellings surcharge on top of the standard bands, and a single dwelling above 500,000 pounds can fall into the 17% flat rate for non-natural persons. Put your own numbers through the <a href=\"/calculators/stamp-duty-calculator\">stamp duty calculator</a> first."
+    },
+    {
+      "title": "The partnership route is narrower than the commentary suggests",
+      "body": "Where the lettings are genuinely run as a partnership, the sum of the lower proportions calculation in Schedule 15 of the Finance Act 2003 can reduce the chargeable consideration, and at 100% it removes it. That needs a real partnership with substance: filed returns, records, joint borrowing. One created weeks before the transfer is the pattern HMRC challenges. Cohabiting unmarried couples are not connected persons, and withdrawing capital within three years is itself chargeable."
+    },
+    {
+      "title": "Incorporation relief now has to be claimed, and it has to be earned",
+      "body": "The transfer is a disposal at market value, so the gain since purchase is chargeable at 18% or 24% with a 3,000 pound annual exempt amount against it. Section 162 relief rolls that gain into the base cost of your shares, but only where you transfer a business as a going concern with all its assets other than cash for shares. Since 6 April 2026 it must also be claimed, by the first anniversary of the 31 January following the tax year of transfer."
+    },
+    {
+      "title": "Your lender has to agree, and the new borrowing costs more",
+      "body": "A personal buy-to-let mortgage does not follow the property into a company. Each loan is redeemed and refinanced onto limited company terms: early repayment charges, arrangement fees, new valuations and a personal guarantee from you as director. Company products typically price above equivalent personal ones, and this is the part most likely to stop the plan."
+    },
+    {
+      "title": "A company is a permanent running cost, not a one-off decision",
+      "body": "Afterwards you have annual accounts, a CT600, confirmation statements and identity verification at Companies House, and you no longer own the rent personally. Taking money out means a director's loan repayment, a dividend or salary. The loan account credit created on incorporation is the cheapest route and it runs out. Dividends above the 500 pound allowance are taxed at 10.75%, 35.75% and 39.35%."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A cost of entry you can check line by line",
+      "body": "A specialist reviews each property's market value, base cost and outstanding debt, then prices the SDLT the company would pay and the CGT you would face without relief. You get figures per property, not one portfolio total, because the answer is often that some should move and others should not. Sanity-check it first with the <a href=\"/calculators/incorporation-cost-calculator\">incorporation cost calculator</a>."
+    },
+    {
+      "title": "A written view on whether section 162 is available to you",
+      "body": "Your accountant prepares an assessment of whether your lettings amount to a business on the evidence that exists: hours spent, number of properties, who deals with tenants and repairs, what your records show. A strong case is documented so it can be defended. A thin one is put to you plainly."
+    },
+    {
+      "title": "The partnership question answered before it is relied on",
+      "body": "Where a partnership already operates, a specialist reviews the returns, the income profit shares and the connected-person positions, and works the sum of the lower proportions through to a figure. Where none exists, you are told what a genuine one would require and how long it would need to have run."
+    },
+    {
+      "title": "The structure, the filings and the timetable",
+      "body": "The share structure, the director's loan account position and the transfer timetable are prepared alongside your solicitor and broker, so the refinancing, the conveyancing and the filings line up. That covers the 60-day capital gains return where tax is due, the section 162 claim where it applies, and how money comes out afterwards."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I pay stamp duty when I transfer my own property to my own company?",
+      "answer": "Yes, in almost every case. The company is a connected party, so SDLT is calculated on the open market value of the property rather than any price you put on the transfer, and there is no relief simply because you own both sides. The company pays the residential bands plus the 5% additional dwellings surcharge. The main exception is a genuine partnership transfer under Schedule 15, where the sum of the lower proportions can reduce or remove the charge."
+    },
+    {
+      "question": "Does incorporation relief mean I pay no capital gains tax?",
+      "answer": "It means the gain is rolled into the base cost of the shares you receive rather than taxed on transfer, so the tax is deferred rather than cancelled, and you meet it if you later sell the shares. You must transfer a business as a going concern, all its assets other than cash must go across, and the consideration must be wholly or partly shares. Since 6 April 2026 it must be claimed rather than applying automatically."
+    },
+    {
+      "question": "Is my rental portfolio a business for section 162 purposes?",
+      "answer": "It depends on the activity, not the number of doors alone. HMRC looks for evidence of a business being carried on: active management, time committed, decisions made, work done on tenancies and repairs rather than an agent doing everything while you receive a statement. A larger portfolio under hands-on management is the stronger case; one or two lets run by an agent usually is not."
+    },
+    {
+      "question": "Should I incorporate before the 2027 property income tax rates start?",
+      "answer": "The change raises property income rates to 22%, 42% and 47% from 6 April 2027 in England, Wales and Northern Ireland, and lifts the Section 24 finance cost reducer to 22% at the same time. A basic-rate landlord sees no new gap. For a higher-rate landlord the finance cost gap stays the width it is now, so the rate rises without a new penalty on borrowing. More on <a href=\"/blog/incorporation-and-company-structures/2027-tax-rates-incorporation-decision-property-landlords\">the 2027 rates and the incorporation decision</a>."
+    },
+    {
+      "question": "How long does transferring a portfolio into a company take?",
+      "answer": "Plan on several months rather than weeks for a portfolio of any size. Company formation and identity verification at Companies House are quick. The slow parts are market valuations for every property, the refinancing offer from a limited company lender, and the conveyancing on each title. Where capital gains tax is payable, a return and payment are due within 60 days of completion. The <a href=\"/blog/incorporation-and-company-structures/how-to-transfer-property-into-limited-company-uk\">step-by-step transfer sequence</a> is set out separately."
+    }
+  ],
+  "sources": [
+    "house_positions.md 1 (SDLT residential bands 2026/27, 5% additional dwellings surcharge from 31 Oct 2024, Sch 4A 17% flat rate over 500k for non-natural persons)",
+    "house_positions.md 1.A (FA 2003 Sch 15 paras 18-20 sum of lower proportions on transfer from a partnership to a connected company, paras 10-13 the mirror rule for transfers into a partnership, para 17A three-year anti-withdrawal rule, CTA 2010 s.1122 connected persons and cohabitants, genuine-partnership substance requirement)",
+    "house_positions.md 1.B (FA 2003 s.108 linked transactions, aggregation of consideration)",
+    "house_positions.md 4 (Section 24 finance cost restriction, 20% reducer 2026/27, 22% from 2027/28, does not apply to companies)",
+    "house_positions.md 5 (CGT 18%/24% residential from 30 Oct 2024, 3,000 pound annual exempt amount, 60-day reporting where tax is due, s.162 incorporation relief must be claimed for transfers on or after 6 Apr 2026 and the claim deadline, business test)",
+    "house_positions.md 7 (property income rates 22%/42%/47% from 6 April 2027 for England, Wales and NI; reducer tracks 22%; wedge does not widen)",
+    "house_positions.md 11 (Companies House reforms, identity verification)",
+    "house_positions.md 21.1 (director's loan account credit created on s.162 transfer, repayment order, DLA exhaustion, s.455 charge 35.75% for loans made on or after 6 Apr 2026)",
+    "house_positions.md 21.4 (dividend rates 2026/27: 500 pound allowance, 10.75%/35.75%/39.35%)",
+    "docs/property/coverage_map_2026-09.json, situation 'Landlord moving personally held buy-to-lets into a limited company'"
+  ]
+}

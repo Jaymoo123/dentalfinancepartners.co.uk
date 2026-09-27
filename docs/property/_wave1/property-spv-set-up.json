@@ -1,0 +1,100 @@
+{
+  "slug": "property-spv-set-up",
+  "title": "Setting Up a Property SPV",
+  "headline": "Accountants for landlords setting up a property SPV",
+  "metaTitle": "SPV Accountant for Property Investors | UK",
+  "metaDescription": "Setting up a property SPV to buy your first or next buy-to-let? Specialist support on SIC codes, SDLT, director's loans, corporation tax and first-year filings.",
+  "intro": "You have decided the next property goes into a company, and now the company itself has to be right before completion, whether this is a first buy-to-let or an addition to a portfolio you hold personally. What you set up on day one is expensive to unpick later. Four decisions sit ahead of formation: who holds the shares and in what classes, which SIC code the company registers under and whether your lender accepts it, how the deposit reaches the company and how it comes back out, and what corporation tax looks like once associated companies are in the picture. All four are settled before the company is formed, so the formation record stands up to a lender and to HMRC, the 2026/27 extraction model is set, and the first-year filing dates are already on a calendar.",
+  "stats": [
+    {
+      "value": "5%",
+      "label": "SDLT additional dwellings surcharge on a company residential purchase"
+    },
+    {
+      "value": "19% to 25%",
+      "label": "Corporation tax on SPV profits in 2026/27, 26.5% effective in the marginal band"
+    },
+    {
+      "value": "£50,000",
+      "label": "Small profits rate limit, shared across associated companies"
+    },
+    {
+      "value": "35.75%",
+      "label": "Section 455 charge on an overdrawn director's loan made on or after 6 April 2026"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "SIC codes and what a buy-to-let lender expects",
+      "body": "The SIC code you register at Companies House is the first thing an underwriter reads, and a code describing development or management when you intend to let can stall an application weeks before completion. Pick it before the company exists, because changing it later has to be explained. Detail sits in the guide to <a href=\"/blog/property-finance/sic-code-for-an-spv-property-company\">SIC codes an SPV lender accepts</a>."
+    },
+    {
+      "title": "The 5% surcharge applies to the company's first purchase",
+      "body": "A company gets no first-property exemption. The additional dwellings surcharge of 5% applies on top of the standard residential rates from the first pound of a company residential purchase, for transactions on or after 31 October 2024. Above £500,000 a flat 17% rate for non-natural persons under Schedule 4A FA 2003 also comes into view, with relief where the interest is acquired exclusively as a source of rents in a qualifying property rental business. Model it with the <a href=\"/calculators/stamp-duty-calculator\">stamp duty calculator</a>."
+    },
+    {
+      "title": "Getting the deposit in, and planning how it comes back out",
+      "body": "Most first SPVs are funded by the director lending the deposit to the company. That creates a credit balance on the director's loan account, and repayment of it is a return of your own capital rather than income. The balance is finite: drawing against it monthly can exhaust it within a few years, after which extraction moves to dividends. An overdrawn account unpaid nine months after year end attracts a section 455 charge of 35.75%."
+    },
+    {
+      "title": "Corporation tax, and the rule that catches multi-company portfolios",
+      "body": "An SPV pays corporation tax at 19% on profits to £50,000, 25% above £250,000, and an effective 26.5% between. The trap for one-property-per-company plans is that both limits are divided by the number of associated companies plus one, so five SPVs under common control get a £10,000 small profits limit each. Close investment-holding company status removes the small profits rate, but commercial letting to unconnected tenants keeps most SPVs out. Check it on the <a href=\"/calculators/corporation-tax-calculator\">corporation tax calculator</a>."
+    },
+    {
+      "title": "First-year filings start sooner than most new directors expect",
+      "body": "Formation starts three clocks: a confirmation statement, first accounts at Companies House, and a corporation tax return once HMRC is told the company is trading. Directors and people with significant control also verify their identity with Companies House, directly or through an authorised corporate service provider, now that regime is mandatory. Dates are in the <a href=\"/blog/incorporation-and-company-structures/spv-first-year-accounts-and-filing-timeline\">SPV first-year filing timeline</a>."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A structure review before the company is formed",
+      "body": "The review starts with what you are buying, how many properties you expect to hold in three years, who needs to receive income, and whether a spouse or adult child should hold shares. The output is a written note on share classes, director appointments and whether one company or several fits the plan."
+    },
+    {
+      "title": "Formation records a lender and HMRC can follow",
+      "body": "Your accountant prepares the formation pack: the SIC code checked against your lender's criteria, the share register, the director's loan agreement, and identity verification for each director and person with significant control. The accounting reference date and HMRC registrations are set so first-year deadlines miss a completion week."
+    },
+    {
+      "title": "The corporation tax and extraction model for 2026/27",
+      "body": "A specialist models profit after mortgage interest, which is deductible in a company and not restricted the way it is on personally held residential property, then sets out the tax at your expected profit level including associated companies. Alongside it sits the extraction order: director's loan repayment first, then dividends at 10.75%, 35.75% and 39.35%, then salary and pension contributions."
+    },
+    {
+      "title": "A first-year calendar, and the deal checked against it",
+      "body": "The first-year calendar is dated obligation by obligation, and bookkeeping is set up so rent, mortgage interest and the director's loan are recorded separately, because a lender refinancing in year two will ask for accounts. A specialist also reviews the purchase itself, starting from the <a href=\"/calculators/buy-to-let-cashflow-calculator\">buy-to-let cashflow calculator</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should I buy my first property through an SPV or in my own name?",
+      "answer": "It turns on your marginal income tax rate, whether you need the rent to live on, and how long you intend to hold. A company pays corporation tax on profit after full mortgage interest relief, while personally held residential property is restricted to a basic-rate credit on finance costs. Against that, taking money out is a second tax event and company mortgage pricing is usually higher. A higher-rate taxpayer reinvesting the rent often does better in a company; someone drawing the income often does not."
+    },
+    {
+      "question": "Does my company pay the 5% stamp duty surcharge on its first property?",
+      "answer": "Yes. The surcharge does not depend on how many properties the buyer already owns when the buyer is a company; it applies from the first transaction, at 5% on top of the standard rates, for transactions on or after 31 October 2024. Above £500,000 a company residential purchase also meets a 17% flat rate under Schedule 4A FA 2003, with relief where the property is acquired exclusively as a source of rents in a qualifying rental business."
+    },
+    {
+      "question": "If I buy each property in a separate company, does each get the 19% rate?",
+      "answer": "No, and this is the most common misunderstanding about multi-SPV portfolios. Where companies are associated, meaning broadly under common control, the £50,000 lower limit and the £250,000 upper limit are divided by the number of associated companies plus one. Five SPVs under your control means a £10,000 small profits band each, and dormant companies are excluded. Lender requirements can still justify separate companies, but a lower tax rate rarely does."
+    },
+    {
+      "question": "What does the company have to file in its first year?",
+      "answer": "A confirmation statement, a first set of accounts at Companies House, and a corporation tax return and payment for the first accounting period. The first accounts period runs from incorporation to the accounting reference date, which Companies House sets automatically, so it is often longer than twelve months and splits into two corporation tax returns. Directors and people with significant control also complete identity verification."
+    },
+    {
+      "question": "Can a newly formed company with no trading history get a mortgage?",
+      "answer": "Usually yes. Buy-to-let lenders that work with SPVs underwrite the property's rental cover and the directors' personal circumstances rather than company accounts, and most expect personal guarantees. What they do check is the SIC code, that the directors and shareholders match the application, and that the source of the deposit is documented."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md §1 - residential SDLT bands 2026/27, 5% additional dwellings surcharge from 31 October 2024, Sch 4A FA 2003 flat rate 17% for non-natural persons over £500k, devolved LBTT/LTT note",
+    "docs/property/house_positions.md §11 - ECCTA 2023, Companies House identity verification for directors and PSCs, ACSP route",
+    "docs/property/house_positions.md §21.1 - director's loan credit balances, repayment order, DLA exhaustion trap, s.455 at 35.75% for loans made on or after 6 April 2026",
+    "docs/property/house_positions.md §21.2 - alphabet shares and the settlements legislation (share-class framing only)",
+    "docs/property/house_positions.md §21.4 - dividend rates 2026/27 10.75% / 35.75% / 39.35%, employer pension contributions as an extraction route",
+    "docs/property/house_positions.md §21.5 and §21.A - CIHC status and the s.18N(3) connected-tenant exclusion",
+    "docs/property/house_positions.md §21.A - 19% / 25% / 26.5% three-figure CT framework, £50,000 and £250,000 limits, associated-companies divisor (1 + N), dormant companies excluded",
+    "docs/property/house_positions.md §4 - Section 24 finance cost restriction, used as the contrast with corporate interest deductibility",
+    "legislation.gov.uk FA 2003 Sch 4A paras 3 and 5, verified 2026-09-27 - flat rate 17%, para 5 relief for a qualifying property rental business",
+    "docs/property/coverage_map_2026-09.json - map row, situation 'Investor setting up an SPV to buy a first or next property', target query 'spv accountant', hp_anchors 21 / 21.4 / 21.A"
+  ]
+}

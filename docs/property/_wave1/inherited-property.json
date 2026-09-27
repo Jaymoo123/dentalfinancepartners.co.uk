@@ -1,0 +1,83 @@
+{
+  "slug": "inherited-property",
+  "title": "Executors and Beneficiaries",
+  "headline": "Accountants for executors and beneficiaries of an inherited property",
+  "metaTitle": "Probate Property Tax | Executors & Beneficiaries",
+  "metaDescription": "Inherited a house or a rental property? Specialist help with probate base cost, CGT on a sale, rental income and deeds of variation.",
+  "intro": "You have inherited a property, or you are the executor holding one, and you need to decide whether to keep it, let it or sell it. A specialist starts with the probate value, because that figure becomes the capital gains base cost for whoever eventually sells and it is the number the inheritance tax position was built on. Next comes who sells and when: the estate, before the property is passed on, or the beneficiaries after. If it is let, the review covers whose rental income it is in each period and who registers for self assessment. That leaves a written position on the fork in front of you, and the figures your accountant prepares the returns from. The deadlines in it are law's, not yours.",
+  "stats": [
+    { "value": "24%", "label": "CGT rate for personal representatives on residential gains, 2026/27" },
+    { "value": "£3,000", "label": "Annual exempt amount for the estate in the year of death and the two following tax years" },
+    { "value": "60 days", "label": "To report and pay CGT on a UK residential disposal where tax is due" },
+    { "value": "2 years", "label": "Window from the date of death to redirect an inheritance by deed of variation" }
+  ],
+  "challenges": [
+    {
+      "title": "The probate value becomes the base cost",
+      "body": "Death is not a disposal. The personal representatives are treated as acquiring the property at its market value at the date of death, and a beneficiary who later receives it takes that same figure as their base cost. Only growth after the death can be taxed. That makes the probate valuation a tax number, not a formality: a low figure holds inheritance tax down and hands the family a larger capital gain later. A defensible open market value, evidenced at the date of death, is what a specialist reviews first; the <a href=\"/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost\">guide to the probate base cost</a> sets out the mechanics."
+    },
+    {
+      "title": "Selling from the estate or selling after distribution",
+      "body": "If the personal representatives sell, the estate pays at the rate set for personal representatives and uses the estate's annual exempt amount, which runs for the year of death and the two following tax years only. If the property is passed to the beneficiaries first, each has their own annual exempt amount and a basic rate taxpayer may fall in the lower band. With several beneficiaries the second route often produces the smaller bill, but it has to be settled before the property is marketed."
+    },
+    {
+      "title": "Letting it, and registering for self assessment",
+      "body": "Rent arising before the property is passed on is the estate's income; rent arising afterwards belongs to the beneficiaries in their shares, and each reports their own. A beneficiary receiving rent for the first time usually has to register for self assessment, the deadline running from the tax year the income first arises. Mortgage interest on a let residential property is a basic rate reducer, not a deduction from profit, so the tax on inherited rent is often higher than a first calculation suggests."
+    },
+    {
+      "title": "Joint executors, joint beneficiaries and deeds of variation",
+      "body": "With more than one personal representative, a sale of the land or a contract for one needs all of them to concur, unless probate was granted to only some of the named executors. Disagreement is what most often collapses a probate sale late on. Separately, a beneficiary can redirect what they inherit within two years of the death, and with the right elections it reads back to the deceased for both inheritance tax and capital gains. It must be for no consideration, or it is only a gift with a seven year clock of its own."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "The probate valuation reviewed as a tax figure",
+      "body": "A specialist in the partner network re-reads the date of death valuation, the evidence behind it, and how it sits against the inheritance tax the estate reported. Where the property has since sold for less, they check whether substituting the sale price is worth the base cost it costs you."
+    },
+    {
+      "title": "Keep, let or sell, compared in figures",
+      "body": "The estate selling, the beneficiaries selling and keeping the property let are modelled side by side on your numbers, including the annual exempt amounts open to each party and the band each beneficiary sits in. Sanity check the disposal side with the <a href=\"/calculators/capital-gains-tax-calculator\">capital gains tax calculator</a> first."
+    },
+    {
+      "title": "Returns and deadlines prepared and filed",
+      "body": "Where a UK residential disposal creates tax, your accountant prepares the 60 day return and the payment, then the self assessment entries that follow. If the property is let, they handle registration and the property pages for each beneficiary."
+    },
+    {
+      "title": "Deeds of variation checked before signing",
+      "body": "Where the family wants to redirect a share, a specialist checks the proposed variation against the two year window, the no consideration rule and the wording of the elections, and confirms what it does to the estate and to the beneficiary giving the share up. The <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a> covers the other fork, keeping it let."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long do I have to report the tax after a probate property is sold?",
+      "answer": "Where a UK residential property is sold and capital gains tax is due, the return and the payment are both due within 60 days of completion. That applies to personal representatives and to beneficiaries selling in their own names. If the gain is fully covered by losses, private residence relief or the annual exempt amount, a UK resident needs no 60 day return. Where one is due, the gain still appears on the self assessment return for the year, so the two filings are not alternatives."
+    },
+    {
+      "question": "What happens to inheritance tax if the house sells for less than the probate value?",
+      "answer": "Where the personal representatives sell land within three years of the death for less than the probate figure, they can claim to substitute the sale price for the value used at death and cut the estate's inheritance tax. It is only worth making if the estate bore inheritance tax, and it has a cost: once a value has been ascertained for inheritance tax it becomes the capital gains base cost, so the claim removes the capital loss on the sale."
+    },
+    {
+      "question": "Do I have to tell HMRC about rent from an inherited property?",
+      "answer": "Yes, once the income is yours. Rent arising while the estate still holds the property is the estate's; rent arising after your share has been passed to you is yours, in your share of the ownership. Most beneficiaries in that position register for self assessment and file property pages each year. The <a href=\"/blog/capital-gains-tax/inheriting-uk-rental-property-executors-step-by-step\">executor's step by step guide to an inherited rental</a> sets out the order these steps run in."
+    },
+    {
+      "question": "Can we change who inherits the property after the death?",
+      "answer": "Within two years of the death a beneficiary can redirect their inheritance by deed of variation, and with the right elections in the document it reads back to the deceased for inheritance tax and capital gains. It cannot be done for consideration, and everyone giving something up has to agree. Families use it to pass a property to the next generation or to route part of an estate to charity. See <a href=\"/blog/landlord-tax-essentials/deed-of-variation-property-estate-redirecting-inheritance-iht-saving\">deeds of variation for landlord estates</a>."
+    },
+    {
+      "question": "Can the executors sell before probate is granted?",
+      "answer": "The property devolves on the personal representatives, not on the beneficiaries, and gov.uk is explicit that you should not put a property on the market until probate has been granted. With more than one personal representative, a sale of the land, or a contract for one, needs all of them to concur unless probate was granted to only some of the named executors. Inheritance tax normally has to start being paid before the grant issues, which is why property rich estates stall here."
+    }
+  ],
+  "sources": [
+    "TCGA 1992 s.62(1) and s.62(4): death is not a disposal; PRs acquire at market value at death; a legatee takes the PRs' acquisition. house_positions.md §39.",
+    "PR annual exempt amount for the year of death and the two following tax years, then nil. house_positions.md §39; statutory basis TCGA 1992 s.1K(7) per §39.A.",
+    "CGT annual exempt amount £3,000 for 2026/27 and the 24% trustee/PR rate from 6 April 2026: https://www.gov.uk/capital-gains-tax/rates, verified 2026-09-27. Matches house_positions.md §39 and §39.A.",
+    "Residential CGT rates 18% and 24%; 60-day UK property return and payment where tax is due; no 60-day return for a UK resident where the gain is covered by PRR, losses or the AEA; PRR under TCGA 1992 ss.222-226. house_positions.md §5.",
+    "IHTA 1984 s.191 (sale of land below probate value within three years of death) and TCGA 1992 s.274 (ascertained value as CGT base cost, which kills the expected CGT loss). house_positions.md §39.",
+    "AEA 1925 s.1(1), s.1(3) and s.2(2): real estate devolves on the PRs; a conveyance or a contract for one needs all PRs to concur unless probate was granted to only some named executors. No statutory pre-grant sale bar; gov.uk 'Applying for probate' on not marketing before the grant and paying IHT before probate. house_positions.md §39.A.",
+    "Deed of variation, IHTA 1984 s.142 with TCGA 1992 s.62(6): two years from death, no consideration, election required in the document. house_positions.md §22.2.",
+    "Section 24 finance cost restriction operating as a basic rate reducer on residential letting. house_positions.md §4.",
+    "Map rows matched on situation 'Beneficiary or executor with an inherited property' in docs/property/coverage_map_2026-09.json; hp_anchors 39, 39.A, 15."
+  ]
+}

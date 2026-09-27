@@ -1,0 +1,102 @@
+{
+  "slug": "portfolio-landlords-incorporating-a-partnership",
+  "title": "Portfolio Landlords Incorporating a Lettings Partnership",
+  "headline": "Accountants for portfolio landlords incorporating a lettings partnership",
+  "metaTitle": "Property Partnership Incorporation: Portfolio Landlords",
+  "metaDescription": "For portfolio landlords moving an established lettings partnership into a company: the SDLT, CGT and mortgage questions a specialist reviews first.",
+  "intro": "You run a lettings portfolio of roughly 10 to 40 properties with your spouse, civil partner or family as partners, the partnership has filed its own returns for years, and you are weighing a move into a limited company. That is a different problem from moving one or two personally held flats. Everything rests on a prior question: whether a partnership genuinely exists in law, and how long it has run. Both reliefs depend on the answer, partnership treatment for stamp duty under FA 2003 Schedule 15 and section 162 incorporation relief for the capital gain. Below, each of those in turn, then the lender problem and the cost of running the company.",
+  "stats": [
+    {
+      "value": "2 years",
+      "label": "Working safe harbour of genuine partnership operation before a Schedule 15 transfer"
+    },
+    {
+      "value": "3 years",
+      "label": "Anti-withdrawal window on capital taken out of the partnership after a Schedule 15 transfer"
+    },
+    {
+      "value": "5%",
+      "label": "Additional dwellings SDLT surcharge where partnership treatment does not apply"
+    },
+    {
+      "value": "6 dwellings",
+      "label": "Point at which one transaction is treated as non-residential for SDLT"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Does a partnership actually exist, and since when?",
+      "body": "Joint ownership of let property does not by itself create a partnership. The Partnership Act 1890 asks for people carrying on a business in common with a view of profit, and section 2(1) says co-ownership is not enough. What supports the position is the record: SA800 returns filed year on year, partnership accounts, joint borrowing, an agreement. Around two years of genuine operation is the working safe harbour. The full test is in <a href=\"/blog/incorporation-and-company-structures/does-your-business-qualify-as-a-partnership\">does your property business qualify as a partnership</a>."
+    },
+    {
+      "title": "Schedule 15 and the sum of the lower proportions",
+      "body": "On a transfer out of a genuine partnership to a connected company, chargeable consideration is market value reduced by the sum of the lower proportions. Where the partners are connected and the shares line up, that sum can reach 100% and the stamp duty falls to nil. Otherwise the balance is chargeable at residential rates plus the 5% surcharge, or at non-residential rates where six or more dwellings move together. The calculation turns on income profit shares, not capital or voting shares. The mechanics are in <a href=\"/blog/incorporation-and-company-structures/partnership-sdlt-relief-schedule-15-fa-2003-incorporation-sum-lower-proportions\">the sum of lower proportions guide</a>, and the <a href=\"/calculators/stamp-duty-calculator\">stamp duty calculator</a> sizes the wider bill."
+    },
+    {
+      "title": "Incorporation relief and the business test",
+      "body": "Section 162 rolls the gain into the shares rather than taxing it on transfer, but only where a business moves as a going concern with all assets other than cash. Letting is not automatically a business: the evidence is active management across the portfolio. For transfers on or after 6 April 2026 the relief must be claimed, and that claim is due twelve months after the 31 January that follows the tax year of transfer. Background in <a href=\"/blog/incorporation-and-company-structures/section-162-incorporation-relief-property-landlords\">does section 162 incorporation relief apply to property landlords</a>."
+    },
+    {
+      "title": "Lenders, consents and the refinancing cost",
+      "body": "The company is a new borrower. Buy to let mortgages do not travel with the properties, so every charged property needs lender consent or a fresh company facility, usually at a different rate and with personal guarantees."
+    },
+    {
+      "title": "Running the company and drawing money out",
+      "body": "Inside a company the finance cost restriction stops biting and profits meet corporation tax at 19% up to £50,000 and 25% above £250,000, with a marginal band between. The director's loan account created on incorporation can be drawn tax free until it runs out, after which dividends are taxed at 10.75%, 35.75% and 39.35% for 2026/27, against 8.75% and 33.75% on the first two bands the year before."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A partnership substance review before anything moves",
+      "body": "Everything turns on the agreement, the SA800 filing history, the accounts, the borrowing and how decisions have been taken. Read together they show whether the partnership would stand up to an enquiry and from what date. Where the substance is thin, the review says what would have to change."
+    },
+    {
+      "title": "A modelled stamp duty and capital gains position",
+      "body": "The sum of the lower proportions is computed from the income profit shares as they stand, the portfolio is valued, and any residual stamp duty is set against the position without the partnership route. The gain is computed property by property. The <a href=\"/calculators/incorporation-cost-calculator\">incorporation cost calculator</a> gives a first pass on the whole cost."
+    },
+    {
+      "title": "The claim, the returns and the filings",
+      "body": "The section 162 claim is prepared and diarised to its deadline alongside the land transaction returns, the partnership cessation return, the personal returns for the year of transfer and the company's first accounting period. Forming the company, director and PSC identity verification and the first confirmation statement run in the same sequence."
+    },
+    {
+      "title": "A drawings plan with the three-year rule in it",
+      "body": "A specialist maps the loan account balance against what the household needs to draw, marks the point where it runs out, and checks any capital withdrawn from the partnership against the three-year para 17A rule. Salary, dividend and pension routes are modelled at your profit level, not a standard mix."
+    },
+    {
+      "title": "A written recommendation you can act on or decline",
+      "body": "The output is a written report: the numbers, the risks named, the sequence and the dates. Incorporation is not right for every portfolio, and where the modelling says stay as you are, the report says that. Introductions are to a specialist firm from our partner network."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Our portfolio is jointly owned by my wife and me. Is that a partnership?",
+      "answer": "Not on its own. Joint ownership of let property is expressly not a partnership under the Partnership Act 1890, and HMRC's guidance on jointly owned property follows the same line. What turns co-ownership into a partnership is a business carried on in common: an agreement, SA800 returns, partnership accounts, joint borrowing and joint decisions over a period. A specialist reviews what exists today."
+    },
+    {
+      "question": "How long must the partnership have run before we incorporate?",
+      "answer": "There is no statutory period, but around two years of genuine operation with filed partnership returns is the working safe harbour. Shorter periods invite an enquiry, and HMRC's standard line is that the partnership was a paper arrangement entered into to reach the stamp duty treatment. The question is not how long the document has existed, but how long the business has run as one."
+    },
+    {
+      "question": "Will we pay stamp duty on the transfer into the company?",
+      "answer": "It depends on the sum of the lower proportions. Where the partnership is genuine and the partners are connected with each other and with the company, the chargeable consideration can fall to nil. Where the profit shares do not line up, or a partner is not connected, part of the market value stays chargeable at residential rates plus the 5% surcharge, or at non-residential rates for six or more dwellings. Cohabiting couples are not connected here."
+    },
+    {
+      "question": "Does section 162 incorporation relief apply to a lettings partnership?",
+      "answer": "It can, where the letting amounts to a business transferred as a going concern with all assets other than cash. That is a question of evidence rather than property count: active management, hours worked, how the portfolio is run. For transfers on or after 6 April 2026 a claim is required, due one year on from the 31 January that follows the tax year in which the transfer takes place."
+    },
+    {
+      "question": "What happens to our existing buy to let mortgages?",
+      "answer": "They do not move with the properties. The company borrows in its own name, so each charged property needs lender consent or a new company facility, typically with personal guarantees from the directors. Expect early repayment charges, new valuations, arrangement fees and legal costs, with the lending timetable driving the completion date."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md section 1 (SDLT bands 2026/27, 5% additional dwellings surcharge, six-dwellings rule s.116(7) FA 2003, genuine partnership incorporation under FA 2003 Sch 15)",
+    "docs/property/house_positions.md section 1.A (Sch 15 paras 10-20 and 34, sum of the lower proportions, income-profit-share definition, CTA 2010 s.1122 connected persons, cohabitants not connected, para 17A three-year anti-withdrawal rule, two-year genuine-operation safe harbour, HMRC SDLTM33500+)",
+    "docs/property/house_positions.md section 5 (s.162 incorporation relief, claim required for transfers on or after 6 April 2026, s.162A election repealed by FA 2026 s.39, business test and Ramsay v HMRC [2013])",
+    "docs/property/house_positions.md section 11.C (PA 1890 s.1 four tests, s.2(1) co-ownership negative, HMRC BIM72015 and PIM1030, SA800 obligation TMA 1970 s.12AA)",
+    "docs/property/house_positions.md sections 21.1 and 21.4 (director's loan account on incorporation, CT 19%/25% with marginal band, dividend rates 10.75%/35.75%/39.35% for 2026/27 against 8.75%/33.75% previously)",
+    "docs/property/house_positions.md sections 11 and 11.A (Companies House director and PSC identity verification, confirmation statement)",
+    "FA 2003 Schedule 15 at https://www.legislation.gov.uk/ukpga/2003/14/schedule/15 (partnership transfers, paras 10-20, 17A, 34)",
+    "docs/property/coverage_map_2026-09.json (situation row: Portfolio landlord incorporating an established lettings partnership; wave 1 segment page)"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "selling-a-buy-to-let",
+  "title": "Landlords Selling a Buy-to-Let",
+  "headline": "Accountants for landlords selling a buy-to-let",
+  "metaTitle": "CGT Accountant for Selling a Buy-to-Let Property",
+  "metaDescription": "Selling a rental property or a former home that was let? Get the 60-day CGT return, the gain computation and the reliefs handled by a property tax specialist.",
+  "intro": "You are selling a buy-to-let, or a home you lived in and later let out, and you want to know who to contact about the capital gains tax. Where tax is due, the return and the payment are owed within 60 days of completion. A specialist from our partner network looks first at the exchange date, because that fixes the tax year, the completion date, because that starts the 60-day clock, and whether the property was ever your only or main home, because that moves the figure most. The gain computation comes to you line by line, the return is prepared and filed, and the same figures carry into your self assessment.",
+  "stats": [
+    {
+      "value": "60 days",
+      "label": "From completion to file and pay, where CGT is due"
+    },
+    {
+      "value": "18% / 24%",
+      "label": "Residential CGT rates, basic and higher rate"
+    },
+    {
+      "value": "£3,000",
+      "label": "Annual exempt amount per person, 2026/27"
+    },
+    {
+      "value": "9 months",
+      "label": "Final period of ownership covered by Private Residence Relief"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "The 60-day return, and two dates that differ",
+      "body": "If you are UK resident and tax is due on a UK residential disposal, the return and the payment are owed within 60 days of completion. Where the gain is fully covered by relief, losses or the annual exempt amount, no 60-day return is needed. Non-residents file for every UK land disposal either way. The disposal itself happens at exchange, so a March exchange with a May completion is a gain in the earlier tax year with the clock running from May. The <a href=\"/blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026\">deadline sequence and the penalties are here</a>."
+    },
+    {
+      "title": "Working out the gain and what you can actually deduct",
+      "body": "The list of deductible selling costs is a closed one: professional fees for a surveyor, valuer, auctioneer, accountant, agent or legal adviser, transfer costs including stamp duty, advertising for a buyer, and valuation costs needed for the computation. Improvement spending still reflected in the property at sale is deductible separately. Removals, storage, cleaning, cosmetic work, mortgage interest and early redemption charges are not. Start with the <a href=\"/calculators/capital-gains-tax-calculator\">capital gains tax calculator</a> for a first figure."
+    },
+    {
+      "title": "A former home, Private Residence Relief and lettings relief",
+      "body": "If the property was at some point your only or main residence, relief covers the periods of occupation plus the final nine months of ownership, with further deemed occupation in defined situations such as working away. Lettings relief is the part people still get wrong: since 6 April 2020 it only applies where you shared occupation with the tenant, so a landlord who moved out and let the whole house gets none."
+    },
+    {
+      "title": "Rates and the annual exempt amount for 2026/27",
+      "body": "Residential gains are taxed at 18% in the basic rate band and 24% above it, with trustees and personal representatives at 24% throughout. The annual exempt amount is £3,000 per person, down from £6,000 and from £12,300 before that, so an older worked example will understate your bill. It is per person and per tax year, which is why joint ownership and the exchange date both matter."
+    },
+    {
+      "title": "Selling before or after incorporation, and company-held property",
+      "body": "Section 162 incorporation relief is no longer automatic: for transfers on or after 6 April 2026 it must be claimed, and the election to disapply it has been repealed. Where the property already sits in a company there is no annual exempt amount and the company pays corporation tax on the gain, so selling the shares rather than the property changes the tax for both sides. That fork is <a href=\"/blog/incorporation-and-company-structures/selling-a-property-spv-share-sale-vs-asset-sale\">set out here</a>."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A first review of the disposal before you commit",
+      "body": "A specialist reviews the ownership history, the occupation periods, the intended exchange and completion dates and how the property is held. That tells you whether a 60-day return is required at all, which tax year the gain lands in, and whether the timing changes the outcome. Most useful before contracts are exchanged."
+    },
+    {
+      "title": "The gain computation, built line by line",
+      "body": "Your accountant prepares the computation from documents rather than estimates: completion statements for purchase and sale, improvement spending you can evidence, the closed list of allowable selling costs, and the relief apportionment for any period the property was your main home. You get the working, not just a number."
+    },
+    {
+      "title": "The 60-day return prepared and filed",
+      "body": "Where tax is due, a specialist sets up the property account if you do not have one, prepares the return, tells you the payment figure and the date it is owed, and files inside the window. Where the gain is covered by relief, losses or the allowance, you get that conclusion in writing instead."
+    },
+    {
+      "title": "Carried through to your self assessment",
+      "body": "The 60-day payment is on account, not the end of it. The same disposal goes on your self assessment for the year and the two must agree. Your accountant carries the computation forward, sets the payment against the final liability, and picks up capital losses brought forward or realised elsewhere."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I have to report the sale within 60 days if I made no profit?",
+      "answer": "Not if you are UK resident and no capital gains tax is due. Where the gain is fully covered by Private Residence Relief, by capital losses or by the annual exempt amount, there is no 60-day filing requirement, though you may still report the disposal on your self assessment return. Non-residents must file within 60 days for every disposal of UK land, whether or not any tax is payable."
+    },
+    {
+      "question": "I exchanged in March and completed in May. Which tax year is the gain in?",
+      "answer": "The earlier one. The disposal happens when the contract is made, so a March exchange puts the gain in the tax year ending that 5 April, and that year's allowance and rate bands apply. The 60-day reporting and payment clock runs from completion in May instead. The two dates follow different rules and often sit in different tax years, which is why the exchange date is checked first."
+    },
+    {
+      "question": "Can I deduct the agent's fee and the mortgage early repayment charge?",
+      "answer": "The sale commission yes, the early repayment charge no. Deductible selling costs are a closed statutory list: professional fees, transfer costs including stamp duty, advertising for a buyer, and valuation costs for the computation. Interest and mortgage redemption charges are excluded, as are removals, storage and cosmetic work. If you cannot recover the VAT on a fee, deduct it inclusive of VAT. Letting agent management fees go against rental income, never against the gain."
+    },
+    {
+      "question": "I lived in the house before letting it out. How much relief do I get?",
+      "answer": "Relief covers the period you occupied it as your only or main residence, plus the final nine months of ownership, with additional deemed occupation in defined circumstances such as working away. The remaining period is chargeable, apportioned by time. Lettings relief is narrow now: since 6 April 2020 it applies only where you shared occupation with your tenant. The <a href=\"/blog/capital-gains-tax/principal-private-residence-relief-landlords\">relief is explained in more detail here</a>."
+    },
+    {
+      "question": "Should I sell now or move the property into a company first?",
+      "answer": "Different transactions with different tax, and the answer turns on your portfolio rather than a rule of thumb. A transfer to your own company is itself a disposal at market value, with stamp duty on the company's acquisition. Incorporation relief can defer the gain but must be claimed for transfers on or after 6 April 2026, and it needs a genuine business rather than a single let. The <a href=\"/blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step\">worked calculation for a straight sale is here</a>."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md section 5 (CGT on UK residential property 2026/27): rates 18%/24%, annual exempt amount 3,000, 60-day return and payment where tax is due, non-resident filing for every disposal, penalty ladder, PRR final 9 months, lettings relief shared-occupation only from 6 April 2020, TCGA 1992 s.58 no-gain-no-loss spousal transfers, s.162 incorporation relief must be claimed for transfers on/after 6 April 2026 with the s.162A election repealed by FA 2026 s.39",
+    "docs/property/house_positions.md section 5.B (disposal date and incidental costs of disposal): TCGA 1992 s.28(1) exchange fixes the disposal date, FA 2019 Sch 2 para 3(1)(b) 60-day trigger at completion, s.38(1)(c) and s.38(2) exhaustive selling-cost list, s.38(1)(b) enhancement expenditure, s.38(3) interest never deductible, CG14300 VAT-inclusive deduction where no set-off, letting-agent management fees revenue not capital",
+    "docs/property/house_positions.md sections 39 and 39.A: trustees and personal representatives at 24%",
+    "Primary law (source gap closed at QA, not in house_positions): companies pay corporation tax on chargeable gains and get no annual exempt amount - TCGA 1992 s.1A(3) and s.1K (AEA is for individuals), CTA 2009 s.2(1)-(2); transfer of property to a connected company is a disposal at market value - TCGA 1992 s.17(1)/s.18, with SDLT on the company's acquisition - FA 2003 s.42",
+    "docs/property/coverage_map_2026-09.json: row working_title 'Accountants for landlords selling a buy-to-let', situation 'Landlord selling a buy-to-let or a former home', target_query 'cgt accountant property sale', wave 1, hp_anchors 5 / 5.B / 39",
+    "Internal links used: /calculators/capital-gains-tax-calculator, /blog/capital-gains-tax/cgt-payment-deadlines-property-sales-2026, /blog/capital-gains-tax/principal-private-residence-relief-landlords, /blog/capital-gains-tax/cgt-calculation-selling-buy-to-let-property-step-by-step, /blog/incorporation-and-company-structures/selling-a-property-spv-share-sale-vs-asset-sale"
+  ]
+}

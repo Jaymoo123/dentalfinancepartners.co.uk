@@ -1,0 +1,100 @@
+{
+  "slug": "holiday-let-and-serviced-accommodation",
+  "title": "Holiday Let and Serviced Accommodation Operators",
+  "headline": "Accountants for holiday let and serviced accommodation operators",
+  "metaTitle": "Holiday Let Accountant | Serviced Accommodation",
+  "metaDescription": "Run a holiday let, Airbnb or serviced accommodation unit after FHL abolition? A specialist reviews the tax treatment, VAT and capital allowances position.",
+  "intro": "You let a cottage, an apartment or a block of units on short stays through Airbnb, Booking.com or your own site, and the tax treatment stopped being simple when the furnished holiday lettings rules ended in April 2025. What you are asking is what you lost, what you kept and what you now have to file. A specialist starts with how each property is run and what services you provide, what sat in your capital allowances pool at abolition, and your gross takings across every channel last year. Those answers decide whether Section 24 restricts your interest, whether your pooled allowances still write down, and whether VAT registration is close. The output is a written read of your 2026/27 position and the reliefs that survived.",
+  "stats": [
+    {
+      "value": "6 April 2025",
+      "label": "Date the furnished holiday lettings regime was abolished"
+    },
+    {
+      "value": "£90,000",
+      "label": "VAT registration threshold on rolling twelve-month taxable turnover"
+    },
+    {
+      "value": "140 / 70 nights",
+      "label": "England business rates test: available to let and actually let"
+    },
+    {
+      "value": "20%",
+      "label": "Section 24 basic-rate credit on finance costs in 2026/27"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "What ended on 6 April 2025, and what carried over",
+      "body": "Finance Act 2025 Schedule 5 removed the furnished holiday lettings regime, so your properties are now an ordinary UK property business: no capital allowances on new spending inside a dwelling, no Business Asset Disposal Relief on holiday let status alone, and profits that are no longer relevant earnings for pensions. Three transitional points survived. Pooled plant and machinery brought forward keeps writing down, unused losses are ring-fenced against future property profits, and transitional rules preserve capital gains relief where the trading period predates abolition. Fuller walkthrough in <a href=\"/blog/landlord-tax-essentials/abolition-of-furnished-holiday-lettings-fhl-what-individual-owners-needs-to-know\">the FHL abolition guide</a>."
+    },
+    {
+      "title": "Mortgage interest is now a restricted credit, not a deduction",
+      "body": "Finance costs on a qualifying holiday let once came off profit in full. They now fall under the Section 24 restriction like any other residential let: a credit against the tax bill, not a deduction. In 2026/27 that credit is 20%, leaving a higher-rate operator a 20 percentage point gap and an additional-rate operator a 25 point gap between the rate paid and the relief given. Check your figures with the <a href=\"/calculators/section-24-calculator\">Section 24 calculator</a>."
+    },
+    {
+      "title": "Capital allowances against replacement of domestic items",
+      "body": "New plant and machinery spending in a dwelling is blocked by the dwelling-house restriction in the Capital Allowances Act 2001, so a replacement oven is not a claim. Available instead is replacement domestic items relief under section 311A ITTOIA 2005, covering furniture, furnishings, appliances and kitchenware replaced with a broadly equivalent item where the old one leaves. Replacements only, and fixtures are excluded. The pre-abolition pool still writes down, and a disposal out of it can trigger a balancing charge. The <a href=\"/calculators/capital-allowances-calculator\">capital allowances calculator</a> sizes the spend."
+    },
+    {
+      "title": "Short stays are standard-rated once you cross the VAT threshold",
+      "body": "Holiday and serviced accommodation is a carve-out from the exempt land treatment, so your takings are standard-rated supplies. Registration is compulsory once taxable turnover over any rolling twelve months exceeds 90,000 pounds, or when you expect to exceed it in the next 30 days. Count the gross amount guests pay across every channel, not the net figure a platform transfers. HMRC can direct that units split across different names are one business."
+    },
+    {
+      "title": "Business rates or council tax, and the premium if you get it wrong",
+      "body": "A self-catering property in England moves to business rates only where it was available to let commercially for at least 140 nights in the previous twelve months, actually let for at least 70, and intended to be available for 140 in the coming twelve. Wales sets a higher bar at 252 available and 182 let. Fall short and it returns to council tax, where many billing authorities now charge a second homes premium."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A written read of where abolition left you",
+      "body": "A specialist reviews your last filed return against the current rules and sets out, property by property, the Section 24 position, the pooled allowances carried across, the ring-fenced losses, and the transitional capital gains position."
+    },
+    {
+      "title": "A VAT position tested against your real takings",
+      "body": "A rolling twelve-month turnover schedule is built from your channel statements, gross of commission, and it identifies the month you would cross the threshold. Where several units or entities exist, the separation question is examined before it is relied on."
+    },
+    {
+      "title": "The claims that still exist, evidenced",
+      "body": "A specialist separates what falls under replacement domestic items relief from what belongs in the grandfathered pool, and checks whether a balancing charge is waiting on an asset already sold. Where a property has a genuinely commercial element, the wider claim base is tested rather than assumed away."
+    },
+    {
+      "title": "Returns, records and the rates position kept in step",
+      "body": "Filing runs off the same record: the self assessment property pages or the company return, reconciled to what your platforms reported to HMRC, with the occupancy evidence behind your rates position kept current. Check your headline tax with the <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is my holiday let still taxed as a business after the FHL rules ended?",
+      "answer": "It is taxed as part of an ordinary UK property business. From 6 April 2025 the furnished holiday lettings regime was abolished by Finance Act 2025 Schedule 5. Section 24 now restricts your finance costs, new plant and machinery spending inside a dwelling no longer qualifies for capital allowances, and profits are no longer relevant pension earnings. Property business status is not trading status, and nothing in the change deems a holiday let to be a trade."
+    },
+    {
+      "question": "Do I keep the capital allowances I claimed before abolition?",
+      "answer": "The balance on your existing pool carries into the ordinary property business and keeps writing down, so the claim is not cancelled. What stopped is new qualifying expenditure, because spending on plant and machinery in a dwelling after abolition is caught by the dwelling-house restriction. Disposals out of the transferred pool can create a balancing charge, and replacement spending is handled under replacement domestic items relief instead."
+    },
+    {
+      "question": "When does a holiday let business have to register for VAT?",
+      "answer": "Once taxable turnover across any rolling twelve-month period exceeds 90,000 pounds, or as soon as you expect to exceed it within the next 30 days. Holiday and serviced accommodation is standard-rated rather than exempt, so almost all of your takings count. Measure the gross amount guests pay, including cleaning and booking fees, rather than the net sum a platform transfers, and add every channel. Units held in different names may still be one business."
+    },
+    {
+      "question": "Can I still claim Business Asset Disposal Relief when I sell?",
+      "answer": "Not on holiday let status alone. The relief applied to qualifying furnished holiday lettings only until 5 April 2025, and no rule after abolition treats short-let property as a trade. Serviced accommodation can qualify where the service level genuinely amounts to a trade on first principles, but that is fact-specific and the bar is high. Transitional rules preserve eligibility for some disposals where the trading period predates abolition. The rate is 18% from 6 April 2026."
+    },
+    {
+      "question": "HMRC already has my Airbnb figures. Does that change how I file?",
+      "answer": "Digital platforms have collected seller information since 1 January 2024 and report it to HMRC by the 31 January following each calendar year, so a figure for your bookings exists before you file. Differences are usually explainable: platform data is often gross of commission and does not know a property is jointly owned. Reconciling as you file stops that becoming an enquiry. How the income is taxed is covered in <a href=\"/blog/property-types-and-specialist-tax/airbnb-tax-uk-short-term-rental-income-taxed\">the short-let income guide</a>."
+    }
+  ],
+  "sources": [
+    "house_positions.md section 6 (FHL abolition 6 April 2025; transitional pooled allowances, ring-fenced losses, anti-forestalling, Form 17)",
+    "house_positions.md sections 25.1 and 25.7 (CAA 2001 s.15(1)(c) and (da) omitted by FA 2025 Sch 5 Part 3; grandfathered pool balances; s.35 dwelling-house restriction; CGT transitional preserved at Part 4)",
+    "house_positions.md sections 4 and 7 (Section 24 finance-cost reducer is a 20% basic-rate credit for 2026/27; 20/40/45 rates on property income in 2026/27)",
+    "house_positions.md sections 5 and 5.A (BADR applied to FHL only until 5 April 2025; rate 18% from 6 April 2026; no post-abolition deeming of holiday lets as trades; service level tested on first principles)",
+    "house_positions.md sections 29.2, 29.8 and 29.12 (holiday accommodation is a Sch 9 Group 1 carve-out from exempt land; £90,000 registration threshold; artificial separation directions under Sch 1 para 2)",
+    "gov.uk VAT registration guidance, verified 2026-09-27 (£90,000 rolling twelve-month threshold and the 30-day forward look test)",
+    "gov.uk business rates guidance, self-catering and holiday let accommodation, verified 2026-09-27 (England 140 nights available and 70 nights let; Wales 252 and 182)",
+    "gov.uk guidance, selling goods or services on a digital platform, verified 2026-09-27 (platforms collecting from 1 January 2024, reported to HMRC by the following 31 January)",
+    "legislation.gov.uk ITTOIA 2005 s.311A, verified 2026-09-27 (replacement domestic items relief: conditions A to D, domestic item definition, fixtures excluded)",
+    "legislation.gov.uk Local Government Finance Act 1992 s.11C (as inserted by Levelling-up and Regeneration Act 2023 s.79), verified 2026-09-27 (billing authorities in England may charge a council tax premium on dwellings occupied periodically, from 1 April 2025)"
+  ]
+}

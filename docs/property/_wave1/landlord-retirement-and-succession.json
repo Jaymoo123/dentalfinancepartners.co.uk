@@ -1,0 +1,106 @@
+{
+  "slug": "landlord-retirement-and-succession",
+  "title": "Landlords Planning Retirement and Succession",
+  "headline": "Accountants for landlords planning retirement and succession",
+  "metaTitle": "Landlord Succession Planning Accountant | UK",
+  "metaDescription": "Specialist support for landlords retiring or passing on a portfolio: selling down, gifting, trusts, family investment companies and the 2026 IHT position.",
+  "intro": "You spent decades building a rental portfolio and you are now deciding what happens to it. Selling down, passing property to your children, or moving the portfolio into a structure the family can inherit are three different tax problems, and the order you take them in changes the bill. The routes need setting out in numbers before anything is signed. The shape of the estate comes first: what each property cost, what it is worth now, how it is owned, what is still mortgaged, and whether the estate sits above the point where the residence nil-rate band begins to taper. Only then are disposal timing, gifts and structures compared. Where the estate stands, and the tax attaching to each route, then sits on one page. The documents your accountant prepares for your solicitor follow from it.",
+  "stats": [
+    {
+      "value": "£325,000",
+      "label": "Nil-rate band, frozen until 5 April 2031"
+    },
+    {
+      "value": "£175,000",
+      "label": "Residence nil-rate band, withdrawn £1 for every £2 of estate above £2m"
+    },
+    {
+      "value": "£2.5m",
+      "label": "Combined business and agricultural property relief allowance from 6 April 2026"
+    },
+    {
+      "value": "18% / 24%",
+      "label": "Residential capital gains tax rates, basic and higher, 2026/27"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Selling down over several tax years rather than in one",
+      "body": "Four disposals in one tax year stack every gain on one income base, push most of it through the 24% higher rate and use a single £3,000 annual exempt amount. Spread over three or four years, each year's exemption is used and part of each gain can fall in the 18% band. Every disposal where tax is due still carries a 60-day return. Size it on the <a href=\"/calculators/capital-gains-tax-calculator\">capital gains tax calculator</a>."
+    },
+    {
+      "title": "Gifting and the seven-year clock",
+      "body": "An outright gift to a child is a potentially exempt transfer, free of inheritance tax if you survive seven years. Two things catch landlords out. It is still a disposal at market value for capital gains tax, so tax can fall due on a transfer that raised no cash. And taper relief reduces the tax, not the value. The note on the <a href=\"/blog/landlord-tax-essentials/iht-7-year-clock-property-gifting-mid-life-landlord-strategy\">seven-year clock</a> walks the timing."
+    },
+    {
+      "title": "Family investment companies and growth shares",
+      "body": "You keep preference shares carrying a fixed coupon, the next generation holds growth shares taking future growth, and your estate holds a value that stops rising. The seven-year clock runs from the gift of the growth shares, not from the day the company is formed. Moving property in is a disposal at market value, with no holdover for investment company shares."
+    },
+    {
+      "title": "Trusts, the entry charge and the ten-year charge",
+      "body": "Property into a discretionary trust is a chargeable lifetime transfer, not a potentially exempt one. Inheritance tax of 20% falls at once on value above your available nil-rate band, more if you die within seven years, and the trust faces up to 6% at each ten-year anniversary. Against that, holdover relief is available on the way in where neither you nor your spouse can benefit."
+    },
+    {
+      "title": "Incorporating late in life, and the uplift on death",
+      "body": "Incorporation relief can roll the gain into the shares where the letting activity is genuinely a business, but since 6 April 2026 it must be claimed. Set against that, assets you still hold at death are acquired by your personal representatives at market value, so the lifetime gain is never charged, and transferring now can create a cost that holding would not. The <a href=\"/calculators/incorporation-cost-calculator\">incorporation cost calculator</a> prices the route."
+    },
+    {
+      "title": "Keeping income in retirement versus passing on capital",
+      "body": "Giving away the highest-yielding properties lowers the estate and starves the income at once. A workable plan names which properties are income for life, which are for the family, and which are sold to clear debt."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "An estate and portfolio position on paper",
+      "body": "A specialist in the partner network works through ownership of every property, original cost and improvement spend, current values, borrowing and how each title is held. That produces the two numbers the plan turns on: the latent gain across the portfolio, and the estate value against the nil-rate bands."
+    },
+    {
+      "title": "A disposal timetable across tax years",
+      "body": "Where selling down is part of the plan, a specialist sets out which properties go in which tax year, the expected cost of each, and where the 60-day deadlines fall. Private residence relief on anything once your home, and spousal no-gain-no-loss transfers before a sale, are checked in advance."
+    },
+    {
+      "title": "A structure comparison rather than a single answer",
+      "body": "Gift, trust and family investment company are modelled side by side: entry cost, filing burden, what happens if you die within seven years, and control retained. Doing nothing is included, and below the allowances it is often cheapest. Where business or agricultural property is in the mix, the <a href=\"/calculators/bpr-apr-allowance-calculator\">business and agricultural relief calculator</a> shows how the £2.5m allowance is used up."
+    },
+    {
+      "title": "The filings and claims your accountant prepares",
+      "body": "Incorporation relief claims, holdover claims, 60-day property returns, self assessment, company accounts, and the inheritance tax forms that follow a death. Wills, articles, shareholders' agreements and deeds of variation are drafted by your solicitor; a specialist supplies the tax position they must reflect and reviews the drafts."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should I sell my rental properties before I die or leave them in my estate?",
+      "answer": "It depends which tax you are trying to reduce. Assets you still own at death are acquired by your personal representatives at market value, so the gain built up over your ownership is never charged. Selling in your lifetime crystallises that gain at 18% or 24% on residential property, but leaves cash you can spend or gift. Holding keeps the full value in the estate at 40% above your allowances, so below the nil-rate bands it is often cheaper."
+    },
+    {
+      "question": "Does my buy-to-let portfolio qualify for business property relief?",
+      "answer": "Almost certainly not. Collecting rent from residential lettings counts as investment rather than trading, and Pawson v HMRC settled it. Holiday lets lost their separate treatment in April 2025 and do not qualify either. Serviced accommodation with substantial services can qualify, but the bar is high. From 6 April 2026 relief that does apply is capped by a combined £2.5m business and agricultural allowance, with 50% relief above it."
+    },
+    {
+      "question": "Can I give a property to my children and carry on collecting the rent?",
+      "answer": "No, not without losing the benefit of the gift. Continuing to receive the rent, or to occupy a property you have given away, makes it a gift with reservation of benefit under section 102 Finance Act 1986. It stays in your estate however long ago the gift was made, so the seven-year clock never starts. The routes out are to give up the income entirely, or to pay a full market rent for any occupation."
+    },
+    {
+      "question": "How much can I pass on before inheritance tax is due?",
+      "answer": "The nil-rate band is £325,000 per person, frozen until 5 April 2031. A residence nil-rate band of £175,000 can apply where a home passes to children, grandchildren or other direct lineal descendants, but it is withdrawn by £1 for every £2 of estate above £2m and is gone by £2.35m. Unused bands transfer to a surviving spouse on a claim. Above the allowances, the rate is 40%."
+    },
+    {
+      "question": "What happens to my pension in all of this?",
+      "answer": "From 6 April 2027 unused defined contribution pension funds are brought into the estate for inheritance tax, reported and paid by the personal representatives, with death-in-service benefits excluded. That matters twice over. Living off the rent and leaving the pension as a tax-free legacy stops working, and the fund counts when the estate is tested against the £2m taper."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md 9 and 15.1: NRB 325,000 and RNRB 175,000, both frozen to 5 April 2031; taper 1 for every 2 above 2,000,000, extinguished at 2,350,000 for a single estate; IHT rate 40%",
+    "docs/property/house_positions.md 15.2: PETs and CLTs, taper relief reduces the tax not the value, 3,000 annual exemption",
+    "docs/property/house_positions.md 15.3: gift with reservation of benefit, s.102 FA 1986, market-rent route out",
+    "docs/property/house_positions.md 15.4 and 9: combined BPR and APR allowance 2,500,000 from 6 April 2026 per IHTA 1984 s.124D inserted by FA 2026 Sch 12 para 4, 50% relief above; the gov.uk announcement summary still citing 1m is stale and was not used",
+    "docs/property/house_positions.md 15.5: unused defined contribution pension funds in the estate from 6 April 2027, personal representatives report and pay, death-in-service excluded, pension counted for the 2m RNRB taper",
+    "docs/property/house_positions.md 5: residential CGT 18% and 24%, annual exempt amount 3,000, 60-day return where tax is due, private residence relief, s.58 TCGA 1992 spousal no-gain-no-loss, s.162 incorporation relief must be claimed for transfers on or after 6 April 2026",
+    "docs/property/house_positions.md 21.5 and 22.6: FIC mechanics, preference and growth shares, value freeze, seven-year clock runs from the share gift, no s.165 holdover for investment FICs",
+    "docs/property/house_positions.md 22.1: Pawson v HMRC [2013] UKUT 050 (TCC), pure BTL fails BPR; FHL abolished April 2025",
+    "docs/property/house_positions.md 22.4: CLT 20% entry charge above the NRB, periodic charge up to 6% every ten years, exit charges, s.260 holdover unavailable for settlor-interested trusts",
+    "docs/property/house_positions.md 22.5: transferable NRB and RNRB, claimed by the personal representatives",
+    "TCGA 1992 s.62(1), verified at https://www.legislation.gov.uk/ukpga/1992/12/section/62 on 2026-09-27: assets deemed acquired by the personal representatives at market value at the date of death, and not deemed disposed of by the deceased",
+    "docs/property/coverage_map_2026-09.json, row working_title 'Accountants for landlords planning retirement and succession', hp_anchors 22, 22.6, 15.4"
+  ]
+}

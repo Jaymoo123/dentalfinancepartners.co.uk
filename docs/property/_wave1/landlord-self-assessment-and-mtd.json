@@ -1,0 +1,105 @@
+{
+  "slug": "landlord-self-assessment-and-mtd",
+  "title": "Landlord Self Assessment and MTD Filing",
+  "headline": "Accountants filing landlord self assessment and MTD quarterly updates",
+  "metaTitle": "Landlord Self Assessment & MTD Filing Service",
+  "metaDescription": "Landlord self assessment and MTD for Income Tax quarterly updates filed for you. Thresholds, deadlines, SA105 and joint ownership explained for UK landlords.",
+  "intro": "You let property, you do not want to file the return yourself, and from 6 April 2026 the job got bigger: landlords with qualifying income above £50,000 move from one annual return to four quarterly updates plus a final declaration. This page is for the landlord who wants someone else to hold that calendar. A specialist from our partner network reviews three things first: your gross rents before deductions, which is what the threshold is tested on, not profit; how each property is owned, because joint owners are tested on their own share; and what your records look like today, because MTD needs digital records in compatible software. One person then holds the start date, the filing calendar, the quarterly updates, the year-end statements and the SA105 pages. Check your own position with the <a href=\"/calculators/mtd-checker\">MTD checker</a>.",
+  "stats": [
+    {
+      "value": "£50,000",
+      "label": "Qualifying income bringing landlords into MTD from 6 April 2026"
+    },
+    {
+      "value": "£30,000",
+      "label": "Threshold from 6 April 2027, then £20,000 from 6 April 2028"
+    },
+    {
+      "value": "5 filings",
+      "label": "Four quarterly updates plus the year-end steps each tax year"
+    },
+    {
+      "value": "£200",
+      "label": "Fixed penalty on reaching 4 late-submission points"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Are you in MTD, and from which April?",
+      "body": "Mandation follows gross qualifying income tested against a past return: from 6 April 2026 it covers landlord and sole-trader income above £50,000, tested on your 2024/25 return. The threshold drops to £30,000 from 6 April 2027 and £20,000 from 6 April 2028. Qualifying income is gross rents plus gross turnover before deductions, added together, so high rents with high costs still bring you in. Limited companies are outside MTD for Income Tax altogether and general partnerships are deferred with no confirmed date. HMRC writes to those who look in scope, but the obligation is yours either way."
+    },
+    {
+      "title": "Four quarterly updates and one final declaration",
+      "body": "The quarters run with the tax year: 6 April to 5 July filed by 7 August, 6 July to 5 October by 7 November, 6 October to 5 January by 7 February, and 6 January to 5 April by 7 May. A quarterly update is a cumulative summary of income and expenses by category, not a tax calculation, so no tax falls due on it. The year is closed by the end-of-period statement and the final declaration, both due 31 January after the tax year ends."
+    },
+    {
+      "title": "SA105 and what goes in which box",
+      "body": "The SA105 property pages are still where UK rental income lands, and the MTD categories map onto them: gross rents, agent commission and management fees, repairs, insurance, council tax, finance costs and other allowable expenses. Gross rent means what the tenant paid, not what the agent transferred after commission, so commission is an expense rather than a reduction in income. Mortgage interest is not an expense for individual residential landlords; it runs through the basic-rate finance-cost reducer. A profit-based estimate therefore misleads, and the <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a> is the faster check."
+    },
+    {
+      "title": "Deadlines and penalties, which now bite sooner",
+      "body": "Outside MTD the familiar dates hold: 5 October after the tax year to tell HMRC if it is your first return, 31 October for paper, 31 January for the online return and the payment, 31 July for a payment on account. Inside MTD each late submission earns a point, with £200 charged on reaching four points. Late payment is faster too: for 2026/27, 3% of the tax outstanding at day 15, a further 3% at day 30 and 10% a year from day 31, though in your first year under the new penalties you get 30 days from the due date before the day 15 charge applies."
+    },
+    {
+      "title": "Jointly owned property and Form 17",
+      "body": "Joint owners test the threshold on their own share of gross rents, not the property's total. A Form 17 election splitting 75/25 pulls the larger share in earlier, so one of you can be filing quarterly while the other still files annually. Nor does the letting agent file for you: the landlord is the filer, managed portfolio or not."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A written position on your start date",
+      "body": "A specialist reviews your last filed return, your gross rents, any sole-trade turnover and how each property is owned, then sets out which April you are mandated from and on which figure. Where you sit near a threshold, or a Form 17 election changes the split, that is stated plainly."
+    },
+    {
+      "title": "Records and software ready before quarter one",
+      "body": "Your accountant sets up the bookkeeping: categories matching the quarterly update lines and the SA105 pages, bank feeds or a spreadsheet with a compliant bridging route, and the digital links between them. Software you already use is checked against HMRC's recognised list, including foreign property fields, rather than replaced for the sake of it."
+    },
+    {
+      "title": "Quarterly updates prepared and filed on time",
+      "body": "Each quarter the figures are categorised, agent statements reconciled to gross rents, and the update submitted by the 7th of the month after the quarter end. You approve rather than assemble. Calendar quarter-ends can be elected instead at the start of the year, from 6 April 2026."
+    },
+    {
+      "title": "Year-end statement, final declaration and SA105",
+      "body": "At year end the end-of-period statement and final declaration carry the adjustments that never appear in a quarterly update: the finance-cost reducer, capital allowances where available, the property allowance where it applies, other income and any claims. The SA105 pages come from the same records, so quarterly and annual figures agree."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I still file a self assessment return once I am in MTD?",
+      "answer": "In a changed form, yes. The annual return is replaced by the end-of-period statement and the final declaration, both due 31 January after the tax year ends. The quarterly updates sit in front of them and carry no tax calculation, so you file every quarter instead of once a year, with January still the point at which the bill is settled."
+    },
+    {
+      "question": "My rental profit is small. Am I really in MTD?",
+      "answer": "Probably, if your rents are large. The threshold is tested on gross income before deductions, not on profit. A landlord receiving £52,000 in rent with £40,000 of allowable costs has £12,000 of profit and is still mandated from 6 April 2026, and sole-trade turnover is added to the same test. Gross-high, net-low is the most common reason a landlord is surprised to be in scope."
+    },
+    {
+      "question": "We own the properties jointly. Do we both have to join?",
+      "answer": "You are each tested on your own share of gross rents, not the property's total. On a default 50/50 split, £100,000 of joint gross rents means £50,000 each, so both sit on the April 2026 boundary. Each of you files your own quarterly updates and there is no joint submission. The mechanics for each spouse are worked through in the <a href=\"/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse\">joint-owner filing guide</a>."
+    },
+    {
+      "question": "Can I keep my spreadsheet?",
+      "answer": "Yes, provided bridging software from HMRC's recognised list submits from it and the figures move by a digital link rather than by hand. A digital link is a cell reference, formula, linked table or API extract. Copy-paste and manual re-keying are not acceptable. The spreadsheet also has to categorise entries the way the quarterly update and the SA105 pages do, so the columns usually need reworking first."
+    },
+    {
+      "question": "What happens if a quarterly update is late?",
+      "answer": "Each missed submission earns one point. On reaching four points a £200 penalty is charged, and a further £200 applies for every later miss while you stay at the threshold. Points clear only after twelve months of compliance and once every submission due in the preceding 24 months has been made."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md §3 (mandate dates, £50,000 / £30,000 / £20,000 thresholds, joint-owner share test, limited companies and partnerships out of scope, points regime, £200 at 4 points)",
+    "docs/property/house_positions.md §19.1 (threshold tested against 2024/25, 2025/26 and 2026/27 returns; HMRC letters)",
+    "docs/property/house_positions.md §19.2 (qualifying income gross before deductions; £52,000 rent / £40,000 costs worked example; excluded income types)",
+    "docs/property/house_positions.md §19.3 (limited companies, general partnerships, LLPs, trustees)",
+    "docs/property/house_positions.md §19.4 (joint owners, £100,000 at 50/50, Form 17 75/25)",
+    "docs/property/house_positions.md §19.5 (three consecutive years to exit; voluntary opt-in bound by the cycle)",
+    "docs/property/house_positions.md §19.6 (HMRC recognised software list, bridging, quarterly deadlines 7 August / 7 November / 7 February / 7 May, EoPS and final declaration 31 January, calendar-quarter election)",
+    "docs/property/house_positions.md §19.7 (£200 on reaching 4 points and each further miss, 12-month plus 24-month reset test, 3%/3%/10% at days 15/30/31 bounded to 2026-27, first-year 30-day concession)",
+    "docs/property/house_positions.md §19.10 (Agent Services Account is the mandatory MTD agent route, not the 64-8)",
+    "docs/property/house_positions.md §19.11 (foreign property income in MTD; SA106 software support)",
+    "docs/property/house_positions.md §19.13 (letting agent managed portfolios: the landlord is the filer; gross collected, not net paid)",
+    "docs/property/house_positions.md §19.14 (digital link definition; SA105 spreadsheet column categories)",
+    "docs/property/house_positions.md §4 (finance costs not deducted from rental profit; 20% basic-rate reducer)",
+    "docs/property/house_positions.md §41 (ITTOIA 2005 Part 6A property allowance; unavailable in a year the s.24 reducer applies)",
+    "gov.uk 'Self Assessment tax returns: Deadlines', fetched 2026-09-27 (register by 5 October, paper 31 October, online return and payment 31 January, payment on account 31 July)"
+  ]
+}

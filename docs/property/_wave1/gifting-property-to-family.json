@@ -1,0 +1,100 @@
+{
+  "slug": "gifting-property-to-family",
+  "title": "Gifting Property to Family",
+  "headline": "Accountants for owners gifting property to family",
+  "metaTitle": "Accountants for Gifting Property to Children",
+  "metaDescription": "Gifting a property or a share of it to your children? Specialist help with CGT on the gift, the seven-year clock, SDLT on assumed debt and the paperwork.",
+  "intro": "You are thinking about giving a property, or a share of one, to your children or another family member. Perhaps it is a rental you no longer want to run, perhaps it is the family home and the point is keeping it out of a future inheritance tax bill. Either way the tax lands before any money moves, because a gift between connected people is treated as a disposal at market value even though nothing is paid. The review turns on the capital gains position on the gift, whether you keep any benefit afterwards, and whether a mortgage travels with it. Two numbers decide it: the cost of gifting now and the cost of doing nothing. The filing dates come with them.",
+  "stats": [
+    {
+      "value": "18% or 24%",
+      "label": "CGT rates on a residential gain, 2026/27"
+    },
+    {
+      "value": "£3,000",
+      "label": "Capital gains annual exempt amount per person"
+    },
+    {
+      "value": "60 days",
+      "label": "To report and pay, where CGT is due on the gift"
+    },
+    {
+      "value": "7 years",
+      "label": "Survival period before a lifetime gift leaves your estate"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Capital gains tax falls due even though no money changes hands",
+      "body": "A transfer to a child or other connected person is a disposal at market value under TCGA 1992 s.17 and s.286. The gain is that value less what you paid and your allowable costs, and residential gains are taxed at 18% and 24% in 2026/27 after an annual exempt amount of £3,000. Only a spouse or civil partner transfer escapes it, and an ordinary buy to let has no holdover, so the tax is payable in cash. The <a href=\"/calculators/capital-gains-tax-calculator\">CGT calculator</a> sizes it."
+    },
+    {
+      "title": "Keeping any benefit undoes the inheritance tax saving",
+      "body": "An outright gift to an individual leaves your estate if you survive seven years, with taper reducing the tax on gifts above the nil rate band from year three. But if you carry on living there, or keep a slice of the rent, FA 1986 s.102 makes it a gift with reservation and the property sits back in your estate at its death value. The <a href=\"/blog/landlord-tax-essentials/gift-with-reservation-of-benefit\">reservation of benefit rules</a> are where most family gifts fail."
+    },
+    {
+      "title": "The shared-occupation carve-out is narrower than it looks",
+      "body": "There are three ways out. Pay a full open-market rent to the new owners, evidenced and reviewed. Move out entirely. Or use the FA 1986 s.102B(4) carve-out: gift an undivided share, both of you genuinely occupy the property as a home, and you take no benefit from the recipient connected with the gift. Only the third lets you stay rent free, and it fails if the recipient does not live there."
+    },
+    {
+      "title": "Stamp duty appears when a mortgage moves with the property",
+      "body": "A gift of an unencumbered property carries no stamp duty, because the charge falls on what is paid. It appears when the recipient takes on the mortgage: FA 2003 Sch 4 para 8 treats the assumed debt as chargeable consideration at residential rates, capped at market value. Where the recipient already owns a home the 5% surcharge can apply. The <a href=\"/blog/capital-gains-tax/gifting-property-and-deed-of-gift-tax-implications\">deed of gift and SDLT position</a> has the detail."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "The cost of the gift, before you sign anything",
+      "body": "A specialist from the partner network reviews your acquisition cost, improvement spend and any period the property was your main home, then sets the gain against a current valuation. You see the figure, the date it is payable, and how it moves if the gift is split across two tax years or two owners."
+    },
+    {
+      "title": "A reservation of benefit review before the deed is drawn",
+      "body": "The review covers what actually happens after the gift: who lives there, who collects the rent, who pays the bills, and whether money comes back to you. That is measured against FA 1986 s.102, s.102A and s.102B and the pre-owned assets charge. Where you need to stay, your accountant prepares the rent calculation and its evidence."
+    },
+    {
+      "title": "The stamp duty position on any debt that travels",
+      "body": "Where a mortgage or a share of one is taken over, a specialist calculates the chargeable consideration, checks whether the surcharge catches the recipient, and confirms whether a return is notifiable at all. That figure often decides whether the mortgage is redeemed first or moved. The <a href=\"/calculators/stamp-duty-calculator\">stamp duty calculator</a> gives a first pass."
+    },
+    {
+      "title": "Filings, records and the order of a larger handover",
+      "body": "The 60-day capital gains return is prepared where tax arises, the disposal is reported again at self assessment, and the gift is recorded with its date and valuation so your executors can evidence the seven-year position. Where a portfolio is passing down, the <a href=\"/blog/incorporation-and-company-structures/gifting-property-to-adult-children-decision-tree-cgt-iht-occupancy-mechanics\">order of the transfers</a> is written down with dates."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I pay capital gains tax if I give my rental property to my son?",
+      "answer": "Yes, in almost every case. A gift to a child is a disposal to a connected person, so the gain is worked out on market value on the day of the gift, not the nil price paid. In 2026/27 residential gains are taxed at 18% for basic rate and 24% for higher rate, after an annual exempt amount of £3,000. An ordinary buy to let has no holdover, so the tax is payable in cash."
+    },
+    {
+      "question": "Can I give my house to my children and carry on living in it?",
+      "answer": "You can, but it usually achieves nothing for inheritance tax. Under FA 1986 s.102 a gift where you keep possession or any benefit is a gift with reservation, so the house stays in your estate at its value on the date of death and the seven-year clock never starts. The exits are narrow: pay a full market rent, move out completely, or gift a share where you both genuinely live there."
+    },
+    {
+      "question": "Is there stamp duty on a gifted property?",
+      "answer": "Not on the gift itself, because stamp duty is charged on what is paid and a gift has no price. The charge appears where a mortgage moves with the property: FA 2003 Sch 4 para 8 treats the debt the recipient takes on as chargeable consideration, taxed at residential rates and limited to market value. Where the recipient already owns a home the surcharge can apply on top."
+    },
+    {
+      "question": "What happens if I die within seven years of the gift?",
+      "answer": "The gift comes back into the inheritance tax calculation against your nil rate band, which is £325,000 per person and frozen until 5 April 2031. Within that band there is no tax on the gift, though it reduces the band left for your estate. Above it, taper reduces the tax due, not the value of the gift: 80% of the full rate at three to four years, then 60%, 40% and 20% by year seven."
+    },
+    {
+      "question": "Does my child pay tax on the property once they own it?",
+      "answer": "They pay income tax on their share of the rent from the date of the gift, and they take your market value at that date as the base cost for a future sale. If they live in it as their only or main home, private residence relief may cover most of the later gain. If your child is under 18, the settlements rules attribute the rent back to you until they turn 18."
+    },
+    {
+      "question": "Does gifting into a trust change the position?",
+      "answer": "It changes both taxes. A gift into most trusts is a chargeable lifetime transfer rather than a potentially exempt transfer, with a 20% entry charge on value above the nil rate band and ten-year charges after. In exchange, holdover under TCGA 1992 s.260 can defer the gain, provided neither you nor your spouse can benefit. A bare trust sits outside that regime."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md §5 (residential CGT 18%/24% 2026/27; AEA £3,000; 60-day return where tax is due; s.58 spouse no-gain-no-loss)",
+    "docs/property/house_positions.md §15.1 (NRB £325,000 per person, frozen to 5 April 2031)",
+    "docs/property/house_positions.md §15.2 (PETs, CLT 20% entry charge, seven-year clock, taper 80/60/40/20)",
+    "docs/property/house_positions.md §15.3 and §22.11 (GROB: FA 1986 s.102, s.102A, s.102B(4) shared-occupation carve-out; full-market-rent and cease-occupation exits; POAT FA 2004 Sch 15). Verified at legislation.gov.uk 2026-05-22/23.",
+    "docs/property/house_positions.md §22.12 (TCGA 1992 s.260 holdover, settlor-interested exclusion ss.169B-169G, bare trust outside the relevant property regime; relevant property ten-year charge)",
+    "docs/property/house_positions.md §24.7 (connected-person disposal at market value TCGA 1992 s.17 + s.286; no holdover for non-business buy to let; ITTOIA 2005 s.624 attribution to age 18)",
+    "docs/property/house_positions.md §24.6 (rental income follows beneficial ownership)",
+    "docs/property/house_positions.md §1.P (FA 2003 Sch 4 para 8 assumed debt as chargeable consideration; market-value cap)",
+    "docs/property/house_positions.md §1 (5% additional dwellings surcharge from 31 October 2024)",
+    "docs/property/coverage_map_2026-09.json (wave 1 row 'Accountants for owners gifting property to family'; hp_anchors 15, 15.3, 22.11)"
+  ]
+}

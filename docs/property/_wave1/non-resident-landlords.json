@@ -1,0 +1,101 @@
+{
+  "slug": "non-resident-landlords",
+  "title": "Non-Resident and Overseas Landlords",
+  "headline": "Accountants for non-resident and overseas landlords",
+  "metaTitle": "Non-Resident Landlord Accountants | Overseas",
+  "metaDescription": "For landlords letting or selling UK property from abroad. NRL scheme and NRL1, self assessment from overseas, non-resident CGT and the 60-day return.",
+  "intro": "You let a UK property and you no longer live in the UK. Perhaps you took a job overseas and kept the flat, retired abroad, or are moving back after five years away with nobody having looked at the returns since. Your letting agent may already be taking 20% off the rent. A specialist settles the residence position first: whether you are non-resident for each tax year under the statutory residence test, whether you hold gross payment approval under the Non-Resident Landlord Scheme, and whether every year since you left has actually been filed. What comes back is a written position: what is outstanding, what can be reclaimed, what a sale would cost. The scheme mechanics are on the <a href=\"/services/non-resident-landlord\">non-resident landlord service page</a>.",
+  "stats": [
+    {
+      "value": "20%",
+      "label": "Basic rate withheld from your rent without gross payment approval"
+    },
+    {
+      "value": "60 days",
+      "label": "To report and pay on a UK land disposal, whether or not tax is due"
+    },
+    {
+      "value": "£100 a week",
+      "label": "Rent above which a tenant with no UK agent must withhold"
+    },
+    {
+      "value": "5 April 2015",
+      "label": "Default rebasing date for non-resident residential gains"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "The scheme starts working on you before you apply to it",
+      "body": "The Non-Resident Landlord Scheme is statutory, under ITA 2007 ss.971-972. Once your address is outside the UK, a letting agent withholds basic rate tax from the rent and accounts quarterly, and where there is no agent a tenant paying over £100 a week must do the same. Gross payment approval is applied for on NRL1 as an individual, NRL2 as a company or NRL3 as trustees, and only where your UK tax affairs are up to date, so it and the outstanding returns are one job."
+    },
+    {
+      "title": "Self assessment continues, and the allowance position is not automatic",
+      "body": "Being non-resident does not end your UK filing. Profit from UK property stays taxable here at 20%, 40% and 45% for 2026/27, with the section 24 reducer as a 20% basic rate credit. Whether you keep the personal allowance depends on nationality or treaty: UK and EEA nationals retain it under domestic law, others depend on the specific treaty. Sketch the profit with the <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a>, or read the <a href=\"/blog/non-resident-landlord-tax/uk-property-income-expats-tax-obligations-explained\">expat obligation map</a>."
+    },
+    {
+      "title": "Selling from abroad puts you on a 60-day clock",
+      "body": "A non-resident must file a UK property disposal return and pay within 60 days of completion for every UK land disposal, including commercial land, indirect disposals of property-rich shares, and disposals where no tax is due. A UK resident files only where tax is due, so the rule you knew before you left is now the wrong one. Residential gains are charged at 18% and 24%, with a £3,000 annual exempt amount."
+    },
+    {
+      "title": "Rebasing decides how much of the gain is even in charge",
+      "body": "Non-residents came into UK capital gains on residential property from 6 April 2015 and on non-residential land and property-rich shares from 6 April 2019. The gain defaults to market value on 5 April 2015 or 5 April 2019 rather than what you paid, so a property bought long before you left can carry a far smaller chargeable gain than the headline. Apportionment and the full historic gain are the alternatives. The <a href=\"/calculators/capital-gains-tax-calculator\">capital gains tax calculator</a> gives a first number."
+    },
+    {
+      "title": "A treaty allocates the tax, it does not remove it",
+      "body": "Treaties are widely misread as an exemption. Under the immovable property article the UK keeps primary taxing rights over UK rental income and property gains, whatever your residence. The treaty decides how your country of residence relieves the double charge, and gives a tie-breaker for the year you are arguably resident in both. Foreign tax credit is never automatic: it is claimed on a return, and each filing is prepared knowing what the other says."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Your residence position, year by year",
+      "body": "A specialist works the statutory residence test for each tax year separately, because leaving in one year settles nothing about the next, and checks whether split-year treatment applies to the year you left. Where you were resident in both countries on domestic rules, the treaty tie-breaker is worked through and written down with the day counts."
+    },
+    {
+      "title": "Gross payment approval and the years behind you",
+      "body": "Your accountant prepares the NRL1, NRL2 or NRL3 alongside any outstanding self assessment years, because approval depends on the UK record being up to date. Where the Let Property Campaign is the right route for undeclared years, the disclosure goes with it. Approval usually takes around six weeks, so ordering matters."
+    },
+    {
+      "title": "The annual return, and the tax already taken off",
+      "body": "The return is prepared from your agent statements and NRL6 certificates, with withheld tax set against the liability and over-deductions reclaimed, not left with HMRC. Foreign tax credit is handled at the final declaration, and where Making Tax Digital applies, quarterly updates continue from overseas."
+    },
+    {
+      "title": "Disposals planned before the contract, not after",
+      "body": "When you are selling, a specialist reviews the rebasing options and valuation evidence, works private residence relief for any period you lived there, and sets the 60-day return and payment against completion. Where you are moving back, the temporary non-residence rules are checked before the sale date is fixed."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "I have just moved abroad and kept my flat. What has to happen first?",
+      "answer": "Tell your letting agent your new address, because they must start withholding basic rate tax from the rent once you are outside the UK, then apply for gross payment approval on the NRL1 if you want the rent in full. Register for self assessment if you are not already in it. Your first year abroad may be a split year, which changes what is taxable, so settle the residence position first."
+    },
+    {
+      "question": "Can I still get the UK personal allowance against my rental profit?",
+      "answer": "It depends on your nationality and the treaty with the country you live in. UK and EEA nationals keep the personal allowance under domestic law. For other nationalities it turns on what the specific treaty gives, and some give nothing. It is checked case by case, because the return is built on the answer and an assumed allowance produces an underpayment that carries interest."
+    },
+    {
+      "question": "Do I have to file a 60-day return if I make no gain on the sale?",
+      "answer": "Yes. A non-resident must report every UK land disposal within 60 days of completion, whether or not tax is due, and that covers commercial land and indirect disposals of property-rich shares as well as a residential let. It is the most missed deadline for overseas owners, because it differs from the rule that applied while you were UK resident. The <a href=\"/blog/non-resident-landlord-tax/non-resident-cgt-selling-uk-property-overseas-guide\">full guide to non-resident CGT</a> sets out the mechanics."
+    },
+    {
+      "question": "If I sell while I am abroad and then move back, is the gain gone?",
+      "answer": "Not necessarily. UK land sits inside the non-resident charge anyway, so the disposal is taxable here when it happens. Separately, if your period of non-residence is five years or less and you were UK resident in four or more of the seven tax years before you left, temporary non-residence rules can pull gains into the year you return. Check the dates before fixing completion."
+    },
+    {
+      "question": "I let the place for years and never filed anything. How bad is that?",
+      "answer": "It is a common starting point, not an unusual one. The Let Property Campaign exists for exactly this, and an unprompted disclosure gets better penalty treatment than one made after HMRC writes to you. The years are reconstructed, the profit recalculated with expenses that were never claimed, and the tax your agent already withheld comes off the total. Gross payment approval follows once the record is clean."
+    }
+  ],
+  "sources": [
+    "docs/property/house_positions.md 16.6 (NRL scheme statutory basis: ITA 2007 ss.971-972 + SI 1995/2902; treaty does not displace NRL)",
+    "docs/property/house_positions.md 17.5 (NRL1/NRL2/NRL3, NRLQ/NRLY, NRL6, £100 a week tenant threshold, approval around six weeks)",
+    "docs/property/house_positions.md 17.4 (NRCGT at TCGA 1992 s.1A and Schs 1A/1B/4AA; 6 Apr 2015 residential, 6 Apr 2019 non-residential and indirect; rebasing defaults; 60-day return for every disposal; 18%/24%; £3,000 AEA)",
+    "docs/property/house_positions.md 17.1, 17.2, 17.3 (statutory residence test, split-year Cases 1-8, temporary non-residence TCGA 1992 s.10A five-year test)",
+    "docs/property/house_positions.md 17.7 (personal allowance by nationality or treaty; self assessment continues; 60-day return separate from self assessment; SRT applied each tax year)",
+    "docs/property/house_positions.md 16.2, 16.3, 16.4 (Art 6 UK source taxing rights, Art 13 NRCGT override, Art 4 tie-breaker cascade; foreign tax credit claimed not automatic)",
+    "docs/property/house_positions.md 5 (CGT 18%/24%, £3,000 AEA, private residence relief, 60-day reporting)",
+    "docs/property/house_positions.md 7 and 4 (2026/27 property income at 20/40/45; section 24 finance cost reducer at 20% for 2026/27)",
+    "docs/property/house_positions.md 19.11 (foreign property income inside MTD, SA106 software support, foreign tax credit at final declaration, NRL interaction)",
+    "gov.uk 'Paying tax on rent to landlords abroad', fetched 2026-09-27 (£100 a week tenant threshold, basic rate deduction, quarterly remittance)",
+    "docs/property/coverage_map_2026-09.json (map row: situation, target query 'non resident landlord accountant', hp anchors 17, 17.4, 17.5)"
+  ]
+}

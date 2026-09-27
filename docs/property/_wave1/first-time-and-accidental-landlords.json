@@ -1,0 +1,102 @@
+{
+  "slug": "first-time-and-accidental-landlords",
+  "title": "First-Time and Accidental Landlords",
+  "headline": "Accountants for first-time and accidental landlords",
+  "metaTitle": "Accountant for First Time Landlords | Former Home",
+  "metaDescription": "Letting a former home? Specialist help for first-time and accidental landlords: telling HMRC, expenses, Section 24, MTD records and relief when you sell.",
+  "intro": "You did not plan to be a landlord. You moved in with a partner, relocated for work, inherited a house, or could not sell, and now your old home is let. HMRC treats you as a landlord from the first day of the tenancy, with a return, records and a deadline attached. A specialist looks at four things first: when the letting began and whether HMRC has been told in time, whether your rent sits above or below the £1,000 property allowance, how the mortgage interest runs through Section 24, and how long the property was your own home, because that decides the relief when you sell. That sequence is set out below in the order the dates fall, ending with an introduction to a specialist firm.",
+  "stats": [
+    {
+      "value": "5 October",
+      "label": "Deadline to tell HMRC after your first tax year of letting"
+    },
+    {
+      "value": "£1,000",
+      "label": "Property allowance, per person, per tax year"
+    },
+    {
+      "value": "20%",
+      "label": "Section 24 finance cost credit for 2026/27"
+    },
+    {
+      "value": "£50,000",
+      "label": "MTD for Income Tax threshold from 6 April 2026"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "Telling HMRC and registering in time",
+      "body": "Rental income does not reach HMRC through your payroll, so the duty to notify is yours. The deadline is 5 October after the end of the tax year the letting started in, and the return and payment follow by the next 31 January. Miss it and Schedule 41 Finance Act 2008 failure-to-notify penalties run as a percentage of the tax, though an unprompted disclosure of a non-deliberate failure within twelve months can reach nil. Background sits in <a href=\"/blog/landlord-tax-essentials/accidental-landlord-taxes-a-complete-guide\">the accidental landlord guide</a> and <a href=\"/blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know\">the first-time landlord guide</a>."
+    },
+    {
+      "title": "The property allowance against real expenses",
+      "body": "Where your share of gross rent is £1,000 or less, the property allowance covers it and there is normally nothing to report. Above that you choose each year: the flat £1,000 instead of your costs, or the real expenses. It is per person, so joint owners have one each. The trap is that the allowance and the Section 24 credit cannot both be used in the same tax year, so a mortgaged former home usually claims real expenses. The <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a> compares the two."
+    },
+    {
+      "title": "Section 24 and the 20% credit on a first return",
+      "body": "Mortgage interest is not deducted from rental profit. You get a basic rate tax credit instead, 20% for 2026/27, capped at the lowest of 20% of the finance costs, 20% of the rental profit before finance costs, and 20% of your income above the personal allowance. What the cap blocks carries forward. For an employed landlord it can lift total income into higher rate territory. The <a href=\"/calculators/section-24-calculator\">Section 24 calculator</a> puts a number on it."
+    },
+    {
+      "title": "Consent to let and the mortgage",
+      "body": "A residential mortgage usually needs the lender's consent to let before the tenancy starts, and the lender may add a rate premium or move you to buy-to-let terms. That is a lending question, not a tax one: it changes neither the property business nor the notification deadline. It does change your figures, because the new interest runs through Section 24."
+    },
+    {
+      "title": "Records that will satisfy Making Tax Digital",
+      "body": "Making Tax Digital for Income Tax is mandatory from 6 April 2026 above £50,000 of qualifying income, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. Qualifying income is gross rent plus any gross self-employment turnover, before deductions, so a small profit does not keep you out, and joint owners test their own share. The <a href=\"/calculators/mtd-checker\">MTD checker</a> tests your figures."
+    },
+    {
+      "title": "Selling later, and relief for the years it was home",
+      "body": "The gain is split across your whole period of ownership. Years it was genuinely your main residence are covered by private residence relief, and the final nine months always qualify where it was your main home at some point. Letting relief applies only where you shared occupation with the tenant. Residential rates for 2026/27 are 18% and 24% after the £3,000 annual exempt amount, and where tax is due you report and pay within 60 days."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "The first return, from the start date",
+      "body": "The starting point is when the letting began, whether notification is already late, and which tax year the first return belongs in. Your accountant prepares the registration, the property pages and the computation, and sets out what is payable and when."
+    },
+    {
+      "title": "Allowance against expenses, on your figures",
+      "body": "The rent, finance costs, repairs, agent fees, insurance and the pre-letting spending that is often missed all go into one schedule, and the £1,000 allowance is then compared against real expenses on your own figures for the year."
+    },
+    {
+      "title": "A record system that carries into MTD",
+      "body": "Your gross figures decide whether you fall into the April 2026, 2027 or 2028 cohort, and a jointly owned property is tested on your share rather than the whole. From there the digital records and the quarterly filing pattern are set up in recognised software before the first quarter runs."
+    },
+    {
+      "title": "The four facts that settle the first return",
+      "body": "The letting start date, your share of the gross rent, the mortgage interest and the years the property was your own home are the four facts that drive everything else on this page. Have those to hand and the first return, the allowance choice and the Making Tax Digital start date can be settled in one pass."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I have to tell HMRC if I only let my old home for part of the year?",
+      "answer": "Yes, if your share of the rent is more than £1,000 for the tax year. A part-year letting still creates a property business for the months it ran. You have until 5 October after the end of that tax year to notify HMRC, and the return follows by 31 January. At or below £1,000, the property allowance normally covers it."
+    },
+    {
+      "question": "Is the property allowance worth taking?",
+      "answer": "It depends on your costs. If real expenses come to less than £1,000 and there is no mortgage, the flat allowance is simpler and usually better. With a mortgage it is usually worse, because the allowance and the Section 24 credit cannot both be used in the same tax year. It is per person, so joint owners have £1,000 each."
+    },
+    {
+      "question": "Will letting my old home cost me capital gains tax relief?",
+      "answer": "It reduces relief over time rather than removing it. The gain is apportioned across your ownership, the years it was your main residence stay covered by private residence relief, and the final nine months always qualify where it was your main home at some point. Only the letting years outside that are exposed, taxed at 18% or 24% in 2026/27 after the £3,000 annual exempt amount."
+    },
+    {
+      "question": "When does Making Tax Digital apply to me as a new landlord?",
+      "answer": "From 6 April 2026 where qualifying income is above £50,000, from 6 April 2027 above £30,000, and from 6 April 2028 above £20,000. Qualifying income is gross rent plus any gross self-employment turnover, before deductions, so a landlord with £52,000 of rent and £40,000 of costs is in scope. Joint owners test their own share rather than the property total."
+    },
+    {
+      "question": "What if I have been letting for years and never told HMRC?",
+      "answer": "It is fixable, and disclosing before HMRC contacts you matters. Failure to notify is penalised as a percentage of the tax under Schedule 41 Finance Act 2008, but an unprompted disclosure of a non-deliberate failure within twelve months can reach a nil penalty. The Let Property Campaign is the standard disclosure route for residential landlords with undisclosed rent."
+    }
+  ],
+  "sources": [
+    "house_positions.md 3 and 19.1: MTD for ITSA thresholds 6 Apr 2026 above 50,000, 6 Apr 2027 above 30,000, 6 Apr 2028 above 20,000; 19.2 qualifying income is gross and aggregated; 19.4 joint owners test their share; 19.6 quarterly updates and final declaration 31 January",
+    "house_positions.md 4: Section 24 finance costs given as a 20% basic rate credit for 2026/27, three-part cap, unused amount carries forward",
+    "house_positions.md 5: residential CGT 18% and 24%, annual exempt amount 3,000, private residence relief final 9 months, letting relief only on shared occupation, 60-day UK property reporting where tax is due",
+    "house_positions.md 41: property income allowance 1,000 per person per tax year (ITTOIA 2005 Part 6A s.783BD), full relief at or below 1,000, and PIM4460 that the allowance and the Section 24 reducer are mutually exclusive in a tax year",
+    "house_positions.md 27.3 and the Let Property Campaign position: Schedule 41 Finance Act 2008 failure to notify, TMA 1970 s.7 six-month notification obligation, unprompted non-deliberate disclosure floor of 0% within 12 months",
+    "https://www.gov.uk/register-for-self-assessment fetched 2026-09-27: 'You must tell HM Revenue and Customs (HMRC) by 5 October 2026 if you need to complete a tax return for the previous tax year'",
+    "Property/web/src/config/site.ts:39 partner network consent wording, quoted verbatim in howWeHelp",
+    "docs/property/coverage_map_2026-09.json row 'Accountants for first-time and accidental landlords', target query 'accountant for first time landlord', hp_anchors 4, 5, 19"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "slug": "couples-splitting-rental-income",
+  "title": "Couples Splitting Rental Income",
+  "headline": "Accountants for couples splitting rental income between them",
+  "metaTitle": "Form 17 & Declaration of Trust Accountants",
+  "metaDescription": "Splitting rental income between spouses or civil partners? Form 17, declarations of trust, joint tenants and the 60-day window, explained for UK landlords.",
+  "intro": "You own a rental property together, one of you pays higher-rate tax and the other pays basic rate or has no income, and the rent is taxed half each. Married couples and civil partners have a route to change that; unmarried co-owners are often pointed at Form 17 when it does not apply. A specialist starts with the title, not the tax: joint tenants or tenants in common, and what the deeds and contributions show. The split follows from that. A declaration of trust sets the beneficial shares, Form 17 tells HMRC about them, and the mortgage and stamp duty consequences are checked before signing. Sometimes the answer is that the change is shut to you, or costs more than it saves; that comes back in writing too.",
+  "stats": [
+    {
+      "value": "50/50",
+      "label": "Default split of joint rental income for spouses and civil partners living together"
+    },
+    {
+      "value": "60 days",
+      "label": "Deadline for Form 17 to reach HMRC after the last signature"
+    },
+    {
+      "value": "No gain, no loss",
+      "label": "CGT treatment of a transfer between spouses living together"
+    },
+    {
+      "value": "3 tax years",
+      "label": "Window for no-gain-no-loss treatment after a couple separates"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "The 50/50 default applies whatever the deeds say",
+      "body": "Where a married couple or civil partners living together jointly own a property, ITA 2007 s.836 taxes the rent as if it arises in equal shares, even if one of you put in the whole deposit. Within that situation the route out is a joint declaration on Form 17, and only where your beneficial interests really are unequal. The <a href=\"/calculators/rental-income-tax-calculator\">rental income tax calculator</a> shows what the current split costs the higher-rate partner."
+    },
+    {
+      "title": "Form 17 declares a split, it does not create one",
+      "body": "This is the point that fails most often under enquiry. Form 17 reports beneficial ownership that already exists; it cannot turn a 50/50 property into a 90/10 one. To be taxed unequally you change the ownership first, normally by a written declaration of trust, then file Form 17. A form with nothing underneath it is invalid and 50/50 continues."
+    },
+    {
+      "title": "Joint tenants have nothing to declare",
+      "body": "Joint tenants own the whole property together rather than measurable shares, so there is nothing to put on the form. You sever to tenants in common first, in England and Wales by notice under Law of Property Act 1925 s.36(2). Severance also changes what happens on death: a tenant in common's share passes under the will, not to the survivor."
+    },
+    {
+      "title": "The 60-day window is strict",
+      "body": "Form 17 must reach HMRC within 60 days of the date the last of you signs. Late forms are invalid and you are back to 50/50. It takes effect from that signature date, not the start of the tax year, so timing decides how much of the year is split. It is not an annual form."
+    },
+    {
+      "title": "Moving a mortgage share can trigger stamp duty",
+      "body": "A declaration of trust between spouses attracts no SDLT, LTT or LBTT of itself, because nothing is paid. If the receiving partner takes on a share of the mortgage, that assumed debt is chargeable consideration and duty can fall due, at higher rates where that partner owns another dwelling. It is the most common error on a sound split."
+    },
+    {
+      "title": "Unmarried couples are in a different regime",
+      "body": "If you are not married or in a civil partnership, neither the 50/50 default nor Form 17 applies. Your rental income follows your actual beneficial shares, evidenced by the deed, deposit and mortgage. A transfer between you sits outside TCGA 1992 s.58: it is a disposal at market value, so capital gains tax can arise on the move. The <a href=\"/blog/landlord-tax-essentials/unmarried-co-owners-property-tax-rental-income-split-actual-beneficial-share\">guide to unmarried co-owners</a> sets out what HMRC looks for."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A review of how the property is actually held",
+      "body": "A specialist from the partner network begins at the register and the deeds: joint tenants or tenants in common, whose names are on the title, whose money went in, and whether a trust deed exists. That settles whether an unequal split is open to you, and whether severance comes first."
+    },
+    {
+      "title": "The order of the steps, written down",
+      "body": "Severance where it is needed, then the declaration of trust, then Form 17 inside the 60 days, then the change to how each of you reports the rent. A specialist sets out that sequence and the dates before anything is executed, because a form signed ahead of the deed is what HMRC challenges."
+    },
+    {
+      "title": "The change modelled both ways",
+      "body": "The comparison runs both ways: rental profit and finance costs at the current shares against the proposed shares, at both marginal rates. Finance costs must follow the same shares as the income, so each of you gets a different <a href=\"/calculators/section-24-calculator\">Section 24 calculator</a> figure once the split moves."
+    },
+    {
+      "title": "The duty, gains and evidence check before signing",
+      "body": "Any movement of mortgage share is costed for SDLT, LTT or LBTT, and the base cost passing across on a no-gain-no-loss transfer is recorded so a later sale holds no surprise. Your accountant keeps the deed, the contributions and the rent account together, which is what HMRC asks for on enquiry."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can we split the rental income 90/10 because one of us is a higher-rate taxpayer?",
+      "answer": "Not on its own. The tax split has to match the beneficial ownership. If you own the property equally you are taxed equally, whatever you agree between yourselves. To be taxed 90/10 you have to own it 90/10, which means a declaration of trust changing the beneficial shares, and where you hold as joint tenants, a severance to tenants in common first. Form 17 is the last step, not the first."
+    },
+    {
+      "question": "What is a declaration of trust, and do we need a solicitor?",
+      "answer": "It is a written document in which the legal owners record that they hold the property on trust for themselves in stated unequal shares, say 75 per cent and 25 per cent. Law of Property Act 1925 s.53(1)(b) requires writing, and it should name the property, the owners, the shares and the date of effect. HMRC can ask to see it. Drafting is conveyancing work, so a solicitor prepares the deed while a specialist confirms the shares."
+    },
+    {
+      "question": "We hold the property as joint tenants. What has to change?",
+      "answer": "Joint tenancy is undivided ownership: each of you owns the whole thing jointly rather than a defined share, so there is no percentage to enter on Form 17. You sever into a tenancy in common first, in England and Wales by written notice under Law of Property Act 1925 s.36(2). Once you hold defined shares, a declaration of trust can set them unequally and Form 17 can declare them."
+    },
+    {
+      "question": "Will transferring a share to my spouse create a capital gains tax bill?",
+      "answer": "Not while you are living together. Such transfers are treated under TCGA 1992 s.58 as producing neither a gain nor a loss. The receiving partner takes over the original base cost rather than the value on the day, so the gain is deferred rather than removed. If you have separated, the same treatment can still apply to transfers under a court order or formal separation agreement, for up to three tax years after the year of separation."
+    },
+    {
+      "question": "Could stamp duty be due on a transfer between us?",
+      "answer": "It can. A declaration of trust between spouses is not a purchase, so with no money changing hands there is usually nothing to charge. The exception is the mortgage. If the partner receiving a share also takes on borrowing, that assumed debt counts as chargeable consideration for SDLT, and for LTT and LBTT in Wales and Scotland. Higher rates can apply where that partner owns another dwelling."
+    }
+  ],
+  "sources": [
+    "ITA 2007 s.836 (50/50 default for spouses and civil partners): https://www.legislation.gov.uk/ukpga/2007/3/section/836 (house_positions.md 24.1)",
+    "HMRC PIM1030, joint property income split: https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030 (house_positions.md 24.1, 24.5, 24.6)",
+    "HMRC Form 17, declaration of beneficial interests in joint property and income: https://www.gov.uk/government/publications/income-tax-declaration-of-beneficial-interests-in-joint-property-and-income-17 (house_positions.md 24.2)",
+    "HMRC TSEM9851 and TSEM9852: 60-day window, evidence requirement, effective date, joint tenancy bar (house_positions.md 24.2, 24.8)",
+    "Law of Property Act 1925 s.36(2) severance and s.53(1)(b) declaration of trust formalities (house_positions.md 24.2, 24.3)",
+    "TCGA 1992 s.58, no-gain-no-loss transfers between spouses: https://www.legislation.gov.uk/ukpga/1992/12/section/58; s.58(1A)-(1D) three-tax-year post-separation window inserted by Finance (No. 2) Act 2023 c.30 s.41(2)(6) (house_positions.md 24.3, 24.4)",
+    "FA 2003 Sch 4 para 8, assumed mortgage debt as chargeable consideration for SDLT, with LTTA 2017 and LBTT(S)A 2013 equivalents (house_positions.md 24.3)",
+    "TCGA 1992 s.17 and s.286, market-value disposal between unmarried co-owners (house_positions.md 24.6)",
+    "HMRC PIM1030 income-and-finance-cost correspondence rule for apportioned shares (house_positions.md 24.5)"
+  ]
+}
