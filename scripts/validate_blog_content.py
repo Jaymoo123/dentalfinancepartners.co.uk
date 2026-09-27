@@ -48,6 +48,21 @@ SITES = {
         "url_style": "nested",
         "author": "Accounts for Lawyers Editorial Team",
     },
+    "contractors-ir35": {
+        "domain": "contractortaxaccountants.co.uk",
+        "url_style": "nested",
+        "author": "Contractor Tax Accountants Editorial Team",
+    },
+    "care": {
+        "domain": "carehometax.co.uk",
+        "url_style": "nested",
+        "author": "Care Home Tax Editorial Team",
+    },
+    "charities": {
+        "domain": "trusteetax.co.uk",
+        "url_style": "nested",
+        "author": "Trustee Tax Editorial Team",
+    },
 }
 
 REQUIRED_FIELDS = ["title", "slug", "date", "author", "category", "metaTitle", "metaDescription", "h1", "summary"]
