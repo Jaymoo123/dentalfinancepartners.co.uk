@@ -1,3 +1,5 @@
+> Decision 2026-09-27: this draft does not replace the live 4,300-word guide at /blog/limited-company-tax/closing-contractor-limited-company; it ships as a new post, slug `winding-up-taar-contractor-same-trade`. QA below was run against the draft under its old name.
+
 # Track A factual QA: closing-contractor-limited-company
 
 Site: contractors-ir35. Reviewed 2026-09-27. Draft: `docs/contractors-ir35/_wave1/posts/closing-contractor-limited-company.md` (EXTEND of the live post of the same slug).

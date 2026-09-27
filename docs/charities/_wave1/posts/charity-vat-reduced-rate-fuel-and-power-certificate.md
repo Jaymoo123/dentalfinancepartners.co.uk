@@ -1,6 +1,6 @@
 ---
 slug: "charity-vat-reduced-rate-fuel-and-power-certificate"
-title: "Charity VAT on Fuel and Power: the 5% Rate and the Certificate"
+title: "Charity VAT on Fuel and Power: the 5% Rate and Certificate"
 date: "2026-09-27"
 dateModified: "2026-09-27"
 updatedDate: "2026-09-27"
@@ -32,7 +32,7 @@ faqs:
   - question: "Can a CIC or a trading subsidiary use the relief?"
     answer: "No. The relief is drafted around use by a charity otherwise than in the course or furtherance of a business. A community interest company is not a charity, and a charity's trading subsidiary is a separate company running a business, so both pay the standard rate on their own supplies."
 ---
-<p>Fuel and power a charity puts to non-business use is charged at the 5% reduced rate rather than the 20% standard rate, and from 1 October 2026 to 31 March 2027 qualifying supplies of electricity in Great Britain are charged at 0%. Neither rate arrives on its own. Your energy supplier charges the standard rate until you send it a signed certificate stating what percentage of the supply to each premises is qualifying use, so the relief is worth what you claim it for and nothing for the years you did not.</p>
+<p>Fuel and power a charity puts to non-business use is charged at the 5% reduced rate rather than the 20% standard rate, and from 1 October 2026 to 31 March 2027 qualifying supplies of electricity in Great Britain are charged at 0%. Neither rate arrives on its own. Your energy supplier charges the standard rate until you send it a signed certificate stating what percentage of the supply to each premises is qualifying use, and it applies the lower rate only from the date it holds that certificate.</p>
 
 <h2>What rate applies to charity fuel and power</h2>
 <p>The reduced rate of 5% applies to supplies of coal, coke, gas, petroleum gases, fuel oil, gas oil, kerosene, electricity, heat and air conditioning where they are put to qualifying use. Qualifying use has two limbs: domestic use, or use by a charity otherwise than in the course or furtherance of a business. A charity relies on the second limb for its offices, its meeting rooms and any premises it runs without charging.</p>
@@ -54,13 +54,13 @@ faqs:
 
 <h2>How the 60% rule changes the answer</h2>
 <p>If at least 60% of the fuel or power is supplied for qualifying use, the whole supply is treated as qualifying and the reduced rate applies to all of it. Below 60%, the supplier apportions, charging the reduced rate on the qualifying share and the standard rate on the balance.</p>
-<p>That threshold is worth measuring against rather than guessing past. A charity that declares 55% gets the reduced rate on 55% of the bill. A charity that measures properly and finds the true figure is 62% gets it on all of it. The gap between those two answers is larger than the gap between 55% and 62% suggests, and on a meter where the split is genuinely close the measurement is the cheapest work available to you.</p>
+<p>The threshold rewards measuring rather than estimating. A charity that declares 55% gets the reduced rate on 55% of the bill. A charity that measures the same building properly and finds the true figure is 62% gets the reduced rate on the whole bill. Where a meter looks close to 60%, work the split out from floor area, sub-metering or hours of use before you put a figure on the certificate.</p>
 
 <h2>When you do not need a certificate at all</h2>
 <p>Small supplies are deemed domestic use and get the relief automatically. The limits are 1,000 kilowatt hours of electricity a month, 150 therms or 4,397 kilowatt hours of piped gas a month, 2,300 litres of fuel oil, gas oil or kerosene, and one tonne or less of domestic grade coal or coke. A small hall or a single-room office often sits inside these limits on both meters, in which case the correct rate should already be on the bill and no certificate is required. Inside the window that means 0% on a small electricity supply in Great Britain and 5% on gas. Check a bill before assuming a certificate is missing.</p>
 
 <h2>Who cannot use the relief</h2>
-<p>The relief turns on use by a charity, so an organisation that is not a charity is outside it however social its purpose. A community interest company pays the standard rate on its fuel and power, along the same lines as the other charity reliefs it cannot reach; our comparison of <a href="/blog/cics-and-social-enterprises/cic-vs-charity">a CIC and a charity</a> sets out where that line falls. A charity's trading subsidiary is likewise a separate company carrying on a business, so its own supplies are standard-rated even though its parent qualifies. Where a charity and a subsidiary share a building on one meter, the subsidiary's share is business use and belongs outside the qualifying percentage.</p>
+<p>The relief turns on use by a charity, so an organisation that is not a charity is outside it however social its purpose. A community interest company pays the standard rate on its fuel and power, as it does on the other reliefs written around charities; our comparison of <a href="/blog/cics-and-social-enterprises/cic-vs-charity">a CIC and a charity</a> sets out where that line falls. A charity's trading subsidiary is likewise a separate company carrying on a business, so its own supplies are standard-rated even though its parent qualifies. Where a charity and a subsidiary share a building on one meter, the subsidiary's share is business use and belongs outside the qualifying percentage.</p>
 
 <h2>What to do this quarter</h2>
 <p>Pull the most recent gas and electricity bills for every premises and read the VAT rate actually charged. Where it is 20% and the site is mostly non-business, that is a certificate you have not sent. Work out the qualifying percentage with something you can evidence, send a certificate for each premises, and ask the supplier to apply the correct rate going forward. Overcharged VAT can be corrected by the supplier for past periods under the normal time limits, and a specialist reviews the percentage and the claim period before you approach them. Your accountant prepares the supporting calculation so the figure on the certificate is one you can stand behind.</p>

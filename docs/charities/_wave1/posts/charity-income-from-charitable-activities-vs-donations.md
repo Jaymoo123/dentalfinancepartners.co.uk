@@ -28,24 +28,24 @@ faqs:
   - question: "Where does fundraising income go?"
     answer: "Split it. The gift element, where somebody is really giving rather than buying, sits under donations and legacies. Sales of goods and tickets where the buyer receives something of value, and any trading that is not itself one of your charitable purposes, sit under other trading activities. Charity shop sales of donated goods and commercial sponsorship normally belong under other trading activities."
   - question: "Do these categories matter for tax?"
-    answer: "Yes, indirectly. Non primary purpose trading is only tax exempt inside the small trading limits, which are a maximum turnover of £8,000 where charity gross income is under £32,000, 25% of total income where gross income is between £32,000 and £320,000, and £80,000 where gross income is over £320,000. Exceeding the limit taxes all the profits of that trade, not just the excess, so income sitting in the wrong category hides the problem until it is too late to plan for it."
+    answer: "Yes, indirectly. Trading that is not one of your purposes is only tax exempt while its turnover stays under the small trading ceiling, and your gross income sets that ceiling: £8,000 below £32,000 of income, a quarter of total income from £32,000 to £320,000, and £80,000 once income passes £320,000. Go over and the whole of that trade's profit is taxed, not just the part above the line, so income parked in the wrong category hides the problem until it is too late to plan for it."
   - question: "How does this feed into the annual return?"
-    answer: "The annual return asks every registered charity for its income, and charities with gross income over £25,000 must also attach the trustees annual report and accounts, which carry the full income analysis. Getting the categories right in the accounts means the figures behind the return already agree with each other. The return is due within 10 months of your financial year end."
+    answer: "The annual return asks every registered charity for its income figures, and once gross income passes £25,000 the trustees annual report and the accounts are attached to it as well, so the full analysis travels with the return. Categorise correctly in the accounts and the two agree without anyone reconciling them. Filing is due within 10 months of your financial year end."
 ---
 
-<p>Income goes under donations and legacies when the person paying gets nothing back, and under income from charitable activities when your charity delivers something in return as part of its charitable purposes. That one test settles most of the awkward cases, and it is worth more than any list of examples, because the same receipt can belong in either category depending on what the payer was buying.</p>
+<p>One test decides it. If the person paying gets nothing back, the income is donations and legacies. If your charity delivers something in return as part of its charitable purposes, it is income from charitable activities. The same receipt can land in either box depending on what the payer was buying, which is why the test settles more cases than any list of examples.</p>
 
-<p>This matters beyond tidiness. The categories drive your statement of financial activities, the income totals behind your <a href="/blog/trustee-compliance/charity-commission-annual-return-guide">Charity Commission annual return</a>, and whether your trading sits inside or outside the small trading limits HMRC tests. Trustees who guess at the split usually find out at examination, when the examiner asks for the funding agreements.</p>
+<p>The split is not presentational. It drives your statement of financial activities, the income totals behind your <a href="/blog/trustee-compliance/charity-commission-annual-return-guide">Charity Commission annual return</a>, and whether trading that is not one of your purposes stays inside the small trading limits HMRC tests, a ceiling that starts at £8,000 of turnover for the smallest charities. Trustees who guess at the split usually find out at examination, when the examiner asks for the funding agreements.</p>
 
 <h2>What is income from charitable activities?</h2>
 
 <p>Income from charitable activities is income your charity earns by doing the thing it exists to do. The payer receives a specified benefit, and delivering that benefit is itself the pursuit of your purposes. Typical entries are a local authority paying for care or support places, a fee charged to service users, a school or nursery charging for a place, and a project contract where the funder specifies outputs and can hold you to them.</p>
 
-<p>The giveaway is exchange. Somebody is getting something identifiable, and you are obliged to provide it. That obligation is what separates this category from a gift, and it is also why performance related grants sit here rather than under donations.</p>
+<p>The giveaway is the obligation. You are bound, by contract or in substance, to provide something identifiable, which is also why performance related grants sit here rather than under donations.</p>
 
 <h2>What counts as donations and legacies?</h2>
 
-<p>Donations and legacies covers income given freely, with nothing owed in return. That is individual giving, regular donors, Gift Aid recovered on those donations, legacies, general purpose grants, and gifts in kind. If the giver walks away with nothing but the knowledge they helped, it is a donation.</p>
+<p>Donations and legacies covers income given freely, with nothing owed in return. That is individual giving, regular donors, Gift Aid recovered on those donations, legacies, general purpose grants, and gifts in kind.</p>
 
 <p>Gift Aid follows the donation it belongs to rather than forming its own category. Your charity claims 25p for every £1 an eligible donor gives, and the claim is reported alongside the giving it arises from.</p>
 
@@ -78,10 +78,10 @@ faqs:
 
 <p>They reach it through your accounts. Every registered charity in England and Wales files an annual return within 10 months of its financial year end, and charities with gross income over £25,000 must also attach the trustees annual report and accounts, which carry the full income analysis. If the categories in the accounts are right, the figures behind the return agree without anyone reconciling them by hand. The <a href="/blog/trustee-compliance/annual-report-vs-annual-return">report and the return are two separate filings</a>, and the <a href="/blog/trustee-compliance/trustees-annual-report-guide">trustees annual report</a> explains in words what the income analysis shows in numbers.</p>
 
-<p>Charities preparing accruals accounts follow the Charities SORP, and <a href="/blog/charity-accounts-and-sorp/charity-sorp-2026-changes">SORP 2026 applies to accounting periods starting on or after 1 January 2026</a>. Non company charities with gross income of £250,000 or less may instead prepare receipts and payments accounts, rising to £500,000 for financial years ending on or after 30 September 2026. Charitable companies must always prepare accruals accounts, so they follow the SORP whatever their size.</p>
+<p>Charities preparing accruals accounts report under the Charities SORP, and which edition you use depends on your period: <a href="/blog/charity-accounts-and-sorp/charity-sorp-2026-changes">SORP 2026 takes effect for accounting periods starting on or after 1 January 2026</a>. Non company charities with gross income of £250,000 or less may instead prepare receipts and payments accounts, rising to £500,000 for financial years ending on or after 30 September 2026. Charitable companies must always prepare accruals accounts, so they follow the SORP whatever their size.</p>
 
 <p>If you are unsure which category a funding stream belongs to, keep the agreement with a file note recording your reasoning. A specialist reviews the classification against the agreements when your accounts are prepared, and a documented decision is far quicker to defend than a reconstructed one.</p>
 
-<h2>Scotland</h2>
+<h2>The categories are the same in Scotland, but the scrutiny is not</h2>
 
-<p>The income categories are the same, because they come from the Charities SORP rather than the Charity Commission. What changes is the regulator and the scrutiny rules: Scottish charities report to OSCR, and every Scottish charity needs external scrutiny of its accounts whatever its income, with no lower limit.</p>
+<p>The income categories are the same, because they come from the Charities SORP rather than the Charity Commission. What changes is who reads the accounts and on what terms. The regulator is OSCR, and no Scottish charity escapes external scrutiny on income grounds, because the Scottish rules set no lower limit at all.</p>

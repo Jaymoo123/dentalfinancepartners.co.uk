@@ -34,19 +34,19 @@ faqs:
 ---
 <p>A related party in the Charity Commission annual return is a person or organisation closely connected to your charity or its trustees. The Commission's question guide gives three examples: a close family member, partner or dependant; an organisation that is a parent or subsidiary of the charity, or part of a joint venture; and an organisation controlled by one of those people, or in which they have a substantial interest or influence. A business counts as connected where a trustee or a trustee's family member holds at least 20% of the shareholding or voting rights.</p>
 
-<p>That definition is wider than most first time filers expect, and the return asks about it in three separate places. This article sets out who is on the list, what each question actually wants, and how to assemble the answers before you open the form. For the mechanics of filing, see our guide to <a href="/blog/trustee-compliance/charity-commission-annual-return-guide">how to complete the Charity Commission annual return</a>.</p>
+<p>That definition is wider than most first time filers expect, and the return asks about it in three separate places. For the mechanics of filing, see our guide to <a href="/blog/trustee-compliance/charity-commission-annual-return-guide">how to complete the Charity Commission annual return</a>.</p>
 
 <h2>Who is a related party?</h2>
 
-<p>Start with the trustees themselves, then work outwards. The Commission's own examples cover:</p>
+<p>The trustees are related parties themselves, and so is anyone closely connected to them or to the charity. Work outwards from the board. The Commission's own examples cover:</p>
 
 <ul>
   <li><strong>People close to a trustee.</strong> A close family member, a partner, or a dependant. Spouses and civil partners are the obvious cases, and where the Charities Act 2011 tests a trustee's connected persons elsewhere, at section 350, it treats a couple living together as if they were married as spouses of each other and treats a stepchild as a child. That is a fair guide to how widely close family reads here.</li>
   <li><strong>Bodies in the charity's own group.</strong> A parent body, a subsidiary, or an organisation the charity is in a joint venture with. Your trading subsidiary is a related party, which is why the <a href="/blog/gift-aid/charity-trading-subsidiary-gift-aid">profit donation from a trading subsidiary</a> is a related party donation as well as a Gift Aid payment.</li>
-  <li><strong>Organisations those people control.</strong> A business controlled by a trustee or a trustee's family member, or one in which they have a substantial interest or influence over.</li>
+  <li><strong>Organisations those people control.</strong> A business controlled by a trustee or a trustee's family member, or one in which they have a substantial interest or influence.</li>
 </ul>
 
-<p>Substantial interest has a number attached to it. The annual return glossary defines a connected organisation as a business in which a trustee or a family member of a trustee has a substantial interest, and defines that as at least 20% of the shareholding or voting rights. Two trustees who are also directors of the same local company will usually put that company on your list; a trustee who owns a handful of shares in a listed supplier will not.</p>
+<p>The annual return glossary defines a connected organisation as a business in which a trustee or a family member of a trustee has a substantial interest, and defines that as at least 20% of the shareholding or voting rights. Two trustees who are also directors of the same local company will usually put that company on your list; a trustee who owns a handful of shares in a listed supplier will not.</p>
 
 <h2>Which annual return questions ask about related parties?</h2>
 
@@ -54,7 +54,7 @@ faqs:
 
 <p><strong>The highest value donation from a related party.</strong> Where your gross income for the period is over £100,000, the return asks for the value of your charity's single highest value donation received from a related party during the financial period of the return. Below that income the question does not appear. It is one figure, not a total and not a list, and it sits with the equivalent questions about the highest donation from a corporate donor and from an individual. The Commission's stated reason for collecting it is to understand financial dependency, which makes conflicts of interest easier to spot.</p>
 
-<p><strong>Grants to related parties.</strong> If your charity makes grants, you report the value going to individuals, to other charities, and to other organisations that are not charities. The follow up question asks whether any of those recipients were related parties. Grant makers should expect this one to be the question that takes the longest, because it needs the recipient list checked against the register of interests rather than a figure read off the ledger.</p>
+<p><strong>Grants to related parties.</strong> If your charity makes grants, you report the value going to individuals, to other charities, and to other organisations that are not charities. The follow up question asks whether any of those recipients were related parties. Grant makers should expect this one to take the longest, because it needs the recipient list checked against the register of interests rather than a figure read off the ledger.</p>
 
 <p><strong>Trustee payments.</strong> Excluding out of pocket expenses, the return asks what any trustees were paid for during the period, with options covering payment for being a trustee, payment for a role in a trading subsidiary or connected organisation, payment for providing goods or services to the charity or those bodies, another type of payment or benefit, and none of the above. A separate question asks whether any trustee resigned and took up employment with the charity during the period.</p>
 
@@ -75,7 +75,7 @@ faqs:
   <li>Record the single highest related party donation, mark any related party grant recipients, and note every trustee payment that is not a reimbursed expense.</li>
 </ol>
 
-<p>The point of doing it in that order is that the questions ask for values you cannot reconstruct halfway through the form. Your accountant prepares the same analysis for the notes to the accounts, so the work is done once and used twice.</p>
+<p>The order matters because the questions ask for values you cannot reconstruct halfway through the form. Your accountant prepares the same analysis for the notes to the accounts, so the work is done once and used twice.</p>
 
 <h2>What if you find a transaction you did not know about?</h2>
 

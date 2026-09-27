@@ -28,7 +28,7 @@ faqs:
   - question: "Is the rent exempt from VAT?"
     answer: "Yes in the normal case. The grant of a licence or lease to occupy land or residential accommodation is exempt from VAT, so the accommodation element sits outside your taxable turnover regardless of which regulator registers the support. Keep the rent and the support on separate contracts and separate nominal codes so the two treatments can be evidenced."
   - question: "Does exempt income count toward the £90,000 VAT registration threshold?"
-    answer: "No. Registration is compulsory only once taxable turnover exceeds £90,000 on a rolling twelve month basis. Exempt rent and exempt welfare income do not count. A provider whose support charges are standard rated counts those charges, and only those charges, toward the threshold."
+    answer: "No. Only taxable turnover counts toward the £90,000 rolling twelve month test, and exempt rent and exempt welfare income are not taxable turnover. A provider whose support charges are standard rated counts those charges, and only those charges, toward the threshold."
   - question: "If I become exempt, can I still recover VAT on my costs?"
     answer: "Largely no, and that is the sting. Exemption blocks recovery of input VAT on the costs of making exempt supplies. Where you make both taxable and exempt supplies, the partial exemption rules decide how much is recoverable, and the de minimis test only allows full recovery where exempt input tax averages no more than £625 a month and is less than half of total input tax."
 ---
@@ -42,7 +42,7 @@ faqs:
 
 <h2>Who registers supported accommodation for 16 and 17 year olds?</h2>
 
-<p>Ofsted. The regime sits under the Supported Accommodation (England) Regulations 2023, which took effect on 28 April 2023 with the registration provisions following on 28 October 2023, and it carries quality standards and a full inspection framework. Since 28 October 2023 it has been an offence under section 11 of the Care Standards Act 2000 to run a supported accommodation service without registration. The transitional concession, which let a provider that had a complete application accepted by Ofsted keep operating while the application was decided, applied to providers already running in 2023. If you are opening now, you register before you accommodate anyone.</p>
+<p>Ofsted. The regime sits under the Supported Accommodation (England) Regulations 2023, in force from 28 April 2023 with the registration provisions following on 28 October 2023, and it carries quality standards and a full inspection framework. From that October date it has been an offence under section 11 of the Care Standards Act 2000 to run a supported accommodation service without registration. The concession that let a provider carry on while a complete application was decided was transitional, for services already running in 2023. If you are opening now, you register before you accommodate anyone.</p>
 
 <p>The boundary Ofsted draws is the same boundary CQC draws, read from the other side. Supported accommodation is housing plus support for a young person living semi independently. Where the young person has high or complex needs, their liberty is restricted, or they need ongoing care and supervision including help with personal care, the setting is a children's home and registers as one. A provider that drifts across that line while registered as supported accommodation is registered for the wrong thing, which is a regulatory problem before it is a tax one. The <a href="/blog/cqc-and-financial-compliance/ofsted-vs-cqc-money-paperwork">comparison of the Ofsted and CQC paperwork tracks</a> sets out what each regulator asks for at the point of application.</p>
 
@@ -54,9 +54,9 @@ faqs:
 
 <p>Rent behaves differently again. The grant of a licence or lease to occupy residential accommodation is exempt as a supply of land, whichever regulator you hold. That is why the rent and support split is the first thing to get right in supported living accounts, and it is set out in more depth on the <a href="/for/supported-living">supported living hub</a>.</p>
 
-<h2>When do you have to register for VAT?</h2>
+<h2>At what point does VAT registration become compulsory?</h2>
 
-<p>Compulsory registration bites once taxable turnover exceeds £90,000 on a rolling twelve month basis. Exempt income does not count. An unregulated adult supported housing provider with £400,000 of rent and £85,000 of support charges has taxable turnover of £85,000 and no obligation to register. Add another contract and the support line crosses £90,000, and VAT at 20% has to come from somewhere: either the commissioner agrees a gross-up or it comes out of your margin.</p>
+<p>At £90,000 of taxable turnover, measured on a rolling twelve month basis. Exempt income never enters that measure. An unregulated adult supported housing provider with £400,000 of rent and £85,000 of support charges has taxable turnover of £85,000 and no obligation to register. Add another contract and the support line crosses £90,000, and VAT at 20% has to come from somewhere: either the commissioner agrees a gross-up or it comes out of your margin.</p>
 
 <p>The counter-intuitive consequence is that exemption is a cost rather than a prize. An exempt provider cannot recover input VAT on the rent it pays, the fit-out, the equipment, the professional fees or the agency invoices used to make those exempt supplies. Where a provider makes both kinds of supply, partial exemption applies and the de minimis test allows full recovery only where exempt input tax averages no more than £625 a month and is under half of total input tax. Most support heavy providers will not meet it. The <a href="/blog/vat-and-welfare-exemption/care-home-vat-exemption-edge-cases">edge cases in the welfare exemption</a> cover the mixed supply positions in detail.</p>
 
@@ -64,8 +64,8 @@ faqs:
 
 <p>Payroll. Employer National Insurance runs at 15% on earnings above the £5,000 secondary threshold, the Employment Allowance offsets up to £10,500 a year for eligible employers, and the National Living Wage for workers aged 21 and over is £12.71 an hour from 1 April 2026. A support worker costs the same whether Ofsted, CQC or nobody registers the service.</p>
 
-<p>Corporation tax is unchanged too, at 19% on profits up to £50,000 and 25% above £250,000 with marginal relief between. Sole trader and partnership operators with combined self-employment and property income above £50,000 are in Making Tax Digital for Income Tax from 6 April 2026 whichever regime regulates the service.</p>
+<p>Corporation tax does not move either: the small profits rate of 19% applies to the first £50,000, the main rate of 25% applies above £250,000, and marginal relief bridges the two. Sole trader and partnership operators with combined self-employment and property income above £50,000 are in Making Tax Digital for Income Tax from 6 April 2026 whichever regime regulates the service.</p>
 
-<h2>The order to work through it</h2>
+<h2>In what order do you work through it?</h2>
 
 <p>Decide first whether any part of the service is personal care, because that answer alone determines whether CQC is in the picture. Then check the client group: 16 and 17 year olds who are looked after or care leavers put you in the Ofsted supported accommodation regime. Only then set the VAT treatment, split the rent from the support on separate contracts, and model the registration threshold against the taxable line rather than total income. If a children's service is part of the picture, the <a href="/for/childrens-homes">children's homes hub</a> covers that track, and the <a href="/blog/cqc-and-financial-compliance/cqc-registration-requirements-financial-viability-leg">financial leg of CQC registration</a> covers the other. A specialist reviews the regulator question and the VAT position together, because answering one without the other is how providers end up standard rated on income they have already priced as exempt.</p>

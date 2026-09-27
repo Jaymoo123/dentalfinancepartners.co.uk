@@ -1,7 +1,7 @@
 ---
-title: "Closing Your Contractor Limited Company: MVL and Strike-Off"
-slug: closing-contractor-limited-company
-date: '2026-06-12'
+title: "The Winding-Up TAAR: Closing Your Company and Carrying On the Same Trade"
+slug: winding-up-taar-contractor-same-trade
+date: "2026-09-27"
 dateModified: '2026-09-27'
 updatedDate: '2026-09-27'
 author: Contractor Tax Accountants Editorial Team
@@ -13,11 +13,11 @@ imageCredit:
   source: "Pexels"
   sourceUrl: "https://www.pexels.com/photo/businessman-working-on-laptop-in-office-setting-36766672/"
 category: Limited Company Tax
-canonical: "https://www.contractortaxaccountants.co.uk/blog/limited-company-tax/closing-contractor-limited-company"
+canonical: "https://www.contractortaxaccountants.co.uk/blog/limited-company-tax/winding-up-taar-contractor-same-trade"
 generator: claude-opus
 metaTitle: "The Winding-Up TAAR: The Two Year Trap for an MVL"
 metaDescription: "Close your company and keep contracting within two years and the TAAR taxes the distribution as a dividend. Conditions A to D, and the £25,000 fork."
-h1: "Closing Your Contractor Limited Company: MVL and Strike-Off"
+h1: "The Winding-Up TAAR: Closing Your Company and Carrying On the Same Trade"
 summary: "The winding-up TAAR taxes a capital distribution from your contractor company as an income dividend where four conditions are met. Condition C is the one that catches contractors: carrying on the same or a similar trade within two years of the distribution. That two year clock, not the liquidation route, decides whether capital treatment survives."
 sourcesVerifiedAt: '2026-09-27'
 schema: ''
@@ -62,7 +62,7 @@ faqs:
 
 <h2>Strike-off or MVL: does the route change the answer?</h2>
 
-<p>It changes the mechanics and the ceiling, and it changes which anti-avoidance rule is in point. The £25,000 figure is the limit on distributions that a voluntary strike-off can treat as capital; above it an MVL and a licensed liquidator are needed for capital treatment. Section 396B is written for a distribution in the winding up of a company, so it does not reach a voluntary strike-off, which is a dissolution rather than a winding up. That is not a reason to prefer one route. A repayment of share capital is a transaction in securities under section 684 of ITA 2007, and HMRC can counteract an income tax advantage on the same continuing-trade facts.</p>
+<p>It changes the mechanics and the ceiling, and it changes which anti-avoidance rule is in point. The £25,000 figure is the limit on distributions that a voluntary strike-off can treat as capital; above it an MVL and a licensed liquidator are needed for capital treatment. Section 396B is written for a distribution in the winding up of a company, so it does not reach a voluntary strike-off, which is a dissolution rather than a winding up. That is not a reason to prefer one route. A repayment of share capital is a transaction in securities under section 684 of ITA 2007, and HMRC can counteract an income tax advantage on the same continuing-trade facts. The step by step mechanics of each route, the strike-off forms and the liquidator's process, are set out in <a href="/blog/limited-company-tax/closing-contractor-limited-company">closing a contractor limited company</a>.</p>
 
 <table>
   <thead>
