@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
-import { buildFaqJsonLd, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { careHubs } from "@/data/care-hubs";
 import { careServices } from "@/data/care-services";
@@ -87,10 +87,7 @@ const calculatorLinks = [
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
-      />
+      {/* Organization node now emitted once from the root layout. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildWebsiteJsonLd() }}

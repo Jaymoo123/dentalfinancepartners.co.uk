@@ -6,19 +6,9 @@ import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react
 import { niche } from "@/config/niche-loader";
 import { SiteNav } from "@/components/ui/SiteNav";
 import { SiteFooter } from "@/components/ui/SiteFooter";
+import { buildOrganizationJsonLd } from "@/lib/schema";
 
 const siteUrl = `https://${niche.domain}`;
-
-const organizationJsonLd = {
-  "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "AccountingService"],
-  "@id": `${siteUrl}#organization`,
-  name: niche.display_name,
-  url: siteUrl,
-  description: niche.description,
-  logo: `${siteUrl}/api/og`,
-  areaServed: "GB",
-};
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -68,9 +58,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB">
       <head>
+        {/* Single site-wide Organization node (LEADS_250 §13 T2/T5): emitted
+            once here so every page carries the rich record without the
+            duplicate-@id stub that used to live in this file. */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
         />
       </head>
       <body className="antialiased">

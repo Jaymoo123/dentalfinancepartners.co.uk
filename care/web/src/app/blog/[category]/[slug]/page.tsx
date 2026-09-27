@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
+import { buildOgImageUrl, buildFaqJsonLd, buildHowToJsonLd, buildBlogPostingJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -96,6 +96,12 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildBlogPostingJsonLd(post, `/blog/${category}/${post.slug}`),
+        }}
+      />
       {post.schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
       )}
