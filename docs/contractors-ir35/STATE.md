@@ -12,6 +12,25 @@ Built via `docs/_engines/SITE_SPINUP.md`.
 
 **DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**
 
+## 2026-09-27 Leads-250 Wave 1 (committed, deploying tonight, verify live after)
+
+Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
+
+- **Segment pages:** +4 audience types with `it-contractors` replaced (`71eb6b30`, also
+  fixed the `for/[slug]` template to render HTML bodies as HTML, not text).
+- **Posts (8, `68753d98`):** 5 new (incl. `winding-up-taar-contractor-same-trade` as a new
+  slug rather than overwriting the live closing guide), 3 overhauls (fees, first-contract
+  checklist, pension carry-forward). Opus writer, Opus factual Track A, Opus editorial
+  Track B, per-site sweep, Sonnet integrator. Reviews in
+  `docs/contractors-ir35/_wave1/qa/posts/`, sweep in `_wave_sweep.md` there.
+- **Live fixes:** CTA 2010 s.464C was omitted 30 Oct 2024 and re-enacted as s.464ZA; house
+  positions §14 updated (TAAR scope on strike-off, s.464ZA); factual QA pass under way on
+  live pages that stated the rules were repealed outright.
+- **Schema/llms:** breadcrumb schema on `for`/`services` (`8a520b16`); llms.txt back-filled
+  (`99389fb6`).
+- **Deploy status:** deploying tonight (order: Property, Medical, contractors, care,
+  charities, then Dentists and generalist for the s.464ZA patches). Verify live after.
+
 ## ⚡ PICKUP — port status DERIVED FROM GIT (2026-09-12)
 
 **Git is the authority for what is built. Re-derive before planning:**

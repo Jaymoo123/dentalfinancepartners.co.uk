@@ -361,6 +361,8 @@ test wave.
     pages, with the `calc_pdf_offer` flag set off in prod the same day and the PDF day-14
     read recorded first), then the seven blog-kit sites, the four canonical-fix sites and
     the entity block on contractors, care, charities and Medical.
+    **Owner ruled 2026-09-27 late: deploy everything tonight.** Order: Property, Medical,
+    contractors, care, charities, then Dentists and generalist for the s.464ZA patches.
 11. **Wave 1 on the four small sites.** DECIDED GO 09-27 ("go on the four sites"). Manifest
     composition: 20 segment pages (medical 5, contractors 5 plus a services-page rewrite held
     back, care 2, charities 7) through the S4a chain now, and 40 decision, question and number
@@ -700,23 +702,62 @@ their data arrays). Owner approves the count before launch: about 184 runs.
 weeks, and the monthly assistant-naming run with the 30-prompt set widened to name each new
 page's situation.
 
-**S4a/S4b STATUS 2026-09-27, night (for whoever resumes).** Four-site segment pages: all 20
-rows passed factual, editorial and per-site sweeps. Integrated and COMMITTED: care (`d774ad28`,
-also fixed the for/[slug] template to render HTML bodies), contractors (`71eb6b30`, same
-template fix). Integrators RUNNING at time of writing: medical (five `for-<slug>` page files
-plus sitemap) and charities (five `for` rows incl. the `cics` replacement, two `services`
-rows); commit each when its report is green. Posts: writer briefs at `docs/care/_wave1/
-POST_BRIEF.md` and `docs/charities/_wave1/POST_BRIEF.md`; each post gets Track A then Track B,
-reviews in `docs/<site>/_wave1/qa/posts/`. Medical posts: 10 of 10 written, 7 fully passed,
-3 in review. Contractors: 8 written (DLA and s.455 rows merged into one post), 3 fully passed,
-rest in review. Care and charities: writers starting from the briefs (rows 1 to 13, 1 to 8).
-Remaining after posts: a per-site post sweep (sameness across the site's posts), a per-site
-post integrator (move PASS files into `content/blog/`, run `scripts/validate_blog_content.py
---site <site>`, typecheck, tests, build, grep one rendered post), commit per site. Then the
-deploy list in decision 10 gains the four small sites. Lessons: the site loaders read
-`updatedDate` (set it alongside `dateModified`); the `for/[slug]` templates on contractors
-and care rendered bodies as text (fixed); house positions on contractors has no settlements
-section and on medical none on disclosure or residence (posts used primary law, flagged).
+**S4a/S4b STATUS 2026-09-27, late night (for whoever resumes).** All committed, nothing
+pushed or deployed; deploy of Property, Medical, contractors, care, charities, Dentists and
+generalist happens tonight per decision 10.
+
+Segment pages, all committed: Property 15 `/for/<slug>` (`efcb0694`), care +2 hubs
+(`d774ad28`), contractors +4 types with `it-contractors` replaced (`71eb6b30`), charities 5
+types incl. the `cics` replacement + 2 services (`72c3cb9e`), Medical 5 `for-*` pages +
+sitemap + the shared `html` prop on `CoverageCards`/`ProcessTimeline`/`FaqSection`
+(`52e49278`).
+
+Posts, all committed except charities integrating now: Medical 10 (5 new, 5 overhauls,
+`c6696b13`), contractors 8 (5 new incl. `winding-up-taar-contractor-same-trade` as a new
+slug rather than overwriting the live closing guide, 3 overhauls: fees, first-contract
+checklist, pension carry-forward; `68753d98`), care 13 all new (`99389fb6`), charities 8 all
+new (integrating now, commit to follow). Every post: Opus writer, Opus factual Track A, Opus
+editorial Track B, per-site sweep, Sonnet integrator; reviews in
+`docs/<site>/_wave1/qa/posts/`, sweeps in `_wave_sweep.md` there; shared QA brief
+`docs/_engines/WAVE1_POST_QA_BRIEF.md`; writer briefs `docs/care/_wave1/POST_BRIEF.md`,
+`docs/charities/_wave1/POST_BRIEF.md`.
+
+Recital ownership rule adopted in the sweeps: one owner post per statutory recital, siblings
+cut to a clause and link; prose attribution in FAQs, no "Source: url" tails; author key is
+RSS-only on care and unrendered on charities.
+
+Live factual defects found and fixed: charities electricity 0% 1 Oct 2026 to 31 Mar 2027
+(SI 2026/987) on two live posts (`cf41ecf3`); care Ofsted-registered children's homes are
+state-regulated for the welfare exemption, banned "advice" phrasing removed on two live
+posts (`4687f500`); RCB 2/2025 "where necessary, refuse" qualifier on the live care
+edge-cases post (`99389fb6`); CTA 2010 s.464C omitted 30 Oct 2024 and re-enacted as s.464ZA:
+14 live posts (10 Property, 1 Dentists, 3 generalist) said the rules were repealed outright,
+being corrected now with a factual QA pass; generalist service-charge post wrongly said
+charitable fuel and power is zero-rated.
+
+House positions updated: contractors §14 (TAAR scope on strike-off, s.464ZA), charities 20
+(electricity addendum) and 22 (CAICE 2004 s.26(3) anchor), care sections E and F (BADR
+£1m s.169N, AEA £3,000, Ofsted block).
+
+Schema/llms parity tonight: charities for/services Service+FAQPage+BreadcrumbList from the
+shared lib, contractors breadcrumb (`8a520b16`); Medical audience FAQPage answers stripped
+of anchors; llms.txt back-filled on contractors and Property (`99389fb6`), Medical/care/
+charities in progress; care blog template gaining a FAQ section + FAQPage (all care posts
+previously emitted none); care for/services Service+Breadcrumb in progress.
+
+Deferred to next session: EntityBlock on homepage/about/services for all five sites (plan
+task A1, entity copy already in `niche.config`), migrating five hand-rolled organisation
+schema builders onto the shared library, Property onto `buildLlmsFullRoute` (its llms files
+are static and drift).
+
+Property PDF test: day-13 read recorded in `docs/property/STATE.md` (111 exposures, 0 paid);
+gate + PDF removal deploy tonight; `calc_pdf_offer` flag to be set off in prod after the
+deploy.
+
+Lessons (retained from the build): the site loaders read `updatedDate` (set it alongside
+`dateModified`); the `for/[slug]` templates on contractors and care rendered bodies as text
+(fixed); house positions on contractors has no settlements section and on medical none on
+disclosure or residence (posts used primary law, flagged).
 
 ### S4b. Wave 1 decision, question and number pages on the four small sites (BUILD, 09-27)
 

@@ -6,9 +6,25 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-12 (claims-audit SERIOUS TIER remediated; nothing deployed since 2026-08-26).
+Last updated: 2026-09-27 (Leads-250 Wave 1; deploying tonight).
 
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: all six design-port phases, claims-audit serious tier, header CTA fix, favicons).
+
+## 2026-09-27 Leads-250 Wave 1 (committed, deploying tonight, verify live after)
+
+Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
+
+- **Segment pages:** 5 `for-*` audience pages + sitemap update, plus the shared `html` prop
+  added to `CoverageCards`/`ProcessTimeline`/`FaqSection` (`52e49278`).
+- **Posts (10, `c6696b13`):** 5 new, 5 overhauls. Opus writer, Opus factual Track A, Opus
+  editorial Track B, per-site sweep, Sonnet integrator. Reviews in
+  `docs/medical/_wave1/qa/posts/`, sweep in `_wave_sweep.md` there.
+- **Live fixes:** none specific to Medical this wave (CTA 2010 s.464ZA correction applies
+  to generalist/Property/Dentists, not Medical).
+- **Schema/llms:** audience FAQPage answers stripped of anchors; llms.txt back-fill in
+  progress (contractors and Property done first, Medical/care/charities in progress).
+- **Deploy status:** deploying tonight (order: Property, Medical, contractors, care,
+  charities, then Dentists and generalist for the s.464ZA patches). Verify live after.
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). [deployed 2026-09-16, 90fbea9c]
 

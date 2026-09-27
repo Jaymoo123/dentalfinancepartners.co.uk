@@ -14,6 +14,25 @@ brand_locked: true
 > domain at G1; deploy is HELD (and additionally deploy-hold to ~2026-08-03 for the medical
 > discovery-indexing watch). Post-hoc brand swap = 3-file config edit.
 
+## 2026-09-27 Leads-250 Wave 1 (committed, deploying tonight, verify live after)
+
+Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
+
+- **Segment pages:** +2 hubs (`d774ad28`, also fixed the `for/[slug]` template to render
+  HTML bodies as HTML, not text).
+- **Posts (13, `99389fb6`):** all new. Opus writer, Opus factual Track A, Opus editorial
+  Track B, per-site sweep, Sonnet integrator. Writer brief `docs/care/_wave1/POST_BRIEF.md`,
+  reviews in `docs/care/_wave1/qa/posts/`, sweep in `_wave_sweep.md` there.
+- **Live fixes:** Ofsted-registered children's homes are state-regulated for the welfare
+  exemption; banned "advice" phrasing removed on two live posts (`4687f500`); RCB 2/2025
+  "where necessary, refuse" qualifier added on the live edge-cases post (`99389fb6`). House
+  positions sections E and F updated (BADR £1m s.169N, AEA £3,000, Ofsted block).
+- **Schema/llms:** author key is RSS-only, not rendered on-page; blog template gaining a
+  FAQ section + FAQPage (all care posts previously emitted none); for/services
+  Service+Breadcrumb schema in progress; llms.txt back-fill in progress.
+- **Deploy status:** deploying tonight (order: Property, Medical, contractors, care,
+  charities, then Dentists and generalist for the s.464ZA patches). Verify live after.
+
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
 `design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard
