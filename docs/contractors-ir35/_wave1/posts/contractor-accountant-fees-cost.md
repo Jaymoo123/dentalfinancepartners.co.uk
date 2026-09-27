@@ -2,7 +2,7 @@
 title: "What Should a Contractor Accountant Fee Cover in 2026/27?"
 slug: contractor-accountant-fees-cost
 date: '2026-06-12'
-updatedDate: '2026-06-12'
+updatedDate: '2026-09-27'
 dateModified: '2026-09-27'
 author: Contractor Tax Accountants Editorial Team
 generator: claude-opus
