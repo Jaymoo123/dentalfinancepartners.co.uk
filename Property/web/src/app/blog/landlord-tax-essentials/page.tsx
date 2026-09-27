@@ -75,7 +75,7 @@ export default function LandlordTaxEssentialsPage() {
       ]}
       cta={{
         heading: "Need landlord tax support?",
-        body: "From self-assessment filing and allowable expenses to Section 24 planning and joint ownership structures, our specialist property accountants help UK landlords keep more of their rental income. Get in touch for expert, personalised advice.",
+        body: "From self-assessment filing and allowable expenses to Section 24 planning and joint ownership structures, our specialist property accountants help UK landlords keep more of their rental income. Get in touch for an expert, personalised review.",
         submitLabel: "Request tax consultation",
       }}
     />

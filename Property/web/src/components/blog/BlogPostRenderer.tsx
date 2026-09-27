@@ -68,7 +68,7 @@ const CTA_BY_CATEGORY: Record<string, CTACopy> = {
   },
   "property-accountant-services": {
     heading: "Want a fixed-fee property accountant?",
-    body: "Get a property tax specialist to handle your accounts, tax returns, and ongoing advice. Fixed fees, 24-hour response, no surprises.",
+    body: "Get a property tax specialist to handle your accounts, tax returns, and ongoing work. Fixed fees, 24-hour response, no surprises.",
     button: "Book an introduction call",
   },
   "landlord-tax-essentials": {

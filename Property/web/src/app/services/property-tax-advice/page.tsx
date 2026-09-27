@@ -204,7 +204,7 @@ const engagement = [
   {
     n: "05",
     title: "Implementation, only if you want it",
-    body: "Some clients take the advice and act on it themselves. Others ask us to run the elections, filings and coordination. Both are fine. The consultation does not commit you to anything ongoing.",
+    body: "Some clients take the written note and act on it themselves. Others ask us to run the elections, filings and coordination. Both are fine. The consultation does not commit you to anything ongoing.",
   },
 ];
 
@@ -287,7 +287,7 @@ const deliverables = [
   "A clear recommendation, including a recommendation to do nothing where that is the right answer",
   "The assumptions and the risks stated openly, so you can see what the answer depends on",
   "Deadlines and elections identified, with the dates you have to hit",
-  "A follow-up call to challenge the advice before you act on it",
+  "A follow-up call to challenge the conclusion before you act on it",
   "A document you can hand to your solicitor, broker or existing accountant to implement",
 ];
 
@@ -341,7 +341,7 @@ const faqs: FaqEntry[] = [
   {
     question: "Do I have to switch accountants to get advice from you?",
     answer:
-      "No. A consultation is a standalone engagement. Plenty of clients keep their existing accountant for the annual return and come to us for the decisions that fall outside their accountant's experience. We write the advice so it can be handed straight to them for implementation.",
+      "No. A consultation is a standalone engagement. Plenty of clients keep their existing accountant for the annual return and come to us for the decisions that fall outside their accountant's experience. The written note is prepared so it can be handed straight to them for implementation.",
   },
   {
     question: "What does a property tax consultation cost?",
@@ -381,12 +381,12 @@ const faqs: FaqEntry[] = [
   {
     question: "Do you work with landlords outside London?",
     answer:
-      "We advise landlords and investors across the UK. The work is done by video call, phone and email, with documents exchanged securely, so where you live makes no difference to the service. Property tax rules are UK-wide, with the devolved differences in Scottish and Welsh land transaction tax handled where they apply.",
+      "We work with landlords and investors across the UK. The work is done by video call, phone and email, with documents exchanged securely, so where you live makes no difference to the service. Property tax rules are UK-wide, with the devolved differences in Scottish and Welsh land transaction tax handled where they apply.",
   },
   {
     question: "How quickly can I get advice?",
     answer:
-      "Scoping calls are usually available within a few days. Turnaround on the written advice depends on the complexity and how quickly we get the figures from you. If there is a hard deadline, a completion date, a 60-day capital gains report or an HMRC response date, tell us on the first call and we will work to it.",
+      "Scoping calls are usually available within a few days. Turnaround on the written note depends on the complexity and how quickly we get the figures from you. If there is a hard deadline, a completion date, a 60-day capital gains report or an HMRC response date, tell us on the first call and we will work to it.",
   },
   {
     question: "Will you tell me if I should do nothing?",
@@ -498,7 +498,7 @@ export default function PropertyTaxAdvicePage() {
             <DecisionWindow />
             <p className="mt-6 text-sm sm:text-base leading-relaxed text-slate-700">
               This is a consultation service for that earlier moment. You bring a specific decision, we model it against
-              your real figures, and you get written advice with the options costed and a clear recommendation. It is a
+              your real figures, and you get a written note with the options costed and a clear recommendation. It is a
               defined piece of work with a fixed fee, not a retainer.
             </p>
             <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
@@ -693,7 +693,7 @@ export default function PropertyTaxAdvicePage() {
 
       {/* Two sections clear of the navy Deliverables band, and before the
           free-tools off-ramp. */}
-      <TestimonialsSection description="Anonymised feedback from landlords and investors we have advised." />
+      <TestimonialsSection description="Anonymised feedback from landlords and investors we have worked with." />
 
       <section id="free-tools" className="scroll-mt-24 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>

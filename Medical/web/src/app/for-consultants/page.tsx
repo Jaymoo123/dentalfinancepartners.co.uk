@@ -93,7 +93,7 @@ const data: AudienceStage = {
     },
     {
       title: "NHS pension annual allowance modelling",
-      body: "Annual calculation of your pension input amount from NHSBSA pension savings statements, comparison against your tapered or standard annual allowance, and advice on Scheme Pays elections or carry-forward claims where applicable.",
+      body: "Annual calculation of your pension input amount from NHSBSA pension savings statements, comparison against your tapered or standard annual allowance, and the Scheme Pays election or carry-forward options set out where applicable.",
     },
     {
       title: "Consultant expense claim review",

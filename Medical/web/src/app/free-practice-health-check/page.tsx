@@ -25,7 +25,7 @@ const FAQS = [
   {
     question: "Is this personalised tax advice?",
     answer:
-      "No. The diagnostic is generated automatically from your inputs and is directional only. It flags items worth looking at for someone in your position. The specific numbers and decisions require a conversation with a medical specialist accountant on your actual figures. The free follow-up call is where the personalised advice begins.",
+      "No. The diagnostic is generated automatically from your inputs and is directional only. It flags items worth looking at for someone in your position. The specific numbers and decisions require a conversation with a medical specialist accountant on your actual figures. The free follow-up call with a specialist is where your own numbers get looked at.",
   },
   {
     question: "Will you contact me repeatedly?",
