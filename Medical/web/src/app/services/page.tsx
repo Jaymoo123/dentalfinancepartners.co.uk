@@ -9,11 +9,13 @@ import { siteConfig } from "@/config/site";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { JsonLd, buildServicePageSchema, buildFaqPage } from "@/lib/schema";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { serviceTiers } from "@/config/service-tiers";
 import { allTools } from "@/lib/tools/registry";
+import { niche } from "@/config/niche-loader";
 
 // Retitled 2026-08-26. Title and H1 already carried "medical accounting", which
 // is right: this page's own head is "medical accounting" (127 impr @80.5) and
@@ -308,6 +310,8 @@ export default function ServicesPage() {
         title="Questions about medical accounting services"
         faqs={SERVICES_FAQS}
       />
+
+      {niche.entity ? <EntityBlock {...niche.entity} className="bg-slate-50 py-12 sm:py-16 lg:py-20" /> : null}
 
       <div id="book" className="scroll-mt-24" data-cta="services_book" data-cta-goal="form" data-cta-placement="services">
         <LeadCTAPanel

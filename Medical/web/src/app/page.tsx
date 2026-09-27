@@ -33,6 +33,7 @@ import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceT
 import { serviceTiers } from "@/config/service-tiers";
 import { Eyebrow, Prose } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { PromptMarquee } from "@accounting-network/web-shared/design/marketing/PromptMarquee";
 import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
@@ -787,6 +788,8 @@ export default function HomePage() {
           />
         )}
       </div>
+
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {/* FAQ last, and deliberately NOT the kit FaqSection: that is a Radix
           accordion with no forceMount, so closed answers are not

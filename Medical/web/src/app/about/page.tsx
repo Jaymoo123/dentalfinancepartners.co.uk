@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Eyebrow, Prose } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
@@ -14,6 +15,7 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
@@ -141,32 +143,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
-        <div className={siteContainerLg}>
-          <Eyebrow>Plainly</Eyebrow>
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">What this site is</h2>
-          <Prose>
-            <p>
-              Everything here is about one thing: the tax and accounting position of UK medical
-              professionals. NHS pension annual allowance, locum status and expenses, mixed NHS and
-              private income, GP partnership accounts, and private practice incorporation. Nothing on
-              this site is written for a general small business, because a general small business does
-              not have a pension input amount or a Performers List entry.
-            </p>
-            <p>
-              We are not the firm that files your return. We publish the research and we route the
-              enquiry. The advice, the engagement letter and the fees all sit between you and the firm
-              you end up speaking to, and what that firm charges is a matter for them.
-            </p>
-            <p>
-              That split is the honest version of the proposition, and it is also the useful one. It
-              means the guidance on this site is written to be right rather than to sell a service, and
-              it means an enquiry lands with a firm that already does this work instead of with whoever
-              happens to answer.
-            </p>
-          </Prose>
-        </div>
-      </section>
+      {niche.entity ? <EntityBlock {...niche.entity} className="bg-white py-16 sm:py-20" /> : null}
 
       <section id="how-it-works" className="scroll-mt-24 bg-slate-50 py-16 sm:py-20">
         <div className={siteContainerLg}>
