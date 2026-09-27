@@ -422,6 +422,34 @@ Checks before commit: typecheck, unit tests (three pre-existing failures allowed
 calculator-goldens fleet count, inbound-email ack, lead-dossier ack), production build,
 rendered HTML of one calculator page contains `calc_result_form` and no held-result copy.
 
+**S1a. One form under a calculator (owner, 09-27: "make sure we don't put 2 forms under a
+calc now instead of 1").** After the gate removal the five dedicated calculator pages carried
+three asks (the primary calculator's inline form, the premium tool's inline form, and the
+`resource_block` mini form restored on 09-26) and premium blog posts carried two stacked (the
+tool's form, then `resource_block`). Rule, every viewport: exactly one capture form directly
+beneath a calculator result.
+
+- Calculator pages (`/calculators/<five dedicated>` and `/calculators/[slug]` generic): the
+  one form is the primary calculator's `calc_result_form`. Generic tools get it through the
+  shared `Calculator` component's result slot (`resultCta`), `campaign = slug`, page variant
+  only, never embed. The premium tool below renders results and `Workings` with no form
+  (`ResultCaptureForm` only when `placement === "blog"`). `CalculatorPageResources` drops
+  `GateOrForm`; its 09-26 justification ("only capture surface on a calculator page") no longer
+  holds. The site-wide foot panel (`LeadCTAPanel`) is the page footer, not a form under the
+  calculator, and is unchanged.
+- Blog posts: when the post has a premium tool, the tool carries the ask (desktop inline
+  `calc_result_form`, mobile `MobileToolSlot`), and `GateOrForm` is not rendered. Posts with
+  a resource but no premium tool keep `GateOrForm` as today. Posts with neither keep
+  `InlineMiniLeadForm`. The end-of-post `LeadForm` is unchanged everywhere.
+- Consequence for the comparison read: `resource_block` exposure falls on calculator pages and
+  premium posts, so the 4-week read compares `calc_result_form + resource_block` against
+  `calc_result_gate + resource_block` on those surfaces, not the result form alone.
+- Verification, rendered HTML after build: section-24 page exactly one `calc_result_form`, zero
+  `resource_block`; one generic calculator page exactly one `calc_result_form`; the
+  transfer-into-company post has `calc_result_form` and `lead_form` and no `resource_block`; a
+  post with a resource and no premium tool still has `resource_block`. Then a browser check of
+  the same four pages at desktop and 390px width, counting visible forms.
+
 ### S2. Blog capture kit on the seven sites whose posts render no form (BUILD)
 
 Fact (live check 09-27): a blog post on charities, care, hospitality, pharmacies,
