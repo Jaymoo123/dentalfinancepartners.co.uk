@@ -245,6 +245,97 @@ click-through verified on staging (row + client_reference_id). Owner still to do
 purchase + refund to prove the production path. Reads: day 7 = 2026-09-21, day 14 = 2026-09-28.
 Test rows on staging are not counted (the panel reads prod).
 
+### Day-13 read, 2026-09-27 (test closed early, owner deploying the gate removal tonight)
+
+**Window.** 2026-09-14 16:15 UTC to now (2026-09-27, ~13 days) vs a 14-day pre-period control
+(2026-08-31 16:15 to 09-14 16:15). Property only, UK humans (`web_sessions.country='GB'`,
+`is_bot=false` on both session and event). Owner's own £29 test purchase was never done, so
+`pdf_paid` is genuinely zero, not a gap.
+
+**PDF offer (`calc_pdf_offer`), the three premium tools:**
+
+| Window | Exposure sessions | Clicks (`premium_pdf_29`) | Click rate | Checkouts | Paid | Revenue |
+|---|---|---|---|---|---|---|
+| Test (13d) | 111 | 2 | 1.8% | 2 | 0 | £0 |
+| Control (14d pre, feature absent) | 139 | 0 | — | 0 | 0 | £0 |
+
+Both STATE.md kill lines are crossed: click rate 1.8% < 2% kill line, paid rate 0% < 1% kill
+line. Exposure (111) is below the 250-exposure "enough data" bar, but 13 days is over half the
+planned 14-day test and the trend was already at zero paid throughout. **Verdict: kill,
+matches the owner's decision made today.**
+
+**Result gate (`calc_result_gate`), for context (the gate ran unchanged through the PDF test,
+it was not the thing being A/B'd against the PDF offer):**
+
+| Window | Calc result views | Gate shown (`see_result`) | Skipped (`result_gate_skip`) | Email captures (leads, form `calc_result_gate`) | Capture rate |
+|---|---|---|---|---|---|
+| Test (13d) | 145 | 106 | 105 | 2 | 1.9% |
+| Control (14d pre) | 170 | 134 | 123 | 7 | 5.2% |
+
+Capture rate roughly a third of the control period; consistent with the owner's read from the
+13-week comparison table above (37-68 starts/wk, 0-6 submits/wk) that the gate leaks. Not
+attributed to the PDF offer (different surfaces, no shared toggle) — most likely traffic mix,
+per the standing rule to segment by date rather than assume cause.
+
+**Leads attributed to the calculator flow:** 2 (test window) vs 7 (control), both counting
+`leads.extras->>'form_id' = 'calc_result_gate'` only (the PDF offer never writes to `leads`, by
+design — see 2026-09-14 entry above).
+
+<details><summary>SQL (read-only, run via Management API against `dhlxwmvmkrfnmcgjbntk`)</summary>
+
+```sql
+with params as (
+  select
+    'property'::text as site,
+    timestamptz '2026-09-14 16:15:00+00' as t0,
+    now() as t_now,
+    timestamptz '2026-08-31 16:15:00+00' as ctl_start,
+    timestamptz '2026-09-14 16:15:00+00' as ctl_end
+),
+uk_humans as (
+  select session_id from web_sessions
+  where site_key = (select site from params) and is_bot = false and country = 'GB'
+),
+ev_test as (
+  select e.* from web_events e
+  join params p on true
+  where e.site_key = p.site
+    and e.is_bot = false
+    and e.session_id in (select session_id from uk_humans)
+    and e.ts >= p.t0 and e.ts <= p.t_now
+),
+ev_ctl as (
+  select e.* from web_events e
+  join params p on true
+  where e.site_key = p.site
+    and e.is_bot = false
+    and e.session_id in (select session_id from uk_humans)
+    and e.ts >= p.ctl_start and e.ts < p.ctl_end
+)
+select 'test' as window,
+  (select count(distinct session_id) from ev_test where event_name='calc_result_viewed') as calc_result_views,
+  (select count(*) filter (where props->>'cta_id'='see_result') from ev_test where event_name='cta_click') as gate_shown_starts,
+  (select count(*) filter (where props->>'cta_id'='result_gate_skip') from ev_test where event_name='cta_click') as gate_skipped,
+  (select count(*) from leads l join params p on true where l.extras->>'form_id'='calc_result_gate' and l.source=p.site and l.created_at>=p.t0 and l.created_at<=p.t_now and coalesce(l.is_test,false)=false) as gate_email_captures,
+  (select count(distinct session_id) filter (where event_name='calc_result_viewed' and props->>'calculator_slug' in ('capital-gains-premium','incorporation-premium','section-24-premium')) from ev_test) as pdf_offer_exposure_sessions,
+  (select count(*) filter (where event_name='cta_click' and props->>'cta_id'='premium_pdf_29') from ev_test) as pdf_offer_clicks,
+  (select count(*) from calc_pdf_requests r join params p on true where r.site_key=p.site and r.created_at>=p.t0 and r.created_at<=p.t_now) as pdf_checkouts,
+  (select count(*) from calc_pdf_requests r join params p on true where r.site_key=p.site and r.created_at>=p.t0 and r.created_at<=p.t_now and r.stripe_session_id is not null) as pdf_paid,
+  (select count(*) from leads l join params p on true where l.source=p.site and l.created_at>=p.t0 and l.created_at<=p.t_now and coalesce(l.is_test,false)=false and l.extras->>'form_id' in ('calc_result_gate')) as leads_calc_flow
+union all
+select 'control_14d_pre',
+  (select count(distinct session_id) from ev_ctl where event_name='calc_result_viewed'),
+  (select count(*) filter (where props->>'cta_id'='see_result') from ev_ctl where event_name='cta_click'),
+  (select count(*) filter (where props->>'cta_id'='result_gate_skip') from ev_ctl where event_name='cta_click'),
+  (select count(*) from leads l join params p on true where l.extras->>'form_id'='calc_result_gate' and l.source=p.site and l.created_at>=p.ctl_start and l.created_at<p.ctl_end and coalesce(l.is_test,false)=false),
+  (select count(distinct session_id) filter (where event_name='calc_result_viewed' and props->>'calculator_slug' in ('capital-gains-premium','incorporation-premium','section-24-premium')) from ev_ctl),
+  (select count(*) filter (where event_name='cta_click' and props->>'cta_id'='premium_pdf_29') from ev_ctl),
+  0, 0,
+  (select count(*) from leads l join params p on true where l.source=p.site and l.created_at>=p.ctl_start and l.created_at<p.ctl_end and coalesce(l.is_test,false)=false and l.extras->>'form_id' in ('calc_result_gate'));
+```
+
+</details>
+
 ## 2026-09-12 - OWNER ITEM: the privacy notice promises deletion the retention cron does not perform (estate-wide, not urgent)
 
 Surfaced by a design-port planning pass, not by port work, and it is not a port defect. It is a

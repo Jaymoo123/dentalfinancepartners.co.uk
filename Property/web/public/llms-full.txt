@@ -72,6 +72,24 @@ Coverage: UK-wide, with city presence in London, Manchester, Birmingham, Leeds, 
 - Portfolio owners (4 to 10 properties): management accounts, per-property reporting, limited-company accounts, acquisition support
 - Large portfolios (10+ properties): group accounting, corporation tax planning, CGT disposal planning, portfolio restructuring
 
+## Who We Help
+
+- Landlords moving property into a limited company: https://www.propertytaxpartners.co.uk/for/moving-property-into-a-limited-company - Moving your buy-to-lets into a limited company? A specialist reviews the SDLT, the CGT and the refinancing before anything moves. For UK landlords.
+- Landlords selling a buy-to-let: https://www.propertytaxpartners.co.uk/for/selling-a-buy-to-let - Selling a rental property or a former home that was let? Get the 60-day CGT return, the gain computation and the reliefs handled by a property tax specialist.
+- Portfolio landlords incorporating a lettings partnership: https://www.propertytaxpartners.co.uk/for/portfolio-landlords-incorporating-a-partnership - For portfolio landlords moving an established lettings partnership into a company: the SDLT, CGT and mortgage questions a specialist reviews first.
+- Non-resident and overseas landlords: https://www.propertytaxpartners.co.uk/for/non-resident-landlords - For landlords letting or selling UK property from abroad. NRL scheme and NRL1, self assessment from overseas, non-resident CGT and the 60-day return.
+- Setting up a property SPV: https://www.propertytaxpartners.co.uk/for/property-spv-set-up - Setting up a property SPV to buy your first or next buy-to-let? Specialist support on SIC codes, SDLT, director's loans, corporation tax and first-year filings.
+- Gifting property to family: https://www.propertytaxpartners.co.uk/for/gifting-property-to-family - Gifting a property or a share of it to your children? Specialist help with CGT on the gift, the seven-year clock, SDLT on assumed debt and the paperwork.
+- Couples splitting rental income: https://www.propertytaxpartners.co.uk/for/couples-splitting-rental-income - Splitting rental income between spouses or civil partners? Form 17, declarations of trust, joint tenants and the 60-day window, explained for UK landlords.
+- Landlord self assessment and MTD filing: https://www.propertytaxpartners.co.uk/for/landlord-self-assessment-and-mtd - Landlord self assessment and MTD for Income Tax quarterly updates filed for you. Thresholds, deadlines, SA105 and joint ownership explained for UK landlords.
+- First-time and accidental landlords: https://www.propertytaxpartners.co.uk/for/first-time-and-accidental-landlords - Letting a former home? Specialist help for first-time and accidental landlords: telling HMRC, expenses, Section 24, MTD records and relief when you sell.
+- Inherited property: https://www.propertytaxpartners.co.uk/for/inherited-property - Inherited a house or a rental property? Specialist help with probate base cost, CGT on a sale, rental income and deeds of variation.
+- Property company directors taking money out: https://www.propertytaxpartners.co.uk/for/property-company-profit-extraction - Taking money out of your property company? Get the salary, dividend, loan and pension order reviewed and the paperwork prepared by a property tax specialist.
+- Landlords making an HMRC rental income disclosure: https://www.propertytaxpartners.co.uk/for/rental-income-disclosure - Undeclared rental income? Specialist help with Let Property Campaign and Digital Disclosure Service disclosures: years, penalty bands, interest and payment.
+- Holiday let and serviced accommodation operators: https://www.propertytaxpartners.co.uk/for/holiday-let-and-serviced-accommodation - Run a holiday let, Airbnb or serviced accommodation unit after FHL abolition? A specialist reviews the tax treatment, VAT and capital allowances position.
+- HMO and multi-let landlords: https://www.propertytaxpartners.co.uk/for/hmo-and-multi-let-landlords - Specialist accounting for UK HMO, student and small commercial landlords: licensing costs, bills-included rents, council tax, capital allowances and structure.
+- Landlords planning retirement and succession: https://www.propertytaxpartners.co.uk/for/landlord-retirement-and-succession - Specialist support for landlords retiring or passing on a portfolio: selling down, gifting, trusts, family investment companies and the 2026 IHT position.
+
 ## Topics Of Authority
 
 - Section 24 mechanics, exposure modelling, and mitigation strategies (incorporation, salary-sacrifice mortgages, pension contributions, partnership structures where appropriate)

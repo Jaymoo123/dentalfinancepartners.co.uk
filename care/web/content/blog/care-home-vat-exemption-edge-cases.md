@@ -2,6 +2,7 @@
 title: "Care Home VAT Exemption Edge Cases: What Every Operator Needs to Know"
 slug: "care-home-vat-exemption-edge-cases"
 date: "2026-07-15"
+updatedDate: "2026-09-27"
 author: ""
 category: "VAT and Welfare Exemption"
 metaTitle: "Care Home VAT Exemption: Edge Cases Explained"
@@ -12,7 +13,7 @@ keyTakeaways:
   - "CQC-registered welfare services are VAT-exempt under Group 7 Schedule 9 VATA 1994, which means input VAT on costs becomes a permanent, unrecoverable overhead."
   - "The £90,000 VAT registration threshold tests taxable turnover only, exempt care fee income does not count, however large."
   - "Mixed providers (day centres, non-exempt courses, non-CQC services) must run partial exemption calculations; the de minimis test allows full recovery only if exempt input tax stays below £625 per month on average and under half of total input tax."
-  - "HMRC's Revenue and Customs Brief 2/2025 treats VAT-group structures designed to convert exempt care supplies into taxable ones as tax avoidance, new registrations are refused and existing group members face removal."
+  - "HMRC's Revenue and Customs Brief 2/2025 treats VAT-group structures designed to convert exempt care supplies into taxable ones as tax avoidance, new registrations are refused where HMRC judges refusal necessary, and existing group members face removal."
   - "Construction VAT, supported-living rent/care splits, and CHC-funded placements each carry a genuinely uncertain VAT position that requires specialist review, not a rule-of-thumb assumption."
 faqs:
   - question: "Are care home fees VAT exempt?"
@@ -22,7 +23,7 @@ faqs:
   - question: "Is VAT exemption a good thing for a care business?"
     answer: "No, not straightforwardly. Exemption means the provider cannot recover input VAT on costs used to make exempt supplies. VAT on consumables, equipment, building works and professional fees becomes a permanent overhead. It is a cost, not a tax advantage."
   - question: "What is Revenue and Customs Brief 2/2025?"
-    answer: "HMRC's published position that VAT-group structures inserting unregulated entities into a care supply chain to unlock input-VAT recovery constitute tax avoidance. HMRC refuses new group registrations using these arrangements and is removing parties from existing groups. See gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry."
+    answer: "HMRC's published position that VAT-group structures inserting unregulated entities into a care supply chain to unlock input-VAT recovery constitute tax avoidance. HMRC refuses new group registrations using these arrangements where it judges refusal necessary, and is removing parties from existing groups. See gov.uk/government/publications/revenue-and-customs-brief-2-2025-the-use-of-vat-grouping-within-the-care-industry."
   - question: "Is a care VAT-grouping scheme still legal?"
     answer: "Not if the structure is designed to convert exempt welfare supplies into taxable ones by inserting an unregulated entity. RCB 2/2025 is HMRC's clearest statement that these arrangements are avoidance. Any provider currently inside or being pitched such a structure should take immediate specialist advice."
   - question: "How does partial exemption work for a mixed care provider?"
@@ -169,7 +170,7 @@ faqs:
     <tr>
       <td>RCB 2/2025 published</td>
       <td>HMRC sets out its legal analysis and enforcement stance</td>
-      <td>New VAT group registrations using these structures are refused</td>
+      <td>New VAT group registrations using these structures are refused where HMRC judges refusal necessary</td>
     </tr>
     <tr>
       <td>Post-RCB 2/2025</td>

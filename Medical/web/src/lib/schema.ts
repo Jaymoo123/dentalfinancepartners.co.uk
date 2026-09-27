@@ -116,11 +116,16 @@ export function buildAudiencePageSchema(data: {
   ];
 
   const faq = _buildFaqPage(
-    data.faqs.map((f) => ({ question: f.q, answer: f.a })),
+    data.faqs.map((f) => ({ question: f.q, answer: stripHtml(f.a) })),
   );
   if (faq) things.push(faq);
 
   return things;
+}
+
+/** Strip HTML tags from FAQ answer copy (e.g. inline <a> links) so JSON-LD text is plain. */
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]+>/g, "");
 }
 
 /**

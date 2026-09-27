@@ -50,7 +50,7 @@ faqs:
 
 <h2>Which annual return questions ask about related parties?</h2>
 
-<p>Three questions, and they sit in different parts of the form.</p>
+<p>Three questions, and they sit in different parts of the form. None of them arises at the bottom of the register: a charity with gross income of £10,000 or less reports its income and spending and nothing more, and the fuller question set starts above that.</p>
 
 <p><strong>The highest value donation from a related party.</strong> Where your gross income for the period is over £100,000, the return asks for the value of your charity's single highest value donation received from a related party during the financial period of the return. Below that income the question does not appear. It is one figure, not a total and not a list, and it sits with the equivalent questions about the highest donation from a corporate donor and from an individual. The Commission's stated reason for collecting it is to understand financial dependency, which makes conflicts of interest easier to spot.</p>
 
@@ -62,7 +62,7 @@ faqs:
 
 <p>It should be. The Commission's glossary says outright that related parties is a term used by the SORP, combining the requirements of charity law, company law and the Financial Reporting Standard applicable in the UK and Republic of Ireland. The accounts disclose the transactions in the notes; the return reports a few headline facts about the same population. If the two disagree, one of them is wrong, and both are published together on the register for anyone to compare.</p>
 
-<p>For accounting periods beginning on or after 1 January 2026 your accounts follow the new SORP, so check the disclosure wording against the edition that applies to your period rather than last year's file. Our note on the <a href="/blog/charity-accounts-and-sorp/charity-sorp-2026-changes">SORP 2026 changes</a> covers the transition. Where income is over £25,000 you attach the accounts and the <a href="/blog/trustee-compliance/trustees-annual-report-guide">trustees' annual report</a> to the return itself, so the comparison is one click for a reader.</p>
+<p>Check the related party disclosure wording against the SORP edition that governs your period rather than against last year's file, because the two do not say the same thing. Our note on the <a href="/blog/charity-accounts-and-sorp/charity-sorp-2026-changes">SORP 2026 changes</a> covers the transition. Where income is over £25,000 you attach the accounts and the <a href="/blog/trustee-compliance/trustees-annual-report-guide">trustees' annual report</a> to the return itself, so the comparison is one click for a reader.</p>
 
 <h2>How do you build the list before you file?</h2>
 
@@ -75,10 +75,10 @@ faqs:
   <li>Record the single highest related party donation, mark any related party grant recipients, and note every trustee payment that is not a reimbursed expense.</li>
 </ol>
 
-<p>The order matters because the questions ask for values you cannot reconstruct halfway through the form. Your accountant prepares the same analysis for the notes to the accounts, so the work is done once and used twice.</p>
+<p>The order matters because the questions ask for values you cannot reconstruct halfway through the form. The same analysis feeds the notes to the accounts, so the work is done once and used twice.</p>
 
 <h2>What if you find a transaction you did not know about?</h2>
 
 <p>Report it accurately rather than tidily. A related party transaction is not automatically improper: charities buy from connected suppliers and accept donations from trustees routinely. What the Commission looks at is whether the conflict was declared and managed, and whether the payment was authorised. An undisclosed payment to a trustee is a governance problem that the return will surface either way, and the sequence that works is to record the conflict, get the trustees to ratify or unwind the transaction, then answer the question as it stands.</p>
 
-<p>If the charity is in Scotland the annual return is OSCR's, not the Charity Commission's, and the questions differ; the SORP disclosure duty in the accounts applies across the UK. See <a href="/blog/trustee-compliance/annual-report-vs-annual-return">the annual report and the annual return compared</a> for which document carries what.</p>
+<p>One thing to settle before you file: in Scotland the return is OSCR's rather than the Commission's and asks different questions, though the SORP disclosure duty in the accounts is UK-wide. Which document carries what is set out in <a href="/blog/trustee-compliance/annual-report-vs-annual-return">the annual report and the annual return compared</a>, and the register of interests is the document that decides how long any of this takes.</p>
