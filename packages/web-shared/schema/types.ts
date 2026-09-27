@@ -12,12 +12,19 @@ export type SchemaThing = {
 };
 
 export type Organization = SchemaThing & {
-  "@type": "Organization" | "ProfessionalService" | "AccountingService" | "LocalBusiness";
+  "@type": string | string[];
   name: string;
   url: string;
-  logo?: { "@type": "ImageObject"; url: string };
+  legalName?: string;
+  alternateName?: string;
+  logo?: { "@type": "ImageObject"; url: string } | string;
   sameAs?: string[];
   areaServed?: SchemaThing | SchemaThing[] | string | string[];
+  parentOrganization?: SchemaThing;
+  address?: PostalAddress;
+  contactPoint?: SchemaThing | SchemaThing[];
+  foundingDate?: string;
+  priceRange?: string;
 };
 
 export type Person = SchemaThing & {
@@ -81,6 +88,23 @@ export type SiteSchemaOpts = {
   phone?: string;
   serviceAreas?: string[];
   knowsAbout?: string[];
+  /** Trading name shown alongside legalName, e.g. Property vs Medical convention. */
+  alternateName?: string;
+  /** Full JSON-LD Organization logo shape override; defaults to an ImageObject built from publisherLogoUrl. */
+  sameAs?: string[];
+  /** Companies House / registered-office address for the top-level Organization. */
+  address?: PostalAddress;
+  /** Defaults to a United Kingdom Country node when omitted and areaServed/serviceAreas are unset. */
+  areaServedCountry?: string;
+  contactPoint?: SchemaThing | SchemaThing[];
+  foundingDate?: string;
+  priceRange?: string;
+  /** Companies House filing number, used to build parentOrganization.identifier as a PropertyValue. */
+  parentOrganization?: {
+    name: string;
+    url?: string;
+    companyNumber?: string;
+  };
 };
 
 /** Minimal post shape used by article and blog-posting builders. */

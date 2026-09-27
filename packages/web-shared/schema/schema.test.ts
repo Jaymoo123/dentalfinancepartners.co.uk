@@ -103,6 +103,111 @@ describe("buildOrganization", () => {
   });
 });
 
+describe("buildOrganization new fields", () => {
+  const FULL_OPTS: SiteSchemaOpts = {
+    ...OPTS,
+    alternateName: "Example Trading",
+    sameAs: [
+      "https://find-and-update.company-information.service.gov.uk/company/16358723",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1 High Street",
+      addressLocality: "London",
+      postalCode: "E1 1AA",
+      addressCountry: "GB",
+    },
+    contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: "hello@example.co.uk" },
+    foundingDate: "2015-01-01",
+    priceRange: "££",
+    parentOrganization: {
+      name: "Ashfield Trading Ltd",
+      url: "https://www.ashfieldtrading.co.uk",
+      companyNumber: "16358723",
+    },
+  };
+
+  it("emits legalName, alternateName and sameAs", () => {
+    const org = buildOrganization(FULL_OPTS);
+    expect(org.legalName).toBe("Example Accountants Ltd");
+    expect(org.alternateName).toBe("Example Trading");
+    expect(org.sameAs).toEqual(FULL_OPTS.sameAs);
+    expect(hasNoUndefined(org)).toBe(true);
+  });
+
+  it("emits address, contactPoint, foundingDate, priceRange", () => {
+    const org = buildOrganization(FULL_OPTS);
+    expect((org.address as Record<string, unknown>)?.addressLocality).toBe("London");
+    expect((org.contactPoint as Record<string, unknown>)?.contactType).toBe("customer support");
+    expect(org.foundingDate).toBe("2015-01-01");
+    expect(org.priceRange).toBe("££");
+  });
+
+  it("emits parentOrganization with a PropertyValue identifier for the Companies House number", () => {
+    const org = buildOrganization(FULL_OPTS);
+    const parent = org.parentOrganization as Record<string, unknown>;
+    expect(parent.name).toBe("Ashfield Trading Ltd");
+    expect(parent.url).toBe("https://www.ashfieldtrading.co.uk");
+    const identifier = parent.identifier as Record<string, unknown>;
+    expect(identifier["@type"]).toBe("PropertyValue");
+    expect(identifier.value).toBe("16358723");
+  });
+
+  it("defaults areaServed to United Kingdom when no serviceAreas given", () => {
+    const org = buildOrganization({
+      siteUrl: "https://www.x.co.uk",
+      siteName: "X",
+      publisherLogoUrl: "/logo.png",
+    });
+    expect((org.areaServed as Record<string, unknown>)?.["@type"]).toBe("Country");
+    expect((org.areaServed as Record<string, unknown>)?.name).toBe("United Kingdom");
+  });
+
+  it("is a superset of the Medical hand-rolled Organization fields", () => {
+    // Medical/web/src/lib/organization-schema.ts emits these top-level keys.
+    const medicalOpts: SiteSchemaOpts = {
+      siteUrl: "https://www.medicalaccountants.example",
+      siteName: "Medical Accountants",
+      legalName: "Ashfield Trading Ltd",
+      alternateName: "Medical Accountants",
+      description: "Specialist accountants for doctors.",
+      tagline: "Medical finance, sorted.",
+      publisherLogoUrl: "/brand/logo.png",
+      sameAs: [
+        "https://find-and-update.company-information.service.gov.uk/company/16358723",
+      ],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Office line 1, Office line 2",
+        addressLocality: "London",
+        postalCode: "E1 1AA",
+        addressCountry: "GB",
+      },
+      knowsAbout: ["NHS pension annual allowance", "GP tax returns"],
+    };
+    const org = buildOrganization(medicalOpts);
+    const medicalKeys = [
+      "@context",
+      "@type",
+      "@id",
+      "name",
+      "legalName",
+      "alternateName",
+      "url",
+      "sameAs",
+      "address",
+      "logo",
+      "areaServed",
+      "description",
+      "slogan",
+      "knowsAbout",
+    ];
+    for (const key of medicalKeys) {
+      expect(org).toHaveProperty(key);
+    }
+  });
+});
+
 describe("referencedOrganization", () => {
   it("returns @id pointing to org fragment", () => {
     const ref = referencedOrganization(OPTS);

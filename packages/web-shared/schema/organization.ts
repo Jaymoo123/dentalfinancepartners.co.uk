@@ -12,25 +12,48 @@ function orgId(opts: SiteSchemaOpts): string {
 export function buildOrganization(opts: SiteSchemaOpts): Organization {
   const id = orgId(opts);
   const logoUrl = `${opts.siteUrl}${opts.publisherLogoUrl}`;
+  const areaServed = opts.serviceAreas?.length
+    ? opts.serviceAreas.map((s) => ({ "@type": "City", name: s }))
+    : { "@type": "Country", name: opts.areaServedCountry || "United Kingdom" };
   return {
     "@context": "https://schema.org",
     "@type": (opts.organizationType as Organization["@type"]) || "ProfessionalService",
     "@id": id,
     name: opts.legalName || opts.siteName,
-    alternateName: opts.siteName,
+    alternateName: opts.alternateName || opts.siteName,
     url: opts.siteUrl,
+    ...(opts.legalName ? { legalName: opts.legalName } : {}),
     ...(opts.description ? { description: opts.description } : {}),
     logo: { "@type": "ImageObject", url: logoUrl },
     image: logoUrl,
     ...(opts.email ? { email: opts.email } : {}),
     ...(opts.phone ? { telephone: opts.phone } : {}),
-    ...(opts.serviceAreas?.length
-      ? {
-          areaServed: opts.serviceAreas.map((s) => ({ "@type": "City", name: s })),
-        }
-      : {}),
+    ...(opts.address ? { address: opts.address } : {}),
+    areaServed,
     ...(opts.knowsAbout?.length ? { knowsAbout: opts.knowsAbout } : {}),
     ...(opts.tagline ? { slogan: opts.tagline } : {}),
+    ...(opts.sameAs?.length ? { sameAs: opts.sameAs } : {}),
+    ...(opts.contactPoint ? { contactPoint: opts.contactPoint } : {}),
+    ...(opts.foundingDate ? { foundingDate: opts.foundingDate } : {}),
+    ...(opts.priceRange ? { priceRange: opts.priceRange } : {}),
+    ...(opts.parentOrganization
+      ? {
+          parentOrganization: {
+            "@type": "Organization",
+            name: opts.parentOrganization.name,
+            ...(opts.parentOrganization.url ? { url: opts.parentOrganization.url } : {}),
+            ...(opts.parentOrganization.companyNumber
+              ? {
+                  identifier: {
+                    "@type": "PropertyValue",
+                    propertyID: "GB Companies House Number",
+                    value: opts.parentOrganization.companyNumber,
+                  },
+                }
+              : {}),
+          },
+        }
+      : {}),
   };
 }
 
