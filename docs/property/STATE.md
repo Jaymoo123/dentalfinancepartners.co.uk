@@ -22,6 +22,22 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
+## 2026-09-27 — Result gate and paid-PDF offer removed (owner decision, BUILT locally, NOT deployed)
+
+Owner: "We don't want any email pop up on the calculators. Remove the calculator result gate
+and have a form directly underneath the calculator. Test how that performs against the data
+we already have with the result gate." And: "remove the pdf offer and revert it to what it
+was as I don't think it's working based on the data we have for it."
+
+Spec and comparison table: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S1. New form
+id `calc_result_form`; `calc_result_gate` stays on the read side for history. Gate record for
+the comparison (06-29 to 09-27, 13 weeks): 37 to 68 starts a week, 26 to 49 refused, 0 to 6
+submits, 32 leads, 11 contactable. Read at 4 weeks after deploy.
+
+Paid-PDF test (`calc_pdf_offer`, live 09-14 16:15 UTC): code removed in the same change; prod
+flag set to `enabled: false` on deploy day so the test ends on one date. Day-14 read to be
+recorded here from data to 09-27 before deploy.
+
 ## 2026-09-15 — Warm handoff to Aswatax, triggered from the Lead Tracker (BUILT + TESTED, NOT ARMED)
 
 **Problem it solves.** Omar (Aswatax) phones referred enquirers cold and some ask how he
@@ -845,6 +861,497 @@ copy and invents no fact**; the SDLT and allowance figures derive every number f
 8. The 2x2 `CalculatorLinkCards` module still renders on `/for-letting-agents`.
 
 ---
+
+## 0.24 Designer redesign BEHAVIOUR READ-OUT (2026-09-26, 33 days each side)
+
+**Verdict (revised after the statistical re-analysis in the annex below, which supersedes
+this section wherever the two conflict): the redesign carries a real conversion cost of
+roughly 0.65 to 0.95 leads a day, hidden by 24% traffic growth. Deep reading improved. The
+naive before/after read in this section understated the cost because the BEFORE side was
+itself depressed by the consent-wording incident and because Property was on a strongly
+rising trend that the cutover interrupted.**
+
+**Windows.** BEFORE 2026-07-21 to 2026-08-22 inclusive, AFTER 2026-08-24 to 2026-09-25
+inclusive, 33 whole UTC days each. 2026-08-23 excluded (85% old design, and the worst day of
+the bot incident). Source: first-party `web_sessions` + `web_events`, `is_bot = false`, after
+the 2026-08-23 bot backfill (4,540 sessions carry the backfill tag, so both sides use the same
+bot definition). Leads from `leads` where `source='property'`, test rows excluded.
+`scripts/property_design_ab.sql` still holds the 28-day version and the two traps.
+
+### Headline
+
+| | before | after | read |
+|---|---|---|---|
+| sessions/day | 201.1 | 241.6 | +20.1% |
+| visitors/day | 153.0 | 189.6 | +23.9% |
+| leads | 78 | 80 | +2.6% |
+| leads/day | 2.36 | 2.42 | +2.5% |
+| lead rate per visitor | 1.545% | 1.279% | -0.27pp, 95% CI -0.71 to +0.17, p=0.23, NOT significant |
+| lead rate per session | 1.236% | 0.966% | -0.27pp, 95% CI -0.61 to +0.07, p=0.12, NOT significant |
+| avg engaged time | 145.4s | 139.8s | -3.9% |
+| median engaged time | 59.2s | 58.6s | flat |
+| engaged seconds PER PAGEVIEW | 124.9 | 125.7 | flat, +0.6% |
+| avg max scroll | 22.5% | 24.8% | +2.3pp |
+| sessions that never scrolled | 51.0% | 48.3% | -2.7pp |
+
+Traffic grew faster than leads, so the rate fell while the count rose. That gap is not
+statistically distinguishable from zero on 158 leads. Leads/day is the honest headline and it
+is up.
+
+### What actually improved
+
+1. **Blog readers get much further through the content.** Sessions reaching the 75% scroll
+   milestone on a blog page: 69.2 to 125.7 per 1,000, +5.35pp, p<0.0001. 50% milestone 217 to
+   262 per 1,000. Not a page-length artefact in the redesign's favour: median blog page
+   height FELL 17,252px to 15,839px, so the same percentage is fewer pixels, and absolute
+   pixels scrolled stayed flat (8,046 to 7,952). Readers complete pages they used to abandon.
+2. **Front-end errors halved.** `client_error` 643.7 to 263.4 events per 1,000 sessions. The
+   whole drop is the opaque cross-origin "Script error." row, 4,071 to 1,794. Two new small
+   rows appeared after (`Object Not Found Matching Id:*` = Edge translate extension, and
+   `Failed to connect to MetaMask` = visitor browser extension). Neither is ours.
+3. **Largest Contentful Paint improved slightly** and everything else held: LCP p75 1,060ms to
+   1,012ms, good-rating share 92.3% to 93.5%, poor 4.9% to 3.4%. CLS, FCP, INP, TTFB all flat
+   within noise, on desktop and on mobile.
+4. **Like-for-like page cohort confirms it.** Restricting both sides to the 35 entry pages with
+   at least 30 sessions each side: scroll 23.0% to 26.1%, never-scrolled 48.8% to 45.2%, 27 of
+   35 pages scroll up. Engaged seconds on that cohort 160.9 to 157.7, essentially flat.
+
+### What actually regressed
+
+1. **Hub pages lost their one-click entry. Biggest behavioural change on the site.** Sessions
+   reaching a hub, per 1,000: `/calculators` 6.63 to 0.75, `/services` 6.33 to 0.75, `/blog`
+   3.01 to 0.63. Individual pages beneath them ROSE: `/services/property-tax-advice` 1.51 to
+   3.64, `/services/property-accountant` 0.60 to 2.01, `/calculators/section-24-calculator`
+   1.81 to 3.01. **Cause confirmed in code, not inferred:** the Services, Resources and
+   Calculators top-nav triggers changed from `<Link>` to click-toggle buttons / mega-menu
+   (`Property/web/src/components/layout/SiteHeader.tsx:128`, `:100-208`), so the hub is no
+   longer a destination, only its children are. `/blog` was demoted from a flat top-level item
+   to the ninth and last child of the Resources dropdown (`Property/niche.config.json:36`
+   navigation tree). The footer was rebuilt to mirror the nav (`SiteFooter.tsx:20-50`), so it
+   inherited the same burial instead of the old flat 13-link list, and `footer_links` was
+   rescoped to legal-only (`niche.config.json:130-139`). Commits `e66f64fa2`, `734ca9fb1`,
+   `deebc9f83`, `89163191d`. The routes were not deleted, only demoted.
+2. **Intent CTA clicks down, dismissals up.** Sessions clicking a CTA that is NOT a close or a
+   skip: 9.00% to 7.29%, -1.71pp, p=0.0002. Sessions clicking a close/skip: 10.96% to 14.68%,
+   +3.72pp, p<0.0001. The raw "CTA clicks up 14.5% to 17.9% of sessions" figure is entirely the
+   dismissal side and must never be quoted as an improvement. Driver is `deep_scroll_close`,
+   60.1 to 112.3 clicks per 1,000 sessions: the deep-scroll modal now shows to far more people
+   (`personalization_shown` on `deep_scroll_modal` 91.6 to 146.9 per 1,000, a side effect of
+   readers scrolling deeper) and they dismiss it at the same rate. Its click rate is unchanged
+   and tiny, 3.9 to 4.3 per 1,000.
+3. **Form starts down.** 7.81% to 6.39% of sessions, -1.42pp, p=0.001. Start-to-lead conversion
+   held, 15.7% to 14.6%, so the funnel did not get worse once entered; fewer people entered it.
+   `/contact` reach is part of this: 19.74 to 13.17 sessions per 1,000, and the header Contact
+   affordance is now a single link hidden below the `xl:` breakpoint
+   (`SiteHeader.tsx:15-26,274-290`).
+4. **Calculator engagement down.** Sessions that change a calculator input 6.7% to 5.5%,
+   view-to-input 15.6% to 12.9%. Calculator VIEWS are flat (43.0% to 42.5%), so the tools are
+   still seen as often and used less. Partly the hub collapse, partly placement.
+5. **Mobile engaged time down 14%**, 185.3s to 157.1s overall and 199.2s to 173.1s on the
+   like-for-like cohort, while mobile scroll rose 23.0% to 24.8% and mobile vitals are flat.
+   Reading faster, not bouncing. Worth a session-replay look, not an alarm.
+6. **Pages per session down**, 1.20 to 1.15, single-page sessions 90.3% to 91.5%, 3+ page
+   sessions 4.4% to 3.1%. Consistent with the nav change: with hubs buried there is less to
+   click onward to. This is what drags total engaged-time-per-session down while
+   engaged-time-per-PAGE is flat.
+
+### Confounders checked, and what they did to the read
+
+* **Scroll percentage is not comparable across a redesign without checking page height.** Core
+  (non-blog) pages roughly doubled in length, median 2,877px to 6,426px, so their scroll% fell
+  45.3 to 27.7 while absolute pixels scrolled ROSE 4,255 to 5,233. Reading the percentage alone
+  would have produced a false "core pages disengaged" finding. Blog went the other way, shorter
+  pages, so its scroll% gain is real and understated.
+* **Traffic mix.** Entry-page mix did shift (new CGT and section-24 posts ranking), so every
+  behaviour figure above was re-run on the fixed 35-page cohort and the direction held.
+* **Content publishing** slowed in the AFTER window (new blog paths first seen per week: ~30-55
+  before, 8-34 after), so the traffic growth is ranking maturation, not new pages.
+* **Novelty/decay.** After-window split in half: engaged time 134.7s then 145.5s, never-scrolled
+  49.9% then 46.6%. Improving, not decaying.
+* **Audience.** New-vs-returning mix flat (74.2% / 75.5% new), sessions per visitor 1.31 to 1.27,
+  median viewport 1,488 to 1,440px. No audience swap.
+* **Lead quality unchanged.** Phone capture 88.5% to 88.8%, average message length 410 to 382
+  characters, lead-producing form mix roughly flat (`lead_form` 48/46, `specialist_widget`
+  14/14, `calc_result_gate` 13/15).
+
+### Open items this read creates
+
+1. Hub demotion: decide whether `/services`, `/calculators` and `/blog` get a clickable
+   top-level route back. Governing rule is "take their design", so this is an owner call, not
+   a revert.
+2. `/contact` reachability below the `xl:` breakpoint.
+3. Deep-scroll modal: it now interrupts 50% more people for the same tiny click rate.
+4. Calculator input rate: views flat, usage down.
+
+### Other sites
+
+The six sites that took the design port on 2026-09-16 do not yet have a readable before/after.
+Nine days of AFTER data, and outside generalist (1,466 sessions) and solicitors (1,391) the
+volumes are 24 to 220 sessions. Re-read no earlier than late October.
+
+### Statistical annex, 2026-09-26 — this is the authoritative read
+
+The simple before/after above is descriptive and is confounded three ways: Property was on a
+strongly improving pre-trend, the BEFORE window contains the 2026-08-15 to 08-24 consent-wording
+incident (section 0.23) which suppressed mini-form conversion, and the entry-page mix shifted.
+Three identification strategies were run. Where they agree, the finding is solid; where they
+disagree, both are reported.
+
+**1. Difference-in-differences against control sites** (dentists, solicitors, medical,
+generalist; window to 2026-09-13 so the controls stay clean of the 09-14 uplift and 09-16
+ports; day-of-week controlled, weighted by sessions, HC3). No significant estate-adjusted
+change in engaged time (−0.9s, p=0.93), scroll (+1.75pp, p=0.45) or never-scrolled (−1.8pp,
+p=0.68). Caveat that kills this as a primary method: parallel trends fail. Property's pre-period
+engaged-time slope is +5.97s/week against +0.5 to +1.3 for every control. DiD is reported for
+completeness, not relied on.
+
+**2. Interrupted time series on Property's own daily series** (level + slope terms, day-of-week,
+HAC(7) standard errors, 2026-08-23 dropped). This removes the pre-trend and is the strictest test.
+
+| metric | step at cutover | 95% CI | p | pre-trend/day |
+|---|---|---|---|---|
+| engaged sec/session | −29.7 | −52.3 to −7.1 | 0.010 | +0.92 (p=0.001) |
+| engaged sec/pageview | −20.6 | −38.8 to −2.5 | 0.026 | +0.65 |
+| avg max scroll % | −0.27 | −2.91 to +2.37 | 0.84 | +0.084 |
+| % never scrolled | +3.0 | −1.9 to +7.9 | 0.23 | −0.19 |
+| pageviews/session | −0.048 | −0.081 to −0.015 | 0.004 | +0.0008 |
+| % sessions form_start | −4.1 | −6.1 to −2.1 | 0.0001 | +0.114 |
+| % sessions intent CTA | −3.3 | −4.7 to −1.9 | <0.0001 | +0.076 |
+| % sessions dismiss CTA | +2.4 | +1.1 to +3.8 | 0.0005 | +0.051 |
+| % sessions calc input | −1.25 | −2.24 to −0.27 | 0.013 | +0.005 |
+| % sessions lead | −0.44 | −0.87 to −0.02 | 0.041 | +0.009 |
+| % sessions lead, consent dummy added | −0.80 | −1.22 to −0.39 | 0.0001 | consent −0.96pp (p<0.001) |
+| blog: % sessions reaching 75% scroll | **+4.94** | +3.44 to +6.43 | <0.0001 | +0.014 (p=0.44) |
+| blog: % sessions reaching 50% scroll | +0.75 | −2.84 to +4.33 | 0.68 | +0.110 |
+| core: % sessions reaching 75% scroll | −1.62 | −2.16 to −1.08 | <0.0001 | ns |
+
+**Placebo:** the same ITS on the pooled control sites at the same date returns nothing
+significant (engaged time p=0.44, scroll p=0.35, never-scrolled p=0.48). The Property steps are
+not an estate-wide artefact.
+
+**Robustness:** the step estimates were re-run over 4, 6, 8, 10 and 14-week pre-windows, with
+and without a post-slope term. `intent CTA` (−2.5 to −3.2pp) and `form_start` (−1.8 to −4.6pp)
+are negative and significant in every specification. `engaged sec` is negative in all, significant
+in most (−19 to −35s). `lead` is negative in all specifications, magnitude −0.5 to −1.25pp,
+p between 0.0005 and 0.10, so the direction is robust and the magnitude is not.
+
+**3. Session-level model with fixed effects** (logit, n=14,607 sessions, entry-page FE across the
+top 40 pages, plus channel, device, weekday, new-vs-returning and a consent-window dummy; HC1).
+This controls composition but not time trend, so it is the complement of the ITS, not a repeat.
+
+| outcome | odds ratio, post | 95% CI | p |
+|---|---|---|---|
+| lead | **0.678** | 0.488 to 0.940 | 0.020 |
+| form_start | 0.798 | 0.693 to 0.920 | 0.002 |
+| intent CTA | 0.841 | 0.735 to 0.961 | 0.011 |
+| calc input | 0.909 | 0.777 to 1.064 | 0.235 |
+| engaged seconds (OLS) | −8.96s | −17.8 to −0.1 | 0.046 |
+| max scroll % (OLS) | **+2.28pp** | +1.33 to +3.23 | <0.0001 |
+
+Note the one genuine disagreement between methods: adjusted for page mix, scroll is up 2.28pp
+(p<0.0001); adjusted for time trend, there is no step (p=0.84). Read it as "scroll did not get
+worse and probably improved a little", not as a headline win. The 75%-milestone gain on blog
+pages is the one depth finding that survives both.
+
+**Cost, stated three ways.** At the BEFORE session lead rate, the 7,972 AFTER sessions should
+have produced 98.5 converting sessions; they produced 77. Shortfall 21.5 over 33 days, 0.65/day.
+Using the fixed-effects odds ratio instead: 0.95 leads/day forgone at the point estimate, 0.18
+at the optimistic end of the CI, 1.52 at the pessimistic end. Lead COUNT is flat only because
+traffic grew 24% at the same time.
+
+**Power.** At ~1.1% lead rate and ~240 sessions/day, 33 days a side can only detect a 44%
+relative change in conversion. Eight weeks a side gets to 32%, twelve weeks to 26%. Any
+conversion claim smaller than that is below the instrument's resolution, which is why the
+conversion finding rests on the modelled estimates and not on the raw rate difference.
+
+### Mechanism, diagnosed rather than assumed
+
+Each regression was decomposed into exposure ("did they see it") versus response ("did they act
+given they saw it"). The answers are not the same for each.
+
+1. **Form starts: response, not exposure.** Sessions that saw the enquiry-form section are
+   unchanged (8.88% to 8.43%, p=0.34), and among those who saw it, start rate is statistically
+   unchanged (13.75% to 12.05%, p=0.37). The loss is entirely in sessions that never saw the
+   form section: 7.19% to 5.93%, p=0.0032. Those are CTA-driven entries into a form. So the
+   cause is the in-page CTA supply, not the form itself.
+2. **Intent CTA clicks: supply.** Per 1,000 sessions, `see_result` 58.8 to 39.9,
+   `specialist_widget` 27.9 to 19.8, `header_book` 6.8 to 2.9, `assistant_call` 4.2 to 1.6. The
+   new surfaces that replaced them are much smaller: `blog_skip_to_form` 4.6, `calc_see_result`
+   3.1, `hero_book` 1.1 to 2.4. The redesign removed more conversion affordance than it added.
+3. **Calculators: response.** Exposure is flat (43.0% to 42.5% of sessions view a calculator)
+   and input-given-view fell 14.99% to 12.45%, p=0.0035. Concentrated in the two big premium
+   tools: capital-gains 19.6% to 14.0%, section-24 19.0% to 12.2%. The tool UI changed; people
+   look at it as often and engage with it less.
+4. **Deep-scroll modal: both worse.** Exposure 9.07% to 14.50% (p<0.0001), because readers now
+   scroll deeper and trip it more, AND dismissal-given-exposure 71.9% to 80.4% (p=0.0001). Click
+   rate is unchanged and negligible. It interrupts 60% more people for nothing.
+5. **Returning visitors took the worst of it.** Lead rate 1.46% to 0.61% (p=0.011) against new
+   visitors 1.16% to 1.08% (p=0.70). Their engaged time fell 126.7s to 101.6s. They are the
+   group that had learned the old navigation: their hub hits fell 2.34% to 0.82% of sessions and
+   their contact-page hits 2.92% to 1.90%. This is the clearest single piece of evidence that
+   the navigation demotion, not the visual design, is doing the damage.
+6. **Hypotheses tested and REJECTED.** (a) "The header CTA hidden below the `xl:` breakpoint
+   costs desktop conversion": desktop under 1280px fell 1.01% to 0.54% and desktop at or above
+   1280px fell 1.10% to 0.79%. Both fell, no differential, so the breakpoint is not the
+   mechanism. (b) "Core pages disengaged because scroll% dropped": core pages roughly doubled in
+   length (median 2,877px to 6,426px) and absolute pixels scrolled ROSE 4,255 to 5,233. (c)
+   "People like it less so they stop coming back": 14-day return rate by first-visit cohort is
+   12.79% before, 13.26% after. No decline.
+
+### The qualitative signal from Umair's calls
+
+Umair reports roughly 80% of the leads he phones volunteer that they like the design and find
+the site easy to learn from. Nothing in the data contradicts that, and two measures support it:
+readers reach the 75% mark on blog pages nearly twice as often (+4.94pp, the most robust single
+finding here), and they cover the same distance faster (37.3 to 32.7 seconds per 1,000 pixels
+scrolled, so the drop in engaged seconds is partly reading efficiency, not disengagement).
+Front-end errors halved and LCP improved slightly.
+
+But that sample cannot answer the commercial question. Those 80% are people who already
+converted. They are the survivors of the funnel, and the funnel is exactly where the loss is:
+between reading the page and touching a form. A design can be better liked by the people who get
+through it and still convert fewer of the people who see it, and that is precisely the pattern
+in the numbers. The two facts are compatible, not contradictory.
+
+The honest summary: **the design won the reading, the navigation and CTA layer lost the selling.**
+Nothing here argues for reverting the visual design. It argues for putting the conversion
+affordances the old site had back into the new one.
+
+### What changed on the page, surface by surface (code audit, 2026-09-26)
+
+BEFORE ref `0c57b7bd9` (last commit touching `Property/web` before 2026-08-21), AFTER ref HEAD.
+
+**Removed**
+* `GateOrForm` (`form_id=resource_block`), the email-capture form under every calculator, deleted
+  from `CalculatorPageResources.tsx` under a documented "one form per page" rule. It produced 6
+  leads in the 33-day BEFORE window and 0 after. Still mounted on blog posts.
+* Homepage: intro paragraph, the "areas we help" card grid, all four embedded calculators, the
+  full-bleed image CTA banner and the "why landlords choose a specialist" section
+  (`app/page.tsx`). Median homepage height 15,845px to 9,849px. Calculators moved to
+  `/calculators/*`, not deleted.
+* `MTDCountdown` nudge on MTD blog posts and on the homepage (replaced by `StatsCounter`).
+* `CalcResultCta.tsx`, superseded by `ResultGate` / `ResultGateModal`.
+
+**Added**
+* `BlogSidebarCta`, desktop-only sticky sidebar card on blog posts (`blog_sidebar_book`, 37
+  clicks in 33 days).
+* Tracked CTAs on `/services` (`services_hero_book`, `services_calc_*`, `services_client_*`);
+  that page previously had no tracked links at all, so part of its apparent "rise" is new
+  instrumentation, not new behaviour. Do not read `/services` CTA growth as a lift.
+* Aswatax referral disclosure sentence in the lead-form and widget success copy.
+
+**Changed threshold or prominence**
+* `header_book` breakpoint `sm:` to `lg:` and the burger extended to `lg:`, so tablet volume
+  moved to `header_book_mobile`. Deliberate, owner-confirmed 2026-08-23. Sum the two rows.
+* `header_contact` only renders from `xl:` (1280px).
+* Result gate now persists a per-calculator "revealed" flag in `sessionStorage`, so it asks once
+  per calculator per session instead of every time. This is the whole cause of `see_result`
+  58.8 to 39.9 per 1,000 and of result-gate exposure 57.6 to 42.3. It did NOT cost leads:
+  `calc_result_gate` produced 13 leads before and 15 after.
+* Mobile calculator capture downgraded from a form (`MobileToolSlot`) to a link
+  (`premium_tool_mobile`). Also did not cost leads: `mobile_tool` produced 1 before, 4 after.
+* Nav hubs demoted from links to dropdown triggers (see the mechanism section above).
+
+**Unchanged in code, so NOT the explanation for their decline**
+* `SpecialistWidget` mount, chips and triggers are byte-identical; it still auto-surfaces to the
+  same share of sessions (685.5 to 665.5 per 1,000), yet engagement fell 27.9 to 19.8 and its
+  form views 5.7 to 3.4 per 1,000.
+* `StickyCTA` 30% threshold, `ReturningBar`, and the intent engine's `SCROLL_MODAL_PCT = 70` are
+  all unchanged. `LeadForm` fields and steps are unchanged.
+
+**Why the deep-scroll modal fires 60% more on unchanged code.** The rise is entirely on blog
+entries (9.43% to 15.12% of sessions; homepage 2.53% to 2.23%, core 2.97% to 3.90%). The trigger
+is 70% of page height, blog pages are now 8% shorter (median 17,252px to 15,839px) and readers
+get further down them (75%-milestone reach up 4.94pp). Same rule, more qualifying sessions, and
+a higher share of them are shallow reaches, which is consistent with dismissal-given-shown
+rising 71.9% to 80.4%. An earlier hypothesis that the shorter HOMEPAGE caused this is REJECTED
+by the per-bucket split above.
+
+### Where the lost leads actually are, by capture surface
+
+Lead-producing sessions per 1,000 sessions, BEFORE to AFTER, total 12.35 to 9.79 (−2.56):
+
+| surface | before/1k | after/1k | delta | share of the loss |
+|---|---|---|---|---|
+| `lead_form` (end-of-article and /contact) | 7.08 | 5.77 | −1.31 | 51% |
+| `resource_block` (removed from calculators) | 0.90 | 0.00 | −0.90 | 35% |
+| `specialist_widget` | 2.11 | 1.76 | −0.35 | 14% |
+| `calc_result_gate` | 1.96 | 1.76 | −0.20 | 8% |
+| `inline_mini` | 0.15 | 0.00 | −0.15 | 6% |
+| `mobile_tool` | 0.15 | 0.50 | +0.35 | −14% (a gain) |
+
+So the deleted calculator form explains about a third. The largest single bucket is the main
+enquiry form, whose exposure is unchanged (enquiry-form section seen by 8.88% then 8.43% of
+sessions, p=0.34) and whose start-given-exposure is unchanged (13.75% to 12.05%, p=0.37), but
+whose completion fell: `lead_form` starts 11.91 to 10.91 per 1,000 and submits 7.08 to 5.90, so
+start-to-submit 59.4% to 54.1%. Field-level errors on that form rose (`prompted` 9 to 12,
+`callGoal` 6 to 11, `situation` 5 to 10). That is the single highest-value thing left to
+diagnose and it is NOT explained by any surface removal.
+
+### Investigation closed, 2026-09-26: the five items, diagnosed
+
+Four code audits plus the data. Two of my earlier framings were wrong and are corrected here.
+
+**1. The calculator capture block, and what the flow used to be.**
+BEFORE, on a calculator page: the calculator's own result rendered **immediately, with no gate and
+no popup**, because `PremiumCalculator` gated only on `placement === "blog"`. Under the result
+came the "Go deeper" strip, then the premium interactive tool (also ungated), then the
+`GateOrForm` email capture (`form_id=resource_block`), then the explainer, then the enquiry form
+at `#get-expert-help`. On mobile the premium slot rendered a SECOND capture form
+(`MobileToolSlot`). So the answer to "did it have the two-step popup then" is **no**: the popup
+was a blog-only mechanic, and calculator pages had a plain visible result plus a capture block.
+AFTER: `gated = placement !== "embed"`, so the premium tool's result is now held behind
+`HeldResult` + `ResultGateModal` on calculator pages too; on `/section-24-calculator` the primary
+calculator ALSO got its own `ResultGate`, so that page now stacks two independent gates; the
+capture block is deleted; and mobile got a link instead of a form. Reveal state is remembered per
+calculator in `sessionStorage` (`resultGateStorage.ts`), where the old blog-only flag
+(`gateModalShownThisSession`) throttled the popup once per session across all tools.
+Restoration is mechanical: re-import `GateOrForm` and `hasEnabledResource` in
+`Property/web/src/components/resources/CalculatorPageResources.tsx` (lines 32-41) and render it
+after `PremiumUpgrade`. **There is no dedup anywhere in code**: no shared context, no
+"already asked on this page" flag. On `/section-24-calculator` a naive restore would stack
+primary gate, premium gate, capture block and the foot panel, four asks in one visit. The
+one-form-per-page rule is a comment at `CalculatorPageResources.tsx:11-25`, not enforced code.
+
+**2. The enquiry-form completion drop is NOT a bug. Corrected.** Every file in the submit path
+(`LeadForm.tsx`, `enquiry-message.ts`, `submit-client.ts`, `useFormTracking.ts`) is behaviourally
+identical across the cutover: same required fields, same regexes, same 40-character minimum on
+`situation`, validation still on submit only, honeypot unchanged, the Aswatax sentence is
+post-success only and cannot block. The drop is **composition**, caused by the new sidebar CTA:
+
+| session type | starts | submits | completion |
+|---|---|---|---|
+| before, organic scroll to form | 79 | 47 | 59.5% |
+| after, organic scroll to form | 74 | 43 | **58.1%** |
+| after, arrived by clicking a jump CTA (`blog_sidebar_book` / `blog_skip_to_form`) | 13 | 4 | **30.8%** |
+
+Organic completion is flat. The new always-visible sidebar button deep-links cold readers past
+the qualifying content straight into a form whose first fields ask what prompted the enquiry and
+what their situation is, and they stall there: `role` abandons 9 to 15, `situation` abandons 12 to
+19, errors up on `prompted`, `callGoal`, `situation`. Small n on the jump arm (13 starts), so
+treat the 30.8% as indicative. The actionable version is: the form is fine, the jump CTA needs to
+land people somewhere that qualifies them first, or the form needs to ask the cold-arrival fields
+later.
+
+**3. The deep-scroll modal earns nothing.** 3.9 to 4.3 clicks per 1,000 sessions across the whole
+window, against 65.9 to 118.5 dismissals. Dismissal-given-shown 71.9% to 80.4%. Trigger code
+unchanged at 70% of page height; it fires more because blog pages are shorter and readers get
+further down them.
+
+**4. The hub question, corrected and downgraded.** The nav config already used click-toggle
+dropdowns for Services and Resources BEFORE the port (`git show 0c57b7bd9:Property/niche.config.json`,
+Services 5 children, Resources 7). What actually changed: `/calculators` went from a plain
+top-level LINK to a mega-menu TRIGGER; `/blog` was added to the Resources dropdown as its
+eleventh child; and the footer's flat 15-link list (which carried `/landlord-tax`, `/section-24`,
+`/locations`, `/property-tax-rates` and the rest) was **rescoped to three legal links**, with
+footer columns now derived from the nav tree. But the empirical path data says hub traffic never
+came from the nav: it came from the homepage body and from `/about`
+(`/` to `/services` 9 before and 1 after; `/about` to `/services` 8 and 0; `/about` to `/contact`
+17 and 6). The homepage lost the intro paragraph, the "areas we help" grid and the "why choose a
+specialist" section, which is where those links lived. **Volume correction: this is 141 hub
+sessions before and 81 after, so roughly 60 sessions per 33 days, and I over-ranked it as "the
+biggest behavioural change".** It is worth fixing because hub sessions convert at 12.1% and
+13.6% against 0.9% for everything else, i.e. these are the highest-intent sessions on the site,
+but the ceiling is a handful of leads, not the bulk of the loss.
+
+**5. The specialist widget: nothing changed in it, something appeared next to it.** The diff is
+five lines, a `sourceIdentifier` refactor and a post-success sentence. Launcher, z-index
+(`z-[55]`, above every other overlay), position, chips, timings and storage keys all unchanged,
+and no global CSS touches its classes. What changed is the sidebar: before, the desktop blog
+sidebar held only the table of contents; after, `BlogSidebarCta` sits sticky above it, a navy
+card with an emerald "Book a call" button, the same visual language as the widget and offering
+the same job, permanently on screen (`BlogPostRenderer.tsx:406-409`). Best explanation: the
+widget is now the fourth ask on the page rather than the second. LIKELY, not proven.
+
+**Dilution rejected as an alternative explanation.** Restricting to the 59 entry pages with at
+least 20 sessions on BOTH sides (8,521 sessions): lead OR 0.682 (CI 0.438-1.063, p=0.091),
+form_start OR 0.746 (p=0.0006), intent CTA OR 0.749 (p=0.0005). Same magnitudes as the full
+model, so the effect is not new low-intent pages arriving. Pages with no before-traffic are only
+5.0% of after traffic and convert BETTER (1.51% vs 0.94%). One genuine anomaly left: Google-sourced
+sessions halved their conversion (1.36% to 0.54%, p=0.010; on like-for-like pages 0.99% to 0.33%,
+p=0.054) while their form-start rate barely moved. Bing did not do this. Unexplained, flagged.
+
+### The Google anomaly, chased and closed, 2026-09-26
+
+Fresh GSC pull (API, not stored snapshots), data-through 2026-09-24, windows 2026-07-21 to
+08-22 and 08-24 to 09-25.
+
+**Verdict: the Google conversion "collapse" is one outlier week, not an intent shift. Do not
+act on it.** Google weekly lead rate bounces between 0.22% and 1.26% on both sides of the
+cutover, with a single spike week beginning 2026-08-16 at 3.08% (9 leads from 292 sessions),
+which sits inside the BEFORE window. That week alone is significantly out of line with the rest
+of the before period (9/292 vs 12/1253, p=0.0095). Remove it and the Google difference stops
+being significant: 0.96% before vs 0.54% after, p=0.197. The whole-site step also softens
+(1.15% vs 0.97%, p=0.284), which is a caution on how much weight the naive whole-site figure
+can carry either way.
+
+**The informational-intent hypothesis is right about the traffic and wrong about the cause.**
+The owner's prior was that Google's growth is informational rather than commercial. The page-level
+data (full click coverage, 1,127 then 1,545 clicks) says the mix barely moved: blog 95.4% to 95.1%
+of clicks, commercial and core pages 3.8% to 3.4%, calculators 0.8% to 1.5%. The query-level data
+leans his way but is a weak instrument here: GSC returns only **59 of 1,125 clicks (5%) and 27,793
+of 114,428 impressions (24%)** at query dimension for this property, the rest anonymised, and 62%
+of what comes back does not classify. On that sample, commercial impression share falls 17.8% to
+13.8% and informational rises 20.8% to 23.5%. Directionally consistent, nowhere near conclusive.
+Where the growth actually came from is unambiguous and is informational long-tail:
+mortgage-arrangement-fees +71 clicks, CGT complete guide +48, overseas CGT +36, section-24-repeal
++29, CGT payment deadlines +26, all on improving positions.
+
+**The decisive evidence against intent dilution:** Google **form-start rate is flat**, 5.37% to
+5.03% (p=0.64), and its engaged time is flat (136.5s in August, 132.9s in September). If the
+incoming Google traffic had genuinely become materially colder, the top of the funnel would have
+moved first. It did not. Only the last step moved, on 21 versus 11 leads, and it is unstable
+against the removal of one week.
+
+**Also checked and clean:** no AI-Overview style suppression. CTR is identical across the
+cutover (0.983% vs 0.984%) while average position improved 14.57 to 12.17 and impressions rose
+37%. Search type is 100% web; news, image and Discover are zero. Bing is the control and shows no
+change (0.65% to 0.50%, p=0.58).
+
+**What this does to the wider read.** The lead-level findings rest on 159 converting sessions and
+are individually fragile; the robust findings are the ones with thousands of events behind them:
+form starts down (OR 0.75, p=0.0006 on like-for-like pages), intent CTA clicks down (OR 0.75,
+p=0.0005), calculator input-given-view down (p=0.0035), modal dismissals up (p=0.0001), blog
+75%-scroll reach up (p<0.0001). Sequence any test programme off those, not off the lead count.
+
+### Restoration pass 1, BUILT 2026-09-26, NOT DEPLOYED (owner sign-off pending)
+
+Two changes only, both from findings that need no test because they are facts about the code,
+not statistical inferences. Deliberately kept to two so each stays attributable.
+
+1. **Calculator capture block restored.** `Property/web/src/components/resources/CalculatorPageResources.tsx`
+   renders `GateOrForm` (`form_id=resource_block`) under the premium tool again, guarded by
+   `hasEnabledResource(topic)`. Verified in the build output: "Request my free review" is present
+   in the prerendered HTML of `/calculators/section-24-calculator` and
+   `/calculators/capital-gains-tax-calculator`. The removal comment in that file has been
+   rewritten to record why it came back, and to warn that nothing in the codebase dedupes asks
+   (section-24 now carries two result gates plus this form plus the foot panel; if that reads as
+   crowded, drop a gate, not this form).
+2. **Deep-scroll modal switched off.** `Property/web/src/lib/intent/engine.ts` gains
+   `DEEP_SCROLL_MODAL_ENABLED = false` and the `deep_scroll_modal` case returns null. The rule
+   below the flag is untouched and the surface stays registered, so measurement still works if it
+   is re-enabled. Test added in `src/tests/intent-engine.test.ts` pinning both the null and the
+   fact that other surfaces still answer.
+
+Verification run: `tsc --noEmit` clean, `eslint` 0 errors (29 pre-existing warnings), `next build`
+succeeded, `vitest run` 57 files / 1,640 tests all passing.
+
+**What to watch after deploy, and when.** Do not read leads for this. The instruments that move
+fast enough to attribute in two to three weeks, with their current baselines:
+
+| metric | baseline (33d after the port) | expectation |
+|---|---|---|
+| `resource_block` form starts per 1,000 sessions | 6.65 (blog only) | rises as calculator pages start contributing |
+| `resource_block` submits per 1,000 | 0.00 | above zero at all is the signal |
+| calculator sessions with a `calc_input_change` | 5.5% | watch for no drop; the block sits below the tool |
+| `personalization_shown` on `deep_scroll_modal` | 146.9 per 1,000 | goes to zero, confirms the flag |
+| `cta_click` with `cta_id=deep_scroll_close` | 112.3 per 1,000 | goes to zero |
+| sessions with any dismissal CTA | 14.68% | should fall by roughly the modal's share |
+| sessions with any intent CTA | 7.29% | must not fall; if it does, the modal was doing something |
+
+Still open, deliberately untouched so they can be tested properly as 50/50 splits later: the blog
+sidebar CTA (30.8% form completion vs 58.1% organic, 13 starts, too thin to act on), the nav hub
+links, and the specialist widget.
 
 ## 0.21 Wave 12 cost-of-selling (Phase E, Track B) — EXECUTED 2026-08-21 NIGHT, deploy owner-gated
 

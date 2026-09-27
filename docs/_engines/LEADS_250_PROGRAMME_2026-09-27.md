@@ -373,3 +373,134 @@ flat on more decision-stage supply means C is not.
 Six agents 2026-09-27 (GSC pull, SERP and domain age, AI-readiness audit, small-site
 state, Property inventory, baseline measurement). Paid spend $0.47 on DataForSEO. No repo
 changes other than this document. Scratch files deleted.
+
+## 13. Build and research specs (the reference every agent works from)
+
+Owner 2026-09-27: "I need to know it's been planned, documented etc before you start building
+anything, something to reference to avoid drift." These specs are that reference. An agent
+prompt may summarise a spec but must point at this section; if the two disagree, this section
+wins and the disagreement is reported, not resolved silently.
+
+### S1. Property: remove the calculator result gate and the paid-PDF offer (BUILD)
+
+Decision (owner, 09-27): no popup of any kind on the calculators; the result always shows;
+the capture form renders directly beneath the result; the paid-PDF offer is removed and the
+slot reverts to the plain `Workings` block it replaced on 09-14.
+
+Invariant: exactly one variable changes for the comparison, held result versus shown result.
+Same `MiniCapture` component, same fields, same validation, same submit path, same copy source.
+New form id `calc_result_form` so the two surfaces never share a row.
+
+Files: `Property/web/src/components/calculators/ResultGate.tsx` (always render children, inline
+form beneath when `enabled`), `premium/PremiumCalculator.tsx` (`showResult` always true, gate
+branch and `PdfOffer` removed, `Workings` restored, inline form beneath when
+`placement !== "embed"`), delete `HeldResult.tsx`, `resultGateStorage.ts`, the Property
+`ResultGateModal.tsx` wrapper, `lib/calculators/premium/pdfRequest.ts` and `PdfOffer` if
+unreferenced; the shared `packages/web-shared/leads/ResultGateModal.tsx` only if Property was
+its sole consumer. Analytics: add `calc_result_form` to `deploy-watch.ts` `MINIFORM_FORM_IDS`,
+`value-score.ts`, `role-labels.ts`; keep `calc_result_gate` on the read side (historic leads);
+rebaseline `BASELINE_MINIFORM_LEADS_28D` as commit `5a5cacb63` did so the deploy watch does not
+mail a false ACTION-NEEDED. Untouched: `GateOrForm`, `CalculatorPageResources.tsx`,
+`BlogPostRenderer.tsx`, `MobileToolSlot`, `SpecialistWidget`, `capture-steps.ts`, every other
+site, the database.
+
+At deploy (manager, owner-triggered): set the prod `site_flags` row `calc_pdf_offer` to
+`enabled: false` the same day as the code, so the PDF test ends on one date. Its day-14 read
+is taken from data to 09-27 first and recorded in `docs/property/STATE.md`.
+
+Comparison read, 4 weeks after deploy, weekly, Property, UK humans, bot gate on:
+
+| Surface | Weeks | Starts/wk | Refused/wk | Submits/wk | Leads (90d) | Contactable |
+|---|---|---:|---:|---:|---:|---:|
+| `calc_result_gate` (record, 06-29 to 09-27) | 13 | 37 to 68 | 26 to 49 | 0 to 6 | 32 | 11 |
+| `calc_result_form` (new) | 4 | | | | | |
+
+Verdict rule: more submits per week AND contactable share not worse means keep; fewer submits
+means revert to the gate (one commit revert, the deleted files come back from git).
+
+Checks before commit: typecheck, unit tests (three pre-existing failures allowed:
+calculator-goldens fleet count, inbound-email ack, lead-dossier ack), production build,
+rendered HTML of one calculator page contains `calc_result_form` and no held-result copy.
+
+### S2. Blog capture kit on the seven sites whose posts render no form (BUILD)
+
+Fact (live check 09-27): a blog post on charities, care, hospitality, pharmacies,
+startups-tech, ecommerce and crypto renders zero form fields; the only lead path is the
+"Book a call" sidebar link. Agency also lacks it but has none of the kit's dependencies and is
+a paused site; excluded. Contractors-ir35 and construction-cis render three forms per post and
+convert at 72 and 10 per 1,000.
+
+Reference: `contractors-ir35/web/src/components/blog/BlogPostRenderer.tsx` and its
+`blog/[category]/[slug]/page.tsx`. The seven sites already have `components/forms/LeadForm.tsx`,
+`MiniCapture` wiring and the full `lib/leads/` stack (22 files), so this is adding surfaces,
+not building forms.
+
+Change per site, minimal: keep the site's existing post template (its design-kit sidebar,
+reading progress, table of contents, schema all stay). Add two capture surfaces with the
+estate's standard ids so analytics line up: (1) the site's `LeadForm` after the article body,
+before related articles, `form_id = lead_form`, replacing the static "Book a call" text block
+where one exists; (2) `InlineMiniLeadForm` (port from contractors if the site lacks it) after
+the second H2, `form_id = inline_mini`. Do not add `ToolIsland`, `PremiumUpgrade`,
+`NextStepOffer` or any calculator surface unless the site already has the registry they read.
+Consent wording comes from the site's existing `LeadForm` config (estate LI notice), never
+retyped. No copy invention: headings and body text for the form block come from the site's
+existing `BLOG_CTA` constants.
+
+Checks per site: typecheck; the site's unit and design tests (`cta-attribute-diff`,
+consent-anchor tests where present); one production build per batch; rendered HTML of one post
+contains two `<form>` elements with the two ids; the claims sweep on the changed files
+(no firm claims introduced). Deploy batched with the canonical fix, owner-triggered.
+
+Read: at 4 weeks, blog-entry leads per 1,000 UK humans per site versus the 90-day record
+(charities 2 leads on 232 blog humans, care 0 on 51).
+
+### S3. Coverage maps for medical, contractors-ir35, care, charities and Property (RESEARCH)
+
+Purpose: make the waves comprehensive. The map is the complete statement of what a buyer on
+each site needs to find, diffed against what exists, so the wave list has nothing missing and
+nothing duplicated. No content is written in this step.
+
+One Opus agent per site. Output: `docs/<site>/COVERAGE_MAP_2026-09.md` (human, one summary
+page first) and `docs/<site>/coverage_map_2026-09.json` (machine, one row per cell). Budget:
+DataForSEO under $2 per agent, keyword volume and peer-rank checks only.
+
+Method, in order:
+
+1. **Buyer situations.** From the site's real lead messages (`leads` where `source = <site>`,
+   test rows out, read for meaning, never quote names, emails or phones), the site's `for/`
+   hubs and services pages, and the AI baseline prompts in section 8. Each situation is a
+   person and a moment ("GP partner taking on private work", "landlord with two BTLs moving
+   them into a company", "trustee filing the first annual return").
+2. **What each situation needs.** The decision they face; the questions on the way to it; the
+   number they need (calculator, existing or missing); the proof they look for (research or
+   data page); and the page that should answer "recommend an accountant for this" (the
+   segment page, Workstream A3).
+3. **Inventory diff.** Every existing blog post (frontmatter title and category), services,
+   `for`, calculator and research page, and every row in the site's topic pool (`blog_topics`
+   where `site_key = <site>`). Mark every cell COVERED (a page is the subject), PARTIAL (a page
+   touches it, extend), or MISSING (pool row exists / brief needed). Subject match, not slug
+   tokens (NETNEW §8.2 rule 4).
+4. **Demand and eligibility on MISSING cells** (NETNEW §8.2): we earn zero impressions on it
+   (GSC now registered for all five, Bing via the query client), a peer specialist ranks top
+   20, monthly demand between 100 and 5,000. Cells failing a rule are kept in the map with the
+   reason, never dropped.
+5. **Manifest.** Ordered list of pages to produce: segment pages first, then decision pages,
+   then supporting pages; each with working title in the buyer's words, intent type, target
+   query, word band per NETNEW §8.3 (800 to 1,200 for coverage pages), calculator or embed to
+   include, and the house-positions anchors the brief will need. The manifest is the full
+   need, not a wave size; the first 15 are marked Wave 1.
+6. **Ground truth.** `docs/<site>/house_positions.md` is the tie-breaker. No figures are
+   asserted in the map that are not already in it or in primary legislation. No claims about
+   the firm anywhere (see `ESTATE_CLAIMS_INTEGRITY`).
+
+Sign-off gate: the owner reads the five one-page summaries; wave slices come from the
+manifests only. Then S4.
+
+### S4. Content waves on the four small sites and Property (BUILD, after S3 sign-off)
+
+The existing net-new engine, unchanged (`NETNEW_PROGRAM.md`): PREP with the cannibalisation
+audit and house-positions lock, RUN with one Opus or Fable writer per page, WRAP with the two
+Opus QA tracks, deploy on the owner's word. Batch size 1. Picks come from the S3 manifest in
+manifest order. Coverage page spec §8.3 applies (length floor withdrawn). Wave 1 per site is
+the first 15 manifest rows; the owner approves each wave's size before launch and sees the
+agent count (roughly three runs per page).
