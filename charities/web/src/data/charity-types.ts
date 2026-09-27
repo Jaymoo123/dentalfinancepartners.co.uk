@@ -16,7 +16,7 @@ export const charityTypes: CharityType[] = [
     slug: "cics",
     title: "Community Interest Companies",
     headline: "Accounts and compliance for community interest companies",
-    metaTitle: "Accountants for CICs | Community Interest Company Accounts | Trustee Tax",
+    metaTitle: "Accountants for CICs | CIC Accounts | Trustee Tax",
     metaDescription:
       "Specialist accountants for community interest companies. CIC34 filing, annual accounts, Corporation Tax and asset lock compliance for CIC directors.",
     intro:
@@ -83,7 +83,7 @@ export const charityTypes: CharityType[] = [
     headline: "Accounts and tax advice for social enterprises, whatever your legal form",
     metaTitle: "Accountants for Social Enterprises | Trustee Tax",
     metaDescription:
-      "Accounts, Corporation Tax and structure advice for social enterprises: CICs, charitable companies, CIOs and mission-led trading organisations across England and Wales.",
+      "Accounts, Corporation Tax and structure advice for social enterprises: CICs, charitable companies, CIOs and mission-led trading organisations.",
     intro:
       "Social enterprise is a description of purpose, not a legal form. The structure your organisation uses determines its accounting standards, tax treatment, regulatory obligations and whether it can access reliefs such as Gift Aid. CICs pay Corporation Tax normally and receive no charity tax reliefs. Registered charities, including charitable incorporated organisations and charitable companies, access a different set of reliefs and report under different rules. Getting the structure right from the start, or understanding exactly what your current structure means for tax and reporting, is where the accounting work begins.",
     stats: [

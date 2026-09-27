@@ -424,7 +424,7 @@ export const contractorTypes: ContractorType[] = [
     slug: "oil-gas-contractors",
     title: "Oil and Gas Contractors",
     headline: "Specialist accountants for oil and gas contractors",
-    metaTitle: "Accountants for Oil and Gas Contractors | IR35 & Offshore Tax",
+    metaTitle: "Oil and Gas Contractor Accountants | IR35 & Offshore Tax",
     metaDescription:
       "Tax and IR35 advice for UK oil and gas contractors. Offshore engineers, drilling specialists and subsea professionals. PSC planning, expenses and compliance.",
     intro:
@@ -548,7 +548,7 @@ export const contractorTypes: ContractorType[] = [
     slug: "marketing-contractors",
     title: "Marketing and Creative Contractors",
     headline: "Specialist accountants for marketing and creative contractors",
-    metaTitle: "Accountants for Marketing & Creative Contractors | IR35 Advice",
+    metaTitle: "Marketing & Creative Contractor Accountants | IR35 Advice",
     metaDescription:
       "Tax and IR35 advice for freelance marketers, copywriters, designers and creative contractors. Limited company setup, PSC planning and expenses.",
     intro:

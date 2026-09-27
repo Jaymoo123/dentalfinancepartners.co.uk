@@ -4,9 +4,9 @@ import { siteConfig } from "@/config/site";
 import { AudienceStageLayout, type AudienceStage } from "@/components/audience/AudienceStageLayout";
 
 export const metadata: Metadata = {
-  title: "Medical Accountant for Hospital Consultants | NHS & Private Practice Tax",
+  title: "Accountant for Hospital Consultants | NHS & Private Tax",
   description:
-    "Specialist medical accountant services for UK hospital consultants. NHS salary alongside private practice income, medico-legal work, NHS pension annual allowance, and consultant expense claims.",
+    "Specialist medical accountant for UK hospital consultants: NHS salary, private practice income, medico-legal work, NHS pension allowance and expenses.",
   alternates: {
     canonical: `${siteConfig.url}/for-consultants`,
     languages: {

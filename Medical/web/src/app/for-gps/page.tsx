@@ -12,7 +12,7 @@ import { AudienceStageLayout, type AudienceStage } from "@/components/audience/A
 export const metadata: Metadata = {
   title: "GP Practice Accountants | Partnership Accounts & Partner Tax",
   description:
-    "GP practice accounting explained, and enquiries matched to a specialist firm: partnership accounts, profit allocation, notional rent, superannuation certificates and self-assessment for partners and salaried GPs.",
+    "GP practice accounting explained, matched to a specialist firm: partnership accounts, profit allocation, notional rent and self-assessment for GPs.",
   alternates: {
     canonical: `${siteConfig.url}/for-gps`,
     languages: {

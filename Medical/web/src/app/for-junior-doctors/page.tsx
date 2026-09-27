@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import { AudienceStageLayout, type AudienceStage } from "@/components/audience/AudienceStageLayout";
 
 export const metadata: Metadata = {
-  title: "Accountants for Junior Doctors | Locum Shifts, Student Loans & Tax",
+  title: "Accountants for Junior Doctors | Locum & Student Loans",
   description:
     "Specialist accountants for UK junior doctors. Locum shift taxation, student loan repayments, moving between trusts, NHS pension, and expenses during training.",
   alternates: {

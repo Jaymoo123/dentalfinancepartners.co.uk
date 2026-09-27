@@ -8,6 +8,9 @@ on:
       - '.cursor/rules/**'
       - 'Admin/ISSUE_LOG.md'
       - '**/niche.config.json'
+      - '**/web/src/data/**'
+      - '**/web/src/app/for/**'
+      - 'Medical/web/src/app/for-*/**'
   pull_request:
     paths:
       - '**/web/content/blog/**'
@@ -15,6 +18,9 @@ on:
       - '.cursor/rules/**'
       - 'Admin/ISSUE_LOG.md'
       - '**/niche.config.json'
+      - '**/web/src/data/**'
+      - '**/web/src/app/for/**'
+      - 'Medical/web/src/app/for-*/**'
   workflow_dispatch:
 
 permissions:
@@ -47,6 +53,9 @@ jobs:
           # New-branch pushes report an all-zero "before" SHA; fall back to HEAD~1.
           if echo "$VALIDATE_BASE_REF" | grep -qE '^0+$'; then unset VALIDATE_BASE_REF; fi
           python scripts/validate_blog_content.py --verbose
+
+      - name: Run audience page QA
+        run: python scripts/check_audience_pages.py
 
   validate-docs:
     name: Validate Documentation Consistency

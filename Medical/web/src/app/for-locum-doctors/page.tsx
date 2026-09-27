@@ -11,7 +11,7 @@ import { AudienceStageLayout, type AudienceStage } from "@/components/audience/A
 export const metadata: Metadata = {
   title: "Accountants for Locum Doctors | Locum Accountant, IR35 & Tax",
   description:
-    "Accountants for locum doctors across the UK. IR35 status per engagement, limited company versus umbrella modelled on your earnings, locum expense claims, self-assessment, and NHS Pension Forms A and B.",
+    "Accountants for locum doctors across the UK: IR35 status per engagement, limited company versus umbrella, expense claims and self-assessment.",
   alternates: {
     canonical: `${siteConfig.url}/for-locum-doctors`,
     languages: {
