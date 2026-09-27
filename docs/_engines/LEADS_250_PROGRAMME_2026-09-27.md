@@ -320,22 +320,43 @@ the same pace Property ran in July and August. The owner approves each wave's si
 launches (standing rule), and re-grading existing evidence is always preferred to a fresh
 test wave.
 
-## 10. Decisions needed
+## 10. Decisions needed (state as of 2026-09-27 evening)
 
-1. **Charities blog lead form.** Add it. Without it the site cannot convert readers.
-   Recommend yes.
-2. **Calculator result gate.** After tomorrow's PDF read: show the number, then offer
-   "email me the workings" as the capture, instead of demanding a message first.
-   Recommend yes regardless of the PDF verdict.
-3. **Bing Places listings.** Same risk class as Google Business Profile. Recommend no for
-   now; revisit when the parent site is live.
-4. **Phase 1 wave size.** 60 posts across four sites (about 180 agent runs) plus 15 on
-   Property. Recommend yes.
-5. **A scheduled monthly gate-check** that emails a one-line PASS / ACTION verdict with the
-   numbers, so nobody has to remember the date. It would be a new email. Recommend yes,
-   one mail a month, deduped.
-6. **Deploys** for Phase 0 (canonical fixes, ecommerce `286365a8`, Ashfield parent).
-   Owner-triggered; say when.
+1. **Blog capture kit on the seven sites with no blog form.** DONE, owner go 09-27
+   (`c810c3ff`, `1aca7e5e`). Not deployed.
+2. **Calculator gate.** DECIDED 09-27: gate and paid-PDF offer removed, one form directly
+   under every calculator, no popup. BUILT and VERIFIED (`6f20d7d0`, `5b6c2cff`, S1a). Not
+   deployed.
+3. **Bing Places listings.** Recommend no for now. OPEN, default no.
+4. **Phase 1 wave size.** APPROVED in principle 09-27, conditional on the coverage maps,
+   which are now written (`919a67c9`). Wave 1 is 15 rows per site; see decisions 7 and 8.
+5. **Monthly emailed gate-check.** DECLINED 09-27. The monthly read is a report.
+6. **Week-1 fixes.** DONE: canonical-hub fix on care, hospitality, startups-tech,
+   construction-cis (`bb297ab2`); GSC registration (`01f2f4b1`); prior-session Property
+   tree committed as found (`b226ff38`). Deploy itself waits for the owner's word. Ashfield
+   parent is a launch, not a fix, and is not bundled.
+7. **Build below the keyword-volume rule (all five maps raise it).** NETNEW §8.2 rule 3
+   wants 100 to 5,000 searches a month per subject. Medical: 2 of 113 priced subjects clear
+   it. Care: 1 of 54. Charities: 12 of 53 missing cells. Contractors: 4 of 60, all
+   calculators we already have. Property: almost none of the situation-shaped queries. The
+   same sites convert at 32 to 72 per 1,000, Bing ranks them top 10 on conversational
+   queries Google Ads prices at zero, and ChatGPT names them. The maps keep every failed
+   rule on the row. Proposed: on these five sites, selection is by buyer situation, judged on
+   leads per 1,000, Bing at 28 days and assistant naming, not Google impressions at 90 days.
+   Recommend yes. OPEN.
+8. **Wave 1 shape.** Every map puts segment pages first (Property: all 15 Wave 1 rows;
+   charities 7 of 15; contractors 6; medical 5; care first). That is page-template and
+   schema work at 800 to 1,200 words, not 3,000-word posts, and it pays off on assistant
+   naming and Bing rather than Google position. Approve that shape, or keep Wave 1 as blog
+   posts with the segment pages after. Recommend segment pages first. OPEN.
+9. **Specialist chat widget on calculator pages.** It still auto-opens top-right on the
+   calculator pages. It is the estate-wide widget, not the gate, and was out of scope.
+   Leave it for the 4-week read (one variable at a time), or turn off auto-open there?
+   Recommend leave. OPEN.
+10. **Deploy.** Everything above is committed locally and not pushed. Say "deploy" and the
+    order is: push, dependency-closure check, clean worktree at the pushed SHA, Property
+    first (with the `calc_pdf_offer` flag set off in prod the same day and the PDF day-14
+    read recorded first), then the seven blog-kit sites and the four canonical-fix sites.
 
 ## 11. Targets and the monthly read
 
@@ -449,6 +470,36 @@ beneath a calculator result.
   transfer-into-company post has `calc_result_form` and `lead_form` and no `resource_block`; a
   post with a resource and no premium tool still has `resource_block`. Then a browser check of
   the same four pages at desktop and 390px width, counting visible forms.
+
+**S1a VERIFIED 2026-09-27 (commits `6f20d7d0`, `5b6c2cff`).** Headless Chromium against the
+production build on localhost, four pages, 1280px and 390px, visible forms counted and
+located: section-24 page and the generic CGT page each show the result at once, one
+`calc_result_form` directly beneath it, the premium tool below with Workings and no form, and
+the page-foot "Book your free consultation" panel 2,100px lower (pre-existing, page-level).
+The transfer-into-company post and a landlord-essentials post each show one form under the
+tool (desktop `calc_result_form`, mobile `mobile_tool`) and the end-of-post enquiry form
+8,600px lower. No held-result copy, no PDF offer on any page. Note for the owner: the
+specialist chat widget still auto-opens top-right on calculator pages; it is the estate-wide
+widget, not the gate, and was not in scope. Two facts learned: the premium tool is
+client-rendered (`ssr: false`), so static HTML cannot show its form and the browser check is
+the only valid one; and no Property post today has a resource without a premium tool, so the
+`GateOrForm` fallback branch is currently unreachable.
+
+**Corrections to this document from the S3 maps (09-27).** Section 2 A3 said contractors had
+no IT-contractors page; `/for/it-contractors` exists and ChatGPT still did not name it, so the
+lever is the page's content, not its existence. Section 3 B0 listed contractors-ir35 among the
+canonical-bug sites; its `/for` and `/services` were already self-canonical before the 09-16
+deploy, and the live defect was on care, hospitality, startups-tech, construction-cis and
+ecommerce (fixed `bb297ab2`, ecommerce `286365a8`). Inventory in section 3: care has six
+services pages and five `for` hubs, not two; charities has five services pages, eight guides
+and two `for` hubs, not two services and one guide; charities took 449 UK human sessions in 90
+days, not 362. The medical map quoted 12 leads in 90 days; the leads table holds 26 (verified
+`select count(*) ... source='medical' ... created_at >= now() - interval '90 days'`), the
+map's figure was a filter error and its situations are unaffected. The B4 pool counts
+overstate what the pools can feed: contractors' 1,257 rows are 1,117 used and 140 zero-volume
+jargon, medical's 62 are all published, charities' 1,660 are a raw keyword scrape with no
+category or intent on any row. Every Wave 1 brief on the four small sites is written fresh
+from the map, not sliced from the pool; Property's pool still has decision-stage rows.
 
 ### S2. Blog capture kit on the seven sites whose posts render no form (BUILD)
 

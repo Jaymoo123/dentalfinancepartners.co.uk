@@ -22,7 +22,7 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
-## 2026-09-27 — Result gate and paid-PDF offer removed (owner decision, BUILT locally, NOT deployed)
+## 2026-09-27 — Result gate and paid-PDF offer removed (owner decision, BUILT + VERIFIED locally, NOT deployed)
 
 Owner: "We don't want any email pop up on the calculators. Remove the calculator result gate
 and have a form directly underneath the calculator. Test how that performs against the data
@@ -37,6 +37,17 @@ submits, 32 leads, 11 contactable. Read at 4 weeks after deploy.
 Paid-PDF test (`calc_pdf_offer`, live 09-14 16:15 UTC): code removed in the same change; prod
 flag set to `enabled: false` on deploy day so the test ends on one date. Day-14 read to be
 recorded here from data to 09-27 before deploy.
+
+Commits: `6f20d7d0` (gate + PDF removal, inline `calc_result_form`), `5b6c2cff` (S1a: one
+form under a calculator; premium tool on calculator pages has no form, `resource_block`
+dropped from `CalculatorPageResources`, generic tools get the form via the shared result
+slot, blog posts with a premium tool no longer render `GateOrForm`). Verified headless on the
+production build at 1280px and 390px: one form under the result on every calculator page and
+premium post, foot panel and end-of-post form unchanged, no held-result copy, no PDF offer.
+`resource_block` exposure falls on calculator pages and premium posts; the 4-week read
+compares `calc_result_form + resource_block` against `calc_result_gate + resource_block`.
+The PDF API routes (`api/calc/pdf-offer`, `api/calc/pdf-request`), `pdfRequest.ts` and its
+test remain in the tree, unreachable from the UI; remove after the flag is off.
 
 ## 2026-09-15 — Warm handoff to Aswatax, triggered from the Lead Tracker (BUILT + TESTED, NOT ARMED)
 
