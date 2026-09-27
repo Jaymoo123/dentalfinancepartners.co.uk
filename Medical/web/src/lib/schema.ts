@@ -267,10 +267,11 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     // Freshness signal: emit the real last-modified date when the post carries
     // one, falling back to the publish date so unedited posts are unchanged.
     dateModified: post.dateModified ?? post.date,
+    // Author is the canonical Organization (same @id as the site-wide node
+    // from buildOrganizationJsonLd), not a fictitious "Editorial Team" Person.
     author: {
-      "@type": "Person" as const,
-      name: `${siteConfig.name} Editorial Team`,
-      url: `${siteConfig.url}/about`,
+      "@type": "Organization" as const,
+      "@id": `${siteConfig.url}#organization`,
     },
     publisher,
     mainEntityOfPage: {
