@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { CalendarDays, Clock, History } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl, buildArticleJsonLd, buildFaqJsonLd, buildHowToJsonLd } from "@/lib/schema";
-import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -14,6 +13,8 @@ import {
 } from "@/lib/blog";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { BLOG_CTA } from "@/components/blog/blog-cta";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { ReadingProgress } from "@accounting-network/web-shared/design/blog/ReadingProgress";
@@ -68,6 +69,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const metaPill =
   "inline-flex min-h-7 items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 ring-1 ring-slate-200/70";
+
+// LEADS_250 §13 S2: mount InlineMiniLeadForm after the SECOND h2 of the body.
+// No existing helper in this repo splits at the second h2 specifically
+// (packages/web-shared/content/blog-splits.ts targets the first h2 or a
+// fraction of remaining headings), so this is the minimal regex needed;
+// nothing else in the body HTML is touched.
+function splitAtSecondH2(html: string): { before: string; after: string } {
+  const matches = [...html.matchAll(/<h2[^>]*>/g)];
+  if (matches.length < 2) return { before: html, after: "" };
+  const cut = matches[1].index!;
+  return { before: html.slice(0, cut), after: html.slice(cut) };
+}
 
 function formatUkDate(iso: string): string {
   const d = new Date(iso);
@@ -132,6 +145,7 @@ export default async function BlogPostPage({ params }: Props) {
   const headings = extractHeadings(post.contentHtml);
   const readTime = calculateReadTime(post.contentHtml);
   const hasUpdate = !!(post.updatedDate && post.updatedDate !== post.date);
+  const bodySplit = splitAtSecondH2(post.contentHtml);
   const related = getRelatedPosts(post.slug, post.category, 3).map((r) => ({
     href: `/blog/${getCategorySlug(r)}/${r.slug}`,
     title: r.title,
@@ -225,10 +239,15 @@ export default async function BlogPostPage({ params }: Props) {
                 never escaped. .prose rules ship from
                 packages/site-styles/prose-standard.css via globals.css:6 and are
                 NOT duplicated here. */}
-            <div
-              className="prose prose-neutral mt-10 max-w-none"
-              dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-            />
+            <div className="prose prose-neutral mt-10 max-w-none">
+              <div dangerouslySetInnerHTML={{ __html: bodySplit.before }} />
+              {bodySplit.after ? (
+                <>
+                  <InlineMiniLeadForm topic={post.category} />
+                  <div dangerouslySetInnerHTML={{ __html: bodySplit.after }} />
+                </>
+              ) : null}
+            </div>
 
             {unrenderedFaqs.length > 0 && (
               <section className="mt-12 border-t border-slate-200 pt-8" aria-labelledby="faq-heading">
@@ -249,31 +268,22 @@ export default async function BlogPostPage({ params }: Props) {
               </section>
             )}
 
-            {/* The sidebar card's button targets this id. It is the SAME single
-                ask this page has always carried, a link to /contact: the set of
-                lead-capture surfaces on the blog is unchanged by the port
-                (adding one is an owner gate, PHASE_PLAN.md §7). */}
+            {/* The sidebar card's button targets this id. LEADS_250 §13 S2: the
+                static "Book a call" text block that lived here is replaced by
+                the site's LeadForm (form_id lead_form); heading/body copy is
+                unchanged, still BLOG_CTA. */}
             <section
               id="enquiry-form"
               className="mt-12 scroll-mt-24 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8"
               aria-labelledby="enquiry-form-heading"
             >
-              {/* Light ground, not the sidebar card's slate-900: btnPrimary's
-                  ground IS #1a5c4a, which on slate-900 reads as one dark shape
-                  on another. On slate-50 the button separates from the panel. */}
               <h2 id="enquiry-form-heading" className="text-xl font-bold text-slate-900 sm:text-2xl">
                 {BLOG_CTA.heading}
               </h2>
               <p className="mt-3 text-base leading-relaxed text-slate-600">{BLOG_CTA.body}</p>
-              <Link
-                href="/contact"
-                data-cta="blog_article_contact"
-                data-cta-placement="article_footer"
-                data-cta-goal="contact"
-                className={`mt-6 ${btnPrimary}`}
-              >
-                {BLOG_CTA.button}
-              </Link>
+              <div className="mt-6 rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
+                <LeadForm redirectOnSuccess={false} submitLabel={BLOG_CTA.button} />
+              </div>
             </section>
 
             {related.length > 0 && (

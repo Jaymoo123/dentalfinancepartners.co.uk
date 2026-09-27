@@ -9,6 +9,8 @@ import {
   getCategorySlug,
   calculateReadTime,
 } from "@/lib/blog";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
 
@@ -52,12 +54,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// LEADS_250 §13 S2: mount InlineMiniLeadForm after the SECOND h2 of the body.
+// No existing helper in this repo splits at the second h2 specifically
+// (packages/web-shared/content/blog-splits.ts targets the first h2 or a
+// fraction of remaining headings), so this is the minimal regex needed;
+// nothing else in the body HTML is touched.
+function splitAtSecondH2(html: string): { before: string; after: string } {
+  const matches = [...html.matchAll(/<h2[^>]*>/g)];
+  if (matches.length < 2) return { before: html, after: "" };
+  const cut = matches[1].index!;
+  return { before: html.slice(0, cut), after: html.slice(cut) };
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { category, slug } = await params;
   const post = getPostByCategoryAndSlug(category, slug);
   if (!post) notFound();
 
   const postUrl = `/blog/${category}/${post.slug}`;
+  const bodySplit = splitAtSecondH2(post.contentHtml);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -121,18 +136,26 @@ export default async function BlogPostPage({ params }: Props) {
           </ul>
         </aside>
       )}
-      <article
-        className="prose prose-neutral mt-10 max-w-none"
-        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-      />
+      <article className="prose prose-neutral mt-10 max-w-none">
+        <div dangerouslySetInnerHTML={{ __html: bodySplit.before }} />
+        {bodySplit.after ? (
+          <>
+            <InlineMiniLeadForm topic={post.category} />
+            <div dangerouslySetInnerHTML={{ __html: bodySplit.after }} />
+          </>
+        ) : null}
+      </article>
+      {/* LEADS_250 §13 S2: the static "Book a call" text block that lived here
+          is replaced by the site's LeadForm (form_id lead_form); heading/body
+          copy is unchanged, still the site's existing wording. */}
       <div className="mt-12 rounded-md border border-neutral-200 p-6">
         <h2 className="text-lg font-semibold text-neutral-900">Need help with your hospitality business accounts?</h2>
         <p className="mt-2 text-sm text-neutral-600">
           Tell us about your venue and we will come back within 24 hours.
         </p>
-        <Link href="/contact" className="mt-4 inline-block font-medium underline">
-          Get in touch
-        </Link>
+        <div className="mt-4">
+          <LeadForm redirectOnSuccess={false} />
+        </div>
       </div>
     </main>
   );
