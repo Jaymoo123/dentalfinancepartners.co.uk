@@ -1,0 +1,103 @@
+{
+  "slug": "care-franchisees",
+  "title": "Care Franchisees",
+  "headline": "Accountants for UK home care franchisees: the fee, the structure and the first year",
+  "metaTitle": "Accountants for Care Franchisees UK | Home Care",
+  "metaDescription": "Specialist accountants for UK home care franchisees. Franchise fee tax treatment, management service fees, CQC registration, payroll, VAT and cash flow.",
+  "intro": "Buying a home care franchise puts you in two positions at once. You are a franchisee bound by an agreement, and you are a care provider that <a href=\"https://www.cqc.org.uk/guidance-providers/registration\">must hold its own CQC registration before delivering any regulated activity</a>. The registration sits with your company, not the franchisor, and so does every payroll, tax and compliance duty behind it. The money questions follow from that split. Your initial fee is <a href=\"https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim57620\">usually capital rather than a deductible running cost</a>, with the corporation tax intangible assets regime taking precedence where a company acquires the franchise. The care you deliver is VAT-exempt while the fees you pay the network are not, so that VAT sticks. And carers join the payroll in week one, months before the territory fills.",
+  "stats": [
+    {
+      "value": "Capital",
+      "label": "HMRC treats the initial fee paid by a franchisee as capital for trade profits purposes; for a company the CTA 2009 Part 8 intangible assets regime takes precedence (BIM57620)"
+    },
+    {
+      "value": "20%",
+      "label": "Standard-rate VAT charged on franchise and management service fees, irrecoverable for a CQC-registered provider whose care income is exempt"
+    },
+    {
+      "value": "£12.71",
+      "label": "National Living Wage floor for workers aged 21 and over from 1 April 2026, the dominant cost line from your first placement"
+    },
+    {
+      "value": "18%",
+      "label": "Business Asset Disposal Relief rate on qualifying disposals from 6 April 2026, relevant when you resell the territory"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "The initial fee is capital, and the relief route depends on your structure",
+      "body": "The lump sum you pay to join a network is <a href=\"https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim57620\">not a deductible trading expense</a>, and it stays capital even when the agreement lets you pay by instalments, as do the related legal fees. Where a company acquires the franchise, the <a href=\"https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird11500\">intangible assets regime in CTA 2009 Part 8</a> takes precedence, so relief can follow the amortisation charged in the accounts instead of being lost. Which route applies turns on the entity and on what the agreement grants, so settle it before the fee is paid."
+    },
+    {
+      "title": "CQC registration is yours, and so is the liability behind it",
+      "body": "A franchisor's brand does not register on your behalf. Your legal entity applies, names its registered manager and provides the financial information the application requires, including a financial viability statement. The sequencing consequence is real: you commit to the fee, the office and often the first staff before any income exists, because delivering personal care before registration is an offence. First-time providers can see that process on the <a href=\"/for/care-startups\">care startups page</a>."
+    },
+    {
+      "title": "The recurring fee, and the VAT that sticks to it",
+      "body": "Recurring management service fees are charged on turnover or on invoiced hours, and the agreement decides which. That matters, because commissioned local authority hours make a very different revenue line from private clients. Exemption bites harder than for an independent: no input VAT is recoverable on the initial fee, the service fee, the marketing levy or the network software, and exempt income does not count toward the £90,000 registration threshold."
+    },
+    {
+      "title": "Year one is a cash flow problem before it is a profit problem",
+      "body": "Carers are paid weekly or fortnightly; local authority invoices are settled in arrears. Employer National Insurance at 15% above the £5,000 secondary threshold, holiday accrual, paid inter-call travel and mileage at 55p per mile all land before the territory is near full, and the fee has already gone out. Model the trough, not the twelfth month, and test it against the <a href=\"/calculators/true-cost-care-hour-calculator\">true cost of a care hour</a>."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "Reviewing the agreement for its money consequences",
+      "body": "Before you sign, a specialist reads the financial clauses: what the initial fee buys and how it will be treated for tax, how the service fee is calculated and on which revenue base, and what renewal and resale terms do to your exit. The output is a schedule of committed costs by month against the hours needed to cover them."
+    },
+    {
+      "title": "Setting up the entity and the CQC financial paperwork",
+      "body": "The projections and the financial viability statement the registration needs are prepared in the form CQC asks for, and the company is registered for corporation tax and PAYE before your first shift. A structure the franchisor specifies is built in at the start. The equivalent for an independent launch sits on the <a href=\"/services/start-a-domiciliary-care-agency\">start a domiciliary care agency page</a>."
+    },
+    {
+      "title": "Payroll from the first carer",
+      "body": "Rotas turn into gross pay, employer NIC, holiday accrual and mileage, and the franchisee carries all of it whatever software the network supplies. A specialist sets it up with the Employment Allowance claimed where you qualify, inter-call travel paid as working time, sleep-in hours treated as the Mencap ruling requires, and holiday accrued on hours worked. See the <a href=\"/services/care-payroll\">care payroll service</a>."
+    },
+    {
+      "title": "Monthly reporting, and the numbers a resale needs",
+      "body": "Reporting is built on delivered hours, cost per hour, margin after the franchisor's fee and runway. The same records make the territory saleable later: clean hour and fee history, a defensible staff cost base, and the ownership record behind any relief claim. Sale mechanics sit on the <a href=\"/services/selling-a-care-home\">selling a care business page</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I deduct the franchise fee from my profits?",
+      "answer": "Not as a running cost. HMRC's position is that the initial fee paid by a franchisee is usually capital, and stays capital even where the agreement spreads it over years; related legal fees go the same way. Where a company acquires the franchise, the intangible assets regime in CTA 2009 Part 8 takes precedence over those trade profits rules, so relief can follow the amortisation charged in the accounts."
+    },
+    {
+      "question": "Do I need my own CQC registration if the franchisor is already registered?",
+      "answer": "Yes. Registration attaches to the legal entity carrying on the regulated activity, and as a franchisee that entity is yours. You apply in your own name, nominate a registered manager and provide the financial information the application requires. Delivering personal care before registration is a criminal offence, so the gap between signing and a first client is a real cash constraint. Wales, Scotland and Northern Ireland have their own regulators."
+    },
+    {
+      "question": "Is there VAT on the franchise fee, and can I reclaim it?",
+      "answer": "The franchisor supplies standard-rated services, so VAT is charged on the initial fee and on the ongoing management service fee, and you will not recover it. Care supplied by a CQC-registered provider is VAT-exempt, and input VAT on costs used to make exempt supplies is irrecoverable. Exempt income does not count toward the £90,000 taxable turnover threshold either, so most franchisees have no registration route into recovery."
+    },
+    {
+      "question": "What company structure will the franchisor expect?",
+      "answer": "Almost every network requires a limited company as the franchisee, often one formed for that territory alone and barred from other trades. That shapes the tax position: profits meet corporation tax at 19% up to £50,000 and 25% above £250,000 with marginal relief between, and extraction becomes the usual salary and dividend question, at dividend rates of 10.75%, 35.75% and 39.35% from 6 April 2026."
+    },
+    {
+      "question": "How much working capital does the first year actually need?",
+      "answer": "Enough to cover the gap between paying carers and being paid. Wages run weekly or fortnightly from a floor of £12.71 an hour for workers aged 21 and over from April 2026, plus employer NIC at 15% above the £5,000 threshold, holiday accrual, paid travel between calls and mileage at 55p per mile. Local authority income arrives in arrears, after the fee and the pre-registration months."
+    },
+    {
+      "question": "What happens when I sell the territory?",
+      "answer": "The initial fee is not refunded. You sell the shares or the trade and assets of your own company, subject to what the agreement says about franchisor consent, a right of first refusal, transfer fees and the remaining term. Business Asset Disposal Relief can apply at 18% on qualifying disposals from 6 April 2026, against 24% for a higher-rate taxpayer on gains that do not qualify, and it needs two years of qualifying trading ownership."
+    }
+  ],
+  "sources": [
+    "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim57620 (BIM57620, franchising: initial fee paid by franchisee usually capital, including where paid by instalments; intangible assets regime takes precedence for companies; fetched and read 2026-09-27)",
+    "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird11500 (intangible assets within CTA 2009 Part 8; fetched 2026-09-27, HTTP 200)",
+    "https://www.cqc.org.uk/guidance-providers/registration (registration mandatory before carrying on a regulated activity; financial information required; fetched 2026-09-27, HTTP 200)",
+    "house_positions.md HP1 and HP3 (welfare exemption is a cost, input VAT irrecoverable; £90,000 threshold measured on taxable turnover only)",
+    "house_positions.md HP7 (NLW £12.71 for 21 and over from 1 April 2026)",
+    "house_positions.md HP8 (AMAP 55p per mile from 6 April 2026)",
+    "house_positions.md HP11 and HP12 (employer NIC 15% above £5,000 secondary threshold; Employment Allowance £10,500)",
+    "house_positions.md HP18 (corporation tax 19% and 25%, £50,000 and £250,000 thresholds, marginal relief)",
+    "house_positions.md HP19 (BADR 18% from 6 April 2026; 24% standard higher-rate CGT; two-year trading ownership condition)",
+    "house_positions.md HP21 and HP22 (CQC registration mandatory before trading; financial viability statement on CQC's template)",
+    "house_positions.md HP28 (dividend rates 10.75%, 35.75%, 39.35% from 6 April 2026)",
+    "house_positions.md HP5, HP6 and HP10 (sleep-in Mencap position, inter-call travel as working time, holiday accrual on hours worked)",
+    "Standard VAT rate of 20% on the franchisor's supply of services: https://www.gov.uk/vat-rates"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "self-employed-carers-and-personal-assistants",
+  "title": "Self-Employed Carers and Personal Assistants",
+  "headline": "Accountants for self-employed carers, personal assistants and support workers",
+  "metaTitle": "Accountants for Self-Employed Carers and Care PAs",
+  "metaDescription": "For self-employed carers, personal assistants and support workers: CQC registration, why your fees are rarely VAT exempt, expenses, sole trader or company.",
+  "intro": "You are paid by the person you support, by their family through a direct payment, or through a platform. Three questions arrive at once: sole trader or limited company, whether you charge VAT, and whether CQC registration applies to you. The registration answer is normally no. A carer engaged directly by the individual or a related third party, with no agency in the middle and working under that person's direction, is carved out of the regulated activity of personal care. That carve-out then costs you on VAT, because the welfare exemption belongs to charities, public bodies and state-regulated providers. Your fees are ordinary taxable turnover counting towards the £90,000 threshold, even though the work looks identical to care an exempt agency supplies. Incorporating is settled separately, by your profit and by who pays you.",
+  "stats": [
+    { "value": "£90,000", "label": "VAT registration threshold, measured on taxable turnover over any rolling 12 months" },
+    { "value": "£50,000", "label": "Making Tax Digital for Income Tax threshold from 6 April 2026, falling to £30,000 a year later" },
+    { "value": "55p", "label": "Approved mileage rate for the first 10,000 business miles from 6 April 2026" },
+    { "value": "10.75%", "label": "Basic rate dividend tax from 6 April 2026, above the £500 dividend allowance" }
+  ],
+  "challenges": [
+    {
+      "title": "Sitting outside CQC registration is not automatically the easy option",
+      "body": "Schedule 1 to the Health and Social Care Act 2008 (Regulated Activities) Regulations 2014 makes personal care a regulated activity, then carves out a carer engaged by an individual or a related third party, with no employment agency involved, working wholly under that person's direction and control. A solo personal assistant paid from a direct payment normally sits inside it. The carve-out stops holding the moment you send or employ another carer, or set the terms yourself rather than working under the client's direction."
+    },
+    {
+      "title": "The care VAT exemption is one you probably cannot use",
+      "body": "HMRC exempts welfare services only when a charity, a public body or a state-regulated provider supplies them. An unregistered individual is none of those, so your fees are standard-rated and count in full towards the rolling £90,000 threshold. Most personal assistants never approach it; support workers billing several clients a week get closer than they expect. Our note on <a href=\"/blog/vat-and-welfare-exemption/care-home-vat-exemption-edge-cases\">VAT exemption edge cases</a> covers the registered side."
+    },
+    {
+      "title": "HMRC may see an employee where your contract says self-employed",
+      "body": "Status is decided by substance, not by the label on the contract. Engagement through an agency rather than by the individual raises the risk of a challenge, and back-dated PAYE usually lands on the engager."
+    },
+    {
+      "title": "Expenses are small, frequent and easy to lose",
+      "body": "Mileage between clients, DBS renewals, training, PPE, laundering workwear, part of your phone bill and indemnity cover are the recurring items. Mileage is usually the largest: 55p per mile for the first 10,000 business miles from 6 April 2026, 25p after that. Journeys between two clients count; home to the first call does not. Without a log kept as you drive, most of it gets guessed at in January."
+    },
+    {
+      "title": "A company costs something every year, so the numbers have to justify it",
+      "body": "Incorporating brings accounts, a corporation tax return, a confirmation statement, payroll if you take a salary, and a public record of your filings. Profits to £50,000 are taxed at 19%, dividends above the £500 allowance at 10.75% for a basic rate taxpayer from 6 April 2026. Below a certain profit, filing costs eat the saving. Staying a sole trader has its own timetable: the <a href=\"/blog/care-home-accounts-and-funding/mtd-it-care-owner-operators\">Making Tax Digital guide</a> has it."
+    }
+  ],
+  "howWeHelp": [
+    {
+      "title": "A structure comparison built on your own figures",
+      "body": "A specialist reviews last year's income and expenses, or your forecast if you have just started, and models sole trader against limited company on 2026/27 rates: corporation tax at 19% to £50,000, an efficient salary, dividends at 10.75% or 35.75%. The output is the profit at which incorporating pays."
+    },
+    {
+      "title": "A VAT position stated in writing",
+      "body": "Which of your income is taxable, and which, if any, is genuinely exempt, is worked out first, then the rolling 12-month total is tracked against the £90,000 threshold so registration never arrives by surprise. Private clients, direct-payment families and agency shifts are each tested separately."
+    },
+    {
+      "title": "Registration with HMRC and the records that follow",
+      "body": "Registering as self-employed, obtaining a Unique Taxpayer Reference, setting up an expense record that captures mileage as it happens, and preparing the Self Assessment return from it. Where the Making Tax Digital thresholds catch you, compatible software is set up and the quarterly updates are prepared."
+    },
+    {
+      "title": "Company filings, and the step up to an agency",
+      "body": "If you incorporate: the right SIC code, payroll, annual accounts, the corporation tax return and dividend paperwork that stands up later. Take on a second worker and you are closer to a domiciliary service, with registration, travel-time minimum wage and holiday pay in scope: see <a href=\"/for/domiciliary-care\">domiciliary care</a> and <a href=\"/services/start-a-domiciliary-care-agency\">start a domiciliary care agency</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I need to register with CQC as a self-employed personal assistant?",
+      "answer": "Usually not. The regulations exclude a carer engaged by the individual, or by a related third party acting for them, where no employment agency is involved and you work wholly under that person's direction and control. Registration bites once you stop fitting that description, for example by employing another carer or working in partnership with one. Carrying on a regulated activity unregistered is a criminal offence, so confirm the test."
+    },
+    {
+      "question": "Is my care work VAT exempt?",
+      "answer": "Almost certainly not. The welfare exemption covers supplies by charities, public bodies and state-regulated providers such as those registered with CQC. An unregistered individual falls outside all three, so what you invoice is standard-rated turnover counting towards the £90,000 threshold over any rolling 12 months. The exemption most providers experience as a cost, because it blocks VAT recovery on what they buy, is one you cannot claim."
+    },
+    {
+      "question": "Should I set up a limited company as a care PA?",
+      "answer": "It depends on profit, not on how the work feels. A company costs more each year in accounts, filings and payroll, and puts your figures on a public register. It pays once profits are high enough that 19% corporation tax plus dividends beats income tax and Class 4 National Insurance on the whole amount. Check first whether the scheme or platform paying you will contract with a company."
+    },
+    {
+      "question": "What expenses can I claim as a self-employed carer?",
+      "answer": "Costs incurred wholly and exclusively for the work: mileage between clients at 55p per mile for the first 10,000 business miles from 6 April 2026 and 25p after that, DBS checks, training, PPE, laundering workwear, indemnity insurance, the business share of your phone, and accountancy fees. Travel from home to your first call and back from the last is ordinary commuting, not an allowable cost."
+    },
+    {
+      "question": "Am I really self-employed if I work set shifts for one agency?",
+      "answer": "Possibly not. Status turns on the reality of the arrangement: who controls when and where you work, whether you can genuinely send a substitute, who supplies equipment, and whether you carry financial risk. Set rotas, no substitution and working under someone else's direction all point towards employment or worker status. Liability for unpaid PAYE usually sits with the engager, but reclassification changes your own position too."
+    },
+    {
+      "question": "Does any of this change in Scotland, Wales or Northern Ireland?",
+      "answer": "The tax does not. VAT, National Insurance, mileage rates and Making Tax Digital are UK-wide, although Scottish taxpayers pay Scottish income tax rates on earnings. Regulation does change. CQC covers England only; the Care Inspectorate in Scotland, Care Inspectorate Wales and the RQIA in Northern Ireland run their own registration regimes, each treating directly engaged personal assistants in its own way."
+    }
+  ],
+  "sources": [
+    "house_positions.md HP3 (£90,000 VAT registration threshold, taxable turnover only) - https://www.gov.uk/vat-registration/when-to-register",
+    "house_positions.md HP1 and VAT Notice 701/2, re-checked 2026-09-27: exempt welfare supplies are only those made by charities, public bodies or state-regulated private welfare institutions or agencies, so an unregistered individual carer is standard-rated - https://www.gov.uk/guidance/welfare-services-and-goods-notice-7012",
+    "house_positions.md HP9 (carers engaged as self-employed are often employees or workers in substance) - https://www.gov.uk/employment-status/employee",
+    "house_positions.md HP8 (AMAP 55p per mile for the first 10,000 miles from 6 April 2026; 25p thereafter per the same gov.uk rates page) - https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+    "house_positions.md HP18 (corporation tax 19% small profits rate to £50,000) - https://www.gov.uk/corporation-tax-rates",
+    "house_positions.md HP28 (dividend rates 10.75%, 35.75%, 39.35% from 6 April 2026; £500 allowance) - https://www.gov.uk/tax-on-dividends",
+    "house_positions.md HP27 (MTD for Income Tax: £50,000 from 6 April 2026, £30,000 from 6 April 2027, £20,000 from 6 April 2028) - https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+    "house_positions.md HP21 (registration required before carrying on a regulated activity; trading unregistered is a criminal offence) - https://www.cqc.org.uk/guidance-providers/registration",
+    "CQC carve-out for directly engaged carers, verified 2026-09-27: Health and Social Care Act 2008 (Regulated Activities) Regulations 2014, Schedule 1 paragraph 1(3)(c) excludes the services of a carer employed by an individual or related third party, without the involvement of an employment agency or employment business, working wholly under that person's direction and control - https://www.legislation.gov.uk/uksi/2014/2936/schedule/1/made",
+    "Devolved regulators named in the last FAQ, verified 2026-09-27: Care Inspectorate (Scotland), Care Inspectorate Wales, RQIA (Northern Ireland) each run their own registration regimes; CQC covers England only - https://www.cqc.org.uk/guidance-regulation/providers/registration/scope-registration",
+    "CQC guidance that a directly engaged personal assistant who is self-employed still falls within the Schedule 1 para 1(3)(c) exception, and that registration is required once the carer employs or works in partnership with another carer, verified 2026-09-27 - https://www.cqc.org.uk/guidance-providers/registration/personal-care-ongoing-role-introductory-agencies-individual-care",
+    "Internal links verified on disk 2026-09-27: care/web/src/data/care-hubs.ts (domiciliary-care), care/web/src/data/care-services.ts (start-a-domiciliary-care-agency), care/web/content/blog/care-home-vat-exemption-edge-cases.md (category VAT and Welfare Exemption), care/web/content/blog/mtd-it-care-owner-operators.md (category Care Home Accounts and Funding)"
+  ]
+}
