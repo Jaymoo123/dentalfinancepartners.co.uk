@@ -425,7 +425,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Annual allowance management",
         body:
-          "We track your pension annual allowance position each tax year, model whether carry-forward from previous years is available, and advise on managing pension contributions to avoid unnecessary annual allowance charges.",
+          "We track your pension annual allowance position each tax year, model whether carry-forward from previous years is available, and set out how to manage pension contributions to avoid unnecessary annual allowance charges.",
       },
       {
         title: "Self assessment for doctors",
@@ -470,7 +470,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "International working and double taxation",
         body:
-          "Many oil and gas contractors work across multiple jurisdictions, including the North Sea (UK waters), Norway, West Africa, Middle East and Asia Pacific. Whether your income is taxable in the UK, in the host country, or split between them depends on the double taxation agreement in place and your residency position. Getting this wrong creates significant liability. We advise on the UK side and refer to appropriate international specialists where needed.",
+          "Many oil and gas contractors work across multiple jurisdictions, including the North Sea (UK waters), Norway, West Africa, Middle East and Asia Pacific. Whether your income is taxable in the UK, in the host country, or split between them depends on the double taxation agreement in place and your residency position. Getting this wrong creates significant liability. We handle the UK side and refer to appropriate international specialists where needed.",
       },
       {
         title: "Travel and subsistence for offshore rotations",
@@ -504,7 +504,7 @@ export const contractorTypes: ContractorType[] = [
       {
         question: "I work on projects in multiple countries. How does UK tax work?",
         answer:
-          "If you are UK resident, your worldwide income is generally subject to UK tax, with relief available for foreign tax paid under double taxation agreements. The specifics depend on which country you are working in, how long you spend there, and whether there is a relevant treaty. We handle the UK filings and advise on the treaty position, referring to local advisers in the host country where needed.",
+          "If you are UK resident, your worldwide income is generally subject to UK tax, with relief available for foreign tax paid under double taxation agreements. The specifics depend on which country you are working in, how long you spend there, and whether there is a relevant treaty. We handle the UK filings and the treaty position, referring to local advisers in the host country where needed.",
       },
     ],
   },
