@@ -114,6 +114,9 @@ Most residential care homes are assessed at rateable values well above £15,000 
 
 ---
 
+
+*Addendum 2026-09-27 (Wave 1 QA).* BADR lifetime limit is **£1,000,000** per individual, **TCGA 1992 s.169N(4)**, rate 18% at s.169N(3) from 6 April 2026. CGT annual exempt amount **£3,000** for 2026/27 (gov.uk/capital-gains-tax/rates). The "BADR saved £140,000 on £1m at 10%" line only holds against the 24% standard rate (from 30 October 2024); for most of the 10% era the standard rate was 20%, so £100,000.
+
 ## F. CQC registration and the regulator's financial paperwork
 
 **21. CQC registration is mandatory before providing regulated activities; the application includes a financial leg.**
@@ -129,6 +132,9 @@ The Care Quality Commission monitors the financial health of the largest care pr
 ,  https://www.cqc.org.uk/guidance-providers/market-oversight-corporate-providers/market-oversight-adult-social-care (verified 2026-07-12: market oversight regime confirmed; financial distress monitoring confirmed; Care Act 2014 basis confirmed)
 
 ---
+
+
+*Addendum 2026-09-27 (Ofsted-regulated services, Wave 1 QA).* Ofsted registration makes a provider **state-regulated** for the welfare exemption exactly as CQC registration does (VAT Notice 701/2 s.3.3.1 lists Ofsted), and only from approval, not while the application is pending. Children's homes: Children's Homes (England) Regulations 2015 **reg 47** (financial viability, certified accounts, bank reference, liability insurance), registered manager experience **reg 28**, offence of unregistered operation **Care Standards Act 2000 s.11**. Supported accommodation (16 and 17 year olds, no personal care): Supported Accommodation (England) Regulations 2023, SI 2023/416, in force 28 April 2023, registration provisions 28 October 2023, same s.11 offence; the "complete application accepted" route was a 2023 transitional concession, not the standing test.
 
 ## G. Funding mix: who actually pays the fees
 

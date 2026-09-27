@@ -2,6 +2,7 @@
 title: "Can Charities Claim Back VAT? Recovery Rules Explained"
 slug: "can-charities-claim-back-vat"
 date: "2026-07-14"
+updatedDate: "2026-09-27"
 author: ""
 category: "Charity VAT"
 metaTitle: "Can Charities Claim Back VAT? Recovery Rules Explained"
@@ -119,7 +120,7 @@ faqs:
 <h2>Special cases worth knowing</h2>
 
 <h3>Zero-rated reliefs on purchases (not the same as recovering input VAT)</h3>
-<p>A separate set of charity-specific reliefs means that certain purchases are <em>supplied to charities</em> at zero rate, which eliminates the input VAT entirely rather than requiring recovery. These include advertising supplied to a charity and, subject to eligibility declarations, equipment for disabled persons and some medical equipment. The 5% reduced rate applies to fuel and power for non-business or residential use. These reliefs are about what suppliers charge; they are not the same as the charity reclaiming input VAT. The <a href="/guides/charity-vat-guide">charity VAT guide</a> covers each relief in detail.</p>
+<p>A separate set of charity-specific reliefs means that certain purchases are <em>supplied to charities</em> at zero rate, which eliminates the input VAT entirely rather than requiring recovery. These include advertising supplied to a charity and, subject to eligibility declarations, equipment for disabled persons and some medical equipment. The 5% reduced rate applies to fuel and power for non-business or residential use, with one temporary exception: electricity supplied in Great Britain for that qualifying use is zero-rated from 1 October 2026 to 31 March 2027, after which the 5% rate returns on 1 April 2027. Gas and Northern Ireland electricity stay at 5% throughout. These reliefs are about what suppliers charge; they are not the same as the charity reclaiming input VAT. The <a href="/guides/charity-vat-guide">charity VAT guide</a> covers each relief in detail.</p>
 
 <h3>Qualifying fundraising events</h3>
 <p>Up to 15 events of the same kind per financial year can be exempt from VAT under <a href="https://www.gov.uk/guidance/how-vat-affects-charities-notice-7011">Notice 701/1</a>. Exemption means the charity charges no output VAT but also cannot recover input VAT on costs directly related to those events.</p>

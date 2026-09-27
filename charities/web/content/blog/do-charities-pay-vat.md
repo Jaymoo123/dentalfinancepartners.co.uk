@@ -2,6 +2,7 @@
 title: "Do Charities Pay VAT? The Real Rules, Reliefs and Traps"
 slug: "do-charities-pay-vat"
 date: "2026-07-14"
+updatedDate: "2026-09-27"
 author: ""
 category: "Charity VAT"
 metaTitle: "Do Charities Pay VAT? Rules, Reliefs and Traps Explained"
@@ -24,7 +25,7 @@ faqs:
   - question: "Do charities pay VAT on advertising?"
     answer: "No, provided the advertising is supplied to a charity. Advertising supplied to a charity is zero-rated, meaning the supplier charges 0% VAT and the charity pays none on that service."
   - question: "Do charities pay VAT on gas and electricity?"
-    answer: "Charities pay a 5% reduced rate (rather than 20% standard rate) on fuel and power used for non-business or residential purposes, provided they hold and provide an eligibility declaration."
+    answer: "Charities pay a 5% reduced rate (rather than 20% standard rate) on fuel and power used for non-business or residential purposes, provided they hold and provide an eligibility declaration. Electricity supplied in Great Britain for that qualifying use is temporarily zero-rated from 1 October 2026 to 31 March 2027; gas stays at 5%, Northern Ireland electricity stays at 5%, and the 5% rate returns on 1 April 2027."
   - question: "Are charity fundraising events VAT exempt?"
     answer: "Yes, provided the event qualifies as a one-off fundraising event under Notice 701/1 and the charity holds no more than 15 events of the same kind per financial year at the same location."
   - question: "Do charities pay VAT on rent?"
@@ -72,7 +73,7 @@ faqs:
     </tr>
     <tr>
       <td>Fuel and power for non-business/residential use</td>
-      <td>5% reduced rate</td>
+      <td>5% reduced rate (0% on Great Britain electricity from 1 October 2026 to 31 March 2027)</td>
       <td>Charity provides an eligibility declaration stating the qualifying use</td>
     </tr>
     <tr>
@@ -86,6 +87,8 @@ faqs:
 <p>The zero-rating on advertising is particularly valuable for charities that spend significantly on digital or print advertising. Provided the supplier knows the customer is a charity and the supply qualifies, the invoice should carry no VAT.</p>
 
 <p>The 5% reduced rate on fuel and power applies where the fuel or power is for a qualifying use (broadly, non-business or residential use). The charity must provide a written eligibility declaration to the supplier before the first supply or as soon as the qualifying use begins. Without the declaration, the supplier charges the standard 20% rate.</p>
+
+<p>There is a temporary exception on electricity. For supplies in Great Britain between 1 October 2026 and 31 March 2027, electricity for qualifying use, which includes use by a charity otherwise than in the course or furtherance of a business, is zero-rated rather than reduced-rated. Gas and other fuel stay at 5%, and electricity in Northern Ireland stays at 5%. The 5% reduced rate returns on Great Britain electricity from 1 April 2027, so budget on 5% for anything beyond that date.</p>
 
 <p>The brief note on other reliefs (for items such as construction services or medical equipment) is that they exist in specific circumstances, but this post covers only the reliefs listed above. Before claiming a relief not listed here, verify the conditions in Notice 701/1 or take advice.</p>
 

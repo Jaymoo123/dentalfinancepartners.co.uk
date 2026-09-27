@@ -106,13 +106,16 @@ Donors paying above basic rate reclaim the difference between their rate and bas
 Charities follow normal VAT registration rules (registration compulsory above the £90,000 taxable turnover threshold). Reliefs exist on specific purchases: zero-rated advertising supplied to a charity, 5% reduced rate on fuel and power for non-business/residential use, and others on eligibility declaration. One-off qualifying fundraising events are exempt, limited to 15 events of the same kind per financial year (Notice 701/1). Business/non-business apportionment and partial exemption are the recurring pain points; never imply a charity "doesn't pay VAT".
 — https://www.gov.uk/vat-charities and https://www.gov.uk/guidance/how-vat-affects-charities-notice-7011 (both verified 2026-07-11 incl. the 15-event limit and £90,000 threshold)
 
+*Addendum 2026-09-27 (fuel and power, temporary zero rate).* The Value Added Tax (Supplies of Domestic Electricity) Order 2026, SI 2026/987, inserts a new Group 24 into VATA 1994 Sch 8. It zero-rates supplies in Great Britain of electricity for qualifying use, qualifying use being domestic use or use by a charity otherwise than in the course or furtherance of a business, for the period 1 October 2026 to 31 March 2027. The measure was announced on 21 July 2026. Gas and all other fuel stay at the 5% reduced rate UK-wide, and electricity in Northern Ireland stays at 5%. The 5% reduced rate returns on GB electricity from 1 April 2027, so any budgeting or copy covering 2027/28 should assume 5%, not 0%.
+— https://www.legislation.gov.uk/uksi/2026/987/article/3/made , https://www.gov.uk/guidance/vat-on-fuel-and-power-notice-70119 and https://www.gov.uk/government/publications/temporary-zero-rate-of-vat-for-domestic-electricity-in-great-britain/temporary-zero-rate-of-vat-in-great-britain-for-domestic-electricity (all verified 2026-09-27)
+
 **21. Business rates — 80% mandatory relief, discretionary top-up to 100%.**
 Charitable rate relief gives up to 80% off the business rates bill on property used wholly or mainly for charitable purposes; the local council may top up the rest as discretionary relief. Cannot be combined with small business rate relief.
 — https://www.gov.uk/apply-for-business-rate-relief/charitable-rate-relief (verified 2026-07-11: "up to 80% off" + discretionary top-up)
 
 ## E. CICs and structures
 
-**22. A CIC is not a charity.**
+**22. A CIC is not a charity.** *Primary-law anchor (added 2026-09-27): Companies (Audit, Investigations and Community Enterprise) Act 2004 s.26(3) treats a CIC established for charitable purposes as not being so established, which is why it fails the FA 2010 Sch 6 para 1 "charitable purposes only" limb. The Sch 6 registration condition is not the reason (a CIC is not required to register under Charities Act 2011 s.29).*
 CICs get no charity tax reliefs (no Gift Aid on income, no charity rate relief) and pay corporation tax normally. They are regulated by the Office of the Regulator of Community Interest Companies (based at Companies House), not the Charity Commission.
 — https://www.gov.uk/government/organisations/office-of-the-regulator-of-community-interest-companies (verified 2026-07-11)
 
