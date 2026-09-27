@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 
 export const metadata: Metadata = {
@@ -61,6 +63,8 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
+
       {/* Who we are. Two columns rather than a clamped prose block: §0.1's
           answer to "prose reads badly at full width" is to put something useful
           beside it, never `max-w-3xl`. */}
@@ -69,7 +73,7 @@ export default function AboutPage() {
           <div className="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
             <div className="min-w-0 space-y-6 text-base leading-relaxed text-neutral-600 sm:text-lg">
               <p>
-                We are specialist accountants for UK contractors and limited company directors. The work we take on involves a PSC, or someone considering one. That focus means we understand the financial specifics of contracting in a way that a general practice does not.
+                This site covers UK contractors and limited company directors only. The work we take on involves a PSC, or someone considering one. That focus means we understand the financial specifics of contracting in a way that a general practice does not.
               </p>
               <p>
                 IR35 is the clearest example. The rules are specific, the rules changed in April 2021, and getting them wrong is expensive. A generalist accountant can read the guidance. We work with those rules as they are applied in practice, contract by contract, so we know where the risks and opportunities actually are.

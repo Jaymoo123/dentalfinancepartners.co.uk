@@ -26,9 +26,11 @@ import { contractorTypes } from "@/data/contractor-types";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
+import { niche } from "@/config/niche-loader";
 
 export const metadata: Metadata = {
   title: "Specialist Contractor Accountants | IR35 Advice UK",
@@ -569,6 +571,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {niche.entity ? <EntityBlock {...niche.entity} className="bg-white py-12 sm:py-16 lg:py-20" /> : null}
 
       {/* ASK. Closing panel, `contained` so no dark band touches the dark
           footer; `ground="slate"` alternates against the white section above.

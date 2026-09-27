@@ -16,9 +16,11 @@ import {
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { buildServicesPageJsonLd } from "@/lib/schema";
 
@@ -201,6 +203,8 @@ export default function ServicesPage() {
           </p>
         </div>
       </section>
+
+      {niche.entity ? <EntityBlock {...niche.entity} className="bg-white py-12 sm:py-16 lg:py-20" /> : null}
 
       {/* ASK. `contained` keeps a dark band off the dark footer; `ground="slate"`
           alternates against the white section above. `proofPoints` intentionally
