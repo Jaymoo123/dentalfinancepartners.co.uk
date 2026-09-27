@@ -3,6 +3,7 @@ title: "Inside IR35: keep the company, close it, or go umbrella"
 slug: inside-ir35-keep-close-or-umbrella
 date: '2026-09-27'
 dateModified: '2026-09-27'
+updatedDate: '2026-09-27'
 author: Contractor Tax Accountants Editorial Team
 category: IR35 Status
 canonical: "https://www.contractortaxaccountants.co.uk/blog/ir35-status/inside-ir35-keep-close-or-umbrella"
@@ -48,7 +49,7 @@ faqs:
 
 <h2>When does closing the company win?</h2>
 
-<p>When the reserves are large, the inside position is permanent and you are not going to carry on the same trade. Reserves up to £25,000 can be distributed as capital on a voluntary strike-off. Above that, a Members' Voluntary Liquidation is needed for capital treatment, with a licensed liquidator appointed, and gains can fall within Business Asset Disposal Relief at 18% for disposals on or after 6 April 2026, up to the £1m lifetime limit. The condition that catches contractors is the winding-up TAAR: where you held at least 5%, the company was close, you continue or become involved in the same or a similar trade within two years of the distribution, and a main purpose was to reduce income tax, the distribution is taxed as an income dividend at 10.75%, 35.75% or 39.35%. Moving to an umbrella in the same field is exactly the pattern that condition was written for. Sequencing, and strike-off against MVL, are covered in <a href="/blog/limited-company-tax/closing-contractor-limited-company">closing a contractor limited company</a>.</p>
+<p>When the reserves are large, the inside position is permanent and you are not going to carry on the same trade. Reserves up to £25,000 can be distributed as capital on a voluntary strike-off. Above that, a Members' Voluntary Liquidation is needed for capital treatment, with a licensed liquidator appointed, and gains can fall within Business Asset Disposal Relief at 18% for disposals on or after 6 April 2026, up to the £1m lifetime limit. The condition that catches contractors is the winding-up TAAR: carry on the same or a similar trade within two years of the distribution and the money can be taxed as an income dividend at 10.75%, 35.75% or 39.35% instead of as a capital gain. Moving to an umbrella in the same field is exactly the pattern that condition was written for. The four conditions, the clock and the records to keep are in <a href="/blog/limited-company-tax/closing-contractor-limited-company">closing a contractor limited company</a>, and that test comes before the choice of strike-off or MVL.</p>
 
 <h2>Does an umbrella beat keeping the company?</h2>
 

@@ -3,8 +3,8 @@ title: Pension Carry Forward for Contractors - The Three-Year Rule and High-Prof
 slug: contractor-pension-carry-forward
 primaryKeyword: "contractor pension calculator"
 date: '2026-06-12'
-updatedDate: '2026-06-12'
-dateModified: "2026-09-27"
+updatedDate: '2026-09-27'
+dateModified: '2026-09-27'
 generator: claude-opus
 author: Contractor Tax Accountants Editorial Team
 image: "https://images.pexels.com/photos/7545279/pexels-photo-7545279.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"

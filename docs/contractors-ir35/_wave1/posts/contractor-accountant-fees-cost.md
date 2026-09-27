@@ -1,5 +1,5 @@
 ---
-title: "What Should a Contractor Accountant Cost in 2026/27?"
+title: "What Should a Contractor Accountant Fee Cover in 2026/27?"
 slug: contractor-accountant-fees-cost
 date: '2026-06-12'
 updatedDate: '2026-06-12'
@@ -17,7 +17,7 @@ category: Contractor Accounting Basics
 canonical: "https://www.contractortaxaccountants.co.uk/blog/contractor-accounting-basics/contractor-accountant-fees-cost"
 metaTitle: "Contractor Accountant Fees: What a Fee Should Buy"
 metaDescription: "Compare contractor accountant fees properly: the package shapes, what sits inside or outside a fee, and the questions to ask before you sign for 2026/27."
-h1: "What Should a Contractor Accountant Cost in 2026/27?"
+h1: "What Should a Contractor Accountant Fee Cover in 2026/27?"
 summary: "Judge a contractor accountant fee by the scope behind it, not by the monthly figure. Decide which package shape fits how you work, then confirm in writing whether year-end accounts, payroll, VAT, your self assessment, status support and software sit inside the fee or outside it. Scope gaps, not headline numbers, decide the real cost."
 keyTakeaways:
   - "Fee levels move with scope, so two quotes are only comparable once you hold a written list of what each one includes and excludes."
@@ -29,13 +29,13 @@ sourcesVerifiedAt: '2026-09-27'
 schema: ''
 faqs:
 - question: "How much should a contractor accountant cost per month?"
-  answer: "There is no single figure, and this site does not publish one. Fees move with the scope of the work, whether your engagements are inside or outside IR35, whether VAT and payroll are running, and whether software sits inside the fee. The useful comparison is scope against scope: send two firms the same written list of items you need covered, then compare the totals including anything either of them charges as an extra."
+  answer: "There is no single figure to quote. Fees move with the scope of the work, whether your engagements are inside or outside IR35, whether VAT and payroll are running, and whether software sits inside the fee. The useful comparison is scope against scope: send two firms the same written list of items you need covered, then compare the totals including anything either of them charges as an extra."
 - question: "What should a monthly contractor accountancy package normally include?"
   answer: "For a limited company contractor, a full package normally covers statutory year-end accounts, the CT600 corporation tax return, Companies House filings and the confirmation statement, RTI payroll for the director's salary, dividend paperwork, VAT returns where you are registered, and the director's self assessment return. Registered office provision, bookkeeping software and status work are the items most likely to sit outside the fee, so confirm each one in writing."
 - question: "Is a fixed monthly fee better than hourly billing?"
   answer: "A fixed monthly fee suits recurring compliance work because the volume is predictable and you can budget for it. Hourly or project pricing usually fits one-off events better: incorporation, a company purchase, an HMRC enquiry, or a members' voluntary liquidation. Many contractors end up with both, so ask which events fall outside the monthly fee and how those are quoted before you sign anything."
 - question: "Does a contractor accountant handle MTD for Income Tax?"
-  answer: "Only if you have qualifying income that brings you into it. Making Tax Digital for Income Tax applies to sole traders and landlords with qualifying income above £50,000 from 6 April 2026, £30,000 from 6 April 2027 and £20,000 from 6 April 2028. A contractor taking salary and dividends from a personal service company is generally outside it, because company profits are filed under corporation tax. If you also have freelance or rental income, confirm quarterly updates sit inside the fee."
+  answer: "Only where you hold income that brings you into it, which for most limited company contractors means no. The regime reaches sole trader and landlord income, and the qualifying income entry point is £50,000 from 6 April 2026, then £30,000 a year later and £20,000 the year after that. Salary and dividends from a personal service company are outside it, because those profits are filed under corporation tax. Where you do have freelance or rental income alongside the company, ask whether the quarterly updates and the final declaration sit inside the monthly fee or are billed on top."
 - question: "Should IR35 status work sit inside the fee?"
   answer: "Ask, because practice varies. Some firms include a general view on how an engagement looks and help you gather working practices evidence, while a formal contract review or a challenge to a Status Determination Statement is quoted separately. Neither approach is wrong, but a fee that includes no status support at all is not comparable with one that does. Under Chapter 10 the client issues the determination and you have a disagreement route if it looks wrong."
 - question: "Are accountancy fees a deductible company expense?"
@@ -44,7 +44,7 @@ faqs:
 
 <p>Decide the scope first and the fee second. A contractor accountant fee only means something next to the list of work it covers, so the real decision is which package shape fits how you work, then whether the quote in front of you carries that shape without extras surfacing later. Two quotes that look far apart usually differ on four things: the director's self assessment return, VAT returns, software licences and IR35 status work.</p>
 
-<p>This page previously carried a monthly market range. It has been removed because it was an editorial estimate with no published source behind it, and this site does not quote its own prices or those of the partner firms it works with. What follows is the part that holds whatever the number turns out to be.</p>
+<p>No single monthly figure answers the question, because the obligations behind a fee differ from one contractor to the next. A company registered for VAT once turnover passes £90,000, running RTI payroll and filing a CT600, is buying a different year of work from a company with one client and no VAT. Price the list, then read the quote against it.</p>
 
 <h2>Which package shape fits your situation?</h2>
 
@@ -64,9 +64,9 @@ faqs:
 
 <p>If you are earlier in the decision and still comparing a contractor specialist with a general practice firm, <a href="/blog/contractor-accounting-basics/how-to-choose-contractor-accountant">how to choose a contractor accountant</a> covers the selection criteria. This page assumes you have a shortlist and are now reading quotes.</p>
 
-<h2>What should a fee buy at 2026/27 obligations?</h2>
+<h2>What should the fee cover for 2026/27?</h2>
 
-<p>It should buy every filing your structure creates in the year, delivered on time, with someone accountable for each one. For a personal service company that means statutory accounts and the corporation tax return, the confirmation statement and Companies House filings, RTI payroll each time the director is paid, dividend vouchers and board minutes that exist before the money moves, VAT returns where you are registered (compulsory once turnover passes the £90,000 threshold), and the director's self assessment return covering salary and dividends.</p>
+<p>It should buy every filing your structure creates in the year, delivered on time, with someone accountable for each one. For a personal service company that means statutory accounts and the corporation tax return, the confirmation statement and Companies House filings, RTI payroll each time the director is paid, dividend vouchers and board minutes that exist before the money moves, VAT returns where you are registered, and the director's self assessment return covering salary and dividends.</p>
 
 <p>Two 2026/27 items are worth naming in the quote. Dividend rates rose on 6 April 2026 to 10.75% ordinary and 35.75% upper under Finance Act 2026 s.4, so any salary and dividend planning has to run on current rates rather than last year's, which <a href="/blog/limited-company-tax/director-salary-dividend-split-guide">the director salary and dividend split guide</a> works through. Making Tax Digital for Income Tax started on 6 April 2026 for sole traders and landlords with qualifying income above £50,000, and it does not apply to company profits or to a director's dividends, so a contractor working through a company is generally outside it. Check whether a quote assumes otherwise, because <a href="/blog/mtd-and-compliance/do-i-need-an-accountant-for-mtd">whether you need an accountant for MTD</a> turns entirely on which income you have.</p>
 

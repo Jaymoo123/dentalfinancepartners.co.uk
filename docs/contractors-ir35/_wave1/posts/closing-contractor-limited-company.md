@@ -26,7 +26,7 @@ keyTakeaways:
   - "Going umbrella or onto client payroll for the same skills is a same or similar activity, so changing the legal wrapper does not take you outside Condition C."
   - "Where all four conditions are met the distribution is taxed as a dividend at 10.75%, 35.75% or 39.35% for 2026/27 and Business Asset Disposal Relief at 18% is irrelevant."
   - "The two year clock runs from the date of each distribution, not from dissolution, so a final instalment restarts the exposure window."
-  - "Up to £25,000 a voluntary strike-off gives capital treatment without a liquidator; above it an MVL is needed, and the TAAR applies to both."
+  - "Up to £25,000 a voluntary strike-off gives capital treatment without a liquidator; above it an MVL is needed, and the TAAR is written for the winding up route, with the transactions in securities rules covering a repayment of share capital on a strike-off."
 faqs:
   - question: "Does the TAAR apply if I go umbrella after closing my company?"
     answer: "It can, and this is the most common way contractors walk into it. Condition C asks whether a trade or activity the same as, or similar to, the one the company carried on is being carried on within two years of the distribution. It looks at the activity, not the legal wrapper. Providing the same skills to the same market through an umbrella, through agency PAYE or on a client's own payroll is capable of meeting Condition C. The legislation also reaches a partnership you join, a company in which you hold at least 5%, and a person connected with you, so putting the work through a spouse's company does not sidestep it."
@@ -39,7 +39,7 @@ faqs:
   - question: "Can I rely on retiring, and then change my mind?"
     answer: "Condition C is tested on what happens, not on what was intended at the time. A genuine retirement or a real change of field that later reverses inside the two years still puts the distribution in scope, and HMRC can open an enquiry within the normal time limits. Where the plan changes, the position should be reviewed before the new engagement starts rather than at the next return."
   - question: "Is a strike-off safer than an MVL for the TAAR?"
-    answer: "No. The route decides how much can come out as capital and whether a liquidator is needed. It does not decide the TAAR. A voluntary strike-off distributing £25,000 or less is still a distribution in respect of share capital in a winding up for these purposes, and a contractor who carries on the same trade within two years is in the same position on Condition C. Choose the route on reserve size and then test the TAAR separately."
+    answer: "Not in any way worth relying on. Section 396B applies to a distribution in respect of share capital in the winding up of a company, and a voluntary strike-off under section 1003 of the Companies Act 2006 is a dissolution rather than a winding up, so the TAAR does not reach it on its own terms. That is not a safe harbour. The transactions in securities rules in section 684 of ITA 2007 list a repayment of share capital as a transaction in securities, and HMRC can counteract an income tax advantage under them on the same facts. Choose the route on reserve size, then test the anti-avoidance position separately."
 ---
 
 <p>Yes, closing your contractor company and carrying on with the same work within two years can cost you capital treatment. The winding-up TAAR in section 396B ITTOIA 2005 turns the distribution into an income dividend where four conditions are all met, and for a contractor company the live one is Condition C: within two years of the distribution, the same or a similar trade or activity is carried on by you, by a partnership you belong to, by a company in which you hold at least 5%, or by someone connected with you. Condition A, a 5% interest immediately before the winding up, and Condition B, that the company was close, are met by almost every personal service company as a matter of fact. So the decision is not really strike-off against liquidation. It is whether you are finished with the trade.</p>
@@ -62,7 +62,7 @@ faqs:
 
 <h2>Strike-off or MVL: does the route change the answer?</h2>
 
-<p>It changes the mechanics and the ceiling, not the TAAR. The £25,000 figure is the limit on distributions that a voluntary strike-off can treat as capital; above it an MVL and a licensed liquidator are needed for capital treatment. The TAAR sits on top of both.</p>
+<p>It changes the mechanics and the ceiling, and it changes which anti-avoidance rule is in point. The £25,000 figure is the limit on distributions that a voluntary strike-off can treat as capital; above it an MVL and a licensed liquidator are needed for capital treatment. Section 396B is written for a distribution in the winding up of a company, so it does not reach a voluntary strike-off, which is a dissolution rather than a winding up. That is not a reason to prefer one route. A repayment of share capital is a transaction in securities under section 684 of ITA 2007, and HMRC can counteract an income tax advantage on the same continuing-trade facts.</p>
 
 <table>
   <thead>
@@ -89,7 +89,12 @@ faqs:
       <td>Yes, if the conditions are met</td>
     </tr>
     <tr>
-      <td>Winding-up TAAR applies</td>
+      <td>Winding-up TAAR (ITTOIA 2005 s.396B) applies</td>
+      <td>No, it is written for a winding up</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Transactions in securities (ITA 2007 s.684) can apply</td>
       <td>Yes</td>
       <td>Yes</td>
     </tr>

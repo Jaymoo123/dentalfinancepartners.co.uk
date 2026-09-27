@@ -29,7 +29,7 @@ faqs:
 - question: "Can I clear the loan before the year end and take it out again afterwards?"
   answer: "Not reliably. Section 464ZA, inserted by Finance Act 2025 with effect from 30 October 2024, matches repayments to new borrowing in two situations. Where repayments of £5,000 or more are made and chargeable payments of £5,000 or more are made within 30 days, the repayment is treated as clearing the new loan rather than the old one. Where £15,000 or more is outstanding immediately before a repayment and arrangements are already in place for replacement borrowing of £5,000 or more, the same matching applies with no 30-day window. The old balance stays chargeable."
 - question: "What is the cleanest way to clear an overdrawn loan account?"
-  answer: "The options are to pay cash back into the company, to declare a dividend if there are distributable reserves, to vote a bonus through payroll, or to have the company formally write the loan off. A dividend is usually the cheapest where reserves exist, because the dividend tax is the only cost. A write-off is the most expensive: it is taxed on you as a distribution and can attract National Insurance as well. A specialist reviews the reserves position before anything is voted, because a dividend declared without distributable profit is unlawful and simply recreates the loan."
+  answer: "The options are to pay cash back into the company, to declare a dividend if there are distributable reserves, to vote a bonus through payroll, or to have the company formally write the loan off. A dividend is usually the cheapest where reserves exist, because the dividend tax is the only cost. A write-off is the most expensive: it is taxed on you as a distribution and can attract National Insurance as well. Check the reserves position before anything is voted, because a dividend declared without distributable profit is unlawful and simply recreates the loan."
 ---
 
 <p>Your company is a separate person from you, and a close company at that. If it pays money out to you that is not salary, a properly declared dividend or a reimbursed business expense, it has lent you the money. Where that loan is still outstanding <strong>nine months and one day after the end of the accounting period</strong>, the company pays a <strong>section 455 charge of 35.75%</strong> on loans made on or after 6 April 2026 (33.75% on loans made before that date). On a £30,000 balance that is £10,725 of company cash sent to HMRC. You get it back under <strong>section 458</strong> once the loan is repaid, but not until nine months and one day after the end of the accounting period in which the repayment happens, which can be two years after the charge was paid.</p>
@@ -84,7 +84,7 @@ faqs:
 </tbody>
 </table>
 
-<p>The company is without £10,725 for two years, and a balance above £10,000 running through 2026/27 and 2027/28 also produces P11D benefit entries and Class 1A National Insurance in both years. Repaying on 30 March 2028 instead of 30 June would have brought the refund forward by a full twelve months.</p>
+<p>The company is without £10,725 for two years, and a balance above £10,000 running on until the repayment also produces P11D benefit entries and Class 1A National Insurance in every tax year it is outstanding. Repaying on 30 March 2028 instead of 30 June would have brought the refund forward by a full twelve months.</p>
 
 <h2>What should you do if the account is already overdrawn?</h2>
 
