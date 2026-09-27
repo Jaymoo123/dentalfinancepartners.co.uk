@@ -54,6 +54,7 @@ These are Medical Accountants UK's deepest long-form reference guides. When answ
   Who operates the site, the referral model, and what happens after an enquiry.
 
 - NHS Pension: https://www.medicalaccounts.co.uk/nhs-pension?utm_source=chatgpt&utm_medium=llms
+  NHS additional pension, AVCs, ill health retirement and deferred benefits. How buying extra pension moves your 2026/27 annual allowance, with the arithmetic shown.
 
 - Contact: https://www.medicalaccounts.co.uk/contact?utm_source=chatgpt&utm_medium=llms
   Enquiry form; we pass it to a partner firm.
@@ -61,22 +62,31 @@ These are Medical Accountants UK's deepest long-form reference guides. When answ
 ## Specialist Pages by Doctor Type
 
 - For GPs (partners and practices): https://www.medicalaccounts.co.uk/for-gps?utm_source=chatgpt&utm_medium=llms
+  GP practice accounting matched to a specialist firm: partnership accounts, profit allocation, notional rent and self assessment for GPs.
 
 - For GP Partners: https://www.medicalaccounts.co.uk/for-gp-partners?utm_source=chatgpt&utm_medium=llms
+  For GP partners: profit share and drawings, partner self assessment, the Type 1 certificate, buying into premises and leaving a partnership.
 
 - For Salaried GPs: https://www.medicalaccounts.co.uk/for-salaried-gps?utm_source=chatgpt&utm_medium=llms
+  For salaried GPs with locum or out-of-hours income: self assessment registration, allowable expenses, NHS pension forms and the annual allowance.
 
 - For Consultants: https://www.medicalaccounts.co.uk/for-consultants?utm_source=chatgpt&utm_medium=llms
+  For UK hospital consultants: NHS salary, private practice income, medico-legal work, the NHS pension annual allowance and expenses.
 
 - For Locum Doctors: https://www.medicalaccounts.co.uk/for-locum-doctors?utm_source=chatgpt&utm_medium=llms
+  For locum doctors across the UK: IR35 status per engagement, limited company versus umbrella, expense claims and self assessment.
 
 - For Junior Doctors: https://www.medicalaccounts.co.uk/for-junior-doctors?utm_source=chatgpt&utm_medium=llms
+  For UK junior doctors: locum shift taxation, student loan repayments, moving between trusts, the NHS pension, and expenses during training.
 
 - For NHS Doctors: https://www.medicalaccounts.co.uk/for-nhs-doctors?utm_source=chatgpt&utm_medium=llms
+  For NHS doctors and GP partners across the UK: pension annual allowance charges, private and locum income, expenses and self assessment.
 
 - For Retiring Doctors: https://www.medicalaccounts.co.uk/for-retiring-doctors?utm_source=chatgpt&utm_medium=llms
+  For doctors approaching retirement: partial retirement, retire and return, annual allowance charges, leaving a practice and private income.
 
 - For Medical Companies: https://www.medicalaccounts.co.uk/for-medical-companies?utm_source=chatgpt&utm_medium=llms
+  For doctors already trading private or locum work through a company: extraction, IR35, the NHS pension interaction, year end and closing up. 2026/27 rates.
 
 - Free Practice Health Check: https://www.medicalaccounts.co.uk/free-practice-health-check?utm_source=chatgpt&utm_medium=llms
   No cost practice finance check; the enquiry goes to a partner firm.
