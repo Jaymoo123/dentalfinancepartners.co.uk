@@ -699,3 +699,51 @@ their data arrays). Owner approves the count before launch: about 184 runs.
 **Read.** Bing impressions and clicks per page at 28 days, `/for/*` entry leads per 1,000 at 4
 weeks, and the monthly assistant-naming run with the 30-prompt set widened to name each new
 page's situation.
+
+### S4b. Wave 1 decision, question and number pages on the four small sites (BUILD, 09-27)
+
+The 40 non-segment Wave 1 rows (medical 10, contractors 9, care 13, charities 8) are blog
+posts on those sites. Conventions traced 09-27 (loader `<site>/web/src/lib/blog.ts`,
+`packages/web-shared/lib/frontmatter.ts`, `scripts/validate_blog_content.py`):
+
+- **File** `<site>/web/content/blog/<slug>.md`. Writers deliver to `docs/<site>/_wave1/posts/
+  <slug>.md`; the integrator moves PASS files into `content/blog/` after QA.
+- **Frontmatter, required or the build throws:** `slug`, `title`, `date`, `category`,
+  `metaDescription`. **Also required by the validator and this wave:** `metaTitle` (≤ 60),
+  `metaDescription` (≤ 155), `h1`, `summary` (40 to 60 words, the answer), `author` (the
+  site's editorial-team string, copied from the newest existing post), `canonical` (Medical
+  `<site url>/blog/<slug>`; the other three `<site url>/blog/<category-slug>/<slug>` where the
+  category slug is the site's `slugifyCategory` of the label: lowercase, `&` to `and`,
+  spaces to hyphens, brackets and commas stripped), `dateModified` (= `date` on a new post;
+  bumped on an extended one), `faqs` (4 to 6 `{question, answer}`), `keyTakeaways` (3 to 5
+  one-sentence strings). `generator: claude-opus` or `claude-fable` as the writer's model.
+- **Category** must be one of the site's existing labels, verbatim: Medical: GP Accountant
+  Services, GP Practice Management, GP Tax & Accounts, Incorporation & Company Structures,
+  Locum Tax, Medical Expenses, NHS Pension Planning, Private Practice. Contractors: IR35
+  Status, Umbrella vs Limited Company, MTD and Compliance, Contractor Accounting Basics,
+  Limited Company Tax, Pension and Dividends, Expenses and Deductions. Care: Business
+  Structure and Acquisition, CQC and Financial Compliance, Care Home Accounts and Funding,
+  Fees, FNC and Local Authority Rates, Payroll and Workforce Costs, VAT and Welfare
+  Exemption. Charities: Charity Finance, Charity Accounts and SORP, Charity Governance,
+  Charity VAT, Gift Aid, Independent Examination and Audit, Trustee Compliance, CICs and
+  Social Enterprises.
+- **Body is raw HTML**, never markdown: `<p>`, `<h2>`, `<h3>`, `<ul>`/`<ol>`, `<table>`,
+  `<strong>`. Internal links `<a href="/blog/...">` (Medical flat, others with the category
+  slug) and `<a href="/calculators/...">`, at most five, each verified on disk. No
+  shortcodes, no CTA markup (the template injects CTAs by category).
+- **Shape (NETNEW §8.3 coverage page):** 800 to 1,200 words in the body; the subject is the
+  title in the words people search; the first paragraph answers the question with the
+  number; question-shaped H2s with the answer in the first sentence under each; one current
+  tax year leads; direct address; statute references sparse; no em-dashes; British English;
+  no pricing; no named people; no firm claims; "a specialist reviews", never "we advise".
+- **PARTIAL rows** (an existing post is the subject): EXTEND that post in place. Keep slug,
+  canonical, date and category; rewrite the body to the shape above with the missing
+  decision or answer added; bump `dateModified`; deliver the full replacement file under the
+  existing slug.
+- **QA** as S4a: Track A factual against `docs/<site>/house_positions.md` and primary law,
+  Track B editorial and claims plus the validator's rules, then one per-site sweep. Integrator
+  moves files, runs `scripts/validate_blog_content.py --site <site>` (extended 09-27 to cover
+  contractors-ir35, care and charities, T4), typecheck, tests, build, and greps one rendered
+  post per site for the FAQ JSON-LD, the canonical and the category route.
+- **Read:** Bing impressions and clicks per post at 28 days; leads per 1,000 on blog entries
+  per site at 4 weeks against the 90-day record.
