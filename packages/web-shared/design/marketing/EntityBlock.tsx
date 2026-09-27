@@ -43,22 +43,22 @@ export function EntityBlock({
           <span id="entity-block-eyebrow">About this service</span>
         </Eyebrow>
 
-        <h3 className="text-base font-bold text-slate-900 sm:text-lg">Who we are</h3>
+        <h2 className="text-base font-bold text-slate-900 sm:text-lg">Who we are</h2>
         <Prose>
           <p>{firm}</p>
         </Prose>
 
-        <h3 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">Who this is for</h3>
+        <h2 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">Who this is for</h2>
         <Prose>
           <p>{serves}</p>
         </Prose>
 
-        <h3 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">Where we work</h3>
+        <h2 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">Where we work</h2>
         <Prose>
           <p>{where}</p>
         </Prose>
 
-        <h3 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">How it works</h3>
+        <h2 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">How it works</h2>
         <Prose>
           <ol className="list-decimal space-y-2 pl-5">
             {howItWorks.map((step) => (
@@ -67,12 +67,12 @@ export function EntityBlock({
           </ol>
         </Prose>
 
-        <h3 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">What happens next</h3>
+        <h2 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">What happens next</h2>
         <Prose>
           <p>{next}</p>
         </Prose>
 
-        <h3 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">What we are not</h3>
+        <h2 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">What we are not</h2>
         <Prose>
           <p>{notWhatWeAre}</p>
         </Prose>
