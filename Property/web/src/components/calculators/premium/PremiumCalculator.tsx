@@ -15,7 +15,7 @@
  * calc_input_change / calc_computed / calc_result_viewed) so premium tools
  * appear in the same funnel.
  */
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowDown, ChevronDown } from "lucide-react";
 import {
   Bar,
@@ -31,7 +31,6 @@ import type {
   ScenarioResult,
 } from "@/lib/calculators/premium/types";
 import { MiniGrid } from "@/components/calculators/premium/MiniGrid";
-import { PdfOffer, usePdfOffer } from "@/components/calculators/premium/PdfOffer";
 import {
   Collapsible,
   CollapsibleContent,
@@ -49,10 +48,7 @@ import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
-import { ResultGateModal } from "@/components/calculators/ResultGateModal";
-import { HeldResult } from "@/components/calculators/HeldResult";
-import { wasRevealed, rememberRevealed } from "@/components/calculators/resultGateStorage";
-import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
+import { ResultCaptureForm } from "@/components/calculators/ResultCaptureForm";
 
 /* ---------------------------------------------------------------------------
  * Defaults / setup
@@ -471,25 +467,6 @@ export function PremiumCalculator({
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Result gate (shipped default 2026-06-30, was the result_gate_capture treatment;
-  // concluded to treatment — it netted more leads than the ungated control). The
-  // result is held behind a "See your result" button + interstitial capture on every
-  // on-site placement, with no once-per-session bypass, so gating one calculator
-  // does not unlock the others. Converted visitors ARE bypassed — they have already
-  // given us their details. Embeds are never gated: they run on third-party sites
-  // as a distribution play, so gating them breaks the deal rather than converting.
-  const gated = placement !== "embed" && !isConverted();
-  const [revealed, setRevealed] = useState(false);
-  const [gateOpen, setGateOpen] = useState(false);
-  const showResult = !gated || revealed;
-
-  // Restore a reveal from earlier in the session so navigating away and back does
-  // not re-gate a calculator the reader has already answered for. Read after mount:
-  // sessionStorage is client-only, so reading during render would desync hydration.
-  useEffect(() => {
-    if (wasRevealed(config.id)) setRevealed(true);
-  }, [config.id]);
-
   // Shared event context: which tool, where, and that this is the premium kind.
   const base = {
     calculator_slug: config.id,
@@ -532,28 +509,10 @@ export function PremiumCalculator({
     onInteract("grid");
   };
 
-  // "See your result" always opens the interstitial — no once-per-session bypass,
-  // so every calculator asks once. The press is auto-captured as a cta_click via
-  // the button's data-cta ("see_result"), which still feeds the on-page diagnostics.
-  const onSeeResult = () => {
-    setGateOpen(true);
-  };
-  // Stable identity so the modal's focus/Escape effects are not re-run (and focus
-  // not stolen from the capture form) on an unrelated parent re-render.
-  const revealFromGate = useCallback(() => {
-    setGateOpen(false);
-    setRevealed(true);
-    rememberRevealed(config.id);
-  }, [config.id]);
-
   const result = useMemo<PremiumResult>(
     () => config.compute({ values, rows, scenario }),
     [config, values, rows, scenario],
   );
-
-  // Paid PDF test (flag-gated, see PdfOffer.tsx). While the offer is on the free
-  // workings are withheld: they are the product. Flag off restores them.
-  const pdfOffer = usePdfOffer(config.id);
 
   const primaryFields = config.fields.filter((f) => f.advanced !== true);
   const advancedFields = config.fields.filter((f) => f.advanced === true);
@@ -561,7 +520,6 @@ export function PremiumCalculator({
   const scenarios = result.scenarioResults;
 
   return (
-    <>
     <div
       ref={rootRef}
       className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_28px_-16px_rgba(15,23,42,0.18)] ring-1 ring-slate-900/[0.03]"
@@ -633,55 +591,23 @@ export function PremiumCalculator({
           </div>
         </div>
 
-        {/* Results. Pre-reveal these same cards render behind frosted glass, so
-            the area is already the right size and revealing causes no jump. */}
-        <div
-          className={`border-t border-slate-200 lg:border-l lg:border-t-0 ${
-            showResult ? "space-y-5 bg-slate-50 p-5 sm:p-7" : ""
-          }`}
-        >
-          {showResult ? (
-            <>
-              <HeadlineCard result={result} />
-              {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
-              {full && <ComparisonChart config={config} result={result} />}
-              {pdfOffer ? (
-                <PdfOffer
-                  offer={pdfOffer}
-                  toolId={config.id}
-                  placement={placement}
-                  values={values}
-                  rows={rows}
-                  scenario={scenario}
-                  result={result}
-                />
-              ) : (
-                <Workings result={result} />
-              )}
-            </>
-          ) : (
-            <HeldResult
-              onReveal={onSeeResult}
-              ground="light"
-              contentClassName="space-y-5 bg-slate-50 p-5 sm:p-7"
-              minHeightClass="min-h-[220px]"
-              buttonLabel="See your result"
-              dataCta="see_result"
-            >
-              <HeadlineCard result={result} />
-              {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
-              {full && <ComparisonChart config={config} result={result} />}
-              <Workings result={result} />
-            </HeldResult>
-          )}
+        {/* Results. Always shown (owner decision 2026-09-27: no popup on the
+            calculators). */}
+        <div className="border-t border-slate-200 lg:border-l lg:border-t-0 space-y-5 bg-slate-50 p-5 sm:p-7">
+          <HeadlineCard result={result} />
+          {scenarios && scenarios.length > 0 && <ScenarioTiles scenarios={scenarios} />}
+          {full && <ComparisonChart config={config} result={result} />}
+          <Workings result={result} />
         </div>
       </div>
 
-      {/* No inline capture below the result: the interstitial gate is now the
-          capture on every on-site placement, and the only readers who reach the
-          result ungated are converted visitors, who have already given us details. */}
+      {placement !== "embed" && (
+        // ponytail: owner 2026-09-27, gate removed, form now inline; compare
+        // calc_result_form against calc_result_gate at 4 weeks
+        <div className="border-t border-slate-200 p-5 sm:p-7">
+          <ResultCaptureForm campaign={config.id} />
+        </div>
+      )}
     </div>
-    {gateOpen && <ResultGateModal campaign={config.id} onReveal={revealFromGate} />}
-    </>
   );
 }

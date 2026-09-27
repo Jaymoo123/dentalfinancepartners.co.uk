@@ -88,6 +88,7 @@ const WIDGET_FORM_IDS = new Set([
   "inline_mini",
   "calc_result",
   "calc_result_gate",
+  "calc_result_form",
   "mobile_tool",
   "resource_block",
   "specialist_widget",
@@ -95,7 +96,7 @@ const WIDGET_FORM_IDS = new Set([
 
 /** Widget captures also self-identify via a bracketed message prefix. */
 const WIDGET_MSG_PREFIX =
-  /^\[(exit intent|inline mini-form|result gate|mobile tool|specialist question)/i;
+  /^\[(exit intent|inline mini-form|result gate|result form|mobile tool|specialist question)/i;
 
 function deriveChannel(lead: LeadLike): "form" | "widget" {
   const fid = lead.extras?.form_id;

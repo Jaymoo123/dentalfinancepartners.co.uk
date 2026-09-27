@@ -154,7 +154,7 @@ export const MINIFORM_FORM_IDS = [
   "exit_intent",
   "exit_intent_form",
   "inline_mini",
-  "calc_result_gate",
+  "calc_result_form",
   "mobile_tool",
   "resource_block",
   "specialist_widget",
@@ -174,11 +174,19 @@ export const MINIFORM_FORM_IDS = [
  * The measured window breaks down (docs/Property/LEAD_CAPTURE_MAP.md, same dates,
  * human sessions) as specialist_widget 4 + exit_intent 5 + calc_result_gate 2 +
  * inline_mini 2 + mobile_tool 2 + resource_block 0 + **calc_result 0** = 15.
- * calc_result contributed 3 starts and ZERO leads, so removing it takes nothing
- * out of the 15 and the comparison stays like for like. The number is therefore
- * unchanged at 15 by derivation, not by omission.
+ * calc_result contributed 3 starts and ZERO leads, so removing it took nothing
+ * out of the 15 and the comparison stayed like for like.
+ *
+ * RESTATED AGAIN 2026-09-27, owner decision to remove the result gate: the new
+ * `calc_result_form` (inline, ungated) replaces `calc_result_gate` in the
+ * watched list above, so its historic 2 leads come out of the baseline the same
+ * way `calc_result`'s 0 did in the 2026-08-22 swap. 15 - calc_result_gate's 2 =
+ * 13. `calc_result_gate` stays in the read-side lists (value-score.ts,
+ * role-labels.ts) because historic leads still carry that form_id; it is only
+ * removed from the deploy-watch expectation, which looks at the surfaces live
+ * today.
  */
-export const BASELINE_MINIFORM_LEADS_28D = 15;
+export const BASELINE_MINIFORM_LEADS_28D = 13;
 /** Derived weekly baseline (28d / 4). Used by the day 7 week-one lead check. */
 export const BASELINE_MINIFORM_LEADS_WEEKLY = BASELINE_MINIFORM_LEADS_28D / 4; // 3.75
 /** Derived fortnightly baseline (28d / 2). Used by the day 14 volume check. */

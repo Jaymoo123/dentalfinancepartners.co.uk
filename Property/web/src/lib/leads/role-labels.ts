@@ -35,6 +35,7 @@ export const SURFACE_LABELS: Record<string, string> = {
   inline_mini: "In-article form",
   calc_result: "Calculator result form",
   calc_result_gate: "Calculator result gate",
+  calc_result_form: "Calculator result form (inline)",
   mobile_tool: "Mobile calculator form",
   resource_block: "Resource form",
   specialist_widget: "Ask a specialist widget",
