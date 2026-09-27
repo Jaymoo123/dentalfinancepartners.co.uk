@@ -38,7 +38,7 @@ faqs:
     answer: "Three penalty regimes interact. FA 2009 Sch 55 (late-filing, applies to CIS300, including nil-return missed). FA 2009 Sch 56 (late-payment, applies to deducted-amount delays). FA 2007 Sch 24 (inaccuracy, applies to under-deduction where contractor pays without verifying or applies wrong rate). The penalty stack can outpace the underlying tax liability quickly. The Perrin and Martland frameworks (reasonable excuse and late appeal) are the operative routes to challenge."
   - question: "Do I need to register if my construction-related spend is just under £3m?"
     answer: "No. The FA 2021 threshold of £3m rolling-12-month average construction-related spend must be EXCEEDED for deemed-contractor status under s.59(1)(l). Monitor the rolling 12-month average; the threshold is breached on the AVERAGE not on a single high-spend month. If your portfolio is growing and construction spend is approaching £3m, the operational pre-registration discipline (verifying the first subcontractor, setting up CIS-compliant software, training accounts-payable on the labour/materials split) should be in place BEFORE the threshold is crossed."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

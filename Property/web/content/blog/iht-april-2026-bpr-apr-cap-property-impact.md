@@ -48,7 +48,7 @@ faqs:
     answer: "Up to £2,500,000 of qualifying farming or business value passes free of inheritance tax, and that single allowance covers both reliefs together rather than giving you one of each. Above it you keep relief at half rate, which costs you 20% of the excess instead of the usual 40%. So £3,000,000 of qualifying value leaves £500,000 above your allowance and a £100,000 bill, where the same estate paid nothing before 6 April 2026. Your allowance also refreshes on a rolling seven-year basis, so gifts you have already made can use part of it up before your estate does."
   - question: "I gave my children shares in 2025. Are those gifts caught by the changes?"
     answer: "Possibly. Gifts made on or after 30 October 2024 are reworked under the new rules if you die on or after 6 April 2026 and within seven years of making them, so the value above your allowance is relieved at half rate rather than in full. Survive the seven years and the gift is out of your estate altogether. Gifts you completed before 30 October 2024 sit outside the changes entirely."
-dateModified: "2026-05-22"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

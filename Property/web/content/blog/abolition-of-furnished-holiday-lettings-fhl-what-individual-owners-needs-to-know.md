@@ -42,7 +42,7 @@ faqs:
     answer: "Possible but the bar is high. The FHL regime was the statutory shortcut to 'trade-like' tax treatment for furnished holiday lets; post-abolition, the standard property-business-versus-trading line applies and the case-law on the trade-or-investment distinction is the operative test. Genuinely-trading short-stay accommodation businesses (serviced accommodation with daily cleaning, breakfast service, reception, hotel-like service provision) may qualify as trades; pure self-catered holiday lets without service provision typically do not. Specialist advice is essential before pursuing a trade-claim post-abolition; an unsuccessful trade-claim attracts HMRC enquiry exposure and potential penalty if the trade claim is treated as careless."
   - question: "Where can I find the operational depth on the post-abolition rules?"
     answer: "For the broad post-abolition rules overview, see our companion FHL rules page. For capital allowances grandfathering depth, see our FHL capital allowances post-April-2025 grandfathered claims mechanics page. For incorporation modelling depth, see our transferring FHL portfolio to limited company page. For the SDLT angle on new FHL acquisitions, see our SDLT FHL post-abolition page. This action-checklist page is the consolidated to-do list for the 2025/26 SA100 cycle; the depth pages support execution where any individual item warrants deeper analysis."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

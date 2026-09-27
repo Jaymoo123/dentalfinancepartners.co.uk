@@ -3,7 +3,7 @@ title: "Property Accountant Near Me: How UK Landlords Choose the Right Specialis
 slug: "property-accountant-near-me"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-near-me"
 date: "2026-03-31"
-dateModified: "2026-05-29"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Near Me | UK Landlord Tax Specialists"

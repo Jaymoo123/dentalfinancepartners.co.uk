@@ -12,7 +12,7 @@ image: ""
 h1: "Let to Buy Mortgages: How the Two-Loan Move Actually Works"
 summary: "A working guide to let to buy for owner-occupiers who want to keep and let their current home while buying the next one. How the two mortgages fit together, why the onward residential loan is a regulated contract and the retained-home loan may be a consumer or a business buy-to-let, how much deposit the remortgage can release against the ICR stress test, and where letting your old home quietly turns you into a property business."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

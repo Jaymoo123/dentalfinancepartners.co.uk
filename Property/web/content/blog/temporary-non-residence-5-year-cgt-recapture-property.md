@@ -40,7 +40,7 @@ faqs:
     answer: "Section 10A does not apply to assets acquired during the non-residence period, but NRCGT does still apply to UK residential property disposals by non-residents, even where the property was acquired post-departure. A landlord who emigrates in 2026/27, buys a Birmingham flat in 2028/29, and sells it in 2030/31 still files the NRCGT 60-day return and pays NRCGT on the gain (rebasing options do not apply because there is no historic base cost; actual cost is used). Section 10A does not add another layer of charge for this disposal because the asset was not held at departure."
   - question: "How is the section 10A recapture reported on the self-assessment return?"
     answer: "On the SA108 capital gains pages for the tax year of return, with the section 10A deemed accrual entered alongside any ordinary year-of-return disposals. The return must be filed by 31 January following the year of return. There is no separate 60-day return for the section 10A deemed accrual because the deeming is the trigger, not an actual disposal at that point; however, individual UK land disposals during the non-residence period will have already triggered the 60-day NRCGT return at the time of each disposal. Keep contemporary records of overseas disposals during non-residence for at least six years; the section 10A enquiry window runs from the year of return, not the year of the underlying disposal."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

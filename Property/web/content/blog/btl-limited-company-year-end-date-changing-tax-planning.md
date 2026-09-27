@@ -46,7 +46,7 @@ faqs:
     answer: "Yes, but the penalty stands. The penalty is for failing to file accounts by the deadline applicable to the period at the time the deadline expired. Subsequent filing of AA01 to change the ARD does not retrospectively cure the late filing for that period. If the company is currently in a period where filing is late, the priority is to file the overdue accounts on the existing ARD basis before considering an ARD change for the next period."
   - question: "How does the year-end interact with the personal income tax year if I hold property both personally and via the SPV?"
     answer: "The personal Self Assessment year runs 6 April to 5 April annually. The SPV's corporation tax accounting period can be any 12-month window. Where the SPV's ARD is 31 March or 5 April, the SPV's profit cycle and the personal SA cycle align closely, which simplifies family-level tax planning where dividends from the SPV interact with personal-side rental income (and section 24 finance-cost restriction on the personal portfolio). Where the SPV's ARD is in a different month (for example 31 December), you have a six-month lag between the SPV's profit recognition and your personal year, which can be useful for dividend timing (declare dividends in February to land in the current personal tax year before the SPV's profit is even formally booked) but adds reconciliation complexity. The choice depends on whether you prioritise dividend-timing flexibility or year-end alignment."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

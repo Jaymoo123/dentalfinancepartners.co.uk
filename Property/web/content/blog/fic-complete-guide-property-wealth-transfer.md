@@ -46,7 +46,7 @@ faqs:
     answer: "Where your portfolio is large enough that the setup and ongoing costs (typically £10,000 to £25,000 setup, £4,000 to £8,000 annually) are recovered by the tax efficiencies, where you have clear wealth-transfer objectives over a 10+ year horizon, and where your family is governance-capable (a workable shareholders' agreement, capable directors, no factional disputes). With under £2m of property and a shorter wealth-transfer horizon, simpler structures (joint ownership, lifetime gifting, a trust without a corporate wrapper) produce most of the benefit with less administrative drag."
   - question: "How does an FIC interact with the 15% flat-rate SDLT and ATED?"
     answer: "An FIC is a non-natural person for ATED and Schedule 4A SDLT purposes. Property acquisitions above £500k by the FIC are within the 15% SDLT flat rate unless a relief is claimed; properties held above £500k are within ATED unless a relief is claimed. The standard reliefs (Property Rental Business Relief at acquisition and annually) apply where the FIC lets commercially. See our dedicated guides on ATED and the 15% SDLT interaction for how the reliefs and the mechanics work."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

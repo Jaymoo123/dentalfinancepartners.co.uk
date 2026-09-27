@@ -42,7 +42,7 @@ faqs:
     answer: "Often yes. UK and EEA nationals retain the UK personal allowance under domestic UK law. Spanish nationals can claim the personal allowance under the UK-Spain treaty's non-discrimination article where the conditions are met. HMRC's HS304 helpsheet sets out the qualifying categories. With the personal allowance, a Spanish-resident UK landlord with rental profit inside £12,570 may owe nil UK tax (subject to the s.272A finance-cost calculation)."
   - question: "Does the UK-Spain treaty have a Mutual Agreement Procedure?"
     answer: "Yes. Article 25 of the 2013 treaty provides for Mutual Agreement Procedure between HMRC and the Spanish Agencia Tributaria. Standard three-year time limit applies from the first notification of the action giving rise to taxation not in accordance with the convention. MAP is appropriate for material bilateral disputes (residency tie-breaker disagreements, transfer-pricing characterisation, IFI / Patrimonio double-tax arguments)."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

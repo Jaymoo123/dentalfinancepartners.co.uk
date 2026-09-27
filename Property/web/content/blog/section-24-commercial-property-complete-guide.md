@@ -3,7 +3,7 @@ title: "Does Section 24 Apply to Commercial Property? Complete Guide for UK Land
 slug: "section-24-commercial-property-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/section-24-commercial-property-complete-guide"
 date: "2026-04-10"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

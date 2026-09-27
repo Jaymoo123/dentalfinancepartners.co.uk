@@ -46,7 +46,7 @@ faqs:
   answer: 'The LTTA 2017 penalties regime applies: a £100 fixed penalty for a return filed up to 6 months late, escalating with further fixed and tax-geared penalties beyond 6 months and beyond 12 months. The Welsh Revenue Authority publishes the detailed schedule. Late-paid tax also attracts interest at the statutory rate. The most common failure pattern is conveyancers assuming the SDLT 14-day clock applies and missing the 30-day Welsh clock, which is usually moot because the Welsh window is more generous, but in practice the failure mode is the opposite: 30-day complacency leading to a late return because the conveyancer treated the deadline as flexible.'
 - question: Where can I find the underlying Welsh LTT legislation?
   answer: The primary statute is the Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017, available at legislation.gov.uk/anaw/2017/1/contents. Rate tables are set by regulations under LTTA 2017 s.24 (residential) and s.25 (non-residential); the current main residential rates were brought in by the Land Transaction Tax (Tax Bands and Tax Rates) (Wales) Regulations effective 10 October 2022 and remain unchanged for 2026/27. The Welsh Revenue Authority's technical guidance at gov.wales/calculation-land-transaction-tax-payable-technical-guidance walks the calculation rules with worked examples, and is the working reference most conveyancers use day-to-day.
-dateModified: '2026-05-23'
+dateModified: "2026-07-26"
 reviewedBy: Property Tax Partners Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-05-23'

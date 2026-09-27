@@ -3,7 +3,7 @@ title: "How Does Serviced Accommodation Tax Work After FHL Abolition in April 20
 slug: "serviced-accommodation-tax-fhl-abolition-april-2025"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/serviced-accommodation-tax-fhl-abolition-april-2025"
 date: "2026-04-10"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"

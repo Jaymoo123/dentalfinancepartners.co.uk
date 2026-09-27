@@ -44,7 +44,7 @@ faqs:
     answer: "Yes, the deemed 50/50 rule under ITA 2007 s.836 applies to all jointly held income between spouses, including foreign-property rental income reported on SA106. Form 17 elects to actual-beneficial-share treatment for both UK and foreign property income (the election cannot be partial; it applies to all jointly held property between the same spouses). The MTD qualifying-income test then reads each spouse's elected share for both portfolios."
   - question: "What evidence do I need to file Form 17?"
     answer: "A signed declaration of beneficial interest, evidenced by one of: a declaration of trust executed by the joint owners, a property title at the Land Registry showing tenants-in-common with the elected unequal shares, or another written document establishing the actual beneficial split. The declaration must be contemporaneous with the Form 17 filing (not retrospective). HMRC may request the underlying document during a compliance check; keep a signed copy."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

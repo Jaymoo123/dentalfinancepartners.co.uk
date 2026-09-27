@@ -41,7 +41,7 @@ faqs:
   answer: Individual landlords claim AIA in the capital allowances section of the Self Assessment property pages (SA105). Companies claim through the corporation tax return (CT600) and computations. You identify the qualifying spend for the accounting period, claim AIA up to the cap, and keep invoices, dates of purchase and evidence of when each asset was first used in case HMRC reviews the return.
 - question: How does AIA fit with Making Tax Digital for landlords?
   answer: Making Tax Digital for Income Tax is live and phased in by income. It applies from 6 April 2026 to landlords and sole traders with qualifying income over £50,000, from 6 April 2027 over £30,000, and from 6 April 2028 over £20,000. Within MTD you keep digital records and send quarterly updates, then finalise the year. Capital allowances, including any AIA, are dealt with at the final declaration rather than in the quarterly updates.
-dateModified: '2026-05-30'
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-06-02'

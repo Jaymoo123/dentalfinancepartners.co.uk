@@ -41,7 +41,7 @@ faqs:
   answer: "No. The furnished holiday lettings regime was abolished from 6 April 2025 (income tax) and 1 April 2025 (corporation tax) by Finance Act 2025. Former furnished holiday lets are now treated as part of an ordinary property business, so the section 35 dwelling-house bar applies to in-dwelling plant and machinery, and the more generous capital allowances position those properties used to enjoy no longer exists."
 - question: "Do I need digital records for capital allowances under Making Tax Digital?"
   answer: "Making Tax Digital for Income Tax is being phased in, starting from 6 April 2026 for landlords and sole traders with qualifying income over £50,000, then 6 April 2027 at £30,000 and 6 April 2028 at £20,000. You will need to keep digital records and send quarterly updates, so maintaining a digital capital allowances pool register that tracks the main pool, special rate pool and any single-asset pools becomes important."
-dateModified: '2026-05-30'
+dateModified: "2026-05-30"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - gov.uk

@@ -3,6 +3,7 @@ title: "Portfolio Landlord Tax Planning: The Strategy Guide"
 slug: "portfolio-landlord-tax-planning-strategy-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/portfolio-landlord-tax-planning-strategy-guide"
 date: "2026-07-09"
+dateModified: "2026-07-20"
 generator: opus-4.8/netnew-wave
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"

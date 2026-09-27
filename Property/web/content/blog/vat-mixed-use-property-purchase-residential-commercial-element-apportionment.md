@@ -35,7 +35,7 @@ faqs:
     answer: "Keep the surveyor's valuation report or independent floor-area measurement, the contract that records the apportionment (or a contemporaneous file note where the contract is single-price), the input VAT analysis attributing acquisition VAT to each element, and any later changes in use that re-test the apportionment. The records must be retained for six years from the end of the period for general VAT purposes, and for 16 years from first use where the commercial element triggers a Capital Goods Scheme entry."
   - question: "What is the most common mixed-use VAT mistake?"
     answer: "Treating the whole purchase as taxable because the seller's OTT applies to the building. Sch 10 para 5 carves out dwellings from any opt; the seller's invoice should split the consideration between standard-rated commercial and exempt residential. A buyer who pays VAT on the residential element and recovers it through their VAT registration faces an HMRC challenge in due course, with the recovered VAT reversed and interest charged. The second-most-common mistake is treating the apportionment as a one-off acquisition decision rather than reviewing it at each refurbishment and tenant change."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

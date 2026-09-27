@@ -42,7 +42,7 @@ faqs:
     answer: "Sch 18 paragraph 4 distinguishes shareholder loans from equity for the equity-holder count. A normal commercial loan is excluded from the equity-holder count. A loan fails the NCL test (and is pulled into the equity-holder count) where it carries: (i) the right to a share of profits rather than a fixed or floating commercial interest rate; or (ii) the right to convert to shares; or (iii) terms inconsistent with arms-length commercial lending. The NCL test is the most common Sch 18 ambush for property groups using founder-loan plus ratchet-share funding structures; non-NCL shareholder loans can drag the parent's profits-available-for-distribution entitlement below 75% even on a 100%-ordinary group."
   - question: "What is the difference between this page and your existing CT group-relief mechanics page?"
     answer: "This page is the eligibility / definitional layer answering 'do these companies qualify as one group for s.131 purposes?'. The existing 'property company group relief corporation tax' page covers the mechanics layer: assuming group eligibility, how to surrender losses, claim ordering, CT600 boxes, time limits, and operative consequences. Reading sequence: this page first to settle eligibility; the mechanics page once eligibility is established. The pages cross-link."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

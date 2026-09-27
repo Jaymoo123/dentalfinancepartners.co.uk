@@ -39,7 +39,7 @@ faqs:
   answer: Yes. Finance Act 2026 s.29 introduced a 40% first-year allowance (inserted as CAA 2001 s.45U) on new and unused main-rate plant and machinery, for expenditure on or after 1 January 2026, excluding cars and second-hand assets. It is not restricted to companies or to unincorporated businesses. In practice it is the route for unincorporated landlords with qualifying commercial plant, because a company buying qualifying new main-rate plant will normally claim 100% full expensing (s.45S) instead.
 - question: What happens to capital allowances when you sell the property?
   answer: A sale that includes fixtures triggers disposal values on the plant pools (CAA 2001 s.61 and the s.196 fixtures Table), which can create a balancing charge that claws back allowances claimed. For a commercial buyer to claim on the fixtures, the seller must have pooled the expenditure and the parties must fix its value, usually by a joint s.198 election made within two years of completion (CAA 2001 s.201). Without that, the buyer's expenditure is treated as nil (s.187A(3)) and the allowances are lost for good.
-dateModified: '2026-06-02'
+dateModified: "2026-06-23"
 sourcesVerifiedAt: '2026-06-02'
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

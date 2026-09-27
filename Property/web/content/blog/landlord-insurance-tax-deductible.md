@@ -43,7 +43,7 @@ faqs:
     answer: "Keep policy schedules showing the period and scope of cover, premium invoices and bank statements showing payment, claim correspondence, the loss-adjuster's report where relevant, contractor invoices for repairs, and your apportionment workings where the policy covers more than one property or a personal element. Records must be kept for at least five years and 10 months from the end of the relevant tax year for business taxpayers, which includes most landlords. Digital records become mandatory for in-scope landlords under MTD for Income Tax from 6 April 2026."
   - question: "How does landlord insurance fit into Making Tax Digital?"
     answer: "Insurance is one of the standard expense categories within HMRC's MTD for Income Tax category schema. Sole-trader landlords with qualifying income above £50,000 join from 6 April 2026 (above £30,000 from April 2027, above £20,000 from April 2028) and must keep digital records and submit quarterly updates. Premiums flow into the quarterly summary, and the year-end finalisation reconciles to the SA105 categories. Revenue payouts are recorded against the relevant rental income or expense line; capital receipts are kept separate for the CGT computation on disposal."
-dateModified: '2026-05-30'
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-30'

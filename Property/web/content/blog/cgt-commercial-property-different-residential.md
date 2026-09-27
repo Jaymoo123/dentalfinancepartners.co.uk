@@ -3,7 +3,7 @@ title: "Commercial vs Residential Property CGT 2026/27: Same Rate, Different Rel
 slug: "cgt-commercial-property-different-residential"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-commercial-property-different-residential"
 date: "2026-04-10"
-dateModified: "2026-05-24"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

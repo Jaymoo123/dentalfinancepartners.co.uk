@@ -37,7 +37,7 @@ faqs:
     answer: "You can opt to tax the property up to and including the date of the disposal supply, provided you notify HMRC on VAT1614A within 30 days of the decision. The option must be in place at the time of the supply for the supply to be standard-rated. A late-filed VAT1614A after the supply has happened will not retrospectively make the sale taxable, so the CGS clawback will bite. The 30-day notification window and the relevant disposal date both need to be diarised carefully before a sale during the adjustment period."
   - question: "What is the most common CGS mistake?"
     answer: "Forgetting that the adjustment runs annually for 10 years regardless of whether the use has changed. Even where a property has been let to fully-taxable commercial tenants throughout, the CGS record must still be maintained, the annual interval reviewed, and a nil-adjustment entry confirmed. Failure to keep CGS records is a separate compliance breach under reg 116 with its own penalty exposure even where the underlying VAT position is correct. The second-most-common mistake is forgetting that a major refurbishment is a fresh CGS item with its own 10-year clock starting on first use."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

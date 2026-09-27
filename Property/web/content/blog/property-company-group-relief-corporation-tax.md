@@ -42,7 +42,7 @@ faqs:
     answer: "Yes. The two most useful structural moves are: (a) interpose a HoldCo above the SPVs so the 75% test is met by direct ownership through one chain (rather than by trying to argue indirect ownership through individual shareholdings); (b) align all year-ends across the group so corresponding accounting periods are coterminous and the apportionment question disappears. Both moves are paperwork-only and inexpensive once the SPVs exist, but they are far easier to put in place at incorporation. We routinely see landlords with five or six SPVs spend more on year-end accountancy than the group-relief saving would have funded, simply because year-ends were never harmonised."
   - question: "Are there penalties for getting the surrender wrong?"
     answer: "The main risk is a denied claim rather than a penalty in the conventional sense. If the surrendering company turns out not to have had the loss available (because of an error in the loss calculation, a missed associated-company adjustment, or a failure of the 75% test on a relevant date), HMRC will withdraw the relief in the claimant company. The claimant company then faces an additional corporation tax bill plus late-payment interest from the original due date. Penalties for inaccuracy in the return can apply where the error reflects a failure to take reasonable care. Routine group relief claims that follow the steps in this article are unlikely to attract penalties even if they are subsequently amended."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

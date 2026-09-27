@@ -46,7 +46,7 @@ faqs:
     answer: "Yes, if you are within UK self-assessment on your UK property income. The non-resident landlord (NRL) scheme operates alongside MTD ITSA; the NRL scheme governs withholding tax by letting agents and tenants paying rent to non-residents, while MTD ITSA governs the reporting cycle. A non-resident landlord above the cohort threshold on UK gross property income receives the letter and registers for MTD ITSA in the same way as a UK-resident landlord. The accidental landlord page covers the cohort overlap with moved-abroad cases."
   - question: "The letter mentions my self-employment income but I closed that business. What now?"
     answer: "Contact HMRC explaining the cessation date of the self-employment. The MTD obligation may still apply if your remaining qualifying income (property rents alone, post-cessation) is above the cohort threshold. If your only qualifying income on the 2024/25 return was the now-closed self-employment, the obligation may not apply from the mandate date. The right action is to surface the cessation to HMRC promptly so the classification can be reviewed; the wrong action is to assume HMRC's system will automatically pick up the closure."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

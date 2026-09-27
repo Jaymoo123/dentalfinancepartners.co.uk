@@ -36,7 +36,7 @@ faqs:
     answer: "Usually, but complexity beats size. Floor area is the first driver every price list uses, yet a plain 2,000 square metre warehouse with one heating system is often cheaper to assess than a 600 square metre office with comfort cooling, multiple zones and mixed fuels, because the office demands more modelling work and possibly a higher assessor level. The expensive category is not 'big'; it is 'complex': atria, large glazed facades and complex HVAC push a building into Dynamic Simulation Modelling regardless of its size."
   - question: "What happens if I let a commercial property without an EPC?"
     answer: "You risk a penalty charge notice from trading standards calculated under regulation 38 of SI 2012/3118: for a non-dwelling, 12.5% of the building's rateable value, with a £500 minimum, a £5,000 maximum, and a £750 default where no rateable value can be determined. Paying the penalty does not remove the duty to obtain a certificate. The full requirement rules, exemptions and enforcement practice are covered in our commercial EPC requirements guide."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

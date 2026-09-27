@@ -41,7 +41,7 @@ faqs:
   answer: "The furnished holiday lettings regime was abolished from 6 April 2025 for income tax and 1 April 2025 for corporation tax (Finance Act 2025 Schedule 5). From those dates, a former FHL is treated as an ordinary property business, and the section 35 dwelling-house restriction applies in full to new expenditure. Pre-abolition plant and machinery pools are grandfathered and can continue to be written down, but no new FHL-route plant claims arise after the abolition dates."
 - question: "Does the AIA reduce my tax bill at my marginal rate?"
   answer: "An AIA claim reduces your taxable profit, so the cash value of the deduction depends on the rate that profit would otherwise have been taxed at. For a company that is corporation tax (currently 19% for small profits up to £50,000 and 25% above £250,000, with marginal relief between). For an individual landlord it tracks your marginal income tax rate. From 6 April 2027, property income in England and Northern Ireland is taxed under separate rates of 22% (basic), 42% (higher) and 47% (additional), enacted by Finance Act 2026 sections 6 to 7, which changes the value of an unincorporated landlord's allowances from that date."
-dateModified: '2026-05-30'
+dateModified: "2026-05-30"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - legislation.gov.uk

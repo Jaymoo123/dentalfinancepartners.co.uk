@@ -3,7 +3,7 @@ title: "April 2027 Property Tax Rates and Section 24: Enacted Position (Finance 
 slug: "2027-property-tax-rates-section-24-relief-uk-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/2027-property-tax-rates-section-24-relief-uk-landlords"
 date: "2026-04-10"
-dateModified: "2026-05-24"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "April 2027 Property Tax + S24: Wedge Explained (FA 2026)"

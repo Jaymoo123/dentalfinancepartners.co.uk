@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 howToSteps:
   - name: "Add gross rent to your other income"
     text: "Take your salary, pension and other taxable income, then add your gross rental income BEFORE deducting mortgage interest. Mortgage interest is no longer an expense for this calculation under Section 24."

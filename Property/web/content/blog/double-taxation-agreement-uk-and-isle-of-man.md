@@ -44,7 +44,7 @@ faqs:
     answer: "No, and it is the tenant or agent who carries the risk if they don't withhold. NRL withholding is a statutory obligation on the tenant or letting agent under FA 1995 Schedule 23 and SI 1995/2902. Treaty residence does not displace the obligation. The only way to receive gross rent is HMRC NRL1, NRL2, or NRL3 approval, granted on the basis of your UK tax compliance. Until you hold that approval, the tenant or agent must withhold and account quarterly to HMRC; failure makes them liable for the unwithheld tax (no time limit for unprompted discovery). Treaty allocation under Article 6 is about which state has primary taxing rights, not about which state's withholding rules operate."
   - question: "What happens if I miss the 60-day NRCGT return after selling my UK flat?"
     answer: "Failure-to-file penalties under FA 2009 Schedule 55 apply: £100 immediate, £200 at 3 months, £300 at 6 months and 12 months; tax-geared penalties for prompted, unprompted, deliberate, and concealed disclosure bands at and beyond 6 months. Interest on unpaid tax runs from the original due date. The 60-day clock starts on the day of completion (legal completion, not exchange of contracts). Even if no tax is due (rebasing, AEA, or loss producing nil charge), the return MUST still be filed; HMRC's published guidance is unambiguous. The Schedule 55 points-based penalty regime applies to MTD-related obligations but the older percentage-of-tax model still applies to NRCGT returns."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

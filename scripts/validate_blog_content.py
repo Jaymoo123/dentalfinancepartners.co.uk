@@ -9,6 +9,7 @@ Checks all .md blog posts across all sites for:
 - Internal link target validation (slug exists)
 - Stale year references
 - FAQ presence
+- dateModified bumped whenever a post's content changes
 
 Usage:
     python scripts/validate_blog_content.py              # Validate all sites
@@ -191,6 +192,44 @@ def get_changed_files():
     return {line.strip() for line in out.splitlines() if line.strip()}
 
 
+DATEMOD_RE = re.compile(r"(?m)^dateModified:.*$\r?\n?")
+
+
+def check_datemodified_bumped(changed_paths):
+    """Error when a post's content changed but dateModified did not move.
+
+    A page whose dateModified never moves tells crawlers it was never revised,
+    which is what 606 of Property's 806 posts were doing before 2026-09-25.
+    Comparing with the dateModified line stripped from both sides means a commit
+    that ONLY bumps the date does not trip the check, and a brand-new post (no
+    base version) is skipped because it has nothing to have been modified from.
+    """
+    base = os.environ.get("VALIDATE_BASE_REF") or "HEAD~1"
+    errors = []
+    for path in sorted(p for p in changed_paths
+                       if "/web/content/blog/" in p.replace("\\", "/") and p.endswith(".md")):
+        try:
+            old = subprocess.run(["git", "show", f"{base}:{path}"], cwd=PROJECT_ROOT,
+                                 capture_output=True, text=True, encoding="utf-8",
+                                 errors="replace")
+        except OSError:
+            return []          # no git: caller already warns, do not invent failures
+        if old.returncode != 0:
+            continue           # new file (or rename): nothing to compare against
+        full = os.path.join(PROJECT_ROOT, path)
+        if not os.path.exists(full):
+            continue           # deleted
+        with open(full, encoding="utf-8") as fh:
+            new = fh.read()
+        if DATEMOD_RE.sub("", old.stdout) == DATEMOD_RE.sub("", new):
+            continue           # only the date line moved, or nothing changed
+        old_dm = DATEMOD_RE.search(old.stdout)
+        new_dm = DATEMOD_RE.search(new)
+        if (old_dm.group(0).strip() if old_dm else None) == (new_dm.group(0).strip() if new_dm else None):
+            errors.append(path)
+    return errors
+
+
 def validate_site(site_name, site_config, verbose=False, enforce_paths=None):
     """Validate all posts for a site.
 
@@ -253,6 +292,15 @@ def main():
 
     grand_total_errors = 0
     grand_total_warnings = 0
+
+    if enforce_paths:
+        stale = check_datemodified_bumped(enforce_paths)
+        if stale:
+            print(f"\n{len(stale)} post(s) changed without bumping dateModified:")
+            for path in stale:
+                print(f"  ERROR: {path}")
+            print("  Set dateModified to the date of this edit, or revert the content change.")
+            grand_total_errors += len(stale)
 
     for site_name, site_config in sites_to_check.items():
         print(f"\n{'=' * 60}")

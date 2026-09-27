@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Finance for a Land Purchase"
 summary: "Bare land is the hardest security a short-term lender will take: no rent, planning risk and title traps push loan-to-value down to roughly 50 to 65 percent of value and force interest to be rolled. This guide explains how a land bridge is priced, where the exit comes from, and how the interest is taxed depending on whether you are an investor or a developer."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

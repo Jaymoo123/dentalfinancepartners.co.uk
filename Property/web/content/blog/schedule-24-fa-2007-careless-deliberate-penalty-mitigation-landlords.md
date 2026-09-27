@@ -3,6 +3,7 @@ title: "Schedule 24 FA 2007 Penalty Mitigation: Landlord Disclosure Quality, Sus
 slug: "schedule-24-fa-2007-careless-deliberate-penalty-mitigation-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/schedule-24-fa-2007-careless-deliberate-penalty-mitigation-landlords"
 date: "2026-05-25"
+dateModified: "2026-08-18"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Schedule 24 Penalty Mitigation for Landlords: Depth Guide"

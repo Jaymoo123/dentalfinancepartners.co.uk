@@ -46,7 +46,7 @@ faqs:
     answer: "No. Once SRT makes you UK-resident, the FA 1995 Schedule 23 Non-Resident Landlord withholding obligation falls away from your UK-residence start date. Notify your letting agent and tenants in writing (NRL6 close-out paperwork); the agent or tenant stops the 20% withholding; you self-assess UK rental income on SA100 plus SA105 going forward. Arrange the NRL cessation paperwork promptly to avoid letting-agent admin lag. UK rental income is UK-taxable regardless of NRL status under ITTOIA 2005 Part 3 (individuals) or CTA 2009 Part 4 (companies)."
   - question: "I am arriving with a Cayman, Jersey or Singapore trust I settled before arrival. What happens to it?"
     answer: "Pre-arrival trust settlements where you (as settlor) were non-UK-resident and non-LTR at the time of settlement typically qualify as excluded property per the IHTA 1984 s.48 architecture (now reframed by FA 2025: the historic s.48(3) deemed-domicile test was omitted and replaced by a new s.48ZA LTR test). Once you become LTR (year 10 of UK residence typically), further settlements into the trust lose excluded-property status and the existing settled property may be reviewed under the s.48ZA mechanics. Pre-LTR trust planning for HNW arrivals is a specialist area requiring co-ordinated private-client counsel and tax counsel."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

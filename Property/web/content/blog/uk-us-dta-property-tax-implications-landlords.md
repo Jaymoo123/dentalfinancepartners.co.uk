@@ -42,7 +42,7 @@ faqs:
     answer: "Yes if you are non-UK-resident. The UK Non-Resident CGT regime (TCGA 1992 s.1A and Schedules 1A, 1B, and 4AA) requires every non-resident disposal of UK land to be reported within 60 days of completion, regardless of whether tax is due. A US citizen UK-resident at the date of disposal is within UK-resident CGT rules (the 60-day return is only required where tax is due in the UK-resident case). The US Form 1040 capital gains computation runs alongside."
   - question: "What are the gift and estate tax implications of holding UK property as a US citizen?"
     answer: "The US imposes worldwide estate tax on US citizens with a $13.99 million unified credit for 2026, plus an unlimited marital deduction for transfers to a US-citizen spouse. UK IHT applies on UK situs property regardless. The UK-US estate tax convention (1978) sits separately from the income tax convention and provides credit relief and tie-breakers for estate tax purposes. Cross-border estate planning for US-citizen UK landlords requires both treaties to be read in tandem."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

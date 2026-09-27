@@ -42,7 +42,7 @@ faqs:
     answer: "Where the individual retains any part of the property letting activity in their own name (a single property, a part-interest in a property, a share of a partnership), the transfer is no longer of the whole of the business and s.162 fails. The relief operates on a wholly-or-nothing basis: a 90% transfer with a 10% retention does not give 90% relief. A common error is to retain one favourite cottage outside the company; this fails the relief and the entire gain on the transferred properties crystallises. The fix is to incorporate everything, or to incorporate nothing."
   - question: "Where does the decision typically land for a 3-property former FHL owner?"
     answer: "For a higher-rate-taxpayer with three leveraged former-FHL properties worth around £1.2 million in aggregate, our modelling for clients in 2025 and 2026 typically shows incorporation paying back within 5 to 7 years of holding through the company, driven mainly by S24 mitigation and (from 2027) the 2% property income surcharge being avoided. The upfront costs (CGT to the extent s.162 does not roll over the gain, SDLT plus 5% surcharge, ATED if any property exceeds £500,000) are real but recouped through ongoing tax savings. For basic-rate-taxpayer owners or unleveraged portfolios, the maths is less compelling and personal ownership often remains the better answer."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Finance for Refurbishment: Light, Heavy and the BRRR Exit"
 summary: "Refurbishment bridging is defined by the works, not the postcode. A cosmetic tidy-up and a structural remodel sit on very different products, with different drawdown mechanics, LTVs and exits. This guide explains the light-versus-heavy line, how stage payments release against a schedule of works, and how the BRRR refinance lets an investor recycle capital into the next project. Education only, with the tax treatment of the interest summarised and linked, not a route to arrange finance."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

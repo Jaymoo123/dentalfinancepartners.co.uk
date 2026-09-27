@@ -46,7 +46,7 @@ faqs:
     answer: "It sits inside the bare-trust axis as the documentary form of an undivided-share bare trust. Where two spouses hold legal title as joint tenants but execute a declaration of trust recording a 75/25 beneficial split, the 75/25 ratio is a bare trust at general law (each spouse is absolutely entitled to their declared share, transparent for income tax and CGT). The declaration of trust is the document that records the share; the underlying legal arrangement is bare. Our existing page on declaration-of-trust mechanics walks the document detail; this page sits one level up at the structural decision."
   - question: "Does the TRS apply to a declaration of trust between spouses on a jointly-owned home?"
     answer: "Yes if the declaration of trust creates an undivided-share express trust over UK land. The 2020 amendment broadened the registration scope from taxable-only to all UK express trusts holding land, with limited exclusions in Schedule 3A of the Money Laundering Regulations 2017. A common exclusion that does apply: a trust over a property where the legal owners and beneficial owners are the same persons (often called a 'co-ownership trust') and there is no separate declaration of unequal shares. Once the spouses execute a declaration of unequal shares, that exclusion typically falls away and the trust must be registered."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

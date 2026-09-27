@@ -44,7 +44,7 @@ faqs:
     answer: "Filing: Companies House WebFiling portal or the Find and update company information service at find-and-update.company-information.service.gov.uk. The online route is overwhelmingly the operational default. Register checking: the same Find and update company information service shows the public register entries for any UK company, including confirmation statement filing history, directors, PSCs, and accounts. Free access. For the state of the ECCTA reforms more broadly, the Companies House campaign page at changestoukcompanylaw.campaign.gov.uk is the canonical tracker."
   - question: "How does this page relate to the 2024-2026 confirmation statement changes page?"
     answer: "This page is the definitional pillar: for the reader who has not yet engaged with the changes and wants the entry-level walkthrough of what a confirmation statement is, what it contains, when it is due, what it costs, and what the penalties are for missing it. The 2024-onwards page is the operational deep-dive on the four ECCTA-era changes: for the reader who already knows what a confirmation statement is and wants the change-detail walkthrough. Reading sequence: this page first to settle the definitional question; then the deep-dive for the change-by-change operational mechanics."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

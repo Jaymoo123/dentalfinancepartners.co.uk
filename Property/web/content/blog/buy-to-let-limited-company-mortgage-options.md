@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 faqs:
   - question: "Do I need a personal guarantee for a limited company buy-to-let mortgage?"
     answer: "Almost always. Lenders take personal guarantees from all directors and any shareholder with a meaningful stake (often 20% or more). The guarantee makes you personally liable for the debt if the company cannot pay, so the limited liability of the company structure does not extend to the mortgage itself. A small number of lenders accept reduced or capped guarantees for experienced borrowers with a track record, but treat a full personal guarantee as the default."

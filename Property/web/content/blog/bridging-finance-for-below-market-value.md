@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Finance for a Below Market Value Purchase"
 summary: "Buy a property for less than it is worth and the tempting idea is to borrow against its true value rather than the price you paid, funding the deal with little or none of your own cash. This guide explains the difference between open market value and price, why most lenders anchor to the lower of the two for six months, when a specialist lender will lend against day-one value, the vendor-gifted-deposit mechanism, and the fraud and money-laundering red flags that surround undervalue sales."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

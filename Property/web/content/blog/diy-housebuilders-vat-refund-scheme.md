@@ -44,7 +44,7 @@ faqs:
     answer: "Late submission (after the six-month window), missing original invoices, ineligible items in the claim (white goods, professional services on new builds, carpets), invoices in someone else's name (the claim must be in the name of the person building the dwelling), and disputes over whether the dwelling is genuinely new or a substantial reconstruction. Around 25-30% of claims are rejected in part on first review; resubmission with corrections is usually possible if the deadline has not passed."
   - question: "Can I claim if I have already lived in the dwelling for some time?"
     answer: "The completion date is the trigger for the six-month clock, not the occupation date. A self-builder who completed in January 2026 and moved in immediately must claim by July 2026. Living in the dwelling before claiming is fine; failing to claim before the deadline is the failure mode."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

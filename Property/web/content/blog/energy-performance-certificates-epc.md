@@ -40,7 +40,7 @@ faqs:
     answer: "Six steps. One: check current EPC validity for every property in the portfolio at gov.uk; note expiry date and band. Two: for any property below EPC E without a registered exemption, stop marketing immediately, register an exemption or upgrade to E. Three: for any property at exact-band-E (SAP 39) with marginal risk of slipping, plan an upgrade or buffer move-up to band D. Four: plan for portfolio-level 10-year mass-expiry of EPCs by scheduling rolling re-assessment. Five: track government consultation on the EPC C 2030 and £10,000 cap trajectory and any future SI laying; plan upgrades on the policy expectation but do not commit to a schedule until the SI is laid. Six: document MEES upgrade spend with capital-versus-revenue tagging at the point of spend, for tax-side treatment and future CGT base-cost evidence."
   - question: "Is the EPC C 2030 framing the same in Scotland and Northern Ireland?"
     answer: "No. EPCs in Scotland operate under separate Scottish Building Standards regulations and the Energy Performance of Buildings (Scotland) Regulations 2008. Northern Ireland operates under separate Northern Ireland legislation. This page covers England and Wales, where the operative statutory instruments are SI 2012/3118 (EPC architecture) and SI 2015/962 (MEES). Landlords with pan-UK portfolios should treat each jurisdiction's regime separately rather than assuming the England-and-Wales framework applies UK-wide."
-dateModified: "2026-05-27"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

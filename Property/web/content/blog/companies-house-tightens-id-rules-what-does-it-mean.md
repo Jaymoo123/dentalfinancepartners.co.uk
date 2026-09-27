@@ -40,7 +40,7 @@ faqs:
     answer: "The Companies House register has moved from a low-friction recording instrument to a register-integrity gatekeeper, and the identity-verification gate is the most visible operational manifestation of that move; for landlord LtdCo portfolios that means every natural person needs a personal code, every SPV needs an appropriate-address registered office and a registered email, every confirmation statement needs the lawful purposes attestation plus verified personal codes, and the file as a whole now reads to counterparties as a curated and verified record rather than a passive deposit."
   - question: "Where do I check the operative state of the reforms?"
     answer: "Two canonical sources. Primary: the Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, with topic sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: the Companies House blog at companieshouse.blog.gov.uk for operational announcements and phase-rollout posts. The legacy gov.uk/government/news/changes-to-uk-company-law URL is no longer active and should not be relied on."
-dateModified: "2026-05-27"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

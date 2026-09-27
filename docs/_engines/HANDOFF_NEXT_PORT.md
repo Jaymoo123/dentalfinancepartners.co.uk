@@ -26,10 +26,12 @@ STATE OF PLAY. **Eight sites are ported, and four of those eight have also had t
 uplift.** Ported: generalist, solicitors, dentists, medical, construction-cis,
 contractors-ir35, charities and crypto. All phases built, independently reviewed, gap-fixed
 and tagged. Verify with `git tag -l 'port-*'`, which is the only authority; STATE.md files
-narrate, tags record. **NOTHING IS PUSHED AND NOTHING IS DEPLOYED. Production serves the
-pre-port SHA on every site, and 131 commits sit unpushed**
-(`git rev-list --count origin/main..HEAD`, re-derived 2026-09-14 after `48312e2c`;
-`origin/main` is `7b5c0ce8`).
+narrate, tags record. **SUPERSEDED 2026-09-23: the eight ports ARE pushed and ARE live.**
+This block said "nothing is pushed, 131 commits unpushed, `origin/main` is `7b5c0ce8`" and that
+was true on 2026-09-14. The ports shipped on 2026-09-16 (`9e43db45`, plus the Property header fix
+`017cea0e`), `origin/main` now stands at `7a4f1bad`, and `git rev-list --count origin/main..HEAD`
+returns **1**, not 131. Re-derived 2026-09-23, and confirmed against the live sites: all eight
+ported domains serve the kit build. Derive it yourself before trusting this line either.
 
 **UPLIFTED (four, all 2026-09-14, all untagged):** crypto `7dfe04b3`, charities `ba7b184a`,
 contractors-ir35 `569d3304`, construction-cis `48312e2c`. **NOT UPLIFTED, and they do not

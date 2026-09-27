@@ -14,7 +14,7 @@ summary: "From 6 April 2027 rental profit is taxed personally at 22%, 42% or 47%
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 schema: ""
 faqs:
   - question: "What are the new property income tax rates from April 2027?"

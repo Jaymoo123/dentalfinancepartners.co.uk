@@ -3,6 +3,7 @@ title: "What's Changing for Property CGT from 2027 and What Should Landlords Do?
 slug: "cgt-property-2027-rate-changes-uk-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-property-2027-rate-changes-uk-landlords"
 date: "2026-05-21"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Capital Gains Tax"
 metaTitle: "Property CGT 2027 Changes: What's Confirmed for UK Landlords"

@@ -3,6 +3,7 @@ title: "Essential Bookkeeping for Sole Traders and Property-Income Individuals (
 slug: "essential-bookkeeping-tips-for-sole-traders"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/essential-bookkeeping-tips-for-sole-traders"
 date: "2026-05-27"
+dateModified: "2026-05-29"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Bookkeeping for Sole Traders + Property Landlords 2026/27"

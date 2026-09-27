@@ -3,6 +3,7 @@ title: "Lease Extension vs Freehold Purchase: The Decision-Architecture for Leas
 slug: "lease-extension-vs-freehold-purchase"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/lease-extension-vs-freehold-purchase"
 date: "2026-05-26"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Lease Extension vs Freehold Purchase: How to Choose (2026)"

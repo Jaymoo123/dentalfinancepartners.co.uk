@@ -38,7 +38,7 @@ faqs:
     answer: "TCGA 1992 s.18 provides that losses on disposals to connected persons are ring-fenced: they can only be set against future gains on disposals to the same connected person, not against general gains. You cannot crystallise a property loss against your general gains by selling to a connected party (spouse, parent, family company). The connected-party route to loss-crystallisation is closed by s.18."
   - question: "Does repeated buying and selling of property make me a trader?"
     answer: "Potentially yes. If you repeatedly buy and sell properties in short cycles, even at arm's length to third parties, you sit in CTA 2010 Part 8ZB and ITA 2007 Part 9A territory. The frequency badge (Pickford v Quirke (1927) 13 TC 251) plus the supplementary-work badge (Marson v Morton [1986] 1 WLR 1343) catch anyone who looks too much like a flipper. Even legitimate sale-and-rebuy patterns can accumulate into a trading classification if the volume grows."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

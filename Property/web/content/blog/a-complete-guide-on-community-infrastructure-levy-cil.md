@@ -3,6 +3,7 @@ title: "A Complete Guide to the Community Infrastructure Levy (CIL): Statutory L
 slug: "a-complete-guide-on-community-infrastructure-levy-cil"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/a-complete-guide-on-community-infrastructure-levy-cil"
 date: "2026-05-26"
+dateModified: "2026-08-18"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Community Infrastructure Levy (CIL): A Complete Guide"

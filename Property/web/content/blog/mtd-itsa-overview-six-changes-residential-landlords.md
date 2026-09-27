@@ -44,7 +44,7 @@ faqs:
     answer: "No, the obligation is triggered by your qualifying income for the reference year. The HMRC letter is a courtesy notice telling you HMRC's reference-year test caught your filed return. You are in MTD from 6 April of the mandate year regardless of whether the letter arrives, but in practice the letter is the moment most landlords realise they need to act."
   - question: "Where do I go for the full process detail on each change?"
     answer: "The MTD property income 2026 complete guide is the broadest starting point. The quarterly-reporting workflow is in the MTD quarterly reporting guide; software comparisons are on the best MTD software for landlords page and the free-vs-paid options comparison; record-keeping detail is on the digital record-keeping requirements page; threshold and exemptions are on the threshold and exemptions guide; penalties detail is on the MTD penalties page."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

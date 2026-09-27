@@ -39,7 +39,7 @@ faqs:
     answer: "The loan charge is a one-off historic-loan crystallisation at 5 April 2019. MTD ITSA is an ongoing digital reporting regime for current-year rental and self-employment income from 6 April 2026 onwards. The two regimes do not statutorily overlap. A landlord-director settling a loan charge runs a parallel MTD ITSA cycle for their current rental activity; the loan-charge tax liability is a one-off settlement, not an ongoing MTD-reportable item."
   - question: "What case law underpins the loan-charge architecture?"
     answer: "RFC 2012 Plc v Advocate General for Scotland [2017] UKSC 45 (the Rangers case) is the controlling Supreme Court authority. The decision treated EBT loan arrangements as employment earnings at the point the loan was made, establishing the no-redirection-of-earnings principle that underpins Part 7A and the loan charge sweep-up. HMRC v Hargreaves [2022] UKUT 34 dismissed a loan-charge constitutional and human-rights challenge. Hoey v HMRC [2022] EWCA Civ 656 covered the transfer-of-assets-abroad interaction."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

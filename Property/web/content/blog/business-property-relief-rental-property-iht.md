@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 faqs:
   - question: "Does Business Property Relief apply to buy-to-let property?"
     answer: "No. Standard buy-to-let does not qualify for Business Property Relief. In Pawson v HMRC [2013] UKUT 050 (TCC) the Upper Tribunal confirmed that letting residential property is mainly an investment activity, which is excluded from relief by section 105(3) IHTA 1984. Collecting rent and managing tenancies, even actively, is investment rather than trading, so a buy-to-let portfolio passes into the estate at full value for inheritance tax."

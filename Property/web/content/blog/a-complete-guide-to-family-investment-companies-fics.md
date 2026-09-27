@@ -38,7 +38,7 @@ faqs:
     answer: "Not necessarily. The classic FIC design uses voting and non-voting share classes so the founder keeps decision-making control through the voting class while the economic upside accrues to a growth-share class held by the children (or by a trust for the children). Articles of association and shareholder agreements lock in the founder's reserved matters, dividend policy, share-transfer pre-emption rights, and ultimate exit mechanics. Done properly, the founder retains practical control of the FIC for life while the family wealth-transfer happens on the share register. Done badly, control leakage is the single most common cause of FIC failure."
   - question: "What is the typical FIC timeline from first conversation to incorporation?"
     answer: "For a family with a clear plan and a co-operating adviser, the legal and tax work typically takes between two and six months from first meeting to incorporation and asset transfer. Bespoke articles drafting and shareholder agreement negotiation account for most of that window, alongside the CGT and SDLT modelling on the property transfer. The post-incorporation phase, including funding the FIC, board governance setup, and the first dividend cycle, runs over the following twelve months. Identity-verification under ECCTA adds a per-person step at the front, typically a few hours of effort but blocking director appointment until complete."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

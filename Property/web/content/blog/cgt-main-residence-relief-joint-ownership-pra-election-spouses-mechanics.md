@@ -46,7 +46,7 @@ faqs:
     answer: "The 2-year window for the initial nomination runs from the beginning of the period the election covers. If you acquire a second residence and have not yet made a nomination, your first valid nomination can cover the period from acquisition. A variation of an existing nomination can apply to periods beginning no earlier than 2 years before the variation notice (s.222(5)(b)). Practically, where you have made no nomination and the 2-year window has lapsed, your main residence is determined on the facts of occupation."
   - question: "What CGT rate applies to a non-PRR-relieved gain on a jointly owned residential property?"
     answer: "For disposals in 2026/27 residential property gains are taxed at 18% on gains within the basic-rate band and 24% above it (the higher rate was reduced from 28% to 24% with effect from 6 April 2024). Each of you reports your share of the gain on your own self-assessment return; each of you gets your own annual exempt amount (£3,000 for 2026/27) and is taxed by reference to your own basic-rate band capacity in the year of disposal."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

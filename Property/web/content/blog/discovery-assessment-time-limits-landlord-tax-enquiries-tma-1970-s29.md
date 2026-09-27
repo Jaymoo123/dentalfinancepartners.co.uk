@@ -3,6 +3,7 @@ title: "Discovery Assessment Time Limits for Landlord Tax Enquiries (TMA 1970 s.
 slug: "discovery-assessment-time-limits-landlord-tax-enquiries-tma-1970-s29"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/discovery-assessment-time-limits-landlord-tax-enquiries-tma-1970-s29"
 date: "2026-05-24"
+dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Discovery Assessment Time Limits: TMA 1970 s.29"

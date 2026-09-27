@@ -42,7 +42,7 @@ faqs:
     answer: "The HMO licence is held by the landlord under Housing Act 2004 Part 2. On transfer to a LtdCo, the LtdCo must apply for a new licence in its own name, or seek transfer of the existing licence (local authority practice varies). Operative cost: licence fees of £500 to £1,500 per HMO per 5-year cycle plus administrative time. Risk during transfer: running an unlicensed HMO is an offence under Housing Act 2004 s.72 with rent-repayment-order exposure under Housing and Planning Act 2016 ss.40 to 45 (tenant can recover up to 12 months' rent). Operational discipline: time the licence application to overlap with the SDLT, lender, and accounting transfer to avoid an unlicensed gap."
   - question: "How does this page differ from the existing HMO-incorporation mechanics page?"
     answer: "This page is the decision-helper / pros-and-cons framing layer: an honest decision framework weighing the seven HMO-specific factors that change the standard incorporation math. The existing HMO-incorporation mechanics page covers the layer beneath: the how-to of the SDLT, CGT, lender, and accounting steps once the decision is made. Reading sequence: this page first to settle the should-you question; the mechanics page once you decide yes. The pages cross-link."
-dateModified: "2026-05-27"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

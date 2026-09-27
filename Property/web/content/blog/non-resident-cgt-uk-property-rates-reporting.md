@@ -3,7 +3,7 @@ title: "Non-Resident CGT on UK Property 2026/27: Rates, Reporting and the Regime
 slug: "non-resident-cgt-uk-property-rates-reporting"
 canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax/non-resident-cgt-uk-property-rates-reporting"
 date: "2026-04-10"
-dateModified: "2026-05-24"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

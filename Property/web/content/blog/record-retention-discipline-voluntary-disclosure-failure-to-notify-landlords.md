@@ -3,6 +3,7 @@ title: "Record Retention Discipline for Landlord Tax: TMA 1970 s.12B and Volunta
 slug: "record-retention-discipline-voluntary-disclosure-failure-to-notify-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/record-retention-discipline-voluntary-disclosure-failure-to-notify-landlords"
 date: "2026-05-24"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Landlord Record Retention: TMA 1970 s.12B and Disclosure"

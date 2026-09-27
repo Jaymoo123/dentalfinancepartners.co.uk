@@ -55,7 +55,7 @@ faqs:
   answer: Yes. Making Tax Digital for VAT applies to all VAT-registered businesses. You must keep digital records and submit your VAT returns using MTD-compatible software, with a digital link from your records through to the figures on the return. Spreadsheets are allowed only where bridging software provides that digital link. This is separate from MTD for Income Tax, which is being phased in for landlords by income level.
 - question: Is a free online VAT calculator enough for a property business?
   answer: A free calculator handles the net-to-gross arithmetic, and that part is genuinely easy. What it cannot do is tell you which rate applies, whether you have validly opted to tax, whether a supply is exempt, or how partial exemption restricts your recovery. Those decisions drive the real numbers and the real risk, which is why VAT on property is one of the areas where specialist advice consistently pays for itself.
-dateModified: '2026-06-02'
+dateModified: "2026-06-23"
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
 - gov.uk

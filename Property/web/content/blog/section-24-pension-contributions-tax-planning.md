@@ -3,7 +3,7 @@ title: "Section 24 and Pension Contributions: Tax Planning Strategies for Landlo
 slug: "section-24-pension-contributions-tax-planning"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-pension-contributions-tax-planning"
 date: "2026-04-01"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

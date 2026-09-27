@@ -46,7 +46,7 @@ faqs:
     answer: "Largely obsolete from 6 April 2025. FA 2025 replaced the domicile-based remittance basis with the Foreign Income and Gains regime (a four-year exemption for arrivers who have been non-UK-resident for ten years), the Temporary Repatriation Facility (a flat-rate-charge cleanout for legacy unremitted foreign income) and the Long-Term Resident test for IHT at IHTA 1984 ss.6A to 6C plus ss.267ZC to 267ZF. Treaty residence and DTA mechanics are separate from the FIG, TRF and LTR architecture. The legacy non-dom plus treaty-residence planning structure is now stale. Consult a specialist for current FIG, TRF and LTR positioning."
   - question: "Step-by-step for the cross-border landlord, what do I actually do?"
     answer: "First, identify your domestic residence under each state's law. Second, apply the relevant Article 4 tie-breaker where dual residence exists. Third, identify the relevant allocation article (Article 6 for property income, Article 13 for property gains, Article 10 or 11 for dividends or interest). Fourth, check the UK statutory overlay (NRL withholding, 60-day NRCGT) which runs alongside the treaty and is not displaced by treaty residence. Fifth, identify the Article 23 elimination method to determine which state gives credit. Sixth, file in both jurisdictions with consistent positions and claim foreign tax credit where applicable. Specialist cross-border tax adviser essential for any non-trivial position."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

@@ -42,7 +42,7 @@ faqs:
     answer: "Yes. Revenue Scotland looks at the practical substance, not just the document. If the 'bare trustee' exercises any discretion over the property (timing of sale, choice of tenant, distribution of income), or if the 'beneficiary' lacks the unfettered right to call for the property, the trust may be re-characterised as a settlement under Sch 18 Part 4. The look-through then fails and the trustee becomes the chargeable person. The challenge is both factual (what does the trustee actually do?) and documentary (what does the declaration of trust say?). Sessions advising on bare-trust acquisitions should treat the characterisation question as load-bearing for the relief outcome and document the bare-trust mechanics carefully from the outset."
   - question: "Who actually pays the LBTT in practice?"
     answer: "The trustee is jointly liable under Sch 18 para 6, but the funds typically come from the beneficiary either via the trust assets or directly to the conveyancer. The trustee has a right of indemnity against trust assets and the beneficiary. In a parent-for-child arrangement, the practical flow is usually that the child (or the parent on the child's behalf, by gift) provides the LBTT funds; the trustee signs the LBTT return and submits payment to Revenue Scotland; the substantive tax position is the child's. The joint-liability mechanism in para 6 is the statutory backstop for cases where the trustee cannot recover from the beneficiary, but it does not change who the taxpayer substantively is."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

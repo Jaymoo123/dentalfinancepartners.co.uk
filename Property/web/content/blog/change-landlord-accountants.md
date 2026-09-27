@@ -38,7 +38,7 @@ faqs:
     answer: "Yes. Several timing-dependent reasons: mid-enquiry under TMA s.9A (continuity risk); mid-60-day CGT residential disposal window (deadline risk); mid-quarterly MTD submission window (handover risk); days before a SA or CT filing deadline (handover risk); mid-ECCTA ACSP cascade for LtdCo (corporate-filings handover risk); any time the switch would create a substantive submission gap. Recommended windows: immediately after a tax-year-end submission; BEFORE the new tax year's quarterly cycle starts; for LtdCo, around the accounting reference period end."
   - question: "How much should I budget for the transition?"
     answer: "Variable; depends on firm, portfolio size, and complexity. Typical components: new firm engagement fee (one-off plus ongoing); outgoing firm may charge a handover or closure fee per their engagement letter; outstanding fees with the outgoing firm remain payable. For a typical 4-5 property BTL portfolio, expect a one-off transition cost of £500-£1,500 plus ongoing fee differentials. For LtdCo plus LLP structures with ACSP cascade, add £200-£500 for the ECCTA ID verification step."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

@@ -3,6 +3,7 @@ title: "Capital Allowances for Care Homes: What a Commercial Buyer Can Claim"
 slug: capital-allowances-for-care-homes
 canonical: https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/capital-allowances-for-care-homes
 date: "2026-07-30"
+dateModified: "2026-08-17"
 author: "Property Tax Partners Editorial Team"
 category: Property Types & Specialist Tax
 metaTitle: "Capital Allowances for Care Homes | 25-35% Claim"

@@ -40,7 +40,7 @@ faqs:
     answer: "Yes. The 2% non-resident SDLT surcharge in Schedule 9A FA 2003 applies to UK residential property purchased by a non-resident, on top of the 5% additional dwellings surcharge if the property is a second home. A UAE-resident buying a £400,000 BTL property in 2026/27 faces SDLT of: standard rates plus 5% additional dwellings plus 2% non-resident, totalling around £41,500 on the purchase. The refund route applies if the buyer becomes UK-resident (183+ days) within the 12-month window after completion."
   - question: "How long do I need to stay in Dubai to avoid the section 10A 5-year recapture?"
     answer: "More than 5 complete tax years of non-residence. The clock counts the years between departure and return; non-residence of 5 years or less brings the 5-year recapture rule into play if you return within the window. A 3-year or 4-year Dubai posting that ends with a return to the UK can pull non-UK situs gains and the pre-rebasing portion of UK land gains back into the UK tax net. To genuinely escape both layers, plan for a 6-year-plus stay or expect to model the recapture exposure carefully."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

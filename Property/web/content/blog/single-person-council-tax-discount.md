@@ -3,6 +3,7 @@ title: "Single-Person Council Tax Discount: How the 25% Discount Under LGFA 1992
 slug: "single-person-council-tax-discount"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/single-person-council-tax-discount"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Single-Person Council Tax Discount: How to Apply"

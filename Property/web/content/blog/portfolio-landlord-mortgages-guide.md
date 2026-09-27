@@ -12,7 +12,7 @@ image: ""
 h1: "Portfolio Landlord Mortgages: How the Aggregate Stress Test Works"
 summary: "Once you hold four or more mortgaged buy-to-lets, PRA rules change how every new mortgage is underwritten. This guide explains the portfolio-landlord definition, the aggregate portfolio ICR that stress-tests your whole portfolio at once, the portfolio questionnaire and business plan lenders now expect, and how refinancing onto one facility works. It is the finance mechanics; the portfolio tax planning sits on our tax pages, cross-linked."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

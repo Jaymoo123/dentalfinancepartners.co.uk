@@ -46,6 +46,18 @@ export const metadata: Metadata = {
   verification: {
     google: niche.seo.google_site_verification,
   },
+  // Snippet directives are the documented control over how much of a page
+  // search and AI features may show. We previously set none, which leaves the
+  // limit to the engine's default. These are permissive, not restrictive:
+  // -1 means "no limit". Pages that set their own robots (e.g. /thank-you
+  // noindex) still override this.
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,

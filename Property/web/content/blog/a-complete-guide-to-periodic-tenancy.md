@@ -38,7 +38,7 @@ faqs:
     answer: "No. The Renters' Rights Act 2025 substantive reform applies to England only. Wales operates under the Renting Homes (Wales) Act 2016 (occupation contracts; different terminology and a different commencement timeline). Scotland operates under the Private Housing (Tenancies) (Scotland) Act 2016 (private residential tenancies; different tenant-notice and rent-increase mechanics). Each devolved regime uses different statutory language and different mechanics, so do not collapse the three positions. The page above and the cross-linked deep dives all relate to England."
   - question: "How does this guide differ from the landlord obligations page?"
     answer: "Our sibling page at landlord obligations on the periodic-tenancy switch is the day-of-conversion compliance bundle: deposit re-protection, gas safety certificates, EICR re-papering, EPC, Right to Rent re-check, Section 8 notice templates and the operational housekeeping that accompanies the periodic switch. This guide sits upstream: the definitional orientation page on the periodic-tenancy concept itself, the four legal routes by which a tenancy becomes periodic, and the operational and tax-recognition consequences. Read this guide for orientation; read the obligations page for the day-of-conversion compliance work."
-dateModified: "2026-05-28"
+dateModified: "2026-08-18"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

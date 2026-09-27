@@ -38,7 +38,7 @@ faqs:
     answer: "Case-by-case calculation; no default answer. The LLP works in Scenario A (genuine family income-splitting), Scenario B (non-tax flexibility like asset protection), Scenario C (residual hybrid-LLP where corporate member is genuinely external), and Scenario D (SDLT-on-incorporation via SLP relief with stable post-transfer structure). The Ltd Co works where Section 24 is the central pain point and the corporate-side cost stack (CT, extraction tax, accountancy) is acceptable. The decision is fact-specific; durable mistakes are expensive to reverse."
   - question: "What about LLP property in Wales or Scotland?"
     answer: "The income-tax and Section 24 analysis is UK-wide uniform; the salaried-member and mixed-membership rules apply UK-wide; the SDLT-on-incorporation route into LLP is England-specific (FA 2003 Sch 15 para 10). For Welsh property, the LTT regime applies with its own partnership-LTT mechanics under LTTADA 2017. For Scottish property, the LBTT regime applies with its own partnership-LBTT mechanics. If you have cross-border LLP property scenarios, the analysis splits at the stamp-duty-equivalent step."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

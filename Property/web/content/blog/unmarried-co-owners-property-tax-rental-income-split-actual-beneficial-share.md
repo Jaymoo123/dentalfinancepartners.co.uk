@@ -46,7 +46,7 @@ faqs:
     answer: "Yes for income tax: actual beneficial ownership governs the split, no 50/50 default, no Form 17. Different for CGT: friends and business partners are not connected persons under s.286 (which only catches relatives, spouses / civil partners, partners in a formal partnership, and trustees of certain settlements), so transfers between them are taxed on actual consideration unless the transaction is not at arm's length (in which case s.17(1)(a) applies and uses market value). Where the joint ownership is via a formal partnership (registered or under the Partnership Act 1890), TCGA 1992 s.286(4) makes the partners connected persons and market value applies."
   - question: "What happens to the income split when an unmarried co-owner couple separates?"
     answer: "Income continues to follow actual beneficial ownership, unaffected by the change in personal circumstances. Unlike spouses, there is no 'living together' test that switches the basis: unmarried co-owners are taxed on actual beneficial ownership at all times. Any restructuring of beneficial shares (for example one cohabitee buying out the other's interest) is a market-value disposal of the share leaving, with CGT crystallising on the transferring co-owner; the s.58 no-gain-no-loss protection that spouses have on separation is not available."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

@@ -40,7 +40,7 @@ faqs:
     answer: "Generally not within the substantial-interest definition, because employee share scheme participants rarely hold 25% or greater individual interests. The 25% test is the gatekeeper for indirect disposal: small minority shareholders (under 25%) are outside NRCGT indirect disposal even if the company is 75%+ property-rich. SAYE / SIP / EMI / CSOP scheme participations are usually well below the 25% threshold and are outside scope. Employer companies with property-rich balance sheets that grant share options to non-resident employees do not trigger NRCGT indirect disposal on employee disposal of those small-percentage holdings."
   - question: "How does NRCGT indirect disposal interact with section 10A temporary non-residence?"
     answer: "Indirect disposals by a non-resident during a period of temporary non-residence (5 years or less, with the 4-of-7 prior-residence condition met) are within NRCGT at the time of disposal AND are potentially within s.10A recapture on the return year. Section 10A would recapture the pre-2019-rebasing portion of the indirect-disposal gain on the return year, the same way it recaptures the pre-2015-rebasing portion of UK residential land direct disposals. The double-coverage by NRCGT (post-rebasing) plus s.10A (pre-rebasing) gives no overall extra exposure; it just routes the pre-rebasing portion through the return-year SA instead of the original disposal-year NRCGT return."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

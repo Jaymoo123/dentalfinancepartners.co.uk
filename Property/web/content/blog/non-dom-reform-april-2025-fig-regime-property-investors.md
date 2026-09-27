@@ -40,7 +40,7 @@ faqs:
     answer: "Overseas Workday Relief (OWR) is a separate concession for UK-resident individuals performing overseas work duties. From 6 April 2025 OWR is also reformed: a 3-year window for new arrivals (aligned conceptually with FIG but on a different timer and computation), with a cap on the relievable amount of the lower of 30% of qualifying overseas employment income or £300,000 a year. For inbound investors who also work overseas on a UK-resident basis, the OWR / FIG interaction needs separate modelling; OWR covers UK-resident overseas workdays, FIG covers foreign investment income."
   - question: "Can I use FIG for foreign property income if my partner is the legal owner?"
     answer: "Only on your share of the income. Where foreign property is held jointly or by a married couple, each owner is assessed on their share of the rental income separately. If one spouse qualifies for FIG and the other does not (different residence history, different status), the FIG cover applies only to the qualifying spouse's share. For families relocating to the UK together, both spouses' qualifying positions should be checked separately; assuming both qualify because the family moves together is a frequent error."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

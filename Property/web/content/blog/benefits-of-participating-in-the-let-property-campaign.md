@@ -39,7 +39,7 @@ faqs:
     answer: "The disclosed years are closed (subject to the section 29(4) and (5) re-opening conditions). Continuing rental income from the disclosed period onwards must be brought into the regular self-assessment cycle. From 6 April 2026, where the landlord's qualifying property and trading income exceeds the Making Tax Digital for Income Tax threshold (phase 1 £50,000, phase 2 £30,000 from 6 April 2027, phase 3 £20,000 from 6 April 2028), the cycle moves into MTD ITSA. Record-keeping discipline under TMA 1970 section 12B continues regardless of the filing mode."
   - question: "Does an HMRC nudge letter mean I have lost the unprompted-disclosure benefit?"
     answer: "Not automatically. Receipt of an HMRC nudge letter is informal contact, not a formal section 9A enquiry or a section 29 discovery assessment. HMRC's operational practice has been to accept a disclosure made in response to a nudge letter as still unprompted, provided the disclosure is filed within the nudge-letter response window and before any formal enquiry is opened. The discipline is to act fast: notifying LPC the same week the nudge letter arrives preserves the unprompted floor; waiting until after the response window expires and HMRC escalates to a formal enquiry pushes the disclosure into the prompted floor."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

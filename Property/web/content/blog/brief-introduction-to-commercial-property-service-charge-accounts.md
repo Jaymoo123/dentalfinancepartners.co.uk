@@ -38,7 +38,7 @@ faqs:
     answer: "Unlike residential (where the FTT Property Chamber has dedicated jurisdiction under LTA 1985 s.27A), commercial disputes are resolved through (a) contractual mechanisms in the lease (typically dispute resolution clauses with expert determination or arbitration); (b) ordinary contract litigation in the County Court or High Court for larger disputes; (c) the RICS dispute resolution service for managing-agent or RICS-member-involved disputes. There is no statutory tribunal dedicated to commercial service charges; the lease's dispute-resolution clause governs."
   - question: "How long do I retain service charge records?"
     answer: "Under TMA 1970 s.12B for individuals (and equivalent CT rules for companies), tax-record retention is 5 years for individuals and 6 years for companies. For service-charge accounts, retention should align to the longer of (i) tax-record retention, (ii) lease-specified inspection period (often the entire lease term plus 12 years post-termination), or (iii) RICS Statement best-practice retention of a complete reconciliation cycle including any inspection. The Limitation Act 1980 6-year period for contract claims is typically the binding constraint; retain at least 6 years post-handover."
-dateModified: "2026-05-28"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

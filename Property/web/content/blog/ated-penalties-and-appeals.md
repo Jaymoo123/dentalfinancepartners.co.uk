@@ -46,7 +46,7 @@ faqs:
     answer: "Only if the inaccuracy is deliberate-concealed and involves an offshore element. The Sch 24 paragraph 4A and SI 2011/975 uplift applies to inaccuracies where the offshore-element involvement is established. For a Cayman ATED filer where the inaccuracy is bona-fide careless (a defensible valuation methodology that turned out to under-state the band) the careless maximum applies, uplifted to 60% for Category 3 careless (30% x 2.0). The Category 3 uplift bites hardest at deliberate-concealed (200% maximum). Specialist tax representation can challenge HMRC's behaviour categorisation as part of the appeal process."
   - question: "What is the cumulative exposure for a 5-year multi-dwelling non-filer?"
     answer: "Dramatic. Each chargeable period generates a separate Sch 55 escalator and Sch 56 escalator per dwelling. A 5-year non-filer for a single £2m-band dwelling at 2026/27 figures faces 5 x (£100 + £200 + £300 + £300) = £4,500 minimum Sch 55 base penalty plus tax-geared paragraphs 5 and 6 uplifts where tax was due, plus Sch 56 5% / 5% / 5% per year, plus interest. A 4-dwelling 5-year deliberate-not-concealed case can comfortably exceed £3 million in cumulative exposure (penalties plus tax plus interest). OTM voluntary disclosure within the unprompted window is the standard remediation route; specialist representation is essential."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

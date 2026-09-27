@@ -40,7 +40,7 @@ faqs:
     answer: "Welsh multiple dwellings relief survived (unlike English MDR, which was abolished on 1 June 2024) but was modified by the Land Transaction Tax (Modification of Multiple Dwellings Relief) (Wales) Regulations 2025 and again by the Land Transaction Tax (Modification of Relief for Acquisitions Involving Multiple Dwellings) (Wales) Regulations 2026. Where MDR applies, you average the price across the dwellings, apply the higher-rate bands to that averaged figure, then multiply by the number of dwellings. From 13 February 2026 a minimum effective rate of 3% applies, and from 7 February 2025 MDR is not available on a buy-with-subsidiary-dwelling main-residence purchase. Our Welsh MDR guide covers the modified mechanics."
   - question: "What if I forgot to claim main-rates relief on replacement?"
     answer: "If you sold your previous main residence AFTER the effective date of the new Welsh purchase, you paid higher rates initially and can claim a repayment from the Welsh Revenue Authority within 3 years of the sale of the previous main residence (the 3-year window runs from the sale, not from the original return). The claim is a separate process from the original LTT return; supporting documentary evidence (sale completion paperwork, evidence that the disposed property was your only or main residence at some point in the 3 years before the new purchase) is required. The Welsh Revenue Authority's repayment-of-overpaid-tax mechanism is the operative channel."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

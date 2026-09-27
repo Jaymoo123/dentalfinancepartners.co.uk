@@ -44,7 +44,7 @@ faqs:
     answer: "FIC valuations are a specific HMRC focus area. The dedicated FIC compliance unit operated from 2019 to 2021 and the share-valuation methodology was the most-questioned element. Post-unit, valuation challenges are part of standard FIC enquiries. A contemporaneous specialist valuation, applying recognised methodologies (Black-Scholes for option-pricing-equivalent growth shares; discounted cash flow for income-cap freezer shares), is the principal defence."
   - question: "Can the architecture be restructured later?"
     answer: "Yes, but with care. Existing share classes can be varied by special resolution (75% supermajority of voting shareholders), subject to class-rights protections requiring approval of each affected class. The variation itself can be a CGT and ERS event if it changes the value or character of the shares. Restructuring a poorly-designed initial architecture is expensive and slow; getting the design right at the start is materially cheaper."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

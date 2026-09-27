@@ -3,6 +3,7 @@ title: "A Comparison of Discretionary Trust Variants for Property Estate Plannin
 slug: "comparison-of-discretionary-trusts"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/comparison-of-discretionary-trusts"
 date: "2026-05-27"
+dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Discretionary Trust Variants Compared: Property Planning"

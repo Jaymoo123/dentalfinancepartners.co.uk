@@ -3,7 +3,7 @@ title: "What Property Improvements Reduce CGT: Enhancement Expenditure Explained
 slug: "property-improvements-reduce-cgt-enhancement-expenditure"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/property-improvements-reduce-cgt-enhancement-expenditure"
 date: "2026-04-10"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

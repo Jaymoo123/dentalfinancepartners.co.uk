@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Finance for Buy to Let: The Bridge-to-Let Route"
 summary: "Bridging finance for buy to let exists for one job: to buy a property a term BTL mortgage will not touch yet, make it lettable, then refinance onto that BTL mortgage so it redeems the bridge. This guide explains the unmortgageable-now-mortgageable-after test, the day-one-value versus six-month-rule refinance, the cost and LTV ranges (as at July 2026), the consumer buy-to-let fence, and how the interest is taxed for an individual landlord versus an SPV."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

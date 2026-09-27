@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Finance for Chain Breaks: The Investor Guide"
 summary: "When a portfolio sale slips and threatens an onward purchase, a chain-break bridge can hold the deal together until the delayed sale completes. This guide covers the investment chain-break only, sets out the LTV, cost drivers and exit, and draws the hard line at own-home chains, which are regulated products outside its scope."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

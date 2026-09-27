@@ -38,7 +38,7 @@ faqs:
     answer: "Our family investment company (FIC) cluster pages cover share-class architecture, FIC formation, share-class design for next-generation transfer and ongoing FIC governance. This page covers the share-exchange and reconstruction anti-avoidance gate that sits over both FIC formation and any share-class restructuring within an existing portfolio. Read this page for the anti-avoidance framework; read the FIC cluster (starting with our family investment company property worth it page) for the share-class design that operates within the s.137 clearance regime. Together they are pre-conditions for a robust property-SPV restructure."
   - question: "What is the practical seven-step sequence?"
     answer: "(i) Draft a commercial reasons memo BEFORE structuring the deal. (ii) Frame the share-exchange or reconstruction structure around the commercial picture. (iii) Apply for advance clearance under TCGA 1992 s.138 for CGT-side counteraction. (iv) Apply for parallel clearance under ITA 2007 s.701 (individual income tax) and CTA 2010 s.748 (corporation tax) where the relevant shareholders or transferors fall within those regimes. (v) Wait for HMRC response, typically 30 days per application, often concurrent. (vi) Proceed only on positive clearance; do not push through into refusal silence. (vii) Document the deal contemporaneously (minutes, resolutions, valuations, deed of variation) to defuse later Snell-style cash-extraction-sequence challenges."
-dateModified: "2026-05-28"
+dateModified: "2026-08-18"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

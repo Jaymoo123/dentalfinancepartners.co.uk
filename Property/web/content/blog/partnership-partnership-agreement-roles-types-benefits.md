@@ -42,7 +42,7 @@ faqs:
     answer: "On every material event. (a) A partner joins or leaves. (b) Your capital or profit-share setup changes significantly. (c) ECCTA-related compliance updates land for an LP under ECCTA Part 2 or for LLP designated member requirements. (d) Tax rules affecting profit shares change (dividend rates, salaried-member or mixed-membership rules). (e) An SDLT Sch 15 incorporation is on the horizon (align your agreement shares to the intended LtdCo ownership). (f) A family succession event (death, retirement, passing things to the next generation). (g) You restructure the portfolio (moving into a new segment triggers the s.24(8) consent question under the default)."
   - question: "What are the common partnership-agreement mistakes?"
     answer: "Seven keep coming up. (1) No written agreement at all, so the s.24 defaults govern with outcomes that suit nobody. (2) A generic template copied off the internet with no property-specific drafting. (3) An agreement silent on s.33(1) continuation, so a partner's death triggers automatic dissolution. (4) An agreement silent on the buyout formula, so an exit dispute has nothing to anchor it. (5) An LLP agreement that creates accidental salaried-member exposure, with active members' capital contributions below the Condition C threshold. (6) An LLP agreement that creates accidental mixed-membership exposure, with corporate-member allocations not documented against the arm's-length test. (7) An agreement that ignores s.14 holding-out exposure, leaving a sleeping partner named on external documents."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

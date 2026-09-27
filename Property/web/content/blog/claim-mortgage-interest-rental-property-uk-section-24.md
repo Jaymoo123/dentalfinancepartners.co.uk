@@ -3,6 +3,7 @@ title: "How to Claim Mortgage Interest on UK Rental Property 2025/26 (Section 24
 slug: "claim-mortgage-interest-rental-property-uk-section-24"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/claim-mortgage-interest-rental-property-uk-section-24"
 date: "2026-05-21"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Section 24 & Tax Relief"
 metaTitle: "Claim Mortgage Interest on UK Rental Property 2025/26"

@@ -44,7 +44,7 @@ faqs:
     answer: "The decision is largely about portfolio scale and your time cost. For one to three properties with a tidy spreadsheet and reliable bookkeeping discipline, spreadsheet plus bridging is operationally sensible and cheaper than a SaaS subscription. For four or more properties, multiple revenue streams, or any joint ownership where two software environments need to coordinate, a full SaaS product saves the quarterly reconciliation work. The decision is covered in our companion guide on choosing software by landlord scenario."
   - question: "What is the minimum testing I should do before the mandate goes live in April 2026?"
     answer: "Run at least one parallel quarter ahead of the mandate. Take a representative quarter's data, run it through your spreadsheet, export to the bridging tool, and use HMRC's MTD ITSA pilot environment (open from April 2025) to submit a test quarterly update. Verify the submission lands cleanly, the figures match what your spreadsheet shows, and the bridging software's audit trail is complete. Run the same dry run with your year-end final-declaration data. Issues caught in the pilot dry run are fixable without consequence; issues caught in the first live quarter come with points and potentially £200 penalties at threshold."
-dateModified: "2026-05-23"
+dateModified: "2026-05-24"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "UK-based tax advisers specialising in property income, MTD ITSA implementation, and the spreadsheet-power-user landlord cohort. Position aligned with house position §19.14 (digital-link rule, Wave 4 extension, locked 2026-05-23) and §19.6 (software requirements)."
 reviewedAt: "2026-05-23"

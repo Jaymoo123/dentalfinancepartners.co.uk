@@ -40,7 +40,7 @@ faqs:
     answer: "The Scottish purchase process runs through offer, missives (the contract), conclusion of missives, and settlement (completion and entry). The effective date for LBTT purposes is settlement in most conventional purchases, or the date of substantial performance if earlier (rare on a first-home purchase). The £175,000 FTB nil band and the FTB eligibility conditions are tested at the effective date, not at the offer or missives stage. If your circumstances change between offer and settlement (for example, you become a joint owner of an inherited property), the FTB position can change too."
   - question: "Can I get FTB relief retrospectively if I forgot to claim?"
     answer: "Yes, within statutory time limits. An LBTT return can be amended within 12 months of the original return under LBTT(S)A 2013 s.83. Beyond that, a repayment claim for overpaid tax must be made within 5 years of the original return due date under Sch 3 para 7. If you completed your Scottish first-home purchase and the return was filed without a FTB relief claim, your solicitor or accountant can amend or claim repayment within those windows. Keep your evidence of FTB eligibility (no prior dwelling ownership anywhere) in case Revenue Scotland queries the claim."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

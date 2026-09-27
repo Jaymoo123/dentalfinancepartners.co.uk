@@ -39,7 +39,7 @@ faqs:
     answer: "LPC has been open continuously since 9 September 2013 with no announced end date, and it has outlasted most predictions. Two practical points. HMRC can close it on notice, so do not bank on it being there forever. And its individual-landlord scope is stable; HMRC has not signalled any reduction. The sensible course is to act while the campaign is open and while you are still in unprompted-status. Both windows matter, and both erode over time."
   - question: "What is the structural difference between LPC and waiting for HMRC?"
     answer: "Three differences, all about control. Scope: a voluntary disclosure covers the years you choose to offer, whereas HMRC discovery reaches whatever section 36 permits (4, 6, 12 or 20 years depending on behaviour and territory). Timing: voluntary disclosure runs on your preparation timeline, whereas HMRC discovery runs on HMRC's enquiry timeline, typically with shorter deadlines and a defensive posture. Floor: voluntary disclosure unlocks the unprompted floor, whereas HMRC discovery locks in the prompted floor with no return to the lower bracket. Those three controls together are the case for going first."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

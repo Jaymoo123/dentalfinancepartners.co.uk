@@ -3,6 +3,7 @@ title: "MTD Quarterly Deadlines 2026/27 for UK Landlords: Dates, Penalties, Set-
 slug: "mtd-quarterly-deadlines-2026-2027-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/mtd-quarterly-deadlines-2026-2027-landlords"
 date: "2026-05-21"
+dateModified: "2026-05-30"
 author: "Property Tax Partners Editorial Team"
 category: "Making Tax Digital (MTD)"
 metaTitle: "MTD Quarterly Deadlines 2026/27: Landlord Filing Calendar UK"

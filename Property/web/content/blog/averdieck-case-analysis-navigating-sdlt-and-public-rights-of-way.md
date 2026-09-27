@@ -44,7 +44,7 @@ faqs:
     answer: "High and consistent. HMRC opens enquiries into mixed-use amendments routinely. The Averdieck refund-then-clawback sequence is the typical pattern: HMRC pays out on the amended return without enquiry (the refund mechanism is largely automatic at the amendment stage) and then opens the enquiry. If that enquiry succeeds, your cash position is dragged back to its original residential-basis exposure. HMRC's published guidance in the SDLT Manual (SDLTM00385 and SDLTM00390 on the residential / non-residential boundary) sets out the orthodox view consistent with the FTT line; departures from that view in SDLT-refund firm marketing material should be treated as just that."
   - question: "Where else should I read?"
     answer: "Our SDLT mixed-use property classification page covers the broader doctrine across the residential / non-residential boundary. For other tribunal decisions, see our analyses of the Bewley uninhabitable-property exception and the Archer LBTT lease-extension transitional decision. Our SDLT refund scams page covers the wider context of aggressive contingent-fee SDLT-refund firms and the position to take if one approaches you. And because mixed-use claims often seek to disapply the additional dwellings surcharge alongside the rate-table reclassification, see our second-home SDLT additional dwellings surcharge guide."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

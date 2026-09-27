@@ -3,7 +3,7 @@ title: "Property Development Finance: The Complete UK Guide to GDV, LTC, Drawdow
 slug: "development-finance-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-finance/development-finance-guide"
 date: "2026-07-30"
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 author: "Property Tax Partners Editorial Team"
 category: "Property Finance"
 metaTitle: "Development Finance Explained: GDV, LTC & Exit"

@@ -40,7 +40,7 @@ faqs:
     answer: "Yes, where the flat is let. Service charges on a buy-to-let leasehold flat are a revenue expense of the property business, deductible against rental income, and HMRC's Property Income Manual (PIM2078, costs due to common ownership) confirms landlords can deduct expenditure on the upkeep of common parts. Contributions to a reserve or sinking fund are the awkward case, because deduction generally follows the money being applied to revenue-type expenditure rather than the date you paid into the fund, and contributions ultimately spent on capital improvements are not deductible against income at all. A disputed amount you have withheld has not been incurred in the ordinary sense, so do not claim it until it crystallises."
   - question: "How does a live dispute affect selling the flat?"
     answer: "It surfaces in the conveyancing pack. The LPE1 form completed by your landlord or managing agent asks directly about arrears, disputes and anticipated major works, so a live challenge will be visible to your buyer's solicitor. The usual mechanics are a retention from the sale proceeds held by the solicitors to cover the disputed amount or forthcoming works, or a negotiated price adjustment. A dispute does not stop a sale, but an unquantified one makes buyers and their lenders nervous, which is a practical reason to get the amount determined or settled rather than leaving it open indefinitely."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

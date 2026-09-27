@@ -66,6 +66,8 @@ const ENGAGED_ESCALATE_MS = 90_000; // deeply engaged -> offer a specialist
 const ENGAGED_GUIDE_MS = 60_000; // engaged reader -> offer the full guide
 const SCROLL_ESCALATE_PCT = 60; // "deep into the page" threshold
 const SCROLL_MODAL_PCT = 70; // deep-scroll modal trigger
+// Flip to true to bring the deep-scroll modal back. Off since 2026-09-26.
+const DEEP_SCROLL_MODAL_ENABLED = false;
 
 /** Build the "tool" offer (the topic's interactive calculator). */
 function toolOffer(topicKey: TopicKey): IntentOffer | null {
@@ -213,6 +215,15 @@ export function evaluate(surface: Surface, ctx: IntentContext): IntentAction | n
     }
 
     case "deep_scroll_modal": {
+      // DISABLED 2026-09-26 by owner instruction. Measured over the 33 days
+      // either side of the redesign: shown to 14.5% of sessions (up from 9.1%,
+      // because shorter blog pages put more readers past SCROLL_MODAL_PCT),
+      // dismissed by 80.4% of the people who saw it (up from 71.9%), and
+      // clicked by 4 sessions per 1,000 either side. It interrupts deep readers
+      // for nothing. Flip DEEP_SCROLL_MODAL_ENABLED to re-enable; the rule below
+      // is untouched and the surface stays registered, so measurement still
+      // works if it comes back. See docs/property/STATE.md 0.24.
+      if (!DEEP_SCROLL_MODAL_ENABLED) return null;
       if (ctx.converted) return null;
       if (ctx.scrollPct < SCROLL_MODAL_PCT) return null;
       if (!ctx.pageTopic) return null;

@@ -44,7 +44,7 @@ faqs:
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-30'
-dateModified: '2026-05-30'
+dateModified: "2026-08-05"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - gov.uk

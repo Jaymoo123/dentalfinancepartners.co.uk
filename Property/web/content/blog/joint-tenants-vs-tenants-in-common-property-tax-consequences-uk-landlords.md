@@ -46,7 +46,7 @@ faqs:
     answer: "Yes. Civil Partnership Act 2004 places civil partners on the same footing as married couples for the relevant tax provisions (ITA 2007 s.836 / s.837 for the 50/50 default and Form 17; IHTA 1984 s.18 for the spouse exemption; TCGA 1992 s.58 for no-gain-no-loss inter-partner transfer). Civil partners can hold as JT or TIC on the same basis as spouses; the structural decision is identical."
   - question: "What is the most common mistake landlord couples make on this choice?"
     answer: "Two recurring mistakes. The first is assuming the conveyancer's default of joint tenancy is fine when an unequal contribution (or a plan to shift income to a lower-rate spouse) means the couple needs TIC plus a deed of trust. The second is severing to TIC for income-tax flexibility without updating wills to take advantage of the new flexibility on first death: TIC plus an outdated will that simply mirrors survivorship gives the income-tax flexibility but wastes the IHT planning opportunity. The fix is to treat the structural decision, the deed of trust, and the wills as a single planning exercise."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

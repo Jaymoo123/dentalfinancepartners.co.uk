@@ -48,7 +48,7 @@ howToSteps:
     text: "Once dividends would tip into the 35.75% higher band, compare a company employer pension contribution (deductible against corporation tax, no income tax at contribution) against taking a higher-rate dividend. For founders with a long pension lock-in tolerance the pension route usually wins."
   - name: "Split income to a spouse shareholder where genuine"
     text: "If a spouse holds real shares with full rights, pay dividends in proportion to use their personal allowance and basic-rate band, relying on the s.626 spouse exception. Keep the share gift outright and unconditional."
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"

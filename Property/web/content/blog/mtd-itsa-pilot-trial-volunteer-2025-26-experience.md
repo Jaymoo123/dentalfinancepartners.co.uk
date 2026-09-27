@@ -46,7 +46,7 @@ faqs:
     answer: "Yes. The points-based late-submission regime (1 point per missed quarterly update, £200 at the 4-point threshold) applies identically. The Spring Statement 2025 doubled late-payment regime (3% of unpaid tax at day 15, +3% at day 30, +10% per annum from day 31) applies to MTD ITSA cohorts from 6 April 2026 and also applies to pilot participants from the same date forward on the 2025/26 final tax position. The pilot is not a penalty-free trial; the operational consequences are the same as post-mandate."
   - question: "Should I wait for the mandate rather than opt in?"
     answer: "For most landlords, yes. The mandate cohort will be brought in at the threshold-and-above population from 6 April 2026, with HMRC's outreach letter giving 3 to 6 months of warning. Most landlords who would benefit from the pilot would also benefit from accepting the mandate and using the lead time HMRC's letter provides. The case for opting in early is genuinely narrow (the landlord persona described above), and for everyone else the mandate timeline gives sufficient runway. Opting in is not a status signal; HMRC does not give early adopters easier treatment."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

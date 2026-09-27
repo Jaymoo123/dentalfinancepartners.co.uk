@@ -46,7 +46,7 @@ faqs:
     answer: "Diary entries in your tax-compliance calendar. 1 February each year: confirm the RICS valuation is current at the operative valuation date per s.102. 1 March: submit any PRBC for borderline-band cases. 1 April: chargeable period begins. 15 April: internal sign-off on return plus relief-claim documentation. 30 April: file the return and pay the tax (or file the claim-only return if relief applies fully). Repeat annually. Set diary entries against the chargeable-period boundary and the statutory 30 April deadline, not against the prior year's filing date."
   - question: "We're moving family into the company-owned flat for a year. What does that do to our ATED position?"
     answer: "Significant exposure. Family occupancy triggers s.136 non-qualifying-individual occupation, which denies s.133 relief for those days, so the full ATED charge applies. The s.135 clawback then runs: look-forward up to 3 subsequent chargeable periods, look-back to earlier days held by the same relevant person, unless a qualifying-use day intervenes. Concurrently the company may become a close-investment-holding company under CTA 2010 s.18N, locking in the 25 per cent main rate of corporation tax regardless of profit level. The combined exposure typically exceeds £30,000 to £50,000 per year on a £1m to £2m flat. Consider de-enveloping the structure before moving family in."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

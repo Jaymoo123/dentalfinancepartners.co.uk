@@ -44,7 +44,7 @@ faqs:
     answer: "Sections 102A, 102B and 102C were inserted by FA 1999 to deal specifically with gifts of an interest in land made after 9 March 1999. They extend the reservation concept to cases where the donor retains a significant right or interest in the land (s.102A), participates in a significant arrangement relating to the land (s.102B), or where the donee subsequently makes the property subject to a reservation in favour of the donor (s.102C). The provisions catch sophisticated land-gift planning that might otherwise have escaped s.102 itself. For most family-home gifting cases, s.102 is sufficient; ss.102A-C come into play with complex shared-ownership and lease-back structures."
   - question: "Does GROB apply to a gift of cash that the donee uses to buy a property the donor then occupies?"
     answer: "Section 102 does not apply because the gift was of cash, not of the subsequent property. The donor never owned the house. But POAT under Schedule 15 FA 2004 catches this exact pattern: cash gifted, donee buys property with the cash, donor enjoys the property. The donor faces the annual POAT income tax charge based on the deemed market rent of the occupied property, calculated by reference to the proportion of the purchase price funded by the gifted cash. The IHT500 election to be treated as GROB is then the trade-off mechanism."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

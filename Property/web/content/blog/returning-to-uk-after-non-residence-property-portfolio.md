@@ -40,7 +40,7 @@ faqs:
     answer: "Split-year treatment under FA 2013 Sch 45 Part 3 may apply via Cases 4, 6 or 8. The year is treated as two halves: the overseas part (when the individual was non-resident) and the UK part (from the split date). UK rental income from UK property is taxable in both halves; the change on return is that the personal allowance applies in full to the year (UK residents always have it) and that NRL withholding ends from the split date. The s.10A recapture (if applicable) is computed in the year of return regardless of whether split-year applies."
   - question: "Do I need to file the P85 form on return to the UK?"
     answer: "P85 is the departure form, not the return form. There is no equivalent return form. On resumption of UK residence, register for self-assessment if you are not already registered (most former NRL claimants will remain registered). The return-year SA100 with the SA109 residence supplement records the SRT outcome and (where applicable) the split-year case. The s.10A recapture (if applicable) is computed on the SA108 (capital gains supplement) with the deemed-accrual mechanic."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

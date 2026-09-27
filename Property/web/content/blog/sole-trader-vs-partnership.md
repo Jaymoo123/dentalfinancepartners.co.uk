@@ -42,7 +42,7 @@ faqs:
     answer: "Partnership to LLP: operationally simple. Register a new LLP at Companies House; transfer partnership business to LLP; partnership dissolves; LLP continues. Tax-transparency maintained; no CGT crystallisation at member level if no actual disposal occurs. Partnership to LtdCo: more complex. TCGA 1992 s.162 incorporation relief applies if all partnership assets are transferred and new LtdCo shares are received as consideration (deferred CGT into LtdCo base). SDLT Sch 15 SLP mechanic applies: if partnership members own LtdCo shares in the same proportions as their partnership shares, SLP can reach 100% with zero SDLT. Both upgrades require careful planning around the CGT and SDLT events."
   - question: "What are the common sole-trader-vs-partnership mistakes for landlords?"
     answer: "Six recurring patterns. (1) Assuming joint property ownership equals partnership when PA 1890 s.2(1) negative applies (co-owners are not partners by default). (2) Introducing a spouse-partner with no commercial substance, triggering a settlements legislation challenge. (3) Introducing a partner without managing the CGT part-disposal exposure. (4) Failing to file SA800 once a partnership exists, triggering per-partner penalties. (5) Assuming sole-trader-to-partnership transition has no SDLT consequence (it does, under Sch 15). (6) Choosing partnership form for limited-liability reasons (a general partnership has unlimited joint-and-several liability under PA 1890 s.9; the LLP is the limited-liability form)."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

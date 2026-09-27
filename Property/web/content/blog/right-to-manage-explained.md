@@ -38,7 +38,7 @@ faqs:
     answer: "Yes, and for many blocks this is the entire point. Once the RTM company acquires the right, the management functions belong to it, and the directors decide whether to self-manage or appoint a professional managing agent on terms the leaseholders choose. The outgoing agent's contract does not have to be kept. Self-management suits small, simple blocks with willing volunteers; most larger RTM blocks appoint an agent but hold them accountable to a board of leaseholder directors rather than to an absent freeholder. Either way, service charge money must be handled within the statutory framework, held on trust and accounted for properly."
   - question: "Can RTM be lost once acquired?"
     answer: "Yes, though it is uncommon. The right depends on the RTM company continuing to exist and function, so insolvency or striking off at Companies House ends it, and management reverts. A tribunal-appointed manager under the 1987 Act can also displace an RTM company that manages badly, because acquiring RTM does not immunise leaseholders against the same remedies that existed against the freeholder. The practical protection is running the company properly: filing accounts and confirmation statements on time, keeping service charge money separate, and maintaining enough engaged directors. Keeping the company in good standing is an ongoing obligation, not a one-off task."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

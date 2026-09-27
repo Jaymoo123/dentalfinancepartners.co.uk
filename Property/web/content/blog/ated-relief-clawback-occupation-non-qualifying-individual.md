@@ -46,7 +46,7 @@ faqs:
     answer: "Yes, with the qualifying-condition substituted. Property Developer Relief is clawed back where the dwelling ceases to be held as trading stock in a property development trade (e.g. the company decides to keep the dwelling as a personal residence for a director's family). Property Trader Relief is clawed back on the same basis. The day-apportionment, look-back, and look-forward mechanics work the same way. The most common trader-relief clawback is a developer using a finished property as company accommodation for a director's family while marketing it for sale; the s.141 relief is lost for the affected days."
   - question: "We discovered a clawback in a prior chargeable period when reviewing files this year. What is the cleanest disclosure route?"
     answer: "An unprompted voluntary disclosure letter to HMRC's ATED Helpline, accompanied by the amended return calculation, supporting evidence, and a proposed penalty position. Unprompted disclosure within 12 months of the original deadline attracts the lowest penalty range; beyond 12 months, the case sits in unprompted-disclosure-beyond-12-months which still attracts a materially lower penalty than HMRC-prompted disclosure. Pay the underlying tax with the disclosure where possible. The <a href=\"/blog/incorporation-and-company-structures/ated-late-filing-penalties-mechanics\">penalty cascade guide</a> covers the prompted-vs-unprompted bands."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

@@ -55,7 +55,7 @@ faqs:
   answer: The buyer may pay more or less than the sum of the individual values because of a bulk premium or a portfolio discount. For CGT you cannot use one global figure, you must apportion the total price across each property by relative market value and compute a separate gain per property. This matters because each property may have a different base cost and a different acquisition date.
 - question: Can I use an online valuation tool for my tax return?
   answer: An online portal estimate is fine as a rough guide but is not reliable evidence for tax. HMRC expects valuations for significant events, incorporation, inheritance, or a connected-party transfer, to be supported by professional evidence. An unsupported estimate can be challenged and lead to penalties, so a formal valuation from a RICS-qualified surveyor or an experienced local agent is the safer route.
-dateModified: '2026-05-30'
+dateModified: "2026-06-23"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - legislation.gov.uk

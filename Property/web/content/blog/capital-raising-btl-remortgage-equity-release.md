@@ -12,7 +12,7 @@ image: ""
 h1: "Capital Raising on a Buy-to-Let: Remortgaging to Release Equity"
 summary: "Raising capital from the equity in one rental to fund the deposit on the next is how most portfolios grow. This is the finance mechanics: how much you can release against the LTV and ICR ceiling, why it is not consumer equity release, and where the Section 24 interest-relief catch sits."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

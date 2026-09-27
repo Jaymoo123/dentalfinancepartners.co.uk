@@ -3,6 +3,7 @@ title: "How Long Does Probate Take in the UK? Realistic Timeline for Property-Ow
 slug: "how-long-does-probate-take-in-the-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/how-long-does-probate-take-in-the-uk"
 date: "2026-05-27"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "How Long Does Probate Take UK? Property Estate Timeline"

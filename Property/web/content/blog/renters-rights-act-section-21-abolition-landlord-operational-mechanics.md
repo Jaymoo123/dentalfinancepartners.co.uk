@@ -3,6 +3,7 @@ title: "Section 21 Abolition: Operational Mechanics for Landlords Under the RRA 
 slug: "renters-rights-act-section-21-abolition-landlord-operational-mechanics"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/renters-rights-act-section-21-abolition-landlord-operational-mechanics"
 date: "2026-05-24"
+dateModified: "2026-07-28"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Section 21 Abolition: RRA 2025 Landlord Operating Guide"

@@ -3,6 +3,7 @@ title: "Schedule 24 FA 2007 Penalty Behaviour Bands: Landlord Inaccuracy Penalti
 slug: "schedule-24-fa-2007-penalty-behaviour-categories-landlord-enquiries"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/schedule-24-fa-2007-penalty-behaviour-categories-landlord-enquiries"
 date: "2026-05-24"
+dateModified: "2026-06-06"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Schedule 24 FA 2007 Penalty Bands for Landlords"

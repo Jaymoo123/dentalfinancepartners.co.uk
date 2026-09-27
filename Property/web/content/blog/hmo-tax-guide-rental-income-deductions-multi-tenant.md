@@ -3,7 +3,7 @@ title: "HMO Tax Guide: How to Calculate Rental Income and Claim Deductions on Mu
 slug: "hmo-tax-guide-rental-income-deductions-multi-tenant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/hmo-tax-guide-rental-income-deductions-multi-tenant"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

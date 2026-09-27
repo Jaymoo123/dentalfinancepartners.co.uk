@@ -40,7 +40,7 @@ faqs:
     answer: "No. The surcharge is residential-property-specific. Commercial property and mixed-use property taxed at non-residential rates are outside the surcharge. Where a transaction crosses the six-dwellings threshold and is automatically treated as non-residential under section 116(7) FA 2003, the 2% does not apply to that transaction either. Six-or-more bulk acquisitions are therefore one of the few routes that simultaneously deal with the HRAD, the non-resident surcharge and the 17% non-natural-person rate by displacing residential characterisation altogether."
   - question: "How is the 2% surcharge claimed back on becoming UK-resident?"
     answer: "The refund is claimed through the same gov.uk online SDLT refund service used for HRAD claims. The buyer applies once they have spent 183 days in the UK in any 365-day window starting up to one year before the effective date and ending up to one year after. The 2-year claim deadline runs from the effective date. The application requires the original UTRN from the SDLT return, evidence of UK presence (passport stamps, employer records, tenancy agreements, utility bills), and the refund amount. HMRC typically processes refunds within 4 to 12 weeks; complex cases involving overseas evidence can run longer."
-dateModified: "2026-05-22"
+dateModified: "2026-08-04"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

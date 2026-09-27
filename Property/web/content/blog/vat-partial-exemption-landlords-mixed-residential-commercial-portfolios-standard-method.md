@@ -37,7 +37,7 @@ faqs:
     answer: "MTD for VAT requires digital records of every taxable and exempt supply (date, value, VAT rate, customer), every standard-rated, reduced-rate, or exempt purchase (date, value, VAT, supplier), and the attribution decision for each invoice (wholly taxable, wholly exempt, residual). Most MTD-compatible software handles the attribution flag at invoice level and the period-end standard-method computation as a single bookkeeping function. Records are retained for six years. The HMRC reference is VAT Notice 700/22 for MTD and VAT Notice 706 for the partial-exemption record requirement."
   - question: "What is the biggest partial-exemption mistake landlords make?"
     answer: "Assuming that exempt rental income is irrelevant if the property has been opted to tax. The exempt residential element of the portfolio still drives the partial-exemption calculation on overhead and central-administration input VAT, regardless of how many commercial properties have been opted. A landlord with a £200,000 residential rent stream and a £400,000 opted commercial rent stream has roughly two-thirds residual recovery on overheads, not 100%. The second-most-common mistake is failing to perform the annual adjustment at the longer-period end; the quarterly figures are provisional and only the annual figure is final."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

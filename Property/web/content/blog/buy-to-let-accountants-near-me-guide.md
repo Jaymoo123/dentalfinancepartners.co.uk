@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 howToSteps:
   - name: "Confirm genuine property specialism"
     text: "Check the firm publishes specific content on Section 24, MTD for Income Tax, incorporation and CGT, and acts for landlords rather than treating rent as generic business income."

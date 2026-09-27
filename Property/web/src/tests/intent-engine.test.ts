@@ -111,3 +111,13 @@ describe("returning_bar booking nudge", () => {
     expect(a!.ruleId).toBe("returning_welcome");
   });
 });
+
+describe("deep_scroll_modal is switched off (2026-09-26)", () => {
+  it("returns null even for a deep-scrolled, unconverted reader on a topic page", () => {
+    expect(evaluate("deep_scroll_modal", ctx({ scrollPct: 95, engagedMs: 240_000 }))).toBeNull();
+  });
+
+  it("the other surfaces still answer, so this is the modal only and not a dead engine", () => {
+    expect(evaluate("next_step", ctx({ scrollPct: 95, engagedMs: 240_000 }))).not.toBeNull();
+  });
+});

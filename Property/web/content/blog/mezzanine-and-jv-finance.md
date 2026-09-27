@@ -12,7 +12,7 @@ image: ""
 h1: "Mezzanine and JV Finance: The Development Capital Stack, Cost and Tax"
 summary: "How mezzanine debt and joint venture equity fill the gap between senior development debt and a developer's own cash. This guide sets out the capital stack, how far mezzanine stretches leverage, how a JV profit share differs from a coupon, the cost-versus-dilution-versus-control trade-off with a worked example, the deed of priority the senior lender will require, and how each layer is taxed. Education only, with a soft route to a property tax structuring review."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

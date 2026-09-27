@@ -44,7 +44,7 @@ faqs:
     answer: "Yes. Student accommodation (purpose-built halls of residence) is treated as a relevant residential building for VAT purposes and the first grant of a major interest is zero-rated. The certification requirements are stricter than for ordinary dwellings (a certificate from the user is needed at the start of construction). The zero-rate covers both the first sale and the construction services to the developer."
   - question: "Can a build-to-rent developer use the zero-rate?"
     answer: "Build-to-rent at scale is structurally challenging for the zero-rate because the eventual letting supply is exempt. A build-to-rent developer typically cannot recover input VAT on construction (no taxable output supply). One workaround is selling the completed block to an institutional investor at the first grant of a major interest (zero-rated sale, full input VAT recovery), with the investor then running the rental operation; the buyer's exempt rental income does not affect the developer's recovery position because the developer's supply was zero-rated."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

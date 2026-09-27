@@ -3,6 +3,7 @@ title: "Building Safety Act 2022: Cladding Cost Recovery and Leaseholder Protect
 slug: "building-safety-act-2022-cladding-cost-recovery-leaseholder-protections-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/building-safety-act-2022-cladding-cost-recovery-leaseholder-protections-landlords"
 date: "2026-05-24"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "BSA 2022 Sch 8 Leaseholder Protections: Landlord Guide 2026"

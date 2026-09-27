@@ -12,7 +12,7 @@ image: ""
 h1: "Transferring a property out of your limited company and back into your own name"
 summary: "A company can transfer a property to a shareholder as a distribution in specie, a dividend paid in property instead of cash, provided it has enough distributable reserves under section 830 of the Companies Act 2006. It is not a free reversal. The company makes a disposal at market value for corporation tax before the property leaves, the shareholder is taxed on the full market value at 2026/27 dividend rates of 10.75, 35.75 and 39.35 per cent, and stamp duty land tax bites wherever the individual takes on mortgage debt. This guide covers the mechanism, the three tax layers, the sale-to-director alternative, and a worked example on a £280,000 mortgage-free flat."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC manuals"
 faqs:

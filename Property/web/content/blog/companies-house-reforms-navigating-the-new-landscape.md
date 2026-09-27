@@ -42,7 +42,7 @@ faqs:
     answer: "This page is process-side: what to do, in what order, by when, with what artefacts and against what deadlines. The sibling business-success page is outcome-side: why compliance matters commercially (BTL lender, sophisticated tenant, joint-venture partner due diligence). Read this page for the operations roadmap; read the sibling for the commercial value case. Both cross-link to the per-reform deep dives once the reader has moved from the umbrella altitude to a specific operational question."
   - question: "Do I need a company secretary to navigate this?"
     answer: "No. For a private company under the Companies Act 2006, s.270 disapplies the company-secretary requirement (it remains compulsory only for public companies). For private landlord LtdCos, the practical pattern is the director plus accountant combination: the accountant acts as the informal company secretary, performs the ACSP-registered identity verifications where AML-supervised, and handles the filing flow. The roadmap is operationally workable for a director plus accountant team without a dedicated company secretary."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

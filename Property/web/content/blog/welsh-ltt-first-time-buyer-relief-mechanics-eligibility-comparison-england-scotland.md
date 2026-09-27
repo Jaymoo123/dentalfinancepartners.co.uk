@@ -42,7 +42,7 @@ faqs:
     answer: "There is no current Welsh Government commitment to introduce FTB relief, and the Draft Budget 2026-27 confirmed no rate or band changes to LTT for the year. The Welsh policy view has consistently been that universal nil-band design is preferable to targeted FTB carve-outs. Any future change would require fresh regulations under LTTA 2017 (most likely as new sections rather than as a sub-rule under s.24), and would represent a structural shift in Welsh tax policy rather than an incremental adjustment. Sessions advising Welsh first-time buyers should not plan around a hypothetical future relief; the £225,000 universal nil band is the position to plan against."
   - question: "Where can I find the underlying statute and guidance?"
     answer: "Welsh LTT is set out in the Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017 at legislation.gov.uk/anaw/2017/1/contents. The absence of FTB relief is visible by the absence of any FTB schedule; the analogues in other jurisdictions are FA 2003 Sch 6ZA (English SDLT FTB relief, at legislation.gov.uk/ukpga/2003/14/schedule/6ZA) and LBTT(S)A 2013 Sch 4A (Scottish LBTT FTB relief, at legislation.gov.uk/asp/2013/11/schedule/4A). Welsh Revenue Authority technical guidance lives at gov.wales/calculation-land-transaction-tax-payable-technical-guidance and the live rate table at gov.wales/land-transaction-tax-rates-and-bands."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

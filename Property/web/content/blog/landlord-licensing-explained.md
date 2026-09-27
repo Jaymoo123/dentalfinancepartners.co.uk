@@ -38,7 +38,7 @@ faqs:
     answer: "No. Your company is a different legal person from you, and licences cannot be transferred (Housing Act 2004 s.68(6)). Incorporating a portfolio, for example under a s.162 incorporation relief transfer, means the company must make a fresh licence application for every licensable property, each with a fresh fee at the council's current rate. On a portfolio of licensable properties this is a real cash cost of incorporation that rarely appears in the tax comparison. The fees are deductible for the company, but the penalty exposure sits with whoever is in control of an unlicensed property in the meantime, so sequence the applications with the transfer."
   - question: "Is landlord licensing different in Wales and Scotland?"
     answer: "Yes, materially. The three regimes above are England's, under the Housing Act 2004. In Wales, every landlord and self-managing agent must register and be licensed through Rent Smart Wales, a national scheme with no English equivalent. Scotland runs national landlord registration through local authorities plus a separate HMO licensing regime, and Northern Ireland has its own registration and HMO rules. If you hold property in more than one UK nation, treat each nation's regime as a separate compliance exercise; none of them recognises a licence issued under another's rules."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

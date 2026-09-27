@@ -46,7 +46,7 @@ faqs:
     answer: "A solicitor-drafted declaration of trust on a single property is typically in the £400 to £900 range; for a portfolio of properties (a single deed can cover multiple properties), the cost rises with complexity. The Land Registry restriction (Form A) on each title is a separate £40 fee. Where mortgages are involved, lender consent may add further professional cost. These costs are one-off and dwarfed by the recurring income-tax saving in most retirement scenarios; modelling the payback should be straightforward."
   - question: "Are there situations where the Form 17 shift is not the right answer?"
     answer: "Yes. Where the retiring spouse's projected pension income already uses their full basic-rate band, additional rental income is at basic rate (20%) and the gap from the working spouse's higher rate (40%) is only 20 percentage points; the saving may be modest. Where the working spouse expects to retire shortly after their partner, the optimal split may rebalance again within a year or two, and the operating costs of two deeds + two Form 17s in quick succession may exceed the saving. Where the couple anticipates a sale of the property within (say) the next 12 to 18 months, the income-shift period is short and the planning may not be worth the documentation."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

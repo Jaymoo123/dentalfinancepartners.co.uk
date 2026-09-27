@@ -38,7 +38,7 @@ faqs:
     answer: "The SDLT 2% non-resident surcharge under FA 2003 Sch 9A applies to England only and only to non-UK-resident purchasers. As a UK-resident landlord buying in Wales, you are subject to the Welsh LTT regime, which has different rate-bands and no separate non-resident surcharge layer comparable to Sch 9A. If you are a non-UK-resident purchaser, the SDLT 2% surcharge applies to your Plymouth purchase under Sch 9A; the Welsh LTT regime applies to your Cardiff purchase without an equivalent."
   - question: "How does the MTD for ITSA mandate apply to cross-border landlords?"
     answer: "MTD for ITSA applies UK-wide to landlords with qualifying property income above the mandate threshold. Your combined Plymouth and Cardiff rental income counts as a single property business for MTD-qualifying-income purposes under ITTOIA 2005 and ITA 2007. You file quarterly updates for your combined property business, not separately per jurisdiction. The April 2026 (£50,000+), April 2027 (£30,000+), and April 2028 (£20,000+) thresholds apply to combined UK property income."
-dateModified: "2026-05-28"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

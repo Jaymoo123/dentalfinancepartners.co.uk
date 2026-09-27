@@ -3,6 +3,7 @@ title: "Property Partnership Trading vs Investment: JV Developer Structures and 
 slug: "property-partnership-trading-investment-jv-developer-structures-sch-15-sdlt-interaction"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/property-partnership-trading-investment-jv-developer-structures-sch-15-sdlt-interaction"
 date: "2026-05-25"
+dateModified: "2026-05-29"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Property Partnership Trading vs Investment: JV + Sch 15 SDLT"

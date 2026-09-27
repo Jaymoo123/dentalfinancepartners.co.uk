@@ -4,6 +4,7 @@ slug: "property-accountant-jobs-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-jobs-uk"
 noindex: true
 date: "2026-05-21"
+dateModified: "2026-08-05"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Jobs UK 2026: Roles, Pay, Qualifications"

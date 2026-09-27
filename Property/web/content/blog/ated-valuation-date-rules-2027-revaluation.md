@@ -46,7 +46,7 @@ faqs:
     answer: "Market value. ATED valuation tracks open-market value at the relevant date regardless of the consideration that changed hands. A transfer of a £1.8 million dwelling from an individual to their wholly-owned company at nominal consideration uses £1.8 million for ATED; the same applies for transfers between connected companies and family-trust arrangements. The market-value rule mirrors the SDLT s.53 market-value substitution for connected-party transactions."
   - question: "How should I prepare for the 1 April 2027 revaluation now?"
     answer: "Five practical steps. First, identify every dwelling in the portfolio that has been within ATED scope for any chargeable period (residential value over £500,000 on the relevant date). Second, run a desktop estimate of the open-market value at 1 April 2027 using current comparable sales data; check whether any property is likely to cross a band boundary. Third, where any property is likely to cross a boundary, brief a RICS Red Book valuation to be delivered around the 2027 date. Fourth, lodge a PRBC for any near-boundary case before the 30 April 2028 return is filed. Fifth, refresh apportionment workings for any mixed-use buildings (see our sibling page on mixed-use apportionment)."
-dateModified: "2026-05-22"
+dateModified: "2026-07-28"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

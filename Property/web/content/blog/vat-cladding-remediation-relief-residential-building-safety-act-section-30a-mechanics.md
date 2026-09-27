@@ -38,7 +38,7 @@ faqs:
     answer: "Three documentation streams. First, the construction-VAT documentation: contractor's invoices showing the standard-rated VAT treatment, evidence of the snagging-rule analysis where a zero-rate is being claimed, professional opinions on the qualifying-works classification. Second, the BSA 2022 documentation: the qualifying-lease assessment for each lease, the cost waterfall analysis (developer first, then landlord net-worth, then leaseholder caps), the s.20 consultation if non-protected leaseholders are bearing any cost. Third, the funding documentation: any Building Safety Fund grant application, any Responsible Actors Scheme commitment by the original developer, any insurance recovery. Retain for at least six years from completion (longer where Capital Goods Scheme adjustments may run on a separate input-tax recovery)."
   - question: "Does the page's framing reflect HMRC's most recent position?"
     answer: "Yes. The page reflects HMRC's published guidance as at the date of writing. The framing is conservative on the absence of a general cladding-remediation VAT relief because no such relief exists in the statute or in HMRC's published guidance. If a future statutory amendment introduces a specific cladding-remediation zero-rate or reduced-rate, this page will be updated. The BSA 2022 leaseholder-protection framework operates on cost-bearing rather than on the VAT rate of the underlying works."
-dateModified: "2026-05-23"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

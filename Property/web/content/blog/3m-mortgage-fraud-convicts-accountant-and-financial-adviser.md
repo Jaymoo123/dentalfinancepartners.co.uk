@@ -38,7 +38,7 @@ faqs:
     answer: "No. The R v Da Silva threshold of 'more than mere speculation' means a SAR is required only where you cross from speculation into reasonable grounds to know or suspect. Documentary anomalies (unexplained income gaps, source-of-funds inconsistencies, structuring patterns) are typical triggers. Vague unease without an underlying factual basis is not the bar. The CCAB AMLGAS provides the operational treatment. Document your suspicion analysis even when you conclude no SAR is needed: the file note is your evidential record of the threshold analysis."
   - question: "How does this page differ from the let property campaign coverage?"
     answer: "The let property campaign pages are operational: what the LPC route is, how to use it, what the penalty discount looks like. This page is the broader professional-conduct picture: what the AML and MLR 2017 and POCA cordon looks like around your property accountant, why the s.330 reporting reflex exists, and how the LPC fits as the voluntary route that pre-empts the criminal track. Read both together: this page for the framework, the LPC pages for the disclosure mechanics."
-dateModified: "2026-05-28"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

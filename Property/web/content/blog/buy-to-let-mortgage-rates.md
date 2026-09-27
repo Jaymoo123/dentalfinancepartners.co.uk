@@ -12,7 +12,7 @@ image: ""
 h1: "Buy-to-Let Mortgage Rates: What Actually Drives Pricing"
 summary: "Buy-to-let mortgage rates are not a single number you can look up. They are the output of a handful of drivers: the loan-to-value band, the length of the fix, whether you borrow personally or through a limited company or SPV, the property type, and the arrangement fee attached to the product. This guide explains each driver as a range, works through the fee-versus-rate trade-off that most landlords get wrong, shows how the rate you are offered feeds back into how much you can borrow, and summarises how Section 24 changes what the rate actually costs a personal landlord. Business-purpose lending only; consumer buy-to-let and regulated mortgages are out of scope."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

@@ -42,7 +42,7 @@ faqs:
     answer: "For a typical five-SPV portfolio with one or two natural persons across the directorships and PSC roles: GOV.UK One Login verification at £0 (self-service) or ACSP at £20 to £100 per person (verify with the firm); confirmation statement fee £50 online times five SPVs equals £250 a year (verify the current fee schedule at write); registered office reroute £0 (if accountant office or director residential address qualifies) up to roughly £50 to £300 a year per SPV (for a staffed virtual-office provider). The bigger variable is time: eight to fifteen hours of director or accountant time across the year for a five-SPV portfolio, mostly concentrated around the verification batch and the confirmation-statement filing cycle."
   - question: "Where do I check the operative state of the rollout?"
     answer: "Two canonical sources. Primary: Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, with topic sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: Companies House blog at companieshouse.blog.gov.uk for operational announcements and phase-rollout posts. Do not rely on the legacy gov.uk/government/news/changes-to-uk-company-law URL, which is no longer active. The campaign page is the single most reliable real-time tracker."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

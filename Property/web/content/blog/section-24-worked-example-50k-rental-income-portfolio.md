@@ -14,7 +14,7 @@ summary: "A full step-by-step Section 24 calculation for a landlord with £50,00
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 schema: ""
 howToSteps:
   - name: "Work out rental profit before finance costs"

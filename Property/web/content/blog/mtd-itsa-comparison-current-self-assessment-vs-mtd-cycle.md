@@ -46,7 +46,7 @@ faqs:
     answer: "Not in the legacy paper or HMRC-portal sense. The MTD ITSA final declaration replaces the SA100 for filers in scope. The final declaration covers the same ground (consolidating income across streams, claiming reliefs, finalising the year's tax) but is filed through MTD-compatible software via the API. The structural role of the SA100 (annual reconciliation, single point of truth for the tax year) is unchanged; what changes is the filing channel."
   - question: "What does a typical month look like once MTD ITSA is bedded in?"
     answer: "For most months: light digital bookkeeping (bank-feed reconciliation, expense capture, tagging income to the right SA105 box) at perhaps 20-30 minutes a week. Once a quarter: a slightly heavier session to finalise the quarterly numbers and submit through the software. Once a year: the EoPS adjustments (capital allowances, private-use, year-end reclassifications) and the final declaration. The annual time burden is broadly comparable to an organised SA filer's; the difference is that the work is spread through the year rather than concentrated in a January push, which is the discipline most landlords find hardest to acquire."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

@@ -39,7 +39,7 @@ faqs:
     answer: "Keep the underlying decision document (board minute, written advice, contemporaneous file note) and the HMRC acknowledgement of the VAT1614A. HMRC's evidence-of-option register exists but is not always conclusive on its own. Tax practice is to retain both the original notification (with date-stamped HMRC reply) and the underlying decision evidence for the full life of the option, plus a further 6 years after revocation. Capital Goods Scheme adjustments may run for 10 years from acquisition and rely on the option being demonstrably in place."
   - question: "How does the option to tax interact with the Capital Goods Scheme?"
     answer: "Closely. The Capital Goods Scheme (CGS) runs for 10 intervals on standard-rated capital expenditure of £250,000 or more on land and buildings (VAT-exclusive). The initial recovery rate at acquisition is determined by your taxable-supplies use (heavily influenced by whether you have opted). If your use of the property changes during the 10-year CGS period (you stop opting on a new building, you change tenant mix, a disapplication event occurs), each annual interval requires a recalculation and an adjustment of the original VAT recovery. The OTT election sits upstream of the CGS bite; revoking or losing the option mid-cycle is the most common trigger for material CGS clawback. See our separate guide on the Capital Goods Scheme for the 10-interval mechanic."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

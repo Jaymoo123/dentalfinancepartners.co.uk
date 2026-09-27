@@ -12,7 +12,7 @@ image: ""
 h1: "Day-One Remortgage Into a Limited Company: Waiving the 6-Month Rule"
 summary: "A day-one remortgage lets a landlord refinance a property immediately after buying it or transferring it into a limited company (SPV), rather than waiting the six months most buy-to-let lenders require before they will refinance. It matters most when a property was bought with cash or bridging, at auction, or transferred from personal ownership into an SPV on incorporation, because the deposit or purchase capital would otherwise be stranded for half a year. This guide covers the six-month rule and why it exists, when a day-one remortgage is needed, how day-one lenders assess the case on interest coverage, and where the stamp duty and incorporation-relief tax points sit."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

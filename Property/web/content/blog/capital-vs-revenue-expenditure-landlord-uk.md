@@ -3,7 +3,7 @@ title: "Capital vs Revenue Expenditure for UK Landlords: The Repair vs Improveme
 slug: "capital-vs-revenue-expenditure-landlord-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk"
 date: "2026-04-10"
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

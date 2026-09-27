@@ -12,7 +12,7 @@ image: ""
 h1: "SPV Company Bank Account: How to Open One for a New Property Company"
 summary: "An SPV company bank account is a business current account held in the name of the property company itself, not in the name of its director. Company law does not force a private company to hold one, but a landlord SPV needs one in practice: buy-to-let lenders expect rent and mortgage payments to move through an account in the borrower's name, and mixing company money with personal money creates director's loan account and audit-trail problems. This guide covers what to have ready before you apply, how digital-only and high-street onboarding differ for a company with no trading history, what the KYC check actually asks, why one SPV means one account, and what changes for a non-UK resident director."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, Companies House and HMRC guidance"
 faqs:

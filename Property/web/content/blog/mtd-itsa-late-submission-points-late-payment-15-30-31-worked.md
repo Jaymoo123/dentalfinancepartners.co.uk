@@ -42,7 +42,7 @@ faqs:
     answer: "HMRC has historically taken a softer stance on penalties in the early period of a new digital mandate (the precedent is MTD for VAT, where HMRC was generally lenient on first-year penalties for taxpayers making genuine attempts at compliance). The published position for MTD ITSA from 6 April 2026 includes a 'familiarisation period' message; the formal points-and-£200-trigger regime applies from day one of the mandate, but HMRC has signalled that genuine-attempt-at-compliance cases will be considered for relief on reasonable-excuse grounds. Plan as if the penalty regime is fully active; treat any waiver as a bonus, not a baseline."
   - question: "Can I appeal a late-payment penalty if I had a reasonable excuse?"
     answer: "Yes; the reasonable-excuse appeal route applies to MTD ITSA late-payment penalties the same way it does to other penalty regimes. Reasonable excuse is a high bar: serious illness or bereavement, software failure with no available workaround, HMRC error preventing payment, postal/banking system failure documented at the time. Forgetfulness, cash flow difficulty, and 'didn't get round to it' are not reasonable excuses. Appeal must be lodged within 30 days of the penalty notice. The appeal does not pause the penalty calculation; the penalty continues to accrue (at 10% per annum from day 31) while the appeal is being considered."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

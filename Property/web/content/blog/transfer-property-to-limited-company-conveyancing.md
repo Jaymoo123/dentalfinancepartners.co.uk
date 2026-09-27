@@ -12,7 +12,7 @@ image: ""
 h1: "Transferring a property into your limited company: the conveyancing process"
 summary: "Moving a buy-to-let from your own name into your limited company is a sale in law, not an administrative change of details, so the full conveyancing process applies: title investigation, a TR1 transfer deed, an SDLT return, and a fresh Land Registry registration naming the company as proprietor. This guide covers who does each task, why the existing personal mortgage usually has to be redeemed and replaced with a limited-company product, when a RICS valuation is needed, what paces the typical 6 to 12 week timeline, and how solicitor, broker and landlord responsibilities split."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, HM Land Registry and HMRC guidance"
 faqs:

@@ -3,6 +3,7 @@ title: "Lease Extensions in the UK: How the Surrender-and-Regrant Doctrine Works
 slug: "lease-extensions-in-the-uk-surrender-and-regrant"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/lease-extensions-in-the-uk-surrender-and-regrant"
 date: "2026-05-26"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Lease Extensions UK: Surrender and Regrant Explained"

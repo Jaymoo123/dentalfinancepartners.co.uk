@@ -44,7 +44,7 @@ faqs:
     answer: "Yes. It is an annual positive declaration on every confirmation statement, not a one-off declaration at incorporation. The campaign page is explicit that the statement applies to confirmation statements with statement dates from 5 March 2024 onwards, which is now every confirmation statement for every active UK limited company. On the online filing the declaration is typically a tick-box; the underlying obligation re-asserts each year so directors should refresh their thinking on the lawfulness of intended activities (particularly if the company has changed business direction during the year, added new property types or operations, or expanded outside the original incorporation scope)."
   - question: "Where do I check the operative state of the regime?"
     answer: "The Companies House campaign page at changestoukcompanylaw.campaign.gov.uk is the canonical commencement-state tracker, with topic sub-pages for confirmation-statement changes, identity verification, ACSPs and the abolition of local registers. The Companies House blog at companieshouse.blog.gov.uk publishes operational announcements as each phase commences. Statutory text sits at legislation.gov.uk for ECCTA 2023 (c. 56) and for the Companies Act 2006 inserted provisions. The current fee schedule sits at gov.uk/government/publications/companies-house-fees. Quote the verification timestamp in any client-facing note so the reader knows when the position was checked."
-dateModified: "2026-05-25"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"

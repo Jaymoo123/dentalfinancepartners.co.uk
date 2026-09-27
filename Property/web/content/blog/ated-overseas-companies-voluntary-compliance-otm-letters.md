@@ -46,7 +46,7 @@ faqs:
     answer: "Yes. ATED returns are not optional; they must be filed even where a relief reduces the charge to nil. A Relief Declaration Return is the right form for portfolios where every dwelling qualifies for the same relief. Missing the return triggers the Schedule 55 FA 2009 late-filing penalty cascade (£100 immediate, escalating to £300 or 5% of tax due at six and twelve months, plus daily £10 from day 91) regardless of whether tax is owed. The OTM campaign explicitly targets companies that assumed relief made the return optional; that assumption is the source of much of the population."
   - question: "What if my company has been wound up but ATED returns were missed?"
     answer: "ATED liability survives the company's dissolution where chargeable periods ended before dissolution. Practical recovery is harder for HMRC against a dissolved company, but the position can re-open if assets are recovered (e.g., the Land Registry transfer was not effected before dissolution and HMRC pursues bona vacantia). For a recipient who is the former director or shadow director of a dissolved overseas company, taking the OTM letter to a UK adviser before responding is the right step; the position turns on group/trust arrangements that vary widely and need individual analysis."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

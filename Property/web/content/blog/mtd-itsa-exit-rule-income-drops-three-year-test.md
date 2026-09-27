@@ -46,7 +46,7 @@ faqs:
     answer: "Quarterly updates already filed remain on HMRC's record for the tax years they covered. Exit does not retrospectively unwind anything; it simply ends forward obligations from the confirmation date. Your digital records held in MTD-compatible software should be retained for the standard self-assessment record-keeping period (five years from 31 January after the tax year). If you re-enter MTD later, the historic records do not need to be re-imported; the new MTD cycle starts from the re-entry tax year."
   - question: "Can I voluntarily stay in MTD even though I qualify to exit?"
     answer: "Yes. After three consecutive sub-threshold years a mandated taxpayer can choose to remain in MTD voluntarily rather than notify exit. The reasons to do so are usually practical: existing software, agent workflow, faster oversight of trading position, intention to return above threshold soon. The voluntary cycle is identical to the mandated cycle (same quarterly deadlines, same EoPS, same penalty regime), so the choice is essentially about whether the recurring software cost is worth the operational continuity."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

@@ -3,6 +3,7 @@ title: "Government Ends Per-Room Council Tax on HMO Rooms in England: SI 2023/11
 slug: "government-to-end-council-tax-on-hmo-rooms"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/government-to-end-council-tax-on-hmo-rooms"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "End of Per-Room Council Tax on HMOs: SI 2023/1175 Reform"

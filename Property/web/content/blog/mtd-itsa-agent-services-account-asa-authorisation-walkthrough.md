@@ -42,7 +42,7 @@ faqs:
     answer: "No. The ASA authorisation is independent of your filing compliance. Missing a quarterly deadline triggers points and (at 4 points) a £200 penalty under the new MTD ITSA penalty regime, but the authorisation between you and your accountant remains intact. The accountant can continue to file your next quarter under the same authorisation. If the missed deadline is contested or appealed, the accountant uses their authorisation to handle the correspondence."
   - question: "How can I verify that my agent is actually authorised in my Government Gateway account?"
     answer: "Sign into your Government Gateway, navigate to 'Manage my agents' (under Account settings), and you will see a list of agents authorised across each tax service. For MTD ITSA, the authorised agent's firm name appears alongside the 'Making Tax Digital for Income Tax' service label. If the agent expects to be authorised but does not appear, the request likely failed at the email-approval step; re-issue from the accountant side. Checking 'Manage my agents' is the definitive verification mechanism; do not rely on the accountant's confirmation alone, especially in the first quarter after onboarding."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

@@ -38,7 +38,7 @@ faqs:
     answer: "No. Companies House does not collect verification fees through emailed links. The GOV.UK One Login verification route is free. If you choose to verify via an Authorised Corporate Service Provider, the ACSP will invoice you separately under its own commercial terms, not through a Companies House email. Any email purporting to be from Companies House asking for direct payment, bank details, or password information should be treated as a phishing attempt, ignored, and reported to Action Fraud. The Companies House campaign page lists the legitimate communication channels."
   - question: "Where can I read the operational walkthrough?"
     answer: "Our ECCTA identity verification operational page covers the One Login versus ACSP route choice in landlord-LtdCo detail, the per-company filing cadence (where each company quotes your personal code on its confirmation statement), the multi-SPV verification mapping for portfolio groups, the transition-window timing, and the sanctions regime. Use the response above to deal with the email you have just received, then go there for the full verification workflow once you are ready to action it."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

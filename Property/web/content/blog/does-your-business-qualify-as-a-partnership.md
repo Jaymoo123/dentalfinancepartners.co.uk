@@ -44,7 +44,7 @@ faqs:
     answer: "PA 1890 s.2(3) provides that receipt of a share of profits is prima facie evidence of partnership but not conclusive. The provision then lists five rebuttal heads at paragraphs (a) to (e) where receipt of a share of profits does NOT make the recipient a partner: (a) repayment of debt by instalments out of profits; (b) servant or agent remuneration calculated by reference to profits; (c) widow, child, or surviving civil partner annuity (the 2005 Civil Partnership Act 2004 amendment inserted 'surviving civil partner'); (d) advance of money by way of loan with profit-contingent interest; (e) annuity in consideration of the sale of goodwill. For property audiences, paragraphs (b) (managing-agent profit-share remuneration) and (d) (profit-contingent loan-back arrangements) are the most relevant rebuttals."
   - question: "How does this page differ from the existing SDLT Sch 15 mechanics page on your site?"
     answer: "This page is the prior definitional layer answering 'does this arrangement qualify as a partnership in the first place?' The existing partnership SDLT Sch 15 mechanics page covers the layer beneath: assuming the partnership exists, how is the sum-of-lower-proportions calculated, what is the partner-LtdCo proportion match requirement, what edge cases apply. Reading sequence: this page first to settle the existence question; then the mechanics page once you know you qualify. The pages cross-link in both directions."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

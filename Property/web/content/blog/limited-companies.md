@@ -46,7 +46,7 @@ faqs:
     answer: "Four operative alternatives within the entity-choice decision tree. (i) Sole trader: no separate entity, default for single landlords; ITTOIA 2005 Part 3 property business plus s.272A restriction; simplest compliance. (ii) General partnership under PA 1890: tax-transparent under ITTOIA 2005 Part 9 and TCGA 1992 s.59; unlocks FA 2003 Sch 15 SDLT incorporation relief. (iii) Limited Liability Partnership under LLPA 2000: limited liability plus tax-transparent default plus salaried-member regime exception plus mixed-membership regime for hybrid structures. (iv) Limited Partnership under LPA 1907: post-ECCTA Part 2 compliance reforms. Plus trust structures. The entity-choice question is upstream of the LtdCo decision."
   - question: "How does this pillar relate to the BTL-complete-guide on the site?"
     answer: "This pillar is the broadest LtdCo entry point: covering all property-LtdCo use cases (BTL, HMO, FHL, development, commercial, mixed-use, multi-SPV group, FIC, hybrid LLP corporate member). The existing BTL-complete-guide page is the BTL-specific specialist: one use-case among the many this pillar covers. Reading sequence: this pillar to settle the use-case fork question and entity-choice question; the BTL specialist (or whichever fork applies) for the depth on that route. The pages cross-link, with the pillar's primary architecture being the cross-link grid to all of the specialists."
-dateModified: "2026-05-27"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

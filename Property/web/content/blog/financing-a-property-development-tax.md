@@ -12,7 +12,7 @@ image: ""
 h1: "Financing a Property Development: How the Finance Is Taxed"
 summary: "How the finance behind a property development is taxed turns almost entirely on one question: are you trading or investing? A trader capitalises development finance interest into work in progress (or expenses it) and relieves it against trading profit, with no Section 24 restriction. An investor holding the finished asset is on the finance-cost rules, and an individual holding a completed residential dwelling meets the Section 24 20% basic-rate reducer. This guide walks the interest treatment, arrangement fees, mezzanine and JV finance, the condition D convert-and-flip trap, and the SDLT, VAT and income-versus-CGT points on the exit."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

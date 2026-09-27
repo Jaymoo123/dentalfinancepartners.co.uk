@@ -40,7 +40,7 @@ faqs:
   answer: "No. AIA, like all plant and machinery allowances, covers plant and machinery, not land or the building structure. You cannot claim AIA on the purchase price of a property or on the cost of constructing the shell. Only qualifying plant and machinery within the building, such as integral features (electrical and cold water systems, heating, lifts and similar) under CAA 2001 section 33A and loose plant, can qualify. Integral features are dealt with in the special rate pool and write down at 6% to the extent they exceed any AIA claimed against them."
 - question: "I had qualifying FHL spend in 2024/25, can I still claim it?"
   answer: "Possibly, depending on how far through the time limits you are. Furnished holiday lettings still qualified for AIA in 2024/25, before the regime was abolished by Finance Act 2025 Schedule 5 (with effect from 6 April 2025 for income tax and 1 April 2025 for corporation tax), so that was the last clean year for a fresh AIA claim on holiday-let plant. If you filed your 2024/25 self-assessment return without making a claim you should have made, you can amend the return within 12 months of the filing deadline under TMA 1970 section 9ZA (so by 31 January 2027 for a return due 31 January 2026). Once that window has closed, the route is an overpayment relief claim under TMA 1970 Schedule 1AB, made within four years of the end of the tax year under the section 34 time limit (by 5 April 2029 for 2024/25). Plant already pooled before abolition continues to attract writing-down allowances within your now-ordinary property business."
-dateModified: '2026-06-02'
+dateModified: "2026-06-23"
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
 - legislation.gov.uk

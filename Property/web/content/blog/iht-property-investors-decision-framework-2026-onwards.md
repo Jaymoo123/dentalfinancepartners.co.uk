@@ -44,7 +44,7 @@ faqs:
     answer: "Both are in scope as announced. The 6 April 2027 reform brings unused defined-contribution pension funds into the deceased's estate for IHT, which captures SIPP, personal pension, SSAS (small self-administered scheme), and master trust pots. SSAS holders who use the SSAS to own commercial property the trading business operates from will need to model the IHT impact on the property's open-market value being added to the estate at the member's death. The spousal exemption still applies; the change bites on second death where the residual fund passes to children. Charitable nominations remain exempt under s.23 IHTA 1984."
   - question: "If I take just one action this year, what should it be?"
     answer: "Re-run your IHT sizing on the post-6-April-2027 basis (i.e. including unused pension funds). For most landlords the number will be larger than they expect, often by £100,000 to £300,000. Two-thirds of bad estate-planning outcomes start from sizing the problem incorrectly, not from picking the wrong mitigation. Once the number is in front of you, the right second action becomes obvious: large gap and good health usually points to lifetime gifting plus cover; smaller gap with closer health concerns points to cover plus spousal repositioning. Sizing first, mitigation second."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

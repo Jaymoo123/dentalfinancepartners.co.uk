@@ -50,7 +50,7 @@ howToSteps:
     text: "If the LLP is intended as a partnership for a future Schedule 15 incorporation, put real substance in place early: SA800 returns, partnership accounting, joint borrowing and genuine shared decision-making."
   - name: "Take advice before transferring property"
     text: "Confirm the CGT (s.162) and SDLT (Schedule 15) reliefs apply to your facts and get lender consent before executing any transfer of property into or out of the LLP."
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"

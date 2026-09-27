@@ -12,7 +12,7 @@ image: ""
 h1: "Self-Employed Buy-to-Let Mortgages: Getting Approved on One Year's Accounts"
 summary: "A working guide to buy-to-let mortgages for self-employed landlords. Why the rent (not your trading income) does most of the affordability work, the income evidence lenders actually accept including a single year's SA302, how contractors and company directors are assessed, and how to get your accounts lender-ready."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

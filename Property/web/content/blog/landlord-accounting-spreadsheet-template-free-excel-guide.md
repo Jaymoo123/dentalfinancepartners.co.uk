@@ -3,7 +3,7 @@ title: "Landlord Accounting Spreadsheet Template: Free Column Structure and MTD-
 slug: "landlord-accounting-spreadsheet-template-free-excel-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/landlord-accounting-spreadsheet-template-free-excel-guide"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

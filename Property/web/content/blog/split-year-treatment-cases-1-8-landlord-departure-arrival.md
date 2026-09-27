@@ -40,7 +40,7 @@ faqs:
     answer: "Foreign rental income in the overseas part of the split year is outside UK income tax because you are treated as non-resident for that fragment. Foreign rental income in the UK part is fully within UK tax and goes on the SA106 foreign income pages. The split date is the dividing line, and rent that straddles it must be apportioned. The most common mistake is reporting a full calendar year of foreign rental income without splitting it on the SA106, which usually triggers an HMRC enquiry."
   - question: "Does split-year affect my UK rental income from UK property?"
     answer: "No. UK rental income from UK property is taxable in the UK under section 264 ITTOIA 2005 regardless of your residence status, so it is in scope for the whole tax year. What split-year changes is the regime: you report under ordinary self-assessment for the UK part and under the non-resident landlord rules for the overseas part. The total tax base on the UK rental profit is the same; only the operational machinery (NRL withholding, treaty interactions, personal allowance entitlement) shifts on the split date."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

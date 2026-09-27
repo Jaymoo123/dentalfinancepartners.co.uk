@@ -39,7 +39,7 @@ faqs:
     answer: "Exiting MTD ITSA (regulation 24) returns the landlord to annual self-assessment without quarterly digital updates. Ceasing self-assessment entirely (for example on emigration with no UK chargeability, or on cessation of rental business with no remaining liability) is a separate process under TMA 1970 section 7 and HMRC's published cessation route. A landlord whose income has dropped but who still has UK chargeability stays on annual self-assessment after the regulation 24 exit; only a landlord who also ceases to have a tax liability can leave self-assessment altogether."
   - question: "What is the precondition that MTD ITSA must have applied for three tax years?"
     answer: "Regulation 24 of SI 2026/336 governs the three-tax-year income-exemption exit. The exit window does not open until the landlord has been within MTD ITSA for three complete tax years AND has had three consecutive tax years of qualifying income below the cohort threshold. The two conditions overlap in practice but should not be conflated when drafting the notification."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

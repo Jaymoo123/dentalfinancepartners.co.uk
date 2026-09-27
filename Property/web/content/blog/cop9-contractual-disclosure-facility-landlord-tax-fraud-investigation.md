@@ -3,6 +3,7 @@ title: "CoP9 and the Contractual Disclosure Facility: HMRC Tax Fraud Investigati
 slug: "cop9-contractual-disclosure-facility-landlord-tax-fraud-investigation"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/cop9-contractual-disclosure-facility-landlord-tax-fraud-investigation"
 date: "2026-05-24"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "CoP9 and the CDF: HMRC Fraud Investigations"

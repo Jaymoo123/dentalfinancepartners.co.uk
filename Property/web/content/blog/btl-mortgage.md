@@ -35,7 +35,7 @@ faqs:
   answer: "It can. Interest on borrowing up to the value of the property when it first entered your letting business is normally relievable as a finance cost, subject to Section 24. Drawing extra equity for genuine business purposes can still qualify, but borrowing for non-business use is not relievable. Remortgaging does not itself trigger CGT, because there is no disposal, but it raises your finance cost and your Section 24 calculation."
 - question: "How is profit on selling a BTL property taxed?"
   answer: "A gain on selling a residential investment property is a capital gain, charged at 18% within your basic-rate band and 24% above it (the 24% higher residential rate introduced by Finance (No.2) Act 2024). You deduct the annual exempt amount, GBP 3,000, before tax. The mortgage balance does not reduce the gain: CGT is on the rise in value, not on your equity. A UK residential property gain must be reported and the tax paid within 60 days of completion."
-dateModified: '2026-05-31'
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-05-31'

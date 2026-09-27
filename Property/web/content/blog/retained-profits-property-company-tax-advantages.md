@@ -3,7 +3,7 @@ title: "Retained Profits in a Property Company: How the Tax Advantages Actually 
 slug: "retained-profits-property-company-tax-advantages"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/retained-profits-property-company-tax-advantages"
 date: "2026-04-10"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

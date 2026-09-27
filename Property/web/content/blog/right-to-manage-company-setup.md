@@ -38,7 +38,7 @@ faqs:
     answer: "The RTM company. Once the right to manage is acquired, the management functions under the leases are exercised by the company, so the company contracts with the managing agent, instructs contractors, demands service charges and holds the service charge fund on trust. Individual leaseholders are not parties to the agent's contract. Directors should check the agent's terms deal properly with holding trust money in a designated client account and with providing the annual service charge accounts."
   - question: "Can the RTM company hold or buy property?"
     answer: "No, and this is worth being precise about. Section 73(5) of the 2002 Act provides that if the freehold is transferred to an RTM company it ceases to be an RTM company at that moment. An RTM company is a management vehicle: it holds no property, makes no profit and cannot be used to hold buy-to-lets. If the block wants to own the freehold, that is collective enfranchisement through a separate nominee company, not a bolt-on to the RTM company."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

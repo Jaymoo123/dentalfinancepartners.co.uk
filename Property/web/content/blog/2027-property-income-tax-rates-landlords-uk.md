@@ -3,6 +3,7 @@ title: "2027 Property Income Tax Rates for UK Landlords: 22%, 42%, 47% Explained
 slug: "2027-property-income-tax-rates-landlords-uk"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/2027-property-income-tax-rates-landlords-uk"
 date: "2026-05-21"
+dateModified: "2026-08-03"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "2027 Property Income Tax Rates UK: 22% / 42% / 47% Landlords"

@@ -38,7 +38,7 @@ faqs:
     answer: "It is trust money, not the landlord's cash. Service charge funds paid by leaseholders are held on trust under s.42 of the Landlord and Tenant Act 1987, so uncommitted balances and reserve funds belong to the trust and should transfer to the RTM company's trust account at handover. In practice the transfer often lags while the outgoing agent finalises accounts, and the accrued position matters as much as the cash: bills for work already done but not yet invoiced will land on the RTM company. Reconciling the closing accounts against the sums transferred is the most valuable piece of accounting scrutiny in the whole claim."
   - question: "How long does the whole thing take in practice?"
     answer: "The statutory floor from the first participation notice to acquisition is about four and a half months: a 14-day wait, at least one month to the counter-notice date, then at least three months to the acquisition date. Real uncontested claims typically run around four to six months once preparation, service and handover organisation are added. A disputed claim adds the two-month tribunal application window, the tribunal's own listing and decision timetable, then three months from the final determination to acquisition, so a contested claim commonly takes a year or more end to end."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

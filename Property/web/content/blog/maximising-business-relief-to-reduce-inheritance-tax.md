@@ -3,6 +3,7 @@ title: "Business Property Relief: What Qualifies for BPR and What the 2026 Cap C
 slug: "maximising-business-relief-to-reduce-inheritance-tax"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/maximising-business-relief-to-reduce-inheritance-tax"
 date: "2026-05-27"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Business Property Relief (BPR): What Qualifies, £2.5m Cap"

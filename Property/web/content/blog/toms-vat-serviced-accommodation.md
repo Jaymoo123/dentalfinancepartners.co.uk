@@ -44,7 +44,7 @@ faqs:
     answer: "VAT grouping can help where the landlord and the operator are connected (eg same group of companies). Intra-group supplies are outside VAT, so the operator's payment to the landlord SPV for the lease becomes a non-supply. The operator then makes a single external supply to travellers. The trade-off is that the group must be eligible (control test) and that joint-and-several liability for VAT applies across the group."
   - question: "Does the FHL abolition (April 2025) interact with this?"
     answer: "The FHL abolition is a direct-tax change (loss of CGT/IT reliefs for former FHL properties) and is separate from the VAT position. A property let on a serviced-accommodation basis (short-stay with services) is a standard-rated VAT supply regardless of FHL status. Operators that were treating FHL income as outside VAT on the historical FHL-equals-residential-letting framing should review the position; short-stay-with-services has always been a taxable supply at standard rate."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

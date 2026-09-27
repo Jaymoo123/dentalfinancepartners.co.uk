@@ -46,7 +46,7 @@ faqs:
     answer: "No. Finance (No.2) Act 2024 abolished SDLT MDR for transactions in England and Northern Ireland with an effective date on or after 1 June 2024. The legislation is purely SDLT-side and has no effect on Welsh LTT. Welsh devolution means Wales has its own statute (LTTA 2017), its own Schedule 13 covering MDR, and its own Welsh Government policy on whether to retain, modify or abolish the relief. Wales chose retain-and-modify; England and Northern Ireland chose abolish. The two regimes are fully independent."
   - question: "Where does this page sit alongside the other Welsh LTT pages?"
     answer: "This page is the depth page on Welsh MDR specifically. The Welsh main rates and higher rates are on the rates entry pages (main rates and higher rates companions). The Welsh derelict-property refund route, which can reclassify severely derelict dwellings as non-residential and access the non-residential band table without needing MDR, is on its own companion page. For the SDLT context (England + NI, where MDR is abolished), the SDLT BTL rates and surcharge pillar covers the post-abolition landscape. For portfolio incorporation specifically, our incorporation pillar covers the CGT and corporation tax side; this MDR page covers the LTT side."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

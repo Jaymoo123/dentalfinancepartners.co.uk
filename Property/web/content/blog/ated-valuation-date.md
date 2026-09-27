@@ -46,7 +46,7 @@ faqs:
     answer: "Yes, in the typical case. FA 2013 s.102(2A) (inserted by FA 2015) is unambiguous: the 5-yearly valuation date is treated as if it were not a valuation date for the chargeable period beginning with that date. The 1 April 2027 valuation does not operate for the 2027/28 chargeable period; it first operates for the 2028/29 chargeable period. This is one of the most common practitioner-side drift errors in ATED. Where an adviser frames the 2027 revaluation as biting the 2027/28 return, ask them to walk through s.102(2A) against the legislation.gov.uk text."
   - question: "What evidence does HMRC accept for the operative valuation?"
     answer: "RICS Red Book formal valuation is the gold standard, particularly for borderline cases (within 10 per cent of a band boundary). For clearly-in-band cases (a £1.4m flat solidly in band 2 covering £1m to £2m, for example), HMRC accepts informal evidence such as estate agent appraisals, comparable sales data, and contemporaneous market analysis. For borderline cases the RICS valuation is essential and the PRBC route is operationally valuable. The evidence base supports the FA 2013 Schedule 33 paragraph 1(3) correct-and-complete-to-the-best-of-knowledge declaration that every ATED return carries."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

@@ -55,7 +55,7 @@ faqs:
   answer: "You can continue to write down a plant-and-machinery pool established before the furnished-holiday-let regime was abolished, but you cannot make new furnished-holiday-let claims. The regime ended for corporation tax periods beginning on or after 1 April 2025 and for income tax from 6 April 2025 (Finance Act 2025 Schedule 5). Existing pool balances roll into the ordinary property-business pool and keep attracting writing-down allowances, while new spend is tested under the ordinary rules, including the s.35 dwelling-house bar."
 - question: What records do I need to defend an AIA claim if HMRC opens an enquiry?
   answer: "Keep the purchase invoice, evidence of the date the plant was brought into use, and a clear link between the asset and a qualifying activity. Where the s.35 bar is in play, hold evidence that the plant sits in communal common parts or a commercial area rather than inside a dwelling. On any property sale, keep the s.196 apportionment and any s.198 election. Digital records maintained for Making Tax Digital support exactly this kind of enquiry defence."
-dateModified: '2026-06-02'
+dateModified: "2026-06-23"
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
 - legislation.gov.uk

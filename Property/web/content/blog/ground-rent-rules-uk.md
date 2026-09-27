@@ -40,7 +40,7 @@ faqs:
     answer: "Yes. Ground rent received is a receipt of the freeholder's property business and is taxable as property income, whether the freeholder is an individual paying income tax or a company paying corporation tax. HMRC's manuals (PIM1051 and PIM1056) list ground rents alongside rent-charges and feu duties as chargeable receipts. A payment received to redeem or extinguish the ground rent is capital rather than income."
   - question: "What should I check about ground rent before buying a flat?"
     answer: "Check the current figure, the escalation clause (fixed, doubling or index-linked, and how often it reviews), the next review date, and any arrears. The seller's LPE1 form should state the current rent and the payment history. Then check the numbers against your lender's ground rent criteria before you commit."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

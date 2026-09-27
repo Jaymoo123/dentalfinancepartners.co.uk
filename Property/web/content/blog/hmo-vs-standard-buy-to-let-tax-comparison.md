@@ -3,6 +3,7 @@ title: "HMO vs Standard Buy-to-Let: Which Property Type Offers Better Tax Advant
 slug: "hmo-vs-standard-buy-to-let-tax-comparison"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/hmo-vs-standard-buy-to-let-tax-comparison"
 date: "2026-04-10"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "HMO vs Standard BTL: Tax & Yield Comparison for UK Landlords"

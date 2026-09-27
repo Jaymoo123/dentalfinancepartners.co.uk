@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 howToSteps:
   - name: "Confirm whether MTD applies to you"
     text: "Add up your gross rental income plus any sole-trade income for the tax year. If the combined qualifying income is above £50,000, you must use MTD for Income Tax from 6 April 2026. The threshold falls to £30,000 from 6 April 2027 and £20,000 from 6 April 2028."

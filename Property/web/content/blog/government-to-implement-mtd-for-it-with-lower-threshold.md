@@ -39,7 +39,7 @@ faqs:
     answer: "Yes: limited companies are outside MTD ITSA. They file CT600 annually under the corporation tax regime. Incorporation carries its own cost-benefit profile, though: SDLT on transferring properties from you to the company, market-value CGT on the transfer, ongoing CT compliance under Schedule 18 FA 1998 (12-month CT600 deadline plus 9-months-1-day CT payment), and dividend tax when you take profits out. For some people incorporating nets out positively; for others the MTD ITSA burden is the cheaper option. Get specialist advice on the full incorporation comparison before you let MTD ITSA become the reason you incorporate."
   - question: "Does the £20,000 phase 3 catch a landlord at exactly £20,000?"
     answer: "The statutory wording catches qualifying income 'above' the threshold, so HMRC's operational interpretation is that exactly £20,000 sits below the cliff and you are not in scope. The drafting matters if your gross rental is predictable and sits near the threshold: £20,001 is in; £20,000 is out. If you are managing close to the cliff, keep contemporaneous records that support your gross-rental figure, because HMRC's review of the qualifying-income figure at the determining-return stage will focus on the exact arithmetic."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

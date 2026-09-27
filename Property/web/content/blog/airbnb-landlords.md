@@ -38,7 +38,7 @@ faqs:
     answer: "Generally no: as a host you are not directly in scope under MLR 2017 (SI 2017/692) regulation 8(2). Your letting agent IS in scope under reg 8(2)(f) if it manages rents at or above the equivalent of 10,000 euros monthly (HMRC supervision routing via reg 14). The agent runs CDD on you as part of its supervision; you receive but do not run CDD on guests. If you run multiple properties and also provide tax-advisory or company-secretarial services to other landlords, you may yourself fall within reg 8(2)(c) external accountants and tax advisers. The AML cordon around UK property accountants covers the professional-conduct dimension."
   - question: "How does this handbook differ from the temporal-narrative retrospective page?"
     answer: "The retrospective, Airbnb after the pandemic, traces the arc: what changed between 2020 and 2026, and why. Here you get the day-to-day operational picture instead: the annual cycle, OTA-to-SA reconciliation, records discipline, the VAT trigger and your exit options. Read the retrospective for the policy-and-market story; stay here for how it all runs in practice."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

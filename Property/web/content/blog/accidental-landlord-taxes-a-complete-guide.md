@@ -38,7 +38,7 @@ faqs:
     answer: "The MTD page (MTD ITSA: do accidental landlords need to file digitally) is the digital-filing-decision page: does this landlord need to file digitally given turnover, exemption routes and software choice. This guide is the wider journey-map: every tax touchpoint an accidental landlord hits, in the order they hit them, with one forward-link per touchpoint to the deeper page. Read this guide for orientation across the whole landlord-tax journey; read the MTD page for the digital-filing decision specifically."
   - question: "I have two homes now (let-to-buy). What is the PPR election?"
     answer: "Under TCGA 1992 s.222(5), a written election to HMRC within two years of acquiring the second residence nominates which of two qualifying residences is treated as your PPR for CGT purposes. Without an election, HMRC determines the main residence factually, usually by where you actually live and spend the bulk of your time. The election is reversible by further notice and is useful where a temporary second residence (the new home) is expected to appreciate less than the original (the let-out property). Property advisers commonly review the election at refinance or sale events, particularly where market conditions have shifted since the original move. See our deep dive at principal private residence relief for landlords for the full mechanic."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

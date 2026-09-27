@@ -37,7 +37,7 @@ faqs:
     answer: "No. An en-suite bathroom is within the dwelling-house and the s.35 restriction applies. Built-in furniture in a bedroom is similarly in the dwelling-house. The narrow common-parts carve-out reaches only those parts of a multi-occupied building that are outside any single dwelling-house, which a bedroom and its en-suite are not. The relief route for replacement of fittings inside private bedrooms remains the ITTOIA 2005 s.311A replacement of domestic items relief on a revenue basis."
   - question: "How does the s.35 restriction interact with the FHL post-abolition rules for an HMO that used to be on the FHL regime?"
     answer: "The FHL regime was abolished by Finance Act 2025 Schedule 5 with effect from 1 April 2025 for corporation tax and 6 April 2025 for income tax. Before abolition, an FHL business was a separate qualifying activity at CAA 2001 s.15(1)(c) (UK FHL) or s.15(1)(da) (EEA FHL), and the s.35 dwelling-house restriction did not apply to plant in an FHL dwelling. After abolition, FHL is absorbed into the ordinary UK property business or overseas property business, and the s.35 restriction applies in full to new expenditure. An HMO that was operated as a serviced-let FHL (uncommon but possible) and has been absorbed into the property business at commencement loses access to the dwelling-house plant claim. Grandfathered FHL-pool balances pre-commencement continue writing down per the transitional rules at FA 2025 Sch 5 Part 5. Our forthcoming Bucket C page on FHL capital allowances post-April-2025 walks the transitional mechanics in detail."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 sourcesVerifiedAt: "2026-05-23"
 sourceDomains:
   - legislation.gov.uk

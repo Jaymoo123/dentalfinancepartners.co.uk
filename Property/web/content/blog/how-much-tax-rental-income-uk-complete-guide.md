@@ -3,6 +3,7 @@ title: "How Much Tax Do I Pay on UK Rental Income? 2026/27 Calculation Walkthrou
 slug: "how-much-tax-rental-income-uk-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/how-much-tax-rental-income-uk-complete-guide"
 date: "2026-05-21"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "How Much Tax on UK Rental Income 2026/27? Worked Examples"

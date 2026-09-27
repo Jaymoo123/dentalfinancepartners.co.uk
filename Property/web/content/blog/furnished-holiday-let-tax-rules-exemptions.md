@@ -3,6 +3,7 @@ title: 'Furnished Holiday Let Tax: Rules, Abolition and What Happens Now'
 slug: furnished-holiday-let-tax-rules-exemptions
 canonical: https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/furnished-holiday-let-tax-rules-exemptions
 date: '2026-05-21'
+dateModified: "2026-08-18"
 author: Property Tax Partners Editorial Team
 category: Section 24 & Tax Relief
 metaTitle: 'Furnished Holiday Let Tax: Abolished April 2025, Now What'

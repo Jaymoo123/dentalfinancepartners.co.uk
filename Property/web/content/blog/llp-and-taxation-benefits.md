@@ -42,7 +42,7 @@ faqs:
     answer: "Five operative scenarios. (a) Typical residential BTL with individual HRT or ART members: gets none of the Section 24 benefits and adds compliance overhead versus direct ownership. (b) Small single-property setups where general-partnership or sole-trader simplicity is preferable. (c) Setups where retention beats extraction: a LtdCo with FIC overlay typically wins. (d) Setups requiring IHT BPR: the LLP form does not help. (e) Setups where the Condition C capital-contribution safe harbour cannot be funded: salaried-member exposure crystallises."
   - question: "What are the common LLP tax mistakes for property landlords?"
     answer: "Six recurring patterns. (1) Assuming the LLP form escapes Section 24 on residential property: it does not for individual members. (2) Relying on a corporate member to escape s.272A without modelling the mixed-membership reallocation: the rules systematically dismantle the structure. (3) Assuming salaried-member rules do not apply to property LLPs: they apply to all LLP business types regardless of trading or investment status. (4) Assuming Sch 15 SLP relief is automatic: the para 1 business gate must be met honestly. (5) Assuming BPR is available: Pawson investment-line generally excludes pure landlord LLPs. (6) Assuming profit-allocation flexibility is unlimited: settlements legislation, GAAR, and bona-fide commercial bounds limit it."
-dateModified: "2026-05-27"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

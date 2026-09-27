@@ -39,7 +39,7 @@ faqs:
     answer: "Talk to HMRC promptly. Silence is the worst outcome and may trigger a section 9A enquiry or a section 29 discovery assessment. HMRC will usually grant a reasonable extension where you engage constructively and explain the difficulty. The 60-day window is operational practice, not statutory; the underlying enquiry-and-discovery time limits at sections 29 and 36 are the binding constraints."
   - question: "Where should I look up the operative HMRC view on section 165 and section 260?"
     answer: "HMRC's Capital Gains Manual CG66880 onwards covers hold-over relief in detail (section 165 and section 260 application, the trade-versus-investment line, the agricultural-property extension, the settlor-interested-trust exclusion). The Enquiry Manual EM3270 onwards governs the post-nudge enquiry path. The Compliance Handbook CH80000 onwards covers Schedule 24 mitigation mechanics. These are the live HMRC operational documents the response letter should reference."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

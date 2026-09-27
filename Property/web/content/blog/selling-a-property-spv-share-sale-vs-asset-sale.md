@@ -12,7 +12,7 @@ image: ""
 h1: "Selling a Property SPV: Share Sale vs Asset Sale"
 summary: "When you exit a property SPV you either sell the shares in the company or the company sells the properties. A share sale is normally better for the seller: one layer of capital gains tax at 18 or 24 per cent, and a buyer whose stamp duty is 0.5 per cent of the share price rather than full SDLT with the 5 per cent surcharge. The cost is the latent-gain discount, because the buyer inherits your low base cost and the corporation tax built into it. An asset sale gives the buyer a clean, stepped-up base cost but taxes you twice: corporation tax in the company, then dividend tax or a liquidation to get the cash out. This page compares both routes with figures on a £400,000 single-property SPV."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, HMRC and gov.uk guidance, September 2026"
 faqs:

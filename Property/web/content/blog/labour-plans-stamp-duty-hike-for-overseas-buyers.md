@@ -42,7 +42,7 @@ faqs:
     answer: "Yes. First-time buyer relief under FA 2003 Schedule 6ZA is not residence-conditional: if you meet the Schedule 6ZA tests (no prior dwelling ownership anywhere in the world, intention to occupy as your main residence, purchase price within the £500,000 cap) you can claim it even as a non-UK-resident, because those tests look at worldwide property regardless of where you are resident. The Schedule 9A 2% non-resident surcharge then lands on top: the computation under FA 2003 s.55C adds the surcharge to the rates otherwise applicable, which on an FTB claim are the FTB-relieved rates under Schedule 6ZA paragraph 4 Table A (0% to £300,000; 5% £300,001 to £500,000). On a £400,000 non-resident first-time purchase, the FTB-relieved SDLT is £5,000 (5% on £100,000), and the 2% surcharge adds 2% on each band, so you pay £13,000 in total."
   - question: "How is this page updated as the policy state changes?"
     answer: "It is dated and time-stamped at 26 May 2026, and the Schedule 9A rate is 2% as at that date. If the 1-percentage-point increase to 3% is legislated in a future Finance Bill, this is revised to reflect the legislated rate, the commencement date, and any transitional provisions. Treat it as a snapshot and verify the current statutory rate against gov.uk and HMRC published guidance before you rely on it for a transaction. Policy direction shifts less often than the underlying mechanics, so the dated rate above is the figure to confirm afresh each time."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

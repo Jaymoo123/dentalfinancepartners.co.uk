@@ -51,7 +51,7 @@ faqs:
   answer: "Businesses in their first year of VAT registration take 1 percentage point off their normal sector flat rate. A trade on a 12% rate pays 11% of VAT-inclusive turnover for the first 12 months from the registration date. It is a modest sweetener and does not change the underlying problem that the scheme ignores input VAT recovery, so a business with significant recoverable VAT should still model standard accounting alongside it."
 - question: "Does the VAT I pay change under Making Tax Digital?"
   answer: "No, the figures are the same. Making Tax Digital for VAT changes how you record and file, not how much you owe. Every VAT-registered business keeps digital records and submits returns through MTD-compatible software; a standalone spreadsheet only works if it is bridged into the submission. Separately, Making Tax Digital for Income Tax is now live for landlords, phased from 6 April 2026 (gross property income above £50,000), 6 April 2027 (£30,000) and 6 April 2028 (£20,000), so a VAT-registered landlord above those thresholds runs both regimes side by side."
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 sourcesVerifiedAt: "2026-06-02"
 sourceDomains:
 - gov.uk

@@ -41,7 +41,7 @@ faqs:
     answer: "Each spouse is assessed individually for the digital-exclusion exemption under SI 2026/336 regulation 18 read with regulation 20 and TMA 1970 Schedule A1 paragraph 14(2). One spouse can hold an exclusion notice (and continue regular SA reporting outside MTD ITSA) while the other is in MTD scope. The household runs the mixed workflow described in the asymmetric-scope discussion below. See our MTD penalties and exemptions page for the full digital-exclusion mechanics; this page covers the joint-owner overlay only."
   - question: "Does separation or divorce affect the 50/50 default?"
     answer: "Yes. ITA 2007 section 836 applies only to spouses and civil partners living together (the Sokoya v HMRC line at Special Commissioners on the living-together limb). On separation the default 50/50 rule ceases to apply; the SA income split reverts to actual beneficial interest (default 50/50 per legal title absent other evidence; or per Declaration of Trust if one exists). Each spouse's MTD scope is re-assessed against the post-separation SA return. The cessation date can be fact-sensitive in messy separations; specialist tax representation is appropriate where the cessation date materially affects the threshold test."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

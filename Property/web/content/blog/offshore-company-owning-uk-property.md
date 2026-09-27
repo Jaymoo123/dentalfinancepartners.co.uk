@@ -12,7 +12,7 @@ image: ""
 h1: "Can an Offshore Company Own UK Property? The Honest Answer"
 summary: "An offshore company can legally own UK property, but for UK residential property it rarely pays. Three regimes stack on top of each other: ATED (£4,600 to £303,450 a year in 2026/27 on dwellings over £500,000), non-resident capital gains tax on every disposal including shares in a property-rich company, and Register of Overseas Entities registration without which the Land Registry will not complete a disposition. This page gives the verdict up front and then routes you to the page that answers your specific question."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 faqs:

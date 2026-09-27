@@ -3,7 +3,7 @@ title: "How to Reduce Void Periods on Rental Properties: A UK Landlord's Playboo
 slug: "reduce-void-periods-rental-properties-uk-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/reduce-void-periods-rental-properties-uk-landlords"
 date: "2026-04-10"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

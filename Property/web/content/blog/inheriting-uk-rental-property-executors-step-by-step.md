@@ -44,7 +44,7 @@ faqs:
     answer: "Yes, by deed of variation under section 142 IHTA 1984. Executed within two years of death, the deed redirects the inheritance and is read back for IHT and CGT purposes as if the property had passed under the will to the new beneficiary. There is no SDLT charge on the redirection (paragraph 8 of Schedule 4 FA 2003). A deed of variation is therefore the cleanest route for a beneficiary who does not want the landlord obligations: the property can be diverted to siblings, children, or a discretionary trust, and the IHT and CGT positions follow the variation rather than the original disposition. The variating beneficiary signs the deed; the original PRs continue the administration."
   - question: "How does the death-uplift interact with the £1m BPR or APR cap arriving in April 2026?"
     answer: "For pure buy-to-let portfolios, not at all: standard rental property is investment, not trading, and does not qualify for BPR (Pawson v HMRC [2013] UKUT 050 (TCC) confirms this). The April 2026 cap is therefore irrelevant for typical landlord estates. It does affect mixed estates where the deceased ran a serviced-accommodation operation with substantial services (the trading-bar end of the Pawson spectrum), or where the rental portfolio sits alongside an active farm with APR exposure. In those mixed cases the £1m allowance is shared across BPR and APR and the executor will need a separate Schedule IHT413 (BPR) and IHT414 (APR) on the IHT400."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

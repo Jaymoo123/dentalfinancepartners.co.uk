@@ -14,7 +14,7 @@ summary: "Section 24 hits higher-rate taxpayers hardest because mortgage interes
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 schema: ""
 faqs:
   - question: "How much extra tax do higher-rate taxpayers pay under Section 24?"

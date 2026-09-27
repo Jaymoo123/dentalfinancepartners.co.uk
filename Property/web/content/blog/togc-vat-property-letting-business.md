@@ -46,7 +46,7 @@ faqs:
     answer: "No directly. The buyer's input-VAT recovery on running costs after completion depends on whether the buyer's supplies are taxable (eg opted commercial letting, standard-rated) or exempt (residential letting). The TOGC at acquisition is outside the scope of VAT; the buyer's post-completion VAT position is determined by the buyer's own activities."
   - question: "What about non-UK buyers and TOGC?"
     answer: "A non-UK buyer can qualify as a TOGC buyer if registered for VAT in the UK (or required to be) and the other conditions are met. UK property letting income from a UK property is within UK VAT (if opted to tax), so the buyer's UK VAT registration is the practical entry condition. Some non-UK buyers structure through a UK SPV to satisfy the VAT-registration condition cleanly."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

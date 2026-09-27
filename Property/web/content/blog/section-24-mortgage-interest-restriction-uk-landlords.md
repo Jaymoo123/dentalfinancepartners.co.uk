@@ -3,7 +3,7 @@ title: "Section 24 Mortgage Interest Restriction: Complete Guide for UK Landlord
 slug: "section-24-mortgage-interest-restriction-uk-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/section-24-and-tax-relief/section-24-mortgage-interest-restriction-uk-landlords"
 date: "2026-03-29"
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

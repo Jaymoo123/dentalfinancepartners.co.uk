@@ -39,7 +39,7 @@ faqs:
     answer: "The disclosed matter is closed for section 29 discovery purposes, subject to the section 29(4) and (5) re-opening conditions: an incomplete or deliberately inaccurate disclosure can be re-opened by HMRC. The taxpayer's ongoing record-keeping obligations under TMA 1970 section 12B continue. Any continuing rental income or other relevant activity from the disclosed period onwards must be brought into the regular self-assessment cycle, or into Making Tax Digital for Income Tax from 6 April 2026 where the qualifying-income threshold is met."
   - question: "How does this DDS overview relate to the LPC-specific pages on this site?"
     answer: "This page is the umbrella architecture: which sub-track to use and how to choose. The campaign-specific Let Property Campaign pages on this site (the benefits-framed page in this same batch, the descriptive orientation page, the calculator-led penalty page, the why-disclose page, and the missed-taxes-rescue page) sit at the campaign-specific layer below the umbrella. Read this page first to determine which sub-track applies to your facts, then read the campaign-specific page for the depth treatment of your chosen track."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

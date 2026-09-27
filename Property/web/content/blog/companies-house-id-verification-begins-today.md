@@ -36,7 +36,7 @@ faqs:
     answer: "Continuing to act as a director or PSC of a UK company without being verified by the applicable deadline is a criminal offence under the ECCTA 2023 framework. The company itself is also exposed: Companies House will refuse a confirmation statement filed with missing or unverified personal codes for any in-scope director or PSC, and failure to file a confirmation statement on time is itself an offence under Companies Act 2006 ss.853A to 853L as amended by ECCTA. The civil financial penalty regime allows penalties for relevant filing failures. Cumulative non-compliance can feed into disqualification proceedings under the Company Directors Disqualification Act 1986."
   - question: "Where do I check the operative state of the rollout?"
     answer: "Two canonical sources. Primary: the Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, which tracks the official rollout state in real time and has sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: the Companies House blog at companieshouse.blog.gov.uk for operational rollout announcements and phase-change posts. Do not rely on the legacy gov.uk/government/news/changes-to-uk-company-law URL, which is no longer active."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

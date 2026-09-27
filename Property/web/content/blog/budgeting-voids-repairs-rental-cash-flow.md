@@ -44,7 +44,7 @@ faqs:
   answer: "Gross yield is annual rent divided by property value, a quick comparison metric. Net yield deducts running costs before dividing by value, so it reflects what the property actually nets before finance. Return on investment (ROI) measures profit against the cash you personally put in (deposit, fees and works), so a geared property can show a strong ROI on a modest yield. For cash flow planning, net yield and post-tax cash matter more than headline gross yield."
 - question: "Should I incorporate my rental business to fix the Section 24 problem?"
   answer: "Incorporation can restore full finance-cost relief because companies are not subject to Section 24, but it brings Stamp Duty Land Tax and Capital Gains Tax on transfer, ongoing company filing, and tax on extracting profit. It suits some geared, higher-rate portfolios and not others. Run the numbers on your specific position, including any incorporation relief on the gain, before deciding rather than treating it as an automatic fix."
-dateModified: '2026-06-01'
+dateModified: "2026-08-21"
 sourcesVerifiedAt: '2026-06-01'
 sourceDomains:
 - gov.uk

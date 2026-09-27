@@ -38,7 +38,7 @@ faqs:
     answer: "Structures and Buildings Allowance under CAA 2001 Part 2A applies at 3 percent straight-line per FA 2020 s.30 on qualifying non-residential building expenditure. SBA does not apply to dwellings. A commercial-to-residential conversion ends SBA eligibility on the converted floor space from the conversion date; any unused SBA carries forward only against any remaining commercial floor area. The capital allowances picture must be reset at the conversion point."
   - question: "Is Class Q still a route for agricultural-to-dwelling conversions?"
     answer: "Class Q remains in force but was narrowed by SI 2024/579, which tightened the conditions for prior approval of agricultural-building-to-dwelling conversions. The previous permitted use-class flexibility was reduced and additional design and curtilage tests were introduced. Re-verify the current Class Q conditions at the planning-decision stage; older firm briefings that quote the pre-2024 conditions are out of date."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

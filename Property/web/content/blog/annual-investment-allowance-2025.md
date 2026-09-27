@@ -37,7 +37,7 @@ faqs:
   answer: No. Cars are excluded from the annual investment allowance under the general exclusions in the Capital Allowances Act 2001, and they are also outside the new 40% first-year allowance. Expenditure on a car is relieved through the writing-down allowance pools instead, at a rate that depends on the vehicle's CO2 emissions, with zero-emission cars eligible for their own first-year allowance.
 - question: Is the writing-down allowance changing in 2026?
   answer: Yes, but the AIA cap itself is not. From 1 April 2026 (corporation tax) and 6 April 2026 (income tax), the main-pool writing-down allowance falls from 18% to 14%, under section 28 of the Finance Act 2026 amending section 56(1) of the Capital Allowances Act 2001. The special rate pool stays at 6%. A new 40% first-year allowance for new and unused main-rate plant also applies from 1 January 2026. None of this changes the £1 million AIA limit for 2025/26; for the full 2026 transition timeline see our companion 2024/25 guide.
-dateModified: '2026-08-03'
+dateModified: "2026-08-03"
 sourcesVerifiedAt: '2026-06-02'
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

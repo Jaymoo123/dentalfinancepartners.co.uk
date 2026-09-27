@@ -3,7 +3,7 @@ title: "How to Complete SA105 Property Income Form 2026: Complete Landlord Guide
 slug: "sa105-property-income-form-2026-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/sa105-property-income-form-2026-complete-guide"
 date: "2026-04-10"
-dateModified: "2026-06-02"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

@@ -42,7 +42,7 @@ faqs:
     answer: "At group level. VATA 1994 s.43 group registration treats the whole VAT group as a single taxable person; the £90,000 test runs on group-aggregated taxable turnover. Intra-group supplies are disregarded. For a former-FHL company that joins an existing VAT group (perhaps to consolidate trading entities under one beneficial owner), the group's combined turnover may already be above the threshold; the group's existing VAT registration absorbs the new company's holiday-accommodation supplies from the date of group joining. Group registration applications go via HMRC form VAT50 and VAT51; HMRC has discretion to refuse where the structure presents abuse risk."
   - question: "How does this page differ from the serviced-accommodation page on the site?"
     answer: "The serviced-accommodation-tax-fhl-abolition-april-2025 page covers the income-tax-side trading-versus-property-income split for operators who provide additional services (daily housekeeping, meals, concierge) that may take their activity beyond passive letting and into a trade for income-tax purposes. This page is the VAT-side neighbour: the VAT treatment of the accommodation supply itself, which is standard-rated regardless of whether the operator reaches trading status for income tax. Different lanes; both pages cross-link as canonical neighbours."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

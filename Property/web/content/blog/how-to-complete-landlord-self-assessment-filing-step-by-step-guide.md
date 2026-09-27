@@ -3,6 +3,7 @@ title: "How to File Landlord Self Assessment 2025/26: Step-by-Step Guide for SA1
 slug: "how-to-complete-landlord-self-assessment-filing-step-by-step-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/how-to-complete-landlord-self-assessment-filing-step-by-step-guide"
 date: "2026-05-21"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Landlord Self Assessment 2025/26: SA105 Step-by-Step Guide"

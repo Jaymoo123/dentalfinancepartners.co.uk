@@ -3,6 +3,7 @@ title: "Declaration of Trust on Property: What It Is, When You Need One, How It 
 slug: "declaration-of-trust"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/declaration-of-trust"
 date: "2026-05-27"
+dateModified: "2026-05-29"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Declaration of Trust on Property: 7 Fact-Patterns + LPA s.53"

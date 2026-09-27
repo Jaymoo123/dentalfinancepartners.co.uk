@@ -1,6 +1,10 @@
 # Multi-Niche Accounting Platform
 
-4 UK niche accountancy websites. All live, deployed on Vercel, with automated content generation and lead capture.
+UK niche accountancy websites on one platform, deployed on Vercel, with automated content
+generation and lead capture.
+
+**The estate is 17 site folders carrying 2,582 blog posts** (re-counted 23 September 2026). The
+four below are the original and largest; the other thirteen are listed under "Wider estate".
 
 | Site | Domain | Folder |
 |------|--------|--------|
@@ -8,6 +12,31 @@
 | Dental Finance Partners | [dentalfinancepartners.co.uk](https://www.dentalfinancepartners.co.uk) | `Dentists/` |
 | Medical Accountants UK | [medicalaccounts.co.uk](https://www.medicalaccounts.co.uk) | `Medical/` |
 | Accounts for Lawyers | [accountsforlawyers.co.uk](https://www.accountsforlawyers.co.uk) | `Solicitors/` |
+
+## Wider estate
+
+Thirteen further site folders follow the same `niche.config.json` + `web/` + `pipeline/` shape.
+Post counts are as at 23 September 2026.
+
+| Folder | Brand | Domain | Posts |
+|---|---|---|---:|
+| `generalist/` | Holloway Davies | hollowaydavies.co.uk | 475 |
+| `digital-agency/` | Agency Founder Finance | agencyfounderfinance.co.uk | 306 |
+| `wills-probate/` | Probate Compass | **placeholder domain** | 146 |
+| `construction-cis/` | Trade Tax Specialists | tradetaxspecialists.co.uk | 82 |
+| `contractors-ir35/` | Contractor Tax Accountants | contractortaxaccountants.co.uk | 62 |
+| `divorce-finances/` | (unnamed) | **placeholder domain** | 45 |
+| `startups-tech/` | Founder Tax Partners | foundertaxpartners.co.uk | 32 |
+| `charities/` | Trustee Tax | trusteetax.co.uk | 24 |
+| `hospitality/` | Hospitality Tax | hospitalitytax.co.uk | 23 |
+| `pharmacies/` | Pharmacy Tax | pharmacytax.co.uk | 22 |
+| `care/` | Care Home Tax | carehometax.co.uk | 19 |
+| `crypto/` | Crypto Tax Partners | cryptotaxpartners.co.uk | 19 |
+| `ecommerce/` | Ecommerce Finance | ecommercefinance.co.uk | 14 |
+
+Domains are as configured in each `niche.config.json`; the two placeholders are tracked as W-001
+in `Admin/ISSUE_LOG.md`. Content generation across the whole estate has been unscheduled since the
+optimisation engine was retired on 2026-09-09 (I-004); the newest post anywhere is 2026-09-11.
 
 ## For AI Agents — Read These First
 
@@ -68,4 +97,4 @@ Required in each site's `web/.env.local`:
 - `NEXT_PUBLIC_SUPABASE_URL`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
-Last updated: 9 April 2026
+Last updated: 23 September 2026

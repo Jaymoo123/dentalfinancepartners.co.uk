@@ -41,7 +41,7 @@ faqs:
     answer: "Material differences on both axes. Late submission: general SA uses Finance Act 2009 Schedule 55 (£100 immediate, £200 at three months, £300 at six months and twelve months plus tax-geared paragraph 5 and 6 uplifts); MTD ITSA uses Finance Act 2021 Schedule 24 points-based regime (one point per missed quarterly update, £200 at the four-point threshold). Late payment: general SA uses Finance Act 2009 Schedule 56 (5%, 5%, 5% at 30 days, five months, eleven months) for non-MTD income tax; MTD ITSA uses Finance Act 2021 Schedule 26 as amended by Spring Statement 2025 (3%, 3%, 10% at 15, 30, 31 days). See our general SA penalties page for the legacy regime; this page covers MTD-specific."
   - question: "What is SI 2026/336 and why does it matter?"
     answer: "SI 2026/336 (Income Tax (Digital Obligations) Regulations 2026) is the operative MTD ITSA instrument from 1 April 2026. It revoked SI 2021/1076 (the prior Income Tax (Digital Requirements) Regulations 2021) on that date. Substantive mechanics carry over but regulation numbers have migrated: qualifying income at regulation 25 (previously regulation 20), qualifying amount at regulation 27, exclusion-notice exemption at regulation 18 with regulation 20, three-year income-exit at regulation 24 (previously regulation 22). Pages and accountants citing SI 2021/1076 as live are working from the revoked instrument and should migrate citations forward."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

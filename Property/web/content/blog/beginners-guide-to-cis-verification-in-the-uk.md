@@ -38,7 +38,7 @@ faqs:
     answer: "Generally no. A pure residential individual landlord (letting a personally-owned BTL portfolio for residential rent, with no construction-trading element and no construction-spend pattern at scale) is not a contractor in the construction industry under FA 2004 s.59(1)(k) and is not a business of the kind that hits the deemed-contractor threshold under s.59(1)(l). The landlord pays a builder for refurb work, and the builder accounts for their own tax on the income received. The position changes if the landlord operates through a property-investment company, hits the £3 million deemed-contractor threshold, or trades in property development; at that point the contractor obligations engage."
   - question: "What records do I need to keep as a CIS contractor?"
     answer: "FA 2004 ss.71 and 72, together with SI 2005/2045, require a contractor to keep records of every CIS payment for at least three years from the end of the tax year to which they relate. The records must show: the subcontractor's name and unique tax reference; the gross amount paid; the materials element (excluded from the deduction); the labour element; the deduction calculated; the verification reference and the verification date. The contractor must issue a payment-and-deduction statement to the subcontractor for each tax month in which a deduction is made. HMRC compliance checks on CIS contractors test the records routinely, especially around the materials-versus-labour split and the verification audit trail."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

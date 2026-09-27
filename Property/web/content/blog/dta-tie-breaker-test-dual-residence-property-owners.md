@@ -44,7 +44,7 @@ faqs:
     answer: "The Non-Resident Landlord scheme is statutory under FA 1995 Sch 23 and the Taxation of Income from Land (Non-Residents) Regulations (SI 1995/2902). It applies the moment you are non-UK-resident, regardless of treaty position. If the cascade resolves to non-UK residence, you must file NRL1 (individual), NRL2 (company), or NRL3 (trust) to receive your UK rental income gross; otherwise letting agents withhold 20% basic rate from the rent. The treaty does not displace NRL withholding. If you are treaty-non-UK-resident without NRL approval, you still have 20% withheld."
   - question: "What about UK property gains under NRCGT after a cascade resolution?"
     answer: "NRCGT under TCGA 1992 s.1A and Schedules 1A, 1B, and 4AA applies to disposals of UK land and UK property-rich entity shares by non-UK residents. Where the cascade resolves to non-UK residence, you must file the NRCGT 60-day return regardless of treaty position; the UK retains taxing rights on UK property gains under Article 13. The April 2015 rebasing for direct disposals of UK residential property by non-residents, and the April 2019 extension to commercial property and indirect disposals, both apply. You then claim foreign tax credit for the UK NRCGT paid in the residence state, under that state's domestic rules and the treaty's elimination article."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

@@ -14,7 +14,7 @@ summary: "Two tax years bring the biggest shift in landlord taxation for a gener
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"
-dateModified: "2026-06-02"
+dateModified: "2026-07-20"
 schema: ""
 howToSteps:
   - name: "Confirm whether MTD catches you from April 2026"

@@ -12,7 +12,7 @@ image: ""
 h1: "SPV Mortgage With No Income and a Brand-New Company"
 summary: "A newly-formed SPV with no trading history, and a director with little or no personal income, can still obtain a buy-to-let mortgage. Lending is underwritten on the property's rental income against a 125% interest coverage ratio and a director's personal guarantee, not on the company's accounts or the director's salary. Many specialist SPV lenders impose no minimum director income at all, though some still ask for around £25,000. This guide explains how a zero-income, zero-accounts case is actually assessed, where the minimum-income floor bites, what the personal guarantee does, and how newly-formed, dormant and trading companies differ to a lender."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

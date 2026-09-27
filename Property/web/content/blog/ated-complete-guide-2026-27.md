@@ -44,7 +44,7 @@ faqs:
   answer: For high-value family homes occupied by connected individuals, ATED of up to £303,450 a year usually outweighs any benefit from corporate ownership and dis-enveloping is the standard recommendation. For commercially-let portfolios, Property Rental Business Relief removes the ATED charge entirely and the corporate structure may still make sense for income tax and incorporation reasons. The right answer turns on use, value, and the wider tax position.
 - question: How do I appeal an ATED penalty?
   answer: You have 30 days from the date of the penalty notice to appeal. The grounds are reasonable excuse (an unforeseen event that prevented compliance, that ended as soon as the excuse ended) or, for daily penalties, special circumstances. HMRC's published guidance treats ignorance of the obligation as a weak ground; first-time filing by a newly-incorporated holding company has had mixed results at tribunal.
-dateModified: '2026-05-22'
+dateModified: "2026-08-04"
 reviewedBy: Property Tax Partners Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-05-22'

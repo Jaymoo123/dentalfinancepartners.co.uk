@@ -12,7 +12,7 @@ image: ""
 h1: "Can I live in a house owned by my limited company?"
 summary: "Yes, a director can live in a property their limited company owns, but the tax treatment is punitive unless full market rent is paid. Rent-free or below-market-rent occupation is a living-accommodation benefit in kind under ITEPA 2003 Part 3 Chapter 5 (ss.97-113), valued as the annual value of the property plus, where the property cost more than £75,000, an additional charge of the official rate of interest on the excess. The charge is reported on a P11D and carries employer Class 1A National Insurance. Occupation by a director also breaks the ATED rental-property relief, can create a section 455 charge if unpaid rent sits in the director's loan account, and is very likely to breach a buy-to-let mortgage."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC Employment Income Manual guidance"
 faqs:

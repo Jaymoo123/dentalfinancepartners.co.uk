@@ -44,7 +44,7 @@ faqs:
     answer: "Yes, but only by amending the return. ATED returns can be amended within 12 months of the original filing date. After that window, the position can only be corrected by disclosure under HMRC's corrections regime, which is slower and carries inaccuracy-penalty risk if the original return was filed knowing the relief was available."
   - question: "Does the 15% flat-rate SDLT relief on acquisition follow the same logic?"
     answer: "Broadly yes. Schedule 4A FA 2003 mirrors the ATED reliefs, so a property bought into a company for commercial letting to unconnected tenants is taxed at the standard SDLT rates rather than the 15% flat rate. The acquisition-side test is checked on day one, and the SDLT relief can be clawed back if the property's use changes within three years of acquisition."
-dateModified: "2026-05-22"
+dateModified: "2026-07-28"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

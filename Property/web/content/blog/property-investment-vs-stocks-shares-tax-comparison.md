@@ -44,7 +44,7 @@ faqs:
   answer: "Borrowing is where the two asset classes diverge most. With buy-to-let, mortgage interest for an individual is relieved only at the basic rate under Section 24, so leverage raises both the return and the effective tax rate. With shares, an individual generally gets no relief for borrowing to invest, which is one reason most share investors do not gear at all and instead use an ISA or pension to shelter ungeared returns. A limited company holding property gets full interest relief, which is a key reason geared landlords incorporate."
 - question: "Are REITs a tax-efficient way to invest in property?"
   answer: "Yes, particularly inside an ISA or pension. A Real Estate Investment Trust pays out most of its rental profit as property income distributions, and held inside an ISA those distributions and any capital gains are tax-free. This gives you wrapped, liquid exposure to commercial and residential property without the Section 24 restriction, the 60-day capital gains tax reporting, or the stamp duty additional-dwelling surcharge that come with direct buy-to-let. The trade-off is that you give up control, the ability to add value to a specific asset, and the leverage that direct property allows."
-dateModified: '2026-05-30'
+dateModified: "2026-08-21"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - legislation.gov.uk

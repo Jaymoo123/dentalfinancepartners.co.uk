@@ -12,7 +12,7 @@ image: ""
 h1: "SPV Mortgages Explained: What Lenders Actually Look For"
 summary: "An SPV mortgage is a buy-to-let loan to a clean, single-purpose limited company set up to hold and let property. Lenders prefer an SPV to a trading company, will lend to a day-old company with no accounts, and underwrite the case on the rental income (a 125% interest coverage ratio) and a director's personal guarantee rather than the company's own trading history. This guide covers what lenders mean by an SPV, which SIC codes they accept, newly-formed versus trading-company lending, personal guarantees, and how SPV rates and LTV compare to personal-name borrowing."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

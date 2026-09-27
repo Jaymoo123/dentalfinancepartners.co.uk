@@ -46,7 +46,7 @@ faqs:
     answer: "Potentially yes under para 16 special-circumstances if you can adduce regulatory-context evidence. The 2022/23 RoE rollout transition created widespread filing-blockage scenarios for overseas-enveloped structures; HMRC engaged with that context in some specific cases. Submissions must cite the specific RoE or Companies House timeline, provide documentation, demonstrate prompt filing once the regulatory gap was resolved and reference any HMRC published acknowledgement of the transition. Para 23 reasonable-excuse is also plausible on the same facts (regulatory event beyond control plus prompt remediation once the excuse ceased). Plead both routes."
   - question: "What is the statutory review under TMA 1970 s.49 and when should I use it?"
     answer: "Statutory review is an HMRC internal review by a different officer than the original decision-maker. The appellant requests review within the 30-day appeal window; the request stops the FTT clock; HMRC issues a review conclusion notice (typically within 45 days for straightforward cases); a fresh 30-day FTT appeal window opens on receipt of the conclusion. Statutory review is typically the right first step where the underlying facts are evidentiary (parental-leave gap, agent failure with reasonable-steps angle, regulatory event); the route is cheaper, faster than litigation and creates a fresh appeal window if needed. Direct FTT appeal is right where HMRC has already engaged at quality and refused (post-OTM-letter penalty review already conducted internally)."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

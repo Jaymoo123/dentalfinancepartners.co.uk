@@ -3,6 +3,7 @@ title: "Gift with Reservation of Benefit: What It Is, Why the Rule Exists, and W
 slug: "gift-with-reservation-of-benefit"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/gift-with-reservation-of-benefit"
 date: "2026-05-27"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Gift with Reservation of Benefit: Plain-English UK Guide"

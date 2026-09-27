@@ -40,7 +40,7 @@ faqs:
   answer: "Lenders weigh four things above all: your track record, the viability of the numbers, the strength of the exit, and the security available. They want to see completed schemes of a similar scale, a realistic feasibility study with a sensible profit margin, clear planning consent free of awkward conditions, and a credible exit (sale of the finished units or refinance onto term debt). They will also assess the loan-to-cost and loan-to-gross-development-value ratios, and almost always take a first charge over the site plus personal guarantees from the directors."
 - question: "What happens to my tax position if I convert a buy-to-let and sell it?"
   answer: "This is where developers and landlords are most often caught out. If you buy a property as an investment and let it, then later decide to develop and sell it, Condition D of the Transactions in UK Land rules can treat the eventual disposal as trading even though you originally acquired it to hold. Condition D tests your main purpose at the point of development, not acquisition. So a convert-and-flip can flip your tax treatment from a Capital Gains Tax charge (18% or 24% on residential property) to a trading profit charged at marginal Income Tax rates plus Class 4 National Insurance. Take advice before you start development work on a property you have been letting."
-dateModified: '2026-05-31'
+dateModified: "2026-07-26"
 sourcesVerifiedAt: '2026-05-31'
 sourceDomains:
 - legislation.gov.uk

@@ -42,7 +42,7 @@ faqs:
     answer: "Depends on whether you elect cash basis or accruals basis on SA106. Cash basis: deduct when paid; accruals: deduct when incurred. It is the same per-property election as for UK property; you elect once per property and apply it consistently, and you cannot mix bases within one property. If you hold both UK and foreign properties, the election can differ between properties, but each property stays consistent year on year. Cash basis is the default for most small landlords; accruals matters mostly where you have significant timing-difference items (advance rent, deferred maintenance bills)."
   - question: "What if I sell the foreign property mid-tax-year?"
     answer: "The MTD quarterly cycle continues to the point of disposal, then cessation reporting kicks in. The quarter in which you sell the property reports the rental income up to disposal date; the final declaration for the year reconciles the year as a whole. The disposal itself is a capital gains event reported through the UK CGT regime (the foreign-property-disposal CGT 60-day return obligation applies if there is a chargeable gain), separate from the MTD ITSA income filings. If the foreign disposal triggers local-jurisdiction tax (Spanish capital gains, French plus-value etc), the foreign tax credit at final declaration handles the income-tax side, and the CGT side is dealt with separately."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

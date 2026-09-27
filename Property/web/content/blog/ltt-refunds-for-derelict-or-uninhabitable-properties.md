@@ -42,7 +42,7 @@ faqs:
     answer: "Welsh tribunal authority on s.72 is currently sparse. Welsh tribunals are likely to follow the SDLT comparator line (Bewley, Hyman & Goodfellow, Mudan, MHB, Brown) given that LTTA 2017 s.72(1)(a) is functionally identical to Finance Act 2003 s.116(1)(a) on the 'suitable for use' limb. Where a Welsh tribunal decision exists on the specific facts of the buyer's case, it takes primary precedence; absent that, the SDLT comparator authority is the operational guide. The Welsh Revenue Authority's published technical guidance on dwelling-suitability also adopts the post-Bewley narrowing framework in substance."
   - question: "How does the position differ from SDLT (England) or LBTT (Scotland) on a cross-border purchase?"
     answer: "The substantive dwelling-suitability test under LTTA 2017 s.72(1)(a) (Wales), FA 2003 s.116(1)(a) (England and Northern Ireland), and the Scottish LBTT equivalent in LBTT(S)A 2013 is functionally identical: all three turn on whether the property is 'used or suitable for use as a dwelling' at the effective date. Differences sit in procedural mechanics (return filing window, refund route, review and appeal pathway, time limits) and in rate tables. Welsh tribunal jurisdiction sits in the Welsh Tax Tribunal; the English equivalent is the First-tier Tribunal Tax Chamber; the Scottish equivalent is the First-tier Tribunal for Scotland Tax Chamber. The substantive test is consistent; the procedural detail varies."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

@@ -38,7 +38,7 @@ faqs:
     answer: "The assessment fee itself is a revenue expense of the property business, deductible against rental profits in the year it is incurred, because it is a recurring compliance cost incurred wholly and exclusively for the business under the rules applied by section 272 of ITTOIA 2005. The follow-on works are where the analysis splits: like-for-like replacement of fire doors or servicing of an existing alarm system is a repair and deductible, while installing a new interlinked alarm system where none existed, or compartmentation upgrades that improve the building, are capital. Capital works are not deductible against rent but go into the capital gains base cost."
   - question: "Do the same fire risk assessment rules apply in Scotland and Northern Ireland?"
     answer: "No. The Regulatory Reform (Fire Safety) Order 2005 applies to England and Wales, and the Fire Safety (England) Regulations 2022 to England only. Scotland runs its own regime under the Fire (Scotland) Act 2005 and, for private rented housing, the repairing standard, which imposes its own interlinked alarm requirements. Northern Ireland has the Fire and Rescue Services (Northern Ireland) Order 2006. The commercial logic of pricing an assessment is similar everywhere, but the statutory duties, thresholds and enforcement routes on this page are the English position, shared with Wales only at the level of the 2005 Order itself."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

@@ -12,7 +12,7 @@ image: ""
 h1: "Holiday Let Mortgages: How Lenders Assess Seasonal Income"
 summary: "A holiday-let mortgage is a specialist buy-to-let product underwritten on variable seasonal income rather than a fixed monthly rent. Lenders blend low, mid and high-season figures (or take a percentage of projected letting income) and stress that number against an interest coverage ratio, so borrowing capacity is set by the average, not the peak week. This guide covers the seasonal affordability basis, short-term-let and Airbnb lender caution, planning and registration, limited-company holiday-let lending, and the end of the Furnished Holiday Lettings tax regime in April 2025. It is a finance-mechanics page: the tax detail is summarised and cross-linked to the property tax guides."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

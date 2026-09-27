@@ -41,11 +41,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     languages: { "en-GB": url, "x-default": url },
   });
 
+  // ponytail: lastModified is omitted wherever we do not track a real edit date.
+  // It used to be `new Date()`, which told crawlers every static page changed on
+  // every deploy; an inaccurate lastmod gets the whole sitemap's dates ignored.
+  // Omitting is legal and honest. Blog URLs below carry genuine dates.
+  const posts = getAllPosts().filter((p) => !p.noindex);
+  const editedAt = (p: (typeof posts)[number]) =>
+    new Date(p.dateModified ?? p.date);
+  const newest = (list: typeof posts) =>
+    list.length
+      ? new Date(Math.max(...list.map((p) => editedAt(p).getTime())))
+      : undefined;
+
   const entries: MetadataRoute.Sitemap = staticPaths.map((path) => {
     const url = `${base}${path}`;
     return {
       url,
-      lastModified: new Date(),
+      // /blog is an index of the posts, so its newest post date is a real date.
+      ...(path === "/blog" ? { lastModified: newest(posts) } : {}),
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : 0.7,
       alternates: hreflang(url),
@@ -58,7 +71,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/locations/${loc.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
       alternates: hreflang(url),
@@ -69,7 +81,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/calculators/${tool.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: hreflang(url),
@@ -81,20 +92,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${cat.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
+      // A category index is as fresh as its newest post: a real date.
+      lastModified: newest(posts.filter((p) => getCategorySlug(p) === cat.slug)),
       changeFrequency: "weekly",
       priority: 0.8,
       alternates: hreflang(url),
     });
   }
 
-  for (const post of getAllPosts()) {
-    if (post.noindex) continue;
+  for (const post of posts) {
     const categorySlug = getCategorySlug(post);
     const url = `${base}/blog/${categorySlug}/${post.slug}`;
     entries.push({
       url,
-      lastModified: post.date ? new Date(post.date) : new Date(),
+      // The real edit date, not the publish date. Falls back to publish date
+      // only when the post has genuinely never been revised.
+      lastModified: editedAt(post),
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),

@@ -42,7 +42,7 @@ faqs:
     answer: "Incorporation is the standard offset. Inside a UK Ltd company, Section 24 does not bite (full mortgage interest deductibility under CTA 2009 s.272), corporation tax applies at the marginal rate (26.5% in the £50,000 to £250,000 profit band) rather than the personal-side blended Section-24 effective rate, and pension headroom can be restored via the salary plus employer-contribution route. The 5% SDLT additional-dwellings surcharge on any new company acquisitions, the 15% FA 2003 Schedule 4A super-charge above £500,000, and ATED for £500,000-plus properties are the costs to weigh against the income-tax restoration. Existing personally-held stock incurs an incorporation-transfer cost (s.162 incorporation relief if available; SDLT on the transfer at market value)."
   - question: "How does this page differ from the existing FHL rules-overview page?"
     answer: "The rules-overview page is TOPIC-led: it covers the rules thematically (what counts as FHL, what changed, what reliefs apply, the SA100 filing position). This page is DATE-led: it surveys the eight individual changes in chronological order across the 2024 to 2028 window with the operative statutory anchor for each. Different organising spine; cross-link as canonical companion. The rules-overview is the topic-led survey for the broad post-abolition position; this page is the timeline-led survey for operators who want to see the sequence of changes laid out in date order."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

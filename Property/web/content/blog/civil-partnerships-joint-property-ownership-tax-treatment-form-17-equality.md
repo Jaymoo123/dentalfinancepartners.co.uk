@@ -46,7 +46,7 @@ faqs:
     answer: "Civil partners follow the same Section 24 / finance cost restriction treatment as married spouses. Each partner computes the 20% basic-rate tax credit on their share of finance costs separately. Where a Form 17 election has split rental income 75/25, finance costs follow the same split (the income-and-expense correspondence rule in PIM1030 and TSEM9851). Civil partners cannot allocate finance costs 100/0 while declaring income 75/25; HMRC treats the inconsistency as a misallocation and re-applies the correspondence rule on enquiry."
   - question: "What proof should civil partners keep for HMRC of their civil-partnership status?"
     answer: "The civil partnership certificate is the primary document; a copy in the property file is sufficient. For overseas civil partnerships, the foreign-issued certificate plus a translation into English is the practical standard. HMRC does not require ongoing proof at each tax-year return; the certificate is requested only on enquiry into a return that depends on civil-partnership status (for example a Form 17 election, an s.58 transfer, an s.18 IHT exemption claim, or a higher-rate SDLT aggregation challenge)."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

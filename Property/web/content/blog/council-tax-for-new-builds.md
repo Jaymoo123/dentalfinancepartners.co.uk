@@ -3,6 +3,7 @@ title: "Council Tax for New Builds: When Liability Begins, the s.17 Completion-N
 slug: "council-tax-for-new-builds"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/council-tax-for-new-builds"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Council Tax for New Builds: When It Starts, How to Appeal"

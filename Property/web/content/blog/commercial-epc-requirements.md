@@ -38,7 +38,7 @@ faqs:
     answer: "Usually two. Where a building contains parts designed or altered to be used separately, each part with its own access, the shop and the flat are assessed separately: a non-domestic EPC for the commercial unit and a domestic EPC for the flat. A commercial (non-domestic) energy assessor produces the first and a domestic assessor the second, and they are registered separately. If the flat is only accessible through the shop and the two are let together as a single unit, the position can differ, and the assessor's judgement on how the parts are designed to be used determines which certificate or combination is required."
   - question: "Is the EPC fee tax deductible?"
     answer: "In the ordinary letting case, yes. The assessment fee is a revenue expense of the property business, incurred wholly and exclusively for its purposes, deductible against rental profits whether you hold the building personally or through a company (HMRC's Property Income Manual at PIM2120 covers professional and compliance costs of this kind). The exception is a certificate commissioned solely to sell the building, which is a cost of the disposal rather than of the letting business and belongs in the capital gains computation as an incidental cost of sale. The VAT position depends on your option to tax: a landlord who has opted to tax the building and makes taxable supplies of it can recover the 20% VAT on the assessor's invoice as input tax, while a landlord letting exempt without an option cannot, making the VAT a real cost on top of the net fee."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

@@ -38,7 +38,7 @@ faqs:
     answer: "Box 5 records gross rent received (cash basis) or gross rent receivable (accruals basis). For a Booking.com host on cash basis, box 5 equals the sum of guest payments received in the tax year (gross of any Booking.com fees withheld). The annual Booking.com host statement shows monthly gross plus commission deduction. Working schedule: cross-reference Booking.com January-December calendar gross figures against the host's tax-year (6 April to 5 April) booking-by-booking statement; document timing differences (December bookings paid January). Retain reconciliation for 5 years per TMA 1970 s.12B."
   - question: "What happens if I sell my Booking.com unit as a going concern?"
     answer: "A sale of a short-let business as a going concern may qualify for Transfer of a Going Concern treatment under VAT Notice 700/9: disposal outside the scope of VAT. The buyer must continue the same kind of business, be VAT-registered (or required to register), and the seller must transfer the active Booking.com Extranet account, property identifiers and Genius status. CGT applies to the property gain at residential rates (18 percent and 24 percent from 30 October 2024) with 60-day in-year reporting. PPR is unavailable (commercial use). BPR is unavailable per the Pawson investment-line analysis."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

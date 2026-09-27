@@ -3,7 +3,7 @@ title: "Commercial Mortgages: The Complete UK Guide for Businesses and Investors
 slug: "commercial-mortgages-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-finance/commercial-mortgages-guide"
 date: "2026-07-30"
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"

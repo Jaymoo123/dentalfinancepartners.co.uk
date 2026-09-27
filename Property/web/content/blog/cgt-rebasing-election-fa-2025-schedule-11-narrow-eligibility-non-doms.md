@@ -42,7 +42,7 @@ faqs:
     answer: "The rebasing election does not apply; the exclusion at condition 3 is absolute for UK situs assets. The disposal is taxed under standard TCGA 1992 rules at the original cost basis or, for UK land disposals by non-residents, under the NRCGT regime with its own rebasing dates. If you are a long-residence non-dom who bought UK buy-to-let property in (say) 2005 with substantial latent gains, the rebasing route is closed. Your alternatives are continuing to hold (deferring CGT to a future sale), CGT planning around disposal timing (realising in a year where rates are lower or losses are available to offset), or careful estate planning (where the death-uplift under TCGA 1992 s.62(1) resets the base cost on death)."
   - question: "Does the election interact with the TRF or FIG regimes?"
     answer: "Separately. The Sch 11 rebasing election operates on the CGT base cost for a specific disposal; the TRF operates on income tax / CGT remittance treatment for designated amounts; the FIG operates on income tax / CGT relief for qualifying new residents. As an eligible non-dom you can use Sch 11 rebasing for a non-UK situs asset disposal AND TRF designation for pre-2025-26 unremitted foreign income AND (if you qualify, which is rare for long-residence non-doms) FIG relief for a new qualifying tax year. The three reliefs run on different mechanisms and can apply to different parts of your tax position in the same year. Run each separately and stack the relief where it applies, with documentation supporting each independent claim."
-dateModified: "2026-05-25"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"

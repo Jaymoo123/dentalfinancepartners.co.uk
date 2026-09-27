@@ -46,7 +46,7 @@ faqs:
     answer: "Not automatically. Vacant days are not non-qualifying-occupation days per s.135 (no individual is permitted to occupy). But vacant days are also not qualifying-use days under s.133(1)(a) (no commercial letting). The risk is the combination: if a later non-qualifying-occupation event occurs, the look-back rule unwinds earlier-claimed relief unless qualifying-use days intervene, and a vacant period does not intervene. Continuous commercial letting with no vacant gaps is the only fully-protective pattern. Vacant gaps between commercial tenancies are the most-dangerous risk windows for connected-person occupation, even where the gap is short."
   - question: "What is the single biggest pre-occupation check before allowing any connected-person use?"
     answer: "Take specialist tax advice on whether the proposed occupant falls within any of the eight s.136 categories. If yes, then either (a) decline the occupation; or (b) accept the clawback and prepare the s.163 ACA return for the affected period plus plan to interpose a genuine qualifying-use day to limit look-forward exposure; or (c) restructure by de-enveloping the property (which has its own SDLT and CGT consequences and should be modelled separately). Specialist advice is essential. The cost of analysis is trivial compared to the multi-year ATED exposure from a mishandled connected-occupation event."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

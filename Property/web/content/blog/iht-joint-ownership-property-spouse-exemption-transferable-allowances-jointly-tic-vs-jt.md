@@ -46,7 +46,7 @@ faqs:
     answer: "Outstanding mortgage debt is deducted from the property value in computing the gross estate (IHTA 1984 s.5). On a joint-tenancy property each owner's interest is conventionally treated as 50% of net equity (gross value less mortgage, divided by number of owners); IHTM15040 confirms HMRC's working position. For tenants in common each owner's interest is their declared share of net equity. A property worth £800,000 with a £200,000 joint mortgage held by two joint tenants gives each a notional interest of £300,000 (50% of £600,000 net equity) for IHT purposes."
   - question: "What if the couple is unmarried and holds property jointly?"
     answer: "Unmarried co-owners do not have the s.18 spouse exemption. On first death the deceased's share (whether by survivorship for joint tenants or by will for tenants in common) is part of the deceased's chargeable estate. NRB and RNRB are available against any IHT charge, but the typical couple planning route (spouse exemption to defer tax to second death) is not available. Cohabitee estate planning typically uses lifetime gifting strategies, life-interest trusts, and life insurance written in trust to mitigate the absence of the spouse exemption."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

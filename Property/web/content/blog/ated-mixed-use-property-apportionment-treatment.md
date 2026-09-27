@@ -46,7 +46,7 @@ faqs:
     answer: "The threshold is more than £500,000, so an element valued at exactly £500,000 is outside ATED. The valuation discipline is to make the figure defensible: a £500,000 conclusion that turns into £499,000 or £510,000 on enquiry produces an avoidable dispute. PRBC the position where the figure is at or near £500,000 and keep the workings."
   - question: "How does the 1 April 2027 revaluation interact with mixed-use apportionment?"
     answer: "The five-yearly revaluation at 1 April 2027 (used from chargeable period 2028/29 onwards) will require a fresh apportionment as at that date. A 2022-based apportionment that put the residential element at £490,000 (no ATED) may produce a 2027-based residential element above £500,000 once central London residential values are reapplied, even if the building is unchanged. The 2027 revaluation is the right moment to refresh the methodology and brief a fresh RICS report. See our sibling page on the 1 April 2027 revaluation date for the wider rules."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

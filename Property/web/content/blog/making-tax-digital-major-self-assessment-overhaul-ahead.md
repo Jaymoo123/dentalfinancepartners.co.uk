@@ -39,7 +39,7 @@ faqs:
     answer: "General partnerships were originally proposed for April 2027 MTD ITSA, but the start date has been deferred with no confirmed new go-live date. Limited liability partnerships (LLPs) are treated as partnerships and follow the partnership timeline. Limited companies are outside MTD ITSA entirely; they file CT600s under the existing CT framework, with a separate future MTD for CT cycle (no announced go-live date). See our LtdCo MTD page for the limited-company-specific picture."
   - question: "What is the typical adoption timeline for a landlord in the April 2026 cohort?"
     answer: "Five-stage runway. Q3 2025: receive HMRC notice confirming April 2026 mandate after HMRC reviews the 2024/25 SA return. Q4 2025: select MTD-recognised software; map the landlord's chart of accounts onto SA105 categories (gross rent, agent fees, repairs, insurance, finance costs); agree adoption plan with the accountant. Q1 2026: accountant registers ASA; client receives and approves authorisation; trial-run a quarterly update in pilot mode where the software supports it. April 2026: live mandate. August 2026: first quarterly update due 7 August for the period 6 April to 5 July 2026."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

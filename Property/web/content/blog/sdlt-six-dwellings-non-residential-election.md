@@ -44,7 +44,7 @@ faqs:
     answer: "HMRC scrutinises transactions where it appears separate transactions have been artificially packaged to clear the six-dwelling threshold. Reasonable challenge points include linked transactions split into ostensibly separate contracts and then re-packaged elsewhere, subdivision of a single dwelling into six studio units shortly before sale, or a six-pack with a tail of low-value units whose inclusion is uncommercial. Genuine commercial bulk acquisitions from a single seller, on commercial terms, with consistent legal documentation, are not at risk."
   - question: "Does s.116(7) apply to LBTT in Scotland or LTT in Wales?"
     answer: "No. Land and Buildings Transaction Tax (Scotland) and Land Transaction Tax (Wales) are separate devolved taxes with their own rate schedules and portfolio rules. A cross-border portfolio with English, Scottish and Welsh properties needs three separate filings, each computed under the relevant devolved regime, and the s.116(7) non-residential treatment applies only to the English and Northern Irish slice."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

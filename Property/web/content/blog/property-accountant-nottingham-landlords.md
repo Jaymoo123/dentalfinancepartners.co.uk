@@ -3,6 +3,7 @@ title: "Property Accountant Nottingham 2026/27: BTL, HMO and Selective-Licensing
 slug: property-accountant-nottingham-landlords
 canonical: https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-nottingham-landlords
 date: '2026-05-21'
+dateModified: "2026-08-21"
 author: Property Tax Partners Editorial Team
 category: Property Accountant Services
 metaTitle: "Property Accountant Nottingham 2026: BTL & HMO Tax"

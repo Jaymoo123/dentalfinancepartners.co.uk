@@ -14,7 +14,7 @@ summary: "A working annual property portfolio review for UK landlords: how to re
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-08-21"
 schema: ""
 howToSteps:
   - name: "Recalculate true net yield per property"

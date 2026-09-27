@@ -44,7 +44,7 @@ faqs:
     answer: "LLP-side: secondary Class 1 NIC at 15% from 6 April 2026 on the member's deemed employment income above the secondary threshold; Apprenticeship Levy at 0.5% above the £15,000 allowance where the LLP's pay bill is above £3 million; PAYE collection obligation in real time going forward. Member-side: income tax on the profit share at marginal rate (typically neutral versus partnership-profit-share treatment); employee Class 1 primary NIC at 8% above the primary threshold. Retrospective HMRC enquiry exposure can backdate up to four years (or six where deliberate behaviour is shown) with late-payment penalties under FA 2009 Sch 56 and interest at the HMRC official rate. Cash exposure to LLPs commonly £15,000 to £25,000 per affected member depending on tax-year coverage."
   - question: "How does this page relate to the existing LLP page on your site?"
     answer: "The existing 'LLP property investment worth considering' page is a general LLP intro that pre-dates BlueCrest and assumes default tax-transparent treatment. It does not address salaried-member rules, BlueCrest, or post-2024 narrowing. This page fills the policy-update gap: current-events overlay anchored on the October 2024 Supreme Court decision and HMRC's 2025 PM250000+ updated guidance. Reading sequence: the general LLP intro for the baseline framework; this page for the post-BlueCrest layer that overlays the existing transparency rules for members who fail all three Conditions. The pages cross-link."
-dateModified: "2026-05-27"
+dateModified: "2026-08-15"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

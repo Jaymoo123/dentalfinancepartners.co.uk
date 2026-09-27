@@ -39,7 +39,7 @@ faqs:
     answer: "Limited. From 6 April 2026 the BADR rate of 18% aligns with the standard residential CGT lower-band rate of 18%. BADR continues to offer a rate advantage against the higher-band 24% residential rate and the standard 20% commercial rate, but the relief's rate-advantage utility has narrowed substantially since the historic 10% rate. Planning decisions involving BADR should weigh the diminishing rate advantage against compliance complexity."
   - question: "What does the lifetime £1 million cap actually catch?"
     answer: "The £1 million lifetime cap applies to cumulative qualifying gains across all BADR claims by the individual over their lifetime. Once £1 million of cumulative qualifying gain has been relieved, further qualifying gains are taxed at standard rates. The cap was reduced from £10 million on 11 March 2020 (Finance Act 2020 section 24). Pre-11-March-2020 claims that used some of the £10 million cap count against the current £1 million cap on a cumulative basis."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

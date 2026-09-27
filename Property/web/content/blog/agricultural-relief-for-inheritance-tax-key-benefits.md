@@ -3,6 +3,7 @@ title: "Agricultural Relief for Inheritance Tax: What Qualifies, What Fails, and
 slug: "agricultural-relief-for-inheritance-tax-key-benefits"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/agricultural-relief-for-inheritance-tax-key-benefits"
 date: "2026-05-27"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Agricultural Property Relief: Does Your Land Qualify?"

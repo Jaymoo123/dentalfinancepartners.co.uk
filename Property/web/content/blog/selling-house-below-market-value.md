@@ -3,6 +3,7 @@ title: "Selling a House Below Market Value: The Partial-Sale-Partial-Gift Analyt
 slug: "selling-house-below-market-value"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/selling-house-below-market-value"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Selling a House Below Market Value: CGT, IHT, SDLT Stack"

@@ -40,7 +40,7 @@ faqs:
     answer: "Yes, and most non-resident landlords are. Each country applies its own domestic residence rules; the UK SRT decides UK status only. Where the other country's rules also make you resident, the relevant double tax treaty's tie-breaker (Article 4 in OECD-model treaties) decides which country has primary taxing rights for treaty purposes. The tie-breaker cascade runs: permanent home, centre of vital interests, habitual abode, nationality, mutual agreement procedure. Treaty residence does not change UK source taxation on UK rental income, but it does affect how foreign tax credits work."
   - question: "If I fail an automatic overseas test by one day, can I still use sufficient ties?"
     answer: "Yes. The sufficient ties test is the fallback that decides residence where no automatic test is met. So a landlord who narrowly fails the third automatic overseas test by spending 31 UK workdays (one over the 30-day workday cap) drops back to the sufficient ties analysis. With careful planning, a 31-workday year might still be non-resident under sufficient ties if the landlord has dropped enough other UK ties. The lesson is that an automatic test is the safer position; sufficient ties brings uncertainty and audit risk."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

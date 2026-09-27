@@ -40,7 +40,7 @@ faqs:
     answer: "Yes, in principle. Schedule 7AC does not restrict the location of the subsidiary; the conditions are about the activities of the subsidiary, not its tax residence. A UK holding company selling shares in an Irish or Spanish development subsidiary can claim SSE if the foreign subsidiary is trading and the 10% / 12-month tests are met. Double taxation agreements and any foreign exit charges on the company being sold need to be considered alongside the UK SSE treatment."
   - question: "How does SSE interact with group relief and intra-group transfers?"
     answer: "SSE sits on the gain from the share disposal itself; it does not affect group relief on income losses, the no-gain-no-loss rule for intra-group asset transfers under section 171 TCGA 1992, or the s.171A election for capital losses. A common sequencing question is whether to move an asset into a development subsidiary before selling that subsidiary, so that the asset gain becomes part of an SSE-protected share sale. The intra-group transfer is no-gain-no-loss; the subsequent share sale is exempt under SSE; the combined effect is a corporation-tax-free realisation. HMRC's anti-avoidance rules in paragraph 5 of Schedule 7AC can disapply SSE where the arrangements have a main purpose of capturing the exemption, so the substance of the trading activity in the subsidiary matters."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

@@ -42,7 +42,7 @@ faqs:
     answer: "Five patterns. Using taxable total profits instead of augmented profits in the threshold test (common with single-company holders who receive small dividends from minority investments). Forgetting associated companies (typical when running multi-SPV portfolios and not realising siblings under the same individual's control count). Treating 26.5% as a flat rate instead of a marginal slope at the top of the band. Applying the limits without divisor for multi-SPV portfolios (each SPV does NOT get its own £50,000). Assuming dormant companies count toward associated (they are typically excluded where genuinely dormant, but the test is fact-specific)."
   - question: "How does this page differ from the marginal relief property companies page?"
     answer: "The property companies version works marginal relief through property-SPV examples, the CIHC-via-connected-tenant trap, and the multi-SPV-divisor scenario in depth. Here you get the topic generically: what marginal relief is, how the s.18D formula works, who qualifies, and who is excluded, set out for any UK company (including non-property businesses) and for accountants working across sectors. For the mechanic in general terms, this is the place; for the property-LtdCo worked depth, the property companies version takes it further."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

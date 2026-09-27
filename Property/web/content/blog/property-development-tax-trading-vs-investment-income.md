@@ -3,6 +3,7 @@ title: "Property Development Tax: Trading vs Investment Income for UK Developers
 slug: "property-development-tax-trading-vs-investment-income"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/property-development-tax-trading-vs-investment-income"
 date: "2026-05-21"
+dateModified: "2026-05-29"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Property Development Tax: Trading vs Investment Income UK"

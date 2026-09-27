@@ -12,7 +12,7 @@ image: ""
 h1: "Buy-to-Let Mortgages: How Landlord Lending Actually Works"
 summary: "A plain-English guide to how a buy-to-let mortgage works as a piece of business finance. How lenders size the loan from rent using the interest coverage ratio and stress test, why 75% LTV is the norm, how personal-name and limited-company/SPV borrowing differ, why interest-only dominates, what drives the rate, and where the special cases (HMO, holiday let, portfolio, expat, first-time and day-one remortgage) fit. The tax decision is summarised and cross-linked to the pages that own it."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

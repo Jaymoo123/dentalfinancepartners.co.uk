@@ -38,7 +38,7 @@ faqs:
     answer: "Larger in unit count than pre-COVID, more rural-skewed, more regulated, more visible to HMRC. The pre-2025 tax-favoured FHL position is gone; the council-tax premium adds 50 to 100 percent to operating cost in premium-tourism areas; platform reporting closes the under-declaration gap. Strategic options: (a) stay as a single-property investor under ordinary property income plus the s.24 reducer; (b) scale into trading-side §28 by adding properties, services and staff; (c) convert to BTL where the unit is in a market that supports both; (d) sell, taking the CGT hit at the 24 percent residential rate. Our serviced accommodation versus buy-to-let tax comparison deep-dive walks the decision matrix in full."
   - question: "How does this page differ from the Airbnb landlords operational handbook?"
     answer: "This page is the temporal-narrative retrospective: what changed between 2020 and 2026 and why. The operational handbook (our Airbnb landlords page) is the end-to-end practitioner picture for the working host: the annual cycle, OTA-to-SA reconciliation, records discipline, VAT trigger, exit options. Read this page for the policy-and-market arc; read the handbook for the day-to-day operational picture. The two siblings cross-link bidirectionally as narrative-plus-operational companions."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

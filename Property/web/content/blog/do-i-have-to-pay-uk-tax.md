@@ -46,7 +46,7 @@ faqs:
     answer: "Yes, where the gain is on a non-UK-situs asset and the disposal occurs before departure, the disposal is by a UK-resident at the time of realisation and is taxed under normal CGT rules (so any reliefs, the annual exempt amount and the prevailing rate apply at that time, but s.10A does not). Where realisation is after departure, s.10A bites if the return is within five complete tax years and the four-of-seven-preceding gateway is met. Pre-departure realisation is the cleanest planning route where the asset is genuinely close to disposal, but it is not always possible (illiquid holdings, joint owners, family-trust assets) and the rate paid in the year of departure may be higher than the rate in a later year of return. Specialist modelling required."
   - question: "Should I get specialist advice before leaving?"
     answer: "Yes, strongly recommended. The combination of SRT analysis (residence determination), split-year application (Cases 1 to 3), NRL approval timing (gross-rent receipt mechanics), NRCGT planning where any UK property sale is anticipated, s.10A planning on the timing of any large non-UK-situs gain, foreign tax credit positioning under the destination DTA, and IHT LTR exposure review is structurally complex and high-stakes. Mistakes are expensive and often only surface years later under HMRC enquiry. Engage adviser before departure (not after) to maximise planning options."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

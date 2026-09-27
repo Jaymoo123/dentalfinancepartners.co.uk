@@ -3,6 +3,7 @@ title: "Non-Resident Developer UK Tax Scope: FA 2016 Closes the Offshore Plannin
 slug: "non-resident-developer-uk-tax-scope-fa-2016-offshore-developer-planning-closure"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/non-resident-developer-uk-tax-scope-fa-2016-offshore-developer-planning-closure"
 date: "2026-05-25"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Non-Resident Developer UK Tax: FA 2016 Offshore Closure"

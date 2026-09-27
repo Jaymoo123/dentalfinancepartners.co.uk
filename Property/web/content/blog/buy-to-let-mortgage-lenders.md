@@ -12,7 +12,7 @@ image: ""
 h1: "Buy-to-Let Mortgage Lenders: How the Types and Criteria Differ"
 summary: "Buy-to-let lenders fall into three tiers (high-street banks, specialist and challenger lenders, and private or portfolio lenders), and they disagree on almost everything that matters: whether they lend to an SPV, the ICR band they apply, the minimum income they want, which SIC codes they accept, and how they treat portfolio landlords. This is a criteria comparison, not a product recommendation. A decline from one lender usually means the case landed in the wrong tier, not that it was unaffordable."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

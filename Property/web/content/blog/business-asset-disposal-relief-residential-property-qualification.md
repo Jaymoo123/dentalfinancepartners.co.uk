@@ -3,6 +3,7 @@ title: "Business Asset Disposal Relief and Residential Property: The Qualificati
 slug: "business-asset-disposal-relief-residential-property-qualification"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/business-asset-disposal-relief-residential-property-qualification"
 date: "2026-07-09"
+dateModified: "2026-07-26"
 generator: "opus-4.8/netnew-wave"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"

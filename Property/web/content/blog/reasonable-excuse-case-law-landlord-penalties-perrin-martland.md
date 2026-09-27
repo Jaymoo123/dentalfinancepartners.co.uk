@@ -3,6 +3,7 @@ title: "Reasonable Excuse Case Law for Landlord Tax Penalties (Perrin and Martla
 slug: "reasonable-excuse-case-law-landlord-penalties-perrin-martland"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/reasonable-excuse-case-law-landlord-penalties-perrin-martland"
 date: "2026-05-24"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Reasonable Excuse: Perrin and Martland for Landlords"

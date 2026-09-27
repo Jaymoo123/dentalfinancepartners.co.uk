@@ -5,7 +5,14 @@
 **Eight sites are fully ported** (generalist, solicitors, dentists, medical,
 construction-cis, contractors-ir35, charities, crypto), tagged. **ALL EIGHT LIVE 2026-09-16**
 (`9e43db45`, plus Property with the header fix), header measured on every live domain. **Eight sites remain**: digital-agency, wills-probate,
-divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce. Derive that
+divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce.
+**Re-derived 2026-09-23 and still correct**, by kit-import count rather than by prose: the eight
+ported sites import `web-shared/design` in 13 to 48 files each, the eight remaining in **zero**.
+Property imports zero too, because it is the standard the kit was cut from, not a site awaiting a
+port. **Traffic split, 28 days to 2026-09-23: the ported nine carry 96.2% of estate impressions and
+97.8% of clicks; the six launched sites still on the old design carry 3.8% and 2.2%**, and the other
+two (wills-probate, divorce-finances) are unlaunched and earn nothing. The expensive half of this
+programme is done. Derive that
 list yourself (`git tag -l 'port-*'` against the rollout doc); this line has gone stale
 twice, which is the same defect as a STATE.md contradicting its tags.
 
@@ -32,8 +39,16 @@ any site because `btnPrimary` opened with `inline-flex` and the header composed 
 The fix splits `btnPrimaryBase` out of `btnPrimary` (kit + the four site-local copies) and the
 header composes from the base; the charities and contractors-ir35 CSS overrides are gone. Measured
 in headless Chrome on Property, Dentists, contractors-ir35, wills-probate at 390/1023/1024.
-RULE stands: verify a hide utility in the RENDERED DOM, never in the class list. Section 12 carries another: `prose` and `section-label` are dead class names on
-ten and five deployed sites, 161 live article pages rendering unformatted.
+RULE stands: verify a hide utility in the RENDERED DOM, never in the class list. Section 12 carried another, **and it is now CLOSED (verified 2026-09-23)**: `prose` and
+`section-label` were dead class names on ten and five deployed sites, 161 live article pages
+rendering unformatted. Eleven sites now import `packages/site-styles/prose-standard.css` from their
+`globals.css` (Medical, care, charities, construction-cis, contractors-ir35, crypto, digital-agency,
+ecommerce, hospitality, pharmacies, startups-tech). Live check on
+`pharmacytax.co.uk/blog/locum-pharmacists/are-locum-pharmacists-self-employed`: the page still emits
+`class="prose prose-neutral mt-10 max-w-none"` and the served stylesheet now ships **34 `.prose`
+rules and a `.section-label` rule**, against 0 and 0 in the 2026-09-13 sweep. wills-probate and
+divorce-finances were graded BROKEN (dormant) and need no fix while unlaunched; Property, Dentists,
+Solicitors and generalist were never affected.
 
 **PREFLIGHT, before you measure anything:**
 ```bash

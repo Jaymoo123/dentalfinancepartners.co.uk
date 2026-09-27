@@ -17,7 +17,7 @@ schema: ''
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 faqs:
   - question: "What does a property accountant do for a rental portfolio?"
     answer: "A property accountant handles the recurring tax and accounting work a portfolio generates: property bookkeeping across every unit, the Self Assessment property pages (SA105) or, for company-held property, the corporation tax return and statutory accounts, the Section 24 finance-cost computation, capital gains tax on any disposal with the 60-day return, and the structural advice (incorporation modelling, director loan tracking, spouse-split planning). For a portfolio the bookkeeping and the per-property profitability tracking are the heaviest part of the work, because each property has its own income, finance costs, repairs and capital improvements that have to be kept distinct for both tax and decision-making."

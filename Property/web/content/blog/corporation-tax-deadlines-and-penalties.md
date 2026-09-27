@@ -39,7 +39,7 @@ faqs:
     answer: "Three traps. (a) Accounting-period alignment: a new SPV incorporated mid-year creates a short first AP and an Accounting Reference Date that may misalign with the personal tax year-end, shifting CT filing and payment dates and complicating consolidation. (b) Associated-companies divisor: each additional SPV shrinks both the small-profits-rate and marginal-relief band AND the instalment-threshold band; multi-SPV operators can be pushed into quarterly instalments unexpectedly. (c) CIHC overlay: a single below-market connected-party let can flip the whole company into CIHC and lose small-profits-rate access entirely for that accounting period."
   - question: "Can I appeal a Schedule 18 paragraph 17 late-filing penalty?"
     answer: "Yes. Schedule 18 paragraph 17(5) provides a reasonable-excuse defence; the appeal route runs first to HMRC, then to the First-tier Tribunal under TMA 1970 section 31A read with the Tribunals, Courts and Enforcement Act 2007. Perrin v HMRC [2018] UKUT 156 (TCC) sets the controlling four-stage reasonable-excuse test. HMRC v Hok Ltd [2012] UKUT 363 confirms that the FTT cannot consider general fairness or HMRC's failure to send a reminder; only reasonable excuse and the application of the statutory framework. Strict 30-day windows apply from each HMRC decision."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

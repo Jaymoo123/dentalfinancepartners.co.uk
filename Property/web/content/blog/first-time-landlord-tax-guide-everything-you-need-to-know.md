@@ -3,7 +3,7 @@ title: "First-Time Landlord Tax Guide: Everything You Need to Know Before Buying
 slug: "first-time-landlord-tax-guide-everything-you-need-to-know"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/first-time-landlord-tax-guide-everything-you-need-to-know"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

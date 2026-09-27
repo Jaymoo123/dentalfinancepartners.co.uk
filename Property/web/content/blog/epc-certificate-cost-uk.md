@@ -38,7 +38,7 @@ faqs:
     answer: "Usually yes, as part of the costs of advertising to find a buyer, where the property is within the capital gains net rather than fully covered by main residence relief. TCGA 1992 s.38(1)(c) allows the incidental costs of making the disposal, and s.38(2) sets an exhaustive list of what those costs are: fees for the professional services of a surveyor, valuer, auctioneer, accountant, agent or legal adviser, the costs of transfer or conveyance, and the costs of advertising to find a buyer. An EPC is a statutory precondition of advertising a property for sale, which is the limb the fee normally belongs under. HMRC's guidance on the exhaustive definition is at CG15250. At £35 to £120 it is a small entry beside agent and legal fees, but the computation is built from small entries."
   - question: "Is the EPC regime different in Scotland?"
     answer: "Scotland is a separate regime entirely. The regulations covered on this page, SI 2012/3118, apply to England and Wales only. Scotland operates under the Energy Performance of Buildings (Scotland) Regulations 2008, with different enforcement and its own register, and Northern Ireland has separate regulations again. Prices are broadly similar across the UK because the assessment market is similar, but the legal duties, penalty figures and register lookups on this page are the England and Wales rules. If your property is in Scotland or Northern Ireland, check the devolved guidance before relying on any figure here."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

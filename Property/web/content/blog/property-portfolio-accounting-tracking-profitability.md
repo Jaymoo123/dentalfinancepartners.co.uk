@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 howToSteps:
   - name: "Separate the money"
     text: "Open a dedicated landlord bank account (or one per property for larger portfolios) so rent and property costs never mix with personal spending. Clean bank feeds are the foundation of property portfolio accounting."

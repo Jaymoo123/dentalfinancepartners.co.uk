@@ -3,6 +3,7 @@ title: "How Should Multi-Property Landlords Structure Tax Planning for 5+ Proper
 slug: "multi-property-landlord-tax-planning-strategies-5-plus-properties"
 canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/multi-property-landlord-tax-planning-strategies-5-plus-properties"
 date: "2026-05-21"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Portfolio Management"
 metaTitle: "Portfolio Landlord Tax Strategy 2026 | 5+ Properties Guide"

@@ -14,7 +14,7 @@ summary: "A worked landlord incorporation case study. We model a lightly geared 
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 schema: ""
 faqs:
   - question: "Is incorporation worth it for a large property portfolio?"

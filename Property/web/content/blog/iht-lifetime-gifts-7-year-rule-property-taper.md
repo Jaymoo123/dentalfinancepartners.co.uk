@@ -44,7 +44,7 @@ faqs:
     answer: "Yes, but the gifts are cumulated for IHT purposes. If both PETs fail (donor dies within 7 years of the second gift, which means certainly within 7 years of the first), the cumulative £400,000 is set against the NRB. The first £325,000 is sheltered by the NRB; the remaining £75,000 is taxable at the full rate, tapered by the time gap from death. The strategy of staggering gifts within the 7-year window can still produce a partial benefit (the first gift's taper banding may differ from the second's), but the cumulation principle prevents you from getting two full NRBs against two gifts in the same 7-year window."
   - question: "Does taper relief apply to the gift or to the tax on the gift?"
     answer: "To the tax, not to the gift. This is the most commonly miscommunicated point on the 7-year rule. The gift value itself does not reduce with time. What reduces is the proportion of the full-rate IHT payable, per the s.7(4) IHTA 1984 schedule. So a £500,000 gift made 6 years before death has a chargeable element of £500,000 less available NRB (assume £175,000 remaining = £325,000 chargeable), but the tax is 20% of the full 40% = an effective 8% rate on that £325,000, producing tax of £26,000 instead of the full-rate £130,000. The gift value is unchanged; only the tax rate falls."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

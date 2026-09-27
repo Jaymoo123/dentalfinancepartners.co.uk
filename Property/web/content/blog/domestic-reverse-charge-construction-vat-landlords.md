@@ -44,7 +44,7 @@ faqs:
     answer: "The DRC and the CIS deduction operate on different sides of the transaction. CIS deductions are an income-tax mechanism (the contractor deducts tax from labour payments to sub-contractors and pays it to HMRC). The DRC is a VAT mechanism applied to the same supply. Both can apply at the same time: a sub-contractor without CIS gross-payment status receives a payment net of the CIS deduction and accounts for the VAT under the DRC (rather than charging it on the invoice). The two regimes coexist; one does not replace the other."
   - question: "Are there construction supplies the DRC doesn't apply to even within a CIS chain?"
     answer: "Yes. Zero-rated supplies (most commonly the construction of new dwellings) are outside the DRC because there is no positive VAT on the supply to reverse-charge. Supplies of staff or workers (employment-business supplies) are also outside. Mixed supplies where the construction element is incidental to a non-construction supply (eg a building materials retailer delivering goods with minor installation) may also fall outside, but the test is fact-specific."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

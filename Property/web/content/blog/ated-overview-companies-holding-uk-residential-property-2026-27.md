@@ -46,7 +46,7 @@ faqs:
     answer: "Just the flat, and only if the flat in isolation is a single-dwelling interest worth more than £500,000. ATED applies to the residential portion of a mixed-use property on a just-and-reasonable apportionment basis, with HMRC accepting floor-area or value-based methods evidenced by a Knight Frank, Savills, or similar valuation. A flat-over-shop where the flat is valued at £420,000 is outside ATED entirely; one valued at £620,000 sits in the bottom band, even if the underlying commercial property is materially larger."
   - question: "We are a charity holding a Mayfair flat as part of an endowment portfolio. Does ATED apply?"
     answer: "ATED applies, but s.150 Finance Act 2013 provides Charitable Use Relief where the dwelling is owned by a charity and used for charitable purposes. The relief is claim-on-return; the same filing discipline as Property Rental Business Relief applies. Charities holding endowment property as an investment let to unconnected tenants on commercial terms can usually claim Property Rental Business Relief in the alternative, which is sometimes easier to evidence than charitable use."
-dateModified: "2026-05-22"
+dateModified: "2026-08-04"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

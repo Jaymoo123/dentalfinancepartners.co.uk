@@ -42,7 +42,7 @@ faqs:
     answer: "You need to migrate to a still-compatible product before your next quarterly deadline. The register changes as vendors update, withdraw, or fail re-testing; checking quarterly (rather than only at sign-up) is part of MTD operational discipline. The vendor typically gives advance notice of withdrawal but is not required to; HMRC's register is the authoritative status check. Landlords on a less mainstream product should set a quarterly check reminder; those on a market-leader product face less risk but should still verify before each quarter-close."
   - question: "Should I let my accountant pick the software for me?"
     answer: "If you are accountant-led (you authorise the accountant via the Agent Services Account and they file on your behalf), having them choose the software that fits their workflow is usually sensible; accountants operating at scale standardise on one or two products they know well, and the marginal cost to you is normally lower than insisting on your own choice. If you are self-filing, your accountant's preferred product may still be a starting point, but you also weigh the user-experience side of working in the product day-to-day. Either way, the product still has to be on the HMRC compatible-software register; the accountant's preference does not override that."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

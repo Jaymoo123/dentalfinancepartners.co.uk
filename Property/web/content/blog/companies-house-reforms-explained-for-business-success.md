@@ -40,7 +40,7 @@ faqs:
     answer: "The legal minimum (verify within the transition window, file the confirmation statement on time, add the registered email at the next filing, file the lawful purposes statement) is sufficient to avoid criminal exposure and disqualification proceedings. The commercial value case is incremental: it is about how the file reads to counterparties at the margin. For small landlord LtdCos with no near-term refinance, no sophisticated tenant relationship, and no joint-venture exposure, the minimum-bar position may be commercially sufficient. For portfolios with active lender relationships, sophisticated tenants, or joint-venture development arrangements, the early-thorough position is commercially material. The decision is portfolio-specific."
   - question: "Where do I check the operative state of the rollout?"
     answer: "Two canonical sources. Primary: the Companies House campaign page at changestoukcompanylaw.campaign.gov.uk, with topic sub-pages for identity verification, Authorised Corporate Service Providers, confirmation statement changes, and changes to company registers. Secondary: the Companies House blog at companieshouse.blog.gov.uk for operational announcements and phase-rollout posts. The legacy gov.uk/government/news/changes-to-uk-company-law URL is no longer active and should not be relied on."
-dateModified: "2026-05-27"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

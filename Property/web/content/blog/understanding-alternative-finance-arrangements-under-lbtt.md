@@ -42,7 +42,7 @@ faqs:
     answer: "Yes. Schedule 7 applies to 'land' generically, not just to residential property. Commercial property acquired via Sharia-compliant alternative finance attracts Schedule 7 relief on the same basis as residential. Mixed-use property attracts the appropriate underlying rate table at acquisition (the non-residential rate band where mixed-use classification engages under the s.59(8) six-or-more-dwellings rule or the standard mixed-use analysis), and Schedule 7 relief operates to eliminate the double charge on the interim institution holding regardless of property classification."
   - question: "Are there any anti-avoidance considerations to be aware of?"
     answer: "Yes. The LBTT(S)A 2013 s.75A anti-avoidance code (the equivalent of the SDLT s.75A general anti-avoidance provision under LBTT) can engage if an alternative-finance structure is used principally to obtain a tax advantage beyond the relief's authorised scope. Project Blue Ltd v HMRC [2018] UKSC 30 (an SDLT case) is the leading Supreme Court authority on substance-over-form analysis of alternative finance structures; the principles apply in adapted form to LBTT. Conventional Sharia-compliant home purchase plans with bona fide regulated financial institutions do not engage the anti-avoidance code. Structured arrangements using nominees, artificial intermediaries, or structures designed principally to escape ADS or other surcharges are at materially higher risk of anti-avoidance challenge."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

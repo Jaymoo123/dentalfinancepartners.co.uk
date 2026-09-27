@@ -46,7 +46,7 @@ faqs:
     answer: "Amendment under FA 2013 Schedule 33 paragraph 3 is a formal process by notice to an officer of Revenue and Customs, exercised through the ATED online service amend flow or by written correspondence. Resubmission of the original return without a paragraph 3 notice is not effective amendment; HMRC may treat the second filing as a duplicate, ignore it, and the original return stands as filed. Use the formal amendment route, document the paragraph 3 notice, and preserve the audit trail in case the amendment later interacts with an enquiry or discovery."
   - question: "Where does this leave me with the existing site page on the procedural how-to of ATED amendments?"
     answer: "The sibling page (linked above) walks the procedural mechanic: how to log into the ATED online service, navigate to the historical return, attach evidence, paper Form ATED51 alternatives, and the operational steps on the practitioner side. This guide walks the strategic layer: when amendment is the right route, how the period-boundary deadline works, when to use the beyond-window architecture instead, and how to time the amendment to maximise Schedule 24 mitigation and Schedule 24 paragraph 14 suspension prospects. Read both. The procedural page assumes you have already decided to amend; this page helps you make that decision."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

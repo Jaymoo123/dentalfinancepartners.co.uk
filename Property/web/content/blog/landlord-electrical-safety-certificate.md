@@ -38,7 +38,7 @@ faqs:
     answer: "The inspection fee is a revenue expense of the rental business and deductible against rental income under the rules applied by ITTOIA 2005 s.272; it is a compulsory regulatory cost incurred wholly and exclusively for the business, and a pre-letting EICR before the first tenancy is normally allowable under the pre-trading rules. Remedial work splits: like-for-like repairs such as replacing damaged sockets or a faulty consumer unit are revenue and deductible now, while a first-time full rewire that materially upgrades the installation can be capital, added to the property's CGT base cost. Financial penalties are never deductible."
   - question: "Do the EICR rules apply in Scotland, Wales and Northern Ireland?"
     answer: "SI 2020/312 is England-only. Scotland has required electrical safety inspections in private rented housing since 2015 under its own separate rules, so Scottish landlords have lived with a 5-yearly EICR duty for longer than English ones. Wales runs a parallel 5-yearly duty through the Renting Homes fitness regulations, and Northern Ireland's own 5-yearly regime has been fully in force since 1 December 2025. The mechanics and deadlines differ in each, so a landlord with properties on both sides of a border needs to run each property against the rules of its own nation rather than assuming the English deadlines travel."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

@@ -38,7 +38,7 @@ faqs:
     answer: "The rules-overview page (our 'FHL Tax Rules, Abolition and What Happens Now' page) is operator-action-oriented; it covers what the post-abolition rules are and what operators need to do under them. This page is history-and-policy-oriented; it covers what the regime was, when and why it existed, and what survives. The two pages are an intentional pair: the rules-overview for the operator looking up 'what do I do now', this page for the searcher trying to understand the context of abolition. Different lanes; cross-link as canonical companions."
   - question: "Where can I read the official source material?"
     answer: "Primary statutory source: Finance Act 2025 Schedule 5 on legislation.gov.uk (FA 2025 c.8). HMRC guidance: the Property Income Manual at PIM4160 (contents) linking to PIM4165 (overview), PIM4170 (commencement and qualifying tests), PIM4180 (capital allowances post-abolition), PIM4185 (CGT reliefs), and PIM4190 (jointly let property). Capital allowances transitional treatment: CA20025. CGT-side detail and anti-forestalling: CG73505. Original policy material: the gov.uk policy paper 'Changes to the furnished holiday lettings tax regime' (URL has moved since publication; the current location can be found via gov.uk search). The Spring Budget 2024 red book and the technical consultation document carry the original policy reasoning behind the abolition decision."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

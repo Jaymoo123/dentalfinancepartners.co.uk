@@ -12,7 +12,7 @@ image: ""
 h1: "Expat and Non-Resident Landlord Buy-to-Let Mortgages"
 summary: "Living and earning abroad puts most mainstream buy-to-let lenders out of reach, but a specialist expat and non-resident panel still lends on UK rental property, usually at a higher deposit (often 70 to 75% LTV) and frequently through a limited company or SPV. This page covers why non-residents are harder to place, the terms the expat panel works to, the country-of-residence factors that decide acceptance, the HMRC non-resident landlord scheme that governs tax on your rent, and the SPV route. A Dubai-based expat buying a £220,000 buy-to-let through an SPV carries the worked figures. This is investor framing only: an expat buying a UK home for themselves or a relative is a regulated mortgage contract we do not introduce."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

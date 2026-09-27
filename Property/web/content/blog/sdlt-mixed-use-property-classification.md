@@ -40,7 +40,7 @@ faqs:
     answer: "Five evidential pillars: (1) physical separation and identifiable non-residential character at the effective date (separate access, separate fencing, distinct use); (2) commercial use of the non-residential element under a formal agreement (grazing licence, agricultural tenancy, business letting) with consideration at market rate and a defined term; (3) historic evidence (the land has been used commercially for years, not just rented out shortly before purchase to engineer the claim); (4) third-party documentation (tenant correspondence, farm accounts, agricultural payment records); (5) a contemporaneous valuation that apportions the price between the residential and non-residential elements. Without these, the claim is at high risk on enquiry."
   - question: "What is the risk of an engineered mixed-use claim?"
     answer: "High. HMRC opens routine enquiries on SDLT returns where mixed-use is claimed on properties that look residential on the title. The Hyman / Goodfellow / Pensfold line of cases is consistently applied; tribunal success rates for taxpayers on engineered claims are low. The downstream cost where a claim fails is the underpaid SDLT (often £100,000+ on substantial purchases), repayment interest from the original due date, and tax-geared penalties under Schedule 24 FA 2007 (15% to 100% depending on behaviour). Where the claim was procured through a contingent-fee refund firm, the buyer also pays the firm's percentage even if the claim fails."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

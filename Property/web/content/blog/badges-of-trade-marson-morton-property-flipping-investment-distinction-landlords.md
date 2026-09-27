@@ -3,6 +3,7 @@ title: "Badges of Trade: Marson v Morton, Property Flipping, and the Investment 
 slug: "badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/badges-of-trade-marson-morton-property-flipping-investment-distinction-landlords"
 date: "2026-05-25"
+dateModified: "2026-06-06"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Badges of Trade: Marson v Morton and Property Flipping"

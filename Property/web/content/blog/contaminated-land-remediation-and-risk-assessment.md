@@ -46,7 +46,7 @@ faqs:
     answer: "No. FA 2013 ss.138 and 141 both require trading-stock characterisation. Property held as investment (with rental yield as the primary purpose) sits on the wrong side of the business-versus-investment line; Pawson v HMRC and Ramsay v HMRC analysis applies. For investment-held contaminated property, s.134 transitional relief is the available route if its conditions hold; s.138 and s.141 are unavailable. Recharacterisation from investment to trading stock requires substantive business change, commercial intent, and matching accounting treatment, none of which can be retrofitted."
   - question: "What's the operational compliance discipline for a contaminated-dwelling ATED + LRR scenario?"
     answer: "Commission Phase 1 desk study at acquisition or contamination discovery, then progress through Phase 2 intrusive investigation, Phase 3 remediation strategy and Phase 4 verification. Document local-authority engagement (and any EPA 1990 Part 2A determination). File the annual ATED return and claim s.134, s.138 or s.141 relief as appropriate, with contemporaneous without-undue-delay evidence where s.134 is in play. Maintain a remediation-expenditure ledger split between LRR-qualifying and non-qualifying expenditure. Claim LRR on the CT600 in the period of the expenditure. Preserve the documentation for the subsequent NRCGT or disposal analysis (avoiding any LRR-and-s.38 double relief)."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

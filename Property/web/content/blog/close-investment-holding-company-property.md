@@ -42,7 +42,7 @@ faqs:
     answer: "Either end the let to the connected person (the tenant moves out, the property is re-let to an unconnected party) or transfer the property out of the company to the connected person personally. Ending the connected let is the cleaner fix where the let was always a temporary or limited-purpose arrangement. Transferring the property out usually triggers SDLT on the deemed market value (5% surcharge applies because the recipient is acquiring a residential dwelling) plus CGT in the company on the deemed market value disposal. The cost of fixing CIHC status by transferring out is often greater than the annual CIHC tax cost, so leaving the property in the company and accepting CIHC status can be the right answer for borderline cases."
   - question: "How does HMRC test CIHC status on enquiry?"
     answer: "The standard enquiry process is on the CT600 corporation tax return: HMRC reads the trade or business description, the rental income split between properties, and any disclosed connected-party let arrangements. Where the position is unclear or HMRC has specific reason to investigate, it can ask for tenant references, tenancy agreements, deposit-protection registrations, rent payment evidence, and details of how each tenant was found. The evidence package matters: a property listed publicly via a letting agent with arm's-length references and market rent is much harder for HMRC to recharacterise than an undocumented family arrangement. Keep tenancy paperwork organised."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

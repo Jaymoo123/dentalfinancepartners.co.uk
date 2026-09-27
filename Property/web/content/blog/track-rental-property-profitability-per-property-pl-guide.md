@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-08-21"
 editorialNote: "Rewrite aligning the per-property P&L method to live MTD for ITSA, fully in-force Section 24, and the enacted 2027 property-income rates."
 howToSteps:
   - name: "Open one ledger per property"

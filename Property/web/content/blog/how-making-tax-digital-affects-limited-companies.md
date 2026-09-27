@@ -39,7 +39,7 @@ faqs:
     answer: "Pending HMRC's confirmation. The 2020 consultation proposed quarterly-update obligations for LtdCos similar to MTD ITSA, plus an end-of-period statement and a final declaration. The published position is now indefinitely deferred. Property LtdCos should monitor HMRC updates but should NOT plan for imminent engagement; the current CT600 annual cycle continues unchanged."
   - question: "Does the £50k / £30k / £20k threshold schedule apply to LtdCos?"
     answer: "No. The phased threshold schedule is the individual-landlord trigger for MTD ITSA. It is immaterial to the LtdCo angle because LtdCos are structurally outside MTD ITSA regardless of turnover. Sessions writing must not cite the £50,000 / £30,000 / £20,000 thresholds as if they were LtdCo triggers; the operative threshold for a LtdCo's MTD engagement is the VAT registration threshold (currently £90,000 from 1 April 2024) for the VAT limb only."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

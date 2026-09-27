@@ -3,7 +3,7 @@ title: "CGT Main Residence Election for Single Owners with Two Properties: s.222
 slug: "cgt-main-residence-election-two-properties"
 canonical: "https://www.propertytaxpartners.co.uk/blog/capital-gains-tax/cgt-main-residence-election-two-properties"
 date: "2026-04-10"
-dateModified: "2026-05-24"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

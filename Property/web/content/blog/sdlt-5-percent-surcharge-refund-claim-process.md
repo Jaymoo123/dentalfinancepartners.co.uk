@@ -44,7 +44,7 @@ faqs:
     answer: "No, they are separate. The 2% non-UK resident surcharge in Schedule 9A FA 2003 has its own refund route, available where the buyer becomes UK-resident (broadly, present in the UK for at least 183 days in any 365-day window starting up to 365 days before or after the effective date). A buyer who paid both surcharges on a purchase and is later entitled to both refunds must make both claims. They use the same gov.uk online service but are evidentially independent."
   - question: "Can I make the claim myself or do I need an accountant?"
     answer: "The gov.uk online claim service is open to the buyer or to an agent acting on their behalf. Straightforward claims, where completion and disposal dates are clean and within the standard three-year window, are routinely made by buyers or their conveyancer. Claims involving exceptional circumstances, overpayment relief, non-resident surcharge interaction, separation provisions, or substantial-performance dates benefit from specialist input because the evidence package and the legal framing matter materially to whether HMRC accepts."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

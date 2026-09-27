@@ -44,7 +44,7 @@ faqs:
     answer: "Largely no. UK IHT moved to a residence-based long-term-resident test (10 of the preceding 20 tax years) from 6 April 2025, replacing the historic domicile concept. UK situs property remains within UK IHT regardless. The UK has a separate small set of IHT treaties (US, France, Netherlands, Sweden, India, Pakistan, Switzerland, South Africa) that sit outside the income and CGT treaty pool. Income tax treaty articles do not modify the IHT position; the IHT treaty (where one exists) handles that separately."
   - question: "How do I escalate a treaty dispute under the Mutual Agreement Procedure?"
     answer: "Article 25 of most UK treaties allows the competent authorities of the two states to agree positions where bilateral application leads to taxation not in accordance with the treaty. The UK competent authority is HMRC's Business International team. MAP cases typically have a three-year time limit from the first notification of the disputed action. MAP runs for months or years and is appropriate for material disputes where the residence-state and UK positions cannot be reconciled bilaterally. Get advice before the deadline runs."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

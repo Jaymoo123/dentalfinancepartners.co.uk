@@ -38,7 +38,7 @@ faqs:
     answer: "Only if the lease lets you. There is no statutory right to recover improvement costs from a commercial tenant; recovery depends on the service charge and repair clauses actually signed. Many institutional leases exclude improvements from the service charge, and a tenant's repairing covenant generally obliges it to repair, not to improve the landlord's building. Dilapidations at lease end compensate for disrepair, not for the gap between band E and band B. The realistic levers are lease drafting on renewal, rent-review positioning and negotiated contributions, which is why MEES strategy belongs in the lease-event calendar, not just the maintenance budget."
   - question: "Do I lose the capital allowances when I sell the building?"
     answer: "Not automatically, but the position must be fixed at sale. When a building with fixtures changes hands, the seller and buyer normally sign a joint election under section 198 of the Capital Allowances Act 2001 within two years of completion, fixing how much of the price is attributed to the fixtures. That figure determines the seller's balancing adjustment and the buyer's future allowances. A £1 election lets the seller keep allowances claimed; a higher figure transfers value to the buyer. Miss the requirements and the buyer's allowances on those fixtures can be lost for good, which weakens the building's appeal to tax-sensitive purchasers."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

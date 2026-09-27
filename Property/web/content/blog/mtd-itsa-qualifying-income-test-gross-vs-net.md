@@ -42,7 +42,7 @@ faqs:
     answer: "Before. Agent fees, lettings management costs, tenant find fees, and any other expense come off the gross figure when you compute taxable profit, but they do not come off the qualifying income figure. The rent invoiced to the tenant is the number HMRC tests, even if your agent retains 10% and only banks the net into your account."
   - question: "Where does HMRC get the figure it uses to decide if I am in scope?"
     answer: "From your filed self assessment return for the reference year (2024/25 for the April 2026 mandate, 2025/26 for April 2027, 2026/27 for April 2028). HMRC adds together gross self-employment turnover and gross property income from SA103F/S, SA105, and SA106. The mandate obligation is yours regardless of whether HMRC writes to you; their letter is a courtesy, not the trigger."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

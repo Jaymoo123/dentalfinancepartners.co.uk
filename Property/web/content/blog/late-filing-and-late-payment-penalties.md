@@ -39,7 +39,7 @@ faqs:
     answer: "No. HMRC has discretionary power under Schedule 24 FA 2007 paragraph 14 to suspend a careless-inaccuracy penalty subject to conditions designed to prevent recurrence. Suspension is not available for Schedule 55 late-filing penalties or Schedule 56 late-payment penalties; it is a Schedule 24 inaccuracy-only remedy. Do not expect suspension as an option on the late-filing cascade. Your defensive levers there are reasonable excuse (Schedule 55 paragraph 23 or Schedule 56 paragraph 16) and the section 31A appeal route."
   - question: "What is the practical decision-framework for a landlord facing a penalty assessment?"
     answer: "Five-step. First, is the underlying liability disputed? If yes, separate the liability appeal from the penalty appeal under section 31A. Second, is there a reasonable-excuse defence? Apply the Perrin four-stage test honestly. Third, what is the appeal-window status? 30 days is short; act fast. Fourth, what time-to-pay options exist? HMRC will agree time-to-pay under TMA 1970 section 108 where you cannot pay in full. Fifth, is the underlying failure undisclosed rental income rather than a late return on a known liability? If yes, the Let Property Campaign route under Schedule 41 may be the better engagement than fighting the penalty."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

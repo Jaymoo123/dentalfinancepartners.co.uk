@@ -3,6 +3,7 @@ title: "Remittance Basis Tax Insights for Non-Domiciled Individuals: What Ended 
 slug: "remittance-basis-tax-insights-for-non-domiciled-individuals"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/remittance-basis-tax-insights-for-non-domiciled-individuals"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Remittance Basis: What Replaced It Post-6 April 2025"

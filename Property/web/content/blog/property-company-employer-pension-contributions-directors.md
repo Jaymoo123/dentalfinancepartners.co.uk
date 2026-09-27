@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 faqs:
   - question: "Can my property company make pension contributions for me as a director?"
     answer: "Yes. A property company can make employer pension contributions for its directors. The company claims corporation tax relief on the contribution (19% small profits rate, 25% main rate, or an effective 26.5% in the marginal band), and the director pays no income tax and no National Insurance on it. There is no benefit in kind and no P11D entry. The contribution counts against the director's annual allowance, currently £60,000 across all sources."

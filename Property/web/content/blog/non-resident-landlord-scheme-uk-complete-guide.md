@@ -3,7 +3,7 @@ title: "Non-Resident Landlord Scheme UK: Complete Guide for Overseas Property In
 slug: "non-resident-landlord-scheme-uk-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/non-resident-landlord-tax/non-resident-landlord-scheme-uk-complete-guide"
 date: "2026-04-10"
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-02"

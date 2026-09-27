@@ -3,6 +3,7 @@ title: "AST to Periodic Tenancy Conversion: Landlord Obligations Under the RRA 2
 slug: "renters-rights-act-periodic-tenancy-switch-landlord-obligations"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/renters-rights-act-periodic-tenancy-switch-landlord-obligations"
 date: "2026-05-24"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "AST to Periodic Tenancy Conversion: RRA 2025 Landlord Guide"

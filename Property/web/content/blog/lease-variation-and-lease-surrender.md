@@ -3,6 +3,7 @@ title: "Lease Variation and Lease Surrender: The SDLT, LBTT, LTT, and CGT Treatm
 slug: "lease-variation-and-lease-surrender"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/lease-variation-and-lease-surrender"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Lease Variation and Surrender: SDLT, LBTT, LTT and CGT"

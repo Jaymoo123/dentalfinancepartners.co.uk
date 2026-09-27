@@ -12,7 +12,7 @@ image: ""
 h1: "HMO Mortgages: How Valuation, Lenders and ICR Actually Work"
 summary: "HMO lending is a specialist product because the same building rents for far more by the room and can be valued on its investment income rather than bricks-and-mortar. This guide covers the two valuation bases, licensing and Article 4 conditions lenders check, experience requirements, SPV HMO lending, and the ICR stress test, with the HMO tax treatment cross-linked to the property tax guides."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

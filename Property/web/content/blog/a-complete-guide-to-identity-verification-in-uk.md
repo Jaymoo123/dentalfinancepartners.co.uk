@@ -38,7 +38,7 @@ faqs:
     answer: "ECCTA introduced several parallel reforms to Companies House: a registered email address for every company (not published publicly), a lawful purposes statement on the confirmation statement, the abolition of locally held PSC and director registers (consolidated to the central register at Companies House), a new statutory role for the Registrar with active integrity objectives, and substantial changes to the Register of Overseas Entities regime. Our companies house confirmation statement page covers the confirmation-statement reforms; our ECCTA operational walkthrough covers the identity verification regime in landlord-LtdCo operational detail."
   - question: "Where can I read the operational walkthrough for landlord LtdCo directors?"
     answer: "Our ECCTA identity verification operational walkthrough sets out the One Login versus ACSP route choice for landlord portfolios, the per-company filing cadence (each company quotes the director's personal code on its confirmation statement), the multi-SPV mechanics (one verification covers every entity in the portfolio), the transition-window timing for existing roles, and the sanctions regime in detail. This page is the upstream entry point; that page is the operational deep-dive. Read this page first for the framework, then move to the operational page for the action steps."
-dateModified: "2026-05-27"
+dateModified: "2026-08-18"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-27"

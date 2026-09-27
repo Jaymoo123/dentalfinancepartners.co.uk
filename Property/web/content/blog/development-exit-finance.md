@@ -12,7 +12,7 @@ image: ""
 h1: "Development Exit Finance: The Cheaper Bridge That Replaces Your Development Loan"
 summary: "Development exit finance refinances a completed scheme onto a cheaper short-term facility, cutting the monthly cost, releasing trapped profit and buying a longer sales window than the expiring development loan allows. This guide explains when you qualify, how the LTV and equity release work, and how the interest is taxed."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

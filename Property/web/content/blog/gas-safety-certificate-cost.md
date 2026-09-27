@@ -38,7 +38,7 @@ faqs:
     answer: "Usually, yes. Replacing a worn-out boiler with the nearest modern equivalent is a repair for tax purposes, so the cost is revenue and deductible against rental income, even though the new boiler is more efficient, because that is treated as natural product evolution. The treatment flips to capital where the replacement is part of a wider upgrade, such as a full new heating system, extra radiators or a fuel conversion. Capital costs are not deductible against rent; they go into the property's CGT base cost instead."
   - question: "Does the gas safety rule apply in Scotland and Wales?"
     answer: "Yes. The Gas Safety (Installation and Use) Regulations 1998 apply across Great Britain, so the annual CP12 duty and its cost apply equally to landlords in England, Scotland and Wales. Northern Ireland has a parallel regime of its own. That makes gas the odd one out among the safety certificates: the EICR requirement for private landlords is England-only, and the prices quoted here are GB-wide market ranges."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

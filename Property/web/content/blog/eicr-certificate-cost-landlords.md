@@ -36,7 +36,7 @@ faqs:
     answer: "Mostly, yes. Like-for-like repairs, replacing a damaged socket, correcting faulty wiring, or replacing an old consumer unit with its modern equivalent, are revenue expenses deductible in the year you pay them. The exception is work that materially upgrades the installation beyond its previous character, such as a first-time full rewire that substantially improves the property: that can be capital, which means no deduction against rental income but an addition to your CGT base cost under TCGA 1992 section 38(1)(b), reducing the taxable gain when you sell."
   - question: "Is an EICR penalty tax-deductible?"
     answer: "No. Penalties for breaking the law are not deductible against rental profits. HMRC's position, set out in its Business Income Manual at BIM38515 and rooted in long-standing case law, is that a fine for an infraction of the law is a punitive cost, not an expense of earning the rent, and it fails the wholly-and-exclusively test. The same applies to a Housing Act 2004 licensing penalty. The contrast is stark: a £150 report is fully deductible, while a £40,000 penalty for skipping it gives no tax relief at all."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

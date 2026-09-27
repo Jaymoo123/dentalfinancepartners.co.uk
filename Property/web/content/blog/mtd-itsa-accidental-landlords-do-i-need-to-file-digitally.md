@@ -42,7 +42,7 @@ faqs:
     answer: "Your salary is reported through PAYE and does not generate a separate filing; it appears on the annual final declaration as employment income. The MTD obligation is for the property income (and self-employment income, if any). You report PAYE figures once on the final declaration in January following the tax year, not quarterly. The quarterly updates are property and self-employment streams only."
   - question: "Can I claim a digital-exclusion exemption if I am uncomfortable with software?"
     answer: "You can apply, but the bar is high. HMRC accepts genuine digital exclusion on grounds of age, disability, very limited broadband, or religious objection. Pure preference (I prefer paper) does not qualify. The application is to HMRC directly; if granted, you continue annual self assessment in the old format. Apply well before the relevant 6 April start date, not after."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

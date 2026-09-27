@@ -15,7 +15,7 @@ schema: ""
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-30"
-dateModified: "2026-05-30"
+dateModified: "2026-06-23"
 faqs:
   - question: "Do HMO landlords pay business rates or council tax?"
     answer: "Council tax, in England. Since 1 December 2023, an HMO within the Housing Act 2004 section 254 meaning is banded as a single dwelling for council tax (SI 2023/1175 inserted article 3C into the Council Tax (Chargeable Dwellings) Order 1992), and the owner is liable for the one bill under the Class C owner-liability regime. HMOs do not default to business rates, and the previous Valuation Office Agency practice of banding each room separately ended at that date. See our HMO council tax reform page for the full mechanic and the retrospective review route for pre-reform per-room bandings."

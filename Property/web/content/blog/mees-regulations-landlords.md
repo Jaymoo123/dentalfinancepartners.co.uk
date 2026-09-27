@@ -40,7 +40,7 @@ faqs:
     answer: "It depends on what the work does, on ordinary capital-versus-revenue principles rather than anything in MEES. Replacing part of the property with its nearest modern equivalent is an allowable repair, deductible against rental income: HMRC's Property Income Manual at PIM2030 gives single glazing replaced with double glazing as its own example, because the functionality and character of the asset stay broadly the same, and a like-for-like boiler swap works the same way. Genuine additions are capital: insulation put into a loft or cavity that had none, first-time central heating, or a specification uplift beyond what a repair would deliver. Capital spend is added to the CGT base cost instead of coming off the rent."
   - question: "Do grants change the tax position of MEES works?"
     answer: "Yes. Grant funding under schemes such as ECO4, the Great British Insulation Scheme or the Boiler Upgrade Scheme is matched against the expenditure it funds, so where the works are capital the grant reduces the amount added to your CGT base cost. You cannot add gross costs to base cost while a grant covered part of them. Grant-funded improvements also interact with the £3,500 cap: works wholly covered by third party funding fall outside the cap entirely."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

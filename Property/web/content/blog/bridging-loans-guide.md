@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Loans: How Short-Term Property Finance Works, What It Costs, and Where the Tax Bites"
 summary: "A plain-English guide to bridging finance for UK property investors, developers and business owners. Covers what a bridging loan is, the regulated versus unregulated line, first and second charge, open and closed terms, gross versus net loan, rolled and retained interest, LTV, the all-important exit, timescales, the risks, and how the interest is treated for tax. Education only: this guide fences off regulated own-home bridging and does not arrange or promote finance."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

@@ -3,6 +3,7 @@ title: "Property Accountant Bournemouth: BTL & Student-Let Tax for BCP Landlords
 slug: "property-accountant-bournemouth-landlords-tax-services"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/property-accountant-bournemouth-landlords-tax-services"
 date: "2026-05-21"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Bournemouth 2026: BTL & Student-Let Tax"

@@ -3,6 +3,7 @@ title: "How to File Dormant Accounts in the UK: A Complete Guide for Property Co
 slug: "file-dormant-accounts-a-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/file-dormant-accounts-a-complete-guide"
 date: "2026-05-27"
+dateModified: "2026-07-20"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "File Dormant Accounts UK: Complete Guide for Property SPVs"

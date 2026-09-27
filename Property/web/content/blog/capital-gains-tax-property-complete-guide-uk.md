@@ -45,7 +45,7 @@ faqs:
   answer: "HMRC's <a href=\"https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual\">Capital Gains Manual</a> is the authoritative reference for mechanics. <a href=\"https://www.gov.uk/capital-gains-tax/rates\">gov.uk Capital Gains Tax rates</a> is updated each tax year for the current rates. <a href=\"https://www.legislation.gov.uk/ukpga/1992/12\">TCGA 1992</a> on legislation.gov.uk is the statutory framework. <a href=\"https://www.gov.uk/report-and-pay-your-capital-gains-tax\">HMRC's CGT on UK property service</a> is the filing portal."
 - question: "Do you pay capital gains tax when you sell your house?"
   answer: "Not if it was your only or main home for the whole time you owned it, because Private Residence Relief covers the gain. You pay capital gains tax when selling a house that was let out, used as a second home, or lived in for only part of your ownership. In 2026/27 the taxable slice is charged at 18% within your unused basic-rate band and 24% above it, after your £3,000 annual exempt amount. Joint owners are taxed on their own share and each get their own £3,000, so two names on the deeds shelter £6,000 of gain."
-dateModified: '2026-08-20'
+dateModified: "2026-08-20"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: '2026-08-20'

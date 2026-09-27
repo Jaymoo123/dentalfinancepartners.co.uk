@@ -3,6 +3,7 @@ title: "Making a Disclosure Using the Worldwide Disclosure Facility: The Step-by
 slug: "making-a-disclosure-using-the-worldwide-disclosure-facility"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/making-a-disclosure-using-the-worldwide-disclosure-facility"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "How to Make a Worldwide Disclosure Facility Submission"

@@ -12,7 +12,7 @@ image: ""
 h1: "Property joint venture SPV structure: sharing ownership and control (UK)"
 summary: "A joint venture SPV is one single-purpose property company owned by two or more unconnected investors. The structure decisions that matter are the share classes each partner holds, the reserved matters that need unanimous consent, the deadlock mechanism, who is a registrable person with significant control, and how a partner gets out. This guide covers share classes per JV partner, what a property JV shareholders' agreement contains beyond the model articles, deadlock resolution, the 25 per cent PSC test on a JV cap table, drag-along and tag-along on exit, and the mistakes that turn a working JV into a stalemate."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, Companies House and HMRC guidance"
 faqs:

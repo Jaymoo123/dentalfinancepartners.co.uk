@@ -46,7 +46,7 @@ faqs:
     answer: "MTD VAT, on the company's VAT-registered serviced-accommodation supplies (residential FHL income was historically VAT-exempt but the post-FHL-abolition serviced-accommodation route can attract VAT depending on the supply pattern). MTD ITSA does not apply because the operating entity is the company. The director who personally holds any side property (rental or self-employment income) is separately in scope of MTD ITSA on that personal income at the cohort threshold. The two regimes do not overlap on the same income stream; they apply to different streams that may sit on the same individual."
   - question: "Are there any landlords for whom incorporating to escape MTD is a genuinely good idea?"
     answer: "Few. The closest case is a higher-rate landlord with a small, growing portfolio where Section 24 is biting hard, the properties have low embedded gains (recent purchases, slow market), the borrowing structure is portable, and the landlord's personal time cost of quarterly MTD compliance is high (perhaps a senior professional with limited bandwidth). In that combination, the post-tax incorporation maths can favour the company route and the MTD avoidance is a marginal additional plus. The decision should be modelled on the tax-rate maths first; MTD is rarely the headline driver. Our incorporation decision page works the trade-off in detail."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

@@ -44,7 +44,7 @@ faqs:
     answer: "Yes. Transfers between UK-domiciled spouses or civil partners are exempt from IHT under section 18 IHTA 1984. A founder can gift FIC shares to their spouse without IHT consequence. The spouse then holds the shares with their own nil-rate band available; on the spouse's death, the residue passes to the children using both spouses' nil-rate bands. The two-NRB approach is standard pre-positioning for a couple."
   - question: "Is there ever a case where BPR genuinely helps an FIC?"
     answer: "Where the FIC holds a genuine trading business (active hotel, property development with continuous building activity, hands-on property trading), BPR can apply. The £2.5m April 2026 cap under IHTA 1984 s.124D restricts the relief to £2.5m of value at 100%, with the rest at 50%. For a £3m active trading FIC, the post-2026 IHT is £100k (£500k above-cap at 20% effective rate), against £1.2m without any BPR. Real and a much smaller bill than the £1m headline figure would have implied."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

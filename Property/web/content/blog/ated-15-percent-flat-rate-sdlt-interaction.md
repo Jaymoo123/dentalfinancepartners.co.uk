@@ -42,7 +42,7 @@ faqs:
     answer: "Sale to a third party within three years does not trigger the clawback in itself; the buyer's onward use determines its own position. The clawback bites where the qualifying use of the original buyer ends within three years, not where the property changes hands. Sale to a connected person at less than market value can attract anti-avoidance scrutiny separately."
   - question: "What is the practical sequence for a company buying a London BTL above £500k?"
     answer: "Step 1: at exchange, model the SDLT both ways (with and without the relief) so the deposit and completion funds are correct. Step 2: at completion, file SDLT1 within 14 days claiming Property Rental Business Relief, pay SDLT at ordinary residential rates plus the 5% additional dwellings surcharge. Step 3: by the next 30 April, file the ATED return (or Relief Declaration Return) claiming the same relief annually. Step 4: keep tenancy and marketing records for at least three years to defend the SDLT position and six years to defend the ATED position."
-dateModified: "2026-05-22"
+dateModified: "2026-08-04"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

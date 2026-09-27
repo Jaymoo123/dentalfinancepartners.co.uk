@@ -38,7 +38,7 @@ faqs:
     answer: "For accruals-basis taxpayers, the gross rent receivable in SA105 box 5 should reconcile to the contractual rent due for the year per the tenancy ledger. Legitimate variances (rent reviews mid-year, void periods, periodic tenancy renewals) are documented in the working schedule. For cash-basis taxpayers, box 5 reflects only received rent: the ledger and SA figures diverge by the arrears amount."
   - question: "Is breathing space the same as a Debt Relief Order?"
     answer: "No. Breathing space is a 60-day procedural pause under SI 2020/1311 designed to give the debtor time to seek advice and a sustainable solution; it is not insolvency. A Debt Relief Order (DRO) is a formal insolvency procedure for low-asset, low-income debtors. A tenant in a DRO has a different debt-discharge position from a tenant in breathing space, and DRO inclusion of rent arrears can render those arrears legally written off, which is then capable of being treated as objectively irrecoverable for the s.35 bad-debt test."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

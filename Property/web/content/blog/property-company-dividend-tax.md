@@ -14,7 +14,7 @@ summary: "Dividends from a property company are taxed at 10.75%, 35.75% or 39.35
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 schema: ""
 faqs:
   - question: "What is the dividend tax rate for a property company in 2026/27?"

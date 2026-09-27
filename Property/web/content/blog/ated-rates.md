@@ -46,7 +46,7 @@ faqs:
     answer: "Per FA 2013 s.101, each year's indexed figure is rounded down to the nearest £50. This is a statutory simplification (the alternative would be amounts to the nearest penny). The round-down is consistently in HMRC's favour at the higher bands: a notional uplift to £303,488 rounds down to £303,450, a £38 loss to HMRC; the effect at the £4,600 band is much smaller, a £4,612 notional rounds to £4,600, a £12 loss. Across all bands and chargeable periods since 2013, the round-down has consistently reduced (rather than increased) the headline figures."
   - question: "When does Treasury publish the next-year figures?"
     answer: "November of each year, after the September CPI publication that drives the indexation calculation. The Treasury order must be issued before 1 April of the chargeable period. The HMRC gov.uk ATED rates-and-allowances publication is the operative public source for the current and prior-year figures; the underlying Treasury order is published on legislation.gov.uk. Owners with multi-property structures or borderline valuations typically diary the November announcement for next-year planning."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

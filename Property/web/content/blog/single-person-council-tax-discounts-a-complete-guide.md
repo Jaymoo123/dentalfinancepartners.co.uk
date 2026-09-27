@@ -3,6 +3,7 @@ title: "Single-Person Council Tax Discounts: A Complete Guide to LGFA 1992 s.11(
 slug: "single-person-council-tax-discounts-a-complete-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/single-person-council-tax-discounts-a-complete-guide"
 date: "2026-05-26"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Single-Person Council Tax Discount: A Complete Guide"

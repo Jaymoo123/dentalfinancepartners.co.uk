@@ -3,6 +3,7 @@ title: "UK Payroll Taxes and Deductions: A Complete Guide for Property-Business 
 slug: "a-complete-guide-to-uk-payroll-taxes-and-deductions-for-employers"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-accountant-services/a-complete-guide-to-uk-payroll-taxes-and-deductions-for-employers"
 date: "2026-05-27"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "UK Payroll for Property Employers 2026/27: PAYE, NIC, Levy"

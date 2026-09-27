@@ -42,7 +42,7 @@ faqs:
     answer: "The current regime is built around natural-person verification. Corporate directors, corporate members of LLPs and corporate officers of PSCs come into scope at a later phase scheduled no earlier than November 2026 per the Companies House campaign page. Most landlord-LtdCo SPV structures use natural-person directors and shareholders so this is rarely live in practice for buy-to-let portfolio holders. Family Investment Companies that interpose corporate directors or use complex share-class structures should monitor the second-phase commencement; the same applies to property structures using a Jersey, Guernsey or BVI holding company above the UK SPV, where the corporate-officer scope will eventually catch the overseas-corporate links into the UK company."
   - question: "Where do I check the current operative state of the regime?"
     answer: "The Companies House campaign page at changestoukcompanylaw.campaign.gov.uk is the canonical commencement-state tracker. The Companies House blog at companieshouse.blog.gov.uk publishes operational announcements as each phase commences. Statutory text sits at legislation.gov.uk for ECCTA 2023 c. 56 (the inserting Act) and the Companies Act 2006 contents (where the inserted provisions sit). Avoid second-hand commentary on commencement dates because the rollout phases have moved during 2024 to 2026 and not every commentator has updated. Quote the verification timestamp in any client-facing note so the reader knows when the position was checked."
-dateModified: "2026-05-25"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-25"

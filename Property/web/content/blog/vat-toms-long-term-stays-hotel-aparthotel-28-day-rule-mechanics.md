@@ -38,7 +38,7 @@ faqs:
     answer: "Yes, where the establishment falls within Note 9 to VATA 1994 Sch 9 Group 1 Item 1 (similar establishments to hotels, holiday accommodation). A bed and breakfast or guest house is within scope. A short-let holiday cottage held out for tourist accommodation is within scope where the operator is VAT-registered. A long-let residential property let on AST is outside scope (residential rent is exempt, not standard-rated, so there is nothing to reduce). The day-29 mechanic operates the same way across all in-scope establishment types: full 20 percent VAT for the first 28 days, reduced-value treatment thereafter."
   - question: "How does the 28-day rule interact with the existing TOMS framework on our site?"
     answer: "The 28-day rule and TOMS are two different mechanics that can both apply on serviced accommodation, though usually not at the same time. TOMS applies to a tour operator buying in accommodation and reselling it to travellers without material alteration; the 28-day rule applies to direct-let accommodation supplied by the operator that runs the establishment. The Sonder Europe UT 2025 decision narrowed TOMS, holding that operators who lease apartments and sub-let them are not within TOMS because they alter the underlying supply. Operators in that position now fall under the standard VAT regime and engage the 28-day rule directly. See our existing TOMS framework page for the TOMS-applicability test, and use this page for the 28-day-rule mechanic once TOMS is confirmed not to apply."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

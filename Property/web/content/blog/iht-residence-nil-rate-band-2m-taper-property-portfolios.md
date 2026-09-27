@@ -44,7 +44,7 @@ faqs:
     answer: "Frozen at £175,000 until 5 April 2031, per the Autumn Budget 2025 / Finance Act 2026 s.72 extension. The taper threshold of £2,000,000 was set in 2017 and has never been indexed; with property and portfolio values having grown materially since then, fiscal drag is the deliberate policy stance. There is no indication of upward indexation; commentators expect the freeze to be extended again beyond April 2031. Planning that depends on RNRB being available indefinitely should factor in continued freeze or extension. Planning that depends on RNRB being withdrawn should not factor in: the headline allowance and the lineal-descendant rule are politically settled."
   - question: "How does the RNRB interact with property held in trust under a will?"
     answer: "Bare trusts and immediate post-death interest trusts under s.49A IHTA 1984 preserve the RNRB where the beneficiary is a direct lineal descendant: the property is treated as inherited by the beneficiary. Age-18-to-25 trusts under s.71D and bereaved minors' trusts under s.71A also preserve the RNRB. Discretionary trusts do not preserve the RNRB even where all the potential beneficiaries are direct descendants, because no one is closely inheriting on the deceased's death. The will architecture matters: a phrase such as \"to my children absolutely\" with a power to appoint into trust loses RNRB on the appointment; a fixed-interest trust to children that vests at 25 keeps it."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

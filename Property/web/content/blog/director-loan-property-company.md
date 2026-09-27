@@ -35,7 +35,7 @@ faqs:
     answer: "Yes, lenders read the company accounts and pay attention to the director loan balance. A credit balance is generally neutral or positive because you are a creditor of the company, and some specialist buy-to-let lenders read it as a sign of capital commitment. A material overdrawn balance is treated as personal debt against company assets and reduces your borrowing headroom even if you draw no salary or dividend. It is worth shaping the balance with the next refinance in mind, not only the current year-end tax position."
   - question: "What records do I need for a director loan account?"
     answer: "Keep a record of every movement between you and the company: cash you put in, expense reimbursements, company payments for personal items, declared salary and dividends whether or not paid, pension contributions, opening balances from the prior year, and bank statements for the full period. Where the balance is material in either direction, a short written loan agreement and a board minute recording the terms protect you on an HMRC enquiry, a future sale of the company and a counterparty insolvency. Poor records are the most common reason a small property company enquiry escalates."
-dateModified: "2026-05-31"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"

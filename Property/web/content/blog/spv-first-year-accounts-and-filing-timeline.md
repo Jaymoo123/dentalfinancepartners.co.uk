@@ -12,7 +12,7 @@ image: ""
 h1: "SPV First-Year Accounts and Filing Timeline"
 summary: "A newly incorporated property SPV faces four separate filing deadlines running on three different clocks: first statutory accounts 21 months from the date of incorporation, the company tax return 12 months from the end of the accounting period, the corporation tax payment 9 months and 1 day from the end of the accounting period, and the confirmation statement within 14 days of the end of each 12-month review period. This guide sets out the whole first-year calendar against a worked incorporation date, explains what changes if the SPV has not bought a property yet, and covers micro-entity accounts, corporation tax rates for 2026/27 and when ATED comes into scope."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, Companies House and HMRC guidance"
 faqs:

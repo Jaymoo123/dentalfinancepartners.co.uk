@@ -3,6 +3,7 @@ title: "Free Rental Valuation: What It Actually Is, When It Is Tax-Defensible, a
 slug: "free-rental-valuation"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/free-rental-valuation"
 date: "2026-05-26"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Free Rental Valuation vs RICS Red Book: What Is Defensible"

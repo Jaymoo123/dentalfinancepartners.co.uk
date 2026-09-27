@@ -46,7 +46,7 @@ faqs:
     answer: "HMRC Connect is a data warehouse and risk-rating system that aggregates AEOI inbound data, Land Registry, Companies House, banking records, NRL scheme returns, NRCGT 60-day returns, self-assessment filings, DVLA data, and third-party data including Airbnb, Booking.com and similar platforms. Algorithmic discrepancy detection surfaces non-disclosure cases for human review by an HMRC officer. Connect does not 'find' non-compliance autonomously; it surfaces probabilities for HMRC officers to investigate. The realistic posture is to file correctly, disclose any historical gaps voluntarily, and accept that Connect's surfacing rate is meaningful but not omniscient."
   - question: "Does holding UK property in an offshore company avoid AEOI?"
     answer: "No. The company's bank account is AEOI-reported in the company's tax-residence jurisdiction. The UK property remains visible via the Land Registry. ATED applies to non-natural-person owners of dwellings worth over £500,000. The Register of Overseas Entities under the ECTEA 2022 regime requires beneficial-ownership disclosure of overseas-incorporated entities holding UK property to Companies House. Corporate-holding structures do not escape AEOI or property-tax visibility; they add compliance layers without reducing transparency."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

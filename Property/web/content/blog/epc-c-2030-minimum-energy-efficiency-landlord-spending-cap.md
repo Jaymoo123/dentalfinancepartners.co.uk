@@ -3,6 +3,7 @@ title: "EPC C by 2030 and the Landlord Spending Cap: What Is Enacted vs What Is 
 slug: "epc-c-2030-minimum-energy-efficiency-landlord-spending-cap"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/epc-c-2030-minimum-energy-efficiency-landlord-spending-cap"
 date: "2026-05-24"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "EPC C 2030 for Landlords: Enacted Floor vs Policy Aspiration"

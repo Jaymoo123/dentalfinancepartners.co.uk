@@ -3,6 +3,7 @@ title: "MTD for Rental Income: Thresholds, Exemptions and What Landlords Must Do
 slug: "mtd-rental-income-threshold-exemptions"
 canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/mtd-rental-income-threshold-exemptions"
 date: "2026-05-21"
+dateModified: "2026-05-23"
 author: "Property Tax Partners Editorial Team"
 category: "Making Tax Digital (MTD)"
 metaTitle: "MTD Rental Income Threshold: £50k/£30k/£20k Phased Schedule"

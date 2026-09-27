@@ -12,7 +12,7 @@ image: ""
 h1: "Registered Office Address for a Property Company: Home Address or a Paid Service"
 summary: "A property SPV must keep a registered office at an appropriate address at all times, which since 4 March 2024 means a real address where post reaches someone acting for the company and delivery can be acknowledged. A director's home address is allowed and free, but it is published on the public Companies House register. A paid registered-office service keeps the home address off the register and handles official mail. This guide covers the statutory definition, the home-address privacy trade-off, the appropriate-address rule, the director's service address, the AD01 change filing and the position for non-UK-resident directors."
 schema: ''
-dateModified: "2026-09-01"
+dateModified: "2026-09-02"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and Companies House guidance"
 faqs:

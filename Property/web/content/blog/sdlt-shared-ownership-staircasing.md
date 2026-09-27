@@ -40,7 +40,7 @@ faqs:
     answer: "Under pay-in-stages, the buyer files an SDLT return only on the initial shared-ownership grant and on staircasing transactions that are chargeable (i.e. once cumulative ownership exceeds 80%). Non-chargeable staircasing transactions below 80% do not require a return. Under a market value election, the buyer files the SDLT return on the initial grant and no further SDLT returns are required on any staircasing transaction or on the rent."
   - question: "Should I make the market value election or pay in stages?"
     answer: "The election usually wins where the buyer expects to staircase to 100% relatively quickly, the property is expected to appreciate materially, and the buyer can fund the upfront SDLT on the full market value. Pay-in-stages usually wins where the buyer is uncertain whether they will staircase past 80%, where the initial share is small relative to the dwelling value, where cash flow is tight at completion, or where the property is unlikely to appreciate dramatically. We model both routes on the buyer's expected staircasing pattern before completion; the election is irrevocable, so the modelling has to be done up front, not after."
-dateModified: "2026-05-22"
+dateModified: "2026-07-28"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

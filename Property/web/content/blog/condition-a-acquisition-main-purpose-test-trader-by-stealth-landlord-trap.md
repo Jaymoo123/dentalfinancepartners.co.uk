@@ -3,6 +3,7 @@ title: "Condition A: Acquisition Main-Purpose Test and the Trader-by-Stealth Lan
 slug: "condition-a-acquisition-main-purpose-test-trader-by-stealth-landlord-trap"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/condition-a-acquisition-main-purpose-test-trader-by-stealth-landlord-trap"
 date: "2026-05-25"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "Condition A Transactions in UK Land: Acquisition Intent"

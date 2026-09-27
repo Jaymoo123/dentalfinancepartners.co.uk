@@ -46,7 +46,7 @@ faqs:
     answer: "The Spring Statement 2025 explanation was that the legacy 2% / 2% / 4% late-payment regime (FA 2021 Sch 26) was producing insufficient compliance incentive at the population sizes implied by MTD ITSA. The new 3% / 3% / 10% schedule, combined with accelerated trigger days (15 / 30 / 31 instead of 31 / 46 / 91), brings the late-payment cost up to a level HMRC modelling suggested was needed to maintain on-time payment rates as the population grew. The legacy 2% / 2% / 4% schedule continues to apply to VAT and to non-MTD income tax for taxpayers below the MTD threshold; the doubled schedule applies only to MTD ITSA cohorts from 6 April 2026."
   - question: "Is the £10,000 threshold gone forever?"
     answer: "It is gone from the current trajectory but is not formally repealed. The statutory framework (FA 2017 Sch A1) retains broad ministerial power to set the qualifying-income threshold by statutory instrument. A future government could in principle move the threshold lower than £20,000, including to a £10,000 or lower figure. The December 2022 announcement was silent on whether further reductions would follow the £20,000 April 2028 cohort, leaving the long-term floor undefined. So your practical position today: do not plan around a £10,000 threshold, because the announced trajectory stops at £20,000; but do not assume the £20,000 figure is permanent either."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

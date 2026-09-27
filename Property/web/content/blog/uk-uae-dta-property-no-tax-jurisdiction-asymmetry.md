@@ -44,7 +44,7 @@ faqs:
     answer: "Yes. Article 24 of the 2016 treaty provides for Mutual Agreement Procedure between HMRC and the UAE Federal Tax Authority (which has assumed competent authority responsibilities under the 2023 Corporate Tax framework). The standard three-year notification window applies. MAP is the appropriate channel for material bilateral disputes (residence tie-breakers, NRCGT computation challenges on indirect disposals, UAE Corporate Tax interaction with UK Corporation Tax where rental is held in a UAE company)."
   - question: "What is the single biggest mistake UAE-resident UK landlords make?"
     answer: "Assuming that Dubai residence reduces UK tax. It does not. The 2016 treaty allocates UK rental and UK property gains to the UK, and the UAE has nothing to credit. UK income tax (with personal allowance and s.24 credit), UK NRCGT (18% / 24%), and UK NRL withholding (20% pre-NRL1) all apply at full UK rates. The advantage of Dubai residence is the absence of additional UAE tax on the same income, not the reduction of UK tax. Readers who model the cross-border position correctly avoid the disappointment of discovering, three months into Dubai residence, that their UK rental tax is unchanged."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

@@ -42,7 +42,7 @@ faqs:
     answer: "Cross-border transactions under LTTA 2017 Sch 22 require apportionment of the chargeable consideration between the two jurisdictions on a just-and-reasonable basis. A separate return is filed to HMRC for the English portion and to the Welsh Revenue Authority for the Welsh portion, each computed on the apportioned consideration. Each jurisdiction's higher-rates or additional-dwellings test is applied separately to its share. The just-and-reasonable apportionment is typically by reference to the relative market values, floor areas, or land areas of the English and Welsh portions; the apportionment basis should be documented contemporaneously."
   - question: "Where can I check my calculation against an authoritative source?"
     answer: "The official Welsh Revenue Authority LTT calculator is at lttcalculator.wra.gov.wales. The WRA calculator is the authoritative reference for current bands and calculation logic. We recommend verifying any band-by-band calculation against the WRA calculator before completing a substantial purchase. The gov.wales technical guidance pages provide deeper walkthroughs of edge cases including replacement of main residence, higher-rates attribution, cross-border apportionment, and MDR. The LTT return itself must be filed within 30 days of the effective date under LTTA 2017 s.44."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

@@ -3,6 +3,7 @@ title: "Let Property Campaign Penalty Mechanics: Applied Math, Sch 41 vs Sch 24,
 slug: "let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/let-property-campaign-disclosure-mechanics-undeclared-rental-income-2026"
 date: "2026-05-25"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "Let Property Campaign 2026: Penalty Math + Route Selection"

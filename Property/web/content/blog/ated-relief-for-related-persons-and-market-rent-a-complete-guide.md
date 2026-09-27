@@ -46,7 +46,7 @@ faqs:
     answer: "Tenant credit-check and identity verification confirming no family, connection, partnership or CIS link; market-rent comparable evidence (3-plus similar local lettings at similar value); standard AST (or RRA equivalent post-commencement) on commercial terms; rent paid into a company-controlled account (not waived or discounted off-record); deposit lodged per a landlord deposit-protection scheme; agent involvement if normally used (Rightmove or Zoopla listing evidence); contemporaneous business records evidencing commercial-basis-with-view-to-profit (running costs, target yield, void analysis). Audit-defensible package."
   - question: "Where does the s.136 catalogue actually stop. What counts as outside?"
     answer: "Outside the catalogue means not one of the eight categories enumerated in s.136. Practically: arm's-length professional contacts; unconnected friends (in the s.1122 connected-persons sense, no business or family or control relationship); third-party tenants found via Rightmove, Zoopla or a lettings agent where no pre-existing s.1122 connection exists; corporate tenants whose directors and shareholders are unconnected. Where any ambiguity exists (long-standing friend who has done business with you; second cousin; relative-of-spouse-of-relative), specialist tax advice is essential. The catalogue is sticky; multi-hop relationships catch more than owners assume."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

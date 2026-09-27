@@ -12,7 +12,7 @@ image: ""
 h1: "Semi-Commercial Mortgages: Mixed-Use Property Finance in the UK"
 summary: "A semi-commercial (mixed-use) property, the classic shop or office with a flat above, sits between commercial and buy-to-let lending and is almost always financed as a commercial mortgage rather than a residential one. This guide explains what counts as mixed-use, why a lender blends the commercial and residential values into a single figure, the FCA PERG 4 forty-percent dwelling-use test that decides whether a loan is regulated at all, the deposit and LTV you can expect (typically up to around 70% to 75% as at July 2026, verify with a lender or broker), and the affordability underwrite. It then summarises the three tax quirks unique to mixed-use property, mixed-rate SDLT, the VAT option to tax that bites only the commercial element, and capital allowances on the commercial plant, and links up to the detailed tax guides. Education only, not a financial promotion."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

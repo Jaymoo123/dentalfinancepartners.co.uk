@@ -42,7 +42,7 @@ faqs:
     answer: "Yes. Section 24 of the Income Tax Act 2007 restricts mortgage interest relief for individuals only. Companies deduct loan interest in full as a non-trading loan relationship debit (or as property business expense, depending on classification) before arriving at taxable total profits. The taxable profits used in the marginal relief calculation are after full deduction of interest. This is the principal corporation tax advantage of running a leveraged BTL portfolio through a company rather than personally."
   - question: "Does the associated-companies count change mid-year if I incorporate a new SPV?"
     answer: "Yes. The associated-companies count for an accounting period is the number of companies associated at any time during the period. Adding a new SPV mid-year therefore increases the divisor for that whole accounting period, not just the months after incorporation. Where a five-company portfolio adds a sixth SPV in month nine, the £50,000 and £250,000 thresholds drop from one-fifth to one-sixth for the whole year. Year-end planning around incorporation timing matters for the existing companies' tax bills, not only the new one."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

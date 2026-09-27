@@ -3,7 +3,7 @@ title: "How to Choose the Right Property Company Structure for UK Landlords in 2
 slug: "how-to-choose-right-property-company-structure-uk-landlords-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/how-to-choose-right-property-company-structure-uk-landlords-2026"
 date: "2026-04-10"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

@@ -44,7 +44,7 @@ faqs:
   answer: "It depends on what is sold and what was claimed. Where fixtures pass with the building, disposal values are brought in under section 61 and the fixtures Table at section 196, which can trigger a balancing charge if the disposal value exceeds the pool balance. Buyer and seller usually fix the fixtures value by a joint section 198 election, which becomes the buyer's qualifying expenditure and the seller's disposal value. Without a valid election and prior pooling, the buyer's fixtures claim can be barred entirely. The SBA has no balancing event, but the cumulative SBA increases the seller's disposal consideration for capital gains tax under section 37B."
 - question: "Can I claim capital allowances on a property held in a limited company?"
   answer: "Yes, and companies have the widest access. A company can claim AIA, the special rate and main pool writing-down allowances, full expensing at 100% on new and unused main-rate plant, the 50% first-year allowance on new special rate assets, and the SBA on qualifying non-residential construction. The section 35 dwelling-house bar still applies, so a corporate residential landlord is restricted to common parts in the same way an individual is."
-dateModified: '2026-06-02'
+dateModified: "2026-06-23"
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
 - legislation.gov.uk

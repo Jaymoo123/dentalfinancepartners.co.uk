@@ -3,6 +3,7 @@ title: "Farmland Supply Is Up, Value Is Down: Is the April 2026 IHT Reform Reall
 slug: "farmland-supply-value-drops-is-iht-reform-to-blame"
 canonical: "https://www.propertytaxpartners.co.uk/blog/landlord-tax-essentials/farmland-supply-value-drops-is-iht-reform-to-blame"
 date: "2026-05-27"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Landlord Tax Essentials"
 metaTitle: "UK Farmland Sales + IHT Reform 2026: Driver Attribution"

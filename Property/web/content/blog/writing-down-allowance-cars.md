@@ -39,7 +39,7 @@ faqs:
   answer: "Capital allowances are a UK-wide reserved tax, so the same WDA rates and CO2 thresholds apply to a property business whether the landlord is in Scotland, Wales, England or Northern Ireland. What differs is the property purchase tax: England and Northern Ireland use SDLT, Scotland uses Land and Buildings Transaction Tax (LBTT) with the 8% Additional Dwelling Supplement, and Wales uses Land Transaction Tax (LTT). Those transaction taxes have nothing to do with car capital allowances, but Scottish landlords should also note that Scottish income tax rates and bands differ from the rest of the UK, which changes the value of any deduction."
 - question: "Can I claim writing down allowance on a van instead of a car?"
   answer: "Vans are treated more generously than cars. A van is plant and machinery rather than a car, so it qualifies for the Annual Investment Allowance (up to £1 million), which lets you deduct the full cost in the year of purchase for most vans. New and unused zero-emission goods vehicles have their own 100% first-year allowance under CAA 2001 s.45DA. Because vans avoid the restrictive car rules, the timing and amount of relief are very different. See our separate guide on capital allowances on vans for the detail."
-dateModified: '2026-05-30'
+dateModified: "2026-08-18"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - gov.uk

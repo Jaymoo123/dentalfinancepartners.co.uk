@@ -38,7 +38,7 @@ faqs:
     answer: "FA 2004 s.59(1)(l) plus Sch 11A: non-construction businesses become deemed contractors once average rolling 12-month construction-related expenditure exceeds £3m (FA 2021 reform in force 6 April 2021, raising the previous £1m threshold). This catches large landlord groups with active capex or refurb programmes, REITs and HMO portfolio operators. Once in scope, the full CIS template architecture applies (CIS300, PDS, verification, labour and materials invoice discipline, on-boarding checklist). Pure-residential individual landlords are typically out of scope (private householder carve-out under s.59(2)). Verify the current threshold against HMRC CISR before relying on a specific calculation."
   - question: "Can I rely on the templates alone to be CIS-compliant?"
     answer: "No. Templates are the paper-trail evidence of the operational disciplines; the disciplines themselves are: verification before first payment (FA 2004 s.69 plus SI 2005/2045 reg 6); correct deduction rate applied to labour element only (FA 2004 s.61(2)); monthly CIS300 including nil-returns (s.70); timely PDS issuance to non-gross subcontractors (reg 4(8)); deducted-amount payment to HMRC by 19th of following month (22nd electronic); status-test review for long-running engagements (Ready Mixed Concrete). Templates are necessary but not sufficient."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

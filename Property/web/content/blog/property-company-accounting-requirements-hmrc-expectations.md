@@ -14,7 +14,7 @@ summary: "A property company or SPV carries obligations a personal landlord neve
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-07-20"
 schema: ""
 faqs:
   - question: "What records must a property company keep for HMRC?"

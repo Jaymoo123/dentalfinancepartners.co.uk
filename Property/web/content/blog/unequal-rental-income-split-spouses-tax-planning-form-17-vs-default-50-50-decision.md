@@ -46,7 +46,7 @@ faqs:
     answer: "Yes; Form 17 takes effect from the date of the second spouse's signature (the date of the declaration). Income arising before that date is reported 50/50; income from that date is reported on the declared split. Mid-year elections produce a split tax year with two reporting periods. The 60-day filing window from signature date applies regardless of where the year sits; signing on 15 May and filing by 14 July is valid for income arising from 15 May forward."
   - question: "Are there any cases where Form 17 actively costs us money?"
     answer: "Yes, two. First, where the higher-rate spouse is just above the higher-rate threshold and the basic-rate spouse is just below it: a 70/30 shift to the basic-rate spouse may push them into higher rate (paying 40% on the shifted pound instead of 20%, while the higher-rate spouse saves 40% on the same pound), producing zero net saving but with the administrative cost of the deed and form. Second, where the MTD threshold interaction brings the basic-rate spouse into MTD scope earlier than they would otherwise be, the compliance cost of MTD (software, quarterly filings) may exceed the income-tax saving on a small portfolio. Run the post-shift marginal-rate position and the post-shift MTD scope before deciding."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

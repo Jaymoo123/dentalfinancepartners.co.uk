@@ -3,7 +3,7 @@ title: "When to Sell a Rental Property: 8 Key Indicators Every UK Landlord Shoul
 slug: "when-to-sell-rental-property-key-indicators-landlords"
 canonical: "https://www.propertytaxpartners.co.uk/blog/portfolio-management/when-to-sell-rental-property-key-indicators-landlords"
 date: "2026-04-10"
-dateModified: "2026-05-30"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

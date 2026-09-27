@@ -46,7 +46,7 @@ faqs:
     answer: "The Scottish Government announced in the Scottish Budget 2026/27 that residential and non-residential LBTT rates and bands will be maintained at their current level for the year, and that ADS will remain at 8%. A comprehensive review of LBTT (residential and non-residential, including FTB relief and mixed-use transaction treatment) is currently underway with independent research commissioned; findings are expected before the current Parliamentary session concludes to inform decisions in the next Scottish Parliament. Plan against the current rates, but know that a structural review is in progress; no changes are announced for 2026/27 itself."
   - question: "Where does this page sit alongside other Scottish LBTT pages?"
     answer: "This is the main Scottish LBTT residential rates guide. Related Scottish topics go deeper on the Additional Dwelling Supplement at 8% (for second-home buyers), the £175,000 first-time buyer relief, the corporate-buyer route (where Scotland diverges from SDLT's 15% flat rate), and bare-trust acquisition relief for corporate restructuring. If your purchase is elsewhere, separate guides cover Welsh LTT and SDLT for England and Northern Ireland. On income tax, remember that Scottish income tax is partially devolved under the Scotland Act 2016: the UK-wide property income tax framework applies, but if you are Scottish-resident you pay at Scottish income tax rates that differ from the rest of UK."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

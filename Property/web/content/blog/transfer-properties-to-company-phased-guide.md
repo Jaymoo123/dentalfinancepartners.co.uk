@@ -14,7 +14,7 @@ summary: "A phased transfer moves rental property into a limited company a few a
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 schema: ""
 faqs:
   - question: "Can I transfer property to a limited company gradually instead of all at once?"

@@ -3,6 +3,7 @@ title: "HMO and Selective Licensing Compliance: Housing Act 2004 Landlord Mechan
 slug: "hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics"
 canonical: "https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/hmo-selective-licensing-compliance-housing-act-2004-landlord-licensing-mechanics"
 date: "2026-05-24"
+dateModified: "2026-08-21"
 author: "Property Tax Partners Editorial Team"
 category: "Property Types & Specialist Tax"
 metaTitle: "HMO and Selective Licensing UK: Landlord Compliance 2026"

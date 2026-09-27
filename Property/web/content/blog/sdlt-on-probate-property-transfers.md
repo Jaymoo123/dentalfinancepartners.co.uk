@@ -40,7 +40,7 @@ faqs:
     answer: "No. An assent with no chargeable consideration is not a notifiable transaction under section 77 FA 2003 and no SDLT return is required. The Land Registry transfer (form AS1 for assents) is filed at Land Registry but there is no parallel SDLT1. Where a transaction has any chargeable consideration (legacy discharge, mortgage assumption, beneficiary buy-out) the SDLT return becomes due within 14 days of the effective date even if the relief or threshold means no tax is payable."
   - question: "How does CGT interact with the SDLT position on an inherited property?"
     answer: "CGT and SDLT are separate. The deceased's estate takes the property at market value on death (the death-uplift), so any pre-death gain is washed out for CGT purposes. The beneficiary's CGT base cost is that uplifted market value. SDLT on the assent is nil (no consideration). When the beneficiary later sells, they compute CGT on the gain since the death valuation; the buyer pays SDLT on the standard rates. The death-uplift is the structural reason inheritance is often a better moment to receive UK property than a lifetime gift, where neither CGT uplift nor SDLT advantage applies."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

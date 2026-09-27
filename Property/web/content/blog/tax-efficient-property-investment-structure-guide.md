@@ -3,6 +3,7 @@ title: "Most Tax-Efficient Property Investment Structure 2026/27 (UK Landlord De
 slug: "tax-efficient-property-investment-structure-guide"
 canonical: "https://www.propertytaxpartners.co.uk/blog/incorporation-and-company-structures/tax-efficient-property-investment-structure-guide"
 date: "2026-05-21"
+dateModified: "2026-07-26"
 author: "Property Tax Partners Editorial Team"
 category: "Incorporation & Company Structures"
 metaTitle: "Tax-Efficient Property Investment Structure 2026/27 (UK)"

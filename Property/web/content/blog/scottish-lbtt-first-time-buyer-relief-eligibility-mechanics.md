@@ -42,7 +42,7 @@ faqs:
     answer: "No. The first-time buyer status is a one-time event tied to the absence of any prior dwelling ownership anywhere in the world at any time. Once a buyer has owned a dwelling (in Scotland or anywhere else), they are no longer a first-time buyer for future Scottish LBTT purposes, even if they have since disposed of that property and own nothing currently. The status is not refreshed by a subsequent disposal. A second-time buyer in Scotland pays standard LBTT main rates with no FTB uplift, regardless of how long the gap between sale and re-purchase has been."
   - question: "Where is the underlying statute and guidance?"
     answer: "The primary statute is Schedule 4A of the Land and Buildings Transaction Tax (Scotland) Act 2013, available at legislation.gov.uk/asp/2013/11/schedule/4A. The schedule was inserted by the Land and Buildings Transaction Tax (First-Time Buyer Relief) (Scotland) Order 2018 (SSI 2018/220), at legislation.gov.uk/ssi/2018/220/contents/made. Revenue Scotland publishes detailed operational guidance at revenue.scot/taxes/land-buildings-transaction-tax/lbtt-legislation-guidance/lbtt3001-exemptions-reliefs/lbtt3010-tax-reliefs/lbtt3048-first-time-buyer-relief with worked examples covering joint-buyer eligibility, linked-transaction interactions, and the intention-to-occupy test."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

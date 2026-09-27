@@ -46,7 +46,7 @@ faqs:
     answer: "Mismatch between the declared split and the underlying beneficial interest. Spouses commonly file Form 17 declaring a 99/1 or 95/5 split in favour of the lower-rate spouse without first executing a deed of trust to that effect, on the mistaken view that the form itself moves ownership. It does not. HMRC's enquiry pattern (TSEM9851 and TSEM9852) is to ask for the evidence that the declared beneficial interest exists; where the only paper is the Form 17 itself, the declaration is invalid and the 50/50 default applies. The other recurrent rejection ground is the joint-tenancy bar: forms filed against properties still held as joint tenants are invalid regardless of the figures."
   - question: "Can I file Form 17 after the tax year ends?"
     answer: "Yes, but only within the statutory 60-day window from the date the second spouse signs. The form does not have to track the tax year; it can be signed and filed at any point in the calendar. What matters is the 60-day window from the signature date. A declaration signed on (for example) 10 April applies from 10 April; if filed by 9 June it is valid and the split applies to rental income arising from 10 April forward. A declaration signed in March that is not filed until June is out of time, regardless of whether the tax year has closed."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

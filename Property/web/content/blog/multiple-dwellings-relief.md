@@ -48,7 +48,7 @@ faqs:
     answer: "Materially higher than under the pre-abolition MDR averaging. As illustration, a £1.4 million four-dwelling portfolio (average £350,000 per dwelling) under pre-abolition MDR was computed on £350,000 per dwelling × 4 with the additional-dwellings surcharge stack, typically £42,000 to £70,000 of SDLT depending on band interaction. The same transaction post-abolition is computed on the full £1.4 million at residential bands plus the 5% additional-dwellings surcharge, typically £120,000 to £170,000 of SDLT (verify against gov.uk SDLT calculator at the date of transaction). The s.116(7) 6-or-more-dwellings route requires actually buying 6 or more dwellings; a 4-dwelling buyer cannot reach it."
   - question: "Are the Welsh and Scottish reliefs vulnerable to future abolition?"
     answer: "No abolition has been announced in either jurisdiction as at 26 May 2026. The Welsh Government's recent activity on LTT Schedule 13 has been refinement-focused (the February 2025 subsidiary-dwellings clarification and the February 2026 minimum-floor substitution to 3%), suggesting an ongoing operative regime rather than an abolition trajectory. The Scottish Government has not announced an LBTT MDR consultation mirroring the UK SDLT abolition; the Scottish Budget cycle and the Programme for Government do not include an LBTT MDR repeal. Both positions could change in any future Welsh or Scottish Budget; pages writing about either relief should reflect 'in force as at the date of writing, with no abolition proposal announced'."
-dateModified: "2026-05-26"
+dateModified: "2026-08-18"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

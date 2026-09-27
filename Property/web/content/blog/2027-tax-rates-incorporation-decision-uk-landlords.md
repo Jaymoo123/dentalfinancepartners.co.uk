@@ -14,7 +14,7 @@ summary: "From 6 April 2027 property income is charged at its own rates of 22%, 
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-06-01"
-dateModified: "2026-06-01"
+dateModified: "2026-06-23"
 schema: ""
 faqs:
   - question: "What are the new property tax rates from April 2027?"

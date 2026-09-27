@@ -38,7 +38,7 @@ faqs:
     answer: "No. Commonhold and leasehold reform is a devolved matter in Scotland. The Scottish system uses tenement and outright-ownership tenure, with no commonhold equivalent needed. The Commonhold White Paper of March 2025 covers England and Wales. Welsh Government has parallel intentions for Welsh leasehold reform; the precise Welsh legislative timetable is separate from the England Bill."
   - question: "How does the reform affect Building Safety Act leaseholder protections?"
     answer: "BSA 2022 ss.116 to 125 plus Sch 8 (in force 28 June 2022) operate INDEPENDENTLY of the leasehold-reform regime. LFRA 2024 amended Sch 8 (commencement via SI 2024/1018 effective 31 October 2024) without affecting the substantive leaseholder protections from cladding remediation. The forthcoming Bill is NOT expected to substantially affect BSA 2022 Sch 8; the building-safety regime is on a separate reform track."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

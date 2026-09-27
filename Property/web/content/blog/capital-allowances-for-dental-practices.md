@@ -3,6 +3,7 @@ title: "Capital Allowances for Dental Practices: What a Surgery Fit-Out Is Worth
 slug: capital-allowances-for-dental-practices
 canonical: https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/capital-allowances-for-dental-practices
 date: '2026-07-30'
+dateModified: "2026-08-17"
 author: "Property Tax Partners Editorial Team"
 category: Property Types & Specialist Tax
 metaTitle: "Capital Allowances for Dental Practices: 40%"

@@ -38,7 +38,7 @@ faqs:
     answer: "No. The additional-dwellings 5% surcharge under FA 2003 Sch 4ZA applies to companies acquiring residential property worth £40,000 or more in most cases. Some narrow corporate-exemption routes exist but the general position is that corporate acquisitions of residential BTL property pay the surcharge. ATED (Annual Tax on Enveloped Dwellings) is a separate annual charge applying to companies holding residential property worth £500,000+; that is a holding-side cost, not a substitute for the SDLT surcharge."
   - question: "How can I model the after-tax cash for my specific BTL?"
     answer: "The model needs: purchase price plus SDLT or LTT cost; LTV and mortgage interest rate; gross rental income; operating costs (insurance, repairs, agent, licensing); your marginal-rate band; hold period and capital appreciation assumption; the Section 24 calculation (rental income at marginal, 20% basic-rate credit on finance); and CGT on exit at 18% or 24%. Talk to us about a bespoke model on your specific portfolio."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

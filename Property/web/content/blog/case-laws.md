@@ -38,7 +38,7 @@ faqs:
     answer: "Higgins v HMRC [2019] EWCA Civ 1860 is the operative authority on PPR period-of-ownership for off-plan or pre-completion completion-date cases. Earlier HMRC practice had treated the period of ownership as starting from legal completion; Higgins held that the period of ownership equals the period of BENEFICIAL ownership, which can start later (on beneficial completion of a property that did not exist at exchange). For an off-plan flat purchased pre-construction, the PPR clock starts when beneficial ownership of the actual flat begins."
   - question: "Will more cases be added to the table?"
     answer: "Yes. The page is monitored for new case-law watchpoint additions: post-2025 BlueCrest follow-on FTT/UT decisions; post-2025 SDLT mixed-use trilogy follow-on cases at UT/CA; post-2025 IHT BPR decisions affecting the Pawson line; post-2025 Higgins-line PPR completion-date cases. We add new cases at write time where they meet the table's selection rule."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

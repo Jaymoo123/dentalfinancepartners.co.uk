@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Finance for Auction Purchases: Beating the 28-Day Completion Clock"
 summary: "A traditional auction contract exchanges on the fall of the hammer and completes in about 28 days, a deadline a term mortgage cannot hit. This guide explains why investors and developers use a bridging loan to complete an auction purchase on time, how the legal pack, deposit and forfeiture risk shape the deal, what the finance costs as a range, and how the interest is treated for tax. Education only, no finance is arranged here."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

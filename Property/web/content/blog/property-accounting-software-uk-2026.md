@@ -3,7 +3,7 @@ title: "Property Accounting Software UK 2026/27: How to Evaluate It Against Your
 slug: "property-accounting-software-uk-2026"
 canonical: "https://www.propertytaxpartners.co.uk/blog/making-tax-digital-mtd/property-accounting-software-uk-2026"
 date: "2026-05-18"
-dateModified: "2026-05-30"
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

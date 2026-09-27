@@ -41,7 +41,7 @@ faqs:
   answer: "Where you have qualifying expenditure, the annual investment allowance can be claimed even if it creates or increases a loss. For companies, a resulting loss can be carried forward against future profits or, in some cases, carried back. For individuals and partnerships, property-business losses generally carry forward against future profits of the same property business. The point that catches landlords out is usually not the loss rules but whether there was any qualifying expenditure at all, given the s.35 dwelling-house bar."
 - question: "Why does HMRC let me deduct a new kitchen but not let me claim the annual investment allowance on it?"
   answer: "These are two different reliefs. The annual investment allowance is a capital allowance, and s.35 bars it on plant in a let dwelling. Replacing an existing kitchen on a like-for-like basis can instead be a revenue repair deductible against rental profits, and replacing standalone domestic items such as white goods can qualify for Replacement of Domestic Items Relief. So you may well get tax relief for the spend, just not through the annual investment allowance, and getting the route right matters because the rules and records differ."
-dateModified: '2026-05-30'
+dateModified: "2026-07-26"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - legislation.gov.uk

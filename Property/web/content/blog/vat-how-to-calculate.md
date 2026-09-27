@@ -49,7 +49,7 @@ faqs:
   answer: "The arithmetic is identical whatever the trade. Add VAT by multiplying the net price by 1.2 at the standard rate; back it out by dividing the gross by 1.2. What changes between a plumber, a caterer, a baker and a shop is the rate that applies to each supply (some food is zero-rated, hot takeaway food is standard-rated, and certain construction work is reduced-rated), and whether the business has crossed the £90,000 registration threshold."
 - question: "Do I have to keep VAT records digitally?"
   answer: "Yes. Making Tax Digital for VAT applies to all VAT-registered businesses. You must keep digital records and file returns using compatible software. Records, including VAT invoices issued and received, must be kept for at least six years."
-dateModified: '2026-06-02'
+dateModified: "2026-06-23"
 sourcesVerifiedAt: '2026-06-02'
 sourceDomains:
 - gov.uk

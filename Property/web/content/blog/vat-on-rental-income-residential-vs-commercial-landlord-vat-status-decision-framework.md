@@ -40,7 +40,7 @@ faqs:
     answer: "The agent-vs-principal distinction can change who is making the VAT supply, but it does not usually change the underlying VAT treatment of the rental stream. Where the agent is a true agent (acting for and on your behalf, with you remaining the principal of the supply to the tenant), you make the VAT supply (exempt, standard-rated, or other per the stream) and the agent makes a separate standard-rated supply of agency services to you (the agency commission). Where the agent operates as a principal (taking a lease itself from you and onward-supplying the tenant), the agent becomes the supplier to the tenant and the analysis is more complex. The Sonder Europe Ltd v HMRC [2025] UKUT 14 (TCC) decision narrowed TOMS for the leas-and-sub-let configuration, pulling operators in that position into the standard regime."
   - question: "Where can I read more on each of the specific mechanics?"
     answer: "Each mechanic has its own detailed guide: VAT option to tax for commercial property (mechanic, cooling-off, revocation); VAT capital goods scheme (10-year adjustment); VAT partial exemption (standard method, de-minimis); VAT mixed-use property purchase (apportionment); VAT dilapidations payments (supply or damages); VAT property conversion (three reliefs); VAT developer pre-registration input tax (reg 111); VAT long-stay hotel/aparthotel 28-day rule; VAT on cladding remediation (BSA 2022 waterfall); and landlord VAT registration (when required). You will find each one linked further down."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

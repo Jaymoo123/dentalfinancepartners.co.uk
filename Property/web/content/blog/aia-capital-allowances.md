@@ -3,6 +3,7 @@ title: 'How to Claim AIA Capital Allowances: A Step-by-Step Guide'
 slug: aia-capital-allowances
 canonical: https://www.propertytaxpartners.co.uk/blog/property-types-and-specialist-tax/aia-capital-allowances
 date: '2026-05-20'
+dateModified: "2026-06-23"
 author: "Property Tax Partners Editorial Team"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"

@@ -44,7 +44,7 @@ faqs:
     answer: "Yes, where the threshold catches them. Each friend tests their share of gross rent (equal shares under the joint-tenancy presumption absent a declaration of trust) against the threshold, files MTD if in scope, files annual self-assessment if not. A £45,000 gross-rent property held in equal thirds tests £15,000 per friend, all below the £20,000 line under current thresholds, none in MTD. The same property at £75,000 gross tests £25,000 per friend, all in MTD from the April 2028 mandate (the £20,000 drop). The mechanic does not change for non-spousal joint ownership, the threshold-test arithmetic and operational discipline are identical, applied per-owner."
   - question: "If one spouse is in MTD and the other below threshold, can the in-MTD spouse claim all the expenses to make the maths simpler?"
     answer: "No. Each spouse claims their own share of expenses, reflecting beneficial ownership. The in-MTD spouse claims their share on the quarterly updates and final declaration; the below-threshold spouse claims their share on SA105 at annual self-assessment. Concentrating all expenses on one spouse to simplify the bookkeeping is incorrect and would distort each spouse's profit position. The administrative inconvenience of running both regimes in parallel for the same property is real, but the answer is shared bookkeeping discipline (or shared accountant), not non-compliant expense allocation."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

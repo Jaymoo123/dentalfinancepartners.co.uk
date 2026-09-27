@@ -12,7 +12,7 @@ image: ""
 h1: "Bridging Finance for HMO Conversions: Planning, Licensing and the HMO Mortgage Exit"
 summary: "Bridging finance for an HMO conversion is not really a finance question first, it is a planning and licensing question. Whether you can convert a house to a house in multiple occupation, and how many rooms it can hold, is decided by Article 4 directions, permitted development, the sui generis threshold and the local licensing regime long before a lender looks at the numbers. This guide explains the planning and licensing gates that shape the deal, how the bridge funds the purchase and the staged conversion works, why the exit is a specialist HMO mortgage valued on rental income, and how the interest and the conversion costs are taxed. Figures are ranges as at July 2026; verify current pricing with a lender or broker."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

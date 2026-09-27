@@ -46,7 +46,7 @@ faqs:
     answer: "First, CT registration with HMRC, a UTR, and an annual CT600 cycle. Second, NRL scheme registration (NRL1 if the landlord is seeking gross receipts, plus the tenant or letting agent withholding mechanic under NRL2, NRL3, or NRL6). Third, an RoE annual update statement with Companies House for overseas-incorporated landlords under ECTEA 2022. Plus, separately, an ATED annual return and payment if the landlord holds dwellings worth more than £500,000, and a 60-day NRCGT return on any disposal of UK land."
   - question: "Can a non-resident corporate landlord still benefit from NRL1 (gross receipts approval)?"
     answer: "Yes. NRL1 approval allows the landlord to receive rent gross (no 20 per cent withholding at agent or tenant level) subject to compliance conditions. Operationally helpful for cash-flow management. The landlord still owes CT on the gross-received profits; NRL1 does not eliminate the CT charge, it just removes the upfront withholding. Application is via HMRC's NRL scheme online forms; compliance history and the UK tax-filing track record are assessed."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

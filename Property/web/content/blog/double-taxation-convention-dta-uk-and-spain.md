@@ -44,7 +44,7 @@ faqs:
     answer: "Yes if you sold any non-UK assets during your non-residence AND you were UK-resident in 4 or more of the 7 tax years before your 2026 departure. The 4-year stint is within the 5-year-or-less window; gains realised during non-residence are deemed to arise in your 2030/31 return year and are chargeable to UK CGT then. The Spanish CGT you paid in the year of disposal is creditable under Article 23 of the Convention, but only up to the UK CGT amount; excess Spanish CGT is not refundable from the UK side. To escape s.10A entirely, the period of non-UK residence must be MORE than 5 complete tax years."
   - question: "How does the Spanish impuesto sobre sucesiones y donaciones interact with UK IHT on my UK property?"
     answer: "Spain operates a heavily devolved inheritance and gift tax. Madrid currently applies a 99% bonification; other autonomous communities apply higher effective rates. Where the same UK property triggers both UK IHT (UK situs property is always in UK IHT under IHTA 1984) and Spanish inheritance tax on a Spanish-resident heir, Spanish domestic law provides a credit for foreign equivalent taxes against the Spanish charge. The 2013 Convention does not contain a specific IHT article (it covers Income Tax, CGT, and Spanish corporate tax); the cross-credit is therefore Spanish-domestic, not treaty-based. Regional rules and credit mechanics vary; verify with a Spanish asesor fiscal at consultation date."
-dateModified: "2026-05-28"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"

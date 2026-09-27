@@ -14,7 +14,7 @@ summary: "Moving a rental property into a limited company is a sale to a connect
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-31"
-dateModified: "2026-05-31"
+dateModified: "2026-08-03"
 schema: ""
 howToSteps:
   - name: "Decide whether incorporation is right for you"

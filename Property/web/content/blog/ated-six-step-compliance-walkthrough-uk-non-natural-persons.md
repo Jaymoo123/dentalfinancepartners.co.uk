@@ -46,7 +46,7 @@ faqs:
     answer: "The three returns are independent. Your SDLT return was filed at acquisition (within 14 days) and is closed. Your corporation tax return covers rental profits annually on the company's accounting reference date. The ATED return covers the dwelling-holding charge annually on a 1 April to 31 March cycle. For how the three regimes connect at acquisition, see the ATED 15-percent SDLT interaction; from that point, the first-year ATED return is your standalone deliverable."
   - question: "What is the single biggest mistake first-time ATED filers make?"
     answer: "Assuming that because rental-business relief reduces the charge to nil, no return is required. The relief must be claimed on a return; the obligation to file is not displaced by the availability of relief. Conchri Investments Limited v HMRC [2025] UKFTT 600 (TC) confirmed the point with a £15,700 penalty across ten chargeable periods on a property that owed no tax. The discipline is: scope first, file second, charge third. Reliefs are part of step 5, not a substitute for step 4."
-dateModified: "2026-05-23"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

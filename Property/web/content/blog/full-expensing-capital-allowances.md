@@ -39,7 +39,7 @@ faqs:
   answer: Not on its own. Incorporation is a major decision with stamp duty, capital gains tax and ongoing cost consequences, and the s.35 dwelling-house bar means a company still cannot claim full expensing on plant inside a let dwelling. Full expensing usually only changes the picture for substantial company-held commercial property or large common-parts plant. The capital-allowance saving should be one input into the incorporation decision, not the driver of it.
 - question: What rate are writing-down allowances after Finance Act 2026?
   answer: From the first chargeable period beginning on or after 1 April 2026 for corporation tax (6 April 2026 for income tax), the main pool writing-down allowance is 14%, reduced from 18% by Finance Act 2026 s.28. The special rate pool stays at 6%. Periods straddling the change use a hybrid, time-apportioned rate. Writing-down allowances apply to expenditure that does not, or cannot, attract a first-year allowance or the AIA.
-dateModified: '2026-05-30'
+dateModified: "2026-06-06"
 sourcesVerifiedAt: '2026-05-30'
 sourceDomains:
 - legislation.gov.uk

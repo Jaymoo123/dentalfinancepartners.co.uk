@@ -46,7 +46,7 @@ faqs:
     answer: "Four areas (drawn from TSEM9842, TSEM9851, and observed enquiry correspondence). The execution date: is it earlier than the Form 17 signature, or does it look backdated? The content: does the deed actually set out the beneficial shares numerically and link them to income and capital? The supporting paperwork: is there contemporaneous evidence (mortgage statements, conveyancing records, bank flows) consistent with the declared shares? The conduct of the parties: do the spouses actually report the income in the declared proportions, deposit rent into accounts consistent with the shares, and treat each other as separately beneficially entitled? A deed that fails on the conduct test (where the higher-rate spouse continues to control all rent flows) is the most vulnerable to challenge."
   - question: "Do unmarried co-owners need a declaration of trust?"
     answer: "Yes, normally more important than for spouses. Unmarried co-owners have no Form 17 route and no statutory 50/50 default; income tax follows actual beneficial ownership from the start. The deed of trust between unmarried co-owners is therefore the primary evidence of the income split and the primary protection on later disputes about ownership shares. The execution discipline is the same as for spouses; the absence of TCGA 1992 s.58 means a transfer of beneficial interest between unmarried co-owners is a market-value CGT disposal."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

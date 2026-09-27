@@ -40,7 +40,7 @@ faqs:
     answer: "The original buyer (B) files an SDLT return for the A-to-B transaction in the normal way and claims sub-sale relief on it, identifying the sub-purchaser and the date of the pre-completion transaction. The sub-purchaser (C) files a separate SDLT return for their acquisition of the property. Both returns are due within 14 days of their respective effective dates. Sub-sale relief is not automatic and is denied where the return does not identify the chain. HMRC's SDLTM Manual at SDLTM01060 to SDLTM01160 sets out the procedural detail."
   - question: "What is the most common reason a sub-sale claim fails in practice?"
     answer: "Substantial performance by the original buyer before the assignment, novation or sub-sale. If B has taken possession, paid most of the price, or (in lease cases) started paying rent under the A-to-B contract, B has triggered SDLT in their own right under section 44 FA 2003, and the subsequent transfer to C is then a separate land transaction in C's hands. s.45 cannot rescue the position. The drafting of the A-to-B contract and the timing of payments and possession matter materially; this is where most claims unravel under enquiry."
-dateModified: "2026-05-22"
+dateModified: "2026-07-28"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

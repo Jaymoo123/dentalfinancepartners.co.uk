@@ -12,7 +12,7 @@ image: ""
 h1: "First-Time Landlord Mortgages: What Lenders Want From a New Landlord"
 summary: "A working guide to getting a buy-to-let mortgage with no prior landlord experience. Why most lenders want you to already own your home, the circa £25k minimum-income floor, how top-slicing rescues a marginal case, the first-timer rate and LTV treatment, and where buying your very first property as a let tips into a regulated mortgage we do not introduce."
 schema: ''
-dateModified: "2026-07-30"
+dateModified: "2026-08-03"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk, FCA/PRA and HMRC guidance"
 faqs:

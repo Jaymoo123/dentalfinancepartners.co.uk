@@ -46,7 +46,7 @@ faqs:
     answer: "Yes. The Scottish ADS (additional dwelling supplement) applies on residential acquisitions in Scotland under LBTT(S)A 2013 Sch 2A and has its own joint-buyer + spousal aggregation rules at the Scottish rate (currently 8% from 5 December 2024). Our Scottish ADS page sets out the depth. As with Wales, the Scottish and English regimes can both engage where a couple owns property in both jurisdictions."
   - question: "When does the 'living together' test for the spousal aggregation rule apply?"
     answer: "The aggregation rule under Sch 4ZA para 9 applies while the spouses or civil partners are living together. Separated couples (separated under a court order, by formal deed of separation, or in circumstances likely to be permanent) are outside the aggregation rule. The practical question is the date of the property transaction relative to the separation; HMRC will look at the facts at the date of the purchase for the surcharge test."
-dateModified: "2026-05-23"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-23"

@@ -42,7 +42,7 @@ faqs:
     answer: "Yes if you are an Australian tax resident for the full year and not exempt. The Medicare levy of 2% applies to taxable income (including foreign-source rental income brought into Australian taxable income). UK nationals on a Reciprocal Health Care Agreement-eligible visa are entitled to Medicare so the levy applies in full. Temporary residents not entitled to Medicare may apply for a Medicare Levy Exemption Certificate, removing the 2% from their Australian liability. Plan for the levy as part of the headline Australian tax computation."
   - question: "What if I sell the UK rental after I return to the UK from Australia?"
     answer: "If you return to the UK and become UK-resident before disposal, NRCGT no longer applies (the gain is in the normal UK CGT regime). Australian CGT is generally outside scope on disposal after Australian non-residence is established, subject to any CGT event I1 deferral position. Section 10A TCGA 1992 temporary non-residence recapture is a risk if the period of non-UK residence was 5 years or less, having previously been UK-resident in 4 or more of the 7 prior tax years. The 6-year-plus secondment is the clean break from both s.10A and the post-departure Australian CGT scope."
-dateModified: "2026-05-22"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

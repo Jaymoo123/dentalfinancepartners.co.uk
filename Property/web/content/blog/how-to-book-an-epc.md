@@ -38,7 +38,7 @@ faqs:
     answer: "Often, yes, even though your existing certificate may still have years to run. A new EPC registered after improvement works supersedes the old one under regulation 9(2), so a re-assessment is how you bank a better band. For a landlord that matters twice: the band feeds the minimum energy efficiency rules for letting, and a better band on the register strengthens the property's marketing position. Bring the invoices for the works to the re-assessment so the assessor can credit them properly."
   - question: "How do I book an EPC in Scotland or Northern Ireland?"
     answer: "Northern Ireland uses the same gov.uk register and booking services as England and Wales, although its underlying regulations are separate. Scotland runs an entirely different system: certificates are held on the Scottish EPC Register (scottishepcregister.org.uk) and you book through an assessor from a Scottish-approved organisation, with the certificate displayed in the property rather than just held on file. The regulations discussed on this page are the England and Wales rules and should not be read across to Scotland."
-dateModified: "2026-08-15"
+dateModified: "2026-08-21"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-08-21"

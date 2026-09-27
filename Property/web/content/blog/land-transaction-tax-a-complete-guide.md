@@ -42,7 +42,7 @@ faqs:
     answer: "LTTA 2017 Part 7 (s.66) introduces a Welsh-specific General Anti-avoidance Rule covering all devolved Welsh taxes (LTT and landfill disposals tax). The Welsh GAAR sits alongside the SDLT-specific anti-avoidance provisions in FA 2003 and the LBTT(S)A 2013 GAAR for Scotland; the three-jurisdiction GAAR landscape means the same artificial arrangement may face challenge in different forms depending on where the land is. Welsh Tax Tribunal caseload on GAAR is still building, but the rule is operationally live for all LTT transactions."
   - question: "What if I have overpaid LTT and want it back?"
     answer: "Two routes. The LTT return can be amended within 12 months of the original return under LTTA 2017 (the equivalent of the SDLT s.74A and Scottish LBTT s.83 amendment mechanisms). Beyond the 12-month window, a statutory overpayment-relief claim under the Tax Collection and Management (Wales) Act 2016 must be made within 4 years of the relevant year, subject to TCMA-specific case-management. Common overpayment scenarios: incorrect application of higher rates where main rates should have applied; missed MDR claim on a portfolio purchase; missed derelict-property refund on an uninhabitable purchase. Each has its own time limit."
-dateModified: "2026-05-26"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-26"

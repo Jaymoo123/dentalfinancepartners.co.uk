@@ -44,7 +44,7 @@ faqs:
     answer: "No. Striking off a company that owes ATED penalties does not extinguish the penalty (HMRC can object to a strike-off application or apply for restoration after dissolution). For overseas companies, the Register of Overseas Entities filing obligations run in parallel, and a £2,500 fixed penalty plus £500/day under the ECCTA regime can stack with the ATED cascade on the same property."
   - question: "How do I prevent the cascade in the first place?"
     answer: "Diary the 30 April annual deadline, even for relief-only returns, against the property in the company's accounting record (not just against the accountant's workflow). For mid-year acquisitions, the 30-day clock starts at completion. For mid-year loss of relief, the 30-day clock starts at the disqualifying event. A single set of standing instructions to the conveyancer and the accountant covering ATED filings is the cleanest preventative."
-dateModified: "2026-05-22"
+dateModified: "2026-07-26"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-22"

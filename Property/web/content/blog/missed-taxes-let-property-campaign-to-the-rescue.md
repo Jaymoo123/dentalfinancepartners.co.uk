@@ -39,7 +39,7 @@ faqs:
     answer: "LPC accommodates UK-source residential rental income, including for non-UK-resident landlords with UK BTL property. The Worldwide Disclosure Facility (WDF) is for offshore-source rental and other offshore income or assets. A landlord with rental on a UK property goes through LPC regardless of their tax residence. A landlord with rental on offshore property (Cat 2 or Cat 3 territory) goes through WDF, with the FA 2017 Schedule 18 Failure-to-Correct overlay biting for pre-30-September-2018 years. Cross-stream landlords (UK plus offshore rental) use both routes in parallel, each for its respective stream."
   - question: "Where does this page sit relative to other LPC pages on this site?"
     answer: "This is the immediate-action page for the panic-moment realisation. Our LPC orientation page covers what LPC is and how it fits into HMRC's voluntary-disclosure architecture. Our benefits-of-LPC page covers the tactical numerical case for disclosure with the Schedule 41 floor table. Our penalty-calculator page walks the Schedule 41 mitigation matrix step by step. Our why-voluntary-disclosure-makes-sense page covers the strategic rationale at five-strand depth. Our DDS page covers the umbrella under which LPC sits. Read this page first if you have just realised; then move to the calculator, the benefits page, or the strategic-rationale page once you have caught your breath."
-dateModified: "2026-05-28"
+dateModified: "2026-06-23"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Reviewed against legislation.gov.uk and HMRC guidance"
 reviewedAt: "2026-05-28"
