@@ -3,10 +3,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { careHubs, getHub } from "@/data/care-hubs";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { JsonLd, buildBreadcrumb, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { niche } from "@/config/niche-loader";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 /* Schema parity fix (mirrors charities' for/[slug]): this route emitted only
    a hand-rolled FAQPage via lib/schema.buildFaqJsonLd, no Service, no
@@ -125,12 +127,17 @@ export default async function CareHubPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
     )}
-    <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-      <div className={siteContainerLg}>
-        <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to a care sector accounts specialist.</h2>
-        <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">Tell us about your {hub.title.toLowerCase()} situation and we will reply within 24 hours.</p>
-        <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
-      </div>
-    </section>
+    <div id="book" className="scroll-mt-24">
+      <LeadCTAPanel
+        contained
+        ground="slate"
+        eyebrow="Free call"
+        title={`Talk to a care sector specialist about ${hub.title}`}
+        description={`Tell us about your ${hub.title.toLowerCase()} situation and we will reply within 24 hours.`}
+        proofPoints={[]}
+        formTitle="Get in touch"
+        form={<LeadForm submitLabel="Send enquiry" />}
+      />
+    </div>
   </>);
 }
