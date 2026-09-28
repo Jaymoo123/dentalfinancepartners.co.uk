@@ -11,8 +11,8 @@ import { LeadForm } from "@/components/forms/LeadForm";
  */
 
 export const metadata: Metadata = {
-  title: "Book a call",
-  description: "Pick a time for your dental practice finance call, or send us the details now.",
+  title: "Book your free review",
+  description: "Pick a time for your free dental practice finance review call.",
   robots: { index: false, follow: false },
 };
 
@@ -29,10 +29,11 @@ export default async function BookPage({
       <div className={`${siteContainerLg} ${sectionY}`}>
         <div className="mx-auto max-w-2xl">
           <h1 className="text-center font-serif text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
-            Book a call
+            Book your free review call
           </h1>
           <p className="mt-4 text-center text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Pick a day and a time window that suits you. An accountant will call you then.
+            Pick a day and a time window that suits you. A dental accountant from our specialist partner
+            network will call you then, no obligation.
           </p>
           <div className="mt-10">
             {token ? (
@@ -42,8 +43,8 @@ export default async function BookPage({
             ) : (
               <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8">
                 <p className="text-base leading-relaxed text-[var(--muted)]">
-                  This page normally opens from the personal link in your email or text message. Send
-                  us your details below instead and we will arrange your call.
+                  This page needs the personal link from your email or text message. If you cannot
+                  find it, send us your details below and we will arrange your review.
                 </p>
                 <div className="mt-6">
                   <LeadForm redirectOnSuccess submitLabel="Send enquiry" />

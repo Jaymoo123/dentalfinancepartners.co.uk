@@ -48,7 +48,7 @@ const services = [
     eyebrow: "Tax",
     title: "Tax planning for dentists",
     description:
-      "Proactive planning across the tax year, not just at year end. One of our accountants models salary and dividend extraction, NHS Pension interaction, employer pension contributions, and timing decisions for principals, partners and associates working through limited companies.",
+      "Proactive planning across the tax year, not just at year end. A specialist from our partner network models salary and dividend extraction, NHS Pension interaction, employer pension contributions, and timing decisions for principals, partners and associates working through limited companies.",
     features: [
       "Salary and dividend optimisation 2025/26 rates",
       "Employer pension contributions for principals",
@@ -61,7 +61,7 @@ const services = [
     eyebrow: "Structure",
     title: "Incorporation and partnership structure",
     description:
-      "Sole trader, expense-share partnership, full LLP, limited company, holding-company structure. Each shape has different NHS Pension consequences, different goodwill treatment and different exit economics. One of our accountants models the trade-offs in your specific numbers.",
+      "Sole trader, expense-share partnership, full LLP, limited company, holding-company structure. Each shape has different NHS Pension consequences, different goodwill treatment and different exit economics. A specialist from our partner network models the trade-offs in your specific numbers.",
     features: [
       "Sole trader vs partnership vs Ltd modelling",
       "Section 162 incorporation relief analysis",
@@ -170,7 +170,7 @@ const faqs = [
   {
     question: "Do you advise on NHS Pension scheme issues?",
     answer:
-      "One of our accountants models the financial impact of pension decisions: annual allowance charges, the tapered allowance interaction with high earnings, McCloud remedy choices for members with 1995 or 2008 section legacy benefits, the dental retainer vs full membership question. For specific pension advice on accessing benefits or making transfer decisions they work alongside an FCA-authorised IFA.",
+      "A specialist from our partner network models the financial impact of pension decisions: annual allowance charges, the tapered allowance interaction with high earnings, McCloud remedy choices for members with 1995 or 2008 section legacy benefits, the dental retainer vs full membership question. For specific pension advice on accessing benefits or making transfer decisions they work alongside an FCA-authorised IFA.",
   },
 ];
 
@@ -413,7 +413,7 @@ export default function ServicesPage() {
                 30 minutes, free, no obligation
               </h2>
               <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-                One of our accountants will review your practice structure, NHS contract position and current accountant set-up, then give you clear recommendations. If they are not the right fit, they will tell you and suggest who is.
+                A specialist from our partner network will review your practice structure, NHS contract position and current accountant set-up, then give you clear recommendations. If they are not the right fit, they will tell you and suggest who is.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-white/85">
                 <li className="flex items-start gap-3">

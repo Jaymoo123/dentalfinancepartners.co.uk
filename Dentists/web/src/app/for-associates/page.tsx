@@ -22,7 +22,7 @@ const data: AudienceStage = {
   concerns: [
     {
       title: "Am I really self-employed?",
-      body: "The BDA model contract on file does not automatically mean self-employed status. HMRC and the tribunals test the actual working arrangement against control, substitution, mutuality of obligation, financial risk and integration. One of our accountants reviews the reality, not just the paperwork.",
+      body: "The BDA model contract on file does not automatically mean self-employed status. HMRC and the tribunals test the actual working arrangement against control, substitution, mutuality of obligation, financial risk and integration. A specialist from our partner network reviews the reality, not just the paperwork.",
     },
     {
       title: "What expenses can I actually claim?",
@@ -34,15 +34,15 @@ const data: AudienceStage = {
     },
     {
       title: "What about the NHS Pension Scheme?",
-      body: "Still one of the most valuable schemes in the UK. But high-earning associates can hit the tapered annual allowance and trigger a charge. One of our accountants models pensionable pay against the threshold and flags where Scheme Pays may make sense.",
+      body: "Still one of the most valuable schemes in the UK. But high-earning associates can hit the tapered annual allowance and trigger a charge. A specialist from our partner network models pensionable pay against the threshold and flags where Scheme Pays may make sense.",
     },
     {
       title: "How do I handle multiple practice engagements?",
-      body: "Different practices may classify the same locum work differently for IR35. Travel between practices is deductible (not home-to-first-practice). Apportioning materials and motor by practice matters for an accurate return. One of our accountants maps it out per engagement.",
+      body: "Different practices may classify the same locum work differently for IR35. Travel between practices is deductible (not home-to-first-practice). Apportioning materials and motor by practice matters for an accurate return. A specialist from our partner network maps it out per engagement.",
     },
     {
       title: "I'm worried about HMRC challenges",
-      body: "HMRC scrutinises three things on dental associate returns: status, expenses, and undeclared private income. One of our accountants structures your records so each is defensible, and can act for you if HMRC opens an enquiry.",
+      body: "HMRC scrutinises three things on dental associate returns: status, expenses, and undeclared private income. A specialist from our partner network structures your records so each is defensible, and can act for you if HMRC opens an enquiry.",
     },
   ],
   services: [
@@ -52,7 +52,7 @@ const data: AudienceStage = {
     },
     {
       title: "Status review against the IR35 tests",
-      body: "One of our accountants looks at how the work actually runs, not what the contract says. Where status risk exists they tell you and structure to reduce it. If a practice issues an inside-IR35 SDS they walk you through the implications.",
+      body: "A specialist from our partner network looks at how the work actually runs, not what the contract says. Where status risk exists they tell you and structure to reduce it. If a practice issues an inside-IR35 SDS they walk you through the implications.",
     },
     {
       title: "Expense claim review for past three years",
@@ -70,7 +70,7 @@ const data: AudienceStage = {
   faqs: [
     {
       q: "I'm an associate earning around £75,000. Should I incorporate?",
-      a: "Usually not at that level. The administrative cost of running a limited company (formation, separate filings, corporation tax return, PSC payroll, dividend administration) typically outweighs the tax saving below roughly £80,000-£100,000 of sustained associate income. The IR35 reforms have removed much of the historical advantage where engagements are determined inside IR35. One of our dental accountants models your specific numbers before recommending the structure.",
+      a: "Usually not at that level. The administrative cost of running a limited company (formation, separate filings, corporation tax return, PSC payroll, dividend administration) typically outweighs the tax saving below roughly £80,000-£100,000 of sustained associate income. The IR35 reforms have removed much of the historical advantage where engagements are determined inside IR35. A specialist dental accountant from our partner network models your specific numbers before recommending the structure.",
     },
     {
       q: "Can I claim my GDC retention fee as an expense?",
@@ -82,7 +82,7 @@ const data: AudienceStage = {
     },
     {
       q: "If I'm on the NHS Pension Scheme, can I also have a private pension?",
-      a: "Yes. The annual allowance (£60,000 for 2025/26, tapered down to £10,000 at very high adjusted income) is the cap across all your pension arrangements combined, including the NHS Pension Scheme growth and any private pension contributions. One of our accountants models the total pension input value against your annual allowance and flags where Scheme Pays may apply.",
+      a: "Yes. The annual allowance (£60,000 for 2025/26, tapered down to £10,000 at very high adjusted income) is the cap across all your pension arrangements combined, including the NHS Pension Scheme growth and any private pension contributions. A specialist from our partner network models the total pension input value against your annual allowance and flags where Scheme Pays may apply.",
     },
     {
       q: "How does switching accountant work?",
@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your associate return done properly",
   ctaBody:
-    "Send us your schedule, your expenses and where you stand on the NHS Pension, and on a free first call we will tell you what you are leaving on the table and whether incorporation is worth it yet. If we take the work on, you get a fixed fee in writing before anything starts.",
+    "30-minute scoping call, free. A specialist from our partner network looks at your current set-up, flags the expenses you're missing, and tells you honestly whether incorporation is on the table yet.",
   relatedGuides: [
     {
       href: "/dental-guides/associate-tax-survival-guide",

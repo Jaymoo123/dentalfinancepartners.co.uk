@@ -245,7 +245,7 @@ export default async function ServiceSubPage({ params }: { params: Params }) {
           <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
-                Free first call, then a fixed fee in writing
+                Free scoping call
               </p>
               <h2 className="mt-3 text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">
                 {page.ctaHeading}

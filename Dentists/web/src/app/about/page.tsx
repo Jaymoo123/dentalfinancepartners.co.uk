@@ -69,7 +69,7 @@ export default function AboutPage() {
         <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-[var(--ink-soft)]">
           <li>Plain language guides and calculators you can act on.</li>
           <li>Monthly discipline where it matters, not just a rush every January.</li>
-          <li>One of our dental accountants, not a generalist who has never seen a UDA schedule.</li>
+          <li>A specialist dental accountant from our partner network, not a generalist who has never seen a UDA schedule.</li>
         </ul>
 
         <h2 className="mt-12 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Evidence-led content</h2>

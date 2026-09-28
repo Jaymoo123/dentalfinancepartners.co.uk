@@ -95,7 +95,7 @@ function specialistOffer(topicKey: TopicKey): IntentOffer {
     title: "Speak to a specialist dental accountant",
     blurb: `Get your specific ${label} position checked by a specialist.`,
     href: "/contact",
-    reason: "You have spent real time here. One of our accountants can confirm your position",
+    reason: "You have spent real time here. A specialist can confirm your position",
   };
 }
 

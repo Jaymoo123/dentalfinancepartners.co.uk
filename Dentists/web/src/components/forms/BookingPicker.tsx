@@ -157,7 +157,7 @@ export default function BookingPicker({ token }: { token: string }) {
           disabled={!date || !windowKey || status === "submitting"}
           className={`${btnPrimary} w-full sm:w-auto`}
         >
-          {status === "submitting" ? "Booking your callback…" : "Book my free first call"}
+          {status === "submitting" ? "Booking your callback…" : "Book my free review call"}
         </button>
         {status === "error" && (
           <p className="mt-3 text-sm font-semibold text-red-700">

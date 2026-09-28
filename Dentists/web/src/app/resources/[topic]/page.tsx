@@ -195,15 +195,15 @@ export default async function ResourceGuidePage({
               Ready to apply this to your practice?
             </p>
             <h2 id="enquiry-form-heading" className="mt-2 text-2xl font-bold text-[var(--navy)] sm:text-3xl">
-              Get your figures checked by a dental accountant
+              Get a free review of your situation
             </h2>
             <p className="mt-3 text-base text-[var(--ink-soft)] leading-relaxed">
-              The guide gives you the framework. One of our dental accountants can confirm the
-              numbers for your practice, check the reliefs that apply and advise on timing. The
-              first call is free, and if we take the work on you get a fixed fee in writing.
+              The guide gives you the framework. A specialist dental accountant can confirm the
+              numbers for your specific practice, check any reliefs that apply, and advise on
+              the best timing. The first call is free and with no obligation.
             </p>
             <div className="mt-8">
-              <LeadForm redirectOnSuccess={false} submitLabel="Book my free first call" />
+              <LeadForm redirectOnSuccess={false} submitLabel="Request my free review" />
             </div>
           </div>
         </div>

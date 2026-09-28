@@ -85,7 +85,7 @@ export default async function ThankYouPage({
             <CheckIcon />
             <h1 className="font-serif text-3xl font-semibold text-[var(--ink)] sm:text-5xl">Confirmed</h1>
             <p className="mt-6 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-              Thanks, that is confirmed. Our team will contact you directly.
+              Thanks, that is confirmed. A specialist firm from our partner network will contact you directly.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Link href="/" className={btnPrimary}>
@@ -157,7 +157,7 @@ export default async function ThankYouPage({
                 Ready to book a time that works for you?
               </p>
               <Link href="/contact" className={btnPrimary}>
-                Book your free first call
+                Book your free review
               </Link>
             </div>
           )}

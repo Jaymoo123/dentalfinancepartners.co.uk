@@ -102,7 +102,7 @@ export default async function CompletePage({
           <div className="rounded-2xl bg-[var(--navy)] p-6 text-center sm:p-8">
             <p className="text-lg font-semibold text-white">You are all set</p>
             <p className="mt-3 text-base leading-relaxed text-white/85">
-              We have everything we need. Our team may contact you
+              We have everything we need. A specialist firm from our partner network may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
@@ -131,7 +131,7 @@ export default async function CompletePage({
             Complete your details
           </h1>
           <p className="mt-4 text-center text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Add the last detail we need and our team will be in
+            Add the last detail we need and a specialist firm from our partner network will be in
             touch to arrange your free dental practice finance review, no obligation.
           </p>
           <div className="mt-10">{inner}</div>

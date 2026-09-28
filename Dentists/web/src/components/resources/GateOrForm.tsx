@@ -27,9 +27,9 @@ export function GateOrForm({
     <MiniCapture
       formId="resource_block"
       messagePrefix={`[Resource block: ${topic}]`}
-      heading={t?.ctaCopy || "Get your dental practice finances checked"}
-      blurb="Skip the spreadsheet. Tell us where your practice is and one of our dental accountants will come back on your position and the next sensible step. The first call is free."
-      submitLabel="Book my free first call"
+      heading={t?.ctaCopy || "Get a free review of your dental practice finances"}
+      blurb="Skip the spreadsheet. Tell us about your situation and a specialist dental accountant will review your position and the next sensible step, with no obligation."
+      submitLabel="Request my free review"
       className="my-10 rounded-2xl border-l-4 border-[var(--gold)] bg-[var(--surface-elevated)] p-6 sm:p-8"
       postSubmit="redirect"
     />

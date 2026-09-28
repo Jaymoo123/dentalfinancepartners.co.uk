@@ -204,7 +204,7 @@
         },
         "sticky": {
           "primary": "Ready to work with a specialist dental accountant?",
-          "secondary": "Free first call, then a fixed fee in writing",
+          "secondary": "Book your free consultation today",
           "button": "Get started",
           "href": "/contact"
         },
@@ -215,16 +215,16 @@
         },
         "home_cta": {
           "heading": "Ready to work with a dental accountant who understands your practice?",
-          "body": "Whether you're an associate looking to improve your tax position, or a practice owner who needs proper financial visibility, the first call is free and without obligation. If we take the work on, you get a fixed fee in writing before anything starts.",
+          "body": "Whether you're an associate looking to optimize your tax position, or a practice owner who needs proper financial visibility, the first conversation is straightforward and without obligation. Book your free consultation today.",
           "primary": {
-            "label": "Book your free first call",
+            "label": "Book your free consultation",
             "href": "/contact"
           }
         }
       }
     },
     "sticky_primary": "Ready to work with a specialist dental accountant?",
-    "sticky_secondary": "Free first call, then a fixed fee in writing",
+    "sticky_secondary": "Book your free consultation today",
     "sticky_button": "Get started"
   },
   "blog": {
