@@ -5,6 +5,13 @@ import { useEffect, useRef, useState } from "react";
 export type StatItem = {
   /** Final numeric value to count up to (e.g. 100, 24, 2.4). */
   target: number;
+  /**
+   * Literal text shown instead of the count-up when the figure is not a
+   * number a counter can reach (a date, a range, a threshold pair). When
+   * set, `target` is ignored. Without it a tile such as "28 February"
+   * rendered as "0".
+   */
+  value?: string;
   /** Decimal places to show while counting (e.g. 1 for 2.4). */
   decimals?: number;
   /** Rendered before the number (e.g. "£"). */
@@ -49,6 +56,9 @@ function StatValue({ stat, play }: { stat: StatItem; play: boolean }) {
     return () => cancelAnimationFrame(raf);
   }, [play, target]);
 
+  if (stat.value !== undefined) {
+    return <span>{stat.value}</span>;
+  }
   return (
     <span>
       {stat.prefix}
