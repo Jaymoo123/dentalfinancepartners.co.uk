@@ -169,6 +169,52 @@ function stripTags(html: string) {
   return html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 }
 
+import { buildService as _buildService, buildBreadcrumb as _buildBreadcrumb, type SchemaThing as _SchemaThing } from "@accounting-network/web-shared/schema";
+
+/**
+ * BreadcrumbList + Service graph for a segment/service/VAT-depth page
+ * (/for/[slug], /services/[slug], /vat/[slug]). Same shape Medical's
+ * buildAudiencePageSchema uses for /for-gps: Service.provider resolves to the
+ * canonical Organization node (Organization JSON-LD is emitted once from
+ * app/layout.tsx, per that file's own docblock). FAQPage stays a separate
+ * script tag at each call site (buildFaqJsonLd), unchanged.
+ */
+export function buildSegmentPageSchema(input: {
+  title: string;
+  metaDescription: string;
+  path: string; // e.g. "/for/amazon-sellers"
+  crumbParentLabel: string; // e.g. "All seller types"
+  crumbParentHref: string; // e.g. "/for"
+  serviceType: string;
+}): _SchemaThing[] {
+  const url = `${siteConfig.url}${input.path}`;
+  return [
+    _buildBreadcrumb(
+      [
+        { label: "Home", href: "/" },
+        { label: input.crumbParentLabel, href: input.crumbParentHref },
+        { label: input.title },
+      ],
+      { siteUrl: siteConfig.url },
+    ),
+    _buildService(
+      {
+        name: input.title,
+        description: input.metaDescription,
+        url,
+        serviceType: input.serviceType,
+        areaServed: "United Kingdom",
+      },
+      {
+        siteUrl: siteConfig.url,
+        siteName: siteConfig.name,
+        legalName: siteConfig.legalName,
+        publisherLogoUrl: siteConfig.publisherLogoUrl,
+      },
+    ),
+  ];
+}
+
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
   return JSON.stringify({
     "@context": "https://schema.org",

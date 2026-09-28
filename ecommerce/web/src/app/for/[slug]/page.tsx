@@ -6,7 +6,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteConfig } from "@/config/site";
 import { sellerHubs, getHub } from "@/data/for";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildSegmentPageSchema } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionY, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
@@ -55,7 +55,18 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
   const { slug } = await params;
   const hub = getHub(slug);
   if (!hub) notFound();
+  const segmentSchema = buildSegmentPageSchema({
+    title: hub.title,
+    metaDescription: hub.metaDescription,
+    path: `/for/${hub.slug}`,
+    crumbParentLabel: "All seller types",
+    crumbParentHref: "/for",
+    serviceType: "Ecommerce accountancy and tax",
+  });
   return (<>
+    {segmentSchema.map((node, i) => (
+      <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(node) }} />
+    ))}
     {/* ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
         Its header says it is deliberately not the content-page hero: fixed
         bg-slate-900, no CTA row, written for the noindex token-gated pages.
@@ -270,7 +281,7 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
     <LeadCTAPanel
       eyebrow=""
       title="Speak to an ecommerce tax specialist."
-      description={`Tell us about your ${hub.title.toLowerCase()} situation and we will reply within 24 hours.`}
+      description={hub.closer}
       proofPoints={[]}
       formTitle=""
       form={<LeadForm />}

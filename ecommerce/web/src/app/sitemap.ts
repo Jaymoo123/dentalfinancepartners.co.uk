@@ -8,56 +8,56 @@ import { vatPages } from "@/data/vat";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
-  const now = new Date().toISOString();
 
+  // ponytail: lastModified is omitted wherever there is no real edit date to
+  // report. It used to be `new Date()` (build time) on every static and
+  // structural-hub route, which told crawlers every one of them changed on
+  // every deploy; an inaccurate lastmod risks the whole sitemap's dates being
+  // ignored. Omitting is legal and honest (same fix Property's sitemap.ts
+  // carries). Blog post routes below keep their genuine content dates.
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/for`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/vat`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
-    { url: `${base}/calculators`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/research`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${base}/research/online-seller-index`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/research/online-seller-survival-index`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${base}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: base, changeFrequency: "weekly", priority: 1 },
+    { url: `${base}/services`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/for`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/vat`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/blog`, changeFrequency: "daily", priority: 0.8 },
+    { url: `${base}/calculators`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/research`, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/research/online-seller-index`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/research/online-seller-survival-index`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/about`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/privacy-policy`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/cookie-policy`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/terms`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const serviceRoutes: MetadataRoute.Sitemap = ecommerceServices.map((s) => ({
     url: `${base}/services/${s.slug}`,
-    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   const forRoutes: MetadataRoute.Sitemap = sellerHubs.map((h) => ({
     url: `${base}/for/${h.slug}`,
-    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.75,
   }));
 
   const vatRoutes: MetadataRoute.Sitemap = vatPages.map((v) => ({
     url: `${base}/vat/${v.slug}`,
-    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.75,
   }));
 
   const toolRoutes: MetadataRoute.Sitemap = allTools().map((tool) => ({
     url: `${base}/calculators/${tool.slug}`,
-    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   const categoryRoutes: MetadataRoute.Sitemap = getAllCategories().map((cat) => ({
     url: `${base}/blog/${cat.slug}`,
-    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.75,
   }));

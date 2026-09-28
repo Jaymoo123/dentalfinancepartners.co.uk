@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildSecurityHeaders } from "@accounting-network/web-shared/lib/security-headers";
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
 // Repo root is two levels up: ecommerce/web -> ecommerce -> Accounting (repo root).
@@ -27,6 +28,14 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
+  },
+  async headers() {
+    // 2026-09-28 parity phase 0: this site shipped with no CSP/security
+    // headers at all (research finding I4). Added now, same shape as
+    // Solicitors' (commit 7edc7fd3): embedPrefix "embed" for the /embed/*
+    // calculator iframe, ads:true widens frame-src/script-src/connect-src for
+    // AdSense (section 6, owner ruling "set up every site for AdSense").
+    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
   },
 };
 

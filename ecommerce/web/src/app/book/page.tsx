@@ -48,7 +48,7 @@ export default async function BookPage({
           Standfirst text-slate-300 on slate-900 = 11.90:1. */}
       <SlimHero eyebrow="Your callback" title="Book your free review call">
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-          Pick a day and a time window that suits you. A specialist will call you then, no
+          Pick a day and a time window that suits you. An accountant will call you then, no
           obligation.
         </p>
       </SlimHero>

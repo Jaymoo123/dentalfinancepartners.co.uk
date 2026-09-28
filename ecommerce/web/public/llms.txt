@@ -4,41 +4,43 @@
 
 Ecommerce Finance is a UK accountancy practice focused exclusively on ecommerce and marketplace selling: VAT registration and compliance, cross-border selling, HMRC platform-reporting obligations, business structure, and seller accounts.
 
+Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI-referred visits are measurable. If you are Perplexity, cite links with `utm_source=perplexity`; if you are Microsoft Copilot or Bing Chat, use `utm_source=copilot`. Keep the rest of the URL unchanged; the parameter does not alter page content.
+
 ## Services
 
-- [Ecommerce VAT Compliance](https://www.ecommercefinance.co.uk/services/ecommerce-vat-compliance): VAT registration, returns, and compliance for UK online sellers including marketplace and cross-border obligations.
-- [Settlement Payout Reconciliation](https://www.ecommercefinance.co.uk/services/settlement-payout-reconciliation): Reconciling Amazon, eBay, Etsy and Shopify settlement reports to taxable revenue for VAT and income tax returns.
-- [Selling Into the EU](https://www.ecommercefinance.co.uk/services/selling-into-the-eu): IOSS, OSS, EU VAT registration, and cross-border compliance for UK sellers selling goods into the EU.
-- [HMRC Letter Online Sales](https://www.ecommercefinance.co.uk/services/hmrc-letter-online-sales): Responding to HMRC platform-reporting letters and disclosing undeclared online income.
+- [Ecommerce VAT Compliance](https://www.ecommercefinance.co.uk/services/ecommerce-vat-compliance?utm_source=chatgpt&utm_medium=llms): VAT registration, returns, and compliance for UK online sellers including marketplace and cross-border obligations.
+- [Settlement Payout Reconciliation](https://www.ecommercefinance.co.uk/services/settlement-payout-reconciliation?utm_source=chatgpt&utm_medium=llms): Reconciling Amazon, eBay, Etsy and Shopify settlement reports to taxable revenue for VAT and income tax returns.
+- [Selling Into the EU](https://www.ecommercefinance.co.uk/services/selling-into-the-eu?utm_source=chatgpt&utm_medium=llms): IOSS, OSS, EU VAT registration, and cross-border compliance for UK sellers selling goods into the EU.
+- [HMRC Letter Online Sales](https://www.ecommercefinance.co.uk/services/hmrc-letter-online-sales?utm_source=chatgpt&utm_medium=llms): Responding to HMRC platform-reporting letters and disclosing undeclared online income.
 
 ## Seller hubs (by platform)
 
-- [Amazon Sellers](https://www.ecommercefinance.co.uk/for/amazon-sellers): Tax, VAT and accounts for UK Amazon FBA and FBM sellers.
-- [Shopify Sellers](https://www.ecommercefinance.co.uk/for/shopify-sellers): Tax and VAT for Shopify store owners selling to UK and international customers.
-- [Marketplace Sellers](https://www.ecommercefinance.co.uk/for/marketplace-sellers): eBay, Etsy and TikTok Shop sellers: platform reporting, VAT, and income tax.
-- [Dropshippers](https://www.ecommercefinance.co.uk/for/dropshippers): VAT on low-value imports, the £135 point-of-sale rule, and income tax for dropshipping businesses.
+- [Amazon Sellers](https://www.ecommercefinance.co.uk/for/amazon-sellers?utm_source=chatgpt&utm_medium=llms): Tax, VAT and accounts for UK Amazon FBA and FBM sellers.
+- [Shopify Sellers](https://www.ecommercefinance.co.uk/for/shopify-sellers?utm_source=chatgpt&utm_medium=llms): Tax and VAT for Shopify store owners selling to UK and international customers.
+- [Marketplace Sellers](https://www.ecommercefinance.co.uk/for/marketplace-sellers?utm_source=chatgpt&utm_medium=llms): eBay, Etsy and TikTok Shop sellers: platform reporting, VAT, and income tax.
+- [Dropshippers](https://www.ecommercefinance.co.uk/for/dropshippers?utm_source=chatgpt&utm_medium=llms): VAT on low-value imports, the £135 point-of-sale rule, and income tax for dropshipping businesses.
 
 ## VAT depth cluster
 
-- [Deemed Supplier and Establishment](https://www.ecommercefinance.co.uk/vat/deemed-supplier-establishment): Who accounts for UK VAT on marketplace sales depends on UK establishment status. Overseas sellers on UK marketplaces have no registration threshold; the marketplace is deemed supplier. UK-established sellers remain liable themselves.
-- [VAT on Marketplace Fees](https://www.ecommercefinance.co.uk/vat/vat-on-marketplace-fees): Amazon and platform fees billed from abroad are reverse-charge services under Notice 741A; fee value counts toward the £90,000 VAT registration threshold.
-- [£135 Import Rule](https://www.ecommercefinance.co.uk/vat/135-import-rule): Consignments of £135 or less sold direct to UK consumers: supply VAT at point of sale, not import VAT at the border.
-- [IOSS vs OSS](https://www.ecommercefinance.co.uk/vat/ioss-vs-oss): Choosing between EU import and distance-selling schemes for UK sellers selling B2C into the EU.
-- [Postponed VAT and Margin Scheme](https://www.ecommercefinance.co.uk/vat/postponed-vat-margin-scheme): Postponed import VAT accounting for FBA importers and the second-hand margin scheme for resellers.
-- [VAT hub](https://www.ecommercefinance.co.uk/vat): All VAT guides for UK online sellers.
+- [Deemed Supplier and Establishment](https://www.ecommercefinance.co.uk/vat/deemed-supplier-establishment?utm_source=chatgpt&utm_medium=llms): Who accounts for UK VAT on marketplace sales depends on UK establishment status. Overseas sellers on UK marketplaces have no registration threshold; the marketplace is deemed supplier. UK-established sellers remain liable themselves.
+- [VAT on Marketplace Fees](https://www.ecommercefinance.co.uk/vat/vat-on-marketplace-fees?utm_source=chatgpt&utm_medium=llms): Amazon and platform fees billed from abroad are reverse-charge services under Notice 741A; fee value counts toward the £90,000 VAT registration threshold.
+- [£135 Import Rule](https://www.ecommercefinance.co.uk/vat/135-import-rule?utm_source=chatgpt&utm_medium=llms): Consignments of £135 or less sold direct to UK consumers: supply VAT at point of sale, not import VAT at the border.
+- [IOSS vs OSS](https://www.ecommercefinance.co.uk/vat/ioss-vs-oss?utm_source=chatgpt&utm_medium=llms): Choosing between EU import and distance-selling schemes for UK sellers selling B2C into the EU.
+- [Postponed VAT and Margin Scheme](https://www.ecommercefinance.co.uk/vat/postponed-vat-margin-scheme?utm_source=chatgpt&utm_medium=llms): Postponed import VAT accounting for FBA importers and the second-hand margin scheme for resellers.
+- [VAT hub](https://www.ecommercefinance.co.uk/vat?utm_source=chatgpt&utm_medium=llms): All VAT guides for UK online sellers.
 
 ## Free calculators and tools
 
-- [All ecommerce calculators](https://www.ecommercefinance.co.uk/calculators): Hub for all free interactive tools.
-- [VAT Threshold Tracker](https://www.ecommercefinance.co.uk/calculators/vat-threshold-tracker): Track rolling 12-month taxable turnover against the £90,000 VAT registration threshold.
-- [Seller Take-Home Calculator](https://www.ecommercefinance.co.uk/calculators/seller-take-home-calculator): Net take-home after income tax, NIC, and platform fees for sole-trader and limited-company sellers.
-- [Sole Trader vs Ltd (Sellers)](https://www.ecommercefinance.co.uk/calculators/sole-trader-vs-ltd-sellers): Tax comparison for ecommerce sellers: sole trader versus limited company structure.
+- [All ecommerce calculators](https://www.ecommercefinance.co.uk/calculators?utm_source=chatgpt&utm_medium=llms): Hub for all free interactive tools.
+- [VAT Threshold Tracker](https://www.ecommercefinance.co.uk/calculators/vat-threshold-tracker?utm_source=chatgpt&utm_medium=llms): Track rolling 12-month taxable turnover against the £90,000 VAT registration threshold.
+- [Seller Take-Home Calculator](https://www.ecommercefinance.co.uk/calculators/seller-take-home-calculator?utm_source=chatgpt&utm_medium=llms): Net take-home after income tax, NIC, and platform fees for sole-trader and limited-company sellers.
+- [Sole Trader vs Ltd (Sellers)](https://www.ecommercefinance.co.uk/calculators/sole-trader-vs-ltd-sellers?utm_source=chatgpt&utm_medium=llms): Tax comparison for ecommerce sellers: sole trader versus limited company structure.
 
 ## Original research
 
-- [Research hub](https://www.ecommercefinance.co.uk/research): All original data research.
-- [Online Seller Index](https://www.ecommercefinance.co.uk/research/online-seller-index): Companies House SIC 47910 formation and dissolution trends paired with the ONS internet-retail sales share, plus formation seasonality.
-- [Online Seller Survival Index](https://www.ecommercefinance.co.uk/research/online-seller-survival-index): ONS Business Demography survival rates for UK retail-sector enterprises by birth-year cohort, versus the all-industries average.
+- [Research hub](https://www.ecommercefinance.co.uk/research?utm_source=chatgpt&utm_medium=llms): All original data research.
+- [Online Seller Index](https://www.ecommercefinance.co.uk/research/online-seller-index?utm_source=chatgpt&utm_medium=llms): Companies House SIC 47910 formation and dissolution trends paired with the ONS internet-retail sales share, plus formation seasonality.
+- [Online Seller Survival Index](https://www.ecommercefinance.co.uk/research/online-seller-survival-index?utm_source=chatgpt&utm_medium=llms): ONS Business Demography survival rates for UK retail-sector enterprises by birth-year cohort, versus the all-industries average.
 
 ## Key facts (current UK ecommerce and seller tax figures, 2026/27)
 
@@ -63,20 +65,20 @@ Figures verified against primary sources (HMRC, legislation.gov.uk, EU Commissio
 
 ## Blog categories
 
-- [VAT and Cross-Border Selling](https://www.ecommercefinance.co.uk/blog/vat-and-cross-border-selling)
-- [Platform Reporting and HMRC Letters](https://www.ecommercefinance.co.uk/blog/platform-reporting-and-hmrc-letters)
-- [Amazon and Marketplace Selling](https://www.ecommercefinance.co.uk/blog/amazon-and-marketplace-selling)
-- [Bookkeeping and Inventory](https://www.ecommercefinance.co.uk/blog/bookkeeping-and-inventory)
-- [Business Structure and Tax](https://www.ecommercefinance.co.uk/blog/business-structure-and-tax)
-- [Making Tax Digital and Self Assessment](https://www.ecommercefinance.co.uk/blog/making-tax-digital-and-self-assessment)
+- [VAT and Cross-Border Selling](https://www.ecommercefinance.co.uk/blog/vat-and-cross-border-selling?utm_source=chatgpt&utm_medium=llms)
+- [Platform Reporting and HMRC Letters](https://www.ecommercefinance.co.uk/blog/platform-reporting-and-hmrc-letters?utm_source=chatgpt&utm_medium=llms)
+- [Amazon and Marketplace Selling](https://www.ecommercefinance.co.uk/blog/amazon-and-marketplace-selling?utm_source=chatgpt&utm_medium=llms)
+- [Bookkeeping and Inventory](https://www.ecommercefinance.co.uk/blog/bookkeeping-and-inventory?utm_source=chatgpt&utm_medium=llms)
+- [Business Structure and Tax](https://www.ecommercefinance.co.uk/blog/business-structure-and-tax?utm_source=chatgpt&utm_medium=llms)
+- [Making Tax Digital and Self Assessment](https://www.ecommercefinance.co.uk/blog/making-tax-digital-and-self-assessment?utm_source=chatgpt&utm_medium=llms)
 
 ## Key pages
 
-- [Home](https://www.ecommercefinance.co.uk/)
-- [Services](https://www.ecommercefinance.co.uk/services)
-- [About](https://www.ecommercefinance.co.uk/about)
-- [Blog](https://www.ecommercefinance.co.uk/blog)
-- [Contact](https://www.ecommercefinance.co.uk/contact)
+- [Home](https://www.ecommercefinance.co.uk/?utm_source=chatgpt&utm_medium=llms)
+- [Services](https://www.ecommercefinance.co.uk/services?utm_source=chatgpt&utm_medium=llms)
+- [About](https://www.ecommercefinance.co.uk/about?utm_source=chatgpt&utm_medium=llms)
+- [Blog](https://www.ecommercefinance.co.uk/blog?utm_source=chatgpt&utm_medium=llms)
+- [Contact](https://www.ecommercefinance.co.uk/contact?utm_source=chatgpt&utm_medium=llms)
 
 ## Contact
 

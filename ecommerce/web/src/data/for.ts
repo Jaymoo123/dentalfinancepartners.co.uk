@@ -1,5 +1,9 @@
 export interface SellerHub {
   slug: string; title: string; headline: string; metaTitle: string; metaDescription: string;
+  /** Bespoke closing line for the foot LeadCTAPanel, one per hub (2026-09-28
+   *  parity phase 0): no slug pasted into English, no sentence shared across
+   *  hubs. Sonnet-written; flagged for the Opus read per the brief. */
+  closer: string;
   intro: string; stats: Array<{ value: string; label: string }>;
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
@@ -11,6 +15,7 @@ export const sellerHubs: SellerHub[] = [
     slug: "amazon-sellers",
     title: "Amazon Sellers",
     headline: "Accounts and tax for UK Amazon FBA and FBM sellers",
+    closer: "Tell us about your Amazon FBA or FBM account and we will reply within 24 hours.",
     metaTitle: "Amazon FBA Accountants UK | FBA and FBM Tax",
     metaDescription: "Specialist accountants for UK Amazon FBA and FBM sellers. Settlement reconciliation, reverse-charge fee VAT, pan-EU compliance and seller tax returns.",
     intro: `Amazon sellers carry accounting complexity that general accountants rarely encounter: settlement payouts mix gross sales, FBA fees, referral fees, advertising costs and reimbursements into a single net deposit that bears no direct relation to taxable revenue. <a href="/vat/vat-on-marketplace-fees">VAT on Amazon's fees</a> follows reverse-charge rules under <a href="https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a">Notice 741A</a>, and that fee value counts toward the <a href="https://www.gov.uk/vat-registration">£90,000 VAT registration threshold</a>. Pan-EU FBA stock creates multi-jurisdiction registration questions the UK return does not resolve. We work with FBA and FBM sellers on the full picture: settlement reconciliation, <a href="/services/ecommerce-vat-compliance">VAT compliance</a>, <a href="/services/selling-into-the-eu">pan-EU obligations</a> and annual accounts.`,
@@ -82,6 +87,7 @@ export const sellerHubs: SellerHub[] = [
     slug: "shopify-sellers",
     title: "Shopify Sellers",
     headline: "Accounts and tax for UK Shopify store owners",
+    closer: "Tell us about your Shopify store and we will reply within 24 hours.",
     metaTitle: "Shopify Accountants UK | DTC Store Tax and VAT",
     metaDescription: "Specialist accountants for UK Shopify store owners. Payout reconciliation, multi-gateway VAT, cross-border compliance and annual accounts for DTC businesses.",
     intro: `Running a Shopify store means receiving payments through Shopify Payments, PayPal, Stripe, Klarna and other gateways, each settling on a different schedule and netting fees differently. Bookkeeping that works from bank deposits rather than gross order values will misstate both revenue and <a href="https://www.gov.uk/vat-registration">VAT turnover</a>. On your own Shopify store you account for your own VAT; unlike sellers on third-party marketplaces, there is no deemed-supplier mechanism shifting that liability to the platform. We work with Shopify sellers on <a href="/services/settlement-payout-reconciliation">payout reconciliation</a>, <a href="/services/ecommerce-vat-compliance">VAT compliance</a> and accounts that reflect the actual trading position.`,
@@ -145,6 +151,7 @@ export const sellerHubs: SellerHub[] = [
     slug: "marketplace-sellers",
     title: "Marketplace Sellers",
     headline: "Tax and accounts for eBay, Etsy, Vinted and TikTok Shop sellers",
+    closer: "Tell us about your eBay, Etsy or TikTok Shop account and we will reply within 24 hours.",
     metaTitle: "eBay Etsy Vinted TikTok Shop Accountants UK",
     metaDescription: "Specialist accountants for UK marketplace sellers on eBay, Etsy, Vinted and TikTok Shop. Platform reporting, HMRC letters, trading status and VAT.",
     intro: `Selling on eBay, Etsy, Vinted or TikTok Shop brings tax questions that occasional personal selling does not. <a href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms">Platform reporting rules introduced from 1 January 2024</a> mean HMRC now receives data directly from digital marketplaces about seller volumes and payouts. The platform-reporting exclusion (fewer than 30 sales and approximately £1,700 in the period) determines whether the platform reports you; it does not determine whether you owe tax. Sellers who have received an HMRC letter about their online sales, or who are approaching thresholds where obligations change, need a clear picture of trading status, VAT position and what they owe. We cover eBay, Etsy, Vinted and TikTok Shop sellers, including the <a href="/services/hmrc-letter-online-sales">HMRC letter response</a> path and the decluttering-vs-trading question.`,
@@ -212,6 +219,7 @@ export const sellerHubs: SellerHub[] = [
     slug: "dropshippers",
     title: "Dropshippers",
     headline: "Tax and VAT for UK dropshipping businesses",
+    closer: "Tell us about your dropshipping business and we will reply within 24 hours.",
     metaTitle: "Accountants for Dropshippers UK | £135 Rule and VAT",
     metaDescription: "Specialist accountants for UK dropshippers. The £135 import rule, VAT at point of sale, ad-spend reverse charge and accounts for dropshipping businesses.",
     intro: `Dropshipping to UK customers from overseas suppliers sits under specific VAT rules that catch many sellers who set up before those rules applied. The <a href="https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk">£135 consignment rule</a> means that for low-value goods shipped direct from an overseas supplier to a UK consumer, VAT is due at the point of sale (not at the border as import VAT), and where you sell through your own website rather than a marketplace, you account for that VAT yourself. Your Facebook, Google and TikTok advertising fees billed from abroad are also <a href="https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a">reverse-charge services</a> whose value counts toward the <a href="https://www.gov.uk/vat-registration">£90,000 VAT registration threshold</a>. We cover <a href="/services/ecommerce-vat-compliance">VAT compliance</a>, import obligations and annual accounts for dropshipping businesses.`,

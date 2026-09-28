@@ -6,7 +6,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteConfig } from "@/config/site";
 import { ecommerceServices, getService } from "@/data/services";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildSegmentPageSchema } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionY, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
@@ -50,7 +50,18 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const service = getService(slug);
   if (!service) notFound();
+  const segmentSchema = buildSegmentPageSchema({
+    title: service.title,
+    metaDescription: service.metaDescription,
+    path: `/services/${service.slug}`,
+    crumbParentLabel: "Services",
+    crumbParentHref: "/services",
+    serviceType: "Ecommerce accountancy and tax",
+  });
   return (<>
+    {segmentSchema.map((node, i) => (
+      <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(node) }} />
+    ))}
     {/* ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
         Its header says it is the token-gated noindex hero and is "deliberately
         not the content-page hero"; its slate-900 ground would also replace the
@@ -269,7 +280,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     <LeadCTAPanel
       eyebrow=""
       title="Speak to an ecommerce tax specialist."
-      description="Tell us about your situation and we will reply within 24 hours."
+      description={service.closer}
       proofPoints={[]}
       formTitle=""
       form={<LeadForm />}

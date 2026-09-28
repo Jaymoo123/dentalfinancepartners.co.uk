@@ -5,6 +5,73 @@ Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held). Generat
 
 brand_locked: true
 
+## 2026-09-28 phase 0 parity
+
+Correction first: the "S7 Vercel deploy — DEPLOY HELD" line below (and the External-steps list)
+is stale in the direction of understating reality. The site **has been live** at
+`www.ecommercefinance.co.uk` and serving 200s for days, on a pre-design-port build from roughly
+2026-09-23 (`docs/ecommerce/PARITY_RESEARCH_2026-09-28.md`, wave 1). S7/S8 should read "live on
+an old build, port undeployed" not "held". The next deploy ships everything below plus the whole
+`port-ecommerce-complete` design port (phases 0-6), none of which is live today.
+
+Changed at HEAD this pass (nothing deployed, no build run):
+- `niche.config.json`: added the `entity` key (Property's shape, sector words adapted). Feeds
+  schema and llms.txt once a builder consumes it; nothing renders `EntityBlock` yet (no site does).
+- Positioning sweep (rule 8, "the brand is the firm"): `complete/page.tsx:111,135` and
+  `thank-you/page.tsx:137` no longer say "a specialist firm from our partner network"; now "one of
+  our accountants" / "an accountant". Same fix across `book/page.tsx`, `BookingPicker.tsx`,
+  `DetailsForm.tsx`, `InlineMiniLeadForm.tsx`, `lead-nurture.ts` (SMS/email copy) and
+  `aux-cron.ts` (booking confirmations): every "a specialist will..." instance became firm voice.
+  `leadConsentText` and the Aswatax sentence are untouched (both exempt).
+- `/about` had zero forms and a "this page is being prepared" placeholder line; added the
+  `LeadCTAPanel` + `LeadForm` foot pattern the three slug templates already carry, and rewrote
+  the placeholder sentence.
+- Segment/service/VAT closers (`/for/[slug]`, `/services/[slug]`, `/vat/[slug]`): `/for/[slug]`
+  was pasting the lowercased slug into English ("your amazon sellers situation"); `/services` and
+  `/vat` repeated one identical sentence across every page. All 13 pages now carry a bespoke
+  `closer` field in `src/data/{for,services,vat}.ts`. Sonnet-written, plain; flagged for the Opus
+  read.
+- Added `Service` + `BreadcrumbList` JSON-LD (`buildSegmentPageSchema` in `src/lib/schema.ts`,
+  wired via the shared `buildService`/`buildBreadcrumb`) to all 13 `/for/*`, `/services/*` and
+  `/vat/*` pages, which previously carried FAQPage only.
+- `sitemap.ts`: dropped the build-time `new Date()` `lastModified` on every static/service/for/
+  vat/tool/category route (Property's `ponytail: omit when there is no real edit date` pattern).
+  Blog post routes already used real dates and are unchanged.
+- `public/llms.txt`: 32 links now carry `utm_source=chatgpt&utm_medium=llms`; added the
+  attribution note Property's file carries.
+- AdSense (section 6, owner ruling "set up every site for AdSense"): `layout.tsx` metadata
+  `google-adsense-account` + `ConsentedScripts adsenseClientId`, `public/ads.txt` copied from
+  Solicitors. This site shipped with **no CSP/security headers at all**
+  (`next.config.ts` had no `headers()`); added `buildSecurityHeaders({ ga: true, supabase: true,
+  ads: true, embedPrefix: "embed" })`, Solicitors' exact shape (commit `7edc7fd3`).
+- `ecommerce/pipeline/submit_indexnow.py`: added (was missing entirely). The central
+  `optimisation_engine/indexing/config.py` already carries this site's host + key, and the key
+  file already sits in `web/public/9432a4ec3fe74d94b73d4d3cb7b5040f.txt`, so only the per-site
+  shim was missing.
+
+Confirmed already correct at HEAD (research flagged these; source read shows the port already
+fixed them, just not deployed): hub canonicals on `/for`, `/services`, `/vat`, `/about`,
+`/contact` all self-reference (not the homepage); primary CTA contrast (`btnPrimary` uses
+primary-600, 4.81:1, not the 3.04 amber); `/about` body text contrast (Tailwind default
+neutral-600, well past 4.5:1); `dangerouslySetInnerHTML`/`html` prop already used for every
+authored-HTML field across `/for`, `/services`, `/vat` (the 15-page raw-markup defect the wave-2
+reader found does not exist at HEAD; it was reading the pre-port live build).
+
+Not fixed, flagged for the owner or the shared/plumbing agents (not this site's lease):
+- Phone is still the placeholder `+44 20 0000 0000` in `niche.config.json`. Not invented.
+- `google_analytics_id` is empty; left alone per the brief (plumbing agent fills the `G-` id).
+- `agents/config/gsc_config.py` has no `ecommerce` entry (plumbing agent's file).
+- `public/brand/logo.png` (the `niche.config.json` `brand.logo_path`) does not exist; not created.
+- Chat widget and intent engine (`SpecialistWidget`, `IntentProvider`, `ReturningBar`,
+  `DeepScrollModal`) are absent from the source tree entirely, not just undeployed. Out of scope
+  for a parity-of-strings-and-schema pass; would be a real build, flagged for the owner.
+
+Verification: `npx tsc --noEmit -p ecommerce/web` clean (0 errors). `npx vitest run` from
+`ecommerce/web`: 7 files, 50 tests, all passed. `git diff --stat -- ecommerce/` touches only
+`ecommerce/`. Defect-string grep (section 1 list) returns zero prospect-facing hits (two remaining
+hits are code comments, exempt; `niche.config.json`'s `partner.name` field is unused dead config,
+read nowhere in `src`).
+
 ## PORT PICKUP (Property design standard) - updated 2026-09-26
 
 **THE PORT IS COMPLETE AND TAGGED `port-ecommerce-complete`** (phases 0 to 6, two adversarial

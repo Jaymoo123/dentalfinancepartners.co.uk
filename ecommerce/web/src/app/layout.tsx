@@ -117,6 +117,11 @@ export const metadata: Metadata = {
       ...(niche.seo.search_console_verification?.bing
         ? { "msvalidate.01": niche.seo.search_console_verification.bing }
         : {}),
+      // AdSense (2026-09-28 parity phase 0, section 6, owner ruling
+      // "set up every site for AdSense"): same account id as Solicitors
+      // (commits 7edc7fd3, 153e5017). Account-side approval per domain and
+      // ads.txt going live are the plumbing agent's / owner's steps.
+      "google-adsense-account": "ca-pub-3756285576371279",
     },
   },
   openGraph: {
@@ -162,7 +167,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             posture="opt-out"
             noTrackPrefixes={["/admin"]}
           >
-            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} adsenseClientId="ca-pub-3756285576371279" />
             {/* Chrome = the shared kit. PageShell also supplies the skip link,
                 the single <main id="main">, and the /embed/* chrome bypass
                 (partner iframes get no header and no footer). */}

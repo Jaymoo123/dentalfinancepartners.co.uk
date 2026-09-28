@@ -6,7 +6,7 @@ import { vatPages, getVatPage } from "@/data/vat";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildSegmentPageSchema } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
@@ -52,7 +52,18 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
   const { slug } = await params;
   const vp = getVatPage(slug);
   if (!vp) notFound();
+  const segmentSchema = buildSegmentPageSchema({
+    title: vp.title,
+    metaDescription: vp.metaDescription,
+    path: `/vat/${vp.slug}`,
+    crumbParentLabel: "VAT",
+    crumbParentHref: "/vat",
+    serviceType: "Ecommerce VAT compliance",
+  });
   return (<>
+    {segmentSchema.map((node, i) => (
+      <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(node) }} />
+    ))}
     {/* `ground-dark` rebinds --focus-ring to the on-brand white for this section.
         Without it the breadcrumb links and the hero CTA ring in #8a5e1a on an
         #8a5e1a ground, i.e. 1.00:1. The ground is unchanged: the hex now comes
@@ -251,7 +262,7 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
     <LeadCTAPanel
       eyebrow=""
       title="Speak to an ecommerce VAT specialist."
-      description="Tell us about your VAT situation and we will reply within 24 hours."
+      description={vp.closer}
       proofPoints={[]}
       formTitle=""
       form={<LeadForm />}

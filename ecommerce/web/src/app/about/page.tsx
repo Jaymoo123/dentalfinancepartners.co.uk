@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteConfig } from "@/config/site";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { btnPrimary, siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 export const metadata: Metadata = {
@@ -77,7 +79,7 @@ export default function AboutPage() {
         <Eyebrow>About</Eyebrow>
         <div className="max-w-3xl space-y-8 text-base leading-relaxed text-neutral-600 sm:text-lg">
           <p>We are specialist accountants for UK online sellers: Amazon FBA and FBM sellers, Shopify store owners, marketplace sellers on eBay, Etsy and TikTok Shop, and dropshipping businesses.</p>
-          <p>We support accounts, VAT compliance, settlement reconciliation and tax returns for ecommerce businesses. This page is being prepared and will set out our approach in more detail.</p>
+          <p>We support accounts, VAT compliance, settlement reconciliation and tax returns for ecommerce businesses. You tell us your situation, one of our accountants calls you to go through it, and we agree a fixed fee in writing before any work starts.</p>
         </div>
         <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
@@ -85,5 +87,18 @@ export default function AboutPage() {
         <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
       </div>
     </section>
+    {/* ADDED 2026-09-28 parity phase 0: section 4 requires a LeadCTAPanel with
+        the site's LeadForm at the foot of /about, which this route had none of.
+        Same call shape as the three slug templates (/for, /services, /vat):
+        eyebrow, formTitle and proofPoints overridden to empty so no component
+        default publishes copy nobody here authored. */}
+    <LeadCTAPanel
+      eyebrow=""
+      title="Speak to an ecommerce tax specialist."
+      description="Tell us about your online selling business and we will reply within 24 hours."
+      proofPoints={[]}
+      formTitle=""
+      form={<LeadForm />}
+    />
   </>);
 }
