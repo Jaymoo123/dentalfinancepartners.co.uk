@@ -113,7 +113,7 @@ export default function DetailsForm({
       <div className="rounded-lg border border-[#4f46e5]/30 bg-[#eef2ff] p-6 text-center">
         <p className="text-lg font-semibold text-neutral-900">Thank you, that is everything we need</p>
         <p className="mt-2 text-base text-neutral-600">
-          One of our accountants will be in touch shortly. If you would like to
+          A specialist firm from our partner network will be in touch shortly. If you would like to
           pick a time that suits you, you can book a callback below.
         </p>
         {bookingToken && (
@@ -202,7 +202,7 @@ export default function DetailsForm({
       )}
 
       <p className="mt-3 text-xs text-neutral-500">
-        We only use this to arrange your free first call. See our{" "}
+        We only use this to arrange your free startup finance review. See our{" "}
         <a
           href="/privacy-policy"
           target="_blank"

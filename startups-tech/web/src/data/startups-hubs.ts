@@ -4,9 +4,6 @@ export interface StartupsHub {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
-  /** Segment-specific closing line for the final CTA section, one per audience.
-   *  ponytail: Sonnet-written, flagged for the Opus read (see PHASE0 report). */
-  closer: string;
 }
 
 export const startupsHubs: StartupsHub[] = [
@@ -76,7 +73,6 @@ export const startupsHubs: StartupsHub[] = [
         answer: "For contractor-specific IR35 and off-payroll questions, the right place is our sibling site Contractor Tax Accountants, which is scoped to that audience. If you are building a product or technology company with co-founders, employees or plans to raise, we are the right fit.",
       },
     ],
-    closer: "Before your first raise, tell us how the company is set up and what you have already promised anyone in writing. We will tell you what to put right now, while putting it right is still cheap.",
   },
   {
     slug: "funded-startups",
@@ -144,7 +140,6 @@ export const startupsHubs: StartupsHub[] = [
         answer: "Yes. The <a href=\"https://www.gov.uk/corporation-tax-rates\">£50,000 and £250,000 profit thresholds</a> that determine whether the 19% small profits rate, marginal relief or the 25% main rate applies are divided by the number of associated companies, including subsidiaries. A funded startup with two subsidiaries would have effective thresholds of £16,667 and £83,333. Speak to us about your group structure.",
       },
     ],
-    closer: "Send us the round documents and the cap table as it stands. We will tell you which compliance statements are due, what the option pool needs, and what your filing calendar looks like from here.",
   },
   {
     slug: "saas-companies",
@@ -208,7 +203,6 @@ export const startupsHubs: StartupsHub[] = [
         answer: "No. Creative and marketing agency finance belongs to our estate agency site, which is scoped to that audience. This site is for product SaaS companies and subscription software businesses. If you are building a software product, we are the right fit.",
       },
     ],
-    closer: "Tell us where your customers are billed and how you recognise subscription revenue. We will tell you what that means for VAT, for overseas registration thresholds, and for the numbers your investors will read.",
   },
   {
     slug: "software-development-companies",
@@ -276,7 +270,6 @@ export const startupsHubs: StartupsHub[] = [
         answer: "If your company supplies developers under the direction of an end-client, some arrangements may engage the off-payroll rules. The depth of that analysis belongs to our sibling site, Contractor Tax Accountants. We can confirm the boundary and route you correctly.",
       },
     ],
-    closer: "Tell us what your engineers built this year and how your client contracts are written. We will tell you which of that work is genuinely R&D and which of it HMRC would reject.",
   },
   {
     slug: "fintech-startups",
@@ -344,7 +337,6 @@ export const startupsHubs: StartupsHub[] = [
         answer: "<a href=\"https://www.gov.uk/guidance/venture-capital-schemes-apply-for-advance-assurance\">Advance assurance</a> is HMRC pre-clearance that a proposed share issue is likely to qualify for SEIS or EIS. It is not a guarantee, but it is the strongest signal available to investors before committing funds. For a fintech with potential excluded-activities questions, getting advance assurance before investor conversations begin is particularly valuable.",
       },
     ],
-    closer: "Tell us what you are authorised to do, or applying to do, and what you are raising against it. We will tell you how the regulatory position changes your tax, your share scheme and your reporting.",
   },
 ];
 

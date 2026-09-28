@@ -31,8 +31,8 @@ export default function ForIndexPage() {
       </div>
     </section>
     <LeadCTAPanel
-      title="Not sure which company type fits?"
-      description="Tell us about your business and we will reply within 24 hours."
+      title="Speak to a startup tax specialist."
+      description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       form={<LeadForm submitLabel="Send enquiry" />}
     />

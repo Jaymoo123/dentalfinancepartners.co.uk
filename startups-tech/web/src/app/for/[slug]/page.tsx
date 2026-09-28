@@ -92,8 +92,8 @@ export default async function StartupsHubPage({ params }: { params: Promise<{ sl
       </section>
     )}
     <LeadCTAPanel
-      title="Speak to a startup tax specialist"
-      description={hub.closer}
+      title="Speak to a startup tax specialist."
+      description={`Tell us about your ${hub.title.toLowerCase()} situation and we will reply within 24 hours.`}
       proofPoints={[]}
       form={<LeadForm submitLabel="Send enquiry" />}
     />

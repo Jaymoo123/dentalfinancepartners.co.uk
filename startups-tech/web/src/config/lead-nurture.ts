@@ -311,10 +311,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `We have your enquiry, ${c.firstName}`,
-        "One of our accountants will call you within 24 hours, Monday to Friday.",
+        "Reply with a day and time that suits and a specialist will call you.",
         [
-          "Thanks for getting in touch. Your enquiry has landed with us and one of our accountants will call you within 24 hours, Monday to Friday.",
-          "The call is free, about 20 minutes, no charge and no obligation.",
+          "Thanks for getting in touch. Your enquiry has landed with us and a startup finance specialist is ready to pick it up.",
+          "The call is a free review of where your company is now, about 20 minutes, no charge and no obligation.",
           "Just reply to this email with a day and time that works. Even a one-line reply is enough, and we will fit around your diary.",
         ],
         "t0_email",
@@ -399,7 +399,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, Founder Tax Partners here. The call is genuinely no-strings: if it is not useful you have lost 20 minutes and owe nothing. Reply YES and one of our accountants will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, Founder Tax Partners here. The call is genuinely no-strings: if it is not useful you have lost 20 minutes and owe nothing. Reply YES and a specialist will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, Founder Tax Partners here. Most founders who ask what you asked get it settled in one short call. Reply YES and we will ring you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -418,7 +418,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so a text instead. Your free first call is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so a text instead. Your free review is still open. Reply YES and a startup finance specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -429,7 +429,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still open whenever you are, ${c.firstName}`,
           "No rush. A one-line reply is all we need.",
           [
-            "Checking in, and there is no rush from our side. Your free first call is still open, and if this is not the week for it, that is completely fine.",
+            "Checking in, and there is no rush from our side. Your free review is still open, and if this is not the week for it, that is completely fine.",
             "If you are mid-raise, mid quarter-end or simply flat out, say so and we will come back at a better time. Otherwise one line with a day and time, and we will take it from there.",
           ],
           "day7_email",
@@ -532,10 +532,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "One thing before we can call you",
-          "One of our accountants will call you within 24 hours, Monday to Friday.",
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and one of our accountants will call you within 24 hours, Monday to Friday. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and a startup finance specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even one word tells us we can reach you, and we will take it from there.",
           ],
           "detail_capture_t0",
@@ -612,7 +612,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free first call, reply with ${ask} whenever, next week or next year. It tends to matter most when a round is closing, an option pool is going in, or a claim deadline is approaching.`,
+            `If you would still like a free review, reply with ${ask} whenever, next week or next year. It tends to matter most when a round is closing, an option pool is going in, or a claim deadline is approaching.`,
             "All the best with the company.",
           ],
           "detail_capture_day7",
