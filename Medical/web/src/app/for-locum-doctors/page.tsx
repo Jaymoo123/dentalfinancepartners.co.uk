@@ -138,7 +138,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant who works with locum doctors",
   ctaBody:
-    "A call with a regulated firm from our specialist partner network, covering your current structure, your IR35 position engagement by engagement, whether any locum work is at risk of falling outside the 10-week pension window, and the expense claims that look under-made. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
+    "A call with one of our medical accountants, covering your current structure, your IR35 position engagement by engagement, whether any locum work is at risk of falling outside the 10-week pension window, and the expense claims that look under-made. Scope and fees are agreed with you, and enquiring commits you to nothing.",
   calculatorTabs: ["locumtax"],
   // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
   // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).

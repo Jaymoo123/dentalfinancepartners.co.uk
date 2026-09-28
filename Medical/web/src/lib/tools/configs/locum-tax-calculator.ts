@@ -113,7 +113,7 @@ export const locumTaxTool: GenericTool = {
     {
       question: "Should I work through a limited company as a locum?",
       answer:
-        "It depends on your income level, IR35 status across engagements, and NHS pension position. At sustained income above roughly £80,000 to £100,000 from outside-IR35 engagements, a limited company can save materially. Use the Private Practice Incorporation Calculator to model the comparison, or send an enquiry and we will match it to a specialist firm.",
+        "It depends on your income level, IR35 status across engagements, and NHS pension position. At sustained income above roughly £80,000 to £100,000 from outside-IR35 engagements, a limited company can save materially. Use the Private Practice Incorporation Calculator to model the comparison, or send an enquiry and one of our medical accountants will model it with you.",
     },
   ],
 };

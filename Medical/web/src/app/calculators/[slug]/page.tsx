@@ -230,10 +230,10 @@ export default async function CalculatorPage({
           contained
           ground={tool.related && tool.related.length > 0 ? "white" : "slate"}
           title="Need help interpreting your result?"
-          description="These calculators give a simplified estimate on standard rates. Your actual position depends on your NHS pension record, carry-forward entitlement, IR35 status and income from all sources. Send your position and we will match you with a firm that reads the full picture."
+          description="These calculators give a simplified estimate on standard rates. Your actual position depends on your NHS pension record, carry-forward entitlement, IR35 status and income from all sources. Send your position and one of our medical accountants will read the full picture."
           proofPoints={MEDICAL_PROOF_POINTS}
           formTitle={tool.ctaLabel ?? "Send an enquiry"}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
         />
       </div>
@@ -245,6 +245,6 @@ export default async function CalculatorPage({
  *  client count, and nothing that implies an in-house team does the work. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];

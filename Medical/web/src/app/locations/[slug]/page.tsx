@@ -52,40 +52,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 /**
  * Per-city metadata. Written once per city rather than templated off the city
- * name, and phrased to the matching model: the enquiry is matched to a
- * specialist firm, so no line may assert an accountant sitting in the city.
+ * name. We have no office in these cities, so no line may assert an accountant
+ * sitting in the city; we work for the doctors there, not from there.
  * The visible body and the JSON-LD below say the same thing.
  */
 const cityMeta: Record<string, { description: string; social: string }> = {
   london: {
     description:
-      "GPs, consultants and medical practices across London matched with specialist medical accountants. NHS Pension annual allowance, partnership accounts, private practice and locum tax.",
+      "GPs, consultants and medical practices across London read by specialist medical accountants. NHS Pension annual allowance, partnership accounts, private practice and locum tax.",
     social:
-      "London medical enquiries matched with accountants who work with doctors. NHS Pension, GP partnership accounts, private practice and locum tax.",
+      "London medical enquiries read by accountants who work with doctors. NHS Pension, GP partnership accounts, private practice and locum tax.",
   },
   manchester: {
     description:
-      "Greater Manchester doctors and GP practices matched with accountants whose work is medical. Partnership accounts, NHS Pension annual allowance, locum tax and private income.",
+      "Greater Manchester doctors and GP practices read by accountants whose work is medical. Partnership accounts, NHS Pension annual allowance, locum tax and private income.",
     social:
-      "Greater Manchester medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and locum tax.",
+      "Greater Manchester medical enquiries read by accountants who work with doctors. Partnership accounts, NHS Pension and locum tax.",
   },
   birmingham: {
     description:
-      "Birmingham and West Midlands doctors matched with specialist medical accountants. GP partnership accounts, PCSE reconciliation, NHS Pension annual allowance and consultant private practice.",
+      "Birmingham and West Midlands doctors read by specialist medical accountants. GP partnership accounts, PCSE reconciliation, NHS Pension annual allowance and consultant private practice.",
     social:
-      "Birmingham and West Midlands medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and private practice.",
+      "Birmingham and West Midlands medical enquiries read by accountants who work with doctors. Partnership accounts, NHS Pension and private practice.",
   },
   leeds: {
     description:
-      "Leeds and West Yorkshire doctors matched with accountants who work only with medical clients. Partnership accounts, NHS Pension annual allowance, Scheme Pays and locum tax returns.",
+      "Leeds and West Yorkshire doctors read by accountants who work only with medical clients. Partnership accounts, NHS Pension annual allowance, Scheme Pays and locum tax returns.",
     social:
-      "Leeds and West Yorkshire medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and locum tax.",
+      "Leeds and West Yorkshire medical enquiries read by accountants who work with doctors. Partnership accounts, NHS Pension and locum tax.",
   },
   bristol: {
     description:
-      "Bristol and South West doctors matched with specialist medical accountants. GP partnership accounts, NHS Pension annual allowance, private practice incorporation and locum tax.",
+      "Bristol and South West doctors read by specialist medical accountants. GP partnership accounts, NHS Pension annual allowance, private practice incorporation and locum tax.",
     social:
-      "Bristol and South West medical enquiries matched with accountants who work with doctors. Partnership accounts, NHS Pension and private practice.",
+      "Bristol and South West medical enquiries read by accountants who work with doctors. Partnership accounts, NHS Pension and private practice.",
   },
 };
 
@@ -120,9 +120,9 @@ const cityContent: Record<string, {
   related: string[];
 }> = {
   london: {
-    intro: "Enquiries from GPs, consultants and medical practice owners across London are matched with specialist medical accountants. Whether you are in Harley Street, the City, Canary Wharf or anywhere across Greater London, you are put in front of a firm that works with doctors rather than a general practice accountant.",
+    intro: "Enquiries from GPs, consultants and medical practice owners across London are read by our specialist medical accountants. Whether you are in Harley Street, the City, Canary Wharf or anywhere across Greater London, you are put in front of an accountant who works with doctors rather than a general practice accountant.",
     areas: ["Westminster", "Camden", "Islington", "Hackney", "Tower Hamlets", "Southwark", "Lambeth", "Wandsworth", "Hammersmith and Fulham", "Kensington and Chelsea", "Central London", "North London", "South London", "East London", "West London"],
-    whyLocal: "London has the highest concentration of medical professionals in the UK, from GP surgeries in every borough to major teaching hospitals and private consulting rooms. The firms in the network understand the London medical landscape, including higher practice costs, competitive private markets, and the complex mix of NHS and private income streams.",
+    whyLocal: "London has the highest concentration of medical professionals in the UK, from GP surgeries in every borough to major teaching hospitals and private consulting rooms. Our accountants understand the London medical landscape, including higher practice costs, competitive private markets, and the complex mix of NHS and private income streams.",
     services: [
       "London GP practices often have complex partnership structures with multiple partners and salaried GPs. Partnership accounts, profit allocation, tax returns and NHS pension reconciliation are handled together.",
       "For London consultants balancing NHS hospital work with private practice, mixed income streams, tax efficiency and NHS pension annual allowance complexities are read as one position.",
@@ -131,9 +131,9 @@ const cityContent: Record<string, {
     related: ["gp-accountant-london", "gp-partnership-tax-complete-guide", "private-practice-tax-nhs-and-private-income"],
   },
   manchester: {
-    intro: "Enquiries from GPs, consultants and medical practice owners across Manchester are matched with specialist medical accountants. Whether you are in the City Centre, Salford, Trafford or anywhere across Greater Manchester, you are put in front of a firm whose work is medical.",
+    intro: "Enquiries from GPs, consultants and medical practice owners across Manchester are read by our specialist medical accountants. Whether you are in the City Centre, Salford, Trafford or anywhere across Greater Manchester, you are put in front of a firm whose work is medical.",
     areas: ["Manchester City Centre", "Salford", "Trafford", "Stockport", "Oldham", "Rochdale", "Bury", "Bolton", "Wigan"],
-    whyLocal: "Manchester's medical sector is thriving, with a strong mix of NHS GP surgeries, private clinics and teaching hospitals. The firms in the network understand the local healthcare landscape and the specific financial questions Manchester-based doctors bring, from practice management to private work alongside NHS commitments.",
+    whyLocal: "Manchester's medical sector is thriving, with a strong mix of NHS GP surgeries, private clinics and teaching hospitals. Our accountants understand the local healthcare landscape and the specific financial questions Manchester-based doctors bring, from practice management to private work alongside NHS commitments.",
     services: [
       "Manchester GP practices range from small partnerships to large multi-site operations. Partnership accounts, profit shares, tax returns and NHS pension reporting are handled together.",
       "For Manchester consultants with NHS and private income, the tax position, pension contributions and annual allowance calculations are worked through in one place.",
@@ -142,9 +142,9 @@ const cityContent: Record<string, {
     related: ["gp-accountant-manchester", "nhs-pension-annual-allowance-complete-guide", "locum-doctor-tax-complete-guide"],
   },
   birmingham: {
-    intro: "Enquiries from GPs, consultants and medical practice owners across Birmingham are matched with specialist medical accountants. Whether you are in the City Centre, Edgbaston, Solihull or anywhere across the West Midlands, you are put in front of a firm that works with doctors.",
+    intro: "Enquiries from GPs, consultants and medical practice owners across Birmingham are read by our specialist medical accountants. Whether you are in the City Centre, Edgbaston, Solihull or anywhere across the West Midlands, you are put in front of a firm that works with doctors.",
     areas: ["Birmingham City Centre", "Edgbaston", "Solihull", "Sutton Coldfield", "Dudley", "Sandwell", "Walsall", "Wolverhampton"],
-    whyLocal: "Birmingham is a major medical hub with diverse GP practices, teaching hospitals and private clinics. The firms in the network understand the local healthcare economy and the financial questions Birmingham-based doctors bring, from NHS contract income to private practice growth.",
+    whyLocal: "Birmingham is a major medical hub with diverse GP practices, teaching hospitals and private clinics. Our accountants understand the local healthcare economy and the financial questions Birmingham-based doctors bring, from NHS contract income to private practice growth.",
     services: [
       "Birmingham GP practices need specialist accounting for partnership structures, profit allocation and NHS pension reconciliation, with year-round support rather than one conversation a year.",
       "For Birmingham consultants managing NHS and private work, tax returns, pension planning and income structured across several revenue streams are handled together.",
@@ -153,9 +153,9 @@ const cityContent: Record<string, {
     related: ["gp-accountant-birmingham", "gp-partner-vs-salaried-gp-tax-comparison", "medical-professional-expenses-what-is-claimable"],
   },
   leeds: {
-    intro: "Enquiries from GPs, consultants and medical practice owners across Leeds are matched with specialist medical accountants. Whether you are in the City Centre, Chapel Allerton, Roundhay or anywhere across West Yorkshire, you are put in front of a firm whose work is medical.",
+    intro: "Enquiries from GPs, consultants and medical practice owners across Leeds are read by our specialist medical accountants. Whether you are in the City Centre, Chapel Allerton, Roundhay or anywhere across West Yorkshire, you are put in front of a firm whose work is medical.",
     areas: ["Leeds City Centre", "Chapel Allerton", "Roundhay", "Headingley", "Horsforth", "Wetherby", "Bradford", "Wakefield", "Huddersfield"],
-    whyLocal: "Leeds has a strong medical sector with established GP practices, teaching hospitals and growing private healthcare provision. The firms in the network understand the Yorkshire healthcare landscape and the financial priorities Leeds-based doctors bring to a first conversation.",
+    whyLocal: "Leeds has a strong medical sector with established GP practices, teaching hospitals and growing private healthcare provision. Our accountants understand the Yorkshire healthcare landscape and the financial priorities Leeds-based doctors bring to a first conversation.",
     services: [
       "Leeds GP practices benefit from specialist accounting for partnership structures, NHS contract income and tax-efficient profit extraction, supported through the year.",
       "For Leeds consultants with NHS hospital roles and private practice work, the tax position, pension contributions and annual allowance calculations are read together.",
@@ -164,9 +164,9 @@ const cityContent: Record<string, {
     related: ["gp-accountant-leeds", "gp-partner-drawings-vs-profit-tax-reserving", "nhs-pension-scheme-pays-doctors-deadlines"],
   },
   bristol: {
-    intro: "Enquiries from GPs, consultants and medical practice owners across Bristol are matched with specialist medical accountants. Whether you are in Clifton, the City Centre or anywhere across the South West, you are put in front of a firm that works with doctors.",
+    intro: "Enquiries from GPs, consultants and medical practice owners across Bristol are read by our specialist medical accountants. Whether you are in Clifton, the City Centre or anywhere across the South West, you are put in front of a firm that works with doctors.",
     areas: ["Bristol City Centre", "Clifton", "Redland", "Westbury-on-Trym", "Bath", "Gloucester", "Cheltenham", "Exeter"],
-    whyLocal: "Bristol's medical sector combines established GP practices with newer private healthcare providers. The firms in the network understand the South West healthcare market and the financial questions Bristol-based doctors bring, from practice management to expanding private work.",
+    whyLocal: "Bristol's medical sector combines established GP practices with newer private healthcare providers. Our accountants understand the South West healthcare market and the financial questions Bristol-based doctors bring, from practice management to expanding private work.",
     services: [
       "Bristol GP practices need specialist support for partnership accounts, profit allocation and NHS pension planning, with advice available through the year rather than at year end only.",
       "For Bristol consultants managing NHS and private income, tax returns, pension optimisation and income structuring across several roles are handled as one position.",
@@ -180,14 +180,14 @@ const cityContent: Record<string, {
  *  and nothing implying an in-house team in the city. */
 const TRUST_POINTS = [
   "Medical work only",
-  "Matched to a specialist firm",
+  "Read by a medical accountant",
   "NHS pension, practice and personal return read together",
 ];
 
 /** Closing-panel proof points, same three mechanisms. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];
 
@@ -217,8 +217,8 @@ export default async function LocationPage({ params }: Props) {
   // the business publishes no public phone, so no telephone is emitted in JSON-LD.
   //
   // The postal-address node the shared builder always attaches is DELETED here.
-  // There is no office in this city: an enquiry is matched to a firm in the
-  // partner network. A machine-readable addressLocality is a stronger claim than the
+  // There is no office in this city: the work is done remotely for the doctors
+  // who practise there. A machine-readable addressLocality is a stronger claim than the
   // prose, and it was contradicting it. areaServed (emitted below as City) is
   // the honest construct for "this area is served".
   const service = buildAccountingService(
@@ -388,9 +388,9 @@ export default async function LocationPage({ params }: Props) {
           contained
           ground="white"
           title={`Book a consultation with a ${cityName} medical accountant`}
-          description="Tell us about your role and your financial priorities. Your enquiry is matched with a specialist medical accounting firm for a short introductory call."
+          description="Tell us about your role and your financial priorities. Your enquiry is read by one of our specialist medical accountants, who will call you for a short introduction."
           proofPoints={MEDICAL_PROOF_POINTS}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel="Request a consultation" />}
         />
       </div>

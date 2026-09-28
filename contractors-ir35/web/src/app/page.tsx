@@ -215,7 +215,7 @@ export default function HomePage() {
             </div>
             <div className="hero-reveal-delay">
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300 sm:text-xl">
-                We are a contractor-only tax publisher and an enquiry service. We write the guides and build the calculators here, and when you send an enquiry it goes to a firm in our specialist partner network that works only with contractors and PSC directors, rather than to a generalist. IR35 status reviews, salary and dividend planning, expenses, and pension strategy.
+                We are a contractor-only tax practice. We write the guides and build the calculators here, and when you send an enquiry it goes to one of our accountants who works only with contractors and PSC directors, rather than to a generalist. IR35 status reviews, salary and dividend planning, expenses, and pension strategy.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 {/* Primary CTA stays on the page. Only the header CTA and the

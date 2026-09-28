@@ -17,14 +17,14 @@ import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 
 export const metadata: Metadata = {
-  title: "About: Specialist Medical Tax Publisher and Enquiry Service",
+  title: "About Medical Accountants UK: Accountants for Doctors",
   description:
-    "What Medical Accountants UK is: a medical-only tax and accounting publisher for UK doctors, and an enquiry service that matches your enquiry to a regulated firm from our specialist partner network. NHS pension, locum tax, GP partnership and private practice.",
+    "What Medical Accountants UK is: a medical-only tax and accounting practice for UK doctors, with specialists who read your enquiry and come back to you directly. NHS pension, locum tax, GP partnership and private practice.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: "About Medical Accountants UK",
     description:
-      "A medical-only tax and accounting publisher for UK doctors, and an enquiry service that matches your enquiry to a regulated firm from our specialist partner network.",
+      "A medical-only tax and accounting practice for UK doctors. Send your enquiry and one of our medical accountants comes back to you directly.",
     url: `${siteConfig.url}/about`,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Medical Accountants UK",
     description:
-      "A medical-only tax and accounting publisher for UK doctors, and an enquiry service that matches your enquiry to a regulated firm from our specialist partner network.",
+      "A medical-only tax and accounting practice for UK doctors. Send your enquiry and one of our medical accountants comes back to you directly.",
   },
 };
 
-/* The publishing side, which is the part of the proposition we do run. Each
+/* The research and tools we publish alongside the client work. Each
    tile is a live route, so this section is also the page's crawl path. */
 const WHAT_WE_PUBLISH = [
   {
@@ -62,12 +62,12 @@ const WHAT_WE_PUBLISH = [
   },
 ];
 
-/* Closing-panel proof points. Mechanisms only: no fee, no turnaround, no client
-   count, and nothing that implies an in-house team does the work. Same rule the
+/* Closing-panel proof points. Mechanisms only: no fee, no turnaround and no
+   client count. Firm voice (owner ruling 2026-09-28). Same rule the
    blog hubs were written to in Phase 3. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];
 
@@ -87,10 +87,10 @@ export default function AboutPage() {
               About Medical Accountants UK
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-              We are a medical-only tax and accounting publisher, and an enquiry service. We write the
-              guides and build the calculators on this site, and when you send an enquiry we match it to
-              a regulated firm from our specialist partner network that works with doctors, rather than
-              to a generalist who will meet your position for the first time.
+              We are a medical-only tax and accounting practice. We write the
+              guides and build the calculators on this site, and when you send an enquiry it is read by
+              one of our medical accountants who works with doctors every day, rather than
+              by a generalist who will meet your position for the first time.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
@@ -206,7 +206,7 @@ export default function AboutPage() {
           contained
           ground="white"
           title="Tell us where you are"
-          description="Your role, your structure and your priorities for the year. We read it and match it to a regulated firm in our specialist partner network that works with doctors."
+          description="Your role, your structure and your priorities for the year. We read it and put it in front of one of our medical accountants who works with doctors."
           proofPoints={MEDICAL_PROOF_POINTS}
           formTitle="Send an enquiry"
           form={<LeadForm redirectOnSuccess={false} submitLabel="Send enquiry" />}

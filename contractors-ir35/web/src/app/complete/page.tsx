@@ -93,7 +93,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base text-neutral-700">
-              We have everything we need. An accountant from our partner network will be in touch
+              We have everything we need. One of our contractor accountants will be in touch
               shortly. If you would like to pick a time that suits you, you can book a callback below.
             </p>
             {bookingToken && (
@@ -113,7 +113,7 @@ export default async function CompletePage({
     <>
       <SlimHero eyebrow="One last thing" title="Complete your details" backdrop={<ContractorsBackdrop />}>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-300 sm:text-lg">
-          Add the last detail we need and an accountant from our partner network will be in touch
+          Add the last detail we need and one of our contractor accountants will be in touch
           to arrange your free IR35 review, no obligation.
         </p>
       </SlimHero>

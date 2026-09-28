@@ -463,7 +463,7 @@ export default function GPPracticeManagementPillarPage() {
           description={cta.body}
           proofPoints={MEDICAL_PROOF_POINTS}
           backdrop={<MedicalBackdrop />}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel={cta.button} />}
         />
       </div>
@@ -504,6 +504,6 @@ export default function GPPracticeManagementPillarPage() {
  *  client count, and nothing that implies an in-house team does the work. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];

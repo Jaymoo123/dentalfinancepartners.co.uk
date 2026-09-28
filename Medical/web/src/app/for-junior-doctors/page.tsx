@@ -134,7 +134,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your junior doctor tax sorted",
   ctaBody:
-    "Send your position and we will match it to a regulated firm that works with doctors. The first call covers your current tax position, your locum income setup, and your student loan situation. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
+    "Send your position and we will match it to one of our medical accountants who works with doctors. The first call covers your current tax position, your locum income setup, and your student loan situation. Scope and fees are agreed with you, and enquiring commits you to nothing.",
   calculatorTabs: ["locumtax"],
   // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
   // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).

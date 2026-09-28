@@ -61,7 +61,7 @@ export default function ContactPage() {
                   {
                     n: "02",
                     title: "A specialist gets in touch",
-                    body: "A specialist contractor accountant from our partner network will respond to arrange a short call. Not a sales team, not a call centre.",
+                    body: "One of our specialist contractor accountants will respond to arrange a short call. Not a sales team, not a call centre.",
                   },
                   {
                     n: "03",

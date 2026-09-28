@@ -26,7 +26,7 @@ export const audiences: Audience[] = [
     "headline": "Accountants for landlords moving property into a limited company",
     "metaTitle": "Accountant to Transfer Property Into a Company",
     "metaDescription": "Moving your buy-to-lets into a limited company? A specialist reviews the SDLT, the CGT and the refinancing before anything moves. For UK landlords.",
-    "intro": "You already own buy-to-lets in your own name and you are working out whether to move them into a limited company, and what that would cost. The real question is whether the stamp duty and capital gains tax on the way in are worth the corporation tax treatment afterwards. A specialist from the partner network starts with the market value and debt on each property, how the lettings are actually run, and who your lender is. Those answers decide whether section 162 incorporation relief is in play and whether a partnership route is open. By the end of it you know the cost of entry, which route fits and where HMRC would push back.",
+    "intro": "You already own buy-to-lets in your own name and you are working out whether to move them into a limited company, and what that would cost. The real question is whether the stamp duty and capital gains tax on the way in are worth the corporation tax treatment afterwards. One of our property tax specialists starts with the market value and debt on each property, how the lettings are actually run, and who your lender is. Those answers decide whether section 162 incorporation relief is in play and whether a partnership route is open. By the end of it you know the cost of entry, which route fits and where HMRC would push back.",
     "stats": [
       {
         "value": "5%",
@@ -126,7 +126,7 @@ export const audiences: Audience[] = [
     "headline": "Accountants for landlords selling a buy-to-let",
     "metaTitle": "CGT Accountant for Selling a Buy-to-Let Property",
     "metaDescription": "Selling a rental property or a former home that was let? Get the 60-day CGT return, the gain computation and the reliefs handled by a property tax specialist.",
-    "intro": "You are selling a buy-to-let, or a home you lived in and later let out, and you want to know who to contact about the capital gains tax. Where tax is due, the return and the payment are owed within 60 days of completion. A specialist from our partner network looks first at the exchange date, because that fixes the tax year, the completion date, because that starts the 60-day clock, and whether the property was ever your only or main home, because that moves the figure most. The gain computation comes to you line by line, the return is prepared and filed, and the same figures carry into your self assessment.",
+    "intro": "You are selling a buy-to-let, or a home you lived in and later let out, and you want to know who to contact about the capital gains tax. Where tax is due, the return and the payment are owed within 60 days of completion. One of our property tax specialists looks first at the exchange date, because that fixes the tax year, the completion date, because that starts the 60-day clock, and whether the property was ever your only or main home, because that moves the figure most. The gain computation comes to you line by line, the return is prepared and filed, and the same figures carry into your self assessment.",
     "stats": [
       {
         "value": "60 days",
@@ -282,7 +282,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "A written recommendation you can act on or decline",
-        "body": "The output is a written report: the numbers, the risks named, the sequence and the dates. Incorporation is not right for every portfolio, and where the modelling says stay as you are, the report says that. Introductions are to a specialist firm from our partner network."
+        "body": "The output is a written report: the numbers, the risks named, the sequence and the dates. Incorporation is not right for every portfolio, and where the modelling says stay as you are, the report says that. Where you want the work done, our team does it."
       }
     ],
     "faqs": [
@@ -565,7 +565,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "The cost of the gift, before you sign anything",
-        "body": "A specialist from the partner network reviews your acquisition cost, improvement spend and any period the property was your main home, then sets the gain against a current valuation. You see the figure, the date it is payable, and how it moves if the gift is split across two tax years or two owners."
+        "body": "One of our property tax specialists reviews your acquisition cost, improvement spend and any period the property was your main home, then sets the gain against a current valuation. You see the figure, the date it is payable, and how it moves if the gift is split across two tax years or two owners."
       },
       {
         "title": "A reservation of benefit review before the deed is drawn",
@@ -673,7 +673,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A review of how the property is actually held",
-        "body": "A specialist from the partner network begins at the register and the deeds: joint tenants or tenants in common, whose names are on the title, whose money went in, and whether a trust deed exists. That settles whether an unequal split is open to you, and whether severance comes first."
+        "body": "One of our property tax specialists begins at the register and the deeds: joint tenants or tenants in common, whose names are on the title, whose money went in, and whether a trust deed exists. That settles whether an unequal split is open to you, and whether severance comes first."
       },
       {
         "title": "The order of the steps, written down",
@@ -728,7 +728,7 @@ export const audiences: Audience[] = [
     "headline": "Accountants filing landlord self assessment and MTD quarterly updates",
     "metaTitle": "Landlord Self Assessment & MTD Filing Service",
     "metaDescription": "Landlord self assessment and MTD for Income Tax quarterly updates filed for you. Thresholds, deadlines, SA105 and joint ownership explained for UK landlords.",
-    "intro": "You let property, you do not want to file the return yourself, and from 6 April 2026 the job got bigger: landlords with qualifying income above £50,000 move from one annual return to four quarterly updates plus a final declaration. This page is for the landlord who wants someone else to hold that calendar. A specialist from our partner network reviews three things first: your gross rents before deductions, which is what the threshold is tested on, not profit; how each property is owned, because joint owners are tested on their own share; and what your records look like today, because MTD needs digital records in compatible software. One person then holds the start date, the filing calendar, the quarterly updates, the year-end statements and the SA105 pages. Check your own position with the <a href=\"/calculators/mtd-checker\">MTD checker</a>.",
+    "intro": "You let property, you do not want to file the return yourself, and from 6 April 2026 the job got bigger: landlords with qualifying income above £50,000 move from one annual return to four quarterly updates plus a final declaration. This page is for the landlord who wants someone else to hold that calendar. One of our property tax specialists reviews three things first: your gross rents before deductions, which is what the threshold is tested on, not profit; how each property is owned, because joint owners are tested on their own share; and what your records look like today, because MTD needs digital records in compatible software. One person then holds the start date, the filing calendar, the quarterly updates, the year-end statements and the SA105 pages. Check your own position with the <a href=\"/calculators/mtd-checker\">MTD checker</a>.",
     "stats": [
       {
         "value": "£50,000",
@@ -833,7 +833,7 @@ export const audiences: Audience[] = [
     "headline": "Accountants for first-time and accidental landlords",
     "metaTitle": "Accountant for First Time Landlords | Former Home",
     "metaDescription": "Letting a former home? Specialist help for first-time and accidental landlords: telling HMRC, expenses, Section 24, MTD records and relief when you sell.",
-    "intro": "You did not plan to be a landlord. You moved in with a partner, relocated for work, inherited a house, or could not sell, and now your old home is let. HMRC treats you as a landlord from the first day of the tenancy, with a return, records and a deadline attached. A specialist looks at four things first: when the letting began and whether HMRC has been told in time, whether your rent sits above or below the £1,000 property allowance, how the mortgage interest runs through Section 24, and how long the property was your own home, because that decides the relief when you sell. That sequence is set out below in the order the dates fall, ending with an introduction to a specialist firm.",
+    "intro": "You did not plan to be a landlord. You moved in with a partner, relocated for work, inherited a house, or could not sell, and now your old home is let. HMRC treats you as a landlord from the first day of the tenancy, with a return, records and a deadline attached. A specialist looks at four things first: when the letting began and whether HMRC has been told in time, whether your rent sits above or below the £1,000 property allowance, how the mortgage interest runs through Section 24, and how long the property was your own home, because that decides the relief when you sell. That sequence is set out below in the order the dates fall, ending with a call with one of our accountants.",
     "stats": [
       {
         "value": "5 October",
@@ -975,7 +975,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "The probate valuation reviewed as a tax figure",
-        "body": "A specialist in the partner network re-reads the date of death valuation, the evidence behind it, and how it sits against the inheritance tax the estate reported. Where the property has since sold for less, they check whether substituting the sale price is worth the base cost it costs you."
+        "body": "One of our property tax specialists re-reads the date of death valuation, the evidence behind it, and how it sits against the inheritance tax the estate reported. Where the property has since sold for less, they check whether substituting the sale price is worth the base cost it costs you."
       },
       {
         "title": "Keep, let or sell, compared in figures",
@@ -1176,7 +1176,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "Notification and the 90-day window",
-        "body": "A specialist firm from the partner network prepares and submits the notification. HMRC acknowledges it and issues a disclosure reference, and the 90 days to disclose and pay run from that acknowledgement. Notifying does not create penalty exposure. The work is planned backwards from that deadline, so the computation and payment position are ready in time."
+        "body": "Our team prepares and submits the notification. HMRC acknowledges it and issues a disclosure reference, and the 90 days to disclose and pay run from that acknowledgement. Notifying does not create penalty exposure. The work is planned backwards from that deadline, so the computation and payment position are ready in time."
       },
       {
         "title": "A year-by-year computation you can check",
@@ -1329,7 +1329,7 @@ export const audiences: Audience[] = [
     "headline": "Accountants for HMO and multi-let landlords",
     "metaTitle": "HMO Accountant | Multi-Let and Student Landlords",
     "metaDescription": "Specialist accounting for UK HMO, student and small commercial landlords: licensing costs, bills-included rents, council tax, capital allowances and structure.",
-    "intro": "If you run an HMO, a student let or a small mixed-use building, your tax position looks nothing like a single buy to let. Rent arrives per room, the bills sit with you rather than the tenant, licensing and fire safety work runs alongside ordinary repairs, and a shop on the ground floor pulls a second set of rules into the same return. Four questions come first: which conversion, fire safety and licensing costs are revenue and which are capital, whether your common parts and non-dwelling space carry a capital allowances claim, how council tax or business rates are landing on the building, and whether the profit is better held personally or in a company. Those four are written up against your own figures, and a specialist firm prepares the returns.",
+    "intro": "If you run an HMO, a student let or a small mixed-use building, your tax position looks nothing like a single buy to let. Rent arrives per room, the bills sit with you rather than the tenant, licensing and fire safety work runs alongside ordinary repairs, and a shop on the ground floor pulls a second set of rules into the same return. Four questions come first: which conversion, fire safety and licensing costs are revenue and which are capital, whether your common parts and non-dwelling space carry a capital allowances claim, how council tax or business rates are landing on the building, and whether the profit is better held personally or in a company. Those four are written up against your own figures, and our team prepares the returns.",
     "stats": [
       {
         "value": "5 or more",
@@ -1479,7 +1479,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "An estate and portfolio position on paper",
-        "body": "A specialist in the partner network works through ownership of every property, original cost and improvement spend, current values, borrowing and how each title is held. That produces the two numbers the plan turns on: the latent gain across the portfolio, and the estate value against the nil-rate bands."
+        "body": "One of our property tax specialists works through ownership of every property, original cost and improvement spend, current values, borrowing and how each title is held. That produces the two numbers the plan turns on: the latent gain across the portfolio, and the estate value against the nil-rate bands."
       },
       {
         "title": "A disposal timetable across tax years",

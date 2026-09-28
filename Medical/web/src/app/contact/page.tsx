@@ -16,12 +16,12 @@ import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config"
 
 export const metadata: Metadata = {
   title: { absolute: "Contact Medical Accountants UK | Speak to a Specialist" },
-  description: `Send a GP accounting or medical tax enquiry to ${siteConfig.name}. NHS pension, locum tax, GP partnership and private practice enquiries, matched to a regulated firm from our specialist partner network.`,
+  description: `Send a GP accounting or medical tax enquiry to ${siteConfig.name}. NHS pension, locum tax, GP partnership and private practice enquiries, read by one of our medical accountants.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: "Contact Medical Accountants UK | Speak to a Specialist",
     description:
-      "Send your GP accounting or medical tax enquiry. We match it to a regulated firm from our specialist partner network that works with doctors.",
+      "Send your GP accounting or medical tax enquiry. One of our medical accountants who works with doctors reads it and comes back to you.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
@@ -29,20 +29,19 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact Medical Accountants UK | Speak to a Specialist",
     description:
-      "Send your GP accounting or medical tax enquiry. We match it to a regulated firm from our specialist partner network that works with doctors.",
+      "Send your GP accounting or medical tax enquiry. One of our medical accountants who works with doctors reads it and comes back to you.",
   },
 };
 
-/* What actually happens after submit, traced to the call site rather than
-   written from the old in-house copy: LeadForm renders
-   siteConfig.leadConsentText ("a firm from our specialist partner network who
-   will contact you"), /thank-you and /complete say the same, and the privacy
-   policy caps the network. No turnaround promise, no fee, no named accountant:
-   none of the three is ours to state, and the firm's terms are the firm's. */
+/* What actually happens after submit, traced to the call site. Firm voice
+   (owner ruling 2026-09-28): we read the enquiry and one of our medical
+   accountants contacts the prospect. /thank-you and /complete say the same.
+   siteConfig.leadConsentText is the legal consent sentence and is left as
+   written. No turnaround promise, no fee and no named accountant. */
 const NEXT_STEPS = [
-  "We read your enquiry and match it to a regulated firm from our specialist partner network that works with doctors.",
-  "If that firm cannot help, your details may go to another firm in the network for the same purpose, within the cap set out in our privacy policy.",
-  "The firm contacts you by phone or email. Scope, engagement and anything it will cost are agreed with them, not with us.",
+  "We read your enquiry and put it in front of one of our medical accountants who works with doctors.",
+  "If your position needs a different specialism, it is passed to a colleague here who covers it, and your details are handled as set out in our privacy policy.",
+  "We contact you by phone or email. Scope, engagement and anything the work will cost are agreed with you before it starts.",
 ];
 
 const COMMON_ENQUIRIES = [
@@ -68,7 +67,7 @@ const COMMON_ENQUIRIES = [
    count, and nothing that implies an in-house team does the work. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];
 
@@ -88,8 +87,8 @@ export default function ContactPage() {
             <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
               Whether you are a GP partner facing an annual allowance charge, a locum working across
               several practices, or a consultant weighing up incorporating private work, tell us the
-              position in the form. We read it and match it to a regulated firm from our specialist
-              partner network that works with doctors, and that firm contacts you.
+              position in the form. We read it, put it in front of one of our medical accountants who
+              works with doctors, and they contact you.
             </p>
             {isPackagesMode(niche) ? (
               <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">

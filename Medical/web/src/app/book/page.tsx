@@ -14,7 +14,7 @@ import BookingPicker from "@/components/forms/BookingPicker";
 
 export const metadata: Metadata = {
   title: "Book your review call",
-  description: "Pick a time for a call with a specialist firm about your medical practice finances.",
+  description: "Pick a time for a call with one of our medical accountants about your medical practice finances.",
   robots: { index: false, follow: false },
 };
 
@@ -34,9 +34,9 @@ export default async function BookPage({
             Book your review call
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-[var(--muted)]">
-            Pick a day and a time window that suits you. A medical accountant from our specialist partner
-            network will call you then. Booking commits you to nothing, and scope and fees are
-            agreed with that firm.
+            Pick a day and a time window that suits you. One of our medical accountants
+            will call you then. Booking commits you to nothing, and scope and fees are
+            agreed with you.
           </p>
           <div className="mt-10">
             {token ? (

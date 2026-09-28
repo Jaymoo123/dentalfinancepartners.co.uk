@@ -26,10 +26,10 @@
  * public. /privacy-policy, /terms and /cookie-policy are footer routes with no
  * card surface.
  *
- * COPY RULES. UK English, no em-dashes, referral voice, no fee figures, no
+ * COPY RULES. UK English, no em-dashes, firm voice, no fee figures, no
  * turnaround promises, no qualification or regulator claim, no client counts.
- * This site is a referral network and does not give advice or do the work, so
- * no summary may say that it does.
+ * Every summary speaks as the firm ("we", "our team", "our contractor
+ * accountants"), never as a referral service or a publisher.
  * No entry carries a tax figure, so nothing here goes stale against a rate
  * change; anything that ever does must trace to
  * docs/contractors-ir35/house_positions.md.
@@ -37,7 +37,7 @@
 export const PAGE_SUMMARIES: Record<string, string> = {
   "/": "Guides, calculators and an enquiry route for UK contractors, PSC directors and umbrella workers, covering IR35 status, the company tax and how you pay yourself.",
   "/services":
-    "What the firm you are matched with handles: IR35 status reviews, limited company accounts and corporation tax, director payroll, the salary and dividend split, VAT and expenses.",
+    "What our team handles: IR35 status reviews, limited company accounts and corporation tax, director payroll, the salary and dividend split, VAT and expenses.",
   "/ir35-status":
     "A contract and working practices review that tests your engagement against substitution, control and mutuality, and gives you the conclusion in writing with the reasoning behind it.",
   "/for":
@@ -59,9 +59,9 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/research/uk-contractor-insolvency-index":
     "Insolvency among small contractor-heavy companies in England and Wales, tracked from Insolvency Service open data on a trailing basis.",
   "/about":
-    "Why this site covers contractors only, how an enquiry reaches a firm in the specialist partner network, and what that focus changes about the help you get.",
+    "Why we work with contractors only, how an enquiry reaches one of our contractor accountants, and what that focus changes about the help you get.",
   "/contact":
-    "Tell us what the engagement looks like and where you are stuck, and a firm from the specialist partner network will come back to you about it. No obligation.",
+    "Tell us what the engagement looks like and where you are stuck, and one of our contractor accountants will come back to you about it. No obligation.",
 };
 
 /** The summary for an internal route, or undefined if it has no authored one. */

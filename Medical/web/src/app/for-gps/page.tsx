@@ -12,7 +12,7 @@ import { AudienceStageLayout, type AudienceStage } from "@/components/audience/A
 export const metadata: Metadata = {
   title: "GP Practice Accountants | Partnership Accounts & Partner Tax",
   description:
-    "GP practice accounting explained, matched to a specialist firm: partnership accounts, profit allocation, notional rent and self-assessment for GPs.",
+    "GP practice accounting explained by medical accountants: partnership accounts, profit allocation, notional rent and self-assessment for GPs.",
   alternates: {
     canonical: `${siteConfig.url}/for-gps`,
     languages: {
@@ -160,7 +160,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to a GP practice accountant",
   ctaBody:
-    "A scoping call with a regulated firm from our specialist partner network. Whether you are enquiring as a practice or as an individual partner or salaried GP, the call covers your current setup, your NHS Pension position, and any expense claims that look under-made. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
+    "A scoping call with one of our medical accountants. Whether you are enquiring as a practice or as an individual partner or salaried GP, the call covers your current setup, your NHS Pension position, and any expense claims that look under-made. Scope and fees are agreed with you, and enquiring commits you to nothing.",
   calculatorTabs: ["annualallowance"],
   // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
   // anchors, so this list is what keeps the crawl path (DISPOSITION_SLICE2 B.1).

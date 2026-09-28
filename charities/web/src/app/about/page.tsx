@@ -12,7 +12,7 @@ import { niche } from "@/config/niche-loader";
 export const metadata: Metadata = {
   title: "About | Specialist Charity Accountants",
   description:
-    "Specialist charity accounts, Gift Aid and VAT support for UK charities, CICs and social enterprises, matched to a specialist firm from our partner network.",
+    "Specialist charity accounts, Gift Aid and VAT support for UK charities, CICs and social enterprises, from a team that works only with the charity sector.",
   alternates: { canonical: `${siteConfig.url}/about` },
 };
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
       <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>
           <div className="min-w-0 space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
-            <p>We are a charity-only tax and accounts publisher, and an enquiry service. We write the guides and build the calculators on this site, and when you send an enquiry we match it to a firm in our specialist partner network that works only with charities, community interest companies and social enterprises, rather than to a generalist meeting the Charities SORP for the first time.</p>
+            <p>We are a charity-only tax and accounts team. We write the guides and build the calculators on this site, and when you send an enquiry it goes to one of our charity accountants, who works only with charities, community interest companies and social enterprises, rather than to a generalist meeting the Charities SORP for the first time.</p>
             <p>The independent examination is the clearest example. Many trustees do not know what the examiner is looking for, what the examiner needs the accounts to include, or how to make the examination process straightforward. We prepare the accounts with the examination in mind and connect you with an independent examiner.</p>
             <p>The same applies to Gift Aid and GASDS claims, fund accounting for restricted grants, the Charities SORP presentation requirements, and the Charity Commission annual return. These are not things that come up occasionally for us. They are the core of what we do.</p>
           </div>

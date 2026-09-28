@@ -32,11 +32,11 @@ export type Faq = { q: string; a: string };
 export const GENERIC: Faq[] = [
   {
     q: "Who replies to my enquiry?",
-    a: "Leave your email and a one-line question. We match it to a firm from our specialist partner network, and an accountant who works with doctors comes back to you directly.",
+    a: "Leave your email and a one-line question. One of our medical accountants who works with doctors reads it and comes back to you directly.",
   },
   {
     q: "Does enquiring commit me to anything?",
-    a: "No. We match your enquiry to a firm from our specialist partner network and that firm makes contact. Scope and fees are agreed with them, and nothing is settled until you agree it.",
+    a: "No. One of our medical accountants reads your enquiry and makes contact. Scope and fees are agreed with you, and nothing is settled until you agree it.",
   },
   {
     q: "What should I have ready?",

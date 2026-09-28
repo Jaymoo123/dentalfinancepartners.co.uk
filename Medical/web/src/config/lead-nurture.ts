@@ -373,8 +373,8 @@ const STEPS: LeadNurtureStep[] = [
         `Got your enquiry, ${c.firstName}`,
         "Just reply with a time that suits and a specialist will call you.",
         [
-          "Thanks for your enquiry. It has just landed with us, and we match it to a regulated firm from our specialist partner network that works with doctors.",
-          "The call is a specialist reading your personal tax position as a doctor. Scope and fees are agreed with the firm, and replying commits you to nothing.",
+          "Thanks for your enquiry. It has just landed with us, and one of our medical accountants who works with doctors is reading it.",
+          "The call is a specialist reading your personal tax position as a doctor. Scope and fees are agreed with you, and replying commits you to nothing.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you, tell us and we will work around it.",
         ],
         "t0_email",
@@ -392,7 +392,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Medical Accountants UK. Thanks for your enquiry. Reply YES and a specialist firm from our partner network will call you about your tax position. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Medical Accountants UK. Thanks for your enquiry. Reply YES and one of our medical accountants will call you about your tax position. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.confirmUrl]),
     ],
@@ -409,7 +409,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Medical Accountants UK again. Enquiries like yours are exactly what the firms in our specialist partner network handle. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Medical Accountants UK again. Enquiries like yours are exactly what our specialists handle every day. Reply YES and one of them will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -418,7 +418,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -433,7 +433,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email ────────────────────────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => {
       // Tailor the value-give paragraph to the tool available for this intent.
@@ -443,7 +443,7 @@ const STEPS: LeadNurtureStep[] = [
 
       const paras = [
         "A quick pointer while your enquiry is with us. The NHS pension annual allowance charge catches many doctors off guard, particularly around the time of a pay uplift or a change in pensionable pay. The calculation is not straightforward, and an underpayment discovered late can mean interest on top of the tax itself.",
-        "If that is anywhere near your situation, it is exactly the kind of thing the specialist firms in our partner network cover on a first call. There is nothing to prepare and no commitment involved.",
+        "If that is anywhere near your situation, it is exactly the kind of thing our specialists cover on a first call. There is nothing to prepare and no commitment involved.",
         ...(calcLine ? [calcLine] : []),
         "Whenever suits you, just reply with a day and time and we will arrange it.",
       ];
@@ -464,7 +464,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => {
       const smsBody =
@@ -481,7 +481,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email", "sms"],
     preferMonday: true,
     buildMessages: (c) => {
@@ -512,7 +512,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -605,7 +605,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and we will match you to a regulated firm that works with doctors, so a specialist there can call you. There is no obligation and nothing to prepare.`,
+            `Just reply to this email with ${ask} and one of our medical accountants who works with doctors will call you. There is no obligation and nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",
@@ -630,7 +630,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "Still happy to help",
           `Reply with ${ask} and we will sort the rest.`,
           [
-            "A quick nudge on the message you sent us yesterday. We would still like to get a specialist firm on the phone to you this week.",
+            "A quick nudge on the message you sent us yesterday. We would still like to get one of our specialists on the phone to you this week.",
             `All we need is ${ask}. Just reply to this email and we will sort the rest. No obligation at any point.`,
           ],
           "detail_capture_day1",
@@ -682,7 +682,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have asked a couple of times now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a specialist firm to read your medical tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are an annual allowance charge notice, a move between employment types, or the first year of private practice income.`,
+            `If you would still like one of our specialists to read your medical tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are an annual allowance charge notice, a move between employment types, or the first year of private practice income.`,
             "All the best.",
           ],
           "detail_capture_day7",

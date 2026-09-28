@@ -81,7 +81,7 @@ const data: AudienceStage = {
   services: [
     {
       title: "Getting the second income on HMRC's record",
-      body: "A specialist from the partner network confirms when the sessions began, checks whether the 5 October point has passed, registers the self-employment and sets up the records. Where a year has been missed, the position is quantified and the disclosure route chosen first.",
+      body: "One of our specialists confirms when the sessions began, checks whether the 5 October point has passed, registers the self-employment and sets up the records. Where a year has been missed, the position is quantified and the disclosure route chosen first.",
     },
     {
       title: "One return covering the salary and the sessions",
@@ -120,7 +120,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant who works with salaried GPs",
   ctaBody:
-    "Put your self assessment registration, whether your locum sessions are inside the 10-week pension window, and your Type 2 form and annual allowance position to a regulated firm from our specialist partner network. Fees and scope are settled with that firm, and asking commits you to nothing.",
+    "Put your self assessment registration, whether your locum sessions are inside the 10-week pension window, and your Type 2 form and annual allowance position to one of our medical accountants. Fees and scope are settled with you first, and asking commits you to nothing.",
   relatedGuides: [
     {
       href: "/blog/locum-doctor-self-assessment-filing-guide",

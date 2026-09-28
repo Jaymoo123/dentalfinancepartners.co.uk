@@ -92,7 +92,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base leading-relaxed text-slate-700">
-              We have everything we need. A specialist firm from our partner network may contact you
+              We have everything we need. One of our charity accountants may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
@@ -113,7 +113,7 @@ export default async function CompletePage({
     <>
       <SlimHero eyebrow="Your enquiry" title="Complete your details">
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-          Add the last detail we need and a specialist firm from our partner network will be in
+          Add the last detail we need and one of our charity accountants will be in
           touch to arrange your free charity finance review, no obligation.
         </p>
       </SlimHero>

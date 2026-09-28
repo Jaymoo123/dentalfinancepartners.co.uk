@@ -16,12 +16,11 @@
  * the posts) rather than `niche.config.json`, which lists a ninth category
  * with no posts and no hub route.
  *
- * VOICE (locked, and it was got wrong on the first pass): the copy describes
- * what a SPECIALIST FIRM does, never what "we" do. This site takes an enquiry
- * and passes it to a regulated firm in the partner network, which is what the
- * privacy policy discloses in terms. First-person service copy contradicts our
- * own disclosure, and it sat one line above a proof point reading "Matched to a
- * specialist firm" until an adversarial review caught it.
+ * VOICE (locked, owner ruling 2026-09-28): the brand IS the accountancy firm
+ * the client deals with, so the copy is written in the first person, "we" and
+ * "our medical accountants". Nothing a prospect reads may describe this site as
+ * a publisher, an enquiry service or a referral service, or say that a partner
+ * firm, a specialist firm or a regulated firm does the work.
  *
  * COPY RULES (locked): no fee for our services and no comparative fee claim,
  * no turnaround promise, no client-count or client-behaviour claim, no "most
@@ -37,12 +36,12 @@ export type BlogCtaCopy = { heading: string; body: string; button: string };
 export const CTA_BY_CATEGORY: Record<string, BlogCtaCopy> = {
   "gp-accountant-services": {
     heading: "Want a second read on how the practice and your own return fit together?",
-    body: "Practice accounts, the profit allocation and each partner's personal position are one piece of work, not three. A specialist firm reads them together, so the figures agree with each other.",
+    body: "Practice accounts, the profit allocation and each partner's personal position are one piece of work, not three. We read them together, so the figures agree with each other.",
     button: "Book a practice review",
   },
   "gp-practice-management": {
     heading: "Not sure the practice figures are telling you the right thing?",
-    body: "Global sum, Carr-Hill, QOF, enhanced services and PCN income all arrive differently and land in different places. A specialist firm reads the practice accounts against the PCSE statements rather than beside them.",
+    body: "Global sum, Carr-Hill, QOF, enhanced services and PCN income all arrive differently and land in different places. We read the practice accounts against the PCSE statements rather than beside them.",
     button: "Book a practice finance call",
   },
   "gp-tax-and-accounts": {
@@ -52,17 +51,17 @@ export const CTA_BY_CATEGORY: Record<string, BlogCtaCopy> = {
   },
   "nhs-pension-planning": {
     heading: "Want the annual allowance position checked before the charge lands?",
-    body: "The pension input amount grows with pensionable pay whether or not you pay in more. A specialist firm checks the input figure, tests the taper, looks at carry-forward and only then decides whether Scheme Pays is worth electing.",
+    body: "The pension input amount grows with pensionable pay whether or not you pay in more. We check the input figure, test the taper, look at carry-forward and only then decide whether Scheme Pays is worth electing.",
     button: "Book a pension review",
   },
   "locum-tax": {
     heading: "Working as a locum and want the status question settled?",
-    body: "IR35 is decided by the engagement rather than the contract, and the limited company, umbrella or sole trader answer depends on your actual sessions. A specialist firm models it on your own figures, and handles Forms A and B so the work counts towards pensionable service.",
+    body: "IR35 is decided by the engagement rather than the contract, and the limited company, umbrella or sole trader answer depends on your actual sessions. We model it on your own figures, and handle Forms A and B so the work counts towards pensionable service.",
     button: "Book a locum tax review",
   },
   "private-practice": {
     heading: "NHS post, private fees and medico-legal work in one tax position",
-    body: "Three income streams, three treatments, and the errors happen where they meet. A specialist firm looks at the split, the expenses that hold up, and whether incorporating the private side is worth what it costs in pension accrual.",
+    body: "Three income streams, three treatments, and the errors happen where they meet. We look at the split, the expenses that hold up, and whether incorporating the private side is worth what it costs in pension accrual.",
     button: "Book a private practice call",
   },
   "incorporation-and-company-structures": {
@@ -72,7 +71,7 @@ export const CTA_BY_CATEGORY: Record<string, BlogCtaCopy> = {
   },
   "medical-expenses": {
     heading: "Want the expense claim to survive an HMRC look?",
-    body: "Professional subscriptions, indemnity, examination fees, equipment and travel are each treated differently, and doctors' claims are challenged in predictable places. A specialist firm reviews what is claimed against what is defensible.",
+    body: "Professional subscriptions, indemnity, examination fees, equipment and travel are each treated differently, and doctors' claims are challenged in predictable places. We review what is claimed against what is defensible.",
     button: "Book an expenses review",
   },
 };

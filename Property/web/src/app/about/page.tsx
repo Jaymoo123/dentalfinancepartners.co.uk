@@ -63,7 +63,7 @@ const howWeWork = [
   {
     icon: MessageSquare,
     title: "Transparent and accessible",
-    body: "Fixed fees with no surprises. You deal with one specialist firm throughout. Plain English explanations, not accounting jargon. We're here when you need us.",
+    body: "Fixed fees with no surprises. You deal with one team throughout. Plain English explanations, not accounting jargon. We're here when you need us.",
   },
 ];
 
@@ -82,8 +82,8 @@ const whatMakesUsDifferent = [
     body: "You know what you are paying upfront. No hourly billing, no surprise invoices. If your situation changes mid-year, we will tell you before any additional fees apply.",
   },
   {
-    title: "One specialist firm, not a panel",
-    body: "Your enquiry is not spread across a list. It goes to one firm that works only on property tax, knows the portfolio position, and is available when you need them.",
+    title: "One team, not a panel",
+    body: "Your enquiry is not spread across a list. It comes to one team that works only on property tax, knows your portfolio position, and is available when you need us.",
   },
 ];
 
@@ -234,7 +234,7 @@ export default function AboutPage() {
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
-            { title: "One specialist firm, not a panel", detail: "It goes to a firm that works only on property tax" },
+            { title: "One team, not a panel", detail: "We work only on property tax, nothing else" },
           ]}
           footnote="No obligation and no hard sell. If your position is already right, we will say so."
         />

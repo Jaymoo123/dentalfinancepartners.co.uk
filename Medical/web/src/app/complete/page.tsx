@@ -106,7 +106,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base leading-relaxed text-slate-700">
-              We have everything we need. A specialist firm from our partner network may contact
+              We have everything we need. One of our medical accountants may contact
               you directly about your enquiry. If you would like to pick a time that suits you,
               you can book a callback below.
             </p>
@@ -135,9 +135,9 @@ export default async function CompletePage({
         backdrop={<MedicalBackdrop tone="navy" />}
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-          Add the last detail we need and a specialist firm from our partner network will be
+          Add the last detail we need and one of our medical accountants will be
           in touch to arrange your review call. Sending it commits you to nothing, and scope and
-          fees are agreed with that firm.
+          fees are agreed with you.
         </p>
       </SlimHero>
 

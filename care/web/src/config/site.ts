@@ -5,8 +5,8 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", ");
 
-// Pool model: enquiries are shared with regulated firms from our
-// specialist partner network (category wording, never a named firm).
+// The consent wording below is the legal disclosure and is owner-locked. Prospect-facing
+// and lead-facing copy everywhere else speaks in firm voice ("we", "our team").
 const partner = niche.partner;
 
 // Lead-form acknowledgement wording WITHOUT the trailing "See our Privacy

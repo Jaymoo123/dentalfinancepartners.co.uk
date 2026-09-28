@@ -163,7 +163,7 @@ export default function BookingPicker({ token }: { token: string }) {
           </p>
         )}
         <p className="mt-3 text-xs text-[var(--muted)]">
-          Booking commits you to nothing. A medical accountant from our specialist partner network will call you in your chosen window, and scope and fees are agreed with that firm.
+          Booking commits you to nothing. One of our medical accountants will call you in your chosen window, and scope and fees are agreed with you.
         </p>
       </div>
     </div>

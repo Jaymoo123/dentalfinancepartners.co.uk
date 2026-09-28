@@ -222,7 +222,7 @@ const SECTIONS: HubSection[] = [
 
 const PROOF_POINTS = [
   { title: "Claims tested against what is defensible", detail: "Subscriptions, indemnity, equipment and travel are each treated differently" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to an accountant who works with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to one of our accountants who works with doctors" },
   { title: "Modelled on your figures", detail: "Your own income mix, not a template" },
 ];
 
@@ -359,7 +359,7 @@ export default function MedicalExpensesPillarPage() {
           proofPoints={PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} submitLabel={cta.button} />}
           backdrop={<MedicalBackdrop />}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
         />
       </div>
 

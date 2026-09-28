@@ -511,9 +511,9 @@ export default function NHSPensionPage() {
           contained
           ground="slate"
           title="Get your NHS pension position reviewed"
-          description="Send your pension position and we will match you with a firm that works with doctors every day. They read the input amount, the taper and any Scheme Pays election together rather than one at a time."
+          description="Send your pension position and one of our medical accountants who works with doctors every day will read it. We read the input amount, the taper and any Scheme Pays election together rather than one at a time."
           proofPoints={MEDICAL_PROOF_POINTS}
-          footnote="No obligation. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
         />
       </div>
@@ -525,6 +525,6 @@ export default function NHSPensionPage() {
  *  client count, and nothing that implies an in-house team does the work. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];

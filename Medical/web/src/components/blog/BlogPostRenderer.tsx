@@ -290,8 +290,8 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                     <MiniCapture
                       formId="blog_short_resource"
                       messagePrefix={`[Blog short: ${categorySlug}] `}
-                      heading="Get this read by a specialist firm"
-                      blurb="Tell us about your situation and we will match it to a regulated firm that works with doctors. A medical accountant there reviews your position and confirms the next sensible step. Enquiring commits you to nothing."
+                      heading="Get this read by a medical accountant"
+                      blurb="Tell us about your situation and one of our medical accountants who works with doctors will review your position and confirm the next sensible step. Enquiring commits you to nothing."
                       submitLabel="Request a specialist review"
                       className={`my-10 ${cardShell} sm:p-8`}
                     />

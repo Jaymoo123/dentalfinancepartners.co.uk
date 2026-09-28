@@ -322,7 +322,7 @@ export const charityTypes: CharityType[] = [
       },
       {
         title: "A light-touch arrangement rather than a full service",
-        body: "Most charities under the threshold want one fixed annual touchpoint and somewhere to send a question. Introductions from this page are made on that footing, to a firm that works with charities of your size.",
+        body: "Most charities under the threshold want one fixed annual touchpoint and somewhere to send a question. We work on that footing, with charity accountants who look after charities of your size.",
       },
     ],
     faqs: [

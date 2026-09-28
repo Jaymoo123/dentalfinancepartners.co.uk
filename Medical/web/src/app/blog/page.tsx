@@ -38,13 +38,12 @@ export const metadata: Metadata = {
   },
 };
 
-/* Proof points describe the MATCH, never work done in house. This site takes an
-   enquiry and passes it to a specialist firm from the partner network, which is
-   what the privacy policy discloses, so copy that implies our own accountants do
-   the work contradicts our own disclosure (owner decision 5). */
+/* Proof points name mechanisms only. Firm voice throughout (owner ruling
+   2026-09-28): the brand is the accountancy firm, so the copy says what we do,
+   never what a partner firm, a specialist firm or a network does. */
 const LEAD_PROOF_POINTS = [
   {
-    title: "Matched to a specialist firm",
+    title: "Read by a medical accountant",
     detail:
       "Your enquiry goes to accountants who work with GP partnerships, salaried and locum doctors, and consultants with private practice income, not to a generalist who has to translate your pay statements first.",
   },
@@ -189,11 +188,11 @@ export default function BlogIndexPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Would you rather we read your figures than have you read the archive?"
-          description="Tell us how you are paid and what is on your mind, and we will match your enquiry to a regulated firm that works with doctors every day. Scope and fees are agreed with that firm, and sending the enquiry commits you to nothing."
+          description="Tell us how you are paid and what is on your mind, and one of our medical accountants who works with doctors every day will read it. Scope and fees are agreed with you, and sending the enquiry commits you to nothing."
           proofPoints={LEAD_PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} />}
           backdrop={<MedicalBackdrop tone="navy" />}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
         />
       </div>
 

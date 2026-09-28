@@ -165,10 +165,10 @@ export default async function ResourceGuidePage({
               Ready to apply this to your situation?
             </p>
             <p className="mt-2 text-base leading-relaxed text-slate-700">
-              The guide gives you the framework. Send us your position and we will match it to a
-              regulated firm that works with doctors, which can confirm the numbers, check any
+              The guide gives you the framework. Send us your position and one of our medical
+              accountants who works with doctors will confirm the numbers, check any
               reliefs that apply and advise on the best approach. Scope and fees are agreed with
-              that firm, and enquiring commits you to nothing.
+              you, and enquiring commits you to nothing.
             </p>
             <a
               href="/contact"

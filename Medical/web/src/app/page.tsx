@@ -67,7 +67,7 @@ const HOMEPAGE_FAQS = [
   {
     question: "Which doctors is this site for?",
     answer:
-      "GP partners and salaried GPs, hospital consultants with NHS and private income, locum and sessional doctors, junior doctors, and GP practices as entities. We publish nothing outside the medical professions and we route enquiries nowhere else, which is the point: the same questions recur, so the answers are already worked out. We are not the firm that files your return. We publish the research and we match the enquiry to a regulated firm in our specialist partner network.",
+      "GP partners and salaried GPs, hospital consultants with NHS and private income, locum and sessional doctors, junior doctors, and GP practices as entities. We work with nobody outside the medical professions, which is the point: the same questions recur, so the answers are already worked out. We publish the research, we build the calculators, and our medical accountants take the enquiries that come from them.",
   },
   {
     question: "Are you able to help doctors outside London?",
@@ -77,7 +77,7 @@ const HOMEPAGE_FAQS = [
   {
     question: "How much does a specialist medical accountant cost?",
     answer:
-      "Fees depend on what the work actually involves: a single self-assessment return for a salaried GP is not comparable to a six-partner practice with partnership accounts, superannuation certificates and six individual returns. We do not set or quote fees, because we are not the firm doing the work. Tell us your role, your income mix and whether a practice is involved, and the specialist firm your enquiry goes to can scope it against that rather than against a headline price that changes later.",
+      "Fees depend on what the work actually involves: a single self-assessment return for a salaried GP is not comparable to a six-partner practice with partnership accounts, superannuation certificates and six individual returns. We do not quote a headline price, because the price would change the moment we saw the work. Tell us your role, your income mix and whether a practice is involved, and one of our medical accountants can scope it against that rather than against a figure that changes later.",
   },
   {
     question: "Can I switch accountants part-way through the tax year?",
@@ -93,7 +93,7 @@ const HOMEPAGE_FAQS = [
 // This one carries both exact phrases plus "specialist medical accountants".
 const HOME_TITLE = "Specialist Medical Accountants & GP Accountants | UK";
 const HOME_DESCRIPTION =
-  "Medical tax research and free calculators for UK doctors, with enquiries matched to a specialist accounting firm. NHS Pension annual allowance, GP practice and partnership accounts, locum IR35 and tax returns, consultant private practice and medical expense claims.";
+  "Medical tax research and free calculators for UK doctors, with enquiries read by specialist medical accountants. NHS Pension annual allowance, GP practice and partnership accounts, locum IR35 and tax returns, consultant private practice and medical expense claims.";
 
 export const metadata: Metadata = {
   title: HOME_TITLE,
@@ -269,7 +269,7 @@ const trustItems = [
        a doctor, each with its own page. */
     title: "Matched to how you are paid",
     stat: "4",
-    body: "GPs, hospital consultants, locum doctors and junior doctors each have their own page here, because each is paid differently and taxed differently. Your enquiry goes to a firm from a specialist partner network, matched to which of those you are, and the first conversation is about whether they can help.",
+    body: "GPs, hospital consultants, locum doctors and junior doctors each have their own page here, because each is paid differently and taxed differently. Your enquiry goes to the accountant here who handles your way of being paid, and the first conversation is about whether we can help.",
   },
 ];
 
@@ -401,7 +401,7 @@ export default function HomePage() {
               Specialist medical accountants and GP accountants for UK doctors
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/90 sm:mt-6 sm:text-lg lg:text-xl">
-              We publish for doctors and nobody else: GP partners, salaried GPs, hospital consultants, locums and GP practices. We do not file your return. We write the research, we build the calculators, and we match your enquiry to a regulated firm in our specialist partner network whose year is NHS Pension annual allowance modelling, partnership accounts and superannuation certificates, locum IR35 and self-assessment, the private practice incorporation question, and expense claims that survive an HMRC look.
+              We work for doctors and nobody else: GP partners, salaried GPs, hospital consultants, locums and GP practices. We write the research, we build the calculators, and our year is NHS Pension annual allowance modelling, partnership accounts and superannuation certificates, locum IR35 and self-assessment, the private practice incorporation question, and expense claims that survive an HMRC look.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
@@ -738,7 +738,7 @@ export default function HomePage() {
                     ) : null}
                   </div>
                   <p className="mt-6 text-base leading-relaxed text-slate-700 sm:text-lg">
-                    Prefer to write? Use the form and we will match your enquiry to a specialist firm from the partner network, who will come back to you directly.
+                    Prefer to write? Use the form and one of our medical accountants will come back to you directly.
                   </p>
                 </div>
                 <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200 sm:p-8 lg:p-10">
@@ -772,7 +772,7 @@ export default function HomePage() {
             backdrop={<MedicalBackdrop tone="navy" />}
             footnote={
               <>
-                Initial conversations carry no obligation. What happens to the details you send, and the fact that they may be shared with a regulated firm from the specialist partner network so that firm can respond, is set out in the{" "}
+                Initial conversations carry no obligation. What happens to the details you send, and how we handle them so that we can respond, is set out in the{" "}
                 {/* The link needs its OWN colour. globals.css carries `a { color: var(--navy) }`
                     in @layer base, and a direct element rule beats an INHERITED value, so an
                     anchor with no colour utility renders navy whatever its parent says. On

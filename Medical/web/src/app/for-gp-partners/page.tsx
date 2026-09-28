@@ -117,7 +117,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant who works with GP partners",
   ctaBody:
-    "A call with a regulated firm from our specialist partner network, covering your drawings and tax reserve, your Type 1 certificate, and any buy-in or exit numbers. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
+    "A call with one of our medical accountants, covering your drawings and tax reserve, your Type 1 certificate, and any buy-in or exit numbers. Scope and fees are agreed with you, and enquiring commits you to nothing.",
   relatedCalculators: [
     {
       href: "/calculators/gp-partner-drawings-planner",

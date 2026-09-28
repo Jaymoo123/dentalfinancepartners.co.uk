@@ -70,7 +70,7 @@ export default async function ThankYouPage({
           <div className={siteContainerLg}>
             <div className={innerClass}>
               <p className={leadClass}>
-                Thanks, that is confirmed. A specialist firm from our partner network will contact you
+                Thanks, that is confirmed. One of our charity accountants will contact you
                 directly.
               </p>
               <Link href="/" className={`${backLinkClass} mt-8 inline-block`}>

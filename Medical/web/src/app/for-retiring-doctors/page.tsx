@@ -113,7 +113,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant about your retirement route",
   ctaBody:
-    "A conversation with a regulated firm from our specialist partner network on partial retirement against retire and return, your annual allowance position in your final working years, and any capital account settlement if you are leaving a partnership. That firm agrees its own scope with you, and nothing here commits you to anything.",
+    "A conversation with one of our medical accountants on partial retirement against retire and return, your annual allowance position in your final working years, and any capital account settlement if you are leaving a partnership. We agree the scope with you first, and nothing here commits you to anything.",
   relatedCalculators: [
     {
       href: "/calculators/nhs-pension-annual-allowance",

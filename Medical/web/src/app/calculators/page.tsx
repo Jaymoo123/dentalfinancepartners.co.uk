@@ -98,9 +98,9 @@ export default function CalculatorsIndexPage() {
         <LeadCTAPanel
           contained
           title="Not sure which figure applies to you?"
-          description="Send your position and we will match you with a firm that works with doctors every day. They read your NHS pension, your practice position and your personal return together."
+          description="Send your position and one of our medical accountants who works with doctors every day will read it. We read your NHS pension, your practice position and your personal return together."
           proofPoints={MEDICAL_PROOF_POINTS}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
         />
       </div>
@@ -112,6 +112,6 @@ export default function CalculatorsIndexPage() {
  *  client count, and nothing that implies an in-house team does the work. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];

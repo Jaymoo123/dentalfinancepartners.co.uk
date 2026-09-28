@@ -51,7 +51,7 @@ const REMOTE_STEPS = [
   {
     n: "03",
     title: "Video review",
-    body: "The specialist firm walks you through what they have read and what they would change, on a call you can take between clinics.",
+    body: "Your accountant walks you through what they have read and what they would change, on a call you can take between clinics.",
   },
   {
     n: "04",
@@ -60,11 +60,11 @@ const REMOTE_STEPS = [
   },
 ];
 
-/** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no
- *  client count, and nothing that implies an in-house team does the work. */
+/** Closing-panel proof points. Mechanisms only: no fee, no turnaround and no
+ *  client count. Firm voice (owner ruling 2026-09-28). */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "Covered wherever you practise", detail: "The match is made on your position, not your city" },
 ];
 
@@ -87,9 +87,9 @@ export default function LocationsHubPage() {
               GP accountants across the UK
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg">
-              Enquiries from GPs, consultants and locum doctors are matched with specialist medical
-              accounting firms. Pick your city for local context, or go straight to the form if your
-              city is not listed: the match does not depend on it.
+              GPs, consultants and locum doctors across the UK are looked after by our specialist
+              medical accountants. Pick your city for local context, or go straight to the form if your
+              city is not listed: our help does not depend on it.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
@@ -163,9 +163,9 @@ export default function LocationsHubPage() {
         <LeadCTAPanel
           contained
           title="Not based in these cities?"
-          description="Tell us your role and what is unresolved. Your enquiry is matched with a specialist medical accounting firm wherever in the UK you practise."
+          description="Tell us your role and what is unresolved. Your enquiry is read by a specialist medical accountant wherever in the UK you practise."
           proofPoints={MEDICAL_PROOF_POINTS}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel="Request a consultation" />}
         />
       </div>

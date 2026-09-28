@@ -113,7 +113,7 @@ export default function DetailsForm({
     return (
       <NoticeCard tone="primary" title="Thank you, that is everything we need">
         <p className="text-base leading-relaxed text-slate-700">
-          A specialist firm from our partner network will be in touch shortly. If you would like to
+          One of our charity accountants will be in touch shortly. If you would like to
           pick a time that suits you, you can book a callback below.
         </p>
         {bookingToken && (

@@ -234,7 +234,7 @@ const SECTIONS: Section[] = [
     ],
     figure: (
       <FigureCards
-        caption="Questions to put to a firm"
+        caption="Questions to put to your accountant"
         numbered
         items={[
           { label: "Track record", detail: "How many GP practices do they work with?" },
@@ -268,7 +268,7 @@ const SECTIONS: Section[] = [
        exceed the premium", which is an outcome claim nobody can test. Live
        defect 5 in docs/medical/_port/LIVE_DEFECTS.md, ruling taken 2026-09-11:
        cut the fees, keep the framing that explains what drives the scope. What
-       a firm charges is a conversation with that firm. */
+       we charge is a conversation with us. */
     heading: "What Drives the Scope of a GP Accounting Engagement",
     paragraphs: [
       "What a specialist engagement costs depends on how complicated the affairs are, and the complexity sits in the structure rather than in the hours. A salaried GP with a single NHS contract and limited private income needs a personal tax return and advisory support. A partner needs partnership accounts, superannuation certificates and profit-allocation work on top of that, and each of those moves when a partner joins or leaves.",
@@ -470,7 +470,7 @@ export default function GPAccountantServicesPillarPage() {
           description={cta.body}
           proofPoints={MEDICAL_PROOF_POINTS}
           backdrop={<MedicalBackdrop />}
-          footnote="No obligation and no hard sell. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation and no hard sell. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel={cta.button} />}
         />
       </div>
@@ -511,6 +511,6 @@ export default function GPAccountantServicesPillarPage() {
  *  client count, and nothing that implies an in-house team does the work. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];

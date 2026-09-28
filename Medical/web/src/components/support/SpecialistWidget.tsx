@@ -375,7 +375,7 @@ export function SpecialistWidget() {
             </span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">Medical Accountants UK</p>
-              <p className="truncate text-[11px] text-slate-300">Matched to a specialist medical accountant</p>
+              <p className="truncate text-[11px] text-slate-300">Speak to a specialist medical accountant</p>
             </div>
             <button
               type="button"

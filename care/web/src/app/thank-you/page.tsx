@@ -49,7 +49,7 @@ export default async function ThankYouPage({
       <main className="mx-auto max-w-2xl px-6 py-24 text-center">
         <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">Confirmed</h1>
         <p className="mt-4 text-neutral-600">
-          Thanks, that is confirmed. A specialist firm from our partner network will contact you
+          Thanks, that is confirmed. One of our care sector accountants will contact you
           directly.
         </p>
         <Link href="/" className="mt-8 inline-block font-medium underline">

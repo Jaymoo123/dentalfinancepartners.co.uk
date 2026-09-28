@@ -144,7 +144,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist medical accountant",
     magnetBlurbTemplate:
-      "We match your enquiry to a regulated firm that works with doctors, and a specialist there talks through your practice accounts, partnership drawings and deadlines.",
+      "One of our medical accountants who works with doctors reads your enquiry, then talks you through your practice accounts, partnership drawings and deadlines.",
   },
 };
 

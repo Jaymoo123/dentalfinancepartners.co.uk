@@ -9,8 +9,8 @@ const registeredOfficeLine = [office.line1, office.line2, office.city, office.po
   .filter(Boolean)
   .join(", ");
 
-// Pool model: enquiries are shared with regulated firms from our
-// specialist partner network (category wording, never a named firm).
+// Pool model: enquiries are handled by our own charity accountants; the
+// consent wording below stays category-level, never a named firm.
 const partner = niche.partner;
 
 // Lead-form acknowledgement wording WITHOUT the trailing "See our Privacy

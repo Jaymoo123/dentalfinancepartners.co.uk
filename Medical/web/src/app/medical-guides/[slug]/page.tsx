@@ -113,7 +113,7 @@ const GUIDE_CALCULATOR: Record<string, { href: string; label: string }> = {
  *  client count, and nothing that implies an in-house team does the work. */
 const MEDICAL_PROOF_POINTS = [
   { title: "Medical work only", detail: "NHS pension, practice accounts and private practice" },
-  { title: "Matched to a specialist firm", detail: "Your enquiry goes to accountants who work with doctors" },
+  { title: "Read by a medical accountant", detail: "Your enquiry goes to our accountants who work with doctors" },
   { title: "One position, not three", detail: "Practice, pension and personal return read together" },
 ];
 
@@ -301,9 +301,9 @@ export default async function MedicalGuidePage({ params }: Props) {
           contained
           ground="white"
           title="Need the answer for your own numbers?"
-          description="This guide gives you the framework; your own figures and circumstances are what decide the answer. Send your position and we will match you with a firm that works with doctors every day."
+          description="This guide gives you the framework; your own figures and circumstances are what decide the answer. Send your position and one of our medical accountants who works with doctors every day will read it."
           proofPoints={MEDICAL_PROOF_POINTS}
-          footnote="No obligation. If the specialist firm thinks your position is already right, they will tell you so."
+          footnote="No obligation. If our specialists think your position is already right, they will tell you so."
           form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
         />
       </div>

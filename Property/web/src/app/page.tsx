@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.name} | Property Accountants for UK Landlords`,
     description:
-      "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and a specialist partner network.",
+      "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and specialist landlord tax advice.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} | Property Accountants for UK Landlords`,
     description:
-      "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and a specialist partner network.",
+      "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and specialist landlord tax advice.",
   },
 };
 
