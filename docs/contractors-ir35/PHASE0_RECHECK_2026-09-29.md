@@ -143,7 +143,7 @@ Blocking item: the build-time sitemap dates (H7) and the category blog closer re
 - `npx tsc --noEmit -p contractors-ir35/web` — clean, no output.
 - `cd contractors-ir35/web && npx vitest run` — `Test Files 22 passed (22)`, `Tests 456 passed (456)`.
 
-## Fix round (2026-09-29)
+### Fix round, second agent (2026-09-29)
 
 **M2** `contractors-ir35/web/src/components/blog/BlogPostRenderer.tsx` (was lines
 54-58 and 381-387). Removed the `ctaCopyForCategory` import/read and the

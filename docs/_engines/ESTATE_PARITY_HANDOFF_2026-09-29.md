@@ -60,6 +60,11 @@ live in `docs/agency/`.
 
 ## 3. What to do, in order
 
+**Update 2026-09-29: section 3.1 is DONE** (recheck, fix round and verification; see
+`PHASE0_RECHECK_2026-09-29.md`, commits `c8be20cf`..`b8f1c4ed`). Every site is safe to deploy on the
+owner's word; deploy remains parked. Owner ruling 2026-09-29: lead-form consent text is the shared
+`leadConsentText` on every site. Next agent starts at 3.2 item 1 (startups-tech design port).
+
 **The owner has parked the deploy (2026-09-28 late: "I don't want to deploy yet").** Nothing in
 this section touches production. Appendix A holds the deploy runbook for the day he says go.
 

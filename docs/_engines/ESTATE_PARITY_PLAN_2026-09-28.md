@@ -200,3 +200,10 @@ assistant-naming rerun at the month-1 read; monitored_pages rows for the eight s
   tsc clean and vitest green on all 17; full serialised rebuild run before commit. Handoff for
   the next agent: `ESTATE_PARITY_HANDOFF_2026-09-29.md`. Phase 1 step 5 (the wording pass) is
   owner-led and never a sweep.
+- 2026-09-29: independent recheck of phase 0 on local builds (9 agents, `PHASE0_RECHECK_2026-09-29.md`):
+  wording reversal held on 15 of 17 sites; 7 HIGH mechanical gaps found (ecommerce nurture gaps never
+  changed, build-time sitemap dates on 5 sites, construction-cis blog calculator gate and og:image 404,
+  charities markup leak) plus 9 MEDIUM. Fix round (7 agents) + wills-probate schema + Opus verification:
+  all closed, 13 per-site commits `9ffcc175`..`b8f1c4ed`, every site safe to deploy. Owner rulings:
+  consent text = shared `leadConsentText` everywhere (no "up to three firms"); deploy still parked;
+  phase 1 may start. Next: 4.1 design port on startups-tech (plan priced at about 36 agents, 2 days).

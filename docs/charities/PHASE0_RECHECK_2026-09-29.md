@@ -167,7 +167,7 @@ Sweep total: 21 fields/entries carrying inline markup across `charity-services.t
 - `npx tsc --noEmit -p charities/web` — clean, no output, exit 0.
 - `cd charities/web && npx vitest run` — `Test Files 8 passed (8)`, `Tests 65 passed (65)`.
 
-## Fix round (2026-09-29)
+### Fix round, second agent (2026-09-29)
 
 - File: `charities/web/src/app/sitemap.ts`, lines 10-83 (static/service/for/guide/tool/category blocks).
 - Before: every static, service, for, guide, tool and category entry set `lastModified: now`; post entries already used `post.updatedDate || post.date`.

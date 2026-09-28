@@ -143,7 +143,7 @@ scratch script, output matched the wired TSX calls exactly):
 
 `sitemap.ts` (H7) was left untouched per instruction — owned by another agent.
 
-## Fix round (2026-09-29)
+### Fix round, second agent (2026-09-29)
 
 - File: `startups-tech/web/src/app/sitemap.ts`, lines 10-64 (static/service/for/tool/category blocks). Superseding the earlier note in this doc that H7 was "owned by another agent" — this fix round is that agent.
 - Before: every static, service, for, tool and category entry set `lastModified: now`; post entries already used `post.updatedDate || post.date`.
