@@ -4,7 +4,6 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { careServices, getService } from "@/data/care-services";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { JsonLd, buildBreadcrumb, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { niche } from "@/config/niche-loader";
@@ -102,7 +101,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </div>
     </section>
-    {niche.entity ? <EntityBlock {...niche.entity} /> : null}
     {service.faqs.length > 0 && (
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>

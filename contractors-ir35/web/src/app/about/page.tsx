@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
@@ -62,8 +61,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {/* Who we are. Two columns rather than a clamped prose block: §0.1's
           answer to "prose reads badly at full width" is to put something useful

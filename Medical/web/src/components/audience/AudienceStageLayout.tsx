@@ -9,7 +9,6 @@ import { RelatedArticles } from "@accounting-network/web-shared/design/blog/Rela
 import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { siteContainerLg, btnPrimary, btnSecondary, focusRing } from "@/components/ui/layout-utils";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
@@ -198,8 +197,6 @@ export function AudienceStageLayout({ data }: Props) {
           form={<LeadForm redirectOnSuccess={false} submitLabel="Ask a medical accountant" />}
         />
       </div>
-
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       <FaqSection
         className="bg-white py-12 sm:py-16 lg:py-20"

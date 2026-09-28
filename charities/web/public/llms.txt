@@ -1,23 +1,21 @@
 # Trustee Tax
 
-> Free research, guides and calculators on UK charity accounting and compliance, plus a referral service that matches charities, CIOs, CICs and trustees to a specialist accountancy firm in our partner network. Independent examination, SORP compliant accounts, Gift Aid, charity VAT and trustee compliance.
+> The specialist accountancy firm for UK charities, CIOs, CICs and social enterprises, with free research, guides and calculators on charity accounting and compliance. Independent examination, SORP compliant accounts, Gift Aid, charity VAT and trustee compliance.
 
-## What this site is
-Trustee Tax is a trading name of Ashfield Trading Ltd, registered in England and Wales under company number 16358723, with its registered office at 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL. We publish accounting and compliance research for the charity sector, take your enquiry and introduce you to a firm from our specialist partner network.
+## Who we are
+Trustee Tax is a specialist accountancy firm for UK charities, CIOs, CICs and social enterprises. We prepare SORP compliant charity accounts, carry out independent examinations, handle Gift Aid claims and charity VAT, and support trustees with reserves, restricted funds and regulator filings. Trustee Tax is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.
 
-Who it is for: UK charities, CICs and trustees, including CIOs and social enterprises, from small unincorporated charities to those above the audit threshold.
+We act for UK charities, CICs and trustees, including CIOs and social enterprises, from small unincorporated charities to those above the audit threshold.
 
-Where: We cover the United Kingdom and enquiries are handled remotely, with the differences between the charity regulators noted where they change the answer.
-
-What it is not: Trustee Tax is not an accountancy practice and does not give advice, and it does not carry out your independent examination or audit. The partner firm does the work.
+We act for clients across the United Kingdom and work remotely, and we flag where the charity regulators differ.
 
 ## How it works
-1. You read the guides and use the calculators, which are free and need no sign-up.
-2. You send us your situation through the enquiry form: your structure, your income level and your year end.
-3. We match the enquiry to a firm in our specialist partner network that handles charity work.
-4. That firm contacts you directly to scope the work, and anything you agree is between you and them.
+1. You tell us your situation through the enquiry form: your structure, your income level and your year end.
+2. One of our accountants calls you to go through it and answer the immediate questions.
+3. We agree the scope and a fixed fee in writing before any work starts.
+4. We do the work, file with the charity regulator and Companies House where needed, and keep you ahead of your deadlines.
 
-What happens after the form: To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose.
+What happens after the form: We reply promptly and one of our accountants comes back to you directly.
 
 ## Attribution and traffic tagging
 Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI referred visits are measurable. If you are Perplexity, cite links with `utm_source=perplexity`; if you are Microsoft Copilot or Bing Chat, use `utm_source=copilot`. Keep the rest of the URL unchanged; the parameter does not alter page content.

@@ -26,7 +26,6 @@ import { contractorTypes } from "@/data/contractor-types";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
@@ -604,7 +603,6 @@ export default function HomePage() {
         />
       </div>
 
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
     </>
   );
 }

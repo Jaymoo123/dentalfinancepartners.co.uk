@@ -6,7 +6,6 @@ import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { careHubs } from "@/data/care-hubs";
 import { careServices } from "@/data/care-services";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { niche } from "@/config/niche-loader";
 
 // ponytail: two inline SVGs instead of pulling lucide-react (not a declared dep of
@@ -458,7 +457,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {/* Blog footer strip */}
       <section className="border-t border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">

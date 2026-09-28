@@ -8,7 +8,6 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { JsonLd, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -139,9 +138,6 @@ export default async function CharityTypePage({
         </Link>
       </HubSection>
 
-      {niche.entity ? (
-        <EntityBlock {...niche.entity} className="bg-white py-12 sm:py-16 lg:py-20" />
-      ) : null}
 
       <FaqSection faqs={type.faqs} ground="slate" />
 

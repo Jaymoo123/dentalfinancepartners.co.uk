@@ -35,12 +35,12 @@ export function buildOrganizationJsonLd() {
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
     // The entity sentence, not the meta description: the meta is a ranking
-    // string and says "NHS pension advice"; the node must not.
+    // string; the node states who the firm is and who it acts for.
     description: niche.entity?.firm ?? siteConfig.description,
     tagline: siteConfig.tagline,
-    // Preserve the hand-rolled "Organization" @type (shared builder defaults
-    // to ProfessionalService when this is omitted).
-    organizationType: "Organization",
+    // The firm is an accountancy practice, so the node says so (owner ruling
+    // 2026-09-28; the shared builder defaults to ProfessionalService).
+    organizationType: "AccountingService",
     publisherLogoUrl: siteConfig.publisherLogoUrl,
     address: {
       "@type": "PostalAddress",

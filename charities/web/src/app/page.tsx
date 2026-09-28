@@ -32,7 +32,6 @@ import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-b
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { DrawnTickList } from "@accounting-network/web-shared/design/marketing/DrawnTickList";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { niche } from "@/config/niche-loader";
 
 export function generateMetadata(): Metadata {
@@ -726,7 +725,6 @@ export default function HomePage() {
         />
       </div>
 
-      {niche.entity ? <EntityBlock {...niche.entity} className={`bg-white ${sectionY}`} /> : null}
 
       {/* ── 13. FAQ. Native <details>, not the kit FaqSection: the accordion
               unmounts closed answers, and this page publishes those answers in

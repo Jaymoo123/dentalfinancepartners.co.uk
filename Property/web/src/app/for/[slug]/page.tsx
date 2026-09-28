@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildService, buildFaqPage, JsonLd } from "@accounting-network/web-shared/schema";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { CardStack } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { TopicHero, TopicSection } from "@/components/property/TopicSection";
@@ -104,8 +103,6 @@ export default async function AudiencePage({
       <TopicSection id="how-we-help" eyebrow="What a specialist reviews" title="What a specialist reviews" tone="slate">
         <CardStack items={audience.howWeHelp} columns={2} tone="white" html />
       </TopicSection>
-
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       <FaqSection faqs={audience.faqs} html />
 

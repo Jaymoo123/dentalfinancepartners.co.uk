@@ -7,7 +7,6 @@ import { allTools } from "@/lib/calculators/registry";
 import { btnOnDark, btnPrimary, btnSecondary, siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
@@ -489,8 +488,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {/* FAQ */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">

@@ -8,7 +8,6 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { JsonLd, buildBreadcrumb, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { contractorTypes, getContractorType } from "@/data/contractor-types";
@@ -243,8 +242,6 @@ export default async function ContractorTypePage({
           </div>
         </div>
       </section>
-
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       {/* FAQ. Native <details>, deliberately NOT the kit's FaqSection: that
           component keeps closed answers out of the server HTML. */}

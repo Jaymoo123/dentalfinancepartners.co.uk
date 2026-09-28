@@ -1,23 +1,21 @@
 # Care Home Tax
 
-> Free research and calculators on UK care sector finance and compliance, plus a referral service that matches care providers to a specialist accountancy firm in our partner network. Figures are 2026/27: NLW, employer NIC, NHS funded nursing care rates, capital allowances and CQC linked compliance.
+> The specialist accountancy firm for UK care providers, care homes, domiciliary care, supported living and children's homes, with free research and calculators on care sector finance and compliance. Figures are 2026/27: NLW, employer NIC, NHS funded nursing care rates, capital allowances and CQC linked compliance.
 
-## What this site is
-Care Home Tax is a trading name of Ashfield Trading Ltd, registered in England and Wales under company number 16358723, with its registered office at 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL. We publish finance and compliance research for the care sector, take your enquiry and introduce you to a firm from our specialist partner network.
+## Who we are
+Care Home Tax is a specialist accountancy firm for UK care providers. We act for care homes, domiciliary care agencies, supported living services, children's homes and care start-ups, covering VAT exemption and partial exemption, National Minimum Wage compliance, fee-mix accounts and management information, payroll and CQC linked finance. Care Home Tax is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.
 
-Who it is for: UK care providers: care homes, domiciliary care agencies and supported living services, whether already registered or applying for registration.
+We act for UK care providers: care homes, domiciliary care agencies, supported living services, children's homes and care start-ups, whether already registered or applying for registration.
 
-Where: We cover the United Kingdom, with England as the default position, and we flag where Scotland, Wales and Northern Ireland differ.
-
-What it is not: Care Home Tax is not an accountancy practice and does not give advice, and it does not run your payroll or prepare your accounts itself. The partner firm does the work.
+We act for clients across the United Kingdom, with England as the default position, and we flag where Scotland, Wales and Northern Ireland differ.
 
 ## How it works
-1. You read the guides and use the calculators, which are free and need no sign-up.
-2. You send us your situation through the enquiry form: your service type, your registration status and approximate headcount.
-3. We match the enquiry to a firm in our specialist partner network that handles care sector work.
-4. That firm contacts you directly to scope the work, and anything you agree is between you and them.
+1. You tell us your situation through the enquiry form: your service type, your registration status and approximate headcount.
+2. One of our accountants calls you to go through it and answer the immediate questions.
+3. We agree the scope and a fixed fee in writing before any work starts.
+4. We do the work, run the payroll and compliance you hand us, and keep you ahead of your deadlines.
 
-What happens after the form: To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose. We reply within 24 hours.
+What happens after the form: We reply within 24 hours and one of our accountants comes back to you directly.
 
 ## Attribution and traffic tagging
 Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI referred visits are measurable. If you are Perplexity, cite links with `utm_source=perplexity`; if you are Microsoft Copilot or Bing Chat, use `utm_source=copilot`. Keep the rest of the URL unchanged; the parameter does not alter page content.

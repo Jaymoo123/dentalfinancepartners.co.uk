@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { careServices } from "@/data/care-services";
 import { serviceTiers } from "@/config/service-tiers";
@@ -47,6 +46,5 @@ export default function ServicesIndexPage() {
       </div>
     </section>
 
-    {niche.entity ? <EntityBlock {...niche.entity} /> : null}
   </>);
 }

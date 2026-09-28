@@ -7,7 +7,6 @@ import {
   sectionYLoose,
 } from "@/components/ui/layout-utils";
 import { PageHero } from "@/components/hubs/HubParts";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { niche } from "@/config/niche-loader";
 
 export const metadata: Metadata = {
@@ -47,7 +46,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       <section className="bg-white">
         <div className={`${siteContainerLg} ${sectionYLoose}`}>

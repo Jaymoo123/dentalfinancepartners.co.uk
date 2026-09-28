@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { niche } from "@/config/niche-loader";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -18,7 +17,6 @@ export default function AboutPage() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">Care home accounts, payroll, VAT and financial compliance are specialist enough that general accounting experience is not the same as care sector experience.</p>
       </div>
     </section>
-    {niche.entity ? <EntityBlock {...niche.entity} /> : null}
     <div id="book" className="scroll-mt-24">
       <LeadCTAPanel
         contained

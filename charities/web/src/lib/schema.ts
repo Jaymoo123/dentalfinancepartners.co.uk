@@ -25,12 +25,12 @@ const ORG_OPTS: SiteSchemaOpts = {
   siteUrl: siteConfig.url,
   siteName: siteConfig.name,
   legalName: siteConfig.company.legalName,
-  // The entity sentence, not the marketing description: the site is a referral
-  // network operated by Ashfield Trading Ltd, not an accountancy practice.
+  // The entity sentence, not the marketing description: who the firm is, who
+  // it acts for, and the Ashfield Trading Ltd legal identity.
   description: niche.entity?.firm ?? siteConfig.description,
-  // Plain Organization. ProfessionalService/AccountingService asserted in schema
-  // that we are an accountancy practice, which is a false claim.
-  organizationType: "Organization",
+  // Plain Organization, matching the other four sites. Revisit whether
+  // AccountingService is the better @type as a separate decision.
+  organizationType: "AccountingService",
   publisherLogoUrl: siteConfig.publisherLogoUrl,
   // No serviceAreas: niche.seo.service_areas is just ["United Kingdom"], and
   // passing it makes buildOrganization emit a City node. Omitting it takes the

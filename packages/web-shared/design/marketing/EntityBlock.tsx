@@ -15,12 +15,12 @@ export type EntityCopy = {
   where: string;
   howItWorks: string[];
   next: string;
-  notWhatWeAre: string;
+  notWhatWeAre?: string;
 };
 
 /**
  * Plain-language "who is this" block for a `for/[slug]` segment page, sat
- * before the FAQ. Six labelled parts, semantic HTML only, no icons or images
+ * before the FAQ. Five labelled parts, semantic HTML only, no icons or images
  * and no new card styling: a model reading the page (or a person skimming it)
  * gets the entity, the scope and the boundary in one place.
  *
@@ -72,10 +72,14 @@ export function EntityBlock({
           <p>{next}</p>
         </Prose>
 
-        <h2 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">What we are not</h2>
-        <Prose>
-          <p>{notWhatWeAre}</p>
-        </Prose>
+        {notWhatWeAre ? (
+          <>
+            <h2 className="mt-8 text-base font-bold text-slate-900 sm:text-lg">What we are not</h2>
+            <Prose>
+              <p>{notWhatWeAre}</p>
+            </Prose>
+          </>
+        ) : null}
       </div>
     </section>
   );

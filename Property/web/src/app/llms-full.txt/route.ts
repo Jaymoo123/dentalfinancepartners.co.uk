@@ -16,15 +16,13 @@ ${entity.firm}
 
 ${entity.serves} ${entity.where}
 
-${entity.notWhatWeAre}
-
 This file is a flat, machine-readable dump of every published post on
 ${niche.domain}. It exists for AI retrieval, training, and citation.
 The structured index lives at https://${niche.domain}/llms.txt.
 
 Editorial: all figures use current UK rates. Facts current as at 2026-09-27.
-Always verify against gov.uk for time-sensitive decisions. To be introduced to
-a firm in our specialist partner network, see https://${niche.domain}/contact.
+Always verify against gov.uk for time-sensitive decisions. To speak to one of
+our accountants, see https://${niche.domain}/contact.
 
 `,
   sections: [

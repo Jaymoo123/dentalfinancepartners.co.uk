@@ -1,16 +1,15 @@
 {
   "entity": {
-    "firm": "Trustee Tax is a trading name of Ashfield Trading Ltd, registered in England and Wales under company number 16358723, with its registered office at 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL. We publish accounting and compliance research for the charity sector, take your enquiry and introduce you to a firm from our specialist partner network.",
-    "serves": "UK charities, CICs and trustees, including CIOs and social enterprises, from small unincorporated charities to those above the audit threshold.",
-    "where": "We cover the United Kingdom and enquiries are handled remotely, with the differences between the charity regulators noted where they change the answer.",
+    "firm": "Trustee Tax is a specialist accountancy firm for UK charities, CIOs, CICs and social enterprises. We prepare SORP compliant charity accounts, carry out independent examinations, handle Gift Aid claims and charity VAT, and support trustees with reserves, restricted funds and regulator filings. Trustee Tax is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK charities, CICs and trustees, including CIOs and social enterprises, from small unincorporated charities to those above the audit threshold.",
+    "where": "We act for clients across the United Kingdom and work remotely, and we flag where the charity regulators differ.",
     "howItWorks": [
-      "You read the guides and use the calculators, which are free and need no sign-up.",
-      "You send us your situation through the enquiry form: your structure, your income level and your year end.",
-      "We match the enquiry to a firm in our specialist partner network that handles charity work.",
-      "That firm contacts you directly to scope the work, and anything you agree is between you and them."
+      "You tell us your situation through the enquiry form: your structure, your income level and your year end.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work, file with the charity regulator and Companies House where needed, and keep you ahead of your deadlines."
     ],
-    "next": "To answer your enquiry, your details may be shared with a firm from our specialist partner network who will contact you. If that firm is unable to help, your details may be passed to another firm in the network for the same purpose.",
-    "notWhatWeAre": "Trustee Tax is not an accountancy practice and does not give advice, and it does not carry out your independent examination or audit. The partner firm does the work."
+    "next": "We reply promptly and one of our accountants comes back to you directly."
   },
   "niche_id": "charities",
   "display_name": "Trustee Tax",

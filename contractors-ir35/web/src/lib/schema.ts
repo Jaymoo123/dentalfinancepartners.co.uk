@@ -67,7 +67,7 @@ function siteOpts(): SiteSchemaOpts {
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
     description: niche.entity?.firm ?? siteConfig.description,
-    organizationType: "Organization",
+    organizationType: "AccountingService",
     publisherLogoUrl: siteConfig.publisherLogoUrl,
     address: {
       "@type": "PostalAddress",

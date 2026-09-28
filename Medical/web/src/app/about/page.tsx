@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Eyebrow, Prose } from "@accounting-network/web-shared/design/primitives/page-blocks";
-import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
@@ -115,8 +114,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {niche.entity ? <EntityBlock {...niche.entity} className="bg-slate-50 py-16 sm:py-20" /> : null}
 
       <p className="mx-auto max-w-3xl px-4 py-6 text-center text-sm leading-relaxed text-slate-700 sm:px-6 lg:px-8">
         The detail, including how many firms your details can reach and how to opt out, is in our{" "}

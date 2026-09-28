@@ -26,13 +26,13 @@ export function buildOrganizationJsonLd() {
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
     // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
-    // What the entity IS, not the marketing meta: the referral-network wording
+    // What the entity IS, not the marketing meta: the firm-first sentence
     // from niche.config.json entity.firm.
     description: niche.entity?.firm ?? siteConfig.description,
     tagline: siteConfig.tagline,
     // Preserve the hand-rolled "Organization" @type (shared builder defaults
     // to ProfessionalService when this is omitted).
-    organizationType: "Organization",
+    organizationType: "AccountingService",
     publisherLogoUrl: siteConfig.publisherLogoUrl,
     address: {
       "@type": "PostalAddress",
