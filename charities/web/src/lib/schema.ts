@@ -25,11 +25,12 @@ const ORG_OPTS: SiteSchemaOpts = {
   siteUrl: siteConfig.url,
   siteName: siteConfig.name,
   legalName: siteConfig.company.legalName,
-  description: siteConfig.description,
-  // Array form preserves the pre-port ["ProfessionalService", <niche type>] @type.
-  // SiteSchemaOpts.organizationType is typed as string, but buildOrganization
-  // passes it straight through to Organization["@type"] (string | string[]).
-  organizationType: ["ProfessionalService", niche.seo.organization_type] as unknown as string,
+  // The entity sentence, not the marketing description: the site is a referral
+  // network operated by Ashfield Trading Ltd, not an accountancy practice.
+  description: niche.entity?.firm ?? siteConfig.description,
+  // Plain Organization. ProfessionalService/AccountingService asserted in schema
+  // that we are an accountancy practice, which is a false claim.
+  organizationType: "Organization",
   publisherLogoUrl: siteConfig.publisherLogoUrl,
   // No serviceAreas: niche.seo.service_areas is just ["United Kingdom"], and
   // passing it makes buildOrganization emit a City node. Omitting it takes the

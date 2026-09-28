@@ -267,7 +267,7 @@ const faqs = [
   {
     question: "Do you work with CICs as well as charities?",
     answer:
-      "Yes. We prepare accounts and file the CIC34 community interest report for community interest companies. CICs are regulated by the Office of the Regulator of Community Interest Companies, not the Charity Commission, and they cannot claim Gift Aid or charity rate relief. We make sure CIC boards understand what does and does not apply to their structure.",
+      "Yes. We prepare accounts and file the CIC34 community interest report for community interest companies, and set out what does and does not apply to the structure. CICs are regulated by the Office of the Regulator of Community Interest Companies, not the Charity Commission, and they cannot claim Gift Aid or charity rate relief.",
   },
   {
     question: "Can you prepare SORP-compliant accounts?",
