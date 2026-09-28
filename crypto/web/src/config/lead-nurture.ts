@@ -344,10 +344,9 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and one of our accountants will call you.",
+        "Just reply with a time that suits and a specialist will call you.",
         [
           "Thanks for your enquiry. It has just come through to us and a crypto tax specialist is ready to help.",
-          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of your situation, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
@@ -383,7 +382,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, the team at Crypto Tax Partners here. Enquiries like yours are exactly what our accountants handle, so we have kept time aside this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, the team at Crypto Tax Partners here. Enquiries like yours are exactly what our specialists handle, so we have kept time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -433,7 +432,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Crypto Tax Partners here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Crypto Tax Partners here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Crypto Tax Partners here. Most holders we speak to came with the same question you raised, and one short call usually clears up months of uncertainty. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -452,7 +451,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free crypto tax review is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free crypto tax review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -566,10 +565,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and one of our accountants will call you.`,
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and one of our accountants will call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and a crypto tax specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",

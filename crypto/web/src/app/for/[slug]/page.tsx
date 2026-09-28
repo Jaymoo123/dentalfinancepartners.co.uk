@@ -31,7 +31,7 @@ export default async function CryptoHubPage({ params }: { params: Promise<{ slug
       howWeHelp={hub.howWeHelp}
       faqs={hub.faqs}
       ctaHeading="Speak to a crypto tax specialist."
-      ctaBody={hub.ctaBody}
+      ctaBody={`Tell us about your ${audience} situation and we will explain what is involved.`}
       pageUrl={`/for/${slug}`}
     />
   );

@@ -120,10 +120,12 @@ export default function AboutPage() {
           crypto publishes neither a fee nor a turnaround figure, and
           inventing one is how a removed claim comes back. */}
       <LeadCTAPanel
+        eyebrow="Free call"
         title="Tell us where you are"
-        description="Send us the shape of your position: what you hold, how you came by it, and which tax years are open. You do not need your figures ready. No obligation and no hard sell, if your position is already right, we will say so."
+        description="Send us the shape of your position: what you hold, how you came by it, and which tax years are open. You do not need your figures ready."
         proofPoints={[]}
         formTitle="Get in touch"
+        footnote="No obligation and no hard sell. If your position is already right, we will say so."
         form={<LeadForm submitLabel="Send enquiry" />}
       />
     </>

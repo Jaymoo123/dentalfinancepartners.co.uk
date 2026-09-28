@@ -36,8 +36,8 @@ export default function ForIndexPage() {
         all. proofPoints={[]}: crypto publishes neither a fee nor a
         turnaround figure. */}
     <LeadCTAPanel
-      title="Not sure which holder type fits you?"
-      description="Tell us what you hold and how you came by it. One of our accountants will tell you which rules apply to you and what needs reporting, whichever holder type you turn out to be."
+      title="Specialist crypto tax for every type of holder."
+      description="Each holder type faces different tax rules and compliance obligations. We work with all of them."
       proofPoints={[]}
       formTitle="Get in touch"
       form={<LeadForm submitLabel="Send enquiry" />}

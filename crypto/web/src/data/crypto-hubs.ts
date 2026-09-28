@@ -4,15 +4,12 @@ export interface CryptoHub {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
-  /** Closing-panel body, one sentence, written per audience (not the slug pasted into a template). */
-  ctaBody: string;
 }
 
 export const cryptoHubs: CryptoHub[] = [
   {
     slug: "investors",
     title: "Investors",
-    ctaBody: "Give us the exchanges and wallets you have used and a rough idea of what you hold. We will come back with your CGT position and what still has to be reported.",
     headline: "CGT and Self Assessment for UK crypto investors",
     metaTitle: "Crypto Investor Tax UK | Crypto Tax Partners",
     metaDescription: "Specialist UK tax accountants for crypto investors. CGT, s104 pooling, AEA offset and Self Assessment for UK cryptoasset holders.",
@@ -85,7 +82,6 @@ export const cryptoHubs: CryptoHub[] = [
   {
     slug: "day-traders",
     title: "Day Traders",
-    ctaBody: "Send your trading history and we will give you a reasoned view on whether HMRC would treat you as an investor or a trader, and what each of those would cost you.",
     headline: "Investor vs trader status and high-volume CGT for UK day traders",
     metaTitle: "Day Trader Tax UK | Investor vs Trader Status | Crypto Tax Partners",
     metaDescription: "UK tax for day traders in crypto, forex and CFDs. Investor vs trader status, badges of trade, high-volume CGT reconciliation.",
@@ -154,7 +150,6 @@ export const cryptoHubs: CryptoHub[] = [
   {
     slug: "defi-and-staking",
     title: "DeFi and Staking",
-    ctaBody: "Show us the protocols you have used and we will go through them entry by entry: what counts as a disposal, what is income on receipt, and where the treatment is still a judgement call.",
     headline: "DeFi and staking tax for UK cryptoasset participants",
     metaTitle: "DeFi and Staking Tax UK | Crypto Tax Partners",
     metaDescription: "UK tax for DeFi and staking participants. Disposal events, staking income, LP entries and HMRC guidance on DeFi transactions.",
@@ -227,7 +222,6 @@ export const cryptoHubs: CryptoHub[] = [
   {
     slug: "nft-creators-and-flippers",
     title: "NFT Creators and Flippers",
-    ctaBody: "Tell us whether you mint, flip, or do both. We will separate the royalties and creator income from the disposals and tell you what each side owes.",
     headline: "NFT tax for UK creators and flippers",
     metaTitle: "NFT Tax UK | CGT and Income Tax for NFT Creators | Crypto Tax Partners",
     metaDescription: "UK tax for NFT creators and traders. CGT on disposals, income tax on royalties, trader vs investor status for NFT flippers.",
@@ -295,7 +289,6 @@ export const cryptoHubs: CryptoHub[] = [
 
   {
     slug: "miners",
-    ctaBody: "Describe your setup and send the reward history. We will value the rewards on the day they landed and work out the gain that follows when you sell.",
     title: "Miners",
     headline: "Crypto mining tax for UK miners: income, CGT and the two-step",
     metaTitle: "Crypto Mining Tax UK | Income and CGT for Miners | Crypto Tax Partners",
@@ -368,7 +361,6 @@ export const cryptoHubs: CryptoHub[] = [
 
   {
     slug: "businesses",
-    ctaBody: "Tell us how the company holds, accepts or pays in crypto. We will set out the Corporation Tax, VAT and payroll position and who has to file what, and by when.",
     title: "Businesses",
     headline: "Crypto tax for UK businesses: Corporation Tax, VAT and PAYE",
     metaTitle: "Business Crypto Tax UK | Companies Holding or Accepting Crypto | Crypto Tax Partners",

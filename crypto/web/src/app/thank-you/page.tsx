@@ -72,7 +72,8 @@ export default async function ThankYouPage({
           <div className={siteContainerLg}>
             <div className="mx-auto max-w-2xl">
               <p className="text-base leading-relaxed text-slate-700">
-                Thanks, that is confirmed. One of our accountants will contact you directly.
+                Thanks, that is confirmed. A specialist firm from our partner network will contact
+                you directly.
               </p>
               <Link href="/" className="mt-8 inline-block font-medium text-[var(--accent-strong)] underline">
                 Back to the homepage

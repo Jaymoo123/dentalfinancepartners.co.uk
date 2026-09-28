@@ -30,7 +30,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       howWeHelp={service.howWeHelp}
       faqs={service.faqs}
       ctaHeading="Speak to a crypto tax specialist."
-      ctaBody={service.ctaBody}
+      ctaBody="Tell us about your situation and we will come back to you."
       pageUrl={`/services/${slug}`}
     />
   );
