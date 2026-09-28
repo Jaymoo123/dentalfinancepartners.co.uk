@@ -12,6 +12,34 @@ Built via `docs/_engines/SITE_SPINUP.md`.
 
 **DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**
 
+## 2026-09-28 (later) Independent full lead-kit check, LIVE site
+
+Report: `docs/contractors-ir35/_wave1/qa/LEAD_KIT_CHECK_2026-09-28.md`. Cross-site:
+`docs/_engines/LEAD_KIT_CHECK_2026-09-28.md`. Read on the LIVE site (deployed from `a796de63`), 41
+routes, all 200. Report only: nothing fixed, deployed or pushed.
+
+Bodies excellent, machine layer clean, kit still in the old practice voice. 7ec4dd0f fixed nine rows
+but missed niche.config.json blog.cta_body, so "We will review your contract, your working practices
+and your current structure" is live on all 62 blog posts while llms.txt on the same domain says "it
+does not review contracts". Free-call claim on all 41 routes including the header nav. Footer
+strapline carries a practice claim, advice in our own voice and "vs Ltd". /services is entirely the
+old voice and contradicts its own block five times. Nurture runs 25 days not 11.
+
+Highest-leverage fix: the blog category CTAs are dead code. BlogPostRenderer.tsx:373-379 renders
+niche.blog.cta_*; ctaCopyForCategory is imported only by the hub route blog/[category]/page.tsx:10,63;
+the renderer already receives categorySlug (line 28) and never uses it. blog-categories.test.ts is
+green because it tests the map, never the render. One line retires the blog rows of the free-call
+class and the contract-review survivor at once.
+
+Still valid and NOT a screenshot artefact: the four-stat band stacks to one column at 390 because
+sm:grid-cols-2 starts at 640. Property uses grid-cols-2.
+
+Method correction worth keeping: the first screenshot pass reported site-wide text clipping at 390.
+It was a capture artefact. Edge headless `--window-size=390,844` does not emulate a mobile viewport
+and crops a wider layout; the same command clips gov.uk. Re-tested with true emulation, this site
+returns document `scrollWidth` exactly 390 and zero overflowing elements. Do not act on any 390
+clipping report, including yesterday's, without re-checking with real emulation against a control.
+
 ## 2026-09-28 Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;

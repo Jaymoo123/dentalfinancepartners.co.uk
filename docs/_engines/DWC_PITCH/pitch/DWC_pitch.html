@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Double Wired Creative. Designer and Marketer for Accountants</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  :root {
+    --navy:#0b0724; --navy2:#171040; --line-dark:#2a2260;
+    --ink:#14122b; --body:#3b3a52; --muted:#6b6a80; --line:#e6e4f0; --tint:#f6f5fb;
+    --indigo:#818cf8; --orange:#fb923c; --cream:#fde9d6;
+    --on-dark:#d9d7ea; --on-dark-muted:#9b98b8;
+  }
+  html, body { margin:0; background:#fff; color:var(--ink); font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif; font-size:10.5pt; line-height:1.55; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  a { color:inherit; text-decoration:none; }
+
+  /* page frame */
+  .page { width:210mm; height:297mm; padding:16mm 20mm 20mm; page-break-after:always; position:relative; display:flex; flex-direction:column; overflow:hidden; background:#fff; }
+  .page:last-child { page-break-after:auto; }
+  .page.dark { background:var(--navy); color:var(--on-dark); }
+  .hairline { height:3px; background:linear-gradient(90deg,var(--indigo),var(--orange)); border-radius:2px; margin:0 0 10mm; }
+
+  /* header strip (mimics site nav) */
+  .top { display:flex; justify-content:space-between; align-items:center; margin-bottom:12mm; }
+  .mark { font-weight:700; font-size:8.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--ink); }
+  .dark .mark { color:#fff; }
+  .mark i { display:inline-block; width:3.6mm; height:3.6mm; border-radius:50%; background:linear-gradient(135deg,var(--indigo),var(--orange)); vertical-align:-0.6mm; margin-right:2.2mm; }
+  .top .pg { font-size:8pt; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+  .dark .top .pg { color:var(--on-dark-muted); }
+
+  /* type */
+  .serif { font-family:Fraunces,Georgia,"Times New Roman",serif; font-weight:700; letter-spacing:-.012em; }
+  .grad { background:linear-gradient(90deg,var(--indigo),var(--orange)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  h1 { font-size:38pt; line-height:1.04; margin:0 0 7mm; color:#fff; }
+  h2 { font-size:23pt; line-height:1.12; margin:0 0 5mm; max-width:158mm; color:var(--ink); }
+  .dark h2 { color:#fff; }
+  h3 { font-size:10.5pt; margin:0 0 2.5mm; font-weight:700; color:var(--ink); }
+  .dark h3 { color:#fff; }
+  p { margin:0 0 4mm; color:var(--body); }
+  .dark p { color:var(--on-dark); }
+  .lead { font-size:12pt; line-height:1.5; max-width:152mm; }
+  .small { font-size:9.5pt; color:var(--muted); }
+  .dark .small { color:var(--on-dark-muted); }
+  ul { margin:0 0 4mm; padding-left:4.5mm; color:var(--body); }
+  .dark ul { color:var(--on-dark); }
+  li { margin-bottom:1.8mm; }
+
+  .eyebrow { display:inline-block; font-size:7.5pt; letter-spacing:.18em; text-transform:uppercase; font-weight:700; padding:1.3mm 3.2mm; border-radius:3px; margin:0 0 5mm; background:var(--cream); color:#7c2d12; }
+  .dark .eyebrow { background:rgba(251,146,60,.14); color:var(--orange); }
+
+  /* layout */
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:7mm; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:5mm; }
+  .card { border:1px solid var(--line); border-radius:12px; padding:6mm; background:#fff; }
+  .card p, .card ul { margin-bottom:0; }
+  .dark .card { background:var(--navy2); border-color:var(--line-dark); }
+  .tint { background:var(--tint); border-color:#dcd9f0; }
+
+  .stat { font-size:30pt; line-height:1; margin-bottom:2.5mm; color:#fff; }
+  .stat small { display:block; font-family:Inter,sans-serif; font-size:9pt; font-weight:500; color:var(--on-dark-muted); margin-top:2.5mm; line-height:1.35; }
+
+  .check { padding-left:0; }
+  .check li { list-style:none; position:relative; padding-left:6.5mm; }
+  .check li::before { content:""; position:absolute; left:0; top:1.5mm; width:3.6mm; height:3.6mm; border-radius:50%; border:1.5px solid var(--orange); }
+
+  .num { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:24pt; line-height:1; }
+  .step { display:grid; grid-template-columns:15mm 1fr; gap:3mm; margin-bottom:4.5mm; align-items:start; }
+  .step p { margin:0; padding-top:1mm; }
+
+  .logos { display:flex; gap:6mm; flex-wrap:wrap; align-items:baseline; margin-top:9mm; }
+  .logos .lbl { width:100%; font-size:7.5pt; letter-spacing:.18em; text-transform:uppercase; color:var(--on-dark-muted); font-weight:600; margin-bottom:-2mm; }
+  .logos span:not(.lbl) { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:12.5pt; color:#b9b6d6; }
+
+  .price { font-size:32pt; line-height:1; color:var(--ink); }
+  .price small { font-family:Inter,sans-serif; font-size:11pt; font-weight:500; color:var(--muted); }
+
+  .fill { display:inline-block; min-width:22mm; border-bottom:1.5px dashed var(--orange); color:var(--orange); font-family:Inter,sans-serif; font-size:8pt; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding-bottom:1mm; }
+
+  /* panel (mimics site testimonial/CTA card) */
+  .panel { margin-top:auto; margin-bottom:7mm; border-radius:14px; padding:8mm 9mm; background:var(--navy2); border:1px solid var(--line-dark); color:#fff; display:flex; justify-content:space-between; align-items:center; gap:8mm; }
+  .page:not(.dark) .panel { background:var(--navy); }
+  .panel h2 { color:#fff; margin:0 0 2mm; font-size:18pt; }
+  .panel p { color:var(--on-dark); margin:0; font-size:10pt; }
+  .link { flex:none; background:var(--orange); color:#1c0a00; font-weight:700; font-size:9pt; padding:3.5mm 6mm; border-radius:999px; letter-spacing:.06em; text-transform:uppercase; white-space:nowrap; }
+  .stars { color:var(--orange); letter-spacing:.1em; font-size:10pt; margin-bottom:2mm; }
+
+  .foot { position:absolute; left:20mm; right:20mm; bottom:9mm; display:flex; justify-content:space-between; font-size:8pt; color:var(--muted); letter-spacing:.06em; }
+  .dark .foot { color:var(--on-dark-muted); }
+
+  /* decoration: the site's diagonal light lines */
+  .lines { position:absolute; right:-30mm; top:-20mm; width:150mm; height:150mm; opacity:.55; }
+  .glow { position:absolute; right:-30mm; bottom:-40mm; width:130mm; height:130mm; border-radius:50%; background:radial-gradient(closest-side,rgba(129,140,248,.28),rgba(129,140,248,0)); }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: cover -->
+<section class="page dark">
+  <svg class="lines" viewBox="0 0 400 400" fill="none" stroke-width="1.2">
+    <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#fb923c"/></linearGradient></defs>
+    <path d="M0 400 C 150 300, 250 250, 400 0" stroke="url(#g)"/>
+    <path d="M40 400 C 190 300, 290 250, 440 0" stroke="url(#g)" opacity=".6"/>
+    <path d="M80 400 C 230 300, 330 250, 480 0" stroke="url(#g)" opacity=".35"/>
+  </svg>
+  <div class="glow"></div>
+  <div class="top"><div class="mark"><i></i>Double Wired Creative</div><div class="pg">doublewiredcreative.com</div></div>
+  <div style="margin-top:26mm;position:relative">
+    <span class="eyebrow">For accounting and tax firms</span>
+    <h1 class="serif">Designer and Marketer<br>for <span class="grad">Accountants</span>.</h1>
+    <p class="lead">Most accountancy websites are built by people who have never read a tax return. We have designed and marketed for Tolley, Lexis+ and a seventeen-site network of accounting and tax firms. Now we do it for practices like yours.</p>
+  </div>
+  <div class="logos">
+    <span class="lbl">Design experience across brands and teams including</span>
+    <span>Tolley</span><span>Lexis+</span><span>RELX</span><span>Synthesia</span><span>Hachette</span><span>Sidekick Accounting</span>
+  </div>
+  <div class="panel">
+    <div><h2 class="serif">Tanj, Co-founder</h2><p>Eight years in design and marketing across legal tech, tax publishing, SaaS and commerce.</p></div>
+    <a class="link" href="https://cal.eu/doublewiredcreative/30min">Book a call</a>
+  </div>
+  <div class="foot"><span>Double Wired Creative</span><span>September 2026</span></div>
+</section>
+
+<!-- PAGE 2: why -->
+<section class="page">
+  <div class="top"><div class="mark"><i></i>Double Wired Creative</div><div class="pg">02</div></div>
+  <div class="hairline"></div>
+  <span class="eyebrow">Why a specialist</span>
+  <h2 class="serif">Your clients are deciding on you before they ever ring.</h2>
+  <p class="lead">They land on your site from a search about incorporation, a landlord tax bill or a CIS refund. In a few seconds they decide whether you look like someone who knows the answer. A generalist agency cannot write that page. We can, because we have spent years inside tax and legal content.</p>
+  <div class="grid3" style="margin-top:4mm">
+    <div class="card"><h3>Tolley</h3><p class="small">Full site migration and conversion-led redesign for the UK's tax publisher. If it has to read right for tax professionals, we have done it.</p></div>
+    <div class="card"><h3>Lexis+</h3><p class="small">Protected a £2m trial funnel on LexisNexis's flagship platform. Conversion work where the numbers were not optional.</p></div>
+    <div class="card"><h3>Seventeen-site network</h3><p class="small">Property tax, contractors and IR35, construction CIS, crypto, charities, medical, dental, solicitors. Our design system runs nine of them.</p></div>
+  </div>
+  <h3 style="margin-top:8mm">What that exposure buys you</h3>
+  <ul class="check">
+    <li>Pages written in the language a landlord, a contractor or a company director actually searches in.</li>
+    <li>Tax facts kept current. When a rate or allowance changes, your pages change with it.</li>
+    <li>A design built for enquiries and tested across nine live sites, not a template with your logo on it.</li>
+    <li>A brand that looks like the practice you have become, not the one you started.</li>
+    <li>Marketing that runs every month without you chasing anyone.</li>
+  </ul>
+  <div class="panel">
+    <div><h2 class="serif">We market accountants.</h2><p>We do not replace them. No tax advice, ever. Just the site, the content and the enquiries, done properly.</p></div>
+  </div>
+  <div class="foot"><span>Double Wired Creative</span><span>02</span></div>
+</section>
+
+<!-- PAGE 3: proof -->
+<section class="page dark">
+  <div class="glow"></div>
+  <div class="top"><div class="mark"><i></i>Double Wired Creative</div><div class="pg">03</div></div>
+  <div class="hairline"></div>
+  <span class="eyebrow">Case study</span>
+  <h2 class="serif">One property tax site, redesigned and run as a lead engine.</h2>
+  <p class="lead">A UK property tax site with hundreds of published pages. We rebuilt the brand and every template, then took over the marketing: content, follow-up and enquiry handling. The redesign went live on 23 August 2026 and the same system now runs eight more sites.</p>
+  <div class="grid3" style="margin-top:4mm">
+    <div class="card"><div class="stat serif"><span class="grad">280+</span><small>properties enquired about through the site</small></div></div>
+    <div class="card"><div class="stat serif"><span class="fill">to fill</span><small>visitors a month</small></div></div>
+    <div class="card"><div class="stat serif"><span class="fill">to fill</span><small>enquiries a month</small></div></div>
+  </div>
+  <div class="grid2" style="margin-top:8mm">
+    <div>
+      <div class="num grad">01</div>
+      <h3 style="margin-top:2mm">Before</h3>
+      <ul class="check">
+        <li>No consistent brand across hundreds of pages</li>
+        <li>Enquiries sat in an inbox, some never answered</li>
+        <li>Content published, then left to go stale</li>
+      </ul>
+    </div>
+    <div>
+      <div class="num grad">02</div>
+      <h3 style="margin-top:2mm">After</h3>
+      <ul class="check">
+        <li>One design system, around forty bespoke components, every page on-brand</li>
+        <li>Every enquiry reaches the inbox and a shared tracker within a minute, deduplicated and spam-filtered</li>
+        <li>Automatic follow-up, then a warm handoff quoting the booked slot</li>
+        <li>New content every month, driven by what people actually search</li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <div><h2 class="serif">Same system, eight more sites.</h2><p>Contractors and IR35, construction CIS, crypto, charities, medical, dental, solicitors, general practice. All live September 2026.</p></div>
+  </div>
+  <div class="foot"><span>Double Wired Creative</span><span>03</span></div>
+</section>
+
+<!-- PAGE 4: offer -->
+<section class="page">
+  <div class="top"><div class="mark"><i></i>Double Wired Creative</div><div class="pg">04</div></div>
+  <div class="hairline"></div>
+  <span class="eyebrow">The offer</span>
+  <h2 class="serif">Your site, your content and your enquiries, run for you.</h2>
+  <div class="grid2" style="margin-top:3mm">
+    <div class="card tint">
+      <h3>Every month</h3>
+      <ul class="check">
+        <li>Four authoritative articles and one rewrite, written for what your clients search</li>
+        <li>Tax facts kept current across the whole site</li>
+        <li>Enquiry capture, follow-up emails and a shared lead tracker</li>
+        <li>A one-page monthly read: traffic, enquiries, what changed, what is next</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>The build</h3>
+      <ul class="check">
+        <li>Brand refresh and full site on our design system</li>
+        <li>Calculators, service pages, blog, schema, analytics, Bing and Google set up</li>
+        <li>Live in three to four weeks</li>
+      </ul>
+    </div>
+  </div>
+  <h3 style="margin-top:8mm">How it starts</h3>
+  <div class="grid3">
+    <div class="step"><div class="num grad">01</div><p>Thirty minutes on a call. We look at your site together and say what we would change.</p></div>
+    <div class="step"><div class="num grad">02</div><p>A one-page proposal. No deck, no jargon.</p></div>
+    <div class="step"><div class="num grad">03</div><p>Build in weeks. Marketing runs from month one.</p></div>
+  </div>
+  <p class="small">Not included: paid advertising, and tax advice of any kind.</p>
+  <div class="panel">
+    <div><h2 class="serif">Book thirty minutes.</h2><p><a href="https://cal.eu/doublewiredcreative/30min">cal.eu/doublewiredcreative/30min</a> &nbsp;·&nbsp; <a href="mailto:doublewiredcreative@gmail.com">doublewiredcreative@gmail.com</a></p></div>
+    <a class="link" href="https://cal.eu/doublewiredcreative/30min">Book a call</a>
+  </div>
+  <div class="foot"><span>Double Wired Creative</span><span>04</span></div>
+</section>
+
+</body>
+</html>

@@ -22,6 +22,33 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
+## 2026-09-28 (later) Independent full lead-kit check, LIVE site
+
+Report: `docs/property/_wave1/qa/LEAD_KIT_CHECK_2026-09-28.md`. Cross-site:
+`docs/_engines/LEAD_KIT_CHECK_2026-09-28.md`. Read on the LIVE site (deployed from `32981977`), 40
+routes, all 200. Report only: nothing fixed, deployed or pushed.
+
+Three blockers, all one class, the site promising what a referral network cannot: free consultation
+on 30 of 40 routes; "fixed fee in writing" on /about, all four service pages, the footer of all 40
+pages and inside the FAQPage JSON-LD; and "Property Tax Partners is a specialist property accountancy
+firm" rendered on / and /contact, with a Service node echoing it. Footer CTA "Book a consultation"
+leads to an untokened /book that renders zero forms (same on contractors and charities). The 24 hour
+promise appears on seven surface types plus the footer and in zero nurture emails, and the service
+pages and calculators say "same working day" instead. All 15 audience pages share one three-line
+close. Entity block absent from 21 of 40 routes including all four service pages.
+
+Nurture delays are CORRECT here and are the fix source for the other four sites: Property's
+increments 0,0,4,20,24,48,72,96 are what the other four have pasted in as cumulative totals.
+
+Withdrawn on checking: the form-attribution concern (works via extras.form_id, the formId-role field
+ids and source_url), and the homepage stat tiles (count-up animation; repo truth 200+/24hr/280+/100%).
+
+Method correction worth keeping: the first screenshot pass reported site-wide text clipping at 390.
+It was a capture artefact. Edge headless `--window-size=390,844` does not emulate a mobile viewport
+and crops a wider layout; the same command clips gov.uk. Re-tested with true emulation, this site
+returns document `scrollWidth` exactly 390 and zero overflowing elements. Do not act on any 390
+clipping report, including yesterday's, without re-checking with real emulation against a control.
+
 ## 2026-09-28 — Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;

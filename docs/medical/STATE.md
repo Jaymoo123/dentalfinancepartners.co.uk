@@ -10,6 +10,35 @@ Last updated: 2026-09-28 (Leads-250 S5 close and pre-live review; NOT deployed).
 
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: all six design-port phases, claims-audit serious tier, header CTA fix, favicons).
 
+## 2026-09-28 (later) Independent full lead-kit check, LIVE site
+
+Report: `docs/medical/_wave1/qa/LEAD_KIT_CHECK_2026-09-28.md`. Cross-site:
+`docs/_engines/LEAD_KIT_CHECK_2026-09-28.md`. Read on the LIVE site (deployed from `32981977`), 66
+routes, all 200. Report only: nothing fixed, deployed or pushed.
+
+Best writing in the estate, worst promise in the estate. /free-practice-health-check says "no sales
+sequences" and "we do not chase", but the wizard traces through submitMedicalLead to
+/api/leads/submit:138 enrollLead with no exemption (the only one, enroll.ts:75, is for
+role === "resource"), and an empty phone routes it to medical_detail_capture, four chasing emails.
+Nothing anywhere emails the report it promises. "Free consultation" eyebrow and button on 37 pages,
+a few lines from /services saying the site does not quote fees. Footer strapline on all 66 pages
+says "Expert accounting... NHS pension advice". Organization slogan says "Specialist accountants".
+Nurture runs 25 days not 11 (see cross-site B1).
+
+/services already places the entity block below the FAQ and above the form, which is the model for
+the owner's relocation; ten other pages put it above the FAQ.
+
+Withdrawn on checking: /free-practice-health-check is NOT missing a form (client-rendered wizard,
+invisible to curl); the "optimization" US spelling sits in a non-rendering homepage_description
+config key. Could not verify: production LEAD_NURTURE_ENABLED, and the "BMA List 3 restricted to
+85%" claim on /for-nhs-doctors is not in house_positions.md.
+
+Method correction worth keeping: the first screenshot pass reported site-wide text clipping at 390.
+It was a capture artefact. Edge headless `--window-size=390,844` does not emulate a mobile viewport
+and crops a wider layout; the same command clips gov.uk. Re-tested with true emulation, this site
+returns document `scrollWidth` exactly 390 and zero overflowing elements. Do not act on any 390
+clipping report, including yesterday's, without re-checking with real emulation against a control.
+
 ## 2026-09-28 Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;

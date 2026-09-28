@@ -14,6 +14,37 @@ brand_locked: true
 > domain at G1; deploy is HELD (and additionally deploy-hold to ~2026-08-03 for the medical
 > discovery-indexing watch). Post-hoc brand swap = 3-file config edit.
 
+## 2026-09-28 (later) Independent full lead-kit check, LIVE site
+
+Report: `docs/care/_wave1/qa/LEAD_KIT_CHECK_2026-09-28.md`. Cross-site:
+`docs/_engines/LEAD_KIT_CHECK_2026-09-28.md`. Read on the LIVE site (deployed from `a796de63`), 52
+routes, all 200. Report only: nothing fixed, deployed or pushed.
+
+Best-written site in the kit, worst-disclosed at the point of sale. The home entity block sits at
+line 167 of 196, BELOW the FAQ and BELOW the lead form: the only page in the kit where a visitor can
+submit without ever being told the enquiry goes to a third party. "Free call" eyebrow on 14 pages,
+plus /book and /complete. /llms-full.txt line 3 says "Specialist UK accountants for care providers"
+while llms.txt says it correctly. The 24 hour promise appears about 55 times and no nurture email or
+SMS mentions it at any step; the five calculators say "one working day" instead. Nurture runs 25 days
+not 11.
+
+Two corrections to the earlier pass: the "a specialist reviews X, Y and Z" closer is live on 11 of 13
+Wave 1 posts, not nine and not cleared. The earlier read looked at the last sentence ON THE PAGE,
+always an FAQ answer, instead of the last sentence of the BODY. And the "seek advice" flag was on the
+wrong post: fnc-chc-la-fee-mix-accounting is clean, the live instance is
+care-home-vat-exemption-edge-cases.
+
+Verified clean: no chat widget, sticky CTA, modal or banner at either width over 8 seconds. Service
+pages no longer print raw HTML. The repeated registered-office sentence was a Next.js JSON payload
+artefact, not visible text. cta.sticky_* is dead config but sticky_secondary carries a free-claim
+that would ship the day anyone wires it up.
+
+Method correction worth keeping: the first screenshot pass reported site-wide text clipping at 390.
+It was a capture artefact. Edge headless `--window-size=390,844` does not emulate a mobile viewport
+and crops a wider layout; the same command clips gov.uk. Re-tested with true emulation, this site
+returns document `scrollWidth` exactly 390 and zero overflowing elements. Do not act on any 390
+clipping report, including yesterday's, without re-checking with real emulation against a control.
+
 ## 2026-09-28 Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;

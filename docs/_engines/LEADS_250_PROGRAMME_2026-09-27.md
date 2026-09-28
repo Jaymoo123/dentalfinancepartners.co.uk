@@ -883,6 +883,32 @@ all fixed by `ab6b01d1`) plus one next/font network flake on Solicitors (rerun g
 `calc_pdf_offer` off in prod (the write was refused by the session's permission classifier; the day-13
 read in Property STATE.md already says kill); T6 baseline rerun (paid, and a same-day rerun measures
 nothing, run it at the month-1 read); the terms-page paragraph (decision 1) and IndexNow (not asked).
+**FULL LEAD-KIT CHECK DONE, 2026-09-28 (the fresh-agent brief above, run on the LIVE sites).**
+Readout: `LEAD_KIT_CHECK_2026-09-28.md`; per-site `docs/<site>/_wave1/qa/LEAD_KIT_CHECK_2026-09-28.md`;
+per-site STATE.md entries dated 2026-09-28 (later). Report only, nothing fixed, pushed or deployed.
+11 agents of the approved 12 (5 Sonnet inventory, 6 Opus readers); the cross-site pass was done by
+the manager as greps over the rendered text already on disk, so the twelfth was not needed. In one
+paragraph: the writing is not the problem, and three sites are clean of em-dashes, US spellings and
+AI tells entirely. The kit around the writing still speaks as the accountancy practice the sites say
+they are not. Two promise classes are live on roughly 200 pages, a free first call and a fee or
+response-time commitment, both about a partner firm we do not control; the free-call class was
+already reasoned out and owner-gated in `docs/construction-cis/_port/CLAIMS_REGISTER.md` and then
+never swept to the other 14 sites, which is the ESTATE_CLAIMS_INTEGRITY rule exactly. One defect is
+mechanical and silent: `delayHours` is the gap between sends, and Medical, contractors, care and
+charities carry Property's cumulative timeline in that field, so their sequences run 604 hours and
+the break-up email lands on day 25 instead of day 11; Property is correct and is the fix source.
+Also: the footer CTA on Property, contractors and charities points at an untokened `/book` that
+renders zero forms; charities `/about` captures nothing; care's home page puts the entity block below
+both the FAQ and the lead form, so a visitor can submit before any disclosure; Medical's
+`/free-practice-health-check` promises a report nothing sends and denies a drip the code enrols into;
+contractors' blog category CTAs are dead code, one line that would retire three findings at once.
+FIVE DECISIONS for the owner in section 4 of the readout, in plain language. TRAP RECORDED: four of
+five inventory agents reported site-wide text clipping at 390 and one called it verified; it was a
+capture artefact, because Edge headless `--window-size` does not emulate a mobile viewport and crops
+a wider layout. A gov.uk control screenshot caught it. Yesterday's pre-live review used the same tool
+at the same widths, so its 390 findings need re-checking before anyone acts on them. Real emulation
+shows zero overflowing elements at 390 on every page probed across all five sites.
+
 
 ### S5. GEO completion on the five sites (spec, 2026-09-27 late; owner: "make sure the sites are as optimised for GEO as they can possibly be", "if we're number 1 we need to be number 1", "I am all for rewriting just make sure we're not losing our existing queries")
 
