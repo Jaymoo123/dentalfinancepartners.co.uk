@@ -14,7 +14,7 @@ import { siteConfig } from "@/config/site";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-xl border border-neutral-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-neutral-500 transition-colors focus:border-[var(--btn-ground)] focus:outline-none";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-xl border border-neutral-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-neutral-500 transition-colors focus:border-[var(--btn-ground)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--btn-ground)]";
 
 type MissingField = "name" | "phone";
 

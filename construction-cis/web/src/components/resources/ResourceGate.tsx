@@ -31,9 +31,9 @@ export function ResourceGate({
     <MiniCapture
       formId="resource_block"
       messagePrefix={`[Resource block: ${topic}]`}
-      heading={t?.ctaCopy ?? "Get a free review of your CIS position"}
+      heading={t?.ctaCopy ?? "Get your CIS position checked by an accountant"}
       blurb="Tell us about your situation and a CIS specialist will review it and the most practical next step, with no obligation."
-      submitLabel="Request my free review"
+      submitLabel="Request a callback"
       className="my-10 rounded-2xl border-l-4 border-orange-500 bg-slate-50 p-6 sm:p-8"
     />
   );

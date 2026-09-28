@@ -24,8 +24,8 @@ import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-b
  */
 
 export const metadata: Metadata = {
-  title: `Book your free review`,
-  description: "Pick a time for your free CIS tax review call.",
+  title: `Book your free first call`,
+  description: "Pick a time for your free first call about your CIS position.",
   robots: { index: false, follow: false },
 };
 
@@ -42,9 +42,9 @@ export default async function BookPage({
       <section className="bg-[var(--hero-cream)] py-12 sm:py-16">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
-            <Eyebrow>Free review</Eyebrow>
+            <Eyebrow>Free first call</Eyebrow>
             <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Book your free review call
+              Book your free first call
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600">
               Pick a day and a time window that suits you. We will call you then, no
@@ -70,7 +70,7 @@ export default async function BookPage({
                 <NoticeCard>
                   <p className="text-base leading-relaxed text-slate-700">
                     This page needs the personal link from your email or text message. If you cannot
-                    find it, use the contact form and we will arrange your review.
+                    find it, use the contact form and we will arrange your call.
                   </p>
                   <Link href="/contact" className={`${btnPrimary} mt-4`}>
                     Go to the contact form
@@ -84,7 +84,7 @@ export default async function BookPage({
                 title="What the call covers"
                 items={[
                   "About twenty minutes, by phone, in the window you pick",
-                  "Your specialist will have read your enquiry before they ring",
+                  "One of our accountants will have read your enquiry before they ring",
                   "Where you stand on CIS deductions, refunds and gross payment status",
                   "No obligation, and no work starts until you agree the scope",
                   "If your position is already right, we will say so",

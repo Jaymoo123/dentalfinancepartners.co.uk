@@ -8,8 +8,12 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { tradeTypes, getTradeType } from "@/data/trade-types";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { tradeTypes, getTradeType, getTradeCloser } from "@/data/trade-types";
+import {
+  buildFaqJsonLd,
+  buildServiceJsonLd,
+  buildBreadcrumbJsonLd,
+} from "@/lib/schema";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
@@ -46,6 +50,28 @@ export default async function TradeTypePage({
 
   return (
     <>
+      {/* Machine layer: Service + BreadcrumbList alongside the FAQPage node
+          emitted with the FAQ block below (Medical /for-gps is the reference). */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildServiceJsonLd({
+            name: `CIS accounting for ${type.title.toLowerCase()}`,
+            description: type.metaDescription,
+            url: `${siteConfig.url}/for/${slug}`,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildBreadcrumbJsonLd([
+            { label: "Home", href: "/" },
+            { label: "Who we help", href: "/for" },
+            { label: type.title, href: `/for/${slug}` },
+          ]),
+        }}
+      />
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-neutral-900 py-12 sm:py-16">
         <div className={siteContainerLg}>
@@ -233,7 +259,7 @@ export default async function TradeTypePage({
                 Talk to a specialist {type.title.toLowerCase()} accountant
               </h2>
               <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-                Book a free call. We will talk through your CIS position, your deduction history and whether there is anything worth changing. No hard sell, no obligation.
+                {getTradeCloser(type)}
               </p>
               <div className="mt-8 space-y-3">
                 {[

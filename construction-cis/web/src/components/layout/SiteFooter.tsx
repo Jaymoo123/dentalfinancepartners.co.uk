@@ -25,7 +25,7 @@ const LEGAL_HREFS = ["/privacy-policy", "/terms", "/cookie-policy"];
 const COLUMN_HREFS: Array<{ title: string; hrefs: string[] }> = [
   { title: "Services", hrefs: ["/services", "/cis-refund", "/gross-payment-status", "/for"] },
   { title: "Resources", hrefs: ["/blog", "/glossary", "/research"] },
-  { title: "Company", hrefs: ["/about", "/contact", "/locations", "/book"] },
+  { title: "Company", hrefs: ["/about", "/contact", "/locations", "/contact#book"] },
 ];
 
 /**
@@ -34,7 +34,7 @@ const COLUMN_HREFS: Array<{ title: string; hrefs: string[] }> = [
  */
 const EXTRA_LABELS: Record<string, string> = {
   "/research": "Research",
-  "/book": "Book a consultation",
+  "/contact#book": "Book a consultation",
 };
 
 /**

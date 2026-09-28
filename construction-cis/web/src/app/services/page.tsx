@@ -261,7 +261,7 @@ export default function ServicesPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           contained
-          eyebrow="Free consultation"
+          eyebrow="Free first call, then a fixed fee in writing"
           formTitle="Book your free call"
           submitLabel="Request a callback"
           title="Ready to talk through your CIS position?"

@@ -31,11 +31,11 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
  * is unfrozen and the two can be reconciled in one deliberate pass.
  */
 export function LeadCTAPanel({
-  eyebrow = "Free consultation",
+  eyebrow = "Free first call, then a fixed fee in writing",
   title,
   description,
   proofPoints,
-  formTitle = "Book your free call",
+  formTitle = "Book your free first call",
   submitLabel = "Request a callback",
   footnote,
   contained = false,

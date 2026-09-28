@@ -118,7 +118,7 @@ export default async function ThankYouPage({
                    edge. */
                 <div className="rounded-xl bg-[var(--surface)] p-6 ring-1 ring-neutral-200 sm:p-8">
                   <p className="text-base font-semibold text-slate-900">
-                    Pick a time for your free review call
+                    Pick a time for your free first call
                   </p>
                   <p className="mt-2 mb-6 text-sm text-neutral-600">
                     Choose a day and window below. We will call you then, no obligation.
@@ -132,7 +132,7 @@ export default async function ThankYouPage({
                 <NoticeCard tone="accent" title="That is everything we need">
                   <p className="text-base leading-relaxed text-slate-700">
                     Your enquiry is with us and an accountant will be in touch to
-                    arrange your free review. There is nothing else for you to do. Need to add
+                    arrange your first call. There is nothing else for you to do. Need to add
                     anything? Send a follow-up through the{" "}
                     <Link
                       href="/contact"

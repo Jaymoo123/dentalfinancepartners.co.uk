@@ -454,7 +454,7 @@ export function SpecialistWidget() {
                 onClick={() => onChip("question")}
                 className={`${btnPrimary} w-full`}
               >
-                Ask we
+                Ask an accountant
               </button>
             </div>
           )}
@@ -572,7 +572,7 @@ export function SpecialistWidget() {
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        {open ? "Close" : "Ask we"}
+        {open ? "Close" : "Ask an accountant"}
       </button>
     </div>
   );
