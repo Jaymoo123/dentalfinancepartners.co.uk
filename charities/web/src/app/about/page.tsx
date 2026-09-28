@@ -50,10 +50,8 @@ export default function AboutPage() {
       {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       <section className="bg-white">
-        <div className={siteContainerLg}>
-          <div className="pt-10">
-            <Link href="/contact" className={btnPrimary}>Get in touch</Link>
-          </div>
+        <div className={`${siteContainerLg} ${sectionYLoose}`}>
+          <Link href="/contact" className={btnPrimary}>Get in touch</Link>
         </div>
       </section>
     </>

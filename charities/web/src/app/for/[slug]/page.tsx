@@ -98,7 +98,11 @@ export default async function CharityTypePage({
 
       <section className="bg-slate-800 py-8 sm:py-10">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
+          <div
+            className={`grid grid-cols-1 gap-5 sm:gap-8 ${
+              type.stats.length % 3 === 0 ? "sm:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4"
+            }`}
+          >
             {type.stats.map((stat) => (
               <div key={stat.label} className="flex flex-col sm:text-center">
                 <div className="font-mono text-2xl font-bold text-white sm:text-3xl">
@@ -135,9 +139,11 @@ export default async function CharityTypePage({
         </Link>
       </HubSection>
 
-      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
+      {niche.entity ? (
+        <EntityBlock {...niche.entity} className="bg-white py-12 sm:py-16 lg:py-20" />
+      ) : null}
 
-      <FaqSection faqs={type.faqs} />
+      <FaqSection faqs={type.faqs} ground="slate" />
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
