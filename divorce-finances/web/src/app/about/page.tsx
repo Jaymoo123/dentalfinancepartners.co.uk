@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: `About ${siteConfig.name} | Who We Are and How We Work` },
-  description: `${siteConfig.name} works the money side of divorce and separation in England and Wales. What we do, how we work, and how we make money.`,
+  description: `${siteConfig.name} is a free information service for divorce and separation finances in England and Wales. What we do, what we don't, and how we make money.`,
   alternates: { canonical: `${siteConfig.url}/about` },
 };
 
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className={siteContainerLg}>
           <p className="eyebrow text-orange-400">About us</p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            The money side of divorce, handled properly.
+            A free information service for the money side of divorce.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             We built {siteConfig.name} because people going through divorce need clear answers at
@@ -34,12 +34,13 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">Who we are</h2>
               <p>
-                {siteConfig.name} works the money side of divorce and separation in England and
-                Wales: what it costs, how settlements work, what happens to the house, the pensions
-                and the debts, and what your realistic routes are, from doing it yourself to full
-                representation. Where you need a solicitor or a mediator, we introduce you to a
-                regulated firm we work with, and we stay on the money side. Every substantive page
-                is checked against official sources before it is published.
+                {siteConfig.name} is a free information service covering the financial side of
+                divorce and separation in England and Wales: what it costs, how settlements work,
+                what happens to the house, the pensions and the debts, and what your realistic
+                routes are, from doing it yourself to full solicitor representation. We are not a
+                law firm, not mediators and not financial advisers, and we do not present ourselves
+                as any of those things. The site is maintained as an editorial service and every
+                substantive page is checked against official sources before it is published.
               </p>
               <p>
                 {siteConfig.name} is a trading name of Ashfield Trading Ltd, a company registered
@@ -63,9 +64,9 @@ export default function AboutPage() {
                   current.
                 </li>
                 <li>
-                  <span className="font-semibold text-neutral-900">The legal step, when you need it.</span>{" "}
-                  Where the matter needs a solicitor or a mediator, we introduce you to a regulated
-                  firm we work with. This only ever happens with your consent.
+                  <span className="font-semibold text-neutral-900">Specialist connections.</span>{" "}
+                  If you want professional help, we can introduce you to a vetted family law firm
+                  or an accredited mediator. This only ever happens with your consent.
                 </li>
               </ul>
             </div>
@@ -105,7 +106,7 @@ export default function AboutPage() {
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we make money</h2>
               <p>
                 Honesty about this matters to us, especially on a site about money during divorce.
-                If you ask us to introduce you to a solicitor or a mediator and you go on to use them,
+                If you ask us to connect you with a specialist and you go on to use their services,
                 we may receive a fee from the firm we introduce you to. This never changes what you
                 pay, and it never changes what our guides and calculators say. The firm is also
                 required by its own professional rules to tell you about the arrangement. The
@@ -174,12 +175,12 @@ export default function AboutPage() {
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">Tell us where you are in this.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Whether you are still working out what a fair split looks like or you already have an offer on the table, one of our accountants will read what you send and come back to you directly. Free first call, then a fixed fee in writing.</p>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Talk to a specialist about your situation</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Book a free call. We will talk through your situation and whether there is anything worth changing. No hard sell, no obligation.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Send us your situation</h3>
-              <LeadForm submitLabel="Send enquiry" />
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Book your free call</h3>
+              <LeadForm submitLabel="Request a callback" />
             </div>
           </div>
         </div>

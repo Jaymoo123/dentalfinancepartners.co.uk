@@ -73,8 +73,9 @@ export default function PrivacyPolicyPage() {
           <h2>3. Why we use your information</h2>
           <ul>
             <li>
-              <strong>To respond to your enquiry:</strong> to deal with your enquiry and, where you need a solicitor,
-              to introduce you to a regulated firm we work with so that it can provide the advice you have requested.
+              <strong>To respond to your enquiry:</strong> to deal with your enquiry and to pass it to a relevant
+              regulated professional firm from our specialist partner network so that it can provide the advice you
+              have requested.
             </li>
             <li>
               <strong>To send you updates you asked for:</strong> if you signed up to our email updates, to send you
@@ -89,8 +90,8 @@ export default function PrivacyPolicyPage() {
           <h2>4. Our lawful basis</h2>
           <p>
             When you submit an enquiry, we rely on our <strong>legitimate interests</strong> (Article 6(1)(f)
-            of the UK GDPR) to handle it and to share it with the regulated firms we work with, so that they
-            can respond and provide the advice you asked for. You have the{" "}
+            of the UK GDPR) to handle it and to share it with regulated firms from our specialist partner
+            network, so that they can respond and provide the advice you asked for. You have the{" "}
             <strong>right to object</strong> to this processing at any time, under Article 21 (see your rights
             in section 7).
           </p>
@@ -177,7 +178,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Erase</strong> your data in certain circumstances.</li>
             <li><strong>Restrict</strong> how we use your data in certain situations.</li>
             <li><strong>Data portability:</strong> receive a copy of your data in a machine-readable format.</li>
-            <li><strong>Object</strong> to processing based on our legitimate interests, including our sharing of your enquiry with the regulated firms we work with.</li>
+            <li><strong>Object</strong> to processing based on our legitimate interests, including our sharing of your enquiry with our partner network.</li>
             <li><strong>Withdraw consent</strong> at any time, where we rely on your consent.</li>
           </ul>
           <p>

@@ -77,10 +77,10 @@ export default function BookingPicker({ token }: { token: string }) {
           ) : (
             "Your slot is saved."
           )}{" "}
-          One of our accountants will call you then. If your plans change, just reply to any of our messages.
+          A specialist will call you then. If your plans change, just reply to any of our messages.
         </p>
         <p className="mt-3 text-sm text-slate-600">
-          The call takes about 20 minutes. The accountant who calls will have read your enquiry first.
+          The call takes about 20 minutes. Your specialist will have read your enquiry before they ring.
         </p>
       </div>
     );
@@ -155,7 +155,7 @@ export default function BookingPicker({ token }: { token: string }) {
           </p>
         )}
         <p className="mt-3 text-xs text-neutral-500">
-          No obligation. One of our accountants will call you in your chosen window.
+          No obligation. A specialist will call you in your chosen window.
         </p>
       </div>
     </div>

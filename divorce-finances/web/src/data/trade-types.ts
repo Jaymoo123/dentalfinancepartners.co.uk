@@ -13,10 +13,6 @@ export interface TradeType {
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
   testimonial?: { quote: string; attribution: string };
-  /** Closing sentences on /for/<slug>. One pair per audience: a single shared
-   *  line read as a template across four very different situations. */
-  closerHeading: string;
-  closerBody: string;
 }
 
 /**
@@ -94,8 +90,6 @@ export const tradeTypes: TradeType[] = [
           "Often not, but the rules have conditions. Since 2023 transfers between separating spouses benefit from extended no gain, no loss treatment for capital gains tax, and transfers made under a divorce court order or formal agreement are generally exempt from stamp duty land tax. The detail depends on timing and how the transfer is structured, so confirm your position with a professional before you exchange anything.",
       },
     ],
-    closerHeading: "Work out what the house can actually do.",
-    closerBody: "Tell us what the house is worth, what is left on the mortgage, and whose name is on it. One of our accountants will show you what each of the realistic options leaves you with, including the tax, before anything is agreed.",
   },
   {
     slug: "business-owners",
@@ -166,8 +160,6 @@ export const tradeTypes: TradeType[] = [
           "Do not. Courts look at earning capacity, not just the current payslip, and judges have seen every version of the conveniently timed pay cut. Artificially suppressing income or value tends to destroy credibility and can affect the outcome. Full, honest disclosure is both the legal obligation and the better strategy.",
       },
     ],
-    closerHeading: "Get the business valued before you negotiate around it.",
-    closerBody: "Tell us what the business is, how the shares are held and what it pays you. One of our accountants will work out what is realistically extractable, what a sharing arrangement would cost in tax, and what a solicitor needs to know before they negotiate.",
   },
   {
     slug: "separated-parents",
@@ -238,8 +230,6 @@ export const tradeTypes: TradeType[] = [
           "For parents, it is usually worth trying, and most people who apply to court about finances or children are required to attend a mediation information meeting (MIAM) first anyway. Mediation is private, faster and far cheaper than proceedings, and agreements reached there can be made binding afterwards. It is not suitable in every case. Where there has been domestic abuse, exemptions apply and legal aid may be available. Tell any professional about your circumstances early.",
       },
     ],
-    closerHeading: "Child maintenance and the settlement are two different sums.",
-    closerBody: "Tell us what you both earn, who the children live with and what has been agreed so far. One of our accountants will separate the maintenance calculation from the capital settlement so you can see each one clearly.",
   },
   {
     slug: "over-50s",
@@ -310,8 +300,6 @@ export const tradeTypes: TradeType[] = [
           "Yes, and this catches people out. If you remarry before financial claims from your first marriage are resolved, you can permanently lose the right to make most of them, the so-called remarriage trap. Pension sharing survives differently from other claims, but the safe course is simple: get the financial order sealed before anyone remarries. If remarriage is on the horizon, tell your solicitor immediately.",
       },
     ],
-    closerHeading: "Pensions are usually the biggest number on the table.",
-    closerBody: "Send us the pension values, the property position and your expected retirement date. One of our accountants will show you what a sharing order would actually leave each of you with, and tell you plainly when a question belongs with a regulated adviser instead.",
   },
 ];
 

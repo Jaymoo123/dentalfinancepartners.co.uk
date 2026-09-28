@@ -22,7 +22,7 @@ import { composeLeadMessage } from "@/lib/lead-message";
 describe("consent text wiring", () => {
   it("partner is the anonymous network category label, never a named firm", async () => {
     const { siteConfig } = await import("@/config/site");
-    expect(siteConfig.partner?.name).toBe("regulated firms we work with");
+    expect(siteConfig.partner?.name).toBe("regulated firms in our specialist partner network");
   });
 
   // Owner decision 2026-08-24: reverted to the pre-2026-08-15 wording after the

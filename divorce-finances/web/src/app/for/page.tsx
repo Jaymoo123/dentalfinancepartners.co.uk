@@ -134,12 +134,12 @@ export default function ForIndexPage() {
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">Your situation, not a category.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-300">None of these guides will match your circumstances exactly. Tell us the parts that do not fit, and one of our accountants will tell you what the money side of your settlement actually involves.</p>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Talk to a specialist about your situation</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Book a free call. We will talk through your situation and whether there is anything worth changing. No hard sell, no obligation.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Tell us what you are dealing with</h3>
-              <LeadForm submitLabel="Send enquiry" />
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Book your free call</h3>
+              <LeadForm submitLabel="Request a callback" />
             </div>
           </div>
         </div>

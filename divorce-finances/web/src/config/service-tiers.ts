@@ -22,26 +22,26 @@ export const serviceTiers: ServiceTier[] = [
     ctaHref: "/calculators",
   },
   {
-    name: "Our accountants on your settlement",
+    name: "Guided handoff to a specialist",
     description:
-      "For when the numbers need professional hands. You cannot agree, there is a business, a serious pension or property abroad, disclosure is being dodged, or you simply want it done properly and once. Tell us about your situation and one of our accountants takes the money side: the settlement numbers, the pension valuations and the tax that follows. Where you also need a solicitor or an accredited mediator, we introduce you to an SRA-regulated firm we work with, only with your consent. We may receive a fee from that firm, and you remain free to walk away at any stage.",
+      "For when your situation needs professional hands. You cannot agree, there is a business, a serious pension or property abroad, disclosure is being dodged, or you simply want it done properly and once. Tell us about your situation and we will introduce you to a vetted, SRA-regulated family law firm or an accredited mediator suited to it. Your details are shared only with your consent, we may receive a fee from the firm we introduce you to, and you remain free to walk away at any stage.",
     features: [
-      "One of our accountants on the money side",
-      "An SRA-regulated solicitor or an FMC-accredited mediator introduced where you need one",
+      "Matched to a vetted, regulated firm",
+      "Family solicitors or FMC-accredited mediators as your situation needs",
       "Shared only with your consent, fee arrangement disclosed plainly",
       "No obligation to proceed",
     ],
-    cta: "Tell us about your situation",
+    cta: "Get connected with a specialist",
     ctaHref: "/contact",
     featured: true,
   },
   {
-    name: "Support through the whole process",
+    name: "Support through the whole process via partners",
     description:
-      "For divorces that unfold over months, not weeks. A financial settlement is rarely one conversation: there is disclosure, negotiation or mediation, the order itself, then implementation, pension sharing, remortgaging, the transfer of the house. We stay with the money side across the whole sequence rather than a single step, and where a question is really one for a regulated financial adviser, such as what to do with pension rights after a sharing order, we say so plainly and point you to the right kind of professional. The legal work itself sits with the solicitor or mediator we introduce you to.",
+      "For divorces that unfold over months, not weeks. A financial settlement is rarely one conversation: there is disclosure, negotiation or mediation, the order itself, then implementation, pension sharing, remortgaging, the transfer of the house. Through our partner firms you can put professional support around the whole sequence rather than a single step, and where a question is really one for a regulated financial adviser, such as what to do with pension rights after a sharing order, we and our partners will say so plainly and point you to the right kind of professional. We provide the information and the introductions, the professional work sits with the specialists you choose.",
     features: [
       "Support from first disclosure through to implementation",
-      "The right help at each stage, not one hammer for every nail",
+      "The right specialist at each stage, not one hammer for every nail",
       "Honest signposting when you need a regulated financial adviser instead",
       "You choose if and when to proceed",
     ],

@@ -45,8 +45,8 @@ export default function ServicesPage() {
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900">Not sure where to start?</h2>
           <p className="mt-3 max-w-2xl text-neutral-600">
-            Tell us about your situation and one of our team will point you in the right
-            direction. Free, with no obligation.
+            Tell us about your situation and a specialist will point you in the right direction.
+            Free, with no obligation.
           </p>
           <Link href="/contact" className={`${btnPrimary} mt-6 inline-flex`}>
             Get in touch
@@ -62,12 +62,12 @@ export default function ServicesPage() {
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">Not sure which of these you need?</h2>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Describe your situation in a few lines. We will tell you whether a calculator answers it, whether it needs one of our accountants on the numbers, and whether a solicitor or a mediator has to be involved as well.</p>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Talk to a specialist about your situation</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Book a free call. We will talk through your situation and whether there is anything worth changing. No hard sell, no obligation.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Tell us about your situation</h3>
-              <LeadForm submitLabel="Send enquiry" />
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Book your free call</h3>
+              <LeadForm submitLabel="Request a callback" />
             </div>
           </div>
         </div>

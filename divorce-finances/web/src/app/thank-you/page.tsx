@@ -78,7 +78,7 @@ export default async function ThankYouPage({
                 Pick a time for your free review call
               </p>
               <p className="mb-6 text-sm text-slate-600">
-                Choose a day and window below. One of our accountants will call you then, no obligation.
+                Choose a day and window below. A specialist will call you then, no obligation.
               </p>
               <BookingPicker token={bookingToken} />
             </div>
