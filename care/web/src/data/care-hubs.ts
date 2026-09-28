@@ -346,7 +346,7 @@ export const careHubs: CareHub[] = [
       },
       {
         question: "What financial information does the CQC registration application need?",
-        answer: "<a href=\"https://www.cqc.org.uk/guidance-providers/registration\">CQC's registration application</a> requires financial information about the proposed provider, including a financial viability statement on <a href=\"https://www.cqc.org.uk/guidance-regulation/providers/registration/supporting-documents-provider/document/financial-viability-template\">CQC's template</a>. This covers the provider's financial position, funding sources, forward projections and evidence that the service can be sustained. We prepare these documents as a standalone engagement or as part of a broader start-up accounting package.",
+        answer: "<a href=\"https://www.cqc.org.uk/guidance-providers/registration\">CQC's registration application</a> requires financial information about the proposed provider, including a financial viability statement on <a href=\"https://www.cqc.org.uk/guidance-regulation/providers/registration/supporting-documents-provider/document/financial-viability-template\">CQC's template</a>. This covers the provider's financial position, funding sources, forward projections and evidence that the service can be sustained. We prepare these documents on their own or as part of the wider start-up accounts work.",
       },
       {
         question: "What do I need to start a domiciliary care agency financially?",

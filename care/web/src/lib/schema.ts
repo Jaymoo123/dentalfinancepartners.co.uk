@@ -25,9 +25,8 @@ const ORG_OPTS: SiteSchemaOpts = {
   siteName: siteConfig.name,
   legalName: siteConfig.company.legalName,
   alternateName: siteConfig.company.tradingName,
-  description: siteConfig.description,
-  // Array form preserves the pre-port ["ProfessionalService", <niche type>] @type.
-  organizationType: ["ProfessionalService", niche.seo.organization_type],
+  description: niche.entity?.firm ?? siteConfig.description,
+  organizationType: "Organization",
   publisherLogoUrl: siteConfig.publisherLogoUrl,
   address: {
     "@type": "PostalAddress",
@@ -37,7 +36,6 @@ const ORG_OPTS: SiteSchemaOpts = {
     addressCountry: "GB",
   },
   areaServedCountry: "United Kingdom",
-  priceRange: "££",
   // Titles of the /for/* sector hub pages (care-hubs.ts), so knowsAbout tracks
   // the pages that actually exist instead of a hand-picked list drifting out
   // of date (matches the charities port pattern).

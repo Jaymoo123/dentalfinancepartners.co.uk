@@ -445,7 +445,7 @@ export default function HomePage() {
                 Talk to a care sector specialist
               </h2>
               <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-white/80">
-                Tell us about your care service: the type of provision, your CQC registration status and approximate headcount. We will come back within one working day with no obligation.
+                Tell us about your care service: the type of provision, your CQC registration status and approximate headcount. We will come back within 24 hours with no obligation.
               </p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
