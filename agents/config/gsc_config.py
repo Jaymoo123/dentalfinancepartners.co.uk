@@ -221,6 +221,86 @@ GSC_CONFIG = {
         "enabled": True,
         "start_date": "2026-07-11",
     },
+
+    "crypto": {
+        "site_url": "sc-domain:cryptotaxpartners.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "crypto",
+        "content_dir": "crypto/web/content/blog",
+        "git_repo_path": "crypto/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": None,
+    },
+
+    "ecommerce": {
+        "site_url": "sc-domain:ecommercefinance.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "ecommerce",
+        "content_dir": "ecommerce/web/content/blog",
+        "git_repo_path": "ecommerce/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": None,
+    },
+
+    "hospitality": {
+        "site_url": "sc-domain:hospitalitytax.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "hospitality",
+        "content_dir": "hospitality/web/content/blog",
+        "git_repo_path": "hospitality/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": None,
+    },
+
+    "wills-probate": {
+        "site_url": "sc-domain:estateplanningspecialists.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "wills-probate",
+        "content_dir": "wills-probate/web/content/blog",
+        "git_repo_path": "wills-probate/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": None,
+    },
+
+    "divorce-finances": {
+        "site_url": "sc-domain:divorcefinancespecialists.co.uk",
+        "property_type": "domain",
+        "blog_topics_table": "blog_topics",
+        "site_key": "divorce-finances",
+        "content_dir": "divorce-finances/web/content/blog",
+        "git_repo_path": "divorce-finances/web",
+        "min_impressions_baseline": 5,
+        "verdict_thresholds": {
+            "week1":      {"impressions_per_day": 5, "position_improvement": 3, "clicks_per_day": 0.5},
+            "cumulative": {"impressions_per_day": 3, "position_improvement": 2, "clicks_per_day": 0.3},
+        },
+        "enabled": True,
+        "start_date": None,
+    },
 }
 
 # Global settings (apply to all sites unless overridden)

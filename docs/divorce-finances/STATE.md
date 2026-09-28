@@ -1,4 +1,56 @@
-# divorce-finances (placeholder brand) site state
+# divorce-finances (Divorce Finance Specialists) site state
+
+Last updated 2026-09-28 (phase 0 parity). **The site is LIVE.** Every line below
+this block that says "not deployed", "no Vercel project", "pre-launch" or
+"placeholder brand" is stale and kept only as history.
+
+## 2026-09-28 - truth block (silent-sites agent)
+
+- **Live since 2026-09-25 23:21:35 UTC**, `www.divorcefinancespecialists.co.uk`. Exactly one READY
+  production deployment ever: `dpl_HUvX1HdWB3BajBeuG2th1E24XsBw`, commit `b86a990a`. Vercel project
+  `divorce-finance-specialists`, id `prj_krGSMLVAWcrx6M8c6IlEyKtrgwqP`. The launch rode an unrelated
+  commit ("drop the daily nurture digest cron"), which is why nothing in the repo recorded it.
+- **Search Console has data.** 90 days to 2026-09-27: **196 impressions, 0 clicks**, 43 pages, 84
+  queries, all of it since 2026-09-26. 09-26 = 46 impressions, 09-27 = 150. Top pages are all blog:
+  adultery and financial settlement (11), high-net-worth Duxbury (6 at position 2.3), the settlement
+  guide (4), cohabitation agreements (4), plus `/about` at position 93. Queries are clean commercial
+  intent: clean break order cost, divorce and pensions, CMS top-up.
+- **Bing: registered and verified, zero rows.** `GetRankAndTrafficStats`, `GetQueryStats` and
+  `GetPageStats` all return an empty set. Nothing to fix.
+- **Our own analytics and leads are both dead, one cause: the Vercel project has ZERO environment
+  variables.** No `SUPABASE_URL`, no `SUPABASE_SERVICE_ROLE_KEY`, so
+  `packages/web-shared/analytics/server/createTrackHandler.ts:199-206` logs and returns 204 on every
+  beacon, and `packages/web-shared/leads/server/createLeadSubmitHandler.ts:144-145` cannot insert a
+  lead. The other 15 estate projects carry 21 to 39 keys each. This is config, not code: nothing in
+  `divorce-finances/web` is wrong on that path.
+- **Database side is ready**, which answers the open question in the parity research directly:
+  migration `20260803000002` is not in `supabase_migrations.schema_migrations` but its effects are
+  live, so it was applied out of band. `sites` carries `divorce-finances` /
+  `www.divorcefinancespecialists.co.uk` / `active = true`, and `leads_source_valid` accepts
+  `divorce-finances`. So lead submission is not failing on the constraint, it is failing on the
+  missing env. 0 rows in `web_sessions`, 0 in `leads`.
+- What the parity research found (`docs/divorce-finances/PARITY_RESEARCH_2026-09-28.md`): content
+  complete, lead kit and intent kit close to Property; zero design-port adoption (no
+  `web-shared/design` imports, no port tags, no `prose-standard.css`); `public/llms.txt` still says
+  "STUB (pre-launch)"; "partner network" prose on `/contact`, `/complete` and the privacy policy;
+  `ResultGateModal.tsx` still gates a calculator result after Property removed its gate on 09-27;
+  `/services` says "Full service detail is being built now"; `lead-nurture.ts` holds cumulative hours
+  in the gap field and is written in the partner-firm voice; og:image 404.
+- **Phase 0 is changing**: positioning to the firm voice with the solicitor introduction as a named
+  step, llms.txt rewritten on Property's model, `entity` key, gate removal, lead kit coverage, schema
+  and canonicals, og:image, nurture timing to `0,0,4,20,24,48,72,96`, the `/services` placeholder,
+  AdSense and GA4 wiring. Detail: `docs/divorce-finances/PHASE0_2026-09-28.md`.
+- **Fix list not owned by the builder** (manager or owner): (1) set the env vars on
+  `prj_krGSMLVAWcrx6M8c6IlEyKtrgwqP` from the `charities` baseline, production and preview, then
+  redeploy, because env changes need one; (2) after that deploy, visit the site once and confirm
+  `web_sessions` has a row, not just that the keys exist; (3) seed `monitored_pages`, currently zero
+  rows, starting with the 43 pages GSC already sees; (4) no schema work, both migrations are live;
+  (5) GA4 property and AdSense approval sit with the plumbing agent. Full detail:
+  `docs/_engines/PHASE0_SILENT_SITES_2026-09-28.md`.
+
+---
+
+## History below (pre-launch, retained)
 
 Last updated 2026-08-04 (waves 1-4 written, content COMPLETE; Phase 6 = deploy plumbing remaining).
 

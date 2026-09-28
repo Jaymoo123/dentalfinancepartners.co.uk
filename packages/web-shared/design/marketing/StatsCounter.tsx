@@ -59,6 +59,20 @@ function StatValue({ stat, play }: { stat: StatItem; play: boolean }) {
   if (stat.value !== undefined) {
     return <span>{stat.value}</span>;
   }
+  // Guard, not just a `value` path: a mapper that fails to parse a non-numeric
+  // figure into `value` (see generalist/services and Medical's stat mappers)
+  // can still hand this component a non-finite target. Rendering "0" there is
+  // the exact defect `value` was added to fix; fall back to whatever text the
+  // caller did supply (suffix carries the raw string in the known defect
+  // shape) instead of a false zero.
+  if (!Number.isFinite(target)) {
+    return (
+      <span>
+        {stat.prefix}
+        {stat.suffix}
+      </span>
+    );
+  }
   return (
     <span>
       {stat.prefix}

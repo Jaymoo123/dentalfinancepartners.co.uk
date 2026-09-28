@@ -1,4 +1,53 @@
-# wills-probate (Probate Compass) site state
+# wills-probate (Estate Planning Specialists) site state
+
+Last updated 2026-09-28 (phase 0 parity). **The site is LIVE.** Every line below
+this block that says "not deployed", "no Vercel project", "pre-launch" or
+"placeholder brand" is stale and kept only as history.
+
+## 2026-09-28 - truth block (silent-sites agent)
+
+- **Live since 2026-09-25 23:17:47 UTC**, `www.estateplanningspecialists.co.uk`. Exactly one READY
+  production deployment ever: `dpl_8vWqYziuzdftcRdE2Hz8nRSQayWJ`, commit `b86a990a`. Vercel project
+  `estate-planning-specialists`, id `prj_oZhUm1ZKq3BeckaBtwpbjp5EBs2G`. The launch rode an unrelated
+  commit ("drop the daily nurture digest cron"), which is why nothing in the repo recorded it.
+- **Search Console has data.** 90 days to 2026-09-27: **1,135 impressions, 2 clicks**, 113 pages,
+  520 queries, all of it since 2026-09-26. 09-26 = 285 impressions, 09-27 = 850 and 2 clicks. Top
+  pages are all blog: executor fees, the 7-year gift rule, the probate application form (1 click at
+  position 29.8), Scottish intestacy (1 click at position 7.0). Query demand skews to free-will
+  intent the site does not sell.
+- **Bing: registered and verified, zero rows.** `GetRankAndTrafficStats`, `GetQueryStats` and
+  `GetPageStats` all return an empty set. Nothing to fix.
+- **Our own analytics and leads are both dead, one cause: the Vercel project has ZERO environment
+  variables.** No `SUPABASE_URL`, no `SUPABASE_SERVICE_ROLE_KEY`, so
+  `packages/web-shared/analytics/server/createTrackHandler.ts:199-206` logs and returns 204 on every
+  beacon, and `packages/web-shared/leads/server/createLeadSubmitHandler.ts:144-145` cannot insert a
+  lead. The other 15 estate projects carry 21 to 39 keys each. This is config, not code: nothing in
+  `wills-probate/web` is wrong on that path.
+- **Database side is ready.** `sites` carries `wills-probate` / `www.estateplanningspecialists.co.uk`
+  / `active = true`; `leads_source_valid` accepts `wills-probate`. Migration `20260724000001` is not
+  in `supabase_migrations.schema_migrations` but its effects are live, so it was applied out of band.
+  0 rows in `web_sessions`, 0 in `leads`, both explained by the missing env.
+- What the parity research found (`docs/wills-probate/PARITY_RESEARCH_2026-09-28.md`): content
+  complete (146 posts, calculators, intent kit, sticky CTA, AI-crawler allowlist all present); the
+  design port was never run (0 tags, 0 `web-shared/design` imports); `public/llms.txt` still says
+  "STUB (pre-launch) ... nothing here should be cited" on a live site; "partner network" caveat copy
+  on `/contact` and `/complete`; og:image and publisher logo 404; `lead-nurture.ts` holds cumulative
+  hours (`0,0,4,24,48,96,168,264`) in the gap field; no FAQPage on calculator pages.
+- **Phase 0 is changing**: positioning to the firm voice, llms.txt rewritten on Property's model,
+  `entity` key added, lead kit on every money page, gate removal, schema and canonicals, og:image,
+  nurture timing to `0,0,4,20,24,48,72,96`, AdSense and GA4 wiring. Detail:
+  `docs/wills-probate/PHASE0_2026-09-28.md`.
+- **Fix list not owned by the builder** (manager or owner): (1) set the env vars on
+  `prj_oZhUm1ZKq3BeckaBtwpbjp5EBs2G` from the `charities` baseline, production and preview, then
+  redeploy, because env changes need one; (2) after that deploy, visit the site once and confirm
+  `web_sessions` has a row, not just that the keys exist; (3) seed `monitored_pages`, currently zero
+  rows, starting with the 113 pages GSC already sees; (4) no schema work, both migrations are live;
+  (5) GA4 property and AdSense approval sit with the plumbing agent. Full detail:
+  `docs/_engines/PHASE0_SILENT_SITES_2026-09-28.md`.
+
+---
+
+## History below (pre-launch, retained)
 
 Last updated 2026-08-04 (CONTENT BUILD COMPLETE, 146 posts; Phase-6 code prep
 DONE; remaining = owner externals at G1).

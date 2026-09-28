@@ -143,7 +143,7 @@ export default function VisitorsTable({
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Search id, lead, topic, source..."
-          className="min-w-0 flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-sm placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none"
+          className="min-w-0 flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-sm placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
         />
         <div className="flex items-center gap-1">
           {chip("all", "All")}
