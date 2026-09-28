@@ -270,16 +270,10 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                       placement="blog"
                       category={categorySlug}
                     />
-                    {/* Mid-article qualified lead capture (specialist-firm review, medical voice). */}
-                    <MiniCapture
-                      formId="blog_mid_resource"
-                      messagePrefix={`[Blog mid: ${categorySlug}] `}
-                      heading="Get this read by a specialist firm"
-                      blurb="Tell us about your situation and we will match it to a regulated firm that works with doctors. A medical accountant there reviews your position and confirms the next sensible step. Enquiring commits you to nothing."
-                      submitLabel="Request a specialist review"
-                      className={`my-10 ${cardShell} sm:p-8`}
-                    />
-                    {/* InlineMiniLeadForm follows after the qualified capture. */}
+                    {/* Mid-article lead ask: the estate-standard inline form
+                        (formId inline_mini) matching the other sites' blog
+                        templates. The qualified MiniCapture ask is dropped
+                        here; it duplicated this immediately below it. */}
                     <InlineMiniLeadForm topic={post.category} />
                     <div dangerouslySetInnerHTML={{ __html: midSplit.after }} />
                   </>

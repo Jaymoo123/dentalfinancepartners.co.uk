@@ -35,12 +35,14 @@ const data: AudienceStage = {
     "You already have the company. Private clinics, medico-legal reports or locum work run through it, and the question is no longer whether to incorporate but how to run it properly. That means four decisions that repeat every year: how much comes out as salary and how much as dividend, whether a locum engagement is inside IR35 and so never really company income at all, what the company costs you in NHS pension accrual, and when the corporation tax is actually due. A fifth arrives once, when the company is closed and the money either leaves as capital or is taxed as income. Each is set out below on 2026/27 rates, because the dividend rates and the loan charge both moved on 6 April 2026.",
   // Statutory figures from docs/medical/_wave1/medical-companies.json.
   // "19% to 25%" and "9 months and 1 day" are ranges/durations, not single
-  // counted-up numbers, so both render as text stats (target 0, value in the
-  // label). 35.75% and £200 are single figures and use StatsCounter normally.
+  // counted-up numbers, so both render verbatim via StatsCounter's `value`
+  // (target 0, value carries the figure, label carries the description).
+  // 35.75% and £200 are single figures and use StatsCounter's count-up
+  // normally.
   stats: [
-    { target: 0, label: "19% to 25%: corporation tax 2026/27, marginal relief between £50,000 and £250,000" },
+    { target: 0, value: "19% to 25%", label: "Corporation tax 2026/27, marginal relief between £50,000 and £250,000" },
     { target: 35.75, decimals: 2, suffix: "%", label: "Dividend upper rate 2026/27, and the s.455 loan charge rate on loans made from 6 April 2026" },
-    { target: 0, label: "9 months and 1 day: corporation tax payment deadline after your period end" },
+    { target: 0, value: "9 months and 1 day", label: "Corporation tax payment deadline after your period end" },
     { target: 200, prefix: "£", label: "First late-filing penalty on a company tax return" },
   ],
   concerns: [

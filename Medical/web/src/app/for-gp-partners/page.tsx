@@ -34,14 +34,15 @@ const data: AudienceStage = {
   intro:
     "Joining a GP partnership, or finishing your first full year as one, is when the tax bill becomes real. Salary and PAYE stop. You take drawings against an anticipated profit share, and that share is taxed on you personally through self assessment whether or not you actually drew it. Your NHS pension moves from the Type 2 self-assessment for salaried GPs to the Type 1 Annual Certificate of Pensionable Profits, which you sign. A buy-in buys a share of net assets and, where the practice owns its building, a share of the premises. The partnership accounts and the PCSE reconciliation sit on <a href=\"/for-gps\">GP practice accountants</a>.",
   // Statutory figures from docs/medical/_wave1/gp-partners.json. "28 February"
-  // and "6% and 2%" are not single counted-up numbers, so they render as text
-  // stats (target 0, value in the label). £130.07 and 12.5% are single
-  // figures and use StatsCounter normally.
+  // and "6% and 2%" are not single counted-up numbers, so they render
+  // verbatim via StatsCounter's `value` (target 0, value carries the figure,
+  // label carries the description). £130.07 and 12.5% are single figures and
+  // use StatsCounter's count-up normally.
   stats: [
     { target: 130.07, decimals: 2, prefix: "£", label: "Global Sum per weighted patient, 2026/27" },
-    { target: 0, label: "28 February: Type 1 certificate deadline, a year in arrears" },
+    { target: 0, value: "28 February", label: "Type 1 certificate deadline, a year in arrears" },
     { target: 12.5, decimals: 1, suffix: "%", label: "Top NHS pension contribution tier, 2026/27" },
-    { target: 0, label: "6% and 2%: Class 4 NIC on partnership profits, 2026/27" },
+    { target: 0, value: "6% and 2%", label: "Class 4 NIC on partnership profits, 2026/27" },
   ],
   concerns: [
     {

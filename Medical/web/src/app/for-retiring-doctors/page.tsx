@@ -36,13 +36,14 @@ const data: AudienceStage = {
   // Statutory figures from docs/medical/_wave1/retiring-doctors.json, checked
   // against docs/medical/house_positions.md §2.E, §2.B, §18. "20% to 100%" is
   // a range and "£268,275" and "6 April 2028" are not single counted-up
-  // numbers, so all three render as text stats (target 0, value in the label)
-  // rather than through StatsCounter's count-up.
+  // numbers, so all three render verbatim via StatsCounter's `value` (target
+  // 0, value carries the figure, label carries the description) rather than
+  // through the count-up.
   stats: [
-    { target: 0, label: "20% to 100%: benefits you can draw at partial retirement" },
+    { target: 0, value: "20% to 100%", label: "Benefits you can draw at partial retirement" },
     { target: 60, prefix: "£", suffix: "k", label: "Pension annual allowance, 2026/27" },
-    { target: 0, label: "£268,275: lump sum allowance on tax-free lump sums" },
-    { target: 0, label: "6 April 2028: minimum pension age rises from 55 to 57" },
+    { target: 0, value: "£268,275", label: "Lump sum allowance on tax-free lump sums" },
+    { target: 0, value: "6 April 2028", label: "Minimum pension age rises from 55 to 57" },
   ],
   concerns: [
     {

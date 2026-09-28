@@ -40,9 +40,10 @@ const data: AudienceStage = {
     { target: 60, prefix: "£", suffix: "k", label: "Pension annual allowance, 2026/27" },
     { target: 10, suffix: " weeks", label: "Window to pension a locum session" },
     // Not a single number: StatsCounter animates a count-up, so a calendar
-    // date is rendered as a text stat instead (target 0, value folded into
-    // the label), same fallback the row's own sweep anticipated.
-    { target: 0, label: "5 October: deadline to register for self assessment" },
+    // date renders verbatim via `value` instead (target 0, value carries the
+    // figure, label carries the description), same fallback the row's own
+    // sweep anticipated.
+    { target: 0, value: "5 October", label: "Deadline to register for self assessment" },
     { target: 12.5, decimals: 1, suffix: "%", label: "Top NHS pension contribution tier, 2026/27" },
   ],
   concerns: [
