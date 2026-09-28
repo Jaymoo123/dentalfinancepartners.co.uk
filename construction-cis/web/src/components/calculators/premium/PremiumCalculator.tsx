@@ -27,20 +27,15 @@
  * Result gate: in-blog only, never for converted visitors, reveals on any dismiss.
  * Shows at most once per session (module-level flag, mirrors Property/Dentists exactly).
  */
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { CalcField, CalcValues } from "@/lib/calculators/premium/types";
 import type { TopicKey } from "@/lib/intent/taxonomy";
 import type { PremiumToolConfig, GridRow, PremiumResult, ScenarioResult } from "@/lib/calculators/premium/types";
 import { PremiumBarChart } from "./PremiumBarChart";
-import { ResultGateModal } from "./ResultGateModal";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
-import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { btnPrimary } from "@/components/ui/layout-utils";
-
-// The gate interstitial shows at most once per session.
-let gateModalShownThisSession = false;
 
 /* ---------------------------------------------------------------------------
  * Defaults
@@ -500,12 +495,6 @@ export function PremiumCalculator({
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Result gate: in-blog only, never for already-converted visitors.
-  const gated = placement === "blog" && !isConverted();
-  const [revealed, setRevealed] = useState(false);
-  const [gateOpen, setGateOpen] = useState(false);
-  const showResult = !gated || revealed;
-
   const base = {
     calculator_slug: config.id,
     placement,
@@ -539,24 +528,6 @@ export function PremiumCalculator({
     setValues((prev) => ({ ...prev, [id]: v }));
     onInteract(id);
   };
-
-  // "See your result" button: opens the gate interstitial the first time this
-  // session, otherwise reveals directly.
-  const onSeeResult = () => {
-    if (!gateModalShownThisSession) {
-      gateModalShownThisSession = true;
-      setGateOpen(true);
-    } else {
-      setRevealed(true);
-    }
-  };
-
-  // Stable identity so the modal's focus/Escape effects are not re-run on
-  // unrelated parent re-renders.
-  const revealFromGate = useCallback(() => {
-    setGateOpen(false);
-    setRevealed(true);
-  }, []);
 
   const result = useMemo<PremiumResult>(
     () => config.compute({ values, rows, scenario }),
@@ -638,48 +609,24 @@ export function PremiumCalculator({
 
           {/* Result panel */}
           <div className="space-y-4 border-t border-[var(--border)] bg-[var(--surface-elevated)] p-5 sm:p-7 lg:border-l lg:border-t-0">
-            {showResult ? (
-              <>
-                <HeadlineCard result={result} />
-                {scenarios && scenarios.length > 0 && (
-                  <ScenarioTiles scenarios={scenarios} />
-                )}
-                {full && config.chart && result.chart && (
-                  <PremiumBarChart spec={config.chart} result={result.chart} />
-                )}
-                <Workings result={result} />
-              </>
-            ) : (
-              // Pre-reveal state: figure computed but held behind the gate button.
-              // min-height reserves the result area to prevent layout jump on reveal.
-              <div className="flex min-h-[220px] flex-col items-center justify-center gap-3 text-center">
-                <p className="text-sm font-medium text-[var(--ink-soft)]">
-                  Your figure is ready.
-                </p>
-                <button
-                  type="button"
-                  onClick={onSeeResult}
-                  className={`${btnPrimary} w-full sm:w-auto`}
-                  data-cta="see_result"
-                >
-                  See your result
-                </button>
-              </div>
+            <HeadlineCard result={result} />
+            {scenarios && scenarios.length > 0 && (
+              <ScenarioTiles scenarios={scenarios} />
             )}
+            {full && config.chart && result.chart && (
+              <PremiumBarChart spec={config.chart} result={result.chart} />
+            )}
+            <Workings result={result} />
           </div>
         </div>
 
-        {/* In-blog non-gated CTA (converted visitors who see their result instantly). */}
-        {placement === "blog" && !gated && !revealed && (
+        {/* In-blog CTA: result renders immediately, one lead form directly under it. */}
+        {placement === "blog" && (
           <div className="border-t border-[var(--border)] bg-white px-5 py-4 sm:px-7">
             <CalcResultCta campaign={config.id} />
           </div>
         )}
       </div>
-
-      {gateOpen && (
-        <ResultGateModal campaign={config.id} topicKey={topicKey} onReveal={revealFromGate} />
-      )}
     </>
   );
 }

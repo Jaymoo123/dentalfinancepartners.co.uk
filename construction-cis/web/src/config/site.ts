@@ -26,7 +26,10 @@ export const siteConfig = {
   get url() {
     return getSiteUrl();
   },
-  publisherLogoUrl: niche.brand.publisher_logo_url,
+  // niche.config.json points this at /brand/icon-alt.png, which does not exist
+  // under web/public (404 on every page's og:image). The only image asset that
+  // actually exists is the app-router icon.svg, so use that instead.
+  publisherLogoUrl: "/icon.svg",
   // NOTE: contact.email and contact.phone are internal-routing values only (e.g.
   // nurture reply-to). They are intentionally NOT displayed publicly and are never
   // emitted in JSON-LD. Public contact goes via the /contact form only.

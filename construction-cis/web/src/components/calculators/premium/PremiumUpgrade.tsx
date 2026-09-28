@@ -19,8 +19,9 @@
  *   - var(--border): borders and skeleton pulses
  * The site does NOT define --gold or --navy. Use var(--accent) / var(--dark).
  *
- * topicKey is threaded as a PROP from PremiumUpgrade into PremiumCalculator into
- * ResultGateModal. It is NEVER re-derived from the URL inside the gate.
+ * topicKey is threaded as a PROP from PremiumUpgrade into PremiumCalculator.
+ * (The result gate / ResultGateModal path was removed; results render
+ * immediately for every placement.)
  */
 import dynamic from "next/dynamic";
 import type { TopicKey } from "@/lib/intent/taxonomy";

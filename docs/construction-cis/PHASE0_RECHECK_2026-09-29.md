@@ -117,3 +117,60 @@ None. Focus rings present on the three form components; `delayHours` correct; ta
 ## Estate summariser note (2026-09-29)
 Final status: NOT SAFE TO DEPLOY.
 Blocking item: the blog-embedded calculator result is still gated for first-time visitors (H4) and og:image 404s on every page (H5).
+
+## Fix round (2026-09-29)
+
+Scope: `construction-cis/web/src/` and `construction-cis/web/public/` only. No deploy.
+
+1. **H4 (blog calculator gate) fixed.**
+   - `construction-cis/web/src/components/calculators/premium/PremiumCalculator.tsx`: deleted the
+     gate branch entirely rather than adding a flag. Removed `const gated = placement === "blog" && !isConverted()`,
+     the `revealed`/`gateOpen` state, the `gateModalShownThisSession` module flag, `onSeeResult`,
+     `revealFromGate`, the `showResult ? … : "See your result"` pre-reveal branch, and the
+     `<ResultGateModal>` mount. The result panel (`HeadlineCard` / `ScenarioTiles` / chart /
+     `Workings`) now always renders. Removed now-unused imports: `ResultGateModal`, `isConverted`,
+     `useCallback`, `btnPrimary`.
+   - The blog-placement lead CTA condition simplified from `placement === "blog" && !gated && !revealed`
+     to `placement === "blog"`, so `<CalcResultCta>` sits directly under the result for every
+     blog-embedded calculator, matching the standalone `/calculators/*` shape (which was already
+     ungated).
+   - `construction-cis/web/src/components/blog/BlogPostRenderer.tsx:274,281,294,300`: unchanged
+     (`placement="blog"` mounts were already correct; the gate lived inside `PremiumCalculator`,
+     not here).
+   - `construction-cis/web/src/components/calculators/premium/PremiumUpgrade.tsx:22-24`: corrected
+     a stale doc comment that referenced the now-removed `ResultGateModal` threading (mechanical,
+     not new prose).
+   - `ResultGateModal.tsx` left in place, unreferenced, per instructions.
+   - Grep proof (only comment mentions remain, no active wiring):
+     ```
+     construction-cis/web/src/components/calculators/premium/PremiumUpgrade.tsx:23: * ResultGateModal. It is NEVER re-derived from the URL inside the gate.
+     construction-cis/web/src/components/calculators/premium/ResultGateModal.tsx:6: * Ported from Dentists/web/src/components/tools/premium/ResultGateModal.tsx.
+     construction-cis/web/src/components/calculators/premium/ResultGateModal.tsx:15: *   2. isConverted() visitors are NEVER gated (checked by PremiumCalculator).
+     construction-cis/web/src/components/calculators/premium/ResultGateModal.tsx:33:export function ResultGateModal({
+     ```
+     (Note: `PremiumUpgrade.tsx:23` comment quoted above is pre-edit; the file now reads
+     "The result gate / ResultGateModal path was removed; results render immediately for every
+     placement.")
+
+2. **H5 (og:image 404) fixed.**
+   - `construction-cis/web/public/brand/` does not exist at all, so neither `publisher_logo_url`
+     (`/brand/icon-alt.png`) nor `logo_path` (`/brand/primary-logo.png`) in `niche.config.json`
+     resolve to a real file. `niche.config.json` is outside the editable scope for this fix
+     (only `web/src` / `web/public`), so the fix was made where the value is consumed:
+     `construction-cis/web/src/config/site.ts:29` — `publisherLogoUrl` no longer reads
+     `niche.brand.publisher_logo_url`; it is hardcoded to `"/icon.svg"`, the only image asset that
+     actually exists (`construction-cis/web/src/app/icon.svg`, Next.js app-router route icon,
+     served at `/icon.svg`). This is an SVG, not a PNG/JPG; acceptable per brief, noted here.
+   - Before: `og:image` = `https://www.tradetaxspecialists.co.uk/brand/icon-alt.png` (404).
+   - After: `og:image` = `https://www.tradetaxspecialists.co.uk/icon.svg` (verified to exist:
+     `construction-cis/web/src/app/icon.svg`, 426 bytes).
+   - This also fixes the JSON-LD `Organization.logo` (`lib/schema.ts:53` reads the same
+     `siteConfig.publisherLogoUrl`), which pointed at the same missing file.
+
+## Verification
+- `npx tsc --noEmit -p construction-cis/web` → no output, 0 errors.
+- `cd construction-cis/web && npx vitest run` → 30 files, 443/443 tests passed.
+  One test needed updating: `src/tests/design/cta-attribute-diff.test.ts` pinned a
+  `data-cta="see_result"` entry for the now-deleted gate button
+  (`src/components/calculators/premium/PremiumCalculator.tsx|see_result|null|null`); removed
+  from the `PINNED` list, expectation now matches the degated component.

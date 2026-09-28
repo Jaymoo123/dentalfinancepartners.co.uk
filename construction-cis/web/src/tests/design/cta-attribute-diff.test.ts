@@ -112,7 +112,6 @@ const PINNED = [
   "src/app/page.tsx|hero_primary|hero|lead",
   "src/app/page.tsx|home_cta_primary|home_cta|lead",
   "src/app/page.tsx|home_cta_secondary|home_cta|contact",
-  "src/components/calculators/premium/PremiumCalculator.tsx|see_result|null|null",
   "src/components/intent/DeepScrollModal.tsx|deep_scroll_close|null|null",
   'src/components/intent/DeepScrollModal.tsx|deep_scroll_modal|null|offer.href.startsWith("/contact") ? "form" : undefined',
   'src/components/intent/HeroOffer.tsx|hero_cta|null|offer.href.startsWith("/contact") ? "form" : undefined',
