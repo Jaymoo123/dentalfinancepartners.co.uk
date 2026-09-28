@@ -2,6 +2,7 @@
 title: "FNC, CHC and local authority fee-mix accounting for nursing homes"
 slug: "fnc-chc-la-fee-mix-accounting"
 date: "2026-07-15"
+dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
 author: ""
 category: "Fees, FNC and Local Authority Rates"

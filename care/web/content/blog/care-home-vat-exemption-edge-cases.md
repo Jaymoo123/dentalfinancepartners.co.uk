@@ -2,6 +2,7 @@
 title: "Care Home VAT Exemption Edge Cases: What Every Operator Needs to Know"
 slug: "care-home-vat-exemption-edge-cases"
 date: "2026-07-15"
+dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
 author: ""
 category: "VAT and Welfare Exemption"

@@ -50,8 +50,10 @@ const KNOWN_EYEBROW_CONSUMERS = [
   // gained a Breadcrumb and the TradeBackdrop motif wrapper.
   // 2026-09-14 kit-adoption uplift: +1 line, the page gained an `Eyebrow` import.
   // Ground, class and colour utility are all unchanged.
-  { file: "app/about/page.tsx", line: 63 },
-  { file: "app/contact/page.tsx", line: 45 },
+  // 2026-09-28: +2 lines each from the estate claims sweep (entity wording in the
+  // hero copy). Still bg-neutral-900 with text-orange-400, verified on disk.
+  { file: "app/about/page.tsx", line: 65 },
+  { file: "app/contact/page.tsx", line: 47 },
   { file: "app/not-found.tsx", line: 8 },
   // Phase 2 / WP-B1. The article header card's category eyebrow. LIGHT ground:
   // the card is bg-neutral-50 (#fafafa) inside a bg-white <article>, and the

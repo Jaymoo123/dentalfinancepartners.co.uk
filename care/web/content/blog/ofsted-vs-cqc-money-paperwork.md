@@ -2,6 +2,7 @@
 title: "Ofsted vs CQC: how the money and registration paperwork actually differs for children's homes"
 slug: "ofsted-vs-cqc-money-paperwork"
 date: "2026-07-15"
+dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
 author: ""
 category: "CQC and Financial Compliance"

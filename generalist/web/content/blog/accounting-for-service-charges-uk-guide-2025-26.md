@@ -29,7 +29,7 @@ faqs:
   answer: HMRC can assess you for the underpaid VAT plus interest and penalties. If you have been undercharging VAT, you may need to issue corrective invoices to tenants. If you have been over recovering input VAT, you will need to repay it. Speak to an accountant promptly to regularise the position.
 metaTitle_prev: Accounting for Service Charges UK Guide 2025/26
 metaDescription_prev: How to account for service charges correctly as a UK business. Covers VAT, corporation tax, leaseholder rules, and common mistakes. Practical guide
-dateModified: '2026-06-12'
+dateModified: "2026-09-28"
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
 reviewedAt: '2026-06-12'

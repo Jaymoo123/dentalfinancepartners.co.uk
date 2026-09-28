@@ -3,6 +3,7 @@ title: "Director's Loan Account: S455, Repayment Rules and Exits"
 slug: "directors-loan-account-explained"
 canonical: "https://www.hollowaydavies.co.uk/blog/director-pay-and-dividends/directors-loan-account-explained"
 date: "2026-08-25"
+dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
 generator: rewrite/track2-full
 author: "Holloway Davies Editorial Team"

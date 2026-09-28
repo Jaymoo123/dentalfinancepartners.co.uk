@@ -12,7 +12,7 @@ image: ""
 h1: "How Many Buy-to-Let Limited Companies Are There in the UK?"
 summary: "At the Companies House bulk snapshot of 1 September 2026 there were 665,645 live companies on the UK register carrying one of the four real-estate SIC codes we track (68100, 68201, 68209 and 68320). That is the stock: every property company still registered, not the number formed last year. London holds 224,647 of them, 33.7% of the register, and roughly a third of the whole live population was incorporated within the last three years. This page sets out the count, how it splits by region, how old those companies are, and why our figure is larger than the buy-to-let company totals quoted elsewhere."
 schema: ''
-dateModified: "2026-09-02"
+dateModified: "2026-09-28"
 reviewedBy: "Property Tax Partners Editorial Team"
 reviewerCredentials: "Derived from Companies House open data under the Open Government Licence v3.0"
 faqs:

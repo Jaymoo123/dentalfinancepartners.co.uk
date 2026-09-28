@@ -3,6 +3,7 @@ title: "Overdrawn Director's Loan Accounts for Dental Practice Owners: s455, BIK
 slug: "directors-loan-account-dental-company-overdrawn-tax"
 canonical: "https://www.dentalfinancepartners.co.uk/blog/practice-accounting/directors-loan-account-dental-company-overdrawn-tax"
 date: "2026-06-03"
+dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
 generator: opus-4.8/netnew-wave
 author: "Dental Finance Partners Editorial Team"

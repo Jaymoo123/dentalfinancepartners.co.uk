@@ -2,6 +2,7 @@
 title: "Can Charities Claim Back VAT? Recovery Rules Explained"
 slug: "can-charities-claim-back-vat"
 date: "2026-07-14"
+dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
 author: ""
 category: "Charity VAT"

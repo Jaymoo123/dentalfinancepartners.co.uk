@@ -2,6 +2,7 @@
 title: "Do Charities Pay VAT? The Real Rules, Reliefs and Traps"
 slug: "do-charities-pay-vat"
 date: "2026-07-14"
+dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
 author: ""
 category: "Charity VAT"

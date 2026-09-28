@@ -50,6 +50,8 @@ since the optimisation engine was retired on 2026-09-09 (I-004).
 
 ---
 
+Superseded IDs still cited inside open rows: D-002 (re-opened as X-007) and S-005 (folded into G-001).
+
 ## Open Issues
 
 **Verification standard, 23 September 2026.** Every item below was re-checked against the code or
