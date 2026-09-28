@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
-import { MiniCapture } from "@/components/calculators/MiniCapture";
 import { buildCalculatorJsonLd, buildFaqPageJsonLd } from "@/lib/calculators/schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
@@ -103,15 +102,10 @@ export default async function CalculatorToolPage({ params }: Props) {
               </div>
             )}
 
-            <div id="get-expert-help" className="mt-12 scroll-mt-24">
-              <MiniCapture
-                formId="calc_page_footer"
-                messagePrefix={`[Calculator page: ${tool.slug}]`}
-                heading="Want to be sure of your position?"
-                blurb="Tell us about your hospitality business and we will confirm your exact figures and the compliance steps that apply to you. No obligation."
-                submitLabel="Request a review"
-              />
-            </div>
+            {/* REMOVED 2026-09-28 parity phase 0 (Opus read): this route rendered
+                TWO identical capture forms, this one and CalcResultCta under the
+                result. Brief section 4 allows exactly one, directly under the
+                result, so the footer duplicate goes and CalcResultCta stays. */}
           </div>
         </section>
       </main>

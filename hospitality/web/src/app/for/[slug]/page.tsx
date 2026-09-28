@@ -13,6 +13,21 @@ export function generateStaticParams() {
   return hospitalityHubs.map((h) => ({ slug: h.slug }));
 }
 
+const HUB_CLOSERS: Record<string, string> = {
+  "restaurants":
+    "Send us a month of EPOS takings and your supplier invoices and we will tell you whether your food and drink VAT split is right, and what your real margin per cover is.",
+  "pubs-and-bars":
+    "Tell us how your wet and dry sales split and we will tell you where the margin is leaking, whether your AWRS due diligence stands up, and if Machine Games Duty applies to you.",
+  "takeaways":
+    "Hot food, cold food and delivery are three different VAT answers on the same menu, and we will work through yours line by line before HMRC does.",
+  "hotels-and-guesthouses":
+    "Tell us how your packages are put together and we will tell you whether TOMS applies, what it costs you, and how the room and food elements should be treated.",
+  "cafes-and-coffee-shops":
+    "Eat in, take away and the same tray of pastries can carry three VAT treatments, and we will set your till up so the split is right at the point of sale.",
+  "caterers-and-street-food":
+    "Event work, pitches and mobile units all sit awkwardly in VAT and employment status, and we will tell you where each part of your trading actually falls.",
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -159,7 +174,7 @@ export default async function HospitalityHubPage({
       <LeadCTAPanel
         eyebrow="Free first call, then a fixed fee in writing"
         title={`Speak to a specialist about your ${hub.title.toLowerCase()} business.`}
-        description={`Tell us about your ${hub.title.toLowerCase()} business. We reply within 24 hours and one of our accountants comes back to you directly.`}
+        description={`${HUB_CLOSERS[hub.slug] ?? `Tell us about your ${hub.title.toLowerCase()} business and we will tell you where you stand.`} We reply within 24 hours and one of our accountants comes back to you directly.`}
         proofPoints={[]}
         formTitle="Book your free first call"
         form={<LeadForm submitLabel="Request callback" />}

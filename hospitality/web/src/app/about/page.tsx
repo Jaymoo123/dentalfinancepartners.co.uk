@@ -44,7 +44,7 @@ export default function AboutPage() {
       <LeadCTAPanel
         eyebrow="Free first call, then a fixed fee in writing"
         title="Talk to a hospitality accounts specialist."
-        description="Tell us about your business. We reply within 24 hours and one of our accountants comes back to you directly."
+        description="Tell us what you run, how many covers or rooms you turn over and where the numbers stop making sense, and we will tell you what we would do about it before you commit to anything. We reply within 24 hours and one of our accountants comes back to you directly."
         proofPoints={[]}
         formTitle="Book your free first call"
         form={<LeadForm submitLabel="Request callback" />}

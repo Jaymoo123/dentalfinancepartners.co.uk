@@ -5,6 +5,8 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { hospitalityServices } from "@/data/hospitality-services";
 import { serviceTiers } from "@/config/service-tiers";
 import { siteConfig } from "@/config/site";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: { absolute: "Hospitality Accounting Services | Hospitality Tax" },
@@ -72,6 +74,17 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+    {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires one
+        lead panel with the site's LeadForm on every money page. This hub
+        rendered zero forms, only a /contact link. */}
+    <LeadCTAPanel
+      eyebrow="Free first call, then a fixed fee in writing"
+      title="Not sure which of these you need?"
+      description="Most hospitality businesses need two or three of them and do not know which. Tell us what you run and where the numbers stop making sense, and we will tell you what we would start with. We reply within 24 hours and one of our accountants comes back to you directly."
+      proofPoints={[]}
+      formTitle="Book your free first call"
+      form={<LeadForm submitLabel="Request callback" />}
+    />
     </>
   );
 }

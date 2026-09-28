@@ -344,7 +344,7 @@ const STEPS: LeadNurtureStep[] = [
         [
           "Thanks for your enquiry. It has just landed with us and a hospitality tax specialist is ready to help.",
           "One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The call is a free review of your situation, about 20 minutes, with no charge and no obligation. There is nothing to prepare and no paperwork to dig out first.",
+          "The first call is free, about 20 minutes, and there is no obligation. There is nothing to prepare and no paperwork to dig out first.",
           "Just reply to this email, anything at all, and we will arrange it. We know the floor comes first, so tell us the gap that works, mid morning, between lunch and evening service, or a quiet day early in the week, and we will call you then.",
         ],
         "t0_email",
@@ -459,7 +459,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are ready, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free review is still open, and if this is a busy stretch, that is completely understandable.",
+            "Just checking in, and there is genuinely no rush. Your free first call is still open, and if this is a busy stretch, that is completely understandable.",
             "If it is easier to talk once the season quietens down, say the word and we will come back to you then. Otherwise a one-line reply with a day and time is all we need, and we will take it from there.",
           ],
           "day7_email",
@@ -643,7 +643,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all, we know how the weeks disappear in this trade.",
-            `If you would still like a free review, just reply with ${ask}, whether that is next week or after the season. We will pick it up from wherever you left off.`,
+            `If you would still like a free first call, just reply with ${ask}, whether that is next week or after the season. We will pick it up from wherever you left off.`,
             "All the best with the business.",
           ],
           "detail_capture_day7",
