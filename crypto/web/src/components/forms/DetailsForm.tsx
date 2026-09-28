@@ -17,7 +17,7 @@ import { NoticeCard } from "@accounting-network/web-shared/design/primitives/Not
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 transition-colors focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-primary-500/30";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 transition-colors focus:border-[var(--brand-primary)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] focus:ring-2 focus:ring-primary-500/30";
 
 type MissingField = "name" | "phone";
 

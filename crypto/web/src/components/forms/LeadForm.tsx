@@ -12,7 +12,7 @@ import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-s
 import { focusRing } from "@/components/ui/layout-utils";
 
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-primary-500/30";
+  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-[var(--brand-primary)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] focus:ring-2 focus:ring-primary-500/30";
 const labelClass = "block text-sm font-medium text-slate-900";
 const errorClass = "mt-2 text-xs text-red-600";
 const btnClass =

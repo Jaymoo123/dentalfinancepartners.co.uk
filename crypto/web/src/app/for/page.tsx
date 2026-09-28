@@ -37,7 +37,7 @@ export default function ForIndexPage() {
         turnaround figure. */}
     <LeadCTAPanel
       title="Not sure which holder type fits you?"
-      description="Tell us what you hold and how you came by it, and we will point you to the right place, or just take it from there."
+      description="Tell us what you hold and how you came by it. One of our accountants will tell you which rules apply to you and what needs reporting, whichever holder type you turn out to be."
       proofPoints={[]}
       formTitle="Get in touch"
       form={<LeadForm submitLabel="Send enquiry" />}
