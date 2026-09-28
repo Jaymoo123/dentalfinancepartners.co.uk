@@ -1,4 +1,16 @@
 {
+  "entity": {
+    "firm": "Estate Planning Specialists is the UK's specialist accountancy firm for probate, wills and inheritance tax planning. We handle the money side of an estate: inheritance tax calculations and returns, probate cost estimates, estate accounts and IHT reliefs, and we introduce you to a regulated solicitor for the legal work. Estate Planning Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK executors, administrators and people planning their own estates, from a single probate application to ongoing inheritance tax planning for a family.",
+    "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: what the estate involves and what you need looked at.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work on the money side, and introduce you to a regulated solicitor we work with if the matter needs one."
+    ],
+    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+  },
   "niche_id": "wills-probate",
   "display_name": "Estate Planning Specialists",
   "legal_name": "Ashfield Trading Ltd",
@@ -20,8 +32,8 @@
   "description": "Estate Planning Specialists. Plain-English guidance on probate, wills and inheritance tax for UK executors, administrators and people planning their estates. Free calculators, no jargon. We connect readers with specialist help when the estate needs it.",
   "brand": {
     "primary_color": "#0f766e",
-    "logo_path": "/brand/primary-logo.png",
-    "publisher_logo_url": "/brand/icon-alt.png"
+    "logo_path": "/icon.svg",
+    "publisher_logo_url": "/icon.svg"
   },
   "contact": {
     "email": "hello@estateplanningspecialists.co.uk",

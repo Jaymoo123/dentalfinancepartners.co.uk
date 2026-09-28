@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "Is this site a law firm or financial adviser?",
     answer:
-      `No. ${siteConfig.name} is an information service, not a law firm or financial adviser. We provide free calculators and plain-English guides based on gov.uk, HMRC and HMCTS sources. If your situation needs professional hands, we can connect you with a vetted specialist firm, but only with your consent and only if you choose to.`,
+      `No. ${siteConfig.name} works the money side of wills, probate and inheritance tax, with free calculators and plain-English guides based on gov.uk, HMRC and HMCTS sources. Where you need a solicitor, we introduce you to a regulated firm we work with, only with your consent and only if you choose to.`,
   },
 ];
 
@@ -165,7 +165,7 @@ export default function HomePage() {
             <Users className="h-8 w-8 text-orange-600" strokeWidth={1.75} aria-hidden />
             <h2 className="mt-4 text-xl font-bold text-neutral-900">Specialist help, when you want it</h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
-              We are an information service, not a law firm. If your situation needs professional hands, we can connect you with vetted specialist firms for wills, probate and estate planning. You only hear from anyone if you send us an enquiry, and you can tell us to stop at any time.
+              We work the money side of wills, probate and inheritance tax. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side. You only hear from anyone if you send us an enquiry, and you can tell us to stop at any time.
             </p>
           </div>
         </div>

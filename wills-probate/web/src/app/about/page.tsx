@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: { absolute: `About ${siteConfig.name} | Who We Are and How We Work` },
   description: `${siteConfig.name} is a free information service for UK wills, probate and inheritance tax. What we do, what we don't, and how we keep our guides accurate.`,
+  alternates: { canonical: `${siteConfig.url}/about` },
 };
 
 export default function AboutPage() {
@@ -29,7 +30,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">Who we are</h2>
               <p>
-                {siteConfig.name} is a free information service covering wills, probate, inheritance tax and estate planning in the UK. We are not a law firm and we do not present ourselves as one. The site is built and maintained as an editorial service, with input from specialists in wills, probate and tax, and every substantive page is checked against official sources before it is published.
+                {siteConfig.name} covers the money side of wills, probate, inheritance tax and estate planning in the UK: free calculators, plain-English guides, and our accountants when you need them. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side. Every substantive page is checked against official sources before it is published.
               </p>
               <p>
                 {siteConfig.name} is a trading name of Ashfield Trading Ltd, a company registered in England and Wales.
@@ -46,7 +47,7 @@ export default function AboutPage() {
                   <span className="font-semibold text-neutral-900">Plain-English guides.</span> Step-by-step explanations of probate, wills, inheritance tax and estate planning, written from official source material and kept current.
                 </li>
                 <li>
-                  <span className="font-semibold text-neutral-900">Specialist connections.</span> If you want professional help, we can connect you with vetted specialist firms. This only ever happens with your consent.
+                  <span className="font-semibold text-neutral-900">Our accountants, and a solicitor when you need one.</span> Where the matter needs a solicitor, we introduce you to a regulated firm we work with. This only ever happens with your consent.
                 </li>
               </ul>
             </div>
@@ -59,7 +60,7 @@ export default function AboutPage() {
                   <span className="font-semibold text-neutral-900">We do not provide legal or financial advice.</span> Everything on this site is general information. It cannot take account of your personal circumstances, and it is not a substitute for advice from a qualified professional.
                 </li>
                 <li>
-                  <span className="font-semibold text-neutral-900">We do not write wills, administer estates or handle probate applications.</span> That work belongs with specialist firms.
+                  <span className="font-semibold text-neutral-900">We do not draft wills or represent you in court.</span> That is the solicitor's job; we stay on the money side and introduce you to one when it is needed.
                 </li>
                 <li>
                   <span className="font-semibold text-neutral-900">We do not sell financial products.</span> No equity release, no investments, no insurance.
@@ -70,7 +71,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we make money</h2>
               <p>
-                Honesty about this matters to us. If you ask us to connect you with a specialist firm and you go on to use their services, we may receive a fee from that firm. This never changes what you pay, and it never changes what our guides and calculators say. The tools and content are free for everyone, whether or not you ever speak to a specialist.
+                Honesty about this matters to us. If we introduce you to a solicitor and you go on to use their services, we may receive a fee from that firm. This never changes what you pay, and it never changes what our guides and calculators say. The tools and content are free for everyone, whether or not you ever speak to us or a solicitor.
               </p>
             </div>
 

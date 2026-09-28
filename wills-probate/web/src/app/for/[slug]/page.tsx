@@ -11,6 +11,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { tradeTypes, getTradeType } from "@/data/trade-types";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
+import { siteConfig } from "@/config/site";
 
 export function generateStaticParams() {
   return tradeTypes.map((t) => ({ slug: t.slug }));
@@ -29,6 +30,10 @@ export async function generateMetadata({
     // brand template to avoid a double suffix / over-length title.
     title: { absolute: type.metaTitle },
     description: type.metaDescription,
+    // ponytail: without this, the layout's default alternates.canonical
+    // (siteUrl) wins the metadata merge and every /for/[slug] page
+    // self-canonicalises to the homepage (brief section 5, G8).
+    alternates: { canonical: `${siteConfig.url}/for/${slug}` },
   };
 }
 

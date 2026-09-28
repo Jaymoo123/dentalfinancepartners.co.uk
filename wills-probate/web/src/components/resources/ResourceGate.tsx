@@ -33,7 +33,7 @@ export function ResourceGate({
       role="resource"
       messagePrefix={`[Resource block: ${topic}]`}
       heading={t?.ctaCopy ?? "Get a free review of your probate position"}
-      blurb="Tell us about your situation and a probate specialist will review it and the most practical next step, with no obligation."
+      blurb="Tell us about your situation and one of our accountants will review it and the most practical next step, with no obligation."
       submitLabel="Request my free review"
       className="my-10 rounded-2xl border-l-4 border-orange-500 bg-slate-50 p-6 sm:p-8"
     />

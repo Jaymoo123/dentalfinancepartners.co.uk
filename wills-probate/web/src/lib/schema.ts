@@ -1,6 +1,8 @@
 import type { BlogPost } from "@/types/blog";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
+import { buildOrganization } from "@accounting-network/web-shared/schema";
 
 /** Build BreadcrumbList JSON-LD schema */
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
@@ -23,53 +25,59 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
-/** Build Organization JSON-LD schema for the site */
+/** Build Organization JSON-LD schema for the site, from the shared builder
+ *  (packages/web-shared/schema/organization.ts) so every site emits the same
+ *  shape. Ported from the hand-rolled version 2026-09-28; every field below
+ *  existed on the old object (owner ruling: single "@type": "AccountingService",
+ *  not the ["ProfessionalService","AccountingService"] array, per Medical's port). */
 export function buildOrganizationJsonLd() {
   const office = siteConfig.company.registeredOffice;
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "AccountingService"],
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    // Registered legal entity vs the public-facing trading name (brand).
-    legalName: siteConfig.company.legalName,
-    alternateName: siteConfig.company.tradingName,
-    // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
-    url: siteConfig.url,
-    // sameAs links the trading brand to its authoritative public record so AI
-    // answer engines and knowledge graphs resolve the firm to a real entity.
-    sameAs: [
-      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
-    ],
-    description: siteConfig.description,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: `${office.line1}, ${office.line2}`,
-      addressLocality: office.city,
-      postalCode: office.postcode,
-      addressCountry: "GB",
-    },
-    areaServed: [
-      "London",
-      "Manchester",
-      "Birmingham",
-      "Leeds",
-      "Bristol",
-      "Glasgow",
-      "Edinburgh",
-      "Sheffield",
-      "Liverpool",
-      "Newcastle",
-    ],
-    knowsAbout: [
-      "Probate applications",
-      "Inheritance tax planning",
-      "Grant of probate",
-      "Estate administration",
-      "Wills and lasting power of attorney",
-    ],
-    priceRange: "££",
-  });
+  return JSON.stringify(
+    buildOrganization({
+      siteUrl: siteConfig.url,
+      siteName: siteConfig.name,
+      legalName: siteConfig.company.legalName,
+      alternateName: siteConfig.company.tradingName,
+      description: niche.entity?.firm ?? siteConfig.description,
+      tagline: siteConfig.tagline,
+      organizationType: "AccountingService",
+      publisherLogoUrl: siteConfig.publisherLogoUrl,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: `${office.line1}, ${office.line2}`,
+        addressLocality: office.city,
+        postalCode: office.postcode,
+        addressCountry: "GB",
+      },
+      sameAs: [
+        `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+      ],
+      serviceAreas: [
+        "London",
+        "Manchester",
+        "Birmingham",
+        "Leeds",
+        "Bristol",
+        "Glasgow",
+        "Edinburgh",
+        "Sheffield",
+        "Liverpool",
+        "Newcastle",
+      ],
+      knowsAbout: [
+        "Probate applications",
+        "Inheritance tax planning",
+        "Grant of probate",
+        "Estate administration",
+        "Wills and lasting power of attorney",
+      ],
+      priceRange: "££",
+      parentOrganization: {
+        name: siteConfig.company.legalName,
+        companyNumber: siteConfig.company.number,
+      },
+    }),
+  );
 }
 
 /** Build WebSite JSON-LD (entity-graph node, emitted site-wide from the root layout). */

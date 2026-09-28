@@ -6,7 +6,8 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: `Contact ${siteConfig.name}` },
-  description: `Get in touch with ${siteConfig.name}. Questions, corrections, or a request to be connected with a specialist firm. We reply within two working days.`,
+  description: `Get in touch with ${siteConfig.name}. Questions, corrections, or a request to be introduced to a solicitor. We reply within two working days.`,
+  alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
 export default function ContactPage() {
@@ -19,7 +20,7 @@ export default function ContactPage() {
             Get in touch
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            Whether you have a question about something on the site, want to point out an error, or would like to be connected with a specialist firm, we would like to hear from you. If you are dealing with a recent bereavement, take whatever time you need. There is no urgency on our side.
+            Whether you have a question about something on the site, want to point out an error, or need a solicitor introduced, we would like to hear from you. If you are dealing with a recent bereavement, take whatever time you need. There is no urgency on our side.
           </p>
         </div>
       </section>
@@ -32,10 +33,10 @@ export default function ContactPage() {
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
                 <li>We read every message and aim to reply within two working days.</li>
                 <li>
-                  If you have asked to be connected with a specialist, a vetted regulated firm from our partner network suited to your situation will contact you directly, usually within a few working days. If that firm is unable to help, your enquiry may be passed to another firm in the network for the same purpose.
+                  Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side. They will contact you directly, usually within a few working days.
                 </li>
                 <li>
-                  We cannot answer questions about your personal legal or tax position. That is what the specialist connection is for.
+                  We do not give personal legal or tax advice ourselves. That is what the solicitor introduction is for.
                 </li>
               </ul>
 
@@ -53,7 +54,7 @@ export default function ContactPage() {
                   .
                 </p>
                 <p className="mt-1 text-xs text-neutral-500">
-                  By submitting the form you agree to us using your details to respond to your enquiry. To answer it, your details may be shared with regulated firms from our specialist partner network, who may contact you directly about it. More than one firm may take up your enquiry: up to three firms in the profession you are asking about (for example a specialist probate firm), and up to three in related professions such as brokers, solicitors and advisers. We may be paid a fee by a firm your enquiry is passed to. We do not use your details for any other purpose, and you can object at any time. See our privacy policy for full details.
+                  By submitting the form you agree to us using your details to respond to your enquiry. {siteConfig.leadConsentText} See our privacy policy for full details.
                 </p>
               </div>
             </div>

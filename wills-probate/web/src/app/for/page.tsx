@@ -3,11 +3,13 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { tradeTypes } from "@/data/trade-types";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Who We Help | Estate Planning Specialists",
   description:
     "Plain-English probate, wills and inheritance tax guidance for executors, surviving spouses, blended families, business owners, pension holders and expats.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 
 export default function ForIndexPage() {

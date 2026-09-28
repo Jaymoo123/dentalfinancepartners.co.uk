@@ -3,11 +3,13 @@ import Link from "next/link";
 import { btnOnTeal, btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Lasting Power of Attorney: Types, Costs and Registration | Probate Compass",
+  title: "Lasting Power of Attorney: Types, Costs and Registration | Estate Planning Specialists",
   description:
     "The two types of LPA explained, registration costs and process, LPA vs deputyship, and the truth about what happens to a power of attorney after death.",
+  alternates: { canonical: `${siteConfig.url}/lasting-power-of-attorney` },
 };
 
 const faqs = [

@@ -4,11 +4,13 @@ import { btnPrimary, btnSecondary, focusRing, siteContainerLg } from "@/componen
 import { LeadForm } from "@/components/forms/LeadForm";
 import { toolPath } from "@/lib/calculators/registry";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Probate Explained: Costs, Timelines and Your Options | Probate Compass",
+  title: "Probate Explained: Costs, Timelines and Your Options | Estate Planning Specialists",
   description:
     "What probate is, when you need it, what a solicitor charges, and how to decide between DIY and professional help. Plain English, current 2026 figures.",
+  alternates: { canonical: `${siteConfig.url}/probate` },
 };
 
 const faqs = [

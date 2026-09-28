@@ -4,11 +4,13 @@ import { btnOnTeal, btnPrimary, focusRing, siteContainerLg } from "@/components/
 import { LeadForm } from "@/components/forms/LeadForm";
 import { toolPath } from "@/lib/calculators/registry";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Making a Will in the UK: Options, Costs and Pitfalls | Probate Compass",
+  title: "Making a Will in the UK: Options, Costs and Pitfalls | Estate Planning Specialists",
   description:
     "Why a will matters, what happens without one, and an honest comparison of DIY, online and specialist will writing, with current 2026 rules and costs.",
+  alternates: { canonical: `${siteConfig.url}/wills` },
 };
 
 const faqs = [

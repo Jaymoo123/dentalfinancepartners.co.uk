@@ -65,32 +65,32 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
   "probate-cost": noAssetTopic(
     "probate-cost",
     "Speak to a probate specialist",
-    "A specialist will talk through what probate is likely to cost for this estate and the quickest way through. The first call is free.",
+    "An accountant will talk through what probate is likely to cost for this estate and the quickest way through. The first call is free.",
   ),
   "do-i-need-probate": noAssetTopic(
     "do-i-need-probate",
     "Speak to a probate specialist",
-    "A specialist will confirm whether probate is actually needed and what to do next. The first call is free.",
+    "An accountant will confirm whether probate is actually needed and what to do next. The first call is free.",
   ),
   "inheritance-tax": noAssetTopic(
     "inheritance-tax",
     "Speak to a specialist",
-    "A specialist will confirm the inheritance tax position on this estate and any reliefs available. The first call is free.",
+    "An accountant will confirm the inheritance tax position on this estate and any reliefs available. The first call is free.",
   ),
   "probate-timeline": noAssetTopic(
     "probate-timeline",
     "Speak to a probate specialist",
-    "A specialist will give you a realistic timeline for this estate. The first call is free.",
+    "An accountant will give you a realistic timeline for this estate. The first call is free.",
   ),
   "pensions-iht-2027": noAssetTopic(
     "pensions-iht-2027",
     "Speak to a specialist",
-    "A specialist will explain how the April 2027 pension changes affect this estate's inheritance tax position. The first call is free.",
+    "An accountant will explain how the April 2027 pension changes affect this estate's inheritance tax position. The first call is free.",
   ),
   "diy-vs-solicitor": noAssetTopic(
     "diy-vs-solicitor",
     "Speak to a specialist",
-    "A specialist will help you weigh up DIY probate against instructing a solicitor for this estate. The first call is free.",
+    "An accountant will help you weigh up DIY probate against instructing a solicitor for this estate. The first call is free.",
   ),
 };
 

@@ -20,8 +20,10 @@ export const focusRing =
  *  specificity and Tailwind's own sort, not our source order, picks the winner,
  *  silently. That is how the header CTA never hid below 1024px on any site
  *  between 2026-08-23 and 2026-09-16. Compose from the base instead. */
+// ponytail: bg-orange-500 with white text was 2.89:1 (fails WCAG AA 4.5:1);
+// orange-700 is the darkest shade in this family that reaches 5.17:1.
 export const btnPrimaryBase =
-  "items-center justify-center bg-orange-500 font-medium text-white tracking-wide transition-colors duration-150 hover:bg-orange-600 active:bg-orange-700 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600";
+  "items-center justify-center bg-orange-700 font-medium text-white tracking-wide transition-colors duration-150 hover:bg-orange-800 active:bg-orange-900 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600";
 
 export const btnPrimary = `inline-flex min-h-12 px-7 py-3.5 text-sm ${btnPrimaryBase}`;
 

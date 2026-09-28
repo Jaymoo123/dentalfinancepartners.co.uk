@@ -4,11 +4,13 @@ import { btnOnTeal, btnPrimary, focusRing, siteContainerLg } from "@/components/
 import { LeadForm } from "@/components/forms/LeadForm";
 import { toolPath } from "@/lib/calculators/registry";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Inheritance Tax Thresholds 2026/27: The Full Picture | Probate Compass",
+  title: "Inheritance Tax Thresholds 2026/27: The Full Picture | Estate Planning Specialists",
   description:
     "UK inheritance tax explained: £325,000 nil-rate band, £175,000 residence band, the £1m couples figure, 40% and 36% rates, and the 2027 pension change.",
+  alternates: { canonical: `${siteConfig.url}/inheritance-tax` },
 };
 
 const faqs = [
