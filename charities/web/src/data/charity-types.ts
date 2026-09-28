@@ -113,7 +113,7 @@ export const charityTypes: CharityType[] = [
       },
     ],
     closer:
-      "Tell us about your CIC. We will explain what your asset lock, dividend cap and filing calendar mean in practice, in plain English, with no obligation.",
+      "The asset lock and the dividend cap decide what a CIC can actually do with a surplus, and the community interest report has to stand behind it. Tell us what you are planning and we will tell you where the limits fall.",
   },
   {
     slug: "social-enterprises",
@@ -176,7 +176,7 @@ export const charityTypes: CharityType[] = [
       },
     ],
     closer:
-      "Tell us about your social enterprise. We will explain what your structure and income mix mean for your accounts and tax, in plain English, with no obligation.",
+      "Trading income, grant income and donations sit in different places in the accounts and are taxed differently, and most social enterprises carry all three at once. Tell us your income mix and we will set out how it should be presented.",
   },
   // Wave 1 append, docs/charities/_wave1/cios.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -271,7 +271,7 @@ export const charityTypes: CharityType[] = [
       },
     ],
     closer:
-      "Tell us about your CIO. We will explain what your accounts format and scrutiny level should be, in plain English, with no obligation.",
+      "A CIO files with the Charity Commission rather than Companies House, and both the accounts format and the level of scrutiny follow your income and your governing document. Send us both and we will confirm what applies.",
   },
   // Wave 1 append, docs/charities/_wave1/small-charities.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -366,7 +366,7 @@ export const charityTypes: CharityType[] = [
       },
     ],
     closer:
-      "Tell us about your small charity. We will explain what has to be filed at your income level, in plain English, with no obligation.",
+      "Below the audit threshold the real questions are whether you should be on receipts and payments or accruals accounts, and whether you need an independent examination at all. Tell us your income and we will answer both.",
   },
   // Wave 1 append, docs/charities/_wave1/trustees-and-treasurers.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -461,7 +461,7 @@ export const charityTypes: CharityType[] = [
       },
     ],
     closer:
-      "Tell us about your role as trustee or treasurer. We will explain what your charity's accounts and filings need, in plain English, with no obligation.",
+      "Reserves, restricted funds and related-party disclosure are the three that come back at trustees, and a treasurer usually inherits them mid-year. Send us last year's accounts and we will tell you what needs attention.",
   },
   // Wave 1 append, docs/charities/_wave1/grant-making-trusts-and-foundations.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -564,7 +564,7 @@ export const charityTypes: CharityType[] = [
       },
     ],
     closer:
-      "Tell us about your trust or foundation. We will explain what your grant-making activity means for your accounts and scrutiny level, in plain English, with no obligation.",
+      "Grant commitments, investment income and the reserves policy are what a funder's accounts turn on, and the SORP expects each of them presented a particular way. Tell us how you make grants and we will set out the treatment.",
   },
 ];
 

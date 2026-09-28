@@ -75,7 +75,7 @@ export const charityServices: CharityService[] = [
       },
     ],
     closer:
-      "Tell us where your charity sits against the examination and audit thresholds and we will confirm the scrutiny level that applies, in plain English, with no obligation.",
+      "Income, gross assets and your governing document decide whether you need an examination or an audit, and last year's answer is not necessarily this year's. Send us your figures and we will confirm which applies.",
   },
   {
     slug: "charity-accounts",
@@ -134,7 +134,7 @@ export const charityServices: CharityService[] = [
       },
     ],
     closer:
-      "Tell us about your charity's accounts and we will confirm what the current SORP requires for your income band, in plain English, with no obligation.",
+      "The SORP edition that governs your accounts follows your accounting period, not the date you prepare them. Tell us your year end and income band and we will prepare to the edition that actually applies.",
   },
   {
     slug: "charity-bookkeeping",
@@ -193,7 +193,7 @@ export const charityServices: CharityService[] = [
       },
     ],
     closer:
-      "Tell us how your books are kept today and we will set out what fund accounting needs to look like, in plain English, with no obligation.",
+      "Fund accounting only works if restricted income is separated when it arrives rather than reconstructed at the year end. Tell us how your books are kept now and we will set out what to change.",
   },
   {
     slug: "gift-aid",
@@ -252,7 +252,7 @@ export const charityServices: CharityService[] = [
       },
     ],
     closer:
-      "Tell us about your donor mix and we will confirm what you can claim under Gift Aid and GASDS, in plain English, with no obligation.",
+      "A missing declaration or an ineligible donation can cost a whole claim, and GASDS runs on rules of its own. Send us your donor records and we will tell you what you can safely claim.",
   },
   {
     slug: "charity-vat",
@@ -311,7 +311,7 @@ export const charityServices: CharityService[] = [
       },
     ],
     closer:
-      "Tell us what your charity sells and buys and we will confirm your VAT position and any reliefs that apply, in plain English, with no obligation.",
+      "Charity VAT reliefs attach to particular supplies rather than to the charity itself, and partial exemption catches almost everyone who mixes trading with grant income. Tell us what you sell and buy and we will place you.",
   },
   // Wave 1 append, docs/charities/_wave1/charity-registration.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -414,7 +414,7 @@ export const charityServices: CharityService[] = [
       },
     ],
     closer:
-      "Tell us where you are in setting up or registering and we will confirm what still needs doing, in plain English, with no obligation.",
+      "Registration turns on the charitable purposes, the public benefit test and a governing document that matches both. Tell us where you have got to and we will tell you what is still missing.",
   },
   // Wave 1 append, docs/charities/_wave1/charity-payroll-and-pensions.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -517,7 +517,7 @@ export const charityServices: CharityService[] = [
       },
     ],
     closer:
-      "Tell us about your staff and volunteers and we will confirm your payroll and pension obligations, in plain English, with no obligation.",
+      "Paid staff, sessional workers and volunteer expenses each have a different payroll answer, and auto-enrolment applies from the moment the first person is on the payroll. Tell us who you pay and we will set out the obligations.",
   },
 ];
 

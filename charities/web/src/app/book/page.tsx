@@ -13,8 +13,8 @@ import BookingPicker from "@/components/forms/BookingPicker";
  */
 
 export const metadata: Metadata = {
-  title: "Book your free review",
-  description: "Pick a time for your free charity finance review call.",
+  title: "Book your first call",
+  description: "Pick a time for your free first call with one of our charity accountants.",
   robots: { index: false, follow: false },
 };
 

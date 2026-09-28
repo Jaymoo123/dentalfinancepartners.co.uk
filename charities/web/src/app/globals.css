@@ -336,3 +336,22 @@
 .prose h3 {
   line-height: 1.3;
 }
+
+/* ============================================================
+   FOCUS RING FLOOR
+   The 2026-09-28 rendered read measured outline-style none with box-shadow none
+   on every LeadForm/DetailsForm control AND on every calculator input, so no
+   control on this site had a visible focus indicator: the form inputs carry
+   `focus:outline-none` with only a border-colour change behind it, and the
+   shared tools Field (packages/web-shared/tools/components/Field.tsx:88) loses
+   a same-layer race between `focus:outline-none` and its focus-visible outline.
+   The shared half is logged for the shared agent. One unlayered rule here
+   guarantees the floor for every control, because an unlayered rule beats every
+   Tailwind utility.
+   ============================================================ */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #1a5c4a;
+  outline-offset: 2px;
+}
