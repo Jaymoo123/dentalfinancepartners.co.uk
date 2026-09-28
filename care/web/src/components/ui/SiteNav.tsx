@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg } from "./layout-utils";
+import { btnPrimary, siteContainerLg } from "./layout-utils";
 
 // ponytail: static links, no client state. A mobile menu toggle is the only thing
 // missing; add a client hamburger when analytics show mobile nav use matters.
@@ -30,6 +30,14 @@ export function SiteNav() {
             </li>
           ))}
         </ul>
+        <Link
+          href="/contact"
+          data-cta="header_contact"
+          data-cta-placement="header"
+          className={`${btnPrimary} hidden md:inline-flex min-h-0 px-5 py-2.5 text-sm`}
+        >
+          Get in touch
+        </Link>
         <Link
           href="/contact"
           className="md:hidden text-sm font-semibold text-[#7d6b9e]"

@@ -1,5 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
 import { ConsentedScripts } from "@accounting-network/web-shared/analytics/react/ConsentedScripts";
@@ -35,6 +42,9 @@ export const metadata: Metadata = {
       ...(niche.seo.search_console_verification?.bing
         ? { "msvalidate.01": niche.seo.search_console_verification.bing }
         : {}),
+      // Server-rendered so the AdSense crawler finds it; the ad loader itself
+      // is client-side behind the consent gate (Solicitors pattern, 7edc7fd3).
+      "google-adsense-account": "ca-pub-3756285576371279",
     },
   },
   openGraph: {
@@ -66,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
         />
       </head>
-      <body className="antialiased">
+      <body className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}>
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
          * storagePrefix "carf" FROZEN (spinup 2026-07-12) — a hardcoded literal by
@@ -82,7 +92,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             posture="opt-out"
             noTrackPrefixes={["/admin"]}
           >
-            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <ConsentedScripts
+              gaMeasurementId={niche.seo.google_analytics_id}
+              adsenseClientId="ca-pub-3756285576371279"
+            />
             <SiteNav />
             {children}
             <SiteFooter />

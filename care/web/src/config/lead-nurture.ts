@@ -347,9 +347,9 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Reply with a time that suits and a specialist will call you.",
+        "Reply with a time that suits and one of our accountants will call you.",
         [
-          "Thanks for getting in touch. Your enquiry has just reached us and a care sector accounts specialist is ready to pick it up.",
+          "Thanks for getting in touch. One of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of where your service stands, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange it around you. If mornings go on handover, or one day of the week is quieter than the rest, tell us and we will work to that.",
         ],
@@ -435,7 +435,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Care Home Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Care Home Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Care Home Tax here. Most operators we speak to came to us with the same question you raised, and one short call usually clears up months of wondering. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -454,7 +454,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free review is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -568,10 +568,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and a specialist will call you.`,
+          `Reply with ${ask} and one of our accountants will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and a care sector accounts specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and one of our accountants will call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",

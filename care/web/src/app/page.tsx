@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { StickyCTA } from "@/components/ui/StickyCTA";
 import { careHubs } from "@/data/care-hubs";
 import { careServices } from "@/data/care-services";
 import { niche } from "@/config/niche-loader";
@@ -92,6 +93,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: buildWebsiteJsonLd() }}
       />
 
+      <main>
       {/* Hero */}
       <section className="relative flex items-center min-h-[440px] sm:min-h-[560px] overflow-hidden bg-[#3d3452]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#3d3452] via-[#5a4d75]/70 to-[#2b2540]" />
@@ -476,6 +478,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </main>
+      <StickyCTA />
     </>
   );
 }

@@ -19,7 +19,9 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     // ga: false until a GA measurement id exists; no /embed routes on this site.
-    return buildSecurityHeaders({ ga: false, supabase: true });
+    // ads: true widens frame-src for AdSense (owner 2026-09-28: set up every
+    // site for AdSense). Property stays frame-src 'none' (Mediavine Journey).
+    return buildSecurityHeaders({ ga: false, supabase: true, ads: true });
   },
   async redirects() {
     // Estate audit 2026-07: permanent 308 redirect apex->www.

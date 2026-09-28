@@ -32,7 +32,7 @@ export default async function BookPage({
             Book your free review call
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-neutral-600">
-            Pick a day and a time window that suits you. A care sector accounts specialist will call you then, no
+            Pick a day and a time window that suits you. One of our accountants will call you then, no
             obligation.
           </p>
           <div className="mt-10">

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { careServices } from "@/data/care-services";
 import { serviceTiers } from "@/config/service-tiers";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "Care Sector Accountancy Services | Payroll, VAT and More",
@@ -46,5 +48,17 @@ export default function ServicesIndexPage() {
       </div>
     </section>
 
+    <div id="book" className="scroll-mt-24">
+      <LeadCTAPanel
+        contained
+        ground="slate"
+        eyebrow="Free first call, then a fixed fee in writing"
+        title="Talk to a care sector specialist"
+        description="Tell us about your situation and we will reply within 24 hours."
+        proofPoints={[]}
+        formTitle="Get in touch"
+        form={<LeadForm submitLabel="Send enquiry" />}
+      />
+    </div>
   </>);
 }
