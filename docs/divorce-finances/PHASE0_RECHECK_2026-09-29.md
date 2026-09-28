@@ -93,3 +93,18 @@ Zero hits on any route for "Free first call, then a fixed fee in writing", "We r
 ## Estate summariser note (2026-09-29)
 Final status: SAFE TO DEPLOY AS IS.
 Blocking item: none; this site's sitemap and consent paragraph are the models the fix round copies onto wills-probate.
+
+## Fix round (2026-09-29)
+
+Owner ruling 2026-09-28 late: `/contact` consent paragraph
+(`divorce-finances/web/src/app/contact/page.tsx`, was lines 57-80) still carried the
+old "up to three firms ... up to three in related professions ... We may be paid a fee"
+text. Replaced the inline run with the same shape wills-probate uses at
+`wills-probate/web/src/app/contact/page.tsx:57`:
+`By submitting the form you agree to us using your details to respond to your enquiry.
+{siteConfig.leadConsentText} See our privacy policy for full details.`
+`siteConfig` was already imported on the page; `leadConsentText` already exists in
+`divorce-finances/web/src/config/site.ts:23`. Nothing else on the page touched.
+
+tsc: `npx tsc --noEmit -p divorce-finances/web` — pass, 0 errors.
+vitest: `npx vitest run` (divorce-finances/web) — 7 files, 81 tests passed.

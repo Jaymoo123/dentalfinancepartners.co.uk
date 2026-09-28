@@ -68,16 +68,7 @@ export default function ContactPage() {
                   .
                 </p>
                 <p className="mt-4 text-xs leading-relaxed text-neutral-500">
-                  By submitting the form you agree to us using your details to respond to your
-                  enquiry. To answer it, your details may be shared with regulated firms from our
-                  specialist partner network, who may contact you directly about it. More than one
-                  firm may take up your enquiry: up to three firms in the profession you are asking
-                  about (for example a specialist family law firm or accredited mediator), and up to
-                  three in related professions such as brokers, solicitors and advisers. We may be
-                  paid a fee by a firm your enquiry is passed to. This does not change what you pay,
-                  and the firm will confirm the arrangement to you directly. We do not use your
-                  details for any other purpose, and you can object at any time. See our privacy
-                  policy for full details.
+                  By submitting the form you agree to us using your details to respond to your enquiry. {siteConfig.leadConsentText} See our privacy policy for full details.
                 </p>
               </div>
             </div>
