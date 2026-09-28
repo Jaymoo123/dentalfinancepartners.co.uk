@@ -166,28 +166,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
         <div className={siteContainerLg}>
           <div className="max-w-4xl mx-auto lg:max-w-7xl lg:grid lg:grid-cols-[1fr_250px] lg:gap-12">
             <div className="max-w-4xl">
-              <div className="mb-8 pb-8 border-b border-neutral-200">
-                {post.author ? (
-                  <p className="text-sm font-semibold text-neutral-900">{post.author}</p>
-                ) : null}
-                {verified ? (
-                  <p className="mt-2 flex items-start gap-2 text-xs text-neutral-500">
-                    <svg
-                      className="mt-0.5 h-4 w-4 shrink-0 text-orange-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>
-                      Figures checked against primary sources (HMRC, legislation.gov.uk, gov.uk guidance) in {verified}.
-                    </span>
-                  </p>
-                ) : null}
-              </div>
-
               {takeaways ? (
                 <section
                   className="not-prose rounded-lg border-l-4 border-orange-500 bg-orange-50 p-6"
@@ -210,6 +188,32 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                   {post.summary}
                 </p>
               ) : null}
+              {/* Byline and the figures-checked line sit BELOW the key takeaways
+                  (2026-09-28 parity read): the article used to open on chrome
+                  (read time, published date, byline, verification note) before the
+                  reader reached a single word of the answer. */}
+              <div className="mt-8 mb-8 pb-8 border-b border-neutral-200">
+                {post.author ? (
+                  <p className="text-sm font-semibold text-neutral-900">{post.author}</p>
+                ) : null}
+                {verified ? (
+                  <p className="mt-2 flex items-start gap-2 text-xs text-neutral-500">
+                    <svg
+                      className="mt-0.5 h-4 w-4 shrink-0 text-orange-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>
+                      Figures checked against primary sources (HMRC, legislation.gov.uk, gov.uk guidance) in {verified}.
+                    </span>
+                  </p>
+                ) : null}
+              </div>
+
 
               <div className="lg:hidden mt-8">
                 <TableOfContents headings={headings} />

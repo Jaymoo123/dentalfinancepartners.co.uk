@@ -63,7 +63,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist",
     magnetBlurbTemplate:
-      "A specialist will talk through your situation and the options open to you. The first call is free.",
+      "One of our accountants will talk through your situation and the options open to you. The first call is free.",
   },
   "pension-sharing": {
     topic: "pension-sharing",
@@ -72,7 +72,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist",
     magnetBlurbTemplate:
-      "A specialist will talk through your situation and the options open to you. The first call is free.",
+      "One of our accountants will talk through your situation and the options open to you. The first call is free.",
   },
   "tax-on-divorce": {
     topic: "tax-on-divorce",
@@ -81,7 +81,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist",
     magnetBlurbTemplate:
-      "A specialist will talk through your situation and the options open to you. The first call is free.",
+      "One of our accountants will talk through your situation and the options open to you. The first call is free.",
   },
   "family-home": {
     topic: "family-home",
@@ -90,7 +90,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist",
     magnetBlurbTemplate:
-      "A specialist will talk through your situation and the options open to you. The first call is free.",
+      "One of our accountants will talk through your situation and the options open to you. The first call is free.",
   },
   "maintenance": {
     topic: "maintenance",
@@ -99,7 +99,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist",
     magnetBlurbTemplate:
-      "A specialist will talk through your situation and the options open to you. The first call is free.",
+      "One of our accountants will talk through your situation and the options open to you. The first call is free.",
   },
   "process-costs": {
     topic: "process-costs",
@@ -108,7 +108,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist",
     magnetBlurbTemplate:
-      "A specialist will talk through your situation and the options open to you. The first call is free.",
+      "One of our accountants will talk through your situation and the options open to you. The first call is free.",
   },
 };
 

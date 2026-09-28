@@ -23,54 +23,9 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
-/** Build Organization JSON-LD schema for the site */
-export function buildOrganizationJsonLd() {
-  const office = siteConfig.company.registeredOffice;
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "AccountingService"],
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    // Registered legal entity vs the public-facing trading name (brand).
-    legalName: siteConfig.company.legalName,
-    alternateName: siteConfig.company.tradingName,
-    // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
-    url: siteConfig.url,
-    // sameAs links the trading brand to its authoritative public record so AI
-    // answer engines and knowledge graphs resolve the firm to a real entity.
-    sameAs: [
-      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
-    ],
-    description: siteConfig.description,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: `${office.line1}, ${office.line2}`,
-      addressLocality: office.city,
-      postalCode: office.postcode,
-      addressCountry: "GB",
-    },
-    areaServed: [
-      "London",
-      "Manchester",
-      "Birmingham",
-      "Leeds",
-      "Bristol",
-      "Glasgow",
-      "Edinburgh",
-      "Sheffield",
-      "Liverpool",
-      "Newcastle",
-    ],
-    knowsAbout: [
-      "Divorce financial settlements",
-      "Pension sharing on divorce",
-      "Capital gains tax on divorce",
-      "Spousal maintenance",
-      "Divorce finances",
-    ],
-    priceRange: "££",
-  });
-}
+/* Organization JSON-LD moved to lib/organization-schema.ts on 2026-09-28: it
+ * now comes from the shared builder (packages/web-shared/schema/organization.ts)
+ * with parentOrganization, Medical's pattern. */
 
 /** Build WebSite JSON-LD (entity-graph node, emitted site-wide from the root layout). */
 export function buildWebsiteJsonLd() {

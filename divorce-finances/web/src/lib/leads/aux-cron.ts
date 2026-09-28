@@ -315,7 +315,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
               try {
                 const body =
                   `Hi ${firstName}, your free review call is later today, ${label}. ` +
-                  `Your specialist will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
+                  `One of our accountants will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
 
                 const result = await sender.send({
                   channel: "sms",

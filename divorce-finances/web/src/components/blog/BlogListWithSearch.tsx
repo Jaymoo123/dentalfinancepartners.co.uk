@@ -14,7 +14,7 @@ type BlogListWithSearchProps = {
 type SortOption = "date-desc" | "date-asc" | "title-asc" | "title-desc";
 
 const fieldClass =
-  "border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus:outline-none";
+  "border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700";
 
 export function BlogListWithSearch({
   posts,

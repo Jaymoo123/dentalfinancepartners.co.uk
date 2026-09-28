@@ -236,19 +236,19 @@ export default async function TradeTypePage({
             <div>
               <div className="section-label mb-6">Get started</div>
               <h2 className="text-2xl font-bold text-white sm:text-4xl">
-                Talk to a specialist about your situation
+                {type.closerHeading}
               </h2>
               <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-                Book a free call. We will talk through your situation and whether there is anything worth changing. No hard sell, no obligation.
+                {type.closerBody} Free first call, then a fixed fee in writing.
               </p>
               <div className="mt-8 space-y-3">
                 {[
                   "Focused on the money side of divorce and separation",
-                  "Vetted, regulated specialist firms only",
+                  "Our accountants on the money side, a regulated solicitor where you need one",
                   "Shared only with your consent, no obligation to proceed",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">
-                    <div className="h-5 w-5 flex items-center justify-center bg-orange-500 text-white text-xs font-bold flex-shrink-0">✓</div>
+                    <div className="h-5 w-5 flex items-center justify-center bg-orange-700 text-white text-xs font-bold flex-shrink-0">✓</div>
                     <span className="text-sm sm:text-base">{point}</span>
                   </div>
                 ))}

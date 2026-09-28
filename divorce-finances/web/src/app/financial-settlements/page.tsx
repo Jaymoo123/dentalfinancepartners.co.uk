@@ -11,7 +11,7 @@ const GUIDE_HREF = "/blog/financial-settlements/divorce-financial-settlement-gui
 export const metadata: Metadata = {
   title: `Divorce Financial Settlement: Help and How It Works | ${siteConfig.name}`,
   description:
-    "What a financial settlement on divorce actually is, why it is separate from the divorce, how courts decide a fair split, and when to get a specialist. Free UK calculators plus a route to a vetted family law firm.",
+    "What a financial settlement on divorce actually is, why it is separate from the divorce, how courts decide a fair split, and when to get help. Free UK calculators plus our accountants on the money side.",
   alternates: { canonical: `${siteConfig.url}/financial-settlements` },
 };
 
@@ -76,7 +76,7 @@ export default function FinancialSettlementsPage() {
               href="/contact"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-medium text-white hover:bg-white/20 transition-colors ${focusRing}`}
             >
-              Request a call from a vetted family law specialist
+              Request a call from one of our accountants
             </Link>
           </div>
         </div>
@@ -254,9 +254,9 @@ export default function FinancialSettlementsPage() {
             <li><strong className="text-neutral-900">You disagree,</strong> or you suspect your ex-partner is not being open about what they own.</li>
           </ul>
           <p className="mt-6 text-base leading-relaxed text-neutral-600 sm:text-lg">
-            {siteConfig.name} is not a law firm and does not give legal or financial advice. What we do is
-            connect people across England and Wales with experienced, vetted family law professionals and
-            accredited mediators for a no-obligation conversation about the right route and realistic costs.
+            {siteConfig.name} works the money side of a settlement across England and Wales: the numbers,
+            the pensions and the tax that follows. Where the matter needs a solicitor or an accredited
+            mediator, we introduce you to a regulated firm we work with. The first call costs you nothing.
             Before you decide, it helps to know what the process itself is likely to cost. The{" "}
             <Link href={toolPath("divorce-cost-calculator")} className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800">
               divorce cost calculator
@@ -307,7 +307,8 @@ export default function FinancialSettlementsPage() {
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 Run the settlement range estimator and the divorce cost calculator to see what a fair split
                 might look like and what the process should cost. Then, if you want help, tell us about your
-                situation and we will connect you with a vetted family law specialist who quotes clearly.
+                situation and one of our accountants will work through the numbers with you, and bring in a
+                regulated solicitor where the matter needs one.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href={toolPath("settlement-range-estimator")} className={btnPrimary}>

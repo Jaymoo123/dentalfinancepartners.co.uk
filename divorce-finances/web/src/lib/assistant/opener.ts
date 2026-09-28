@@ -43,7 +43,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   "financial-settlement": [
     "Working out what a fair settlement looks like? I can point you to a clear starting place.",
     "Want a hand seeing how the numbers stack up? Happy to point you to it.",
-    "A free call with a specialist will give you a clearer picture of your settlement, want me to set one up?",
+    "A free first call with one of our accountants will give you a clearer picture of your settlement, want me to set one up?",
   ],
   "pension-sharing": [
     "Trying to understand how pensions get split on divorce? I can point you to a plain-English answer.",
@@ -63,7 +63,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   "maintenance": [
     "Trying to understand maintenance and support? I can point you to a plain-English answer.",
     "Want a hand seeing how maintenance is usually worked out? Happy to point you to it.",
-    "A free call with a specialist will give you a clearer picture, want me to set one up?",
+    "A free first call with one of our accountants will give you a clearer picture, want me to set one up?",
   ],
   "process-costs": [
     "Working out the process and what it costs? I can point you to a clear starting place.",

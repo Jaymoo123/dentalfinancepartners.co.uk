@@ -12,7 +12,7 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus:outline-none";
+  "mt-1 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700";
 
 type MissingField = "name" | "phone";
 
@@ -101,7 +101,7 @@ export default function DetailsForm({
       <div className="border border-orange-200 bg-orange-50 p-6 text-center">
         <p className="text-lg font-bold text-slate-900">Thank you, that is everything we need</p>
         <p className="mt-2 text-base text-slate-700">
-          A specialist will be in touch shortly. If you would like to pick a time that suits
+          One of our accountants will be in touch shortly. If you would like to pick a time that suits
           you, you can book a callback below.
         </p>
         {bookingToken && (

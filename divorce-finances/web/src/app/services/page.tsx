@@ -4,6 +4,7 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -50,6 +51,25 @@ export default function ServicesPage() {
           <Link href="/contact" className={`${btnPrimary} mt-6 inline-flex`}>
             Get in touch
           </Link>
+        </div>
+      </section>
+
+      {/* Closing ask. Added 2026-09-28 (estate parity phase 0): this page rendered no
+          capture surface at all, so the only route off it was a link to /contact.
+          Same anatomy as the /for/[slug] closing block, not a new pattern. */}
+      <section className="border-t border-neutral-200 bg-[#1e293b] py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
+            <div>
+              <div className="section-label mb-6">Get started</div>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Not sure which of these you need?</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Describe your situation in a few lines. We will tell you whether a calculator answers it, whether it needs one of our accountants on the numbers, and whether a solicitor or a mediator has to be involved as well.</p>
+            </div>
+            <div className="bg-white p-6 sm:p-8 lg:p-10">
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Tell us about your situation</h3>
+              <LeadForm submitLabel="Send enquiry" />
+            </div>
+          </div>
         </div>
       </section>
     </>

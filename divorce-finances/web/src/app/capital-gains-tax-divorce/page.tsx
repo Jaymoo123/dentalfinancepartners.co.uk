@@ -348,8 +348,8 @@ export default function CapitalGainsTaxDivorcePage() {
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 Capital gains tax on divorce turns on your exact assets, base costs and dates, so it is
                 one part of a settlement that genuinely needs bespoke advice. Tell us about your
-                situation and we will connect you with a vetted specialist who can run your real numbers
-                and flag any charge before it is locked into an order.
+                situation and one of our accountants will run your real numbers and flag any charge before
+                it is locked into an order.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href={toolPath("settlement-range-estimator")} className={btnPrimary}>

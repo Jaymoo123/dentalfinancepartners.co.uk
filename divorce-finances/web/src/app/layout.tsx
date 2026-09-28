@@ -11,7 +11,8 @@ import { ReturningBar } from "@/components/intent/ReturningBar";
 import { DeepScrollModal } from "@/components/intent/DeepScrollModal";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-import { buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
+import { buildWebsiteJsonLd } from "@/lib/schema";
+import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 const siteUrl = siteConfig.url;
 

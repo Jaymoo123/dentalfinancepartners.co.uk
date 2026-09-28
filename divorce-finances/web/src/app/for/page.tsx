@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { tradeTypes } from "@/data/trade-types";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -120,6 +121,25 @@ export default function ForIndexPage() {
               <Link href="/contact" className={btnPrimary}>
                 Book a free call
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Closing ask. Added 2026-09-28 (estate parity phase 0): this page rendered no
+          capture surface at all, so the only route off it was a link to /contact.
+          Same anatomy as the /for/[slug] closing block, not a new pattern. */}
+      <section className="border-t border-neutral-200 bg-[#1e293b] py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
+            <div>
+              <div className="section-label mb-6">Get started</div>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Your situation, not a category.</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">None of these guides will match your circumstances exactly. Tell us the parts that do not fit, and one of our accountants will tell you what the money side of your settlement actually involves.</p>
+            </div>
+            <div className="bg-white p-6 sm:p-8 lg:p-10">
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Tell us what you are dealing with</h3>
+              <LeadForm submitLabel="Send enquiry" />
             </div>
           </div>
         </div>
