@@ -48,7 +48,7 @@ export function Section24Calculator({
                 id="rental-income"
                 value={rentalIncome}
                 onChange={setRentalIncome}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -63,7 +63,7 @@ export function Section24Calculator({
                 id="mortgage-interest"
                 value={mortgageInterest}
                 onChange={setMortgageInterest}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -78,7 +78,7 @@ export function Section24Calculator({
                 id="other-expenses"
                 value={otherExpenses}
                 onChange={setOtherExpenses}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -91,7 +91,7 @@ export function Section24Calculator({
               id="tax-band"
               value={taxBand}
               onChange={(e) => setTaxBand(e.target.value as typeof taxBand)}
-              className="w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+              className="w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
             >
               <option value="basic">Basic rate (20%)</option>
               <option value="higher">Higher rate (40%)</option>

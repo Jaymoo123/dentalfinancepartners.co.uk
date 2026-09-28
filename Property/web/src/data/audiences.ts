@@ -31,8 +31,8 @@ export const audiences: Audience[] = [
     "slug": "moving-property-into-a-limited-company",
     "title": "Landlords Moving Property Into a Limited Company",
     "closer": {
-      "title": "Talk to us about moving your properties into a company",
-      "description": "Book a free first call about your incorporation move. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Get the incorporation maths done before you move anything",
+      "description": "We model the stamp duty, the capital gains and the mortgage cost side by side, so you can see whether the company actually pays. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for landlords moving property into a limited company",
     "metaTitle": "Accountant to Transfer Property Into a Company",
@@ -135,8 +135,8 @@ export const audiences: Audience[] = [
     "slug": "selling-a-buy-to-let",
     "title": "Landlords Selling a Buy-to-Let",
     "closer": {
-      "title": "Talk to us about your buy-to-let sale",
-      "description": "Book a free first call about the disposal. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Work out the tax on the sale before you accept an offer",
+      "description": "We calculate the gain, the reliefs you can still claim and the 60-day reporting deadline you have to hit. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for landlords selling a buy-to-let",
     "metaTitle": "CGT Accountant for Selling a Buy-to-Let Property",
@@ -235,8 +235,8 @@ export const audiences: Audience[] = [
     "slug": "portfolio-landlords-incorporating-a-partnership",
     "title": "Portfolio Landlords Incorporating a Lettings Partnership",
     "closer": {
-      "title": "Talk to us about incorporating your partnership",
-      "description": "Book a free first call about the partnership move. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Check whether your partnership really qualifies for the reliefs",
+      "description": "Incorporation relief and the SDLT partnership rules turn on how the partnership has actually been run, not on what the paperwork says. We look at both. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for portfolio landlords incorporating a lettings partnership",
     "metaTitle": "Property Partnership Incorporation: Portfolio Landlords",
@@ -341,8 +341,8 @@ export const audiences: Audience[] = [
     "slug": "non-resident-landlords",
     "title": "Non-Resident and Overseas Landlords",
     "closer": {
-      "title": "Talk to us about your non-resident landlord position",
-      "description": "Book a free first call about your residence and filing position. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Sort your UK filing from wherever you are living",
+      "description": "NRL scheme approval, the UK return, the treaty position and the 60-day reporting on a sale, handled in one place and across time zones. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for non-resident and overseas landlords",
     "metaTitle": "Non-Resident Landlord Accountants | Overseas",
@@ -446,8 +446,8 @@ export const audiences: Audience[] = [
     "slug": "property-spv-set-up",
     "title": "Setting Up a Property SPV",
     "closer": {
-      "title": "Talk to us about setting up your SPV",
-      "description": "Book a free first call about the company set-up. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Set the SPV up once, properly",
+      "description": "Share structure, director loans, what your lender will want to see and the first year of filings, decided before Companies House rather than unpicked afterwards. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for landlords setting up a property SPV",
     "metaTitle": "SPV Accountant for Property Investors | UK",
@@ -550,8 +550,8 @@ export const audiences: Audience[] = [
     "slug": "gifting-property-to-family",
     "title": "Gifting Property to Family",
     "closer": {
-      "title": "Talk to us about gifting the property",
-      "description": "Book a free first call about the gift. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "See the capital gains and inheritance tax cost of the gift first",
+      "description": "A gift is a disposal at market value, and the seven-year clock only helps you if the paperwork is right. We price both sides before you sign anything. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for owners gifting property to family",
     "metaTitle": "Accountants for Gifting Property to Children",
@@ -654,8 +654,8 @@ export const audiences: Audience[] = [
     "slug": "couples-splitting-rental-income",
     "title": "Couples Splitting Rental Income",
     "closer": {
-      "title": "Talk to us about splitting your rental income",
-      "description": "Book a free first call about the split. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Split the rental income in a way HMRC will accept",
+      "description": "Beneficial ownership, the declaration of trust and a Form 17 election all have to agree with each other. We put the three in order. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for couples splitting rental income between them",
     "metaTitle": "Form 17 & Declaration of Trust Accountants",
@@ -761,8 +761,8 @@ export const audiences: Audience[] = [
     "slug": "landlord-self-assessment-and-mtd",
     "title": "Landlord Self Assessment and MTD Filing",
     "closer": {
-      "title": "Talk to us about your self assessment and MTD",
-      "description": "Book a free first call about your filing position. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Get this year filed and be ready for Making Tax Digital",
+      "description": "We file the return in front of you and tell you exactly which April your rental income crosses the MTD threshold. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants filing landlord self assessment and MTD quarterly updates",
     "metaTitle": "Landlord Self Assessment & MTD Filing Service",
@@ -870,8 +870,8 @@ export const audiences: Audience[] = [
     "slug": "first-time-and-accidental-landlords",
     "title": "First-Time and Accidental Landlords",
     "closer": {
-      "title": "Talk to us about your first year as a landlord",
-      "description": "Book a free first call about getting set up right. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Start as a landlord without the first-year mistakes",
+      "description": "Registering with HMRC on time, what you can and cannot deduct, and which of the two allowances leaves you better off. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for first-time and accidental landlords",
     "metaTitle": "Accountant for First Time Landlords | Former Home",
@@ -976,8 +976,8 @@ export const audiences: Audience[] = [
     "slug": "inherited-property",
     "title": "Executors and Beneficiaries",
     "closer": {
-      "title": "Talk to us about the inherited property",
-      "description": "Book a free first call about the estate and the property. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Deal with the property the estate has left you",
+      "description": "The probate value, the base cost it hands you, and the choice between letting it or selling it. We work through all three with you. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for executors and beneficiaries of an inherited property",
     "metaTitle": "Probate Property Tax | Executors & Beneficiaries",
@@ -1075,8 +1075,8 @@ export const audiences: Audience[] = [
     "slug": "property-company-profit-extraction",
     "title": "Property Company Directors Taking Money Out",
     "closer": {
-      "title": "Talk to us about drawing profit from your company",
-      "description": "Book a free first call about your extraction order. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Take money out of the property company in the right order",
+      "description": "Salary, dividends, director loan repayments and rent charged to your own company each carry a different tax cost. We work out the order for your year. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for property company directors taking money out",
     "metaTitle": "Property Company Profit Extraction Accountant",
@@ -1177,8 +1177,8 @@ export const audiences: Audience[] = [
     "slug": "rental-income-disclosure",
     "title": "Landlords Making an HMRC Rental Income Disclosure",
     "closer": {
-      "title": "Talk to us about your disclosure",
-      "description": "Book a free first call about the right route. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Bring undeclared rent up to date on the best terms available",
+      "description": "An unprompted disclosure carries far lower penalties than waiting for the letter to arrive. We handle the figures and the wording that goes with them. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for landlords making an HMRC rental income disclosure",
     "metaTitle": "Let Property Campaign Accountant for Landlords",
@@ -1282,8 +1282,8 @@ export const audiences: Audience[] = [
     "slug": "holiday-let-and-serviced-accommodation",
     "title": "Holiday Let and Serviced Accommodation Operators",
     "closer": {
-      "title": "Talk to us about your holiday let",
-      "description": "Book a free first call about your position after FHL abolition. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Find out where the end of the FHL rules leaves you",
+      "description": "The allowances already claimed, the interest restriction now applying and the capital gains reliefs you have lost, set out for your property. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for holiday let and serviced accommodation operators",
     "metaTitle": "Holiday Let Accountant | Serviced Accommodation",
@@ -1386,8 +1386,8 @@ export const audiences: Audience[] = [
     "slug": "hmo-and-multi-let-landlords",
     "title": "HMO and Multi-Let Landlords",
     "closer": {
-      "title": "Talk to us about your HMO",
-      "description": "Book a free first call about the property and the claim. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Claim what the conversion work actually entitles you to",
+      "description": "An HMO fit-out usually hides a capital allowances claim nobody has made, and the licensing and finance costs need treating correctly too. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for HMO and multi-let landlords",
     "metaTitle": "HMO Accountant | Multi-Let and Student Landlords",
@@ -1492,8 +1492,8 @@ export const audiences: Audience[] = [
     "slug": "landlord-retirement-and-succession",
     "title": "Landlords Planning Retirement and Succession",
     "closer": {
-      "title": "Talk to us about your retirement plan",
-      "description": "Book a free first call about winding the portfolio down or passing it on. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+      "title": "Plan the exit from the portfolio, not just the next tax return",
+      "description": "Selling in stages, gifting to children or holding through a company all change the tax on the way out. We map the routes with the figures attached. Free first call, then a fixed fee in writing."
     },
     "headline": "Accountants for landlords planning retirement and succession",
     "metaTitle": "Landlord Succession Planning Accountant | UK",

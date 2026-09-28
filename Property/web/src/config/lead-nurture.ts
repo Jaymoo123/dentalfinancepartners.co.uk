@@ -434,7 +434,8 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 // 8 steps; step 0 = T0 email (instant, fires at submit), step 1 = T0 SMS
 // (fires unconditionally at submit regardless of the send window; the hourly
 // cron dispatchGate keeps actual delivery inside the UK window).
-// Cumulative delay hours from step 0: 0, 0, 4, 24, 48, 96, 168, 264.
+// delayHours is the GAP to the previous step, not a cumulative offset: 0, 0,
+// 4, 20, 24, 48, 72, 96, which runs the sequence over about 11 days.
 
 const STEPS: LeadNurtureStep[] = [
   // ── Step 0: T0 email ───────────────────────────────────────────────────────
@@ -447,22 +448,21 @@ const STEPS: LeadNurtureStep[] = [
       // Copy from the approved preview (docs/property/email-previews/t0_email.html)
       // with the owner corrections applied: the call is CONTINGENT on a reply
       // (never "otherwise we will call you"), and any reply verifies the channel.
-      // 2026-09-28 phase 0: brief section 2 requires the 24-hour promise to be
-      // backed by this instant email (it was previously unbacked, 35 site
-      // occurrences vs zero nurture mentions). Added as its own sentence below
-      // rather than folded into the contingent-call paragraph, so it reads as
-      // "we will get back to you" (true either way) and not a second, looser
-      // promise to call unprompted, which would contradict the CONTINGENT
-      // design note above. Flagged for the Opus read: worth checking this
-      // reads as one promise, not two, once rendered.
+      // 2026-09-28 Opus read: the phase-0 pass had added "One of our accountants
+      // will call you within 24 hours, Monday to Friday.", which promised an
+      // unprompted call and so contradicted the CONTINGENT design note above.
+      // Resolved to the owner's wording, which is true either way and matches
+      // the on-page promise and the T0 SMS word for word: we reply within 24
+      // hours, one of our accountants comes back to you directly, and the
+      // arrangement of the call still follows the reply.
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and a specialist will call you.",
+        "Reply with a time that suits and one of our accountants comes back to you directly.",
         [
-          "Thanks for your enquiry, it has just landed with us and a property tax specialist is ready to help.",
-          "One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The call is a free review of where you stand, about 20 minutes, with no charge and no obligation.",
+          "Thanks for your enquiry, it has just landed with us and one of our property accountants is ready to help.",
+          "We reply within 24 hours and one of our accountants comes back to you directly, Monday to Friday.",
+          "The first call is free, about twenty minutes on where you actually stand, and if you want us to act you get a fixed fee in writing before anything starts.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you best, tell me and we will work around it.",
         ],
         "t0_email",
@@ -480,7 +480,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Property Tax Partners. Thanks for your enquiry about your property tax. Reply YES and one of our specialists will call you. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Property Tax Partners. Thanks for your enquiry about your property tax. We reply within 24 hours and one of our accountants comes back to you directly. Reply YES and we will book the call. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.bookingUrl]),
     ],
@@ -497,7 +497,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Property Tax Partners again. Enquiries like yours are exactly what our senior specialists handle, so we have set aside time this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Property Tax Partners again. Enquiries like yours are exactly what our senior specialists handle, so we have set aside time this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -532,7 +532,7 @@ const STEPS: LeadNurtureStep[] = [
         "Money spent before your first tenant moved in can often be claimed.",
         [
           "A quick pointer while your enquiry is with us. Most landlords do not realise that money spent before the first tenant moved in, things like repairs, advertising and insurance, can usually be claimed against rental income, even up to seven years later.",
-          "If that rings a bell for your property, it is exactly the kind of thing your free review would cover.",
+          "If that rings a bell for your property, it is exactly the kind of thing your first call would cover.",
           "Whenever suits, just reply with a day and time and I will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -552,7 +552,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, Property Tax Partners here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, Property Tax Partners here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, Property Tax Partners here. Most landlords we speak to came to us with the same question you raised, and one short call usually clears up months of second-guessing. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -581,7 +581,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free property tax review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free first call is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -592,7 +592,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are, ${c.firstName}`,
           "No rush at all. A one line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free review is still open, and if now is not the right moment, that is completely fine.",
+            "Just checking in, and there is genuinely no rush. Your free first call is still open, and if now is not the right moment, that is completely fine.",
             "If something is holding you back, or life has simply been busy, a one line reply is all it takes. Give us a day and a time, or ask whatever is on your mind, and the team will take it from there.",
           ],
           "day7_email",
@@ -726,7 +726,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and a specialist will call you.`,
+          `Reply with ${ask} and one of our accountants will call you.`,
           [
             detailIntro(c),
             `Just reply to this email with ${ask} and I'll have one of our property tax specialists call you. It's free, there's no obligation, and there's nothing to prepare.`,
@@ -806,7 +806,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "I've asked a couple of times now, so I'll stop the reminders and leave it with you. No hard feelings at all.",
-            `If you'd still like a free review, just reply with ${ask}, whether that's next week or next year. The moments it tends to matter most are a purchase, a sale, or a Self Assessment bill landing.`,
+            `If you'd still like a free first call, just reply with ${ask}, whether that's next week or next year. The moments it tends to matter most are a purchase, a sale, or a Self Assessment bill landing.`,
             "All the best with your property.",
           ],
           "detail_capture_day7",

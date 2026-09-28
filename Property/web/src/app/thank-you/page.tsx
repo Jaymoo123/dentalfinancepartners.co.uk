@@ -121,7 +121,7 @@ export default async function ThankYouPage({
       <>
         <SlimHero eyebrow="Confirmed" title="That is confirmed">
           <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-            Thanks, that is confirmed. A specialist will be in touch.
+            Thanks, that is confirmed. One of our accountants will be in touch.
           </p>
         </SlimHero>
 
@@ -160,7 +160,7 @@ export default async function ThankYouPage({
         {nurtureArmed ? (
           <>
             <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-              We have just sent you a message to arrange your free review. Please check your email and phone,
+              We have just sent you a message to arrange your first call. Please check your email and phone,
               and confirm to lock in your callback slot.
             </p>
             <p className="mt-4 text-base leading-relaxed text-slate-300">

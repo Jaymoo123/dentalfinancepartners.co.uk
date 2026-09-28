@@ -117,7 +117,7 @@ export default function Section24CalculatorPage() {
           result panels. */}
       <div id="get-expert-help" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free review"
+          eyebrow="Free first call"
           title="Paying more tax because of Section 24?"
           description="There are legitimate ways to reduce the impact, from how the property is owned to whether incorporation makes sense for your portfolio. Tell us about your situation for a no-obligation review."
           proofPoints={[

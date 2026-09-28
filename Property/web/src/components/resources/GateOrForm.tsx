@@ -20,9 +20,9 @@ export function GateOrForm({ topic }: { topic: TopicKey }) {
     <MiniCapture
       formId="resource_block"
       messagePrefix={`[Resource block: ${topic}]`}
-      heading={t?.ctaCopy || "Get a free review of your situation"}
-      blurb="Skip the spreadsheet. Tell us about your situation and a specialist will review your position and the next sensible step, with no obligation."
-      submitLabel="Request my free review"
+      heading={t?.ctaCopy || "Get our read on your situation"}
+      blurb="Skip the spreadsheet. Tell us about your situation and one of our accountants reads your position and the next sensible step. Free first call, then a fixed fee in writing."
+      submitLabel="Request my first call"
       className="my-10 rounded-xl bg-slate-50 p-6 sm:p-8"
       postSubmit="redirect"
     />

@@ -110,7 +110,7 @@ export default function MTDCheckerPage() {
           result panels. */}
       <div id="get-expert-help" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free review"
+          eyebrow="Free first call"
           title="Need to get ready for MTD?"
           description="We set landlords up with compliant digital record-keeping and handle the quarterly submissions, so MTD is one less thing to worry about. Tell us about your income for a no-obligation chat."
           proofPoints={[

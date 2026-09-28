@@ -299,7 +299,7 @@ export default function StampDutyCalculatorPage() {
           panel off the navy footer (the adjacency rule). */}
       <div id="get-expert-help" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free review"
+          eyebrow="Free first call"
           title="Buying a property? Get the tax right from the start."
           description="Stamp duty is only the first tax decision. We help landlords and investors structure purchases tax-efficiently, checking surcharge-refund routes, weighing incorporation, and planning the ongoing tax on the property. Tell us about your purchase for a no-obligation review."
           proofPoints={[

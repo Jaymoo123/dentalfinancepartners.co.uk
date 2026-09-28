@@ -72,7 +72,7 @@ export function IncorporationCostCalculator({
                 id="property-value"
                 value={propertyValue}
                 onChange={setPropertyValue}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -87,7 +87,7 @@ export function IncorporationCostCalculator({
                 id="purchase-price"
                 value={purchasePrice}
                 onChange={setPurchasePrice}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -102,7 +102,7 @@ export function IncorporationCostCalculator({
                 id="rental-income-inc"
                 value={annualRentalIncome}
                 onChange={setAnnualRentalIncome}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -117,7 +117,7 @@ export function IncorporationCostCalculator({
                 id="mortgage-interest-inc"
                 value={mortgageInterest}
                 onChange={setMortgageInterest}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -130,7 +130,7 @@ export function IncorporationCostCalculator({
               id="tax-band-inc"
               value={taxBand}
               onChange={(e) => setTaxBand(e.target.value as typeof taxBand)}
-              className="w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+              className="w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
             >
               <option value="basic">Basic rate (20%)</option>
               <option value="higher">Higher rate (40%)</option>
@@ -161,7 +161,7 @@ export function IncorporationCostCalculator({
                       id={id}
                       value={value}
                       onChange={setter}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-1.5 text-base font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[40px]"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-1.5 text-base font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[40px]"
                     />
                   </div>
                   <p className="mt-1 text-xs text-slate-500">{help}</p>

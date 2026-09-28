@@ -205,7 +205,7 @@ export default async function CalculatorToolPage({ params }: Props) {
           `id` is kept: StampDutyCalculator links to #get-expert-help. */}
       <div id="get-expert-help" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free review"
+          eyebrow="Free first call"
           title="Want to be sure of your position?"
           description="A calculator gives you the shape of the answer. We confirm your exact figure and the reliefs that apply to you. Tell us about your situation for a no-obligation review."
           proofPoints={[

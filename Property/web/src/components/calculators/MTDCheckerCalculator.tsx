@@ -44,7 +44,7 @@ export function MTDCheckerCalculator({
                 id="rental-income-mtd"
                 value={rentalIncome}
                 onChange={setRentalIncome}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
             <p className="mt-1 text-xs text-slate-500">Before expenses</p>
@@ -60,7 +60,7 @@ export function MTDCheckerCalculator({
                 id="self-employment-income"
                 value={selfEmploymentIncome}
                 onChange={setSelfEmploymentIncome}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
             <p className="mt-1 text-xs text-slate-500">If applicable</p>
@@ -76,7 +76,7 @@ export function MTDCheckerCalculator({
                 id="other-income"
                 value={otherIncome}
                 onChange={setOtherIncome}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
             <p className="mt-1 text-xs text-slate-500">Optional</p>

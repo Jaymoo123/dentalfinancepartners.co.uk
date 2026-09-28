@@ -104,7 +104,7 @@ export function PortfolioProfitabilityCalculator({
                       id={`rental-${prop.id}`}
                       value={prop.rentalIncome}
                       onChange={(v) => updateProperty(prop.id, "rentalIncome", v)}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export function PortfolioProfitabilityCalculator({
                       id={`mortgage-${prop.id}`}
                       value={prop.mortgageInterest}
                       onChange={(v) => updateProperty(prop.id, "mortgageInterest", v)}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export function PortfolioProfitabilityCalculator({
                       id={`expenses-${prop.id}`}
                       value={prop.otherExpenses}
                       onChange={(v) => updateProperty(prop.id, "otherExpenses", v)}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>

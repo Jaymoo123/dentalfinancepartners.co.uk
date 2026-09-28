@@ -14,7 +14,7 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
       formId="inline_mini"
       messagePrefix={`[Inline mini-form${topicTag}]`}
       heading="Want this checked against your specific situation?"
-      blurb="Leave your details and a one-line summary. A specialist will reply within 24 hours, with no obligation. Look out for our text, a quick reply confirms your callback."
+      blurb="Leave your details and a one-line summary. We reply within 24 hours and one of our accountants comes back to you directly. Look out for our text, a quick reply confirms your callback."
       submitLabel="Get a quick reply"
       className="my-12 bg-slate-50 p-6 sm:p-8"
       postSubmit="redirect"

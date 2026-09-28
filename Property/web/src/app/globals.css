@@ -80,6 +80,12 @@
   /* Canonical brand tokens for @accounting-network/web-shared components. */
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
+  /* Shared components paint their solid CTA from --brand-primary-ground. The
+     accent itself (emerald-600) measures 3.77:1 for white text, so the ground
+     token is pinned a step darker: emerald-700 measures 5.36:1, the same value
+     the local btnPrimary now uses. Decorative accents keep emerald-600. */
+  --brand-primary-ground: var(--accent-strong);
+  --brand-primary-ground-hover: #065f46;
   --brand-on-primary: var(--accent-foreground);
   /* Shared btnPrimary defaults to a 9999px pill, which is the generalist design
      system's shape and not ours. Pinning it to the same token our local

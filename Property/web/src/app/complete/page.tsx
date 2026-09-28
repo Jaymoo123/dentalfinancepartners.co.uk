@@ -121,8 +121,8 @@ export default async function CompletePage({
     <>
       <SlimHero eyebrow="Almost there" title="Complete your details">
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-          Add the last detail we need and a property tax specialist will be in touch to arrange your
-          free review, no obligation.
+          Add the last detail we need and one of our accountants comes back to you directly, usually
+          within 24 hours. The first call is free, then a fixed fee in writing.
         </p>
       </SlimHero>
 

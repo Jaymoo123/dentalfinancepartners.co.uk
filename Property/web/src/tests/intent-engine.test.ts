@@ -33,7 +33,7 @@ describe("sticky_cta booking nudge", () => {
     expect(a!.offer.kind).toBe("booking");
     expect(a!.offer.title).toBe("Pick your callback slot");
     expect(a!.offer.blurb).toBe(
-      "It takes about 20 seconds and a specialist will call you at the time you choose.",
+      "It takes about 20 seconds and one of our accountants calls you at the time you choose.",
     );
     expect(a!.offer.href).toBe(`/book?t=${encodeURIComponent("tok/+=abc")}`);
   });

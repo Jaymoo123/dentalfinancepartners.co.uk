@@ -119,7 +119,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                 id="sdlt-price"
                 value={price}
                 onChange={setPrice}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -206,7 +206,7 @@ export function StampDutyCalculator({ variant = "page" }: { variant?: Variant })
                         id="sdlt-market-value"
                         value={marketValue}
                         onChange={setMarketValue}
-                        className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                        className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-colors min-h-[44px]"
                       />
                     </div>
                     <p className="mt-1 text-xs text-slate-500 leading-relaxed">
