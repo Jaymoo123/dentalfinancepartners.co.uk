@@ -122,7 +122,7 @@ export default function ResearchIndexPage() {
           already slate-900: navy must never touch navy. */}
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free consultation"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Want this read applied to your own numbers?"
           description="These pages are the national picture. What matters is where your own company, structure and cash position sit inside it. Book a free call and we will talk it through."
           proofPoints={LEAD_PROOF_POINTS}

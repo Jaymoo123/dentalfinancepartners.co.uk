@@ -272,7 +272,7 @@ export default function UkLatePaymentIndexPage() {
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free consultation"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Late payment squeezing your cash flow?"
           description="Credit control, invoice financing and cash flow forecasting can all soften the impact of slow-paying customers. Holloway Davies helps UK small businesses build a cash flow position that survives a late-paying client."
           proofPoints={LEAD_PROOF_POINTS}

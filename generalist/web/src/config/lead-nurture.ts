@@ -293,7 +293,7 @@ const STEPS: LeadNurtureStep[] = [
         [
           "Thanks for your enquiry, it has just come through to us and a member of the team is ready to help.",
           "One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The call is a free review of where things stand, about 20 minutes, with no charge and no obligation.",
+          "The first call is free, about 20 minutes on where things stand, and there is no obligation at the end of it.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
         "t0_email",
@@ -361,7 +361,7 @@ const STEPS: LeadNurtureStep[] = [
         "A quick pointer from the team while your enquiry is with us.",
         [
           "A quick pointer while your enquiry is with us. One of the most commonly missed deductions for small businesses is pre-trading expenditure, costs incurred before the business formally started trading, such as professional fees, equipment and website costs. These can often be claimed against early profits.",
-          "If that applies to your situation, it is exactly the kind of thing a free review would cover.",
+          "If that applies to your situation, it is exactly the kind of thing we would cover on your first call.",
           "Whenever suits, just reply with a day and time and the team will arrange a call.",
         ],
         "day2_give_email",
@@ -397,7 +397,7 @@ const STEPS: LeadNurtureStep[] = [
         `Still here when you are, ${c.firstName}`,
         "No rush at all. A one line reply is all it takes.",
         [
-          "Just checking in, and there is genuinely no rush. Your free review is still open, and if now is not the right moment, that is completely fine.",
+          "Just checking in, and there is genuinely no rush. Your first call is still open, and if now is not the right moment, that is completely fine.",
           "If something is holding you back, or life has simply been busy, a one line reply is all it takes. Give us a day and a time, or ask whatever is on your mind, and the team will take it from there.",
         ],
         "day7_email",
@@ -579,7 +579,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have asked a couple of times now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a new contract, a company formation, a Self Assessment deadline, or a tax bill you want a second opinion on.`,
+            `If you would still like that first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a new contract, a company formation, a Self Assessment deadline, or a tax bill you want a second opinion on.`,
             "All the best.",
           ],
           "detail_capture_day7",

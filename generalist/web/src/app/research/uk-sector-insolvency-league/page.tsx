@@ -280,7 +280,7 @@ export default function UkSectorInsolvencyLeaguePage() {
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free consultation"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="In a high-insolvency sector? Get ahead of the risk."
           description="Cash flow monitoring, credit control and tax planning matter most in sectors where insolvency is common. Holloway Davies works with UK small businesses across every sector on exactly these fundamentals."
           proofPoints={LEAD_PROOF_POINTS}

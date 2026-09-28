@@ -17,7 +17,7 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus:outline-none";
+  "mt-1 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500";
 
 type MissingField = "name" | "phone";
 
@@ -207,7 +207,7 @@ export default function DetailsForm({
       )}
 
       <p className="mt-3 text-xs text-neutral-500">
-        We only use this to arrange your free review. See our{" "}
+        We only use this to arrange your free first call. See our{" "}
         <a
           href="/privacy-policy"
           target="_blank"

@@ -19,7 +19,7 @@ import BookingPicker from "@/components/forms/BookingPicker";
  */
 
 export const metadata: Metadata = {
-  title: `Book your free review`,
+  title: `Book your free first call`,
   description: "Pick a time for your free accounting review call.",
   robots: { index: false, follow: false },
 };
@@ -35,8 +35,8 @@ export default async function BookPage({
   return (
     <>
       <SlimHero
-        eyebrow="Free review"
-        title="Book your free review call"
+        eyebrow="Free first call"
+        title="Book your free first call"
         backdrop={<GeneralistBackdrop />}
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">

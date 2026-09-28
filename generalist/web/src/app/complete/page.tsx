@@ -131,7 +131,7 @@ export default async function CompletePage({
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
           Add the last detail we need and one of our accountants will be in touch to arrange your
-          free review, no obligation.
+          free first call, no obligation.
         </p>
       </SlimHero>
 
