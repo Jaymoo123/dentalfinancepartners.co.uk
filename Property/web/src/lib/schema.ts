@@ -71,10 +71,11 @@ export function buildBlogPostingJsonLd(post: BlogPost, path: string) {
     image: imageUrl,
     datePublished: post.date,
     dateModified: post.dateModified ?? post.date,
+    // Author is the canonical Organization (same @id as the site-wide node
+    // from buildOrganizationJsonLd), not a fictitious "Editorial Team" Person.
     author: {
-      "@type": "Person" as const,
-      name: `${siteConfig.name} Editorial Team`,
-      url: `${siteConfig.url}/about`,
+      "@type": "Organization" as const,
+      "@id": `${siteConfig.url}#organization`,
     },
     ...(post.reviewedBy?.trim() && {
       reviewedBy: {

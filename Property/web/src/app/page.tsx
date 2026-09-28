@@ -8,7 +8,6 @@ import { btnOnDark, btnPrimary, btnSecondary, siteContainerLg } from "@/componen
 import { siteConfig } from "@/config/site";
 import { niche, getActiveCta, isPackagesMode } from "@/config/niche-loader";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { buildBreadcrumbJsonLd } from "@/lib/schema";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
@@ -144,7 +143,6 @@ export default function HomePage() {
   // leadgen and packages propositions, and both are instrumented.
   const activeCta = getActiveCta(niche);
   const packagesMode = isPackagesMode(niche);
-  const orgSchema = buildOrganizationJsonLd();
   const faqSchema = buildFaqPageJsonLd(faqs);
 
   // National property-accountant entity graph: a LocalBusiness/Service node,
@@ -226,7 +224,6 @@ export default function HomePage() {
   return (
     <>
       <StickyCTA />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       {faqSchema ? (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       ) : null}

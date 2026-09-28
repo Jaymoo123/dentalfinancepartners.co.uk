@@ -13,6 +13,8 @@ import { SpecialistWidget } from "@/components/support/SpecialistWidget";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { buildOrganizationJsonLd } from "@/lib/organization-schema";
+import { JsonLd } from "@accounting-network/web-shared/schema";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -97,6 +99,10 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${plusJakarta.className} antialiased`}
       >
+        {/* Canonical Organization node, emitted once here so every page
+            carries the root node without per-page duplication. The homepage's
+            other nodes reference it by #organization @id. */}
+        <JsonLd data={buildOrganizationJsonLd()} />
         {/* Without JS the eyebrow rules can never be released by their observer,
             so show them complete rather than collapsed. Must live inside <body>:
             React cannot render <noscript> as a direct child of <html>. */}
