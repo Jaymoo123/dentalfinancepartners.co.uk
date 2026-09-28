@@ -108,3 +108,11 @@ Method: port 3502 only, listener PID 59528 killed, port confirmed free.
 ## Estate summariser note (2026-09-29)
 Final status: SAFE AFTER FIXES.
 Blocking item: build-time new Date() sitemap lastModified (estate finding H7, shared with four other sites) and the mobile Contact text link visible at 390 (M8).
+
+## Fix round (2026-09-29)
+
+- File: `care/web/src/app/sitemap.ts`, lines 10-62 (static/service/for/tool/category blocks).
+- Before: every static, service, for, tool and category entry set `lastModified: now` (`new Date().toISOString()` at build time); post entries already used `post.updatedDate || post.date`.
+- After: `lastModified` removed from static/service/for/tool entries; `/blog` and category entries now derive `lastModified` from the newest `updatedDate || date` among their posts; post entries unchanged. URL list emitted is unchanged.
+- `npx tsc --noEmit -p care/web` — clean, no output.
+- `cd care/web && npx vitest run` — `Test Files 8 passed (8)`, `Tests 59 passed (59)`.
