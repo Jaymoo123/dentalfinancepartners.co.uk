@@ -116,7 +116,7 @@ export default function AboutPage() {
                 href="#book"
                 data-cta="about_hero_book"
                 data-cta-placement="hero"
-                className={`${btnPrimary} bg-emerald-600 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}
+                className={`${btnPrimary} text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}
               >
                 Book your free first call
               </Link>
@@ -168,7 +168,7 @@ export default function AboutPage() {
                 key={item.title}
                 className="group rounded-xl bg-white p-6 ring-1 ring-slate-200 transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_24px_50px_-30px_rgba(15,23,42,0.45)] hover:ring-emerald-300 sm:p-7"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 transition-colors group-hover:bg-emerald-600 group-hover:text-white">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 transition-colors group-hover:group-hover:text-white">
                   <item.icon aria-hidden className="h-6 w-6" strokeWidth={1.75} />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>

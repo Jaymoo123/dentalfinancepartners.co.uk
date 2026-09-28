@@ -344,7 +344,7 @@ export default function LandlordAccountantPage() {
                 data-cta="hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"
-                className={`${btnPrimary} bg-emerald-600 text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}
+                className={`${btnPrimary} text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}
               >
                 Book a consultation
               </Link>

@@ -100,7 +100,7 @@ export default async function AudiencePage({
         <CardStack items={audience.challenges} columns={2} html />
       </TopicSection>
 
-      <TopicSection id="how-we-help" eyebrow="What a specialist reviews" title="What a specialist reviews" tone="slate">
+      <TopicSection id="how-we-help" eyebrow="What we look at" title="What we look at" tone="slate">
         <CardStack items={audience.howWeHelp} columns={2} tone="white" html />
       </TopicSection>
 
@@ -110,8 +110,11 @@ export default async function AudiencePage({
         <LeadCTAPanel
           contained
           eyebrow="Free first call, then a fixed fee in writing"
-          title="Talk to a specialist about your situation"
-          description="Book a free first call. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+          title={audience.closer?.title ?? "Talk to us about your situation"}
+          description={
+            audience.closer?.description ??
+            "Book a free first call. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
+          }
           proofPoints={[]}
           formTitle="Book your free first call"
           submitLabel="Request callback"

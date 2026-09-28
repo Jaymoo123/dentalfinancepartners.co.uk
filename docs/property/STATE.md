@@ -13,6 +13,50 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: design port phases including the 0.22a/b/c review passes, claims fixes, header CTA fix, favicons).
 
+## 2026-09-28 phase 0 parity (not yet deployed)
+
+Estate parity phase 0 (`docs/_engines/ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md`), Property's own
+residuals from `docs/property/PARITY_RESEARCH_2026-09-28.md`. `git diff --stat -- Property/` lists
+36 files; `npx tsc --noEmit -p Property/web` clean; `npx vitest run` from `Property/web` = 57 files,
+1640 tests, all passing. Full report: `docs/property/PHASE0_2026-09-28.md`.
+
+- "A specialist reviews" (the rule-8 caveat phrase) removed from all 13 occurrences in
+  `src/data/audiences.ts` and 3 in `web/public/llms.txt`, replaced with firm voice ("we review" /
+  "we work through" / "we check"). Not deployed, correcting a stale "unbacked" line: these are the
+  only `web/src` occurrences of that exact phrase as of this pass.
+- The 15 `/for/[slug]` pages' closer (`LeadCTAPanel` title/description) was one shared string
+  ("Talk to a specialist about your situation") on every page. Each audience row in
+  `audiences.ts` now carries its own `closer.title`/`closer.description`; `[slug]/page.tsx` falls
+  back to a firm-voice default if one is missing. Written plainly (Sonnet); flagged for the Opus
+  read.
+- Footer "Book a consultation" pointed at the token-gated `/book`, which renders zero form fields
+  for an untokened visitor (confirmed live in the 2026-09-28 wave-2 read). Now points at
+  `/contact#book`, the existing anchored form section. `/book` and `BookingPicker.tsx` wording
+  ("A property tax specialist will call you then") changed to the firm-voice model
+  ("An accountant will call you then").
+- Primary CTA contrast: `bg-emerald-600` white-text buttons measured 3.65-3.77:1 (WCAG AA needs
+  4.5:1). Root cause fixed once in the shared token (`btnPrimaryBase`/`btnPrimary` in
+  `components/ui/layout-utils.ts`, now `emerald-700`/5.48:1); ~19 pages carried a redundant
+  page-level `bg-emerald-600` override on top of `btnPrimary` (a cascade-race footgun the file's
+  own comment already names for a different property) and those overrides are removed so the
+  token actually controls the colour. 8 more hand-rolled emerald-600-on-white buttons
+  (BlogSidebarCta, PageResultCta, StampDutyCalculator, EmbedCta, DeepScrollModal, ConsentBanner,
+  SpecialistWidget, resources/[topic]) moved to emerald-700 to match. 3 small decorative avatar
+  icons in SpecialistWidget left at emerald-600 (not measured CTAs).
+- 24-hour promise: the instant-acknowledgement email (`t0_email`, `delayHours: 0`) now states "One
+  of our accountants will call you within 24 hours, Monday to Friday." Flagged for the Opus read:
+  the email's existing design note says the call is CONTINGENT on a reply, so this needs a check
+  that the rendered email reads as one promise, not two contradictory ones.
+- AdSense: `layout.tsx` metadata now carries `other: { "google-adsense-account":
+  "ca-pub-3756285576371279" }`; `ConsentedScripts` now passes `adsenseClientId`; `public/ads.txt`
+  copied from Solicitors. `next.config.ts` already calls `buildSecurityHeaders({ ga: true, ... })`
+  so no header change was needed here (that piece is the shared builder's, not per-site).
+- Sitemap/canonical: no defect found. Hub pages (`/services`, `/about`, `/contact`, `/for/[slug]`,
+  the four checked `/services/*`) all self-reference in `alternates.canonical`. No standalone
+  `/for` hub route exists on Property (only the dynamic `[slug]` route), so there is nothing to
+  canonicalise there.
+- Nurture `delayHours` array already correct (`0, 0, 4, 20, 24, 48, 72, 96`); no change needed.
+
 > **⚠ STATUS (handoff, 2026-06-02) — TRACK-2 REWRITE PROGRAM COMPLETE. 0 genuine residual (verified corpus-wide by git history over all 686 blog pages). DEPLOYED to production 2026-06-02 — live at www.propertytaxpartners.co.uk (build `property-tax-partners-6u4q7mt7z`); verified sitemap + homepage + rewrites all HTTP 200, and the un-redirected keeper pages now resolve 200.** For a new manager: (a) `reviewedAt`/`dateModified` are UNRELIABLE rewrite markers (added mid-programme) — audit completeness by git history, not frontmatter; (b) the only remaining work is OPTIONAL/non-blocking (deferred SDLT 15→17% sweep §3, held `vat-calculation-calculator`, minor-cleanup §3, and one spotted stale page `2027-property-income-tax-rates-landlords-uk` whose frontmatter still wrongly carves Wales out of the 2027 rates — Wales is IN 22/42/47); (c) redirect-hygiene was fixed this session (§2). The two prior-session items below are LONG SINCE DONE (retained as audit history):
 > 1. **Incorporation-B (8) — DONE (committed `6a86dd97`, 2026-06-02; all 8 re-QA'd 8/8 all_clear, coverage 8/8, predeploy gate PASS, build exit 0, NOT deployed).** Historical resume detail (now complete) retained for audit: (cached in `optimisation_engine/.cache/qa_runner/incorpB/`). Only **2 need re-QA**, then finalise+commit all 8: (a) `property-company-accounting-requirements-hmrc-expectations` — CT-penalty FAQ already FIXED locally (£100/£200 → the doubled £200/£400/£1,000 regime); (b) `property-company-employer-pension-contributions-directors` — only a transient "QA returned nothing" (rate limit), no known content issue. **Resume:** `track2_qa_autofix_runner {batch:'incorpB', slugs:['property-company-accounting-requirements-hmrc-expectations','property-company-employer-pension-contributions-directors'], maxRounds:2}` → merge `incorpB` caches → record/coverage/gate → build → commit the 8 surgically. (6 already all_clear: `corporation-tax-vs-income-tax-landlords-2027` [47→48 fixed], `when-does-property-holding-company-structure-make-sense-uk-landlords` [leaked tags stripped], `incorporation-case-study-10-property-portfolio-200k-mortgage`, `transfer-properties-to-company-phased-guide`, `cgt-property-transfer-limited-company-calculate`, `incorporate-rental-property-without-cgt`.)
 > 2. **Section 24 B2 (3) — DONE (committed `8cdce948`); Section 24 B3 (3) — DONE (committed `34c4fd2b`). Section 24 seconds (B1+B2+B3 = 10) now fully shipped. Incorp-C (3) DONE (`6c44a4cd`). FinanceMortgage pair (2) DONE (`0217b42c` + `33e81ac7`). VATcalc anchor vat-calculator (1) DONE (`b13472b4`, repositioned to commercial-property VAT). VATcalc COMPLETE (3 lanes: vat-calculator `b13472b4` = commercial specialist, vat-how-to-calculate `68b78a5c` = formulas/method, vat-tax-calculator `29bd455b` = net-liability + Flat Rate Scheme; vat-calculation-calculator stays HELD). Named-scope list (B2/B3/Incorp-C/FinanceMortgage/VATcalc) COMPLETE = 22 pages committed this session. User OK'd continuing. non-AIA reversals (4) DONE (`2de9eae9`, incl. 2 manager statute/arithmetic adjudications). AIA-knot briefs generated + corrected (corrections files in `briefs/property/track2/aia/` fix s.187A-not-187B for pooling, s.201-not-198 for the 2yr election, 40%-via-s.52-table, 6%-via-s.104A/D, plus tight cannibalisation steers vs the 11+ live AIA pages: link UP to the pillar, hold narrowest residual intent). AIA knot (5) DONE (`bcafca4d`, 5/5 all_clear via the brief engine + manager corrections files). **This run's SCOPE complete: 31 pages committed (none deployed).** A git-history residual audit (2026-06-02) found the BROADER program ~95% done (207/234 universe rewritten, 17 collapsed/deleted) with **exactly 10 genuine residual pages** still only stale-swept (never ranking-grade rewritten), a cannibalisation-prone S24/mortgage-interest/incorporation cluster: S24 (5) `section-24-2027-tax-year-planning-landlords` + `-uk-landlords` (near-dupe pair), `section-24-higher-rate-taxpayers-changes-2027`, `section-24-mortgage-interest-restriction-uk-landlords`, `section-24-tax-credit-20-percent-basic-rate-relief`; mortgage-interest (2) `mortgage-interest-deductible-landlords-uk-2026`, `tax-relief-mortgage-interest-rented-property-guide`; incorporation (3) `incorporation-holdover-relief-property`, `incorporation-timing-when-to-incorporate-property-portfolio`, `2027-tax-rates-incorporation-decision-property-landlords`. (The CityService location cluster + most reliefs are already DONE per the audit; reviewedAt/dateModified are unreliable markers, use git history.) **UPDATE — the final 10 are now DONE (committed `90e33892`: s24res1 7 + incorpres1 3, all via engine briefs + manager corrections) → TRACK-2 REWRITE PROGRAM COMPLETE, 0 genuine residual. 41 Track-2 pages committed this session (12 commits, none deployed).** Held: `vat-calculation-calculator`. Skipped: 2 deleted CapAll-special pages.

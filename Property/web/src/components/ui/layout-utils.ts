@@ -25,9 +25,16 @@ export const focusRing =
  *  px-6` OVER btnPrimary is a cascade race: both utilities land at equal
  *  specificity and Tailwind's own sort, not our source order, picks the winner,
  *  silently. That is how the header CTA never hid below 1024px on any site
- *  between 2026-08-23 and 2026-09-16. Compose from the base instead. */
+ *  between 2026-08-23 and 2026-09-16. Compose from the base instead.
+ *
+ *  bg-emerald-600 measured 3.65:1 for white text (WCAG AA needs 4.5:1 at this
+ *  size) on "Send enquiry", header "Book consultation" and the mini-capture
+ *  "Continue" (2026-09-28 rendered read). emerald-700 measures 5.48:1. Do not
+ *  re-add a page-level `bg-emerald-600` override on a btnPrimary button: it
+ *  wins the cascade race described above and silently brings the failure
+ *  back (2026-09-28 phase 0 removed ~19 such overrides for this reason). */
 export const btnPrimaryBase =
-  "touch-manipulation items-center justify-center rounded-xl bg-emerald-600 font-bold text-white transition-all duration-150 hover:bg-emerald-700 active:bg-emerald-800 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600";
+  "touch-manipulation items-center justify-center rounded-xl bg-emerald-700 font-bold text-white transition-all duration-150 hover:bg-emerald-800 active:bg-emerald-900 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700";
 
 export const btnPrimary = `inline-flex min-h-12 min-w-[10rem] px-8 py-3.5 text-base ${btnPrimaryBase}`;
 

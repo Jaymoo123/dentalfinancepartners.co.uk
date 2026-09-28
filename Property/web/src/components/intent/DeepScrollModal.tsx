@@ -110,7 +110,7 @@ export function DeepScrollModal() {
               trackPersonalization("clicked", action);
               setOpen(false);
             }}
-            className="rounded-lg bg-emerald-600 px-4 py-2.5 text-center font-semibold text-white hover:bg-emerald-700"
+            className="rounded-lg bg-emerald-700 px-4 py-2.5 text-center font-semibold text-white hover:bg-emerald-800"
           >
             {primaryLabel}
           </Link>

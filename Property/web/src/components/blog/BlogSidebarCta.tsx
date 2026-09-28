@@ -26,7 +26,7 @@ export function BlogSidebarCta({ copy }: { copy: BlogSidebarCtaCopy }) {
         data-cta="blog_sidebar_book"
         data-cta-placement="sidebar"
         data-cta-goal="form"
-        className={`mt-5 inline-flex min-h-12 w-full touch-manipulation items-center justify-center rounded-xl bg-emerald-600 px-4 py-3 text-base font-bold text-white transition-colors hover:bg-emerald-700 active:bg-emerald-800 ${focusRing}`}
+        className={`mt-5 inline-flex min-h-12 w-full touch-manipulation items-center justify-center rounded-xl bg-emerald-700 px-4 py-3 text-base font-bold text-white transition-colors hover:bg-emerald-800 active:bg-emerald-900 ${focusRing}`}
       >
         Book a call
       </a>

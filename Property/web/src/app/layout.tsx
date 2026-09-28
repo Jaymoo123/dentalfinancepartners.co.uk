@@ -47,6 +47,10 @@ export const metadata: Metadata = {
   },
   verification: {
     google: niche.seo.google_site_verification,
+    // Server-rendered so the AdSense crawler finds it (it reads raw HTML and
+    // never runs the client-side, consent-gated ad loader). Pattern and
+    // account id from Solicitors, commits 7edc7fd3/153e5017.
+    other: { "google-adsense-account": "ca-pub-3756285576371279" },
   },
   // Snippet directives are the documented control over how much of a page
   // search and AI features may show. We previously set none, which leaves the
@@ -131,7 +135,10 @@ export default function RootLayout({
             siteKey={niche.content_strategy.source_identifier}
             siteName={niche.display_name}
           >
-            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <ConsentedScripts
+              gaMeasurementId={niche.seo.google_analytics_id}
+              adsenseClientId="ca-pub-3756285576371279"
+            />
             <IntentProvider>
               <PageShell nav={buildPrimaryNav()}>{children}</PageShell>
               <ReturningBar />

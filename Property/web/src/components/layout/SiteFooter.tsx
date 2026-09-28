@@ -43,7 +43,7 @@ function buildFooterColumns(nav: NavItem[]): FooterColumn[] {
         { label: "About", href: "/about" },
         { label: "Contact", href: "/contact" },
         { label: "Locations", href: "/locations" },
-        { label: "Book a consultation", href: "/book" },
+        { label: "Book a consultation", href: "/contact#book" },
       ],
     },
   ].filter((column) => column.items.length > 0);

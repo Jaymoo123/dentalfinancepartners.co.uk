@@ -447,12 +447,21 @@ const STEPS: LeadNurtureStep[] = [
       // Copy from the approved preview (docs/property/email-previews/t0_email.html)
       // with the owner corrections applied: the call is CONTINGENT on a reply
       // (never "otherwise we will call you"), and any reply verifies the channel.
+      // 2026-09-28 phase 0: brief section 2 requires the 24-hour promise to be
+      // backed by this instant email (it was previously unbacked, 35 site
+      // occurrences vs zero nurture mentions). Added as its own sentence below
+      // rather than folded into the contingent-call paragraph, so it reads as
+      // "we will get back to you" (true either way) and not a second, looser
+      // promise to call unprompted, which would contradict the CONTINGENT
+      // design note above. Flagged for the Opus read: worth checking this
+      // reads as one promise, not two, once rendered.
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
         "Just reply with a time that suits and a specialist will call you.",
         [
           "Thanks for your enquiry, it has just landed with us and a property tax specialist is ready to help.",
+          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of where you stand, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you best, tell me and we will work around it.",
         ],
