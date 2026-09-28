@@ -813,6 +813,36 @@ posts on those sites. Conventions traced 09-27 (loader `<site>/web/src/lib/blog.
   per site at 4 weeks against the 90-day record.
 
 
+**S5 STATUS at close, 2026-09-28 early (owner: "pause and close out today, pick up tomorrow").**
+DONE and committed: T1 entity block on homepage, /about, /services on all five sites (verified in
+HEAD, screenshots clean, Opus review `docs/_engines/ENTITY_BLOCK_REVIEW_2026-09-28.md`, about-page
+contradictions fixed on Medical, care, contractors); T2 shared Organization builder extended and
+FOUR sites ported (Medical, contractors, care, charities: parentOrganization Ashfield Trading Ltd
+16358723, cross-brand sameAs, knowsAbout from audience rows, brand name as `name`, legal name as
+`alternateName`); blog author = Organization on Medical, contractors, care; care posts gain
+BlogPosting; contractors services page gains breadcrumb, collection, item list; T3 llms.txt
+firm-first on all five (false "UK accountancy practice" line removed, UTM `utm_source=chatgpt&
+utm_medium=llms`, descriptions restored), Property llms-full now the shared route; T4 query
+preservation checked (`T4_QUERY_PRESERVATION_2026-09-27.md`), two FAQs added back on Medical;
+claims sweep narrowed to the 2026-09-12 ruling (about 45 "we advise" self-claims removed, voice,
+titles, metas, fixed-fee positioning untouched); GEO audit `GEO_AUDIT_2026-09-27.md`.
+PICKUP TOMORROW, in order: (1) Property Organization port onto the shared builder (the fifth;
+`Property/web/src/lib/organization-schema.ts`, add sameAs, parentOrganization, knowsAbout from
+`data/audiences.ts`, one node per page; the about page currently emits the node twice on Medical,
+harmless, same `@id`); (2) final SEQUENTIAL build pass on the five sites, one builder at a time,
+with rendered greps: entity-block-eyebrow once per core page, one Organization `@id` per page,
+Service + FAQPage + BreadcrumbList on audience and service pages, `curl /llms-full.txt` on
+Property (status, size, count of /blog/ URLs = 806), `/llms.txt` first 15 lines; (3) push, then
+deploy per decision 10 when the owner says go; (4) after deploy, T6 baseline rerun. OPEN calls
+for the owner: four heading-class "advice" strings left on care and charities (blog CTA h2, guides
+CtaBand, two card titles) because headings are the SEO surface; `page-summaries.ts` on contractors
+was moved to the referral voice, the rest of its core pages keep the "we do the work" voice per the
+2026-09-12 ruling; `reviewedBy` bylines on Property posts can surface named people from frontmatter.
+LESSON (two resets tonight): agents share one working tree; a builder that "reverts a build
+artefact" wipes another agent's edits, and a commit made without checking `git diff --stat` can
+land hollow. Rule now: never git checkout/restore in an agent prompt, one agent per site, check the
+diff is non-empty before every commit, commit straight after each verified report.
+
 ### S5. GEO completion on the five sites (spec, 2026-09-27 late; owner: "make sure the sites are as optimised for GEO as they can possibly be", "if we're number 1 we need to be number 1", "I am all for rewriting just make sure we're not losing our existing queries")
 
 Sites: Property, Medical, contractors-ir35, care, charities. Everything local-first, committed, not deployed (owner hold stands). Each per-site build agent verifies with tsc, vitest, build and a rendered grep; an Opus reviewer reads the rendered HTML of homepage, /about, /services on all five in headless Chromium (puppeteer-core + ms-playwright chromium, 1280 and 390) before commit.
