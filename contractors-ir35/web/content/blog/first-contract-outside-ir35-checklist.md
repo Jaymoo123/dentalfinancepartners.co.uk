@@ -3,7 +3,7 @@ title: "Your First Outside IR35 Contract: the First 30 Days After Incorporating"
 slug: first-contract-outside-ir35-checklist
 date: '2026-06-12'
 updatedDate: "2026-09-27"
-dateModified: "2026-09-28"
+dateModified: "2026-09-27"
 author: Contractor Tax Accountants Editorial Team
 generator: claude-opus
 image: "https://images.pexels.com/photos/12662874/pexels-photo-12662874.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -93,4 +93,4 @@ faqs:
 
 <h2>What goes wrong most often?</h2>
 
-<p>Three things. The bank account is left until the invoice is due, so the first payment lands somewhere it should not. The PAYE registration is left until the salary is wanted, so the first payroll slips a month. And the whole balance is drawn in month two, leaving nothing for a corporation tax bill that falls nine months and one day after the year end. We go through the sequence with you before the first invoice, which takes a great deal less unwinding than any of the three.</p>
+<p>Three things. The bank account is left until the invoice is due, so the first payment lands somewhere it should not. The PAYE registration is left until the salary is wanted, so the first payroll slips a month. And the whole balance is drawn in month two, leaving nothing for a corporation tax bill that falls nine months and one day after the year end. A specialist reviews the sequence with you before the first invoice, which takes less unwinding than any of the three.</p>

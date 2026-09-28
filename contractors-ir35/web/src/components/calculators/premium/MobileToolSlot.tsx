@@ -36,7 +36,7 @@ export function MobileToolSlot({ topic }: { topic: TopicKey }) {
       messagePrefix={`[Mobile tool: ${topic}]`}
       role="Other"
       heading={t?.ctaCopy || "Get your figure from a contractor specialist"}
-      blurb="Our interactive tool is built for a larger screen. Tell us your contracting situation and one of our accountants will send you the figures and the sensible next step, with no obligation."
+      blurb="Our interactive tool is built for a larger screen. Tell us your contracting situation and a contractor specialist will send you the figures and the sensible next step, with no obligation."
       submitLabel="Send me my figure"
       className="rounded-xl border-l-4 border-[var(--accent)] bg-neutral-50 p-5 ring-1 ring-neutral-200/70 sm:p-6"
     />

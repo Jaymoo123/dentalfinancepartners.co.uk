@@ -40,7 +40,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   ir35: [
     "Working out how much better off you are outside IR35? I can pull up the like-for-like calculator.",
     "Want the outside-versus-inside take-home on your day rate? Happy to point you to it.",
-    "A free first call with one of our accountants will confirm your status picture and your take-home, and if we take it on you get a fixed fee in writing first, want me to set one up?",
+    "A free first call with a contractor specialist will confirm your status picture and your take-home, and if we take it on you get a fixed fee in writing first, want me to set one up?",
   ],
   structure: [
     "Weighing an umbrella against your own limited company? There is a tool that shows both take-homes.",

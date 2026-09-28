@@ -133,7 +133,7 @@ export function ResultGateModal({
             topic?.ctaCopy ||
             "Want a specialist to confirm your figure?"
           }
-          blurb="A calculator gives the shape of the answer. IR35 status, the salary and dividend split and the umbrella-vs-limited decision are unforgiving in the detail. Tell us your situation and one of our accountants will confirm your exact figure and the sensible next step, with no obligation."
+          blurb="A calculator gives the shape of the answer. IR35 status, the salary and dividend split and the umbrella-vs-limited decision are unforgiving in the detail. Tell us your situation and a contractor specialist will confirm your exact figure and the sensible next step, with no obligation."
           submitLabel="Get my figure confirmed"
           successText="Thanks, we will be in touch. Your result is below."
           className="mt-2"

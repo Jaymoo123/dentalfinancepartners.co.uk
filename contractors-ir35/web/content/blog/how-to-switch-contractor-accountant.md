@@ -2,7 +2,7 @@
 title: "How to Switch Contractor Accountant: the Step-by-Step Process"
 slug: how-to-switch-contractor-accountant
 date: '2026-06-12'
-updatedDate: '2026-09-28'
+updatedDate: '2026-06-12'
 author: Contractor Tax Accountants Editorial Team
 image: "https://images.pexels.com/photos/6779565/pexels-photo-6779565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 altText: "Black and white office scene featuring accounting documents, calculator, and laptops."
@@ -116,7 +116,7 @@ faqs:
 
 <h2>What a good specialist asks that a generalist does not</h2>
 
-<p>The questions a new accountant asks in the first meeting tell you almost everything about whether they are a genuine contractor specialist. A generalist will ask for your year-end date, your bookkeeping software, and whether you have any outstanding returns. A contractor specialist asks these and then keeps going.</p>
+<p>The questions a new accountant asks in the first meeting tell you almost everything about whether they are a genuine contractor specialist. A generalist will ask for your year-end date, your bookkeeping software, and whether you have any outstanding returns. A specialist will ask these and then continue.</p>
 
 <h3>The IR35 question set</h3>
 
@@ -136,7 +136,7 @@ faqs:
 
 <h3>The MSC question</h3>
 
-<p>A contractor specialist wants to know whether your previous accountant provided services in a way that could attract scrutiny under the Managed Service Company legislation (ITEPA 2003 Chapter 9). The MSC rules are separate from IR35 and do not depend on a status test: where a company is an MSC, all payments to the worker are employment income subject to PAYE and NIC, and unpaid PAYE can be transferred as a personal debt to the worker under s.688A. The accountancy-services carve-out in ITEPA s.61B(3) protects an accountant who genuinely advises; it does not protect one who effectively runs the company, controls the finances, or sells a standardised packaged product. The Churchill Knight and Boox test cases are listed for First-tier Tribunal hearings in June 2026 and November 2026 and remain undecided at the time of writing, which means the risk factors are live. A new accountant who knows this area asks whether your previous arrangement showed any of the warning signs, and confirms that their own model sits clearly on the advice side of the line.</p>
+<p>A specialist will want to know whether your previous accountant provided services in a way that could attract scrutiny under the Managed Service Company legislation (ITEPA 2003 Chapter 9). The MSC rules are separate from IR35 and do not depend on a status test: where a company is an MSC, all payments to the worker are employment income subject to PAYE and NIC, and unpaid PAYE can be transferred as a personal debt to the worker under s.688A. The accountancy-services carve-out in ITEPA s.61B(3) protects an accountant who genuinely advises; it does not protect one who effectively runs the company, controls the finances, or sells a standardised packaged product. The Churchill Knight and Boox test cases are listed for First-tier Tribunal hearings in June 2026 and November 2026 and remain undecided at the time of writing, which means the risk factors are live. A new specialist will ask whether your previous arrangement showed any of the warning signs and will confirm their own model sits clearly on the advice side of the line.</p>
 
 <h2>What the new accountant inherits</h2>
 
