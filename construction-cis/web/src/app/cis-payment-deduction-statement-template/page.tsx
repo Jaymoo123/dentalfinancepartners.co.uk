@@ -342,7 +342,7 @@ export default function CisStatementTemplatePage() {
             detail: "The contractor who paid you still reported it on their monthly return.",
           },
           {
-            title: "An accountant will be in touch",
+            title: "A specialist CIS accountant will be in touch",
             detail: "Not a sales team, not a call centre.",
           },
         ]}

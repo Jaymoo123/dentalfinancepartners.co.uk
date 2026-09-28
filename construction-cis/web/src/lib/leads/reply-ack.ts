@@ -45,7 +45,7 @@ function hasRealFirstName(firstName: string): boolean {
 /** Post-YES SMS/WhatsApp ack. Under 160 chars, no STOP line (the lead just opted in). */
 function buildAckBody(firstName: string): string {
   const name = hasRealFirstName(firstName) ? ` ${firstName}` : "";
-  return `Great, thank you${name}. We will call you. Nothing to prepare. Speak soon.`;
+  return `Great, thank you${name}. A specialist will call you. Nothing to prepare. Speak soon.`;
 }
 
 async function fetchLead(leadId: string): Promise<LeadRow | null> {
@@ -143,7 +143,7 @@ export async function acknowledgeReply(opts: {
 /**
  * One-time acknowledgement EMAIL to a prospect whose genuine email reply was
  * just captured. Closes the loop the same way the SMS ack does for a YES text:
- * the reply landed, we will call, nothing else to prepare.
+ * the reply landed, a specialist will call, nothing else to prepare.
  *
  * Rules (mirror acknowledgeReply):
  *   - Dormancy-gated: sends through the shared ChannelSender, so nothing leaves
@@ -170,11 +170,11 @@ export async function acknowledgeEmailReply(opts: { leadId: string }): Promise<b
       : "Got your reply";
 
     const { html, text } = renderLeadServiceEmail({
-      preheader: "Thanks, that is everything we need. We will call you.",
+      preheader: "Thanks, that is everything we need. A specialist will call you.",
       greeting: `Hi ${ctx.firstName},`,
       paragraphs: [
         "Got your reply, thank you. That is everything we need.",
-        "One of our accountants will call you, and if you mentioned a day or time that suits, we will aim for it.",
+        "One of our specialists will call you, and if you mentioned a day or time that suits, we will aim for it.",
         "There is nothing else for you to do. If anything changes in the meantime, just reply here and I will pick it up.",
       ],
       // No cta/secondary: this is a reply-only service email, nothing to click.

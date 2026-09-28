@@ -170,7 +170,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
               },
               {
                 title: "Fees agreed before any work starts",
-                detail: "We agree the fee with you in writing before any work starts.",
+                detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
               },
               {
                 title: "No hard sell, no obligation",

@@ -70,7 +70,7 @@ export default function GlossaryIndexPage() {
             </h1>
             <p className="mt-4 text-lg text-neutral-300 leading-relaxed">
               {entries.length > 0
-                ? `${entries.length} definitions of the terms UK construction subcontractors and contractors actually need to understand. Written by accountants. All figures updated for 2026/27.`
+                ? `${entries.length} definitions of the terms UK construction subcontractors and contractors actually need to understand. Written by specialist CIS accountants. All figures updated for 2026/27.`
                 : "Specialist CIS accountants explaining the terms UK construction subcontractors and contractors need to understand. Definitions being added now."}
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function GlossaryIndexPage() {
             },
             {
               title: "Fees agreed before any work starts",
-              detail: "We agree the fee with you in writing before any work starts.",
+              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
             },
             {
               title: "No hard sell, no obligation",

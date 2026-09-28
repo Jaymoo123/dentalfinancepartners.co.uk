@@ -21,7 +21,7 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
       formId="inline_mini"
       messagePrefix={`[Inline mini-form${topicTag}]`}
       heading="Want this checked against your specific situation?"
-      blurb="Leave your details and a one-line summary, and an accountant will look at your position. No obligation."
+      blurb="Leave your details and a one-line summary, and a specialist CIS accountant will look at your position. No obligation."
       submitLabel="Send my details"
       className="my-12 rounded-xl border-l-4 border-[var(--accent)] bg-neutral-50 p-6 sm:p-8"
     />

@@ -8,7 +8,7 @@ import {
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { tradeTypes, getTradeType, getTradeCloser } from "@/data/trade-types";
+import { tradeTypes, getTradeType } from "@/data/trade-types";
 import {
   buildFaqJsonLd,
   buildServiceJsonLd,
@@ -259,12 +259,12 @@ export default async function TradeTypePage({
                 Talk to a specialist {type.title.toLowerCase()} accountant
               </h2>
               <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-                {getTradeCloser(type)}
+                Book a free call. We will talk through your CIS position, your deduction history and whether there is anything worth changing. No hard sell, no obligation.
               </p>
               <div className="mt-8 space-y-3">
                 {[
                   "Specialist in CIS and construction accounting, not a generalist practice",
-                  "An accountant will be in touch",
+                  "A specialist CIS accountant will be in touch",
                   "A free initial call, with no obligation to go ahead",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">

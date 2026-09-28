@@ -120,7 +120,7 @@ export const cisRefundEstimator: GenericTool = {
           strong: true,
         },
       ],
-      note: "This is an estimate based on 2026/27 rates (PA £12,570, tapering above £100,000; basic 20%, higher 40%, additional 45%; Class 4 NI 6%/2%). It assumes no other credits or adjustments. An accountant will identify all allowable deductions and file your Self Assessment correctly.",
+      note: "This is an estimate based on 2026/27 rates (PA £12,570, tapering above £100,000; basic 20%, higher 40%, additional 45%; Class 4 NI 6%/2%). It assumes no other credits or adjustments. A specialist CIS accountant will identify all allowable deductions and file your Self Assessment correctly.",
     };
   },
   explainer: {
@@ -160,7 +160,7 @@ export const cisRefundEstimator: GenericTool = {
     {
       question: "Do I need an accountant to claim my CIS refund?",
       answer:
-        "There is no legal requirement to use an accountant, but an accountant will identify all allowable expenses, ensure the deduction base has been applied correctly on your statements, and maximise your refund. Errors in self-filed returns, such as using net income instead of gross or missing expense categories, frequently result in lower refunds.",
+        "There is no legal requirement to use an accountant, but a specialist CIS accountant will identify all allowable expenses, ensure the deduction base has been applied correctly on your statements, and maximise your refund. Errors in self-filed returns, such as using net income instead of gross or missing expense categories, frequently result in lower refunds.",
     },
   ],
 };

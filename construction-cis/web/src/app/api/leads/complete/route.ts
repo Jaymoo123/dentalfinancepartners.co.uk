@@ -1,6 +1,6 @@
 /**
  * "Complete your details" endpoint. A lead who arrived missing a name and/or
- * a phone (typically the email-only "Ask we" widget) supplies the
+ * a phone (typically the email-only "Ask a specialist" widget) supplies the
  * missing detail(s) from a signed link in a nurture email.
  *
  * - Only fills IN what is missing; never touches email; never overwrites a

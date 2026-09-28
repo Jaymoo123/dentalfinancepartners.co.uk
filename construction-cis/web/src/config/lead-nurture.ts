@@ -254,8 +254,7 @@ const STEPS: LeadNurtureStep[] = [
         "Just reply with a time that suits and a member of the team will call you.",
         [
           "Thanks for your enquiry, it has just come through to us and a member of the team is ready to help.",
-          "One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The first call is free, about 20 minutes, and there is no obligation. Whether it is a refund, a CIS300 question, or working out the best structure for your trade, we cover all of it.",
+          "The call is a free review of your CIS tax position, about 20 minutes, with no charge and no obligation. Whether it is a refund, a CIS300 question, or working out the best structure for your trade, we cover all of it.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
         "t0_email",
@@ -291,7 +290,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Trade Tax Specialists again. Enquiries like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and we will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Trade Tax Specialists again. Enquiries like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -542,7 +541,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have asked a couple of times now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a CIS300 penalty, a refund you have not claimed, a new contract starting, or a decision about sole trader versus limited company.`,
+            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a CIS300 penalty, a refund you have not claimed, a new contract starting, or a decision about sole trader versus limited company.`,
             "All the best.",
           ],
           "detail_capture_day7",

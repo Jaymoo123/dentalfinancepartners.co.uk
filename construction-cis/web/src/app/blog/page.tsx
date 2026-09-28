@@ -13,12 +13,12 @@ import { btnPrimary } from "@/components/ui/layout-utils";
 export const metadata: Metadata = {
   title: "CIS and Construction Tax Blog | Guides and Articles",
   description:
-    "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by accountants.",
+    "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by specialist CIS accountants.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     title: "CIS and Construction Tax Blog | Guides and Articles",
     description:
-      "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by accountants.",
+      "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by specialist CIS accountants.",
     url: `${siteConfig.url}/blog`,
     type: "website",
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CIS and Construction Tax Blog | Guides and Articles",
     description:
-      "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by accountants.",
+      "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by specialist CIS accountants.",
   },
 };
 
@@ -55,7 +55,7 @@ export default function BlogIndexPage() {
           name: "CIS and construction tax blog",
           url: `${siteConfig.url}/blog`,
           description:
-            "Practical CIS and construction tax guides from accountants.",
+            "Practical CIS and construction tax guides from specialist CIS accountants.",
           isPartOf: { "@type": "WebSite", url: siteConfig.url },
           hasPart: postsWithCategorySlug.map((p) => ({
             "@type": "BlogPosting",
@@ -83,7 +83,7 @@ export default function BlogIndexPage() {
             CIS and construction tax, explained.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
-            Practical guides on CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting for construction. Written by accountants.
+            Practical guides on CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting for construction. Written by specialist CIS accountants.
           </p>
           {/* Section 0.5: a page a reader can scroll to the bottom of without
               meeting an ask is not finished, and the hero primary scrolls to the
@@ -156,7 +156,7 @@ export default function BlogIndexPage() {
             },
             {
               title: "Fees agreed before any work starts",
-              detail: "We agree the fee with you in writing before any work starts.",
+              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
             },
             {
               title: "No hard sell, no obligation",

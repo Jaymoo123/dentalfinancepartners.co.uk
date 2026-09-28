@@ -143,7 +143,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a CIS specialist",
     magnetBlurbTemplate:
-      "We will talk through your CIS Self Assessment, check the refund owing, and advise on the quickest way to claim. The first call is free.",
+      "A specialist will talk through your CIS Self Assessment, check the refund owing, and advise on the quickest way to claim. The first call is free.",
   },
   "vat-reverse-charge": {
     topic: "vat-reverse-charge",
@@ -152,7 +152,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a CIS specialist",
     magnetBlurbTemplate:
-      "We will confirm whether the VAT domestic reverse charge applies to your job and how to invoice correctly. The first call is free.",
+      "A specialist will confirm whether the VAT domestic reverse charge applies to your job and how to invoice correctly. The first call is free.",
   },
 };
 

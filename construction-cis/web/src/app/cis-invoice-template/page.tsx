@@ -331,7 +331,7 @@ export default function CisInvoiceTemplatePage() {
             detail: "The over-deduction shows up in what the contractor actually paid.",
           },
           {
-            title: "An accountant will be in touch",
+            title: "A specialist CIS accountant will be in touch",
             detail: "Not a sales team, not a call centre.",
           },
         ]}

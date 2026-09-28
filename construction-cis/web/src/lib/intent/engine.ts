@@ -60,7 +60,7 @@ export type IntentAction = {
 };
 
 // Thresholds (tuned conservatively; easy to A/B later).
-const ENGAGED_ESCALATE_MS = 90_000; // deeply engaged -> offer we
+const ENGAGED_ESCALATE_MS = 90_000; // deeply engaged -> offer a specialist
 const ENGAGED_GUIDE_MS = 60_000; // engaged reader -> offer the full guide
 const SCROLL_ESCALATE_PCT = 60; // "deep into the page" threshold
 const SCROLL_MODAL_PCT = 70; // deep-scroll modal trigger

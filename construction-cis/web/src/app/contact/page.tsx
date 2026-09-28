@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   // src/tests/design/page-summaries.test.ts. Edit both or neither.
   title: "Contact | CIS Accountants for Trades",
   description:
-    "Book a free call with an accountant. CIS refunds, gross payment status and construction accounting. An accountant will be in touch.",
+    "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. A specialist CIS accountant will be in touch.",
   alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
@@ -90,8 +90,8 @@ export default function ContactPage() {
                     },
                     {
                       n: "02",
-                      title: "An accountant gets in touch",
-                      body: "An accountant will respond to arrange a short call. Not a sales team, not a call centre.",
+                      title: "A specialist CIS accountant gets in touch",
+                      body: "A specialist CIS accountant will respond to arrange a short call. Not a sales team, not a call centre.",
                     },
                     {
                       n: "03",
@@ -141,20 +141,19 @@ export default function ContactPage() {
                   default title and NO default items, deliberately (see its
                   docstring): Property's ships defaults that publish a
                   "Fixed fee quote if you decide to proceed" line no page
-                  authored, and this card must not acquire any.
-
-                  2026-09-28 phase 0 (owner ruling, decision 2): the brand is
-                  the firm. This card no longer describes multi-firm routing
-                  ("partner network", "at most six firms", "whichever firm
-                  contacts you"); the data-sharing disclosure itself still
-                  lives at /privacy-policy section 5 (legal text, untouched by
-                  this ruling), this card just no longer restates it as
-                  marketing prose. */}
+                  authored, and this card must not acquire any. Every item below
+                  is checked against /privacy-policy section 5, which is the
+                  reference page: partner network (:109-110), redacted summary
+                  first (:125-126), at most six firms (:131), each firm
+                  identifies itself (:132), object at any time (:140). No
+                  turnaround, no fee, no duration. */}
               <WhatToExpectCard
                 title="What happens after you send it"
                 items={[
-                  "We reply within 24 hours and one of our accountants comes back to you directly.",
-                  "Free first call, then a fixed fee in writing before any work starts.",
+                  "Your enquiry goes to regulated firms in our specialist partner network, so a specialist can answer it.",
+                  "Firms are first shown a summary with your name and contact details removed. Only a firm that decides it can help receives your details in full.",
+                  "At most six firms may receive your details, and often fewer.",
+                  "Whichever firm contacts you will tell you who they are and give you their own privacy information.",
                   "No obligation, every conversation is confidential, and you can ask us to stop at any time.",
                 ]}
               />

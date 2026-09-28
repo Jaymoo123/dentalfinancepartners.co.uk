@@ -164,8 +164,8 @@ export function SiteFooter({ nav }: { nav?: NavItem[] }) {
             {siteConfig.company.legalDisclosure}
           </p>
           <p className="max-w-3xl text-xs leading-relaxed text-slate-400">
-            CIS accountants for UK construction trades. Guides on this site are general
-            information. Book a call for advice specific to your situation.
+            Specialist CIS accountants. Editorial content only. Book a call for advice specific to
+            your situation.
           </p>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs leading-relaxed text-slate-400">

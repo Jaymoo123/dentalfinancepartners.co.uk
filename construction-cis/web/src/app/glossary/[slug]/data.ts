@@ -670,7 +670,7 @@ const GLOSSARY_LIST: GlossaryEntry[] = [
 </ul>
 <p>If a contractor discovers an over-deduction, they should correct it <strong>within the same tax year</strong> where possible, by reducing a subsequent payment to the subcontractor or issuing a corrected payment and deduction statement. HMRC guidance allows in-year adjustments without penalty provided the contractor acts promptly and keeps a clear audit trail.</p>
 <p>Where the over-deduction cannot be corrected in-year, the subcontractor recovers the excess through their <strong>Self Assessment return</strong> (sole trader) or <strong>EPS offset</strong> (limited company). The deduction statements the contractor issues are the evidence HMRC uses to verify the claim, so accurate statements matter throughout.</p>
-<p>From the subcontractor's perspective, over-deduction is one of the main reasons CIS refunds arise. If your payment and deduction statements show materials being deducted as though they were labour, that is an over-deduction that increases your refund entitlement. An accountant will check the statements against your invoices as part of the refund process.</p>
+<p>From the subcontractor's perspective, over-deduction is one of the main reasons CIS refunds arise. If your payment and deduction statements show materials being deducted as though they were labour, that is an over-deduction that increases your refund entitlement. A specialist CIS accountant will check the statements against your invoices as part of the refund process.</p>
 <p>For a fuller explanation of how CIS deductions are calculated and what the deduction base covers, see our guide to <a href="/blog/cis-basics/cis-deduction-rates-explained">CIS deduction rates</a>.</p>`,
   },
 

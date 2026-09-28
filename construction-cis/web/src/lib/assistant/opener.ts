@@ -95,7 +95,7 @@ const USED_CALC: [string, string, string] = [
 const GENERIC: [string, string, string] = [
   "Not sure what you are looking for? I can point you to the right tool or a quick answer.",
   "Happy to help you find what you need. What is the main CIS question on your mind?",
-  "The quickest way to get a straight answer is a free call with we. Want me to set one up?",
+  "The quickest way to get a straight answer is a free call with a specialist. Want me to set one up?",
 ];
 
 /**

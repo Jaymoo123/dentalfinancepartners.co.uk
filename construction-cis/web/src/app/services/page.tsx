@@ -245,7 +245,7 @@ export default function ServicesPage() {
               From free tools to full CIS accounting.
             </h2>
             <p className="mt-3 text-base text-neutral-600">
-              Start with our free calculators or speak to us directly. We agree the fee with you in writing before any work starts.
+              Start with our free calculators or speak to us directly. The specialist firm you speak to sets its own fee and agrees it with you up front.
             </p>
           </div>
           <ServiceTiers tiers={serviceTiers} featuredBadge="" />
@@ -261,7 +261,7 @@ export default function ServicesPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           contained
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free consultation"
           formTitle="Book your free call"
           submitLabel="Request a callback"
           title="Ready to talk through your CIS position?"
