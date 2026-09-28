@@ -319,7 +319,7 @@ export const contractorTypes: ContractorType[] = [
       {
         question: "My consulting engagement has been with one client for 18 months. Does this affect my IR35 position?",
         answer:
-          "Duration alone does not determine IR35 status, but long single-client engagements attract more HMRC scrutiny. The key questions are whether the nature of the work is genuinely project-based (and has evolved as projects have changed), whether you retain genuine autonomy over how the work is done, and whether you have the right to substitute. We review this in context, not just by looking at the calendar.",
+          "Duration alone does not determine IR35 status, but long single-client engagements attract more HMRC scrutiny. The key questions are whether the nature of the work is genuinely project-based (and has evolved as projects have changed), whether you retain genuine autonomy over how the work is done, and whether you have the right to substitute. A specialist reviews this in context, not just by looking at the calendar.",
       },
       {
         question: "Can I use a day rate contract for management consulting, or do I need a statement of work?",
@@ -444,7 +444,7 @@ export const contractorTypes: ContractorType[] = [
       {
         question: "Can I still use a limited company for NHS locum work?",
         answer:
-          "It depends on the nature of the engagement and the trust's determination. Some NHS locum arrangements remain outside IR35, particularly where the doctor has genuine substitution rights, works across multiple trusts, and is not integrated into the trust's management structure. But the off-payroll rules have applied to NHS trusts since 2017, so the trust makes the determination. We can review your specific arrangements.",
+          "It depends on the nature of the engagement and the trust's determination. Some NHS locum arrangements remain outside IR35, particularly where the doctor has genuine substitution rights, works across multiple trusts, and is not integrated into the trust's management structure. But the off-payroll rules have applied to NHS trusts since 2017, so the trust makes the determination. A specialist can review your specific arrangements.",
       },
       {
         question: "I have an annual allowance charge. Is this normal?",
@@ -635,7 +635,7 @@ export const contractorTypes: ContractorType[] = [
       {
         question: "I work with a mix of small and large clients. Does each engagement have a separate IR35 status?",
         answer:
-          "Yes. IR35 status is assessed engagement by engagement, not globally. Your work for a small agency (which self-assesses, and is likely outside IR35) exists separately from your work for a large corporate (where the client determines status). We review the large-client engagements specifically and give you a clear view of where you stand on each.",
+          "Yes. IR35 status is assessed engagement by engagement, not globally. Your work for a small agency (which self-assesses, and is likely outside IR35) exists separately from your work for a large corporate (where the client determines status). A specialist reviews the large-client engagements specifically and gives you a clear view of where you stand on each.",
       },
     ],
   },

@@ -141,7 +141,11 @@ export default async function ContractorTypePage({
       {/* Sector stats. primary-700 ground: white 7.27, cyan-100 labels 6.49. */}
       <section className="bg-primary-700 py-8 sm:py-10">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
+          <div
+            className={`grid grid-cols-1 gap-5 sm:gap-8 ${
+              type.stats.length % 3 === 0 ? "sm:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4"
+            }`}
+          >
             {type.stats.map((stat) => (
               <div key={stat.label} className="flex flex-col sm:text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
@@ -210,7 +214,11 @@ export default async function ContractorTypePage({
               What we do for {phrase}.
             </h2>
           </div>
-          <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
+          <div
+            className={`mt-10 sm:mt-14 grid gap-6 md:gap-8 ${
+              type.howWeHelp.length % 3 === 0 ? "md:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4"
+            }`}
+          >
             {type.howWeHelp.map((item) => (
               <div
                 key={item.title}

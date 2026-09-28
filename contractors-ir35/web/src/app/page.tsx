@@ -67,7 +67,7 @@ const testimonials = [
 const painPoints = [
   {
     title: "IR35 uncertainty",
-    body: "Your end client issued an SDS that says inside IR35. Or your agency told you the contract is outside. Or you just do not know. Getting this wrong costs you thousands in extra tax and penalties. We review your contract and actual working practices, not just the paperwork.",
+    body: "Your end client issued an SDS that says inside IR35. Or your agency told you the contract is outside. Or you just do not know. Getting this wrong costs you thousands in extra tax and penalties. A specialist reviews your contract and actual working practices, not just the paperwork.",
   },
   {
     title: "Limited company vs umbrella",
@@ -86,7 +86,7 @@ const painPoints = [
 const servicesOverview = [
   {
     title: "IR35 status review",
-    body: "We review your contract and working practices against the three key tests: control, substitution and mutuality of obligation. We tell you where you stand and what, if anything, changes.",
+    body: "A specialist reviews your contract and working practices against the three key tests: control, substitution and mutuality of obligation. You are told where you stand and what, if anything, changes.",
     href: "/services",
     Icon: FileCheck,
   },
@@ -352,10 +352,10 @@ export default function HomePage() {
             </h2>
           </div>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            The rules around IR35, off-payroll working, PSC dividends and contractor expenses are specific enough that a generalist accountant, however competent, will miss things. We see these issues every week across a large contractor client base, so we know where the risks and opportunities are.
+            The rules around IR35, off-payroll working, PSC dividends and contractor expenses are specific enough that a generalist accountant, however competent, will miss things. We see these issues every week, so we know where the risks and opportunities are.
           </p>
           <div className="mt-12 overflow-x-auto rounded-xl ring-1 ring-neutral-200/70">
-            <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
+            <table className="w-full text-left text-sm sm:text-base">
               <caption className="sr-only">How {siteConfig.name} handles typical contractor accounting areas</caption>
               <thead>
                 <tr className="bg-neutral-900 text-white">
@@ -554,7 +554,7 @@ export default function HomePage() {
               Practical IR35 and contractor tax guides.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
-              Plain English articles on IR35 status, off-payroll rules, limited company tax, expenses, dividends and pension planning. Written by specialist contractor accountants, not content agencies.
+              Plain English articles on IR35 status, off-payroll rules, limited company tax, expenses, dividends and pension planning. Written by our contractor-only editorial team, not content agencies.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Link href="/blog" className={btnPrimary}>
@@ -571,8 +571,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {niche.entity ? <EntityBlock {...niche.entity} className="bg-white py-12 sm:py-16 lg:py-20" /> : null}
 
       {/* ASK. Closing panel, `contained` so no dark band touches the dark
           footer; `ground="slate"` alternates against the white section above.
@@ -605,6 +603,8 @@ export default function HomePage() {
           }
         />
       </div>
+
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
     </>
   );
 }
