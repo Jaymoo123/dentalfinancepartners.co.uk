@@ -1,5 +1,5 @@
 ---
-title: "Your First 30 Days After Incorporating: the Contractor Setup Sequence"
+title: "Your First Outside IR35 Contract: the First 30 Days After Incorporating"
 slug: first-contract-outside-ir35-checklist
 date: '2026-06-12'
 updatedDate: "2026-09-27"
@@ -15,9 +15,9 @@ imageCredit:
   sourceUrl: "https://www.pexels.com/photo/laptop-computer-freelancer-web-design-12662874/"
 category: Contractor Accounting Basics
 canonical: "https://www.contractortaxaccountants.co.uk/blog/contractor-accounting-basics/first-contract-outside-ir35-checklist"
-metaTitle: "First 30 Days After Incorporating: Contractor Setup"
-metaDescription: "Setting up a limited company for contracting? The day 0 to 30 order: corporation tax in 3 months, PAYE before first payday, VAT, bank and first invoice."
-h1: "Your First 30 Days After Incorporating: the Contractor Setup Sequence"
+metaTitle: "First Outside IR35 Contract: Your First 30 Days"
+metaDescription: "First contract outside IR35 and a new company? The day 0 to 30 order: corporation tax in 3 months, PAYE before first payday, VAT, bank and first invoice."
+h1: "Your First Outside IR35 Contract: the First 30 Days After Incorporating"
 summary: "Incorporation takes a day. The month after it carries the deadlines that matter: tell HMRC the company is active within three months, register for PAYE before the first payday, settle the VAT question before the first invoice, and open the business bank account first because it is the slowest step of all."
 keyTakeaways:
   - "Tell HMRC the company is active within three months of starting your accounting period, register for PAYE before the first payday, and decide on VAT before the first invoice leaves."

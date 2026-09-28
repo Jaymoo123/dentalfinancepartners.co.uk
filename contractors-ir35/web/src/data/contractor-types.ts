@@ -1,6 +1,11 @@
 export interface ContractorType {
   slug: string;
   title: string;
+  /** Mid-sentence noun phrase for the audience, used where `title` would
+   * otherwise be lowercased into a sentence (same idea as Medical's
+   * `displayRoleLower`). Set only where the lowercased title reads wrong
+   * (acronym, proper noun, or a situation rather than a cohort). */
+  phrase?: string;
   headline: string;
   metaTitle: string;
   metaDescription: string;
@@ -17,6 +22,7 @@ export const contractorTypes: ContractorType[] = [
   {
     slug: "it-contractors",
     title: "IT Contractors",
+    phrase: "IT contractors",
     headline: "Accountants for IT contractors",
     metaTitle: "Accountants for IT Contractors | IR35 and PSC Tax",
     metaDescription:
@@ -383,6 +389,7 @@ export const contractorTypes: ContractorType[] = [
   {
     slug: "nhs-locum-doctors",
     title: "NHS Locum Doctors",
+    phrase: "NHS locum doctors",
     headline: "Specialist accountants for locum doctors and NHS contractors",
     metaTitle: "Accountants for Locum Doctors | NHS IR35 & PSC Tax Planning",
     metaDescription:
@@ -698,6 +705,7 @@ export const contractorTypes: ContractorType[] = [
   {
     slug: "first-contract-outside-ir35",
     title: "First Contract Outside IR35",
+    phrase: "a first contract outside IR35",
     headline: "Accountants for your first contract outside IR35",
     metaTitle: "Accountant for First Contract Outside IR35",
     metaDescription:
@@ -790,6 +798,7 @@ export const contractorTypes: ContractorType[] = [
   {
     slug: "ir35-contract-review",
     title: "IR35 Contract Review",
+    phrase: "an IR35 contract review",
     headline: "IR35 contract reviews for contractors before they sign",
     metaTitle: "IR35 Contract Review for UK Contractors | 2026/27",
     metaDescription:
@@ -892,6 +901,7 @@ export const contractorTypes: ContractorType[] = [
   {
     slug: "umbrella-to-limited-company",
     title: "Umbrella to Limited Company",
+    phrase: "a move from umbrella to a limited company",
     headline: "Moving from umbrella to your own limited company",
     metaTitle: "Umbrella to Limited Company Accountant | Setup Handled",
     metaDescription:
@@ -995,6 +1005,7 @@ export const contractorTypes: ContractorType[] = [
   {
     slug: "inside-ir35",
     title: "Contractors Inside IR35",
+    phrase: "contractors inside IR35",
     headline: "Specialist accountants for contractors caught inside IR35",
     metaTitle: "Inside IR35 Accountants | Keep, Close or Go Umbrella",
     metaDescription:

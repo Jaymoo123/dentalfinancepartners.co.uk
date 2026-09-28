@@ -19,7 +19,7 @@ canonical: "https://www.contractortaxaccountants.co.uk/blog/pension-and-dividend
 metaTitle: "PSC Pension Allowance 2026/27: £60,000 and Carry Forward"
 metaDescription: "How much your contractor company can put into your pension this year: the £60,000 annual allowance, three years of carry forward, the taper and the MPAA."
 h1: Pension Carry Forward for Contractors - The Three-Year Rule and High-Profit Planning
-summary: "Your company can pay up to £60,000 into your pension in 2026/27, plus any unused allowance from the previous three tax years, so up to £240,000 if you contributed nothing and were a scheme member throughout. The taper cuts the allowance above £260,000 of adjusted income, to a £10,000 floor."
+summary: "Your company can pay up to £60,000 into your pension in 2026/27, plus any unused allowance from the previous three tax years, so up to £240,000 if you contributed nothing and were a scheme member throughout. The taper cuts the allowance only where threshold income also exceeds £200,000, falling to a £10,000 floor."
 keyTakeaways:
   - "The annual allowance is £60,000 for 2026/27, and unused allowance carries forward from the previous three tax years, current year used first and then earliest year first."
   - "An employer contribution from your company is not capped by your salary, so a low-salary director keeps the full allowance, unlike a personal contribution capped at relevant UK earnings."

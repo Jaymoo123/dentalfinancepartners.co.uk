@@ -64,6 +64,7 @@ export default async function ContractorTypePage({
   const { slug } = await params;
   const type = getContractorType(slug);
   if (!type) notFound();
+  const phrase = type.phrase ?? type.title.toLowerCase();
 
   return (
     <>
@@ -157,7 +158,7 @@ export default async function ContractorTypePage({
           <div className="max-w-3xl">
             <p className={`${eyebrowLight} mb-4`}>The specific challenges</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-              What makes {type.title.toLowerCase()} accounting different.
+              What makes {phrase} different.
             </h2>
           </div>
           <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
@@ -206,7 +207,7 @@ export default async function ContractorTypePage({
           <div className="max-w-3xl">
             <p className={`${eyebrowLight} mb-4`}>How we help</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-              What we do for {type.title.toLowerCase()}.
+              What we do for {phrase}.
             </h2>
           </div>
           <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
@@ -243,7 +244,7 @@ export default async function ContractorTypePage({
         <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20">
           <div className={siteContainerLg}>
             <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-3xl">
-              Questions from {type.title.toLowerCase()}
+              Questions about {phrase}
             </h2>
             <div className="space-y-3 sm:space-y-4">
               {type.faqs.map((faq) => (
@@ -316,7 +317,7 @@ export default async function ContractorTypePage({
           contained
           ground="slate"
           eyebrow="Free call"
-          title={`Talk to a specialist ${type.title.toLowerCase()} accountant`}
+          title={`Talk to a contractor specialist about ${phrase}`}
           description="Book a free call. We will talk through your IR35 position, your structure and whether there is anything worth changing. No hard sell, no obligation."
           proofPoints={[]}
           formTitle="Book your free call"
