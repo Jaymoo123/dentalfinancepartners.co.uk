@@ -93,7 +93,7 @@ export function buildIcsForSlot(params: IcsSlotParams): string {
 
   const uid     = `${params.leadId}-${params.date}-${params.windowKey}@ecommercefinance.co.uk`;
   const summary = `Seller finance review call (${params.label})`;
-  const desc    = "An accountant will call you in this window. Nothing to prepare.";
+  const desc    = "A specialist will call you in this window. Nothing to prepare.";
 
   return [
     "BEGIN:VCALENDAR",
@@ -271,8 +271,8 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 preheader: "Booked for tomorrow. Reply if the time no longer works.",
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
-                  `Your free first call is tomorrow, ${windowPhrase}.`,
-                  "An accountant will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+                  `Your free review call is tomorrow, ${windowPhrase}.`,
+                  "A specialist will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
                   "If the time no longer works, just reply to this email and I will move it to one that does.",
                 ],
                 signoff: SIGNOFF,
@@ -318,8 +318,8 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
             if (sendRowId && lead.phone) {
               try {
                 const body =
-                  `Hi ${firstName}, your free first call is later today, ${label}. ` +
-                  `An accountant will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
+                  `Hi ${firstName}, your free review call is later today, ${label}. ` +
+                  `A specialist will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
 
                 const result = await sender.send({
                   channel: "sms",

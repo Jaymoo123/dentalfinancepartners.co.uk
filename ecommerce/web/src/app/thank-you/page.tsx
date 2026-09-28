@@ -134,7 +134,8 @@ export default async function ThankYouPage({
           <div className="mx-auto max-w-2xl">
             <CheckIcon />
             <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-              Thanks, that is confirmed. One of our accountants will contact you directly.
+              Thanks, that is confirmed. A specialist firm from our partner network will contact you
+              directly.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Link href="/" className={btnPrimary}>
@@ -161,7 +162,7 @@ export default async function ThankYouPage({
           {nurtureArmed ? (
             <>
               <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-                We have just sent you a message to arrange your free first call. Please check your
+                We have just sent you a message to arrange your free review call. Please check your
                 email and phone, and confirm to lock in your callback slot.
               </p>
               <p className="mt-4 text-base text-neutral-500">
@@ -244,7 +245,7 @@ export default async function ThankYouPage({
                 Ready to book a time that works for you?
               </p>
               <Link href="/contact" className={btnPrimary}>
-                Book your free first call
+                Book your free review
               </Link>
             </div>
           )}

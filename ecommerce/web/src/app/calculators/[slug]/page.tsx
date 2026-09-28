@@ -179,11 +179,14 @@ export default async function CalculatorPage({ params }: Props) {
         decline was that a heading and a line would have to be authored for the
         calculator family; they are authored here, once, off the tool's own name,
         and the tool's `ctaLabel` becomes the submit label so nothing it already
-        published is dropped. */}
+        published is dropped.
+        2026-09-28 late (owner ruling, wording reversal): the mount stays, the
+        agent-written eyebrow/title/description do not. The strings below are
+        this site's own published panel copy, taken from /services/[slug]. */}
     <LeadCTAPanel
-      eyebrow="Free first call, then a fixed fee in writing"
-      title={`Want a second pair of eyes on your ${tool.name.toLowerCase()} figure?`}
-      description="A calculator works from the numbers you put in it. Send us the ones you are unsure about and we will tell you whether the figure holds up, and what to do about it if it does not. We reply within 24 hours and one of our accountants comes back to you directly."
+      eyebrow=""
+      title="Speak to an ecommerce tax specialist."
+      description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       formTitle={tool.ctaLabel}
       form={<LeadForm />}

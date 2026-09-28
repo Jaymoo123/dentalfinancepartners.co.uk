@@ -124,11 +124,11 @@ export default function ServicesIndexPage() {
         rendered zero forms. The earlier decline was "writing a CTA heading and
         line is authoring copy"; authoring it is exactly what this pass is for. */}
     <LeadCTAPanel
-      eyebrow="Free first call, then a fixed fee in writing"
-      title="Tell us where the accounts stand and we will take it from there."
-      description="Whichever of these you came for, the first call is the same: you tell us how you sell, we tell you what needs doing and what it will cost. We reply within 24 hours and one of our accountants comes back to you directly."
+      eyebrow=""
+      title="Speak to an ecommerce tax specialist."
+      description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
-      formTitle="Book your free first call"
+      formTitle=""
       form={<LeadForm />}
     />
   </>);

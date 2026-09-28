@@ -113,8 +113,8 @@ export default function DetailsForm({
       <div className="border-2 border-[var(--brand-primary)] bg-amber-50 p-6 text-center">
         <p className="text-lg font-bold text-neutral-900">Thank you, that is everything we need</p>
         <p className="mt-2 text-base text-neutral-600">
-          One of our accountants will be in touch shortly. If you would like to pick a time that
-          suits you, you can book a callback below.
+          A specialist will be in touch shortly. If you would like to pick a time that suits
+          you, you can book a callback below.
         </p>
         {bookingToken && (
           <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
@@ -212,7 +212,7 @@ export default function DetailsForm({
       )}
 
       <p className="mt-3 text-xs text-neutral-500">
-        We only use this to arrange your first call. See our{" "}
+        We only use this to arrange your free review call. See our{" "}
         <a
           href="/privacy-policy"
           target="_blank"

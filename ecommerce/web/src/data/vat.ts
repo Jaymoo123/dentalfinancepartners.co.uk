@@ -1,9 +1,5 @@
 export interface VatPage {
   slug: string; title: string; headline: string; metaTitle: string; metaDescription: string;
-  /** Bespoke closing line for the foot LeadCTAPanel, one per VAT page
-   *  (2026-09-28 parity phase 0): no sentence shared across pages. Sonnet-
-   *  written; flagged for the Opus read per the brief. */
-  closer: string;
   intro: string; stats: Array<{ value: string; label: string }>;
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
@@ -14,7 +10,6 @@ export const vatPages: VatPage[] = [
   {
     slug: "deemed-supplier-establishment",
     title: "Deemed Supplier and Establishment",
-    closer: "Tell us where your company, your stock and your people actually are, and we will tell you whether the marketplace is accounting for the VAT or you are. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "Deemed supplier rules and UK establishment status: the VAT question every marketplace seller must answer first",
     metaTitle: "Deemed Supplier VAT Rules UK | Marketplace Establishment",
     metaDescription: "Who accounts for UK VAT on marketplace sales depends on establishment status. Deemed supplier rules, the UK-shell trap, and the £135 interaction.",
@@ -95,7 +90,6 @@ export const vatPages: VatPage[] = [
   {
     slug: "vat-on-marketplace-fees",
     title: "VAT on Marketplace Fees",
-    closer: "Send us a fee invoice from your marketplace and we will tell you whether the reverse charge applies and whether you have been paying VAT on it twice. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "VAT on Amazon, eBay and platform fees: reverse charge, the sub-threshold trap, and what goes on your return",
     metaTitle: "VAT on Amazon and Marketplace Fees UK | Reverse Charge",
     metaDescription: "UK VAT on Amazon, eBay and platform fees. Reverse charge, the 2024 Amazon billing change, and why overseas fee value counts toward your £90,000 threshold.",
@@ -176,7 +170,6 @@ export const vatPages: VatPage[] = [
   {
     slug: "135-import-rule",
     title: "The £135 Import Rule",
-    closer: "Tell us the value and the origin of a typical consignment and we will work out where the VAT and the duty fall, and who is liable for each. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "The £135 consignment rule: who accounts for UK VAT, and when the obligation falls on the seller",
     metaTitle: "£135 Import Rule UK VAT | Dropshipping VAT Explained",
     metaDescription: "The UK £135 import rule for online sellers and dropshippers. Supply VAT at point of sale, marketplace rules, and treatment of goods above £135.",
@@ -253,7 +246,6 @@ export const vatPages: VatPage[] = [
   {
     slug: "ioss-vs-oss",
     title: "IOSS vs OSS",
-    closer: "Tell us where you ship from and where your customers are, and we will run the numbers on both schemes before you register for either. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "IOSS and OSS for UK sellers: which scheme applies, and the GB vs NI split that rival content gets wrong",
     metaTitle: "IOSS vs OSS for UK Sellers | EU VAT After Brexit",
     metaDescription: "IOSS and OSS explained for UK ecommerce sellers. GB sellers cannot use OSS. IOSS needs an EU intermediary. Northern Ireland has its own route.",
@@ -334,7 +326,6 @@ export const vatPages: VatPage[] = [
   {
     slug: "postponed-vat-margin-scheme",
     title: "Postponed VAT and Margin Scheme",
-    closer: "Tell us what you import and whether any of your stock is second-hand, and we will tell you which scheme leaves more cash in the business. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "Postponed import VAT accounting for stock importers and the VAT margin scheme for second-hand resellers",
     metaTitle: "Postponed VAT Accounting UK | VAT Margin Scheme Resellers",
     metaDescription: "Postponed VAT accounting for importers: declare and recover import VAT on the same return. Margin scheme for resellers: VAT on margin, not full price.",

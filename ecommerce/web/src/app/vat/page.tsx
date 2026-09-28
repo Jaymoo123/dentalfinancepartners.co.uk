@@ -97,11 +97,11 @@ export default function VatIndexPage() {
         rendered zero forms. The earlier decline was "writing a CTA heading and
         line is authoring copy"; authoring it is exactly what this pass is for. */}
     <LeadCTAPanel
-      eyebrow="Free first call, then a fixed fee in writing"
-      title="VAT is where online sellers get caught out."
-      description="Deemed supplier rules, marketplace fees, import thresholds and the EU schemes all interact, and getting one of them wrong is usually expensive. Tell us how your sales are structured and we will tell you where you stand. We reply within 24 hours and one of our accountants comes back to you directly."
+      eyebrow=""
+      title="Speak to an ecommerce VAT specialist."
+      description="Tell us about your VAT situation and we will reply within 24 hours."
       proofPoints={[]}
-      formTitle="Book your free first call"
+      formTitle=""
       form={<LeadForm />}
     />
   </>);

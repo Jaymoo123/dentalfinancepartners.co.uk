@@ -18,7 +18,7 @@ import DetailsForm from "@/components/forms/DetailsForm";
 
 export const metadata: Metadata = {
   title: "Complete your details",
-  description: "Add the last detail we need to arrange your free first call.",
+  description: "Add the last detail we need to arrange your free review call.",
   robots: { index: false, follow: false },
 };
 
@@ -108,9 +108,9 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base leading-relaxed text-neutral-600">
-              We have everything we need. One of our accountants will contact you directly about
-              your enquiry. If you would like to pick a time that suits you, you can book a callback
-              below.
+              We have everything we need. A specialist firm from our partner network may contact you
+              directly about your enquiry. If you would like to pick a time that suits you, you can
+              book a callback below.
             </p>
             {bookingToken && (
               <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-6`}>
@@ -132,8 +132,8 @@ export default async function CompletePage({
           same empty backdrop slot, same 11.90:1 on-dark measurements. */}
       <SlimHero eyebrow="Your enquiry" title="Complete your details">
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-          Add the last detail we need and one of our accountants will be in touch to arrange your
-          free first call, and there is no obligation.
+          Add the last detail we need and a specialist firm from our partner network will be in
+          touch to arrange your free review call, no obligation.
         </p>
       </SlimHero>
 

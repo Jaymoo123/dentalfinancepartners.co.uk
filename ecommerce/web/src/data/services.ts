@@ -1,9 +1,5 @@
 export interface EcommerceService {
   slug: string; title: string; headline: string; metaTitle: string; metaDescription: string;
-  /** Bespoke closing line for the foot LeadCTAPanel, one per service
-   *  (2026-09-28 parity phase 0): no sentence shared across pages. Sonnet-
-   *  written; flagged for the Opus read per the brief. */
-  closer: string;
   intro: string; stats: Array<{ value: string; label: string }>;
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
@@ -14,7 +10,6 @@ export const ecommerceServices: EcommerceService[] = [
   {
     slug: "ecommerce-vat-compliance",
     title: "Ecommerce VAT Compliance",
-    closer: "Tell us which countries you hold stock in and we will tell you where you need to be registered, then get you registered. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "VAT compliance for UK online sellers: registration, schemes and marketplace obligations",
     metaTitle: "Ecommerce VAT Compliance UK | Online Seller VAT",
     metaDescription: "VAT compliance for UK ecommerce sellers. Registration, the £90,000 gross-sales threshold, flat-rate scheme pitfalls and cross-border obligations.",
@@ -74,7 +69,6 @@ export const ecommerceServices: EcommerceService[] = [
   {
     slug: "settlement-payout-reconciliation",
     title: "Settlement and Payout Reconciliation",
-    closer: "Send us a month of platform settlements and your bank statements, and we will hand you back books where payouts, fees and refunds all tie up. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "Amazon settlement and Shopify payout reconciliation for accurate accounts",
     metaTitle: "Amazon Settlement Reconciliation UK | Shopify Payout Accounts",
     metaDescription: "Amazon settlement report reconciliation and Shopify payout bookkeeping for UK sellers. Accurate accounts that separate fees, COGS and true trading revenue.",
@@ -130,7 +124,6 @@ export const ecommerceServices: EcommerceService[] = [
   {
     slug: "selling-into-the-eu",
     title: "Selling into the EU",
-    closer: "Tell us how your EU orders are fulfilled and we will tell you whether IOSS, OSS or local registration is the cheaper way to stay compliant. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "EU VAT, IOSS and OSS for UK sellers shipping to European customers",
     metaTitle: "Selling into the EU from UK | IOSS OSS VAT Compliance",
     metaDescription: "EU VAT compliance for UK online sellers. IOSS registration, OSS for NI sellers, destination-country VAT obligations and selling into the EU after Brexit.",
@@ -186,7 +179,6 @@ export const ecommerceServices: EcommerceService[] = [
   {
     slug: "hmrc-letter-online-sales",
     title: "HMRC Letter About Online Sales",
-    closer: "Send us the letter and your platform sales figures and we will draft the response, then deal with HMRC on your behalf. We reply within 24 hours and one of our accountants comes back to you directly.",
     headline: "Help responding to an HMRC letter about your online selling income",
     metaTitle: "HMRC Letter About Online Sales UK | Platform Reporting Response",
     metaDescription: "Help responding to HMRC letters about eBay, Vinted, Amazon and Etsy sales. Platform reporting rules, trading status assessment and voluntary disclosure.",
