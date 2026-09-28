@@ -66,7 +66,7 @@ function sliderBounds(field: CalcField): { min: number; max: number; step: numbe
  * ------------------------------------------------------------------------- */
 
 const inputCls =
-  "w-full min-h-10 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--ink)] focus:border-[var(--gold)] focus:outline-none focus:ring-2 focus:ring-[var(--gold)]/25";
+  "w-full min-h-10 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--ink)] focus:border-[var(--gold)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--navy)] focus:ring-2 focus:ring-[var(--gold)]/25";
 
 function NumberField({
   field,

@@ -54,7 +54,7 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Medical token-safe input class (no --primary, no orange-*, no emerald-*)
 const inputClass =
-  "mt-1 w-full min-h-11 touch-manipulation rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-2.5 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25 transition-colors";
+  "mt-1 w-full min-h-11 touch-manipulation rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-2.5 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--copper)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)] focus:ring-2 focus:ring-[var(--copper)]/25 transition-colors";
 
 export function ResourceGate({
   topic,

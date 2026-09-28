@@ -420,7 +420,7 @@ export function MedicalHealthCheckWizard() {
                 value={answers.name}
                 onChange={(e) => setAnswers({ ...answers, name: e.target.value })}
                 placeholder="Dr Sarah Ahmed"
-                className="w-full min-h-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-base text-[var(--ink)] transition-all focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/20"
+                className="w-full min-h-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-base text-[var(--ink)] transition-all focus:border-[var(--copper)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)] focus:ring-2 focus:ring-[var(--copper)]/20"
               />
             </div>
             <div>
@@ -430,7 +430,7 @@ export function MedicalHealthCheckWizard() {
                 value={answers.email}
                 onChange={(e) => setAnswers({ ...answers, email: e.target.value })}
                 placeholder="sarah@example.com"
-                className="w-full min-h-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-base text-[var(--ink)] transition-all focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/20"
+                className="w-full min-h-12 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-base text-[var(--ink)] transition-all focus:border-[var(--copper)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)] focus:ring-2 focus:ring-[var(--copper)]/20"
               />
             </div>
             {/* LD-03: honeypot -- visually hidden, bots fill it, humans never reach it */}

@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       "Send your GP accounting or medical tax enquiry. One of our medical accountants who works with doctors reads it and comes back to you.",
     url: `${siteConfig.url}/contact`,
     type: "website",
+    images: [`${siteConfig.url}/brand/og-card.png`],
   },
   twitter: {
     card: "summary_large_image",

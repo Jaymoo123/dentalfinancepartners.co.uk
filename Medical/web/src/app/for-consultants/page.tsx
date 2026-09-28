@@ -132,7 +132,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Speak to a consultant specialist",
   ctaBody:
-    "Send your position and we will match it to one of our medical accountants who works with consultants. The first call covers your income structure, your NHS pension position, and whether your private practice arrangement is tax-efficient. Scope and fees are agreed with you, and enquiring commits you to nothing.",
+    "Send your position and one of our medical accountants who works with consultants reads it before the call. That first call covers your income structure, your NHS pension position, and whether your private practice arrangement is costing you more tax than it needs to. Scope and fees are agreed with you, and enquiring commits you to nothing.",
   calculatorTabs: ["annualallowance", "incorporation"],
   // Literal /calculators/<slug> hrefs. The tabs above them render buttons, not
   // anchors, and this route fails its link floor by one without BOTH of the

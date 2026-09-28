@@ -10,7 +10,7 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 const fieldClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--copper)] focus:outline-none focus:ring-2 focus:ring-[var(--copper)]/25";
+  "mt-1 w-full min-h-12 touch-manipulation rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-3 text-base text-[var(--ink)] shadow-sm focus:border-[var(--copper)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--copper)] focus:ring-2 focus:ring-[var(--copper)]/25";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
