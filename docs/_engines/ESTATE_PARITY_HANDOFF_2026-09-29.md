@@ -3,9 +3,11 @@
 ## The prompt to paste
 
 > Read `CLAUDE.md`, load the `standard_terms` skill, run ponytail full and caveman ultra. Then read
-> `docs/_engines/ESTATE_PARITY_HANDOFF_2026-09-29.md` top to bottom and do what section 3 says, in
-> order, stopping at every owner gate it names. Nothing deploys and nothing is pushed without the
-> owner saying so in that turn. Report agents used after every fan-out.
+> `docs/_engines/ESTATE_PARITY_HANDOFF_2026-09-29.md` top to bottom. Your job is section 3: first
+> an independent recheck of what phase 0 did on every site, on local builds, then phase 1 in the
+> order given, stopping at every owner gate. **Do not deploy, push, submit to IndexNow or write
+> production flags; the owner has parked the deploy.** Price every fan-out before launching it and
+> report agents used after.
 
 ## 1. Where things stand
 
@@ -27,11 +29,12 @@ had"**. Every rewritten sentence was put back to its pre-phase-0 text; every mec
 stayed. The 2026-09-28 positioning ruling (the brand is the firm) still stands as policy, but it
 is to be executed later by a careful, owner-led pass, never by sweep.
 
-State of the tree at handoff: all phase 0 commits plus the wording reversal are on local `main`.
-Every site built clean before the reversal; the manager rebuilds after it. **`git push` is refused
-by the session's permission classifier; the owner pushes with `! git push origin main`.** Nothing
-is deployed. Production: seven sites on the 2026-09-28 build (Property, Medical, care, charities,
-contractors-ir35, Dentists, generalist), ten on the 2026-09-23 build or older.
+State of the tree at handoff: all phase 0 commits plus the wording reversal are on local `main`,
+61 commits ahead of origin, every site rebuilt clean after the reversal. **Nothing is pushed
+(the session classifier refuses `git push`; the owner runs `! git push origin main` when he wants
+CI) and nothing is deployed; the owner has parked the deploy.** Production: seven sites on the
+2026-09-28 build (Property, Medical, care, charities, contractors-ir35, Dentists, generalist), ten
+on the 2026-09-23 build or older.
 
 Per-site evidence: `docs/<site>/PHASE0_2026-09-28.md` (builder section, Opus read section,
 wording-reverted section) and `docs/<site>/PARITY_RESEARCH_2026-09-28.md`. digital-agency's docs
@@ -45,7 +48,8 @@ live in `docs/agency/`.
 - Never run 17 `next build`s in parallel; one at a time (about 20 minutes for all 17).
 - A rendering check needs the gov.uk control at a real 390 emulation (`puppeteer-core`,
   `page.emulate`, `isMobile: true`); Edge `--window-size` lies.
-- A mechanical text sweep breaks copy ("Ask a specialist" became "Ask we"). No sweeps on prose.
+- A mechanical text sweep breaks copy ("Ask a specialist" became "Ask we"). No sweeps on prose,
+  and after the owner's ruling, no agent-written sentences on existing pages at all.
 - The auto-mode classifier refuses `git push` and prod `site_flags` writes from both shells, and
   `vercel deploy` from Bash but not from PowerShell.
 - Vercel `sensitive` environment variables are write-only by API; only the owner can copy them
@@ -56,57 +60,62 @@ live in `docs/agency/`.
 
 ## 3. What to do, in order
 
-### 3.1 Confirm the push and CI
+**The owner has parked the deploy (2026-09-28 late: "I don't want to deploy yet").** Nothing in
+this section touches production. Appendix A holds the deploy runbook for the day he says go.
 
-`git log --oneline origin/main -1` must match local `main`. If not, ask the owner to run
-`! git push origin main`. Then `gh run list --limit 20`; own every red run (fix, or explain why it
-is not a defect) and tell the owner how many red runs his inbox received. The "Content Quality
-Check" workflow was already red ten times in the week before this work; its cause was not opened.
+### 3.1 Independent recheck of phase 0, on local builds (owner gate: price it first)
 
-### 3.2 Deploy round (owner gate: "deploy")
+Purpose: a second, fresh pair of eyes over what 20 builders, 4 readers and 4 reverters did, before
+anything ships. Report first, fix second. About 10 agents (5 Sonnet inventory, one per 3 to 4
+sites; 4 Opus readers, one per site group; 1 Opus cross-site summariser).
 
-From a clean worktree at the pushed SHA, short path (`git worktree add --detach C:/dep <sha>`),
-`python scripts/check_dependency_closure.py` first, then per project from PowerShell:
-`$env:VERCEL_PROJECT_ID="<id>"; $env:VERCEL_ORG_ID="team_XF9WAygZX7SGk9Fo4tOAnihH"; vercel deploy --prod --yes`
-(project ids: memory `vercel_cli_deploy_workflow` and `ESTATE_OPS_READ_2026-09-28.md` section 2).
-Order: Property, Medical, contractors-ir35, care, charities, then the twelve. Verify each by curl
-(200 on `/`, `/robots.txt`, `/llms.txt`, `/llms-full.txt`, `/sitemap.xml`, `/ads.txt`; one form on
-the homepage and one audience page; canonical self-referencing on `/services`). Remove the
-worktree after.
+1. Build state: `git log --oneline -3`, `git status --short` (expect only `invoicing/` and the
+   known untracked leftovers). Every site has a `.next` from the last serialised build; if in
+   doubt rebuild ONE site at a time, never in parallel.
+2. Per site, from `<site>/web`: `npx next start -p <port>` in the background (unique port per
+   site, kill only the PID you started), then read the rendered pages with `puppeteer-core`
+   (repo root; Chromium under `/c/Users/user/AppData/Local/ms-playwright/`) at 1280 and a real
+   390 emulation with the gov.uk control first.
+3. Check, with numbers, against `ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md` sections 3 to 6
+   (mechanical) and `ESTATE_PARITY_WORDING_REVERT_2026-09-28.md` (wording):
+   - one lead form on home, /about, /services and each `/services/*`, every segment page, one
+     blog post, /contact; one form directly under each calculator result, no gate or modal;
+   - header CTA visible at 1280, hidden at 390; scrollWidth 390 on every page; no raw markup
+     as text; focus ring visible after Tab on the first input of every form and calculator;
+     primary CTA contrast at or above 4.5:1 computed;
+   - `rel=canonical` self-referencing on hubs and detail pages; sitemap dates real or omitted;
+     Organization node from the shared builder with `parentOrganization`; Service, FAQPage and
+     BreadcrumbList on segment and service pages; `/llms.txt` with UTM tags; `/ads.txt` 200;
+     `og:image` 200;
+   - `lead-nurture.ts` `delayHours` = `0,0,4,20,24,48,72,96`;
+   - WORDING: the site's prose is its pre-phase-0 prose. Proof = the defect-string grep from the
+     revert doc returns the same count as `git show 8e1043d0` for the same files, AND a read of
+     the rendered pages finds no sentence that reads machine-written or out of the site's voice
+     (the three known exceptions: wills-probate pillar titles, divorce `/services` intro, the two
+     replaced `llms.txt` files). Any surviving agent sentence is a finding.
+   - the three mechanical repairs reverter A made on Property (`about/page.tsx:171`,
+     `calculators/page.tsx:158`, `making-tax-digital-landlords/page.tsx:849`) render with a
+     ground behind the text.
+4. Output: `docs/<site>/PHASE0_RECHECK_2026-09-29.md` per site (numbers table, findings with
+   severity and file:line, PASS/FAIL per check) and `docs/_engines/PHASE0_RECHECK_2026-09-29.md`
+   (verdict in three lines, findings ranked, what is safe to deploy, what is not). The owner
+   reads the estate file only.
+5. Fix round (owner gate): only what the recheck found, one agent per site, then tsc, vitest,
+   serialised rebuild, per-site commits by the manager. No wording rewrites; a wording defect is
+   fixed by restoring the base text, never by writing a new sentence.
 
-### 3.3 The two silent projects (same round)
+### 3.2 Phase 1, each on its own owner go (plan section 4), after the recheck is clean
 
-Before deploying wills-probate and divorce-finances: `set -a; source .env; set +a; python
-scripts/_oneoff/vercel_env_copy_silent_sites.py` (dry run), then `--apply`. It copies the five
-API-readable keys from charities and derives `NEXT_PUBLIC_SITE_URL`; it does NOT create
-`ADMIN_DASHBOARD_KEY`, `CRON_SECRET`, `LEAD_NURTURE_TOKEN_SECRET` (generate each with
-`python -c "import secrets; print(secrets.token_hex(32))"` and POST them per project, production
-and preview). The 13 `sensitive` keys (Resend, Twilio, `LEAD_SERVICE_*`, nurture flags) are the
-owner's dashboard paste; the full list and per-key rule are in
-`VERCEL_ENV_PREP_SILENT_SITES_2026-09-28.md`. Deploy both after the variables exist. Then verify
-with one real visit and `select count(*) from web_sessions where site_key in ('wills-probate',
-'divorce-finances')`. Do not re-read estate data on these two for seven days; earlier numbers are
-structurally zero.
-
-### 3.4 Flag and post-deploy checks
-
-`calc_pdf_offer` off in production `site_flags` (SQL in the leads-250 plan's deploy block; the
-classifier refused it from this session, so the owner may run it in the SQL editor). Then an
-independent live check by fresh agents, report only, about 10 agents (5 Sonnet inventory, 5 Opus
-readers), the same shape as `LEAD_KIT_FULL_CHECK_BRIEF_2026-09-28.md`: every page type on every
-site, rendered at 1280 and real 390, forms, canonicals, contrast, rings, schema, and one Opus
-cross-site summary the owner reads. Owner gate before launching it (price it).
-
-### 3.5 Phase 1, each on its own owner go (plan section 4)
-
-1. Design port by damage: startups-tech (it has no header or footer component at all), hospitality,
-   pharmacies, then care, digital-agency, then wills-probate and divorce-finances as one package.
-   `DESIGN_PORT_PLAYBOOK.md` from the STOP block; one site per wave; budget a mop-up package.
+1. Design port by damage: startups-tech (it has no header or footer component at all),
+   hospitality, pharmacies, then care, digital-agency, then wills-probate and divorce-finances
+   as one package. `DESIGN_PORT_PLAYBOOK.md` from the STOP block; one site per wave; budget a
+   mop-up package; port the structure and the kit, never rewrite prose.
 2. Segment-page content chain on all sites, staged: Medical, contractors-ir35, care, charities
    (top-ups from their coverage maps), then Solicitors, generalist (needs a `/for/[slug]` route
    built first), Dentists, then the seven small sites, then the legal pair. Coverage map first
    where none exists (11 sites); the owner approves each site's page count before launch; Opus
-   writers, two QA tracks, sweep, Sonnet integrator; about 52 runs per 15 pages.
+   writers, two QA tracks, sweep, Sonnet integrator; about 52 runs per 15 pages. New pages are
+   new content, which is allowed; existing prose is not touched.
 3. Content waves on Dentists, digital-agency, crypto, startups-tech (funded). Hospitality,
    pharmacies and ecommerce keep post dates in the database; date them before classing them.
 4. Chat widget and intent engine on the seven sites without them (care, charities, crypto,
@@ -114,19 +123,22 @@ cross-site summary the owner reads. Owner gate before launching it (price it).
 5. The wording pass: owner-led, careful, one site at a time, starting from the readouts' quoted
    sentences. Not a sweep. Not before the owner asks.
 
+Each phase 1 item is built local-first, committed per site by the manager, and reported in
+`docs/<site>/STATE.md` and the plan log. Deploy stays parked until the owner says otherwise.
+
 ## 4. Owner inputs still open
 
 - 13 GA4 properties to create, or the token re-authorised with the edit scope
   (`ESTATE_PLUMBING_2026-09-28.md` lists display names and stream URLs).
 - A real phone number for ecommerce (`+44 20 0000 0000` is live) and its missing
   `public/brand/logo.png`.
-- The 13 sensitive variables on the two legal projects (section 3.3).
-- AdSense console: add and approve each of the 15 newly wired domains; `ads.txt` serves after
-  deploy.
-- Decision 2 follow-through: construction-cis and the other pool-model sites now say "our
-  accountants" on the front (five sites already did) while the privacy text accurately describes
-  routing to up to six firms. The words will match the model only when the owner lines up the
-  servicing side or runs the wording pass.
+- The 13 sensitive variables on the two legal projects (Appendix A step 3).
+- AdSense console: add and approve each of the 15 newly wired domains once deployed.
+- Decision 2 follow-through: the front-of-site voice and the privacy text (routing to up to six
+  firms) will only match once the owner lines up the servicing side or runs the wording pass.
+- Two judgement calls from the reversal to confirm or strike: wills-probate pillar titles kept as
+  "Estate Planning Specialists" (the base said "Probate Compass", a stale brand); divorce
+  `/services` keeps a real intro instead of "Full service detail is being built now."
 
 ## 5. Where everything lives
 
@@ -134,3 +146,30 @@ cross-site summary the owner reads. Owner gate before launching it (price it).
 and silent-sites and spot-check reports, wording revert, this handoff. `docs/<site>/`: research,
 phase 0 report, STATE.md (dated 2026-09-28 entries). Memory: `leads_250_programme`,
 `wills_probate_build_state`, `divorce_finances_build_state` (corrected to LIVE).
+
+## Appendix A. Deploy runbook, for the day the owner says go
+
+1. Push: `git log --oneline origin/main -1` must match local `main`; the session classifier
+   refuses `git push`, so the owner runs `! git push origin main`. Then `gh run list --limit 20`;
+   own every red run and tell the owner how many his inbox received (the "Content Quality Check"
+   workflow was already red ten times in the week before this work).
+2. From a clean worktree at the pushed SHA, short path (`git worktree add --detach C:/dep <sha>`),
+   `python scripts/check_dependency_closure.py`, then per project from PowerShell:
+   `$env:VERCEL_PROJECT_ID="<id>"; $env:VERCEL_ORG_ID="team_XF9WAygZX7SGk9Fo4tOAnihH"; vercel deploy --prod --yes`
+   (ids: memory `vercel_cli_deploy_workflow`, `ESTATE_OPS_READ_2026-09-28.md` section 2). Order:
+   Property, Medical, contractors-ir35, care, charities, then the twelve. Verify each by curl (200
+   on `/`, `/robots.txt`, `/llms.txt`, `/llms-full.txt`, `/sitemap.xml`, `/ads.txt`; one form on
+   the homepage and one audience page; canonical self-referencing on `/services`). Remove the
+   worktree after.
+3. The two silent projects, before their deploy: `set -a; source .env; set +a; python
+   scripts/_oneoff/vercel_env_copy_silent_sites.py` (dry run), then `--apply`; generate
+   `ADMIN_DASHBOARD_KEY`, `CRON_SECRET`, `LEAD_NURTURE_TOKEN_SECRET` per project with
+   `python -c "import secrets; print(secrets.token_hex(32))"` and POST them (production and
+   preview). The 13 `sensitive` keys are the owner's dashboard paste
+   (`VERCEL_ENV_PREP_SILENT_SITES_2026-09-28.md`). Verify with one real visit and
+   `select count(*) from web_sessions where site_key in ('wills-probate','divorce-finances')`;
+   do not re-read estate data on these two for seven days.
+4. `calc_pdf_offer` off in production `site_flags` (SQL in the leads-250 plan's deploy block; the
+   classifier refused it from a session, the owner may run it in the SQL editor).
+5. An independent live check by fresh agents afterwards, report only, about 10 agents, the same
+   shape as 3.1 but against the live domains.
