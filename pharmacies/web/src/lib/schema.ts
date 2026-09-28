@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { buildOrganization, buildService } from "@accounting-network/web-shared/schema";
 import type { HowToStep } from "@/types/blog";
 
 export function buildOgImageUrl(title: string, category?: string) {
@@ -8,40 +9,47 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
+// Ported to the shared builder (packages/web-shared/schema/organization.ts,
+// Medical's lib/organization-schema.ts is the reference pattern). Every field
+// the hand-rolled version carried survives: name, legalName, alternateName,
+// url, logo, description, address, areaServed, priceRange, knowsAbout, sameAs.
 export function buildOrganizationJsonLd() {
   const office = siteConfig.company.registeredOffice;
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", niche.seo.organization_type],
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    legalName: "Ashfield Trading Ltd",
-    alternateName: siteConfig.company.tradingName,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    description: siteConfig.description,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: `${office.line1}, ${office.line2}`,
-      addressLocality: office.city,
-      postalCode: office.postcode,
-      addressCountry: "GB",
-    },
-    areaServed: niche.seo.service_areas,
-    priceRange: "££",
-    knowsAbout: [
-      "pharmacy acquisition",
-      "NHS contract economics",
-      "FP34 cash-flow planning",
-      "VAT zero-rating on NHS dispensing",
-      "pharmacy goodwill valuation",
-      "Business Asset Disposal Relief",
-      "Drug Tariff margin analysis",
-    ],
-    sameAs: [
-      "https://find-and-update.company-information.service.gov.uk/company/16358723",
-    ],
-  });
+  return JSON.stringify(
+    buildOrganization({
+      siteUrl: siteConfig.url,
+      siteName: siteConfig.name,
+      legalName: "Ashfield Trading Ltd",
+      alternateName: siteConfig.company.tradingName,
+      description: niche.entity?.firm ?? siteConfig.description,
+      tagline: siteConfig.tagline,
+      organizationType: niche.seo.organization_type,
+      publisherLogoUrl: siteConfig.publisherLogoUrl,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: `${office.line1}, ${office.line2}`,
+        addressLocality: office.city,
+        postalCode: office.postcode,
+        addressCountry: "GB",
+      },
+      areaServedCountry: "United Kingdom",
+      priceRange: "££",
+      knowsAbout: [
+        "pharmacy acquisition",
+        "NHS contract economics",
+        "FP34 cash-flow planning",
+        "VAT zero-rating on NHS dispensing",
+        "pharmacy goodwill valuation",
+        "Business Asset Disposal Relief",
+        "Drug Tariff margin analysis",
+      ],
+      sameAs: ["https://find-and-update.company-information.service.gov.uk/company/16358723"],
+      parentOrganization: {
+        name: siteConfig.company.legalName,
+        companyNumber: siteConfig.company.number,
+      },
+    }),
+  );
 }
 
 export function buildWebsiteJsonLd() {
@@ -67,6 +75,15 @@ export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
     })),
   });
+}
+
+export function buildServiceJsonLd(opts: { name: string; description: string; url: string }) {
+  return JSON.stringify(
+    buildService(
+      { name: opts.name, description: opts.description, url: opts.url, serviceType: "AccountingService" },
+      { siteUrl: siteConfig.url, siteName: siteConfig.name, publisherLogoUrl: siteConfig.publisherLogoUrl },
+    ),
+  );
 }
 
 export function buildBreadcrumbJsonLd(items: { label: string; href?: string }[]) {

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!tool) return {};
   const canonical = `${site.url}/calculators/${tool.slug}`;
   return {
-    title: tool.metaTitle,
+    title: { absolute: tool.metaTitle },
     description: tool.metaDescription,
     alternates: { canonical },
     openGraph: { title: tool.metaTitle, description: tool.oneLiner, url: canonical, type: "website" },

@@ -81,3 +81,63 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - [ ] Real phone number into `pharmacies/niche.config.json` -> contact.phone (placeholder ships as +44 20 0000 0000)
 - [ ] Brand assets: `public/brand/primary-logo.png` + `public/brand/icon-alt.png` (OG image route depends on them)
 - [ ] Resend routing ONLY if a partner firm is signed (partner CC only on partnered sites; otherwise leads route to owner inbox)
+
+## 2026-09-28 phase 0 parity
+
+Built against `docs/_engines/ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md` and this site's
+`PARITY_RESEARCH_2026-09-28.md`. Not deployed; local-only, awaiting the manager's serialised
+build + owner deploy word. Full detail: `docs/pharmacies/PHASE0_2026-09-28.md`.
+
+- Positioning: post-submit `/complete` and `/thank-you` copy, and every "a specialist will..."
+  lead-nurture/booking string, now speak as the firm ("one of our accountants"). Privacy policy's
+  data-sharing disclosure (sections 3-5, 7) and the `leadConsentText`/calculator consent sentence
+  are UNCHANGED: this site genuinely operates a multi-firm data-sharing pool on the backend
+  (`lib/leads/handoff.ts`, `contactability.ts`, the 3+3=6-recipient compliance cap), so that
+  wording is accurate legal disclosure, not marketing caveat, and was left alone per the brief's
+  exemption for the data-sharing paragraph and consent sentence.
+- Added `entity` key to `niche.config.json` (Property's shape, pharmacy wording).
+- `/for/*` and `/services/*` pages: `item.body` and `faq.answer` now render via
+  `dangerouslySetInnerHTML` instead of as literal text, fixing the raw `<a href=...>` markup
+  visible on all 5 segment pages. `/for/locum-pharmacists` no longer skips the lead form
+  (`noLeadForm: true` removed from `pharmacies-hubs.ts`).
+- Added `SiteHeader` (CTA visible ≥1280, hidden <1024, nav ≥1024) and `StickyCTA` (no intent
+  dependency, generic `niche.config.json` `cta` copy), mounted in root `layout.tsx` for every page.
+  Full mega-nav port is NOT done (out of phase-0 scope per the brief: "chat and intent are phase 1").
+- Nurture `delayHours` was cumulative totals in a gap field; reset to Property's real gaps
+  `0,0,4,20,24,48,72,96`. The separate 4-step `DETAIL_CAPTURE_STEPS` array was left alone
+  (different shape, not named in the research finding).
+- Fixed the double-full-stop h1 (`pharmacies-services.ts` headline) and the double-brand
+  calculator title (`title: tool.metaTitle` -> `{ absolute: tool.metaTitle }`).
+- `lib/schema.ts` `buildOrganizationJsonLd` now wraps the shared `packages/web-shared/schema`
+  `buildOrganization` builder (Medical's `organization-schema.ts` is the reference); every prior
+  field survives (diffed field-by-field), plus `parentOrganization` (Ashfield Trading Ltd) added.
+  Added `buildServiceJsonLd` wrapping the shared `buildService`, wired onto all 5 `/for/*` and 8
+  `/services/*` pages alongside a `BreadcrumbList`.
+- `public/llms.txt`: every internal link now carries `?utm_source=chatgpt&utm_medium=llms`, plus
+  the attribution note. Not rewritten to Property's full entity-first structure (not named in
+  decision 3's list; UTM was the specific gap flagged).
+- Added `pharmacies/pipeline/submit_indexnow.py` (Property's shim, `SITE_KEY = "pharmacies"`;
+  central config already had a `pharmacies` entry in `optimisation_engine/indexing/config.py`).
+- AdSense wired per the Solicitors pattern: `layout.tsx` metadata `google-adsense-account`,
+  `ConsentedScripts adsenseClientId`, `public/ads.txt`, and `next.config.ts` `headers()` via
+  `buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" })` — this
+  site had NO security-headers block before, so `embedPrefix: "embed"` was added deliberately to
+  keep the live `/embed/*` partner-iframe route framable (would otherwise have gone from no CSP
+  to frame-ancestors denied-everywhere in the same diff).
+- Body font: added `next/font/google` `Plus_Jakarta_Sans` (Property's font), one file, no new
+  dependency.
+- `sitemap.ts`: removed build-time `lastModified: now` from every static/service/for/tool/category
+  route (omitted, Property's pattern); blog post routes already carried a real
+  `post.updatedDate || post.date` and are unchanged.
+- Segment/service page closers: added a one-sentence, per-page-parameterised closer under the
+  form (Sonnet-plain, flagged for the Opus read below).
+- `tsc --noEmit` clean, `vitest run` 35/35 passing throughout.
+
+**Needs the shared agent:** the calculator's first input has no visible focus ring
+(`outline-style: none`, transparent box-shadow) — this is `packages/site-styles`/shared form-style
+territory per brief section 8, not touched here.
+
+**Needs the Opus read:** the 13 segment/service closers written above are plain Sonnet copy, not
+audience-bespoke; Aswatax intro wording on `/thank-you` was left as-is (already correct per the
+research reader pass); `house_positions.md` (last touched 2026-07-14) was not re-checked against
+current ground-truth memory in this pass.

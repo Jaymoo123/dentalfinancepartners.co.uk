@@ -1,4 +1,16 @@
 {
+  "entity": {
+    "firm": "Pharmacy Tax is a UK accounting practice for community pharmacy owners, buyers, sellers, pharmacy groups and locum pharmacists. We handle NHS contract income and FP34 cash flow, VAT retail schemes, purchase and sale accounting, valuation and goodwill, payroll and workforce, and incorporation and structure. Pharmacy Tax is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK community pharmacy owners, buyers, sellers, pharmacy groups and locum pharmacists.",
+    "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: your pharmacy, your role and what you need looked at.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work, deal with HMRC and NHSBSA on your behalf, and keep you ahead of your deadlines."
+    ],
+    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+  },
   "niche_id": "pharmacies",
   "display_name": "Pharmacy Tax",
   "legal_name": "Ashfield Trading Ltd",

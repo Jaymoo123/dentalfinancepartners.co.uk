@@ -130,7 +130,7 @@ export const pharmacyServices: PharmacyService[] = [
   {
     slug: "pharmacy-vat-retail-schemes",
     title: "Pharmacy VAT and Retail Schemes",
-    headline: "Pharmacies are VAT-mixed businesses. The mix is the whole point.",
+    headline: "Pharmacies are VAT-mixed businesses. The mix is the whole point",
     metaTitle: "Pharmacy VAT Retail Schemes UK | Zero-Rated vs Standard",
     metaDescription: "VAT advice for UK community pharmacies. NHS dispensing is zero-rated, not exempt. Retail scheme selection, input VAT recovery and partial exemption.",
     intro: "Community pharmacies are registered for VAT and structurally VAT-mixed: NHS-dispensed prescription drugs are zero-rated, most over-the-counter retail sales are standard-rated, and certain pharmacist services can be exempt or standard-rated depending on what is supplied and how. This mix means a pharmacy almost always reclaims more input VAT than a pure retailer expects, because zero-rated outputs let you recover input VAT on costs attributable to that dispensing activity. Getting the retail scheme wrong, or failing to map the supply lines correctly, systematically overpays VAT. Getting it right is the strongest differentiation point in pharmacy accounting, and no generalist accountant can fake the literacy it requires.",

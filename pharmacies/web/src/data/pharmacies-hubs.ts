@@ -358,8 +358,6 @@ export const pharmacyHubs: PharmacyHub[] = [
         answer: "Yes. Moving from locum to owner is a well-established route. The financial position changes substantially: you move from Self Assessment on day-rate income to managing an NHS contract, FP34 cash flow, VAT retail schemes, and an employer payroll. See our <a href=\"/for/buying-a-pharmacy\">buying a pharmacy</a> page for the accounting and tax work involved in a pharmacy acquisition.",
       },
     ],
-    // ponytail: locum-pharmacists is content-only, no lead capture
-    noLeadForm: true,
   },
 ];
 

@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildSecurityHeaders } from "@accounting-network/web-shared/lib/security-headers";
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
 // Repo root is two levels up: pharmacies/web -> pharmacies -> Accounting (repo root).
@@ -27,6 +28,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
+  },
+  async headers() {
+    // ads: true widens frame-src for AdSense (owner ruling 2026-09-28: every
+    // site gets AdSense). embedPrefix keeps the existing /embed/* frame-ancestors
+    // exception the partner iframe route already relies on.
+    return buildSecurityHeaders({ ga: true, supabase: true, ads: true, embedPrefix: "embed" });
   },
 };
 

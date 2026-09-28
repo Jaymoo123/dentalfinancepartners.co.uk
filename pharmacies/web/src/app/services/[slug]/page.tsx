@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { pharmacyServices, getPharmacyService } from "@/data/pharmacies-services";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildServiceJsonLd, buildBreadcrumbJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 
@@ -21,6 +21,22 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const service = getPharmacyService(slug);
   if (!service) notFound();
   return (<>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: buildServiceJsonLd({ name: service.title, description: service.metaDescription, url: `/services/${service.slug}` }),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: buildBreadcrumbJsonLd([
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: service.title },
+        ]),
+      }}
+    />
     <section className="border-b border-neutral-200 bg-[#0f3a4a] py-16 sm:py-20">
       <div className={siteContainerLg}>
         <Link href="/services" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">All services</Link>
@@ -48,7 +64,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           {service.challenges.map((item) => (
             <article key={item.title} className="border border-neutral-200 border-l-4 border-l-[#0f3a4a] bg-neutral-50 p-6 sm:p-8">
               <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+              <p className="mt-4 text-base leading-relaxed text-neutral-600" dangerouslySetInnerHTML={{ __html: item.body }} />
             </article>
           ))}
         </div>
@@ -61,7 +77,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           {service.howWeHelp.map((item) => (
             <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-[#0f3a4a] hover:shadow-md transition-all">
               <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-600" dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
         </div>
@@ -82,7 +98,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
                     </span>
                   </summary>
-                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4">{faq.answer}</div>
+                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </details>
               ))}
             </div>
@@ -99,6 +115,11 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </div>
           <div className="bg-white p-6 sm:p-8">
             <LeadForm submitLabel="Send enquiry" />
+            {/* ponytail: Sonnet-plain closer, per-service via service.title; flagged for the Opus read (brief section 4). */}
+            <p className="mt-4 text-sm leading-relaxed text-neutral-500">
+              A couple of sentences on your {service.title.toLowerCase()} question helps us prepare properly for the
+              call. We reply within 24 hours and one of our accountants comes back to you directly.
+            </p>
           </div>
         </div>
       </div>
