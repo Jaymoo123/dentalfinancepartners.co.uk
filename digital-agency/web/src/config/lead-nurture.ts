@@ -318,10 +318,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Reply with a time that suits and one of our accountants will call you.",
+        "Reply with a time that suits and a specialist will call you.",
         [
-          "One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The first call is free, about 20 minutes on where the agency stands, and there is no obligation at the end of it.",
+          "Thanks for your enquiry. It has just come through to us and an agency finance specialist is ready to pick it up.",
+          "The call is a free review of where your agency stands, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time works better around your client calls, tell us and we will fit around it.",
         ],
         "t0_email",
@@ -356,7 +356,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, the team at Agency Founder Finance here. Enquiries like yours are exactly what our specialists handle, so we have kept time aside this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, the team at Agency Founder Finance here. Enquiries like yours are exactly what our specialists handle, so we have kept time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -389,7 +389,7 @@ const STEPS: LeadNurtureStep[] = [
         "A short call usually surfaces something worth knowing about how your agency is set up.",
         [
           "A quick pointer while your enquiry is with us. Most agency founders we speak to are running lumpy revenue, a mix of retainers and project work, against a payroll that has to be met whether the invoices land on time or not. The setup that suits a steady trading company often does not suit that shape.",
-          "How the people doing client work are engaged, how profit comes out once you are no longer the main fee earner, and what an acquirer would actually look at, all behave differently in an agency. That is what we would cover on your first call.",
+          "How the people doing client work are engaged, how profit comes out once you are no longer the main fee earner, and what an acquirer would actually look at, all behave differently in an agency. That is what your free review would cover.",
           "Whenever suits, just reply with a day and a time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -406,7 +406,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Agency Founder Finance here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Agency Founder Finance here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Agency Founder Finance here. Most founders we speak to came with the same question you raised, and one short call usually clears up something they had parked for months. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -425,7 +425,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free agency finance review is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free agency finance review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -436,7 +436,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are ready, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your first call is still open, and if the last week has been wall to wall with client work, that is completely fine.",
+            "Just checking in, and there is genuinely no rush. Your free review is still open, and if the last week has been wall to wall with client work, that is completely fine.",
             "If something is holding you back, or the week simply ran away, a one-line reply is all it takes. Tell us a day and time that works, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -539,7 +539,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and one of our accountants will call you.`,
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
             `Just reply to this email with ${ask} and an agency finance specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
@@ -619,7 +619,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like that first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a large retainer starting or ending, a first round of salaried hires, or someone approaching you about buying the agency.`,
+            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a large retainer starting or ending, a first round of salaried hires, or someone approaching you about buying the agency.`,
             "All the best with the work.",
           ],
           "detail_capture_day7",

@@ -86,9 +86,6 @@ const data: AudienceStage = {
     },
   ],
   ctaTitle: "Get your first-year setup right",
-  closerBody:
-    "Tell us what the agency bills and how you are taking money out, and on a free first call we will settle the three decisions that are cheapest to get right in year one: the structure, the VAT scheme and the director's loan. If we take the work on, you get a fixed fee in writing before anything starts.",
-  pillarBlurb: "New to running an agency? Our fundamentals guides cover incorporation, VAT and payroll from scratch.",
 };
 
 export default function ForNewFoundersPage() {

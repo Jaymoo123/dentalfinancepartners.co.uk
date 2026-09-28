@@ -20,11 +20,6 @@ export type AudienceStage = {
   services: { title: string; body: string }[];
   faqs: { q: string; a: string }[];
   ctaTitle: string;
-  /** Sub-line under ctaTitle. Varies by audience so the three /for-* pages don't close on
-   * identical copy (parity ruling 2026-09-28). Sonnet draft, flagged for the Opus read. */
-  closerBody?: string;
-  /** "Want to read first?" blurb, same reason as closerBody. */
-  pillarBlurb?: string;
 };
 
 type Props = { data: AudienceStage };
@@ -140,8 +135,7 @@ export function AudienceStageLayout({ data }: Props) {
                 </div>
                 <h2 className="text-3xl font-bold text-indigo-900 sm:text-4xl">{data.ctaTitle}</h2>
                 <p className="mt-3 text-base sm:text-lg text-slate-700">
-                  {data.closerBody ??
-                    "60 minutes with a specialist agency accountant. Tailored to where you are now. No obligation."}
+                  60 minutes with a specialist agency accountant. Tailored to where you are now. No obligation.
                 </p>
               </div>
               <LeadForm redirectOnSuccess={false} submitLabel="Book my free health check" />
@@ -174,7 +168,7 @@ export function AudienceStageLayout({ data }: Props) {
             <BadgeCheck className="h-10 w-10 text-indigo-400 mx-auto mb-3" />
             <h2 className="text-xl sm:text-2xl font-bold text-white">Want to read first?</h2>
             <p className="mt-3 text-slate-300 text-sm">
-              {data.pillarBlurb ?? "Our pillar guides cover the fundamentals in depth."}
+              Our pillar guides cover the fundamentals in depth.
             </p>
             <Link href="/fundamentals" className={`${btnPrimary} mt-5`}>
               Browse the guides

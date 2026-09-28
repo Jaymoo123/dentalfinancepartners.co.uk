@@ -86,9 +86,6 @@ const data: AudienceStage = {
     },
   ],
   ctaTitle: "Plan your agency exit properly",
-  closerBody:
-    "The work that protects your BADR position and cleans up the accounts has to happen before a buyer is in the room. Tell us your timescale on a free first call and we will tell you what to fix first and how an earn-out would be taxed. If we take the work on, you get a fixed fee in writing before anything starts.",
-  pillarBlurb: "Weighing up a sale? Our guides cover BADR, exit structuring and the numbers a buyer will check first.",
 };
 
 export default function ForPreExitPage() {
