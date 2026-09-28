@@ -70,8 +70,10 @@ function sliderBounds(field: CalcField): { min: number; max: number; step: numbe
  * Field renderers (left column)
  * ------------------------------------------------------------------------- */
 
+// ponytail: swapped the ring utility (was rendering invisible, outlineStyle
+// none / boxShadow none on the first input) for a plain visible outline.
 const inputCls =
-  "w-full min-h-10 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--ink)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/25";
+  "w-full min-h-10 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600";
 
 function NumberField({
   field,

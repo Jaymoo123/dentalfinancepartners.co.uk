@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: { absolute: `About ${siteConfig.name} | Who We Are and How We Work` },
   description: `${siteConfig.name} is a free information service for divorce and separation finances in England and Wales. What we do, what we don't, and how we make money.`,
+  alternates: { canonical: `${siteConfig.url}/about` },
 };
 
 export default function AboutPage() {

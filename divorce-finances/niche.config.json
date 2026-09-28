@@ -14,14 +14,26 @@
     "vat_number": null,
     "enquiry_retention_months": 24
   },
-  "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
+  "partner": { "name": "regulated firms we work with", "descriptor": "", "privacy_policy_url": null },
+  "entity": {
+    "firm": "Divorce Finance Specialists is the UK's specialist accountancy-side guide to the money in divorce and separation. We work out financial settlements, pension sharing and capital gains tax on divorce, and free calculators for the cost of divorce and settlement ranges. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side. Divorce Finance Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for people in the UK going through divorce or separation who need to understand the financial side: settlements, pensions and tax.",
+    "where": "We act for people across the United Kingdom and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: what you need worked out and where things stand.",
+      "One of our team calls you to go through it and answer the immediate questions.",
+      "Where you need a solicitor, we introduce you to a regulated firm we work with.",
+      "We stay on the money side throughout: settlements, pensions and tax."
+    ],
+    "next": "We reply within 24 hours and one of our team comes back to you directly."
+  },
   "domain": "www.divorcefinancespecialists.co.uk",
   "tagline": "Clear, practical guidance on the money side of divorce and separation in the UK",
   "description": "Divorce Finance Specialists. Plain-English guidance on financial settlements, pensions, tax and the family home for people divorcing or separating in the UK. Free calculators, no jargon. We connect readers with specialist help when their situation needs it.",
   "brand": {
     "primary_color": "#1d4ed8",
     "logo_path": "/brand/primary-logo.png",
-    "publisher_logo_url": "/brand/icon-alt.png"
+    "publisher_logo_url": "/api/og"
   },
   "contact": {
     "email": "hello@divorcefinancespecialists.co.uk",

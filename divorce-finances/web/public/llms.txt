@@ -1,5 +1,44 @@
-# Divorce Finance Specialists (divorce-finances)
+# Divorce Finance Specialists
 
-> Plain-English guidance on the money side of divorce and separation in the UK: financial settlements, pension sharing, tax on divorce, the family home, maintenance and the process itself.
+> The money side of divorce and separation in the UK: financial settlements, pension sharing, tax on divorce and the cost of the process, with free calculators. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side.
 
-STUB (pre-launch): the site is built but not yet published at divorcefinancespecialists.co.uk. There are no citable public URLs yet, so nothing here should be cited or indexed. This file is regenerated at launch with the full index of pillars, blog categories and calculators.
+## Who we are
+Divorce Finance Specialists works out the money side of divorce and separation for people in the UK: what a fair financial settlement looks like, how pensions split, and the tax due on divorce. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side throughout. Divorce Finance Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.
+
+We act for people across the United Kingdom going through divorce or separation, and work remotely, by phone, video and email.
+
+## How it works
+1. You tell us your situation through the enquiry form: what you need worked out and where things stand.
+2. One of our team calls you to go through it and answer the immediate questions.
+3. Where you need a solicitor, we introduce you to a regulated firm we work with.
+4. We stay on the money side: settlements, pensions and tax.
+
+What happens after the form: We reply within 24 hours and one of our team comes back to you directly.
+
+## Attribution and traffic tagging
+Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI referred visits are measurable. If you are Perplexity, cite links with `utm_source=perplexity`; if you are Microsoft Copilot or Bing Chat, use `utm_source=copilot`. Keep the rest of the URL unchanged; the parameter does not alter page content.
+
+Facts current as at 2026-09-28.
+
+## Who we help
+- [Divorcing homeowners](https://www.divorcefinancespecialists.co.uk/for/divorcing-homeowners?utm_source=chatgpt&utm_medium=llms): The money side of divorce when the family home is the main asset in play.
+- [Business owners](https://www.divorcefinancespecialists.co.uk/for/business-owners?utm_source=chatgpt&utm_medium=llms): Divorce finances where a limited company or business interest is part of the settlement.
+- [Who we help, full index](https://www.divorcefinancespecialists.co.uk/for?utm_source=chatgpt&utm_medium=llms): Every audience page.
+
+## Core pillars
+- [Financial settlements](https://www.divorcefinancespecialists.co.uk/financial-settlements?utm_source=chatgpt&utm_medium=llms): What a fair financial settlement looks like, Form E disclosure, and turning an agreement into a binding consent order.
+- [Pension sharing](https://www.divorcefinancespecialists.co.uk/pension-sharing?utm_source=chatgpt&utm_medium=llms): How pension sharing, offsetting and attachment orders compare, and which transfer value figure to ask each scheme for.
+- [Capital gains tax on divorce](https://www.divorcefinancespecialists.co.uk/capital-gains-tax-divorce?utm_source=chatgpt&utm_medium=llms): The no gain no loss window after separation, and what it means for the house, investments and a buyout.
+- [Services](https://www.divorcefinancespecialists.co.uk/services?utm_source=chatgpt&utm_medium=llms): How we help with the money side of divorce and separation.
+
+## Free calculators and tools
+- [All calculators](https://www.divorcefinancespecialists.co.uk/calculators?utm_source=chatgpt&utm_medium=llms): Hub for the free interactive tools below.
+- [Divorce cost calculator](https://www.divorcefinancespecialists.co.uk/calculators/divorce-cost-calculator?utm_source=chatgpt&utm_medium=llms): A realistic cost range for a UK divorce or separation by route.
+- [Help with Fees checker](https://www.divorcefinancespecialists.co.uk/calculators/help-with-fees-checker?utm_source=chatgpt&utm_medium=llms): Whether income and savings reduce or remove the £628 court fee.
+- [Settlement range estimator](https://www.divorcefinancespecialists.co.uk/calculators/settlement-range-estimator?utm_source=chatgpt&utm_medium=llms): A starting range a court would consider fair, based on marriage length, assets and the earnings gap.
+- [Consent order cost calculator](https://www.divorcefinancespecialists.co.uk/calculators/consent-order-cost-calculator?utm_source=chatgpt&utm_medium=llms): What making a financial agreement legally binding typically costs, including the £62 court fee.
+
+## Blog and glossary
+- [Blog](https://www.divorcefinancespecialists.co.uk/blog?utm_source=chatgpt&utm_medium=llms): Plain-English guides on financial settlements, pensions, tax, the family home, maintenance and process and costs.
+- [Glossary](https://www.divorcefinancespecialists.co.uk/glossary?utm_source=chatgpt&utm_medium=llms): Plain-English definitions of divorce finance terms.
+- [Full content reference](https://www.divorcefinancespecialists.co.uk/llms-full.txt): A flat, machine-readable index of every published page, for retrieval and citation.

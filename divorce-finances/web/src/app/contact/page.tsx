@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: `Contact ${siteConfig.name}` },
   description:
     "Ask a question, report an error, or ask to be introduced to a vetted family law specialist or accredited mediator. We reply within two working days.",
+  alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
 export default function ContactPage() {
@@ -36,11 +37,11 @@ export default function ContactPage() {
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
                 <li>We read every message and aim to reply within two working days.</li>
                 <li>
-                  If you have asked to be connected with a specialist, a vetted regulated family
-                  law firm or accredited mediator from our partner network suited to your
-                  situation will contact you directly, usually within a few working days. If that
-                  firm is unable to help, your enquiry may be passed to another firm in the
-                  network for the same purpose.
+                  If you have asked to be connected with a specialist, we stay on the money side
+                  and introduce you to a regulated firm we work with, a vetted family law firm or
+                  accredited mediator suited to your situation. It will contact you directly,
+                  usually within a few working days. If that firm is unable to help, your enquiry
+                  may be passed to another firm we work with for the same purpose.
                 </li>
                 <li>
                   We cannot answer questions about your personal legal or financial position. That
@@ -68,8 +69,8 @@ export default function ContactPage() {
                 </p>
                 <p className="mt-4 text-xs leading-relaxed text-neutral-500">
                   By submitting the form you agree to us using your details to respond to your
-                  enquiry. To answer it, your details may be shared with regulated firms from our
-                  specialist partner network, who may contact you directly about it. More than one
+                  enquiry. To answer it, your details may be shared with regulated firms we work
+                  with, who may contact you directly about it. More than one
                   firm may take up your enquiry: up to three firms in the profession you are asking
                   about (for example a specialist family law firm or accredited mediator), and up to
                   three in related professions such as brokers, solicitors and advisers. We may be

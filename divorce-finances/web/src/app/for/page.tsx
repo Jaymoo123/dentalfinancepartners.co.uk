@@ -3,11 +3,13 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import { tradeTypes } from "@/data/trade-types";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Who We Help | The Money Side of Divorce",
   description:
     "Guidance on the money side of divorce and separation for every situation.",
+  alternates: { canonical: `${siteConfig.url}/for` },
 };
 
 export default function ForIndexPage() {

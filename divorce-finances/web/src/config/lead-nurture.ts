@@ -274,7 +274,8 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 }
 
 // ── The contactability sequence ───────────────────────────────────────────────
-// 8 steps. Cumulative delay hours from step 0: 0, 0, 4, 24, 48, 96, 168, 264.
+// 8 steps. delayHours is the GAP since the previous send, matching Property's
+// array: 0, 0, 4, 20, 24, 48, 72, 96 (runs over ~11 days, not 25).
 // Themes: cost of divorce and the £628 fee, settlement ranges and Form E,
 // consent orders and the £62 fee, pension sharing, the CGT window after
 // separation. Service-only follow-up. Faceless team voice. Partner-firm
@@ -295,8 +296,9 @@ const STEPS: LeadNurtureStep[] = [
           "Just reply with a time that suits and we will arrange your free call.",
           [
             "Thanks for your enquiry, it has just come through to us and we are ready to help.",
+            "One of our team will call you within 24 hours, Monday to Friday.",
             `The call is a free conversation about your situation, around 20 minutes, with no charge and no obligation. ${callScopeLine(role)}`,
-            "Where advice is needed, it comes from the partner firm we introduce you to, a vetted, SRA-regulated family law firm. We may receive a fee from the firm we introduce you to, and that never changes what you pay.",
+            "We stay on the money side. Where you need a solicitor, we introduce you to a regulated firm we work with, a vetted, SRA-regulated family law firm. We may receive a fee from the firm we introduce you to, and that never changes what you pay.",
             "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
           ],
           "t0_email",
@@ -341,7 +343,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -356,7 +358,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email (role-adapted, calculators + pillars) ──
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => {
       const b = c.siteUrl;
@@ -414,7 +416,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -429,7 +431,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email"],
     preferMonday: true,
     buildMessages: (c) => [
@@ -450,7 +452,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
