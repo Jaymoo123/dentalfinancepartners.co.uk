@@ -168,7 +168,7 @@ export default function AboutPage() {
                 key={item.title}
                 className="group rounded-xl bg-white p-6 ring-1 ring-slate-200 transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_24px_50px_-30px_rgba(15,23,42,0.45)] hover:ring-emerald-300 sm:p-7"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 transition-colors group-hover:group-hover:text-white">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 transition-colors group-hover:bg-emerald-700 group-hover:text-white">
                   <item.icon aria-hidden className="h-6 w-6" strokeWidth={1.75} />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
@@ -230,7 +230,7 @@ export default function AboutPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Get your property tax sorted"
-          description="Tell us what you own, how it is held and what is on your mind. We reply within 24 hours and one of our accountants comes back to you directly with where we would look first, and a fixed fee in writing if you want the work done."
+          description="Tell us what you own, how it is held and what is on your mind. We will come back within 24 hours with where a specialist would look first, and a fixed fee in writing if you want the work done."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },

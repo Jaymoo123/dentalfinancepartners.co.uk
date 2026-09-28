@@ -16,13 +16,6 @@ export interface Audience {
   faqs: Array<{ question: string; answer: string }>;
   /** Sources for `stats`/claims, per house_positions.md. Not rendered. */
   sources?: string[];
-  /**
-   * The closing LeadCTAPanel title/description on this audience's page.
-   * 2026-09-28 phase 0: all 15 pages shared one closer ("Talk to a
-   * specialist about your situation"); this field lets each page close on
-   * its own topic. Written plainly by Sonnet; flagged for the Opus read.
-   */
-  closer?: { title: string; description: string };
 }
 
 // Source: docs/property/_wave1/*.json (15 rows, QA READY 2026-09-27). LEADS_250_PROGRAMME_2026-09-27.md section 13, S4a.
@@ -30,13 +23,9 @@ export const audiences: Audience[] = [
   {
     "slug": "moving-property-into-a-limited-company",
     "title": "Landlords Moving Property Into a Limited Company",
-    "closer": {
-      "title": "Get the incorporation maths done before you move anything",
-      "description": "We model the stamp duty, the capital gains and the mortgage cost side by side, so you can see whether the company actually pays. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for landlords moving property into a limited company",
     "metaTitle": "Accountant to Transfer Property Into a Company",
-    "metaDescription": "Moving your buy-to-lets into a limited company? We work through the SDLT, the CGT and the refinancing before anything moves. For UK landlords.",
+    "metaDescription": "Moving your buy-to-lets into a limited company? A specialist reviews the SDLT, the CGT and the refinancing before anything moves. For UK landlords.",
     "intro": "You already own buy-to-lets in your own name and you are working out whether to move them into a limited company, and what that would cost. The real question is whether the stamp duty and capital gains tax on the way in are worth the corporation tax treatment afterwards. One of our property tax specialists starts with the market value and debt on each property, how the lettings are actually run, and who your lender is. Those answers decide whether section 162 incorporation relief is in play and whether a partnership route is open. By the end of it you know the cost of entry, which route fits and where HMRC would push back.",
     "stats": [
       {
@@ -81,7 +70,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A cost of entry you can check line by line",
-        "body": "We review each property's market value, base cost and outstanding debt, then price the SDLT the company would pay and the CGT you would face without relief. You get figures per property, not one portfolio total, because the answer is often that some should move and others should not. Sanity-check it first with the <a href=\"/calculators/incorporation-cost-calculator\">incorporation cost calculator</a>."
+        "body": "A specialist reviews each property's market value, base cost and outstanding debt, then prices the SDLT the company would pay and the CGT you would face without relief. You get figures per property, not one portfolio total, because the answer is often that some should move and others should not. Sanity-check it first with the <a href=\"/calculators/incorporation-cost-calculator\">incorporation cost calculator</a>."
       },
       {
         "title": "A written view on whether section 162 is available to you",
@@ -89,7 +78,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "The partnership question answered before it is relied on",
-        "body": "Where a partnership already operates, we review the returns, the income profit shares and the connected-person positions, and work the sum of the lower proportions through to a figure. Where none exists, you are told what a genuine one would require and how long it would need to have run."
+        "body": "Where a partnership already operates, a specialist reviews the returns, the income profit shares and the connected-person positions, and works the sum of the lower proportions through to a figure. Where none exists, you are told what a genuine one would require and how long it would need to have run."
       },
       {
         "title": "The structure, the filings and the timetable",
@@ -134,10 +123,6 @@ export const audiences: Audience[] = [
   {
     "slug": "selling-a-buy-to-let",
     "title": "Landlords Selling a Buy-to-Let",
-    "closer": {
-      "title": "Work out the tax on the sale before you accept an offer",
-      "description": "We calculate the gain, the reliefs you can still claim and the 60-day reporting deadline you have to hit. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for landlords selling a buy-to-let",
     "metaTitle": "CGT Accountant for Selling a Buy-to-Let Property",
     "metaDescription": "Selling a rental property or a former home that was let? Get the 60-day CGT return, the gain computation and the reliefs handled by a property tax specialist.",
@@ -185,7 +170,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A first review of the disposal before you commit",
-        "body": "We look at the ownership history, the occupation periods, the intended exchange and completion dates and how the property is held. That tells you whether a 60-day return is required at all, which tax year the gain lands in, and whether the timing changes the outcome. Most useful before contracts are exchanged."
+        "body": "A specialist reviews the ownership history, the occupation periods, the intended exchange and completion dates and how the property is held. That tells you whether a 60-day return is required at all, which tax year the gain lands in, and whether the timing changes the outcome. Most useful before contracts are exchanged."
       },
       {
         "title": "The gain computation, built line by line",
@@ -234,13 +219,9 @@ export const audiences: Audience[] = [
   {
     "slug": "portfolio-landlords-incorporating-a-partnership",
     "title": "Portfolio Landlords Incorporating a Lettings Partnership",
-    "closer": {
-      "title": "Check whether your partnership really qualifies for the reliefs",
-      "description": "Incorporation relief and the SDLT partnership rules turn on how the partnership has actually been run, not on what the paperwork says. We look at both. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for portfolio landlords incorporating a lettings partnership",
     "metaTitle": "Property Partnership Incorporation: Portfolio Landlords",
-    "metaDescription": "For portfolio landlords moving an established lettings partnership into a company: the SDLT, CGT and mortgage questions we work through first.",
+    "metaDescription": "For portfolio landlords moving an established lettings partnership into a company: the SDLT, CGT and mortgage questions a specialist reviews first.",
     "intro": "You run a lettings portfolio of roughly 10 to 40 properties with your spouse, civil partner or family as partners, the partnership has filed its own returns for years, and you are weighing a move into a limited company. That is a different problem from moving one or two personally held flats. Everything rests on a prior question: whether a partnership genuinely exists in law, and how long it has run. Both reliefs depend on the answer, partnership treatment for stamp duty under FA 2003 Schedule 15 and section 162 incorporation relief for the capital gain. Below, each of those in turn, then the lender problem and the cost of running the company.",
     "stats": [
       {
@@ -307,7 +288,7 @@ export const audiences: Audience[] = [
     "faqs": [
       {
         "question": "Our portfolio is jointly owned by my wife and me. Is that a partnership?",
-        "answer": "Not on its own. Joint ownership of let property is expressly not a partnership under the Partnership Act 1890, and HMRC's guidance on jointly owned property follows the same line. What turns co-ownership into a partnership is a business carried on in common: an agreement, SA800 returns, partnership accounts, joint borrowing and joint decisions over a period. We review what exists today."
+        "answer": "Not on its own. Joint ownership of let property is expressly not a partnership under the Partnership Act 1890, and HMRC's guidance on jointly owned property follows the same line. What turns co-ownership into a partnership is a business carried on in common: an agreement, SA800 returns, partnership accounts, joint borrowing and joint decisions over a period. A specialist reviews what exists today."
       },
       {
         "question": "How long must the partnership have run before we incorporate?",
@@ -340,10 +321,6 @@ export const audiences: Audience[] = [
   {
     "slug": "non-resident-landlords",
     "title": "Non-Resident and Overseas Landlords",
-    "closer": {
-      "title": "Sort your UK filing from wherever you are living",
-      "description": "NRL scheme approval, the UK return, the treaty position and the 60-day reporting on a sale, handled in one place and across time zones. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for non-resident and overseas landlords",
     "metaTitle": "Non-Resident Landlord Accountants | Overseas",
     "metaDescription": "For landlords letting or selling UK property from abroad. NRL scheme and NRL1, self assessment from overseas, non-resident CGT and the 60-day return.",
@@ -403,7 +380,7 @@ export const audiences: Audience[] = [
       },
       {
         "title": "Disposals planned before the contract, not after",
-        "body": "When you are selling, we review the rebasing options and valuation evidence, work private residence relief for any period you lived there, and set the 60-day return and payment against completion. Where you are moving back, the temporary non-residence rules are checked before the sale date is fixed."
+        "body": "When you are selling, a specialist reviews the rebasing options and valuation evidence, works private residence relief for any period you lived there, and sets the 60-day return and payment against completion. Where you are moving back, the temporary non-residence rules are checked before the sale date is fixed."
       }
     ],
     "faqs": [
@@ -445,10 +422,6 @@ export const audiences: Audience[] = [
   {
     "slug": "property-spv-set-up",
     "title": "Setting Up a Property SPV",
-    "closer": {
-      "title": "Set the SPV up once, properly",
-      "description": "Share structure, director loans, what your lender will want to see and the first year of filings, decided before Companies House rather than unpicked afterwards. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for landlords setting up a property SPV",
     "metaTitle": "SPV Accountant for Property Investors | UK",
     "metaDescription": "Setting up a property SPV to buy your first or next buy-to-let? Specialist support on SIC codes, SDLT, director's loans, corporation tax and first-year filings.",
@@ -549,10 +522,6 @@ export const audiences: Audience[] = [
   {
     "slug": "gifting-property-to-family",
     "title": "Gifting Property to Family",
-    "closer": {
-      "title": "See the capital gains and inheritance tax cost of the gift first",
-      "description": "A gift is a disposal at market value, and the seven-year clock only helps you if the paperwork is right. We price both sides before you sign anything. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for owners gifting property to family",
     "metaTitle": "Accountants for Gifting Property to Children",
     "metaDescription": "Gifting a property or a share of it to your children? Specialist help with CGT on the gift, the seven-year clock, SDLT on assumed debt and the paperwork.",
@@ -653,10 +622,6 @@ export const audiences: Audience[] = [
   {
     "slug": "couples-splitting-rental-income",
     "title": "Couples Splitting Rental Income",
-    "closer": {
-      "title": "Split the rental income in a way HMRC will accept",
-      "description": "Beneficial ownership, the declaration of trust and a Form 17 election all have to agree with each other. We put the three in order. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for couples splitting rental income between them",
     "metaTitle": "Form 17 & Declaration of Trust Accountants",
     "metaDescription": "Splitting rental income between spouses or civil partners? Form 17, declarations of trust, joint tenants and the 60-day window, explained for UK landlords.",
@@ -760,10 +725,6 @@ export const audiences: Audience[] = [
   {
     "slug": "landlord-self-assessment-and-mtd",
     "title": "Landlord Self Assessment and MTD Filing",
-    "closer": {
-      "title": "Get this year filed and be ready for Making Tax Digital",
-      "description": "We file the return in front of you and tell you exactly which April your rental income crosses the MTD threshold. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants filing landlord self assessment and MTD quarterly updates",
     "metaTitle": "Landlord Self Assessment & MTD Filing Service",
     "metaDescription": "Landlord self assessment and MTD for Income Tax quarterly updates filed for you. Thresholds, deadlines, SA105 and joint ownership explained for UK landlords.",
@@ -811,7 +772,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A written position on your start date",
-        "body": "We review your last filed return, your gross rents, any sole-trade turnover and how each property is owned, then set out which April you are mandated from and on which figure. Where you sit near a threshold, or a Form 17 election changes the split, that is stated plainly."
+        "body": "A specialist reviews your last filed return, your gross rents, any sole-trade turnover and how each property is owned, then sets out which April you are mandated from and on which figure. Where you sit near a threshold, or a Form 17 election changes the split, that is stated plainly."
       },
       {
         "title": "Records and software ready before quarter one",
@@ -869,10 +830,6 @@ export const audiences: Audience[] = [
   {
     "slug": "first-time-and-accidental-landlords",
     "title": "First-Time and Accidental Landlords",
-    "closer": {
-      "title": "Start as a landlord without the first-year mistakes",
-      "description": "Registering with HMRC on time, what you can and cannot deduct, and which of the two allowances leaves you better off. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for first-time and accidental landlords",
     "metaTitle": "Accountant for First Time Landlords | Former Home",
     "metaDescription": "Letting a former home? Specialist help for first-time and accidental landlords: telling HMRC, expenses, Section 24, MTD records and relief when you sell.",
@@ -975,10 +932,6 @@ export const audiences: Audience[] = [
   {
     "slug": "inherited-property",
     "title": "Executors and Beneficiaries",
-    "closer": {
-      "title": "Deal with the property the estate has left you",
-      "description": "The probate value, the base cost it hands you, and the choice between letting it or selling it. We work through all three with you. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for executors and beneficiaries of an inherited property",
     "metaTitle": "Probate Property Tax | Executors & Beneficiaries",
     "metaDescription": "Inherited a house or a rental property? Specialist help with probate base cost, CGT on a sale, rental income and deeds of variation.",
@@ -1004,7 +957,7 @@ export const audiences: Audience[] = [
     "challenges": [
       {
         "title": "The probate value becomes the base cost",
-        "body": "Death is not a disposal. The personal representatives are treated as acquiring the property at its market value at the date of death, and a beneficiary who later receives it takes that same figure as their base cost. Only growth after the death can be taxed. That makes the probate valuation a tax number, not a formality: a low figure holds inheritance tax down and hands the family a larger capital gain later. A defensible open market value, evidenced at the date of death, is what we check first; the <a href=\"/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost\">guide to the probate base cost</a> sets out the mechanics."
+        "body": "Death is not a disposal. The personal representatives are treated as acquiring the property at its market value at the date of death, and a beneficiary who later receives it takes that same figure as their base cost. Only growth after the death can be taxed. That makes the probate valuation a tax number, not a formality: a low figure holds inheritance tax down and hands the family a larger capital gain later. A defensible open market value, evidenced at the date of death, is what a specialist reviews first; the <a href=\"/blog/capital-gains-tax/cgt-on-inherited-property-uk-probate-base-cost\">guide to the probate base cost</a> sets out the mechanics."
       },
       {
         "title": "Selling from the estate or selling after distribution",
@@ -1074,10 +1027,6 @@ export const audiences: Audience[] = [
   {
     "slug": "property-company-profit-extraction",
     "title": "Property Company Directors Taking Money Out",
-    "closer": {
-      "title": "Take money out of the property company in the right order",
-      "description": "Salary, dividends, director loan repayments and rent charged to your own company each carry a different tax cost. We work out the order for your year. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for property company directors taking money out",
     "metaTitle": "Property Company Profit Extraction Accountant",
     "metaDescription": "Taking money out of your property company? Get the salary, dividend, loan and pension order reviewed and the paperwork prepared by a property tax specialist.",
@@ -1121,7 +1070,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A review of the extraction order for this tax year",
-        "body": "We review the company's profit, your other personal income, the director's loan account, the share classes and whether an employer pension contribution is available, then set out the order to draw in and what each step costs. The output is a sequence with figures attached rather than one number, because the right mix depends on your income outside the company."
+        "body": "A specialist reviews the company's profit, your other personal income, the director's loan account, the share classes and whether an employer pension contribution is available, then sets out the order to draw in and what each step costs. The output is a sequence with figures attached rather than one number, because the right mix depends on your income outside the company."
       },
       {
         "title": "The director's loan account rebuilt from the records",
@@ -1176,14 +1125,10 @@ export const audiences: Audience[] = [
   {
     "slug": "rental-income-disclosure",
     "title": "Landlords Making an HMRC Rental Income Disclosure",
-    "closer": {
-      "title": "Bring undeclared rent up to date on the best terms available",
-      "description": "An unprompted disclosure carries far lower penalties than waiting for the letter to arrive. We handle the figures and the wording that goes with them. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for landlords making an HMRC rental income disclosure",
     "metaTitle": "Let Property Campaign Accountant for Landlords",
     "metaDescription": "Undeclared rental income? Specialist help with Let Property Campaign and Digital Disclosure Service disclosures: years, penalty bands, interest and payment.",
-    "intro": "You have rental income that was never declared, and either an HMRC letter has arrived or you have decided to come forward before one does. That distinction is the first thing we check, because it sets your penalty floor: an unprompted disclosure of a non-deliberate failure to notify can reach 0%, while the same facts disclosed after HMRC makes contact start at 10% under Schedule 41 FA 2008. Next comes the route: residential rental income goes through the Let Property Campaign, commercial or mixed-use property through the Digital Disclosure Service. Then behaviour, which fixes how many years you reconstruct. Your accountant prepares the notification, the year-by-year computation of tax, interest and penalty, and the disclosure inside the 90-day window. Nothing is signed until the route is settled, the number is checkable and the payment position is known.",
+    "intro": "You have rental income that was never declared, and either an HMRC letter has arrived or you have decided to come forward before one does. That distinction is the first thing a specialist reviews, because it sets your penalty floor: an unprompted disclosure of a non-deliberate failure to notify can reach 0%, while the same facts disclosed after HMRC makes contact start at 10% under Schedule 41 FA 2008. Next comes the route: residential rental income goes through the Let Property Campaign, commercial or mixed-use property through the Digital Disclosure Service. Then behaviour, which fixes how many years you reconstruct. Your accountant prepares the notification, the year-by-year computation of tax, interest and penalty, and the disclosure inside the 90-day window. Nothing is signed until the route is settled, the number is checkable and the payment position is known.",
     "stats": [
       {
         "value": "4, 6 or 20 years",
@@ -1249,7 +1194,7 @@ export const audiences: Audience[] = [
       },
       {
         "question": "How many years will I have to disclose?",
-        "answer": "It depends on behaviour, not on the campaign. The ordinary window is 4 years, careless behaviour takes it to 6 and deliberate behaviour to 20, with a 12-year window for offshore matters even without carelessness. We review each year separately, because the category can differ between them and the honest characterisation is what the computation rests on."
+        "answer": "It depends on behaviour, not on the campaign. The ordinary window is 4 years, careless behaviour takes it to 6 and deliberate behaviour to 20, with a 12-year window for offshore matters even without carelessness. A specialist reviews each year separately, because the category can differ between them and the honest characterisation is what the computation rests on."
       },
       {
         "question": "What if I have no records for the early years?",
@@ -1281,13 +1226,9 @@ export const audiences: Audience[] = [
   {
     "slug": "holiday-let-and-serviced-accommodation",
     "title": "Holiday Let and Serviced Accommodation Operators",
-    "closer": {
-      "title": "Find out where the end of the FHL rules leaves you",
-      "description": "The allowances already claimed, the interest restriction now applying and the capital gains reliefs you have lost, set out for your property. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for holiday let and serviced accommodation operators",
     "metaTitle": "Holiday Let Accountant | Serviced Accommodation",
-    "metaDescription": "Run a holiday let, Airbnb or serviced accommodation unit after FHL abolition? We review the tax treatment, VAT and capital allowances position.",
+    "metaDescription": "Run a holiday let, Airbnb or serviced accommodation unit after FHL abolition? A specialist reviews the tax treatment, VAT and capital allowances position.",
     "intro": "You let a cottage, an apartment or a block of units on short stays through Airbnb, Booking.com or your own site, and the tax treatment stopped being simple when the furnished holiday lettings rules ended in April 2025. What you are asking is what you lost, what you kept and what you now have to file. A specialist starts with how each property is run and what services you provide, what sat in your capital allowances pool at abolition, and your gross takings across every channel last year. Those answers decide whether Section 24 restricts your interest, whether your pooled allowances still write down, and whether VAT registration is close. The output is a written read of your 2026/27 position and the reliefs that survived.",
     "stats": [
       {
@@ -1332,7 +1273,7 @@ export const audiences: Audience[] = [
     "howWeHelp": [
       {
         "title": "A written read of where abolition left you",
-        "body": "We review your last filed return against the current rules and set out, property by property, the Section 24 position, the pooled allowances carried across, the ring-fenced losses, and the transitional capital gains position."
+        "body": "A specialist reviews your last filed return against the current rules and sets out, property by property, the Section 24 position, the pooled allowances carried across, the ring-fenced losses, and the transitional capital gains position."
       },
       {
         "title": "A VAT position tested against your real takings",
@@ -1385,10 +1326,6 @@ export const audiences: Audience[] = [
   {
     "slug": "hmo-and-multi-let-landlords",
     "title": "HMO and Multi-Let Landlords",
-    "closer": {
-      "title": "Claim what the conversion work actually entitles you to",
-      "description": "An HMO fit-out usually hides a capital allowances claim nobody has made, and the licensing and finance costs need treating correctly too. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for HMO and multi-let landlords",
     "metaTitle": "HMO Accountant | Multi-Let and Student Landlords",
     "metaDescription": "Specialist accounting for UK HMO, student and small commercial landlords: licensing costs, bills-included rents, council tax, capital allowances and structure.",
@@ -1491,10 +1428,6 @@ export const audiences: Audience[] = [
   {
     "slug": "landlord-retirement-and-succession",
     "title": "Landlords Planning Retirement and Succession",
-    "closer": {
-      "title": "Plan the exit from the portfolio, not just the next tax return",
-      "description": "Selling in stages, gifting to children or holding through a company all change the tax on the way out. We map the routes with the figures attached. Free first call, then a fixed fee in writing."
-    },
     "headline": "Accountants for landlords planning retirement and succession",
     "metaTitle": "Landlord Succession Planning Accountant | UK",
     "metaDescription": "Specialist support for landlords retiring or passing on a portfolio: selling down, gifting, trusts, family investment companies and the 2026 IHT position.",

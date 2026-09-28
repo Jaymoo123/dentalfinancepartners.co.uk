@@ -724,7 +724,7 @@ export default function PropertyAccountantPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Talk to a property accountant about your portfolio"
-          description="Free first call, then a fixed fee in writing. We tell you plainly whether you need an accountant at all, and what it would cost if you do."
+          description="A free consultation, a straight answer about whether you need us, and a fixed written quote if you do."
           proofPoints={[
             { title: "Property-only specialists", detail: "Landlords, investors and developers, nothing else" },
             { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },

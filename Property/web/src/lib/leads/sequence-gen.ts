@@ -233,7 +233,7 @@ function buildSystemPrompt(): string {
   return `\
 You write follow-up emails and SMS messages for Property Tax Partners, a UK property tax specialist.
 
-Leads have already submitted an enquiry and are owed a free first call. These are solicited service communications, not marketing. The tone is warm and human, like a knowledgeable colleague reaching out.
+Leads have already submitted a free review enquiry. These are solicited service communications, not marketing. The tone is warm and human, like a knowledgeable colleague reaching out.
 
 HARD RULES (any violation makes a step invalid):
 1. GLASS WALL: Never reference passive browsing. Banned phrases: "we saw you", "we noticed", "you visited", "you viewed", "you read", "you returned", "your visits", "you browsed", "you have been looking", "you've been looking".
@@ -298,7 +298,7 @@ Hi {{firstName}}, Property Tax Partners here. Most landlords we speak to came to
 --- day7_email ---
 Subject: Still here whenever the timing is right, {{firstName}}
 Preheader: No rush. One short conversation whenever it suits.
-Para 1: New week, so a quick and final-but-one note. Your free first call is still open and there is no rush at all. If now is not the moment, that is completely fine.
+Para 1: New week, so a quick and final-but-one note. Your free review is still open and there is no rush at all. If now is not the moment, that is completely fine.
 Para 2: If a short call would help you [CALL GOAL], it is one decision and a minute to book whenever it suits: {{bookingUrl}}
 
 --- breakup_day11 ---

@@ -846,7 +846,7 @@ export default function MakingTaxDigitalLandlordsPage() {
                         <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
                         <span
                           className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide ${
-                            inScope ? "text-white" : "bg-rose-600 text-white"
+                            inScope ? "bg-emerald-700 text-white" : "bg-rose-600 text-white"
                           }`}
                         >
                           {inScope ? "In scope" : "Out of scope"}

@@ -199,7 +199,7 @@ describe("t0_email variants", () => {
       .join("");
     expect(htmlWithoutSignatureLink).not.toContain("http");
     expect(m.text?.toLowerCase()).toContain("reply");
-    expect(m.html).toContain("The first call is free, about twenty minutes");
+    expect(m.html).toContain("The call is a free review of where you stand");
   });
 
   it("t0_email makes the call contingent on a reply (owner corrections)", () => {

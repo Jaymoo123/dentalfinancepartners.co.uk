@@ -109,7 +109,7 @@ export default function PortfolioProfitabilityCalculatorPage() {
           result panels. */}
       <div id="get-expert-help" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free first call"
+          eyebrow="Free review"
           title="Want a proper look at your portfolio?"
           description="We produce full portfolio profitability reporting, factoring in tax, ownership structure and financing, so you can see the true return on each property. Tell us about your portfolio for a no-obligation review."
           proofPoints={[

@@ -155,7 +155,7 @@ export default function CalculatorsPage() {
                       href={`/calculators/${t.slug}`}
                       className="group flex items-start gap-3 rounded-xl border-2 border-slate-200 bg-white p-3 sm:p-4 transition-all hover:border-emerald-400 hover:shadow-sm"
                     >
-                      <span className="flex h-9 w-9 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 transition-colors group-hover:group-hover:text-white">
+                      <span className="flex h-9 w-9 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-100 transition-colors group-hover:bg-emerald-700 group-hover:text-white">
                         <CatIcon aria-hidden className="h-5 w-5" strokeWidth={1.75} />
                       </span>
                       <span className="min-w-0">

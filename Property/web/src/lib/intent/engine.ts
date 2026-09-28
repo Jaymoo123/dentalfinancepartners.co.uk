@@ -108,7 +108,7 @@ function bookingOffer(token: string): IntentOffer {
   return {
     kind: "booking",
     title: "Pick your callback slot",
-    blurb: "It takes about 20 seconds and one of our accountants calls you at the time you choose.",
+    blurb: "It takes about 20 seconds and a specialist will call you at the time you choose.",
     href: `/book?t=${encodeURIComponent(token)}`,
     reason: "Your specialist callback is ready to book",
   };

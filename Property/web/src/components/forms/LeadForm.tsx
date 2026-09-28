@@ -441,7 +441,7 @@ export function LeadForm({
       </button>
 
       <p className="text-xs leading-relaxed text-slate-500">
-        We reply within 24 hours and one of our accountants comes back to you directly. You&apos;ll get a text and email from us straight away, and a quick reply confirms your callback.
+        We respond within 24 hours and store your details securely. You&apos;ll get a text and email from us straight away. A quick reply confirms your callback.
       </p>
     </form>
   );

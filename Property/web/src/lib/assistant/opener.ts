@@ -37,12 +37,12 @@ const TOPIC_HOOKS: Partial<Record<TopicKey, [string, string, string]>> = {
   "section-24": [
     "Section 24 catches a lot of landlords out. Want me to pull up the calculator that shows what it's actually costing you?",
     "Still getting your head round Section 24? I can point you to a plain-English run-through or the calculator, your call.",
-    "Section 24 is worth a second pair of eyes. One of our accountants will check where you stand, first call free and a fixed fee in writing if we take it on, shall I set that up?",
+    "Section 24 is worth a second pair of eyes. A specialist will check where you stand, first call free and a fixed fee in writing if we take it on, shall I set that up?",
   ],
   incorporation: [
     "Thinking about going limited? I can show you the real numbers before you commit either way.",
     "Incorporating suits some landlords and not others. Want me to line up the cost calculator so you can see for yourself?",
-    "The limited-company question is a big one to call alone. A free first call with one of our accountants will tell you if it stacks up for you, and if we take it on you get a fixed fee in writing first, want me to arrange it?",
+    "The limited-company question is a big one to call alone. A free first call with a specialist will tell you if it stacks up for you, and if we take it on you get a fixed fee in writing first, want me to arrange it?",
   ],
   "capital-gains": [
     "Working out the CGT on a sale? There's a calculator that does the fiddly part for you.",
@@ -62,7 +62,7 @@ const TOPIC_HOOKS: Partial<Record<TopicKey, [string, string, string]>> = {
   "landlord-essentials": [
     "Sorting your rental tax? I can point you to the right tool in a second.",
     "Want a hand getting your landlord tax straight? There's a calculator that makes it simple.",
-    "A free first call with one of our accountants will make sure nothing's slipping through the cracks, and if we take it on you get a fixed fee in writing first, want me to set one up?",
+    "A free first call with a specialist will make sure nothing's slipping through the cracks, and if we take it on you get a fixed fee in writing first, want me to set one up?",
   ],
   portfolio: [
     "Curious how your portfolio is really performing? There's a tool that lays it out.",

@@ -19,8 +19,8 @@ import BookingPicker from "@/components/forms/BookingPicker";
  */
 
 export const metadata: Metadata = {
-  title: `Book your first call`,
-  description: "Pick a time for your free first call with one of our property accountants.",
+  title: `Book your free review`,
+  description: "Pick a time for your free property tax review call.",
   robots: { index: false, follow: false },
 };
 
@@ -34,10 +34,10 @@ export default async function BookPage({
 
   return (
     <>
-      <SlimHero eyebrow="Free first call" title="Book your first call">
+      <SlimHero eyebrow="Free review" title="Book your free review call">
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-          Pick a day and a time window that suits you. An accountant will call you then, no
-          obligation.
+          Pick a day and a time window that suits you. A property tax specialist will call you then,
+          no obligation.
         </p>
       </SlimHero>
 
@@ -77,7 +77,7 @@ export default async function BookPage({
                 title="What the call covers"
                 items={[
                   "About twenty minutes, by phone, at the time you pick",
-                  "One of our accountants has read your enquiry before they ring",
+                  "Your specialist has read your enquiry before they ring",
                   "Where you stand on Section 24, CGT, MTD or incorporation",
                   "A fixed fee quote only if you want to go further",
                   "If your position is already right, we will say so",
