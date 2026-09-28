@@ -99,7 +99,7 @@ export function PortfolioProfitabilityCalculator() {
                       step="1000"
                       value={prop.rentalIncome}
                       onChange={(e) => updateProperty(prop.id, "rentalIncome", Number(e.target.value))}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>
@@ -117,7 +117,7 @@ export function PortfolioProfitabilityCalculator() {
                       step="1000"
                       value={prop.mortgageInterest}
                       onChange={(e) => updateProperty(prop.id, "mortgageInterest", Number(e.target.value))}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export function PortfolioProfitabilityCalculator() {
                       step="1000"
                       value={prop.otherExpenses}
                       onChange={(e) => updateProperty(prop.id, "otherExpenses", Number(e.target.value))}
-                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                      className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 text-base sm:text-lg font-bold text-slate-900 focus:border-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
                     />
                   </div>
                 </div>

@@ -156,7 +156,7 @@ function FieldGroup({ id, label, help, value, setValue, max }: FieldProps) {
           min={0}
           max={max}
           step={1000}
-          className="w-40 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+          className="w-40 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600"
         />
       </div>
     </div>

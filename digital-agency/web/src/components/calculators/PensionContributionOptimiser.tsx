@@ -197,7 +197,7 @@ function Field({
           min={0}
           max={max}
           step={500}
-          className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+          className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600"
         />
       </div>
       {hint && <p className="mt-1 text-xs text-slate-500">{hint}</p>}

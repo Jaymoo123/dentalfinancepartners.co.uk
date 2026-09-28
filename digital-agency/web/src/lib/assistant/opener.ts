@@ -56,7 +56,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   exit: [
     "Thinking about selling the agency and what CGT you would pay? I can pull up the exit and BADR model.",
     "Want the like-for-like bill with and without Business Asset Disposal Relief on your numbers? I can point you to it.",
-    "A specialist can talk through your exit, the BADR conditions and the April 2026 rate step in one free call, want me to arrange it?",
+    "One of our accountants can talk through your exit, the BADR conditions and the April 2026 rate step in one free call, want me to arrange it?",
   ],
   "compliance-vat": [
     "Checking whether the VAT Flat Rate Scheme is worth it for your agency? I can pull up the comparison.",
@@ -66,7 +66,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   structure: [
     "Weighing whether to incorporate your agency? There is a tool that shows the take-home either way.",
     "Want a hand seeing how your structure affects what you keep, with the employer NI and Employment Allowance in the mix? Happy to point you to it.",
-    "A specialist can get your structure decision straight in one free call, want me to arrange it?",
+    "One of our accountants can get your structure decision straight in one free call, want me to arrange it?",
   ],
 };
 
@@ -153,7 +153,7 @@ export function exitOpener(profile?: JourneyProfile): string {
   const t = profile?.primaryTopic;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Before you go: a specialist can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
+    return `Before you go: one of our accountants can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
   }
   return "Before you go: a free call with a specialist agency accountant is often the quickest way to get a straight answer. Fancy it?";
 }

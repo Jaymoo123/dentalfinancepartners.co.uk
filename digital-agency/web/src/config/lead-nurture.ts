@@ -321,7 +321,7 @@ const STEPS: LeadNurtureStep[] = [
         "Reply with a time that suits and one of our accountants will call you.",
         [
           "One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The call is a free review of where your agency stands, about 20 minutes, with no charge and no obligation.",
+          "The first call is free, about 20 minutes on where the agency stands, and there is no obligation at the end of it.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time works better around your client calls, tell us and we will fit around it.",
         ],
         "t0_email",
@@ -389,7 +389,7 @@ const STEPS: LeadNurtureStep[] = [
         "A short call usually surfaces something worth knowing about how your agency is set up.",
         [
           "A quick pointer while your enquiry is with us. Most agency founders we speak to are running lumpy revenue, a mix of retainers and project work, against a payroll that has to be met whether the invoices land on time or not. The setup that suits a steady trading company often does not suit that shape.",
-          "How the people doing client work are engaged, how profit comes out once you are no longer the main fee earner, and what an acquirer would actually look at, all behave differently in an agency. That is what your free review would cover.",
+          "How the people doing client work are engaged, how profit comes out once you are no longer the main fee earner, and what an acquirer would actually look at, all behave differently in an agency. That is what we would cover on your first call.",
           "Whenever suits, just reply with a day and a time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -436,7 +436,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are ready, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free review is still open, and if the last week has been wall to wall with client work, that is completely fine.",
+            "Just checking in, and there is genuinely no rush. Your first call is still open, and if the last week has been wall to wall with client work, that is completely fine.",
             "If something is holding you back, or the week simply ran away, a one-line reply is all it takes. Tell us a day and time that works, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -619,7 +619,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a large retainer starting or ending, a first round of salaried hires, or someone approaching you about buying the agency.`,
+            `If you would still like that first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a large retainer starting or ending, a first round of salaried hires, or someone approaching you about buying the agency.`,
             "All the best with the work.",
           ],
           "detail_capture_day7",

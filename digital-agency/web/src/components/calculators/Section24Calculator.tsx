@@ -55,7 +55,7 @@ export function Section24Calculator() {
                 step="1000"
                 value={rentalIncome}
                 onChange={(e) => setRentalIncome(Number(e.target.value))}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ export function Section24Calculator() {
                 step="1000"
                 value={mortgageInterest}
                 onChange={(e) => setMortgageInterest(Number(e.target.value))}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -93,7 +93,7 @@ export function Section24Calculator() {
                 step="1000"
                 value={otherExpenses}
                 onChange={(e) => setOtherExpenses(Number(e.target.value))}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
               />
             </div>
           </div>
@@ -106,7 +106,7 @@ export function Section24Calculator() {
               id="tax-band"
               value={taxBand}
               onChange={(e) => setTaxBand(e.target.value as typeof taxBand)}
-              className="w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-emerald-600 focus:outline-none transition-colors min-h-[44px]"
+              className="w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
             >
               <option value="basic">Basic rate (20%)</option>
               <option value="higher">Higher rate (40%)</option>

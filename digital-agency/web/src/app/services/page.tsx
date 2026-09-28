@@ -12,7 +12,7 @@ import { serviceTiers, siteStats } from "@/config/service-tiers";
 export const metadata: Metadata = {
   title: `Accounting Services for Agency Founders`,
   description:
-    "Specialist accounting and tax services for UK and UAE agency founders. Management accounts, tax planning, incorporation analysis, IR35 and R&D tax credits. Fixed fees, free consultation.",
+    "Specialist accounting and tax services for UK and UAE agency founders. Management accounts, tax planning, incorporation analysis, IR35 and R&D tax credits. Fixed fees, free first call.",
   alternates: {
     canonical: `${siteConfig.url}/services`,
     languages: {
@@ -307,7 +307,7 @@ export default function ServicesPage() {
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start max-w-6xl mx-auto">
             <div className="lg:pt-6">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-6">
-                Free consultation
+                Free first call, then a fixed fee in writing
               </div>
               <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
                 Ready to get your agency finances sorted?

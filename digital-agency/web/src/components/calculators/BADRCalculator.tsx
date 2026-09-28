@@ -78,7 +78,7 @@ export function BADRCalculator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="proc" type="number" value={saleProceeds} onChange={(e) => setSaleProceeds(Math.max(0, Number(e.target.value) || 0))} min={0} max={20000000} step={10000}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600" />
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export function BADRCalculator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="cost" type="number" value={originalCost} onChange={(e) => setOriginalCost(Math.max(0, Number(e.target.value) || 0))} min={0} max={5000000} step={100}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600" />
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export function BADRCalculator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="prev" type="number" value={previousBADRUsed} onChange={(e) => setPreviousBADRUsed(Math.max(0, Number(e.target.value) || 0))} min={0} max={BADR_LIFETIME_LIMIT} step={10000}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600" />
             </div>
           </div>
 

@@ -63,7 +63,7 @@ export function VATSchemeComparator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="t" type="number" value={turnover} onChange={(e) => setTurnover(Math.max(0, Number(e.target.value) || 0))} min={0} max={5000000} step={1000}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600" />
             </div>
           </div>
 
@@ -73,7 +73,7 @@ export function VATSchemeComparator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="i" type="number" value={vatInputs} onChange={(e) => setVatInputs(Math.max(0, Number(e.target.value) || 0))} min={0} max={500000} step={500}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600" />
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export function VATSchemeComparator() {
             <div className="mt-2 flex items-center gap-2">
               <span className="text-slate-500">£</span>
               <input id="g" type="number" value={goodsSpend} onChange={(e) => setGoodsSpend(Math.max(0, Number(e.target.value) || 0))} min={0} max={100000} step={100}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600" />
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600" />
             </div>
           </div>
         </div>

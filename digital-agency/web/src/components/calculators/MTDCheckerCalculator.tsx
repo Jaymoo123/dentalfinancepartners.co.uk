@@ -40,7 +40,7 @@ export function MTDCheckerCalculator() {
                 step="1000"
                 value={rentalIncome}
                 onChange={(e) => setRentalIncome(Number(e.target.value))}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
               />
             </div>
             <p className="mt-1 text-xs text-slate-500">Before expenses</p>
@@ -60,7 +60,7 @@ export function MTDCheckerCalculator() {
                 step="1000"
                 value={selfEmploymentIncome}
                 onChange={(e) => setSelfEmploymentIncome(Number(e.target.value))}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
               />
             </div>
             <p className="mt-1 text-xs text-slate-500">If applicable</p>
@@ -80,7 +80,7 @@ export function MTDCheckerCalculator() {
                 step="1000"
                 value={otherIncome}
                 onChange={(e) => setOtherIncome(Number(e.target.value))}
-                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus:outline-none transition-colors min-h-[44px]"
+                className="flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors min-h-[44px]"
               />
             </div>
             <p className="mt-1 text-xs text-slate-500">Optional</p>

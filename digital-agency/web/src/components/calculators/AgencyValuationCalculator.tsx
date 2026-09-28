@@ -97,7 +97,7 @@ export function AgencyValuationCalculator() {
                 min={0}
                 max={50000000}
                 step={10000}
-                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+                className="w-44 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600"
               />
             </div>
           </div>

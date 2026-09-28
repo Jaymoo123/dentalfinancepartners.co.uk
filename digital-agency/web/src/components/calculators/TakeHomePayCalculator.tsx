@@ -96,7 +96,7 @@ export function TakeHomePayCalculator() {
               min={0}
               max={1000000}
               step={500}
-              className="w-48 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+              className="w-48 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600"
             />
           </div>
           <input
@@ -124,7 +124,7 @@ export function TakeHomePayCalculator() {
                 min={0}
                 max={50}
                 step={0.5}
-                className="w-24 border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600"
+                className="w-24 border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600"
               />
               <span className="text-slate-500">% of gross</span>
             </div>
@@ -138,7 +138,7 @@ export function TakeHomePayCalculator() {
               id="plan"
               value={plan}
               onChange={(e) => setPlan(e.target.value as StudentLoanPlan)}
-              className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus:outline-none focus:border-indigo-600 bg-white"
+              className="w-full border border-slate-300 px-3 py-2 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600 bg-white"
             >
               <option value="none">None</option>
               <option value="plan1">Plan 1 (pre-2012 England/Wales)</option>

@@ -7,19 +7,19 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { JsonLd, referencedOrganization } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `Contact ${siteConfig.name} | Book Free Consultation`,
+  title: `Contact ${siteConfig.name} | Book a Free First Call`,
   description: `Contact ${siteConfig.name} for agency accounting enquiries. Tax planning, management accounts, IR35 and incorporation. 24-hour response. Enquire by form or email.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,
-    description: "Book a free consultation for agency accounting. 24-hour response time.",
+    description: "Free first call, then a fixed fee in writing. Agency accounting, 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `Contact ${siteConfig.name}`,
-    description: "Book a free consultation for agency accounting. 24-hour response time.",
+    description: "Free first call, then a fixed fee in writing. Agency accounting, 24-hour response time.",
   },
 };
 
@@ -112,7 +112,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white border-2 border-slate-200 p-6 sm:p-8 lg:p-10">
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free consultation</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free first call</h2>
               <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
             </div>
           </div>

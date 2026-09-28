@@ -94,7 +94,7 @@ export function EmployerNICalculator() {
                   type="text"
                   value={e.role}
                   onChange={(ev) => updateEmployee(e.id, { role: ev.target.value })}
-                  className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-indigo-600"
+                  className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600"
                 />
               </div>
               <div>
@@ -107,7 +107,7 @@ export function EmployerNICalculator() {
                     onChange={(ev) => updateEmployee(e.id, { salary: Math.max(0, Number(ev.target.value) || 0) })}
                     min={0}
                     step={500}
-                    className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-indigo-600"
+                    className="w-full border border-slate-300 px-3 py-2 text-sm text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 focus:border-indigo-600"
                   />
                 </div>
               </div>

@@ -93,7 +93,7 @@ function specialistOffer(topicKey: TopicKey): IntentOffer {
     title: "Speak to an agency finance specialist",
     blurb: `Get your specific ${label} position checked by a specialist agency accountant.`,
     href: "/contact",
-    reason: "You have spent real time here; a specialist can confirm your position",
+    reason: "You have spent real time here, one of our accountants can confirm your position",
   };
 }
 
