@@ -163,7 +163,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 status review for engineering contracts",
         body:
-          "We review your contract against the three key tests with specific knowledge of how engineering roles typically work in practice. Site-based roles, framework placements and specialist project work each have different risk profiles.",
+          "A specialist reviews your contract against the three key tests, with specific knowledge of how engineering roles typically work in practice. Site-based roles, framework placements and specialist project work each have different risk profiles.",
       },
       {
         title: "Travel and subsistence expense management",
@@ -235,7 +235,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 review for finance and interim roles",
         body:
-          "We review the specific nature of your engagement, not just the contract. Interim roles that are genuinely project-based with clear deliverables and limited integration look different from permanent headcount substitution, and we know which arguments work and which do not.",
+          "A specialist reviews the specific nature of your engagement, not just the contract. Interim roles that are genuinely project-based with clear deliverables and limited integration look different from permanent headcount substitution, and the specialist knows which arguments work and which do not.",
       },
       {
         title: "High-rate salary and dividend modelling",
@@ -302,7 +302,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Statement of work and engagement review",
         body:
-          "We review your engagement letters and statements of work against IR35 criteria. If you are engaged on a deliverables basis, we help you ensure the documentation reflects that clearly and consistently.",
+          "A specialist reviews your engagement letters and statements of work against the IR35 tests. If you are engaged on a deliverables basis, the documentation is checked so it reflects that clearly and consistently.",
       },
       {
         title: "Portfolio structure and multiple client planning",
@@ -364,7 +364,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Working practice review alongside contract review",
         body:
-          "We look at both what the contract says and how the role actually operates. For project managers, the practical reality of governance arrangements, reporting lines and how priorities are set is what drives the IR35 analysis.",
+          "A specialist looks at both what the contract says and how the role actually operates. For project managers, the practical reality of governance arrangements, reporting lines and how priorities are set is what drives the IR35 analysis.",
       },
       {
         title: "Inside IR35 structure optimisation",
@@ -374,7 +374,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "SDS challenge support",
         body:
-          "Where a client's status determination appears incorrect, we support the formal challenge process, reviewing the SDS, preparing the representation, and managing the 45-day response window.",
+          "Where a client's status determination appears incorrect, a specialist supports the formal challenge process, reviewing the SDS, preparing the representation, and managing the 45-day response window.",
       },
     ],
     faqs: [
@@ -489,7 +489,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 review for offshore and specialist roles",
         body:
-          "We review your specific working arrangements and engagement structure. For offshore specialists, the outside IR35 case is often well-supported. We help ensure it is documented to withstand HMRC scrutiny.",
+          "A specialist reviews your specific working arrangements and engagement structure. For offshore specialists, the outside IR35 case is often well-supported, and the documentation is checked so it would withstand HMRC scrutiny.",
       },
       {
         title: "International income and UK tax compliance",
@@ -551,7 +551,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 status review for legal placements",
         body:
-          "We review the engagement against the three key tests with specific reference to how locum and contract legal work operates in practice. The professional conventions and regulatory framework form part of the analysis.",
+          "A specialist reviews the engagement against the three key tests, with specific reference to how locum and contract legal work operates in practice. The professional conventions and regulatory framework form part of the analysis.",
       },
       {
         title: "PSC accounting for legal professionals",
@@ -613,7 +613,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 position review for creative engagements",
         body:
-          "We review your client mix, engagement structure and working practices to confirm your IR35 position. For small-client-focused creatives, this is often a relatively quick and straightforward exercise. For those with large corporate clients, we look more carefully at the specifics.",
+          "A specialist reviews your client mix, engagement structure and working practices to confirm your IR35 position. For small-client-focused creatives, this is often a relatively quick and straightforward exercise. For those with large corporate clients, the specifics are looked at more carefully.",
       },
       {
         title: "Limited company setup and ongoing accounting",
@@ -680,7 +680,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 review for construction and architecture engagements",
         body:
-          "We review each engagement against the IR35 tests independently of the CIS position. For project-based architects and specialist contractors, the outside IR35 position is often defensible. For site managers in longer-running employment-type roles, we give an honest assessment.",
+          "A specialist reviews each engagement against the IR35 tests independently of the CIS position. For project-based architects and specialist contractors, the outside IR35 position is often defensible. For site managers in longer-running employment-type roles, the assessment given is an honest one.",
       },
       {
         title: "Site expense management",

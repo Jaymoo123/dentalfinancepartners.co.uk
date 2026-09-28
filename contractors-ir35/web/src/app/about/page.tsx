@@ -85,7 +85,7 @@ export default function AboutPage() {
                   How you are looked after
                 </p>
                 <p className="mt-3 text-lg font-semibold leading-snug text-neutral-900">
-                  You deal with specialist accountants, not a call centre.
+                  Your enquiry goes to one specialist firm, not a call centre.
                 </p>
               </div>
             </div>

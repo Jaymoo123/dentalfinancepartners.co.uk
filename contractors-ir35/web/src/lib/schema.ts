@@ -2,6 +2,7 @@ import type { BlogPost } from "@/types/blog";
 import { siteConfig } from "@/config/site";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
 import { contractorTypes } from "@/data/contractor-types";
+import { niche } from "@/config/niche-loader";
 import {
   buildOrganization,
   referencedOrganization,
@@ -65,8 +66,8 @@ function siteOpts(): SiteSchemaOpts {
     siteName: siteConfig.name,
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
-    description: siteConfig.description,
-    organizationType: ["ProfessionalService", "AccountingService"],
+    description: niche.entity?.firm ?? siteConfig.description,
+    organizationType: "Organization",
     publisherLogoUrl: siteConfig.publisherLogoUrl,
     address: {
       "@type": "PostalAddress",

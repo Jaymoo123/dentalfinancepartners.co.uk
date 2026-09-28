@@ -141,12 +141,12 @@ const faqs = [
   {
     question: "How do I know if I'm inside or outside IR35?",
     answer:
-      "The three key tests are control (does the client direct how you do the work?), substitution (could you send someone else?), and mutuality of obligation (is there an expectation of continued work?). HMRC's CEST tool gives a result but is not definitive. We review your actual contract and working practices and give you a reasoned opinion.",
+      "The three key tests are control (does the client direct how you do the work?), substitution (could you send someone else?), and mutuality of obligation (is there an expectation of continued work?). HMRC's CEST tool gives a result but is not definitive. A specialist reviews your actual contract and working practices and sets out a reasoned opinion.",
   },
   {
     question: "Is it still worth running through a limited company?",
     answer:
-      "Outside IR35, almost always yes, though the gap is smaller than it is often described. Our own published model puts it at around £1,900 to £2,000 a year at £500 a day over 240 days (£6,000 of company expenses, a £1,200 umbrella margin), and at a few thousand pounds a year across most contractor day rates, before accountancy fees. Inside IR35, the gap narrows but there are still advantages: pension contributions via the PSC, the small salary band, and the option to work on other contracts outside IR35. We model both for every client.",
+      "Outside IR35, almost always yes, though the gap is smaller than it is often described. Our own published model puts it at around £1,900 to £2,000 a year at £500 a day over 240 days (£6,000 of company expenses, a £1,200 umbrella margin), and at a few thousand pounds a year across most contractor day rates, before accountancy fees. Inside IR35, the gap narrows but there are still advantages: pension contributions via the PSC, the small salary band, and the option to work on other contracts outside IR35. Both get modelled before anyone decides.",
   },
   {
     question: "How do you work out what a contractor needs?",
@@ -216,7 +216,7 @@ export default function HomePage() {
             </div>
             <div className="hero-reveal-delay">
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300 sm:text-xl">
-                We are specialist accountants for UK contractors and PSC directors. IR35 status reviews, salary and dividend planning, expenses, and pension strategy. We only work with contractors, so we understand the specifics that a generalist accountant will not.
+                We are a contractor-only tax publisher and an enquiry service. We write the guides and build the calculators here, and when you send an enquiry it goes to a firm in our specialist partner network that works only with contractors and PSC directors, rather than to a generalist. IR35 status reviews, salary and dividend planning, expenses, and pension strategy.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 {/* Primary CTA stays on the page. Only the header CTA and the
@@ -414,7 +414,7 @@ export default function HomePage() {
               What we do for contractors
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
-              We focus exclusively on contractors and PSC directors. That means our advice is grounded in how contracting works, not how a generic small business does.
+              We focus exclusively on contractors and PSC directors. That means everything here is grounded in how contracting works, not how a generic small business does.
             </p>
           </div>
           <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
