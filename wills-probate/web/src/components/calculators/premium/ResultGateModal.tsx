@@ -117,7 +117,7 @@ export function ResultGateModal({
             topic?.ctaCopy ||
             "Want a specialist to check your figure?"
           }
-          blurb="A calculator gives the shape of the answer. Inheritance tax reliefs, nil-rate bands and probate valuations are unforgiving in the detail. Tell us your situation and one of our accountants will confirm your exact figure and the sensible next step, with no obligation."
+          blurb="A calculator gives the shape of the answer. Inheritance tax reliefs, nil-rate bands and probate valuations are unforgiving in the detail. Tell us your situation and a probate specialist will confirm your exact figure and the sensible next step, with no obligation."
           submitLabel="Get my figure confirmed"
           successText="Thanks, we will be in touch within one working day. Your result is below."
           className="mt-2"

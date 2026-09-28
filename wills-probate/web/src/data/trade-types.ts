@@ -11,10 +11,6 @@ export interface TradeType {
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
   testimonial?: { quote: string; attribution: string };
-  /** Closing sentence on /for/<slug>. One per audience: a single shared line
-   *  read as a template across six different situations. */
-  closerHeading: string;
-  closerBody: string;
 }
 
 /**
@@ -66,7 +62,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist if you need one",
-        body: "If the estate turns out to be genuinely complex, with trusts, businesses or a dispute, one of our accountants takes the valuations and the inheritance tax return, and we introduce you to a regulated solicitor for the legal steps. No pressure either way.",
+        body: "If the estate turns out to be genuinely complex, with trusts, businesses or disputes, we can connect you with a vetted probate specialist. No pressure either way.",
       },
     ],
     faqs: [
@@ -81,8 +77,6 @@ export const tradeTypes: TradeType[] = [
           "No, but you are responsible for administering the estate correctly. The probate application fee (£526 for estates over £5,000) and any inheritance tax due are paid from the estate, not from your own money.",
       },
     ],
-    closerHeading: "Get the estate's numbers straight before you file.",
-    closerBody: "Send us what you know about the estate so far, even if the valuations are incomplete. One of our accountants will tell you whether inheritance tax is in play, which forms the estate actually needs, and what the deadlines are counting down from.",
   },
   {
     slug: "surviving-spouses",
@@ -124,7 +118,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "Updating your will",
-        body: "When you are ready, and only then, we will tell you what the tax side of a new will has to achieve, and introduce you to a regulated solicitor to draft it.",
+        body: "When you are ready, and only then, a vetted specialist can help you update your own will to match your new situation.",
       },
     ],
     faqs: [
@@ -139,8 +133,6 @@ export const tradeTypes: TradeType[] = [
           "It transfers. Your estate can claim their unused nil rate band on top of your own, up to £650,000 in total at current 2026/27 figures, and their unused residence nil rate band too, potentially another £350,000 combined if a home passes to children or grandchildren. The transfer has to be claimed properly by your executors.",
       },
     ],
-    closerHeading: "Nothing has to be decided this week.",
-    closerBody: "Tell us what was held jointly and what was held in your late spouse's sole name. One of our accountants will work out the transferable nil rate band position and what, if anything, has to be claimed and by when.",
   },
   {
     slug: "blended-families",
@@ -181,7 +173,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist who works with blended families",
-        body: "If you want the wills properly built, we price the inheritance tax effect of each option first, then introduce you to a regulated solicitor who drafts life interest arrangements for blended families.",
+        body: "If you want your wills properly built, we can connect you with a vetted specialist who works with blended families and structures like life interest arrangements.",
       },
     ],
     faqs: [
@@ -196,8 +188,6 @@ export const tradeTypes: TradeType[] = [
           "No. Stepchildren have no automatic inheritance rights under intestacy. They can qualify as \"direct descendants\" for the residence nil rate band, but only if the will is written so they actually inherit.",
       },
     ],
-    closerHeading: "Work out what each side actually inherits.",
-    closerBody: "Tell us who is in the family and what you want each of them to end up with. We will price the inheritance tax effect of the realistic options, then introduce you to a regulated solicitor to draft what you choose.",
   },
   {
     slug: "business-owners",
@@ -243,7 +233,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist in business succession",
-        body: "If the numbers are material, one of our accountants works through business relief, the shareholding and the succession plan with you, and brings in a regulated solicitor for the documents.",
+        body: "If the numbers are material, this is specialist territory, and we can connect you with a vetted firm that handles business succession and estate planning together.",
       },
     ],
     faqs: [
@@ -258,8 +248,6 @@ export const tradeTypes: TradeType[] = [
           "A binding sale agreement on death is a common and expensive drafting mistake that can destroy the relief entirely. How the business is held, and what the will and any shareholders' agreement say, matters significantly.",
       },
     ],
-    closerHeading: "Business relief is worth checking before you need it.",
-    closerBody: "Tell us what the business does, how the shares are held, and who you expect to run it next. One of our accountants will test the business relief position against the April 2026 cap and tell you what would need changing.",
   },
   {
     slug: "pension-holders-2027",
@@ -301,7 +289,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist if it is material",
-        body: "If the exposure is material, one of our accountants will work through the reliefs, the gifting position and the pension change with you.",
+        body: "If the exposure is material, we can connect you with a vetted estate planning specialist.",
       },
     ],
     faqs: [
@@ -316,8 +304,6 @@ export const tradeTypes: TradeType[] = [
           "Those leaving everything to a spouse or civil partner, because the spouse exemption continues to apply. Death in service benefits from registered pension schemes are excluded from the charge, and pensions remain a highly tax-efficient way to fund your own retirement.",
       },
     ],
-    closerHeading: "See what April 2027 does to your estate.",
-    closerBody: "Send us your pension values and the shape of the rest of the estate. One of our accountants will show you the figure before and after the 2027 change, and which of the options in front of you actually moves it.",
   },
   {
     slug: "expats",
@@ -362,7 +348,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist in cross-border estates",
-        body: "Cross-border estates are specialist work. We handle the UK tax and reporting side, and introduce you to a regulated firm for the law in the other jurisdiction.",
+        body: "Cross-border estates are specialist work, and we can connect you with a vetted firm that handles them.",
       },
     ],
     faqs: [
@@ -377,8 +363,6 @@ export const tradeTypes: TradeType[] = [
           "Worldwide exposure can continue for a tail of several years after you leave, longer for those who were UK resident for longer. If you are not a long-term UK resident, UK inheritance tax generally reaches only your UK assets, including UK residential property even when held through offshore structures.",
       },
     ],
-    closerHeading: "Two tax systems, one estate.",
-    closerBody: "Tell us where you live, where the assets are, and where you are domiciled for UK purposes. We handle the UK tax and reporting side, and introduce you to a regulated firm for the law where the assets sit.",
   },
 ];
 

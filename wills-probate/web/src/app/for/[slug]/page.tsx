@@ -219,10 +219,10 @@ export default async function TradeTypePage({
             <div>
               <div className="section-label mb-6">Get started</div>
               <h2 className="text-2xl font-bold text-white sm:text-4xl">
-                {type.closerHeading}
+                Talk to a specialist about your situation
               </h2>
               <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-                {type.closerBody} Free first call, then a fixed fee in writing.
+                Book a free call. We will talk through your position and whether there is anything worth changing. No hard sell, no obligation.
               </p>
               <div className="mt-8 space-y-3">
                 {[

@@ -47,7 +47,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   "probate-cost": [
     "Working out what probate is likely to cost? I can pull up the calculator that estimates it.",
     "Want a hand seeing how the estate value and complexity affect the probate cost? Happy to point you to it.",
-    "A free call with one of our accountants will confirm the likely cost and the quickest way through, want me to set one up?",
+    "A free call with a specialist will confirm the likely cost and the quickest way through, want me to set one up?",
   ],
   "do-i-need-probate": [
     "Not sure if this estate needs probate at all? I can pull up the quick checker.",

@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "Is this site a law firm or financial adviser?",
     answer:
-      `No. ${siteConfig.name} works the money side of wills, probate and inheritance tax, with free calculators and plain-English guides based on gov.uk, HMRC and HMCTS sources. Where you need a solicitor, we introduce you to a regulated firm we work with, only with your consent and only if you choose to.`,
+      `No. ${siteConfig.name} is an information service, not a law firm or financial adviser. We provide free calculators and plain-English guides based on gov.uk, HMRC and HMCTS sources. If your situation needs professional hands, we can connect you with a vetted specialist firm, but only with your consent and only if you choose to.`,
   },
 ];
 
@@ -165,7 +165,7 @@ export default function HomePage() {
             <Users className="h-8 w-8 text-orange-600" strokeWidth={1.75} aria-hidden />
             <h2 className="mt-4 text-xl font-bold text-neutral-900">Specialist help, when you want it</h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
-              We work the money side of wills, probate and inheritance tax. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side. You only hear from anyone if you send us an enquiry, and you can tell us to stop at any time.
+              We are an information service, not a law firm. If your situation needs professional hands, we can connect you with vetted specialist firms for wills, probate and estate planning. You only hear from anyone if you send us an enquiry, and you can tell us to stop at any time.
             </p>
           </div>
         </div>
@@ -276,17 +276,17 @@ export default function HomePage() {
         <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <div className="section-label mb-6">Want us to take it from here?</div>
+              <div className="section-label mb-6">Want a specialist to take it from here?</div>
               <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
                 Some estates need more than a calculator
               </h2>
               <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-neutral-200">
-                Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. Tell us a little about the estate and one of our accountants takes the money side from here, the valuations, the inheritance tax position and the return. Where the matter also needs a solicitor, we introduce you to a regulated firm we work with. It costs you nothing to ask, and there is no obligation.
+                Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. If you would like a professional to look at your situation, tell us a little about it and we will connect you with a vetted specialist firm. It costs you nothing to ask, and there is no obligation.
               </p>
               <div className="mt-8 space-y-4">
                 {[
                   { title: "You choose if and when", sub: "No pressure, no cold calls" },
-                  { title: "Our accountants on the money side", sub: "Valuations, inheritance tax and the estate return" },
+                  { title: "Vetted specialist firms only", sub: "Matched to wills, probate or estate planning as needed" },
                   { title: "Only if you ask us", sub: "Nothing is passed on unless you send an enquiry, and you can object at any time" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">
@@ -302,11 +302,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Tell us about the estate</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Get connected with a specialist</h3>
               {/* LeadForm renders siteConfig.leadConsentText itself (LeadForm.tsx:476);
                   the hand-rolled paragraph that used to sit here both duplicated it and
                   carried the old connector wording. */}
-              <LeadForm submitLabel="Send enquiry" />
+              <LeadForm submitLabel="Get connected with a specialist" />
             </div>
           </div>
         </div>

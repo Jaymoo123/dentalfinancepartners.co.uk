@@ -83,9 +83,9 @@ export default async function CompletePage({
           <div className="border border-orange-200 bg-orange-50 p-6 text-center">
             <p className="text-lg font-bold text-slate-900">You are all set</p>
             <p className="mt-2 text-base text-slate-700">
-              We have everything we need. Where a solicitor is needed, we introduce you to a
-              regulated firm we work with, and they will contact you directly. If you would like
-              to pick a time that suits you, you can book a callback below.
+              We have everything we need. A vetted regulated firm from our partner network will
+              contact you directly. If you would like to pick a time that suits you, you can book
+              a callback below.
             </p>
             {bookingToken && (
               <Link href={`/book?t=${bookingToken}`} className={`${btnPrimary} mt-4 text-base`}>
@@ -108,9 +108,8 @@ export default async function CompletePage({
             Complete your details
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-slate-700">
-            Add the last detail we need. Where a solicitor is needed, we introduce you to a
-            regulated firm we work with, and they will be in touch to arrange your free probate
-            review, no obligation.
+            Add the last detail we need and a vetted regulated firm from our partner network will
+            be in touch to arrange your free probate review, no obligation.
           </p>
           <div className="mt-10">{inner}</div>
         </div>

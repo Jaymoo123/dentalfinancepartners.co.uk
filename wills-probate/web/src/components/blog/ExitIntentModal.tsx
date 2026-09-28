@@ -130,7 +130,7 @@ export function ExitIntentModal() {
 
   const heading = topic?.ctaCopy || "Get a free review of your situation";
   const blurb =
-    "Tell us where to reach you and a one-line summary of your situation. One of our accountants will reply within 24 hours, with no obligation.";
+    "Tell us where to reach you and a one-line summary of your situation. A probate specialist will reply within 24 hours, with no obligation.";
 
   return (
     <div

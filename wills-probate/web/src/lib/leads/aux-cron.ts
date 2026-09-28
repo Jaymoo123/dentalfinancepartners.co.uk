@@ -92,7 +92,7 @@ export function buildIcsForSlot(params: IcsSlotParams): string {
 
   const uid     = `${params.leadId}-${params.date}-${params.windowKey}@estateplanningspecialists.co.uk`;
   const summary = `Probate review call (${params.label})`;
-  const desc    = "An accountant will call you in this window. Nothing to prepare.";
+  const desc    = "A specialist will call you in this window. Nothing to prepare.";
 
   return [
     "BEGIN:VCALENDAR",
@@ -315,7 +315,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
               try {
                 const body =
                   `Hi ${firstName}, your free probate review call is later today, ${label}. ` +
-                  `Your accountant will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
+                  `Your specialist will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
 
                 const result = await sender.send({
                   channel: "sms",

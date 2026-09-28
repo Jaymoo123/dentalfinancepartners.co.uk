@@ -74,7 +74,7 @@ export default function InheritanceTaxPage() {
               href="/contact"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-medium text-white hover:bg-white/20 transition-colors ${focusRing}`}
             >
-              Talk to one of our accountants
+              Talk to a vetted estate planning specialist
             </Link>
           </div>
         </div>
@@ -284,8 +284,8 @@ export default function InheritanceTaxPage() {
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 Run the IHT threshold calculator to see your estate against the 2026/27 allowances, then the
                 pensions IHT 2027 estimator to see how the April 2027 change moves your number. If the result
-                worries you, one of our accountants will look at the whole picture with you: the reliefs, the
-                gifting position and what the pension change does to your estate.
+                worries you, we will connect you with a vetted estate planning specialist who can look at the
+                whole picture.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href={toolPath("iht-threshold-calculator")} className={btnPrimary}>

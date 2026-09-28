@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: `About ${siteConfig.name} | Who We Are and How We Work` },
-  description: `${siteConfig.name} covers the money side of UK wills, probate and inheritance tax. What we do, how we work, and how we keep our guides accurate.`,
+  description: `${siteConfig.name} is a free information service for UK wills, probate and inheritance tax. What we do, what we don't, and how we keep our guides accurate.`,
   alternates: { canonical: `${siteConfig.url}/about` },
 };
 
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className={siteContainerLg}>
           <p className="eyebrow text-orange-400">About us</p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            The money side of wills, probate and inheritance tax.
+            A free information service for wills, probate and inheritance tax.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             We built {siteConfig.name} because this is an area where people need clear answers at difficult moments, and too much of what exists online is either sales material dressed up as guidance, or official documentation written for professionals.
@@ -31,7 +31,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">Who we are</h2>
               <p>
-                {siteConfig.name} covers the money side of wills, probate, inheritance tax and estate planning in the UK: free calculators, plain-English guides, and our accountants when you need them. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side. Every substantive page is checked against official sources before it is published.
+                {siteConfig.name} is a free information service covering wills, probate, inheritance tax and estate planning in the UK. We are not a law firm and we do not present ourselves as one. The site is built and maintained as an editorial service, with input from specialists in wills, probate and tax, and every substantive page is checked against official sources before it is published.
               </p>
               <p>
                 {siteConfig.name} is a trading name of Ashfield Trading Ltd, a company registered in England and Wales.
@@ -48,7 +48,7 @@ export default function AboutPage() {
                   <span className="font-semibold text-neutral-900">Plain-English guides.</span> Step-by-step explanations of probate, wills, inheritance tax and estate planning, written from official source material and kept current.
                 </li>
                 <li>
-                  <span className="font-semibold text-neutral-900">Our accountants, and a solicitor when you need one.</span> Where the matter needs a solicitor, we introduce you to a regulated firm we work with. This only ever happens with your consent.
+                  <span className="font-semibold text-neutral-900">Specialist connections.</span> If you want professional help, we can connect you with vetted specialist firms. This only ever happens with your consent.
                 </li>
               </ul>
             </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                   <span className="font-semibold text-neutral-900">We do not provide legal or financial advice.</span> Everything on this site is general information. It cannot take account of your personal circumstances, and it is not a substitute for advice from a qualified professional.
                 </li>
                 <li>
-                  <span className="font-semibold text-neutral-900">We do not draft wills or represent you in court.</span> That is the solicitor's job; we stay on the money side and introduce you to one when it is needed.
+                  <span className="font-semibold text-neutral-900">We do not write wills, administer estates or handle probate applications.</span> That work belongs with specialist firms.
                 </li>
                 <li>
                   <span className="font-semibold text-neutral-900">We do not sell financial products.</span> No equity release, no investments, no insurance.
@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we make money</h2>
               <p>
-                Honesty about this matters to us. If we introduce you to a solicitor and you go on to use their services, we may receive a fee from that firm. This never changes what you pay, and it never changes what our guides and calculators say. The tools and content are free for everyone, whether or not you ever speak to us or a solicitor.
+                Honesty about this matters to us. If you ask us to connect you with a specialist firm and you go on to use their services, we may receive a fee from that firm. This never changes what you pay, and it never changes what our guides and calculators say. The tools and content are free for everyone, whether or not you ever speak to a specialist.
               </p>
             </div>
 
@@ -109,13 +109,13 @@ export default function AboutPage() {
         <div className={siteContainerLg}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">Tell us what you are dealing with.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Whether you are an executor part way through an estate or working out what your own will needs to do, one of our accountants will read what you send and come back to you directly. Free first call, then a fixed fee in writing.</p>
+              <div className="section-label mb-6">Want a specialist to take it from here?</div>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Some estates need more than a calculator</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. If you would like a professional to look at your situation, tell us a little about it and we will connect you with a vetted specialist firm. It costs you nothing to ask, and there is no obligation.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Send us your situation</h3>
-              <LeadForm submitLabel="Send enquiry" />
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Get connected with a specialist</h3>
+              <LeadForm submitLabel="Get connected with a specialist" />
             </div>
           </div>
         </div>

@@ -105,7 +105,7 @@ export default function ForIndexPage() {
                 The same probate process applies to every estate, but how it plays out depends on the family situation, the size and type of the estate, and whether inheritance tax is due. A surviving spouse has different reliefs available to a business owner. A blended family needs different will planning to a straightforward estate.
               </p>
               <p>
-                We explain the general position for each situation in plain English, and take the money side ourselves when the estate needs more than a guide.
+                We explain the general position for each situation in plain English, and point you to the right specialist help when the estate is complex.
               </p>
             </div>
             <div className="mt-8">
@@ -124,13 +124,13 @@ export default function ForIndexPage() {
         <div className={siteContainerLg}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl">Your situation, not a category.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-300">None of these pages will match your estate exactly. Tell us the parts that do not fit, and one of our accountants will tell you what the money side actually requires in your case.</p>
+              <div className="section-label mb-6">Want a specialist to take it from here?</div>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Some estates need more than a calculator</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. If you would like a professional to look at your situation, tell us a little about it and we will connect you with a vetted specialist firm. It costs you nothing to ask, and there is no obligation.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Tell us about the estate</h3>
-              <LeadForm submitLabel="Send enquiry" />
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Get connected with a specialist</h3>
+              <LeadForm submitLabel="Get connected with a specialist" />
             </div>
           </div>
         </div>

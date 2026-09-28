@@ -73,7 +73,7 @@ export default function WillsPage() {
               href="/contact"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-medium text-white hover:bg-white/20 transition-colors ${focusRing}`}
             >
-              Speak to one of our accountants
+              Get matched with a vetted will specialist
             </Link>
           </div>
         </div>
@@ -286,8 +286,8 @@ export default function WillsPage() {
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 Work through the making a will checklist to map out exactly what your will needs to do. If
                 your situation turns out to be simple, you will know a low cost route is safe. If it is not,
-                we will tell you what the tax and ownership side actually requires, and introduce you to a
-                regulated solicitor we work with for the drafting itself.
+                we will connect you with a vetted will specialist who deals with situations like yours every
+                week.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href={toolPath("making-a-will-checklist")} className={btnPrimary}>

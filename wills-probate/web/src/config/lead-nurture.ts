@@ -296,7 +296,6 @@ const STEPS: LeadNurtureStep[] = [
           "Just reply with a time that suits and a member of the team will call you.",
           [
             "Thanks for your enquiry, it has just come through to us and a member of the team is ready to help.",
-            "One of our accountants will call you within 24 hours, Monday to Friday.",
             `The call is a free conversation about your situation, around 20 minutes, with no charge and no obligation. ${callScopeLine(role)}`,
             role === "bereaved"
               ? "Whenever you feel ready, just reply to this email, anything at all, and we will arrange your call. There is no time limit on this and no pressure from us."
@@ -340,7 +339,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Estate Planning Specialists again. Situations like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Estate Planning Specialists again. Situations like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
