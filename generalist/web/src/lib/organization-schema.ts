@@ -26,6 +26,17 @@ export function buildOrganizationJsonLd() {
     sameAs: [
       `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
     ],
+    // Opco parent, same shape the shared buildOrganization() emits for
+    // opts.parentOrganization (packages/web-shared/schema/organization.ts).
+    parentOrganization: {
+      "@type": "Organization",
+      name: siteConfig.company.legalName,
+      identifier: {
+        "@type": "PropertyValue",
+        propertyID: "GB Companies House Number",
+        value: siteConfig.company.number,
+      },
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: `${office.line1}, ${office.line2}`,

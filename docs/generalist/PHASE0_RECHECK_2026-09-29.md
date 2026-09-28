@@ -117,3 +117,47 @@ Exempt, not a finding.
 ## Estate summariser note (2026-09-29)
 Final status: SAFE AFTER FIXES.
 Blocking item: parentOrganization missing from lib/schema.ts (M3) and the three rewritten ResultCaptureForm strings (M1).
+
+## Fix round (2026-09-29)
+
+1. **M1, `generalist/web/src/components/calculators/ResultCaptureForm.tsx:21,22,24`.** Three agent-rewritten strings restored verbatim from base `generalist/web/src/components/calculators/premium/ResultGateModal.tsx:106-108` (`git show 8e1043d0:...`).
+   - Line 21 `heading` fallback. Before: "Want one of our accountants to check your figure?" After (base): "Want a specialist to check your figure?"
+   - Line 22 `blurb`. Before: "A calculator gives the shape of the answer. Tell us your situation and one of our accountants will confirm your exact figure and the legitimate ways to reduce it, with no obligation." After (base): "A calculator gives the shape of the answer. Tell us your situation and a specialist will confirm your exact figure and the legitimate ways to reduce it, with no obligation."
+   - Line 24 `successText`. Before: "Sent. Check your email and phone now, we have just messaged you to arrange your free first call." After (base): "Thanks, we'll be in touch within 24 hours. Your result is below."
+   - `submitLabel` (line 23) was already base text ("Get my figure confirmed"), untouched.
+
+2. **M3, `generalist/web/src/lib/organization-schema.ts`.** `buildOrganizationJsonLd()` (used by `app/layout.tsx:104`, the actual rendered node) spreads the shared `buildOrganization()` output and overrides `legalName`/`alternateName`/`sameAs`/`address` directly, bypassing the shared builder's own `opts.parentOrganization` handling (`lib/schema.ts:95` `getSiteOpts()` doesn't set it either, confirming the recheck's finding). Added a `parentOrganization` key to the returned object, in the exact shape `packages/web-shared/schema/organization.ts:42-59` emits for `opts.parentOrganization` (an `"@type": "Organization"` node with `name` and an `identifier` PropertyValue for the Companies House number), sourced from `siteConfig.company.legalName` ("Ashfield Trading Ltd") and `siteConfig.company.number` ("16358723", from `niche.config.json`).
+
+   Emitted JSON, before:
+   ```json
+   {
+     "@context": "https://schema.org",
+     "@type": "ProfessionalService",
+     "@id": "<siteUrl>#organization",
+     "name": "Holloway Davies",
+     "alternateName": "<tradingName>",
+     "url": "<siteUrl>",
+     "legalName": "Ashfield Trading Ltd",
+     "description": "...", "logo": {...}, "image": "...", "email": "...",
+     "areaServed": {...}, "knowsAbout": [...11 items...], "slogan": "...",
+     "sameAs": ["https://find-and-update.company-information.service.gov.uk/company/16358723"],
+     "address": { "@type": "PostalAddress", ... }
+   }
+   ```
+   After: identical, plus one new top-level key, no existing field removed or reordered:
+   ```json
+   "parentOrganization": {
+     "@type": "Organization",
+     "name": "Ashfield Trading Ltd",
+     "identifier": {
+       "@type": "PropertyValue",
+       "propertyID": "GB Companies House Number",
+       "value": "16358723"
+     }
+   }
+   ```
+   Diff summary: additive only, `parentOrganization` added, every field the harness's "27/27 FAIL" row and the M3 finding table listed (`name`, `alternateName`, `url`, `legalName`, `description`, `logo`, `image`, `email`, `areaServed`, `knowsAbout`, `slogan`, `sameAs`, `address`) survives unchanged.
+
+3. Both `tsc` and `vitest` rerun after the M1 + M3 fixes:
+   - tsc: `npx tsc --noEmit -p generalist/web` — 0 errors.
+   - vitest: `npx vitest run` in `generalist/web` — 23 files, 309/309 tests passed. No test asserted the removed agent strings, so no test expectations were changed.

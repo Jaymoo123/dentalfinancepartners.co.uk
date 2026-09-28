@@ -18,10 +18,10 @@ export function ResultCaptureForm({ campaign }: { campaign: string }) {
     <MiniCapture
       formId="calc_result_form"
       messagePrefix={`[Result form: ${campaign}]`}
-      heading={topic?.ctaCopy || "Want one of our accountants to check your figure?"}
-      blurb="A calculator gives the shape of the answer. Tell us your situation and one of our accountants will confirm your exact figure and the legitimate ways to reduce it, with no obligation."
+      heading={topic?.ctaCopy || "Want a specialist to check your figure?"}
+      blurb="A calculator gives the shape of the answer. Tell us your situation and a specialist will confirm your exact figure and the legitimate ways to reduce it, with no obligation."
       submitLabel="Get my figure confirmed"
-      successText="Sent. Check your email and phone now, we have just messaged you to arrange your free first call."
+      successText="Thanks, we'll be in touch within 24 hours. Your result is below."
       className="mt-4"
       messagePlaceholder="The more detail the better. Tell us about your situation, rough figures, and what you're trying to work out. A couple of sentences is ideal."
     />
