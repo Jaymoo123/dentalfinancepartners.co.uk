@@ -109,11 +109,11 @@ export default async function AudiencePage({
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           contained
-          eyebrow="Free consultation"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Talk to a specialist about your situation"
-          description="Book a free consultation. No obligation, no hard sell."
+          description="Book a free first call. No obligation, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts."
           proofPoints={[]}
-          formTitle="Book your free consultation"
+          formTitle="Book your free first call"
           submitLabel="Request callback"
         />
       </div>

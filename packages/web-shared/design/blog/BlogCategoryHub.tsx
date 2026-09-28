@@ -206,7 +206,7 @@ export function BlogCategoryHub({
                 data-cta-goal="form"
                 className={btnPrimary}
               >
-                Book free consultation
+                Book your free first call
               </Link>
               <Link
                 href="#articles"

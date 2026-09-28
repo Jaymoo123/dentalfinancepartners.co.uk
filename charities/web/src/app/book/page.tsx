@@ -28,10 +28,10 @@ export default async function BookPage({
 
   return (
     <>
-      <SlimHero eyebrow="Your callback" title="Book your free review call">
+      <SlimHero eyebrow="Your callback" title="Book your free first call">
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
           Pick a day and a time window that suits you. A charity finance specialist will call you
-          then, no obligation.
+          then, no obligation. If we take the work on, you get a fixed fee in writing before anything starts.
         </p>
       </SlimHero>
 

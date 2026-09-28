@@ -768,10 +768,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "One pointer while you decide",
-          "Two reliefs landlords often miss, and a free call if you want one.",
+          "Two reliefs landlords often miss, and a free first call if you want one.",
           [
             "One quick pointer while your enquiry sits with us. The two reliefs landlords most often miss on Self Assessment are replacement of domestic items and pre-letting expenses. Worth checking you claim both, whoever handles your tax.",
-            `And if you'd rather a specialist looked at the whole picture, just reply with ${ask} and I'll set up a free call.`,
+            `And if you'd rather a specialist looked at the whole picture, just reply with ${ask} and I'll set up a free first call. If we take the work on, you get a fixed fee in writing before anything starts.`,
           ],
           "detail_capture_day3",
           {

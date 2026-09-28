@@ -501,11 +501,11 @@ export default function UKContractorIndexPage() {
         <LeadCTAPanel
           contained
           ground={groundFor("book") === "bg-white" ? "white" : "slate"}
-          eyebrow="Free call"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Going limited? Model your take-home first."
           description="The rise in contractor-sector companies reflects how most independent professionals now work: through their own limited company. Whether that is right for you turns on your IR35 status. Our calculators show what you would actually keep, inside or outside IR35, on 2026/27 rates."
           proofPoints={[]}
-          formTitle="Book your free call"
+          formTitle="Book your free first call"
           form={<LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />}
           footnote={
             <span className="flex flex-wrap gap-x-6 gap-y-2 font-semibold">

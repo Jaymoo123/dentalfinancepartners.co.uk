@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: `Contact ${siteConfig.name}`,
-    description: "Book free consultation for landlord accounting. 24-hour response time.",
+    description: "Free first call, then a fixed fee in writing. Landlord accounting, 24-hour response time.",
     url: `${siteConfig.url}/contact`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `Contact ${siteConfig.name}`,
-    description: "Book free consultation for landlord accounting. 24-hour response time.",
+    description: "Free first call, then a fixed fee in writing. Landlord accounting, 24-hour response time.",
   },
 };
 
@@ -100,11 +100,11 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-xl bg-white border-2 border-slate-200 p-6 sm:p-8 lg:p-10">
-              <Eyebrow>No obligation</Eyebrow>
+              <Eyebrow>Free first call, then a fixed fee in writing</Eyebrow>
               {/* Ours (7ab42441): the heading follows the live CTA variant. Their
                   h2 classes, our ternary wrapped back around the text. */}
               <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl mb-4 sm:mb-6">
-                {isPackagesMode(niche) ? "Send your enquiry" : "Book your free consultation"}
+                {isPackagesMode(niche) ? "Send your enquiry" : "Book your free first call"}
               </h2>
               <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
             </div>

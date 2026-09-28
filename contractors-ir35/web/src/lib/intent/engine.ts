@@ -79,7 +79,7 @@ function toolOffer(topicKey: TopicKey): IntentOffer | null {
   };
 }
 
-/** Build the "review" offer (a free, no-obligation review, routed via /contact). */
+/** Build the "review" offer (a free first call, then a fixed fee in writing, routed via /contact). */
 function reviewOffer(
   topicKey: TopicKey,
   reason = "You've spent real time on this, a quick review will confirm where you stand",
@@ -89,7 +89,7 @@ function reviewOffer(
   return {
     kind: "specialist",
     title: t.ctaCopy,
-    blurb: "A free, no-obligation review of your contractor tax position with a specialist accountant.",
+    blurb: "A free, no-obligation first call on your contractor tax position with a specialist accountant, then a fixed fee in writing if we take the work on.",
     href: "/contact",
     reason,
   };

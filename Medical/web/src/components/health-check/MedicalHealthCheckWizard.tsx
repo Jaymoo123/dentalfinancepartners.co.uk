@@ -411,7 +411,7 @@ export function MedicalHealthCheckWizard() {
       {step === 6 && (
         <div>
           <h2 className="text-xl font-bold text-[var(--ink)] sm:text-2xl">Where should we send your results?</h2>
-          <p className="mt-2 text-sm text-[var(--muted)]">Your findings appear on screen immediately. We will follow up once with the full report and an offer of a free 30-minute call. No drip sequences.</p>
+          <p className="mt-2 text-sm text-[var(--muted)]">Your findings appear on screen immediately. We will follow up once with the full report and an offer of a free 30-minute first call. If we take the work on, you get a fixed fee in writing before anything starts. No drip sequences.</p>
           <div className="mt-6 space-y-4">
             <div>
               <label className="block text-sm font-semibold text-[var(--ink)] mb-1.5">Name</label>

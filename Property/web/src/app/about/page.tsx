@@ -118,7 +118,7 @@ export default function AboutPage() {
                 data-cta-placement="hero"
                 className={`${btnPrimary} bg-emerald-600 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}
               >
-                Book your free consultation
+                Book your free first call
               </Link>
             </div>
           </div>

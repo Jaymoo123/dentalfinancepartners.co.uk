@@ -233,7 +233,7 @@ export default function HomePage() {
                   data-cta-placement="hero"
                   data-cta-goal="form"
                 >
-                  Book a free call
+                  Book a free first call
                 </Link>
                 <Link
                   href="/ir35-status"
@@ -579,11 +579,11 @@ export default function HomePage() {
         <LeadCTAPanel
           contained
           ground="slate"
-          eyebrow="Free call"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Get your contractor finances properly sorted"
-          description="Book a free call. We will talk through your IR35 position, your current structure and whether there are things worth changing. No hard sell, no obligation."
+          description="Book a free first call. We will talk through your IR35 position, your current structure and whether there are things worth changing. No hard sell, no obligation. If we take the work on, you get a fixed fee in writing before anything starts."
           proofPoints={[]}
-          formTitle="Book your free call"
+          formTitle="Book your free first call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             /* KNOWN CONTRACT: PanelBody renders `footnote` inside a <p>, so a

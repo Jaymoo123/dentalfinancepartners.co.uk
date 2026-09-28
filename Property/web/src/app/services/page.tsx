@@ -231,8 +231,8 @@ export default function ServicesPage() {
                 well as advisory). */}
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
               Whether you need your Self Assessment filed or your reporting set up for Making Tax Digital,
-              a free consultation shows you where the money is leaking and what fixing it costs, all
-              within 24 hours.
+              a free first call shows you where the money is leaking and what fixing it costs, all
+              within 24 hours. If we take the work on, you get a fixed fee in writing before anything starts.
             </p>
             <Link
               href="#book"
@@ -241,7 +241,7 @@ export default function ServicesPage() {
               data-cta-goal="form"
               className={`${btnPrimary} mt-6 w-full sm:mt-8 sm:w-auto`}
             >
-              Book free consultation
+              Book your free first call
             </Link>
           </div>
         </div>

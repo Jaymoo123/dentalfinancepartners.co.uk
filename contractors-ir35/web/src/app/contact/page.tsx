@@ -8,7 +8,7 @@ import ContractorsBackdrop from "@/components/layout/ContractorsBackdrop";
 export const metadata: Metadata = {
   title: "Contact | Book a Free Contractor Accountant Call",
   description:
-    "Book a free call with a specialist contractor accountant. IR35 status reviews, limited company tax and contractor finances. No obligation.",
+    "Book a free first call with a specialist contractor accountant. IR35 status reviews, limited company tax and contractor finances. No obligation, and a fixed fee in writing before any work starts.",
   alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
@@ -28,10 +28,10 @@ export default function ContactPage() {
               Get in touch
             </p>
             <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Book a free call.
+              Book a free first call.
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-neutral-300">
-              Talk through your IR35 position, your current structure, or any contractor tax question. No hard sell, no obligation.
+              Talk through your IR35 position, your current structure, or any contractor tax question. No hard sell, no obligation. If we take the work on, you get a fixed fee in writing before anything starts.
             </p>
             <Link
               href="#book"
@@ -40,7 +40,7 @@ export default function ContactPage() {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free call
+              Book a free first call
             </Link>
           </div>
         </div>

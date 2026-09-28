@@ -17,11 +17,11 @@ type ProofPoint = { title: string; detail: string };
  * reading, at the moment the argument has landed.
  */
 export function LeadCTAPanel({
-  eyebrow = "Free consultation",
+  eyebrow = "Free first call, then a fixed fee in writing",
   title,
   description,
   proofPoints,
-  formTitle = "Book your free consultation",
+  formTitle = "Book your free first call",
   submitLabel = "Request callback",
   footnote,
   contained = false,

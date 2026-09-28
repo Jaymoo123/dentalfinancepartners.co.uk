@@ -133,7 +133,7 @@ export default function ServicesPage() {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free call
+              Book a free first call
             </Link>
           </div>
         </div>
@@ -211,11 +211,11 @@ export default function ServicesPage() {
         <LeadCTAPanel
           contained
           ground="slate"
-          eyebrow="Free call"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Ready to talk through your situation?"
           description="Book a free introductory call. We will review your position and tell you plainly what we would do differently."
           proofPoints={[]}
-          formTitle="Book your free call"
+          formTitle="Book your free first call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             /* KNOWN CONTRACT: PanelBody renders `footnote` inside a <p>, so a

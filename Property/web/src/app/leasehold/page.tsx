@@ -560,7 +560,7 @@ export default function LeaseholdPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Check the tax before you serve notice"
-          description="Book a free consultation. We will look at the stamp duty on the premium, the surcharge position, and what the extension does to your eventual capital gains tax."
+          description="Book a free first call. We will look at the stamp duty on the premium, the surcharge position, and what the extension does to your eventual capital gains tax."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },

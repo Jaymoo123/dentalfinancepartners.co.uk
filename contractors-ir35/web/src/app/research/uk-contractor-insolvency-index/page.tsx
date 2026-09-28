@@ -420,11 +420,11 @@ export default function UKContractorInsolvencyIndexPage() {
         <LeadCTAPanel
           contained
           ground={groundFor("book") === "bg-white" ? "white" : "slate"}
-          eyebrow="Free call"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Between contracts or worried about a client going under? Get your position right."
           description="Rising insolvency in the contractor-heavy parts of the economy affects everyone in the payment chain, including limited-company contractors waiting on invoices. Understanding your IR35 status, your company's reserves, and your own tax position is a practical buffer against client-side financial difficulties. Our calculators help you model what you would keep, inside or outside IR35."
           proofPoints={[]}
-          formTitle="Book your free call"
+          formTitle="Book your free first call"
           form={<LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />}
           footnote={
             <span className="flex flex-wrap gap-x-6 gap-y-2 font-semibold">

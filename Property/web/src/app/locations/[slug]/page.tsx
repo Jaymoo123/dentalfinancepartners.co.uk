@@ -957,13 +957,13 @@ export default async function LocationPage({ params }: Props) {
                 How to get started
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-700">
-                Book a free consultation to discuss your property tax situation. We&apos;ll give you clear
+                Book a free first call to discuss your property tax situation. We&apos;ll give you clear
                 recommendations, with no obligation and no hard sell. What it costs depends on the size and structure
-                of your portfolio, so we will talk that through rather than quote blind.
+                of your portfolio, so we will talk that through rather than quote blind. If we take the work on, you get a fixed fee in writing before anything starts.
               </p>
               <div className="mt-6">
                 <Link href="#book" className={`${btnPrimary} inline-flex text-base px-8 py-3.5`}>
-                  Book your free consultation
+                  Book your free first call
                 </Link>
               </div>
             </div>

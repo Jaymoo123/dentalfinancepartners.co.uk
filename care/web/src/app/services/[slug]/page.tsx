@@ -127,7 +127,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <LeadCTAPanel
         contained
         ground="slate"
-        eyebrow="Free call"
+        eyebrow="Free first call, then a fixed fee in writing"
         title={`Talk to a care sector specialist about ${service.title}`}
         description="Tell us about your situation and we will reply within 24 hours."
         proofPoints={[]}

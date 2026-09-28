@@ -37,56 +37,56 @@ const TOPIC_HOOKS: Partial<Record<TopicKey, [string, string, string]>> = {
   "section-24": [
     "Section 24 catches a lot of landlords out. Want me to pull up the calculator that shows what it's actually costing you?",
     "Still getting your head round Section 24? I can point you to a plain-English run-through or the calculator, your call.",
-    "Section 24 is worth a second pair of eyes. A specialist will check where you stand, free and no pressure, shall I set that up?",
+    "Section 24 is worth a second pair of eyes. A specialist will check where you stand, first call free and a fixed fee in writing if we take it on, shall I set that up?",
   ],
   incorporation: [
     "Thinking about going limited? I can show you the real numbers before you commit either way.",
     "Incorporating suits some landlords and not others. Want me to line up the cost calculator so you can see for yourself?",
-    "The limited-company question is a big one to call alone. A free chat with a specialist will tell you if it stacks up for you, want me to arrange it?",
+    "The limited-company question is a big one to call alone. A free first call with a specialist will tell you if it stacks up for you, and if we take it on you get a fixed fee in writing first, want me to arrange it?",
   ],
   "capital-gains": [
     "Working out the CGT on a sale? There's a calculator that does the fiddly part for you.",
     "CGT has a few reliefs people miss. Want me to point you to the calculator and the guide?",
-    "Before you put a figure on a sale, a specialist can sanity-check the CGT for you, free. Fancy a quick call?",
+    "Before you put a figure on a sale, a specialist can sanity-check the CGT for you on a free first call, with a fixed fee in writing if we take it on. Fancy a quick call?",
   ],
   "stamp-duty": [
     "Stamp duty surcharges trip people up. Want me to work it out for the place you're looking at?",
     "Happy to pull up the stamp duty calculator for your purchase, want me to?",
-    "A specialist can confirm your stamp duty position so there are no surprises at completion, free, shall I arrange it?",
+    "A specialist can confirm your stamp duty position so there are no surprises at completion, free first call and a fixed fee in writing if we take it on, shall I arrange it?",
   ],
   mtd: [
     "Making Tax Digital is coming for landlords. Want to check if and when it actually hits you?",
     "Not sure where you stand with MTD? I can run you through the quick checker.",
-    "A specialist can get you MTD-ready without the headache, the first call's free, interested?",
+    "A specialist can get you MTD-ready without the headache, the first call's free and you get a fixed fee in writing before any work starts, interested?",
   ],
   "landlord-essentials": [
     "Sorting your rental tax? I can point you to the right tool in a second.",
     "Want a hand getting your landlord tax straight? There's a calculator that makes it simple.",
-    "A free call with a specialist will make sure nothing's slipping through the cracks, want me to set one up?",
+    "A free first call with a specialist will make sure nothing's slipping through the cracks, and if we take it on you get a fixed fee in writing first, want me to set one up?",
   ],
   portfolio: [
     "Curious how your portfolio is really performing? There's a tool that lays it out.",
     "Want me to pull up the portfolio profitability calculator for you?",
-    "A specialist can stress-test your portfolio numbers with you, free first call, shall I arrange one?",
+    "A specialist can stress-test your portfolio numbers with you, free first call then a fixed fee in writing if we take it on, shall I arrange one?",
   ],
 };
 
 const GENERIC: [string, string, string] = [
   "Anything I can help you find? I can point you to the right calculator or a quick answer.",
   "Want a hand with anything? Happy to dig out the right tool for you.",
-  "If you'd rather just ask a person, a free first call with a specialist is the quickest way, want me to set one up?",
+  "If you'd rather just ask a person, a free first call with a specialist is the quickest way, and if we take it on you get a fixed fee in writing first, want me to set one up?",
 ];
 
 const COMBO_S24_INC: [string, string, string] = [
   "Trying to work out if going limited beats the Section 24 hit? That's the real question, and I can help you start on it.",
   "Section 24 versus incorporating is a close call for a lot of landlords. Want me to line up both calculators?",
-  "This is exactly the sort of thing a specialist untangles in one free call. Want me to book it?",
+  "This is exactly the sort of thing a specialist untangles in one free first call, with a fixed fee in writing if we take it on. Want me to book it?",
 ];
 
 const USED_CALC: [string, string, string] = [
-  "Got your numbers? It's worth having a specialist sanity-check them for your exact situation, free.",
+  "Got your numbers? It's worth having a specialist sanity-check them for your exact situation, free first call and a fixed fee in writing if we take it on.",
   "Those figures are a solid start. Want one of our specialists to confirm them on a quick call?",
-  "Shall I set up a free call to walk through what the calculator gave you?",
+  "Shall I set up a free first call to walk through what the calculator gave you? If we take it on you get a fixed fee in writing first.",
 ];
 
 function bothTopics(profile: JourneyProfile, a: TopicKey, b: TopicKey): boolean {
@@ -107,7 +107,7 @@ function topicGeneric(t: TopicKey, i: 0 | 1 | 2): string {
   return [
     `Looking into ${n}? I can point you to the right tool or a quick answer.`,
     `Want a hand with ${n}? Happy to dig out exactly what you need.`,
-    `A free first call with a specialist is the quickest way to get ${n} sorted, want me to set one up?`,
+    `A free first call with a specialist is the quickest way to get ${n} sorted, and if we take it on you get a fixed fee in writing first, want me to set one up?`,
   ][i];
 }
 

@@ -88,7 +88,7 @@ export default function GlossaryIndexPage() {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free call
+              Book a free first call
             </Link>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function GlossaryIndexPage() {
                   href="/contact"
                   className="font-semibold text-primary-600 underline hover:text-primary-700"
                 >
-                  book a free call
+                  book a free first call
                 </Link>{" "}
                 if you have a specific question.
               </p>
@@ -156,11 +156,11 @@ export default function GlossaryIndexPage() {
         <LeadCTAPanel
           contained
           ground="slate"
-          eyebrow="Free call"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Not sure how a definition applies to your contract?"
           description="Tell us about the engagement and how you actually work, and we will tell you where you stand on IR35, in plain English."
           proofPoints={[]}
-          formTitle="Book your free call"
+          formTitle="Book your free first call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             <>

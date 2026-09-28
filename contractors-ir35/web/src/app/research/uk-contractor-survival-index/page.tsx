@@ -409,11 +409,11 @@ export default function UKContractorSurvivalIndexPage() {
         <LeadCTAPanel
           contained
           ground={groundFor("book") === "bg-white" ? "white" : "slate"}
-          eyebrow="Free call"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Starting or running a contracting business? Get your tax position right from day one."
           description="Survival averages are no guarantee for any individual business, but getting your IR35 status, expenses and salary and dividend split right protects the cash your company needs between contracts. Our calculators show what you would actually keep, inside or outside IR35, on 2026/27 rates."
           proofPoints={[]}
-          formTitle="Book your free call"
+          formTitle="Book your free first call"
           form={<LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />}
           footnote={
             <span className="flex flex-wrap gap-x-6 gap-y-2 font-semibold">

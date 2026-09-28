@@ -396,7 +396,7 @@ export default function ForLettingAgentsPage() {
           (report 01 §2 R1), which is what this is. The ask is addressed to the
           agent rather than to their landlord, so it does not contradict the
           hero's promise that nothing here asks a landlord for their details.
-          The free consultation is an existing site-wide claim (/about,
+          The free first call is an existing site-wide claim (/about,
           /contact, /blog, /calculators, /incorporation), not a new one. */}
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel

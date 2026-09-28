@@ -248,11 +248,11 @@ export default function IR35StatusPage() {
         <LeadCTAPanel
           contained
           ground="white"
-          eyebrow="Free call"
+          eyebrow="Free first call, then a fixed fee in writing"
           title="Not sure where your contract sits?"
           description="Book an IR35 contract review. We look at your contract wording and your actual working practices, apply the three tests, and give you a clear written opinion on your position."
           proofPoints={[]}
-          formTitle="Book your free call"
+          formTitle="Book your free first call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             /* KNOWN CONTRACT: PanelBody renders `footnote` inside a <p>, so a

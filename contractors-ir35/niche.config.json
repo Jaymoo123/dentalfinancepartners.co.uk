@@ -117,13 +117,13 @@
   },
   "cta": {
     "sticky_primary": "Free IR35 status review",
-    "sticky_secondary": "Speak to a specialist contractor accountant. No obligation.",
-    "sticky_button": "Book a free call"
+    "sticky_secondary": "Free first call, then a fixed fee in writing. Speak to a specialist contractor accountant.",
+    "sticky_button": "Book a free first call"
   },
   "blog": {
     "cta_heading": "Not sure where you stand on IR35?",
-    "cta_body": "Book a free call with a specialist contractor accountant. We will review your contract, your working practices and your current structure. Plain English, no jargon.",
-    "cta_button": "Book a free call"
+    "cta_body": "Book a free first call with a specialist contractor accountant. We will review your contract, your working practices and your current structure. Plain English, no jargon. If we take the work on, you get a fixed fee in writing before anything starts.",
+    "cta_button": "Book a free first call"
   },
   "shared_components_version": "1.0.0",
   "last_sync": null

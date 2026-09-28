@@ -98,7 +98,7 @@ export function ProblemStatement() {
               data-cta-goal="form"
               className={`${btnPrimary} mt-6 w-full sm:mt-8 sm:w-auto`}
             >
-              Book free consultation
+              Book your free first call
             </Link>
           </div>
 

@@ -876,7 +876,7 @@ export default function LandlordCompliancePage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Make the compliance bill work harder on your tax return"
-          description="Book a free consultation. We will check that every certificate, licence and remedial job has been claimed in the right place, and that nothing capital has been buried in your repairs."
+          description="Book a free first call. We will check that every certificate, licence and remedial job has been claimed in the right place, and that nothing capital has been buried in your repairs."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },

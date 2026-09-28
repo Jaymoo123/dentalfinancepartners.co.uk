@@ -366,7 +366,7 @@ const STEPS: LeadNurtureStep[] = [
         "A quick pointer from the team while your enquiry is with us.",
         [
           "A quick pointer while your enquiry is with us. One of the most commonly missed issues for contractors is the salary and dividend split inside a personal service company. Getting this wrong can mean paying significantly more income tax than necessary, particularly where the contractor is also the sole director.",
-          "It is a straightforward review but it does need to be looked at for your specific contract rate and circumstances, which is exactly what the free call covers.",
+          "It is a straightforward review but it does need to be looked at for your specific contract rate and circumstances, which is exactly what the free first call covers. If we take the work on, you get a fixed fee in writing before anything starts.",
           "Whenever suits, just reply with a day and time and the team will arrange a call.",
         ],
         "day2_give_email",
@@ -556,10 +556,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "One pointer while you decide",
-          "A useful note from the team, and a free call if you would like one.",
+          "A useful note from the team, and a free first call if you would like one.",
           [
             "One quick pointer while your enquiry sits with us. A question many contractors overlook is whether they are on the most efficient salary and dividend split for their personal service company. Even a small adjustment can make a meaningful difference at a typical contractor day rate, and it is worth reviewing whenever a new contract starts.",
-            `And if you would like a specialist to look at the whole picture, just reply with ${ask} and the team will arrange a free call.`,
+            `And if you would like a specialist to look at the whole picture, just reply with ${ask} and the team will arrange a free first call. If we take the work on, you get a fixed fee in writing before anything starts.`,
           ],
           "detail_capture_day3",
           {

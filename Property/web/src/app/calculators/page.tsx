@@ -190,14 +190,14 @@ export default function CalculatorsPage() {
             <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed text-slate-200 max-w-3xl">
               These calculators provide simplified estimates. For a full analysis of your specific situation,
               including incorporation feasibility, capital gains planning, or portfolio profitability reporting,
-              speak to one of our property accountants.
+              speak to one of our property accountants. The first call is free. If we take the work on, you get a fixed fee in writing before anything starts.
             </p>
             <div className="mt-6 sm:mt-8">
               <Link
                 href="/contact"
                 className={`${btnPrimary} bg-emerald-600 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4`}
               >
-                Book free consultation
+                Book your free first call
               </Link>
             </div>
           </div>

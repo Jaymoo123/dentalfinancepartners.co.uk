@@ -214,7 +214,7 @@ const feeDrivers = [
 const onboarding = [
   {
     n: "01",
-    title: "Free consultation",
+    title: "Free first call",
     body: "Tell us what you own, how it is held, and what you want to do next. We say plainly whether you need what we do. If your position is a single property and a simple return you can file yourself, we will tell you that.",
   },
   {
@@ -289,7 +289,7 @@ const faqs: FaqEntry[] = [
   {
     question: "Do I need a property accountant for one buy-to-let?",
     answer:
-      "Not necessarily. If you have one property, no mortgage complications and straightforward expenses, the return is manageable on your own. The point at which help usually pays for itself is a residential mortgage in your own name at higher rate tax, a refurbishment where the capital and revenue split is unclear, joint ownership, a sale, or the arrival of MTD quarterly filing. Our free consultation is a fair way to find out which side of that line you are on.",
+      "Not necessarily. If you have one property, no mortgage complications and straightforward expenses, the return is manageable on your own. The point at which help usually pays for itself is a residential mortgage in your own name at higher rate tax, a refurbishment where the capital and revenue split is unclear, joint ownership, a sale, or the arrival of MTD quarterly filing. Our free first call is a fair way to find out which side of that line you are on, and if we take the work on you get a fixed fee in writing before anything starts.",
   },
   {
     question: "What is the difference between a property accountant and a regular accountant?",
