@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { siteContainerLg } from "@/components/ui/layout-utils";
-import { CtaBand, HubSection, LinkCardGrid, PageHero } from "@/components/hubs/HubParts";
+import { HubSection, LinkCardGrid, PageHero } from "@/components/hubs/HubParts";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { charityServices } from "@/data/charity-services";
 import { siteConfig } from "@/config/site";
 import { serviceTiers } from "@/config/service-tiers";
@@ -64,12 +66,18 @@ export default function ServicesPage() {
       </section>
 
 
-      <CtaBand title="Not sure which service you need?">
-        <p>
-          Tell us about your charity, CIC or social enterprise and we will tell you what is required
-          and how we can help.
-        </p>
-      </CtaBand>
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Get started"
+          title="Not sure which service you need?"
+          description="Tell us about your charity, CIC or social enterprise and we will tell you what is required and how we can help."
+          proofPoints={[]}
+          formTitle="Get in touch"
+          form={<LeadForm submitLabel="Send enquiry" />}
+          contained
+          ground="white"
+        />
+      </div>
     </>
   );
 }

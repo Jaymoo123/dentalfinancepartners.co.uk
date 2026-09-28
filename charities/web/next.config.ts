@@ -19,7 +19,11 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     // ga: false until a GA measurement id exists; no /embed routes on this site.
-    return buildSecurityHeaders({ ga: false, supabase: true });
+    // ga: true so CSP allows googletagmanager/google-analytics and the GA4
+    // regional endpoint (region1.google-analytics.com) the moment the plumbing
+    // agent fills google_analytics_id; ads: true widens frame-src for AdSense
+    // (Solicitors pattern, brief section 6, phase 0 parity 2026-09-28).
+    return buildSecurityHeaders({ ga: true, supabase: true, ads: true });
   },
   async redirects() {
     // Estate audit 2026-07: 4 live sites emit 307 on apex->www. Permanent 308

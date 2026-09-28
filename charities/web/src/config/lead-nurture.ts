@@ -306,7 +306,7 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and a specialist will call you.",
+        "Just reply with a time that suits and one of our accountants will call you.",
         [
           "Thanks for your enquiry. It has just come through to us and a charity finance specialist is ready to help.",
           "The call is a free review of where your organisation stands, about 20 minutes, with no charge and no obligation.",
@@ -394,7 +394,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Trustee Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Trustee Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Trustee Tax here. Most trustees we speak to arrive with the question you raised, and one short call usually settles it. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -527,7 +527,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and a specialist will call you.`,
+          `Reply with ${ask} and one of our accountants will call you.`,
           [
             detailIntro(c),
             `Just reply to this email with ${ask} and a charity finance specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,

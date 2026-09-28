@@ -9,6 +9,14 @@ export interface CharityType {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
+  /**
+   * The closing lead-panel sentence, written per audience rather than the
+   * template plugging `type.title.toLowerCase()` into "Tell us about your
+   * X", which reads wrong on the plural titles ("Tell us about your
+   * community interest companies"). Plain Sonnet copy; flagged for the Opus
+   * read per brief section 4/7 (phase 0 parity 2026-09-28).
+   */
+  closer: string;
 }
 
 export const charityTypes: CharityType[] = [
@@ -67,7 +75,7 @@ export const charityTypes: CharityType[] = [
       },
       {
         title: "Corporation tax return reviewed and filed",
-        body: "A specialist reviews how trading, contract and grant income has been recognised, checks allowable costs and capital claims, prepares the computation and CT600, and gives you the liability and date early enough to budget.",
+        body: "One of our accountants reviews how trading, contract and grant income has been recognised, checks allowable costs and capital claims, prepares the computation and CT600, and gives you the liability and date early enough to budget.",
       },
       {
         title: "Payout options set out against the cap",
@@ -75,7 +83,7 @@ export const charityTypes: CharityType[] = [
       },
       {
         title: "Payroll, and a structure comparison for the board",
-        body: "Payroll is operated under RTI, with employer National Insurance at 15% above the £5,000 secondary threshold for 2026/27. Where Gift Aid is the reason you are asking, a specialist reviews your income mix and prepares a written CIC against charity or CIO comparison.",
+        body: "Payroll is operated under RTI, with employer National Insurance at 15% above the £5,000 secondary threshold for 2026/27. Where Gift Aid is the reason you are asking, one of our accountants reviews your income mix and prepares a written CIC against charity or CIO comparison.",
       },
     ],
     faqs: [
@@ -104,6 +112,8 @@ export const charityTypes: CharityType[] = [
         answer: "The Office of the Regulator of Community Interest Companies, based at Companies House, approves formation, applies the community interest test and enforces the asset lock. The Charity Commission has no role here. Because a CIC is also an ordinary company, a late filing can bring a Companies House penalty and the Regulator's attention at once, while HMRC deadlines run alongside. One calendar covering all three avoids most of it.",
       },
     ],
+    closer:
+      "Tell us about your CIC. We will explain what your asset lock, dividend cap and filing calendar mean in practice, in plain English, with no obligation.",
   },
   {
     slug: "social-enterprises",
@@ -165,6 +175,8 @@ export const charityTypes: CharityType[] = [
         answer: "When a charity's non-primary-purpose trading income exceeds the <a href=\"https://www.gov.uk/guidance/charities-and-trading\">small trading exemption limits</a>, tax becomes due on all profits from that trade. The typical solution is a wholly owned trading subsidiary that conducts the taxable activity and donates its profits to the parent charity. When that donation is made correctly, no Corporation Tax is due on the payment. The structure requires careful accounting to work as intended.",
       },
     ],
+    closer:
+      "Tell us about your social enterprise. We will explain what your structure and income mix mean for your accounts and tax, in plain English, with no obligation.",
   },
   // Wave 1 append, docs/charities/_wave1/cios.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -258,6 +270,8 @@ export const charityTypes: CharityType[] = [
         answer: "Only when non-primary-purpose trading outgrows the small trading exemption. That exemption runs on three tiers set by total income, and going over the limit makes all that trade's profits taxable, not only the excess, so the decision is taken ahead of the breach. A subsidiary's profits can be donated up to the parent CIO with no corporation tax due.",
       },
     ],
+    closer:
+      "Tell us about your CIO. We will explain what your accounts format and scrutiny level should be, in plain English, with no obligation.",
   },
   // Wave 1 append, docs/charities/_wave1/small-charities.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -351,6 +365,8 @@ export const charityTypes: CharityType[] = [
         answer: "Passing £25,000 brings external scrutiny and a fuller annual return. Passing £250,000 ends receipts and payments accounts for non-company charities and limits who may examine them to members of the professional bodies listed in the Charities Act. An audit becomes mandatory above £1 million of income, or above £250,000 of income where gross assets exceed £3.26 million. Each figure also rises for accounting years ending on or after 30 September 2026.",
       },
     ],
+    closer:
+      "Tell us about your small charity. We will explain what has to be filed at your income level, in plain English, with no obligation.",
   },
   // Wave 1 append, docs/charities/_wave1/trustees-and-treasurers.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -403,7 +419,7 @@ export const charityTypes: CharityType[] = [
     howWeHelp: [
       {
         title: "Settling the format and scrutiny level first",
-        body: "Before figures are drafted, a specialist reviews your income, gross assets, legal form, year end and governing document, then confirms which accounts format applies and whether an examination or an audit is needed. Because the England and Wales thresholds rise for accounting years ending on or after 30 September 2026, the year end is checked, not assumed.",
+        body: "Before figures are drafted, one of our accountants reviews your income, gross assets, legal form, year end and governing document, then confirms which accounts format applies and whether an examination or an audit is needed. Because the England and Wales thresholds rise for accounting years ending on or after 30 September 2026, the year end is checked, not assumed.",
       },
       {
         title: "Preparing the accounts",
@@ -444,6 +460,8 @@ export const charityTypes: CharityType[] = [
         answer: "No. These are the England and Wales rules set by the Charity Commission. Scottish charities come under OSCR under separate regulations, where every charity needs external scrutiny whatever its income, and where the recent threshold change runs from financial years beginning on or after 1 January 2026 rather than from year ends. Tell us the country of registration at the outset and the work is scoped to that regime.",
       },
     ],
+    closer:
+      "Tell us about your role as trustee or treasurer. We will explain what your charity's accounts and filings need, in plain English, with no obligation.",
   },
   // Wave 1 append, docs/charities/_wave1/grant-making-trusts-and-foundations.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -500,7 +518,7 @@ export const charityTypes: CharityType[] = [
       },
       {
         title: "Endowment and total return review",
-        body: "A specialist reads the trust deed against the statutory powers, separates permanent endowment from expendable funds, and records what trustees may release without Commission authority. Where the charity invests on a total return basis, the unapplied total return is reconstructed and the allocation evidenced.",
+        body: "One of our accountants reads the trust deed against the statutory powers, separates permanent endowment from expendable funds, and records what trustees may release without Commission authority. Where the charity invests on a total return basis, the unapplied total return is reconstructed and the allocation evidenced.",
       },
       {
         title: "Grant accounting and related-party disclosure",
@@ -545,6 +563,8 @@ export const charityTypes: CharityType[] = [
         answer: "It depends on gross income. In England and Wales an examination becomes a legal requirement above £25,000 of gross income, and for accounting years ending on or after 30 September 2026 that gate rises to £40,000. Above the audit thresholds an examination is not enough and a statutory audit is required. A trust deed or funder can require scrutiny the law would not.",
       },
     ],
+    closer:
+      "Tell us about your trust or foundation. We will explain what your grant-making activity means for your accounts and scrutiny level, in plain English, with no obligation.",
   },
 ];
 

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import {
-  btnPrimary,
   siteContainerLg,
   sectionYLoose,
 } from "@/components/ui/layout-utils";
@@ -47,11 +47,18 @@ export default function AboutPage() {
       </section>
 
 
-      <section className="bg-white">
-        <div className={`${siteContainerLg} ${sectionYLoose}`}>
-          <Link href="/contact" className={btnPrimary}>Get in touch</Link>
-        </div>
-      </section>
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Get started"
+          title="Talk to one of our charity accountants"
+          description="Tell us about your charity, CIC or social enterprise and we will explain what your organisation needs, in plain English, with no obligation."
+          proofPoints={[]}
+          formTitle="Get in touch"
+          form={<LeadForm submitLabel="Send enquiry" />}
+          contained
+          ground="white"
+        />
+      </div>
     </>
   );
 }

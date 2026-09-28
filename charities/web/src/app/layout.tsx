@@ -45,6 +45,9 @@ export const metadata: Metadata = {
       ...(niche.seo.search_console_verification?.bing
         ? { "msvalidate.01": niche.seo.search_console_verification.bing }
         : {}),
+      // Server-rendered so the AdSense crawler finds it (Solicitors pattern,
+      // brief section 6, phase 0 parity 2026-09-28).
+      "google-adsense-account": "ca-pub-3756285576371279",
     },
   },
   openGraph: {
@@ -112,7 +115,10 @@ export default function RootLayout({
             posture="opt-out"
             noTrackPrefixes={["/admin"]}
           >
-            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <ConsentedScripts
+              gaMeasurementId={niche.seo.google_analytics_id}
+              adsenseClientId="ca-pub-3756285576371279"
+            />
             {/* Site chrome (header, main landmark, footer) comes from the
                 shared kit via PageShell. It renders children bare on /embed/
                 paths, so embedded calculators stay chrome-free inside a

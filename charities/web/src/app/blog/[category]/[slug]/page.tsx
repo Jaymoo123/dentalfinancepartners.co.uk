@@ -13,6 +13,7 @@ import {
 } from "@/lib/blog";
 import { extractHeadings } from "@/lib/markdown-utils";
 import { BLOG_CTA } from "@/components/blog/blog-cta";
+import { CTA_BY_CATEGORY } from "@/lib/blog-cta-map";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
@@ -92,6 +93,7 @@ export default async function BlogPostPage({ params }: Props) {
   const { category, slug } = await params;
   const post = getPostByCategoryAndSlug(category, slug);
   if (!post) notFound();
+  const blogCta = CTA_BY_CATEGORY[category] ?? BLOG_CTA;
 
   const articleSchema = buildArticleJsonLd({
     title: post.h1,
@@ -278,11 +280,11 @@ export default async function BlogPostPage({ params }: Props) {
               aria-labelledby="enquiry-form-heading"
             >
               <h2 id="enquiry-form-heading" className="text-xl font-bold text-slate-900 sm:text-2xl">
-                {BLOG_CTA.heading}
+                {blogCta.heading}
               </h2>
-              <p className="mt-3 text-base leading-relaxed text-slate-600">{BLOG_CTA.body}</p>
+              <p className="mt-3 text-base leading-relaxed text-slate-600">{blogCta.body}</p>
               <div className="mt-6 rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8">
-                <LeadForm redirectOnSuccess={false} submitLabel={BLOG_CTA.button} />
+                <LeadForm redirectOnSuccess={false} submitLabel={blogCta.button} />
               </div>
             </section>
 
@@ -306,8 +308,8 @@ export default async function BlogPostPage({ params }: Props) {
           <aside className="hidden lg:block">
             <div className="sticky top-24 max-h-[calc(100vh-7rem)] space-y-5 overflow-y-auto">
               <BlogSidebarCta
-                copy={{ heading: BLOG_CTA.heading, body: BLOG_CTA.body }}
-                buttonLabel={BLOG_CTA.button}
+                copy={{ heading: blogCta.heading, body: blogCta.body }}
+                buttonLabel={blogCta.button}
                 ctaPlacement="blog_sidebar"
               />
               <TableOfContents headings={headings} />

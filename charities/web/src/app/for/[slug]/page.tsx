@@ -145,7 +145,7 @@ export default async function CharityTypePage({
         <LeadCTAPanel
           eyebrow="Get started"
           title={`Talk to a specialist about ${type.title}`}
-          description={`Tell us about your ${type.title.toLowerCase()}. We will explain what your organisation needs, in plain English, with no obligation.`}
+          description={type.closer}
           proofPoints={[]}
           formTitle="Get in touch"
           form={<LeadForm submitLabel="Send enquiry" />}

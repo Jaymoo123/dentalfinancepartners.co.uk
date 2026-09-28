@@ -5,7 +5,6 @@ import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-b
 import { siteContainerLg, contentNarrow } from "@/components/ui/layout-utils";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
-import { MiniCapture } from "@/components/calculators/MiniCapture";
 import { buildCalculatorJsonLd, buildFaqPageJsonLd } from "@/lib/calculators/schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
@@ -122,18 +121,6 @@ export default async function CalculatorToolPage({ params }: Props) {
               </div>
             </div>
           )}
-
-          {/* Existing capture surface, unchanged: same formId, same wording, same
-              position at the end of the page. */}
-          <div id="get-expert-help" className="mt-14 scroll-mt-24">
-            <MiniCapture
-              formId="calc_page_footer"
-              messagePrefix={`[Calculator page: ${tool.slug}]`}
-              heading="Want to be sure of your position?"
-              blurb="Tell us about your charity, CIC or social enterprise and we will confirm your exact figures and the filings that apply to you. No obligation."
-              submitLabel="Request a review"
-            />
-          </div>
         </div>
       </section>
     </>

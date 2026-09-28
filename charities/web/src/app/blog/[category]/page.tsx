@@ -5,6 +5,7 @@ import { getAllPosts, getAllCategories, getCategorySlug, calculateReadTime } fro
 import { siteConfig } from "@/config/site";
 import { btnPrimary, btnSecondary } from "@/components/ui/layout-utils";
 import { BLOG_CTA } from "@/components/blog/blog-cta";
+import { CTA_BY_CATEGORY } from "@/lib/blog-cta-map";
 import { BlogCategoryHub } from "@accounting-network/web-shared/design/blog/BlogCategoryHub";
 
 type Props = { params: Promise<{ category: string }> };
@@ -42,6 +43,8 @@ export default async function CategoryPage({ params }: Props) {
   const cat = getAllCategories().find((c) => c.slug === category);
   if (!cat) notFound();
 
+  const categoryCta = CTA_BY_CATEGORY[category] ?? BLOG_CTA;
+
   const posts = getAllPosts()
     .filter((p) => getCategorySlug(p) === category)
     .map((p) => ({
@@ -67,7 +70,7 @@ export default async function CategoryPage({ params }: Props) {
         // Empty until then, and BlogCategoryHub.tsx:189 drops the whole section
         // rather than rendering an empty heading.
         sections={[]}
-        cta={{ heading: BLOG_CTA.heading, body: BLOG_CTA.body, submitLabel: BLOG_CTA.button }}
+        cta={{ heading: categoryCta.heading, body: categoryCta.body, submitLabel: categoryCta.button }}
         posts={posts}
         categories={getAllCategories()}
         siteUrl={siteConfig.url}
@@ -90,10 +93,10 @@ export default async function CategoryPage({ params }: Props) {
               data-cta-goal="contact"
               className={btnPrimary}
             >
-              {BLOG_CTA.button}
+              {categoryCta.button}
             </Link>
             <Link
-              href="/book"
+              href="/contact#form"
               data-cta={`blog_hub_${category}_book`}
               data-cta-placement="hub_cta_panel"
               className={btnSecondary}
