@@ -180,3 +180,16 @@ assistant-naming rerun at the month-1 read; monitored_pages rows for the eight s
 ## 6. Log
 
 - 2026-09-28: plan written from the research readout; decisions 1 to 8 recorded; nothing built.
+- 2026-09-28 late: phase 0 wave A (20 agents) built on all 17 sites, every builder tsc clean and
+  vitest green; four Opus reader-fixers measured every site from its production build at 1280 and
+  a real 390 (gov.uk control 390) and fixed what failed (about 60 audience-specific closers, focus
+  rings on every form and calculator, contrast on Property, generalist, ecommerce, wills and
+  divorce, "Ask we" sweep artefact on construction-cis, 47 em-dashes on Solicitors, two-form
+  calculators on hospitality and pharmacies, zero-form hubs on wills and divorce); shared kit
+  focus fix `65fa2303`; all 17 rebuilt clean twice; dependency closure OK; spot-check
+  `PHASE0_SPOTCHECK_2026-09-28.md` passed care and generalist, two leftovers on the legal pair
+  being fixed. 40 commits on local main. **`git push` refused by the session's permission
+  classifier; the owner runs `! git push origin main`.** Then: CI watch, deploy all 17 on the
+  owner's word, env set onto the two silent projects (`VERCEL_ENV_PREP_SILENT_SITES_2026-09-28.md`,
+  13 sensitive values are owner dashboard pastes), `calc_pdf_offer` off. Owner inputs open: 13 GA4
+  properties (`ESTATE_PLUMBING_2026-09-28.md`), ecommerce phone, AdSense console per domain.
