@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { buildOrganization } from "@accounting-network/web-shared/schema";
 
 export function buildOgImageUrl(title: string, category?: string) {
   const params = new URLSearchParams({ title });
@@ -7,42 +8,58 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
+// Sister-brand homepages (same opco, Ashfield Trading Ltd), same pattern as
+// Medical's organization-schema.ts, so sameAs ties the estate together.
+const SISTER_BRAND_HOMEPAGES = [
+  "https://www.propertytaxpartners.co.uk",
+  "https://www.medicalaccountancy.co.uk",
+  "https://www.contractortaxaccountants.co.uk",
+];
+
 export function buildOrganizationJsonLd() {
   const office = siteConfig.company.registeredOffice;
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", niche.seo.organization_type],
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    legalName: siteConfig.company.legalName,
-    alternateName: siteConfig.company.tradingName,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    description: siteConfig.description,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: `${office.line1}, ${office.line2}`,
-      addressLocality: office.city,
-      postalCode: office.postcode,
-      addressCountry: "GB",
-    },
-    areaServed: niche.seo.service_areas,
-    knowsAbout: [
-      "Crypto Capital Gains Tax UK",
-      "HMRC cryptoasset disclosure",
-      "Cryptoasset Reporting Framework (CARF)",
-      "s104 pooling and same-day matching rules",
-      "Staking and mining income tax",
-      "DeFi tax UK",
-      "NFT tax UK",
-      "HMRC nudge letters for crypto",
-      "Self Assessment for crypto investors",
-      "Investor vs trader status for crypto",
-    ],
-    sameAs: [
-      "https://find-and-update.company-information.service.gov.uk/company/16358723",
-    ],
-  });
+  return JSON.stringify(
+    buildOrganization({
+      siteUrl: siteConfig.url,
+      siteName: siteConfig.name,
+      legalName: siteConfig.company.legalName,
+      alternateName: siteConfig.company.tradingName,
+      description: niche.entity?.firm ?? siteConfig.description,
+      tagline: siteConfig.tagline,
+      // The firm is an accountancy practice (owner ruling 2026-09-28; the
+      // shared builder defaults to ProfessionalService).
+      organizationType: "AccountingService",
+      publisherLogoUrl: siteConfig.publisherLogoUrl,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: `${office.line1}, ${office.line2}`,
+        addressLocality: office.city,
+        postalCode: office.postcode,
+        addressCountry: "GB",
+      },
+      areaServedCountry: "United Kingdom",
+      sameAs: [
+        `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+        ...SISTER_BRAND_HOMEPAGES,
+      ],
+      knowsAbout: [
+        "Crypto Capital Gains Tax UK",
+        "HMRC cryptoasset disclosure",
+        "Cryptoasset Reporting Framework (CARF)",
+        "s104 pooling and same-day matching rules",
+        "Staking and mining income tax",
+        "DeFi tax UK",
+        "NFT tax UK",
+        "HMRC nudge letters for crypto",
+        "Self Assessment for crypto investors",
+        "Investor vs trader status for crypto",
+      ],
+      parentOrganization: {
+        name: siteConfig.company.legalName,
+        companyNumber: siteConfig.company.number,
+      },
+    }),
+  );
 }
 
 export function buildWebsiteJsonLd() {

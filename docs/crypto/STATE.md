@@ -839,11 +839,44 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 
 ## External steps (HUMAN ONLY, gate the site going live)
 
-- [ ] Buy the domain `cryptotaxpartners.co.uk` and point DNS at Vercel (A/CNAME per Vercel domain UI)
-- [ ] **Pre-attach refresh (same day the domain is bought):** run the rates-ledger lint + dated-reference sweep (tax-year mentions) over the corpus and patch stale figures BEFORE DNS attach
-- [ ] Google Search Console: add property `sc-domain:cryptotaxpartners.co.uk`, verify (DNS TXT), submit `/sitemap.xml`, Request Indexing on key pages (discovery failure is the number 1 new-site risk)
+STALE as of 2026-09-28: every item below reads as pre-launch, but the site has been
+live at `www.cryptotaxpartners.co.uk` since 2026-09-16 (design port + uplift tags
+`port-crypto-complete`, `port-crypto-uplift`; `curl -sI` returns 200 OK, checked
+2026-09-28 in `docs/crypto/PARITY_RESEARCH_2026-09-28.md`). Domain is bought and
+attached, GSC/sitemap/robots serve 200. What is genuinely still open: Bing
+verification code, GA4 measurement id (`google_analytics_id` is still `""`, see
+phase 0 entry below), and `gsc_config.py` / IndexNow registration (plumbing agent).
+The checklist below is kept for the items still true, not deleted wholesale.
+
+- [x] Domain live, DNS attached, GSC likely covers it already (not independently reverified this pass)
 - [ ] Bing Webmaster Tools: import the site from GSC, add Bing verification code to niche.config.json
-- [ ] GA4: create property, copy measurement id into `crypto/niche.config.json` -> seo.google_analytics_id, add to `optimisation_engine/clients/ga4_config.py`, redeploy
-- [ ] Real phone number into `crypto/niche.config.json` -> contact.phone (placeholder ships as +44 20 0000 0000)
-- [ ] Brand assets: `public/brand/primary-logo.png` + `public/brand/icon-alt.png` (OG image route depends on them)
+- [ ] GA4: create property, copy measurement id into `crypto/niche.config.json` -> seo.google_analytics_id (plumbing agent, 2026-09-28 phase 0)
+- [ ] Real phone number into `crypto/niche.config.json` -> contact.phone (not checked this pass)
 - [ ] Resend routing ONLY if a partner firm is signed (partner CC only on partnered sites; otherwise leads route to owner inbox)
+
+## 2026-09-28 phase 0 parity (estate parity programme, `docs/_engines/ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md`)
+
+Full report: `docs/crypto/PHASE0_2026-09-28.md`. Summary: positioning sweep (firm
+voice, no more "specialist firm from our partner network" on complete/thank-you/
+contact/nurture/calculator copy), `entity` key added to niche.config.json,
+Organization JSON-LD ported to the shared `packages/web-shared/schema` builder,
+nurture `delayHours` corrected to Property's gap cadence (0,0,4,20,24,48,72,96),
+24-hour promise sentence added to the instant acknowledgement email, lead capture
+(`LeadCTAPanel` + `LeadForm`) added to `/for` hub, `/about`, and every `/for/[slug]`
+and `/services/[slug]` detail page (previously link-only by an explicit "owner
+decision" code comment, now reversed), Service + BreadcrumbList JSON-LD added to
+those same detail pages, segment/service closers rewritten per-audience (no more
+slug pasted into the sentence), llms.txt UTM-tagged, sitemap `lastModified` build-
+time `now` removed in favour of Property's omit-if-unknown pattern, robots.ts
+disallow extended to `/book` and `/complete`, `pipeline/submit_indexnow.py` shim +
+fresh IndexNow key file added, AdSense wired (metadata, ConsentedScripts,
+`ads.txt`, `next.config.ts` security headers via the shared builder — this site
+previously had NO CSP at all, now has one). `npx tsc --noEmit` clean, `npx vitest
+run` 44/44 passing. Not deployed; nothing built with `next build`.
+
+Needs the shared agent: `packages/web-shared/tools/components/Calculator` renders
+the calculator's numeric inputs with no visible focus ring (site-wide, not a
+crypto-only fix). Needs the plumbing/shared agent: `optimisation_engine/indexing/
+config.py` SITE_INDEXNOW_CONFIG has no `"crypto"` entry yet (host + key; key value
+now exists at `crypto/web/public/e5d6de7b226b004b5a743f74a184c0b6.txt`), and
+`google_analytics_id` is still empty in niche.config.json.

@@ -4,6 +4,8 @@ import { PageHero } from "@/app/_parts/PageHero";
 import { sectionY, siteContainerLg } from "@/components/ui/layout-utils";
 import { cryptoHubs } from "@/data/crypto-hubs";
 import { siteConfig } from "@/config/site";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "Crypto Tax by Holder Type | Investors, Traders, DeFi, NFTs and More",
@@ -29,5 +31,16 @@ export default function ForIndexPage() {
         </div>
       </div>
     </section>
+
+    {/* Phase 0 2026-09-28: this hub previously had no capture surface at
+        all. proofPoints={[]}: crypto publishes neither a fee nor a
+        turnaround figure. */}
+    <LeadCTAPanel
+      title="Not sure which holder type fits you?"
+      description="Tell us what you hold and how you came by it, and we will point you to the right place, or just take it from there."
+      proofPoints={[]}
+      formTitle="Get in touch"
+      form={<LeadForm submitLabel="Send enquiry" />}
+    />
   </>);
 }

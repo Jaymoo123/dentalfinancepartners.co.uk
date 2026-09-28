@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { PageHero } from "@/app/_parts/PageHero";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildBreadcrumbJsonLd } from "@/lib/schema";
 import { sectionY, siteContainerLg } from "@/components/ui/layout-utils";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { buildService } from "@accounting-network/web-shared/schema";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { siteConfig } from "@/config/site";
 
 /**
  * The detail anatomy shared by `/services/[slug]` and `/for/[slug]`.
@@ -41,6 +45,7 @@ export function TopicPageLayout({
   faqs,
   ctaHeading,
   ctaBody,
+  pageUrl,
 }: {
   /** Trail including Home and the current page. The last item carries no href. */
   breadcrumb: { label: string; href?: string }[];
@@ -56,9 +61,20 @@ export function TopicPageLayout({
   faqs: TopicFaq[];
   ctaHeading: string;
   ctaBody: string;
+  /** Path of this page, e.g. "/for/investors". Feeds Service + BreadcrumbList JSON-LD. */
+  pageUrl: string;
 }) {
+  const serviceLd = buildService(
+    { name: headline, description: intro.replace(/<[^>]+>/g, ""), url: pageUrl, areaServed: "United Kingdom" },
+    { siteUrl: siteConfig.url, siteName: siteConfig.name, publisherLogoUrl: siteConfig.publisherLogoUrl },
+  );
+  const breadcrumbLd = buildBreadcrumbJsonLd(breadcrumb);
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbLd }} />
+
       {/* Hero: the site's one hero (`_parts/PageHero`), not a third copy of it.
           Navy is the ground identity; the action ramp carries the in-copy
           citations, because a navy link on near-navy copy is not identifiable as
@@ -189,26 +205,19 @@ export function TopicPageLayout({
         </>
       )}
 
-      {/* Closing ask. A LINK to /contact, not an embedded form: these routes
-          carry no capture surface today and adding one is an owner decision.
-          White ground so the navy footer is not the second navy field running
-          straight into the first. */}
-      <section className="bg-white">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <div className="rounded-xl bg-[#0e1a3a] p-8 sm:p-12">
-            <h2 className="max-w-2xl text-2xl font-bold tracking-tight text-white sm:text-3xl">{ctaHeading}</h2>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">{ctaBody}</p>
-            <div className="mt-8">
-              <Link
-                href="/contact"
-                className="inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-bold text-[#0e1a3a] transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Get in touch
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Closing ask. Phase 0 2026-09-28: the owner reversed the earlier
+          "no capture surface on this route" decision, so this is now the
+          shared LeadCTAPanel with the real LeadForm, same as home/contact.
+          proofPoints={[]}: crypto publishes neither a fee nor a turnaround
+          figure on this route, and inventing one is how a removed claim
+          comes back. */}
+      <LeadCTAPanel
+        title={ctaHeading}
+        description={ctaBody}
+        proofPoints={[]}
+        formTitle="Get in touch"
+        form={<LeadForm submitLabel="Send enquiry" />}
+      />
     </>
   );
 }

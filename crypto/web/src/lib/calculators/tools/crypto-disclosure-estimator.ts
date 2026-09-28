@@ -67,7 +67,7 @@ export const cryptoDisclosureEstimator: GenericTool = {
     paragraphs: [
       "HMRC has published a Cryptoassets Manual and regularly issues nudge letters to individuals identified through exchange data sharing. The assessable window depends on behaviour: 4 years for reasonable care, 6 years for careless, and 20 years for deliberate behaviour.",
       "Penalties are charged separately, as a percentage of the unpaid tax. The percentage depends on behaviour, on whether the disclosure was unprompted or prompted, and on cooperation. Because HMRC sets and revises those percentages, this tool does not estimate one: check the current rates in HMRC's guidance on telling HMRC about unpaid tax on cryptoassets.",
-      "This tool gives an illustrative scope, not a filing figure. A specialist will calculate the actual exposure from your transaction history and advise on the best disclosure route.",
+      "This tool gives an illustrative scope, not a filing figure. One of our accountants will calculate the actual exposure from your transaction history and advise on the best disclosure route.",
     ],
   },
   faqs: [

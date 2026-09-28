@@ -4,6 +4,8 @@ import { siteConfig } from "@/config/site";
 import { siteContainerLg, sectionY, btnPrimary } from "@/components/ui/layout-utils";
 import { PageHero } from "@/app/_parts/PageHero";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "About | UK Cryptoasset Tax Specialists",
@@ -112,36 +114,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The page's closing ask. It is a LINK to /contact, not a form.
-          Adding a lead-capture surface to a page that had none is an owner
-          gate (capture-surface scope), so this page keeps the invitation and
-          sends the reader to the one form that already existed. If the owner
-          approves a form here, the kit's LeadCTAPanel with proofPoints={[]}
-          is the drop-in: crypto publishes neither a fee nor a turnaround, and
-          inventing replacements is how a removed claim comes back. */}
-      <section className="bg-white py-16 sm:py-20">
-        <div id="book" className="mx-auto max-w-3xl scroll-mt-24 px-6">
-          <Eyebrow>Free call</Eyebrow>
-          <h2 className="mt-3 text-2xl font-bold tracking-tight text-[#0e1a3a] sm:text-3xl">
-            Tell us where you are
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-700">
-            Send us the shape of your position: what you hold, how you came by
-            it, and which tax years are open. You do not need your figures
-            ready.
-          </p>
-          <a
-            href="/contact"
-            className={`${btnPrimary} mt-8`}
-          >
-            Get in touch
-          </a>
-          <p className="mt-4 text-sm text-slate-600">
-            No obligation and no hard sell. If your position is already right,
-            we will say so.
-          </p>
-        </div>
-      </section>
+      {/* The page's closing ask. Phase 0 2026-09-28: the owner reversed the
+          earlier "no capture surface on this route" decision, so this is now
+          the shared LeadCTAPanel with the real LeadForm. proofPoints={[]}:
+          crypto publishes neither a fee nor a turnaround figure, and
+          inventing one is how a removed claim comes back. */}
+      <LeadCTAPanel
+        title="Tell us where you are"
+        description="Send us the shape of your position: what you hold, how you came by it, and which tax years are open. You do not need your figures ready. No obligation and no hard sell, if your position is already right, we will say so."
+        proofPoints={[]}
+        formTitle="Get in touch"
+        form={<LeadForm submitLabel="Send enquiry" />}
+      />
     </>
   );
 }

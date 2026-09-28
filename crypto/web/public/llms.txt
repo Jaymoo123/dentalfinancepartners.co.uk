@@ -6,32 +6,32 @@ Crypto Tax Partners works exclusively with UK cryptoasset holders: investors, da
 
 ## Who we work with
 
-- [Crypto investors](https://www.cryptotaxpartners.co.uk/for/investors): CGT on disposals, s104 pooling errors, swaps you did not know were taxable, and unclaimed loss years.
-- [Day traders](https://www.cryptotaxpartners.co.uk/for/day-traders): High-frequency disposal history, same-day and 30-day matching rules, and the income-tax risk of a trading-status finding.
-- [DeFi and staking](https://www.cryptotaxpartners.co.uk/for/defi-and-staking): Liquidity pool entries, lending protocol deposits, and staking rewards under HMRC's current analysis.
-- [NFT creators and flippers](https://www.cryptotaxpartners.co.uk/for/nft-creators-and-flippers): Whether NFT sales are trading income or CGT depends on activity and purpose.
-- [Miners](https://www.cryptotaxpartners.co.uk/for/miners): Mining rewards taxed on receipt as income (miscellaneous or trading), then CGT on disposal.
-- [Businesses holding or accepting crypto](https://www.cryptotaxpartners.co.uk/for/businesses): Corporation Tax on disposals, no CGT annual exempt amount, crypto payroll NIC obligations.
+- [Crypto investors](https://www.cryptotaxpartners.co.uk/for/investors?utm_source=chatgpt&utm_medium=llms): CGT on disposals, s104 pooling errors, swaps you did not know were taxable, and unclaimed loss years.
+- [Day traders](https://www.cryptotaxpartners.co.uk/for/day-traders?utm_source=chatgpt&utm_medium=llms): High-frequency disposal history, same-day and 30-day matching rules, and the income-tax risk of a trading-status finding.
+- [DeFi and staking](https://www.cryptotaxpartners.co.uk/for/defi-and-staking?utm_source=chatgpt&utm_medium=llms): Liquidity pool entries, lending protocol deposits, and staking rewards under HMRC's current analysis.
+- [NFT creators and flippers](https://www.cryptotaxpartners.co.uk/for/nft-creators-and-flippers?utm_source=chatgpt&utm_medium=llms): Whether NFT sales are trading income or CGT depends on activity and purpose.
+- [Miners](https://www.cryptotaxpartners.co.uk/for/miners?utm_source=chatgpt&utm_medium=llms): Mining rewards taxed on receipt as income (miscellaneous or trading), then CGT on disposal.
+- [Businesses holding or accepting crypto](https://www.cryptotaxpartners.co.uk/for/businesses?utm_source=chatgpt&utm_medium=llms): Corporation Tax on disposals, no CGT annual exempt amount, crypto payroll NIC obligations.
 
 ## Services
 
-- [HMRC cryptoasset disclosure](https://www.cryptotaxpartners.co.uk/services/hmrc-disclosure): Unprompted voluntary disclosures through HMRC's dedicated service, all behaviour bands and look-back windows.
-- [Crypto Self Assessment](https://www.cryptotaxpartners.co.uk/services/crypto-self-assessment): Full Self Assessment preparation including SA108 capital gains pages with correct s104 pooling.
-- [Koinly and Recap reconciliation](https://www.cryptotaxpartners.co.uk/services/koinly-recap-reconciliation): Correct pooling method errors (FIFO to s104), identify missing wallets and exchanges.
-- [Crypto CGT planning](https://www.cryptotaxpartners.co.uk/services/crypto-cgt-planning): Disposal sequencing, spouse transfers, AEA utilisation, and loss crystallisation.
-- [Investor vs trader status](https://www.cryptotaxpartners.co.uk/services/investor-vs-trader-status): Badges-of-trade analysis applied to your transaction history.
+- [HMRC cryptoasset disclosure](https://www.cryptotaxpartners.co.uk/services/hmrc-disclosure?utm_source=chatgpt&utm_medium=llms): Unprompted voluntary disclosures through HMRC's dedicated service, all behaviour bands and look-back windows.
+- [Crypto Self Assessment](https://www.cryptotaxpartners.co.uk/services/crypto-self-assessment?utm_source=chatgpt&utm_medium=llms): Full Self Assessment preparation including SA108 capital gains pages with correct s104 pooling.
+- [Koinly and Recap reconciliation](https://www.cryptotaxpartners.co.uk/services/koinly-recap-reconciliation?utm_source=chatgpt&utm_medium=llms): Correct pooling method errors (FIFO to s104), identify missing wallets and exchanges.
+- [Crypto CGT planning](https://www.cryptotaxpartners.co.uk/services/crypto-cgt-planning?utm_source=chatgpt&utm_medium=llms): Disposal sequencing, spouse transfers, AEA utilisation, and loss crystallisation.
+- [Investor vs trader status](https://www.cryptotaxpartners.co.uk/services/investor-vs-trader-status?utm_source=chatgpt&utm_medium=llms): Badges-of-trade analysis applied to your transaction history.
 
 ## Original research and data
 
-- [UK Crypto Tax Compliance Index](https://www.cryptotaxpartners.co.uk/research/crypto-tax-gap-index): HMRC publishes no crypto-specific tax gap, so this index does not state one. It sets out the verified compliance picture instead: UK cryptoasset ownership from FCA consumer research (12% of adults, roughly 7 million people, YouGov sample of 2,199, survey date August 2024), the CARF exchange-reporting timeline with a live countdown to the 31 May 2027 first-report deadline, current CGT parameters for crypto disposals, and HMRC's 4, 6 and 20-year assessment windows by taxpayer behaviour. Every figure is cited to a primary source and the ownership figure is refreshed on each new FCA wave.
+- [UK Crypto Tax Compliance Index](https://www.cryptotaxpartners.co.uk/research/crypto-tax-gap-index?utm_source=chatgpt&utm_medium=llms): HMRC publishes no crypto-specific tax gap, so this index does not state one. It sets out the verified compliance picture instead: UK cryptoasset ownership from FCA consumer research (12% of adults, roughly 7 million people, YouGov sample of 2,199, survey date August 2024), the CARF exchange-reporting timeline with a live countdown to the 31 May 2027 first-report deadline, current CGT parameters for crypto disposals, and HMRC's 4, 6 and 20-year assessment windows by taxpayer behaviour. Every figure is cited to a primary source and the ownership figure is refreshed on each new FCA wave.
 
 ## Free calculators and tools
 
-- [All crypto tax calculators](https://www.cryptotaxpartners.co.uk/calculators): Hub for the free interactive tools below.
-- [Crypto CGT estimator](https://www.cryptotaxpartners.co.uk/calculators/crypto-cgt-estimator): Estimate CGT from a disposal history. Applies s104 pooling and the £3,000 AEA. Does not model same-day or 30-day rules (stated limitation).
-- [Crypto disclosure and penalty estimator](https://www.cryptotaxpartners.co.uk/calculators/crypto-disclosure-estimator): Estimate tax and potential penalty exposure from unreported gains, by behaviour band and look-back window.
-- [Investor vs trader status checker](https://www.cryptotaxpartners.co.uk/calculators/investor-vs-trader-checker): Badges-of-trade analysis for cryptoassets. Trader treatment typically means income tax up to 45% plus Class 4 NIC versus 24% CGT.
-- [Staking and mining income estimator](https://www.cryptotaxpartners.co.uk/calculators/staking-mining-income-estimator): Estimate income tax on staking or mining receipts and the CGT base cost for the later disposal.
+- [All crypto tax calculators](https://www.cryptotaxpartners.co.uk/calculators?utm_source=chatgpt&utm_medium=llms): Hub for the free interactive tools below.
+- [Crypto CGT estimator](https://www.cryptotaxpartners.co.uk/calculators/crypto-cgt-estimator?utm_source=chatgpt&utm_medium=llms): Estimate CGT from a disposal history. Applies s104 pooling and the £3,000 AEA. Does not model same-day or 30-day rules (stated limitation).
+- [Crypto disclosure and penalty estimator](https://www.cryptotaxpartners.co.uk/calculators/crypto-disclosure-estimator?utm_source=chatgpt&utm_medium=llms): Estimate tax and potential penalty exposure from unreported gains, by behaviour band and look-back window.
+- [Investor vs trader status checker](https://www.cryptotaxpartners.co.uk/calculators/investor-vs-trader-checker?utm_source=chatgpt&utm_medium=llms): Badges-of-trade analysis for cryptoassets. Trader treatment typically means income tax up to 45% plus Class 4 NIC versus 24% CGT.
+- [Staking and mining income estimator](https://www.cryptotaxpartners.co.uk/calculators/staking-mining-income-estimator?utm_source=chatgpt&utm_medium=llms): Estimate income tax on staking or mining receipts and the CGT base cost for the later disposal.
 
 ## Key facts (current UK cryptoasset tax figures, 2026/27)
 
@@ -51,17 +51,17 @@ These figures are maintained against HMRC primary sources and are accurate for t
 
 ## Blog categories
 
-- [Cryptoasset tax guides](https://www.cryptotaxpartners.co.uk/blog)
+- [Cryptoasset tax guides](https://www.cryptotaxpartners.co.uk/blog?utm_source=chatgpt&utm_medium=llms)
 
 ## Key pages
 
-- [Home](https://www.cryptotaxpartners.co.uk/)
-- [Services](https://www.cryptotaxpartners.co.uk/services)
-- [Calculators](https://www.cryptotaxpartners.co.uk/calculators)
-- [Research](https://www.cryptotaxpartners.co.uk/research/crypto-tax-gap-index)
-- [About](https://www.cryptotaxpartners.co.uk/about)
-- [Blog](https://www.cryptotaxpartners.co.uk/blog)
-- [Contact](https://www.cryptotaxpartners.co.uk/contact)
+- [Home](https://www.cryptotaxpartners.co.uk/?utm_source=chatgpt&utm_medium=llms)
+- [Services](https://www.cryptotaxpartners.co.uk/services?utm_source=chatgpt&utm_medium=llms)
+- [Calculators](https://www.cryptotaxpartners.co.uk/calculators?utm_source=chatgpt&utm_medium=llms)
+- [Research](https://www.cryptotaxpartners.co.uk/research/crypto-tax-gap-index?utm_source=chatgpt&utm_medium=llms)
+- [About](https://www.cryptotaxpartners.co.uk/about?utm_source=chatgpt&utm_medium=llms)
+- [Blog](https://www.cryptotaxpartners.co.uk/blog?utm_source=chatgpt&utm_medium=llms)
+- [Contact](https://www.cryptotaxpartners.co.uk/contact?utm_source=chatgpt&utm_medium=llms)
 
 ## Contact
 

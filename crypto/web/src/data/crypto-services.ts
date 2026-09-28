@@ -4,11 +4,14 @@ export interface CryptoService {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
+  /** Closing-panel body, one sentence, written per service (not one line shared by every page). */
+  ctaBody: string;
 }
 
 export const cryptoServices: CryptoService[] = [
   {
     slug: "hmrc-disclosure",
+    ctaBody: "Tell us what you have not declared and which years are open, and we will set out the disclosure route and what it is likely to cost.",
     title: "HMRC Disclosure",
     headline: "HMRC crypto disclosure for unpaid cryptoasset tax",
     metaTitle: "HMRC Crypto Disclosure Service | Crypto Tax Partners",
@@ -93,6 +96,7 @@ export const cryptoServices: CryptoService[] = [
   },
   {
     slug: "crypto-self-assessment",
+    ctaBody: "Send us your transaction history and we will handle your Self Assessment, cryptoasset pages included, start to finish.",
     title: "Crypto Self Assessment",
     headline: "Self Assessment filing for UK cryptoasset holders",
     metaTitle: "Crypto Self Assessment UK | SA108 Filing | Crypto Tax Partners",
@@ -172,6 +176,7 @@ export const cryptoServices: CryptoService[] = [
   },
   {
     slug: "koinly-recap-reconciliation",
+    ctaBody: "Send us your Koinly or Recap export and we will find and fix the pooling and matching errors before you file.",
     title: "Koinly and Recap Reconciliation",
     headline: "Review and reconciliation of Koinly and Recap tax reports",
     metaTitle: "Koinly Recap Tax Report Review UK | Crypto Tax Partners",
@@ -247,6 +252,7 @@ export const cryptoServices: CryptoService[] = [
   },
   {
     slug: "crypto-cgt-planning",
+    ctaBody: "Tell us what you are planning to sell or move and we will plan the disposals to make the most of your allowances before you act.",
     title: "Crypto CGT Planning",
     headline: "CGT planning for UK cryptoasset holders",
     metaTitle: "Crypto CGT Planning UK | AEA, Band and Spouse Planning | Crypto Tax Partners",
@@ -326,6 +332,7 @@ export const cryptoServices: CryptoService[] = [
   },
   {
     slug: "investor-vs-trader-status",
+    ctaBody: "Send us your activity and we will give you a reasoned view on your investor or trader status, and what it means for your tax.",
     title: "Investor vs Trader Status",
     headline: "Investor vs trader status advice for UK crypto and day traders",
     metaTitle: "Crypto Investor vs Trader Status UK | Crypto Tax Partners",

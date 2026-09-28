@@ -73,7 +73,16 @@ export const metadata: Metadata = {
   title: { default: `${niche.display_name} | ${niche.tagline}`, template: `%s | ${niche.display_name}` },
   description: niche.description,
   alternates: { canonical: siteUrl, languages: { "en-GB": siteUrl, "x-default": siteUrl } },
-  verification: { google: niche.seo.search_console_verification?.google || undefined, yandex: niche.seo.search_console_verification?.yandex || undefined, other: { ...(niche.seo.search_console_verification?.bing ? { "msvalidate.01": niche.seo.search_console_verification.bing } : {}) } },
+  verification: {
+    google: niche.seo.search_console_verification?.google || undefined,
+    yandex: niche.seo.search_console_verification?.yandex || undefined,
+    // Server-rendered so the AdSense crawler finds it (the ad loader is
+    // client-side behind the consent gate, so the snippet method fails).
+    other: {
+      "google-adsense-account": "ca-pub-3756285576371279",
+      ...(niche.seo.search_console_verification?.bing ? { "msvalidate.01": niche.seo.search_console_verification.bing } : {}),
+    },
+  },
   openGraph: { type: "website", locale: niche.seo.locale, url: siteUrl, siteName: niche.display_name, title: niche.display_name, description: niche.description, images: [{ url: "/api/og", width: 1200, height: 630, alt: niche.display_name }] },
   twitter: { card: "summary_large_image", title: niche.display_name, description: niche.description, images: ["/api/og"] },
 };
@@ -91,7 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         <ConsentProvider>
           <AnalyticsProvider siteKey={niche.content_strategy.site_key} siteName={niche.display_name} storagePrefix="datp" posture="opt-out" noTrackPrefixes={["/admin"]}>
-            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} />
+            <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} adsenseClientId="ca-pub-3756285576371279" />
             {/* Site chrome (header, skip link, <main id="main">, footer) comes
                 from the shared kit via PageShell. It renders children bare on
                 /embed/ paths so embedded calculators stay chrome-free inside a

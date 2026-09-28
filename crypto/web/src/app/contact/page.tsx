@@ -58,7 +58,7 @@ export default function ContactPage() {
 
               <WhatToExpectCard
                 items={[
-                  "A specialist firm from our partner network reads your enquiry",
+                  "One of our accountants reads your enquiry",
                   "An initial call to understand your position, with no obligation",
                   "The call takes about 20 minutes",
                   "You pick the callback window that suits you",
