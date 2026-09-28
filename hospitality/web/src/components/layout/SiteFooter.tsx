@@ -71,7 +71,7 @@ export function SiteFooter() {
               &copy; {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
             </p>
             <p className="text-xs text-neutral-500">
-              Specialist hospitality accountants. Free first call, then a fixed fee in writing.
+              Specialist hospitality accountants. Editorial content only. Contact us for advice specific to your business.
             </p>
           </div>
           <p className="text-xs text-neutral-400">

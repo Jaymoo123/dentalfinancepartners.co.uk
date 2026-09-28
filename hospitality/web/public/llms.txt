@@ -65,7 +65,7 @@ Page URLs in this file carry `utm_source=chatgpt&utm_medium=llms` so AI referred
 
 ## Contact
 - Use our contact form: https://www.hospitalitytax.co.uk/contact?utm_source=chatgpt&utm_medium=llms
-- Free first call, then a fixed fee in writing. We reply within 24 hours for UK hospitality businesses.
+- Free, no-obligation reply within 24 hours for UK hospitality businesses.
 
 ## Full index
 - Complete page index: https://www.hospitalitytax.co.uk/llms-full.txt

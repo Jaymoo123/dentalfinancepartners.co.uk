@@ -78,11 +78,11 @@ export default function ServicesPage() {
         lead panel with the site's LeadForm on every money page. This hub
         rendered zero forms, only a /contact link. */}
     <LeadCTAPanel
-      eyebrow="Free first call, then a fixed fee in writing"
-      title="Not sure which of these you need?"
-      description="Most hospitality businesses need two or three of them and do not know which. Tell us what you run and where the numbers stop making sense, and we will tell you what we would start with. We reply within 24 hours and one of our accountants comes back to you directly."
+      eyebrow=""
+      title="Speak to a hospitality accounts specialist."
+      description="Tell us about your hospitality business and we will reply within 24 hours. No obligation."
       proofPoints={[]}
-      formTitle="Book your free first call"
+      formTitle=""
       form={<LeadForm submitLabel="Request callback" />}
     />
     </>

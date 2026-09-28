@@ -40,13 +40,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 2026-09-28 parity fix (brief section 4): /about rendered zero forms. */}
+      {/* 2026-09-28 parity fix (brief section 4): /about rendered zero forms.
+        2026-09-28 late (owner ruling, wording reversal): the mount stays, the
+        agent-written copy does not; the strings below are this page's own
+        published band copy. */}
       <LeadCTAPanel
-        eyebrow="Free first call, then a fixed fee in writing"
-        title="Talk to a hospitality accounts specialist."
-        description="Tell us what you run, how many covers or rooms you turn over and where the numbers stop making sense, and we will tell you what we would do about it before you commit to anything. We reply within 24 hours and one of our accountants comes back to you directly."
+        eyebrow=""
+        title="Speak to a hospitality accounts specialist."
+        description="Tell us about your hospitality business and we will reply within 24 hours. No obligation."
         proofPoints={[]}
-        formTitle="Book your free first call"
+        formTitle=""
         form={<LeadForm submitLabel="Request callback" />}
       />
     </>

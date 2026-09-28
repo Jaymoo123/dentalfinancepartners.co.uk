@@ -13,18 +13,6 @@ export function generateStaticParams() {
   return hospitalityServices.map((s) => ({ slug: s.slug }));
 }
 
-const SERVICE_CLOSERS: Record<string, string> = {
-  "tronc-scheme-setup":
-    "Tell us how tips reach your staff today and we will design a tronc that genuinely is independent, appoint the troncmaster, and notify HMRC for you.",
-  "hospitality-payroll":
-    "Send us a typical rota and we will run your payroll off it, keep the tronc separate, and make sure the April 2026 cost rises are priced in before they land.",
-  "hospitality-vat":
-    "Send us your menu and a month of takings and we will tell you which lines are standard rated, which are not, and whether you have been overpaying.",
-  "toms-advice":
-    "Tell us what is bundled into your packages and we will tell you whether the Tour Operators Margin Scheme applies to you, and what it does to your VAT bill either way.",
-  "business-rates-relief":
-    "Send us your rateable value and your current bill and we will tell you what relief you are entitled to from April 2026 and how to claim it.",
-};
 
 export async function generateMetadata({
   params,
@@ -167,11 +155,11 @@ export default async function ServicePage({
           only a /contact link. Swapped for the shared LeadCTAPanel + this
           site's own LeadForm, same pattern as ecommerce's /services/[slug]. */}
       <LeadCTAPanel
-        eyebrow="Free first call, then a fixed fee in writing"
+        eyebrow=""
         title="Speak to a hospitality accounts specialist."
-        description={`${SERVICE_CLOSERS[service.slug] ?? "Tell us about your hospitality business and we will tell you where you stand."} We reply within 24 hours and one of our accountants comes back to you directly.`}
+        description="Tell us about your hospitality business and we will reply within 24 hours. No obligation."
         proofPoints={[]}
-        formTitle="Book your free first call"
+        formTitle=""
         form={<LeadForm submitLabel="Request callback" />}
       />
 
