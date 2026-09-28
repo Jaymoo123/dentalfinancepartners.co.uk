@@ -357,7 +357,11 @@ input:focus,
 textarea:focus,
 select:focus {
   border-color: var(--copper);
-  outline: none;
+  /* outline: none removed 2026-09-29: this unlayered rule beats every
+     Tailwind focus-visible/ring utility on the site (same mechanism as the
+     `a` and CTA-contrast traps documented above), so it was cancelling the
+     `*:focus-visible` 2px solid outline (line 288) on every form control's
+     keyboard focus. The box-shadow ring stays as a second focus affordance. */
   box-shadow: 0 0 0 3px var(--copper-soft);
 }
 
