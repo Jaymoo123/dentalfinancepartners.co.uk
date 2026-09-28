@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { btnPrimary, siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { niche } from "@/config/niche-loader";
+import { LeadForm } from "@/components/forms/LeadForm";
 export const metadata: Metadata = {
   title: "About | Specialist UK Care Sector Accountants",
   description: `${siteConfig.name} are specialist UK accountants for care providers.`,
   alternates: { canonical: `${siteConfig.url}/about` },
 };
 export default function AboutPage() {
-  const co = siteConfig.company;
   return (<>
     <section className="border-b border-neutral-200 bg-[#5a4d75] py-16 sm:py-20">
       <div className={siteContainerLg}>
@@ -19,16 +19,17 @@ export default function AboutPage() {
       </div>
     </section>
     {niche.entity ? <EntityBlock {...niche.entity} /> : null}
-    <section className="bg-white">
-      <div className={`${siteContainerLg} ${sectionYLoose}`}>
-        <div className="max-w-3xl space-y-8 text-base leading-relaxed text-neutral-600 sm:text-lg">
-          <p>We reply within 24 hours.</p>
-        </div>
-        <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
-          <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
-        </div>
-        <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
-      </div>
-    </section>
+    <div id="book" className="scroll-mt-24">
+      <LeadCTAPanel
+        contained
+        ground="slate"
+        eyebrow="Free call"
+        title="Talk to a care sector specialist"
+        description="Tell us about your situation and we will reply within 24 hours."
+        proofPoints={[]}
+        formTitle="Get in touch"
+        form={<LeadForm submitLabel="Send enquiry" />}
+      />
+    </div>
   </>);
 }

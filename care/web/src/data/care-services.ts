@@ -296,7 +296,7 @@ export const careServices: CareService[] = [
         body: `We establish the capital-allowances pool in the property and fit-out, apply the correct post-April 2026 sequencing (<a href="https://www.gov.uk/capital-allowances/annual-investment-allowance">AIA</a> then <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/29">40% FYA</a> then <a href="https://www.legislation.gov.uk/ukpga/2026/11/section/28">14% WDA</a> then <a href="https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings">3% SBA</a>) and present the tax value so it can be factored into the price negotiation and the post-acquisition cash forecast.`,
       },
       {
-        title: "Advise on acquisition structure with the CT and BADR consequences modelled",
+        title: "Model acquisition structure with the CT and BADR consequences",
         body: `We model asset vs share purchase, propco/opco arrangements and the associated-company <a href="https://www.gov.uk/corporation-tax-rates">CT threshold</a> effects. If you plan to sell eventually, we also consider whether the structure preserves <a href="/services/selling-a-care-home">Business Asset Disposal Relief eligibility</a> from day one.`,
       },
     ],
