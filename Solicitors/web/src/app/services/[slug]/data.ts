@@ -69,10 +69,10 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         ],
       },
       {
-        heading: "How our partner firms differ from corporate legal-sector accountants",
+        heading: "How we differ from corporate legal-sector accountants",
         body: [
           "Some legal-sector accountancy firms have grown into corporate operations that allocate junior staff to client work and only escalate up when something goes wrong. The named partner is rarely on the call.",
-          "The firms we match you with work the opposite way. The senior accountant working on your account is the senior accountant. The same person who reviews your year-end is the person you email when a buyer wants due diligence by Friday or a new COFA needs onboarding.",
+          "We work the opposite way. The senior accountant working on your account is the senior accountant. The same person who reviews your year-end is the person you email when a buyer wants due diligence by Friday or a new COFA needs onboarding.",
           "We match firm to firm deliberately, so that stays real.",
         ],
       },
@@ -97,7 +97,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Who delivers the SRA Accountant's Report?",
         answer:
-          "Not us. The reporting accountant must hold a current practising certificate from a recognised supervisory body such as the ICAEW, the ACCA or the ICAS, and must be independent of your firm. We connect you with an appropriately qualified independent reporting accountant from our specialist partner network, and help you get your client account records, reconciliations and breach log into a state the report can be built from. The report must be obtained within 6 months of your firm's accounting period end.",
+          "Not us. The reporting accountant must hold a current practising certificate from a recognised supervisory body such as the ICAEW, the ACCA or the ICAS, and must be independent of your firm. We arrange an appropriately qualified independent reporting accountant to complete it, and help you get your client account records, reconciliations and breach log into a state the report can be built from. The report must be obtained within 6 months of your firm's accounting period end.",
       },
       {
         question: "Do you only work with solicitors?",
@@ -107,7 +107,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Can you handle our existing software (Leap, Clio, ProClaim)?",
         answer:
-          "Yes. Most firms we work with run Xero or QuickBooks as the financial system, integrated with a practice management system (Leap, Clio, ProClaim, ALB, SOS Connect). Our partner firms are software-agnostic; whatever you use, they will work with it. Moving from desktop-only to cloud-based systems is worth doing where you are still on Sage 50 or older Iris.",
+          "Yes. Most firms we work with run Xero or QuickBooks as the financial system, integrated with a practice management system (Leap, Clio, ProClaim, ALB, SOS Connect). We are software-agnostic; whatever you use, we will work with it. Moving from desktop-only to cloud-based systems is worth doing where you are still on Sage 50 or older Iris.",
       },
       {
         question: "How much do you charge?",
@@ -207,7 +207,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Can you support a newly-appointed COFA?",
         answer:
-          "Yes. New-COFA onboarding is a separate engagement with a partner firm: it walks you through the Accounts Rules in plain English (not regulatory speak), sets up your reconciliation rhythm and evidence file, builds your breach decision log template, and includes a quarterly check-in for the first year so the role beds in properly.",
+          "Yes. New-COFA onboarding is a separate engagement: it walks you through the Accounts Rules in plain English (not regulatory speak), sets up your reconciliation rhythm and evidence file, builds your breach decision log template, and includes a quarterly check-in for the first year so the role beds in properly.",
       },
     ],
     relatedServices: [
@@ -231,7 +231,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "LLP and partnership accounting for UK law firms",
       intro:
-        "Members of an LLP are self-employed for tax even though the LLP has separate legal personality. Salaried members can be deemed employees by the FA 2014 rules. The allocation, audit, and partner-by-partner self-assessment is what the partner firm we match you with does.",
+        "Members of an LLP are self-employed for tax even though the LLP has separate legal personality. Salaried members can be deemed employees by the FA 2014 rules. The allocation, audit, and partner-by-partner self-assessment is work we do for you.",
     },
     sections: [
       {
@@ -256,13 +256,13 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "Why the FA 2014 audit matters quarterly",
         body: [
           "The position is dynamic. A salaried partner who passed the three-condition test last year might fail this year if their bonus rises, their capital contribution proportion changes, or their role expands.",
-          "Quarterly audit catches drift early. Your partner firm models each salaried/fixed-share partner against the three conditions and either confirm partner-tax treatment continues, or flag the trigger requiring PAYE. The wrong answer for the wrong year can trigger PAYE backdating and HMRC interest.",
+          "Quarterly audit catches drift early. We model each salaried/fixed-share partner against the three conditions and either confirm partner-tax treatment continues, or flag the trigger requiring PAYE. The wrong answer for the wrong year can trigger PAYE backdating and HMRC interest.",
         ],
       },
       {
         heading: "Partner capital + interest relief",
         body: [
-          "Partners typically buy in to an LLP with a capital contribution. Borrowing to fund the buy-in attracts qualifying loan interest relief under ITA 2007 s.398: the interest paid on the loan is deductible from the partner's personal taxable income. The relief is per-partner, and your partner firm sets up the documentation so it is claimable each year on the partner's self-assessment.",
+          "Partners typically buy in to an LLP with a capital contribution. Borrowing to fund the buy-in attracts qualifying loan interest relief under ITA 2007 s.398: the interest paid on the loan is deductible from the partner's personal taxable income. The relief is per-partner, and we set up the documentation so it is claimable each year on the partner's self-assessment.",
         ],
       },
     ],
@@ -287,12 +287,12 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What happens to partner accounts when a partner leaves?",
         answer:
-          "The LLP agreement governs. Typically the leaving partner is entitled to their capital contribution back (sometimes phased over 1-3 years), their final allocation of profit up to leaving date, and any vested deferred compensation. The accounting treatment requires careful tracking, and your partner firm manages the partner ledger across the transition.",
+          "The LLP agreement governs. Typically the leaving partner is entitled to their capital contribution back (sometimes phased over 1-3 years), their final allocation of profit up to leaving date, and any vested deferred compensation. The accounting treatment requires careful tracking, and we manage the partner ledger across the transition.",
       },
       {
         question: "Should we convert from general partnership to LLP?",
         answer:
-          "For most multi-partner firms, yes. LLP gives limited liability protection while preserving the partnership tax treatment. The conversion is administratively simple. The exception is very small firms (2 partners, low turnover) where the Companies House filing obligation may outweigh the liability protection. Your partner firm models the conversion economics on a per-firm basis.",
+          "For most multi-partner firms, yes. LLP gives limited liability protection while preserving the partnership tax treatment. The conversion is administratively simple. The exception is very small firms (2 partners, low turnover) where the Companies House filing obligation may outweigh the liability protection. We model the conversion economics on a per-firm basis.",
       },
     ],
     relatedServices: [
@@ -350,7 +350,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "Section 162 incorporation relief",
         body: [
           "Section 162 TCGA 1992 defers CGT on goodwill when an unincorporated trade is transferred to a company in exchange for shares. For law firms approaching sale, the typical play is: incorporate via Section 162 now, hold the shares for 2+ years to qualify for BADR on the eventual share sale, then sell the shares. The deferred goodwill gain rolls into the share base cost.",
-          "This route works when the share sale BADR position beats the asset sale alternative. Your partner firm models both on actual firm numbers before recommending.",
+          "This route works when the share sale BADR position beats the asset sale alternative. We model both on actual firm numbers before recommending.",
         ],
       },
       {
@@ -398,7 +398,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What's the difference between an asset sale and a share sale?",
         answer:
-          "For a law firm structured as an LLP, the sale is typically an asset sale (the buyer acquires the goodwill, WIP, and tangible assets). For a law firm incorporated as a limited company, the sale can be a share sale (the buyer acquires the company). Asset sales suit buyers who don't want to inherit historic liabilities; share sales suit sellers who want a cleaner BADR position. Your partner firm models both.",
+          "For a law firm structured as an LLP, the sale is typically an asset sale (the buyer acquires the goodwill, WIP, and tangible assets). For a law firm incorporated as a limited company, the sale can be a share sale (the buyer acquires the company). Asset sales suit buyers who don't want to inherit historic liabilities; share sales suit sellers who want a cleaner BADR position. We model both.",
       },
       {
         question: "When should pre-sale planning start?",
@@ -427,7 +427,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "COFA and COLP compliance support",
       intro:
-        "If you've just stepped into the COFA or COLP role, or you've inherited one from someone who left in a hurry, the SRA Accounts Rules and the COLP responsibilities can feel suddenly substantial. We match you with a firm that helps you bed in the controls so the role doesn't dominate the day job.",
+        "If you've just stepped into the COFA or COLP role, or you've inherited one from someone who left in a hurry, the SRA Accounts Rules and the COLP responsibilities can feel suddenly substantial. We help you bed in the controls so the role doesn't dominate the day job.",
     },
     sections: [
       {
@@ -504,7 +504,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "We've just had an SRA Forensic Investigation visit. Help?",
         answer:
-          "Yes. A Forensic Investigation requires careful handling, and a firm from our partner network can co-ordinate the accountancy-side response. The investigation typically requests the working file, breach log, reconciliation evidence, and matter-level samples. They help you compile the response, identify any historic issues that need disclosure, and remediate any control gaps. The faster and cleaner the response, the better the regulatory outcome.",
+          "Yes. A Forensic Investigation requires careful handling, and we co-ordinate the accountancy-side response. The investigation typically requests the working file, breach log, reconciliation evidence, and matter-level samples. We help you compile the response, identify any historic issues that need disclosure, and remediate any control gaps. The faster and cleaner the response, the better the regulatory outcome.",
       },
     ],
     relatedServices: [

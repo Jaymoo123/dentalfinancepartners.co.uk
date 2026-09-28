@@ -30,12 +30,12 @@ const TOPIC_HOOKS: Partial<Record<TopicKey, [string, string, string]>> = {
   "sra-compliance": [
     "Getting the client account right is where firms trip up. Want me to point you to the reserve and reconciliation tool?",
     "Still weighing up the SRA Accounts Rules? I can point you to a plain-English run-through or the client account tool, your call.",
-    "The client account is worth a second pair of eyes. A specialist will talk it through with you, free and no pressure, shall I set that up?",
+    "The client account is worth a second pair of eyes. One of our accountants will talk it through with you, free and no pressure, shall I set that up?",
   ],
   "sole-practitioner": [
     "Working out what you actually keep from the practice? There is a calculator that does the fiddly part for you.",
     "Want a hand comparing sole practitioner, partner and limited company take-home? Happy to pull up the tool.",
-    "A free call with a specialist will confirm the most tax-efficient way to draw your profit, want me to arrange it?",
+    "A free call with one of our accountants will confirm the most tax-efficient way to draw your profit, want me to arrange it?",
   ],
   "partnership-llp": [
     "Splitting profit across the partners? There is a tool that allocates it and shows what each keeps after tax.",
@@ -64,7 +64,7 @@ const COMBO_SOLE_INC: [string, string, string] = [
 
 const USED_CALC: [string, string, string] = [
   "Got your numbers? It is worth having a specialist sanity-check them for your firm, free.",
-  "Those figures are a solid start. Want a specialist from our partner network to confirm them on a quick call?",
+  "Those figures are a solid start. Want one of our accountants to confirm them on a quick call?",
   "Shall I set up a free call to walk through what the calculator gave you?",
 ];
 

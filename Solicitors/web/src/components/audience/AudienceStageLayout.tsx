@@ -15,6 +15,7 @@ import {
   JsonLd,
   buildFaqPage,
   buildBreadcrumbJsonLd,
+  buildService,
 } from "@/lib/schema/index";
 
 export type AudienceStage = {
@@ -48,9 +49,15 @@ export function AudienceStageLayout({ data }: Props) {
     data.faqs.map((f) => ({ question: f.q, answer: f.a })),
   );
   const breadcrumbSchema = JSON.parse(buildBreadcrumbJsonLd(breadcrumbItems));
+  const serviceSchema = buildService({
+    name: data.title,
+    description: data.metaDescription,
+    path: `/${data.slug}`,
+    audience: data.eyebrow,
+  });
   const schemaPayload = faqPage
-    ? [breadcrumbSchema, faqPage]
-    : [breadcrumbSchema];
+    ? [breadcrumbSchema, serviceSchema, faqPage]
+    : [breadcrumbSchema, serviceSchema];
 
   return (
     <>

@@ -1,4 +1,16 @@
 {
+  "entity": {
+    "firm": "Accounts for Lawyers is the UK's specialist accountancy firm for solicitors, law firms and legal practices. We handle SRA Accounts Rules compliance, trust accounting, partnership and LLP tax, LLP conversion, and practice succession planning, alongside accounts, bookkeeping and tax returns. Accounts for Lawyers is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK solicitors, law firms and legal practitioners, from sole practitioners to multi-partner LLPs and partnerships.",
+    "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: what your practice is and what you need looked at.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work, deal with HMRC and Companies House on your behalf, and keep you ahead of your deadlines."
+    ],
+    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+  },
   "niche_id": "solicitors",
   "display_name": "Accounts for Lawyers",
   "legal_name": "Ashfield Trading Ltd",
@@ -20,8 +32,8 @@
     "privacy_policy_url": null
   },
   "domain": "www.accountsforlawyers.co.uk",
-  "tagline": "Specialist accountancy matching for UK solicitors and law firms",
-  "description": "We connect solicitors, law firms and legal practitioners with regulated accountancy firms that specialise in the legal sector. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
+  "tagline": "The UK's specialist accountants for solicitors and law firms",
+  "description": "We are the UK's specialist accountancy firm for solicitors, law firms and legal practitioners. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
   "brand": {
     "primary_color": "#c41e3a",
     "accent_color": "#475569",
@@ -211,7 +223,7 @@
     "theme_color": "#c41e3a",
     "homepage_title": "Accountant for Solicitors UK | Specialist Law Firm Accountants",
     "homepage_h1": "Specialist Accountants for Solicitors & Law Firms",
-    "homepage_description": "We connect UK solicitors and law firms with specialist accountancy firms. SRA compliance, trust accounting, partnership tax, LLP conversion advice. Book free consultation with legal sector specialists."
+    "homepage_description": "We are UK accountants for solicitors and law firms. SRA compliance, trust accounting, partnership tax, LLP conversion advice. Book a free first call with our legal sector specialists."
   },
   "lead_form": {
     "role_label": "I am a...",
@@ -299,7 +311,7 @@
         },
         "sticky": {
           "primary": "Ready to work with a specialist solicitor accountant?",
-          "secondary": "Book your free consultation today",
+          "secondary": "Free first call, then a fixed fee in writing",
           "button": "Get started",
           "href": "/contact"
         },
@@ -319,7 +331,7 @@
       }
     },
     "sticky_primary": "Ready to work with a specialist solicitor accountant?",
-    "sticky_secondary": "Book your free consultation today",
+    "sticky_secondary": "Free first call, then a fixed fee in writing",
     "sticky_button": "Get started"
   },
   "blog": {

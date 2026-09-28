@@ -132,7 +132,7 @@ export default function PartnershipTaxPillarPage() {
       ]}
       cta={{
         heading: "Need Partnership Tax Advice?",
-        body: "The specialist solicitor accountants we match you with help law firm partnerships and LLPs optimise their tax position while ensuring compliance. Get expert guidance on profit allocation, LLP conversion, and partner tax planning.",
+        body: "We help law firm partnerships and LLPs optimise their tax position while ensuring compliance. Get expert guidance on profit allocation, LLP conversion, and partner tax planning.",
         submitLabel: SUBMIT_LABEL,
       }}
       posts={posts}

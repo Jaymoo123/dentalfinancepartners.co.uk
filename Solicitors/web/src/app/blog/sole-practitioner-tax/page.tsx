@@ -130,7 +130,7 @@ export default function SolePractitionerTaxPillarPage() {
       ]}
       cta={{
         heading: "Need Sole Practitioner Tax Advice?",
-        body: "The specialist solicitor accountants we match you with help sole practitioners optimise their tax position while ensuring compliance with HMRC and SRA requirements. Get expert guidance tailored to your practice.",
+        body: "We help sole practitioners optimise their tax position while ensuring compliance with HMRC and SRA requirements. Get expert guidance tailored to your practice.",
         submitLabel: SUBMIT_LABEL,
       }}
       posts={posts}

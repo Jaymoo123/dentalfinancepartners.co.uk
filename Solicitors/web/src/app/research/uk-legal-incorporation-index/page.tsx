@@ -64,7 +64,7 @@ const faqs = [
   {
     question: "Is incorporation right for my law firm?",
     answer:
-      "That depends on your profit level, how much you retain in the business, your personal tax position, and whether the SRA's requirements for recognised bodies apply to your practice type. There is no universal answer: some firms benefit significantly from incorporation, others find that LLP or even sole practitioner structures remain more efficient. The right starting point is a firm-specific tax analysis that models both routes under current rates. The specialist firms in our partner network do exactly this comparison for solicitors and law firms.",
+      "That depends on your profit level, how much you retain in the business, your personal tax position, and whether the SRA's requirements for recognised bodies apply to your practice type. There is no universal answer: some firms benefit significantly from incorporation, others find that LLP or even sole practitioner structures remain more efficient. The right starting point is a firm-specific tax analysis that models both routes under current rates. We do exactly this comparison for solicitors and law firms.",
   },
 ];
 

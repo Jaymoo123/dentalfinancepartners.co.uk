@@ -40,11 +40,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     languages: { "en-GB": url, "x-default": url },
   });
 
+  // ponytail: lastModified is omitted wherever we do not track a real edit
+  // date. It used to be `new Date()`, which told crawlers every static page
+  // changed on every deploy; an inaccurate lastmod gets the whole sitemap's
+  // dates ignored (Property's fix, same shape). Blog posts below carry a
+  // genuine date from frontmatter.
   const entries: MetadataRoute.Sitemap = staticPaths.map((path) => {
     const url = `${base}${path}`;
     return {
       url,
-      lastModified: new Date(),
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : 0.7,
       alternates: hreflang(url),
@@ -55,7 +59,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/locations/${loc.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
       alternates: hreflang(url),
@@ -67,7 +70,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${cat.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.75,
       alternates: hreflang(url),
@@ -92,7 +94,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/calculators/${tool.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.75,
       alternates: hreflang(url),
@@ -104,7 +105,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/solicitor-guides/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -116,7 +116,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/resources/${topic}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: hreflang(url),

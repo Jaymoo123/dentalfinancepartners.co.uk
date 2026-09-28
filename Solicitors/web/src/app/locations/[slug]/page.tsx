@@ -60,13 +60,13 @@ const cityContent: Record<string, {
   services: { title: string; desc: string }[];
 }> = {
   london: {
-    intro: "We connect specialist solicitor accountants with law firms, sole practitioners, and legal practice owners across London. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, we match you with expert legal sector accounting and tax support.",
+    intro: "We are specialist solicitor accountants for law firms, sole practitioners, and legal practice owners across London. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, we provide expert legal sector accounting and tax support.",
     areas: "We work with solicitors across Central London, North London, South London, East London, and West London — including the City, Westminster, Camden, Islington, Southwark, Lambeth, Wandsworth, and surrounding boroughs.",
     whyLocal: "London has the highest concentration of law firms in the UK, from Magic Circle firms in the City to high street practices in every borough. We understand the London legal landscape, including complex partnership structures, high practice costs, and the competitive market for legal services.",
     services: [
       {
         title: "SRA compliance & trust accounting",
-        desc: "London law firms need rigorous client money handling and SRA Accounts Rules compliance. We match you with a firm providing 5-week reconciliations, Accountant's Reports, and COFA support for practices of all sizes.",
+        desc: "London law firms need rigorous client money handling and SRA Accounts Rules compliance. We provide 5-week reconciliations, Accountant's Reports, and COFA support for practices of all sizes.",
       },
       {
         title: "Partnership & LLP tax",
@@ -74,18 +74,18 @@ const cityContent: Record<string, {
       },
       {
         title: "Practice succession planning",
-        desc: "London practices need expert succession planning for partner retirements and practice sales. We match you with a firm providing valuations, tax planning, and exit strategy advice.",
+        desc: "London practices need expert succession planning for partner retirements and practice sales. We provide valuations, tax planning, and exit strategy advice.",
       },
     ],
   },
   manchester: {
-    intro: "We connect specialist solicitor accountants with law firms, sole practitioners, and legal practice owners across Manchester. Whether you're based in Spinningfields, the City Centre, or anywhere across Greater Manchester, we match you with expert legal sector accounting and tax support.",
+    intro: "We are specialist solicitor accountants for law firms, sole practitioners, and legal practice owners across Manchester. Whether you're based in Spinningfields, the City Centre, or anywhere across Greater Manchester, we provide expert legal sector accounting and tax support.",
     areas: "We work with solicitors across Manchester City Centre, Salford, Trafford, Stockport, Oldham, Rochdale, Bury, Bolton, Wigan, and surrounding areas of Greater Manchester.",
     whyLocal: "Manchester's legal sector is thriving, with major commercial firms in Spinningfields and established high street practices throughout the region. We understand the local legal market and the specific financial challenges Manchester-based solicitors face.",
     services: [
       {
         title: "SRA compliance & trust accounting",
-        desc: "Manchester law firms require expert client money handling and SRA compliance. We match you with a firm providing reconciliations, Accountant's Reports, and regulatory support.",
+        desc: "Manchester law firms require expert client money handling and SRA compliance. We provide reconciliations, Accountant's Reports, and regulatory support.",
       },
       {
         title: "Partnership & LLP tax",
@@ -98,13 +98,13 @@ const cityContent: Record<string, {
     ],
   },
   birmingham: {
-    intro: "We connect specialist solicitor accountants with law firms, sole practitioners, and legal practice owners across Birmingham. Whether you're in Colmore Row, the City Centre, or anywhere across the West Midlands, we match you with expert legal sector accounting and tax support.",
+    intro: "We are specialist solicitor accountants for law firms, sole practitioners, and legal practice owners across Birmingham. Whether you're in Colmore Row, the City Centre, or anywhere across the West Midlands, we provide expert legal sector accounting and tax support.",
     areas: "We work with solicitors across Birmingham City Centre, Colmore Row, Edgbaston, Solihull, Sutton Coldfield, Dudley, Sandwell, Walsall, Wolverhampton, and the wider West Midlands region.",
     whyLocal: "Birmingham is a major legal hub with diverse law firms from large commercial practices to established high street firms. We understand the West Midlands legal market and the financial needs of Birmingham-based solicitors.",
     services: [
       {
         title: "SRA compliance & trust accounting",
-        desc: "Birmingham law firms need rigorous SRA Accounts Rules compliance and client money handling. We match you with a firm providing reconciliations, Accountant's Reports, and COFA support.",
+        desc: "Birmingham law firms need rigorous SRA Accounts Rules compliance and client money handling. We provide reconciliations, Accountant's Reports, and COFA support.",
       },
       {
         title: "Partnership & LLP tax",
@@ -112,18 +112,18 @@ const cityContent: Record<string, {
       },
       {
         title: "Practice finance & cash flow",
-        desc: "Birmingham practices need expert cash flow management and lock-up reduction strategies. We match you with a firm providing working capital advice and partner drawings planning.",
+        desc: "Birmingham practices need expert cash flow management and lock-up reduction strategies. We provide working capital advice and partner drawings planning.",
       },
     ],
   },
   leeds: {
-    intro: "We connect specialist solicitor accountants with law firms, sole practitioners, and legal practice owners across Leeds. Whether you're in the City Centre, Chapel Allerton, or anywhere across West Yorkshire, we match you with expert legal sector accounting and tax support.",
+    intro: "We are specialist solicitor accountants for law firms, sole practitioners, and legal practice owners across Leeds. Whether you're in the City Centre, Chapel Allerton, or anywhere across West Yorkshire, we provide expert legal sector accounting and tax support.",
     areas: "We work with solicitors across Leeds City Centre, Chapel Allerton, Headingley, Horsforth, Wetherby, and the wider West Yorkshire region including Bradford, Wakefield, and Huddersfield.",
     whyLocal: "Leeds has a strong legal sector with established commercial firms and thriving high street practices. We understand the Yorkshire legal market and the financial priorities of Leeds-based solicitors.",
     services: [
       {
         title: "SRA compliance & trust accounting",
-        desc: "Leeds law firms require expert SRA Accounts Rules compliance and client money management. We match you with a firm providing reconciliations, Accountant's Reports, and regulatory guidance.",
+        desc: "Leeds law firms require expert SRA Accounts Rules compliance and client money management. We provide reconciliations, Accountant's Reports, and regulatory guidance.",
       },
       {
         title: "Partnership & LLP tax",
@@ -136,13 +136,13 @@ const cityContent: Record<string, {
     ],
   },
   bristol: {
-    intro: "We connect specialist solicitor accountants with law firms, sole practitioners, and legal practice owners across Bristol. Whether you're in the City Centre, Clifton, or anywhere across the South West, we match you with expert legal sector accounting and tax support.",
+    intro: "We are specialist solicitor accountants for law firms, sole practitioners, and legal practice owners across Bristol. Whether you're in the City Centre, Clifton, or anywhere across the South West, we provide expert legal sector accounting and tax support.",
     areas: "We work with solicitors across Bristol City Centre, Clifton, Redland, Westbury-on-Trym, and the wider South West region including Bath, Gloucester, Cheltenham, and Exeter.",
     whyLocal: "Bristol's legal sector combines established commercial firms with innovative high street practices. We understand the South West legal market and the financial needs of Bristol-based solicitors, from SRA compliance to practice growth.",
     services: [
       {
         title: "SRA compliance & trust accounting",
-        desc: "Bristol law firms need rigorous client money handling and SRA compliance. We match you with a firm providing 5-week reconciliations, Accountant's Reports, and COFA support.",
+        desc: "Bristol law firms need rigorous client money handling and SRA compliance. We provide 5-week reconciliations, Accountant's Reports, and COFA support.",
       },
       {
         title: "Partnership & LLP tax",
@@ -150,7 +150,7 @@ const cityContent: Record<string, {
       },
       {
         title: "Practice succession planning",
-        desc: "Bristol practices need expert succession planning for partner retirements and practice transitions. We match you with a firm providing valuations, tax planning, and exit strategies.",
+        desc: "Bristol practices need expert succession planning for partner retirements and practice transitions. We provide valuations, tax planning, and exit strategies.",
       },
     ],
   },

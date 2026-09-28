@@ -95,7 +95,7 @@ export default async function ThankYouPage({
           backdrop={<SolicitorsBackdrop tone="navy" />}
         >
           <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-            Thanks, that is confirmed. A specialist firm from our partner network will contact you directly.
+            Thanks, that is confirmed. One of our accountants will contact you directly.
           </p>
         </SlimHero>
 

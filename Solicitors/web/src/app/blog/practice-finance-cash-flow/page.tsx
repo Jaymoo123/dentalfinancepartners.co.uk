@@ -128,7 +128,7 @@ export default function PracticeFinancePillarPage() {
       ]}
       cta={{
         heading: "Need Practice Finance Advice?",
-        body: "The specialist solicitor accountants we match you with help law firms optimise cash flow, reduce lock-up, and secure appropriate finance. Get expert guidance on practice finance management.",
+        body: "We help law firms optimise cash flow, reduce lock-up, and secure appropriate finance. Get expert guidance on practice finance management.",
         submitLabel: SUBMIT_LABEL,
       }}
       posts={posts}

@@ -54,8 +54,8 @@ export default async function BookPage({
         backdrop={<SolicitorsBackdrop tone="navy" />}
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-          Pick a day and a time window that suits you. A specialist accountant for solicitors
-          will call you then, no obligation.
+          Pick a day and a time window that suits you. An accountant will call you then,
+          no obligation.
         </p>
       </SlimHero>
 

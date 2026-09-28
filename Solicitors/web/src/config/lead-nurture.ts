@@ -15,7 +15,8 @@
  * escalating follow-ups over about 11 days. Any two-way response (reply /
  * confirm) halts the chase and flips the lead to contactable.
  *
- * Delays from step 0: 0h, 0h, 4h, 24h, 48h, 96h, 168h, 264h (contactability).
+ * Delays from step 0: 0h, 0h, 4h, 20h, 24h, 48h, 72h, 96h (contactability,
+ * gap-per-step, matching Property's array; runs about 4 days total).
  * Detail-capture delays: 0h, 24h, 48h, 168h.
  *
  * House style: no em-dashes. British English. Faceless team voice.
@@ -347,7 +348,7 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 // 8 steps; step 0 = T0 email (instant, fires at submit), step 1 = T0 SMS
 // (fires unconditionally at submit; the hourly cron dispatchGate keeps actual
 // delivery inside the UK window).
-// Cumulative delay hours from step 0: 0, 0, 4, 24, 48, 96, 168, 264.
+// Gap-per-step delay hours from step 0: 0, 0, 4, 20, 24, 48, 72, 96 (Property's array).
 
 const STEPS: LeadNurtureStep[] = [
   // ── Step 0: T0 email ───────────────────────────────────────────────────────
@@ -359,9 +360,9 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and a specialist will call you.",
+        "Just reply with a time that suits and one of our accountants will call you.",
         [
-          "Thanks for your enquiry, it has just landed with us and a specialist is ready to help.",
+          "Thanks for your enquiry, it has just landed with us and one of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of where your firm stands on its accounts and tax, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you, tell us and we will work around it.",
         ],
@@ -380,7 +381,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Accounts for Lawyers. Thanks for your enquiry. Reply YES and a specialist from our partner network will call you to discuss your firm's accounts. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Accounts for Lawyers. Thanks for your enquiry. Reply YES and one of our accountants will call you to discuss your firm's accounts. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.confirmUrl]),
     ],
@@ -397,7 +398,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Accounts for Lawyers again. Enquiries like yours are exactly what the specialists in our partner network handle, so we have set aside time this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Accounts for Lawyers again. Enquiries like yours are exactly what we handle, so we have set aside time this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -406,7 +407,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -421,7 +422,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email ────────────────────────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -430,7 +431,7 @@ const STEPS: LeadNurtureStep[] = [
         "Partners and LLP members have different tax obligations, and a short call often surfaces the gaps.",
         [
           "A quick pointer while your enquiry is with us. Most law firm partners do not realise that LLP member drawings, profit allocations and personal tax reserves need careful planning from the first year, and the cost of getting it wrong compounds quickly.",
-          "If that is relevant to your situation, it is exactly the kind of thing a short call with a specialist from our partner network would cover.",
+          "If that is relevant to your situation, it is exactly the kind of thing a short call with one of our accountants would cover.",
           "Whenever suits you, just reply with a day and time and we will arrange it.",
         ],
         "day2_give_email",
@@ -442,12 +443,12 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, Accounts for Lawyers here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, Accounts for Lawyers here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, Accounts for Lawyers here. Most firms we speak to came to us with the same question you raised, and one short call usually clears up months of uncertainty. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -459,14 +460,14 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email", "sms"],
     preferMonday: true,
     buildMessages: (c) => {
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free law firm accounts review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free law firm accounts review is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -490,7 +491,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -580,10 +581,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and a specialist will call you.`,
+          `Reply with ${ask} and one of our accountants will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and we will have a law firm accounts specialist from our partner network call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and we will have one of our accountants call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",

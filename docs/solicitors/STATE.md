@@ -6,9 +6,43 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/solicitors/house_positions.md`, never here.
 
-Last updated: 2026-09-12.
+Last updated: 2026-09-28.
 
-## CLAIMS AUDIT REMEDIATION, SERIOUS TIER, 2026-09-12 (BUILT, NOT DEPLOYED)
+## 2026-09-28 PHASE 0 PARITY: positioning ruling reversed, referral-network voice removed
+
+Owner ruling 2026-09-28 evening (`docs/_engines/ESTATE_PARITY_PLAN_2026-09-28.md`, decisions 2-3):
+**the brand IS the firm on every prospect-facing and lead-facing surface.** This REVERSES the
+2026-09-12 entry immediately below, which locked in "match what the site already publishes
+legally" (referral-network/partner-matching voice) as the deliberate, correct positioning. That
+reasoning no longer holds. Disclosure of the pool/referral model, where it is real, now lives only
+in consent text, the privacy policy and the terms page; every other surface speaks as "we" / "our
+accountants".
+
+Full detail: `docs/solicitors/PHASE0_2026-09-28.md`. Summary: rewrote the 22 files the research
+report and a rule-based sweep found (`about`, `services`, `services/[slug]/data.ts`,
+`sra-compliance`, calculators, blog CTAs, `complete`/`thank-you`, SMS/email nurture, the chat
+opener, FAQ, `llms.txt`, locations, `for-partners`, `for-locum-solicitors`) from "partner
+network" / "we match you with" / "accountancy matching" framing to firm voice; added a missing
+`h1` to the homepage (it had none at any width); added the `entity` key to `niche.config.json`;
+ported `organization-schema.ts` to the shared `buildOrganization` builder
+(`@type: AccountingService`, added `parentOrganization`); added `Service` schema to the four
+`/for-*` audience pages via `AudienceStageLayout` (`FAQPage`/`BreadcrumbList` were already there,
+just not visible to a page.tsx-only grep); fixed 7 em-dashes on `/for-partners` and 3 on
+`/services`; fixed US spellings on the homepage and `/about`; fixed the `delayHours` array in
+`lead-nurture.ts` from the cumulative `0,0,4,24,48,96,168,264` shape to Property's gap-per-step
+`0,0,4,20,24,48,72,96`; added the 24-hour-promise sentence to the T0 email; fixed 6 of 7
+`sitemap.ts` entries that used build-time `new Date()`. AdSense was already correctly wired on
+this site (it is the estate reference pattern) and GA4 (`G-N6ZPRB3DSQ`) was already set; neither
+was touched. `npx tsc --noEmit` clean, `npx vitest run` 18 files / 219 tests green, both from
+`Solicitors/web`. Not deployed, not committed (per phase-0 rules, the manager commits per site).
+
+Not done this pass, left for a further sweep or the Opus read: the LeadCTAPanel `eyebrow` on
+every page still reads its own literal (only the homepage's main panel was ported to Property's
+"Free first call, then a fixed fee in writing"); segment-page closers on the four `/for-*` pages
+still read "30-minute scoping call" rather than Property's shared close (not obviously wrong, not
+verified either way); D7/G9/robots allowlist/IndexNow key rotation not re-checked this pass.
+
+## CLAIMS AUDIT REMEDIATION, SERIOUS TIER, 2026-09-12 (BUILT, NOT DEPLOYED) — POSITIONING SUPERSEDED 2026-09-28
 
 Owner decision 2026-09-12 approved fixing the serious tier of the estate-wide claims audit on
 this site now. Three batches were in scope: false statements of law, claims to professional
