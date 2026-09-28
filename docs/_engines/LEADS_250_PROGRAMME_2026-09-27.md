@@ -864,6 +864,13 @@ review doc section 4 (terms-page clause on the referral model, "regulated firm" 
 say "Accountants for", the s.58(1D) FAQ reading, the returning-visitor panel at 390, orphan /for
 pages). Pickup after the owner's go: push, dependency-closure check, deploy per decision 10 order,
 `calc_pdf_offer` off in prod, then T6 baseline rerun.
+**Owner, same day: "worth writing a handoff in order for a fresh agent to check. the full lead kit,
+all of it, writing quality, sameness etc on everything."** That brief is
+`LEAD_KIT_FULL_CHECK_BRIEF_2026-09-28.md`: scope (every capture surface, CTA, entity block, widget,
+post-submit flow, nurture email and machine-layer file on the five sites, rendered at 1280 and 390),
+the three tests (decider, writing quality, sameness within a site, within a page and across sites),
+method (inventory from the rendered site, re-grade before re-review, report not fix), outputs,
+budget (about 12 agents) and traps. A fresh agent starts there.
 
 ### S5. GEO completion on the five sites (spec, 2026-09-27 late; owner: "make sure the sites are as optimised for GEO as they can possibly be", "if we're number 1 we need to be number 1", "I am all for rewriting just make sure we're not losing our existing queries")
 
