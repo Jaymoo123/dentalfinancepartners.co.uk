@@ -297,7 +297,7 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 }
 
 // ── Contactability sequence ───────────────────────────────────────────────────
-// 8 steps. Delays from step 0: 0, 0, 4, 24, 48, 96, 168, 264 hours.
+// 8 steps. Gaps between sends: 0, 0, 4, 20, 24, 48, 72, 96 hours (Property's sequence).
 // Steps 0+1 fire at submit. Steps 2-7 are driven by the hourly cron.
 // Topics: R&D claims, SEIS/EIS, EMI and option pools, founder pay, investor reporting.
 
@@ -311,10 +311,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `We have your enquiry, ${c.firstName}`,
-        "Reply with a day and time that suits and a specialist will call you.",
+        "One of our accountants will call you within 24 hours, Monday to Friday.",
         [
-          "Thanks for getting in touch. Your enquiry has landed with us and a startup finance specialist is ready to pick it up.",
-          "The call is a free review of where your company is now, about 20 minutes, no charge and no obligation.",
+          "Thanks for getting in touch. Your enquiry has landed with us and one of our accountants will call you within 24 hours, Monday to Friday.",
+          "The call is free, about 20 minutes, no charge and no obligation.",
           "Just reply to this email with a day and time that works. Even a one-line reply is enough, and we will fit around your diary.",
         ],
         "t0_email",
@@ -358,7 +358,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -373,7 +373,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email ────────────────────────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -394,12 +394,12 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, Founder Tax Partners here. The call is genuinely no-strings: if it is not useful you have lost 20 minutes and owe nothing. Reply YES and a specialist will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, Founder Tax Partners here. The call is genuinely no-strings: if it is not useful you have lost 20 minutes and owe nothing. Reply YES and one of our accountants will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, Founder Tax Partners here. Most founders who ask what you asked get it settled in one short call. Reply YES and we will ring you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -411,14 +411,14 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email", "sms"],
     preferMonday: true,
     buildMessages: (c) => {
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so a text instead. Your free review is still open. Reply YES and a startup finance specialist will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so a text instead. Your free first call is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -429,7 +429,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still open whenever you are, ${c.firstName}`,
           "No rush. A one-line reply is all we need.",
           [
-            "Checking in, and there is no rush from our side. Your free review is still open, and if this is not the week for it, that is completely fine.",
+            "Checking in, and there is no rush from our side. Your free first call is still open, and if this is not the week for it, that is completely fine.",
             "If you are mid-raise, mid quarter-end or simply flat out, say so and we will come back at a better time. Otherwise one line with a day and time, and we will take it from there.",
           ],
           "day7_email",
@@ -442,7 +442,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -532,10 +532,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "One thing before we can call you",
-          `Reply with ${ask} and a specialist will call you.`,
+          "One of our accountants will call you within 24 hours, Monday to Friday.",
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and a startup finance specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and one of our accountants will call you within 24 hours, Monday to Friday. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even one word tells us we can reach you, and we will take it from there.",
           ],
           "detail_capture_t0",
@@ -612,7 +612,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review, reply with ${ask} whenever, next week or next year. It tends to matter most when a round is closing, an option pool is going in, or a claim deadline is approaching.`,
+            `If you would still like a free first call, reply with ${ask} whenever, next week or next year. It tends to matter most when a round is closing, an option pool is going in, or a claim deadline is approaching.`,
             "All the best with the company.",
           ],
           "detail_capture_day7",

@@ -5,6 +5,17 @@
 /* Article bodies here carry class="prose" and the homepage uses .section-label, neither of which had any rule, so without this line those pages render unstyled. */
 @import "../../../../packages/site-styles/prose-standard.css";
 
+/* ponytail: blog post bodies come from bodySplit's raw HTML (dangerouslySetInnerHTML),
+   which can include a bare <table>. prose-standard.css has no scroll wrapper for it,
+   so a wide table pushes the whole 390px viewport out (measured scrollWidth 592).
+   display:block + overflow-x:auto on the table itself is the CSS-only fix: no JS
+   wrapper needed, and it does not touch the shared stylesheet other sites use. */
+.prose table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 :root {
   --background: #ffffff;
   --surface: #f8fafc;

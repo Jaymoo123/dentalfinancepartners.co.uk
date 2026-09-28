@@ -51,7 +51,7 @@ export default async function ThankYouPage({
       <main className={shellClass}>
         <h1 className={headingClass}>Confirmed</h1>
         <p className="mt-4 text-neutral-600">
-          Thanks, that is confirmed. A specialist firm from our partner network will contact you
+          Thanks, that is confirmed. One of our accountants will contact you
           directly.
         </p>
         <Link href="/" className={backLinkClass}>
@@ -67,7 +67,7 @@ export default async function ThankYouPage({
       {nurtureArmed ? (
         <>
           <p className="mt-4 text-neutral-600">
-            We have just sent you a message to arrange your free startup finance review. Please
+            We have just sent you a message to arrange your free first call. Please
             check your email and phone, and confirm to lock in your callback slot.
           </p>
           <p className="mt-3 text-sm text-neutral-500">

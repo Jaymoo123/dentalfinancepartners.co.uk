@@ -271,7 +271,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 preheader: "Booked for tomorrow. Reply if the time no longer works.",
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
-                  `Your free startup finance review call is tomorrow, ${windowPhrase}.`,
+                  `Your free first call is tomorrow, ${windowPhrase}.`,
                   "One of our startup accountants will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
                   "If the time no longer works, just reply to this email and I will move it to one that does.",
                 ],
@@ -318,7 +318,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
             if (sendRowId && lead.phone) {
               try {
                 const body =
-                  `Hi ${firstName}, your free startup finance review call is later today, ${label}. ` +
+                  `Hi ${firstName}, your free first call is later today, ${label}. ` +
                   `Your startup accountant will call you then. Need a different time? Just reply and we will rearrange. Reply STOP to opt out.`;
 
                 const result = await sender.send({

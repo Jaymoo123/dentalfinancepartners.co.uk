@@ -6,36 +6,36 @@ Founder Tax Partners is a UK accountancy practice focused exclusively on funded 
 
 ## Who we help
 
-- [Pre-seed founders](https://www.foundertaxpartners.co.uk/for/pre-seed-founders): SEIS eligibility, pre-trading expenditure, section 431 elections and formation before the first raise.
-- [Funded startups](https://www.foundertaxpartners.co.uk/for/funded-startups): Post-investment compliance, EIS1/SEIS1 filings, ERS returns, R&D claims and investor-ready accounts.
-- [SaaS companies](https://www.foundertaxpartners.co.uk/for/saas-companies): VAT place-of-supply, R&D merged-scheme claims, CT and dividend planning for software businesses.
-- [Software development companies](https://www.foundertaxpartners.co.uk/for/software-development-companies): R&D eligibility, EMI schemes, employer NIC and payroll planning.
-- [Fintech startups](https://www.foundertaxpartners.co.uk/for/fintech-startups): Regulated-firm compliance, SEIS/EIS and share scheme structuring for financial technology companies.
+- [Pre-seed founders](https://www.foundertaxpartners.co.uk/for/pre-seed-founders?utm_source=chatgpt&utm_medium=llms): SEIS eligibility, pre-trading expenditure, section 431 elections and formation before the first raise.
+- [Funded startups](https://www.foundertaxpartners.co.uk/for/funded-startups?utm_source=chatgpt&utm_medium=llms): Post-investment compliance, EIS1/SEIS1 filings, ERS returns, R&D claims and investor-ready accounts.
+- [SaaS companies](https://www.foundertaxpartners.co.uk/for/saas-companies?utm_source=chatgpt&utm_medium=llms): VAT place-of-supply, R&D merged-scheme claims, CT and dividend planning for software businesses.
+- [Software development companies](https://www.foundertaxpartners.co.uk/for/software-development-companies?utm_source=chatgpt&utm_medium=llms): R&D eligibility, EMI schemes, employer NIC and payroll planning.
+- [Fintech startups](https://www.foundertaxpartners.co.uk/for/fintech-startups?utm_source=chatgpt&utm_medium=llms): Regulated-firm compliance, SEIS/EIS and share scheme structuring for financial technology companies.
 
 ## Services
 
-- [R&D tax claims](https://www.foundertaxpartners.co.uk/services/rd-tax-claims): Merged scheme (20% above-the-line credit) and ERIS claims for R&D-intensive loss-making SMEs. Claim notification and Additional Information Form preparation.
-- [SEIS and EIS advance assurance](https://www.foundertaxpartners.co.uk/services/seis-eis-advance-assurance): HMRC pre-clearance for seed and growth rounds, compliance statements (SEIS1/EIS1) after trading.
-- [EMI scheme setup](https://www.foundertaxpartners.co.uk/services/emi-scheme-setup): Enterprise Management Incentives: option pool design, HMRC valuation, grant notification and annual ERS returns.
-- [Share schemes](https://www.foundertaxpartners.co.uk/services/share-schemes): CSOP (fallback at £60,000 per employee), growth shares, unapproved options and section 431 elections on restricted securities.
-- [Fractional CFO](https://www.foundertaxpartners.co.uk/services/fractional-cfo): Board-ready management accounts, investor reporting, runway and burn modelling.
-- [Core compliance](https://www.foundertaxpartners.co.uk/services/core-compliance): Corporation Tax, VAT, payroll and annual accounts for funded and scaling technology companies.
+- [R&D tax claims](https://www.foundertaxpartners.co.uk/services/rd-tax-claims?utm_source=chatgpt&utm_medium=llms): Merged scheme (20% above-the-line credit) and ERIS claims for R&D-intensive loss-making SMEs. Claim notification and Additional Information Form preparation.
+- [SEIS and EIS advance assurance](https://www.foundertaxpartners.co.uk/services/seis-eis-advance-assurance?utm_source=chatgpt&utm_medium=llms): HMRC pre-clearance for seed and growth rounds, compliance statements (SEIS1/EIS1) after trading.
+- [EMI scheme setup](https://www.foundertaxpartners.co.uk/services/emi-scheme-setup?utm_source=chatgpt&utm_medium=llms): Enterprise Management Incentives: option pool design, HMRC valuation, grant notification and annual ERS returns.
+- [Share schemes](https://www.foundertaxpartners.co.uk/services/share-schemes?utm_source=chatgpt&utm_medium=llms): CSOP (fallback at £60,000 per employee), growth shares, unapproved options and section 431 elections on restricted securities.
+- [Fractional CFO](https://www.foundertaxpartners.co.uk/services/fractional-cfo?utm_source=chatgpt&utm_medium=llms): Board-ready management accounts, investor reporting, runway and burn modelling.
+- [Core compliance](https://www.foundertaxpartners.co.uk/services/core-compliance?utm_source=chatgpt&utm_medium=llms): Corporation Tax, VAT, payroll and annual accounts for funded and scaling technology companies.
 
 ## Free calculators and tools
 
-- [All startup tax calculators](https://www.foundertaxpartners.co.uk/calculators): Hub for the interactive tools below.
-- [SEIS and EIS relief calculator](https://www.foundertaxpartners.co.uk/calculators/seis-eis-relief-calculator): Investor income tax relief and CGT reinvestment exemption for SEIS (50% relief) and EIS (30% relief) investments.
-- [Founder dividend vs salary calculator](https://www.foundertaxpartners.co.uk/calculators/founder-dividend-vs-salary-calculator): After-tax income comparison between salary and dividend extraction, including employer NIC at 15% above the £5,000 secondary threshold.
-- [EMI vs unapproved options calculator](https://www.foundertaxpartners.co.uk/calculators/emi-vs-unapproved-calculator): Tax cost at exercise and disposal: EMI (BADR at 18%, no NIC) versus unapproved options (income tax and NIC on the spread).
-- [R&D relief estimator](https://www.foundertaxpartners.co.uk/calculators/rd-relief-estimator): Estimated merged-scheme credit (20%) or ERIS benefit (86% deduction plus 14.5% payable credit) on qualifying R&D expenditure.
+- [All startup tax calculators](https://www.foundertaxpartners.co.uk/calculators?utm_source=chatgpt&utm_medium=llms): Hub for the interactive tools below.
+- [SEIS and EIS relief calculator](https://www.foundertaxpartners.co.uk/calculators/seis-eis-relief-calculator?utm_source=chatgpt&utm_medium=llms): Investor income tax relief and CGT reinvestment exemption for SEIS (50% relief) and EIS (30% relief) investments.
+- [Founder dividend vs salary calculator](https://www.foundertaxpartners.co.uk/calculators/founder-dividend-vs-salary-calculator?utm_source=chatgpt&utm_medium=llms): After-tax income comparison between salary and dividend extraction, including employer NIC at 15% above the £5,000 secondary threshold.
+- [EMI vs unapproved options calculator](https://www.foundertaxpartners.co.uk/calculators/emi-vs-unapproved-calculator?utm_source=chatgpt&utm_medium=llms): Tax cost at exercise and disposal: EMI (BADR at 18%, no NIC) versus unapproved options (income tax and NIC on the spread).
+- [R&D relief estimator](https://www.foundertaxpartners.co.uk/calculators/rd-relief-estimator?utm_source=chatgpt&utm_medium=llms): Estimated merged-scheme credit (20%) or ERIS benefit (86% deduction plus 14.5% payable credit) on qualifying R&D expenditure.
 
 ## Original research
 
-- [UK Tech-Funding Reliefs Index (SEIS/EIS)](https://www.foundertaxpartners.co.uk/research/uk-tech-funding-reliefs-index): EIS and SEIS company and funding statistics by sector and region, from HMRC official statistics (EIS from 1993-94, SEIS from 2012-13). Tech is the top sector for both schemes.
-- [R&D Tax Relief Usage Index](https://www.foundertaxpartners.co.uk/research/rd-tax-relief-index): Annual R&D tax credit claims, cost and qualifying expenditure by sector and region, from HMRC official statistics. Covers the post-clampdown claim collapse.
-- [UK Tech Startup Survival Curves](https://www.foundertaxpartners.co.uk/research/tech-startup-survival-index): Cohort survival by year after birth, tech vs all-industry baseline, from ONS Business Demography official statistics.
-- [UK Tech Formations Index](https://www.foundertaxpartners.co.uk/research/uk-tech-formations-index): Monthly new tech company formation trend and tax-year seasonality by SIC code, from Companies House official data.
-- [UK Startup Formation Survival Index](https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index): Formation and register status of UK tech and software companies across eight SIC codes, from live Companies House Advanced Search API counts: active and dissolved companies on the register, annual formations, and quarterly churn. It is a register snapshot, not a cohort survival curve, and the page states that limit.
+- [UK Tech-Funding Reliefs Index (SEIS/EIS)](https://www.foundertaxpartners.co.uk/research/uk-tech-funding-reliefs-index?utm_source=chatgpt&utm_medium=llms): EIS and SEIS company and funding statistics by sector and region, from HMRC official statistics (EIS from 1993-94, SEIS from 2012-13). Tech is the top sector for both schemes.
+- [R&D Tax Relief Usage Index](https://www.foundertaxpartners.co.uk/research/rd-tax-relief-index?utm_source=chatgpt&utm_medium=llms): Annual R&D tax credit claims, cost and qualifying expenditure by sector and region, from HMRC official statistics. Covers the post-clampdown claim collapse.
+- [UK Tech Startup Survival Curves](https://www.foundertaxpartners.co.uk/research/tech-startup-survival-index?utm_source=chatgpt&utm_medium=llms): Cohort survival by year after birth, tech vs all-industry baseline, from ONS Business Demography official statistics.
+- [UK Tech Formations Index](https://www.foundertaxpartners.co.uk/research/uk-tech-formations-index?utm_source=chatgpt&utm_medium=llms): Monthly new tech company formation trend and tax-year seasonality by SIC code, from Companies House official data.
+- [UK Startup Formation Survival Index](https://www.foundertaxpartners.co.uk/research/startup-formation-survival-index?utm_source=chatgpt&utm_medium=llms): Formation and register status of UK tech and software companies across eight SIC codes, from live Companies House Advanced Search API counts: active and dissolved companies on the register, annual formations, and quarterly churn. It is a register snapshot, not a cohort survival curve, and the page states that limit.
 
 ## Key facts (current UK startup and founder tax figures, 2026/27)
 
@@ -62,27 +62,27 @@ These figures are verified against primary sources (HMRC, legislation.gov.uk) as
 
 ## Blog categories
 
-- [R&D Tax Relief](https://www.foundertaxpartners.co.uk/blog/research-and-development)
-- [SEIS and EIS](https://www.foundertaxpartners.co.uk/blog/seis-and-eis)
-- [Share Schemes and EMI](https://www.foundertaxpartners.co.uk/blog/share-schemes-and-emi)
-- [Startup Compliance](https://www.foundertaxpartners.co.uk/blog/startup-compliance)
-- [SaaS and Tech Finance](https://www.foundertaxpartners.co.uk/blog/saas-and-tech-finance)
+- [R&D Tax Relief](https://www.foundertaxpartners.co.uk/blog/research-and-development?utm_source=chatgpt&utm_medium=llms)
+- [SEIS and EIS](https://www.foundertaxpartners.co.uk/blog/seis-and-eis?utm_source=chatgpt&utm_medium=llms)
+- [Share Schemes and EMI](https://www.foundertaxpartners.co.uk/blog/share-schemes-and-emi?utm_source=chatgpt&utm_medium=llms)
+- [Startup Compliance](https://www.foundertaxpartners.co.uk/blog/startup-compliance?utm_source=chatgpt&utm_medium=llms)
+- [SaaS and Tech Finance](https://www.foundertaxpartners.co.uk/blog/saas-and-tech-finance?utm_source=chatgpt&utm_medium=llms)
 
 ## Key pages
 
-- [Home](https://www.foundertaxpartners.co.uk/)
-- [Services](https://www.foundertaxpartners.co.uk/services)
-- [Who we help](https://www.foundertaxpartners.co.uk/for)
-- [Calculators](https://www.foundertaxpartners.co.uk/calculators)
-- [Research](https://www.foundertaxpartners.co.uk/research)
-- [Blog](https://www.foundertaxpartners.co.uk/blog)
-- [About](https://www.foundertaxpartners.co.uk/about)
-- [Contact](https://www.foundertaxpartners.co.uk/contact)
+- [Home](https://www.foundertaxpartners.co.uk/?utm_source=chatgpt&utm_medium=llms)
+- [Services](https://www.foundertaxpartners.co.uk/services?utm_source=chatgpt&utm_medium=llms)
+- [Who we help](https://www.foundertaxpartners.co.uk/for?utm_source=chatgpt&utm_medium=llms)
+- [Calculators](https://www.foundertaxpartners.co.uk/calculators?utm_source=chatgpt&utm_medium=llms)
+- [Research](https://www.foundertaxpartners.co.uk/research?utm_source=chatgpt&utm_medium=llms)
+- [Blog](https://www.foundertaxpartners.co.uk/blog?utm_source=chatgpt&utm_medium=llms)
+- [About](https://www.foundertaxpartners.co.uk/about?utm_source=chatgpt&utm_medium=llms)
+- [Contact](https://www.foundertaxpartners.co.uk/contact?utm_source=chatgpt&utm_medium=llms)
 
 ## Contact
 
 - Contact form: https://www.foundertaxpartners.co.uk/contact
-- Free, no-obligation consultation for UK founders and startup teams.
+- Free first call, then a fixed fee in writing. We reply within 24 hours and one of our accountants comes back to you directly.
 
 ## Full index
 

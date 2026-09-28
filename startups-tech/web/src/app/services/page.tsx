@@ -5,6 +5,8 @@ import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { startupsServices } from "@/data/startups-services";
 import { serviceTiers } from "@/config/service-tiers";
 import { siteConfig } from "@/config/site";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "Startup Accountancy Services | R&D, SEIS/EIS, EMI and More",
@@ -50,5 +52,11 @@ export default function ServicesIndexPage() {
         </div>
       </div>
     </section>
+    <LeadCTAPanel
+      title="Not sure which service fits?"
+      description="Tell us about your business and we will reply within 24 hours."
+      proofPoints={[]}
+      form={<LeadForm submitLabel="Send enquiry" />}
+    />
   </>);
 }

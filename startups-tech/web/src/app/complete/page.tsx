@@ -16,7 +16,7 @@ import DetailsForm from "@/components/forms/DetailsForm";
 
 export const metadata: Metadata = {
   title: "Complete your details",
-  description: "Add the last detail we need to arrange your free startup finance review.",
+  description: "Add the last detail we need to arrange your free first call.",
   robots: { index: false, follow: false },
 };
 
@@ -91,8 +91,8 @@ export default async function CompletePage({
           <div className="rounded-lg border border-[#4f46e5]/30 bg-[#eef2ff] p-6 text-center">
             <p className="text-lg font-semibold text-neutral-900">You are all set</p>
             <p className="mt-2 text-base text-neutral-600">
-              We have everything we need. A specialist firm from our partner network may contact you
-              directly about your enquiry. If you would like to pick a time that suits you, you can
+              We have everything we need. One of our accountants will be in touch directly about
+              your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
             {bookingToken && (
@@ -116,8 +116,8 @@ export default async function CompletePage({
             Complete your details
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-neutral-600">
-            Add the last detail we need and a specialist firm from our partner network will be in
-            touch to arrange your free startup finance review, no obligation.
+            Add the last detail we need and one of our accountants will be in
+            touch to arrange your free first call, no obligation.
           </p>
           <div className="mt-10">{inner}</div>
         </div>

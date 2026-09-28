@@ -98,3 +98,45 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - [ ] Real phone number into `startups-tech/niche.config.json` -> contact.phone (placeholder ships as +44 20 0000 0000)
 - [ ] Brand assets: `public/brand/primary-logo.png` + `public/brand/icon-alt.png` (OG image route depends on them)
 - [ ] Resend routing ONLY if a partner firm is signed (partner CC only on partnered sites; otherwise leads route to owner inbox)
+
+## 2026-09-28 phase 0 parity (branch work, nothing deployed, nothing committed here)
+
+Corrects the STATE.md drift `PARITY_RESEARCH_2026-09-28.md` flagged (I7): the site is live with
+a real domain and 31 commits of work since the 2026-07-15/16 entries above; only the phone
+number placeholder was still accurate. See `docs/startups-tech/PHASE0_2026-09-28.md` for the
+full report with file:line evidence.
+
+- **Positioning reversal applied** (was missed entirely on 2026-09-28's first pass): "partner
+  network" / "a specialist will call" caveats removed from `/contact`, `/complete`, `/thank-you`,
+  `DetailsForm.tsx`, `InlineMiniLeadForm.tsx`, `lead-nurture.ts` and `aux-cron.ts`, replaced with
+  Property's firm voice. Privacy policy and the estate-wide `leadConsentText` are untouched
+  (exempt surfaces).
+- `entity` key added to `niche.config.json`, Property's shape. `google-adsense-account` +
+  `ConsentedScripts adsenseClientId` + `public/ads.txt` added (Solicitors pattern); no CSP exists
+  on this site to update (confirmed, nothing to allow/block).
+- Organization JSON-LD ported to the shared `packages/web-shared/schema/organization.ts` builder
+  via new `web/src/lib/organization-schema.ts` (Medical's pattern): adds `sameAs`,
+  `parentOrganization`, `knowsAbout`; every prior field survives.
+- Raw `<a href>` markup fixed: `services/[slug]/page.tsx` and `for/[slug]/page.tsx` now render
+  `intro`/`body`/`answer` fields via `dangerouslySetInnerHTML` instead of as a JSX text child.
+  This was also the root cause of the 417px/390 overflow on those four pages (a raw URL string
+  cannot wrap); a `.prose table` CSS fix (`display:block; overflow-x:auto`) addresses the
+  blog-post 592px overflow separately.
+- `nurture delayHours` fixed from the cumulative `0,0,4,24,48,96,168,264` to Property's gap
+  sequence `0,0,4,20,24,48,72,96`; the 24-hour promise sentence added to both sequences' first
+  step.
+- `LeadCTAPanel` + `LeadForm` added to `/about`, `/services`, `/for`, every `/services/*` and
+  `/for/*` slug page (was on home, contact, blog post and research pages only). Segment-page
+  closers de-slugged: each `/for/*` page now has its own one-sentence closer (Sonnet-written,
+  flagged for the Opus read) instead of the shared slug-substitution template.
+- `pipeline/submit_indexnow.py` added (Property's shim shape); the IndexNow key file already
+  existed in `public/`. **Needs the shared agent**: register `startups-tech` HOST+KEY in
+  `optimisation_engine/indexing/config.py` before this script can actually submit.
+- `public/llms.txt`: every page link now carries `?utm_source=chatgpt&utm_medium=llms`.
+- **Not done, flagged for the design-port phase 1** (explicit instruction on this pass): the site
+  has no header, footer or nav component anywhere in the codebase (`siteConfig.nav` is defined
+  but never consumed). Section 4's "header CTA" and "footer CTA" asks cannot be satisfied without
+  adopting the shared `PageShell`/`SiteHeader`/`SiteFooter` kit (crypto's and Medical's pattern),
+  which is the design port itself, not a phase-0 fix. Also not done this pass: mini-capture ids
+  (`mobile_tool`, `calc_result_form`, `resource_block`, `blog_short_resource`), `/services` and
+  `/for` per-page Service+BreadcrumbList schema (FAQPage only today), and webfont loading.

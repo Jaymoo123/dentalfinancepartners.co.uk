@@ -3,6 +3,8 @@ import Link from "next/link";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { startupsHubs } from "@/data/startups-hubs";
 import { siteConfig } from "@/config/site";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 export const metadata: Metadata = {
   title: "Startup Accountants by Company Type | Who We Help",
   description: "Specialist startup tax advice by company type: pre-seed founders, funded startups, SaaS companies, software development companies and fintech startups.",
@@ -28,5 +30,11 @@ export default function ForIndexPage() {
         </div>
       </div>
     </section>
+    <LeadCTAPanel
+      title="Not sure which company type fits?"
+      description="Tell us about your business and we will reply within 24 hours."
+      proofPoints={[]}
+      form={<LeadForm submitLabel="Send enquiry" />}
+    />
   </>);
 }

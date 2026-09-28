@@ -1,4 +1,16 @@
 {
+  "entity": {
+    "firm": "Founder Tax Partners is the UK's specialist accountancy firm for funded and scaling technology companies. We handle R&D tax relief, SEIS/EIS advance assurance, EMI and share schemes, founder pay and extraction, and investor-ready accounts. Founder Tax Partners is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK founders, funded startups, SaaS companies and scaling technology businesses, from pre-seed through to Series A and beyond.",
+    "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: what stage you are at, what funding you have and what you need looked at.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work, deal with HMRC and Companies House on your behalf, and keep you ahead of your deadlines."
+    ],
+    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+  },
   "niche_id": "startups-tech",
   "display_name": "Founder Tax Partners",
   "legal_name": "Ashfield Trading Ltd",

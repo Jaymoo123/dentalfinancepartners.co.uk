@@ -1,0 +1,60 @@
+import { siteConfig } from "@/config/site";
+import { buildOrganization } from "@accounting-network/web-shared/schema";
+import { niche } from "@/config/niche-loader";
+
+// "Who we help" segment titles, used as knowsAbout so the canonical
+// Organization node advertises the same specialisms Google already indexes
+// as page titles. Ported from Medical's organization-schema.ts pattern.
+const AUDIENCE_PAGE_TITLES = [
+  "Accountants for Pre-Seed Founders",
+  "Accountants for Funded Startups",
+  "Accountants for SaaS Companies",
+  "Accountants for Software Development Companies",
+  "Accountants for Fintech Startups",
+];
+
+// Sister-brand homepages (same opco, Ashfield Trading Ltd) added alongside the
+// Companies House filing so sameAs ties the estate together, not just this
+// one entity record.
+const SISTER_BRAND_HOMEPAGES = [
+  "https://www.propertytaxpartners.co.uk",
+  "https://www.contractortaxaccountants.co.uk",
+  "https://www.carehometax.co.uk",
+  "https://www.trusteetax.co.uk",
+];
+
+export function buildOrganizationJsonLd() {
+  const office = siteConfig.company.registeredOffice;
+  return buildOrganization({
+    siteUrl: siteConfig.url,
+    siteName: siteConfig.name,
+    legalName: siteConfig.company.legalName,
+    alternateName: siteConfig.company.tradingName,
+    // The entity sentence, not the meta description: the meta is a ranking
+    // string; the node states who the firm is and who it acts for.
+    description: niche.entity?.firm ?? siteConfig.description,
+    tagline: siteConfig.tagline,
+    // The firm is an accountancy practice, so the node says so (owner ruling
+    // 2026-09-28; the shared builder defaults to ProfessionalService).
+    organizationType: "AccountingService",
+    publisherLogoUrl: siteConfig.publisherLogoUrl,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: `${office.line1}, ${office.line2}`,
+      addressLocality: office.city,
+      postalCode: office.postcode,
+      addressCountry: "GB",
+    },
+    // Only verifiable records: the Companies House filing plus sister-brand
+    // homepages under the same opco. No LinkedIn URL exists in config.
+    sameAs: [
+      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+      ...SISTER_BRAND_HOMEPAGES,
+    ],
+    knowsAbout: AUDIENCE_PAGE_TITLES,
+    parentOrganization: {
+      name: siteConfig.company.legalName,
+      companyNumber: siteConfig.company.number,
+    },
+  });
+}
