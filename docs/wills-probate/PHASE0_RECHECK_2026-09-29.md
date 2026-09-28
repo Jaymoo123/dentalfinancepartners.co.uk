@@ -107,3 +107,11 @@ Zero hits for "we stay on the money side" or "regulated firm we work with" on an
 ## Estate summariser note (2026-09-29)
 Final status: NOT SAFE TO DEPLOY.
 Blocking item: the deleted /contact consent cap and fee disclosure and the deleted homepage fee paragraph (H1, H2, a compliance matter), plus the build-time sitemap dates (H7).
+
+## Fix round (2026-09-29)
+
+- File: `wills-probate/web/src/app/sitemap.ts`, lines 9-83 (static/for/category/calculator/glossary/resource blocks).
+- Before: every static, for, tool, glossary and resource entry set `lastModified: now` (or bare `new Date()` on the calculator block); post entries already used `post.updatedDate || post.date`; no per-entry real date exists for glossary/resource so those are undated, matching Property's pattern. This fix does not touch the H1/H2 consent-cap and fee-disclosure findings noted above, which remain blocking.
+- After: `lastModified` removed from static/for/tool/glossary/resource entries; `/blog` and category entries now derive `lastModified` from the newest `updatedDate || date` among their posts; post entries unchanged. URL list emitted is unchanged.
+- `npx tsc --noEmit -p wills-probate/web` — clean, no output.
+- `cd wills-probate/web && npx vitest run` — `Test Files 7 passed (7)`, `Tests 90 passed (90)`.
