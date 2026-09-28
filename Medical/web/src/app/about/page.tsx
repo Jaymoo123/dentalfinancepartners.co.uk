@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
   title: "About: Specialist Medical Tax Publisher and Enquiry Service",
@@ -74,15 +73,9 @@ const MEDICAL_PROOF_POINTS = [
 ];
 
 export default function AboutPage() {
-  const orgSchema = buildOrganizationJsonLd();
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
-
+      {/* Organization JSON-LD already comes from the root layout; not repeated here. */}
       <section
         className={`relative flex items-center overflow-hidden py-10 sm:py-12 lg:py-14 min-h-[360px] sm:min-h-[420px] lg:min-h-[440px] ${heroCreamSurface}`}
       >

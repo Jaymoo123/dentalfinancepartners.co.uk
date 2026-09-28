@@ -13,7 +13,6 @@ import {
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { isPackagesMode } from "@accounting-network/web-shared/lib/niche-config";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
   title: { absolute: "Contact Medical Accountants UK | Speak to a Specialist" },
@@ -74,15 +73,9 @@ const MEDICAL_PROOF_POINTS = [
 ];
 
 export default function ContactPage() {
-  const orgSchema = buildOrganizationJsonLd();
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
-
+      {/* Organization JSON-LD already comes from the root layout; not repeated here. */}
       <section
         className={`relative flex items-center overflow-hidden py-10 sm:py-12 lg:py-14 min-h-[320px] sm:min-h-[380px] ${heroCreamSurface}`}
       >

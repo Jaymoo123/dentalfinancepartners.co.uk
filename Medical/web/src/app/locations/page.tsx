@@ -8,7 +8,6 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
 import { LeadForm } from "@/components/forms/LeadForm";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 
 export const metadata: Metadata = {
   title: "GP Accountants by Location | Medical Accounting Specialists UK",
@@ -70,15 +69,9 @@ const MEDICAL_PROOF_POINTS = [
 ];
 
 export default function LocationsHubPage() {
-  const orgSchema = buildOrganizationJsonLd();
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-      />
-
+      {/* Organization JSON-LD already comes from the root layout; not repeated here. */}
       <section className="relative flex min-h-[300px] items-center overflow-hidden bg-slate-900 py-10 sm:min-h-[350px] sm:py-12 lg:py-14">
         <MedicalBackdrop tone="navy" />
         <div className={`${siteContainerLg} relative z-10`}>

@@ -6,7 +6,6 @@ import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { CalculatorTabs } from "@/components/tools/CalculatorTabs";
 import { siteConfig } from "@/config/site";
-import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { JsonLd, buildServicePageSchema, buildFaqPage } from "@/lib/schema";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
@@ -122,7 +121,6 @@ const SERVICES_FAQS = [
 ];
 
 export default function ServicesPage() {
-  const orgSchema = buildOrganizationJsonLd();
   const faqSchema = buildFaqPage(SERVICES_FAQS);
 
   // Service + OfferCatalog (with a single BreadcrumbList) so the services hub
@@ -141,7 +139,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <JsonLd data={orgSchema} />
+      {/* Organization JSON-LD already comes from the root layout; not repeated here. */}
       <JsonLd data={serviceSchema} />
       {faqSchema ? <JsonLd data={faqSchema} /> : null}
 
