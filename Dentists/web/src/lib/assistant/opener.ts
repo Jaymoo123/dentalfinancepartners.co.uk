@@ -42,7 +42,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   associate: [
     "Working out what you keep as an associate? I can pull up the calculator that does the fiddly part.",
     "Want a hand comparing your take-home as a sole trader, or as a locum through a company? Happy to point you to it.",
-    "A free call with a specialist will confirm the most tax-efficient way to work as an associate, want me to set one up?",
+    "A free call with one of our accountants will confirm the most tax-efficient way to work as an associate, want me to set one up?",
   ],
   "associate-incorporation": [
     "Weighing up incorporation? The NHS Pension side is the part most calculators skip. I can point you to the tool that includes it.",

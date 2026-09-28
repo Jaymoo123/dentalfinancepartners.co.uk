@@ -1,5 +1,32 @@
 # Dentists — program state (living heartbeat)
 
+> ## 2026-09-28 phase 0 parity (estate parity plan, per `docs/dentists/PHASE0_2026-09-28.md`)
+>
+> Not deployed yet; changes are in the working tree only, `Dentists/` directories, pending the
+> manager's serialised build and push. What changed: swept 88+ "partner network" caveat sentences
+> across 19 prospect-facing files to firm voice ("one of our accountants" / "our team"); added the
+> `niche.config.json` `entity` key; ported `organization-schema.ts` to the shared `buildOrganization`
+> builder (`AccountingService`, `knowsAbout`, sister-brand `sameAs`); added Service+FAQPage+
+> BreadcrumbList schema to all four `/for-*` pages via `AudienceStageLayout`; mounted a `LeadForm`
+> on `/about` and made `/book` render a form when untokened; fixed the `delayHours` nurture array to
+> Property's `0,0,4,20,24,48,72,96`; added the 24-hour promise sentence to the step-0 nurture email;
+> set the sticky CTA secondary to "Free first call, then a fixed fee in writing"; removed build-time
+> `new Date()` from `sitemap.ts` static/location/service/category/calculator entries (real dates kept
+> for posts and guides); wrapped blog-post tables in an `overflow-x: auto` container (390px clip
+> fix); imported `prose-standard.css`; added AdSense (`google-adsense-account` meta, `ads.txt`,
+> `ConsentedScripts adsenseClientId`, `ads: true` on `buildSecurityHeaders`). `npx tsc --noEmit`
+> clean; `npx vitest run` 495/495 passed, 23 files. Corrects the 2026-09-12 entry below: its
+> "page titles still assert firm identity... NOT changed" note is now the RIGHT direction under the
+> 09-28 positioning ruling, not a problem.
+>
+> Not done this pass (see PHASE0 report "Needs the shared agent" / "Needs the Opus read" /
+> open questions): the `/for-*` segment-page closers were not individually varied per audience
+> (still Sonnet-plain, flagged for the Opus read); the pool-model provider language on
+> `services/[slug]/data.ts` ("firms in our partner network work with whatever you currently use")
+> was rewritten but not fully audited against every remaining hand-rolled `Organization` reference
+> in schema helper comments; `docs/dentists/house_positions.md` and content-freshness (newest post
+> 2026-06-04) untouched, out of scope for this pass.
+
 > ## PICKUP - design port, ALL SIX PHASES BUILT, REVIEWED AND TAGGED. DEPLOYED to production 2026-09-16 from `90fbea9c` (estate-wide release: design port, claims fixes, header CTA fix, favicons).
 >
 > Phase 0: `9936547a`. Then tag + commit per phase:

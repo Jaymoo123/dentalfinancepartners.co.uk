@@ -11,6 +11,7 @@ import {
 import {
   JsonLd,
   buildFaqPage,
+  buildService,
 } from "@/lib/schema/index";
 
 export type AudienceStage = {
@@ -43,10 +44,17 @@ export function AudienceStageLayout({ data }: Props) {
   const faqPage = buildFaqPage(
     data.faqs.map((f) => ({ question: f.q, answer: f.a })),
   );
+  const serviceSchema = buildService({
+    name: data.heroHeading,
+    description: data.intro,
+    path: `/${data.slug}`,
+    serviceType: data.eyebrow,
+    audience: data.eyebrow.replace(/^For\s+/i, ""),
+  });
   // BreadcrumbList is emitted by <Breadcrumb> itself (components/ui/Breadcrumb.tsx),
   // from the same items binding. Building a second one here made all four /for-*
   // pages emit TWO identical BreadcrumbList documents. One source, one document.
-  const schemaPayload = faqPage ? [faqPage] : [];
+  const schemaPayload = faqPage ? [serviceSchema, faqPage] : [serviceSchema];
 
   return (
     <>

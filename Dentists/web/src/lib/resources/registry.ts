@@ -183,7 +183,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist dental accountant",
     magnetBlurbTemplate:
-      "A specialist will talk through your practice accounts, VAT and deadlines. The first call is free.",
+      "One of our accountants will talk through your practice accounts, VAT and deadlines. The first call is free.",
   },
 };
 

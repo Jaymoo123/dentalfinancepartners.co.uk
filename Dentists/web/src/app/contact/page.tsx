@@ -77,7 +77,7 @@ export default function ContactPage() {
                 What happens after you send it
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
-                Your enquiry goes to our specialist partner network rather than to a single in-house team.
+                Your enquiry goes to one of our accountants, not a call centre.
                 Firms are first shown a short summary with your name and contact details removed, and only a
                 firm that decides it can help receives your details in full. At most six firms may receive
                 them, and often fewer. Whichever firm contacts you will tell you who they are and give you

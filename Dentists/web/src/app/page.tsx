@@ -106,17 +106,17 @@ const whoWeWorkWith = [
   {
     title: "Associate Dentists",
     subtitle: "Self-employed · NHS and private",
-    body: "If you are working as an associate, you are running a small business, whether it feels like it or not. Self assessment, allowable expenses, pension planning, and knowing when incorporation makes sense are all things you should have clear answers on. A specialist dental accountant from our partner network handles the compliance and makes sure you are not overpaying tax through simple oversights.",
+    body: "If you are working as an associate, you are running a small business, whether it feels like it or not. Self assessment, allowable expenses, pension planning, and knowing when incorporation makes sense are all things you should have clear answers on. One of our dental accountants handles the compliance and makes sure you are not overpaying tax through simple oversights.",
   },
   {
     title: "Practice Owners",
     subtitle: "Sole trader · Limited company · Partnership",
-    body: "Owning a practice brings a different set of financial questions: payroll for staff and associates, VAT on dental and non-dental income, equipment finance, goodwill, and profit extraction from a limited company. A specialist from our partner network prepares accounts that are useful, not just compliant, and advises on structure as the practice grows.",
+    body: "Owning a practice brings a different set of financial questions: payroll for staff and associates, VAT on dental and non-dental income, equipment finance, goodwill, and profit extraction from a limited company. One of our accountants prepares accounts that are useful, not just compliant, and advises on structure as the practice grows.",
   },
   {
     title: "Multi-Practice Groups",
     subtitle: "Group structures · Acquisition support",
-    body: "Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists who are building a group, whether that is two practices or ten, and the firms in our partner network support due diligence, restructuring, and ongoing financial management across the portfolio.",
+    body: "Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists who are building a group, whether that is two practices or ten, and our team support due diligence, restructuring, and ongoing financial management across the portfolio.",
   },
 ];
 
@@ -131,11 +131,11 @@ const howWeWorkItems = [
   },
   {
     title: "Payroll and associate payments",
-    body: "Running payroll for a dental practice has its own quirks, particularly where associates are paid on a percentage split. A specialist from our partner network handles this cleanly and makes sure the treatment of self-employed associates holds up to scrutiny.",
+    body: "Running payroll for a dental practice has its own quirks, particularly where associates are paid on a percentage split. One of our accountants handles this cleanly and makes sure the treatment of self-employed associates holds up to scrutiny.",
   },
   {
     title: "VAT and mixed-supply advice",
-    body: "Dental practices often supply a mix of exempt and standard-rated services. Getting this wrong creates problems. A specialist from our partner network reviews your VAT position and advises accordingly. This is particularly relevant for practices with significant laboratory or facial aesthetics income.",
+    body: "Dental practices often supply a mix of exempt and standard-rated services. Getting this wrong creates problems. One of our accountants reviews your VAT position and advises accordingly. This is particularly relevant for practices with significant laboratory or facial aesthetics income.",
   },
   {
     title: "Management accounts and reporting",
@@ -143,7 +143,7 @@ const howWeWorkItems = [
   },
   {
     title: "Practice acquisition and structuring",
-    body: "Buying a practice is one of the most significant financial decisions you will make. A specialist from our partner network supports the pre-purchase due diligence, advises on how to structure the acquisition, and helps you understand the financial position you are taking on.",
+    body: "Buying a practice is one of the most significant financial decisions you will make. One of our accountants supports the pre-purchase due diligence, advises on how to structure the acquisition, and helps you understand the financial position you are taking on.",
   },
 ];
 
@@ -284,22 +284,22 @@ const homeFaqs = [
   {
     question: "Do you work with associate dentists as well as practice owners?",
     answer:
-      "Yes. Associate dentists are almost always self-employed and are running a small business whether it feels like it or not. A specialist dental accountant from our partner network handles self assessment, allowable expenses, pension planning, and advises on when incorporation genuinely makes sense, so you are not overpaying tax through simple oversights.",
+      "Yes. Associate dentists are almost always self-employed and are running a small business whether it feels like it or not. One of our dental accountants handles self assessment, allowable expenses, pension planning, and advises on when incorporation genuinely makes sense, so you are not overpaying tax through simple oversights.",
   },
   {
     question: "Can you help with buying or selling a dental practice?",
     answer:
-      "Yes. Practice acquisition is one of the most significant financial decisions you will make. A specialist from our partner network supports the pre-purchase due diligence, advises on how to structure the acquisition, and helps you understand goodwill, financing, and the tax position you are taking on. The same applies on the sale side.",
+      "Yes. Practice acquisition is one of the most significant financial decisions you will make. One of our accountants supports the pre-purchase due diligence, advises on how to structure the acquisition, and helps you understand goodwill, financing, and the tax position you are taking on. The same applies on the sale side.",
   },
   {
     question: "Do you understand NHS contracts and the NHS Pension Scheme?",
     answer:
-      "Yes. A specialist from our partner network reconciles NHS contract payments alongside private fee income and capitation plans, works with UDA targets and clawback, and understands how NHS superannuation interacts with your pension annual allowance, including the incorporation pension trap where only PAYE salary, not dividends, is pensionable.",
+      "Yes. One of our accountants reconciles NHS contract payments alongside private fee income and capitation plans, works with UDA targets and clawback, and understands how NHS superannuation interacts with your pension annual allowance, including the incorporation pension trap where only PAYE salary, not dividends, is pensionable.",
   },
   {
     question: "Can you help multi-practice dental groups?",
     answer:
-      "Yes. Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists building a group, whether that is two practices or ten, and the firms in our partner network support due diligence, restructuring, and ongoing financial management across the portfolio.",
+      "Yes. Running multiple sites introduces complexity around inter-company transactions, group reporting, and acquisition accounting. We work with dentists building a group, whether that is two practices or ten, and our team support due diligence, restructuring, and ongoing financial management across the portfolio.",
   },
 ] as const;
 
@@ -372,7 +372,7 @@ export default function HomePage() {
             <span className="block">associates and groups.</span>
           </h1>
           <p className="hero-reveal-delay mt-6 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
-            We put UK dentists in front of specialist dental accountants from our partner network. NHS contracts, associate tax, VAT, and acquisitions. We only work with dental practices, so we understand the financial specifics that generalist accountants miss.
+            We put UK dentists in front of our dental accountants. NHS contracts, associate tax, VAT, and acquisitions. We only work with dental practices, so we understand the financial specifics that generalist accountants miss.
           </p>
           <p className="hero-reveal-delay-2 mt-4 text-sm font-medium text-white/80">
             Associates, practice owners and multi-site groups. London, Manchester and UK-wide.
@@ -407,7 +407,7 @@ export default function HomePage() {
       <section className="border-b border-[var(--border)] bg-[var(--surface)] py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-[var(--ink-soft)] sm:text-xl">
-            Our team at Dental Finance Partners works exclusively with UK dental practices, from newly qualified associates to established multi-site groups, and puts them in front of a specialist dental accountant from our partner network. Accounting, tax, and financial planning for the dental sector only.
+            Our team at Dental Finance Partners works exclusively with UK dental practices, from newly qualified associates to established multi-site groups, and puts them in front of one of our dental accountants. Accounting, tax, and financial planning for the dental sector only.
           </p>
         </div>
       </section>
@@ -808,7 +808,7 @@ export default function HomePage() {
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">Rather not pick up the phone first?</p>
               <p className="mt-4 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-                Fill in the form and a specialist dental accountant from our partner network will be in touch to arrange a short introductory call. No hard sell, just an honest conversation about your situation and whether we&apos;re the right fit.
+                Fill in the form and one of our dental accountants will be in touch to arrange a short introductory call. No hard sell, just an honest conversation about your situation and whether we&apos;re the right fit.
               </p>
               <p className="mt-6 text-sm text-[var(--muted)]">All initial conversations are confidential and carry no obligation.</p>
             </div>

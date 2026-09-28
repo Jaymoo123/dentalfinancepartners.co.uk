@@ -184,7 +184,7 @@ export default function BlogIndexPage() {
           contained
           ground="white"
           title="Get a dental specialist on your numbers"
-          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will put you in front of a specialist dental accountant from our partner network. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
+          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will put you in front of one of our dental accountants. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
           proofPoints={[
             { title: "Dental practices only", detail: "NHS pensions, UDAs and practice sales every day" },
             { title: "One accountant throughout", detail: "You speak to the person doing the work" },

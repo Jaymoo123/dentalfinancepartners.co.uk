@@ -2,6 +2,7 @@
 @import "tailwindcss" source("..");
 @source "../../../../packages/web-shared";
 @import "@accounting-network/web-shared/design/globals-standard.css";
+@import "../../../../packages/site-styles/prose-standard.css";
 
 /*
   UI ground rules (mobile-first) - Dental Finance Partners
@@ -272,6 +273,16 @@ main {
   font-size: 1rem;
   overflow-wrap: anywhere;
   word-wrap: break-word;
+}
+
+/* Post body HTML can carry a table wider than the phone viewport (raw HTML
+   via dangerouslySetInnerHTML, not a component we control per-row). Wrap it
+   in a scroll container instead of letting it clip. */
+.article-body.prose-blog table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (min-width: 640px) {

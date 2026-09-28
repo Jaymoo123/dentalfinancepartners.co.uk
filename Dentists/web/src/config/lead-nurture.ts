@@ -297,7 +297,7 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 }
 
 // ── Contactability sequence ───────────────────────────────────────────────────
-// 8 steps. Delays from step 0: 0, 0, 4, 24, 48, 96, 168, 264 hours.
+// 8 steps. Delays from step 0: 0, 0, 4, 20, 24, 48, 72, 96 hours (Property's values).
 // Steps 0+1 fire at submit. Steps 2-7 are driven by the hourly cron.
 // Topics: associates, principals, NHS pension, practice purchase/sale, incorporation.
 
@@ -311,8 +311,9 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and a specialist will call you.",
+        "Just reply with a time that suits and one of our accountants will call you.",
         [
+          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "Thanks for your enquiry. It has just come through to us and a dental finance specialist is ready to help.",
           "The call is a free review of your situation, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
@@ -349,7 +350,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, the team at Dental Finance Partners here. Enquiries like yours are exactly what our specialists handle, so we have kept time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, the team at Dental Finance Partners here. Enquiries like yours are exactly what our specialists handle, so we have kept time aside this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -358,7 +359,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -373,7 +374,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email ────────────────────────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -394,12 +395,12 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Dental Finance Partners here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Dental Finance Partners here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Dental Finance Partners here. Most dental professionals we speak to came with the same question you raised, and one short call usually clears up months of uncertainty. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -411,14 +412,14 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email", "sms"],
     preferMonday: true,
     buildMessages: (c) => {
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free dental finance review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free dental finance review is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -442,7 +443,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -532,7 +533,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and a specialist will call you.`,
+          `Reply with ${ask} and one of our accountants will call you.`,
           [
             detailIntro(c),
             `Just reply to this email with ${ask} and a dental finance specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,

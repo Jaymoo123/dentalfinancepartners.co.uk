@@ -1,7 +1,12 @@
 import nicheConfigJson from "../../../niche.config.json";
 import type { CtaVariantConfig } from "@accounting-network/web-shared/lib/niche-config";
+import type { EntityCopy } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 
 export interface NicheConfig {
+  /** Copy for `EntityBlock` / the Organization JSON-LD firm-first description.
+   *  Optional until every page consuming it is confirmed; absent, callers fall
+   *  back to `description`. */
+  entity?: EntityCopy;
   niche_id: string;
   display_name: string;
   legal_name: string;

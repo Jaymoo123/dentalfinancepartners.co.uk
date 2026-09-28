@@ -41,11 +41,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     languages: { "en-GB": url, "x-default": url },
   });
 
+  // ponytail: lastModified omitted wherever we do not track a real edit date.
+  // Build-time new Date() told crawlers every static page changed on every
+  // deploy, which gets the whole sitemap ignored. Omitting is legal and
+  // honest (Property's pattern). Blog URLs below carry genuine dates.
   const entries: MetadataRoute.Sitemap = staticPaths.map((path) => {
     const url = `${base}${path}`;
     return {
       url,
-      lastModified: new Date(),
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : 0.7,
       alternates: hreflang(url),
@@ -56,7 +59,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/locations/${loc.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
       alternates: hreflang(url),
@@ -70,7 +72,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/services/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -82,7 +83,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${cat.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.75,
       alternates: hreflang(url),
@@ -95,7 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${categorySlug}/${post.slug}`;
     entries.push({
       url,
-      lastModified: post.date ? new Date(post.date) : new Date(),
+      ...(post.date ? { lastModified: new Date(post.date) } : {}),
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -106,7 +106,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/calculators/${tool.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.75,
       alternates: hreflang(url),
@@ -119,7 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/dental-guides/${guide.slug}`;
     entries.push({
       url,
-      lastModified: guide.date ? new Date(guide.date) : new Date(),
+      ...(guide.date ? { lastModified: new Date(guide.date) } : {}),
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -131,7 +130,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/resources/${topic}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: hreflang(url),

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "@/components/ui/CTASection";
+import { LeadForm } from "@/components/forms/LeadForm";
 import {
   contentNarrow,
   focusRing,
@@ -68,7 +69,7 @@ export default function AboutPage() {
         <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-[var(--ink-soft)]">
           <li>Plain language guides and calculators you can act on.</li>
           <li>Monthly discipline where it matters, not just a rush every January.</li>
-          <li>A specialist dental accountant from our partner network, not a generalist who has never seen a UDA schedule.</li>
+          <li>One of our dental accountants, not a generalist who has never seen a UDA schedule.</li>
         </ul>
 
         <h2 className="mt-12 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Evidence-led content</h2>
@@ -93,6 +94,18 @@ export default function AboutPage() {
             title="See if we are a fit"
             description="Tell us about your role (associate, owner, or group) and what you want to fix in the next 12 months."
           />
+        </div>
+
+        <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-10">
+          <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
+            Send us your details
+          </h2>
+          <p className="mt-3 text-base leading-relaxed text-[var(--ink-soft)]">
+            We reply within 24 hours and one of our accountants comes back to you directly.
+          </p>
+          <div className="mt-6">
+            <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
+          </div>
         </div>
       </div>
     </>
