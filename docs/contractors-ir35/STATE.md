@@ -12,6 +12,60 @@ Built via `docs/_engines/SITE_SPINUP.md`.
 
 **DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**
 
+## 2026-09-28 phase 0 parity (this pass, NOT deployed)
+
+Full report: `docs/contractors-ir35/PHASE0_2026-09-28.md`. Worked against
+`ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md` and this site's `PARITY_RESEARCH_2026-09-28.md`.
+Correcting the prior line above: production is still on `a796de63` (this file already knew
+that from the 09-28-earlier entry), and the three positioning-ruling commits plus everything
+below are additional, uncommitted, un-deployed local changes; nothing in this pass has shipped.
+
+What changed (site directory only, no shared packages, no deploy):
+- 18 "a/A specialist [reviews/looks at/reads/supports/prepares/assembles/can review]"
+  caveat sentences rewritten to firm voice ("we review", "one of our accountants") across
+  `data/contractor-types.ts` (18, not the research's estimated 14), `app/page.tsx` (3),
+  `app/for/[slug]/page.tsx`, `LeadForm.tsx` (2), `InlineMiniLeadForm.tsx`, `MobileToolSlot.tsx`,
+  `ResultGateModal.tsx`, `BookingPicker.tsx` (2), `ResourceGate.tsx`, `lead-nurture.ts` (SMS),
+  `lib/assistant/opener.ts`, `lib/leads/aux-cron.ts`, `lib/resources/registry.ts` (2).
+- `LeadForm.tsx` success/footer copy now states the 24-hour promise in Property's wording
+  ("We reply within 24 hours and one of our accountants comes back to you directly").
+- `lead-nurture.ts` instant-acknowledgement email (`delayHours: 0`) now states "One of our
+  accountants will call you within 24 hours, Monday to Friday." per brief section 2.
+- Blog category CTA dead code fixed: `BlogPostRenderer.tsx` now calls `ctaCopyForCategory(categorySlug)`
+  (falling back to the generic `niche.blog` copy) instead of always rendering the generic copy;
+  `ctaCopyForCategory` and `CTA_BY_CATEGORY` already existed in `lib/blog-categories.ts` and were
+  only wired into the `/blog/[category]` hub route, never the post renderer.
+- `PremiumCalculator.tsx`: the blog-placement result gate (`ResultGateModal`) removed —
+  `gated` is now hard-`false`, so the calculator result always renders directly under the
+  inputs with the CTA underneath, no interstitial, matching Property.
+- `SiteFooter.tsx`: "Book a consultation" now points at `/contact#book` (the existing anchor
+  around `LeadForm` on the contact page) instead of the kit's default `/book`, which needs a
+  signed lead token and renders zero `<form>` elements without one (confirmed BLOCKER in the
+  09-28 wave-2 reader pass).
+- Real BLOCKER fixed: `LeadForm.tsx` and `DetailsForm.tsx` field inputs used
+  `focus:outline-none` with no replacement ring (the wave-2 reader's "no visible focus
+  indicator" finding). Both now use the shared local `focusRing` token (the same one the
+  buttons already use). Other `focus:outline-none` call sites (calculators, admin login,
+  blog search) not touched this pass, not confirmed broken.
+- AdSense wired per brief section 6 / the Solicitors pattern: `layout.tsx` metadata
+  `google-adsense-account`, `ConsentedScripts adsenseClientId`, `next.config.ts` `ads: true`,
+  `public/ads.txt` copied from Solicitors.
+- `pipeline/submit_indexnow.py` added (Property's shim pattern, `SITE_KEY = "contractors-ir35"`);
+  `optimisation_engine/indexing/config.py` already had a HOST/KEY entry for this site (key
+  `fc84f134ebf231eaec2e26e2646a4ede`) but no key file was published — added
+  `web/public/fc84f134ebf231eaec2e26e2646a4ede.txt`.
+
+Not done this pass, see the report for why: Organization JSON-LD still built by this site's
+own `lib/schema.ts` rather than the shared `packages/web-shared/schema/organization.ts`
+builder (owned by the shared-packages agent); StickyCTA confirmed working-as-designed
+(scroll-gated, not a bug) rather than fixed; three blog posts still carry the caveat phrase
+in body markdown, not swept (out of the brief's named grep scope, editorial risk); `/services`
+has no per-service subtree (a structural difference from Property, not touched, needs an
+owner call); GA4 property id left alone per the plumbing agent's ownership.
+
+`npx tsc --noEmit -p contractors-ir35/web` = clean. `npx vitest run` (contractors-ir35/web)
+= 22 files, 456 tests, all passing.
+
 ## 2026-09-28 (later) Independent full lead-kit check, LIVE site
 
 Report: `docs/contractors-ir35/_wave1/qa/LEAD_KIT_CHECK_2026-09-28.md`. Cross-site:

@@ -66,7 +66,7 @@ const testimonials = [
 const painPoints = [
   {
     title: "IR35 uncertainty",
-    body: "Your end client issued an SDS that says inside IR35. Or your agency told you the contract is outside. Or you just do not know. Getting this wrong costs you thousands in extra tax and penalties. A specialist reviews your contract and actual working practices, not just the paperwork.",
+    body: "Your end client issued an SDS that says inside IR35. Or your agency told you the contract is outside. Or you just do not know. Getting this wrong costs you thousands in extra tax and penalties. We review your contract and actual working practices, not just the paperwork.",
   },
   {
     title: "Limited company vs umbrella",
@@ -85,7 +85,7 @@ const painPoints = [
 const servicesOverview = [
   {
     title: "IR35 status review",
-    body: "A specialist reviews your contract and working practices against the three key tests: control, substitution and mutuality of obligation. You are told where you stand and what, if anything, changes.",
+    body: "We review your contract and working practices against the three key tests: control, substitution and mutuality of obligation. You are told where you stand and what, if anything, changes.",
     href: "/services",
     Icon: FileCheck,
   },
@@ -140,7 +140,7 @@ const faqs = [
   {
     question: "How do I know if I'm inside or outside IR35?",
     answer:
-      "The three key tests are control (does the client direct how you do the work?), substitution (could you send someone else?), and mutuality of obligation (is there an expectation of continued work?). HMRC's CEST tool gives a result but is not definitive. A specialist reviews your actual contract and working practices and sets out a reasoned opinion.",
+      "The three key tests are control (does the client direct how you do the work?), substitution (could you send someone else?), and mutuality of obligation (is there an expectation of continued work?). HMRC's CEST tool gives a result but is not definitive. We review your actual contract and working practices and set out a reasoned opinion.",
   },
   {
     question: "Is it still worth running through a limited company?",

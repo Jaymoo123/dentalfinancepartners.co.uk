@@ -36,7 +36,6 @@ import { ResultGateModal } from "./ResultGateModal";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
-import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { btnPrimary } from "@/components/ui/layout-utils";
 
 // The gate interstitial shows at most once per session.
@@ -495,8 +494,9 @@ export function PremiumCalculator({
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Result gate: in-blog only, never for already-converted visitors.
-  const gated = placement === "blog" && !isConverted();
+  // Result gate removed 2026-09-28 parity ruling: one form directly under the
+  // result, no gate, no modal, matching Property's standard everywhere else.
+  const gated = false;
   const [revealed, setRevealed] = useState(false);
   const [gateOpen, setGateOpen] = useState(false);
   const showResult = !gated || revealed;
@@ -664,8 +664,8 @@ export function PremiumCalculator({
           </div>
         </div>
 
-        {/* In-blog non-gated CTA (converted visitors who see their result instantly). */}
-        {placement === "blog" && !gated && !revealed && (
+        {/* In-blog CTA under the result, ungated. */}
+        {placement === "blog" && !revealed && (
           <div className="border-t border-[var(--border)] bg-white px-5 py-4 sm:px-7">
             <CalcResultCta campaign={config.id} />
           </div>

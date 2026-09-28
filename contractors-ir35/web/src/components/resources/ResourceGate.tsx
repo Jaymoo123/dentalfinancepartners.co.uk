@@ -37,7 +37,7 @@ export function ResourceGate({
       formId="resource_block"
       messagePrefix={`[Resource block: ${topic}]`}
       heading={copy?.heading || t?.ctaCopy || "Get a free review of your contractor tax position"}
-      blurb="Tell us about your situation and a specialist will confirm the numbers for your contract and the most efficient next step, with no obligation."
+      blurb="Tell us about your situation and one of our accountants will confirm the numbers for your contract and the most efficient next step, with no obligation."
       submitLabel="Request my free review"
       className="not-prose my-10 rounded-xl border-l-4 border-primary-600 bg-neutral-50 p-5 ring-1 ring-neutral-200/70 sm:p-6"
     />

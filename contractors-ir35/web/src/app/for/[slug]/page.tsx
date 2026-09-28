@@ -332,7 +332,7 @@ export default async function ContractorTypePage({
                <div> here would be a block in a paragraph and a hydration
                mismatch. Span only. */
             <span>
-              Contractor work only, not a general practice sideline, so a contractor specialist reviews your enquiry. If you would rather write to us first, use the{" "}
+              Contractor work only, not a general practice sideline, so one of our accountants reviews your enquiry. If you would rather write to us first, use the{" "}
               <Link
                 href="/contact"
                 className="font-semibold text-primary-700 underline hover:text-primary-800"

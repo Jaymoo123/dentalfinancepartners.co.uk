@@ -298,6 +298,7 @@ const STEPS: LeadNurtureStep[] = [
         "Just reply with a time that suits and a member of the team will call you.",
         [
           "Thanks for your enquiry, it has just come through to us and a member of the team is ready to help.",
+          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of your contracting tax position, about 20 minutes, with no charge and no obligation. Whether you are looking at IR35 status, comparing umbrella and limited, or working out what your take-home should be, that is exactly what the call is for.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
@@ -333,7 +334,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Contractor Tax Accountants again. IR35 and contractor tax is exactly what the team handles, so we have set time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Contractor Tax Accountants again. IR35 and contractor tax is exactly what the team handles, so we have set time aside this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
         ),
       ];
     },

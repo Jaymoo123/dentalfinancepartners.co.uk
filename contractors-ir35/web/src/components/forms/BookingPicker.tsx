@@ -85,7 +85,7 @@ export default function BookingPicker({ token }: { token: string }) {
           An accountant will call you then. If your plans change, just reply to any of our messages.
         </p>
         <p className="mt-3 text-sm text-neutral-600">
-          The call takes about 20 minutes. Your specialist will have read your enquiry before they
+          The call takes about 20 minutes. Your accountant will have read your enquiry before they
           ring.
         </p>
       </div>
@@ -161,7 +161,7 @@ export default function BookingPicker({ token }: { token: string }) {
           </p>
         )}
         <p className="mt-3 text-xs text-neutral-500">
-          No obligation. A specialist will call you in your chosen window.
+          No obligation. An accountant will call you in your chosen window.
         </p>
       </div>
     </div>

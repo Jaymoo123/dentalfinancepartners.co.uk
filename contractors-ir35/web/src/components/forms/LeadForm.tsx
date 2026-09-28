@@ -2,15 +2,18 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { submitContractorLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
+// `focus:outline-none` had no replacement ring: 2026-09-28 parity read found
+// no visible focus indicator on the first form field. `focusRing` (the same
+// --focus-ring token the buttons use) replaces it.
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-cyan-700 focus:outline-none";
+  `mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-cyan-700 ${focusRing}`;
 
 const labelClass = "block text-sm font-medium text-neutral-900";
 const errorClass = "mt-2 text-xs text-red-600";
@@ -386,7 +389,7 @@ export function LeadForm({
       {status === "success" && !redirectOnSuccess && (
         <div role="status" className="border border-cyan-200 bg-cyan-50 p-4">
           <p className="text-sm font-medium text-cyan-900">
-            Thanks. A specialist will be in touch.
+            Thanks. We reply within 24 hours and one of our accountants comes back to you directly.
           </p>
           <p className="mt-2 text-sm text-cyan-900">
             For specialist advisory work we partner with Aswatax, Chartered Tax Advisers, so it
@@ -404,7 +407,7 @@ export function LeadForm({
       </button>
 
       <p className="text-xs leading-relaxed text-neutral-500">
-        A specialist will be in touch. Your details are stored securely.
+        We reply within 24 hours and one of our accountants comes back to you directly. Your details are stored securely.
       </p>
     </form>
   );

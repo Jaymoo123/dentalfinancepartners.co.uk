@@ -105,7 +105,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a contractor specialist",
     magnetBlurbTemplate:
-      "A specialist will talk through your corporation tax, marginal relief and the most efficient extraction split. The first call is free. If we take the work on, you get a fixed fee in writing before anything starts.",
+      "An accountant will talk through your corporation tax, marginal relief and the most efficient extraction split. The first call is free. If we take the work on, you get a fixed fee in writing before anything starts.",
   },
   "pay-planning": {
     topic: "pay-planning",
@@ -132,7 +132,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a contractor specialist",
     magnetBlurbTemplate:
-      "A specialist will review your contractor set-up, expenses and allowances in a free first call with no obligation. If we take the work on, you get a fixed fee in writing before anything starts.",
+      "An accountant will review your contractor set-up, expenses and allowances in a free first call with no obligation. If we take the work on, you get a fixed fee in writing before anything starts.",
   },
 };
 

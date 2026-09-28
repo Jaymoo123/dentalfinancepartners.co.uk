@@ -163,7 +163,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 status review for engineering contracts",
         body:
-          "A specialist reviews your contract against the three key tests, with specific knowledge of how engineering roles typically work in practice. Site-based roles, framework placements and specialist project work each have different risk profiles.",
+          "We review your contract against the three key tests, with specific knowledge of how engineering roles typically work in practice. Site-based roles, framework placements and specialist project work each have different risk profiles.",
       },
       {
         title: "Travel and subsistence expense management",
@@ -235,7 +235,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 review for finance and interim roles",
         body:
-          "A specialist reviews the specific nature of your engagement, not just the contract. Interim roles that are genuinely project-based with clear deliverables and limited integration look different from permanent headcount substitution, and the specialist knows which arguments work and which do not.",
+          "We review the specific nature of your engagement, not just the contract. Interim roles that are genuinely project-based with clear deliverables and limited integration look different from permanent headcount substitution, and we know which arguments work and which do not.",
       },
       {
         title: "High-rate salary and dividend modelling",
@@ -302,7 +302,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Statement of work and engagement review",
         body:
-          "A specialist reviews your engagement letters and statements of work against the IR35 tests. If you are engaged on a deliverables basis, the documentation is checked so it reflects that clearly and consistently.",
+          "We review your engagement letters and statements of work against the IR35 tests. If you are engaged on a deliverables basis, the documentation is checked so it reflects that clearly and consistently.",
       },
       {
         title: "Portfolio structure and multiple client planning",
@@ -319,7 +319,7 @@ export const contractorTypes: ContractorType[] = [
       {
         question: "My consulting engagement has been with one client for 18 months. Does this affect my IR35 position?",
         answer:
-          "Duration alone does not determine IR35 status, but long single-client engagements attract more HMRC scrutiny. The key questions are whether the nature of the work is genuinely project-based (and has evolved as projects have changed), whether you retain genuine autonomy over how the work is done, and whether you have the right to substitute. A specialist reviews this in context, not just by looking at the calendar.",
+          "Duration alone does not determine IR35 status, but long single-client engagements attract more HMRC scrutiny. The key questions are whether the nature of the work is genuinely project-based (and has evolved as projects have changed), whether you retain genuine autonomy over how the work is done, and whether you have the right to substitute. We review this in context, not just by looking at the calendar.",
       },
       {
         question: "Can I use a day rate contract for management consulting, or do I need a statement of work?",
@@ -364,7 +364,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Working practice review alongside contract review",
         body:
-          "A specialist looks at both what the contract says and how the role actually operates. For project managers, the practical reality of governance arrangements, reporting lines and how priorities are set is what drives the IR35 analysis.",
+          "We look at both what the contract says and how the role actually operates. For project managers, the practical reality of governance arrangements, reporting lines and how priorities are set is what drives the IR35 analysis.",
       },
       {
         title: "Inside IR35 structure optimisation",
@@ -374,7 +374,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "SDS challenge support",
         body:
-          "Where a client's status determination appears incorrect, a specialist supports the formal challenge process, reviewing the SDS, preparing the representation, and managing the 45-day response window.",
+          "Where a client's status determination appears incorrect, we support the formal challenge process, reviewing the SDS, preparing the representation, and managing the 45-day response window.",
       },
     ],
     faqs: [
@@ -444,7 +444,7 @@ export const contractorTypes: ContractorType[] = [
       {
         question: "Can I still use a limited company for NHS locum work?",
         answer:
-          "It depends on the nature of the engagement and the trust's determination. Some NHS locum arrangements remain outside IR35, particularly where the doctor has genuine substitution rights, works across multiple trusts, and is not integrated into the trust's management structure. But the off-payroll rules have applied to NHS trusts since 2017, so the trust makes the determination. A specialist can review your specific arrangements.",
+          "It depends on the nature of the engagement and the trust's determination. Some NHS locum arrangements remain outside IR35, particularly where the doctor has genuine substitution rights, works across multiple trusts, and is not integrated into the trust's management structure. But the off-payroll rules have applied to NHS trusts since 2017, so the trust makes the determination. We can review your specific arrangements.",
       },
       {
         question: "I have an annual allowance charge. Is this normal?",
@@ -489,7 +489,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 review for offshore and specialist roles",
         body:
-          "A specialist reviews your specific working arrangements and engagement structure. For offshore specialists, the outside IR35 case is often well-supported, and the documentation is checked so it would withstand HMRC scrutiny.",
+          "We review your specific working arrangements and engagement structure. For offshore specialists, the outside IR35 case is often well-supported, and the documentation is checked so it would withstand HMRC scrutiny.",
       },
       {
         title: "International income and UK tax compliance",
@@ -551,7 +551,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 status review for legal placements",
         body:
-          "A specialist reviews the engagement against the three key tests, with specific reference to how locum and contract legal work operates in practice. The professional conventions and regulatory framework form part of the analysis.",
+          "We review the engagement against the three key tests, with specific reference to how locum and contract legal work operates in practice. The professional conventions and regulatory framework form part of the analysis.",
       },
       {
         title: "PSC accounting for legal professionals",
@@ -613,7 +613,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 position review for creative engagements",
         body:
-          "A specialist reviews your client mix, engagement structure and working practices to confirm your IR35 position. For small-client-focused creatives, this is often a relatively quick and straightforward exercise. For those with large corporate clients, the specifics are looked at more carefully.",
+          "We review your client mix, engagement structure and working practices to confirm your IR35 position. For small-client-focused creatives, this is often a relatively quick and straightforward exercise. For those with large corporate clients, the specifics are looked at more carefully.",
       },
       {
         title: "Limited company setup and ongoing accounting",
@@ -635,7 +635,7 @@ export const contractorTypes: ContractorType[] = [
       {
         question: "I work with a mix of small and large clients. Does each engagement have a separate IR35 status?",
         answer:
-          "Yes. IR35 status is assessed engagement by engagement, not globally. Your work for a small agency (which self-assesses, and is likely outside IR35) exists separately from your work for a large corporate (where the client determines status). A specialist reviews the large-client engagements specifically and gives you a clear view of where you stand on each.",
+          "Yes. IR35 status is assessed engagement by engagement, not globally. Your work for a small agency (which self-assesses, and is likely outside IR35) exists separately from your work for a large corporate (where the client determines status). We review the large-client engagements specifically and give you a clear view of where you stand on each.",
       },
     ],
   },
@@ -680,7 +680,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "IR35 review for construction and architecture engagements",
         body:
-          "A specialist reviews each engagement against the IR35 tests independently of the CIS position. For project-based architects and specialist contractors, the outside IR35 position is often defensible. For site managers in longer-running employment-type roles, the assessment given is an honest one.",
+          "We review each engagement against the IR35 tests independently of the CIS position. For project-based architects and specialist contractors, the outside IR35 position is often defensible. For site managers in longer-running employment-type roles, the assessment given is an honest one.",
       },
       {
         title: "Site expense management",
@@ -804,7 +804,7 @@ export const contractorTypes: ContractorType[] = [
     metaDescription:
       "What an IR35 contract review covers in 2026/27: the status tests, written terms against working practices, and the 45-day disagreement process.",
     intro:
-      "You have a new or renewed contract in front of you, or a client has handed you a determination saying inside IR35 and you think it is wrong. Either way the question is the same: do the written terms and the way the work will actually run point to self-employment or to employment? An IR35 contract review answers that. A specialist reads the contract, the upper-level agreement where an agency sits in the chain, and your account of how the work is really directed, then sets both against the status tests and marks the weak points. Where the client is medium or large it decides your status, so the review also covers reasonable care and the 45-day disagreement route.",
+      "You have a new or renewed contract in front of you, or a client has handed you a determination saying inside IR35 and you think it is wrong. Either way the question is the same: do the written terms and the way the work will actually run point to self-employment or to employment? An IR35 contract review answers that. We read the contract, the upper-level agreement where an agency sits in the chain, and your account of how the work is really directed, then set both against the status tests and mark the weak points. Where the client is medium or large it decides your status, so the review also covers reasonable care and the 45-day disagreement route.",
     stats: [
       { value: "3", label: "Tests in the irreducible minimum: personal service, control, mutuality" },
       { value: "45 days", label: "Client deadline to respond to a status disagreement (ITEPA s.61T)" },
@@ -842,7 +842,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Reading the whole chain, not one document",
         body:
-          "A specialist reviews the contract you are being asked to sign and, where an agency sits in between, the upper-level agreement too. Terms in the chain above you can contradict the ones in front of you, which is where clean-looking contracts fall down.",
+          "We review the contract you are being asked to sign and, where an agency sits in between, the upper-level agreement too. Terms in the chain above you can contradict the ones in front of you, which is where clean-looking contracts fall down.",
       },
       {
         title: "Testing the wording against the working practices",
@@ -852,12 +852,12 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Preparing the case before you sign",
         body:
-          "Where the risk sits in wording that can be changed, a specialist prepares the amendments to put to the agency or client, and flags the working practices that need to change with them.",
+          "Where the risk sits in wording that can be changed, we prepare the amendments to put to the agency or client, and flag the working practices that need to change with them.",
       },
       {
         title: "Building the file behind a disagreement",
         body:
-          "If a determination is being challenged, a specialist assembles the written representations and the evidence on each test. The step by step route is covered in <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">how to challenge an inside determination</a>.",
+          "If a determination is being challenged, we assemble the written representations and the evidence on each test. The step by step route is covered in <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">how to challenge an inside determination</a>.",
       },
       {
         title: "A first read before you commit",
@@ -907,7 +907,7 @@ export const contractorTypes: ContractorType[] = [
     metaDescription:
       "Moving from an umbrella to your own limited company for an outside IR35 contract. Formation, PAYE, VAT, first payroll and dividends handled for 2026/27.",
     intro:
-      "You are paid through an umbrella, you have an outside IR35 contract in hand or a client willing to engage a personal service company, and you want the switch handled rather than researched. The work splits three ways: ending the umbrella employment cleanly, incorporating and registering for the right taxes, and getting the first payroll and dividend right so the year does not need unpicking later. Most of it is sequencing. Companies House takes a day; the PAYE scheme, the VAT decision and the timing against a running assignment are where people lose weeks. A specialist reviews where you sit in the assignment and what the umbrella has already taxed. Figures here are 2026/27.",
+      "You are paid through an umbrella, you have an outside IR35 contract in hand or a client willing to engage a personal service company, and you want the switch handled rather than researched. The work splits three ways: ending the umbrella employment cleanly, incorporating and registering for the right taxes, and getting the first payroll and dividend right so the year does not need unpicking later. Most of it is sequencing. Companies House takes a day; the PAYE scheme, the VAT decision and the timing against a running assignment are where people lose weeks. We review where you sit in the assignment and what the umbrella has already taxed. Figures here are 2026/27.",
     stats: [
       { value: "£90,000", label: "VAT registration threshold, frozen since 1 April 2024" },
       { value: "15%", label: "Employer NIC above £5,000, funded from your umbrella assignment rate" },
@@ -1049,7 +1049,7 @@ export const contractorTypes: ContractorType[] = [
       {
         title: "Reading the determination against the working practices",
         body:
-          "A specialist reads the statement against how the engagement actually runs: control, substitution, mutuality, and whether the reasons given are specific to you or lifted across a role type. Where it looks like a blanket call, the written representations are drafted and the 45 day window tracked. <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">Challenging a determination</a>.",
+          "We read the statement against how the engagement actually runs: control, substitution, mutuality, and whether the reasons given are specific to you or lifted across a role type. Where it looks like a blanket call, the written representations are drafted and the 45 day window tracked. <a href=\"/blog/ir35-status/challenge-ir35-determination-sds\">Challenging a determination</a>.",
       },
       {
         title: "Modelling keep, dormant, close and umbrella together",

@@ -38,6 +38,18 @@ import { ConsentToggle } from "@/components/analytics/ConsentToggle";
  * than leaving the prop unfillable -- the kit's type requires it. One-line
  * revert if the owner picks differently or picks the Briefcase fallback.
  */
+// /book requires a signed lead token (see app/book/page.tsx) and renders no
+// form without one, so the footer's untokened link dead-ends. /contact#book
+// (the anchor already wrapping LeadForm in app/contact/page.tsx) renders the
+// real form, no token needed -- overriding the kit's default "Book a
+// consultation" -> /book here, per 2026-09-28 parity brief section 4.
+const COMPANY_ITEMS = [
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+  { label: "Locations", href: "/locations" },
+  { label: "Book a consultation", href: "/contact#book" },
+];
+
 export function SiteFooter() {
   return (
     <KitSiteFooter
@@ -46,6 +58,7 @@ export function SiteFooter() {
       legalDisclosure={siteConfig.company.legalDisclosure}
       legalName={siteConfig.company.legalName}
       tradingName={siteConfig.company.tradingName}
+      companyItems={COMPANY_ITEMS}
       wordmarkIcon={FileBadge}
       wordmarkTop="CONTRACTOR TAX"
       wordmarkBottom="ACCOUNTANTS · IR35 SPECIALISTS"
