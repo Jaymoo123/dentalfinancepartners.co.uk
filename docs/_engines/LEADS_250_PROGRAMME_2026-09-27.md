@@ -883,6 +883,22 @@ all fixed by `ab6b01d1`) plus one next/font network flake on Solicitors (rerun g
 `calc_pdf_offer` off in prod (the write was refused by the session's permission classifier; the day-13
 read in Property STATE.md already says kill); T6 baseline rerun (paid, and a same-day rerun measures
 nothing, run it at the month-1 read); the terms-page paragraph (decision 1) and IndexNow (not asked).
+**POSITIONING REVERSED AND REDEPLOYED, 2026-09-28 evening (owner: "we are closing the leads... Umair is
+reaching out as propertytaxpartners.co.uk so that's who we are... nothing caveating or unexpected in front
+of a potential lead").** The 09-12 "referral network, not an accountancy practice" framing is dead on every
+prospect-facing and lead-facing surface. Three deploys of the five sites: `d4a68b95` (entity block off all
+22 pages, Organization = AccountingService with a firm-first description, llms.txt firm-first),
+`63087d14` + `815ae7de` (every sentence in firm voice across about, contact, home, audience and service
+pages, chat FAQ and openers, form and booking blurbs, thank-you and complete pages, blog CTAs, SMS acks,
+booking reminders and nurture emails; the free first call now reads "Free first call, then a fixed fee in
+writing"; nurture gaps on Medical, contractors, care and charities corrected from Property's cumulative
+timeline to true gaps, 11 days not 25). Consent sentence, privacy, terms and the post-submit Aswatax
+message unchanged by owner decision. Owner confirmed nurture is ON in production. Independent lead-kit
+check (11 agents) landed the same day: `LEAD_KIT_CHECK_2026-09-28.md`; its positioning findings are moot,
+its /book footer dead-end, Medical health-check contradictions, unbacked 24-hour promise, identical
+segment closers and the 390 px capture trap still stand. `check_audience_pages.py` no longer bans
+firm-identity phrases (`3753a3b7`). The six other kit sites inherit the new shared LeadCTAPanel default on
+their next deploy and still carry about 187 "free consultation" strings of their own.
 **FULL LEAD-KIT CHECK DONE, 2026-09-28 (the fresh-agent brief above, run on the LIVE sites).**
 Readout: `LEAD_KIT_CHECK_2026-09-28.md`; per-site `docs/<site>/_wave1/qa/LEAD_KIT_CHECK_2026-09-28.md`;
 per-site STATE.md entries dated 2026-09-28 (later). Report only, nothing fixed, pushed or deployed.
