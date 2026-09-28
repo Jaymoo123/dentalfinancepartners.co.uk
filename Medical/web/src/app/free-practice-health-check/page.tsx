@@ -30,7 +30,7 @@ const FAQS = [
   {
     question: "Will you contact me repeatedly?",
     answer:
-      "We reply within 24 hours and one of our accountants comes back to you directly. If we do not hear back straight away, we follow up a handful of times over the next fortnight, then stop. No list-selling, and you can opt out of any message.",
+      "No. We follow up once with the report and an offer of a 30-minute scoping call. If you do not reply, we do not chase. No drip campaigns, no remarketing, no list-selling.",
   },
   {
     question: "Is this only for GP partners?",
@@ -137,7 +137,7 @@ export default function FreePracticeHealthCheckPage() {
               Free practice health check for UK doctors
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg">
-              Five medical-specific questions. We flag the NHS pension, tax structure, IR35, private practice, and compliance items most worth reviewing in your specific position. On-screen results straight away, no PDF wall, then one of our accountants follows up within 24 hours.
+              Five medical-specific questions. We flag the NHS pension, tax structure, IR35, private practice, and compliance items most worth reviewing in your specific position. On-screen results plus a follow-up email, with no PDF wall and no sales sequences.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
               <Stat value="5" label="Questions" />

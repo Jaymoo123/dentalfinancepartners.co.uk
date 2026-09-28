@@ -371,11 +371,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and one of our accountants will call you.",
+        "Just reply with a time that suits and a specialist will call you.",
         [
-          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "Thanks for your enquiry. It has just landed with us, and one of our medical accountants who works with doctors is reading it.",
-          "The call is one of our accountants reading your personal tax position as a doctor. Scope and fees are agreed with you, and replying commits you to nothing.",
+          "The call is a specialist reading your personal tax position as a doctor. Scope and fees are agreed with you, and replying commits you to nothing.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you, tell us and we will work around it.",
         ],
         "t0_email",
@@ -470,7 +469,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, Medical Accountants UK here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, Medical Accountants UK here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, Medical Accountants UK here. Most doctors we speak to came to us with the same question you raised, and one short call usually clears up months of uncertainty. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -489,7 +488,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free first call is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free medical tax review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -603,7 +602,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and one of our accountants will call you.`,
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
             `Just reply to this email with ${ask} and one of our medical accountants who works with doctors will call you. There is no obligation and nothing to prepare.`,

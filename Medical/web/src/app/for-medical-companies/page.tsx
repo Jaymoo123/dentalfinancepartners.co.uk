@@ -75,7 +75,7 @@ const data: AudienceStage = {
   services: [
     {
       title: "Your extraction mix, modelled before the year end",
-      body: "One of our accountants reviews expected profit, your other income, the outside-IR35 share and any spouse shareholding, then models salary, dividend and employer pension contribution at your own numbers while they can still change. First pass yourself with the <a href=\"/calculators/private-practice-incorporation\">private practice incorporation calculator</a>.",
+      body: "A specialist reviews expected profit, your other income, the outside-IR35 share and any spouse shareholding, then models salary, dividend and employer pension contribution at your own numbers while they can still change. First pass yourself with the <a href=\"/calculators/private-practice-incorporation\">private practice incorporation calculator</a>.",
     },
     {
       title: "Year-end accounts and the company tax return prepared",
