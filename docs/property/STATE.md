@@ -22,6 +22,35 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 > **SESSION TOTAL 2026-06-02: 15 Track-2 commits, ~66 distinct pages, 0 genuine residual, link audit clean — DEPLOYED to production 2026-06-02 (whole `main` HEAD now live).** Immediate post-deploy operational step: register monitored_pages baselines for the now-live batches (see §3) — the pages shipped LIVE but UNMONITORED. After deploy, the only residual rewrite items are: `vat-calculation-calculator` (HELD, no clean residual intent) and the deferred SDLT 15->17% corpus remediation (user-deferred to AFTER the rewrite program, §3) plus the minor-cleanup sweep (§3). CapAll-special (2 deleted pages, `hmo-capital-allowances-multi-tenant-landlords-claim` + `landlord-capital-allowances-tax-relief`) DECISION = **SKIP** (their intents are already owned by ranking-grade pillars `hmo-common-parts-capital-allowances-s35-...` + `capital-allowances-on-property`; resurrecting pages deliberately removed in collapse `8f6ac8e9` would worsen the already over-fragmented capital-allowances space). NB a transient build red mid-session was the user's own `eb75b70b` consent-checkbox rollout (LeadSubmission gained required consent_*; mini-forms fixed in same commit), not Track 2.**
 ---
 
+## 2026-09-28 — Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
+
+Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;
+site read `docs/property/_wave1/qa/PRELIVE_READ_2026-09-28.md`.
+
+- **Schema:** Organization onto the shared builder (fifth and last site), one node per page from the layout,
+  sameAs (Companies House + four sister brands), parentOrganization, knowsAbout from the 15 audience titles, blog
+  author = Organization (`1bca9bf0`). Homepage AccountingService node with priceRange and opening hours deleted;
+  Organization description is the entity sentence (`8721c585`).
+- **Read (Opus):** 15 pages: READY 13 / FIX-FIRST 2 / NOT-READY 0; 20 figures re-checked, none wrong; zero banned
+  strings. Fixed (`524b5290`): template no longer renders "What lands on your desk: landlords moving property into
+  a limited company"; MTD stat label matches its value; four 83 to 91 character stat labels shortened for the
+  mobile strip. Owner call: `couples-splitting-rental-income` FAQ 4 caps court-order transfers at three years
+  (s.58(1D) has no limit; Track A chose the conservative reading).
+- **Claims (cross-cutting review):** /about metadata claimed "100+ landlords served, property-only since 2020"
+  (opco incorporated 2025); the "100% of our clients / every client" family, "one qualified accountant" and "same
+  accountant every time" reworded to scope and one-specialist-firm statements; "clear recommendations" dropped;
+  /services no longer says "call us" (`8721c585`). Stat strip "100+ Landlords served" is now "200+ Landlord
+  enquiries" (242 non-test enquiries on 2026-09-28, rounded down); homepage metas and trust badge lose "100+
+  landlords" (`2f6cc669`). First-person voice and fixed-fee positioning untouched per the 2026-09-12 ruling.
+- **Render:** full build after all changes: 24 pages clean at 1280 and 390, one Organization node, no
+  AccountingService, headings and forms as specified, llms-full.txt 810 posts at 17.0 MB (static, under the
+  19.07 MB ISR ceiling by 2 MB; watch as the corpus grows).
+- **Still open for the owner:** the 15 `/for` pages are orphans (sitemap and llms.txt only); returning-visitor
+  panel misrenders at 390 and covers content (live intent-engine surface, not Wave 1); "Ask a specialist" pill
+  over the fourth stat value at 1280; terms page silent on the referral model; entity `serves` line says
+  "landlords and property investors" on three pages aimed at executors and families.
+- **Deploy:** NOT deployed; PDF day-14 read and `calc_pdf_offer` off in prod still sequenced with the deploy.
+
 ## 2026-09-27 — Wave 1 audience pages: 15 `/for/<slug>` pages BUILT + VERIFIED, NOT deployed
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a. Route `app/for/[slug]/page.tsx`

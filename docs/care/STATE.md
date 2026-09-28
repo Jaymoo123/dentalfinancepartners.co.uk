@@ -14,7 +14,30 @@ brand_locked: true
 > domain at G1; deploy is HELD (and additionally deploy-hold to ~2026-08-03 for the medical
 > discovery-indexing watch). Post-hoc brand swap = 3-file config edit.
 
-## 2026-09-27 Leads-250 Wave 1 (committed, deploying tonight, verify live after)
+## 2026-09-28 Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
+
+Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;
+site read `docs/care/_wave1/qa/PRELIVE_READ_2026-09-28.md`.
+
+- **Read (Opus):** 2 hubs + 13 posts: READY 13 / FIX-FIRST 2 / NOT-READY 0; 25 figures re-checked, none wrong;
+  zero banned strings. Fixed (`506fd848`): CHC post opens on the pricing decision; agency set-up post hedges the
+  CQC fee cap; domiciliary start-up post links its services page. Follow-up, not done: "a specialist reviews"
+  closer on nine of thirteen posts.
+- **Claims and schema:** Organization node plain Organization, no priceRange, entity sentence as description;
+  care-startups hub no longer offers "a standalone engagement"; homepage reply time 24 hours to match the block
+  (`3501f645`). Buying-a-care-home card no longer "advises" (`35797eeb`).
+- **Render:** `/services/[slug]` rendered its HTML fields as text with overflow at 390 on five of six pages, fixed
+  (`ea785848`); entity block now on `/services/[slug]` (`506fd848`); `/for` and `/services` pages carried NO lead
+  form, now one `LeadCTAPanel` + `LeadForm` at the foot (`3a25f3ea`); /about closes on the same panel instead of a
+  floating line, a third registered-office sentence and an orphan button (`35797eeb`). Re-verify build after these
+  changes recorded in the review doc.
+- **Still open for the owner:** homepage h1 "Accountants for UK care providers", blog CTA h2 and `/services` tier
+  "Advisory" wording (heading class, ranking call); terms page says "formal engagements ... engagement letters" and
+  never mentions the partner network; two live posts flagged by the sweep (`fnc-chc-la-fee-mix-accounting` "seek
+  advice"; `cqc-registration-costs-and-finance-guide` overlaps the new set-up post).
+- **Deploy:** NOT deployed.
+
+## 2026-09-27 Leads-250 Wave 1 (committed 09-27; deploy held by the owner the same night; see the 09-28 entry above)
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
 
@@ -30,8 +53,7 @@ Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
 - **Schema/llms:** author key is RSS-only, not rendered on-page; blog template gaining a
   FAQ section + FAQPage (all care posts previously emitted none); for/services
   Service+Breadcrumb schema in progress; llms.txt back-fill in progress.
-- **Deploy status:** deploying tonight (order: Property, Medical, contractors, care,
-  charities, then Dentists and generalist for the s.464ZA patches). Verify live after.
+- **Deploy status:** owner held the deploy on 09-27 late; still NOT deployed at 09-28 close.
 
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 

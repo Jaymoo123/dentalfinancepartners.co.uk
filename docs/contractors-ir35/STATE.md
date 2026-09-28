@@ -12,7 +12,28 @@ Built via `docs/_engines/SITE_SPINUP.md`.
 
 **DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**
 
-## 2026-09-27 Leads-250 Wave 1 (committed, deploying tonight, verify live after)
+## 2026-09-28 Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
+
+Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;
+site read `docs/contractors-ir35/_wave1/qa/PRELIVE_READ_2026-09-28.md`.
+
+- **Read (Opus):** 5 pages + 8 posts: READY 6 / FIX-FIRST 7 / NOT-READY 0; no wrong figure; zero banned strings.
+  Five of the seven were one template defect: `for/[slug]` lowercased the title into four headings ("it
+  contractors", "ir35"). Fixed with an optional `phrase` on `ContractorType` (`44490175`); checklist post keeps its
+  outside-IR35 frame in h1, title and metas; pension summary states both taper limbs.
+- **Claims (cross-cutting review):** Organization node is plain Organization with the entity sentence (`7ec4dd0f`);
+  nine sector rows and three FAQ answers that said "we review your contract" now say a specialist does; homepage
+  hero follows the Medical publisher-and-enquiry-service pattern; "large contractor client base" and "written by
+  specialist contractor accountants" gone (`21bff5e8`).
+- **Render:** homepage entity block moved below the lead panel onto the default slate ground; comparison table
+  wraps at 390 (was clipped by a 28rem minimum width); audience stat and card grids follow their item count, no
+  orphan tile (`21bff5e8`). Re-verify build after these changes recorded in the review doc.
+- **Still open for the owner:** audience h1s "Accountants for IT contractors" and the homepage title/meta (ranking
+  call); terms page silent on the referral model; `/for/it-contractors` intro reads to a reader; chat pill over
+  the third stat label on ten audience pages (estate widget).
+- **Deploy:** NOT deployed.
+
+## 2026-09-27 Leads-250 Wave 1 (committed 09-27; deploy held by the owner the same night; see the 09-28 entry above)
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
 
@@ -28,8 +49,7 @@ Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
   live pages that stated the rules were repealed outright.
 - **Schema/llms:** breadcrumb schema on `for`/`services` (`8a520b16`); llms.txt back-filled
   (`99389fb6`).
-- **Deploy status:** deploying tonight (order: Property, Medical, contractors, care,
-  charities, then Dentists and generalist for the s.464ZA patches). Verify live after.
+- **Deploy status:** owner held the deploy on 09-27 late; still NOT deployed at 09-28 close.
 
 ## ⚡ PICKUP — port status DERIVED FROM GIT (2026-09-12)
 

@@ -843,6 +843,28 @@ artefact" wipes another agent's edits, and a commit made without checking `git d
 land hollow. Rule now: never git checkout/restore in an agent prompt, one agent per site, check the
 diff is non-empty before every commit, commit straight after each verified report.
 
+**S5 CLOSED + PRE-LIVE REVIEW DONE, 2026-09-28 (owner: "the pre-live review is the main job
+today and it is not a rubber stamp"). NOTHING PUSHED OR DEPLOYED; the hold in decision 10 stands.**
+Full readout: `WAVE1_PRELIVE_REVIEW_2026-09-28.md` (verdict, fixes, owner decisions, follow-ups,
+agent counts). Per-site reads: `docs/<site>/_wave1/qa/PRELIVE_READ_2026-09-28.md`; per-site
+STATE.md entries dated 2026-09-28. In one paragraph: S5 pickup items (1) and (2) are done, Property's
+Organization is on the shared builder (`1bca9bf0`) and all five sites were built and rendered at 1280
+and 390 from the production build. The review then found and fixed, today, a class of defects the
+Wave 1 QA chain could not see because it read the writers' JSON rather than the rendered page: four
+audience templates lowercasing the page title into headings, two service templates with no entity
+block, two sites' audience and service pages with no lead form at all, Medical stat tiles rendering
+dates as "0", Medical posts stacking two identical mid-article forms, care service pages printing raw
+HTML. It also found that the machine-readable layer still contradicted the entity block on four of
+five sites (AccountingService JSON-LD, priceRange, opening hours, meta strings as the Organization
+description) and that Property's about page claimed "100+ landlords served, since 2020" against an
+opco incorporated in 2025; all fixed, first-person voice and titles/h1s/metas left per the
+2026-09-12 ruling. Content: 59 pieces re-read, no wrong figure, zero banned strings; sameness at
+the closings varied on Medical and charities, care left as a follow-up. Owner decisions carried in the
+review doc section 4 (terms-page clause on the referral model, "regulated firm" wording, h1s that
+say "Accountants for", the s.58(1D) FAQ reading, the returning-visitor panel at 390, orphan /for
+pages). Pickup after the owner's go: push, dependency-closure check, deploy per decision 10 order,
+`calc_pdf_offer` off in prod, then T6 baseline rerun.
+
 ### S5. GEO completion on the five sites (spec, 2026-09-27 late; owner: "make sure the sites are as optimised for GEO as they can possibly be", "if we're number 1 we need to be number 1", "I am all for rewriting just make sure we're not losing our existing queries")
 
 Sites: Property, Medical, contractors-ir35, care, charities. Everything local-first, committed, not deployed (owner hold stands). Each per-site build agent verifies with tsc, vitest, build and a rendered grep; an Opus reviewer reads the rendered HTML of homepage, /about, /services on all five in headless Chromium (puppeteer-core + ms-playwright chromium, 1280 and 390) before commit.

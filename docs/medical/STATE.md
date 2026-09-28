@@ -6,11 +6,30 @@ methodology lives in the shared engines (`docs/_engines/NETNEW_PROGRAM.md`,
 site-specific WHAT and the heartbeat. Ground-truth facts live in
 `docs/medical/house_positions.md`, never here.
 
-Last updated: 2026-09-27 (Leads-250 Wave 1; deploying tonight).
+Last updated: 2026-09-28 (Leads-250 S5 close and pre-live review; NOT deployed).
 
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: all six design-port phases, claims-audit serious tier, header CTA fix, favicons).
 
-## 2026-09-27 Leads-250 Wave 1 (committed, deploying tonight, verify live after)
+## 2026-09-28 Leads-250 S5 close + pre-live review (BUILT + VERIFIED locally, NOT deployed, owner hold stands)
+
+Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S5; review `docs/_engines/WAVE1_PRELIVE_REVIEW_2026-09-28.md`;
+site read `docs/medical/_wave1/qa/PRELIVE_READ_2026-09-28.md`; render evidence in the session scratchpad (not kept).
+
+- **Read (Opus):** 5 pages + 10 posts + entity + terms: READY 6 / FIX-FIRST 11 / NOT-READY 0; no wrong figure;
+  zero banned strings in the pieces. Fixed today: homepage CTA no longer says "our GP accountants ... free
+  consultation" (`c8e43895`); four audience closings and five post closers varied; Class 4 6% band restored on the
+  returning-doctors post; the two FAQs the T4 fix had displaced restored as seventh entries; one clause on how many
+  GP practices are VAT registered; `deriveTopic` maps the five new routes; `/medical-guides` lists them.
+- **Render (Sonnet build + Opus visual):** duplicate Organization node on /about, /services, /contact, /locations
+  removed (`ec807430`); eight stat tiles rendering "0" on four new pages now show the date or range as text
+  (shared `StatsCounter.value`, `3f6ee5ce`, `f6052eb9`); the stacked mid-article MiniCapture removed from long posts,
+  leaving the estate `inline_mini` form (`f6052eb9`). Organization description is the entity sentence (`ba52e930`).
+- **Still open for the owner:** "regulated firm" wording (estate-wide, in privacy policies and consent, not touched);
+  terms page silent on the referral model; `/for-nhs-doctors` intro reads to a reader, not a decider; /about block
+  ground close to the hero's; "Ask a specialist" bubble over the block at 390 (estate widget).
+- **Deploy:** NOT deployed. Order per plan decision 10 when the owner says go.
+
+## 2026-09-27 Leads-250 Wave 1 (committed 09-27; deploy held by the owner the same night; see the 09-28 entry above)
 
 Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
 
@@ -23,8 +42,7 @@ Spec `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` §13 S4a/S4b.
   to generalist/Property/Dentists, not Medical).
 - **Schema/llms:** audience FAQPage answers stripped of anchors; llms.txt back-fill in
   progress (contractors and Property done first, Medical/care/charities in progress).
-- **Deploy status:** deploying tonight (order: Property, Medical, contractors, care,
-  charities, then Dentists and generalist for the s.464ZA patches). Verify live after.
+- **Deploy status:** owner held the deploy on 09-27 late; still NOT deployed at 09-28 close.
 
 ## 2026-09-10 - DESIGN PORT PHASE 0 (Property standard). [deployed 2026-09-16, 90fbea9c]
 
