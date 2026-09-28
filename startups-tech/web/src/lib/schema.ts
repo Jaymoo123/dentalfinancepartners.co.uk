@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { buildService } from "@accounting-network/web-shared/schema";
 
 export function buildOgImageUrl(title: string, category?: string) {
   const params = new URLSearchParams({ title });
@@ -72,6 +73,15 @@ export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
     })),
   });
+}
+
+export function buildServiceJsonLd(opts: { name: string; description: string; url: string }) {
+  return JSON.stringify(
+    buildService(
+      { name: opts.name, description: opts.description, url: opts.url, serviceType: "AccountingService" },
+      { siteUrl: siteConfig.url, siteName: siteConfig.name, publisherLogoUrl: siteConfig.publisherLogoUrl },
+    ),
+  );
 }
 
 export function buildBreadcrumbJsonLd(items: { label: string; href?: string }[]) {

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { startupsServices, getStartupsService } from "@/data/startups-services";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildServiceJsonLd, buildBreadcrumbJsonLd } from "@/lib/schema";
 import { siteContainerLg } from "@/components/ui/layout-utils";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -22,6 +22,22 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const service = getStartupsService(slug);
   if (!service) notFound();
   return (<>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: buildServiceJsonLd({ name: service.title, description: service.metaDescription, url: `/services/${service.slug}` }),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: buildBreadcrumbJsonLd([
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: service.title },
+        ]),
+      }}
+    />
     <section className="border-b border-neutral-200 bg-[#4f46e5] py-16 sm:py-20">
       <div className={siteContainerLg}>
         <Link href="/services" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">All services</Link>

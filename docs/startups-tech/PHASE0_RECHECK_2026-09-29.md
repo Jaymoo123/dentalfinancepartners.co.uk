@@ -106,3 +106,47 @@ No known exception applies to startups-tech.
 ## Estate summariser note (2026-09-29)
 Final status: SAFE AFTER FIXES.
 Blocking item: the build-time sitemap dates (H7) and the missing Service/BreadcrumbList schema on 11 pages (M9); the absent header and footer stay with phase 1.
+
+## Fix round (2026-09-29)
+Fixed M9 (missing Service/BreadcrumbList JSON-LD on the 11 `/for/*` and `/services/*` pages).
+Reference pattern: pharmacies' `pharmacies/web/src/lib/schema.ts` `buildServiceJsonLd` (calls the
+shared `buildService` from `packages/web-shared/schema/service.ts`) plus its own
+`buildBreadcrumbJsonLd`, as wired in `pharmacies/web/src/app/for/[slug]/page.tsx` and
+`pharmacies/web/src/app/services/[slug]/page.tsx`.
+
+Changes (all within `startups-tech/web/src/`, no prose changed, no new strings invented):
+- `startups-tech/web/src/lib/schema.ts:3` — import `buildService` from
+  `@accounting-network/web-shared/schema`.
+- `startups-tech/web/src/lib/schema.ts` — new `buildServiceJsonLd({ name, description, url })`,
+  same shape as pharmacies' (serviceType `AccountingService`, provider = site Organization via the
+  shared builder).
+- `startups-tech/web/src/app/for/[slug]/page.tsx:8` — import `buildServiceJsonLd`,
+  `buildBreadcrumbJsonLd`; emits a `Service` node (`name`/`description` from `hub.title` /
+  `hub.metaDescription`, `url` = `/for/${hub.slug}`) and a `BreadcrumbList` (Home > For > hub
+  title) alongside the existing `FAQPage`.
+- `startups-tech/web/src/app/services/[slug]/page.tsx:6` — same wiring for the 8 service pages
+  (`service.title` / `service.metaDescription`, `url` = `/services/${service.slug}`, breadcrumb
+  Home > Services > service title).
+
+Every string used (`name`, `description`, breadcrumb labels) already exists on the page's own data
+object (`startups-hubs.ts` / `startups-services.ts`); nothing invented.
+
+`@type` counts, one page each (verified by re-deriving the same call shape against real data in a
+scratch script, output matched the wired TSX calls exactly):
+- `/for/pre-seed-founders`: `{"Service":1,"BreadcrumbList":1,"FAQPage":1}`
+- `/services/rd-tax-claims`: `{"Service":1,"BreadcrumbList":1,"FAQPage":1}`
+(all 7 `/for/*` and 8 `/services/*` pages get the same 3 nodes; FAQPage only emits when
+`faqs.length > 0`, unchanged from before this fix)
+
+`npx tsc --noEmit -p startups-tech/web` — no output, clean pass.
+`cd startups-tech/web && npx vitest run` — 8 test files, 75 tests, all passed.
+
+`sitemap.ts` (H7) was left untouched per instruction — owned by another agent.
+
+## Fix round (2026-09-29)
+
+- File: `startups-tech/web/src/app/sitemap.ts`, lines 10-64 (static/service/for/tool/category blocks). Superseding the earlier note in this doc that H7 was "owned by another agent" — this fix round is that agent.
+- Before: every static, service, for, tool and category entry set `lastModified: now`; post entries already used `post.updatedDate || post.date`.
+- After: `lastModified` removed from static/service/for/tool entries; `/blog` and category entries now derive `lastModified` from the newest `updatedDate || date` among their posts; post entries unchanged. URL list emitted is unchanged.
+- `npx tsc --noEmit -p startups-tech/web` — clean, no output.
+- `cd startups-tech/web && npx vitest run` — `Test Files 8 passed (8)`, `Tests 75 passed (75)`.
