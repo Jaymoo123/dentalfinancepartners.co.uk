@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your associate return done properly",
   ctaBody:
-    "30-minute scoping call, free. One of our accountants looks at your current set-up, flags the expenses you're missing, and tells you honestly whether incorporation is on the table yet.",
+    "Send us your schedule, your expenses and where you stand on the NHS Pension, and on a free first call we will tell you what you are leaving on the table and whether incorporation is worth it yet. If we take the work on, you get a fixed fee in writing before anything starts.",
   relatedGuides: [
     {
       href: "/dental-guides/associate-tax-survival-guide",

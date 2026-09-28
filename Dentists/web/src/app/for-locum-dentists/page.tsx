@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your locum structure right",
   ctaBody:
-    "30-minute scoping call with one of our accountants. They will run the Ltd vs umbrella vs sole-trader comparison on your specific income and engagement mix and tell you which one wins on real numbers.",
+    "Tell us what you earn and which practices you cover, and on a free first call we will run limited company against umbrella against sole trader on your own numbers rather than an average. If we take the work on, you get a fixed fee in writing before anything starts.",
   relatedGuides: [
     {
       href: "/services/locum-dentist-tax",

@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Buy with proper due diligence, not just legal review",
   ctaBody:
-    "30-minute scoping call about the practice you are looking at, with one of our accountants. They will tell you what they would dig into in DD and whether the asking price looks defensible.",
+    "Send us the practice you are looking at and we will tell you on a free first call what we would dig into in due diligence and whether the asking price stands up. If we take the work on, you get a fixed fee in writing before anything starts.",
   relatedGuides: [
     {
       href: "/dental-guides/practice-purchase-financial-due-diligence",

@@ -272,7 +272,7 @@ export function HealthCheckWizard() {
         </h3>
         <p className="mt-3 text-[var(--ink-soft)]">
           Below are the top items worth reviewing. We will follow up on the email
-          you supplied (<strong>{a.email}</strong>) so a specialist can talk any of
+          you supplied (<strong>{a.email}</strong>) so one of our accountants can talk any of
           them through in detail.
         </p>
 

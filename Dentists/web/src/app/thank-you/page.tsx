@@ -157,7 +157,7 @@ export default async function ThankYouPage({
                 Ready to book a time that works for you?
               </p>
               <Link href="/contact" className={btnPrimary}>
-                Book your free review
+                Book your free first call
               </Link>
             </div>
           )}

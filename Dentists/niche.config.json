@@ -67,7 +67,8 @@
     }
   ],
   "footer_links": [
-    {
+    { "label": "Book a consultation", "href": "/contact" },
+      {
       "label": "Locations",
       "href": "/locations"
     },
@@ -214,9 +215,9 @@
         },
         "home_cta": {
           "heading": "Ready to work with a dental accountant who understands your practice?",
-          "body": "Whether you're an associate looking to optimize your tax position, or a practice owner who needs proper financial visibility, the first conversation is straightforward and without obligation. Book your free consultation today.",
+          "body": "Whether you're an associate looking to improve your tax position, or a practice owner who needs proper financial visibility, the first call is free and without obligation. If we take the work on, you get a fixed fee in writing before anything starts.",
           "primary": {
-            "label": "Book your free consultation",
+            "label": "Book your free first call",
             "href": "/contact"
           }
         }

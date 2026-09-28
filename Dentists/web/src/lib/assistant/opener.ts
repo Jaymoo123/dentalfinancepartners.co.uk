@@ -47,7 +47,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   "associate-incorporation": [
     "Weighing up incorporation? The NHS Pension side is the part most calculators skip. I can point you to the tool that includes it.",
     "Want to see whether a limited company actually saves you money once the NHS Pension cost is counted? The calculator does both sides.",
-    "A specialist can run the sole trader vs limited company numbers for your specific book of fees, free first call, want me to set one up?",
+    "One of our accountants can run the sole trader vs limited company numbers for your specific book of fees, free first call, want me to set one up?",
   ],
   principal: [
     "Sorting how to take your practice profit? I can point you to the planner in a second.",
@@ -57,17 +57,17 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   buying: [
     "Looking at a practice to buy? I can show you an indicative value and an affordability check.",
     "Want me to line up the valuation and affordability calculator before you make an offer?",
-    "A specialist can run the financial due diligence with you, the first call is free, shall I set it up?",
+    "One of our accountants can run the financial due diligence with you, the first call is free, shall I set it up?",
   ],
   selling: [
     "Thinking about selling? There is a tool that shows an indicative value and what you keep after tax.",
     "CGT on a practice sale has a few moving parts. Want me to point you to the calculator and the BADR timing?",
-    "Before you put a figure on a sale, a specialist can sanity-check the CGT and the timing for you, free. Fancy a quick call?",
+    "Before you put a figure on a sale, one of our accountants can sanity-check the CGT and the timing for you, free. Fancy a quick call?",
   ],
   nhs: [
     "Working out what your UDA contract is really worth? I can pull up the tool that checks it.",
     "Not sure where your UDA value sits against the benchmark? I can run you through the quick comparison.",
-    "A specialist can talk through your NHS contract and the pension side, free first call, want me to set one up?",
+    "One of our accountants can talk through your NHS contract and the pension side, free first call, want me to set one up?",
   ],
   "uda-calc": [
     "Want to check your effective UDA value? I can pull up the calculator.",
@@ -164,7 +164,7 @@ export function exitOpener(profile?: JourneyProfile): string {
   const t = profile?.primaryTopic;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Before you go: a specialist can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
+    return `Before you go: one of our accountants can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
   }
   return "Before you go: a free call with a specialist is often the quickest way to get a straight answer. Fancy it?";
 }

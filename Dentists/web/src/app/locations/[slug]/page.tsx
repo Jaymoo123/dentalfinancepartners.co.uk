@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
     title: `Dental Accountant ${cityName} | Accountants for Dentists`,
-    description: `Specialist dental accountants in ${cityName} for associates, practice owners and groups. NHS contract accounting, tax planning, VAT and acquisitions. Free consultation.`,
+    description: `Specialist dental accountants in ${cityName} for associates, practice owners and groups. NHS contract accounting, tax planning, VAT and acquisitions. Free first call, then a fixed fee in writing.`,
     alternates: {
       canonical,
       languages: {
@@ -213,11 +213,11 @@ export default async function LocationPage({ params }: Props) {
               How to get started
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)] sm:text-lg">
-              Book a free consultation to discuss your accounting needs. We&apos;ll arrange a short introductory call to understand your practice structure, current challenges, and how we can help. No obligation, no hard sell.
+              Tell us how your practice is set up and what is on your mind. The first call is free, we reply within 24 hours and one of our accountants comes back to you directly. If we take the work on, you get a fixed fee in writing before anything starts.
             </p>
             <div className="mt-8">
               <Link href="/contact" className={`${btnPrimary} inline-flex`}>
-                Book your free consultation
+                Book your free first call
               </Link>
             </div>
           </div>

@@ -95,7 +95,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get a second opinion on your practice structure",
   ctaBody:
-    "30-minute scoping call with a dentist-only accountant on our team. They will look at extraction, structure, contract position and pre-exit work, and flag the immediate opportunities.",
+    "Book a free first call and we will go through how you take money out, how the practice is structured, where your NHS contract sits and how close you are to selling, then name the one or two things we would act on first. If we take the work on, you get a fixed fee in writing before anything starts.",
   relatedGuides: [
     {
       href: "/dental-guides/practice-profit-extraction-partnership-vs-ltd",

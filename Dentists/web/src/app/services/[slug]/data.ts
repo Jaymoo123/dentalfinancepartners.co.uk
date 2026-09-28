@@ -131,7 +131,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Talk to a dentist-only specialist",
     ctaBody:
-      "30-minute scoping call, no obligation. One of our accountants will review your current position, flag the immediate opportunities, and tell you honestly whether they are the right fit.",
+      "The first call is free and there is no obligation. Tell us how the practice is set up and one of our accountants will come back on what we would change first, and a fixed fee in writing if you want the work done.",
   },
 
   "practice-accounting": {
@@ -217,7 +217,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "See your practice in proper detail",
     ctaBody:
-      "Book a 30-minute call. One of our accountants will look at your last set of accounts and tell you what the structure is hiding.",
+      "Send us your last set of accounts and one of our accountants will tell you, on a free first call, what the current structure is costing you and what we would do about it.",
   },
 
   "associate-tax": {
@@ -308,7 +308,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your associate return right",
     ctaBody:
-      "30-minute scoping call. One of our accountants will look at your current self-assessment and tell you what you are missing.",
+      "Free first call. Show us last year's self-assessment and one of our accountants will tell you which expenses and reliefs you missed, and what your return should have looked like.",
   },
 
   "practice-valuation": {
@@ -407,7 +407,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get the valuation right before you list",
     ctaBody:
-      "A pre-sale review 18-24 months out is the difference between hitting your number and accepting the buyer's. Book a 30-minute scoping call.",
+      "A pre-sale review 18 to 24 months out is the difference between hitting your number and accepting the buyer's. The first call is free, so bring us your timescale and we will tell you what needs tidying before anyone sees the accounts.",
   },
 
   "locum-dentist-tax": {
@@ -499,7 +499,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your locum structure right",
     ctaBody:
-      "Book a 30-minute scoping call. One of our accountants will model your income against all three structures and tell you which one wins on real numbers.",
+      "Book a free first call. Give us your locum income and the mix of practices you cover, and one of our accountants will model all three structures and tell you which one actually wins.",
   },
 };
 

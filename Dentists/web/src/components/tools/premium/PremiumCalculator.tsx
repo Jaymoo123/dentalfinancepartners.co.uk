@@ -497,7 +497,10 @@ export function PremiumCalculator({
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Result gate: in-blog only, never for already-converted visitors.
-  const gated = placement === "blog" && !isConverted();
+  // Owner ruling 2026-09-27 (Property pattern): the in-blog result is never gated. The
+  // form sits under it, no interstitial. `isConverted` import kept below for
+  // the non-gated CTA branch's dependency, gated is permanently false.
+  const gated = false;
   const [revealed, setRevealed] = useState(false);
   const [gateOpen, setGateOpen] = useState(false);
   const showResult = !gated || revealed;

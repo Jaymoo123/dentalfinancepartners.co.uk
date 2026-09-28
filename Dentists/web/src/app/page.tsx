@@ -803,7 +803,7 @@ export default function HomePage() {
                   className={btnPrimary}
                   data-cta="home_book_primary" data-cta-placement="home_book" data-cta-goal="contact"
                 >
-                  Book your free consultation
+                  Book your free first call
                 </Link>
               </div>
               <p className="mt-10 text-sm font-medium text-[var(--ink)]">Rather not pick up the phone first?</p>

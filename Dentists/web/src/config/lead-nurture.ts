@@ -315,7 +315,7 @@ const STEPS: LeadNurtureStep[] = [
         [
           "One of our accountants will call you within 24 hours, Monday to Friday.",
           "Thanks for your enquiry. It has just come through to us and a dental finance specialist is ready to help.",
-          "The call is a free review of your situation, about 20 minutes, with no charge and no obligation.",
+          "The first call is free, about 20 minutes, and there is no obligation at the end of it.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
         "t0_email",
@@ -383,7 +383,7 @@ const STEPS: LeadNurtureStep[] = [
         "A short call usually surfaces something worth knowing about your situation.",
         [
           "A quick pointer while your enquiry is with us. Many dental professionals we speak to, whether associates or principals, are either paying more tax than they need to or missing a planning opportunity because the rules for dentists differ significantly from those for other self-employed people.",
-          "NHS pension tax charges, incorporation decisions for associates, and practice purchase structures all have quirks that a generalist accountant may not flag. That is exactly what your free review would cover.",
+          "NHS pension tax charges, incorporation decisions for associates, and practice purchase structures all have quirks that a generalist accountant may not flag. That is exactly what we would cover on your first call.",
           "Whenever suits, just reply with a day and time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -430,7 +430,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are ready, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free review is still open, and if the timing is not right just now, that is completely fine.",
+            "Just checking in, and there is genuinely no rush. Your first call is still open, and if the timing is not right just now, that is completely fine.",
             "If something is holding you back, or things have simply been busy, a one-line reply is all it takes. Tell us a day and time that works, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -613,7 +613,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a change in your NHS contract, a practice purchase, or an unexpected tax charge landing.`,
+            `If you would still like that first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a change in your NHS contract, a practice purchase, or an unexpected tax charge landing.`,
             "All the best with your work.",
           ],
           "detail_capture_day7",
