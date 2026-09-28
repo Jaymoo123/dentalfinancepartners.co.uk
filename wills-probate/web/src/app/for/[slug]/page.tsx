@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { tradeTypes, getTradeType } from "@/data/trade-types";
-import { buildFaqJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd, buildServiceJsonLd, buildBreadcrumbJsonLd } from "@/lib/schema";
 import { NextStepOffer } from "@/components/intent/NextStepOffer";
 import { siteConfig } from "@/config/site";
 
@@ -48,6 +48,26 @@ export default async function TradeTypePage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildServiceJsonLd({
+            name: type.headline,
+            description: type.metaDescription,
+            url: `${siteConfig.url}/for/${type.slug}`,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildBreadcrumbJsonLd([
+            { label: "Home", href: "/" },
+            { label: "Who we help", href: "/for" },
+            { label: type.title },
+          ]),
+        }}
+      />
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-neutral-900 py-16 sm:py-20">
         <div className={siteContainerLg}>

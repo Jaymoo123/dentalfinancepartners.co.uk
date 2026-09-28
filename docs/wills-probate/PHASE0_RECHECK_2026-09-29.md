@@ -115,3 +115,10 @@ Blocking item: the deleted /contact consent cap and fee disclosure and the delet
 - After: `lastModified` removed from static/for/tool/glossary/resource entries; `/blog` and category entries now derive `lastModified` from the newest `updatedDate || date` among their posts; post entries unchanged. URL list emitted is unchanged.
 - `npx tsc --noEmit -p wills-probate/web` — clean, no output.
 - `cd wills-probate/web && npx vitest run` — `Test Files 7 passed (7)`, `Tests 90 passed (90)`.
+
+Schema fix (audience pages emitted FAQPage only, missing Service + BreadcrumbList that divorce-finances already wires):
+- File: `wills-probate/web/src/app/for/[slug]/page.tsx`, lines 13 (import) and 49-68 (two new `<script>` tags before the Hero section). `wills-probate/web/src/lib/schema.ts` already exported `buildServiceJsonLd` and `buildBreadcrumbJsonLd` in the same shape as divorce-finances; no changes needed there. No `/services/[slug]` route exists on wills-probate, so nothing to change there.
+- Wired `buildServiceJsonLd({ name: type.headline, description: type.metaDescription, url: siteConfig.url + "/for/" + type.slug })` and `buildBreadcrumbJsonLd([Home, "Who we help" -> /for, type.title])`, matching divorce-finances's `/for/[slug]/page.tsx` pattern exactly; existing FAQPage script kept unchanged. Every string used (headline, metaDescription, title) already existed in `wills-probate/web/src/data/trade-types.ts`; nothing invented.
+- Scratch script emitting JSON-LD for `/for/executors` (real data from trade-types.ts) gave `@type` counts: `Service: 1, BreadcrumbList: 1, FAQPage: 1` — as expected.
+- `npx tsc --noEmit -p wills-probate/web` — clean, no output.
+- `cd wills-probate/web && npx vitest run` — `Test Files 7 passed (7)`, `Tests 90 passed (90)`.
