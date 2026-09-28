@@ -27,6 +27,8 @@ export type LlmsSection = {
   prefix: string;
   /** Section heading in the output, e.g. "BLOG POSTS". */
   title: string;
+  /** URL segment after prefix, built from frontmatter + slug. Defaults to slug. */
+  pathFor?: (data: Record<string, unknown>, slug: string) => string;
 };
 
 export type BuildLlmsFullRouteOptions = {
@@ -52,6 +54,7 @@ function readMarkdownDir(
   rel: string,
   siteUrl: string,
   prefix: string,
+  pathFor?: (data: Record<string, unknown>, slug: string) => string,
 ): string {
   const dir = path.join(contentRoot, rel);
   if (!fs.existsSync(dir)) return "";
@@ -65,7 +68,7 @@ function readMarkdownDir(
     const title = (data.title as string) || slug;
     const summary =
       (data.summary as string) || (data.metaDescription as string) || "";
-    const url = `${base}/${prefix}/${slug}`;
+    const url = `${base}/${prefix}/${pathFor ? pathFor(data, slug) : slug}`;
     parts.push(
       [
         "",
@@ -96,6 +99,7 @@ export function buildLlmsFullRoute(opts: BuildLlmsFullRouteOptions) {
         section.dir,
         opts.siteUrl,
         section.prefix,
+        section.pathFor,
       );
       if (content) {
         parts.push(`\n\n## ${section.title}\n\n`, content);

@@ -4,7 +4,7 @@
  * Verifies: markdown-utils pure functions · feed factory content-type +
  * structure · llms factory handler existence.
  */
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { addHeadingIds, extractHeadings } from "./markdown-utils";
 import { buildFeedRoute } from "./feed";
 import { buildLlmsFullRoute } from "./llmsFull";
@@ -154,5 +154,39 @@ describe("buildLlmsFullRoute", () => {
       sections: [{ dir: "blog", prefix: "blog", title: "BLOG POSTS" }],
     });
     expect(typeof GET).toBe("function");
+  });
+
+  it("uses pathFor to build the URL segment when provided", async () => {
+    const fs = await import("fs");
+    const os = await import("os");
+    const path = await import("path");
+    const tmpRoot = fs.mkdtempSync(path.join(os.tmpdir(), "llmsfull-"));
+    fs.mkdirSync(path.join(tmpRoot, "content", "blog"), { recursive: true });
+    fs.writeFileSync(
+      path.join(tmpRoot, "content", "blog", "post.md"),
+      "---\ncategory: Tax Tips\n---\nBody text.",
+    );
+    const cwdSpy = vi.spyOn(process, "cwd").mockReturnValue(tmpRoot);
+    try {
+      const GET = buildLlmsFullRoute({
+        siteUrl: "https://www.example.co.uk",
+        header: "# Example Site",
+        sections: [
+          {
+            dir: "blog",
+            prefix: "blog",
+            title: "BLOG POSTS",
+            pathFor: (data, slug) => `${data.category}/${slug}`,
+          },
+        ],
+      });
+      const text = await (await GET()).text();
+      expect(text).toContain(
+        "URL: https://www.example.co.uk/blog/Tax Tips/post",
+      );
+    } finally {
+      cwdSpy.mockRestore();
+      fs.rmSync(tmpRoot, { recursive: true, force: true });
+    }
   });
 });
