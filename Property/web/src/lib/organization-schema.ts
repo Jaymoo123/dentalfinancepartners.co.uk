@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import { audiences } from "@/data/audiences";
 import { buildOrganization } from "@accounting-network/web-shared/schema";
 
@@ -25,7 +26,9 @@ export function buildOrganizationJsonLd() {
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
     // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
-    description: siteConfig.description,
+    // What the entity IS, not the marketing meta: the referral-network wording
+    // from niche.config.json entity.firm.
+    description: niche.entity?.firm ?? siteConfig.description,
     tagline: siteConfig.tagline,
     // Preserve the hand-rolled "Organization" @type (shared builder defaults
     // to ProfessionalService when this is omitted).

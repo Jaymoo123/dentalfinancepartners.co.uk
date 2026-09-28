@@ -18,20 +18,20 @@ export const metadata: Metadata = {
   // Ours (c218d7a6): the brand-suffix dedupe drops `siteConfig.name` from the
   // title, because layout.tsx's title.template already appends it, and the
   // description is shortened to fit the SERP snippet.
-  title: `About Us | 100+ Landlords Served`,
+  title: `About Us | Property-Only Landlord Tax`,
   description:
-    "Property-only accounting firm serving UK landlords since 2020. 100+ buy-to-let investors trust us for Section 24, MTD and incorporation advice.",
+    "Property-only accounting firm serving UK landlords. Buy-to-let investors come to us for Section 24, MTD and incorporation advice.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: `About ${siteConfig.name}`,
-    description: "Specialist property accountants serving 100+ UK landlords. Property-only focus since 2020.",
+    description: "Specialist property accountants for UK landlords. Property-only focus, nothing else.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `About ${siteConfig.name}`,
-    description: "Specialist property accountants serving 100+ UK landlords. Property-only focus since 2020.",
+    description: "Specialist property accountants for UK landlords. Property-only focus, nothing else.",
   },
 };
 
@@ -46,7 +46,7 @@ const whyWeExist = [
   },
   {
     title: "We only work with property investors",
-    body: "100% of our clients are landlords or property developers. That focus means we understand the tax specifics, the cash flow realities, and the strategic decisions that property investors face. It also means the conversation is more efficient: you don't have to explain what Section 24 is.",
+    body: "We only work on landlord and property tax. Nothing else. That focus means we understand the tax specifics, the cash flow realities, and the strategic decisions that property investors face. It also means the conversation is more efficient: you don't have to explain what Section 24 is.",
   },
 ];
 
@@ -54,17 +54,17 @@ const howWeWork = [
   {
     icon: Building2,
     title: "Property-only expertise",
-    body: "We only work with landlords and property investors. Every client is a buy-to-let owner or developer. That focus gives us depth of experience that generalist accountants can't match.",
+    body: "We only work on landlord and property tax. Nothing else, no other sectors. That focus gives us depth of experience that generalist accountants can't match.",
   },
   {
     icon: BarChart3,
-    title: "Proactive advice, not just compliance",
+    title: "Proactive, not just compliance",
     body: "We don't wait for you to ask. If incorporation would save you money, we'll model it. If MTD is approaching, we'll prepare you early. If a property is underperforming, we'll flag it.",
   },
   {
     icon: MessageSquare,
     title: "Transparent and accessible",
-    body: "Fixed fees with no surprises. You speak to the same accountant every time. Plain English explanations, not accounting jargon. We're here when you need us.",
+    body: "Fixed fees with no surprises. You deal with one specialist firm throughout. Plain English explanations, not accounting jargon. We're here when you need us.",
   },
 ];
 
@@ -76,15 +76,15 @@ const howWeWork = [
 const whatMakesUsDifferent = [
   {
     title: "No generalists",
-    body: "We do not serve restaurants, retailers or consultants. 100% of our clients are landlords or property developers, so every conversation is with someone who understands property accounting deeply.",
+    body: "We do not serve restaurants, retailers or consultants. We only work on landlord and property tax, nothing else, so every conversation is with someone who understands property accounting deeply.",
   },
   {
     title: "Fixed fees, no surprises",
     body: "You know what you are paying upfront. No hourly billing, no surprise invoices. If your situation changes mid-year, we will tell you before any additional fees apply.",
   },
   {
-    title: "Same accountant every time",
-    body: "You are not passed around a team. You work with one qualified accountant who knows your portfolio, your goals and your tax position, and who is available when you need them.",
+    title: "One specialist firm, not a panel",
+    body: "Your enquiry is not spread across a list. It goes to one firm that works only on property tax, knows the portfolio position, and is available when you need them.",
   },
 ];
 
@@ -233,11 +233,11 @@ export default function AboutPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Get your property tax sorted"
-          description="Tell us what you own, how it is held and what is on your mind. We will come back within 24 hours with clear recommendations and a fixed fee in writing if you want us to act on them."
+          description="Tell us what you own, how it is held and what is on your mind. We will come back within 24 hours with where a specialist would look first, and a fixed fee in writing if you want the work done."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },
-            { title: "Same accountant every time", detail: "You are not passed around a team" },
+            { title: "One specialist firm, not a panel", detail: "It goes to a firm that works only on property tax" },
           ]}
           footnote="No obligation and no hard sell. If your position is already right, we will say so."
         />

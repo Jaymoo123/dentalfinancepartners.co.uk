@@ -133,7 +133,7 @@ const faqs = [
   {
     question: "Do I need a specialist property accountant?",
     answer:
-      "Not strictly, but the question is whether a generalist can give you useful advice on Section 24, MTD, and incorporation. A specialist helps you make better financial decisions around incorporation feasibility, MTD quarterly reporting, and portfolio-level profitability, and is far less likely to miss a relief or a deadline that costs you more than the fee.",
+      "Not strictly, but the question is whether a generalist can give you useful advice on Section 24, MTD, and incorporation. A specialist helps you make better financial decisions around incorporation feasibility, MTD quarterly reporting, and portfolio-level profitability, and is far less likely to miss a relief or a deadline.",
   },
 ];
 
@@ -145,36 +145,16 @@ export default function HomePage() {
   const packagesMode = isPackagesMode(niche);
   const faqSchema = buildFaqPageJsonLd(faqs);
 
-  // National property-accountant entity graph: a LocalBusiness/Service node,
-  // plus WebSite + WebPage + BreadcrumbList (competitor-standard, previously
-  // missing). All nodes reference the single #organization @id.
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "AccountingService",
-    "@id": `${siteConfig.url}#localbusiness`,
-    name: siteConfig.name,
-    legalName: siteConfig.legalName,
-    description: siteConfig.description,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    image: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    // No public telephone advertised: enquiries go via the on-site /contact form.
-    areaServed: { "@type": "Country", name: "United Kingdom" },
-    priceRange: "££",
-    parentOrganization: { "@id": `${siteConfig.url}#organization` },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "17:00",
-    },
-  };
-
+  // National property-accountant entity graph: a Service node, plus WebSite +
+  // WebPage + BreadcrumbList. All nodes reference the single #organization @id.
+  // The AccountingService/LocalBusiness node was removed: Property Tax Partners
+  // is a referral network, not an accountancy practice with opening hours or a
+  // price range of its own.
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `${siteConfig.url}#service`,
-    serviceType: "Property accountancy and landlord tax advice",
+    serviceType: "Property accountancy and landlord tax services",
     provider: { "@id": `${siteConfig.url}#organization` },
     areaServed: { "@type": "Country", name: "United Kingdom" },
     description:
@@ -227,7 +207,6 @@ export default function HomePage() {
       {faqSchema ? (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       ) : null}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
@@ -474,7 +453,7 @@ export default function HomePage() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 ring-1 ring-emerald-500/30"><Check aria-hidden className="h-6 w-6" strokeWidth={1.75} /></div>
                   <div>
                     <div className="font-bold text-white">24-hour response time</div>
-                    <div className="text-sm text-slate-300">Usually same day</div>
+                    <div className="text-sm text-slate-300">within 24 hours</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 text-slate-200">

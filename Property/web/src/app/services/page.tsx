@@ -100,7 +100,7 @@ const jsonLd = {
 const included = [
   {
     title: "24-hour response guarantee",
-    body: "Email or call us with a question. We respond within 24 hours, usually same day.",
+    body: "Email us with a question. We respond within 24 hours.",
   },
   {
     title: "Fixed fees, no surprises",
@@ -108,7 +108,7 @@ const included = [
   },
   {
     title: "Property-only specialists",
-    body: "100% of our clients are landlords. We understand Section 24, MTD, and incorporation because we see them every day.",
+    body: "We only work on landlord and property tax. Nothing else. Section 24, MTD and incorporation, every day.",
   },
   {
     title: "Proactive support",
@@ -340,7 +340,7 @@ export default function ServicesPage() {
             <Eyebrow>Our clients</Eyebrow>
             <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Who we work with</h2>
             <p className="mt-4 max-w-3xl text-lg text-slate-600 mb-10">
-              Every client is a landlord or property investor. The work changes shape as a portfolio
+              We only work on landlord and property tax, nothing else. The work changes shape as a portfolio
               grows, so here is what we handle at each stage.
             </p>
             <ScrollGlowGroup className="grid gap-6 md:grid-cols-3">
