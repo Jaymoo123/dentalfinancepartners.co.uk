@@ -602,14 +602,11 @@ export function PremiumCalculator({
             </div>
           </div>
 
-          {/* Result panel. ResultGate wraps it so the figure is held behind the
-              capture interstitial; the wrapper keeps result + CTA as ONE grid child. */}
+          {/* Result panel. ResultGate wraps it with one inline capture form
+              beneath the result (owner decision 2026-09-27, no gate). */}
           <ResultGate
             campaign={config.id}
-            tier="premium"
             enabled={placement === "blog"}
-            topicKey={topicKey}
-            heldGround="light"
           >
             <div className="space-y-4 border-t border-[var(--border)] bg-[var(--surface-elevated)] p-5 sm:p-7 lg:border-l lg:border-t-0">
               <HeadlineCard result={result} />

@@ -1809,3 +1809,57 @@ result row, value assertions unchanged.
 - **Call durations** ("about 20 minutes", "30-minute call") survive in the copy. Arguably also
   the partner firm's to set, on the same logic as the fee. Not swept; owner's call.
 - Nothing here is deployed. Production still serves the pre-port design and the pre-audit copy.
+  **CORRECTED 2026-09-28**: this line is stale. `docs/medical/PARITY_RESEARCH_2026-09-28.md`
+  measured the live site with real mobile emulation on 2026-09-28 and found the 09-16 design
+  port already serving (Plus Jakarta Sans, `--copper-deep` tokens, 14 distinct kit components).
+  The last recorded deploy id here (`dpl_HHomcnfjnDbC9bRB9A3878r7HdST`, 2026-07-06) predates
+  what is actually live; do not treat it as the current deployed commit.
+
+## 2026-09-28 phase 0 parity (estate parity programme, builder pass)
+
+Full brief: `docs/_engines/ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md`. Research this pass worked
+against: `docs/medical/PARITY_RESEARCH_2026-09-28.md`. Nothing in this section is deployed; the
+manager builds and deploys in a later serialised pass. `git diff --stat -- Medical/` and the new
+files listed in `docs/medical/PHASE0_2026-09-28.md` are the full change set.
+
+**Live versus HEAD**: the research's wave-2 reader (real mobile emulation, 2026-09-28) already
+found the 09-16 design port serving, the header CTA hide/show correct, and no mobile overflow
+anywhere. The one confirmed live behavioural gap it found — no capture form at all under a
+calculator result (`L3`, BLOCKER) — is fixed in this pass, not yet deployed.
+
+**What changed** (see `PHASE0_2026-09-28.md` for file:line evidence):
+- Calculator result form (L3 BLOCKER): `ResultGate.tsx` no longer holds the result behind
+  `ResultGateModal`; it renders the result immediately with one inline `calc_result_form`
+  capture underneath, ported from Property's 2026-09-27 pattern. Wired through
+  `CalculatorClient.tsx` (generic fleet) and `PremiumCalculator.tsx` (premium fleet, unchanged
+  wiring point). `ResultGateModal.tsx`, `HeldResult.tsx`, `resultGateStorage.ts` are now dead
+  code, left in place for the shared agent to confirm before deletion.
+- Firm-voice sweep (P2 + llms.txt): "A specialist reviews" replaced on `/for-nhs-doctors` and
+  `/for-medical-companies`; `llms.txt` no longer calls the site's model a "referral model" or
+  says an enquiry "goes to a partner firm"; `/free-practice-health-check` FAQ and hero corrected
+  to describe what the code actually does (leads there are enrolled in the standard nurture
+  sequence, not "no sales sequences" as the copy claimed).
+- Free-call/24-hour wording (section 2): `lead-nurture.ts` T0 email states "One of our
+  accountants will call you within 24 hours, Monday to Friday."; "a specialist will call you"
+  (defect string) replaced with "one of our accountants will call you" across T0 email, day-4
+  SMS, day-7 channel-shift SMS and the detail-ask email.
+- AdSense (section 6): `next.config.ts` security headers now pass `ads: true`; `layout.tsx`
+  carries the `google-adsense-account` metadata tag and `ConsentedScripts adsenseClientId`;
+  `public/ads.txt` copied from Solicitors.
+- StickyCTA (L7): was built but mounted nowhere public; now mounted on the homepage only,
+  matching Property's pattern exactly (`app/page.tsx`).
+- IndexNow (G10): `Medical/pipeline/submit_indexnow.py` added (shim, site key "medical"); the
+  estate config already carried a "medical" entry and key, `public/8ced...txt` already served.
+
+**Needs the shared agent**: confirm `HeldResult.tsx`/`ResultGateModal.tsx`/`resultGateStorage.ts`
+can be deleted estate-wide once every site's gate is removed; focus ring on form inputs
+(`packages/site-styles`) is the shared component's fix, not this site's.
+
+**Not done this pass** (scope/time): favicon.ico/apple-icon.png (D4, minor); segment-page closer
+Opus-quality pass; C1/C7 content-volume and metadata backfill (programme-scale, tracked
+separately); D8 row 8 self-check technicality.
+
+tsc: `npx tsc --noEmit -p Medical/web` clean, zero errors. vitest: `npx vitest run` from
+`Medical/web`, 538 of 539 tests, one isolated flake in `medical-tools.test.ts` unrelated to this
+pass (passes clean when run alone; timing issue in the full-suite run, not caused by any edit
+here).

@@ -75,7 +75,7 @@ const data: AudienceStage = {
     },
     {
       title: "Annual allowance position checked, not accepted",
-      body: "A specialist reviews the pension input amount on your statement, tests whether tapering bites, brings forward unused allowance and works out what is left. Where a charge stands, mandatory and voluntary Scheme Pays sit side by side with the election deadline and the extended limb for a statement revised on or after 2 May.",
+      body: "One of our accountants reviews the pension input amount on your statement, tests whether tapering bites, brings forward unused allowance and works out what is left. Where a charge stands, mandatory and voluntary Scheme Pays sit side by side with the election deadline and the extended limb for a statement revised on or after 2 May.",
     },
     {
       title: "Expense and subscription review, including earlier years",

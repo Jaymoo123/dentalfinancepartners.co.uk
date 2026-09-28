@@ -14,6 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { StickyCTA } from "@/components/ui/StickyCTA";
 import { MedicalBackdrop } from "@/components/layout/MedicalBackdrop";
 import { CalculatorTabs } from "@/components/tools/CalculatorTabs";
 import {
@@ -370,6 +371,7 @@ export default function HomePage() {
 
   return (
     <>
+      <StickyCTA />
       {/* Organization + WebSite ship site-wide from the root layout. */}
       {faqSchema && (
         <script

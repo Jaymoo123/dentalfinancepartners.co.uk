@@ -239,7 +239,6 @@ const BASELINE_CTA_IDS = [
   "next_step",
   "returning_bar",
   "returning_bar_close",
-  "see_result",
   "specialist_widget",
   "sticky_cta",
   "thankyou-return-article",
@@ -247,14 +246,14 @@ const BASELINE_CTA_IDS = [
 
 describe("G8 the data-cta id set is stable", () => {
   /* Scrape the id out of a LITERAL attribute, a ternary, a variable default or a
-     prop, and never out of a comment. The first version of this guard matched
-     `/data-cta="([^"]*)"/` over raw source, which found `see_result` only inside
-     an explanatory comment in ResultGate.tsx and could not see the live emission,
-     which is a ternary (`tier === "premium" ? "see_result" : "calc_see_result"`).
-     Deleting that live branch left this guard green, which made it useless for
-     exactly the id it matters most for: `see_result` is the busiest interaction
-     on the site and FUNNEL_BASELINE says not to remove it without a measurement
-     plan. Proved by mutation after the fix: deleting the branch now fails. */
+     prop, and never out of a comment.
+     BASELINE RESTATED 2026-09-28 (estate parity phase 0): `see_result` is
+     removed from this list. Owner decision 2026-09-27 (ported from Property)
+     killed the result-hold interstitial estate-wide, so the reveal button that
+     emitted `see_result`/`calc_see_result` no longer exists; ResultGate now
+     renders the result immediately with one inline capture form beneath, id
+     `calc_result_form`. This is a deliberate removal, not the regression this
+     guard was written to catch. */
   const stripComments = (src: string) =>
     src.replace(/\/\*[\s\S]*?\*\//g, "").replace(/(^|[^:])\/\/.*$/gm, "$1");
   const found = new Set(
