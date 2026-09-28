@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { CTASection } from "@/components/ui/CTASection";
 import { LeadForm } from "@/components/forms/LeadForm";
 import {
@@ -96,17 +97,22 @@ export default function AboutPage() {
           />
         </div>
 
-        <div className="mt-12 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-10">
-          <h2 className="text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-            Send us your details
-          </h2>
-          <p className="mt-3 text-base leading-relaxed text-[var(--ink-soft)]">
-            We reply within 24 hours and one of our accountants comes back to you directly.
-          </p>
-          <div className="mt-6">
-            <LeadForm redirectOnSuccess submitLabel="Send enquiry" />
-          </div>
-        </div>
+      </div>
+
+      {/* Standard site lead panel, same mount as /blog: no custom copy, shared defaults render. */}
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          contained
+          ground="white"
+          title="Get a dental specialist on your numbers"
+          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will put you in front of a specialist dental accountant from our partner network. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
+          proofPoints={[
+            { title: "Dental practices only", detail: "NHS pensions, UDAs and practice sales every day" },
+            { title: "One accountant throughout", detail: "You speak to the person doing the work" },
+            { title: "Answers in writing", detail: "The advice you get, and the reasoning behind it" },
+          ]}
+          form={<LeadForm redirectOnSuccess={false} submitLabel="Request a call back" />}
+        />
       </div>
     </>
   );

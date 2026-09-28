@@ -107,3 +107,16 @@ None. Focus rings present; `delayHours` = `0,0,4,20,24,48,72,96`; `/book` render
 ## Estate summariser note (2026-09-29)
 Final status: SAFE AFTER FIXES.
 Blocking item: the hand-rolled /about panel prose (estate finding M4) swapped for the shared panel with no custom copy.
+
+## Fix round (2026-09-29)
+
+**M4** `Dentists/web/src/app/about/page.tsx:141-153` (hand-rolled block added 2026-09-28).
+Before: heading "Send us your details" + agent prose "We reply within 24 hours and one
+of our accountants comes back to you directly." above a bare `LeadForm`.
+After: replaced with the site's standard `LeadCTAPanel` mount, copied verbatim from
+`Dentists/web/src/app/blog/page.tsx` (title/description/proofPoints/form text reused,
+no new prose written). Confirmed via `git show 8e1043d0:...about/page.tsx` that base
+had no panel at all in this slot.
+
+tsc: `npx tsc --noEmit -p Dentists/web` — pass, 0 errors.
+vitest: `npx vitest run` (Dentists/web) — 23 files, 495 tests passed.
