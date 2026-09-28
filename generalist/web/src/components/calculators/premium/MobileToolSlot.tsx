@@ -21,7 +21,7 @@ export function MobileToolSlot({ topic, label }: { topic: TopicKey; label: strin
       formId="mobile_tool"
       messagePrefix={`[Mobile tool: ${topic}]`}
       heading={t?.ctaCopy ?? `Get your ${label} figure`}
-      blurb="Our interactive tool is designed for a larger screen. Leave your details and one of our accountants will send your figure and the next sensible step, with no obligation."
+      blurb="Our interactive tool is designed for a larger screen. Leave your details and a specialist will send your figure and the next sensible step, with no obligation."
       submitLabel="Send me my figure"
       className="rounded-xl border border-slate-200 bg-slate-50 p-5 sm:p-6 ring-1 ring-slate-200/70"
     />

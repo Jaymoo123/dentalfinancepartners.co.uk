@@ -353,7 +353,7 @@ export default function UkSmallBusinessBarometerPage() {
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free consultation"
           title="Running a small business in a tightening market?"
           description="Rising insolvencies and narrowing formation growth mean cash flow, tax planning and structure decisions matter more, not less. Holloway Davies works with UK limited companies, contractors, sole traders and partnerships on exactly these questions."
           proofPoints={LEAD_PROOF_POINTS}

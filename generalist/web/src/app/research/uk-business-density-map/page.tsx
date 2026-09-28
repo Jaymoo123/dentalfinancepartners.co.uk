@@ -271,7 +271,7 @@ export default function UkBusinessDensityMapPage() {
 
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free consultation"
           title="Wherever you are based, we work nationally"
           description="Holloway Davies serves UK limited companies, contractors, sole traders and partnerships across every region, cloud-first, with no need for a local office."
           proofPoints={LEAD_PROOF_POINTS}

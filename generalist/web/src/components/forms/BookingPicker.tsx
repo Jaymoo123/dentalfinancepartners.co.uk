@@ -153,7 +153,7 @@ export default function BookingPicker({ token }: { token: string }) {
           disabled={!date || !windowKey || status === "submitting"}
           className={`${btnPrimary} w-full sm:w-auto`}
         >
-          {status === "submitting" ? "Booking your callback..." : "Book my free first call"}
+          {status === "submitting" ? "Booking your callback..." : "Book my free review call"}
         </button>
         {status === "error" && (
           <p className="mt-3 text-sm font-semibold text-red-700">
@@ -161,7 +161,7 @@ export default function BookingPicker({ token }: { token: string }) {
           </p>
         )}
         <p className="mt-3 text-xs text-neutral-500">
-          No obligation. One of our accountants will call you in your chosen window.
+          No obligation. A specialist will call you in your chosen window.
         </p>
       </div>
     </div>

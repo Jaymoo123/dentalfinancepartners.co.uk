@@ -207,7 +207,7 @@ export default function DetailsForm({
       )}
 
       <p className="mt-3 text-xs text-neutral-500">
-        We only use this to arrange your free first call. See our{" "}
+        We only use this to arrange your free review. See our{" "}
         <a
           href="/privacy-policy"
           target="_blank"
