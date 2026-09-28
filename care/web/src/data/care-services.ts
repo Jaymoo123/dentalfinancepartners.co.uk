@@ -4,18 +4,11 @@ export interface CareService {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
-  /** Service-specific closing ask; see the note on CareHub.closer. */
-  closer?: { title: string; description: string };
 }
 
 export const careServices: CareService[] = [
   {
     slug: "cqc-financial-viability-statement",
-    closer: {
-      title: "Get a viability statement CQC will accept first time",
-      description:
-        "We build the forecast, the funding evidence and the narrative CQC actually asks for, in the format the assessor expects. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "CQC Financial Viability Statement",
     headline: "CQC financial viability statement, prepared and signed",
     metaTitle: "CQC Financial Viability Statement for Care Providers",
@@ -96,11 +89,6 @@ export const careServices: CareService[] = [
   },
   {
     slug: "care-payroll",
-    closer: {
-      title: "Hand over a payroll that copes with rotas, sleep-ins and agency cover",
-      description:
-        "Care payroll fails on the exceptions rather than the basics: overnight cover, travel time, holiday pay on variable hours and the week agency fills half the rota. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Care Payroll",
     headline: "Payroll built for care rotas, not generic bureaus",
     metaTitle: "Care Home and Care Agency Payroll UK",
@@ -181,11 +169,6 @@ export const careServices: CareService[] = [
   },
   {
     slug: "care-vat-review",
-    closer: {
-      title: "Find out what your exempt status is really costing you",
-      description:
-        "Exempt welfare supplies mean unrecoverable input VAT on equipment, building work and professional fees, and a partial exemption position most providers have never tested. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Care VAT Review",
     headline: "Care VAT health-check: what you cannot recover and where you can",
     metaTitle: "VAT Review for Care Homes and Care Agencies UK",
@@ -266,11 +249,6 @@ export const careServices: CareService[] = [
   },
   {
     slug: "buying-a-care-home",
-    closer: {
-      title: "Know what the home is worth before you commit to the price",
-      description:
-        "Occupancy history, the fee mix behind the turnover, staffing percentage and what the building qualifies for in allowances. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Buying a Care Home",
     headline: "The financial due diligence and tax you need when buying a care home",
     metaTitle: "Buying a Care Home: Financial Due Diligence and Tax",
@@ -351,11 +329,6 @@ export const careServices: CareService[] = [
   },
   {
     slug: "selling-a-care-home",
-    closer: {
-      title: "Plan the sale so the tax on the exit is not a surprise",
-      description:
-        "Share sale or asset sale, whether business asset disposal relief is available to you, and what the buyer's due diligence will find first. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Selling a Care Home",
     headline: "Selling a care home: keeping more of the proceeds",
     metaTitle: "Selling a Care Home: CGT, BADR and Tax Planning",
@@ -436,11 +409,6 @@ export const careServices: CareService[] = [
   },
   {
     slug: "start-a-domiciliary-care-agency",
-    closer: {
-      title: "Open the agency with the registration and the payroll already sorted",
-      description:
-        "CQC registration, the financial evidence behind it, and a rota-to-payroll process that pays travel time correctly from the first week. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Start a Domiciliary Care Agency",
     headline: "Starting a domiciliary care agency: the financial setup done right",
     metaTitle: "Start a Domiciliary Care Agency: Accounts and Finance",

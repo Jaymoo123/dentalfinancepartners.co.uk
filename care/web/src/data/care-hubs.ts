@@ -4,19 +4,11 @@ export interface CareHub {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
-  /** Audience-specific closing ask. The 2026-09-28 parity read found one shared
-   * closer with the hub title pasted into English on all seven pages. */
-  closer?: { title: string; description: string };
 }
 
 export const careHubs: CareHub[] = [
   {
     slug: "care-homes",
-    closer: {
-      title: "Get the fee mix and the building's tax treatment working for you",
-      description:
-        "Self-funder, local authority, FNC and CHC income accounted separately, and the capital allowances on the building claimed properly. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Care Homes",
     headline: "Accountancy and financial compliance for UK care home operators",
     metaTitle: "Accountants for Care Homes UK | Fee Mix & VAT",
@@ -88,11 +80,6 @@ export const careHubs: CareHub[] = [
   },
   {
     slug: "domiciliary-care",
-    closer: {
-      title: "Get travel time, sleep-ins and rota pay right before an inspection does it for you",
-      description:
-        "Minimum wage on travel between visits and on overnight cover is where domiciliary providers get caught, and the fix is in the rota data rather than the payroll run. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Domiciliary Care",
     headline: "Accountancy for UK domiciliary care agencies: the real cost of a care hour",
     metaTitle: "Accountants for Domiciliary Care Agencies UK",
@@ -164,11 +151,6 @@ export const careHubs: CareHub[] = [
   },
   {
     slug: "supported-living",
-    closer: {
-      title: "Separate the housing income from the care income, properly",
-      description:
-        "Rent, service charge and care fees are three different supplies with three different VAT and reporting answers, and mixing them makes a void look like a loss. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Supported Living",
     headline: "Accountancy for supported living providers: the rent and care split",
     metaTitle: "Accountants for Supported Living Providers UK",
@@ -236,11 +218,6 @@ export const careHubs: CareHub[] = [
   },
   {
     slug: "childrens-homes",
-    closer: {
-      title: "Keep Ofsted registration, staffing ratios and the numbers in one picture",
-      description:
-        "High fixed staffing against a small number of placements means one empty bed moves the whole year, so the forecast has to be built on occupancy rather than on turnover. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Children's Homes",
     headline: "Accountancy for UK children's homes: staffing costs, tax and the business finances",
     metaTitle: "Accountants for Children's Homes UK | Tax & Payroll",
@@ -308,11 +285,6 @@ export const careHubs: CareHub[] = [
   },
   {
     slug: "care-startups",
-    closer: {
-      title: "Get registered, funded and paying people correctly from month one",
-      description:
-        "Entity choice, the CQC financial viability evidence and the first payroll all have to be decided before you take a placement, not afterwards. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Care Startups",
     headline: "Accountants for new care businesses: the financial leg of CQC registration",
     metaTitle: "Accountants for Care Startups | CQC Financial Viability",
@@ -385,11 +357,6 @@ export const careHubs: CareHub[] = [
   // Wave 1 segment pages, source docs/care/_wave1/ (self-employed-carers-and-personal-assistants.json, care-franchisees.json), 2026-09-27, spec LEADS_250_PROGRAMME_2026-09-27.md S4a
   {
     slug: "self-employed-carers-and-personal-assistants",
-    closer: {
-      title: "Sort your own tax without paying for things you do not need",
-      description:
-        "Self-employed or through a company, what you can actually claim for mileage and uniform, and whether you are anywhere near the VAT threshold. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Self-Employed Carers and Personal Assistants",
     headline: "Accountants for self-employed carers, personal assistants and support workers",
     metaTitle: "Accountants for Self-Employed Carers and Care PAs",
@@ -409,7 +376,7 @@ export const careHubs: CareHub[] = [
       { title: "A company costs something every year, so the numbers have to justify it", body: "Incorporating brings accounts, a corporation tax return, a confirmation statement, payroll if you take a salary, and a public record of your filings. Profits to £50,000 are taxed at 19%, dividends above the £500 allowance at 10.75% for a basic rate taxpayer from 6 April 2026. Below a certain profit, filing costs eat the saving. Staying a sole trader has its own timetable: the <a href=\"/blog/care-home-accounts-and-funding/mtd-it-care-owner-operators\">Making Tax Digital guide</a> has it." },
     ],
     howWeHelp: [
-      { title: "A structure comparison built on your own figures", body: "We review last year's income and expenses, or your forecast if you have just started, and model sole trader against limited company on 2026/27 rates: corporation tax at 19% to £50,000, an efficient salary, dividends at 10.75% or 35.75%. The output is the profit at which incorporating pays." },
+      { title: "A structure comparison built on your own figures", body: "A specialist reviews last year's income and expenses, or your forecast if you have just started, and models sole trader against limited company on 2026/27 rates: corporation tax at 19% to £50,000, an efficient salary, dividends at 10.75% or 35.75%. The output is the profit at which incorporating pays." },
       { title: "A VAT position stated in writing", body: "Which of your income is taxable, and which, if any, is genuinely exempt, is worked out first, then the rolling 12-month total is tracked against the £90,000 threshold so registration never arrives by surprise. Private clients, direct-payment families and agency shifts are each tested separately." },
       { title: "Registration with HMRC and the records that follow", body: "Registering as self-employed, obtaining a Unique Taxpayer Reference, setting up an expense record that captures mileage as it happens, and preparing the Self Assessment return from it. Where the Making Tax Digital thresholds catch you, compatible software is set up and the quarterly updates are prepared." },
       { title: "Company filings, and the step up to an agency", body: "If you incorporate: the right SIC code, payroll, annual accounts, the corporation tax return and dividend paperwork that stands up later. Take on a second worker and you are closer to a domiciliary service, with registration, travel-time minimum wage and holiday pay in scope: see <a href=\"/for/domiciliary-care\">domiciliary care</a> and <a href=\"/services/start-a-domiciliary-care-agency\">start a domiciliary care agency</a>." },
@@ -425,11 +392,6 @@ export const careHubs: CareHub[] = [
   },
 {
     slug: "care-franchisees",
-    closer: {
-      title: "Make the franchise numbers work after the fees come out",
-      description:
-        "Management service fees, the marketing levy and the territory's own cost base change what the business really earns, so the benchmark has to be your P&amp;L rather than the brochure's. We reply within 24 hours and one of our accountants comes back to you directly.",
-    },
     title: "Care Franchisees",
     headline: "Accountants for UK home care franchisees: the fee, the structure and the first year",
     metaTitle: "Accountants for Care Franchisees UK | Home Care",

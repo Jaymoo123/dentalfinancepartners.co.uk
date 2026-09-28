@@ -347,10 +347,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Reply with a time that suits and one of our accountants will call you.",
+        "Reply with a time that suits and a specialist will call you.",
         [
-          "Thanks for getting in touch. One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The first call is free, about 20 minutes on where your service stands, and if you want us to act you get a fixed fee in writing before anything starts.",
+          "Thanks for getting in touch. Your enquiry has just reached us and a care sector accounts specialist is ready to pick it up.",
+          "The call is a free review of where your service stands, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange it around you. If mornings go on handover, or one day of the week is quieter than the rest, tell us and we will work to that.",
         ],
         "t0_email",
@@ -418,7 +418,7 @@ const STEPS: LeadNurtureStep[] = [
         "A short call usually surfaces something worth knowing about your service.",
         [
           "A quick pointer while your enquiry is with us. Most operators we speak to already know staffing is the pressure point. What tends to surprise them is how much of the answer sits in the way hours are recorded rather than in the rates themselves.",
-          "Sleep-in shifts, travel time between visits, and how agency cover gets booked all change the picture, and they are areas that get looked at closely when your records are reviewed. That is the sort of ground your first call covers.",
+          "Sleep-in shifts, travel time between visits, and how agency cover gets booked all change the picture, and they are areas that get looked at closely when your records are reviewed. That is the sort of ground your free review covers.",
           "Whenever suits, just reply with a day and time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -435,7 +435,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Care Home Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Care Home Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Care Home Tax here. Most operators we speak to came to us with the same question you raised, and one short call usually clears up months of wondering. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -454,7 +454,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free first call is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -465,7 +465,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are ready, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free first call is still open, and if this has been a busy stretch, that is completely understandable.",
+            "Just checking in, and there is genuinely no rush. Your free review is still open, and if this has been a busy stretch, that is completely understandable.",
             "If something is holding you back, or the week simply ran away with you, a one-line reply is all it takes. Give us a day and a time that works, even if that is a fortnight out, and we will take it from there.",
           ],
           "day7_email",
@@ -568,10 +568,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and one of our accountants will call you.`,
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and one of our accountants will call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and a care sector accounts specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",
@@ -648,7 +648,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a fee rate being renegotiated, an inspection coming round, or a payroll run that will not reconcile.`,
+            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a fee rate being renegotiated, an inspection coming round, or a payroll run that will not reconcile.`,
             "All the best with the service.",
           ],
           "detail_capture_day7",
