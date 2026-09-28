@@ -385,3 +385,14 @@ readers, four sites each, reading rendered pages. Synthesis: this agent. Twenty-
 - Whether the lead-table constraint in production accepts every site's source string was not read
   from the database; three site reports left it as an open question, and if it rejects one, that
   site's forms are failing silently.
+
+---
+
+## 10. Decisions taken (2026-09-28 evening)
+
+The owner answered all eight; the answers and the resulting build order are recorded in
+`ESTATE_PARITY_PLAN_2026-09-28.md` section 1. In short: sweep first then one deploy of all 17;
+every site converts to Property's model except the two law-referral sites, which restate the money
+side with the legal introduction as a named step; all sites get the segment-page chain, staged;
+design ports by damage; free-call and 24-hour wording the same as Property with the email built;
+content waves funded on the four sites with nothing since July; the two silent sites fixed.
