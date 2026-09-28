@@ -42,10 +42,10 @@ BANNED_CLAIMS = [
     "acca",
     "ciot",
     "att ",
-    "our accountants",
-    "we are accountants",
-    "our team of",
-    "our qualified",
+    # "our accountants", "we are accountants", "our team of" and "our qualified"
+    # were banned under the 2026-09-12 referral-network ruling. Owner reversed it
+    # on 2026-09-28: the brand IS the firm, firm voice is required. Credentials
+    # nobody holds (chartered, ICAEW, ACCA, CIOT, ATT) and awards stay banned.
     "award-winning",
     "award winning",
 ]
