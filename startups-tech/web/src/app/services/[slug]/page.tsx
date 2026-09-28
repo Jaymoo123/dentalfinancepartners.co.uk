@@ -93,7 +93,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     )}
     <LeadCTAPanel
       title="Speak to a startup tax specialist"
-      description={`Tell us where you are with ${service.title.toLowerCase()} and we will reply within 24 hours.`}
+      description={service.closer}
       proofPoints={[]}
       form={<LeadForm submitLabel="Send enquiry" />}
     />

@@ -4,6 +4,7 @@ export interface StartupsService {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
+  closer: string;
 }
 
 export const startupsServices: StartupsService[] = [
@@ -69,6 +70,7 @@ export const startupsServices: StartupsService[] = [
         answer: "Yes. The <a href=\"https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief\">Additional Information Form is mandatory</a> for all R&D claims regardless of size. It must be submitted before or at the same time as the CT600 R&D claim. Claims filed without a valid AIF are removed by HMRC. The form requires a project-level technical narrative and a qualifying-cost breakdown, which means it requires genuine preparation rather than a brief description.",
       },
     ],
+    closer: "Tell us what your engineers actually built this year and where the technical uncertainty was. We will say honestly whether it qualifies before we prepare anything, and notify HMRC in time if this is your first claim.",
   },
   {
     slug: "seis-eis-advance-assurance",
@@ -136,6 +138,7 @@ export const startupsServices: StartupsService[] = [
         answer: "If the company breaches a qualifying condition within the three-year qualifying period after the EIS shares are issued, investors may lose part or all of their income tax relief and the CGT disposal exemption. The company must notify HMRC of any disqualifying event. We monitor the qualifying conditions during the holding period and flag risks as they arise so that the company has time to take advice before a breach occurs.",
       },
     ],
+    closer: "Tell us who is investing, how much, and what the company has done so far. We will test the company against the conditions and get the advance assurance application in before you take the money.",
   },
   {
     slug: "emi-scheme-setup",
@@ -203,6 +206,7 @@ export const startupsServices: StartupsService[] = [
         answer: "Yes. If your company has a registered EMI scheme, an <a href=\"https://www.gov.uk/guidance/submit-your-employment-related-securities-ers-return\">annual ERS return must be filed online by 6 July</a> following the end of the tax year, even if no grants, exercises, lapses, or other events occurred. A nil return is still required. Failure to file on time results in automatic penalties.",
       },
     ],
+    closer: "Send us who you want to give options to and on what terms. We will confirm the company and each employee qualify, agree the valuation with HMRC, and register the scheme inside the 92-day window.",
   },
   {
     slug: "share-schemes",
@@ -266,6 +270,7 @@ export const startupsServices: StartupsService[] = [
         answer: "Whenever founders or employees acquire shares that are restricted securities, which in practice means most startup shares (pre-emption rights, drag-along, vesting). A <a href=\"https://www.gov.uk/hmrc-internal-manuals/employment-related-securities/ersm30450\">section 431 joint election</a> must be made within 14 days of acquisition. Without it, income tax can arise later if restrictions are lifted or shares are forfeited and reissued at different values. With the election, tax is charged on the full unrestricted market value at grant but no further income tax arises on subsequent value changes.",
       },
     ],
+    closer: "Tell us what you are trying to reward and who you are rewarding. We will set out which scheme fits, growth shares, unapproved options or EMI, and what each one costs the company and the recipient.",
   },
   {
     slug: "fractional-cfo",
@@ -329,6 +334,7 @@ export const startupsServices: StartupsService[] = [
         answer: "Yes. We run the <a href=\"/services/rd-tax-claims\">R&D claim</a>, set up and maintain the <a href=\"/services/emi-scheme-setup\">EMI scheme</a>, handle <a href=\"/services/seis-eis-advance-assurance\">SEIS and EIS advance assurance</a>, and manage the <a href=\"/services/core-compliance\">core compliance stack</a> in one engagement. The advantage of covering all of this together is that the <a href=\"https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-large-companies\">R&D credit</a> timing lands correctly in the model, the <a href=\"https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis\">EMI pool and headroom</a> are tracked alongside headcount, and nothing falls through the gap between advisers.",
       },
     ],
+    closer: "Tell us which decision you are trying to make and what your numbers look like today. We will set out the reporting you need to make it, and how deep in the detail we would have to be.",
   },
   {
     slug: "core-compliance",
@@ -392,6 +398,7 @@ export const startupsServices: StartupsService[] = [
         answer: "Yes, if they were incurred within seven years before the trade started and would have been allowable had the trade already begun. <a href=\"https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim46351\">HMRC's guidance</a> treats pre-trading expenditure as incurred on the first day of trading in those circumstances. This covers costs that many pre-incorporation or pre-revenue founders assume are lost: development costs, software subscriptions, professional fees, and similar expenditure within the seven-year window.",
       },
     ],
+    closer: "Send us your year end, your payroll position and whatever your last accountant left behind. We will come back with one fixed fee in writing covering the accounts, the corporation tax return and the filings that follow.",
   },
 ];
 

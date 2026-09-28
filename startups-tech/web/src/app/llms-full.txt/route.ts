@@ -104,7 +104,7 @@ Sitemap: https://${niche.domain}/sitemap.xml
 ## Contact
 
 - Contact form: https://${niche.domain}/contact (preferred channel)
-- Free, no-obligation consultation for UK founders and startup teams
+- Free first call, then a fixed fee in writing. We reply within 24 hours and one of our accountants comes back to you directly.
 
 Below is a flat, machine-readable dump of every published blog post.
 
