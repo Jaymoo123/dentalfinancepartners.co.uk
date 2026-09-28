@@ -120,7 +120,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant who works with salaried GPs",
   ctaBody:
-    "A call with a regulated firm from our specialist partner network, covering your self assessment registration, whether your locum sessions are inside the 10-week pension window, and your Type 2 form and annual allowance position. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
+    "Put your self assessment registration, whether your locum sessions are inside the 10-week pension window, and your Type 2 form and annual allowance position to a regulated firm from our specialist partner network. Fees and scope are settled with that firm, and asking commits you to nothing.",
   relatedGuides: [
     {
       href: "/blog/locum-doctor-self-assessment-filing-guide",

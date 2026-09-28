@@ -285,10 +285,10 @@
           "cta_button": "Request a callback"
         },
         "home_cta": {
-          "heading": "Speak with GP accountants who specialize in the medical profession",
-          "body": "GP partners, salaried GPs, hospital consultants, or locum doctors—our GP accountants handle NHS pension planning, mixed income tax optimization, and practice financial structures. Initial consultation with a medical accountant is free and obligation-free.",
+          "heading": "Speak to an accountant who works with doctors",
+          "body": "GP partners, salaried GPs, hospital consultants and locum doctors: tell us your position and we introduce you to a firm from our specialist partner network that handles medical work. Enquiring commits you to nothing.",
           "primary": {
-            "label": "Book your free consultation",
+            "label": "Send your enquiry",
             "href": "/contact"
           }
         }

@@ -114,7 +114,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant about running your company",
   ctaBody:
-    "A call with a regulated firm from our specialist partner network, covering your salary and dividend mix, the IR35 status of your engagements, and the director's loan account or corporation tax deadlines. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
+    "One conversation with a regulated firm from our specialist partner network about your salary and dividend mix, the IR35 status of your engagements, and the director's loan account or corporation tax deadlines. That firm sets its own scope and fees with you, and sending an enquiry ties you to nothing.",
   relatedCalculators: [
     {
       href: "/calculators/private-practice-incorporation",

@@ -15,6 +15,9 @@ import { topicForBlogSlug, topicForCalcSlug, type TopicKey } from "./taxonomy";
  *   /for-consultants                -> gp-tax
  *   /for-locum-doctors              -> locum
  *   /for-junior-doctors             -> gp-tax
+ *   /for-gp-partners, /for-salaried-gps      -> gp-practice
+ *   /for-nhs-doctors, /for-retiring-doctors  -> nhs-pension
+ *   /for-medical-companies                   -> gp-tax
  *   /nhs-pension                    -> nhs-pension
  *   /blog/<hub-slug>  (static hubs) -> topic via BLOG_HUB_SLUG_TO_TOPIC
  *   /blog/<slug>      (flat posts)  -> null (topic comes as a prop)
@@ -63,6 +66,15 @@ export function deriveTopic(pathname: string): TopicKey | null {
     case "/for-locum-doctors":
       return "locum";
     case "/for-junior-doctors":
+      return "gp-tax";
+    // Wave 1 segment pages, mapped onto the same 5 topics as the four above.
+    case "/for-gp-partners":
+    case "/for-salaried-gps":
+      return "gp-practice";
+    case "/for-nhs-doctors":
+    case "/for-retiring-doctors":
+      return "nhs-pension";
+    case "/for-medical-companies":
       return "gp-tax";
   }
 

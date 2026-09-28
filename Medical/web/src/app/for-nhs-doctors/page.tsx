@@ -110,7 +110,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Talk to an accountant about your NHS income",
   ctaBody:
-    "A call with a regulated firm from our specialist partner network, covering how your NHS pay, pension input, private or locum profit and any company sit together, and whether an annual allowance charge is coming. Scope and fees are agreed with that firm, and enquiring commits you to nothing.",
+    "Speak to a regulated firm from our specialist partner network about how your NHS pay, pension input, private or locum profit and any company sit together, and whether an annual allowance charge is coming. The scope and the fees come from that firm, and nothing here obliges you to go ahead.",
   relatedCalculators: [
     {
       href: "/calculators/nhs-pension-scheme-pays",

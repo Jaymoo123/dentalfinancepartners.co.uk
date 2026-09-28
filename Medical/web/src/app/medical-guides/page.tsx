@@ -77,6 +77,11 @@ const AUDIENCE_LINKS = [
   { href: "/for-consultants", label: "Hospital Consultants", desc: "NHS salary, private practice, medico-legal income" },
   { href: "/for-locum-doctors", label: "Locum Doctors", desc: "IR35 status, locum tax returns, Ltd vs umbrella" },
   { href: "/for-junior-doctors", label: "Junior Doctors", desc: "Locum shifts, student loans, training expenses" },
+  { href: "/for-gp-partners", label: "GP Partners", desc: "Profit share and drawings, Type 1 certificate, buy-in and exit" },
+  { href: "/for-salaried-gps", label: "Salaried GPs", desc: "Locum sessions alongside a salaried post, Type 2 form, 10-week pension window" },
+  { href: "/for-nhs-doctors", label: "NHS Doctors", desc: "NHS pay, pension input, private or locum income in one return" },
+  { href: "/for-retiring-doctors", label: "Retiring Doctors", desc: "Partial retirement, retire and return, annual allowance and Scheme Pays" },
+  { href: "/for-medical-companies", label: "Medical Limited Companies", desc: "Salary against dividends, IR35, director's loan account, closing down" },
 ];
 
 /** Closing-panel proof points. Mechanisms only: no fee, no turnaround, no

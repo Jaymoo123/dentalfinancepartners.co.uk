@@ -293,6 +293,14 @@ describe("deriveTopic -- /for-* routes", () => {
   it("/for-junior-doctors -> 'gp-tax'", () => {
     expect(deriveTopic("/for-junior-doctors")).toBe("gp-tax");
   });
+
+  it("the five Wave 1 segment pages carry a topic", () => {
+    expect(deriveTopic("/for-gp-partners")).toBe("gp-practice");
+    expect(deriveTopic("/for-salaried-gps")).toBe("gp-practice");
+    expect(deriveTopic("/for-nhs-doctors")).toBe("nhs-pension");
+    expect(deriveTopic("/for-retiring-doctors")).toBe("nhs-pension");
+    expect(deriveTopic("/for-medical-companies")).toBe("gp-tax");
+  });
 });
 
 describe("deriveTopic -- /nhs-pension pillar", () => {
