@@ -43,7 +43,10 @@ export default function ServicesPage() {
           items={charityServices.map((service) => ({
             href: `/services/${service.slug}`,
             title: service.title,
-            body: service.intro,
+            // First sentence of the intro, with the inline anchors stripped:
+            // the card body renders as text, so raw markup would show through.
+            // Same pattern as the /for hub (src/app/for/page.tsx).
+            body: `${service.intro.replace(/<[^>]+>/g, "").split(".")[0]}.`,
           }))}
         />
       </HubSection>

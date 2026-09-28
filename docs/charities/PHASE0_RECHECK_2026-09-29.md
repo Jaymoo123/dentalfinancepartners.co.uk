@@ -131,3 +131,46 @@ Method: port 3503 only, listener PID 23332 killed, port confirmed free.
 ## Estate summariser note (2026-09-29)
 Final status: SAFE AFTER FIXES.
 Blocking item: raw HTML anchor rendering as text on /services (H6), the build-time sitemap dates (H7) and the custom copy on the new /about panel (L1).
+
+## Fix round (2026-09-29)
+
+Fixes applied, files touched restricted to `charities/web/src/`.
+
+1. H6 — `charities/web/src/app/services/page.tsx:41-49`: hub card `body` now built from
+   `service.intro.replace(/<[^>]+>/g, "").split(".")[0]` (first sentence, tags stripped) instead of
+   the raw `service.intro` string, matching the existing pattern on `charities/web/src/app/for/page.tsx:38`.
+2. L1 — `charities/web/src/app/about/page.tsx:52-56`: removed the custom `eyebrow` prop (component
+   default "Free first call, then a fixed fee in writing" now renders); `title` and `description` are
+   required props on `LeadCTAPanel` (no built-in default), so, per base carrying no panel copy for
+   this page (`git show 8e1043d0:charities/web/src/app/about/page.tsx` = bare "Get in touch" link
+   band, confirmed), they are set to the verbatim pre-existing strings already used for this same
+   shared panel at `charities/web/src/app/page.tsx:719-720` ("Talk to a charity accountant" /
+   "Tell us about your charity, CIC or social enterprise. We will explain what your organisation
+   needs, in plain English, with no obligation."), rather than any new sentence.
+
+### Markup sweep (`charities/web/src/data`)
+
+| field | files | render path | status |
+|---|---|---|---|
+| `intro` (services) | `charity-services.ts` (1 entry, line 307) | `services/[slug]/page.tsx:90` `dangerouslySetInnerHTML` (detail); `services/page.tsx:46` was a plain JSX text child (hub) | FIXED (hub now strips tags) |
+| `intro` (sectors) | `charity-types.ts` (2 entries: lines 176, 362) | `for/[slug]/page.tsx:95` `dangerouslySetInnerHTML` (detail); `for/page.tsx:38` already strips tags (hub) | OK, no change needed |
+| `challenges[].body`, `howWeHelp[].body` | `charity-services.ts`, `charity-types.ts` | `HubParts.tsx` `RichCardGrid` → `dangerouslySetInnerHTML` | OK |
+| `faqs[].answer` | `charity-services.ts` (5 entries), `charity-types.ts` (5 entries) | `HubParts.tsx` `FaqSection` → `dangerouslySetInnerHTML` | OK |
+| `research/page.tsx` `blurb`, `guides/page.tsx` `summary` | generated plain strings / frontmatter, no markup found | `LinkCardGrid` text child | OK, no markup present |
+
+Sweep total: 21 fields/entries carrying inline markup across `charity-services.ts` and
+`charity-types.ts` (`intro` x3, `challenges[].body` + `howWeHelp[].body` x8, `faqs[].answer` x10);
+1 render path was wrong (`services/page.tsx` hub); fixed.
+
+### tsc / vitest
+
+- `npx tsc --noEmit -p charities/web` — clean, no output, exit 0.
+- `cd charities/web && npx vitest run` — `Test Files 8 passed (8)`, `Tests 65 passed (65)`.
+
+## Fix round (2026-09-29)
+
+- File: `charities/web/src/app/sitemap.ts`, lines 10-83 (static/service/for/guide/tool/category blocks).
+- Before: every static, service, for, guide, tool and category entry set `lastModified: now`; post entries already used `post.updatedDate || post.date`.
+- After: `lastModified` removed from static/service/for/guide/tool entries; `/blog` and category entries now derive `lastModified` from the newest `updatedDate || date` among their posts; post entries unchanged. URL list emitted is unchanged.
+- `npx tsc --noEmit -p charities/web` — clean, no output.
+- `cd charities/web && npx vitest run` — `Test Files 8 passed (8)`, `Tests 65 passed (65)`.
