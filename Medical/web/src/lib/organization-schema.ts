@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { buildOrganization } from "@accounting-network/web-shared/schema";
+import { niche } from "@/config/niche-loader";
 
 // Audience-page metadata titles (the nine /for-* pages), used as knowsAbout so
 // the canonical Organization node advertises the same specialisms Google
@@ -33,7 +34,9 @@ export function buildOrganizationJsonLd() {
     siteName: siteConfig.name,
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
-    description: siteConfig.description,
+    // The entity sentence, not the meta description: the meta is a ranking
+    // string and says "NHS pension advice"; the node must not.
+    description: niche.entity?.firm ?? siteConfig.description,
     tagline: siteConfig.tagline,
     // Preserve the hand-rolled "Organization" @type (shared builder defaults
     // to ProfessionalService when this is omitted).
