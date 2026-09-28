@@ -13,8 +13,8 @@ import BookingPicker from "@/components/forms/BookingPicker";
  */
 
 export const metadata: Metadata = {
-  title: "Book your first call",
-  description: "Pick a time for your free first call with one of our charity accountants.",
+  title: "Book your free review",
+  description: "Pick a time for your free charity finance review call.",
   robots: { index: false, follow: false },
 };
 
@@ -30,7 +30,7 @@ export default async function BookPage({
     <>
       <SlimHero eyebrow="Your callback" title="Book your free first call">
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-          Pick a day and a time window that suits you. One of our accountants will call you
+          Pick a day and a time window that suits you. A charity finance specialist will call you
           then, no obligation. If we take the work on, you get a fixed fee in writing before anything starts.
         </p>
       </SlimHero>

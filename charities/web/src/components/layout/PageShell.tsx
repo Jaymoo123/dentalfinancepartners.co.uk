@@ -39,12 +39,12 @@ const wordmark = {
   wordmarkBottom: WORDMARK_BOTTOM,
 };
 
-// The old local footer carried this line next to the copyright and the kit
-// has no slot for it. "Editorial content only" read as a disclaimer that the
-// firm was not doing the work (rule 8, phase 0 parity 2026-09-28); reworded
-// to firm voice.
+// The old local footer carried this editorial-scope line next to the copyright
+// and the kit has no slot for it. Site identity wording is an open owner
+// decision, so it is carried over verbatim on the legal disclosure rather than
+// being dropped or reworded.
 const IDENTITY_LINE =
-  "Charity accounts and compliance research from our own accountants. Send an enquiry about your own organisation.";
+  "Charity accounts and compliance research. Editorial content only. Send an enquiry about your own organisation.";
 
 export function PageShell({ children, nav }: { children: ReactNode; nav?: NavItem[] }) {
   return (

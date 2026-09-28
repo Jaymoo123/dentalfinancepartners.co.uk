@@ -50,8 +50,8 @@ export default function AboutPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           eyebrow="Get started"
-          title="Talk to one of our charity accountants"
-          description="Tell us about your charity, CIC or social enterprise and we will explain what your organisation needs, in plain English, with no obligation."
+          title="Talk to a specialist"
+          description="Tell us about your charity, CIC or social enterprise. We will explain what your organisation needs, in plain English, with no obligation."
           proofPoints={[]}
           formTitle="Get in touch"
           form={<LeadForm submitLabel="Send enquiry" />}

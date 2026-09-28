@@ -129,7 +129,7 @@ export default async function ServicePage({
         <LeadCTAPanel
           eyebrow="Get started"
           title={`Talk to a specialist about ${service.title}`}
-          description={service.closer}
+          description="Tell us about your charity, CIC or social enterprise. We will explain what your organisation needs, in plain English, with no obligation."
           proofPoints={[]}
           formTitle="Get in touch"
           form={<LeadForm submitLabel="Send enquiry" />}

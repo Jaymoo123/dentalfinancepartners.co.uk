@@ -306,10 +306,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and one of our accountants will call you.",
+        "Just reply with a time that suits and a specialist will call you.",
         [
           "Thanks for your enquiry. It has just come through to us and a charity finance specialist is ready to help.",
-          "The first call is free, about 20 minutes on where your organisation stands, and if you want us to act you get a fixed fee in writing before anything starts.",
+          "The call is a free review of where your organisation stands, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, or you would rather we called around a trustee meeting, tell us and we will work to that.",
         ],
         "t0_email",
@@ -394,7 +394,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Trustee Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Trustee Tax here. A quick call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Trustee Tax here. Most trustees we speak to arrive with the question you raised, and one short call usually settles it. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -424,7 +424,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are ready, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free first call is still open, and if the timing is not right just now that is completely fine. We know plenty of these decisions wait for the next board meeting.",
+            "Just checking in, and there is genuinely no rush. Your free review is still open, and if the timing is not right just now that is completely fine. We know plenty of these decisions wait for the next board meeting.",
             "If something is holding you back, or things have simply been busy, a one-line reply is all it takes. Tell us a day and time that works, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -527,7 +527,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and one of our accountants will call you.`,
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
             `Just reply to this email with ${ask} and a charity finance specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,
@@ -607,7 +607,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are the run-up to a year end, arranging an independent examination, or a Gift Aid claim that has been waiting on someone.`,
+            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are the run-up to a year end, arranging an independent examination, or a Gift Aid claim that has been waiting on someone.`,
             "All the best with the year ahead.",
           ],
           "detail_capture_day7",

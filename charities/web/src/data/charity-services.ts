@@ -9,12 +9,6 @@ export interface CharityService {
   challenges: Array<{ title: string; body: string }>;
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
-  /**
-   * Closing lead-panel sentence, written per service. Was one closer shared
-   * word-for-word across every service page; varied per brief section 4
-   * (phase 0 parity 2026-09-28). Plain Sonnet copy, flagged for the Opus read.
-   */
-  closer: string;
 }
 
 export const charityServices: CharityService[] = [
@@ -74,8 +68,6 @@ export const charityServices: CharityService[] = [
         answer: "For charities with income under the qualified-examiner threshold (£250,000, rising to £500,000 for financial years ending on or after 30 September 2026), the examiner must be independent and have the relevant knowledge and experience but does not need a specific qualification. Above that threshold, the examiner must hold a qualification from a list specified by the Charity Commission, which includes members of ICAEW, ACCA, CIPFA and certain other bodies.",
       },
     ],
-    closer:
-      "Income, gross assets and your governing document decide whether you need an examination or an audit, and last year's answer is not necessarily this year's. Send us your figures and we will confirm which applies.",
   },
   {
     slug: "charity-accounts",
@@ -133,8 +125,6 @@ export const charityServices: CharityService[] = [
         answer: "The statement of financial activities (SOFA) replaces the income and expenditure account in charity accounts. It shows all incoming resources, resources expended and transfers between funds, split between restricted and unrestricted funds. It gives a complete picture of how the charity's resources moved during the year.",
       },
     ],
-    closer:
-      "The SORP edition that governs your accounts follows your accounting period, not the date you prepare them. Tell us your year end and income band and we will prepare to the edition that actually applies.",
   },
   {
     slug: "charity-bookkeeping",
@@ -192,8 +182,6 @@ export const charityServices: CharityService[] = [
         answer: "Trustees have a legal duty to ensure the charity's finances are properly managed. The Charity Commission expects trustees to receive regular financial reports, typically monthly or quarterly depending on the charity's size. Waiting until year end to look at the accounts is a governance risk.",
       },
     ],
-    closer:
-      "Fund accounting only works if restricted income is separated when it arrives rather than reconstructed at the year end. Tell us how your books are kept now and we will set out what to change.",
   },
   {
     slug: "gift-aid",
@@ -251,8 +239,6 @@ export const charityServices: CharityService[] = [
         answer: "GASDS allows charities to claim a Gift Aid-equivalent top-up payment on small cash and contactless card donations of up to £30 each, without needing a Gift Aid declaration from the donor. The scheme covers up to £8,000 of donations per connected charity per tax year, producing a maximum top-up of £2,000. The charity must also be registered for Gift Aid and making standard Gift Aid claims in the same tax year. Claims must be made within 2 years of the end of the tax year.",
       },
     ],
-    closer:
-      "A missing declaration or an ineligible donation can cost a whole claim, and GASDS runs on rules of its own. Send us your donor records and we will tell you what you can safely claim.",
   },
   {
     slug: "charity-vat",
@@ -310,8 +296,6 @@ export const charityServices: CharityService[] = [
         answer: "Zero-rating means the supplier charges VAT at 0% rather than the standard 20%. The charity pays no VAT on the purchase but the supplier can still recover input VAT on their costs. It is different from VAT exemption, where no VAT is charged but the supplier cannot recover input VAT either. Qualifying zero-rated purchases for charities include advertising, certain medical and veterinary equipment, and construction of new charitable buildings.",
       },
     ],
-    closer:
-      "Charity VAT reliefs attach to particular supplies rather than to the charity itself, and partial exemption catches almost everyone who mixes trading with grant income. Tell us what you sell and buy and we will place you.",
   },
   // Wave 1 append, docs/charities/_wave1/charity-registration.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -413,8 +397,6 @@ export const charityServices: CharityService[] = [
         answer: "Only if income takes you over the gate. External scrutiny, meaning an independent examination or an audit, starts once gross income exceeds £25,000, rising to £40,000 for accounting years ending on or after 30 September 2026. Below it the Charities Act requires none, though a governing document or a funder can still call for one, so the trust deed and grant conditions are read first.",
       },
     ],
-    closer:
-      "Registration turns on the charitable purposes, the public benefit test and a governing document that matches both. Tell us where you have got to and we will tell you what is still missing.",
   },
   // Wave 1 append, docs/charities/_wave1/charity-payroll-and-pensions.json, 2026-09-27, LEADS_250_PROGRAMME S4a
   {
@@ -483,7 +465,7 @@ export const charityServices: CharityService[] = [
       },
       {
         title: "Trustee payments, volunteers and expenses policy",
-        body: "Where a payment to a trustee or volunteer is proposed, one of our accountants reviews the authority relied on, the tax treatment, and the disclosure in the <a href=\"/services/charity-accounts\">annual accounts</a>. The output is a short written expenses and honoraria position the board can adopt.",
+        body: "Where a payment to a trustee or volunteer is proposed, a specialist reviews the authority relied on, the tax treatment, and the disclosure in the <a href=\"/services/charity-accounts\">annual accounts</a>. The output is a short written expenses and honoraria position the board can adopt.",
       },
       {
         title: "Year-end reporting and the staff-cost note",
@@ -516,8 +498,6 @@ export const charityServices: CharityService[] = [
         answer: "Only to larger ones. The levy is charged at 0.5% of an annual pay bill above £3 million, and every employer has a £15,000 annual allowance to set against it. Most charities are nowhere near it. It matters where a charity and its connected companies have a combined pay bill near the threshold, because they share one £15,000 allowance and decide how it is used.",
       },
     ],
-    closer:
-      "Paid staff, sessional workers and volunteer expenses each have a different payroll answer, and auto-enrolment applies from the moment the first person is on the payroll. Tell us who you pay and we will set out the obligations.",
   },
 ];
 
