@@ -871,6 +871,18 @@ post-submit flow, nurture email and machine-layer file on the five sites, render
 the three tests (decider, writing quality, sameness within a site, within a page and across sites),
 method (inventory from the rendered site, re-grade before re-review, report not fix), outputs,
 budget (about 12 agents) and traps. A fresh agent starts there.
+**DEPLOYED 2026-09-28 (owner: "deploy it").** Pushed 92 commits, dependency closure OK, Property
+pre-deploy gate blocked once on three HARD 404 internal links (fixed, `32981977`), then all seven
+projects deployed from the clean worktree at `32981977` (Property, Medical) and `a796de63`
+(contractors, care, charities, Dentists, generalist) and verified live: 200s, one entity block and one
+form on home and audience pages on the five sites, Property about page free of the client-count
+claim, generalist carrying the s.464ZA wording. CI noise owned: five red runs from the three pushes
+(construction-cis line-pinned eyebrow test, eleven posts changed without a dateModified bump, the
+ISSUE_LOG index, then legacy author/canonical gaps on five care and charities posts once touched;
+all fixed by `ab6b01d1`) plus one next/font network flake on Solicitors (rerun green). NOT DONE:
+`calc_pdf_offer` off in prod (the write was refused by the session's permission classifier; the day-13
+read in Property STATE.md already says kill); T6 baseline rerun (paid, and a same-day rerun measures
+nothing, run it at the month-1 read); the terms-page paragraph (decision 1) and IndexNow (not asked).
 
 ### S5. GEO completion on the five sites (spec, 2026-09-27 late; owner: "make sure the sites are as optimised for GEO as they can possibly be", "if we're number 1 we need to be number 1", "I am all for rewriting just make sure we're not losing our existing queries")
 
