@@ -29,11 +29,11 @@ const resourceCard =
 
 export const metadata: Metadata = {
   title: "Accountants for Solicitors UK 2026/27 | SRA + LLP + Partner Tax",
-  description: "We are UK accountants for solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
+  description: "Specialist accountancy matching for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: "Accountants for Solicitors UK 2026/27 | SRA + LLP + Partner Tax",
-    description: "We are UK accountants for solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
+    description: "Specialist accountancy matching for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 const realityPoints = [
   {
     title: "SRA Accounts Rules complexity",
-    body: "Managing client money, trust accounts, and 5-week reconciliations requires specialist knowledge. Generalist accountants often miss the nuances of SRA compliance, putting your practising certificate at risk.",
+    body: "Managing client money, trust accounts, and 5-week reconciliations requires specialized knowledge. Generalist accountants often miss the nuances of SRA compliance, putting your practicing certificate at risk.",
   },
   {
     title: "Partnership and LLP tax confusion",
@@ -63,17 +63,17 @@ const whoWeWorkWith = [
   {
     title: "Sole Practitioners",
     subtitle: "Self-assessment · Expenses · MTD compliance",
-    body: "From self-assessment tax returns to allowable expense claims and Making Tax Digital preparation. We keep your practice finances compliant and your personal tax position optimised, particularly with the April 2026 MTD rollout.",
+    body: "From self-assessment tax returns to allowable expense claims and Making Tax Digital preparation. The specialist accountant we match you with keeps your practice finances compliant and your personal tax position optimized, particularly with the April 2026 MTD rollout.",
   },
   {
     title: "Law Firm Partners",
     subtitle: "Partnership tax · LLP conversion · Profit extraction",
-    body: "Managing partnership profit allocations, drawings, and structure decisions creates complexity. We give clarity on partnership vs LLP taxation, profit extraction strategies, and long-term tax planning.",
+    body: "Managing partnership profit allocations, drawings, and structure decisions creates complexity. The law firm accountant we match you with gives clarity on partnership vs LLP taxation, profit extraction strategies, and long-term tax planning.",
   },
   {
     title: "Practice Managers & COFAs",
     subtitle: "SRA compliance · Trust accounting · Reporting",
-    body: "If you're responsible for client money and SRA compliance, you need accountants who understand the Accounts Rules as well as you do. We handle reconciliations, Accountant's Reports, and regulatory compliance, so you can focus on practice management.",
+    body: "If you're responsible for client money and SRA compliance, you need accountants who understand the Accounts Rules as well as you do. We put you with a firm that handles reconciliations, Accountant's Reports, and regulatory compliance, so you can focus on practice management.",
   },
 ];
 
@@ -86,7 +86,7 @@ const howWeWorkItems = [
   {
     n: "02",
     title: "Partnership & LLP tax returns",
-    body: "Complete handling of partnership tax returns, LLP member allocations, and individual partner self-assessments. We navigate Basis Period Reform and optimise profit extraction strategies.",
+    body: "Complete handling of partnership tax returns, LLP member allocations, and individual partner self-assessments. Your partner firm navigates Basis Period Reform and optimizes profit extraction strategies.",
   },
   {
     n: "03",
@@ -101,7 +101,7 @@ const howWeWorkItems = [
   {
     n: "05",
     title: "Structure optimisation & LLP conversion",
-    body: "Advising on partnership vs LLP structures, conversion tax implications, and profit extraction strategies. We help you choose and implement the most tax-efficient structure for your practice.",
+    body: "Advising on partnership vs LLP structures, conversion tax implications, and profit extraction strategies. Your partner firm helps you choose and implement the most tax-efficient structure for your practice.",
   },
   {
     n: "06",
@@ -114,7 +114,7 @@ const trustItems = [
   {
     title: "Legal-only focus",
     stat: "100%",
-    body: "100% legal sector focus. We work with solicitors, law firms, and legal practitioners.",
+    body: "100% legal sector focus. Every firm we match you with works with solicitors, law firms, and legal practitioners.",
   },
   {
     title: "SRA Accounts Rules",
@@ -131,15 +131,15 @@ const trustItems = [
 const whySpecialistItems = [
   {
     title: "Solicitor accountant expertise",
-    body: "We specialise in SRA Accounts Rules, client money compliance, partnership/LLP taxation, legal sector VAT, and practice succession planning. We speak your language and understand your regulatory environment.",
+    body: "The accountants we match you with specialize in SRA Accounts Rules, client money compliance, partnership/LLP taxation, legal sector VAT, and practice succession planning. We speak your language and understand your regulatory environment.",
   },
   {
     title: "Proactive tax planning",
-    body: "Beyond compliance, we provide strategic tax planning, structure optimisation, and practice finance advice, so legal professionals can make informed financial decisions to protect and grow the practice.",
+    body: "Beyond compliance, the partner firms in our network provide strategic tax planning, structure optimization, and practice finance advice, so legal professionals can make informed financial decisions to protect and grow the practice.",
   },
   {
     title: "Clear, accessible service",
-    body: "Fixed fees, no jargon, and direct access to your solicitor accountant. We're here to help whenever you need it.",
+    body: "Fixed fees, no jargon, and direct access to the solicitor accountant we match you with. We're here to help whenever you need it.",
   },
 ];
 
@@ -391,7 +391,7 @@ export default function HomePage() {
               Complete accounting for solicitors and law firms
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
-              From SRA compliance to strategic tax planning, we cover the full range of accounting services the legal sector needs.
+              From SRA compliance to strategic tax planning, we connect you with partner firms covering the full range of accounting services the legal sector needs.
             </p>
           </div>
 
@@ -581,9 +581,9 @@ export default function HomePage() {
            `proofPoints` is deliberately EMPTY, see the receipt. */
         <div id="book" className="scroll-mt-24">
           <LeadCTAPanel
-            eyebrow="Free first call, then a fixed fee in writing"
+            eyebrow="Get started"
             formTitle=""
-            title="Book your free first call"
+            title="Book your free consultation"
             description="Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs."
             proofPoints={[]}
             form={<LeadForm />}

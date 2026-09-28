@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your tax strategy right early",
   ctaBody:
-    "The first call is free and we will tell you straight whether you need an accountant yet, which is often no, and where the pension and allowance decisions actually move your take-home.",
+    "30-minute scoping call. We tell you whether you need an accountant at all (often not), and where the leverage actually sits.",
   relatedGuides: [
     {
       href: "/solicitor-guides/fee-share-vs-equity-partner",

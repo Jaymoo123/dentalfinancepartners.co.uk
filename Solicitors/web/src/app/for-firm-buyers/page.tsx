@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your acquisition onto specialist hands",
   ctaBody:
-    "Send us the firm you are looking at and on a free first call we will tell you what we would test in financial due diligence, where the client account risk sits, and how we would structure the purchase. If we take the work on, you get a fixed fee in writing before anything starts.",
+    "30-minute scoping call. We confirm scope (DD, structuring, integration) and quote a fixed engagement fee.",
   relatedGuides: [
     {
       href: "/services/practice-valuation",

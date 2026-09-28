@@ -123,7 +123,7 @@ export default function UkSolicitorTaxRatesPage() {
         <div className={`${siteContainerLg} ${sectionY} relative z-10`}>
           <div className="max-w-3xl">
             <h2 className="text-2xl font-bold text-white sm:text-3xl">Want these applied to your firm?</h2>
-            <p className="mt-4 text-base leading-relaxed text-slate-200 sm:text-lg">A reference page is fine for the rates themselves. The value is in how they interact across your specific position. The first call is free, so book it and we will walk through your numbers.</p>
+            <p className="mt-4 text-base leading-relaxed text-slate-200 sm:text-lg">A reference page is fine for the rates themselves. The value is in how they interact across your specific position. Book a 30-minute scoping call to walk through your numbers.</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/free-firm-health-check" className={`inline-flex min-h-12 items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}>Take the firm health check</Link>
               <Link href="/contact" className={`inline-flex min-h-12 items-center rounded-full border-2 border-white px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-slate-900 ${focusRing}`}>Book a call</Link>

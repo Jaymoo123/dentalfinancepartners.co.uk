@@ -415,7 +415,7 @@ export default function EquityPartnerBuyInPage() {
           contained
           ground="slate"
           title="Want a specialist to review your buy-in structure?"
-          description="The right funding route depends on your specific marginal rate, the firm's partnership deed, and whether ITA 2007 s.398 qualifying conditions are met in your case. We model the full picture as part of the partner tax planning work, with no obligation."
+          description="The right funding route depends on your specific marginal rate, the firm's partnership deed, and whether ITA 2007 s.398 qualifying conditions are met in your case. A firm from our partner network models the full picture as part of the partner tax planning work, with no obligation."
           proofPoints={LEAD_PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} />}
           footnote={
@@ -426,7 +426,7 @@ export default function EquityPartnerBuyInPage() {
               data-cta-goal="form"
               data-cta-placement="tool-page"
             >
-              Book a free first call
+              Book a free consultation
             </Link>
           }
         />

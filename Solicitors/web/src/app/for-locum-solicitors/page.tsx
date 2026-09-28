@@ -7,7 +7,7 @@ const data: AudienceStage = {
   title: "Accountants for UK Locum and Consultant Solicitors",
   metaTitle: "Locum Solicitor Accountants UK | Ltd vs Umbrella vs Sole Trader",
   metaDescription:
-    "We are specialist accountants for UK locum solicitors. Ltd company vs umbrella vs sole-trader comparison, IR35 status, PII on own account, fee structures.",
+    "Specialist accountancy matching for UK locum solicitors. Ltd company vs umbrella vs sole-trader comparison, IR35 status, PII on own account, fee structures.",
   eyebrow: "For locum + consultant solicitors",
   badge: "Locum solicitors · Consultant solicitors · Interim general counsel",
   heroHeading: "Structure and tax help for locum solicitors",
@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your consultant structure right",
   ctaBody:
-    "Tell us what you bill and who you lock out to, and on a free first call we will run limited company against umbrella against sole trader on your own numbers rather than an average. If we take the work on, you get a fixed fee in writing before anything starts.",
+    "30-minute scoping call. We put you with a partner firm that runs the Ltd vs umbrella vs sole-trader comparison on your specific income and engagement mix and tells you which one wins on real numbers.",
   relatedGuides: [
     {
       href: "/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide",

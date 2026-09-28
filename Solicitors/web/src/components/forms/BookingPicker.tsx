@@ -101,7 +101,7 @@ export default function BookingPicker({ token }: { token: string }) {
       <div className="rounded-xl border-2 border-[var(--border)] bg-[var(--surface)] p-6 text-center">
         <p className="text-base text-[var(--muted)]">
           This booking link has expired. No problem, you can still reach us through the
-          contact form and we will arrange your free first call.
+          contact form and we will arrange your free review.
         </p>
         <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
           Go to the contact form
@@ -157,7 +157,7 @@ export default function BookingPicker({ token }: { token: string }) {
           disabled={!date || !windowKey || status === "submitting"}
           className={`${btnPrimary} w-full sm:w-auto`}
         >
-          {status === "submitting" ? "Booking your callback..." : "Book my free first call"}
+          {status === "submitting" ? "Booking your callback..." : "Book my free review call"}
         </button>
         {status === "error" && (
           <p className="mt-3 text-sm font-semibold text-red-700">

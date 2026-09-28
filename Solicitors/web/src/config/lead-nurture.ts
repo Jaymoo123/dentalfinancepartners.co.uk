@@ -360,10 +360,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Just reply with a time that suits and one of our accountants will call you.",
+        "Just reply with a time that suits and a specialist will call you.",
         [
-          "Thanks for your enquiry, it has just landed with us and one of our accountants will call you within 24 hours, Monday to Friday.",
-          "The first call is free, about 20 minutes on where the firm stands on its accounts and tax, and there is no obligation at the end of it.",
+          "Thanks for your enquiry, it has just landed with us and a specialist is ready to help.",
+          "The call is a free review of where your firm stands on its accounts and tax, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you, tell us and we will work around it.",
         ],
         "t0_email",
@@ -381,7 +381,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's Accounts for Lawyers. Thanks for your enquiry. Reply YES and one of our accountants will call you to discuss your firm's accounts. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's Accounts for Lawyers. Thanks for your enquiry. Reply YES and a specialist from our partner network will call you to discuss your firm's accounts. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.confirmUrl]),
     ],
@@ -398,7 +398,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Accounts for Lawyers again. Enquiries like yours are exactly what we handle, so we have set aside time this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Accounts for Lawyers again. Enquiries like yours are exactly what the specialists in our partner network handle, so we have set aside time this week. Reply YES and a specialist will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -431,7 +431,7 @@ const STEPS: LeadNurtureStep[] = [
         "Partners and LLP members have different tax obligations, and a short call often surfaces the gaps.",
         [
           "A quick pointer while your enquiry is with us. Most law firm partners do not realise that LLP member drawings, profit allocations and personal tax reserves need careful planning from the first year, and the cost of getting it wrong compounds quickly.",
-          "If that is relevant to your situation, it is exactly the kind of thing a short call with one of our accountants would cover.",
+          "If that is relevant to your situation, it is exactly the kind of thing a short call with a specialist from our partner network would cover.",
           "Whenever suits you, just reply with a day and time and we will arrange it.",
         ],
         "day2_give_email",
@@ -448,7 +448,7 @@ const STEPS: LeadNurtureStep[] = [
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, Accounts for Lawyers here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and one of our accountants will call you. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, Accounts for Lawyers here. A quick call is truly no-strings: if it does not help, you have lost 20 minutes and owe nothing. Just reply YES and a specialist will call you. Reply STOP to opt out.`
           : `Hi ${c.firstName}, Accounts for Lawyers here. Most firms we speak to came to us with the same question you raised, and one short call usually clears up months of uncertainty. Reply YES and we will call you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -467,7 +467,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free law firm accounts review is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free law firm accounts review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -478,7 +478,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your first call is still available, and if now is not the right moment, that is completely fine.",
+            "Just checking in, and there is genuinely no rush. Your free review is still available, and if now is not the right moment, that is completely fine.",
             "If something is holding you back, or things have just been busy at the firm, a one-line reply is all it takes. Tell us a day and a time, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -581,10 +581,10 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and one of our accountants will call you.`,
+          `Reply with ${ask} and a specialist will call you.`,
           [
             detailIntro(c),
-            `Just reply to this email with ${ask} and we will have one of our accountants call you. It is free, there is no obligation, and there is nothing to prepare.`,
+            `Just reply to this email with ${ask} and we will have a law firm accounts specialist from our partner network call you. It is free, there is no obligation, and there is nothing to prepare.`,
             "If it is easier, reply with anything at all. Even a one-word reply is fine. It confirms we can reach you and we will take it from there.",
           ],
           "detail_capture_t0",
@@ -661,7 +661,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have asked a couple of times now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like that first call on your firm's accounts and tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a new partner joining, a practice restructure, or an SRA compliance deadline.`,
+            `If you would still like a free review of your firm's accounts and tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a new partner joining, a practice restructure, or an SRA compliance deadline.`,
             "All the best with the firm.",
           ],
           "detail_capture_day7",

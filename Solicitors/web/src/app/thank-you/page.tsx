@@ -95,7 +95,7 @@ export default async function ThankYouPage({
           backdrop={<SolicitorsBackdrop tone="navy" />}
         >
           <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-            Thanks, that is confirmed. One of our accountants will contact you directly.
+            Thanks, that is confirmed. A specialist firm from our partner network will contact you directly.
           </p>
         </SlimHero>
 
@@ -125,7 +125,7 @@ export default async function ThankYouPage({
         {nurtureArmed ? (
           <>
             <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-              We have just sent you a message to arrange your free first call. Please check your
+              We have just sent you a message to arrange your free review. Please check your
               email and phone, and confirm to lock in your callback slot.
             </p>
             <p className="mt-4 text-base leading-relaxed text-slate-300">
@@ -197,7 +197,7 @@ export default async function ThankYouPage({
                   Ready to book a time that works for you?
                 </p>
                 <Link href="/contact" className={btnPrimary}>
-                  Book your free first call
+                  Book your free review
                 </Link>
               </>
             )}

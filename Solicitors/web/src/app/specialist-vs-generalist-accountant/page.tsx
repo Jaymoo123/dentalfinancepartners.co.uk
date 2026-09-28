@@ -140,7 +140,7 @@ export default function Page() {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-2xl font-semibold text-white sm:text-3xl">Time to switch?</h2>
-            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">The first call is free. We tell you what would change if you moved, what the fee would be, and whether it is worth the disruption. No drip sequence, no chase.</p>
+            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">30-minute scoping call. We tell you what would change if you moved, what the fee would be, and whether it&apos;s worth the disruption. No drip sequence, no chase.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link href="/free-firm-health-check" className={`inline-flex min-h-12 items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--primary)] transition-colors hover:bg-white/90 ${focusRing}`}>Take the firm health check</Link>
               <Link href="/contact" className={`inline-flex min-h-12 items-center rounded-full border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 ${focusRing}`}>Book a scoping call</Link>

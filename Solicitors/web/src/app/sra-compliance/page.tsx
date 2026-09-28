@@ -44,7 +44,7 @@ const complianceAreas = [
   },
   {
     title: "SRA Accountant's Reports",
-    description: "The annual report has to come from an independent accountant holding a practising certificate from a recognised supervisory body. We arrange one and help you get the client money records ready, so nothing surfaces late.",
+    description: "The annual report has to come from an independent accountant holding a practising certificate from a recognised supervisory body. We connect you with one from our specialist partner network and help you get the client money records ready, so nothing surfaces late.",
   },
   {
     title: "COFA support",
@@ -134,7 +134,7 @@ export default function SRACompliancePage() {
         }
       >
         <p>
-          26.2% of SRA firm closures in 2024-25 were due to accounting breaches,up from 18.6% the previous year. With heightened regulatory scrutiny and increasingly complex Accounts Rules, you need specialist accountants who understand SRA compliance as well as you do.
+          26.2% of SRA firm closures in 2024-25 were due to accounting breaches, up from 18.6% the previous year. With heightened regulatory scrutiny and increasingly complex Accounts Rules, you need specialist accountants who understand SRA compliance as well as you do.
         </p>
       </TopicSection>
 
@@ -175,7 +175,7 @@ export default function SRACompliancePage() {
           <div className="mt-8 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8">
             <h3 className="text-lg font-bold text-slate-900">Free SRA compliance review</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              We'll review your current client money procedures and identify any compliance gaps,no obligation, no charge.
+              We'll review your current client money procedures and identify any compliance gaps, no obligation, no charge.
             </p>
             <div className="mt-6">
               <Link href="/contact" className={btnPrimary}>
