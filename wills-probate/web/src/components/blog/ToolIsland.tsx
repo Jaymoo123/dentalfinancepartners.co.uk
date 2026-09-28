@@ -23,7 +23,7 @@ export function ToolIsland({ tool }: { tool: GenericTool }) {
       <p className="mt-2 text-sm leading-relaxed text-slate-600">{tool.oneLiner}</p>
       <Link
         href={toolPath(tool.slug)}
-        className="mt-4 inline-block rounded bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-orange-700"
+        className="mt-4 inline-block rounded bg-orange-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-orange-800"
       >
         Run the numbers
       </Link>

@@ -97,7 +97,7 @@ export default async function TradeTypePage({
       </section>
 
       {/* Stats bar */}
-      <section className="bg-orange-600 py-8 sm:py-10">
+      <section className="bg-orange-700 py-8 sm:py-10">
         <div className={siteContainerLg}>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
             {type.stats.map((stat) => (

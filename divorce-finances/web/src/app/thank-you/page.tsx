@@ -29,14 +29,14 @@ export default async function ThankYouPage({
           {/* Endowed-progress: 3-step indicator */}
           <ol className="mb-10 flex items-center gap-0 text-xs">
             <li className="flex items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-700 font-bold text-white">
                 1
               </span>
               <span className="font-medium text-slate-900">Enquiry received</span>
             </li>
             <span className="mx-2 flex-1 border-t border-neutral-300" aria-hidden="true" />
             <li className="flex items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-700 font-bold text-white">
                 2
               </span>
               <span className="font-medium text-slate-900">Details received</span>

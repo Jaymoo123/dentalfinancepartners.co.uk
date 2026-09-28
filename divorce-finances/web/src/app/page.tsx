@@ -154,7 +154,7 @@ export default function HomePage() {
       <section className="bg-[#1e293b] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="inline-block bg-orange-500 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-block bg-orange-700 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               Made for your situation
             </div>
             <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
