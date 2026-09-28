@@ -4,7 +4,9 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { careServices, getService } from "@/data/care-services";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { JsonLd, buildBreadcrumb, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
+import { niche } from "@/config/niche-loader";
 
 /* Schema parity fix (mirrors charities' services/[slug]): this route emitted
    only a hand-rolled FAQPage via lib/schema.buildFaqJsonLd, no Service, no
@@ -98,6 +100,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </div>
     </section>
+    {niche.entity ? <EntityBlock {...niche.entity} /> : null}
     {service.faqs.length > 0 && (
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>

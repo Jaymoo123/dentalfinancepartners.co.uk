@@ -33,7 +33,7 @@ faqs:
     answer: "A retrospective award covering a period already invoiced to a local authority or a self-funder creates a reimbursement obligation on one side and an NHS receivable on the other for the same weeks. Credit notes and the replacement invoice should be raised in the same period so the bed is not recognised twice, and if the correction spans a closed year end your accountant prepares the adjustment on that basis."
 ---
 
-<p>When a resident is assessed as eligible for NHS continuing healthcare, the NHS funds the full package of care and your customer for that bed changes from the local authority or the resident to the responsible NHS body. The separate NHS-funded nursing care payment, £267.68 per week at the standard rate and £368.24 at the higher rate from 1 April 2026, stops at the same moment. In the accounts for 2026-27 this is not a rate change; it is a change of payer, of contract and of the risk attached to that bed.</p>
+<p>When a resident is assessed as eligible for NHS continuing healthcare you have a pricing decision, not a bookkeeping one: the NHS becomes the only payer for that bed, the £267.68 weekly nursing payment stops, and the rate you agree with the responsible NHS body has to carry the whole placement. The separate NHS-funded nursing care payment, £267.68 per week at the standard rate and £368.24 at the higher rate from 1 April 2026, stops at the same moment. In the accounts for 2026-27 this is not a rate change; it is a change of payer, of contract and of the risk attached to that bed.</p>
 
 <h2>What actually changes on the day a CHC award lands</h2>
 
