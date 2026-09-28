@@ -130,7 +130,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist agency accountant",
     magnetBlurbTemplate:
-      "A specialist will talk through your agency structure, incorporation decision and employer cost position. The first call is free.",
+      "One of our accountants will talk through your agency structure, incorporation decision and employer cost position. The first call is free.",
   },
 
   "rnd": {
@@ -144,7 +144,7 @@ export const RESOURCES: Record<TopicKey, CategoryResource> = {
     guide: null,
     magnetTitle: "Speak to a specialist agency accountant",
     magnetBlurbTemplate:
-      "Most agency work does not qualify for R&D tax relief. A specialist will tell you honestly whether you have a genuine claim before you file anything.",
+      "Most agency work does not qualify for R&D tax relief. One of our accountants will tell you honestly whether you have a genuine claim before you file anything.",
   },
 
   "international": {

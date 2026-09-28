@@ -86,6 +86,9 @@ const data: AudienceStage = {
     },
   ],
   ctaTitle: "Plan your agency exit properly",
+  closerBody:
+    "60 minutes with a specialist agency accountant on getting BADR, sale-ready accounts and earn-out structuring right before you're in a deal process. No obligation.",
+  pillarBlurb: "Weighing up a sale? Our guides cover BADR, exit structuring and the numbers a buyer will check first.",
 };
 
 export default function ForPreExitPage() {

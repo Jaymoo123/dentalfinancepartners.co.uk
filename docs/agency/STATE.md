@@ -4,6 +4,69 @@
 
 **Site:** agencyfounderfinance.co.uk · Vercel project `agency-founder-finance` · site_key `agency` · repo dir `digital-agency/` (NOTE: Supabase `sites.content_dir` says "Digital Agency/..." with a space; the on-disk dir is `digital-agency/` — tooling normalises this).
 
+## 2026-09-28 — Phase 0 parity (estate parity plan)
+
+Changed, this site only (`digital-agency/web`, `digital-agency/niche.config.json`):
+- Positioning sweep (rule 8 defects): `/contact` pre-submit "specialist firm from our
+  partner network" line replaced with the firm-voice 24-hour promise; `/complete`'s two
+  "partner network" lines (question in the research report, not a confirmed Aswatax
+  pattern) converted to firm voice. `leadConsentText`, privacy policy, terms, `/thank-you`
+  (confirmed Aswatax pattern, `18b4f25f3`) and the Wizard consent text left untouched
+  (exempt). SMS/email nurture copy: every "a specialist will call you" -> "one of our
+  accountants will call you" in `lead-nurture.ts` and `lib/resources/registry.ts`.
+- Added `entity` key to `niche.config.json` (Property's shape, agency wording).
+- `t0_email` (delayHours 0) now states "One of our accountants will call you within 24
+  hours, Monday to Friday." per the estate standard sentence.
+- Nurture timing: the 8-step sequence's `delayHours` were the cumulative timeline in the
+  gap field (`0,0,4,24,48,96,168,264`, an 11-day run reading as 25 days); reset to
+  Property's `0,0,4,20,24,48,72,96`. The separate 4-step sequence (`0,24,48,168`) was not
+  the defect shape named in the brief and was left alone.
+- Organization JSON-LD (`web/src/lib/schema/organization.ts`) ported to
+  `@accounting-network/web-shared/schema`'s `buildOrganization`/`referencedOrganization`/
+  `buildWebSite`, `@type` AccountingService, `parentOrganization` Ashfield Trading Ltd
+  16358723 added (new field), every prior field (name, legalName, alternateName, url,
+  address, description, logo, image, areaServed, knowsAbout, slogan, sameAs) preserved.
+- `public/llms.txt`: all 84 page links now carry `?utm_source=chatgpt&utm_medium=llms`
+  (previously 0).
+- `PremiumCalculator.tsx`: the in-blog result gate (`ResultGateModal`) is permanently off
+  (`gated = false`); the result always shows with one form (`CalcResultCta`) under it, no
+  interstitial. `ResultGateModal.tsx` and its test file left in place, untouched, just
+  unmounted (gate never opens).
+- The three `/for-*` pages closed on word-for-word identical copy (both the "60 minutes
+  with a specialist..." sub-line and the "Want to read first?" blurb). Added optional
+  `closerBody`/`pillarBlurb` fields to `AudienceStageLayout`'s `AudienceStage` type and
+  wrote a distinct sentence per page (Sonnet draft — **needs the Opus read**).
+- `/book`'s "An accountant will call you then" line brought in line with the estate
+  wording (contractors-ir35's line, per brief section 4). No footer link pointed at
+  `/book` or any booking page (`SiteFooter` renders `niche.config.json` `footer_links`
+  only); added "Book a consultation" -> `/contact#form` as the first footer link, and
+  gave `/contact`'s form section `id="form"`.
+- AdSense (owner ruling 2026-09-28, Solicitors pattern): `next.config.ts`
+  `buildSecurityHeaders` now passes `ads: true`; `layout.tsx` metadata `verification.other`
+  carries `"google-adsense-account": "ca-pub-3756285576371279"`; `ConsentedScripts` now
+  takes `adsenseClientId="ca-pub-3756285576371279"`; added `public/ads.txt` (copied from
+  Solicitors). No ad units added anywhere (none existed).
+- **Corrected stale line below**: "GA4 not configured" was wrong even before today — GA4
+  has been wired through the shared `ConsentedScripts`/`ConsentProvider` chain since the
+  09-13-ish commits ahead of this file's last update; the actual gap is
+  `google_analytics_id` is `""` in `niche.config.json` (plumbing agent's job, not this
+  agent's, per brief section 6).
+
+Verification: `npx tsc --noEmit -p digital-agency/web` clean, 0 errors.
+`npx vitest run` from `digital-agency/web`: 12 files, 544 tests, all passed.
+`git diff --stat -- digital-agency/` touches only this site's directories.
+Grep for every rule-8 defect string across `web/src`, `niche.config.json`,
+`web/public/llms.txt` returns zero hits outside the exempt surfaces (consent text,
+privacy policy, terms, `/thank-you`).
+
+Not done here (needs the shared agent or Opus, see `PHASE0_2026-09-28.md`): the design
+port itself (explicitly out of scope for this pass), the blog-post hero image's
+`scale-110` "overflow" (investigated — it is a blurred cover background inside its own
+`overflow-hidden` section, deliberately oversized so `blur-sm`'s edge softening is
+cropped; `scrollWidth` stays 390 on every page; not a defect), and the `enquiry_ref`
+unlabelled-input NIT (present in `LeadForm.tsx`/`MiniCapture.tsx`/`ResourceGate.tsx`
+across every form; not named in this brief's scope, flagged for a follow-up pass).
+
 ## 2026-08-25 — Port-branch merge: nothing pending for this site
 
 `design/property-redesign-port` was merged to main on 2026-08-25 (Property Standard

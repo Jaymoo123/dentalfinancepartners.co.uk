@@ -10,123 +10,123 @@ Coverage: UK (with city presence in London, Manchester, Birmingham, Leeds, Brist
 
 ## Key Commercial Pages
 
-- Homepage: https://www.agencyfounderfinance.co.uk/
-- Services: https://www.agencyfounderfinance.co.uk/services
-- About: https://www.agencyfounderfinance.co.uk/about
-- Contact: https://www.agencyfounderfinance.co.uk/contact
-- Free Agency Finance Health Check: https://www.agencyfounderfinance.co.uk/free-health-check
-- R&D Tax Credits: https://www.agencyfounderfinance.co.uk/r-and-d-credits
-- Incorporation: https://www.agencyfounderfinance.co.uk/incorporation
-- Calculators (index): https://www.agencyfounderfinance.co.uk/calculators
+- Homepage: https://www.agencyfounderfinance.co.uk/?utm_source=chatgpt&utm_medium=llms
+- Services: https://www.agencyfounderfinance.co.uk/services?utm_source=chatgpt&utm_medium=llms
+- About: https://www.agencyfounderfinance.co.uk/about?utm_source=chatgpt&utm_medium=llms
+- Contact: https://www.agencyfounderfinance.co.uk/contact?utm_source=chatgpt&utm_medium=llms
+- Free Agency Finance Health Check: https://www.agencyfounderfinance.co.uk/free-health-check?utm_source=chatgpt&utm_medium=llms
+- R&D Tax Credits: https://www.agencyfounderfinance.co.uk/r-and-d-credits?utm_source=chatgpt&utm_medium=llms
+- Incorporation: https://www.agencyfounderfinance.co.uk/incorporation?utm_source=chatgpt&utm_medium=llms
+- Calculators (index): https://www.agencyfounderfinance.co.uk/calculators?utm_source=chatgpt&utm_medium=llms
 
 ## Audience-Stage Pages
 
-- For new founders: https://www.agencyfounderfinance.co.uk/for-new-founders
-- For growth-stage agencies: https://www.agencyfounderfinance.co.uk/for-growth-stage
-- For pre-exit founders: https://www.agencyfounderfinance.co.uk/for-pre-exit
+- For new founders: https://www.agencyfounderfinance.co.uk/for-new-founders?utm_source=chatgpt&utm_medium=llms
+- For growth-stage agencies: https://www.agencyfounderfinance.co.uk/for-growth-stage?utm_source=chatgpt&utm_medium=llms
+- For pre-exit founders: https://www.agencyfounderfinance.co.uk/for-pre-exit?utm_source=chatgpt&utm_medium=llms
 
 ## Agency Types We Serve
 
-- Marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/marketing-agencies
-- Digital agencies: https://www.agencyfounderfinance.co.uk/agencies/digital-agencies
-- Creative agencies: https://www.agencyfounderfinance.co.uk/agencies/creative-agencies
-- Advertising agencies: https://www.agencyfounderfinance.co.uk/agencies/advertising-agencies
-- PR agencies: https://www.agencyfounderfinance.co.uk/agencies/pr-agencies
-- Web design agencies: https://www.agencyfounderfinance.co.uk/agencies/web-design-agencies
-- SEO agencies: https://www.agencyfounderfinance.co.uk/agencies/seo-agencies
-- Recruitment agencies: https://www.agencyfounderfinance.co.uk/agencies/recruitment-agencies
-- PPC agencies: https://www.agencyfounderfinance.co.uk/agencies/ppc-agencies
-- Performance marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/performance-marketing-agencies
-- Influencer marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/influencer-marketing-agencies
-- Email marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/email-marketing-agencies
-- Branding agencies: https://www.agencyfounderfinance.co.uk/agencies/branding-agencies
-- Social media agencies: https://www.agencyfounderfinance.co.uk/agencies/social-media-agencies
-- AI agencies: https://www.agencyfounderfinance.co.uk/agencies/ai-agencies
-- Ecommerce agencies: https://www.agencyfounderfinance.co.uk/agencies/ecommerce-agencies
-- Video production agencies: https://www.agencyfounderfinance.co.uk/agencies/video-production-agencies
-- SaaS agencies: https://www.agencyfounderfinance.co.uk/agencies/saas-agencies
-- Crypto / Web3 agencies: https://www.agencyfounderfinance.co.uk/agencies/crypto-web3-agencies
+- Marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/marketing-agencies?utm_source=chatgpt&utm_medium=llms
+- Digital agencies: https://www.agencyfounderfinance.co.uk/agencies/digital-agencies?utm_source=chatgpt&utm_medium=llms
+- Creative agencies: https://www.agencyfounderfinance.co.uk/agencies/creative-agencies?utm_source=chatgpt&utm_medium=llms
+- Advertising agencies: https://www.agencyfounderfinance.co.uk/agencies/advertising-agencies?utm_source=chatgpt&utm_medium=llms
+- PR agencies: https://www.agencyfounderfinance.co.uk/agencies/pr-agencies?utm_source=chatgpt&utm_medium=llms
+- Web design agencies: https://www.agencyfounderfinance.co.uk/agencies/web-design-agencies?utm_source=chatgpt&utm_medium=llms
+- SEO agencies: https://www.agencyfounderfinance.co.uk/agencies/seo-agencies?utm_source=chatgpt&utm_medium=llms
+- Recruitment agencies: https://www.agencyfounderfinance.co.uk/agencies/recruitment-agencies?utm_source=chatgpt&utm_medium=llms
+- PPC agencies: https://www.agencyfounderfinance.co.uk/agencies/ppc-agencies?utm_source=chatgpt&utm_medium=llms
+- Performance marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/performance-marketing-agencies?utm_source=chatgpt&utm_medium=llms
+- Influencer marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/influencer-marketing-agencies?utm_source=chatgpt&utm_medium=llms
+- Email marketing agencies: https://www.agencyfounderfinance.co.uk/agencies/email-marketing-agencies?utm_source=chatgpt&utm_medium=llms
+- Branding agencies: https://www.agencyfounderfinance.co.uk/agencies/branding-agencies?utm_source=chatgpt&utm_medium=llms
+- Social media agencies: https://www.agencyfounderfinance.co.uk/agencies/social-media-agencies?utm_source=chatgpt&utm_medium=llms
+- AI agencies: https://www.agencyfounderfinance.co.uk/agencies/ai-agencies?utm_source=chatgpt&utm_medium=llms
+- Ecommerce agencies: https://www.agencyfounderfinance.co.uk/agencies/ecommerce-agencies?utm_source=chatgpt&utm_medium=llms
+- Video production agencies: https://www.agencyfounderfinance.co.uk/agencies/video-production-agencies?utm_source=chatgpt&utm_medium=llms
+- SaaS agencies: https://www.agencyfounderfinance.co.uk/agencies/saas-agencies?utm_source=chatgpt&utm_medium=llms
+- Crypto / Web3 agencies: https://www.agencyfounderfinance.co.uk/agencies/crypto-web3-agencies?utm_source=chatgpt&utm_medium=llms
 
 ## Pillar Guides
 
-- Agency Finance Fundamentals: https://www.agencyfounderfinance.co.uk/fundamentals/agency-finance-fundamentals
-- Agency Tax & Compliance — complete guide: https://www.agencyfounderfinance.co.uk/fundamentals/agency-tax-compliance-complete-guide
-- Choosing an Agency Accountant: https://www.agencyfounderfinance.co.uk/fundamentals/choosing-agency-accountant-pillar
-- Incorporating Your Agency: https://www.agencyfounderfinance.co.uk/fundamentals/incorporating-your-agency-pillar
-- International Agency Operations: https://www.agencyfounderfinance.co.uk/fundamentals/international-agency-operations-pillar
-- IR35 for Agencies: https://www.agencyfounderfinance.co.uk/fundamentals/ir35-for-agencies-pillar
-- Making Tax Digital for Agency Founders: https://www.agencyfounderfinance.co.uk/fundamentals/mtd-agency-founder-pillar
-- Paying Yourself as an Agency Founder: https://www.agencyfounderfinance.co.uk/fundamentals/paying-yourself-agency-founder-pillar
-- Selling Your Agency: https://www.agencyfounderfinance.co.uk/fundamentals/selling-your-agency-pillar
+- Agency Finance Fundamentals: https://www.agencyfounderfinance.co.uk/fundamentals/agency-finance-fundamentals?utm_source=chatgpt&utm_medium=llms
+- Agency Tax & Compliance — complete guide: https://www.agencyfounderfinance.co.uk/fundamentals/agency-tax-compliance-complete-guide?utm_source=chatgpt&utm_medium=llms
+- Choosing an Agency Accountant: https://www.agencyfounderfinance.co.uk/fundamentals/choosing-agency-accountant-pillar?utm_source=chatgpt&utm_medium=llms
+- Incorporating Your Agency: https://www.agencyfounderfinance.co.uk/fundamentals/incorporating-your-agency-pillar?utm_source=chatgpt&utm_medium=llms
+- International Agency Operations: https://www.agencyfounderfinance.co.uk/fundamentals/international-agency-operations-pillar?utm_source=chatgpt&utm_medium=llms
+- IR35 for Agencies: https://www.agencyfounderfinance.co.uk/fundamentals/ir35-for-agencies-pillar?utm_source=chatgpt&utm_medium=llms
+- Making Tax Digital for Agency Founders: https://www.agencyfounderfinance.co.uk/fundamentals/mtd-agency-founder-pillar?utm_source=chatgpt&utm_medium=llms
+- Paying Yourself as an Agency Founder: https://www.agencyfounderfinance.co.uk/fundamentals/paying-yourself-agency-founder-pillar?utm_source=chatgpt&utm_medium=llms
+- Selling Your Agency: https://www.agencyfounderfinance.co.uk/fundamentals/selling-your-agency-pillar?utm_source=chatgpt&utm_medium=llms
 
 ## Calculators (free, no signup)
 
-- Salary–dividend optimiser: https://www.agencyfounderfinance.co.uk/calculators/salary-dividend-optimiser
-- Take-home pay calculator: https://www.agencyfounderfinance.co.uk/calculators/take-home-pay-calculator
-- Employer NI calculator: https://www.agencyfounderfinance.co.uk/calculators/employer-ni-calculator
-- Pension contribution optimiser: https://www.agencyfounderfinance.co.uk/calculators/pension-contribution-optimiser
-- R&D tax credit estimator: https://www.agencyfounderfinance.co.uk/calculators/rd-tax-credit-estimator
-- BADR (Business Asset Disposal Relief) calculator: https://www.agencyfounderfinance.co.uk/calculators/badr-cgt-calculator
-- Agency valuation estimator: https://www.agencyfounderfinance.co.uk/calculators/agency-valuation
-- VAT scheme comparator: https://www.agencyfounderfinance.co.uk/calculators/vat-scheme-comparator
+- Salary–dividend optimiser: https://www.agencyfounderfinance.co.uk/calculators/salary-dividend-optimiser?utm_source=chatgpt&utm_medium=llms
+- Take-home pay calculator: https://www.agencyfounderfinance.co.uk/calculators/take-home-pay-calculator?utm_source=chatgpt&utm_medium=llms
+- Employer NI calculator: https://www.agencyfounderfinance.co.uk/calculators/employer-ni-calculator?utm_source=chatgpt&utm_medium=llms
+- Pension contribution optimiser: https://www.agencyfounderfinance.co.uk/calculators/pension-contribution-optimiser?utm_source=chatgpt&utm_medium=llms
+- R&D tax credit estimator: https://www.agencyfounderfinance.co.uk/calculators/rd-tax-credit-estimator?utm_source=chatgpt&utm_medium=llms
+- BADR (Business Asset Disposal Relief) calculator: https://www.agencyfounderfinance.co.uk/calculators/badr-cgt-calculator?utm_source=chatgpt&utm_medium=llms
+- Agency valuation estimator: https://www.agencyfounderfinance.co.uk/calculators/agency-valuation?utm_source=chatgpt&utm_medium=llms
+- VAT scheme comparator: https://www.agencyfounderfinance.co.uk/calculators/vat-scheme-comparator?utm_source=chatgpt&utm_medium=llms
 
 ## Relocation Guides (UK Agency Founders Moving Abroad)
 
-- Dubai (UAE) relocation: https://www.agencyfounderfinance.co.uk/dubai-relocation
-- Portugal (NHR / IFICI) relocation: https://www.agencyfounderfinance.co.uk/portugal-relocation
-- Cyprus (non-dom) relocation: https://www.agencyfounderfinance.co.uk/cyprus-relocation
-- Spain (Beckham Law) relocation: https://www.agencyfounderfinance.co.uk/spain-relocation
-- Singapore relocation: https://www.agencyfounderfinance.co.uk/singapore-relocation
-- Malta relocation: https://www.agencyfounderfinance.co.uk/malta-relocation
-- Estonia (e-Residency) relocation: https://www.agencyfounderfinance.co.uk/estonia-relocation
-- Greece relocation: https://www.agencyfounderfinance.co.uk/greece-relocation
-- Italy (impatriate regime) relocation: https://www.agencyfounderfinance.co.uk/italy-relocation
-- Switzerland relocation: https://www.agencyfounderfinance.co.uk/switzerland-relocation
+- Dubai (UAE) relocation: https://www.agencyfounderfinance.co.uk/dubai-relocation?utm_source=chatgpt&utm_medium=llms
+- Portugal (NHR / IFICI) relocation: https://www.agencyfounderfinance.co.uk/portugal-relocation?utm_source=chatgpt&utm_medium=llms
+- Cyprus (non-dom) relocation: https://www.agencyfounderfinance.co.uk/cyprus-relocation?utm_source=chatgpt&utm_medium=llms
+- Spain (Beckham Law) relocation: https://www.agencyfounderfinance.co.uk/spain-relocation?utm_source=chatgpt&utm_medium=llms
+- Singapore relocation: https://www.agencyfounderfinance.co.uk/singapore-relocation?utm_source=chatgpt&utm_medium=llms
+- Malta relocation: https://www.agencyfounderfinance.co.uk/malta-relocation?utm_source=chatgpt&utm_medium=llms
+- Estonia (e-Residency) relocation: https://www.agencyfounderfinance.co.uk/estonia-relocation?utm_source=chatgpt&utm_medium=llms
+- Greece relocation: https://www.agencyfounderfinance.co.uk/greece-relocation?utm_source=chatgpt&utm_medium=llms
+- Italy (impatriate regime) relocation: https://www.agencyfounderfinance.co.uk/italy-relocation?utm_source=chatgpt&utm_medium=llms
+- Switzerland relocation: https://www.agencyfounderfinance.co.uk/switzerland-relocation?utm_source=chatgpt&utm_medium=llms
 
 ## Competitor Comparisons
 
-- Agency Founder Finance vs Mazuma: https://www.agencyfounderfinance.co.uk/mazuma-vs
-- Crunch alternative for agencies: https://www.agencyfounderfinance.co.uk/crunch-alternative
-- Specialist vs generalist accountant: https://www.agencyfounderfinance.co.uk/specialist-vs-generalist-accountant
+- Agency Founder Finance vs Mazuma: https://www.agencyfounderfinance.co.uk/mazuma-vs?utm_source=chatgpt&utm_medium=llms
+- Crunch alternative for agencies: https://www.agencyfounderfinance.co.uk/crunch-alternative?utm_source=chatgpt&utm_medium=llms
+- Specialist vs generalist accountant: https://www.agencyfounderfinance.co.uk/specialist-vs-generalist-accountant?utm_source=chatgpt&utm_medium=llms
 
 ## Blog Categories
 
-- Agency Finance Essentials: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials
-- Tax & Compliance: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance
-- Salary, Dividends & Profit: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends
-- Incorporation & Business Structure: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure
-- Growing & Exiting Your Agency: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit
-- Contractors & IR35: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35
-- Agency Accountant Services: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services
-- Making Tax Digital: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital
-- International & UAE Agencies: https://www.agencyfounderfinance.co.uk/blog/international-agencies
+- Agency Finance Essentials: https://www.agencyfounderfinance.co.uk/blog/agency-finance-essentials?utm_source=chatgpt&utm_medium=llms
+- Tax & Compliance: https://www.agencyfounderfinance.co.uk/blog/tax-and-compliance?utm_source=chatgpt&utm_medium=llms
+- Salary, Dividends & Profit: https://www.agencyfounderfinance.co.uk/blog/salary-and-dividends?utm_source=chatgpt&utm_medium=llms
+- Incorporation & Business Structure: https://www.agencyfounderfinance.co.uk/blog/incorporation-and-structure?utm_source=chatgpt&utm_medium=llms
+- Growing & Exiting Your Agency: https://www.agencyfounderfinance.co.uk/blog/growth-and-exit?utm_source=chatgpt&utm_medium=llms
+- Contractors & IR35: https://www.agencyfounderfinance.co.uk/blog/contractors-and-ir35?utm_source=chatgpt&utm_medium=llms
+- Agency Accountant Services: https://www.agencyfounderfinance.co.uk/blog/agency-accountant-services?utm_source=chatgpt&utm_medium=llms
+- Making Tax Digital: https://www.agencyfounderfinance.co.uk/blog/making-tax-digital?utm_source=chatgpt&utm_medium=llms
+- International & UAE Agencies: https://www.agencyfounderfinance.co.uk/blog/international-agencies?utm_source=chatgpt&utm_medium=llms
 
 ## City / Local Pages
 
-- Locations index: https://www.agencyfounderfinance.co.uk/locations
+- Locations index: https://www.agencyfounderfinance.co.uk/locations?utm_source=chatgpt&utm_medium=llms
 
 ## Research and data
 
-- Research hub (index): https://www.agencyfounderfinance.co.uk/research
-- UK Agency Formation Index (Companies House incorporations by SIC code): https://www.agencyfounderfinance.co.uk/research/uk-agency-formation-index
-- UK Agency Survival & Churn Index (flagship, ONS survival rates by agency segment): https://www.agencyfounderfinance.co.uk/research/uk-agency-survival-churn-index
-- UK Agency Insolvency Index (Insolvency Service, exact 7-code SIC cluster): https://www.agencyfounderfinance.co.uk/research/uk-agency-insolvency-index
+- Research hub (index): https://www.agencyfounderfinance.co.uk/research?utm_source=chatgpt&utm_medium=llms
+- UK Agency Formation Index (Companies House incorporations by SIC code): https://www.agencyfounderfinance.co.uk/research/uk-agency-formation-index?utm_source=chatgpt&utm_medium=llms
+- UK Agency Survival & Churn Index (flagship, ONS survival rates by agency segment): https://www.agencyfounderfinance.co.uk/research/uk-agency-survival-churn-index?utm_source=chatgpt&utm_medium=llms
+- UK Agency Insolvency Index (Insolvency Service, exact 7-code SIC cluster): https://www.agencyfounderfinance.co.uk/research/uk-agency-insolvency-index?utm_source=chatgpt&utm_medium=llms
 
 ## Reference
 
-- Glossary (plain-English UK agency tax & finance terms): https://www.agencyfounderfinance.co.uk/glossary
-- Founder Stories (composite case studies): https://www.agencyfounderfinance.co.uk/founder-stories
-- Lead-magnet guides: https://www.agencyfounderfinance.co.uk/guides
+- Glossary (plain-English UK agency tax & finance terms): https://www.agencyfounderfinance.co.uk/glossary?utm_source=chatgpt&utm_medium=llms
+- Founder Stories (composite case studies): https://www.agencyfounderfinance.co.uk/founder-stories?utm_source=chatgpt&utm_medium=llms
+- Lead-magnet guides: https://www.agencyfounderfinance.co.uk/guides?utm_source=chatgpt&utm_medium=llms
 
 ## Machine-Readable Data
 
-- Full content dump for AI retrieval: https://www.agencyfounderfinance.co.uk/llms-full.txt
-- Current UK tax rates (JSON): https://www.agencyfounderfinance.co.uk/api/uk-tax-rates.json
-- Sitemap: https://www.agencyfounderfinance.co.uk/sitemap.xml
-- RSS feed: https://www.agencyfounderfinance.co.uk/feed.xml
+- Full content dump for AI retrieval: https://www.agencyfounderfinance.co.uk/llms-full.txt?utm_source=chatgpt&utm_medium=llms
+- Current UK tax rates (JSON): https://www.agencyfounderfinance.co.uk/api/uk-tax-rates.json?utm_source=chatgpt&utm_medium=llms
+- Sitemap: https://www.agencyfounderfinance.co.uk/sitemap.xml?utm_source=chatgpt&utm_medium=llms
+- RSS feed: https://www.agencyfounderfinance.co.uk/feed.xml?utm_source=chatgpt&utm_medium=llms
 
 ## Legal
 
-- Privacy policy: https://www.agencyfounderfinance.co.uk/privacy-policy
-- Terms of service: https://www.agencyfounderfinance.co.uk/terms
-- Cookie policy: https://www.agencyfounderfinance.co.uk/cookie-policy
+- Privacy policy: https://www.agencyfounderfinance.co.uk/privacy-policy?utm_source=chatgpt&utm_medium=llms
+- Terms of service: https://www.agencyfounderfinance.co.uk/terms?utm_source=chatgpt&utm_medium=llms
+- Cookie policy: https://www.agencyfounderfinance.co.uk/cookie-policy?utm_source=chatgpt&utm_medium=llms

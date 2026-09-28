@@ -87,6 +87,9 @@ const data: AudienceStage = {
     },
   ],
   ctaTitle: "Get specialist accounting for your growth stage",
+  closerBody:
+    "60 minutes with a specialist agency accountant on the questions that come up once payroll gets bigger than the founder: management accounts, R&D claims, employer cost. No obligation.",
+  pillarBlurb: "Scaling past the founder-does-everything stage? Our guides cover R&D credits, IR35 and management accounts.",
 };
 
 export default function ForGrowthStagePage() {

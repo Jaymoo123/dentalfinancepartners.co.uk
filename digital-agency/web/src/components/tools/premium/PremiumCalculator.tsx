@@ -41,7 +41,6 @@ import { ResultGateModal } from "./ResultGateModal";
 import { CalcResultCta } from "@/components/tools/CalcResultCta";
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { useInViewOnce } from "@accounting-network/web-shared/analytics/useInViewOnce";
-import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
 import { btnPrimary } from "@/components/ui/layout-utils";
 
 // The gate interstitial shows at most once per JS session.
@@ -502,8 +501,10 @@ export function PremiumCalculator({
   const interactedRef = useRef(false);
   const computeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Result gate: in-blog only, never for already-converted visitors.
-  const gated = placement === "blog" && !isConverted();
+  // Gate removed 2026-09-28 (parity ruling): the result always shows, one
+  // form sits under it, no interstitial. `isConverted` import kept below for
+  // the non-gated CTA branch's dependency, gated is permanently false.
+  const gated = false;
   const [revealed, setRevealed] = useState(false);
   const [gateOpen, setGateOpen] = useState(false);
   const showResult = !gated || revealed;

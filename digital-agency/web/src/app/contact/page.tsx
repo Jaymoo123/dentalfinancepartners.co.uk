@@ -77,15 +77,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section id="form" className="bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
             <div className="space-y-6 sm:space-y-8">
               <div className="border-l-4 border-indigo-600 bg-slate-50 p-6 sm:p-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Get in touch</h2>
                 <p className="text-base text-slate-700 leading-relaxed">
-                  Fill in the form and you will hear back within 24 hours, usually same day. A
-                  specialist firm from our partner network may contact you directly.
+                  We reply within 24 hours and one of our accountants comes back to you directly.
                 </p>
               </div>
 
@@ -94,7 +93,7 @@ export default function ContactPage() {
                 <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-slate-200">
                   <li className="flex items-start gap-2 sm:gap-3">
                     <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>
-                    <span>You hear back within 24 hours, from us or a specialist partner firm</span>
+                    <span>You hear back within 24 hours, and one of our accountants comes back to you directly</span>
                   </li>
                   <li className="flex items-start gap-2 sm:gap-3">
                     <span className="text-indigo-400 font-bold flex-shrink-0 text-base sm:text-lg">✓</span>

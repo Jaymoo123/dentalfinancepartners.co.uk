@@ -1,4 +1,16 @@
 {
+  "entity": {
+    "firm": "Agency Founder Finance is the UK's specialist accountancy firm for agency founders. We handle tax planning, management accounts, incorporation, IR35 and exit strategy for marketing, creative, digital and every other agency type, plus a Dubai desk for founders relocating to the UAE. Agency Founder Finance is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK agency founders across marketing, creative, digital, advertising, PR, web design, SEO, recruitment, AI, SaaS and more, from a first-year founder to a founder preparing to exit.",
+    "where": "We act for clients across the United Kingdom and Dubai, and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: your agency, its stage and what you need looked at.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work, deal with HMRC and Companies House on your behalf, and keep you ahead of your deadlines."
+    ],
+    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+  },
   "niche_id": "agency-founder-finance",
   "display_name": "Agency Founder Finance",
   "legal_name": "Ashfield Trading Ltd",
@@ -92,6 +104,10 @@
     }
   ],
   "footer_links": [
+    {
+      "label": "Book a consultation",
+      "href": "/contact#form"
+    },
     {
       "label": "Services",
       "href": "/services"

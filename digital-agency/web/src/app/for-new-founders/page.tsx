@@ -86,6 +86,9 @@ const data: AudienceStage = {
     },
   ],
   ctaTitle: "Get your first-year setup right",
+  closerBody:
+    "60 minutes with a specialist agency accountant, focused on the decisions that are cheapest to get right in year one: structure, VAT scheme, director's loan. No obligation.",
+  pillarBlurb: "New to running an agency? Our fundamentals guides cover incorporation, VAT and payroll from scratch.",
 };
 
 export default function ForNewFoundersPage() {
