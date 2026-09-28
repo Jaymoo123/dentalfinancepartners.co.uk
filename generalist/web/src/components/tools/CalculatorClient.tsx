@@ -38,7 +38,7 @@ export function CalculatorClient({
       resultWrapper={
         variant === "page"
           ? (node) => (
-              <ResultGate campaign={slug} ground="navy">
+              <ResultGate campaign={slug}>
                 {node}
               </ResultGate>
             )

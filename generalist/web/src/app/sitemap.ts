@@ -44,11 +44,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     languages: { "en-GB": url, "x-default": url },
   });
 
+  // ponytail: lastModified omitted wherever we do not track a real edit date
+  // (Property's pattern). It used to be `new Date()`, which told crawlers every
+  // static page changed on every deploy; an inaccurate lastmod gets the whole
+  // sitemap's dates ignored. Posts/guides below carry genuine dates.
   const entries: MetadataRoute.Sitemap = staticPaths.map((path) => {
     const url = `${base}${path}`;
     return {
       url,
-      lastModified: new Date(),
       changeFrequency: path === "/blog" ? "weekly" : "monthly",
       priority: path === "" ? 1 : 0.7,
       alternates: hreflang(url),
@@ -60,7 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${cat.slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -72,7 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/blog/${categorySlug}/${post.slug}`;
     entries.push({
       url,
-      lastModified: post.date ? new Date(post.date) : new Date(),
+      ...(post.date ? { lastModified: new Date(post.date) } : {}),
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: hreflang(url),
@@ -83,7 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/fundamentals/${guide.slug}`;
     entries.push({
       url,
-      lastModified: guide.date ? new Date(guide.date) : new Date(),
+      ...(guide.date ? { lastModified: new Date(guide.date) } : {}),
       changeFrequency: "monthly",
       priority: 0.9,
       alternates: hreflang(url),
@@ -94,7 +96,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/locations/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.85,
       alternates: hreflang(url),
@@ -105,7 +106,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/glossary/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.6,
       alternates: hreflang(url),
@@ -116,7 +116,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/guides/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.75,
       alternates: hreflang(url),
@@ -127,7 +126,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const url = `${base}/resources/${slug}`;
     entries.push({
       url,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.75,
       alternates: hreflang(url),

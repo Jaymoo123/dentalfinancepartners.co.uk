@@ -161,7 +161,7 @@ export default function BookingPicker({ token }: { token: string }) {
           </p>
         )}
         <p className="mt-3 text-xs text-neutral-500">
-          No obligation. A specialist will call you in your chosen window.
+          No obligation. One of our accountants will call you in your chosen window.
         </p>
       </div>
     </div>

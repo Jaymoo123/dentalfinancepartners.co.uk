@@ -11,7 +11,7 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus:outline-none";
+  "mt-2 w-full min-h-12 touch-manipulation border border-neutral-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-neutral-400 transition-colors focus:border-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500";
 
 const labelClass = "block text-sm font-medium text-slate-900";
 const errorClass = "mt-2 text-xs text-red-600";

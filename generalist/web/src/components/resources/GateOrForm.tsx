@@ -26,7 +26,7 @@ export function GateOrForm({
       formId="resource_block"
       messagePrefix={`[Resource block: ${topic}]`}
       heading={t?.ctaCopy || "Get a free review of your situation"}
-      blurb="Skip the spreadsheet. Tell us about your situation and a specialist will review your position and the next sensible step, with no obligation."
+      blurb="Skip the spreadsheet. Tell us about your situation and one of our accountants will review your position and the next sensible step, with no obligation."
       submitLabel="Request my free review"
       className="my-10 rounded-xl bg-slate-50 p-6 sm:p-8 ring-1 ring-slate-200/70"
     />

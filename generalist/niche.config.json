@@ -19,6 +19,18 @@
     "descriptor": "",
     "privacy_policy_url": null
   },
+  "entity": {
+    "firm": "Holloway Davies is a UK accountancy practice for limited company directors, contractors, sole traders and partnerships. We handle corporation tax, VAT, payroll, R&D tax credits, Making Tax Digital and exit planning, alongside statutory accounts and self assessment. Holloway Davies is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK limited companies, contractors, sole traders and partnerships, from a single-director start-up to an established business with payroll and R&D activity.",
+    "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: what the business is, what you need looked at.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work, deal with HMRC and Companies House on your behalf, and keep you ahead of your deadlines."
+    ],
+    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+  },
   "domain": "www.hollowaydavies.co.uk",
   "tagline": "Accountants for UK businesses of every shape",
   "description": "Holloway Davies. Fixed-fee accountants for UK limited companies, contractors, sole traders and partnerships. Corporation tax, VAT, payroll, R&D credits, MTD, and exit planning. National coverage, fixed fees.",

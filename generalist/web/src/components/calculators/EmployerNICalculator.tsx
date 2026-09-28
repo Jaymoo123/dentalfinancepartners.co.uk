@@ -70,7 +70,7 @@ export function EmployerNICalculator({
 } = {}) {
   const resultWrapper = (node: React.ReactNode) =>
     gateCampaign ? (
-      <ResultGate campaign={gateCampaign} ground="navy">
+      <ResultGate campaign={gateCampaign}>
         {node}
       </ResultGate>
     ) : (
@@ -173,8 +173,9 @@ export function EmployerNICalculator({
                 className="grid grid-cols-1 sm:grid-cols-[2fr_1fr_auto] gap-3 items-end bg-slate-50 p-4 border border-slate-200"
               >
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1">Role</label>
+                  <label htmlFor={`employee-role-${e.id}`} className="block text-xs font-bold text-slate-700 mb-1">Role</label>
                   <input
+                    id={`employee-role-${e.id}`}
                     type="text"
                     value={e.role}
                     onChange={(ev) => updateEmployee(e.id, { role: ev.target.value })}
@@ -182,10 +183,11 @@ export function EmployerNICalculator({
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1">Gross salary</label>
+                  <label htmlFor={`employee-salary-${e.id}`} className="block text-xs font-bold text-slate-700 mb-1">Gross salary</label>
                   <div className="flex items-center gap-1">
                     <span className="text-slate-500 text-sm">£</span>
                     <input
+                      id={`employee-salary-${e.id}`}
                       type="number"
                       value={e.salary}
                       onChange={(ev) =>

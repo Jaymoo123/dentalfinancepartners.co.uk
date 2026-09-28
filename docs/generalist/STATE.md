@@ -1,5 +1,31 @@
 # Generalist (Holloway Davies) — site state
 
+> **2026-09-28 phase 0 parity (estate parity plan, not yet deployed).** Positioning:
+> "partner network" / "specialist firm" / "a specialist will" copy removed from every
+> prospect-facing surface (complete, contact, blog inline form, mobile tool slot,
+> result-gate modal, booking picker, gate-or-form, assistant chat opener, VIP SMS
+> nurture step); consent text and privacy policy left untouched (rule-8 carve-out).
+> Corrects the line above: the "editorial/partner team" framing is now a NEW
+> defect against the 2026-09-28 ruling, not settled fact; the STATE entries below
+> from 09-11/09-12 describing that framing are historical, not current voice.
+> `niche.config.json` gained an `entity` block (Property's shape). Calculator
+> `ResultGate` de-gated to match Property's 2026-09-27 change: no more frosted-glass
+> hold + modal, result renders immediately with `ResultCaptureForm` (new file)
+> inline beneath it; `ResultGateModal`/`HeldResult` left in place (still used by the
+> in-blog premium-calculator embed, a separate mechanism, flagged for the Opus/owner
+> read). Nurture: `lead-nurture.ts` main 8-step sequence `delayHours` was carrying
+> the cumulative total in the gap field (`0,0,4,24,48,96,168,264`), corrected to
+> Property's actual gaps (`0,0,4,20,24,48,72,96`); instant-ack email now states the
+> 24-hour promise. Homepage `heroStats` mapper guarded against non-numeric values
+> the same way `/services` already is (was silently rendering 0). Employer NI
+> calculator's per-employee Role/Gross salary inputs got `htmlFor`/`id` pairs (were
+> visually labelled but not programmatically associated). `/contact` and other
+> `LeadForm` fields gained a visible `focus-visible` ring. `sitemap.ts` no longer
+> stamps `new Date()` on every static/category/location/glossary/guide/resource
+> entry on every build; `lastModified` omitted where no real date exists, matching
+> Property's pattern. Full detail: `docs/generalist/PHASE0_2026-09-28.md`.
+> `npx tsc --noEmit` clean, `npx vitest run` 309/309 green. Nothing deployed.
+
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`.** (claims audit, high-street
 > mechanic wave 5, the six-phase design port, C1 metas + C2 expand, and everything else
 > committed by that date.)

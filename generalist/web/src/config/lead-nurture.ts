@@ -274,7 +274,8 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 }
 
 // ── The contactability sequence ───────────────────────────────────────────────
-// 8 steps. Cumulative delay hours from step 0: 0, 0, 4, 24, 48, 96, 168, 264.
+// 8 steps. delayHours is the GAP since the previous step (Property's shape):
+// 0, 0, 4, 20, 24, 48, 72, 96 (cumulative from step 0: 0, 0, 4, 24, 48, 96, 168, 264).
 // Service-only follow-up about the enquirer's own enquiry (PECR solicited posture).
 // Faceless team voice, no named individual, no credential claims, no em-dashes.
 
@@ -291,6 +292,7 @@ const STEPS: LeadNurtureStep[] = [
         "Just reply with a time that suits and a member of the team will call you.",
         [
           "Thanks for your enquiry, it has just come through to us and a member of the team is ready to help.",
+          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of where things stand, about 20 minutes, with no charge and no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
@@ -326,7 +328,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Holloway Davies again. Enquiries like yours are exactly what the team handles, so we have set time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Holloway Davies again. Enquiries like yours are exactly what the team handles, so we have set time aside this week. Reply YES and one of our accountants will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -335,7 +337,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -350,7 +352,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email ────────────────────────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -371,7 +373,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -386,7 +388,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email"],
     preferMonday: true,
     buildMessages: (c) => [
@@ -407,7 +409,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -551,7 +553,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "A useful note from the team, and a free call if you would like one.",
           [
             "One quick pointer while your enquiry sits with us. A question many small business owners overlook is whether they are on the most tax-efficient salary and dividend split for their situation. It is worth a review, whoever handles your accounting.",
-            `And if you would like a specialist to look at the whole picture, just reply with ${ask} and the team will arrange a free call.`,
+            `And if you would like one of our accountants to look at the whole picture, just reply with ${ask} and the team will arrange a free call.`,
           ],
           "detail_capture_day3",
           {

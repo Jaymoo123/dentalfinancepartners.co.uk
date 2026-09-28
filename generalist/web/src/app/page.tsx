@@ -109,8 +109,11 @@ const services = [
  * rather than in the config: "24h" becomes target 24 with suffix "h".
  */
 const heroStats = siteStats.map(({ value, label }) => {
-  const match = /^([\d.]+)(.*)$/.exec(value);
-  return { target: Number(match?.[1] ?? 0), suffix: match?.[2] || undefined, label };
+  const match = /^(\d+(?:\.\d+)?)(.*)$/.exec(value);
+  if (!match) return { target: 0, suffix: value, label };
+  const [, digits, suffix] = match;
+  const decimals = digits.split(".")[1]?.length ?? 0;
+  return { target: Number(digits), decimals, suffix, label };
 });
 
 const faqs = [

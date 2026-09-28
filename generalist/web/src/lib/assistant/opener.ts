@@ -42,12 +42,12 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   "director-pay": [
     "Working out the best way to pay yourself? I can pull up the tool that shows the salary and dividend split.",
     "Still weighing salary versus dividends? I can point you to a plain run-through or the planner, your call.",
-    "A free call with a specialist will confirm the most efficient way to pay yourself, want me to set one up?",
+    "A free call with one of our accountants will confirm the most efficient way to pay yourself, want me to set one up?",
   ],
   "limited-company": [
     "Sorting your company tax? I can point you to the right tool in a second.",
     "Want a hand getting your limited company tax straight? There is a planner that makes it simple.",
-    "A free call with a specialist will make sure nothing is slipping through, want me to arrange it?",
+    "A free call with one of our accountants will make sure nothing is slipping through, want me to arrange it?",
   ],
   "sole-trader": [
     "Working out your take-home as a sole trader? There is a calculator that does the fiddly part.",
@@ -62,7 +62,7 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   "vat-mtd": [
     "Getting your head round VAT schemes? I can pull up the tool that picks the cheaper one.",
     "Not sure which VAT scheme fits? I can run you through the quick comparison.",
-    "A specialist can confirm the right VAT scheme so there are no surprises, free, shall I arrange it?",
+    "One of our accountants can confirm the right VAT scheme so there are no surprises, free, shall I arrange it?",
   ],
   payroll: [
     "Working out what a hire really costs? There is a tool that builds the full figure.",
@@ -72,17 +72,17 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   rnd: [
     "Wondering if you can claim R&D relief? I can point you to the estimator.",
     "Not sure you clear the R&D intensity test? I can run you through the quick checker.",
-    "A specialist can scope an R&D claim properly, the first call is free, want me to set one up?",
+    "One of our accountants can scope an R&D claim properly, the first call is free, want me to set one up?",
   ],
   "exit-cgt": [
     "Planning an exit? There is a tool that shows the CGT and the BADR timing.",
     "CGT on a business sale has a few moving parts. Want me to point you to the calculator and guide?",
-    "Before you put a figure on a sale, a specialist can sanity-check the CGT for you, free. Fancy a quick call?",
+    "Before you put a figure on a sale, one of our accountants can sanity-check the CGT for you, free. Fancy a quick call?",
   ],
   compliance: [
     "Anything I can help you find on your accounts or deadlines? I can point you to a quick answer.",
     "Want a hand keeping on top of your filing deadlines? Happy to help.",
-    "A free first call with a specialist is the quickest way to get your compliance sorted, want me to set one up?",
+    "A free first call with one of our accountants is the quickest way to get your compliance sorted, want me to set one up?",
   ],
 };
 
@@ -90,13 +90,13 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
 const COMBO_SOLE_INC: [string, string, string] = [
   "Trying to work out if going limited beats staying a sole trader? That is the real question, and I can help you start on it.",
   "Sole trader versus limited company is a close call for a lot of owners. Want me to line up the comparison?",
-  "This is exactly what a specialist untangles in one free call. Want me to arrange it?",
+  "This is exactly what one of our accountants untangles in one free call. Want me to arrange it?",
 ];
 
 /** Used-calculator (sanity-check opener). */
 const USED_CALC: [string, string, string] = [
-  "You have already run the numbers. Want me to point out anything that might be worth a specialist eye?",
-  "The calculator gives a picture; a specialist confirms whether it fits your actual situation. Want a quick check?",
+  "You have already run the numbers. Want me to point out anything worth a second look from one of our accountants?",
+  "The calculator gives a picture; one of our accountants confirms whether it fits your actual situation. Want a quick check?",
   "Ready to sanity-check those results? A free call goes further than any calculator.",
 ];
 
@@ -104,7 +104,7 @@ const USED_CALC: [string, string, string] = [
 const GENERIC: [string, string, string] = [
   "Not sure what you are looking for? I can point you to the right tool or a quick answer.",
   "Happy to help you find what you need. What is the main thing on your mind?",
-  "The quickest way to get a straight answer is a free call with a specialist. Want me to set one up?",
+  "The quickest way to get a straight answer is a free call with one of our accountants. Want me to set one up?",
 ];
 
 /**
@@ -149,9 +149,9 @@ export function frictionOpener(profile: JourneyProfile): string {
   const t = profile.primaryTopic;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Looks like the form gave you a bit of trouble. If it is easier, drop me a question about ${noun} and I will get a specialist to reply directly.`;
+    return `Looks like the form gave you a bit of trouble. If it is easier, drop me a question about ${noun} and I will get one of our accountants to reply directly.`;
   }
-  return "Looks like the form gave you a bit of trouble. Drop me a question and I will get a specialist to reply directly.";
+  return "Looks like the form gave you a bit of trouble. Drop me a question and I will get one of our accountants to reply directly.";
 }
 
 /** Exit opener (fires on exit-intent trigger). */
@@ -159,7 +159,7 @@ export function exitOpener(profile: JourneyProfile): string {
   const t = profile.primaryTopic;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Before you go: a specialist can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
+    return `Before you go: one of our accountants can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
   }
-  return "Before you go: a free call with a specialist is often the quickest way to get a straight answer. Fancy it?";
+  return "Before you go: a free call with one of our accountants is often the quickest way to get a straight answer. Fancy it?";
 }

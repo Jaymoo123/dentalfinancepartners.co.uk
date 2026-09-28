@@ -104,7 +104,7 @@ export function ResultGateModal({
           formId="calc_result_gate"
           messagePrefix={`[Result gate: ${campaign}]`}
           heading={topic?.ctaCopy ?? "Want a specialist to check your figure?"}
-          blurb="A calculator gives the shape of the answer. Tell us your situation and a specialist will confirm your exact figure and the legitimate ways to reduce it, with no obligation."
+          blurb="A calculator gives the shape of the answer. Tell us your situation and one of our accountants will confirm your exact figure and the legitimate ways to reduce it, with no obligation."
           submitLabel="Get my figure confirmed"
           successText="Thanks, we'll be in touch within 24 hours. Your result is below."
           className="mt-2"

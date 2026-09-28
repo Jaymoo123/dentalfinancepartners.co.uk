@@ -140,8 +140,8 @@ export default function ContactPage() {
                   of them. Reassurance beside a capture field must not say
                   something the policy denies. */}
               <p className="mb-6 text-sm text-slate-600">
-                Takes about a minute. Who receives your enquiry, and what we share, is set out in
-                our{" "}
+                Takes about a minute. One of our accountants comes back to you directly. Full
+                detail on what we share is set out in our{" "}
                 <Link
                   href="/privacy-policy"
                   className="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800"
