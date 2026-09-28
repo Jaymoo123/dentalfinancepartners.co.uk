@@ -90,6 +90,18 @@ const organizationJsonLd = {
   sameAs: [
     "https://find-and-update.company-information.service.gov.uk/company/16358723",
   ],
+  // Shape matches packages/web-shared/schema/organization.ts buildOrganization()'s
+  // parentOrganization branch exactly (Medical/generalist use the shared builder
+  // directly; this file hand-rolls the node, so the shape is reproduced here).
+  parentOrganization: {
+    "@type": "Organization",
+    name: "Ashfield Trading Ltd",
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "GB Companies House Number",
+      value: "16358723",
+    },
+  },
 };
 
 export const viewport: Viewport = {

@@ -58,7 +58,7 @@ export default function ContactPage() {
     </section>
     {/* The form itself is src/components/forms/LeadForm.tsx, another builder's
         lease this phase. Untouched here: this file is the page shell only. */}
-    <section className={`bg-white ${sectionY}`}>
+    <section id="form" className={`bg-white ${sectionY}`}>
       <div className={contentNarrow}>
         <LeadForm />
       </div>

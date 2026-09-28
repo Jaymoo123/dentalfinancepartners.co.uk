@@ -122,7 +122,7 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
         companyItems: [
           { label: "About", href: "/about" },
           { label: "Contact", href: "/contact" },
-          { label: "Book a consultation", href: "/book" },
+          { label: "Book a consultation", href: "/contact#form" },
         ],
         // showBuilderCredit omitted deliberately: default true is the owner's
         // estate-wide ruling 2026-09-11. Note it is a NEW visible line and a

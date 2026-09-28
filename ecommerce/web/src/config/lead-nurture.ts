@@ -293,7 +293,8 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 }
 
 // ── Contactability sequence ───────────────────────────────────────────────────
-// 8 steps. Delays from step 0: 0, 0, 4, 24, 48, 96, 168, 264 hours.
+// 8 steps. delayHours is the GAP to the previous step, not a cumulative
+// offset: 0, 0, 4, 20, 24, 48, 72, 96.
 // Steps 0+1 fire at submit. Steps 2-7 are driven by the hourly cron.
 // Topics: VAT and cross-border selling, marketplace and platform reporting,
 // bookkeeping and inventory, business structure, self assessment.
@@ -355,7 +356,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -370,7 +371,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email ────────────────────────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -391,7 +392,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => {
       const smsBody =
@@ -408,7 +409,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email", "sms"],
     preferMonday: true,
     buildMessages: (c) => {
@@ -439,7 +440,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(

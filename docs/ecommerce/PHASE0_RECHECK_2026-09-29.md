@@ -118,3 +118,34 @@ page is being prepared", which is thin for a money page carrying a lead form.
 ## Estate summariser note (2026-09-29)
 Final status: NOT SAFE TO DEPLOY.
 Blocking item: lead-nurture delayHours was never changed from base (H3), no parentOrganization (M3) and the footer Book a consultation link reaches a page with no form (M7).
+
+## Fix round (2026-09-29)
+
+1. **H3** `ecommerce/web/src/config/lead-nurture.ts` lines 306-443 (contactability
+   track, `t0_email` through `breakup_day11`). Before: `delayHours` 0, 0, 4, 24,
+   48, 96, 168, 264. After: 0, 0, 4, 20, 24, 48, 72, 96 (gap-per-step, matching
+   Property's `Property/web/src/config/lead-nurture.ts`). Comment at line
+   296-297 corrected to match. Second track (`config/lead-nurture.ts` lines
+   525-601, `detail_capture`) untouched: 0, 24, 48, 168. No test asserted the old
+   values; `vitest run` still 50/50.
+2. **M3** `ecommerce/web/src/app/layout.tsx` lines 61-105 (`organizationJsonLd`,
+   the node `app/layout.tsx` actually renders on every page - confirmed
+   `buildOrganizationJsonLd` in `lib/schema.ts` is dead per its own comment at
+   `schema.ts:115-124`). Added a `parentOrganization` field after `sameAs`
+   (lines 95-104), shaped exactly like `packages/web-shared/schema/organization.ts`
+   `buildOrganization()`'s `parentOrganization` branch (`@type: "Organization"`,
+   `name: "Ashfield Trading Ltd"`, `identifier: {"@type":"PropertyValue",
+   propertyID:"GB Companies House Number", value:"16358723"}`). All prior
+   fields (name, legalName, url, description, logo, address, areaServed,
+   knowsAbout, sameAs) are unchanged; diff is a pure addition (`git diff --stat`
+   = 12 insertions, 0 deletions on this file). JSON diff summary: before had no
+   `parentOrganization` key; after adds exactly that one key with the object
+   above, nothing else changed.
+3. **M7** `ecommerce/web/src/app/contact/page.tsx` line 61: added `id="form"`
+   to the `<section>` wrapping `LeadForm` (only markup change, no copy touched).
+   `ecommerce/web/src/components/layout/PageShell.tsx` line 122: footer
+   "Book a consultation" href changed from `/book` to `/contact#form`. `/book`
+   page itself untouched.
+
+tsc: `npx tsc --noEmit -p ecommerce/web` - clean, no errors.
+vitest: `npx vitest run` (ecommerce/web) - 7 files, 50/50 tests passed.
