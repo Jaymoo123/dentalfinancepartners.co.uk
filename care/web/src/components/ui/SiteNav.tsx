@@ -30,14 +30,21 @@ export function SiteNav() {
             </li>
           ))}
         </ul>
-        <Link
-          href="/contact"
-          data-cta="header_contact"
-          data-cta-placement="header"
-          className={`${btnPrimary} hidden md:inline-flex min-h-0 px-5 py-2.5 text-sm`}
-        >
-          Get in touch
-        </Link>
+        {/* The `hidden md:inline-flex` this used to carry lost the cascade race:
+            btnPrimary already sets `inline-flex`, both land in the same layer,
+            and the 2026-09-28 rendered read measured the button VISIBLE at 390.
+            The width gate now lives on a wrapper that sets no display of its
+            own, and it is lg (1024) per the parity brief. */}
+        <div className="hidden lg:block">
+          <Link
+            href="/contact"
+            data-cta="header_contact"
+            data-cta-placement="header"
+            className={`${btnPrimary} min-h-0 px-5 py-2.5 text-sm`}
+          >
+            Get in touch
+          </Link>
+        </div>
         <Link
           href="/contact"
           className="md:hidden text-sm font-semibold text-[#7d6b9e]"

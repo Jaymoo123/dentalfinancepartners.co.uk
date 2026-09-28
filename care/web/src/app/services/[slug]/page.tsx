@@ -128,8 +128,11 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         contained
         ground="slate"
         eyebrow="Free first call, then a fixed fee in writing"
-        title={`Talk to a care sector specialist about ${service.title}`}
-        description="Tell us about your situation and we will reply within 24 hours."
+        title={service.closer?.title ?? `Talk to a care sector specialist about ${service.title}`}
+        description={
+          service.closer?.description ??
+          "Tell us where your service stands and we will reply within 24 hours."
+        }
         proofPoints={[]}
         formTitle="Get in touch"
         form={<LeadForm submitLabel="Send enquiry" />}

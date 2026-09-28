@@ -209,7 +209,7 @@ export const cqcFeeCalculatorTool: GenericTool = {
       headline: {
         label: "Estimated annual CQC regulatory fee",
         value: gbp(r.annualFee),
-        sub: `${typeLabel} — ${r.bandLabel} — ${CQC_FEE_SCHEME_YEAR} scheme`,
+        sub: `${typeLabel}, ${r.bandLabel}, ${CQC_FEE_SCHEME_YEAR} scheme`,
         tone: "default",
       },
       rows: [

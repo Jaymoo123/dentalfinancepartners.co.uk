@@ -25,3 +25,21 @@ body {
   color: var(--ink);
   font-family: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
+
+/* ============================================================
+   FOCUS RING FLOOR
+   The shared tools Field (packages/web-shared/tools/components/Field.tsx:88)
+   carries both `focus:outline-none` and a focus-visible outline utility. Both
+   land in the same layer and `outline-style: none` wins, so the 2026-09-28
+   rendered read measured outline-style none with box-shadow none on every
+   calculator input: no visible focus indicator at all. The fix belongs in that
+   shared file and is logged for the shared agent. Until it lands, one unlayered
+   rule here guarantees the floor for every control on the site, because an
+   unlayered rule beats every Tailwind utility.
+   ============================================================ */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #7d6b9e;
+  outline-offset: 2px;
+}

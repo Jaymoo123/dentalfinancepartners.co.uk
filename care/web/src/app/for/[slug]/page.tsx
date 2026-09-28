@@ -130,8 +130,11 @@ export default async function CareHubPage({ params }: { params: Promise<{ slug: 
         contained
         ground="slate"
         eyebrow="Free first call, then a fixed fee in writing"
-        title={`Talk to a care sector specialist about ${hub.title}`}
-        description={`Tell us about your ${hub.title.toLowerCase()} situation and we will reply within 24 hours.`}
+        title={hub.closer?.title ?? `Talk to a care sector specialist about ${hub.title}`}
+        description={
+          hub.closer?.description ??
+          "Tell us where your service stands and we will reply within 24 hours."
+        }
         proofPoints={[]}
         formTitle="Get in touch"
         form={<LeadForm submitLabel="Send enquiry" />}
