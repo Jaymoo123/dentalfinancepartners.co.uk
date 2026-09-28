@@ -115,7 +115,7 @@ export const llpProfitShareTool: GenericTool = {
     return {
       headline: {
         label: r.partners.length > 0 ? `${r.partners.length} allocations` : "No partners",
-        value: r.partners.length > 0 ? gbp(Math.round(topPartner.share)) : ",",
+        value: r.partners.length > 0 ? gbp(Math.round(topPartner.share)) : "–",
         sub: r.partners.length > 0 ? `Highest: ${topPartner.label}` : "Add partners to see allocations",
         tone: "default" as const,
       },

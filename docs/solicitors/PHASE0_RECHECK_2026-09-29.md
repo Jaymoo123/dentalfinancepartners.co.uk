@@ -111,3 +111,25 @@ sitting below an already-visible result.
 ## Estate summariser note (2026-09-29)
 Final status: SAFE AFTER FIXES.
 Blocking item: the bare comma at llp-profit-share.ts:118 (M5) and the missing pipeline/submit_indexnow.py (M6); the 2026/27 title bump is an owner call.
+
+## Fix round (2026-09-29)
+
+**M5** `Solicitors/web/src/lib/tools/configs/llp-profit-share.ts:118`.
+Before: `value: r.partners.length > 0 ? gbp(...) : ","` — bare comma in the "Highest"
+tile with zero partners (em-dash sweep collapsed the dash placeholder glyph).
+Base glyph (`git show 8e1043d0:...llp-profit-share.ts`) was an em-dash `—`.
+After: `"–"` (en dash, U+2013), not an em-dash, per instruction.
+
+**M6** No `Solicitors/pipeline/submit_indexnow.py` existed. Created it, mirroring
+`Property/pipeline/submit_indexnow.py`'s shim exactly, `SITE_KEY = "solicitors"`.
+`optimisation_engine/indexing/config.py` already had a `solicitors` entry
+(host `www.accountsforlawyers.co.uk`, key `b5e67f188da49b020b33f4e8d08cb384`) matching
+the existing key file `Solicitors/web/public/b5e67f188da49b020b33f4e8d08cb384.txt` — no
+new key generated, config.py untouched (out of edit scope, already correct). Script not run.
+
+**L2** Title year 2025/26 → 2026/27 on `web/src/app/page.tsx`: left as is. 2026/27 is
+the current UK tax year as of 2026-09-28, so the bump is a factual correction, not
+agent prose — no action needed.
+
+tsc: `npx tsc --noEmit -p Solicitors/web` — pass, 0 errors.
+vitest: `npx vitest run` (Solicitors/web) — 18 files, 219 tests passed.
