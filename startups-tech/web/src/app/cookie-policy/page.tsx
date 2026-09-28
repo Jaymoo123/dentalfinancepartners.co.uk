@@ -12,11 +12,13 @@ export const metadata: Metadata = {
     description: `How ${siteConfig.name} uses cookies and similar technologies.`,
     url: `${siteConfig.url}/cookie-policy`,
     type: "website",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cookie policy",
     description: `How ${siteConfig.name} uses cookies and similar technologies.`,
+    images: ["/api/og"],
   },
 };
 
@@ -45,18 +47,6 @@ export default function CookiePolicyPage() {
           This data is anonymous. We do not store your IP address (only a country derived from it), we do not collect your name, email or phone number in these events, and we do not sell or share this data.
         </p>
 
-        <h3 className="mt-4 text-lg font-semibold text-neutral-900">First-party analytics</h3>
-        <p>
-          We run our own privacy-first analytics so we can understand how visitors use the Site and improve
-          it. To do this we store two random identifiers in your browser (a visitor identifier and a session
-          identifier) and record anonymous interaction events such as pages viewed, scrolling, clicks and
-          form steps. The lawful basis is our legitimate interest in measuring and improving the Site.
-        </p>
-        <p>
-          This data is anonymous. We do not store your IP address (only a country derived from it), we do
-          not collect your name, email or phone number in these events, and we do not sell or share this
-          data.
-        </p>
         <h3 className="mt-4 text-lg font-semibold text-neutral-900">Third-party analytics</h3>
         <p>
           This Site does not use Google Analytics or any other third-party analytics cookies. The only

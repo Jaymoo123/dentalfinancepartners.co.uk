@@ -26,7 +26,7 @@ const PAGE_PATH = "/research/tech-startup-survival-index";
 const HORIZON_YEARS = ["1", "2", "3", "4", "5"] as const;
 
 export const metadata: Metadata = {
-  title: "UK Tech Startup Survival Curves | Founder Tax Partners",
+  title: "UK Tech Startup Survival Curves",
   description: `${fmtPercent0(headline.techFiveYearSurvivalPct)} of UK tech companies born in ${headline.fullFiveYearCohort} were still active five years later, versus ${fmtPercent0(headline.allIndustryFiveYearSurvivalPct)} across all industries. Sourced from ONS Business Demography official statistics.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
@@ -34,6 +34,12 @@ export const metadata: Metadata = {
     description: `Only ${fmtPercent0(headline.techFiveYearSurvivalPct)} of UK tech startups born in ${headline.fullFiveYearCohort} survived five years. ONS official cohort survival data.`,
     url: `${siteConfig.url}${PAGE_PATH}`,
     type: "article",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UK Tech Startup Survival Curves | Founder Tax Partners",
+    images: ["/api/og"],
   },
 };
 
@@ -261,7 +267,7 @@ export default function TechStartupSurvivalIndexPage() {
               }))}
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-500">
             Bars show two-year survival percentage. Source: ONS Business Demography (Table 4.2),
             OGL v3.0.
           </p>
@@ -333,7 +339,7 @@ export default function TechStartupSurvivalIndexPage() {
                 Download the full dataset (CSV)
               </Link>
             </p>
-            <p className="text-xs text-neutral-400">Last updated: {meta.lastUpdated}.</p>
+            <p className="text-xs text-neutral-500">Last updated: {meta.lastUpdated}.</p>
           </div>
         </div>
       </section>
@@ -364,7 +370,7 @@ export default function TechStartupSurvivalIndexPage() {
               Pre-seed founder guide
             </Link>
           </div>
-          <div className="mt-10 max-w-xl">
+          <div className="mt-10 max-w-xl bg-white p-6 sm:p-8">
             <LeadForm redirectOnSuccess={false} submitLabel="Talk to us" />
           </div>
         </div>

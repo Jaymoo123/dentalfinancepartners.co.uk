@@ -1,0 +1,278 @@
+{
+  "ts": "2026-09-28T23:03:25.029Z",
+  "site": "startups-tech",
+  "base": "http://localhost:3201",
+  "sha": "eeb3dbef",
+  "served_title": "Founder Tax Partners | Accountants for Funded and Scaling UK Startups",
+  "purpose": "Pre-port data-cta TRIPLE snapshot. sweep_baseline.json records counts; a count cannot detect trap 22, where the same button keeps its count but flips its goal or placement on cutover and splits the live funnel. Diff this file after every phase touching chrome or CTAs.",
+  "routes": 66,
+  "scanned": 66,
+  "non_interactive_ctas": [],
+  "distinct_triples": {},
+  "per_route": {
+    "/": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research/startup-formation-survival-index": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research/rd-tax-relief-index": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research/uk-tech-funding-reliefs-index": {
+      "count": 0,
+      "ctas": []
+    },
+    "/about": {
+      "count": 0,
+      "ctas": []
+    },
+    "/contact": {
+      "count": 0,
+      "ctas": []
+    },
+    "/cookie-policy": {
+      "count": 0,
+      "ctas": []
+    },
+    "/terms": {
+      "count": 0,
+      "ctas": []
+    },
+    "/privacy-policy": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research/tech-startup-survival-index": {
+      "count": 0,
+      "ctas": []
+    },
+    "/research/uk-tech-formations-index": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/rd-tax-claims": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/seis-eis-advance-assurance": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/emi-scheme-setup": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/share-schemes": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/fractional-cfo": {
+      "count": 0,
+      "ctas": []
+    },
+    "/services/core-compliance": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/pre-seed-founders": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/saas-companies": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/funded-startups": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/rd-relief-estimator": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/software-development-companies": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi": {
+      "count": 0,
+      "ctas": []
+    },
+    "/for/fintech-startups": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/seis-eis-relief-calculator": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/emi-vs-unapproved-calculator": {
+      "count": 0,
+      "ctas": []
+    },
+    "/calculators/founder-dividend-vs-salary-calculator": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/seis-and-eis": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/saas-and-tech-finance": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/startup-compliance": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development/rd-claim-collapse-hmrc-clampdown": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/startup-compliance/uk-tech-company-formation-boom": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/saas-and-tech-finance/founder-salary-vs-dividends-2026-27": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/startup-compliance/uk-tech-startup-5-year-survival-rate": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/seis-and-eis/where-uk-startup-equity-money-goes": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/seis-and-eis/eis3-certificate-explained": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/emi-annual-return-ers-walkthrough": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/emi-disqualifying-events": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/emi-option-valuation": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/emi-vs-csop": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/emi-qualifying-company-rules": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development/eris-rd-intensive-30-percent": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/growth-shares-explained": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development/merged-rd-scheme-explained": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/seis-and-eis/how-to-apply-for-seis-eis-advance-assurance": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/option-pool-basics-uk-founders": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development/rd-claim-notification-6-month-deadline": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development/rd-additional-information-form-guide": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/saas-and-tech-finance/saas-revenue-recognition-uk-guide": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/section-431-elections": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/seis-and-eis/seis-company-checklist": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/seis-and-eis/seis-vs-eis-explained": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/seis-and-eis/seis1-eis1-compliance-statements": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development/software-rd-eligibility-what-qualifies": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/saas-and-tech-finance/startup-cfo-pay-and-fractional-cfo-cost": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/research-and-development/startup-grants-and-rd-interaction": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/stock-vesting-explained": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/startup-compliance/uk-startup-grants-landscape": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/share-schemes-and-emi/val231-emi-valuation-form-walkthrough": {
+      "count": 0,
+      "ctas": []
+    },
+    "/blog/saas-and-tech-finance/vat-for-saas-place-of-supply": {
+      "count": 0,
+      "ctas": []
+    }
+  }
+}

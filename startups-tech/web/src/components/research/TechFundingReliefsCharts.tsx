@@ -6,10 +6,25 @@
  * ponytail: a handful of static bar charts don't justify adding recharts as a
  * new dependency; revisit if this site later needs interactive tooltips/zoom.
  */
+import type { SVGProps } from "react";
 import { fmtGBPm, fmtNumber } from "@/lib/research/tech-funding-reliefs-index";
 
 const BRAND = "#4f46e5";
 const MUTED = "#c7d2fe";
+
+// ponytail/fix (hydration #418, 2026-09-29): a nested <title> host element
+// inside these bar SVGs is treated by React 19's SSR as a hoistable <head>
+// title resource (react-dom-server pushTitleImpl), even though it is nested
+// inside <svg>, so the server emits an empty <title></title> and the client
+// then hydrates the real tooltip text into it -- a genuine text mismatch.
+// The global `title` attribute gives the same native hover tooltip without
+// rendering a `<title>` host element, so it sidesteps the bug entirely.
+// React's SVG prop types don't list `title` (it's an HTML-only attribute in
+// the type defs, though browsers honour it on any element), hence this cast.
+type RectTitleProps = SVGProps<SVGRectElement> & { title?: string };
+function TitledRect(props: RectTitleProps) {
+  return <rect {...(props as SVGProps<SVGRectElement>)} />;
+}
 
 // ---------------------------------------------------------------------------
 // Annual bar chart: amount raised (£m) over the full time series
@@ -40,18 +55,15 @@ export function AnnualAmountChart({
         const isLatest = i === rows.length - 1;
         return (
           <g key={r.year}>
-            <rect
+            <TitledRect
               x={x}
               y={y}
               width={barW}
               height={barH}
               fill={isLatest ? BRAND : MUTED}
               rx={1}
-            >
-              <title>
-                {r.year}: {fmtGBPm(r.amountAllM)}
-              </title>
-            </rect>
+              title={`${r.year}: ${fmtGBPm(r.amountAllM)}`}
+            />
           </g>
         );
       })}
@@ -102,11 +114,16 @@ export function AnnualSeriesChart({
         const y = h - padB - barH;
         const isLatest = i === rows.length - 1;
         return (
-          <rect key={r.year} x={x} y={y} width={barW} height={barH} fill={isLatest ? BRAND : MUTED} rx={1}>
-            <title>
-              {r.year}: {formatValue(r.value)}
-            </title>
-          </rect>
+          <TitledRect
+            key={r.year}
+            x={x}
+            y={y}
+            width={barW}
+            height={barH}
+            fill={isLatest ? BRAND : MUTED}
+            rx={1}
+            title={`${r.year}: ${formatValue(r.value)}`}
+          />
         );
       })}
       {[0, Math.floor(rows.length / 2), rows.length - 1].map((i) => {
@@ -157,7 +174,7 @@ export function HorizontalBarChart({ data }: { data: HBarDatum[] }) {
           <div className="w-28 shrink-0 text-right font-mono text-xs text-neutral-700">
             {fmtGBPm(r.value)}
             {r.sharePct !== null && (
-              <span className="ml-1 text-neutral-400">({r.sharePct}%)</span>
+              <span className="ml-1 text-neutral-500">({r.sharePct}%)</span>
             )}
           </div>
         </div>
@@ -258,16 +275,24 @@ export function AarPipelineChart({
         const x = i * (barW + barGap);
         return (
           <g key={y.year}>
-            <rect x={x} y={h - padB - recH} width={barW} height={recH} fill={MUTED} rx={1}>
-              <title>
-                {y.year}: {fmtNumber(y.applicationsReceived)} applications received
-              </title>
-            </rect>
-            <rect x={x} y={h - padB - appH} width={barW} height={appH} fill={BRAND} rx={1}>
-              <title>
-                {y.year}: {fmtNumber(y.approvedSameYear)} approved same year
-              </title>
-            </rect>
+            <TitledRect
+              x={x}
+              y={h - padB - recH}
+              width={barW}
+              height={recH}
+              fill={MUTED}
+              rx={1}
+              title={`${y.year}: ${fmtNumber(y.applicationsReceived)} applications received`}
+            />
+            <TitledRect
+              x={x}
+              y={h - padB - appH}
+              width={barW}
+              height={appH}
+              fill={BRAND}
+              rx={1}
+              title={`${y.year}: ${fmtNumber(y.approvedSameYear)} approved same year`}
+            />
           </g>
         );
       })}

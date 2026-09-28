@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }: Props) {
           <h2 className="text-sm font-semibold text-neutral-900">Key takeaways</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-700">
             {post.keyTakeaways.map((kt) => (
-              <li key={kt}>{kt}</li>
+              <li key={kt} dangerouslySetInnerHTML={{ __html: kt }} />
             ))}
           </ul>
         </aside>

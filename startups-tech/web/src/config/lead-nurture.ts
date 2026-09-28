@@ -400,7 +400,7 @@ const STEPS: LeadNurtureStep[] = [
       const smsBody =
         c.engagementVariant === "hesitation"
           ? `Hi ${c.firstName}, Founder Tax Partners here. The call is genuinely no-strings: if it is not useful you have lost 20 minutes and owe nothing. Reply YES and a specialist will call you. Reply STOP to opt out.`
-          : `Hi ${c.firstName}, Founder Tax Partners here. Most founders who ask what you asked get it settled in one short call. Reply YES and we will ring you. ${c.optOutText}`;
+          : `Hi ${c.firstName}, Founder Tax Partners here. Reply YES and we will ring you. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
         whatsappTemplate("lead_reminder", [c.firstName, c.bookingUrl]),

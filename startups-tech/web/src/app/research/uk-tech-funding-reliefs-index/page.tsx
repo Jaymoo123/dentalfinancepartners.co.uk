@@ -25,7 +25,7 @@ const BRAND = "#4f46e5";
 const PAGE_PATH = "/research/uk-tech-funding-reliefs-index";
 
 export const metadata: Metadata = {
-  title: "UK Tech-Funding Reliefs Index (SEIS/EIS) | Founder Tax Partners",
+  title: "UK Tech-Funding Reliefs Index (SEIS/EIS)",
   description: `EIS raised £${eis.latest.amountAllM}m across ${eis.latest.companiesAll} UK companies in ${eis.latest.year}, ${eis.latest.infoCommsSharePct}% of it in Information & Communication. A sourced index of SEIS/EIS funding by sector and region, from HMRC official statistics. EIS from 1993-94, SEIS from 2012-13.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
@@ -33,6 +33,12 @@ export const metadata: Metadata = {
     description: `Where UK startup equity money actually goes. Tech is the top sector for both EIS (${eis.latest.infoCommsSharePct}%) and SEIS (${seis.latest.infoCommsSharePct}%). HMRC official statistics, ${eis.timeSeries[0].year} to ${eis.latest.year}.`,
     url: `${siteConfig.url}${PAGE_PATH}`,
     type: "article",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UK Tech-Funding Reliefs Index (SEIS/EIS) | Founder Tax Partners",
+    images: ["/api/og"],
   },
 };
 
@@ -214,7 +220,7 @@ export default function TechFundingReliefsIndexPage() {
               label="EIS amount raised by year"
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-500">
             Amounts rounded by HMRC to the nearest £1 million. Source: HMRC EIS statistics
             (Table 2), OGL v3.0.
           </p>
@@ -307,7 +313,7 @@ export default function TechFundingReliefsIndexPage() {
               }))}
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-500">
             Source: HMRC EIS statistics (Table 11), OGL v3.0. &apos;Approved in the same year&apos;
             understates the true approval rate for the most recent 1 to 2 years, since some
             pending applications are still being processed.
@@ -381,7 +387,7 @@ export default function TechFundingReliefsIndexPage() {
                 Download the full dataset (CSV)
               </Link>
             </p>
-            <p className="text-xs text-neutral-400">Last updated: {meta.lastUpdated}.</p>
+            <p className="text-xs text-neutral-500">Last updated: {meta.lastUpdated}.</p>
           </div>
         </div>
       </section>
@@ -412,7 +418,7 @@ export default function TechFundingReliefsIndexPage() {
               SEIS/EIS relief calculator
             </Link>
           </div>
-          <div className="mt-10 max-w-xl">
+          <div className="mt-10 max-w-xl bg-white p-6 sm:p-8">
             <LeadForm redirectOnSuccess={false} submitLabel="Get advance assurance help" />
           </div>
         </div>

@@ -277,7 +277,7 @@ export default function StartupFormationSurvivalIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs text-neutral-400">
+          <p className="mt-4 text-xs text-neutral-500">
             Note: these are formations (incorporations), not trading starts. A
             company is counted from its date of incorporation regardless of when
             or whether it began trading.
@@ -358,7 +358,7 @@ export default function StartupFormationSurvivalIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-500">
             * 2020-Q2: strike-off suspended (see anomaly note above). {" "}
             † 2020-Q4 / 2021-Q1: backlog clearance.
           </p>
@@ -387,7 +387,7 @@ export default function StartupFormationSurvivalIndexPage() {
                 {fmt(group62Active)}
               </div>
               <div className="text-sm text-neutral-500 mt-1">active</div>
-              <div className="text-sm text-neutral-400 mt-1">
+              <div className="text-sm text-neutral-500 mt-1">
                 {fmt(group62Dissolved)} dissolved (all-time)
               </div>
             </div>
@@ -399,7 +399,7 @@ export default function StartupFormationSurvivalIndexPage() {
                 {fmt(group63Active)}
               </div>
               <div className="text-sm text-neutral-500 mt-1">active</div>
-              <div className="text-sm text-neutral-400 mt-1">
+              <div className="text-sm text-neutral-500 mt-1">
                 {fmt(group63Dissolved)} dissolved (all-time)
               </div>
             </div>
@@ -411,7 +411,7 @@ export default function StartupFormationSurvivalIndexPage() {
                 {fmt(group58Active)}
               </div>
               <div className="text-sm text-neutral-500 mt-1">active</div>
-              <div className="text-sm text-neutral-400 mt-1">
+              <div className="text-sm text-neutral-500 mt-1">
                 {fmt(group58Dissolved)} dissolved (all-time)
               </div>
             </div>
@@ -470,7 +470,7 @@ export default function StartupFormationSurvivalIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-500">
             Source:{" "}
             <a
               href="https://resources.companieshouse.gov.uk/sic/"
@@ -613,7 +613,7 @@ export default function StartupFormationSurvivalIndexPage() {
       </section>
 
       {/* Methodology */}
-      <section id="methodology" className="bg-white py-12 sm:py-16">
+      <section id="methodology" className="bg-white py-12 sm:py-16 scroll-mt-24">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
             Methodology and honest limitations
@@ -854,7 +854,7 @@ export default function StartupFormationSurvivalIndexPage() {
                 {data.meta.licence}
               </p>
             </div>
-            <p className="text-xs text-neutral-400">
+            <p className="text-xs text-neutral-500">
               Last updated: {data.meta.lastUpdated}.
             </p>
           </div>

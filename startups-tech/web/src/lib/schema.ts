@@ -1,5 +1,4 @@
 import { siteConfig } from "@/config/site";
-import { niche } from "@/config/niche-loader";
 import { buildService } from "@accounting-network/web-shared/schema";
 
 export function buildOgImageUrl(title: string, category?: string) {
@@ -8,45 +7,18 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
+// P0 E1: this used to emit a second full Organization node under the same
+// @id as the canonical node in layout.tsx (via organization-schema.ts),
+// with a different @type and description — two contradictory records under
+// one identifier. The canonical node (sameAs, parentOrganization, knowsAbout)
+// stays in layout.tsx; this is now a reference stub only, so any JSON-LD
+// consumer resolves #organization to the one full record. P0 E2: priceRange
+// (an unsourced fee band) went with it — it lived only on the deleted node.
 export function buildOrganizationJsonLd() {
-  const office = siteConfig.company.registeredOffice;
   return JSON.stringify({
     "@context": "https://schema.org",
-    "@type": ["ProfessionalService", niche.seo.organization_type],
+    "@type": "Organization",
     "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    legalName: siteConfig.company.legalName,
-    alternateName: siteConfig.company.tradingName,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
-    description: siteConfig.description,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: `${office.line1}, ${office.line2}`,
-      addressLocality: office.city,
-      postalCode: office.postcode,
-      addressCountry: "GB",
-    },
-    areaServed: niche.seo.service_areas,
-    priceRange: "££",
-    knowsAbout: [
-      "Enterprise Management Incentives (EMI)",
-      "Seed Enterprise Investment Scheme (SEIS)",
-      "Enterprise Investment Scheme (EIS)",
-      "R&D tax relief merged scheme",
-      "Enhanced R&D Intensive Support (ERIS)",
-      "Section 431 elections on restricted securities",
-      "EIS/SEIS investor relief",
-      "R&D claim notification",
-      "SaaS accounting and VAT place-of-supply",
-      "Startup tax planning",
-      "Business Asset Disposal Relief",
-      "EMI option pool setup and ERS returns",
-      "Fractional CFO for funded startups",
-    ],
-    sameAs: [
-      "https://find-and-update.company-information.service.gov.uk/company/16358723",
-    ],
   });
 }
 

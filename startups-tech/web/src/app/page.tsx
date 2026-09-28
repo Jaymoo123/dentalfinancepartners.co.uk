@@ -331,7 +331,7 @@ const testimonials = [
   },
   {
     quote:
-      "We were about to run our SEIS round without advance assurance, on the assumption that we clearly qualified. Our accountant found that a prior consultancy contract we had run through the company was borderline under the qualifying trade test. We got advance assurance before approaching investors. The process took eight weeks and meant every investor conversation started with confirmation rather than a risk.",
+      "We were about to run our SEIS round without advance assurance, on the assumption that we clearly qualified. Our accountant found that a prior consultancy contract we had run through the company was borderline under the qualifying trade test. We got advance assurance before approaching investors. Every investor conversation started with confirmation rather than a risk.",
     attribution: "Pre-seed founder, fintech, South East, SEIS advance assurance",
   },
   {

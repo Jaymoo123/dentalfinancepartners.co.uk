@@ -221,7 +221,7 @@ sourcesVerifiedAt: "2026-07-23"
 
 <p><strong>R&amp;D-intensive companies that survive the early cliff often become the ones scaling fastest.</strong> The merged R&amp;D scheme and the enhanced R&amp;D-intensive support (ERIS) route exist to support exactly the loss-making, R&amp;D-heavy companies most exposed to the early-years attrition shown in this data. See our <a href="/blog/research-and-development/eris-rd-intensive-30-percent">ERIS: the R&amp;D-intensive relief explained</a>.</p>
 
-<p><strong>Grant and equity funding stack differently at different survival stages.</strong> A company past its third anniversary is in a different funding conversation than one at month six. Our <a href="/blog/uk-startup-grants-landscape">UK startup grants landscape guide</a> covers how grant funding sits alongside equity through this timeline.</p>
+<p><strong>Grant and equity funding stack differently at different survival stages.</strong> A company past its third anniversary is in a different funding conversation than one at month six. Our <a href="/blog/startup-compliance/uk-startup-grants-landscape">UK startup grants landscape guide</a> covers how grant funding sits alongside equity through this timeline.</p>
 
 <h2>A note on what this post is (and is not)</h2>
 

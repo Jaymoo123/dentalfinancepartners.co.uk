@@ -140,3 +140,13 @@ full report with file:line evidence.
   which is the design port itself, not a phase-0 fix. Also not done this pass: mini-capture ids
   (`mobile_tool`, `calc_result_form`, `resource_block`, `blog_short_resource`), `/services` and
   `/for` per-page Service+BreadcrumbList schema (FAQPage only today), and webfont loading.
+
+## 2026-09-29 design port, phase 0 (baseline + claims audit) DONE, tag `port-startups-tech-phase0`
+
+Owner go 2026-09-29 for the port (header and footer on every page for the first time, no phone
+number). Phase 0 ran as five audit packages plus a four-agent fix wave; artefacts and the close block
+with every number are in `docs/startups-tech/_port/PHASE0_PACKAGES.md` (ledger `P0A_CLAIMS_LEDGER.md`,
+27 rows; baselines `sweep_baseline.json`, `browser_baseline.json`, `cta_baseline.json`). Estate-wide
+serious rows left by owner decision (composite testimonial standfirst, retention sentence, cookie
+policy vs consented GA4/AdSense). Next: phase 1 chrome (tokens ramp first, alone), then 2 to 6 as
+concurrent packages, per `DESIGN_PORT_PLAYBOOK.md`. Deploy stays parked.

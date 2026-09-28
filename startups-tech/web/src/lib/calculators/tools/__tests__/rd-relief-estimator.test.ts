@@ -98,7 +98,6 @@ describe("rdReliefEstimator golden figures", () => {
       ctRate: "25",
     });
     expect(result.note).toContain("6 months");
-    expect(result.note).toContain("HP3");
   });
 
   it("PAYE-cap flag fires when staff cost < 50% of qualifying spend", () => {

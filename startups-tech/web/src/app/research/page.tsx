@@ -37,7 +37,7 @@ const formations = formationsData as unknown as TechFormationsIndexSnapshot;
 const survival = survivalData as { combinedTechSector: { activeCompanies: { label: string }; snapshotSurvivalRate: { label: string } }; meta: { pullDate: string } };
 
 export const metadata: Metadata = {
-  title: "Original UK tech startup research and data | Founder Tax Partners",
+  title: "Original UK tech startup research and data",
   description:
     "Original, sourced data on UK startup funding, R&D tax relief and company formation, built entirely from HMRC and Companies House official statistics. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },
@@ -123,7 +123,7 @@ export default function ResearchIndexPage() {
                   {r.title}
                 </h2>
                 <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
-                <p className="mt-4 text-xs text-neutral-400">Updated: {r.updated}</p>
+                <p className="mt-4 text-xs text-neutral-500">Updated: {r.updated}</p>
               </Link>
             ))}
           </div>

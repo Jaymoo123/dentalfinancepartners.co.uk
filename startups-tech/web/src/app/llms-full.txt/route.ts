@@ -96,7 +96,6 @@ Coverage: UK-wide, serving founders in London, Manchester, Birmingham, Leeds, Br
 Auto-generated per page:
 - Organization and WebSite on the homepage
 - FAQPage on the homepage, service pages, who-we-help pages, calculator pages, and blog posts with Q and A
-- BlogPosting on individual posts
 - WebApplication on calculator pages
 
 Sitemap: https://${niche.domain}/sitemap.xml

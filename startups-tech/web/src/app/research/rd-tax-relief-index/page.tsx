@@ -25,7 +25,7 @@ const BRAND = "#4f46e5";
 const PAGE_PATH = "/research/rd-tax-relief-index";
 
 export const metadata: Metadata = {
-  title: "R&D Tax Relief Usage Index: The Post-Clampdown Squeeze on Tech | Founder Tax Partners",
+  title: "R&D Tax Relief Usage Index: The Post-Clampdown Squeeze on Tech",
   description: `UK R&D tax credit claims fell ${fmtPercent0(Math.abs(headline.yoyClaimsPct ?? 0))} to ${fmtNumber(headline.totalClaims)} in ${headline.latestYear} after HMRC's anti-fraud clampdown. Information & Communication is the largest sector by claim count. Sourced from HMRC official statistics.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
@@ -33,6 +33,12 @@ export const metadata: Metadata = {
     description: `The R&D relief squeeze on tech: claims fell ${fmtPercent0(Math.abs(headline.yoyClaimsPct ?? 0))} in ${headline.latestYear} after HMRC's compliance clampdown. Tech remains the largest sector by claim volume.`,
     url: `${siteConfig.url}${PAGE_PATH}`,
     type: "article",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "R&D Tax Relief Usage Index | Founder Tax Partners",
+    images: ["/api/og"],
   },
 };
 
@@ -204,7 +210,7 @@ export default function RdTaxReliefIndexPage() {
               formatValue={(n) => `${fmtNumber(n)} claims`}
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-500">
             {headline.latestYear} is a HMRC-uplifted provisional estimate; the true figure is
             expected to revise upward in the next annual release. Source: HMRC R&amp;D Tax
             Credits Statistics (Table RD1), OGL v3.0.
@@ -232,7 +238,7 @@ export default function RdTaxReliefIndexPage() {
               }))}
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-400">
+          <p className="mt-3 text-xs text-neutral-500">
             Bars show number of claims; the figure in brackets is the share of total claims.
             Source: HMRC R&amp;D Tax Credits Statistics (Table RD6), OGL v3.0.
           </p>
@@ -328,7 +334,7 @@ export default function RdTaxReliefIndexPage() {
                 Download the full dataset (CSV)
               </Link>
             </p>
-            <p className="text-xs text-neutral-400">Last updated: {meta.lastUpdated}.</p>
+            <p className="text-xs text-neutral-500">Last updated: {meta.lastUpdated}.</p>
           </div>
         </div>
       </section>
@@ -359,7 +365,7 @@ export default function RdTaxReliefIndexPage() {
               R&amp;D relief estimator
             </Link>
           </div>
-          <div className="mt-10 max-w-xl">
+          <div className="mt-10 max-w-xl bg-white p-6 sm:p-8">
             <LeadForm redirectOnSuccess={false} submitLabel="Get an R&D eligibility review" />
           </div>
         </div>

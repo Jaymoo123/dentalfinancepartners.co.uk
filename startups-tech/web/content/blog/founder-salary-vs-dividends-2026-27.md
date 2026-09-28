@@ -209,11 +209,11 @@ sourcesVerifiedAt: "2026-07-23"
 
 <h2>Sources</h2>
 <ol>
-  <li id="ref-1"><a href="https://www.legislation.gov.uk/ukpga/2026/11/section/4">Finance Act 2026, section 4</a>: dividend ordinary, upper and additional rates for 2026/27.</li>
-  <li id="ref-2"><a href="https://www.gov.uk/tax-on-dividends">GOV.UK: Tax on dividends</a>, dividend allowance and rate bands.</li>
-  <li id="ref-3"><a href="https://www.gov.uk/income-tax-rates">GOV.UK: Income Tax rates and personal allowances</a>.</li>
-  <li id="ref-4"><a href="https://www.gov.uk/national-insurance-rates-letters">GOV.UK: National Insurance rates and categories</a>, employer and employee rates and thresholds.</li>
-  <li id="ref-5"><a href="https://www.gov.uk/claim-employment-allowance">GOV.UK: Employment Allowance</a>, eligibility including the single-director exclusion.</li>
-  <li id="ref-6"><a href="https://www.gov.uk/corporation-tax-rates">GOV.UK: Corporation Tax rates</a>, small profits rate, main rate and marginal relief.</li>
-  <li id="ref-7"><a href="https://www.gov.uk/new-state-pension">GOV.UK: The new State Pension</a>, qualifying years and National Insurance records.</li>
+  <li id="ref-1" class="scroll-mt-24"><a href="https://www.legislation.gov.uk/ukpga/2026/11/section/4">Finance Act 2026, section 4</a>: dividend ordinary, upper and additional rates for 2026/27.</li>
+  <li id="ref-2" class="scroll-mt-24"><a href="https://www.gov.uk/tax-on-dividends">GOV.UK: Tax on dividends</a>, dividend allowance and rate bands.</li>
+  <li id="ref-3" class="scroll-mt-24"><a href="https://www.gov.uk/income-tax-rates">GOV.UK: Income Tax rates and personal allowances</a>.</li>
+  <li id="ref-4" class="scroll-mt-24"><a href="https://www.gov.uk/national-insurance-rates-letters">GOV.UK: National Insurance rates and categories</a>, employer and employee rates and thresholds.</li>
+  <li id="ref-5" class="scroll-mt-24"><a href="https://www.gov.uk/claim-employment-allowance">GOV.UK: Employment Allowance</a>, eligibility including the single-director exclusion.</li>
+  <li id="ref-6" class="scroll-mt-24"><a href="https://www.gov.uk/corporation-tax-rates">GOV.UK: Corporation Tax rates</a>, small profits rate, main rate and marginal relief.</li>
+  <li id="ref-7" class="scroll-mt-24"><a href="https://www.gov.uk/new-state-pension">GOV.UK: The new State Pension</a>, qualifying years and National Insurance records.</li>
 </ol>

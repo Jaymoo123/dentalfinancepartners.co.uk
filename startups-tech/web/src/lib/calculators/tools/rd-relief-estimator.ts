@@ -132,7 +132,7 @@ export const rdReliefEstimator: GenericTool = {
       ];
       const notes = [
         "ERIS route: your qualifying R&D spend is at least 30% of total expenditure and the company is loss-making. The payable credit assumes the full enhanced expenditure is surrenderable. The real cap is the lower of the enhanced R&D spend and the total unrelieved trading loss.",
-        "First-time claimants (or those who have not claimed in the prior three years) must notify HMRC within 6 months of the accounting period end, or the claim is invalid (HP3).",
+        "First-time claimants (or those who have not claimed in the prior three years) must notify HMRC within 6 months of the accounting period end, or the claim is invalid.",
         ...(payeCapFlag ? [payeCapFlag] : []),
         "These are estimates, not a filed claim. Speak to a specialist before filing.",
       ];
@@ -156,7 +156,7 @@ export const rdReliefEstimator: GenericTool = {
 
     const notes = [
       `Merged-scheme route: the 20% credit is above-the-line and taxable, so the net benefit is reduced by your CT rate.${intensityShortfall}`,
-      "First-time claimants (or those who have not claimed in the prior three years) must notify HMRC within 6 months of the accounting period end, or the claim is invalid (HP3).",
+      "First-time claimants (or those who have not claimed in the prior three years) must notify HMRC within 6 months of the accounting period end, or the claim is invalid.",
       ...(payeCapFlag ? [payeCapFlag] : []),
       "These are estimates, not a filed claim. Speak to a specialist before filing.",
     ];

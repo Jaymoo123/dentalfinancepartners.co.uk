@@ -12,11 +12,13 @@ export const metadata: Metadata = {
     description: `Terms of use for the ${siteConfig.name} website. Governing law, disclaimers, and acceptable use policy.`,
     url: `${siteConfig.url}/terms`,
     type: "website",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Terms of use",
     description: `Terms of use for the ${siteConfig.name} website. Governing law, disclaimers, and acceptable use policy.`,
+    images: ["/api/og"],
   },
 };
 
