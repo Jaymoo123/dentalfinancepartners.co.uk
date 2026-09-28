@@ -158,6 +158,19 @@ Calculator fleet and cite-this lines (four leads estate-wide in 90 days, low pri
 assistant-naming rerun at the month-1 read; monitored_pages rows for the eight sites with none
 (ask before creating anything that emails).
 
+## 4a. Amendments, 2026-09-28 late (owner go on phase 0)
+
+- **Decision 8 corrected:** wills-probate and divorce-finances ARE receiving Search Console data
+  (owner). The silent-site item is about OUR analytics beacon and leads table, not search. The
+  silent-sites agent re-pulls GSC with impressions for both and then chases the beacon.
+- **AdSense on every site** (owner: "set up every site for AdSense, so it needs Google Analytics
+  where it can"). Every site gets the Solicitors pattern (`7edc7fd3`, `153e5017`) and a GA4 id.
+  The plumbing agent creates or finds the GA4 properties; AdSense console approval per domain is an
+  owner action after deploy.
+- Builder instructions: `ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md`. Wave A = 17 per-site Sonnet
+  builders + shared-packages Sonnet + plumbing Sonnet + silent-sites Opus = 20. Agents do not
+  commit; the manager commits per site after the serialised build.
+
 ## 5. Open inputs from the owner
 
 1. Five GA4 measurement ids, or the go to create the properties (3.4).
