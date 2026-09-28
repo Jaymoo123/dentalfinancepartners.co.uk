@@ -1,10 +1,11 @@
 ---
 title: "Do Charities Pay VAT? The Real Rules, Reliefs and Traps"
 slug: "do-charities-pay-vat"
+canonical: "https://www.trusteetax.co.uk/blog/charity-vat/do-charities-pay-vat"
 date: "2026-07-14"
 dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
-author: ""
+author: "Trustee Tax Editorial Team"
 category: "Charity VAT"
 metaTitle: "Do Charities Pay VAT? Rules, Reliefs and Traps Explained"
 metaDescription: "Charities can pay VAT. Covers registration, reduced-rate reliefs, fundraising exemptions, and the business/non-business split trustees need to know."

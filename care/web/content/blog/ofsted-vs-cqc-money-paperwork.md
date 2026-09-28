@@ -1,10 +1,11 @@
 ---
 title: "Ofsted vs CQC: how the money and registration paperwork actually differs for children's homes"
 slug: "ofsted-vs-cqc-money-paperwork"
+canonical: "https://www.carehometax.co.uk/blog/cqc-and-financial-compliance/ofsted-vs-cqc-money-paperwork"
 date: "2026-07-15"
 dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
-author: ""
+author: "Care Home Tax Editorial Team"
 category: "CQC and Financial Compliance"
 metaTitle: "Ofsted vs CQC: registration money & paperwork compared"
 metaDescription: "Children's homes register with Ofsted, not CQC. What that means for registration paperwork, financial viability evidence and compliance costs."

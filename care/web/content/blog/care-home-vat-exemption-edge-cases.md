@@ -1,10 +1,11 @@
 ---
 title: "Care Home VAT Exemption Edge Cases: What Every Operator Needs to Know"
 slug: "care-home-vat-exemption-edge-cases"
+canonical: "https://www.carehometax.co.uk/blog/vat-and-welfare-exemption/care-home-vat-exemption-edge-cases"
 date: "2026-07-15"
 dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
-author: ""
+author: "Care Home Tax Editorial Team"
 category: "VAT and Welfare Exemption"
 metaTitle: "Care Home VAT Exemption: Edge Cases Explained"
 metaDescription: "Care home VAT exemption is a permanent cost, not a perk. Registration, partial exemption, RCB 2/2025 grouping risk and the tricky edge cases."

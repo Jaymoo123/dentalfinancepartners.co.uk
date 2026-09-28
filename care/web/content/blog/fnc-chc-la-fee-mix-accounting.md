@@ -1,10 +1,11 @@
 ---
 title: "FNC, CHC and local authority fee-mix accounting for nursing homes"
 slug: "fnc-chc-la-fee-mix-accounting"
+canonical: "https://www.carehometax.co.uk/blog/fees-fnc-and-local-authority-rates/fnc-chc-la-fee-mix-accounting"
 date: "2026-07-15"
 dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
-author: ""
+author: "Care Home Tax Editorial Team"
 category: "Fees, FNC and Local Authority Rates"
 metaTitle: "FNC, CHC and LA fee-mix accounting for nursing homes"
 metaDescription: "Account for FNC, CHC and local authority fees separately, model the cross-subsidy gap and build a cost-of-care evidence pack for rate negotiations."

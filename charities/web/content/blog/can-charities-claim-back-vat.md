@@ -1,10 +1,11 @@
 ---
 title: "Can Charities Claim Back VAT? Recovery Rules Explained"
 slug: "can-charities-claim-back-vat"
+canonical: "https://www.trusteetax.co.uk/blog/charity-vat/can-charities-claim-back-vat"
 date: "2026-07-14"
 dateModified: "2026-09-28"
 updatedDate: "2026-09-27"
-author: ""
+author: "Trustee Tax Editorial Team"
 category: "Charity VAT"
 metaTitle: "Can Charities Claim Back VAT? Recovery Rules Explained"
 metaDescription: "Charities can reclaim input VAT only when VAT-registered and making taxable supplies. This guide explains the three gates, apportionment, and partial exemption."
