@@ -46,7 +46,14 @@ export default function ServicesPage() {
             {hospitalityServices.map((service) => (
               <Link key={service.slug} href={`/services/${service.slug}`} className="group block bg-white border border-neutral-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-[#b0532f] transition-all">
                 <h2 className="text-xl font-bold tracking-tight text-neutral-900 group-hover:text-[#b0532f] transition-colors sm:text-2xl">{service.title}</h2>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-600 line-clamp-3">{service.intro}</p>
+                {/* 2026-09-28 parity fix: service.intro is authored HTML with a
+                    real anchor (section 5). This card already sits inside a
+                    Link, so rendering that anchor here would nest <a> inside
+                    <a>; strip the markup for this truncated teaser instead,
+                    the full HTML renders untouched on the detail page. */}
+                <p className="mt-3 text-sm leading-relaxed text-neutral-600 line-clamp-3">
+                  {service.intro.replace(/<[^>]+>/g, "")}
+                </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#b0532f]">Learn more</span>
               </Link>
             ))}

@@ -241,7 +241,7 @@ const faqs = [
   {
     question: "Do I need a specialist hospitality accountant?",
     answer:
-      "Not every operator does, but the sector has a concentration of compliance traps that a general accountant encounters rarely: food and drink VAT splits, tronc and tips rules, AWRS due diligence, TOMS for hotel packages and MTD for income tax. If your business involves any of these, a specialist will identify risks and savings that a generalist is unlikely to catch.",
+      "Not every operator does, but the sector has a concentration of compliance traps that a general accountant encounters rarely: food and drink VAT splits, tronc and tips rules, AWRS due diligence, TOMS for hotel packages and MTD for income tax. If your business involves any of these, we identify risks and savings that a generalist is unlikely to catch.",
   },
   {
     question: "What does a hospitality accountant do that a general accountant does not?",

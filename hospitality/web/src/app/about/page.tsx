@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { btnPrimary, siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { siteContainerLg, sectionYLoose } from "@/components/ui/layout-utils";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "About | Specialist Hospitality Accountants",
@@ -36,11 +37,18 @@ export default function AboutPage() {
           <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
             <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
           </div>
-          <div className="mt-8">
-            <Link href="/contact" className={btnPrimary}>Get in touch</Link>
-          </div>
         </div>
       </section>
+
+      {/* 2026-09-28 parity fix (brief section 4): /about rendered zero forms. */}
+      <LeadCTAPanel
+        eyebrow="Free first call, then a fixed fee in writing"
+        title="Talk to a hospitality accounts specialist."
+        description="Tell us about your business. We reply within 24 hours and one of our accountants comes back to you directly."
+        proofPoints={[]}
+        formTitle="Book your free first call"
+        form={<LeadForm submitLabel="Request callback" />}
+      />
     </>
   );
 }

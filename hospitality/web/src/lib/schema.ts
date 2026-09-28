@@ -1,5 +1,7 @@
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
+import { buildOrganization, buildService as buildServiceThing } from "@accounting-network/web-shared/schema";
+import type { SiteSchemaOpts } from "@accounting-network/web-shared/schema";
 
 export function buildOgImageUrl(title: string, category?: string) {
   const params = new URLSearchParams({ title });
@@ -7,18 +9,23 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
-export function buildOrganizationJsonLd() {
+/**
+ * Site-wide schema opts, built once from siteConfig/niche and reused by every
+ * shared builder below (Organization, Service). 2026-09-28 parity: ported off
+ * a hand-rolled JSON.stringify to the shared `packages/web-shared/schema`
+ * builder so parentOrganization (missing before) comes for free and every
+ * other site emits Organization the same way.
+ */
+export function siteSchemaOpts(): SiteSchemaOpts {
   const office = siteConfig.company.registeredOffice;
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", niche.seo.organization_type],
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
+  return {
+    siteUrl: siteConfig.url,
+    siteName: siteConfig.name,
     legalName: "Ashfield Trading Ltd",
-    alternateName: siteConfig.company.tradingName,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}${siteConfig.publisherLogoUrl}`,
     description: siteConfig.description,
+    organizationType: ["ProfessionalService", niche.seo.organization_type],
+    publisherLogoUrl: siteConfig.publisherLogoUrl,
+    alternateName: siteConfig.company.tradingName,
     address: {
       "@type": "PostalAddress",
       streetAddress: `${office.line1}, ${office.line2}`,
@@ -26,7 +33,7 @@ export function buildOrganizationJsonLd() {
       postalCode: office.postcode,
       addressCountry: "GB",
     },
-    areaServed: niche.seo.service_areas,
+    serviceAreas: niche.seo.service_areas,
     priceRange: "££",
     knowsAbout: [
       "Hospitality accounting",
@@ -40,10 +47,25 @@ export function buildOrganizationJsonLd() {
       "TOMS margin scheme",
       "Capital allowances for kitchen fit-out",
     ],
-    sameAs: [
-      "https://find-and-update.company-information.service.gov.uk/company/16358723",
-    ],
-  });
+    sameAs: ["https://find-and-update.company-information.service.gov.uk/company/16358723"],
+    parentOrganization: {
+      name: "Ashfield Trading Ltd",
+      companyNumber: "16358723",
+    },
+  };
+}
+
+export function buildOrganizationJsonLd() {
+  return JSON.stringify(buildOrganization(siteSchemaOpts()));
+}
+
+export function buildServiceJsonLd(input: {
+  name: string;
+  description: string;
+  url: string;
+  serviceType?: string;
+}) {
+  return JSON.stringify(buildServiceThing(input, siteSchemaOpts()));
 }
 
 export function buildWebsiteJsonLd() {

@@ -323,7 +323,9 @@ function whatsappTemplate(name: string, vars: string[]): LeadStepMessage {
 }
 
 // ── Contactability sequence ───────────────────────────────────────────────────
-// 8 steps. Delays from step 0: 0, 0, 4, 24, 48, 96, 168, 264 hours.
+// 8 steps. Gaps between sends: 0, 0, 4, 20, 24, 48, 72, 96 hours (Property's
+// values, 2026-09-28 parity fix; the previous 0,0,4,24,48,96,168,264 put the
+// cumulative-from-T0 timeline in this gap field and ran 25 days instead of 11).
 // Steps 0+1 fire at submit. Steps 2-7 are driven by the hourly cron.
 // Every step offers to fit around service rather than asking the operator to
 // find a quiet hour that does not exist.
@@ -338,9 +340,10 @@ const STEPS: LeadNurtureStep[] = [
       emailMsg(
         c,
         `Got your enquiry, ${c.firstName}`,
-        "Reply with a time between services and a specialist will call you.",
+        "Reply with a time between services and one of our accountants will call you.",
         [
           "Thanks for your enquiry. It has just landed with us and a hospitality tax specialist is ready to help.",
+          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of your situation, about 20 minutes, with no charge and no obligation. There is nothing to prepare and no paperwork to dig out first.",
           "Just reply to this email, anything at all, and we will arrange it. We know the floor comes first, so tell us the gap that works, mid morning, between lunch and evening service, or a quiet day early in the week, and we will call you then.",
         ],
@@ -359,7 +362,7 @@ const STEPS: LeadNurtureStep[] = [
       smsMsgWithGen(
         c,
         "t0_sms",
-        `Hi ${c.firstName}, it's the team at Hospitality Tax. Thanks for your enquiry. Reply YES and a specialist will call you, and tell us the gap between services that suits. ${c.optOutText}`,
+        `Hi ${c.firstName}, it's the team at Hospitality Tax. Thanks for your enquiry. Reply YES and one of our accountants will call you, and tell us the gap between services that suits. ${c.optOutText}`,
       ),
       whatsappTemplate("lead_welcome", [c.firstName, c.bookingUrl]),
     ],
@@ -385,7 +388,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -400,7 +403,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 email, what the call covers ─────────────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -421,12 +424,12 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => {
       const smsBody =
         c.engagementVariant === "hesitation"
-          ? `Hi ${c.firstName}, the team at Hospitality Tax here. The call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Reply YES and a specialist will call you when it suits. Reply STOP to opt out.`
+          ? `Hi ${c.firstName}, the team at Hospitality Tax here. The call is genuinely no-strings: if it does not help, you have lost 20 minutes and owe nothing. Reply YES and one of our accountants will call you when it suits. Reply STOP to opt out.`
           : `Hi ${c.firstName}, the team at Hospitality Tax here. Most operators who get in touch have been meaning to sort this for a while and one short call clears it up. Reply YES, tell us the gap that works, and we will pass it on. ${c.optOutText}`;
       return [
         smsMsgWithGen(c, "day4_sms", smsBody),
@@ -438,14 +441,14 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email", "sms"],
     preferMonday: true,
     buildMessages: (c) => {
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free hospitality tax review is still open. Reply YES and a specialist will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free hospitality tax review is still open. Reply YES and one of our accountants will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -469,7 +472,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -559,7 +562,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
         emailMsg(
           c,
           "Got your message, one quick thing",
-          `Reply with ${ask} and a specialist will call you.`,
+          `Reply with ${ask} and one of our accountants will call you.`,
           [
             detailIntro(c),
             `Just reply to this email with ${ask} and a hospitality tax specialist will call you. It is free, there is no obligation, and there is nothing to prepare.`,

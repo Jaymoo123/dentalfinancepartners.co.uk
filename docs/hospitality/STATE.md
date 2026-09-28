@@ -1,5 +1,38 @@
 # hospitality (Hospitality Tax) site state
 
+> **2026-09-28 phase 0 parity (estate parity plan, per-site builder pass).** Corrects the
+> stale "deploy held" line further down this file (from the 2026-07-15 entry): the site has
+> been live in production since 2026-07-16 and remains ahead on every deploy since, per
+> `docs/hospitality/PARITY_RESEARCH_2026-09-28.md`. Changed in this pass, not yet deployed:
+> `entity` key added to `niche.config.json`; "specialist firm from our partner network" /
+> "a specialist will" swept to firm voice on `/complete`, `/thank-you`, SMS/email nurture
+> copy and the homepage (privacy policy and the consent sentence are the estate-wide
+> exemptions, left untouched); footer "Editorial content only" line replaced; nurture
+> `delayHours` fixed from a cumulative 0,0,4,24,48,96,168,264 (25-day actual runtime) to
+> Property's gap values 0,0,4,20,24,48,72,96; 24-hour promise sentence added to the T0 email;
+> `LeadCTAPanel` + `LeadForm` added to `/about`, all 6 `/for/*` and all 5 `/services/*` (were
+> rendering zero forms); header CTA added (site had none at any width) via a client wrapper
+> around the shared kit `SiteHeader`; Organization JSON-LD ported from a hand-rolled
+> duplicate (one in `layout.tsx`, one in `lib/schema.ts`) to the single shared
+> `packages/web-shared/schema` builder, now carrying `parentOrganization`; `Service` +
+> `BreadcrumbList` JSON-LD added to `/for/[slug]` and `/services/[slug]` (FAQPage already
+> present); raw HTML anchors that rendered as visible `<a href=...>` text on `/services`,
+> `/services/[slug]` and `/for/[slug]` now render as real links; blog post `<table>` overflow
+> at 390px (scrollWidth 436, cause: three unwrapped tables in
+> `content/blog/vat-on-takeaway-food.md`) fixed with a scoped CSS rule; sitemap
+> `lastModified` build-time `new Date()` removed (omitted, Property's pattern) except real
+> per-post dates; estate font (Plus Jakarta Sans) loaded, was the bare system stack;
+> `public/llms.txt` links tagged `utm_source=chatgpt&utm_medium=llms`; `pipeline/submit_indexnow.py`
+> added (config for this site already existed in `optimisation_engine/indexing/config.py`);
+> AdSense wired (`layout.tsx` metadata + `ConsentedScripts adsenseClientId`, `public/ads.txt`,
+> `next.config.ts` `ads: true`); GA4 CSP (`region1.google-analytics.com` etc.) now turns on
+> automatically once `google_analytics_id` is set, instead of a hardcoded `ga: false`. The
+> `/for` and `/services` hub canonical fix (`bb297ab2`) was already at HEAD; not re-touched.
+> Not done in this pass (see `docs/hospitality/PHASE0_2026-09-28.md`): GA4 id / GSC config
+> entry (plumbing agent), full design-port header/nav (D1, separate programme), segment-page
+> closer copy variation (Opus read), "free review" wording pass (section 2 policy, lower
+> priority than the zero-form blockers), `/book` "free review" phrasing.
+
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`.** (high-street mechanic wave 1
 > below, plus everything else committed by that date.)
 

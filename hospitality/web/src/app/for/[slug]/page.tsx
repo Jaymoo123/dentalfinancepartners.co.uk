@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { hospitalityHubs, getHospitalityHub } from "@/data/hospitality-hubs";
-import { buildFaqJsonLd } from "@/lib/schema";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { buildFaqJsonLd, buildServiceJsonLd } from "@/lib/schema";
+import { siteContainerLg } from "@/components/ui/layout-utils";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { buildBreadcrumb, JsonLd } from "@accounting-network/web-shared/schema";
 
 export function generateStaticParams() {
   return hospitalityHubs.map((h) => ({ slug: h.slug }));
@@ -36,13 +39,34 @@ export default async function HospitalityHubPage({
 
   return (
     <>
+      {/* 2026-09-28 parity fix (brief section 5, G3): had FAQPage but no
+          Service node and no BreadcrumbList. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildServiceJsonLd({
+            name: `Accounting for ${hub.title}`,
+            description: hub.metaDescription,
+            url: `/for/${slug}`,
+          }),
+        }}
+      />
+      <JsonLd
+        data={buildBreadcrumb(
+          [{ label: "Home", href: "/" }, { label: "For", href: "/for" }, { label: hub.title }],
+          { siteUrl: siteConfig.url },
+        )}
+      />
       <section className="border-b border-neutral-200 bg-[#b0532f] py-16 sm:py-20">
         <div className={siteContainerLg}>
           <Link href="/for" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">
             All sectors
           </Link>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{hub.headline}.</h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">{hub.intro}</p>
+          <p
+            className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 [&_a]:text-white [&_a]:underline [&_a]:underline-offset-2"
+            dangerouslySetInnerHTML={{ __html: hub.intro }}
+          />
           <div className="mt-10">
             <Link href="/contact" className="inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-[#b0532f] hover:bg-white/90 transition-colors">
               Get in touch
@@ -71,7 +95,10 @@ export default async function HospitalityHubPage({
             {hub.challenges.map((item) => (
               <article key={item.title} className="border border-neutral-200 border-l-4 border-l-[#b0532f] bg-neutral-50 p-6 sm:p-8">
                 <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+                <p
+                  className="mt-4 text-base leading-relaxed text-neutral-600 [&_a]:text-[#b0532f] [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-[#8f421f]"
+                  dangerouslySetInnerHTML={{ __html: item.body }}
+                />
               </article>
             ))}
           </div>
@@ -85,7 +112,10 @@ export default async function HospitalityHubPage({
             {hub.howWeHelp.map((item) => (
               <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-[#b0532f] hover:shadow-md transition-all">
                 <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
+                <p
+                  className="mt-3 text-sm leading-relaxed text-neutral-600 [&_a]:text-[#b0532f] [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-[#8f421f]"
+                  dangerouslySetInnerHTML={{ __html: item.body }}
+                />
               </div>
             ))}
           </div>
@@ -123,17 +153,17 @@ export default async function HospitalityHubPage({
         </section>
       )}
 
-      <section className="bg-neutral-900 py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-white sm:text-4xl">Speak to a specialist.</h2>
-          <p className="mt-4 sm:mt-6 text-lg leading-relaxed text-neutral-200">
-            Tell us about your {hub.title.toLowerCase()} business and we will reply within 24 hours.
-          </p>
-          <div className="mt-8">
-            <Link href="/contact" className={btnPrimary}>Get in touch</Link>
-          </div>
-        </div>
-      </section>
+      {/* 2026-09-28 parity fix (brief section 4): this page rendered zero forms,
+          only a /contact link. Swapped for the shared LeadCTAPanel + this
+          site's own LeadForm, same pattern as ecommerce's /for/[slug]. */}
+      <LeadCTAPanel
+        eyebrow="Free first call, then a fixed fee in writing"
+        title={`Speak to a specialist about your ${hub.title.toLowerCase()} business.`}
+        description={`Tell us about your ${hub.title.toLowerCase()} business. We reply within 24 hours and one of our accountants comes back to you directly.`}
+        proofPoints={[]}
+        formTitle="Book your free first call"
+        form={<LeadForm submitLabel="Request callback" />}
+      />
 
       <section className="bg-[#fafaf7] py-12 sm:py-16">
         <div className={siteContainerLg}>

@@ -18,10 +18,26 @@
   --brand-primary: #b0532f;
   --brand-primary-strong: #b0532f;
   --brand-on-primary: #ffffff;
+
+  /* Estate font, ported 2026-09-28 (was the bare system stack). */
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* 2026-09-28 parity fix (brief D7): blog post bodies embed raw <table>
+   elements (e.g. content/blog/vat-on-takeaway-food.md) with no wrapper.
+   prose-standard.css sets `.prose table { width: 100% }` but never
+   constrains it below the viewport, so a table with enough columns/links
+   pushes scrollWidth past 390 on a phone. Scope the fix here rather than in
+   the shared package (out of this site's edit boundary): make the table a
+   block-level scroll container instead of widening the page. */
+.prose table:not(.not-prose *) {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
 }
