@@ -14,7 +14,7 @@
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { btnPrimary } from "../components/ui/layout-utils";
+import { btnPrimary, focusRing } from "../components/ui/layout-utils";
 import { useInViewOnce } from "../analytics/useInViewOnce";
 import { getVisitorId, getSessionId } from "../analytics/ids";
 import { setBookingNudge } from "../analytics/visitMemory";
@@ -34,9 +34,9 @@ import { useFormTracking } from "../analytics/react/useFormTracking";
 type Status = "idle" | "loading" | "success" | "error";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-[var(--brand-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]/25 transition-colors";
+  `mt-1 w-full min-h-12 touch-manipulation rounded-lg border-2 border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-[var(--brand-primary)] transition-colors ${focusRing}`;
 const backBtnClass =
-  "inline-flex min-h-12 items-center justify-center rounded-lg border-2 border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]/25";
+  `inline-flex min-h-12 items-center justify-center rounded-lg border-2 border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-700 transition-colors hover:bg-slate-50 ${focusRing}`;
 
 const STEP1_ID = "about_you";
 const STEP2_ID = "contact_details";

@@ -92,3 +92,17 @@ run — nothing to point it at. `packages/site-styles` has no tests and no tscon
 7. Two follow-ups flagged above for the generalist/Medical site agents.
 8. Scratch dir `C:\Users\user\.claude\jobs\933e5962\tmp\p0-shared\` was not needed; nothing left to
    delete.
+
+## 2026-09-28 follow-up: MiniCapture focus ring
+
+Two Opus readers flagged `packages/web-shared/leads/MiniCapture.tsx` inputs/buttons at a 25%-alpha
+focus ring (effectively invisible). Confirmed: lines 37 and 39 (`inputClass`, `backBtnClass`) used
+`focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]/25`. Replaced both with the
+shared solid-outline `focusRing` token from `packages/web-shared/components/ui/layout-utils.ts`
+(same token `btnPrimary` already came from, now also imported) — a `focus-visible` 2px solid
+outline at 2px offset, no alpha. `CalcResultCta.tsx` and `MobileToolSlot.tsx` render through
+MiniCapture and needed no separate change. `tools/components/Calculator.tsx` renders its numeric
+inputs through `Field.tsx`, already fixed earlier today — no change needed there either.
+
+`npx vitest run` inside `packages/web-shared`: 416/416 passed. No files touched outside
+`packages/`; no build, install, or git write commands run.

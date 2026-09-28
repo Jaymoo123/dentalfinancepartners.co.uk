@@ -85,7 +85,7 @@ function NumberOrCurrencyField({
             setText(String(clamped));
             commit(clamped);
           }}
-          className={`flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-[var(--brand-primary)] focus:outline-none transition-colors min-h-[44px] ${focusRing}`}
+          className={`flex-1 border-b-2 border-slate-300 bg-transparent px-2 py-2 sm:py-3 text-xl sm:text-2xl font-bold text-slate-900 focus:border-[var(--brand-primary)] transition-colors min-h-[44px] ${focusRing}`}
         />
         {field.suffix && <span className="text-base font-semibold text-slate-500">{field.suffix}</span>}
       </div>
@@ -133,7 +133,7 @@ export function Field({
           id={field.id}
           value={String(value)}
           onChange={(e) => onChange(e.target.value)}
-          className={`w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-[var(--brand-primary)] focus:outline-none transition-colors min-h-[44px] ${focusRing}`}
+          className={`w-full border-2 border-slate-300 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 focus:border-[var(--brand-primary)] transition-colors min-h-[44px] ${focusRing}`}
         >
           {field.options?.map((o) => (
             <option key={o.value} value={o.value}>
