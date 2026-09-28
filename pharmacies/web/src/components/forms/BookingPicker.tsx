@@ -85,11 +85,11 @@ export default function BookingPicker({ token }: { token: string }) {
           ) : (
             "Your slot is saved."
           )}{" "}
-          One of our accountants will call you then. If your plans change, just reply to any of our
+          A pharmacy finance specialist will call you then. If your plans change, just reply to any of our
           messages.
         </p>
         <p className="mt-3 text-sm text-neutral-500">
-          The call takes about 20 minutes. Your accountant will have read your enquiry before they
+          The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
       </div>
@@ -157,7 +157,7 @@ export default function BookingPicker({ token }: { token: string }) {
           disabled={!date || !windowKey || status === "submitting"}
           className={`${btnPrimary} w-full sm:w-auto`}
         >
-          {status === "submitting" ? "Booking your callback..." : "Book my free first call"}
+          {status === "submitting" ? "Booking your callback..." : "Book my free review call"}
         </button>
         {status === "error" && (
           <p className="mt-3 text-sm font-semibold text-red-700">
@@ -165,7 +165,7 @@ export default function BookingPicker({ token }: { token: string }) {
           </p>
         )}
         <p className="mt-3 text-xs text-neutral-500">
-          No obligation. One of our accountants will call you in your chosen window.
+          No obligation. A pharmacy finance specialist will call you in your chosen window.
         </p>
       </div>
     </div>

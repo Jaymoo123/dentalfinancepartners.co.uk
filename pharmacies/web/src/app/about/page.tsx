@@ -33,20 +33,19 @@ export default function AboutPage() {
     </section>
     {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires one
         lead form on every money page and this route rendered none. Same band as
-        the /for and /services slug templates, not a new pattern. */}
+        the /for and /services slug templates, not a new pattern.
+        2026-09-28 late (owner ruling, wording reversal): the mount stays, the
+        agent-written copy does not; the band below carries this site's own
+        published /services/[slug] copy. */}
     <section className="bg-[#0f3a4a] py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
           <div>
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">Tell us where the pharmacy stands.</h2>
-            <p className="mt-4 text-lg leading-relaxed text-white/80">Whether you are buying, selling, or simply cannot see where the margin goes, the first call is the same: you tell us the position, we tell you what we would do about it and what it costs.</p>
-            <p className="mt-4 text-sm text-white/70">Free first call, then a fixed fee in writing.</p>
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">Speak to a pharmacy finance specialist.</h2>
+            <p className="mt-4 text-lg leading-relaxed text-white/80">Tell us about your situation and we will reply within 24 hours.</p>
           </div>
           <div className="bg-white p-6 sm:p-8">
             <LeadForm submitLabel="Send enquiry" />
-            <p className="mt-4 text-sm leading-relaxed text-neutral-500">
-              We reply within 24 hours and one of our accountants comes back to you directly.
-            </p>
           </div>
         </div>
       </div>
