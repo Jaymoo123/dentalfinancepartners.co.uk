@@ -419,7 +419,7 @@ export default function ServicesPage() {
         <LeadCTAPanel
           eyebrow=""
           title="Talk to a legal-sector specialist"
-          description="30-minute scoping call. We'll tell you which engagement tier fits, and what the fee would be. No drip sequence, no follow-up chase."
+          description="The first call is free. We will tell you which engagement tier fits and what the fee would be, in writing. No drip sequence, no follow-up chase."
           proofPoints={[]}
           formTitle=""
           form={<LeadForm redirectOnSuccess={false} />}

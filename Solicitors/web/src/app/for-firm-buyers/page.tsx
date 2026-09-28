@@ -60,7 +60,7 @@ const data: AudienceStage = {
     },
     {
       title: "Post-completion integration",
-      body: "First 90 days: client matter migration, PII continuity confirmation, client account transition, payroll merger, accounting system consolidation. The list grows but the framework is the same — get the basics right and the rest follows.",
+      body: "First 90 days: client matter migration, PII continuity confirmation, client account transition, payroll merger, accounting system consolidation. The list grows but the framework is the same, get the basics right and the rest follows.",
     },
     {
       title: "Acquisition financing co-ordination",
@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your acquisition onto specialist hands",
   ctaBody:
-    "30-minute scoping call. We confirm scope (DD, structuring, integration) and quote a fixed engagement fee.",
+    "Send us the firm you are looking at and on a free first call we will tell you what we would test in financial due diligence, where the client account risk sits, and how we would structure the purchase. If we take the work on, you get a fixed fee in writing before anything starts.",
   relatedGuides: [
     {
       href: "/services/practice-valuation",

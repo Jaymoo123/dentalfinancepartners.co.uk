@@ -41,7 +41,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "Solicitor accountants for UK law firms, partners and locum solicitors",
       intro:
-        "We work with solicitors only. Every client is a law firm, an LLP, a partnership, a sole practitioner, or a locum solicitor. The narrow focus is the point — the SRA Accounts Rules, the FA 2014 salaried-member tests, and the LLP profit-allocation methodology are reflexive after enough clients.",
+        "We work with solicitors only. Every client is a law firm, an LLP, a partnership, a sole practitioner, or a locum solicitor. The narrow focus is the point, the SRA Accounts Rules, the FA 2014 salaried-member tests, and the LLP profit-allocation methodology are reflexive after enough clients.",
     },
     sections: [
       {
@@ -123,7 +123,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Talk to a specialist solicitor accountant",
     ctaBody:
-      "30-minute scoping call. We tell you what would change if you moved, what the fee would be, and whether it's worth the disruption.",
+      "The first call is free. We tell you what would change if you moved, what the fee would be, and whether it is worth the disruption.",
   },
 
   "sra-accounts-rules": {
@@ -146,8 +146,8 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         ],
         bullets: [
           "Rule 2: client money must be kept separate from office money in a designated client account",
-          "Rule 7: client money interest must be paid to the client when 'fair' — a test based on amount and length of time held",
-          "Rule 8.3: reconciliations of every client account and the office account must be performed at least every five weeks (NOT monthly — five weeks is the maximum interval)",
+          "Rule 7: client money interest must be paid to the client when 'fair', a test based on amount and length of time held",
+          "Rule 8.3: reconciliations of every client account and the office account must be performed at least every five weeks (NOT monthly, five weeks is the maximum interval)",
           "Rule 12: an annual SRA Accountant's Report is required within 6 months of the firm's accounting period end, unless a de minimis exemption applies",
           "Rule 12.2 de minimis exemption: the client money held did not exceed an average of £10,000 AND a maximum of £250,000 across the accounting period",
         ],
@@ -218,7 +218,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your SRA Accountant's Report in safe hands",
     ctaBody:
-      "30-minute scoping call. The call confirms whether the de minimis exemption applies, the period end, and a fixed fee for the report and any control improvements.",
+      "Bring us your client account figures and period end. On a free first call we will confirm whether the de minimis exemption applies and quote a fixed fee for the report and any control work.",
   },
 
   "llp-accounts": {
@@ -247,9 +247,9 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
           "From 6 April 2014, a member of an LLP is deemed an employee for tax purposes if all three of the following conditions are met. PAYE then applies to their drawings as if they were salary.",
         ],
         bullets: [
-          "Condition A: 'disguised salary' — at least 80% of the total reward from the LLP is fixed or determined without reference to profit",
-          "Condition B: limited influence — the member has only limited rights to influence the LLP's affairs (no meaningful management role)",
-          "Condition C: capital contribution — the member's capital contribution is less than 25% of their disguised salary for the period",
+          "Condition A: 'disguised salary', at least 80% of the total reward from the LLP is fixed or determined without reference to profit",
+          "Condition B: limited influence, the member has only limited rights to influence the LLP's affairs (no meaningful management role)",
+          "Condition C: capital contribution, the member's capital contribution is less than 25% of their disguised salary for the period",
         ],
       },
       {
@@ -282,7 +282,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Do LLP members pay employer NI on their drawings?",
         answer:
-          "Generally no, because LLP members are self-employed for tax (Class 4 NI on profit, not Class 1 employer/employee NI). The exception is salaried members who fail the FA 2014 test and are deemed employees — PAYE applies on their drawings including employer NI.",
+          "Generally no, because LLP members are self-employed for tax (Class 4 NI on profit, not Class 1 employer/employee NI). The exception is salaried members who fail the FA 2014 test and are deemed employees, PAYE applies on their drawings including employer NI.",
       },
       {
         question: "What happens to partner accounts when a partner leaves?",
@@ -303,7 +303,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your LLP accounting onto specialist hands",
     ctaBody:
-      "30-minute scoping call. We confirm scope, match you to the right firm, and come back with a fixed monthly fee.",
+      "30-minute scoping call. We confirm scope and come back with a fixed monthly fee.",
   },
 
   "practice-valuation": {
@@ -316,7 +316,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "Law firm valuation and pre-sale planning",
       intro:
-        "Law firm valuations are typically 1-3x normalised profit for partnership/LLP, sometimes higher for specialist firms, plus WIP and tangible assets. The BADR rate rises from 14% to 18% on 6 April 2026 — that single date moves £40,000 of tax per £1m of gain.",
+        "Law firm valuations are typically 1-3x normalised profit for partnership/LLP, sometimes higher for specialist firms, plus WIP and tangible assets. The BADR rate rises from 14% to 18% on 6 April 2026, that single date moves £40,000 of tax per £1m of gain.",
     },
     sections: [
       {
@@ -335,7 +335,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
           "Equity partner drawings normalised back to market salary for the role they actually fill (typically £80,000-£120,000 for fee-earning partners outside top tier)",
           "Personal expenses removed from the P&L (vehicle costs, family employment without genuine work, club memberships unrelated to client development)",
           "One-off items called out separately (PII excess on settled claim, partner exit payment, office move costs, one-off litigation)",
-          "WIP recognised on an earnings basis (FRS 102 / FRS 105) — the older billings basis was retired via FA 2002",
+          "WIP recognised on an earnings basis (FRS 102 / FRS 105), the older billings basis was retired via FA 2002",
           "Bad debt provision against aged WIP that won't convert",
         ],
       },
@@ -393,7 +393,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What's WIP worth at sale?",
         answer:
-          "WIP is recognised on an earnings basis under FRS 102 / FRS 105. At sale, WIP is valued at the recoverable amount — what the buyer can reasonably expect to bill and collect on the open files. Aged WIP (over 6 months) is typically written down or excluded. Conveyancing WIP is usually fast-converting; litigation WIP can be slow and is discounted more aggressively.",
+          "WIP is recognised on an earnings basis under FRS 102 / FRS 105. At sale, WIP is valued at the recoverable amount, what the buyer can reasonably expect to bill and collect on the open files. Aged WIP (over 6 months) is typically written down or excluded. Conveyancing WIP is usually fast-converting; litigation WIP can be slow and is discounted more aggressively.",
       },
       {
         question: "What's the difference between an asset sale and a share sale?",
@@ -414,7 +414,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your pre-sale planning started early",
     ctaBody:
-      "30-minute scoping call. If you're 12-36 months from a sale, the tax planning needs to start now, not in the run-up.",
+      "If you are 12 to 36 months from a sale, the planning needs to start now rather than in the run-up. The first call is free, so tell us your timescale and we will tell you what to tidy first.",
   },
 
   "cofa-compliance-support": {
@@ -433,7 +433,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "What the COFA actually does",
         body: [
-          "Every SRA-regulated firm must nominate a Compliance Officer for Finance and Administration. The COFA is accountable to the SRA for compliance with the Accounts Rules. The role is real, not nominal — the SRA can take action against the named individual for failures.",
+          "Every SRA-regulated firm must nominate a Compliance Officer for Finance and Administration. The COFA is accountable to the SRA for compliance with the Accounts Rules. The role is real, not nominal, the SRA can take action against the named individual for failures.",
         ],
         bullets: [
           "Five-weekly client account reconciliation oversight (Rule 8.3)",
@@ -474,7 +474,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         heading: "When to use this engagement vs full accountancy",
         body: [
-          "Some firms want COFA compliance support but already have a perfectly competent accountant for the rest of the work. This engagement runs on a standalone basis — quarterly review meetings, breach log review, year-end SRA report co-ordination — without disturbing the existing accountancy relationship.",
+          "Some firms want COFA compliance support but already have a perfectly competent accountant for the rest of the work. This engagement runs on a standalone basis, quarterly review meetings, breach log review, year-end SRA report co-ordination, without disturbing the existing accountancy relationship.",
         ],
       },
     ],
@@ -494,7 +494,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What's the difference between a breach and a 'material breach'?",
         answer:
-          "All breaches of the Accounts Rules should be recorded in the firm's breach log. Material breaches must be notified to the SRA. The materiality test depends on context: amount, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. A specialist accountant can help calibrate the call — over-reporting wastes SRA attention and creates a long compliance file; under-reporting risks regulatory action.",
+          "All breaches of the Accounts Rules should be recorded in the firm's breach log. Material breaches must be notified to the SRA. The materiality test depends on context: amount, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. A specialist accountant can help calibrate the call, over-reporting wastes SRA attention and creates a long compliance file; under-reporting risks regulatory action.",
       },
       {
         question: "How often should the COFA report to the management team?",
@@ -515,7 +515,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your COFA / COLP role onto solid ground",
     ctaBody:
-      "30-minute scoping call. We confirm where you are, what you need, and a fixed engagement fee.",
+      "Free first call. Tell us where the firm is and what you need, and we will come back with a fixed engagement fee in writing.",
   },
 };
 

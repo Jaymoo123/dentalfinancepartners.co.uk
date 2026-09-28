@@ -28,9 +28,9 @@ export function ResourceGate({
     <MiniCapture
       formId="resource_block"
       messagePrefix={`[Resource block: ${topic}]`}
-      heading={t?.ctaCopy || "Get a free review of your firm's position"}
+      heading={t?.ctaCopy || "Get your firm's position checked"}
       blurb="Tell us about your firm and one of our accountants will review your situation and the most practical next step, with no obligation."
-      submitLabel="Request my free review"
+      submitLabel="Book my free first call"
       className="my-10 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200/70 sm:p-8"
       postSubmit="redirect"
     />

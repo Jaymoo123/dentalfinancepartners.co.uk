@@ -28,7 +28,7 @@ export default async function EmbedPage({
   return (
     <div className="p-4" style={{ minHeight: tool.embedHeight }}>
       <EmbedAutoResize messageType="afl-embed-height" />
-      {/* slug only — the function-bearing tool config resolves client-side */}
+      {/* slug only, the function-bearing tool config resolves client-side */}
       <CalculatorClient slug={slug} variant="embed" />
       <EmbedAttribution
         siteName={siteConfig.name}

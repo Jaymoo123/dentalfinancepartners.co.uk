@@ -166,11 +166,11 @@ export default function AboutPage() {
             Ready to work with specialist solicitor accountants?
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">
-            Book a free consultation to discuss your practice's accounting needs. We'll get back to you within 24 hours, with no obligation.
+            Tell us how the practice is structured and what is on your mind. The first call is free, we reply within 24 hours and one of our accountants comes back to you directly.
           </p>
           <div className="mt-8">
             <Link href="/contact" className={btnPrimary}>
-              Book free consultation
+              Book a free first call
             </Link>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function AboutPage() {
           eyebrow=""
           formTitle=""
           title="Ready to work with specialist solicitor accountants?"
-          description="Book a free consultation to discuss your practice's accounting needs. We'll get back to you within 24 hours, with no obligation."
+          description="Tell us how the practice is structured and what is on your mind. The first call is free, we reply within 24 hours and one of our accountants comes back to you directly."
           proofPoints={[]}
           form={<LeadForm redirectOnSuccess={false} />}
           footnote={

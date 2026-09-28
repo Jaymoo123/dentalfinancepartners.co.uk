@@ -94,7 +94,7 @@ export default async function CalculatorPage({
 
       <section className="bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          {/* slug only — the function-bearing tool config resolves client-side (RSC lesson) */}
+          {/* slug only, the function-bearing tool config resolves client-side (RSC lesson) */}
           <CalculatorClient slug={slug} variant="page" />
 
           {/* Resource island: gated xlsx + guide for the matched topic (renders nothing
@@ -149,7 +149,7 @@ export default async function CalculatorPage({
               data-cta-goal="form"
               data-cta-placement="calculator"
             >
-              {tool.ctaLabel ?? "Book a free consultation"}
+              {tool.ctaLabel ?? "Book a free first call"}
             </Link>
           }
         />

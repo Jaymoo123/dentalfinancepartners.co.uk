@@ -35,7 +35,7 @@ import DetailsForm from "@/components/forms/DetailsForm";
 export const metadata: Metadata = {
   title: `Complete your details`,
   description:
-    "Add the last detail we need to arrange your free review with a specialist accountant for solicitors.",
+    "Add the last detail we need to arrange your free first call with one of our accountants.",
   robots: { index: false, follow: false },
 };
 
@@ -131,13 +131,13 @@ export default async function CompletePage({
   return (
     <>
       <SlimHero
-        eyebrow="Free review"
+        eyebrow="Free first call"
         title="Complete your details"
         backdrop={<SolicitorsBackdrop tone="navy" />}
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
           Add the last detail we need and one of our accountants will be in
-          touch to arrange your free review, no obligation.
+          touch to arrange your free first call, no obligation.
         </p>
       </SlimHero>
 

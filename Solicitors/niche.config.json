@@ -148,7 +148,8 @@
     }
   ],
   "footer_links": [
-    {
+    { "label": "Book a consultation", "href": "/contact" },
+      {
       "label": "Privacy policy",
       "href": "/privacy-policy"
     },
@@ -302,7 +303,7 @@
           "href": "/contact"
         },
         "hero_primary": {
-          "label": "Book free consultation",
+          "label": "Book a free first call",
           "href": "/contact"
         },
         "hero_secondary": {
@@ -321,10 +322,10 @@
           "cta_button": "Request a callback"
         },
         "home_cta": {
-          "heading": "Book your free consultation",
+          "heading": "Book your free first call",
           "body": "Whether you're a sole practitioner managing self-assessment, a partner navigating LLP conversion, or a COFA ensuring SRA compliance, we're here to help. Fill in the form below and we'll arrange a short introductory call to discuss your specific needs.",
           "primary": {
-            "label": "Book your free consultation",
+            "label": "Book your free first call",
             "href": "/contact"
           }
         }

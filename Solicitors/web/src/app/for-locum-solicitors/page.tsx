@@ -12,7 +12,7 @@ const data: AudienceStage = {
   badge: "Locum solicitors · Consultant solicitors · Interim general counsel",
   heroHeading: "Structure and tax help for locum solicitors",
   intro:
-    "Locum and consultant solicitors hit a structure decision early in self-employment and live with it for years. Limited company, umbrella, or sole trader. There is no universal right answer — it depends on income, engagement mix, IR35 determinations, and what you want from PII and pension.",
+    "Locum and consultant solicitors hit a structure decision early in self-employment and live with it for years. Limited company, umbrella, or sole trader. There is no universal right answer, it depends on income, engagement mix, IR35 determinations, and what you want from PII and pension.",
   stats: [
     { value: "3", label: "Structures compared" },
     { value: "£80k+", label: "Typical Ltd-co break-even" },
@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your consultant structure right",
   ctaBody:
-    "30-minute scoping call. We put you with a partner firm that runs the Ltd vs umbrella vs sole-trader comparison on your specific income and engagement mix and tells you which one wins on real numbers.",
+    "Tell us what you bill and who you lock out to, and on a free first call we will run limited company against umbrella against sole trader on your own numbers rather than an average. If we take the work on, you get a fixed fee in writing before anything starts.",
   relatedGuides: [
     {
       href: "/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide",

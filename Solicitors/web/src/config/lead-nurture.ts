@@ -363,7 +363,7 @@ const STEPS: LeadNurtureStep[] = [
         "Just reply with a time that suits and one of our accountants will call you.",
         [
           "Thanks for your enquiry, it has just landed with us and one of our accountants will call you within 24 hours, Monday to Friday.",
-          "The call is a free review of where your firm stands on its accounts and tax, about 20 minutes, with no charge and no obligation.",
+          "The first call is free, about 20 minutes on where the firm stands on its accounts and tax, and there is no obligation at the end of it.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you, tell us and we will work around it.",
         ],
         "t0_email",
@@ -478,7 +478,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free review is still available, and if now is not the right moment, that is completely fine.",
+            "Just checking in, and there is genuinely no rush. Your first call is still available, and if now is not the right moment, that is completely fine.",
             "If something is holding you back, or things have just been busy at the firm, a one-line reply is all it takes. Tell us a day and a time, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -661,7 +661,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have asked a couple of times now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review of your firm's accounts and tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a new partner joining, a practice restructure, or an SRA compliance deadline.`,
+            `If you would still like that first call on your firm's accounts and tax position, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are a new partner joining, a practice restructure, or an SRA compliance deadline.`,
             "All the best with the firm.",
           ],
           "detail_capture_day7",

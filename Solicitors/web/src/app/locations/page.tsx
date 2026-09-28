@@ -18,7 +18,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "Solicitor Accountants by Location | Law Firm Accounting Specialists UK",
-  description: `${siteConfig.name} — specialist solicitor accounting and law firm tax services across major UK cities. Find your local legal sector accountant.`,
+  description: `${siteConfig.name}, specialist solicitor accounting and law firm tax services across major UK cities. Find your local legal sector accountant.`,
   alternates: { canonical: `${siteConfig.url}/locations` },
   openGraph: {
     title: "Solicitor Accountants by Location | UK Legal Sector Accounting",

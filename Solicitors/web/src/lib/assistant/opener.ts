@@ -40,12 +40,12 @@ const TOPIC_HOOKS: Partial<Record<TopicKey, [string, string, string]>> = {
   "partnership-llp": [
     "Splitting profit across the partners? There is a tool that allocates it and shows what each keeps after tax.",
     "Want me to line up the LLP profit share and partner tax calculator for you?",
-    "A specialist can sanity-check your partner allocation and the tax on it, free first call, shall I set one up?",
+    "One of our accountants can sanity-check your partner allocation and the tax on it, free first call, shall I set one up?",
   ],
   "succession-sale": [
     "Thinking about selling or succession? I can show you an indicative value and what you would keep after tax.",
     "Want me to pull up the practice sale value and net-proceeds calculator?",
-    "A specialist can talk through the sale, the CGT and Business Asset Disposal Relief with you, free, want me to arrange it?",
+    "One of our accountants can talk through the sale, the CGT and Business Asset Disposal Relief with you, free, want me to arrange it?",
   ],
 };
 

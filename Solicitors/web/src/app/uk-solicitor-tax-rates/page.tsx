@@ -12,8 +12,8 @@ const DESCRIPTION = "Quick reference for UK 2026/27 tax rates relevant to solici
 
 const FAQS = [
   { question: "What is the BADR rate for 2026/27?", answer: "Business Asset Disposal Relief rose to 18% on qualifying gains from 6 April 2026 (up to the £1m lifetime limit), up from 14% in 2025/26 and 10% before that. On the full £1m limit the move from 14% to 18% is £40,000 of additional CGT. For partners who planned a sale or retirement around the change, the timing mattered." },
-  { question: "Are LLPs subject to corporation tax?", answer: "No. LLPs are tax-transparent for income tax — members are taxed personally on their share of profit. The LLP itself doesn't file a corporation tax return. Same treatment as a general partnership; the LLP's separate legal personality gives liability protection but doesn't create a separate tax person." },
-  { question: "What's the current VAT threshold for legal services?", answer: "£90,000 of taxable turnover on a rolling 12-month basis (raised from £85,000 on 1 April 2024). Legal services including conveyancing are standard-rated at 20% — NOT exempt. Many consultant solicitors register voluntarily below the threshold to reclaim input VAT on costs." },
+  { question: "Are LLPs subject to corporation tax?", answer: "No. LLPs are tax-transparent for income tax, members are taxed personally on their share of profit. The LLP itself doesn't file a corporation tax return. Same treatment as a general partnership; the LLP's separate legal personality gives liability protection but doesn't create a separate tax person." },
+  { question: "What's the current VAT threshold for legal services?", answer: "£90,000 of taxable turnover on a rolling 12-month basis (raised from £85,000 on 1 April 2024). Legal services including conveyancing are standard-rated at 20%, NOT exempt. Many consultant solicitors register voluntarily below the threshold to reclaim input VAT on costs." },
 ];
 
 const BANDS = [
@@ -23,7 +23,7 @@ const BANDS = [
   { label: "Additional-rate income tax", value: "45%", note: "Income above £125,140" },
   { label: "Employee NI (basic)", value: "8%", note: "Earnings £12,570–£50,270" },
   { label: "Self-employed Class 4 NI", value: "6% / 2%", note: "6% on £12,570–£50,270, 2% above. Class 2 abolished April 2024" },
-  { label: "Employer NI", value: "15%", note: "Earnings above £5,000/year — raised in Autumn Budget 2024" },
+  { label: "Employer NI", value: "15%", note: "Earnings above £5,000/year, raised in Autumn Budget 2024" },
   { label: "Employment Allowance", value: "£10,500", note: "Off employer NI bill; multi-employee firms qualify" },
   { label: "Corporation tax (small profits)", value: "19%", note: "Profits up to £50,000" },
   { label: "Corporation tax (main)", value: "25%", note: "Profits above £250,000" },
@@ -45,9 +45,9 @@ const LEGAL_SECTOR = [
   { label: "FA 2014 Salaried Member rules", value: "Conditions A + B + C", note: "All three must be met for LLP member to be deemed employee for tax" },
   { label: "Condition A threshold", value: "≥80%", note: "Disguised salary as % of total reward" },
   { label: "Condition C threshold", value: "<25%", note: "Capital contribution as % of disguised salary" },
-  { label: "SRA Accounts Rules reconciliation cap", value: "5 weeks", note: "Rule 8.3 maximum interval — NOT monthly" },
+  { label: "SRA Accounts Rules reconciliation cap", value: "5 weeks", note: "Rule 8.3 maximum interval, NOT monthly" },
   { label: "SRA Accountant's Report deadline", value: "6 months", note: "After firm's accounting period end" },
-  { label: "Rule 12.2 de minimis exemption", value: "£10,000 / £250,000", note: "Average client-account balance / maximum balance across the period — both must be met" },
+  { label: "Rule 12.2 de minimis exemption", value: "£10,000 / £250,000", note: "Average client-account balance / maximum balance across the period, both must be met" },
   { label: "PII minimum cover (unincorporated)", value: "£2m", note: "Per claim, no aggregate at this level" },
   { label: "PII minimum cover (incorporated)", value: "£3m", note: "Per claim, no aggregate at this level" },
   { label: "PII run-off cover minimum", value: "6 years", note: "Post-cessation under SRA Minimum Terms and Conditions" },
@@ -123,7 +123,7 @@ export default function UkSolicitorTaxRatesPage() {
         <div className={`${siteContainerLg} ${sectionY} relative z-10`}>
           <div className="max-w-3xl">
             <h2 className="text-2xl font-bold text-white sm:text-3xl">Want these applied to your firm?</h2>
-            <p className="mt-4 text-base leading-relaxed text-slate-200 sm:text-lg">A reference page is fine for the rates themselves. The value is in how they interact across your specific position. Book a 30-minute scoping call to walk through your numbers.</p>
+            <p className="mt-4 text-base leading-relaxed text-slate-200 sm:text-lg">A reference page is fine for the rates themselves. The value is in how they interact across your specific position. The first call is free, so book it and we will walk through your numbers.</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/free-firm-health-check" className={`inline-flex min-h-12 items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}>Take the firm health check</Link>
               <Link href="/contact" className={`inline-flex min-h-12 items-center rounded-full border-2 border-white px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-slate-900 ${focusRing}`}>Book a call</Link>

@@ -42,7 +42,7 @@ const data: AudienceStage = {
     },
     {
       title: "Bonuses are pushing me over £100k. What's the personal allowance taper?",
-      body: "Adjusted net income above £100,000 reduces the £12,570 personal allowance by £1 for every £2 over. Fully tapered at £125,140. Effective marginal rate in the band: 60%. Pension contributions or gift aid bring adjusted net income back below £100k — one of the highest-ROI tax moves available.",
+      body: "Adjusted net income above £100,000 reduces the £12,570 personal allowance by £1 for every £2 over. Fully tapered at £125,140. Effective marginal rate in the band: 60%. Pension contributions or gift aid bring adjusted net income back below £100k, one of the highest-ROI tax moves available.",
     },
   ],
   services: [
@@ -74,7 +74,7 @@ const data: AudienceStage = {
     },
     {
       q: "Can I claim my SQE costs against tax?",
-      a: "Depends on the structure. If your employer pays, you don't have a tax claim (your employer does). If you pay yourself with no employer reimbursement, the relief is harder — generally only available where the SQE is 'training for current employment duties' (continuing professional development) rather than 'training to qualify for a new employment' (initial qualification training). The line is fact-specific. Your partner firm can review your specific position.",
+      a: "Depends on the structure. If your employer pays, you don't have a tax claim (your employer does). If you pay yourself with no employer reimbursement, the relief is harder, generally only available where the SQE is 'training for current employment duties' (continuing professional development) rather than 'training to qualify for a new employment' (initial qualification training). The line is fact-specific. Your partner firm can review your specific position.",
     },
     {
       q: "Should I make pension contributions as a junior associate?",
@@ -86,12 +86,12 @@ const data: AudienceStage = {
     },
     {
       q: "I'm planning to leave a firm. Anything to think about tax-wise?",
-      a: "If you're leaving for another firm: typically smooth, PAYE moves with your P45. If you're going self-employed (consultant / locum solicitor): much bigger change — register for self-assessment, possibly Ltd company structure, professional indemnity insurance on your own account, VAT registration above £90,000 turnover. Plan the transition 3-6 months out.",
+      a: "If you're leaving for another firm: typically smooth, PAYE moves with your P45. If you're going self-employed (consultant / locum solicitor): much bigger change, register for self-assessment, possibly Ltd company structure, professional indemnity insurance on your own account, VAT registration above £90,000 turnover. Plan the transition 3-6 months out.",
     },
   ],
   ctaTitle: "Get your tax strategy right early",
   ctaBody:
-    "30-minute scoping call. We tell you whether you need an accountant at all (often not), and where the leverage actually sits.",
+    "The first call is free and we will tell you straight whether you need an accountant yet, which is often no, and where the pension and allowance decisions actually move your take-home.",
   relatedGuides: [
     {
       href: "/solicitor-guides/fee-share-vs-equity-partner",
@@ -106,7 +106,7 @@ const data: AudienceStage = {
     {
       href: "/calculators/partnership-vs-llp-take-home",
       title: "Partnership vs LLP take-home",
-      body: "Model the future state — what partner-level take-home looks like.",
+      body: "Model the future state, what partner-level take-home looks like.",
     },
   ],
 };

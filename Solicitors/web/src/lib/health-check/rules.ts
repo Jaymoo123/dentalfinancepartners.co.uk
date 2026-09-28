@@ -79,7 +79,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "structure",
       title: "Consider converting general partnership to LLP",
       detail:
-        "General partnerships leave each partner with unlimited personal liability — joint and several. LLP preserves the tax-transparent treatment (members taxed personally on profit share) while capping liability at the capital contributed. For multi-partner firms with any meaningful liability exposure (especially conveyancing or commercial), LLP is the obvious answer.",
+        "General partnerships leave each partner with unlimited personal liability, joint and several. LLP preserves the tax-transparent treatment (members taxed personally on profit share) while capping liability at the capital contributed. For multi-partner firms with any meaningful liability exposure (especially conveyancing or commercial), LLP is the obvious answer.",
       action: "Model the conversion economics. Process takes 3-6 months and is generally tax-neutral.",
       reference: "/solicitor-guides/partnership-vs-llp-for-solicitors",
     });
@@ -106,7 +106,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "structure",
       title: "Limited company structure worth modelling at your profit level",
       detail:
-        "At sustained profit above £80,000-£100,000, a limited company can save tax through retained earnings and pension contributions. For a sole practitioner solicitor the additional consideration is the SRA — incorporating typically requires a Recognised Body application (or ABS if non-solicitor capital is involved).",
+        "At sustained profit above £80,000-£100,000, a limited company can save tax through retained earnings and pension contributions. For a sole practitioner solicitor the additional consideration is the SRA, incorporating typically requires a Recognised Body application (or ABS if non-solicitor capital is involved).",
       action:
         "Model partnership/LLP/Ltd at your numbers. Conversion process takes 4-8 weeks and is regulatorily straightforward where solicitor-owned.",
       reference: "/solicitor-guides/partnership-vs-llp-for-solicitors",
@@ -181,9 +181,9 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       id: "badr-clock",
       severity: "high",
       category: "exit",
-      title: "BADR 2-year qualifying clock — confirm it's running",
+      title: "BADR 2-year qualifying clock, confirm it's running",
       detail:
-        "Business Asset Disposal Relief requires 2 years of qualifying interest. BADR rate is 14% in 2025/26, rising to 18% from 6 April 2026 — £40,000 of additional CGT per £1m of gain.",
+        "Business Asset Disposal Relief requires 2 years of qualifying interest. BADR rate is 14% in 2025/26, rising to 18% from 6 April 2026, £40,000 of additional CGT per £1m of gain.",
       action:
         "Verify the BADR conditions now and plan the structure-at-sale before listing.",
       estimatedSaving: "Up to £100,000+ per £1m of gain",
@@ -211,7 +211,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "goodwill",
       title: "Law firm acquisition due diligence is decisive",
       detail:
-        "The 90 days before completion are where price gets adjusted, structure gets fixed, and post-completion problems get prevented. WIP valuation, client money transition, PII continuity, SRA notification — these each affect the offer or the integration.",
+        "The 90 days before completion are where price gets adjusted, structure gets fixed, and post-completion problems get prevented. WIP valuation, client money transition, PII continuity, SRA notification, these each affect the offer or the integration.",
       action: "Get specialist due diligence support before submitting an offer.",
       reference: "/for-firm-buyers",
     });
@@ -224,7 +224,7 @@ export function runRules(a: HealthCheckAnswers): Opportunity[] {
       category: "exit",
       title: "Pre-sale planning should start 18-24 months out",
       detail:
-        "BADR eligibility (2-year qualifying period), EBITDA normalisation showing in accounts buyers will see, Section 162 incorporation if pre-sale incorporation is the route, broker selection — none can be done in the last 6 weeks.",
+        "BADR eligibility (2-year qualifying period), EBITDA normalisation showing in accounts buyers will see, Section 162 incorporation if pre-sale incorporation is the route, broker selection, none can be done in the last 6 weeks.",
       action: "Begin pre-sale planning now even if exit is 3-5 years away.",
       reference: "/services/practice-valuation",
     });

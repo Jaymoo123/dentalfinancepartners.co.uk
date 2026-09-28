@@ -14,7 +14,7 @@ export const sraClientAccountReserveTool: GenericTool = {
   metaDescription:
     "Free SRA client account reserve calculator. Size your prudent operational buffer for SRA Accounts Rules compliance. Includes Rule 12.2 de minimis check.",
   intro:
-    "Solicitors holding client money face reconciliation obligations under the SRA Accounts Rules. This tool sizes the prudent operational reserve you should maintain — covering shortfall remediation, residual balances and contingency — based on your open-matter profile.",
+    "Solicitors holding client money face reconciliation obligations under the SRA Accounts Rules. This tool sizes the prudent operational reserve you should maintain, covering shortfall remediation, residual balances and contingency, based on your open-matter profile.",
   fields: [
     {
       id: "openMatters",
@@ -74,7 +74,7 @@ export const sraClientAccountReserveTool: GenericTool = {
         tone: "default" as const,
       },
       rows,
-      note: "Operational risk-management buffer only — not a regulatory requirement. The SRA Accounts Rules do not mandate a specific firm-side reserve. Discuss sizing with your COFA and specialist accountant.",
+      note: "Operational risk-management buffer only, not a regulatory requirement. The SRA Accounts Rules do not mandate a specific firm-side reserve. Discuss sizing with your COFA and specialist accountant.",
     };
   },
   explainer: {
@@ -90,7 +90,7 @@ export const sraClientAccountReserveTool: GenericTool = {
     {
       question: "Is this the same as the SRA Accountant's Report?",
       answer:
-        "No. The SRA Accountant's Report (formerly Annual Accountant's Report) is a regulatory compliance report prepared by a Reporting Accountant examining whether the firm has complied with the Accounts Rules. This calculator estimates a prudent operational reserve — a different concept from the compliance report.",
+        "No. The SRA Accountant's Report (formerly Annual Accountant's Report) is a regulatory compliance report prepared by a Reporting Accountant examining whether the firm has complied with the Accounts Rules. This calculator estimates a prudent operational reserve, a different concept from the compliance report.",
     },
     {
       question: "What does the COFA need to do with this figure?",

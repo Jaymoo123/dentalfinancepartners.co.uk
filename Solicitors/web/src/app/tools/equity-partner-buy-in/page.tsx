@@ -426,7 +426,7 @@ export default function EquityPartnerBuyInPage() {
               data-cta-goal="form"
               data-cta-placement="tool-page"
             >
-              Book a free consultation
+              Book a free first call
             </Link>
           }
         />

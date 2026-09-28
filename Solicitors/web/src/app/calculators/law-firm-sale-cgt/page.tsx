@@ -161,7 +161,7 @@ export default function LawFirmSaleCgtPage() {
               data-cta-goal="form"
               data-cta-placement="calculator"
             >
-              {tool.ctaLabel ?? "Book a free consultation"}
+              {tool.ctaLabel ?? "Book a free first call"}
             </Link>
           }
         />

@@ -96,7 +96,7 @@ export default function FreeFirmHealthCheckPage() {
               Free firm health check for UK solicitors
             </h1>
             <p className="mt-5 text-base leading-relaxed text-slate-200 sm:text-lg">
-              Ten or so solicitor-specific questions. We&apos;ll flag the SRA compliance, FA 2014 Salaried Member, BADR, post-merger and structural items most worth reviewing in your specific position. The output is on-screen plus a follow-up email — no PDF wall, no sales drip.
+              Ten or so solicitor-specific questions. We&apos;ll flag the SRA compliance, FA 2014 Salaried Member, BADR, post-merger and structural items most worth reviewing in your specific position. The output is on-screen plus a follow-up email, no PDF wall, no sales drip.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
               <Stat value="6" label="Steps" />

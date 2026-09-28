@@ -109,7 +109,7 @@ export default function ContactPage() {
                 edge. The form is never inside a coloured/tinted card. */}
             <div className="rounded-xl bg-white p-6 ring-1 ring-slate-200/70 sm:p-8 lg:p-10">
               <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-                Book your free consultation
+                Book your free first call
               </h2>
               <p className="mt-3 text-base leading-relaxed text-slate-700">
                 Tell us about your situation and we&apos;ll arrange a short call to discuss how we can help.

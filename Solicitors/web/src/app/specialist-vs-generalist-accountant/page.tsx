@@ -22,12 +22,12 @@ const COMPARISON = [
   {
     item: "LLP profit allocation",
     specialist: "Allocation methodology reviewed annually against the LLP agreement. Member capital accounts reconciled. Qualifying loan interest relief (ITA 2007 s.398) documented for each member with a buy-in loan.",
-    generalist: "SA800 filed; member-level relief claims often inconsistent. Capital account interest sometimes treated as profit allocation, sometimes as expense — depending on who's doing it that year.",
+    generalist: "SA800 filed; member-level relief claims often inconsistent. Capital account interest sometimes treated as profit allocation, sometimes as expense, depending on who's doing it that year.",
   },
   {
     item: "Pre-sale planning",
     specialist: "18-24 month engagement before exit. BADR eligibility audit (with the 6 April 2026 rate change modelled). Section 162 incorporation modelling. EBITDA normalisation in the accounts buyers will see.",
-    generalist: "Sale planning typically starts when the broker is engaged — too late for the structural moves. BADR rate change often missed entirely.",
+    generalist: "Sale planning typically starts when the broker is engaged, too late for the structural moves. BADR rate change often missed entirely.",
   },
   {
     item: "Post-merger integration",
@@ -58,7 +58,7 @@ const FAQS = [
   },
   {
     question: "How do I find a legal-sector-specialist accountant?",
-    answer: "Word of mouth from other law firm partners is the most reliable channel. The Law Society maintains some directory listings of specialist accountants; ICAEW has a legal-sector member group. Most specialist firms are small (5-20 staff) and don't market heavily — they grow by referral. A scoping call with two or three to compare fee and approach is sensible.",
+    answer: "Word of mouth from other law firm partners is the most reliable channel. The Law Society maintains some directory listings of specialist accountants; ICAEW has a legal-sector member group. Most specialist firms are small (5-20 staff) and don't market heavily, they grow by referral. A scoping call with two or three to compare fee and approach is sensible.",
   },
   {
     question: "Can I switch mid-year?",
@@ -140,7 +140,7 @@ export default function Page() {
         <div className={`${siteContainerLg} ${sectionY}`}>
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-2xl font-semibold text-white sm:text-3xl">Time to switch?</h2>
-            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">30-minute scoping call. We tell you what would change if you moved, what the fee would be, and whether it&apos;s worth the disruption. No drip sequence, no chase.</p>
+            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">The first call is free. We tell you what would change if you moved, what the fee would be, and whether it is worth the disruption. No drip sequence, no chase.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link href="/free-firm-health-check" className={`inline-flex min-h-12 items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--primary)] transition-colors hover:bg-white/90 ${focusRing}`}>Take the firm health check</Link>
               <Link href="/contact" className={`inline-flex min-h-12 items-center rounded-full border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 ${focusRing}`}>Book a scoping call</Link>

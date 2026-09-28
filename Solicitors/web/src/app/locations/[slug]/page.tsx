@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${siteConfig.url}/locations/${loc.slug}`;
   return {
     title: `Solicitor Accountant ${cityName} | Law Firm Accountants UK`,
-    description: `Specialist solicitor accountant in ${cityName} for law firms, sole practitioners & legal practices. SRA compliance, partnership tax, LLP conversion. Book free consultation.`,
+    description: `Specialist solicitor accountant in ${cityName} for law firms, sole practitioners & legal practices. SRA compliance, partnership tax, LLP conversion. Free first call, then a fixed fee in writing.`,
     alternates: { canonical },
     openGraph: {
       title: `Solicitor Accountant ${cityName} | Accounts for Lawyers`,
@@ -61,7 +61,7 @@ const cityContent: Record<string, {
 }> = {
   london: {
     intro: "We are specialist solicitor accountants for law firms, sole practitioners, and legal practice owners across London. Whether you're based in the City, West End, Canary Wharf, or anywhere across Greater London, we provide expert legal sector accounting and tax support.",
-    areas: "We work with solicitors across Central London, North London, South London, East London, and West London — including the City, Westminster, Camden, Islington, Southwark, Lambeth, Wandsworth, and surrounding boroughs.",
+    areas: "We work with solicitors across Central London, North London, South London, East London, and West London, including the City, Westminster, Camden, Islington, Southwark, Lambeth, Wandsworth, and surrounding boroughs.",
     whyLocal: "London has the highest concentration of law firms in the UK, from Magic Circle firms in the City to high street practices in every borough. We understand the London legal landscape, including complex partnership structures, high practice costs, and the competitive market for legal services.",
     services: [
       {
@@ -359,8 +359,8 @@ export default async function LocationPage({ params }: Props) {
           ground="white"
           eyebrow=""
           title={`Ready to work with a specialist solicitor accountant in ${cityName}?`}
-          description="Book a free consultation to discuss your practice's accounting needs. We'll introduce you to the right partner firm, with no obligation."
-          formTitle="Book free consultation"
+          description="Tell us how the practice is structured and what is on your mind. The first call is free and one of our accountants comes back to you directly."
+          formTitle="Book a free first call"
           proofPoints={[]}
           form={<LeadForm redirectOnSuccess={false} />}
           footnote={

@@ -82,7 +82,7 @@ export default function BlogIndexPage() {
                 data-cta-goal="form"
                 className={btnPrimary}
               >
-                Book a free consultation
+                Book a free first call
               </Link>
               <Link
                 href="/solicitor-guides"
@@ -144,7 +144,7 @@ export default function BlogIndexPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Rather have someone read your firm's numbers than read the archive?"
-          description="A free consultation with an accountant who works with SRA regulated firms every day. Tell us how the practice is structured and what is on your mind, and we will come back with clear next steps."
+          description="The first call is free, with an accountant who works with SRA regulated firms every day. Tell us how the practice is structured and what is on your mind, and we will come back with clear next steps."
           proofPoints={LEAD_PROOF_POINTS}
           form={<LeadForm redirectOnSuccess={false} />}
           backdrop={<SolicitorsBackdrop tone="navy" />}

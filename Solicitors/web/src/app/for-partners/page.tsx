@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your partner-side tax onto specialist hands",
   ctaBody:
-    "30-minute scoping call. We confirm scope (FA 2014 audit, SA filing, pre-sale planning) and quote a fixed annual fee.",
+    "Tell us how the profit share works and where you sit on the FA 2014 salaried member conditions, and on a free first call we will tell you what your real exposure is and what we would file differently. If we take the work on, you get a fixed fee in writing before anything starts.",
   relatedGuides: [
     {
       href: "/solicitor-guides/partnership-vs-llp-for-solicitors",
