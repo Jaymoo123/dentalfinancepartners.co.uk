@@ -9,7 +9,11 @@ import type { StatItem } from "@/components/property/StatsCounter";
  * they get a single source instead.
  */
 export const siteStats: StatItem[] = [
-  { target: 100, suffix: "+", label: "Landlords served" },
+  // "100+ Landlords served" was a client-count claim with no client record
+  // behind it (Property is lead-gen; see the wording rule below). Replaced
+  // 2026-09-28 with the enquiry count, rounded DOWN: 242 non-test property
+  // enquiries on 2026-09-28 by the same read-only count the block below uses.
+  { target: 200, suffix: "+", label: "Landlord enquiries" },
   { target: 24, suffix: "hr", label: "Response time" },
   // DECISION L, owner-approved 2026-08-22. Replaced "£2.4M+ Tax savings identified", which
   // was not reconstructable from any record in the estate. This one is, and the query is

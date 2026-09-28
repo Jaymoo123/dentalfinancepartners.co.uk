@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.name} | Property Accountants for UK Landlords`,
     description:
-      "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
+      "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and a specialist partner network.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} | Property Accountants for UK Landlords`,
     description:
-      "Get your property tax sorted. Section 24, MTD, incorporation. Trusted by 100+ landlords. Free calculators.",
+      "Get your property tax sorted. Section 24, MTD, incorporation. Free calculators and a specialist partner network.",
   },
 };
 
@@ -80,7 +80,7 @@ const trustBadges = [
   "24hr response time",
   "Fixed fees",
   "MTD ready",
-  "100+ landlords",
+  "800+ landlord tax guides",
 ];
 
 // The comprehensive tax-area coverage list is shared with the /blog index via
@@ -443,8 +443,8 @@ export default function HomePage() {
                     Get your property tax sorted today
                   </h2>
                   <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
-                    Book a free consultation. We&apos;ll discuss your situation, model the numbers, and give you clear
-                    recommendations.
+                    Book a free consultation. We&apos;ll discuss your situation, model the numbers, and set out the
+                    next step.
                   </p>
                 </>
               )}
