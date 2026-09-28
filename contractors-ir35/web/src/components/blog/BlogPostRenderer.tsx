@@ -15,7 +15,6 @@ import { ReadingProgress } from "@accounting-network/web-shared/content/ReadingP
 import { extractHeadings } from "@/lib/markdown-utils";
 import { calculateReadTime } from "@/lib/blog";
 import { topicForBlogSlug, earlyToolForBlogSlug } from "@/lib/intent/taxonomy";
-import { ctaCopyForCategory } from "@/lib/blog-categories";
 import { getGenericTool } from "@/lib/calculators/registry";
 import { PremiumUpgrade } from "@/components/calculators/premium/PremiumUpgrade";
 import {
@@ -51,13 +50,6 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
   // Resolve the topic using the SLUG (not the human label post.category).
   // Used for R2 premium island injection (PremiumUpgrade below).
   const premiumTopic = topicForBlogSlug(categorySlug);
-  // Category-driven closing CTA (falls back to the site-wide niche.blog copy
-  // for any category not in CTA_BY_CATEGORY, e.g. an unmapped slug).
-  const closingCta = ctaCopyForCategory(categorySlug, {
-    heading: niche.blog.cta_heading,
-    body: niche.blog.cta_body,
-    button: niche.blog.cta_button,
-  });
 
   // 3-moment capture architecture:
   //   Moment 1: early tool island after the first h2 (earlyToolForBlogSlug -> ToolIsland)
@@ -378,13 +370,13 @@ export function BlogPostRenderer({ post, categorySlug, related = [] }: BlogPostR
                 aria-labelledby="enquiry-form-heading"
               >
                 <h2 id="enquiry-form-heading" className="text-2xl font-bold text-white sm:text-3xl">
-                  {closingCta.heading}
+                  {niche.blog.cta_heading}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-slate-200">
-                  {closingCta.body}
+                  {niche.blog.cta_body}
                 </p>
                 <div className="mt-8 rounded-xl bg-white p-6 sm:p-8">
-                  <LeadForm redirectOnSuccess={false} submitLabel={closingCta.button} />
+                  <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
                 </div>
               </section>
 

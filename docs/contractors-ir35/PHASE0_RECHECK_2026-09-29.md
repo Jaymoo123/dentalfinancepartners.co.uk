@@ -134,3 +134,33 @@ Method: port 3504 only, listener PID 47652 killed, port confirmed free.
 ## Estate summariser note (2026-09-29)
 Final status: SAFE AFTER FIXES.
 Blocking item: the build-time sitemap dates (H7) and the category blog closer read that replaced the base site-wide closer (M2).
+
+## Fix round (2026-09-29)
+
+- File: `contractors-ir35/web/src/app/sitemap.ts`, lines 10-98 (static/for/category/calculator/glossary/city/resource blocks).
+- Before: every static, for, tool, glossary, city and resource entry set `lastModified: now`; post entries already used `post.updatedDate || post.date`; no per-entry real date exists for glossary/city/resource so those are undated, matching Property's pattern.
+- After: `lastModified` removed from static/for/tool/glossary/city/resource entries; `/blog` and category entries now derive `lastModified` from the newest `updatedDate || date` among their posts; post entries unchanged. URL list emitted is unchanged.
+- `npx tsc --noEmit -p contractors-ir35/web` — clean, no output.
+- `cd contractors-ir35/web && npx vitest run` — `Test Files 22 passed (22)`, `Tests 456 passed (456)`.
+
+## Fix round (2026-09-29)
+
+**M2** `contractors-ir35/web/src/components/blog/BlogPostRenderer.tsx` (was lines
+54-58 and 381-387). Removed the `ctaCopyForCategory` import/read and the
+per-category `closingCta` variable; the closing block now reads `niche.blog.cta_heading`
+/ `cta_body` / `cta_button` directly, matching base
+(`git show 8e1043d0:...BlogPostRenderer.tsx`) exactly. `ctaCopyForCategory` itself is
+still imported and used by `src/app/blog/[category]/page.tsx`, so `lib/blog-categories.ts`
+was left in place.
+
+Base and HEAD closer text are now identical for every post, e.g. from
+`contractors-ir35/niche.config.json`:
+- heading: "Not sure where you stand on IR35?"
+- body: "Book a free first call with a specialist contractor accountant. We will
+  review your contract, your working practices and your current structure. Plain
+  English, no jargon. If we take the work on, you get a fixed fee in writing before
+  anything starts."
+- button: "Book a free first call"
+
+tsc: `npx tsc --noEmit -p contractors-ir35/web` — pass, 0 errors.
+vitest: `npx vitest run` (contractors-ir35/web) — 22 files, 456 tests passed.
