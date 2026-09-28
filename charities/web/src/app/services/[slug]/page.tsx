@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { btnOnDark, siteContainerLg } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
 import { JsonLd, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
 import { charityServices, getCharityService } from "@/data/charity-services";
 import {
   CtaBand,
@@ -115,6 +117,8 @@ export default async function ServicePage({
       <HubSection eyebrow="The work" title="How we help." ground="slate">
         <RichCardGrid items={service.howWeHelp} columns={3} tone="white" />
       </HubSection>
+
+      {niche.entity ? <EntityBlock {...niche.entity} /> : null}
 
       <FaqSection faqs={service.faqs} />
 

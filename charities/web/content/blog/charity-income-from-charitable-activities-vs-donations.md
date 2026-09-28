@@ -80,4 +80,4 @@ faqs:
 
 <p>Charities preparing accruals accounts report under the Charities SORP, and which edition you use depends on your period: <a href="/blog/charity-accounts-and-sorp/charity-sorp-2026-changes">SORP 2026 takes effect for accounting periods starting on or after 1 January 2026</a>. Non company charities with gross income of £250,000 or less may instead prepare receipts and payments accounts, rising to £500,000 for financial years ending on or after 30 September 2026. Charitable companies must always prepare accruals accounts, so they follow the SORP whatever their size.</p>
 
-<p>If you are unsure which category a funding stream belongs to, keep the agreement with a file note recording your reasoning. A specialist reviews the classification against the agreements when your accounts are prepared, and a documented decision is far quicker to defend than a reconstructed one.</p>
+<p>If you are unsure which category a funding stream belongs to, keep the agreement with a file note recording your reasoning. A documented decision is far quicker to defend at examination than a reconstructed one.</p>

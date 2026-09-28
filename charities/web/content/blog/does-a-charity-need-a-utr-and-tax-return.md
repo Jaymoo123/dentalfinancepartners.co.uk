@@ -70,7 +70,7 @@ faqs:
 <h2>A UTR and a return are the direct tax picture only</h2>
 <p>Three things sit outside it. VAT is a separate registration with its own threshold and its own reliefs, and no charity is outside the VAT system simply for being a charity, which <a href="/blog/charity-vat/do-charities-pay-vat">the VAT position</a> sets out. Payroll is a third registration again, needed as soon as anyone is paid. And none of it reaches a community interest company, which sits outside the charity definition the tax Acts use, pays corporation tax in the ordinary way and claims no charitable exemption, as <a href="/blog/cics-and-social-enterprises/cic-vs-charity">the CIC comparison</a> shows.</p>
 
-<h2>The order to work in</h2>
+<h2>What to check before you decide there is nothing to file</h2>
 <ol>
   <li>Establish the structure, since it decides whether a UTR already exists and which return would apply.</li>
   <li>Locate both numbers and confirm HMRC holds current trustee and address details.</li>

@@ -71,7 +71,7 @@ export const charityTypes: CharityType[] = [
       },
       {
         title: "Payout options set out against the cap",
-        body: "Before the board decides, a specialist reviews what the asset lock and any dividend cap permit and puts salary, capped dividend and reinvestment side by side.",
+        body: "Before the board decides, what the asset lock and any dividend cap permit is established first, and salary, capped dividend and reinvestment are put side by side.",
       },
       {
         title: "Payroll, and a structure comparison for the board",
