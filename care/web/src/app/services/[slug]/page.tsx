@@ -58,7 +58,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <div className={siteContainerLg}>
         <Link href="/services" className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6">All services</Link>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{service.headline}.</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">{service.intro}</p>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80" dangerouslySetInnerHTML={{ __html: service.intro }} />
         <div className="mt-10"><Link href="/contact" className="inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-[#5a4d75] hover:bg-white/90 transition-colors">Get in touch</Link></div>
       </div>
     </section>
@@ -68,7 +68,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           {service.stats.map((stat) => (
             <div key={stat.label} className="flex flex-col sm:text-center">
               <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-              <div className="mt-1 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider">{stat.label}</div>
+              <div className="mt-1 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider" dangerouslySetInnerHTML={{ __html: stat.label }} />
             </div>
           ))}
         </div>
@@ -81,7 +81,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           {service.challenges.map((item) => (
             <article key={item.title} className="border border-neutral-200 border-l-4 border-l-[#7d6b9e] bg-neutral-50 p-6 sm:p-8">
               <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+              <p className="mt-4 text-base leading-relaxed text-neutral-600" dangerouslySetInnerHTML={{ __html: item.body }} />
             </article>
           ))}
         </div>
@@ -94,7 +94,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           {service.howWeHelp.map((item) => (
             <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-[#7d6b9e] hover:shadow-md transition-all">
               <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-600" dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
         </div>
@@ -115,7 +115,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
                     </span>
                   </summary>
-                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4">{faq.answer}</div>
+                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </details>
               ))}
             </div>
