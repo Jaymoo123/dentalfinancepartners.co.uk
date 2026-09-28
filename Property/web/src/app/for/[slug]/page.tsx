@@ -97,7 +97,7 @@ export default async function AudiencePage({
         </section>
       )}
 
-      <TopicSection id="challenges" eyebrow="What lands on your desk" title={`What lands on your desk: ${audience.title.toLowerCase()}`}>
+      <TopicSection id="challenges" eyebrow="What lands on your desk" title="What you are dealing with">
         <CardStack items={audience.challenges} columns={2} html />
       </TopicSection>
 
@@ -113,7 +113,7 @@ export default async function AudiencePage({
         <LeadCTAPanel
           contained
           eyebrow="Free consultation"
-          title={`Talk to a specialist about ${audience.title.toLowerCase()}`}
+          title="Talk to a specialist about your situation"
           description="Book a free consultation. No obligation, no hard sell."
           proofPoints={[]}
           formTitle="Book your free consultation"

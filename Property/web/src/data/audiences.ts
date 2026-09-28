@@ -230,7 +230,7 @@ export const audiences: Audience[] = [
       },
       {
         "value": "3 years",
-        "label": "Anti-withdrawal window on capital taken out of the partnership after a Schedule 15 transfer"
+        "label": "Anti-withdrawal window after a Sch 15 transfer"
       },
       {
         "value": "5%",
@@ -629,7 +629,7 @@ export const audiences: Audience[] = [
     "stats": [
       {
         "value": "50/50",
-        "label": "Default split of joint rental income for spouses and civil partners living together"
+        "label": "50/50 default for spouses and civil partners living together"
       },
       {
         "value": "60 days",
@@ -740,7 +740,7 @@ export const audiences: Audience[] = [
       },
       {
         "value": "5 filings",
-        "label": "Four quarterly updates plus the year-end steps each tax year"
+        "label": "Four quarterly updates plus the year-end declaration each tax year"
       },
       {
         "value": "£200",
@@ -943,7 +943,7 @@ export const audiences: Audience[] = [
       },
       {
         "value": "£3,000",
-        "label": "Annual exempt amount for the estate in the year of death and the two following tax years"
+        "label": "Estate exempt amount for death year plus two more"
       },
       {
         "value": "60 days",
@@ -1341,7 +1341,7 @@ export const audiences: Audience[] = [
       },
       {
         "value": "One bill",
-        "label": "An HMO in England is a single council tax dwelling, owner liable, since 1 December 2023"
+        "label": "One council tax bill, owner liable, since Dec 2023"
       },
       {
         "value": "£1m",

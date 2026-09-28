@@ -7,7 +7,7 @@
   "intro": "You have inherited a property, or you are the executor holding one, and you need to decide whether to keep it, let it or sell it. A specialist starts with the probate value, because that figure becomes the capital gains base cost for whoever eventually sells and it is the number the inheritance tax position was built on. Next comes who sells and when: the estate, before the property is passed on, or the beneficiaries after. If it is let, the review covers whose rental income it is in each period and who registers for self assessment. That leaves a written position on the fork in front of you, and the figures your accountant prepares the returns from. The deadlines in it are law's, not yours.",
   "stats": [
     { "value": "24%", "label": "CGT rate for personal representatives on residential gains, 2026/27" },
-    { "value": "£3,000", "label": "Annual exempt amount for the estate in the year of death and the two following tax years" },
+    { "value": "£3,000", "label": "Estate exempt amount for death year plus two more" },
     { "value": "60 days", "label": "To report and pay CGT on a UK residential disposal where tax is due" },
     { "value": "2 years", "label": "Window from the date of death to redirect an inheritance by deed of variation" }
   ],
