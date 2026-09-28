@@ -278,11 +278,11 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         and a second texture band is not worth one. Fix the id first if this
         slot is ever wanted. */}
     <LeadCTAPanel
-      eyebrow=""
+      eyebrow="Free first call, then a fixed fee in writing"
       title="Speak to an ecommerce tax specialist."
       description={service.closer}
       proofPoints={[]}
-      formTitle=""
+      formTitle="Book your free first call"
       form={<LeadForm />}
     />
   </>);

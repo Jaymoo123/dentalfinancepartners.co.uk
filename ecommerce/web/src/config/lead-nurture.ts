@@ -311,7 +311,7 @@ const STEPS: LeadNurtureStep[] = [
         "Just reply with a time that suits and an accountant will call you.",
         [
           "Thanks for your enquiry. It has just come through to us and one of our accountants who works with online sellers is ready to help.",
-          "The call is a free review of your situation, about 20 minutes, with no charge and no obligation.",
+          "The first call is free, about 20 minutes, and there is no obligation.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
         "t0_email",
@@ -379,7 +379,7 @@ const STEPS: LeadNurtureStep[] = [
         "A short call usually surfaces something worth knowing about your setup.",
         [
           "A quick pointer while your enquiry is with us. Most sellers we speak to, whether they run an Amazon store, a Shopify site or a spread of marketplaces, find that the figures in their platform reports and the figures their accounts are built on are not the same thing.",
-          "On some marketplaces VAT is handled at the checkout, and fees and refunds are netted off before the payout lands, and stock sitting in more than one country all change how a seller account should be put together. That is exactly the kind of thing your free review would look at.",
+          "On some marketplaces VAT is handled at the checkout, and fees and refunds are netted off before the payout lands, and stock sitting in more than one country all change how a seller account should be put together. That is exactly the kind of thing the first call would cover.",
           "Whenever suits, just reply with a day and time and we will get a specialist to call you.",
         ],
         "day2_give_email",
@@ -415,7 +415,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free review is still open. Reply YES and an accountant will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free first call is still open. Reply YES and an accountant will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -426,7 +426,7 @@ const STEPS: LeadNurtureStep[] = [
           `Still here when you are ready, ${c.firstName}`,
           "No rush at all. A one-line reply is all it takes.",
           [
-            "Just checking in, and there is genuinely no rush. Your free review is still open, and if the timing is not right just now, that is completely fine. Busy spells come with the territory when you sell online.",
+            "Just checking in, and there is genuinely no rush. Your free first call is still open, and if the timing is not right just now, that is completely fine. Busy spells come with the territory when you sell online.",
             "If something is holding you back, or things have simply been busy, a one-line reply is all it takes. Tell us a day and time that works, or ask whatever is on your mind, and we will take it from there.",
           ],
           "day7_email",
@@ -609,7 +609,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have sent a couple of messages now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are nearing the VAT registration threshold, moving stock abroad, adding a new sales channel, or a letter landing about your marketplace sales data.`,
+            `If you would still like a free first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most are nearing the VAT registration threshold, moving stock abroad, adding a new sales channel, or a letter landing about your marketplace sales data.`,
             "All the best with the shop.",
           ],
           "detail_capture_day7",

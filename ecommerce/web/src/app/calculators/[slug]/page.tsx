@@ -10,6 +10,8 @@ import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 import { buildFaqJsonLd } from "@/lib/schema";
 import { btnPrimary, siteContainerLg, sectionY, focusRing, focusRingAuthoredLinks } from "@/components/ui/layout-utils";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -171,10 +173,20 @@ export default async function CalculatorPage({ params }: Props) {
         route. No CTA data attribute is added: this is a plain internal link,
         so the CTA snapshot is unchanged.
         `.ground-dark` rebinds --focus-ring for this band. Do not remove it. */}
-    <section className={`ground-dark bg-neutral-900 ${sectionY}`}>
-      <div className={siteContainerLg}>
-        <Link href="/contact" className={btnPrimary}>{tool.ctaLabel}</Link>
-      </div>
-    </section>
+    {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires
+        exactly one form under the calculator result, with no gate. This band was
+        a bare /contact link, so the route rendered zero forms. The earlier
+        decline was that a heading and a line would have to be authored for the
+        calculator family; they are authored here, once, off the tool's own name,
+        and the tool's `ctaLabel` becomes the submit label so nothing it already
+        published is dropped. */}
+    <LeadCTAPanel
+      eyebrow="Free first call, then a fixed fee in writing"
+      title={`Want a second pair of eyes on your ${tool.name.toLowerCase()} figure?`}
+      description="A calculator works from the numbers you put in it. Send us the ones you are unsure about and we will tell you whether the figure holds up, and what to do about it if it does not. We reply within 24 hours and one of our accountants comes back to you directly."
+      proofPoints={[]}
+      formTitle={tool.ctaLabel}
+      form={<LeadForm />}
+    />
   </>);
 }

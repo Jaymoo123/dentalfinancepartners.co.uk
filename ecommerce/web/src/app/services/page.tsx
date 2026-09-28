@@ -9,6 +9,8 @@ import { serviceTiers } from "@/config/service-tiers";
 import { ecommerceServices } from "@/data/services";
 import { siteConfig } from "@/config/site";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 export const metadata: Metadata = {
   title: "Ecommerce Tax Services for UK Sellers",
   description: "Specialist ecommerce accountancy services: VAT compliance, settlement reconciliation, EU selling and HMRC platform-reporting letter response.",
@@ -117,5 +119,17 @@ export default function ServicesIndexPage() {
         </div>
       </div>
     </section>
+    {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires one
+        LeadCTAPanel with the site's LeadForm on every money page. This hub
+        rendered zero forms. The earlier decline was "writing a CTA heading and
+        line is authoring copy"; authoring it is exactly what this pass is for. */}
+    <LeadCTAPanel
+      eyebrow="Free first call, then a fixed fee in writing"
+      title="Tell us where the accounts stand and we will take it from there."
+      description="Whichever of these you came for, the first call is the same: you tell us how you sell, we tell you what needs doing and what it will cost. We reply within 24 hours and one of our accountants comes back to you directly."
+      proofPoints={[]}
+      formTitle="Book your free first call"
+      form={<LeadForm />}
+    />
   </>);
 }

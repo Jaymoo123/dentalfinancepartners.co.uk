@@ -260,11 +260,11 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
         props are passed: this route has no authored "what to expect" list and
         the four defaults are unwritten copy including a fee line. Owner item. */}
     <LeadCTAPanel
-      eyebrow=""
+      eyebrow="Free first call, then a fixed fee in writing"
       title="Speak to an ecommerce VAT specialist."
       description={vp.closer}
       proofPoints={[]}
-      formTitle=""
+      formTitle="Book your free first call"
       form={<LeadForm />}
     />
   </>);

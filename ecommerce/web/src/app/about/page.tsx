@@ -79,7 +79,8 @@ export default function AboutPage() {
         <Eyebrow>About</Eyebrow>
         <div className="max-w-3xl space-y-8 text-base leading-relaxed text-neutral-600 sm:text-lg">
           <p>We are specialist accountants for UK online sellers: Amazon FBA and FBM sellers, Shopify store owners, marketplace sellers on eBay, Etsy and TikTok Shop, and dropshipping businesses.</p>
-          <p>We support accounts, VAT compliance, settlement reconciliation and tax returns for ecommerce businesses. You tell us your situation, one of our accountants calls you to go through it, and we agree a fixed fee in writing before any work starts.</p>
+          <p>We do the accounts, the VAT compliance, the settlement reconciliation and the tax returns. You tell us your situation, one of our accountants calls you to go through it, and we agree a fixed fee in writing before any work starts.</p>
+          <p>Selling online is the part most general practices get wrong. Marketplace fees, deemed-supplier VAT, stock held in more than one country and payouts that arrive net of half a dozen adjustments all have to be unpicked before the numbers mean anything. That unpicking is what we do every day.</p>
         </div>
         <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
@@ -93,11 +94,11 @@ export default function AboutPage() {
         eyebrow, formTitle and proofPoints overridden to empty so no component
         default publishes copy nobody here authored. */}
     <LeadCTAPanel
-      eyebrow=""
+      eyebrow="Free first call, then a fixed fee in writing"
       title="Speak to an ecommerce tax specialist."
-      description="Tell us about your online selling business and we will reply within 24 hours."
+      description="Tell us what you sell, where you sell it and where your stock sits, and we will tell you what your VAT and tax position looks like before you commit to anything. We reply within 24 hours and one of our accountants comes back to you directly."
       proofPoints={[]}
-      formTitle=""
+      formTitle="Book your free first call"
       form={<LeadForm />}
     />
   </>);

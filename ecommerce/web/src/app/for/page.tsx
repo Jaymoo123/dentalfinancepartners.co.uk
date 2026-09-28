@@ -7,6 +7,8 @@ import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-uti
 import { sellerHubs } from "@/data/for";
 import { siteConfig } from "@/config/site";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 export const metadata: Metadata = {
   title: "Accountants for UK Online Sellers",
   description: "Specialist ecommerce tax support by seller type: Amazon FBA/FBM, Shopify, marketplace sellers (eBay/Etsy/Vinted/TikTok Shop) and dropshippers.",
@@ -101,5 +103,17 @@ export default function ForIndexPage() {
         </div>
       </div>
     </section>
+    {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires one
+        LeadCTAPanel with the site's LeadForm on every money page. This hub
+        rendered zero forms. The earlier decline was "writing a CTA heading and
+        line is authoring copy"; authoring it is exactly what this pass is for. */}
+    <LeadCTAPanel
+      eyebrow="Free first call, then a fixed fee in writing"
+      title="Not sure which of these you are?"
+      description="Most sellers are two or three of them at once, and the tax treatment changes with each channel you add. Tell us how you sell and we will tell you what that means for your VAT and your accounts. We reply within 24 hours and one of our accountants comes back to you directly."
+      proofPoints={[]}
+      formTitle="Book your free first call"
+      form={<LeadForm />}
+    />
   </>);
 }

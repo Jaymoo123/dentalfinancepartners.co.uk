@@ -7,6 +7,8 @@ import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { vatPages } from "@/data/vat";
 import { siteConfig } from "@/config/site";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 export const metadata: Metadata = {
   title: "Ecommerce VAT Guides for UK Sellers",
   description: "VAT guidance for UK ecommerce and marketplace sellers: deemed supplier rules, marketplace fee VAT, the £135 import rule, IOSS/OSS and postponed VAT.",
@@ -90,5 +92,17 @@ export default function VatIndexPage() {
         </div>
       </div>
     </section>
+    {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires one
+        LeadCTAPanel with the site's LeadForm on every money page. This hub
+        rendered zero forms. The earlier decline was "writing a CTA heading and
+        line is authoring copy"; authoring it is exactly what this pass is for. */}
+    <LeadCTAPanel
+      eyebrow="Free first call, then a fixed fee in writing"
+      title="VAT is where online sellers get caught out."
+      description="Deemed supplier rules, marketplace fees, import thresholds and the EU schemes all interact, and getting one of them wrong is usually expensive. Tell us how your sales are structured and we will tell you where you stand. We reply within 24 hours and one of our accountants comes back to you directly."
+      proofPoints={[]}
+      formTitle="Book your free first call"
+      form={<LeadForm />}
+    />
   </>);
 }

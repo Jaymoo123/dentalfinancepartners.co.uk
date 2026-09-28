@@ -279,11 +279,11 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
         authored "what to expect" list to pass and the four defaults are
         unwritten copy including a fee line. Owner item. */}
     <LeadCTAPanel
-      eyebrow=""
+      eyebrow="Free first call, then a fixed fee in writing"
       title="Speak to an ecommerce tax specialist."
       description={hub.closer}
       proofPoints={[]}
-      formTitle=""
+      formTitle="Book your free first call"
       form={<LeadForm />}
     />
   </>);
