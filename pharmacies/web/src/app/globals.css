@@ -25,3 +25,15 @@ body {
   color: var(--ink);
   font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
+
+/* Blog bodies embed raw <table> markup with no wrapper, and
+   prose-standard.css sets `.prose table { width: 100% }` without constraining
+   it below the viewport: the closures post measured scrollWidth 562 at a real
+   390 emulation. Scope the fix here rather than in the shared package (out of
+   this site's edit boundary): the table becomes its own scroll container
+   instead of widening the page. */
+.prose table:not(.not-prose *) {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}

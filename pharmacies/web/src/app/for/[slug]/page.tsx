@@ -9,6 +9,19 @@ import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 
 export function generateStaticParams() { return pharmacyHubs.map((h) => ({ slug: h.slug })); }
 
+const HUB_CLOSERS: Record<string, string> = {
+  "pharmacy-owners":
+    "Send us your FP34 schedules and your last set of accounts and we will tell you where your margin actually comes from, and what it is worth to change the structure.",
+  "buying-a-pharmacy":
+    "Send us the seller's accounts and the asking price and we will tell you what the goodwill is really worth, what the bank will lend against it, and what the deal does to your tax position.",
+  "selling-a-pharmacy":
+    "Tell us when you want out and how the business is held, and we will tell you what the sale leaves you after Business Asset Disposal Relief at 18% from April 2026.",
+  "pharmacy-groups":
+    "Tell us how many branches you run and how they are owned, and we will tell you whether the group structure is costing you money and what consolidating would save.",
+  "locum-pharmacists":
+    "Tell us what you invoice in a year and we will show you the difference between sole trader and limited company on your own numbers, not a generic example.",
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const hub = getPharmacyHub(slug);
@@ -114,14 +127,13 @@ export default async function PharmacyHubPage({ params }: { params: Promise<{ sl
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <h2 className="text-2xl font-bold text-white sm:text-3xl">Speak to a pharmacy finance specialist.</h2>
-              <p className="mt-4 text-lg leading-relaxed text-white/80">Tell us about your {hub.title.toLowerCase()} situation and we will reply within 24 hours.</p>
+              <p className="mt-4 text-lg leading-relaxed text-white/80">{HUB_CLOSERS[hub.slug] ?? `Tell us about your ${hub.title.toLowerCase()} situation and we will tell you where you stand.`}</p>
             </div>
             <div className="bg-white p-6 sm:p-8">
               <LeadForm submitLabel="Send enquiry" />
-              {/* ponytail: Sonnet-plain closer, per-audience via hub.title; flagged for the Opus read (brief section 4). */}
+              {/* Closer copy: HUB_CLOSERS above, one authored sentence per audience (Opus read 2026-09-28). */}
               <p className="mt-4 text-sm leading-relaxed text-neutral-500">
-                A couple of sentences on your {hub.title.toLowerCase()} situation helps us prepare properly for the
-                call. We reply within 24 hours and one of our accountants comes back to you directly.
+                We reply within 24 hours and one of our accountants comes back to you directly.
               </p>
             </div>
           </div>

@@ -9,6 +9,25 @@ import { siteContainerLg } from "@/components/ui/layout-utils";
 
 export function generateStaticParams() { return pharmacyServices.map((s) => ({ slug: s.slug })); }
 
+const SERVICE_CLOSERS: Record<string, string> = {
+  "pharmacy-purchase-accounting":
+    "Send us the target's accounts and we will tell you what you are actually buying, what to pay for it, and how to structure the purchase so the tax works.",
+  "pharmacy-sale-cgt-badr":
+    "Tell us how the business is held and when you want to exit, and we will model what you keep after CGT and whether Business Asset Disposal Relief applies.",
+  "pharmacy-valuation-goodwill":
+    "Send us three years of accounts and your FP34 history and we will value the goodwill the way a buyer's bank will, not the way a broker's brochure does.",
+  "nhs-payment-reconciliation-fp34":
+    "Send us a few months of FP34 schedules and your bank statements and we will tell you what the NHS has actually paid you, and what it has not.",
+  "pharmacy-vat-retail-schemes":
+    "Tell us how your counter sales and dispensing split and we will tell you which retail scheme leaves you better off, and fix the apportionment if it is wrong.",
+  "pharmacy-payroll-workforce":
+    "Send us a typical rota and we will run the payroll off it, including locums, pension auto-enrolment and the April 2026 employer cost rises.",
+  "pharmacy-incorporation-structure":
+    "Tell us what the business earns and how you draw from it, and we will show you what incorporating does to your tax bill before you commit to it.",
+  "pharmacy-benchmarking-margin":
+    "Send us your accounts and we will show you where you sit against comparable pharmacies on gross margin, staff cost and items per month.",
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const service = getPharmacyService(slug);
@@ -111,14 +130,13 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
           <div>
             <h2 className="text-2xl font-bold text-white sm:text-3xl">Speak to a pharmacy finance specialist.</h2>
-            <p className="mt-4 text-lg leading-relaxed text-white/80">Tell us about your situation and we will reply within 24 hours.</p>
+            <p className="mt-4 text-lg leading-relaxed text-white/80">{SERVICE_CLOSERS[service.slug] ?? "Tell us about your situation and we will tell you where you stand."}</p>
           </div>
           <div className="bg-white p-6 sm:p-8">
             <LeadForm submitLabel="Send enquiry" />
-            {/* ponytail: Sonnet-plain closer, per-service via service.title; flagged for the Opus read (brief section 4). */}
+            {/* Closer copy: SERVICE_CLOSERS above, one authored sentence per service (Opus read 2026-09-28). */}
             <p className="mt-4 text-sm leading-relaxed text-neutral-500">
-              A couple of sentences on your {service.title.toLowerCase()} question helps us prepare properly for the
-              call. We reply within 24 hours and one of our accountants comes back to you directly.
+              We reply within 24 hours and one of our accountants comes back to you directly.
             </p>
           </div>
         </div>
