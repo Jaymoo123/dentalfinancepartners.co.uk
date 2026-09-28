@@ -14,7 +14,7 @@ import BookingPicker from "@/components/forms/BookingPicker";
  */
 
 export const metadata: Metadata = {
-  title: `Book your free review`,
+  title: `Book your first call`,
   description: "Pick a time for your free IR35 review call.",
   robots: { index: false, follow: false },
 };

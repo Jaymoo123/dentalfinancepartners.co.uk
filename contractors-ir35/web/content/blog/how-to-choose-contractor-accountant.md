@@ -3,7 +3,7 @@ title: How to Choose a Contractor Accountant in the UK
 slug: how-to-choose-contractor-accountant
 primaryKeyword: "contractor accountant"
 date: '2026-06-12'
-updatedDate: '2026-06-12'
+updatedDate: '2026-09-28'
 author: Contractor Tax Accountants Editorial Team
 image: "https://images.pexels.com/photos/7654120/pexels-photo-7654120.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
 altText: "A busy office scene with two professionals working on laptops and calculators."
@@ -52,7 +52,7 @@ faqs:
 - question: Should I use an umbrella company instead of a PSC?
   answer: "For a genuinely inside-IR35 engagement, an umbrella is often the simpler and more economical route: no PSC running costs, no corporation tax filings, no double-layer PAYE administration. Keeping a PSC makes more sense when you hold some outside-IR35 work alongside an inside engagement, when you want to retain and invest profits, or when pension and structuring considerations apply. The answer depends on your mix of engagements. From 6 April 2026, the umbrella joint and several liability reform (Finance Act 2026 s.24, ITEPA Chapter 11) means that agencies and clients are far more careful about which umbrellas they place contractors with, so the choice of umbrella matters as much as whether to use one at all."
 - question: How do I test whether a contractor accountant genuinely understands off-payroll working?
-  answer: Ask them directly about the distinction between Chapter 8 and Chapter 10 of ITEPA 2003, about who operates PAYE and bears employer NIC under each chapter, about the absence of the 5% expenses allowance under Chapter 10, and about how the 45-day SDS disagreement process works. Ask whether they can model the take-home impact of an inside versus outside determination at your rate. A specialist will answer these without hesitation. A generalist will either reach for a brochure or say that IR35 is the client's issue to sort out, which is a sign they do not understand Chapter 8 at all.
+  answer: Ask them directly about the distinction between Chapter 8 and Chapter 10 of ITEPA 2003, about who operates PAYE and bears employer NIC under each chapter, about the absence of the 5% expenses allowance under Chapter 10, and about how the 45-day SDS disagreement process works. Ask whether they can model the take-home impact of an inside versus outside determination at your rate. A contractor specialist answers all of these without hesitation. A generalist will either reach for a brochure or say that IR35 is the client's issue to sort out, which is a sign they do not understand Chapter 8 at all.
 - question: What records should a PSC contractor keep and how can an accountant help?
   answer: A PSC needs records to support its annual accounts and corporation tax return, its VAT return if registered, PAYE records for directors' salaries, dividend vouchers and board minutes authorising each dividend, contractor agreements and any SDS received, evidence of actual working practices relevant to IR35 status, and receipts for expenses claimed. A good accountant establishes a document workflow at the start of the engagement so that record-keeping is structured rather than a retrospective scramble at year-end. Digital bookkeeping software is standard; your accountant should advise on which platform suits your transaction volume and integrate it with the VAT and payroll position.
 ---

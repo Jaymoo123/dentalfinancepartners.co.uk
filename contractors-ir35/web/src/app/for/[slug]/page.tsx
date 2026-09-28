@@ -322,8 +322,11 @@ export default async function ContractorTypePage({
           contained
           ground="slate"
           eyebrow="Free first call, then a fixed fee in writing"
-          title={`Talk to a contractor specialist about ${phrase}`}
-          description="Book a free first call. We will talk through your IR35 position, your structure and whether there is anything worth changing. No hard sell, no obligation. If we take the work on, you get a fixed fee in writing before anything starts."
+          title={type.closer?.title ?? `Talk to a contractor specialist about ${phrase}`}
+          description={
+            type.closer?.description ??
+            "Book a free first call. We will talk through your IR35 position, your structure and whether there is anything worth changing. No hard sell, no obligation. If we take the work on, you get a fixed fee in writing before anything starts."
+          }
           proofPoints={[]}
           formTitle="Book your free first call"
           form={<LeadForm submitLabel="Request a callback" />}

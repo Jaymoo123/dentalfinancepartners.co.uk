@@ -299,7 +299,7 @@ const STEPS: LeadNurtureStep[] = [
         [
           "Thanks for your enquiry, it has just come through to us and a member of the team is ready to help.",
           "One of our accountants will call you within 24 hours, Monday to Friday.",
-          "The call is a free review of your contracting tax position, about 20 minutes, with no charge and no obligation. Whether you are looking at IR35 status, comparing umbrella and limited, or working out what your take-home should be, that is exactly what the call is for.",
+          "The first call is free, about 20 minutes on your contracting tax position, and if you want us to act you get a fixed fee in writing before anything starts. IR35 status, umbrella against limited, or what your take-home should actually be: that is exactly what the call is for.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
         "t0_email",
@@ -403,7 +403,7 @@ const STEPS: LeadNurtureStep[] = [
         `Still here when you are, ${c.firstName}`,
         "No rush at all. A one-line reply is all it takes.",
         [
-          "Just checking in, and there is genuinely no rush. Your free review is still open.",
+          "Just checking in, and there is genuinely no rush. Your free first call is still open.",
           "If anything has changed since you first got in touch, that is fine too. The situations where a review tends to earn its keep are a new contract starting, an IR35 status dispute, a change in your working arrangements, or a tax bill that looks higher than expected.",
           "A one-line reply is all it takes. Give us a day and a time, or ask whatever is on your mind, and the team will take it from there.",
         ],
@@ -586,7 +586,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "No more reminders. Reply any time and we will pick it straight up.",
           [
             "We have asked a couple of times now, so we will stop the reminders and leave it with you. No hard feelings at all.",
-            `If you would still like a free review, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most for contractors are a new contract starting, an IR35 challenge, a move from umbrella to limited, a Self Assessment deadline, or a tax bill you want a second opinion on.`,
+            `If you would still like a free first call, just reply with ${ask}, whether that is next week or next year. The moments it tends to matter most for contractors are a new contract starting, an IR35 challenge, a move from umbrella to limited, a Self Assessment deadline, or a tax bill you want a second opinion on.`,
             "All the best.",
           ],
           "detail_capture_day7",

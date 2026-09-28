@@ -119,7 +119,7 @@ export const TOPICS: Topic[] = [
     label: "Contractor accounting and expenses",
     blogCategorySlugs: ["contractor-accounting-basics", "expenses-and-deductions"],
     primaryCalculator: null,
-    ctaCopy: "Get a free review of your contractor accounting",
+    ctaCopy: "Get our read on your contractor accounting",
     resourceId: null,
   },
 ];

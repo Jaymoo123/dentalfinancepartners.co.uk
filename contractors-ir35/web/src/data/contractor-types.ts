@@ -15,12 +15,21 @@ export interface ContractorType {
   howWeHelp: Array<{ title: string; body: string }>;
   faqs: Array<{ question: string; answer: string }>;
   testimonial?: { quote: string; attribution: string };
+  /** Audience-specific closing ask. One per type, deliberately not a template:
+   * a single shared closer with the slug interpolated is what the 2026-09-28
+   * parity read flagged. Falls back to the generic ask in for/[slug]/page.tsx. */
+  closer?: { title: string; description: string };
 }
 
 export const contractorTypes: ContractorType[] = [
   // it-contractors: docs/contractors-ir35/_wave1/it-contractors.json, 2026-09-27, LEADS_250 S4a
   {
     slug: "it-contractors",
+    closer: {
+      title: "Get your IR35 position settled before the next contract starts",
+      description:
+        "We read the contract and the working practices together, then model what inside and outside actually leave you with at your day rate. Free first call, then a fixed fee in writing.",
+    },
     title: "IT Contractors",
     phrase: "IT contractors",
     headline: "Accountants for IT contractors",
@@ -125,6 +134,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "engineering-contractors",
+    closer: {
+      title: "Sort the site travel and the off-payroll question in one go",
+      description:
+        "Public sector determinations, the 24-month rule on a long posting and substitution in a specialist role all turn on the same evidence. We assemble it. Free first call, then a fixed fee in writing.",
+    },
     title: "Engineering Contractors",
     headline: "Specialist accountants for engineering contractors",
     metaTitle: "Accountants for Engineering Contractors | IR35 & Tax Advice",
@@ -197,6 +211,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "finance-contractors",
+    closer: {
+      title: "Keep a high day rate from turning into an avoidable tax bill",
+      description:
+        "Interim finance roles attract the control and integration tests, and retained profit at your rate needs a plan before the year end rather than after it. Free first call, then a fixed fee in writing.",
+    },
     title: "Finance Contractors",
     headline: "Specialist accountants for finance and interim contractors",
     metaTitle: "Accountants for Finance & Interim Contractors | IR35",
@@ -269,6 +288,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "management-consultants",
+    closer: {
+      title: "Tell the difference between a statement of work and body shopping",
+      description:
+        "We read the engagement the way HMRC would, across several clients at once, and set the corporation tax position against the fees you are actually billing. Free first call, then a fixed fee in writing.",
+    },
     title: "Management Consultants",
     headline: "Specialist accountants for independent management consultants",
     metaTitle: "Accountants for Management Consultants | IR35 & PSC Tax",
@@ -331,6 +355,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "project-managers",
+    closer: {
+      title: "Get a clear read on contracts that keep changing shape",
+      description:
+        "A project role that drifts into line management changes your status mid-engagement. We check it before you sign and again when the job moves. Free first call, then a fixed fee in writing.",
+    },
     title: "Project Managers",
     headline: "Specialist accountants for contract project managers",
     metaTitle: "Accountants for Contract Project Managers | IR35 Tax Advice",
@@ -388,6 +417,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "nhs-locum-doctors",
+    closer: {
+      title: "Sort the locum side without tripping over the NHS rules",
+      description:
+        "Agency chains, trust determinations and the pension interaction all land on the same tax return. We handle the lot together rather than one piece at a time. Free first call, then a fixed fee in writing.",
+    },
     title: "NHS Locum Doctors",
     phrase: "NHS locum doctors",
     headline: "Specialist accountants for locum doctors and NHS contractors",
@@ -456,6 +490,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "oil-gas-contractors",
+    closer: {
+      title: "Handle offshore rotations, overseas clients and UK tax in one place",
+      description:
+        "Residence, double taxation relief and where your VAT lands are the three that cost offshore contractors real money. We work through all three. Free first call, then a fixed fee in writing.",
+    },
     title: "Oil and Gas Contractors",
     headline: "Specialist accountants for oil and gas contractors",
     metaTitle: "Oil and Gas Contractor Accountants | IR35 & Offshore Tax",
@@ -518,6 +557,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "legal-contractors",
+    closer: {
+      title: "Keep locum and consultancy legal work on the right side of the status test",
+      description:
+        "Panel arrangements and firm supervision push a determination inside quickly. We review the clauses and what actually happens day to day. Free first call, then a fixed fee in writing.",
+    },
     title: "Legal Contractors",
     headline: "Specialist accountants for locum solicitors and legal contractors",
     metaTitle: "Accountants for Locum Solicitors | Legal Contractor IR35",
@@ -580,6 +624,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "marketing-contractors",
+    closer: {
+      title: "Sort retainers, several clients and what you can genuinely claim",
+      description:
+        "A long retainer looks like employment on paper more often than it should, and the expense rules for working from your own studio are widely got wrong. Free first call, then a fixed fee in writing.",
+    },
     title: "Marketing and Creative Contractors",
     headline: "Specialist accountants for marketing and creative contractors",
     metaTitle: "Marketing & Creative Contractor Accountants | IR35 Advice",
@@ -642,6 +691,11 @@ export const contractorTypes: ContractorType[] = [
 
   {
     slug: "construction-contractors",
+    closer: {
+      title: "Get CIS and IR35 working together instead of against each other",
+      description:
+        "Deductions to reclaim, gross payment status and an off-payroll determination on the same contract need one person looking at all of it. Free first call, then a fixed fee in writing.",
+    },
     title: "Construction and Architecture Contractors",
     headline: "Specialist accountants for construction and architecture contractors",
     metaTitle: "Accountants for Construction Contractors | IR35 & CIS",
@@ -704,6 +758,11 @@ export const contractorTypes: ContractorType[] = [
   // Wave 1 appends, docs/contractors-ir35/_wave1/*.json, 2026-09-27, LEADS_250 S4a
   {
     slug: "first-contract-outside-ir35",
+    closer: {
+      title: "Start your first outside contract in the right order",
+      description:
+        "Company, bank account, PAYE registration and the first invoice have a sequence, and getting it wrong costs far more to unwind than to plan. Free first call, then a fixed fee in writing.",
+    },
     title: "First Contract Outside IR35",
     phrase: "a first contract outside IR35",
     headline: "Accountants for your first contract outside IR35",
@@ -797,6 +856,11 @@ export const contractorTypes: ContractorType[] = [
   },
   {
     slug: "ir35-contract-review",
+    closer: {
+      title: "Have the contract and the working practices reviewed before you sign",
+      description:
+        "We read the clauses against the reality of the engagement, tell you plainly where it is weak, and set out what to ask the client to change. Free first call, then a fixed fee in writing.",
+    },
     title: "IR35 Contract Review",
     phrase: "an IR35 contract review",
     headline: "IR35 contract reviews for contractors before they sign",
@@ -900,6 +964,11 @@ export const contractorTypes: ContractorType[] = [
   },
   {
     slug: "umbrella-to-limited-company",
+    closer: {
+      title: "See what moving off the umbrella would really leave you with",
+      description:
+        "We compare umbrella take-home against a limited company at your rate, running costs and admin included, so the decision is a number rather than a hunch. Free first call, then a fixed fee in writing.",
+    },
     title: "Umbrella to Limited Company",
     phrase: "a move from umbrella to a limited company",
     headline: "Moving from umbrella to your own limited company",
@@ -1004,6 +1073,11 @@ export const contractorTypes: ContractorType[] = [
   },
   {
     slug: "inside-ir35",
+    closer: {
+      title: "Make the most of an inside determination instead of just accepting it",
+      description:
+        "We check whether the determination is right, and where it is, we make sure the expenses, the pension and any outside work alongside it are handled properly. Free first call, then a fixed fee in writing.",
+    },
     title: "Contractors Inside IR35",
     phrase: "contractors inside IR35",
     headline: "Specialist accountants for contractors caught inside IR35",
