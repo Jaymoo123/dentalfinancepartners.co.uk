@@ -193,3 +193,10 @@ assistant-naming rerun at the month-1 read; monitored_pages rows for the eight s
   owner's word, env set onto the two silent projects (`VERCEL_ENV_PREP_SILENT_SITES_2026-09-28.md`,
   13 sensitive values are owner dashboard pastes), `calc_pdf_offer` off. Owner inputs open: 13 GA4
   properties (`ESTATE_PLUMBING_2026-09-28.md`), ecommerce phone, AdSense console per domain.
+- 2026-09-28 latest: owner ruling, the agents' sentence rewrites are not wanted ("fine with the
+  wording we had"; a careful pass later). Four Opus reverters restored every rewritten sentence
+  on all 17 sites to the `8e1043d0` text and kept every mechanical change
+  (`ESTATE_PARITY_WORDING_REVERT_2026-09-28.md`); defect-string counts match the base per site;
+  tsc clean and vitest green on all 17; full serialised rebuild run before commit. Handoff for
+  the next agent: `ESTATE_PARITY_HANDOFF_2026-09-29.md`. Phase 1 step 5 (the wording pass) is
+  owner-led and never a sweep.
