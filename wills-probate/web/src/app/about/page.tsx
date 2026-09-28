@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, sectionYLoose, siteContainerLg } from "@/components/ui/layout-utils";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: `About ${siteConfig.name} | Who We Are and How We Work` },
-  description: `${siteConfig.name} is a free information service for UK wills, probate and inheritance tax. What we do, what we don't, and how we keep our guides accurate.`,
+  description: `${siteConfig.name} covers the money side of UK wills, probate and inheritance tax. What we do, how we work, and how we keep our guides accurate.`,
   alternates: { canonical: `${siteConfig.url}/about` },
 };
 
@@ -16,7 +17,7 @@ export default function AboutPage() {
         <div className={siteContainerLg}>
           <p className="eyebrow text-orange-400">About us</p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            A free information service for wills, probate and inheritance tax.
+            The money side of wills, probate and inheritance tax.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             We built {siteConfig.name} because this is an area where people need clear answers at difficult moments, and too much of what exists online is either sales material dressed up as guidance, or official documentation written for professionals.
@@ -97,6 +98,25 @@ export default function AboutPage() {
             <Link href="/contact" className={btnPrimary}>
               Get in touch
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Closing ask. Added 2026-09-28 (estate parity phase 0): this page rendered
+          no capture surface at all, so the only route off it was a link. Same
+          anatomy as /probate's closing block, not a new pattern. */}
+      <section className="border-t border-neutral-200 bg-[#1e293b] py-12 sm:py-16 lg:py-20">
+        <div className={siteContainerLg}>
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-start">
+            <div>
+              <div className="section-label mb-6">Get started</div>
+              <h2 className="text-2xl font-bold text-white sm:text-4xl">Tell us what you are dealing with.</h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Whether you are an executor part way through an estate or working out what your own will needs to do, one of our accountants will read what you send and come back to you directly. Free first call, then a fixed fee in writing.</p>
+            </div>
+            <div className="bg-white p-6 sm:p-8 lg:p-10">
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Send us your situation</h3>
+              <LeadForm submitLabel="Send enquiry" />
+            </div>
           </div>
         </div>
       </section>

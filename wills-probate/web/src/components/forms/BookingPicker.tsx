@@ -17,7 +17,7 @@ type Status = "idle" | "submitting" | "done" | "error" | "expired";
 const chipBase =
   "flex min-h-12 touch-manipulation flex-col items-center justify-center border-2 px-1.5 sm:px-3 py-2 text-sm font-bold transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500";
 const chipIdle = "border-neutral-300 bg-white text-slate-900 hover:border-orange-500 hover:bg-orange-50";
-const chipSelected = "border-orange-500 bg-orange-500 text-white";
+const chipSelected = "border-orange-700 bg-orange-700 text-white";
 
 export default function BookingPicker({ token }: { token: string }) {
   const days = useMemo(() => upcomingWeekdays(10), []);

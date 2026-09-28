@@ -1,5 +1,10 @@
 /* Tailwind source("..") scans from src/ relative to this file */
 @import "tailwindcss" source("..");
+/* Shared-package classes (LeadCTAPanel, ServiceTiers, kit primitives) live outside
+   this app's source root, so Tailwind never generated them and, for example, the
+   featured ServiceTiers CTA rendered white text on a transparent background.
+   Medical/crypto/startups-tech already carry this line. */
+@source "../../../../packages/web-shared";
 @import "tw-animate-css";
 
 /* ============================================================
@@ -21,6 +26,9 @@
   --accent: #f97316;          /* orange-500 */
   --accent-strong: #ea6c07;   /* orange-600 */
   --accent-whisper: #fff7ed;  /* orange-50 */
+  /* Ground for white-text CTAs in shared components. --accent (orange-500) is
+     2.89:1 against white and fails AA; orange-700 computes 5.22:1. */
+  --brand-primary-ground: #ca3500; /* orange-700 */
 
   /* On-dark accent */
   --highlight: #f97316;         /* orange-500 on dark */

@@ -213,7 +213,7 @@ export default function HomePage() {
       <section className="bg-[#1e293b] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="inline-block bg-orange-500 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-block bg-orange-700 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               Every family&apos;s situation is different
             </div>
             <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
@@ -276,21 +276,21 @@ export default function HomePage() {
         <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <div className="section-label mb-6">Want a specialist to take it from here?</div>
+              <div className="section-label mb-6">Want us to take it from here?</div>
               <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
                 Some estates need more than a calculator
               </h2>
               <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-neutral-200">
-                Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. If you would like a professional to look at your situation, tell us a little about it and we will connect you with a vetted specialist firm. It costs you nothing to ask, and there is no obligation.
+                Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. Tell us a little about the estate and one of our accountants takes the money side from here, the valuations, the inheritance tax position and the return. Where the matter also needs a solicitor, we introduce you to a regulated firm we work with. It costs you nothing to ask, and there is no obligation.
               </p>
               <div className="mt-8 space-y-4">
                 {[
                   { title: "You choose if and when", sub: "No pressure, no cold calls" },
-                  { title: "Vetted specialist firms only", sub: "Matched to wills, probate or estate planning as needed" },
+                  { title: "Our accountants on the money side", sub: "Valuations, inheritance tax and the estate return" },
                   { title: "Only if you ask us", sub: "Nothing is passed on unless you send an enquiry, and you can object at any time" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">
-                    <div className="h-12 w-12 flex items-center justify-center bg-orange-500 text-white font-bold text-xl flex-shrink-0">
+                    <div className="h-12 w-12 flex items-center justify-center bg-orange-700 text-white font-bold text-xl flex-shrink-0">
                       ✓
                     </div>
                     <div>
@@ -302,11 +302,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Get connected with a specialist</h3>
-              <LeadForm submitLabel="Get connected with a specialist" />
-              <p className="mt-4 text-xs leading-relaxed text-neutral-500">
-                By sending your details you agree to us sharing them with a relevant specialist firm so they can contact you. We may receive a fee if you go on to use their services. Full details in our privacy policy.
-              </p>
+              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Tell us about the estate</h3>
+              {/* LeadForm renders siteConfig.leadConsentText itself (LeadForm.tsx:476);
+                  the hand-rolled paragraph that used to sit here both duplicated it and
+                  carried the old connector wording. */}
+              <LeadForm submitLabel="Send enquiry" />
             </div>
           </div>
         </div>

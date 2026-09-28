@@ -57,7 +57,7 @@ export default function GlossaryIndexPage() {
             ]}
           />
           <div className="mt-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-orange-500 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-700 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <BookOpen className="h-3.5 w-3.5" />
               Plain English definitions
             </div>

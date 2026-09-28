@@ -2,7 +2,8 @@ import type { ServiceTier } from "@accounting-network/web-shared/components/Serv
 import type { StatItemConfig } from "@accounting-network/web-shared/components/StatsBar";
 
 /**
- * Service tiers for Probate Compass. Real copy from copy-staging/core/service-tiers.md.
+ * Service tiers. Real copy from copy-staging/core/service-tiers.md, converted to the firm
+ * voice on 2026-09-28 (owner decision: the brand IS the firm).
  */
 export const serviceTiers: ServiceTier[] = [
   {
@@ -20,27 +21,27 @@ export const serviceTiers: ServiceTier[] = [
     ctaHref: "/calculators",
   },
   {
-    name: "Guided handoff to a specialist",
+    name: "Our accountants on your estate",
     description:
-      "For when your situation needs professional hands. Blended families, business assets, cross-border estates, contested wills, estates near or over the tax thresholds. Tell us about your situation and we will connect you with a vetted specialist firm suited to it. Your details are shared only with your consent, and you remain free to walk away at any stage.",
+      "For when the numbers need professional hands. Blended families, business assets, cross-border estates, estates near or over the tax thresholds. Tell us about your situation and one of our accountants takes the money side: the valuations, the inheritance tax position and the estate return. Where the matter also needs a solicitor, we introduce you to a regulated firm we work with. You remain free to walk away at any stage.",
     features: [
-      "Matched to a vetted specialist firm",
-      "Wills and probate practitioners, estate planners or tax specialists as needed",
-      "Shared only with your consent",
+      "One of our accountants on the money side",
+      "Valuations, inheritance tax and the estate return",
+      "A regulated solicitor introduced where the matter needs one",
       "No obligation to proceed",
     ],
-    cta: "Get connected with a specialist",
+    cta: "Tell us about your situation",
     ctaHref: "/contact",
     featured: true,
   },
   {
-    name: "Ongoing estate planning support via partners",
+    name: "Ongoing estate planning support",
     description:
-      "For estates that need attention over time, not just once. Rules change and families change. Through our partner firms, you can put in place periodic reviews of wills and estate structure, updates when legislation moves, and a standing relationship so your family already knows who to call. We provide the information and the introductions; the professional work sits with the specialist firm you choose.",
+      "For estates that need attention over time, not just once. Rules change and families change. We review the estate and the tax position periodically, tell you when legislation moves the numbers, and stay the standing relationship your family already knows to call. Where the documents themselves need redrafting, we introduce you to a regulated solicitor we work with.",
     features: [
       "Periodic reviews of wills and estate structure",
       "Updates when legislation changes",
-      "A standing relationship with a specialist firm",
+      "A standing relationship with your accountant",
       "You choose if and when to proceed",
     ],
     cta: "Talk to us",
