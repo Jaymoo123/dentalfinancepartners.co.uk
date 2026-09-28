@@ -18,7 +18,7 @@ anything.
    networks operated by Ashfield Trading Ltd (16358723), never accountancy practices.
 4. Nothing deploys, nothing pushes, no IndexNow, no monitor, email, cron, popup or banner, and no
    change to an existing one's cadence, until the owner says so in that turn. Everything is
-   local-first. There are about 88 unpushed commits on `main`; do not push them.
+   local-first. There are 89 unpushed commits on `main` (this brief is one); do not push them.
 5. Working-tree rules, earned the hard way: agents share ONE working tree. Never put `git checkout`,
    `git restore`, `git stash`, `git clean` or `git reset` in an agent prompt. One agent per site at
    a time for anything that edits or builds. Never kill node by image name; kill only the PID you
@@ -30,7 +30,9 @@ anything.
    for anything a human reads or judges, Sonnet for builds and mechanical checks, never Sonnet for
    content, never DeepSeek. Re-grade existing evidence before spending a fresh wave.
 7. Expected non-committed file: `care/web/src/app/blog/[category]/[slug]/page.tsx`, a
-   line-ending-only empty diff. Anything else modified at the start is a leftover; inspect it.
+   line-ending-only empty diff. There are also about 17 untracked files from earlier sessions
+   (`Admin/`, `docs/_engines/DWC_*`, `docs/ecommerce/*.json`, `expansion_research/`); they are
+   not yours, leave them. Anything else modified at the start is a leftover; inspect it.
 
 ## 1. What "the full lead kit" means here
 
@@ -41,15 +43,15 @@ contractors-ir35, care, charities) it comprises:
 | Layer | Where | Notes |
 |---|---|---|
 | Foot lead form | `<site>/web/src/components/forms/LeadForm.tsx` inside the shared `LeadCTAPanel` (`packages/web-shared/design/marketing/LeadCTAPanel.tsx`) | on homepage, /about (care, charities), /services, every audience and service page, blog post foot |
-| Mini captures | shared `packages/web-shared/leads/MiniCapture.tsx`, `CalcResultCta.tsx`, `MobileToolSlot.tsx`; per-site `MiniCapture.tsx` and `InlineMiniLeadForm.tsx` | form ids `inline_mini`, `mobile_tool`, `calc_result_form`, `calc_result`, `resource_block`, `calc_page_footer`, `blog_short_resource`, the research index forms |
+| Mini captures | shared `packages/web-shared/leads/MiniCapture.tsx`, `CalcResultCta.tsx`, `MobileToolSlot.tsx`; per-site `components/forms/MiniCapture.tsx` (Property, Medical, contractors) or `components/calculators/MiniCapture.tsx` (care, charities); `components/blog/InlineMiniLeadForm.tsx` on all five | form ids `inline_mini`, `mobile_tool`, `calc_result_form`, `calc_result`, `resource_block`, `calc_page_footer`, `blog_short_resource`, the research index forms |
 | Calculator result form | Property `ResultGate.tsx`, premium tools, shared `Calculator` result slot | owner rule 09-27: exactly ONE form directly beneath a calculator result, no popup, no gate, no PDF offer |
-| Chat and intent surfaces | `<site>/web/src/components/support/SpecialistWidget.tsx`; `components/intent/` (`IntentProvider`, `ReturningBar`, `DeepScrollModal`, `NextStepOffer`); `lib/intent/` | live, estate-wide; owner ruled auto-open stays on calculator pages; two open findings today: widget over the entity block on /about, returning bar misrendering at 390 on Property |
-| Sticky and hero CTAs | shared `StickyCTA.tsx`; `niche.config.json` `cta.variants.leadgen` (home_cta, closing) | Medical's home_cta was rewritten today; check the other four |
-| Entity block | shared `EntityBlock.tsx` fed by `niche.config.json` `entity` | six headings: Who we are, Who this is for, Where we work, How it works, What happens next, What we are not; mounted on home, /about, /services, every audience and service page |
+| Chat and intent surfaces | `<site>/web/src/components/support/SpecialistWidget.tsx`; `components/intent/` (`IntentProvider`, `ReturningBar`, `DeepScrollModal`; `NextStepOffer` on Medical and contractors only); `lib/intent/` | on Property, Medical and contractors ONLY; care and charities carry no widget and no intent surfaces (verified by grep 09-28, confirm on the rendered page); owner ruled auto-open stays on calculator pages; two open findings today: widget over the entity block on /about, returning bar misrendering at 390 on Property |
+| Sticky and hero CTAs | per-site `components/ui/StickyCTA.tsx` on Property (homepage), Medical and contractors (`PageShell`); care and charities have no sticky CTA. Hero and home CTA copy: `<site>/niche.config.json` `cta.variants.leadgen.home_cta` on Property and Medical; care, charities and contractors leave `leadgen` empty and hardcode hero copy in their page files | Medical's home_cta was rewritten today; check the other four in their page files |
+| Entity block | shared `packages/web-shared/design/marketing/EntityBlock.tsx` fed by `<site>/niche.config.json` `entity` | six headings: Who we are, Who this is for, Where we work, How it works, What happens next, What we are not; mounted on home, /about, /services, every audience and service page |
 | Consent and disclosure | `LeadForm` consent text from `<site>/web/src/config/site.ts` (`leadConsentText`), `niche.config.json` `partner`, privacy and terms pages | consent wording is verbatim estate-wide; do not retype it anywhere |
 | Post-submit | `/thank-you`, `/complete`, `/book` (`BookingPicker.tsx`, `DetailsForm.tsx`), the post-submit Aswatax intro message | thank-you pages have named Aswatax since 09-09 |
-| Nurture | `<site>/web/src/config/lead-nurture.ts` | the emails a lead receives; same voice rules apply; "regulated firm" wording lives here too |
-| Blog CTAs | `<site>/web/src/lib/blog-cta.ts` or `BLOG_CTA` constants, `BlogPostRenderer.tsx` | category-driven headings and blurbs injected into every post |
+| Nurture | `<site>/web/src/config/lead-nurture.ts` | the emails a lead receives; same voice rules apply; "regulated firm" wording appears in Medical's file (twice), not the other four |
+| Blog CTAs | five different mechanisms: Property `CTA_BY_CATEGORY` inside `components/blog/BlogPostRenderer.tsx`; Medical `lib/blog-cta.ts` via `BlogPostRenderer`; contractors `ctaCopyForCategory` in `lib/blog-categories.ts` via `BlogPostRenderer`; charities `BLOG_CTA` in `components/blog/blog-cta.ts`; care has no category map, one fixed heading plus `LeadForm` and `InlineMiniLeadForm` written directly in `app/blog/[category]/[slug]/page.tsx` | category-driven headings and blurbs on four sites, one fixed CTA on care |
 | Machine layer | Organization JSON-LD (`lib/organization-schema.ts` or `lib/schema.ts`, all on `packages/web-shared/schema/organization.ts`), `public/llms.txt`, `llms-full.txt` route, footer legal line | all five ported and cleaned today; re-check, do not assume |
 
 "All of it" means every one of those layers on every one of the five sites, on the rendered page,
@@ -161,7 +163,10 @@ per site, about 10 more.
 
 Fixed today, verify they held (all local, commits listed in the compiled review):
 
-- Four audience templates no longer lowercase the title into headings; care and charities audience
+- Property and contractors audience templates no longer lowercase the title into headings
+  (`524b5290`, `44490175`); care and charities templates still call `title.toLowerCase()` but their
+  titles are common nouns ("Care Homes", "Small Charities") so the headings read correctly, confirm
+  on the rendered page; care and charities audience
   and service pages now carry one foot form; both service templates mount the entity block; Medical
   stat tiles render dates as text; Medical long posts carry one mid-article form; care service pages
   render their HTML; charities footer no longer says "specialist charity accountants"; Organization
