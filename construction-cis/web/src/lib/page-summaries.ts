@@ -39,7 +39,7 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/calculators":
     "Free CIS calculators for UK construction subcontractors and contractors. Estimate your CIS refund, take-home pay, gross payment status eligibility, and more.",
   "/blog":
-    "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by specialist CIS accountants.",
+    "Practical CIS and construction tax guides. CIS deductions, refunds, gross payment status, VAT reverse charge, expenses and limited company accounting. Written by accountants.",
   "/glossary":
     "Plain-English definitions of CIS, tax and construction accounting terms. Deduction rates, gross payment status, self assessment, VAT and more. Updated for 2026/27.",
   "/locations":
@@ -49,7 +49,7 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/about":
     "Specialist CIS accountants for UK construction trades. We only work with CIS subcontractors and contractors, so we understand the rules that a generalist accountant will not.",
   "/contact":
-    "Book a free call with a specialist CIS accountant. CIS refunds, gross payment status and construction accounting. A specialist CIS accountant will be in touch.",
+    "Book a free call with an accountant. CIS refunds, gross payment status and construction accounting. An accountant will be in touch.",
   "/cis-invoice-template":
     "Free CIS subcontractor invoice template for UK construction. Labour and materials split, CIS deduction line, plus standard VAT, domestic reverse charge and non-VAT versions. Excel and PDF.",
   "/cis-payment-deduction-statement-template":

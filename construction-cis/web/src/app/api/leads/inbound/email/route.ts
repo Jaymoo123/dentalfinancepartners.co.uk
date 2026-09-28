@@ -201,7 +201,7 @@ export async function POST(req: NextRequest) {
       alreadyContactable: promote.alreadyPromoted === true,
     });
     // Close the loop with the prospect: one short ack email confirming the
-    // reply landed and a specialist will call. Idempotent per lead, dormancy
+    // reply landed and we will call. Idempotent per lead, dormancy
     // and test gated, fail-soft inside (never throws out of the webhook).
     await acknowledgeEmailReply({ leadId });
   } catch (err) {

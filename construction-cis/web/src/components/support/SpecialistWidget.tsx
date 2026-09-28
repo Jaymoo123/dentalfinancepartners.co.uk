@@ -383,7 +383,7 @@ export function SpecialistWidget() {
             </span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">Trade Tax Specialists</p>
-              <p className="truncate text-[11px] text-white/70">A specialist CIS accountant will be in touch</p>
+              <p className="truncate text-[11px] text-white/70">An accountant will be in touch</p>
             </div>
             <button
               type="button"
@@ -454,7 +454,7 @@ export function SpecialistWidget() {
                 onClick={() => onChip("question")}
                 className={`${btnPrimary} w-full`}
               >
-                Ask a specialist
+                Ask we
               </button>
             </div>
           )}
@@ -499,7 +499,7 @@ export function SpecialistWidget() {
                   required
                   rows={2}
                   maxLength={500}
-                  placeholder="Your message to a specialist"
+                  placeholder="Your message to we"
                   className={inputClass}
                 />
                 {error && <p className="text-xs font-medium text-[var(--form-error)]">{error}</p>}
@@ -508,7 +508,7 @@ export function SpecialistWidget() {
                   disabled={status === "loading"}
                   className={`${btnPrimary} w-full`}
                 >
-                  {status === "loading" ? "Sending..." : "Send to a specialist"}
+                  {status === "loading" ? "Sending..." : "Send to we"}
                 </button>
                 <p className="text-[11px] leading-relaxed text-[var(--ink-whisper)]">
                   {siteConfig.leadConsentText} See our{" "}
@@ -572,7 +572,7 @@ export function SpecialistWidget() {
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        {open ? "Close" : "Ask a specialist"}
+        {open ? "Close" : "Ask we"}
       </button>
     </div>
   );

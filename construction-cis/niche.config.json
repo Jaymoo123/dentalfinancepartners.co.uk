@@ -1,4 +1,16 @@
 {
+  "entity": {
+    "firm": "Trade Tax Specialists is a UK accountancy practice for construction subcontractors and contractors. We handle CIS tax refunds, gross payment status applications, sole trader and limited company compliance, alongside CIS300 returns, deduction statements and the domestic reverse charge. Trade Tax Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "serves": "We act for UK CIS subcontractors and contractors across every construction trade, from a sole trader claiming a refund to a trade limited company managing gross payment status.",
+    "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
+    "howItWorks": [
+      "You tell us your situation through the enquiry form: how you are paid, what you have been deducted and what you need looked at.",
+      "One of our accountants calls you to go through it and answer the immediate questions.",
+      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We do the work, deal with HMRC on your behalf, and keep you ahead of your CIS deadlines."
+    ],
+    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+  },
   "niche_id": "construction-cis",
   "display_name": "Trade Tax Specialists",
   "legal_name": "Ashfield Trading Ltd",
@@ -358,6 +370,11 @@
     "sticky_primary": "Check your CIS refund",
     "sticky_secondary": "Most CIS subcontractors are owed money back. Speak to a specialist.",
     "sticky_button": "Book a free call"
+  },
+  "blog": {
+    "cta_heading": "Most CIS subcontractors are owed money back.",
+    "cta_body": "Third-party reported averages put a registered CIS subcontractor's annual refund at around £2,000 (illustrative, not guaranteed). Book a free call with one of our accountants. We will review your deductions, identify what you are owed, and handle the reclaim. Plain English, no jargon.",
+    "cta_button": "Book a free call"
   },
   "shared_components_version": "1.0.0",
   "last_sync": null

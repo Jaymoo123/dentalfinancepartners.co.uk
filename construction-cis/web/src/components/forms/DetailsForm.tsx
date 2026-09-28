@@ -102,7 +102,7 @@ export default function DetailsForm({
     return (
       <NoticeCard tone="accent" title="Thank you, that is everything we need">
         <p className="text-base leading-relaxed text-slate-700">
-          A specialist will be in touch. If you would like to pick a time that suits you, you can
+          We will be in touch. If you would like to pick a time that suits you, you can
           book a callback below.
         </p>
         {bookingToken && (

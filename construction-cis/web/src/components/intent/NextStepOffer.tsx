@@ -26,7 +26,7 @@ export function NextStepOffer() {
       ? "Open the calculator"
       : offer.kind === "guide"
         ? "Get the free guide"
-        : "Talk to a specialist";
+        : "Talk to we";
 
   return (
     <aside className="my-10 rounded-xl border border-primary-200 bg-primary-50 p-6 sm:p-8">

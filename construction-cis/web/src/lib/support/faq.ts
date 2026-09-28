@@ -26,7 +26,7 @@ export type Faq = { q: string; a: string };
 export const GENERIC: Faq[] = [
   {
     q: "What happens after I leave a question?",
-    a: "Leave your email and a one-line question and a specialist CIS accountant will come back to you personally. Not a sales team, not a call centre.",
+    a: "Leave your email and a one-line question and an accountant will come back to you personally. Not a sales team, not a call centre.",
   },
   {
     q: "Is the first call free?",

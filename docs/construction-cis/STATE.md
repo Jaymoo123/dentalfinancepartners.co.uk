@@ -1,5 +1,48 @@
 # construction-cis (Trade Tax Specialists) — site state
 
+## 2026-09-28 phase 0 parity (estate parity plan, brief `docs/_engines/ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md`)
+
+Working tree only, nothing committed or deployed (per rule 2/3 of the brief). Full report:
+`docs/construction-cis/PHASE0_2026-09-28.md`.
+
+**Changed, in code, not yet built or deployed:**
+- Pool-model copy converted to firm voice on about, contact, complete, home, services and
+  every prospect-facing string sitewide (owner ruling, decision 2): "partner network",
+  "the specialist firm you speak to sets its own fee", "a specialist will", "editorial content
+  only" all gone from rendered pages. Privacy policy and the consent text
+  (`config/site.ts:17`) are untouched, per the rule 8 exemption — they still describe the
+  data-sharing legally, that has NOT changed. **This is a copy change only; the pool
+  lead-fulfilment architecture itself (up to six regulated firms, `/privacy-policy` section 5)
+  is unresolved and untouched — see "Needs owner decision" in the phase 0 report.**
+- `delayHours` in `config/lead-nurture.ts`'s 8-step contactability sequence was carrying the
+  cumulative timeline (`0,0,4,24,48,96,168,264`, the bug pattern named in the brief); reset to
+  Property's gap values `0,0,4,20,24,48,72,96`. Detail-capture (4-step) sequence untouched, it
+  was already gap-shaped.
+- Instant T0 email now states "One of our accountants will call you within 24 hours, Monday to
+  Friday."
+- `niche.config.json`: added `entity` (Property's shape) and `blog` (was missing both).
+- `lib/schema.ts` `buildOrganizationJsonLd` ported to the shared `buildOrganization` builder
+  (`packages/web-shared/schema`), Medical's pattern: `organizationType: "AccountingService"`,
+  `parentOrganization` = Ashfield Trading Ltd, description from `niche.entity.firm`, sister-brand
+  `sameAs`. Every field the old hand-rolled version emitted survives.
+- Blog table overflow at 390px fixed: `.prose-blog table` is now its own scroll container
+  (`display:block; overflow-x:auto`), `web/src/app/globals.css`.
+- AdSense wired (Solicitors pattern): `layout.tsx` metadata `google-adsense-account`,
+  `ConsentedScripts adsenseClientId`, `next.config.ts` `ads: true`, `public/ads.txt` copied.
+  GA4 id still empty (plumbing agent's item).
+- `prose-standard.css`: confirmed still deliberately not imported, left as is per the existing
+  code comment (`globals.css:294`).
+
+**Corrects stale STATE.md lines:** the canonical fix (`bb297ab2`) is in HEAD and correct — every
+page reads its own canonical, root layout carries none — but the site last deployed 2026-09-16
+(`90fbea9c`), before that commit, so **live still 200s the homepage canonical on `/for/*`,
+`/services`, `/about`, `/contact` and both templates until the next deploy.** Not a code gap.
+
+tsc: clean (`npx tsc --noEmit -p construction-cis/web`, no output). vitest: 442/443 passing pre-fix,
+443/443 after fixing one test asserting the old pool-model copy
+(`src/tests/lead-dossier.test.ts`); one unrelated timeout in
+`src/tests/design/cta-attribute-diff.test.ts` under full parallel run, passes in isolation.
+
 ## PICKUP BLOCK (read this first) - design port, 2026-09-12
 
 **DEPLOYED to production 2026-09-16 from `90fbea9c` (port + uplift + header CTA fix + favicon).**

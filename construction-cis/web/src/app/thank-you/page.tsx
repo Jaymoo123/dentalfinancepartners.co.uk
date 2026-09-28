@@ -27,7 +27,7 @@ import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-b
 export const metadata: Metadata = {
   title: "Thank you | Your enquiry is on its way",
   description:
-    "Thanks for contacting Trade Tax Specialists. A specialist CIS accountant will be in touch to arrange a short call.",
+    "Thanks for contacting Trade Tax Specialists. An accountant will be in touch to arrange a short call.",
   robots: { index: false },
 };
 
@@ -121,7 +121,7 @@ export default async function ThankYouPage({
                     Pick a time for your free review call
                   </p>
                   <p className="mt-2 mb-6 text-sm text-neutral-600">
-                    Choose a day and window below. A specialist will call you then, no obligation.
+                    Choose a day and window below. We will call you then, no obligation.
                   </p>
                   <BookingPicker token={bookingToken} />
                 </div>
@@ -131,7 +131,7 @@ export default async function ThankYouPage({
                    /contact, the form they have just filled in. */
                 <NoticeCard tone="accent" title="That is everything we need">
                   <p className="text-base leading-relaxed text-slate-700">
-                    Your enquiry is with us and a specialist CIS accountant will be in touch to
+                    Your enquiry is with us and an accountant will be in touch to
                     arrange your free review. There is nothing else for you to do. Need to add
                     anything? Send a follow-up through the{" "}
                     <Link

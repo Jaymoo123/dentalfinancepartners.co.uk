@@ -12,8 +12,9 @@
  * status, VAT reverse charge, and take-home optimisation.
  *
  * Cadence: an instant email (step 0) fires synchronously at submit. Then
- * 7 escalating follow-ups over approximately 11 days.
- * Cumulative delay hours from step 0: 0, 0, 4, 24, 48, 96, 168, 264.
+ * 7 escalating follow-ups over approximately 11 days (Property's cadence).
+ * delayHours is the GAP since the previous step, not cumulative: 0, 0, 4,
+ * 20, 24, 48, 72, 96.
  *
  * House style: no em-dashes. British English. Faceless team voice (no named
  * individual). No credential claims. No cross-vertical bleed (no property,
@@ -253,6 +254,7 @@ const STEPS: LeadNurtureStep[] = [
         "Just reply with a time that suits and a member of the team will call you.",
         [
           "Thanks for your enquiry, it has just come through to us and a member of the team is ready to help.",
+          "One of our accountants will call you within 24 hours, Monday to Friday.",
           "The call is a free review of your CIS tax position, about 20 minutes, with no charge and no obligation. Whether it is a refund, a CIS300 question, or working out the best structure for your trade, we cover all of it.",
           "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
         ],
@@ -281,6 +283,7 @@ const STEPS: LeadNurtureStep[] = [
   {
     key: "vip_sameday",
     delayHours: 4,
+    // gap since step 1 (t0_sms), Property's cadence: 0, 0, 4, 20, 24, 48, 72, 96
     channels: ["sms"],
     buildMessages: (c) => {
       if (c.qualityScore !== 5) return [];
@@ -288,7 +291,7 @@ const STEPS: LeadNurtureStep[] = [
         smsMsgWithGen(
           c,
           "vip_sameday",
-          `Hi ${c.firstName}, Trade Tax Specialists again. Enquiries like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and a specialist will call you. ${c.optOutText}`,
+          `Hi ${c.firstName}, Trade Tax Specialists again. Enquiries like yours are exactly what the team handles every day, so we have set time aside this week. Reply YES and we will call you. ${c.optOutText}`,
         ),
       ];
     },
@@ -297,7 +300,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 3: Day 1 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day1_sms",
-    delayHours: 24,
+    delayHours: 20,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -312,7 +315,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 4: Day 2 give-value email (CIS refund angle) ─────────────────────
   {
     key: "day2_give_email",
-    delayHours: 48,
+    delayHours: 24,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(
@@ -333,7 +336,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 5: Day 4 SMS + WhatsApp ──────────────────────────────────────────
   {
     key: "day4_sms",
-    delayHours: 96,
+    delayHours: 48,
     channels: ["sms", "whatsapp"],
     buildMessages: (c) => [
       smsMsgWithGen(
@@ -348,7 +351,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 6: Day 7 email (prefer Monday landing) ───────────────────────────
   {
     key: "day7_email",
-    delayHours: 168,
+    delayHours: 72,
     channels: ["email"],
     preferMonday: true,
     buildMessages: (c) => [
@@ -369,7 +372,7 @@ const STEPS: LeadNurtureStep[] = [
   // ── Step 7: Break-up email ─────────────────────────────────────────────────
   {
     key: "breakup_day11",
-    delayHours: 264,
+    delayHours: 96,
     channels: ["email"],
     buildMessages: (c) => [
       emailMsg(

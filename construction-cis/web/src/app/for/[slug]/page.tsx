@@ -238,7 +238,7 @@ export default async function TradeTypePage({
               <div className="mt-8 space-y-3">
                 {[
                   "Specialist in CIS and construction accounting, not a generalist practice",
-                  "A specialist CIS accountant will be in touch",
+                  "An accountant will be in touch",
                   "A free initial call, with no obligation to go ahead",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">

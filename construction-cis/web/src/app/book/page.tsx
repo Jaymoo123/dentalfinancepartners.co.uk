@@ -47,7 +47,7 @@ export default async function BookPage({
               Book your free review call
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-              Pick a day and a time window that suits you. A specialist will call you then, no
+              Pick a day and a time window that suits you. We will call you then, no
               obligation.
             </p>
           </div>

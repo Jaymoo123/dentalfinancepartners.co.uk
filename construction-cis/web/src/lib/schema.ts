@@ -1,6 +1,18 @@
 import type { BlogPost } from "@/types/blog";
 import { siteConfig } from "@/config/site";
+import { niche } from "@/config/niche-loader";
+import { buildOrganization } from "@accounting-network/web-shared/schema";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
+
+// Sister-brand homepages (same opco, Ashfield Trading Ltd) added alongside the
+// Companies House filing so sameAs ties the estate together, not just this
+// one entity record. Same list Medical's organization-schema.ts carries.
+const SISTER_BRAND_HOMEPAGES = [
+  "https://www.propertytaxpartners.co.uk",
+  "https://www.contractortaxaccountants.co.uk",
+  "https://www.carehometax.co.uk",
+  "https://www.trusteetax.co.uk",
+];
 
 /** Build BreadcrumbList JSON-LD schema */
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
@@ -23,25 +35,22 @@ export function buildOgImageUrl(title: string, category?: string) {
   return `${siteConfig.url}/api/og?${params.toString()}`;
 }
 
-/** Build Organization JSON-LD schema for the site */
+/** Build Organization JSON-LD schema for the site. Ported to the shared
+ * builder 2026-09-28 phase 0, same pattern as Medical's
+ * organization-schema.ts: firm-first description from niche.entity.firm,
+ * explicit AccountingService type, parentOrganization = Ashfield Trading
+ * Ltd. Every field the hand-rolled version emitted survives below. */
 export function buildOrganizationJsonLd() {
   const office = siteConfig.company.registeredOffice;
-  return JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "AccountingService"],
-    "@id": `${siteConfig.url}#organization`,
-    name: siteConfig.name,
-    // Registered legal entity vs the public-facing trading name (brand).
+  const org = buildOrganization({
+    siteUrl: siteConfig.url,
+    siteName: siteConfig.name,
     legalName: siteConfig.company.legalName,
     alternateName: siteConfig.company.tradingName,
-    // When Ashfield Trading Ltd becomes VAT-registered, add: vatID: siteConfig.company.vatNumber
-    url: siteConfig.url,
-    // sameAs links the trading brand to its authoritative public record so AI
-    // answer engines and knowledge graphs resolve the firm to a real entity.
-    sameAs: [
-      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
-    ],
-    description: siteConfig.description,
+    description: niche.entity?.firm ?? siteConfig.description,
+    tagline: siteConfig.tagline,
+    organizationType: "AccountingService",
+    publisherLogoUrl: siteConfig.publisherLogoUrl,
     address: {
       "@type": "PostalAddress",
       streetAddress: `${office.line1}, ${office.line2}`,
@@ -49,7 +58,7 @@ export function buildOrganizationJsonLd() {
       postalCode: office.postcode,
       addressCountry: "GB",
     },
-    areaServed: [
+    serviceAreas: [
       "London",
       "Manchester",
       "Birmingham",
@@ -61,6 +70,10 @@ export function buildOrganizationJsonLd() {
       "Liverpool",
       "Newcastle",
     ],
+    sameAs: [
+      `https://find-and-update.company-information.service.gov.uk/company/${siteConfig.company.number}`,
+      ...SISTER_BRAND_HOMEPAGES,
+    ],
     knowsAbout: [
       "CIS tax refunds",
       "Construction Industry Scheme",
@@ -68,7 +81,12 @@ export function buildOrganizationJsonLd() {
       "CIS accounting",
       "CIS deduction rates",
     ],
+    parentOrganization: {
+      name: siteConfig.company.legalName,
+      companyNumber: siteConfig.company.number,
+    },
   });
+  return JSON.stringify(org);
 }
 
 /** Build WebSite JSON-LD (entity-graph node, emitted site-wide from the root layout). */

@@ -63,7 +63,7 @@ export function DeepScrollModal() {
 
   if (!open || !action) return null;
   const offer = action.offer;
-  // Secondary action: always a route to a specialist, unless the primary offer
+  // Secondary action: always a route to we, unless the primary offer
   // already IS the specialist (then the secondary is the topic's calculator).
   const secondaryHref =
     offer.kind === "specialist" && action.calculatorSlug
@@ -72,7 +72,7 @@ export function DeepScrollModal() {
   const secondaryLabel =
     offer.kind === "specialist" && action.calculatorSlug
       ? "Open the calculator instead"
-      : "Talk to a specialist";
+      : "Talk to we";
 
   const close = (dismiss: boolean) => {
     setOpen(false);
@@ -84,7 +84,7 @@ export function DeepScrollModal() {
       ? "Open the calculator"
       : offer.kind === "guide"
         ? "Get the free guide"
-        : "Talk to a specialist";
+        : "Talk to we";
 
   return (
     <div

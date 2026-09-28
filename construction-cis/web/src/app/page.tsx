@@ -157,7 +157,7 @@ const faqs = [
   {
     question: "Do I need a CIS accountant?",
     answer:
-      "Not strictly, but a specialist CIS accountant will identify overpayments a generalist misses. The materials split, mileage at the correct rate, capital allowances on tools and equipment, and the GPS application process all require specific knowledge of how CIS works.",
+      "Not strictly, but an accountant will identify overpayments a generalist misses. The materials split, mileage at the correct rate, capital allowances on tools and equipment, and the GPS application process all require specific knowledge of how CIS works.",
   },
   {
     question: "How do I claim back CIS deductions?",
@@ -395,7 +395,7 @@ export default function HomePage() {
               From free tools to full CIS accounting.
             </h2>
             <p className="mt-3 text-base text-neutral-600 sm:mt-4 sm:text-lg">
-              Start with our free calculators or speak to us directly. The specialist firm you speak to sets its own fee and agrees it with you up front.
+              Start with our free calculators or speak to us directly. We agree the fee with you in writing before any work starts.
             </p>
           </div>
           <ServiceTiers tiers={serviceTiers} featuredBadge="" />
@@ -587,7 +587,7 @@ export default function HomePage() {
               Practical CIS and construction tax guides.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
-              Plain English articles on CIS deductions, refunds, gross payment status, VAT reverse charge and MTD. Written by specialist CIS accountants.
+              Plain English articles on CIS deductions, refunds, gross payment status, VAT reverse charge and MTD. Written by accountants.
             </p>
           </div>
           <div className="divide-y divide-neutral-200 border-y border-neutral-200">
@@ -682,8 +682,8 @@ export default function HomePage() {
               <div className="mt-8 space-y-4">
                 {[
                   { title: "CIS specialists only", sub: "We do not work with non-construction clients" },
-                  { title: "A specialist CIS accountant gets in touch", sub: "Not a sales team, not a call centre" },
-                  { title: "Fees agreed before any work starts", sub: "The specialist firm you speak to sets its own fee" },
+                  { title: "An accountant gets in touch", sub: "Not a sales team, not a call centre" },
+                  { title: "Fees agreed before any work starts", sub: "We agree the fee with you in writing" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">
@@ -705,7 +705,7 @@ export default function HomePage() {
               {packagesMode ? (
                 <>
                   <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-2">Prefer to send a message?</h3>
-                  <p className="text-sm text-neutral-600 mb-4 sm:mb-6">Tell us where you are up to and a specialist CIS accountant will be in touch.</p>
+                  <p className="text-sm text-neutral-600 mb-4 sm:mb-6">Tell us where you are up to and an accountant will be in touch.</p>
                   <LeadForm submitLabel="Send enquiry" />
                 </>
               ) : (

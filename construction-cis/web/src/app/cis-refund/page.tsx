@@ -281,12 +281,12 @@ export default function CisRefundPage() {
               detail: "Construction tax is the whole of what we do, not a sideline.",
             },
             {
-              title: "A specialist CIS accountant will be in touch",
+              title: "An accountant will be in touch",
               detail: "Not a sales team, not a call centre.",
             },
             {
               title: "Fees agreed before any work starts",
-              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
+              detail: "We agree the fee with you in writing before any work starts.",
             },
           ]}
           footnote={

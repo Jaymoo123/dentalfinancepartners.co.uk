@@ -123,19 +123,19 @@ export default function AboutPage() {
             {/* TD-18 / GATE 8, and the wording this package establishes for all
                 five call sites of the claim. What stood here was "We work on a
                 fixed-fee basis. You know what you are paying before we start."
-                Under the pool model we do not quote at all: the enquiry goes to
-                independent firms in the partner network, each of which sets its
-                own fee (/privacy-policy section 5, :109-119 and :143-144). It
-                was a promise about commercial terms we are not the party to
-                make.
+
+                2026-09-28 phase 0 (owner ruling, decision 2): the brand is the
+                firm, so we now quote directly rather than describing a
+                third-party fee-setting firm. Superseded the pool-model framing
+                below.
 
                 The turnaround half of gate 8's /about sentence is ALREADY GONE:
                 the 2026-09-11 TD-13/TD-14 sweep took it out across 19 files and
                 this paragraph carries no duration. Nothing to remove there.
 
-                No fee, no number, no duration, and the promising party is named. */}
+                No fee, no number, no duration. */}
             <p>
-              Fees are agreed before any work starts. The specialist firm you speak to sets its own fee and agrees it with you up front, so nothing begins until you have. You deal with specialist CIS accountants, not a call centre.
+              We agree the fee with you in writing before any work starts, so nothing begins until you have. You deal with accountants, not a call centre.
             </p>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function AboutPage() {
           contained
           eyebrow="Get started"
           title="Talk to a CIS specialist"
-          description="Book a free introductory call. Tell us where you are and what you need, and a specialist will pick it up. No hard sell, no obligation."
+          description="Book a free introductory call. Tell us where you are and what you need, and we will pick it up. No hard sell, no obligation."
           formTitle="Book your free call"
           submitLabel="Request a callback"
           proofPoints={[
@@ -194,12 +194,12 @@ export default function AboutPage() {
               detail: "Construction tax is the whole of what we do, not a sideline.",
             },
             {
-              title: "A specialist CIS accountant will be in touch",
+              title: "An accountant will be in touch",
               detail: "Not a sales team, not a call centre.",
             },
             {
               title: "Fees agreed before any work starts",
-              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
+              detail: "We agree the fee with you in writing before any work starts.",
             },
           ]}
           footnote={

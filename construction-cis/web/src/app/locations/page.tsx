@@ -187,7 +187,7 @@ export default function LocationsIndexPage() {
           contained
           eyebrow="Get started"
           title="Not sure which page covers where you work?"
-          description="You do not need a local office to get your CIS position checked. Tell us where you work and what you do, and a specialist will pick it up from there."
+          description="You do not need a local office to get your CIS position checked. Tell us where you work and what you do, and we will pick it up from there."
           proofPoints={[
             {
               title: "CIS specialists only",

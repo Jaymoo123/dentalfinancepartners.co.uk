@@ -433,7 +433,18 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ink);
 }
 
+/* 2026-09-28 phase 0: the wave 2 reader found this table overflowing to
+   right=570 at 390px with no scrolling ancestor (clip=null), so the
+   right-hand columns were unreachable on a phone; the home page's own table
+   (a different component) already wraps in a `div.overflow-x:auto`. Here the
+   markdown table has no wrapper div to give one, so the table becomes its own
+   scroll container: display:block turns it into a block box overflow-x can
+   act on, max-width:100% stops it forcing the page itself wider than 390. */
 .prose-blog table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;

@@ -21,17 +21,17 @@ export type BlogCtaCopy = { heading: string; body: string; button: string };
 export const CTA_BY_CATEGORY: Record<string, BlogCtaCopy> = {
   "cis-basics": {
     heading: "Want your CIS position checked?",
-    body: "Tell us how you are paid and who deducts from you. A specialist CIS accountant will look at your registration, your deduction rate and your return position, and tell you what is actually required of you.",
+    body: "Tell us how you are paid and who deducts from you. An accountant will look at your registration, your deduction rate and your return position, and tell you what is actually required of you.",
     button: "Request a CIS review",
   },
   "cis-compliance": {
     heading: "Not sure your CIS filings are compliant?",
-    body: "Monthly CIS300 returns, verification and deduction statements all carry their own deadlines and their own penalties. Send us your position and a specialist will tell you where the exposure is.",
+    body: "Monthly CIS300 returns, verification and deduction statements all carry their own deadlines and their own penalties. Send us your position and we will tell you where the exposure is.",
     button: "Request a compliance check",
   },
   "cis-refunds": {
     heading: "Think you have overpaid under CIS?",
-    body: "Deductions taken at 20% or 30% before expenses routinely exceed the tax actually due. A specialist will work out your real position from your statements and tell you whether a repayment is due.",
+    body: "Deductions taken at 20% or 30% before expenses routinely exceed the tax actually due. We will work out your real position from your statements and tell you whether a repayment is due.",
     button: "Request a refund check",
   },
   "cis-advanced": {
@@ -41,22 +41,22 @@ export const CTA_BY_CATEGORY: Record<string, BlogCtaCopy> = {
   },
   "vat-and-mtd": {
     heading: "Want your VAT and MTD setup checked?",
-    body: "The domestic reverse charge and Making Tax Digital change how construction invoices and records have to work. A specialist will check your invoicing, your records and your software against what HMRC requires.",
+    body: "The domestic reverse charge and Making Tax Digital change how construction invoices and records have to work. We will check your invoicing, your records and your software against what HMRC requires.",
     button: "Request a VAT and MTD check",
   },
   expenses: {
     heading: "Not sure what you can claim?",
-    body: "Tools, travel, protective clothing, training, use of home. What is allowable depends on how you trade and how you are paid. A specialist will go through your costs and tell you which ones stand up.",
+    body: "Tools, travel, protective clothing, training, use of home. What is allowable depends on how you trade and how you are paid. We will go through your costs and tell you which ones stand up.",
     button: "Request an expenses review",
   },
   "limited-company": {
     heading: "Weighing up a limited company?",
-    body: "Incorporating changes your CIS treatment, your payroll obligations and how profit reaches you. A specialist will model your position both ways before you commit to either.",
+    body: "Incorporating changes your CIS treatment, your payroll obligations and how profit reaches you. We will model your position both ways before you commit to either.",
     button: "Request a structure review",
   },
   "software-and-tools": {
     heading: "Want help getting your records straight?",
-    body: "Bookkeeping, CIS statements and MTD-ready records are easier to fix before a deadline than after one. A specialist will look at how you record work now and what would actually make it simpler.",
+    body: "Bookkeeping, CIS statements and MTD-ready records are easier to fix before a deadline than after one. We will look at how you record work now and what would actually make it simpler.",
     button: "Request a records review",
   },
 };
