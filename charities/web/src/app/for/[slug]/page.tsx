@@ -9,12 +9,13 @@ import {
 } from "@/components/ui/layout-utils";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { EntityBlock } from "@accounting-network/web-shared/design/marketing/EntityBlock";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { JsonLd, buildFaqPage, buildService } from "@accounting-network/web-shared/schema";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
 import { charityTypes, getCharityType } from "@/data/charity-types";
 import {
-  CtaBand,
   FaqSection,
   HubSection,
   LinkCardGrid,
@@ -138,12 +139,18 @@ export default async function CharityTypePage({
 
       <FaqSection faqs={type.faqs} />
 
-      <CtaBand title="Speak to a specialist.">
-        <p>
-          Tell us about your {type.title.toLowerCase()} and we will arrange a short introductory
-          call.
-        </p>
-      </CtaBand>
+      <div id="book" className="scroll-mt-24">
+        <LeadCTAPanel
+          eyebrow="Get started"
+          title={`Talk to a specialist about ${type.title}`}
+          description={`Tell us about your ${type.title.toLowerCase()}. We will explain what your organisation needs, in plain English, with no obligation.`}
+          proofPoints={[]}
+          formTitle="Get in touch"
+          form={<LeadForm submitLabel="Send enquiry" />}
+          contained
+          ground="white"
+        />
+      </div>
 
       <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
