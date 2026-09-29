@@ -5,7 +5,17 @@ import { Eyebrow } from "../primitives/page-blocks";
 
 // Anonymised social proof only (no client names), per the lead-gen model.
 // `highlight` is bolded inside the quote and must appear verbatim in `quote`.
-export const testimonials = [
+export type TestimonialItem = {
+  quote: string;
+  /** Bolded tail of the quote; optional since 2026-09-29 (a site may pass a
+   *  whole quote with nothing emphasised). */
+  highlight?: string;
+  who: string;
+  detail?: string;
+  initials?: string;
+};
+
+export const testimonials: TestimonialItem[] = [
   {
     quote: "They modelled our Section 24 position properly for the first time and showed us exactly where incorporation did and did not make sense. ",
     highlight: "No hard sell, just the numbers.",
@@ -41,6 +51,8 @@ export function TestimonialsSection({
   description = "Anonymised feedback from landlords and investors we have worked with.",
   backdrop,
   items = testimonials,
+  showRating = true,
+  footnote,
 }: {
   eyebrow?: string;
   title?: string;
@@ -52,7 +64,15 @@ export function TestimonialsSection({
   /** The quotes to render. Default = the module constant above (Property's),
    *  so every existing caller is byte-identical; a site passes its own
    *  already-published, anonymised quotes (2026-09-29, startups-tech). */
-  items?: typeof testimonials;
+  items?: TestimonialItem[];
+  /** The five-star row above each quote. Default true = every existing caller.
+   *  Pass false on a site that publishes no rating: the row is a claim, not
+   *  decoration (2026-09-29, startups-tech). */
+  showRating?: boolean;
+  /** Optional line under the grid, for a site's own disclaimer about the
+   *  quotes (for example that they are anonymised composites). Unset = nothing
+   *  renders, byte-identical for every existing caller. */
+  footnote?: ReactNode;
 }) {
   return (
     <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16 lg:py-20">
@@ -66,33 +86,42 @@ export function TestimonialsSection({
         <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
           {items.map((t) => (
             <figure
-              key={t.who + t.detail}
+              key={t.who + (t.detail ?? "") + t.quote.slice(0, 24)}
               className="rounded-xl bg-white/5 p-6 sm:p-8 ring-1 ring-white/10 backdrop-blur-sm flex flex-col transition-colors hover:ring-primary-500/60"
             >
-              <div className="flex items-center gap-1" aria-label="Rated 5 out of 5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} aria-hidden className="h-4 w-4 fill-primary-400 text-primary-400" />
-                ))}
-              </div>
-              <blockquote className="mt-4 text-sm sm:text-base leading-relaxed text-slate-300 flex-grow">
+              {showRating ? (
+                <div className="flex items-center gap-1" aria-label="Rated 5 out of 5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} aria-hidden className="h-4 w-4 fill-primary-400 text-primary-400" />
+                  ))}
+                </div>
+              ) : null}
+              <blockquote
+                className={`${showRating ? "mt-4 " : ""}text-sm sm:text-base leading-relaxed text-slate-300 flex-grow`}
+              >
                 &ldquo;{t.quote}
-                <strong className="font-bold text-white">{t.highlight}</strong>&rdquo;
+                {t.highlight ? <strong className="font-bold text-white">{t.highlight}</strong> : null}&rdquo;
               </blockquote>
               <figcaption className="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
-                <span
-                  aria-hidden
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-600 text-sm font-bold text-white"
-                >
-                  {t.initials}
-                </span>
+                {t.initials ? (
+                  <span
+                    aria-hidden
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-600 text-sm font-bold text-white"
+                  >
+                    {t.initials}
+                  </span>
+                ) : null}
                 <span className="min-w-0">
                   <span className="block text-sm font-bold text-white">{t.who}</span>
-                  <span className="block text-xs text-slate-400">{t.detail}</span>
+                  {t.detail ? <span className="block text-xs text-slate-400">{t.detail}</span> : null}
                 </span>
               </figcaption>
             </figure>
           ))}
         </div>
+        {footnote ? (
+          <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-slate-400 max-w-3xl">{footnote}</p>
+        ) : null}
       </div>
     </section>
   );
