@@ -26,7 +26,7 @@ import { NoticeCard } from "@accounting-network/web-shared/design/primitives/Not
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-primary-600 ${focusRing}`;
+  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-400 transition-colors focus:border-primary-600 ${focusRing}`;
 
 type MissingField = "name" | "phone";
 
@@ -159,7 +159,7 @@ export default function DetailsForm({
 
       {needsName && (
         <div className="mb-4">
-          <label htmlFor="complete-name" className="block text-sm font-medium text-neutral-900">
+          <label htmlFor="complete-name" className="block text-sm font-medium text-slate-900">
             Full name
           </label>
           <input
@@ -180,7 +180,7 @@ export default function DetailsForm({
 
       {needsPhone && (
         <div className="mb-4">
-          <label htmlFor="complete-phone" className="block text-sm font-medium text-neutral-900">
+          <label htmlFor="complete-phone" className="block text-sm font-medium text-slate-900">
             Phone
           </label>
           <input
@@ -209,7 +209,7 @@ export default function DetailsForm({
         </p>
       )}
 
-      <p className="mt-3 text-xs text-neutral-500">
+      <p className="mt-3 text-xs text-slate-500">
         We only use this to arrange your free startup finance review. See our{" "}
         <a
           href="/privacy-policy"

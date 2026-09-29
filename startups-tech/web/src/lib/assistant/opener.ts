@@ -130,14 +130,14 @@ export function pickOpener(profile: JourneyProfile, pingIndex: number): string {
   return GENERIC[vi];
 }
 
-/** Friction opener (fires instantly on form_error). */
+/** Friction opener (fires instantly on form_error). One sentence, under 20 words. */
 export function frictionOpener(profile: JourneyProfile): string {
   const t = profile.primaryTopic;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Looks like the form gave you a bit of trouble. Send a question about ${noun} here instead and we will reply within 24 hours.`;
+    return `Send a question about ${noun} here instead, we reply within 24 hours.`;
   }
-  return "Looks like the form gave you a bit of trouble. Send a question here instead and we will reply within 24 hours.";
+  return "Send a question here instead, we reply within 24 hours.";
 }
 
 /** Exit opener (fires on the exit-intent trigger). */

@@ -15,10 +15,12 @@
  *   captureMode: "email_only" and extras: { capture_channel: "assistant", trigger }.
  * - `source` is niche.content_strategy.source_identifier, the same value
  *   components/forms/LeadForm.tsx sends. No rival source key is introduced.
- * - Neutral ramp is `neutral-*`, matching LeadForm, not the generalist `slate-*`.
- * - Bottom offset is bottom-4, not the generalist bottom-24: this site mounts
- *   no sticky bottom bar (owner ruling 2026-09-29), so there is nothing to
- *   clear.
+ * - Neutral ramp is `slate-*`, matching the site's `slate-*` estate default
+ *   (R7 N1 fix: was `neutral-*`, one-for-one renamed).
+ * - Bottom offset is bottom-4, not the generalist bottom-24. That alone would
+ *   sit the launcher on top of the footer's only consent control (R7 B3), so
+ *   an IntersectionObserver on `document.querySelector("footer")` hides the
+ *   whole widget while the footer is in view instead.
  * - Opener copy comes from lib/assistant/opener.ts, written for this site: no
  *   "free call" (the site offers none) and no turnaround promise beyond the
  *   site's own "reply within 24 hours".
@@ -32,7 +34,7 @@
  * Sets ffp_assistant_active in sessionStorage on mount so any other exit
  * surface would stand down. There is no other exit surface on this site today.
  */
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
@@ -52,8 +54,15 @@ type Status = "idle" | "loading" | "success" | "error";
 type Trigger = "cadence" | "exit" | "friction";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// R7 G1: placeholder:text-slate-400 measured 2.58:1 on white (need 4.5). slate-500
+// measures 4.76 (instrument self-test on the equivalent step), so the placeholder
+// step is raised one notch from the rest of the field recipe.
 const inputClass =
-  `mt-1 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-primary-600 ${focusRing}`;
+  `mt-1 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-primary-600 ${focusRing}`;
+// R7 G2: border-primary-300 measured 1.91:1 on white (graphics need 3:1); primary-400
+// measures ~2.98 (still short), primary-500 measures ~4.47. Chip border raised to 500.
+const chipClass =
+  `inline-flex items-center rounded-full border border-primary-500 bg-white px-3 py-3 text-sm font-medium text-primary-800 hover:bg-primary-50 ${focusRing}`;
 
 // Cadence thresholds (ms of visible page time): 30s, 70s, 120s, 180s.
 const CADENCE_THRESHOLDS_MS = [30_000, 70_000, 120_000, 180_000];
@@ -68,10 +77,12 @@ export function SpecialistWidget() {
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<{ email?: string; question?: string }>({});
   const [unread, setUnread] = useState(0);
   const [peekLine, setPeekLine] = useState<string | null>(null);
   const [peekVisible, setPeekVisible] = useState(false);
   const [composing, setComposing] = useState(false);
+  const [footerVisible, setFooterVisible] = useState(false);
 
   const openedRef = useRef(false);
   const engagedRef = useRef(false);
@@ -80,18 +91,47 @@ export function SpecialistWidget() {
   const visibleMsRef = useRef(0);
   const lastLineRef = useRef<string | null>(null);
   const lastPropsRef = useRef<Record<string, string | number> | null>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const launcherRef = useRef<HTMLButtonElement>(null);
+  const wasOpenRef = useRef(false);
   const ft = useFormTracking(SPECIALIST_WIDGET_FORM_ID);
 
   const active = !!ctx;
 
-  // Suppress for visitors who already converted.
-  const suppressed = useMemo(() => {
+  // Suppress for visitors who already converted. State, not a one-shot memo
+  // (R7 G5): a visitor who converts mid-session (lead_submitted on the bus,
+  // fired by this widget's own submit or any other lead form) re-suppresses
+  // immediately instead of waiting for the next full page load.
+  const [suppressed, setSuppressed] = useState<boolean>(() => {
     if (typeof window === "undefined") return true;
     try {
       return isConverted();
     } catch {
       return false;
     }
+  });
+
+  useEffect(() => {
+    return onAnalyticsEvent((name: string) => {
+      if (name === "lead_submitted") setSuppressed(true);
+    });
+  }, []);
+
+  // R7 B3: the launcher/panel sit on top of the footer's only consent control
+  // ("Do not track me", plus "Cookie policy" at desktop) at bottom-4. Hide the
+  // whole widget while the footer is in the viewport instead of moving to
+  // bottom-24 (which the port ruling declined). Container stays mounted at a
+  // fixed size throughout (see the CLS fix below), so this toggle never shifts
+  // layout.
+  useEffect(() => {
+    if (typeof window === "undefined" || typeof IntersectionObserver === "undefined") return;
+    const footer = document.querySelector("footer");
+    if (!footer) return;
+    const io = new IntersectionObserver(([entry]) => setFooterVisible(entry.isIntersecting), {
+      threshold: 0,
+    });
+    io.observe(footer);
+    return () => io.disconnect();
   }, []);
 
   // Show a tailored ping. Re-derives the journey each time; never repeats a line.
@@ -159,6 +199,58 @@ export function SpecialistWidget() {
   useEffect(() => {
     openRef.current = open;
   }, [open]);
+
+  // R7 B1: keyboard trap. On open, move focus into the dialog and cycle Tab /
+  // Shift+Tab across its focusable elements; Escape closes and returns focus
+  // to the launcher. Re-runs when the composer/status changes because those
+  // swap which elements are focusable inside the dialog.
+  useEffect(() => {
+    if (open) wasOpenRef.current = true;
+    else if (wasOpenRef.current) {
+      wasOpenRef.current = false;
+      launcherRef.current?.focus();
+    }
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return;
+    const dialogEl = dialogRef.current;
+    if (!dialogEl) return;
+    const getFocusable = () =>
+      Array.from(
+        dialogEl.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      ).filter((el) => el.offsetParent !== null);
+    const first = getFocusable()[0] ?? dialogEl;
+    first.focus();
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closePanel();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const items = getFocusable();
+      if (items.length === 0) {
+        e.preventDefault();
+        return;
+      }
+      const currentIndex = items.indexOf(document.activeElement as HTMLElement);
+      if (e.shiftKey) {
+        if (currentIndex <= 0) {
+          e.preventDefault();
+          items[items.length - 1].focus();
+        }
+      } else if (currentIndex === -1 || currentIndex === items.length - 1) {
+        e.preventDefault();
+        items[0].focus();
+      }
+    };
+    dialogEl.addEventListener("keydown", onKeyDown);
+    return () => dialogEl.removeEventListener("keydown", onKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, composing, status]);
 
   // Escalating dwell cadence, keyed to visible page time.
   useEffect(() => {
@@ -260,8 +352,22 @@ export function SpecialistWidget() {
         setUnread((n) => n + 1);
         track("personalization_shown", props);
       } else {
+        // R7 G4: desktop auto-open recorded support_opened but never
+        // personalization_shown, so the dominant surface (opens on every
+        // desktop view) had zero measured impressions. Same payload shape as
+        // the mobile peek branch above, variant "panel" instead of "peek".
+        const props = {
+          surface: "assistant_nudge",
+          trigger: "auto",
+          variant: "panel",
+          rule_id: `assistant_${profile.stage}`,
+          topic: profile.primaryTopic ?? "",
+          content: line.slice(0, 120),
+        };
+        lastPropsRef.current = props;
         setPeekLine((prev) => prev ?? line);
         setOpen(true);
+        track("personalization_shown", props);
         if (!openedRef.current) {
           openedRef.current = true;
           track("support_opened", { topic: profile.primaryTopic ?? "", via: "auto" });
@@ -276,7 +382,9 @@ export function SpecialistWidget() {
 
   const topic = getTopic(ctx.pageTopic ?? ctx.entryTopic);
   const journeyTopic = open ? getTopic(getJourneyProfile().primaryTopic) : null;
-  const calcSlug = journeyTopic?.primaryCalculator ?? topic?.primaryCalculator ?? null;
+  const rawCalcSlug = journeyTopic?.primaryCalculator ?? topic?.primaryCalculator ?? null;
+  // R7 G7: suppress the chip when it would link to the page the visitor is already on.
+  const calcSlug = rawCalcSlug && `/calculators/${rawCalcSlug}` === pathname ? null : rawCalcSlug;
 
   function trackNudge(kind: "clicked" | "dismissed") {
     track(`personalization_${kind}`, lastPropsRef.current ?? { surface: "assistant_nudge" });
@@ -324,16 +432,17 @@ export function SpecialistWidget() {
     const honeypot = String(data.get("enquiry_ref") || "").trim();
     const email = String(data.get("email") || "").trim();
     const question = String(data.get("question") || "").trim();
-    if (!emailRe.test(email)) {
-      setError("Enter a valid email address.");
-      ft.onError("email", "validation");
+    // R7 N2: report both missing/invalid fields on an empty submit, not just email.
+    const errs: { email?: string; question?: string } = {};
+    if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
+    if (!question) errs.question = "Add a short message so the accountant knows how to help.";
+    if (Object.keys(errs).length > 0) {
+      setFieldErrors(errs);
+      if (errs.email) ft.onError("email", "validation");
+      if (errs.question) ft.onError("question", "validation");
       return;
     }
-    if (!question) {
-      setError("Add a short message so the accountant knows how to help.");
-      ft.onError("question", "validation");
-      return;
-    }
+    setFieldErrors({});
     ft.onSubmit(2);
     setStatus("loading");
     const topicTag = topic ? ` (${topic.key})` : "";
@@ -356,6 +465,7 @@ export function SpecialistWidget() {
         extras: {
           capture_channel: "assistant",
           trigger: (lastPropsRef.current?.trigger as string) ?? "widget",
+          form_id: SPECIALIST_WIDGET_FORM_ID,
         },
         captureMode: "email_only",
       },
@@ -375,37 +485,52 @@ export function SpecialistWidget() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-[55] flex flex-col items-end print:hidden">
-      {open && (
-        <div
-          role="dialog"
-          aria-label="Ask an accountant"
-          className="mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-2xl"
-          style={{ height: "min(72dvh, 34rem)" }}
-        >
-          {/* Header */}
-          <div className="flex items-center gap-3 bg-primary-950 px-4 py-3 text-white">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-600 ring-2 ring-white/15">
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-bold leading-tight">{siteConfig.name}</p>
-              <p className="truncate text-[11px] text-neutral-300">We reply within 24 hours</p>
+    // R7 B4: fixed bottom-4 wrapper. Fixed h-/w- launcher below plus the panel/peek
+    // being taken OUT of flow (absolute, anchored off the launcher) means mounting
+    // or unmounting the panel never changes this wrapper's own box, so the launcher
+    // never moves (was CLS 0.111 at 1280: the panel mounting above the launcher in
+    // a flex-col pushed the launcher up). `contain: layout` isolates any remaining
+    // internal reflow from the rest of the page; only opacity/transform animate.
+    <div
+      className={`fixed bottom-4 right-4 z-[55] print:hidden ${footerVisible ? "invisible pointer-events-none" : ""}`}
+      style={{ contain: "layout" }}
+    >
+      <div className="relative">
+        {open && (
+          <div
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Ask an accountant"
+            tabIndex={-1}
+            className="absolute bottom-full right-0 mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
+            style={{ height: "min(72dvh, 34rem)" }}
+          >
+            {/* Header. .ground-dark rebinds --focus-ring to white (R7 B2: the
+                brand ring measured 2.54:1 on this bg-primary-950 ground; white
+                measures ~17:1). No focusable light-ground child sits inside it. */}
+            <div className="ground-dark flex items-center gap-3 bg-primary-950 px-4 py-3 text-white">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-600 ring-2 ring-white/15">
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-sm font-bold leading-tight">{siteConfig.name}</p>
+                <p className="truncate text-[11px] text-slate-300">We reply within 24 hours</p>
+              </div>
+              <button
+                type="button"
+                aria-label="Close"
+                onClick={closePanel}
+                className={`flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded text-2xl leading-none text-slate-300 hover:text-white ${focusRing}`}
+              >
+                &times;
+              </button>
             </div>
-            <button
-              type="button"
-              aria-label="Close"
-              onClick={closePanel}
-              className={`flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded text-2xl leading-none text-neutral-300 hover:text-white ${focusRing}`}
-            >
-              &times;
-            </button>
-          </div>
 
           {/* Conversation */}
-          <div className="flex-1 space-y-3 overflow-y-auto bg-neutral-50 p-4">
+          <div className="flex-1 space-y-3 overflow-y-auto bg-slate-50 p-4">
             {peekLine && (
               <div className="flex items-start gap-2">
                 <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-600 text-white">
@@ -413,7 +538,7 @@ export function SpecialistWidget() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
-                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-neutral-200 bg-white px-3 py-2 text-sm leading-relaxed text-neutral-800 shadow-sm">
+                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-slate-200 bg-white px-3 py-2 text-sm leading-relaxed text-slate-800 shadow-sm">
                   {peekLine}
                 </div>
               </div>
@@ -435,16 +560,12 @@ export function SpecialistWidget() {
                   <a
                     href={`/calculators/${calcSlug}`}
                     onClick={() => onChip("calculator")}
-                    className={`inline-flex items-center rounded-full border border-primary-300 bg-white px-3 py-3 text-sm font-medium text-primary-800 hover:bg-primary-50 ${focusRing}`}
+                    className={chipClass}
                   >
                     See your numbers
                   </a>
                 )}
-                <a
-                  href="/contact"
-                  onClick={() => onChip("call")}
-                  className={`inline-flex items-center rounded-full border border-primary-300 bg-white px-3 py-3 text-sm font-medium text-primary-800 hover:bg-primary-50 ${focusRing}`}
-                >
+                <a href="/contact" onClick={() => onChip("call")} className={chipClass}>
                   {niche.cta.sticky_button}
                 </a>
               </div>
@@ -453,7 +574,7 @@ export function SpecialistWidget() {
 
           {/* Footer: primary CTA reveals the composer */}
           {!composing && status !== "success" && (
-            <div className="border-t border-neutral-200 bg-white p-3">
+            <div className="border-t border-slate-200 bg-white p-3">
               <button
                 type="button"
                 onClick={() => onChip("question")}
@@ -466,7 +587,7 @@ export function SpecialistWidget() {
 
           {/* Composer: revealed when they choose "Ask an accountant" */}
           {composing && status !== "success" && (
-            <div className="border-t border-neutral-200 bg-white p-3">
+            <div className="border-t border-slate-200 bg-white p-3">
               <form
                 onSubmit={onSubmit}
                 className="space-y-2"
@@ -499,8 +620,15 @@ export function SpecialistWidget() {
                   placeholder={niche.lead_form.placeholders.email}
                   autoComplete="email"
                   maxLength={100}
+                  aria-invalid={!!fieldErrors.email}
+                  aria-describedby={fieldErrors.email ? "sw-email-error" : undefined}
                   className={inputClass}
                 />
+                {fieldErrors.email && (
+                  <p id="sw-email-error" role="alert" className="text-xs font-medium text-red-600">
+                    {fieldErrors.email}
+                  </p>
+                )}
                 <textarea
                   name="question"
                   required
@@ -508,9 +636,20 @@ export function SpecialistWidget() {
                   maxLength={500}
                   aria-label="Your question"
                   placeholder="Your question for an accountant"
+                  aria-invalid={!!fieldErrors.question}
+                  aria-describedby={fieldErrors.question ? "sw-question-error" : undefined}
                   className={inputClass}
                 />
-                {error && <p className="text-xs font-medium text-red-600">{error}</p>}
+                {fieldErrors.question && (
+                  <p id="sw-question-error" role="alert" className="text-xs font-medium text-red-600">
+                    {fieldErrors.question}
+                  </p>
+                )}
+                {error && (
+                  <p role="alert" className="text-xs font-medium text-red-600">
+                    {error}
+                  </p>
+                )}
                 <button
                   type="submit"
                   disabled={status === "loading"}
@@ -518,7 +657,7 @@ export function SpecialistWidget() {
                 >
                   {status === "loading" ? "Sending..." : "Send to an accountant"}
                 </button>
-                <p className="text-[11px] leading-relaxed text-neutral-500">
+                <p className="text-[11px] leading-relaxed text-slate-500">
                   {siteConfig.leadConsentText} See our{" "}
                   <a
                     href="/privacy-policy"
@@ -533,54 +672,60 @@ export function SpecialistWidget() {
               </form>
             </div>
           )}
-        </div>
-      )}
-
-      {/* Proactive peek: clicking opens the panel. */}
-      {!open && peekVisible && peekLine && (
-        <div className="mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-2xl border border-primary-200 bg-white p-3 shadow-2xl">
-          <button
-            type="button"
-            onClick={() => handleOpen(true)}
-            className={`flex-1 rounded text-left text-sm font-medium leading-snug text-neutral-800 hover:text-primary-700 ${focusRing}`}
-          >
-            {peekLine}
-          </button>
-          <button
-            type="button"
-            aria-label="Dismiss"
-            onClick={dismissPeek}
-            className={`-mr-1 -mt-1 flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded p-1 text-neutral-400 hover:text-neutral-700 ${focusRing}`}
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-      )}
-
-      <button
-        type="button"
-        onClick={() => (open ? setOpen(false) : handleOpen(false))}
-        data-cta="specialist_widget"
-        className={`relative flex items-center gap-2 rounded-full bg-primary-700 px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:bg-primary-800 ${focusRing}`}
-      >
-        {!open && unread > 0 && (
-          <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">
-            <span
-              aria-hidden="true"
-              className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-60 motion-reduce:animate-none"
-            />
-            <span className="relative flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-[11px] font-bold text-white shadow-sm ring-2 ring-white">
-              {unread}
-            </span>
-          </span>
+          </div>
         )}
-        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        {open ? "Close" : "Ask an accountant"}
-      </button>
+
+        {/* Proactive peek: clicking opens the panel. Absolute + anchored off the
+            launcher (see B4 note above) so it never moves the launcher. */}
+        {!open && peekVisible && peekLine && (
+          <div className="absolute bottom-full right-0 mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-2xl border border-primary-200 bg-white p-3 shadow-2xl">
+            <button
+              type="button"
+              onClick={() => handleOpen(true)}
+              className={`flex-1 rounded text-left text-sm font-medium leading-snug text-slate-800 hover:text-primary-700 ${focusRing}`}
+            >
+              {peekLine}
+            </button>
+            <button
+              type="button"
+              aria-label="Dismiss"
+              onClick={dismissPeek}
+              className={`-mr-1 -mt-1 flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded p-1 text-slate-400 hover:text-slate-700 ${focusRing}`}
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        )}
+
+        {/* Fixed size (h-[52px] w-[12.5rem]) so the "Ask an accountant" / "Close"
+            label swap and the unread badge can never resize the launcher and
+            shift anything around it (R7 B4). */}
+        <button
+          ref={launcherRef}
+          type="button"
+          onClick={() => (open ? setOpen(false) : handleOpen(false))}
+          data-cta="specialist_widget"
+          className={`relative flex h-[52px] w-[12.5rem] shrink-0 items-center justify-center gap-2 rounded-full bg-primary-700 px-4 text-sm font-semibold text-white shadow-2xl hover:bg-primary-800 ${focusRing}`}
+        >
+          {!open && unread > 0 && (
+            <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">
+              <span
+                aria-hidden="true"
+                className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-60 motion-reduce:animate-none"
+              />
+              <span className="relative flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-[11px] font-bold text-white shadow-sm ring-2 ring-white">
+                {unread}
+              </span>
+            </span>
+          )}
+          <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          {open ? "Close" : "Ask an accountant"}
+        </button>
+      </div>
     </div>
   );
 }

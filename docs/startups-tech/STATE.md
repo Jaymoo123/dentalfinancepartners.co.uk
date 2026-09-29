@@ -303,3 +303,56 @@ verified 1 form each on the served build). Floating help button = a port of a si
 (generalist's `components/support/SpecialistWidget.tsx` 518 lines + `lib/assistant/opener.ts` +
 `components/intent/IntentProvider`; not in the kit; every lead API route it needs already exists
 here), owner has not decided yet; sized at about 4 agents when he does.
+
+## 2026-09-29 floating help widget PORTED (owner YES), commit `71f4b72c`, review pending
+
+Ported from generalist as one implementation (Property's and generalist's shape): `components/
+support/SpecialistWidget.tsx`, `components/intent/IntentProvider.tsx`, `lib/intent/{taxonomy,
+deriveTopic,engine,journeyModel,labels}.ts`, `lib/assistant/opener.ts`, mounted in `app/layout.tsx`
+inside `AnalyticsProvider`, hidden on `/embed/*`, `/admin/*` and print. `formId` = `specialist_widget`,
+single `data-cta="specialist_widget"` attribute (what the estate views key on; the three-attribute
+tuple is this site's page convention, not the widget's). Lead `source` = `niche.content_strategy
+.source_identifier`, as `LeadForm`. ReturningBar, DeepScrollModal, NextStepOffer NOT mounted (owner
+NO), recorded at the mount. `niche.config.json` untouched. 47 new tests (131 total).
+
+**Every authored line (owner record; the widget is a new surface, existing prose untouched):**
+Openers by topic, three each, in order R&D / SEIS-EIS / share schemes / founder pay / SaaS finance /
+compliance: "Looking at R&D relief? I can pull up the estimator that sizes a claim." / "Want a hand
+working out whether your project qualifies for R&D relief?" / "Speak to a startup accountant about
+your R&D claim, shall I point you to the form?" / "Sorting SEIS or EIS advance assurance? I can point
+you to the relief calculator." / "Advance assurance has a few traps. Want me to show you what HMRC
+looks for?" / "Speak to a startup accountant about your SEIS or EIS round, want me to set that up?" /
+"Setting up EMI options? I can pull up the tool that compares EMI with unapproved." / "Want a hand
+with the EMI qualifying rules or your valuation? Happy to point you there." / "Speak to a startup
+accountant about your share scheme, shall I point you to the form?" / "Working out salary against
+dividends as a founder? There is a tool for that." / "Want a hand getting founder pay and extraction
+right? I can show you the numbers." / "Speak to a startup accountant about how you pay yourself, want
+me to set that up?" / "Getting your SaaS numbers investor ready? I can point you to the right place."
+/ "Want a hand with SaaS reporting or a fractional finance lead? Happy to help." / "Speak to a startup
+accountant about your finance function, shall I point you to the form?" / "Anything I can help you
+find on your accounts or your deadlines?" / "Want a hand keeping on top of your filing deadlines?
+Happy to help." / "Speak to a startup accountant about your compliance, shall I point you to the form?"
+Combination (R&D + SEIS/EIS): "R&D relief and an SEIS or EIS round often land together. Want me to line
+both up?" / "Claiming R&D alongside an SEIS or EIS round takes care. Want me to show you why?" /
+"Speak to a startup accountant about both together, want me to set that up?"
+After a calculator: "You have already run the numbers. Want a second pair of eyes on them?" / "A
+calculator gives a picture. An accountant confirms it fits your company, want a check?" / "Ready to
+sanity-check those results? An accountant goes further than any calculator."
+Generic: "Not sure what you are looking for? I can point you to the right tool." / "Happy to help
+you find what you need. What is the main thing on your mind?" / "Speak to a startup accountant and
+get a straight answer. Want me to set that up?"
+Topic nouns: "your R&D claim", "your SEIS or EIS round", "your EMI or share scheme", "how you pay
+yourself", "your SaaS numbers", "your accounts and deadlines".
+Exit: "Before you go: send a question about {noun} and one of our accountants will come back to
+you." (and the no-noun form). Friction: "Looks like the form gave you a bit of trouble. Send a
+question about {noun} here instead and we will reply within 24 hours." (and the no-noun form).
+Buttons and labels: "Ask an accountant", "Close", "Send to an accountant", "Sending...", "See your
+numbers", "Dismiss", "We reply within 24 hours", "Your email", "Your question", "Your question for an
+accountant". Messages: "Enter a valid email address." (LeadForm's own), "Add a short message so the
+accountant knows how to help.", "Something went wrong. Please try again.", success "Thanks, we have
+your message. One of our accountants will reply by email within 24 hours. Please keep an eye on your
+inbox, and your spam or junk folder, so the reply is not missed."
+Reused, not authored: `cta.sticky_button` "Get in touch" (contact chip), `lead_form.placeholders
+.email`, the shared `leadConsentText` + "See our Privacy Policy.", `siteConfig.name`.
+Deliberate deviations from generalist: `bottom-4` not `bottom-24` (no sticky bar here); header on
+`primary-950`; buttons on the 700/800 steps; every control carries the site `focusRing`.

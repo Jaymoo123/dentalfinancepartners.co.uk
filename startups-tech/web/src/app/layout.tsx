@@ -130,8 +130,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   model stays one implementation estate-wide; nothing renders
                   them. The widget's auto-open behaviour is unchanged from
                   Property and generalist (standing ruling 2026-09-27,
-                  decision 9). IntentProvider itself no-ops on /embed/* and
-                  /admin/*, so the widget never renders there. */}
+                  decision 9). R7 F1: IntentProvider still renders its children
+                  on /embed/* and /admin/*, it only passes a null context value
+                  there; what actually stops the widget on those routes is its
+                  own `if (!ctx) return null` in SpecialistWidget.tsx. */}
               <div className="print:hidden">
                 <SpecialistWidget />
               </div>
