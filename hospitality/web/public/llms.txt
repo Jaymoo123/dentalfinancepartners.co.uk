@@ -37,7 +37,7 @@ These figures are drawn from docs/hospitality/rates_ledger.json and docs/hospita
 - Retail, Hospitality and Leisure business rates relief ended for new claims from 1 April 2026. RHL properties now use reduced multipliers: 38.2p (rateable value below £51,000), 43p (£51,000 to £499,999); standard multipliers are 43.2p and 48p.
 - Small Business Rate Relief: 100% at rateable value up to £12,000; tapers to zero at £15,000.
 - MTD for Income Tax applies to sole-trader operators with self-employment and property income over £50,000 from 6 April 2026.
-- Tips Act 2023 (Employment (Allocation of Tips) Act 2023) in force from 1 October 2024: 100% of qualifying tips must reach workers without deductions.
+- Tips Act 2023 (Employment (Allocation of Tips) Act 2023): the main duties have applied since 1 October 2024, requiring 100% of qualifying tips to reach workers without deductions.
 - Tronc: tips distributed via an independently run tronc where the employer is not involved in allocation are free of employer and employee NIC; PAYE income tax still applies.
 - Tips cannot count toward the National Minimum Wage or National Living Wage.
 - Food business registration with the local authority required at least 28 days before trading (England, Wales and Northern Ireland).

@@ -15,7 +15,7 @@ const fsa = fsaSnapshot as unknown as FsaHygieneIndexSnapshot;
 const openings = openingsSnapshot;
 
 export const metadata: Metadata = {
-  title: "UK hospitality data and research | Hospitality Tax",
+  title: "UK hospitality data and research",
   description:
     "Original, sourced data on UK hospitality company insolvency, business survival, food hygiene ratings and company formations, built entirely from official open data. Free to read and cite.",
   alternates: { canonical: `${siteConfig.url}/research` },

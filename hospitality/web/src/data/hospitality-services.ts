@@ -74,7 +74,7 @@ export const hospitalityServices: HospitalityService[] = [
       {
         question: "What is a tronc and does my business need one?",
         answer:
-          "A tronc is a separate pay arrangement run by an independent troncmaster that distributes tips and service charges to staff. Your business needs one if you receive significant card or pooled tips and want to eliminate employer and employee NIC on those distributions. Without a correctly structured tronc, tips paid through the employer are treated as earnings and attract full NIC. See also <a href=\"/services/hospitality-payroll\">hospitality payroll</a> for how tronc payments sit inside your overall pay run.",
+          "A tronc is a separate pay arrangement run by an independent troncmaster that distributes tips and service charges to staff. Your business needs one if you receive significant card or pooled tips and want to eliminate employer and employee NIC on those distributions. Without a correctly structured tronc, tips paid through the employer are treated as earnings and attract full NIC. See also our hospitality payroll service for how tronc payments sit inside your overall pay run.",
       },
       {
         question: "Does a tronc save employee NIC as well as employer NIC?",
@@ -221,7 +221,7 @@ export const hospitalityServices: HospitalityService[] = [
     howWeHelp: [
       {
         title: "VAT rate review and menu categorisation",
-        body: "We review your menu, point-of-sale categorisation and FRS sector assignment, identify any misclassification against the five hot tests, the eat-in/takeaway split and the standing carve-outs, and produce a corrected VAT rate schedule ready for your till system. Use our <a href=\"/calculators/food-drink-vat-checker\">food and drink VAT checker</a> for a quick first-pass review.",
+        body: "We review your menu, point-of-sale categorisation and FRS sector assignment, identify any misclassification against the five hot tests, the eat-in/takeaway split and the standing carve-outs, and produce a corrected VAT rate schedule ready for your till system. Use our <a href=\"/calculators/food-drink-vat-rate-checker\">food and drink VAT checker</a> for a quick first-pass review.",
       },
       {
         title: "VAT registration and threshold monitoring",

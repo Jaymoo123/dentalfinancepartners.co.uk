@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 import snapshot from "@/data/uk-hospitality-openings-closures-index.json";
+import { siteConfig } from "@/config/site";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 const { meta, quarters, sub_trades, headline } = snapshot;
 
 const PAGE_PATH = "/research/hospitality-openings-closures-index";
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://hospitality.example.com";
+const SITE_URL = siteConfig.url;
 
 function fmt(n: number): string {
   return n.toLocaleString("en-GB");
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
     description: `Companies House data on UK restaurant, pub, hotel and takeaway openings and closures by quarter, from Q1 2021.`,
     url: `${SITE_URL}${PAGE_PATH}`,
     type: "article",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: "UK Hospitality Openings & Closures Index" }],
   },
 };
 
@@ -88,7 +91,7 @@ export default function HospitalityIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
       />
-      <main>
+      <div>
         <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
           <div className="mx-auto max-w-4xl px-6">
             <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
@@ -269,9 +272,24 @@ export default function HospitalityIndexPage() {
             </p>
           </Section>
 
+          <div className="mt-10 rounded-2xl border-2 border-[var(--brand-primary)]/20 bg-[var(--brand-primary)]/[0.04] p-8 sm:p-10">
+            <h2 className="text-2xl font-bold text-[var(--brand-primary)] sm:text-3xl">
+              Running a restaurant, pub or hotel? Keep the cash position ahead of the risk.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[var(--ink-soft)]">
+              High insolvency rates in hospitality are driven by margin, cash flow and fixed-cost
+              pressure, not just bad luck. Understanding your VAT position, staff cost structure, and
+              tax planning is a practical buffer against the conditions that push comparable businesses
+              under. Our team works exclusively with UK hospitality operators.
+            </p>
+            <div className="mt-8">
+              <LeadForm redirectOnSuccess={false} submitLabel="Get a free hospitality tax review" />
+            </div>
+          </div>
+
           <div className="pb-16" />
         </div>
-      </main>
+      </div>
     </>
   );
 }

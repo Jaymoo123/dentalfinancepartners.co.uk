@@ -15,7 +15,7 @@ export default function BlogIndexPage() {
   const categories = getAllCategories();
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
         Hospitality finance, explained.
       </h1>
@@ -49,6 +49,6 @@ export default function BlogIndexPage() {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }

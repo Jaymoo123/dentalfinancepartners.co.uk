@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { buildOgImageUrl, buildArticleJsonLd, buildHowToJsonLd } from "@/lib/schema";
+import { buildOgImageUrl, buildBlogPostingJsonLd, buildPageBreadcrumbJsonLd, buildHowToJsonLd } from "@/lib/schema";
 import {
   getAllPosts,
   getPostByCategoryAndSlug,
@@ -11,6 +11,7 @@ import {
 } from "@/lib/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
 
@@ -75,17 +76,32 @@ export default async function BlogPostPage({ params }: Props) {
   const bodySplit = splitAtSecondH2(post.contentHtml);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: buildArticleJsonLd({
-            title: post.metaTitle,
-            description: post.metaDescription,
-            url: postUrl,
-            datePublished: post.date,
-            dateModified: post.updatedDate ?? post.date,
-          }),
+          __html: buildBlogPostingJsonLd(
+            {
+              h1: post.h1,
+              metaDescription: post.metaDescription,
+              image: post.image,
+              date: post.date,
+              updatedDate: post.updatedDate,
+              category: post.category,
+            },
+            postUrl,
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: buildPageBreadcrumbJsonLd([
+            { label: "Home", href: "/" },
+            { label: "Blog", href: "/blog" },
+            { label: post.category, href: `/blog/${category}` },
+            { label: post.h1 },
+          ]),
         }}
       />
       {post.faqs && post.faqs.length > 0 && (
@@ -145,6 +161,25 @@ export default async function BlogPostPage({ params }: Props) {
           </>
         ) : null}
       </article>
+      {/* F2 fix 4: post.faqs was asserted in FAQPage JSON-LD above but never
+          rendered, so the schema claimed 210 of 214 answers that were
+          invisible on the page. Same questions/answers, same data, rendered
+          with the kit accordion so the server HTML carries what the schema
+          asserts. alwaysRenderAnswers keeps every answer in the server HTML
+          (not just the open one) so the two never disagree. Heading matches
+          the "Common questions" convention used on /services/[slug]. */}
+      {post.faqs && post.faqs.length > 0 && (
+        <div className="mt-12 border-t border-neutral-200 pt-8">
+          <FaqSection
+            eyebrow=""
+            title="Common questions"
+            faqs={post.faqs}
+            html
+            alwaysRenderAnswers
+            className="pt-8"
+          />
+        </div>
+      )}
       {/* LEADS_250 §13 S2: the static "Book a call" text block that lived here
           is replaced by the site's LeadForm (form_id lead_form); heading/body
           copy is unchanged, still the site's existing wording. */}
@@ -157,6 +192,6 @@ export default async function BlogPostPage({ params }: Props) {
           <LeadForm redirectOnSuccess={false} />
         </div>
       </div>
-    </main>
+    </div>
   );
 }

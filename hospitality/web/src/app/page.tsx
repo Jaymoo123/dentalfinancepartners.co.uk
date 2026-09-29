@@ -25,7 +25,7 @@ import {
   BarChart3,
   ClipboardList,
 } from "lucide-react";
-import { buildFaqJsonLd, buildOrganizationJsonLd } from "@/lib/schema";
+import { buildFaqJsonLd } from "@/lib/schema";
 
 export function generateMetadata(): Metadata {
   return {
@@ -216,7 +216,7 @@ const complianceMoments = [
 const testimonials = [
   {
     quote:
-      "We had been running our tronc without formal troncmaster independence. Once that was pointed out, we restructured the scheme properly and our employer NIC on tips dropped to zero. The savings in the first year covered the accountancy fee several times over.",
+      "We had been running our tronc without formal troncmaster independence. Once that was pointed out, we restructured the scheme properly and our employer NIC on tips dropped to zero.",
     attribution: "Owner, independent restaurant group, three sites, Midlands",
   },
   {
@@ -232,9 +232,9 @@ const testimonials = [
 ];
 
 const calculatorLinks = [
-  { title: "Tronc and tips PAYE and NIC calculator", href: "/calculators/tronc-tips-paye-nic" },
-  { title: "Food and drink VAT checker", href: "/calculators/food-drink-vat-checker" },
-  { title: "Staff cost and rota margin calculator", href: "/calculators/staff-cost-rota-margin" },
+  { title: "Tronc and tips PAYE and NIC calculator", href: "/calculators/tronc-tips-paye-nic-calculator" },
+  { title: "Food and drink VAT checker", href: "/calculators/food-drink-vat-rate-checker" },
+  { title: "Staff cost and rota margin calculator", href: "/calculators/staff-cost-rota-margin-calculator" },
 ];
 
 const faqs = [
@@ -283,10 +283,6 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd() }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
@@ -652,7 +648,7 @@ export default function HomePage() {
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
             Tronc independence, food VAT five-test analysis, AWRS due diligence, TOMS margin
             accounting, draught duty rates, BIM61405 licensing costs: a generalist encounters
-            these infrequently. We deal with them every week across our hospitality client base.
+            these infrequently.
           </p>
           <div className="mt-12 overflow-x-auto border border-neutral-200">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">

@@ -1,7 +1,13 @@
 import { siteConfig } from "@/config/site";
 import { niche } from "@/config/niche-loader";
-import { buildOrganization, buildService as buildServiceThing } from "@accounting-network/web-shared/schema";
-import type { SiteSchemaOpts } from "@accounting-network/web-shared/schema";
+import {
+  buildOrganization,
+  buildService as buildServiceThing,
+  buildBlogPosting,
+  buildBreadcrumb,
+  referencedOrganization,
+} from "@accounting-network/web-shared/schema";
+import type { ArticleInput, SiteSchemaOpts } from "@accounting-network/web-shared/schema";
 
 export function buildOgImageUrl(title: string, category?: string) {
   const params = new URLSearchParams({ title });
@@ -33,8 +39,12 @@ export function siteSchemaOpts(): SiteSchemaOpts {
       postalCode: office.postcode,
       addressCountry: "GB",
     },
-    serviceAreas: niche.seo.service_areas,
-    priceRange: "££",
+    // F2 fix 3: niche.seo.service_areas holds a country name ("United Kingdom"),
+    // not a list of cities. Passing it as `serviceAreas` made the shared builder
+    // type it "City" (organization.ts:16 maps every serviceAreas entry to City).
+    // areaServedCountry is the correct opt for a country-wide area.
+    areaServedCountry: niche.seo.service_areas?.[0] ?? "United Kingdom",
+    // F2 fix 1: this firm publishes no prices (fees quoted after a call).
     knowsAbout: [
       "Hospitality accounting",
       "Tronc and tips compliance",
@@ -131,6 +141,21 @@ export function buildArticleJsonLd(opts: {
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${siteConfig.url}${opts.url}` },
   });
+}
+
+/**
+ * BlogPosting JSON-LD for a blog post, via the shared kit builder (F2 fix 5).
+ * No post carries a real `author` (frontmatter author is always ""), so the
+ * Organization stub stands in as author, same as publisher.
+ */
+export function buildBlogPostingJsonLd(post: ArticleInput, path: string) {
+  const opts = siteSchemaOpts();
+  return JSON.stringify(buildBlogPosting(post, path, opts, referencedOrganization(opts)));
+}
+
+/** BreadcrumbList JSON-LD via the shared kit builder (F2 fix 6). */
+export function buildPageBreadcrumbJsonLd(items: { label: string; href?: string }[]) {
+  return JSON.stringify(buildBreadcrumb(items, siteSchemaOpts()));
 }
 
 export function buildHowToJsonLd(

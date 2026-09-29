@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
+import { buildOgImageUrl } from "@/lib/schema";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { buildCalculatorJsonLd, buildFaqPageJsonLd } from "@/lib/calculators/schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
@@ -24,8 +25,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: tool.metaTitle,
     description: tool.metaDescription,
     alternates: { canonical },
-    openGraph: { title: tool.metaTitle, description: tool.oneLiner, url: canonical, type: "website" },
-    twitter: { card: "summary_large_image", title: tool.metaTitle, description: tool.oneLiner },
+    openGraph: {
+      title: tool.metaTitle,
+      description: tool.oneLiner,
+      url: canonical,
+      type: "website",
+      images: [{ url: buildOgImageUrl(tool.name), width: 1200, height: 630, alt: tool.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: tool.metaTitle,
+      description: tool.oneLiner,
+      images: [buildOgImageUrl(tool.name)],
+    },
   };
 }
 
@@ -55,7 +67,7 @@ export default async function CalculatorToolPage({ params }: Props) {
         />
       )}
 
-      <main>
+      <div>
         <section className="bg-[var(--brand-primary)] py-12 sm:py-16">
           <div className="mx-auto max-w-4xl px-6">
             <nav className="text-sm text-white/70">
@@ -108,7 +120,7 @@ export default async function CalculatorToolPage({ params }: Props) {
                 result, so the footer duplicate goes and CalcResultCta stays. */}
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

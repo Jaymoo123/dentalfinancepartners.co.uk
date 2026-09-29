@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { buildOgImageUrl } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Terms of use",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     description: `Terms of use for the ${siteConfig.name} website. Governing law, disclaimers, and acceptable use policy.`,
     url: `${siteConfig.url}/terms`,
     type: "website",
+    images: [{ url: buildOgImageUrl("Terms of use"), width: 1200, height: 630, alt: "Terms of use" }],
   },
   twitter: {
     card: "summary_large_image",

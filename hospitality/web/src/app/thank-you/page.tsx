@@ -30,7 +30,7 @@ export default async function ThankYouPage({
 
   if (optedOut) {
     return (
-      <main className="mx-auto max-w-2xl px-6 py-24 text-center">
+      <div className="mx-auto max-w-2xl px-6 py-24 text-center">
         <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
           You will not hear from us again about this enquiry
         </h1>
@@ -40,13 +40,13 @@ export default async function ThankYouPage({
         <Link href="/" className="mt-8 inline-block font-medium underline">
           Back to the homepage
         </Link>
-      </main>
+      </div>
     );
   }
 
   if (confirmed) {
     return (
-      <main className="mx-auto max-w-2xl px-6 py-24 text-center">
+      <div className="mx-auto max-w-2xl px-6 py-24 text-center">
         <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">Confirmed</h1>
         <p className="mt-4 text-neutral-600">
           Thanks, that is confirmed. A specialist firm from our partner network will contact you
@@ -55,12 +55,12 @@ export default async function ThankYouPage({
         <Link href="/" className="mt-8 inline-block font-medium underline">
           Back to the homepage
         </Link>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className="mx-auto max-w-2xl px-6 py-24 text-center">
+    <div className="mx-auto max-w-2xl px-6 py-24 text-center">
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
         Thanks, your enquiry is on its way.
       </h1>
@@ -112,6 +112,6 @@ export default async function ThankYouPage({
           </Link>
         )}
       </div>
-    </main>
+    </div>
   );
 }

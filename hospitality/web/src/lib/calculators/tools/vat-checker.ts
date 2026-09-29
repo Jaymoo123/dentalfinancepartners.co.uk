@@ -61,7 +61,7 @@ export function checkVat(
     return {
       vatRate: 20,
       rationale:
-        "Hot food and hot drinks sold for takeaway or delivery are standard-rated at 20%. HMRC defines hot as food heated above ambient temperature for consumption hot.",
+        "Hot food and hot drinks sold for takeaway or delivery are standard-rated at 20%. Food is \"hot\" for VAT purposes if it is above ambient air temperature and meets any one of the five tests in VAT Notice 709/1: intentionally heated for consumption, heated to order, kept hot after cooking, supplied in heat-retentive packaging, or advertised or marketed as hot.",
       vatNoticeRef: "VAT Notice 709/1 (hot take-away food and drink)",
     };
   }
@@ -166,7 +166,7 @@ export const vatCheckerTool: GenericTool = {
     paragraphs: [
       "UK VAT on food and drink is not a simple rule: it depends on what the item is, whether it is hot or cold, and whether it is eaten on the premises or taken away. Getting it wrong is one of the most common VAT errors for hospitality businesses.",
       "All food and drink consumed on the premises (eat-in) is treated as a catering supply and is standard-rated at 20%. This applies whether the item is hot or cold, and whether you run a restaurant, a cafe, a pub or a hotel breakfast.",
-      "For food sold to take away or delivered, the general rule is that cold food is zero-rated. But there are important exceptions. Hot food (heated above ambient temperature for consumption hot) is always standard-rated on takeaway. And certain product categories are excepted from zero-rating even when sold cold: confectionery, chocolates and sweets; crisps and savoury snacks; ice cream and frozen desserts; and most cold drinks (soft drinks, juices, carbonated drinks).",
+      "For food sold to take away or delivered, the general rule is that cold food is zero-rated. But there are important exceptions. Hot food, meeting any one of the five hot-food tests in VAT Notice 709/1 (intentionally heated for consumption, heated to order, kept hot after cooking, heat-retentive packaging, or advertised or marketed as hot), is always standard-rated on takeaway. And certain product categories are excepted from zero-rating even when sold cold: confectionery, chocolates and sweets; crisps and savoury snacks; ice cream and frozen desserts; and most cold drinks (soft drinks, juices, carbonated drinks).",
       "Cold sandwiches, salads, cold pastries and most cold prepared foods sold for takeaway are zero-rated. A cold sausage roll is zero-rated; a hot one is standard-rated. A bag of crisps is always standard-rated. This is the logic HMRC sets out in VAT Notices 701/14 and 709/1.",
     ],
   },

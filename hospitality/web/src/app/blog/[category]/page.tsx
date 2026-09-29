@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
+import { buildOgImageUrl } from "@/lib/schema";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -23,7 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: "website" },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: [{ url: buildOgImageUrl(cat.name), width: 1200, height: 630, alt: cat.name }],
+    },
   };
 }
 
@@ -35,7 +42,7 @@ export default async function CategoryPage({ params }: Props) {
   const posts = getAllPosts().filter((p) => getCategorySlug(p) === category);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
         <Link href="/blog" className="hover:underline">Blog</Link> / {cat.name}
       </p>
@@ -52,6 +59,6 @@ export default async function CategoryPage({ params }: Props) {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }

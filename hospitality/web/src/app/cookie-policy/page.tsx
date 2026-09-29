@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
+import { buildOgImageUrl } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Cookie policy",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     description: `How ${siteConfig.name} uses cookies and similar technologies on this website.`,
     url: `${siteConfig.url}/cookie-policy`,
     type: "website",
+    images: [{ url: buildOgImageUrl("Cookie policy"), width: 1200, height: 630, alt: "Cookie policy" }],
   },
   twitter: {
     card: "summary_large_image",

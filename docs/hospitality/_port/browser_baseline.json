@@ -1,0 +1,712 @@
+{
+  "/|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/tronc-tips-paye-nic?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/food-drink-vat-checker?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/staff-cost-rota-margin?_rsc=<hash>]"
+  ],
+  "/services|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-insolvency-index|mobile": [
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-food-hygiene-map|mobile": [
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/hospitality-openings-closures-index|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/about|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/privacy-policy|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|mobile": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/terms|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/tronc-scheme-setup|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-payroll|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-vat|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/toms-advice|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/business-rates-relief|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/restaurants|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pubs-and-bars|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/takeaways|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/hotels-and-guesthouses|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/cafes-and-coffee-shops|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/caterers-and-street-food|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/tronc-tips-paye-nic-calculator|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/food-drink-vat-rate-checker|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/staff-cost-rota-margin-calculator|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-accounts|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-vat|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/business-rates|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/tips-and-tronc|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/payroll-and-employment|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/capital-allowances|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/making-tax-digital|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/alcohol-duty|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/awrs-checks|mobile": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/tronc-tips-paye-nic?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/food-drink-vat-checker?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/staff-cost-rota-margin?_rsc=<hash>]"
+  ],
+  "/services|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-insolvency-index|tablet": [
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-food-hygiene-map|tablet": [
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/hospitality-openings-closures-index|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/about|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/privacy-policy|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|tablet": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/terms|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/tronc-scheme-setup|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-payroll|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-vat|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/toms-advice|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/business-rates-relief|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/restaurants|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pubs-and-bars|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/takeaways|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/hotels-and-guesthouses|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/cafes-and-coffee-shops|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/caterers-and-street-food|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/tronc-tips-paye-nic-calculator|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/food-drink-vat-rate-checker|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/staff-cost-rota-margin-calculator|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-accounts|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-vat|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/business-rates|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/tips-and-tronc|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/payroll-and-employment|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/capital-allowances|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/making-tax-digital|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/alcohol-duty|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/awrs-checks|tablet": [
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/tronc-tips-paye-nic?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/food-drink-vat-checker?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/staff-cost-rota-margin?_rsc=<hash>]"
+  ],
+  "/services|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-insolvency-index|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-food-hygiene-map|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/hospitality-openings-closures-index|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/about|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/privacy-policy|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/terms|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/tronc-scheme-setup|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-payroll|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-vat|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/toms-advice|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/services/business-rates-relief|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/restaurants|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pubs-and-bars|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/takeaways|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/hotels-and-guesthouses|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/cafes-and-coffee-shops|laptop": [
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "navigation: Navigation timeout of 60000 ms exceeded"
+  ],
+  "/for/caterers-and-street-food|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/tronc-tips-paye-nic-calculator|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/food-drink-vat-rate-checker|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/staff-cost-rota-margin-calculator|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-accounts|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-vat|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/business-rates|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/tips-and-tronc|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/payroll-and-employment|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/capital-allowances|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/making-tax-digital|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/alcohol-duty|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/awrs-checks|laptop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/tronc-tips-paye-nic?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/food-drink-vat-checker?_rsc=<hash>]",
+    "console: Failed to load resource: the server responded with a status of 404 (Not Found) [http://localhost:3202/calculators/staff-cost-rota-margin?_rsc=<hash>]"
+  ],
+  "/services|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-insolvency-index|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/uk-hospitality-food-hygiene-map|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "p \"Step 1 of 2 · About you\" ratio=4.50 floor=4.5 size=12px color=oklch(0.556 0 0)",
+    "span \"(optional)\" ratio=4.50 floor=4.5 size=14px color=oklch(0.556 0 0)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/research/hospitality-openings-closures-index|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/about|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/contact|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/privacy-policy|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/cookie-policy|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/terms|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/tronc-scheme-setup|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-payroll|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/hospitality-vat|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/toms-advice|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/services/business-rates-relief|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/restaurants|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/pubs-and-bars|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/takeaways|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/hotels-and-guesthouses|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/cafes-and-coffee-shops|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/for/caterers-and-street-food|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/tronc-tips-paye-nic-calculator|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/food-drink-vat-rate-checker|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/calculators/staff-cost-rota-margin-calculator|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-accounts|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/hospitality-vat|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/business-rates|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/tips-and-tronc|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/payroll-and-employment|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/capital-allowances|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/making-tax-digital|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/alcohol-duty|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ],
+  "/blog/licensed-trade/awrs-checks|desktop": [
+    "a \"Get in touch\" ratio=1.00 floor=4.5 size=14px color=rgb(255, 255, 255)",
+    "button \"Do not track me\" ratio=2.47 floor=4.5 size=12px color=oklch(0.708 0 0)",
+    "console: Framing 'https://pagead2.googlesyndication.com/' violates the following Content Security Policy directive: \"frame-src https://googleads.g.doubleclick.net https: [https://pagead2.googlesyndication.com/]"
+  ]
+}

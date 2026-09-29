@@ -19,14 +19,15 @@ const { meta, headline, business_types, local_authority_league_table } = data;
 const PAGE_PATH = "/research/uk-hospitality-food-hygiene-map";
 
 export const metadata: Metadata = {
-  title: "UK Hospitality Food Hygiene Map | FHRS/FHIS ratings by region | Hospitality Tax",
+  title: "UK Hospitality Food Hygiene Map | FHRS/FHIS ratings by region",
   description: `${fmtNumber(headline.total_establishments)} UK hospitality establishments rated for food hygiene, ${fmtPct(headline.national_top_rating_5_share_pct)} at the top FHRS rating. A sourced, local-authority breakdown from the FSA ratings API. Aggregate data only.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
-    title: "UK Hospitality Food Hygiene Map | Hospitality Tax",
+    title: "UK Hospitality Food Hygiene Map",
     description: `Local-authority food hygiene ratings across UK restaurants, pubs, hotels and takeaways, from the FSA open ratings API.`,
     url: `${siteConfig.url}${PAGE_PATH}`,
     type: "article",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: "UK Hospitality Food Hygiene Map" }],
   },
 };
 
@@ -154,7 +155,7 @@ export default function UKHospitalityFoodHygieneMapPage() {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }} />
 
-      <main>
+      <div>
         <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
           <div className="mx-auto max-w-4xl px-6">
             <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
@@ -344,7 +345,7 @@ export default function UKHospitalityFoodHygieneMapPage() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }

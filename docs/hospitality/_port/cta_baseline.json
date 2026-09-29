@@ -1,0 +1,795 @@
+{
+  "ts": "2026-09-29T17:51:23.863Z",
+  "site": "hospitality",
+  "base": "http://localhost:3202",
+  "sha": "eeb3dbef",
+  "served_title": "Specialist Hospitality Accountants UK",
+  "purpose": "Pre-port data-cta TRIPLE snapshot. sweep_baseline.json records counts; a count cannot detect trap 22, where the same button keeps its count but flips its goal or placement on cutover and splits the live funnel. Diff this file after every phase touching chrome or CTAs.",
+  "routes": 59,
+  "scanned": 59,
+  "non_interactive_ctas": [],
+  "distinct_triples": {
+    "header_book|header|form|data-cta": {
+      "count": 59,
+      "example_routes": [
+        "/",
+        "/calculators",
+        "/research",
+        "/for",
+        "/blog"
+      ],
+      "hrefs": [
+        "/contact"
+      ]
+    }
+  },
+  "per_route": {
+    "/": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research/uk-hospitality-insolvency-index": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research/uk-hospitality-food-hygiene-map": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/research/hospitality-openings-closures-index": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/contact": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/about": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/cookie-policy": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/privacy-policy": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/terms": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/tronc-scheme-setup": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/hospitality-payroll": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/hospitality-vat": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/toms-advice": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/services/business-rates-relief": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/restaurants": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/pubs-and-bars": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/takeaways": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/hotels-and-guesthouses": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/cafes-and-coffee-shops": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/for/caterers-and-street-food": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/tronc-tips-paye-nic-calculator": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/food-drink-vat-rate-checker": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/calculators/staff-cost-rota-margin-calculator": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/licensed-trade": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-vat": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/business-rates": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/tips-and-tronc": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/payroll-and-employment": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/capital-allowances": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/making-tax-digital": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-vat/is-there-vat-on-dog-food": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/licensed-trade/alcohol-duty": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/business-rates/retail-hospitality-and-leisure-relief-scheme": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/hospitality-hardest-sector-insolvency-survival": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/tips-and-tronc/tronc-scheme": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/uk-food-hygiene-ratings-by-region-and-business-type": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/bookkeeper-for-restaurant": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/epos-reconciliation-hospitality": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/hospitality-consultant-vs-accountant": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/hotel-finance-revenue-management": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/licensed-trade/awrs-checks": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-vat/vat-rates-soft-drinks-and-food": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-vat/bnb-rent-a-room-boundary": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/cash-basis-vs-accruals-stock": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/payroll-and-employment/casual-staff-employment-status": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/licensed-trade/draught-relief-explained": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-accounts/gross-profit-menu-pricing": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/capital-allowances/kitchen-fit-out-capital-allowances": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/licensed-trade/machine-games-duty": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/business-rates/small-business-rates-relief-cafes": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/making-tax-digital/mtd-itsa-hospitality-sole-traders": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/tips-and-tronc/tips-act-2023-compliance": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    },
+    "/blog/hospitality-vat/vat-on-takeaway-food": {
+      "count": 1,
+      "ctas": [
+        {
+          "tag": "a",
+          "id": "header_book",
+          "attrName": "data-cta",
+          "placement": "header",
+          "goal": "form",
+          "href": "/contact"
+        }
+      ]
+    }
+  }
+}

@@ -105,7 +105,7 @@ faqs:
 
 <p>This is one of the most persistent and expensive mistakes in hospitality payroll. An operator who pays a server £10.00 per hour and assumes the tips bring the total over £12.71 is not compliant, even if the server takes home more than £12.71 per hour overall. The base pay must meet the NLW floor without reference to gratuities.</p>
 
-<p>Since the Employment (Allocation of Tips) Act 2023 came into force on 1 October 2024, 100% of qualifying tips must also reach workers without deduction. The interaction between the Tips Act and minimum-wage compliance is covered in more detail in the <a href="/blog/tips-and-tronc/tips-act-2023-compliance">Tips Act 2023 compliance guide</a>. The <a href="/services/tronc-scheme-setup">tronc scheme setup service</a> handles the full separation between employer-controlled and troncmaster-controlled distributions.</p>
+<p>Since the main duties of the Employment (Allocation of Tips) Act 2023 have applied from 1 October 2024, 100% of qualifying tips must also reach workers without deduction. The interaction between the Tips Act and minimum-wage compliance is covered in more detail in the <a href="/blog/tips-and-tronc/tips-act-2023-compliance">Tips Act 2023 compliance guide</a>. The <a href="/services/tronc-scheme-setup">tronc scheme setup service</a> handles the full separation between employer-controlled and troncmaster-controlled distributions.</p>
 
 <h2>Holiday pay for irregular hours</h2>
 

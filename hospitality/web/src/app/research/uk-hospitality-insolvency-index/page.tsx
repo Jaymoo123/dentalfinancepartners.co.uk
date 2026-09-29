@@ -32,14 +32,15 @@ const latestCohort = survival.cohorts.find((c) => c.cohort_year === survival.lat
   ?? survival.cohorts[0];
 
 export const metadata: Metadata = {
-  title: "UK Hospitality Insolvency Index | Restaurant, pub and hotel insolvency data | Hospitality Tax",
+  title: "UK Hospitality Insolvency Index | Restaurant, pub and hotel insolvency data",
   description: `${HEADLINE_SENTENCE}. A sourced index of hospitality company insolvencies and business survival rates, compiled from Insolvency Service and ONS open data. Updated ${monthLabel(meta.data_through)}.`,
   alternates: { canonical: `${siteConfig.url}${PAGE_PATH}` },
   openGraph: {
-    title: "UK Hospitality Insolvency Index | Hospitality Tax",
+    title: "UK Hospitality Insolvency Index",
     description: `${HEADLINE_SENTENCE}. Hospitality insolvency and survival trends from Insolvency Service and ONS official open data.`,
     url: `${siteConfig.url}${PAGE_PATH}`,
     type: "article",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: "UK Hospitality Insolvency Index" }],
   },
 };
 
@@ -167,7 +168,7 @@ export default function UKHospitalityInsolvencyIndexPage() {
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
 
-      <main>
+      <div>
         <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
           <div className="mx-auto max-w-4xl px-6">
             <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
@@ -461,7 +462,7 @@ export default function UKHospitalityInsolvencyIndexPage() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }
