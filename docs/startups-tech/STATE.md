@@ -356,3 +356,17 @@ Reused, not authored: `cta.sticky_button` "Get in touch" (contact chip), `lead_f
 .email`, the shared `leadConsentText` + "See our Privacy Policy.", `siteConfig.name`.
 Deliberate deviations from generalist: `bottom-4` not `bottom-24` (no sticky bar here); header on
 `primary-950`; buttons on the 700/800 steps; every control carries the site `focusRing`.
+
+**Widget review closed (2026-09-29, late):** `_port/R7_WIDGET_REVIEW.md` FAIL (5 blockers: no keyboard
+entry into the dialog, a defect Property and generalist share; close ring 2.54; launcher covering the
+footer consent toggle; CLS 0.111; `extras.form_id` not sent) then GF6 (`7dc3c7fe`) closed all five and
+the eight gaps but its hide-on-footer fix made the launcher unreachable by keyboard and absent on
+short pages; GF7 (`878d56ce`) replaced it with a transform lift above the footer and a non-modal
+auto-open that upgrades to a trapped modal on first focus. Re-measured PASS: launcher reached by Tab
+(press 103 on `/`, 67 on a calculator), 16px above the footer in 16 states, zero overlap with the
+consent toggle and Cookie policy, CLS 0.00038 at 1280 and 0 at 390, close ring 15.99, `form_id` in
+the payload, 0 console errors. Final build: sweep 66/66 (1,806 links, 209 data-cta), browser_check
+152 loads, 0 contrast, 0 overflow, 0 anchor gaps. Tags `port-startups-tech-complete` and
+`-uplift` moved to `878d56ce`. Widget agents: 4 (builder, reviewer, two fixers). Port total 38.
+Estate item: Property's and generalist's widgets have the same keyboard defect (no focus entry, no
+Escape); the fix here is the template when the widget is lifted into the kit.

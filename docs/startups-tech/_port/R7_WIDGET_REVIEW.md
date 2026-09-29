@@ -182,3 +182,178 @@ There is something to clear: the footer's "Do not track me" consent toggle sits 
 
 Screenshots kept in the session scratchpad (`scratchpad/r7/`): `S_m390_*`, `S_d1280_*`, `F_m390_*`, `F_d1280_*`, `A_d1280.png`, `A_m390.png`, `W_*_chips.png`, `W_fulfil200_success.png`, `G_widget_over_closing_panel_1280.png`, `G_widget_composer_over_panel_1280.png`.
 Instrument output: `browser_r7.json`, `sweep_r7.json`. Measurement scripts deleted.
+
+---
+
+# Re-measure after GF6
+
+Re-run 2026-09-29 against the rebuilt server on http://localhost:3201, title asserted first
+(`Founder Tax Partners | Accountants for Funded and Scaling UK Startups`). Fix diff read at
+`git diff HEAD~1 -- startups-tech/web/src` (6 files, +273/-126). Read-only; every `/api/leads/*`
+POST captured then aborted, except one deliberately stubbed with a local 200 to exercise the
+success path. No lead reached the database.
+
+## Original blockers — all five closed
+
+| | expected | measured after GF6 | verdict |
+|---|---|---|---|
+| **B1** keyboard | focus enters dialog, Tab cycles, Escape closes and restores | `role="dialog"`, `aria-modal="true"`, `aria-label="Ask an accountant"`. On open, focus = **Close** (`inside: true`). Tab cycles **Close → Get in touch → Ask an accountant → Close**, all `inside: true` over 8 presses; Shift+Tab reverses (Get in touch → Close → Ask an accountant), all inside. Escape: `open: false`, focus returns to `data-cta="specialist_widget"`. `aria-modal` is now claimed **and** honoured. | **CLOSED** |
+| **B2** close ring | >= 3:1 on `primary-950` | `.ground-dark` rebinds the ring to white: `2px solid rgb(255,255,255)` on `rgb(30,27,75)` = **15.99** (was 2.54), `:focus-visible` true, 400ms settle, canvas-composited. Chip ring 6.01 on `rgb(248,250,252)`, panel button 6.29, launcher 6.29 on white. | **CLOSED** |
+| **B3** footer overlap | launcher and panel hidden while the footer intersects | With the footer scrolled into view the wrapper is `visibility: hidden; pointer-events: none` (class `… invisible pointer-events-none`) at **390 and 1280, closed and open**. Hit-test at the centre of each control returns the control itself: "Do not track me" → its own `BUTTON`, both "Cookie policy" links → their own `A`. **Functionally clear.** Geometric boxes still intersect (the widget is hidden, not moved): 390 launcher × "Do not track me" `{x174,y776,w200,h20}`; 1280 launcher × "Do not track me" `{x1096,y832,w88,h4}`, panel × "Cookie policy" `{x1027,y544,w90,h24}`, panel × "Do not track me" `{x1096,y812,w88,h8}`. | **CLOSED** (the fix hides rather than relocates — see the new blockers) |
+| **B4** CLS on `/` | no shift from mounting the widget | 1280: **0.00038** (was 0.11063). Two shifts: `0.00036` at t=359ms sourced to `NAV.hidden min-w-0 items-center…` and `DIV.flex shrink-0…` (the header, not the widget), and `0.00002` at t=1000ms on an `svg`. 390: **0.00000, no shifts** (was 0.03336). No shift source names the widget wrapper or the launcher. | **CLOSED** |
+| **B5** `extras.form_id` | `"specialist_widget"` on the lead | Intercepted POST to `/api/leads/submit`: `"extras":{"capture_channel":"assistant","trigger":"auto","form_id":"specialist_widget"}`. `source` still `"startups-tech"`, `captureMode "email_only"`, consent text unchanged. | **CLOSED** |
+
+## The eight gaps and the nit
+
+| | measured after GF6 | verdict |
+|---|---|---|
+| G1 placeholder contrast | `placeholder:text-slate-500`, **4.76:1** on white at 1280 and 390 (was 2.58, need 4.5) | CLOSED |
+| G2 chip border | `border-primary-500` = `rgb(99,102,241)`, **4.27:1** on the chip ground (was 1.91, need 3) | CLOSED |
+| G3 error announcement | Both errors render as `<p role="alert">` with ids `sw-email-error` / `sw-question-error`; email input `aria-describedby="sw-email-error"` `aria-invalid="true"`, textarea `aria-describedby="sw-question-error"` `aria-invalid="true"` | CLOSED |
+| N2 both empty-field errors | Empty submit now shows **both**: "Enter a valid email address." and "Add a short message so the accountant knows how to help." Invalid email with an empty message shows both as well. | CLOSED |
+| G4 desktop `personalization_shown` | Captured beacon event names on a desktop session include **`personalization_shown`**, with `"variant":"panel"` — the new desktop auto-open branch. | CLOSED |
+| G5 suppression after converting | After a stubbed successful submit, a client-side navigation to `/contact` in the same session: `dialogOpen: false`, `peek: false`, launcher still rendered. The `lead_submitted` bus subscription re-suppresses immediately instead of waiting for a full page load. | CLOSED |
+| G6 friction copy | `Send a question about ${noun} here instead, we reply within 24 hours.` (12 words plus the noun) and `Send a question here instead, we reply within 24 hours.` (10 words). One sentence each, both under 20. | CLOSED |
+| G7 self-referential chip | `/calculators/rd-relief-estimator`: dialog links = `["/contact"]` only, the calculator chip is **absent**. `/blog/research-and-development/merged-rd-scheme-explained`: `["See your numbers -> /calculators/rd-relief-estimator", "Get in touch -> /contact"]`, chip **present** (sampled at 1s, 2.5s and 5s). `/services/emi-scheme-setup` → `emi-vs-unapproved-calculator`. | CLOSED |
+| N1 `neutral-` count | `SpecialistWidget.tsx` **1** (a comment recording the rename, 0 class occurrences), `LeadForm.tsx` **0**, `DetailsForm.tsx` **0**, `BookingPicker.tsx` **0**. Total **1**, down from 41. `slate-` now 19 / 14 / 8 / 8. | CLOSED |
+| G8 launcher tab position | See NB-1 — it got worse, not better. | **NOT CLOSED** |
+
+## New blockers the fix introduced
+
+**NB-1 — `SpecialistWidget.tsx` footer IntersectionObserver | the launcher is now unreachable by keyboard on every page**
+The observer hides the whole widget while the footer intersects the viewport, and the launcher
+is the last focusable element in the DOM, after the footer. Walking the page with real Tab
+presses from the top: on `/` the wrapper flips to `visibility: hidden` at press **73** (focus on
+the footer's "Founder Tax Partners" link) and the launcher is never reached in 400 presses
+(`tabReach: -1`). On `/calculators/rd-relief-estimator` it goes hidden at press **50** and again
+is never reached. `visibility: hidden` removes an element from the tab order, so there is no
+keyboard route to the widget at all. The ring itself is fine (6.29 on white, `:focus-visible`
+true) but only when focus is set programmatically with the page at the top. Before GF6 the
+launcher was reachable at press 62-67. Minimal fix: move the widget rather than hide it
+(`bottom-24`, or an offset driven by the footer's intersection), or keep it visible and give the
+footer bottom padding that clears the launcher.
+
+**NB-2 — same observer | the widget never appears on short pages**
+On any page whose footer sits inside the first viewport the widget is hidden for the whole
+visit. Measured at 1280 at scroll 0, sampled at 1s, 2.5s and 5s: `/contact` (document height
+1480px) and `/thank-you` (1157px) both report `visibility: "hidden"` throughout, while `/`,
+`/blog/research-and-development/merged-rd-scheme-explained` and `/services/emi-scheme-setup`
+report `visible`. Two of the six routes the widget is required on now never show it. Same
+minimal fix as NB-1.
+
+**NB-3 — the focus-trap effect | the auto-open steals keyboard focus 600ms after load**
+Measured on `/calculators/rd-relief-estimator` with no user action: 2.5s after load
+`document.activeElement` is the dialog's **Close** button (`insideDialog: true`). The trap fires
+on the unprompted auto-open as well as on a deliberate open, so a keyboard or screen reader user
+is moved into a dialog they did not ask for and a sighted typist loses their place. Minimal fix:
+move focus only when `open` was set by `handleOpen`, not by the auto-open timer.
+
+## Regression check
+
+Console on the re-measured routes: **0 errors, 0 page errors**. Opener lines, taxonomy, chip
+targets, `source`, `data-cta`, consent text and the success copy are unchanged from the first
+review. `browser_check.mjs` and `sweep.mjs` were not re-run in this round.
+
+## FINAL VERDICT
+
+**FAIL** — all 5 original blockers, all 8 gaps and the nit are closed and measured, but the B3
+fix introduced 3 new blockers: the launcher is unreachable by keyboard on every page (NB-1), the
+widget never renders on `/contact` or `/thank-you` (NB-2), and the auto-open steals focus (NB-3).
+The hide-on-footer approach is the wrong shape; relocating the widget (the declined `bottom-24`,
+or footer padding) closes B3 without any of the three.
+
+---
+
+# Re-measure after GF7
+
+Re-run 2026-09-29 against the rebuilt server, title asserted first
+(`Founder Tax Partners | Accountants for Funded and Scaling UK Startups`). Fix diff read at
+`git diff HEAD~1 -- startups-tech/web/src/components/support/SpecialistWidget.tsx`. Read-only;
+every `/api/leads/*` POST captured then aborted, except one stubbed with a local 200 to exercise
+the success path. No lead reached the database.
+
+## The three GF6 regressions — all three closed
+
+**NB-1 keyboard reach of the launcher — CLOSED.** Real Tab presses from the top of the page, no
+programmatic focus:
+
+| route | Tab presses to reach | wrapper visibility | transform at arrival | launcher rect | in viewport | hit-test | ring |
+|---|---|---|---|---|---|---|---|
+| `/` | **103** | `visible` | `matrix(1,0,0,1,0,-584.328)` | `{x1064,y248,w200,h52}` | yes | returns the launcher itself | **6.29**, `:focus-visible` true |
+| `/calculators/rd-relief-estimator` | **67** | `visible` | `matrix(1,0,0,1,0,-538.531)` | `{x1064,y293,w200,h52}` | yes | returns the launcher itself | **6.29**, `:focus-visible` true |
+
+The widget is never hidden, so it stays in the tab order; the lift keeps it on screen at the
+moment focus arrives. (GF6 measured `tabReach: -1` on both.)
+
+**NB-2 short pages — CLOSED.** `/contact` and `/thank-you`, at 1280 and 390, sampled at 1s and
+2.5s and then with the footer fully and half in view. `visibility: visible` in all 16 states, and
+the gap between the launcher's bottom edge and the footer's top edge is **exactly 16px** in every
+unclamped state:
+
+| route / width | 1s | 2.5s | footer full | footer half |
+|---|---|---|---|---|
+| `/contact` 1280 | visible, lift 3.8px, gap 16 | visible, gap 16 | visible, lift 583.8px, gap 16 | visible, lift 449.8px, gap 16 |
+| `/thank-you` 1280 | visible, lift 327.4px, gap 16 | visible, gap 16 | visible, lift 584.4px, gap 16 | visible, lift 450.4px, gap 16 |
+| `/contact` 390 | visible, no lift, gap 58 | visible, gap 58 | visible, lift 687px (clamped) | visible, lift 422.5px, gap 16 |
+| `/thank-you` 390 | visible, lift 306.9px, gap 16 | visible, gap 16 | visible, lift 687px (clamped) | visible, lift 421.9px, gap 16 |
+
+**Overlap rectangles with the consent toggle and the Cookie policy links: none, in all 16
+states** (`overlaps: []` everywhere, launcher and panel alike). Hit-test at the centre of each
+control, wherever the control is on screen, returns the control itself: "Do not track me" → its
+own `BUTTON`, both "Cookie policy" links → their own `A`. The two clamped 390 states (footer
+scrolled fully past the top) put the launcher inside the footer's box geometrically but still
+produce zero overlap with any consent control, and all three controls hit-test to themselves.
+
+**NB-3 auto-open focus — CLOSED.** On `/calculators/rd-relief-estimator`, 2.5s after load with no
+user action: dialog open, `aria-modal` **absent** (`null`), `document.activeElement` is `BODY`,
+`insideDialog: false` — focus unchanged. Shift+Tab into the panel then flips it: `aria-modal:
+"true"`, focus on **Close**, and the trap cycles Close → Get in touch → Ask an accountant → Close
+over 6 presses, all `inside: true`. Escape closes and returns focus to
+`data-cta="specialist_widget"`. Escape also closes a still non-modal auto-opened panel (fresh
+context, `/services/emi-scheme-setup`: `before {open:true, modal:null, active:BODY}` → closed,
+focus left on `BODY`, correctly not yanked to the launcher because it was never inside).
+
+## B4 — CLS re-checked through a scroll to the footer
+
+The lift is transform-only, so it is excluded from layout shift. Measured on `/` with a 24-step
+slow scroll all the way to the footer:
+
+| width | CLS at load | CLS after scrolling to the footer | shift sources |
+|---|---|---|---|
+| 1280 | **0.00038** | **0.00038** (unchanged) | `0.00036` at t=411ms on `NAV.hidden min-w-0 items-center…` and `DIV.flex shrink-0…` (the header); `0.00002` at t=983ms on an `svg` |
+| 390 | **0.00000** | **0.00000** | none |
+
+**No shift is attributed to the widget** at either width, at load or during the lift.
+
+## Previously closed items — re-confirmed
+
+| | measured |
+|---|---|
+| B1 trap (user-initiated open) | `role="dialog"`, `aria-modal="true"`, `aria-label="Ask an accountant"`, focus on Close, `inside: true` |
+| B2 close ring | `2px solid rgb(255,255,255)` on `rgb(30,27,75)` = **15.99**; chip ring 6.01 on `rgb(248,250,252)`; launcher 6.29 on white (measured at NB-1 arrival) |
+| B3 consent controls | zero overlap rectangles, all controls hit-test to themselves (table above) |
+| B5 `extras.form_id` | `{"capture_channel":"assistant","trigger":"auto","form_id":"specialist_widget"}`, `source: "startups-tech"`, `captureMode: "email_only"`, visitor and session ids present |
+| G1 placeholder | `oklch(0.554 0.046 257.417)` = **4.76** |
+| G2 chip border | **4.27** (need 3) |
+| G3 error announcement | `<p role="alert">` ids `sw-email-error` / `sw-question-error`; `aria-describedby` and `aria-invalid="true"` on both fields |
+| N2 both errors | empty submit shows both: "Enter a valid email address." and "Add a short message so the accountant knows how to help." |
+| G4 desktop impression | `personalization_shown` present with `"variant":"panel"` |
+| G5 suppression | after a stubbed success, client-side nav to `/contact`: `dialogOpen: false`, `peek: false`, launcher still rendered |
+| G6 friction copy | unchanged from GF6: 10 and 12 words, one sentence each |
+| G7 calculator chip | `/calculators/rd-relief-estimator` → `["/contact"]` only; the post → `["See your numbers -> /calculators/rd-relief-estimator", "Get in touch -> /contact"]` |
+| N1 `neutral-` | unchanged: 1 (a comment) / 0 / 0 / 0 across the four component files |
+| text contrast | header 15.99, "We reply within 24 hours" 10.75, opener bubble 14.62, chip text 9.93, button 7.90 |
+| console | **0 errors, 0 page errors** across every route measured in this round |
+| success path | renders on the stubbed 200 |
+
+Not re-run in this round: `browser_check.mjs` and `sweep.mjs`.
+
+## FINAL VERDICT
+
+**PASS.** The transform lift closes NB-1 and NB-2 without reintroducing B3: the launcher is
+keyboard-reachable on every route measured (103 and 67 presses, visible and hit-testable on
+arrival), the widget renders on `/contact` and `/thank-you` at both widths, and there is not one
+overlap rectangle with a consent control in any of the sixteen states. The non-modal auto-open
+closes NB-3 while keeping the trap for a deliberate open. CLS stays at 0.00038 / 0.00000 with no
+widget-attributed shift through a full scroll. All five original blockers, all eight gaps and the
+nit remain closed. Nothing is open.

@@ -3,11 +3,11 @@
 ## The prompt to paste
 
 > Read `CLAUDE.md`, load the `standard_terms` skill, run ponytail full and caveman ultra. Then read
-> `docs/_engines/ESTATE_PARITY_HANDOFF_2026-09-29.md` top to bottom. Your job is section 3: first
-> an independent recheck of what phase 0 did on every site, on local builds, then phase 1 in the
-> order given, stopping at every owner gate. **Do not deploy, push, submit to IndexNow or write
-> production flags; the owner has parked the deploy.** Price every fan-out before launching it and
-> report agents used after.
+> `docs/_engines/ESTATE_PARITY_HANDOFF_2026-09-29.md` **section 5 first** (the state at the end of
+> 2026-09-29 and the next stage), then sections 1 to 4 for the history. Your job is section 5.3 in
+> order, stopping at every owner gate. **Do not deploy, push, submit to IndexNow or write production
+> flags unless the owner says so in that turn.** Price every fan-out before launching it and report
+> agents used after. Never rewrite an existing sentence on any site; new pages are new content.
 
 ## 1. Where things stand
 
@@ -145,7 +145,113 @@ Each phase 1 item is built local-first, committed per site by the manager, and r
   "Estate Planning Specialists" (the base said "Probate Compass", a stale brand); divorce
   `/services` keeps a real intro instead of "Full service detail is being built now."
 
-## 5. Where everything lives
+## 5. State at the end of 2026-09-29, and the next stage (READ THIS FIRST)
+
+### 5.1 What happened on 2026-09-29
+
+- Phase 0 recheck and fix round closed (section 3.1); every site safe to deploy.
+- Owner ruled: Property's button green is the designer's and is not changed for contrast maths
+  (phase 0's emerald-700 shift reverted, `2c59e437`); the same on generalist's orange (`7b6a9d03`).
+  **Trap 12 now explicitly covers colour on Property, and by extension any designer-set colour.**
+- Owner GO for the deploy round: **14 sites, Property first, 48 clean hours, then the rest**, from
+  SHA `7b6a9d03` (worktree `C:/dep`), the bar and rollback in Appendix A.0. **Waits on his push**
+  (`! git push origin main`; the classifier refuses it from a session). Held out: ecommerce (its
+  design port was found COMPLETE and tagged `port-ecommerce-complete` on 09-26, never walked by
+  the owner), startups-tech (own tag), wills-probate and divorce-finances (parked by owner).
+- startups-tech design port: phases 0 to 6 built, reviewed, gap-fixed and tagged; owner walked it
+  and said "plain jane"; the design UPLIFT followed the same day (kit adoption, four-marker row
+  0/0/0/0 to 1/3/3/4, gate 9.1 kit 9/60), owner: "yep that's great". Tags
+  `port-startups-tech-complete` = `port-startups-tech-uplift` on the final commit. Full record:
+  `docs/startups-tech/STATE.md` (three close blocks) and `docs/startups-tech/_port/`.
+- Kit gained additive props, every default byte-identical (playbook 8.11): `--calc-result-accent`
+  token on the calculator headline, `FaqSection alwaysRenderAnswers`, `StatsCounter href`,
+  `TestimonialsSection items/showRating/footnote`.
+- The floating help widget port onto startups-tech: see 5.2 item 6 for the outcome.
+
+### 5.2 Owner rulings taken 2026-09-29 (binding)
+
+1. Never change a designer-set colour for contrast maths (Property, generalist; assume all).
+2. Deploy round go, canary shape, 14 sites; wills/divorce/ecommerce/startups out of the round.
+3. Lead-form consent text = the shared `leadConsentText` everywhere.
+4. startups-tech: no sticky bottom bar; no deep-scroll panel, returning-visitor bar or next-step
+   offer; no newsletter; enquiry form on every money page including the calculators and research
+   indexes (done); help widget YES (port of generalist's, auto-open stays per decision 9 of 09-27).
+5. "Same thing as other sites": a port is not done at the phase 6 tag; the UPLIFT (kit adoption to
+   generalist's level) is part of the port and is budgeted from the start.
+6. WIDGET OUTCOME: ported and reviewed to PASS (`878d56ce`, `docs/startups-tech/STATE.md` last
+   block); every authored line is listed there for the owner. Property's and generalist's copies
+   share a keyboard defect (focus never enters the dialog, no Escape); startups-tech's fix is the
+   template for lifting the widget into the kit (5.3 item 6).
+
+### 5.3 Next stage, in order (each on its own owner go)
+
+1. **The deploy round.** Owner pushes; run Appendix A steps 1, 2 (14 sites from `7b6a9d03`, order
+   Property, Medical, contractors-ir35, care, charities, Dentists, generalist, Solicitors,
+   digital-agency, crypto, pharmacies, construction-cis, hospitality; Property alone first, 48
+   hours, bar A.0), 4 (`calc_pdf_offer` off, owner paste), 5 (fresh-agent live check, about 10
+   agents). Own every red CI run.
+2. **startups-tech deploy** from `port-startups-tech-complete` on the owner's word: clean worktree,
+   **run `npm ci --workspace=startups-tech/web --include-workspace-root` there first** (the
+   workspace install crashed on Arborist in the dev tree; lock entries were regenerated lock-only
+   and match generalist's), `check_dependency_closure.py`, deploy, curl, then the four-marker row
+   and one form per money page on the live domain. Its kit commits ride along to every other
+   site's NEXT build unchanged (defaults byte-identical, 416/416 kit tests).
+3. **ecommerce**: owner walk on `next start` from `port-ecommerce-complete` + the 09-28 parity and
+   recheck commits; expect the "plain jane" verdict and budget the uplift (about 8 agents, the
+   startups shape: planner, U4 foundations alone, U1 to U3, review, gap-fix, re-review); then
+   deploy on his word.
+4. **Estate mop-ups from the startups port** (small, price each): turn `FaqSection
+   alwaysRenderAnswers` on for generalist (12 call sites), Medical, ecommerce and construction-cis,
+   which are LIVE with FAQ answers missing from the server HTML while their schema asserts them
+   (about 2 agents, one build each, curl proof); check `--calc-result-accent` need on every site
+   mounting the kit Calculator with a mid-tone brand on the slate-900 panel (Medical copper,
+   ecommerce amber, crypto) (1 reader, fixes per site); kit `Breadcrumb` `tone` prop for indigo
+   and amber brand heroes; kit mobile drawer focus trap (every ported site, owner decision).
+5. **Next design ports by damage**, one site at a time, each WITH its uplift in the same session:
+   hospitality, pharmacies, care, digital-agency, then wills-probate and divorce-finances as one
+   package. Shape that worked on startups-tech (34 agents, one day): phase 0 alone and gated (5
+   audit packages + fix wave), phase 1 tokens and chrome alone, phases 2 to 6 as one wave of six
+   disjoint packages, verification executor, two reviews, gap-fix, re-review, THEN the uplift
+   (planner, U4 alone, U1 to U3, review, gap-fix, re-review). Budget 36 to 40 agents per site.
+   Start at the playbook STOP block and `scripts/port_preflight.py`. Read
+   `docs/startups-tech/_port/UPLIFT_PACKAGES.md` before planning: the four-marker row target and
+   the "adopt the kit by feeding it the existing copy" rule are what the owner is judging.
+6. **Help widget on the other six small sites** (care, charities, crypto, ecommerce, hospitality,
+   pharmacies), each after its port: lift `SpecialistWidget` + `IntentProvider` + `lib/intent` into
+   `packages/web-shared` first so there is one implementation (manager carve-out), then per site a
+   taxonomy map + openers (authored copy, listed for the owner) + mount (about 3 agents per site).
+7. **Segment-page content chain** (section 3.2 item 2), content waves (item 3), and the owner-led
+   wording pass (item 5), unchanged.
+
+### 5.4 Traps that bit on 2026-09-29 (add to the playbook when the next port starts)
+
+- A builder that reports a kit prop "has not landed" without checking the kit's git log is
+  guessing; U3 left the hand-rolled FAQ on 30 posts on that claim. Put the kit commit SHA in every
+  brief.
+- A comment is a claim: R2 found `.ground-dark` declared and unused; R4 found a copied rule inside
+  `@layer components` losing to a utility while its comment said it cleared the floor; R6 found a
+  noscript selector requiring an attribute the element never carries.
+- Bare `outline-none` on a field defeats every `focus-visible` ring recipe (Medical, then
+  startups-tech, same day). Grep for it in every port.
+- Importing `globals-standard.css` needs `--radius` and the four `--brand-glow*` channels declared,
+  or radii collapse to 0 and the emerald fallbacks paint.
+- `data-cta` on a wrapper `div` claims every click inside it (`closest("[data-cta]")`). Ids go on
+  the control, never the container.
+- A shell chain that ends in a heredoc and is followed by another line on the next row runs that
+  line unconditionally: a tag was created on the wrong commit that way. One git write per call.
+- The port harness at a 390 window size is not mobile emulation; only `puppeteer-core` with
+  `isMobile: true` and the gov.uk control is.
+- `npm ls --workspace` reports "extraneous" for packages that are correctly declared (generalist
+  shows the same); not evidence of a broken lockfile. `npm install --package-lock-only` is.
+- The owner will reject any colour shift on a designer-set palette, however good the contrast
+  argument; ask before, never after (ruling 1 above).
+
+### 5.5 Agents used 2026-09-29
+
+Recheck + fix + verify 19; startups-tech port 26; uplift 8; index panels 1; help widget 4. Total 58.
+No CI run, no push, no deploy, no owner-interrupting surface created.
+
+## 6. Where everything lives
 
 `docs/_engines/`: research readout, data read, ops read, plan, phase 0 brief, shared and plumbing
 and silent-sites and spot-check reports, wording revert, this handoff. `docs/<site>/`: research,

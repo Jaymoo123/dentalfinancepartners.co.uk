@@ -67,6 +67,20 @@ non-token rings, so this is not a port defect class.
 Next action is the owner walk. Push and deploy are both owner-triggered, and the walk
 happens at the end once everything is done.
 
+## UPDATE 2026-09-29: startups-tech is ported AND uplifted; the uplift is part of the port
+
+Ninth and tenth ports done: ecommerce (`port-ecommerce-complete`, 2026-09-26, not yet walked by the
+owner) and startups-tech (`port-startups-tech-complete` = `port-startups-tech-uplift`, 2026-09-29,
+walked twice). The owner's verdict on the finished startups port, with every gate passing, was
+"plain jane, same thing as other sites, make sure the advanced designer kit is ported as well as the
+lead stuff". The same-day uplift (kit adoption to generalist's level, four-marker row 1/3/3/4, gate
+9.1 kit 9 distinct / 60 call sites) got "yep that's great". **Rule from this: budget the uplift
+inside every remaining port and run it before the owner walk, not after.** The shape, the packages
+and the kit props it needed are in `docs/startups-tech/_port/UPLIFT_PACKAGES.md` and
+`docs/startups-tech/STATE.md`. Next site by damage: hospitality, then pharmacies, care,
+digital-agency, then the legal pair. The living estate handoff is
+`docs/_engines/ESTATE_PARITY_HANDOFF_2026-09-29.md` section 5.
+
 ## READ THIS BEFORE YOU CHECK ANYTHING OUT: THE TAGGING TRAP
 
 **A phase tag is not the end of a port.** crypto carries seven phase tags plus a
