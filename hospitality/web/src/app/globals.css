@@ -18,6 +18,7 @@
   --brand-primary: #b0532f;
   --brand-primary-strong: #b0532f;
   --brand-on-primary: #ffffff;
+  --calc-result-accent: #e1a58e; /* kit calculator headline on slate-900: brand #b0532f 3.51 -> same-hue 300-step tint #e1a58e 8.48 */
 
   /* Estate font, ported 2026-09-28 (was the bare system stack). */
   --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, sans-serif;

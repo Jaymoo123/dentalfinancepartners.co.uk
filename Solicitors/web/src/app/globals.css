@@ -51,6 +51,7 @@
   --brand-primary: var(--crimson);
   --brand-primary-strong: var(--crimson-dark);
   --brand-on-primary: #ffffff;
+  --calc-result-accent: var(--color-primary-300); /* kit calculator headline on slate-900: crimson #c41e3a 3.06 -> primary-300 rose-300 #fda4af 9.44 */
 
   /* Radius chain root. The kit's globals-standard.css derives --radius-sm/md/lg/xl
      and --btn-radius from this, so --radius-xl = calc(0rem + 4px) = 4px, the house

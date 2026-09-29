@@ -136,6 +136,7 @@
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: #ffffff;
+  --calc-result-accent: var(--color-primary-400); /* kit calculator headline on slate-900: accent #0e7490 3.33 -> primary-400 cyan-400 #22d3ee 9.88 */
 
   /* Explicit per-role brand tokens (playbook §8 item 11). cyan-600 #0891b2
      measures 3.68:1 both as text-on-white and as a ground-under-white-label,

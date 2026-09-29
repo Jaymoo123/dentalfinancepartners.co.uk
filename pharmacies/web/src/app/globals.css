@@ -18,6 +18,7 @@
   --brand-primary: #0f3a4a;
   --brand-primary-strong: #0f3a4a;
   --brand-on-primary: #ffffff;
+  --calc-result-accent: #88cde7; /* kit calculator headline on slate-900: brand #0f3a4a 1.47 -> same-hue 300-step tint #88cde7 10.14 */
 }
 
 body {

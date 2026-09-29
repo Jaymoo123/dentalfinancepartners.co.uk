@@ -72,6 +72,7 @@
   --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: var(--accent-foreground);
+  --calc-result-accent: #a5b4fc; /* kit calculator headline on slate-900: accent #4f46e5 2.84 -> indigo-300 #a5b4fc 8.96 */
 }
 
 @theme inline {
