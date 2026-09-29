@@ -23,6 +23,7 @@ import { ReadingProgress } from "@accounting-network/web-shared/design/blog/Read
 import { TableOfContents } from "@accounting-network/web-shared/design/blog/TableOfContents";
 import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
 import { BlogSidebarCta } from "@accounting-network/web-shared/design/blog/BlogSidebarCta";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 import { focusRing } from "@/components/ui/layout-utils";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
@@ -160,7 +161,7 @@ export default async function BlogPostPage({ params }: Props) {
           />
         )}
         {/* Answers are authored HTML. The tags are stripped for the JSON-LD so
-            the schema asserts the same TEXT the <details> block below renders;
+            the schema asserts the same TEXT the FaqSection below renders;
             asserting markup makes the two disagree on a string comparison. */}
         {post.faqs && post.faqs.length > 0 && !post.schema?.includes("FAQPage") && (
           <script
@@ -240,39 +241,29 @@ export default async function BlogPostPage({ params }: Props) {
             <div dangerouslySetInnerHTML={{ __html: bodySplit.after }} />
           ) : null}
         </article>
-        {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
-            It is a Radix accordion with no `forceMount` (:34-43), so a closed
-            answer is absent from the server HTML while the FAQPage JSON-LD
-            emitted above keeps asserting it. That is the asserted-but-absent
-            defect a sibling site had to unwind, and it would be a crawlability
-            regression here. Native <details> keeps every answer server-rendered
-            and still collapses. Revisit only if the kit gains forceMount.
-
-            The answers themselves are authored frontmatter (`faqs:` on all 32
-            posts). Until this edit they were asserted in JSON-LD and rendered
-            NOWHERE on the page: 32 pages of schema with no visible source. No
-            copy is authored here beyond the section heading. */}
+        {/* R5-B4 ADOPTED: packages/web-shared/design/primitives/FaqSection.tsx.
+            The decline above this replaced was stale: the kit gained
+            `alwaysRenderAnswers` (FaqSection.tsx:33-35, this wave), which
+            passes Radix `forceMount` through accordion.tsx:52-64 and adds
+            `data-[state=closed]:hidden`. Every answer is force-mounted into
+            the server HTML exactly as the hand-rolled details block put it there,
+            so the FAQPage JSON-LD emitted above still asserts nothing the
+            page does not carry, and the schema and section read the SAME
+            `post.faqs` array, so counts cannot diverge. `html` is on because
+            post.faqs answers are authored HTML (rendered with
+            dangerouslySetInnerHTML above). `title` is the h2 string the
+            hand-rolled block carried, verbatim; `eyebrow=""` because this
+            block published no eyebrow label. */}
         {post.faqs && post.faqs.length > 0 && (
-          <div className="mt-12 border-t border-slate-200 pt-8">
-            <h2 className="text-xl font-semibold text-slate-900">Frequently asked questions</h2>
-            <div className="mt-6 space-y-4">
-              {post.faqs.map((faq) => (
-                <details key={faq.question} className="group rounded-xl border border-slate-200">
-                  <summary className={`flex cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-4 py-4 font-semibold text-slate-900 hover:text-primary-700 ${focusRing}`}>
-                    <span>{faq.question}</span>
-                    <span className="text-primary-600 transition-transform group-open:rotate-45" aria-hidden>
-                      <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <div
-                    className={`border-t border-slate-100 px-4 pb-4 pt-3 leading-relaxed text-slate-600 ${focusRingAuthoredLinks}`}
-                    dangerouslySetInnerHTML={{ __html: faq.answer }}
-                  />
-                </details>
-              ))}
-            </div>
+          <div className={`mt-12 border-t border-slate-200 pt-8 ${focusRingAuthoredLinks}`}>
+            <FaqSection
+              eyebrow=""
+              title="Frequently asked questions"
+              faqs={post.faqs}
+              html
+              alwaysRenderAnswers
+              className="pt-8"
+            />
           </div>
         )}
         {/* Blog end-of-article capture, unchanged in position and in copy: it is

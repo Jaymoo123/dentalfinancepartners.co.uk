@@ -11,9 +11,10 @@ import { buildFaqJsonLd, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/l
 import { LeadForm } from "@/components/forms/LeadForm";
 import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
-import { ArrowRight, ShieldCheck, Quote } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { TestimonialsSection } from "@accounting-network/web-shared/design/marketing/TestimonialsSection";
 import {
   StatsCounter,
   type StatItem,
@@ -38,21 +39,15 @@ import { FaqSection } from "@accounting-network/web-shared/design/primitives/Faq
  *     buildFaqJsonLd(faqs) still reads the same binding the section renders.
  *
  * STILL DECLINED, with the measurement:
- *   design/marketing/TestimonialsSection.tsx - DECLINED, and the reason CHANGED.
- *     The `items` prop the manager added (:57-62) does clear the old objection
- *     (Property's landlord quotes are no longer welded in). Two new ones replace
- *     it, both fatal under this wave's no-new-copy rule. (a) The figure renders
- *     an unconditional five-star row with aria-label "Rated 5 out of 5"
- *     (TestimonialsSection.tsx:72-77). This page publishes no rating, and the
- *     quotes it does publish are governed by a disclaimer stating they are
- *     composite accounts; asserting a five-star rating over composites is a new
- *     claim, not a restyle. (b) `items` is typed `typeof testimonials`, so each
- *     entry needs `highlight`, `who`, `detail` and `initials`
- *     (TestimonialsSection.tsx:8-28). This page publishes a quote and one
- *     attribution line; `initials` alone would author three new strings and
- *     `highlight` would require cutting a sentence out of each quote to bold it.
- *     Reversible by a kit edit that makes the star row opt-in and the caption
- *     fields optional; that is a manager carve-out, not this file's to make.
+ *   design/marketing/TestimonialsSection.tsx - R5-B7 ADOPTED. `showRating` is
+ *     opt-in since 2026-09-29 (:72-77 only renders the five-star row when
+ *     `showRating` is true), which removes the old objection: this page
+ *     publishes no rating, so `showRating={false}`. `highlight`, `detail` and
+ *     `initials` are optional (:9-15), so the three EXISTING quotes and
+ *     attribution lines pass through as `quote`/`who` with nothing invented.
+ *     `description` reuses the existing standfirst paragraph verbatim (the
+ *     "Composite accounts..." sentence that sat under the heading); no
+ *     separate footnote existed, so `footnote` is left unset.
  *   design/marketing/NumberedReasons.tsx - DECLINED. `items` is
  *     `{title: string; body: string}[]` (:27). Four of the six `whySpecialist`
  *     rows below carry `detail` as JSX with gov.uk anchors, and the component has
@@ -820,37 +815,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Anonymised social proof */}
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
-        <div className={siteContainerLg}>
-          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <Eyebrow>Real outcomes</Eyebrow>
-            <h2 id="testimonials-heading" className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
-              What founders say
-            </h2>
-            <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Composite accounts based on patterns across our client base. Names, amounts and
-              specific details anonymised. The compliance situations described are real.
-            </p>
-          </div>
-          <div className="grid gap-5 sm:gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <figure
-                key={i}
-                className="relative bg-white border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <Quote className="absolute top-4 right-4 h-6 w-6 text-indigo-100" aria-hidden />
-                <blockquote className="text-base leading-relaxed text-slate-800 font-medium pr-8">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-slate-500">
-                  {t.attribution}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Anonymised social proof. R5-B7: adopted the kit TestimonialsSection,
+          see the decline-turned-adoption note in the header comment block. */}
+      <TestimonialsSection
+        eyebrow="Real outcomes"
+        title="What founders say"
+        description="Composite accounts based on patterns across our client base. Names, amounts and specific details anonymised. The compliance situations described are real."
+        items={testimonials.map((t) => ({ quote: t.quote, who: t.attribution }))}
+        showRating={false}
+        backdrop={<StartupsBackdrop patternId="startups-round-ladder-proof" />}
+      />
 
       {/* FAQ. ADOPTED packages/web-shared/design/primitives/FaqSection.tsx with
           `alwaysRenderAnswers` (FaqSection.tsx:33-35, new this wave). The decline

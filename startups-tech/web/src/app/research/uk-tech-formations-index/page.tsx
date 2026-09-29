@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 import { siteConfig } from "@/config/site";
 import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 import { siteContainerLg, focusRing, btnOnDark } from "@/components/ui/layout-utils";
@@ -102,7 +103,7 @@ const faqs = [
   {
     question: "How does this differ from the site's other Companies House research page?",
     answer:
-      "This index tracks monthly formation velocity and seasonality for a narrower, software-focused SIC cluster. The site's UK Startup Formation and Survival Index uses a broader 8-code cluster (also including games publishing and web portals) at annual and quarterly grain, and focuses on the current active-versus-dissolved snapshot rather than the month-by-month formation trend.",
+      `This index tracks monthly formation velocity and seasonality for a narrower, software-focused SIC cluster. The site's <a href="/research/startup-formation-survival-index">UK Startup Formation and Survival Index</a> uses a broader 8-code cluster (also including games publishing and web portals) at annual and quarterly grain, and focuses on the current active-versus-dissolved snapshot rather than the month-by-month formation trend.`,
   },
 ];
 
@@ -471,52 +472,22 @@ export default function TechFormationsIndexPage() {
       </section>
 
       {/* FAQ */}
-      {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx,
-          measured 2026-09-29. The `alwaysRenderAnswers` prop the kit gained this
-          wave removes the server-HTML objection, and the sibling research pages
-          with plain-string answers DO adopt it. It cannot be adopted here: the
-          LAST entry in this page's `faqs` array is rendered through a JSX branch
-          below that carries a real internal <Link> inside the answer, and
-          FaqSection's `FaqEntry.answer` is a string (schema/faq-page.ts), with
-          `html` the only alternative and no <Link> component available inside a
-          dangerouslySetInnerHTML string. Adopting it would render the plain
-          `f.answer` string instead and DELETE that internal link, taking this
-          route below its link floor. The JSON-LD already asserts the string
-          form, so nothing is lost by leaving the richer rendering in place. */}
-      <section className="bg-white py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-8">
-            Frequently asked questions
-          </h2>
-          <div className="max-w-2xl space-y-6">
-            {faqs.map((f, i) => (
-              <div key={f.question}>
-                <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
-                <p className="mt-2 text-base leading-relaxed text-slate-700">
-                  {i === faqs.length - 1 ? (
-                    <>
-                      This index tracks monthly formation velocity and seasonality for a
-                      narrower, software-focused SIC cluster. The site&apos;s{" "}
-                      <Link
-                        href="/research/startup-formation-survival-index"
-                        className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
-                      >
-                        UK Startup Formation and Survival Index
-                      </Link>{" "}
-                      uses a broader 8-code cluster (also including games publishing and web
-                      portals) at annual and quarterly grain, and focuses on the current
-                      active-versus-dissolved snapshot rather than the month-by-month formation
-                      trend.
-                    </>
-                  ) : (
-                    f.answer
-                  )}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* R5-B6 ADOPTED: the prior decline is now stale. The LAST entry's
+          answer carries the internal <Link> as an HTML anchor string instead
+          of a JSX branch (same href, same text), so `html` renders it and
+          `buildFaqJsonLd` (schema.ts:62) strips the tag for the JSON-LD
+          assertion, keeping the binding equal to the rendered text.
+          `alwaysRenderAnswers` force-mounts every answer, same as the sibling
+          research pages. `eyebrow=""` because this page publishes no eyebrow
+          label; `title` is this section's own h2 string, verbatim. */}
+      <FaqSection
+        eyebrow=""
+        title="Frequently asked questions"
+        faqs={faqs}
+        html
+        alwaysRenderAnswers
+        className="bg-white py-12 sm:py-16"
+      />
     </div>
   );
 }

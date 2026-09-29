@@ -104,6 +104,12 @@
     --muted: #475569;
     --border: #e2e8f0;
 
+    /* R5-1 BLOCKER FIX: globals-standard.css derives --radius-sm/md/lg/xl and
+       --btn-radius from this base (calc(var(--radius) +/- N)); undeclared, every
+       one resolved to the empty string and every rounded-* utility painted 0px.
+       Same value and same house-radius reasoning as generalist/web/src/app/globals.css:71. */
+    --radius: 0rem;
+
     /* Canonical brand tokens for @accounting-network/web-shared components.
        No --brand-primary-text / --brand-primary-ground override: see the ramp
        comment above, the one brand hex already clears all three floors. */
@@ -296,13 +302,10 @@
   }
 }
 
-/* GAP 4. `.eyebrow-rule` draw-in animation is DELIBERATELY NOT DEFINED HERE.
-   The kit `Eyebrow` renders a mark with `class="eyebrow-rule"`; that class
-   lives only in packages/web-shared/design/globals-standard.css, which this
-   site does not import (same reason as the .related-card note above: that
-   sheet carries Property's palette). With no rule the mark paints at full
-   width on first render, correct end state, no animation - same decision and
-   same reasoning as contractors-ir35/web/src/app/globals.css:315-347: the
-   kit's collapsed `scaleX(0)` start state is only released by a <noscript>
-   override this site's root layout does not carry, so copying the animation
-   without that override would ship marks that never draw in with JS off. */
+/* R5-B5 CORRECTION: the comment previously here (GAP 4) said .eyebrow-rule was
+   deliberately left undefined because this site did not import
+   globals-standard.css and had no <noscript> release for the collapsed start
+   state. U4 (above, top of file) added the @import, and layout.tsx now carries
+   the <noscript> override, so both premises are false. .eyebrow-rule and
+   .tick-draw are defined by the imported sheet and draw in as the kit intends;
+   nothing to declare locally here. */

@@ -80,13 +80,13 @@ export default function BlogIndexPage() {
     {/* A.4/A.7: LeadCTAPanel mount, absent on this route until now. Fed the
         one global blog CTA triple already published in niche.config.json
         (`blog.cta_heading` / `cta_body` / `cta_button`); no copy authored.
-        `data-cta="blog_index_book"` sits on the panel's own section wrapper,
-        not a new hero anchor link: generalist's `#book` hero pair
-        (`blog/page.tsx:113-129`) is a second lead-capture surface (a link
-        that jumps to the panel below) this site's owner ruling on new
-        sentences and OFF-LIMITS `page.tsx`-shaped hero blocks does not
-        license U3 to invent. */}
-    <div id="blog-lead-panel" data-cta="blog_index_book" data-cta-placement="panel" data-cta-goal="form">
+        R5-B2 fix: no `data-cta` on this wrapper. autoCapture resolves clicks
+        via closest("[data-cta]"), so an id here would claim every field focus
+        and link click inside LeadCTAPanel. Generalist's `blog_index_book` /
+        `blog_index_articles` ids sit on anchor links in a hero block this site
+        does not have (see comment above); the LeadForm inside carries its own
+        formId attribution instead, same as every other LeadCTAPanel on site. */}
+    <div id="blog-lead-panel">
       <LeadCTAPanel
         title={niche.blog.cta_heading}
         description={niche.blog.cta_body}

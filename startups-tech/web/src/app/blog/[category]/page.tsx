@@ -103,9 +103,11 @@ export default async function CategoryPage({ params }: Props) {
     </div>
     {/* A.4/A.7: LeadCTAPanel, absent on category routes until now. Same global
         config triple as /blog (no per-category copy exists, `niche.blog.*`
-        is the only published set: E5). `data-cta="blog_index_articles"` on the
-        panel's own wrapper, same reasoning as /blog's `blog_index_book`. */}
-    <div data-cta="blog_index_articles" data-cta-placement="panel" data-cta-goal="form">
+        is the only published set: E5). R5-B2 fix: no `data-cta` on this
+        wrapper, same reasoning as /blog's fix. Generalist's `blog_index_book` /
+        `blog_index_articles` ids sit on anchor links in a hero block this site
+        does not have; LeadForm's own formId is the attribution here. */}
+    <div>
       <LeadCTAPanel
         title={niche.blog.cta_heading}
         description={niche.blog.cta_body}
