@@ -26,10 +26,19 @@ export function CalculatorClient({
   slug,
   variant = "page",
   resultCta,
+  headingLevel,
 }: {
   slug: string;
   variant?: "page" | "embed";
   resultCta?: React.ReactNode;
+  /**
+   * Passed straight to the kit component (Calculator.tsx:43,82,115). The kit
+   * default is 3, which on /calculators/[slug] jumps the h1 in the hero to an h3
+   * with no h2 between them. The page route passes 2; the embed route does not,
+   * because an embed is an iframe fragment with no h1 of its own above it and 3
+   * is right there.
+   */
+  headingLevel?: 2 | 3;
 }) {
   const tool = getGenericTool(slug);
   if (!tool) return null;
@@ -38,6 +47,7 @@ export function CalculatorClient({
       tool={tool}
       variant={variant}
       resultCta={resultCta}
+      headingLevel={headingLevel}
       eyebrow={<Eyebrow>Calculator</Eyebrow>}
     />
   );

@@ -143,7 +143,7 @@ export default async function BlogPostPage({ params }: Props) {
         <p className="font-semibold text-slate-900">{niche.blog.cta_heading}</p>
         <p className="mt-2 text-sm text-slate-600">{niche.blog.cta_body}</p>
         <div className="mt-6 rounded-md border border-slate-200 p-6">
-          <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
+          <LeadForm ctaId="blog_post_end_book" ctaPlacement="body" redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
         </div>
       </div>
       {related.length > 0 && (
@@ -169,7 +169,7 @@ export default async function BlogPostPage({ params }: Props) {
           proofPoints={[]}
           formTitle=""
           contained
-          form={<LeadForm submitLabel={niche.blog.cta_button} />}
+          form={<LeadForm ctaId="blog_post_closing_book" submitLabel={niche.blog.cta_button} />}
         />
       </div>
       </div>
@@ -180,7 +180,15 @@ export default async function BlogPostPage({ params }: Props) {
            packages/web-shared/content/TableOfContents.tsx): this family expects the
            host to own `sticky` + the viewport clamp, so both live here and nowhere
            inside the component. Patching one copy means patching the other. */
-        <aside className="hidden lg:block lg:order-2 lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
+        /* R5 G7: the `max-h` + `overflow-y-auto` pair used to sit on the
+           <aside> itself, so U3's BlogSidebarCta became a capture surface inside
+           a nested scroll box and fell below the inner fold on a long article
+           (the nested-scroll class from the startups-tech review). The clamp
+           moves DOWN onto the table of contents, which is the only thing here
+           that can outgrow the viewport; the CTA card now sits in the sticky
+           column with no scroller around it. `sticky` + `top-24` stay on the
+           aside, unchanged, so the column still follows the reader. */
+        <aside className="hidden lg:block lg:order-2 lg:sticky lg:top-24">
           {/* .ground-dark rebinds --kit-focus-ring (and --focus-ring) to the
               on-brand white: BlogSidebarCta's own button reads --kit-focus-ring
               internally and cannot be overridden from the call site
@@ -194,7 +202,9 @@ export default async function BlogPostPage({ params }: Props) {
               buttonLabel={niche.blog.cta_button}
             />
           </div>
-          <TableOfContents headings={headings} />
+          <div className="lg:max-h-[calc(100vh-14rem)] lg:overflow-y-auto">
+            <TableOfContents headings={headings} />
+          </div>
         </aside>
       )}
     </div>

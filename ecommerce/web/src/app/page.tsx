@@ -164,21 +164,31 @@ const vatCluster = [
   { href: "/vat/postponed-vat-margin-scheme", label: "Postponed VAT and margin scheme" },
 ];
 
+/**
+ * R5 B4: `ctaId` added per record. The three tool links in the tools band used
+ * to share one `data-cta`, `home_calculator`, so `vw_cta_performance` could not
+ * attribute a click to a tool. The id is a LITERAL here rather than derived
+ * from `href` at render time, so a grep of this file is the census and the three
+ * ids cannot silently collapse back into one. No copy and no href changes.
+ */
 const calculatorLinks = [
   {
     title: "Seller take-home calculator",
     body: "Model your true take-home after platform fees, VAT and tax.",
     href: "/calculators/seller-take-home-calculator",
+    ctaId: "home_calculator_seller_take_home",
   },
   {
     title: "VAT threshold tracker",
     body: "Check your rolling 12-month gross taxable sales against the £90,000 threshold.",
     href: "/calculators/vat-threshold-tracker",
+    ctaId: "home_calculator_vat_threshold_tracker",
   },
   {
     title: "Sole trader vs Ltd for sellers",
     body: "Compare tax and NI outcomes for your selling income level.",
     href: "/calculators/sole-trader-vs-ltd-sellers",
+    ctaId: "home_calculator_sole_trader_vs_ltd",
   },
 ];
 
@@ -398,13 +408,19 @@ export default function HomePage() {
       {/* Hero */}
       {/* GROUND: `bg-[var(--ink-navy)]`, the token U4 declared at
           globals.css:192 for the #1a2942 this page used to paint as an
-          arbitrary Tailwind value. The two remaining literals are the gradient's
-          via and to stops: they have no token, globals.css is U4's file and not
-          this package's to edit, and they are designer-set colours whose
-          composited contrast readings are written out below and would have to be
-          re-measured if either moved. They stay as literals, reported. */}
+          arbitrary Tailwind value. R5 G10: the via and to stops were the two
+          literals left in this file, and F14's acceptance said zero. They are
+          tokens now, --ink-navy-via and --ink-navy-deep (globals.css, the one
+          file the carve-out allows a hex in). NO PAINTED COLOUR MOVED. The via
+          stop was `via-[#243550]/80` over this section's own
+          `bg-[var(--ink-navy)]`, and 0.8*#243550 + 0.2*#1a2942 = #22334d exactly
+          per channel, which is the value the token carries and the same value
+          the review measured this stop composite to; the stop is now opaque, so
+          no alpha modifier on an arbitrary var() has to be trusted. The
+          composited contrast readings written out below therefore still hold
+          unchanged. */}
       <section className="ground-dark relative flex items-center min-h-[440px] sm:min-h-[560px] overflow-hidden bg-[var(--ink-navy)]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--ink-navy)] via-[#243550]/80 to-[#0f1c30]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--ink-navy)] via-[var(--ink-navy-via)] to-[var(--ink-navy-deep)]" />
         <EcommerceBackdrop patternId="ecommerce-settlement-run-hero" />
         <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
           <div className="max-w-3xl">
@@ -483,6 +499,7 @@ export default function HomePage() {
                 className={btnOnDark}
                 data-cta="hero_secondary"
                 data-cta-placement="hero"
+                data-cta-goal="services"
               >
                 Our services
               </Link>
@@ -554,15 +571,18 @@ export default function HomePage() {
           {/* CoverageCards, see the adoption note at the head of this file.
               `tone="slate"` because the section ground is white and the kit's
               slate-50 card is the separation the hand-rolled border gave; a
-              white card here would disappear. `columns={2}` is the kit's own
-              even-set setting and the maximum it offers, so the four cards land
-              two-up from md rather than the four-up this band used at lg. Four
-              anchors in, four anchors out: the link floor is unchanged. `glow`
-              stays off, and could not be on: it is the same `.card-glow`
-              ScrollGlowGroup path U4 ruled out at option C. */}
+              white card here would disappear. R5 G3: `columns={2}` was NOT the
+              kit's maximum, which is what the note here claimed. `columns` takes
+              4 (CoverageCards.tsx:55,84 -> `md:grid-cols-2 lg:grid-cols-4`), so
+              this band is back to the `sm:grid-cols-2 lg:grid-cols-4` rhythm it
+              had before the uplift, which is the density the reviewer measured
+              as a regression (two 532px half-width cards holding three words
+              each). Four anchors in, four anchors out: the link floor is
+              unchanged. `glow` stays off, and could not be on: it is the same
+              `.card-glow` ScrollGlowGroup path U4 ruled out at option C. */}
           <CoverageCards
             tone="slate"
-            columns={2}
+            columns={4}
             items={sellerHubs.map((hub) => ({
               title: hub.title,
               body: hub.headline,
@@ -763,17 +783,23 @@ export default function HomePage() {
               </p>
               {/* The triple sits on each anchor, never on the wrapping div.
                   There is no "browse all calculators" link in this band, so the
-                  sibling estate's `home_calculators_all` id has no host here;
-                  the three tool links share one id and are told apart by their
-                  href in vw_cta_performance, which is how the most recently
-                  accepted sibling homepage does it. */}
+                  sibling estate's `home_calculators_all` id has no host here.
+
+                  R5 B4: the three links used to share the single id
+                  `home_calculator`, which `vw_cta_performance` groups on, so the
+                  three tools could not be told apart at all (the href is not a
+                  column that view segments by, which the previous note here got
+                  wrong). Each link now carries `home_calculator_<slug>` off its
+                  own record in `calculatorLinks` above. Placement is unchanged and goal is "tool": these
+                  go to a calculator, not to /contact and not to pricing. */}
               <div className="mt-8 space-y-3">
                 {calculatorLinks.map((calc) => (
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    data-cta="home_calculator"
+                    data-cta={calc.ctaId}
                     data-cta-placement="tools_band"
+                    data-cta-goal="tool"
                     className={`group flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white px-5 py-4 transition-all hover:border-primary-400 ${focusRing}`}
                   >
                     <div>
@@ -804,6 +830,7 @@ export default function HomePage() {
                   href="/research/online-seller-index"
                   data-cta="home_research"
                   data-cta-placement="tools_band"
+                  data-cta-goal="research"
                   className={`group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold text-slate-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                 >
                   View the Online Seller Index
@@ -951,7 +978,7 @@ export default function HomePage() {
         description="Tell us the platforms you sell on, your monthly revenue band, VAT status and fulfilment model. We will come back within one working day with no obligation."
         proofPoints={[]}
         formTitle="Get in touch"
-        form={<LeadForm submitLabel="Send enquiry" />}
+        form={<LeadForm ctaId="home_panel_book" submitLabel="Send enquiry" />}
         backdrop={
           <>
             <div className="absolute inset-0 bg-[var(--ink-navy)]" />

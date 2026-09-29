@@ -68,17 +68,25 @@ export default function BlogIndexPage() {
         end-of-article form (blog/[category]/[slug]/page.tsx) - nothing
         authored here. eyebrow/formTitle empty and proofPoints=[] match the
         established call-site pattern on this site (about, for, services, vat:
-        no authored offer line, no authored proof-point set). LeadForm emits no
-        data-cta of its own (documented site-wide, e.g. for/[slug]/page.tsx),
-        so this panel is silent in vw_cta_performance until kit gap C1 lands -
-        a manager carve-out, not a U3 file. */}
+        no authored offer line, no authored proof-point set).
+        R5 B3: this panel is no longer silent in vw_cta_performance, and no kit
+        change was needed for it. `LeadForm` took a `ctaId` prop (a site file,
+        not a carve-out) and this mount passes `blog_index_book`, the id the plan
+        named for this route: `blog_index_book_start` on the step-1 button, which
+        is the one in the server HTML, and `blog_index_book` on the submit.
+
+        `blog_index_articles`, the plan's other id for this route, is NOT added.
+        The only other controls here are the category chips and the 40 post
+        links, and one shared id across 40 destinations is exactly the
+        non-attributing instrumentation R5 raised as B4 about the three homepage
+        tool links. Recorded as "no control" rather than faked. */}
     <LeadCTAPanel
       eyebrow=""
       title={niche.blog.cta_heading}
       description={niche.blog.cta_body}
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm submitLabel={niche.blog.cta_button} />}
+      form={<LeadForm ctaId="blog_index_book" submitLabel={niche.blog.cta_button} />}
     />
     </>
   );

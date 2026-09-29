@@ -96,7 +96,7 @@ export default async function CategoryPage({ params }: Props) {
       description={niche.blog.cta_body}
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm submitLabel={niche.blog.cta_button} />}
+      form={<LeadForm ctaId="blog_category_book" submitLabel={niche.blog.cta_button} />}
     />
     </>
   );

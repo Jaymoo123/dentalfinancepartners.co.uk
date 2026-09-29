@@ -21,7 +21,7 @@ export function generateStaticParams() { return vatPages.map((v) => ({ slug: v.s
  * `.prose-blog`, and a UA-default link is neither the brand nor legible on the
  * dark bands.
  *
- * primary-700 is #8a5e1a, 5.68 on white and 5.44 on #fafaf7; the brand hex
+ * primary-700 is #8a5e1a, 5.68 on white and 5.44 on the --ground-subtle off-white #fafaf9; the brand hex
  * #c9861b (primary-400) is 3.04 on white and is decoration only. On the dark
  * grounds the link is white: 5.68 on the primary-700 hero, 14.63 on the
  * slate-800 stats band. Same two recipes as app/services/[slug] and
@@ -69,7 +69,13 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
             the hand-rolled single back-link. Same /vat href, same "VAT Hub" label;
             it adds the Home crumb (already linked from header and footer, so the
             route's unique internal-link set is unchanged) and a BreadcrumbList
-            JSON-LD. Nothing else on this route emits one. */}
+            JSON-LD. R5 G5/G6: "nothing else on this route emits one" was wrong
+            and is corrected. `buildSegmentPageSchema` emits a byte-identical
+            second BreadcrumbList on all five of these routes. PRE-EXISTING (both
+            emitters are present at `a5fff093^`, before this wave) and left alone:
+            de-duping it means deciding which emitter owns the node across three
+            templates and a shared schema helper, a schema change rather than a
+            design one. */}
         <Breadcrumb
           tone="onBrand"
           siteUrl={siteConfig.url}
@@ -153,7 +159,7 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
         </div>
       </div>
     </section>
-    <section className="border-b border-slate-200 bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
+    <section className="border-b border-slate-200 bg-[var(--ground-subtle)] py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
         <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
@@ -171,7 +177,7 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
             carrying data-draw="off" the numeral renders in its lit state, so
             the band is finished without JavaScript. The white card and its
             hover treatment are dropped, because nothing here is a link.
-            Contrast on #fafaf7: numeral #8a5e1a 5.44 (text floor 4.5), rule
+            Contrast on the --ground-subtle off-white #fafaf9: numeral #8a5e1a 5.44 (text floor 4.5), rule
             #9e6615 4.6 as a graphic (floor 3.0).
         ADOPTION DECLINED (U2 item 6, grepped first as instructed):
         packages/web-shared/design/marketing/ProcessTimeline.tsx. Its `steps`
@@ -243,7 +249,10 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
 
         The /contact link this band carried is not lost: the hero above links
         /contact, so the route's unique internal link set is unchanged.
-        `LeadForm` emits no data-cta, so the CTA snapshot is unchanged.
+        R5 B3: `LeadForm` now takes a `ctaId`, and this mount passes
+        `vat_detail_book`, so the panel reports `vat_detail_book_start` from the
+        server HTML and `vat_detail_book` on submit. The old "emits no data-cta"
+        note was true when written and is not any more.
 
         No `.ground-dark`: the component paints bg-slate-900 but the form sits
         on a WHITE card inside it, and `.ground-dark` on an ancestor of a light
@@ -265,7 +274,7 @@ export default async function VatPage({ params }: { params: Promise<{ slug: stri
       description="Tell us about your VAT situation and we will reply within 24 hours."
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm />}
+      form={<LeadForm ctaId="vat_detail_book" />}
     />
   </>);
 }

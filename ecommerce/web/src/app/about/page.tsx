@@ -72,15 +72,21 @@ export default function AboutPage() {
         A structural section label, and the word is lifted from this route's own
         metaTitle, so no copy is authored.
         ADOPTION DECLINED on this page:
-        packages/web-shared/design/marketing/TestimonialsSection.tsx (hardcodes
-        Property's quotes; this site has no authored social proof),
+        packages/web-shared/design/marketing/TestimonialsSection.tsx. R5 G5, and
+        rewritten rather than appended to (plan item E8): the old reason
+        ("hardcodes Property's quotes") is STALE, because the `items` prop landed
+        at `4a267372`. The live reason is the other half on its own: this site
+        publishes no authored social proof, so there is nothing to pass.
         packages/web-shared/design/marketing/StatsCounter.tsx (numeric targets
         nobody has authored for this page; it would also be a client-count
         claim), packages/web-shared/design/marketing/WhatToExpectCard.tsx (its
-        default props publish a fee line nobody here authored),
-        packages/web-shared/design/marketing/LeadCTAPanel.tsx and
-        packages/web-shared/design/marketing/StickyCTA.tsx (a new lead-capture
-        surface and an interruption, both owner-gated). */}
+        default props publish a fee line nobody here authored) and
+        packages/web-shared/design/marketing/StickyCTA.tsx (an interruption,
+        banned estate-wide).
+        NOT declined, R5 G5: LeadCTAPanel was listed here as owner-gated while
+        this file imports it at :5 and mounts it at the foot of the page. The
+        owner answered gate D3 yes; the mount is the truth and this list was
+        stale. */}
     <section className="bg-white">
       <div className={`${siteContainerLg} ${sectionYLoose}`}>
         <Eyebrow>About</Eyebrow>
@@ -110,7 +116,7 @@ export default function AboutPage() {
       description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm />}
+      form={<LeadForm ctaId="about_panel_book" />}
     />
   </>);
 }

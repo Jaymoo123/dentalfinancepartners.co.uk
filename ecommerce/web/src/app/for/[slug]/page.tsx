@@ -20,7 +20,7 @@ export function generateStaticParams() { return sellerHubs.map((h) => ({ slug: h
  * sections are not inside `.prose-blog` and a UA-default blue link is neither
  * the brand nor legible on the dark bands.
  *
- * primary-700 is #8a5e1a, 5.68 on white and 5.44 on #fafaf7. The brand hex
+ * primary-700 is #8a5e1a, 5.68 on white and 5.44 on the --ground-subtle off-white #fafaf9. The brand hex
  * #c9861b (primary-400) is 3.04 on white, decoration only, never a link. On the
  * dark grounds the link is white: 5.68 on the primary-700 hero, 14.63 on the
  * slate-800 stats band. Same two recipes as app/services/[slug] and
@@ -64,9 +64,15 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
         could keep its ground. What it cannot do:
         (a) SlimHero renders no breadcrumb slot at all (SlimHero.tsx:49-59 is
             section > container > Eyebrow + h1 + children, and `children` is the
-            standfirst position under the h1). This hero's Breadcrumb emits the
-            route's ONLY BreadcrumbList JSON-LD, so adopting would either delete
-            that node or move the trail below the h1.
+            standfirst position under the h1). This hero's Breadcrumb emits a
+            BreadcrumbList JSON-LD, so adopting would either delete that node or
+            move the trail below the h1. R5 G5/G6: it is NOT the route's ONLY
+            one, which is what this line used to claim. `buildSegmentPageSchema`
+            emits a byte-identical second BreadcrumbList on all thirteen of these
+            routes. That duplication is PRE-EXISTING (both emitters are present
+            at `a5fff093^`, before this wave) and is left alone here: de-duping it
+            means choosing which emitter owns the node across three templates and
+            a shared schema helper, which is a schema change, not a design one.
         (b) its eyebrow is hardcoded `Eyebrow onDark` (SlimHero.tsx:54) with no
             override, and on this site's #8a5e1a brand ground the kit's on-dark
             branch (text-slate-300, #cbd5e1) measures 3.83:1, under the 4.5
@@ -183,7 +189,7 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
         ancestor carrying data-draw="off" the numeral renders lit and the
         section is finished without JavaScript. The white card and its hover
         treatment go with it: nothing in this grid is a link, and a hover
-        affordance on a non-link is a lie. Contrast on #fafaf7: numeral
+        affordance on a non-link is a lie. Contrast on the --ground-subtle off-white #fafaf9: numeral
         --color-primary-700 #8a5e1a 5.44, rule bg-primary-600 #9e6615 4.6 as a
         graphic. Also declined here:
         packages/web-shared/design/marketing/DrawnTickList.tsx (takes string[];
@@ -201,7 +207,7 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
         `howWeHelp` {title, body} pairs whose order is the array index. Adopting
         would mean authoring a step number and a step label per record on three
         families, which is new copy. */}
-    <section className={`border-b border-slate-200 bg-[#fafaf7] ${sectionY}`}>
+    <section className={`border-b border-slate-200 bg-[var(--ground-subtle)] ${sectionY}`}>
       <div className={siteContainerLg}>
         <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help {hub.title.toLowerCase()}.</h2>
@@ -273,7 +279,10 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
 
         The /contact link this band carried is not lost: the hero above links
         /contact, so the route's unique internal link set is unchanged.
-        `LeadForm` emits no data-cta, so the CTA snapshot is unchanged.
+        R5 B3: `LeadForm` now takes a `ctaId`, and this mount passes
+        `for_detail_book`, so the panel reports `for_detail_book_start` from the
+        server HTML and `for_detail_book` on submit. The old "emits no data-cta"
+        note was true when written and is not any more.
 
         No `.ground-dark`: the component paints bg-slate-900 but the form sits
         on a WHITE card inside it, and `.ground-dark` on an ancestor of a light
@@ -299,7 +308,7 @@ export default async function SellerHubPage({ params }: { params: Promise<{ slug
       description={`Tell us about your ${hub.title.toLowerCase()} situation and we will reply within 24 hours.`}
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm />}
+      form={<LeadForm ctaId="for_detail_book" />}
     />
   </>);
 }

@@ -953,6 +953,7 @@ export default function OnlineSellerIndexPage() {
               href="/research/online-seller-index/data"
               data-cta="research_seller_index_csv"
               data-cta-placement="body"
+              data-cta-goal="data"
               className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               {/* "and seasonality" removed: data/route.ts serves
@@ -1061,6 +1062,7 @@ export default function OnlineSellerIndexPage() {
               href="/calculators/seller-take-home-calculator"
               data-cta="research_seller_index_tool"
               data-cta-placement="closing"
+              data-cta-goal="tool"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
             >
               Seller take-home calculator
@@ -1097,7 +1099,7 @@ export default function OnlineSellerIndexPage() {
         description="Tell us about your situation and we will reply within 24 hours."
         proofPoints={[]}
         formTitle=""
-        form={<LeadForm />}
+        form={<LeadForm ctaId="research_seller_index_form" />}
       />
     </>
   );

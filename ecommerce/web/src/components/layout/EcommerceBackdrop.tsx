@@ -25,7 +25,7 @@
  * emits its own value rather than the sRGB the ratios below were measured on.
  * No new brand colour is introduced. The hex is graphic-grade only on light
  * grounds (3.04 on white), which is why this component paints on dark grounds
- * only and is never mounted on a white or #fafaf9 section.
+ * only and is never mounted on a white or --ground-subtle #fafaf9 section.
  *
  * Contrast, at the backdrop's STRONGEST point (a 1px stroke at full alpha
  * inside the 0.10 group, i.e. assuming copy sits directly on a rule, which the
@@ -38,10 +38,17 @@
  *     so the alpha is held at 0.10 to keep the loss to 0.24 rather than the
  *     0.37 a 0.16 group would cost. It is also the reason the fill marks run
  *     at an effective 0.05 and the mask clears the copy column entirely.
- *   - on neutral-800 #262626: composites to #363025. White = 13.07.
- *   - on neutral-900 #171717: composites to #292217. White = 15.72,
- *     `text-neutral-300` = 10.61.
  *   - on the research navy #1a3a5c: composites to #2c4256. White = 10.39.
+ *   - on --ink-navy #1a2942 (the homepage hero): composites to #2c323e.
+ *     White = 12.86.
+ *   - on slate-900 #0f172b (the kit SlimHero ground on /book, /thank-you and
+ *     /complete, and the homepage closing panel): composites to #222229.
+ *     White = 15.80, slate-300 = 10.63.
+ * R5 G5: the two rows this replaced measured neutral-800 #262626 and
+ * neutral-900 #171717. Neither ground exists in this codebase after the ramp
+ * sweep, so both readings were describing sections that are not there. The
+ * grounds above are the ones this component is actually mounted on, every one
+ * of them walked from its call sites.
  * Every ground clears the 4.5 floor for white copy, so the 3.0 graphic floor is
  * moot as well.
  *

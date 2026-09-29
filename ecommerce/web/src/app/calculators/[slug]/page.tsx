@@ -116,7 +116,7 @@ export default async function CalculatorPage({ params }: Props) {
         edited here; its token use is reported to the manager instead. */}
     <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
       <div className={siteContainerLg}>
-        <CalculatorClient slug={tool.slug} variant="page" />
+        <CalculatorClient slug={tool.slug} variant="page" headingLevel={2} />
       </div>
     </section>
     {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
@@ -127,7 +127,7 @@ export default async function CalculatorPage({ params }: Props) {
         server-rendered and still collapses. Revisit only if the kit gains
         forceMount, which is a manager carve-out. */}
     {tool.faqs && tool.faqs.length > 0 && (
-      <section className={`bg-[#fafaf7] ${sectionY}`}>
+      <section className={`bg-[var(--ground-subtle)] ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl">
             <Eyebrow>Questions</Eyebrow>
@@ -168,8 +168,11 @@ export default async function CalculatorPage({ params }: Props) {
         becomes the same panel as the other three.
         Also still declined: packages/web-shared/design/marketing/StickyCTA.tsx
         (an interruption, banned estate-wide),
-        packages/web-shared/design/marketing/TestimonialsSection.tsx (hardcodes
-        another site's quotes; this site has no authored social proof),
+        packages/web-shared/design/marketing/TestimonialsSection.tsx (R5 G5,
+        rewritten not appended: the "hardcodes another site's quotes" half is
+        stale since the `items` prop landed at `4a267372`. The live reason is
+        that this site publishes no authored social proof, so there is nothing to
+        pass it),
         packages/web-shared/design/marketing/WhatToExpectCard.tsx (its default
         props publish a fee line nobody here authored) and
         packages/web-shared/design/marketing/StatsCounter.tsx (one number, no
@@ -197,7 +200,7 @@ export default async function CalculatorPage({ params }: Props) {
       description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       formTitle={tool.ctaLabel}
-      form={<LeadForm />}
+      form={<LeadForm ctaId="calc_detail_help" />}
     />
   </>);
 }

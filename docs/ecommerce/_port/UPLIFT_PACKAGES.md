@@ -944,3 +944,135 @@ git operations, the single build, the four screenshots, the owner readout.
 
 If the owner says no to every gate in section D, the count is unchanged: the
 gates remove work from U1, U2 and U3 rather than adding agents.
+
+---
+
+## H. GAP-FIX RECEIPT (R5 gap-fix agent, 2026-09-29)
+
+Fixes only what `R5_UPLIFT_REVIEW.md` lists. No build, no server start or stop,
+no git write, no `packages/web-shared` edit, no other site, no subagent.
+`npx tsc --noEmit` clean; `npm test` 57/57 (was 50/50, +7 from the new
+`src/tests/cta-instrumentation.test.ts`).
+
+### Blockers
+
+- **B1** `.related-card` and `.related-card:hover, :focus-within` moved OUT of
+  `@layer components` in `globals.css`, the startups-tech `266be560` fix. Both
+  halves were inert, not just the focus half: the kit puts `border-slate-200` on
+  the same div, so the hover border never moved either. The "the `:focus-within`
+  half is the load-bearing one" comment is corrected: the kit's stretched link
+  now carries the kit `focusRing` itself (`RelatedArticles.tsx:2,111`, kit
+  `f17702ff`), so the ring is the indicator and this glow is its card-level half
+  plus the whole hover affordance. The two "this file has zero unlayered rules"
+  comments are corrected as well. Rendered check waits on the manager's rebuild;
+  the :3203 build predates both changes.
+- **B2 PRE-EXISTING, NOT FIXED, BY RULING.** The -1 unique internal href per
+  route is `09acd2af` (09-28 recheck) pointing the footer's "Book a
+  consultation" at `/contact#form`, which collapses into `/contact`, already
+  linked from the header. A deliberate change before this wave. No link was
+  restored to make a number go up and the footer was not touched.
+  **Re-reviewer: compare against the post-`09acd2af` count, not
+  `sweep_final.json`.** Open owner question 4 in the review stands.
+- **B3 FIXED, and by a different route than the review proposed.** There is no
+  link control to tag on those fifteen routes; the only control is the enquiry
+  panel's own button. `LeadForm` grew `ctaId` and `ctaPlacement` props, goal
+  always `form`, defaulting off `FORM_ID` so an untouched mount still reports,
+  and an explicit id is now passed at all 19 mounts (the new test fails if one
+  is missed or two collide). The step-1 "Continue" button is tagged
+  `<ctaId>_start` as well as the step-2 submit, and that is the half that makes
+  this measurable: step 2 is client-only state, so the submit is NOT in the
+  server HTML and a static `cta_snapshot` would still have found nothing.
+  E9 recorded, nothing changed in the header: `header_contact` never renders
+  because this site passes no `ctaSecondary`, and `header_book_mobile` renders
+  only inside the open drawer, which no static scan can see.
+- **B4 FIXED.** `ctaId` per record in `calculatorLinks`
+  (`home_calculator_seller_take_home`, `_vat_threshold_tracker`,
+  `_sole_trader_vs_ltd`), literal so a grep of `page.tsx` is the census, plus
+  `data-cta-goal="tool"`. Placement unchanged.
+
+### Gaps and nits
+
+- **G1 REJECTED as written, owner decision.** The "minimal fix the accepted
+  sites use" does not exist: `grep -rn contained` over `startups-tech/web/src`
+  and `hospitality/web/src` returns nothing, and both ship the same kit
+  `slate-900` footer under 20 and 15 non-contained navy panels. The seam is the
+  family look, not this wave's defect, and the only call-site lever is
+  `contained`, a visual change on 32 routes that is open owner question 1. Left
+  for that answer; it is a one-word switch per call site when it comes.
+- **G2 FIXED.** `LeadForm.tsx` swept to slate at the same step (`grep -c
+  "neutral-" == 0`). Hue change, not contrast: on white, slate then the warm step
+  it replaced, 900 17.83/17.93, 600 7.58/7.81, 500 4.76/4.74, 400 2.63/2.58, 300
+  border 1.49/1.48. The `[.ground-dark_&]` variants are KEPT as a ground guard
+  and stated as currently unreachable: every one of the 19 mounts now sits on a
+  white card (the kit panel's `PanelBody` form card is `bg-white` in both
+  variants; `/contact` and the blog end-of-article box are white too).
+- **G3 FIXED for `/services`, `/for` and the homepage; REJECTED for `/vat`.**
+  `columns={4}` where the set is four. `/vat` has FIVE items (`data/vat.ts`,
+  five slugs, which is also why `vat_hero_book` mounted 5 times), so
+  `columns={3}` renders 3+2 and orphans nothing; `columns={4}` there would
+  create the orphan the review is objecting to.
+- **G4 no change, owner call** (motion option C). Open owner question 3.
+- **G5 FIXED, all six.** `about/page.tsx` (LeadCTAPanel listed as declined while
+  mounted), `layout-utils.ts:99,129` (`bg-neutral-900` / "neutral-800 stats
+  band" to the three real `bg-slate-800` citation bands),
+  `EcommerceBackdrop.tsx` (the two dead grounds replaced with the ones it is
+  actually mounted on, each recomputed: --ink-navy #1a2942 to #2c323e, white
+  12.86; slate-900 #0f172b to #222229, white 15.80, slate-300 10.63),
+  `LeadForm.tsx:17-21`, the BreadcrumbList "ONLY" claim on all three slug
+  templates, and the `TestimonialsSection` decline on `/about` and
+  `calculators/[slug]` REWRITTEN rather than appended to (E8), keeping only the
+  live half.
+- **G6 PRE-EXISTING, comments fixed, node left alone.** De-duping means deciding
+  which of `buildSegmentPageSchema` and the kit `Breadcrumb` owns the node across
+  three templates and a shared helper: a schema change, not a design one.
+- **G7 FIXED.** The `lg:max-h-[calc(...)] lg:overflow-y-auto` pair moved off the
+  `<aside>` onto a wrapper around `TableOfContents` only, so `BlogSidebarCta` is
+  no longer inside a nested scroll box. `lg:sticky lg:top-24` unchanged.
+- **G8 FIXED.** `/contact` is the thirteenth file: `tone="onBrand"`, the
+  `crumbOnBrand` const and the legacy `onDark` boolean both gone.
+- **G9 FIXED.** Goals added: `hero_secondary` services, `home_calculator_*`
+  tool, `home_research` research, the two `research_hub_*` research, the two
+  `*_csv` data, `research_seller_index_tool` tool. Four values are new to this
+  site's vocabulary (`tool`, `research`, `data`, `services`) alongside the
+  estate's `form`, `contact` and `pricing`; `data-cta-goal` is a free string that
+  `autoCapture.ts:102` reads verbatim, so nothing had to change to accept them.
+  `research_survival_index_book` now exists as the survival index panel's
+  `ctaId`, so that study has the same id count as the seller index.
+- **G10 FIXED.** `--ink-navy-via` and `--ink-navy-deep` declared in
+  `globals.css`; `page.tsx` is at zero hexes comment-stripped. NO PAINTED COLOUR
+  MOVED: `via-[#243550]/80` over this section's own `bg-[var(--ink-navy)]`
+  composites to #22334d exactly per channel (36 to 34, 53 to 51, 80 to 77),
+  which is what the token carries, so the stop is opaque and no alpha modifier on
+  an arbitrary `var()` has to be trusted without a build. The review's own
+  measurement agrees on #22334d, so every composited reading in that block still
+  holds.
+- **G11 FIXED.** The four `bg-[#fafaf7]` slug templates read
+  `bg-[var(--ground-subtle)]`. One off-white on the site; `grep -rn fafaf7
+  src/app src/components` is empty except the corrected notes.
+- **G12 NOT DONE, out of this agent's lease.** F1-F18 artefacts need a rebuild
+  and a served crawl; this pass may not build or start a server, and :3203 serves
+  the pre-fix build. Manager/re-reviewer to capture `sweep_gapfix2` /
+  `cta_gapfix2` / `browser_gapfix2` after the rebuild.
+- **N1, N2, N4 recorded, no change.** N1 and N2 are kit `SiteFooter` facts,
+  estate-wide and pre-existing; N4 is an instrument timeout, not a site defect.
+- **N3 recorded, no change.** The 12 default-outline stops on `/` are the kit's
+  own controls, whose ring is `--kit-focus-ring` and not reachable from a call
+  site. The gate row 6 claim is over-stated, which is a claim to correct, not a
+  contrast defect (18.2 on #fafaf9).
+
+### data-cta census after
+
+19 `LeadForm` mounts, each with its own id, each emitting `<id>_start` in the
+server HTML and `<id>` on submit: `home_panel_book`, `about_panel_book`,
+`contact_form_book` (placement `body`), `services_hub_book`,
+`services_detail_book`, `for_hub_book`, `for_detail_book`, `vat_hub_book`,
+`vat_detail_book`, `calc_index_help`, `calc_detail_help`, `blog_index_book`,
+`blog_category_book`, `blog_post_end_book` (placement `body`),
+`blog_post_closing_book`, `research_hub_book`, `research_seller_index_form`,
+`research_survival_index_book`.
+
+Routes and ids with NO control, recorded rather than faked: `calc_hero_help` (the
+`/calculators` hero is breadcrumb, h1 and a standfirst, no CTA),
+`home_calculators_all` (no "browse all calculators" link in the tools band),
+`blog_index_articles` (only the category chips and the 40 post links, and one
+shared id across 40 destinations is the defect B4 raised).

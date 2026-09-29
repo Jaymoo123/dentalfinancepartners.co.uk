@@ -164,7 +164,10 @@
        the right carrier. Sections that paint dark add `.ground-dark` below.
 
        Default is the light value because the overwhelming majority of grounds
-       this site paints are white, #fafaf9, #fafaf7, slate-50 or amber-50. */
+       this site paints are white, the --ground-subtle off-white #fafaf9,
+       slate-50 or amber-50. (R5 G11: the second, near-identical #fafaf7 warm
+       off-white is gone; the four slug templates that painted it now read
+       --ground-subtle, so the site has one off-white.) */
     --focus-ring: var(--focus-ring-on-light);
 
     /* Opts the SHARED KIT's ring into the mechanism above. Kit components such
@@ -190,6 +193,25 @@
        literals. */
     --ground-subtle: #fafaf9;
     --ink-navy: #1a2942; /* white label 14.59 */
+
+    /* R5 G10. The homepage hero gradient painted its via and to stops as
+       arbitrary Tailwind literals (page.tsx:407), the last two hexes left in
+       that file after U4's sweep. Named here instead, which is the one file the
+       plan's carve-out allows a hex in.
+
+       --ink-navy-via is NOT the literal #243550 that was there. The literal was
+       written `via-[#243550]/80`, i.e. 80% over the section's own
+       `bg-[var(--ink-navy)]` ground, and 0.8*#243550 + 0.2*#1a2942 = #22334d
+       exactly per channel (36->34, 53->51, 80->77). So the token carries the
+       COMPOSITED value and the stop is now opaque: the painted colour is
+       byte-identical, the designer's stop is unchanged, and the alpha modifier
+       (whose Tailwind-v4 output on an arbitrary var() could not be verified
+       without a build this pass is not allowed to run) is gone. The review's own
+       measurement agrees: "via stop composites to #22334d", white label 13.4+.
+       --ink-navy-deep is the darkest stop verbatim; white on it measures 16.0+
+       and it was already the value the ring and CTA readings were taken at. */
+    --ink-navy-via: #22334d;
+    --ink-navy-deep: #0f1c30;
   }
 
   /* This rule used to be unlayered. Unlayered author CSS outranks EVERY
@@ -215,24 +237,40 @@
    `.story-numeral`, both declared further below, now with a `scripting`-gated
    release on `[data-draw="off"] .story-numeral`. */
 
-@layer components {
-  /* The kit's RelatedArticles cards carry .related-card, whose rules live in
-     packages/web-shared/design/globals-standard.css, which this site does NOT import.
-     Importing it is the expensive answer and a recorded one: it drags Property's emerald
-     and cream and its collapsed draw states across, which left a sibling site with 64
-     pages of invisible marks. Six local lines in this site's own amber instead, keyed to
-     the tokens already declared above. The :focus-within half is the load-bearing one:
-     without it a keyboard user tabbing into a card gets no indication of which card. */
-  .related-card {
-    transition: box-shadow 200ms ease, border-color 200ms ease;
-  }
-  .related-card:hover,
-  .related-card:focus-within {
-    border-color: var(--brand-primary);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-primary) 22%, transparent),
-      0 18px 40px -10px color-mix(in srgb, var(--brand-primary-ground) 45%, transparent);
-  }
+/* The kit's RelatedArticles cards carry .related-card, whose rules live in
+   packages/web-shared/design/globals-standard.css, which this site does NOT import.
+   Importing it is the expensive answer and a recorded one: it drags Property's emerald
+   and cream and its collapsed draw states across, which left a sibling site with 64
+   pages of invisible marks. Six local lines in this site's own amber instead, keyed to
+   the tokens already declared above.
 
+   R5 B1, and the ONE deliberate unlayered rule in this file. These two rules
+   were inside `@layer components`, where Tailwind's `@layer utilities` outranks
+   them whatever the specificity, so the `border-slate-200` utility the kit puts
+   on the same div (RelatedArticles.tsx:95) won and BOTH halves were inert: the
+   review measured `box-shadow: ... 0px 0px 0px 0px` before and after a real
+   `.focus()`, and the hover border never moved either. Moved out of every layer,
+   which is exactly what startups-tech did for the same defect at `266be560` and
+   what the Medical trap records ("an unlayered CSS rule beats every Tailwind v4
+   utility"). The comment this block used to carry called `:focus-within` "the
+   load-bearing one"; that is no longer true and is corrected here: the kit's
+   stretched link now carries the kit `focusRing` itself (RelatedArticles.tsx:2,
+   111, kit commit f17702ff), so the ring is the primary indicator and this glow
+   is the card-level second half of it. The rules stay because they are also the
+   whole hover affordance.
+
+   Every other rule in this file is layered, by design. */
+.related-card {
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+.related-card:hover,
+.related-card:focus-within {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-primary) 22%, transparent),
+    0 18px 40px -10px color-mix(in srgb, var(--brand-primary-ground) 45%, transparent);
+}
+
+@layer components {
   /* Every in-page anchor target needs to clear the sticky header, or a footnote
      jump lands under it. #main measured 80px against the instrument's 96px floor,
      and the research footnote targets (#ref-1..4) measured 0px: both shipped on
@@ -259,9 +297,11 @@
      the dark part holds no focusable element at all, leave it off entirely.
      That is why the 613 band does not carry it.
 
-     In @layer components deliberately. An unlayered rule outranks every
-     Tailwind utility regardless of specificity, and globals.css has zero
-     unlayered rules by design. */
+     In @layer components deliberately, and safely: this rule only rebinds
+     custom properties, it sets no property a Tailwind utility also sets, so
+     layer order cannot decide anything here. (The file has exactly one
+     unlayered rule, `.related-card` above, which DOES set border-color and
+     box-shadow against a utility and therefore has to be unlayered.) */
   .ground-dark {
     --focus-ring: var(--focus-ring-on-brand);
     /* The kit's own ring, rebound in lockstep. Kit components build their ring
@@ -392,8 +432,9 @@
    which is decoration and never carries meaning on its own.
 
    In @layer components deliberately. An unlayered rule outranks every Tailwind
-   utility regardless of specificity, and this file has zero unlayered rules by
-   design. */
+   utility regardless of specificity, and nothing here needs to beat a utility.
+   The file's one deliberate unlayered rule is `.related-card` above, which
+   does. */
 @layer components {
   .story-numeral {
     color: var(--color-primary-700);

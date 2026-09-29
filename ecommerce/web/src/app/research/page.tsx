@@ -132,6 +132,7 @@ export default function ResearchIndexPage() {
                 href={r.href}
                 data-cta={r.ctaId}
                 data-cta-placement="hub_card"
+                data-cta-goal="research"
                 className={`group border border-slate-200 bg-white p-6 transition hover:border-[#1a3a5c] hover:shadow-md sm:p-8 ${focusRing}`}
               >
                 <div className="text-3xl font-bold font-mono text-[#1a3a5c] sm:text-4xl">{r.stat}</div>
@@ -166,7 +167,7 @@ export default function ResearchIndexPage() {
         description="Tell us about your situation and we will reply within 24 hours."
         proofPoints={[]}
         formTitle=""
-        form={<LeadForm />}
+        form={<LeadForm ctaId="research_hub_book" />}
       />
     </>
   );

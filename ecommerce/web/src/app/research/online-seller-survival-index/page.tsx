@@ -409,6 +409,7 @@ export default function OnlineSellerSurvivalIndexPage() {
               href={`${PAGE_PATH}/data`}
               data-cta="research_survival_index_csv"
               data-cta-placement="body"
+              data-cta-goal="data"
               className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               Download the survival data (CSV)
@@ -486,7 +487,7 @@ export default function OnlineSellerSurvivalIndexPage() {
         description="Retail survives at a below-average rate over five years. Cash-flow discipline, correct VAT registration timing and a clean sole-trader-vs-limited-company decision are the factors within your control."
         proofPoints={[]}
         formTitle=""
-        form={<LeadForm submitLabel="Speak to a specialist" />}
+        form={<LeadForm ctaId="research_survival_index_book" submitLabel="Speak to a specialist" />}
       />
     </>
   );

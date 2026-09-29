@@ -110,8 +110,13 @@ export default function ForIndexPage() {
             so the string moves to ecommerce/niche.config.json
             `hub_labels.for` byte-identical and nothing rendered changes. */}
         <Eyebrow>{hubLabels.for}</Eyebrow>
+        {/* R5 G3: `columns={3}` orphaned the fourth card on a row of its own
+            (the kit rendered `341px 341px 341px` for four items). The set is
+            four, so the grid is four: `columns={4}` resolves to
+            `md:grid-cols-2 lg:grid-cols-4` and the count and the grid agree,
+            which is the rule the estate fixed elsewhere at `21bff5e8`. */}
         <CoverageCards
-          columns={3}
+          columns={4}
           tone="white"
           items={sellerHubs.map((hub) => ({
             title: hub.title,
@@ -131,7 +136,7 @@ export default function ForIndexPage() {
       description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm />}
+      form={<LeadForm ctaId="for_hub_book" />}
     />
   </>);
 }

@@ -87,6 +87,12 @@ export default function VatIndexPage() {
             so the string moves to ecommerce/niche.config.json
             `hub_labels.vat` byte-identical and nothing rendered changes. */}
         <Eyebrow>{hubLabels.vat}</Eyebrow>
+        {/* R5 G3 named this hub alongside /services and /for as orphaning "the
+            fourth card". It does not: `vatPages` has FIVE records (data/vat.ts),
+            which is also why the review counted five `vat_hero_book` mounts on
+            the detail template. `columns={3}` renders 3 + 2 and orphans nothing;
+            `columns={4}` here would render 4 + 1 and create the defect. Left at
+            3 deliberately. */}
         <CoverageCards
           columns={3}
           tone="white"
@@ -108,7 +114,7 @@ export default function VatIndexPage() {
       description="Tell us about your VAT situation and we will reply within 24 hours."
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm />}
+      form={<LeadForm ctaId="vat_hub_book" />}
     />
   </>);
 }

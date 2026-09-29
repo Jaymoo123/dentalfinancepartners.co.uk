@@ -95,9 +95,13 @@ export const focusRingOnBrand =
  * pinned it to the on-brand white on the reasoning that an amber button wants a
  * white ring; that is wrong, because `outline-offset-2` paints the ring two
  * pixels outside the button, on the section ground. Most of this button's call
- * sites sit on white, #fafaf9, slate-50 or amber-50, where a white ring is
- * 1.00:1 and invisible. Three sit on `bg-neutral-900` and one on the #1a2942
- * hero, where white is correct; those sections carry `.ground-dark`.
+ * sites sit on white, --ground-subtle #fafaf9, slate-50 or amber-50, where a
+ * white ring is 1.00:1 and invisible. R5 G5: the dark call sites are NOT
+ * `bg-neutral-900`, which no longer exists in this codebase after the ramp
+ * sweep. They are the three `bg-slate-800` citation bands (services/[slug]:129,
+ * for/[slug]:127, vat/[slug]:99), the `bg-slate-900` research closing band and
+ * the #1a2942 homepage hero, where white is correct; those sections carry
+ * `.ground-dark`.
  *
  * Written out in full rather than composed as `${btnPrimaryBase} outline-...`,
  * because appending a competing utility ties on specificity and the winner is
@@ -125,9 +129,10 @@ export const btnPrimary =
  * `outline-\[var\(--focus-ring\)\]` as the single census of rings on this site.
  *
  * The token, not a literal colour, because these wrappers sit on BOTH grounds:
- * `linkOnLight` on white and #fafaf7 (ring #8a5e1a, 5.68 / 5.44) and
- * `linkOnDark` on the `.ground-dark` primary-700 hero and neutral-800 stats
- * band (ring #ffffff, past the 3:1 graphic floor on both). A literal would be
+ * `linkOnLight` on white and the --ground-subtle off-white #fafaf9 (ring
+ * #8a5e1a, 5.68 / 5.44) and `linkOnDark` on the `.ground-dark` primary-700 hero
+ * and the slate-800 citation band (ring #ffffff, past the 3:1 graphic floor on
+ * both; R5 G5, the band is slate-800, not neutral-800). A literal would be
  * wrong on one of the two; `.ground-dark` rebinds the token and the same string
  * is correct on both.
  */

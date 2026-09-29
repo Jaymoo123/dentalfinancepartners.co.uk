@@ -14,11 +14,15 @@ export const metadata: Metadata = {
  * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
  * slate-300 with slate-400 chevrons, both written for the kit's navy: on
  * #8a5e1a they measure 3.76:1 and about 2.0:1, under the 4.5 text and 3.0
- * graphic floors. The kit is a carve-out, so the ground-correct palette is
- * applied from the call site (white 5.68, white/80 4.3). Identical string to
- * the phase-3, -4 and -5 route files.
+ * graphic floors.
+ *
+ * R5 G8: the wrapper hack this note described is GONE. The kit grew a real
+ * `tone="onBrand"` (Breadcrumb.tsx:39,67-79) with the same measured steps
+ * (white 6.29 on the darker sibling brand ground, white/80 composited 4.63),
+ * and the uplift swept twelve of the thirteen route files onto it. This file was
+ * the thirteenth and was missed; the `crumbOnBrand` const and the legacy
+ * `onDark` boolean are both removed here, which is the last of them.
  */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
 export default function ContactPage() {
   return (<>
     {/* This route had no hero, no breadcrumb and no section structure at all:
@@ -40,8 +44,10 @@ export default function ContactPage() {
         props publish a fee line nobody here authored). */}
     {/* U3 instrumentation check (D2): this route carries no link to pricing
         or services - the Breadcrumb's Home link is the only href, and the
-        page's one conversion surface is the LeadForm below. No data-cta
-        added here; declined for lack of a control to tag. */}
+        page's one conversion surface is the LeadForm below, and R5 B3 put the
+        triple on that: this route passes `ctaId="contact_form_book"` with
+        placement "body". Nothing is tagged in the hero, which still has no
+        control. */}
     <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
       {/* Decoration only, aria-hidden, pointer-events-none. The section
           carries `relative overflow-hidden` and the container below
@@ -49,13 +55,11 @@ export default function ContactPage() {
           it wrong paints the texture over the copy. */}
       <EcommerceBackdrop />
       <div className={`relative z-10 ${siteContainerLg}`}>
-        <div className={crumbOnBrand}>
-          <Breadcrumb
-            onDark
-            siteUrl={siteConfig.url}
-            items={[{ label: "Home", href: "/" }, { label: "Contact" }]}
-          />
-        </div>
+        <Breadcrumb
+          tone="onBrand"
+          siteUrl={siteConfig.url}
+          items={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+        />
         <h1 className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Contact us</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">Tell us about your online selling. We reply within 24 hours.</p>
       </div>
@@ -64,7 +68,7 @@ export default function ContactPage() {
         lease this phase. Untouched here: this file is the page shell only. */}
     <section id="form" className={`bg-white ${sectionY}`}>
       <div className={contentNarrow}>
-        <LeadForm />
+        <LeadForm ctaId="contact_form_book" ctaPlacement="body" />
       </div>
     </section>
   </>);

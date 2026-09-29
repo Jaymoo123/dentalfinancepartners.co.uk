@@ -12,20 +12,42 @@ import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-s
 import { focusRing } from "@/components/ui/layout-utils";
 
 const fieldClass =
-  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] ${focusRing}`;
-// This form is NOT always on a white card. `/research/online-seller-survival-index`
-// renders it straight onto a `.ground-dark bg-neutral-900` section, where
-// text-neutral-900 labels measured 1.00 and neutral-500 helper text 3.78. The
-// ground is an ancestor fact, exactly like --focus-ring, so each ink recipe
-// carries a `.ground-dark` variant instead of the call site passing a prop.
-// On #171717: neutral-100 16.44, neutral-300 12.09, red-300 9.45.
+  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-400 transition-colors focus:border-[var(--brand-primary)] ${focusRing}`;
+// R5 G2: this file was the last warm grey ramp on the site, and its variants
+// were calibrated to grounds that no longer exist. Swept to slate at the SAME
+// STEP, which is a hue change and not a contrast change (measured, on white,
+// slate step then the warm step it replaced: 900 17.83 / 17.93, 600 7.58 /
+// 7.81, 500 4.76 / 4.74, 400 2.63 / 2.58, 300 border 1.49 / 1.48). The reason
+// for the sweep is that the cards this form sits inside carry slate-200
+// #e2e8f0 borders, so warm #d4d4d4 input borders read as a second palette.
+//
+// THE TWO GROUNDS THIS FORM NOW SITS ON, both light, both measured:
+//   1. the kit panel's form card, `bg-white` (LeadCTAPanel.tsx PanelBody, the
+//      navy and the `contained` variants both put the form on a white card):
+//      20 of the 22 mounts.
+//   2. `/contact`'s own `bg-white` section, and the blog post's end-of-article
+//      box, a white card inside a slate-200 border.
+// So the base steps apply everywhere and the `[.ground-dark_&]` variants have
+// NO reachable ground left: no `.ground-dark` ancestor of any LeadForm mount
+// survives (U2 removed the hand-rolled `ground-dark bg-slate-900` band on
+// /research/online-seller-survival-index when it adopted the panel, and the
+// panel must not carry the class because the form card is a light island).
+// They are KEPT as a ground guard, not deleted: they cost nothing, they are the
+// documented mechanism on this site (the same one --focus-ring uses), and a
+// future dark host would otherwise reintroduce the 1.00:1 label defect they
+// were written for. On slate-900 they still measure: slate-100 16.28,
+// slate-300 12.00, red-300 9.45.
+//
+// Placeholder ink is slate-400 at 2.63 on white. That is the pre-existing
+// reading (the warm 400 step was 2.58); the same-step sweep neither fixes nor worsens
+// it, and lifting it is a visual change outside this pass.
 const labelClass =
-  "block text-sm font-medium text-neutral-900 [.ground-dark_&]:text-neutral-100";
+  "block text-sm font-medium text-slate-900 [.ground-dark_&]:text-slate-100";
 const errorClass = "mt-2 text-xs text-red-600 [.ground-dark_&]:text-red-300";
-/** "(optional)" qualifier inside a label. neutral-500 is 4.74 on white, 3.78 on neutral-900. */
-const optionalClass = "font-normal text-neutral-500 [.ground-dark_&]:text-neutral-300";
-/** Secondary ink: 4.74+ on white, and lifted off 3.78 on the dark research ground. */
-const mutedClass = "text-neutral-500 [.ground-dark_&]:text-neutral-300";
+/** "(optional)" qualifier inside a label. slate-500 is 4.76 on white, 3.74 on slate-900. */
+const optionalClass = "font-normal text-slate-500 [.ground-dark_&]:text-slate-300";
+/** Secondary ink: 4.76 on white, and lifted off 3.74 on any dark ground. */
+const mutedClass = "text-slate-500 [.ground-dark_&]:text-slate-300";
 const btnClass =
   // The ground moved off --brand-primary (#c9861b, white label 3.04) onto the
   // accessible --btn-ground step (#9e6615, 4.81). The hover was opacity-90,
@@ -45,12 +67,32 @@ type LeadFormProps = {
   redirectOnSuccess?: boolean;
   submitLabel?: string;
   successRedirect?: string;
+  /**
+   * R5 B3. Base `data-cta` id for this form's two controls: the step-1
+   * "Continue" button emits `<ctaId>_start` and the step-2 submit emits
+   * `<ctaId>`. They are the ONLY controls every enquiry panel on this site
+   * owns. Fifteen money routes (the blog index, the six blog
+   * category hubs, the calculators index and its four tools, and the /services,
+   * /for and /vat hubs) carry a panel from this wave and emitted exactly one
+   * `data-cta` between them, the header's, so not one of them could report a
+   * click on its own conversion surface.
+   *
+   * Defaulted off FORM_ID rather than made required, so a call site that is
+   * never touched still reports; passed explicitly at every mount so
+   * `vw_cta_performance` can tell the routes apart, which is the defect B4
+   * raised about three tool links sharing one id.
+   */
+  ctaId?: string;
+  /** Where the form sits on the route. "panel" = the kit LeadCTAPanel band. */
+  ctaPlacement?: string;
 };
 
 export function LeadForm({
   redirectOnSuccess = true,
   submitLabel = "Send enquiry",
   successRedirect = "/thank-you",
+  ctaId = FORM_ID,
+  ctaPlacement = "panel",
 }: LeadFormProps) {
   const router = useRouter();
   const [step, setStep] = useState<0 | 1>(0);
@@ -276,7 +318,22 @@ export function LeadForm({
             )}
           </div>
 
-          <button type="button" onClick={goToStep2} className={btnClass}>
+          {/* Tagged as well as the submit, and this is the half that makes B3
+              measurable. Step 2 is client-only state, so the submit button is
+              NOT in the server HTML and a static `cta_snapshot` over the served
+              routes would still have found nothing on the fifteen panel routes.
+              This button IS in the server HTML on every one of them. `_start`
+              vs `_submit` also separates panel opens from panel completions in
+              `vw_cta_performance`, which is the funnel the form's own
+              `form_step_*` events already track. */}
+          <button
+            type="button"
+            onClick={goToStep2}
+            className={btnClass}
+            data-cta={`${ctaId}_start`}
+            data-cta-placement={ctaPlacement}
+            data-cta-goal="form"
+          >
             Continue
           </button>
         </>
@@ -284,7 +341,7 @@ export function LeadForm({
 
       {step === 1 && (
         <>
-          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-semibold text-neutral-900 outline-none [.ground-dark_&]:text-neutral-100">
+          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-semibold text-slate-900 outline-none [.ground-dark_&]:text-slate-100">
             Where should we send our reply?
           </h3>
 
@@ -464,7 +521,7 @@ export function LeadForm({
           {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
               the enquiry is the affirmative act, so this is shown as a notice, not a
               tick-box. */}
-          <p className="text-xs leading-relaxed text-neutral-600 [.ground-dark_&]:text-neutral-300">
+          <p className="text-xs leading-relaxed text-slate-600 [.ground-dark_&]:text-slate-300">
             {siteConfig.leadConsentText} See our{" "}
             <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
               Privacy Policy
@@ -491,10 +548,19 @@ export function LeadForm({
           )}
 
           <div className="flex flex-col gap-3">
+            {/* The triple sits on the BUTTON, never on the wrapping div: the
+                autoCapture click handler (packages/web-shared/analytics/autoCapture.ts:102)
+                reads the attributes off the clicked control, and the wrapper
+                guard in this port's gate is zero-tolerance. Goal is always
+                "form": this control submits an enquiry, which is the one thing
+                it can do. */}
             <button
               type="submit"
               disabled={status === "loading" || status === "success"}
               className={btnClass}
+              data-cta={ctaId}
+              data-cta-placement={ctaPlacement}
+              data-cta-goal="form"
             >
               {status === "loading" ? "Sending..." : status === "success" ? "Sent" : submitLabel}
             </button>

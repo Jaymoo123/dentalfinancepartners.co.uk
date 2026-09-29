@@ -20,7 +20,7 @@ export function generateStaticParams() { return ecommerceServices.map((s) => ({ 
  * a colour here: nothing on these sections is inside `.prose-blog`, and a
  * UA-default blue link is neither the brand nor legible on the dark bands.
  *
- * primary-700 is #8a5e1a, 5.68 on white and 5.44 on #fafaf7. The brand hex
+ * primary-700 is #8a5e1a, 5.68 on white and 5.44 on the --ground-subtle off-white #fafaf9. The brand hex
  * #c9861b is 3.04 on white and is decoration only, so it is never used here.
  * On the dark grounds (#8a5e1a hero, slate-800 stats band) the link is white:
  * 5.68 on the hero, 14.63 on slate-800.
@@ -62,9 +62,15 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         could keep its ground. What it cannot do:
         (a) SlimHero renders no breadcrumb slot at all (SlimHero.tsx:49-59 is
             section > container > Eyebrow + h1 + children, and `children` is the
-            standfirst position under the h1). This hero's Breadcrumb emits the
-            route's ONLY BreadcrumbList JSON-LD, so adopting would either delete
-            that node or move the trail below the h1.
+            standfirst position under the h1). This hero's Breadcrumb emits a
+            BreadcrumbList JSON-LD, so adopting would either delete that node or
+            move the trail below the h1. R5 G5/G6: it is NOT the route's ONLY
+            one, which is what this line used to claim. `buildSegmentPageSchema`
+            emits a byte-identical second BreadcrumbList on all thirteen of these
+            routes. That duplication is PRE-EXISTING (both emitters are present
+            at `a5fff093^`, before this wave) and is left alone here: de-duping it
+            means choosing which emitter owns the node across three templates and
+            a shared schema helper, which is a schema change, not a design one.
         (b) its eyebrow is hardcoded `Eyebrow onDark` (SlimHero.tsx:54) with no
             override, and on this site's #8a5e1a brand ground the kit's on-dark
             branch (text-slate-300, #cbd5e1) measures 3.83:1, under the 4.5
@@ -184,7 +190,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         state, so the section is finished without JavaScript. The white card,
         its border and its hover treatment are dropped with it, because nothing
         in this grid is clickable and a hover affordance on a non-link is a lie.
-        Contrast: the numeral is --color-primary-700 (#8a5e1a), 5.44 on #fafaf7;
+        Contrast: the numeral is --color-primary-700 (#8a5e1a), 5.44 on the --ground-subtle off-white #fafaf9;
         the rule is bg-primary-600 (#9e6615), a graphic at 4.6 on the same
         ground, both past their floors.
         ADOPTION DECLINED (U2 item 6, grepped first as instructed):
@@ -196,7 +202,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         `howWeHelp` {title, body} pairs whose order is the array index. Adopting
         would mean authoring a step number and a step label per record on three
         families, which is new copy. */}
-    <section className={`border-b border-slate-200 bg-[#fafaf7] ${sectionY}`}>
+    <section className={`border-b border-slate-200 bg-[var(--ground-subtle)] ${sectionY}`}>
       <div className={siteContainerLg}>
         <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
@@ -268,9 +274,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         unchanged, and the form now converts in place instead of sending the
         reader to another page to start again.
 
-        `LeadForm` emits no data-cta attribute (grep data-cta over
-        ecommerce/web/src returns only thank-you/page.tsx and PageShell.tsx), so
-        the CTA snapshot is unchanged.
+        R5 B3: `LeadForm` DOES emit data-cta now. It grew a `ctaId` prop, and
+        this mount passes `services_detail_book`, so the panel's two controls
+        report (`services_detail_book_start` on the step-1 button, which is the
+        half that is in the server HTML, and `services_detail_book` on the
+        submit). The old note here, that the form is silent, was true when it was
+        written and is not any more.
 
         No `.ground-dark` on this band, deliberately: the component paints
         bg-slate-900 but the form sits on a WHITE card inside it, and
@@ -302,7 +311,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       formTitle=""
-      form={<LeadForm />}
+      form={<LeadForm ctaId="services_detail_book" />}
     />
   </>);
 }
