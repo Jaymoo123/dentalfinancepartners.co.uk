@@ -252,3 +252,10 @@ on config; check on the day-28 read.
 **Owner ruling 2026-09-29: the wills-probate and divorce-finances items are parked** (env paste,
 sites-table rows). Those two sites are excluded from the deploy round, like startups-tech. The
 deploy round is the other 14 sites. Left for the owner: push, `calc_pdf_offer` off, the go.
+
+**A.0 addendum (2026-09-29, late): deploy SHA for the 14-site round = `7b6a9d03`** (the worktree at
+`C:/dep` is on it). Later commits on main are the startups-tech port (`331725dc`..`266be560`,
+tag `port-startups-tech-complete`) and one additive kit token in
+`packages/web-shared/tools/components/Calculator.tsx` (`--calc-result-accent`, fallback = the brand
+hex, 416/416 kit tests). Startups-tech ships on its own after the owner walk, from its complete tag,
+and that deploy carries the kit token to the other sites' next builds unchanged.
