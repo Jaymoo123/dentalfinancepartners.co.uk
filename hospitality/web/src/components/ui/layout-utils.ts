@@ -66,7 +66,8 @@ export const btnPrimary =
  * DECLINED (ring only): `btnOnDark` from
  * packages/web-shared/design/layout-utils.ts:76-77. Zero consumers today (the
  * local pre-port file aliased this name to the secondary recipe, a real defect: a
- * `neutral-900` border and text on a dark ground). Re-exported wrapped, same
+ * near-black border and text off the grey ramp this site does not paint, on a
+ * dark ground). Re-exported wrapped, same
  * ring fix as `btnPrimary`: the kit hardcodes
  * `focus-visible:outline-primary-400` (the primary-400 step on this site's
  * ramp). That ring is not mounted on any ground in phase 1 - this export has

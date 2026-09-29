@@ -70,11 +70,20 @@ import {
  *     right column is a marquee this site publishes nothing for. Band 3 is one
  *     paragraph. Testable: `grep -n "eyebrow\|title\|body" ProblemStatement.tsx`
  *     returns no prop.
- *   design/marketing/CoverageCards.tsx     - `CoverageItem` (:5-15) still has no
- *     `href`. The six cards in band 4 ARE six of this route's internal links, so
- *     adopting would drop the page under its link floor. The `html` half of the
- *     older estate-wide decline is STALE (`html` exists at :35) and is not
- *     relied on here.
+ *   design/marketing/CoverageCards.tsx     - RE-DERIVED at 1437cb9e (R2 G3).
+ *     The `href` half of the old reason is STALE: `href?` exists at :31 and the
+ *     card renders as an `<a>` at :103, so band 4 would keep its six links. What
+ *     still blocks it is `body: string`, REQUIRED at :8, against six cells that
+ *     publish a label and an href and no body; and the card shape, which is a
+ *     padded subject card, not this band's compact chip row. The `html` half of
+ *     the older estate-wide decline is also STALE (`html` exists at :35) and is
+ *     not relied on here. Full working at the call site.
+ *   design/marketing/DrawnTickList.tsx     - the only tick-shaped list on this
+ *     page is `closingProofPoints`, which is four {title, detail} PAIRS and is
+ *     already inside the adopted LeadCTAPanel, which renders its own tick
+ *     treatment for them. DrawnTickList takes `items: string[]` (:36), so
+ *     feeding it here would drop one string of every pair. Written because R2 N4
+ *     found it in the ADOPT table with no decline anywhere on the site.
  *   design/marketing/ProcessTimeline.tsx   - band 7's four bodies are JSX
  *     elements carrying real <a> children, not HTML strings, so `html` (:27)
  *     cannot take them, and the four are parallel situations with no published
@@ -95,17 +104,29 @@ import {
  * utility. Everything else on this page is a `primary-*` / `slate-*` utility;
  * #b0532f -> primary-600 and #8f421f -> primary-700 are exact, same-hex swaps.
  *
- *   #fafaf9  the warm off-white band ground, five bands. slate-50 is #f8fafc, a
- *            COOL grey: the swap is a visible colour change nobody asked for,
- *            and PHASE2-6_PACKAGES.md W5 names this exception explicitly.
+ *   (The warm off-white band ground on five bands is NO LONGER a literal here:
+ *    globals.css:213 declares `--surface-warm-alt` with exactly the value the
+ *    literal carried, so `warmBand` below is now `bg-[var(--surface-warm-alt)]`
+ *    and the paint is unchanged. slate-50 is #f8fafc, a COOL grey, and is still
+ *    not the answer: the swap would be a visible colour change nobody asked
+ *    for, which is the exception PHASE2-6_PACKAGES.md W5 names. R2 G7 / V1 V32.)
  *   #3a1a0d  the dark band ground (hero, band 8, the closing panel). The ramp's
  *            bottom step primary-950 is #341306: white-on-ground moves 15.78 ->
  *            17.01, so the swap moves a measured ratio and the literal stays.
  *   #2a1208  the hero gradient's terminal stop, darker than primary-950 and not
  *            a ramp step of its own. Snapping it to 950 would invert the
  *            gradient's direction of travel.
+ *
+ * Both dark literals re-measured against the ramp 2026-09-29, because a ramp
+ * step within 2 of lightness would make the literal indefensible. CIE L*:
+ * #3a1a0d = 13.63, #2a1208 = 8.50, primary-950 #341306 = 10.62. The deltas are
+ * 3.01 and 2.12, BOTH outside the 2-point window, so neither is a ramp step in
+ * disguise and neither is swapped. They are designer-set colours and stay
+ * literals. If the manager declares `--ink-brand` / `--ink-brand-deep` in
+ * globals.css (a file this package may not edit), these two become token
+ * references in a one-line mop-up; nothing else about them changes.
  */
-const warmBand = "bg-[#fafaf9]";
+const warmBand = "bg-[var(--surface-warm-alt)]";
 const darkBand = "bg-[#3a1a0d]";
 
 export function generateMetadata(): Metadata {
@@ -456,7 +477,12 @@ export default function HomePage() {
                 floor for a button's only visible boundary; `btnOnDark` is
                 border-white/40 at 3.20. Labels unchanged. `data-cta` sits on the
                 control, never on a wrapper, and the tuples match generalist's
-                naming so vw_cta_performance reads across sites. */}
+                naming so vw_cta_performance reads across sites. Both carry the
+                full triple (R2 G5): `hero_primary|hero|form` and
+                `hero_secondary|hero|service`. The secondary's goal is `service`,
+                not `form`, because it goes to /services/tronc-scheme-setup and
+                not to a form; `service` is a NEW goal value, listed for the
+                owner. */}
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
                 href="/contact"
@@ -471,6 +497,7 @@ export default function HomePage() {
                 href="/services/tronc-scheme-setup"
                 data-cta="hero_secondary"
                 data-cta-placement="hero"
+                data-cta-goal="service"
                 className={`${btnOnDark} px-6 py-3 text-base sm:px-10 sm:py-4 sm:text-lg`}
               >
                 Tronc scheme setup
@@ -520,8 +547,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Who we help. DECLINED CoverageCards: `CoverageItem` has no `href` and
-          these six cards are six of this route's internal links. */}
+      {/* Who we help. DECLINED CoverageCards, on a RE-DERIVED reason (R2 G3).
+          The old reason ("`CoverageItem` has no `href`") is STALE and is gone:
+          `href?` exists at CoverageCards.tsx:31, the card becomes an `<a>` at
+          :103 and picks up the kit focusRing at :110, so the link floor is no
+          longer the objection and these six cells would stay six links.
+
+          What still blocks it: `body: string` is REQUIRED (CoverageCards.tsx:8)
+          and these six cells publish a LABEL and an href only, no body. Adopting
+          would mean either authoring six new sentences, which this wave may not
+          do, or passing `body=""` and shipping six empty `<p>` elements. The
+          shape is also wrong for the copy: the kit renders `rounded-xl p-6 sm:p-8`
+          subject cards from `md:grid-cols-2|3`, and this is a compact
+          `grid-cols-2 sm:grid-cols-3` chip row whose only affordance is the
+          arrow. Testable: `grep -n 'body' CoverageCards.tsx` shows no `?`. */}
       <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Eyebrow>Who we work with</Eyebrow>
@@ -757,7 +796,12 @@ export default function HomePage() {
       </section>
 
       {/* Free tools teaser. `data-cta` on each of the four links, on the control
-          itself and never on a wrapper. */}
+          itself and never on a wrapper. The full triple on every one (R2 G5):
+          `home_calculator|tools_band|tool` and `home_research|tools_band|research`.
+          The `goal` half was missing, which would have landed three live series
+          in vw_cta_performance with a null goal beside siblings that have one.
+          `tool` and `research` are NEW values in the goal taxonomy (the site had
+          only `form`), listed for the owner; nothing a visitor sees changes. */}
       <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
@@ -779,6 +823,7 @@ export default function HomePage() {
                     href={calc.href}
                     data-cta="home_calculator"
                     data-cta-placement="tools_band"
+                    data-cta-goal="tool"
                     className={`group flex items-center justify-between border border-slate-200 bg-slate-50 px-5 py-4 text-sm font-semibold text-slate-800 hover:border-primary-600 hover:text-primary-600 transition-all ${focusRing}`}
                   >
                     {calc.title}
@@ -804,6 +849,7 @@ export default function HomePage() {
                   href="/research/hospitality-openings-closures-index"
                   data-cta="home_research"
                   data-cta-placement="tools_band"
+                  data-cta-goal="research"
                   className={`group flex items-center justify-between border border-slate-200 bg-slate-50 px-5 py-4 text-sm font-semibold text-slate-800 hover:border-primary-600 hover:text-primary-600 transition-all ${focusRing}`}
                 >
                   View the hospitality openings and closures index
@@ -923,6 +969,16 @@ export default function HomePage() {
           appear. Its default `eyebrow` is a fee claim ("Free first call, then a
           fixed fee in writing", :18) and this site does not publish fees; passing
           the page's own label suppresses it without deleting published copy.
+
+          RECORDED, because V1 flagged it: PHASE2-6_PACKAGES.md A7 row 12 and
+          the literal text of locked rule 16 both say `eyebrow=""` on every
+          LeadCTAPanel mount, and this one passes `eyebrow="Get started"`. That
+          is deliberate. "Get started" is this page's OWN pre-existing
+          `.section-label` string on band 12, not the kit default, so `eyebrow=""`
+          here would DELETE published copy. Rule 16 exists to keep the kit's fee
+          claim off the page, and passing the page's own label does that as
+          completely as an empty string does. Prose-freeze wins; the other nine
+          mounts, where no label existed to preserve, all pass `eyebrow=""`.
           The panel grounds on slate-900, so `backdrop` paints this page's own
           published #3a1a0d ground and gradient back over it: the colour does not
           move.

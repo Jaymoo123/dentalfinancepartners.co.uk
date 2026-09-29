@@ -137,7 +137,8 @@
     "cta_button": "Get in touch",
     "label_topics": "Topics",
     "label_library": "The library",
-    "related_heading": "Keep exploring"
+    "related_heading": "Keep exploring",
+    "howto_heading": "Step by step"
   },
   "shared_components_version": "1.0.0",
   "last_sync": null

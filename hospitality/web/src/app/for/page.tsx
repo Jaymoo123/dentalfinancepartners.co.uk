@@ -20,10 +20,13 @@ export default function ForIndexPage() {
   return (
     <>
       {/* The full adoption and decline record for this hero shape is written
-          once, at src/app/services/page.tsx:24-60, and applies here character
+          once, at src/app/services/page.tsx (the hero comment block) and applies here character
           for character: Breadcrumb tone="onBrand" ADOPTED, SlimHero DECLINED
-          (hardcoded bg-slate-900 at SlimHero.tsx:36 would repaint a
-          designer-set brand hero navy, kit gap K1), Eyebrow DECLINED in the
+          (the ground half of that reason is STALE, `sectionClassName` exists at
+          SlimHero.tsx:27/47; what stands is no slot above the eyebrow for this
+          hero's Breadcrumb, a REQUIRED `eyebrow` this route does not publish,
+          and a structural py-8/10/12 rhythm against this hero's py-16 sm:py-20,
+          re-derived in full at services/page.tsx), Eyebrow DECLINED in the
           hero (its only candidate label, "For", is the crumb one line above),
           HospitalityBackdrop ADOPTED with the host contract and .ground-dark.
           Measured on this same ground: bg-primary-600 #b0532f, composite
@@ -34,7 +37,7 @@ export default function ForIndexPage() {
           This hub emitted no BreadcrumbList before, so there is still exactly
           one per URL. */}
       <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-600 py-16 sm:py-20">
-        <HospitalityBackdrop patternId="for-hero" />
+        <HospitalityBackdrop patternId="hospitality-table-setting-for-hero" />
         <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             tone="onBrand"
@@ -51,10 +54,14 @@ export default function ForIndexPage() {
       </section>
 
       {/* ADOPTED: ScrollGlowGroup (wrapper only, no copy or markup change).
-          DECLINED: CoverageCards, for the reason written at
-          src/app/services/page.tsx:106-113 - CoverageItem has no `href`
-          (CoverageCards.tsx:5-15) and these six cards ARE this route's link
-          floor, and `icon: LucideIcon` is required and unpublished. Kit gap K2. */}
+          DECLINED: CoverageCards, for the re-derived reason written at
+          src/app/services/page.tsx. The `href` and `icon` halves are both STALE
+          (CoverageCards.tsx:31 and :23, both optional at kit 1437cb9e) and are
+          dropped. What stands here: the kit card is a hardcoded `rounded-xl`
+          (:110) against this site's --radius: 0rem square cards, and its body
+          is a full paragraph where these six cards publish a `line-clamp-2`
+          first sentence, so adopting it would change what six cards show and
+          their shape. Kit gap K2 = headingLevel plus a radius hook. */}
       <section className="bg-primary-600/5 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <ScrollGlowGroup className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -68,12 +75,12 @@ export default function ForIndexPage() {
         </div>
       </section>
 
-      {/* #fafaf7 is a warm off-white with no step on this site's ramp; slate-50
-          #f8fafc is cool, so swapping it is a visible colour change (R6 on
-          startups-tech). It stays a literal until the manager declares a
-          --surface-warm token in globals.css, a P1-A file this package may not
-          edit. Requested in the receipt. */}
-      <section className="bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
+      {/* Warm off-white with no step on this site's ramp; slate-50 #f8fafc is
+          cool, so normalising it to a ramp step would be a visible colour
+          change (R6 on startups-tech). The token it needed IS declared
+          (globals.css --surface-warm, same value as the literal it replaces),
+          so the literal is gone and the paint is unchanged. */}
+      <section className="bg-[var(--surface-warm)] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Each sector has its own rules.</h2>
@@ -108,7 +115,7 @@ export default function ForIndexPage() {
         proofPoints={[]}
         formTitle=""
         form={<LeadForm submitLabel="Request callback" />}
-        backdrop={<HospitalityBackdrop patternId="for-cta" />}
+        backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-for-cta" />}
       />
     </>
   );

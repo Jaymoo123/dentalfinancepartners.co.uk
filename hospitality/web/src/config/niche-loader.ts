@@ -5,7 +5,8 @@ import type { NicheConfig as BaseNicheConfig } from "@accounting-network/web-sha
 
 // The kit's `NicheConfig.blog` interface (packages/web-shared/lib/niche-config.ts,
 // off limits to this package) only declares the three shared CTA keys. This site
-// publishes three additional blog section labels (M1a item 3), so the shape is
+// publishes four additional blog section labels (M1a item 3, plus
+// `howto_heading` for the rendered HowTo step list), so the shape is
 // widened locally rather than in the kit. `validateNicheConfig` still runs its
 // runtime checks on the shared keys; this cast only extends what tsc knows about.
 type SiteNicheConfig = BaseNicheConfig & {
@@ -13,6 +14,7 @@ type SiteNicheConfig = BaseNicheConfig & {
     label_topics: string;
     label_library: string;
     related_heading: string;
+    howto_heading: string;
   };
 };
 

@@ -10,6 +10,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
+import { StatsCounter } from "@accounting-network/web-shared/design/marketing/StatsCounter";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 
@@ -92,10 +93,19 @@ export default async function ServicePage({
           so no copy is authored.
 
           ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
-          Its section ground is the hardcoded literal `bg-slate-900`
-          (SlimHero.tsx:36) with no prop to override it, so adopting it repaints
-          five brand heroes navy. That is a designer-set colour, locked rule 7.
-          Kit gap K1.
+          The ground half of the old reason is STALE and is dropped:
+          `sectionClassName` exists (SlimHero.tsx:27/47/50) and would carry
+          bg-primary-600 exactly. Re-derived at kit 1437cb9e, three reasons
+          stand, in full at src/app/services/page.tsx: no slot above the eyebrow
+          for the Breadcrumb (:51-57, `backdrop` is outside the container),
+          `eyebrow: string` REQUIRED (:23) where this hero publishes no label,
+          and the structural py-8/10/12 rhythm plus the :6-8 docstring
+          ("deliberately not the content-page hero ... not configurable into
+          one") against this py-16 sm:py-20 hero. This hero also carries a CTA
+          button, which SlimHero's docstring names as deliberately absent; it
+          would have to live in `children` below the standfirst, which is where
+          it already is, so that one is survivable. The first three are not.
+          Kit gap K1 restated: a `breadcrumb` slot and an optional eyebrow.
 
           ADOPTION DECLINED (hero only): `Eyebrow` from
           packages/web-shared/design/primitives/page-blocks.tsx. The hero's only
@@ -120,7 +130,7 @@ export default async function ServicePage({
           primary-600. No light-ground card with focusable children sits inside
           this section (globals.css:213-215). */}
       <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-600 py-16 sm:py-20">
-        <HospitalityBackdrop patternId="service-hero" />
+        <HospitalityBackdrop patternId="hospitality-table-setting-service-hero" />
         <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             tone="onBrand"
@@ -154,39 +164,34 @@ export default async function ServicePage({
         </div>
       </section>
 
-      {/* ADOPTION DECLINED: packages/web-shared/design/marketing/StatsCounter.tsx,
-          measured on the working tree 2026-09-29. The plan's ADOPT row rests on
-          `.ground-dark` carrying this band, and it does not: globals.css:209-212
-          rebinds --focus-ring and --kit-focus-ring only, never a text colour.
-          Two reasons stand, both testable and both inside the kit file:
-          - the figure is `text-slate-900` and the label `text-slate-500`,
-            hardcoded at StatsCounter.tsx:119 and :133 on the component's own
-            divs, with no tone prop and no className. This band is DARK
-            (bg-slate-800 #1e293b): slate-900 #0f172a on it measures 1.20:1 and
-            slate-500 #64748b measures 2.72:1. Invisible, and nothing at the
-            call site can reach either class.
-          - the layout is a fixed `grid-cols-2 md:grid-cols-4`
-            (StatsCounter.tsx:116) and every record here publishes THREE stats,
-            which leaves a hole in row one.
-          `StatItem.value` (:15) does answer the old string-value half of
-          Property's decline at Property/web/src/app/for/[slug]/page.tsx:81, and
-          every value here ("0%", "£12.71", "£90,000", "Margin only", "Ended")
-          would render correctly through it. That half is dropped. Both surviving
-          reasons are kit-file changes, so both are manager carve-outs.
-          the neutral 800 and 400 steps become the slate 800 and 400 steps, the same
-          steps on the slate ramp; white on slate-800 is 14.63 and slate-400 on
-          slate-800 is 5.71, both PASS. No .ground-dark: nothing in this band is
-          focusable. */}
+      {/* ADOPTED: packages/web-shared/design/marketing/StatsCounter.tsx. Both
+          reasons the earlier decline rested on are STALE at kit 1437cb9e and are
+          dropped: `tone?: "light" | "dark"` at :106 gives `text-white` figure /
+          `text-slate-300` label at :138-139, and `columns?: 2 | 3 | 4` at :111
+          gives `md:grid-cols-3` at :138, so the three-stat hole is gone.
+          Figures and labels are `service.stats` unchanged, no string touched.
+          T15: every value here is a string, not a number a counter can reach
+          ("0%", "£12.71", "£90,000", "Margin only", "Ended"), so each is passed
+          through `StatItem.value` (:15) with `target: 0` ignored, and the
+          pre-hydration HTML therefore carries the final figure verbatim (:63
+          holds the true target until the count-up starts, and `value` skips the
+          count-up entirely). No source hrefs: the data shape
+          (src/data/hospitality-services.ts:8) publishes value and label only.
+          Contrast on this ground, bg-slate-800 #1e293b: white figure 14.63,
+          slate-300 label 9.85, both past 4.5. The label lifts from slate-400
+          (5.71) to slate-300, so it gets lighter, never darker.
+          Two rendered changes, both design-port shape rather than copy: mobile
+          is the kit's `grid-cols-2` instead of this band's `grid-cols-1`, and
+          tiles are centred at every width instead of from `sm`.
+          Still NO .ground-dark on this section: nothing in the band is
+          focusable, since no stat carries an href. */}
       <section className="bg-slate-800 py-8 sm:py-10">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
-            {service.stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col sm:text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-                <div className="mt-1 text-xs sm:text-sm font-semibold text-slate-400 uppercase tracking-wider">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          <StatsCounter
+            tone="dark"
+            columns={3}
+            stats={service.stats.map((stat) => ({ target: 0, value: stat.value, label: stat.label }))}
+          />
         </div>
       </section>
 
@@ -250,7 +255,7 @@ export default async function ServicePage({
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-[var(--surface-warm)] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
           <ScrollGlowGroup className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
@@ -320,10 +325,10 @@ export default async function ServicePage({
         proofPoints={[]}
         formTitle=""
         form={<LeadForm submitLabel="Request callback" />}
-        backdrop={<HospitalityBackdrop patternId="service-cta" />}
+        backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-service-cta" />}
       />
 
-      <section className="bg-[#fafaf7] py-12 sm:py-16">
+      <section className="bg-[var(--surface-warm)] py-12 sm:py-16">
         <div className={siteContainerLg}>
           {/* ADOPTED: `Eyebrow` from
               packages/web-shared/design/primitives/page-blocks.tsx, fed this

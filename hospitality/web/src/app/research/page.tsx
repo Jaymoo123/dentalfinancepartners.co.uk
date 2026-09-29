@@ -57,11 +57,22 @@ export default function ResearchIndexPage() {
   return (
     <>
       {/*
-        SlimHero DECLINED (K1, packages/web-shared/design/primitives/SlimHero.tsx:36): this
-        hero is the site's brand ground (bg-[var(--brand-primary)]), and SlimHero hardcodes
-        bg-slate-900. Adopting it would flip a designer-set colour, banned by locked rule 7.
+        SlimHero DECLINED. The ground half of this reason is STALE and is dropped:
+        `sectionClassName` exists (SlimHero.tsx:27/47/50) and would carry this ground
+        exactly. Re-derived at kit 1437cb9e, two reasons stand: SlimHero holds Eyebrow, h1
+        and children in ONE container (:51-57) with no slot above the eyebrow, so this
+        hero's Breadcrumb could only drop below the h1 or into `backdrop`, which sits
+        outside the container and under the absolute motif; and the py-8/10/12 rhythm is
+        structural (:38-40) against this hero's py-12 sm:py-16. Kit gap K1 restated: a
+        `breadcrumb` slot above the eyebrow.
         Kept the brand ground, added HospitalityBackdrop + .ground-dark, and swapped the
         hand-rolled "Research" label for the kit Eyebrow + Breadcrumb tone="onBrand".
+        EYEBROW CONTRAST, recorded (R2 G4): `onDark` hardcodes text-slate-300
+        (page-blocks.tsx:45) and slate-300 rgb(202,213,226) on this brand ground #b0532f
+        measures 3.43 against a 4.5 floor. No call site can reach that class: Eyebrow takes
+        `children` and `onDark` only. KIT ASK: `className?: string` on Eyebrow, appended to
+        its own class string; this site would then pass `text-white` (5.09, measured) or
+        `text-primary-50` #fff2eb (4.64). The ground is designer-set and stays put.
       */}
       <section className="ground-dark relative overflow-hidden bg-[var(--brand-primary)] py-12 sm:py-16">
         <HospitalityBackdrop patternId="hospitality-table-setting-research-hero" />
@@ -71,7 +82,7 @@ export default function ResearchIndexPage() {
             siteUrl={siteConfig.url}
             tone="onBrand"
           />
-          <Eyebrow onDark>Research</Eyebrow>
+          <Eyebrow onDark className="text-white">Research</Eyebrow>
           <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
             UK hospitality data and research
           </h1>

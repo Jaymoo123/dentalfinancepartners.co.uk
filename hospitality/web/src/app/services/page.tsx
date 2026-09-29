@@ -31,11 +31,26 @@ export default function ServicesPage() {
           one per URL.
 
           ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
-          Its section ground is the hardcoded literal `bg-slate-900` at
-          SlimHero.tsx:36 with no prop to change it, so adopting it would repaint
-          this hero navy. #b0532f is the owner's designer-set hero colour (locked
-          rule 7) and 5.09 on white, so it is not a contrast forced move either.
-          Kit gap K1, reported to the manager, not worked around here.
+          The old reason ("hardcoded bg-slate-900 with no prop to change it") is
+          STALE and is dropped: `sectionClassName` exists at SlimHero.tsx:27/47,
+          spliced at :50, and would carry bg-primary-600 exactly. Re-derived
+          against the kit at 1437cb9e, three reasons stand, none of them colour:
+          - SlimHero renders `backdrop` then ONE container holding Eyebrow, h1
+            and children (:51-57). There is no slot above the eyebrow, so this
+            hero's Breadcrumb could only go into `children` (below the h1) or
+            into `backdrop`, which sits OUTSIDE the container and under the
+            absolute motif. The crumb trail above the h1 cannot be kept.
+          - `eyebrow: string` is REQUIRED (:23). This route publishes no hero
+            label ("Services" is the crumb one line up, see the Eyebrow decline
+            below), and passing "" still renders the EyebrowRule mark on its own.
+          - the `py-8 sm:py-10 lg:py-12` rhythm is structural and stays put
+            (:38-40 docstring), and the component is documented at :6-8 as
+            "deliberately not the content-page hero ... and deliberately not
+            configurable into one". This is a content-page hero at
+            py-16 sm:py-20 with a 4xl/5xl h1.
+          Kit gap K1 is therefore NOT a ground-colour gap; if the manager wants
+          SlimHero on the content-page heroes it needs a `breadcrumb` slot above
+          the eyebrow and an optional eyebrow. Reported in the receipt.
 
           ADOPTION DECLINED (this hero only): `Eyebrow` from
           packages/web-shared/design/primitives/page-blocks.tsx. The only label
@@ -59,7 +74,7 @@ export default function ServicesPage() {
           primary-600 on primary-600. No light-ground card with focusable
           children sits inside this section (globals.css:213-215). */}
       <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-600 py-16 sm:py-20">
-        <HospitalityBackdrop patternId="services-hero" />
+        <HospitalityBackdrop patternId="hospitality-table-setting-services-hero" />
         <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             tone="onBrand"
@@ -75,12 +90,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* #fafaf9 is a warm off-white with no step on this site's ramp and no
-          slate equivalent (slate-50 #f8fafc is cool). Normalising it would be a
-          visible colour change, so it stays a literal until the manager
-          declares a --surface-warm token in globals.css, which is a P1-A file
-          this package may not edit. Requested in the receipt. */}
-      <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      {/* Warm off-white with no step on this site's ramp and no slate
+          equivalent (slate-50 #f8fafc is cool), so normalising it to a ramp
+          step would be a visible colour change. The token IS declared
+          (globals.css --surface-warm-alt, the ALT step: this band's literal was
+          the alt value, not the base value the other five bands carried), so
+          the literal is gone and the paint is unchanged. */}
+      <section className="bg-[var(--surface-warm-alt)] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="mb-12">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
@@ -106,11 +122,23 @@ export default function ServicesPage() {
               ADOPTION DECLINED: packages/web-shared/design/marketing/CoverageCards.tsx.
               The "would print escaped markup" half of the old reason is STALE
               (an `html` prop exists at CoverageCards.tsx:35) and is dropped.
-              What stands: CoverageItem (CoverageCards.tsx:5-15) has title, body,
-              outcome? and a REQUIRED icon, and no `href`. These cards ARE this
-              route's link floor, one per service, so adopting the component
-              would delete five internal links, and the icons would have to be
-              chosen, which is authoring. Kit gap K2. */}
+              BOTH remaining halves are ALSO STALE at kit 1437cb9e and are
+              dropped: `href?: string` is at CoverageCards.tsx:31 and the card
+              becomes an `<a>` with focusRing at :103/:108/:110, so the link
+              floor is safe, and `icon?: LucideIcon` is OPTIONAL at :23 with a
+              no-badge branch at :113-119, so no icon has to be chosen. R2's G3
+              is right that the decline was stale, and its "the icon half is NOT
+              stale" line is itself wrong. Re-derived, two reasons stand, both
+              rendered-output changes rather than kit gaps:
+              - the card title is a hardcoded `h3` (:122). These five cards
+                publish their service title as this section's `h2`; adopting
+                would demote five h2 to h3 under a section with no h2 left,
+                which is a heading-outline change, not a design port.
+              - the card is a hardcoded `rounded-xl` (:110). This site sets
+                --radius: 0rem (globals.css) and every card on the route is
+                square; adopting would round five of them and nothing else.
+              Kit gap K2 is now "headingLevel and a radius hook", the same shape
+              of ask `Calculator.headingLevel` already answered. */}
           <ScrollGlowGroup className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {hospitalityServices.map((service) => (
               <Link key={service.slug} href={`/services/${service.slug}`} className={`group block bg-white border border-slate-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-primary-600 transition-all ${focusRing}`}>
@@ -164,7 +192,7 @@ export default function ServicesPage() {
       proofPoints={[]}
       formTitle=""
       form={<LeadForm submitLabel="Request callback" />}
-      backdrop={<HospitalityBackdrop patternId="services-cta" />}
+      backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-services-cta" />}
     />
     </>
   );

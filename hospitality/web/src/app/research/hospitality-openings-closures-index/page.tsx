@@ -97,9 +97,21 @@ export default function HospitalityIndexPage() {
       />
       <div>
         {/*
-          SlimHero DECLINED (K1, SlimHero.tsx:36): this hero is bg-[var(--brand-primary)],
-          not SlimHero's hardcoded bg-slate-900. Kept the brand ground; added
-          HospitalityBackdrop + .ground-dark + kit Eyebrow + Breadcrumb tone="onBrand".
+          SlimHero DECLINED. The ground half of this reason is STALE and is dropped:
+          `sectionClassName` exists (SlimHero.tsx:27/47/50). Re-derived at kit 1437cb9e,
+          two reasons stand: SlimHero holds Eyebrow, h1 and children in ONE container
+          (:51-57) with no slot above the eyebrow, so this hero's Breadcrumb could only
+          drop below the h1 or into `backdrop`, which sits outside the container and under
+          the absolute motif; and the py-8/10/12 rhythm is structural (:38-40) against this
+          hero's py-14 sm:py-20. Kit gap K1 restated: a `breadcrumb` slot above the eyebrow.
+          Kept the brand ground; added HospitalityBackdrop + .ground-dark + kit Eyebrow +
+          Breadcrumb tone="onBrand".
+          EYEBROW CONTRAST, recorded (R2 G4): `onDark` hardcodes text-slate-300
+          (page-blocks.tsx:45) and slate-300 rgb(202,213,226) on this brand ground #b0532f
+          measures 3.43 against a 4.5 floor. Eyebrow takes `children` and `onDark` only, so
+          no call site can reach the class. KIT ASK: `className?: string` on Eyebrow,
+          appended to its own class string; this site would then pass `text-white` (5.09,
+          measured) or `text-primary-50` #fff2eb (4.64). Ground stays put either way.
         */}
         <section className="ground-dark relative overflow-hidden bg-[var(--brand-primary)] py-14 sm:py-20">
           <HospitalityBackdrop patternId="hospitality-table-setting-openings-closures-hero" />
@@ -109,7 +121,7 @@ export default function HospitalityIndexPage() {
               siteUrl={siteConfig.url}
               tone="onBrand"
             />
-            <Eyebrow onDark>Research</Eyebrow>
+            <Eyebrow onDark className="text-white">Research</Eyebrow>
             <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
               UK Hospitality Openings & Closures Index
             </h1>

@@ -129,6 +129,10 @@ export default async function BlogPostPage({ params }: Props) {
   // that stops the sticky header covering them is on the <article> below, as
   // a descendant variant, because the headings themselves are authored HTML.
   const headings = extractHeadings(post.contentHtml);
+  // ONE binding for the HowTo steps: the JSON-LD block and the rendered list
+  // below both read this, so the schema can never assert a step the page does
+  // not show (R3 GAP 5).
+  const howToSteps = post.howToSteps ?? [];
   const related = getRelatedPosts(post.slug, post.category, 3).map((p) => ({
     href: `/blog/${getCategorySlug(p)}/${p.slug}`,
     title: p.title,
@@ -186,10 +190,10 @@ export default async function BlogPostPage({ params }: Props) {
               }) }}
             />
           )}
-          {post.howToSteps && post.howToSteps.length > 0 && (
+          {howToSteps.length > 0 && (
             <script
               type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: buildHowToJsonLd(post) }}
+              dangerouslySetInnerHTML={{ __html: buildHowToJsonLd({ ...post, howToSteps }) }}
             />
           )}
           {post.schema && (
@@ -258,6 +262,34 @@ export default async function BlogPostPage({ params }: Props) {
               </>
             ) : null}
           </article>
+          {/* R3 GAP 5, the sibling of the FAQ defect phase 0 fixed (ledger E1):
+              the HowTo JSON-LD above asserted 16 steps across 3 posts that no
+              reader could see. Same binding, `post.howToSteps`, read once into
+              `howToSteps` and used by both the JSON-LD script above and this list, so
+              the machine claim and the page cannot disagree.
+
+              Nothing is authored: `name` and `text` are the frontmatter strings
+              already in content/blog. The only new string is the heading, which
+              is `niche.blog.howto_heading` (owner ruling 4 routes every new
+              label to hospitality/niche.config.json). Placed after the body and
+              before "Common questions", matching how the FAQ block sits: the
+              steps are part of the guide, the Q and A are the tail. The <h2> is
+              the same recipe as "Key takeaways" and the related rail, so it
+              joins the document outline rather than becoming an Eyebrow <p>.
+              Renders on 3 posts; the other 20 publish no howToSteps. */}
+          {howToSteps.length > 0 && (
+            <div className="mt-12 border-t border-slate-200 pt-8">
+              <h2 className="text-sm font-semibold text-slate-900">{niche.blog.howto_heading}</h2>
+              <ol className="mt-4 list-decimal space-y-4 pl-5 text-sm text-slate-700">
+                {howToSteps.map((step) => (
+                  <li key={step.name}>
+                    <span className="font-semibold text-slate-900">{step.name}</span>
+                    <span className="mt-1 block leading-relaxed">{step.text}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
           {/* F2 fix 4: post.faqs was asserted in FAQPage JSON-LD above but never
               rendered, so the schema claimed 210 of 214 answers that were
               invisible on the page. Same questions/answers, same data, rendered
@@ -297,15 +329,30 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
         </div>
-        {/* T32, ONE clamp, and it is HERE, on the direct child of the tall
-            column, not on the component. packages/web-shared/design/blog/
-            TableOfContents.tsx:80-82 says so in its own docstring: this family
-            expects the HOST to own `sticky` plus the viewport clamp, and it
-            carries neither itself. Two clamps would give a scroll box inside a
-            shorter scroll box; no clamp would give an element that sticks for
-            one screen and then scrolls away. Arrangement built: HOST-CLAMPED. */}
+        {/* T32, ONE clamp at lg, and it is HERE, on the direct child of the
+            tall column, not on the component. The kit's own comment at
+            packages/web-shared/design/blog/TableOfContents.tsx:94-96 states the
+            contract: "the sticky positioning and viewport clamp live on the
+            sidebar wrapper in the host's article renderer ... not here: two
+            nested sticky/scroll areas fight". Arrangement built: HOST-CLAMPED.
+
+            The kit DOES carry one `max-h-[60vh]` scroll clamp of its own, at
+            TableOfContents.tsx:74, but it is on the `<ul>` inside the MOBILE
+            branch: that `<ul>` sits inside the `lg:hidden` wrapper at :55 and
+            inside a collapsed `<details>`. At lg it is `display:none`, so it
+            paints no scroll box and nothing nests inside this aside's clamp. A
+            `getComputedStyle` walk over `aside *` still reports it, because
+            computed style is returned for display:none elements too; that is a
+            measurement artefact, not a second scroll container. The desktop
+            branch's `<ul>` (:104) carries no clamp, which is why this clamp has
+            to stay: dropping it would leave the aside with none at lg, the other
+            arrangement T32 rules out (sticks for one screen, then scrolls away). */}
         <aside className="hidden lg:order-2 lg:block lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
-          <TableOfContents headings={headings} />
+          {/* `stickyMobile={false}` on this mount too (R2 NIT 3). The mobile
+              branch never paints here because this aside is `hidden lg:block`,
+              but passing it on both mounts means a later change to the aside's
+              visibility cannot reintroduce the sticky mobile bar. */}
+          <TableOfContents headings={headings} stickyMobile={false} />
           {/* BlogSidebarCta, absent until now. `copy` is the one blog CTA triple
               already published in hospitality/niche.config.json, the same
               heading and body the closing panel below renders, so nothing is
@@ -326,16 +373,27 @@ export default async function BlogPostPage({ params }: Props) {
               600 step, globals.css:78) and it cannot drift from the site's
               buttons later. White label on the brand 600 step is 5.09, text floor PASS.
 
-              KIT GAP, LOGGED: BlogSidebarCta.tsx:66-68 hardcodes "Free, no
-              obligation. The form is just below." with no prop to suppress it.
-              Adopted as-is: this site already publishes "no obligation" on
-              /book:36, in CalcResultCta.tsx:12 and in both existing
-              LeadCTAPanel descriptions, so the sentence introduces no new
-              claim here. */}
+              KIT GAP, CLOSED: the card used to hardcode "Free, no obligation.
+              The form is just below." with no way to suppress it, and it
+              reached all 23 posts. It now takes `note`, defaulting to that
+              exact string so every other consumer is byte-identical, and `""`
+              renders no footnote element. `note=""` is passed here.
+
+              Why decline rather than keep: the FIRST clause is already ruled on
+              for this site (claims ledger C1/C3, OWNER RULING 09-29: LEFT AS IS
+              on "Free, no-obligation reply within 24 hours",
+              hospitality/niche.config.json:131 and web/public/llms.txt:68), and
+              "no obligation" alone is published on /book:36, in
+              CalcResultCta.tsx:12 and in both existing LeadCTAPanel
+              descriptions. But the SECOND clause, "The form is just below.", is
+              wording no one authored for this site, and neither of those cites
+              covers it. So this drops the kit's sentence rather than
+              paraphrasing it, and the card keeps its own published copy. */}
           <div className="ground-dark mt-6">
             <BlogSidebarCta
               copy={{ heading: niche.blog.cta_heading, body: niche.blog.cta_body }}
               buttonLabel={niche.blog.cta_button}
+              note=""
               buttonClassName="bg-[var(--btn-ground,var(--color-primary-600))] text-white hover:bg-[var(--btn-ground-hover,var(--color-primary-700))] active:bg-[var(--btn-ground-active,var(--color-primary-800))]"
             />
           </div>

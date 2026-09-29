@@ -10,6 +10,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
+import { StatsCounter } from "@accounting-network/web-shared/design/marketing/StatsCounter";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 
@@ -71,8 +72,8 @@ export default async function HospitalityHubPage({
       />
       {/* This template is the sibling of src/app/services/[slug]/page.tsx and
           every adoption and decline below is the same decision, made once and
-          written there in full (that file's :79-120 for the hero, :150-172 for
-          the stats band, :193-229 for the card grids, :257-276 for the FAQ).
+          written there in full (that file's hero comment block, stats band,
+          card grids and FAQ).
           Summarised here so this file can be reviewed on its own:
           ADOPTED  Breadcrumb tone="onBrand" (replaces the "All sectors"
                    back-link at the old :63-65; the local <JsonLd
@@ -85,14 +86,31 @@ export default async function HospitalityHubPage({
           ADOPTED  ScrollGlowGroup on both card grids, Eyebrow on the "Other
                    sectors we work with" rail, FaqSection html
                    alwaysRenderAnswers, LeadCTAPanel backdrop.
-          DECLINED SlimHero (hardcoded bg-slate-900, SlimHero.tsx:36, K1),
-                   StatsCounter (text-slate-900 figure at :119 on a dark band,
-                   fixed md:grid-cols-4 at :116 against three stats),
-                   CardStack / CoverageCards / ProcessTimeline /
-                   ProblemStatement / ComparisonTable / WhatToExpectCard /
-                   DrawnTickList, and Eyebrow in the hero. */}
+          ADOPTED  StatsCounter tone="dark" columns={3} on the stats band. Both
+                   of the old reasons were STALE at kit 1437cb9e (`tone` at
+                   StatsCounter.tsx:106, `columns` at :111); the full record,
+                   including the T15 string-value handling and the measured
+                   contrast pair on bg-slate-800, is at the sibling's band.
+          DECLINED SlimHero. The ground half of the old reason is STALE
+                   (`sectionClassName`, SlimHero.tsx:27/47/50); what stands is
+                   no slot above the eyebrow for the Breadcrumb, a REQUIRED
+                   `eyebrow` this hero does not publish, and the structural
+                   py-8/10/12 rhythm against this py-16 sm:py-20 hero.
+                   Re-derived in full at src/app/services/page.tsx.
+          DECLINED CoverageCards. `href` (:31) and `icon` (:23) are BOTH optional
+                   now, so the old reason is gone; what stands is the hardcoded
+                   `rounded-xl` (:110) against --radius: 0rem and the hardcoded
+                   `h3` card title (:122) against this route's heading outline.
+          DECLINED CardStack / ProcessTimeline / ProblemStatement /
+                   ComparisonTable / WhatToExpectCard, and Eyebrow in the hero.
+          DECLINED DrawnTickList, which had no written decline anywhere (R2 N4).
+                   The reason: it renders a list of ticked one-liners, and no
+                   record in src/data/hospitality-hubs.ts publishes a flat
+                   string list; `challenges` and `howWeHelp` are title + HTML
+                   body pairs, which is a card, not a tick line. Feeding it
+                   would mean writing new one-liners (locked rule 4). */}
       <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-600 py-16 sm:py-20">
-        <HospitalityBackdrop patternId="sector-hero" />
+        <HospitalityBackdrop patternId="hospitality-table-setting-sector-hero" />
         <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             tone="onBrand"
@@ -126,14 +144,19 @@ export default async function HospitalityHubPage({
 
       <section className="bg-slate-800 py-8 sm:py-10">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
-            {hub.stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col sm:text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-                <div className="mt-1 text-xs sm:text-sm font-semibold text-slate-400 uppercase tracking-wider">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          {/* ADOPTED StatsCounter, see the summary above and the sibling's band
+              for the full record. T15: every value is a string, so each rides
+              `StatItem.value` and the pre-hydration HTML carries the final
+              figure. Contrast on bg-slate-800 #1e293b: white figure 14.63,
+              slate-300 label 9.85 (up from slate-400's 5.71). No source hrefs:
+              src/data/hospitality-hubs.ts:8 publishes value and label only, so
+              nothing here is focusable and the band still needs no
+              .ground-dark. */}
+          <StatsCounter
+            tone="dark"
+            columns={3}
+            stats={hub.stats.map((stat) => ({ target: 0, value: stat.value, label: stat.label }))}
+          />
         </div>
       </section>
 
@@ -154,7 +177,7 @@ export default async function HospitalityHubPage({
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-[#fafaf7] py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-[var(--surface-warm)] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help {hub.title.toLowerCase()}.</h2>
           <ScrollGlowGroup className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
@@ -204,10 +227,10 @@ export default async function HospitalityHubPage({
         proofPoints={[]}
         formTitle=""
         form={<LeadForm submitLabel="Request callback" />}
-        backdrop={<HospitalityBackdrop patternId="sector-cta" />}
+        backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-sector-cta" />}
       />
 
-      <section className="bg-[#fafaf7] py-12 sm:py-16">
+      <section className="bg-[var(--surface-warm)] py-12 sm:py-16">
         <div className={siteContainerLg}>
           {/* ADOPTED: `Eyebrow`, fed this rail's OWN published label unchanged.
               Replaces the hand-rolled uppercase micro-label; the kit recipe

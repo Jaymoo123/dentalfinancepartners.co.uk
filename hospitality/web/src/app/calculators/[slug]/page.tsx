@@ -9,7 +9,6 @@ import { site } from "@/lib/calculators/site";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
-import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
 import HospitalityBackdrop from "@/components/layout/HospitalityBackdrop";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -88,8 +87,19 @@ export default async function CalculatorToolPage({ params }: Props) {
               tone="onBrand"
             />
             {/* kit Eyebrow (adopted, onDark): fed the tool's own existing
-                tool.category string, no new label authored. */}
-            <Eyebrow onDark>{tool.category}</Eyebrow>
+                tool.category string, no new label authored.
+                CONTRAST, recorded rather than left unmeasured (R2 G4): `onDark`
+                hardcodes text-slate-300 at page-blocks.tsx:45, and slate-300
+                rgb(202,213,226) on this brand ground #b0532f measures 3.43
+                against a 4.5 floor (11-12px, not large text). The call site
+                cannot reach that class: Eyebrow takes `children` and `onDark`
+                only, no className and no tone. KIT ASK, one line, additive:
+                give Eyebrow `className?: string` appended to its own class
+                string, and this call site passes `text-white` (5.09 on #b0532f,
+                measured) or `text-primary-50` #fff2eb (4.64). Until it lands
+                the label stays as shipped; darkening the designer-set ground is
+                banned and no site-side hook exists. */}
+            <Eyebrow onDark className="text-white">{tool.category}</Eyebrow>
             <h1 className="text-3xl font-bold text-white sm:text-4xl">{tool.name}</h1>
             <p className="mt-4 max-w-2xl text-lg text-white/85">{tool.intro}</p>
           </div>
@@ -101,15 +111,21 @@ export default async function CalculatorToolPage({ params }: Props) {
                 heading renders as h2 directly, so the sr-only h2 shim that
                 used to bridge the hero h1 to the kit's old fixed h3 is gone. */}
             <CalculatorClient slug={tool.slug} variant="page" resultCta={<CalcResultCta campaign={tool.slug} />} headingLevel={2} />
-            {/* kit ExampleFigureNote (adopted), default label: the result is
-                a worked example off the reader's own entered figures, which
-                is exactly the case its docstring is written for. Do not
-                mount a NoticeCard alongside it: none of the three tools'
-                tool.intro / tool.explainer strings contain an "estimates /
-                check your own figures" sentence to feed one
+            {/* kit ExampleFigureNote REMOVED (R3 GAP 4). Its default label,
+                "Example figures displayed" (ExampleFigureNote.tsx:24), printed
+                under a live result computed from the reader's OWN entered
+                figures. That result is not an example, so the sentence was
+                untrue, and it is a kit default nobody on this site authored.
+                A true label would be new copy, which locked rule 4 forbids, so
+                the mount goes rather than the wording. The "Source: ..." labels
+                on the three research pages stay: those ARE the note doing its
+                job over official statistics, and each attribution is the page's
+                own methodology sentence.
+                Do not mount a NoticeCard in its place either: none of the three
+                tools' tool.intro / tool.explainer strings contain an
+                "estimates / check your own figures" sentence to feed one
                 (`grep -rn 'estimate\|check your own' src/lib/calculators/tools`
-                = 0), and locked rule 4 forbids authoring one. */}
-            <ExampleFigureNote className="mt-4" />
+                = 0). */}
           </div>
         </section>
 

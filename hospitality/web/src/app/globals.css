@@ -169,7 +169,8 @@
        past the 3:1 graphic floor.
 
        R1 G5 (2026-09-29): this comment used to call the footer a light
-       #fafaf9/neutral-50 ground. That was the ground of the footer phase 1
+       warm off-white ground on the grey ramp this site does not paint. That
+       was the ground of the footer phase 1
        DELETED. The kit footer phase 1 ships is bg-slate-900 on all 59 pages
        and is rebound to the white ring by the `footer` element rule below;
        measured by tab-walking the rendered footer, 14 of 14 focus stops ring
@@ -211,6 +212,12 @@
        unchanged, so nothing a visitor sees moves. */
     --surface-warm: #fafaf7;
     --surface-warm-alt: #fafaf9;
+
+    /* The homepage's two dark warm inks, declared so a later pass can swap the
+       literals at app/page.tsx:108-109 and :422 without inventing a value.
+       Same hexes, so nothing a visitor sees moves; zero consumers today. */
+    --ink-brand: #3a1a0d;
+    --ink-brand-deep: #2a1208;
 
     --warning-ground: #e11d48;   /* rose-600 */
     --warning-on-ground: #ffffff;
