@@ -8,6 +8,8 @@ import type { NavItem } from "@accounting-network/web-shared/design/chrome/nav";
 import { niche } from "@/config/niche-loader";
 import { siteConfig } from "@/config/site";
 import { PageShell } from "@/components/layout/PageShell";
+import { SupportProvider } from "@/components/support/SupportProvider";
+import { SpecialistWidget } from "@accounting-network/web-shared/support/SpecialistWidget";
 import { buildOrganizationJsonLd } from "@/lib/schema";
 
 /**
@@ -145,7 +147,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 and no footer: the kit's built-in /embed/ prefix plus the
                 bypassWhen predicate the site wrapper passes for the
                 /research/<slug>/embed suffix (R1 G3). */}
-            <PageShell nav={primaryNav}>{children}</PageShell>
+            <SupportProvider>
+              <PageShell nav={primaryNav}>{children}</PageShell>
+              {/* Owner ruling 2026-09-29 (startups-tech, assumed the same here):
+                  the floating help widget is the ONLY intent surface mounted on
+                  this site, and its auto-open behaviour stays. No sticky bar, no
+                  deep-scroll panel, no returning-visitor bar, no next-step offer
+                  and no newsletter. The kit engine's Surface union still names
+                  those so the model stays one implementation estate-wide;
+                  nothing renders them. The intent provider still renders its
+                  children on /embed/* and /admin/*, it only passes a null
+                  context there; what stops the widget on those routes is its own
+                  `if (!ctx) return null` inside the kit's SpecialistWidget. The
+                  print:hidden wrapper keeps it off printed pages (the kit's
+                  container recipe carries print:hidden too). */}
+              <div className="print:hidden">
+                <SpecialistWidget />
+              </div>
+            </SupportProvider>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>
