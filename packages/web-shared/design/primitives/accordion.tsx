@@ -49,10 +49,19 @@ AccordionTrigger.displayName = "AccordionTrigger";
 const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+>(({ className, children, forceMount, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm sm:text-base leading-relaxed text-slate-700 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    // `forceMount` keeps a closed panel in the DOM (so its answer is in the
+    // server HTML for whatever the page's JSON-LD asserts); Radix marks it
+    // `hidden`, and the class makes that explicit under Tailwind's preflight.
+    // Undefined = Radix's default unmount, byte-identical for every caller
+    // that does not pass it (added 2026-09-29, startups-tech uplift).
+    forceMount={forceMount}
+    className={
+      "overflow-hidden text-sm sm:text-base leading-relaxed text-slate-700 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" +
+      (forceMount ? " data-[state=closed]:hidden" : "")
+    }
     {...props}
   >
     <div className={cn("border-t border-slate-200 bg-white px-4 py-4 sm:px-6 sm:py-5", className)}>

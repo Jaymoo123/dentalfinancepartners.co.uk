@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { focusRing } from "../layout-utils";
 
 export type StatItem = {
   /** Final numeric value to count up to (e.g. 100, 24, 2.4). */
@@ -19,6 +20,9 @@ export type StatItem = {
   /** Rendered after the number (e.g. "+", "hr", "M+", "%"). */
   suffix?: string;
   label: string;
+  /** Optional source link wrapped around the figure (a gov.uk citation, say).
+   *  Unset = the plain figure every existing caller renders (2026-09-29). */
+  href?: string;
 };
 
 const DURATION_MS = 1100;
@@ -113,7 +117,18 @@ export function StatsCounter({ stats }: { stats: StatItem[] }) {
       {stats.map((stat) => (
         <div key={stat.label} className="text-center">
           <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 font-mono tabular-nums">
-            <StatValue stat={stat} play={play} />
+            {stat.href ? (
+              <a
+                href={stat.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-block rounded-md ${focusRing}`}
+              >
+                <StatValue stat={stat} play={play} />
+              </a>
+            ) : (
+              <StatValue stat={stat} play={play} />
+            )}
           </div>
           <div className="mt-1.5 sm:mt-2 text-xs sm:text-sm font-semibold text-slate-500 uppercase tracking-wider">
             {stat.label}

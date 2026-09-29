@@ -664,6 +664,19 @@ Before starting a site, capture and put in the prompts:
       (8.95). Sister tokens on the same panel: `--calc-warn-accent`, `--calc-warn-bg`,
       `--calc-warn-fg` (warn branch) and `--calc-note-link` (note anchors). Check the label on
       every port's four widths; the R2 reviewer found it, not the builder.
+    - `FaqSection.alwaysRenderAnswers` (added 2026-09-29, startups-tech uplift, with a
+      `forceMount` passthrough on `primitives/accordion.tsx` `AccordionContent`). Default `false`
+      = Radix unmounts a closed answer, which is what every existing caller renders. Pass `true`
+      on any page that also emits FAQPage JSON-LD, so the server HTML carries every answer the
+      schema asserts; closed panels are `hidden`. generalist (12 call sites), Medical, ecommerce
+      and construction-cis are LIVE with the mismatch and should adopt it as their own small sweep.
+      This closes the reason every port declined the component.
+    - `StatsCounter` `StatItem.href` (added 2026-09-29). Wraps the figure in a source link with
+      the kit `focusRing` when set; unset = the plain figure. Closes the last reason to decline
+      the counter (the `value` prop already closes the "mangles 18% / 24%" one).
+    - `TestimonialsSection.items` (added 2026-09-29). Default = the module constant (Property's
+      three landlord quotes), so every existing caller is byte-identical; a site passes its own
+      already-published anonymised quotes. Never invent a quote to fill it.
     Do not add rival props for either; these are the supported hooks.
 
 ---

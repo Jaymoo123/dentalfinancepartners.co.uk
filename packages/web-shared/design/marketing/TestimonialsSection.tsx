@@ -40,6 +40,7 @@ export function TestimonialsSection({
   title = "What landlords say",
   description = "Anonymised feedback from landlords and investors we have worked with.",
   backdrop,
+  items = testimonials,
 }: {
   eyebrow?: string;
   title?: string;
@@ -48,6 +49,10 @@ export function TestimonialsSection({
    *  `<HeroBrickBackdrop />` (`components/layout/HeroBrickBackdrop.tsx`, outside
    *  web-shared) — same slot treatment as `SlimHero`'s `backdrop`. */
   backdrop?: ReactNode;
+  /** The quotes to render. Default = the module constant above (Property's),
+   *  so every existing caller is byte-identical; a site passes its own
+   *  already-published, anonymised quotes (2026-09-29, startups-tech). */
+  items?: typeof testimonials;
 }) {
   return (
     <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16 lg:py-20">
@@ -59,7 +64,7 @@ export function TestimonialsSection({
           <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-300">{description}</p>
         </div>
         <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
-          {testimonials.map((t) => (
+          {items.map((t) => (
             <figure
               key={t.who + t.detail}
               className="rounded-xl bg-white/5 p-6 sm:p-8 ring-1 ring-white/10 backdrop-blur-sm flex flex-col transition-colors hover:ring-primary-500/60"

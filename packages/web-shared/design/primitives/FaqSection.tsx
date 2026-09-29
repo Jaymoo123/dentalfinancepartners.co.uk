@@ -16,6 +16,7 @@ export function FaqSection({
   className = "bg-white py-12 sm:py-16 lg:py-20",
   tone = "slate",
   html = false,
+  alwaysRenderAnswers = false,
 }: {
   eyebrow?: string;
   title?: string;
@@ -27,6 +28,11 @@ export function FaqSection({
    *  plain text. Every existing caller omits this and is unaffected. Mirrors
    *  the `CardStack` `html` prop in page-blocks.tsx. */
   html?: boolean;
+  /** Keep every answer in the server HTML (Radix `forceMount`), hidden when
+   *  closed. Use it on any page that also emits FAQPage JSON-LD, so the schema
+   *  never asserts an answer the HTML does not carry. Default false = the
+   *  unmount-when-closed behaviour every existing caller has (2026-09-29). */
+  alwaysRenderAnswers?: boolean;
 }) {
   const itemSurface = tone === "white" ? "bg-white" : "bg-slate-50";
   return (
@@ -40,7 +46,7 @@ export function FaqSection({
           {faqs.map((faq, idx) => (
             <AccordionItem key={faq.question} value={`faq-${idx}`} className={itemSurface}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent forceMount={alwaysRenderAnswers ? true : undefined}>
                 {html ? <p dangerouslySetInnerHTML={{ __html: faq.answer }} /> : <p>{faq.answer}</p>}
               </AccordionContent>
             </AccordionItem>
