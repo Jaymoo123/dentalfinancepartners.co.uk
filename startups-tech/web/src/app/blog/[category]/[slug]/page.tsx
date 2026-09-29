@@ -6,7 +6,6 @@ import {
   buildOgImageUrl,
   buildHowToJsonLd,
   buildFaqJsonLd,
-  buildArticleJsonLd,
 } from "@/lib/schema";
 import {
   getAllPosts,
@@ -16,6 +15,7 @@ import {
   getRelatedPosts,
 } from "@/lib/blog";
 import { extractHeadings } from "@/lib/markdown-utils";
+import type { BlogPost } from "@/types/blog";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { InlineMiniLeadForm } from "@/components/blog/InlineMiniLeadForm";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
@@ -50,6 +50,32 @@ const focusRingAuthoredLinks =
  * instead of a percentage of the remainder. Fewer than two h2s: no split,
  * form renders after the whole body.
  */
+/**
+ * R3-G1/G2 fix, built HERE rather than in the shared `buildArticleJsonLd`
+ * (that file is fenced for this wave, another gap-fixer owns it): headline
+ * matches the same field the visible <h1> renders (h1 field, else title, so
+ * the two never disagree on the 19-of-32 posts that carry an h1 override);
+ * datePublished/dateModified stop collapsing onto one field; author and
+ * publisher point at the canonical Organization node instead of a bare name,
+ * and no person author is invented.
+ */
+function buildPostArticleJsonLd(post: BlogPost, category: string) {
+  const headline = post.h1 || post.title;
+  const orgRef = { "@type": "Organization", "@id": `${siteConfig.url}#organization` };
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description: post.metaDescription,
+    url: `${siteConfig.url}/blog/${category}/${post.slug}`,
+    datePublished: post.date,
+    dateModified: post.updatedDate || post.date,
+    author: orgRef,
+    publisher: orgRef,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${siteConfig.url}/blog/${category}/${post.slug}` },
+  });
+}
+
 function splitAtSecondH2(html: string): { before: string; after: string | null } {
   const headings = [...html.matchAll(/<h2[^>]*>/g)];
   if (headings.length < 2) return { before: html, after: null };
@@ -111,6 +137,9 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-16 lg:grid lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-12 lg:items-start">
+      {/* R2 nit: the kit bar is `fixed top-0`, so its top ~4px sit under the
+          73px header. Kit exposes no className/top prop to offset it; a 1px
+          bar over the header's top edge is accepted as-is (kit-owned). */}
       <ReadingProgress />
       <div className="max-w-3xl lg:order-1">
         {post.schema && (
@@ -125,12 +154,7 @@ export default async function BlogPostPage({ params }: Props) {
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: buildArticleJsonLd({
-                title: post.title,
-                description: post.metaDescription,
-                url: `/blog/${category}/${post.slug}`,
-                dateModified: post.updatedDate || post.date,
-              }),
+              __html: buildPostArticleJsonLd(post, category),
             }}
           />
         )}
@@ -184,11 +208,16 @@ export default async function BlogPostPage({ params }: Props) {
           </aside>
         )}
         {headings.length >= 3 && (
-          <div className="mt-8 lg:hidden">
+          /* R2 GAP: kit's mobile branch (TableOfContents.tsx:46) hardcodes
+             `sticky top-16`; its parent here is only as tall as itself so it
+             never pins, and 64px is under this site's 73px header anyway.
+             Forced static (important, since it's a same-specificity utility
+             override) so it renders with no sticky behaviour to claim. */
+          <div className="mt-8 lg:hidden [&_.sticky]:!static [&_.sticky]:!top-auto">
             <TableOfContents headings={headings} />
           </div>
         )}
-        <article className={`prose prose-neutral mt-10 max-w-none ${focusRingAuthoredLinks}`}>
+        <article className={`prose prose-neutral mt-10 max-w-none [&_h2]:scroll-mt-24 [&_h3]:scroll-mt-24 ${focusRingAuthoredLinks}`}>
           <div dangerouslySetInnerHTML={{ __html: bodySplit.before }} />
           <InlineMiniLeadForm topic={post.category} />
           {bodySplit.after !== null ? (

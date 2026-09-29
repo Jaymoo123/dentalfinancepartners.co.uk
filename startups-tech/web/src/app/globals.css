@@ -85,6 +85,22 @@
     --btn-ground-hover: #3730a3;
     --btn-ground-active: #312e81;
 
+    /* R2-3 (site half). The kit calculator's default-tone result headline label
+       (packages/web-shared/tools/components/Calculator.tsx:163) sits on the
+       slate-900 result ground and falls back to the raw brand hex, which
+       measures 2.84:1 there (under the 4.5:1 text floor) - the fallback path is
+       a live consumer, not dead code, on all four /calculators/[slug] tools.
+       primary-300 (#a5b4fc) on #0f172b: relative luminances 0.4767 / 0.008846,
+       contrast (0.4767+0.05)/(0.008846+0.05) = 8.95:1, clears 4.5:1 without
+       stepping to 200. */
+    --calc-result-accent: var(--color-primary-300);
+
+    /* R2-3 warn ramp: PHASE2-6_PACKAGES.md names no warn ramp for this port
+       (`grep -i warn` over that file: no matches), so the kit's amber default
+       (--calc-warn-bg #fbbf24 / --calc-warn-fg #451a03 / --calc-warn-accent
+       #fbbf24) stands. Decision: leave amber, do not invent a ramp this port
+       never locked. */
+
     /* ---------------------------------------------------------------------
        FOCUS RING, TWO-VALUED. The ring must contrast with the GROUND behind
        the control (every recipe below carries outline-offset-2, so the ring
@@ -164,4 +180,63 @@
     --focus-ring: var(--focus-ring-on-brand);
     --kit-focus-ring: var(--focus-ring-on-brand);
   }
+
+  /* R2-2 BLOCKER. The kit `RelatedArticles`
+     (packages/web-shared/design/blog/RelatedArticles.tsx:106) renders a
+     stretched link with `focus-visible:outline-none` and delegates its own
+     focus affordance entirely to `.related-card:focus-within`. That rule
+     lives only in packages/web-shared/design/globals-standard.css:227-254,
+     which this site does not import by design (phase 1 imports only
+     prose-standard.css, that sheet carries Property's palette). Copied
+     verbatim from globals-standard.css:227-254 rather than importing the
+     whole file. The kit rule's `--brand-glow*` tokens are RGB triplets this
+     site never declares (they default to an off-brand emerald); rebound here
+     to the site's indigo focus-ring colour, expressed as the triplet the
+     kit's `rgb(var(...) / alpha)` syntax needs (a hex custom property cannot
+     be substituted into that syntax). --brand-glow/-edge = primary-600
+     (79 70 229, #4f46e5, 6.29:1 on white); --brand-glow-deep = primary-700
+     (67 56 202, #4338ca). Both clear the 3:1 graphic floor on the white card
+     ground the RelatedArticles rail renders on. */
+  .related-card {
+    --brand-glow: 79 70 229;
+    --brand-glow-edge: 79 70 229;
+    --brand-glow-deep: 67 56 202;
+    transition:
+      box-shadow 200ms ease,
+      border-color 200ms ease,
+      transform 200ms ease;
+  }
+
+  @media (hover: hover) {
+    .related-card:hover {
+      border-color: rgb(var(--brand-glow-edge));
+      box-shadow:
+        0 0 0 3px rgb(var(--brand-glow) / 0.22),
+        0 18px 40px -10px rgb(var(--brand-glow-deep) / 0.6);
+    }
+  }
+
+  .related-card:focus-within {
+    border-color: rgb(var(--brand-glow-edge));
+    box-shadow:
+      0 0 0 3px rgb(var(--brand-glow) / 0.22),
+      0 18px 40px -10px rgb(var(--brand-glow-deep) / 0.6);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .related-card {
+      transition: none;
+    }
+  }
 }
+
+/* GAP 4. `.eyebrow-rule` draw-in animation is DELIBERATELY NOT DEFINED HERE.
+   The kit `Eyebrow` renders a mark with `class="eyebrow-rule"`; that class
+   lives only in packages/web-shared/design/globals-standard.css, which this
+   site does not import (same reason as the .related-card note above: that
+   sheet carries Property's palette). With no rule the mark paints at full
+   width on first render, correct end state, no animation - same decision and
+   same reasoning as contractors-ir35/web/src/app/globals.css:315-347: the
+   kit's collapsed `scaleX(0)` start state is only released by a <noscript>
+   override this site's root layout does not carry, so copying the animation
+   without that override would ship marks that never draw in with JS off. */

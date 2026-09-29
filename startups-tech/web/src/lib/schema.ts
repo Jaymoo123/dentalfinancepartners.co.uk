@@ -35,6 +35,23 @@ export function buildWebsiteJsonLd() {
   });
 }
 
+// R3 G5: faq.answer is authored HTML (rendered as-is on the page). JSON-LD
+// acceptedAnswer.text must be plain text, so tags are stripped and the
+// common entities decoded before the string enters the schema. This does
+// not touch how the answer renders on the page, only the schema copy of it.
+function stripAnswerHtml(html: string) {
+  return html
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -42,7 +59,7 @@ export function buildFaqJsonLd(faqs: { question: string; answer: string }[]) {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      acceptedAnswer: { "@type": "Answer", text: stripAnswerHtml(faq.answer) },
     })),
   });
 }

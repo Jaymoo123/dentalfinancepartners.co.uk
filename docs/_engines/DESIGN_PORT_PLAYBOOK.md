@@ -654,6 +654,16 @@ Before starting a site, capture and put in the prompts:
       column's clamp: two viewport clamps in one column give you a scroll box inside a
       shorter scroll box and a `sticky` that sticks to the wrapper rather than the viewport.
       Six sites import this component.
+    - `--calc-result-accent` (CSS custom property, added 2026-09-29, startups-tech phases 2 to 6,
+      `packages/web-shared/tools/components/Calculator.tsx`). Read by the default-tone result
+      HEADLINE LABEL inside the slate-900 result panel, as
+      `text-[var(--calc-result-accent,var(--brand-primary))]`. Fallback is the brand hex, so every
+      site that does not declare it renders byte-identically, Property included. It exists because
+      a mid-tone brand hex that clears 4.5:1 on white can fail it on the dark panel: indigo
+      `#4f46e5` measured 2.84 there; startups-tech sets the token to its `primary-300` step
+      (8.95). Sister tokens on the same panel: `--calc-warn-accent`, `--calc-warn-bg`,
+      `--calc-warn-fg` (warn branch) and `--calc-note-link` (note anchors). Check the label on
+      every port's four widths; the R2 reviewer found it, not the builder.
     Do not add rival props for either; these are the supported hooks.
 
 ---

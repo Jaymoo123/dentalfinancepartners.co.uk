@@ -417,7 +417,11 @@ const faqs: { question: string; answer: string }[] = [
 /* The closing panel's four proof-point pairs, unchanged from the hand-rolled
    markup they were lifted out of. `detail` was `sub`; the words are identical.
    C3 in the claims ledger ("24-hour response / Usually the same working day") is
-   an owner-ruled row: it stays exactly where it already was. */
+   an owner-ruled row: it stays exactly where it already was.
+   R3 N1: the hand-rolled `&#10003;` tick badge that used to sit beside each
+   pair is gone from here, but LeadCTAPanel's proof-point row renders its own
+   `Check` icon per item (packages/web-shared/design/marketing/LeadCTAPanel.tsx:174),
+   so the rendered list still shows a tick; nothing to restore. */
 const closingProofPoints = [
   {
     title: "Funded and scaling companies only",
@@ -524,7 +528,7 @@ export default function HomePage() {
       </section>
 
       {/* Intro strip */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-10 sm:py-12">
+      <section className="border-b border-neutral-200 bg-stone-50 py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
             The compliance obligations that matter most to a funded startup (R&amp;D claims, EIS compliance,
@@ -566,7 +570,7 @@ export default function HomePage() {
       </section>
 
       {/* Specialist services */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-neutral-200 bg-stone-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <Eyebrow>Specialist services</Eyebrow>
@@ -626,7 +630,7 @@ export default function HomePage() {
       </section>
 
       {/* Free tools + research asset */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-neutral-200 bg-stone-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
@@ -735,7 +739,7 @@ export default function HomePage() {
       </section>
 
       {/* Anonymised social proof */}
-      <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
+      <section className="bg-stone-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
             <Eyebrow>Real outcomes</Eyebrow>
@@ -832,7 +836,7 @@ export default function HomePage() {
       />
 
       {/* Blog footer strip */}
-      <section className="border-t border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
+      <section className="border-t border-neutral-200 bg-stone-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
             <Eyebrow>Guides and analysis</Eyebrow>

@@ -135,6 +135,12 @@ export function Calculator({
           ))}
         </div>
 
+        {/* The default-tone headline label sits on the slate-900 result ground.
+            --calc-result-accent is the step of the brand colour that is safe as
+            TEXT on that dark ground; the fallback is the brand hex itself, so every
+            site that does not declare it renders byte-identically (2026-09-29,
+            startups-tech port: indigo #4f46e5 measured 2.84:1 here, under the 4.5
+            text floor; that site sets the token to its primary-300 step). */}
         {resultWrapper(
           <div className="bg-slate-900 p-6 sm:p-8 text-white">
           {result.verdict ? (
@@ -154,7 +160,7 @@ export function Calculator({
             <div className="mb-4 sm:mb-6">
               <div
                 className={`text-xs sm:text-sm font-bold uppercase tracking-wider mb-2 ${
-                  tone === "warn" ? "text-[var(--calc-warn-accent,#fbbf24)]" : "text-[var(--brand-primary)]"
+                  tone === "warn" ? "text-[var(--calc-warn-accent,#fbbf24)]" : "text-[var(--calc-result-accent,var(--brand-primary))]"
                 }`}
               >
                 {result.headline.label}

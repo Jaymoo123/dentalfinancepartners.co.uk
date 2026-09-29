@@ -72,11 +72,13 @@ export function getRelatedPosts(
   }
 
   const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
-  const relatedPosts: BlogPost[] = [];
+  const candidates: BlogPost[] = [];
 
+  // W2: used to break at `limit` before sorting, so "related" was readdir
+  // (alphabetical) order despite the sort below running on an already-capped
+  // set. Collect every same-category candidate first, sort by date, then
+  // slice, so the sort actually picks the 3 most recent.
   for (const file of files) {
-    if (relatedPosts.length >= limit) break;
-
     const filePath = path.join(postsDirectory, file);
     const raw = fs.readFileSync(filePath, "utf8");
     const { data } = matter(raw);
@@ -86,12 +88,12 @@ export function getRelatedPosts(
     if (fm.category !== category) continue;
     if (!fm.slug || !fm.title) continue;
 
-    relatedPosts.push(parsePostFile(filePath));
+    candidates.push(parsePostFile(filePath));
   }
 
-  return relatedPosts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  return candidates
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
 }
 
 export function slugifyCategory(category: string): string {

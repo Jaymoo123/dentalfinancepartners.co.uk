@@ -14,12 +14,15 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
  * retyped copy of its four utilities. Same value, one source: the phase-1
  * decline note on that export is what makes --focus-ring the site's only ring
  * token, and a hand-written duplicate here would silently survive a change to
- * it. `outline-none` stays: it kills the UA outline that the focus-visible
- * outline replaces, and it is not a ring removal.
+ * it. The bare `outline-none` that used to sit here set `outline-style: none`
+ * unconditionally, which defeats `focusRing`'s `focus-visible:outline` (it
+ * resolves its style from the same property): a real Tab measured no ring at
+ * all. Removed, along with the second `focus:ring-2 focus:ring-primary-600/25`
+ * layer (1.46:1 on this ground), so `focusRing` is the only ring mechanism.
  * slate-600 placeholder is 5.90 on white and slate-900 input text is 17.85.
  */
 const inputClass =
-  `mt-1 w-full min-h-12 touch-manipulation border border-slate-200 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-600 shadow-sm focus:border-primary-600 outline-none ${focusRing} focus:ring-2 focus:ring-primary-600/25 transition-colors`;
+  `mt-1 w-full min-h-12 touch-manipulation border border-slate-200 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-600 shadow-sm focus:border-primary-600 ${focusRing} transition-colors`;
 
 export function MiniCapture({
   formId,
@@ -146,7 +149,7 @@ export function MiniCapture({
               name="message"
               rows={3}
               className={inputClass}
-              placeholder="e.g. pub with 12 staff, need help with tronc setup and food VAT"
+              placeholder="e.g. We are raising a seed round and want to check our SEIS eligibility, or we need to set up an EMI scheme..."
             />
             {fieldErrors.message && <p className="mt-1 text-xs text-red-700">{fieldErrors.message}</p>}
           </div>

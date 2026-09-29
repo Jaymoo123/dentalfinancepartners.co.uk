@@ -28,7 +28,7 @@ import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-s
  * token. The two links in this form gain `focusRing`.
  */
 const fieldClass =
-  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-primary-600 outline-none ${focusRing}`;
+  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-primary-600 ${focusRing}`;
 const labelClass = "block text-sm font-medium text-neutral-900";
 const errorClass = "mt-2 text-xs text-red-600";
 const btnClass = `${btnPrimary} w-full`;
