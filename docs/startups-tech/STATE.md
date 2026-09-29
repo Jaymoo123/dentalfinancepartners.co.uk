@@ -370,3 +370,43 @@ the payload, 0 console errors. Final build: sweep 66/66 (1,806 links, 209 data-c
 `-uplift` moved to `878d56ce`. Widget agents: 4 (builder, reviewer, two fixers). Port total 38.
 Estate item: Property's and generalist's widgets have the same keyboard defect (no focus entry, no
 Escape); the fix here is the template when the widget is lifted into the kit.
+
+## 2026-09-29 late: widget lifted into the kit; GF8 kit fix; tags moved to `20f48e9d`
+
+**The widget is no longer this site's own code.** `70047cb6` lifted `SpecialistWidget`,
+`IntentProvider`, `deriveTopic`, the journey model, the personalisation engine and the default
+class recipes into `packages/web-shared/support/`, as one implementation for the estate. Five
+duplicated files were deleted here; everything site-specific (taxonomy, route rules, openers,
+labels, copy, `formId`, lead source, class overrides, submit client) now arrives through
+`lib/intent/widget-config.ts` at the mount, behind a `SupportProvider` client boundary because
+the config carries functions. The server-rendered widget fragment is **byte-identical before
+and after** on `/` and on a calculator route (728 bytes = 728 bytes). Kit tests 416 to 439,
+this site's 131 to 146, tsc clean, build 88 pages. hospitality is the second consumer.
+
+**GF8, a real keyboard bug this site was shipping (`20f48e9d`).** The auto-opened panel armed
+its focus trap on any inbound focus, so a forward Tab from the page was captured at the panel
+and the launcher was never reachable. Found on hospitality (dead stop inside 420 Tab presses)
+in code this site shares. `shouldUpgradeToModal` now upgrades only on a pointer press, Enter
+or Space, the launcher itself, or a focus that came from inside the panel; a Tab arriving from
+the page passes straight through. The trap no longer pulls focus when focus is already inside.
+Kit tests 444/444.
+
+Note against the earlier record: GF7 recorded the launcher as keyboard-reachable here at 103
+and 67 presses. That walk was almost certainly taken with the panel closed, because the same
+kit code measured a dead stop on hospitality with the panel auto-open. Treat the earlier
+number as unproven until it is re-walked on this site.
+
+**Tags moved.** `port-startups-tech-complete` and `port-startups-tech-uplift` now both point at
+**`20f48e9d`** (they were on `878d56ce`). Deploy from the `-complete` tag.
+
+### What the owner should re-check on his walk
+
+- **The help panel that opens by itself.** Press Tab repeatedly from the top of the page: the
+  panel's three controls are now passed through and the "Ask an accountant" launcher is
+  reached, instead of the keyboard getting stuck in the panel. Clicking the launcher still
+  traps the keyboard inside the panel on purpose, and Escape still closes it and puts the
+  focus back on the launcher.
+- Nothing else on the site changed. The widget looks and reads exactly as it did on the walk
+  he already did.
+
+Nothing pushed, nothing deployed.

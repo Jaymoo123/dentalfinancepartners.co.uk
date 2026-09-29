@@ -1527,3 +1527,82 @@ takes it to about **26**, or **29** worst case with three optional gap-fixers.
 **Report the ACTUAL count to the owner at wave close, and price the wave with him before
 launching it** — standard terms, section 3: a multi-agent wave is priced in the
 subscription window before it runs, not after.
+
+---
+
+## Wave close (2026-09-29, manager)
+
+### Builds and commits
+
+| commit | what |
+|---|---|
+| `577e22e2` | phases 2 to 6 as one wave of six disjoint packages, uplift built in. Tagged `port-hospitality-phase2` through `-phase6` (all six tags on this one commit; the tags are not the end of the port). |
+| `1437cb9e` | kit: eight additive props out of this wave (`SlimHero.sectionClassName`, `CoverageItem.href` + optional icon, `StatsCounter.tone/columns`, `Calculator.headingLevel`, `ReadingProgress.className`, `TableOfContents.stickyMobile`, `TestimonialsSection.headingId`, `PageShell.bypassWhen`), plus the accordion focus ring reading `--kit-focus-ring`. Kit tests 439/439. |
+| `f17702ff` | kit: `BlogSidebarCta` note, `Eyebrow className`, `RelatedArticles` stretched-link focus ring (was `outline-none` with a 2.63 indicator). |
+| `a045e4a3` | gap-fix after R2, R3 and V1. |
+| `a6cb6630` | the help widget from the kit, owner ruling 2026-09-29. tsc clean, 135/135. |
+| `0b08df0a` | kit: `CoverageCards columns` accepts 4. |
+| `20f48e9d` | kit: the widget upgrades to a modal only on a deliberate open (the GF8 re-cut that closed hospitality R4 W-B1; the same fix moved the startups-tech tags). Kit tests 444/444. |
+| `95ce72a4` | gap-fix after R4: widget hidden on the research embed route, sixteen opener lines cut to one sentence each with a test enforcing it, a hairline seam between the closing panel and the footer, four research stat captions from white/80 to white. tsc clean, 138/138. |
+| `ac897ad1` | the research stat cards lose the `bg-white/10` tint so those four 14px captions actually clear 4.5 (4.25 to 5.09). **Tagged `port-hospitality-complete` and `port-hospitality-uplift`.** |
+
+One `next build` per checkpoint, served on `next start -p 3202`, identity asserted before
+every measurement (`<title>Specialist Hospitality Accountants UK</title>`). Port 3203 belonged
+to the ecommerce uplift and was never touched from this wave.
+
+### Verdicts
+
+| pass | verdict | headline |
+|---|---|---|
+| **V1** wave verification | 28 PASS, 2 FAIL, 3 NOTE, 2 not fully verified | FAILs were both literal-grep artefacts: unaccounted hex outside the four permitted files, and 2 `neutral-*` hits in manager-owned files. tsc clean, 61/61 tests, sweep 59/59 with 0 dead links and 978 links against a 667 baseline, 202 JSON-LD blocks parsing, gate 9.1 all graded rows clear, contrast 26 against the 219 carried out of phase 0. |
+| **R2** design review | PASS-WITH-GAPS | 1 blocker, 9 gaps, 4 nits. Four-marker row recorded 2/1/5/22. The blocker (nested scroll containers on 23 posts) was **rejected**. |
+| **R3** content review | FAIL | 1 blocker, 5 gaps, 3 nits. 290 of 290 FAQ questions and answers visible outside the script, no body link lost. The blocker was **rejected**. |
+| **R4** re-review | WAVE PASS-WITH-GAPS; **WIDGET FAIL** | All eleven expected closures verified closed, all four manager rulings verified true. Two new wave findings (the dark panel meeting the dark footer on 17 routes, six sub-floor text pairs the instrument cannot see). Two widget blockers: the auto-opened panel captured forward Tab so the launcher was unreachable in 420 presses, and the widget rendered inside the chrome-free partner embed. |
+| **R4b** final check | WAVE PASS-WITH-GAPS; **WIDGET PASS** | Both widget blockers closed on first measurement (launcher at Tab press 83 on `/` and 43 on a calculator, `aria-modal` never `"true"` during the pass-through, deliberate opens still trap, Escape returns focus). One item left open: four stat captions at 4.25, not the 5.09 the fix commit's own comment claimed. Closed by `ac897ad1`. |
+
+### Rejected, with the reason
+
+1. **R3 blocker 1, "a published FAQ answer was rewritten".** R3 took
+   `port-hospitality-phase0` as the BEFORE. `port-hospitality-phase0^:hospitality/web/src/data/hospitality-services.ts:77`
+   is byte-identical to HEAD; phase 0 is what stripped the anchor, and the wave restored the
+   original. Direction inverted, not a defect.
+2. **R2 blocker 1, "nested scroll containers on 23 blog posts".** The two scroll containers are
+   on two different mounts. The clamped `<ul>` belongs to the mobile mount, whose ancestor is
+   `display:none` at 1440, the width the reviewer measured at. Exactly one scroll container in
+   the visible branch.
+3. **R2 G1 and G3, `SlimHero` and `CoverageCards` "declined on a stale reason".** Re-derived
+   against the kit at `f17702ff` and found **true**: `SlimHero` has a required `eyebrow` and no
+   breadcrumb slot while all 11 brand heroes carry a breadcrumb above the H1; `CoverageCards`
+   has a required `body` while the six homepage cells publish a label and an href only. The
+   declines stand; only their written reasons were refreshed.
+4. **R5-style "instrument says 0, therefore the site clears 4.5".** Rejected as a claim.
+   `browser_check.mjs` holds anything at or above 15px to a 3:1 floor and computes from the
+   uncomposited colour, so text alpha is invisible to it. Six real sub-floor pairs were found
+   by canvas compositing behind an instrument reading of 0.
+
+### Residuals at close
+
+- **Owner calls, recorded not fixed:** the hero standfirst at white/80 on brand (3.87) on 13
+  routes; the stock orange accents on the homepage; the dark closing panel meeting the dark
+  footer (a hairline is in, at 1.23 to 1 it is a hint rather than a rule, and the shape is
+  estate-wide); the widget on the 404 page (a kit limitation, an additive fix is proposed in a
+  comment at the mount); the AdSense `frame-src` host missing from the kit CSP
+  (`packages/web-shared/lib/security-headers.ts`, 164 console errors per load, estate-wide,
+  the session classifier refused the edit as a security weakening).
+- **Dead but harmless:** `text-slate-300` survives in the rendered class string on five
+  `Eyebrow onDark` call sites, overridden by the appended `className`. The outcome is right;
+  the class is dead. A kit-side change is proposed in a comment at the call site.
+- **Not exercised:** the used-calculator opener ladder did not fire from synthetic input
+  events in R4b. Not a defect found, just not proved.
+- **Pre-existing and out of scope:** the h1-to-h3 heading jump on the three calculator pages
+  (filed by P0-E, answered estate-wide by the kit `Calculator headingLevel` prop, which is
+  still to be swept across 15 templates).
+
+### Tags and agents
+
+`port-hospitality-phase0` `36d2b4fe` / `-phase1` `56c3f468` / `-phase2` to `-phase6`
+`577e22e2` / **`-complete` = `-uplift` = `ac897ad1`**.
+
+Agents: about 40 on this site (9 in phase 0, then phase 1, the six wave packages, one
+verification executor, R1, R2, R3, R4, R4b, three gap-fix rounds and the widget work). Nothing
+pushed, nothing deployed, no CI run, no monitor or alert created.

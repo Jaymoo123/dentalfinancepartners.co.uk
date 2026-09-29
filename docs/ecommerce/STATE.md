@@ -1,5 +1,100 @@
 # ecommerce (Ecommerce Finance) site state
 
+## 2026-09-29 DESIGN UPLIFT (built, not deployed, owner has not walked it)
+
+Commits: `a5fff093` (U4 foundations, alone), `2f1a6168` (U1 homepage, U2 hubs and detail, U3
+blog and lead kit), `074b39ce` (gap-fix after R5). Plan and receipt:
+`docs/ecommerce/_port/UPLIFT_PACKAGES.md` (section 0 the measured starting point, A to E the
+packages and the numbered false premises, H the gap-fix receipt); review:
+`docs/ecommerce/_port/R5_UPLIFT_REVIEW.md`. The design port itself was already complete and
+tagged `port-ecommerce-complete` on 09-26; this is the uplift that follows it.
+
+### What this uplift actually was
+
+**Not a rescue.** This site went into the uplift already on the Property and generalist
+four-marker row, **1 / 2 / 3 / 4**, with the backdrop mounted, `--radius` declared, no wrapper
+`data-cta` defect and an empty focus-ring row. Three of the four blockers the startups-tech
+shape expects do not exist here. The real gaps were kit breadth and lead instrumentation, and
+that is what shipped:
+
+- **Every enquiry form now reports.** `LeadForm` gained `ctaId` and `ctaPlacement`, and all
+  **19 mounts** carry their own id, with a test that fails if one is missed or two collide.
+  The step-1 "Continue" button is tagged as well as the step-2 submit, which is the half that
+  makes it measurable at all: step 2 is client-only, so a static scan would have found
+  nothing. Tagged CTAs went from 51 on one pattern to 105 across 17.
+- **13 hand-rolled `crumbOnBrand` wrappers are gone**, replaced by the kit `Breadcrumb tone`
+  prop (`6799f928`). The contact page was the thirteenth and had been missed.
+- **`CoverageCards` on the hubs and the homepage**, at four across (kit `0b08df0a` taught the
+  component to accept 4, so a four-item set no longer orphans its fourth card). `/vat` stays
+  at three because a `columns={4}` there would render 4 plus 1 and create the defect.
+- **The second grey ramp is gone.** `neutral-*` 517 hits to 11 (all of what is left is inside
+  `LeadForm.tsx` or a comment), `slate-*` 280 to 784. One ramp, and it is the kit's.
+- **`btnOnDark` taken from the kit**, backdrops on the slim heroes, the motion gate measured
+  rather than assumed, and the related-article card's focus glow moved out of
+  `@layer components` where it had been inert.
+- Tests **50 to 57**, tsc clean.
+
+### Review
+
+**R5: PASS-WITH-GAPS** (4 blockers, 12 gaps, 4 nits). The content freeze held cleanly: 0
+sentences removed, 0 changed, 6 added instances of 2 strings both already published on sibling
+routes. Every gate 9.1 row passes. The blockers were the instrumentation shortfall on 15 money
+routes (fixed in `074b39ce` by tagging the panel buttons rather than links that do not exist)
+and one keyboard defect on the related-article cards (fixed).
+
+<!-- R6 -->
+**R6 re-review: PASS-WITH-GAPS** (`docs/ecommerce/_port/R6_UPLIFT_REREVIEW.md`, landed while
+this block was being written). All four R5 blockers closed or correctly ruled; nine of twelve
+gaps fixed and measured; the content freeze is absolute, zero user-facing sentences changed;
+the gate holds on all eight rows and the four-marker row is unmoved. **Seven items left open.**
+One is a live revenue defect this wave did not cause: AdSense frames are blocked by the site's
+own security header on every route and width, the same estate-wide problem hospitality found.
+One is a real regression from the gap-fix: the blog post sidebar now has two nested scroll
+containers where the brief asked for one. The rest are documentation defects in the receipt
+and in comments the fix shifted. **Fix the regression and the AdSense host before the
+deploy**; read the R6 doc for the list.
+
+### Manager rulings taken during the wave, for the owner to ratify
+
+1. **The FAQs stay as native expanders.** This site's five FAQ templates use the browser's own
+   `<details>` element, which keeps every answer in the page source, so its FAQPage schema
+   already matches what it renders. It was never exposed to the defect that hit generalist and
+   Medical. The kit accordion was not adopted here.
+2. **The four hub labels are now config rather than hard-coded** ("What we do", "Who we help",
+   "VAT guides", "Reports"). Verified byte-identical to what the pages published before.
+
+### Pre-existing, not caused by this wave
+
+Every route lost one unique internal link on 28 September (`09acd2af`), when the footer's
+"Book a consultation" was pointed at `/contact#form`, which collapses to `/contact` and is
+already linked from the header. No link was restored to make a number go up, and the footer
+was not touched. Compare link floors against the post-`09acd2af` count, not `sweep_final.json`.
+
+### Questions for the owner
+
+1. **The enquiry panel sits directly on the dark footer on 32 pages**, so the bottom of those
+   pages reads as one solid dark block. The house component has a setting that puts the panel
+   on a light band instead, made for exactly this. Switch it on, or do you like the solid dark
+   block?
+2. **The four "who we help" boxes on the home page.** They went to two wide cards during the
+   wave because the house component only offered two or three across; the component now offers
+   four, and they are back to a row of four on a wide screen. Confirm that is what you want.
+3. **The FAQs on this site open and close using the browser's own expander**, not the animated
+   one the other ported sites use. It is simpler, and it keeps every answer in the page source
+   for Google. Leave it, or match the other sites?
+4. **Nothing on this site moves.** The house animation sheet was deliberately left out.
+   Turning it on is a contained job now. Do you want it?
+5. **The footer "Book a consultation" link**, above: was pointing it at the contact form the
+   intention, or should the booking page get its own link back?
+
+### Status
+
+**Not deployed. The owner has not walked it.** Held out of the 09-29 fourteen-site deploy
+round. The walk is `next start` on port 3203 from `port-ecommerce-complete` plus these three
+uplift commits, then a deploy from the commit R6 passes. Nothing pushed, no CI run.
+
+
+
 Last updated 2026-07-15 (HARDENED + PARITY + WAVE-2 BUILT, deploy held). Generated by
 `optimisation_engine.ops.spinup_site`. Tranche: **3**.
 

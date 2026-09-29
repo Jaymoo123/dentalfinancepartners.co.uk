@@ -2,10 +2,14 @@
 
 ## STOP. Read this screen before anything else. (2026-09-13)
 
-**Eight sites are fully ported** (generalist, solicitors, dentists, medical,
-construction-cis, contractors-ir35, charities, crypto), tagged. **ALL EIGHT LIVE 2026-09-16**
-(`9e43db45`, plus Property with the header fix), header measured on every live domain. **Eight sites remain**: digital-agency, wills-probate,
-divorce-finances, startups-tech, pharmacies, care, hospitality, ecommerce.
+**ELEVEN sites are fully ported** (generalist, solicitors, dentists, medical,
+construction-cis, contractors-ir35, charities, crypto, and as of 2026-09-29 startups-tech,
+ecommerce and hospitality), tagged. Derive the list from `git tag -l 'port-*'`, which is what
+that count came from. **The first eight went LIVE 2026-09-16** (`9e43db45`, plus Property with
+the header fix), header measured on every live domain; **startups-tech, ecommerce and
+hospitality are built and tagged but NOT deployed** (owner walk pending on ecommerce and
+hospitality). **Five sites remain**: digital-agency, pharmacies, care, wills-probate,
+divorce-finances.
 **Re-derived 2026-09-23 and still correct**, by kit-import count rather than by prose: the eight
 ported sites import `web-shared/design` in 13 to 48 files each, the eight remaining in **zero**.
 Property imports zero too, because it is the standard the kit was cut from, not a site awaiting a
@@ -1555,3 +1559,117 @@ spawned their own workers.
 RULE: write the phase's package list down before launch and tick it off at close, with a
 receipt per package. Cap concurrent agents at 6, and state in every brief whether that
 agent may delegate. Default: "Do NOT launch subagents."
+
+## 19. Traps added by the hospitality port and the ecommerce uplift (2026-09-29)
+
+**T-H1. A webfont can be "loaded" in source, pass the gate row, and never apply.**
+hospitality's phase 1 plan recorded the webfont as genuinely loaded, on a source read plus the
+§9.1 row 3 grep, and told the phase not to re-do it. R1 measured
+`getComputedStyle(document.body).fontFamily` and got the system stack on every page of the
+site. The `next/font` variable was bound on `<body>` while the token was declared on `<html>`.
+Plus Jakarta Sans had never applied, at any point.
+**RULE: gate row 3 proves the import exists, not that the face paints. Read
+`getComputedStyle(document.body).fontFamily` in the rendered DOM once per port, at phase 1,
+and put the string in the receipt.**
+
+**T-H2. `browser_check.mjs` cannot see text alpha, so "contrast failures: 0" is narrower than
+it reads.** The instrument computes the ratio from the uncomposited `cs.color` and holds
+anything at or above 15px to 3:1. On hospitality that hid six real sub-floor pairs, all on
+brand grounds: an 18px `text-white/80` standfirst at 3.87 on five routes, an 18px
+`text-white/85` at 4.14 on four, and 14px `text-white/80` captions at 3.29.
+**RULE: any `text-white/NN` or other alpha colour on a coloured ground is measured by canvas
+compositing of a real screenshot, never by the instrument. A 0 from the instrument is not a
+claim that the site clears 4.5.**
+
+**T-H3. Compositing again, one layer up: a tint card changes the ground.** The first fix for
+those captions took them to full white and the commit comment recorded 5.09, the figure for
+white on the bare brand hex. The captions sit inside a `bg-white/10` card over that hex, whose
+composited ground reads `rgb(184,100,68)`, so the achieved figure was 4.25 and still under the
+floor. R4b caught it; `ac897ad1` dropped the tint.
+**RULE: measure the ground the text is actually on, including every translucent card between
+it and the paint, and put the measured figure in the comment, not the one you expected.**
+
+**T-H4. A reviewer measuring a `display:none` element reports a defect that does not exist.**
+R2 filed a blocker for nested scroll containers on 23 blog posts. The two containers are on
+two different mounts and the clamped one belongs to the mobile mount, whose ancestor is
+`display:none` at the 1440 width the reviewer used. R4's `display:none`-ancestor walk closed
+it.
+**RULE: every rendered-DOM finding carries the element's `display:none` ancestor (walk up and
+record it). A finding on a hidden mount is not a finding.**
+
+**T-H5. A reviewer that takes the wrong commit as BEFORE inverts the direction of a change.**
+R3 filed a FAIL blocker saying the wave rewrote a published FAQ answer, using
+`port-hospitality-phase0` as BEFORE. `port-hospitality-phase0^` is byte-identical to HEAD;
+phase 0 was the regression and the wave restored the original sentence.
+**RULE: the BEFORE for a prose freeze is the pre-PROGRAMME commit, named explicitly in the
+brief as a SHA. A phase tag inside the same programme is a midpoint, not a baseline.**
+
+**T-H6. A kit SHA in a call-site ledger goes stale within the day.** Declines on hospitality
+were written and judged against kit `70047cb6` while the kit had already moved to `1437cb9e`
+and then `f17702ff`. Two "correct when written" declines were false against the tree the wave
+actually shipped on. The same pattern hit ecommerce, where a sibling site's uplift doc
+asserted ecommerce imports `FaqSection` eleven times; it imports it zero times, and the eleven
+hits are decline comments naming the kit path.
+**RULE: every decline comment carries the kit SHA it was derived against, and the re-review
+re-derives it at the current kit SHA. A grep that counts comments is not a census of code:
+comment-strip first.**
+
+**T-H7. A test that asserts half a rule reads as the rule being enforced.** The opener voice
+rule is "one sentence, under 20 words". Only the word count was tested, it passed, and 16 of
+27 authored lines were two sentences. The word-count half also missed the exit and friction
+templates, which reach 21 words once the longest topic noun is substituted.
+**RULE: when copy has a voice rule, assert every clause of it, and assert it on the rendered
+string including any template substitution, not on the raw literal.**
+
+**T-H8. A widget that opens by itself can eat the keyboard.** The shared help widget armed its
+focus trap on any inbound focus, so a forward Tab from the page was captured at the auto-opened
+panel and the launcher was unreachable in 420 presses. It shipped that way on startups-tech
+first, where an earlier walk had recorded the launcher reachable at 103 presses, almost
+certainly with the panel closed. Fixed in the kit (`20f48e9d`): upgrade to modal only on a
+pointer press, Enter, Space, the launcher, or a focus that started inside the panel.
+**RULE: a keyboard walk on a surface that auto-opens is run from `document.body` with the
+surface in its default auto-opened state, and the press count is recorded per route. Reaching
+it after an Escape is a different measurement and does not close the check.**
+
+**T-H9. A builder ran `git stash` and `git stash pop` mid-wave.** Nothing was lost, verified,
+but the working tree is shared by every concurrent package and a stash takes all of them.
+**RULE stands and is restated: no agent runs `git checkout`, `restore`, `stash`, `reset` or
+`clean`, ever. The manager commits per package.**
+
+**T-H10. Agents leave scratch files in the repo.** Several landed in `scripts/` during the
+hospitality wave and were deleted at close.
+**RULE: scratch goes in the session scratchpad, named per agent, and the agent deletes it and
+says so in its receipt. The manager greps `git status` for untracked files before every tag.**
+
+**T-H11. An instrument baseline that nobody re-derived is not a baseline.** V1 read its own
+`browser_check` run as "grounds breaches = 0, darkOnDark false everywhere" while the same run
+reported `darkOnDark: true` on 17 routes; the row is observational, not graded, and V1 read
+past it. That is the finding R4 then filed as new.
+**RULE: a verification row quotes the decisive line from the output file, not a summary of it.
+Observational rows are read and classified, not skipped because they are not graded.**
+
+**T-H12. The ecommerce uplift's biggest finding was that most of the plan did not apply.**
+Three of the four blockers the startups-tech shape expects (undeclared `--radius`, wrapper
+`data-cta`, the no-JS FAQ hide) do not exist on ecommerce, which entered its uplift already on
+the Property four-marker row.
+**RULE: run section 0 of the uplift plan (the measured starting point) before writing the
+packages, and let it delete packages. A shape that worked on the last site is a hypothesis,
+not a plan.**
+
+**T-H13. Step-2 form controls are invisible to a static CTA census.** ecommerce's enquiry
+panels looked untagged because the submit button lives behind client-only step-2 state, so
+`cta_snapshot` found nothing. The fix tags the step-1 "Continue" button as well.
+**RULE: instrument the control that exists in the server HTML, or the census will report a
+hole that is not there and a fix that cannot be proved.**
+
+**T-H14. A component prop that orphans a card is a density defect, not a taste one.**
+`CoverageCards` offered two or three columns, so a four-item set rendered as two fat cards or
+as three plus an orphan. The kit now accepts four (`0b08df0a`).
+**RULE: check the call site's item count against the component's column options before
+adopting it, and raise the kit prop rather than dropping items or accepting the orphan.**
+
+**T-H15. A phase tag is still not the end of a port, and neither is the first "final" check.**
+hospitality's six phase tags sit on one commit, four further commits followed, and R4b, the
+final check, still found one open item that needed `ac897ad1`.
+**RULE: `port-<site>-complete` moves to whatever the last fix commit is, and the STATE.md close
+block names that SHA. Anyone deploying checks out the `-complete` tag.**
