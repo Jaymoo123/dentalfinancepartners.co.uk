@@ -178,3 +178,73 @@ phase 0 report, STATE.md (dated 2026-09-28 entries). Memory: `leads_250_programm
    classifier refused it from a session, the owner may run it in the SQL editor).
 5. An independent live check by fresh agents afterwards, report only, about 10 agents, the same
    shape as 3.1 but against the live domains.
+
+### A.0 The bar and the canary order (written 2026-09-29, before any deploy)
+
+Owner shape agreed 2026-09-29: Property alone first, 48 clean hours, then the rest. Nothing below
+is a monitor or an email; it is read by hand at day 7 and day 28 and written into this file.
+
+**Baseline, pulled 2026-09-29 (leads = Supabase `leads`, `is_test` excluded; search = fresh API
+pulls, 28 days to 2026-09-27):**
+
+| window | estate leads | Property leads | Property `calc_result_gate` leads |
+|---|---|---|---|
+| 09-01 to 09-14 | 46 | 34 | 7 |
+| 09-15 to 09-28 | 46 | 28 | 2 |
+
+| site | GSC clicks 28d | GSC impressions 28d | Bing clicks 28d |
+|---|---|---|---|
+| Property | 1,265 | 125,921 | 1,289 |
+| Solicitors | 917 | 69,728 | 632 |
+| Dentists | 201 | 16,200 | 307 |
+| generalist | 188 | 26,268 | 615 |
+| construction-cis | 128 | 15,725 | 78 |
+| Medical | 90 | 5,283 | 325 |
+| charities | 55 | 8,202 | 111 |
+| care | 40 | 2,706 | 15 |
+| pharmacies | 36 | 2,470 | 15 |
+| hospitality | 14 | 1,659 | 42 |
+| ecommerce | 13 | 5,242 | 6 |
+| contractors-ir35 | 8 | 1,834 | 38 |
+| startups-tech | 6 | 2,293 | 15 |
+| crypto | 4 | 512 | 6 |
+| digital-agency | 1 | 943 | 116 |
+| wills-probate, divorce-finances | not in the pull script's site list (fix before the day-28 read) | | |
+
+**The bar (a miss is a finding to investigate, not an automatic rollback):**
+
+1. Day 7 after the Property canary: Property leads in the 7 days >= 12 (85% of its 14-day
+   average halved). Below that, hold the other 16 and read `web_sessions` first: a beacon or
+   env failure reads exactly like a conversion loss.
+2. Day 7 after the rest: estate leads in the 14 days that follow >= 39 (85% of 46). Small sites
+   carry too few leads for a per-site bar; a site at zero is a question (beacons, env vars,
+   nurture flag), never a regression on its own.
+3. Day 28: GSC clicks per site within 15% of the table above for the five sites over 100
+   clicks (Property, Solicitors, Dentists, generalist, construction-cis). Positions are not the
+   measure; a click drop with flat impressions is a title or snippet problem, a drop in both is
+   indexing. Compare against a fresh pull, never a stored snapshot.
+4. Property calculator leads are NOT a bar. The gate produced 7 then 2 leads per fortnight before
+   removal; `calc_result_form` replaces it and the difference is inside noise for a month.
+
+**Order:** Property (day 0), then Medical, contractors-ir35, care, charities (day 2 if bar 1
+holds), then the eleven others the same day. **startups-tech is excluded** from this deploy: its
+design port is mid-flight, and it ships on its own `port-startups-tech-phase6` tag after the
+mop-up, from a later SHA.
+
+**Rollback:** per site, instant, `vercel promote <previous deployment>`; the previous production
+deployments were listed from the API on 2026-09-29 (seven sites at 09-28, two legal at 09-25,
+eight at 09-23/24). Remove the stale `C:/dep` worktree (still at `815ae7de`) before creating the
+new one at the pushed SHA.
+
+**A.0 addendum (2026-09-29):** the fresh-pull script reads `public.sites.gsc_property_url`; the
+two legal sites' rows are NULL, so their day-28 read errors. The session classifier refuses the
+write ("Modify Shared Resources"); owner paste in the Supabase SQL editor, same shape as the other
+17 rows, reversible by setting the column back to NULL:
+
+```sql
+UPDATE public.sites SET gsc_property_url = 'sc-domain:estateplanningspecialists.co.uk' WHERE site_key = 'wills-probate';
+UPDATE public.sites SET gsc_property_url = 'sc-domain:divorcefinancespecialists.co.uk' WHERE site_key = 'divorce-finances';
+```
+
+Bing for the same two sites depends on the domains being verified in Bing Webmaster Tools, not
+on config; check on the day-28 read.

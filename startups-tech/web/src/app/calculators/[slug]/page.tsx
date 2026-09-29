@@ -41,7 +41,7 @@ export default async function CalculatorToolPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildCalculatorJsonLd({ name: tool.name, description: tool.metaDescription, path: `/calculators/${tool.slug}` }) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
-      <main>
+      <div>
         <section className="bg-[var(--brand-primary)] py-12 sm:py-16">
           <div className="mx-auto max-w-4xl px-6">
             <nav className="text-sm text-white/70">
@@ -81,7 +81,7 @@ export default async function CalculatorToolPage({ params }: Props) {
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

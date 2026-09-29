@@ -77,7 +77,7 @@ const datasetJsonLd = buildDatasetJsonLd({
 
 export default function StartupFormationSurvivalIndexPage() {
   return (
-    <main>
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       {/* Hero */}
       <section className="border-b border-neutral-200 bg-[#1e1b4b] py-16 sm:py-20">
@@ -895,6 +895,6 @@ export default function StartupFormationSurvivalIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

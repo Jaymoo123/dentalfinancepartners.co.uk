@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function CalculatorsPage() {
   const tools = allTools();
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16">
+    <div className="mx-auto max-w-4xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
         Startup tax calculators
       </h1>
@@ -34,6 +34,6 @@ export default function CalculatorsPage() {
           </Link>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

@@ -109,7 +109,7 @@ export default function TechFundingReliefsIndexPage() {
   );
 
   return (
-    <main>
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqJsonLd }} />
 
@@ -440,6 +440,6 @@ export default function TechFundingReliefsIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

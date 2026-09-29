@@ -9,30 +9,159 @@
    which can include a bare <table>. prose-standard.css has no scroll wrapper for it,
    so a wide table pushes the whole 390px viewport out (measured scrollWidth 592).
    display:block + overflow-x:auto on the table itself is the CSS-only fix: no JS
-   wrapper needed, and it does not touch the shared stylesheet other sites use. */
+   wrapper needed, and it does not touch the shared stylesheet other sites use.
+   Confirmed deliberate at P0C_CSS_TOKEN_AUDIT.md, kept unchanged. */
 .prose table {
   display: block;
   overflow-x: auto;
   max-width: 100%;
 }
 
-:root {
-  --background: #ffffff;
-  --surface: #f8fafc;
-  --surface-elevated: #ffffff;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --muted: #475569;
-  --border: #e2e8f0;
+/* ===========================================================================
+   PRIMARY RAMP  -  indigo #4f46e5, LOCKED at the 600 step.
 
-  /* Canonical brand tokens for @accounting-network/web-shared components. */
-  --brand-primary: #4f46e5;
-  --brand-primary-strong: #4f46e5;
-  --brand-on-primary: #ffffff;
+   Unlike the amber and copper ports, this brand hex needs no accessibility
+   shift. #4f46e5 measures 6.29:1 against white, which clears all three floors
+   at once (P0C_CSS_TOKEN_AUDIT.md "Contrast table"):
+     3:1 graphic floor ............ PASS (6.29)
+     4.5:1 text floor ............. PASS (6.29)
+     4.5:1 ground-under-white-text  PASS (6.29, white on #4f46e5)
+   So --brand-primary-text and --brand-primary-ground are NOT declared below:
+   the single brand value already carries every role safely.
+
+   Values are Tailwind v4's own indigo scale, unmodified, so 600 is exactly
+   the brand hex and every other step is a well-known, already-published
+   colour rather than an invented one.
+   =========================================================================== */
+@theme {
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5; /* the brand hex. 6.29 on white: passes graphic, text and ground-under-text */
+  --color-primary-700: #4338ca; /* button ground: white label 7.90 */
+  --color-primary-800: #3730a3; /* button hover: white label 9.93 */
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b; /* the homepage hero ground (app/page.tsx:404) */
 }
 
-body {
-  background: var(--background);
-  color: var(--ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+@theme inline {
+  /* The chrome package (another builder, this port) mounts next/font Geist with
+     variable "--font-geist-sans" on <html>. Confirmed the package resolves from
+     this workspace: `node -e "require.resolve('geist/font/sans')"` from
+     startups-tech/web resolved to node_modules/geist/dist/sans.js. The fallback
+     inside the var() is deliberate: until the chrome lands, and on any route
+     where the font fails to load, this still resolves to a real stack instead
+     of invalidating the body font-family declaration outright. */
+  --font-sans: var(--font-geist-sans, ui-sans-serif), system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --surface: #f8fafc;
+    --surface-elevated: #ffffff;
+    --ink: #0f172a;
+    --ink-soft: #334155;
+    --muted: #475569;
+    --border: #e2e8f0;
+
+    /* Canonical brand tokens for @accounting-network/web-shared components.
+       No --brand-primary-text / --brand-primary-ground override: see the ramp
+       comment above, the one brand hex already clears all three floors. */
+    --brand-primary: #4f46e5;
+    --brand-primary-strong: #4f46e5;
+    --brand-on-primary: #ffffff;
+
+    /* Button ground trio, read by the kit's btnPrimaryBase recipe
+       (packages/web-shared/design/layout-utils.ts:66-67) with the
+       600/700/800 primary steps as fallbacks. LOCKED DECISION: buttons sit at
+       the 700 step, not 600, so declared explicitly rather than left to the
+       kit's fallback. White label: 700 = 7.90, 800 = 9.93, 900 = 11.97 (all
+       PASS 4.5:1). */
+    --btn-ground: #4338ca;
+    --btn-ground-hover: #3730a3;
+    --btn-ground-active: #312e81;
+
+    /* ---------------------------------------------------------------------
+       FOCUS RING, TWO-VALUED. The ring must contrast with the GROUND behind
+       the control (every recipe below carries outline-offset-2, so the ring
+       paints two pixels OUTSIDE the control, on whatever the section is
+       painting), and this site paints both. primary-600 on white is 6.29,
+       comfortably past the 3:1 graphic floor, but on the homepage hero's dark
+       grounds it fails: measured against the literal hex stops in
+       app/page.tsx (row 7 of the kit-adoption gate),
+         primary-600 on #1e1b4b (line 404 hero fill) ......... 2.54  FAIL
+         primary-600 on #0f0e2a (line 405 gradient `to` stop)  2.99  FAIL
+         primary-600 on the #312e81/70% `via` stop, composited
+           over the #1e1b4b `from` stop ...................... 2.03  FAIL
+         primary-600 on #312e81 (line 445 key-figures band) ... 1.82  FAIL
+       No single ring colour clears both: white clears every dark ground
+       measured (11.4-18.8) but is 1.32:1 on white itself. So the ring is
+       selected by ground, exactly as the ecommerce and charities ports do it.
+       --------------------------------------------------------------------- */
+    --focus-ring-on-light: var(--color-primary-600); /* 6.29 on white */
+    --focus-ring-on-brand: #ffffff; /* 11.4-18.8 on the dark hero/band grounds above */
+
+    /* The ring is SELECTED BY GROUND, and this is the one indirection: every
+       ring recipe reads outline-[var(--focus-ring)] and nothing else.
+       Default is the light value because every section this port has adopted
+       so far paints white or #fafaf9. */
+    --focus-ring: var(--focus-ring-on-light);
+
+    /* Opts the SHARED KIT's own ring into the mechanism above. Kit components
+       (e.g. Breadcrumb) build their ring internally from
+       packages/web-shared/design/layout-utils.ts and a call site cannot
+       override it; pinned to the kit's own default (primary-600) it would
+       measure the same 2.03-2.99 fails on the dark hero/band sections above.
+       Must NOT be written as var(--focus-ring): a custom property whose value
+       is a var() reference resolves at COMPUTED-VALUE TIME on the element
+       that declares it, so this would freeze at the light value here and
+       never follow a later rebind of --focus-ring. Both point at the ground
+       tokens directly. */
+    --kit-focus-ring: var(--focus-ring-on-light);
+  }
+
+  body {
+    background: var(--background);
+    color: var(--ink);
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  /* Rebinds the focus ring for anything painted on a dark ground - the
+     homepage hero (#1e1b4b, app/page.tsx:404) and key-figures band (#312e81,
+     :445) measured above. Put this on the SECTION that paints the dark fill,
+     never on the control, because the ring lands on the ground two pixels
+     outside the control.
+
+     Not yet applied to those sections: app/page.tsx's <main> content is
+     another builder's lease on this port (see receipt, item 7). This
+     declares the mechanism; wiring the class onto the dark sections is that
+     builder's edit, one class each.
+
+     Custom properties inherit, so this must not be applied to a dark section
+     that contains a light-ground card with focusable children, or those
+     children would inherit a white ring onto white.
+
+     In @layer components deliberately: an unlayered rule outranks every
+     Tailwind utility regardless of specificity. This file has one deliberate
+     unlayered rule elsewhere (.prose table, above); this block is layered. */
+  .ground-dark {
+    --focus-ring: var(--focus-ring-on-brand);
+    --kit-focus-ring: var(--focus-ring-on-brand);
+  }
+
+  /* R1 B1: the footer (bg-slate-900, #0f172b) rings its 31 focusable stops at
+     2.84:1 on --focus-ring-on-light, under the 3:1 floor. Rebind both tokens
+     for the footer subtree directly, same recipe as .ground-dark above.
+     Checked: SiteFooter has no light-ground card with focusable children, so
+     nothing here inherits a white ring onto a white ground. */
+  footer {
+    --focus-ring: var(--focus-ring-on-brand);
+    --kit-focus-ring: var(--focus-ring-on-brand);
+  }
 }

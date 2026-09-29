@@ -42,7 +42,7 @@ export default async function CategoryPage({ params }: Props) {
   const posts = getAllPosts().filter((p) => getCategorySlug(p) === category);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
         <Link href="/blog" className="hover:underline">Blog</Link> / {cat.name}
       </p>
@@ -59,6 +59,6 @@ export default async function CategoryPage({ params }: Props) {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }

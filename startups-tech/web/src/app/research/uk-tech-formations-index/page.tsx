@@ -134,7 +134,7 @@ export default function TechFormationsIndexPage() {
   const monthlyRecent = incorporations.monthly.slice(-36); // last 3 years for the monthly chart
 
   return (
-    <main>
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqJsonLd }} />
 
@@ -449,6 +449,6 @@ export default function TechFormationsIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

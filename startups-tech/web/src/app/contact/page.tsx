@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 };
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-2xl px-6 py-16">
+    <div className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">Contact us</h1>
       <p className="mt-4 text-neutral-600">
         Tell us about your startup tax situation. A specialist firm from our partner network may
         contact you directly, and you will hear back within 24 hours.
       </p>
       <div className="mt-10"><LeadForm /></div>
-    </main>
+    </div>
   );
 }

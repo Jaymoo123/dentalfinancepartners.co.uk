@@ -101,7 +101,7 @@ export default function RdTaxReliefIndexPage() {
   const regionSorted = [...region.rows].sort((a, b) => (b.totalCostM ?? 0) - (a.totalCostM ?? 0));
 
   return (
-    <main>
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqJsonLd }} />
 
@@ -387,6 +387,6 @@ export default function RdTaxReliefIndexPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

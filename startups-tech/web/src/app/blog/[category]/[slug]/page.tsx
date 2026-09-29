@@ -76,7 +76,7 @@ export default async function BlogPostPage({ params }: Props) {
   const bodySplit = splitAtSecondH2(post.contentHtml);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-6 py-16">
       {post.schema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
       )}
@@ -125,6 +125,6 @@ export default async function BlogPostPage({ params }: Props) {
           <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
         </div>
       </div>
-    </main>
+    </div>
   );
 }

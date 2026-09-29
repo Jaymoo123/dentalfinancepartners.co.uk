@@ -20,7 +20,7 @@ type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
 // ponytail: literal brand hex, matching layout-utils; no new token layer for two chips.
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-md border px-1.5 sm:px-3 py-2 text-sm font-semibold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4f46e5]";
+  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-md border px-1.5 sm:px-3 py-2 text-sm font-semibold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
 const chipIdle =
   "border-neutral-300 bg-white text-neutral-900 hover:border-[#4f46e5] hover:bg-[#eef2ff]";
 const chipSelected =

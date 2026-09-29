@@ -39,7 +39,7 @@ export function PageShell({ children, nav, header, footer }: PageShellProps) {
         Skip to content
       </a>
       <SiteHeader nav={nav} {...header} />
-      <main id="main" className="flex-1">
+      <main id="main" className="flex-1 scroll-mt-24">
         {children}
       </main>
       <SiteFooter nav={nav} {...footer} />

@@ -150,3 +150,18 @@ with every number are in `docs/startups-tech/_port/PHASE0_PACKAGES.md` (ledger `
 serious rows left by owner decision (composite testimonial standfirst, retention sentence, cookie
 policy vs consented GA4/AdSense). Next: phase 1 chrome (tokens ramp first, alone), then 2 to 6 as
 concurrent packages, per `DESIGN_PORT_PLAYBOOK.md`. Deploy stays parked.
+
+## 2026-09-29 design port, phase 1 (tokens + chrome) BUILT, UNCOMMITTED, review = PASS WITH GAP-FIX
+
+Working tree only, no commit, no tag (`git status`: 17 modified files under `startups-tech/web/`,
+`PageShell.tsx` scroll-mt-24, `geist` dependency, untracked `components/layout/`,
+`components/analytics/`, `tests/focus-ring.test.ts`). tsc clean, vitest 80/80 on the tree
+(re-run 2026-09-29 11:21). Adversarial review `docs/startups-tech/_port/R1_PHASE1_REVIEW.md`:
+one BLOCKER (every footer focusable rings at 2.84:1, `.ground-dark` declared but has zero
+consumers), four SERIOUS (S2 hero and key-figures rings 1.89 and 1.67, deferred to phase 5;
+S3 ring guard bans the wrong literal and four forms bypass the token; S4 uncommitted; S5 kit
+mobile drawer does not trap focus, trap 12, owner decision), seven MINOR. Everything else the
+phase claimed (tokens, nav, landmarks, 31 hrefs 200, embed bypass, Geist loaded, overflow 0)
+measured true. Next: gap-fix B1 + S3 (one Sonnet agent), re-measure, commit and tag
+`port-startups-tech-phase1`, then phases 2 to 6. Deploy parked. The `next start -p 3201` server
+left running from the review was stopped 2026-09-29.

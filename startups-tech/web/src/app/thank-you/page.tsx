@@ -34,7 +34,7 @@ export default async function ThankYouPage({
 
   if (optedOut) {
     return (
-      <main className={shellClass}>
+      <div className={shellClass}>
         <h1 className={headingClass}>You will not hear from us again about this enquiry</h1>
         <p className="mt-4 text-neutral-600">
           We have stopped the reminders. If you change your mind, the contact form is always open.
@@ -42,13 +42,13 @@ export default async function ThankYouPage({
         <Link href="/" className={backLinkClass}>
           Back to the homepage
         </Link>
-      </main>
+      </div>
     );
   }
 
   if (confirmed) {
     return (
-      <main className={shellClass}>
+      <div className={shellClass}>
         <h1 className={headingClass}>Confirmed</h1>
         <p className="mt-4 text-neutral-600">
           Thanks, that is confirmed. A specialist firm from our partner network will contact you
@@ -57,12 +57,12 @@ export default async function ThankYouPage({
         <Link href="/" className={backLinkClass}>
           Back to the homepage
         </Link>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className={shellClass}>
+    <div className={shellClass}>
       <h1 className={headingClass}>Thanks, your enquiry is on its way.</h1>
       {nurtureArmed ? (
         <>
@@ -112,6 +112,6 @@ export default async function ThankYouPage({
           </Link>
         )}
       </div>
-    </main>
+    </div>
   );
 }
