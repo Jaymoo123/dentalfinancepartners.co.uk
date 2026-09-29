@@ -7,12 +7,15 @@
  * above it and names that kit file path, so `grep -n "web-shared/design/layout-utils"`
  * finds every decline as well as every adoption.
  *
- * Deleted, not ported: `linkArrow`, `btnOnTeal` and `btnOnDark`. All three had
- * ZERO consumers anywhere under `ecommerce/web/src`, and `btnOnTeal`/`btnOnDark`
- * were both aliased to `btnSecondary`, a neutral-outline recipe that would have
- * been near-invisible on the dark grounds their names promise. They were
- * leftovers from another site. The kit has a real `btnOnDark` if one is ever
- * needed: import it from packages/web-shared/design/layout-utils.
+ * Deleted, not ported: `linkArrow` and `btnOnTeal`. Both had ZERO consumers
+ * anywhere under `ecommerce/web/src`, and `btnOnTeal` was aliased to
+ * `btnSecondary`, a neutral-outline recipe that would have been near-invisible
+ * on the dark ground its name promises. Leftover from another site.
+ *
+ * `btnOnDark` (U4, 2026-09-29): U1 now has a consumer (the homepage hero's
+ * secondary CTA, currently a hand-rolled `border-white/50 bg-white/10`
+ * string). Wrapped locally below rather than re-exported: measured first, per
+ * the same test `btnPrimary` and `btnSecondary` already passed.
  */
 
 export {
@@ -66,11 +69,13 @@ export const focusRing =
  *
  * `.ground-dark` is a SECTION class, and custom properties inherit, so it
  * cannot express an element-level dark island inside a light section. This site
- * paints exactly that in `src/components/forms/BookingPicker.tsx:27` (the
- * selected slot, `bg-neutral-900`, sitting in a white grid) and at
- * `thank-you/page.tsx:20,137,151`. Those are outside this package's lease; when
- * they are corrected, this is the recipe they need, because putting
- * `.ground-dark` on their parent would hand a white ring to every light sibling.
+ * paints exactly that in `src/components/forms/BookingPicker.tsx:35` (the
+ * selected slot, `bg-slate-900`, sitting in a white grid) and at
+ * `thank-you/page.tsx:71,199,214`. All four are non-interactive (no href, no
+ * tabIndex, aria-hidden icons or plain chips) so none needs a ring today; this
+ * is the recipe the day one of them gains an interactive state, because
+ * putting `.ground-dark` on their parent would hand a white ring to every
+ * light sibling.
  *
  * White: 3.04 / 3.77 / 4.81 / 14.59 against #c9861b / #b5761a / #9e6615 /
  * #1a2942 - all past the 3:1 graphic floor.
@@ -128,3 +133,26 @@ export const btnPrimary =
  */
 export const focusRingAuthoredLinks =
   "[&_a]:focus-visible:outline [&_a]:focus-visible:outline-2 [&_a]:focus-visible:outline-offset-2 [&_a]:focus-visible:outline-[var(--focus-ring)]";
+
+/**
+ * DECLINED (partially): `btnOnDark` from packages/web-shared/design/layout-utils.ts:76.
+ *
+ * Ground, border and text recipe adopted verbatim (`border-white/40`,
+ * `bg-white/5`, `backdrop-blur-sm`, the hover pair). What is wrapped is the
+ * ring, for the same reason `btnPrimary` and `btnSecondary` are wrapped rather
+ * than re-exported: the kit hardcodes `focus-visible:outline-primary-400`,
+ * a fixed Tailwind class that never reads `var(--focus-ring)` or
+ * `--kit-focus-ring`, so it cannot respond to `.ground-dark` and would sit
+ * outside the one-mechanism grep (`outline-\[var\(--focus-ring\)\]`) this port
+ * exists to establish. On this site `primary-400` IS the raw brand hex
+ * (#c9861b, globals.css:56), decoration-only by that file's own comment, so a
+ * ring pinned to it would also be reusing a colour this port has deliberately
+ * kept off every text/ring surface.
+ *
+ * This button is used on dark grounds only (the homepage hero, #1a2942), so
+ * `focusRingOnBrand`'s white outline is not needed either: `var(--focus-ring)`
+ * already resolves to `--focus-ring-on-brand` (#ffffff) inside `.ground-dark`,
+ * and stays correct if a future call site nests it somewhere lighter.
+ */
+export const btnOnDark =
+  "inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-white/40 bg-white/5 px-8 py-3.5 text-base font-bold text-white backdrop-blur-sm transition-all duration-150 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";

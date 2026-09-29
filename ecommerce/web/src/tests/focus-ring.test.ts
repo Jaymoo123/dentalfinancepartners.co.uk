@@ -79,6 +79,7 @@ describe("focus ring: one token mechanism, on every focusable surface", () => {
   it("the site recipes paint --focus-ring and no ramp outline", () => {
     for (const name of [
       "btnPrimary",
+      "btnOnDark",
       "focusRing",
       "focusRingOnBrand",
       "focusRingAuthoredLinks",
@@ -131,7 +132,7 @@ describe("focus ring: one token mechanism, on every focusable surface", () => {
    *     header), which take focus from script, not from the keyboard.
    */
   const RING =
-    /\b(focusRing|focusRingOnBrand|focusRingAuthoredLinks|btnPrimary|btnPrimaryBase|btnSecondary)\b|outline-\[var\(--focus-ring/;
+    /\b(focusRing|focusRingOnBrand|focusRingAuthoredLinks|btnPrimary|btnPrimaryBase|btnSecondary|btnOnDark)\b|outline-\[var\(--focus-ring/;
 
   /** Attributes of one JSX opening tag: scan to the `>` that is not inside {}. */
   const attrsAt = (s: string, from: number) => {

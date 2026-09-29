@@ -34,7 +34,7 @@ export default function Error({
     <div className={`${siteContainer} ${sectionY}`}>
       <div className="mx-auto max-w-2xl text-center">
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Something went wrong</h1>
-        <p className="mt-4 text-base leading-relaxed text-neutral-500">
+        <p className="mt-4 text-base leading-relaxed text-slate-500">
           We encountered an unexpected error. This has been logged and we will look into it.
         </p>
 
@@ -61,7 +61,7 @@ export default function Error({
           </Link>
         </div>
 
-        <p className="mt-8 text-sm text-neutral-500">
+        <p className="mt-8 text-sm text-slate-500">
           If this keeps happening, please{" "}
           {/* text-orange-700 was a raw Tailwind orange, not this site's brand
               ramp. primary-700 is #8a5e1a (5.68 on white), primary-800 #6f4b15

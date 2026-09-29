@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, btnSecondary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 import { siteConfig } from "@/config/site";
 import BookingPicker from "@/components/forms/BookingPicker";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
@@ -25,9 +26,10 @@ export const metadata: Metadata = {
  *
  * HOST CONTRACT: the component writes `relative overflow-hidden` on its own
  * section and `relative z-10` on its own container, so the contract binds the
- * `backdrop` slot rather than the call site. No backdrop is passed: this site
- * owns no brick/texture motif component, so the slot stays empty and nothing
- * can paint over the copy. No breadcrumb by design, this route is noindex.
+ * `backdrop` slot rather than the call site. U4 2026-09-29: EcommerceBackdrop
+ * now passed on all three branches (the stale "this site owns no brick/texture
+ * motif component" reason is corrected; see book/page.tsx for the measured
+ * slate-900 contrast note). No breadcrumb by design, this route is noindex.
  *
  * Body sections are WHITE, not a tinted band: the hero is slate-900 and the
  * kit footer is slate-900, so navy must never be the last thing on the page.
@@ -53,8 +55,9 @@ const bodyClass = `bg-white ${sectionY}`;
  */
 
 /**
- * A DARK ISLAND inside a white section (bg-neutral-900 chip, brand-amber tick
- * at 5.90:1, which passes the 3.0 graphic floor and is unchanged).
+ * A DARK ISLAND inside a white section (bg-slate-900 chip, brand-amber tick
+ * at 5.87:1, past the 3.0 graphic floor; was #171717 at 5.90:1 before the
+ * slate ramp sweep, +/-0.03 from the darker slate-900 hex, no floor crossed).
  *
  * NO FOCUS RING APPLIED, deliberately. `focusRingOnBrand`
  * (src/components/ui/layout-utils.ts:64-79) names this call site, but the
@@ -67,7 +70,7 @@ const bodyClass = `bg-white ${sectionY}`;
  * The tick duplicates the heading, so it is aria-hidden rather than announced.
  */
 const CheckIcon = () => (
-  <div className="mb-8 inline-block bg-neutral-900 p-6">
+  <div className="mb-8 inline-block bg-slate-900 p-6">
     <svg
       aria-hidden="true"
       className="h-16 w-16 text-[var(--brand-primary)]"
@@ -104,12 +107,16 @@ export default async function ThankYouPage({
   if (optedOut) {
     return (
       <>
-      <SlimHero eyebrow="Your enquiry" title="You will not hear from us again about this enquiry" />
+      <SlimHero
+        eyebrow="Your enquiry"
+        title="You will not hear from us again about this enquiry"
+        backdrop={<EcommerceBackdrop />}
+      />
       <section className={bodyClass}>
         <div className={`${siteContainerLg} text-center`}>
           <div className="mx-auto max-w-2xl">
             <CheckIcon />
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+            <p className="mt-6 text-lg leading-relaxed text-slate-600">
               We have stopped the reminders. If you change your mind, the contact form is always
               open.
             </p>
@@ -128,12 +135,12 @@ export default async function ThankYouPage({
   if (confirmed) {
     return (
       <>
-      <SlimHero eyebrow="Your enquiry" title="Confirmed" />
+      <SlimHero eyebrow="Your enquiry" title="Confirmed" backdrop={<EcommerceBackdrop />} />
       <section className={bodyClass}>
         <div className={`${siteContainerLg} text-center`}>
           <div className="mx-auto max-w-2xl">
             <CheckIcon />
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+            <p className="mt-6 text-lg leading-relaxed text-slate-600">
               Thanks, that is confirmed. A specialist firm from our partner network will contact you
               directly.
             </p>
@@ -154,29 +161,29 @@ export default async function ThankYouPage({
 
   return (
     <>
-    <SlimHero eyebrow="Your enquiry" title="Thank you" />
+    <SlimHero eyebrow="Your enquiry" title="Thank you" backdrop={<EcommerceBackdrop />} />
     <section className={bodyClass}>
       <div className={`${siteContainerLg} text-center`}>
         <div className="mx-auto max-w-2xl">
           <CheckIcon />
           {nurtureArmed ? (
             <>
-              <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+              <p className="mt-6 text-lg leading-relaxed text-slate-600">
                 We have just sent you a message to arrange your free review call. Please check your
                 email and phone, and confirm to lock in your callback slot.
               </p>
-              <p className="mt-4 text-base text-neutral-500">
+              <p className="mt-4 text-base text-slate-500">
                 For specialist tax advisory work, including complex structuring and tax planning, we
                 work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
                 that level of advice, it may be their team who contacts you.
               </p>
-              <p className="mt-4 text-sm text-neutral-500">
+              <p className="mt-4 text-sm text-slate-500">
                 Cannot see our email? Please check your spam or junk folder, and mark it as not spam
                 so our messages reach you.
               </p>
             </>
           ) : (
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+            <p className="mt-6 text-lg leading-relaxed text-slate-600">
               For specialist tax advisory work, including complex structuring and tax planning, we
               work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that
               level of advice, it may be their team who contacts you. You can also pick a callback
@@ -187,7 +194,7 @@ export default async function ThankYouPage({
           {/* Endowed progress: 3-step journey. Step 2 is "Details received"; the
               live step is picking a callback window.
 
-              The two completed steps paint DARK ISLANDS (bg-neutral-900 chips)
+              The two completed steps paint DARK ISLANDS (bg-slate-900 chips)
               inside this white section. NO FOCUS RING APPLIED: both are
               <span> elements with no href, tabIndex or interactive role, so
               neither is focusable and `focusRingOnBrand` has nothing to ring
@@ -195,7 +202,7 @@ export default async function ThankYouPage({
               already says which step it is. */}
           <ol className="mx-auto mt-8 flex max-w-xl flex-col gap-3 text-left sm:flex-row sm:items-center sm:justify-center sm:gap-6">
             <li className="flex items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-neutral-900">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-slate-900">
                 <svg
                   aria-hidden="true"
                   className="h-4 w-4 text-[var(--brand-primary)]"
@@ -207,10 +214,10 @@ export default async function ThankYouPage({
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="text-sm font-semibold text-neutral-500">1. Enquiry received</span>
+              <span className="text-sm font-semibold text-slate-500">1. Enquiry received</span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-neutral-900">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-slate-900">
                 <svg
                   aria-hidden="true"
                   className="h-4 w-4 text-[var(--brand-primary)]"
@@ -222,26 +229,26 @@ export default async function ThankYouPage({
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="text-sm font-semibold text-neutral-500">2. Details received</span>
+              <span className="text-sm font-semibold text-slate-500">2. Details received</span>
             </li>
             <li aria-current="step" className="flex items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center border-2 border-[var(--brand-primary)] bg-white text-xs font-bold text-neutral-900">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center border-2 border-[var(--brand-primary)] bg-white text-xs font-bold text-slate-900">
                 3
               </span>
-              <span className="text-sm font-bold text-neutral-900">3. Pick your callback time</span>
+              <span className="text-sm font-bold text-slate-900">3. Pick your callback time</span>
             </li>
           </ol>
 
           {bookingToken ? (
-            <div className="mt-8 border border-neutral-200 bg-white p-3 text-left sm:p-8">
-              <p className="mb-6 text-center text-base font-semibold text-neutral-900">
+            <div className="mt-8 border border-slate-200 bg-white p-3 text-left sm:p-8">
+              <p className="mb-6 text-center text-base font-semibold text-slate-900">
                 Want to skip the back and forth? Pick a time for your call now.
               </p>
               <BookingPicker token={bookingToken} />
             </div>
           ) : (
             <div className="mt-8">
-              <p className="mb-4 text-sm font-semibold text-neutral-600">
+              <p className="mb-4 text-sm font-semibold text-slate-600">
                 Ready to book a time that works for you?
               </p>
               <Link href="/contact" className={btnPrimary}>

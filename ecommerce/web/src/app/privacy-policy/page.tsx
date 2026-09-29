@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
       <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Privacy policy</h1>
-      <p className="mt-4 text-sm text-neutral-500">Last updated: 15 July 2026</p>
+      <p className="mt-4 text-sm text-slate-500">Last updated: 15 July 2026</p>
       <div className="prose-blog mt-8 space-y-6">
           <p>
             This policy explains how {company.legalName} (trading as {siteConfig.name}), referred to here as

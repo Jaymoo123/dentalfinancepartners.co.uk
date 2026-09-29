@@ -167,7 +167,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         {/*
          * AN-01 (opt-out posture): track by default under legitimate interest.
-         * storagePrefix "ectp" FROZEN (spinup 2026-07-15) — hardcoded literal by
+         * storagePrefix "ectp" FROZEN (spinup 2026-07-15): hardcoded literal by
          * design, NEVER from config or env (changing it orphans visitor identities).
          * PF-07: siteKey sourced from niche config, never a literal.
          */}

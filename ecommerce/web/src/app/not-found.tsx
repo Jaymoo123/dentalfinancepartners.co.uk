@@ -11,8 +11,9 @@ import { btnPrimary, sectionY, contentNarrow } from "@/components/ui/layout-util
  * skip link, the single <main id="main">) via PageShell. No breadcrumb: this
  * page answers an arbitrary unmatched URL and has no position in the tree to
  * assert. No `.ground-dark`: the ground is white and the light --focus-ring
- * default is the correct one. text-neutral-500 on white measures 4.73, past
- * the 4.5 floor, so the small print is left alone.
+ * default is the correct one. text-slate-500 on white measures 4.76 (was
+ * #737373 at 4.73 before the slate ramp sweep), past the 4.5 floor, so the
+ * small print is left alone.
  *
  * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx - its
  * docblock scopes it to /thank-you, /book and /complete.
@@ -29,7 +30,7 @@ export default function NotFound() {
   return (
     <div className={`${contentNarrow} ${sectionY} text-center`}>
       <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Page not found</h1>
-      <p className="mt-4 text-base leading-relaxed text-neutral-500">
+      <p className="mt-4 text-base leading-relaxed text-slate-500">
         The page you requested does not exist or has moved.
       </p>
       <p className="mt-8 flex justify-center">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { btnPrimary, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/lead-nurture/tokens";
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
 function NeedsLinkCard() {
   return (
     <NoticeCard>
-      <p className="text-base leading-relaxed text-neutral-600">
+      <p className="text-base leading-relaxed text-slate-600">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
@@ -62,7 +63,7 @@ export default async function CompletePage({
     if (!verdict.ok) {
       inner = (
         <NoticeCard>
-          <p className="text-base leading-relaxed text-neutral-600">
+          <p className="text-base leading-relaxed text-slate-600">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
@@ -100,14 +101,15 @@ export default async function CompletePage({
         /* `tone="primary"` is the good outcome the reader wanted, which is the
            component's own rule that tone is meaning and not decoration. It
            paints bg-primary-50 (#fffbeb) with a primary-600 ring: the body
-           text neutral-600 measures 7.55:1 on that ground, and the ring is
+           text slate-600 measures 7.43:1 on that ground (re-measured after the
+           slate ramp sweep, was #525252 at 7.55:1), and the ring is
            #9e6615 at 40% composited on #fffbeb = 2.2:1, which is decoration on
            a card edge and carries no information on its own. The old card was
            bg-amber-50 with a full-strength border in the raw brand hex
            #c9861b, which is the 3.04 decoration-only colour. */
         inner = (
           <NoticeCard tone="primary" title="You are all set">
-            <p className="text-base leading-relaxed text-neutral-600">
+            <p className="text-base leading-relaxed text-slate-600">
               We have everything we need. A specialist firm from our partner network may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
@@ -129,8 +131,13 @@ export default async function CompletePage({
     <>
       {/* ADOPTED: packages/web-shared/design/primitives/SlimHero.tsx. See the
           adoption note on src/app/book/page.tsx: same three-page contract,
-          same empty backdrop slot, same 11.90:1 on-dark measurements. */}
-      <SlimHero eyebrow="Your enquiry" title="Complete your details">
+          same 11.90:1 on-dark measurements. Backdrop now passed too (U4
+          2026-09-29), same reasoning and same measured slate-900 ground. */}
+      <SlimHero
+        eyebrow="Your enquiry"
+        title="Complete your details"
+        backdrop={<EcommerceBackdrop />}
+      >
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
           Add the last detail we need and a specialist firm from our partner network will be in
           touch to arrange your free review call, no obligation.

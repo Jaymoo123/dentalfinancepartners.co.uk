@@ -4,6 +4,7 @@ import { btnPrimary, siteContainerLg, sectionY } from "@/components/ui/layout-ut
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import BookingPicker from "@/components/forms/BookingPicker";
+import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 
 /**
  * Standalone booking page, linked from every nurture SMS/email as
@@ -36,17 +37,28 @@ export default async function BookPage({
 
           HOST CONTRACT: the component already writes `relative overflow-hidden`
           on its own section and `relative z-10` on its own container, so the
-          contract binds the `backdrop` slot, not the call site. No backdrop is
-          passed: this site has no brick/texture motif component (a monorepo
-          grep for HeroBrickBackdrop finds only sibling sites' own files), so
-          the slot stays empty and nothing can paint over the copy.
+          contract binds the `backdrop` slot, not the call site.
+
+          U4 2026-09-29: backdrop now passed. The stale reason it was empty
+          ("this site has no brick/texture motif component") is corrected:
+          EcommerceBackdrop exists and mounts twice on the homepage. Measured
+          on this hero's `bg-slate-900` (#0f172a) ground, the darkest the
+          backdrop paints on anywhere on this site: white hero copy composites
+          to roughly 15.8:1, clear of every documented case in
+          EcommerceBackdrop.tsx's own contrast note (worst case there is
+          5.32:1 on the #8a5e1a brand hero). No `sectionClassName` override
+          needed, default `bg-slate-900` stands.
 
           Eyebrow `onDark` is slate-300 on slate-900 = 11.90:1. That is the
           same branch phase 3 declined on the #8a5e1a brand hero at 3.83:1; the
           ground is what differs, not the component.
 
           Standfirst text-slate-300 on slate-900 = 11.90:1. */}
-      <SlimHero eyebrow="Your callback" title="Book your free review call">
+      <SlimHero
+        eyebrow="Your callback"
+        title="Book your free review call"
+        backdrop={<EcommerceBackdrop />}
+      >
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
           Pick a day and a time window that suits you. A specialist will call you then, no
           obligation.
@@ -68,7 +80,7 @@ export default async function BookPage({
                  its children as nodes, not as an authored string, so the
                  escaped-markup class of defect cannot apply. */
               <NoticeCard>
-                <p className="text-base leading-relaxed text-neutral-600">
+                <p className="text-base leading-relaxed text-slate-600">
                   This page needs the personal link from your email or text message. If you cannot
                   find it, use the contact form and we will arrange your review.
                 </p>

@@ -60,7 +60,7 @@ export default function CookiePolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
       <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Cookie policy</h1>
-      <p className="mt-4 text-sm text-neutral-500">Last updated: 15 July 2026</p>
+      <p className="mt-4 text-sm text-slate-500">Last updated: 15 July 2026</p>
       <div className="prose-blog mt-8 space-y-6">
         <p>
           This policy describes how {siteConfig.company.legalName} (trading as {siteConfig.name}) uses cookies and
