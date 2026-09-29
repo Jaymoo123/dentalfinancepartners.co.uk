@@ -276,6 +276,7 @@ export default async function CityPage({ params }: Props) {
 
       {/* LOCAL FAQS */}
       <FaqSection
+        alwaysRenderAnswers
         eyebrow="FAQ"
         title={`Frequently asked questions from ${city.name}`}
         faqs={city.localFaqs}

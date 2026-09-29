@@ -199,6 +199,7 @@ export function AudienceStageLayout({ data }: Props) {
       </div>
 
       <FaqSection
+        alwaysRenderAnswers
         className="bg-white py-12 sm:py-16 lg:py-20"
         eyebrow="FAQ"
         title={`Common questions from ${data.displayRoleLower ?? data.displayRole.toLowerCase()}`}

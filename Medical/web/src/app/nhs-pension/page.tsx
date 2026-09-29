@@ -500,6 +500,7 @@ export default function NHSPensionPage() {
 
       {/* One binding: `faqs` feeds both this section and buildFaqPage above. */}
       <FaqSection
+        alwaysRenderAnswers
         className="bg-white py-12 sm:py-16 lg:py-20"
         eyebrow="FAQ"
         title="NHS pension questions doctors ask"

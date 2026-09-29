@@ -468,7 +468,7 @@ export default function HomePage() {
 
       {/* 16. FAQ: the same `faqs` binding that feeds buildFaqPage above, so the
           rendered questions and the FAQPage schema cannot drift. */}
-      <FaqSection eyebrow="Common questions" title="The honest answers" faqs={faqs} />
+      <FaqSection eyebrow="Common questions" title="The honest answers" faqs={faqs} alwaysRenderAnswers />
     </>
   );
 }

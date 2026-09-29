@@ -289,7 +289,7 @@ export default function UkBusinessDensityMapPage() {
         />
       </div>
 
-      <FaqSection faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" />
+      <FaqSection faqs={faqs} className="bg-white py-12 sm:py-16 lg:py-20" alwaysRenderAnswers />
     </>
   );
 }

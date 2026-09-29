@@ -305,6 +305,7 @@ export default function RDPage() {
       </div>
 
       <FaqSection
+        alwaysRenderAnswers
         eyebrow="FAQ"
         title="R&D credit FAQ"
         faqs={FAQ_ENTRIES}

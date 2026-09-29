@@ -345,6 +345,7 @@ export default function ServicesPage() {
       </section>
 
       <FaqSection
+        alwaysRenderAnswers
         faqs={FAQS}
         eyebrow="Before you engage"
         title="Questions we get asked first"
