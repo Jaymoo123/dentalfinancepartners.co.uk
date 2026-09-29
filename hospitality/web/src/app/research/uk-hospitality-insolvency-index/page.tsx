@@ -129,8 +129,11 @@ const datasetSchema = {
 // ---------------------------------------------------------------------------
 
 function Stat({ value, label }: { value: string; label: string }) {
+  // 2026-09-29 R4b: the white/10 tint lifted the card ground to rgb(184,100,68), where the
+  // 14px white caption measured 4.25 against the 4.5 floor. On the bare brand ground it is
+  // 5.09. Border kept; tint dropped.
   return (
-    <div className="rounded-xl border border-white/15 bg-white/10 p-5">
+    <div className="rounded-xl border border-white/15 p-5">
       <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
       {/* R4 D-G4: was text-white/80, which composites to rgb(241,224,218) over
           the white/10 card on #b0532f = 3.29 against a 4.5 floor. 14px body
