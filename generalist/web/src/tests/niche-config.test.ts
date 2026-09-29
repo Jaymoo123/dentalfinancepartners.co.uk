@@ -37,11 +37,9 @@ describe("generalist niche config", () => {
       "niche.config.json brand.primary_color and globals.css --accent have drifted apart",
     ).toBe(accent!.toLowerCase());
     // --brand-primary is the token every ported surface reads (shared MiniCapture,
-    // CalcResultCta, kit buttons and rings). It must alias --accent-STRONG, not
-    // --accent: orange-500 measures 2.80 on white, under both the 4.5 text floor
-    // and the 3.0 graphics floor. Measured 2026-09-28 on the rendered pages, the
-    // shared submit buttons were the failing surface. --accent stays orange-500
-    // for decoration. Do not relax this back to var(--accent).
-    expect(/--brand-primary:\s*var\(--accent-strong\)/.test(css)).toBe(true);
+    // CalcResultCta, kit buttons and rings). Owner ruling 2026-09-29: it aliases
+    // the designer's --accent and is not shifted to --accent-strong for contrast
+    // maths (same ruling as Property's button green).
+    expect(/--brand-primary:\s*var\(--accent\)/.test(css)).toBe(true);
   });
 });

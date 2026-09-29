@@ -75,10 +75,9 @@
   --muted: var(--ink-soft);
 
   /* Canonical brand tokens for @accounting-network/web-shared components. */
-  /* orange-500 measures 2.80 on white, below the 4.5 text floor and the 3.0
-     graphics floor, so the shared kit's buttons and rings take the strong step.
-     --accent stays orange-500 for decoration only. */
-  --brand-primary: var(--accent-strong);
+  /* Owner ruling 2026-09-29: the designer's brand orange stays on buttons;
+     not changed for contrast maths (same ruling as Property). */
+  --brand-primary: var(--accent);
   --brand-primary-strong: var(--accent-strong);
   --brand-on-primary: var(--accent-foreground);
 
