@@ -749,6 +749,9 @@ Before starting a site, capture and put in the prompts:
       byte-identical: the stretched link pinned `focus-visible:outline-none` and relied on the card's
       `:focus-within` glow alone, which measured 2.63 against the 3.0 indicator floor. The link now
       carries the kit `focusRing`; the glow stays. Property keeps its own local RelatedArticles.
+    - `CoverageCards.columns` now accepts `4` (added 2026-09-29, ecommerce R5): `md:grid-cols-2
+      lg:grid-cols-4`. Defaults 2 and 3 unchanged. It exists because a four-item set on `2 | 3`
+      orphans the fourth card on its own line (ecommerce hubs) or halves the density (homepage).
     Do not add rival props for either; these are the supported hooks.
 
 ---

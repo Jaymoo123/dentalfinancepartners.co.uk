@@ -52,7 +52,7 @@ export function CoverageCards({
 }: {
   items: CoverageItem[];
   /** Columns from `md`. Three suits a set of three; two suits an even set. */
-  columns?: 2 | 3;
+  columns?: 2 | 3 | 4;
   /**
    * Card surface. Must contrast with the section behind it — slate cards on a
    * white section, white cards on a slate-50 one. Getting this backwards makes
@@ -81,7 +81,7 @@ export function CoverageCards({
   glow?: boolean;
 }) {
   const gridClass = `mt-8 grid gap-5 sm:mt-10 sm:gap-6 ${
-    columns === 3 ? "md:grid-cols-3" : "md:grid-cols-2"
+    columns === 4 ? "md:grid-cols-2 lg:grid-cols-4" : columns === 3 ? "md:grid-cols-3" : "md:grid-cols-2"
   }`;
 
   const surface = glow
