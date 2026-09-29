@@ -37,3 +37,20 @@ from the same frontmatter the FAQPage schema already asserted, kit `FaqSection` 
 `alwaysRenderAnswers`).
 
 Every changed sentence is listed in the F1 receipt (14 items) and reproduced in STATE.md.
+
+## Phase 0 close (2026-09-29, manager)
+
+Commit `36d2b4fe`, tag `port-hospitality-phase0`. Re-check `P0G_RECHECK.md` on the rebuilt site:
+sweep 59/59, dead links 3 to 0, link floor held on every route, em-dashes 0; browser_check
+contrast 235 to 219 (the 16 LeadForm failures gone; the 219 left are the header CTA white on
+white and the consent toggle in the local footer, both replaced in phase 1), overflow 0, anchor
+gaps 0, dead-link 404s 12 to 0; CTAs 59 on the one pre-port triple `header_book|header|form`.
+Curl proofs 14 of 15 PASS; the one FAIL (h1 to h3 jump on the three calculator pages) predates
+the wave, was filed by P0-E, and is phase 4's template work. Residual for phase 1: the two chrome
+contrast groups, no skip link, no `primary-*` ramp. Residual for the OWNER: 152 to 164 console
+errors per run are AdSense creatives opening a frame from `pagead2.googlesyndication.com`,
+refused by the kit CSP `frame-src` (`packages/web-shared/lib/security-headers.ts`); the fix is one
+allowed host and it is estate-wide, so it is his call (the session classifier refused it as a
+security weakening).
+
+Agents used in phase 0: 5 audit + 3 fix + 1 re-check = 9.
