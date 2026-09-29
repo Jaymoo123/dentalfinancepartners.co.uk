@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing, siteContainerLg } from "@/components/ui/layout-utils";
 
 export default function Error({
   error,
@@ -27,10 +27,10 @@ export default function Error({
             </svg>
           </div>
         </div>
-        <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
+        <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
           Something went wrong
         </h1>
-        <p className="mt-4 text-base leading-relaxed text-neutral-500">
+        <p className="mt-4 text-base leading-relaxed text-slate-500">
           We encountered an unexpected error. This has been logged and we will look into it.
         </p>
         {process.env.NODE_ENV === "development" && error.message && (
@@ -44,12 +44,12 @@ export default function Error({
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center border border-neutral-300 bg-white px-6 py-3 text-sm font-medium text-neutral-900 transition-colors hover:border-neutral-400 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-[#b0532f] focus:ring-offset-2"
+            className={`inline-flex items-center justify-center border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition-colors hover:border-slate-400 hover:bg-slate-50 ${focusRing}`}
           >
             Go home
           </Link>
         </div>
-        <p className="mt-8 text-sm text-neutral-500">
+        <p className="mt-8 text-sm text-slate-500">
           If this keeps happening, please{" "}
           <Link href="/contact" className="font-semibold text-[#b0532f] hover:text-[#8f421f]">
             get in touch
