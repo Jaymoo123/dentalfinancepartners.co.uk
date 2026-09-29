@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { focusRing } from "../layout-utils";
 
 /**
  * The one article-card grid used by every "Related reading" / "Related articles"
@@ -103,7 +104,11 @@ export function RelatedArticles({
             <h3 className="text-base font-bold! leading-snug! tracking-normal! text-slate-900 sm:text-lg">
               <Link
                 href={item.href}
-                className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
+                // 2026-09-29: the stretched link used to pin `focus-visible:outline-none`
+                // and rely on `.related-card:focus-within` alone, which measured 2.63:1
+                // against the 3.0 indicator floor on the hospitality R2 review. The kit
+                // ring on the link text is the visible indicator; the card glow stays.
+                className={`after:absolute after:inset-0 after:content-[''] rounded ${focusRing}`}
               >
                 {item.title}
               </Link>

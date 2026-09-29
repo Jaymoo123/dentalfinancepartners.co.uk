@@ -21,6 +21,7 @@ export function BlogSidebarCta({
   buttonClassName,
   ctaPlacement = "sidebar",
   buttonLabel = "Book a call",
+  note = "Free, no obligation. The form is just below.",
 }: {
   copy: BlogSidebarCtaCopy;
   /**
@@ -46,6 +47,15 @@ export function BlogSidebarCta({
    * to could name the same action two different ways.
    */
   buttonLabel?: string;
+  /**
+   * Footnote under the button. Default is the string this card has always
+   * printed, so every existing consumer renders byte-identically. Pass `""` to
+   * render no footnote element at all: the sentence is the kit's own wording,
+   * not the host site's, and a site that did not author it should be able to
+   * decline it rather than paraphrase it (hospitality R3 GAP 2, 2026-09-29).
+   * Pass a string to publish the host's own wording instead.
+   */
+  note?: string;
 }) {
   return (
     <div className="rounded-xl bg-slate-900 p-6">
@@ -63,9 +73,7 @@ export function BlogSidebarCta({
       >
         {buttonLabel}
       </a>
-      <p className="mt-3 text-center text-xs text-slate-400">
-        Free, no obligation. The form is just below.
-      </p>
+      {note ? <p className="mt-3 text-center text-xs text-slate-400">{note}</p> : null}
     </div>
   );
 }

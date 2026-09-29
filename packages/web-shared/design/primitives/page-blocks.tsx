@@ -31,8 +31,24 @@ export function Prose({ children, onDark = false }: { children: ReactNode; onDar
  * shouted louder than the heading it was introducing.
  *
  * `onDark` is for navy sections, where the rule and text both lift a step.
+ *
+ * `className` is appended LAST, so a caller can override the text colour for a
+ * ground the `onDark` branch was not tuned for. It exists because `onDark`
+ * resolves to slate-300, which is tuned for navy: on a brand ground of around
+ * L* 46 (hospitality's `#b0532f`) it measures 3.43 against the 4.5 text floor.
+ * Omitted, the class string is byte-identical to what this component has always
+ * emitted (hospitality R3 GAP 4 / R2 G4, 2026-09-29). The rule mark still
+ * follows `onDark`; pass `onDark` with a `className` to lift both.
  */
-export function Eyebrow({ children, onDark = false }: { children: ReactNode; onDark?: boolean }) {
+export function Eyebrow({
+  children,
+  onDark = false,
+  className = "",
+}: {
+  children: ReactNode;
+  onDark?: boolean;
+  className?: string;
+}) {
   return (
     <p
       className={`mb-3 flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-wide sm:text-xs ${
@@ -43,7 +59,7 @@ export function Eyebrow({ children, onDark = false }: { children: ReactNode; onD
            grounds is what made four breadcrumbs worse on navy in an earlier
            phase of this programme. */
         onDark ? "text-slate-300" : "text-slate-600"
-      }`}
+      }${className ? ` ${className}` : ""}`}
     >
       <EyebrowRule onDark={onDark} />
       {children}

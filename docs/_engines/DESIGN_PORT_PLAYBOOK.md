@@ -736,6 +736,19 @@ Before starting a site, capture and put in the prompts:
       the route that asked for it (hospitality `/research/<slug>/embed`) is a SUFFIX. Safe as a
       function prop because every consumer mounts the kit shell through its own `"use client"`
       wrapper. 9 consumers.
+    - `BlogSidebarCta.note` (added 2026-09-29, hospitality R3). Footnote under the button. Default is
+      the card's long-standing string "Free, no obligation. The form is just below.", so every
+      existing consumer is byte-identical. Pass "" to render NO footnote element: the sentence is the
+      kit's wording, and a site that did not author it must be able to decline it rather than
+      paraphrase it on 23 published pages.
+    - `Eyebrow.className` (added 2026-09-29, hospitality R2, `design/primitives/page-blocks.tsx`).
+      Appended LAST, default "" (byte-identical). `onDark` resolves to slate-300, tuned for navy; on
+      a brand ground near L* 46 (hospitality #b0532f) it measures 3.43 against a 4.5 floor, and
+      `className="text-white"` (5.09) is the fix. The rule mark still follows `onDark`.
+    - `RelatedArticles` link FOCUS RING (2026-09-29, `design/blog/RelatedArticles.tsx`). NOT
+      byte-identical: the stretched link pinned `focus-visible:outline-none` and relied on the card's
+      `:focus-within` glow alone, which measured 2.63 against the 3.0 indicator floor. The link now
+      carries the kit `focusRing`; the glow stays. Property keeps its own local RelatedArticles.
     Do not add rival props for either; these are the supported hooks.
 
 ---
