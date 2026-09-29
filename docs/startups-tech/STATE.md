@@ -295,3 +295,11 @@ is an npm quirk, but run a clean `npm ci` in the deploy worktree before this sit
 
 Agents used, uplift: 8 (1 planner, 4 builders, 1 reviewer, 1 gap-fixer, 1 re-reviewer). Port
 total 34 of the 36 priced. No CI run, no push, no deploy. Server left on :3201 for the walk.
+
+**2026-09-29, owner rulings after the uplift walk ("yep that's great"):** sticky bottom bar NO; the
+scroll panel, returning-visitor bar and next-step offer NO; newsletter NO; enquiry form on the
+calculators index and the research index YES (mounted, same panel and strings as `/services`,
+verified 1 form each on the served build). Floating help button = a port of a site-local component
+(generalist's `components/support/SpecialistWidget.tsx` 518 lines + `lib/assistant/opener.ts` +
+`components/intent/IntentProvider`; not in the kit; every lead API route it needs already exists
+here), owner has not decided yet; sized at about 4 agents when he does.

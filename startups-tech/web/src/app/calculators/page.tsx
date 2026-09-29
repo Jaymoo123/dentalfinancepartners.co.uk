@@ -6,6 +6,8 @@ import { site } from "@/lib/calculators/site";
 import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
 import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: `Free Startup Tax Calculators`,
@@ -85,10 +87,11 @@ export default function CalculatorsPage() {
           /calculators/<slug> links, which is the entire job of this grid and the
           whole of the route's link floor. Adopting it would delete them.
 
-          ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx.
-          It requires a `title` and a `description`, and this hub publishes
-          neither. Supplying them is authoring marketing copy, which the owner
-          ruling on this port forbids. Owner item, not a builder item.
+          PRIOR DECLINE, SUPERSEDED 2026-09-29 (see the panel mounted at the
+          foot of this page): the panel component requires a `title` and a
+          `description`, which this hub published neither of at the time, and
+          supplying them was authoring marketing copy. The owner ruling below
+          overrides that decline with the services-hub strings, unauthored.
 
           ADOPTION DECLINED: packages/web-shared/design/marketing/StickyCTA.tsx,
           an interruption, banned estate-wide, and a calculator hub is exactly
@@ -126,6 +129,21 @@ export default function CalculatorsPage() {
           </ScrollGlowGroup>
         </div>
       </section>
+      {/* ADOPTED 2026-09-29, owner ruling: this index must carry an enquiry
+          form like every other money page on the site. The earlier decline
+          above is superseded, not deleted, so the prior reasoning stays on
+          record. No copy is authored: title/description are the same strings
+          src/app/services/page.tsx and src/app/for/page.tsx already pass to
+          this same component, byte-identical. Distinct `patternId` because a
+          <pattern> id must be unique per DOCUMENT and this page already
+          mounts the motif once above. */}
+      <LeadCTAPanel
+        title="Speak to a startup tax specialist."
+        description="Tell us about your situation and we will reply within 24 hours."
+        proofPoints={[]}
+        form={<LeadForm submitLabel="Send enquiry" />}
+        backdrop={<StartupsBackdrop patternId="calculators-panel" />}
+      />
     </>
   );
 }

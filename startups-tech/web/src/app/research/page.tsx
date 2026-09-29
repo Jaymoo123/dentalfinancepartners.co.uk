@@ -5,6 +5,8 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import {
   fmtGBPm as fmtFundingGBPm,
@@ -173,6 +175,20 @@ export default function ResearchIndexPage() {
           </ScrollGlowGroup>
         </div>
       </section>
+      {/* ADOPTED 2026-09-29, owner ruling: this index must carry an enquiry
+          form like every other money page on the site. No copy is authored:
+          title/description are the same strings src/app/services/page.tsx
+          and src/app/for/page.tsx already pass to this same component,
+          byte-identical. Distinct `patternId` because a <pattern> id must be
+          unique per DOCUMENT and this page already mounts the motif once
+          above. */}
+      <LeadCTAPanel
+        title="Speak to a startup tax specialist."
+        description="Tell us about your situation and we will reply within 24 hours."
+        proofPoints={[]}
+        form={<LeadForm submitLabel="Send enquiry" />}
+        backdrop={<StartupsBackdrop patternId="research-panel" />}
+      />
     </div>
   );
 }
