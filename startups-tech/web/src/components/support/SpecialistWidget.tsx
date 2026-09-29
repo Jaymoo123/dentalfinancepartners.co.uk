@@ -19,8 +19,11 @@
  *   (R7 N1 fix: was `neutral-*`, one-for-one renamed).
  * - Bottom offset is bottom-4, not the generalist bottom-24. That alone would
  *   sit the launcher on top of the footer's only consent control (R7 B3), so
- *   an IntersectionObserver on `document.querySelector("footer")` hides the
- *   whole widget while the footer is in view instead.
+ *   an IntersectionObserver on `document.querySelector("footer")` starts a
+ *   scroll/resize listener that lifts the fixed container with
+ *   `transform: translateY()` while the footer is in view (GF7 NB-1/NB-2:
+ *   never hides the widget, so it stays keyboard-reachable and still renders
+ *   on short pages).
  * - Opener copy comes from lib/assistant/opener.ts, written for this site: no
  *   "free call" (the site offers none) and no turnaround promise beyond the
  *   site's own "reply within 24 hours".
@@ -82,7 +85,8 @@ export function SpecialistWidget() {
   const [peekLine, setPeekLine] = useState<string | null>(null);
   const [peekVisible, setPeekVisible] = useState(false);
   const [composing, setComposing] = useState(false);
-  const [footerVisible, setFooterVisible] = useState(false);
+  const [liftPx, setLiftPx] = useState(0);
+  const [isModal, setIsModal] = useState(false);
 
   const openedRef = useRef(false);
   const engagedRef = useRef(false);
@@ -94,6 +98,7 @@ export function SpecialistWidget() {
   const dialogRef = useRef<HTMLDivElement>(null);
   const launcherRef = useRef<HTMLButtonElement>(null);
   const wasOpenRef = useRef(false);
+  const returnFocusRef = useRef(true);
   const ft = useFormTracking(SPECIALIST_WIDGET_FORM_ID);
 
   const active = !!ctx;
@@ -117,21 +122,71 @@ export function SpecialistWidget() {
     });
   }, []);
 
-  // R7 B3: the launcher/panel sit on top of the footer's only consent control
-  // ("Do not track me", plus "Cookie policy" at desktop) at bottom-4. Hide the
-  // whole widget while the footer is in the viewport instead of moving to
-  // bottom-24 (which the port ruling declined). Container stays mounted at a
-  // fixed size throughout (see the CLS fix below), so this toggle never shifts
-  // layout.
+  // GF7 NB-1/NB-2: the launcher/panel sit on top of the footer's only consent
+  // control ("Do not track me", plus "Cookie policy" at desktop) at bottom-4.
+  // GF6 hid the whole widget while the footer was in view, which made the
+  // launcher unreachable by keyboard (tabbing to it scrolls the footer into
+  // view, which then hides it) and made it never render at all on short pages
+  // where the footer is always in view. Fix: never hide. Instead lift the
+  // fixed container with `transform: translateY()` (excluded from layout
+  // shift, cheap to paint) so the launcher's bottom edge stays 16px above the
+  // footer's top edge. The IntersectionObserver only starts/stops the
+  // scroll/resize listeners that recompute the lift; it never sets visibility.
   useEffect(() => {
     if (typeof window === "undefined" || typeof IntersectionObserver === "undefined") return;
     const footer = document.querySelector("footer");
     if (!footer) return;
-    const io = new IntersectionObserver(([entry]) => setFooterVisible(entry.isIntersecting), {
-      threshold: 0,
-    });
+    let rafId: number | null = null;
+    const LAUNCHER_H = 52;
+    const BOTTOM_OFFSET = 16;
+    const compute = () => {
+      rafId = null;
+      const footerRect = footer.getBoundingClientRect();
+      const vh = window.innerHeight;
+      if (footerRect.top >= vh) {
+        setLiftPx(0);
+        return;
+      }
+      let lift = vh - footerRect.top;
+      // Clamp: launcher must stay at least 16px below the header's bottom
+      // edge. On a very short page (footer starts near the top) the naive
+      // lift would push the launcher above the viewport/header; in that
+      // clamped case the launcher overlaps the footer, acceptable only
+      // because the consent toggle stays hit-testable below the launcher.
+      const header = document.querySelector("header");
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
+      const launcherTopUnlifted = vh - BOTTOM_OFFSET - LAUNCHER_H;
+      const minTop = headerBottom + BOTTOM_OFFSET;
+      if (launcherTopUnlifted - lift < minTop) {
+        lift = Math.max(0, launcherTopUnlifted - minTop);
+      }
+      setLiftPx(lift);
+    };
+    const onScrollResize = () => {
+      if (rafId != null) return;
+      rafId = window.requestAnimationFrame(compute);
+    };
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          compute();
+          window.addEventListener("scroll", onScrollResize, { passive: true });
+          window.addEventListener("resize", onScrollResize, { passive: true });
+        } else {
+          window.removeEventListener("scroll", onScrollResize);
+          window.removeEventListener("resize", onScrollResize);
+          setLiftPx(0);
+        }
+      },
+      { threshold: 0 },
+    );
     io.observe(footer);
-    return () => io.disconnect();
+    return () => {
+      io.disconnect();
+      window.removeEventListener("scroll", onScrollResize);
+      window.removeEventListener("resize", onScrollResize);
+      if (rafId != null) window.cancelAnimationFrame(rafId);
+    };
   }, []);
 
   // Show a tailored ping. Re-derives the journey each time; never repeats a line.
@@ -200,20 +255,24 @@ export function SpecialistWidget() {
     openRef.current = open;
   }, [open]);
 
-  // R7 B1: keyboard trap. On open, move focus into the dialog and cycle Tab /
-  // Shift+Tab across its focusable elements; Escape closes and returns focus
-  // to the launcher. Re-runs when the composer/status changes because those
-  // swap which elements are focusable inside the dialog.
+  // R7 B1 + GF7 NB-3: the trap and the initial focus move happen ONLY on a
+  // user-initiated open (isModal, set by handleOpen or by the visitor
+  // focusing into an auto-opened panel themselves). An auto-open renders the
+  // panel without moving focus and without aria-modal; Tab is not cycled
+  // until the user clicks or tabs into it. Re-runs when the composer/status
+  // changes because those swap which elements are focusable inside the
+  // dialog. Focus returns to the launcher on close only if focus was inside
+  // the panel (returnFocusRef, set by closePanel).
   useEffect(() => {
     if (open) wasOpenRef.current = true;
     else if (wasOpenRef.current) {
       wasOpenRef.current = false;
-      launcherRef.current?.focus();
+      if (returnFocusRef.current) launcherRef.current?.focus();
     }
   }, [open]);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open || !isModal) return;
     const dialogEl = dialogRef.current;
     if (!dialogEl) return;
     const getFocusable = () =>
@@ -250,7 +309,22 @@ export function SpecialistWidget() {
     dialogEl.addEventListener("keydown", onKeyDown);
     return () => dialogEl.removeEventListener("keydown", onKeyDown);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open, composing, status]);
+  }, [open, isModal, composing, status]);
+
+  // GF7 NB-3: Escape must close a non-modal (auto-opened) panel too, since
+  // the trap effect above only attaches once isModal is true.
+  useEffect(() => {
+    if (!open || isModal) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closePanel();
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, isModal]);
 
   // Escalating dwell cadence, keyed to visible page time.
   useEffect(() => {
@@ -366,6 +440,9 @@ export function SpecialistWidget() {
         };
         lastPropsRef.current = props;
         setPeekLine((prev) => prev ?? line);
+        // GF7 NB-3: auto-open renders the panel but does not move focus and
+        // is not modal (isModal stays false) until the visitor focuses into
+        // it themselves, matching Property/generalist.
         setOpen(true);
         track("personalization_shown", props);
         if (!openedRef.current) {
@@ -394,6 +471,7 @@ export function SpecialistWidget() {
     if (!peekLine) setPeekLine(pickOpener(getJourneyProfile(), 0));
     setComposing(false);
     setOpen(true);
+    setIsModal(true); // user-initiated: trap + initial focus move apply
     if (!openedRef.current) {
       openedRef.current = true;
       track("support_opened", { topic: topic?.key ?? "", via: fromPeek ? "nudge" : "button" });
@@ -403,8 +481,16 @@ export function SpecialistWidget() {
   }
 
   function closePanel() {
+    returnFocusRef.current = !!dialogRef.current?.contains(document.activeElement);
     setOpen(false);
     setComposing(false);
+    setIsModal(false);
+  }
+
+  // GF7 NB-3: once the visitor focuses anything inside an auto-opened
+  // (non-modal) panel, upgrade it to modal (aria-modal + Tab trap).
+  function handleDialogFocusCapture() {
+    if (!isModal) setIsModal(true);
   }
 
   function onChip(goal: "calculator" | "question" | "call") {
@@ -492,17 +578,21 @@ export function SpecialistWidget() {
     // a flex-col pushed the launcher up). `contain: layout` isolates any remaining
     // internal reflow from the rest of the page; only opacity/transform animate.
     <div
-      className={`fixed bottom-4 right-4 z-[55] print:hidden ${footerVisible ? "invisible pointer-events-none" : ""}`}
-      style={{ contain: "layout" }}
+      className="fixed bottom-4 right-4 z-[55] print:hidden"
+      style={{
+        contain: "layout",
+        transform: liftPx > 0 ? `translateY(-${liftPx}px)` : undefined,
+      }}
     >
       <div className="relative">
         {open && (
           <div
             ref={dialogRef}
             role="dialog"
-            aria-modal="true"
+            aria-modal={isModal ? "true" : undefined}
             aria-label="Ask an accountant"
             tabIndex={-1}
+            onFocusCapture={handleDialogFocusCapture}
             className="absolute bottom-full right-0 mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
             style={{ height: "min(72dvh, 34rem)" }}
           >
@@ -705,7 +795,7 @@ export function SpecialistWidget() {
         <button
           ref={launcherRef}
           type="button"
-          onClick={() => (open ? setOpen(false) : handleOpen(false))}
+          onClick={() => (open ? closePanel() : handleOpen(false))}
           data-cta="specialist_widget"
           className={`relative flex h-[52px] w-[12.5rem] shrink-0 items-center justify-center gap-2 rounded-full bg-primary-700 px-4 text-sm font-semibold text-white shadow-2xl hover:bg-primary-800 ${focusRing}`}
         >
