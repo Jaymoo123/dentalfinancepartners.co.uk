@@ -10,6 +10,7 @@ import { describe, it, expect } from "vitest";
 import { makeDeriveTopic } from "./deriveTopic";
 import { createJourneyModel, profileKey } from "./journeyModel";
 import { evaluate, DEFAULT_THRESHOLDS } from "./engine";
+import { shouldUpgradeToModal, type ModalUpgradeCause } from "./SpecialistWidget";
 import type {
   EngineConfig,
   IntentContext,
@@ -238,5 +239,50 @@ describe("evaluate", () => {
 
   it("an unknown topic key yields no action", () => {
     expect(evaluate("hero_cta", makeCtx({ pageTopic: "nope" }), cfg)).toBeNull();
+  });
+});
+
+/* ------------------------------------------------- modal upgrade (GF8 / W-B1) */
+
+describe("shouldUpgradeToModal", () => {
+  it("never upgrades a panel that is already modal", () => {
+    for (const cause of ["launcher", "pointer", "key", "focus"] as ModalUpgradeCause[]) {
+      expect(shouldUpgradeToModal(cause, { alreadyModal: true })).toBe(false);
+    }
+  });
+
+  it("upgrades on a deliberate open: launcher, pointer press, Enter or Space", () => {
+    expect(shouldUpgradeToModal("launcher", { alreadyModal: false })).toBe(true);
+    expect(shouldUpgradeToModal("pointer", { alreadyModal: false })).toBe(true);
+    expect(shouldUpgradeToModal("key", { alreadyModal: false })).toBe(true);
+  });
+
+  it("does not upgrade when a forward Tab arrives from outside the panel", () => {
+    expect(
+      shouldUpgradeToModal("focus", {
+        alreadyModal: false,
+        relatedTargetInsidePanel: false,
+      }),
+    ).toBe(false);
+  });
+
+  it("does not upgrade while a Tab is passing through the panel's own controls", () => {
+    expect(
+      shouldUpgradeToModal("focus", {
+        alreadyModal: false,
+        relatedTargetInsidePanel: true,
+        tabbedInFromPage: true,
+      }),
+    ).toBe(false);
+  });
+
+  it("upgrades on focus moving between panel controls after a deliberate entry", () => {
+    expect(
+      shouldUpgradeToModal("focus", {
+        alreadyModal: false,
+        relatedTargetInsidePanel: true,
+        tabbedInFromPage: false,
+      }),
+    ).toBe(true);
   });
 });

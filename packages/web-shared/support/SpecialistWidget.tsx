@@ -38,6 +38,40 @@ const CADENCE_THRESHOLDS_MS = [30_000, 70_000, 120_000, 180_000];
 const AUTO_OPEN_DELAY_MS = 600;
 const DEFAULT_LAUNCHER_H = 52;
 
+/**
+ * Which event may upgrade an auto-opened (non-modal) panel into a trapped
+ * modal dialog.
+ *
+ * GF8, from R4 W-B1 on hospitality: the previous rule upgraded on ANY focus
+ * arriving in the panel, so a visitor tabbing forward through the page hit the
+ * auto-opened panel (press 80 on `/`, 40 on a calculator), `aria-modal`
+ * flipped, the Tab trap armed and the launcher became unreachable in 420
+ * presses. WCAG 2.1.2 and 2.4.3, on a surface nobody asked for.
+ *
+ * The rule now: only a DELIBERATE open traps. A pointer press inside the
+ * panel, Enter/Space on one of its controls, or the launcher itself all count
+ * as deliberate. A focus event counts only when it came from another control
+ * already inside the panel AND the visitor did not simply tab in from the page
+ * (`tabbedInFromPage`), because tabbing THROUGH the panel's controls on the way
+ * to the launcher must stay possible.
+ */
+export type ModalUpgradeCause = "launcher" | "pointer" | "key" | "focus";
+
+export function shouldUpgradeToModal(
+  cause: ModalUpgradeCause,
+  opts: {
+    alreadyModal: boolean;
+    relatedTargetInsidePanel?: boolean;
+    tabbedInFromPage?: boolean;
+  },
+): boolean {
+  if (opts.alreadyModal) return false;
+  if (cause === "focus") {
+    return opts.relatedTargetInsidePanel === true && opts.tabbedInFromPage !== true;
+  }
+  return true;
+}
+
 export function SpecialistWidget() {
   const config = useWidgetConfig();
   const ctx = useIntentContext();
@@ -64,6 +98,10 @@ export function SpecialistWidget() {
   const launcherRef = useRef<HTMLButtonElement>(null);
   const wasOpenRef = useRef(false);
   const returnFocusRef = useRef(true);
+  // GF8: set when focus arrives in the panel from OUTSIDE it (a forward Tab
+  // through the page). While it is true, moving between the panel's own
+  // controls must not arm the trap; cleared when focus leaves the panel again.
+  const tabbedInRef = useRef(false);
   const ft = useFormTracking(config?.formId ?? "specialist_widget");
 
   const active = !!ctx && !!config;
@@ -254,8 +292,13 @@ export function SpecialistWidget() {
           'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])',
         ),
       ).filter((el) => el.offsetParent !== null);
-    const first = getFocusable()[0] ?? dialogEl;
-    first.focus();
+    // GF8: only pull focus in when it is not already inside. A pointer or
+    // keyboard upgrade happens with focus already on a panel control, and
+    // yanking it back to the first one would fight the visitor.
+    if (!dialogEl.contains(document.activeElement)) {
+      const first = getFocusable()[0] ?? dialogEl;
+      first.focus();
+    }
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         e.preventDefault();
@@ -447,6 +490,7 @@ export function SpecialistWidget() {
     if (!peekLine) setPeekLine(config!.openers.pick(config!.journey.getProfile(), 0));
     setComposing(false);
     setOpen(true);
+    tabbedInRef.current = false;
     setIsModal(true); // user-initiated: trap + initial focus move apply
     if (!openedRef.current) {
       openedRef.current = true;
@@ -461,12 +505,41 @@ export function SpecialistWidget() {
     setOpen(false);
     setComposing(false);
     setIsModal(false);
+    tabbedInRef.current = false;
   }
 
-  // GF7 NB-3: once the visitor focuses anything inside an auto-opened
-  // (non-modal) panel, upgrade it to modal (aria-modal + Tab trap).
-  function handleDialogFocusCapture() {
-    if (!isModal) setIsModal(true);
+  // GF7 NB-3 as re-cut by GF8 (R4 W-B1): an auto-opened panel upgrades to a
+  // modal with a Tab trap only on a DELIBERATE open, never on a Tab that is
+  // merely passing through it. See shouldUpgradeToModal above.
+  function handleDialogFocusCapture(e: React.FocusEvent<HTMLDivElement>) {
+    const related = e.relatedTarget as Node | null;
+    const inside = !!related && !!dialogRef.current?.contains(related);
+    if (!inside) tabbedInRef.current = true;
+    if (
+      shouldUpgradeToModal("focus", {
+        alreadyModal: isModal,
+        relatedTargetInsidePanel: inside,
+        tabbedInFromPage: tabbedInRef.current,
+      })
+    ) {
+      setIsModal(true);
+    }
+  }
+
+  function handleDialogBlurCapture(e: React.FocusEvent<HTMLDivElement>) {
+    const next = e.relatedTarget as Node | null;
+    if (!next || !dialogRef.current?.contains(next)) tabbedInRef.current = false;
+  }
+
+  function handleDialogPointerDown() {
+    tabbedInRef.current = false;
+    if (shouldUpgradeToModal("pointer", { alreadyModal: isModal })) setIsModal(true);
+  }
+
+  function handleDialogKeyDownCapture(e: React.KeyboardEvent<HTMLDivElement>) {
+    if (e.key !== "Enter" && e.key !== " " && e.key !== "Spacebar") return;
+    tabbedInRef.current = false;
+    if (shouldUpgradeToModal("key", { alreadyModal: isModal })) setIsModal(true);
   }
 
   function onChip(goal: "calculator" | "question" | "call") {
@@ -567,6 +640,9 @@ export function SpecialistWidget() {
             aria-label={copy.launcherLabel}
             tabIndex={-1}
             onFocusCapture={handleDialogFocusCapture}
+            onBlurCapture={handleDialogBlurCapture}
+            onPointerDownCapture={handleDialogPointerDown}
+            onKeyDownCapture={handleDialogKeyDownCapture}
             className={c.panel}
             style={{ height: "min(72dvh, 34rem)" }}
           >

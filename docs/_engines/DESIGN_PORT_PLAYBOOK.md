@@ -752,6 +752,17 @@ Before starting a site, capture and put in the prompts:
     - `CoverageCards.columns` now accepts `4` (added 2026-09-29, ecommerce R5): `md:grid-cols-2
       lg:grid-cols-4`. Defaults 2 and 3 unchanged. It exists because a four-item set on `2 | 3`
       orphans the fourth card on its own line (ecommerce hubs) or halves the density (homepage).
+    - Help widget: MODAL ONLY ON A DELIBERATE OPEN (2026-09-29, GF8, kit-wide,
+      `packages/web-shared/support/SpecialistWidget.tsx` exports `shouldUpgradeToModal`). An
+      auto-opened panel is non-modal with no Tab trap; a focus event upgrades it only when focus
+      came from a control already inside the panel and the visitor did not tab in from the page;
+      a pointer press, Enter or Space on a panel control, or the launcher always upgrade. So a
+      forward Tab from the page passes THROUGH the auto-opened panel and reaches the launcher and
+      the rest of the page. BEHAVIOUR CHANGE, applies to startups-tech too: R7's GF7 stopped focus
+      being STOLEN at t+600ms, not CAPTURED on arrival, which R4 measured on hospitality as
+      `tabReach(launcher) = -1` in 420 presses. Every port re-measures `tabReach(launcher)` with
+      real Tab presses from `document.body`. 5 predicate tests; the Tab behaviour itself is a
+      browser check.
     Do not add rival props for either; these are the supported hooks.
 
 ---
