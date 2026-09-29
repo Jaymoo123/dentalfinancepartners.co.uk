@@ -37,6 +37,11 @@ export const metadata: Metadata = {
  * components. Consolidating them is lead plumbing, not design.
  * packages/web-shared/design/marketing/LeadCTAPanel.tsx: /contact already is the
  * form. A second capture surface on it would be a new one, which is owner-gated.
+ *
+ * DECLINED, U3.5: `data-cta="contact_pricing_link"`. `grep -rn "pricing"
+ * app/contact/page.tsx` and `grep -rln "pricing" app --include=*.tsx` both
+ * return nothing: this route has no link that points at pricing to
+ * instrument. Nothing to tag.
  */
 export default function ContactPage() {
   return (
@@ -46,8 +51,8 @@ export default function ContactPage() {
         items={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
       <Eyebrow>Contact</Eyebrow>
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Contact us</h1>
-      <p className="mt-4 text-base leading-relaxed text-neutral-600">
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">Contact us</h1>
+      <p className="mt-4 text-base leading-relaxed text-slate-600">
         Tell us about your startup tax situation. A specialist firm from our partner network may
         contact you directly, and you will hear back within 24 hours.
       </p>

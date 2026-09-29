@@ -3,7 +3,9 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { siteContainerLg, focusRing, btnOnDark } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import {
   AnnualSeriesChart,
@@ -136,9 +138,18 @@ export default function RdTaxReliefIndexPage() {
           - packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`:
             adopting it here would need a label word above each h2 that is not
             on the page today. It IS adopted, with no new words, on
-            /research/startup-formation-survival-index. */}
-      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-16 sm:py-20">
-        <div className={siteContainerLg}>
+            /research/startup-formation-survival-index.
+          ADOPTED (U2 item 1): src/components/layout/StartupsBackdrop.tsx. Its
+          contrast table carries this ground: bg-primary-950 #1e1b4b composited
+          with the motif at its strongest point = #28265c, white 13.80 and
+          slate-300 9.29, both well past the 4.5 text floor, so the white h1,
+          the white/80 standfirst, the white stat figures and the kit
+          breadcrumb's slate-300 trail are all unaffected. Host contract added:
+          `relative overflow-hidden` on the section, `relative z-10` on the
+          content. */}
+      <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-950 py-16 sm:py-20">
+        <StartupsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             onDark
             siteUrl={siteConfig.url}
@@ -192,8 +203,8 @@ export default function RdTaxReliefIndexPage() {
       {/* Key findings */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">Key findings</h2>
-          <div className="max-w-2xl rounded-md border-l-4 p-6 text-neutral-700 text-base leading-relaxed bg-neutral-50" style={{ borderColor: "var(--color-primary-600)" }}>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">Key findings</h2>
+          <div className="max-w-2xl rounded-md border-l-4 p-6 text-slate-700 text-base leading-relaxed bg-slate-50" style={{ borderColor: "var(--color-primary-600)" }}>
             <ul className="list-disc list-inside space-y-3">
               <li>
                 Total R&amp;D tax credit claims fell to {fmtNumber(headline.totalClaims)} in{" "}
@@ -218,7 +229,7 @@ export default function RdTaxReliefIndexPage() {
               </li>
             </ul>
           </div>
-          <p className="mt-4 max-w-2xl text-xs text-neutral-500">
+          <p className="mt-4 max-w-2xl text-xs text-slate-500">
             Source: {meta.sources.hmrc_rd_stats.name}, under the Open Government Licence v3.0.
             Figures may be cited with attribution to Founder Tax Partners.
           </p>
@@ -226,25 +237,25 @@ export default function RdTaxReliefIndexPage() {
       </section>
 
       {/* Claims time series */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             R&amp;D tax credit claims, {claimsSeries[0].year} to {headline.latestYear}
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Total number of claims for the R&amp;D tax credit, all schemes combined, by
             accounting period. The steep rise to 2021-22 and the sharp fall since reflect,
             respectively, the pre-clampdown growth in claim volume (including error and
             fraud that HMRC later targeted) and the effect of the compliance programme.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <AnnualSeriesChart
               data={claimsSeries.map((r) => ({ year: r.year, value: r.totalClaims }))}
               label="Total R&D tax credit claims by year"
               formatValue={(n) => `${fmtNumber(n)} claims`}
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-500">
+          <p className="mt-3 text-xs text-slate-500">
             {headline.latestYear} is a HMRC-uplifted provisional estimate; the true figure is
             expected to revise upward in the next annual release. Source: HMRC R&amp;D Tax
             Credits Statistics (Table RD1), OGL v3.0.
@@ -255,14 +266,14 @@ export default function RdTaxReliefIndexPage() {
       {/* Sector breakdown */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Claims by sector, {headline.latestYear}
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Number of claims by sector (based on the claimant company&apos;s primary SIC 2007
             code), highest first. Information &amp; Communication is the largest single sector.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <HorizontalBarChart
               data={sectorSorted.map((r) => ({
                 label: r.sector,
@@ -272,7 +283,7 @@ export default function RdTaxReliefIndexPage() {
               }))}
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-500">
+          <p className="mt-3 text-xs text-slate-500">
             Bars show number of claims; the figure in brackets is the share of total claims.
             Source: HMRC R&amp;D Tax Credits Statistics (Table RD6), OGL v3.0.
           </p>
@@ -280,17 +291,17 @@ export default function RdTaxReliefIndexPage() {
       </section>
 
       {/* Regional breakdown */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Relief cost by region, {headline.latestYear}
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Total R&amp;D relief cost by region, based on the claimant company&apos;s
             registered address, which may not match where the R&amp;D activity actually
             takes place.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <HorizontalBarChart
               data={regionSorted.map((r) => ({
                 label: r.region,
@@ -304,18 +315,18 @@ export default function RdTaxReliefIndexPage() {
       </section>
 
       {/* Methodology */}
-      <section id="methodology" className="bg-white border-t border-neutral-200 py-12 sm:py-16">
+      <section id="methodology" className="bg-white border-t border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Methodology and honest limitations
           </h2>
-          <div className="max-w-2xl space-y-6 text-sm text-neutral-700 leading-relaxed">
+          <div className="max-w-2xl space-y-6 text-sm text-slate-700 leading-relaxed">
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">Source</h3>
+              <h3 className="font-semibold text-slate-900 mb-2">Source</h3>
               <p>{meta.methodology}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">Caveats</h3>
+              <h3 className="font-semibold text-slate-900 mb-2">Caveats</h3>
               <ul className="list-disc list-inside space-y-2">
                 {meta.caveats.map((c) => (
                   <li key={c}>{c}</li>
@@ -323,10 +334,10 @@ export default function RdTaxReliefIndexPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">Re-running the pull</h3>
+              <h3 className="font-semibold text-slate-900 mb-2">Re-running the pull</h3>
               <p>
                 The pull script is at{" "}
-                <code className="bg-neutral-100 px-1 rounded text-xs">
+                <code className="bg-slate-100 px-1 rounded text-xs">
                   startups-tech/pipeline/pull_rd_relief_index.py
                 </code>
                 . It downloads HMRC&apos;s current R&amp;D Tax Credits statistical tables (ODS
@@ -338,12 +349,12 @@ export default function RdTaxReliefIndexPage() {
       </section>
 
       {/* Sources and cite-as */}
-      <section className="bg-neutral-50 border-t border-neutral-200 py-10 sm:py-12">
+      <section className="bg-slate-50 border-t border-slate-200 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-3">Sources and how to cite</h2>
-          <div className="max-w-2xl space-y-4 text-sm text-neutral-600">
+          <h2 className="text-lg font-bold text-slate-900 mb-3">Sources and how to cite</h2>
+          <div className="max-w-2xl space-y-4 text-sm text-slate-600">
             <div>
-              <p className="font-semibold text-neutral-900">Primary source</p>
+              <p className="font-semibold text-slate-900">Primary source</p>
               <p>
                 <a
                   href={meta.sources.hmrc_rd_stats.url}
@@ -358,17 +369,17 @@ export default function RdTaxReliefIndexPage() {
               </p>
             </div>
             <div>
-              <p className="font-semibold text-neutral-900">Cite this index as</p>
-              <blockquote className="border-l-4 border-neutral-300 pl-4 text-neutral-500 italic text-xs">
+              <p className="font-semibold text-slate-900">Cite this index as</p>
+              <blockquote className="border-l-4 border-slate-300 pl-4 text-slate-500 italic text-xs">
                 {meta.citeAs}
               </blockquote>
             </div>
             <p className="text-sm">
-              <Link href={`${PAGE_PATH}/data`} className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
+              <Link href={`${PAGE_PATH}/data`} data-cta="research_rd_tax_relief_index_csv" data-cta-placement="sources" className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
                 Download the full dataset (CSV)
               </Link>
             </p>
-            <p className="text-xs text-neutral-500">Last updated: {meta.lastUpdated}.</p>
+            <p className="text-xs text-slate-500">Last updated: {meta.lastUpdated}.</p>
           </div>
         </div>
       </section>
@@ -394,9 +405,19 @@ export default function RdTaxReliefIndexPage() {
             >
               R&amp;D tax claims service
             </Link>
+            {/* ADOPTED: `btnOnDark` from src/components/ui/layout-utils.ts
+                (restored by U4 from packages/web-shared/design/layout-utils.ts
+                with the literal focus-ring utility swapped for
+                var(--focus-ring)). This replaces a hand-rolled
+                `border border-white/30`, which is the exact contrast defect
+                569d3304 fixed on contractors-ir35: white/30 composited over
+                this primary-950 #1e1b4b ground is #61605f-equivalent at 2.64:1,
+                under the 3.0 floor for a button's only visible boundary.
+                btnOnDark's border-white/40 measures 3.63:1 on the same ground.
+                PASS. The label and the destination are unchanged. */}
             <Link
               href="/calculators/rd-relief-estimator"
-              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
+              className={btnOnDark}
             >
               R&amp;D relief estimator
             </Link>
@@ -408,21 +429,26 @@ export default function RdTaxReliefIndexPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-12 sm:py-16">
-        <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-8">
-            Frequently asked questions
-          </h2>
-          <div className="max-w-2xl space-y-6">
-            {faqs.map((f) => (
-              <div key={f.question}>
-                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                <p className="mt-2 text-base leading-relaxed text-neutral-700">{f.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ADOPTED: packages/web-shared/design/primitives/FaqSection.tsx with
+          `alwaysRenderAnswers` (:17,31-35), which passes Radix `forceMount`
+          through accordion.tsx:52-64 and adds `data-[state=closed]:hidden`, so
+          every answer stays in the server HTML exactly as the <h3>/<p> block
+          put it there. The FAQPage JSON-LD emitted at the top of this file is
+          built from the SAME `faqs` binding (`buildFaqJsonLd(faqs)`), so the
+          rendered count and the asserted count cannot diverge.
+          `html` is NOT passed: every answer in this page's `faqs` array is a
+          plain string with no markup, so the safe JSX text child is correct.
+          `eyebrow=""` because the kit default is the word "FAQ", which this
+          page does not publish, and this package writes no prose; an empty
+          string is falsy at FaqSection.tsx:39. `title` is this section's own h2
+          string, verbatim. */}
+      <FaqSection
+        eyebrow=""
+        title="Frequently asked questions"
+        faqs={faqs}
+        alwaysRenderAnswers
+        className="bg-white py-12 sm:py-16"
+      />
     </div>
   );
 }

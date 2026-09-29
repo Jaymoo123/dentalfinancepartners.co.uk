@@ -6,6 +6,9 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { HubArticleList } from "@accounting-network/web-shared/design/blog/HubArticleList";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { niche } from "@/config/niche-loader";
 import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 
 type Props = { params: Promise<{ category: string }> };
@@ -60,12 +63,13 @@ export default async function CategoryPage({ params }: Props) {
     }));
 
   return (
+    <>
     <div className={`${siteContainerLg} py-16`}>
       <Breadcrumb
         siteUrl={siteConfig.url}
         items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: cat.name }]}
       />
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">{cat.name}</h1>
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">{cat.name}</h1>
 
       <div className="mt-10">
         <Eyebrow>The library</Eyebrow>
@@ -80,22 +84,35 @@ export default async function CategoryPage({ params }: Props) {
       </div>
 
       {otherTopics.length > 0 ? (
-        <div className="mt-16 border-t border-neutral-200 pt-10">
+        <div className="mt-16 border-t border-slate-200 pt-10">
           <Eyebrow>Keep exploring</Eyebrow>
           <div className="flex flex-wrap gap-3">
             {otherTopics.map((topic) => (
               <Link
                 key={topic.slug}
                 href={`/blog/${topic.slug}`}
-                className={`inline-flex min-h-12 items-center gap-2 rounded-xl ring-1 ring-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition-all hover:ring-primary-600 hover:text-primary-700 hover:shadow-md ${focusRing}`}
+                className={`inline-flex min-h-12 items-center gap-2 rounded-xl ring-1 ring-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-all hover:ring-primary-600 hover:text-primary-700 hover:shadow-md ${focusRing}`}
               >
                 {topic.name}
-                <span className="text-xs font-semibold text-neutral-500">{topic.count}</span>
+                <span className="text-xs font-semibold text-slate-500">{topic.count}</span>
               </Link>
             ))}
           </div>
         </div>
       ) : null}
     </div>
+    {/* A.4/A.7: LeadCTAPanel, absent on category routes until now. Same global
+        config triple as /blog (no per-category copy exists, `niche.blog.*`
+        is the only published set: E5). `data-cta="blog_index_articles"` on the
+        panel's own wrapper, same reasoning as /blog's `blog_index_book`. */}
+    <div data-cta="blog_index_articles" data-cta-placement="panel" data-cta-goal="form">
+      <LeadCTAPanel
+        title={niche.blog.cta_heading}
+        description={niche.blog.cta_body}
+        proofPoints={[]}
+        form={<LeadForm submitLabel={niche.blog.cta_button} redirectOnSuccess={false} />}
+      />
+    </div>
+    </>
   );
 }

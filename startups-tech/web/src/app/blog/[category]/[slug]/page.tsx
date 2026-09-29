@@ -22,6 +22,7 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { ReadingProgress } from "@accounting-network/web-shared/design/blog/ReadingProgress";
 import { TableOfContents } from "@accounting-network/web-shared/design/blog/TableOfContents";
 import { RelatedArticles } from "@accounting-network/web-shared/design/blog/RelatedArticles";
+import { BlogSidebarCta } from "@accounting-network/web-shared/design/blog/BlogSidebarCta";
 import { focusRing } from "@/components/ui/layout-utils";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
@@ -186,10 +187,10 @@ export default async function BlogPostPage({ params }: Props) {
             { label: post.title },
           ]}
         />
-        <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
+        <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
           {post.h1}
         </h1>
-        <p className="mt-3 text-sm text-neutral-500">
+        <p className="mt-3 text-sm text-slate-500">
           {new Date(post.updatedDate || post.date).toLocaleDateString("en-GB", {
             day: "numeric",
             month: "long",
@@ -197,10 +198,25 @@ export default async function BlogPostPage({ params }: Props) {
           })}{" "}
           · {calculateReadTime(post.contentHtml)} min read
         </p>
+        {/* A.4/U3.2: skip-to-form anchor, absent until now. Label reuses
+            `niche.blog.cta_button`, the exact string `LeadForm`'s
+            `submitLabel` already renders on the end-of-article form below, so
+            nothing is authored. Jumps to that form, given `id="enquiry-form"`
+            below so this and `BlogSidebarCta`'s hardcoded `#enquiry-form` land
+            on the same target. */}
+        <a
+          href="#enquiry-form"
+          data-cta="blog_skip_to_form"
+          data-cta-placement="article_header"
+          data-cta-goal="form"
+          className={`mt-4 inline-flex min-h-12 items-center text-sm font-semibold text-primary-700 hover:text-primary-800 ${focusRing}`}
+        >
+          {niche.blog.cta_button}
+        </a>
         {post.keyTakeaways && post.keyTakeaways.length > 0 && (
-          <aside className={`mt-8 rounded-xl border border-neutral-200 bg-[var(--surface)] p-5 ${focusRingAuthoredLinks}`}>
-            <h2 className="text-sm font-semibold text-neutral-900">Key takeaways</h2>
-            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-700">
+          <aside className={`mt-8 rounded-xl border border-slate-200 bg-[var(--surface)] p-5 ${focusRingAuthoredLinks}`}>
+            <h2 className="text-sm font-semibold text-slate-900">Key takeaways</h2>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
               {post.keyTakeaways.map((kt) => (
                 <li key={kt} dangerouslySetInnerHTML={{ __html: kt }} />
               ))}
@@ -217,7 +233,7 @@ export default async function BlogPostPage({ params }: Props) {
             <TableOfContents headings={headings} />
           </div>
         )}
-        <article className={`prose prose-neutral mt-10 max-w-none [&_h2]:scroll-mt-24 [&_h3]:scroll-mt-24 ${focusRingAuthoredLinks}`}>
+        <article className={`prose prose-slate mt-10 max-w-none [&_h2]:scroll-mt-24 [&_h3]:scroll-mt-24 ${focusRingAuthoredLinks}`}>
           <div dangerouslySetInnerHTML={{ __html: bodySplit.before }} />
           <InlineMiniLeadForm topic={post.category} />
           {bodySplit.after !== null ? (
@@ -237,12 +253,12 @@ export default async function BlogPostPage({ params }: Props) {
             NOWHERE on the page: 32 pages of schema with no visible source. No
             copy is authored here beyond the section heading. */}
         {post.faqs && post.faqs.length > 0 && (
-          <div className="mt-12 border-t border-neutral-200 pt-8">
-            <h2 className="text-xl font-semibold text-neutral-900">Frequently asked questions</h2>
+          <div className="mt-12 border-t border-slate-200 pt-8">
+            <h2 className="text-xl font-semibold text-slate-900">Frequently asked questions</h2>
             <div className="mt-6 space-y-4">
               {post.faqs.map((faq) => (
-                <details key={faq.question} className="group rounded-xl border border-neutral-200">
-                  <summary className={`flex cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-4 py-4 font-semibold text-neutral-900 hover:text-primary-700 ${focusRing}`}>
+                <details key={faq.question} className="group rounded-xl border border-slate-200">
+                  <summary className={`flex cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-4 py-4 font-semibold text-slate-900 hover:text-primary-700 ${focusRing}`}>
                     <span>{faq.question}</span>
                     <span className="text-primary-600 transition-transform group-open:rotate-45" aria-hidden>
                       <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
@@ -251,7 +267,7 @@ export default async function BlogPostPage({ params }: Props) {
                     </span>
                   </summary>
                   <div
-                    className={`border-t border-neutral-100 px-4 pb-4 pt-3 leading-relaxed text-neutral-600 ${focusRingAuthoredLinks}`}
+                    className={`border-t border-slate-100 px-4 pb-4 pt-3 leading-relaxed text-slate-600 ${focusRingAuthoredLinks}`}
                     dangerouslySetInnerHTML={{ __html: faq.answer }}
                   />
                 </details>
@@ -262,16 +278,16 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Blog end-of-article capture, unchanged in position and in copy: it is
             one of exactly two capture surfaces on this page (the other is the
             InlineMiniLeadForm inside the article above). Owner ruling 5. */}
-        <div className="mt-12 rounded-xl border border-neutral-200 p-6">
-          <h2 className="text-lg font-semibold text-neutral-900">{niche.blog.cta_heading}</h2>
-          <p className="mt-2 text-sm text-neutral-600">{niche.blog.cta_body}</p>
+        <div id="enquiry-form" className="mt-12 scroll-mt-24 rounded-xl border border-slate-200 p-6">
+          <h2 className="text-lg font-semibold text-slate-900">{niche.blog.cta_heading}</h2>
+          <p className="mt-2 text-sm text-slate-600">{niche.blog.cta_body}</p>
           <div className="mt-4">
             <LeadForm redirectOnSuccess={false} submitLabel={niche.blog.cta_button} />
           </div>
         </div>
         {related.length > 0 && (
-          <div className="mt-12 border-t border-neutral-200 pt-8">
-            <h2 className="text-xl font-semibold text-neutral-900">Related reading</h2>
+          <div className="mt-12 border-t border-slate-200 pt-8">
+            <h2 className="text-xl font-semibold text-slate-900">Related reading</h2>
             {/* Excerpt is the authored frontmatter summary. The kit prefers a
                 firstSentence() excerpt and this site has no such helper; adding
                 one is a lib change with no consumer other than this line. */}
@@ -289,6 +305,22 @@ export default async function BlogPostPage({ params }: Props) {
            Patching one copy means patching the other. */
         <aside className="hidden lg:order-2 lg:block lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
           <TableOfContents headings={headings} />
+          {/* A.4/U3.1: BlogSidebarCta, absent until now, under TableOfContents
+              per spec. `copy` is the one global triple already published in
+              niche.config.json, the same `heading`/`body` the end-of-article
+              `LeadForm` block below already renders, so nothing is authored
+              here. `buttonLabel` is `niche.blog.cta_button`, same string a
+              third time. The component itself emits
+              `data-cta="blog_sidebar_book"` / `data-cta-placement="sidebar"` /
+              `data-cta-goal="form"` (`BlogSidebarCta.tsx:56-58`) and points
+              its own hardcoded `#enquiry-form` at the id added on the end
+              form above. */}
+          <div className="mt-6">
+            <BlogSidebarCta
+              copy={{ heading: niche.blog.cta_heading, body: niche.blog.cta_body }}
+              buttonLabel={niche.blog.cta_button}
+            />
+          </div>
         </aside>
       )}
     </div>

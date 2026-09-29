@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 
 import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
 import { siteConfig } from "@/config/site";
 import {
   fmtGBPm as fmtFundingGBPm,
@@ -115,9 +117,18 @@ export default function ResearchIndexPage() {
             and no markup in the label, so it would strip both the source line
             under each figure and the card's own link to the study.
           - packages/web-shared/design/primitives/NoticeCard.tsx: nothing on this
-            route is an outcome card, and its only tones are slate and primary. */}
-      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+            route is an outcome card, and its only tones are slate and primary.
+
+          ADOPTED (U2 item 1): src/components/layout/StartupsBackdrop.tsx. Its
+          contrast table carries this ground: bg-primary-950 #1e1b4b composited
+          with the motif at its strongest point = #28265c, white 13.80 and
+          slate-300 9.29, both well past the 4.5 text floor, so the white h1 and
+          the slate-300 standfirst below are unaffected. Host contract added:
+          `relative overflow-hidden` on the section, `relative z-10` on the
+          content. */}
+      <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-950 py-12 sm:py-16">
+        <StartupsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             onDark
             siteUrl={siteConfig.url}
@@ -126,7 +137,7 @@ export default function ResearchIndexPage() {
           <h1 className="mt-2 max-w-3xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Original UK tech startup research
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-neutral-300">
+          <p className="mt-4 max-w-3xl text-lg text-slate-300">
             Sourced, methodology-transparent reads on UK startup funding, R&amp;D tax relief and
             company formation, built entirely from HMRC and Companies House official statistics.
             Free to read and cite with attribution.
@@ -136,23 +147,30 @@ export default function ResearchIndexPage() {
 
       <section className="bg-white py-10 sm:py-14">
         <div className={siteContainerLg}>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+          {/* ADOPTED: packages/web-shared/design/marketing/ScrollGlowGroup.tsx,
+              a wrapper. It flips data-glow="on" when the grid is fully on
+              screen; the card-glow rules U4 imported into globals.css do the
+              rest. No card, href, figure or string inside it changes.
+              CoverageCards stays declined for the reason already written above:
+              CoverageItem (CoverageCards.tsx:5-15) has no `href` and these five
+              cards ARE this route's five links to the studies. */}
+          <ScrollGlowGroup className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
             {reports.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className={`group rounded-2xl border border-neutral-200 p-6 transition hover:border-primary-600 hover:shadow-md sm:p-8 ${focusRing}`}
+                className={`group rounded-2xl border border-slate-200 p-6 transition hover:border-primary-600 hover:shadow-md sm:p-8 ${focusRing}`}
               >
                 <div className="text-3xl font-bold text-primary-600 sm:text-4xl">{r.stat}</div>
-                <div className="mt-1 text-sm text-neutral-500">{r.statLabel}</div>
-                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-primary-950">
+                <div className="mt-1 text-sm text-slate-500">{r.statLabel}</div>
+                <h2 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-primary-950">
                   {r.title}
                 </h2>
-                <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
-                <p className="mt-4 text-xs text-neutral-500">Updated: {r.updated}</p>
+                <p className="mt-2 text-base leading-relaxed text-slate-600">{r.blurb}</p>
+                <p className="mt-4 text-xs text-slate-500">Updated: {r.updated}</p>
               </Link>
             ))}
-          </div>
+          </ScrollGlowGroup>
         </div>
       </section>
     </div>

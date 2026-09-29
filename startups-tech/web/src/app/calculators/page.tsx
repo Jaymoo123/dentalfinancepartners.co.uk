@@ -4,6 +4,8 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { allTools, toolPath } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
 
 export const metadata: Metadata = {
   title: `Free Startup Tax Calculators`,
@@ -47,18 +49,26 @@ export default function CalculatorsPage() {
           11-12px label. Eyebrow IS adopted inside the tool itself, on white,
           via src/components/calculators/CalculatorClient.tsx.
 
-          ADOPTION DECLINED: src/components/layout/StartupsBackdrop.tsx. Its
-          written contrast proof is measured against bg-slate-900 only, the one
-          ground it is mounted on today. Mounting it on primary-600 would put it
-          on an unmeasured ground, and the backdrop file is phase-1 owned and
-          off limits to this package, so the proof cannot be extended here.
+          DECLINE REVERSED, 2026-09-29 (U2 item 1, and plan false premise 11).
+          ADOPTED: src/components/layout/StartupsBackdrop.tsx. The decline that
+          stood here was "its contrast proof covers bg-slate-900 only". U4 has
+          since extended that proof and the file now carries the row for THIS
+          ground: bg-primary-600 #4f46e5, composited with the motif at its
+          strongest point = #544de7, white 5.85 (both floors PASS). The same row
+          records that `text-slate-300` measures 3.94 on this ground and must
+          not be used for body copy while the backdrop is mounted; nothing in
+          this band is slate-300 (the h1 is white, the standfirst white/90 and
+          the breadcrumb is forced to white by crumbOnBrand above), so no copy
+          colour changes here. Host contract added: `relative overflow-hidden`
+          on the section, `relative z-10` on the content.
 
           `ground-dark` is load-bearing: the breadcrumb is the first focusable
           thing in this hero and without the rebind its ring would paint
           primary-600 on primary-600, 1.00:1. No light island sits inside this
           section. */}
-      <section className="ground-dark bg-primary-600 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+      <section className="ground-dark relative overflow-hidden bg-primary-600 py-12 sm:py-16">
+        <StartupsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className={crumbOnBrand}>
             <Breadcrumb onDark siteUrl={site.url} items={[{ label: "Home", href: "/" }, { label: "Calculators" }]} />
           </div>
@@ -85,7 +95,11 @@ export default function CalculatorsPage() {
           where one gets proposed. */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <div className="grid gap-6 sm:grid-cols-2">
+          {/* ADOPTED: packages/web-shared/design/marketing/ScrollGlowGroup.tsx,
+              a wrapper. It flips data-glow="on" once the grid is fully on
+              screen and the card-glow rules U4 imported into globals.css do the
+              rest. No card, href or string inside it changes. */}
+          <ScrollGlowGroup className="grid gap-6 sm:grid-cols-2">
             {tools.map((t) => (
               <Link
                 key={t.slug}
@@ -96,14 +110,20 @@ export default function CalculatorsPage() {
                     A 12px uppercase label is text and needs the 4.5 floor with
                     room; the card's hover border stays primary-400, which is a
                     graphic and clears 3:1 against the slate-200 it replaces. */}
-                <div className="text-xs font-semibold uppercase tracking-wide text-primary-700">
+                {/* U2: the generalist `rounded-full` pill shape, applied to the
+                    label this card already published. The STRING is unchanged
+                    (`t.category` from src/lib/calculators/registry.ts); only the
+                    shape and the ground are. primary-50 #eef2ff under
+                    primary-700 #4338ca measures 7.42, past the 4.5 text floor
+                    with room at 12px. */}
+                <div className="inline-flex rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-700">
                   {t.category}
                 </div>
                 <h2 className="mt-2 text-xl font-bold text-slate-900 transition-colors group-hover:text-primary-700">{t.name}</h2>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">{t.oneLiner}</p>
               </Link>
             ))}
-          </div>
+          </ScrollGlowGroup>
         </div>
       </section>
     </>

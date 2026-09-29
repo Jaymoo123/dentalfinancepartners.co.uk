@@ -4,6 +4,9 @@ import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } fro
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { niche } from "@/config/niche-loader";
 import { contentNarrow, focusRing } from "@/components/ui/layout-utils";
 
 export const metadata: Metadata = {
@@ -34,12 +37,13 @@ export default function BlogIndexPage() {
   const posts = getAllPosts();
   const categories = getAllCategories();
   return (
+    <>
     <div className={`${contentNarrow} py-16`}>
       <Breadcrumb
         siteUrl={siteConfig.url}
         items={[{ label: "Home", href: "/" }, { label: "Blog" }]}
       />
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">Startup and tech tax, explained.</h1>
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900">Startup and tech tax, explained.</h1>
       {categories.length > 0 && (
         <div className="mt-8">
           <Eyebrow>Topics</Eyebrow>
@@ -48,10 +52,10 @@ export default function BlogIndexPage() {
               <Link
                 key={cat.slug}
                 href={`/blog/${cat.slug}`}
-                className={`inline-flex min-h-12 items-center gap-2 rounded-xl ring-1 ring-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition-all hover:ring-primary-600 hover:text-primary-700 hover:shadow-md ${focusRing}`}
+                className={`inline-flex min-h-12 items-center gap-2 rounded-xl ring-1 ring-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-all hover:ring-primary-600 hover:text-primary-700 hover:shadow-md ${focusRing}`}
               >
                 {cat.name}
-                <span className="text-xs font-semibold text-neutral-500">{cat.count}</span>
+                <span className="text-xs font-semibold text-slate-500">{cat.count}</span>
               </Link>
             ))}
           </div>
@@ -64,14 +68,32 @@ export default function BlogIndexPage() {
             <li key={post.slug}>
               <Link href={`/blog/${getCategorySlug(post)}/${post.slug}`} className={`group block rounded-xl ${focusRing}`}>
                 <p className="text-xs font-semibold uppercase tracking-wider text-primary-700">{post.category} &middot; {calculateReadTime(post.contentHtml)} min read</p>
-                <h2 className="mt-1 text-xl font-semibold text-neutral-900 group-hover:underline">{post.title}</h2>
-                <p className="mt-2 text-sm text-neutral-600">{post.metaDescription}</p>
+                <h2 className="mt-1 text-xl font-semibold text-slate-900 group-hover:underline">{post.title}</h2>
+                <p className="mt-2 text-sm text-slate-600">{post.metaDescription}</p>
               </Link>
             </li>
           ))}
-          {posts.length === 0 && <li className="text-neutral-400 text-sm">No posts yet.</li>}
+          {posts.length === 0 && <li className="text-slate-400 text-sm">No posts yet.</li>}
         </ul>
       </div>
     </div>
+    {/* A.4/A.7: LeadCTAPanel mount, absent on this route until now. Fed the
+        one global blog CTA triple already published in niche.config.json
+        (`blog.cta_heading` / `cta_body` / `cta_button`); no copy authored.
+        `data-cta="blog_index_book"` sits on the panel's own section wrapper,
+        not a new hero anchor link: generalist's `#book` hero pair
+        (`blog/page.tsx:113-129`) is a second lead-capture surface (a link
+        that jumps to the panel below) this site's owner ruling on new
+        sentences and OFF-LIMITS `page.tsx`-shaped hero blocks does not
+        license U3 to invent. */}
+    <div id="blog-lead-panel" data-cta="blog_index_book" data-cta-placement="panel" data-cta-goal="form">
+      <LeadCTAPanel
+        title={niche.blog.cta_heading}
+        description={niche.blog.cta_body}
+        proofPoints={[]}
+        form={<LeadForm submitLabel={niche.blog.cta_button} redirectOnSuccess={false} />}
+      />
+    </div>
+    </>
   );
 }

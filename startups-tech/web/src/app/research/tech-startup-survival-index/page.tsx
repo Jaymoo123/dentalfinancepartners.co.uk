@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { siteContainerLg, focusRing, btnOnDark } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import {
   ComparisonBarChart,
@@ -146,9 +147,18 @@ export default function TechStartupSurvivalIndexPage() {
           - packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`:
             adopting it here would need a label word above each h2 that is not
             on the page today. It IS adopted, with no new words, on
-            /research/startup-formation-survival-index. */}
-      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-16 sm:py-20">
-        <div className={siteContainerLg}>
+            /research/startup-formation-survival-index.
+          ADOPTED (U2 item 1): src/components/layout/StartupsBackdrop.tsx. Its
+          contrast table carries this ground: bg-primary-950 #1e1b4b composited
+          with the motif at its strongest point = #28265c, white 13.80 and
+          slate-300 9.29, both well past the 4.5 text floor, so the white h1,
+          the white/80 standfirst, the white stat figures and the kit
+          breadcrumb's slate-300 trail are all unaffected. Host contract added:
+          `relative overflow-hidden` on the section, `relative z-10` on the
+          content. */}
+      <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-950 py-16 sm:py-20">
+        <StartupsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             onDark
             siteUrl={siteConfig.url}
@@ -200,8 +210,8 @@ export default function TechStartupSurvivalIndexPage() {
       {/* Key findings */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">Key findings</h2>
-          <div className="max-w-2xl rounded-md border-l-4 p-6 text-neutral-700 text-base leading-relaxed bg-neutral-50" style={{ borderColor: "var(--color-primary-600)" }}>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">Key findings</h2>
+          <div className="max-w-2xl rounded-md border-l-4 p-6 text-slate-700 text-base leading-relaxed bg-slate-50" style={{ borderColor: "var(--color-primary-600)" }}>
             <ul className="list-disc list-inside space-y-3">
               <li>
                 Of {fmtNumber(fullCohort.techBirths)} tech companies (Information and
@@ -226,7 +236,7 @@ export default function TechStartupSurvivalIndexPage() {
               </li>
             </ul>
           </div>
-          <p className="mt-4 max-w-2xl text-xs text-neutral-500">
+          <p className="mt-4 max-w-2xl text-xs text-slate-500">
             Source: {meta.sources.ons_business_demography.name}, under the Open Government
             Licence v3.0. Figures may be cited with attribution to Founder Tax Partners.
           </p>
@@ -234,16 +244,16 @@ export default function TechStartupSurvivalIndexPage() {
       </section>
 
       {/* Survival curve */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Survival curve: {headline.fullFiveYearCohort} birth cohort
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Percentage of the {headline.fullFiveYearCohort} birth cohort still active at each
             anniversary, tech (Information and Communication) versus all industries.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <ComparisonBarChart
               categories={HORIZON_YEARS.map((y) => `Year ${y}`)}
               seriesA={HORIZON_YEARS.map((y) => fullCohort.techSurvival[y]?.pct ?? null)}
@@ -259,16 +269,16 @@ export default function TechStartupSurvivalIndexPage() {
       {/* One-year trend across cohorts */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             One-year survival across birth cohorts, {cohortSeries[0].cohortYear} to{" "}
             {headline.latestCohortYear}
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             One-year survival is stable across cohorts, including through the pandemic-era{" "}
             {cohortSeries[1]?.cohortYear ?? "2020"} birth cohort, which some might expect to show
             a Covid-era dip.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <ComparisonBarChart
               categories={oneYearTrend.map((r) => r.cohort)}
               seriesA={oneYearTrend.map((r) => r.tech)}
@@ -282,16 +292,16 @@ export default function TechStartupSurvivalIndexPage() {
       </section>
 
       {/* Sector comparison */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Two-year survival by industry, {sectorTwoYear.cohortYear} birth cohort
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             How tech compares to other broad industry groups at the two-year survival mark,
             highest first.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <HorizontalBarChart
               data={sectorTwoYear.rows.map((r) => ({
                 label: r.industry,
@@ -301,7 +311,7 @@ export default function TechStartupSurvivalIndexPage() {
               }))}
             />
           </div>
-          <p className="mt-3 text-xs text-neutral-500">
+          <p className="mt-3 text-xs text-slate-500">
             Bars show two-year survival percentage. Source: ONS Business Demography (Table 4.2),
             OGL v3.0.
           </p>
@@ -309,18 +319,18 @@ export default function TechStartupSurvivalIndexPage() {
       </section>
 
       {/* Methodology */}
-      <section id="methodology" className="bg-white border-t border-neutral-200 py-12 sm:py-16">
+      <section id="methodology" className="bg-white border-t border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Methodology and honest limitations
           </h2>
-          <div className="max-w-2xl space-y-6 text-sm text-neutral-700 leading-relaxed">
+          <div className="max-w-2xl space-y-6 text-sm text-slate-700 leading-relaxed">
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">Source</h3>
+              <h3 className="font-semibold text-slate-900 mb-2">Source</h3>
               <p>{meta.methodology}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">Caveats</h3>
+              <h3 className="font-semibold text-slate-900 mb-2">Caveats</h3>
               <ul className="list-disc list-inside space-y-2">
                 {meta.caveats.map((c) => (
                   <li key={c}>{c}</li>
@@ -328,10 +338,10 @@ export default function TechStartupSurvivalIndexPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">Re-running the pull</h3>
+              <h3 className="font-semibold text-slate-900 mb-2">Re-running the pull</h3>
               <p>
                 The pull script is at{" "}
-                <code className="bg-neutral-100 px-1 rounded text-xs">
+                <code className="bg-slate-100 px-1 rounded text-xs">
                   startups-tech/pipeline/pull_tech_survival_index.py
                 </code>
                 . It downloads ONS&apos;s current Business Demography reference tables and
@@ -343,12 +353,12 @@ export default function TechStartupSurvivalIndexPage() {
       </section>
 
       {/* Sources and cite-as */}
-      <section className="bg-neutral-50 border-t border-neutral-200 py-10 sm:py-12">
+      <section className="bg-slate-50 border-t border-slate-200 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-3">Sources and how to cite</h2>
-          <div className="max-w-2xl space-y-4 text-sm text-neutral-600">
+          <h2 className="text-lg font-bold text-slate-900 mb-3">Sources and how to cite</h2>
+          <div className="max-w-2xl space-y-4 text-sm text-slate-600">
             <div>
-              <p className="font-semibold text-neutral-900">Primary source</p>
+              <p className="font-semibold text-slate-900">Primary source</p>
               <p>
                 <a
                   href={meta.sources.ons_business_demography.url}
@@ -363,17 +373,17 @@ export default function TechStartupSurvivalIndexPage() {
               </p>
             </div>
             <div>
-              <p className="font-semibold text-neutral-900">Cite this index as</p>
-              <blockquote className="border-l-4 border-neutral-300 pl-4 text-neutral-500 italic text-xs">
+              <p className="font-semibold text-slate-900">Cite this index as</p>
+              <blockquote className="border-l-4 border-slate-300 pl-4 text-slate-500 italic text-xs">
                 {meta.citeAs}
               </blockquote>
             </div>
             <p className="text-sm">
-              <Link href={`${PAGE_PATH}/data`} className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
+              <Link href={`${PAGE_PATH}/data`} data-cta="research_tech_startup_survival_index_csv" data-cta-placement="sources" className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
                 Download the full dataset (CSV)
               </Link>
             </p>
-            <p className="text-xs text-neutral-500">Last updated: {meta.lastUpdated}.</p>
+            <p className="text-xs text-slate-500">Last updated: {meta.lastUpdated}.</p>
           </div>
         </div>
       </section>
@@ -399,9 +409,19 @@ export default function TechStartupSurvivalIndexPage() {
             >
               Fractional CFO
             </Link>
+            {/* ADOPTED: `btnOnDark` from src/components/ui/layout-utils.ts
+                (restored by U4 from packages/web-shared/design/layout-utils.ts
+                with the literal focus-ring utility swapped for
+                var(--focus-ring)). This replaces a hand-rolled
+                `border border-white/30`, which is the exact contrast defect
+                569d3304 fixed on contractors-ir35: white/30 composited over
+                this primary-950 #1e1b4b ground is #61605f-equivalent at 2.64:1,
+                under the 3.0 floor for a button's only visible boundary.
+                btnOnDark's border-white/40 measures 3.63:1 on the same ground.
+                PASS. The label and the destination are unchanged. */}
             <Link
               href="/for/pre-seed-founders"
-              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
+              className={btnOnDark}
             >
               Pre-seed founder guide
             </Link>
@@ -413,16 +433,28 @@ export default function TechStartupSurvivalIndexPage() {
       </section>
 
       {/* FAQ */}
+      {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx,
+          measured 2026-09-29. The `alwaysRenderAnswers` prop the kit gained this
+          wave removes the server-HTML objection, and the sibling research pages
+          with plain-string answers DO adopt it. It cannot be adopted here: the
+          LAST entry in this page's `faqs` array is rendered through a JSX branch
+          below that carries a real internal <Link> inside the answer, and
+          FaqSection's `FaqEntry.answer` is a string (schema/faq-page.ts), with
+          `html` the only alternative and no <Link> component available inside a
+          dangerouslySetInnerHTML string. Adopting it would render the plain
+          `f.answer` string instead and DELETE that internal link, taking this
+          route below its link floor. The JSON-LD already asserts the string
+          form, so nothing is lost by leaving the richer rendering in place. */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-8">
             Frequently asked questions
           </h2>
           <div className="max-w-2xl space-y-6">
             {faqs.map((f, i) => (
               <div key={f.question}>
-                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                <p className="mt-2 text-base leading-relaxed text-neutral-700">
+                <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
+                <p className="mt-2 text-base leading-relaxed text-slate-700">
                   {i === faqs.length - 1 ? (
                     <>
                       This page uses ONS cohort-based Business Demography survival curves (what

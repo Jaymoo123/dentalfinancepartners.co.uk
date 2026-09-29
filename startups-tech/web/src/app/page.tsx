@@ -3,42 +3,79 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import {
   btnPrimary,
+  btnOnDark,
   focusRing,
   siteContainerLg,
 } from "@/components/ui/layout-utils";
 import { buildFaqJsonLd, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { ArrowRight, ShieldCheck, Quote } from "lucide-react";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import {
+  StatsCounter,
+  type StatItem,
+} from "@accounting-network/web-shared/design/marketing/StatsCounter";
+import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 
-/* Kit components considered for this page and DECLINED, with the measured reason.
- * Written here rather than left unsaid so the next reviewer does not reopen them.
+/* U1 (2026-09-29). Kit components re-decided on the props the manager added this
+ * wave. Every entry below is the CURRENT verdict with the measurement behind it;
+ * the seven pre-uplift entries this block replaced are superseded, not deleted.
  *
- * packages/web-shared/design/marketing/StatsCounter.tsx - DECLINED. It renders a
- *   label plus one animated value and has no slot for a link. The key-figures band
- *   below carries four gov.uk source links, one per figure, and adopting the
- *   component would delete all four. It also counts up, so server HTML ships the
- *   start frame and a crawler reads the wrong number. Same measured verdict crypto
- *   recorded at crypto/web/src/app/page.tsx:345.
- * packages/web-shared/design/marketing/TestimonialsSection.tsx - DECLINED. It
- *   hardcodes Property's three landlord quotes at :8-28 and exposes no `items`
- *   prop, so adopting it would publish landlord testimonials on a startup site.
- * packages/web-shared/design/marketing/ComparisonTable.tsx - DECLINED. It is a
- *   "them against us" table: every row needs a `general` string, and it emits a
- *   "Most recommended" pill, a `generalLabel`, two captions and an "Us:" label.
- *   The table below is a two-column Area / Our approach table with no other side
- *   and none of that copy, so adopting it would author six new sentences.
- * packages/web-shared/design/marketing/StickyCTA.tsx - DECLINED. Interruptive
- *   surface, banned on this site.
- * packages/web-shared/design/marketing/ProcessTimeline.tsx - DECLINED. Needs
- *   staged process copy this site does not publish.
- * packages/web-shared/design/marketing/ProblemStatement.tsx - DECLINED. Carries
- *   Property's landlord copy with no copy props.
- * packages/web-shared/design/primitives/FaqSection.tsx - DECLINED. The FAQ section
- *   below and buildFaqJsonLd(faqs) read the same `faqs` array. The kit accordion
- *   keeps closed answers out of the server HTML while the schema keeps asserting
- *   them, which is the exact mismatch the <details> markup avoids. */
+ * ADOPTED this wave, each at its call site further down:
+ *   design/marketing/StatsCounter.tsx      - key-figures band. `href` now exists
+ *     (:24-26), so the four gov.uk citations survive. `value`/`target`+`suffix`
+ *     handle "20%" / "£250k" / "18%", and StatValue holds the TRUE target in the
+ *     server HTML (:37-41), so the count-up no longer ships a wrong figure.
+ *     Both halves of the old decline are dead.
+ *   design/marketing/ScrollGlowGroup.tsx   - services grid wrapper.
+ *   design/primitives/FaqSection.tsx       - with `alwaysRenderAnswers` (:33-35),
+ *     which force-mounts every answer into the server HTML. That was the entire
+ *     reason the hand-rolled <details> block existed, so the decline is dead and
+ *     buildFaqJsonLd(faqs) still reads the same binding the section renders.
+ *
+ * STILL DECLINED, with the measurement:
+ *   design/marketing/TestimonialsSection.tsx - DECLINED, and the reason CHANGED.
+ *     The `items` prop the manager added (:57-62) does clear the old objection
+ *     (Property's landlord quotes are no longer welded in). Two new ones replace
+ *     it, both fatal under this wave's no-new-copy rule. (a) The figure renders
+ *     an unconditional five-star row with aria-label "Rated 5 out of 5"
+ *     (TestimonialsSection.tsx:72-77). This page publishes no rating, and the
+ *     quotes it does publish are governed by a disclaimer stating they are
+ *     composite accounts; asserting a five-star rating over composites is a new
+ *     claim, not a restyle. (b) `items` is typed `typeof testimonials`, so each
+ *     entry needs `highlight`, `who`, `detail` and `initials`
+ *     (TestimonialsSection.tsx:8-28). This page publishes a quote and one
+ *     attribution line; `initials` alone would author three new strings and
+ *     `highlight` would require cutting a sentence out of each quote to bold it.
+ *     Reversible by a kit edit that makes the star row opt-in and the caption
+ *     fields optional; that is a manager carve-out, not this file's to make.
+ *   design/marketing/NumberedReasons.tsx - DECLINED. `items` is
+ *     `{title: string; body: string}[]` (:27). Four of the six `whySpecialist`
+ *     rows below carry `detail` as JSX with gov.uk anchors, and the component has
+ *     no `html` escape hatch, so adopting it would delete six source links and
+ *     flatten the rest to plain text.
+ *   design/marketing/DrawnTickList.tsx - DECLINED. `items` is `string[]` (:35).
+ *     This page has no tick list: the nearest thing is LeadCTAPanel's proof-point
+ *     row, which renders its own Check icon per item already.
+ *   design/marketing/ProcessTimeline.tsx - DECLINED. `steps` are `{n,title,body}`;
+ *     the "moments that bring founders here" band is five parallel situations, not
+ *     numbered stages, and no `n` is published for them. The stale half of the old
+ *     decline (escaped markup) is gone: `html` exists at :27. The copy half stands.
+ *   design/marketing/CoverageCards.tsx - DECLINED. `CoverageItem` (:5-15) has no
+ *     `href`. The five audience cards below ARE five of this page's internal
+ *     links; adopting would drop them under the route's link floor.
+ *   design/marketing/ProblemStatement.tsx - DECLINED. :33-40 hardcodes Property's
+ *     landlord copy with no copy props, and its right column is a `marquee` this
+ *     site publishes nothing for.
+ *   design/marketing/ComparisonTable.tsx - DECLINED, unchanged. Every row needs a
+ *     `general` string plus a "Most recommended" pill, a `generalLabel`, two
+ *     captions and an "Us:" label. The table below has no second side.
+ *   design/marketing/StickyCTA.tsx - NOT a decline: an open OWNER GATE (plan D1).
+ *     Interruptive surface, not built until he answers. */
 
 export const metadata: Metadata = {
   title: { absolute: `${siteConfig.name} | Accountants for Funded and Scaling UK Startups` },
@@ -48,24 +85,35 @@ export const metadata: Metadata = {
 };
 
 // ponytail: figures verified against house_positions.md; all linked to gov.uk source
-const keyStats = [
+/* U1: the four published figures, unchanged, re-expressed as the kit `StatItem`
+   shape (packages/web-shared/design/marketing/StatsCounter.tsx:5-26). The rendered
+   text is character-for-character what this band published before the uplift:
+   "20%" is target 20 + suffix "%", "£250k" is prefix "£" + target 250 + suffix "k",
+   "18%" is target 18 + suffix "%". Labels and gov.uk hrefs are untouched. */
+const keyStats: StatItem[] = [
   {
-    value: "20%",
+    target: 20,
+    suffix: "%",
     label: "Merged R&D scheme above-the-line credit (from April 2024)",
     href: "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-large-companies",
   },
   {
-    value: "£250k",
+    target: 250,
+    prefix: "£",
+    suffix: "k",
     label: "Maximum SEIS raise per company (gross assets under £350k, fewer than 25 FTE, within 3 years of trade)",
     href: "https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme",
   },
   {
-    value: "£250k",
+    target: 250,
+    prefix: "£",
+    suffix: "k",
     label: "EMI option value per employee (£3m total company limit; gross assets under £30m, fewer than 250 FTE)",
     href: "https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis",
   },
   {
-    value: "18%",
+    target: 18,
+    suffix: "%",
     label: "BADR rate on qualifying gains from 6 April 2026 (£1m lifetime limit; EMI shares qualify on 2-year rule)",
     href: "https://www.gov.uk/business-asset-disposal-relief",
   },
@@ -439,6 +487,10 @@ const closingProofPoints = [
 ];
 
 export default function HomePage() {
+  const recentPosts = getAllPosts()
+    .slice(0, 3)
+    .map((post) => ({ ...post, categorySlug: getCategorySlug(post) }));
+
   return (
     <>
       <script
@@ -465,13 +517,30 @@ export default function HomePage() {
             (primary-950) and is NOT a ramp step of its own. Kept as an arbitrary
             value: snapping it to 950 would flatten the gradient visibly. */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900/70 to-[#0f0e2a]" />
+        {/* Per-site motif, the marker generalist's hero carries and this one did
+            not. Mounted AFTER the gradient so it paints over it, and under the
+            z-10 copy column. The component's own contrast table already measures
+            this exact ground (bg-primary-950): composited white 13.80,
+            slate-300 9.29, both PASS. `patternId` is left at its default here and
+            overridden on the second mount in the closing panel below, because two
+            <pattern> elements sharing an id is invalid and the second silently
+            resolves to the first. */}
+        <StartupsBackdrop />
         <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
-          <div className="max-w-3xl">
-            <div className="mb-6 inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-widest text-indigo-200">
+          <div className="hero-reveal max-w-3xl">
+            {/* Status pill, generalist/web/src/app/page.tsx:263-268: rounded-full,
+                ring-1 ring-white/25, backdrop-blur-lg, and the live ping dot pair.
+                Shape only. The text is still {siteConfig.name}; the ShieldCheck is
+                kept because the dot replaces nothing it was saying. */}
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary-400/10 border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-widest text-indigo-200 shadow-lg ring-1 ring-white/25 backdrop-blur-lg">
+              <span className="relative flex h-2.5 w-2.5" aria-hidden>
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-400 opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary-400" />
+              </span>
               <ShieldCheck className="h-3.5 w-3.5" aria-hidden />
               {siteConfig.name}
             </div>
-            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white text-balance sm:text-5xl lg:text-7xl">
               Accountants for funded and scaling UK startups.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-indigo-100 sm:text-xl">
@@ -480,15 +549,30 @@ export default function HomePage() {
               Not the commodity cheap-filing market.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+              {/* Both CTAs move onto the shared recipes in
+                  @/components/ui/layout-utils (which already carry
+                  outline-[var(--focus-ring)], so `ground-dark` still governs the
+                  ring). The hand-rolled secondary was `border-white/30`, which
+                  measures 2.47 against this ground at the copy column's right
+                  edge and is under the 3.0 graphic floor for a button's only
+                  visible boundary; `btnOnDark` is border-white/40 at 3.20. That
+                  is the same defect 569d3304 fixed on contractors-ir35.
+                  `data-cta` tuples match generalist's naming so vw_cta_performance
+                  reads across sites. Labels unchanged. */}
               <Link
                 href="/contact"
-                className={`inline-flex min-h-12 items-center justify-center bg-white px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-semibold text-primary-950 hover:bg-indigo-50 active:bg-indigo-100 transition-colors text-center ${focusRing}`}
+                data-cta="hero_primary"
+                data-cta-placement="hero"
+                data-cta-goal="form"
+                className={`${btnPrimary} px-6 py-3 text-base sm:px-10 sm:py-4 sm:text-lg`}
               >
                 Speak to a startup specialist
               </Link>
               <Link
                 href="/services/rd-tax-claims"
-                className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
+                data-cta="hero_secondary"
+                data-cta-placement="hero"
+                className={`${btnOnDark} px-6 py-3 text-base sm:px-10 sm:py-4 sm:text-lg`}
               >
                 R&amp;D tax claims
               </Link>
@@ -503,34 +587,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Key figures bar.
-          R1 S2: same `ground-dark` rebind. Checked: this band holds four figures and
-          their labels directly on the primary-900 ground and no light-ground card, so
-          no focusable child inherits a white ring onto white. */}
-      <section className="ground-dark bg-primary-900 py-8 sm:py-10" aria-label="Key startup tax figures 2026/27">
+      {/* Key figures bar. ADOPTED
+          packages/web-shared/design/marketing/StatsCounter.tsx.
+          The band moves from the primary-900 dark ground to bg-white, because the
+          kit component paints text-slate-900 / text-slate-500 and is written for a
+          light strip (generalist/web/src/app/page.tsx:317-320 is the same band on
+          the same ground). `ground-dark` therefore comes OFF with it: nothing here
+          sits on a dark ground any more, so the light `--focus-ring` default is the
+          correct one and the rebind would have put a white ring on white.
+          The four gov.uk links now ride the component's own `href` slot, and the
+          aria-label stays on the section so the band keeps its accessible name. */}
+      <section className="border-b border-slate-200 bg-white py-8 sm:py-10" aria-label="Key startup tax figures 2026/27">
         <div className={siteContainerLg}>
-          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
-            {keyStats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <a
-                  href={stat.href}
-                  className={`text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono hover:text-indigo-200 transition-colors ${focusRing}`}
-                >
-                  {stat.value}
-                </a>
-                <div className="mt-1.5 text-xs sm:text-sm font-semibold text-indigo-200 uppercase tracking-wider">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
+          <StatsCounter stats={keyStats} />
         </div>
       </section>
 
       {/* Intro strip */}
-      <section className="border-b border-neutral-200 bg-stone-50 py-10 sm:py-12">
+      <section className="border-b border-slate-200 bg-slate-50 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <p className="max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
+          <p className="max-w-3xl text-lg leading-relaxed text-slate-700 sm:text-xl">
             The compliance obligations that matter most to a funded startup (R&amp;D claims, EIS compliance,
             EMI option scheme management, share scheme hygiene at formation and round) are encountered
             infrequently by a generalist firm. They are the main work here. Commodity annual accounts
@@ -540,13 +616,13 @@ export default function HomePage() {
       </section>
 
       {/* Who the site helps */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Eyebrow>Who we work with</Eyebrow>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Funded and scaling product companies. Not contractors, not agencies.
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             Solo contractors and personal service companies are out of scope, as are creative and
             marketing agencies. This site works with tech, SaaS, software
             and fintech companies that have passed formation and are growing.
@@ -556,13 +632,13 @@ export default function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}
+                className={`group block border border-slate-200 bg-slate-50 p-5 sm:p-6 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}
               >
-                <span className="text-base font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
+                <span className="text-base font-bold text-slate-900 group-hover:text-primary-600 transition-colors">
                   {item.title}
                 </span>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">{item.body}</p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">{item.body}</p>
+                <ArrowRight className="mt-3 h-4 w-4 text-slate-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>
@@ -570,53 +646,59 @@ export default function HomePage() {
       </section>
 
       {/* Specialist services */}
-      <section className="border-b border-neutral-200 bg-stone-50 py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <Eyebrow>Specialist services</Eyebrow>
-            <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
+            <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
               Six service areas covering the funded startup compliance picture.
             </h2>
-            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-neutral-600">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-600">
               From first R&amp;D claim through EMI pool and share scheme hygiene to fractional CFO.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* ADOPTED packages/web-shared/design/marketing/ScrollGlowGroup.tsx as a
+              pure wrapper: it flips data-glow on this div once the grid is on
+              screen and the one-shot card pulse lives in globals.css. No child
+              markup and no copy changes, it renders its children verbatim, and it
+              no-ops under prefers-reduced-motion. Same mount as
+              generalist/web/src/app/page.tsx:346. */}
+          <ScrollGlowGroup className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {serviceCards.map((service) => (
               <Link
                 key={service.href}
                 href={service.href}
-                className={`group block border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}
+                className={`group block border border-slate-200 bg-white p-6 sm:p-7 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}
               >
-                <h3 className="text-base font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-base font-bold text-slate-900 group-hover:text-primary-600 transition-colors">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">{service.body}</p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">{service.body}</p>
                 <div className="mt-4 flex items-center text-primary-600 font-semibold text-sm">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}
-          </div>
+          </ScrollGlowGroup>
         </div>
       </section>
 
       {/* Founder moments */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Eyebrow>The moments that bring founders here</Eyebrow>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Five situations where specialist knowledge changes the outcome.
           </h2>
           <div className="mt-10 sm:mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
             {founderMoments.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-primary-600 bg-neutral-50 p-6 sm:p-8"
+                className="border border-slate-200 border-l-4 border-l-primary-600 bg-slate-50 p-6 sm:p-8"
               >
-                <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
+                <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+                <p className="mt-4 text-base leading-relaxed text-slate-600">{item.body}</p>
                 <Link
                   href={item.href}
                   className={`mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:opacity-70 transition-opacity ${focusRing}`}
@@ -630,15 +712,15 @@ export default function HomePage() {
       </section>
 
       {/* Free tools + research asset */}
-      <section className="border-b border-neutral-200 bg-stone-50 py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <Eyebrow>Free tools</Eyebrow>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
+              <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
                 Four calculators covering the questions founders ask most.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-neutral-600 sm:text-lg">
+              <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
                 All four tools are scenario and estimate calculators. They state their assumptions openly
                 and end at a prompt to speak to us for the real numbers. No sign-up, no data stored.
               </p>
@@ -647,31 +729,31 @@ export default function HomePage() {
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    className={`group flex items-start justify-between gap-4 border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-primary-600 ${focusRing}`}
+                    className={`group flex items-start justify-between gap-4 border border-slate-200 bg-white px-5 py-4 transition-all hover:border-primary-600 ${focusRing}`}
                   >
                     <div>
-                      <div className="text-sm font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
+                      <div className="text-sm font-bold text-slate-900 group-hover:text-primary-600 transition-colors">
                         {calc.title}
                       </div>
-                      <p className="mt-1 text-xs leading-relaxed text-neutral-500">{calc.body}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-slate-500">{calc.body}</p>
                     </div>
-                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-slate-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
               </div>
             </div>
             <div>
               <Eyebrow>Research asset</Eyebrow>
-              <h2 className="mt-2 text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
+              <h2 className="mt-2 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
                 Startup Formation and Survival Index.
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
                 How many UK tech and software companies are on the register, how many have been
                 dissolved, and how formations have moved year by year across eight software and IT
                 SIC codes, from live{" "}
                 <a
                   href="https://developer.company-information.service.gov.uk/api/docs/"
-                  className={`underline underline-offset-2 text-neutral-800 hover:text-primary-600 ${focusRing}`}
+                  className={`underline underline-offset-2 text-slate-800 hover:text-primary-600 ${focusRing}`}
                 >
                   Companies House Advanced Search API
                 </a>{" "}
@@ -682,10 +764,10 @@ export default function HomePage() {
               <div className="mt-6">
                 <Link
                   href="/research/startup-formation-survival-index"
-                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-primary-600 hover:text-primary-600 transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between border border-slate-200 bg-white px-5 py-4 text-sm font-semibold text-slate-800 hover:border-primary-600 hover:text-primary-600 transition-all ${focusRing}`}
                 >
                   View the Startup Formation and Survival Index
-                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -694,18 +776,18 @@ export default function HomePage() {
       </section>
 
       {/* Why a specialist */}
-      <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
+      <section className="border-b border-slate-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <Eyebrow>Why specialist matters</Eyebrow>
-          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             A generalist handles the accounts. We handle the parts where getting it wrong is expensive.
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             R&amp;D claims that survive a HMRC compliance check, SEIS eligibility checked before investors
             are approached, EMI options that retain their qualifying status, section 431 elections filed
             in the 14-day window: a generalist encounters these infrequently. They are the routine work here.
           </p>
-          <div className="mt-12 overflow-x-auto border border-neutral-200">
+          <div className="mt-12 overflow-x-auto border border-slate-200">
             <table className="w-full min-w-[28rem] text-left text-sm sm:text-base">
               <caption className="sr-only">
                 How {siteConfig.name} handles specialist startup tax areas
@@ -724,12 +806,12 @@ export default function HomePage() {
                 {whySpecialist.map((row, i) => (
                   <tr
                     key={row.area}
-                    className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-neutral-50" : "bg-white"}`}
+                    className={`border-b border-slate-200 last:border-0 ${i % 2 === 1 ? "bg-slate-50" : "bg-white"}`}
                   >
-                    <th scope="row" className="px-4 py-3.5 font-semibold text-neutral-900 sm:px-6 sm:py-4 align-top">
+                    <th scope="row" className="px-4 py-3.5 font-semibold text-slate-900 sm:px-6 sm:py-4 align-top">
                       {row.area}
                     </th>
-                    <td className="px-4 py-3.5 text-neutral-600 sm:px-6 sm:py-4 align-top leading-relaxed">{row.detail}</td>
+                    <td className="px-4 py-3.5 text-slate-600 sm:px-6 sm:py-4 align-top leading-relaxed">{row.detail}</td>
                   </tr>
                 ))}
               </tbody>
@@ -739,14 +821,14 @@ export default function HomePage() {
       </section>
 
       {/* Anonymised social proof */}
-      <section className="bg-stone-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
             <Eyebrow>Real outcomes</Eyebrow>
-            <h2 id="testimonials-heading" className="text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
+            <h2 id="testimonials-heading" className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
               What founders say
             </h2>
-            <p className="mt-3 text-sm sm:text-base text-neutral-600">
+            <p className="mt-3 text-sm sm:text-base text-slate-600">
               Composite accounts based on patterns across our client base. Names, amounts and
               specific details anonymised. The compliance situations described are real.
             </p>
@@ -755,13 +837,13 @@ export default function HomePage() {
             {testimonials.map((t, i) => (
               <figure
                 key={i}
-                className="relative bg-white border border-neutral-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+                className="relative bg-white border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
               >
                 <Quote className="absolute top-4 right-4 h-6 w-6 text-indigo-100" aria-hidden />
-                <blockquote className="text-base leading-relaxed text-neutral-800 font-medium pr-8">
+                <blockquote className="text-base leading-relaxed text-slate-800 font-medium pr-8">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-neutral-100 text-xs sm:text-sm font-semibold text-neutral-500">
+                <figcaption className="mt-5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-slate-500">
                   {t.attribution}
                 </figcaption>
               </figure>
@@ -770,39 +852,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="border-t border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
-        <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-4xl">
-              Common questions
-            </h2>
-            <div className="space-y-3 sm:space-y-4">
-              {faqs.map((faq) => (
-                <details
-                  key={faq.question}
-                  className="group border border-neutral-200 bg-white"
-                >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-primary-600 transition-colors list-none">
-                    <span>{faq.question}</span>
-                    <span
-                      className="flex-shrink-0 text-primary-600 transition-transform group-open:rotate-45"
-                      aria-hidden
-                    >
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <div className="px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4">
-                    {faq.answer}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* FAQ. ADOPTED packages/web-shared/design/primitives/FaqSection.tsx with
+          `alwaysRenderAnswers` (FaqSection.tsx:33-35, new this wave). The decline
+          this replaces was correct while it stood: the kit accordion unmounted a
+          closed answer, so buildFaqJsonLd(faqs) above would have asserted eight
+          answers the server HTML did not carry. `alwaysRenderAnswers` force-mounts
+          all eight and hides them with data-[state=closed]:hidden, so the schema
+          and the markup read the same `faqs` binding and cannot drift.
+          `eyebrow=""` rather than the kit default "FAQ": the default would author a
+          label this page does not publish, and repeating "Common questions" as both
+          eyebrow and heading would print the same words twice. The empty string
+          takes the component's own `eyebrow ? ... : null` branch (FaqSection.tsx:40).
+          `tone` is left at its "slate" default, NOT "white": the section ground is
+          white, and a white card carries `border-transparent` at rest
+          (accordion.tsx:18), so a white card would be invisible until hovered. The
+          slate-50 card is the separation the hand-rolled border used to give.
+          Question and answer strings are untouched. */}
+      <FaqSection
+        eyebrow=""
+        title="Common questions"
+        faqs={faqs}
+        alwaysRenderAnswers
+        className="border-t border-slate-200 bg-white py-12 sm:py-16 lg:py-20"
+      />
 
       {/* CTA, on the kit panel.
           ADOPTED packages/web-shared/design/marketing/LeadCTAPanel.tsx. Every
@@ -830,24 +902,66 @@ export default function HomePage() {
         backdrop={
           <>
             <div className="absolute inset-0 bg-primary-950" />
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-slate-900/0 to-slate-900/0 pointer-events-none" />
+            {/* Second motif mount, over the two ground layers rather than instead
+                of them, so the panel's published indigo ground does not move to the
+                kit's slate-900. Distinct patternId, per the component's header note
+                about duplicate <pattern> ids. Ground here is primary-950, the row
+                the component already measures: composited white 13.80. */}
+            <StartupsBackdrop patternId="startups-round-ladder-cta" />
           </>
         }
       />
 
       {/* Blog footer strip */}
-      <section className="border-t border-neutral-200 bg-stone-50 py-12 sm:py-16 lg:py-20">
+      <section className="border-t border-slate-200 bg-slate-50 py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
             <Eyebrow>Guides and analysis</Eyebrow>
-            <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
+            <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
               Plain English guidance for UK founders.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
               Articles and guides on R&amp;D relief, SEIS and EIS, EMI and share schemes, founder tax
               and extraction, SaaS finance, and startup compliance. Written for founders and finance leads,
               not for accountants.
             </p>
+            {/* Three most recent posts, the band generalist renders at :409-456 and
+                this one did not: it published a standfirst and two buttons on a site
+                with 37 links on /blog. `getAllPosts()` is the same server-side
+                reader /blog uses, so no title, category or summary is authored here;
+                every string in the list is post frontmatter already published. */}
+            <div className="mt-8 divide-y divide-slate-200 border-y border-slate-200 text-left">
+              {recentPosts.map((post) => (
+                <article key={post.slug} className="group">
+                  <Link
+                    href={`/blog/${post.categorySlug}/${post.slug}`}
+                    className={`flex items-center gap-4 py-4 sm:gap-6 sm:py-5 ${focusRing}`}
+                  >
+                    <span className="hidden w-40 shrink-0 text-xs font-bold uppercase tracking-wider text-primary-600 sm:block">
+                      {post.category}
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="mb-1 block text-xs font-bold uppercase tracking-wider text-primary-600 sm:hidden">
+                        {post.category}
+                      </span>
+                      <h3 className="text-base font-bold text-slate-900 transition-colors group-hover:text-primary-600 sm:text-lg">
+                        {post.title}
+                      </h3>
+                      {post.summary ? (
+                        <p className="mt-1 hidden text-sm text-slate-600 line-clamp-1 sm:block">
+                          {post.summary}
+                        </p>
+                      ) : null}
+                    </span>
+                    <ArrowRight
+                      aria-hidden
+                      className="h-5 w-5 shrink-0 text-slate-300 transition-all group-hover:translate-x-1 group-hover:text-primary-600"
+                    />
+                  </Link>
+                </article>
+              ))}
+            </div>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link href="/blog" className={btnPrimary}>
                 Browse all guides

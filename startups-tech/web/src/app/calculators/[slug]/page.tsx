@@ -8,6 +8,8 @@ import { buildCalculatorJsonLd, buildFaqPageJsonLd } from "@/lib/calculators/sch
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
 import { siteContainerLg, contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -70,9 +72,19 @@ export default async function CalculatorToolPage({ params }: Props) {
 
           `ground-dark` rebinds --focus-ring to white for the breadcrumb links,
           which are the first focusable things on the page. No light island sits
-          inside this section. */}
-      <section className="ground-dark bg-primary-600 py-12 sm:py-16">
-        <div className={siteContainerLg}>
+          inside this section.
+
+          ADOPTED (U2 item 1, and the sibling hub's decline of the same
+          component is reversed in the same wave): src/components/layout/
+          StartupsBackdrop.tsx. Its contrast table now carries this exact
+          ground: bg-primary-600 #4f46e5 composited with the motif at its
+          strongest point = #544de7, white 5.85, both floors PASS. The same row
+          warns that text-slate-300 falls to 3.94 here; nothing in this band is
+          slate-300 (h1 white, standfirst white/90, breadcrumb forced white by
+          crumbOnBrand), so no copy colour changes. Host contract added. */}
+      <section className="ground-dark relative overflow-hidden bg-primary-600 py-12 sm:py-16">
+        <StartupsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <div className={crumbOnBrand}>
             <Breadcrumb
               onDark
@@ -100,35 +112,50 @@ export default async function CalculatorToolPage({ params }: Props) {
           <CalculatorClient slug={tool.slug} variant="page" resultCta={<CalcResultCta campaign={tool.slug} />} />
         </div>
       </section>
-      <section className={`bg-white ${sectionY}`}>
+      {/* Bottom padding is carried by the FAQ and capture sections that follow
+          on the same white ground, so this one opens the stack with top padding
+          only rather than stacking two full section gaps. */}
+      <section className="bg-white pt-12 sm:pt-16 md:pt-20">
         <div className={contentNarrow}>
           <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">{tool.explainer.heading}</h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-700">
             {tool.explainer.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
           </div>
-          {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
-              It is a Radix accordion with no forceMount, so a closed answer is
-              absent from the server HTML while the FAQPage JSON-LD emitted above
-              asserts every answer. This template's FAQ is plain <h3> + <p>, is
-              already fully in the server HTML, and the JSON-LD is what crawlers
-              consume (playbook T8). Revisit only if the kit gains forceMount,
-              which is a manager carve-out. The markup below is unchanged apart
-              from its colour classes.
-              ADOPTION DECLINED: packages/web-shared/design/primitives/accordion.tsx,
-              same mechanism, same defect. */}
-          {tool.faqs && tool.faqs.length > 0 && (
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Frequently asked questions</h2>
-              <div className="mt-6 space-y-6">
-                {tool.faqs.map((f, i) => (
-                  <div key={i}>
-                    <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
-                    <p className="mt-2 text-base leading-relaxed text-slate-700">{f.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+        </div>
+      </section>
+      {/* ADOPTED, and the previous decline is STALE: the kit
+          packages/web-shared/design/primitives/FaqSection.tsx gained
+          `alwaysRenderAnswers` (:17,31-35), which passes Radix `forceMount`
+          through packages/web-shared/design/primitives/accordion.tsx:52-64 and
+          adds `data-[state=closed]:hidden`, so every answer stays in the server
+          HTML exactly as the plain <h3>/<p> block put it there and the FAQPage
+          JSON-LD emitted at the top of this file still asserts nothing the page
+          does not carry. Both consumers read the SAME `tool.faqs` array, so the
+          rendered count and the schema count cannot diverge.
+          `html` is NOT passed: `grep -n "<a " src/lib/calculators/**` returns
+          nothing for these four tool corpora, so every answer is plain text and
+          the safe JSX text child is correct here.
+          `eyebrow=""` because the kit default is the word "FAQ", which this
+          template does not publish; empty is falsy at FaqSection.tsx:39.
+          `title` is this section's existing h2 string, verbatim.
+          It is lifted OUT of the contentNarrow explainer column and rendered as
+          its own top-level section, the shape
+          generalist/web/src/app/calculators/[slug]/page.tsx:158-160 uses: the
+          kit component brings its own <section> and siteContainerLg, and
+          nesting that inside a max-w-3xl column would have indented the whole
+          block by a second set of gutters. Reading order is unchanged
+          (explainer, FAQ, capture). */}
+      {tool.faqs && tool.faqs.length > 0 && (
+        <FaqSection
+          eyebrow=""
+          title="Frequently asked questions"
+          faqs={tool.faqs}
+          alwaysRenderAnswers
+          className="bg-white pb-12 sm:pb-16"
+        />
+      )}
+      <section className="bg-white pb-12 sm:pb-16">
+        <div className={contentNarrow}>
           {/* PRE-EXISTING capture surface, kept exactly: the id, the
               scroll-mt-24 (this is the site's only anchor target), the position
               at the end of the explainer, the formId and every string. Removing

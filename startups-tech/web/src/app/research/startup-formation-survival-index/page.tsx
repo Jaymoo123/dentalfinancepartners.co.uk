@@ -3,7 +3,8 @@ import Link from "next/link";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { siteContainerLg, focusRing, btnOnDark } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import data from "@/data/startup-formation-survival-index.json";
 
@@ -95,9 +96,18 @@ export default function StartupFormationSurvivalIndexPage() {
           this route did not have. `onDark`: slate-300 links measure 10.76:1 and
           slate-400 chevrons 6.08:1 on primary-950, both past floor.
           `ground-dark` rebinds --focus-ring to white for the band
-          (src/app/globals.css:153-155). */}
-      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-16 sm:py-20">
-        <div className={siteContainerLg}>
+          (src/app/globals.css:153-155).
+          ADOPTED (U2 item 1): src/components/layout/StartupsBackdrop.tsx. Its
+          contrast table carries this ground: bg-primary-950 #1e1b4b composited
+          with the motif at its strongest point = #28265c, white 13.80 and
+          slate-300 9.29, both well past the 4.5 text floor, so the white h1,
+          the white/80 standfirst, the white stat figures and the kit
+          breadcrumb's slate-300 trail are all unaffected. Host contract added:
+          `relative overflow-hidden` on the section, `relative z-10` on the
+          content. */}
+      <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-950 py-16 sm:py-20">
+        <StartupsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             onDark
             siteUrl={siteConfig.url}
@@ -182,10 +192,10 @@ export default function StartupFormationSurvivalIndexPage() {
       {/* BLUF: what this measures */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             What this index measures
           </h2>
-          <div className="max-w-2xl rounded-md border-l-4 border-primary-600 bg-neutral-50 p-6 text-neutral-700 text-base leading-relaxed">
+          <div className="max-w-2xl rounded-md border-l-4 border-primary-600 bg-slate-50 p-6 text-slate-700 text-base leading-relaxed">
             As at {data.meta.pullDate}, {combined.activeCompanies.label} UK
             companies registered under tech and software SIC codes are currently
             active on the Companies House register, out of{" "}
@@ -194,7 +204,7 @@ export default function StartupFormationSurvivalIndexPage() {
             any given year's cohort survives. It tells you the current state of
             the full register.
           </div>
-          <div className="mt-8 prose prose-neutral max-w-2xl text-neutral-700 text-sm leading-relaxed space-y-4">
+          <div className="mt-8 prose max-w-2xl text-slate-700 text-sm leading-relaxed space-y-4">
             <p>
               The index tracks two things: <strong>formation volume</strong>{" "}
               (how many UK tech companies are incorporated each quarter and
@@ -228,12 +238,12 @@ export default function StartupFormationSurvivalIndexPage() {
       </section>
 
       {/* Annual formation trends */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Annual formation trends (2015 to 2025)
           </h2>
-          <p className="mb-8 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-8 max-w-2xl text-slate-600 text-sm">
             Count of all companies incorporating under tech/software SIC codes
             in each calendar year, regardless of current status. Source:{" "}
             <a
@@ -249,14 +259,14 @@ export default function StartupFormationSurvivalIndexPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="border-b-2 border-neutral-900">
-                  <th className="text-left py-3 pr-8 font-semibold text-neutral-900">
+                <tr className="border-b-2 border-slate-900">
+                  <th className="text-left py-3 pr-8 font-semibold text-slate-900">
                     Year
                   </th>
-                  <th className="text-right py-3 font-semibold text-neutral-900">
+                  <th className="text-right py-3 font-semibold text-slate-900">
                     Tech company formations
                   </th>
-                  <th className="text-right py-3 pl-8 font-semibold text-neutral-900">
+                  <th className="text-right py-3 pl-8 font-semibold text-slate-900">
                     Year-on-year change
                   </th>
                 </tr>
@@ -272,9 +282,9 @@ export default function StartupFormationSurvivalIndexPage() {
                   return (
                     <tr
                       key={row.year}
-                      className={`border-b border-neutral-100 ${isLatest ? "bg-indigo-50 font-semibold" : ""}`}
+                      className={`border-b border-slate-100 ${isLatest ? "bg-indigo-50 font-semibold" : ""}`}
                     >
-                      <td className="py-3 pr-8 text-neutral-700 font-mono">
+                      <td className="py-3 pr-8 text-slate-700 font-mono">
                         {row.year}
                         {isLatest && (
                           <span className="ml-2 text-xs text-primary-600 font-semibold">
@@ -282,10 +292,10 @@ export default function StartupFormationSurvivalIndexPage() {
                           </span>
                         )}
                       </td>
-                      <td className="py-3 text-right text-neutral-900 font-mono">
+                      <td className="py-3 text-right text-slate-900 font-mono">
                         {fmt(row.formations)}
                       </td>
-                      <td className="py-3 pl-8 text-right text-neutral-600 font-mono text-xs">
+                      <td className="py-3 pl-8 text-right text-slate-600 font-mono text-xs">
                         {pct !== null
                           ? `${parseFloat(pct) >= 0 ? "+" : ""}${pct}%`
                           : "n/a"}
@@ -296,7 +306,7 @@ export default function StartupFormationSurvivalIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs text-neutral-500">
+          <p className="mt-4 text-xs text-slate-500">
             Note: these are formations (incorporations), not trading starts. A
             company is counted from its date of incorporation regardless of when
             or whether it began trading.
@@ -307,10 +317,10 @@ export default function StartupFormationSurvivalIndexPage() {
       {/* Quarterly formations and dissolutions */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Quarterly incorporations and dissolutions (2020-Q1 to 2026-Q2)
           </h2>
-          <p className="mb-4 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-4 max-w-2xl text-slate-600 text-sm">
             New companies incorporated and companies dissolved per quarter.
             Net = incorporations minus dissolutions. Data covers 26 quarters.
           </p>
@@ -325,17 +335,17 @@ export default function StartupFormationSurvivalIndexPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="border-b-2 border-neutral-900">
-                  <th className="text-left py-3 pr-4 font-semibold text-neutral-900">
+                <tr className="border-b-2 border-slate-900">
+                  <th className="text-left py-3 pr-4 font-semibold text-slate-900">
                     Quarter
                   </th>
-                  <th className="text-right py-3 pr-4 font-semibold text-neutral-900">
+                  <th className="text-right py-3 pr-4 font-semibold text-slate-900">
                     Incorporations
                   </th>
-                  <th className="text-right py-3 pr-4 font-semibold text-neutral-900">
+                  <th className="text-right py-3 pr-4 font-semibold text-slate-900">
                     Dissolutions
                   </th>
-                  <th className="text-right py-3 font-semibold text-neutral-900">
+                  <th className="text-right py-3 font-semibold text-slate-900">
                     Net
                   </th>
                 </tr>
@@ -348,9 +358,9 @@ export default function StartupFormationSurvivalIndexPage() {
                   return (
                     <tr
                       key={row.quarter}
-                      className={`border-b border-neutral-100 ${isAnomaly || isQ4Surge ? "bg-amber-50" : ""}`}
+                      className={`border-b border-slate-100 ${isAnomaly || isQ4Surge ? "bg-amber-50" : ""}`}
                     >
-                      <td className="py-2 pr-4 text-neutral-700 font-mono text-xs whitespace-nowrap">
+                      <td className="py-2 pr-4 text-slate-700 font-mono text-xs whitespace-nowrap">
                         {row.quarter}
                         {isAnomaly && (
                           <span className="ml-1 text-amber-700">*</span>
@@ -359,10 +369,10 @@ export default function StartupFormationSurvivalIndexPage() {
                           <span className="ml-1 text-amber-700">†</span>
                         )}
                       </td>
-                      <td className="py-2 pr-4 text-right text-neutral-900 font-mono text-xs">
+                      <td className="py-2 pr-4 text-right text-slate-900 font-mono text-xs">
                         {fmt(row.incorporations)}
                       </td>
-                      <td className="py-2 pr-4 text-right text-neutral-700 font-mono text-xs">
+                      <td className="py-2 pr-4 text-right text-slate-700 font-mono text-xs">
                         {fmt(row.dissolutions)}
                       </td>
                       <td
@@ -377,7 +387,7 @@ export default function StartupFormationSurvivalIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-500">
+          <p className="mt-3 text-xs text-slate-500">
             * 2020-Q2: strike-off suspended (see anomaly note above). {" "}
             † 2020-Q4 / 2021-Q1: backlog clearance.
           </p>
@@ -385,12 +395,12 @@ export default function StartupFormationSurvivalIndexPage() {
       </section>
 
       {/* Sub-sector breakdown */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Sub-sector breakdown by SIC group
           </h2>
-          <p className="mb-8 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-8 max-w-2xl text-slate-600 text-sm">
             Current active and dissolved counts by SIC code group. Combined
             totals are lower than the sum of individual groups because Companies
             House deduplicates companies that list multiple SIC codes.
@@ -399,10 +409,10 @@ export default function StartupFormationSurvivalIndexPage() {
           {/* ADOPTED: `Eyebrow` from
               packages/web-shared/design/primitives/page-blocks.tsx on the three
               group labels below. They were hand-rolled eyebrows in all but name
-              (12px semibold uppercase tracking-wider neutral-500). Same words,
+              (12px semibold uppercase tracking-wider slate-500). Same words,
               no words added or dropped; the kit sets them at 11px sm:12px
               slate-600, which measures 7.58:1 on the white card against the
-              neutral-500 they replace at 4.74:1, and adds the brand rule that
+              slate-500 they replace at 4.74:1, and adds the brand rule that
               every other eyebrow on this site now carries.
 
               ADOPTION DECLINED on the callouts and footnotes in this file:
@@ -419,39 +429,39 @@ export default function StartupFormationSurvivalIndexPage() {
                 table, so the component would publish a second, colliding marker
                 and change the rendered text of every source line. */}
           <div className="grid gap-6 sm:grid-cols-3 mb-8">
-            <div className="bg-white border border-neutral-200 p-6">
+            <div className="bg-white border border-slate-200 p-6">
               <Eyebrow>
                 SIC 62xxx · Software &amp; IT services
               </Eyebrow>
               <div className="text-3xl font-bold font-mono text-primary-600">
                 {fmt(group62Active)}
               </div>
-              <div className="text-sm text-neutral-500 mt-1">active</div>
-              <div className="text-sm text-neutral-500 mt-1">
+              <div className="text-sm text-slate-500 mt-1">active</div>
+              <div className="text-sm text-slate-500 mt-1">
                 {fmt(group62Dissolved)} dissolved (all-time)
               </div>
             </div>
-            <div className="bg-white border border-neutral-200 p-6">
+            <div className="bg-white border border-slate-200 p-6">
               <Eyebrow>
                 SIC 63xxx · Data processing &amp; web portals
               </Eyebrow>
               <div className="text-3xl font-bold font-mono text-primary-600">
                 {fmt(group63Active)}
               </div>
-              <div className="text-sm text-neutral-500 mt-1">active</div>
-              <div className="text-sm text-neutral-500 mt-1">
+              <div className="text-sm text-slate-500 mt-1">active</div>
+              <div className="text-sm text-slate-500 mt-1">
                 {fmt(group63Dissolved)} dissolved (all-time)
               </div>
             </div>
-            <div className="bg-white border border-neutral-200 p-6">
+            <div className="bg-white border border-slate-200 p-6">
               <Eyebrow>
                 SIC 58xxx · Software publishing
               </Eyebrow>
               <div className="text-3xl font-bold font-mono text-primary-600">
                 {fmt(group58Active)}
               </div>
-              <div className="text-sm text-neutral-500 mt-1">active</div>
-              <div className="text-sm text-neutral-500 mt-1">
+              <div className="text-sm text-slate-500 mt-1">active</div>
+              <div className="text-sm text-slate-500 mt-1">
                 {fmt(group58Dissolved)} dissolved (all-time)
               </div>
             </div>
@@ -461,56 +471,56 @@ export default function StartupFormationSurvivalIndexPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="border-b-2 border-neutral-900">
-                  <th className="text-left py-3 pr-4 font-semibold text-neutral-900">
+                <tr className="border-b-2 border-slate-900">
+                  <th className="text-left py-3 pr-4 font-semibold text-slate-900">
                     SIC code
                   </th>
-                  <th className="text-left py-3 pr-4 font-semibold text-neutral-900 max-w-xs">
+                  <th className="text-left py-3 pr-4 font-semibold text-slate-900 max-w-xs">
                     Description
                   </th>
-                  <th className="text-right py-3 pr-4 font-semibold text-neutral-900">
+                  <th className="text-right py-3 pr-4 font-semibold text-slate-900">
                     Active
                   </th>
-                  <th className="text-right py-3 font-semibold text-neutral-900">
+                  <th className="text-right py-3 font-semibold text-slate-900">
                     Dissolved (all-time)
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {perSic.map((row) => (
-                  <tr key={row.sicCode} className="border-b border-neutral-100">
-                    <td className="py-2 pr-4 text-neutral-700 font-mono text-xs whitespace-nowrap">
+                  <tr key={row.sicCode} className="border-b border-slate-100">
+                    <td className="py-2 pr-4 text-slate-700 font-mono text-xs whitespace-nowrap">
                       {row.sicCode}
                     </td>
-                    <td className="py-2 pr-4 text-neutral-600 text-xs">
+                    <td className="py-2 pr-4 text-slate-600 text-xs">
                       {row.label}
                     </td>
-                    <td className="py-2 pr-4 text-right text-neutral-900 font-mono text-xs">
+                    <td className="py-2 pr-4 text-right text-slate-900 font-mono text-xs">
                       {row.activeLabel}
                     </td>
-                    <td className="py-2 text-right text-neutral-500 font-mono text-xs">
+                    <td className="py-2 text-right text-slate-500 font-mono text-xs">
                       {row.dissolvedLabel}
                     </td>
                   </tr>
                 ))}
-                <tr className="border-t-2 border-neutral-900 font-semibold">
-                  <td className="py-3 pr-4 text-neutral-900 font-mono text-xs">
+                <tr className="border-t-2 border-slate-900 font-semibold">
+                  <td className="py-3 pr-4 text-slate-900 font-mono text-xs">
                     Combined
                   </td>
-                  <td className="py-3 pr-4 text-neutral-500 text-xs">
+                  <td className="py-3 pr-4 text-slate-500 text-xs">
                     (deduped by CH; lower than column sums)
                   </td>
-                  <td className="py-3 pr-4 text-right text-neutral-900 font-mono text-xs">
+                  <td className="py-3 pr-4 text-right text-slate-900 font-mono text-xs">
                     {combined.activeCompanies.label}
                   </td>
-                  <td className="py-3 text-right text-neutral-900 font-mono text-xs">
+                  <td className="py-3 text-right text-slate-900 font-mono text-xs">
                     {combined.dissolvedCompanies.label}
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-500">
+          <p className="mt-3 text-xs text-slate-500">
             Source:{" "}
             <a
               href="https://resources.companieshouse.gov.uk/sic/"
@@ -528,10 +538,10 @@ export default function StartupFormationSurvivalIndexPage() {
       {/* Register status snapshot */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Register status snapshot
           </h2>
-          <div className="max-w-2xl rounded-md border-l-4 border-amber-400 bg-amber-50 p-6 text-sm text-neutral-700 leading-relaxed mb-8">
+          <div className="max-w-2xl rounded-md border-l-4 border-amber-400 bg-amber-50 p-6 text-sm text-slate-700 leading-relaxed mb-8">
             <strong>Read this carefully before citing the 44% figure.</strong>{" "}
             Of {combined.totalEverRegistered.label} UK tech companies ever
             registered, {combined.activeCompanies.label} ({combined.snapshotSurvivalRate.label}) are
@@ -546,39 +556,39 @@ export default function StartupFormationSurvivalIndexPage() {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-3">
-            <div className="bg-neutral-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-4xl font-bold font-mono text-primary-600">
                 {combined.snapshotSurvivalRate.label}
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 currently active on register
               </div>
-              <p className="mt-3 text-xs text-neutral-500">
+              <p className="mt-3 text-xs text-slate-500">
                 Cross-sectional snapshot as at {data.meta.pullDate}. See framing
                 note above before citing.
               </p>
             </div>
-            <div className="bg-neutral-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-4xl font-bold font-mono text-primary-600">
                 {combined.activeCompanies.label}
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 active companies
               </div>
-              <p className="mt-3 text-xs text-neutral-500">
+              <p className="mt-3 text-xs text-slate-500">
                 Status &ldquo;active&rdquo; per Companies House. This includes dormant
                 companies, shell companies and companies that have not yet
                 started trading.
               </p>
             </div>
-            <div className="bg-neutral-50 border border-neutral-200 p-6">
-              <div className="text-4xl font-bold font-mono text-neutral-500">
+            <div className="bg-slate-50 border border-slate-200 p-6">
+              <div className="text-4xl font-bold font-mono text-slate-500">
                 {combined.dissolvedCompanies.label}
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 dissolved (all-time cumulative)
               </div>
-              <p className="mt-3 text-xs text-neutral-500">
+              <p className="mt-3 text-xs text-slate-500">
                 Includes voluntary strike-offs (e.g. members&rsquo; voluntary
                 liquidations by profitable founders), not only failures. Dissolved
                 does not equal failed.
@@ -586,11 +596,11 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
           </div>
 
-          <div className="mt-8 max-w-2xl text-sm text-neutral-600 space-y-3">
+          <div className="mt-8 max-w-2xl text-sm text-slate-600 space-y-3">
             <p>
               <strong>Why the 44% figure should carry caveats:</strong>
             </p>
-            <ul className="list-disc list-inside space-y-2 text-neutral-600">
+            <ul className="list-disc list-inside space-y-2 text-slate-600">
               <li>
                 A company with &ldquo;active&rdquo; status is not necessarily trading.
                 Dormant companies, holding companies and shell vehicles all
@@ -617,12 +627,12 @@ export default function StartupFormationSurvivalIndexPage() {
       </section>
 
       {/* Survival curves forthcoming */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Cohort survival curves (forthcoming)
           </h2>
-          <p className="max-w-2xl text-neutral-600 text-sm leading-relaxed">
+          <p className="max-w-2xl text-slate-600 text-sm leading-relaxed">
             A cohort survival curve would answer the question &ldquo;of UK tech
             companies incorporated in 2019, what percentage are still active
             today?&rdquo; This requires time-series archiving of the Companies House
@@ -635,7 +645,7 @@ export default function StartupFormationSurvivalIndexPage() {
             will be updated transparently. No estimated survival rates are
             stated here in advance of real data.
           </p>
-          <p className="mt-4 max-w-2xl text-neutral-500 text-xs">
+          <p className="mt-4 max-w-2xl text-slate-500 text-xs">
             If you are a researcher or journalist who wants to run the cohort
             survival analysis on the archived data, see the{" "}
             <a href="#methodology" className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}>
@@ -649,12 +659,12 @@ export default function StartupFormationSurvivalIndexPage() {
       {/* Methodology */}
       <section id="methodology" className="bg-white py-12 sm:py-16 scroll-mt-24">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Methodology and honest limitations
           </h2>
-          <div className="max-w-2xl space-y-6 text-sm text-neutral-700 leading-relaxed">
+          <div className="max-w-2xl space-y-6 text-sm text-slate-700 leading-relaxed">
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">
+              <h3 className="font-semibold text-slate-900 mb-2">
                 Source
               </h3>
               <p>
@@ -682,7 +692,7 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">
+              <h3 className="font-semibold text-slate-900 mb-2">
                 SIC codes included
               </h3>
               <p className="mb-2">
@@ -699,7 +709,7 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">
+              <h3 className="font-semibold text-slate-900 mb-2">
                 Related research
               </h3>
               <p>
@@ -723,7 +733,7 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">
+              <h3 className="font-semibold text-slate-900 mb-2">
                 Formation counts
               </h3>
               <p>
@@ -737,7 +747,7 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">
+              <h3 className="font-semibold text-slate-900 mb-2">
                 Active / dissolved totals
               </h3>
               <p>
@@ -749,7 +759,7 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">
+              <h3 className="font-semibold text-slate-900 mb-2">
                 Honest limitations
               </h3>
               <ol className="list-decimal list-inside space-y-3">
@@ -813,12 +823,12 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-2">
+              <h3 className="font-semibold text-slate-900 mb-2">
                 Re-running the pull
               </h3>
               <p>
                 The pull script is at{" "}
-                <code className="bg-neutral-100 px-1 rounded text-xs">
+                <code className="bg-slate-100 px-1 rounded text-xs">
                   startups-tech/pipeline/pull_ch_startup_index.py
                 </code>{" "}
                 in the public repository. It requires a Companies House API key
@@ -840,14 +850,14 @@ export default function StartupFormationSurvivalIndexPage() {
       </section>
 
       {/* Sources and cite-as */}
-      <section className="bg-neutral-50 border-t border-neutral-200 py-10 sm:py-12">
+      <section className="bg-slate-50 border-t border-slate-200 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-3">
+          <h2 className="text-lg font-bold text-slate-900 mb-3">
             Sources and how to cite
           </h2>
-          <div className="max-w-2xl space-y-4 text-sm text-neutral-600">
+          <div className="max-w-2xl space-y-4 text-sm text-slate-600">
             <div>
-              <p className="font-semibold text-neutral-900">Primary source</p>
+              <p className="font-semibold text-slate-900">Primary source</p>
               <p>
                 <a
                   href="https://developer.company-information.service.gov.uk/api/docs/"
@@ -863,7 +873,7 @@ export default function StartupFormationSurvivalIndexPage() {
               </p>
             </div>
             <div>
-              <p className="font-semibold text-neutral-900">SIC code reference</p>
+              <p className="font-semibold text-slate-900">SIC code reference</p>
               <p>
                 <a
                   href="https://resources.companieshouse.gov.uk/sic/"
@@ -877,18 +887,18 @@ export default function StartupFormationSurvivalIndexPage() {
               </p>
             </div>
             <div>
-              <p className="font-semibold text-neutral-900">Cite this index as</p>
-              <blockquote className="border-l-4 border-neutral-300 pl-4 text-neutral-500 italic text-xs">
+              <p className="font-semibold text-slate-900">Cite this index as</p>
+              <blockquote className="border-l-4 border-slate-300 pl-4 text-slate-500 italic text-xs">
                 {data.meta.citeAs}
               </blockquote>
             </div>
             <div>
-              <p className="font-semibold text-neutral-900">Licence</p>
+              <p className="font-semibold text-slate-900">Licence</p>
               <p className="text-xs">
                 {data.meta.licence}
               </p>
             </div>
-            <p className="text-xs text-neutral-500">
+            <p className="text-xs text-slate-500">
               Last updated: {data.meta.lastUpdated}.
             </p>
           </div>
@@ -917,15 +927,25 @@ export default function StartupFormationSurvivalIndexPage() {
             >
               Pre-seed founder guide
             </Link>
+            {/* ADOPTED: `btnOnDark` from src/components/ui/layout-utils.ts
+                (restored by U4 from packages/web-shared/design/layout-utils.ts
+                with the literal focus-ring utility swapped for
+                var(--focus-ring)). This replaces a hand-rolled
+                `border border-white/30`, which is the exact contrast defect
+                569d3304 fixed on contractors-ir35: white/30 composited over
+                this primary-950 #1e1b4b ground is #61605f-equivalent at 2.64:1,
+                under the 3.0 floor for a button's only visible boundary.
+                btnOnDark's border-white/40 measures 3.63:1 on the same ground.
+                PASS. The label and the destination are unchanged. */}
             <Link
               href="/for/funded-startups"
-              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
+              className={btnOnDark}
             >
               Funded startups
             </Link>
             <Link
               href="/calculators/rd-relief-estimator"
-              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
+              className={btnOnDark}
             >
               R&amp;D relief estimator
             </Link>

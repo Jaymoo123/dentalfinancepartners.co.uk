@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { siteContainerLg, focusRing, btnOnDark } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { AnnualSeriesChart } from "@/components/research/TechFundingReliefsCharts";
 import {
@@ -169,9 +170,18 @@ export default function TechFormationsIndexPage() {
           - packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`:
             adopting it here would need a label word above each h2 that is not
             on the page today. It IS adopted, with no new words, on
-            /research/startup-formation-survival-index. */}
-      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-16 sm:py-20">
-        <div className={siteContainerLg}>
+            /research/startup-formation-survival-index.
+          ADOPTED (U2 item 1): src/components/layout/StartupsBackdrop.tsx. Its
+          contrast table carries this ground: bg-primary-950 #1e1b4b composited
+          with the motif at its strongest point = #28265c, white 13.80 and
+          slate-300 9.29, both well past the 4.5 text floor, so the white h1,
+          the white/80 standfirst, the white stat figures and the kit
+          breadcrumb's slate-300 trail are all unaffected. Host contract added:
+          `relative overflow-hidden` on the section, `relative z-10` on the
+          content. */}
+      <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-950 py-16 sm:py-20">
+        <StartupsBackdrop />
+        <div className={`${siteContainerLg} relative z-10`}>
           <Breadcrumb
             onDark
             siteUrl={siteConfig.url}
@@ -219,8 +229,8 @@ export default function TechFormationsIndexPage() {
       {/* Key findings */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">Key findings</h2>
-          <div className="max-w-2xl rounded-md border-l-4 p-6 text-neutral-700 text-base leading-relaxed bg-neutral-50" style={{ borderColor: "var(--color-primary-600)" }}>
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">Key findings</h2>
+          <div className="max-w-2xl rounded-md border-l-4 p-6 text-slate-700 text-base leading-relaxed bg-slate-50" style={{ borderColor: "var(--color-primary-600)" }}>
             <ul className="list-disc list-inside space-y-3">
               <li>
                 New software development companies (SIC {PRIMARY}) grew from{" "}
@@ -251,7 +261,7 @@ export default function TechFormationsIndexPage() {
               </li>
             </ul>
           </div>
-          <p className="mt-4 max-w-2xl text-xs text-neutral-500">
+          <p className="mt-4 max-w-2xl text-xs text-slate-500">
             Source: {meta.sources[0].name}, under the Open Government Licence v3.0. Figures may
             be cited with attribution to Founder Tax Partners. The most recent{" "}
             {meta.provisional_months.length} months of incorporation data are provisional
@@ -261,16 +271,16 @@ export default function TechFormationsIndexPage() {
       </section>
 
       {/* Annual chart */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Software development company formations by year
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             New companies incorporated each calendar year under SIC {PRIMARY} (
             {meta.sic_labels[PRIMARY]?.toLowerCase()}). Only complete calendar years are shown.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <AnnualSeriesChart
               data={annualFull.map((r) => ({ year: String(r.year), value: Number(r[PRIMARY] ?? 0) }))}
               label="Software development company formations by year"
@@ -283,15 +293,15 @@ export default function TechFormationsIndexPage() {
       {/* Monthly trend (last 3 years) */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             The monthly trend, last 3 years
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Monthly software development company formations from {monthLabel(monthlyRecent[0].month)}{" "}
             to {monthLabel(settledThrough)}. The most recent{" "}
             {meta.provisional_months.length} months (highlighted) are provisional.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <AnnualSeriesChart
               data={monthlyRecent.map((r) => ({ year: monthLabel(r.month), value: Number(r[PRIMARY] ?? 0) }))}
               label="Monthly software development company formations, last 3 years"
@@ -302,38 +312,38 @@ export default function TechFormationsIndexPage() {
       </section>
 
       {/* SIC breakdown */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-12 sm:py-16">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             By tech SIC code, {lastSettled ? monthLabel(lastSettled) : "the latest settled month"}
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             New company formations across all five tracked SIC codes in the latest settled month.
           </p>
-          <div className="overflow-x-auto rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
             <table className="w-full border-collapse text-sm">
               <thead>
-                <tr className="border-b-2 border-neutral-300 text-left">
-                  <th className="py-2 pr-4 font-bold text-neutral-900">SIC code</th>
-                  <th className="py-2 pr-4 font-bold text-neutral-900">What it covers</th>
-                  <th className="py-2 font-bold text-neutral-900 text-right">New companies</th>
+                <tr className="border-b-2 border-slate-300 text-left">
+                  <th className="py-2 pr-4 font-bold text-slate-900">SIC code</th>
+                  <th className="py-2 pr-4 font-bold text-slate-900">What it covers</th>
+                  <th className="py-2 font-bold text-slate-900 text-right">New companies</th>
                 </tr>
               </thead>
               <tbody>
                 {Object.keys(meta.sic_labels).map((code) => (
-                  <tr key={code} className="border-b border-neutral-200">
-                    <td className="py-2 pr-4 font-semibold text-neutral-900">{code}</td>
-                    <td className="py-2 pr-4 text-neutral-700">{meta.sic_labels[code]}</td>
-                    <td className="py-2 text-right font-semibold text-neutral-900">
+                  <tr key={code} className="border-b border-slate-200">
+                    <td className="py-2 pr-4 font-semibold text-slate-900">{code}</td>
+                    <td className="py-2 pr-4 text-slate-700">{meta.sic_labels[code]}</td>
+                    <td className="py-2 text-right font-semibold text-slate-900">
                       {latestRow ? fmtNumber(Number(latestRow[code])) : "n/a"}
                     </td>
                   </tr>
                 ))}
-                <tr className="border-b border-neutral-300">
+                <tr className="border-b border-slate-300">
                   <td className="py-2 pr-4 font-bold" style={{ color: "var(--color-primary-600)" }}>
                     All 5 codes (deduplicated)
                   </td>
-                  <td className="py-2 pr-4 text-neutral-700">Unique companies across all tracked SIC codes</td>
+                  <td className="py-2 pr-4 text-slate-700">Unique companies across all tracked SIC codes</td>
                   <td className="py-2 text-right font-bold" style={{ color: "var(--color-primary-600)" }}>
                     {latestRow ? fmtNumber(Number(latestRow["union"])) : "n/a"}
                   </td>
@@ -347,10 +357,10 @@ export default function TechFormationsIndexPage() {
       {/* Seasonality */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Tax-year seasonality in tech incorporations
           </h2>
-          <p className="mb-4 max-w-2xl text-neutral-600 text-sm leading-relaxed">
+          <p className="mb-4 max-w-2xl text-slate-600 text-sm leading-relaxed">
             Averaged across {FIRST_FULL_YEAR} to {LAST_FULL_YEAR}, new tech company formations
             (all five SIC codes combined) show a consistent spike in the run-up to the UK tax year
             boundary on 5 April, before falling back in April itself. The likely driver is
@@ -359,8 +369,8 @@ export default function TechFormationsIndexPage() {
             overlapping periods and capturing a full year of company-level tax efficiency from day
             one.
           </p>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-6">
-            <p className="mb-3 text-xs text-neutral-500">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6">
+            <p className="mb-3 text-xs text-slate-500">
               Average monthly incorporations, all-tech union, {FIRST_FULL_YEAR} to {LAST_FULL_YEAR}.
             </p>
             <AnnualSeriesChart
@@ -373,12 +383,12 @@ export default function TechFormationsIndexPage() {
       </section>
 
       {/* Methodology */}
-      <section id="methodology" className="bg-neutral-50 border-t border-neutral-200 py-12 sm:py-16">
+      <section id="methodology" className="bg-slate-50 border-t border-slate-200 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Methodology and sources
           </h2>
-          <div className="max-w-2xl space-y-4 text-sm text-neutral-700 leading-relaxed">
+          <div className="max-w-2xl space-y-4 text-sm text-slate-700 leading-relaxed">
             <p>
               <strong>Incorporations.</strong> For each month, we query the Companies House
               Advanced Search API for companies incorporated under each of five tech SIC codes:
@@ -400,16 +410,16 @@ export default function TechFormationsIndexPage() {
                   <a href={s.url} className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`} rel="nofollow">
                     {s.name}
                   </a>{" "}
-                  <span className="text-neutral-500">({s.publisher})</span>
+                  <span className="text-slate-500">({s.publisher})</span>
                 </li>
               ))}
             </ul>
             <p className="text-sm">
-              <Link href={`${PAGE_PATH}/data`} className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
+              <Link href={`${PAGE_PATH}/data`} data-cta="research_uk_tech_formations_index_csv" data-cta-placement="sources" className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
                 Download the incorporation data (CSV)
               </Link>
             </p>
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-slate-500">
               Free to cite and republish with attribution to Founder Tax Partners. This page is a
               data summary and does not constitute tax advice on any individual situation.
             </p>
@@ -437,9 +447,19 @@ export default function TechFormationsIndexPage() {
             >
               Pre-seed founder guide
             </Link>
+            {/* ADOPTED: `btnOnDark` from src/components/ui/layout-utils.ts
+                (restored by U4 from packages/web-shared/design/layout-utils.ts
+                with the literal focus-ring utility swapped for
+                var(--focus-ring)). This replaces a hand-rolled
+                `border border-white/30`, which is the exact contrast defect
+                569d3304 fixed on contractors-ir35: white/30 composited over
+                this primary-950 #1e1b4b ground is #61605f-equivalent at 2.64:1,
+                under the 3.0 floor for a button's only visible boundary.
+                btnOnDark's border-white/40 measures 3.63:1 on the same ground.
+                PASS. The label and the destination are unchanged. */}
             <Link
               href="/services/core-compliance"
-              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
+              className={btnOnDark}
             >
               Core compliance
             </Link>
@@ -451,16 +471,28 @@ export default function TechFormationsIndexPage() {
       </section>
 
       {/* FAQ */}
+      {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx,
+          measured 2026-09-29. The `alwaysRenderAnswers` prop the kit gained this
+          wave removes the server-HTML objection, and the sibling research pages
+          with plain-string answers DO adopt it. It cannot be adopted here: the
+          LAST entry in this page's `faqs` array is rendered through a JSX branch
+          below that carries a real internal <Link> inside the answer, and
+          FaqSection's `FaqEntry.answer` is a string (schema/faq-page.ts), with
+          `html` the only alternative and no <Link> component available inside a
+          dangerouslySetInnerHTML string. Adopting it would render the plain
+          `f.answer` string instead and DELETE that internal link, taking this
+          route below its link floor. The JSON-LD already asserts the string
+          form, so nothing is lost by leaving the richer rendering in place. */}
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-8">
             Frequently asked questions
           </h2>
           <div className="max-w-2xl space-y-6">
             {faqs.map((f, i) => (
               <div key={f.question}>
-                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                <p className="mt-2 text-base leading-relaxed text-neutral-700">
+                <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
+                <p className="mt-2 text-base leading-relaxed text-slate-700">
                   {i === faqs.length - 1 ? (
                     <>
                       This index tracks monthly formation velocity and seasonality for a

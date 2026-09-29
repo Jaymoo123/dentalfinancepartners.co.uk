@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
 import { startupsHubs } from "@/data/startups-hubs";
 import { siteConfig } from "@/config/site";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
@@ -36,9 +38,17 @@ export default function ForIndexPage() {
         src/app/layout.tsx:49, so no copy is authored. It emits this route's
         only BreadcrumbList JSON-LD. `ground-dark` goes on with it, because the
         breadcrumb is the first focusable element in this hero and the default
-        ring is primary-600 on a primary-700 ground, about 1.26:1. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+        ring is primary-600 on a primary-700 ground, about 1.26:1.
+
+        ADOPTED (U2 item 1): src/components/layout/StartupsBackdrop.tsx. Its
+        contrast table carries this ground: on bg-primary-700 #4338ca the
+        composite at the motif's strongest point is #4940cf, white 7.20 and
+        slate-300 4.85, both past the 4.5 text floor. Host contract
+        (`relative overflow-hidden` on the section, `relative z-10` on the
+        content) added with it. */}
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
+      <StartupsBackdrop />
+      <div className={`${siteContainerLg} relative z-10`}>
         <div className={crumbOnBrand}>
           <Breadcrumb onDark siteUrl={siteConfig.url} items={[{ label: "Home", href: "/" }, { label: "Who we help" }]} />
         </div>
@@ -46,27 +56,43 @@ export default function ForIndexPage() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">Each company type faces different tax rules and compliance obligations. We work with all of them.</p>
       </div>
     </section>
-    {/* ADOPTION DECLINED: packages/web-shared/design/marketing/CoverageCards.tsx
-        and `CardStack` from packages/web-shared/design/primitives/page-blocks.tsx.
-        Neither takes a per-card href, and these cards ARE the five links that
-        carry this route to its link floor of 5. */}
+    {/* ADOPTION DECLINED, re-measured 2026-09-29 (the "escaped markup" half of
+        this decline is STALE and dropped: both gained an `html` prop,
+        CoverageCards.tsx:35 and page-blocks.tsx:99):
+        packages/web-shared/design/marketing/CoverageCards.tsx `CoverageItem`
+        (:5-15) is `{title, body, outcome?, icon}` with NO `href` and a REQUIRED
+        `icon`, and `CardStack` in
+        packages/web-shared/design/primitives/page-blocks.tsx (:88-99) is
+        `{title, body}` with no `href` either. These five cards ARE the five
+        /for/<slug> links that carry this route to its link floor of 5, so
+        either swap deletes all five.
+        ADOPTED instead: packages/web-shared/design/marketing/ScrollGlowGroup.tsx,
+        a wrapper that changes no markup, no href and no copy inside it. */}
     <section className={`bg-primary-600/5 ${sectionY}`}>
       <div className={siteContainerLg}>
-        <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <ScrollGlowGroup className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {startupsHubs.map((hub) => (
-            <Link key={hub.slug} href={`/for/${hub.slug}`} className={`group block bg-white border border-neutral-200 p-5 sm:p-6 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}>
-              <span className="text-base font-bold text-neutral-900 group-hover:text-primary-700 transition-colors">{hub.title}</span>
-              <p className="mt-2 text-sm text-neutral-500 line-clamp-2">{hub.headline}</p>
+            <Link key={hub.slug} href={`/for/${hub.slug}`} className={`group block bg-white border border-slate-200 p-5 sm:p-6 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}>
+              <span className="text-base font-bold text-slate-900 group-hover:text-primary-700 transition-colors">{hub.title}</span>
+              <p className="mt-2 text-sm text-slate-500 line-clamp-2">{hub.headline}</p>
             </Link>
           ))}
-        </div>
+        </ScrollGlowGroup>
       </div>
     </section>
+    {/* ADOPTED: the kit panel's own `backdrop` slot (LeadCTAPanel.tsx:33,79,
+        104). The dark variant is `relative overflow-hidden bg-slate-900`
+        (:103), which is the backdrop's host contract and the one ground its
+        contrast table was originally written for (white 15.49, slate-300
+        10.43 on the composited #1a233f). A distinct `patternId` is passed
+        because a <pattern> id must be unique per DOCUMENT and this page
+        mounts the motif twice. */}
     <LeadCTAPanel
       title="Speak to a startup tax specialist."
       description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       form={<LeadForm submitLabel="Send enquiry" />}
+      backdrop={<StartupsBackdrop patternId="for-panel" />}
     />
   </>);
 }

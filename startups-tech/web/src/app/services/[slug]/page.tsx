@@ -6,6 +6,9 @@ import { siteConfig } from "@/config/site";
 import { startupsServices, getStartupsService } from "@/data/startups-services";
 import { buildFaqJsonLd, buildServiceJsonLd } from "@/lib/schema";
 import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
+import { ScrollGlowGroup } from "@accounting-network/web-shared/design/marketing/ScrollGlowGroup";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 
@@ -20,7 +23,7 @@ export function generateStaticParams() { return startupsServices.map((s) => ({ s
  * these sections is inside a prose class, and a UA-default blue link is
  * neither the brand nor legible.
  *
- * primary-700 is the 700 step, 7.90 on white and 7.60 on neutral-50. The brand step
+ * primary-700 is the 700 step, 7.90 on white and 7.60 on slate-50. The brand step
  * primary-600 measures 6.29 on white and is also legal here; 700 is
  * used so an in-body link is a step darker than the surrounding brand
  * furniture rather than the same value. On the primary-700 hero the link is
@@ -89,9 +92,18 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         `ground-dark` goes on with it: the breadcrumb and the hero CTA are the
         focusable elements in this hero, and without the rebind the ring paints
         primary-600 on a primary-700 ground, about 1.26:1. No light island sits
-        inside this section. */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
-      <div className={siteContainerLg}>
+        inside this section.
+
+        ADOPTED (U2 item 1): src/components/layout/StartupsBackdrop.tsx. Its
+        contrast table carries this ground: on bg-primary-700 #4338ca the
+        composite at the motif's strongest point is #4940cf, white 7.20 and
+        slate-300 4.85, both past the 4.5 text floor, so the white h1, the
+        white/80 standfirst and the white hero button are unaffected. Host
+        contract (`relative overflow-hidden` on the section, `relative z-10` on
+        the content) added with it. */}
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
+      <StartupsBackdrop />
+      <div className={`${siteContainerLg} relative z-10`}>
         <div className={crumbOnBrand}>
           <Breadcrumb
             onDark
@@ -101,99 +113,123 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{service.headline}.</h1>
         <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/80 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: service.intro }} />
-        <div className="mt-10"><Link href="/contact" className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
+        {/* U2 item 4: instrumentation only. The link, its destination and its
+            label are unchanged; the three attributes match generalist's naming
+            (generalist/web/src/app/services/page.tsx:193-196) so
+            vw_cta_performance reads the same series across sites. */}
+        <div className="mt-10"><Link href="/contact" data-cta="services_hero_book" data-cta-placement="hero" data-cta-goal="form" className={`inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
       </div>
     </section>
-    {/* ADOPTION DECLINED: packages/web-shared/design/marketing/StatsCounter.tsx.
-        Its StatItem is `target: number` with a prefix/suffix; these values are
-        strings such as "86% + 14.5%" and every label is a full sentence, so the
-        component would render neither. */}
-    <section className="bg-neutral-800 py-8 sm:py-10">
+    {/* ADOPTION DECLINED: packages/web-shared/design/marketing/StatsCounter.tsx,
+        re-measured 2026-09-29. The old reason ("StatItem is `target: number`,
+        these values are strings") is STALE: `StatItem.value?: string` exists
+        (StatsCounter.tsx:10-15) and renders literal text. Two measured reasons
+        survive and both are hard:
+        - its figure is `text-slate-900` (StatsCounter.tsx:118), a hardcoded
+          light-ground colour with no tone prop. This band is a DARK one
+          (bg-slate-800 #1e293b); slate-900 #0f172a on it measures 1.20:1,
+          invisible. Nothing at the call site can override it, the class is on
+          the component's own div.
+        - its layout is a fixed `grid-cols-2 md:grid-cols-4` (:117) and this
+          band publishes THREE figures, which would leave a hole in row one.
+        Both are kit-file changes, so both are manager carve-outs, not builder
+        decisions. */}
+    <section className="bg-slate-800 py-8 sm:py-10">
       <div className={siteContainerLg}>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
           {service.stats.map((stat) => (
             <div key={stat.label} className="flex flex-col sm:text-center">
               <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-              <div className="mt-1 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider">{stat.label}</div>
+              <div className="mt-1 text-xs sm:text-sm font-semibold text-slate-400 uppercase tracking-wider">{stat.label}</div>
             </div>
           ))}
         </div>
       </div>
     </section>
-    {/* ADOPTION DECLINED for both card grids below:
-        packages/web-shared/design/marketing/CoverageCards.tsx renders its body
-        as a JSX text child, which would print escaped markup and kill every
-        authored anchor in challenges[].body and howWeHelp[].body.
-        packages/web-shared/design/primitives/page-blocks.tsx `CardStack` DOES
-        render HTML safely (`html?: boolean` at :99, checked before declining),
-        but it exposes no hook for the anchor colour and focus ring those bodies
-        need, so its links would paint UA-default blue with no visible ring; and
-        its `columns` prop is typed `1 | 2`, so it cannot lay out the three-up
-        "How we help" grid at all. Declined on both counts, not on the HTML one.
-        packages/web-shared/design/marketing/ProblemStatement.tsx carries
-        Property's landlord copy with no copy props. */}
-    <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
+    {/* ADOPTION DECLINED for both card grids below, re-measured 2026-09-29.
+        The "escaped markup" half is STALE and has been dropped: both components
+        now take `html` (CoverageCards.tsx:35, page-blocks.tsx:99). What still
+        stands, measured:
+        - packages/web-shared/design/primitives/page-blocks.tsx `CardStack`
+          types `columns` as `1 | 2` (:99), so it cannot lay out the three-up
+          "How we help" grid at all, and it exposes no hook for the anchor
+          colour and focus ring that challenges[].body and howWeHelp[].body
+          need (its body is one fixed `text-slate-700` <p>), so every authored
+          anchor would paint UA-default blue with no visible ring.
+        - packages/web-shared/design/marketing/CoverageCards.tsx `CoverageItem`
+          (:5-15) REQUIRES an `icon: LucideIcon` per card. Neither
+          src/data/startups-services.ts nor the six service records publish an
+          icon, so adopting it means choosing six glyphs, which is authoring.
+          Same missing anchor-colour hook as CardStack.
+        - packages/web-shared/design/marketing/ProblemStatement.tsx carries
+          Property's landlord copy with no copy props (:33-40).
+        ADOPTED instead on both grids:
+        packages/web-shared/design/marketing/ScrollGlowGroup.tsx, a wrapper that
+        changes no markup, no copy and no anchor inside it. */}
+    <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
       <div className={siteContainerLg}>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">The challenges clients face.</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
+        <ScrollGlowGroup className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
           {service.challenges.map((item) => (
-            <article key={item.title} className="border border-neutral-200 border-l-4 border-l-primary-600 bg-neutral-50 p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-              <p className={`mt-4 text-base leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
+            <article key={item.title} className="border border-slate-200 border-l-4 border-l-primary-600 bg-slate-50 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+              <p className={`mt-4 text-base leading-relaxed text-slate-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </article>
           ))}
-        </div>
+        </ScrollGlowGroup>
       </div>
     </section>
-    <section className={`border-b border-neutral-200 bg-neutral-50 ${sectionY}`}>
+    <section className={`border-b border-slate-200 bg-slate-50 ${sectionY}`}>
       <div className={siteContainerLg}>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
+        <ScrollGlowGroup className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
           {service.howWeHelp.map((item) => (
-            <div key={item.title} className="bg-white border border-neutral-200 p-6 sm:p-8 hover:border-primary-600 hover:shadow-md transition-all">
-              <h3 className="text-lg font-bold text-neutral-900">{item.title}</h3>
-              <p className={`mt-3 text-sm leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
+            <div key={item.title} className="bg-white border border-slate-200 p-6 sm:p-8 hover:border-primary-600 hover:shadow-md transition-all">
+              <h3 className="text-lg font-bold text-slate-900">{item.title}</h3>
+              <p className={`mt-3 text-sm leading-relaxed text-slate-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
-        </div>
+        </ScrollGlowGroup>
       </div>
     </section>
     {service.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(service.faqs) }} />}
-    {/* ADOPTION DECLINED: packages/web-shared/design/primitives/FaqSection.tsx.
-        It is a Radix accordion with no `forceMount` (:34-43), so a closed answer
-        is absent from the server HTML while the FAQPage JSON-LD emitted three
-        lines above keeps asserting it. The native <details> below renders every
-        answer into the server HTML today, and both consumers are fed the SAME
-        `service.faqs` array, which is the property wave-close test F14 checks.
-        Swapping the kit component in would be a crawlability regression on six
-        service pages at once. Two sibling sites have refused it in writing. */}
+    {/* ADOPTED, and the previous decline is now STALE: the kit
+        packages/web-shared/design/primitives/FaqSection.tsx gained
+        `alwaysRenderAnswers` (:17,31-35), which passes Radix `forceMount`
+        through packages/web-shared/design/primitives/accordion.tsx:52-64 and
+        adds `data-[state=closed]:hidden`. Every answer is therefore in the
+        server HTML exactly as the hand-rolled <details> put it there, so the
+        FAQPage JSON-LD emitted three lines above still asserts nothing the
+        page does not carry. Both consumers are fed the SAME `service.faqs`
+        array, so the rendered question/answer count and the JSON-LD count
+        cannot diverge.
+        `html` is on because 22 of the answer strings in
+        src/data/startups-services.ts carry real <a> anchors; the wrapper div
+        carries the same linkOnLight colour and ring those anchors already had
+        under the <details>, because the kit paints the answer body one flat
+        text-slate-700 with no anchor hook.
+        `eyebrow=""` is deliberate: the kit default is the word "FAQ", which
+        this page does not publish, and this package writes no prose. An empty
+        string is falsy at FaqSection.tsx:39, so no label renders. `title` is
+        the h2 string this section already carried, verbatim. */}
     {service.faqs.length > 0 && (
-      <section className={`bg-white ${sectionY}`}>
-        <div className={siteContainerLg}>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-3xl">Common questions</h2>
-            <div className="space-y-3 sm:space-y-4">
-              {service.faqs.map((faq) => (
-                <details key={faq.question} className="group border border-neutral-200 bg-white">
-                  <summary className={`flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-primary-700 transition-colors list-none ${focusRing}`}>
-                    <span>{faq.question}</span>
-                    <span className="flex-shrink-0 text-primary-600 transition-transform group-open:rotate-45" aria-hidden>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
-                    </span>
-                  </summary>
-                  <div className={`px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: faq.answer }} />
-                </details>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className={linkOnLight}>
+        <FaqSection
+          eyebrow=""
+          title="Common questions"
+          faqs={service.faqs}
+          html
+          alwaysRenderAnswers
+          className={`bg-white ${sectionY}`}
+        />
+      </div>
     )}
     <LeadCTAPanel
       title="Speak to a startup tax specialist."
       description="Tell us about your situation and we will reply within 24 hours."
       proofPoints={[]}
       form={<LeadForm submitLabel="Send enquiry" />}
+      backdrop={<StartupsBackdrop patternId="service-detail-panel" />}
     />
   </>);
 }

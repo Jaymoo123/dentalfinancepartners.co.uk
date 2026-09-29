@@ -42,7 +42,7 @@ export default function AboutPage() {
         Property's quotes; this site has no authored social proof) and
         marketing/WhatToExpectCard.tsx (its default props publish a fee line no
         page here authored, T12). */}
-    <section className="ground-dark border-b border-neutral-200 bg-primary-600 py-16 sm:py-20">
+    <section className="ground-dark border-b border-slate-200 bg-primary-600 py-16 sm:py-20">
       <div className={siteContainerLg}>
         {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx. The
             Home crumb is not a new internal link: the phase-1 header wordmark
@@ -66,13 +66,13 @@ export default function AboutPage() {
     <section className="bg-white">
       <div className={`${siteContainerLg} ${sectionYLoose}`}>
         <Eyebrow>About</Eyebrow>
-        <div className="max-w-3xl space-y-8 text-base leading-relaxed text-neutral-600 sm:text-lg">
+        <div className="max-w-3xl space-y-8 text-base leading-relaxed text-slate-600 sm:text-lg">
           <p>We are specialist accountants for funded and scaling UK startups: pre-seed founders preparing for a first raise, VC-backed companies managing R&D and EIS compliance, SaaS businesses navigating VAT place-of-supply, and software development companies with EMI option pools.</p>
           <p>The compliance obligations at each stage of growth are specific: claim notification deadlines for R&D, EIS1 and EIS3 compliance statements after investment, EMI grant notifications and the annual ERS return by 6 July. Getting these right is the substance of the engagement, not a side effect of it.</p>
           <p>We handle R&D merged scheme and ERIS claims, SEIS and EIS advance assurance and compliance, EMI scheme setup and ongoing reporting, share scheme design, Corporation Tax planning, and the investor-ready accounts that boards and future investors expect.</p>
           <p>We work on a fixed-fee basis and you hear back within one working day.</p>
         </div>
-        <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
+        <div className="mt-10 border-t border-slate-100 pt-8 text-sm text-slate-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
         </div>
       </div>
