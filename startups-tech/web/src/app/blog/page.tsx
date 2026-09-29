@@ -84,8 +84,9 @@ export default function BlogIndexPage() {
         via closest("[data-cta]"), so an id here would claim every field focus
         and link click inside LeadCTAPanel. Generalist's `blog_index_book` /
         `blog_index_articles` ids sit on anchor links in a hero block this site
-        does not have (see comment above); the LeadForm inside carries its own
-        formId attribution instead, same as every other LeadCTAPanel on site. */}
+        does not have (see comment above); the LeadForm inside submits with the
+        site-wide constant form id (lead_form) plus source_url, so this panel is
+        attributed by page, not by a per-panel id, like every LeadCTAPanel here. */}
     <div id="blog-lead-panel">
       <LeadCTAPanel
         title={niche.blog.cta_heading}

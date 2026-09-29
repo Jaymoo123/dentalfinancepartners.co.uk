@@ -246,3 +246,52 @@ hardcode `outline-primary-*` rings; `sweep_baseline.json` predates the chrome, s
 Agents used, phases 2 to 6: 15 (1 planner, 6 builders, 1 verification executor, 2 reviewers,
 3 gap-fixers, 1 re-reviewer, 1 layering fixer). Port total 26 of the 36 priced. No CI run, no push,
 no deploy. NEXT = owner walk on a `next start` build, then deploy on his word from a pushed SHA.
+
+## 2026-09-29 DESIGN UPLIFT DONE, tag `port-startups-tech-uplift`; `port-startups-tech-complete` moved to this commit
+
+Owner walked the completed port and said "plain jane, same thing as other sites, make sure the
+advanced designer kit is ported as well as the lead stuff": the crypto verdict of 09-14. Cause
+(`DESIGN_GAP_DIAGNOSIS_2026-09-14.md`): kit adoption. Four-marker row on the homepage was 0/0/0/0
+against generalist 1/2/3/4; 114 decline comments against 40 adoptions.
+
+Plan `_port/UPLIFT_PACKAGES.md`. Kit edits (manager, all additive, every default byte-identical,
+recorded in the playbook 8.11): `FaqSection alwaysRenderAnswers` (forceMount passthrough; the
+reason every port declined the accordion), `StatsCounter` item `href`, `TestimonialsSection items`,
+`showRating`, `footnote`, optional item fields. Packages: U4 foundations (`f2f1f1ad`: standard
+motion sheet imported with the four brand-glow channels in indigo, GeistMono, noscript release,
+btnOnDark/btnSecondary/siteContainer re-exported with rings wrapped, backdrop on the slim heroes,
+slate ramp), U1 homepage, U2 hubs and detail, U3 blog and lead kit (`86997252`), gap-fix
+(`db2fa147`), selector fix (this commit). Reviews `_port/R5_UPLIFT_REVIEW.md` (PASS-WITH-GAPS, 2
+blockers: `--radius` undeclared so 31 homepage radii rendered 0px; blog panel wrapper ids claiming
+every click) and `_port/R6_UPLIFT_REREVIEW.md` (PASS after the no-JS selector fix; 29 of 29 FAQ
+answers visible with JS off, accordion correct with JS on, no leak).
+
+**Homepage now:** backdrop in the hero and behind the proof and closing panels, live-dot pill,
+72px headline with hero-reveal, StatsCounter fed the four existing figures with gov.uk sources
+as links, ScrollGlowGroup card glow, kit FaqSection, TestimonialsSection with the three existing
+composite quotes and their disclaimer (no rating row), real three-post blog band. Four-marker row
+1/3/3/4. Gate 9.1: kit 9 distinct / 60 call sites (was 5 / 40), all eight rows pass. Sweep 66/66,
+browser_check 152 loads 0 problems, 0 console errors, prose freeze clean on every route (the
+testimonial quotes moved from JSX text to props, byte-identical), every new label a config string.
+
+**Lead kit parity added (plan A.7, non-interruptive only):** closing panel on `/blog` and the five
+category pages, `BlogSidebarCta` and a skip-to-form link on every post, kit accordion with answers
+in the server HTML on 32 posts, 11 hub pages, 4 calculators, 5 research pages and the homepage.
+Attribution note: `LeadForm` has no per-panel id; every form submits `lead_form` plus `source_url`.
+
+**Owner gates still open (plain English in `UPLIFT_PACKAGES.md` section D):** D1 the sticky
+bottom bar (Property and generalist have it; copy already in this site's config; yes or no); D3
+the four other pop-up surfaces (recommend no); D4 newsletter (not now); D5 in-article calculator
+panels (later wave); D6 turn `alwaysRenderAnswers` on for generalist (12), Medical, ecommerce and
+construction-cis, which are live with the schema-vs-HTML mismatch (recommend yes, own small
+sweep); `LeadCTAPanel` on `/calculators` and `/research`, which carry no form (owner question);
+homepage length (14 bands, 10,336px at desktop against generalist's 9) is content, not polish.
+
+**Estate leftovers from this round:** the workspace `npm install` crashes (Arborist null
+location) on the pre-existing tree; lockfile entries were regenerated lock-only and match
+generalist's shape, and `npm ls` flags the same two packages "extraneous" on generalist too, so it
+is an npm quirk, but run a clean `npm ci` in the deploy worktree before this site ships.
+`sweep_baseline.json` has `totalCtas: 0`, so its cta-regression column is not evidence.
+
+Agents used, uplift: 8 (1 planner, 4 builders, 1 reviewer, 1 gap-fixer, 1 re-reviewer). Port
+total 34 of the 36 priced. No CI run, no push, no deploy. Server left on :3201 for the walk.

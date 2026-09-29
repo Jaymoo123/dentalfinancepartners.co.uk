@@ -110,7 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript>
           <style>{`.eyebrow-rule[data-draw="off"] { transform: none; }
             [data-draw="off"] .tick-draw { stroke-dashoffset: 0; }
-            [data-state="closed"][hidden][role="region"] { display: block !important; }`}</style>
+            [data-state="closed"][role="region"] { display: block !important; }`}</style>
         </noscript>
         <ConsentProvider>
           <AnalyticsProvider siteKey={niche.content_strategy.site_key} siteName={niche.display_name} storagePrefix="ffp" posture="opt-out" noTrackPrefixes={["/admin"]}>

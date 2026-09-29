@@ -106,7 +106,8 @@ export default async function CategoryPage({ params }: Props) {
         is the only published set: E5). R5-B2 fix: no `data-cta` on this
         wrapper, same reasoning as /blog's fix. Generalist's `blog_index_book` /
         `blog_index_articles` ids sit on anchor links in a hero block this site
-        does not have; LeadForm's own formId is the attribution here. */}
+        does not have; the LeadForm inside submits with the site-wide constant
+        form id (lead_form) plus source_url, so attribution is by page. */}
     <div>
       <LeadCTAPanel
         title={niche.blog.cta_heading}
