@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { site } from "@/lib/calculators/site";
+import { niche } from "@/config/niche-loader";
 import { focusRing, btnPrimary } from "@/components/ui/layout-utils";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -149,7 +150,7 @@ export function MiniCapture({
               name="message"
               rows={3}
               className={inputClass}
-              placeholder="e.g. We are raising a seed round and want to check our SEIS eligibility, or we need to set up an EMI scheme..."
+              placeholder={niche.lead_form.placeholders.message}
             />
             {fieldErrors.message && <p className="mt-1 text-xs text-red-700">{fieldErrors.message}</p>}
           </div>

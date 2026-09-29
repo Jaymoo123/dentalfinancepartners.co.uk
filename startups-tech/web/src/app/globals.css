@@ -163,9 +163,11 @@
      that contains a light-ground card with focusable children, or those
      children would inherit a white ring onto white.
 
-     In @layer components deliberately: an unlayered rule outranks every
-     Tailwind utility regardless of specificity. This file has one deliberate
-     unlayered rule elsewhere (.prose table, above); this block is layered. */
+     In @layer components deliberately: this block only rebinds custom
+     properties, it sets no `border-color` or other property Tailwind
+     utilities also set, so cascade layer order does not matter here. This
+     file has two deliberate unlayered rules elsewhere (.prose table above,
+     and .related-card below); this block stays layered. */
   .ground-dark {
     --focus-ring: var(--focus-ring-on-brand);
     --kit-focus-ring: var(--focus-ring-on-brand);
@@ -181,52 +183,70 @@
     --kit-focus-ring: var(--focus-ring-on-brand);
   }
 
-  /* R2-2 BLOCKER. The kit `RelatedArticles`
-     (packages/web-shared/design/blog/RelatedArticles.tsx:106) renders a
-     stretched link with `focus-visible:outline-none` and delegates its own
-     focus affordance entirely to `.related-card:focus-within`. That rule
-     lives only in packages/web-shared/design/globals-standard.css:227-254,
-     which this site does not import by design (phase 1 imports only
-     prose-standard.css, that sheet carries Property's palette). Copied
-     verbatim from globals-standard.css:227-254 rather than importing the
-     whole file. The kit rule's `--brand-glow*` tokens are RGB triplets this
-     site never declares (they default to an off-brand emerald); rebound here
-     to the site's indigo focus-ring colour, expressed as the triplet the
-     kit's `rgb(var(...) / alpha)` syntax needs (a hex custom property cannot
-     be substituted into that syntax). --brand-glow/-edge = primary-600
-     (79 70 229, #4f46e5, 6.29:1 on white); --brand-glow-deep = primary-700
-     (67 56 202, #4338ca). Both clear the 3:1 graphic floor on the white card
-     ground the RelatedArticles rail renders on. */
-  .related-card {
-    --brand-glow: 79 70 229;
-    --brand-glow-edge: 79 70 229;
-    --brand-glow-deep: 67 56 202;
-    transition:
-      box-shadow 200ms ease,
-      border-color 200ms ease,
-      transform 200ms ease;
-  }
+}
 
-  @media (hover: hover) {
-    .related-card:hover {
-      border-color: rgb(var(--brand-glow-edge));
-      box-shadow:
-        0 0 0 3px rgb(var(--brand-glow) / 0.22),
-        0 18px 40px -10px rgb(var(--brand-glow-deep) / 0.6);
-    }
-  }
+/* R2-2 BLOCKER, R4 re-review: this block was previously copied into
+   `@layer components` above. Tailwind v4's `@layer utilities` outranks
+   `@layer components` regardless of specificity, so the card's
+   `border-slate-200` utility (an unlayered-relative-to-this utility class)
+   kept winning over `.related-card:focus-within`'s `border-color`, and the
+   only surviving focus indicator was the 22%-alpha ring, which composites to
+   1.41:1 on white (below the 3:1 graphic floor). Moved OUTSIDE every
+   `@layer` so it is unlayered, exactly as the kit ships it
+   (packages/web-shared/design/globals-standard.css:227-254, the second of
+   this file's two deliberate unlayered rules alongside `.prose table`
+   above): an unlayered rule outranks every Tailwind utility regardless of
+   specificity, so the border-color change now actually paints.
 
-  .related-card:focus-within {
+   The kit `RelatedArticles` (packages/web-shared/design/blog/RelatedArticles.tsx:106)
+   renders a stretched link with `focus-visible:outline-none` and delegates
+   its own focus affordance entirely to `.related-card:focus-within`. Copied
+   verbatim from globals-standard.css:227-254 rather than importing the whole
+   file, since this site does not import that sheet (it carries Property's
+   palette). The kit rule's `--brand-glow*` tokens are RGB triplets this site
+   never declares (they default to an off-brand emerald); rebound here to the
+   site's indigo focus-ring colour, expressed as the triplet the kit's
+   `rgb(var(...) / alpha)` syntax needs (a hex custom property cannot be
+   substituted into that syntax). --brand-glow/-edge = primary-600
+   (79 70 229, #4f46e5, 6.29:1 on white); --brand-glow-deep = primary-700
+   (67 56 202, #4338ca).
+
+   Corrected claim (R4 flagged the previous comment as false): the FOCUS
+   indicator that actually paints is the solid `border-color: #4f46e5`
+   change on `:focus-within`, which is 6.29:1 on the white card ground and
+   clears the 3:1 graphic floor on its own. The accompanying box-shadow ring
+   is only `rgb(79 70 229 / 0.22)`, which composites to ~1.41:1 on white and
+   would NOT clear 3:1 by itself; it is decorative here, not the compliance
+   mechanism, because the border-color half now paints. */
+.related-card {
+  --brand-glow: 79 70 229;
+  --brand-glow-edge: 79 70 229;
+  --brand-glow-deep: 67 56 202;
+  transition:
+    box-shadow 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+@media (hover: hover) {
+  .related-card:hover {
     border-color: rgb(var(--brand-glow-edge));
     box-shadow:
       0 0 0 3px rgb(var(--brand-glow) / 0.22),
       0 18px 40px -10px rgb(var(--brand-glow-deep) / 0.6);
   }
+}
 
-  @media (prefers-reduced-motion: reduce) {
-    .related-card {
-      transition: none;
-    }
+.related-card:focus-within {
+  border-color: rgb(var(--brand-glow-edge));
+  box-shadow:
+    0 0 0 3px rgb(var(--brand-glow) / 0.22),
+    0 18px 40px -10px rgb(var(--brand-glow-deep) / 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .related-card {
+    transition: none;
   }
 }
 

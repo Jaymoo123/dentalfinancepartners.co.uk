@@ -173,3 +173,76 @@ Plan = `docs/startups-tech/_port/PHASE2-6_PACKAGES.md` (Opus planner, read-only)
 builder packages on disjoint file sets (W2 blog, W3 services and audience, W4 calculators and
 embed, W5 homepage, W5R research, W6 flow, legal and forms), one serialised build, two adversarial
 reviews, a gap-fix round with mop-up M1. Priced at 13 agents, port total 24 of the owner's 36.
+
+## 2026-09-29 design port, phases 2 to 6 DONE, tags `port-startups-tech-phase2` to `-phase6` and `port-startups-tech-complete`
+
+All on the final commit (one wave, one gap-fix round, one layering fix). Commits: plan `48fde76e`,
+wave `331725dc`, gap-fix `64750aa0`, close (this commit). Artefacts in `docs/startups-tech/_port/`:
+`PHASE2-6_PACKAGES.md` (plan), `V1_WAVE_VERIFICATION.md` (26 pass, 1 fail, 4 brief errors),
+`R2_DESIGN_REVIEW.md` (FAIL, 3 blockers), `R3_CONTENT_REVIEW.md` (PASS-WITH-GAPS, 0 blockers),
+`R4_REREVIEW.md` (PASS-WITH-GAPS, 1 blocker, closed by the layering fix and measured at 6.29:1).
+
+**What the port did not touch:** any sentence, figure or label on an existing page (R3: 0 prose
+removed, 0 figure drift over 81 documents; the one string change in the whole wave is the calculator
+enquiry placeholder, which was hospitality copy and now reads the site's own config string).
+
+**Verification numbers (rebuilt server, 2026-09-29):** tsc clean; vitest 81/81; web-shared 416/416;
+dependency closure OK across 19 sites; build 88 pages; sweep 66/66 URLs, 0 link-floor breaches over
+1,803 links, 0 dead internal links, 0 dash regressions; browser_check 152 page-loads, 0 contrast
+failures at 390/768/1024/1440 (was 16 on `/research/startup-formation-survival-index`), 0 overflow,
+0 console errors, anchor gaps 80 to 0; form-field rings 6.29 (contact), 6.01 (MiniCapture), homepage
+hero and key-figures rings 15.99 and 11.42 (were 1.89 and 1.67), calculator result headline 8.94 on
+all four (was 2.84), related-card focus-within 6.29 on all three cards; JSON-LD parses on 69 URLs,
+one BreadcrumbList each, FAQ details count = FAQPage count on 30/30 posts, 205 FAQ pairs byte-identical
+to frontmatter; forms contract (`data-cta`, `name`, `formId`, consent, submit label) byte-identical.
+
+**Kit-adoption gate (playbook 9.1, corrected block, comment-stripped):**
+
+| row | value |
+|---|---|
+| 1 layout-utils | 6 |
+| 2 kit adopted | 5 distinct / 40 call sites |
+| 2a kit declined | 113 comment references naming a kit path |
+| 2b homepage marketing | adopted=1 declined=7 |
+| 3 webfont | geist/font/sans |
+| 4 backdrop | 1 |
+| 5 eyebrow ratio | Eyebrow=8 section-label=0 |
+| 6 rings not the token | (empty) |
+| 7 gradient grounds | `app/page.tsx`, `components/layout/StartupsBackdrop.tsx`, 0 failures at any width |
+| 8 ring guard | walks=1 guards-the-guard=1 |
+
+**Live defects found that were not design work (fixed):** 32 posts declared FAQs in machine data and
+never rendered them (now a `<details>` block, 205 pairs); posts emitted no Article schema; FAQ schema
+answers carried raw HTML on 11 pages; every form field on the site painted no keyboard focus ring;
+hospitality placeholder on 36 pages; related posts in alphabetical not date order; the kit calculator
+headline at 2.84:1 on its dark panel (kit token added, see the leftovers).
+
+**Deliberate calls, written at the call site:** `FaqSection` declined everywhere (no `forceMount`);
+`BlogListWithSearch` declined on `/blog` (floor 37 vs a 12-per-page client list); `StatsCounter`,
+`TestimonialsSection`, `ComparisonTable`, `StickyCTA`, `ProcessTimeline`, `ProblemStatement` declined on
+the homepage; `CardStack` declined on service and audience pages (no 3-column, no anchor styling);
+`NoticeCard` and `ExampleFigureNote` declined on research (would centre or star frozen prose);
+`.eyebrow-rule` animation not imported (static mark, same call as contractors-ir35); mobile TOC
+explicitly static at the host; ReadingProgress 1px bar over the header's top edge accepted (kit has
+no prop); the two `!important` rules are descendant-scoped to the TOC wrapper; calculator hero at the
+600 step vs `/services` at 700 (both pass contrast, owner glance).
+
+**Owner walk items (plain English):** the FAQ blocks now visible on every blog post; the about page
+and 13 other pages carry the kit's default "Free first call, then a fixed fee in writing" wording,
+which is Property's and arrived with the 09-28 parity round, not this port; the 8 "partner network"
+sentences (`/contact`, `/complete`, `/thank-you`, DetailsForm, privacy policy x3) are untouched and
+wait for the wording pass; the kit mobile menu drawer does not trap keyboard focus (kit change, every
+ported site); the cookie policy does not name the footer analytics opt-out toggle (compliance copy).
+
+**Leftovers ledger (estate, not this site):** `--calc-result-accent` is declared here only; every
+other site using the kit Calculator with a mid-tone brand still renders its headline at the brand hex
+on slate-900 (2.84-class) and nothing detects it; `Breadcrumb` `onDark` palette is written for navy
+and every indigo/amber site re-writes a `crumbOnBrand` override (a `tone` prop belongs in the kit);
+`TableOfContents` mobile `top-16` is hardcoded; `LeadCTAPanel` non-contained variant hardcodes
+`bg-slate-900`; `CardStack` has no `columns={3}`; `NoticeCard` forces `text-center`;
+`ExampleFigureNote` prepends a literal `*`; kit `btnPrimaryBase`/`btnSecondary`/`btnOnDark`/`btnOnCream`
+hardcode `outline-primary-*` rings; `sweep_baseline.json` predates the chrome, so floors are low.
+
+Agents used, phases 2 to 6: 15 (1 planner, 6 builders, 1 verification executor, 2 reviewers,
+3 gap-fixers, 1 re-reviewer, 1 layering fixer). Port total 26 of the 36 priced. No CI run, no push,
+no deploy. NEXT = owner walk on a `next start` build, then deploy on his word from a pushed SHA.
