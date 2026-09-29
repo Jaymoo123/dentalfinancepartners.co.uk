@@ -161,6 +161,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   `if (!ctx) return null` inside the kit's SpecialistWidget. The
                   print:hidden wrapper keeps it off printed pages (the kit's
                   container recipe carries print:hidden too). */}
+              {/* R4 W-G2, RECORDED as a kit limitation, not fixed: the widget
+                  also renders on the 404 page (`curl :3202/no-such-page | grep -c
+                  'data-cta="specialist_widget"'` = 1). The kit suppresses by PATH
+                  PREFIX only, and a 404 carries the REQUESTED path, so there is no
+                  prefix to name. Next gives a root layout no signal that
+                  not-found.tsx rather than a page rendered, so this mount cannot
+                  branch on it.
+                  PROPOSED additive kit fix, not built: not-found.tsx renders a
+                  marker its subtree can see (a context flag, or a
+                  `data-not-found` attribute the provider reads on mount) and
+                  WidgetConfig gains `hideOnNotFound?: boolean` that the kit's
+                  SpecialistWidget ANDs into its existing `if (!ctx) return null`.
+                  Owner call: an auto-opening enquiry dialog on a not-found page is
+                  a judgement he has not made. */}
               <div className="print:hidden">
                 <SpecialistWidget />
               </div>

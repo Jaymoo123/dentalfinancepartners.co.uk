@@ -132,7 +132,13 @@ function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-xl border border-white/15 bg-white/10 p-5">
       <div className="text-3xl font-bold text-white sm:text-4xl">{value}</div>
-      <div className="mt-1 text-sm text-white/80">{label}</div>
+      {/* R4 D-G4: was text-white/80, which composites to rgb(241,224,218) over
+          the white/10 card on #b0532f = 3.29 against a 4.5 floor. 14px body
+          text, not a designer-set colour, so it moves to full white = 5.09.
+          Recorded pair: 3.29 -> 5.09. The 36px figure above is 4.21 and passes
+          the large-text floor, and the hero standfirsts at white/85 and
+          white/80 are an OWNER decision left untouched. */}
+      <div className="mt-1 text-sm text-white">{label}</div>
     </div>
   );
 }
@@ -199,6 +205,16 @@ export default function UKHospitalityInsolvencyIndexPage() {
               siteUrl={siteConfig.url}
               tone="onBrand"
             />
+            {/* R4 D-N5, recorded not fixed: onDark emits text-slate-300 and the
+                appended className overrides it, so the rendered class string ends
+                "... text-slate-300 text-white" on this and four sibling call sites
+                (research/page.tsx, two research details, calculators/[slug]).
+                The outcome is right (white on rgb(176,83,47) = 5.09); the class is
+                dead. PROPOSED kit change, not made here: in
+                packages/web-shared/design/primitives/page-blocks.tsx, Eyebrow's
+                onDark branch should not emit a text colour when className already
+                sets one (e.g. skip text-slate-300 when /text-(white|slate|primary)/
+                matches className). Kit file, out of this agent's scope. */}
             <Eyebrow onDark className="text-white">Research</Eyebrow>
             <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
               {HEADLINE_SENTENCE}

@@ -33,8 +33,31 @@ describe("widget config identity", () => {
     expect(widgetConfig.leadSource).toBe("hospitality");
   });
 
-  it("stays off /embed and /admin", () => {
-    expect(widgetConfig.hiddenOnPaths).toEqual(["/embed", "/admin"]);
+  it("stays off /embed, the research embed route and /admin", () => {
+    expect(widgetConfig.hiddenOnPaths).toEqual([
+      "/embed",
+      "/research/hospitality-openings-closures-index/embed",
+      "/admin",
+    ]);
+  });
+
+  // R4 W-B2: the kit suppresses by PREFIX, so every /embed-suffixed route the
+  // site has must appear in full. Both of them do.
+  it("suppresses every /embed route the site publishes", () => {
+    const embedRoutes = [
+      "/embed/food-drink-vat-rate-checker",
+      "/research/hospitality-openings-closures-index/embed",
+      "/admin/analytics",
+    ];
+    for (const route of embedRoutes) {
+      expect(widgetConfig.hiddenOnPaths.some((p) => route.startsWith(p))).toBe(true);
+    }
+    // and does not over-reach onto the research index itself
+    expect(
+      widgetConfig.hiddenOnPaths.some((p) =>
+        "/research/hospitality-openings-closures-index".startsWith(p),
+      ),
+    ).toBe(false);
   });
 
   it("links at real routes", () => {

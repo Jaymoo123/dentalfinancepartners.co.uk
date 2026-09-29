@@ -6,7 +6,11 @@
  * for this site.
  *
  * Voice rules (LOCKED):
- * - One sentence per hook line, under 20 words.
+ * - One sentence per hook line, under 20 words. The same cap applies to the
+ *   friction and exit templates with their LONGEST topic noun substituted
+ *   (R4 W-G1: the exit template reached 21 words that way and shipped green
+ *   because the test only measured TOPIC_HOOKS). Both halves of the rule are
+ *   now asserted in src/tests/assistant-opener.test.ts.
  * - No em-dashes.
  * - No pricing, and no turnaround promise beyond this site's own
  *   "reply within 24 hours".
@@ -43,56 +47,56 @@ export const TOPIC_NOUN: Record<TopicKey, string> = {
  */
 export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   tronc: [
-    "Looking at tronc and tips? I can pull up the tool that runs the PAYE and NIC.",
+    "Want me to pull up the tool that runs the PAYE and NIC on tronc and tips?",
     "Want a hand checking your tronc is independent enough for the NIC treatment?",
     "Speak to a hospitality accountant about your tronc scheme, shall I point you to the form?",
   ],
   vat: [
-    "Working out food and drink VAT? I can open the rate checker for your menu.",
-    "Want a hand with the hot food tests or an eat-in line? Happy to help.",
+    "Want me to open the rate checker for the food and drink VAT on your menu?",
+    "Happy to help with the hot food tests or an eat-in line if you want a hand.",
     "Speak to a hospitality accountant about your VAT, shall I point you to the form?",
   ],
   "staff-costs": [
-    "Looking at staff cost against covers? There is a rota margin tool for that.",
+    "Want me to open the rota margin tool for staff cost against covers?",
     "Want a hand working out what the April cost rises do to your rotas?",
     "Speak to a hospitality accountant about your payroll, want me to set that up?",
   ],
   "business-rates": [
-    "Checking your business rates? I can show you which reliefs venues most often miss.",
+    "Checking your business rates, shall I show you which reliefs venues most often miss?",
     "Want a hand seeing whether Small Business Rate Relief applies to your site?",
     "Speak to a hospitality accountant about your rates bill, shall I point you to the form?",
   ],
   "licensed-trade": [
-    "Running a licensed site? I can point you to the wet and dry margin pages.",
-    "Want a hand with alcohol duty, licensing costs or Machine Games Duty? Happy to help.",
+    "Running a licensed site, shall I point you to the wet and dry margin pages?",
+    "Happy to help with alcohol duty, licensing costs or Machine Games Duty if you want a hand.",
     "Speak to a hospitality accountant about your licensed trade, want me to set that up?",
   ],
   compliance: [
     "Anything I can help you find on your accounts or your filing deadlines?",
-    "Want a hand keeping on top of your deadlines and Making Tax Digital? Happy to help.",
+    "Happy to help you keep on top of your deadlines and Making Tax Digital.",
     "Speak to a hospitality accountant about your compliance, shall I point you to the form?",
   ],
 };
 
 /** Combination opener: both tronc and staff costs in the profile. */
 const COMBO_TRONC_PAYROLL: [string, string, string] = [
-  "Tronc and payroll nearly always land together. Want me to line both up?",
-  "Running a tronc alongside your pay run takes care to separate. Want me to show you?",
+  "Tronc and payroll nearly always land together, so shall I line both up?",
+  "Running a tronc alongside your pay run takes care to separate, want me to show you?",
   "Speak to a hospitality accountant about both together, want me to set that up?",
 ];
 
 /** Used-calculator (sanity-check opener). */
 const USED_CALC: [string, string, string] = [
-  "You have already run the numbers. Want a second pair of eyes on them?",
-  "A calculator gives a picture. An accountant confirms it fits your venue, want a check?",
-  "Ready to sanity-check those results? An accountant goes further than any calculator.",
+  "You have already run the numbers, so want a second pair of eyes on them?",
+  "A calculator gives a picture, and an accountant confirms it fits your venue, want a check?",
+  "Ready to sanity-check those results with an accountant who goes further than any calculator?",
 ];
 
 /** Fully generic (no topic). */
 const GENERIC: [string, string, string] = [
-  "Not sure what you are looking for? I can point you to the right tool.",
-  "Happy to help you find what you need. What is the main thing on your mind?",
-  "Speak to a hospitality accountant and get a straight answer. Want me to set that up?",
+  "Not sure what you are looking for, shall I point you to the right tool?",
+  "Happy to help you find what you need, so what is the main thing on your mind?",
+  "Speak to a hospitality accountant and get a straight answer, want me to set that up?",
 ];
 
 /**
@@ -141,12 +145,12 @@ export function frictionOpener(profile: JourneyProfile): string {
   return "Send a question here instead, we reply within 24 hours.";
 }
 
-/** Exit opener (fires on the exit-intent trigger). */
+/** Exit opener (fires on the exit-intent trigger). One sentence, under 20 words. */
 export function exitOpener(profile: JourneyProfile): string {
   const t = profile.primaryTopic as TopicKey | null;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Before you go: send a question about ${noun} and one of our accountants will come back to you.`;
+    return `Before you go, send a question about ${noun} and we will reply within 24 hours.`;
   }
-  return "Before you go: send a question and one of our accountants will come back to you.";
+  return "Before you go, send a question and we will reply within 24 hours.";
 }

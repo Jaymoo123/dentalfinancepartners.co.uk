@@ -155,6 +155,26 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
         // content, which is the backdrop's host contract.
         backdrop: (
           <>
+            {/* R4 D-G3: the closing LeadCTAPanel paints bg-slate-900 and so does
+                the footer, so on 17 routes they read as one continuous dark block
+                (`darkOnDark: true`, rgb(15,23,43) on both sides of the seam).
+                startups-tech separates its seams with a hairline on the section
+                (page.tsx:850,891 `border-t border-slate-200`); the same idea, one
+                step darker for a dark ground.
+                It goes HERE, once, because neither kit component exposes a hook:
+                SiteFooterProps has no className (SiteFooter.tsx:7-65) and
+                LeadCTAPanel hard-codes its dark section (LeadCTAPanel.tsx:103,
+                no sectionClassName prop), so the alternative was 17 call-site
+                wrappers. `backdrop` is the first child of the footer, which is
+                already `relative overflow-hidden` with `relative z-10` content,
+                so an absolutely positioned 1px line sits on the seam above the
+                content layer. No ground colour changes: slate-800 on slate-900 is
+                a hairline, and on the routes that end light it reads as the same
+                separator startups-tech uses. */}
+            <span
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 top-0 z-20 h-px bg-slate-800"
+            />
             <UnionJackStrip />
             <HospitalityBackdrop />
           </>

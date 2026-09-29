@@ -140,7 +140,25 @@ export const widgetConfig: WidgetConfig = {
   formId: SPECIALIST_WIDGET_FORM_ID,
   ctaId: SPECIALIST_WIDGET_FORM_ID,
   leadSource: niche.content_strategy.source_identifier,
-  hiddenOnPaths: ["/embed", "/admin"],
+  // R4 W-B2: the kit tests these as PREFIXES
+  // (IntentProvider.tsx: hiddenOnPaths.some(p => path.startsWith(p))), so a
+  // full path is a valid entry and a SUFFIX route is not covered by its parent.
+  // "/embed" covers /embed/[slug]; the research index publishes its chart at
+  // /research/<slug>/embed, which PageShell strips chrome from through its own
+  // bypass predicate the widget never sees, so it is named in full here. The
+  // only two /embed routes the site has:
+  //   src/app/embed/[slug]/page.tsx
+  //   src/app/research/hospitality-openings-closures-index/embed/page.tsx
+  //
+  // R4 W-N6, recorded not fixed: this widget is the one surface with no
+  // data-cta-placement/-goal. Deliberate and estate-wide (Property, generalist,
+  // startups-tech are byte-identical): autoCapture resolves placement from
+  // nearestSection() at click time.
+  hiddenOnPaths: [
+    "/embed",
+    "/research/hospitality-openings-closures-index/embed",
+    "/admin",
+  ],
   routeRules: ROUTE_RULES,
   getTopic,
   journey,

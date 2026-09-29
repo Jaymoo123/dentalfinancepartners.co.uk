@@ -78,6 +78,15 @@ function allLines(): string[] {
   return lines;
 }
 
+/**
+ * Every authored SENTENCE the module can emit: the hook ladder, the friction
+ * template and the exit template, each rendered with every topic noun. Excludes
+ * TOPIC_NOUN itself, which is a fragment slotted into the templates.
+ */
+function sentenceLines(): string[] {
+  return allLines().filter((l) => !Object.values(TOPIC_NOUN).includes(l));
+}
+
 describe("opener coverage and determinism", () => {
   it("LLM enrichment stays off", () => {
     expect(OPENER_LLM_ENRICHMENT_ENABLED).toBe(false);
@@ -174,5 +183,22 @@ describe("opener voice rules", () => {
     for (const hooks of Object.values(TOPIC_HOOKS)) {
       for (const h of hooks) expect(h.split(/\s+/).length).toBeLessThan(20);
     }
+  });
+
+  // R4 W-G1: the word half of the LOCKED rule was asserted, the SENTENCE half
+  // was not, and 16 of 27 authored lines shipped as two sentences. Both halves
+  // are asserted here now, over every authored SENTENCE the module can emit
+  // (TOPIC_NOUN entries are fragments, not sentences, so they are excluded).
+  it("every authored opener line is exactly one sentence", () => {
+    for (const line of sentenceLines()) {
+      // An ellipsis (e.g. "Sending...") is one terminator, not three.
+      const terminators = line.replace(/\.\.\./g, ".").match(/[.!?]/g) ?? [];
+      expect({ line, sentences: terminators.length }).toEqual({ line, sentences: 1 });
+    }
+  });
+
+  it("the friction and exit templates stay under 20 words with the longest noun", () => {
+    const over = sentenceLines().filter((l) => l.split(/\s+/).length >= 20);
+    expect(over).toEqual([]);
   });
 });
