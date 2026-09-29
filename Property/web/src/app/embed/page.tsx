@@ -87,7 +87,7 @@ export default function EmbedGalleryPage() {
               href="/contact?utm_source=embed-gallery&utm_medium=site&utm_campaign=partnerships"
               data-cta="embed_hero_partnership"
               data-cta-placement="hero"
-              className={`${btnPrimary} text-base px-6 py-3 sm:px-8 sm:py-4`}
+              className={`${btnPrimary} bg-emerald-600 text-base px-6 py-3 sm:px-8 sm:py-4`}
             >
               Talk to us about a partnership
             </Link>
@@ -158,7 +158,7 @@ export default function EmbedGalleryPage() {
                 href="/contact?utm_source=embed-gallery&utm_medium=site&utm_campaign=partnerships"
                 data-cta="embed_footer_partnership"
                 data-cta-placement="closing"
-                className={`${btnPrimary} text-base px-6 py-3 sm:px-8 sm:py-4`}
+                className={`${btnPrimary} bg-emerald-600 text-base px-6 py-3 sm:px-8 sm:py-4`}
               >
                 Start the conversation
               </Link>

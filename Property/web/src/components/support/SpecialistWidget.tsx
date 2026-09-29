@@ -575,7 +575,7 @@ export function SpecialistWidget() {
               <button
                 type="button"
                 onClick={() => onChip("question")}
-                className="w-full rounded-lg bg-emerald-700 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-800"
+                className="w-full rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-700"
               >
                 Ask a specialist
               </button>
@@ -607,7 +607,7 @@ export function SpecialistWidget() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full rounded-lg bg-emerald-700 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-800 disabled:opacity-60"
+                  className="w-full rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-60"
                 >
                   {status === "loading" ? "Sending..." : "Send to a specialist"}
                 </button>
@@ -707,7 +707,7 @@ export function SpecialistWidget() {
                     <button
                       type="button"
                       onClick={goToStep2}
-                      className="w-full rounded-lg bg-emerald-700 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-800"
+                      className="w-full rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-700"
                     >
                       Continue
                     </button>
@@ -733,7 +733,7 @@ export function SpecialistWidget() {
                     <button
                       type="submit"
                       disabled={status === "loading"}
-                      className="w-full rounded-lg bg-emerald-700 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-800 disabled:opacity-60"
+                      className="w-full rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-60"
                     >
                       {status === "loading" ? "Sending..." : "Send to a specialist"}
                     </button>
@@ -787,7 +787,7 @@ export function SpecialistWidget() {
         type="button"
         onClick={() => (open ? setOpen(false) : handleOpen(false))}
         data-cta="specialist_widget"
-        className="relative flex items-center gap-2 rounded-full bg-emerald-700 px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:bg-emerald-800"
+        className="relative flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-2xl hover:bg-emerald-700"
       >
         {!open && unread > 0 && (
           <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">

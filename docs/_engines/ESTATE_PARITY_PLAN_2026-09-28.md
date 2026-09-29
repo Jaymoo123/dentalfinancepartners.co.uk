@@ -207,3 +207,9 @@ assistant-naming rerun at the month-1 read; monitored_pages rows for the eight s
   all closed, 13 per-site commits `9ffcc175`..`b8f1c4ed`, every site safe to deploy. Owner rulings:
   consent text = shared `leadConsentText` everywhere (no "up to three firms"); deploy still parked;
   phase 1 may start. Next: 4.1 design port on startups-tech (plan priced at about 36 agents, 2 days).
+- 2026-09-29, owner ruling on Property: the button green is the designer's and does not change for
+  contrast maths ("the designer who actually observed the buttons did that"). Phase 0's emerald-600
+  to emerald-700 shift reverted on every Property surface (27 files restored to the live build,
+  three mixed files edited by line); keyboard focus outlines, the footer booking link to the contact
+  form, and the AdSense tag stay. Trap 12 (never change Property) now explicitly covers colour.
+  Deploy go given 2026-09-29 for the 14-site round, Property first; waiting on the owner's push.

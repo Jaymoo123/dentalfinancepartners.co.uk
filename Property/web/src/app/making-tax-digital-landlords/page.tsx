@@ -547,7 +547,7 @@ export default function MakingTaxDigitalLandlordsPage() {
                 data-cta="hero_book"
                 data-cta-placement="hero"
                 data-cta-goal="form"
-                className={`${btnPrimary} text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}
+                className={`${btnPrimary} bg-emerald-600 text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-3.5 text-center`}
               >
                 Talk to a property accountant
               </Link>
@@ -846,7 +846,7 @@ export default function MakingTaxDigitalLandlordsPage() {
                         <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
                         <span
                           className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide ${
-                            inScope ? "bg-emerald-700 text-white" : "bg-rose-600 text-white"
+                            inScope ? "bg-emerald-600 text-white" : "bg-rose-600 text-white"
                           }`}
                         >
                           {inScope ? "In scope" : "Out of scope"}

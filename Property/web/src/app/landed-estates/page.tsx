@@ -178,7 +178,7 @@ export default function LandedEstatesPage() {
             data-cta="estates_hero_book"
             data-cta-placement="hero"
             data-cta-goal="form"
-            className={`${btnPrimary} px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
+            className={`${btnPrimary} bg-emerald-600 px-6 py-3 text-center text-sm sm:px-8 sm:py-3.5 sm:text-base`}
           >
             Talk to a property tax specialist
           </Link>

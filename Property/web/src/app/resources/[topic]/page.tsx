@@ -76,7 +76,7 @@ export default async function ResourceGuidePage({ params }: Props) {
                 <a
                   href={resource.xlsx.file}
                   download
-                  className="inline-flex items-center justify-center rounded-lg border-2 border-emerald-700 bg-emerald-700 px-5 py-3 text-base font-semibold text-white transition-colors hover:bg-emerald-800"
+                  className="inline-flex items-center justify-center rounded-lg border-2 border-emerald-600 bg-emerald-600 px-5 py-3 text-base font-semibold text-white transition-colors hover:bg-emerald-700"
                 >
                   Download the {resource.xlsx.label}
                 </a>

@@ -15,7 +15,7 @@ export function PageResultCta({ campaign, label }: { campaign: string; label?: s
         data-cta={`calc_result_${campaign}`}
         data-cta-placement="calc_result"
         data-cta-goal="form"
-        className="inline-flex w-full items-center justify-center rounded-xl bg-emerald-700 px-6 py-3.5 text-sm sm:text-base font-bold text-white hover:bg-emerald-800 active:bg-emerald-900 transition-colors"
+        className="inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 px-6 py-3.5 text-sm sm:text-base font-bold text-white hover:bg-emerald-700 active:bg-emerald-800 transition-colors"
       >
         {label ?? "Talk to a specialist property accountant →"}
       </a>
