@@ -4,6 +4,7 @@ import { btnPrimary, siteContainerLg, sectionY } from "@/components/ui/layout-ut
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
 import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import BookingPicker from "@/components/forms/BookingPicker";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 
 /**
  * Standalone booking page, linked from every nurture SMS/email as
@@ -53,7 +54,7 @@ export default async function BookPage({
 
   return (
     <>
-      <SlimHero eyebrow="Your callback" title="Book your free review call">
+      <SlimHero eyebrow="Your callback" title="Book your free review call" backdrop={<StartupsBackdrop />}>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
           Pick a day and a time window that suits you. A startup accountant will call you
           then, no obligation.

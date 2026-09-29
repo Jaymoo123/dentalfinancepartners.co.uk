@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { ConsentProvider } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
 import { AnalyticsProvider } from "@accounting-network/web-shared/analytics/react/AnalyticsProvider";
@@ -98,9 +99,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     // GeistSans.variable puts the font's CSS variable class on <html>; the
     // tokens package maps --font-sans to it in globals.css. Before this the site
     // loaded no webfont at all and rendered in ui-sans-serif, system-ui.
-    <html lang="en-GB" className={GeistSans.variable}>
+    <html lang="en-GB" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} /></head>
       <body className="antialiased">
+        {/* U4 item 4: globals-standard.css's .eyebrow-rule/.tick-draw collapsed
+            states are gated on [data-draw="off"] with no (scripting: enabled)
+            condition (unlike crypto's local copy), so without JS the observer that
+            flips data-draw never runs and the marks would stay invisible. Must live
+            inside <body>: React cannot render <noscript> as a direct child of <html>. */}
+        <noscript>
+          <style>{`.eyebrow-rule[data-draw="off"] { transform: none; }
+            [data-draw="off"] .tick-draw { stroke-dashoffset: 0; }`}</style>
+        </noscript>
         <ConsentProvider>
           <AnalyticsProvider siteKey={niche.content_strategy.site_key} siteName={niche.display_name} storagePrefix="ffp" posture="opt-out" noTrackPrefixes={["/admin"]}>
             <ConsentedScripts gaMeasurementId={niche.seo.google_analytics_id} adsenseClientId="ca-pub-3756285576371279" />

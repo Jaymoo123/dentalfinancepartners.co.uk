@@ -7,20 +7,19 @@
  * above it and names that kit file path, so `grep -n "web-shared/design/layout-utils"`
  * finds every decline as well as every adoption.
  *
- * Deleted, not ported: `siteContainer`, `btnSecondary`, `linkArrow`, `btnOnTeal`,
- * `btnOnDark` and `btnPrimaryBase`. All six had ZERO consumers anywhere under
- * `startups-tech/web/src` (`grep -rhoE` over every .tsx file). `btnOnTeal` and
- * `btnOnDark` were both aliased to the old local `btnSecondary`, a neutral-outline
- * recipe that would have been near-invisible on the dark grounds their names
- * promise. `btnPrimaryBase` is not dead weight for the header CTA either:
- * `packages/web-shared/design/chrome/SiteHeader.tsx:7` imports its own copy
- * straight from the kit, not from this file, so nothing here would ever reach
- * it. The kit has real versions of all six if one is ever needed:
- * `packages/web-shared/design/layout-utils.ts`.
+ * U4 (2026-09-29): `siteContainer`, `btnSecondary` and `btnOnDark` are back.
+ * They were dropped during the port for having ZERO consumers under
+ * `startups-tech/web/src` at the time; U1 and U2 create the first consumers
+ * (hero secondary CTA, hub heroes). `linkArrow`, `btnOnTeal` and
+ * `btnPrimaryBase` stay deleted: still zero consumers, and `btnPrimaryBase`
+ * cannot be reached from here regardless, since
+ * `packages/web-shared/design/chrome/SiteHeader.tsx:7` imports its own copy of
+ * the kit recipe directly rather than through this file.
  */
 
 export {
   // Byte-identical to the local versions they replace. Pure adoption.
+  siteContainer,
   siteContainerLg,
   contentNarrow,
   // Not byte-identical: the kit's rhythm is tighter (py-12 sm:py-16 md:py-20 /
@@ -79,3 +78,27 @@ export const focusRing =
  */
 export const btnPrimary =
   "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl bg-[var(--btn-ground,var(--color-primary-700))] px-8 py-3.5 text-base font-bold text-white transition-all duration-150 hover:bg-[var(--btn-ground-hover,var(--color-primary-800))] active:bg-[var(--btn-ground-active,var(--color-primary-900))] disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
+
+/**
+ * ADOPTED with a local ring, from packages/web-shared/design/layout-utils.ts's
+ * `btnSecondary` and `btnOnDark` (U4 item 5, restored for U1/U2 to consume).
+ *
+ * Both kit recipes hardcode a literal ring utility instead of reading
+ * `--kit-focus-ring`/`--focus-ring`: `btnSecondary` carries
+ * `focus-visible:outline-primary-600`, the same string measured 2.03-2.99 on
+ * this site's dark grounds above `btnPrimary`. `btnOnDark` carries
+ * `focus-visible:outline-primary-400` (#818cf8), measured here against the
+ * grounds U1/U2 mount it on:
+ *   primary-950 #1e1b4b (hero) ................ 5.36  PASS
+ *   primary-700 #4338ca (U2 hub heroes) ........ 2.65  FAIL
+ *   primary-600 #4f46e5 (U2 calculator hero) ... 2.11  FAIL
+ * Both fail on at least one ground this port mounts them on, so both are kept
+ * as local strings with the literal swapped for `var(--focus-ring)`, same
+ * fix and same reasoning as `btnPrimary`. Every other character is the kit's,
+ * unmodified.
+ */
+export const btnSecondary =
+  "inline-flex min-h-12 min-w-[10rem] touch-manipulation items-center justify-center rounded-xl border-2 border-primary-600 bg-white px-8 py-3.5 text-base font-bold text-primary-700 transition-all duration-150 hover:bg-white hover:text-primary-700 hover:border-primary-700 active:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
+
+export const btnOnDark =
+  "inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-white/40 bg-white/5 px-8 py-3.5 text-base font-bold text-white backdrop-blur-sm transition-all duration-150 hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";

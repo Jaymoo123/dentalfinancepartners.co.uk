@@ -7,6 +7,7 @@ import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/l
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
 import DetailsForm from "@/components/forms/DetailsForm";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 
 /**
  * "Complete your details" page, linked from a nurture email as
@@ -136,7 +137,7 @@ export default async function CompletePage({
 
   return (
     <>
-      <SlimHero eyebrow="Your enquiry" title="Complete your details">
+      <SlimHero eyebrow="Your enquiry" title="Complete your details" backdrop={<StartupsBackdrop />}>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
           Add the last detail we need and a specialist firm from our partner network will be in
           touch to arrange your free startup finance review, no obligation.

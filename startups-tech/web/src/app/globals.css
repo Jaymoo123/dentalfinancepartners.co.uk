@@ -1,8 +1,37 @@
+/* MOTION-LAYER TABLE, for U1/U2/U3: what @import "globals-standard.css" below
+   makes available on this site now that it did not before.
+     .eyebrow-rule        Eyebrow mark draw-in (scaleX 0->1), gated [data-draw="off"], released by the <noscript> rule below
+     .tick-draw           DrawnTickList per-mark stroke-dashoffset draw, same [data-draw="off"] gate
+     [data-glow="on"] > *  card-glow: one-shot border/shadow pulse, staggered nth-child(2)/(3)/(4), for ScrollGlowGroup
+     .num-glow (num-glow keyframe)  staggered light-up for stat/number lists
+     .hero-reveal / .hero-reveal-delay   fadeInUp entrance
+     .marquee-track / .marquee-viewport  vertical looping marquee (PromptMarquee)
+     .related-card         hover/focus-within glow, keyed off --brand-glow* below (RelatedArticles)
+   All colour in the above is read from --brand-glow / -deep / -edge / -faint,
+   declared in :root below at this site's indigo steps. See "MEASURED DECISION"
+   comment further down for the proof no Property emerald leaks through. */
+
 /* Tailwind source("..") scans from src/ relative to this file. */
 @import "tailwindcss" source("..");
 /* Kit components live outside src/, which source("..") excludes, so without this line every utility used only inside packages/web-shared compiles to nothing. */
 @source "../../../../packages/web-shared";
-/* Article bodies here carry class="prose" and the homepage uses .section-label, neither of which had any rule, so without this line those pages render unstyled. */
+/* Required by globals-standard.css below (its own header comment, "not bundled by this file"): drives the [data-glow]/[data-draw] entrance utilities and tw-animate-css's own animate-* utilities. */
+@import "tw-animate-css";
+/* MEASURED DECISION (U4 item 2): imported rather than locally re-declared. This
+   file's only Property-specific values are four `rgb(var(--brand-glow*, <R G B>))`
+   CSS-variable FALLBACKS (globals-standard.css:27-34,141-247), each read only when
+   the named custom property is UNDECLARED on the element. This site declares all
+   four (--brand-glow, --brand-glow-deep, --brand-glow-edge, --brand-glow-faint) in
+   :root below, at its own indigo steps, so every one of those fallback branches is
+   unreachable: `grep -c "16 185 129" packages/web-shared/design/globals-standard.css`
+   = 3 occurrences, all three inside `var(--brand-glow, 16 185 129)`/`var(--brand-glow,
+   ...)` expressions whose first argument (this site's declared --brand-glow) always
+   wins once declared. No other Property colour (no hex, no oklch) appears in the
+   file. generalist imports this same file and is not emerald for the same reason.
+   The crypto precedent (local keyframe copy) is NOT followed: re-typing ~160 lines
+   to avoid a colour that cannot reach the page is not the cheapest correct answer. */
+@import "@accounting-network/web-shared/design/globals-standard.css";
+/* Article bodies here carry class="prose" and this file's own .eyebrow-rule/.tick-draw usages sit inside .prose-adjacent sections; .prose has no rule in globals-standard.css, so without this line article bodies render unstyled. E13: the .section-label half of the old comment was stale (grep found zero on this site) and has been dropped; the .prose half stays. */
 @import "../../../../packages/site-styles/prose-standard.css";
 
 /* ponytail: blog post bodies come from bodySplit's raw HTML (dangerouslySetInnerHTML),
@@ -56,6 +85,13 @@
      where the font fails to load, this still resolves to a real stack instead
      of invalidating the body font-family declaration outright. */
   --font-sans: var(--font-geist-sans, ui-sans-serif), system-ui, -apple-system, sans-serif;
+  /* U4 item 3, measured: `font-mono` is already used today (app/page.tsx key
+     figures, and the kit StatsCounter renders `font-mono tabular-nums`), and with
+     no alias it silently resolved to Tailwind's stock `ui-monospace` stack rather
+     than the site's webfont. GeistMono is loaded in layout.tsx alongside GeistSans,
+     the same crypto `7dfe04b3` shape; the fallback stack keeps this declaration
+     valid even before the font finishes loading. */
+  --font-mono: var(--font-geist-mono, ui-monospace), SFMono-Regular, monospace;
 }
 
 @layer base {
@@ -74,6 +110,16 @@
     --brand-primary: #4f46e5;
     --brand-primary-strong: #4f46e5;
     --brand-on-primary: #ffffff;
+
+    /* U4 item 2: the swap surface globals-standard.css:27-34 documents, so the
+       card-glow/num-glow/related-card rules it ships key off this site's indigo
+       rather than Property's emerald fallback. Channels are steps already declared
+       in the @theme block above; no new colour. RGB triplets because the kit's
+       rgb(var(--token) / alpha) syntax cannot take a hex custom property. */
+    --brand-glow: 99 102 241; /* primary-500 #6366f1 */
+    --brand-glow-deep: 79 70 229; /* primary-600 #4f46e5, the brand hex */
+    --brand-glow-edge: 129 140 248; /* primary-400 #818cf8, the step StartupsBackdrop.tsx already paints */
+    --brand-glow-faint: 224 231 255; /* primary-100 #e0e7ff */
 
     /* Button ground trio, read by the kit's btnPrimaryBase recipe
        (packages/web-shared/design/layout-utils.ts:66-67) with the

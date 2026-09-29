@@ -30,14 +30,30 @@
  *
  * Contrast, at the backdrop's STRONGEST point (a 1px stroke at full alpha inside
  * the 0.10 group, i.e. assuming copy sits directly on a rule, which the
- * left-fading mask means it effectively never does). Ground is the kit footer's
- * `bg-slate-900` `#0f172a`, the only ground this component is mounted on today.
- *   - bare `#0f172a`: white 17.97, `text-slate-300` 12.09.
- *   - composited `#1b2333` (0.10 of #818cf8 over #0f172a): white 12.14,
- *     `text-slate-300` 8.17.
- * Both figures clear the 4.5 text floor with room, so the 3.0 graphic floor is
- * moot as well. The cost of the motif is 5.8 points of headroom on copy that had
- * 17.97 to spend.
+ * left-fading mask means it effectively never does). Figures below are the
+ * bare ground and the ground composited with 0.10 of #818cf8, against white
+ * and `text-slate-300` (#cbd5e1), one row per ground this component mounts on
+ * across this port (U4 = footer only; U1 mounts on the homepage hero; U2 mounts
+ * on the hub/calculator hero bands):
+ *   - `bg-slate-900` `#0f172a` (footer, U4's own mount): bare white 17.85,
+ *     slate-300 12.02; composited `#1a233f` white 15.49, slate-300 10.43. PASS.
+ *   - `bg-primary-950` `#1e1b4b` (homepage hero, U1): bare white 15.99,
+ *     slate-300 10.77; composited `#28265c` white 13.80, slate-300 9.29. PASS.
+ *   - `bg-primary-700` `#4338ca` (hub hero bands, U2): bare white 7.90,
+ *     slate-300 5.32; composited `#4940cf` white 7.20, slate-300 4.85. PASS.
+ *   - `bg-primary-600` `#4f46e5` (calculator hero, U2): bare white 6.29,
+ *     slate-300 4.23; composited `#544de7` white 5.85, slate-300 3.94. White
+ *     copy PASSES (5.85, both floors). `text-slate-300` copy FAILS the 4.5
+ *     text floor at this worst-case assumption (3.94, though it clears the 3.0
+ *     graphic floor). U2: do not set standfirst/body copy to slate-300 on this
+ *     specific ground while the backdrop is mounted; use white or slate-200
+ *     instead, or verify against the actual rendered composite (the mask fades
+ *     left, so real risk near body copy is materially lower than this
+ *     worst-case figure).
+ * No `tone` prop added: the motif colour (`#818cf8`, indigo-400) and alpha stay
+ * the same on every ground above, so there is no light/dark branch to switch -
+ * only the primary-600 ground needs a caller-side text-colour choice, which is
+ * U2's file, not this component's.
  *
  * No JavaScript, no animation, no dependency, no data URI: identical in the
  * static HTML and under `prefers-reduced-motion: reduce`, because there is

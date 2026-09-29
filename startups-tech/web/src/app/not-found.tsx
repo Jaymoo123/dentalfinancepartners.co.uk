@@ -15,8 +15,8 @@ import { btnPrimary, sectionY, siteContainerLg } from "@/components/ui/layout-ut
 export default function NotFound() {
   return (
     <div className={`${siteContainerLg} ${sectionY} text-center`}>
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Page not found</h1>
-      <p className="mt-4 text-base leading-relaxed text-neutral-500">
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">Page not found</h1>
+      <p className="mt-4 text-base leading-relaxed text-slate-500">
         The page you requested does not exist or has moved.
       </p>
       <p className="mt-8 flex justify-center">

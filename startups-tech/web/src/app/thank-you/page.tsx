@@ -4,6 +4,7 @@ import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-uti
 import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
 import BookingPicker from "@/components/forms/BookingPicker";
 import { isSafeReturnPath } from "@accounting-network/web-shared/leads/capture-steps";
+import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 
 /**
  * CHROME ONLY. Every sentence below is the pre-port copy, byte for byte,
@@ -63,7 +64,7 @@ export default async function ThankYouPage({
   if (optedOut) {
     return (
       <>
-        <SlimHero eyebrow="Your enquiry" title="You will not hear from us again about this enquiry" />
+        <SlimHero eyebrow="Your enquiry" title="You will not hear from us again about this enquiry" backdrop={<StartupsBackdrop />} />
         <section className={bodySection}>
           <div className={siteContainerLg}>
             <div className={bodyInner}>
@@ -83,7 +84,7 @@ export default async function ThankYouPage({
   if (confirmed) {
     return (
       <>
-        <SlimHero eyebrow="Your enquiry" title="Confirmed" />
+        <SlimHero eyebrow="Your enquiry" title="Confirmed" backdrop={<StartupsBackdrop />} />
         <section className={bodySection}>
           <div className={siteContainerLg}>
             <div className={bodyInner}>
@@ -103,7 +104,7 @@ export default async function ThankYouPage({
 
   return (
     <>
-      <SlimHero eyebrow="Your enquiry" title="Thanks, your enquiry is on its way." />
+      <SlimHero eyebrow="Your enquiry" title="Thanks, your enquiry is on its way." backdrop={<StartupsBackdrop />} />
       <section className={bodySection}>
         <div className={siteContainerLg}>
           <div className={bodyInner}>

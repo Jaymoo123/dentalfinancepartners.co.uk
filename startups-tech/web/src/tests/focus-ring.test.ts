@@ -11,7 +11,7 @@ import * as L from "@/components/ui/layout-utils";
  * floor. Keeping a local focusRing constant does NOT protect against that if a future
  * edit re-exports a kit recipe raw instead of the local one - this file only exports
  * `btnPrimary` and `focusRing`, so those are the only recipes to guard. */
-const recipes = ["btnPrimary", "focusRing"] as const;
+const recipes = ["btnPrimary", "btnSecondary", "btnOnDark", "focusRing"] as const;
 
 describe("focus ring never falls back to the primary ramp", () => {
   for (const name of recipes) {
@@ -71,6 +71,17 @@ describe("focus ring never falls back to the primary ramp", () => {
       }
     }
     expect(offenders).toEqual([]);
+  });
+
+  it("btnOnDark routes through this module, not the raw kit export", () => {
+    // U4 item 9: the kit's own btnOnDark hardcodes focus-visible:outline-primary-400,
+    // which measures 2.11-2.65 on the primary-600/700 grounds U2 mounts it on (below
+    // the 3:1 graphic floor). This module re-exports a local recipe with the literal
+    // swapped for the ground-aware token; importing straight from the kit instead of
+    // "@/components/ui/layout-utils" would silently undo that.
+    expect(typeof L.btnOnDark).toBe("string");
+    expect(L.btnOnDark).not.toMatch(/focus-visible:outline-primary-/);
+    expect(L.btnOnDark).toContain("focus-visible:outline-[var(--focus-ring)]");
   });
 
   it("btnPrimary is the kit shape, not a square local one", () => {
