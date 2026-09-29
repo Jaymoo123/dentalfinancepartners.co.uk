@@ -677,6 +677,27 @@ Before starting a site, capture and put in the prompts:
     - `TestimonialsSection.items` (added 2026-09-29). Default = the module constant (Property's
       three landlord quotes), so every existing caller is byte-identical; a site passes its own
       already-published anonymised quotes. Never invent a quote to fill it.
+    - `Breadcrumb.tone` (added 2026-09-29, `packages/web-shared/design/primitives/Breadcrumb.tsx`).
+      Values `"default" | "onDark" | "onBrand"`; default `undefined`, which leaves the existing
+      `onDark` boolean in sole charge, so every caller that passes nothing emits the identical
+      class strings (`tone` wins when both are passed). It exists because the `onDark` palette is
+      written for the kit's slate-900 navy and fails on a MID-TONE BRAND ground: on startups-tech
+      `bg-primary-600` #4f46e5 the slate-300 links measure 4.23 against the 4.5 text floor and the
+      slate-400 separator 2.39 against the 3.0 graphic floor. `"onBrand"` is white links, white/80
+      separator (6.29 and 4.63 on that ground, both PASS) and a white current crumb. Class recipes
+      only; no site hex enters the kit. 20 call sites (ecommerce 13, startups-tech 7) each carry a
+      local `const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80"`
+      and a wrapper div that this prop retires; adopting it is a per-site sweep, not a kit change.
+    - Kit mobile drawer FOCUS TRAP (added 2026-09-29, `packages/web-shared/design/chrome/SiteHeader.tsx`).
+      Not a prop and not optional: `role="dialog"` + `aria-modal="true"` were already on the drawer,
+      but focus never entered it, Tab walked out into the page behind, and closing it dropped focus
+      to the document. The drawer now moves focus to its first focusable child on open, cycles Tab
+      and Shift+Tab inside the PANEL (the backdrop button is out of the cycle), and returns focus to
+      the burger on close. Same shape as the startups-tech SpecialistWidget trap that passed review
+      (`7dc3c7fe`, `878d56ce`); no new dependency. CLOSED behaviour is byte-identical. The rest of
+      the page is still NOT `inert`/`aria-hidden`; `aria-modal` plus the trap is the cover, and a
+      port that wants `inert` needs a portal the kit does not own. Consumers: charities,
+      contractors-ir35, crypto, ecommerce, generalist, startups-tech, construction-cis (wrapper).
     Do not add rival props for either; these are the supported hooks.
 
 ---

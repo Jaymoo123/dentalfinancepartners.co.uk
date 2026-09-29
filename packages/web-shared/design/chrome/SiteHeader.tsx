@@ -361,6 +361,13 @@ export function SiteHeader({
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const panelId = useId();
+  // Focus-trap refs, added 2026-09-29. All three are null until the drawer
+  // opens (the panel is unmounted when closed), so a closed drawer runs exactly
+  // the code it ran before: every effect below returns on `!open`.
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const wasOpenRef = useRef(false);
 
   useEffect(() => {
     setOpen(false);
@@ -378,6 +385,63 @@ export function SiteHeader({
       document.removeEventListener("keydown", onKey);
       document.documentElement.style.overflow = prev;
     };
+  }, [open]);
+
+  // Focus RETURN. The drawer carries role="dialog" aria-modal="true", so a
+  // screen-reader user who closes it with Escape or the close button must land
+  // back on the burger that opened it rather than at the top of the document.
+  // `wasOpenRef` makes this fire only on a real open->close transition, so the
+  // first render of a page (open === false) steals no focus.
+  useEffect(() => {
+    if (open) {
+      wasOpenRef.current = true;
+      return;
+    }
+    if (!wasOpenRef.current) return;
+    wasOpenRef.current = false;
+    toggleRef.current?.focus();
+  }, [open]);
+
+  // Focus ENTRY + Tab trap. Same shape as the widget trap that passed review
+  // (startups-tech SpecialistWidget, 7dc3c7fe/878d56ce): move focus to the
+  // first focusable child on open, then cycle Tab and Shift+Tab inside the
+  // panel. Focusables are re-read on every keypress because the drawer's own
+  // disclosure buttons mount and unmount their child links. The backdrop
+  // button is deliberately OUT of the cycle (the list is scoped to `panelRef`,
+  // not the dialog): it is a visually blank close affordance that the close
+  // button already duplicates inside the panel.
+  useEffect(() => {
+    if (!open) return;
+    const dialogEl = dialogRef.current;
+    const panelEl = panelRef.current;
+    if (!dialogEl || !panelEl) return;
+    const getFocusable = () =>
+      Array.from(
+        panelEl.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      ).filter((el) => el.offsetParent !== null);
+    (getFocusable()[0] ?? panelEl).focus();
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+      const items = getFocusable();
+      if (items.length === 0) {
+        e.preventDefault();
+        return;
+      }
+      const currentIndex = items.indexOf(document.activeElement as HTMLElement);
+      if (e.shiftKey) {
+        if (currentIndex <= 0) {
+          e.preventDefault();
+          items[items.length - 1].focus();
+        }
+      } else if (currentIndex === -1 || currentIndex === items.length - 1) {
+        e.preventDefault();
+        items[0].focus();
+      }
+    };
+    dialogEl.addEventListener("keydown", onKeyDown);
+    return () => dialogEl.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
   return (
@@ -477,6 +541,7 @@ export function SiteHeader({
 
           <button
             type="button"
+            ref={toggleRef}
             className={`flex h-12 w-12 touch-manipulation items-center justify-center rounded-xl border-2 border-slate-200 bg-white text-slate-900 hover:bg-slate-50 hover:border-slate-300 lg:hidden ${focusRing}`}
             aria-expanded={open}
             aria-controls={open ? panelId : undefined}
@@ -490,6 +555,7 @@ export function SiteHeader({
 
       {open ? (
         <div
+          ref={dialogRef}
           className="fixed inset-0 z-50 lg:hidden"
           role="dialog"
           aria-modal="true"
@@ -503,6 +569,8 @@ export function SiteHeader({
           />
           <div
             id={panelId}
+            ref={panelRef}
+            tabIndex={-1}
             className="absolute right-0 top-0 flex h-[100dvh] w-[min(20rem,92vw)] flex-col border-l-4 border-primary-600 bg-white shadow-2xl"
             style={{
               paddingTop: "max(1rem, env(safe-area-inset-top))",
