@@ -11,9 +11,18 @@ type Heading = {
 
 type TableOfContentsProps = {
   headings: Heading[];
+  /**
+   * Mobile strip sticks under the header at `top-16`. Default `true`, the
+   * component's own pre-existing behaviour, so every existing caller emits the
+   * identical class string. Pass `false` where the host's header is a
+   * different height or already sticky and the two fight: that is a supported
+   * prop rather than the `[&_.sticky]:!static` override a port would otherwise
+   * reach for (2026-09-29).
+   */
+  stickyMobile?: boolean;
 };
 
-export function TableOfContents({ headings }: TableOfContentsProps) {
+export function TableOfContents({ headings, stickyMobile = true }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
@@ -43,7 +52,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   return (
     <nav aria-label="Table of contents">
       {/* Mobile: Sticky at top, compact */}
-      <div className="lg:hidden sticky top-16 z-30 mb-6 -mx-4 sm:-mx-6">
+      <div className={`lg:hidden ${stickyMobile ? "sticky top-16 " : ""}z-30 mb-6 -mx-4 sm:-mx-6`}>
         <div className="bg-[var(--surface)]/95 backdrop-blur-sm border-y border-[var(--border)] px-4 py-3 sm:px-6">
           <details className="group">
             <summary className={`flex items-center justify-between py-0.5 cursor-pointer list-none ${focusRing} rounded`}>

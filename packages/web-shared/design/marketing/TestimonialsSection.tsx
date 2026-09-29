@@ -53,6 +53,7 @@ export function TestimonialsSection({
   items = testimonials,
   showRating = true,
   footnote,
+  headingId,
 }: {
   eyebrow?: string;
   title?: string;
@@ -73,6 +74,10 @@ export function TestimonialsSection({
    *  quotes (for example that they are anonymised composites). Unset = nothing
    *  renders, byte-identical for every existing caller. */
   footnote?: ReactNode;
+  /** `id` on the h2, so a host can point `aria-labelledby` at it from its own
+   *  landmark. Unset = no attribute is emitted, byte-identical for every
+   *  existing caller (2026-09-29). */
+  headingId?: string;
 }) {
   return (
     <section className="relative overflow-hidden bg-slate-900 py-12 sm:py-16 lg:py-20">
@@ -80,7 +85,7 @@ export function TestimonialsSection({
       <div className={`${siteContainerLg} relative z-10`}>
         <div className="max-w-3xl mb-8 sm:mb-12">
           <Eyebrow onDark>{eyebrow}</Eyebrow>
-          <h2 className="text-2xl font-bold text-white sm:text-4xl">{title}</h2>
+          <h2 id={headingId} className="text-2xl font-bold text-white sm:text-4xl">{title}</h2>
           <p className="mt-3 sm:mt-4 text-base sm:text-lg text-slate-300">{description}</p>
         </div>
         <div className="grid gap-6 sm:gap-8 md:grid-cols-3">

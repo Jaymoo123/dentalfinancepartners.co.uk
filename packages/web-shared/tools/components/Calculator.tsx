@@ -40,6 +40,7 @@ export function Calculator({
   resultCta,
   eyebrow,
   resultWrapper = (node) => node,
+  headingLevel = 3,
 }: {
   tool: GenericTool;
   variant?: "page" | "embed";
@@ -67,6 +68,18 @@ export function Calculator({
    * the sites that pass nothing render byte-identically to before.
    */
   resultWrapper?: (node: React.ReactNode) => React.ReactNode;
+  /**
+   * Heading level for the tool name. Default 3 = the `<h3>` this component has
+   * always rendered, so every site that passes nothing is byte-identical (the
+   * classes do not change either way).
+   *
+   * Pass 2 on a template whose hero h1 is followed straight by this component:
+   * h1 to h3 with no h2 between them is a heading-order defect. As of
+   * 2026-09-29 only crypto and hospitality put an h2 before this mount, and
+   * both do it with an sr-only shim this prop retires; the other 15 calculator
+   * templates in the monorepo jump.
+   */
+  headingLevel?: 2 | 3;
 }) {
   const [values, setValues] = useState<CalcValues>(() => defaultValues(tool.fields));
   const interactedRef = useRef(false);
@@ -97,6 +110,10 @@ export function Calculator({
     }, 800);
   };
 
+  // `h3` by default, so the rendered tag and classes are unchanged for every
+  // caller that passes nothing.
+  const ToolNameHeading = headingLevel === 2 ? "h2" : "h3";
+
   const result = tool.compute(values);
   const tone = result.headline.tone ?? "default";
 
@@ -108,7 +125,7 @@ export function Calculator({
             Calculator
           </div>
         )}
-        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">{tool.name}</h3>
+        <ToolNameHeading className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">{tool.name}</ToolNameHeading>
         {/*
           `intro` is authored first-party copy committed in each site's
           lib/.../tools/*.ts, and some of it carries real anchors (a gov.uk

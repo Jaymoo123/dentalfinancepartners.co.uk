@@ -86,7 +86,29 @@ function StatValue({ stat, play }: { stat: StatItem; play: boolean }) {
   );
 }
 
-export function StatsCounter({ stats }: { stats: StatItem[] }) {
+export function StatsCounter({
+  stats,
+  tone = "light",
+  columns = 4,
+}: {
+  stats: StatItem[];
+  /**
+   * Which ground the strip is painted on. `"light"` is the slate-900 figure
+   * and slate-500 label this component has always rendered, so it is the
+   * default and every existing caller is byte-identical. `"dark"` is a white
+   * figure and a slate-300 label, for a strip inside a navy or brand band
+   * where slate-900 on dark is unreadable (2026-09-29).
+   *
+   * The `href` figure link is unaffected either way: it inherits the figure
+   * colour and carries the kit `focusRing`, whose colour a dark section should
+   * rebind through `--kit-focus-ring`.
+   */
+  tone?: "light" | "dark";
+  /** Tiles from `md`. Default 4, the fixed `md:grid-cols-4` this component
+   *  always rendered, so passing nothing is byte-identical. Mobile stays
+   *  `grid-cols-2` at every setting. */
+  columns?: 2 | 3 | 4;
+}) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [play, setPlay] = useState(false);
 
@@ -112,11 +134,15 @@ export function StatsCounter({ stats }: { stats: StatItem[] }) {
     return () => io.disconnect();
   }, []);
 
+  const mdCols = columns === 2 ? "md:grid-cols-2" : columns === 3 ? "md:grid-cols-3" : "md:grid-cols-4";
+  const figureTone = tone === "dark" ? "text-white" : "text-slate-900";
+  const labelTone = tone === "dark" ? "text-slate-300" : "text-slate-500";
+
   return (
-    <div ref={ref} className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
+    <div ref={ref} className={`grid grid-cols-2 gap-6 sm:gap-8 ${mdCols}`}>
       {stats.map((stat) => (
         <div key={stat.label} className="text-center">
-          <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 font-mono tabular-nums">
+          <div className={`text-2xl sm:text-3xl lg:text-4xl font-bold ${figureTone} font-mono tabular-nums`}>
             {stat.href ? (
               <a
                 href={stat.href}
@@ -130,7 +156,7 @@ export function StatsCounter({ stats }: { stats: StatItem[] }) {
               <StatValue stat={stat} play={play} />
             )}
           </div>
-          <div className="mt-1.5 sm:mt-2 text-xs sm:text-sm font-semibold text-slate-500 uppercase tracking-wider">
+          <div className={`mt-1.5 sm:mt-2 text-xs sm:text-sm font-semibold ${labelTone} uppercase tracking-wider`}>
             {stat.label}
           </div>
         </div>

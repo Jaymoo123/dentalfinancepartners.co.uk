@@ -24,6 +24,7 @@ export function SlimHero({
   title,
   children,
   backdrop,
+  sectionClassName = "bg-slate-900",
 }: {
   eyebrow: string;
   title: string;
@@ -31,9 +32,22 @@ export function SlimHero({
   children?: React.ReactNode;
   /** Per-site brick/texture motif slot. O.6 defines the backdrop contract; this primitive only reserves the position. */
   backdrop?: React.ReactNode;
+  /**
+   * GROUND ONLY. Replaces the single class `bg-slate-900` and nothing else:
+   * `relative overflow-hidden` (the backdrop contract above) and the
+   * `py-8 sm:py-10 lg:py-12` rhythm are structural and stay put. Default is
+   * the literal string `"bg-slate-900"`, so a caller that passes nothing emits
+   * the identical class string it emitted before this prop existed.
+   *
+   * The copy on this hero is FIXED light: `Eyebrow onDark` and a `text-white`
+   * h1. So whatever ground you pass must carry white text at 4.5:1 and the
+   * eyebrow at its own contrast. A brand 600 step usually does; a brand 300
+   * does not. Measure before you pass it; the kit cannot check it for you.
+   */
+  sectionClassName?: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-slate-900 py-8 sm:py-10 lg:py-12">
+    <section className={`relative overflow-hidden ${sectionClassName} py-8 sm:py-10 lg:py-12`}>
       {backdrop}
       <div className={`${siteContainerLg} relative z-10`}>
         <div className="max-w-3xl">

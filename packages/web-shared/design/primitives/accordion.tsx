@@ -23,6 +23,11 @@ const AccordionItem = React.forwardRef<
 ));
 AccordionItem.displayName = "AccordionItem";
 
+// Focus ring colour reads `--kit-focus-ring` with `--color-primary-600` as the
+// fallback, matching `layout-utils.ts` `focusRing` exactly (this trigger keeps
+// its own INSET offset, which is why it cannot just import the recipe). The
+// kit buttons already read the same hook. A site that has not declared
+// `--kit-focus-ring` resolves to primary-600, the old colour.
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
@@ -31,7 +36,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between gap-3 px-4 py-4 sm:px-6 sm:py-5 text-left text-sm sm:text-base font-bold text-slate-900 transition-colors hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary-600 [&[data-state=open]>svg]:rotate-180",
+        "flex flex-1 items-center justify-between gap-3 px-4 py-4 sm:px-6 sm:py-5 text-left text-sm sm:text-base font-bold text-slate-900 transition-colors hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--kit-focus-ring,var(--color-primary-600))] [&[data-state=open]>svg]:rotate-180",
         className,
       )}
       {...props}

@@ -2,7 +2,15 @@
 
 import { useState, useEffect } from "react";
 
-export function ReadingProgress() {
+/**
+ * `className` is appended LAST to the bar's own classes, so a host can move it
+ * off `top-0` (`"top-16"`) or below a sticky header's stacking context
+ * (`"z-30"`) without a local fork. Unset = the exact class string this
+ * component always rendered, so every existing caller is byte-identical
+ * (2026-09-29). The bar is `fixed`, so it paints over a `sticky top-0 z-40`
+ * kit header's top edge unless the host says otherwise.
+ */
+export function ReadingProgress({ className = "" }: { className?: string } = {}) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -25,7 +33,7 @@ export function ReadingProgress() {
 
   return (
     <div
-      className="fixed top-0 left-0 right-0 h-1 bg-[var(--border)] z-50"
+      className={`fixed top-0 left-0 right-0 h-1 bg-[var(--border)] z-50${className ? ` ${className}` : ""}`}
       role="progressbar"
       aria-valuenow={Math.round(progress)}
       aria-valuemin={0}

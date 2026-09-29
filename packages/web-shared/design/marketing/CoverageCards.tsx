@@ -1,6 +1,8 @@
+import type * as React from "react";
 import type { LucideIcon } from "lucide-react";
 import { Check } from "lucide-react";
 import { ScrollGlowGroup } from "./ScrollGlowGroup";
+import { focusRing } from "../layout-utils";
 
 export type CoverageItem = {
   title: string;
@@ -12,7 +14,21 @@ export type CoverageItem = {
    * the outcome line is the answer to "what do I get out of this one".
    */
   outcome?: string;
-  icon: LucideIcon;
+  /**
+   * Brand icon badge. Optional since 2026-09-29: a set whose subjects have no
+   * honest icon renders the card with no badge and nothing in its place, so
+   * the copy starts at the top of the card. Every existing caller passes one
+   * and is unaffected.
+   */
+  icon?: LucideIcon;
+  /**
+   * Makes the whole card a link to this destination, with the kit `focusRing`.
+   * Unset = the plain `div` every existing caller renders (2026-09-29).
+   * Internal paths only: this renders a plain `<a>`, so pass a route your host
+   * is happy to full-page navigate to, or keep the card static and link from
+   * the body copy instead.
+   */
+  href?: string;
 };
 
 /**
@@ -80,15 +96,26 @@ export function CoverageCards({
 
   return (
     <Grid className={gridClass}>
-      {items.map((item) => (
-        <div
+      {items.map((item) => {
+        // `ElementType`, not the "a" | "div" union: a union of intrinsic tags
+        // makes TS demand every prop be valid on BOTH, and `href` is not valid
+        // on a div. The `div` branch never receives `href` at runtime.
+        const Card: React.ElementType = item.href ? "a" : "div";
+        const Icon = item.icon;
+        return (
+        <Card
           key={item.title}
-          className={`flex flex-col rounded-xl p-6 transition-shadow duration-200 sm:p-8 ${surface}`}
+          href={item.href}
+          className={`flex flex-col rounded-xl p-6 transition-shadow duration-200 sm:p-8 ${surface}${
+            item.href ? ` ${focusRing}` : ""
+          }`}
         >
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-primary-600 ring-1 ring-primary-100">
-            <item.icon aria-hidden className="h-5 w-5" strokeWidth={1.75} />
-          </span>
-          <h3 className="mt-4 text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
+          {Icon ? (
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-primary-600 ring-1 ring-primary-100">
+              <Icon aria-hidden className="h-5 w-5" strokeWidth={1.75} />
+            </span>
+          ) : null}
+          <h3 className={`${Icon ? "mt-4 " : ""}text-base sm:text-lg font-bold text-slate-900`}>{item.title}</h3>
           {html ? (
             <p
               className={`mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-slate-700 ${
@@ -111,8 +138,9 @@ export function CoverageCards({
               <span>{item.outcome}</span>
             </p>
           )}
-        </div>
-      ))}
+        </Card>
+        );
+      })}
     </Grid>
   );
 }

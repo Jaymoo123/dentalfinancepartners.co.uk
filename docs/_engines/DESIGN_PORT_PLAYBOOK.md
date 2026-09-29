@@ -698,6 +698,44 @@ Before starting a site, capture and put in the prompts:
       the page is still NOT `inert`/`aria-hidden`; `aria-modal` plus the trap is the cover, and a
       port that wants `inert` needs a portal the kit does not own. Consumers: charities,
       contractors-ir35, crypto, ecommerce, generalist, startups-tech, construction-cis (wrapper).
+    - `SlimHero.sectionClassName` (added 2026-09-29, hospitality port,
+      `packages/web-shared/design/primitives/SlimHero.tsx`). Default is the literal string
+      `"bg-slate-900"` and it replaces exactly ONE class, the ground; `relative overflow-hidden`
+      (the backdrop host contract) and the `py-*` rhythm stay hardcoded, so a caller that passes
+      nothing emits the identical class string. The copy on it is FIXED light, so whatever ground
+      you pass must carry white at 4.5:1; measure it. `eyebrow` has always been a required prop.
+    - `CoverageItem.href` and optional `CoverageItem.icon` (added 2026-09-29,
+      `design/marketing/CoverageCards.tsx`). `href` renders the card as an `<a>` with the kit
+      `focusRing`; unset = the plain div, identical string. `icon` omitted = no badge span and the
+      title drops its `mt-4`, so nothing sits in the badge's place. 21 call sites, 6 sites.
+    - Kit accordion trigger FOCUS RING (2026-09-29, `design/primitives/accordion.tsx`). NOT
+      byte-identical, the one exception: the trigger pinned `focus-visible:outline-primary-600`,
+      bypassing `--kit-focus-ring`. Now `outline-[var(--kit-focus-ring,var(--color-primary-600))]`
+      with its own inset `outline-offset-[-2px]` kept. A site that has not declared the token
+      resolves to primary-600 and renders as before; only ecommerce, hospitality and
+      startups-tech declare it and therefore repaint. 4 direct imports + 44 `FaqSection` sites.
+      Property, Dentists and digital-agency keep local accordion copies and are unaffected.
+    - `StatsCounter.tone` ("light" | "dark", default light) and `StatsCounter.columns` (2 | 3 | 4,
+      default 4) (added 2026-09-29). Defaults reproduce the exact three class strings; dark =
+      white figure, slate-300 label; mobile stays `grid-cols-2`. `StatItem.href` inherits the
+      figure colour, so a dark band should rebind `--kit-focus-ring` for its ring. 22 call sites.
+    - `Calculator.headingLevel` (2 | 3, default 3) (added 2026-09-29,
+      `packages/web-shared/tools/components/Calculator.tsx`). The kit renders the tool name as an
+      h3 straight after the hero; only crypto and hospitality put an h2 before it (both with an
+      sr-only shim this prop retires). The other 15 calculator templates jump h1 to h3 and should
+      pass 2 as a one-line sweep.
+    - `ReadingProgress.className` (appended last; default empty) and `TableOfContents.stickyMobile`
+      (default true; false drops only `sticky top-16`) (added 2026-09-29, `design/blog/`). The
+      supported versions of the `top-16` offset and the `[&_.sticky]:!static` override ports were
+      writing. Not `content/TableOfContents.tsx`, which already has `stickyDesktop`.
+    - `TestimonialsSection.headingId` (added 2026-09-29). An `id` on the h2 for `aria-labelledby`;
+      default undefined emits no attribute.
+    - `PageShell.bypassWhen?: (pathname) => boolean` (added 2026-09-29, `design/chrome/PageShell.tsx`).
+      Extra chrome-free routes on top of the built-in `/embed/` prefix, which is still checked
+      first, so an unset predicate is never called. A predicate rather than a prefix list because
+      the route that asked for it (hospitality `/research/<slug>/embed`) is a SUFFIX. Safe as a
+      function prop because every consumer mounts the kit shell through its own `"use client"`
+      wrapper. 9 consumers.
     Do not add rival props for either; these are the supported hooks.
 
 ---
