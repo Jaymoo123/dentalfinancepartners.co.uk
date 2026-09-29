@@ -9,6 +9,36 @@ import {
 import { buildFaqJsonLd, buildOrganizationJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { ArrowRight, ShieldCheck, Quote } from "lucide-react";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+
+/* Kit components considered for this page and DECLINED, with the measured reason.
+ * Written here rather than left unsaid so the next reviewer does not reopen them.
+ *
+ * packages/web-shared/design/marketing/StatsCounter.tsx - DECLINED. It renders a
+ *   label plus one animated value and has no slot for a link. The key-figures band
+ *   below carries four gov.uk source links, one per figure, and adopting the
+ *   component would delete all four. It also counts up, so server HTML ships the
+ *   start frame and a crawler reads the wrong number. Same measured verdict crypto
+ *   recorded at crypto/web/src/app/page.tsx:345.
+ * packages/web-shared/design/marketing/TestimonialsSection.tsx - DECLINED. It
+ *   hardcodes Property's three landlord quotes at :8-28 and exposes no `items`
+ *   prop, so adopting it would publish landlord testimonials on a startup site.
+ * packages/web-shared/design/marketing/ComparisonTable.tsx - DECLINED. It is a
+ *   "them against us" table: every row needs a `general` string, and it emits a
+ *   "Most recommended" pill, a `generalLabel`, two captions and an "Us:" label.
+ *   The table below is a two-column Area / Our approach table with no other side
+ *   and none of that copy, so adopting it would author six new sentences.
+ * packages/web-shared/design/marketing/StickyCTA.tsx - DECLINED. Interruptive
+ *   surface, banned on this site.
+ * packages/web-shared/design/marketing/ProcessTimeline.tsx - DECLINED. Needs
+ *   staged process copy this site does not publish.
+ * packages/web-shared/design/marketing/ProblemStatement.tsx - DECLINED. Carries
+ *   Property's landlord copy with no copy props.
+ * packages/web-shared/design/primitives/FaqSection.tsx - DECLINED. The FAQ section
+ *   below and buildFaqJsonLd(faqs) read the same `faqs` array. The kit accordion
+ *   keeps closed answers out of the server HTML while the schema keeps asserting
+ *   them, which is the exact mismatch the <details> markup avoids. */
 
 export const metadata: Metadata = {
   title: { absolute: `${siteConfig.name} | Accountants for Funded and Scaling UK Startups` },
@@ -110,21 +140,21 @@ const founderMoments = [
         The{" "}
         <a
           href="https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-large-companies"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           merged scheme gives a 20% above-the-line credit
         </a>{" "}
         for accounting periods from April 2024. First-time claimants must{" "}
         <a
           href="https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           notify HMRC within 6 months of the period end
         </a>
         . A valid{" "}
         <a
           href="https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           Additional Information Form
         </a>{" "}
@@ -139,21 +169,21 @@ const founderMoments = [
       <>
         <a
           href="https://www.gov.uk/guidance/venture-capital-schemes-apply-for-advance-assurance"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           Advance assurance
         </a>{" "}
         is HMRC pre-clearance that a proposed share issue is likely to qualify. For SEIS, the company can raise{" "}
         <a
           href="https://www.gov.uk/guidance/venture-capital-schemes-apply-to-use-the-seed-enterprise-investment-scheme"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           up to £250,000 (gross assets under £350,000, fewer than 25 FTE, within 3 years of trade)
         </a>
         . For EIS, up to{" "}
         <a
           href="https://www.gov.uk/guidance/venture-capital-schemes-apply-for-the-enterprise-investment-scheme"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           £5m per year and £12m lifetime
         </a>
@@ -168,14 +198,14 @@ const founderMoments = [
       <>
         <a
           href="https://www.gov.uk/tax-employee-share-schemes/enterprise-management-incentives-emis"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           EMI allows up to £250,000 of unexercised option value per employee and £3m per company
         </a>{" "}
         (gross assets under £30m, fewer than 250 FTE). Grants must be notified to HMRC by 6 July following the tax year of grant.{" "}
         <a
           href="https://www.gov.uk/guidance/submit-your-employment-related-securities-ers-return"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           Annual ERS returns are due by 6 July
         </a>{" "}
@@ -191,14 +221,14 @@ const founderMoments = [
         Where founders or employees acquire restricted securities at a funding round, a{" "}
         <a
           href="https://www.gov.uk/hmrc-internal-manuals/employment-related-securities/ersm30450"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           section 431 joint election must be made within 14 days
         </a>{" "}
         of acquisition. Missing it is a common funded-startup trap. A{" "}
         <a
           href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg52521"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           section 135 TCGA share-for-share exchange
         </a>{" "}
@@ -214,14 +244,14 @@ const founderMoments = [
         VAT registration is mandatory once rolling 12-month taxable turnover reaches{" "}
         <a
           href="https://www.gov.uk/register-for-vat"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           £90,000
         </a>
         . For SaaS, B2B place-of-supply rules may keep overseas revenue outside the threshold.{" "}
         <a
           href="https://www.gov.uk/national-insurance-rates-letters"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           Employer NIC is 15% above a £5,000 secondary threshold
         </a>
@@ -262,7 +292,7 @@ const whySpecialist = [
       <>
         <a
           href="https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird100000"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           Qualifying R&D must seek an advance in science or technology
         </a>
@@ -292,7 +322,7 @@ const whySpecialist = [
         This site covers funded and scaling product companies. IR35 and{" "}
         <a
           href="https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           off-payroll working depth
         </a>{" "}
@@ -306,14 +336,14 @@ const whySpecialist = [
       <>
         <a
           href="https://www.gov.uk/guidance/corporation-tax-calculating-and-claiming-a-loss"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           Trading losses carry forward against future profits
         </a>
         , so banking them in annual returns has real value. Pre-trading expenditure is claimable if incurred within{" "}
         <a
           href="https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim46351"
-          className="underline underline-offset-2"
+          className={`underline underline-offset-2 ${focusRing}`}
         >
           7 years before trade starts
         </a>
@@ -384,6 +414,26 @@ const faqs: { question: string; answer: string }[] = [
   },
 ];
 
+/* The closing panel's four proof-point pairs, unchanged from the hand-rolled
+   markup they were lifted out of. `detail` was `sub`; the words are identical.
+   C3 in the claims ledger ("24-hour response / Usually the same working day") is
+   an owner-ruled row: it stays exactly where it already was. */
+const closingProofPoints = [
+  {
+    title: "Funded and scaling companies only",
+    detail: "We do not take sole traders or personal service companies",
+  },
+  { title: "24-hour response", detail: "Usually the same working day" },
+  {
+    title: "All conversations are confidential",
+    detail: "We never discuss one client's position with another",
+  },
+  {
+    title: "UK-wide (HMRC)",
+    detail: "Scottish income tax has its own bands; we flag where they change the outcome",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -400,9 +450,17 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }}
       />
 
-      {/* Hero */}
-      <section className="relative flex items-center min-h-[520px] sm:min-h-[640px] lg:min-h-[720px] overflow-hidden bg-[#1e1b4b]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1e1b4b] via-[#312e81]/70 to-[#0f0e2a]" />
+      {/* Hero.
+          R1 S2: `ground-dark` rebinds --focus-ring and --kit-focus-ring to white for
+          this subtree (globals.css). Checked before applying, as the class comment
+          requires: this section contains no light-ground card, only the two CTAs and
+          the badge, all on the composited indigo ground, so nothing inherits a white
+          ring onto a white ground. */}
+      <section className="ground-dark relative flex items-center min-h-[520px] sm:min-h-[640px] lg:min-h-[720px] overflow-hidden bg-primary-950">
+        {/* The gradient's terminal stop is darker than the ramp's bottom step
+            (primary-950) and is NOT a ramp step of its own. Kept as an arbitrary
+            value: snapping it to 950 would flatten the gradient visibly. */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900/70 to-[#0f0e2a]" />
         <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 text-xs font-bold uppercase tracking-widest text-indigo-200">
@@ -420,7 +478,7 @@ export default function HomePage() {
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link
                 href="/contact"
-                className={`inline-flex min-h-12 items-center justify-center bg-white px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-semibold text-[#1e1b4b] hover:bg-indigo-50 active:bg-indigo-100 transition-colors text-center ${focusRing}`}
+                className={`inline-flex min-h-12 items-center justify-center bg-white px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-semibold text-primary-950 hover:bg-indigo-50 active:bg-indigo-100 transition-colors text-center ${focusRing}`}
               >
                 Speak to a startup specialist
               </Link>
@@ -441,15 +499,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Key figures bar */}
-      <section className="bg-[#312e81] py-8 sm:py-10" aria-label="Key startup tax figures 2026/27">
+      {/* Key figures bar.
+          R1 S2: same `ground-dark` rebind. Checked: this band holds four figures and
+          their labels directly on the primary-900 ground and no light-ground card, so
+          no focusable child inherits a white ring onto white. */}
+      <section className="ground-dark bg-primary-900 py-8 sm:py-10" aria-label="Key startup tax figures 2026/27">
         <div className={siteContainerLg}>
           <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {keyStats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <a
                   href={stat.href}
-                  className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono hover:text-indigo-200 transition-colors"
+                  className={`text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-mono hover:text-indigo-200 transition-colors ${focusRing}`}
                 >
                   {stat.value}
                 </a>
@@ -477,7 +538,7 @@ export default function HomePage() {
       {/* Who the site helps */}
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">Who we work with</div>
+          <Eyebrow>Who we work with</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             Funded and scaling product companies. Not contractors, not agencies.
           </h2>
@@ -491,13 +552,13 @@ export default function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-[#4f46e5] hover:shadow-md ${focusRing}`}
+                className={`group block border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}
               >
-                <span className="text-base font-bold text-neutral-900 group-hover:text-[#4f46e5] transition-colors">
+                <span className="text-base font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
                   {item.title}
                 </span>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500">{item.body}</p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-400 group-hover:text-[#4f46e5] group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="mt-3 h-4 w-4 text-neutral-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
               </Link>
             ))}
           </div>
@@ -508,7 +569,7 @@ export default function HomePage() {
       <section className="border-b border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">Specialist services</div>
+            <Eyebrow>Specialist services</Eyebrow>
             <h2 className="text-2xl font-bold text-neutral-900 sm:text-4xl">
               Six service areas covering the funded startup compliance picture.
             </h2>
@@ -521,13 +582,13 @@ export default function HomePage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className={`group block border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-[#4f46e5] hover:shadow-md ${focusRing}`}
+                className={`group block border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-primary-600 hover:shadow-md ${focusRing}`}
               >
-                <h3 className="text-base font-bold text-neutral-900 group-hover:text-[#4f46e5] transition-colors">
+                <h3 className="text-base font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
                   {service.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500">{service.body}</p>
-                <div className="mt-4 flex items-center text-[#4f46e5] font-semibold text-sm">
+                <div className="mt-4 flex items-center text-primary-600 font-semibold text-sm">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -540,7 +601,7 @@ export default function HomePage() {
       {/* Founder moments */}
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">The moments that bring founders here</div>
+          <Eyebrow>The moments that bring founders here</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             Five situations where specialist knowledge changes the outcome.
           </h2>
@@ -548,13 +609,13 @@ export default function HomePage() {
             {founderMoments.map((item) => (
               <article
                 key={item.title}
-                className="border border-neutral-200 border-l-4 border-l-[#4f46e5] bg-neutral-50 p-6 sm:p-8"
+                className="border border-neutral-200 border-l-4 border-l-primary-600 bg-neutral-50 p-6 sm:p-8"
               >
                 <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-neutral-600">{item.body}</p>
                 <Link
                   href={item.href}
-                  className={`mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#4f46e5] hover:opacity-70 transition-opacity ${focusRing}`}
+                  className={`mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:opacity-70 transition-opacity ${focusRing}`}
                 >
                   Service detail <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
@@ -569,7 +630,7 @@ export default function HomePage() {
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
-              <div className="section-label mb-4">Free tools</div>
+              <Eyebrow>Free tools</Eyebrow>
               <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
                 Four calculators covering the questions founders ask most.
               </h2>
@@ -582,21 +643,21 @@ export default function HomePage() {
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    className={`group flex items-start justify-between gap-4 border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-[#4f46e5] ${focusRing}`}
+                    className={`group flex items-start justify-between gap-4 border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-primary-600 ${focusRing}`}
                   >
                     <div>
-                      <div className="text-sm font-bold text-neutral-900 group-hover:text-[#4f46e5] transition-colors">
+                      <div className="text-sm font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
                         {calc.title}
                       </div>
                       <p className="mt-1 text-xs leading-relaxed text-neutral-500">{calc.body}</p>
                     </div>
-                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-400 group-hover:text-[#4f46e5] group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
               </div>
             </div>
             <div>
-              <div className="section-label mb-4">Research asset</div>
+              <Eyebrow>Research asset</Eyebrow>
               <h2 className="mt-2 text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
                 Startup Formation and Survival Index.
               </h2>
@@ -606,7 +667,7 @@ export default function HomePage() {
                 SIC codes, from live{" "}
                 <a
                   href="https://developer.company-information.service.gov.uk/api/docs/"
-                  className="underline underline-offset-2 text-neutral-800 hover:text-[#4f46e5]"
+                  className={`underline underline-offset-2 text-neutral-800 hover:text-primary-600 ${focusRing}`}
                 >
                   Companies House Advanced Search API
                 </a>{" "}
@@ -617,10 +678,10 @@ export default function HomePage() {
               <div className="mt-6">
                 <Link
                   href="/research/startup-formation-survival-index"
-                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-primary-600 hover:text-primary-600 transition-all ${focusRing}`}
                 >
                   View the Startup Formation and Survival Index
-                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-[#4f46e5] group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-600 group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -631,7 +692,7 @@ export default function HomePage() {
       {/* Why a specialist */}
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">Why specialist matters</div>
+          <Eyebrow>Why specialist matters</Eyebrow>
           <h2 className="mt-2 max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             A generalist handles the accounts. We handle the parts where getting it wrong is expensive.
           </h2>
@@ -646,7 +707,7 @@ export default function HomePage() {
                 How {siteConfig.name} handles specialist startup tax areas
               </caption>
               <thead>
-                <tr className="bg-[#1e1b4b] text-white">
+                <tr className="bg-primary-950 text-white">
                   <th scope="col" className="px-4 py-3 font-bold text-sm uppercase tracking-wider sm:px-6 sm:py-4">
                     Area
                   </th>
@@ -677,7 +738,7 @@ export default function HomePage() {
       <section className="bg-[#fafaf9] py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-            <div className="section-label mb-4">Real outcomes</div>
+            <Eyebrow>Real outcomes</Eyebrow>
             <h2 id="testimonials-heading" className="text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
               What founders say
             </h2>
@@ -718,10 +779,10 @@ export default function HomePage() {
                   key={faq.question}
                   className="group border border-neutral-200 bg-white"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-[#4f46e5] transition-colors list-none">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-primary-600 transition-colors list-none">
                     <span>{faq.question}</span>
                     <span
-                      className="flex-shrink-0 text-[#4f46e5] transition-transform group-open:rotate-45"
+                      className="flex-shrink-0 text-primary-600 transition-transform group-open:rotate-45"
                       aria-hidden
                     >
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
@@ -739,54 +800,42 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA with LeadForm */}
-      <section className="relative overflow-hidden bg-[#1e1b4b]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#312e81]/20 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
-        <div className={`${siteContainerLg} relative z-10 py-12 sm:py-20 lg:py-24`}>
-          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div>
-              <div className="section-label mb-6">Get started</div>
-              <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
-                Talk to a startup specialist
-              </h2>
-              <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-indigo-100">
-                Tell us about your company. We will explain what you need and what the position
-                looks like, in plain English, with no obligation.
-              </p>
-              <div className="mt-8 space-y-4">
-                {[
-                  { title: "Funded and scaling companies only", sub: "We do not take sole traders or personal service companies" },
-                  { title: "24-hour response", sub: "Usually the same working day" },
-                  { title: "All conversations are confidential", sub: "We never discuss one client's position with another" },
-                  { title: "UK-wide (HMRC)", sub: "Scottish income tax has its own bands; we flag where they change the outcome" },
-                ].map((item) => (
-                  <div key={item.title} className="flex items-center gap-4 text-indigo-100">
-                    <div className="h-12 w-12 flex items-center justify-center bg-[#312e81] text-white font-bold text-xl flex-shrink-0">
-                      &#10003;
-                    </div>
-                    <div>
-                      <div className="font-bold text-white">{item.title}</div>
-                      <div className="text-sm text-indigo-300">{item.sub}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">
-                Get in touch
-              </h3>
-              <LeadForm submitLabel="Send enquiry" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* CTA, on the kit panel.
+          ADOPTED packages/web-shared/design/marketing/LeadCTAPanel.tsx. Every
+          sentence this section published survives byte for byte: the eyebrow, the
+          heading, the standfirst, the four proof-point pairs and the form heading
+          are all passed in, and the panel's own defaults for `eyebrow` and
+          `formTitle` are overridden so none of its authored copy appears. No
+          `footnote` and no `formSubtitle`, so it adds nothing.
+          `proofPoints` is populated here, unlike the five call sites in plan A11:
+          these four pairs are copy this page already publishes, so passing them
+          preserves them rather than authoring anything.
+          The panel grounds on slate-900. `backdrop` is the kit's own per-site
+          motif slot and paints the section's published indigo ground and gradient
+          back over it, so the colour does not move.
+          NOT `ground-dark`: this panel holds a white form card with focusable
+          inputs, and custom properties inherit, so the rebind would put a white
+          ring on a white ground. That is the case the class comment warns about. */}
+      <LeadCTAPanel
+        eyebrow="Get started"
+        title="Talk to a startup specialist"
+        description="Tell us about your company. We will explain what you need and what the position looks like, in plain English, with no obligation."
+        proofPoints={closingProofPoints}
+        formTitle="Get in touch"
+        form={<LeadForm submitLabel="Send enquiry" />}
+        backdrop={
+          <>
+            <div className="absolute inset-0 bg-primary-950" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-neutral-900/0 to-neutral-900/0 pointer-events-none" />
+          </>
+        }
+      />
 
       {/* Blog footer strip */}
       <section className="border-t border-neutral-200 bg-[#fafaf9] py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
-            <div className="section-label mb-4">Guides and analysis</div>
+            <Eyebrow>Guides and analysis</Eyebrow>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
               Plain English guidance for UK founders.
             </h2>
@@ -801,7 +850,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/services/seis-eis-advance-assurance"
-                className="inline-flex items-center gap-2 text-[#4f46e5] hover:opacity-70 font-semibold text-sm sm:text-base transition-opacity"
+                className="inline-flex items-center gap-2 text-primary-600 hover:opacity-70 font-semibold text-sm sm:text-base transition-opacity"
               >
                 SEIS and EIS advance assurance
                 <ArrowRight className="h-4 w-4" />

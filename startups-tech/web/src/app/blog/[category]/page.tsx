@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllPosts, getAllCategories, getCategorySlug } from "@/lib/blog";
+import { getAllPosts, getAllCategories, getCategorySlug, calculateReadTime } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { HubArticleList } from "@accounting-network/web-shared/design/blog/HubArticleList";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -34,31 +38,64 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// ADOPTION DECLINED: packages/web-shared/design/blog/BlogCategoryHub.tsx.
+// That component owns the WHOLE hub page, including intro and bullet copy
+// blocks (`heading`, `bullets`) this site does not author. Mounting it would
+// mean writing new prose for five routes, which owner ruling 1 forbids. The
+// piece of it that is genuinely reusable, the article grid, is
+// `HubArticleList`, and that is adopted directly below.
 export default async function CategoryPage({ params }: Props) {
   const { category } = await params;
   const cat = getAllCategories().find((c) => c.slug === category);
   if (!cat) notFound();
-
-  const posts = getAllPosts().filter((p) => getCategorySlug(p) === category);
+  const otherTopics = getAllCategories().filter((c) => c.slug !== category);
+  const posts = getAllPosts()
+    .filter((p) => getCategorySlug(p) === category)
+    .map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      summary: p.metaDescription,
+      readTime: calculateReadTime(p.contentHtml),
+      date: p.date,
+    }));
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
-      <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
-        <Link href="/blog" className="hover:underline">Blog</Link> / {cat.name}
-      </p>
-      <h1 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-900">{cat.name}</h1>
-      <ul className="mt-10 space-y-8">
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blog/${category}/${post.slug}`} className="group block">
-              <h2 className="text-xl font-semibold text-neutral-900 group-hover:underline">
-                {post.title}
-              </h2>
-              <p className="mt-2 text-sm text-neutral-600">{post.metaDescription}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <div className={`${siteContainerLg} py-16`}>
+      <Breadcrumb
+        siteUrl={siteConfig.url}
+        items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: cat.name }]}
+      />
+      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">{cat.name}</h1>
+
+      <div className="mt-10">
+        <Eyebrow>The library</Eyebrow>
+        {/* postsPerPage is passed EXPLICITLY and is >= the largest category
+            (Share Schemes and EMI, 12 posts), so no route paginates today.
+            The kit component does not slice: off-page cards keep their <a href>
+            in the server HTML and only carry `hidden`, so the measured link
+            floors (13/8/7/5/4) hold either way. The explicit value is here so a
+            future 13th post in one category is a visible decision rather than a
+            silent page 2. */}
+        <HubArticleList posts={posts} categorySlug={category} postsPerPage={12} />
+      </div>
+
+      {otherTopics.length > 0 ? (
+        <div className="mt-16 border-t border-neutral-200 pt-10">
+          <Eyebrow>Keep exploring</Eyebrow>
+          <div className="flex flex-wrap gap-3">
+            {otherTopics.map((topic) => (
+              <Link
+                key={topic.slug}
+                href={`/blog/${topic.slug}`}
+                className={`inline-flex min-h-12 items-center gap-2 rounded-xl ring-1 ring-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition-all hover:ring-primary-600 hover:text-primary-700 hover:shadow-md ${focusRing}`}
+              >
+                {topic.name}
+                <span className="text-xs font-semibold text-neutral-500">{topic.count}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

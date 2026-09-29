@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import { AnnualSeriesChart } from "@/components/research/TechFundingReliefsCharts";
 import {
@@ -19,7 +20,13 @@ const { meta, headline, incorporations } = snapshot;
 const { decade } = headline;
 const PRIMARY = headline.primary_sic;
 
-const BRAND = "#4f46e5";
+/**
+ * The report's own name, as the /research hub already publishes it
+ * (src/app/research/page.tsx, the matching `reports[].title`). Reused verbatim
+ * as the breadcrumb's current crumb so the trail names the page in the site's
+ * own existing words rather than in new ones.
+ */
+const CRUMB = "UK Tech Formations Index";
 const PAGE_PATH = "/research/uk-tech-formations-index";
 
 // ---------------------------------------------------------------------------
@@ -139,14 +146,41 @@ export default function TechFormationsIndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqJsonLd }} />
 
       {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1e1b4b] py-16 sm:py-20">
+      {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx in place
+          of the hand-rolled "Research" back-link. It keeps that link and that
+          word, adds the site root (already emitted by the phase-1 chrome, so the
+          route's unique internal link set does not change because of it) and
+          emits BreadcrumbList JSON-LD this route did not have. `onDark`: the
+          kit's on-dark palette measures slate-300 links 10.76:1 and slate-400
+          chevrons 6.08:1 on primary-950, past the 4.5 text and 3.0 graphic
+          floors, so this site needs no local contrast wrapper over it.
+          `ground-dark` rebinds --focus-ring to white for the band
+          (src/app/globals.css:153-155).
+
+          ADOPTION DECLINED on this page:
+          - packages/web-shared/design/primitives/NoticeCard.tsx for the key
+            findings callout: it is `text-center`, and this is a left-aligned
+            multi-item list of authored findings that owner ruling 1 freezes.
+          - packages/web-shared/design/primitives/ExampleFigureNote.tsx for the
+            source footnotes: it prepends a literal `*` and an sr-only "Note:"
+            to whatever it wraps, which changes the rendered text of every
+            source line it touches. The research family already carries `*` as
+            a live footnote marker.
+          - packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`:
+            adopting it here would need a label word above each h2 that is not
+            on the page today. It IS adopted, with no new words, on
+            /research/startup-formation-survival-index. */}
+      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <Link
-            href="/research"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
-          >
-            Research
-          </Link>
+          <Breadcrumb
+            onDark
+            siteUrl={siteConfig.url}
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research", href: "/research" },
+              { label: CRUMB },
+            ]}
+          />
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             {HEADLINE_SENTENCE}
           </h1>
@@ -175,7 +209,7 @@ export default function TechFormationsIndexPage() {
             />
           </div>
 
-          <p className="mt-6 text-xs text-white/40 max-w-2xl">
+          <p className="mt-6 text-xs text-white/70 max-w-2xl">
             Source: {meta.sources[0].name} ({meta.sources[0].publisher}). Licence: Open
             Government Licence v3.0.
           </p>
@@ -186,7 +220,7 @@ export default function TechFormationsIndexPage() {
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">Key findings</h2>
-          <div className="max-w-2xl rounded-md border-l-4 p-6 text-neutral-700 text-base leading-relaxed bg-neutral-50" style={{ borderColor: BRAND }}>
+          <div className="max-w-2xl rounded-md border-l-4 p-6 text-neutral-700 text-base leading-relaxed bg-neutral-50" style={{ borderColor: "var(--color-primary-600)" }}>
             <ul className="list-disc list-inside space-y-3">
               <li>
                 New software development companies (SIC {PRIMARY}) grew from{" "}
@@ -296,11 +330,11 @@ export default function TechFormationsIndexPage() {
                   </tr>
                 ))}
                 <tr className="border-b border-neutral-300">
-                  <td className="py-2 pr-4 font-bold" style={{ color: BRAND }}>
+                  <td className="py-2 pr-4 font-bold" style={{ color: "var(--color-primary-600)" }}>
                     All 5 codes (deduplicated)
                   </td>
                   <td className="py-2 pr-4 text-neutral-700">Unique companies across all tracked SIC codes</td>
-                  <td className="py-2 text-right font-bold" style={{ color: BRAND }}>
+                  <td className="py-2 text-right font-bold" style={{ color: "var(--color-primary-600)" }}>
                     {latestRow ? fmtNumber(Number(latestRow["union"])) : "n/a"}
                   </td>
                 </tr>
@@ -363,7 +397,7 @@ export default function TechFormationsIndexPage() {
             <ul className="not-prose mt-2 space-y-1 text-sm">
               {meta.sources.map((s) => (
                 <li key={s.name}>
-                  <a href={s.url} className="font-semibold text-[#4f46e5] hover:opacity-75" rel="nofollow">
+                  <a href={s.url} className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`} rel="nofollow">
                     {s.name}
                   </a>{" "}
                   <span className="text-neutral-500">({s.publisher})</span>
@@ -371,7 +405,7 @@ export default function TechFormationsIndexPage() {
               ))}
             </ul>
             <p className="text-sm">
-              <Link href={`${PAGE_PATH}/data`} className="font-semibold text-[#4f46e5] hover:opacity-75">
+              <Link href={`${PAGE_PATH}/data`} className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
                 Download the incorporation data (CSV)
               </Link>
             </p>
@@ -384,7 +418,9 @@ export default function TechFormationsIndexPage() {
       </section>
 
       {/* Conversion */}
-      <section className="bg-[#1e1b4b] py-12 sm:py-16">
+      {/* ground-dark: globals.css:153-155 rebinds --focus-ring to white for this
+          band. primary-600 measures 2.03 on primary-950, under the 3:1 floor. */}
+      <section className="ground-dark bg-primary-950 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Incorporating a UK tech company?
@@ -397,13 +433,13 @@ export default function TechFormationsIndexPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/for/pre-seed-founders"
-              className="inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-[#1e1b4b] hover:bg-white/90 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-950 hover:bg-white/90 transition-colors ${focusRing}`}
             >
               Pre-seed founder guide
             </Link>
             <Link
               href="/services/core-compliance"
-              className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
             >
               Core compliance
             </Link>
@@ -431,7 +467,7 @@ export default function TechFormationsIndexPage() {
                       narrower, software-focused SIC cluster. The site&apos;s{" "}
                       <Link
                         href="/research/startup-formation-survival-index"
-                        className="text-[#4f46e5] underline hover:opacity-75"
+                        className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                       >
                         UK Startup Formation and Survival Index
                       </Link>{" "}

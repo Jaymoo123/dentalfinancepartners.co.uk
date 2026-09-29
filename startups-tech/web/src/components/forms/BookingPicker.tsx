@@ -13,18 +13,34 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { upcomingWeekdays, CALL_WINDOWS } from "@/lib/leads/booking";
 
 type Status = "idle" | "submitting" | "done" | "error" | "expired";
 
-// ponytail: literal brand hex, matching layout-utils; no new token layer for two chips.
+/**
+ * FORMS CONTRACT (phase 6). Restyled only. The slot grid, the two POST targets
+ * (/api/leads/booking-viewed and /api/leads/book), the payload keys and the
+ * button labels are byte-identical to 6e02711e.
+ *
+ * The three literal brand hexes are gone: the chips read the primary ramp
+ * minted in globals.css, and the two outcome panels adopt
+ * packages/web-shared/design/primitives/NoticeCard.tsx, whose docblock names
+ * BookingPicker as one of the eight near-copies it exists to replace.
+ *
+ * The selected chip is a dark island on a light card, which is the shape that
+ * normally needs an on-brand ring. It does NOT here, and this is measured
+ * rather than assumed: every ring recipe on this site carries `outline-offset-2`,
+ * so the outline paints two pixels OUTSIDE the chip, on the CARD's light ground,
+ * where --focus-ring's light value (primary-600) measures 6.29:1. Adding a
+ * `focusRingOnBrand` escape hatch would ring it white on white. See the report.
+ */
 const chipBase =
-  "flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-md border px-1.5 sm:px-3 py-2 text-sm font-semibold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
+  `flex min-h-12 touch-manipulation flex-col items-center justify-center rounded-md border px-1.5 sm:px-3 py-2 text-sm font-semibold transition-colors duration-150 ${focusRing}`;
 const chipIdle =
-  "border-neutral-300 bg-white text-neutral-900 hover:border-[#4f46e5] hover:bg-[#eef2ff]";
-const chipSelected =
-  "border-[#4f46e5] bg-[#4f46e5] text-white";
+  "border-neutral-300 bg-white text-neutral-900 hover:border-primary-600 hover:bg-primary-50";
+const chipSelected = "border-primary-600 bg-primary-600 text-white";
 
 export default function BookingPicker({ token }: { token: string }) {
   const days = useMemo(() => upcomingWeekdays(10), []);
@@ -75,9 +91,8 @@ export default function BookingPicker({ token }: { token: string }) {
 
   if (status === "done") {
     return (
-      <div className="rounded-lg border border-[#4f46e5]/30 bg-[#eef2ff] p-6 text-center">
-        <p className="text-lg font-semibold text-neutral-900">Callback booked</p>
-        <p className="mt-2 text-base text-neutral-700">
+      <NoticeCard tone="primary" title="Callback booked">
+        <p className="text-base text-slate-700">
           {confirmedLabel ? (
             <>
               We have you down for <strong>{confirmedLabel}</strong>.
@@ -88,25 +103,25 @@ export default function BookingPicker({ token }: { token: string }) {
           A startup accountant will call you then. If your plans change, just reply to any
           of our messages.
         </p>
-        <p className="mt-3 text-sm text-neutral-600">
+        <p className="mt-3 text-sm text-slate-600">
           The call takes about 20 minutes. Your specialist will have read your enquiry before they
           ring.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "expired") {
     return (
-      <div className="rounded-lg border border-neutral-200 bg-[#f8fafc] p-6 text-center">
-        <p className="text-base text-neutral-600">
+      <NoticeCard>
+        <p className="text-base text-slate-700">
           This booking link has expired. No problem, you can still reach us through the contact
           form and we will arrange your review.
         </p>
         <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
           Go to the contact form
         </Link>
-      </div>
+      </NoticeCard>
     );
   }
 

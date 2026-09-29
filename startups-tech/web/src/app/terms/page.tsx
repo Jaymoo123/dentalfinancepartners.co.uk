@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -22,9 +23,41 @@ export const metadata: Metadata = {
   },
 };
 
+
+/**
+ * CHROME ONLY. Every sentence of the legal copy on this page is the pre-port
+ * copy, byte for byte: the owner ruling is that structure, components, classes
+ * and typography may move onto the kit and no sentence may change. The claims
+ * rows the owner left as they are on these files (P0A_CLAIMS_LEDGER F1, F2, F3,
+ * F5) are therefore untouched.
+ *
+ * The only substantive change: every inline link carried
+ * `font-medium` plus a raw hardcoded brand-hex colour utility that
+ * bypasses the primary ramp phase 1 minted, and not one of them had a focus
+ * ring. They now read the ramp (primary-700, 7.90:1 on white) and the
+ * site's --focus-ring recipe. This page paints no dark ground and carries no
+ * `.ground-dark`, so the ring resolves to the light value.
+ *
+ * ADOPTED: packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`, a
+ * structural section label whose word is lifted from this route's own h1, so no
+ * copy is authored. The page already sits on the kit's `contentNarrow` +
+ * `sectionY`.
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx (its
+ * docblock scopes it to the three token-gated post-submit pages),
+ * primitives/FaqSection.tsx (a Radix accordion with no forceMount; it would
+ * collapse legal text a reader must be able to find with ctrl-F) and
+ * marketing/LeadCTAPanel.tsx, marketing/StickyCTA.tsx,
+ * marketing/WhatToExpectCard.tsx and marketing/StatsCounter.tsx (a lead-capture
+ * surface or an interruption on a legal page, both owner-gated and both wrong
+ * here on their own terms).
+ */
+const legalLink =
+  `font-medium text-primary-700 underline underline-offset-2 rounded ${focusRing}`;
+
 export default function TermsPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Eyebrow>Terms</Eyebrow>
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Terms of use</h1>
       <p className="mt-4 text-sm text-neutral-500">Last updated: 15 July 2026</p>
       <div className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
@@ -37,7 +70,7 @@ export default function TermsPage() {
           The Site is operated by {siteConfig.company.legalName} (trading as {siteConfig.name}), a company registered in{" "}
           {siteConfig.company.placeOfRegistration} under company number {siteConfig.company.number}, with its registered
           office at {siteConfig.company.registeredOfficeLine}. You can contact us via our{" "}
-          <Link href="/contact" className="font-medium text-[#4f46e5] underline">
+          <Link href="/contact" className={legalLink}>
             contact page
           </Link>
           .
@@ -125,7 +158,7 @@ export default function TermsPage() {
         <h2 className="text-xl font-semibold text-neutral-900">13. Contact us</h2>
         <p>
           Questions about these terms? Contact us via our{" "}
-          <Link href="/contact" className="font-medium text-[#4f46e5] underline">
+          <Link href="/contact" className={legalLink}>
             contact page
           </Link>
           .

@@ -8,15 +8,25 @@
  * vice versa. Posts to /api/leads/complete with the signed profile token.
  *
  * House style: startups-tech ink/indigo tokens, no em-dashes in copy.
+ *
+ * FORMS CONTRACT (phase 6). Restyled only. Not one field is added, removed,
+ * reordered or relabelled; every `name` (`full_name`, `phone`, the `enquiry_ref`
+ * honeypot), the payload keys and the POST target /api/leads/complete are
+ * byte-identical to 6e02711e. No consent string is touched. The two outcome
+ * cards adopt packages/web-shared/design/primitives/NoticeCard.tsx, which is
+ * what the local indigo-tinted panels were near-copies of;
+ * `tone="primary"` because both are the outcome the reader wanted. The field
+ * focus border reads the ramp utility instead of the raw brand hex.
  */
 
 import { useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[#4f46e5] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
+  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-primary-600 outline-none ${focusRing}`;
 
 type MissingField = "name" | "phone";
 
@@ -110,9 +120,8 @@ export default function DetailsForm({
 
   if (status === "success") {
     return (
-      <div className="rounded-lg border border-[#4f46e5]/30 bg-[#eef2ff] p-6 text-center">
-        <p className="text-lg font-semibold text-neutral-900">Thank you, that is everything we need</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <NoticeCard tone="primary" title="Thank you, that is everything we need">
+        <p className="text-base text-slate-700">
           A specialist firm from our partner network will be in touch shortly. If you would like to
           pick a time that suits you, you can book a callback below.
         </p>
@@ -121,19 +130,18 @@ export default function DetailsForm({
             Book a callback
           </Link>
         )}
-      </div>
+      </NoticeCard>
     );
   }
 
   if (status === "partial") {
     return (
-      <div className="rounded-lg border border-[#4f46e5]/30 bg-[#eef2ff] p-6 text-center">
-        <p className="text-lg font-semibold text-neutral-900">Thank you</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <NoticeCard tone="primary" title="Thank you">
+        <p className="text-base text-slate-700">
           We have saved that. We still need {remainingLabel(remaining)}. We will pop you a quick note
           so you can add it, or you can reply to any of our messages.
         </p>
-      </div>
+      </NoticeCard>
     );
   }
 
@@ -207,7 +215,7 @@ export default function DetailsForm({
           href="/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium text-[#4f46e5] underline"
+          className={`rounded font-medium text-primary-700 underline underline-offset-2 ${focusRing}`}
         >
           Privacy Policy
         </a>

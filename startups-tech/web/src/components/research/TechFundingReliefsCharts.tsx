@@ -9,8 +9,24 @@
 import type { SVGProps } from "react";
 import { fmtGBPm, fmtNumber } from "@/lib/research/tech-funding-reliefs-index";
 
-const BRAND = "#4f46e5";
-const MUTED = "#c7d2fe";
+/**
+ * DECLARED HEX EXCEPTION, phase 5 (W5R). These two are data-bound SVG/inline
+ * `fill` values, not markup colours: a bar's fill encodes which series or which
+ * year a bar belongs to, so it has to be a value an attribute can take, not a
+ * utility class. They are therefore expressed as the RAMP TOKENS rather than as
+ * literals, so the port's one-grep guarantee still holds and a ramp change
+ * reaches them: `--color-primary-600` is `#4f46e5` (the locked brand step) and
+ * `--color-primary-200` is `#c7d2fe`, both declared in src/app/globals.css:37-47.
+ * Byte-for-byte the same two colours render as before; only the source changed.
+ *
+ * Contrast: these are GRAPHIC objects (3:1 floor, not 4.5:1). primary-600 on the
+ * white chart card measures 6.29:1. primary-200 is the DE-EMPHASISED series and
+ * measures 1.35:1, which is why no chart in this file relies on colour alone to
+ * carry a value: every number is also a text node (see the sr-only lists below
+ * and the visible right-hand value columns), which is T16's rule.
+ */
+const BRAND = "var(--color-primary-600)";
+const MUTED = "var(--color-primary-200)";
 
 // ponytail/fix (hydration #418, 2026-09-29): a nested <title> host element
 // inside these bar SVGs is treated by React 19's SSR as a hoistable <head>
@@ -47,7 +63,19 @@ export function AnnualAmountChart({
   const barW = (w - padL) / rows.length - barGap;
 
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} className="w-full" role="img" aria-label={label}>
+    <>
+      {/* T16, phase 5: the bars used to carry `role="img" aria-label=...`, which
+          collapses the whole subtree and makes every value unreachable. The bars
+          are now decorative (`aria-hidden`) and the series is published as text
+          nodes in this list. Every string below is byte-identical to the `title`
+          tooltip the matching rect already carried, so no copy is authored here
+          and no figure is restated. */}
+      <ul className="sr-only" aria-label={label}>
+        {rows.map((r) => (
+          <li key={r.year}>{`${r.year}: ${fmtGBPm(r.amountAllM)}`}</li>
+        ))}
+      </ul>
+      <svg viewBox={`0 0 ${w} ${h}`} className="w-full" aria-hidden="true">
       {rows.map((r, i) => {
         const barH = (r.amountAllM / max) * (h - padB - 8);
         const x = padL + i * (barW + barGap);
@@ -73,12 +101,25 @@ export function AnnualAmountChart({
         if (!r) return null;
         const x = padL + i * (barW + barGap) + barW / 2;
         return (
-          <text key={i} x={x} y={h - 6} fontSize={11} fill="#78716c" textAnchor="middle">
+          // fill=currentColor + text-neutral-500 replaces the literal #78716c
+          // (stone-500). At 11px the 4.5:1 text floor applies: the old stone-500
+          // measured 4.80 and neutral-500 measures 4.74 on the white chart card,
+          // so this is a source change, not a contrast change.
+          <text
+            key={i}
+            x={x}
+            y={h - 6}
+            fontSize={11}
+            fill="currentColor"
+            className="text-neutral-500"
+            textAnchor="middle"
+          >
             {r.year}
           </text>
         );
       })}
-    </svg>
+      </svg>
+    </>
   );
 }
 
@@ -107,7 +148,15 @@ export function AnnualSeriesChart({
   const barW = (w - padL) / rows.length - barGap;
 
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} className="w-full" role="img" aria-label={label}>
+    <>
+      {/* T16, as in AnnualAmountChart above: bars decorative, values as text.
+          The strings match the rects' `title` tooltips byte for byte. */}
+      <ul className="sr-only" aria-label={label}>
+        {rows.map((r) => (
+          <li key={r.year}>{`${r.year}: ${formatValue(r.value)}`}</li>
+        ))}
+      </ul>
+      <svg viewBox={`0 0 ${w} ${h}`} className="w-full" aria-hidden="true">
       {rows.map((r, i) => {
         const barH = (r.value / max) * (h - padB - 8);
         const x = padL + i * (barW + barGap);
@@ -131,12 +180,21 @@ export function AnnualSeriesChart({
         if (!r) return null;
         const x = padL + i * (barW + barGap) + barW / 2;
         return (
-          <text key={i} x={x} y={h - 6} fontSize={11} fill="#78716c" textAnchor="middle">
+          <text
+            key={i}
+            x={x}
+            y={h - 6}
+            fontSize={11}
+            fill="currentColor"
+            className="text-neutral-500"
+            textAnchor="middle"
+          >
             {r.year}
           </text>
         );
       })}
-    </svg>
+      </svg>
+    </>
   );
 }
 
@@ -268,7 +326,19 @@ export function AarPipelineChart({
   const barW = w / years.length - barGap;
 
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} className="w-full" role="img" aria-label="AAR applications received vs approved same year">
+    <>
+      {/* T16: bars decorative, both series published as text. Each string is the
+          rect's own `title` tooltip, unchanged. */}
+      <ul className="sr-only" aria-label="AAR applications received vs approved same year">
+        {years.map((y) => (
+          <li key={y.year}>
+            {`${y.year}: ${fmtNumber(y.applicationsReceived)} applications received`}
+            {", "}
+            {`${y.year}: ${fmtNumber(y.approvedSameYear)} approved same year`}
+          </li>
+        ))}
+      </ul>
+      <svg viewBox={`0 0 ${w} ${h}`} className="w-full" aria-hidden="true">
       {years.map((y, i) => {
         const recH = (y.applicationsReceived / max) * (h - padB - 8);
         const appH = (y.approvedSameYear / max) * (h - padB - 8);
@@ -301,11 +371,20 @@ export function AarPipelineChart({
         if (!y) return null;
         const x = i * (barW + barGap) + barW / 2;
         return (
-          <text key={i} x={x} y={h - 6} fontSize={11} fill="#78716c" textAnchor="middle">
+          <text
+            key={i}
+            x={x}
+            y={h - 6}
+            fontSize={11}
+            fill="currentColor"
+            className="text-neutral-500"
+            textAnchor="middle"
+          >
             {y.year}
           </text>
         );
       })}
-    </svg>
+      </svg>
+    </>
   );
 }

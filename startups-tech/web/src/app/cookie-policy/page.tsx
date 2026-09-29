@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -22,9 +23,41 @@ export const metadata: Metadata = {
   },
 };
 
+
+/**
+ * CHROME ONLY. Every sentence of the legal copy on this page is the pre-port
+ * copy, byte for byte: the owner ruling is that structure, components, classes
+ * and typography may move onto the kit and no sentence may change. The claims
+ * rows the owner left as they are on these files (P0A_CLAIMS_LEDGER F1, F2, F3,
+ * F5) are therefore untouched.
+ *
+ * The only substantive change: every inline link carried
+ * `font-medium` plus a raw hardcoded brand-hex colour utility that
+ * bypasses the primary ramp phase 1 minted, and not one of them had a focus
+ * ring. They now read the ramp (primary-700, 7.90:1 on white) and the
+ * site's --focus-ring recipe. This page paints no dark ground and carries no
+ * `.ground-dark`, so the ring resolves to the light value.
+ *
+ * ADOPTED: packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`, a
+ * structural section label whose word is lifted from this route's own h1, so no
+ * copy is authored. The page already sits on the kit's `contentNarrow` +
+ * `sectionY`.
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx (its
+ * docblock scopes it to the three token-gated post-submit pages),
+ * primitives/FaqSection.tsx (a Radix accordion with no forceMount; it would
+ * collapse legal text a reader must be able to find with ctrl-F) and
+ * marketing/LeadCTAPanel.tsx, marketing/StickyCTA.tsx,
+ * marketing/WhatToExpectCard.tsx and marketing/StatsCounter.tsx (a lead-capture
+ * surface or an interruption on a legal page, both owner-gated and both wrong
+ * here on their own terms).
+ */
+const legalLink =
+  `font-medium text-primary-700 underline underline-offset-2 rounded ${focusRing}`;
+
 export default function CookiePolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Eyebrow>Cookie</Eyebrow>
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Cookie policy</h1>
       <p className="mt-4 text-sm text-neutral-500">Last updated: 15 July 2026</p>
       <div className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
@@ -78,7 +111,7 @@ export default function CookiePolicyPage() {
               href="https://support.google.com/chrome/answer/95647"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[#4f46e5] underline"
+              className={legalLink}
             >
               Google Chrome
             </a>
@@ -88,7 +121,7 @@ export default function CookiePolicyPage() {
               href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[#4f46e5] underline"
+              className={legalLink}
             >
               Mozilla Firefox
             </a>
@@ -98,7 +131,7 @@ export default function CookiePolicyPage() {
               href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[#4f46e5] underline"
+              className={legalLink}
             >
               Safari
             </a>
@@ -108,7 +141,7 @@ export default function CookiePolicyPage() {
               href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[#4f46e5] underline"
+              className={legalLink}
             >
               Microsoft Edge
             </a>
@@ -122,7 +155,7 @@ export default function CookiePolicyPage() {
             href="https://tools.google.com/dlpage/gaoptout"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-[#4f46e5] underline"
+            className={legalLink}
           >
             Google Analytics Opt-out Browser Add-on
           </a>
@@ -137,7 +170,7 @@ export default function CookiePolicyPage() {
         <h2 className="text-xl font-semibold text-neutral-900">5. Contact us</h2>
         <p>
           If you have questions about our use of cookies, please contact us via our{" "}
-          <Link href="/contact" className="font-medium text-[#4f46e5] underline">
+          <Link href="/contact" className={legalLink}>
             contact page
           </Link>
           .

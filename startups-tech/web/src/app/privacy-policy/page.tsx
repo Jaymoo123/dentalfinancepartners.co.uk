@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
+import { contentNarrow, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
 
 const company = siteConfig.company;
@@ -24,9 +25,41 @@ export const metadata: Metadata = {
   },
 };
 
+
+/**
+ * CHROME ONLY. Every sentence of the legal copy on this page is the pre-port
+ * copy, byte for byte: the owner ruling is that structure, components, classes
+ * and typography may move onto the kit and no sentence may change. The claims
+ * rows the owner left as they are on these files (P0A_CLAIMS_LEDGER F1, F2, F3,
+ * F5) are therefore untouched.
+ *
+ * The only substantive change: every inline link carried
+ * `font-medium` plus a raw hardcoded brand-hex colour utility that
+ * bypasses the primary ramp phase 1 minted, and not one of them had a focus
+ * ring. They now read the ramp (primary-700, 7.90:1 on white) and the
+ * site's --focus-ring recipe. This page paints no dark ground and carries no
+ * `.ground-dark`, so the ring resolves to the light value.
+ *
+ * ADOPTED: packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`, a
+ * structural section label whose word is lifted from this route's own h1, so no
+ * copy is authored. The page already sits on the kit's `contentNarrow` +
+ * `sectionY`.
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx (its
+ * docblock scopes it to the three token-gated post-submit pages),
+ * primitives/FaqSection.tsx (a Radix accordion with no forceMount; it would
+ * collapse legal text a reader must be able to find with ctrl-F) and
+ * marketing/LeadCTAPanel.tsx, marketing/StickyCTA.tsx,
+ * marketing/WhatToExpectCard.tsx and marketing/StatsCounter.tsx (a lead-capture
+ * surface or an interruption on a legal page, both owner-gated and both wrong
+ * here on their own terms).
+ */
+const legalLink =
+  `font-medium text-primary-700 underline underline-offset-2 rounded ${focusRing}`;
+
 export default function PrivacyPolicyPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
+      <Eyebrow>Privacy</Eyebrow>
       <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Privacy policy</h1>
       <p className="mt-4 text-sm text-neutral-500">Last updated: 10 August 2026</p>
       <div className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
@@ -51,7 +84,7 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           If you have any questions about this policy or wish to exercise your rights, please contact us through our{" "}
-          <Link href="/contact" className="font-medium text-[#4f46e5] underline">contact page</Link>.
+          <Link href="/contact" className={legalLink}>contact page</Link>.
         </p>
 
         <h2 className="text-xl font-semibold text-neutral-900">2. What information we collect</h2>
@@ -75,7 +108,7 @@ export default function PrivacyPolicyPage() {
             <strong>Analytics and technical data:</strong> information about how you use the Site (such as pages viewed,
             device and browser type, and an approximate country derived from your IP address). Our hosting provider may
             also log technical request data for security and performance. See our{" "}
-            <Link href="/cookie-policy" className="font-medium text-[#4f46e5] underline">cookie policy</Link> for detail.
+            <Link href="/cookie-policy" className={legalLink}>cookie policy</Link> for detail.
           </li>
         </ul>
         <p>
@@ -198,7 +231,7 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           To exercise any of these rights, please contact us through our{" "}
-          <Link href="/contact" className="font-medium text-[#4f46e5] underline">contact page</Link>. We will respond
+          <Link href="/contact" className={legalLink}>contact page</Link>. We will respond
           within one month.
         </p>
         <p>
@@ -208,7 +241,7 @@ export default function PrivacyPolicyPage() {
             href="https://ico.org.uk/make-a-complaint/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-[#4f46e5] underline"
+            className={legalLink}
           >
             ico.org.uk/make-a-complaint
           </a>
@@ -219,7 +252,7 @@ export default function PrivacyPolicyPage() {
         <p>
           We use cookies and similar technologies for analytics, so we can understand how the Site is used and improve it.
           For full details of what we use and how to manage or opt out, please see our{" "}
-          <Link href="/cookie-policy" className="font-medium text-[#4f46e5] underline">cookie policy</Link>.
+          <Link href="/cookie-policy" className={legalLink}>cookie policy</Link>.
         </p>
 
         <h2 className="text-xl font-semibold text-neutral-900">9. How we protect your data and international transfers</h2>
@@ -239,7 +272,7 @@ export default function PrivacyPolicyPage() {
         <h2 className="text-xl font-semibold text-neutral-900">11. Contact us</h2>
         <p>
           If you have any questions about this privacy policy or how we handle your data, please contact us through our{" "}
-          <Link href="/contact" className="font-medium text-[#4f46e5] underline">contact page</Link>.
+          <Link href="/contact" className={legalLink}>contact page</Link>.
         </p>
       </div>
     </div>

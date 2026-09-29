@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd, buildFaqJsonLd } from "@/lib/schema";
 import {
   AnnualSeriesChart,
@@ -21,7 +22,13 @@ import data from "@/data/rd-tax-relief-index.json";
 const snapshot = data as unknown as RdTaxReliefIndexSnapshot;
 const { meta, claimsSeries, headline, sector, region } = snapshot;
 
-const BRAND = "#4f46e5";
+/**
+ * The report's own name, as the /research hub already publishes it
+ * (src/app/research/page.tsx, the matching `reports[].title`). Reused verbatim
+ * as the breadcrumb's current crumb so the trail names the page in the site's
+ * own existing words rather than in new ones.
+ */
+const CRUMB = "R&D Tax Relief Usage Index: the post-clampdown squeeze on tech";
 const PAGE_PATH = "/research/rd-tax-relief-index";
 
 export const metadata: Metadata = {
@@ -106,14 +113,41 @@ export default function RdTaxReliefIndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqJsonLd }} />
 
       {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1e1b4b] py-16 sm:py-20">
+      {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx in place
+          of the hand-rolled "Research" back-link. It keeps that link and that
+          word, adds the site root (already emitted by the phase-1 chrome, so the
+          route's unique internal link set does not change because of it) and
+          emits BreadcrumbList JSON-LD this route did not have. `onDark`: the
+          kit's on-dark palette measures slate-300 links 10.76:1 and slate-400
+          chevrons 6.08:1 on primary-950, past the 4.5 text and 3.0 graphic
+          floors, so this site needs no local contrast wrapper over it.
+          `ground-dark` rebinds --focus-ring to white for the band
+          (src/app/globals.css:153-155).
+
+          ADOPTION DECLINED on this page:
+          - packages/web-shared/design/primitives/NoticeCard.tsx for the key
+            findings callout: it is `text-center`, and this is a left-aligned
+            multi-item list of authored findings that owner ruling 1 freezes.
+          - packages/web-shared/design/primitives/ExampleFigureNote.tsx for the
+            source footnotes: it prepends a literal `*` and an sr-only "Note:"
+            to whatever it wraps, which changes the rendered text of every
+            source line it touches. The research family already carries `*` as
+            a live footnote marker.
+          - packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`:
+            adopting it here would need a label word above each h2 that is not
+            on the page today. It IS adopted, with no new words, on
+            /research/startup-formation-survival-index. */}
+      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <Link
-            href="/research"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
-          >
-            Research
-          </Link>
+          <Breadcrumb
+            onDark
+            siteUrl={siteConfig.url}
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research", href: "/research" },
+              { label: CRUMB },
+            ]}
+          />
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             R&amp;D Tax Relief Usage Index: the post-clampdown squeeze on tech
           </h1>
@@ -124,7 +158,7 @@ export default function RdTaxReliefIndexPage() {
             volume. Sourced from{" "}
             <a
               href={meta.sources.hmrc_rd_stats.url}
-              className="underline hover:text-white"
+              className={`underline hover:text-white ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -148,7 +182,7 @@ export default function RdTaxReliefIndexPage() {
             />
           </div>
 
-          <p className="mt-6 text-xs text-white/40 max-w-2xl">
+          <p className="mt-6 text-xs text-white/70 max-w-2xl">
             Source: {meta.sources.hmrc_rd_stats.name} ({meta.sources.hmrc_rd_stats.publisher}).
             Licence: Open Government Licence v3.0.
           </p>
@@ -159,7 +193,7 @@ export default function RdTaxReliefIndexPage() {
       <section className="bg-white py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">Key findings</h2>
-          <div className="max-w-2xl rounded-md border-l-4 p-6 text-neutral-700 text-base leading-relaxed bg-neutral-50" style={{ borderColor: BRAND }}>
+          <div className="max-w-2xl rounded-md border-l-4 p-6 text-neutral-700 text-base leading-relaxed bg-neutral-50" style={{ borderColor: "var(--color-primary-600)" }}>
             <ul className="list-disc list-inside space-y-3">
               <li>
                 Total R&amp;D tax credit claims fell to {fmtNumber(headline.totalClaims)} in{" "}
@@ -313,7 +347,7 @@ export default function RdTaxReliefIndexPage() {
               <p>
                 <a
                   href={meta.sources.hmrc_rd_stats.url}
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -330,7 +364,7 @@ export default function RdTaxReliefIndexPage() {
               </blockquote>
             </div>
             <p className="text-sm">
-              <Link href={`${PAGE_PATH}/data`} className="font-semibold text-[#4f46e5] hover:opacity-75">
+              <Link href={`${PAGE_PATH}/data`} className={`font-semibold text-primary-600 hover:opacity-75 ${focusRing}`}>
                 Download the full dataset (CSV)
               </Link>
             </p>
@@ -340,7 +374,9 @@ export default function RdTaxReliefIndexPage() {
       </section>
 
       {/* Conversion */}
-      <section className="bg-[#1e1b4b] py-12 sm:py-16">
+      {/* ground-dark: globals.css:153-155 rebinds --focus-ring to white for this
+          band. primary-600 measures 2.03 on primary-950, under the 3:1 floor. */}
+      <section className="ground-dark bg-primary-950 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Making an R&amp;D claim in this environment?
@@ -354,13 +390,13 @@ export default function RdTaxReliefIndexPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/services/rd-tax-claims"
-              className="inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-[#1e1b4b] hover:bg-white/90 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-950 hover:bg-white/90 transition-colors ${focusRing}`}
             >
               R&amp;D tax claims service
             </Link>
             <Link
               href="/calculators/rd-relief-estimator"
-              className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
             >
               R&amp;D relief estimator
             </Link>

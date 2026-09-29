@@ -3,13 +3,23 @@
 import { useEffect, useState } from "react";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { site } from "@/lib/calculators/site";
+import { focusRing, btnPrimary } from "@/components/ui/layout-utils";
 
 type Status = "idle" | "loading" | "success" | "error";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+/*
+ * The ring is `focusRing` from src/components/ui/layout-utils.ts, not a
+ * retyped copy of its four utilities. Same value, one source: the phase-1
+ * decline note on that export is what makes --focus-ring the site's only ring
+ * token, and a hand-written duplicate here would silently survive a change to
+ * it. `outline-none` stays: it kills the UA outline that the focus-visible
+ * outline replaces, and it is not a ring removal.
+ * slate-600 placeholder is 5.90 on white and slate-900 input text is 17.85.
+ */
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation border border-[var(--border)] bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-[var(--muted)] shadow-sm focus:border-[var(--brand-primary)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] focus:ring-2 focus:ring-[var(--brand-primary)]/25 transition-colors";
+  `mt-1 w-full min-h-12 touch-manipulation border border-slate-200 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-600 shadow-sm focus:border-primary-600 outline-none ${focusRing} focus:ring-2 focus:ring-primary-600/25 transition-colors`;
 
 export function MiniCapture({
   formId,
@@ -18,7 +28,7 @@ export function MiniCapture({
   blurb,
   submitLabel = "Request a callback",
   successText = "Thanks. We'll be in touch within one working day.",
-  className = "my-8 rounded-2xl border-l-4 border-[var(--brand-primary)] bg-[var(--surface)] p-6 sm:p-8",
+  className = "my-8 rounded-2xl border-l-4 border-primary-600 bg-slate-50 p-6 sm:p-8",
 }: {
   formId: string;
   messagePrefix: string;
@@ -95,40 +105,40 @@ export function MiniCapture({
 
   return (
     <section className={className} aria-labelledby={`${formId}-heading`}>
-      <h3 id={`${formId}-heading`} className="text-xl font-bold text-[var(--ink)] sm:text-2xl">
+      <h3 id={`${formId}-heading`} className="text-xl font-bold text-slate-900 sm:text-2xl">
         {heading}
       </h3>
-      <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">{blurb}</p>
+      <p className="mt-2 text-sm leading-relaxed text-slate-700">{blurb}</p>
 
       {status === "success" ? (
-        <div role="status" className="mt-5 rounded-lg border-2 border-[var(--brand-primary)]/30 bg-white p-4">
-          <p className="text-sm font-semibold text-[var(--brand-primary)]">{successText}</p>
+        <div role="status" className="mt-5 rounded-lg border-2 border-primary-600/30 bg-white p-4">
+          <p className="text-sm font-semibold text-primary-700">{successText}</p>
         </div>
       ) : (
         <form onSubmit={onSubmit} className="mt-5 grid gap-4 sm:grid-cols-2" noValidate>
           <div>
-            <label htmlFor={`${formId}-name`} className="block text-sm font-medium text-[var(--ink)]">
+            <label htmlFor={`${formId}-name`} className="block text-sm font-medium text-slate-900">
               Your name
             </label>
             <input id={`${formId}-name`} name="full_name" type="text" autoComplete="name" className={inputClass} />
-            {fieldErrors.full_name && <p className="mt-1 text-xs text-red-600">{fieldErrors.full_name}</p>}
+            {fieldErrors.full_name && <p className="mt-1 text-xs text-red-700">{fieldErrors.full_name}</p>}
           </div>
           <div>
-            <label htmlFor={`${formId}-phone`} className="block text-sm font-medium text-[var(--ink)]">
+            <label htmlFor={`${formId}-phone`} className="block text-sm font-medium text-slate-900">
               Phone
             </label>
             <input id={`${formId}-phone`} name="phone" type="tel" autoComplete="tel" className={inputClass} />
-            {fieldErrors.phone && <p className="mt-1 text-xs text-red-600">{fieldErrors.phone}</p>}
+            {fieldErrors.phone && <p className="mt-1 text-xs text-red-700">{fieldErrors.phone}</p>}
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor={`${formId}-email`} className="block text-sm font-medium text-[var(--ink)]">
+            <label htmlFor={`${formId}-email`} className="block text-sm font-medium text-slate-900">
               Email
             </label>
             <input id={`${formId}-email`} name="email" type="email" autoComplete="email" className={inputClass} />
-            {fieldErrors.email && <p className="mt-1 text-xs text-red-600">{fieldErrors.email}</p>}
+            {fieldErrors.email && <p className="mt-1 text-xs text-red-700">{fieldErrors.email}</p>}
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor={`${formId}-message`} className="block text-sm font-medium text-[var(--ink)]">
+            <label htmlFor={`${formId}-message`} className="block text-sm font-medium text-slate-900">
               About your business
             </label>
             <textarea
@@ -138,7 +148,7 @@ export function MiniCapture({
               className={inputClass}
               placeholder="e.g. pub with 12 staff, need help with tronc setup and food VAT"
             />
-            {fieldErrors.message && <p className="mt-1 text-xs text-red-600">{fieldErrors.message}</p>}
+            {fieldErrors.message && <p className="mt-1 text-xs text-red-700">{fieldErrors.message}</p>}
           </div>
 
           {/* Honeypot: non-semantic name, visually hidden, ignored by humans. */}
@@ -158,9 +168,9 @@ export function MiniCapture({
           {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
               the enquiry is the affirmative act, so this is shown as a notice, not a
               tick-box. */}
-          <p className="sm:col-span-2 text-xs leading-relaxed text-[var(--muted)]">
+          <p className="sm:col-span-2 text-xs leading-relaxed text-slate-600">
             {site.leadConsentText} See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className={`font-medium underline ${focusRing}`}>
               Privacy Policy
             </a>
             .
@@ -170,12 +180,19 @@ export function MiniCapture({
             <button
               type="submit"
               disabled={status === "loading"}
-              className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[var(--brand-primary)] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
+              /* ADOPTED: `btnPrimary` from src/components/ui/layout-utils.ts,
+                 which grounds on --btn-ground (primary-700, white label 7.90)
+                 and carries the site's --focus-ring recipe. The old local
+                 recipe grounded on primary-600 and signalled hover with
+                 opacity, which drags the label's contrast down rather than
+                 changing the ground. min-w-[10rem] comes with it and is
+                 harmless on both submit labels. */
+              className={btnPrimary}
             >
               {status === "loading" ? "Sending..." : submitLabel}
             </button>
             {status === "error" && errorMessage && (
-              <p className="mt-2 text-sm text-red-600" role="alert">
+              <p className="mt-2 text-sm text-red-700" role="alert">
                 {errorMessage}
               </p>
             )}

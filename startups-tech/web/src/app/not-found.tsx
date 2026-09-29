@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { btnPrimary, sectionY, siteContainerLg } from "@/components/ui/layout-utils";
 
+/**
+ * CHROME ONLY. Both sentences are the pre-port copy, byte for byte. `btnPrimary`
+ * is the local recipe from src/components/ui/layout-utils.ts, which already
+ * carries the --focus-ring recipe, so nothing here hand-rolls a ring.
+ *
+ * ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx (its
+ * docblock scopes it to the three token-gated post-submit pages) and
+ * packages/web-shared/design/marketing/LeadCTAPanel.tsx and
+ * marketing/StickyCTA.tsx (a new lead-capture surface and an interruption, both
+ * owner-gated, and a 404 is the wrong place for either).
+ */
 export default function NotFound() {
   return (
     <div className={`${siteContainerLg} ${sectionY} text-center`}>

@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { niche } from "@/config/niche-loader";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { submitSiteLead } from "@/lib/leads/submit-client";
 import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
@@ -10,12 +11,27 @@ import { track } from "@accounting-network/web-shared/analytics/track";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
 
+/**
+ * FORMS CONTRACT (phase 6). Restyled only: fields, labels, spacing, buttons and
+ * the ring. Not one field is added, removed, reordered or relabelled; FORM_ID,
+ * every `name`, every `data-form-id`, `submitLabel`, `redirectOnSuccess` and the
+ * submit target are byte-identical to 6e02711e, because the lead pipeline and
+ * the analytics views key on them. The consent paragraph is
+ * `siteConfig.leadConsentText` and is not touched (T19: a 2026-08-24 change to
+ * it cut mini-form leads from ~10/wk to 3.9/wk and was reverted).
+ *
+ * What changed: the fields' `focus:border` and the submit button both read raw
+ * `var(--brand-primary)`, which is the 600 step. The locked decision puts
+ * BUTTONS on the 700 step through --btn-ground, which is exactly what the local
+ * `btnPrimary` recipe carries, so the button adopts it (and gains the ring it
+ * had none of) and the field border reads the ramp utility instead of the raw
+ * token. The two links in this form gain `focusRing`.
+ */
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)]";
+  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-primary-600 outline-none ${focusRing}`;
 const labelClass = "block text-sm font-medium text-neutral-900";
 const errorClass = "mt-2 text-xs text-red-600";
-const btnClass =
-  "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[var(--brand-primary)] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50";
+const btnClass = `${btnPrimary} w-full`;
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -394,7 +410,12 @@ export function LeadForm({
               tick-box. */}
           <p className="text-xs leading-relaxed text-neutral-600">
             {siteConfig.leadConsentText} See our{" "}
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+            <a
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`font-medium text-primary-700 underline underline-offset-2 rounded ${focusRing}`}
+            >
               Privacy Policy
             </a>
             .
@@ -429,7 +450,7 @@ export function LeadForm({
             <button
               type="button"
               onClick={() => setStep(0)}
-              className="text-sm font-medium text-neutral-500 underline"
+              className={`rounded text-sm font-medium text-neutral-600 underline underline-offset-2 ${focusRing}`}
             >
               Back
             </button>

@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { siteConfig } from "@/config/site";
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import data from "@/data/startup-formation-survival-index.json";
+
+/**
+ * The report's own name, as the /research hub already publishes it
+ * (src/app/research/page.tsx, `reports[4].title`). Reused verbatim as the
+ * breadcrumb's current crumb so the trail names the page in the site's own
+ * existing words rather than in new ones.
+ */
+const CRUMB = "UK Startup Formation & Survival Index";
 
 export const metadata: Metadata = {
   title: "UK Startup Formation & Survival Index 2026",
@@ -13,8 +23,6 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.url}/research/startup-formation-survival-index`,
   },
 };
-
-const BRAND = "#4f46e5";
 
 // Pulls the combined totals from JSON. Zero hardcoding of figures in JSX
 const combined = data.combinedTechSector;
@@ -80,14 +88,25 @@ export default function StartupFormationSurvivalIndexPage() {
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: datasetJsonLd }} />
       {/* Hero */}
-      <section className="border-b border-neutral-200 bg-[#1e1b4b] py-16 sm:py-20">
+      {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx in place
+          of the hand-rolled "Research" back-link. It keeps that link and that
+          word, adds the site root (already in the chrome, so the route's unique
+          internal link set is unchanged by it) and emits BreadcrumbList JSON-LD
+          this route did not have. `onDark`: slate-300 links measure 10.76:1 and
+          slate-400 chevrons 6.08:1 on primary-950, both past floor.
+          `ground-dark` rebinds --focus-ring to white for the band
+          (src/app/globals.css:153-155). */}
+      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <Link
-            href="/research"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
-          >
-            Research
-          </Link>
+          <Breadcrumb
+            onDark
+            siteUrl={siteConfig.url}
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research", href: "/research" },
+              { label: CRUMB },
+            ]}
+          />
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             UK Startup Formation &amp; Survival Index
           </h1>
@@ -96,7 +115,7 @@ export default function StartupFormationSurvivalIndexPage() {
             status, derived from the{" "}
             <a
               href="https://developer.company-information.service.gov.uk/api/docs/"
-              className="underline hover:text-white"
+              className={`underline hover:text-white ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -144,12 +163,12 @@ export default function StartupFormationSurvivalIndexPage() {
             </div>
           </div>
 
-          <p className="mt-6 text-xs text-white/40 max-w-2xl">
+          <p className="mt-6 text-xs text-white/70 max-w-2xl">
             SIC codes covered: 62011, 62012, 62020, 62090, 63110, 63120,
             58210, 58290. Source:{" "}
             <a
               href="https://developer.company-information.service.gov.uk/api/docs/"
-              className="underline hover:text-white/60"
+              className={`underline hover:text-white/60 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -166,7 +185,7 @@ export default function StartupFormationSurvivalIndexPage() {
           <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
             What this index measures
           </h2>
-          <div className="max-w-2xl rounded-md border-l-4 border-[#4f46e5] bg-neutral-50 p-6 text-neutral-700 text-base leading-relaxed">
+          <div className="max-w-2xl rounded-md border-l-4 border-primary-600 bg-neutral-50 p-6 text-neutral-700 text-base leading-relaxed">
             As at {data.meta.pullDate}, {combined.activeCompanies.label} UK
             companies registered under tech and software SIC codes are currently
             active on the Companies House register, out of{" "}
@@ -185,7 +204,7 @@ export default function StartupFormationSurvivalIndexPage() {
               data is a live snapshot from{" "}
               <a
                 href="https://developer.company-information.service.gov.uk/api/docs/"
-                className="text-[#4f46e5] underline hover:opacity-75"
+                className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -199,7 +218,7 @@ export default function StartupFormationSurvivalIndexPage() {
               to paywalled startup data providers. Every figure is derived from
               the same public Companies House data you can query yourself, and
               the pull script is{" "}
-              <a href="#methodology" className="text-[#4f46e5] underline hover:opacity-75">
+              <a href="#methodology" className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}>
                 documented and re-runnable
               </a>
               .
@@ -219,7 +238,7 @@ export default function StartupFormationSurvivalIndexPage() {
             in each calendar year, regardless of current status. Source:{" "}
             <a
               href="https://developer.company-information.service.gov.uk/api/docs/"
-              className="text-[#4f46e5] underline hover:opacity-75"
+              className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -258,7 +277,7 @@ export default function StartupFormationSurvivalIndexPage() {
                       <td className="py-3 pr-8 text-neutral-700 font-mono">
                         {row.year}
                         {isLatest && (
-                          <span className="ml-2 text-xs text-[#4f46e5] font-semibold">
+                          <span className="ml-2 text-xs text-primary-600 font-semibold">
                             latest full year
                           </span>
                         )}
@@ -266,7 +285,7 @@ export default function StartupFormationSurvivalIndexPage() {
                       <td className="py-3 text-right text-neutral-900 font-mono">
                         {fmt(row.formations)}
                       </td>
-                      <td className="py-3 pl-8 text-right text-neutral-500 font-mono text-xs">
+                      <td className="py-3 pl-8 text-right text-neutral-600 font-mono text-xs">
                         {pct !== null
                           ? `${parseFloat(pct) >= 0 ? "+" : ""}${pct}%`
                           : "n/a"}
@@ -334,10 +353,10 @@ export default function StartupFormationSurvivalIndexPage() {
                       <td className="py-2 pr-4 text-neutral-700 font-mono text-xs whitespace-nowrap">
                         {row.quarter}
                         {isAnomaly && (
-                          <span className="ml-1 text-amber-600">*</span>
+                          <span className="ml-1 text-amber-700">*</span>
                         )}
                         {isQ4Surge && (
-                          <span className="ml-1 text-amber-600">†</span>
+                          <span className="ml-1 text-amber-700">†</span>
                         )}
                       </td>
                       <td className="py-2 pr-4 text-right text-neutral-900 font-mono text-xs">
@@ -377,13 +396,34 @@ export default function StartupFormationSurvivalIndexPage() {
             House deduplicates companies that list multiple SIC codes.
           </p>
 
-          {/* Group summary */}
+          {/* ADOPTED: `Eyebrow` from
+              packages/web-shared/design/primitives/page-blocks.tsx on the three
+              group labels below. They were hand-rolled eyebrows in all but name
+              (12px semibold uppercase tracking-wider neutral-500). Same words,
+              no words added or dropped; the kit sets them at 11px sm:12px
+              slate-600, which measures 7.58:1 on the white card against the
+              neutral-500 they replace at 4.74:1, and adds the brand rule that
+              every other eyebrow on this site now carries.
+
+              ADOPTION DECLINED on the callouts and footnotes in this file:
+              - packages/web-shared/design/primitives/NoticeCard.tsx. It is
+                `text-center` and its only tones are `slate` and `primary`. The
+                two callouts here are left-aligned multi-sentence warnings (the
+                2020-Q2 strike-off anomaly, and the "read this carefully before
+                citing the 44% figure" framing note) and both are amber on
+                purpose, which is a meaning the component cannot carry. Centring
+                either would also reflow authored prose the owner ruling freezes.
+              - packages/web-shared/design/primitives/ExampleFigureNote.tsx. It
+                prepends a literal `*` to whatever it wraps. This page already
+                uses `*` and a dagger as live footnote markers on the quarterly
+                table, so the component would publish a second, colliding marker
+                and change the rendered text of every source line. */}
           <div className="grid gap-6 sm:grid-cols-3 mb-8">
             <div className="bg-white border border-neutral-200 p-6">
-              <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-3">
+              <Eyebrow>
                 SIC 62xxx · Software &amp; IT services
-              </div>
-              <div className="text-3xl font-bold font-mono text-[#4f46e5]">
+              </Eyebrow>
+              <div className="text-3xl font-bold font-mono text-primary-600">
                 {fmt(group62Active)}
               </div>
               <div className="text-sm text-neutral-500 mt-1">active</div>
@@ -392,10 +432,10 @@ export default function StartupFormationSurvivalIndexPage() {
               </div>
             </div>
             <div className="bg-white border border-neutral-200 p-6">
-              <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-3">
+              <Eyebrow>
                 SIC 63xxx · Data processing &amp; web portals
-              </div>
-              <div className="text-3xl font-bold font-mono text-[#4f46e5]">
+              </Eyebrow>
+              <div className="text-3xl font-bold font-mono text-primary-600">
                 {fmt(group63Active)}
               </div>
               <div className="text-sm text-neutral-500 mt-1">active</div>
@@ -404,10 +444,10 @@ export default function StartupFormationSurvivalIndexPage() {
               </div>
             </div>
             <div className="bg-white border border-neutral-200 p-6">
-              <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-3">
+              <Eyebrow>
                 SIC 58xxx · Software publishing
-              </div>
-              <div className="text-3xl font-bold font-mono text-[#4f46e5]">
+              </Eyebrow>
+              <div className="text-3xl font-bold font-mono text-primary-600">
                 {fmt(group58Active)}
               </div>
               <div className="text-sm text-neutral-500 mt-1">active</div>
@@ -474,7 +514,7 @@ export default function StartupFormationSurvivalIndexPage() {
             Source:{" "}
             <a
               href="https://resources.companieshouse.gov.uk/sic/"
-              className="underline"
+              className={`underline ${focusRing}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -507,10 +547,7 @@ export default function StartupFormationSurvivalIndexPage() {
 
           <div className="grid gap-6 sm:grid-cols-3">
             <div className="bg-neutral-50 border border-neutral-200 p-6">
-              <div
-                className="text-4xl font-bold font-mono"
-                style={{ color: BRAND }}
-              >
+              <div className="text-4xl font-bold font-mono text-primary-600">
                 {combined.snapshotSurvivalRate.label}
               </div>
               <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
@@ -522,10 +559,7 @@ export default function StartupFormationSurvivalIndexPage() {
               </p>
             </div>
             <div className="bg-neutral-50 border border-neutral-200 p-6">
-              <div
-                className="text-4xl font-bold font-mono"
-                style={{ color: BRAND }}
-              >
+              <div className="text-4xl font-bold font-mono text-primary-600">
                 {combined.activeCompanies.label}
               </div>
               <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
@@ -604,7 +638,7 @@ export default function StartupFormationSurvivalIndexPage() {
           <p className="mt-4 max-w-2xl text-neutral-500 text-xs">
             If you are a researcher or journalist who wants to run the cohort
             survival analysis on the archived data, see the{" "}
-            <a href="#methodology" className="text-[#4f46e5] underline hover:opacity-75">
+            <a href="#methodology" className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}>
               methodology
             </a>{" "}
             section for the re-run instructions and data licence.
@@ -627,7 +661,7 @@ export default function StartupFormationSurvivalIndexPage() {
                 All figures are live hit-counts from the{" "}
                 <a
                   href="https://developer.company-information.service.gov.uk/api/docs/"
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -637,7 +671,7 @@ export default function StartupFormationSurvivalIndexPage() {
                 third-party data sources are used. SIC code definitions from the{" "}
                 <a
                   href="https://resources.companieshouse.gov.uk/sic/"
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -673,14 +707,14 @@ export default function StartupFormationSurvivalIndexPage() {
                 still trading after 1 to 5 years), see the{" "}
                 <Link
                   href="/research/tech-startup-survival-index"
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                 >
                   UK Tech Startup Survival Curves
                 </Link>
                 . For the monthly software-company formation trend and seasonality, see the{" "}
                 <Link
                   href="/research/uk-tech-formations-index"
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                 >
                   UK Tech Formations Index
                 </Link>
@@ -791,7 +825,7 @@ export default function StartupFormationSurvivalIndexPage() {
                 (free, from{" "}
                 <a
                   href="https://developer.company-information.service.gov.uk/"
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -817,7 +851,7 @@ export default function StartupFormationSurvivalIndexPage() {
               <p>
                 <a
                   href="https://developer.company-information.service.gov.uk/api/docs/"
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -833,7 +867,7 @@ export default function StartupFormationSurvivalIndexPage() {
               <p>
                 <a
                   href="https://resources.companieshouse.gov.uk/sic/"
-                  className="text-[#4f46e5] underline hover:opacity-75"
+                  className={`text-primary-600 underline hover:opacity-75 ${focusRing}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -862,7 +896,10 @@ export default function StartupFormationSurvivalIndexPage() {
       </section>
 
       {/* Internal link / soft CTA */}
-      <section className="bg-[#1e1b4b] py-12 sm:py-16">
+      {/* ground-dark: src/app/globals.css:153-155 rebinds --focus-ring to white
+          for this band, so the three CTAs ring against the ground and not in
+          primary-600, which measures 2.03 on primary-950. */}
+      <section className="ground-dark bg-primary-950 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Planning your UK tech company?
@@ -876,19 +913,19 @@ export default function StartupFormationSurvivalIndexPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/for/pre-seed-founders"
-              className="inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-[#1e1b4b] hover:bg-white/90 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-950 hover:bg-white/90 transition-colors ${focusRing}`}
             >
               Pre-seed founder guide
             </Link>
             <Link
               href="/for/funded-startups"
-              className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
             >
               Funded startups
             </Link>
             <Link
               href="/calculators/rd-relief-estimator"
-              className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+              className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
             >
               R&amp;D relief estimator
             </Link>

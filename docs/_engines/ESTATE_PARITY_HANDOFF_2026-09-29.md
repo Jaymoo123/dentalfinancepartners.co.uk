@@ -248,3 +248,7 @@ UPDATE public.sites SET gsc_property_url = 'sc-domain:divorcefinancespecialists.
 
 Bing for the same two sites depends on the domains being verified in Bing Webmaster Tools, not
 on config; check on the day-28 read.
+
+**Owner ruling 2026-09-29: the wills-probate and divorce-finances items are parked** (env paste,
+sites-table rows). Those two sites are excluded from the deploy round, like startups-tech. The
+deploy round is the other 14 sites. Left for the owner: push, `calc_pdf_offer` off, the go.

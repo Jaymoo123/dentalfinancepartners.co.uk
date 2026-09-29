@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 
-import { siteContainerLg } from "@/components/ui/layout-utils";
+import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import {
   fmtGBPm as fmtFundingGBPm,
@@ -89,14 +90,39 @@ const reports = [
 export default function ResearchIndexPage() {
   return (
     <div>
-      <section className="border-b border-neutral-200 bg-[#1e1b4b] py-12 sm:py-16">
+      {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx, in place
+          of the hand-rolled 12px uppercase "Home" back-link. Same destination,
+          same word, and it now also emits BreadcrumbList JSON-LD, which this
+          route had none of. `onDark` because the band is primary-950 #1e1b4b:
+          the kit's onDark palette measures slate-300 links 10.76:1 and slate-400
+          chevrons 6.08:1 there, both past the 4.5 text and 3.0 graphic floors, so
+          no local contrast wrapper is needed on this site (ecommerce needed one
+          only to match a different navy).
+
+          `ground-dark` is on the section because globals.css:153-155 rebinds
+          --focus-ring to white inside it, and the trail's Home link is the only
+          focusable element in this band. No light island sits inside it.
+
+          ADOPTION DECLINED here:
+          - packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`.
+            Stacking an eyebrow over the card grid needs a word ("Reports") that
+            is not on this page today, and owner ruling 1 forbids authoring copy
+            in this port. Eyebrow IS adopted, with no new words, on
+            /research/startup-formation-survival-index, where three hand-rolled
+            uppercase 12px labels were eyebrows in all but name.
+          - packages/web-shared/design/marketing/StatsCounter.tsx for these stat
+            tiles. It takes one number and a plain-string label, renders no link
+            and no markup in the label, so it would strip both the source line
+            under each figure and the card's own link to the study.
+          - packages/web-shared/design/primitives/NoticeCard.tsx: nothing on this
+            route is an outcome card, and its only tones are slate and primary. */}
+      <section className="ground-dark border-b border-neutral-200 bg-primary-950 py-12 sm:py-16">
         <div className={siteContainerLg}>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 uppercase tracking-wider hover:text-white transition-colors mb-6"
-          >
-            Home
-          </Link>
+          <Breadcrumb
+            onDark
+            siteUrl={siteConfig.url}
+            items={[{ label: "Home", href: "/" }, { label: "Research" }]}
+          />
           <h1 className="mt-2 max-w-3xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Original UK tech startup research
           </h1>
@@ -115,11 +141,11 @@ export default function ResearchIndexPage() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="group rounded-2xl border border-neutral-200 p-6 transition hover:border-[#4f46e5] hover:shadow-md sm:p-8"
+                className={`group rounded-2xl border border-neutral-200 p-6 transition hover:border-primary-600 hover:shadow-md sm:p-8 ${focusRing}`}
               >
-                <div className="text-3xl font-bold text-[#4f46e5] sm:text-4xl">{r.stat}</div>
+                <div className="text-3xl font-bold text-primary-600 sm:text-4xl">{r.stat}</div>
                 <div className="mt-1 text-sm text-neutral-500">{r.statLabel}</div>
-                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-[#1e1b4b]">
+                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-primary-950">
                   {r.title}
                 </h2>
                 <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
