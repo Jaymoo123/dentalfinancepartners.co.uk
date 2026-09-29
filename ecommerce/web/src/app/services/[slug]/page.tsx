@@ -22,22 +22,11 @@ export function generateStaticParams() { return ecommerceServices.map((s) => ({ 
  *
  * primary-700 is #8a5e1a, 5.68 on white and 5.44 on #fafaf7. The brand hex
  * #c9861b is 3.04 on white and is decoration only, so it is never used here.
- * On the dark grounds (#8a5e1a hero, neutral-800 stats band) the link is white:
- * 5.68 on the hero, 15.1 on neutral-800.
+ * On the dark grounds (#8a5e1a hero, slate-800 stats band) the link is white:
+ * 5.68 on the hero, 14.63 on slate-800.
  */
 const linkOnLight = `[&_a]:text-primary-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-primary-800 ${focusRingAuthoredLinks}`;
 const linkOnDark = `[&_a]:text-white [&_a]:underline [&_a]:underline-offset-2 ${focusRingAuthoredLinks}`;
-
-/**
- * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
- * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
- * slate-300 with slate-400 chevrons, both written for the kit's navy: on
- * #8a5e1a they measure 3.76:1 and about 2.0:1, under the 4.5 text and 3.0
- * graphic floors. The kit is a carve-out, so the ground-correct palette is
- * applied from the call site (white 5.68, white/80 4.3). Identical string on
- * all three slug templates.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -66,6 +55,25 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         Its header says it is the token-gated noindex hero and is "deliberately
         not the content-page hero"; its slate-900 ground would also replace the
         locked #8a5e1a brand hero.
+        RE-EXAMINED U2 2026-09-29 and the decline STANDS on two testable facts,
+        neither of which `sectionClassName` (SlimHero.tsx:27,35-47) addresses.
+        That prop does remove the ground half of the old objection: it replaces
+        the single class `bg-slate-900` and nothing else, so the brand hero
+        could keep its ground. What it cannot do:
+        (a) SlimHero renders no breadcrumb slot at all (SlimHero.tsx:49-59 is
+            section > container > Eyebrow + h1 + children, and `children` is the
+            standfirst position under the h1). This hero's Breadcrumb emits the
+            route's ONLY BreadcrumbList JSON-LD, so adopting would either delete
+            that node or move the trail below the h1.
+        (b) its eyebrow is hardcoded `Eyebrow onDark` (SlimHero.tsx:54) with no
+            override, and on this site's #8a5e1a brand ground the kit's on-dark
+            branch (text-slate-300, #cbd5e1) measures 3.83:1, under the 4.5
+            floor for an 11-12px label. That is the same measurement that keeps
+            `Eyebrow onDark` declined on every hero in this family.
+        It also shortens the rhythm from py-16 sm:py-20 to py-8 sm:py-10 lg:py-12,
+        which is a structural class the prop explicitly does not touch. So gate
+        D4 is answered without SlimHero: the four hub section labels became
+        config strings and the hand-rolled heroes stay.
 
         ADOPTION DECLINED here only: `Eyebrow onDark` from
         packages/web-shared/design/primitives/page-blocks.tsx. The on-dark branch
@@ -82,20 +90,18 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         (SiteFooter.tsx:145) already emit href="/" on every page, so the route's
         UNIQUE internal link set is unchanged. It also emits a BreadcrumbList
         JSON-LD; nothing else on this route emits one. */}
-    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
       {/* Decoration only, aria-hidden, pointer-events-none. The section
           carries `relative overflow-hidden` and the container below
           `relative z-10`: that is the backdrop host contract, and getting
           it wrong paints the texture over the copy. */}
       <EcommerceBackdrop />
       <div className={`relative z-10 ${siteContainerLg}`}>
-        <div className={crumbOnBrand}>
-          <Breadcrumb
-            onDark
-            siteUrl={siteConfig.url}
-            items={[{ label: "Home", href: "/" }, { label: "All services", href: "/services" }, { label: service.title }]}
-          />
-        </div>
+        <Breadcrumb
+          tone="onBrand"
+          siteUrl={siteConfig.url}
+          items={[{ label: "Home", href: "/" }, { label: "All services", href: "/services" }, { label: service.title }]}
+        />
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{service.headline}.</h1>
         {/* `intro` is authored HTML (anchors to gov.uk and to sibling routes).
             Rendered as HTML because interpolating it as a text child printed
@@ -103,7 +109,11 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             first-party content committed in src/data/services.ts, never user
             input. */}
         <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-white/90 ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: service.intro }} />
-        <div className="mt-10"><Link href="/contact" className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
+        {/* `data-cta` triple added U2 2026-09-29 (owner gate D2). Attribute
+            only: the link, its href and its label are unchanged. Before this
+            wave the whole site emitted one id, `header_book`, on all 51
+            routes, so no conversion below the header could be attributed. */}
+        <div className="mt-10"><Link href="/contact" data-cta="services_hero_book" data-cta-placement="hero" data-cta-goal="contact" className={`inline-flex min-h-12 items-center justify-center bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 hover:bg-white/90 transition-colors ${focusRing}`}>Get in touch</Link></div>
       </div>
     </section>
     {/* ADOPTION DECLINED: packages/web-shared/design/marketing/StatsCounter.tsx.
@@ -114,15 +124,15 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         here too. Swapping the component in would delete both. */}
     {/* `ground-dark` added: this band now carries links (the authored citation
         anchors in stats[].label), and the default focus ring is #8a5e1a, which
-        is 2.67:1 against neutral-800. The rebind makes it white, 15.1:1. No
+        is 2.58:1 against slate-800. The rebind makes it white, 14.63:1. No
         light island sits inside this section. */}
-    <section className="ground-dark bg-neutral-800 py-8 sm:py-10">
+    <section className="ground-dark bg-slate-800 py-8 sm:py-10">
       <div className={siteContainerLg}>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-8">
           {service.stats.map((stat) => (
             <div key={stat.label} className="flex flex-col sm:text-center">
               <div className="text-2xl sm:text-3xl font-bold text-white font-mono">{stat.value}</div>
-              <div className={`mt-1 text-xs sm:text-sm font-semibold text-neutral-400 uppercase tracking-wider ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: stat.label }} />
+              <div className={`mt-1 text-xs sm:text-sm font-semibold text-slate-400 uppercase tracking-wider ${linkOnDark}`} dangerouslySetInnerHTML={{ __html: stat.label }} />
             </div>
           ))}
         </div>
@@ -144,15 +154,15 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         lucide-react dependency this app does not declare) and
         packages/web-shared/design/marketing/WhyUsList.tsx (a numbered
         why-choose-us list; these are problem statements, not reasons to buy). */}
-    <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
+    <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
       <div className={siteContainerLg}>
         <Eyebrow>The problem</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">The challenges clients face.</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
           {service.challenges.map((item) => (
-            <article key={item.title} className="border border-neutral-200 border-l-4 border-l-primary-400 bg-neutral-50 p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-neutral-900">{item.title}</h3>
-              <div className={`mt-4 text-base leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
+            <article key={item.title} className="border border-slate-200 border-l-4 border-l-primary-400 bg-slate-50 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+              <div className={`mt-4 text-base leading-relaxed text-slate-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </article>
           ))}
         </div>
@@ -176,8 +186,17 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         in this grid is clickable and a hover affordance on a non-link is a lie.
         Contrast: the numeral is --color-primary-700 (#8a5e1a), 5.44 on #fafaf7;
         the rule is bg-primary-600 (#9e6615), a graphic at 4.6 on the same
-        ground, both past their floors. */}
-    <section className={`border-b border-neutral-200 bg-[#fafaf7] ${sectionY}`}>
+        ground, both past their floors.
+        ADOPTION DECLINED (U2 item 6, grepped first as instructed):
+        packages/web-shared/design/marketing/ProcessTimeline.tsx. Its `steps`
+        prop is `Array<{ n: string; title: string; body: string }>`
+        (ProcessTimeline.tsx:29). `grep -n 'n:\s*"' src/data/for.ts
+        src/data/services.ts src/data/vat.ts src/config/*.ts` returns nothing:
+        no record on this site carries an `n`, and the only ordered sets are the
+        `howWeHelp` {title, body} pairs whose order is the array index. Adopting
+        would mean authoring a step number and a step label per record on three
+        families, which is new copy. */}
+    <section className={`border-b border-slate-200 bg-[#fafaf7] ${sectionY}`}>
       <div className={siteContainerLg}>
         <Eyebrow>The work</Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How we help.</h2>
@@ -186,8 +205,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <div key={item.title}>
               <span className="story-numeral block text-3xl font-bold tabular-nums sm:text-4xl">{String(i + 1).padStart(2, "0")}</span>
               <span aria-hidden className="story-numeral-rule mt-3 block h-px w-10 bg-primary-600" />
-              <h3 className="mt-4 text-base font-bold text-neutral-900 sm:text-lg">{item.title}</h3>
-              <div className={`mt-2 text-sm leading-relaxed text-neutral-600 sm:text-base ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
+              <h3 className="mt-4 text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
+              <div className={`mt-2 text-sm leading-relaxed text-slate-600 sm:text-base ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: item.body }} />
             </div>
           ))}
         </div>
@@ -206,14 +225,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-neutral-900 text-center mb-8 sm:mb-12 sm:text-3xl">Common questions</h2>
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 sm:mb-12 sm:text-3xl">Common questions</h2>
             <div className="space-y-3 sm:space-y-4">
               {service.faqs.map((faq) => (
-                <details key={faq.question} className="group border border-neutral-200 bg-white">
+                <details key={faq.question} className="group border border-slate-200 bg-white">
                   {/* Hover colour is text-primary-700 (#8a5e1a, 5.68 on white).
                       The brand hex #c9861b is 3.04 on white and is decoration
                       only; it stays on the icon, which is a graphic at 3:1. */}
-                  <summary className={`flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-primary-700 transition-colors list-none ${focusRing}`}>
+                  <summary className={`flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-slate-900 hover:text-primary-700 transition-colors list-none ${focusRing}`}>
                     <span>{faq.question}</span>
                     <span className="flex-shrink-0 text-primary-400 transition-transform group-open:rotate-45" aria-hidden>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
@@ -222,7 +241,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   {/* Authored HTML, same reason as the intro above. The FAQPage
                       JSON-LD emitted a few lines up gets the tags stripped in
                       src/lib/schema.ts, so the schema text stays plain. */}
-                  <div className={`px-6 pb-6 text-neutral-600 leading-relaxed border-t border-neutral-100 pt-4 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                  <div className={`px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </details>
               ))}
             </div>

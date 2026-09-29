@@ -38,7 +38,11 @@ export default function ContactPage() {
         banned estate-wide) and
         packages/web-shared/design/marketing/WhatToExpectCard.tsx (its default
         props publish a fee line nobody here authored). */}
-    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+    {/* U3 instrumentation check (D2): this route carries no link to pricing
+        or services - the Breadcrumb's Home link is the only href, and the
+        page's one conversion surface is the LeadForm below. No data-cta
+        added here; declined for lack of a control to tag. */}
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
       {/* Decoration only, aria-hidden, pointer-events-none. The section
           carries `relative overflow-hidden` and the container below
           `relative z-10`: that is the backdrop host contract, and getting

@@ -5,11 +5,13 @@ import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-b
 import { StatsCounter } from "@accounting-network/web-shared/design/marketing/StatsCounter";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { NumberedReasons } from "@accounting-network/web-shared/design/marketing/NumberedReasons";
+import { CoverageCards } from "@accounting-network/web-shared/design/marketing/CoverageCards";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
-import { btnPrimary, focusRing, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
+import { btnPrimary, btnOnDark, focusRing, siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { ecommerceServices } from "@/data/services";
 import { sellerHubs } from "@/data/for";
+import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { buildFaqJsonLd, buildWebsiteJsonLd } from "@/lib/schema";
 
 // ponytail: inline SVGs, no icon dep in this workspace
@@ -280,6 +282,15 @@ const faqs = [
  * was declined during the port; the reasons those declines gave are answered
  * beside each adoption or below. This is the a3/a5/a7/a8 set in
  * docs/_engines/DESIGN_GAP_DIAGNOSIS_2026-09-14.md.
+ * ADOPTED (uplift U1, 2026-09-29):
+ * packages/web-shared/design/marketing/CoverageCards.tsx as the audiences grid.
+ * The port declined it because `CoverageItem` had no `href` and these four
+ * cards ARE links carrying part of this route's link floor; `href` landed on
+ * 2026-09-29 (CoverageCards.tsx:31) and the icon is optional since the same
+ * date (:25), so both halves of that decline are spent. No icon is passed:
+ * nobody has chosen one per seller model and the component renders the card
+ * with no badge and nothing in its place. Strings are `hub.title` and
+ * `hub.headline`, the same two the hand-rolled card rendered.
  * ADOPTED: `sectionY` from packages/web-shared/design/layout-utils.ts (via the
  * site re-export), replacing eight local `py-12 sm:py-16 lg:py-20` strings. The
  * only delta is the 20-step moving from lg to md, which is the Property
@@ -297,16 +308,20 @@ const faqs = [
  *   exact defect phase 3 had to reverse on this site's three data files and
  *   phase 4 on the kit Calculator. Its slate/rounded-xl card surface would also
  *   repaint every card on the page.
- * - packages/web-shared/design/marketing/CoverageCards.tsx and
- *   packages/web-shared/design/marketing/ComparisonTable.tsx. The dependency
+ * - packages/web-shared/design/marketing/ComparisonTable.tsx. The dependency
  *   half of the original decline is GONE: lucide-react is declared in
  *   ecommerce/web/package.json now, and LeadCTAPanel and NumberedReasons come
- *   in through it. What still stands is content. CoverageCards needs a per-item
- *   icon nobody has chosen, and ComparisonTable needs an authored
- *   them-against-us row set that does not exist here: the nearest material is
- *   the three "why a specialist" paragraphs, which are argument, not rows, and
- *   splitting them into a comparison grid would be a new comparative claim.
- *   Owner item, not a build item.
+ *   in through it. What still stands is content: ComparisonTable needs an
+ *   authored them-against-us row set that does not exist here. The nearest
+ *   material is the three "why a specialist" paragraphs, which are argument,
+ *   not rows, and splitting them into a comparison grid would be a new
+ *   comparative claim. Owner item, not a build item.
+ * - packages/web-shared/design/marketing/ScrollGlowGroup.tsx on the services
+ *   grid. U4 ruled the motion sheet at option C (globals.css:206-216): neither
+ *   packages/web-shared/design/globals-standard.css is imported nor is
+ *   `.card-glow` declared locally, so the class the group toggles resolves to
+ *   nothing and the wrapper would ship an inert client island. Revisit only if
+ *   a later wave declares the glow channels.
  * - packages/web-shared/design/marketing/WhatToExpectCard.tsx. The owner lifted
  *   the ban on condition that explicit props are passed, and the condition is
  *   the problem on THIS route rather than the component: its `items` are
@@ -344,13 +359,24 @@ const faqs = [
  * - packages/web-shared/design/primitives/NoticeCard.tsx. It is the outcome
  *   card for the token-gated /book and /complete flows ("link expired", "you
  *   are all set"). There is no outcome state on the homepage to carry.
- * - packages/web-shared/design/marketing/StickyCTA.tsx (an interruption, banned
- *   estate-wide) and
- *   packages/web-shared/design/marketing/TestimonialsSection.tsx (hardcodes
- *   another site's quotes and this site has no authored social proof, so
- *   adopting it would be inventing it).
+ * - packages/web-shared/design/marketing/StickyCTA.tsx. An interruption, banned
+ *   estate-wide by the owner.
+ * - packages/web-shared/design/marketing/TestimonialsSection.tsx. The OLD
+ *   reason (it hardcodes another site's quotes) is now stale: an `items` prop
+ *   landed 2026-09-29 (TestimonialsSection.tsx:53-56) and the quotes are
+ *   caller-supplied. The decline stands on a different and stronger reason:
+ *   this site publishes no authored social proof of any kind, anywhere, so
+ *   there is nothing to pass and adopting it would mean inventing quotes.
  */
 export default function HomePage() {
+  /* Band 16's three most recent posts. `getAllPosts()` is the same server-side
+     reader /blog uses (src/lib/blog.ts, U3's file, read-only here), so every
+     string in the list is post frontmatter this site already publishes: no
+     title, category or summary is authored on this page. */
+  const recentPosts = getAllPosts()
+    .slice(0, 3)
+    .map((post) => ({ ...post, categorySlug: getCategorySlug(post) }));
+
   return (
     <>
       <script
@@ -370,8 +396,15 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: buildWebsiteJsonLd() }}
       />
       {/* Hero */}
-      <section className="ground-dark relative flex items-center min-h-[440px] sm:min-h-[560px] overflow-hidden bg-[#1a2942]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a2942] via-[#243550]/80 to-[#0f1c30]" />
+      {/* GROUND: `bg-[var(--ink-navy)]`, the token U4 declared at
+          globals.css:192 for the #1a2942 this page used to paint as an
+          arbitrary Tailwind value. The two remaining literals are the gradient's
+          via and to stops: they have no token, globals.css is U4's file and not
+          this package's to edit, and they are designer-set colours whose
+          composited contrast readings are written out below and would have to be
+          re-measured if either moved. They stay as literals, reported. */}
+      <section className="ground-dark relative flex items-center min-h-[440px] sm:min-h-[560px] overflow-hidden bg-[var(--ink-navy)]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--ink-navy)] via-[#243550]/80 to-[#0f1c30]" />
         <EcommerceBackdrop patternId="ecommerce-settlement-run-hero" />
         <div className={`${siteContainerLg} relative z-10 py-16 sm:py-20 w-full`}>
           <div className="max-w-3xl">
@@ -400,31 +433,56 @@ export default function HomePage() {
               </span>
               From 1 January 2024, first reports January 2025
             </div>
-            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-7xl">
               Accountants for UK ecommerce and marketplace sellers.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl">
               {niche.tagline}
             </p>
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact" className={btnPrimary}>
+              {/* The CTA attribute triple sits on the control itself, never on
+                  a wrapper: a wrapper triple is what the sibling site's R5
+                  review blocked as B2, because the click handler that reads it
+                  fires on the anchor. Ids are new to this route (the whole site
+                  emitted one id before this wave, the header's) and neither
+                  collides with the header's set: SiteHeader.tsx:43-45 defaults
+                  are header_book, header_book_mobile and header_contact. */}
+              <Link
+                href="/contact"
+                className={btnPrimary}
+                data-cta="hero_primary"
+                data-cta-placement="hero"
+                data-cta-goal="form"
+              >
                 Speak to a seller tax specialist
               </Link>
-              {/* CONTRAST FIX, measured at each gradient stop composited, per
-                  section 9.1 row 7, because the ground here is a gradient and
-                  not the declared #1a2942 base. Stops: #1a2942, #22334d (the
-                  via #243550 at 80% over the base) and #0f1c30. This control's
-                  own face is bg-white/10 over each of those, and the border was
-                  white/30, which measured 1.94 / 1.87 / 2.01 against that face
-                  and 2.63 / 2.54 / 2.69 against the section ground: below the
-                  3.0 non-text floor at every stop, worst at the via stop.
-                  white/50 measures 3.53 / 3.27 / 3.86 against the face and
-                  4.78 / 4.43 / 5.17 against the ground, so it clears 3.0 at the
-                  worst stop on both readings. The label itself was never in
-                  question: white on the button face is 10.76 / 9.40 / 12.76. */}
+              {/* Was a hand-rolled `border border-white/50 bg-white/10` string.
+                  Now `btnOnDark` from the site's layout-utils (U4 wrapped the
+                  kit recipe there so the ring reads var(--focus-ring) instead
+                  of the kit's fixed outline-primary-400), which is why no
+                  `focusRing` is appended here: the recipe already carries it,
+                  and appending a second outline utility would tie on
+                  specificity and let Tailwind's emission order pick the winner.
+
+                  RE-MEASURED before adopting, because the kit border is
+                  white/40 and the string it replaces was white/50, and the old
+                  note recorded white/30 failing at 1.94. The recipe changes the
+                  face as well as the border: btnOnDark is bg-white/5, not
+                  bg-white/10. Composited at each gradient stop (#1a2942,
+                  #22334d = the via #243550 at 80% over the base, and #0f1c30),
+                  white/40 over the white/5 face measures 3.38 / 3.17 / 3.63
+                  against that face and 3.92 / 3.68 / 4.15 against the section
+                  ground: clear of the 3.0 non-text floor at every stop on both
+                  readings, worst at the via stop as always. The same white/40
+                  over the OLD white/10 face would have been 3.14 / 2.93 / 3.41
+                  and would have failed at the via stop, so the two halves of
+                  this recipe have to move together. White label on the face is
+                  12.58 / 10.95 / 14.97. */}
               <Link
                 href="/services"
-                className={`inline-flex min-h-12 items-center justify-center rounded-xl border border-white/50 bg-white/10 px-6 py-3 sm:px-10 sm:py-4 text-base sm:text-lg font-medium text-white hover:bg-white/20 transition-colors text-center ${focusRing}`}
+                className={btnOnDark}
+                data-cta="hero_secondary"
+                data-cta-placement="hero"
               >
                 Our services
               </Link>
@@ -448,16 +506,16 @@ export default function HomePage() {
       {/* Inventory strip. generalist page.tsx:311 runs the same band in the
           same position. See the `homeStats` note for why it counts sections
           rather than tax figures. */}
-      <section className="border-b border-neutral-200 bg-white py-6 sm:py-8">
+      <section className="border-b border-slate-200 bg-white py-6 sm:py-8">
         <div className={siteContainerLg}>
           <StatsCounter stats={homeStats} />
         </div>
       </section>
 
       {/* Differentiation strip */}
-      <section className="border-b border-neutral-200 bg-[#fafaf9] py-10 sm:py-12">
+      <section className="border-b border-slate-200 bg-[var(--ground-subtle)] py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <p className="max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
+          <p className="max-w-3xl text-lg leading-relaxed text-slate-700 sm:text-xl">
             A marketplace seller accountant owns the tax layer that SaaS tools and generalist firms
             cannot credibly cover: the{" "}
             <a
@@ -482,42 +540,43 @@ export default function HomePage() {
       </section>
 
       {/* Who we help (hubs) */}
-      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
+      <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <Eyebrow>Audiences</Eyebrow>
-          <h2 className="max-w-3xl text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <h2 className="max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Who we work with.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
             Amazon FBA and FBM sellers, Shopify DTC store owners, eBay, Etsy, TikTok Shop and
             Vinted marketplace sellers, and dropshippers. Many clients sell across three or more
             platforms simultaneously. Select your model for the detail that applies.
           </p>
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {sellerHubs.map((hub) => (
-              <Link
-                key={hub.slug}
-                href={`/for/${hub.slug}`}
-                className={`group block rounded-xl border border-neutral-200 bg-neutral-50 p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}
-              >
-                <span className="text-base font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
-                  {hub.title}
-                </span>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500 line-clamp-2">
-                  {hub.headline}
-                </p>
-                <ArrowRight className="mt-3 h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
-              </Link>
-            ))}
-          </div>
+          {/* CoverageCards, see the adoption note at the head of this file.
+              `tone="slate"` because the section ground is white and the kit's
+              slate-50 card is the separation the hand-rolled border gave; a
+              white card here would disappear. `columns={2}` is the kit's own
+              even-set setting and the maximum it offers, so the four cards land
+              two-up from md rather than the four-up this band used at lg. Four
+              anchors in, four anchors out: the link floor is unchanged. `glow`
+              stays off, and could not be on: it is the same `.card-glow`
+              ScrollGlowGroup path U4 ruled out at option C. */}
+          <CoverageCards
+            tone="slate"
+            columns={2}
+            items={sellerHubs.map((hub) => ({
+              title: hub.title,
+              body: hub.headline,
+              href: `/for/${hub.slug}`,
+            }))}
+          />
         </div>
       </section>
 
       {/* Services */}
-      <section className={`border-b border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
+      <section className={`border-b border-slate-200 bg-[var(--ground-subtle)] ${sectionY}`}>
         <div className={siteContainerLg}>
           <Eyebrow>The work</Eyebrow>
-          <h2 className="max-w-3xl text-2xl font-bold text-neutral-900 sm:text-4xl">
+          <h2 className="max-w-3xl text-2xl font-bold text-slate-900 sm:text-4xl">
             Specialist services for online sellers.
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
@@ -525,12 +584,12 @@ export default function HomePage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className={`group block rounded-xl border border-neutral-200 bg-white p-6 sm:p-7 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}
+                className={`group block rounded-xl border border-slate-200 bg-white p-6 sm:p-7 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}
               >
-                <h3 className="text-base font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
+                <h3 className="text-base font-bold text-slate-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500 line-clamp-2">
+                <p className="mt-2 text-sm leading-relaxed text-slate-500 line-clamp-2">
                   {service.headline}
                 </p>
                 <div className="mt-4 flex items-center text-[var(--brand-primary-text)] font-semibold text-sm">
@@ -544,37 +603,37 @@ export default function HomePage() {
       </section>
 
       {/* Tax moments strip */}
-      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
+      <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <Eyebrow>The problem</Eyebrow>
-          <h2 className="max-w-3xl text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+          <h2 className="max-w-3xl text-2xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             The seller tax moments that bring owners here.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
             Most sellers reach out at one of these six points. Each involves money that a generalist
             accountant will not handle correctly without seller-specific knowledge.
           </p>
 
           {/* Key dates table */}
           <div className="mt-8 overflow-x-auto">
-            <table className="w-full text-sm border border-neutral-200">
+            <table className="w-full text-sm border border-slate-200">
               <thead>
-                <tr className="bg-neutral-100 text-left">
-                  <th className="px-4 py-3 font-semibold text-neutral-800 border-b border-neutral-200">
+                <tr className="bg-slate-100 text-left">
+                  <th className="px-4 py-3 font-semibold text-slate-800 border-b border-slate-200">
                     Seller tax event
                   </th>
-                  <th className="px-4 py-3 font-semibold text-neutral-800 border-b border-neutral-200">
+                  <th className="px-4 py-3 font-semibold text-slate-800 border-b border-slate-200">
                     Key figure or date
                   </th>
-                  <th className="px-4 py-3 font-semibold text-neutral-800 border-b border-neutral-200">
+                  <th className="px-4 py-3 font-semibold text-slate-800 border-b border-slate-200">
                     Common mistake
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-neutral-100">
-                  <td className="px-4 py-3 font-medium text-neutral-900">VAT registration</td>
-                  <td className="px-4 py-3 text-neutral-600">
+                <tr className="border-b border-slate-100">
+                  <td className="px-4 py-3 font-medium text-slate-900">VAT registration</td>
+                  <td className="px-4 py-3 text-slate-600">
                     <a
                       href="https://www.gov.uk/vat-registration"
                       className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
@@ -582,11 +641,11 @@ export default function HomePage() {
                       £90,000 gross sales (rolling 12 months)
                     </a>
                   </td>
-                  <td className="px-4 py-3 text-neutral-600">Measuring against net payout, not gross sales</td>
+                  <td className="px-4 py-3 text-slate-600">Measuring against net payout, not gross sales</td>
                 </tr>
-                <tr className="border-b border-neutral-100 bg-neutral-50">
-                  <td className="px-4 py-3 font-medium text-neutral-900">Platform reporting</td>
-                  <td className="px-4 py-3 text-neutral-600">
+                <tr className="border-b border-slate-100 bg-slate-50">
+                  <td className="px-4 py-3 font-medium text-slate-900">Platform reporting</td>
+                  <td className="px-4 py-3 text-slate-600">
                     <a
                       href="https://www.gov.uk/guidance/reporting-rules-for-digital-platforms"
                       className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
@@ -594,13 +653,13 @@ export default function HomePage() {
                       From 1 January 2024, first reports January 2025
                     </a>
                   </td>
-                  <td className="px-4 py-3 text-neutral-600">
+                  <td className="px-4 py-3 text-slate-600">
                     Treating the 30-sale/£1,700 reporting exclusion as a tax threshold
                   </td>
                 </tr>
-                <tr className="border-b border-neutral-100">
-                  <td className="px-4 py-3 font-medium text-neutral-900">MTD ITSA (sole traders)</td>
-                  <td className="px-4 py-3 text-neutral-600">
+                <tr className="border-b border-slate-100">
+                  <td className="px-4 py-3 font-medium text-slate-900">MTD ITSA (sole traders)</td>
+                  <td className="px-4 py-3 text-slate-600">
                     <a
                       href="https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax"
                       className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
@@ -609,7 +668,7 @@ export default function HomePage() {
                     </a>
                     ; £30,000 from 6 April 2027
                   </td>
-                  <td className="px-4 py-3 text-neutral-600">Assuming it applies only to landlords or larger businesses</td>
+                  <td className="px-4 py-3 text-slate-600">Assuming it applies only to landlords or larger businesses</td>
                 </tr>
               </tbody>
             </table>
@@ -617,9 +676,9 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {taxMoments.map((moment, i) => (
-              <div key={i} className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
-                <h3 className="text-base font-bold text-neutral-900">{moment.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{moment.body}</p>
+              <div key={i} className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+                <h3 className="text-base font-bold text-slate-900">{moment.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">{moment.body}</p>
               </div>
             ))}
           </div>
@@ -627,15 +686,15 @@ export default function HomePage() {
       </section>
 
       {/* Cross-border VAT cluster teaser */}
-      <section className={`border-b border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
+      <section className={`border-b border-slate-200 bg-[var(--ground-subtle)] ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <Eyebrow>Depth guides</Eyebrow>
-              <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
                 Cross-border and VAT depth guides.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-neutral-600">
+              <p className="mt-5 text-base leading-relaxed text-slate-600">
                 The UK rules on selling goods to overseas buyers changed fundamentally after 2021.
                 The{" "}
                 <a
@@ -655,31 +714,31 @@ export default function HomePage() {
                 obligations that most content treats at surface level. Our VAT cluster covers each in
                 the depth a working seller actually needs.
               </p>
-              <p className="mt-4 text-sm text-neutral-500">
+              <p className="mt-4 text-sm text-slate-500">
                 Note: IOSS and OSS cross-border figures are EU law; our guides cite the correct
                 sources at each decision point rather than asserting figures from the wrong
                 jurisdiction.
               </p>
             </div>
             <div>
-              <h3 className="text-base font-bold text-neutral-900 mb-4">VAT and cross-border guides</h3>
+              <h3 className="text-base font-bold text-slate-900 mb-4">VAT and cross-border guides</h3>
               <div className="space-y-3">
                 {vatCluster.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`group flex items-center justify-between rounded-xl border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
+                    className={`group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-4 text-sm font-medium text-slate-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                   >
                     {item.label}
-                    <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
                 <Link
                   href="/services/selling-into-the-eu"
-                  className={`group flex items-center justify-between rounded-xl border border-neutral-200 bg-white px-5 py-4 text-sm font-medium text-neutral-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
+                  className={`group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-4 text-sm font-medium text-slate-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                 >
                   Selling into the EU: full service
-                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -688,43 +747,51 @@ export default function HomePage() {
       </section>
 
       {/* Free tools + Online Seller Index */}
-      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
+      <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             <div>
               <Eyebrow>Tools</Eyebrow>
-              <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
                 Free seller tools.
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-neutral-600">
+              <p className="mt-5 text-base leading-relaxed text-slate-600">
                 Scenario and compliance tools built for UK online sellers. No sign-up, no data
                 stored. Model your take-home after platform fees and tax, track your rolling gross
                 sales against the VAT threshold, or compare sole trader and limited company
                 outcomes at your income level.
               </p>
+              {/* The triple sits on each anchor, never on the wrapping div.
+                  There is no "browse all calculators" link in this band, so the
+                  sibling estate's `home_calculators_all` id has no host here;
+                  the three tool links share one id and are told apart by their
+                  href in vw_cta_performance, which is how the most recently
+                  accepted sibling homepage does it. */}
               <div className="mt-8 space-y-3">
                 {calculatorLinks.map((calc) => (
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    className={`group flex items-start justify-between gap-4 rounded-xl border border-neutral-200 bg-white px-5 py-4 transition-all hover:border-primary-400 ${focusRing}`}
+                    data-cta="home_calculator"
+                    data-cta-placement="tools_band"
+                    className={`group flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white px-5 py-4 transition-all hover:border-primary-400 ${focusRing}`}
                   >
                     <div>
-                      <div className="text-sm font-bold text-neutral-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
+                      <div className="text-sm font-bold text-slate-900 group-hover:text-[var(--brand-primary-text)] transition-colors">
                         {calc.title}
                       </div>
-                      <p className="mt-1 text-xs leading-relaxed text-neutral-500">{calc.body}</p>
+                      <p className="mt-1 text-xs leading-relaxed text-slate-500">{calc.body}</p>
                     </div>
-                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="mt-0.5 h-4 w-4 flex-shrink-0 text-slate-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                   </Link>
                 ))}
               </div>
             </div>
             <div>
-              <h2 className="text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
+              <h2 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
                 Online Seller Index.
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-neutral-600">
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
                 Data for UK marketplace sellers: how many SIC 47910 online retail companies sit on
                 the Companies House register, how many have dissolved, quarterly formation and
                 dissolution churn, survival by formation-year cohort, and the ONS internet share of
@@ -735,10 +802,12 @@ export default function HomePage() {
               <div className="mt-6">
                 <Link
                   href="/research/online-seller-index"
-                  className={`group flex items-center justify-between rounded-xl border border-neutral-200 bg-white px-5 py-4 text-sm font-semibold text-neutral-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
+                  data-cta="home_research"
+                  data-cta-placement="tools_band"
+                  className={`group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold text-slate-800 hover:border-primary-400 hover:text-[var(--brand-primary-text)] transition-all ${focusRing}`}
                 >
                   View the Online Seller Index
-                  <ArrowRight className="h-4 w-4 text-neutral-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all" />
                 </Link>
               </div>
             </div>
@@ -747,15 +816,15 @@ export default function HomePage() {
       </section>
 
       {/* Why a specialist */}
-      <section className={`border-b border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
+      <section className={`border-b border-slate-200 bg-[var(--ground-subtle)] ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="max-w-3xl">
             <div>
               <Eyebrow>The difference</Eyebrow>
-              <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+              <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
                 Why a marketplace specialist, not a generalist accountant?
               </h2>
-              <div className="mt-6 space-y-5 text-base leading-relaxed text-neutral-600">
+              <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-600">
                 <p>
                   A generalist firm prepares your accounts and files your returns. They will not, by
                   default, know that your VAT registration threshold is on gross sales before the
@@ -793,7 +862,7 @@ export default function HomePage() {
               mark that is about to light, it carries no information the lit
               state does not, and reduced-motion lands every numeral already
               lit. */}
-          <h3 className="mt-12 text-lg font-bold text-neutral-900">
+          <h3 className="mt-12 text-lg font-bold text-slate-900">
             The situations that typically bring sellers to a specialist
           </h3>
           <NumberedReasons items={specialistSituations} />
@@ -801,18 +870,39 @@ export default function HomePage() {
       </section>
 
       {/* FAQs */}
-      <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
+      <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
           <Eyebrow>Questions</Eyebrow>
-          <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             Common questions from online sellers.
           </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {faqs.map((faq, i) => (
-              <div key={i} className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">
-                <h3 className="text-sm font-bold text-neutral-900">{faq.q}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-600">{faq.a}</p>
-              </div>
+          {/* FAQ SHAPE, owner gate D1 answered: keep native <details>, and make
+              this band match it. The site was shipping three FAQ presentations
+              (native <details> on five templates, plain <div> cards here) and
+              this was the odd one. It is NOT
+              packages/web-shared/design/primitives/FaqSection.tsx: the kit
+              component's `alwaysRenderAnswers` would have kept the answers in
+              the server HTML, so the JSON-LD objection is spent, but the ruling
+              is one shape per site and the shape that already runs on five
+              templates is this one. Markup below is the same recipe as
+              app/services/[slug]/page.tsx, with `{faq.a}` as a text child
+              rather than dangerouslySetInnerHTML because these answers are
+              plain strings, not authored HTML. Every answer stays in the server
+              HTML open or closed, which is what the FAQPage block at the top of
+              this file asserts. Not one question or answer string changed. */}
+          <div className="mt-8 max-w-3xl space-y-3 sm:space-y-4">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="group border border-slate-200 bg-slate-50">
+                <summary className={`flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-slate-900 hover:text-primary-700 transition-colors list-none ${focusRing}`}>
+                  <span className="text-sm">{faq.q}</span>
+                  <span className="flex-shrink-0 text-primary-400 transition-transform group-open:rotate-45" aria-hidden>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
+                  </span>
+                </summary>
+                <p className="border-t border-slate-100 px-6 pb-6 pt-4 text-sm leading-relaxed text-slate-600">
+                  {faq.a}
+                </p>
+              </details>
             ))}
           </div>
         </div>
@@ -864,25 +954,63 @@ export default function HomePage() {
         form={<LeadForm submitLabel="Send enquiry" />}
         backdrop={
           <>
-            <div className="absolute inset-0 bg-[#1a2942]" />
+            <div className="absolute inset-0 bg-[var(--ink-navy)]" />
             <EcommerceBackdrop patternId="ecommerce-settlement-run-cta" />
           </>
         }
       />
 
       {/* Blog footer strip */}
-      <section className={`border-t border-neutral-200 bg-[#fafaf9] ${sectionY}`}>
+      <section className={`border-t border-slate-200 bg-[var(--ground-subtle)] ${sectionY}`}>
         <div className={siteContainerLg}>
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl lg:text-4xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
               Plain English guides for UK online sellers.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
               VAT threshold on gross sales vs payout, the flat-rate scheme trap for goods sellers,
               platform reporting and trading-allowance rules, HMRC badge-of-trade analysis,
               cash vs accruals for stock businesses, and sole trader vs limited company maths for
               sellers at different income levels.
             </p>
+            {/* The band published a heading, a standfirst and one button and
+                listed no posts at all, which is diagnosis §c2 on a site with
+                fifteen of them. The three most recent are below, in the shape
+                Property:364-418 runs and the most recently accepted sibling
+                homepage copied. Every string is frontmatter this site already
+                publishes; the heading, the standfirst and the button are
+                untouched. */}
+            <div className="mt-8 divide-y divide-slate-200 border-y border-slate-200 text-left">
+              {recentPosts.map((post) => (
+                <article key={post.slug} className="group">
+                  <Link
+                    href={`/blog/${post.categorySlug}/${post.slug}`}
+                    className={`flex items-center gap-4 py-4 sm:gap-6 sm:py-5 ${focusRing}`}
+                  >
+                    <span className="hidden w-40 shrink-0 text-xs font-bold uppercase tracking-wider text-[var(--brand-primary-text)] sm:block">
+                      {post.category}
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="mb-1 block text-xs font-bold uppercase tracking-wider text-[var(--brand-primary-text)] sm:hidden">
+                        {post.category}
+                      </span>
+                      <h3 className="text-base font-bold text-slate-900 transition-colors group-hover:text-[var(--brand-primary-text)] sm:text-lg">
+                        {post.title}
+                      </h3>
+                      {post.summary ? (
+                        <p className="mt-1 hidden text-sm text-slate-600 line-clamp-1 sm:block">
+                          {post.summary}
+                        </p>
+                      ) : null}
+                    </span>
+                    <ArrowRight
+                      aria-hidden
+                      className="h-5 w-5 shrink-0 text-slate-400 transition-all group-hover:translate-x-1 group-hover:text-primary-400"
+                    />
+                  </Link>
+                </article>
+              ))}
+            </div>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link href="/blog" className={btnPrimary}>
                 Browse all guides

@@ -7,6 +7,9 @@ import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Bre
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { HubArticleList } from "@accounting-network/web-shared/design/blog/HubArticleList";
 import { siteContainerLg, focusRing } from "@accounting-network/web-shared/design/layout-utils";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { niche } from "@/config/niche-loader";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -43,6 +46,7 @@ export default async function CategoryPage({ params }: Props) {
     }));
 
   return (
+    <>
     <div className="bg-white py-16 sm:py-20">
       <div className={siteContainerLg}>
         <Breadcrumb
@@ -83,5 +87,17 @@ export default async function CategoryPage({ params }: Props) {
         ) : null}
       </div>
     </div>
+    {/* Closing capture (U3, owner gate D3). This hub had zero capture below
+        the header. Same niche.config.json `blog` triple as /blog and the
+        post template - no authored copy. */}
+    <LeadCTAPanel
+      eyebrow=""
+      title={niche.blog.cta_heading}
+      description={niche.blog.cta_body}
+      proofPoints={[]}
+      formTitle=""
+      form={<LeadForm submitLabel={niche.blog.cta_button} />}
+    />
+    </>
   );
 }

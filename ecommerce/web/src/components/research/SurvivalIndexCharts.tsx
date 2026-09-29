@@ -23,7 +23,7 @@
  * dash pattern and the point radii carry the encoding too.
  *
  * All chart TEXT is neutral and measured on the white card these charts sit in
- * (page.tsx renders both inside `bg-white border border-neutral-200`):
+ * (page.tsx renders both inside `bg-white border border-slate-200`):
  * axis tick labels #737373 = 4.74, x-axis category labels #525252 = 7.81,
  * legend and bar data labels #171717 = 17.93. All clear the 4.5 text floor.
  * GRID #e5e5e5 is 1.26 on white and is deliberately below the graphic floor:

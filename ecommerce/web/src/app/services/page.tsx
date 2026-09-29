@@ -1,38 +1,56 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
-import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
+import { CoverageCards } from "@accounting-network/web-shared/design/marketing/CoverageCards";
+import { siteContainerLg, sectionY } from "@/components/ui/layout-utils";
 import { serviceTiers } from "@/config/service-tiers";
 import { ecommerceServices } from "@/data/services";
 import { siteConfig } from "@/config/site";
+import nicheConfig from "../../../../niche.config.json";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
+/**
+ * D4 (owner ruling, 2026-09-29): the hub section labels are config strings.
+ * Read straight off niche.config.json rather than through src/config/niche-loader.ts,
+ * because `NicheConfig` (packages/web-shared/lib/niche-config.ts) is a closed
+ * interface with no index signature and packages/ is a manager carve-out, so a
+ * new key cannot be typed there from this lease. Texts are byte-identical to
+ * the literals they replace: nothing rendered changes.
+ */
+const hubLabels = nicheConfig.hub_labels;
+
 export const metadata: Metadata = {
   title: "Ecommerce Tax Services for UK Sellers",
   description: "Specialist ecommerce accountancy services: VAT compliance, settlement reconciliation, EU selling and HMRC platform-reporting letter response.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };
-/**
- * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
- * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
- * slate-300 with slate-400 chevrons, both written for the kit's navy: on
- * #8a5e1a they measure 3.76:1 and about 2.0:1, under the 4.5 text and 3.0
- * graphic floors. The kit is a carve-out, so the ground-correct palette is
- * applied from the call site (white 5.68, white/80 4.3). Identical string on
- * all six route files in this family.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
-
 export default function ServicesIndexPage() {
   return (<>
     {/* ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
         Its own header says it is the shallow hero for the token-gated noindex
         pages and is "deliberately not the content-page hero"; it also hardcodes
         a slate-900 ground, which would replace the locked #8a5e1a brand hero.
+        RE-EXAMINED U2 2026-09-29 and the decline STANDS on two testable facts,
+        neither of which `sectionClassName` (SlimHero.tsx:27,35-47) addresses.
+        That prop does remove the ground half of the old objection: it replaces
+        the single class `bg-slate-900` and nothing else, so the brand hero
+        could keep its ground. What it cannot do:
+        (a) SlimHero renders no breadcrumb slot at all (SlimHero.tsx:49-59 is
+            section > container > Eyebrow + h1 + children, and `children` is the
+            standfirst position under the h1). This hero's Breadcrumb emits the
+            route's ONLY BreadcrumbList JSON-LD, so adopting would either delete
+            that node or move the trail below the h1.
+        (b) its eyebrow is hardcoded `Eyebrow onDark` (SlimHero.tsx:54) with no
+            override, and on this site's #8a5e1a brand ground the kit's on-dark
+            branch (text-slate-300, #cbd5e1) measures 3.83:1, under the 4.5
+            floor for an 11-12px label. That is the same measurement that keeps
+            `Eyebrow onDark` declined on every hero in this family.
+        It also shortens the rhythm from py-16 sm:py-20 to py-8 sm:py-10 lg:py-12,
+        which is a structural class the prop explicitly does not touch. So gate
+        D4 is answered without SlimHero: the four hub section labels became
+        config strings and the hand-rolled heroes stay.
 
         ADOPTION DECLINED here only: packages/web-shared/design/primitives/page-blocks.tsx
         `Eyebrow onDark`. Its on-dark branch is text-slate-300 (#cbd5e1), which I
@@ -52,25 +70,23 @@ export default function ServicesIndexPage() {
         ever placed in this hero, and without the rebind its focus ring would
         paint #8a5e1a on an #8a5e1a ground, i.e. 1.00:1. No light island sits
         inside this section. */}
-    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
       {/* Decoration only, aria-hidden, pointer-events-none. The section
           carries `relative overflow-hidden` and the container below
           `relative z-10`: that is the backdrop host contract, and getting
           it wrong paints the texture over the copy. */}
       <EcommerceBackdrop />
       <div className={`relative z-10 ${siteContainerLg}`}>
-        <div className={crumbOnBrand}>
-          <Breadcrumb onDark siteUrl={siteConfig.url} items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
-        </div>
+        <Breadcrumb tone="onBrand" siteUrl={siteConfig.url} items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Specialist services for UK online sellers.</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">VAT compliance, settlement reconciliation, EU selling and HMRC letter response.</p>
       </div>
     </section>
-    <section className="bg-white border-b border-neutral-200">
+    <section className="bg-white border-b border-slate-200">
       <div className={`${siteContainerLg} ${sectionY}`}>
         <div className="mx-auto max-w-3xl text-center mb-12">
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">Three service tiers</h2>
-          <p className="mt-4 text-base leading-relaxed text-neutral-600">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Three service tiers</h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
             Start with self assessment essentials, add VAT and reconciliation as your store grows, move to full cross-border compliance as you scale. You can move tier at any month-end.
           </p>
         </div>
@@ -78,45 +94,51 @@ export default function ServicesIndexPage() {
       </div>
     </section>
 
-    {/* ADOPTION DECLINED, re-examined: packages/web-shared/design/marketing/CoverageCards.tsx.
-        Half the old reason is gone, lucide-react is now declared in
-        ecommerce/web/package.json. The other half stands and is decisive: its
-        cards are <div>s with no link slot, and on this hub the cards ARE the
-        four /services/<slug> links, which is the entire job of the grid.
-        Adopting it would delete them. It may fit a grid that is not navigation;
-        this one is. It would also still need an invented LucideIcon per record,
-        which no service record carries.
-        The one thing lucide DOES buy here is the affordance the cards lacked:
-        an ArrowRight that slides on hover, the same mark generalist puts on
-        every card-shaped link. Decoration, aria-hidden, text-primary-600
-        (#9e6615, 4.81 on the white card, past the 3.0 graphic floor).
+    {/* ADOPTED (U2, 2026-09-29), reversing the decline above it:
+        packages/web-shared/design/marketing/CoverageCards.tsx. The decisive
+        half of the old reason ("its cards are <div>s with no link slot, and on
+        this hub the cards ARE the four /services/<slug> links") is now false:
+        `CoverageItem.href` landed 2026-09-29 (CoverageCards.tsx:24-31) and
+        makes the whole card the link, with the kit focusRing. The other half
+        ("it would still need an invented LucideIcon per record") is also gone:
+        `icon` became optional on the same date (:17-23) and a card with no icon
+        renders with no badge. Every /services/<slug> href is preserved, so the
+        route's link floor is unchanged.
+        CARRIED (two facts, both reported rather than patched, because
+        packages/ is a manager carve-out):
+        1. the kit renders a plain <a>, not next/link, so these are full-page
+           navigations rather than client transitions. The kit's own comment at
+           :26-29 states that and scopes it to internal paths, which these are.
+        2. the card's ring is the KIT focusRing (CoverageCards.tsx:5,110),
+           `outline-primary-600` = #9e6615, not this site's
+           `outline-[var(--focus-ring)]`. On this section's near-white
+           bg-primary-400/5 ground #9e6615 measures 4.81, past the 3.0 graphic
+           floor, so it is legible; what it is not is inside the one-mechanism
+           ring grep this port established. The site-side grep
+           `outline-\[var\(--focus-ring\)\]` therefore no longer finds every
+           ring on this route.
+        DROPPED with the hand-rolled card: the aria-hidden ArrowRight hover
+        affordance and the `line-clamp-2` truncation. Neither carries copy; the
+        headline now renders in full, and the card is still the link.
 
-        ADOPTION DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx,
-        which the owner has now approved and which IS adopted on all three slug
-        templates. Not here: it requires a `title` and a `description`, and this
-        hub publishes neither a CTA heading nor a CTA line to hand it. Writing
-        them is authoring marketing copy. Owner item.
         ADOPTION DECLINED: packages/web-shared/design/marketing/StickyCTA.tsx,
         an interruption, banned estate-wide. */}
     <section className={`bg-primary-400/5 ${sectionY}`}>
       <div className={siteContainerLg}>
-        <Eyebrow>What we do</Eyebrow>
-        <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {ecommerceServices.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className={`group flex flex-col bg-white border border-neutral-200 p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}>
-              {/* Hover colour is text-primary-700 (#8a5e1a, 5.68 on white), not
-                  the brand hex #c9861b: that hex is 3.04 on white and is
-                  decoration only, never text. The card border keeps it, because
-                  a border is a graphic and clears the 3:1 floor. */}
-              <span className="text-base font-bold text-neutral-900 group-hover:text-primary-700 transition-colors">{s.title}</span>
-              <p className="mt-2 text-sm text-neutral-500 line-clamp-2">{s.headline}</p>
-              {/* Affordance only, no label: the card already carries its title
-                  and adding words here would be authoring copy. aria-hidden, so
-                  the accessible name of the link is unchanged. */}
-              <ArrowRight aria-hidden className="mt-4 h-4 w-4 text-primary-600 transition-transform group-hover:translate-x-1" strokeWidth={2} />
-            </Link>
-          ))}
-        </div>
+        {/* D4 (owner, 2026-09-29): the four hub section labels become config
+            strings. This hub already published one, so the string moves to
+            ecommerce/niche.config.json `hub_labels.services` byte-identical and
+            nothing rendered changes. */}
+        <Eyebrow>{hubLabels.services}</Eyebrow>
+        <CoverageCards
+          columns={3}
+          tone="white"
+          items={ecommerceServices.map((s) => ({
+            title: s.title,
+            body: s.headline,
+            href: `/services/${s.slug}`,
+          }))}
+        />
       </div>
     </section>
     {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires one

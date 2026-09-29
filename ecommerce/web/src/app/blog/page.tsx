@@ -3,6 +3,9 @@ import Link from "next/link";
 import { getAllPosts, getAllCategories, calculateReadTime, getCategorySlug } from "@/lib/blog";
 import { siteConfig } from "@/config/site";
 import { focusRing } from "@/components/ui/layout-utils";
+import { niche } from "@/config/niche-loader";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 
 export const metadata: Metadata = {
   title: "Ecommerce Tax Guides for Online Sellers",
@@ -30,15 +33,16 @@ export default function BlogIndexPage() {
   const posts = getAllPosts();
   const categories = getAllCategories();
   return (
+    <>
     <div className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">Ecommerce tax, explained.</h1>
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900">Ecommerce tax, explained.</h1>
       {categories.length > 0 && (
         <div className="mt-8 flex flex-wrap gap-3">
           {categories.map((cat) => (
             <Link
               key={cat.slug}
               href={`/blog/${cat.slug}`}
-              className={`rounded-md border border-neutral-200 px-3 py-1.5 text-sm text-neutral-700 hover:border-primary-600 hover:text-primary-700 ${focusRing}`}
+              className={`rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:border-primary-600 hover:text-primary-700 ${focusRing}`}
             >
               {cat.name} ({cat.count})
             </Link>
@@ -50,13 +54,32 @@ export default function BlogIndexPage() {
           <li key={post.slug}>
             <Link href={`/blog/${getCategorySlug(post)}/${post.slug}`} className={`group block rounded-md ${focusRing}`}>
               <p className="text-xs font-semibold uppercase tracking-wider text-primary-700">{post.category} &middot; {calculateReadTime(post.contentHtml)} min read</p>
-              <h2 className="mt-1 text-xl font-semibold text-neutral-900 group-hover:underline">{post.title}</h2>
-              <p className="mt-2 text-sm text-neutral-600">{post.metaDescription}</p>
+              <h2 className="mt-1 text-xl font-semibold text-slate-900 group-hover:underline">{post.title}</h2>
+              <p className="mt-2 text-sm text-slate-600">{post.metaDescription}</p>
             </Link>
           </li>
         ))}
-        {posts.length === 0 && <li className="text-neutral-400 text-sm">No posts yet.</li>}
+        {posts.length === 0 && <li className="text-slate-400 text-sm">No posts yet.</li>}
       </ul>
     </div>
+    {/* Closing capture (U3, owner gate D3: "enquiry form on every money page").
+        /blog had zero capture below the header. Copy is the site's own
+        niche.config.json `blog` triple, already published on every post's
+        end-of-article form (blog/[category]/[slug]/page.tsx) - nothing
+        authored here. eyebrow/formTitle empty and proofPoints=[] match the
+        established call-site pattern on this site (about, for, services, vat:
+        no authored offer line, no authored proof-point set). LeadForm emits no
+        data-cta of its own (documented site-wide, e.g. for/[slug]/page.tsx),
+        so this panel is silent in vw_cta_performance until kit gap C1 lands -
+        a manager carve-out, not a U3 file. */}
+    <LeadCTAPanel
+      eyebrow=""
+      title={niche.blog.cta_heading}
+      description={niche.blog.cta_body}
+      proofPoints={[]}
+      formTitle=""
+      form={<LeadForm submitLabel={niche.blog.cta_button} />}
+    />
+    </>
   );
 }

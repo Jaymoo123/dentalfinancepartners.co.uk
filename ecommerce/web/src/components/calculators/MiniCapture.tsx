@@ -21,7 +21,7 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // plus focusRing: the site's design guard (focus-ring.test.ts) requires every
 // input/textarea to carry the --focus-ring token, directly or via a recipe.
 const inputClass =
-  `mt-1 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-neutral-400 transition-colors focus:border-[var(--brand-primary)] ${focusRing}`;
+  `mt-1 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-slate-400 transition-colors focus:border-[var(--brand-primary)] ${focusRing}`;
 
 export function MiniCapture({
   formId,
@@ -30,7 +30,7 @@ export function MiniCapture({
   blurb,
   submitLabel = "Request a callback",
   successText = "Thanks. We'll be in touch.",
-  className = "rounded-xl bg-neutral-50 p-6 ring-1 ring-neutral-200 sm:p-8",
+  className = "rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:p-8",
 }: {
   formId: string;
   messagePrefix: string;

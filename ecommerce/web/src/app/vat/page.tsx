@@ -1,30 +1,29 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { CoverageCards } from "@accounting-network/web-shared/design/marketing/CoverageCards";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
-import { siteContainerLg, focusRing } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { vatPages } from "@/data/vat";
 import { siteConfig } from "@/config/site";
+import nicheConfig from "../../../../niche.config.json";
 import EcommerceBackdrop from "@/components/layout/EcommerceBackdrop";
 import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
+/**
+ * D4 (owner ruling, 2026-09-29): the hub section labels are config strings.
+ * Read straight off niche.config.json rather than through src/config/niche-loader.ts,
+ * because `NicheConfig` (packages/web-shared/lib/niche-config.ts) is a closed
+ * interface with no index signature and packages/ is a manager carve-out, so a
+ * new key cannot be typed there from this lease. Texts are byte-identical to
+ * the literals they replace: nothing rendered changes.
+ */
+const hubLabels = nicheConfig.hub_labels;
+
 export const metadata: Metadata = {
   title: "Ecommerce VAT Guides for UK Sellers",
   description: "VAT guidance for UK ecommerce and marketplace sellers: deemed supplier rules, marketplace fee VAT, the £135 import rule, IOSS/OSS and postponed VAT.",
   alternates: { canonical: `${siteConfig.url}/vat` },
 };
-/**
- * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
- * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
- * slate-300 with slate-400 chevrons, both written for the kit's navy: on
- * #8a5e1a they measure 3.76:1 and about 2.0:1, under the 4.5 text and 3.0
- * graphic floors. The kit is a carve-out, so the ground-correct palette is
- * applied from the call site (white 5.68, white/80 4.3). Identical string on
- * all six route files in this family.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
-
 export default function VatIndexPage() {
   return (<>
     {/* `ground-dark` rebinds --focus-ring to the on-brand white for everything
@@ -33,7 +32,7 @@ export default function VatIndexPage() {
         is now read from the --color-primary-700 token that globals.css already
         anchors on #8a5e1a (white on it = 5.68). No light island sits inside
         this section, so the inherited rebind cannot leak onto one. */}
-    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
       {/* Decoration only, aria-hidden, pointer-events-none. The section
           carries `relative overflow-hidden` and the container below
           `relative z-10`: that is the backdrop host contract, and getting
@@ -43,53 +42,60 @@ export default function VatIndexPage() {
         {/* ADOPTED: packages/web-shared/design/primitives/Breadcrumb.tsx. It also
             emits the BreadcrumbList JSON-LD; this route emitted none before, and
             no other node on the page emits one, so there is still exactly one. */}
-        <div className={crumbOnBrand}>
-          <Breadcrumb
-            onDark
-            siteUrl={siteConfig.url}
-            items={[{ label: "Home", href: "/" }, { label: "VAT" }]}
-          />
-        </div>
+        <Breadcrumb
+          tone="onBrand"
+          siteUrl={siteConfig.url}
+          items={[{ label: "Home", href: "/" }, { label: "VAT" }]}
+        />
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">VAT for online sellers: the depth cluster.</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">Ecommerce VAT is specific. Deemed supplier rules, marketplace fee reverse charge, the £135 import rule, IOSS and postponed VAT all apply differently to online sellers.</p>
       </div>
     </section>
-    {/* DECLINED, re-examined: packages/web-shared/design/marketing/CoverageCards.tsx.
-        lucide-react IS a dependency of ecommerce/web now, so that half of the
-        old reason is gone. The other half is decisive: its cards are not links,
-        and on this hub the cards are the five /vat/<slug> hrefs, which is the
-        entire job of the grid. Adopting it would delete them. It may fit a grid
-        that is not navigation; this one is. It would also still need a per-item
-        `icon: LucideIcon` that no vat record carries.
-        What lucide buys here is the affordance the cards lacked: an ArrowRight
-        that slides on hover, aria-hidden, text-primary-600 (#9e6615, 4.81 on
-        the white card, past the 3.0 graphic floor).
-        DECLINED: packages/web-shared/design/marketing/LeadCTAPanel.tsx, now
-        owner-approved and adopted on all three slug templates, but this hub
-        publishes no CTA heading and no CTA line to hand its required `title`
-        and `description`, and writing them is authoring marketing copy.
-        Owner item.
-        ADOPTED (reversing the earlier decline, and matching /services and
-        /for): packages/web-shared/design/primitives/page-blocks.tsx `Eyebrow`.
-        A structural section label is not a claim, and the words are lifted
-        verbatim from this route's own metaTitle, so no copy is authored.
-        Still DECLINED: packages/web-shared/design/marketing/TopicSection.tsx,
-        which would restructure the grid around a heading and body this route
-        does not have. */}
+    {/* ADOPTED (U2, 2026-09-29), reversing the decline above it:
+        packages/web-shared/design/marketing/CoverageCards.tsx. The decisive
+        half of the old reason ("its cards are <div>s with no link slot, and on
+        this hub the cards ARE the five /vat/<slug> links") is now false:
+        `CoverageItem.href` landed 2026-09-29 (CoverageCards.tsx:24-31) and
+        makes the whole card the link, with the kit focusRing. The other half
+        ("it would still need an invented LucideIcon per record") is also gone:
+        `icon` became optional on the same date (:17-23) and a card with no icon
+        renders with no badge. Every /vat/<slug> href is preserved, so the
+        route's link floor is unchanged.
+        CARRIED (two facts, both reported rather than patched, because
+        packages/ is a manager carve-out):
+        1. the kit renders a plain <a>, not next/link, so these are full-page
+           navigations rather than client transitions. The kit's own comment at
+           :26-29 states that and scopes it to internal paths, which these are.
+        2. the card's ring is the KIT focusRing (CoverageCards.tsx:5,110),
+           `outline-primary-600` = #9e6615, not this site's
+           `outline-[var(--focus-ring)]`. On this section's near-white
+           bg-primary-400/5 ground #9e6615 measures 4.81, past the 3.0 graphic
+           floor, so it is legible; what it is not is inside the one-mechanism
+           ring grep this port established. The site-side grep
+           `outline-\[var\(--focus-ring\)\]` therefore no longer finds every
+           ring on this route.
+        DROPPED with the hand-rolled card: the aria-hidden ArrowRight hover
+        affordance and the `line-clamp-2` truncation. Neither carries copy; the
+        headline now renders in full, and the card is still the link.
+        STILL DECLINED: packages/web-shared/design/marketing/TopicSection.tsx
+        (would restructure the grid around a heading and body this route does
+        not publish) and packages/web-shared/design/marketing/StickyCTA.tsx (an
+        interruption, banned estate-wide). */}
     <section className="bg-primary-400/5 py-12 sm:py-16 lg:py-20">
       <div className={siteContainerLg}>
-        <Eyebrow>VAT guides</Eyebrow>
-        <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {vatPages.map((vp) => (
-            <Link key={vp.slug} href={`/vat/${vp.slug}`} className={`group flex flex-col bg-white border border-neutral-200 p-5 sm:p-6 transition-all hover:border-primary-400 hover:shadow-md ${focusRing}`}>
-              <span className="text-base font-bold text-neutral-900 group-hover:text-primary-700 transition-colors">{vp.title}</span>
-              <p className="mt-2 text-sm text-neutral-500 line-clamp-2">{vp.headline}</p>
-              {/* Affordance only, no label: aria-hidden, so the link's
-                  accessible name is unchanged and no copy is authored. */}
-              <ArrowRight aria-hidden className="mt-4 h-4 w-4 text-primary-600 transition-transform group-hover:translate-x-1" strokeWidth={2} />
-            </Link>
-          ))}
-        </div>
+        {/* D4 (owner, 2026-09-29): this hub already published a section label,
+            so the string moves to ecommerce/niche.config.json
+            `hub_labels.vat` byte-identical and nothing rendered changes. */}
+        <Eyebrow>{hubLabels.vat}</Eyebrow>
+        <CoverageCards
+          columns={3}
+          tone="white"
+          items={vatPages.map((vp) => ({
+            title: vp.title,
+            body: vp.headline,
+            href: `/vat/${vp.slug}`,
+          }))}
+        />
       </div>
     </section>
     {/* ADDED 2026-09-28 parity phase 0 (Opus read): brief section 4 requires one

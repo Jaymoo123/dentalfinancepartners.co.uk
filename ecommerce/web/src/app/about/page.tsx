@@ -12,16 +12,6 @@ export const metadata: Metadata = {
   description: `${siteConfig.name} are specialist UK accountants for online sellers.`,
   alternates: { canonical: `${siteConfig.url}/about` },
 };
-/**
- * Contrast wrapper for the adopted kit Breadcrumb on the brand hero.
- * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
- * slate-300 with slate-400 chevrons, both written for the kit's navy: on
- * #8a5e1a they measure 3.76:1 and about 2.0:1, under the 4.5 text and 3.0
- * graphic floors. The kit is a carve-out, so the ground-correct palette is
- * applied from the call site (white 5.68, white/80 4.3). Identical string to
- * the phase-3, -4 and -5 route files.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
 export default function AboutPage() {
   const co = siteConfig.company;
   return (<>
@@ -36,8 +26,27 @@ export default function AboutPage() {
         ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
         Its own docblock scopes it to /thank-you, /book and /complete, which are
         noindex outcome pages and another builder's lease. /about is indexed
-        content and keeps the brand hero. */}
-    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+        content and keeps the brand hero.
+        RE-EXAMINED U2 2026-09-29 and the decline STANDS on two testable facts,
+        neither of which `sectionClassName` (SlimHero.tsx:27,35-47) addresses.
+        That prop does remove the ground half of the old objection: it replaces
+        the single class `bg-slate-900` and nothing else, so the brand hero
+        could keep its ground. What it cannot do:
+        (a) SlimHero renders no breadcrumb slot at all (SlimHero.tsx:49-59 is
+            section > container > Eyebrow + h1 + children, and `children` is the
+            standfirst position under the h1). This hero's Breadcrumb emits the
+            route's ONLY BreadcrumbList JSON-LD, so adopting would either delete
+            that node or move the trail below the h1.
+        (b) its eyebrow is hardcoded `Eyebrow onDark` (SlimHero.tsx:54) with no
+            override, and on this site's #8a5e1a brand ground the kit's on-dark
+            branch (text-slate-300, #cbd5e1) measures 3.83:1, under the 4.5
+            floor for an 11-12px label. That is the same measurement that keeps
+            `Eyebrow onDark` declined on every hero in this family.
+        It also shortens the rhythm from py-16 sm:py-20 to py-8 sm:py-10 lg:py-12,
+        which is a structural class the prop explicitly does not touch. So gate
+        D4 is answered without SlimHero: the four hub section labels became
+        config strings and the hand-rolled heroes stay. */}
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
       {/* Decoration only, aria-hidden, pointer-events-none. The section
           carries `relative overflow-hidden` and the container below
           `relative z-10`: that is the backdrop host contract, and getting
@@ -50,13 +59,11 @@ export default function AboutPage() {
             href="/" on every page, so this route's UNIQUE internal link set is
             unchanged. It also emits a BreadcrumbList JSON-LD and nothing else
             on this route emits one. */}
-        <div className={crumbOnBrand}>
-          <Breadcrumb
-            onDark
-            siteUrl={siteConfig.url}
-            items={[{ label: "Home", href: "/" }, { label: "About" }]}
-          />
-        </div>
+        <Breadcrumb
+          tone="onBrand"
+          siteUrl={siteConfig.url}
+          items={[{ label: "Home", href: "/" }, { label: "About" }]}
+        />
         <h1 className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">We work with UK online sellers.</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">Ecommerce accounts, VAT, settlement reconciliation and marketplace compliance are specialist enough that general accounting experience is not the same as ecommerce experience.</p>
       </div>
@@ -77,14 +84,16 @@ export default function AboutPage() {
     <section className="bg-white">
       <div className={`${siteContainerLg} ${sectionYLoose}`}>
         <Eyebrow>About</Eyebrow>
-        <div className="max-w-3xl space-y-8 text-base leading-relaxed text-neutral-600 sm:text-lg">
+        <div className="max-w-3xl space-y-8 text-base leading-relaxed text-slate-600 sm:text-lg">
           <p>We are specialist accountants for UK online sellers: Amazon FBA and FBM sellers, Shopify store owners, marketplace sellers on eBay, Etsy and TikTok Shop, and dropshipping businesses.</p>
           <p>We support accounts, VAT compliance, settlement reconciliation and tax returns for ecommerce businesses. This page is being prepared and will set out our approach in more detail.</p>
         </div>
-        <div className="mt-10 border-t border-neutral-100 pt-8 text-sm text-neutral-500">
+        <div className="mt-10 border-t border-slate-100 pt-8 text-sm text-slate-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>
         </div>
-        <div className="mt-8"><Link href="/contact" className={btnPrimary}>Get in touch</Link></div>
+        {/* `data-cta` triple added U2 2026-09-29 (owner gate D2). Attribute only:
+            the link, its href and its label are unchanged. */}
+        <div className="mt-8"><Link href="/contact" data-cta="about_body_book" data-cta-placement="body" data-cta-goal="contact" className={btnPrimary}>Get in touch</Link></div>
       </div>
     </section>
     {/* ADDED 2026-09-28 parity phase 0: section 4 requires a LeadCTAPanel with

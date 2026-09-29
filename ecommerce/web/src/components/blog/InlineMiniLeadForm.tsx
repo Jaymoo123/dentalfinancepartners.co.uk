@@ -16,7 +16,7 @@ export function InlineMiniLeadForm({ topic }: { topic?: string }) {
       heading="Want this checked against your specific situation?"
       blurb="Leave your details and a one-line summary. A specialist will come back to you, with no obligation."
       submitLabel="Get a quick reply"
-      className="my-12 rounded-xl bg-neutral-50 p-6 ring-1 ring-neutral-200 sm:p-8"
+      className="my-12 rounded-xl bg-slate-50 p-6 ring-1 ring-slate-200 sm:p-8"
     />
   );
 }

@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
 import { buildFaqPage } from "@accounting-network/web-shared/schema";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { SurvivalCurveChart, OneYearTrendChart } from "@/components/research/SurvivalIndexCharts";
 import {
@@ -20,16 +21,6 @@ const data = snapshot as unknown as SurvivalIndexSnapshot;
 const { meta, headline, cohorts } = data;
 
 const PAGE_PATH = "/research/online-seller-survival-index";
-
-/**
- * Contrast wrapper for the adopted kit Breadcrumb, the same string phases 3 and
- * 4 use on the brand hero. On the #1a3a5c research ground it is parity, not a
- * fix: packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark
- * trail slate-300 (7.84:1 here) with slate-400 chevrons (4.54:1), both already
- * past the 4.5 text and 3.0 graphic floors. Kept so every hero trail on the
- * site reads the same white: 11.64 links, 8.09 chevrons.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
 
 const latestCohort =
   cohorts.find((c) => c.birth_year === headline.latest_5yr_cohort_year) ?? cohorts[0];
@@ -86,6 +77,16 @@ const articleSchema = {
   mainEntityOfPage: { "@type": "WebPage", "@id": `${siteConfig.url}${PAGE_PATH}` },
 };
 
+/**
+ * HEX CARVE-OUT (U2 item 8, 2026-09-29). The hex values on this page and in
+ * src/components/research/SurvivalIndexCharts.tsx are NOT swept into tokens.
+ * #1a3a5c is the research family's shared accent (declared in no token, used
+ * across /research, both studies and formerly /about) and the rest are SVG
+ * chart series colours. An SVG series colour is DATA ENCODING, not a design
+ * token: it identifies a line or a bar, it has no cascade to join, and moving
+ * it to a token would let a later palette change silently re-label a chart.
+ * Reported rather than changed, so the reviewer does not re-raise it.
+ */
 export default function OnlineSellerSurvivalIndexPage() {
   return (
     <>
@@ -146,19 +147,17 @@ export default function OnlineSellerSurvivalIndexPage() {
           below), with no white card anywhere inside it, so the white ring is
           the correct one. This is not the light-island shape documented at
           src/app/globals.css:226-229. */}
-      <section className="ground-dark border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
+      <section className="ground-dark border-b border-slate-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className={crumbOnBrand}>
-            <Breadcrumb
-              onDark
-              siteUrl={siteConfig.url}
-              items={[
-                { label: "Home", href: "/" },
-                { label: "Research", href: "/research" },
-                { label: "Online Seller Survival Index" },
-              ]}
-            />
-          </div>
+          <Breadcrumb
+            tone="onBrand"
+            siteUrl={siteConfig.url}
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research", href: "/research" },
+              { label: "Online Seller Survival Index" },
+            ]}
+          />
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Online Seller Survival Index.
           </h1>
@@ -217,10 +216,10 @@ export default function OnlineSellerSurvivalIndexPage() {
           between a number and the thing it counts. */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             How long UK retail enterprises last
           </h2>
-          <p className="mb-8 max-w-2xl text-sm text-neutral-500">
+          <p className="mb-8 max-w-2xl text-sm text-slate-500">
             Source: ONS Business Demography, Table 4.2. Retail broad industry group, all UK
             enterprises (sole traders, partnerships and companies registered for VAT or PAYE).
           </p>
@@ -235,26 +234,26 @@ export default function OnlineSellerSurvivalIndexPage() {
                 five years later.
               </p>
             </div>
-            <div className="bg-neutral-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-5xl font-bold font-mono text-[#1a3a5c]">
                 {fmtPointsDiff(headline.latest_5yr_retail_pct, headline.latest_5yr_all_industries_pct)}
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 vs all-industries average
               </div>
-              <p className="mt-3 text-sm text-neutral-600">
+              <p className="mt-3 text-sm text-slate-600">
                 All-industries 5-year survival for the same cohort was{" "}
                 {fmtPct(headline.latest_5yr_all_industries_pct)}. Retail trails the wider economy.
               </p>
             </div>
-            <div className="bg-neutral-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-5xl font-bold font-mono text-[#1a3a5c]">
                 {fmtPct(headline.latest_1yr_retail_pct)}
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 1-year survival, {headline.latest_1yr_cohort_year} cohort
               </div>
-              <p className="mt-3 text-sm text-neutral-600">
+              <p className="mt-3 text-sm text-slate-600">
                 The most recent cohort published. First-year survival tracks close to the{" "}
                 {fmtPct(headline.latest_1yr_all_industries_pct)} all-industries figure; the gap
                 opens up from year 2 onwards.
@@ -265,18 +264,18 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* Survival curve */}
-      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
+      <section className={`bg-slate-50 border-t border-b border-slate-200 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             The survival curve: {headline.latest_5yr_cohort_year} birth cohort
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Of every 100 retail enterprises that started trading in {headline.latest_5yr_cohort_year},
             the chart tracks how many were still active at each anniversary, against the same
             measure for all UK industries combined.
           </p>
           {latestCohort && (
-            <div className="bg-white border border-neutral-200 p-4 sm:p-6 max-w-2xl">
+            <div className="bg-white border border-slate-200 p-4 sm:p-6 max-w-2xl">
               <SurvivalCurveChart cohort={latestCohort} />
             </div>
           )}
@@ -286,10 +285,10 @@ export default function OnlineSellerSurvivalIndexPage() {
       {/* Cohort table */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             Survival by birth-year cohort
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Each row is a different birth-year cohort, tracked independently. More recent cohorts
             have fewer years of data available; a dot means that survival year has not yet elapsed
             and ONS has not yet published it.
@@ -297,25 +296,25 @@ export default function OnlineSellerSurvivalIndexPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-neutral-100">
-                  <th className="text-left px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">Birth year</th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">Births</th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">1yr</th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">2yr</th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">3yr</th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">4yr</th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">5yr</th>
+                <tr className="bg-slate-100">
+                  <th className="text-left px-3 py-2 font-semibold text-slate-700 border border-slate-200">Birth year</th>
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">Births</th>
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">1yr</th>
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">2yr</th>
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">3yr</th>
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">4yr</th>
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">5yr</th>
                 </tr>
               </thead>
               <tbody>
                 {cohorts.map((c, i) => (
-                  <tr key={c.birth_year} className={i % 2 === 0 ? "bg-white" : "bg-neutral-50"}>
-                    <td className="px-3 py-2 font-mono text-neutral-800 border border-neutral-200">{c.birth_year}</td>
-                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                  <tr key={c.birth_year} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                    <td className="px-3 py-2 font-mono text-slate-800 border border-slate-200">{c.birth_year}</td>
+                    <td className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200">
                       {fmtNumber(c.retail.births)}
                     </td>
                     {(["y1", "y2", "y3", "y4", "y5"] as const).map((k) => (
-                      <td key={k} className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                      <td key={k} className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200">
                         {c.retail[`${k}_pct`] !== null ? fmtPct(c.retail[`${k}_pct`]) : "·"}
                       </td>
                     ))}
@@ -324,10 +323,10 @@ export default function OnlineSellerSurvivalIndexPage() {
               </tbody>
             </table>
           </div>
-          {/* neutral-400 is 2.52 on white, under the 4.5 text floor. neutral-500 is
-              4.74. The sourcing footnotes are the last place a figure's
+          {/* slate-400 is 2.56 on white, under the 4.5 text floor. slate-500 is
+              4.76. The sourcing footnotes are the last place a figure's
               provenance should go grey. */}
-          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-3 text-xs text-slate-500 max-w-2xl">
             Row figures are for the Retail broad industry group only. All-industries comparison
             figures are in the CSV download below.
           </p>
@@ -335,16 +334,16 @@ export default function OnlineSellerSurvivalIndexPage() {
       </section>
 
       {/* 1-year trend */}
-      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
+      <section className={`bg-slate-50 border-t border-b border-slate-200 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             1-year survival rate over time
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             The one figure available for every cohort in the series is 1-year survival. Retail has
             stayed in a relatively narrow band across the published cohorts.
           </p>
-          <div className="bg-white border border-neutral-200 p-4 sm:p-6 max-w-2xl">
+          <div className="bg-white border border-slate-200 p-4 sm:p-6 max-w-2xl">
             <OneYearTrendChart cohorts={cohorts} />
           </div>
         </div>
@@ -353,24 +352,24 @@ export default function OnlineSellerSurvivalIndexPage() {
       {/* Methodology */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-4">Methodology</h2>
-          <div className="max-w-2xl space-y-4 text-sm text-neutral-600">
+          <h2 className="text-lg font-bold text-slate-900 mb-4">Methodology</h2>
+          <div className="max-w-2xl space-y-4 text-sm text-slate-600">
             <div>
-              <strong className="text-neutral-900">Data source.</strong> ONS Business Demography
+              <strong className="text-slate-900">Data source.</strong> ONS Business Demography
               Table 4.2, &quot;Survival of newly born enterprises, broad industry group.&quot; ONS
               tracks &quot;enterprises&quot;, businesses registered for VAT or PAYE, from the year
               they are first active (&quot;born&quot;), and follows each birth-year cohort for up
               to five years.
             </div>
             <div>
-              <strong className="text-neutral-900">Broad group, not SIC 47910.</strong> Retail is
+              <strong className="text-slate-900">Broad group, not SIC 47910.</strong> Retail is
               the finest official survival cut ONS publishes; it mixes physical shops, market
               stalls, mail order and internet retailers. There is no official UK survival series
               isolating online retail (SIC 47910) alone. Treat the figures on this page as a
               retail-sector baseline, not an online-seller-specific measurement.
             </div>
             <div>
-              <strong className="text-neutral-900">Enterprise, not company.</strong> This is a
+              <strong className="text-slate-900">Enterprise, not company.</strong> This is a
               different unit to our{" "}
               <Link href="/research/online-seller-index" className={`text-[#1a3a5c] underline hover:opacity-75 ${focusRing}`}>
                 Online Seller Business Index
@@ -381,7 +380,7 @@ export default function OnlineSellerSurvivalIndexPage() {
               into a single figure.
             </div>
             <div>
-              <strong className="text-neutral-900">Caveats.</strong> Figures are control-rounded to
+              <strong className="text-slate-900">Caveats.</strong> Figures are control-rounded to
               the base 5 by ONS. &quot;Survival&quot; means the enterprise is still active on the
               ONS Inter-Departmental Business Register; it says nothing about profitability,
               growth, or trading under the same name or ownership. More recent birth-year cohorts
@@ -389,11 +388,11 @@ export default function OnlineSellerSurvivalIndexPage() {
               because of a data gap.
             </div>
             <div>
-              <strong className="text-neutral-900">Updated.</strong> Table 4.2 was last published{" "}
+              <strong className="text-slate-900">Updated.</strong> Table 4.2 was last published{" "}
               {meta.release_date}. Data generated {meta.generated_at}.
             </div>
           </div>
-          <p className="mt-6 text-sm text-neutral-500 max-w-2xl">
+          <p className="mt-6 text-sm text-slate-500 max-w-2xl">
             <strong>Data licence:</strong> ONS data is published under the{" "}
             <a
               href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
@@ -406,14 +405,19 @@ export default function OnlineSellerSurvivalIndexPage() {
             .
           </p>
           <p className="mt-3 text-sm">
-            <Link href={`${PAGE_PATH}/data`} className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}>
+            <Link
+              href={`${PAGE_PATH}/data`}
+              data-cta="research_survival_index_csv"
+              data-cta-placement="body"
+              className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
+            >
               Download the survival data (CSV)
             </Link>
           </p>
-          {/* neutral-400 is 2.52 on white, under the 4.5 text floor. neutral-500 is
-              4.74. The sourcing footnotes are the last place a figure's
+          {/* slate-400 is 2.56 on white, under the 4.5 text floor. slate-500 is
+              4.76. The sourcing footnotes are the last place a figure's
               provenance should go grey. */}
-          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-3 text-xs text-slate-500 max-w-2xl">
             Cite as: Online Seller Survival Index, compiled from ONS Business Demography Table 4.2
             (Open Government Licence v3.0). Published by Ecommerce Finance, data generated{" "}
             {meta.generated_at}.
@@ -436,40 +440,54 @@ export default function OnlineSellerSurvivalIndexPage() {
           ADOPTED: `Eyebrow` from
           packages/web-shared/design/primitives/page-blocks.tsx, the same
           "Questions" label the phase-4 calculator template uses above the same
-          heading. slate-600 on neutral-50 clears the text floor. */}
-      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
+          heading. slate-600 on slate-50 clears the text floor. */}
+      <section className={`bg-slate-50 border-t border-b border-slate-200 ${sectionY}`}>
         <div className={siteContainerLg}>
           <Eyebrow>Questions</Eyebrow>
-          <h2 className="mt-2 text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
+          <h2 className="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl mb-6">
             Frequently asked questions
           </h2>
           <div className="max-w-2xl space-y-6">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-700">{f.answer}</p>
+                <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">{f.answer}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={`ground-dark bg-neutral-900 ${sectionY}`}>
-        <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Building a retail business that lasts?
-          </h2>
-          <p className="mt-4 text-lg text-neutral-200 max-w-2xl">
-            Retail survives at a below-average rate over five years. Cash-flow discipline, correct
-            VAT registration timing and a clean sole-trader-vs-limited-company decision are the
-            factors within your control.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <LeadForm submitLabel="Speak to a specialist" />
-          </div>
-        </div>
-      </section>
+      {/* CTA.
+
+          ADOPTED (U2, 2026-09-29, owner gate D3 answered yes), reversing the
+          "owner gate" decline recorded further up this file:
+          packages/web-shared/design/marketing/LeadCTAPanel.tsx. This band was
+          the one route on the site carrying a bare <LeadForm> with no panel
+          around it, so the plan's instruction here is "panel MISSING", not
+          "form missing".
+
+          NO COPY IS AUTHORED OR DROPPED. `title` and `description` are the two
+          strings this band already published, byte-identical, and the form is
+          the same <LeadForm submitLabel="Speak to a specialist" /> mount it
+          already carried, so the route still has exactly one. `eyebrow=""` (the
+          kit default is a fee claim, K7), `formTitle=""` and `proofPoints={[]}`
+          (K8) keep every default that would publish unwritten copy off.
+
+          The hand-rolled `ground-dark bg-slate-900` section goes with it. The
+          kit panel paints bg-slate-900 and puts the form on a WHITE card inside
+          it, so `.ground-dark` must NOT be reintroduced: it is the light-island
+          defect that rule names, and the LeadForm's `[.ground-dark_&]` muted
+          variants were calibrated for the old dark ground, not for a white
+          card. On the card the base steps apply and are correct. */}
+      <LeadCTAPanel
+        eyebrow=""
+        title="Building a retail business that lasts?"
+        description="Retail survives at a below-average rate over five years. Cash-flow discipline, correct VAT registration timing and a clean sole-trader-vs-limited-company decision are the factors within your control."
+        proofPoints={[]}
+        formTitle=""
+        form={<LeadForm submitLabel="Speak to a specialist" />}
+      />
     </>
   );
 }

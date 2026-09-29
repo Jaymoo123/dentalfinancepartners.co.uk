@@ -18,15 +18,6 @@ type Props = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
 
 /**
- * Contrast wrapper for the adopted kit Breadcrumb on the brand hero. Same
- * string, same reason as the three hub families: the kit's onDark trail
- * (packages/web-shared/design/primitives/Breadcrumb.tsx) is slate-300 links and
- * slate-400 chevrons, 3.76:1 and about 2.0:1 on this #8a5e1a ground. The kit is
- * a manager carve-out, so the fix is applied here, at the call site.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
-
-/**
  * FAQ answers are authored HTML (see src/lib/calculators/tools/*.ts), rendered
  * with dangerouslySetInnerHTML below. Nothing here is inside .prose-blog, so the
  * anchors need a colour: primary-700 is #8a5e1a, 5.68 on white. The brand hex
@@ -77,26 +68,43 @@ export default async function CalculatorPage({ params }: Props) {
         ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx,
         the token-gated noindex hero, whose slate-900 ground would replace the
         locked brand hero.
+        RE-EXAMINED U2 2026-09-29 and the decline STANDS on two testable facts,
+        neither of which `sectionClassName` (SlimHero.tsx:27,35-47) addresses.
+        That prop does remove the ground half of the old objection: it replaces
+        the single class `bg-slate-900` and nothing else, so the brand hero
+        could keep its ground. What it cannot do:
+        (a) SlimHero renders no breadcrumb slot at all (SlimHero.tsx:49-59 is
+            section > container > Eyebrow + h1 + children, and `children` is the
+            standfirst position under the h1). This hero's Breadcrumb emits the
+            route's ONLY BreadcrumbList JSON-LD, so adopting would either delete
+            that node or move the trail below the h1.
+        (b) its eyebrow is hardcoded `Eyebrow onDark` (SlimHero.tsx:54) with no
+            override, and on this site's #8a5e1a brand ground the kit's on-dark
+            branch (text-slate-300, #cbd5e1) measures 3.83:1, under the 4.5
+            floor for an 11-12px label. That is the same measurement that keeps
+            `Eyebrow onDark` declined on every hero in this family.
+        It also shortens the rhythm from py-16 sm:py-20 to py-8 sm:py-10 lg:py-12,
+        which is a structural class the prop explicitly does not touch. So gate
+        D4 is answered without SlimHero: the four hub section labels became
+        config strings and the hand-rolled heroes stay.
         ADOPTION DECLINED here only: `Eyebrow onDark` from
         packages/web-shared/design/primitives/page-blocks.tsx, whose slate-300
         on-dark branch is 3.83:1 on #8a5e1a.
 
         `ground-dark` rebinds --focus-ring to white for the breadcrumb links.
         No light island sits inside this section. */}
-    <section className="ground-dark relative overflow-hidden border-b border-neutral-200 bg-primary-700 py-16 sm:py-20">
+    <section className="ground-dark relative overflow-hidden border-b border-slate-200 bg-primary-700 py-16 sm:py-20">
       {/* Decoration only, aria-hidden, pointer-events-none. The section
           carries `relative overflow-hidden` and the container below
           `relative z-10`: that is the backdrop host contract, and getting
           it wrong paints the texture over the copy. */}
       <EcommerceBackdrop />
       <div className={`relative z-10 ${siteContainerLg}`}>
-        <div className={crumbOnBrand}>
-          <Breadcrumb
-            onDark
-            siteUrl={site.url}
-            items={[{ label: "Home", href: "/" }, { label: "Calculators", href: "/calculators" }, { label: tool.name }]}
-          />
-        </div>
+        <Breadcrumb
+          tone="onBrand"
+          siteUrl={site.url}
+          items={[{ label: "Home", href: "/" }, { label: "Calculators", href: "/calculators" }, { label: tool.name }]}
+        />
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">{tool.name}</h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">{tool.oneLiner}</p>
       </div>
@@ -106,7 +114,7 @@ export default async function CalculatorPage({ params }: Props) {
         client wrapper (the tool carries a compute function, which cannot cross
         the RSC boundary). That component is a manager carve-out and is not
         edited here; its token use is reported to the manager instead. */}
-    <section className={`border-b border-neutral-200 bg-white ${sectionY}`}>
+    <section className={`border-b border-slate-200 bg-white ${sectionY}`}>
       <div className={siteContainerLg}>
         <CalculatorClient slug={tool.slug} variant="page" />
       </div>
@@ -123,20 +131,20 @@ export default async function CalculatorPage({ params }: Props) {
         <div className={siteContainerLg}>
           <div className="mx-auto max-w-3xl">
             <Eyebrow>Questions</Eyebrow>
-            <h2 className="mt-2 text-2xl font-bold text-neutral-900 sm:text-3xl">Frequently asked questions</h2>
+            <h2 className="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">Frequently asked questions</h2>
             <div className="mt-8 space-y-3 sm:space-y-4">
               {tool.faqs.map((f) => (
-                <details key={f.question} className="group border border-neutral-200 bg-white">
+                <details key={f.question} className="group border border-slate-200 bg-white">
                   {/* Hover colour is text-primary-700 (#8a5e1a, 5.68 on white).
                       The brand hex #c9861b is 3.04 on white and stays on the
                       aria-hidden icon only, which is a graphic at 3:1. */}
-                  <summary className={`flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-neutral-900 hover:text-primary-700 transition-colors list-none ${focusRing}`}>
+                  <summary className={`flex cursor-pointer items-center justify-between gap-4 px-6 py-5 font-semibold text-slate-900 hover:text-primary-700 transition-colors list-none ${focusRing}`}>
                     <span>{f.question}</span>
                     <span className="flex-shrink-0 text-primary-400 transition-transform group-open:rotate-45" aria-hidden>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" /></svg>
                     </span>
                   </summary>
-                  <div className={`border-t border-neutral-100 px-6 pb-6 pt-4 text-base leading-relaxed text-neutral-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: f.answer }} />
+                  <div className={`border-t border-slate-100 px-6 pb-6 pt-4 text-base leading-relaxed text-slate-600 ${linkOnLight}`} dangerouslySetInnerHTML={{ __html: f.answer }} />
                 </details>
               ))}
             </div>

@@ -110,6 +110,12 @@
     "cta_body": "Tell us about your store or marketplace accounts and we will come back within 24 hours.",
     "cta_button": "Get in touch"
   },
+  "hub_labels": {
+    "services": "What we do",
+    "for": "Who we help",
+    "vat": "VAT guides",
+    "research": "Reports"
+  },
   "shared_components_version": "1.0.0",
   "last_sync": null
 }

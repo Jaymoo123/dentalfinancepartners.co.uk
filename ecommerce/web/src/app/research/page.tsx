@@ -3,10 +3,23 @@ import Link from "next/link";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 import { siteConfig } from "@/config/site";
+import nicheConfig from "../../../../niche.config.json";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteContainerLg, sectionY, focusRing } from "@/components/ui/layout-utils";
 import onlineSellerIndex from "@/data/online-seller-index.json";
 import survivalSnapshot from "@/data/online-seller-survival-index.json";
 import { fmtPct } from "@/lib/research/survival-index";
+
+/**
+ * D4 (owner ruling, 2026-09-29): the hub section labels are config strings.
+ * Read straight off niche.config.json rather than through src/config/niche-loader.ts,
+ * because `NicheConfig` (packages/web-shared/lib/niche-config.ts) is a closed
+ * interface with no index signature and packages/ is a manager carve-out, so a
+ * new key cannot be typed there from this lease. The text is byte-identical to
+ * the literal it replaces: nothing rendered changes.
+ */
+const hubLabels = nicheConfig.hub_labels;
 
 export const metadata: Metadata = {
   title: "Ecommerce and online-retail research",
@@ -15,22 +28,19 @@ export const metadata: Metadata = {
   alternates: { canonical: `${siteConfig.url}/research` },
 };
 
-/**
- * Contrast wrapper for the adopted kit Breadcrumb, the same string phases 3 and
- * 4 use on the brand hero. On THIS ground it is parity, not a fix: the research
- * family paints #1a3a5c, where the kit's own onDark palette
- * (packages/web-shared/design/primitives/Breadcrumb.tsx) already measures
- * slate-300 links 7.84:1 and slate-400 chevrons 4.54:1, both past the 4.5 text
- * and 3.0 graphic floors. It is kept so every hero trail on the site reads the
- * same white (11.64 links, 8.09 chevrons), not because the kit fails here.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
-
 const active = onlineSellerIndex.sic47910.activeCompanies.label;
 const latestOns = onlineSellerIndex.onsJ4mc.annual.at(-1);
 
+/**
+ * `data-cta` ids for the two report cards (owner gate D2, 2026-09-29). The site
+ * emitted exactly one id, `header_book`, on all 51 routes before this wave, so
+ * nothing below the header could be attributed in `vw_cta_performance`. These
+ * are attributes on links that already exist: no link is added, no wrapper is
+ * tagged, and no word changes.
+ */
 const reports = [
   {
+    ctaId: "research_hub_seller_index",
     href: "/research/online-seller-index",
     title: "Online Seller Business Index",
     blurb: `Companies House SIC 47910 (retail via mail order or internet) incorporations and dissolutions, paired with the ONS internet-retail sales share of all UK retail (${latestOns?.pct}% in ${latestOns?.year}). Quarterly churn, formation-year cohort survival, formation seasonality and secondary SIC series.`,
@@ -39,6 +49,7 @@ const reports = [
     updated: onlineSellerIndex.meta.lastUpdated,
   },
   {
+    ctaId: "research_hub_survival_index",
     href: "/research/online-seller-survival-index",
     title: "Online Seller Survival Index",
     blurb: `How long UK retail enterprises actually last: ${fmtPct(survivalSnapshot.headline.latest_5yr_retail_pct)} of the ${survivalSnapshot.headline.latest_5yr_cohort_year} Retail birth cohort survived 5 years, trailing the ${fmtPct(survivalSnapshot.headline.latest_5yr_all_industries_pct)} all-industries average.`,
@@ -69,15 +80,13 @@ export default function ResearchIndexPage() {
           `ground-dark` rebinds --focus-ring to white for the trail's Home link,
           which is the only focusable element in this band. No light island sits
           inside it. */}
-      <section className="ground-dark border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
+      <section className="ground-dark border-b border-slate-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className={crumbOnBrand}>
-            <Breadcrumb
-              onDark
-              siteUrl={siteConfig.url}
-              items={[{ label: "Home", href: "/" }, { label: "Research" }]}
-            />
-          </div>
+          <Breadcrumb
+            tone="onBrand"
+            siteUrl={siteConfig.url}
+            items={[{ label: "Home", href: "/" }, { label: "Research" }]}
+          />
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Ecommerce and online-retail research.
           </h1>
@@ -95,41 +104,70 @@ export default function ResearchIndexPage() {
           link, so it would strip the sourcing that is the whole point of these
           tiles: each stat's label names the register or cohort the figure came
           from and the card itself is the link to the study. It is banned on this
-          site for exactly that reason. Also declined estate-wide or by owner
-          gate: packages/web-shared/design/marketing/LeadCTAPanel.tsx,
-          .../StickyCTA.tsx, .../TestimonialsSection.tsx, .../WhatToExpectCard.tsx.
+          site for exactly that reason. Also declined estate-wide or on a
+          reason that still holds: .../StickyCTA.tsx (an interruption),
+          .../TestimonialsSection.tsx (ships another site's quotes; this site
+          publishes no authored social proof, which is the live reason now that
+          `items` exists) and .../WhatToExpectCard.tsx (its default props
+          publish a fee line nobody here authored). LeadCTAPanel is no longer
+          declined on this route: the owner answered gate D3 yes and it is
+          mounted at the foot of the page.
 
           The #1a3a5c research navy is NOT swapped for the primary-* ramp. It is
           the shared accent of the whole research family (51 occurrences, mostly
           on /research/online-seller-index) and of /about, it has no declared
           token, and src/app/globals.css is outside this lease so one cannot be
-          added. As text it measures 11.64 on white and 11.15 on neutral-50, so
+          added. As text it measures 11.64 on white and 11.13 on slate-50, so
           it is not a contrast defect either. Reported to the manager instead. */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <Eyebrow>Reports</Eyebrow>
+          {/* D4 (owner, 2026-09-29): this hub already published a section
+              label, so the string moves to ecommerce/niche.config.json
+              `hub_labels.research` byte-identical. Nothing rendered changes. */}
+          <Eyebrow>{hubLabels.research}</Eyebrow>
           <div className="mt-2 grid gap-6 sm:grid-cols-2">
             {reports.map((r) => (
               <Link
                 key={r.href}
                 href={r.href}
-                className={`group border border-neutral-200 bg-white p-6 transition hover:border-[#1a3a5c] hover:shadow-md sm:p-8 ${focusRing}`}
+                data-cta={r.ctaId}
+                data-cta-placement="hub_card"
+                className={`group border border-slate-200 bg-white p-6 transition hover:border-[#1a3a5c] hover:shadow-md sm:p-8 ${focusRing}`}
               >
                 <div className="text-3xl font-bold font-mono text-[#1a3a5c] sm:text-4xl">{r.stat}</div>
-                <div className="mt-1 text-sm text-neutral-500">{r.statLabel}</div>
-                <h2 className="mt-5 text-xl font-bold text-neutral-900 group-hover:text-[#1a3a5c]">
+                <div className="mt-1 text-sm text-slate-500">{r.statLabel}</div>
+                <h2 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-[#1a3a5c]">
                   {r.title}
                 </h2>
-                <p className="mt-2 text-base leading-relaxed text-neutral-600">{r.blurb}</p>
-                {/* neutral-400 measured 2.52 on white, under the 4.5 text floor.
-                    neutral-500 is 4.74. Same fix as the two footnote lines on
+                <p className="mt-2 text-base leading-relaxed text-slate-600">{r.blurb}</p>
+                {/* slate-400 measured 2.56 on white, under the 4.5 text floor.
+                    slate-500 is 4.76. Same fix as the two footnote lines on
                     the survival study. */}
-                <p className="mt-4 text-xs text-neutral-500">Updated {r.updated}</p>
+                <p className="mt-4 text-xs text-slate-500">Updated {r.updated}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
+      {/* ADOPTED (U2, 2026-09-29, owner gate D3 answered yes), reversing the
+          "owner gate" decline in the block above:
+          packages/web-shared/design/marketing/LeadCTAPanel.tsx. The owner
+          ruling names the research indexes explicitly, and this route rendered
+          zero capture. One <LeadForm> mount, the site's own component.
+
+          NO COPY IS AUTHORED. `title` and `description` are this site's own
+          published panel strings, taken verbatim from /services, /for and
+          /about. `eyebrow=""` (the kit default is a fee claim, K7),
+          `formTitle=""` and `proofPoints={[]}` (K8) keep every component
+          default that would publish unwritten copy switched off. */}
+      <LeadCTAPanel
+        eyebrow=""
+        title="Speak to an ecommerce tax specialist."
+        description="Tell us about your situation and we will reply within 24 hours."
+        proofPoints={[]}
+        formTitle=""
+        form={<LeadForm />}
+      />
     </>
   );
 }

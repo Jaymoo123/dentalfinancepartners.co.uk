@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
 import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { LeadCTAPanel } from "@accounting-network/web-shared/design/marketing/LeadCTAPanel";
+import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { btnPrimary, focusRing, sectionY, siteContainerLg } from "@/components/ui/layout-utils";
 import { buildDatasetJsonLd } from "@/lib/schema";
@@ -18,17 +20,6 @@ import data from "@/data/online-seller-index.json";
 import formationSnapshot from "@/data/online-seller-formation-seasonality.json";
 
 const formationData = formationSnapshot as unknown as FormationSeasonalitySnapshot;
-
-/**
- * Contrast wrapper for the adopted kit Breadcrumb on the dark hero. Identical
- * string to the one the phase-3 and phase-4 slug templates use
- * (app/services/[slug]/page.tsx:37).
- * packages/web-shared/design/primitives/Breadcrumb.tsx paints its onDark trail
- * slate-300 with slate-400 chevrons, written for the kit's navy. On this
- * study's #1a3a5c the ground-correct palette is applied from the call site:
- * white 11.64, white/80 8.09.
- */
-const crumbOnBrand = "[&_a]:text-white [&_a]:hover:text-white [&_svg]:text-white/80";
 
 /**
  * THE RAW HEX ON THIS PAGE IS NOT THE BRAND HEX AND IS NOT CONVERTED.
@@ -131,20 +122,38 @@ export default function OnlineSellerIndexPage() {
           ADOPTION DECLINED: packages/web-shared/design/primitives/SlimHero.tsx.
           Its own header says it is the token-gated noindex hero and is
           "deliberately not the content-page hero"; its slate-900 ground would
-          also replace this study's #1a3a5c. */}
-      <section className="ground-dark border-b border-neutral-200 bg-[#1a3a5c] py-16 sm:py-20">
+          also replace this study's #1a3a5c.
+        RE-EXAMINED U2 2026-09-29 and the decline STANDS on two testable facts,
+        neither of which `sectionClassName` (SlimHero.tsx:27,35-47) addresses.
+        That prop does remove the ground half of the old objection: it replaces
+        the single class `bg-slate-900` and nothing else, so the brand hero
+        could keep its ground. What it cannot do:
+        (a) SlimHero renders no breadcrumb slot at all (SlimHero.tsx:49-59 is
+            section > container > Eyebrow + h1 + children, and `children` is the
+            standfirst position under the h1). This hero's Breadcrumb emits the
+            route's ONLY BreadcrumbList JSON-LD, so adopting would either delete
+            that node or move the trail below the h1.
+        (b) its eyebrow is hardcoded `Eyebrow onDark` (SlimHero.tsx:54) with no
+            override, and it would be a SECOND section label directly above a
+            breadcrumb whose current crumb already reads "Research". On THIS
+            ground the contrast is not the objection (slate-300 on #1a3a5c is
+            7.84:1, a pass); the duplication is, and it is the same reason
+            `Eyebrow onDark` is declined on this hero today.
+        It also shortens the rhythm from py-16 sm:py-20 to py-8 sm:py-10 lg:py-12,
+        which is a structural class the prop explicitly does not touch. So gate
+        D4 is answered without SlimHero: the four hub section labels became
+        config strings and the hand-rolled heroes stay. */}
+      <section className="ground-dark border-b border-slate-200 bg-[#1a3a5c] py-16 sm:py-20">
         <div className={siteContainerLg}>
-          <div className={crumbOnBrand}>
-            <Breadcrumb
-              onDark
-              siteUrl={siteConfig.url}
-              items={[
-                { label: "Home", href: "/" },
-                { label: "Research", href: "/research" },
-                { label: "UK Online Seller Business Index" },
-              ]}
-            />
-          </div>
+          <Breadcrumb
+            tone="onBrand"
+            siteUrl={siteConfig.url}
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research", href: "/research" },
+              { label: "UK Online Seller Business Index" },
+            ]}
+          />
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             UK Online Seller Business Index.
           </h1>
@@ -205,10 +214,10 @@ export default function OnlineSellerIndexPage() {
           publish a fee line nobody here authored). */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             UK incorporated online-retail companies (SIC 47910)
           </h2>
-          <p className="mb-8 max-w-2xl text-sm text-neutral-500">
+          <p className="mb-8 max-w-2xl text-sm text-slate-500">
             Source:{" "}
             <a
               href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search"
@@ -231,32 +240,32 @@ export default function OnlineSellerIndexPage() {
                 active status on the Companies House register as at {pullDate}.
               </p>
             </div>
-            <div className="bg-neutral-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-5xl font-bold font-mono text-[#1a3a5c]">
                 {dissolved.toLocaleString("en-GB")}
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 dissolved (all-time, cumulative)
               </div>
-              <p className="mt-3 text-sm text-neutral-600">
+              <p className="mt-3 text-sm text-slate-600">
                 All SIC 47910 companies dissolved at any point since the register began.
                 This is a cumulative stock, not a rate.
               </p>
             </div>
-            <div className="bg-neutral-50 border border-neutral-200 p-6">
+            <div className="bg-slate-50 border border-slate-200 p-6">
               <div className="text-5xl font-bold font-mono text-[#1a3a5c]">
                 {totalEver.toLocaleString("en-GB")}
               </div>
-              <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 total ever registered
               </div>
-              <p className="mt-3 text-sm text-neutral-600">
+              <p className="mt-3 text-sm text-slate-600">
                 Active plus dissolved. {snapshotPct} of all SIC 47910 companies ever
                 registered are still active. See methodology note on this figure.
               </p>
             </div>
           </div>
-          <p className="mt-4 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-4 text-xs text-slate-500 max-w-2xl">
             The {snapshotPct} figure is a register snapshot, NOT a cohort survival rate. It
             mixes companies of all ages and is inflated by recently formed companies that have not
             yet had time to fail. See the methodology section.
@@ -279,10 +288,10 @@ export default function OnlineSellerIndexPage() {
                 `var(--brand-primary-text)` colour commit 3f23c7e7 gave them
                 (5.68 on white). */}
             <Eyebrow>Lockdown boom cohort</Eyebrow>
-            <p className="text-2xl font-bold text-neutral-900 mb-3">
+            <p className="text-2xl font-bold text-slate-900 mb-3">
               {cohort2021} SIC 47910 companies incorporated in 2021
             </p>
-            <p className="text-neutral-600 text-sm">
+            <p className="text-slate-600 text-sm">
               The four quarters of 2021 produced the largest single-year incorporation wave
               in the SIC 47910 series. True cohort survival curves (how many of that 2021
               intake are still active today) require cross-referencing individual company
@@ -292,7 +301,7 @@ export default function OnlineSellerIndexPage() {
               dissolutions climbed from around 6,000 to 7,000 per quarter in 2022 to over
               21,000 per quarter in 2025.
             </p>
-            <p className="mt-3 text-xs text-neutral-600">
+            <p className="mt-3 text-xs text-slate-600">
               Source: Companies House Advanced Search API, incorporated_from/to filters.
               Retrieved {pullDate}.
             </p>
@@ -303,10 +312,10 @@ export default function OnlineSellerIndexPage() {
       {/* Quarterly births and deaths table */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             Quarterly incorporations and dissolutions: SIC 47910
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             2021-Q1 to 2026-Q2. Source:{" "}
             <a
               href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search"
@@ -321,35 +330,35 @@ export default function OnlineSellerIndexPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-neutral-100">
-                  <th className="text-left px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                <tr className="bg-slate-100">
+                  <th className="text-left px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Quarter
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Incorporations
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Dissolutions
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Net
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {quarters.map((q, i) => (
-                  <tr key={q.quarter} className={i % 2 === 0 ? "bg-white" : "bg-neutral-50"}>
-                    <td className="px-3 py-2 font-mono text-neutral-800 border border-neutral-200">
+                  <tr key={q.quarter} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                    <td className="px-3 py-2 font-mono text-slate-800 border border-slate-200">
                       {q.quarter}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                    <td className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200">
                       {q.incorporations.toLocaleString("en-GB")}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                    <td className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200">
                       {q.dissolutions.toLocaleString("en-GB")}
                     </td>
                     <td
-                      className={`px-3 py-2 text-right font-mono font-semibold border border-neutral-200 ${
+                      className={`px-3 py-2 text-right font-mono font-semibold border border-slate-200 ${
                         q.net >= 0 ? "text-emerald-700" : "text-red-600"
                       }`}
                     >
@@ -361,7 +370,7 @@ export default function OnlineSellerIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-3 text-xs text-slate-500 max-w-2xl">
             Incorporations: all companies incorporating with SIC 47910 in that quarter regardless
             of current status. Dissolutions: companies whose dissolution date falls within that
             quarter. Net = incorporations minus dissolutions.
@@ -370,12 +379,12 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* Cohort survival */}
-      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
+      <section className={`bg-slate-50 border-t border-b border-slate-200 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             Formation-year cohort survival: SIC 47910
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Companies incorporated in each calendar year, tracked to their current register
             status. Survival at 1, 2 and 3 years = the share of that cohort not formally
             dissolved by 31 December of the formation year plus 1, 2 or 3. Source: Companies
@@ -385,49 +394,49 @@ export default function OnlineSellerIndexPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-neutral-100">
-                  <th className="text-left px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                <tr className="bg-slate-100">
+                  <th className="text-left px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Formed in
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Ever registered
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Still active
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Still active (%)
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Survival at 1yr
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     at 2yr
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     at 3yr
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {cohorts.map((c, i) => (
-                  <tr key={c.year} className={i % 2 === 0 ? "bg-white" : "bg-neutral-50"}>
-                    <td className="px-3 py-2 font-mono text-neutral-800 border border-neutral-200">
+                  <tr key={c.year} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                    <td className="px-3 py-2 font-mono text-slate-800 border border-slate-200">
                       {c.year}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                    <td className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200">
                       {c.everRegistered.toLocaleString("en-GB")}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                    <td className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200">
                       {c.stillActive.toLocaleString("en-GB")}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono font-semibold text-[#1a3a5c] border border-neutral-200">
+                    <td className="px-3 py-2 text-right font-mono font-semibold text-[#1a3a5c] border border-slate-200">
                       {c.stillActivePct}%
                     </td>
                     {(["1", "2", "3"] as const).map((k) => (
                       <td
                         key={k}
-                        className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200"
+                        className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200"
                       >
                         {(c.survivalByYear as Record<string, number>)[k] !== undefined
                           ? `${(c.survivalByYear as Record<string, number>)[k]}%`
@@ -439,7 +448,7 @@ export default function OnlineSellerIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-3 text-xs text-slate-500 max-w-2xl">
             The denominator is active plus dissolved companies only; companies in liquidation,
             administration or live strike-off proceedings sit in neither bucket, so recent-cohort
             figures are slightly overstated. Formal dissolution also lags actual trading closure,
@@ -452,10 +461,10 @@ export default function OnlineSellerIndexPage() {
       {/* ONS demand overlay */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             ONS demand-side overlay: internet sales as a proportion of all retail
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Series J4MC from the{" "}
             <a
               href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi"
@@ -469,14 +478,14 @@ export default function OnlineSellerIndexPage() {
             against company incorporation rates. Retrieved {pullDate}.
           </p>
           {latestOns && (
-            <div className="mb-6 bg-white border border-neutral-200 p-5 inline-block">
+            <div className="mb-6 bg-white border border-slate-200 p-5 inline-block">
               <div className="text-4xl font-bold font-mono text-[#1a3a5c]">
                 {latestOns.pct}%
               </div>
-              <div className="mt-1 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+              <div className="mt-1 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 internet retail share of all retail ({latestOns.year})
               </div>
-              <p className="mt-2 text-xs text-neutral-500">
+              <p className="mt-2 text-xs text-slate-500">
                 ONS J4MC, dataset DRSI. {latestOns.year} annual average.
               </p>
             </div>
@@ -484,22 +493,22 @@ export default function OnlineSellerIndexPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse max-w-lg">
               <thead>
-                <tr className="bg-neutral-100">
-                  <th className="text-left px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                <tr className="bg-slate-100">
+                  <th className="text-left px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Year
                   </th>
-                  <th className="text-right px-3 py-2 font-semibold text-neutral-700 border border-neutral-200">
+                  <th className="text-right px-3 py-2 font-semibold text-slate-700 border border-slate-200">
                     Internet retail share (%)
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {onsAnnual.map((row, i) => (
-                  <tr key={row.year} className={i % 2 === 0 ? "bg-white" : "bg-neutral-50"}>
-                    <td className="px-3 py-2 font-mono text-neutral-800 border border-neutral-200">
+                  <tr key={row.year} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                    <td className="px-3 py-2 font-mono text-slate-800 border border-slate-200">
                       {row.year}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-neutral-800 border border-neutral-200">
+                    <td className="px-3 py-2 text-right font-mono text-slate-800 border border-slate-200">
                       {row.pct}%
                     </td>
                   </tr>
@@ -507,7 +516,7 @@ export default function OnlineSellerIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-3 text-xs text-slate-500 max-w-2xl">
             The 2021 peak (30.7%) reflects lockdown-driven online spending, after the jump to
             28.1% in 2020. The subsequent partial reversal reflects in-store recovery. 2025 at
             27.4% shows internet retail settling a few points below that peak as a share of all
@@ -519,19 +528,19 @@ export default function OnlineSellerIndexPage() {
       {/* Secondary SIC series */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             Secondary SIC series (labelled separately, never blended)
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             Two adjacent codes tracked as separate series. Neither is added to the SIC 47910
             headline. Source: Companies House Advanced Search API. Retrieved {pullDate}.
           </p>
           <div className="grid gap-6 sm:grid-cols-2 max-w-2xl">
-            <div className="border border-neutral-200 p-5">
+            <div className="border border-slate-200 p-5">
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 SIC 47990
               </div>
-              <div className="font-semibold text-neutral-900 mb-1">
+              <div className="font-semibold text-slate-900 mb-1">
                 Other retail not in stores
               </div>
               <div className="flex gap-6 mt-3">
@@ -539,21 +548,21 @@ export default function OnlineSellerIndexPage() {
                   <div className="text-2xl font-bold font-mono text-[#1a3a5c]">
                     {sec47990.activeLabel}
                   </div>
-                  <div className="text-xs text-neutral-500">active</div>
+                  <div className="text-xs text-slate-500">active</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold font-mono text-neutral-500">
+                  <div className="text-2xl font-bold font-mono text-slate-500">
                     {sec47990.dissolvedLabel}
                   </div>
-                  <div className="text-xs text-neutral-500">dissolved (cumulative)</div>
+                  <div className="text-xs text-slate-500">dissolved (cumulative)</div>
                 </div>
               </div>
             </div>
-            <div className="border border-neutral-200 p-5">
+            <div className="border border-slate-200 p-5">
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 SIC 46900
               </div>
-              <div className="font-semibold text-neutral-900 mb-1">
+              <div className="font-semibold text-slate-900 mb-1">
                 Non-specialised wholesale (common FBA-wholesaler filing code)
               </div>
               <div className="flex gap-6 mt-3">
@@ -561,13 +570,13 @@ export default function OnlineSellerIndexPage() {
                   <div className="text-2xl font-bold font-mono text-[#1a3a5c]">
                     {sec46900.activeLabel}
                   </div>
-                  <div className="text-xs text-neutral-500">active</div>
+                  <div className="text-xs text-slate-500">active</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold font-mono text-neutral-500">
+                  <div className="text-2xl font-bold font-mono text-slate-500">
                     {sec46900.dissolvedLabel}
                   </div>
-                  <div className="text-xs text-neutral-500">dissolved (cumulative)</div>
+                  <div className="text-xs text-slate-500">dissolved (cumulative)</div>
                 </div>
               </div>
             </div>
@@ -578,10 +587,10 @@ export default function OnlineSellerIndexPage() {
       {/* Seasonality (engine-derived, monthly series) */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-2">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-2">
             Seasonality and the long-run formation trend
           </h2>
-          <p className="mb-6 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-6 max-w-2xl text-slate-600 text-sm">
             A second, independently-pulled monthly Companies House series (
             {formationMonthLabel(formationData.incorporations.monthly[0].month)} to{" "}
             {formationMonthLabel(formationData.meta.incorporations_settled_through)}), used here to
@@ -606,29 +615,29 @@ export default function OnlineSellerIndexPage() {
                   ({formationData.headline.decade.multiple}&times;).
                 </p>
               </div>
-              <div className="bg-neutral-50 border border-neutral-200 p-6">
+              <div className="bg-slate-50 border border-slate-200 p-6">
                 <div className="text-4xl font-bold font-mono text-[#1a3a5c]">
                   {fmtFormationNumber(formationData.headline.online_retail_cos_ttm)}
                 </div>
-                <div className="mt-2 text-sm font-semibold text-neutral-500 uppercase tracking-wider">
+                <div className="mt-2 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                   SIC 47910 incorporations, trailing 12 months
                 </div>
-                <p className="mt-3 text-sm text-neutral-600">
+                <p className="mt-3 text-sm text-slate-600">
                   {fmtFormationPercent(formationData.headline.online_retail_cos_yoy_pct)} year-on-year
                   to {formationMonthLabel(formationData.headline.last_settled_month)}.
                 </p>
               </div>
             </div>
           )}
-          <p className="mb-4 max-w-2xl text-neutral-600 text-sm">
+          <p className="mb-4 max-w-2xl text-slate-600 text-sm">
             Averaged across every complete year in the series, SIC 47910 incorporations peak in
             January and fall to their lowest in December, a &quot;new year, new business&quot;
             pattern typical of a low-barrier-to-entry sector.
           </p>
-          <div className="bg-white border border-neutral-200 p-4 sm:p-6 max-w-2xl">
+          <div className="bg-white border border-slate-200 p-4 sm:p-6 max-w-2xl">
             <FormationSeasonalityChart points={deriveSeasonality(formationData)} />
           </div>
-          <p className="mt-4 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-4 text-xs text-slate-500 max-w-2xl">
             Source: Companies House Advanced Search API, monthly incorporated_from/to filters,
             SIC 47910. {formationData.meta.provisional_months.length > 0 && (
               <>Excludes provisional months ({formationData.meta.provisional_months.join(", ")}).</>
@@ -639,15 +648,15 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* What this index measures */}
-      <section className={`bg-neutral-50 border-t border-b border-neutral-200 ${sectionY}`}>
+      <section className={`bg-slate-50 border-t border-b border-slate-200 ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-6">
             What this index measures
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 max-w-3xl">
-            <div className="bg-white border border-neutral-200 p-5">
-              <div className="font-semibold text-neutral-900 mb-2">What the index captures</div>
-              <ul className="text-sm text-neutral-600 space-y-1.5 list-disc list-inside">
+            <div className="bg-white border border-slate-200 p-5">
+              <div className="font-semibold text-slate-900 mb-2">What the index captures</div>
+              <ul className="text-sm text-slate-600 space-y-1.5 list-disc list-inside">
                 <li>Limited companies and LLPs with SIC code 47910 as primary or secondary</li>
                 <li>
                   Corporate Amazon FBA sellers, Shopify merchants, and marketplace operators
@@ -659,11 +668,11 @@ export default function OnlineSellerIndexPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white border border-neutral-200 p-5">
-              <div className="font-semibold text-neutral-900 mb-2">
+            <div className="bg-white border border-slate-200 p-5">
+              <div className="font-semibold text-slate-900 mb-2">
                 What the index does not capture
               </div>
-              <ul className="text-sm text-neutral-600 space-y-1.5 list-disc list-inside">
+              <ul className="text-sm text-slate-600 space-y-1.5 list-disc list-inside">
                 <li>
                   Sole traders and individuals selling via marketplaces (the side-hustle layer)
                 </li>
@@ -685,10 +694,10 @@ export default function OnlineSellerIndexPage() {
       {/* On-funnel links */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-4">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-4">
             Tax and compliance context for online sellers
           </h2>
-          <p className="mb-8 max-w-2xl text-neutral-600">
+          <p className="mb-8 max-w-2xl text-slate-600">
             Corporate churn in the online-retail sector tracks predictable tax and compliance
             pressure points: VAT registration thresholds reached on gross marketplace payout
             (not net settlement), platform reporting making HMRC visibility near-total, and
@@ -698,60 +707,60 @@ export default function OnlineSellerIndexPage() {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <Link
               href="/for/amazon-sellers"
-              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
+              className={`group border border-slate-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
-              <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
+              <div className="font-bold text-slate-900 group-hover:text-[#1a3a5c] transition-colors">
                 Amazon sellers
               </div>
-              <p className="mt-1.5 text-sm text-neutral-600">
+              <p className="mt-1.5 text-sm text-slate-600">
                 VAT on marketplace fees, deemed-supplier rules, and settlement reconciliation
                 for FBA and FBM sellers.
               </p>
             </Link>
             <Link
               href="/for/shopify-sellers"
-              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
+              className={`group border border-slate-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
-              <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
+              <div className="font-bold text-slate-900 group-hover:text-[#1a3a5c] transition-colors">
                 Shopify sellers
               </div>
-              <p className="mt-1.5 text-sm text-neutral-600">
+              <p className="mt-1.5 text-sm text-slate-600">
                 DTC merchant tax: VAT on UK and EU sales, bookkeeping for multi-currency
                 payouts, and the sole-trader vs Ltd decision.
               </p>
             </Link>
             <Link
               href="/for/marketplace-sellers"
-              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
+              className={`group border border-slate-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
-              <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
+              <div className="font-bold text-slate-900 group-hover:text-[#1a3a5c] transition-colors">
                 Marketplace sellers
               </div>
-              <p className="mt-1.5 text-sm text-neutral-600">
+              <p className="mt-1.5 text-sm text-slate-600">
                 eBay, Etsy, Vinted, TikTok Shop: platform reporting obligations, the trading
                 allowance, and when you cross into formal self-assessment.
               </p>
             </Link>
             <Link
               href="/for/dropshippers"
-              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
+              className={`group border border-slate-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Hub
               </div>
-              <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
+              <div className="font-bold text-slate-900 group-hover:text-[#1a3a5c] transition-colors">
                 Dropshippers
               </div>
-              <p className="mt-1.5 text-sm text-neutral-600">
+              <p className="mt-1.5 text-sm text-slate-600">
                 Customs, import VAT under the{" "}
                 {/* ponytail: plain span — a nested <a> inside the card <Link> is invalid HTML and fails next/no-html-link-for-pages */}
                 <span className="underline">£135 consignment rule</span>
@@ -761,15 +770,15 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/services/ecommerce-vat-compliance"
-              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
+              className={`group border border-slate-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Service
               </div>
-              <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
+              <div className="font-bold text-slate-900 group-hover:text-[#1a3a5c] transition-colors">
                 Ecommerce VAT compliance
               </div>
-              <p className="mt-1.5 text-sm text-neutral-600">
+              <p className="mt-1.5 text-sm text-slate-600">
                 VAT registration on gross marketplace revenue, the{" "}
                 <span className="underline">deemed-supplier mechanism</span>
                 , and quarterly returns for multi-platform sellers.
@@ -777,15 +786,15 @@ export default function OnlineSellerIndexPage() {
             </Link>
             <Link
               href="/services/settlement-payout-reconciliation"
-              className={`group border border-neutral-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
+              className={`group border border-slate-200 bg-white p-5 hover:border-[#1a3a5c] transition-colors ${focusRing}`}
             >
               <div className="text-xs font-semibold text-[var(--brand-primary-text)] uppercase tracking-wider mb-2">
                 Service
               </div>
-              <div className="font-bold text-neutral-900 group-hover:text-[#1a3a5c] transition-colors">
+              <div className="font-bold text-slate-900 group-hover:text-[#1a3a5c] transition-colors">
                 Settlement and payout reconciliation
               </div>
-              <p className="mt-1.5 text-sm text-neutral-600">
+              <p className="mt-1.5 text-sm text-slate-600">
                 Matching platform payouts to gross sales, returns, fees, and reserve holds
                 across Amazon, eBay and Shopify Payments.
               </p>
@@ -795,12 +804,12 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* VAT threshold note */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-10 sm:py-12">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-3">
+          <h2 className="text-lg font-bold text-slate-900 mb-3">
             A recurring driver of seller closures: the VAT threshold on gross turnover
           </h2>
-          <p className="max-w-2xl text-sm text-neutral-700 mb-3">
+          <p className="max-w-2xl text-sm text-slate-700 mb-3">
             The UK{" "}
             <a
               href="https://www.gov.uk/vat-registration/when-to-register"
@@ -816,7 +825,7 @@ export default function OnlineSellerIndexPage() {
             amount that hits your bank account is materially lower than the figure HMRC uses
             to determine whether you must register.
           </p>
-          <p className="max-w-2xl text-sm text-neutral-600">
+          <p className="max-w-2xl text-sm text-slate-600">
             The quarterly dissolution data above shows SIC 47910 company deaths climbing from
             around 6,000 to 8,000 per quarter in 2021 to 2022 to over 21,000 per quarter in
             2025. One structural driver: incorporated sellers who did not anticipate crossing
@@ -843,10 +852,10 @@ export default function OnlineSellerIndexPage() {
       {/* Methodology */}
       <section className="bg-white py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-4">Methodology</h2>
-          <div className="max-w-2xl space-y-4 text-sm text-neutral-600">
+          <h2 className="text-lg font-bold text-slate-900 mb-4">Methodology</h2>
+          <div className="max-w-2xl space-y-4 text-sm text-slate-600">
             <div>
-              <strong className="text-neutral-900">Primary SIC code.</strong> SIC 47910
+              <strong className="text-slate-900">Primary SIC code.</strong> SIC 47910
               (retail sale via mail order houses or via internet), as defined in the{" "}
               <a
                 href="https://resources.companieshouse.gov.uk/sic/"
@@ -859,13 +868,13 @@ export default function OnlineSellerIndexPage() {
               . Used as the headline series for births, deaths and active counts.
             </div>
             <div>
-              <strong className="text-neutral-900">Labelled secondary series.</strong> SIC 47990
+              <strong className="text-slate-900">Labelled secondary series.</strong> SIC 47990
               (other retail not in stores) and SIC 46900 (non-specialised wholesale, the common
               FBA-wholesaler filing code) are tracked separately and never blended silently into
               the SIC 47910 headline.
             </div>
             <div>
-              <strong className="text-neutral-900">Active and dissolved counts.</strong> Live hit
+              <strong className="text-slate-900">Active and dissolved counts.</strong> Live hit
               counts from the{" "}
               <a
                 href="https://developer-specs.company-information.service.gov.uk/companies-house-public-data-api/reference/search/advanced-company-search"
@@ -879,18 +888,18 @@ export default function OnlineSellerIndexPage() {
               is a register snapshot as at {pullDate}, not a survival rate.
             </div>
             <div>
-              <strong className="text-neutral-900">Quarterly incorporations.</strong> CH
+              <strong className="text-slate-900">Quarterly incorporations.</strong> CH
               incorporated_from / incorporated_to date filters with no company_status restriction.
               Counts all companies ever incorporated with SIC 47910 in that quarter regardless of
               current status.
             </div>
             <div>
-              <strong className="text-neutral-900">Quarterly dissolutions.</strong> CH
+              <strong className="text-slate-900">Quarterly dissolutions.</strong> CH
               dissolved_from / dissolved_to date filters. Counts companies whose dissolution date
               falls within that quarter.
             </div>
             <div>
-              <strong className="text-neutral-900">ONS overlay.</strong> Series J4MC (internet
+              <strong className="text-slate-900">ONS overlay.</strong> Series J4MC (internet
               retail as a proportion of all retail sales, seasonally adjusted) from the{" "}
               <a
                 href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/timeseries/j4mc/drsi"
@@ -904,7 +913,7 @@ export default function OnlineSellerIndexPage() {
               demand-side external anchor against company-birth rates.
             </div>
             <div>
-              <strong className="text-neutral-900">Snapshot active rate.</strong> Active
+              <strong className="text-slate-900">Snapshot active rate.</strong> Active
               divided by (active plus dissolved) as at the pull date. This is NOT a cohort
               survival rate: it mixes companies of all ages and is inflated by recently formed
               companies that have not yet had time to dissolve. A true cohort survival curve
@@ -913,14 +922,14 @@ export default function OnlineSellerIndexPage() {
             </div>
           </div>
           <div className="mt-6 max-w-2xl">
-            <h3 className="text-sm font-semibold text-neutral-900 mb-2">Caveats</h3>
-            <ul className="text-sm text-neutral-500 space-y-1.5 list-disc list-inside">
+            <h3 className="text-sm font-semibold text-slate-900 mb-2">Caveats</h3>
+            <ul className="text-sm text-slate-500 space-y-1.5 list-disc list-inside">
               {data.meta.caveats.map((c, i) => (
                 <li key={i}>{c}</li>
               ))}
             </ul>
           </div>
-          <p className="mt-6 text-sm text-neutral-500 max-w-2xl">
+          <p className="mt-6 text-sm text-slate-500 max-w-2xl">
             <strong>Data licences:</strong> Companies House data is published under the{" "}
             <a
               href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
@@ -932,16 +941,18 @@ export default function OnlineSellerIndexPage() {
             </a>
             . ONS data is published under the same licence.
           </p>
-          <p className="mt-3 text-sm text-neutral-500 max-w-2xl">
+          <p className="mt-3 text-sm text-slate-500 max-w-2xl">
             Update cadence: quarterly. Last updated: {pullDate}. Next scheduled refresh:{" "}
             {data.meta.nextRefresh}.
           </p>
-          <p className="mt-3 text-xs text-neutral-500 max-w-2xl">
+          <p className="mt-3 text-xs text-slate-500 max-w-2xl">
             Cite as: {data.meta.citeAs}
           </p>
           <p className="mt-4 text-sm">
             <Link
               href="/research/online-seller-index/data"
+              data-cta="research_seller_index_csv"
+              data-cta-placement="body"
               className={`font-semibold text-[#1a3a5c] hover:underline ${focusRing}`}
             >
               {/* "and seasonality" removed: data/route.ts serves
@@ -972,14 +983,14 @@ export default function OnlineSellerIndexPage() {
           not re-litigate. */}
       <section className={`bg-white ${sectionY}`}>
         <div className={siteContainerLg}>
-          <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl mb-6">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl mb-6">
             Frequently asked questions
           </h2>
           <div className="max-w-2xl space-y-6">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-lg font-bold text-neutral-900">{f.question}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-700">{f.answer}</p>
+                <h3 className="text-lg font-bold text-slate-900">{f.question}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">{f.answer}</p>
               </div>
             ))}
           </div>
@@ -987,12 +998,12 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* Platform reporting context */}
-      <section className="bg-neutral-50 border-t border-b border-neutral-200 py-10 sm:py-12">
+      <section className="bg-slate-50 border-t border-b border-slate-200 py-10 sm:py-12">
         <div className={siteContainerLg}>
-          <h2 className="text-lg font-bold text-neutral-900 mb-3">
+          <h2 className="text-lg font-bold text-slate-900 mb-3">
             Platform reporting: the HMRC lens on seller data
           </h2>
-          <p className="max-w-2xl text-sm text-neutral-700 mb-3">
+          <p className="max-w-2xl text-sm text-slate-700 mb-3">
             Since{" "}
             <a
               href="https://www.gov.uk/guidance/selling-goods-or-services-on-a-digital-platform"
@@ -1025,12 +1036,12 @@ export default function OnlineSellerIndexPage() {
       </section>
 
       {/* CTA */}
-      <section className={`ground-dark bg-neutral-900 ${sectionY}`}>
+      <section className={`ground-dark bg-slate-900 ${sectionY}`}>
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Running an online retail business?
           </h2>
-          <p className="mt-4 text-lg text-neutral-200 max-w-2xl">
+          <p className="mt-4 text-lg text-slate-200 max-w-2xl">
             The incorporated-seller economy is more visible to HMRC than it has ever been.
             Platform reporting, gross-turnover VAT thresholds and the bookkeeping gap between
             settlement payout and taxable revenue are the three issues that drive the most
@@ -1039,12 +1050,17 @@ export default function OnlineSellerIndexPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
+              data-cta="research_seller_index_book"
+              data-cta-placement="closing"
+              data-cta-goal="contact"
               className={btnPrimary}
             >
               Speak to a specialist
             </Link>
             <Link
               href="/calculators/seller-take-home-calculator"
+              data-cta="research_seller_index_tool"
+              data-cta-placement="closing"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors ${focusRing}`}
             >
               Seller take-home calculator
@@ -1052,6 +1068,37 @@ export default function OnlineSellerIndexPage() {
           </div>
         </div>
       </section>
+      {/* ADOPTED (U2, 2026-09-29, owner gate D3 answered yes), reversing the
+          "owner gate" decline recorded further up this file:
+          packages/web-shared/design/marketing/LeadCTAPanel.tsx. The owner
+          ruling names the research indexes explicitly and this route rendered
+          zero capture. Exactly one <LeadForm> mount on the route.
+
+          The closing band above is NOT converted into the panel: it carries two
+          links (/contact and the take-home calculator) that the route's link
+          floor counts, and LeadCTAPanel has no slot that would keep both as
+          buttons. The band stays, the panel follows it, which is the same
+          arrangement /about already ships (a "Get in touch" link, then the
+          panel).
+
+          NO COPY IS AUTHORED. `title` and `description` are this site's own
+          published panel strings, taken verbatim from /services, /for and
+          /about. `eyebrow=""` (the kit default is a fee claim, K7),
+          `formTitle=""` and `proofPoints={[]}` (K8) keep every default that
+          would publish unwritten copy switched off.
+
+          The research figures, their sources and the "Cite as" apparatus above
+          are untouched. The chart and table hex values on this page stay: an
+          SVG or table series colour is data encoding, not a design token, and
+          it has no cascade to join. */}
+      <LeadCTAPanel
+        eyebrow=""
+        title="Speak to an ecommerce tax specialist."
+        description="Tell us about your situation and we will reply within 24 hours."
+        proofPoints={[]}
+        formTitle=""
+        form={<LeadForm />}
+      />
     </>
   );
 }
