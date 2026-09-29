@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * Provides the deterministic intent context to the help widget.
- * Mounted once (inside AnalyticsProvider) in the root layout. No-ops in
- * /embed/* and /admin/* and when the visitor has opted out.
+ * Provides the deterministic intent context, and the site's WidgetConfig, to
+ * the help widget. Mounted once (inside AnalyticsProvider) in the root layout.
+ * No-ops on the config's `hiddenOnPaths` (e.g. /embed/*, /admin/*) and when the
+ * visitor has opted out.
  *
  * SSR-safe: client-only signals (entry/last topic, returning, converted) stay
  * null/false until after mount to avoid a hydration mismatch; the route-derived
@@ -11,32 +12,42 @@
  *
  * Personalisation is unconditionally ON (no experiment arms). The experiment
  * infrastructure has been wound down estate-wide.
+ *
+ * This is the ONE injection point: the widget reads its config from here, so a
+ * site mounts `<IntentProvider config={widgetConfig}><SpecialistWidget /></IntentProvider>`
+ * and passes nothing else.
  */
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useConsent } from "@accounting-network/web-shared/analytics/react/ConsentProvider";
-import { track } from "@accounting-network/web-shared/analytics/track";
-import { deriveTopic } from "@/lib/intent/deriveTopic";
+import { useConsent } from "../analytics/react/ConsentProvider";
+import { track } from "../analytics/track";
 import {
   getEntryTopic,
   getLastTopic,
   isReturning,
   isConverted,
-} from "@accounting-network/web-shared/analytics/visitMemory";
-import { getMaxScrollPct, getEngagedMs } from "@accounting-network/web-shared/analytics/autoCapture";
-import { evaluate, type IntentAction, type IntentContext, type Surface } from "@/lib/intent/engine";
-import type { TopicKey } from "@/lib/intent/taxonomy";
-import { ruleLabel } from "@/lib/intent/labels";
+} from "../analytics/visitMemory";
+import { getMaxScrollPct, getEngagedMs } from "../analytics/autoCapture";
+import { makeDeriveTopic } from "./deriveTopic";
+import { evaluate } from "./engine";
+import type { IntentAction, IntentContext, Surface, WidgetConfig } from "./types";
 
 const Ctx = createContext<IntentContext | null>(null);
+const ConfigCtx = createContext<WidgetConfig | null>(null);
 
-export function IntentProvider({ children }: { children: React.ReactNode }) {
+export function IntentProvider({
+  config,
+  children,
+}: {
+  config: WidgetConfig;
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
   const { state } = useConsent();
-  const active =
-    state !== "denied" &&
-    !(pathname || "").startsWith("/embed") &&
-    !(pathname || "").startsWith("/admin");
+  const path = pathname || "";
+  const active = state !== "denied" && !config.hiddenOnPaths.some((p) => path.startsWith(p));
+
+  const deriveTopic = useMemo(() => makeDeriveTopic(config.routeRules), [config.routeRules]);
 
   const [mounted, setMounted] = useState(false);
   const [signals, setSignals] = useState({ scrollPct: 0, engagedMs: 0 });
@@ -63,31 +74,44 @@ export function IntentProvider({ children }: { children: React.ReactNode }) {
     if (!active) return null;
     return {
       pageTopic: deriveTopic(pathname || ""),
-      entryTopic: mounted ? (getEntryTopic() as TopicKey | null) : null,
-      lastTopic: mounted ? (getLastTopic() as TopicKey | null) : null,
+      entryTopic: mounted ? getEntryTopic() : null,
+      lastTopic: mounted ? getLastTopic() : null,
       returning: mounted ? isReturning() : false,
       converted: mounted ? isConverted() : false,
       scrollPct: signals.scrollPct,
       engagedMs: signals.engagedMs,
       isMobile: mounted && typeof window !== "undefined" ? window.innerWidth < 640 : false,
     };
-  }, [active, pathname, mounted, signals]);
+  }, [active, pathname, mounted, signals, deriveTopic]);
 
-  return <Ctx.Provider value={ctx}>{children}</Ctx.Provider>;
+  return (
+    <ConfigCtx.Provider value={config}>
+      <Ctx.Provider value={ctx}>{children}</Ctx.Provider>
+    </ConfigCtx.Provider>
+  );
 }
 
 /**
  * Resolved action for a surface (null = render the generic, non-tailored
- * version). No surface on this site consumes this today: the help widget reads
- * the journey model directly. Kept so the estate model stays one implementation.
+ * version). The help widget does not use this: it reads the journey model
+ * directly. Kept so the estate model stays one implementation.
  */
 export function useIntent(surface: Surface): IntentAction | null {
   const ctx = useContext(Ctx);
-  return useMemo(() => (ctx ? evaluate(surface, ctx) : null), [ctx, surface]);
+  const config = useContext(ConfigCtx);
+  return useMemo(
+    () => (ctx && config ? evaluate(surface, ctx, config.engine) : null),
+    [ctx, config, surface],
+  );
 }
 
 export function useIntentContext(): IntentContext | null {
   return useContext(Ctx);
+}
+
+/** The site's widget config, as injected at the mount. */
+export function useWidgetConfig(): WidgetConfig | null {
+  return useContext(ConfigCtx);
 }
 
 const PERSONALIZATION_EVENT = {
@@ -100,6 +124,7 @@ const PERSONALIZATION_EVENT = {
 export function trackPersonalization(
   kind: keyof typeof PERSONALIZATION_EVENT,
   a: IntentAction,
+  ruleLabel: (ruleId: string) => string,
 ): void {
   track(PERSONALIZATION_EVENT[kind], {
     rule_id: a.ruleId,

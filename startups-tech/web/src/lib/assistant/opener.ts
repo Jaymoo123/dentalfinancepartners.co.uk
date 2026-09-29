@@ -20,7 +20,10 @@
  * OPENER_LLM_ENRICHMENT_ENABLED = false (deterministic only).
  */
 import type { TopicKey } from "@/lib/intent/taxonomy";
-import type { JourneyProfile, JourneyStage } from "@/lib/intent/journeyModel";
+import type {
+  JourneyProfile,
+  JourneyStage,
+} from "@accounting-network/web-shared/support/types";
 
 /** Feature flag: LLM personalisation is OFF. */
 export const OPENER_LLM_ENRICHMENT_ENABLED = false;
@@ -123,16 +126,15 @@ export function pickOpener(profile: JourneyProfile, pingIndex: number): string {
   }
 
   // Topic-specific hooks
-  if (primaryTopic && TOPIC_HOOKS[primaryTopic]) {
-    return TOPIC_HOOKS[primaryTopic][vi];
-  }
+  const hooks = primaryTopic ? TOPIC_HOOKS[primaryTopic as TopicKey] : undefined;
+  if (hooks) return hooks[vi];
 
   return GENERIC[vi];
 }
 
 /** Friction opener (fires instantly on form_error). One sentence, under 20 words. */
 export function frictionOpener(profile: JourneyProfile): string {
-  const t = profile.primaryTopic;
+  const t = profile.primaryTopic as TopicKey | null;
   if (t) {
     const noun = TOPIC_NOUN[t];
     return `Send a question about ${noun} here instead, we reply within 24 hours.`;
@@ -142,7 +144,7 @@ export function frictionOpener(profile: JourneyProfile): string {
 
 /** Exit opener (fires on the exit-intent trigger). */
 export function exitOpener(profile: JourneyProfile): string {
-  const t = profile.primaryTopic;
+  const t = profile.primaryTopic as TopicKey | null;
   if (t) {
     const noun = TOPIC_NOUN[t];
     return `Before you go: send a question about ${noun} and one of our accountants will come back to you.`;

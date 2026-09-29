@@ -8,7 +8,8 @@
  *
  * Imported by both the client surfaces (to stamp `label` onto the event) and
  * the admin dashboard (to render journeys). Keep additions in sync with the
- * rule ids produced in src/lib/intent/engine.ts and the Surface union there.
+ * rule ids produced by the kit engine (@accounting-network/web-shared/support/engine)
+ * and the Surface union there.
  */
 
 /** rule_id (from engine.ts `build(... ruleId ...)`) -> human label. */

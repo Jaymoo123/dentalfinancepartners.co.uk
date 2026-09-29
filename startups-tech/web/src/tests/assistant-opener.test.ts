@@ -2,8 +2,9 @@
  * Determinism, coverage and voice tests for the help widget's opener copy and
  * the journey model behind it.
  *
- * Runs in Node with no DOM. The journey model is SSR-safe: its window-gated
- * functions return empty-trail defaults when window is undefined.
+ * Runs in Node with no DOM. The journey model itself is the kit's
+ * (@accounting-network/web-shared/support/journeyModel) and is tested there;
+ * this file covers the copy and the taxonomy coupling that are this site's.
  *
  * Voice rules (LOCKED, and the reason this file exists):
  * - No em-dashes anywhere in the copy.
@@ -14,13 +15,10 @@
  * - No surveillance framing.
  */
 import { describe, it, expect } from "vitest";
-import {
-  getJourneyProfile,
-  profileKey,
-  _resetJourneyModel,
-  type JourneyProfile,
-  type JourneyStage,
-} from "@/lib/intent/journeyModel";
+import type {
+  JourneyProfile,
+  JourneyStage,
+} from "@accounting-network/web-shared/support/types";
 import {
   variantIndex,
   pickOpener,
@@ -171,25 +169,5 @@ describe("opener voice rules", () => {
     for (const hooks of Object.values(TOPIC_HOOKS)) {
       for (const h of hooks) expect(h.split(/\s+/).length).toBeLessThan(20);
     }
-  });
-});
-
-describe("journey model defaults without a DOM", () => {
-  it("an empty trail gives a researching profile", () => {
-    _resetJourneyModel();
-    const p = getJourneyProfile();
-    expect(p.primaryTopic).toBeNull();
-    expect(p.secondaryTopic).toBeNull();
-    expect(p.stage).toBe("researching");
-    expect(p.pageCount).toBe(0);
-    expect(p.depth).toBe(0);
-    expect(p.signals).toEqual([]);
-  });
-
-  it("profileKey is stable and order-independent on signals", () => {
-    const a = makeProfile({ primaryTopic: "rnd", stage: "ready", signals: ["b", "a"] });
-    const b = makeProfile({ primaryTopic: "rnd", stage: "ready", signals: ["a", "b"] });
-    expect(profileKey(a)).toBe(profileKey(b));
-    expect(profileKey(makeProfile())).toBe("-|-|researching|");
   });
 });

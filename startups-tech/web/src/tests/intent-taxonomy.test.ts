@@ -24,7 +24,7 @@ import {
   getTopic,
   type TopicKey,
 } from "@/lib/intent/taxonomy";
-import { deriveTopic } from "@/lib/intent/deriveTopic";
+import { deriveTopic } from "@/lib/intent/widget-config";
 
 const ROOT = join(__dirname, "..", "..");
 const ALL_KEYS = TOPICS.map((t) => t.key);

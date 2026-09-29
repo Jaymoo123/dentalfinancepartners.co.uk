@@ -1,80 +1,45 @@
 "use client";
 
 /**
- * Founder Tax Partners floating help widget (deterministic, no LLM).
+ * The estate's floating help widget (deterministic, no LLM).
  *
- * Port of the generalist SpecialistWidget with these startups-tech deltas:
- * - Brand ramp classes and the site's own `focusRing` from
- *   components/ui/layout-utils (the kit's `outline-primary-*` literals are
- *   banned here by src/tests/focus-ring.test.ts). Buttons sit on the 700 step,
- *   the locked button ground for this site.
- * - Storage keys use the `ffp` prefix, matching AnalyticsProvider's
- *   storagePrefix in app/layout.tsx: ffp_assistant_autoopened,
- *   ffp_assistant_active, ffp_journey.
- * - Submit uses submitSiteLead (the site's own client helper) with
- *   captureMode: "email_only" and extras: { capture_channel: "assistant", trigger }.
- * - `source` is niche.content_strategy.source_identifier, the same value
- *   components/forms/LeadForm.tsx sends. No rival source key is introduced.
- * - Neutral ramp is `slate-*`, matching the site's `slate-*` estate default
- *   (R7 N1 fix: was `neutral-*`, one-for-one renamed).
- * - Bottom offset is bottom-4, not the generalist bottom-24. That alone would
- *   sit the launcher on top of the footer's only consent control (R7 B3), so
- *   an IntersectionObserver on `document.querySelector("footer")` starts a
- *   scroll/resize listener that lifts the fixed container with
- *   `transform: translateY()` while the footer is in view (GF7 NB-1/NB-2:
- *   never hides the widget, so it stays keyboard-reachable and still renders
- *   on short pages).
- * - Opener copy comes from lib/assistant/opener.ts, written for this site: no
- *   "free call" (the site offers none) and no turnaround promise beyond the
- *   site's own "reply within 24 hours".
+ * ONE implementation. Lifted from startups-tech/web after its adversarial
+ * review (docs/startups-tech/_port/R7_WIDGET_REVIEW.md, fixes in 7dc3c7fe and
+ * 878d56ce), so the accessibility work travels with the component rather than
+ * being re-derived per site. Everything site-specific arrives through the
+ * `WidgetConfig` injected at `<IntentProvider config={...}>`: taxonomy, openers,
+ * every visitor-facing string, every class recipe, the storage prefix, the lead
+ * source, the form id and the submit client.
  *
- * `formId` is "specialist_widget" and the launcher carries
- * data-cta="specialist_widget" with no placement/goal attributes, byte-identical
- * to Property and generalist, because the estate analytics views key on it.
- * autoCapture resolves placement from nearestSection() when the attribute is
- * absent, which is what the other two sites already record.
+ * `formId` and the launcher's `data-cta` come from config and are
+ * "specialist_widget" across the estate, because the estate analytics views key
+ * on it. autoCapture resolves placement from nearestSection() when no placement
+ * attribute is present, which is what the sites already record.
  *
- * Sets ffp_assistant_active in sessionStorage on mount so any other exit
- * surface would stand down. There is no other exit surface on this site today.
+ * Sets `<prefix>_assistant_active` in sessionStorage on mount so any other exit
+ * surface stands down.
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { niche } from "@/config/niche-loader";
-import { siteConfig } from "@/config/site";
-import { focusRing } from "@/components/ui/layout-utils";
-import { submitSiteLead } from "@/lib/leads/submit-client";
-import { useFormTracking } from "@accounting-network/web-shared/analytics/react/useFormTracking";
-import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
-import { track } from "@accounting-network/web-shared/analytics/track";
-import { onAnalyticsEvent } from "@accounting-network/web-shared/analytics/bus";
-import { isConverted } from "@accounting-network/web-shared/analytics/visitMemory";
-import { useIntentContext } from "@/components/intent/IntentProvider";
-import { getTopic } from "@/lib/intent/taxonomy";
-import { initJourneyModel, recordPath, getJourneyProfile } from "@/lib/intent/journeyModel";
-import { pickOpener, exitOpener, frictionOpener } from "@/lib/assistant/opener";
+import { useFormTracking } from "../analytics/react/useFormTracking";
+import { getVisitorId, getSessionId } from "../analytics/ids";
+import { track } from "../analytics/track";
+import { onAnalyticsEvent } from "../analytics/bus";
+import { isConverted } from "../analytics/visitMemory";
+import { useIntentContext, useWidgetConfig } from "./IntentProvider";
 
 type Status = "idle" | "loading" | "success" | "error";
 type Trigger = "cadence" | "exit" | "friction";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-// R7 G1: placeholder:text-slate-400 measured 2.58:1 on white (need 4.5). slate-500
-// measures 4.76 (instrument self-test on the equivalent step), so the placeholder
-// step is raised one notch from the rest of the field recipe.
-const inputClass =
-  `mt-1 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-primary-600 ${focusRing}`;
-// R7 G2: border-primary-300 measured 1.91:1 on white (graphics need 3:1); primary-400
-// measures ~2.98 (still short), primary-500 measures ~4.47. Chip border raised to 500.
-const chipClass =
-  `inline-flex items-center rounded-full border border-primary-500 bg-white px-3 py-3 text-sm font-medium text-primary-800 hover:bg-primary-50 ${focusRing}`;
 
 // Cadence thresholds (ms of visible page time): 30s, 70s, 120s, 180s.
 const CADENCE_THRESHOLDS_MS = [30_000, 70_000, 120_000, 180_000];
-const AUTO_OPEN_KEY = "ffp_assistant_autoopened";
 const AUTO_OPEN_DELAY_MS = 600;
-
-export const SPECIALIST_WIDGET_FORM_ID = "specialist_widget";
+const DEFAULT_LAUNCHER_H = 52;
 
 export function SpecialistWidget() {
+  const config = useWidgetConfig();
   const ctx = useIntentContext();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -99,9 +64,13 @@ export function SpecialistWidget() {
   const launcherRef = useRef<HTMLButtonElement>(null);
   const wasOpenRef = useRef(false);
   const returnFocusRef = useRef(true);
-  const ft = useFormTracking(SPECIALIST_WIDGET_FORM_ID);
+  const ft = useFormTracking(config?.formId ?? "specialist_widget");
 
-  const active = !!ctx;
+  const active = !!ctx && !!config;
+  const journey = config?.journey;
+  const openers = config?.openers;
+  const autoOpenKey = `${config?.storagePrefix ?? ""}_assistant_autoopened`;
+  const launcherHeight = config?.launcherHeightPx ?? DEFAULT_LAUNCHER_H;
 
   // Suppress for visitors who already converted. State, not a one-shot memo
   // (R7 G5): a visitor who converts mid-session (lead_submitted on the bus,
@@ -122,22 +91,22 @@ export function SpecialistWidget() {
     });
   }, []);
 
-  // GF7 NB-1/NB-2: the launcher/panel sit on top of the footer's only consent
-  // control ("Do not track me", plus "Cookie policy" at desktop) at bottom-4.
-  // GF6 hid the whole widget while the footer was in view, which made the
-  // launcher unreachable by keyboard (tabbing to it scrolls the footer into
-  // view, which then hides it) and made it never render at all on short pages
-  // where the footer is always in view. Fix: never hide. Instead lift the
-  // fixed container with `transform: translateY()` (excluded from layout
-  // shift, cheap to paint) so the launcher's bottom edge stays 16px above the
-  // footer's top edge. The IntersectionObserver only starts/stops the
-  // scroll/resize listeners that recompute the lift; it never sets visibility.
+  // GF7 NB-1/NB-2: at a small bottom offset the launcher/panel sit on top of
+  // the footer's only consent control. GF6 hid the whole widget while the
+  // footer was in view, which made the launcher unreachable by keyboard
+  // (tabbing to it scrolls the footer into view, which then hides it) and made
+  // it never render at all on short pages where the footer is always in view.
+  // Fix: never hide. Instead lift the fixed container with
+  // `transform: translateY()` (excluded from layout shift, cheap to paint) so
+  // the launcher's bottom edge stays 16px above the footer's top edge. The
+  // IntersectionObserver only starts/stops the scroll/resize listeners that
+  // recompute the lift; it never sets visibility.
   useEffect(() => {
     if (typeof window === "undefined" || typeof IntersectionObserver === "undefined") return;
     const footer = document.querySelector("footer");
     if (!footer) return;
     let rafId: number | null = null;
-    const LAUNCHER_H = 52;
+    const LAUNCHER_H = launcherHeight;
     const BOTTOM_OFFSET = 16;
     const compute = () => {
       rafId = null;
@@ -187,45 +156,49 @@ export function SpecialistWidget() {
       window.removeEventListener("resize", onScrollResize);
       if (rafId != null) window.cancelAnimationFrame(rafId);
     };
-  }, []);
+  }, [launcherHeight]);
 
   // Show a tailored ping. Re-derives the journey each time; never repeats a line.
-  const runPing = useCallback((trigger: Trigger) => {
-    if (engagedRef.current || typeof window === "undefined") return;
-    const profile = getJourneyProfile();
-    let line: string;
-    let variant: string;
-    if (trigger === "friction") {
-      line = frictionOpener(profile);
-      variant = "friction";
-    } else if (trigger === "exit") {
-      line = exitOpener(profile);
-      variant = "exit";
-    } else {
-      const idx = pingCountRef.current;
-      line = pickOpener(profile, idx);
-      variant = `ping_${idx + 1}`;
-      pingCountRef.current = idx + 1;
-    }
-    if (line === lastLineRef.current) return; // never repeat verbatim
-    lastLineRef.current = line;
+  const runPing = useCallback(
+    (trigger: Trigger) => {
+      if (engagedRef.current || typeof window === "undefined") return;
+      if (!journey || !openers) return;
+      const profile = journey.getProfile();
+      let line: string;
+      let variant: string;
+      if (trigger === "friction") {
+        line = openers.friction(profile);
+        variant = "friction";
+      } else if (trigger === "exit") {
+        line = openers.exit(profile);
+        variant = "exit";
+      } else {
+        const idx = pingCountRef.current;
+        line = openers.pick(profile, idx);
+        variant = `ping_${idx + 1}`;
+        pingCountRef.current = idx + 1;
+      }
+      if (line === lastLineRef.current) return; // never repeat verbatim
+      lastLineRef.current = line;
 
-    const props: Record<string, string | number> = {
-      surface: "assistant_nudge",
-      trigger,
-      variant,
-      rule_id: `assistant_${profile.stage}`,
-      topic: profile.primaryTopic ?? "",
-      stage: profile.stage,
-      signals: profile.signals.slice(0, 6).join(","),
-      content: line.slice(0, 120),
-    };
-    lastPropsRef.current = props;
-    setPeekLine(line);
-    setPeekVisible(true);
-    setUnread((n) => n + 1);
-    track("personalization_shown", props);
-  }, []);
+      const props: Record<string, string | number> = {
+        surface: "assistant_nudge",
+        trigger,
+        variant,
+        rule_id: `assistant_${profile.stage}`,
+        topic: profile.primaryTopic ?? "",
+        stage: profile.stage,
+        signals: profile.signals.slice(0, 6).join(","),
+        content: line.slice(0, 120),
+      };
+      lastPropsRef.current = props;
+      setPeekLine(line);
+      setPeekVisible(true);
+      setUnread((n) => n + 1);
+      track("personalization_shown", props);
+    },
+    [journey, openers],
+  );
 
   // The visitor engaged: stop this session's proactive cadence, clear the badge.
   const engage = useCallback(() => {
@@ -236,19 +209,19 @@ export function SpecialistWidget() {
 
   // Init journey model and flag the assistant active.
   useEffect(() => {
-    if (!active || typeof window === "undefined") return;
-    initJourneyModel();
+    if (!active || typeof window === "undefined" || !journey || !config) return;
+    journey.init();
     try {
-      window.sessionStorage.setItem("ffp_assistant_active", "1");
+      window.sessionStorage.setItem(`${config.storagePrefix}_assistant_active`, "1");
     } catch {
       /* ignore */
     }
-  }, [active]);
+  }, [active, journey, config]);
 
   // Record each page in the journey trail.
   useEffect(() => {
-    if (active) recordPath(pathname || "/");
-  }, [active, pathname]);
+    if (active && journey) journey.recordPath(pathname || "/");
+  }, [active, journey, pathname]);
 
   // Mirror `open` into a ref so the cadence tick reads it without re-subscribing.
   useEffect(() => {
@@ -394,9 +367,10 @@ export function SpecialistWidget() {
   // Behaviour unchanged from Property and generalist (standing ruling 2026-09-27).
   useEffect(() => {
     if (!active || suppressed || typeof window === "undefined") return;
+    if (!journey || !openers) return;
     if (process.env.NODE_ENV === "production") {
       try {
-        if (window.sessionStorage.getItem(AUTO_OPEN_KEY) === "1") return;
+        if (window.sessionStorage.getItem(autoOpenKey) === "1") return;
       } catch {
         /* ignore */
       }
@@ -404,12 +378,12 @@ export function SpecialistWidget() {
     const t = window.setTimeout(() => {
       if (engagedRef.current || openRef.current) return;
       try {
-        window.sessionStorage.setItem(AUTO_OPEN_KEY, "1");
+        window.sessionStorage.setItem(autoOpenKey, "1");
       } catch {
         /* ignore */
       }
-      const profile = getJourneyProfile();
-      const line = pickOpener(profile, 0);
+      const profile = journey.getProfile();
+      const line = openers.pick(profile, 0);
       lastLineRef.current = line;
       if (window.innerWidth < 640) {
         const props = {
@@ -452,23 +426,25 @@ export function SpecialistWidget() {
       }
     }, AUTO_OPEN_DELAY_MS);
     return () => window.clearTimeout(t);
-  }, [active, suppressed]);
+  }, [active, suppressed, journey, openers, autoOpenKey]);
 
-  // ctx is null in /embed, /admin, or when the visitor opted out.
-  if (!ctx) return null;
+  // ctx is null on the config's hidden paths, or when the visitor opted out.
+  if (!ctx || !config) return null;
 
-  const topic = getTopic(ctx.pageTopic ?? ctx.entryTopic);
-  const journeyTopic = open ? getTopic(getJourneyProfile().primaryTopic) : null;
+  const { classes: c, copy } = config;
+  const topic = config.getTopic(ctx.pageTopic ?? ctx.entryTopic);
+  const journeyTopic = open ? config.getTopic(config.journey.getProfile().primaryTopic) : null;
   const rawCalcSlug = journeyTopic?.primaryCalculator ?? topic?.primaryCalculator ?? null;
   // R7 G7: suppress the chip when it would link to the page the visitor is already on.
-  const calcSlug = rawCalcSlug && `/calculators/${rawCalcSlug}` === pathname ? null : rawCalcSlug;
+  const calcSlug =
+    rawCalcSlug && `${config.calculatorHrefPrefix}${rawCalcSlug}` === pathname ? null : rawCalcSlug;
 
   function trackNudge(kind: "clicked" | "dismissed") {
     track(`personalization_${kind}`, lastPropsRef.current ?? { surface: "assistant_nudge" });
   }
 
   function handleOpen(fromPeek: boolean) {
-    if (!peekLine) setPeekLine(pickOpener(getJourneyProfile(), 0));
+    if (!peekLine) setPeekLine(config!.openers.pick(config!.journey.getProfile(), 0));
     setComposing(false);
     setOpen(true);
     setIsModal(true); // user-initiated: trap + initial focus move apply
@@ -511,6 +487,7 @@ export function SpecialistWidget() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
+    const cfg = config!;
     const data = new FormData(e.currentTarget);
     // Honeypot: non-semantic name so autofill and password managers never target
     // it. Passed through rather than silently dropped, so a real human caught by
@@ -520,8 +497,8 @@ export function SpecialistWidget() {
     const question = String(data.get("question") || "").trim();
     // R7 N2: report both missing/invalid fields on an empty submit, not just email.
     const errs: { email?: string; question?: string } = {};
-    if (!emailRe.test(email)) errs.email = "Enter a valid email address.";
-    if (!question) errs.question = "Add a short message so the accountant knows how to help.";
+    if (!emailRe.test(email)) errs.email = cfg.copy.emailError;
+    if (!question) errs.question = cfg.copy.questionError;
     if (Object.keys(errs).length > 0) {
       setFieldErrors(errs);
       if (errs.email) ft.onError("email", "validation");
@@ -532,15 +509,15 @@ export function SpecialistWidget() {
     ft.onSubmit(2);
     setStatus("loading");
     const topicTag = topic ? ` (${topic.key})` : "";
-    const consentText = `${siteConfig.leadConsentText} See our Privacy Policy.`;
-    const result = await submitSiteLead(
+    const consentText = `${cfg.copy.consentPrefix} See our Privacy Policy.`;
+    const result = await cfg.submitLead(
       {
         full_name: "",
         email,
         phone: "",
         role: "Other",
         message: `[Specialist question${topicTag}] ${question}`,
-        source: niche.content_strategy.source_identifier,
+        source: cfg.leadSource,
         source_url: typeof window !== "undefined" ? window.location.href : "",
         submitted_at: new Date().toISOString(),
         consent_given: true,
@@ -551,7 +528,7 @@ export function SpecialistWidget() {
         extras: {
           capture_channel: "assistant",
           trigger: (lastPropsRef.current?.trigger as string) ?? "widget",
-          form_id: SPECIALIST_WIDGET_FORM_ID,
+          form_id: cfg.formId,
         },
         captureMode: "email_only",
       },
@@ -559,26 +536,23 @@ export function SpecialistWidget() {
     );
     if (!result.success) {
       setStatus("error");
-      setError(result.error || "Something went wrong. Please try again.");
+      setError(result.error || cfg.copy.genericError);
       ft.onError("form", "server");
       return;
     }
-    ft.onLead({
-      source: niche.content_strategy.source_identifier,
-      role: SPECIALIST_WIDGET_FORM_ID,
-    });
+    ft.onLead({ source: cfg.leadSource, role: cfg.formId });
     setStatus("success");
   }
 
   return (
-    // R7 B4: fixed bottom-4 wrapper. Fixed h-/w- launcher below plus the panel/peek
+    // R7 B4: fixed wrapper. Fixed h-/w- launcher below plus the panel/peek
     // being taken OUT of flow (absolute, anchored off the launcher) means mounting
     // or unmounting the panel never changes this wrapper's own box, so the launcher
     // never moves (was CLS 0.111 at 1280: the panel mounting above the launcher in
     // a flex-col pushed the launcher up). `contain: layout` isolates any remaining
     // internal reflow from the rest of the page; only opacity/transform animate.
     <div
-      className="fixed bottom-4 right-4 z-[55] print:hidden"
+      className={c.container}
       style={{
         contain: "layout",
         transform: liftPx > 0 ? `translateY(-${liftPx}px)` : undefined,
@@ -590,73 +564,74 @@ export function SpecialistWidget() {
             ref={dialogRef}
             role="dialog"
             aria-modal={isModal ? "true" : undefined}
-            aria-label="Ask an accountant"
+            aria-label={copy.launcherLabel}
             tabIndex={-1}
             onFocusCapture={handleDialogFocusCapture}
-            className="absolute bottom-full right-0 mb-3 flex w-[min(92vw,23rem)] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
+            className={c.panel}
             style={{ height: "min(72dvh, 34rem)" }}
           >
-            {/* Header. .ground-dark rebinds --focus-ring to white (R7 B2: the
-                brand ring measured 2.54:1 on this bg-primary-950 ground; white
-                measures ~17:1). No focusable light-ground child sits inside it. */}
-            <div className="ground-dark flex items-center gap-3 bg-primary-950 px-4 py-3 text-white">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-600 ring-2 ring-white/15">
+            {/* Header. A site whose header ground is dark rebinds its focus ring
+                there (R7 B2: startups-tech's brand ring measured 2.54:1 on its
+                primary-950 ground; white measures ~17:1). No focusable
+                light-ground child sits inside it. */}
+            <div className={c.header}>
+              <span className={c.headerAvatar}>
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </span>
               <div className="min-w-0 flex-1">
-                <p className="truncate text-sm font-bold leading-tight">{siteConfig.name}</p>
-                <p className="truncate text-[11px] text-slate-300">We reply within 24 hours</p>
+                <p className={c.headerTitle}>{copy.headerTitle}</p>
+                <p className={c.headerSubtitle}>{copy.headerSubtitle}</p>
               </div>
               <button
                 type="button"
-                aria-label="Close"
+                aria-label={copy.closeAriaLabel}
                 onClick={closePanel}
-                className={`flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded text-2xl leading-none text-slate-300 hover:text-white ${focusRing}`}
+                className={c.closeButton}
               >
                 &times;
               </button>
             </div>
 
           {/* Conversation */}
-          <div className="flex-1 space-y-3 overflow-y-auto bg-slate-50 p-4">
+          <div className={c.conversation}>
             {peekLine && (
               <div className="flex items-start gap-2">
-                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-600 text-white">
+                <span className={c.messageAvatar}>
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
-                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-slate-200 bg-white px-3 py-2 text-sm leading-relaxed text-slate-800 shadow-sm">
+                <div className={c.messageBubble}>
                   {peekLine}
                 </div>
               </div>
             )}
             {status === "success" ? (
               <div className="flex items-start gap-2">
-                <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-600 text-white">
+                <span className={c.messageAvatar}>
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </span>
-                <div className="max-w-[82%] rounded-2xl rounded-tl-sm border border-primary-200 bg-primary-50 px-3 py-2 text-sm font-medium text-primary-900 shadow-sm">
-                  Thanks, we have your message. One of our accountants will reply by email within 24 hours. Please keep an eye on your inbox, and your spam or junk folder, so the reply is not missed.
+                <div className={c.successBubble}>
+                  {copy.successMessage}
                 </div>
               </div>
             ) : !composing ? (
-              <div className="flex flex-wrap gap-2 pl-9">
+              <div className={c.chipRow}>
                 {calcSlug && (
                   <a
-                    href={`/calculators/${calcSlug}`}
+                    href={`${config.calculatorHrefPrefix}${calcSlug}`}
                     onClick={() => onChip("calculator")}
-                    className={chipClass}
+                    className={c.chip}
                   >
-                    See your numbers
+                    {copy.calculatorChip}
                   </a>
                 )}
-                <a href="/contact" onClick={() => onChip("call")} className={chipClass}>
-                  {niche.cta.sticky_button}
+                <a href={config.contactHref} onClick={() => onChip("call")} className={c.chip}>
+                  {copy.contactChip}
                 </a>
               </div>
             ) : null}
@@ -664,20 +639,20 @@ export function SpecialistWidget() {
 
           {/* Footer: primary CTA reveals the composer */}
           {!composing && status !== "success" && (
-            <div className="border-t border-slate-200 bg-white p-3">
+            <div className={c.footer}>
               <button
                 type="button"
                 onClick={() => onChip("question")}
-                className={`w-full rounded-lg bg-primary-700 px-4 py-3 text-sm font-semibold text-white hover:bg-primary-800 ${focusRing}`}
+                className={c.primaryButton}
               >
-                Ask an accountant
+                {copy.askButton}
               </button>
             </div>
           )}
 
-          {/* Composer: revealed when they choose "Ask an accountant" */}
+          {/* Composer: revealed when they choose the ask button */}
           {composing && status !== "success" && (
-            <div className="border-t border-slate-200 bg-white p-3">
+            <div className={c.footer}>
               <form
                 onSubmit={onSubmit}
                 className="space-y-2"
@@ -700,22 +675,22 @@ export function SpecialistWidget() {
                   tabIndex={-1}
                   autoComplete="off"
                   aria-hidden="true"
-                  className="absolute left-[-9999px] top-[-9999px] h-px w-px opacity-0"
+                  className={c.honeypot}
                 />
                 <input
                   type="email"
                   name="email"
                   required
-                  aria-label="Your email"
-                  placeholder={niche.lead_form.placeholders.email}
+                  aria-label={copy.emailAriaLabel}
+                  placeholder={copy.emailPlaceholder}
                   autoComplete="email"
                   maxLength={100}
                   aria-invalid={!!fieldErrors.email}
                   aria-describedby={fieldErrors.email ? "sw-email-error" : undefined}
-                  className={inputClass}
+                  className={c.input}
                 />
                 {fieldErrors.email && (
-                  <p id="sw-email-error" role="alert" className="text-xs font-medium text-red-600">
+                  <p id="sw-email-error" role="alert" className={c.errorText}>
                     {fieldErrors.email}
                   </p>
                 )}
@@ -724,36 +699,36 @@ export function SpecialistWidget() {
                   required
                   rows={2}
                   maxLength={500}
-                  aria-label="Your question"
-                  placeholder="Your question for an accountant"
+                  aria-label={copy.questionAriaLabel}
+                  placeholder={copy.questionPlaceholder}
                   aria-invalid={!!fieldErrors.question}
                   aria-describedby={fieldErrors.question ? "sw-question-error" : undefined}
-                  className={inputClass}
+                  className={c.input}
                 />
                 {fieldErrors.question && (
-                  <p id="sw-question-error" role="alert" className="text-xs font-medium text-red-600">
+                  <p id="sw-question-error" role="alert" className={c.errorText}>
                     {fieldErrors.question}
                   </p>
                 )}
                 {error && (
-                  <p role="alert" className="text-xs font-medium text-red-600">
+                  <p role="alert" className={c.errorText}>
                     {error}
                   </p>
                 )}
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className={`w-full rounded-lg bg-primary-700 px-4 py-3 text-sm font-semibold text-white hover:bg-primary-800 disabled:opacity-60 ${focusRing}`}
+                  className={c.submitButton}
                 >
-                  {status === "loading" ? "Sending..." : "Send to an accountant"}
+                  {status === "loading" ? copy.submitButtonLoading : copy.submitButton}
                 </button>
-                <p className="text-[11px] leading-relaxed text-slate-500">
-                  {siteConfig.leadConsentText} See our{" "}
+                <p className={c.consentText}>
+                  {copy.consentPrefix} See our{" "}
                   <a
-                    href="/privacy-policy"
+                    href={config.privacyHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`rounded font-semibold text-primary-700 underline ${focusRing}`}
+                    className={c.privacyLink}
                   >
                     Privacy Policy
                   </a>
@@ -768,19 +743,19 @@ export function SpecialistWidget() {
         {/* Proactive peek: clicking opens the panel. Absolute + anchored off the
             launcher (see B4 note above) so it never moves the launcher. */}
         {!open && peekVisible && peekLine && (
-          <div className="absolute bottom-full right-0 mb-3 flex w-[min(88vw,20rem)] items-start gap-2 rounded-2xl border border-primary-200 bg-white p-3 shadow-2xl">
+          <div className={c.peekCard}>
             <button
               type="button"
               onClick={() => handleOpen(true)}
-              className={`flex-1 rounded text-left text-sm font-medium leading-snug text-slate-800 hover:text-primary-700 ${focusRing}`}
+              className={c.peekButton}
             >
               {peekLine}
             </button>
             <button
               type="button"
-              aria-label="Dismiss"
+              aria-label={copy.dismissAriaLabel}
               onClick={dismissPeek}
-              className={`-mr-1 -mt-1 flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded p-1 text-slate-400 hover:text-slate-700 ${focusRing}`}
+              className={c.peekDismiss}
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -789,23 +764,23 @@ export function SpecialistWidget() {
           </div>
         )}
 
-        {/* Fixed size (h-[52px] w-[12.5rem]) so the "Ask an accountant" / "Close"
-            label swap and the unread badge can never resize the launcher and
-            shift anything around it (R7 B4). */}
+        {/* Fixed size (h-/w- in classes.launcher) so the open/close label swap and
+            the unread badge can never resize the launcher and shift anything
+            around it (R7 B4). */}
         <button
           ref={launcherRef}
           type="button"
           onClick={() => (open ? closePanel() : handleOpen(false))}
-          data-cta="specialist_widget"
-          className={`relative flex h-[52px] w-[12.5rem] shrink-0 items-center justify-center gap-2 rounded-full bg-primary-700 px-4 text-sm font-semibold text-white shadow-2xl hover:bg-primary-800 ${focusRing}`}
+          data-cta={config.ctaId}
+          className={c.launcher}
         >
           {!open && unread > 0 && (
-            <span className="absolute -left-1 -top-1 flex h-5 min-w-5 items-center justify-center">
+            <span className={c.badgeWrap}>
               <span
                 aria-hidden="true"
-                className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-60 motion-reduce:animate-none"
+                className={c.badgePing}
               />
-              <span className="relative flex h-5 min-w-5 items-center justify-center rounded-full bg-red-600 px-1 text-[11px] font-bold text-white shadow-sm ring-2 ring-white">
+              <span className={c.badge}>
                 {unread}
               </span>
             </span>
@@ -813,7 +788,7 @@ export function SpecialistWidget() {
           <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          {open ? "Close" : "Ask an accountant"}
+          {open ? copy.closeLabel : copy.launcherLabel}
         </button>
       </div>
     </div>

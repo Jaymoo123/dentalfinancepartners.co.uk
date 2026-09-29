@@ -9,8 +9,8 @@ import type { NavItem } from "@accounting-network/web-shared/design/chrome/nav";
 import { niche } from "@/config/niche-loader";
 import { buildOrganizationJsonLd } from "@/lib/organization-schema";
 import { PageShell } from "@/components/layout/PageShell";
-import { IntentProvider } from "@/components/intent/IntentProvider";
-import { SpecialistWidget } from "@/components/support/SpecialistWidget";
+import { SupportProvider } from "@/components/support/SupportProvider";
+import { SpecialistWidget } from "@accounting-network/web-shared/support/SpecialistWidget";
 import { startupsServices } from "@/data/startups-services";
 import { startupsHubs } from "@/data/startups-hubs";
 import { TOOLS } from "@/lib/calculators/registry";
@@ -120,7 +120,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* Chrome = the shared kit. PageShell also supplies the skip link,
                 the single <main id="main">, and the /embed/* chrome bypass
                 (partner iframes get no header and no footer). */}
-            <IntentProvider>
+            <SupportProvider>
               <PageShell nav={primaryNav}>{children}</PageShell>
               {/* Owner ruling 2026-09-29: the floating help widget is the ONLY
                   intent surface mounted on this site. ReturningBar,
@@ -130,14 +130,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   model stays one implementation estate-wide; nothing renders
                   them. The widget's auto-open behaviour is unchanged from
                   Property and generalist (standing ruling 2026-09-27,
-                  decision 9). R7 F1: IntentProvider still renders its children
+                  decision 9). R7 F1: the intent provider still renders its children
                   on /embed/* and /admin/*, it only passes a null context value
                   there; what actually stops the widget on those routes is its
-                  own `if (!ctx) return null` in SpecialistWidget.tsx. */}
+                  own `if (!ctx) return null` in the kit's SpecialistWidget. */}
               <div className="print:hidden">
                 <SpecialistWidget />
               </div>
-            </IntentProvider>
+            </SupportProvider>
           </AnalyticsProvider>
         </ConsentProvider>
       </body>
