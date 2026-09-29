@@ -75,8 +75,6 @@ export function getRelatedPosts(
   const relatedPosts: BlogPost[] = [];
 
   for (const file of files) {
-    if (relatedPosts.length >= limit) break;
-
     const filePath = path.join(postsDirectory, file);
     const raw = fs.readFileSync(filePath, "utf8");
     const { data } = matter(raw);
@@ -89,9 +87,15 @@ export function getRelatedPosts(
     relatedPosts.push(parsePostFile(filePath));
   }
 
-  return relatedPosts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  // Sort THEN slice. This function had zero consumers until the blog post
+  // template mounted the kit RelatedArticles rail, and as written it stopped
+  // reading at `limit` BEFORE sorting, so the sort below only ever reordered
+  // the first three matches in readdir (alphabetical) order and the "newest
+  // three" the sort exists to produce were unreachable. No behaviour any
+  // shipped page depended on: this is the first call site.
+  return relatedPosts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit);
 }
 
 export function slugifyCategory(category: string): string {

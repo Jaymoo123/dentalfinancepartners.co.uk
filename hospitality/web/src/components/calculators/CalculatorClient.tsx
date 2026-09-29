@@ -7,12 +7,14 @@ export function CalculatorClient({
   slug,
   variant = "page",
   resultCta,
+  headingLevel,
 }: {
   slug: string;
   variant?: "page" | "embed";
   resultCta?: React.ReactNode;
+  headingLevel?: 2 | 3;
 }) {
   const tool = getGenericTool(slug);
   if (!tool) return null;
-  return <Calculator tool={tool} variant={variant} resultCta={resultCta} />;
+  return <Calculator tool={tool} variant={variant} resultCta={resultCta} headingLevel={headingLevel} />;
 }

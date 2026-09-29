@@ -5,6 +5,9 @@ import { verifyLeadToken, mintLeadToken } from "@accounting-network/web-shared/l
 import { computeMissingContact } from "@accounting-network/web-shared/lead-nurture/lead-nurture-shared";
 import { adminSelect } from "@/lib/supabase/admin";
 import DetailsForm from "@/components/forms/DetailsForm";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
+import HospitalityBackdrop from "@/components/layout/HospitalityBackdrop";
 
 /**
  * "Complete your details" page, linked from a nurture email as
@@ -23,15 +26,15 @@ export const metadata: Metadata = {
 /** Shared "needs the personal link" fallback, cloned from /book. */
 function NeedsLinkCard() {
   return (
-    <div className="border border-neutral-300 bg-neutral-50 p-6 text-center">
-      <p className="text-base text-neutral-600">
+    <NoticeCard>
+      <p className="text-base text-slate-600">
         This page needs the personal link from your email or text message. If you cannot find it,
         use the contact form and we will arrange your review.
       </p>
       <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
         Go to the contact form
       </Link>
-    </div>
+    </NoticeCard>
   );
 }
 
@@ -51,15 +54,15 @@ export default async function CompletePage({
     const verdict = verifyLeadToken(token, "profile");
     if (!verdict.ok) {
       inner = (
-        <div className="border border-neutral-300 bg-neutral-50 p-6 text-center">
-          <p className="text-base text-neutral-600">
+        <NoticeCard>
+          <p className="text-base text-slate-600">
             This link has expired or is not valid. No problem, you can still reach us through the
             contact form and we will arrange your review.
           </p>
           <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
             Go to the contact form
           </Link>
-        </div>
+        </NoticeCard>
       );
     } else {
       let missing: ("name" | "phone")[] = ["name", "phone"];
@@ -88,9 +91,8 @@ export default async function CompletePage({
           bookingToken = null;
         }
         inner = (
-          <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-            <p className="text-lg font-bold text-neutral-900">You are all set</p>
-            <p className="mt-2 text-base text-neutral-600">
+          <NoticeCard tone="primary" title="You are all set">
+            <p className="text-base text-slate-600">
               We have everything we need. A specialist firm from our partner network may contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
@@ -100,7 +102,7 @@ export default async function CompletePage({
                 Book a callback
               </Link>
             )}
-          </div>
+          </NoticeCard>
         );
       } else {
         inner = <DetailsForm token={token} missing={missing} />;
@@ -109,19 +111,25 @@ export default async function CompletePage({
   }
 
   return (
-    <section className="bg-white py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-neutral-900 sm:text-4xl">
-            Complete your details
-          </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-neutral-600">
+    <>
+      <div className="ground-dark">
+        {/* "Your enquiry" is the one string this package authors on this route (SlimHero's
+            eyebrow is required with no fallback); same convention as startups-tech's
+            SlimHero eyebrow on the equivalent page. */}
+        <SlimHero eyebrow="Your enquiry" title="Complete your details" backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-complete-hero" />}>
+          <p className="mt-4 text-lg leading-relaxed text-slate-300">
             Add the last detail we need and a specialist firm from our partner network will be in
             touch to arrange your free hospitality tax review, no obligation.
           </p>
-          <div className="mt-10">{inner}</div>
-        </div>
+        </SlimHero>
       </div>
-    </section>
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-2xl">
+            <div className="mt-2">{inner}</div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

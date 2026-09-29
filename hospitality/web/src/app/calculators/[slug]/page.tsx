@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { buildOgImageUrl } from "@/lib/schema";
@@ -7,6 +6,11 @@ import { CalcResultCta } from "@/components/calculators/CalcResultCta";
 import { buildCalculatorJsonLd, buildFaqPageJsonLd } from "@/lib/calculators/schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
 import { site } from "@/lib/calculators/site";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
+import HospitalityBackdrop from "@/components/layout/HospitalityBackdrop";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -68,26 +72,44 @@ export default async function CalculatorToolPage({ params }: Props) {
       )}
 
       <div>
-        <section className="bg-[var(--brand-primary)] py-12 sm:py-16">
-          <div className="mx-auto max-w-4xl px-6">
-            <nav className="text-sm text-white/70">
-              <Link href="/" className="hover:text-white">
-                Home
-              </Link>{" "}
-              /{" "}
-              <Link href="/calculators" className="hover:text-white">
-                Calculators
-              </Link>{" "}
-              / <span className="text-white">{tool.name}</span>
-            </nav>
-            <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl">{tool.name}</h1>
+        {/* kit Breadcrumb (adopted, tone="onBrand"): this hero is
+            bg-[var(--brand-primary)], a mid-tone brand ground the "onDark"
+            steps would under-contrast (see Breadcrumb.tsx:29-36). Replaces
+            the hand-rolled trail; the page emitted no BreadcrumbList before
+            this, so it is a pure gain. HospitalityBackdrop + .ground-dark
+            mounted on the same section (host contract: relative
+            overflow-hidden / relative z-10). */}
+        <section className="ground-dark relative overflow-hidden bg-[var(--brand-primary)] py-12 sm:py-16">
+          <HospitalityBackdrop patternId="hospitality-table-setting-calculator-hero" />
+          <div className="relative z-10 mx-auto max-w-4xl px-6">
+            <Breadcrumb
+              items={[{ label: "Home", href: "/" }, { label: "Calculators", href: "/calculators" }, { label: tool.name }]}
+              siteUrl={site.url}
+              tone="onBrand"
+            />
+            {/* kit Eyebrow (adopted, onDark): fed the tool's own existing
+                tool.category string, no new label authored. */}
+            <Eyebrow onDark>{tool.category}</Eyebrow>
+            <h1 className="text-3xl font-bold text-white sm:text-4xl">{tool.name}</h1>
             <p className="mt-4 max-w-2xl text-lg text-white/85">{tool.intro}</p>
           </div>
         </section>
 
         <section className="bg-[var(--surface)] py-12 sm:py-16">
           <div className="mx-auto max-w-4xl px-6">
-            <CalculatorClient slug={tool.slug} variant="page" resultCta={<CalcResultCta campaign={tool.slug} />} />
+            {/* Kit Calculator now takes headingLevel (1437cb9e): its tool-name
+                heading renders as h2 directly, so the sr-only h2 shim that
+                used to bridge the hero h1 to the kit's old fixed h3 is gone. */}
+            <CalculatorClient slug={tool.slug} variant="page" resultCta={<CalcResultCta campaign={tool.slug} />} headingLevel={2} />
+            {/* kit ExampleFigureNote (adopted), default label: the result is
+                a worked example off the reader's own entered figures, which
+                is exactly the case its docstring is written for. Do not
+                mount a NoticeCard alongside it: none of the three tools'
+                tool.intro / tool.explainer strings contain an "estimates /
+                check your own figures" sentence to feed one
+                (`grep -rn 'estimate\|check your own' src/lib/calculators/tools`
+                = 0), and locked rule 4 forbids authoring one. */}
+            <ExampleFigureNote className="mt-4" />
           </div>
         </section>
 
@@ -99,27 +121,25 @@ export default async function CalculatorToolPage({ params }: Props) {
                 <p key={i}>{p}</p>
               ))}
             </div>
-
-            {tool.faqs && tool.faqs.length > 0 && (
-              <div className="mt-12">
-                <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">Frequently asked questions</h2>
-                <div className="mt-6 space-y-6">
-                  {tool.faqs.map((f, i) => (
-                    <div key={i}>
-                      <h3 className="text-lg font-bold text-[var(--ink)]">{f.question}</h3>
-                      <p className="mt-2 text-base leading-relaxed text-[var(--ink-soft)]">{f.answer}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* REMOVED 2026-09-28 parity phase 0 (Opus read): this route rendered
-                TWO identical capture forms, this one and CalcResultCta under the
-                result. Brief section 4 allows exactly one, directly under the
-                result, so the footer duplicate goes and CalcResultCta stays. */}
           </div>
+
+          {/* REMOVED 2026-09-28 parity phase 0 (Opus read): this route rendered
+              TWO identical capture forms, this one and CalcResultCta under the
+              result. Brief section 4 allows exactly one, directly under the
+              result, so the footer duplicate goes and CalcResultCta stays.
+              Confirmed still true here: no LeadCTAPanel or second form added
+              to this template. */}
         </section>
+
+        {/* kit FaqSection (adopted, alwaysRenderAnswers): replaces the flat
+            h3/p block. Its own heading is an h2, so the per-question h3s
+            that P0B finding 11 also flagged are gone. Same tool.faqs binding
+            buildFaqPageJsonLd above is fed from (T17: one binding). Answers
+            are plain text on all three tools (no markup in the source
+            strings), so `html` is not passed. */}
+        {tool.faqs && tool.faqs.length > 0 && (
+          <FaqSection eyebrow="" title="Frequently asked questions" faqs={tool.faqs} alwaysRenderAnswers />
+        )}
       </div>
     </>
   );

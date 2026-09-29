@@ -34,8 +34,11 @@ import type {
 } from "@/lib/research/hospitality-insolvency-index";
 
 const BRAND = "var(--brand-primary)";
-const AMBER = "#b45309";
-const SLATE = "#64748b";
+// Literal hexes replaced with the Tailwind v4 default-theme CSS vars they were
+// copied from (amber-700 / slate-500), so no hex survives outside globals.css
+// (locked rule 13) while the rendered chart colour is unchanged.
+const AMBER = "var(--color-amber-700)";
+const SLATE = "var(--color-slate-500)";
 
 // ---------------------------------------------------------------------------
 // Annual totals bar chart

@@ -12,11 +12,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { btnPrimary } from "@/components/ui/layout-utils";
+import { btnPrimary, focusRing } from "@/components/ui/layout-utils";
 import { isNameOk, isPhoneOk } from "@/lib/leads/field-floors";
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 shadow-sm focus:border-[var(--brand-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)] transition-colors";
+  `mt-1 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 shadow-sm focus:border-[var(--brand-primary)] transition-colors ${focusRing}`;
 
 type MissingField = "name" | "phone";
 
@@ -110,9 +110,9 @@ export default function DetailsForm({
 
   if (status === "success") {
     return (
-      <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-        <p className="text-lg font-bold text-neutral-900">Thank you, that is everything we need</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <div className="border border-[var(--brand-primary)] bg-slate-50 p-6 text-center">
+        <p className="text-lg font-bold text-slate-900">Thank you, that is everything we need</p>
+        <p className="mt-2 text-base text-slate-600">
           A hospitality tax specialist will be in touch shortly. If you would like to pick a time that suits
           you, you can book a callback below.
         </p>
@@ -127,9 +127,9 @@ export default function DetailsForm({
 
   if (status === "partial") {
     return (
-      <div className="border border-[var(--brand-primary)] bg-neutral-50 p-6 text-center">
-        <p className="text-lg font-bold text-neutral-900">Thank you</p>
-        <p className="mt-2 text-base text-neutral-600">
+      <div className="border border-[var(--brand-primary)] bg-slate-50 p-6 text-center">
+        <p className="text-lg font-bold text-slate-900">Thank you</p>
+        <p className="mt-2 text-base text-slate-600">
           We have saved that. We still need {remainingLabel(remaining)}. We will pop you a quick note
           so you can add it, or you can reply to any of our messages.
         </p>
@@ -151,7 +151,7 @@ export default function DetailsForm({
 
       {needsName && (
         <div className="mb-4">
-          <label htmlFor="complete-name" className="block text-sm font-semibold text-neutral-900">
+          <label htmlFor="complete-name" className="block text-sm font-semibold text-slate-900">
             Full name
           </label>
           <input
@@ -172,7 +172,7 @@ export default function DetailsForm({
 
       {needsPhone && (
         <div className="mb-4">
-          <label htmlFor="complete-phone" className="block text-sm font-semibold text-neutral-900">
+          <label htmlFor="complete-phone" className="block text-sm font-semibold text-slate-900">
             Phone
           </label>
           <input
@@ -201,13 +201,13 @@ export default function DetailsForm({
         </p>
       )}
 
-      <p className="mt-3 text-xs text-neutral-500">
+      <p className="mt-3 text-xs text-slate-500">
         We only use this to arrange your free hospitality tax review. See our{" "}
         <a
           href="/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-[var(--gold-strong)] underline"
+          className="font-semibold text-primary-700 underline"
         >
           Privacy Policy
         </a>

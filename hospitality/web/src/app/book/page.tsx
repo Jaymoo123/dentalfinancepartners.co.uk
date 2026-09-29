@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { btnPrimary, siteContainerLg } from "@/components/ui/layout-utils";
 import BookingPicker from "@/components/forms/BookingPicker";
+import { SlimHero } from "@accounting-network/web-shared/design/primitives/SlimHero";
+import { NoticeCard } from "@accounting-network/web-shared/design/primitives/NoticeCard";
+import HospitalityBackdrop from "@/components/layout/HospitalityBackdrop";
 
 /**
  * Standalone booking page, linked from every nurture SMS/email as
@@ -25,33 +28,39 @@ export default async function BookPage({
   const token = (params.t ?? "").trim();
 
   return (
-    <section className="bg-white py-16 sm:py-20">
-      <div className={siteContainerLg}>
-        <div className="mx-auto max-w-2xl">
-          <h1 className="text-center text-3xl font-bold text-neutral-900 sm:text-4xl">
-            Book your free review call
-          </h1>
-          <p className="mt-4 text-center text-lg leading-relaxed text-neutral-600">
+    <>
+      <div className="ground-dark">
+        {/* "Your callback" is the one string this package authors on this route (SlimHero's
+            eyebrow is required with no fallback); same convention as startups-tech's
+            SlimHero eyebrow on the equivalent page. */}
+        <SlimHero eyebrow="Your callback" title="Book your free review call" backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-book-hero" />}>
+          <p className="mt-4 text-lg leading-relaxed text-slate-300">
             Pick a day and a time window that suits you. A hospitality tax specialist will call you then, no
             obligation.
           </p>
-          <div className="mt-10">
-            {token ? (
-              <BookingPicker token={token} />
-            ) : (
-              <div className="border border-neutral-300 bg-neutral-50 p-6 text-center">
-                <p className="text-base text-neutral-600">
-                  This page needs the personal link from your email or text message. If you cannot
-                  find it, use the contact form and we will arrange your review.
-                </p>
-                <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
-                  Go to the contact form
-                </Link>
-              </div>
-            )}
+        </SlimHero>
+      </div>
+      <section className="bg-white py-16 sm:py-20">
+        <div className={siteContainerLg}>
+          <div className="mx-auto max-w-2xl">
+            <div className="mt-2">
+              {token ? (
+                <BookingPicker token={token} />
+              ) : (
+                <NoticeCard>
+                  <p className="text-base text-slate-600">
+                    This page needs the personal link from your email or text message. If you cannot
+                    find it, use the contact form and we will arrange your review.
+                  </p>
+                  <Link href="/contact" className={`${btnPrimary} mt-4 text-base`}>
+                    Go to the contact form
+                  </Link>
+                </NoticeCard>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

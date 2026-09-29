@@ -134,7 +134,10 @@
   "blog": {
     "cta_heading": "Need help with your hospitality business accounts?",
     "cta_body": "Tell us about your venue and we will come back within 24 hours.",
-    "cta_button": "Get in touch"
+    "cta_button": "Get in touch",
+    "label_topics": "Topics",
+    "label_library": "The library",
+    "related_heading": "Keep exploring"
   },
   "shared_components_version": "1.0.0",
   "last_sync": null

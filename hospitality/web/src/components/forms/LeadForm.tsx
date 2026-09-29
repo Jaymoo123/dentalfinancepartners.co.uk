@@ -9,13 +9,14 @@ import { useFormTracking } from "@accounting-network/web-shared/analytics/react/
 import { track } from "@accounting-network/web-shared/analytics/track";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { buildThankYouUrl } from "@accounting-network/web-shared/leads/capture-steps";
+import { focusRing } from "@/components/ui/layout-utils";
 
 const fieldClass =
-  "mt-2 w-full min-h-12 touch-manipulation rounded-md border border-neutral-300 bg-white px-3.5 py-3 text-base text-neutral-900 placeholder:text-neutral-400 transition-colors focus:border-[var(--brand,#b0532f)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand,#b0532f)]";
-const labelClass = "block text-sm font-medium text-neutral-900";
+  `mt-2 w-full min-h-12 touch-manipulation rounded-md border border-slate-300 bg-white px-3.5 py-3 text-base text-slate-900 placeholder:text-slate-400 transition-colors focus:border-[var(--brand-primary)] ${focusRing}`;
+const labelClass = "block text-sm font-medium text-slate-900";
 const errorClass = "mt-2 text-xs text-red-600";
 const btnClass =
-  "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[#b0532f] px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50";
+  "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-primary-600 px-6 py-3 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -199,7 +200,7 @@ export function LeadForm({
         />
       </div>
 
-      <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500" aria-live="polite">
+      <p className="text-xs font-semibold uppercase tracking-wider text-slate-600" aria-live="polite">
         Step {step + 1} of 2 · {step === 0 ? "About you" : "Your details"}
       </p>
 
@@ -234,7 +235,7 @@ export function LeadForm({
 
           <div>
             <label htmlFor="message" className={labelClass}>
-              Message <span className="font-normal text-neutral-500">(optional)</span>
+              Message <span className="font-normal text-slate-600">(optional)</span>
             </label>
             <textarea
               id="message"
@@ -255,8 +256,8 @@ export function LeadForm({
             )}
           </div>
 
-          <details className="rounded-lg border border-neutral-200 bg-neutral-50">
-            <summary className="cursor-pointer select-none px-4 py-3 text-sm font-medium text-neutral-500 hover:text-neutral-900">
+          <details className="rounded-lg border border-slate-200 bg-slate-50">
+            <summary className="cursor-pointer select-none px-4 py-3 text-sm font-medium text-slate-500 hover:text-slate-900">
               Optional: a bit more detail (helps us prepare)
             </summary>
             <div className="space-y-4 px-4 pb-4 pt-2">
@@ -319,7 +320,7 @@ export function LeadForm({
 
       {step === 1 && (
         <>
-          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-semibold text-neutral-900 outline-none">
+          <h3 ref={step2HeaderRef} tabIndex={-1} className="text-lg font-semibold text-slate-900 outline-none">
             Where should we send our reply?
           </h3>
 
@@ -397,7 +398,7 @@ export function LeadForm({
           {/* Data-sharing acknowledgement (legitimate interests, not consent): submitting
               the enquiry is the affirmative act, so this is shown as a notice, not a
               tick-box. */}
-          <p className="text-xs leading-relaxed text-neutral-600">
+          <p className="text-xs leading-relaxed text-slate-600">
             {siteConfig.leadConsentText} See our{" "}
             <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="font-medium underline">
               Privacy Policy
@@ -434,13 +435,13 @@ export function LeadForm({
             <button
               type="button"
               onClick={() => setStep(0)}
-              className="text-sm font-medium text-neutral-500 underline"
+              className="text-sm font-medium text-slate-500 underline"
             >
               Back
             </button>
           </div>
 
-          <p className="text-xs leading-relaxed text-neutral-500">
+          <p className="text-xs leading-relaxed text-slate-500">
             We respond within 24 hours and store your details securely.
           </p>
         </>

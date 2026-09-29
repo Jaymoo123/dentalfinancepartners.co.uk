@@ -74,7 +74,7 @@ export const hospitalityServices: HospitalityService[] = [
       {
         question: "What is a tronc and does my business need one?",
         answer:
-          "A tronc is a separate pay arrangement run by an independent troncmaster that distributes tips and service charges to staff. Your business needs one if you receive significant card or pooled tips and want to eliminate employer and employee NIC on those distributions. Without a correctly structured tronc, tips paid through the employer are treated as earnings and attract full NIC. See also our hospitality payroll service for how tronc payments sit inside your overall pay run.",
+          "A tronc is a separate pay arrangement run by an independent troncmaster that distributes tips and service charges to staff. Your business needs one if you receive significant card or pooled tips and want to eliminate employer and employee NIC on those distributions. Without a correctly structured tronc, tips paid through the employer are treated as earnings and attract full NIC. See also <a href=\"/services/hospitality-payroll\">hospitality payroll</a> for how tronc payments sit inside your overall pay run.",
       },
       {
         question: "Does a tronc save employee NIC as well as employer NIC?",

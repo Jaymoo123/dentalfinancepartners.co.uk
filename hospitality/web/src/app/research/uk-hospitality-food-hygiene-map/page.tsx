@@ -6,6 +6,11 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { siteConfig } from "@/config/site";
 import { buildFaqJsonLd, buildArticleJsonLd } from "@/lib/schema";
 import { BusinessTypeRatingChart } from "@/components/research/FsaHygieneCharts";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
+import HospitalityBackdrop from "@/components/layout/HospitalityBackdrop";
 import {
   fmtNumber,
   fmtPct,
@@ -141,6 +146,7 @@ function LaTable({ rows, title }: { rows: typeof local_authority_league_table.to
           ))}
         </tbody>
       </table>
+      <ExampleFigureNote label="Source: Food Standards Agency Ratings API" />
     </div>
   );
 }
@@ -156,9 +162,20 @@ export default function UKHospitalityFoodHygieneMapPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildFaqJsonLd(faqs) }} />
 
       <div>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
+        {/*
+          SlimHero DECLINED (K1, SlimHero.tsx:36): this hero is bg-[var(--brand-primary)],
+          not SlimHero's hardcoded bg-slate-900. Kept the brand ground; added
+          HospitalityBackdrop + .ground-dark + kit Eyebrow + Breadcrumb tone="onBrand".
+        */}
+        <section className="ground-dark relative overflow-hidden bg-[var(--brand-primary)] py-14 sm:py-20">
+          <HospitalityBackdrop patternId="hospitality-table-setting-food-hygiene-hero" />
+          <div className="relative z-10 mx-auto max-w-4xl px-6">
+            <Breadcrumb
+              items={[{ label: "Home", href: "/" }, { label: "Research", href: "/research" }, { label: "Food Hygiene Map" }]}
+              siteUrl={siteConfig.url}
+              tone="onBrand"
+            />
+            <Eyebrow onDark>Research</Eyebrow>
             <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
               UK Hospitality Food Hygiene Map
             </h1>
@@ -228,6 +245,7 @@ export default function UKHospitalityFoodHygieneMapPage() {
             <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] p-4 sm:p-6">
               <BusinessTypeRatingChart businessTypes={business_types} />
             </div>
+            <ExampleFigureNote label="Source: Food Standards Agency Ratings API" />
             <div className="not-prose mt-6 overflow-x-auto">
               <table className="w-full border-collapse text-sm">
                 <thead>
@@ -251,6 +269,7 @@ export default function UKHospitalityFoodHygieneMapPage() {
                   ))}
                 </tbody>
               </table>
+              <ExampleFigureNote label="Source: Food Standards Agency Ratings API" />
             </div>
           </Section>
 
@@ -317,6 +336,8 @@ export default function UKHospitalityFoodHygieneMapPage() {
             </p>
           </Section>
 
+          {/* LeadCTAPanel DECLINED here: same reason as the insolvency page, this page
+              already has exactly one LeadForm and no existing proofPoints data to feed. */}
           <div className="mt-10 rounded-2xl border-2 border-[var(--brand-primary)]/20 bg-[var(--brand-primary)]/[0.04] p-8 sm:p-10">
             <h2 className="text-2xl font-bold text-[var(--brand-primary)] sm:text-3xl">
               Keep your compliance as sharp as your hygiene rating.
@@ -330,22 +351,9 @@ export default function UKHospitalityFoodHygieneMapPage() {
               <LeadForm redirectOnSuccess={false} submitLabel="Get a free hospitality tax review" />
             </div>
           </div>
-
-          <div className="mt-12 pb-16">
-            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
-              Frequently asked questions
-            </h2>
-            <div className="mt-6 space-y-6">
-              {faqs.map((f, i) => (
-                <div key={i}>
-                  <h3 className="text-lg font-bold text-[var(--ink)]">{f.question}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-[var(--ink-soft)]">{f.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
+      <FaqSection faqs={faqs} alwaysRenderAnswers className="bg-white pb-16" />
     </>
   );
 }

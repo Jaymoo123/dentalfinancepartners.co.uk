@@ -4,6 +4,10 @@ import type { ReactNode } from "react";
 import snapshot from "@/data/uk-hospitality-openings-closures-index.json";
 import { siteConfig } from "@/config/site";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
+import HospitalityBackdrop from "@/components/layout/HospitalityBackdrop";
 
 const { meta, quarters, sub_trades, headline } = snapshot;
 
@@ -92,9 +96,20 @@ export default function HospitalityIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
       />
       <div>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
+        {/*
+          SlimHero DECLINED (K1, SlimHero.tsx:36): this hero is bg-[var(--brand-primary)],
+          not SlimHero's hardcoded bg-slate-900. Kept the brand ground; added
+          HospitalityBackdrop + .ground-dark + kit Eyebrow + Breadcrumb tone="onBrand".
+        */}
+        <section className="ground-dark relative overflow-hidden bg-[var(--brand-primary)] py-14 sm:py-20">
+          <HospitalityBackdrop patternId="hospitality-table-setting-openings-closures-hero" />
+          <div className="relative z-10 mx-auto max-w-4xl px-6">
+            <Breadcrumb
+              items={[{ label: "Home", href: "/" }, { label: "Research", href: "/research" }, { label: "Openings & Closures Index" }]}
+              siteUrl={siteConfig.url}
+              tone="onBrand"
+            />
+            <Eyebrow onDark>Research</Eyebrow>
             <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
               UK Hospitality Openings & Closures Index
             </h1>
@@ -183,6 +198,7 @@ export default function HospitalityIndexPage() {
                   })}
                 </tbody>
               </table>
+              <ExampleFigureNote label="Source: Companies House" />
             </div>
           </Section>
 
@@ -225,10 +241,10 @@ export default function HospitalityIndexPage() {
                       })}
                     </tbody>
                   </table>
+                  <ExampleFigureNote label="Source: Companies House">
+                    SIC codes: {t.sic_codes.join(", ")}. 4Q avg = rolling 4-quarter average net openings.
+                  </ExampleFigureNote>
                 </div>
-                <p className="text-xs text-[var(--muted)]">
-                  SIC codes: {t.sic_codes.join(", ")}. 4Q avg = rolling 4-quarter average net openings.
-                </p>
               </Section>
             );
           })}
@@ -272,6 +288,8 @@ export default function HospitalityIndexPage() {
             </p>
           </Section>
 
+          {/* LeadCTAPanel DECLINED here: same reason as the other two research pages, one
+              existing LeadForm, no proofPoints data to feed. */}
           <div className="mt-10 rounded-2xl border-2 border-[var(--brand-primary)]/20 bg-[var(--brand-primary)]/[0.04] p-8 sm:p-10">
             <h2 className="text-2xl font-bold text-[var(--brand-primary)] sm:text-3xl">
               Running a restaurant, pub or hotel? Keep the cash position ahead of the risk.

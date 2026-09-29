@@ -10,6 +10,11 @@ import {
   MonthlyInsolvencyChart,
   SurvivalCurveChart,
 } from "@/components/research/HospitalityInsolvencyCharts";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
+import { Eyebrow } from "@accounting-network/web-shared/design/primitives/page-blocks";
+import { FaqSection } from "@accounting-network/web-shared/design/primitives/FaqSection";
+import { ExampleFigureNote } from "@accounting-network/web-shared/design/primitives/ExampleFigureNote";
+import HospitalityBackdrop from "@/components/layout/HospitalityBackdrop";
 import {
   fmtNumber,
   fmtPercent,
@@ -169,9 +174,20 @@ export default function UKHospitalityInsolvencyIndexPage() {
       />
 
       <div>
-        <section className="bg-[var(--brand-primary)] py-14 sm:py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-white/70">Research</p>
+        {/*
+          SlimHero DECLINED (K1, SlimHero.tsx:36): this hero is bg-[var(--brand-primary)],
+          not SlimHero's hardcoded bg-slate-900. Kept the brand ground; added
+          HospitalityBackdrop + .ground-dark + kit Eyebrow + Breadcrumb tone="onBrand".
+        */}
+        <section className="ground-dark relative overflow-hidden bg-[var(--brand-primary)] py-14 sm:py-20">
+          <HospitalityBackdrop patternId="hospitality-table-setting-insolvency-hero" />
+          <div className="relative z-10 mx-auto max-w-4xl px-6">
+            <Breadcrumb
+              items={[{ label: "Home", href: "/" }, { label: "Research", href: "/research" }, { label: "Insolvency Index" }]}
+              siteUrl={siteConfig.url}
+              tone="onBrand"
+            />
+            <Eyebrow onDark>Research</Eyebrow>
             <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
               {HEADLINE_SENTENCE}
             </h1>
@@ -253,6 +269,7 @@ export default function UKHospitalityInsolvencyIndexPage() {
             <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] p-4 sm:p-6">
               <AnnualInsolvencyChart annual={insolvencies.annual} />
             </div>
+            <ExampleFigureNote label="Source: Insolvency Service, Company Insolvency Statistics" />
           </Section>
 
           <Section id="monthly" title="The monthly trend by procedure">
@@ -265,6 +282,7 @@ export default function UKHospitalityInsolvencyIndexPage() {
             <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] p-4 sm:p-6">
               <MonthlyInsolvencyChart monthly={insolvencies.monthly} />
             </div>
+            <ExampleFigureNote label="Source: Insolvency Service, Company Insolvency Statistics" />
           </Section>
 
           <Section id="procedures" title="Breakdown by procedure">
@@ -309,6 +327,7 @@ export default function UKHospitalityInsolvencyIndexPage() {
                     </tr>
                   </tbody>
                 </table>
+                <ExampleFigureNote label="Source: Insolvency Service, Company Insolvency Statistics" />
               </div>
             )}
           </Section>
@@ -323,6 +342,7 @@ export default function UKHospitalityInsolvencyIndexPage() {
             {latestCohort && (
               <div className="not-prose mt-6 rounded-2xl border border-[var(--border)] p-4 sm:p-6">
                 <SurvivalCurveChart cohort={latestCohort} />
+                <ExampleFigureNote label="Source: ONS Business Demography" />
               </div>
             )}
             <div className="not-prose mt-6 overflow-x-auto">
@@ -364,10 +384,13 @@ export default function UKHospitalityInsolvencyIndexPage() {
                   ))}
                 </tbody>
               </table>
-              <p className="mt-2 text-xs text-[var(--muted)]">
+              <ExampleFigureNote
+                className="mt-2"
+                label="Source: ONS Business Demography"
+              >
                 Blank cells mean that many years have not yet elapsed for that cohort (ONS has not yet
                 published the figure). Cohort = enterprises first registered as active in that year.
-              </p>
+              </ExampleFigureNote>
             </div>
           </Section>
 
@@ -433,6 +456,11 @@ export default function UKHospitalityInsolvencyIndexPage() {
             </p>
           </Section>
 
+          {/* LeadCTAPanel DECLINED here: this page already has exactly one LeadForm, and the
+              panel's proofPoints/formTitle structure has no matching existing data on this
+              page to feed (only a heading and a paragraph exist). Wrapping would either
+              invent proofPoints or render an empty list; kept the existing single-form
+              band as-is. */}
           <div className="mt-10 rounded-2xl border-2 border-[var(--brand-primary)]/20 bg-[var(--brand-primary)]/[0.04] p-8 sm:p-10">
             <h2 className="text-2xl font-bold text-[var(--brand-primary)] sm:text-3xl">
               Running a restaurant, pub or hotel? Keep the cash position ahead of the risk.
@@ -448,21 +476,12 @@ export default function UKHospitalityInsolvencyIndexPage() {
             </div>
           </div>
 
-          <div className="mt-12 pb-16">
-            <h2 className="text-2xl font-bold text-[var(--ink)] sm:text-3xl">
-              Frequently asked questions
-            </h2>
-            <div className="mt-6 space-y-6">
-              {faqs.map((f, i) => (
-                <div key={i}>
-                  <h3 className="text-lg font-bold text-[var(--ink)]">{f.question}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-[var(--ink-soft)]">{f.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
+      {/* Answers are plain text (checked: no markup in any of the five), so `html` is not
+          needed. `alwaysRenderAnswers` keeps every answer in the server HTML, matching the
+          FAQPage JSON-LD above (T17, one binding). */}
+      <FaqSection faqs={faqs} alwaysRenderAnswers className="bg-white pb-16" />
     </>
   );
 }

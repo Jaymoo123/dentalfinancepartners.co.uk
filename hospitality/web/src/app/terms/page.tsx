@@ -3,6 +3,7 @@ import Link from "next/link";
 import { contentNarrow, sectionY } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildOgImageUrl } from "@/lib/schema";
+import { Breadcrumb } from "@accounting-network/web-shared/design/primitives/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Terms of use",
@@ -25,27 +26,31 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <div className={`${contentNarrow} ${sectionY}`}>
-      <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">Terms of use</h1>
-      <p className="mt-4 text-sm text-neutral-500">Last updated: 15 July 2026</p>
-      <div className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
+      <Breadcrumb
+        items={[{ label: "Home", href: "/" }, { label: "Terms of use" }]}
+        siteUrl={siteConfig.url}
+      />
+      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">Terms of use</h1>
+      <p className="mt-4 text-sm text-slate-500">Last updated: 15 July 2026</p>
+      <div className="mt-8 space-y-6 text-base leading-relaxed text-slate-600">
         <p>
           These terms of use govern your access to and use of the {siteConfig.name} website (the &quot;Site&quot;).
           By accessing or using the Site, you agree to be bound by these terms. If you do not agree, please do not
           use the Site.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">1. About us</h2>
+        <h2 className="text-xl font-semibold text-slate-900">1. About us</h2>
         <p>
           The Site is operated by {siteConfig.company.legalName} (trading as {siteConfig.name}), a company
           registered in {siteConfig.company.placeOfRegistration} under company number {siteConfig.company.number},
           with its registered office at {siteConfig.company.registeredOfficeLine}. You can contact us via our{" "}
-          <Link href="/contact" className="text-[#b0532f] underline hover:text-[#8f421f]">
+          <Link href="/contact" className="text-primary-700 underline hover:text-primary-800">
             contact page
           </Link>
           .
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">2. No advice provided on the Site</h2>
+        <h2 className="text-xl font-semibold text-slate-900">2. No advice provided on the Site</h2>
         <p>
           Content on this Site is for general information purposes only. It does <strong>not</strong> constitute
           accounting, tax, financial, or legal advice. You should not rely on any content on the Site as a substitute
@@ -57,7 +62,7 @@ export default function TermsPage() {
           enquiry form.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">3. Accuracy and changes</h2>
+        <h2 className="text-xl font-semibold text-slate-900">3. Accuracy and changes</h2>
         <p>
           While we aim to keep information on the Site accurate and up to date, tax and accounting rules change
           frequently. We make no representations or warranties regarding the accuracy, completeness, or currency of
@@ -68,7 +73,7 @@ export default function TermsPage() {
           responsibility to check for updates if you are relying on information from the Site.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">4. Acceptable use</h2>
+        <h2 className="text-xl font-semibold text-slate-900">4. Acceptable use</h2>
         <p>You agree not to:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Use the Site in any way that violates applicable laws or regulations</li>
@@ -79,7 +84,7 @@ export default function TermsPage() {
           <li>Impersonate any person or entity, or misrepresent your affiliation with any person or entity</li>
         </ul>
 
-        <h2 className="text-xl font-semibold text-neutral-900">5. Intellectual property</h2>
+        <h2 className="text-xl font-semibold text-slate-900">5. Intellectual property</h2>
         <p>
           All content on the Site, including text, graphics, logos, and software, is the property of{" "}
           {siteConfig.company.legalName} or its licensors and is protected by UK and international copyright laws.
@@ -90,14 +95,14 @@ export default function TermsPage() {
           written permission.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">6. Third-party links</h2>
+        <h2 className="text-xl font-semibold text-slate-900">6. Third-party links</h2>
         <p>
           The Site may contain links to third-party websites. We do not control or endorse these websites and are
           not responsible for their content, privacy practices, or terms of use. You access third-party websites at
           your own risk.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">7. Limitation of liability</h2>
+        <h2 className="text-xl font-semibold text-slate-900">7. Limitation of liability</h2>
         <p>
           To the fullest extent permitted by law, {siteConfig.company.legalName} excludes all liability for any
           loss or damage arising from your use of the Site, including but not limited to:
@@ -113,43 +118,43 @@ export default function TermsPage() {
           fraud, or any other liability that cannot be excluded by law.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">8. Disclaimer of warranties</h2>
+        <h2 className="text-xl font-semibold text-slate-900">8. Disclaimer of warranties</h2>
         <p>
           The Site is provided on an &quot;as is&quot; and &quot;as available&quot; basis. We make no warranties,
           express or implied, regarding the Site&apos;s operation, content, or suitability for any purpose. This
           includes implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">9. Indemnity</h2>
+        <h2 className="text-xl font-semibold text-slate-900">9. Indemnity</h2>
         <p>
           You agree to indemnify and hold harmless {siteConfig.company.legalName}, its directors, employees, and
           agents from any claims, losses, damages, liabilities, and expenses (including legal fees) arising from
           your use of the Site or breach of these terms.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">10. Governing law and jurisdiction</h2>
+        <h2 className="text-xl font-semibold text-slate-900">10. Governing law and jurisdiction</h2>
         <p>
           These terms are governed by the laws of England and Wales. Any disputes arising from these terms or your
           use of the Site shall be subject to the exclusive jurisdiction of the courts of England and Wales.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">11. Changes to these terms</h2>
+        <h2 className="text-xl font-semibold text-slate-900">11. Changes to these terms</h2>
         <p>
           We may update these terms from time to time. The &quot;Last updated&quot; date at the top of this page
           shows when they were last revised. Your continued use of the Site after changes are posted constitutes
           your acceptance of the updated terms.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">12. Severability</h2>
+        <h2 className="text-xl font-semibold text-slate-900">12. Severability</h2>
         <p>
           If any provision of these terms is found to be invalid or unenforceable, the remaining provisions shall
           continue in full force and effect.
         </p>
 
-        <h2 className="text-xl font-semibold text-neutral-900">13. Contact us</h2>
+        <h2 className="text-xl font-semibold text-slate-900">13. Contact us</h2>
         <p>
           Questions about these terms? Contact us via our{" "}
-          <Link href="/contact" className="text-[#b0532f] underline hover:text-[#8f421f]">
+          <Link href="/contact" className="text-primary-700 underline hover:text-primary-800">
             contact page
           </Link>
           .

@@ -3,13 +3,14 @@
 import { useEffect, useState } from "react";
 import { getVisitorId, getSessionId } from "@accounting-network/web-shared/analytics/ids";
 import { site } from "@/lib/calculators/site";
+import { focusRing } from "@/components/ui/layout-utils";
 
 type Status = "idle" | "loading" | "success" | "error";
 
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const inputClass =
-  "mt-1 w-full min-h-12 touch-manipulation border border-[var(--border)] bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-[var(--muted)] shadow-sm focus:border-[var(--brand-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-primary)] transition-colors";
+  `mt-1 w-full min-h-12 touch-manipulation border border-[var(--border)] bg-white px-3.5 py-3 text-base text-[var(--ink)] placeholder:text-[var(--muted)] shadow-sm focus:border-[var(--brand-primary)] transition-colors ${focusRing}`;
 
 export function MiniCapture({
   formId,
