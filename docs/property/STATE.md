@@ -30,6 +30,8 @@ Owner asked why Property leads felt lower. Traced deploy by deploy (Vercel prod 
 
 **Live state 30 Sep:** header CTAs render at desktop and mobile; every capture surface advances; real test submissions through the live contact form stored is_test on all 15 sites with zero emails. Contact-page reach 3, 1, 0 on Mon to Wed morning against a September weekday range of 2 to 10. Copy "free first call, then a fixed fee in writing" (`815ae7de`) is the one unmeasured live change; owner ruling 29 Sep: keep it, read on 2026-10-13.
 
+**DEPLOYED 2026-09-30 ~11:40 UTC:** wording revert `53584398` shipped ALONE on top of the live commit as `bb8d6bb5` (branch `deploy/property-copy-revert`, dpl_2kb42wc9FE3VKtA9CDXYL2xYhggy), owner decision. Live check: "free first call" 0 on homepage and contact, "free consultation" back. Phase 0 bundle and kit changes after `815ae7de` remain undeployed by design. Read: contact-form starts by real visitors, 4 for Mon to Wed 10am vs 7 to 11 normal; judge Friday 2026-10-03.
+
 **Open (owner call):** apply the one-form-per-page rule to Solicitors, Dentists and Generalist blog posts so the dead free-review form stops competing; follow-up gap (35% of leads unreachable, two complaints of no call back); `site_flags.calc_pdf_offer.enabled` still true with the code gone.
 
 ## 2026-09-28 phase 0 parity (not yet deployed)
