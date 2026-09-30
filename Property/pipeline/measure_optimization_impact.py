@@ -8,7 +8,9 @@ Once all four weeks are recorded, set status='completed' and compute
 impact_verdict from the delta against baseline.
 
 Run weekly (or after each rewrite batch):
-    python Property/pipeline/measure_optimization_impact.py
+    python Property/pipeline/measure_optimization_impact.py [site]
+
+Sites: property (default), dentists, solicitors.
 
 Schedule via cron / GitHub Actions / Vercel cron:
     0 8 * * 1   (every Monday at 08:00 UTC)
@@ -34,8 +36,11 @@ SUPABASE_URL = os.getenv('SUPABASE_URL')
 SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 HEADERS = {'apikey': SUPABASE_KEY, 'Authorization': f'Bearer {SUPABASE_KEY}'}
 
+# A 7-day window needs most of its days present before it can be scored.
+MIN_DAYS_COVERED = 5
 
-def fetch_measuring_rows(niche='property'):
+
+def fetch_measuring_rows(niche):
     """Get all rows in 'measuring' state for a niche."""
     r = httpx.get(
         f'{SUPABASE_URL}/rest/v1/blog_optimizations',
@@ -51,7 +56,7 @@ def fetch_measuring_rows(niche='property'):
     return r.json()
 
 
-def fetch_window_metrics(slug: str, start: date, end: date) -> dict | None:
+def fetch_window_metrics(niche: str, slug: str, start: date, end: date) -> dict | None:
     """Fetch aggregated GSC metrics for a slug across the given window
     from gsc_page_performance. Returns {impressions, clicks, position, ctr}
     or None if no data."""
@@ -60,18 +65,21 @@ def fetch_window_metrics(slug: str, start: date, end: date) -> dict | None:
         f'{SUPABASE_URL}/rest/v1/gsc_page_performance',
         headers=HEADERS,
         params={
-            'niche': 'eq.property',
+            'niche': f'eq.{niche}',
             'page_url': f'like.*{slug}*',
-            'date': f'gte.{start.isoformat()}',
-            'date.': f'lte.{end.isoformat()}',  # PostgREST: two filters on same column
-            'select': 'impressions,clicks,position',
+            # Both date bounds in one and=() group: PostgREST cannot take two
+            # params keyed on the same column name.
+            'and': f'(date.gte.{start.isoformat()},date.lte.{end.isoformat()})',
+            'select': 'date,impressions,clicks,position',
+            'limit': '5000',  # ponytail: default 1000 silently truncates busy slugs
         },
         timeout=30,
     )
     if not r.is_success:
         return None
     rows = r.json()
-    # The PostgREST two-filter syntax above isn't quite right — apply end-date filter in Python
+    if len(rows) >= 5000:
+        raise RuntimeError(f'{slug} {start}..{end}: hit the 5000-row cap, window totals would be short')
     rows = [x for x in rows if x.get('impressions') is not None]
     if not rows:
         return None
@@ -85,10 +93,15 @@ def fetch_window_metrics(slug: str, start: date, end: date) -> dict | None:
         'clicks': total_clicks,
         'position': round(avg_pos, 2),
         'ctr': round(ctr, 6),
+        # gsc_page_performance stores top-N pages per day, so a quiet page
+        # drops out entirely. A short window is under-counted, not declining:
+        # without this the verdict reads absence as a fall in clicks.
+        'days_covered': len({x['date'] for x in rows}),
     }
 
 
-def compute_verdict(baseline_impr, baseline_clicks, week4_impr, week4_clicks) -> str:
+def compute_verdict(baseline_impr, baseline_clicks, week4_impr, week4_clicks,
+                    baseline_window_days=90) -> str:
     """Verdict at week 4: positive if clicks materially rose, negative if
     clicks fell, neutral otherwise. Use clicks (not impressions) because
     the rewrite was meant to lift CTR."""
@@ -96,7 +109,7 @@ def compute_verdict(baseline_impr, baseline_clicks, week4_impr, week4_clicks) ->
         return 'pending'
     # Normalise: baseline was 90 days = ~6.4 weeks; week4 is 7 days
     # Compare on a per-day basis to avoid scale bias.
-    baseline_clicks_per_day = baseline_clicks / 90.0
+    baseline_clicks_per_day = baseline_clicks / float(baseline_window_days or 90)
     week4_clicks_per_day = week4_clicks / 7.0
     if week4_clicks_per_day > baseline_clicks_per_day * 1.5 + 0.1:
         return 'positive'
@@ -117,7 +130,8 @@ def update_row(row_id: str, payload: dict):
 
 
 def main():
-    rows = fetch_measuring_rows('property')
+    niche = sys.argv[1] if len(sys.argv) > 1 else 'property'
+    rows = fetch_measuring_rows(niche)
     print(f'Measuring rows: {len(rows)}')
     if not rows:
         return
@@ -148,9 +162,13 @@ def main():
 
             window_end = impl_date + timedelta(days=7 * w)
             window_start = impl_date + timedelta(days=7 * (w - 1))
-            metrics = fetch_window_metrics(slug, window_start, window_end)
+            metrics = fetch_window_metrics(niche, slug, window_start, window_end)
             if not metrics:
                 print(f'  [{slug}] week{w} ({window_start} to {window_end}): no GSC data yet, skipping')
+                continue
+            if metrics['days_covered'] < MIN_DAYS_COVERED:
+                print(f'  [{slug}] week{w} ({window_start} to {window_end}): only '
+                      f'{metrics["days_covered"]}/7 days present, too thin to score, skipping')
                 continue
 
             patch[f'impact_impressions_week{w}'] = metrics['impressions']
@@ -163,7 +181,8 @@ def main():
                 verdict_inputs = (row.get('baseline_impressions', 0),
                                   row.get('baseline_clicks', 0),
                                   metrics['impressions'],
-                                  metrics['clicks'])
+                                  metrics['clicks'],
+                                  row.get('baseline_window_days') or 90)
 
         if verdict_inputs is not None and elapsed >= 28:
             v = compute_verdict(*verdict_inputs)
