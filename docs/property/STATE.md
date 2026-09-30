@@ -13,6 +13,25 @@ Brand: Property Tax Partners · prod `www.propertytaxpartners.co.uk` · Vercel p
 
 > **DEPLOYED to production 2026-09-16 from `90fbea9c`** (estate-wide release: design port phases including the 0.22a/b/c review passes, claims fixes, header CTA fix, favicons).
 
+## 2026-09-30 Lead decline trace (READ-ONLY diagnosis, nothing changed, nothing deployed)
+
+Owner asked why Property leads felt lower. Traced deploy by deploy (Vercel prod deploy times mapped to the last commit before each). Leads table starts 2026-03-30; sessions from 2026-06-05.
+
+**Eras (leads a day, lead rate per session):** pre mini-forms 16 Jun to 7 Jul 1.26 / 1.02%; mini-form era 7 Jul to 16 Aug **2.36 / 1.25%**; deploy flurry 16 to 23 Aug 1.60 / 0.77%; redesign 24 Aug to 2 Sep **2.60 / 1.09% (best)**; SPV + disclosure 2 to 14 Sep 2.45 / 1.05%; paid PDF 14 to 28 Sep 2.02 / 0.85%; phase 0 live 28 Sep onward 1.07 (two days, too short). Main form held 1.3 a day throughout; every move is in the mini-forms and the consent notice.
+
+**Causes, commit-attributed:**
+1. Heavy consent notice `d8b8b118` (15 Aug, live from the 15 Aug 15:29 UTC deploy) to revert `435cc12e` (24 Aug 20:18 UTC). Calculator gate: 0 submits in 8 days on ~75 starts with step 1 still completing. Main form 0.9 a day in the window, 2.5 a day in the four days after the revert. Behavioural, not code.
+2. Blog free-review form (`resource_block`, GateOrForm): last step-1 completion 17 Aug, 0 of 55 starts after, 0 leads after 14 Aug; was 1.5 to 2 a week. Only code change to it was the tidy-up `a59a2064` (16 Aug 08:01 deploy). After the redesign the deep-scroll modal fired on top of it in 48% of starts (was 24%). Real-mouse headless test 30 Sep on Solicitors and Dentists: with the modal closed the Continue button works; with it open the overlay takes the click. Removed from Property premium-topic posts by S1a `6f20d7d0` (live 28 Sep). Still live on Solicitors, Dentists, Generalist with 0 completions ever.
+3. Paid PDF offer on calculator results (`0317cb51` + `2963a9ea`, live 14 Sep 16:12 UTC to 28 Sep): gate submit per start 6.0% to 2.3%. Removed 28 Sep.
+4. Header fix `017cea0e` (16 Sep): mobile header CTA that was leaking through below lg removed; ~5 clicks a week, `header_book_mobile` picks up a quarter.
+5. Deep-scroll modal disabled by owner instruction 26 Sep (`b226ff38`, live 28 Sep): dismissals 57 a day to 25, clicks were 4 per 1,000 sessions.
+
+**Not the cause (verified):** search (GSC 371 clicks/wk, Bing 526, both record highs; money pages held rank), owner email delivery (Resend log 1:1 with leads, all delivered), lead quality (incorporation share 40% to 45%), page 404s (888 sitemap URLs all 200), client errors, traffic mix, timing, device, country.
+
+**Live state 30 Sep:** header CTAs render at desktop and mobile; every capture surface advances; real test submissions through the live contact form stored is_test on all 15 sites with zero emails. Contact-page reach 3, 1, 0 on Mon to Wed morning against a September weekday range of 2 to 10. Copy "free first call, then a fixed fee in writing" (`815ae7de`) is the one unmeasured live change; owner ruling 29 Sep: keep it, read on 2026-10-13.
+
+**Open (owner call):** apply the one-form-per-page rule to Solicitors, Dentists and Generalist blog posts so the dead free-review form stops competing; follow-up gap (35% of leads unreachable, two complaints of no call back); `site_flags.calc_pdf_offer.enabled` still true with the code gone.
+
 ## 2026-09-28 phase 0 parity (not yet deployed)
 
 Estate parity phase 0 (`docs/_engines/ESTATE_PARITY_PHASE0_BRIEF_2026-09-28.md`), Property's own
