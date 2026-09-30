@@ -672,7 +672,7 @@ export default function CostOfSellingAPropertyPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Selling something that is not your main home?"
-          description="The costs on this page come off the gain, and the 60 day clock starts at completion. Book a free first call and we will work out what is actually payable on your sale, and when."
+          description="The costs on this page come off the gain, and the 60 day clock starts at completion. Book a free consultation and we will work out what is actually payable on your sale, and when."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },

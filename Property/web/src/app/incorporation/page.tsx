@@ -249,9 +249,9 @@ export default function IncorporationPage() {
               Should you incorporate your buy-to-let portfolio?
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-700">
-              Whether you are buying your next property or moving a portfolio you already own, a free first call
+              Whether you are buying your next property or moving a portfolio you already own, a free consultation
               models the Capital Gains Tax and Stamp Duty against your own figures, and says so when it is
-              not worth doing. If we take the work on, you get a fixed fee in writing before anything starts.
+              not worth doing.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link

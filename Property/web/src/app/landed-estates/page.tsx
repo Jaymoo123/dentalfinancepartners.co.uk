@@ -469,7 +469,7 @@ export default function LandedEstatesPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Find out where your estate sits against the allowance"
-          description="Book a free first call. We will put a qualifying value on the estate, check what your gifts since October 2024 have used up, and tell you the tax on a death today."
+          description="Book a free consultation. We will put a qualifying value on the estate, check what your gifts since October 2024 have used up, and tell you the tax on a death today."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },

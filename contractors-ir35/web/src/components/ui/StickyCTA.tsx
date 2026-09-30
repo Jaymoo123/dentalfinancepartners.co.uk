@@ -135,7 +135,7 @@ export function StickyCTA() {
             ? "Open calculator"
             : intentAction.offer.kind === "guide"
               ? "Get free guide"
-              : "Book a free first call",
+              : "Book a free call",
       }
     : defaultOffer;
 

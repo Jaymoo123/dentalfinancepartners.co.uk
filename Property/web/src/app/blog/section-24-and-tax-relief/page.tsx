@@ -74,7 +74,7 @@ export default function Section24TaxReliefPage() {
       cta={{
         heading: "Need Section 24 tax advice?",
         body: "Section 24 has significantly increased the tax burden for many landlords. Our specialist property tax accountants can model your exact position, compare mitigation strategies, and help you make informed decisions about your portfolio's future.",
-        submitLabel: "Request a free first call",
+        submitLabel: "Request a free consultation",
       }}
     />
   );

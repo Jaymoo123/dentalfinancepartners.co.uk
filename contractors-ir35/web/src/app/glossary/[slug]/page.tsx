@@ -119,7 +119,7 @@ export default async function GlossaryEntryPage({ params }: Props) {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free first call
+              Book a free call
             </Link>
           </div>
         </div>
@@ -187,11 +187,11 @@ export default async function GlossaryEntryPage({ params }: Props) {
         <LeadCTAPanel
           contained
           ground="slate"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title="Not sure how this applies to your IR35 position?"
-          description="Book a free first call with a specialist contractor accountant. We will review your status, check your contracts and working practices, and tell you exactly where you stand. Plain English, no obligation. If we take the work on, you get a fixed fee in writing before anything starts."
+          description="Book a free call with a specialist contractor accountant. We will review your status, check your contracts and working practices, and tell you exactly where you stand. Plain English, no obligation."
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             <>

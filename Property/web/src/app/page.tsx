@@ -442,8 +442,8 @@ export default function HomePage() {
                     Get your property tax sorted today
                   </h2>
                   <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-relaxed text-slate-200">
-                    Book a free first call. We&apos;ll discuss your situation, model the numbers, and set out the
-                    next step. If we take the work on, you get a fixed fee in writing before anything starts.
+                    Book a free consultation. We&apos;ll discuss your situation, model the numbers, and set out the
+                    next step.
                   </p>
                 </>
               )}
@@ -481,7 +481,7 @@ export default function HomePage() {
                   </p>
                 </>
               ) : (
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free first call</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Book your free consultation</h3>
               )}
               <LeadForm submitLabel="Request callback" />
             </div>

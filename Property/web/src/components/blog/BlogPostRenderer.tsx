@@ -43,7 +43,7 @@ type CTACopy = { heading: string; body: string; button: string };
 const CTA_BY_CATEGORY: Record<string, CTACopy> = {
   "section-24-and-tax-relief": {
     heading: "Want your Section 24 position checked?",
-    body: "Get a property tax specialist to run the numbers on your portfolio under the s.24 finance cost restriction. Free 20-minute first call, no hard sell, and a fixed fee in writing if we take the work on.",
+    body: "Get a property tax specialist to run the numbers on your portfolio under the s.24 finance cost restriction. Free 20-minute call, no hard sell.",
     button: "Book a Section 24 review",
   },
   "incorporation-and-company-structures": {

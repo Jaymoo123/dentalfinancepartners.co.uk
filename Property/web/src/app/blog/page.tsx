@@ -131,7 +131,7 @@ export default function BlogIndexPage() {
                 data-cta-goal="form"
                 className={btnPrimary}
               >
-                Book your free first call
+                Book free consultation
               </Link>
               <Link href="#guides" data-cta="blog_hero_guides" data-cta-placement="hero" className={btnOnCream}>
                 Start with the essential guides

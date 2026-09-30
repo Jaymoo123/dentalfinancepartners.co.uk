@@ -56,7 +56,7 @@ export default function AboutPage() {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free first call
+              Book a free call
             </Link>
           </div>
         </div>
@@ -127,11 +127,11 @@ export default function AboutPage() {
         <LeadCTAPanel
           contained
           ground="white"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title="Talk to an accountant who only works with contractors"
           description="Tell us about your contract and your current structure, and we will tell you where you stand and what is worth changing."
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             <>

@@ -182,7 +182,7 @@
     "theme_color": "#001b3d",
     "homepage_title": "GP Accountants UK | Tax Specialists for Doctors",
     "homepage_h1": "Specialist Accountants for GPs & Medical Professionals",
-    "homepage_description": "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free first call, then a fixed fee in writing."
+    "homepage_description": "Medical accounting specialists for UK doctors. NHS pension optimization, locum tax returns, practice incorporation, and medical expense claims. Free consultation for GPs and consultants."
   },
   "lead_form": {
     "role_label": "I am a...",
@@ -274,7 +274,7 @@
         },
         "sticky": {
           "primary": "Ready to work with a medical accountant?",
-          "secondary": "Free first call, then a fixed fee in writing",
+          "secondary": "Book your free consultation today",
           "button": "Get started",
           "href": "/contact"
         },
@@ -294,7 +294,7 @@
       }
     },
     "sticky_primary": "Ready to work with a medical accountant?",
-    "sticky_secondary": "Free first call, then a fixed fee in writing",
+    "sticky_secondary": "Book your free consultation today",
     "sticky_button": "Get started"
   },
   "blog": {

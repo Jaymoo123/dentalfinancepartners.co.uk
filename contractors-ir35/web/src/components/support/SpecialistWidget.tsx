@@ -25,7 +25,7 @@
  * this setter currently has no reader. Left in place: harmless, and the
  * key is cheap to revive a reader for if an exit-intent surface returns.
  *
- * Chip: "Book a free first call" -> /contact (no /book path on contractors-ir35).
+ * Chip: "Book a free call" -> /contact (no /book path on contractors-ir35).
  * Widget capture: email + message via email_only captureMode through submitContractorLead.
  * Consent: uses siteConfig.leadConsentText (the widget IS an enquiry, so this is correct).
  */
@@ -428,7 +428,7 @@ export function SpecialistWidget() {
                   onClick={() => onChip("call")}
                   className={`inline-flex items-center rounded-full border border-[var(--accent)]/30 bg-white px-3 py-3 text-sm font-medium text-[var(--ink)] hover:bg-cyan-50 ${focusRing}`}
                 >
-                  Book a free first call
+                  Book a free call
                 </a>
               </div>
             ) : null}

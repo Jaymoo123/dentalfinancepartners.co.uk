@@ -103,7 +103,7 @@ export default async function ResourceGuidePage({
               data-cta-goal="form"
               className={btnPrimary}
             >
-              Book a free first call
+              Book a free call
             </a>
             {xlsxReady && resource?.xlsx && (
               <a

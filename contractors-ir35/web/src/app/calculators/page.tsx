@@ -91,7 +91,7 @@ export default function CalculatorsPage() {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free first call
+              Book a free call
             </Link>
           </div>
         </div>
@@ -155,11 +155,11 @@ export default function CalculatorsPage() {
         <LeadCTAPanel
           contained
           ground="white"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title="Need help interpreting your results?"
           description="These calculators give 2026/27 estimates. For a full review of your IR35 status, the most tax-efficient salary, dividend and pension split, or your umbrella versus limited decision, talk to one of our contractor specialists. We do the work and tell you what is worth changing."
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             <>

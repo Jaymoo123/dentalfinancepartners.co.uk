@@ -22,7 +22,7 @@ export const serviceTiers: ServiceTier[] = [
   },
   {
     name: "Assisted",
-    description: "A free first call to review your IR35 position and structure, with no obligation. If we take the work on, you get a fixed fee in writing before anything starts.",
+    description: "A free discovery call to review your IR35 position and structure, with no obligation.",
     features: [
       "IR35 status review (contract and working practices)",
       "Umbrella vs limited company comparison for your day rate",
@@ -30,7 +30,7 @@ export const serviceTiers: ServiceTier[] = [
       "Contractor expenses and allowances check",
       "Plain English, no jargon, no hard sell",
     ],
-    cta: "Book a free first call",
+    cta: "Book a free call",
     // On-page ask. ServiceTiers renders on / and /services only, and both now
     // carry `<div id="book">` round the closing LeadCTAPanel. Only the header
     // CTA and the sticky banner leave for /contact (DESIGN_SYSTEM §0.5).

@@ -563,7 +563,7 @@ export function SpecialistWidget() {
                   onClick={() => onChip("call")}
                   className="inline-flex items-center rounded-full border border-emerald-300 bg-white px-3 py-3 text-sm font-medium text-emerald-800 hover:bg-emerald-50"
                 >
-                  {bookingNudge ? "Pick a callback time" : "Book a free first call"}
+                  {bookingNudge ? "Pick a callback time" : "Book a free call"}
                 </a>
               </div>
             ) : null}

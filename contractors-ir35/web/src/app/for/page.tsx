@@ -51,7 +51,7 @@ export default function ForIndexPage() {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free first call
+              Book a free call
             </Link>
           </div>
         </div>
@@ -124,11 +124,11 @@ export default function ForIndexPage() {
         <LeadCTAPanel
           contained
           ground="white"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title="Tell us what you contract in"
-          description="Book a free first call. We will talk through your IR35 position, your structure and whether there is anything worth changing for the way your sector actually works. If we take the work on, you get a fixed fee in writing before anything starts."
+          description="Book a free call. We will talk through your IR35 position, your structure and whether there is anything worth changing for the way your sector actually works."
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             /* KNOWN CONTRACT: PanelBody renders `footnote` inside a <p>, so a

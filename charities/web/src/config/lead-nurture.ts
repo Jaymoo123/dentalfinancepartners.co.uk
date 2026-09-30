@@ -413,7 +413,7 @@ const STEPS: LeadNurtureStep[] = [
       if (c.engagementVariant === "channel_shift") {
         return [
           smsMsg(
-            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free first call with a charity finance specialist is still open, and any work after it is a fixed fee agreed in writing. Reply YES and we will call you. Reply STOP to opt out.`,
+            `Hi ${c.firstName}, our emails may not be reaching you, so one text instead. Your free call with a charity finance specialist is still open. Reply YES and we will call you. Reply STOP to opt out.`,
           ),
         ];
       }
@@ -581,7 +581,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "Something worth knowing while your enquiry sits with us.",
           [
             "One quick note while your enquiry is with us. The thing trustees most often find out too late is which level of scrutiny this year's accounts need, independent examination or full audit. A specialist can look at your own figures and tell you where you sit. Knowing early makes the year end a great deal calmer.",
-            `And if you would like a specialist to look at the whole picture with you, just reply with ${ask} and we will set up a free first call. If we take the work on, you get a fixed fee in writing before anything starts.`,
+            `And if you would like a specialist to look at the whole picture with you, just reply with ${ask} and we will set up a free call.`,
           ],
           "detail_capture_day3",
           {

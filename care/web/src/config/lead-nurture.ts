@@ -622,7 +622,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "Something worth knowing while your enquiry sits with us.",
           [
             "One quick pointer while your enquiry is with us. The part operators most often underestimate is how much rests on the rota records themselves, because hours worked, sleep-ins and travel time all come back to what the rota records show, and reconstructing that after the fact takes far longer than keeping it as you go.",
-            `And if you would like a specialist to look at the whole picture with you, just reply with ${ask} and we will set up a free first call. If we take the work on, you get a fixed fee in writing before anything starts.`,
+            `And if you would like a specialist to look at the whole picture with you, just reply with ${ask} and we will set up a free call.`,
           ],
           "detail_capture_day3",
           {

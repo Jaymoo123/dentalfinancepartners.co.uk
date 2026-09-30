@@ -103,7 +103,7 @@ export default async function CalculatorToolPage({ params }: Props) {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free first call
+              Book a free call
             </Link>
           </div>
         </div>
@@ -183,11 +183,11 @@ export default async function CalculatorToolPage({ params }: Props) {
         <LeadCTAPanel
           contained
           ground="white"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title="Want to be sure of your position?"
           description="A calculator gives you the shape of the answer. We confirm your exact figure, your IR35 status and the reliefs that apply to you. Tell us about your situation for a no-obligation review."
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm redirectOnSuccess={false} submitLabel="Request a review" />}
           footnote={
             <>

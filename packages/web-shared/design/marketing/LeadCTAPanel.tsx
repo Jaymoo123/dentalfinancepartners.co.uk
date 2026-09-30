@@ -15,7 +15,7 @@ type ProofPoint = { title: string; detail: string };
  * reading, at the moment the argument has landed.
  */
 export function LeadCTAPanel({
-  eyebrow = "Free first call, then a fixed fee in writing",
+  eyebrow = "Free consultation",
   title,
   description,
   proofPoints,
@@ -24,7 +24,7 @@ export function LeadCTAPanel({
   // that site forbade adding copy; an empty string used to leave an empty
   // heading with its own margin. Every existing caller passes a real string or
   // takes the default, so nothing else changes.
-  formTitle = "Book your free first call",
+  formTitle = "Book your free consultation",
   formSubtitle,
   form,
   footnote,

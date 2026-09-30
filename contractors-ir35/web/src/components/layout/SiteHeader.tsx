@@ -19,7 +19,7 @@ export function SiteHeader() {
   return (
     <KitSiteHeader
       nav={siteConfig.nav as NavItem[]}
-      ctaPrimary={{ label: "Book a free first call", href: "/contact" }}
+      ctaPrimary={{ label: "Book a free call", href: "/contact" }}
       // New header funnel series (PHASE_PLAN §B.3 / DESIGN_DELTA §"this site does not
       // preserve a header goal, it introduces one" — the pre-port header carried zero
       // `data-cta-goal` attributes anywhere). Chosen deliberately rather than left to

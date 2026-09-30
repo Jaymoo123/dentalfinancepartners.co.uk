@@ -40,27 +40,27 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
   ir35: [
     "Working out how much better off you are outside IR35? I can pull up the like-for-like calculator.",
     "Want the outside-versus-inside take-home on your day rate? Happy to point you to it.",
-    "A free first call with a contractor specialist will confirm your status picture and your take-home, and if we take it on you get a fixed fee in writing first, want me to set one up?",
+    "A free call with a contractor specialist will confirm your status picture and your take-home, want me to set one up?",
   ],
   structure: [
     "Weighing an umbrella against your own limited company? There is a tool that shows both take-homes.",
     "Want to see the structure trade-off, running costs and admin against umbrella simplicity? I can point you to it.",
-    "A specialist can get your structure decision straight in one free first call, with a fixed fee in writing before any work starts, want me to arrange it?",
+    "A specialist can get your structure decision straight in one free call, want me to arrange it?",
   ],
   "company-tax": [
     "Sorting your corporation tax? I can pull up the calculator with the marginal band.",
     "Not sure whether the marginal rate or associated companies apply to you? I can run you through it.",
-    "A free first call will get your company tax and extraction straight, and any work after that is a fixed fee agreed in writing, interested?",
+    "A free call will get your company tax and extraction straight, interested?",
   ],
   "pay-planning": [
     "Working out your salary and dividend split for 2026/27? I can pull up the planner.",
     "Want to see how a split is taxed after the dividend-rate rise, with the Employment-Allowance caveat? Happy to point you to it.",
-    "A specialist can confirm the most efficient split for your company in one free first call, then a fixed fee in writing if you want the work done, want me to set it up?",
+    "A specialist can confirm the most efficient split for your company in one free call, want me to set it up?",
   ],
   "basics-expenses": [
     "Getting to grips with contractor accounting and what you can claim? I can point you to a quick answer.",
     "Want a hand with the 24-month rule, mileage or the expenses that actually stick? Happy to help.",
-    "A free first call is the quickest way to get your contractor set-up reviewed, and anything after it is a fixed fee in writing, want one?",
+    "A free first call is the quickest way to get your contractor set-up reviewed, want one?",
   ],
 };
 
@@ -71,21 +71,21 @@ export const TOPIC_HOOKS: Record<TopicKey, [string, string, string]> = {
 const COMBO_IR35_STRUCTURE: [string, string, string] = [
   "Working out your IR35 status and whether an umbrella or limited suits you? That is a close call and I can help you start on it.",
   "IR35 status and the structure choice are linked questions. Want me to line up the comparisons?",
-  "This is exactly what a specialist untangles in one free first call, and if we take it on you get a fixed fee in writing first. Want me to arrange it?",
+  "This is exactly what a specialist untangles in one free call. Want me to arrange it?",
 ];
 
 /** Used-calculator sanity-check opener. */
 const USED_CALC: [string, string, string] = [
   "You have already run the numbers. Want me to point out anything worth a specialist eye?",
   "The calculator gives a picture; a specialist confirms whether it fits your actual contracts. Want a quick check?",
-  "Ready to sanity-check those results? A free first call goes further than any calculator, and any work after it is a fixed fee in writing.",
+  "Ready to sanity-check those results? A free call goes further than any calculator.",
 ];
 
 /** Fully generic (no topic). */
 const GENERIC: [string, string, string] = [
   "Not sure what you are looking for? I can point you to the right tool or a quick answer.",
   "Happy to help you find what you need. What is the main thing on your mind?",
-  "The quickest way to get a straight answer is a free first call with a specialist, with a fixed fee in writing before any work starts. Want me to set one up?",
+  "The quickest way to get a straight answer is a free call with a specialist. Want me to set one up?",
 ];
 
 /**
@@ -147,7 +147,7 @@ export function exitOpener(profile?: JourneyProfile): string {
   const t = profile?.primaryTopic;
   if (t) {
     const noun = TOPIC_NOUN[t];
-    return `Before you go: a specialist can give you a clearer picture on ${noun} in a free first call, then a fixed fee in writing if we take it on. Want me to set it up?`;
+    return `Before you go: a specialist can give you a clearer picture on ${noun} in a free first call. Want me to set it up?`;
   }
-  return "Before you go: a free first call with a specialist is often the quickest way to get a straight answer, and anything after it is a fixed fee in writing. Fancy it?";
+  return "Before you go: a free call with a specialist is often the quickest way to get a straight answer. Fancy it?";
 }

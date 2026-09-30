@@ -269,13 +269,13 @@
         },
         "home_cta": {
           "heading": "Pick a plan today. Cancel with one month's notice.",
-          "body": "Fixed monthly fees for landlords and property companies, agreed up front. Section 24, MTD and capital gains handled by property-only specialists. If you would rather talk it through first, a free first call sorts the right plan in one go, and if we take the work on you get a fixed fee in writing before anything starts.",
+          "body": "Fixed monthly fees for landlords and property companies, agreed up front. Section 24, MTD and capital gains handled by property-only specialists. If you would rather talk it through first, a free consultation sorts the right plan in one go.",
           "primary": {
             "label": "See plans and pricing",
             "href": "/pricing"
           },
           "secondary": {
-            "label": "Book your free first call",
+            "label": "Book a free consultation",
             "href": "/contact"
           }
         }
@@ -290,7 +290,7 @@
           "href": "/contact"
         },
         "hero_primary": {
-          "label": "Book your free first call",
+          "label": "Book free consultation",
           "href": "#book"
         },
         "hero_secondary": {
@@ -299,32 +299,32 @@
         },
         "sticky": {
           "primary": "Get your property tax sorted",
-          "secondary": "Free first call, then a fixed fee in writing",
+          "secondary": "Book a free consultation with a property specialist",
           "button": "Book now",
           "href": "/contact"
         },
         "blog": {
           "cta_heading": "Need help with your property tax?",
-          "cta_body": "Get practical advice from property tax specialists. Book a free first call to discuss your situation - we'll give you clear recommendations, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts.",
+          "cta_body": "Get practical advice from property tax specialists. Book a free consultation to discuss your situation - we'll give you clear recommendations, no hard sell.",
           "cta_button": "Book consultation"
         },
         "home_cta": {
           "heading": "Get your property tax sorted today",
-          "body": "Book a free first call. We'll discuss your situation, model the numbers, and give you clear recommendations. If we take the work on, you get a fixed fee in writing before anything starts.",
+          "body": "Book a free consultation. We'll discuss your situation, model the numbers, and give you clear recommendations.",
           "primary": {
-            "label": "Book your free first call",
+            "label": "Book free consultation",
             "href": "/contact"
           }
         }
       }
     },
     "sticky_primary": "Get your property tax sorted",
-    "sticky_secondary": "Free first call, then a fixed fee in writing",
+    "sticky_secondary": "Book a free consultation with a property specialist",
     "sticky_button": "Book now"
   },
   "blog": {
     "cta_heading": "Need help with your property tax?",
-    "cta_body": "Get practical advice from property tax specialists. Book a free first call to discuss your situation - we'll give you clear recommendations, no hard sell. If we take the work on, you get a fixed fee in writing before anything starts.",
+    "cta_body": "Get practical advice from property tax specialists. Book a free consultation to discuss your situation - we'll give you clear recommendations, no hard sell.",
     "cta_button": "Book consultation"
   },
   "shared_components_version": "1.0.0",

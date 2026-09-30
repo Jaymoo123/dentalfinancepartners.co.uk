@@ -108,11 +108,11 @@ export default function ResearchIndexPage() {
         <LeadCTAPanel
           contained
           ground="slate"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title="Working out where you sit in this data?"
-          description="We do the work on contractor tax positions every day. Tell us about your contract and we will review your IR35 position and the structure around it on a free first call, with no obligation. If we take the work on, you get a fixed fee in writing before anything starts."
+          description="We do the work on contractor tax positions every day. Tell us about your contract and we will review your IR35 position and the structure around it on a free call, with no obligation."
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm redirectOnSuccess={false} submitLabel="Get a free IR35 review" />}
         />
       </div>

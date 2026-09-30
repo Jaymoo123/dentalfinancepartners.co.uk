@@ -74,7 +74,7 @@ export default function PropertyAccountantServicesPage() {
       cta={{
         heading: "Looking for a property accountant?",
         body: "Our specialist property accountants work exclusively with UK landlords and property investors. From tax returns and company accounts to incorporation analysis and CGT planning, we provide the expert support your portfolio needs. Get in touch to see how we can help.",
-        submitLabel: "Request a free first call",
+        submitLabel: "Request a free consultation",
       }}
     />
   );

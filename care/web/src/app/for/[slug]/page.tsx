@@ -129,7 +129,7 @@ export default async function CareHubPage({ params }: { params: Promise<{ slug: 
       <LeadCTAPanel
         contained
         ground="slate"
-        eyebrow="Free first call, then a fixed fee in writing"
+        eyebrow="Free call"
         title={`Talk to a care sector specialist about ${hub.title}`}
         description={`Tell us about your ${hub.title.toLowerCase()} situation and we will reply within 24 hours.`}
         proofPoints={[]}

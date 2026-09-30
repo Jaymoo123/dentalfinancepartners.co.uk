@@ -235,11 +235,10 @@ const specialistRows = [
 /* The three closing promises the "Get started" block carried as icon rows.
    They stay on the page verbatim, as a drawn tick list, because
    LeadCTAPanel.proofPoints is deliberately empty on this site (see receipt):
-   nothing is invented. Fee wording added 2026-09-28 on owner instruction: the first
-   call stays free, paid work after it is named. */
+   nothing is invented, and no fee or turnaround wording is introduced. */
 const closingPromises = [
   "Charity and social-enterprise specialists only. Charities, CIOs, CICs and social enterprises.",
-  "Book your free first call today. Tell us about your organisation and we will arrange a short introductory call. If we take the work on, you get a fixed fee in writing before anything starts.",
+  "Book your free, no-obligation call today. Tell us about your organisation and we will arrange a short introductory call.",
   "England and Wales default. We flag Scotland and ask your jurisdiction upfront.",
 ];
 

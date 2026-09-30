@@ -343,11 +343,11 @@ export default async function CityPage({ params }: Props) {
         <LeadCTAPanel
           contained
           ground="white"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title={`Talk to a contractor and IR35 specialist for ${city.name}`}
-          description={`Book a free first call. We will review your IR35 position, your structure and whether there is anything worth changing. We act for ${city.name} contractors entirely remotely. No jargon, no obligation. If we take the work on, you get a fixed fee in writing before anything starts.`}
+          description={`Book a free call. We will review your IR35 position, your structure and whether there is anything worth changing. We act for ${city.name} contractors entirely remotely. No jargon, no obligation.`}
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             <>
@@ -407,7 +407,7 @@ function HeroContent({ city }: { city: (typeof CITIES)[string] }) {
         data-cta-placement="hero"
         data-cta-goal="form"
       >
-        Book a free first call
+        Book a free call
       </Link>
     </div>
   );

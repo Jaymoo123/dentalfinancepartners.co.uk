@@ -149,7 +149,7 @@ export default function LocationsIndexPage() {
               data-cta-placement="hero"
               data-cta-goal="form"
             >
-              Book a free first call
+              Book a free call
             </Link>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function LocationsIndexPage() {
                   href="/contact"
                   className="font-semibold text-primary-600 underline hover:text-primary-700"
                 >
-                  book a free first call
+                  book a free call
                 </Link>{" "}
                 and we will help you wherever you contract.
               </p>
@@ -219,11 +219,11 @@ export default function LocationsIndexPage() {
         <LeadCTAPanel
           contained
           ground="slate"
-          eyebrow="Free first call, then a fixed fee in writing"
+          eyebrow="Free call"
           title="Talk to a contractor and IR35 specialist wherever you contract"
           description="We act for contractors across the UK entirely remotely. Tell us about your contract and your structure, and we will tell you what is worth changing."
           proofPoints={[]}
-          formTitle="Book your free first call"
+          formTitle="Book your free call"
           form={<LeadForm submitLabel="Request a callback" />}
           footnote={
             <>
