@@ -31,7 +31,7 @@ const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
     },
     {
       q: "Does it affect limited companies?",
-      a: "No. Companies still deduct mortgage interest in full, which is one reason landlords look at incorporating. Whether that's worthwhile depends on your numbers — the Section 24 and incorporation calculators give you a first view.",
+      a: "No. Companies still deduct mortgage interest in full, which is one reason landlords look at incorporating. Whether that's worthwhile depends on your numbers. The Section 24 and incorporation calculators give you a first view.",
     },
     {
       q: "How do I work out my own exposure?",

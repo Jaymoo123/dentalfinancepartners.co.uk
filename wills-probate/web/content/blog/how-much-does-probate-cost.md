@@ -140,4 +140,4 @@ faqs:
 
 <p>Every estate's cost stack is different: a £4,900 estate pays no court fee at all, while a taxable estate with a business and a holiday home can justify five figure professional fees. Run your own situation through the free <a href="/calculators/probate-cost-calculator">probate cost calculator</a> to see an itemised estimate before you commit to anything.</p>
 
-<p>If your estate has moving parts (inheritance tax, trusts, property abroad, family friction) it can help to talk it through. We can introduce you to a vetted probate specialist who will tell you, without obligation, what your estate actually needs and what a fair price looks like. This article is general information for England and Wales, not legal or tax advice.</p>
+<p>If your estate has moving parts (inheritance tax, trusts, property abroad, family friction) it can help to talk it through. One of our probate specialists will tell you, without obligation, what your estate actually needs and what a fair price looks like. This article is general information for England and Wales, not legal or tax advice.</p>

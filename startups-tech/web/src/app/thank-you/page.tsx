@@ -8,8 +8,8 @@ import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
 
 /**
  * CHROME ONLY. Every sentence below is the pre-port copy, byte for byte,
- * including the "specialist firm from our partner network" sentence in the
- * confirmed branch: an owner item (plan section A10), not a design one. The
+ * except the former "partner network" sentence in the confirmed branch, rewritten
+ * to firm voice on 2026-09-28 (owner ruling: the brand IS the firm). The
  * three h1 strings are the pre-port h1 strings, moved into SlimHero's `title`
  * rather than reworded. The one string authored here is the `eyebrow`, "Your
  * enquiry", which the primitive requires.
@@ -89,7 +89,7 @@ export default async function ThankYouPage({
           <div className={siteContainerLg}>
             <div className={bodyInner}>
               <p className="text-base leading-relaxed text-slate-700">
-                Thanks, that is confirmed. A specialist firm from our partner network will contact you
+                Thanks, that is confirmed. One of our startup tax specialists will contact you
                 directly.
               </p>
               <Link href="/" className={backLinkClass}>

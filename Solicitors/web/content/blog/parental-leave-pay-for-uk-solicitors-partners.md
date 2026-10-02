@@ -144,4 +144,4 @@ faqs:
 
 <p>However, the practical implications can be complex. Cash flow mismatches between drawings and profit share, pension contribution limits, and capital account requirements all need careful planning. We recommend that every solicitor partner takes professional advice from a legal-sector-specialist accountant before going on parental leave.</p>
 
-<p>For a full review of your partnership deed and tax position, <a href="/contact">contact our team</a>. We will match you with a regulated firm in our specialist partner network that can model your parental leave tax position and check that your partnership agreement is fit for purpose.</p>
+<p>For a full review of your partnership deed and tax position, <a href="/contact">contact our team</a>. Our team can model your parental leave tax position and check that your partnership agreement is fit for purpose.</p>

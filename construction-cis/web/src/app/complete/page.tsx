@@ -91,7 +91,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="accent" title="You are all set">
             <p className="text-base leading-relaxed text-slate-700">
-              We have everything we need. A specialist from our partner network will be in touch. If
+              We have everything we need. A CIS specialist from our team will be in touch. If
               you would like to pick a time that suits you, you can book a callback below.
             </p>
             {bookingToken && (
@@ -117,7 +117,7 @@ export default async function CompletePage({
               Complete your details
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-              Add the last detail we need and a specialist from our partner network will be in touch
+              Add the last detail we need and a CIS specialist from our team will be in touch
               to arrange your free CIS review, no obligation.
             </p>
           </div>
@@ -145,7 +145,7 @@ export default async function CompletePage({
                 items={[
                   "We cannot arrange a callback without a number to ring",
                   "One call, in a window you choose, about twenty minutes",
-                  "A regulated firm from our specialist partner network makes it",
+                  "A CIS specialist from our team makes it",
                   "You can tell us to stop at any time, from any message",
                 ]}
               />

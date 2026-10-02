@@ -22,23 +22,23 @@ export const serviceTiers: ServiceTier[] = [
     ctaHref: "/calculators",
   },
   {
-    name: "Guided handoff to a specialist",
+    name: "Speak to a specialist",
     description:
-      "For when your situation needs professional hands. You cannot agree, there is a business, a serious pension or property abroad, disclosure is being dodged, or you simply want it done properly and once. Tell us about your situation and we will introduce you to a vetted, SRA-regulated family law firm or an accredited mediator suited to it. Your details are shared only with your consent, we may receive a fee from the firm we introduce you to, and you remain free to walk away at any stage.",
+      "For when your situation needs professional hands. You cannot agree, there is a business, a serious pension or property abroad, disclosure is being dodged, or you simply want it done properly and once. Tell us about your situation and one of our divorce finance specialists will talk it through with you. Where you need a solicitor or mediator, we work alongside SRA-regulated family law firms and FMC-accredited mediators and stay on the money side. Your details are shared only with your consent, and you remain free to walk away at any stage.",
     features: [
-      "Matched to a vetted, regulated firm",
-      "Family solicitors or FMC-accredited mediators as your situation needs",
-      "Shared only with your consent, fee arrangement disclosed plainly",
+      "A free consultation with one of our specialists",
+      "Family solicitors or FMC-accredited mediators alongside us as your situation needs",
+      "Shared only with your consent",
       "No obligation to proceed",
     ],
-    cta: "Get connected with a specialist",
+    cta: "Speak to a specialist",
     ctaHref: "/contact",
     featured: true,
   },
   {
-    name: "Support through the whole process via partners",
+    name: "Support through the whole process",
     description:
-      "For divorces that unfold over months, not weeks. A financial settlement is rarely one conversation: there is disclosure, negotiation or mediation, the order itself, then implementation, pension sharing, remortgaging, the transfer of the house. Through our partner firms you can put professional support around the whole sequence rather than a single step, and where a question is really one for a regulated financial adviser, such as what to do with pension rights after a sharing order, we and our partners will say so plainly and point you to the right kind of professional. We provide the information and the introductions, the professional work sits with the specialists you choose.",
+      "For divorces that unfold over months, not weeks. A financial settlement is rarely one conversation: there is disclosure, negotiation or mediation, the order itself, then implementation, pension sharing, remortgaging, the transfer of the house. We can put professional support around the whole sequence rather than a single step, working alongside regulated family law firms where you need a solicitor, and where a question is really one for a regulated financial adviser, such as what to do with pension rights after a sharing order, we will say so plainly and point you to the right kind of professional. We stay on the money side throughout; the legal work sits with the solicitor you choose.",
     features: [
       "Support from first disclosure through to implementation",
       "The right specialist at each stage, not one hammer for every nail",

@@ -23,9 +23,9 @@ faqs:
 - question: Do solicitors charge VAT on their fees?
   answer: Yes. Legal services in the UK are standard-rated for VAT at 20 percent. The fee on the bill is shown net plus VAT separately. The only exceptions are pure disbursements (where the solicitor is acting as agent for the client rather than principal) and supplies to overseas business clients outside the UK in some specific circumstances. Most domestic UK solicitor bills carry the full 20 percent VAT charge.
 - question: Why do hourly rates vary so much across UK firms?
-  answer: Three main drivers. First, the underlying cost base — City firms have far higher fixed costs (premises, support staff, technology) per fee-earner than regional firms. Second, the complexity and risk of the work — Magic Circle M&A work for a public company carries materially different liability than a regional residential conveyancing matter. Third, what the market will bear — clients with complex international transactions accept City rates; clients with a single-property purchase don't.
+  answer: Three main drivers. First, the underlying cost base. City firms have far higher fixed costs (premises, support staff, technology) per fee-earner than regional firms. Second, the complexity and risk of the work. Magic Circle M&A work for a public company carries materially different liability than a regional residential conveyancing matter. Third, what the market will bear. Clients with complex international transactions accept City rates; clients with a single-property purchase don't.
 - question: Are UK solicitor rates rising in 2025/26?
-  answer: Yes, at the top end. City rates have risen 5-15 percent annually since 2022, driven by salary inflation flowing through to billing rates. The Magic Circle saw rate rises of 10-12 percent in 2024 and similar in 2025. Mid-market and regional rate rises are more modest at 3-7 percent annually. High-street rates are largely flat — limited by what local clients will accept.
+  answer: Yes, at the top end. City rates have risen 5-15 percent annually since 2022, driven by salary inflation flowing through to billing rates. The Magic Circle saw rate rises of 10-12 percent in 2024 and similar in 2025. Mid-market and regional rate rises are more modest at 3-7 percent annually. High-street rates are largely flat, limited by what local clients will accept.
 - question: Can clients negotiate solicitor hourly rates?
   answer: Yes, particularly for higher-value or longer-running matters. Volume discounts (10-20 percent off list rates) are common for repeat institutional clients. Blended rates (a single rate covering multiple seniorities on a matter) are increasingly common on complex transactions. Fixed fees, capped fees, and contingency arrangements (CFAs) are alternatives to hourly billing for many practice areas. Most firms publish their list rates but expect institutional clients to push for engagement-specific pricing.
 metaTitle_prev: 'UK Solicitor Hourly Rates 2025/26: Magic Circle, Regional'
@@ -36,7 +36,7 @@ schema: ''
 ---
 <p><strong>UK solicitor hourly rates in 2025/26 range from £150 at a regional high-street trainee to £1,500 or more at a Magic Circle senior partner.</strong> The spread is enormous because the underlying cost bases, complexity of work, and client willingness to pay all vary dramatically across the legal services market. This guide gives realistic 2025/26 rate ranges by fee-earner level, region, and firm type, with notes on what drives the variance and where the market is heading.</p>
 
-<h2>UK solicitor hourly rates by firm type and level — 2025/26</h2>
+<h2>UK solicitor hourly rates by firm type and level (2025/26)</h2>
 
 <h3>Magic Circle and US firms in London</h3>
 
@@ -137,7 +137,7 @@ schema: ''
 
 <h3>Conditional Fee Arrangements (CFAs)</h3>
 
-<p>"No win, no fee" — the firm gets paid only if the client wins, often with an uplift (success fee) on the standard rate. Standard in personal injury and increasingly common in commercial litigation. The 2013 Jackson reforms restricted recovery of success fees from the losing party, shifting more of the CFA cost to the winning client.</p>
+<p>"No win, no fee": the firm gets paid only if the client wins, often with an uplift (success fee) on the standard rate. Standard in personal injury and increasingly common in commercial litigation. The 2013 Jackson reforms restricted recovery of success fees from the losing party, shifting more of the CFA cost to the winning client.</p>
 
 <h3>Damages-based agreements (DBAs)</h3>
 
@@ -153,7 +153,7 @@ schema: ''
 <li>Total due: £12,000</li>
 </ul>
 
-<p>Disbursements (court fees, Land Registry fees, search fees, expert witness fees) are typically itemised separately. Whether VAT applies to a disbursement depends on whether the solicitor is acting as agent (no VAT charged to client by the solicitor) or principal (full VAT applies). This distinction trips up clients and firms alike — we cover the mechanics in our <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment guide</a>.</p>
+<p>Disbursements (court fees, Land Registry fees, search fees, expert witness fees) are typically itemised separately. Whether VAT applies to a disbursement depends on whether the solicitor is acting as agent (no VAT charged to client by the solicitor) or principal (full VAT applies). This distinction trips up clients and firms alike. We cover the mechanics in our <a href="/blog/vat-compliance/disbursements-vat-treatment-uk-law-firms">disbursements VAT treatment guide</a>.</p>
 
 <p>Overseas business clients in some circumstances can be zero-rated for VAT purposes. Domestic UK clients always pay the full 20 percent.</p>
 
@@ -183,9 +183,9 @@ schema: ''
 
 <p>Regional and high-street rates have risen more modestly because the underlying cost pressures are smaller and the client base is more rate-sensitive.</p>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. For a law firm benchmarking its own rates against the market, that firm provides:</p>
+<p>For a law firm benchmarking its own rates against the market, our team provides:</p>
 
 <ul>
 <li>Rate review comparing your current list rates to firms of your type and region</li>

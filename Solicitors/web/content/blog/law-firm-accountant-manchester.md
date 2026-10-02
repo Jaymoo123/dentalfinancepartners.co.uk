@@ -11,7 +11,7 @@ metaDescription: "Manchester's 200+ law firms need SRA-specialist accountants fo
 altText: "Manchester city centre skyline with legal and accounting professionals working in modern offices"
 image: ""
 h1: "Law Firm Accountant Manchester: Specialist Services for Legal Practices"
-summary: "Finding the right law firm accountant in Manchester is crucial for legal practice success. We connect solicitors, partnerships and LLPs across Greater Manchester with regulated accountancy firms that specialise in the legal sector."
+summary: "Finding the right law firm accountant in Manchester is crucial for legal practice success. We work with solicitors, partnerships and LLPs across Greater Manchester, and our accountants specialise in the legal sector."
 keyTakeaways:
   - "Over 200 law firms operate across Manchester and Greater Manchester, each with distinct SRA compliance and cash flow needs."
   - "Any Manchester firm holding client money must file an annual SRA accountant's report within six months of its year-end."
@@ -113,7 +113,7 @@ faqs:
 
 <p>Whether you're starting a new practice, growing an existing firm, or planning for succession, specialist accounting support is essential. Manchester's legal sector offers significant opportunities for well-managed practices with proper financial foundations.</p>
 
-<p>Consider <a href="/services">the specialist services</a> our partner firms offer legal practices. From SRA compliance to strategic tax planning, we understand the unique challenges facing Manchester law firms and match you with a regulated firm that can address them.</p>
+<p>Consider <a href="/services">the specialist services</a> we offer legal practices. From SRA compliance to strategic tax planning, we understand the unique challenges facing Manchester law firms and have the team to address them.</p>
 
 <p>Don't let accounting compliance distract from serving your clients. Contact us to discuss how specialist law firm accountant services can strengthen your Manchester practice's financial position and regulatory compliance.</p>
 

@@ -132,7 +132,7 @@ faqs:
 <p>Two points are worth holding onto. First, the obligation is yours whether or not HMRC writes to you; the letters are an outreach exercise, not the trigger. If you have <a href="/blog/making-tax-digital-mtd/mtd-itsa-letter-from-hmrc-what-to-do-next">had a letter from HMRC about MTD</a>, treat it as a prompt to check the gross test yourself rather than as the start of the clock. Second, keep this step in proportion: it is one stage in the wider project, and the granular screen-by-screen walkthrough lives in our dedicated <a href="/blog/making-tax-digital-mtd/how-to-register-mtd-landlord-step-by-step-guide">register for MTD step-by-step guide</a>. The job in your migration plan is simply to slot sign-up in after software choice and before you migrate live data.</p>
 
 <aside>
-<p>Want the switch handled end-to-end rather than run as a project of your own? Our partner firms specialise in moving landlords onto MTD, from the records audit through to the first filed quarter. Use the enquiry form on this page to start a no-obligation conversation.</p>
+<p>Want the switch handled end-to-end rather than run as a project of your own? Our team specialises in moving landlords onto MTD, from the records audit through to the first filed quarter. Use the enquiry form on this page to start a no-obligation conversation.</p>
 </aside>
 
 <h2>Step 3a: If your accountant files for you</h2>
@@ -181,7 +181,7 @@ faqs:
 <p>It helps to see the timeline on a real shape. Take an anonymised single landlord with around £60,000 of gross rent across three properties, currently on spreadsheets. A sensible run-up is: records audit early in the run-up year, software choice and HMRC sign-up in the middle, data migration of opening balances and the part-year next, then a parallel dress-rehearsal quarter before 6 April. Come go-live, the first real quarterly update covering 6 April to 5 July is due by 7 August, the three further updates follow on 7 November, 7 February and 7 May, and the Final Declaration lands the following 31 January. No step is heavy on its own; the value is in doing them in order and not leaving migration to the last fortnight.</p>
 
 <aside>
-<p>If your first quarter is approaching faster than your records are ready, that is the moment to bring in help. Use the enquiry form on this page and we will connect you with a property-specialist firm that can get your migration and first filing done correctly.</p>
+<p>If your first quarter is approaching faster than your records are ready, that is the moment to bring in help. Use the enquiry form on this page and our property tax specialists can get your migration and first filing done correctly.</p>
 </aside>
 
 <h2>Penalties if you slip: the real regime</h2>

@@ -146,7 +146,7 @@ const FAQ_LIST: FaqEntry[] = [
   {
     id: "who",
     pattern: /(who.*(call|speak)|which company|who are you)/i,
-    answer: "A property tax specialist from our partner team will call you personally.",
+    answer: "One of our property tax specialists will call you personally.",
   },
   {
     id: "prepare",

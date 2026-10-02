@@ -142,7 +142,7 @@ faqs:
 
 <h2>Getting Started</h2>
 
-<p>If you are looking for a <strong>GP accountant in Manchester</strong>, start by reviewing your current position and where specialist knowledge could add value, whether that is the pension taper, partnership planning, or your private-work structure. Most specialist firms offer an initial meeting to understand your circumstances and explain how they would work with you.</p>
+<p>If you are looking for a <strong>GP accountant in Manchester</strong>, start by reviewing your current position and where specialist knowledge could add value, whether that is the pension taper, partnership planning, or your private-work structure. We offer an initial meeting to understand your circumstances and explain how we would work with you.</p>
 
 <p>For a wider view of what these firms cover, see our <a href="/blog/gp-accountant-services-complete-guide">complete guide to GP accountant services</a>. When you are ready to talk to a specialist about your Manchester practice or personal position, <a href="/contact">get in touch</a> for a no-obligation conversation.</p>
 

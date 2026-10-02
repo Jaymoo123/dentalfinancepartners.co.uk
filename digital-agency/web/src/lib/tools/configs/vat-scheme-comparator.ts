@@ -70,7 +70,7 @@ export const vatSchemeTool: GenericTool = {
       rows: [
         { label: "VAT collected from clients", value: fmt(out.vatCollected) },
         { label: "Standard scheme (pay HMRC)", value: fmt(out.standardNet) },
-        { label: "Limited Cost Trader?", value: out.lctApplies ? "Yes — 16.5% flat rate" : "No — 12.5% marketing rate" },
+        { label: "Limited Cost Trader?", value: out.lctApplies ? "Yes (16.5% flat rate)" : "No (12.5% marketing rate)" },
         { label: "Flat Rate scheme (pay HMRC)", value: fmt(out.flatPayment) },
         { label: "Flat Rate keep/extra", value: `${out.flatKeep >= 0 ? "Keep " : "Extra "}${fmt(Math.abs(out.flatKeep))}` },
         { label: "Best scheme", value: out.bestScheme, strong: true },

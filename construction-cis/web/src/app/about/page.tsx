@@ -123,11 +123,10 @@ export default function AboutPage() {
             {/* TD-18 / GATE 8, and the wording this package establishes for all
                 five call sites of the claim. What stood here was "We work on a
                 fixed-fee basis. You know what you are paying before we start."
-                Under the pool model we do not quote at all: the enquiry goes to
-                independent firms in the partner network, each of which sets its
-                own fee (/privacy-policy section 5, :109-119 and :143-144). It
-                was a promise about commercial terms we are not the party to
-                make.
+                The site quotes no fee anywhere; the fee is agreed with the
+                client up front at the first call (owner ruling 2026-09-28: the
+                brand IS the firm, the old partner-network rationale is gone).
+                It was a promise about commercial terms the site cannot make.
 
                 The turnaround half of gate 8's /about sentence is ALREADY GONE:
                 the 2026-09-11 TD-13/TD-14 sweep took it out across 19 files and
@@ -135,7 +134,7 @@ export default function AboutPage() {
 
                 No fee, no number, no duration, and the promising party is named. */}
             <p>
-              Fees are agreed before any work starts. The specialist firm you speak to sets its own fee and agrees it with you up front, so nothing begins until you have. You deal with specialist CIS accountants, not a call centre.
+              Fees are agreed before any work starts. Our CIS specialist agrees the fee with you up front, so nothing begins until you have. You deal with specialist CIS accountants, not a call centre.
             </p>
           </div>
         </div>
@@ -199,7 +198,7 @@ export default function AboutPage() {
             },
             {
               title: "Fees agreed before any work starts",
-              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
+              detail: "Our CIS specialist agrees the fee with you up front.",
             },
           ]}
           footnote={

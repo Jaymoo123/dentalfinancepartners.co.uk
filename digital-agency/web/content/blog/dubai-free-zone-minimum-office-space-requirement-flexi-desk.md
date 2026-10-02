@@ -142,7 +142,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Keep your lease agreement and proof of address on file. You will need it for visa applications and licence renewal.</li>
 </ol>
 
-<p>Working exclusively with agency founders, we work with agency founders who are expanding into Dubai. We do not handle the free zone setup directly, but we can connect you with trusted partners who do. If your agency is considering a Dubai entity, speak to us first about the UK tax implications, particularly if you plan to keep your UK company running alongside it.</p>
+<p>We advise agency founders who are expanding into Dubai. We do not handle the free zone setup itself, which is work for a UAE corporate services agent, but we can refer you to one. If your agency is considering a Dubai entity, speak to us first about the UK tax implications, particularly if you plan to keep your UK company running alongside it.</p>
 
 <p>Get the office space right from the start, and the rest of your Dubai setup becomes straightforward.</p>
 

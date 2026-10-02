@@ -204,7 +204,7 @@ keyTakeaways:
 
 <p>If your UK company has a directors' loan account balance, clear it before you leave. HMRC can pursue you personally for unpaid tax even if you are in Dubai.</p>
 
-<p>If you are ready to plan your move, <a href="/contact">speak to our team</a>. We work with agency founders moving from the UK to Dubai and can connect you with the right legal and tax advisors.</p>
+<p>If you are ready to plan your move, <a href="/contact">speak to our team</a>. We work with agency founders moving from the UK to Dubai, handle the UK tax side and work alongside your solicitor on the contracts.</p>
 
 <h2>Related articles in International Agencies</h2>
 <ul>

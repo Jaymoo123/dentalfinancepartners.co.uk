@@ -44,7 +44,7 @@ const complianceAreas = [
   },
   {
     title: "SRA Accountant's Reports",
-    description: "The annual report has to come from an independent accountant holding a practising certificate from a recognised supervisory body. We connect you with one from our specialist partner network and help you get the client money records ready, so nothing surfaces late.",
+    description: "The annual report has to come from an independent accountant holding a practising certificate from a recognised supervisory body. Our reporting accountants hold that, and we help you get the client money records ready, so nothing surfaces late.",
   },
   {
     title: "COFA support",

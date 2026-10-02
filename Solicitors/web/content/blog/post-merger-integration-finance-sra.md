@@ -175,7 +175,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If the integration was done properly, the accountant's report should be unqualified. If there are gaps or errors, the report may be qualified, which triggers an SRA referral.</p>
 
-<p>We recommend engaging a reporting accountant who specialises in law firm mergers. Through our <a href="/services/sra-accounts-rules">SRA Accounts Rules service</a> we can connect you with a regulated firm in our specialist partner network that handles post-merger reports and can advise on the documentation required.</p>
+<p>We recommend engaging a reporting accountant who specialises in law firm mergers. Our <a href="/services/sra-accounts-rules">SRA Accounts Rules service</a> handles post-merger reports and our team can advise on the documentation required.</p>
 
 <h2>Common Pitfalls in Post-Merger Integration</h2>
 

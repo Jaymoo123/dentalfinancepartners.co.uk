@@ -99,7 +99,7 @@ const faqs = [
   {
     question: "What does an agency accountant cost?",
     answer:
-      "Fees depend on the complexity of your agency — number of directors, payroll size, VAT scheme, R&D activity, international exposure. Rather than publish a tiered price list that won't apply to most agencies, we quote fixed fees after a short discovery call so you know exactly what you're paying for upfront.",
+      "Fees depend on the complexity of your agency: number of directors, payroll size, VAT scheme, R&D activity, international exposure. Rather than publish a tiered price list that won't apply to most agencies, we quote fixed fees after a short discovery call so you know exactly what you're paying for upfront.",
   },
 ];
 

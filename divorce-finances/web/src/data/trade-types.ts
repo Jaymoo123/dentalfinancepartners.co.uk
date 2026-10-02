@@ -65,7 +65,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A route to the right professional",
-        body: "When you are ready to make it binding, or you cannot agree, we can introduce you to a vetted family law firm or accredited mediator. Introductions happen only with your consent and you are never obliged to proceed.",
+        body: "When you are ready to make it binding, or you cannot agree, we work alongside regulated family law firms and accredited mediators and stay on the money side. That happens only with your consent and you are never obliged to proceed.",
       },
     ],
     faqs: [
@@ -134,8 +134,8 @@ export const tradeTypes: TradeType[] = [
         body: "Our divorce cost and settlement range tools help you see the whole picture the business sits inside, including the cost difference between an agreed settlement and a contested one, which for business owners is usually the largest controllable number.",
       },
       {
-        title: "Introductions that fit the problem",
-        body: "Business-owner divorces need family solicitors who are comfortable with company assets. When you are ready, we can introduce you to a vetted firm suited to your situation. With your consent, and with no obligation to proceed.",
+        title: "Specialists who fit the problem",
+        body: "Business-owner divorces need family solicitors who are comfortable with company assets. We work alongside regulated firms that are, and we stay on the money side. With your consent, and with no obligation to proceed.",
       },
     ],
     faqs: [
@@ -205,7 +205,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A calm route to the right help",
-        body: "When you need a professional, we can introduce you to a vetted family solicitor or an accredited mediator who can conduct the initial mediation meeting (MIAM) that most court applicants need to attend first. With your consent only, and with no pressure at any stage.",
+        body: "When you need a solicitor or mediator, we work alongside regulated family solicitors and accredited mediators who can conduct the initial mediation meeting (MIAM) that most court applicants need to attend first, and we stay on the money side. With your consent only, and with no pressure at any stage.",
       },
     ],
     faqs: [
@@ -275,7 +275,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "The right specialists, in the right order",
-        body: "Later-life divorce often needs two professionals: a family solicitor for the settlement, and a regulated financial adviser for what to do with pension rights afterwards. We can introduce you to a vetted solicitor firm, and we will always tell you plainly when a question belongs with a regulated adviser instead. Free, impartial pensions guidance is also available from MoneyHelper.",
+        body: "Later-life divorce often needs more than one professional: us on the money side, a family solicitor for the settlement, and a regulated financial adviser for what to do with pension rights afterwards. We work alongside regulated solicitor firms, and we will always tell you plainly when a question belongs with a regulated adviser instead. Free, impartial pensions guidance is also available from MoneyHelper.",
       },
     ],
     faqs: [

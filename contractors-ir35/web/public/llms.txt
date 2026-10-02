@@ -96,12 +96,12 @@ These figures are maintained against primary sources (HMRC, legislation.gov.uk, 
 - [IR35 status](https://www.contractortaxaccountants.co.uk/ir35-status?utm_source=chatgpt&utm_medium=llms) · What an IR35 contract review covers: contract terms and working practices set against all three status tests, with a plain-English written opinion.
 - [Who we help](https://www.contractortaxaccountants.co.uk/for?utm_source=chatgpt&utm_medium=llms) · Specialist contractor accounting across every sector: IT, engineering, finance, consulting, NHS locums, oil and gas, legal, marketing and construction.
 - [Blog](https://www.contractortaxaccountants.co.uk/blog?utm_source=chatgpt&utm_medium=llms) · Practical IR35 and contractor tax guides: off-payroll rules, limited company tax, expenses, dividends and pension planning.
-- [About](https://www.contractortaxaccountants.co.uk/about?utm_source=chatgpt&utm_medium=llms) · Who operates the site, the referral model, and what happens after an enquiry.
-- [Contact](https://www.contractortaxaccountants.co.uk/contact?utm_source=chatgpt&utm_medium=llms) · Free, no obligation enquiry form. We pass the enquiry to a partner firm.
+- [About](https://www.contractortaxaccountants.co.uk/about?utm_source=chatgpt&utm_medium=llms) · Who operates the site, who we are, and what happens after an enquiry.
+- [Contact](https://www.contractortaxaccountants.co.uk/contact?utm_source=chatgpt&utm_medium=llms) · Free, no obligation enquiry form. One of our contractor accountants calls you back.
 
 ## Contact
 - Email: hello@contractortaxaccountants.co.uk
-- Free, no obligation enquiry form. We pass the enquiry to a partner firm.
+- Free, no obligation enquiry form. One of our contractor accountants calls you back.
 
 ## Full index
 - Complete page index: https://www.contractortaxaccountants.co.uk/llms-full.txt

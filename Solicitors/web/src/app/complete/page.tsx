@@ -111,7 +111,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base leading-relaxed text-slate-700">
-              We have everything we need. A specialist firm from our partner network may contact
+              We have everything we need. One of our solicitor accounting specialists may contact
               you directly about your enquiry. If you would like to pick a time that suits you,
               you can book a callback below.
             </p>
@@ -136,7 +136,7 @@ export default async function CompletePage({
         backdrop={<SolicitorsBackdrop tone="navy" />}
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-          Add the last detail we need and a specialist firm from our partner network will be in
+          Add the last detail we need and a specialist from our team will be in
           touch to arrange your free review, no obligation.
         </p>
       </SlimHero>

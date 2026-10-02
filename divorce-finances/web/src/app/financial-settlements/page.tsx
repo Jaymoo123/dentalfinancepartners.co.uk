@@ -11,7 +11,7 @@ const GUIDE_HREF = "/blog/financial-settlements/divorce-financial-settlement-gui
 export const metadata: Metadata = {
   title: `Divorce Financial Settlement: Help and How It Works | ${siteConfig.name}`,
   description:
-    "What a financial settlement on divorce actually is, why it is separate from the divorce, how courts decide a fair split, and when to get a specialist. Free UK calculators plus a route to a vetted family law firm.",
+    "What a financial settlement on divorce actually is, why it is separate from the divorce, how courts decide a fair split, and when to get a specialist. Free UK calculators plus a call with our divorce finance specialists.",
   alternates: { canonical: `${siteConfig.url}/financial-settlements` },
 };
 
@@ -76,7 +76,7 @@ export default function FinancialSettlementsPage() {
               href="/contact"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-medium text-white hover:bg-white/20 transition-colors ${focusRing}`}
             >
-              Request a call from a vetted family law specialist
+              Request a call from one of our divorce finance specialists
             </Link>
           </div>
         </div>
@@ -254,9 +254,10 @@ export default function FinancialSettlementsPage() {
             <li><strong className="text-neutral-900">You disagree,</strong> or you suspect your ex-partner is not being open about what they own.</li>
           </ul>
           <p className="mt-6 text-base leading-relaxed text-neutral-600 sm:text-lg">
-            {siteConfig.name} is not a law firm and does not give legal or financial advice. What we do is
-            connect people across England and Wales with experienced, vetted family law professionals and
-            accredited mediators for a no-obligation conversation about the right route and realistic costs.
+            {siteConfig.name} is a firm of accountants, not a law firm, and does not give legal advice. One
+            of our divorce finance specialists will talk through the right route and realistic costs with
+            you, with no obligation. Where you need a solicitor or mediator, we work alongside a regulated
+            family law firm or an accredited mediator and stay on the money side.
             Before you decide, it helps to know what the process itself is likely to cost. The{" "}
             <Link href={toolPath("divorce-cost-calculator")} className="font-medium text-orange-700 underline underline-offset-4 hover:text-orange-800">
               divorce cost calculator
@@ -307,7 +308,8 @@ export default function FinancialSettlementsPage() {
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 Run the settlement range estimator and the divorce cost calculator to see what a fair split
                 might look like and what the process should cost. Then, if you want help, tell us about your
-                situation and we will connect you with a vetted family law specialist who quotes clearly.
+                situation and one of our divorce finance specialists will talk it through with you and tell
+                you plainly what help would cost.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href={toolPath("settlement-range-estimator")} className={btnPrimary}>
@@ -318,9 +320,9 @@ export default function FinancialSettlementsPage() {
                 </Link>
               </div>
               <p className="mt-6 text-sm leading-relaxed text-neutral-400">
-                {siteConfig.name} is not a law firm and does not give legal advice. Your details are shared
-                only with your consent. We may receive a fee from the firm we introduce you to, which never
-                affects what you pay or the advice you receive.
+                {siteConfig.name} is not a law firm and does not give legal advice. Where you need a
+                solicitor, we work alongside a regulated firm and stay on the money side. Your details are
+                shared only with your consent.
               </p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">

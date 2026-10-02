@@ -182,4 +182,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li><a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS Pension Annual Allowance: Complete Guide</a></li>
 </ul>
 
-<p>If you need specialist support, send us your position and we will match it to a regulated firm that works with GP partners, salaried GPs and locums across the UK, and that understands the contracts, the pension and the partnership structure ordinary accountants do not. Contact us and that firm will take it from there.</p>
+<p>If you need specialist support, send us your position. Our medical accountants work with GP partners, salaried GPs and locums across the UK, and understand the contracts, the pension and the partnership structure ordinary accountants do not. Contact us and our team will take it from there.</p>

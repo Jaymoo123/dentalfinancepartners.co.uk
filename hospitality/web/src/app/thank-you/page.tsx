@@ -62,7 +62,7 @@ export default async function ThankYouPage({
         <SlimHero eyebrow="Your enquiry" title="Confirmed" backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-thankyou-confirmed" />} />
         <div className="mx-auto max-w-2xl px-6 py-16 text-center">
           <p className="text-slate-600">
-            Thanks, that is confirmed. A specialist firm from our partner network will contact you
+            Thanks, that is confirmed. One of our hospitality accounting specialists will contact you
             directly.
           </p>
           <Link href="/" className="mt-8 inline-block font-medium underline">

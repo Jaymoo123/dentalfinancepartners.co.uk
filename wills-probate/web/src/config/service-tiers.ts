@@ -20,27 +20,27 @@ export const serviceTiers: ServiceTier[] = [
     ctaHref: "/calculators",
   },
   {
-    name: "Guided handoff to a specialist",
+    name: "Help from one of our specialists",
     description:
-      "For when your situation needs professional hands. Blended families, business assets, cross-border estates, contested wills, estates near or over the tax thresholds. Tell us about your situation and we will connect you with a vetted specialist firm suited to it. Your details are shared only with your consent, and you remain free to walk away at any stage.",
+      "For when your situation needs professional hands. Blended families, business assets, cross-border estates, contested wills, estates near or over the tax thresholds. Tell us about your situation and one of our estate planning specialists suited to it will take a look. Your details are used only with your consent, and you remain free to walk away at any stage.",
     features: [
-      "Matched to a vetted specialist firm",
-      "Wills and probate practitioners, estate planners or tax specialists as needed",
-      "Shared only with your consent",
+      "One of our own estate planning specialists",
+      "Probate, estate planning or inheritance tax, whichever you need",
+      "Used only with your consent",
       "No obligation to proceed",
     ],
-    cta: "Get connected with a specialist",
+    cta: "Speak to a specialist",
     ctaHref: "/contact",
     featured: true,
   },
   {
-    name: "Ongoing estate planning support via partners",
+    name: "Ongoing estate planning support",
     description:
-      "For estates that need attention over time, not just once. Rules change and families change. Through our partner firms, you can put in place periodic reviews of wills and estate structure, updates when legislation moves, and a standing relationship so your family already knows who to call. We provide the information and the introductions; the professional work sits with the specialist firm you choose.",
+      "For estates that need attention over time, not just once. Rules change and families change. With our team, you can put in place periodic reviews of wills and estate structure, updates when legislation moves, and a standing relationship so your family already knows who to call. Where a solicitor is needed for the legal side, we work alongside a regulated firm and stay on the money side.",
     features: [
       "Periodic reviews of wills and estate structure",
       "Updates when legislation changes",
-      "A standing relationship with a specialist firm",
+      "A standing relationship with our team",
       "You choose if and when to proceed",
     ],
     cta: "Talk to us",

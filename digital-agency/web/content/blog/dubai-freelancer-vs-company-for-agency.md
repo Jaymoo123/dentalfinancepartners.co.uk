@@ -171,6 +171,6 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Build a timeline. If you are solo today but plan to hire in 6 months, get the company license now. Switching mid-year costs more than starting right.</li>
 </ol>
 
-<p>If you need help working through your specific situation, <a href="/contact">contact us</a>. We advise agency founders on UK-UAE tax structuring and can connect you with trusted partners in Dubai for the local setup.</p>
+<p>If you need help working through your specific situation, <a href="/contact">contact us</a>. We advise agency founders on UK-UAE tax structuring and can refer you to a UAE corporate services agent for the local setup.</p>
 
 <p>For more on agency structures generally, read our <a href="/blog/incorporation-and-structure">incorporation and structure guides</a> or see how we work with <a href="/agencies/digital-agencies">digital agencies</a> and <a href="/agencies/creative-agencies">creative agencies</a> on international tax planning.</p>

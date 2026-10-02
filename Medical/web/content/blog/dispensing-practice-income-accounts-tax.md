@@ -180,7 +180,7 @@ faqs:
   </tbody>
 </table>
 
-<p>This guide is general information and not advice for your specific circumstances. For tailored support, see our <a href="/for-gps">services for GPs</a> or <a href="/contact">send an enquiry</a> and we will match it to a regulated firm that works with dispensing practices.</p>
+<p>This guide is general information and not advice for your specific circumstances. For tailored support, see our <a href="/for-gps">services for GPs</a> or <a href="/contact">send an enquiry</a> and one of our medical accountants who works with dispensing practices will come back to you.</p>
 
 <h2>Related Reading</h2>
 

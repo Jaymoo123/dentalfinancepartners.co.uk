@@ -395,7 +395,7 @@ export default function HomePage() {
               From free tools to full CIS accounting.
             </h2>
             <p className="mt-3 text-base text-neutral-600 sm:mt-4 sm:text-lg">
-              Start with our free calculators or speak to us directly. The specialist firm you speak to sets its own fee and agrees it with you up front.
+              Start with our free calculators or speak to us directly. Our CIS specialist agrees the fee with you up front.
             </p>
           </div>
           <ServiceTiers tiers={serviceTiers} featuredBadge="" />
@@ -683,7 +683,7 @@ export default function HomePage() {
                 {[
                   { title: "CIS specialists only", sub: "We do not work with non-construction clients" },
                   { title: "A specialist CIS accountant gets in touch", sub: "Not a sales team, not a call centre" },
-                  { title: "Fees agreed before any work starts", sub: "The specialist firm you speak to sets its own fee" },
+                  { title: "Fees agreed before any work starts", sub: "Our CIS specialist agrees the fee with you up front" },
                   { title: "All conversations are confidential", sub: "We never discuss one client's affairs with another" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">

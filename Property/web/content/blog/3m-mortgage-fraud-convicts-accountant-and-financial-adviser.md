@@ -77,7 +77,7 @@ editorialNote: "MW3 Bucket C C1: news-led professional-conduct briefing on the A
 <p>The s.330 reflex reaches well beyond mortgage fraud. It covers historic rental income concealment, undisclosed CGT on property disposals, undeclared share-of-rent received in cash, and unexplained deposit sources funding property purchases. Once the threshold is met, the accountant has no discretion: the SAR is mandatory.</p>
 
 <aside>
-  <p><strong>Need to understand the AML cordon before instructing a new accountant?</strong> We are not an accountancy practice ourselves. We introduce property investors to specialist firms and you deal with them directly from there. Before you sign anything, ask any firm you are considering to name its MLR 2017 supervisor and to walk you through its customer due diligence, its source-of-funds process, and its engagement-letter terms in plain language. Get in touch if you would like an introduction.</p>
+  <p><strong>Need to understand the AML cordon before instructing a new accountant?</strong> Before you sign anything, ask any firm you are considering, including us, to name its MLR 2017 supervisor and to walk you through its customer due diligence, its source-of-funds process, and its engagement-letter terms in plain language. Get in touch if you would like to talk it through with our team.</p>
 </aside>
 
 <h2>The Tipping-Off Prohibition: POCA Section 333A</h2>

@@ -9,11 +9,11 @@
  * financial settlement, people working out pensions on divorce, and people
  * working out tax on divorce. Copy is role-adapted via the lead's role.
  *
- * PARTNER-FIRM FRAMING (compliance, LEAD_REGULATORY_POSITION_2026-07-24):
- * advice comes from "the partner firm we introduce you to", a vetted,
- * SRA-regulated family law firm. Never "our solicitors". The fee disclosure
- * ("we may receive a fee from the firm we introduce you to") appears in the
- * step-0 email, the first message that pitches the introduction.
+ * FIRM-VOICE FRAMING (owner ruling 2026-09-28): the brand IS the accountancy
+ * firm. The call comes from "one of our divorce finance specialists". Where a
+ * solicitor or mediator is needed, we work alongside a regulated family law
+ * firm or an accredited mediator and stay on the money side. No introducer,
+ * network or referral-fee copy anywhere in the sequence.
  *
  * Cadence: an instant email (step 0) fires synchronously at submit. Then
  * 7 escalating follow-ups over approximately 11 days.
@@ -297,7 +297,7 @@ const STEPS: LeadNurtureStep[] = [
           [
             "Thanks for your enquiry, it has just come through to us and we are ready to help.",
             `The call is a free conversation about your situation, around 20 minutes, with no charge and no obligation. ${callScopeLine(role)}`,
-            "Where advice is needed, it comes from the partner firm we introduce you to, a vetted, SRA-regulated family law firm. We may receive a fee from the firm we introduce you to, and that never changes what you pay.",
+            "You will speak to one of our divorce finance specialists. Where you need a solicitor, we work alongside an SRA-regulated family law firm and stay on the money side.",
             "Just reply to this email, anything at all, and we will arrange your call. Even a one-word reply is fine. If a particular day or time suits you better, let us know and we will work around it.",
           ],
           "t0_email",

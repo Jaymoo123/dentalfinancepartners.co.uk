@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: { absolute: `Contact ${siteConfig.name}` },
   description:
-    "Ask a question, report an error, or ask to be introduced to a vetted family law specialist or accredited mediator. We reply within two working days.",
+    "Ask a question, report an error, or request a call from one of our divorce finance specialists about your situation. We reply within two working days.",
   alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
@@ -22,7 +22,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             Whether you have a question about something on the site, want to point out an error,
-            or would like to be introduced to a specialist, we would like to hear from you. Divorce
+            or would like to speak to one of our divorce finance specialists, we would like to hear from you. Divorce
             runs on its own timetable, and there is no urgency on our side. Take whatever time you
             need.
           </p>
@@ -37,15 +37,14 @@ export default function ContactPage() {
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
                 <li>We read every message and aim to reply within two working days.</li>
                 <li>
-                  If you have asked to be connected with a specialist, a vetted regulated family
-                  law firm or accredited mediator from our partner network suited to your
-                  situation will contact you directly, usually within a few working days. If that
-                  firm is unable to help, your enquiry may be passed to another firm in the
-                  network for the same purpose.
+                  If you have asked to speak to a specialist, one of our divorce finance specialists
+                  will contact you directly, usually within a few working days. Where you need a
+                  solicitor or mediator, we work alongside regulated family law firms and accredited
+                  mediators and stay on the money side.
                 </li>
                 <li>
                   We cannot answer questions about your personal legal or financial position. That
-                  is exactly what the specialist introduction is for.
+                  is exactly what the specialist call is for.
                 </li>
                 <li>
                   If there is any risk to your safety, or money is being hidden or controlled, tell

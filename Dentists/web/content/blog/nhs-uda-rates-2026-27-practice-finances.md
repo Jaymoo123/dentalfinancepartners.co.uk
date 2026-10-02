@@ -106,4 +106,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>This is the real question behind the <a href="/blog/practice-accounting/nhs-private-mix-dental-accounts">NHS and private mix decision</a>, and it is answered with your own cost per chair hour rather than with a sector average. Many practices land on NHS work as a predictable income floor with private revenue carrying the margin, but that balance is specific to the practice.</p>
 
-<p>If you want a second pair of eyes on your contract economics, <a href="/contact">contact our team</a> and we will introduce you to a specialist dental accountant from our partner network who can work through the numbers with you.</p>
+<p>If you want a second pair of eyes on your contract economics, <a href="/contact">contact our team</a> and one of our specialist dental accountants will work through the numbers with you.</p>

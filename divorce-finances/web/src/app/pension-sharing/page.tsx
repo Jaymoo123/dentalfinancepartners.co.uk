@@ -234,7 +234,7 @@ export default function PensionSharingPage() {
             gives a rough sense of where an overall financial settlement might land. It is a starting point for
             context on the whole settlement, not a pension valuation, and it does not replace a proper actuarial
             figure for the pensions themselves. When you are ready for tailored input, tell us a little about
-            your situation and we will connect you with a specialist.
+            your situation and one of our divorce finance specialists will talk it through with you.
           </p>
         </div>
       </section>
@@ -278,8 +278,8 @@ export default function PensionSharingPage() {
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 Pension division is the part of a settlement where expert input pays for itself. Tell us about
-                your situation and we will connect you with a specialist who can value the pensions correctly
-                and explain your options in full. For the overall settlement picture in the meantime, the range
+                your situation and one of our divorce finance specialists will work through the pension figures
+                with you and explain your options in full. For the overall settlement picture in the meantime, the range
                 estimator is a useful starting point.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">

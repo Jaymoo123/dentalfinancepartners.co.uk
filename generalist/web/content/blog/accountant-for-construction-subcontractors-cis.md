@@ -160,6 +160,6 @@ keyTakeaways:
 <li>Payroll for any employees you take on</li>
 </ul>
 
-<p>We also cover what to do when an HMRC enquiry lands on your desk, and the call connects you with a qualified accountant on our partner team who can take it on.</p>
+<p>We also cover what to do when an HMRC enquiry lands on your desk, and the call is with one of our accountants who can take it on.</p>
 
 <p>If you are a construction subcontractor and want to stop worrying about CIS deductions and start focusing on the work, <a href="/contact">get in touch</a>. The call is free and ends with a clear plan for the year ahead.</p>

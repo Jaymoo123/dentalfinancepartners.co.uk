@@ -189,7 +189,7 @@ faqs:
 
 <h2>Summary: the compliance hierarchy</h2>
 
-<p>The question "which umbrella company is best?" cannot be answered with a ranked list. No credible, faceless specialist in this space produces one, and the SERP is full of directories that rank umbrellas on criteria that have nothing to do with compliance. The more useful question is: "which umbrellas meet the compliance threshold?"</p>
+<p>The question "which umbrella company is best?" cannot be answered with a ranked list. No credible specialist in this space produces one, and the SERP is full of directories that rank umbrellas on criteria that have nothing to do with compliance. The more useful question is: "which umbrellas meet the compliance threshold?"</p>
 
 <p>The compliance hierarchy is:</p>
 

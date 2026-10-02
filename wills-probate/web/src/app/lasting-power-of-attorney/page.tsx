@@ -72,7 +72,7 @@ export default function LastingPowerOfAttorneyPage() {
               href="/contact"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-medium text-white hover:bg-white/20 transition-colors ${focusRing}`}
             >
-              Get matched with a vetted specialist
+              Speak to a specialist
             </Link>
           </div>
         </div>
@@ -287,8 +287,8 @@ export default function LastingPowerOfAttorneyPage() {
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 The second-best time is this week. Work out which documents you need and what they will
-                cost, then, if your situation needs tailored drafting, we will connect you with a vetted
-                specialist who prepares LPAs alongside wills every day.
+                cost, then, if your situation needs tailored drafting, we can refer you to a solicitor
+                who prepares LPAs alongside wills every day.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/contact" className={btnPrimary}>

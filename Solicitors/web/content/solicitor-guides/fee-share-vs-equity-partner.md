@@ -14,15 +14,15 @@ faqs:
   - question: "What's an equity partner?"
     answer: "A member of the partnership / LLP with a profit share, capital contribution, and shared liability (limited in an LLP) for the firm's obligations. Equity partners participate in firm management decisions, share in firm-wide profit (not just their own billings), bear risk of firm losses, and have capital tied up in the firm. The income upside is higher in a profitable firm; the downside is real if the firm hits trouble."
   - question: "How is a fee-share solicitor taxed?"
-    answer: "Typically self-employed — Class 4 NI on profit, income tax on personal trade income. Fee-share income reports on SA103 of self-assessment. The firm doesn't operate PAYE on fee-share payments. The fee-share solicitor manages their own expenses, VAT (if above £90,000 turnover), and pension. Some fee-share arrangements run through a personal service company, which adds IR35 considerations if the firm is large enough."
+    answer: "Typically self-employed: Class 4 NI on profit, income tax on personal trade income. Fee-share income reports on SA103 of self-assessment. The firm doesn't operate PAYE on fee-share payments. The fee-share solicitor manages their own expenses, VAT (if above £90,000 turnover), and pension. Some fee-share arrangements run through a personal service company, which adds IR35 considerations if the firm is large enough."
   - question: "How does the FA 2014 audit apply to fee-share vs equity?"
-    answer: "FA 2014 Salaried Member Rules apply to LLP members specifically. Equity partners (full members of an LLP) typically pass — they have meaningful profit-share variability (Condition A), management influence (Condition B), and capital contribution (Condition C). Fee-share solicitors not formally members of the LLP are outside the FA 2014 audit; their tax status is determined by general employment-vs-self-employment tests. Fixed-share / salaried members of the LLP are the FA 2014 audit territory."
+    answer: "FA 2014 Salaried Member Rules apply to LLP members specifically. Equity partners (full members of an LLP) typically pass: they have meaningful profit-share variability (Condition A), management influence (Condition B), and capital contribution (Condition C). Fee-share solicitors not formally members of the LLP are outside the FA 2014 audit; their tax status is determined by general employment-vs-self-employment tests. Fixed-share / salaried members of the LLP are the FA 2014 audit territory."
   - question: "Should I push for equity?"
-    answer: "Depends on: (1) firm profitability and trajectory — equity in a growing firm is materially valuable; equity in a stagnant or struggling firm is materially risky; (2) capital you can commit — equity buy-in typically £50,000-£300,000+, often loan-financed; (3) appetite for shared management responsibility — equity partners attend management meetings and bear governance burden; (4) tax position — for highest earners, equity (partner tax) typically beats salaried-employee tax. The decision is personal-circumstance-driven, not universal."
+    answer: "Depends on: (1) firm profitability and trajectory: equity in a growing firm is materially valuable; equity in a stagnant or struggling firm is materially risky; (2) capital you can commit: equity buy-in typically £50,000-£300,000+, often loan-financed; (3) appetite for shared management responsibility: equity partners attend management meetings and bear governance burden; (4) tax position: for highest earners, equity (partner tax) typically beats salaried-employee tax. The decision is personal-circumstance-driven, not universal."
   - question: "What's a 'silver-circle' or 'gold-card' partnership style?"
-    answer: "Informal terminology — not regulatory. Some firms use multi-tier structures: junior equity (lower profit share, less capital), senior equity (higher share, more capital, more management). 'Gold-card' typically refers to access to certain firm benefits (parking, hospitality, certain client engagement). 'Silver circle' refers historically to a tier of London firms just outside the Magic Circle. None of these have direct tax consequences but they shape the career trajectory conversation."
+    answer: "Informal terminology, not regulatory. Some firms use multi-tier structures: junior equity (lower profit share, less capital), senior equity (higher share, more capital, more management). 'Gold-card' typically refers to access to certain firm benefits (parking, hospitality, certain client engagement). 'Silver circle' refers historically to a tier of London firms just outside the Magic Circle. None of these have direct tax consequences but they shape the career trajectory conversation."
 ctaTitle: "Get clarity on your senior-status decision"
-ctaBody: "30-minute scoping call. We scope the question, then connect you with a regulated accountancy firm in our partner network that models fee-share vs equity on your firm's profit and your personal tax position."
+ctaBody: "30-minute scoping call. We scope the question, then model fee-share vs equity on your firm's profit and your personal tax position."
 ---
 
 <p><strong>Most senior solicitors at multi-partner UK firms reach a choice point:</strong> stay as fee-share / consultant / salaried, or push for equity partnership. Both involve real money; the financial and tax differences are larger than commonly understood from the outside. This guide is the practical comparison.</p>
@@ -33,11 +33,11 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h3>Salaried partner</h3>
 
-<p>An employee of the firm with the "partner" title, typically used internally for client-facing seniority signalling. Paid via PAYE — fixed salary, possibly with a discretionary bonus. No capital contribution. No profit share. Tax position: employee. National insurance: employee Class 1.</p>
+<p>An employee of the firm with the "partner" title, typically used internally for client-facing seniority signalling. Paid via PAYE: fixed salary, possibly with a discretionary bonus. No capital contribution. No profit share. Tax position: employee. National insurance: employee Class 1.</p>
 
 <h3>Fixed-share member (LLP)</h3>
 
-<p>A member of the LLP with limited profit-share rights. Typical structure: fixed drawings (£70,000-£120,000) plus a smaller profit-linked element. Capital contribution: modest (£10,000-£50,000 typically). Tax position: depends on FA 2014 audit — partner if passes (Class 4 NI on share), deemed employee if fails (PAYE on drawings).</p>
+<p>A member of the LLP with limited profit-share rights. Typical structure: fixed drawings (£70,000-£120,000) plus a smaller profit-linked element. Capital contribution: modest (£10,000-£50,000 typically). Tax position: depends on FA 2014 audit; partner if passes (Class 4 NI on share), deemed employee if fails (PAYE on drawings).</p>
 
 <h3>Fee-share solicitor / consultant</h3>
 
@@ -45,7 +45,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h3>Equity partner / equity member</h3>
 
-<p>A full member of the partnership/LLP with profit-share rights, capital contribution, and shared (limited in an LLP) liability for firm obligations. Participates in management. Tax position: partner — Class 4 NI on profit share, income tax at personal rates.</p>
+<p>A full member of the partnership/LLP with profit-share rights, capital contribution, and shared (limited in an LLP) liability for firm obligations. Participates in management. Tax position: partner (Class 4 NI on profit share, income tax at personal rates).</p>
 
 <h2>Tax comparison at typical income levels</h2>
 
@@ -71,25 +71,25 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <p>The headline tax efficiency of partner status over employee status decreases at very high incomes because the rate stacking converges. The real gap shows in other ways: capital appreciation in the firm, BADR on eventual exit, and the optionality value of being a member of the partnership.</p>
 
-<h2>Capital, risk, and management — where equity matters</h2>
+<h2>Capital, risk, and management: where equity matters</h2>
 
 <h3>Capital contribution mechanics</h3>
 
 <p>Equity buy-in typically £50,000-£300,000+, depending on firm size and seniority of the equity tier joined. The capital sits on the partner's capital account and earns interest at a rate set in the LLP agreement (typically 2-5% above base rate or a fixed percentage).</p>
 
-<p>Most equity partners loan-finance the capital. The interest on a qualifying loan to fund a capital contribution to an LLP is deductible from the partner's personal taxable income under ITA 2007 s.398. For a £200,000 loan at 6% interest, that's £12,000/year of relief — at 40% marginal rate, £4,800/year of cash saving.</p>
+<p>Most equity partners loan-finance the capital. The interest on a qualifying loan to fund a capital contribution to an LLP is deductible from the partner's personal taxable income under ITA 2007 s.398. For a £200,000 loan at 6% interest, that's £12,000/year of relief; at 40% marginal rate, £4,800/year of cash saving.</p>
 
 <h3>Risk exposure</h3>
 
 <p>In an LLP, the member's liability for firm obligations is limited (LLP Act 2000). The capital contributed is at risk if the firm becomes insolvent; the partner's personal assets beyond their capital and any guaranteed loans are protected.</p>
 
-<p>In a general partnership, partners have unlimited personal liability — joint and several. A single partner's misconduct can crystallise the partnership's full liability against any other partner's personal assets. This is why most multi-partner UK law firms converted to LLP.</p>
+<p>In a general partnership, partners have unlimited personal liability, joint and several. A single partner's misconduct can crystallise the partnership's full liability against any other partner's personal assets. This is why most multi-partner UK law firms converted to LLP.</p>
 
 <p>Fee-share and salaried partners have no equity exposure to firm losses (though they bear the indirect risk of firm decline affecting their income).</p>
 
 <h3>Management responsibility</h3>
 
-<p>Equity partners attend management meetings, vote on firm decisions, share governance responsibility. The time commitment varies — small firms with monthly partner meetings, larger firms with substantial committee work. Equity partners are expected to take ownership of practice development, recruitment, and firm strategy.</p>
+<p>Equity partners attend management meetings, vote on firm decisions, share governance responsibility. The time commitment varies: small firms with monthly partner meetings, larger firms with substantial committee work. Equity partners are expected to take ownership of practice development, recruitment, and firm strategy.</p>
 
 <p>Fee-share solicitors typically have no governance role. The firm's management is for the equity partners; the fee-share solicitor focuses on client work.</p>
 
@@ -105,7 +105,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <p>FA 2014 Salaried Member Rules apply to LLP members specifically. Pure fee-share solicitors who are not formally members of the LLP are outside FA 2014; their tax status is determined by general employment-vs-self-employment tests. Pure equity members typically pass FA 2014 (profit share variability, management influence, capital contribution).</p>
 
-<p>The audit territory is fixed-share and salaried members of the LLP — formally members but with characteristics that may fail one or more conditions. We covered the mechanics in detail in the partnership-vs-LLP guide. Briefly:</p>
+<p>The audit territory is fixed-share and salaried members of the LLP, formally members but with characteristics that may fail one or more conditions. We covered the mechanics in detail in the partnership-vs-LLP guide. Briefly:</p>
 
 <ul>
 <li>Condition A: disguised salary ≥80% of total reward</li>
@@ -115,7 +115,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <p>Pass any single condition → partner for tax. Fail all three → deemed employee, PAYE applies on drawings.</p>
 
-<p>The most common defensive lever is Condition C — bumping capital above 25% of disguised salary. For a fixed-share partner on £100,000 fixed, £26,000+ capital breaks Condition C.</p>
+<p>The most common defensive lever is Condition C: bumping capital above 25% of disguised salary. For a fixed-share partner on £100,000 fixed, £26,000+ capital breaks Condition C.</p>
 
 <h2>The career trajectory question</h2>
 
@@ -127,11 +127,11 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h3>Voice in firm direction</h3>
 
-<p>Equity partners shape the firm. Promotions, hiring, practice area expansion, premises decisions, technology investments — all sit with the equity partners (or a subset of them). Fee-share solicitors are participants but not decision-makers.</p>
+<p>Equity partners shape the firm. Promotions, hiring, practice area expansion, premises decisions, technology investments: all sit with the equity partners (or a subset of them). Fee-share solicitors are participants but not decision-makers.</p>
 
 <h3>Cultural fit and long-term commitment</h3>
 
-<p>Equity is a long-term commitment. Once you've bought in, leaving is more complex than leaving as an employee — capital repayment terms, profit-share finalisation, run-off PII considerations. Fee-share is more flexible — typically 3-6 months notice and you're out clean.</p>
+<p>Equity is a long-term commitment. Once you've bought in, leaving is more complex than leaving as an employee: capital repayment terms, profit-share finalisation, run-off PII considerations. Fee-share is more flexible: typically 3-6 months notice and you're out clean.</p>
 
 <h3>Capital risk tolerance</h3>
 
@@ -167,7 +167,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h2>What happens when you bring us in</h2>
 
-<p>We connect you with a regulated accountancy firm in our specialist partner network. A personal-tax engagement for a senior solicitor typically covers:</p>
+<p>A personal-tax engagement with our team for a senior solicitor typically covers:</p>
 
 <ul>
 <li>Annual self-assessment with all reliefs claimed (qualifying loan interest, pension contributions, gift aid extending basic-rate band)</li>

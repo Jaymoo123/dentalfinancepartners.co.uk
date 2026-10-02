@@ -16,18 +16,18 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `About`,
-  description: "We connect UK solicitors and law firms with specialist accountancy firms in our partner network. SRA compliance, partnership tax and practice succession. Learn about our legal sector focus and approach.",
+  description: "Specialist accountants for UK solicitors and law firms, working only with the legal sector. SRA compliance, partnership tax and practice succession. Learn about our legal sector focus and approach.",
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: `About | ${siteConfig.name}`,
-    description: "We connect UK solicitors and law firms with specialist accountancy firms in our partner network. SRA compliance, partnership tax and practice succession.",
+    description: "Specialist accountants for UK solicitors and law firms, working only with the legal sector. SRA compliance, partnership tax and practice succession.",
     url: `${siteConfig.url}/about`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: `About | ${siteConfig.name}`,
-    description: "We connect UK solicitors and law firms with specialist accountancy firms in our partner network. SRA compliance, partnership tax and practice succession.",
+    description: "Specialist accountants for UK solicitors and law firms, working only with the legal sector. SRA compliance, partnership tax and practice succession.",
     images: [siteConfig.publisherLogoUrl],
   },
 };
@@ -47,11 +47,11 @@ const differentiators = [
   },
   {
     label: "Proactive tax planning.",
-    body: "Beyond compliance, the partner firm you are matched with advises on partnership structures, LLP conversions, profit extraction, practice valuations, and succession planning, so you can make informed decisions about your practice's financial future.",
+    body: "Beyond compliance, our accountants advise on partnership structures, LLP conversions, profit extraction, practice valuations, and succession planning, so you can make informed decisions about your practice's financial future.",
   },
   {
     label: "Modern, accessible service.",
-    body: "Fixed fees, online access, and direct communication with the specialist accountant we match you with. We're here when you need us, without the traditional barriers of old-school accounting firms.",
+    body: "Fixed fees, online access, and direct communication with the specialist accountant on your file. We're here when you need us, without the traditional barriers of old-school accounting firms.",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function AboutPage() {
               With 26.2% of SRA firm closures attributed to accounting breaches (up from 18.6% the previous year), the stakes have never been higher. You need accountants who understand not just general accounting principles, but the specific regulatory framework, tax treatment, and compliance requirements unique to solicitors and law firms.
             </p>
             <p>
-              That's why we focus exclusively on the legal sector. We match you with an accountancy firm from our partner network that works with solicitors, law firms, and legal practitioners. We understand SRA compliance, client money rules, partnership taxation, LLP structures, and the financial pressures facing legal practices in 2026.
+              That's why we focus exclusively on the legal sector. Our team works only with solicitors, law firms, and legal practitioners. We understand SRA compliance, client money rules, partnership taxation, LLP structures, and the financial pressures facing legal practices in 2026.
             </p>
           </Prose>
         </div>
@@ -109,13 +109,13 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Our approach</h2>
           <Prose>
             <p>
-              We believe accounting for solicitors should be clear, proactive, and focused on your specific needs. Whether you're managing SRA compliance, optimizing your partnership structure, or planning practice succession, we put you with a partner firm whose guidance is grounded in legal sector expertise.
+              We believe accounting for solicitors should be clear, proactive, and focused on your specific needs. Whether you're managing SRA compliance, optimizing your partnership structure, or planning practice succession, our guidance is grounded in legal sector expertise.
             </p>
             <p>
-              The accountancy firms in our partner network work with sole practitioners handling self-assessment and MTD compliance, law firm partners navigating profit allocations and LLP conversions, practice managers ensuring client money compliance, and multi-partner firms planning succession and growth.
+              Our accountants work with sole practitioners handling self-assessment and MTD compliance, law firm partners navigating profit allocations and LLP conversions, practice managers ensuring client money compliance, and multi-partner firms planning succession and growth.
             </p>
             <p>
-              We combine deep legal sector knowledge with modern, accessible service. Fixed fees, direct access to the partner-firm accountant on your file, and clear explanations, with no jargon, no surprises, and no hidden charges.
+              We combine deep legal sector knowledge with modern, accessible service. Fixed fees, direct access to the accountant on your file, and clear explanations, with no jargon, no surprises, and no hidden charges.
             </p>
           </Prose>
         </div>
@@ -166,7 +166,7 @@ export default function AboutPage() {
             Ready to work with specialist solicitor accountants?
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">
-            Book a free consultation to discuss your practice's accounting needs. We'll introduce you to the right partner firm, with no obligation.
+            Book a free consultation to discuss your practice's accounting needs. One of our specialists will take it from there, with no obligation.
           </p>
           <div className="mt-8">
             <Link href="/contact" className={btnPrimary}>
@@ -187,7 +187,7 @@ export default function AboutPage() {
           eyebrow=""
           formTitle=""
           title="Ready to work with specialist solicitor accountants?"
-          description="Book a free consultation to discuss your practice's accounting needs. We'll introduce you to the right partner firm, with no obligation."
+          description="Book a free consultation to discuss your practice's accounting needs. One of our specialists will take it from there, with no obligation."
           proofPoints={[]}
           form={<LeadForm redirectOnSuccess={false} />}
           footnote={

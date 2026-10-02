@@ -112,4 +112,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>This guide is general information, not legal advice, and every estate has its own wrinkles. If you have been named executor and something about the estate feels beyond a checklist (tax, property abroad, a dispute brewing), we can put you in touch with a vetted probate specialist. Start with our <a href="/for/executors">executor hub</a>, or run the <a href="/calculators/probate-diy-vs-solicitor">DIY versus solicitor calculator</a> first so you arrive at that conversation knowing what you actually need help with.</p>
+<p>This guide is general information, not legal advice, and every estate has its own wrinkles. If you have been named executor and something about the estate feels beyond a checklist (tax, property abroad, a dispute brewing), speak to one of our probate specialists. Start with our <a href="/for/executors">executor hub</a>, or run the <a href="/calculators/probate-diy-vs-solicitor">DIY versus solicitor calculator</a> first so you arrive at that conversation knowing what you actually need help with.</p>

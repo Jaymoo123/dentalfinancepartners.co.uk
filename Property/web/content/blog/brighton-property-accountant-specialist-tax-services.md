@@ -112,4 +112,4 @@ faqs:
 
 <p>Professional advice usually becomes worthwhile once your activity is more than a single straightforward let: when you hold several properties, run an HMO, operate a former holiday let, fall within MTD, or are weighing up incorporation or a disposal. Even smaller Brighton landlords benefit from advice at the point of buying or selling, when the planning opportunities are greatest and mistakes are hardest to undo.</p>
 
-<p>If you would like to talk through your own position, you can request a callback using the form on this page and we will connect you with a specialist who works with Brighton landlords.</p>
+<p>If you would like to talk through your own position, you can request a callback using the form on this page and one of our property tax specialists who works with Brighton landlords will call you back.</p>

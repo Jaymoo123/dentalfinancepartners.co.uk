@@ -23,7 +23,7 @@ faqs:
 - question: Why is leasehold conveyancing more expensive?
   answer: Additional work. Leasehold transactions require reviewing the lease (sometimes hundreds of pages), checking ground rent, service charge, and lease length, requesting and reviewing the management pack from the freeholder or managing agent, dealing with the leaseholder consent requirements, and explaining lease-specific obligations to the buyer. Typical leasehold conveyancing fee is £200-£600 higher than the equivalent freehold.
 - question: Are conveyancing fees VATable?
-  answer: Yes. Conveyancing legal services are standard-rated for VAT at 20 percent. The solicitor's professional fee is shown net plus VAT separately on the bill. Disbursements vary — some are outside VAT scope (Land Registry fees, SDLT, court fees) and some are VATable (search fees recharged from search providers, electronic identity checks).
+  answer: Yes. Conveyancing legal services are standard-rated for VAT at 20 percent. The solicitor's professional fee is shown net plus VAT separately on the bill. Disbursements vary; some are outside VAT scope (Land Registry fees, SDLT, court fees) and some are VATable (search fees recharged from search providers, electronic identity checks).
 - function: Can I negotiate a UK solicitor's conveyancing fee?
   answer: Sometimes, particularly for higher-value transactions. Residential conveyancing is largely fixed-fee at most firms, with published price lists by transaction value band. Negotiation is more common on commercial conveyancing, on multiple-property transactions, and where a buyer is using the same firm across multiple matters. For routine sub-£500,000 residential transactions, the published fee is usually the firm's quoted fee.
 - question: What's included in 'disbursements' on a conveyancing matter?
@@ -34,11 +34,11 @@ dateModified: '2026-06-12'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 schema: ''
 ---
-<p><strong>UK conveyancing solicitor fees in 2025/26 typically range from £600 for a sale to £2,000 for a complex purchase</strong> — plus disbursements of £300-£1,000 (searches, Land Registry, SDLT submissions) and the buyer's actual Stamp Duty Land Tax liability where applicable. The professional fee variance reflects transaction complexity: freehold vs leasehold, residential vs buy-to-let, mortgage vs cash, chain vs no chain.</p>
+<p><strong>UK conveyancing solicitor fees in 2025/26 typically range from £600 for a sale to £2,000 for a complex purchase</strong>, plus disbursements of £300-£1,000 (searches, Land Registry, SDLT submissions) and the buyer's actual Stamp Duty Land Tax liability where applicable. The professional fee variance reflects transaction complexity: freehold vs leasehold, residential vs buy-to-let, mortgage vs cash, chain vs no chain.</p>
 
 <p>This guide gives realistic fee ranges by transaction type, what the disbursements actually cover, and where buyers and sellers can expect to find variance.</p>
 
-<h2>Conveyancing solicitor fees by transaction type — 2025/26</h2>
+<h2>Conveyancing solicitor fees by transaction type, 2025/26</h2>
 
 <h3>Residential sale (freehold)</h3>
 
@@ -107,7 +107,7 @@ schema: ''
 
 <h2>SDLT: the buyer's actual tax</h2>
 
-<p>SDLT is not a solicitor fee — it's the buyer's stamp duty payment to HMRC, which the solicitor calculates and submits as part of the transaction. The amount depends on the property price and whether the buyer is a first-time buyer, has an additional property, or is a non-UK resident:</p>
+<p>SDLT is not a solicitor fee; it's the buyer's stamp duty payment to HMRC, which the solicitor calculates and submits as part of the transaction. The amount depends on the property price and whether the buyer is a first-time buyer, has an additional property, or is a non-UK resident:</p>
 
 <ul>
 <li><strong>Standard SDLT rates (England + NI, residential)</strong>: 0% on the first £125,000, 2% on £125,001-£250,000, 5% on £250,001-£925,000, 10% on £925,001-£1.5m, 12% above £1.5m</li>
@@ -128,7 +128,7 @@ schema: ''
 <li><strong>National conveyancing factories</strong> (My Home Move, Homeward Legal, etc.): cheapest, often £400-£800 for routine sales. High volume, automated systems, minimal partner contact. Best for very straightforward transactions.</li>
 <li><strong>Local high-street firms</strong>: middle of the range, typically £700-£1,500 for routine residential. More personal service, easier to escalate issues, partner is named on file.</li>
 <li><strong>City firms doing residential conveyancing</strong>: top of the range, often £1,500-£3,500 for routine residential plus VAT. Premium service for higher-value transactions where the value of certainty justifies the cost.</li>
-<li><strong>Specialist residential conveyancers</strong>: vary but typically positioned between high-street and City — focus on a single practice area allows efficient delivery.</li>
+<li><strong>Specialist residential conveyancers</strong>: vary but typically positioned between high-street and City, as focus on a single practice area allows efficient delivery.</li>
 </ul>
 
 <h3>Region</h3>
@@ -166,16 +166,16 @@ schema: ''
 <li>Margin per matter after costs: £100-£400 typical</li>
 </ul>
 
-<p>This is why volume matters in conveyancing — single-matter losses are common, and profitability comes from converting at scale. It's also why conveyancing-heavy firms are most exposed to PII claims and SRA scrutiny: high volume of client money flowing through, tight margins per matter, and lower fee-earner experience on average.</p>
+<p>This is why volume matters in conveyancing: single-matter losses are common, and profitability comes from converting at scale. It's also why conveyancing-heavy firms are most exposed to PII claims and SRA scrutiny: high volume of client money flowing through, tight margins per matter, and lower fee-earner experience on average.</p>
 
-<h2>What a partner firm would do if you brought them in (for the firm side)</h2>
+<h2>What we would do if you brought us in (for the firm side)</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. A conveyancing-firm engagement with that firm focuses on the operational economics:</p>
+<p>A conveyancing-firm engagement with our team focuses on the operational economics:</p>
 
 <ul>
 <li>Fee-earner productivity and per-matter economics review</li>
 <li>SRA Accounts Rules and client money discipline for high-volume practices</li>
-<li>VAT on disbursements vs recharges — the most common error class in conveyancing firms</li>
+<li>VAT on disbursements vs recharges, the most common error class in conveyancing firms</li>
 <li>PII renewal and conveyancing-firm-specific premium management</li>
 <li>SDLT calculation review (especially around the additional-dwelling surcharge changes in 2024)</li>
 </ul>

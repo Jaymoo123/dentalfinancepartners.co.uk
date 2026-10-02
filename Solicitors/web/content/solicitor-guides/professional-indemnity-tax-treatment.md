@@ -7,7 +7,7 @@ date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 eyebrow: "Pillar guide · Professional indemnity"
 summary: "The full picture on UK law firm Professional Indemnity Insurance. SRA Minimum Terms and Conditions, what qualifying insurers do differently, premium tax treatment, what happens at renewal, run-off cover on cessation, and how claims actually work."
-hero: "PII is the largest single regulatory cost for most UK law firms. The Minimum Terms and Conditions set the floor; the open market sets the price. The October renewal cycle dominates law firm cash planning. Premiums are tax-deductible — the only good news in an otherwise expensive obligation."
+hero: "PII is the largest single regulatory cost for most UK law firms. The Minimum Terms and Conditions set the floor; the open market sets the price. The October renewal cycle dominates law firm cash planning. Premiums are tax-deductible: the only good news in an otherwise expensive obligation."
 faqs:
   - question: "What's the minimum PII cover SRA requires?"
     answer: "Minimum £2m of cover per claim for sole practitioners and partnerships, £3m for incorporated firms; with no aggregate limit at the £2m level. Cover must be on the Minimum Terms and Conditions (MTC) from a qualifying insurer. Most firms carry materially more than the minimum based on claim risk profile."
@@ -22,7 +22,7 @@ faqs:
   - question: "Do I need PII as a consultant solicitor working through a Ltd company?"
     answer: "Almost always yes. If you're providing legal services under your own SRA practising certificate, you need PII to the MTC: £2m minimum. Some engagement structures have the engaging firm's PII covering you; clarify this contractually before relying on it. Most consultants carry their own policy."
 ctaTitle: "Get your PII renewal handled properly"
-ctaBody: "30-minute scoping call. We connect you with a regulated accountancy firm in our partner network that works alongside your PII broker on the financial and tax side; coordinated renewal pricing, run-off planning, and claim handling."
+ctaBody: "30-minute scoping call. Our accountants work alongside your PII broker on the financial and tax side; coordinated renewal pricing, run-off planning, and claim handling."
 ---
 
 <p><strong>PII is the largest single regulatory cost for most UK law firms.</strong> The SRA Minimum Terms and Conditions set the floor on cover; the open market sets the price; the October renewal cycle dominates law firm cash planning. Premiums are tax-deductible, which is the only good news in an otherwise expensive obligation.</p>
@@ -98,7 +98,7 @@ ctaBody: "30-minute scoping call. We connect you with a regulated accountancy fi
 
 <p>Most law firm PII renews on 1 October. The cycle has roots in the historic Solicitors Indemnity Fund and persists today. The renewal preparation timeline:</p>
 
-<h3>April-June — preparation</h3>
+<h3>April-June: preparation</h3>
 
 <ul>
 <li>Renewal information form completed (firm financial data, claims history, practice area mix)</li>
@@ -106,7 +106,7 @@ ctaBody: "30-minute scoping call. We connect you with a regulated accountancy fi
 <li>Indicative quotes received and reviewed; market position assessed</li>
 </ul>
 
-<h3>July-August — negotiation</h3>
+<h3>July-August: negotiation</h3>
 
 <ul>
 <li>Final quotes from insurers</li>
@@ -115,7 +115,7 @@ ctaBody: "30-minute scoping call. We connect you with a regulated accountancy fi
 <li>Premium financing arranged if needed (most insurers offer 6-9 month payment plans at modest interest)</li>
 </ul>
 
-<h3>September — binding</h3>
+<h3>September: binding</h3>
 
 <ul>
 <li>Final terms agreed and bound</li>
@@ -123,7 +123,7 @@ ctaBody: "30-minute scoping call. We connect you with a regulated accountancy fi
 <li>SRA notification of any material change in cover</li>
 </ul>
 
-<h3>October — renewal date</h3>
+<h3>October: renewal date</h3>
 
 <ul>
 <li>New policy incepts at 00:01 on 1 October</li>
@@ -170,22 +170,22 @@ ctaBody: "30-minute scoping call. We connect you with a regulated accountancy fi
 <ul>
 <li>Firm cessation (closure, retirement of sole practitioner, partnership dissolution)</li>
 <li>Asset sale within a merger or acquisition where the original entity ceases</li>
-<li>Conversion from one entity type to another (occasionally — depends on whether the new entity assumes liability for the old)</li>
+<li>Conversion from one entity type to another (occasionally; depends on whether the new entity assumes liability for the old)</li>
 </ul>
 
 <h3>Tax treatment of run-off</h3>
 
-<p>Run-off premium is deductible from the firm's final-year trading profit (or for partnerships/LLPs, allocated to the final-year partners). For a retiring sole practitioner, the run-off premium can produce a trading loss in the cessation year — terminal loss relief may then apply, allowing the loss to be carried back to earlier years.</p>
+<p>Run-off premium is deductible from the firm's final-year trading profit (or for partnerships/LLPs, allocated to the final-year partners). For a retiring sole practitioner, the run-off premium can produce a trading loss in the cessation year; terminal loss relief may then apply, allowing the loss to be carried back to earlier years.</p>
 
 <h2>Claim handling: what to do when something happens</h2>
 
 <h3>Notification</h3>
 
-<p>The MTC requires notification of any circumstance that may give rise to a claim. The threshold is low — most claims start as "potentially worrying circumstances" rather than fully-formed claims. Notify the insurer in writing inside the firm's notification protocol (typically days, not weeks, from awareness).</p>
+<p>The MTC requires notification of any circumstance that may give rise to a claim. The threshold is low: most claims start as "potentially worrying circumstances" rather than fully-formed claims. Notify the insurer in writing inside the firm's notification protocol (typically days, not weeks, from awareness).</p>
 
 <h3>Reservation of rights</h3>
 
-<p>The insurer typically responds with a reservation-of-rights letter acknowledging the notification and pending its position on coverage. This is normal — it doesn't mean the insurer is declining the claim, just that they're not committing to cover until they understand the facts.</p>
+<p>The insurer typically responds with a reservation-of-rights letter acknowledging the notification and pending its position on coverage. This is normal; it doesn't mean the insurer is declining the claim, just that they're not committing to cover until they understand the facts.</p>
 
 <h3>Investigation</h3>
 
@@ -211,7 +211,7 @@ ctaBody: "30-minute scoping call. We connect you with a regulated accountancy fi
 
 <h2>What happens when you bring us in</h2>
 
-<p>We don't broker PII; that's the specialist broker's job. We connect you with a regulated accountancy firm in our specialist partner network, which works alongside the broker on:</p>
+<p>We don't broker PII; that's the specialist broker's job. Our accountants work alongside the broker on:</p>
 
 <ul>
 <li>Renewal information preparation (financial data, projections, mix analysis)</li>

@@ -168,4 +168,4 @@ faqs:
 
 <p>LBTT is a devolved, Scotland-only tax with its own progressive band structure, its own thresholds and its own filing regime. Conveyancing solicitors must stay current with the rates, the 8% ADS, the first-time buyer relief and the 30-day deadline, and must never confuse LBTT with SDLT or LTT. Getting it wrong can cost a firm money and reputation.</p>
 
-<p>If you are unsure about any aspect of LBTT compliance, or need support with your firm's accounting and regulatory obligations, contact us. We connect law firms with regulated accountancy firms that advise on tax, compliance and practice management, and a conversation with a legal-sector-specialist accountant can save you from costly mistakes.</p>
+<p>If you are unsure about any aspect of LBTT compliance, or need support with your firm's accounting and regulatory obligations, contact us. Our team advises law firms on tax, compliance and practice management, and a conversation with a legal-sector-specialist accountant can save you from costly mistakes.</p>

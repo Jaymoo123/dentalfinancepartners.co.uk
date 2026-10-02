@@ -195,4 +195,4 @@ faqs:
 
 <p>Quarter end will always be a pressure point. But with the right systems and discipline, it becomes a routine check rather than a crisis. The firm's cash position improves. The partners draw more. The compliance risk reduces.</p>
 
-<p>If your firm needs help reviewing its billing processes, WIP conversion rates, or cash collection performance, speak to a legal-sector-specialist accountant. We match law firms of all sizes, from sole practitioners to multi-partner LLPs, with accountants in our partner network who work in the legal sector. <a href="/contact">Contact us</a> for a confidential discussion.</p>
+<p>If your firm needs help reviewing its billing processes, WIP conversion rates, or cash collection performance, speak to a legal-sector-specialist accountant. We work with law firms of all sizes, from sole practitioners to multi-partner LLPs, and our accountants work in the legal sector every day. <a href="/contact">Contact us</a> for a confidential discussion.</p>

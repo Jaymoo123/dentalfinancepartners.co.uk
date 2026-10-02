@@ -93,7 +93,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base text-slate-600">
-              We have everything we need. A specialist firm from our partner network may contact you
+              We have everything we need. One of our hospitality accounting specialists will contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
@@ -118,7 +118,7 @@ export default async function CompletePage({
             SlimHero eyebrow on the equivalent page. */}
         <SlimHero eyebrow="Your enquiry" title="Complete your details" backdrop={<HospitalityBackdrop patternId="hospitality-table-setting-complete-hero" />}>
           <p className="mt-4 text-lg leading-relaxed text-slate-300">
-            Add the last detail we need and a specialist firm from our partner network will be in
+            Add the last detail we need and one of our hospitality accounting specialists will be in
             touch to arrange your free hospitality tax review, no obligation.
           </p>
         </SlimHero>

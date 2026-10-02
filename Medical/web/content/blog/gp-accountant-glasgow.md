@@ -142,4 +142,4 @@ faqs:
 <li><a href="/blog/gp-tax-deductions-complete-list-2026">GP Tax Deductions: Complete List for 2026</a></li>
 </ul>
 
-<p>If you are ready to get both layers of your tax position right with specialist expertise, <a href="/contact">send an enquiry</a> and we will match it to a regulated firm of medical accountants that can discuss your requirements.</p>
+<p>If you are ready to get both layers of your tax position right with specialist expertise, <a href="/contact">send an enquiry</a> and one of our medical accountants will discuss your requirements with you.</p>

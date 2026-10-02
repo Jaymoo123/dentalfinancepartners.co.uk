@@ -104,6 +104,6 @@ faqs:
 
 <h2>How we help London GPs</h2>
 
-<p>We publish for GPs, partnerships, salaried doctors and locums across London, and we match enquiries to regulated firms that work with them. Those firms prepare partnership and practice accounts, handle every partner's self-assessment, run NHS pension certification and annual-allowance monitoring, advise on premises and partner changes, and keep a practice ahead of Making Tax Digital. What we publish here is general information rather than personal advice; the tailored work sits with the firm you end up speaking to.</p>
+<p>We work with GPs, partnerships, salaried doctors and locums across London. Our medical accountants prepare partnership and practice accounts, handle every partner's self-assessment, run NHS pension certification and annual-allowance monitoring, advise on premises and partner changes, and keep a practice ahead of Making Tax Digital. What you read here is general information rather than personal advice; the tailored work starts when you speak to one of our team.</p>
 
 <p>To talk through your practice or your personal position, see our full range of <a href="/services">services</a> or get in touch via our <a href="/contact">contact page</a>. For a broader overview of the service, our <a href="/blog/gp-accountant-services-complete-guide">GP accountant services complete guide</a> is a good next read.</p>

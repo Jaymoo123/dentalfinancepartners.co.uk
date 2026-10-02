@@ -117,4 +117,4 @@ faqs:
 
 <h2>If you decide you want help</h2>
 
-<p>If your estate shows any of the red flags above, or you simply do not want the job during a difficult time, speaking to a probate specialist early usually costs nothing and clarifies a great deal. We can connect you with vetted probate specialists who will quote a fixed or capped fee before you commit, so you can compare the price of help against the value of your own time and peace of mind. This article is general information, not legal advice, and the right answer always depends on the estate in front of you.</p>
+<p>If your estate shows any of the red flags above, or you simply do not want the job during a difficult time, speaking to a probate specialist early usually costs nothing and clarifies a great deal. Our probate specialists will quote a fixed or capped fee before you commit, so you can compare the price of help against the value of your own time and peace of mind. This article is general information, not legal advice, and the right answer always depends on the estate in front of you.</p>

@@ -128,7 +128,7 @@ imageCredit:
 
 <p>For most UK dentists, the question is not whether you need an accountant. It is whether you need one who understands dentistry as well as you do.</p>
 
-<p>Contact our team to discuss your situation. Dental Finance Partners works exclusively with UK dentistry, and we introduce associates, principals, locums and practice buyers across the UK to a specialist dental accountant from our partner network. Visit our <a href="/services">services page</a> to see what that covers, or ask for a short introductory call through our <a href="/contact">contact page</a>.</p>
+<p>Contact our team to discuss your situation. Dental Finance Partners works exclusively with UK dentistry, and our specialist dental accountants work with associates, principals, locums and practice buyers across the UK. Visit our <a href="/services">services page</a> to see what that covers, or ask for a short introductory call through our <a href="/contact">contact page</a>.</p>
 
 <h2>Sources</h2>
 <ol>

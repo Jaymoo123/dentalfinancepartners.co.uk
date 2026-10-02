@@ -23,18 +23,18 @@ faqs:
 - question: Why are most UK law firms LLPs and not general partnerships?
   answer: Liability protection. A general partnership leaves each partner with unlimited personal liability for the firm's debts and obligations, joint and several. One partner's misconduct can crystallise the partnership's full liability against any other partner's personal assets. An LLP caps each member's liability at the capital they have contributed (plus any personal guarantees they have given). For multi-partner firms with any meaningful liability exposure, LLP is the obvious answer.
 - question: Does converting from partnership to LLP create any tax events?
-  answer: Generally no. The conversion of a general partnership to an LLP is treated as continuous for tax purposes under standard treatment — no CGT event on capital interests, no balancing adjustments on capital allowances, no cessation of trade. The partnership tax return for the conversion year covers the partnership period; the LLP filing covers the post-conversion period. The two are typically continuous in HMRC records.
+  answer: Generally no. The conversion of a general partnership to an LLP is treated as continuous for tax purposes under standard treatment, with no CGT event on capital interests, no balancing adjustments on capital allowances, no cessation of trade. The partnership tax return for the conversion year covers the partnership period; the LLP filing covers the post-conversion period. The two are typically continuous in HMRC records.
 - question: How long does converting from partnership to LLP take?
   answer: 'Three to six months from decision to completion. The work breaks down: months 1-2 agreeing the LLP agreement and consulting the bank, months 3-4 incorporating the LLP at Companies House and transferring trade and assets, months 5-6 client matter novation, SRA notification, and HMRC partnership cessation / LLP commencement filings. For a four-partner mid-market firm, the legal and accounting fees for the conversion are typically £4,000-£12,000.'
 - question: Do LLPs have to file accounts at Companies House?
-  answer: Yes. LLPs file annual accounts at Companies House under the same audit thresholds as private limited companies (currently turnover under £15m and balance sheet under £7.5m typically qualifies for audit exemption). General partnerships do not file at Companies House — accounts remain entirely private. The public filing obligation is one of the few disadvantages of LLP over partnership, but for most firms, the liability protection outweighs the disclosure cost.
+  answer: Yes. LLPs file annual accounts at Companies House under the same audit thresholds as private limited companies (currently turnover under £15m and balance sheet under £7.5m typically qualifies for audit exemption). General partnerships do not file at Companies House, so accounts remain entirely private. The public filing obligation is one of the few disadvantages of LLP over partnership, but for most firms, the liability protection outweighs the disclosure cost.
 metaTitle_prev: 'LLP vs Partnership for UK Solicitors 2025/26: Key Differences'
 metaDescription_prev: Difference between LLP and partnership for UK law firms 2025/26. Liability protection, tax treatment, filing, capital, conversion costs and timing.
 dateModified: '2026-07-08'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 schema: ''
 ---
-<p><strong>An LLP (Limited Liability Partnership) gives UK law firm members limited liability for the firm's debts while preserving the tax-transparent treatment of a general partnership.</strong> Both structures are taxed identically — members pay personal income tax and Class 4 NI on their share of profit; the entity itself doesn't pay corporation tax. The LLP adds two things: Companies House filing of annual accounts and a separate legal personality that caps member liability.</p>
+<p><strong>An LLP (Limited Liability Partnership) gives UK law firm members limited liability for the firm's debts while preserving the tax-transparent treatment of a general partnership.</strong> Both structures are taxed identically: members pay personal income tax and Class 4 NI on their share of profit; the entity itself doesn't pay corporation tax. The LLP adds two things: Companies House filing of annual accounts and a separate legal personality that caps member liability.</p>
 
 <p>For most multi-partner UK law firms with any meaningful liability exposure (and that's most law firms), LLP wins. This guide gives the side-by-side comparison, the conversion process, and the cases where staying partnership still makes sense.</p>
 
@@ -43,7 +43,7 @@ schema: ''
 <h3>Liability protection</h3>
 
 <ul>
-<li><strong>General partnership</strong>: Each partner has unlimited personal liability for the firm's debts and obligations. Liability is joint and several — one partner's actions can crystallise the firm's full liability against any other partner's personal assets. Partners are personally liable for negligence claims that exceed PII cover, contract breaches, employment claims, and tax debts.</li>
+<li><strong>General partnership</strong>: Each partner has unlimited personal liability for the firm's debts and obligations. Liability is joint and several, so one partner's actions can crystallise the firm's full liability against any other partner's personal assets. Partners are personally liable for negligence claims that exceed PII cover, contract breaches, employment claims, and tax debts.</li>
 <li><strong>LLP</strong>: Each member's liability is limited to their capital contribution plus any personal guarantees they have given (commonly required by the firm's bank for borrowing). Personal assets beyond capital and guarantees are protected from the firm's debts. The LLP itself has separate legal personality, so it can hold property, enter contracts, and be sued in its own name.</li>
 </ul>
 
@@ -53,7 +53,7 @@ schema: ''
 
 <ul>
 <li>Each member / partner is taxed personally on their share of profit at income tax rates (20% / 40% / 45% in 2025/26) plus Class 4 NI (6% / 2%)</li>
-<li>The entity itself doesn't file a corporation tax return — no separate tax person at the entity level</li>
+<li>The entity itself doesn't file a corporation tax return, as there is no separate tax person at the entity level</li>
 <li>SA800 partnership tax return shows total profit and allocation to each member</li>
 <li>Each member files personal self-assessment with their share</li>
 <li>Qualifying loan interest relief (ITA 2007 s.398) on borrowing to fund capital contribution applies identically in both structures</li>
@@ -71,7 +71,7 @@ schema: ''
 
 <p>Fixed-share and salaried members of LLPs are the audit territory. Pure profit-share equity members typically pass (variable reward, meaningful management influence, substantial capital). The fix is usually adjusting capital to break Condition C. See our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP pillar guide</a> for the detailed mechanics and worked examples.</p>
 
-<p>General partnerships don't have an equivalent rule — partners are partners for tax regardless of how their profit share is structured.</p>
+<p>General partnerships don't have an equivalent rule: partners are partners for tax regardless of how their profit share is structured.</p>
 
 <h3>Capital and member economics</h3>
 
@@ -98,7 +98,7 @@ schema: ''
 
 <ul>
 <li><strong>General partnership</strong>: Bank lending typically secured by personal guarantees from partners (because no entity-level limited liability). Easier to obtain initial banking but personal exposure is real.</li>
-<li><strong>LLP</strong>: Bank lending secured by LLP assets plus typically personal guarantees from major members (because lenders still want personal accountability). The PG requirement makes the LLP liability protection partial in practice — but it protects against trading liabilities like negligence claims or staff disputes that exceed PII or insurance cover.</li>
+<li><strong>LLP</strong>: Bank lending secured by LLP assets plus typically personal guarantees from major members (because lenders still want personal accountability). The PG requirement makes the LLP liability protection partial in practice, but it protects against trading liabilities like negligence claims or staff disputes that exceed PII or insurance cover.</li>
 </ul>
 
 <h2>When general partnership still makes sense</h2>
@@ -121,7 +121,7 @@ schema: ''
 <li>Partners agree to convert; vote per the partnership agreement</li>
 <li>Update the partnership agreement into LLP agreement form. Most clauses transfer; some need adjustment for the LLP-specific context (members' duties, exit mechanics, capital account interest, FA 2014 awareness)</li>
 <li>Consult the firm's bank on banking arrangements (new client and office accounts in the LLP's name)</li>
-<li>Confirm PII renewal date — if the conversion can be timed to coincide with renewal, the PII change is administratively simpler</li>
+<li>Confirm PII renewal date. If the conversion can be timed to coincide with renewal, the PII change is administratively simpler</li>
 <li>Notify HMRC of the intention to convert</li>
 </ul>
 
@@ -141,7 +141,7 @@ schema: ''
 <li>Novate client matters where the existing engagement letter terms require it (some bulk via standard novation letters; some bespoke for sensitive matters)</li>
 <li>Update letterhead, website, email signatures, professional indemnity policy, professional directory listings</li>
 <li>HMRC filings: partnership cessation tax return for the period up to conversion; LLP commencement tax return for the period from conversion forward</li>
-<li>VAT registration: typically the LLP takes over the existing VAT number rather than starting a new one — keeps VAT continuity for clients</li>
+<li>VAT registration: typically the LLP takes over the existing VAT number rather than starting a new one, which keeps VAT continuity for clients</li>
 <li>Payroll: re-register the LLP as employer with HMRC; staff continue under TUPE</li>
 <li>First LLP accounts filed at Companies House (typically 9 months after the LLP's first year-end)</li>
 </ul>
@@ -158,7 +158,7 @@ schema: ''
 <li>Bank account setup: typically free but time-consuming (4-8 weeks for client account)</li>
 </ul>
 
-<p>Total conversion cost: typically £4,000-£10,000 for a clean conversion. The cost recurs only at conversion — ongoing LLP administrative overhead is modest.</p>
+<p>Total conversion cost: typically £4,000-£10,000 for a clean conversion. The cost recurs only at conversion; ongoing LLP administrative overhead is modest.</p>
 
 <h2>What about converting from partnership directly to limited company?</h2>
 
@@ -166,11 +166,11 @@ schema: ''
 
 <ul>
 <li>LLP preserves the tax-transparent treatment partners are used to</li>
-<li>Corporation tax (Ltd structure) introduces double taxation — corp tax at entity level plus dividend tax on extraction — which is rarely better than personal tax on partnership profit at typical UK law firm partner profit levels</li>
+<li>Corporation tax (Ltd structure) introduces double taxation (corp tax at entity level plus dividend tax on extraction), which is rarely better than personal tax on partnership profit at typical UK law firm partner profit levels</li>
 <li>The SRA regulatory work for incorporated firms (Recognised Body application or ABS licence) is more complex than the simpler change-of-form notification for LLP conversion</li>
 </ul>
 
-<p>Direct conversion to Ltd makes sense in specific circumstances — typically pre-sale planning where a share-sale-friendly Ltd structure is desired with Section 162 incorporation relief — but those are minority cases requiring bespoke advice.</p>
+<p>Direct conversion to Ltd makes sense in specific circumstances, typically pre-sale planning where a share-sale-friendly Ltd structure is desired with Section 162 incorporation relief, but those are minority cases requiring bespoke advice.</p>
 
 <h2>Decision framework summary</h2>
 
@@ -200,9 +200,9 @@ schema: ''
 <li>Modelled comparison genuinely favours corporate structure on your specific numbers</li>
 </ul>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. A structure-review engagement with that firm covers:</p>
+<p>A structure-review engagement with our team covers:</p>
 
 <ul>
 <li>Three-structure comparison on actual numbers: partnership / LLP / Ltd</li>

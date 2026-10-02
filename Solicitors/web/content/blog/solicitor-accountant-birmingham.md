@@ -30,7 +30,7 @@ faqs:
     answer: "Consider switching if your current accountant doesn't understand SRA compliance requirements, provides generic advice without legal sector context, or cannot help with Making Tax Digital preparations for April 2026. Also switch if you're planning practice growth, considering incorporation, or facing complex tax situations that need specialist legal sector knowledge."
 ---
 
-<p>Finding the right <strong>solicitor accountant in Birmingham</strong> can transform how your legal practice manages its finances, compliance, and growth. Birmingham's thriving legal sector needs accountants who understand the unique challenges of law firm accounting — from SRA compliance to partnership taxation and practice succession planning.</p>
+<p>Finding the right <strong>solicitor accountant in Birmingham</strong> can transform how your legal practice manages its finances, compliance, and growth. Birmingham's thriving legal sector needs accountants who understand the unique challenges of law firm accounting, from SRA compliance to partnership taxation and practice succession planning.</p>
 
 <p>This guide helps Birmingham solicitors, practice managers, and COFAs understand what makes a good solicitor accountant and how to choose the right one for your practice.</p>
 
@@ -100,7 +100,7 @@ faqs:
 <p>Specialist accountants help structure profit-sharing agreements that reflect individual contributions while maintaining partnership cohesion.</p>
 
 <h3>VAT and Disbursement Treatment</h3>
-<p>Legal practices handle numerous disbursements — court fees, expert witness costs, search fees. Incorrect VAT treatment creates compliance risks and cash flow problems.</p>
+<p>Legal practices handle numerous disbursements: court fees, expert witness costs, search fees. Incorrect VAT treatment creates compliance risks and cash flow problems.</p>
 
 <p>Birmingham practices dealing with property transactions or commercial litigation need accountants who understand when disbursements should be treated as part of legal services for VAT purposes.</p>
 

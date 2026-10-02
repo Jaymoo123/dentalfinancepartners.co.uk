@@ -168,7 +168,7 @@ faqs:
 <li>Planning regular compliance reviews</li>
 </ul>
 
-<p>Remember that client money accounting isn't just about regulatory compliance—it's fundamental to maintaining client trust and professional integrity. Getting the basics right protects both your clients and your practice.</p>
+<p>Remember that client money accounting isn't just about regulatory compliance; it's fundamental to maintaining client trust and professional integrity. Getting the basics right protects both your clients and your practice.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

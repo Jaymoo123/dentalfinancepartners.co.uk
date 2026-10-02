@@ -121,4 +121,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>If your self-check suggests your estate could be caught, the numbers are worth getting right before April 2027, and decisions about pensions and estates justify regulated advice. We can connect you with a vetted estate planning specialist who deals with the 2027 rules daily; in the meantime, the free <a href="/calculators/pensions-iht-2027-estimator">pensions IHT 2027 estimator</a> gives you a clear starting figure to bring to that conversation.</p>
+<p>If your self-check suggests your estate could be caught, the numbers are worth getting right before April 2027, and decisions about pensions and estates justify proper advice. One of our estate planning specialists deals with the 2027 rules daily and can talk it through; in the meantime, the free <a href="/calculators/pensions-iht-2027-estimator">pensions IHT 2027 estimator</a> gives you a clear starting figure to bring to that conversation.</p>

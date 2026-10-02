@@ -12,7 +12,7 @@ const data: AudienceStage = {
   badge: "First-time buyers · Associate-to-principal · Multi-site acquirers",
   heroHeading: "Buy your dental practice with eyes open",
   intro:
-    "It is easy to fall for the building and take the seller's numbers at face value. We put you in front of a second opinion on the financial side of the deal, a specialist dental accountant from our partner network: EBITDA normalisation, NHS contract review, associate agreement risk, the goodwill and fixtures split, and the tax structure you buy through.",
+    "It is easy to fall for the building and take the seller's numbers at face value. We put you in front of a second opinion on the financial side of the deal, one of our dental accounting specialists: EBITDA normalisation, NHS contract review, associate agreement risk, the goodwill and fixtures split, and the tax structure you buy through.",
   stats: [
     { value: "60-80%", label: "Typical goodwill share of price" },
     { value: "24-month", label: "BADR + Section 162 lead time" },
@@ -22,33 +22,33 @@ const data: AudienceStage = {
   concerns: [
     {
       title: "Are the seller's accounts telling the real story?",
-      body: "Sellers normalise their accounts before listing. Sometimes the normalisation is reasonable; sometimes it is generous. A specialist from our partner network unwinds the adjustments and rebuilds the realistic post-acquisition P&L from the perspective of you as the new owner.",
+      body: "Sellers normalise their accounts before listing. Sometimes the normalisation is reasonable; sometimes it is generous. One of our specialists unwinds the adjustments and rebuilds the realistic post-acquisition P&L from the perspective of you as the new owner.",
     },
     {
       title: "What multiple should I be paying?",
-      body: "EBITDA multiples in UK dental in 2025/26 range roughly 0.6x for NHS-heavy single-handed practices in low-demand regions to 1.4x+ for private-focused multi-surgery in prime locations. Corporate buyers benchmark differently again. A specialist from our partner network gives you a defensible position.",
+      body: "EBITDA multiples in UK dental in 2025/26 range roughly 0.6x for NHS-heavy single-handed practices in low-demand regions to 1.4x+ for private-focused multi-surgery in prime locations. Corporate buyers benchmark differently again. One of our specialists gives you a defensible position.",
     },
     {
       title: "Is the NHS contract transferable and stable?",
-      body: "NHS contract novation depends on the commissioner. Some contracts are clean novations; others require new contract negotiation that can change UDA value. The firm that picks up your enquiry reads the contract documentation and the recent commissioner correspondence before you complete.",
+      body: "NHS contract novation depends on the commissioner. Some contracts are clean novations; others require new contract negotiation that can change UDA value. The accountant who picks up your enquiry reads the contract documentation and the recent commissioner correspondence before you complete.",
     },
     {
       title: "How should I finance this?",
-      body: "Specialist dental lenders typically offer 70-90% loan-to-value on practice goodwill+assets, with 10-15 year terms. Some require a deposit you can fund personally. Others stretch on associate income. A specialist from our partner network models the cash flow against the loan repayment to confirm the deal services itself.",
+      body: "Specialist dental lenders typically offer 70-90% loan-to-value on practice goodwill+assets, with 10-15 year terms. Some require a deposit you can fund personally. Others stretch on associate income. One of our specialists models the cash flow against the loan repayment to confirm the deal services itself.",
     },
     {
       title: "Asset sale or share sale?",
-      body: "Most UK dental sales settle as asset sales. The buyer takes goodwill plus specific assets; the seller's company is left behind. Share sales transfer the company as-is, including any hidden liabilities. A specialist from our partner network models both and tells you which the seller will accept.",
+      body: "Most UK dental sales settle as asset sales. The buyer takes goodwill plus specific assets; the seller's company is left behind. Share sales transfer the company as-is, including any hidden liabilities. One of our specialists models both and tells you which the seller will accept.",
     },
     {
       title: "Should I incorporate before or after purchase?",
-      body: "Depends on whether you are buying as an individual via asset sale (often yes, then incorporate later or simultaneously), via a newly-formed limited company (typical and straightforward), or by share sale (acquire the seller's existing company). A specialist from our partner network models each route.",
+      body: "Depends on whether you are buying as an individual via asset sale (often yes, then incorporate later or simultaneously), via a newly-formed limited company (typical and straightforward), or by share sale (acquire the seller's existing company). One of our specialists models each route.",
     },
   ],
   services: [
     {
       title: "Pre-offer financial due diligence",
-      body: "A specialist from our partner network reviews the seller's last 3 years of accounts, latest management accounts, payroll, associate agreements and NHS contract documentation, then produces a normalised EBITDA and a recommended offer range with reasoning.",
+      body: "One of our specialists reviews the seller's last 3 years of accounts, latest management accounts, payroll, associate agreements and NHS contract documentation, then produces a normalised EBITDA and a recommended offer range with reasoning.",
     },
     {
       title: "NHS contract risk review",
@@ -56,7 +56,7 @@ const data: AudienceStage = {
     },
     {
       title: "Tax structure for the purchase",
-      body: "Buying personally vs via a new Ltd vs via a partnership / LLP, asset sale vs share sale, SDLT planning on the premises if freehold, VAT recovery on capital expenditure. A specialist from our partner network models the tax cost of each route alongside the financial DD.",
+      body: "Buying personally vs via a new Ltd vs via a partnership / LLP, asset sale vs share sale, SDLT planning on the premises if freehold, VAT recovery on capital expenditure. One of our specialists models the tax cost of each route alongside the financial DD.",
     },
     {
       title: "Cash flow modelling against financing",
@@ -86,12 +86,12 @@ const data: AudienceStage = {
     },
     {
       q: "Do I need a separate solicitor as well as an accountant?",
-      a: "Yes. The financial diligence and tax structure sit with a specialist dental accountant from our partner network. A specialist dental solicitor handles the contract, legal due diligence, Companies House filings if you are buying a Ltd company, premises lease or freehold transfer, and the completion mechanics. They are two separate appointments, and the accountant who picks up your enquiry will expect you to have both.",
+      a: "Yes. The financial diligence and tax structure sit with one of our dental accounting specialists. A specialist dental solicitor handles the contract, legal due diligence, Companies House filings if you are buying a Ltd company, premises lease or freehold transfer, and the completion mechanics. They are two separate appointments, and the accountant who picks up your enquiry will expect you to have both.",
     },
   ],
   ctaTitle: "Buy with proper due diligence, not just legal review",
   ctaBody:
-    "30-minute scoping call about the practice you are looking at, with a specialist from our partner network. They will tell you what they would dig into in DD and whether the asking price looks defensible.",
+    "30-minute scoping call about the practice you are looking at, with one of our specialists. They will tell you what they would dig into in DD and whether the asking price looks defensible.",
   relatedGuides: [
     {
       href: "/dental-guides/practice-purchase-financial-due-diligence",

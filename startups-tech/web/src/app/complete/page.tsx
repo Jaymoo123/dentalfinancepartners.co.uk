@@ -17,9 +17,9 @@ import StartupsBackdrop from "@/components/layout/StartupsBackdrop";
  * still below floor, never email. Noindexed like /book.
  *
  * CHROME ONLY. Every sentence below is the pre-port copy, byte for byte,
- * including the two "specialist firm from our partner network" sentences: those
- * are an owner item (plan section A10), not a design one, and this package does
- * not touch them. The one string authored here is the SlimHero `eyebrow`, "Your
+ * except the two former "partner network" sentences, which were rewritten to firm
+ * voice on 2026-09-28 (owner ruling: the brand IS the firm on every surface).
+ * The one string authored here is the SlimHero `eyebrow`, "Your
  * enquiry", which the primitive requires and which is a structural label.
  *
  * ADOPTED: packages/web-shared/design/primitives/SlimHero.tsx (scoped by its own
@@ -114,7 +114,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base text-slate-700">
-              We have everything we need. A specialist firm from our partner network may contact you
+              We have everything we need. One of our startup tax specialists will contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
@@ -139,7 +139,7 @@ export default async function CompletePage({
     <>
       <SlimHero eyebrow="Your enquiry" title="Complete your details" backdrop={<StartupsBackdrop />}>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-          Add the last detail we need and a specialist firm from our partner network will be in
+          Add the last detail we need and one of our startup tax specialists will be in
           touch to arrange your free startup finance review, no obligation.
         </p>
       </SlimHero>

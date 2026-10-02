@@ -105,8 +105,8 @@ export default async function CompletePage({
              brand orange, not this one. */
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base leading-relaxed text-slate-700">
-              We have everything we need. A specialist firm from our partner network may contact
-              you directly about your enquiry. If you would like to pick a time that suits you,
+              We have everything we need. One of our accountants will be in touch shortly
+              about your enquiry. If you would like to pick a time that suits you,
               you can book a callback below.
             </p>
             {bookingToken && (
@@ -130,8 +130,8 @@ export default async function CompletePage({
         backdrop={<GeneralistBackdrop />}
       >
         <p className="mt-4 text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
-          Add the last detail we need and a specialist firm from our partner network will be in
-          touch to arrange your free review, no obligation.
+          Add the last detail we need and one of our accountants will be in touch to
+          arrange your free review, no obligation.
         </p>
       </SlimHero>
 
@@ -159,7 +159,7 @@ export default async function CompletePage({
                 items={[
                   "We cannot arrange a callback without a number to ring",
                   "One call, at a time you choose, about twenty minutes",
-                  "Your enquiry goes to regulated firms in our partner network, up to six of them",
+                  "Your enquiry goes to our accountants, who read it before they call",
                   "You can object or ask us to stop at any time, from any message",
                 ]}
               />

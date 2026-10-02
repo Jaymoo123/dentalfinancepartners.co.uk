@@ -122,4 +122,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>This guide is general information about the law of England and Wales, not legal advice for your situation. If your partner has died without a will, or you want wills drawn up that protect an unmarried partner properly, a regulated wills and probate specialist can deal with it quickly and inexpensively. We can connect you with a vetted specialist, and our free tools, starting with the <a href="/calculators/making-a-will-checklist">making a will checklist</a>, will make that first conversation faster and cheaper.</p>
+<p>This guide is general information about the law of England and Wales, not legal advice for your situation. If your partner has died without a will, or you want wills drawn up that protect an unmarried partner properly, a regulated wills and probate specialist can deal with it quickly and inexpensively. Speak to one of our probate specialists, and our free tools, starting with the <a href="/calculators/making-a-will-checklist">making a will checklist</a>, will make that first conversation faster and cheaper.</p>

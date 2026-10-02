@@ -7,25 +7,25 @@ date: "2026-05-18"
 author: "Accounts for Lawyers Editorial Team"
 eyebrow: "Pillar guide · Firm structure"
 summary: "The practical UK comparison: when general partnership still makes sense, when LLP wins (most cases), what the FA 2014 Salaried Member Rules do to partner-vs-employee categorisation, and how each structure handles capital, succession, and exit."
-hero: "Most multi-partner UK law firms are LLPs, not general partnerships. The conversion happened mostly in the 2000s. But the structural choice still recurs — for new firms, for small partnerships considering conversion, and for understanding the FA 2014 Salaried Member Rules that can quietly turn 'partners' into 'employees' for tax."
+hero: "Most multi-partner UK law firms are LLPs, not general partnerships. The conversion happened mostly in the 2000s. But the structural choice still recurs: for new firms, for small partnerships considering conversion, and for understanding the FA 2014 Salaried Member Rules that can quietly turn 'partners' into 'employees' for tax."
 faqs:
   - question: "Why are most law firms LLPs rather than general partnerships?"
     answer: "LLP gives the limited-liability protection of a company while preserving the tax-transparent treatment of a partnership. Members are taxed personally on their share of profit; the LLP itself doesn't pay corporation tax. For multi-partner firms with any meaningful liability exposure, LLP is the obvious answer. The exception is very small firms (2 partners, low turnover) where the Companies House filing obligation may outweigh the liability protection."
   - question: "What are the Salaried Member Rules (FA 2014)?"
-    answer: "From 6 April 2014, a member of an LLP is deemed an employee for tax purposes if all three conditions are met. Condition A — disguised salary is at least 80% of total reward. Condition B — limited rights to influence the LLP's affairs. Condition C — capital contribution less than 25% of disguised salary. If all three apply, PAYE applies to drawings as if they were salary."
+    answer: "From 6 April 2014, a member of an LLP is deemed an employee for tax purposes if all three conditions are met. Condition A: disguised salary is at least 80% of total reward. Condition B: limited rights to influence the LLP's affairs. Condition C: capital contribution less than 25% of disguised salary. If all three apply, PAYE applies to drawings as if they were salary."
   - question: "Do LLP members pay employer NI on their drawings?"
-    answer: "No, in normal circumstances. LLP members are self-employed for tax (Class 4 NI on profit share, not Class 1 employer/employee NI). The exception is salaried members who fail the FA 2014 test and are deemed employees — PAYE applies on their drawings including employer NI."
+    answer: "No, in normal circumstances. LLP members are self-employed for tax (Class 4 NI on profit share, not Class 1 employer/employee NI). The exception is salaried members who fail the FA 2014 test and are deemed employees; PAYE applies on their drawings including employer NI."
   - question: "How does partnership taxation work mechanically?"
     answer: "Each partner is taxed personally on their share of partnership profit. The partnership files an SA800 partnership tax return showing the total profit and the allocation between partners; each partner then files their own self-assessment including their profit share. Class 4 NI applies (6% on profit £12,570-£50,270, 2% above). Class 2 NI was abolished from April 2024. The partnership itself does not pay corporation tax."
   - question: "How long does converting from partnership to LLP take?"
-    answer: "Three to six months from decision to completion. Steps: agree the LLP agreement (often a substantial update of the existing partnership agreement), incorporate the LLP at Companies House (form LL IN01), open new bank accounts in the LLP's name, transfer the trade and assets to the LLP, novate client matters where required, notify HMRC of the partnership cessation and LLP commencement. The tax treatment is generally continuous — no CGT event on the conversion of capital interests."
+    answer: "Three to six months from decision to completion. Steps: agree the LLP agreement (often a substantial update of the existing partnership agreement), incorporate the LLP at Companies House (form LL IN01), open new bank accounts in the LLP's name, transfer the trade and assets to the LLP, novate client matters where required, notify HMRC of the partnership cessation and LLP commencement. The tax treatment is generally continuous: no CGT event on the conversion of capital interests."
   - question: "Can a partner / LLP member retire mid-year?"
-    answer: "Yes — the partnership/LLP agreement governs the mechanics. The retiring partner is typically entitled to their capital contribution back (sometimes phased over 1-3 years), their final allocation of profit up to leaving date, and any vested deferred compensation. Tax-wise the retirement is treated as a part-disposal of their partnership interest — BADR may apply on any gain, subject to the qualifying conditions and £1m lifetime limit."
+    answer: "Yes. The partnership/LLP agreement governs the mechanics. The retiring partner is typically entitled to their capital contribution back (sometimes phased over 1-3 years), their final allocation of profit up to leaving date, and any vested deferred compensation. Tax-wise the retirement is treated as a part-disposal of their partnership interest; BADR may apply on any gain, subject to the qualifying conditions and £1m lifetime limit."
 ctaTitle: "Get the right structure for your law firm"
-ctaBody: "30-minute scoping call. We scope the question, then connect you with a regulated accountancy firm in our partner network that models partnership vs LLP on your actual numbers and confirms whether conversion (or staying put) is the right call."
+ctaBody: "30-minute scoping call. We scope the question, then model partnership vs LLP on your actual numbers and confirm whether conversion (or staying put) is the right call."
 ---
 
-<p><strong>Most multi-partner UK law firms are LLPs, not general partnerships.</strong> The conversion happened largely in the 2000s after LLPs were introduced in 2001. But the structural choice still recurs — for new firms, for small partnerships considering conversion, and for understanding the FA 2014 Salaried Member Rules that can quietly turn "partners" into "employees" for tax purposes.</p>
+<p><strong>Most multi-partner UK law firms are LLPs, not general partnerships.</strong> The conversion happened largely in the 2000s after LLPs were introduced in 2001. But the structural choice still recurs: for new firms, for small partnerships considering conversion, and for understanding the FA 2014 Salaried Member Rules that can quietly turn "partners" into "employees" for tax purposes.</p>
 
 <p>This guide is the practical comparison. We cover how each structure is taxed, what limited liability actually means in practice, the FA 2014 mechanics with worked examples, capital and succession differences, and the conversion process.</p>
 
@@ -37,7 +37,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h3>General partnership</h3>
 
-<p>Two or more solicitors trading together under the Partnership Act 1890. Each partner is taxed on their share of profit at personal rates. The partnership itself doesn't pay corporation tax. Unlimited personal liability for all partners — joint and several. Pre-LLP introduction this was the default; few new firms choose general partnership today.</p>
+<p>Two or more solicitors trading together under the Partnership Act 1890. Each partner is taxed on their share of profit at personal rates. The partnership itself doesn't pay corporation tax. Unlimited personal liability for all partners, joint and several. Pre-LLP introduction this was the default; few new firms choose general partnership today.</p>
 
 <h3>LLP (Limited Liability Partnership)</h3>
 
@@ -45,39 +45,39 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h3>Limited company (Ltd or PLC)</h3>
 
-<p>The company itself pays corporation tax on its profits. Solicitor-shareholders extract profit via salary (PAYE) and/or dividends. The company is SRA-regulated as an Alternative Business Structure (ABS) if non-solicitors own or control it; as a Recognised Body if solicitors own and control it. Limited but growing — most law firms remain LLP or partnership-structured.</p>
+<p>The company itself pays corporation tax on its profits. Solicitor-shareholders extract profit via salary (PAYE) and/or dividends. The company is SRA-regulated as an Alternative Business Structure (ABS) if non-solicitors own or control it; as a Recognised Body if solicitors own and control it. Limited but growing; most law firms remain LLP or partnership-structured.</p>
 
 <h2>Tax treatment compared</h2>
 
-<h3>Partnership / LLP — tax-transparent</h3>
+<h3>Partnership / LLP: tax-transparent</h3>
 
 <p>For tax purposes, partnerships and LLPs are functionally identical. Each member or partner is taxed on their share of profit at personal rates: income tax (20% / 40% / 45%) plus Class 4 NI (6% / 2%). The partnership / LLP files an SA800 partnership tax return showing total profit and allocation between members; each member then files their personal self-assessment.</p>
 
 <p>The "tax-transparent" label means no separate corporation tax filing. The LLP's separate legal personality (which gives the liability protection) doesn't create a separate tax person.</p>
 
-<h3>Limited company — corporation tax + dividend tax stack</h3>
+<h3>Limited company: corporation tax + dividend tax stack</h3>
 
 <p>The company pays corporation tax on its profits: 19% on the first £50,000, marginal relief between £50,000 and £250,000, 25% above £250,000. Shareholders then pay dividend tax on dividends received: 10.75% / 35.75% / 39.35% (2026/27 rates, FA 2026 s.4) over the £500 dividend allowance. The two layers stacked typically equal or slightly beat the partnership/LLP personal rate for higher earners, but the headline saving is smaller than commonly believed.</p>
 
 <h2>The FA 2014 Salaried Member Rules</h2>
 
-<p>From 6 April 2014, a member of an LLP is deemed an employee for tax purposes — meaning PAYE applies to their drawings — if all three of the following conditions are met. (Note: these rules apply to LLP members specifically. General partnership partners are not subject to the same rules.)</p>
+<p>From 6 April 2014, a member of an LLP is deemed an employee for tax purposes (meaning PAYE applies to their drawings) if all three of the following conditions are met. (Note: these rules apply to LLP members specifically. General partnership partners are not subject to the same rules.)</p>
 
-<h3>Condition A — Disguised salary</h3>
+<h3>Condition A: Disguised salary</h3>
 
-<p>At least 80% of the total reward the member receives from the LLP is "disguised salary" — fixed or determined without reference to profit. A pure profit-share member fails Condition A (their reward is entirely variable with profit). A fixed-share member who gets £80,000 fixed plus £5,000 profit-linked bonus passes Condition A (94% fixed).</p>
+<p>At least 80% of the total reward the member receives from the LLP is "disguised salary" (fixed or determined without reference to profit). A pure profit-share member fails Condition A (their reward is entirely variable with profit). A fixed-share member who gets £80,000 fixed plus £5,000 profit-linked bonus passes Condition A (94% fixed).</p>
 
-<h3>Condition B — Limited influence</h3>
+<h3>Condition B: Limited influence</h3>
 
 <p>The member has only limited rights to influence the LLP's affairs. Members who attend management meetings as voting equals, share in management decisions, and have unrestricted access to firm information fail Condition B (they have meaningful influence). Members excluded from management decisions and treated as "fee-earners with a partner badge" pass Condition B.</p>
 
-<h3>Condition C — Capital contribution</h3>
+<h3>Condition C: Capital contribution</h3>
 
 <p>The member's capital contribution is less than 25% of their disguised salary for the period. A member with £80,000 disguised salary needs £20,000 of capital to fail Condition C (and therefore be treated as a partner). With £10,000 of capital, they pass Condition C (and may be deemed employee depending on A and B).</p>
 
 <h3>All three or no deemed-employee status</h3>
 
-<p>Critically, the deemed-employee treatment only applies if ALL THREE conditions are met. Failing any single condition keeps the member as partner for tax. This is why capital contribution structuring (Condition C) is the most common defensive lever — bumping a member's capital to 26%+ of their disguised salary breaks the chain.</p>
+<p>Critically, the deemed-employee treatment only applies if ALL THREE conditions are met. Failing any single condition keeps the member as partner for tax. This is why capital contribution structuring (Condition C) is the most common defensive lever: bumping a member's capital to 26%+ of their disguised salary breaks the chain.</p>
 
 <h3>Worked example: Sarah the fixed-share partner</h3>
 
@@ -100,7 +100,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h3>Fixing Sarah's position</h3>
 
-<p>The cleanest fix is to lift Sarah's capital contribution above 25% of disguised salary. Bumping capital from £20,000 to £23,000 (25.6% of £90k) breaks Condition C. Sarah reverts to partner treatment for tax — Class 4 NI on her profit share instead of Class 1 employer/employee NI on her drawings.</p>
+<p>The cleanest fix is to lift Sarah's capital contribution above 25% of disguised salary. Bumping capital from £20,000 to £23,000 (25.6% of £90k) breaks Condition C. Sarah reverts to partner treatment for tax: Class 4 NI on her profit share instead of Class 1 employer/employee NI on her drawings.</p>
 
 <p>The bank may need to fund the additional capital; qualifying loan interest relief under ITA 2007 s.398 makes the interest deductible from Sarah's personal taxable income.</p>
 
@@ -108,7 +108,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h3>Capital contribution mechanics</h3>
 
-<p>LLPs require members to contribute capital — the amount governed by the LLP agreement. Typical structures:</p>
+<p>LLPs require members to contribute capital, the amount governed by the LLP agreement. Typical structures:</p>
 
 <ul>
 <li>Equity partners: £50,000-£300,000+ depending on firm size and seniority</li>
@@ -146,15 +146,15 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <p>For firms still structured as a general partnership, conversion to LLP is typically straightforward. The process:</p>
 
-<h3>Months 1-2 — agreement</h3>
+<h3>Months 1-2: agreement</h3>
 
 <ul>
-<li>Update the partnership agreement into LLP agreement form (most clauses transfer; some need adjustment for the LLP context — fixed-term provisions, decision-making, voting rights)</li>
+<li>Update the partnership agreement into LLP agreement form (most clauses transfer; some need adjustment for the LLP context: fixed-term provisions, decision-making, voting rights)</li>
 <li>Consult the firm's bank on banking arrangements</li>
 <li>Confirm PII renewal date and whether the conversion fits the cycle</li>
 </ul>
 
-<h3>Months 3-4 — incorporation</h3>
+<h3>Months 3-4: incorporation</h3>
 
 <ul>
 <li>File LL IN01 at Companies House to incorporate the LLP</li>
@@ -163,7 +163,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 <li>Transfer trade and assets to the LLP at book value (no CGT event under standard treatment)</li>
 </ul>
 
-<h3>Months 5-6 — transition</h3>
+<h3>Months 5-6: transition</h3>
 
 <ul>
 <li>Novate client matters (where required by the matter terms)</li>
@@ -201,7 +201,7 @@ ctaBody: "30-minute scoping call. We scope the question, then connect you with a
 
 <h2>What happens when you bring us in</h2>
 
-<p>We connect you with a regulated accountancy firm in our specialist partner network. A structure-review engagement typically covers:</p>
+<p>A structure-review engagement with our team typically covers:</p>
 
 <ul>
 <li>Three-structure tax comparison on your actual numbers</li>

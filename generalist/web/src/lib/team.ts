@@ -35,7 +35,7 @@ export const TEAM: Record<string, TeamMember> = {
       "Editorial lead at Holloway Davies. Writes on UK tax, incorporation, VAT, payroll and R&D credits for limited companies and sole traders.",
     bio: [
       "Emma Carter is the editorial lead at Holloway Davies. She writes and commissions content on UK corporation tax, VAT, payroll, R&D credits, incorporation decisions, and the practical accounting questions UK business owners actually ask.",
-      "Editorial focus is plain-English explanation backed by primary sources. Every figure on this site is traceable back to HMRC, Companies House, or equivalent. Concrete advice for a specific business is delivered via a one-to-one call with a qualified accountant on the partner team, not via published articles.",
+      "Editorial focus is plain-English explanation backed by primary sources. Every figure on this site is traceable back to HMRC, Companies House, or equivalent. Concrete advice for a specific business is delivered via a one-to-one call with one of our accountants, not via published articles.",
       "If something on the site is wrong, out of date, or unclear, get in touch and the editorial team will fix it.",
     ],
     expertise: [
@@ -59,7 +59,7 @@ export const TEAM: Record<string, TeamMember> = {
     bio: [
       "James Holloway is the technical reviewer on every article published by Holloway Davies. With a BSc in Accounting and Finance, he has spent his career advising UK limited companies on corporation tax, share structure, R&D claims and exit strategy.",
       "Every piece of content on this site is reviewed against current HMRC and Companies House guidance before publication. Where figures, deadlines or rates change in the next Budget or Finance Act, the editorial team updates the article and republishes; James signs off the change.",
-      "James does not publish personalised advice through articles. Tailored advice for a specific business is delivered via a one-to-one call with a senior accountant on the partner team.",
+      "James does not publish personalised advice through articles. Tailored advice for a specific business is delivered via a one-to-one call with one of our senior accountants.",
     ],
     expertise: [
       "UK corporation tax including marginal relief and associated company rules",

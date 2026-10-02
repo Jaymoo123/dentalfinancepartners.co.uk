@@ -73,7 +73,7 @@ export default function ProbatePage() {
               href="/contact"
               className={`inline-flex min-h-12 items-center justify-center border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-medium text-white hover:bg-white/20 transition-colors ${focusRing}`}
             >
-              Request a call from a vetted probate specialist
+              Request a call from one of our probate specialists
             </Link>
           </div>
         </div>
@@ -311,8 +311,8 @@ export default function ProbatePage() {
               <p className="mt-4 text-lg leading-relaxed text-neutral-300">
                 Run the probate cost calculator and the timeline estimator to see what this estate should
                 realistically cost and how long it should take. Then, if you decide you want help with some
-                or all of it, tell us about the estate and we will connect you with a vetted probate
-                specialist who quotes transparently.
+                or all of it, tell us about the estate and one of our probate specialists will
+                quote transparently.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href={toolPath("probate-cost-calculator")} className={btnPrimary}>

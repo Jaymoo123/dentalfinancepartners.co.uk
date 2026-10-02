@@ -194,4 +194,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>The cheapest divorce is almost never the one with the lowest headline fees; it is the one where the settlement is right first time and never comes back. Our service connects people across England and Wales with experienced family law professionals and accredited mediators for a no-obligation conversation about the right route and realistic costs for your situation. We are not a law firm and we do not give legal advice; we may receive a fee from the firm we introduce you to, which never affects what you pay or the advice you receive.</p>
+<p>The cheapest divorce is almost never the one with the lowest headline fees; it is the one where the settlement is right first time and never comes back. Our divorce finance specialists will talk through the right route and realistic costs for your situation, with no obligation. We are not a law firm and we do not give legal advice; where you need a solicitor or mediator, we work alongside a regulated family law firm or an accredited mediator and stay on the money side.</p>

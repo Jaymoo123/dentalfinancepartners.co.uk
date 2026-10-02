@@ -100,7 +100,7 @@ faqs:
   <li>An informed view on the drivers covered in the next section.</li>
 </ul>
 
-<p>Your accountant's role in this process is to make sure the adjusted EBITDA figure is constructed correctly, that the add-backs are defensible, and that the tax implications of the agreed price are fully understood before heads of terms are signed. If you are looking for a current market view on multiples, a specialist pharmacy broker with live transaction data is the right source. We can refer you to appropriate specialists through our <a href="/services/pharmacy-valuation-goodwill">pharmacy valuation and goodwill service</a>.</p>
+<p>Your accountant's role in this process is to make sure the adjusted EBITDA figure is constructed correctly, that the add-backs are defensible, and that the tax implications of the agreed price are fully understood before heads of terms are signed. If you are looking for a current market view on multiples, a specialist pharmacy broker with live transaction data is the right source. Our <a href="/services/pharmacy-valuation-goodwill">pharmacy valuation and goodwill service</a> covers the accounting side, and we can refer you to a specialist pharmacy broker for the market view.</p>
 
 <h2>What moves your valuation up or down</h2>
 

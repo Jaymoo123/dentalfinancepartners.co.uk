@@ -62,7 +62,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist if you need one",
-        body: "If the estate turns out to be genuinely complex, with trusts, businesses or disputes, we can connect you with a vetted probate specialist. No pressure either way.",
+        body: "If the estate turns out to be genuinely complex, with trusts, businesses or disputes, one of our probate specialists can step in. No pressure either way.",
       },
     ],
     faqs: [
@@ -118,7 +118,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "Updating your will",
-        body: "When you are ready, and only then, a vetted specialist can help you update your own will to match your new situation.",
+        body: "When you are ready, and only then, one of our specialists can help you plan the changes to your own will, and where you need a solicitor we work alongside a regulated firm.",
       },
     ],
     faqs: [
@@ -173,7 +173,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist who works with blended families",
-        body: "If you want your wills properly built, we can connect you with a vetted specialist who works with blended families and structures like life interest arrangements.",
+        body: "If you want your wills properly built, one of our specialists who works with blended families and structures like life interest arrangements can help.",
       },
     ],
     faqs: [
@@ -233,7 +233,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist in business succession",
-        body: "If the numbers are material, this is specialist territory, and we can connect you with a vetted firm that handles business succession and estate planning together.",
+        body: "If the numbers are material, this is specialist territory, and one of our specialists handles business succession and estate planning together.",
       },
     ],
     faqs: [
@@ -289,7 +289,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist if it is material",
-        body: "If the exposure is material, we can connect you with a vetted estate planning specialist.",
+        body: "If the exposure is material, one of our estate planning specialists can look at it.",
       },
     ],
     faqs: [
@@ -348,7 +348,7 @@ export const tradeTypes: TradeType[] = [
       },
       {
         title: "A specialist in cross-border estates",
-        body: "Cross-border estates are specialist work, and we can connect you with a vetted firm that handles them.",
+        body: "Cross-border estates are specialist work, and one of our specialists who handles them can take a look.",
       },
     ],
     faqs: [

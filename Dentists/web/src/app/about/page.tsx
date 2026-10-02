@@ -70,7 +70,7 @@ export default function AboutPage() {
         <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-[var(--ink-soft)]">
           <li>Plain language guides and calculators you can act on.</li>
           <li>Monthly discipline where it matters, not just a rush every January.</li>
-          <li>A specialist dental accountant from our partner network, not a generalist who has never seen a UDA schedule.</li>
+          <li>A specialist dental accountant from our team, not a generalist who has never seen a UDA schedule.</li>
         </ul>
 
         <h2 className="mt-12 text-2xl font-semibold text-[var(--ink)] sm:text-3xl">Evidence-led content</h2>
@@ -105,7 +105,7 @@ export default function AboutPage() {
           contained
           ground="white"
           title="Get a dental specialist on your numbers"
-          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will put you in front of a specialist dental accountant from our partner network. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
+          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will put you in front of one of our dental accounting specialists. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
           proofPoints={[
             { title: "Dental practices only", detail: "NHS pensions, UDAs and practice sales every day" },
             { title: "One accountant throughout", detail: "You speak to the person doing the work" },

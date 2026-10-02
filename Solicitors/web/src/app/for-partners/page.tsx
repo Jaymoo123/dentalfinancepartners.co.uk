@@ -12,7 +12,7 @@ const data: AudienceStage = {
   badge: "Equity partners · Fixed-share · Salaried · Senior associates approaching equity",
   heroHeading: "Tax and structural work for solicitor partners",
   intro:
-    "Equity partners. Fixed-share members. Salaried partners on the FA 2014 border. The work splits between annual SA filing, quarterly drawings reconciliation, and the structural decisions that recur once or twice a partnership lifetime. The partner firm we match you with does all three.",
+    "Equity partners. Fixed-share members. Salaried partners on the FA 2014 border. The work splits between annual SA filing, quarterly drawings reconciliation, and the structural decisions that recur once or twice a partnership lifetime. We do all three.",
   stats: [
     { value: "FA 2014", label: "Salaried Member audit" },
     { value: "5+ wk", label: "Reconciliation rhythm" },
@@ -22,7 +22,7 @@ const data: AudienceStage = {
   concerns: [
     {
       title: "Am I really a partner for tax, or a deemed employee?",
-      body: "The FA 2014 Salaried Member Rules apply Conditions A (disguised salary ≥80% of reward), B (limited LLP influence), and C (capital contribution <25% of disguised salary). If all three are met, PAYE applies on your drawings. Most fixed-share partners pass; some don't. Your partner firm audits quarterly so the position never drifts.",
+      body: "The FA 2014 Salaried Member Rules apply Conditions A (disguised salary ≥80% of reward), B (limited LLP influence), and C (capital contribution <25% of disguised salary). If all three are met, PAYE applies on your drawings. Most fixed-share partners pass; some don't. We audit quarterly so the position never drifts.",
     },
     {
       title: "How much should I contribute as partner capital?",
@@ -30,11 +30,11 @@ const data: AudienceStage = {
     },
     {
       title: "I'm thinking about exit in 3-5 years. What now?",
-      body: "BADR pre-sale planning starts 24 months out. The rate rises from 14% to 18% on 6 April 2026, a £40,000 swing per £1m of qualifying gain. If your exit horizon spans that date, the timing decision matters. Your partner firm models both sides.",
+      body: "BADR pre-sale planning starts 24 months out. The rate rises from 14% to 18% on 6 April 2026, a £40,000 swing per £1m of qualifying gain. If your exit horizon spans that date, the timing decision matters. We model both sides.",
     },
     {
       title: "Can I take a personal pension contribution out of my profit share?",
-      body: "Yes, and the relief comes at your marginal rate via self-assessment. Personal pension contributions for partners are not 'employer contributions' (the firm doesn't pay them, you do, personally). Annual allowance applies, tapered for high earners. Your partner firm sequences contributions for the optimum claim.",
+      body: "Yes, and the relief comes at your marginal rate via self-assessment. Personal pension contributions for partners are not 'employer contributions' (the firm doesn't pay them, you do, personally). Annual allowance applies, tapered for high earners. We sequence contributions for the optimum claim.",
     },
     {
       title: "How does my share of profit interact with property income?",
@@ -42,7 +42,7 @@ const data: AudienceStage = {
     },
     {
       title: "We're admitting a new equity partner. Tax position?",
-      body: "Admitting a new equity partner triggers a capital allocation, a profit-share reallocation, and (for the new partner) a likely qualifying loan interest relief claim. The LLP agreement governs the mechanics, and your partner firm handles the tax flow-through for all existing partners.",
+      body: "Admitting a new equity partner triggers a capital allocation, a profit-share reallocation, and (for the new partner) a likely qualifying loan interest relief claim. The LLP agreement governs the mechanics, and we handle the tax flow-through for all existing partners.",
     },
   ],
   services: [

@@ -155,9 +155,9 @@ faqs:
 <li><strong>Months 6 to 0</strong>: live process, due diligence, completion</li>
 </ul>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. A pre-sale planning engagement with that firm covers:</p>
+<p>A pre-sale planning engagement with our team covers:</p>
 
 <ul>
 <li>Realistic valuation on your specific firm's normalised EBITDA, practice area mix and region</li>

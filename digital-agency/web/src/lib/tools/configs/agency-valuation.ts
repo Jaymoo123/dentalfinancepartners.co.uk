@@ -92,7 +92,7 @@ export const agencyValuationTool: GenericTool = {
       topClientPct: Number(values.topClientPct) || 0,
       keyPersonDependent: Boolean(values.keyPersonDependent),
     });
-    const range = out.ebitda > 0 ? `${fmt(out.low)} to ${fmt(out.high)}` : "—";
+    const range = out.ebitda > 0 ? `${fmt(out.low)} to ${fmt(out.high)}` : "n/a";
     return {
       headline: {
         label: "Indicative valuation (mid)",

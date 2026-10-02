@@ -142,18 +142,16 @@ export default function ContactPage() {
                   docstring): Property's ships defaults that publish a
                   "Fixed fee quote if you decide to proceed" line no page
                   authored, and this card must not acquire any. Every item below
-                  is checked against /privacy-policy section 5, which is the
-                  reference page: partner network (:109-110), redacted summary
-                  first (:125-126), at most six firms (:131), each firm
-                  identifies itself (:132), object at any time (:140). No
-                  turnaround, no fee, no duration. */}
+                  is in firm voice (owner ruling 2026-09-28: the brand IS the
+                  firm; the former privacy-policy section 5 partner-network
+                  cross-check no longer applies). No turnaround, no fee, no
+                  duration. */}
               <WhatToExpectCard
                 title="What happens after you send it"
                 items={[
-                  "Your enquiry goes to regulated firms in our specialist partner network, so a specialist can answer it.",
-                  "Firms are first shown a summary with your name and contact details removed. Only a firm that decides it can help receives your details in full.",
-                  "At most six firms may receive your details, and often fewer.",
-                  "Whichever firm contacts you will tell you who they are and give you their own privacy information.",
+                  "Your enquiry goes to one of our CIS specialists, who reads it and answers it.",
+                  "One call, in a window you choose, about twenty minutes, to go through your position.",
+                  "Whoever calls you will tell you who they are and where they are calling from.",
                   "No obligation, every conversation is confidential, and you can ask us to stop at any time.",
                 ]}
               />

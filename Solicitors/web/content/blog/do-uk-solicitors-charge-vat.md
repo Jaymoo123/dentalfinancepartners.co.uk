@@ -25,16 +25,16 @@ faqs:
 - question: Are disbursements VATable?
   answer: Depends on whether the solicitor is acting as agent or principal. Pure disbursements (where the solicitor pays a third party as agent for the client, the third party invoices the client, and the solicitor passes through the cost) are outside the scope of VAT. Expenses incurred by the solicitor as principal (search fees billed to the firm, then recharged to client) generally carry VAT in the recharge. The distinction is fact-specific and HMRC scrutinises common errors here.
 - question: Do I charge VAT to clients outside the UK?
-  answer: Depends on the client type and the nature of the work. For business clients outside the UK (B2B), place-of-supply rules typically make the supply outside UK VAT scope — no VAT charged but you can still reclaim input VAT on related costs. For private (consumer) clients outside the UK, UK VAT typically applies. For UK domestic matters involving overseas clients (e.g., conveyancing on a UK property for an overseas buyer), UK VAT applies because the property is in the UK.
+  answer: Depends on the client type and the nature of the work. For business clients outside the UK (B2B), place-of-supply rules typically make the supply outside UK VAT scope (no VAT charged, but you can still reclaim input VAT on related costs). For private (consumer) clients outside the UK, UK VAT typically applies. For UK domestic matters involving overseas clients (e.g., conveyancing on a UK property for an overseas buyer), UK VAT applies because the property is in the UK.
 - question: Can I avoid charging VAT if I'm a small firm?
-  answer: Only by staying below the £90,000 turnover threshold. Below the threshold, VAT registration is voluntary, not required. If you don't register, you don't charge VAT on client fees — which makes you 20 percent cheaper to clients who can't reclaim VAT (private clients, exempt businesses). But you also can't reclaim input VAT on your own costs (office costs, PII, professional subscriptions). Most firms approaching the threshold consider voluntary registration earlier to capture input VAT recovery while still being competitive.
+  answer: Only by staying below the £90,000 turnover threshold. Below the threshold, VAT registration is voluntary, not required. If you don't register, you don't charge VAT on client fees, which makes you 20 percent cheaper to clients who can't reclaim VAT (private clients, exempt businesses). But you also can't reclaim input VAT on your own costs (office costs, PII, professional subscriptions). Most firms approaching the threshold consider voluntary registration earlier to capture input VAT recovery while still being competitive.
 metaTitle_prev: Do UK Solicitors Charge VAT in 2025/26? Yes, at 20%
 metaDescription_prev: UK solicitors charge VAT at 20% on legal services. The £90k registration threshold, disbursement rules, overseas client treatment. Plain-English guide.
 dateModified: '2026-07-08'
 editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP meta-optimisation program) after GSC+Bing CTR analysis.
 schema: ''
 ---
-<p><strong>Yes. UK solicitors charge VAT at the standard 20% rate on legal services in 2025/26.</strong> Legal services including conveyancing, family law, commercial work, and litigation are all standard-rated. There is no general VAT exemption for legal services — clients pay the headline fee plus 20% VAT on top. Registration becomes mandatory at £90,000 of taxable turnover; many smaller firms register voluntarily to reclaim input VAT.</p>
+<p><strong>Yes. UK solicitors charge VAT at the standard 20% rate on legal services in 2025/26.</strong> Legal services including conveyancing, family law, commercial work, and litigation are all standard-rated. There is no general VAT exemption for legal services; clients pay the headline fee plus 20% VAT on top. Registration becomes mandatory at £90,000 of taxable turnover; many smaller firms register voluntarily to reclaim input VAT.</p>
 
 <p>This guide covers the headline rule, when VAT registration applies, the disbursement nuance that trips up many firms, and the treatment of overseas clients and overseas matters.</p>
 
@@ -55,7 +55,7 @@ schema: ''
 <li>Criminal defence work (privately funded)</li>
 </ul>
 
-<p>The few exceptions are narrow and specific — see the sections below on disbursements and overseas clients.</p>
+<p>The few exceptions are narrow and specific; see the sections below on disbursements and overseas clients.</p>
 
 <h2>A typical UK solicitor bill</h2>
 
@@ -76,7 +76,7 @@ schema: ''
 
 <p>£90,000 of taxable turnover on a rolling 12-month basis (the threshold rose from £85,000 on 1 April 2024).</p>
 
-<p>"Taxable turnover" means gross fee income from VATable services — essentially all legal-service income, since legal services are standard-rated.</p>
+<p>"Taxable turnover" means gross fee income from VATable services (essentially all legal-service income, since legal services are standard-rated).</p>
 
 <p>Once a firm's rolling 12-month taxable turnover passes £90,000, the firm has 30 days to notify HMRC and begin charging VAT.</p>
 
@@ -93,13 +93,13 @@ schema: ''
 
 <h3>De-registration threshold</h3>
 
-<p>£88,000 — slightly below the registration threshold. A registered firm whose turnover drops below £88,000 on a rolling 12-month basis can apply to de-register. Rarely relevant for active law firms.</p>
+<p>£88,000, slightly below the registration threshold. A registered firm whose turnover drops below £88,000 on a rolling 12-month basis can apply to de-register. Rarely relevant for active law firms.</p>
 
 <h2>The disbursement nuance</h2>
 
 <p>Disbursements are the most common source of VAT errors in UK law firms. The key distinction: is the solicitor acting as <strong>agent</strong> for the client, or as <strong>principal</strong>?</p>
 
-<h3>Pure disbursements (agent) — outside VAT scope</h3>
+<h3>Pure disbursements (agent): outside VAT scope</h3>
 
 <p>Where the solicitor pays a third party as agent for the client, the third party invoices the client (not the solicitor), and the solicitor merely passes the cost through. Common examples:</p>
 
@@ -113,7 +113,7 @@ schema: ''
 
 <p>These are passed through at cost with no VAT added by the solicitor. They appear on the client's invoice separately from the firm's fees, often under a heading like "Disbursements (no VAT)".</p>
 
-<h3>Solicitor-recharged costs (principal) — VATable</h3>
+<h3>Solicitor-recharged costs (principal): VATable</h3>
 
 <p>Where the solicitor incurs a cost in the course of providing the service to the client and recharges it, the recharge is VATable. Examples:</p>
 
@@ -155,7 +155,7 @@ schema: ''
 
 <h3>Reverse-charge VAT on services received from overseas suppliers</h3>
 
-<p>If the firm purchases services from a non-UK supplier (foreign counsel, overseas expert witnesses, certain digital services), reverse-charge VAT may apply. The firm self-accounts for the VAT on its VAT return — neutral cash flow but a compliance requirement.</p>
+<p>If the firm purchases services from a non-UK supplier (foreign counsel, overseas expert witnesses, certain digital services), reverse-charge VAT may apply. The firm self-accounts for the VAT on its VAT return: neutral cash flow but a compliance requirement.</p>
 
 <h2>VAT schemes available to UK solicitors</h2>
 
@@ -165,7 +165,7 @@ schema: ''
 
 <h3>Cash accounting scheme</h3>
 
-<p>VAT is calculated on cash received and cash paid, not on invoices issued and received. Available to firms with turnover under £1,350,000. Useful for firms with cash flow challenges or significant lock-up — VAT isn't due until the client actually pays. Most law firms with significant litigation or commercial litigation books benefit from cash accounting.</p>
+<p>VAT is calculated on cash received and cash paid, not on invoices issued and received. Available to firms with turnover under £1,350,000. Useful for firms with cash flow challenges or significant lock-up; VAT isn't due until the client actually pays. Most law firms with significant litigation or commercial litigation books benefit from cash accounting.</p>
 
 <h3>Annual accounting scheme</h3>
 
@@ -173,7 +173,7 @@ schema: ''
 
 <h3>Flat Rate Scheme (FRS)</h3>
 
-<p>A simplified scheme paying a flat percentage of gross turnover as VAT instead of calculating input/output VAT separately. The legal services flat rate is 14.5% (or 16.5% if the firm has very low input VAT — the "limited cost trader" rule). FRS is rarely beneficial for established law firms with meaningful input VAT recovery; smaller new firms with low costs may benefit from FRS in years 1-2.</p>
+<p>A simplified scheme paying a flat percentage of gross turnover as VAT instead of calculating input/output VAT separately. The legal services flat rate is 14.5% (or 16.5% if the firm has very low input VAT, the "limited cost trader" rule). FRS is rarely beneficial for established law firms with meaningful input VAT recovery; smaller new firms with low costs may benefit from FRS in years 1-2.</p>
 
 <h2>Making Tax Digital (MTD) for VAT</h2>
 
@@ -197,17 +197,17 @@ schema: ''
 <li><strong>Cash accounting transition issues</strong>: when moving between schemes, VAT on outstanding invoices and unpaid bills needs careful handling.</li>
 </ul>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. A VAT support engagement with that firm covers:</p>
+<p>A VAT support engagement with our team covers:</p>
 
 <ul>
-<li>VAT registration timing review — voluntary vs threshold-mandated</li>
-<li>Scheme selection — standard, cash accounting, FRS modelled on your numbers</li>
+<li>VAT registration timing review: voluntary vs threshold-mandated</li>
+<li>Scheme selection: standard, cash accounting, FRS modelled on your numbers</li>
 <li>Quarterly VAT return preparation and submission via MTD</li>
 <li>Disbursement-vs-recharge classification on your engagement letter templates and billing process</li>
 <li>Overseas client VAT review for firms with significant non-UK client work</li>
 <li>HMRC VAT enquiry support if a review or investigation arises</li>
 </ul>
 
-<p>VAT is the most operationally embedded tax for a law firm — every invoice involves a VAT decision. Getting it right is foundational; getting it wrong creates compliance risk on every transaction. Book a 30-minute scoping call below if you want a fresh review of your firm's VAT position.</p>
+<p>VAT is the most operationally embedded tax for a law firm: every invoice involves a VAT decision. Getting it right is foundational; getting it wrong creates compliance risk on every transaction. Book a 30-minute scoping call below if you want a fresh review of your firm's VAT position.</p>

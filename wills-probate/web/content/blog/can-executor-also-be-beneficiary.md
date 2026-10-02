@@ -139,4 +139,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>If you are an executor-beneficiary facing a genuine conflict, a will that a beneficiary witnessed, or beneficiaries questioning your decisions, this is exactly the situation where a short conversation with a vetted probate specialist pays for itself. We can connect you with one. And if your immediate question is simply whether the estate needs a grant at all, start with the free <a href="/calculators/do-i-need-probate-checker">do I need probate checker</a>.</p>
+<p>If you are an executor-beneficiary facing a genuine conflict, a will that a beneficiary witnessed, or beneficiaries questioning your decisions, this is exactly the situation where a short conversation with one of our probate specialists pays for itself. Just ask us. And if your immediate question is simply whether the estate needs a grant at all, start with the free <a href="/calculators/do-i-need-probate-checker">do I need probate checker</a>.</p>

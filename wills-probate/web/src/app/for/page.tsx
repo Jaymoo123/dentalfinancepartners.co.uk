@@ -126,11 +126,11 @@ export default function ForIndexPage() {
             <div>
               <div className="section-label mb-6">Want a specialist to take it from here?</div>
               <h2 className="text-2xl font-bold text-white sm:text-4xl">Some estates need more than a calculator</h2>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. If you would like a professional to look at your situation, tell us a little about it and we will connect you with a vetted specialist firm. It costs you nothing to ask, and there is no obligation.</p>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">Some estates are simple. Many are not: blended families, business assets, property abroad, pensions after April 2027. If you would like a professional to look at your situation, tell us a little about it and one of our estate planning specialists will take a look. It costs you nothing to ask, and there is no obligation.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">
-              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Get connected with a specialist</h3>
-              <LeadForm submitLabel="Get connected with a specialist" />
+              <h3 className="mb-4 text-xl font-bold text-neutral-900 sm:mb-6 sm:text-2xl">Speak to a specialist</h3>
+              <LeadForm submitLabel="Speak to a specialist" />
             </div>
           </div>
         </div>

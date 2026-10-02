@@ -16,7 +16,7 @@ export type Faq = { q: string; a: string };
 export const GENERIC: Faq[] = [
   {
     q: "Who replies to my question?",
-    a: "A specialist solicitors' accountant from our partner network, personally. Leave your email and a one-line question and you will get a considered answer rather than a sales call.",
+    a: "One of our specialist solicitors' accountants, personally. Leave your email and a one-line question and you will get a considered answer rather than a sales call.",
   },
   {
     q: "Is the first conversation free?",

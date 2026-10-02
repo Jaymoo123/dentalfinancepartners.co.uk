@@ -84,7 +84,7 @@ imageCredit:
 <p>Two questions decide everything. First, is the cost capital or revenue? Repairs are revenue expenses you deduct in full in the year. Capital expenditure either qualifies for a capital allowance or, if it does not, adds to the property's base cost for capital gains tax later. Our <a href="/blog/landlord-tax-essentials/capital-vs-revenue-expenditure-landlord-uk">capital vs revenue expenditure guide</a> walks through the HMRC tests that decide it. Second, and this is where most landlords go wrong, the rules turn sharply on the type of property. A residential buy-to-let is largely shut out of plant and machinery allowances by statute; a commercial building is wide open. The matrix below answers, at a glance, whether your property type qualifies and which allowance applies, and then routes you to the deeper guide on each mechanism.</p>
 
 <aside>
-<p>Not sure whether your fixtures qualify, or whether a past owner left allowances on the table? Our specialist partner firms run capital allowances reviews for landlords and commercial investors across the UK. Use the form on this page to be introduced.</p>
+<p>Not sure whether your fixtures qualify, or whether a past owner left allowances on the table? Our capital allowances specialists run reviews for landlords and commercial investors across the UK. Use the form on this page to get started.</p>
 </aside>
 
 <h2>Quick-Decision Matrix: Does Your Property Qualify?</h2>
@@ -280,7 +280,7 @@ imageCredit:
 <h2>When to Get Professional Advice</h2>
 <p>Capital allowances reward precision and punish guesswork. The areas where a specialist usually earns their place are buying or selling commercial property (the fixtures pooling and section 198 election), a block of flats or HMO with significant common-parts plant, a commercial-to-residential conversion, a large portfolio with material capital spend, and any second-hand building where the SBA allowance statement is missing.</p>
 <p>A specialist can identify qualifying assets a generic tax return would miss, build a defensible claim, and keep the interaction with Section 24, the SBA capital gains add-back and MTD clean. Note that Section 24, the restriction of residential mortgage interest to a 20% basic-rate credit, is a separate regime from capital allowances and should never be conflated with it.</p>
-<p>If you would like an introduction to a property tax specialist who handles capital allowances claims and reviews, use the form on this page and we will connect you with a partner firm suited to your portfolio.</p>
+<p>If you would like to speak to one of our property tax specialists about a capital allowances claim or review, use the form on this page and our team will come back to you.</p>
 
 <h2>Sources</h2>
 <ol>

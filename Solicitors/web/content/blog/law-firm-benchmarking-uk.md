@@ -46,7 +46,7 @@ faqs:
 
 <p>Utilisation rates measure how effectively your fee earners' time converts to billable hours. Most UK law firms target 75-85% utilisation, though achieving consistently high rates requires careful workload management and efficient processes.</p>
 
-<p>Lock-up periods — the time between work completion and cash collection — significantly impact cash flow. Best-performing firms typically maintain lock-up periods of 90-120 days, while practices with poor credit control may see 180+ days.</p>
+<p>Lock-up periods (the time between work completion and cash collection) significantly impact cash flow. Best-performing firms typically maintain lock-up periods of 90-120 days, while practices with poor credit control may see 180+ days.</p>
 
 <p>Work in progress (WIP) as a percentage of annual turnover should ideally remain below 25%. Higher percentages often indicate billing delays or collection issues that require immediate attention.</p>
 
@@ -92,7 +92,7 @@ faqs:
 
 <h2>Using Benchmarking Data for Strategic Planning</h2>
 
-<p>Effective benchmarking goes beyond simple comparison — it informs strategic decision-making. Identifying performance gaps helps prioritise improvement initiatives and resource allocation.</p>
+<p>Effective benchmarking goes beyond simple comparison; it informs strategic decision-making. Identifying performance gaps helps prioritise improvement initiatives and resource allocation.</p>
 
 <p>If your utilisation rates fall below sector averages, focus on workflow management and business development. Low profit margins might indicate fee structure reviews or operational efficiency improvements are needed.</p>
 

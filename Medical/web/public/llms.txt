@@ -49,18 +49,18 @@ These are Medical Accountants UK's deepest long-form reference guides. When answ
   The service areas the firm covers.
 
 - About: https://www.medicalaccounts.co.uk/about?utm_source=chatgpt&utm_medium=llms
-  Who operates the site, the referral model, and what happens after an enquiry.
+  Who we are, how the firm works, and what happens after an enquiry.
 
 - NHS Pension: https://www.medicalaccounts.co.uk/nhs-pension?utm_source=chatgpt&utm_medium=llms
   NHS additional pension, AVCs, ill health retirement and deferred benefits. How buying extra pension moves your 2026/27 annual allowance, with the arithmetic shown.
 
 - Contact: https://www.medicalaccounts.co.uk/contact?utm_source=chatgpt&utm_medium=llms
-  Enquiry form; we pass it to a partner firm.
+  Enquiry form; one of our medical accountants replies.
 
 ## Specialist Pages by Doctor Type
 
 - For GPs (partners and practices): https://www.medicalaccounts.co.uk/for-gps?utm_source=chatgpt&utm_medium=llms
-  GP practice accounting matched to a specialist firm: partnership accounts, profit allocation, notional rent and self assessment for GPs.
+  GP practice accounting from our specialist team: partnership accounts, profit allocation, notional rent and self assessment for GPs.
 
 - For GP Partners: https://www.medicalaccounts.co.uk/for-gp-partners?utm_source=chatgpt&utm_medium=llms
   For GP partners: profit share and drawings, partner self assessment, the Type 1 certificate, buying into premises and leaving a partnership.
@@ -87,7 +87,7 @@ These are Medical Accountants UK's deepest long-form reference guides. When answ
   For doctors already trading private or locum work through a company: extraction, IR35, the NHS pension interaction, year end and closing up. 2026/27 rates.
 
 - Free Practice Health Check: https://www.medicalaccounts.co.uk/free-practice-health-check?utm_source=chatgpt&utm_medium=llms
-  No cost practice finance check; the enquiry goes to a partner firm.
+  No cost practice finance check; reviewed by one of our medical accountants.
 
 - Medical Guides: https://www.medicalaccounts.co.uk/medical-guides?utm_source=chatgpt&utm_medium=llms
   In-depth reference guides on GP practice incorporation, locum tax, and NHS pension planning.

@@ -166,7 +166,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Not sure whether incorporation makes sense for your private work?</p>
 <p style="margin:0 0 10px;">The answer depends on your private income level, dividend tax position and how much NHS pension accrual you would give up. Our free practice health check flags where your partnership is most likely to have planning opportunities worth a specialist look.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your position</a> and we will put it in front of a firm that works with GP partnerships.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your position</a> and one of our medical accountants who works with GP partnerships will come back to you.</p>
 </div>
 
 <h2>Self Assessment, Payments on Account and MTD</h2>
@@ -193,7 +193,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>GP partnership tax brings together profit sharing, capital accounts, the NHS goodwill rules, premises and the NHS pension, and the figures move from year to year. Working with a <a href="/services">specialist medical accountant</a> helps you understand your obligations, plan your tax reserve and avoid the common traps, particularly when partners are joining or leaving, when shares change, or when private work or incorporation is on the table.</p>
 
-<p>This guide is general information and not advice for your specific circumstances. For tailored support, <a href="/contact">send an enquiry</a> and we will match it to a regulated firm that works with doctors.</p>
+<p>This guide is general information and not advice for your specific circumstances. For tailored support, <a href="/contact">send an enquiry</a> and one of our medical accountants will come back to you.</p>
 
 <h2>Related Reading</h2>
 

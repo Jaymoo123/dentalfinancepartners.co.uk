@@ -98,4 +98,4 @@ dateModified: "2026-08-21"
 
 <p>With the qualifying value on paper. Set it against £2.5 million, or £5 million if there are two of you, and you have the answer to the question most farming families are actually asking. Everything else on this page follows from where you sit against that figure.</p>
 
-<p><a href="/contact">Get in touch</a> with the acreage, what is let and what you are thinking of buying or selling, and we will tell you which of the four taxes is actually your problem and which of them you can stop worrying about. If your farm accountant already handles the accounts side, so much the better, because that is the half we do not do.</p>
+<p><a href="/contact">Get in touch</a> with the acreage, what is let and what you are thinking of buying or selling, and we will tell you which of the four taxes is actually your problem and which of them you can stop worrying about. If your farm accountant already handles the accounts side, we work alongside them on the tax.</p>

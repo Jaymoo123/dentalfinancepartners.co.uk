@@ -163,7 +163,7 @@ faqs:
 
 <p>The COFA must ensure that the firm's AML policies are implemented and that staff are trained. They are the first point of contact for the SRA's AML supervision team. If the SRA finds a breach, the COFA may face personal regulatory action if they failed to take reasonable steps to prevent it.</p>
 
-<p>Our <a href="/services/cofa-compliance-support">COFA compliance support</a> page is for solicitor firms that need help preparing for SRA AML inspections or updating their FWRA and PCPs: we connect you with a regulated firm in our specialist partner network that can review your documentation and identify gaps before the SRA does.</p>
+<p>Our <a href="/services/cofa-compliance-support">COFA compliance support</a> page is for solicitor firms that need help preparing for SRA AML inspections or updating their FWRA and PCPs: our team can review your documentation and identify gaps before the SRA does.</p>
 
 <h2>Penalties for Non-Compliance With SRA AML Supervision</h2>
 

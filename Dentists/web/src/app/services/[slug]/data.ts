@@ -46,7 +46,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "Dental accountants for UK practices, principals and associates",
       intro:
-        "Dentistry is the whole remit here. The work our partner network is set up for is NHS contract reporting, associate and locum tax, practice accounts, profit extraction and sale preparation. That focus is the point, because the decisions that cost a dentist money are rarely the ones a general tax checklist asks about.",
+        "Dentistry is the whole remit here. The work we are set up for is NHS contract reporting, associate and locum tax, practice accounts, profit extraction and sale preparation. That focus is the point, because the decisions that cost a dentist money are rarely the ones a general tax checklist asks about.",
     },
     sections: [
       {
@@ -75,7 +75,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "How a specialist firm differs from a corporate dental accountant",
         body: [
           "Accountancy firms differ in how the work is staffed. In some, the person who reviews the year-end and the person who answers the email are two different people, and the second one has to go and ask the first.",
-          "The firms in our partner network are built the other way round. The accountant who does the technical work on your account is the accountant you deal with directly, so an NHS contract letter or a buyer's diligence request goes to someone who already knows your numbers.",
+          "We are built the other way round. The accountant who does the technical work on your account is the accountant you deal with directly, so an NHS contract letter or a buyer's diligence request goes to someone who already knows your numbers.",
           "That is a decision about how the work is organised. It is not a promise about how fast anything is turned around, and you should ask any firm that contacts you what a realistic timetable looks like for the job in front of you.",
         ],
       },
@@ -120,7 +120,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Can you help with NHS Pension Scheme decisions?",
         answer:
-          "A specialist from our partner network models the financial impact of NHS Pension decisions: annual allowance interaction, tapered allowance at higher earnings, McCloud remedy implications for members with legacy 1995 or 2008 section benefits, and the dental retainer vs full membership choice. For regulated advice on accessing pension benefits they work alongside an FCA-authorised IFA.",
+          "One of our specialists models the financial impact of NHS Pension decisions: annual allowance interaction, tapered allowance at higher earnings, McCloud remedy implications for members with legacy 1995 or 2008 section benefits, and the dental retainer vs full membership choice. For regulated advice on accessing pension benefits they work alongside an FCA-authorised IFA.",
       },
     ],
     relatedServices: [
@@ -131,7 +131,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Talk to a dentist-only specialist",
     ctaBody:
-      "30-minute scoping call, no obligation. A specialist from our partner network will review your current position, flag the immediate opportunities, and tell you honestly whether they are the right fit.",
+      "30-minute scoping call, no obligation. One of our specialists will review your current position, flag the immediate opportunities, and tell you honestly whether we are the right fit.",
   },
 
   "practice-accounting": {
@@ -197,7 +197,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Do you use specific software (Xero, FreeAgent, QuickBooks)?",
         answer:
-          "Firms in our partner network work with whatever you currently use. Most dental practices run on Xero, and FreeAgent and QuickBooks are supported too. If you are still on spreadsheets, expect Xero to be recommended and the migration handled for you. The software matters less than the chart of accounts; that is what makes the dental-specific reporting possible.",
+          "We work with whatever you currently use. Most dental practices run on Xero, and FreeAgent and QuickBooks are supported too. If you are still on spreadsheets, expect Xero to be recommended and the migration handled for you. The software matters less than the chart of accounts; that is what makes the dental-specific reporting possible.",
       },
       {
         question: "Can you support multi-site dental groups?",
@@ -217,7 +217,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "See your practice in proper detail",
     ctaBody:
-      "Book a 30-minute call. A specialist from our partner network will look at your last set of accounts and tell you what the structure is hiding.",
+      "Book a 30-minute call. One of our specialists will look at your last set of accounts and tell you what the structure is hiding.",
   },
 
   "associate-tax": {
@@ -238,7 +238,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         body: [
           "Most dental associates are self-employed, work under a BDA-style model agreement, file self-assessment and claim expenses. That is the right shape for the majority of associate engagements.",
           "But HMRC and the tribunals have made clear that the paperwork alone does not determine status. They test the actual working arrangement against five factors: control, substitution, mutuality of obligation, financial risk, integration into the practice. If your day-to-day working arrangement looks like employment (fixed hours, no realistic substitution, practice-supplied materials, practice equipment, no real downside risk), the BDA model contract on file will not save you.",
-          "A specialist from our partner network reviews the working arrangement, not just the contract, and flags where status risk sits.",
+          "One of our specialists reviews the working arrangement, not just the contract, and flags where status risk sits.",
         ],
       },
       {
@@ -261,14 +261,14 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "Locum dentists working through a limited company",
         body: [
           "Limited-company locums working on NHS engagements have to confront the post-April-2021 IR35 rules: when the engaging practice is a medium or large client, the practice (not the locum's PSC) determines IR35 status. Inside-IR35 means PAYE-style deductions despite the company structure.",
-          "A specialist from our partner network models umbrella vs limited-company vs sole-trader for a locum dentist's specific income mix and engagement type. There is no single right answer; the right answer depends on the practices you work at, how they classify status, and how much of your work falls inside vs outside IR35.",
+          "One of our specialists models umbrella vs limited-company vs sole-trader for a locum dentist's specific income mix and engagement type. There is no single right answer; the right answer depends on the practices you work at, how they classify status, and how much of your work falls inside vs outside IR35.",
         ],
       },
       {
         heading: "NHS Pension scheme: still valuable, but watch the annual allowance",
         body: [
           "Many associates default into the NHS Pension Scheme and stay there without reviewing. The default is usually right, because the scheme remains one of the most valuable in the UK. But high-earning principals and high-earning associates with significant private income on top can hit the tapered annual allowance and trigger a tax charge.",
-          "A specialist from our partner network models pensionable pay against the tapered allowance threshold and flags where Scheme Pays may make sense. None of that is regulated pension advice; for transfer or access decisions they work with an FCA-authorised IFA.",
+          "One of our specialists models pensionable pay against the tapered allowance threshold and flags where Scheme Pays may make sense. None of that is regulated pension advice; for transfer or access decisions they work with an FCA-authorised IFA.",
         ],
       },
     ],
@@ -293,7 +293,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What about IR35 if I work through a limited company?",
         answer:
-          "Since 6 April 2021, when the engaging practice is a medium or large client (most are), the practice determines your IR35 status, not your PSC. If a practice tells you the engagement is inside IR35, you pay PAYE-style deductions despite the company structure. A specialist from our partner network will look at the determinations across your practices and model the realistic post-tax outcome before any structural decision.",
+          "Since 6 April 2021, when the engaging practice is a medium or large client (most are), the practice determines your IR35 status, not your PSC. If a practice tells you the engagement is inside IR35, you pay PAYE-style deductions despite the company structure. One of our specialists will look at the determinations across your practices and model the realistic post-tax outcome before any structural decision.",
       },
       {
         question: "Can I claim my dental school student loan interest as an expense?",
@@ -308,7 +308,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your associate return right",
     ctaBody:
-      "30-minute scoping call. A specialist from our partner network will look at your current self-assessment and tell you what you are missing.",
+      "30-minute scoping call. One of our specialists will look at your current self-assessment and tell you what you are missing.",
   },
 
   "practice-valuation": {
@@ -328,7 +328,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "How dental practices actually get valued",
         body: [
           "There are two common methods. Earnings-based valuation multiplies normalised EBITDA by a sector-and-region-specific multiple. Percentage-of-fee-income applies a percentage to the gross fee income. Some buyers use a hybrid.",
-          "Indicative 2025/26 UK dental ranges: roughly 0.6 to 0.9 times normalised EBITDA for NHS-heavy single-handed practices in lower-demand regions, roughly 0.9 to 1.2 for mixed multi-surgery practices in normal-demand areas, and roughly 1.1 to 1.4 for private-focused practices in high-demand regions, with corporate strategic premiums capable of sitting above that. Treat each as a range and date-tag it, because they move. A specialist from our partner network models both methods and reconciles them.",
+          "Indicative 2025/26 UK dental ranges: roughly 0.6 to 0.9 times normalised EBITDA for NHS-heavy single-handed practices in lower-demand regions, roughly 0.9 to 1.2 for mixed multi-surgery practices in normal-demand areas, and roughly 1.1 to 1.4 for private-focused practices in high-demand regions, with corporate strategic premiums capable of sitting above that. Treat each as a range and date-tag it, because they move. One of our specialists models both methods and reconciles them.",
           "Goodwill typically represents 60-80% of the total practice purchase price. Tangible assets (chairs, lights, X-ray, compressors, sterilisation) make up the balance.",
         ],
       },
@@ -387,7 +387,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "What's the difference between asset sale and share sale?",
         answer:
-          "Asset sale: the seller's company sells specific assets and goodwill to the buyer. Share sale: the buyer acquires the seller's company outright, and the NHS contract stays inside the company rather than needing novation with commissioner consent. The trade-off is risk, because on a share sale the buyer inherits the company's history including liabilities nobody surfaced, which is why buyers scope diligence differently on the two routes. Stamp taxes also differ between buying shares and buying premises. A specialist from our partner network models both structures against the buyer's preferred approach.",
+          "Asset sale: the seller's company sells specific assets and goodwill to the buyer. Share sale: the buyer acquires the seller's company outright, and the NHS contract stays inside the company rather than needing novation with commissioner consent. The trade-off is risk, because on a share sale the buyer inherits the company's history including liabilities nobody surfaced, which is why buyers scope diligence differently on the two routes. Stamp taxes also differ between buying shares and buying premises. One of our specialists models both structures against the buyer's preferred approach.",
       },
       {
         question: "What multiple should I expect on EBITDA?",
@@ -397,7 +397,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Do you handle the legal side of the sale?",
         answer:
-          "No, that needs a dental specialist solicitor. The firms in our partner network work alongside them, providing the financial work (valuation, EBITDA normalisation, tax structuring, post-completion reconciliation) while the solicitor handles the contract, completion accounts and legal due diligence.",
+          "No, that needs a dental specialist solicitor. Our accountants work alongside them, providing the financial work (valuation, EBITDA normalisation, tax structuring, post-completion reconciliation) while the solicitor handles the contract, completion accounts and legal due diligence.",
       },
     ],
     relatedServices: [
@@ -445,7 +445,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         heading: "IR35 for locum dentists: what changed in 2021",
         body: [
           "From 6 April 2021, when the engaging practice is a medium or large client (which most NHS practices and dental groups are), the practice determines IR35 status for the engagement, not the locum's PSC. If the practice issues a Status Determination Statement saying 'inside IR35', PAYE-style deductions apply on the fees despite the Ltd co structure.",
-          "In practice this means: a locum with five different practice engagements may have some engagements determined inside IR35 and others outside, with different tax treatment for each. A specialist from our partner network helps work out the realistic post-tax outcome before any structural decision, not after.",
+          "In practice this means: a locum with five different practice engagements may have some engagements determined inside IR35 and others outside, with different tax treatment for each. One of our specialists helps work out the realistic post-tax outcome before any structural decision, not after.",
         ],
       },
       {
@@ -474,7 +474,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Should I incorporate as a locum?",
         answer:
-          "Not automatically, and no single income figure decides it. Start with your engagement mix: since 6 April 2021 a medium or large practice issues the status determination, and every engagement it puts inside IR35 is taxed broadly as employment income regardless of the company. Then the NHS Pension position, which is more restrictive for a company locum than for a sole-trader locum on the practitioner route. Then, last, the tax arithmetic, which at 2026/27 dividend rates is a smaller factor than either of the first two. A specialist from our partner network runs all three on your numbers before recommending anything.",
+          "Not automatically, and no single income figure decides it. Start with your engagement mix: since 6 April 2021 a medium or large practice issues the status determination, and every engagement it puts inside IR35 is taxed broadly as employment income regardless of the company. Then the NHS Pension position, which is more restrictive for a company locum than for a sole-trader locum on the practitioner route. Then, last, the tax arithmetic, which at 2026/27 dividend rates is a smaller factor than either of the first two. One of our specialists runs all three on your numbers before recommending anything.",
       },
       {
         question: "Can I access the NHS Pension Scheme as a locum?",
@@ -499,7 +499,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     ],
     ctaHeading: "Get your locum structure right",
     ctaBody:
-      "Book a 30-minute scoping call. A specialist from our partner network will model your income against all three structures and tell you which one wins on real numbers.",
+      "Book a 30-minute scoping call. One of our specialists will model your income against all three structures and tell you which one wins on real numbers.",
   },
 };
 

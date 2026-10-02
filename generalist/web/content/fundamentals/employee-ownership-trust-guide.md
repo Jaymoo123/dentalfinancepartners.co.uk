@@ -223,7 +223,7 @@ faqs:
 <p>The right way to decide is not on a headline, old or new, but on your own modelled numbers, comparing the EOT against a trade sale and any other route, on tax and on everything else. Because BADR planning and CGT modelling on exit are core accountant work, this is exactly where having the figures run before you sign heads of terms pays for itself. For the general CGT and BADR mechanics that sit behind these numbers, see our <a href="/resources/exit-cgt">selling your business CGT and BADR guide</a>, our fundamentals on <a href="/fundamentals/business-asset-disposal-relief-explained">Business Asset Disposal Relief</a>, and the detail of the rate change in our post on the <a href="/blog/exit-and-capital-gains/badr-2026-rate-change">BADR 2026 rate change</a>.</p>
 
 <aside>
-<p>An EOT is unregulated exit and succession advice, which we are happy to provide, and we can bring in an accountant to model the new 50% CGT charge and your BADR position before you commit. Please note we do not arrange, source or introduce the finance that funds a buyout: that is regulated credit-broking and is handled by an authorised commercial finance broker. To talk through your exit, <a href="/contact">get in touch</a>.</p>
+<p>An EOT is unregulated exit and succession advice, which we are happy to provide, and we model the new 50% CGT charge and your BADR position before you commit. Please note we do not arrange, source or introduce the finance that funds a buyout: that is regulated credit-broking and is handled by an authorised commercial finance broker. To talk through your exit, <a href="/contact">get in touch</a>.</p>
 </aside>
 
 <h2>Where to read next and primary sources</h2>

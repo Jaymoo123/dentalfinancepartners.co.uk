@@ -44,7 +44,7 @@ faqs:
   - question: "What is the best tax planning for HMO landlords?"
     answer: "Sensible HMO tax planning starts with claiming every allowable revenue cost correctly, getting the repair versus improvement line right, and using Replacement of Domestic Items Relief on furnishings. From there it can include reviewing ownership structure (personal versus limited company in light of Section 24), spreading licence renewals across tax years, timing larger works, and making sure you are MTD-ready. The right answer depends on your marginal rate, borrowing and long-term plans, so it is worth a specialist review."
   - question: "Where can I get tax advice for HMO landlords?"
-    answer: "Property Tax Partners works with HMO landlords on income and expense computation, Section 24 modelling, incorporation decisions, MTD readiness and disposals. You can request a free, no-obligation consultation through the form on this page and we will connect you with a specialist property tax adviser."
+    answer: "Property Tax Partners works with HMO landlords on income and expense computation, Section 24 modelling, incorporation decisions, MTD readiness and disposals. You can request a free, no-obligation consultation through the form on this page and one of our specialist property tax advisers will come back to you."
 ---
 
 <p>Houses in Multiple Occupation (HMOs) sit under the same income tax framework as any other residential let, but the day-to-day mechanics are different enough to trip up even experienced landlords. Multiple rooms, mixed occupancy, inclusive rent, communal running costs and HMO-specific compliance all change how you work out taxable income and what you can deduct.</p>

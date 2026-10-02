@@ -59,11 +59,11 @@ faqs:
 
 <h2>SRA Compliance and Client Money Expertise</h2>
 
-<p>The SRA Accounts Rules aren't just another compliance requirement — they're fundamental to how your practice operates. A <strong>solicitor accountant</strong> ensures your systems meet these rules while supporting efficient practice management.</p>
+<p>The SRA Accounts Rules aren't just another compliance requirement; they're fundamental to how your practice operates. A <strong>solicitor accountant</strong> ensures your systems meet these rules while supporting efficient practice management.</p>
 
 <p>This includes understanding when client money can be drawn, how to handle mixed receipts, and the specific record-keeping requirements that satisfy both the SRA and HMRC. Many general accountants struggle with these dual requirements.</p>
 
-<p>Your solicitor accountant should also help with the annual Accountant's Report, ensuring your systems and controls meet SRA standards. This isn't just about compliance — it's about protecting your practice from regulatory issues that could affect your ability to operate.</p>
+<p>Your solicitor accountant should also help with the annual Accountant's Report, ensuring your systems and controls meet SRA standards. This isn't just about compliance; it's about protecting your practice from regulatory issues that could affect your ability to operate.</p>
 
 <h2>Specialist Tax Planning for Legal Practices</h2>
 
@@ -94,7 +94,7 @@ faqs:
 
 <p>A specialist solicitor accountant helps you evaluate these options properly. They understand how different structures affect tax liabilities, profit extraction, and regulatory compliance under SRA rules.</p>
 
-<p>This expertise becomes crucial during practice transitions — bringing in new partners, managing retiring partners, or considering practice sales. These transactions have specific tax and regulatory implications that require specialist knowledge.</p>
+<p>This expertise becomes crucial during practice transitions: bringing in new partners, managing retiring partners, or considering practice sales. These transactions have specific tax and regulatory implications that require specialist knowledge.</p>
 
 <h2>Beyond Basic Compliance</h2>
 
@@ -126,11 +126,11 @@ faqs:
 <p>A specialist <strong>accountant for solicitors</strong> understands these key areas:</p>
 
 <ul>
-<li><strong>SRA Accounts Rules compliance</strong> — proper handling of client money, office money separation, and regulatory reporting</li>
-<li><strong>Trust accounting</strong> — managing client funds, interest calculations, and reconciliation procedures</li>
-<li><strong>Partnership taxation</strong> — basis period reform impacts, profit allocation, and tax planning strategies</li>
-<li><strong>Practice cash flow</strong> — work-in-progress management, lock-up reduction, and billing optimization</li>
-<li><strong>VAT on legal services</strong> — disbursements treatment, partial exemption issues, and reverse charge procedures</li>
+<li><strong>SRA Accounts Rules compliance</strong>: proper handling of client money, office money separation, and regulatory reporting</li>
+<li><strong>Trust accounting</strong>: managing client funds, interest calculations, and reconciliation procedures</li>
+<li><strong>Partnership taxation</strong>: basis period reform impacts, profit allocation, and tax planning strategies</li>
+<li><strong>Practice cash flow</strong>: work-in-progress management, lock-up reduction, and billing optimization</li>
+<li><strong>VAT on legal services</strong>: disbursements treatment, partial exemption issues, and reverse charge procedures</li>
 </ul>
 
 <h2>Essential Services Your Solicitor Accountant Must Provide</h2>
@@ -169,7 +169,7 @@ faqs:
 
 <h3>Proactive Communication</h3>
 
-<p>The best <strong>accountant for solicitors</strong> doesn't just respond to questions — they anticipate issues and provide regular updates on regulatory changes, tax deadlines, and practice improvement opportunities.</p>
+<p>The best <strong>accountant for solicitors</strong> doesn't just respond to questions; they anticipate issues and provide regular updates on regulatory changes, tax deadlines, and practice improvement opportunities.</p>
 
 <p>Look for accountants who provide quarterly business reviews, regular compliance updates, and proactive tax planning advice.</p>
 
@@ -243,7 +243,7 @@ faqs:
 
 <p>Regular reviews of your accounting arrangements ensure your accountant continues to meet your needs as regulatory requirements change and your practice develops new service areas or expands into different markets.</p>
 
-<p>For comprehensive specialist accounting services tailored to legal practices, explore our <a href="/services">services</a> or <a href="/contact">contact</a> us to discuss your specific requirements. We understand the unique challenges facing solicitors, and we connect you with regulated accountancy firms in our specialist partner network that provide the support your practice needs to thrive.</p>
+<p>For comprehensive specialist accounting services tailored to legal practices, explore our <a href="/services">services</a> or <a href="/contact">contact</a> us to discuss your specific requirements. We understand the unique challenges facing solicitors, and our team of specialist accountants provides the support your practice needs to thrive.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

@@ -67,10 +67,6 @@ export default async function ThankYouPage({
             work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs
             that level of advice, it may be their team who contacts you.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-500">
-            As we set out on the contact form, we may receive a fee from the firm we introduce you
-            to if you use their services. It does not change what you pay.
-          </p>
 
           {bookingToken ? (
             <div className="mt-10 border border-neutral-200 bg-neutral-50 p-6 shadow-sm">

@@ -52,7 +52,7 @@ faqs:
 
 <h3>1. Normalised profit (the largest component)</h3>
 
-<p>The profit number used in the multiple is "normalised" — adjusted for items that the post-sale buyer can't replicate or that distort the underlying earning power. The main normalisations:</p>
+<p>The profit number used in the multiple is "normalised": adjusted for items that the post-sale buyer can't replicate or that distort the underlying earning power. The main normalisations:</p>
 
 <ul>
 <li><strong>Equity partner drawings normalised to market salary</strong>. A buyer needs to pay someone to do the partner's fee-earning work post-sale. The cost of that replacement (typically £80,000-£120,000 for a senior fee-earner outside top-tier London) is treated as a real cost; the partner's existing profit share above that figure is added back.</li>
@@ -61,7 +61,7 @@ faqs:
 <li><strong>Related-party transactions at arm's length</strong>. Premises rent to a partner-owned property company adjusted to market rate; intra-group recharges normalised.</li>
 </ul>
 
-<p>The normalisation typically swings the headline profit by 10 to 20 percent. Because the multiple sits between 1 and 3, the normalised profit swing translates to a 10-60 percent valuation swing — far more impactful than the choice of multiple itself.</p>
+<p>The normalisation typically swings the headline profit by 10 to 20 percent. Because the multiple sits between 1 and 3, the normalised profit swing translates to a 10-60 percent valuation swing, far more impactful than the choice of multiple itself.</p>
 
 <h3>2. The multiple (the headline variable)</h3>
 
@@ -90,13 +90,13 @@ faqs:
 
 <h3>4. Tangible assets</h3>
 
-<p>Net book value of computers, fit-out, furniture, any vehicles, and (rarely) freehold premises. For a typical mid-market firm, tangible assets are £30,000-£150,000 — a small component of the total price. The exception is firms with freehold premises being sold together with the practice; in that case the premises value (often £500,000-£2m+ depending on location) dominates the tangibles.</p>
+<p>Net book value of computers, fit-out, furniture, any vehicles, and (rarely) freehold premises. For a typical mid-market firm, tangible assets are £30,000-£150,000, a small component of the total price. The exception is firms with freehold premises being sold together with the practice; in that case the premises value (often £500,000-£2m+ depending on location) dominates the tangibles.</p>
 
 <h2>Deal structures: asset purchase vs share purchase</h2>
 
 <h3>Asset purchase (the typical structure)</h3>
 
-<p>The buyer acquires the goodwill, WIP, equipment, and the right to take over client matters via novation. The seller's LLP or partnership remains in existence until the partners formally dissolve it. The buyer doesn't inherit historic liabilities (PII claims, employment disputes, contractual obligations to ex-partners) — those stay with the original entity.</p>
+<p>The buyer acquires the goodwill, WIP, equipment, and the right to take over client matters via novation. The seller's LLP or partnership remains in existence until the partners formally dissolve it. The buyer doesn't inherit historic liabilities (PII claims, employment disputes, contractual obligations to ex-partners); those stay with the original entity.</p>
 
 <p>Asset purchase is the dominant structure for LLPs and partnerships because the LLP itself isn't a transferable share-based asset (members hold an interest, not shares).</p>
 
@@ -112,15 +112,15 @@ faqs:
 
 <ul>
 <li><strong>50-70% cash at completion</strong>, funded by buyer equity plus bank financing. The major UK banks all have legal-sector lending teams; loan-to-value of 60-75 percent is achievable for established firms with reliable EBITDA.</li>
-<li><strong>20-40% deferred consideration</strong> paid over 2-3 years. Tied to revenue retention or partner stay — protects the buyer if the client base or key fee-earners leave post-completion.</li>
+<li><strong>20-40% deferred consideration</strong> paid over 2-3 years. Tied to revenue retention or partner stay, which protects the buyer if the client base or key fee-earners leave post-completion.</li>
 <li><strong>10-20% earn-out</strong> tied to specific profit targets in years 1-2. Earn-outs are tax-efficient for the seller (capital treatment if structured correctly) and risk-mitigating for the buyer.</li>
 </ul>
 
-<p>For a £3,000,000 headline deal, a typical structure might be: £1.8m cash at completion (60%), £750k deferred over 24 months (25%), £450k earn-out tied to year-1 EBITDA (15%). The buyer's day-1 financing requirement is therefore £1.8m — covered by say £700k equity plus £1.1m bank lending.</p>
+<p>For a £3,000,000 headline deal, a typical structure might be: £1.8m cash at completion (60%), £750k deferred over 24 months (25%), £450k earn-out tied to year-1 EBITDA (15%). The buyer's day-1 financing requirement is therefore £1.8m, covered by say £700k equity plus £1.1m bank lending.</p>
 
 <h2>The regulatory work running alongside</h2>
 
-<p>SRA notification is required within 7 days of any material change in ownership. New COFA / COLP appointments need separate SRA notification. Client matter novation requires either bulk consent letters (for high-volume practices like residential conveyancing) or bespoke client communications (for sensitive matters in personal injury, family or criminal). PII continuity must hold from the moment of completion — see our pillar guide on <a href="/solicitor-guides/post-merger-integration">post-merger integration</a> for the 90-day playbook.</p>
+<p>SRA notification is required within 7 days of any material change in ownership. New COFA / COLP appointments need separate SRA notification. Client matter novation requires either bulk consent letters (for high-volume practices like residential conveyancing) or bespoke client communications (for sensitive matters in personal injury, family or criminal). PII continuity must hold from the moment of completion; see our pillar guide on <a href="/solicitor-guides/post-merger-integration">post-merger integration</a> for the 90-day playbook.</p>
 
 <h2>What the buyer pays in total</h2>
 
@@ -134,11 +134,11 @@ faqs:
 <li>Goodwill amortisation tracking and corporation tax adjustment for the acquired goodwill</li>
 </ul>
 
-<p>For a £3m deal, total transaction costs typically add 2-4 percent of the headline price. Compared to the strategic value of getting the deal right, these costs are small — but they should be in the budget from day 1.</p>
+<p>For a £3m deal, total transaction costs typically add 2-4 percent of the headline price. Compared to the strategic value of getting the deal right, these costs are small, but they should be in the budget from day 1.</p>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. An acquisition support engagement with that firm covers the buyer's financial work:</p>
+<p>An acquisition support engagement with our team covers the buyer's financial work:</p>
 
 <ul>
 <li>Pre-offer financial due diligence on the target firm's accounts, WIP, and management information</li>
@@ -148,8 +148,8 @@ faqs:
 <li>Post-completion 90-day integration project management</li>
 </ul>
 
-<p>The regulatory solicitor handles SRA-side filings, client novation letters and partnership agreement updates; the partner firm works alongside them.</p>
+<p>The regulatory solicitor handles SRA-side filings, client novation letters and partnership agreement updates; our team works alongside them.</p>
 
 <p>For a quick read on the typical 90-day playbook after completion, see our <a href="/solicitor-guides/post-merger-integration">post-merger integration pillar guide</a>. For an indicative valuation of any specific firm, the <a href="/calculators/law-firm-valuation">law firm valuation calculator</a> gives a directional number on your inputs.</p>
 
-<p>If you're in due diligence on a specific firm or planning an offer in the next 6 months, book a 30-minute scoping call below. We confirm scope and introduce the partner firm, which builds the work plan and quotes its engagement fee.</p>
+<p>If you're in due diligence on a specific firm or planning an offer in the next 6 months, book a 30-minute scoping call below. We confirm scope, build the work plan and quote the engagement fee.</p>

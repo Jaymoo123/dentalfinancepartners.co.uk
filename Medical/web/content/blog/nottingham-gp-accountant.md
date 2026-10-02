@@ -32,7 +32,7 @@ faqs:
   - question: "When should a Nottingham doctor speak to a specialist medical accountant?"
     answer: "Good trigger points are becoming a GP partner, starting private or medico-legal work, income crossing £100,000 (where the personal allowance tapers), a possible NHS pension annual allowance charge, or considering incorporating private work. Earlier is usually cheaper than later, because pension and basis-period planning works best before the tax year ends, not after."
   - question: "Can a Nottingham GP incorporate their practice to save tax?"
-    answer: "Not the NHS practice. A doctor's ordinary personal service company cannot hold a GMS or PMS contract, and income routed through a company is not NHS pensionable, so incorporation is a private-work decision only (medico-legal, occupational health, self-pay clinics, or outside-IR35 locum work). Any tax saving must be weighed against the loss of NHS pension accrual on that income. Both sides need modelling before you decide, which is what a specialist firm does with your figures."
+    answer: "Not the NHS practice. A doctor's ordinary personal service company cannot hold a GMS or PMS contract, and income routed through a company is not NHS pensionable, so incorporation is a private-work decision only (medico-legal, occupational health, self-pay clinics, or outside-IR35 locum work). Any tax saving must be weighed against the loss of NHS pension accrual on that income. Both sides need modelling before you decide, which is what our medical accountants do with your figures."
   - question: "What expenses can a Nottingham GP or locum claim for 2026/27?"
     answer: "Allowable costs include medical indemnity (MDU, MPS or MDDUS) for private and non-clinical work, the GMC retention fee, relevant Royal College subscriptions on HMRC List 3, the BMA subscription (relieved at 85% of the annual amount under its List 3 entry), genuine CPD, equipment (usually via the Annual Investment Allowance), and business mileage between sites at 55p per mile for the first 10,000 business miles in 2026/27 (then 25p). Note that NHS GP clinical negligence in England is covered by CNSGP at no subscription, so your own indemnity is mainly for private and non-clinical cover."
 ---
@@ -148,7 +148,7 @@ faqs:
 
 <h2>Getting started</h2>
 
-<p>The usual first step is an initial conversation about your role, your NHS pension position, and any private work, so the immediate planning opportunities get flagged. To talk it through, <a href="/contact">send an enquiry</a> and we will match it to a regulated firm that works with doctors. We publish on medical and GP accounting only, and the issues facing Nottingham doctors across the NHS and private sectors are the ones these pages are written for.</p>
+<p>The usual first step is an initial conversation about your role, your NHS pension position, and any private work, so the immediate planning opportunities get flagged. To talk it through, <a href="/contact">send an enquiry</a> and one of our medical accountants will come back to you. We work on medical and GP accounting only, and the issues facing Nottingham doctors across the NHS and private sectors are the ones these pages are written for.</p>
 
 <h2>Related reading</h2>
 

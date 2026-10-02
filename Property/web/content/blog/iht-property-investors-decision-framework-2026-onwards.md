@@ -176,7 +176,7 @@ editorialNote: "Wave 2 pillar for IHT decision-led pages. Companion to the descr
 
 <aside>
 <p>The matrix gets you to a starting hypothesis, not a final plan.</p>
-<p>Property Tax Partners can introduce you to a specialist estate-planning advisor for the detailed work. Get in touch through the form at the foot of the page.</p>
+<p>Property Tax Partners handles the detailed estate-planning work. Get in touch through the form at the foot of the page.</p>
 </aside>
 
 <h2>Trigger events that should force a re-plan</h2>

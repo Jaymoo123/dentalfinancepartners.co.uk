@@ -77,11 +77,9 @@ export default function ContactPage() {
                 What happens after you send it
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
-                Your enquiry goes to our specialist partner network rather than to a single in-house team.
-                Firms are first shown a short summary with your name and contact details removed, and only a
-                firm that decides it can help receives your details in full. At most six firms may receive
-                them, and often fewer. Whichever firm contacts you will tell you who they are and give you
-                their own privacy information at that point.
+                Your enquiry goes straight to our dental accounting team. One of our specialists reads it, and
+                the accountant best placed to help will call or email you to arrange a short first
+                conversation. Nothing to prepare, and no obligation.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
                 Everything we share, and how to object, is set out in our{" "}

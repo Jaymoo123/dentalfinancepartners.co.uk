@@ -30,7 +30,7 @@ faqs:
     answer: "Bank overdrafts remain the most common solution for short-term working capital needs. For longer-term requirements, consider term loans, invoice discounting against debtors, or increasing partner capital contributions. Some firms use asset-based lending against work in progress, though this requires careful structuring to maintain SRA compliance. Speak to a specialist solicitor accountant to explore options suitable for your practice structure."
 ---
 
-<p>Solicitor practice working capital represents the lifeblood of your law firm's day-to-day operations. It's the difference between your current assets and current liabilities — essentially the cash and resources available to meet your immediate obligations and invest in growth opportunities.</p>
+<p>Solicitor practice working capital represents the lifeblood of your law firm's day-to-day operations. It's the difference between your current assets and current liabilities: essentially the cash and resources available to meet your immediate obligations and invest in growth opportunities.</p>
 
 <p>For UK law firms, managing working capital effectively determines whether you can pay staff salaries, cover office rent, and maintain operations while waiting for client payments. Poor working capital management has forced many profitable firms into administration.</p>
 

@@ -141,7 +141,7 @@ faqs:
 <li><strong>Keep your annual benefit statement.</strong> NHS Pensions issues an annual benefit statement showing your pension input amount. Review this each year to check whether you are approaching the annual allowance.</li>
 <li><strong>Plan for carry forward.</strong> If you have a high-earning year, check whether you have unused annual allowance from the previous three years. Carry forward can save you from a tax charge.</li>
 <li><strong>Consider the interaction with private pensions.</strong> If you also contribute to a SIPP or other private pension, the combined pension input amounts across all schemes count towards the annual allowance. Do not assume the NHS scheme is the only one that matters.</li>
-<li><strong>Use a dental-specialist accountant.</strong> The interaction between NHS superannuation, Self Assessment, and the annual allowance is complex, and a general accountant may miss the nuances. If you want an introduction, see <a href="/services/associate-tax">associate tax</a> and contact our team.</li>
+<li><strong>Use a dental-specialist accountant.</strong> The interaction between NHS superannuation, Self Assessment, and the annual allowance is complex, and a general accountant may miss the nuances. If you want help with it, see <a href="/services/associate-tax">associate tax</a> and contact our team.</li>
 </ul>
 
 <h2>Common Questions About NHS Superannuation Tax Relief</h2>
@@ -164,4 +164,4 @@ faqs:
 
 <p>The rules around the tapered annual allowance and carry forward are where most mistakes happen. If your earnings are above £200,000 or you have a large NHS pension input amount, get professional advice before the tax year ends. Planning ahead can save you thousands in unexpected tax charges.</p>
 
-<p>For a full review of your tax position as a dental associate, including NHS superannuation relief, book a <a href="/free-practice-health-check">free practice health check</a>, and we will introduce you to a specialist dental accountant from our partner network.</p>
+<p>For a full review of your tax position as a dental associate, including NHS superannuation relief, book a <a href="/free-practice-health-check">free practice health check</a> with one of our specialist dental accountants.</p>

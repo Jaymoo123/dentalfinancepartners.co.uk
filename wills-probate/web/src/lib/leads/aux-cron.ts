@@ -268,7 +268,7 @@ export async function runLeadAuxScans(): Promise<{ reminders: number; nudges: nu
                 greeting: `Hi ${firstName},`,
                 paragraphs: [
                   `Your free probate review call is tomorrow, ${windowPhrase}.`,
-                  "The partner firm we introduce you to will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
+                  "One of our estate planning specialists will ring you then. They will have read your enquiry before they call, the call takes about 20 minutes, and there is nothing to prepare.",
                   "If the time no longer works, just reply to this email and we will move it to one that does.",
                 ],
                 signoff: SIGNOFF,

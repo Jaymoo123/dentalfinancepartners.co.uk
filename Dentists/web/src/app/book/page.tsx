@@ -32,8 +32,8 @@ export default async function BookPage({
             Book your free review call
           </h1>
           <p className="mt-4 text-center text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-            Pick a day and a time window that suits you. A dental accountant from our specialist partner
-            network will call you then, no obligation.
+            Pick a day and a time window that suits you. A dental accountant from our team
+            will call you then, no obligation.
           </p>
           <div className="mt-10">
             {token ? (

@@ -122,7 +122,7 @@ keyTakeaways:
 
 <p>We are not a general-interest publisher that happens to cover a few charities. Our editorial coverage is built around churches and other faith-based organisations, and the pressures that come with them: balancing mission with financial stewardship, managing volunteer treasurers, and maintaining transparency with your congregation.</p>
 
-<p>Everything here is written against current Charity Commission, OSCR, CCNI and HMRC guidance, and we cover the rules for England, Wales, Scotland and Northern Ireland separately, because they differ. Where you want the filing done rather than explained, the call puts you in front of a qualified accountant on our partner team.</p>
+<p>Everything here is written against current Charity Commission, OSCR, CCNI and HMRC guidance, and we cover the rules for England, Wales, Scotland and Northern Ireland separately, because they differ. Where you want the filing done rather than explained, the call puts you in front of one of our accountants.</p>
 
 <p>If you are looking for an <strong>accountant for churches</strong>, we would welcome a conversation. <a href="/contact">Contact us</a> to discuss your church's needs. We start with a free, no-obligation call to work out what you actually need.</p>
 

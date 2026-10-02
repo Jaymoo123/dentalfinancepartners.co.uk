@@ -83,8 +83,7 @@ export default async function CompletePage({
           <div className="border border-orange-200 bg-orange-50 p-6 text-center">
             <p className="text-lg font-bold text-slate-900">You are all set</p>
             <p className="mt-2 text-base text-slate-700">
-              We have everything we need. A vetted regulated firm from our partner network will
-              contact you directly. If you would like to pick a time that suits you, you can book
+              We have everything we need. A divorce finance specialist will be in touch shortly. If you would like to pick a time that suits you, you can book
               a callback below.
             </p>
             {bookingToken && (
@@ -108,7 +107,7 @@ export default async function CompletePage({
             Complete your details
           </h1>
           <p className="mt-4 text-center text-lg leading-relaxed text-slate-700">
-            Add the last detail we need and a vetted regulated firm from our partner network will
+            Add the last detail we need and one of our divorce finance specialists will
             be in touch to arrange your free review, no obligation.
           </p>
           <div className="mt-10">{inner}</div>

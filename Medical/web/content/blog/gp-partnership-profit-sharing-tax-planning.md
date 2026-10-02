@@ -144,7 +144,7 @@ faqs:
 
 <h2>Getting it right with specialist advice</h2>
 
-<p>GP partnership profit allocation sits at the intersection of partnership law, income tax, National Insurance, the NHS pension annual allowance and the premises return. A specialist medical accountant can model different allocation scenarios, show each partner's after-tax and after-pension position, and make sure the deed, the SA800 and each partner's SA104 line up. <a href="/contact">Send us your position</a> and we will match it to a specialist firm if you want your partnership's profit-sharing arrangement reviewed before the next year-end.</p>
+<p>GP partnership profit allocation sits at the intersection of partnership law, income tax, National Insurance, the NHS pension annual allowance and the premises return. A specialist medical accountant can model different allocation scenarios, show each partner's after-tax and after-pension position, and make sure the deed, the SA800 and each partner's SA104 line up. <a href="/contact">Send us your position</a> if you want our team to review your partnership's profit-sharing arrangement before the next year-end.</p>
 
 <h2>Related reading</h2>
 

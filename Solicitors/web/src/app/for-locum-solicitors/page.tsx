@@ -42,13 +42,13 @@ const data: AudienceStage = {
     },
     {
       title: "I work for multiple firms. What changes?",
-      body: "Different firms may issue different IR35 determinations for similar work. Travel between firms is deductible (not home-to-first-firm). Apportioning materials, motor and overhead by engagement matters for accurate tax. Your partner firm maps each engagement against the right structure.",
+      body: "Different firms may issue different IR35 determinations for similar work. Travel between firms is deductible (not home-to-first-firm). Apportioning materials, motor and overhead by engagement matters for accurate tax. We map each engagement against the right structure.",
     },
   ],
   services: [
     {
       title: "Structure comparison: Ltd vs umbrella vs sole-trader",
-      body: "Your partner firm models your specific income mix against all three structures: take-home after tax + NI, administrative cost, PII availability, IR35 implications. Output is a one-page comparison with a recommended structure and reasoning.",
+      body: "We model your specific income mix against all three structures: take-home after tax + NI, administrative cost, PII availability, IR35 implications. Output is a one-page comparison with a recommended structure and reasoning.",
     },
     {
       title: "Annual self-assessment for sole-trader consultants",
@@ -56,15 +56,15 @@ const data: AudienceStage = {
     },
     {
       title: "Limited company accounting for PSC consultants",
-      body: "Annual statutory accounts, corporation tax return, personal director self-assessment, PSC payroll for the salary leg, dividend administration, IR35 status tracking per engagement. Your partner firm handles each component, or just the parts you need.",
+      body: "Annual statutory accounts, corporation tax return, personal director self-assessment, PSC payroll for the salary leg, dividend administration, IR35 status tracking per engagement. We handle each component, or just the parts you need.",
     },
     {
       title: "IR35 status review per engagement",
-      body: "When a firm issues a Status Determination Statement, your partner firm reviews whether it's correctly issued. Most are; some are not. Where the determination is challengeable they support the appeal. Where it stands, they restructure the income flow to reflect the deduction.",
+      body: "When a firm issues a Status Determination Statement, we review whether it's correctly issued. Most are; some are not. Where the determination is challengeable we support the appeal. Where it stands, we restructure the income flow to reflect the deduction.",
     },
     {
       title: "Mortgage-ready accounts",
-      body: "Lenders want SA302s with consistent income for sole-trader consultants or 2 years of company accounts for Ltd-co consultants. Your partner firm produces both, and we work with the legal-sector-friendly mortgage advisers who lend on professional income.",
+      body: "Lenders want SA302s with consistent income for sole-trader consultants or 2 years of company accounts for Ltd-co consultants. We produce both, and we work with the legal-sector-friendly mortgage advisers who lend on professional income.",
     },
   ],
   faqs: [
@@ -91,7 +91,7 @@ const data: AudienceStage = {
   ],
   ctaTitle: "Get your consultant structure right",
   ctaBody:
-    "30-minute scoping call. We put you with a partner firm that runs the Ltd vs umbrella vs sole-trader comparison on your specific income and engagement mix and tells you which one wins on real numbers.",
+    "30-minute scoping call. We run the Ltd vs umbrella vs sole-trader comparison on your specific income and engagement mix and tell you which one wins on real numbers.",
   relatedGuides: [
     {
       href: "/blog/sole-practitioner-tax/sole-practitioner-solicitor-tax-guide",

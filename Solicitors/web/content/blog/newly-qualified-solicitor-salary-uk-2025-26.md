@@ -229,4 +229,4 @@ schema: ''
 <li>You're approaching partnership and want to plan for the structural change in tax treatment</li>
 </ul>
 
-<p>For most NQs, a one-off 30-minute call at the qualification jump is sufficient. On that call the partner firm we match you with models the pension contribution decision, salary sacrifice availability, and the year-1 self-assessment requirement. For ongoing tax support for senior solicitors and partners, see our <a href="/for-partners">For partners</a> service page. For junior associates building investment portfolios alongside qualifying, see our <a href="/for-junior-solicitors">For junior solicitors</a> page.</p>
+<p>For most NQs, a one-off 30-minute call at the qualification jump is sufficient. On that call one of our specialists models the pension contribution decision, salary sacrifice availability, and the year-1 self-assessment requirement. For ongoing tax support for senior solicitors and partners, see our <a href="/for-partners">For partners</a> service page. For junior associates building investment portfolios alongside qualifying, see our <a href="/for-junior-solicitors">For junior solicitors</a> page.</p>

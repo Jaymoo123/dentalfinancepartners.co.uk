@@ -129,7 +129,7 @@ faqs:
 <p>Set those costs against the economics. On a substantial sale the setup fee is small next to the transaction and the tax at stake, and the £3,600-per-year income-tax-free employee bonus that an EOT-controlled company can pay is a lasting benefit. But an EOT is not a cheap way to sell a small company, and if the numbers are modest the fixed costs weigh more heavily. Weigh it against a straight trade sale, where BADR at 18% on the first £1,000,000 of gain may leave you better off overall now that the EOT relief is only 50%.</p>
 
 <aside>
-<p><strong>Deciding between an EOT and a trade sale after the 50% cut?</strong> The route with the lowest tax is not always obvious now. We model both against your real numbers and bring in an accountant for the CGT and BADR planning. Get in touch below to book an exit tax review.</p>
+<p><strong>Deciding between an EOT and a trade sale after the 50% cut?</strong> The route with the lowest tax is not always obvious now. We model both against your real numbers and handle the CGT and BADR planning. Get in touch below to book an exit tax review.</p>
 </aside>
 
 <h2>Common mistakes to avoid</h2>
@@ -149,4 +149,4 @@ faqs:
 
 <p>Reading and legislation used in this guide: HMRC's <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg67800">Capital Gains Manual on EOT relief (CG67800 onwards)</a>; the EOT CGT relief in <a href="https://www.legislation.gov.uk/ukpga/1992/12">TCGA 1992 sections 236H to 236U</a>, inserted by <a href="https://www.legislation.gov.uk/ukpga/2014/26/schedule/37">Finance Act 2014, Schedule 37</a>; the <a href="https://www.gov.uk/government/collections/autumn-budget-2025-tax-related-documents">Autumn Budget 2025 measures</a> reducing the relief to 50%; the House of Commons Library briefing on <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10437/">Employee ownership trusts (CBP-10437)</a>; and gov.uk on <a href="https://www.gov.uk/business-asset-disposal-relief">Business Asset Disposal Relief</a>.</p>
 
-<p>Setting up an EOT is unregulated exit and succession advisory work, exempt under the sale-of-a-body-corporate rules, and we do not arrange any acquisition finance. If you are weighing an EOT and want the qualifying conditions checked and the new 50% CGT charge modelled against your figures before you commit, <a href="/contact">get in touch</a> to book an exit tax review, and we will bring in an accountant for the CGT and BADR planning.</p>
+<p>Setting up an EOT is unregulated exit and succession advisory work, exempt under the sale-of-a-body-corporate rules, and we do not arrange any acquisition finance. If you are weighing an EOT and want the qualifying conditions checked and the new 50% CGT charge modelled against your figures before you commit, <a href="/contact">get in touch</a> to book an exit tax review, and our accountants will handle the CGT and BADR planning.</p>

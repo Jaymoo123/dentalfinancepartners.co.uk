@@ -89,7 +89,7 @@ faqs:
 <p>The lower-LTV option needs a bigger deposit but costs less each month and gives stronger cover; the higher-LTV option preserves your cash for working capital or equipment at the price of a slightly higher rate and tighter cover. Neither is automatically right. Which one you should take depends on how much cash you can commit, how you value keeping a buffer, and where the lender's pricing actually lands, which is a live-market question rather than a rule of thumb. The figures above move with Bank Rate and with each lender's margin, so treat them as a shape, not a price.</p>
 
 <aside>
-<p><strong>Thinking about a freehold purchase?</strong> Tell us your position, Associate buying a first practice, Practice owner acquiring a single site, or a Multi-practice group, and we will connect you with dental commercial-finance specialists who can size the mortgage against your building and your earnings. Use the enquiry form on this page to start; it takes a couple of minutes.</p>
+<p><strong>Thinking about a freehold purchase?</strong> Tell us your position, Associate buying a first practice, Practice owner acquiring a single site, or a Multi-practice group, and we will refer you to dental commercial-finance specialists who can size the mortgage against your building and your earnings. Use the enquiry form on this page to start; it takes a couple of minutes.</p>
 </aside>
 
 <h2>Term, rate structure and what drives the margin</h2>

@@ -30,7 +30,7 @@ faqs:
     answer: "Key SRA considerations include proper client money handling when requesting payments on account, compliance with bill delivery requirements, and accurate recording of client money receipts. Always ensure lock-up reduction strategies comply with SRA Accounts Rules to avoid regulatory issues."
 ---
 
-<p>Law firm lock-up reduction represents one of the most critical financial challenges facing UK legal practices today. Lock-up — the total value of unbilled time, unpaid bills, and work in progress — directly impacts your practice's cash flow and financial stability.</p>
+<p>Law firm lock-up reduction represents one of the most critical financial challenges facing UK legal practices today. Lock-up (the total value of unbilled time, unpaid bills, and work in progress) directly impacts your practice's cash flow and financial stability.</p>
 
 <p>For many UK law firms, lock-up can represent 3-6 months of revenue tied up in the billing cycle. A Manchester commercial firm with £800k annual turnover might have £200k-400k locked up at any given time. This creates significant cash flow pressures and limits growth opportunities.</p>
 
@@ -44,7 +44,7 @@ faqs:
 <ul>
 <li>Set monthly billing deadlines for all fee earners</li>
 <li>Use interim billing for long-running matters</li>
-<li>Bill costs promptly — ideally within 48 hours of payment</li>
+<li>Bill costs promptly, ideally within 48 hours of payment</li>
 <li>Review all bills before dispatch for accuracy and completeness</li>
 </ul>
 

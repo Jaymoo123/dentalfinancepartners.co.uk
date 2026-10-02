@@ -74,7 +74,7 @@ faqs:
 <p>For a company paying corporation tax at 25%, a £750,000 pool is worth around <strong>£187,500</strong> in tax relief. Where the AIA or full expensing applies, most of that lands in year one; the balance is written down at 14% or 6% a year in the pools. The point of the arithmetic is not the exact figure, which a survey confirms, but the scale: on a single mid-sized home, the claim is comfortably into six figures.</p>
 
 <aside>
-<p><strong>Own or buying a care home?</strong> A specialist, surveyor-led capital allowances firm can tell you what the embedded fixtures are actually worth, at no cost for the initial review. Use the enquiry form below to request a feasibility check. We route care home enquiries to specialist capital allowances firms, never a general accountant, and there is no insurance product involved.</p>
+<p><strong>Own or buying a care home?</strong> Our surveyor-led capital allowances specialists can tell you what the embedded fixtures are actually worth, at no cost for the initial review. Use the enquiry form below to request a feasibility check. Care home claims are prepared by our capital allowances specialists, not a general accountant, and there is no insurance product involved.</p>
 </aside>
 
 <h2>Care plant is strong, defensible plant</h2>

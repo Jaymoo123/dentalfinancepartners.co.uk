@@ -98,7 +98,7 @@ schema: ''
 <li><strong>Professional memberships</strong>: Law Society £350 annually, plus any practice-area-specific memberships (Resolution for family, Society of Trust and Estate Practitioners for private client, etc.) typically £100-£400 each.</li>
 </ul>
 
-<h2>Working capital — the 6-12 month buffer</h2>
+<h2>Working capital: the 6-12 month buffer</h2>
 
 <p>The setup costs above are the easy part. The harder part is the 6-12 months of working capital you need before the firm becomes cash-flow positive.</p>
 
@@ -172,18 +172,18 @@ schema: ''
 <li><strong>Practice management software financing</strong>: some PMS providers offer 0-2% APR financing on the first-year subscription, reducing upfront cash drag.</li>
 </ul>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. A start-up engagement with that firm covers:</p>
+<p>A start-up engagement with our team covers:</p>
 
 <ul>
 <li>Pre-launch cash flow modelling on your specific practice area, location and personal lifestyle inputs</li>
 <li>SRA application support and Recognised Body / ABS routing decision</li>
-<li>Client account setup with the firm's bank — coordinated with the SRA application so the account is live at authorisation</li>
+<li>Client account setup with the firm's bank, coordinated with the SRA application so the account is live at authorisation</li>
 <li>First year-end planning including PII renewal timing, partner self-assessment, MTD ITSA preparation if sole-trader structured</li>
 <li>Ongoing fixed monthly fee from start-up tier (typically £150-£300 per month for sole practitioners)</li>
 </ul>
 
-<p>Solicitors starting new firms often underestimate the working capital requirement and run out of cash in month 8-10 — usually because the cash conversion cycle is slower than they expected and personal living costs absorb more reserves than budgeted. Working through the numbers in detail before launch — not after — is the difference between a firm that scales and one that closes inside year 2.</p>
+<p>Solicitors starting new firms often underestimate the working capital requirement and run out of cash in month 8-10, usually because the cash conversion cycle is slower than they expected and personal living costs absorb more reserves than budgeted. Working through the numbers in detail before launch (not after) is the difference between a firm that scales and one that closes inside year 2.</p>
 
-<p>Book a 30-minute scoping call below if you're planning to start in the next 6 months, and we will match you with a partner firm that can model your specific numbers and tell you honestly what the realistic working capital requirement looks like.</p>
+<p>Book a 30-minute scoping call below if you're planning to start in the next 6 months, and one of our specialists will model your specific numbers and tell you honestly what the realistic working capital requirement looks like.</p>

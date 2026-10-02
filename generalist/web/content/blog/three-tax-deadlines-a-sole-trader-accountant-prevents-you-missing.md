@@ -104,7 +104,7 @@ keyTakeaways:
 <li><strong>Manages your bookkeeping.</strong> Most missed deadlines happen because the paperwork is not ready. We use Xero or FreeAgent to keep your records current all year, not just at year end.</li>
 </ul>
 
-<p>Everything here is written against current HMRC guidance and reviewed before publication. Where you want the return filed and the payments on account set against your real numbers rather than an estimate, the call puts you in front of a qualified accountant on our partner team.</p>
+<p>Everything here is written against current HMRC guidance and reviewed before publication. Where you want the return filed and the payments on account set against your real numbers rather than an estimate, the call puts you in front of one of our accountants.</p>
 
 <h2>What Happens If You Miss a Deadline Anyway?</h2>
 

@@ -25,12 +25,12 @@ faqs:
   - question: "What does it actually cost to make partner financially?"
     answer: "Beyond the buy-in capital contribution (£15k-£300k+ depending on firm tier), the financial transition involves: switching from PAYE employee to self-employed partner tax (Class 4 NI on profit share, personal SA filing, no employer pension), potentially adding qualifying loan interest on buy-in financing, and giving up the trainee/associate salary curve in exchange for variable profit share that may be lower in year 1 of partnership. Most new partners take a small cash-flow step backwards in year 1 before profit share scales up."
   - question: "What do firms actually look for in partner candidates?"
-    answer: "Three things in roughly equal weight at most firms. First, technical excellence and existing client relationships — proven ability to handle the firm's typical work and bring or develop client revenue. Second, business development capacity — track record of building practice volume or contributing to firm-wide BD. Third, cultural fit and management readiness — willingness to take ownership of the firm beyond billable hours, contribute to recruitment, supervision, and strategic decisions. Pure billable-hour excellence is rarely enough by itself for partnership."
+    answer: "Three things in roughly equal weight at most firms. First, technical excellence and existing client relationships: proven ability to handle the firm's typical work and bring or develop client revenue. Second, business development capacity: track record of building practice volume or contributing to firm-wide BD. Third, cultural fit and management readiness: willingness to take ownership of the firm beyond billable hours, contribute to recruitment, supervision, and strategic decisions. Pure billable-hour excellence is rarely enough by itself for partnership."
   - question: "Should I aim for partnership or go in-house?"
-    answer: "Personal choice. Partnership offers higher upside if the firm performs, more autonomy, capital appreciation potential (in firms with true partnership capital structures), and a defined career path. In-house offers earlier work-life-balance improvement, often comparable mid-career compensation at FTSE-quality employers, more diverse work experience, and reduced billable-hour pressure. The financial gap between mid-career partnership and senior in-house has narrowed materially over the past decade — at mid-market and regional firms, senior in-house counsel often earns more than a mid-tier partner."
+    answer: "Personal choice. Partnership offers higher upside if the firm performs, more autonomy, capital appreciation potential (in firms with true partnership capital structures), and a defined career path. In-house offers earlier work-life-balance improvement, often comparable mid-career compensation at FTSE-quality employers, more diverse work experience, and reduced billable-hour pressure. The financial gap between mid-career partnership and senior in-house has narrowed materially over the past decade. At mid-market and regional firms, senior in-house counsel often earns more than a mid-tier partner."
 ---
 
-<p><strong>Making partner at a UK law firm is materially harder at the top of the market than at the bottom.</strong> Magic Circle and US firms in London promote roughly 7-10 percent of joining trainees to equity partnership over 8-11 years. Regional and high-street firms convert 25-40 percent over 5-8 years. The variance reflects the underlying economics — top-tier firms have higher partnership profit shares to share among fewer people; smaller firms have lower per-partner profits to share among many.</p>
+<p><strong>Making partner at a UK law firm is materially harder at the top of the market than at the bottom.</strong> Magic Circle and US firms in London promote roughly 7-10 percent of joining trainees to equity partnership over 8-11 years. Regional and high-street firms convert 25-40 percent over 5-8 years. The variance reflects the underlying economics: top-tier firms have higher partnership profit shares to share among fewer people; smaller firms have lower per-partner profits to share among many.</p>
 
 <p>This guide covers realistic partnership odds, the typical promotion timeline at each firm tier, what firms actually look for in partner candidates, and the financial transition that comes with the title.</p>
 
@@ -44,7 +44,7 @@ faqs:
 <li><strong>Senior associate to junior equity</strong>: 1-3 year process via counsel, managing associate, or salaried partner intermediate roles at some firms</li>
 </ul>
 
-<p>The 7-10% rate is the proportion who reach equity partner AT THE FIRM. Many more trainees leave for in-house roles, smaller firms (often making partner faster elsewhere), or non-law roles. The total proportion of joining trainees who eventually become partner SOMEWHERE in the legal profession is much higher — closer to 30-40% — but at the original firm the rate is in single digits.</p>
+<p>The 7-10% rate is the proportion who reach equity partner AT THE FIRM. Many more trainees leave for in-house roles, smaller firms (often making partner faster elsewhere), or non-law roles. The total proportion of joining trainees who eventually become partner SOMEWHERE in the legal profession is much higher (closer to 30-40%), but at the original firm the rate is in single digits.</p>
 
 <h3>US firms in London (Kirkland, Latham, Sullivan, etc.)</h3>
 
@@ -98,7 +98,7 @@ faqs:
 
 <h3>The years 0-4 phase: standard fee-earner track</h3>
 
-<p>Trainee, NQ, and mid-level associate. Standard fee-earning role with billable hours targets, supervision from senior fee-earners, gradual increase in case complexity and client responsibility. No specific partnership signal yet. The firm is assessing for technical excellence — those who don't meet the bar typically don't stay through to senior associate level.</p>
+<p>Trainee, NQ, and mid-level associate. Standard fee-earning role with billable hours targets, supervision from senior fee-earners, gradual increase in case complexity and client responsibility. No specific partnership signal yet. The firm is assessing for technical excellence; those who don't meet the bar typically don't stay through to senior associate level.</p>
 
 <h3>Years 4-7: senior associate / managing associate</h3>
 
@@ -116,21 +116,21 @@ faqs:
 
 <h3>Years 7-10: salaried / fixed-share partner intermediate (some firms)</h3>
 
-<p>Many firms have an intermediate role between senior associate and equity partner. The names vary — salaried partner, fixed-share partner, junior equity, principal, counsel. The economics: small or fixed profit share, modest capital contribution, partial partnership privileges (firm-wide voting on some matters, attendance at partner meetings).</p>
+<p>Many firms have an intermediate role between senior associate and equity partner. The names vary: salaried partner, fixed-share partner, junior equity, principal, counsel. The economics: small or fixed profit share, modest capital contribution, partial partnership privileges (firm-wide voting on some matters, attendance at partner meetings).</p>
 
-<p>The FA 2014 Salaried Member Rules apply here — fixed-share members of LLPs need to be audited against the three conditions to confirm partner-tax treatment. See our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP pillar guide</a> for the mechanics.</p>
+<p>The FA 2014 Salaried Member Rules apply here: fixed-share members of LLPs need to be audited against the three conditions to confirm partner-tax treatment. See our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP pillar guide</a> for the mechanics.</p>
 
 <p>The progression from fixed-share to equity is a separate decision at most firms, often made 2-4 years after initial fixed-share appointment.</p>
 
 <h3>Years 8-11+: equity partner</h3>
 
-<p>Full equity partnership. Capital contribution at the equity-tier level. Voting rights on firm strategic matters. Profit share above the fixed level (with associated risk of profit share below in tough years). The financial and structural reality changes substantially — moves from PAYE employee taxation to self-employed partner taxation, with all the implications for tax filing, pension, and personal finance.</p>
+<p>Full equity partnership. Capital contribution at the equity-tier level. Voting rights on firm strategic matters. Profit share above the fixed level (with associated risk of profit share below in tough years). The financial and structural reality changes substantially: it moves from PAYE employee taxation to self-employed partner taxation, with all the implications for tax filing, pension, and personal finance.</p>
 
 <h2>What firms actually look for in partner candidates</h2>
 
 <h3>Technical excellence and existing client relationships</h3>
 
-<p>The baseline. Without consistently strong fee-earning quality and demonstrated ability to handle the firm's typical work at a senior level, partnership isn't on the table. Plus existing or developable client relationships — partners are expected to contribute revenue, not just deliver work.</p>
+<p>The baseline. Without consistently strong fee-earning quality and demonstrated ability to handle the firm's typical work at a senior level, partnership isn't on the table. Plus existing or developable client relationships; partners are expected to contribute revenue, not just deliver work.</p>
 
 <h3>Business development capacity</h3>
 
@@ -155,11 +155,11 @@ faqs:
 <li>Difficult conversations on quality, performance, conduct</li>
 </ul>
 
-<p>A senior associate who's a brilliant lawyer but reluctant to take on management responsibility often doesn't make partner — or makes it slower than the firm-wide trajectory.</p>
+<p>A senior associate who's a brilliant lawyer but reluctant to take on management responsibility often doesn't make partner, or makes it slower than the firm-wide trajectory.</p>
 
 <h3>Cultural fit and trust</h3>
 
-<p>Partners trust each other with the firm's finances, reputation and future. Candidates who have demonstrably acted in the firm's interest (not just their own) over years are preferred. Cultural fit isn't a soft criterion — it's a hard test of whether existing partners trust the candidate enough to share equity with them.</p>
+<p>Partners trust each other with the firm's finances, reputation and future. Candidates who have demonstrably acted in the firm's interest (not just their own) over years are preferred. Cultural fit isn't a soft criterion; it's a hard test of whether existing partners trust the candidate enough to share equity with them.</p>
 
 <h2>The financial reality of making partner</h2>
 
@@ -199,7 +199,7 @@ faqs:
 
 <h3>Starting your own firm</h3>
 
-<p>Some senior associates leave to start their own practice rather than wait for internal partnership. Sole practitioner or small partnership can be set up within 6-12 months. Capital requirement £15k-£35k upfront plus 6-12 months of working capital — see our <a href="/blog/firm-acquisition-merger/how-much-does-it-cost-to-start-a-law-firm-uk">cost to start a law firm guide</a>. Higher autonomy and upside; higher risk and stress.</p>
+<p>Some senior associates leave to start their own practice rather than wait for internal partnership. Sole practitioner or small partnership can be set up within 6-12 months. Capital requirement £15k-£35k upfront plus 6-12 months of working capital; see our <a href="/blog/firm-acquisition-merger/how-much-does-it-cost-to-start-a-law-firm-uk">cost to start a law firm guide</a>. Higher autonomy and upside; higher risk and stress.</p>
 
 <h3>Going in-house</h3>
 
@@ -207,11 +207,11 @@ faqs:
 
 <h3>Counsel / consultant / fractional role</h3>
 
-<p>Some senior solicitors take a consultancy structure with their existing firm — typically self-employed via PSC, working flexibly. Loses partner profit upside but retains professional standing and avoids partnership administrative burden.</p>
+<p>Some senior solicitors take a consultancy structure with their existing firm, typically self-employed via PSC, working flexibly. Loses partner profit upside but retains professional standing and avoids partnership administrative burden.</p>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. For senior associates approaching the partnership decision, that firm's personal tax and structural review covers:</p>
+<p>For senior associates approaching the partnership decision, our personal tax and structural review covers:</p>
 
 <ul>
 <li>Modelling of partnership year-1 financial position on the specific firm's compensation structure</li>
@@ -221,4 +221,4 @@ faqs:
 <li>Self-assessment compliance setup for year 1</li>
 </ul>
 
-<p>For senior associates considering lateral partnership at a different firm, the partner firm models the offer and identifies the structural questions worth asking before signing. Book a 30-minute scoping call below if you're at the decision point.</p>
+<p>For senior associates considering lateral partnership at a different firm, our team models the offer and identifies the structural questions worth asking before signing. Book a 30-minute scoping call below if you're at the decision point.</p>

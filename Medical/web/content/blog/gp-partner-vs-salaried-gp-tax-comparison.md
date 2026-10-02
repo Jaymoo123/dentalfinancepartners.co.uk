@@ -207,12 +207,12 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The headline of any <strong>GP partner vs salaried GP tax comparison</strong> is that the partner route carries a fixed National Insurance saving of up to £754 a year, plus broader expense relief, in exchange for practice risk, Self Assessment and the loss of statutory employment rights. The National Insurance gap is real and recurring but it is capped: it stops growing once income passes £50,270, so at consultant-level incomes it is a small share of the total. Tax should inform the decision, not drive it.</p>
 
-<p>Because the calculation depends on your actual profit share, salary, expenses and pension position, and because the rules change, it pays to model both routes properly. We publish this research rather than file returns, so send an enquiry and we will match it to a regulated firm in our specialist partner network that compares the routes, plans around the annual allowance and keeps partners and salaried GPs compliant. Get in touch for a calculation based on your own circumstances.</p>
+<p>Because the calculation depends on your actual profit share, salary, expenses and pension position, and because the rules change, it pays to model both routes properly. Send an enquiry and our team will compare the routes, plan around the annual allowance and keep you compliant whether you are a partner or a salaried GP. Get in touch for a calculation based on your own circumstances.</p>
 
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Ready to compare your own numbers?</p>
 <p style="margin:0 0 10px;">The tax gap between the partner and salaried routes depends on your profit share, salary, expenses and pension position. A short health check will identify which route looks stronger for your situation and where the planning opportunities sit.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your position</a> and we will match it to a specialist firm for a calculation built on your actual numbers.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send us your position</a> for a calculation built on your actual numbers.</p>
 </div>
 
 <h2>Related Reading</h2>

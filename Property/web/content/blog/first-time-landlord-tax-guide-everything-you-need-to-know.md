@@ -233,5 +233,5 @@ faqs:
 <p>A specialist property accountant understands the buy-to-let lifecycle from purchase to exit and can keep your affairs efficient and compliant from the outset. Our guide on <a href="/blog/property-accountant-services/what-does-a-property-accountant-do">what a property accountant does</a> explains the services involved. With the structure decided, the surcharge budgeted, your records set up digitally, and the registration and payment dates in your calendar, you have the foundation to grow your portfolio with confidence rather than firefighting your tax position after the fact.</p>
 
 <aside>
-<p><strong>About to buy your first buy-to-let?</strong> Speak to a specialist property accountant before you complete, while the ownership structure and SDLT position can still be planned rather than corrected. Send a few details through the enquiry form on this page and we will connect you with a partner firm that handles first-time landlords.</p>
+<p><strong>About to buy your first buy-to-let?</strong> Speak to a specialist property accountant before you complete, while the ownership structure and SDLT position can still be planned rather than corrected. Send a few details through the enquiry form on this page and one of our specialists who works with first-time landlords will come back to you.</p>
 </aside>

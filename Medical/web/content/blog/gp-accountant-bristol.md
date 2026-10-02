@@ -108,7 +108,7 @@ faqs:
 
 <p>Every Bristol doctor's position is different, and the cost of getting medical taxation wrong, whether a missed annual allowance charge, an avoidable IR35 problem or a mishandled partnership entry, usually dwarfs the cost of specialist advice. Our initial conversation focuses on understanding your circumstances, spotting immediate planning opportunities and putting ongoing support in place.</p>
 
-<p>For tax advice tailored to Bristol's medical community, <a href="/contact">send us your position today</a> and we will match it to a regulated firm, so a specialist GP accountant can tell you how they would help. The information on this page is general guidance, not personal advice; please get in touch for advice on your own circumstances.</p>
+<p>For tax advice tailored to Bristol's medical community, <a href="/contact">send us your position today</a> and one of our specialist GP accountants will tell you how we would help. The information on this page is general guidance, not personal advice; please get in touch for advice on your own circumstances.</p>
 
 <h2>Related Reading</h2>
 

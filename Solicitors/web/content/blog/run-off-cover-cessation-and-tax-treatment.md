@@ -137,4 +137,4 @@ faqs:
 
 <p>Every firm's circumstances are different. The rules around cessation cover, six-year run-off periods, and run-off premium deductibility can be complex, especially when multiple partners or members are involved. We recommend speaking to a legal-sector-specialist accountant who understands the specific tax treatment of run-off cover for solicitors and law firms.</p>
 
-<p>If you are planning to cease practice or are considering your options, contact us for a confidential discussion. We will match you with a regulated firm in our specialist partner network that can structure the cessation to minimise tax and keep the firm compliant with SRA requirements.</p>
+<p>If you are planning to cease practice or are considering your options, contact us for a confidential discussion. Our team can structure the cessation to minimise tax and keep the firm compliant with SRA requirements.</p>

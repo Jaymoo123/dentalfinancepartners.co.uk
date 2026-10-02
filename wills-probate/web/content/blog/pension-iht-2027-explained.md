@@ -125,4 +125,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>If your estate including pensions looks like it may cross the inheritance tax allowances, a conversation with a vetted estate planning or probate specialist is worth far more than worry. We can connect you with one, and in the meantime the <a href="/calculators/pensions-iht-2027-estimator">pensions and IHT 2027 estimator</a> will give you a clear, personal starting point in a couple of minutes. This article is general information about the rules in England and Wales and is not legal, tax or financial advice.</p>
+<p>If your estate including pensions looks like it may cross the inheritance tax allowances, a conversation with one of our estate planning or probate specialists is worth far more than worry. Ask us, and in the meantime the <a href="/calculators/pensions-iht-2027-estimator">pensions and IHT 2027 estimator</a> will give you a clear, personal starting point in a couple of minutes. This article is general information about the rules in England and Wales and is not legal, tax or financial advice.</p>

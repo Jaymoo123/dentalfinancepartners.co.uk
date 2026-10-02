@@ -115,7 +115,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <div style="border:1px solid #c7d5e8;border-left:4px solid #1e6fbf;border-radius:4px;padding:16px 20px;margin:28px 0;background:#f5f8fd;">
 <p style="margin:0 0 6px;font-weight:600;">Are your pension contributions working as efficiently as they could?</p>
 <p style="margin:0 0 10px;">High earners can face a charge when pension growth exceeds the annual allowance, and the taper can reduce your effective limit significantly. A free practice health check will flag your annual allowance exposure and the carry-forward headroom available from the previous three tax years.</p>
-<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send an enquiry</a> and we will match it to a firm that reviews pension and tax positions for doctors.</p>
+<p style="margin:0;"><a href="/free-practice-health-check"><strong>Run a free practice health check</strong></a> or <a href="/contact">send an enquiry</a> and our team will review your pension and tax position.</p>
 </div>
 
 <h2>Which scheme section your contributions build</h2>

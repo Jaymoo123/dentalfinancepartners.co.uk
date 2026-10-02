@@ -7,7 +7,7 @@ dateModified: "2026-06-07"
 author: "Property Tax Partners Editorial Team"
 category: "Property Accountant Services"
 metaTitle: "Property Accountant Edinburgh | Landlord Tax & LBTT"
-metaDescription: "Edinburgh landlord tax specialists: Scottish income tax bands, LBTT and the 8% ADS, Section 24, MTD for Income Tax and short-term let rules. Get matched."
+metaDescription: "Edinburgh landlord tax specialists: Scottish income tax bands, LBTT and the 8% ADS, Section 24, MTD for Income Tax and short-term let rules. Talk to us."
 altText: "Edinburgh tenement and New Town rooftops representing the local buy-to-let market a specialist property accountant supports"
 image: ""
 h1: "Edinburgh Property Accountant: Specialist Tax Help for Local Landlords"
@@ -35,7 +35,7 @@ faqs:
   - question: "What about non-resident landlords who own property in Edinburgh?"
     answer: "Non-resident landlords come under the Non-Resident Landlord Scheme, which can mean tax withheld by your letting agent or tenant unless HMRC approves receipt of rent gross. You may also have double taxation treaty considerations, and non-residents must file a 60-day return for every UK property disposal, regardless of whether tax is due. A specialist coordinates the UK reporting with your home-country position."
   - question: "How do property accountants usually charge?"
-    answer: "Fees vary with portfolio size, structure (personal versus company), and whether you are in scope for Making Tax Digital, so a number quoted cold rarely fits your situation. A short discovery call is the quickest way to get a clear picture for what you actually need. Use the form on this page and we will match you with a specialist who works with Edinburgh landlords."
+    answer: "Fees vary with portfolio size, structure (personal versus company), and whether you are in scope for Making Tax Digital, so a number quoted cold rarely fits your situation. A short discovery call is the quickest way to get a clear picture for what you actually need. Use the form on this page and one of our Edinburgh landlord specialists will come back to you."
 ---
 
 <p>Owning rental property in Edinburgh means living in two tax systems at once. You deal with devolved Scottish taxes (Scottish income tax bands, Land and Buildings Transaction Tax, and the Additional Dwelling Supplement) and, at the same time, the UK-wide rules that apply everywhere (Section 24, Making Tax Digital for Income Tax, and capital gains tax on residential property). Add Edinburgh's city-wide short-term let control zone and mandatory landlord registration, and the case for a specialist <strong>property accountant in Edinburgh</strong> becomes clear.</p>
@@ -130,4 +130,4 @@ faqs:
 
 <h2>Getting Matched</h2>
 
-<p>Edinburgh landlords carry more moving parts than most: two tax systems, a city-wide short-let control zone, listed and tenement stock, and a strong student market. Getting the structure and the compliance right from the start is far cheaper than unwinding it later. Use the form on this page and we will match you with a property accountant who works with Scottish landlords and understands the Edinburgh market specifically.</p>
+<p>Edinburgh landlords carry more moving parts than most: two tax systems, a city-wide short-let control zone, listed and tenement stock, and a strong student market. Getting the structure and the compliance right from the start is far cheaper than unwinding it later. Use the form on this page and one of our property accountants who works with Scottish landlords and knows the Edinburgh market will come back to you.</p>

@@ -165,7 +165,7 @@ faqs:
 <p>The government <strong>Start Up Loan</strong>, also delivered through the British Business Bank, is a different animal entirely. It is a <strong>personal loan to the individual</strong>, unsecured, up to £25,000, with personal liability and a fixed rate. It is not lent to the company, and it is a regulated personal-borrowing product. Because it is personal rather than company finance, it is not something we introduce. If you run a new limited company and want <em>company</em> borrowing, the routes are unsecured company loans, asset finance secured on what you buy, or a guarantee-backed facility, all of which are covered on our <a href="/blog/business-finance/startup-business-loans">startup business loans</a> page. You can read the scheme terms directly on the <a href="https://www.gov.uk/apply-start-up-loan">gov.uk Start Up Loans</a> page.</p>
 
 <aside>
-  <p>Running a young or newly incorporated company and unsure which company facility fits? The panel we introduce to includes lenders that specialise in early-stage company borrowing and asset finance. Use the form on this page to get matched. We introduce limited companies only, and we do not introduce the personal Start Up Loan scheme.</p>
+  <p>Running a young or newly incorporated company and unsure which company facility fits? The panel we introduce to includes lenders that specialise in early-stage company borrowing and asset finance. Use the form on this page to tell us what you need. We introduce limited companies only, and we do not introduce the personal Start Up Loan scheme.</p>
 </aside>
 
 <h2>Business Loan Versus Invoice Finance, Asset Finance, and Overdraft</h2>

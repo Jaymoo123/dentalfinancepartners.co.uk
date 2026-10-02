@@ -195,4 +195,4 @@ faqs:
 <li>Ensure your SRA compliance is up to date</li>
 </ul>
 
-<p>For a confidential discussion of your succession options, contact our team. We connect sole practitioner solicitors with regulated accountancy firms in our specialist partner network for practice valuation, SRA compliance, and tax-efficient exit strategies. <a href="/contact">Get in touch</a> to arrange a free initial consultation.</p>
+<p>For a confidential discussion of your succession options, contact our team. We work with sole practitioner solicitors on practice valuation, SRA compliance, and tax-efficient exit strategies. <a href="/contact">Get in touch</a> to arrange a free initial consultation.</p>

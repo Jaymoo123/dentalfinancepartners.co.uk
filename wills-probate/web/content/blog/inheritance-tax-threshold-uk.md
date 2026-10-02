@@ -121,7 +121,7 @@ faqs:
 
 <p>Thresholds frozen until 5 April 2031, rising asset values and the 2027 pension change mean more ordinary families will cross the line each year without their numbers ever feeling "wealthy". The starting point is simply knowing your figure: add up what you own, subtract what you owe, and set it against the allowances your estate can claim. Our free <a href="/calculators/iht-threshold-calculator">inheritance tax threshold calculator</a> does exactly that, including the RNRB conditions and the spousal transfer, in a couple of minutes.</p>
 
-<p>If the calculator suggests your estate is over, or close to, the threshold, it is worth getting proper advice on your specific circumstances. We are an information and calculators service, not a law firm, but we can connect you with a vetted estate planning specialist who can review your will, your allowances and your options. There is no charge for the introduction and no pressure to proceed.</p>
+<p>If the calculator suggests your estate is over, or close to, the threshold, it is worth getting proper advice on your specific circumstances. We are accountants, not a law firm, but one of our estate planning specialists can review your will, your allowances and your options. The first conversation is free and there is no pressure to proceed.</p>
 
 <ol id="sources">
 <li id="ref-1">HM Revenue &amp; Customs, "How Inheritance Tax works: thresholds, rules and allowances", GOV.UK. <a href="https://www.gov.uk/inheritance-tax" target="_blank" rel="noopener">gov.uk/inheritance-tax</a>.</li>

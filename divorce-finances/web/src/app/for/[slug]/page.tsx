@@ -244,7 +244,7 @@ export default async function TradeTypePage({
               <div className="mt-8 space-y-3">
                 {[
                   "Focused on the money side of divorce and separation",
-                  "Vetted, regulated specialist firms only",
+                  "Where you need a solicitor, we work alongside a regulated family law firm",
                   "Shared only with your consent, no obligation to proceed",
                 ].map((point) => (
                   <div key={point} className="flex items-center gap-3 text-neutral-300">

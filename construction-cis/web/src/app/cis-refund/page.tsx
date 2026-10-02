@@ -286,7 +286,7 @@ export default function CisRefundPage() {
             },
             {
               title: "Fees agreed before any work starts",
-              detail: "The specialist firm you speak to sets its own fee and agrees it with you up front.",
+              detail: "Our CIS specialist agrees the fee with you up front.",
             },
           ]}
           footnote={

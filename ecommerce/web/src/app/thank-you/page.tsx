@@ -141,7 +141,7 @@ export default async function ThankYouPage({
           <div className="mx-auto max-w-2xl">
             <CheckIcon />
             <p className="mt-6 text-lg leading-relaxed text-slate-600">
-              Thanks, that is confirmed. A specialist firm from our partner network will contact you
+              Thanks, that is confirmed. One of our ecommerce accounting specialists will contact you
               directly.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">

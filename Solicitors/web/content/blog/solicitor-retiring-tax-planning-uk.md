@@ -125,4 +125,4 @@ faqs:
 
 <p>We recommend speaking to a <a href="/services/solicitor-accountants">solicitor accountant</a> who works exclusively with law firms. They can model the tax outcomes of different exit structures, review your partnership deed, and negotiate the sale agreement with your firm's accountants. The cost of professional advice is often far less than the tax saved.</p>
 
-<p>If you are a solicitor planning retirement in the next two years, contact us for a <a href="/free-firm-health-check">free firm health check</a>. We will match you with a regulated firm in our specialist partner network that can review your current position, identify tax risks, and suggest an exit strategy.</p>
+<p>If you are a solicitor planning retirement in the next two years, contact us for a <a href="/free-firm-health-check">free firm health check</a>. Our team will review your current position, identify tax risks, and suggest an exit strategy.</p>

@@ -131,7 +131,7 @@ export const LEAD_PROOF_POINTS = [
       "Profit shares, the salaried member rules and the tax that follows each structure",
   },
   {
-    title: "One partner firm, start to finish",
-    detail: "You are matched with one firm, not passed around",
+    title: "One team, start to finish",
+    detail: "The same accountants throughout, not passed around",
   },
 ];

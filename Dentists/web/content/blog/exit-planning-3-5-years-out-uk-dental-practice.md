@@ -42,7 +42,7 @@ faqs:
 
 <p>Get a professional valuation from a dental-specialist valuer. Do not rely on a rule-of-thumb percentage of fee income. That method is too crude for planning purposes. Use the valuation to identify what drives value in your practice and where you are underperforming.</p>
 
-<p>A <a href="/services/practice-valuation">specialist dental accountant from our partner network</a> can give you a detailed breakdown of your goodwill, EBITDA, and comparable sales data.</p>
+<p>One of our <a href="/services/practice-valuation">specialist dental accountants</a> can give you a detailed breakdown of your goodwill, EBITDA, and comparable sales data.</p>
 
 <h2>Step 2: Clean Up Your Accounts and Tax Position</h2>
 <p>Buyers will scrutinise your last three years of accounts. They want to see consistent, growing profits. They also want to see that you have not been extracting profit in ways that artificially depress the earnings figure.</p>

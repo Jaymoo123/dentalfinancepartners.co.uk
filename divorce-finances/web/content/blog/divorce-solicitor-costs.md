@@ -170,4 +170,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>Getting the fee model right at the outset saves far more than shaving a few pounds off an hourly rate. We can introduce you to family law professionals and accredited mediators across England and Wales who will talk through the right route and give you a realistic view of the likely spend, with no commitment to go further. We are not a law firm and offer no legal advice; any firm we introduce you to may pay us a fee, never you, and it makes no difference to what you are charged or the advice you get. To talk it through, <a href="/contact">get in touch</a>.</p>
+<p>Getting the fee model right at the outset saves far more than shaving a few pounds off an hourly rate. Our divorce finance specialists will talk through the right route with you and give you a realistic view of the likely spend, with no commitment to go further. We are not a law firm and offer no legal advice; where you need a solicitor or mediator, we work alongside regulated family law firms and accredited mediators across England and Wales and stay on the money side. To talk it through, <a href="/contact">get in touch</a>.</p>

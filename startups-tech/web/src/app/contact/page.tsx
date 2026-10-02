@@ -53,7 +53,7 @@ export default function ContactPage() {
       <Eyebrow>Contact</Eyebrow>
       <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">Contact us</h1>
       <p className="mt-4 text-base leading-relaxed text-slate-600">
-        Tell us about your startup tax situation. A specialist firm from our partner network may
+        Tell us about your startup tax situation. One of our startup tax specialists will
         contact you directly, and you will hear back within 24 hours.
       </p>
       <div className="mt-10"><LeadForm /></div>

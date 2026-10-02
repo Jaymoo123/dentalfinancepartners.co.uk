@@ -19,11 +19,11 @@ keyTakeaways:
 - Non-residents are typically exempt from UK Class 4 NI on their UK-source profit, subject to a specific claim on the non-resident SA.
 faqs:
 - question: Are non-UK-resident members of a UK LLP taxed in the UK?
-  answer: Yes, on their share of UK-source partnership profit. The LLP itself remains tax-transparent — each member is taxed personally on their share. For a non-UK-resident member, the UK taxing right covers profit arising from UK-source activities (UK clients, UK matters, UK property work, etc.). Income from non-UK clients on non-UK matters typically isn't UK-taxed in the hands of a non-resident member. The split depends on the LLP's specific work and the non-resident's domicile status.
+  answer: Yes, on their share of UK-source partnership profit. The LLP itself remains tax-transparent; each member is taxed personally on their share. For a non-UK-resident member, the UK taxing right covers profit arising from UK-source activities (UK clients, UK matters, UK property work, etc.). Income from non-UK clients on non-UK matters typically isn't UK-taxed in the hands of a non-resident member. The split depends on the LLP's specific work and the non-resident's domicile status.
 - question: Does the UK have a permanent establishment for the LLP overseas?
   answer: Depends on the non-resident member's role and activity. If a non-resident member habitually exercises authority to conclude contracts on behalf of the LLP in their country of residence, the LLP may be deemed to have a permanent establishment (PE) there, triggering local corporate tax in that country. For UK law firms with overseas members, this is a real risk and needs careful structuring. Double tax treaty articles on PE and partner activity govern the analysis.
 - question: How does the SA800 handle non-resident members?
-  answer: The SA800 partnership return shows the LLP's total profit and the allocation between all members regardless of residence. The UK tax position for each member is then determined on their personal SA — UK-resident members are taxed on worldwide partnership profit; non-UK-resident members are taxed only on UK-source profit. The non-resident member files a non-resident SA (form SA109 supplement) showing their UK tax position.
+  answer: The SA800 partnership return shows the LLP's total profit and the allocation between all members regardless of residence. The UK tax position for each member is then determined on their personal SA. UK-resident members are taxed on worldwide partnership profit; non-UK-resident members are taxed only on UK-source profit. The non-resident member files a non-resident SA (form SA109 supplement) showing their UK tax position.
 - question: What about double tax treaty relief?
   answer: 'Most double tax treaties between the UK and other countries contain provisions to avoid double taxation of partnership profit. The mechanics vary: some treaties give the resident country sole taxing rights; some allow source-country (UK) taxation with credit in the resident country. The specific treaty article (usually the Business Profits or Independent Personal Services article) determines the outcome. Each non-resident member needs treaty analysis specific to their country of residence.'
 - question: Can a non-resident member contribute capital to a UK LLP?
@@ -69,7 +69,7 @@ schema: ''
 <li>UK-source vs non-UK-source split for the LLP's overall profit (where applicable)</li>
 </ul>
 
-<p>The SA800 itself doesn't differentiate the tax treatment by member residence — it just shows the allocation. The tax treatment differentiation happens on each member's personal SA.</p>
+<p>The SA800 itself doesn't differentiate the tax treatment by member residence; it just shows the allocation. The tax treatment differentiation happens on each member's personal SA.</p>
 
 <h3>Step 2: Non-resident member's personal SA</h3>
 
@@ -107,7 +107,7 @@ schema: ''
 <li>An office, branch, factory, or similar place of business in the foreign country</li>
 </ul>
 
-<p>A non-resident partner working purely from their home country handling work for UK-source clients does not necessarily create a PE — but if they sign engagement letters in that country, hire staff there, or hold themselves out as a representative of the LLP, the PE risk increases materially.</p>
+<p>A non-resident partner working purely from their home country handling work for UK-source clients does not necessarily create a PE, but if they sign engagement letters in that country, hire staff there, or hold themselves out as a representative of the LLP, the PE risk increases materially.</p>
 
 <p>Mitigations:</p>
 
@@ -118,7 +118,7 @@ schema: ''
 <li>Treaty articles can sometimes carve out partner-activity-driven PE risk</li>
 </ul>
 
-<p>This is an area where specialist advice is essential — the consequences of being deemed to have a PE in the wrong country can be substantial.</p>
+<p>This is an area where specialist advice is essential: the consequences of being deemed to have a PE in the wrong country can be substantial.</p>
 
 <h2>Practical examples</h2>
 
@@ -128,9 +128,9 @@ schema: ''
 
 <ul>
 <li>UK-source profit (work for UK clients on UK matters) remains UK-taxable for the partner</li>
-<li>Statutory Residence Test determines exactly when the partner ceased to be UK-resident — typically based on the partner's day count in the UK for the year</li>
+<li>Statutory Residence Test determines exactly when the partner ceased to be UK-resident, typically based on the partner's day count in the UK for the year</li>
 <li>Pre-move profit is fully UK-taxed; post-move profit is UK-taxed only on UK-source portion</li>
-<li>Dubai has no personal income tax — no local tax in 2025/26 (although the corporate tax regime has been changing; partnership profit allocations sometimes trigger different treatment)</li>
+<li>Dubai has no personal income tax: no local tax in 2025/26 (although the corporate tax regime has been changing; partnership profit allocations sometimes trigger different treatment)</li>
 <li>UK-UAE double tax treaty applies; the partner files non-resident SA in the UK with treaty claim</li>
 </ul>
 
@@ -142,7 +142,7 @@ schema: ''
 <li>The partner is UK-taxed on their share of UK-source profit (work for UK clients in UK matters)</li>
 <li>The partner is Italian-taxed on worldwide income including UK-source profit (Italy taxes residents on worldwide income)</li>
 <li>UK-Italy double tax treaty applies; the partner claims relief in Italy for UK tax paid</li>
-<li>PE risk in Italy needs analysis — if the partner habitually concludes contracts for the LLP in Italy, the LLP may have an Italian PE triggering local corporate tax</li>
+<li>PE risk in Italy needs analysis: if the partner habitually concludes contracts for the LLP in Italy, the LLP may have an Italian PE triggering local corporate tax</li>
 <li>The LLP's structure (registered office, decision-making, where partners habitually meet) supports the no-PE conclusion if those are UK-located</li>
 </ul>
 
@@ -153,7 +153,7 @@ schema: ''
 <ul>
 <li>US taxes the partner on worldwide income (US citizenship-based taxation, plus US residency)</li>
 <li>UK taxes the partner on UK-source partnership profit</li>
-<li>UK-US double tax treaty provides for credit relief — US tax bill is reduced by UK tax paid</li>
+<li>UK-US double tax treaty provides for credit relief; US tax bill is reduced by UK tax paid</li>
 <li>Foreign Earned Income Exclusion may apply for some categories of income</li>
 <li>The combined position typically requires US tax advice plus UK tax advice in tandem</li>
 </ul>
@@ -166,11 +166,11 @@ schema: ''
 
 <h3>Profit allocation flexibility</h3>
 
-<p>The LLP agreement governs how profit is allocated between members. Where some members are non-resident, the agreement can sometimes structure allocations to favour UK-source profit going to UK-resident members and non-UK-source profit to non-resident members — but HMRC scrutinises allocations that don't reflect commercial reality.</p>
+<p>The LLP agreement governs how profit is allocated between members. Where some members are non-resident, the agreement can sometimes structure allocations to favour UK-source profit going to UK-resident members and non-UK-source profit to non-resident members, but HMRC scrutinises allocations that don't reflect commercial reality.</p>
 
 <h3>Disguised salary rules for non-residents</h3>
 
-<p>The FA 2014 Salaried Member Rules (Conditions A + B + C) apply to LLP members regardless of residence. A non-resident fixed-share or salaried member can still trigger the rules — with PAYE applying on their drawings if all three conditions are met. The treaty analysis is different for deemed-employee non-residents than for partner non-residents.</p>
+<p>The FA 2014 Salaried Member Rules (Conditions A + B + C) apply to LLP members regardless of residence. A non-resident fixed-share or salaried member can still trigger the rules, with PAYE applying on their drawings if all three conditions are met. The treaty analysis is different for deemed-employee non-residents than for partner non-residents.</p>
 
 <h3>National Insurance for non-residents</h3>
 
@@ -188,7 +188,7 @@ schema: ''
 <li>Mismatching the partnership SA800 and the non-resident's personal SA</li>
 </ul>
 
-<p>A cross-border engagement with a regulated firm in our specialist partner network covers:</p>
+<p>A cross-border engagement with our team covers:</p>
 
 <ul>
 <li>UK-source / non-UK-source allocation methodology</li>

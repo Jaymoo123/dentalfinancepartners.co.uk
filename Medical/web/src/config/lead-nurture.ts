@@ -656,7 +656,7 @@ const DETAIL_CAPTURE_STEPS: LeadNurtureStep[] = [
           "Something doctors often miss, and a specialist to call you if you want one.",
           [
             "One quick pointer while your enquiry sits with us. The NHS pension annual allowance taper affects many doctors at consultant and senior GP level, but the thresholds change regularly and it is easy to assume you are below the limit when you are not. A year of unchecked exposure can mean a larger charge than expected when HMRC catches up.",
-            `And if you would like a specialist to look at the full picture for your situation, just reply with ${ask} and we will put you in front of one.`,
+            `And if you would like a specialist to look at the full picture for your situation, just reply with ${ask} and one of our medical accounting specialists will call you.`,
           ],
           "detail_capture_day3",
           {

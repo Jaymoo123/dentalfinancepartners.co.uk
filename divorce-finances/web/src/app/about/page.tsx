@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: `About ${siteConfig.name} | Who We Are and How We Work` },
-  description: `${siteConfig.name} is a free information service for divorce and separation finances in England and Wales. What we do, what we don't, and how we make money.`,
+  description: `${siteConfig.name} is an accountancy firm for divorce and separation finances in England and Wales. What we do, what we don't, and how we are paid.`,
   alternates: { canonical: `${siteConfig.url}/about` },
 };
 
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className={siteContainerLg}>
           <p className="eyebrow text-orange-400">About us</p>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            A free information service for the money side of divorce.
+            Accountants for the money side of divorce.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-300">
             We built {siteConfig.name} because people going through divorce need clear answers at
@@ -34,12 +34,12 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">Who we are</h2>
               <p>
-                {siteConfig.name} is a free information service covering the financial side of
+                {siteConfig.name} is a firm of accountants covering the financial side of
                 divorce and separation in England and Wales: what it costs, how settlements work,
                 what happens to the house, the pensions and the debts, and what your realistic
-                routes are, from doing it yourself to full solicitor representation. We are not a
-                law firm, not mediators and not financial advisers, and we do not present ourselves
-                as any of those things. The site is maintained as an editorial service and every
+                routes are, from doing it yourself to full solicitor representation. We are
+                accountants, not a law firm, not mediators and not regulated financial advisers,
+                and we do not give legal advice. Our guides and calculators are free, and every
                 substantive page is checked against official sources before it is published.
               </p>
               <p>
@@ -64,9 +64,9 @@ export default function AboutPage() {
                   current.
                 </li>
                 <li>
-                  <span className="font-semibold text-neutral-900">Specialist connections.</span>{" "}
-                  If you want professional help, we can introduce you to a vetted family law firm
-                  or an accredited mediator. This only ever happens with your consent.
+                  <span className="font-semibold text-neutral-900">Specialist help.</span>{" "}
+                  Where you need a solicitor or mediator, we work alongside a regulated family law firm
+                  or an accredited mediator and stay on the money side. This only ever happens with your consent.
                 </li>
               </ul>
             </div>
@@ -103,26 +103,24 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we make money</h2>
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we are paid</h2>
               <p>
                 Honesty about this matters to us, especially on a site about money during divorce.
-                If you ask us to connect you with a specialist and you go on to use their services,
-                we may receive a fee from the firm we introduce you to. This never changes what you
-                pay, and it never changes what our guides and calculators say. The firm is also
-                required by its own professional rules to tell you about the arrangement. The
-                tools and content are free for everyone, whether or not you ever speak to a
-                specialist.
+                Your first conversation with one of our divorce finance specialists is a free
+                consultation. If you go on to use our services, you pay us directly, and that never
+                changes what our guides and calculators say. The tools and content are free for
+                everyone, whether or not you ever speak to a specialist.
               </p>
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we choose partner firms</h2>
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we choose the firms we work alongside</h2>
               <p>
-                We introduce people only to solicitor firms regulated by the Solicitors Regulation
+                Where you need a solicitor, we work alongside only firms regulated by the Solicitors Regulation
                 Authority and, for mediation, only to mediators accredited by the Family Mediation
                 Council, who are able to conduct the initial mediation meeting (MIAM) that most
-                court applicants need. Partner firms are under no obligation to take on any
-                enquiry, and nothing in our arrangement with them affects the advice they give you.
+                court applicants need. Those firms are under no obligation to take on any
+                enquiry, and nothing in our working relationship with them affects the advice they give you.
               </p>
             </div>
 

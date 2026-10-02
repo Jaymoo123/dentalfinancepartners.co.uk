@@ -7,16 +7,16 @@ date: '2026-05-18'
 author: Accounts for Lawyers Editorial Team
 eyebrow: Pillar guide · Compliance
 summary: 'The full picture of the COFA role: what it actually requires day-to-day, the materiality call between recorded and notified breaches, how the role interacts with the COLP, who can hold it, and the 90-day onboarding playbook for newly-appointed COFAs.'
-hero: Every SRA-regulated firm must nominate a Compliance Officer for Finance and Administration. The role is real, not nominal — the SRA can take action against the named individual for failures. New COFAs typically inherit a function quietly running for years; the challenge is understanding what 'good' looks like and where the risks actually sit.
+hero: Every SRA-regulated firm must nominate a Compliance Officer for Finance and Administration. The role is real, not nominal; the SRA can take action against the named individual for failures. New COFAs typically inherit a function quietly running for years; the challenge is understanding what 'good' looks like and where the risks actually sit.
 faqs:
 - question: Who can be the COFA?
   answer: Any 'fit and proper' person with authority to perform the role. The COFA does not have to be a solicitor (unlike the COLP, who must be). Practice Manager, Finance Director, experienced bookkeeper, or an equity partner are common appointments. For very small firms, the sole-practitioner solicitor often holds both COLP and COFA roles.
 - question: What's the difference between COLP and COFA?
-  answer: 'COLP (Compliance Officer for Legal Practice) is accountable to the SRA for the firm''s broader regulatory compliance: AML, conflicts, client care, professional conduct. The COLP must be a solicitor. COFA (Compliance Officer for Finance and Administration) is accountable for compliance with the SRA Accounts Rules specifically — client money discipline, reconciliations, accountant''s report co-ordination.'
+  answer: 'COLP (Compliance Officer for Legal Practice) is accountable to the SRA for the firm''s broader regulatory compliance: AML, conflicts, client care, professional conduct. The COLP must be a solicitor. COFA (Compliance Officer for Finance and Administration) is accountable for compliance with the SRA Accounts Rules specifically: client money discipline, reconciliations, accountant''s report co-ordination.'
 - question: What does the COFA actually do day-to-day?
-  answer: Oversees (doesn't necessarily perform) the five-weekly reconciliation cycle. Maintains the breach decision log. Makes the materiality call on which breaches need SRA notification. Manages the client money interest policy and its application. Co-ordinates the annual Accountant's Report. Provides regular reports to firm management — typically a monthly written update.
+  answer: Oversees (doesn't necessarily perform) the five-weekly reconciliation cycle. Maintains the breach decision log. Makes the materiality call on which breaches need SRA notification. Manages the client money interest policy and its application. Co-ordinates the annual Accountant's Report. Provides regular reports to firm management, typically a monthly written update.
 - question: How do I know if a breach is 'material' and needs SRA notification?
-  answer: 'The materiality test depends on context: amount of client money involved, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. Small accidental shortfalls promptly corrected typically aren''t material. Anything indicating a control gap, anything involving client money out of the client account longer than a day or two, anything fraud-adjacent — almost always material. The COFA exercises judgement; over-reporting wastes SRA attention, under-reporting risks regulatory action.'
+  answer: 'The materiality test depends on context: amount of client money involved, duration, whether client money was put at risk, whether the breach indicates a systemic control failure. Small accidental shortfalls promptly corrected typically aren''t material. Anything indicating a control gap, anything involving client money out of the client account longer than a day or two, anything fraud-adjacent: almost always material. The COFA exercises judgement; over-reporting wastes SRA attention, under-reporting risks regulatory action.'
 - question: What happens at SRA inspection?
   answer: The inspector requests the breach decision log, reconciliation evidence file (samples), client matter ledger extracts, recent client money interest applications, client money interest policy, and any SRA correspondence and the firm's response. The faster and cleaner the response, the better the outcome. Firms whose working file can answer any reasonable request within an hour have the best inspection experiences.
 - question: What's the consequence of failing as a COFA?
@@ -38,7 +38,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Oversight of the reconciliation cycle</h3>
 
-<p>The bookkeeper or accounts team typically performs the five-weekly reconciliation. The COFA reviews and signs off. Sign-off should be more than a rubber-stamp — it confirms the reconciliation actually reconciles, exceptions are explained, the evidence file is complete, and the work was done within the five-week cap (Rule 8.3).</p>
+<p>The bookkeeper or accounts team typically performs the five-weekly reconciliation. The COFA reviews and signs off. Sign-off should be more than a rubber-stamp: it confirms the reconciliation actually reconciles, exceptions are explained, the evidence file is complete, and the work was done within the five-week cap (Rule 8.3).</p>
 
 <h3>Breach identification and recording</h3>
 
@@ -67,7 +67,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>The SRA requires the COFA to be:</p>
 
 <ul>
-<li>"Fit and proper" — no relevant criminal record, no prior regulatory action that disqualifies</li>
+<li>"Fit and proper": no relevant criminal record, no prior regulatory action that disqualifies</li>
 <li>Of sufficient seniority and authority to perform the role</li>
 <li>Not subject to conflicting interests that compromise the role</li>
 </ul>
@@ -86,7 +86,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>External COFAs</h3>
 
-<p>Some firms appoint external consultants as COFA. The SRA permits this but the external COFA must still have authority within the firm to perform the role. The arrangement works best where the external COFA is genuinely embedded — visiting weekly or fortnightly, with real authority and not just a paper appointment.</p>
+<p>Some firms appoint external consultants as COFA. The SRA permits this but the external COFA must still have authority within the firm to perform the role. The arrangement works best where the external COFA is genuinely embedded, visiting weekly or fortnightly, with real authority and not just a paper appointment.</p>
 
 <h2>The COFA-COLP relationship</h2>
 
@@ -102,7 +102,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Single person holding both</h3>
 
-<p>In smaller firms one person holds both roles. The dual appointment works fine but the person needs the time and attention for both — neither role is part-time work in a busy mid-size firm. The combination is most workable below 10 fee-earners.</p>
+<p>In smaller firms one person holds both roles. The dual appointment works fine but the person needs the time and attention for both; neither role is part-time work in a busy mid-size firm. The combination is most workable below 10 fee-earners.</p>
 
 <h2>Materiality: where COFAs earn their title</h2>
 
@@ -133,13 +133,13 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li>Disbursement-paid-before-billed breaches, especially if recurring even at low amounts</li>
 <li>Client money interest policy that's been undocumented for a period</li>
-<li>Single-matter shortfalls held briefly and corrected — depends on amount and circumstances</li>
+<li>Single-matter shortfalls held briefly and corrected: depends on amount and circumstances</li>
 <li>Reconciliations consistently completed at the end of the 5-week period rather than mid-period</li>
 </ul>
 
 <h3>The COFA's decision log</h3>
 
-<p>The decision log is the COFA's primary defence. Every materiality call should be documented: facts of the breach, considerations weighed, reasoning for the decision, signed and dated. If the SRA later challenges the call, the decision log shows reasoned judgement was exercised — even if the SRA disagrees with the outcome, a reasoned decision attracts less regulatory weight than an unrecorded one.</p>
+<p>The decision log is the COFA's primary defence. Every materiality call should be documented: facts of the breach, considerations weighed, reasoning for the decision, signed and dated. If the SRA later challenges the call, the decision log shows reasoned judgement was exercised. Even if the SRA disagrees with the outcome, a reasoned decision attracts less regulatory weight than an unrecorded one.</p>
 
 <h2>New-COFA onboarding: 90-day playbook</h2>
 
@@ -148,7 +148,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <h3>Days 1-30: Orientation</h3>
 
 <ul>
-<li>Read the SRA Accounts Rules in full. Yes, all of them — it's only 30-odd pages.</li>
+<li>Read the SRA Accounts Rules in full. Yes, all of them; it's only 30-odd pages.</li>
 <li>Read the firm's prior 12 months of breach log entries and SRA correspondence</li>
 <li>Review the last 6 months of reconciliation evidence files</li>
 <li>Walk through the reconciliation process with the bookkeeper</li>
@@ -197,7 +197,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>What happens when you bring us in</h2>
 
-<p>We connect you with a regulated accountancy firm in our specialist partner network. A COFA support engagement typically covers:</p>
+<p>A COFA support engagement with our team typically covers:</p>
 
 <ul>
 <li>New-COFA onboarding (half-day session on the Accounts Rules in plain English; specific firm risk profile review; reconciliation rhythm setup)</li>

@@ -87,7 +87,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
     },
     {
       q: "What has to be true for me to get the 18% rate?",
-      a: "The qualifying conditions have to be met throughout the 2 years to disposal: a trading business or trading company, and for a share sale at least 5% of the ordinary share capital and 5% of the voting rights plus being an officer or employee. Because the clock runs for 2 years, a structure change made shortly before a sale can put the relief out of reach. Timing also turns on the contract, not completion: for an unconditional contract the disposal date is the date of exchange, while a contract conditional on something like NHS contract novation is treated as disposed of when that condition is met. Contact our team and a specialist dental accountant from our partner network can check your position.",
+      a: "The qualifying conditions have to be met throughout the 2 years to disposal: a trading business or trading company, and for a share sale at least 5% of the ordinary share capital and 5% of the voting rights plus being an officer or employee. Because the clock runs for 2 years, a structure change made shortly before a sale can put the relief out of reach. Timing also turns on the contract, not completion: for an unconditional contract the disposal date is the date of exchange, while a contract conditional on something like NHS contract novation is treated as disposed of when that condition is met. Contact our team and one of our dental accounting specialists can check your position.",
     },
   ],
   nhs: [

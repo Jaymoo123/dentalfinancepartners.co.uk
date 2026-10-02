@@ -136,7 +136,7 @@ keyTakeaways:
 
 <h2>Next Steps</h2>
 <p>If a family investment company sounds like it fits your situation, here is what to do next.</p>
-<p>First, get a valuation of your agency. You need a realistic figure to model the IHT saving. Your accountant can help with this or refer you to a business valuation specialist.</p>
+<p>First, get a valuation of your agency. You need a realistic figure to model the IHT saving. Our team can prepare this for you.</p>
 <p>Second, speak to a solicitor who specialises in FICs. Ask them how many they have set up. Ask for case studies. A good solicitor will talk you through the articles, the share structure, and the shareholder agreement.</p>
 <p>Third, work with your accountant to model the tax outcomes. Look at IHT, capital gains on a future sale, dividend tax for your children, and the ongoing compliance costs. Make sure the numbers work before you proceed.</p>
 <p>We work with agency founders on FIC structures regularly. If you want to talk through whether it fits your situation, <a href="/contact">get in touch</a>. We can run the numbers and recommend a solicitor who knows the agency space.</p>

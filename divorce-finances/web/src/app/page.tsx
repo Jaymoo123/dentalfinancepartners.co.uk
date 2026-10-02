@@ -19,7 +19,7 @@ import { tradeTypes } from "@/data/trade-types";
 export const metadata: Metadata = {
   title: { absolute: `${siteConfig.name} | Divorce Money, Costs and Settlements Explained` },
   description:
-    "Free UK divorce finance calculators and plain-English guides. Court fees, settlements, pensions and the family home, with a route to a vetted specialist when you need one.",
+    "Free UK divorce finance calculators and plain-English guides. Court fees, settlements, pensions and the family home, with a call from one of our specialists when you need one.",
   alternates: { canonical: siteConfig.url },
 };
 
@@ -52,8 +52,8 @@ const handoffSteps = [
     body: "A short form. Where you are in the process, what is at stake, what kind of help you want.",
   },
   {
-    title: "We match you",
-    body: "A vetted specialist firm or accredited mediator suited to your situation, not a call centre round robin.",
+    title: "We call you",
+    body: "One of our divorce finance specialists, suited to your situation, not a call centre round robin.",
   },
   {
     title: "They contact you directly",
@@ -76,8 +76,8 @@ export default function HomePage() {
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-300">
             Divorce is hard enough without guessing what it will cost or what a fair settlement
             looks like. {siteConfig.name} gives you free calculators built on published court fees,
-            plain-English guides checked against official sources, and, when you are ready, an
-            introduction to a vetted family law specialist. No sign-up needed for any of the tools.
+            plain-English guides checked against official sources, and, when you are ready, a
+            call with one of our divorce finance specialists. No sign-up needed for any of the tools.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <HeroOffer
@@ -186,15 +186,16 @@ export default function HomePage() {
         <div className={siteContainerLg}>
           <div className="section-label mb-4">When you need more than information</div>
           <h2 className="max-w-3xl text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-            We are not a law firm. We know good ones.
+            We are accountants, not a law firm.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-neutral-600 sm:text-lg">
             Everything on {siteConfig.name} is general information, and some situations need more
             than that: you cannot agree a settlement, there is a business or a pension worth more
             than the house, or you simply want it handled properly. Tell us about your situation
-            and we will introduce you to a vetted family law firm or accredited mediator suited to
-            it. Your details are shared only with your consent, we may receive a fee from the firm
-            we introduce you to, and you are never under any obligation to proceed.
+            and one of our divorce finance specialists will talk it through with you. Where you need
+            a solicitor or mediator, we work alongside regulated family law firms and accredited
+            mediators and stay on the money side. Your details are shared only with your consent,
+            and you are never under any obligation to proceed.
           </p>
           <div className="mt-10 grid gap-6 sm:gap-8 md:grid-cols-3">
             {handoffSteps.map((step, idx) => (
@@ -209,7 +210,7 @@ export default function HomePage() {
           </div>
           <div className="mt-10">
             <Link href="/contact" className={btnPrimary}>
-              Get connected
+              Request a call
             </Link>
           </div>
         </div>
@@ -232,12 +233,12 @@ export default function HomePage() {
               Read this before you trust any site about divorce money.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
-              {siteConfig.name} is a free information service, not a law firm and not a financial
-              adviser. Nothing here is legal or financial advice, and our settlement estimator
-              gives ranges, never verdicts. If you use a firm we introduce you to, that firm may
-              pay us a fee. It never changes what you pay, and it never changes what our guides and
-              calculators say. That is the entire business model, stated plainly, because a site
-              about money during divorce should not be coy about its own.
+              {siteConfig.name} is not a law firm and not a financial adviser. Nothing on this site
+              is legal or financial advice, and our settlement estimator gives ranges, never
+              verdicts. The guides and calculators are free for everyone. If you go on to use our
+              services, you pay us directly, and that never changes what our guides and
+              calculators say. We state that plainly because a site about money during divorce
+              should not be coy about its own.
             </p>
             <div className="mt-6">
               <Link

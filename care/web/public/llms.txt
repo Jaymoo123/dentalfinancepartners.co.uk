@@ -37,7 +37,7 @@ Facts current as at 2026-09-27.
 - [Care Startups](https://www.carehometax.co.uk/for/care-startups?utm_source=chatgpt&utm_medium=llms) · CQC registration, financial viability statements, opening accounts
 
 ## Services
-- [CQC Financial Viability Statement](https://www.carehometax.co.uk/services/cqc-financial-viability-statement?utm_source=chatgpt&utm_medium=llms) · statements prepared by a partner firm on CQC's own template
+- [CQC Financial Viability Statement](https://www.carehometax.co.uk/services/cqc-financial-viability-statement?utm_source=chatgpt&utm_medium=llms) · statements prepared by our team on CQC's own template
 - [Care Payroll](https://www.carehometax.co.uk/services/care-payroll?utm_source=chatgpt&utm_medium=llms) · payroll for care providers including NLW, sleep-in compliance, irregular-hours holiday pay
 - [Care VAT Review](https://www.carehometax.co.uk/services/care-vat-review?utm_source=chatgpt&utm_medium=llms) · welfare exemption analysis, partial exemption calculations, HMRC grouping brief 2/2025
 - [Buying a Care Home](https://www.carehometax.co.uk/services/buying-a-care-home?utm_source=chatgpt&utm_medium=llms) · due diligence, capital allowances sequencing, AIA and SBA planning
@@ -82,7 +82,7 @@ These figures are drawn from docs/care/rates_ledger.json and docs/care/house_pos
 - [Blog](https://www.carehometax.co.uk/blog?utm_source=chatgpt&utm_medium=llms)
 
 ## Contact
-- [Contact form](https://www.carehometax.co.uk/contact?utm_source=chatgpt&utm_medium=llms) · free, no obligation enquiry. We pass it to a partner firm.
+- [Contact form](https://www.carehometax.co.uk/contact?utm_source=chatgpt&utm_medium=llms) · free, no obligation enquiry. One of our care accountants calls you back.
 
 ## Full index
 - Complete page index: https://www.carehometax.co.uk/llms-full.txt

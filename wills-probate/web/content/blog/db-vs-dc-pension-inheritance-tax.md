@@ -114,4 +114,4 @@ generator: "claude-fable-5 | manual | 2026-07-24"
 
 <h2>Speak to a specialist</h2>
 
-<p>If you are unsure which pension types you hold, or your estate combines property, savings and a sizeable DC pot, a conversation with a vetted estate planning specialist can establish where you stand before the 2027 rules arrive. We can connect you with one, and in the meantime the <a href="/calculators/pensions-iht-2027-estimator">pensions IHT 2027 estimator</a> gives you a free, no-obligation starting figure in a couple of minutes.</p>
+<p>If you are unsure which pension types you hold, or your estate combines property, savings and a sizeable DC pot, a conversation with one of our estate planning specialists can establish where you stand before the 2027 rules arrive. Ask us, and in the meantime the <a href="/calculators/pensions-iht-2027-estimator">pensions IHT 2027 estimator</a> gives you a free, no-obligation starting figure in a couple of minutes.</p>

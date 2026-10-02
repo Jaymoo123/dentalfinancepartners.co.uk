@@ -130,7 +130,7 @@ keyTakeaways:
 <li><strong>Speak to a currency broker.</strong> If you convert more than £10k per month, call OFX or TorFX. Ask for a quote on a GBP-to-AED transfer. Compare it to what you are paying now. The saving will be obvious.</li>
 </ol>
 
-<p>If your agency is structured across the UK and UAE, and you want to optimise your cross-border tax position alongside your currency conversion, talk to us. We work with <a href="/agencies">agency founders</a> in both jurisdictions and can connect you with the right specialists.</p>
+<p>If your agency is structured across the UK and UAE, and you want to optimise your cross-border tax position alongside your currency conversion, talk to us. We work with <a href="/agencies">agency founders</a> in both jurisdictions and our team can take you through the options.</p>
 
 <p>The 3% cost is not inevitable. It is a process problem. And process problems have solutions.</p>
 

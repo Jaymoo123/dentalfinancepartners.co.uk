@@ -41,11 +41,11 @@ faqs:
 <p>The key areas where specialist knowledge matters include:</p>
 
 <ul>
-<li><strong>SRA Accounts Rules compliance</strong> — client money handling and reporting requirements</li>
-<li><strong>Partnership and LLP taxation</strong> — Basis Period Reform and profit allocation complexities</li>
-<li><strong>VAT on legal services</strong> — disbursements treatment and exemption rules</li>
-<li><strong>Practice cash flow management</strong> — work-in-progress and lock-up optimisation</li>
-<li><strong>Making Tax Digital compliance</strong> — MTD for Income Tax rollout from April 2026</li>
+<li><strong>SRA Accounts Rules compliance</strong>: client money handling and reporting requirements</li>
+<li><strong>Partnership and LLP taxation</strong>: Basis Period Reform and profit allocation complexities</li>
+<li><strong>VAT on legal services</strong>: disbursements treatment and exemption rules</li>
+<li><strong>Practice cash flow management</strong>: work-in-progress and lock-up optimisation</li>
+<li><strong>Making Tax Digital compliance</strong>: MTD for Income Tax rollout from April 2026</li>
 </ul>
 
 <p>A general accountant may struggle with these areas, potentially exposing your practice to compliance risks or missed opportunities for tax efficiency.</p>
@@ -161,11 +161,11 @@ faqs:
 <p>Certain warning signs indicate an accountant may not be suitable for legal practices:</p>
 
 <ul>
-<li><strong>Generic marketing</strong> — accountants who don't specifically mention legal sector experience</li>
-<li><strong>Unfamiliarity with SRA requirements</strong> — inability to discuss client money rules confidently</li>
-<li><strong>Outdated technology</strong> — reliance on manual processes or old software</li>
-<li><strong>Poor communication</strong> — slow responses or unclear explanations</li>
-<li><strong>Unrealistic promises</strong> — guarantees about tax savings without understanding your situation</li>
+<li><strong>Generic marketing</strong>: accountants who don't specifically mention legal sector experience</li>
+<li><strong>Unfamiliarity with SRA requirements</strong>: inability to discuss client money rules confidently</li>
+<li><strong>Outdated technology</strong>: reliance on manual processes or old software</li>
+<li><strong>Poor communication</strong>: slow responses or unclear explanations</li>
+<li><strong>Unrealistic promises</strong>: guarantees about tax savings without understanding your situation</li>
 </ul>
 
 <p>Trust your instincts if something feels wrong during initial discussions.</p>

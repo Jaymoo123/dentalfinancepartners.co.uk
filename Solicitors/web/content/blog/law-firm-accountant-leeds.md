@@ -41,7 +41,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>Sector Experience</h3>
 
-<p>Look for accountants with genuine legal sector experience. Ask about their current client base — do they work with practices similar to yours? A sole practitioner in Roundhay has different needs from a 20-partner firm in Park Square.</p>
+<p>Look for accountants with genuine legal sector experience. Ask about their current client base: do they work with practices similar to yours? A sole practitioner in Roundhay has different needs from a 20-partner firm in Park Square.</p>
 
 <h3>SRA Knowledge</h3>
 
@@ -74,11 +74,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Legal practices face complex tax obligations. Specialist services include:</p>
 
 <ul>
-<li><strong>Partnership tax returns</strong> — coordinating multiple partner assessments</li>
-<li><strong>LLP member taxation</strong> — managing employment vs self-employment issues</li>
-<li><strong>Corporation tax for incorporated practices</strong> — optimising profit extraction</li>
-<li><strong>Making Tax Digital compliance</strong> — preparing for MTD Income Tax from April 2026</li>
-<li><strong>VAT returns and planning</strong> — maximising recoveries on business expenses</li>
+<li><strong>Partnership tax returns</strong>: coordinating multiple partner assessments</li>
+<li><strong>LLP member taxation</strong>: managing employment vs self-employment issues</li>
+<li><strong>Corporation tax for incorporated practices</strong>: optimising profit extraction</li>
+<li><strong>Making Tax Digital compliance</strong>: preparing for MTD Income Tax from April 2026</li>
+<li><strong>VAT returns and planning</strong>: maximising recoveries on business expenses</li>
 </ul>
 
 <h3>Practice Management Support</h3>
@@ -121,10 +121,10 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>While specialist law firm accountants in Leeds may charge more than generalists, the value often justifies the cost:</p>
 
 <ul>
-<li><strong>Reduced compliance risk</strong> — avoiding SRA penalties and regulatory issues</li>
-<li><strong>Time savings</strong> — less time spent on accounting queries and corrections</li>
-<li><strong>Tax efficiency</strong> — proper planning often saves more than the additional fees</li>
-<li><strong>Better decision making</strong> — accurate, timely financial information improves practice management</li>
+<li><strong>Reduced compliance risk</strong>: avoiding SRA penalties and regulatory issues</li>
+<li><strong>Time savings</strong>: less time spent on accounting queries and corrections</li>
+<li><strong>Tax efficiency</strong>: proper planning often saves more than the additional fees</li>
+<li><strong>Better decision making</strong>: accurate, timely financial information improves practice management</li>
 </ul>
 
 <p>What a practice pays scales with its client-account activity and structure: a sole practitioner with a quiet client account needs far less than a mid-sized partnership with high conveyancing throughput, which is why itemised quotes beat headline comparisons.</p>
@@ -134,11 +134,11 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>When engaging a new law firm accountant in Leeds, expect a structured onboarding process:</p>
 
 <ol>
-<li><strong>Initial consultation</strong> — discussing your practice needs and current challenges</li>
-<li><strong>Systems review</strong> — understanding your current accounting setup and identifying improvements</li>
-<li><strong>Compliance audit</strong> — reviewing SRA compliance and highlighting any issues</li>
-<li><strong>Service proposal</strong> — detailed scope and pricing for ongoing support</li>
-<li><strong>Transition planning</strong> — smooth handover from your current accountant</li>
+<li><strong>Initial consultation</strong>: discussing your practice needs and current challenges</li>
+<li><strong>Systems review</strong>: understanding your current accounting setup and identifying improvements</li>
+<li><strong>Compliance audit</strong>: reviewing SRA compliance and highlighting any issues</li>
+<li><strong>Service proposal</strong>: detailed scope and pricing for ongoing support</li>
+<li><strong>Transition planning</strong>: smooth handover from your current accountant</li>
 </ol>
 
 <p>Most specialist accountants offer fixed-fee arrangements for routine compliance work, with additional support quoted separately.</p>
@@ -147,7 +147,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>The relationship between a legal practice and its accountant should be collaborative and long-term. Look for <a href="/about">professionals who understand</a> your ambitions and can support your practice growth.</p>
 
-<p>Whether you're a newly qualified solicitor setting up in Headingley or managing partners of an established Leeds firm, specialist accounting support helps you focus on what you do best — practising law.</p>
+<p>Whether you're a newly qualified solicitor setting up in Headingley or managing partners of an established Leeds firm, specialist accounting support helps you focus on what you do best: practising law.</p>
 
 <p>The legal sector continues evolving, with new regulations, technology, and client demands. Having a law firm accountant in Leeds who stays current with these changes gives your practice a significant advantage.</p>
 

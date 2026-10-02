@@ -41,7 +41,7 @@ faqs:
 
 <p>If you take locum work as a doctor and run it through your own limited company, the off-payroll working rules (better known as <strong>IR35</strong>) decide whether HMRC treats that income as if you were an employee. Getting it wrong can mean unexpected tax, lost National Insurance and avoidable penalties, so it is worth understanding exactly how the rules apply to medical locum work in 2026/27.</p>
 
-<p>This guide is the pillar reference for <strong>locum doctor IR35</strong>: who decides your status, what a Status Determination Statement is, the April 2024 PAYE offset, and why a sole-trader locum sits outside the rules entirely. It is general information, not personal advice. We publish on medical and GP finances and match enquiries to a regulated firm in our specialist partner network, and a quick review of your own contracts by that firm is usually the fastest way to be sure.</p>
+<p>This guide is the pillar reference for <strong>locum doctor IR35</strong>: who decides your status, what a Status Determination Statement is, the April 2024 PAYE offset, and why a sole-trader locum sits outside the rules entirely. It is general information, not personal advice. A quick review of your own contracts by our team is usually the fastest way to be sure.</p>
 
 <h2>What IR35 means for a locum doctor</h2>
 
@@ -123,4 +123,4 @@ faqs:
 
 <h2>How we can help</h2>
 
-<p>IR35 is fact-specific, and the cost of getting it wrong falls on real take-home pay. We match enquiries to <a href="/services">specialist medical accountants</a> who review locum contracts and SDS decisions, model the inside-versus-outside and sole-trader-versus-company outcomes (including the NHS pension impact), and support you through the disagreement process where a determination looks wrong. <a href="/contact">Send an enquiry</a> to get your own arrangements reviewed.</p>
+<p>IR35 is fact-specific, and the cost of getting it wrong falls on real take-home pay. Our <a href="/services">specialist medical accountants</a> review locum contracts and SDS decisions, model the inside-versus-outside and sole-trader-versus-company outcomes (including the NHS pension impact), and support you through the disagreement process where a determination looks wrong. <a href="/contact">Send an enquiry</a> to get your own arrangements reviewed.</p>

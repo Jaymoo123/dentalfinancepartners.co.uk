@@ -169,4 +169,4 @@ faqs:
 
 <p>Because spousal maintenance has no formula, the figure that matters is the one that emerges from full financial disclosure and honest household budgets, weighed against the section 25 factors and the strong modern steer toward independence. Small drafting choices, such as whether a term is extendable or barred under section 28(1A), or whether to capitalise, have long-term consequences that are hard to unwind later. Treat this guide as general information rather than legal or financial advice, because every case turns on its own facts and numbers.</p>
 
-<p>If you want your own settlement, including any maintenance element, assessed against your actual finances, a specialist family law firm can advise on what is realistic and how best to structure it. To be put in touch with a vetted specialist, use our <a href="/contact">contact page</a>.</p>
+<p>If you want your own settlement, including any maintenance element, assessed against your actual finances, one of our divorce finance specialists can talk through what is realistic and how best to structure it. To request a call, use our <a href="/contact">contact page</a>.</p>

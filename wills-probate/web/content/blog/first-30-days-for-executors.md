@@ -114,4 +114,4 @@ faqs:
 
 <h2>When to bring in a specialist</h2>
 
-<p>Most of the first month is practical rather than legal, and most people handle it themselves. If the estate looks complicated (inheritance tax likely, a business, overseas assets, family tension, or no will and an unclear family tree), it is worth an early conversation before decisions harden. This article is general information, not legal advice. We can connect you with a vetted probate specialist who will look at your situation, and our <a href="/for/executors">executors hub</a> gathers everything on this site written for the role you have just taken on.</p>
+<p>Most of the first month is practical rather than legal, and most people handle it themselves. If the estate looks complicated (inheritance tax likely, a business, overseas assets, family tension, or no will and an unclear family tree), it is worth an early conversation before decisions harden. This article is general information, not legal advice. One of our probate specialists can look at your situation, and our <a href="/for/executors">executors hub</a> gathers everything on this site written for the role you have just taken on.</p>

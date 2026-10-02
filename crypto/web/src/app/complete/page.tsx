@@ -93,7 +93,7 @@ export default async function CompletePage({
         inner = (
           <NoticeCard tone="primary" title="You are all set">
             <p className="text-base text-slate-700">
-              We have everything we need. A specialist firm from our partner network may contact you
+              We have everything we need. One of our crypto tax specialists will contact you
               directly about your enquiry. If you would like to pick a time that suits you, you can
               book a callback below.
             </p>
@@ -114,7 +114,7 @@ export default async function CompletePage({
     <>
       <PageHero eyebrow="One last thing" title="Complete your details">
         <p className="mt-4 text-lg leading-relaxed text-white/80">
-          Add the last detail we need and a specialist firm from our partner network will be in
+          Add the last detail we need and one of our crypto tax specialists will be in
           touch to arrange your free crypto tax review, no obligation.
         </p>
       </PageHero>

@@ -25,8 +25,7 @@ export default function ServicesPage() {
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-300">
             We work out the money side of divorce and separation with you: what a fair
             settlement looks like, how pensions split, and the tax on it. Where you need a
-            solicitor, we introduce you to a regulated firm we work with, and we stay on the
-            money side.
+            solicitor, we work alongside a regulated firm and stay on the money side.
           </p>
         </div>
       </section>

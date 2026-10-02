@@ -144,10 +144,10 @@ export function computeMtd(i: MtdInputs): MtdResult {
   if (entity !== "individual") {
     const why =
       entity === "company"
-        ? "Limited companies are outside MTD for Income Tax entirely — they file an annual Company Tax return (CT600)."
+        ? "Limited companies are outside MTD for Income Tax entirely. They file an annual Company Tax return (CT600)."
         : entity === "partnership"
           ? "Partnerships are deferred from MTD for Income Tax, with no confirmed start date. (A partner's own separate sole-trade or rental income can still bring them in.)"
-          : "Trustees are outside MTD for Income Tax — trust property income is reported on the SA900 trust return as before.";
+          : "Trustees are outside MTD for Income Tax. Trust property income is reported on the SA900 trust return as before.";
     return {
       qualifyingIncome,
       applies: false,
@@ -185,7 +185,7 @@ export function computeMtd(i: MtdInputs): MtdResult {
     boundary: MTD_FINAL_THRESHOLD,
     summary:
       qualifyingIncome === MTD_FINAL_THRESHOLD
-        ? "Your qualifying income is exactly £20,000. The thresholds are 'over' £20,000, so you are not yet mandated, but you are on the boundary — watch it closely."
+        ? "Your qualifying income is exactly £20,000. The thresholds are 'over' £20,000, so you are not yet mandated, but you are on the boundary. Watch it closely."
         : `Your qualifying income is £${margin.toLocaleString("en-GB")} below the lowest published threshold (£20,000 from April 2028). No MTD mandate currently applies, but you can join voluntarily.`,
   };
 }

@@ -128,4 +128,4 @@ faqs:
 
 <h2>Speak to a specialist</h2>
 
-<p>The timeline is fixed, but what it means for a particular estate depends on the pension type, the beneficiaries and the rest of the estate. This article is general information, not legal, tax or financial advice, and decisions about pensions should always be made with regulated financial advice. If you would like help understanding how the 2027 changes affect an estate you hold or expect to administer, we can connect you with a vetted specialist who deals with this every day.</p>
+<p>The timeline is fixed, but what it means for a particular estate depends on the pension type, the beneficiaries and the rest of the estate. This article is general information, not legal, tax or financial advice, and decisions about pensions should always be made with regulated financial advice. If you would like help understanding how the 2027 changes affect an estate you hold or expect to administer, one of our estate planning specialists can talk it through with you.</p>

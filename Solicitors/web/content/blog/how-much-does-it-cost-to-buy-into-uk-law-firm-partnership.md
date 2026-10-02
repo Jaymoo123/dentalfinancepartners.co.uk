@@ -21,20 +21,20 @@ faqs:
   - question: "Do I have to buy into a UK law firm partnership?"
     answer: "Yes if you want to be an equity partner. The capital contribution is the partner's ownership stake in the firm. Salaried partners and fixed-share partners may or may not be required to contribute capital; equity partners almost always are. The amount is set in the partnership or LLP agreement. The capital sits on the partner's capital account, earns interest at a rate set in the agreement, and is returned (often phased over 1-3 years) when the partner leaves."
   - question: "How much is a typical UK law firm partner buy-in?"
-    answer: "Wide range by firm type. Magic Circle and US firms in London: £150,000-£400,000+ for senior equity. Silver Circle and mid-tier City: £80,000-£200,000. National firms (London office): £60,000-£150,000. Mid-market regional: £30,000-£100,000. High-street: £15,000-£50,000. Fixed-share partners contribute less than equity partners at the same firm — often 20-40% of the equity-tier figure."
+    answer: "Wide range by firm type. Magic Circle and US firms in London: £150,000-£400,000+ for senior equity. Silver Circle and mid-tier City: £80,000-£200,000. National firms (London office): £60,000-£150,000. Mid-market regional: £30,000-£100,000. High-street: £15,000-£50,000. Fixed-share partners contribute less than equity partners at the same firm, often 20-40% of the equity-tier figure."
   - question: "Can I borrow to fund a partnership buy-in?"
     answer: "Yes. The major UK banks and specialist lenders (Wesleyan, Allica Bank, others) offer dedicated partnership buy-in loans. Typical structure: unsecured personal loan or partially-secured against the firm's guarantee of repayment from the partner's future drawings. Terms typically 5-10 years. The interest is deductible from the partner's personal taxable income under ITA 2007 s.398 (qualifying loan interest relief)."
   - question: "What tax relief is available on partnership buy-in financing?"
-    answer: "Qualifying loan interest relief under ITA 2007 s.398. Interest on a loan used to buy into a partnership (whether general partnership or LLP) is deductible from the partner's personal taxable income, reducing their income tax bill. For a partner at 40% marginal rate paying £8,000 of loan interest annually, the relief is £3,200. The relief is claimed annually on the partner's self-assessment. The capital contribution itself isn't tax-deductible — only the interest on borrowing to fund it."
+    answer: "Qualifying loan interest relief under ITA 2007 s.398. Interest on a loan used to buy into a partnership (whether general partnership or LLP) is deductible from the partner's personal taxable income, reducing their income tax bill. For a partner at 40% marginal rate paying £8,000 of loan interest annually, the relief is £3,200. The relief is claimed annually on the partner's self-assessment. The capital contribution itself isn't tax-deductible: only the interest on borrowing to fund it."
   - question: "Do I get my capital back when I leave?"
-    answer: "Yes, but the mechanics depend on the partnership / LLP agreement. Typical structure: capital returned over 1-3 years from the leaving date, with the timing aligned to the firm's cash flow rather than triggered immediately on departure. Some agreements allow earlier return; some require the leaving partner to wait until a new partner is admitted who contributes equivalent capital. Goodwill appreciation is sometimes paid as a separate exit payment; sometimes not — depending on whether the firm uses true partnership capital accounts or notional capital."
+    answer: "Yes, but the mechanics depend on the partnership / LLP agreement. Typical structure: capital returned over 1-3 years from the leaving date, with the timing aligned to the firm's cash flow rather than triggered immediately on departure. Some agreements allow earlier return; some require the leaving partner to wait until a new partner is admitted who contributes equivalent capital. Goodwill appreciation is sometimes paid as a separate exit payment; sometimes not, depending on whether the firm uses true partnership capital accounts or notional capital."
 ---
 
-<p><strong>Capital buy-in to a UK law firm partnership in 2025/26 typically ranges from £15,000 at small high-street firms to £300,000 or more at Magic Circle firms.</strong> Most equity partner buy-ins sit in the £50,000-£200,000 range. The capital is the partner's ownership stake — it sits on the capital account, earns interest at a rate set in the partnership agreement, and is returned at the partner's exit (usually phased over 1-3 years).</p>
+<p><strong>Capital buy-in to a UK law firm partnership in 2025/26 typically ranges from £15,000 at small high-street firms to £300,000 or more at Magic Circle firms.</strong> Most equity partner buy-ins sit in the £50,000-£200,000 range. The capital is the partner's ownership stake: it sits on the capital account, earns interest at a rate set in the partnership agreement, and is returned at the partner's exit (usually phased over 1-3 years).</p>
 
 <p>This guide breaks down realistic buy-in amounts by firm type, the financing options for funding the buy-in, the tax treatment of buy-in loan interest, and what partners actually get back when they leave.</p>
 
-<h2>Capital buy-in ranges by firm type — 2025/26</h2>
+<h2>Capital buy-in ranges by firm type (2025/26)</h2>
 
 <h3>Magic Circle and US firms in London</h3>
 
@@ -114,7 +114,7 @@ faqs:
 
 <p>Common for smaller buy-ins (£15,000-£50,000) and for partners who have accumulated savings from prior senior associate income. Magic Circle senior associates on £200,000+ for several years often save enough for at least a junior equity buy-in.</p>
 
-<h3>Bank lending — partnership buy-in loans</h3>
+<h3>Bank lending: partnership buy-in loans</h3>
 
 <p>Most large UK banks have dedicated partnership buy-in lending products:</p>
 
@@ -140,7 +140,7 @@ faqs:
 
 <h3>Family financing</h3>
 
-<p>Loans from family members to fund the buy-in. Often unsecured and at below-market interest rates. Document properly — HMRC scrutinises informal loans that might be characterised as gifts (with IHT implications) or as remuneration (with PAYE implications).</p>
+<p>Loans from family members to fund the buy-in. Often unsecured and at below-market interest rates. Document properly; HMRC scrutinises informal loans that might be characterised as gifts (with IHT implications) or as remuneration (with PAYE implications).</p>
 
 <h2>Tax treatment of buy-in financing</h2>
 
@@ -178,11 +178,11 @@ faqs:
 <p>Two structural approaches:</p>
 
 <ul>
-<li><strong>True partnership capital accounts</strong>: capital reflects the partner's share of the firm's net assets including goodwill. Goodwill appreciation accrues to capital. At exit, the partner gets back capital that may be substantially more than they contributed. The "appreciation" is a capital gain on the partnership interest — BADR may apply.</li>
+<li><strong>True partnership capital accounts</strong>: capital reflects the partner's share of the firm's net assets including goodwill. Goodwill appreciation accrues to capital. At exit, the partner gets back capital that may be substantially more than they contributed. The "appreciation" is a capital gain on the partnership interest; BADR may apply.</li>
 <li><strong>Notional capital accounts</strong>: capital is a fixed amount that doesn't reflect goodwill appreciation. At exit, the partner gets back what they contributed (in nominal terms). No goodwill share. Most City and large firms use this structure because it makes partner admission and exit cleaner.</li>
 </ul>
 
-<p>The structure used at your firm matters significantly for the exit economics. Magic Circle and most large LLPs use notional capital — your buy-in returns at face value, no goodwill share. Smaller firms often use true partnership capital — buy-in plus goodwill appreciation returns at exit.</p>
+<p>The structure used at your firm matters significantly for the exit economics. Magic Circle and most large LLPs use notional capital: your buy-in returns at face value, no goodwill share. Smaller firms often use true partnership capital: buy-in plus goodwill appreciation returns at exit.</p>
 
 <h3>Profit share to leaving date</h3>
 
@@ -197,20 +197,20 @@ faqs:
 <p>Worked example: a partner buys into a national firm London office as a junior equity partner with £80,000 capital, funded by a £80,000 loan at 7% over 10 years.</p>
 
 <ul>
-<li>Year 1 loan interest: £5,600 — tax relief at 40% = £2,240 — net interest £3,360</li>
-<li>Year 10 loan interest (declining balance): around £800 — tax relief £320 — net interest £480</li>
+<li>Year 1 loan interest: £5,600; tax relief at 40% = £2,240; net interest £3,360</li>
+<li>Year 10 loan interest (declining balance): around £800; tax relief £320; net interest £480</li>
 <li>Cumulative loan interest paid: approximately £30,000 (depending on amortisation schedule)</li>
 <li>Cumulative tax relief: approximately £12,000</li>
 <li>Net cumulative cost of financing the buy-in: approximately £18,000 over 10 years</li>
 </ul>
 
-<p>At exit after 20 years as a senior equity partner with notional capital structure: £80,000 capital returned. The buy-in cost net of relief, spread over the partnership career, is modest — around £1,800 per year of financing cost. The partner's profit share over those 20 years materially exceeds this.</p>
+<p>At exit after 20 years as a senior equity partner with notional capital structure: £80,000 capital returned. The buy-in cost net of relief, spread over the partnership career, is modest, around £1,800 per year of financing cost. The partner's profit share over those 20 years materially exceeds this.</p>
 
-<p>For firms with true partnership capital accounts and goodwill appreciation, the exit return can be materially larger than the buy-in amount — sometimes 2-5x depending on firm growth.</p>
+<p>For firms with true partnership capital accounts and goodwill appreciation, the exit return can be materially larger than the buy-in amount, sometimes 2-5x depending on firm growth.</p>
 
-<h2>What a partner firm would do if you brought them in</h2>
+<h2>What we would do if you brought us in</h2>
 
-<p>We match you with a regulated accountancy firm in our partner network. A partner-side advisory engagement with that firm covers:</p>
+<p>A partner-side advisory engagement with our team covers:</p>
 
 <ul>
 <li>Buy-in financing comparison: bank, specialist lender, family financing options</li>

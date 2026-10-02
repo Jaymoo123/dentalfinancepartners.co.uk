@@ -66,7 +66,7 @@ export default async function ThankYouPage({
             For specialist tax advisory work, including estate and inheritance tax planning, we work closely with Aswatax, a firm of Chartered Tax Advisers. If your enquiry needs that level of advice, it may be their team who contacts you. You are under no obligation at any point, and you can change your mind at any time by replying to any message from us.
           </p>
           <p className="mt-4 text-base leading-relaxed text-slate-600">
-            We may receive a fee from the firm we introduce you to if you use their services. It does not change what you pay.
+            Where the estate needs a solicitor for the legal side, we work alongside a regulated firm and stay on the money side.
           </p>
 
           {bookingToken ? (

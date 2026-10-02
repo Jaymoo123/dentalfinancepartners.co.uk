@@ -168,7 +168,7 @@ faqs:
 
 <p>External advice does not absolve the COLP of responsibility, but it demonstrates that the decision was made on an informed basis. The SRA views this positively.</p>
 
-<p>If you are a COLP or COFA looking for support with your firm's compliance framework, we can help. We match law firms with partner firms that specialise in <a href="/services/cofa-compliance-support">COFA compliance support</a> and can review your decision log as part of a broader compliance health check, and with partner firms offering <a href="/services/sra-accounts-rules">SRA Accounts Rules advisory</a> where you need technical accounting input on client money issues.</p>
+<p>If you are a COLP or COFA looking for support with your firm's compliance framework, we can help. Our <a href="/services/cofa-compliance-support">COFA compliance support</a> team can review your decision log as part of a broader compliance health check, and our <a href="/services/sra-accounts-rules">SRA Accounts Rules advisory</a> covers the technical accounting input you need on client money issues.</p>
 
 <p>For a broader overview of the COLP and COFA roles, see our <a href="/solicitor-guides/cofa-fundamentals">COFA fundamentals guide</a>. If you are considering a change in firm structure, our <a href="/solicitor-guides/partnership-vs-llp-for-solicitors">partnership vs LLP guide</a> covers the compliance implications of each structure.</p>
 

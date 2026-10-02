@@ -131,4 +131,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>If you are a COLP, COFA, or partner in a law firm, make sure your team understands when and how to report breaches. Regular training, clear internal procedures, and access to specialist advice are the best defences against regulatory action.</p>
 
-<p>For tailored guidance on SRA breach notifications, compliance systems, or accountant's reports, speak to the team at Accounts for Lawyers. We connect law firms with regulated accountancy firms in our specialist partner network, and the partner firm we match you with can help you navigate the SRA's requirements with confidence.</p>
+<p>For tailored guidance on SRA breach notifications, compliance systems, or accountant's reports, speak to the team at Accounts for Lawyers. We work only with law firms, and our team can help you navigate the SRA's requirements with confidence.</p>
