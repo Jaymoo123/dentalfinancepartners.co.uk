@@ -9,7 +9,7 @@ import { buildFaqPage } from "@/lib/schema/faq-page";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { getAllPosts, getCategorySlug } from "@/lib/blog";
 import { getAllFundamentals } from "@/lib/fundamentals";
-import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck, Quote, ShieldCheck } from "lucide-react";
+import { ArrowRight, BookOpen, Calculator, LineChart, Building2, FileCheck, ShieldCheck } from "lucide-react";
 import { ServiceTiers } from "@accounting-network/web-shared/components/ServiceTiers";
 import { StatsBar } from "@accounting-network/web-shared/components/StatsBar";
 import { serviceTiers, siteStats } from "@/config/service-tiers";
@@ -76,7 +76,7 @@ const agencyTypes = [
 const keyStats = [
   { value: "Agency-only", label: "Exclusive specialism" },
   { value: "Fixed fees", label: "No hidden charges" },
-  { value: "24hr", label: "Response guarantee" },
+  { value: "24hr", label: "Response time" },
   { value: "UK & UAE", label: "Territories covered" },
 ];
 
@@ -103,20 +103,20 @@ const faqs = [
   },
 ];
 
-// Composite testimonials — anonymised, based on patterns across founder-stories.
+// Composite outcomes: anonymised third-person scenarios, based on patterns across founder-stories.
 // Names/locations changed, tax mechanics real. See /founder-stories for full versions.
-const testimonials = [
+const outcomes = [
   {
-    quote: "They spotted a BADR balance-sheet issue 14 months before our sale. We saved £43k each on the exit.",
-    attribution: "Creative agency, 7 staff, Bristol (pre-exit)",
+    scenario: "A seven-person creative agency in Bristol: a BADR balance-sheet issue caught 14 months before sale, saving about £43k per founder on exit.",
+    stage: "Pre-exit",
   },
   {
-    quote: "Switching from sole trader to Ltd mid-year was the obvious move once they modelled it. £11k saved in year one.",
-    attribution: "Digital agency, founder + 2, London (early scaling)",
+    scenario: "A London digital agency, founder plus two staff: a mid-year switch from sole trader to limited company, modelled before the move, saving about £11k in year one.",
+    stage: "Early scaling",
   },
   {
-    quote: "We had no idea we qualified for R&D credits. The first claim covered three years of accountancy fees.",
-    attribution: "Performance marketing agency, 12 staff, Manchester (growth stage)",
+    scenario: "A 12-person performance marketing agency in Manchester: R&D credit eligibility it had not known about, with a first claim that covered three years of accountancy fees.",
+    stage: "Growth stage",
   },
 ];
 
@@ -165,7 +165,7 @@ export default function HomePage() {
             <div className="mt-6 sm:mt-8 flex items-center gap-2.5 text-xs sm:text-sm text-slate-300">
               <ShieldCheck className="h-4 w-4 text-indigo-400 flex-shrink-0" aria-hidden />
               <span className="font-semibold">
-                Trusted by founders behind multi-million-pound UK and UAE agencies
+                Agency-only accountants for UK founders, with Dubai support when you need it
               </span>
             </div>
           </div>
@@ -193,34 +193,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Composite testimonials — anonymised */}
-      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
+      {/* Composite outcomes: anonymised third-person scenarios, not testimonials */}
+      <section className="bg-slate-50 py-12 sm:py-16 lg:py-20" aria-labelledby="outcomes-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
             <div className="inline-block bg-slate-900 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
-              Real outcomes
+              Composite outcomes
             </div>
-            <h2 id="testimonials-heading" className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
-              What we&rsquo;ve done for agency founders
+            <h2 id="outcomes-heading" className="text-2xl font-bold text-slate-900 sm:text-3xl lg:text-4xl">
+              The kind of work we do for agency founders
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Composite snapshots based on patterns across our agency clients. Names and figures anonymised. The tax mechanics are real.
+              Anonymised composite scenarios drawn from our agency work; not individual client testimonials. The tax mechanics are real.
             </p>
           </div>
           <div className="grid gap-5 sm:gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <figure
+            {outcomes.map((o, i) => (
+              <div
                 key={i}
-                className="relative bg-white border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
               >
-                <Quote className="absolute top-4 right-4 h-6 w-6 text-indigo-200" aria-hidden />
-                <blockquote className="text-base sm:text-lg leading-relaxed text-slate-800 font-medium pr-8">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-slate-600">
-                  {t.attribution}
-                </figcaption>
-              </figure>
+                <p className="text-base sm:text-lg leading-relaxed text-slate-800 font-medium">
+                  {o.scenario}
+                </p>
+                <p className="mt-5 pt-4 border-t border-slate-100 text-xs sm:text-sm font-semibold text-slate-600">
+                  {o.stage}
+                </p>
+              </div>
             ))}
           </div>
           <div className="text-center mt-8 sm:mt-10">

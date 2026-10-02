@@ -94,7 +94,7 @@ keyTakeaways:
 
 <p>If you work with clients in the US, Europe, or the Middle East, you need multi-currency functionality. Not just the ability to send invoices in USD or EUR. But proper multi-currency accounting that tracks exchange rate gains and losses.</p>
 
-<p>Here's a real example. A Manchester-based digital agency invoices a US client $12,000 for a website build. At the time of invoice, that's worth £9,600. The client pays 45 days later. By then, the exchange rate has moved. The £9,600 is now worth £9,820 in your bank account. That £220 difference is a currency gain. It's taxable.</p>
+<p>Here's an illustrative example. A Manchester-based digital agency invoices a US client $12,000 for a website build. At the time of invoice, that's worth £9,600. The client pays 45 days later. By then, the exchange rate has moved. The £9,600 is now worth £9,820 in your bank account. That £220 difference is a currency gain. It's taxable.</p>
 
 <p>If your software doesn't track this automatically, you'll either miss the gain (and underpay tax) or have to manually calculate it (and waste time).</p>
 

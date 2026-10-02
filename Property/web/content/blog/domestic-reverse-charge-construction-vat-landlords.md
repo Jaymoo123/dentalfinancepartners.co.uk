@@ -172,4 +172,4 @@ editorialNote: "VAT bucket page. Focus is the practical operation of the constru
   <li><strong>Group structures with mixed end-user and intermediary roles.</strong> A holding company is an end user when buying for its own development; it is an intermediary when on-supplying to a sales SPV. The notification position is per-supply, not per-entity, and group VAT registration does not change this.</li>
 </ol>
 
-<p>For the wider VAT picture on property transactions (option to tax, TOGCs on letting businesses, the DIY housebuilders scheme, TOMS on serviced accommodation), see the other VAT bucket pages published as part of this Track 1 wave.</p>
+<p>For the wider VAT picture on property transactions (option to tax, TOGCs on letting businesses, the DIY housebuilders scheme, TOMS on serviced accommodation), see our other VAT guides for landlords.</p>

@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "What is the optimal salary and dividend split for a marketing agency director?",
-    a: "Most limited company marketing agency founders take a salary up to the NI primary threshold (£12,570 in 2025/26) and draw the remainder as dividends. The optimal split depends on your total income, other sources, pension contributions and whether you have a spouse with shares. We model this individually for each client.",
+    a: "Most limited company marketing agency founders take a salary up to the NI primary threshold (£12,570 in 2026/27) and draw the remainder as dividends. The optimal split depends on your total income, other sources, pension contributions and whether you have a spouse with shares. We model this individually for each client.",
   },
   {
     q: "Should I incorporate my marketing agency?",

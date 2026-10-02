@@ -63,7 +63,7 @@ keyTakeaways:
 
 <p>Compare that to the old rates. Before 30 October 2024, non-residents paid 10% and 20% respectively. The Autumn 2024 Budget increased those rates to 18% and 24% for all property disposals, including by non-residents.</p>
 
-<p>Let us run a real example. You sell a UK property and make a gain of £150,000. You have no other UK income. Your CGT calculation looks like this:</p>
+<p>Let us run a worked example. You sell a UK property and make a gain of £150,000. You have no other UK income. Your CGT calculation looks like this:</p>
 
 <ul>
 <li>Annual exempt amount: £3,000</li>

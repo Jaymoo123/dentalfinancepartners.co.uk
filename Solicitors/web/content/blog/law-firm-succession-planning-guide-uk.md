@@ -155,7 +155,7 @@ faqs:
 
 <h3>External Financing</h3>
 
-<p>Banks increasingly offer specialized law firm succession financing. Typical arrangements include:</p>
+<p>Banks increasingly offer specialised law firm succession financing. Typical arrangements include:</p>
 
 <ul>
 <li>Term loans secured against practice assets and future profits</li>

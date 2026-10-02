@@ -134,7 +134,7 @@ export default function AboutPage() {
 
                 No fee, no number, no duration, and the promising party is named. */}
             <p>
-              Fees are agreed before any work starts. Our CIS specialist agrees the fee with you up front, so nothing begins until you have. You deal with specialist CIS accountants, not a call centre.
+              Fees are agreed before any work starts. Our CIS specialist agrees the fee with you up front, so nothing begins until you have agreed it. You deal with specialist CIS accountants, not a call centre.
             </p>
           </div>
         </div>

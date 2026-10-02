@@ -86,7 +86,7 @@ keyTakeaways:
 <li><strong>Reputational damage</strong>, HMRC publishes details of employers who fail to comply</li>
 <li><strong>Employee issues</strong>, your UK staff may face problems with mortgage applications, benefits, or pensions if they cannot prove proper employment history</li>
 </ul>
-<p>One agency we worked with had been paying a UK-based senior developer through their Dubai entity for 18 months. They thought it was fine because the contract was with the Dubai company. HMRC issued a bill for £47,300 in backdated tax, NI, and penalties. The agency had to sell equity to cover it.</p>
+<p>Picture an agency that had been paying a UK-based senior developer through their Dubai entity for 18 months. They thought it was fine because the contract was with the Dubai company. HMRC issued a bill for £47,300 in backdated tax, NI, and penalties. The agency had to sell equity to cover it.</p>
 
 <h2>How to Structure It Properly</h2>
 <p>There are three legitimate ways to handle UK employees from a Dubai agency. Each has different costs and complexity.</p>

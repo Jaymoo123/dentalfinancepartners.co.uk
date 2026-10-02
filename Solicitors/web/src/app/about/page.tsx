@@ -77,7 +77,7 @@ export default function AboutPage() {
               siteContainerLg. */}
           <div className="mt-8 max-w-3xl">
             <h1 className="text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-5xl">
-              Specialist accountancy matching for solicitors and law firms
+              Specialist accountants for solicitors and law firms
             </h1>
             <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
               We work exclusively with UK solicitors, law firms, and legal practitioners. From sole practitioners managing self-assessment to multi-partner LLPs navigating complex tax structures, we understand the unique financial and regulatory challenges facing the legal sector.
@@ -109,7 +109,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">Our approach</h2>
           <Prose>
             <p>
-              We believe accounting for solicitors should be clear, proactive, and focused on your specific needs. Whether you're managing SRA compliance, optimizing your partnership structure, or planning practice succession, our guidance is grounded in legal sector expertise.
+              We believe accounting for solicitors should be clear, proactive, and focused on your specific needs. Whether you're managing SRA compliance, optimising your partnership structure, or planning practice succession, our guidance is grounded in legal sector expertise.
             </p>
             <p>
               Our accountants work with sole practitioners handling self-assessment and MTD compliance, law firm partners navigating profit allocations and LLP conversions, practice managers ensuring client money compliance, and multi-partner firms planning succession and growth.
@@ -157,22 +157,6 @@ export default function AboutPage() {
               Whether you're in London, Manchester, Birmingham, Leeds, Bristol, or anywhere else in the UK, we provide the same specialist service and legal sector expertise.
             </p>
           </Prose>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className={`${siteContainerLg} ${sectionY}`}>
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-4xl">
-            Ready to work with specialist solicitor accountants?
-          </h2>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">
-            Book a free consultation to discuss your practice's accounting needs. One of our specialists will take it from there, with no obligation.
-          </p>
-          <div className="mt-8">
-            <Link href="/contact" className={btnPrimary}>
-              Book free consultation
-            </Link>
-          </div>
         </div>
       </section>
 

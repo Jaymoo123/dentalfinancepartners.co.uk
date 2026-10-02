@@ -90,7 +90,7 @@ Use this for stage payments or upfront project fees that have not yet been earne
 
 <p>In Xero, you can use the "Billable" or "Work in Progress" features to automate this. In QuickBooks, you can use the "Deferred Revenue" account type and run a monthly journal to move amounts to earned revenue. Either way, the account must exist in your chart.</p>
 
-<p>Let me give you a real example. A 12-person digital agency in Bristol Harbourside bills a £6,000 per month retainer for SEO work. They invoice on the 1st for the month ahead. If they did not use deferred revenue, their January P&L would show £6,000 of income earned in January even though the work is delivered across the whole month. By the 15th of January, they have only earned half of it. A deferred revenue account fixes that distortion.</p>
+<p>Let me give you an illustrative example. A 12-person digital agency in Bristol Harbourside bills a £6,000 per month retainer for SEO work. They invoice on the 1st for the month ahead. If they did not use deferred revenue, their January P&L would show £6,000 of income earned in January even though the work is delivered across the whole month. By the 15th of January, they have only earned half of it. A deferred revenue account fixes that distortion.</p>
 
 <h2>Cost of Sales: Tracking Gross Margin by Service Line</h2>
 

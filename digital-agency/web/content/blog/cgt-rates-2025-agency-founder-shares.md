@@ -76,7 +76,7 @@ keyTakeaways:
 
 <h2>Worked Example: A 12-Person Digital Agency</h2>
 
-<p>Let's run a real example. Sarah owns 100% of a digital agency in Manchester's Northern Quarter. She has been running it for 8 years. The agency turns over £1.2 million and makes £280k profit. Sarah wants to sell her shares to a larger group for £1.5 million.</p>
+<p>Let's run an illustrative example. Sarah owns 100% of a digital agency in Manchester's Northern Quarter. She has been running it for 8 years. The agency turns over £1.2 million and makes £280k profit. Sarah wants to sell her shares to a larger group for £1.5 million.</p>
 
 <p>Her gain is roughly £1.5 million minus her original subscription cost (say £100). So £1,499,900.</p>
 

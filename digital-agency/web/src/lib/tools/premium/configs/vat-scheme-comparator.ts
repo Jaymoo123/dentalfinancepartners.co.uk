@@ -65,7 +65,7 @@ export const vatSchemeComparatorConfig: PremiumToolConfig = {
       min: 0,
       max: 100000,
       step: 100,
-      help: "Annual spend on goods, not services. The limited-cost-trader test is goods under 2% of VAT-inclusive turnover or under £1,000 a year (HP §6). Most agencies spend very little on goods.",
+      help: "Annual spend on goods, not services. The limited-cost-trader test is goods under 2% of VAT-inclusive turnover or under £1,000 a year. Most agencies spend very little on goods.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -135,7 +135,7 @@ export const vatSchemeComparatorConfig: PremiumToolConfig = {
           { name: "Flat Rate", vatToPay: Math.round(r.flatPayment) },
         ],
       },
-      note: "VAT registration threshold £90,000; deregistration £88,000 (HP §6). Most agencies are limited-cost traders (goods spend below 2% of VAT-inclusive turnover or below £1,000 a year), which forces the 16.5% flat rate on gross takings. After reclaiming input VAT on software, equipment and professional fees, the standard scheme is usually cheaper for a typical agency. The 1% first-year FRS discount applies in the first year of VAT registration. MTD for VAT has been mandatory since April 2022. For overseas clients, the place-of-supply rules (reverse charge on B2B services to business customers outside the UK) may take the turnover outside the scope of UK VAT; take specialist advice on your specific client base.",
+      note: "VAT registration threshold £90,000; deregistration £88,000. Most agencies are limited-cost traders (goods spend below 2% of VAT-inclusive turnover or below £1,000 a year), which forces the 16.5% flat rate on gross takings. After reclaiming input VAT on software, equipment and professional fees, the standard scheme is usually cheaper for a typical agency. The 1% first-year FRS discount applies in the first year of VAT registration. MTD for VAT has been mandatory since April 2022. For overseas clients, the place-of-supply rules (reverse charge on B2B services to business customers outside the UK) may take the turnover outside the scope of UK VAT; take specialist advice on your specific client base.",
     };
   },
   chart: {

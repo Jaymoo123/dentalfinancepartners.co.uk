@@ -48,7 +48,7 @@ export default function AboutPage() {
                   <span className="font-semibold text-neutral-900">Plain-English guides.</span> Step-by-step explanations of probate, wills, inheritance tax and estate planning, written from official source material and kept current.
                 </li>
                 <li>
-                  <span className="font-semibold text-neutral-900">Specialist help.</span> If you want professional help, one of our estate planning specialists can take it on. We only ever get in touch with your consent.
+                  <span className="font-semibold text-neutral-900">Specialist help.</span> If you want professional help, one of our estate planning specialists can take it on. No cold calls. We only contact you about the enquiry you send.
                 </li>
               </ul>
             </div>
@@ -70,7 +70,7 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we make money</h2>
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we are paid</h2>
               <p>
                 Honesty about this matters to us. We earn fees for the estate accounting and inheritance tax work our team does for clients who ask for it. That never changes what our guides and calculators say. The tools and content are free for everyone, whether or not you ever speak to a specialist.
               </p>

@@ -244,7 +244,7 @@ export default function BlogIndexPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Get your property tax sorted"
-          description="Reading up is the right first step. The second is a specialist looking at your actual numbers. Tell us what you own, how it is held and what is on your mind, and we will come back within 24 hours with clear recommendations and a fixed fee in writing."
+          description="Reading up is the right first step. The second is a specialist looking at your actual numbers. Tell us what you own, how it is held and what is on your mind, and we will come back within 24 hours with clear recommendations and a clear quote."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },

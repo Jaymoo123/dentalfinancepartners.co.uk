@@ -82,7 +82,7 @@ keyTakeaways:
 
 <h2>What Happens If You Trigger the Rule</h2>
 
-<p>Let us run the numbers on a real example.</p>
+<p>Let us run the numbers on a worked example.</p>
 
 <p><strong>Before:</strong></p>
 <ul>

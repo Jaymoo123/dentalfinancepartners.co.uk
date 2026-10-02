@@ -73,7 +73,7 @@ const included = [
     body: "Every client we work with is an agency founder. That exclusive focus means we see agency finance problems every week, not once every few years. The advice is faster, more relevant, and grounded in patterns across agencies like yours.",
   },
   {
-    title: "24-hour response guarantee",
+    title: "24-hour response time",
     body: "Email or call us with a question. We respond within 24 hours, usually same day. You are never waiting a week for an answer.",
   },
   {

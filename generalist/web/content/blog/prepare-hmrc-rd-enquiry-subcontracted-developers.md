@@ -162,9 +162,9 @@ howToSteps:
 
 <h2>Real Example: A Manchester Software Company's Enquiry</h2>
 
-<p>We worked with a software consultancy in Manchester's Northern Quarter that claimed R&D relief on £180,000 of subcontracted developer costs. HMRC opened an enquiry asking for contracts, timesheets, and a breakdown of qualifying activities.</p>
+<p>Take a software consultancy that claims R&D relief on £180,000 of subcontracted developer costs. HMRC opens an enquiry asking for contracts, timesheets, and a breakdown of qualifying activities.</p>
 
-<p>The company had used three subcontractors. Two had signed contracts that clearly stated the company owned the IP. The third had a verbal agreement only. HMRC disallowed the costs for the third subcontractor because there was no written contract and no evidence that the company directed the work. The total reduction was £42,000 of the claimed relief, plus interest.</p>
+<p>The company has used three subcontractors. Two have signed contracts that clearly state the company owns the IP. The third has a verbal agreement only. HMRC disallows the costs for the third subcontractor because there is no written contract and no evidence that the company directed the work. The total reduction is £42,000 of the claimed relief, plus interest.</p>
 
 <p>The lesson: written contracts are not optional. They are the minimum standard HMRC expects.</p>
 

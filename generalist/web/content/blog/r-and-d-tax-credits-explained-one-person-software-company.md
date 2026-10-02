@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p>The key distinction: <strong>building a standard CRUD app</strong> (create, read, update, delete) is not R&D. Building a CRUD app that must process 10,000 transactions per second on a £50/month server, where every standard framework fails, is R&D.</p>
 
-<p>A real example. A solo developer in Shoreditch built a real-time data visualisation tool for financial traders. The standard charting libraries could not render updates faster than 200ms. The developer spent six months writing a custom WebGL renderer that achieved 15ms update times. That is R&D. The uncertainty was whether a single developer could achieve that performance without a team. The investigation was the iterative testing of different rendering approaches. The advance was a method that did not exist in any public library.</p>
+<p>A worked example. A solo developer in Shoreditch built a real-time data visualisation tool for financial traders. The standard charting libraries could not render updates faster than 200ms. The developer spent six months writing a custom WebGL renderer that achieved 15ms update times. That is R&D. The uncertainty was whether a single developer could achieve that performance without a team. The investigation was the iterative testing of different rendering approaches. The advance was a method that did not exist in any public library.</p>
 
 <h2>How to Prove Your Solo R&D Work Without a Project Manager</h2>
 

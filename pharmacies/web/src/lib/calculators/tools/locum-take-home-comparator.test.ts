@@ -52,7 +52,7 @@ describe("locumTakeHomeComparator", () => {
     // profitBT = 73600 - 12570 - 1135.50 - 3000 = 56894.50
     // CT = 56894.50*0.25 - (3/200)*(250000-56894.50) = 14223.625 - 2896.5825 = 11327.04 → "£11,327"
     const result = locumTakeHomeComparator.compute(BASE);
-    const ctRow = result.rows?.find((r) => r.label === "Corporation tax (HP 27)");
+    const ctRow = result.rows?.find((r) => r.label === "Corporation tax");
     expect(ctRow?.value).toBe("−£11,327");
   });
 
@@ -60,7 +60,7 @@ describe("locumTakeHomeComparator", () => {
     // dividends ≈ 45567.46; dBasic=37200 (after £500 allowance), dHigher=7867.46
     // divTax = 37200*0.1075 + 7867.46*0.3575 = 3999 + 2812.62 = 6811.62 → "£6,812"
     const result = locumTakeHomeComparator.compute(BASE);
-    const divTaxRow = result.rows?.find((r) => r.label === "Dividend tax (HP 28)");
+    const divTaxRow = result.rows?.find((r) => r.label === "Dividend tax");
     expect(divTaxRow?.value).toBe("−£6,812");
   });
 

@@ -441,7 +441,7 @@ export default function ServicesPage() {
         <LeadCTAPanel
           contained
           title="Find out what your current setup is costing you"
-          description="Tell us what you own and how it is held. We will come back within 24 hours with where the money is leaking and a fixed fee in writing if you want us to fix it."
+          description="Tell us what you own and how it is held. We will come back within 24 hours with where the money is leaking and a clear quote if you want us to fix it."
           proofPoints={[
             { title: "Property-only specialists", detail: "We work with landlords and investors, nothing else" },
             { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },

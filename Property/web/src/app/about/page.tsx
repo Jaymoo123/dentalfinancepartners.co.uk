@@ -230,7 +230,7 @@ export default function AboutPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Get your property tax sorted"
-          description="Tell us what you own, how it is held and what is on your mind. We will come back within 24 hours with where a specialist would look first, and a fixed fee in writing if you want the work done."
+          description="Tell us what you own, how it is held and what is on your mind. We will come back within 24 hours with where a specialist would look first, and a clear quote if you want the work done."
           proofPoints={[
             { title: "Property tax only", detail: "Section 24, CGT and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "In writing, before any work starts" },

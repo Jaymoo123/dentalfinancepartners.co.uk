@@ -76,7 +76,7 @@ keyTakeaways:
 <li><strong>Shared assets.</strong> If you use the same laptop for both companies, you need a clear basis for claiming capital allowances. You cannot claim 100% on the same asset twice.</li>
 <li><strong>VAT complications.</strong> If one company is VAT registered and the other is not, transactions between them need proper VAT invoices. HMRC will check.</li>
 </ul>
-<p>A client of ours ran an outside-IR35 contract through his Ltd while also owning a separate Ltd that ran a property portfolio. He paid for property repairs from his contractor Ltd bank account, calling it a director's loan. The loan was never formalised. When HMRC opened an IR35 enquiry on his contract, they found the mixed accounts and argued that his contractor Ltd was not a genuine business. The enquiry took 14 months to resolve. He paid £8,400 in professional fees to fight it.</p>
+<p>Take a contractor who runs an outside-IR35 contract through his Ltd while also owning a separate Ltd that runs a property portfolio. He pays for property repairs from his contractor Ltd bank account, calling it a director's loan. The loan is never formalised. When HMRC opens an IR35 enquiry on his contract, they find the mixed accounts and argue that his contractor Ltd is not a genuine business. The enquiry takes 14 months to resolve. He pays £8,400 in professional fees to fight it.</p>
 
 <h2>Can You Pay Yourself From Both Companies?</h2>
 <p>Yes, but the tax treatment is different for each.</p>

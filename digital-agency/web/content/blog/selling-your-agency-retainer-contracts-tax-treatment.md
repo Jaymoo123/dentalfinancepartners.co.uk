@@ -75,7 +75,7 @@ keyTakeaways:
 
 <p>Here is the tax trap. If the earn-out is structured as additional consideration for the shares, the full amount is capital in nature and qualifies for CGT treatment, including BADR if you meet the conditions. But if the earn-out is structured as a payment for services, or if it's linked to you staying on as a director and generating revenue, HMRC may treat it as employment income. That means income tax at your marginal rate (up to 45%) plus Class 1 National Insurance at 15% on the employer side and 2% on the employee side.</p>
 
-<p>Let me give you a real example. A 12-person PR agency in Bristol sold for £1.2m. The deal was structured as £800k upfront for the shares and £400k earn-out over two years, based on retaining at least 80% of the retainer book. The founder stayed on as a consultant for 12 months. HMRC challenged the earn-out, arguing that because the founder was still providing services, the earn-out was remuneration for ongoing work, not consideration for the shares.</p>
+<p>Let me give you an illustrative example. A 12-person PR agency in Bristol sold for £1.2m. The deal was structured as £800k upfront for the shares and £400k earn-out over two years, based on retaining at least 80% of the retainer book. The founder stayed on as a consultant for 12 months. HMRC challenged the earn-out, arguing that because the founder was still providing services, the earn-out was remuneration for ongoing work, not consideration for the shares.</p>
 
 <p>The founder ended up paying income tax at 40% plus NI on the earn-out, rather than 18% CGT under BADR. That cost them roughly £120k in extra tax.</p>
 

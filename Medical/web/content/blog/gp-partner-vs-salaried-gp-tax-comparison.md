@@ -20,7 +20,7 @@ keyTakeaways:
 - "A GP partner is self-employed, taxed on their profit share via SA800 and SA104; a salaried GP is a PAYE employee taxed at source."
 - "Partners pay Class 4 NIC at 6% on profit between £12,570 and £50,270 and 2% above; salaried GPs pay Class 1 employee NIC at 8% on the same band, so the partner saves £754 a year once income reaches £50,270."
 - "Both routes accrue NHS Pension in the 2015 CARE section: a partner pensions profit as Type 1, a salaried GP as Type 2."
-- "The pension annual allowance is £60,000 for 2025/26, tapering once threshold income exceeds £200,000 and adjusted income exceeds £260,000."
+- "The pension annual allowance is £60,000 for 2026/27, tapering once threshold income exceeds £200,000 and adjusted income exceeds £260,000."
 - "Partnership adds Self Assessment and payments on account on 31 January and 31 July; the take-home gain over a salaried GP is usually modest."
 summary: Understanding the tax differences between GP partners and salaried GPs is crucial for career decisions and financial planning. This guide breaks down the key tax implications of each role.
 schema: ''
@@ -32,7 +32,7 @@ faqs:
 - question: Do GP partners and salaried GPs both get the NHS Pension?
   answer: Yes. Both are active members of the NHS Pension Scheme and both accrue benefits in the 2015 CARE section. A salaried GP pensions their pay as a Type 2 practitioner; a GP partner pensions their NHS profit share and completes an Annual Certificate of Pensionable Profits as a Type 1 practitioner. Higher earners on either route can be caught by the annual allowance taper.
 - question: Is the pension annual allowance £40,000 for high-earning GPs?
-  answer: No. The annual allowance is £60,000 for 2025/26. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a floor of £10,000. For the NHS Pension the figure measured is the growth in your benefits (the pension input amount), not the contributions paid.
+  answer: No. The annual allowance is £60,000 for 2026/27. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a floor of £10,000. For the NHS Pension the figure measured is the growth in your benefits (the pension input amount), not the contributions paid.
 - question: Does becoming a GP partner always mean paying less tax?
   answer: Not always. A partner pays less National Insurance than a salaried GP at the same income, £754 a year less once income reaches £50,270, because Class 4 charges 6% where Class 1 charges 8% on the band above £12,570, and a partner can claim a broader range of business expenses. Beyond that fixed National Insurance gap the outcome depends on the practice's profitability, your profit share and your expenses. Partnership also brings Self Assessment, payments on account, business records and a share of practice risk. The numbers below are illustrative only.
 - question: Who handles the tax return for each route?
@@ -113,7 +113,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h3>The Annual Allowance Taper</h3>
 
-<p>Higher-earning GPs on either route can be caught by the pension <strong>annual allowance</strong>, which is <strong>£60,000</strong> for 2025/26. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, reducing by £1 for every £2 of adjusted income over £260,000, down to a floor of £10,000. For a defined-benefit scheme like the NHS Pension, the figure measured against the allowance is the <strong>growth in your benefits</strong> (the pension input amount), not the contributions you pay, which is why a good year of pay growth can trigger a charge. Older figures such as a £40,000 allowance or a £4,000 floor are out of date and should not be relied on. Where a charge arises, Scheme Pays can settle it from the pension. For the detail, see our <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance complete guide</a>.</p>
+<p>Higher-earning GPs on either route can be caught by the pension <strong>annual allowance</strong>, which is <strong>£60,000</strong> for 2026/27. It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, reducing by £1 for every £2 of adjusted income over £260,000, down to a floor of £10,000. For a defined-benefit scheme like the NHS Pension, the figure measured against the allowance is the <strong>growth in your benefits</strong> (the pension input amount), not the contributions you pay, which is why a good year of pay growth can trigger a charge. Older figures such as a £40,000 allowance or a £4,000 floor are out of date and should not be relied on. Where a charge arises, Scheme Pays can settle it from the pension. For the detail, see our <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance complete guide</a>.</p>
 
 <h2>Business Expenses and Tax Relief</h2>
 

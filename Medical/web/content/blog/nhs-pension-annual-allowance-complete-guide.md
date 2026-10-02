@@ -18,15 +18,15 @@ altText: UK medical professional reviewing NHS pension annual allowance document
 h1: 'NHS Pension Annual Allowance: Complete Guide for UK Medical Professionals'
 keyTakeaways:
 - "For defined-benefit NHS pensions the test is the growth in your benefits (the pension input amount), not the contributions you pay."
-- "The standard annual allowance is £60,000 for 2025/26, tapering by £1 for every £2 of adjusted income above £260,000 to a £10,000 floor."
+- "The standard annual allowance is £60,000 for 2026/27, tapering by £1 for every £2 of adjusted income above £260,000 to a £10,000 floor."
 - "Any excess above your allowance, after carry forward from the previous three years, is taxed at your marginal rate of 20%, 40% or 45%."
 - "Mandatory Scheme Pays applies where the charge exceeds £2,000 and NHS growth alone exceeds £60,000, meeting it from your future pension."
 - "The lifetime allowance ended on 6 April 2024, replaced by a £268,275 Lump Sum Allowance and a £1,073,100 Lump Sum and Death Benefit Allowance."
 summary: The NHS pension annual allowance limits how much your pension can grow tax free each year. For a defined benefit scheme the test is the growth in your benefits (the pension input amount), not the contributions you pay, which is why high earning doctors are caught even though they never chose to over-contribute.
 schema: ''
 faqs:
-- question: What is the NHS pension annual allowance for 2025/26?
-  answer: The standard annual allowance is £60,000 for 2025/26. It tapers for high earners where threshold income is over £200,000 and adjusted income is over £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. The money purchase annual allowance, which applies if you have flexibly accessed a defined contribution pot, is £10,000.
+- question: What is the NHS pension annual allowance for 2026/27?
+  answer: The standard annual allowance is £60,000 for 2026/27. It tapers for high earners where threshold income is over £200,000 and adjusted income is over £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. The money purchase annual allowance, which applies if you have flexibly accessed a defined contribution pot, is £10,000.
 - question: How do I work out my NHS pension annual allowance usage?
   answer: For the NHS defined benefit scheme you measure the pension input amount, which is the growth in your benefits over the year, not the contributions you pay. The closing value of your annual pension is multiplied by 16 (plus any separate lump sum for 1995 section service multiplied by 1), the opening value is uplifted by inflation, and the difference is your input amount. NHS Business Services Authority issues a pension savings statement showing the figure, though it usually arrives well into the following tax year.
 - question: What happens if I exceed the NHS pension annual allowance?
@@ -48,7 +48,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>What is the Annual Allowance?</h2>
 
-<p>The annual allowance is the maximum your pension savings can grow each tax year with the benefit of tax relief. For <strong>2025/26 the standard annual allowance is £60,000</strong>. If your pension growth across all registered schemes exceeds your available allowance for the year, the excess is added to your taxable income and taxed at your marginal rate.</p>
+<p>The annual allowance is the maximum your pension savings can grow each tax year with the benefit of tax relief. For <strong>2026/27 the standard annual allowance is £60,000</strong>. If your pension growth across all registered schemes exceeds your available allowance for the year, the excess is added to your taxable income and taxed at your marginal rate.</p>
 
 <p>The allowance covers all of your pension saving in the tax year added together: your NHS benefits, any Money Purchase Additional Voluntary Contributions (AVCs), Added Pension, and any private or personal pension. For most doctors the NHS scheme is by far the largest component.</p>
 
@@ -166,7 +166,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Recent Changes and the Current Figures</h2>
 
-<p>For context, the standard annual allowance was increased from £40,000 to £60,000 in April 2023, and the taper thresholds and floor were eased at the same time. Those were the historical changes; the figures that apply now for 2025/26 are a <strong>standard allowance of £60,000</strong>, a <strong>threshold income gateway of £200,000</strong>, an <strong>adjusted income threshold of £260,000</strong>, a <strong>tapered minimum of £10,000</strong>, and an <strong>MPAA of £10,000</strong>. Always confirm your planning reflects the current rules, because pension tax limits are reviewed regularly.</p>
+<p>For context, the standard annual allowance was increased from £40,000 to £60,000 in April 2023, and the taper thresholds and floor were eased at the same time. Those were the historical changes; the figures that apply now for 2026/27 are a <strong>standard allowance of £60,000</strong>, a <strong>threshold income gateway of £200,000</strong>, an <strong>adjusted income threshold of £260,000</strong>, a <strong>tapered minimum of £10,000</strong>, and an <strong>MPAA of £10,000</strong>. Always confirm your planning reflects the current rules, because pension tax limits are reviewed regularly.</p>
 
 <h2>Related Reading</h2>
 

@@ -52,7 +52,7 @@ export default function ServicesIndexPage() {
       <LeadCTAPanel
         contained
         ground="slate"
-        eyebrow="Free first call, then a fixed fee in writing"
+        eyebrow="Free consultation"
         title="Talk to a care sector specialist"
         description="Tell us about your situation and we will reply within 24 hours."
         proofPoints={[]}

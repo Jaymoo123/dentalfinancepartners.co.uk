@@ -17,7 +17,7 @@ altText: "Nottingham medical professional meeting with specialist GP accountant 
 h1: "Nottingham GP Accountant: Expert Tax & Accounting for Medical Professionals"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold, a prohibition in force since 1 April 2004 and now set out in SI 2019/251."
-- "The NHS Pension annual allowance is £60,000 for 2025/26, tapering by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor, and is measured on defined-benefit growth rather than contributions paid."
+- "The NHS Pension annual allowance is £60,000 for 2026/27, tapering by £1 for every £2 of adjusted income above £260,000 down to a £10,000 floor, and is measured on defined-benefit growth rather than contributions paid."
 - "A GP partner is taxed on their allocated profit share, not on the drawings they take, with the practice filing an SA800 and each share flowing to the partner's own return."
 - "Business mileage between sites is 55p per mile for the first 10,000 business miles in 2026/27 (raised from 45p on 6 April 2026), then 25p."
 - "Making Tax Digital for Income Tax applies from £50,000 of qualifying income from 6 April 2026, then £30,000 from April 2027 and £20,000 from April 2028, tested on the prior year."
@@ -26,7 +26,7 @@ schema: ""
 canonical: "https://www.medicalaccounts.co.uk/blog/nottingham-gp-accountant"
 faqs:
   - question: "What makes a GP accountant different from a high street accountant?"
-    answer: "A specialist GP accountant understands the parts of medical taxation a general accountant rarely meets: the NHS Pension Scheme annual allowance (£60,000 for 2025/26, tapered where threshold income exceeds £200,000 and adjusted income exceeds £260,000), the pension input amount on the 2015 CARE section, GP partnership profit allocation on the SA800, Type 1 and Type 2 pension certificates, and the fact that NHS GP goodwill cannot be sold. They follow Finance Act 2026 changes and NHS contract uplifts that a general practice would not track."
+    answer: "A specialist GP accountant understands the parts of medical taxation a general accountant rarely meets: the NHS Pension Scheme annual allowance (£60,000 for 2026/27, tapered where threshold income exceeds £200,000 and adjusted income exceeds £260,000), the pension input amount on the 2015 CARE section, GP partnership profit allocation on the SA800, Type 1 and Type 2 pension certificates, and the fact that NHS GP goodwill cannot be sold. They follow Finance Act 2026 changes and NHS contract uplifts that a general practice would not track."
   - question: "Do I need a Nottingham accountant nearby, or can a medical accountant work remotely?"
     answer: "Modern cloud accounting means a specialist medical accountant can serve you wherever you are in the East Midlands. A Nottingham base helps with face to face meetings for complex pension or partnership planning and a working knowledge of local employers such as Nottingham University Hospitals NHS Trust. For most doctors the medical specialism matters more than the postcode, because the technical issues are NHS pension and partnership ones, not local ones."
   - question: "When should a Nottingham doctor speak to a specialist medical accountant?"
@@ -52,7 +52,7 @@ faqs:
 <li><strong>Finance Act 2026:</strong> the dividend, capital allowance and Business Asset Disposal Relief changes that take effect across 2026/27.</li>
 </ul>
 
-<p>For example, a GP partner in West Bridgford with strong pensionable profit growth can quietly breach the £60,000 annual allowance (2025/26) and face a charge at their marginal rate. Spotting that early, and using Scheme Pays where it qualifies, is the kind of planning a medical specialist does as routine.</p>
+<p>For example, a GP partner in West Bridgford with strong pensionable profit growth can quietly breach the £60,000 annual allowance (2026/27) and face a charge at their marginal rate. Spotting that early, and using Scheme Pays where it qualifies, is the kind of planning a medical specialist does as routine.</p>
 
 <h2>Services for Nottingham medical professionals</h2>
 
@@ -81,7 +81,7 @@ faqs:
 
 <h2>NHS pension planning for Nottingham doctors</h2>
 
-<p>The NHS Pension Scheme is the single biggest planning area for higher-earning GPs and consultants. Since 1 April 2022 all active members accrue in the 2015 CARE section (1/54th of each year's pensionable earnings), with the 1995 and 2008 sections now legacy service. The headline figures for 2025/26 are:</p>
+<p>The NHS Pension Scheme is the single biggest planning area for higher-earning GPs and consultants. Since 1 April 2022 all active members accrue in the 2015 CARE section (1/54th of each year's pensionable earnings), with the 1995 and 2008 sections now legacy service. The headline figures for 2026/27 are:</p>
 
 <ul>
 <li><strong>Annual allowance £60,000</strong> (raised from £40,000 in April 2023), measured for a defined-benefit scheme by the pension input amount (growth), not by contributions.</li>

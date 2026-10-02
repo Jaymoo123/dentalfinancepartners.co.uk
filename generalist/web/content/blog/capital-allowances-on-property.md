@@ -142,7 +142,7 @@ keyTakeaways:
 
 <p>If you are buying a commercial property, instruct a surveyor or capital allowances specialist before completion. They can identify the qualifying plant and prepare the apportionment. The cost is deductible, and the claim can be significant. A typical commercial property might have 10% to 30% of the purchase price attributable to qualifying plant.</p>
 
-<p>For example, a client of ours bought a former retail unit in the Northern Quarter of Manchester for £420,000. The survey identified £92,800 of qualifying plant, including the heating system, electrical installation, and fitted shop fittings. The client claimed the full amount under the AIA, reducing their corporation tax bill by £23,200 in year one.</p>
+<p>For example, take a company that buys a former retail unit for £420,000. The survey identifies £92,800 of qualifying plant, including the heating system, electrical installation, and fitted shop fittings. The company claims the full amount under the AIA, reducing its corporation tax bill by £23,200 in year one.</p>
 
 <h2>Structures and Buildings Allowance (SBA)</h2>
 

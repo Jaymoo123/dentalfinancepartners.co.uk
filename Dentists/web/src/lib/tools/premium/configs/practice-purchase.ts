@@ -233,7 +233,7 @@ export const practicePurchaseConfig: PremiumToolConfig = {
           { name: "EBITDA", value: Math.round(ebitda) },
         ],
       },
-      note: "Goodwill multiples are indicative 2025/26 UK dental market ranges, not a formal valuation (HP §4). Corporate buyer premiums are not modelled. On an asset sale, the NHS contract transfers by novation with commissioner consent, and some commissioners reduce the goodwill value by 5 to 10% at that point (HP §3). The affordability layer is a sense-check on your own assumptions: the interest rate and loan term are not house figures. Goodwill amortisation relief for the buying company applies at 6.5% a year only on post-1-April-2019 acquisitions meeting the qualifying-IP condition (HP §4). Interest is deductible against trade profit, but loan principal is not (HP §5.B). These are estimates, not advice for your practice.",
+      note: "Goodwill multiples are indicative 2025/26 UK dental market ranges, not a formal valuation. Corporate buyer premiums are not modelled. On an asset sale, the NHS contract transfers by novation with commissioner consent, and some commissioners reduce the goodwill value by 5 to 10% at that point. The affordability layer is a sense-check on your own assumptions: the interest rate and loan term are not house figures. Goodwill amortisation relief for the buying company applies at 6.5% a year only on post-1-April-2019 acquisitions meeting the qualifying-IP condition. Interest is deductible against trade profit, but loan principal is not. These are estimates, not advice for your practice.",
     };
   },
   chart: {

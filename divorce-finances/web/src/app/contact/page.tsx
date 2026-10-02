@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: { absolute: `Contact ${siteConfig.name}` },
   description:
-    "Ask a question, report an error, or request a call from one of our divorce finance specialists about your situation. We reply within two working days.",
+    "Ask a question, report an error, or request a call from one of our divorce finance specialists about your situation. We reply within one working day.",
   alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
@@ -35,16 +35,17 @@ export default function ContactPage() {
             <div className="min-w-0">
               <h2 className="text-2xl font-semibold tracking-tight">What happens next</h2>
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
-                <li>We read every message and aim to reply within two working days.</li>
+                <li>We read every message and reply within one working day.</li>
                 <li>
                   If you have asked to speak to a specialist, one of our divorce finance specialists
-                  will contact you directly, usually within a few working days. Where you need a
+                  will call you within one working day. Where you need a
                   solicitor or mediator, we work alongside regulated family law firms and accredited
                   mediators and stay on the money side.
                 </li>
                 <li>
-                  We cannot answer questions about your personal legal or financial position. That
-                  is exactly what the specialist call is for.
+                  We cannot answer questions about your personal legal position by email. A call
+                  with one of our divorce finance specialists covers the money side: settlements,
+                  pensions and tax.
                 </li>
                 <li>
                   If there is any risk to your safety, or money is being hidden or controlled, tell

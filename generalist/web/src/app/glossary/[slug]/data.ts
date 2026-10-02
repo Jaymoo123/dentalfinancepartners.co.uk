@@ -101,7 +101,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
 
 <p>Many business owners assume a formal loan agreement is required for Section 455 to bite. It is not. HMRC treats any debit balance on a director's loan account as a loan. If you take drawings that exceed your salary and dividend entitlements, and that balance is not cleared within the nine-month window, the charge applies. Even unpaid dividends credited to your account but left sitting there can be caught.</p>
 
-<p><strong>How the mechanics work with a real example</strong></p>
+<p><strong>How the mechanics work with a worked example</strong></p>
 
 <p>Take a manufacturing SME with a 31 March year-end. On 1 April 2024, the sole director borrows £30,000. The nine-month deadline is 31 December 2024 (nine months after 31 March 2024). If the loan is still outstanding on 1 January 2025, the company must pay £10,125 (33.75% of £30,000) to HMRC, typically as part of its corporation tax payment due nine months and one day after the year-end (so by 1 January 2025). If the director repays the loan on 1 June 2025, the company can claim the £10,125 back as a reduction in its corporation tax liability for the period ending 31 March 2026.</p>
 

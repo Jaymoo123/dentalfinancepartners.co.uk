@@ -110,7 +110,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Cost records for compute, data acquisition, and any subcontractor work</li>
 </ul>
 
-<p>One agency founder we worked with had a Notion database tracking every failed experiment across six months. That single document was worth more than a hundred pages of retrospective narrative. HMRC loves that kind of evidence because it is hard to fabricate.</p>
+<p>Picture an agency founder with a Notion database tracking every failed experiment across six months. That single document was worth more than a hundred pages of retrospective narrative. HMRC loves that kind of evidence because it is hard to fabricate.</p>
 
 <h2>What Costs Can You Claim?</h2>
 
@@ -127,7 +127,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>Cloud compute costs are a significant line item for fine-tuning projects. Training a model on a GPU instance for weeks adds up. These costs qualify as consumables, but only if they are directly used in the R&D activity. Running inference on a trained model does not qualify.</p>
 
-<p>Let us use a real example under the merged scheme. A 12-person digital agency spent £14,700 on AWS GPU instances over four months while fine-tuning a model for a client in the legal sector. Two engineers earning £55,000 each spent 60% of their time on the project. The qualifying costs were roughly £22,000 in staff costs and £14,700 in compute, totalling £36,700. Under the merged scheme (for a period starting on or after 1 April 2024), the 20% taxable credit gives £7,340 before corporation tax, and a net benefit of approximately £5,505 after corporation tax at 25%. For a loss-making agency, the credit is payable as cash.</p>
+<p>Let us use an illustrative example under the merged scheme. A 12-person digital agency spent £14,700 on AWS GPU instances over four months while fine-tuning a model for a client in the legal sector. Two engineers earning £55,000 each spent 60% of their time on the project. The qualifying costs were roughly £22,000 in staff costs and £14,700 in compute, totalling £36,700. Under the merged scheme (for a period starting on or after 1 April 2024), the 20% taxable credit gives £7,340 before corporation tax, and a net benefit of approximately £5,505 after corporation tax at 25%. For a loss-making agency, the credit is payable as cash.</p>
 
 <h2>The Timing Trap</h2>
 

@@ -11,7 +11,6 @@ import { siteConfig } from "@/config/site";
 import {
   ArrowRight,
   ShieldCheck,
-  Quote,
   FileCheck,
   Building2,
   Receipt,
@@ -49,21 +48,22 @@ export const metadata: Metadata = {
   alternates: { canonical: siteConfig.url },
 };
 
-const testimonials = [
+// Anonymised composite scenarios, not individual client testimonials.
+const scenarios = [
   {
-    quote:
-      "Three years filing my own returns and I never got the materials split right. First year with a proper CIS accountant and the refund was more than four times what I had been getting.",
-    attribution: "Self-employed roofer, West Midlands",
+    body:
+      "A self-employed roofer had filed his own returns for three years without ever splitting materials from labour. Once the split was corrected and the allowable expenses claimed, the refund was several times what he had been getting.",
+    label: "Self-employed roofer, West Midlands",
   },
   {
-    quote:
-      "My contractor was taking 20% off the full invoice including materials. Once we split it out correctly and claimed the mileage, the refund was considerably larger than expected.",
-    attribution: "Self-employed plumber, South East England",
+    body:
+      "A self-employed plumber's contractor was deducting 20% from the full invoice, materials included. Separating the materials and claiming mileage produced a considerably larger refund than expected.",
+    label: "Self-employed plumber, South East England",
   },
   {
-    quote:
-      "Applied for GPS on the advice of our accountant. No more 20% taken every month. The cash flow difference on a £500k-a-year turnover is enormous.",
-    attribution: "Groundwork contractor, Yorkshire",
+    body:
+      "A groundwork contractor turning over around £500k a year applied for gross payment status with our help. With no 20% deduction taken each month, the cash flow position changed materially.",
+    label: "Groundwork contractor, Yorkshire",
   },
 ];
 
@@ -279,7 +279,7 @@ export default function HomePage() {
                     by cta_baseline.json. Do not repoint it at #book. */}
                 <Link
                   href={activeCta.hero_primary.href}
-                  className={`inline-flex min-h-12 items-center justify-center text-base sm:text-lg font-medium text-orange-300 hover:text-orange-200 transition-colors text-center underline underline-offset-4 ${focusRing}`}
+                  className={`inline-flex min-h-12 items-center justify-center self-start sm:self-auto text-base sm:text-lg font-medium text-orange-300 hover:text-orange-200 transition-colors text-center underline underline-offset-4 ${focusRing}`}
                   data-cta="hero_primary" data-cta-placement="hero" data-cta-goal="lead"
                   data-cta-variant={niche.cta.variant}
                 >
@@ -539,37 +539,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. Testimonials. Moved to F.2's position (after the calculators block).
-          The three quotes and the three lines of framing copy around them are
-          held BYTE-IDENTICAL pending an open owner decision on client-outcome
-          claims (OWNER_CLAIM_EVIDENCE.md). Do not rewrite them here. */}
+      {/* 9. Composite outcomes. Moved to F.2's position (after the calculators
+          block). Rewritten 2026-10-02 from quoted testimonials to third-person
+          anonymised composite scenarios (rendered-page review, owner ask). */}
       <section className="bg-neutral-50 py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
         <div className={siteContainerLg}>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
             <div className="flex justify-center">
-              <Eyebrow>Real outcomes</Eyebrow>
+              <Eyebrow>Composite outcomes</Eyebrow>
             </div>
             <h2 id="testimonials-heading" className="mt-2 text-2xl font-bold text-neutral-900 sm:text-3xl lg:text-4xl">
-              What we have done for CIS subcontractors
+              The kind of work we do for CIS subcontractors
             </h2>
             <p className="mt-3 text-sm sm:text-base text-neutral-600">
-              Composite snapshots based on patterns across our CIS clients. Names and figures anonymised. The tax mechanics are real.
+              Anonymised composite scenarios drawn from our CIS work; not individual client testimonials.
             </p>
           </div>
           <div className="grid gap-5 sm:gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <figure
+            {scenarios.map((s, i) => (
+              <div
                 key={i}
-                className="relative rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md sm:p-7"
+                className="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md sm:p-7"
               >
-                <Quote className="absolute top-4 right-4 h-6 w-6 text-primary-200" aria-hidden />
-                <blockquote className="text-base sm:text-lg leading-relaxed text-neutral-800 font-medium pr-8">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-neutral-100 text-xs sm:text-sm font-semibold text-neutral-500">
-                  {t.attribution}
-                </figcaption>
-              </figure>
+                <p className="text-base sm:text-lg leading-relaxed text-neutral-800 font-medium">
+                  {s.body}
+                </p>
+                <p className="mt-5 pt-4 border-t border-neutral-100 text-xs sm:text-sm font-semibold text-neutral-500">
+                  {s.label}
+                </p>
+              </div>
             ))}
           </div>
         </div>

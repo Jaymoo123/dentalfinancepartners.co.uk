@@ -69,7 +69,7 @@ export const ir35TakeHomeCompareConfig: PremiumToolConfig = {
         { value: "12570", label: "£12,570 (personal allowance)" },
         { value: "6708",  label: "£6,708 (lower earnings limit)" },
       ],
-      help: "The director salary drawn from your limited company. Most single-director PSCs choose £12,570 or £6,708 (HP §8).",
+      help: "The director salary drawn from your limited company. Most single-director PSCs choose £12,570 or £6,708.",
     },
     {
       id: "annualExpenses",
@@ -91,7 +91,7 @@ export const ir35TakeHomeCompareConfig: PremiumToolConfig = {
       max: 5000,
       step: 100,
       advanced: true,
-      help: "The umbrella company's annual fee (margin), deducted from the assignment rate before employer costs (HP §12).",
+      help: "The umbrella company's annual fee (margin), deducted from the assignment rate before employer costs.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -187,7 +187,7 @@ export const ir35TakeHomeCompareConfig: PremiumToolConfig = {
           },
         ],
       },
-      note: "2026/27 basis: dividends 10.75%/35.75%/39.35% (FA 2026 s.4), employer NIC 15% above £5,000 secondary threshold (HP §6), CT 19/25 with 3/200 marginal relief (HP §7). The outside-IR35 side assumes a genuine outside-IR35 engagement. The take-home advantage here is not a reason to mis-declare status: IR35 status is determined by the whole-picture facts-and-circumstances test, and HMRC's CEST tool is not a guarantee (HP §2, §17.A). The inside-IR35 side models an umbrella: the umbrella margin, employer NIC and apprenticeship levy all come out of the assignment rate before PAYE applies (HP §12). Single-director PSC (no Employment Allowance). These are estimates, not advice.",
+      note: "2026/27 basis: dividends 10.75%/35.75%/39.35% (FA 2026 s.4), employer NIC 15% above £5,000 secondary threshold, CT 19/25 with 3/200 marginal relief. The outside-IR35 side assumes a genuine outside-IR35 engagement. The take-home advantage here is not a reason to mis-declare status: IR35 status is determined by the whole-picture facts-and-circumstances test, and HMRC's CEST tool is not a guarantee. The inside-IR35 side models an umbrella: the umbrella margin, employer NIC and apprenticeship levy all come out of the assignment rate before PAYE applies. Single-director PSC (no Employment Allowance). These are estimates, not advice.",
     };
   },
   chart: {

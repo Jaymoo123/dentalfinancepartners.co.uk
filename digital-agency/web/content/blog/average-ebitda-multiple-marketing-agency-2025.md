@@ -79,7 +79,7 @@ keyTakeaways:
 
 <p>If 40% of your revenue comes from one client, a buyer will discount your multiple heavily. That client could leave on day one after the sale. Buyers want to see a diversified client base with no single client exceeding 15% of revenue.</p>
 
-<p>One agency we worked with in Bristol Harbourside had a single client at 55% of revenue. Their EBITDA was strong at £320k, but the best offer they got was 3.2x. They spent two years diversifying, got that client down to 18%, and sold at 5.8x on £410k EBITDA. That was worth an extra £1.1m.</p>
+<p>Take an illustrative Bristol Harbourside agency with a single client at 55% of revenue. Their EBITDA was strong at £320k, but the best offer they got was 3.2x. They spent two years diversifying, got that client down to 18%, and sold at 5.8x on £410k EBITDA. That was worth an extra £1.1m.</p>
 
 <h3>Recurring Revenue Mix</h3>
 

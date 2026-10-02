@@ -56,7 +56,7 @@ keyTakeaways:
 
 <p>You must keep distinct digital records for your trade and for your rental property. You must submit separate quarterly updates for each. At year end, you then submit one final declaration that covers both income streams together.</p>
 
-<p>Let us use a real example. A self-employed electrician in Sheffield turns over £65,000 from his trade, with allowable expenses of £20,000, giving a profit of £45,000. He also owns a terraced house in Kelham Island that he lets for £12,000 a year, with mortgage interest and maintenance costs of £5,000, giving a rental profit of £7,000. His total qualifying income is £52,000. He is mandated from April 2026.</p>
+<p>Let us use a worked example. A self-employed electrician in Sheffield turns over £65,000 from his trade, with allowable expenses of £20,000, giving a profit of £45,000. He also owns a terraced house in Kelham Island that he lets for £12,000 a year, with mortgage interest and maintenance costs of £5,000, giving a rental profit of £7,000. His total qualifying income is £52,000. He is mandated from April 2026.</p>
 
 <p>He must report his trade income and his rental income in two separate quarterly updates. He cannot combine them into one return.</p>
 

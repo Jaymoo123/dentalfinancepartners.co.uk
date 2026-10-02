@@ -10,7 +10,7 @@ import { LeadForm } from "@/components/forms/LeadForm";
 
 const TITLE = "Accountants for Solicitors and Lawyers UK | SRA, LLP + Partner Tax";
 const DESCRIPTION =
-  "Specialist accountancy matching for solicitors and law firms across the UK. SRA Accounts Rules + accountant's reports, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. Fixed monthly fees.";
+  "Specialist accountants for solicitors and law firms across the UK. SRA Accounts Rules + accountant's reports, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. Fixed monthly fees.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -248,7 +248,7 @@ export default function ServicesPage() {
               Accountants for UK solicitors and law firms
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-700 sm:mt-6 sm:text-lg">
-              Specialist accountancy matching for solicitors and lawyers across the whole of the UK. SRA Accounts Rules + accountant&apos;s report, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. We work with law firms only, on fixed monthly fees, with the senior accountant on your account answering your emails.
+              Specialist accountants for solicitors and lawyers across the whole of the UK. SRA Accounts Rules + accountant&apos;s report, LLP and partnership accounting, professional indemnity, partner tax, practice valuation. We work with law firms only, on fixed monthly fees, with the senior accountant on your account answering your emails.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link

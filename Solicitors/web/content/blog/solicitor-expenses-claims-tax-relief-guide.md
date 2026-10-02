@@ -436,4 +436,4 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <li>Annual professional fee analysis for tax planning</li>
 </ul>
 
-<p>The SRA Accounts Rules require specific procedures for handling client money, which can affect the timing of professional fee recognition. Ensuring <a href="/sra-compliance">SRA compliance</a> while optimizing tax efficiency requires specialist knowledge.</p>
+<p>The SRA Accounts Rules require specific procedures for handling client money, which can affect the timing of professional fee recognition. Ensuring <a href="/sra-compliance">SRA compliance</a> while optimising tax efficiency requires specialist knowledge.</p>

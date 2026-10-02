@@ -64,7 +64,7 @@ export const agencyExitCgtConfig: PremiumToolConfig = {
         { value: "2026/27", label: "2026/27 (from 6 April 2026)" },
         { value: "2025/26", label: "2025/26 (to 5 April 2026)" },
       ],
-      help: "BADR is 14% for disposals to 5 April 2026 and 18% from 6 April 2026 (HP §5).",
+      help: "BADR is 14% for disposals to 5 April 2026 and 18% from 6 April 2026.",
     },
     {
       id: "previousBadrUsed",
@@ -75,7 +75,7 @@ export const agencyExitCgtConfig: PremiumToolConfig = {
       max: 1000000,
       step: 1000,
       advanced: true,
-      help: "BADR has a £1,000,000 lifetime limit per person (HP §5). Enter the amount used on previous disposals.",
+      help: "BADR has a £1,000,000 lifetime limit per person. Enter the amount used on previous disposals.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -143,7 +143,7 @@ export const agencyExitCgtConfig: PremiumToolConfig = {
           { name: "Standard CGT", netProceeds: Math.round(notEligible.netProceeds), cgt: Math.round(notEligible.totalTax) },
         ],
       },
-      note: "BADR rate schedule: 14% for disposals to 5 April 2026, 18% from 6 April 2026 (HP §5). Lifetime BADR limit £1,000,000 per person. For a share sale, qualifying conditions include holding at least 5% of ordinary share capital and voting rights, and being an officer or employee throughout the last 2 years (HP §5). An earn-out is usually taxed at the standard CGT rate, not the BADR rate (the Marren v Ingles right-to-future-payment principle, HP §5). If you plan to sell after leaving the UK: BADR is not available while you are non-resident and the temporary non-residence rule can pull a non-resident disposal back into UK CGT on your return; take specialist advice before relocating (HP §8.A). These are estimates only.",
+      note: "BADR rate schedule: 14% for disposals to 5 April 2026, 18% from 6 April 2026. Lifetime BADR limit £1,000,000 per person. For a share sale, qualifying conditions include holding at least 5% of ordinary share capital and voting rights, and being an officer or employee throughout the last 2 years. An earn-out is usually taxed at the standard CGT rate, not the BADR rate (the Marren v Ingles right-to-future-payment principle). If you plan to sell after leaving the UK: BADR is not available while you are non-resident and the temporary non-residence rule can pull a non-resident disposal back into UK CGT on your return; take specialist advice before relocating. These are estimates only.",
     };
   },
   chart: {
@@ -159,7 +159,7 @@ export const agencyExitCgtConfig: PremiumToolConfig = {
     paragraphs: [
       "On an agency share sale, Business Asset Disposal Relief can cut the CGT on the first £1,000,000 of qualifying gain, but the rate stepped up to 18% from 6 April 2026 and the conditions are strict. Here is your bill with and without it, and what you keep. Never imply BADR is automatic.",
       "The calculator computes the CGT twice: once assuming you qualify for BADR (at 14% to 5 April 2026 or 18% from 6 April 2026 on the eligible slice, 24% on any gain above the £1,000,000 lifetime limit), and once assuming the standard rate of 24% on the full gain. The side-by-side comparison shows you the value of qualifying.",
-      "The qualifying conditions for BADR on a share sale are strict: you need at least 5% of ordinary share capital and voting rights, and you must be an officer or employee of the company for at least 2 years before the disposal (HP §5). An earn-out where part of the consideration is tied to future performance is typically taxed as a right to future income under Marren v Ingles, not as part of the capital gain, and does not attract BADR on the deferred element.",
+      "The qualifying conditions for BADR on a share sale are strict: you need at least 5% of ordinary share capital and voting rights, and you must be an officer or employee of the company for at least 2 years before the disposal. An earn-out where part of the consideration is tied to future performance is typically taxed as a right to future income under Marren v Ingles, not as part of the capital gain, and does not attract BADR on the deferred element.",
     ],
   },
 };

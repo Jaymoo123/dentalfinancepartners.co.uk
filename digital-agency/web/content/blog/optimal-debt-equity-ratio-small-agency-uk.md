@@ -56,9 +56,9 @@ keyTakeaways:
 
 <p>Most small UK agencies operate with a debt equity ratio small agency UK between 0.5 and 1.5. That is the sweet spot. Below 0.5, you are probably too conservative, you are funding growth through equity when cheap debt could accelerate it. Above 1.5, you are carrying risk that could become a problem when interest rates rise or revenue dips.</p>
 
-<p>Let me give you a real example. A 12-person digital agency in Manchester Northern Quarter came to us with turnover of £820k and a debt-to-equity ratio of 3.4. They had taken a £150k CBILS loan during COVID, plus a £40k overdraft, and the director's loan account was £55k in credit (meaning the company owed the director). Their equity was only £72k. Total liabilities: £245k. Ratio: 3.4.</p>
+<p>Let me give you an illustrative example. A 12-person digital agency in Manchester Northern Quarter had turnover of £820k and a debt-to-equity ratio of 3.4. They had taken a £150k CBILS loan during COVID, plus a £40k overdraft, and the director's loan account was £55k in credit (meaning the company owed the director). Their equity was only £72k. Total liabilities: £245k. Ratio: 3.4.</p>
 
-<p>That agency was one bad quarter away from a liquidity crisis. We restructured their debt, converted some of the director's loan to equity, and set a repayment schedule. Within 18 months, their ratio was down to 1.1. They had breathing room.</p>
+<p>That agency was one bad quarter away from a liquidity crisis. Restructuring the debt and converting part of the director's loan to equity, alongside a set repayment schedule, was the fix. Within 18 months, their ratio was down to 1.1. They had breathing room.</p>
 
 <p>The opposite case: a sole trader web designer turning over £65k who had never borrowed a penny. Their debt-to-equity ratio was effectively zero. They were funding all growth from cash flow, which meant they could not hire ahead of demand or invest in software tools. A modest equipment loan of £12k would have given them a ratio of 0.3 and freed up cash for marketing. Sometimes a little debt is the right move.</p>
 

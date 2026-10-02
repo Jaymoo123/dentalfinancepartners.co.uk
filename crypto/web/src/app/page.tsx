@@ -148,7 +148,7 @@ const whatWeActuallyFix = [
 const calculatorLinks = [
   {
     title: "Crypto CGT estimator",
-    body: "Estimate your capital gains tax position from a disposal history. Applies s104 pooling and the £3,000 AEA. Does not model same-day or 30-day rules (state your simplifications openly).",
+    body: "Estimate your capital gains tax position from a disposal history. Applies s104 pooling and the £3,000 AEA. Does not model the same-day or 30-day matching rules.",
     href: "/calculators/crypto-cgt-estimator",
   },
   {
@@ -588,10 +588,10 @@ export default function HomePage() {
                 Four calculators covering the questions people ask most.
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
-                All four calculators are scenario and estimate tools. They state their
-                simplifications openly (the same-day and 30-day matching rules are out of scope
-                for any stateless web tool) and end at &ldquo;your situation has X complexity, speak
-                to us&rdquo;. They never produce a filing-ready figure. No sign-up, and the figures you
+                All four calculators are scenario and estimate tools. Each tool says what it
+                does not model, including the same-day and 30-day matching rules, and tells you
+                when your position is complex enough to need one of our specialists. They never
+                produce a filing-ready figure. No sign-up, and the figures you
                 enter stay in your browser.
               </p>
               <div className="mt-8 space-y-3">

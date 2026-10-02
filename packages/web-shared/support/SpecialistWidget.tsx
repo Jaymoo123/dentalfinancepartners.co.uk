@@ -406,11 +406,17 @@ export function SpecialistWidget() {
     });
   }, [active, runPing]);
 
-  // Auto-open once per session (desktop: open the panel; mobile: peek).
-  // Behaviour unchanged from Property and generalist (standing ruling 2026-09-27).
+  // Auto-open once per session (desktop: open the panel; narrow viewports: never
+  // auto-open at all, badge/cadence-ping still allowed after the first scroll via
+  // the existing cadence effect). Estate ruling 2026-09-30 (items 2/5 of the
+  // render-batch-4 review): the pre-existing <640 "peek" auto-open rendered a
+  // tooltip/balloon over the hero CTA on first paint on Property, Medical,
+  // contractors-ir35 and startups-tech, and Medical's panel classes go full-screen
+  // under 768px, so this is gated at 768 rather than repeating the old 640 cutoff.
   useEffect(() => {
     if (!active || suppressed || typeof window === "undefined") return;
     if (!journey || !openers) return;
+    if (window.innerWidth < 768) return;
     if (process.env.NODE_ENV === "production") {
       try {
         if (window.sessionStorage.getItem(autoOpenKey) === "1") return;

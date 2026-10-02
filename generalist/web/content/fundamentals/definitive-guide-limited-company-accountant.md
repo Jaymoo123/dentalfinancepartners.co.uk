@@ -19,7 +19,7 @@ summary: "Choosing the right limited company accountant is one of the most impor
 schema: ""
 faqs:
   - question: "How much does a limited company accountant cost per month?"
-    answer: "For a standard limited company with one director, no employees, and no VAT, expect to pay between £100 and £150 per month. This typically includes year-end accounts, Corporation Tax return, personal tax return, payroll, and accounting software. For more complex businesses, multiple directors, employees, VAT, CIS, or R&D, fees range from £250 to £800+ per month. Always ask for a fixed fee in writing before you sign up."
+    answer: "For a standard limited company with one director, no employees, and no VAT, expect to pay between £100 and £150 per month. This typically includes year-end accounts, Corporation Tax return, personal tax return, payroll, and accounting software. For more complex businesses, multiple directors, employees, VAT, CIS, or R&D, fees range from £250 to £800+ per month. Always ask for a clear quote before you sign up."
   - question: "Do I need a limited company accountant if I use FreeAgent or Xero?"
     answer: "Software handles data entry and basic reporting, but it does not provide tax advice, calculate Corporation Tax marginal relief, monitor your director's loan account, or advise on IR35. You still need a qualified accountant to prepare your statutory accounts, file your CT600, and ensure you comply with all HMRC and Companies House requirements. Many accountants include software in their fee, so you get the best of both."
   - question: "What is the difference between a bookkeeper and a limited company accountant?"
@@ -267,7 +267,7 @@ faqs:
 <ul>
 <li><strong>Check their qualification.</strong> Are they ACCA, AAT, or a member of another recognised body? Verify on the professional body's register.</li>
 <li><strong>Ask about their client base.</strong> Do they work with businesses like yours? Ask for examples.</li>
-<li><strong>Get a fixed fee in writing.</strong> What is included? What is excluded? How often does it increase?</li>
+<li><strong>Get a clear quote.</strong> What is included? What is excluded? How often does it increase?</li>
 <li><strong>Ask about software.</strong> Which platform do they use? Is it included in the fee?</li>
 <li><strong>Understand their communication policy.</strong> How quickly do they respond? Who is your point of contact?</li>
 <li><strong>Ask about tax planning.</strong> Do they proactively suggest ways to reduce your tax bill, or do they just file returns?</li>

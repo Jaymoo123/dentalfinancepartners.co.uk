@@ -72,7 +72,7 @@ keyTakeaways:
 <li>Costs of improvements (not repairs). Repairs are day-to-day maintenance and are not allowable for CGT purposes. A new roof or extension is an improvement. Replacing a broken boiler is a repair.</li>
 </ul>
 
-<p>Let us work through a real example.</p>
+<p>Let us work through a worked example.</p>
 
 <p><strong>Example: Sarah, a freelance consultant in Bristol, sells a buy-to-let flat</strong></p>
 

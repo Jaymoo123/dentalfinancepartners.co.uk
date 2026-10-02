@@ -106,11 +106,11 @@ keyTakeaways:
 
 <h2>What Happens If You Ignore It</h2>
 
-<p>Let me give you a real example. A digital agency founder moved to Dubai in August 2023. He sold his UK house, closed his company, and had zero UK income from September onwards. He assumed he was done with HMRC.</p>
+<p>Let me give you an illustrative example. A digital agency founder moved to Dubai in August 2023. He sold his UK house, closed his company, and had zero UK income from September onwards. He assumed he was done with HMRC.</p>
 
 <p>In January 2024, HMRC sent a notice to file for the 2022/23 tax year (the year he left). He ignored it. In April 2024, a £100 late-filing penalty arrived. Then a £10 per day penalty for up to 90 days. Then a further penalty of £300 or 5% of the tax due.</p>
 
-<p>By the time he contacted us, the penalties totalled £1,400. We filed the return showing zero liability, and HMRC cancelled the penalties. But it took three months of correspondence and a formal appeal. He could have avoided the whole mess by filing on time or deregistering properly.</p>
+<p>By the time he took advice, the penalties totalled £1,400. The return was filed showing zero liability, and HMRC cancelled the penalties. But it took three months of correspondence and a formal appeal. He could have avoided the whole mess by filing on time or deregistering properly.</p>
 
 <p>If you are in a similar position, <a href="/contact">contact us</a> before the penalties arrive. We can handle the HMRC correspondence for you.</p>
 

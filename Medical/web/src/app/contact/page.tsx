@@ -119,7 +119,7 @@ export default function ContactPage() {
           ground="white"
           eyebrow="Enquiries"
           title="Tell us about your position"
-          description="Your role, how your income is structured and what is on your mind. The more concrete it is, the better the match."
+          description="Your role, how your income is structured and what is on your mind. The more concrete it is, the more useful the first call."
           proofPoints={MEDICAL_PROOF_POINTS}
           formTitle="Send an enquiry"
           form={<LeadForm redirectOnSuccess submitLabel="Send enquiry" />}
@@ -141,16 +141,11 @@ export default function ContactPage() {
             ))}
           </ol>
           <p className="mt-6 text-sm leading-relaxed text-slate-700">
-            How your details are handled, how many firms they can reach and how to opt out are all set
-            out in our{" "}
+            How we handle your details and how to opt out are set out in our{" "}
             <Link href="/privacy-policy" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
               privacy policy
             </Link>
-            . Sending an enquiry does not create a relationship with an accountant on its own, as our{" "}
-            <Link href="/terms" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
-              terms
-            </Link>{" "}
-            explain.
+            . An enquiry is a conversation, not an engagement; nothing is agreed until we both say so.
           </p>
         </div>
       </section>
@@ -172,15 +167,15 @@ export default function ContactPage() {
             <Link href="/calculators" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
               calculators
             </Link>{" "}
-            and the{" "}
+            and{" "}
             <Link href="/medical-guides" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
               guides
             </Link>{" "}
-            are free to read, and{" "}
+            are free to use, and our{" "}
             <Link href="/about" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
-              about this site
+              about page
             </Link>{" "}
-            explains how the match works before you send anything.
+            explains how we work before you send anything.
           </p>
         </div>
       </section>

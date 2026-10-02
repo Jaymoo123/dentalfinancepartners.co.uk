@@ -506,7 +506,7 @@ export default function HomePage() {
             <div className="mt-8 flex items-center gap-2.5 text-sm text-orange-300">
               <ShieldCheck className="h-4 w-4 flex-shrink-0" aria-hidden />
               <span className="font-medium">
-                Restaurants, pubs, hotels, takeaways, cafes and caterers. England default.
+                Restaurants, pubs, hotels, takeaways, cafes and caterers.
               </span>
             </div>
           </div>

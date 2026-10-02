@@ -70,7 +70,7 @@ export const umbrellaVsLimitedPremiumConfig: PremiumToolConfig = {
         { value: "12570", label: "£12,570 (personal allowance)" },
         { value: "6708",  label: "£6,708 (lower earnings limit)" },
       ],
-      help: "Director salary drawn from the limited company. The most efficient level depends on Employment Allowance eligibility (HP §8). Single-director PSCs cannot claim EA.",
+      help: "Director salary drawn from the limited company. The most efficient level depends on Employment Allowance eligibility. Single-director PSCs cannot claim EA.",
     },
     {
       id: "annualExpenses",
@@ -92,7 +92,7 @@ export const umbrellaVsLimitedPremiumConfig: PremiumToolConfig = {
       max: 5000,
       step: 100,
       advanced: true,
-      help: "The umbrella company's annual fee (margin), deducted from the assignment rate before employer costs (HP §12).",
+      help: "The umbrella company's annual fee (margin), deducted from the assignment rate before employer costs.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -188,7 +188,7 @@ export const umbrellaVsLimitedPremiumConfig: PremiumToolConfig = {
           },
         ],
       },
-      note: "2026/27 basis: dividends 10.75%/35.75%/39.35% (FA 2026 s.4), employer NIC 15% above £5,000 secondary threshold, CT 19/25 marginal relief 3/200. A limited company usually keeps more of your day rate, but it carries running costs (typically £1,000 to £2,000 per year), annual accounts, corporation tax returns, confirmation statements and IR35 exposure that an umbrella does not (HP §17.C). From April 2026 the compliance rules on umbrellas tightened: the agency or end client is now jointly and severally liable for unpaid PAYE if the umbrella fails to operate it, so using a non-compliant umbrella is a risk for your client as well as for you (HP §12). Single-director PSC (no Employment Allowance). These are estimates, not advice.",
+      note: "2026/27 basis: dividends 10.75%/35.75%/39.35% (FA 2026 s.4), employer NIC 15% above £5,000 secondary threshold, CT 19/25 marginal relief 3/200. A limited company usually keeps more of your day rate, but it carries running costs (typically £1,000 to £2,000 per year), annual accounts, corporation tax returns, confirmation statements and IR35 exposure that an umbrella does not. From April 2026 the compliance rules on umbrellas tightened: the agency or end client is now jointly and severally liable for unpaid PAYE if the umbrella fails to operate it, so using a non-compliant umbrella is a risk for your client as well as for you. Single-director PSC (no Employment Allowance). These are estimates, not advice.",
     };
   },
   chart: {

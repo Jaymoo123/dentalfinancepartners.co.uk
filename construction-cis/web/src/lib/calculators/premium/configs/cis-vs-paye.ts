@@ -88,7 +88,7 @@ export const cisVsPayeConfig: PremiumToolConfig = {
     const cisWins = takeHomeDiff >= 0;
 
     const note =
-      "2026/27 rates: PA £12,570, basic rate 20%, higher rate 40% (HP §11a). " +
+      "2026/27 rates: PA £12,570, basic rate 20%, higher rate 40%. " +
       "CIS: income tax at 20%/40%, Class 4 NI 6%/2%. PAYE: income tax identical, employee Class 1 NI 8%/2%. " +
       "CIS take-home assumes the year-end Self Assessment refund is received. Employer NIC is the engager's cost and is excluded from this subcontractor comparison. " +
       "PAYE figures assume no employment benefits or pension contributions.";

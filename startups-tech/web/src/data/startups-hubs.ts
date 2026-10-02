@@ -70,7 +70,7 @@ export const startupsHubs: StartupsHub[] = [
       },
       {
         question: "I am a solo contractor, not a startup founder. Can you help?",
-        answer: "For contractor-specific IR35 and off-payroll questions, the right place is our sibling site Contractor Tax Accountants, which is scoped to that audience. If you are building a product or technology company with co-founders, employees or plans to raise, we are the right fit.",
+        answer: "Contractor-specific IR35 and off-payroll questions are outside our scope; a contractor tax specialist is the right home for them. If you are building a product or technology company with co-founders, employees or plans to raise, we are the right fit.",
       },
     ],
   },
@@ -200,7 +200,7 @@ export const startupsHubs: StartupsHub[] = [
       },
       {
         question: "Are you the right fit for a marketing agency that uses SaaS tools?",
-        answer: "No. Creative and marketing agency finance belongs to our estate agency site, which is scoped to that audience. This site is for product SaaS companies and subscription software businesses. If you are building a software product, we are the right fit.",
+        answer: "No. Creative and marketing agency finance is outside our scope. We work with product SaaS companies and subscription software businesses. If you are building a software product, we are the right fit.",
       },
     ],
   },
@@ -263,11 +263,11 @@ export const startupsHubs: StartupsHub[] = [
       },
       {
         question: "Are you the right accountant for a marketing or creative agency?",
-        answer: "No. Creative and marketing agency finance belongs to our estate agency site, which is scoped to that audience. This site is for software development companies and IT consultancies. If you are building software products rather than delivering creative or marketing services, we are the right fit.",
+        answer: "No. Creative and marketing agency finance is outside our scope. We work with software development companies and IT consultancies. If you are building software products rather than delivering creative or marketing services, we are the right fit.",
       },
       {
         question: "Do the IR35 off-payroll rules apply to my business?",
-        answer: "If your company supplies developers under the direction of an end-client, some arrangements may engage the off-payroll rules. The depth of that analysis belongs to our sibling site, Contractor Tax Accountants. We can confirm the boundary and route you correctly.",
+        answer: "If your company supplies developers under the direction of an end-client, some arrangements may engage the off-payroll rules. Contractor-side IR35 analysis is outside our scope, but we can confirm where the boundary falls for your company.",
       },
     ],
   },

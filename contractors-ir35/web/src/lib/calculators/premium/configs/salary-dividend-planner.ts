@@ -59,7 +59,7 @@ export const salaryDividendPlannerConfig: PremiumToolConfig = {
       min: 0,
       max: 100000,
       step: 500,
-      help: "The salary drawn from your limited company. Common targets are £6,708 (lower earnings limit) and £12,570 (personal allowance). The most efficient level depends on whether your company qualifies for the Employment Allowance (HP §8).",
+      help: "The salary drawn from your limited company. Common targets are £6,708 (lower earnings limit) and £12,570 (personal allowance). The most efficient level depends on whether your company qualifies for the Employment Allowance.",
     },
     {
       id: "dividends",
@@ -132,7 +132,7 @@ export const salaryDividendPlannerConfig: PremiumToolConfig = {
         { label: "Total personal tax", value: gbp(pt.totalPersonalTax), strong: true },
         { label: "Net in your pocket", value: gbp(netInPocket), strong: true },
       ],
-      note: "2026/27 dividend rates: ordinary 10.75%, upper 35.75%, additional 39.35% (FA 2026 s.4). Dividend allowance £500. Employee NIC on salary only (8% between the primary threshold and UEL, 2% above). There is no single universal optimal salary for a director: the most tax-efficient level depends on whether your company can claim the Employment Allowance. Single-director PSCs cannot claim EA, so the £12,570 salary is usually preferable on net-income grounds, but circumstances vary (HP §8, §17). This figure is the personal tax on extraction; it does not include corporation tax on profit. These are estimates, not advice.",
+      note: "2026/27 dividend rates: ordinary 10.75%, upper 35.75%, additional 39.35% (FA 2026 s.4). Dividend allowance £500. Employee NIC on salary only (8% between the primary threshold and UEL, 2% above). There is no single universal optimal salary for a director: the most tax-efficient level depends on whether your company can claim the Employment Allowance. Single-director PSCs cannot claim EA, so the £12,570 salary is usually preferable on net-income grounds, but circumstances vary. This figure is the personal tax on extraction; it does not include corporation tax on profit. These are estimates, not advice.",
     };
   },
   explainer: {

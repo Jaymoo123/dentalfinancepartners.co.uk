@@ -22,11 +22,11 @@ export const serviceTiers: ServiceTier[] = [
   {
     name: "Help from one of our specialists",
     description:
-      "For when your situation needs professional hands. Blended families, business assets, cross-border estates, contested wills, estates near or over the tax thresholds. Tell us about your situation and one of our estate planning specialists suited to it will take a look. Your details are used only with your consent, and you remain free to walk away at any stage.",
+      "For when your situation needs professional hands. Blended families, business assets, cross-border estates, contested wills, estates near or over the tax thresholds. Tell us about your situation and one of our estate planning specialists suited to it will take a look. No cold calls, and you remain free to walk away at any stage.",
     features: [
       "One of our own estate planning specialists",
       "Probate, estate planning or inheritance tax, whichever you need",
-      "Used only with your consent",
+      "Free first conversation, no obligation",
       "No obligation to proceed",
     ],
     cta: "Speak to a specialist",

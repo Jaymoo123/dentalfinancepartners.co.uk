@@ -114,7 +114,12 @@ export const pharmacyPurchaseAffordability: GenericTool = {
       (price > 500_000 ? 1 : 0) +
       (profit > 100_000 ? 1 : 0) +
       (coverRatio < 1.2 ? 1 : 0);
-    const complexity = complexityScore >= 2 ? "high" : complexityScore === 1 ? "moderate" : "standard";
+    const complexityNote =
+      complexityScore >= 2
+        ? "Several features of your deal (price, profit level or debt cover) sit outside the ranges we see most often."
+        : complexityScore === 1
+          ? "One feature of your deal (price, profit level or debt cover) sits outside the ranges we see most often."
+          : "Your figures fall within the ranges we see most often.";
 
     return {
       headline: {
@@ -138,7 +143,7 @@ export const pharmacyPurchaseAffordability: GenericTool = {
         { label: "Asset deal: SDLT non-residential (est.)", value: gbp(sdlt), strong: true },
         { label: "SDLT premium over share duty", value: gbp(dutyDiff) },
       ],
-      note: `This is a scenario estimate, not a financial projection. Corporation tax uses the 2026/27 rates (19% up to £50,000 profits, 25% above £250,000, marginal relief in between) and assumes a single company with no associated companies. SDLT applies the non-residential bands (0% to £150,000, 2% from £150,001 to £250,000, 5% above). A share deal attracts 0.5% stamp duty on the share consideration but inherits the company's full history. Your deal has ${complexity} complexity. Speak to us before signing heads of terms.`,
+      note: `This is a scenario estimate, not a financial projection. Corporation tax uses the 2026/27 rates (19% up to £50,000 profits, 25% above £250,000, marginal relief in between) and assumes a single company with no associated companies. SDLT applies the non-residential bands (0% to £150,000, 2% from £150,001 to £250,000, 5% above). A share deal attracts 0.5% stamp duty on the share consideration but inherits the company's full history. ${complexityNote} Speak to us before signing heads of terms.`,
     };
   },
   explainer: {

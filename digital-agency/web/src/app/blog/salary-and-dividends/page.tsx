@@ -57,7 +57,7 @@ export default function SalaryAndDividendsPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-3">The Salary and Dividend Strategy</h2>
             <p className="text-base leading-relaxed text-slate-600">
-              Most limited company agency founders take a salary up to the National Insurance primary threshold (£12,570 in 2025/26) to avoid both employee and employer NIC, while still qualifying for state pension entitlements. Remaining income is taken as dividends, which attract lower tax rates than salary: 8.75% (basic rate), 33.75% (higher rate) and 39.35% (additional rate) for the 2025/26 tax year.
+              Most limited company agency founders take a salary up to the National Insurance primary threshold (£12,570 in 2026/27) to avoid both employee and employer NIC, while still qualifying for state pension entitlements. Remaining income is taken as dividends, which attract lower tax rates than salary: 10.75% (basic rate), 35.75% (higher rate) and 39.35% (additional rate) for the 2026/27 tax year.
             </p>
           </section>
           <section>
@@ -69,7 +69,7 @@ export default function SalaryAndDividendsPage() {
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-3">Using Pension Contributions to Reduce Tax</h2>
             <p className="text-base leading-relaxed text-slate-600">
-              Employer pension contributions from your limited company are one of the most tax-efficient ways to extract profit from your agency. Company contributions reduce corporation tax, avoid NIC entirely, and do not count as personal income. For higher-rate taxpayers, this can be significantly more efficient than dividends. The annual allowance is £60,000 (2025/26) across all pension contributions, including any personal contributions.
+              Employer pension contributions from your limited company are one of the most tax-efficient ways to extract profit from your agency. Company contributions reduce corporation tax, avoid NIC entirely, and do not count as personal income. For higher-rate taxpayers, this can be significantly more efficient than dividends. The annual allowance is £60,000 (2026/27) across all pension contributions, including any personal contributions.
             </p>
           </section>
         </div>

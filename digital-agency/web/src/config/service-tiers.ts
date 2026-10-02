@@ -52,13 +52,13 @@ export const serviceTiers: ServiceTier[] = [
 ];
 
 // Stat verification notes (do not surface to users):
-// icon "🧮" value "8": counted from digital-agency/web/src/lib/tools/registry.ts — 8 entries in the tools array.
+// icon "🧮" value "8": counted from digital-agency/web/src/lib/tools/registry.ts: 8 entries in the tools array.
 // icon "📚" value "10": counted blog category page.tsx files in src/app/blog/ (excluding [category]/[slug]).
 // icon "⚖️" value "6": counted services listed in src/app/services/page.tsx services array.
-// icon "⏱️" value "24hr": claimed verbatim on services page ("24-hour response guarantee") and homepage keyStats.
+// icon "⏱️" value "24hr": claimed verbatim on services page ("24-hour response time") and homepage keyStats.
 export const siteStats: StatItemConfig[] = [
   { icon: "🧮", value: "8", label: "Free calculators" },
   { icon: "📚", value: "10", label: "Founder guides" },
   { icon: "⚖️", value: "6", label: "Service areas" },
-  { icon: "⏱️", value: "24hr", label: "Response guarantee" },
+  { icon: "⏱️", value: "24hr", label: "Response time" },
 ];

@@ -64,7 +64,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <p>For a free zone agency, there is an additional layer. If your agency is a Qualifying Free Zone Person, you need to track qualifying income separately from non-qualifying income. A loss in the qualifying income stream might be treated differently from a loss in the non-qualifying stream. But the filing requirement applies regardless.</p>
 
-<p>Here is a real example. A digital agency I work with set up in DMCC in late 2023. They spent six months building their team and infrastructure before landing their first retainer client. In their first financial year, they had turnover of AED 42,000 against costs of AED 310,000. Clear loss. They still filed a corporate tax return showing that loss. The return was accepted. No tax was due. But the filing was mandatory.</p>
+<p>Here is an illustrative example. A digital agency set up in DMCC in late 2023. They spent six months building their team and infrastructure before landing their first retainer client. In their first financial year, they had turnover of AED 42,000 against costs of AED 310,000. Clear loss. They still filed a corporate tax return showing that loss. The return was accepted. No tax was due. But the filing was mandatory.</p>
 
 <h2>When Is the Filing Deadline?</h2>
 

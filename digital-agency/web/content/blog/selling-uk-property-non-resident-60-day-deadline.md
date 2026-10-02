@@ -75,9 +75,9 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>You also have your annual CGT allowance. For 2025/26, that is £3,000. If your gain is below £3,000, you owe no tax. But you still need to report the disposal within 60 days if you are non-resident. The allowance is not a reporting exemption.</p>
 
 <h3>Worked Example: A Dubai-Based Agency Founder</h3>
-<p>Let me give you a real-world scenario. A digital agency founder I work with moved from Manchester to Dubai in 2021. He kept a flat in Soho that he rented out. He sold it in June 2025 for £475,000. He bought it in 2018 for £350,000. His total gain was £125,000.</p>
+<p>Let me give you an illustrative scenario. A digital agency founder moved from Manchester to Dubai in 2021. He kept a flat in Soho that he rented out. He sold it in June 2025 for £475,000. He bought it in 2018 for £350,000. His total gain was £125,000.</p>
 <p>He had no other UK income in 2025/26. His personal allowance (£12,570) and CGT allowance (£3,000) reduced the taxable gain to £109,430. The first £37,700 of that fell within the basic rate band (18% CGT = £6,786). The remaining £71,730 fell into the higher rate band (24% CGT = £17,215). Total CGT due: £24,001.</p>
-<p>He had to file the NRCGT return and pay that £24,001 within 60 days of completion. He did not. He assumed it would be handled through his self-assessment. The penalty for late filing started at £100, then £10 per day after three months, then more. By the time he called us, the penalties and interest had added £1,800 to his bill.</p>
+<p>He had to file the NRCGT return and pay that £24,001 within 60 days of completion. He did not. He assumed it would be handled through his self-assessment. The penalty for late filing started at £100, then £10 per day after three months, then more. By the time he sought advice, the penalties and interest had added £1,800 to his bill.</p>
 
 <h2>What Happens If You Miss the 60-Day Deadline?</h2>
 <p>HMRC does not send reminders. They do not send a "friendly nudge" when day 55 passes. They simply apply penalties when the return is late.</p>

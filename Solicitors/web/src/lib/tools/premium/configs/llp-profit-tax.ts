@@ -209,7 +209,7 @@ export const llpProfitTaxConfig: PremiumToolConfig = {
   explainer: {
     heading: "How this planner works",
     paragraphs: [
-      "An LLP is tax-transparent under ITTOIA 2005 s.863: each member is taxed as a self-employed partner on their allocated profit share, not on their drawings. Drawings are cash advances against the share, so a partner who draws less than their allocation still pays tax on the full amount. This is the single most common partner cash-flow planning point (HP §2).",
+      "An LLP is tax-transparent under ITTOIA 2005 s.863: each member is taxed as a self-employed partner on their allocated profit share, not on their drawings. Drawings are cash advances against the share, so a partner who draws less than their allocation still pays tax on the full amount. This is the single most common partner cash-flow planning point.",
       "The planner first allocates the distributable profit using your chosen method (equal, two-tier senior 1.5x, points, or fixed-share plus equity), then runs each allocation through the 2026/27 income tax and Class 4 NIC calculation. The result shows what each partner keeps after the personal tax charge on their share.",
       "The salaried-member rules (ITTOIA 2005 ss.863A to 863G, inserted by Finance Act 2014) can re-classify a member as an employee if all three conditions are met: Condition A (at least 80% of reward is disguised salary), Condition B (no significant influence) and Condition C (capital contribution less than 25% of disguised salary). A caught member pays PAYE and employer NIC instead of self-employment tax. This planner assumes full equity partners who are not caught by the rules.",
     ],

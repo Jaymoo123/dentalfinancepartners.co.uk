@@ -478,7 +478,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 sm:mt-10">
             <Link href="/for/social-enterprises" className={btnSecondary}>
-              Social enterprises
+              See how we work with social enterprises
             </Link>
           </div>
         </div>
@@ -794,7 +794,7 @@ export default function HomePage() {
               href="/services/independent-examination"
               className={`inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-colors hover:text-primary-800 sm:text-base ${focusRing} rounded`}
             >
-              Independent examination service
+              Need an independent examination? See the service
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
           </div>

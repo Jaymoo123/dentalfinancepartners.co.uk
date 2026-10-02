@@ -63,7 +63,7 @@ keyTakeaways:
 
 <p>Normally, a company's accounting period runs 12 months. When a company becomes non-resident, the period is shortened to end on the date of change.</p>
 
-<p>Here is a real example. Say your agency's normal accounting year runs from 1 April to 31 March. You move to Dubai on 15 September 2025. Your final UK accounting period will be from 1 April 2025 to 15 September 2025. That is 168 days, not 365.</p>
+<p>Here is a worked example. Say your agency's normal accounting year runs from 1 April to 31 March. You move to Dubai on 15 September 2025. Your final UK accounting period will be from 1 April 2025 to 15 September 2025. That is 168 days, not 365.</p>
 
 <p>This shortened period has consequences:</p>
 

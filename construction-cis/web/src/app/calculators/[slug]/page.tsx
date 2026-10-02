@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorClient } from "@/components/calculators/CalculatorClient";
 import { CalcResultCta } from "@/components/calculators/CalcResultCta";
-import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { siteContainerLg, btnPrimary } from "@/components/ui/layout-utils";
+import { siteContainerLg } from "@/components/ui/layout-utils";
 import { siteConfig } from "@/config/site";
 import { buildCalculatorJsonLd } from "@/lib/calculator-schema";
 import { buildFaqPageJsonLd } from "@/lib/faq-page-schema";
 import { genericTools, getGenericTool } from "@/lib/calculators/registry";
-import { CalculatorPageResources } from "@/components/resources/CalculatorPageResources";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -72,30 +69,16 @@ export default async function CalculatorToolPage({ params }: Props) {
             ]}
           />
           <h1 className="mt-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">{tool.name}</h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">{tool.intro}</p>
-          {/* The page already carried a LeadForm at #get-expert-help that nothing pointed at.
-              Same fix Phase 3 made on /for/[slug]: the hero primary reaches the on-page ask
-              instead of leaving the page. In-page anchor, so it scores zero unique internal
-              links against the T14 floor. goal="form" per the site taxonomy (on-page form
-              anchor), matching for_hero_book and next_step's own /contact branch. */}
-          <div className="mt-8">
-            <Link
-              href="#get-expert-help"
-              data-cta="calc_hero_help"
-              data-cta-placement="hero"
-              data-cta-goal="form"
-              className={`${btnPrimary} text-base px-8 py-3.5 text-center`}
-            >
-              Get expert help with your figures
-            </Link>
-          </div>
+          {/* tool.intro is rendered by the kit Calculator below; not repeated here.
+              One form per page (2026-10-02 review): the shared calculator result form.
+              The hero link to #get-expert-help, the resource gate and the LeadForm
+              block that used to follow the FAQs are gone. */}
         </div>
       </section>
 
       <section className="bg-slate-50 py-12 sm:py-16">
         <div className={siteContainerLg}>
           <CalculatorClient slug={tool.slug} variant="page" resultCta={<CalcResultCta campaign={tool.slug} />} />
-          <CalculatorPageResources slug={tool.slug} />
         </div>
       </section>
 
@@ -160,22 +143,6 @@ export default async function CalculatorToolPage({ params }: Props) {
                 </div>
               </div>
             )}
-
-            <div
-              id="get-expert-help"
-              className="mt-12 scroll-mt-24 rounded-2xl border-2 border-[var(--accent-strong)] bg-[var(--accent-whisper)] p-8 sm:p-10"
-            >
-              <h2 className="text-2xl font-bold text-[var(--accent-strong)] sm:text-4xl">
-                Want to be sure of your position?
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-slate-700">
-                A calculator gives you the shape of the answer. We confirm your exact figure and the
-                reliefs that apply to you. Tell us about your situation for a no-obligation review.
-              </p>
-              <div className="mt-8">
-                <LeadForm redirectOnSuccess={false} submitLabel="Request a review" />
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -82,7 +82,7 @@ keyTakeaways:
 
 <h2>The Numbers: Does Flat Rate VAT Still Work for Agencies?</h2>
 
-<p>Let us run a real example. A web design agency in Bristol Harbourside turns over £120,000 plus VAT. On standard VAT accounting:</p>
+<p>Let us run an illustrative example. A web design agency in Bristol Harbourside turns over £120,000 plus VAT. On standard VAT accounting:</p>
 
 <ul>
 <li>Sales: £120,000 + £24,000 VAT = £144,000 gross</li>

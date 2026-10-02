@@ -94,7 +94,7 @@ editorialNote: "Daughter of the ATED pillar (ated-complete-guide-2026-27). Focus
   <li><strong>Charity and Social Housing Reliefs</strong> (narrower category reliefs).</li>
 </ul>
 
-<p>The qualifying-use test runs on the same logic as ATED: the connected-person test under section 1122 CTA 2010 still applies, the commercial-terms requirement still applies, and the same evidence base (tenancy agreements, marketing records, refurbishment invoices) defends the position. The full mechanics of how each test bites are covered in our dedicated guide on the ATED rental relief mechanics (published as a Track 1 daughter alongside this page).</p>
+<p>The qualifying-use test runs on the same logic as ATED: the connected-person test under section 1122 CTA 2010 still applies, the commercial-terms requirement still applies, and the same evidence base (tenancy agreements, marketing records, refurbishment invoices) defends the position. The full mechanics of how each test bites are covered in our dedicated guide on the ATED rental relief mechanics.</p>
 
 <h2>Claiming the Relief at Acquisition</h2>
 

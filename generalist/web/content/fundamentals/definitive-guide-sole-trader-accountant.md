@@ -256,7 +256,7 @@ faqs:
 
 <ol>
 <li><strong>What qualifications do you hold, and which professional body regulates you?</strong> Look for ACCA, AAT, or CIMA.</li>
-<li><strong>How much will you charge, and what is included?</strong> Get a fixed fee in writing. Check what is excluded.</li>
+<li><strong>How much will you charge, and what is included?</strong> Get a clear quote. Check what is excluded.</li>
 <li><strong>What software do you recommend, and do you provide training?</strong> With MTD ITSA coming, this matters.</li>
 <li><strong>Who will be my main point of contact?</strong> You want a named person, not a call centre.</li>
 <li><strong>How quickly do you respond to emails and calls?</strong> 24 hours is a reasonable benchmark.</li>
@@ -319,7 +319,7 @@ faqs:
 <li><strong>Assess your software readiness.</strong> Are you keeping digital records? If not, start now. MTD ITSA is coming, and the transition is easier if you are already set up.</li>
 <li><strong>Research accountants.</strong> Look for qualified professionals with experience in your sector. Read reviews. Ask for recommendations from other business owners.</li>
 <li><strong>Book consultations.</strong> Most accountants offer a free initial call. Speak to two or three before deciding.</li>
-<li><strong>Ask the ten questions</strong> listed above. Get a fixed fee in writing.</li>
+<li><strong>Ask the ten questions</strong> listed above. Get a clear quote.</li>
 <li><strong>Sign up before your next tax year-end.</strong> The sooner you have an accountant, the more they can do for you in terms of planning.</li>
 </ol>
 

@@ -76,7 +76,7 @@ keyTakeaways:
 
 <p>Under the legacy FTR, you calculate your qualifying expenditure on the film. You can claim an additional deduction equal to the lesser of your UK core expenditure and 80% of your total core expenditure. If that creates a loss, you can surrender a qualifying loss for a payable tax credit at 25%. The surrenderable loss is capped at the additional deduction.</p>
 
-<p>Let's use a real example. A Manchester-based independent film company spends £400,000 on a qualifying British film. Core expenditure is £380,000, all of it in the UK. The additional deduction is £304,000 (80% of £380,000, which is lower than the £380,000 UK core spend). If the company has no other income, the loss created is £704,000 (the £400,000 actual spend plus the £304,000 additional deduction). Under the legacy FTR, the surrenderable loss is capped at the additional deduction. The payable credit is therefore £76,000 (25% of £304,000). That is a significant cash injection for a production company.</p>
+<p>Let's use a worked example. A Manchester-based independent film company spends £400,000 on a qualifying British film. Core expenditure is £380,000, all of it in the UK. The additional deduction is £304,000 (80% of £380,000, which is lower than the £380,000 UK core spend). If the company has no other income, the loss created is £704,000 (the £400,000 actual spend plus the £304,000 additional deduction). Under the legacy FTR, the surrenderable loss is capped at the additional deduction. The payable credit is therefore £76,000 (25% of £304,000). That is a significant cash injection for a production company.</p>
 
 <h3>Cultural Test for Film</h3>
 

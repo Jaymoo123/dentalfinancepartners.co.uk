@@ -87,7 +87,7 @@ howToSteps:
 
 <h2>How the Relief Works: A Worked Example</h2>
 
-<p>Let us run a real example. Sarah runs a marketing consultancy in Bristol as a sole trader. She has been trading for eight years. She decides to incorporate into a limited company.</p>
+<p>Let us run a worked example. Sarah runs a marketing consultancy in Bristol as a sole trader. She has been trading for eight years. She decides to incorporate into a limited company.</p>
 
 <p>Sarah's business assets on transfer are worth £120,000 in total. Her original cost for those assets (mostly equipment, some goodwill she acquired when she bought a small competitor) was £20,000. Her chargeable gain is £100,000.</p>
 

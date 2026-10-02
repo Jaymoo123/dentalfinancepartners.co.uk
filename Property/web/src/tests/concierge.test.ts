@@ -571,7 +571,7 @@ describe("handleInboundReply — faq_question", () => {
 
     const body = lastSent()?.body ?? "";
     expect(body).toContain("property tax specialist");
-    expect(body).toContain("partner team");
+    expect(body).toContain("will call you personally");
   });
 
   it("classifier says faq_question but no regex match -> escalates", async () => {

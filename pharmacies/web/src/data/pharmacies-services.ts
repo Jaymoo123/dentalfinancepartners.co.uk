@@ -100,7 +100,7 @@ export const pharmacyServices: PharmacyService[] = [
   {
     slug: "nhs-payment-reconciliation-fp34",
     title: "NHS Payment Reconciliation (FP34)",
-    headline: "Your pharmacy income is a contract, not a till. Reconcile it accordingly.",
+    headline: "Your pharmacy income is a contract, not a till. Reconcile it accordingly",
     metaTitle: "NHS FP34 Payment Reconciliation | Pharmacy Accountants",
     metaDescription: "FP34 reconciliation for community pharmacies. Contract-driven income, NHSBSA payment lag, Drug Tariff margin variance and Pharmacy First accounting.",
     intro: "Community pharmacy income is reimbursement (Drug Tariff prices) plus remuneration (fees and service payments) under the Community Pharmacy Contractual Framework. It is not shop takings, and a generalist accountant who treats it as retail income will misstate your profit, your working capital, and your tax position. The FP34 payment cycle means prescriptions submitted one month are paid roughly two months later, with an advance on account, and Drug Tariff and Category M clawback means your gross margin is set centrally and adjusted retrospectively. We reconcile the NHSBSA schedules to your ledger monthly, track margin variance against the Tariff, and model the working-capital gap the payment lag creates.",
@@ -190,7 +190,7 @@ export const pharmacyServices: PharmacyService[] = [
   {
     slug: "pharmacy-incorporation-structure",
     title: "Pharmacy Incorporation and Structure",
-    headline: "Should your pharmacy be a limited company? It depends on profit, extraction, and group structure.",
+    headline: "Should your pharmacy be a limited company? It depends on profit, extraction, and group structure",
     metaTitle: "Pharmacy Incorporation and Structure UK | CT and Dividends",
     metaDescription: "Incorporation advice for UK pharmacy owners. CT 25%/19%, dividends 10.75/35.75/39.35%, associated companies trap and superintendent requirement.",
     intro: "Incorporating a pharmacy is not automatically the right decision, and it is not always the wrong one. Corporation tax is 25% on profits over £250,000 and 19% on profits up to £50,000, with Marginal Relief between the two thresholds, but both limits are divided by the number of associated companies. A multi-store owner with separate companies loses lower-rate headroom faster than they expect. Profit extraction from a company is a two-layer calculation: the company pays corporation tax first, and dividends are paid from post-tax profit and taxed at 10.75%, 35.75%, or 39.35% in 2026/27 with a £500 dividend allowance. There is also a pharmacy-specific regulatory mechanic generalists miss: a company that owns a pharmacy requires a superintendent pharmacist. We model the structure decision honestly and set it up correctly.",

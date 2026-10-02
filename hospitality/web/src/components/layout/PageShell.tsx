@@ -185,6 +185,11 @@ export function PageShell({ children, nav }: { children: ReactNode; nav?: NavIte
         // nav item with this href, and this site's nav declares none, so the
         // column is empty and drops out until a later phase authors them.
         resourcesHref: "/research",
+        // Services and Research already surface via the kit's fixed
+        // Services/Resources slots (nav items with no children fall back to
+        // a single self-link - see SiteFooter.tsx). /for has no fixed slot
+        // of its own, so it would otherwise never reach the footer.
+        extraNavHrefs: ["/for"],
         // Kit default includes /locations, which 404s here
         // (niche.config.json "locations": []). These five are the site's own
         // company routes, every one probed 200.

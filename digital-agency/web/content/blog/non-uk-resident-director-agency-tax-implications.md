@@ -106,7 +106,7 @@ keyTakeaways:
 
 <h2>Double Tax Treaties: A Practical Example</h2>
 
-<p>Let me give you a real scenario. A 15-person digital agency in Shoreditch appointed a US-based director who held 30% of the shares. The director attended quarterly board meetings in London and performed the rest of their duties from New York. The agency paid them a salary of £40,000 per year, plus dividends of £60,000.</p>
+<p>Let me give you an illustrative scenario. A 15-person digital agency in Shoreditch appointed a US-based director who held 30% of the shares. The director attended quarterly board meetings in London and performed the rest of their duties from New York. The agency paid them a salary of £40,000 per year, plus dividends of £60,000.</p>
 
 <p>Under the UK-US double tax treaty, the director was taxable in the US on the salary relating to US duties, and in the UK on the salary relating to UK duties. The agency apportioned the salary 80% US, 20% UK. They operated PAYE on the UK portion only. The dividends were taxable in the US only, with no UK withholding.</p>
 

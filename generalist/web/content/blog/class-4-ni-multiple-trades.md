@@ -56,7 +56,7 @@ keyTakeaways:
 
 <h2>How the Aggregation Works in Practice</h2>
 
-<p>Let us walk through a real example. A freelance consultant in Manchester has two self employed trades:</p>
+<p>Let us walk through a worked example. A freelance consultant in Manchester has two self employed trades:</p>
 
 <ul>
 <li>Trade A: a management consultancy turning over £72,000 with expenses of £18,000, giving a profit of £54,000.</li>

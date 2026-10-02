@@ -267,8 +267,8 @@ export const locumTakeHomeComparator: GenericTool = {
         { label: "--- Limited company (outside IR35 only) ---", value: "" },
         { label: "Director salary", value: gbp(ltd.salary) },
         { label: "Employer NIC (15% above £5,000)", value: `−${gbp(ltd.employerNI)}` },
-        { label: "Corporation tax (HP 27)", value: `−${gbp(ltd.ct)}` },
-        { label: "Dividend tax (HP 28)", value: `−${gbp(ltd.dividendTax)}` },
+        { label: "Corporation tax", value: `−${gbp(ltd.ct)}` },
+        { label: "Dividend tax", value: `−${gbp(ltd.dividendTax)}` },
         { label: "Limited company net take-home", value: gbp(ltd.netTakeHome), strong: true },
         { label: "--- Umbrella / PAYE (inside IR35 or employed) ---", value: "" },
         { label: "Employer NIC + levy (funded from rate)", value: `−${gbp(umb.employerNI)}` },
@@ -282,7 +282,7 @@ export const locumTakeHomeComparator: GenericTool = {
           strong: true,
         },
       ],
-      note: "STATUS WARNING (HP 20-22, ESM4270): HMRC has a locum-pharmacist-specific employment status page (ESM4270) and its position is restrictive. Self-employed status depends on the actual working arrangements, including control, substitution rights and financial risk. Many locum pharmacist engagements do not meet the tests, and \"everyone does it self-employed\" is not a defence. Where a locum works through their own limited company and the client is a medium or large pharmacy group, IR35 off-payroll rules (Chapter 10) apply and the limited company figure above is NOT available. Check your status at HMRC's CEST tool before drawing conclusions from this comparison (gov.uk/guidance/check-employment-status-for-tax). Limited company uses 2026/27 corporation tax (19% / 25% HP 27) and dividend rates (10.75% / 35.75% / 39.35%, £500 allowance HP 28). Sole trader uses Class 2 NIC at £3.45/week and Class 4 NIC at 6% (£12,570-£50,270) / 2% above. Umbrella uses £1,200/year illustrative margin.",
+      note: "STATUS WARNING (ESM4270): HMRC has a locum-pharmacist-specific employment status page (ESM4270) and its position is restrictive. Self-employed status depends on the actual working arrangements, including control, substitution rights and financial risk. Many locum pharmacist engagements do not meet the tests, and \"everyone does it self-employed\" is not a defence. Where a locum works through their own limited company and the client is a medium or large pharmacy group, IR35 off-payroll rules (Chapter 10) apply and the limited company figure above is NOT available. Check your status at HMRC's CEST tool before drawing conclusions from this comparison (gov.uk/guidance/check-employment-status-for-tax). Limited company uses 2026/27 corporation tax (19% / 25%) and dividend rates (10.75% / 35.75% / 39.35%, £500 allowance). Sole trader uses Class 2 NIC at £3.45/week and Class 4 NIC at 6% (£12,570-£50,270) / 2% above. Umbrella uses £1,200/year illustrative margin.",
     };
   },
   explainer: {
@@ -290,7 +290,7 @@ export const locumTakeHomeComparator: GenericTool = {
     paragraphs: [
       "The numbers above show three different tax outcomes for the same gross income. The limited company route typically produces the highest take-home because corporation tax rates (19% to 25%) are lower than higher-rate income tax (40%) and dividends carry no National Insurance. However, the limited company figure is only available if the engagement is genuinely outside IR35, meaning it is a business-to-business contract rather than disguised employment. HMRC's locum-pharmacist guidance (ESM4270) sets out specific factors that make the pharmacist status question more restrictive than the general contractor test.",
       "For locum pharmacists working through their own limited companies with medium or large pharmacy group clients, the off-payroll working rules (Chapter 10, IR35) place the status determination on the client. If the client decides the engagement is inside IR35, the limited company takes no tax advantage and the umbrella row is closer to the relevant figure. For small independent pharmacy clients, the locum self-assesses under Chapter 8 IR35. The HMRC CEST tool (gov.uk/guidance/check-employment-status-for-tax) is the check of record.",
-      "MTD for Income Tax applies to sole-trader locums from April 2026 where qualifying income exceeds £50,000, and from April 2027 at £30,000 (HP 23). Cash basis is the default method for unincorporated businesses (HP 24). These are administrative obligations that apply regardless of which tax route is numerically more efficient.",
+      "MTD for Income Tax applies to sole-trader locums from April 2026 where qualifying income exceeds £50,000, and from April 2027 at £30,000. Cash basis is the default method for unincorporated businesses. These are administrative obligations that apply regardless of which tax route is numerically more efficient.",
     ],
   },
   faqs: [
@@ -312,7 +312,7 @@ export const locumTakeHomeComparator: GenericTool = {
     {
       question: "What is MTD for Income Tax and does it affect locum pharmacists?",
       answer:
-        "Making Tax Digital for Income Tax (MTD ITSA) requires sole traders and landlords with qualifying income above £50,000 to keep digital records and submit quarterly updates to HMRC from April 2026, and above £30,000 from April 2027 (HP 23). Many locum pharmacists working full-time will cross these thresholds. The obligation is about record-keeping and reporting, not tax rates, and a specialist can help set up a compliant system.",
+        "Making Tax Digital for Income Tax (MTD ITSA) requires sole traders and landlords with qualifying income above £50,000 to keep digital records and submit quarterly updates to HMRC from April 2026, and above £30,000 from April 2027. Many locum pharmacists working full-time will cross these thresholds. The obligation is about record-keeping and reporting, not tax rates, and a specialist can help set up a compliant system.",
     },
   ],
 };

@@ -72,9 +72,9 @@ keyTakeaways:
 
 <p>This is where the <strong>becoming non-UK resident for tax bank account</strong> issue becomes critical. You cannot simply leave the country and keep your UK bank account running as normal. You need to restructure how money flows through your business.</p>
 
-<h3>A Real Example</h3>
+<h3>An Illustrative Example</h3>
 
-<p>I worked with a digital agency founder who moved to Dubai in September 2023. He passed the SRT easily: fewer than 90 days in the UK, no UK home, no UK family ties. He thought he was clean.</p>
+<p>Take a digital agency founder who moves to Dubai in September 2023. He passes the SRT easily: fewer than 90 days in the UK, no UK home, no UK family ties. He thinks he is clean.</p>
 
 <p>But his agency bank account was still with Barclays in Soho. His clients were UK brands. His contractors were UK-based. His agency paid UK corporation tax and filed UK accounts. HMRC opened an enquiry in June 2024. Their argument? The agency was still trading in the UK, and the director’s presence in Dubai was a personal arrangement, not a genuine business relocation.</p>
 

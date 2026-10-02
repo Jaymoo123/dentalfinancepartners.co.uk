@@ -77,7 +77,7 @@ const PROCESS_STEPS = [
   },
   {
     n: "02",
-    title: "Scope and fixed fee in writing",
+    title: "Scope and a clear quote",
     body: "We set out which service lines you need, what each one covers over the year, and what it costs. You get that in writing before anything starts, and nothing begins until you have agreed it.",
   },
   {
@@ -146,7 +146,7 @@ const FAQS = [
   {
     question: "What do you need from me to give a quote?",
     answer:
-      "The structure, roughly what the business turns over, whether you are VAT registered, whether you run payroll and for how many people, and which software the records sit in. That is enough for a fixed fee in writing. Anything unusual, such as a group, a property held in the company or an overseas element, we will ask about on the call.",
+      "The structure, roughly what the business turns over, whether you are VAT registered, whether you run payroll and for how many people, and which software the records sit in. That is enough for a clear quote. Anything unusual, such as a group, a property held in the company or an overseas element, we will ask about on the call.",
   },
 ];
 

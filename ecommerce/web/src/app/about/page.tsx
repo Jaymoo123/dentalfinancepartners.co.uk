@@ -92,7 +92,21 @@ export default function AboutPage() {
         <Eyebrow>About</Eyebrow>
         <div className="max-w-3xl space-y-8 text-base leading-relaxed text-slate-600 sm:text-lg">
           <p>We are specialist accountants for UK online sellers: Amazon FBA and FBM sellers, Shopify store owners, marketplace sellers on eBay, Etsy and TikTok Shop, and dropshipping businesses.</p>
-          <p>We support accounts, VAT compliance, settlement reconciliation and tax returns for ecommerce businesses. This page is being prepared and will set out our approach in more detail.</p>
+          <p>We act for sellers across the United Kingdom, from a sole trader who has just had an HMRC platform-reporting letter to a multi-platform operation importing stock and selling into the EU through a limited company. We work remotely, by phone, video and email, so where you are based does not matter.</p>
+          <h2 className="text-xl font-bold text-slate-900 sm:text-2xl">What we do</h2>
+          <p>The problems that bring sellers to us repeat. The VAT threshold is measured on gross sales, not the payout the platform sends you, so a seller watching the bank balance can cross it without noticing. Deemed-supplier and establishment status decide whether the marketplace or you accounts for VAT on a sale. Overseas marketplace fees carry reverse-charge VAT that most bookkeeping misses. Sales into the EU bring IOSS and OSS obligations that sit under EU rather than UK law. And settlement reports mix revenue, fees, refunds and reserves in a way that has to be unpicked before the figures are fit for a VAT return or a set of accounts.</p>
+          <p>Our services are built around those problems:</p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>VAT registration at the right time on the right scheme, ongoing VAT returns, and cross-border and marketplace VAT advice.</li>
+            <li>Monthly settlement and payout reconciliation that turns Amazon, eBay, Etsy and Shopify reports into gross trading figures, with cost of goods sold and inventory tracked properly.</li>
+            <li>EU VAT assessment for your selling pattern, IOSS intermediary coordination and ongoing EU compliance.</li>
+            <li>Self Assessment returns and limited company accounts, with owner extraction structured against current rates.</li>
+            <li>Making Tax Digital for Income Tax: digital records and quarterly updates for sole-trader sellers as the thresholds come down.</li>
+            <li>Responding to HMRC platform-reporting letters.</li>
+          </ul>
+          <h2 className="text-xl font-bold text-slate-900 sm:text-2xl">How an engagement starts</h2>
+          <p>It starts with a conversation, not a proposal. You tell us what you sell, where you sell it and how the business is structured, through the enquiry form or by phone. One of our accountants calls you to go through it and answer the immediate questions, and that first call is free. If it makes sense to work together, we agree the scope before any work starts, so you know what is covered and what is not. From there we do the work, deal with HMRC on your behalf and keep you ahead of your deadlines.</p>
+          <p>Services run in three tiers, from self assessment essentials through VAT and reconciliation to full cross-border compliance, and you can move tier at any month-end. We reply to every enquiry within 24 hours.</p>
         </div>
         <div className="mt-10 border-t border-slate-100 pt-8 text-sm text-slate-500">
           <p>{co.tradingName} is a trading name of {co.legalName}, registered in {co.placeOfRegistration} (company no. {co.number}). Registered office: {co.registeredOfficeLine}.</p>

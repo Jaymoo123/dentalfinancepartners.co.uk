@@ -98,7 +98,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <p>Look for any week where the projected closing balance goes negative. That's a cash gap. If you see one, you need to act before that week arrives. The earlier you see it, the more options you have.</p>
 
 <h2>A Real Example: The 12-Person Digital Agency</h2>
-<p>Let's use a real scenario. A 12-person digital agency in Manchester's Northern Quarter. They bill £800k per year. They have a mix of retainers (£35k per month) and project work (£30k per month average). Their gross margin is 55%.</p>
+<p>Let's use an illustrative scenario. A 12-person digital agency in Manchester's Northern Quarter. They bill £800k per year. They have a mix of retainers (£35k per month) and project work (£30k per month average). Their gross margin is 55%.</p>
 <p>On paper, they're profitable. Net profit around £85k per year. But here's what their 13-week forecast showed in week 1:</p>
 <ul>
 <li>Week 1 opening balance: £28,400</li>

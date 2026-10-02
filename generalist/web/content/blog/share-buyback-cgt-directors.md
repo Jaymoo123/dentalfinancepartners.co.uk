@@ -157,13 +157,13 @@ keyTakeaways:
 
 <h2>Practical Example: A Manchester Consultancy Buyout</h2>
 
-<p>We advised a software consultancy in Manchester's Northern Quarter. Three directors owned 40%, 35% and 25% respectively. The 35% director wanted to retire. The remaining two directors wanted to buy out their shares.</p>
+<p>Take a software consultancy with three directors who own 40%, 35% and 25% respectively. The 35% director wants to retire. The remaining two directors want to buy out their shares.</p>
 
-<p>The company had £180,000 in retained profits. The departing director's shares were valued at £95,000. The company bought them back using distributable profits. The departing director had held the shares for six years and had used £200,000 of their £1 million BADR allowance on a previous business sale.</p>
+<p>The company has £180,000 in retained profits. The departing director's shares are valued at £95,000. The company buys them back using distributable profits. The departing director has held the shares for six years and has used £200,000 of their £1 million BADR allowance on a previous business sale.</p>
 
-<p>The departing director's gain was £94,500 (after £500 base cost). BADR applied to the full gain because it was within the remaining £800,000 allowance. After the £3,000 annual CGT allowance, the taxable gain was £91,500. Tax at 18% (the BADR rate from 6 Apr 2026; 14% applied in 2025/26) was £16,470. The remaining directors paid nothing personally. The company's retained profits reduced to £85,000, but that was sufficient for working capital.</p>
+<p>The departing director's gain is £94,500 (after £500 base cost). BADR applies to the full gain because it is within the remaining £800,000 allowance. After the £3,000 annual CGT allowance, the taxable gain is £91,500. Tax at 18% (the BADR rate from 6 Apr 2026; 14% applied in 2025/26) is £16,470. The remaining directors pay nothing personally. The company's retained profits reduce to £85,000, but that is sufficient for working capital.</p>
 
-<p>If we had structured it as a personal purchase by the remaining directors, they would have needed to extract £95,000 as dividends first. At the 2026/27 higher rate of 35.75% on £94,500 (after the £500 dividend allowance), that would have cost them £33,784 in dividend tax (33.75% on the same taxable amount gives £31,894 in 2025/26). The company buyback saved them that cost.</p>
+<p>If the deal were structured as a personal purchase by the remaining directors, they would need to extract £95,000 as dividends first. At the 2026/27 higher rate of 35.75% on £94,500 (after the £500 dividend allowance), that would have cost them £33,784 in dividend tax (33.75% on the same taxable amount gives £31,894 in 2025/26). The company buyback saves them that cost.</p>
 
 <h2>When to Speak to an Accountant</h2>
 

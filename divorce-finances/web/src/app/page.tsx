@@ -48,16 +48,16 @@ const calculatorCards = [
 
 const handoffSteps = [
   {
-    title: "Tell us where you are",
-    body: "A short form. Where you are in the process, what is at stake, what kind of help you want.",
+    title: "Tell us about your situation",
+    body: "A short form. Where you are in the process, what is at stake, what you need worked out.",
   },
   {
-    title: "We call you",
-    body: "One of our divorce finance specialists, suited to your situation, not a call centre round robin.",
+    title: "One of our divorce finance specialists calls you",
+    body: "Within one working day. Someone suited to your situation, not a call centre round robin.",
   },
   {
-    title: "They contact you directly",
-    body: "Usually within a few working days. You decide whether to go ahead. Walking away costs nothing.",
+    title: "We stay on the money side",
+    body: "If the legal side needs a solicitor or mediator, we work alongside a regulated firm and keep doing the numbers. You decide whether to go ahead. Walking away costs nothing.",
   },
 ];
 
@@ -184,18 +184,18 @@ export default function HomePage() {
       {/* How the specialist handoff works */}
       <section className="border-b border-neutral-200 bg-white py-12 sm:py-16 lg:py-20">
         <div className={siteContainerLg}>
-          <div className="section-label mb-4">When you need more than information</div>
+          <div className="section-label mb-4">When you need the numbers done properly</div>
           <h2 className="max-w-3xl text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             We are accountants, not a law firm.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            Everything on {siteConfig.name} is general information, and some situations need more
-            than that: you cannot agree a settlement, there is a business or a pension worth more
-            than the house, or you simply want it handled properly. Tell us about your situation
-            and one of our divorce finance specialists will talk it through with you. Where you need
-            a solicitor or mediator, we work alongside regulated family law firms and accredited
-            mediators and stay on the money side. Your details are shared only with your consent,
-            and you are never under any obligation to proceed.
+            The guides and calculators are general information; the advice starts when you talk
+            to us. Some situations need that sooner than others: you cannot agree a settlement,
+            there is a business or a pension worth more than the house, or you simply want it
+            handled properly. Tell us about your situation and one of our divorce finance
+            specialists will talk it through with you. Where you need a solicitor or mediator, we
+            work alongside regulated family law firms and accredited mediators and stay on the
+            money side.
           </p>
           <div className="mt-10 grid gap-6 sm:gap-8 md:grid-cols-3">
             {handoffSteps.map((step, idx) => (
@@ -237,8 +237,7 @@ export default function HomePage() {
               is legal or financial advice, and our settlement estimator gives ranges, never
               verdicts. The guides and calculators are free for everyone. If you go on to use our
               services, you pay us directly, and that never changes what our guides and
-              calculators say. We state that plainly because a site about money during divorce
-              should not be coy about its own.
+              calculators say.
             </p>
             <div className="mt-6">
               <Link

@@ -84,7 +84,7 @@ export default async function ToolPage({
           <div className="mt-6 max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-4">
               <Calculator className="h-3.5 w-3.5" />
-              Free calculator · 2025/26 rates
+              Free calculator · 2026/27 rates
             </div>
             <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               {tool.name}

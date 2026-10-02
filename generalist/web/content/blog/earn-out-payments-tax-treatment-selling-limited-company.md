@@ -97,7 +97,7 @@ keyTakeaways:
 <li>The earn out period is typically 1 to 3 years. Longer periods increase the risk of HMRC challenge.</li>
 </ul>
 
-<p>Let us use a real example. A Manchester-based software consultancy sold for £500,000 upfront plus an earn out of up to £300,000 based on revenue growth over two years. The seller stayed on as a consultant under a separate contract at £800 per day. The earn out was paid as capital consideration. The seller claimed BADR on the full £800,000, paying 14% CGT. Total tax: £112,000.</p>
+<p>Let us use a worked example. A Manchester-based software consultancy sold for £500,000 upfront plus an earn out of up to £300,000 based on revenue growth over two years. The seller stayed on as a consultant under a separate contract at £800 per day. The earn out was paid as capital consideration. The seller claimed BADR on the full £800,000, paying 14% CGT. Total tax: £112,000.</p>
 
 <p>Had the earn out been structured as a bonus linked to the seller's continued employment, the £300,000 would have been income. At 45% tax plus 2% NIC, that is £141,000 in tax on the earn out alone, plus employer NIC of approximately £44,250 (15% on £295,000 above the £5,000 secondary threshold). The difference is stark.</p>
 

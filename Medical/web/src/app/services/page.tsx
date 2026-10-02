@@ -256,7 +256,7 @@ export default function ServicesPage() {
             <Link href="/calculators/nhs-pension-annual-allowance" className={`font-medium text-[var(--copper-strong)] underline ${focusRing} rounded`}>
               NHS Pension annual allowance calculator
             </Link>
-            . We ask once whether a specialist should confirm your figure, and you can skip that and still see it.
+            . If you want one of our specialists to confirm your figure, say so at the end; you see the result either way.
           </p>
           <div className="mt-8">
             <CalculatorTabs tabs={["annualallowance", "locumtax", "incorporation"]} />

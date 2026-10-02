@@ -97,7 +97,7 @@ keyTakeaways:
 
 <h2>The Practical Compliance Gap for Dubai Agencies</h2>
 
-<p>Let me give you a real scenario. A 15-person digital agency moves its operations from Shoreditch to Dubai Internet City. They keep their UK clients, including a retail brand with 200,000 customer records. The agency processes those records for email marketing, segmentation, and analytics.</p>
+<p>Let me give you an illustrative scenario. A 15-person digital agency moves its operations from Shoreditch to Dubai Internet City. They keep their UK clients, including a retail brand with 200,000 customer records. The agency processes those records for email marketing, segmentation, and analytics.</p>
 
 <p>Under UK GDPR, the agency needs:</p>
 <ul>

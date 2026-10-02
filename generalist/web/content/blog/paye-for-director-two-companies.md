@@ -100,7 +100,7 @@ keyTakeaways:
 <p>For NICs, the annual reconciliation does not combine across employments. Each company's NICs are final at year end. The director cannot reclaim overpaid NICs from one employment against shortfalls in another.</p>
 
 <h2>Practical Example: Director With Two Companies</h2>
-<p>Let's work through a real example. Sarah is a director of two companies: her own consultancy Ltd in Bristol's Harbourside area, and a joint venture property company she set up with a partner. She earns a salary of £45,000 from her consultancy and £15,000 from the property company.</p>
+<p>Let's work through a worked example. Sarah is a director of two companies: her own consultancy Ltd in Bristol's Harbourside area, and a joint venture property company she set up with a partner. She earns a salary of £45,000 from her consultancy and £15,000 from the property company.</p>
 
 <p>HMRC allocates her tax code as follows:</p>
 <ul>

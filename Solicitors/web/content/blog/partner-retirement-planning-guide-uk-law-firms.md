@@ -25,7 +25,7 @@ faqs:
   - question: "How is partner goodwill typically valued in UK law firms?"
     answer: "Goodwill is commonly valued using profit multiples (1-3 times annual profit share), asset-based methods, or professional valuations. The specific method depends on partnership agreement terms, practice type, and market conditions. A £200k profit share might generate £200k-£600k in goodwill value."
   - question: "What are the tax implications of partner retirement payments?"
-    answer: "Tax treatment depends on payment structure and practice type. Annual retirement payments are typically treated as trading income subject to income tax. Capital distributions from LLP membership may qualify for capital gains treatment. Professional advice is essential to optimize tax positions."
+    answer: "Tax treatment depends on payment structure and practice type. Annual retirement payments are typically treated as trading income subject to income tax. Capital distributions from LLP membership may qualify for capital gains treatment. Professional advice is essential to optimise tax positions."
   - question: "Can retiring partners receive pension benefits before age 55?"
     answer: "Partners cannot normally access pension benefits before age 55 (rising to 57 from 2028) without significant tax penalties. However, they may receive other retirement benefits from the practice, such as goodwill payments or consultancy arrangements, before reaching pension access age."
   - question: "How are partnership retirement payments taxed?"
@@ -87,7 +87,7 @@ faqs:
 
 <p>The timing of partner retirement significantly affects both tax liabilities and retirement income. Partners should consider spreading retirement benefits across multiple tax years to manage income tax rates and potential pension allowance restrictions.</p>
 
-<p>Partners retiring in April might benefit from spreading goodwill payments across two tax years, potentially saving thousands in income tax. Similarly, pension contributions should be maximized in the final years before retirement, particularly if the partner's income will drop significantly post-retirement.</p>
+<p>Partners retiring in April might benefit from spreading goodwill payments across two tax years, potentially saving thousands in income tax. Similarly, pension contributions should be maximised in the final years before retirement, particularly if the partner's income will drop significantly post-retirement.</p>
 
 <p>Market conditions also affect retirement timing. Partners retiring during strong market conditions may achieve higher goodwill valuations, while those retiring during downturns may need to adjust expectations or delay retirement.</p>
 
@@ -97,9 +97,9 @@ faqs:
 
 <p>Partners should also engage pension specialists familiar with high-net-worth individuals and potentially seek independent legal advice on retirement agreement terms, particularly if disputes arise over goodwill valuations or payment terms.</p>
 
-<p>Implementation typically requires 18-24 months of advance planning to optimize tax positions, arrange necessary valuations, and ensure smooth client transitions. Partners who leave retirement planning until the final year often face suboptimal outcomes and unnecessary stress.</p>
+<p>Implementation typically requires 18-24 months of advance planning to optimise tax positions, arrange necessary valuations, and ensure smooth client transitions. Partners who leave retirement planning until the final year often face suboptimal outcomes and unnecessary stress.</p>
 
-<p>If you're a law firm partner considering retirement within the next decade, speak to a specialist solicitor accountant to review your current position and develop a comprehensive retirement strategy that maximizes your financial outcomes while supporting practice continuity.</p>
+<p>If you're a law firm partner considering retirement within the next decade, speak to a specialist solicitor accountant to review your current position and develop a comprehensive retirement strategy that maximises your financial outcomes while supporting practice continuity.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

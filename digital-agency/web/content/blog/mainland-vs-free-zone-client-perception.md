@@ -89,7 +89,7 @@ keyTakeaways:
 
 <h2>Real Numbers: What This Costs Agency Founders</h2>
 
-<p>Let me give you a concrete example. A UK-based digital marketing agency we work with set up in a Dubai free zone in 2023. Setup cost: AED 22,000. Annual renewal: AED 15,000. They thought they had found the efficient route.</p>
+<p>Let me give you an illustrative example. A UK-based digital marketing agency set up in a Dubai free zone in 2023. Setup cost: AED 22,000. Annual renewal: AED 15,000. They thought they had found the efficient route.</p>
 
 <p>In their first year, they identified three potential government-adjacent clients worth a combined AED 1.8 million in annual retainer fees. They could not bid on any of them. Their free zone license explicitly restricted them from trading within the UAE mainland. The clients' procurement systems required mainland registration.</p>
 

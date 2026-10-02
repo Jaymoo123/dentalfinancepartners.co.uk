@@ -64,7 +64,7 @@ export const employerCostToHireConfig: PremiumToolConfig = {
       label: "Claim the Employment Allowance",
       type: "toggle",
       default: true,
-      help: "The £10,500 Employment Allowance is only available once you employ someone other than a single director (HP §2). It is applied automatically when you add a first hire above.",
+      help: "The £10,500 Employment Allowance is only available once you employ someone other than a single director. It is applied automatically when you add a first hire above.",
     },
     {
       id: "includePension",
@@ -95,7 +95,7 @@ export const employerCostToHireConfig: PremiumToolConfig = {
 
     const warningNote =
       r.eaEligibleWarning
-        ? "The company has only a single director on the payroll, so the Employment Allowance is not available (HP §2). Add a genuine first employee to unlock the allowance."
+        ? "The company has only a single director on the payroll, so the Employment Allowance is not available. Add a genuine first employee to unlock the allowance."
         : undefined;
 
     return {
@@ -118,7 +118,7 @@ export const employerCostToHireConfig: PremiumToolConfig = {
       ],
       note:
         (warningNote ? warningNote + " " : "") +
-        "Employer NIC 15% above the £5,000 secondary threshold from 6 April 2025, never 13.8%/£9,100 (HP §2). EA £10,500 with the single-director exclusion (HP §2). A spouse or first-hire salary must be genuine and market-rate (HP §2). Auto-enrolment pension 3% employer minimum on qualifying earnings above £6,240.",
+        "Employer NIC 15% above the £5,000 secondary threshold from 6 April 2025, never 13.8%/£9,100. EA £10,500 with the single-director exclusion. A spouse or first-hire salary must be genuine and market-rate. Auto-enrolment pension 3% employer minimum on qualifying earnings above £6,240.",
     };
   },
   explainer: {

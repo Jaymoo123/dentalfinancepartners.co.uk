@@ -99,7 +99,7 @@ keyTakeaways:
 
 <h2>The Financial Impact of Getting IR35 Wrong</h2>
 
-<p>Let me give you a real example. A 15-person digital agency in Manchester Northern Quarter engaged a senior developer through their PSC for 18 months. The agency paid £75,000 per year to the PSC. The contractor took a £12,570 salary and the rest as dividends. HMRC investigated and determined the contractor was inside IR35.</p>
+<p>Let me give you an illustrative example. A 15-person digital agency in Manchester Northern Quarter engaged a senior developer through their PSC for 18 months. The agency paid £75,000 per year to the PSC. The contractor took a £12,570 salary and the rest as dividends. HMRC investigated and determined the contractor was inside IR35.</p>
 
 <p>The tax bill looked like this:</p>
 

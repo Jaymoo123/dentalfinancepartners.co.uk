@@ -75,7 +75,7 @@ export function SiteFooter() {
               &copy; {year} {siteConfig.company.legalName} t/a {siteConfig.company.tradingName}.
             </p>
             <p className="text-xs text-neutral-500">
-              Editorial content only. Book a call for advice specific to your situation.
+              Guides and calculators are a starting point. Book a call for advice specific to your situation.
             </p>
           </div>
           <p className="text-xs text-neutral-400">

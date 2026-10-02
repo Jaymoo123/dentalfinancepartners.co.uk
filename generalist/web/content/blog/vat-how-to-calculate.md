@@ -7,11 +7,11 @@ generator: unverified/claude-era
 author: Holloway Davies Editorial Team
 category: VAT and Making Tax Digital
 metaTitle: 'VAT How to Calculate: UK Rates, Formulas & Examples'
-metaDescription: Learn VAT how to calculate in the UK. Step-by-step formulas for 20% standard rate, 5% reduced rate, and 0% exports. Real examples for business owners.
+metaDescription: Learn VAT how to calculate in the UK. Step-by-step formulas for 20% standard rate, 5% reduced rate, and 0% exports. worked examples for business owners.
 altText: UK accountant explaining VAT calculation on a laptop in a modern office
 image: https://images.pexels.com/photos/5915289/pexels-photo-5915289.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 h1: 'How to Calculate VAT in the UK: A Practical Guide for Business Owners'
-summary: A practical guide to calculating VAT in the UK. Covers the three main rates (20%, 5%, 0%), the formulas for adding and removing VAT, and how to handle exports. Real examples throughout.
+summary: A practical guide to calculating VAT in the UK. Covers the three main rates (20%, 5%, 0%), the formulas for adding and removing VAT, and how to handle exports. worked examples throughout.
 schema: ''
 faqs:
 - question: What is the formula for calculating 20% VAT on a price?

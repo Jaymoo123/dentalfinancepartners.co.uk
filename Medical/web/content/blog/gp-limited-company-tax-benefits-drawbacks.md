@@ -98,7 +98,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 <ul>
 <li><strong>Substantial private or non-NHS income</strong> (medico-legal, occupational health, cosmetic, self-pay) that is not NHS-pensionable in the first place, so there is no accrual to lose.</li>
 <li><strong>Profit you do not need to draw immediately</strong>, where leaving it in the company and timing extraction across tax years is valuable.</li>
-<li><strong>Managing the pension annual allowance</strong>, where routing private income outside pensionable pay helps keep you within the <a href="/blog/nhs-pension-annual-allowance-complete-guide">annual allowance and taper</a> (the allowance is £60,000 for 2025/26, tapering where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a £10,000 floor).</li>
+<li><strong>Managing the pension annual allowance</strong>, where routing private income outside pensionable pay helps keep you within the <a href="/blog/nhs-pension-annual-allowance-complete-guide">annual allowance and taper</a> (the allowance is £60,000 for 2026/27, tapering where threshold income exceeds £200,000 and adjusted income exceeds £260,000, down to a £10,000 floor).</li>
 <li><strong>A genuinely employed family shareholder</strong> doing real work at a commercial rate.</li>
 </ul>
 

@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: `Thank You | ${siteConfig.name}` },
-  description: "We have received your message and will be in touch within two working days.",
+  description: "We have received your message and will be in touch within one working day.",
   robots: { index: false },
 };
 

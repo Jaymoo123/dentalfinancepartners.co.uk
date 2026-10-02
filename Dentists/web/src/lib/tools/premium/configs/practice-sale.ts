@@ -122,7 +122,7 @@ export const practiceSaleConfig: PremiumToolConfig = {
       label: "Business Asset Disposal Relief expected?",
       type: "toggle",
       default: true,
-      help: "BADR rate 18% from 6 April 2026 (HP §4), within the £1,000,000 lifetime limit. Requires a qualifying interest held for at least two years.",
+      help: "BADR rate 18% from 6 April 2026, within the £1,000,000 lifetime limit. Requires a qualifying interest held for at least two years.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -211,7 +211,7 @@ export const practiceSaleConfig: PremiumToolConfig = {
           { name: "Net after CGT", low: Math.round(cgt.netProceeds), high: Math.round(cgt.netProceeds) },
         ],
       },
-      note: "BADR requires a qualifying interest held for at least two years. For a share sale, the 5% share-capital, 5% voting, and officer-or-employee conditions must be met throughout (HP §4). An earn-out is usually taxed at the standard CGT rate, not the BADR rate, because the right to the future payment is a separate chargeable asset (HP §4.A). On an asset sale, the NHS contract transfers by novation with commissioner consent (HP §3). s.162 incorporation relief can convert an unincorporated practice pre-sale so a later share sale reaches BADR (HP §4). From 6 April 2026, BADR is 18%; an unconditional exchange on or before 5 April 2026 would have fixed the previous 14% rate even if completion follows, but a conditional contract would not (HP §4.A). Goodwill multiples are indicative 2025/26 market ranges, not a formal valuation. These are estimates, not advice for your practice.",
+      note: "BADR requires a qualifying interest held for at least two years. For a share sale, the 5% share-capital, 5% voting, and officer-or-employee conditions must be met throughout. An earn-out is usually taxed at the standard CGT rate, not the BADR rate, because the right to the future payment is a separate chargeable asset. On an asset sale, the NHS contract transfers by novation with commissioner consent. s.162 incorporation relief can convert an unincorporated practice pre-sale so a later share sale reaches BADR. From 6 April 2026, BADR is 18%; an unconditional exchange on or before 5 April 2026 would have fixed the previous 14% rate even if completion follows, but a conditional contract would not. Goodwill multiples are indicative 2025/26 market ranges, not a formal valuation. These are estimates, not advice for your practice.",
     };
   },
   chart: {
@@ -226,7 +226,7 @@ export const practiceSaleConfig: PremiumToolConfig = {
     heading: "How this planner works",
     paragraphs: [
       "The goodwill value is estimated from your normalised EBITDA multiplied by an indicative market-multiple range. The range varies by practice mix (NHS-heavy practices attract lower multiples), region (London commands a premium; north, Wales and Northern Ireland a discount) and buyer-demand conditions. Tangible assets are added to give an indicative total value. The range shown is conservative to optimistic; the real outcome depends on buyer type, contract security, associate retention and negotiation.",
-      "The CGT and BADR layer takes the estimated chargeable gain (defaulting to the mid-point goodwill), deducts the £3,000 Annual Exempt Amount, and applies Business Asset Disposal Relief at 18% (from 6 April 2026, HP §4) within the £1,000,000 lifetime limit. Gains above the BADR limit are taxed at standard CGT rates: 18% within any remaining basic-rate band and 24% above, effective from 30 October 2024.",
+      "The CGT and BADR layer takes the estimated chargeable gain (defaulting to the mid-point goodwill), deducts the £3,000 Annual Exempt Amount, and applies Business Asset Disposal Relief at 18% (from 6 April 2026) within the £1,000,000 lifetime limit. Gains above the BADR limit are taxed at standard CGT rates: 18% within any remaining basic-rate band and 24% above, effective from 30 October 2024.",
       "The BADR rate has stepped up twice recently: from 10% to 14% on 6 April 2025, then to 18% on 6 April 2026. For larger practices approaching the £1,000,000 lifetime limit, careful structuring of the sale timetable and the allocation of proceeds between goodwill, equipment and restrictive covenants can materially affect the net result. A specialist dental accountant should model the full picture before heads of terms are signed.",
     ],
   },

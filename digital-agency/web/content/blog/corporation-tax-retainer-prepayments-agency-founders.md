@@ -76,7 +76,7 @@ keyTakeaways:
 
 <p>The most common error I see is agencies treating their Xero or QuickBooks bank feed as gospel. Money in equals income. Money out equals expense. That's cash accounting. And it overstates your profits in year one when you're growing your retainer book.</p>
 
-<p>I worked with a PR agency in Soho that had grown its retainer base from £30k per month to £55k per month over 18 months. They'd been paying corporation tax on every retainer payment as it landed. Their deferred revenue balance at year-end was £94,700. They'd overpaid tax by roughly £18,000. That's cash they could have used to hire another account manager.</p>
+<p>Take a PR agency that has grown its retainer base from £30k per month to £55k per month over 18 months, paying corporation tax on every retainer payment as it lands. Its deferred revenue balance at year-end is £94,700. It has overpaid tax by roughly £18,000. That's cash it could have used to hire another account manager.</p>
 
 <p>This is why <a href="/blog/tax-and-compliance">proper tax and compliance work</a> matters for growing agencies. The bigger your retainer book gets, the more deferred revenue you carry. And the more tax you overpay if you don't account for it correctly.</p>
 

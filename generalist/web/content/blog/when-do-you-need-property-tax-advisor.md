@@ -54,7 +54,7 @@ keyTakeaways:
 
 <p>The choice of ownership structure matters enormously. A property tax advisor will look at whether the property should have been held personally, in a company, or in a partnership before you sell. If you are already in the wrong structure, there may be ways to extract the property tax-efficiently before a sale. But those options narrow the closer you get to completion.</p>
 
-<p>Take a real example. A Manchester-based construction company owner owned a commercial unit personally that his company used. He wanted to sell it for £420,000. His base cost was £180,000. The gain of £240,000 would have attracted CGT at 24% as a higher-rate taxpayer: £57,600. With proper planning, we transferred the property into the company before sale using incorporation relief. The gain was deferred. The company then sold it and paid corporation tax at 19% on the gain, with the proceeds available for reinvestment without the immediate tax hit. That saved him roughly £12,000 in year one.</p>
+<p>Take a worked example. A Manchester-based construction company owner owned a commercial unit personally that his company used. He wanted to sell it for £420,000. His base cost was £180,000. The gain of £240,000 would have attracted CGT at 24% as a higher-rate taxpayer: £57,600. With proper planning, we transferred the property into the company before sale using incorporation relief. The gain was deferred. The company then sold it and paid corporation tax at 19% on the gain, with the proceeds available for reinvestment without the immediate tax hit. That saved him roughly £12,000 in year one.</p>
 
 <h3>Claiming Business Asset Disposal Relief on a Property Sale</h3>
 

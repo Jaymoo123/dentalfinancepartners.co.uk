@@ -22,22 +22,22 @@ export const metadata: Metadata = {
 const keyStats = [
   {
     value: "Zero-rated",
-    label: "NHS-dispensed prescription drugs (VAT treatment, HP 1)",
+    label: "NHS-dispensed prescription drugs (VAT treatment)",
     href: "https://www.gov.uk/guidance/health-professionals-pharmaceutical-products-and-vat-notice-70157",
   },
   {
     value: "~2 months",
-    label: "FP34 cash-flow lag from submission to NHSBSA payment (HP 7)",
+    label: "FP34 cash-flow lag from submission to NHSBSA payment",
     href: "https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/submitting-prescriptions",
   },
   {
     value: "18%",
-    label: "BADR CGT rate for 2026/27 on qualifying pharmacy disposals up to £1m lifetime limit (HP 14)",
+    label: "BADR CGT rate for 2026/27 on qualifying pharmacy disposals up to £1m lifetime limit",
     href: "https://www.gov.uk/business-asset-disposal-relief",
   },
   {
     value: "0.5% vs 5%",
-    label: "Stamp duty on shares vs SDLT on property in asset deals (HP 12)",
+    label: "Stamp duty on shares vs SDLT on property in asset deals",
     href: "https://www.gov.uk/tax-buy-shares",
   },
 ];
@@ -502,11 +502,11 @@ export default function HomePage() {
                 </thead>
                 <tbody>
                   {[
-                    { supply: "NHS-dispensed prescription drugs", treatment: "Zero-rated (HP 1)" },
-                    { supply: "OTC retail medicines and health products", treatment: "Standard-rated (HP 1)" },
-                    { supply: "Private pharmacist services", treatment: "Exempt or standard-rated: map by service line (HP 2)" },
-                    { supply: "Input VAT on dispensing costs", treatment: "Reclaimable against zero-rated outputs (HP 1)" },
-                    { supply: "Retail scheme apportionment", treatment: "Splits zero-rated and standard-rated takings (HP 4)" },
+                    { supply: "NHS-dispensed prescription drugs", treatment: "Zero-rated" },
+                    { supply: "OTC retail medicines and health products", treatment: "Standard-rated" },
+                    { supply: "Private pharmacist services", treatment: "Exempt or standard-rated: map by service line" },
+                    { supply: "Input VAT on dispensing costs", treatment: "Reclaimable against zero-rated outputs" },
+                    { supply: "Retail scheme apportionment", treatment: "Splits zero-rated and standard-rated takings" },
                   ].map((row, i) => (
                     <tr key={row.supply} className={`border-b border-neutral-200 last:border-0 ${i % 2 === 1 ? "bg-neutral-50" : "bg-white"}`}>
                       <th scope="row" className="px-4 py-3.5 font-semibold text-neutral-900 sm:px-5 sm:py-4">

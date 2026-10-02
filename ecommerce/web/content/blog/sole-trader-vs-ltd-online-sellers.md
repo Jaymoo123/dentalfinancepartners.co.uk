@@ -134,7 +134,7 @@ faqs:
 
 <h2>Generic incorporation mechanics: how to actually set up a limited company</h2>
 
-<p>This page covers the decision. The mechanics of incorporating (Companies House registration, share structure, articles of association, and the process of moving from sole trader to limited company) are covered in depth elsewhere. See the <a href="https://www.hollowaydavies.co.uk/blog/incorporation-and-structure/limited-company-vs-sole-trader-side-hustle">sole trader vs limited company guide</a> for the step-by-step process.</p>
+<p>This page covers the decision. The mechanics of incorporating (Companies House registration, share structure, articles of association, and the process of moving from sole trader to limited company) are the same for any business and are not repeated here. Companies House sets out the registration process at <a href="https://www.gov.uk/limited-company-formation">gov.uk</a>, and we can talk you through it on the first call.</p>
 
 <h2>Common failure modes</h2>
 

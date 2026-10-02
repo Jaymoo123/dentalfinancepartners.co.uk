@@ -61,7 +61,7 @@ keyTakeaways:
 
 <p>The distinction matters because many businesses genuinely believe they are innovating when they are simply applying known techniques to a new context. An honest <a href="/r-and-d-credits">R&D tax credit specialist</a> will explain the difference before you submit a claim that HMRC will reject.</p>
 
-<p>Consider a real example. A Manchester-based precision engineering firm spent six months developing a new cutting tool for aerospace composites. The materials existed. The cutting techniques existed. Combining them in a specific configuration was difficult but not scientifically uncertain. The specialist refused the claim. The firm later confirmed that HMRC had opened an enquiry into a competitor who had claimed for identical work.</p>
+<p>Consider a worked example. A Manchester-based precision engineering firm spent six months developing a new cutting tool for aerospace composites. The materials existed. The cutting techniques existed. Combining them in a specific configuration was difficult but not scientifically uncertain. The specialist refused the claim. The firm later confirmed that HMRC had opened an enquiry into a competitor who had claimed for identical work.</p>
 
 <h2>The Project Is Entirely Software Development Without Technical Uncertainty</h2>
 

@@ -54,7 +54,7 @@ keyTakeaways:
 
 <p>High street firms tend to quote annually. A simple limited company might cost £1,200 to £2,000 per year. That's roughly £100 to £167 per month. But that often excludes software. If you need Xero or QuickBooks, that's another £30 to £70 per month. Add VAT returns and payroll, and the annual cost can climb to £2,500 or more.</p>
 
-<p><strong>Real example:</strong> A freelance consultant in Bristol, turning over £63,000 through a limited company, with two VAT returns per year and no payroll. An online accountant quoted £120 per month including Xero and the year-end. A high street firm quoted £1,800 per year plus £40 per month for Xero. That's £2,280 per year for the high street option versus £1,440 for the online option. A difference of £840 per year.</p>
+<p><strong>Worked example:</strong> A freelance consultant in Bristol, turning over £63,000 through a limited company, with two VAT returns per year and no payroll. An online accountant quoted £120 per month including Xero and the year-end. A high street firm quoted £1,800 per year plus £40 per month for Xero. That's £2,280 per year for the high street option versus £1,440 for the online option. A difference of £840 per year.</p>
 
 <p>For sole traders and partnerships, the gap is narrower. A sole trader with straightforward self-employment income might pay £50 to £80 per month online, or £400 to £700 per year on the high street. Software is less critical for sole traders who don't need full double-entry bookkeeping.</p>
 
@@ -70,7 +70,7 @@ keyTakeaways:
 
 <p>Online accountants are already MTD-ready. That's a significant advantage if you're approaching those thresholds.</p>
 
-<p><strong>Real example:</strong> A Birmingham café run by a husband-and-wife limited company uses QuickBooks through their online accountant. The accountant can see live sales data, stock purchases, and payroll costs. They flag VAT issues mid-quarter rather than at year-end. A high street firm could do the same if they use cloud software, but many don't offer that level of real-time monitoring as standard.</p>
+<p><strong>Worked example:</strong> A Birmingham café run by a husband-and-wife limited company uses QuickBooks through their online accountant. The accountant can see live sales data, stock purchases, and payroll costs. They flag VAT issues mid-quarter rather than at year-end. A high street firm could do the same if they use cloud software, but many don't offer that level of real-time monitoring as standard.</p>
 
 <h2>Access to Your Accountant</h2>
 
@@ -90,7 +90,7 @@ keyTakeaways:
 
 <p>Online accountants tend to be generalists, but many now offer specialist services. Some have dedicated R&D tax credit teams. Others focus on contractors and IR35. A few specialise in ecommerce and cross-border VAT. The best online accountants hire specialists and make them accessible across the country.</p>
 
-<p><strong>Real example:</strong> A 4-employee software consultancy in Manchester turning over £420,000 needed R&D tax credits. Their high street accountant had never filed an R&D claim. They switched to an online accountant with a dedicated R&D team who handled the R&D AIF form and secured a £38,000 credit. That's a specific case where online won on expertise.</p>
+<p><strong>Worked example:</strong> A 4-employee software consultancy in Manchester turning over £420,000 needed R&D tax credits. Their high street accountant had never filed an R&D claim. They switched to an online accountant with a dedicated R&D team who handled the R&D AIF form and secured a £38,000 credit. That's a specific case where online won on expertise.</p>
 
 <p>But the reverse also happens. A niche trade business with complex stock and CIS returns might find a local high street firm that knows construction inside out. An online generalist might miss something.</p>
 

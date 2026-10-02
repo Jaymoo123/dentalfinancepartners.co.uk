@@ -78,7 +78,7 @@ keyTakeaways:
 
 <p>You can carry forward unused annual allowance from the previous three tax years. This means you can potentially contribute far more than £60,000 in a single year, provided you had sufficient earnings in those earlier years.</p>
 
-<p>Let's use a real example.</p>
+<p>Let's use an illustrative example.</p>
 
 <p>Sarah runs a 15-person digital agency in Manchester Northern Quarter. Turnover is £1.2m. Profits are around £280,000. She has been paying herself £50,000 in salary and dividends for the last four years and has never made a pension contribution.</p>
 

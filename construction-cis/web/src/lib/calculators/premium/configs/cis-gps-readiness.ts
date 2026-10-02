@@ -67,7 +67,7 @@ export const cisGpsReadinessConfig: PremiumToolConfig = {
       default: 1,
       min: 1,
       max: 20,
-      help: "Drives the per-head route. For sole traders this is always 1. For partnerships and limited companies HMRC also tests a £100,000 whole-business threshold (HP §2).",
+      help: "Drives the per-head route. For sole traders this is always 1. For partnerships and limited companies HMRC also tests a £100,000 whole-business threshold.",
     },
     {
       id: "filedOnTime",
@@ -143,13 +143,13 @@ export const cisGpsReadinessConfig: PremiumToolConfig = {
         ? `${gbp(GPS_PER_HEAD)} (sole trader)`
         : entityType === "closely_controlled"
         ? `${gbp(GPS_PER_HEAD * heads)} (${heads} controller${heads !== 1 ? "s" : ""} x £${GPS_PER_HEAD.toLocaleString("en-GB")})`
-        : `${gbp(GPS_PER_HEAD * heads)} per-head route OR ${gbp(GPS_WHOLE_BUSINESS_CAP)} whole-business route (HP §2)`;
+        : `${gbp(GPS_PER_HEAD * heads)} per-head route OR ${gbp(GPS_WHOLE_BUSINESS_CAP)} whole-business route`;
 
     const note = allPass
       ? `This indicates you are likely to meet the GPS qualifying tests. HMRC carries out its own verification and the final decision rests with them. ` +
         `Apply through your HMRC Business Tax Account or through an agent. ` +
         `From 6 April 2026 (Finance Act 2026), GPS can be revoked immediately with no advance notice if HMRC finds supply-chain fraud connections on a "knew or should have known" standard. ` +
-        `A 5-year reapplication ban applies. On £500,000 turnover, losing GPS costs roughly £100,000 a year in cash flow (HP §3).`
+        `A 5-year reapplication ban applies. On £500,000 turnover, losing GPS costs roughly £100,000 a year in cash flow.`
       : `To qualify you must pass all three tests. ${failures.join(". ")}. ` +
         `Once qualified, the April 2026 Finance Act 2026 provisions mean that keeping GPS requires ongoing due diligence: HMRC can revoke it immediately for supply-chain fraud connections, with a 5-year reapplication ban.`;
 
@@ -177,8 +177,8 @@ export const cisGpsReadinessConfig: PremiumToolConfig = {
     heading: "The three GPS qualifying tests and what April 2026 changed",
     paragraphs: [
       "The business test requires that you carry out construction operations in the UK and receive payments through a bank account. Most registered CIS subcontractors satisfy this automatically.",
-      "The turnover test compares your net CIS turnover (total CIS receipts minus VAT and materials) over the last 12 months against the threshold for your business structure. For a sole trader the threshold is £30,000. For a partnership it is £30,000 per partner OR £100,000 for the partnership as a whole. For a limited company it is £30,000 per director OR £100,000 in total. For a closely controlled company it is £30,000 per controller. Net turnover is what matters: labour-only subcontractors find their net figure equals their gross CIS income, while those supplying significant materials may find their net turnover is considerably lower than their invoice total (HP §2).",
-      "Finance Act 2026 (Royal Assent 18 March 2026, in force 6 April 2026) introduced a tougher GPS regime. HMRC can now revoke GPS immediately with no advance notice where a contractor knew or should have known about fraudulent connections in the supply chain. A five-year reapplication ban applies, and directors can face personal penalties. On £500,000 annual turnover, losing GPS costs roughly £100,000 a year in cash flow. Getting GPS is only half the task: keeping it now requires ongoing supply-chain due diligence (HP §3).",
+      "The turnover test compares your net CIS turnover (total CIS receipts minus VAT and materials) over the last 12 months against the threshold for your business structure. For a sole trader the threshold is £30,000. For a partnership it is £30,000 per partner OR £100,000 for the partnership as a whole. For a limited company it is £30,000 per director OR £100,000 in total. For a closely controlled company it is £30,000 per controller. Net turnover is what matters: labour-only subcontractors find their net figure equals their gross CIS income, while those supplying significant materials may find their net turnover is considerably lower than their invoice total.",
+      "Finance Act 2026 (Royal Assent 18 March 2026, in force 6 April 2026) introduced a tougher GPS regime. HMRC can now revoke GPS immediately with no advance notice where a contractor knew or should have known about fraudulent connections in the supply chain. A five-year reapplication ban applies, and directors can face personal penalties. On £500,000 annual turnover, losing GPS costs roughly £100,000 a year in cash flow. Getting GPS is only half the task: keeping it now requires ongoing supply-chain due diligence.",
     ],
   },
 };

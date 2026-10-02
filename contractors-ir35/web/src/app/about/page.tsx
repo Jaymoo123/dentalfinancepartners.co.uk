@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div className="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
             <div className="min-w-0 space-y-6 text-base leading-relaxed text-neutral-600 sm:text-lg">
               <p>
-                This site covers UK contractors and limited company directors only. The work we take on involves a PSC, or someone considering one. That focus means we understand the financial specifics of contracting in a way that a general practice does not.
+                We work only with UK contractors and limited company directors. The work we take on involves a PSC, or someone considering one. That focus means we understand the financial specifics of contracting in a way that a general practice does not.
               </p>
               <p>
                 IR35 is the clearest example. The rules are specific, the rules changed in April 2021, and getting them wrong is expensive. A generalist accountant can read the guidance. We work with those rules as they are applied in practice, contract by contract, so we know where the risks and opportunities actually are.
@@ -98,7 +98,7 @@ export default function AboutPage() {
             What specialism means in practice
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-            The same applies to salary and dividend planning, contractor expenses, PSC pension strategy, and the mechanics of the off-payroll rules. These are not things that come up occasionally for us. They are the core of what we do.
+            Our team handles salary and dividend planning, contractor expenses, PSC pension strategy, and the mechanics of the off-payroll rules. These are not things that come up occasionally for us. They are the core of what we do.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
             {SPECIALISMS.map((item) => (

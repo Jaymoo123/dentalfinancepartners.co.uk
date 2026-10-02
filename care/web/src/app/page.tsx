@@ -277,7 +277,7 @@ export default function HomePage() {
             <div className="border border-neutral-200 bg-neutral-50 p-6">
               <h3 className="text-base font-bold text-neutral-900">Overseas workforce and sponsorship</h3>
               <p className="mt-3 text-sm leading-relaxed text-neutral-600">
-                Employers sponsoring overseas care workers must hold a Home Office sponsor licence and maintain ongoing HR compliance records. The immigration skills charge per sponsored worker per year is a cost-per-head that must be built into care fee models. Salary-floor requirements move regularly; content must be dated.
+                Employers sponsoring overseas care workers must hold a Home Office sponsor licence and maintain ongoing HR compliance records. The immigration skills charge per sponsored worker per year is a cost-per-head that must be built into care fee models. Salary-floor requirements move regularly, so check the current threshold with us before you build it into a fee model.
               </p>
             </div>
           </div>

@@ -120,7 +120,7 @@ const faqs = [
   {
     question: "How much does a small business accountant cost?",
     answer:
-      "Fees depend on complexity: turnover, payroll size, VAT scheme, number of directors, R&D activity, and whether you need management accounts as well as year-end. We quote a fixed fee in writing after a short discovery call, and nothing is added without your sign-off. As a rule of thumb a straightforward limited company costs less than a VAT-registered company running monthly payroll, and a sole trader return costs less again.",
+      "Fees depend on complexity: turnover, payroll size, VAT scheme, number of directors, R&D activity, and whether you need management accounts as well as year-end. We quote a clear fee after a short discovery call, and nothing is added without your sign-off. As a rule of thumb a straightforward limited company costs less than a VAT-registered company running monthly payroll, and a sole trader return costs less again.",
   },
   {
     question: "Do I need an accountant for a limited company?",

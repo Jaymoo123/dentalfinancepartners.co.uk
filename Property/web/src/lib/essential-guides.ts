@@ -26,7 +26,7 @@ export type GuideGroup = "annual" | "transactions" | "specialist";
 export const guideGroups: { key: GuideGroup; label: string; blurb: string }[] = [
   { key: "annual", label: "Your annual tax cycle", blurb: "The recurring work every landlord needs done right, year in, year out." },
   { key: "transactions", label: "Buying, selling and structuring", blurb: "The one-off decisions where the numbers are biggest and mistakes are costliest." },
-  { key: "specialist", label: "Specialist situations", blurb: "The edge cases generalist accountants rarely see - and we handle every week." },
+  { key: "specialist", label: "Specialist situations", blurb: "The edge cases generalist accountants rarely see, and that we handle every week." },
 ];
 
 export type EssentialGuide = { title: string; href: string; blurb: string; icon: LucideIcon; group: GuideGroup };

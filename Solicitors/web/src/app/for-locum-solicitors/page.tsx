@@ -7,7 +7,7 @@ const data: AudienceStage = {
   title: "Accountants for UK Locum and Consultant Solicitors",
   metaTitle: "Locum Solicitor Accountants UK | Ltd vs Umbrella vs Sole Trader",
   metaDescription:
-    "Specialist accountancy matching for UK locum solicitors. Ltd company vs umbrella vs sole-trader comparison, IR35 status, PII on own account, fee structures.",
+    "Specialist accountants for UK locum solicitors. Ltd company vs umbrella vs sole-trader comparison, IR35 status, PII on own account, fee structures.",
   eyebrow: "For locum + consultant solicitors",
   badge: "Locum solicitors · Consultant solicitors · Interim general counsel",
   heroHeading: "Structure and tax help for locum solicitors",

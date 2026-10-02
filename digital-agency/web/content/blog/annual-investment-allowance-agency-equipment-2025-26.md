@@ -60,7 +60,7 @@ keyTakeaways:
 <li><strong>Electric vehicles</strong>, company cars for directors or staff that are fully electric qualify for 100% AIA. Hybrids with CO2 emissions above 50g/km do not.</li>
 </ul>
 
-<p>I worked with a 14-person digital agency based near Manchester Northern Quarter last year. They refitted their office and bought new equipment for the whole team. Total spend was £47,300. Every single pound qualified for the AIA. Their corporation tax bill dropped by roughly £9,000 as a result. That is real cash retained in the business.</p>
+<p>Take a 14-person digital agency that refits its office and buys new equipment for the whole team, total spend £47,300. Every pound qualifies for the AIA. Its corporation tax bill drops by roughly £9,000 as a result. That is real cash retained in the business.</p>
 
 <h2>What Does Not Qualify?</h2>
 
@@ -88,7 +88,7 @@ keyTakeaways:
 
 <p>Here is the practical point: if you are planning a significant equipment purchase, time it to land in the right accounting period. Suppose you know your profits will be higher in the current year than next year. Bring the purchase forward to maximise the tax relief against higher-rate profits. Conversely, if you are already making a loss, there is no immediate benefit from the AIA. You might defer the purchase until you return to profitability.</p>
 
-<p>I saw a Bristol-based PR agency do exactly this last year. They had a bumper year with profits of £320k. They needed new computers and a studio fit-out costing £28,000. By ordering in March rather than April, they claimed the full AIA against 25% corporation tax, saving £7,000. Delaying by three weeks would have cost them that saving if profits dropped the following year.</p>
+<p>Take a PR agency with a bumper year and profits of £320k. It needs new computers and a studio fit-out costing £28,000. By ordering in March rather than April, it claims the full AIA against 25% corporation tax, saving £7,000. Delaying by three weeks would cost that saving if profits dropped the following year.</p>
 
 <h2>Claiming the AIA on Your Corporation Tax Return</h2>
 

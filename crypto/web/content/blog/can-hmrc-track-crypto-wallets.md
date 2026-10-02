@@ -30,7 +30,7 @@ faqs:
   - question: "What should I do if I have unreported crypto?"
     answer: "Use HMRC's dedicated cryptoasset disclosure service at gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets. An unprompted voluntary disclosure, made before HMRC contacts you, typically secures a lower penalty than a prompted one. The window before the first CARF report lands is the best time to act."
 ---
-<p>The most common version of this question comes with an anxious edge: can HMRC actually see what I am doing with my crypto, or is it still largely invisible? The honest answer is that visibility has increased significantly and is about to increase again. But it is data-matching and investigation capability, not omniscience, and the tone of this page is accurate, not alarmist.</p>
+<p>The most common version of this question comes with an anxious edge: can HMRC actually see what I am doing with my crypto, or is it still largely invisible? The honest answer is that visibility has increased significantly and is about to increase again. But it is data-matching and investigation capability, not omniscience.</p>
 
 <h2>The short answer: yes, increasingly, and here is how</h2>
 

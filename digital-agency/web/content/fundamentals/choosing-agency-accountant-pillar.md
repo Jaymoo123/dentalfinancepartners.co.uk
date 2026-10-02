@@ -168,7 +168,7 @@ keyTakeaways:
 
 <h2>Worked Example: How a Specialist Accountant Saved an Agency £47,000</h2>
 
-<p>Let me give you a real example, with names changed.</p>
+<p>Let me give you an illustrative example.</p>
 
 <p><strong>Blue Marlin Digital</strong> is a Bristol-based <a href="/agencies/web-design-agencies">web design agency</a> turning over £820,000. They had a generalist accountant who filed their annual accounts and VAT returns. The founder, Sarah, felt something was off but could not articulate it.</p>
 

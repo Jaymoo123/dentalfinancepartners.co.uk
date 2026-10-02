@@ -1,15 +1,15 @@
 {
   "entity": {
-    "firm": "Estate Planning Specialists is the UK's specialist accountancy firm for probate, wills and inheritance tax planning. We handle the money side of an estate: inheritance tax calculations and returns, probate cost estimates, estate accounts and IHT reliefs, and we introduce you to a regulated solicitor for the legal work. Estate Planning Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "firm": "Estate Planning Specialists is the UK's specialist accountancy firm for probate, wills and inheritance tax planning. We handle the money side of an estate: inheritance tax calculations and returns, probate cost estimates, estate accounts and IHT reliefs, and where the legal work needs a solicitor we work alongside a regulated firm. Estate Planning Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
     "serves": "We act for UK executors, administrators and people planning their own estates, from a single probate application to ongoing inheritance tax planning for a family.",
     "where": "We act for clients across the United Kingdom and work remotely, by phone, video and email.",
     "howItWorks": [
       "You tell us your situation through the enquiry form: what the estate involves and what you need looked at.",
       "One of our accountants calls you to go through it and answer the immediate questions.",
-      "We agree the scope and a fixed fee in writing before any work starts.",
-      "We do the work on the money side, and introduce you to a regulated solicitor we work with if the matter needs one."
+      "We agree the scope and the fee before any work starts.",
+      "We do the work on the money side and work alongside a regulated solicitor if the matter needs one."
     ],
-    "next": "We reply within 24 hours and one of our accountants comes back to you directly."
+    "next": "We reply within one working day and one of our accountants comes back to you directly."
   },
   "niche_id": "wills-probate",
   "display_name": "Estate Planning Specialists",
@@ -29,7 +29,7 @@
   "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "domain": "www.estateplanningspecialists.co.uk",
   "tagline": "Clear, practical guidance on probate, wills and inheritance tax in the UK",
-  "description": "Estate Planning Specialists. Plain-English guidance on probate, wills and inheritance tax for UK executors, administrators and people planning their estates. Free calculators, no jargon. We connect readers with specialist help when the estate needs it.",
+  "description": "Specialist probate and inheritance tax accountants for UK executors, administrators and people planning their estates. Free calculators, plain English, and a call with one of our specialists when the estate needs it.",
   "brand": {
     "primary_color": "#0f766e",
     "logo_path": "/icon.svg",
@@ -116,8 +116,8 @@
   },
   "blog": {
     "cta_heading": "Unsure whether you need probate or what it will cost?",
-    "cta_body": "Our free calculators give you a clear answer in minutes, and if the estate is complex we can point you to the right specialist.",
-    "cta_button": "Use the free calculators"
+    "cta_body": "Our free calculators give you a clear answer in minutes, and if the estate is complex our specialists take it on.",
+    "cta_button": "Request a call"
   },
   "shared_components_version": "1.0.0",
   "last_sync": null

@@ -97,7 +97,7 @@ editorialNote: "Wave 4 net-new (Session B, MTD ITSA operational details). Decisi
 
 <h2>Question 3: keep your workflow or switch</h2>
 
-<p>Some landlords are comfortable adopting a new accounting product as part of the MTD transition; others have run on spreadsheets for years and would rather keep the spreadsheet workflow than rebuild discipline in a new tool. Both routes are MTD-compatible; the constraint is the digital-link rule (covered in house position §19.14): data must flow from source to submission without manual re-keying once inside the chain.</p>
+<p>Some landlords are comfortable adopting a new accounting product as part of the MTD transition; others have run on spreadsheets for years and would rather keep the spreadsheet workflow than rebuild discipline in a new tool. Both routes are MTD-compatible; the constraint is the digital-link rule: data must flow from source to submission without manual re-keying once inside the chain.</p>
 
 <p>The "keep your spreadsheet" route uses bridging software, which takes data from spreadsheet cells (via cell references or formulae, not copy-paste) and submits it to the MTD API. The HMRC register lists bridging-only products alongside full accounting products; the bridging route works for landlords who maintain disciplined SA105-categorised columns in their spreadsheet and want minimal change to existing workflow. The downside is that bridging-only products do not give you a bank-feed or a portfolio dashboard; the spreadsheet remains the primary record. We cover the bridging mechanic in detail in our forthcoming spreadsheet-plus-bridging page.</p>
 

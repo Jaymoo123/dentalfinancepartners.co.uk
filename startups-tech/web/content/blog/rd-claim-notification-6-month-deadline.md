@@ -154,7 +154,7 @@ howToSteps:
 
 <h2>Worked example: a software startup in its first R&D year</h2>
 
-<p>The following example is illustrative. It uses a software company to reflect the startup audience this site serves, and because software R&D is frequently the context in which founders first encounter the notification rule.</p>
+<p>The following example is illustrative. It uses a software company to reflect the founders we work with, and because software R&D is frequently the context in which founders first encounter the notification rule.</p>
 
 <p><strong>Scenario:</strong> A SaaS company incorporated in early 2024 has an accounting period running from 1 April 2024 to 31 March 2025. In the 2024-25 year the company's engineers spent substantial time resolving genuine technological uncertainty in the core product architecture. This is the company's first accounting period and its first time considering an R&D claim.</p>
 

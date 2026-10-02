@@ -140,7 +140,7 @@ const agencyTypes = [
 
 const stats = [
   { value: "Agency-only", label: "Exclusive specialism" },
-  { value: "24hr", label: "Response guarantee" },
+  { value: "24hr", label: "Response time" },
   { value: "Fixed fees", label: "No surprise billing" },
   { value: "UK + UAE", label: "Territories covered" },
 ];

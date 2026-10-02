@@ -227,7 +227,7 @@ export default function HomePage() {
               Property accountants for UK landlords and investors
             </h1>
             <p className="mt-4 sm:mt-6 text-base leading-relaxed text-white/90 sm:text-lg lg:text-xl max-w-3xl">
-              Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation. Property tax sorted, your way, with ease.
+              Whether you need to get ready for Making Tax Digital, run a buy-to-let limited company, or get specialist advice on Section 24, CGT, and incorporation, our property tax specialists do this work every day. Property tax sorted, your way, with ease.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href={activeCta.hero_primary.href} data-cta="hero_book" data-cta-placement="hero" data-cta-goal={packagesMode ? "pricing" : "form"} data-cta-variant={niche.cta.variant} className={`${btnPrimary} bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 text-center`}>

@@ -143,7 +143,7 @@ export const sellerTakeHomeTool: GenericTool = {
       headline: {
         label: "Estimated take-home (sole trader)",
         value: gbp(r.takeHome),
-        sub: `Net profit ${gbp(r.netProfit)} | Effective total deduction rate ${r.effectiveRate.toFixed(1)}% of gross sales`,
+        sub: `Net profit ${gbp(r.netProfit)} | Costs, fees and tax as a share of gross sales: ${r.effectiveRate.toFixed(1)}%`,
         tone,
       },
       rows: [

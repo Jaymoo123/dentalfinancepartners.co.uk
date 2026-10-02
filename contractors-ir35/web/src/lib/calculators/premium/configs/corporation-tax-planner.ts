@@ -69,7 +69,7 @@ export const corporationTaxPlannerConfig: PremiumToolConfig = {
       min: 0,
       max: 20,
       step: 1,
-      help: "The number of companies associated with yours (under common control). Each associated company divides the £50,000 and £250,000 thresholds, increasing your effective rate. Most solo contractors have 0 (HP §7).",
+      help: "The number of companies associated with yours (under common control). Each associated company divides the £50,000 and £250,000 thresholds, increasing your effective rate. Most solo contractors have 0.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -125,7 +125,7 @@ export const corporationTaxPlannerConfig: PremiumToolConfig = {
         { label: "Corporation tax due", value: gbp(ct), strong: true },
         { label: "Profit after CT", value: gbp(profitAfterCt), strong: true },
       ],
-      note: "FA 2026 left the corporation tax rates unchanged. Small profits rate 19% up to £50,000 taxable profit; main rate 25% above £250,000; marginal relief 3/200 (approximately 26.5% effective marginal rate on each extra pound) between £50,000 and £250,000 (HP §7). Both thresholds are divided by the number of associated companies plus one: if you have one associated company, the small profits threshold halves to £25,000 and the main rate threshold halves to £125,000. The profit-after-CT figure feeds the dividend extraction calculation in the salary and dividend planner. These are estimates, not advice.",
+      note: "FA 2026 left the corporation tax rates unchanged. Small profits rate 19% up to £50,000 taxable profit; main rate 25% above £250,000; marginal relief 3/200 (approximately 26.5% effective marginal rate on each extra pound) between £50,000 and £250,000. Both thresholds are divided by the number of associated companies plus one: if you have one associated company, the small profits threshold halves to £25,000 and the main rate threshold halves to £125,000. The profit-after-CT figure feeds the dividend extraction calculation in the salary and dividend planner. These are estimates, not advice.",
     };
   },
   explainer: {

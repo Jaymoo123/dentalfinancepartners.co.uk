@@ -90,7 +90,7 @@ howToSteps:
 
 <p>If your gross income exceeds £1,000, you have a choice. You can either deduct your actual expenses and pay tax on the profit, or you can use the £1,000 trading allowance instead of deducting expenses. You cannot use both for the same trade.</p>
 
-<p>Here is how the choice works with a real example. Say you earn £2,500 from freelance graphic design work in 2025/26. Your actual expenses are £400 for software subscriptions and £150 for a domain and hosting. Your profit using actual expenses is £1,950. Using the trading allowance, your taxable profit is £1,500. In this case, the trading allowance saves you tax.</p>
+<p>Here is how the choice works with a worked example. Say you earn £2,500 from freelance graphic design work in 2025/26. Your actual expenses are £400 for software subscriptions and £150 for a domain and hosting. Your profit using actual expenses is £1,950. Using the trading allowance, your taxable profit is £1,500. In this case, the trading allowance saves you tax.</p>
 
 <p>But if your expenses were £1,800, your actual profit would be £700. Using the trading allowance would give you £1,500 taxable profit, which is worse. You would choose to deduct actual expenses instead.</p>
 

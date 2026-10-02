@@ -70,7 +70,7 @@ keyTakeaways:
 <p>If you need more than £50,270 in total income, the dividends above that are taxed at 35.75%. Many founders stop at the basic rate threshold and leave the rest in the company, reinvesting it into growth or taking it later in a lower-income year.</p>
 
 <h3>Worked Example: A 12-Person Digital Agency Billing £800k</h3>
-<p>Let us run the numbers for a real scenario. Your agency turns over £800,000. After salaries for your team, rent, software, and other costs, the company makes £140,000 profit before your own pay.</p>
+<p>Let us run the numbers for a worked scenario. Your agency turns over £800,000. After salaries for your team, rent, software, and other costs, the company makes £140,000 profit before your own pay.</p>
 
 <p><strong>Option A: All salary</strong></p>
 <ul>

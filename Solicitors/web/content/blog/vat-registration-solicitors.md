@@ -97,7 +97,7 @@ faqs:
 
 <h2>Getting Professional Support</h2>
 
-<p>VAT registration and ongoing compliance for legal practices involves complex rules that intersect with <a href="/sra-compliance">SRA regulations</a> and client money handling requirements. Professional advice ensures you meet all obligations while optimizing your tax position.</p>
+<p>VAT registration and ongoing compliance for legal practices involves complex rules that intersect with <a href="/sra-compliance">SRA regulations</a> and client money handling requirements. Professional advice ensures you meet all obligations while optimising your tax position.</p>
 
 <p>A specialist accountant experienced with legal practices can help navigate registration decisions, establish compliant systems, and provide ongoing support for VAT returns and HMRC queries.</p>
 

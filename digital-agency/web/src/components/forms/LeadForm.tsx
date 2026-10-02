@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { ChevronDown } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { btnPrimary } from "@/components/ui/layout-utils";
 import { niche } from "@/config/niche-loader";
@@ -320,7 +321,7 @@ export function LeadForm({
       <details className="group border border-slate-200 rounded-lg">
         <summary className="cursor-pointer px-4 py-3 text-sm font-semibold text-slate-700 select-none list-none flex items-center justify-between">
           Optional: a bit more detail (helps us prepare)
-          <span className="text-slate-400 group-open:rotate-180 transition-transform text-xs">▼</span>
+          <ChevronDown aria-hidden className="h-4 w-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform" />
         </summary>
         <div className="px-4 pb-4 space-y-4 pt-2">
           <div>

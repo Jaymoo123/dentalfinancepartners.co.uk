@@ -46,7 +46,7 @@ faqs:
 ---
 <p>Alcohol duty is charged on the pure alcohol inside the product, at a rate set by strength, under the single structure that replaced the separate beer, cider, wine and spirits regimes. The current rates took effect on 1 February 2026 and run until the next uprating on 1 February 2027. Two reliefs cut the rate: draught relief and small producer relief.</p>
 
-<p>That is the whole answer in outline. The rest of this page gives the band table, the boundary between a standard rate and a reduced rate with real trades on both sides, the arithmetic for working out the duty in your own stock, and the things operators and competing articles routinely get wrong about the dates.</p>
+<p>That is the whole answer in outline. The rest of this page gives the band table, the boundary between a standard rate and a reduced rate with real trades on both sides, the arithmetic for working out the duty in your own stock, and the dates that matter, including the ones operators most often get wrong.</p>
 
 <h2>The rule, and where it comes from</h2>
 
@@ -94,7 +94,7 @@ faqs:
   </tbody>
 </table>
 
-<p>Note what is not in either table: a percentage. There is no single draught relief discount percentage, and GOV.UK does not publish one. The relief works by giving you a different rate, and the size of the gap depends on which category and band your product sits in. Anyone quoting you a flat percentage off is making it up.</p>
+<p>Note what is not in either table: a percentage. There is no single draught relief discount percentage, and GOV.UK does not publish one. The relief works by giving you a different rate, and the size of the gap depends on which category and band your product sits in. There is no flat percentage off, so work from the rate tables rather than a headline discount.</p>
 
 <h2>Standard rate against reduced rate: where the line actually falls</h2>
 
@@ -128,7 +128,7 @@ faqs:
   </tbody>
 </table>
 
-<p>That last pair is the one most articles miss entirely, and it is the one that costs money. The container size is a necessary condition. It has never been a sufficient one.</p>
+<p>That last pair is the distinction that costs money. The container size is a necessary condition. It has never been a sufficient one.</p>
 
 <h2>Draught relief: two conditions, both of which must hold</h2>
 

@@ -50,7 +50,8 @@ function PromptCard({
   icon: Icon,
   index,
   tone,
-}: Prompt & { index: number; tone: Tone }) {
+  plain,
+}: Prompt & { index: number; tone: Tone; plain: boolean }) {
   // Gentle zigzag so the column reads as movement rather than a stack of boxes.
   const offset = index % 2 === 0 ? "lg:mr-8" : "lg:ml-8";
   return (
@@ -72,8 +73,8 @@ function PromptCard({
           {/* Sentence case, not uppercase: these are full sentences, and uppercase
               at this length reads as shouting and slows scanning. */}
           <span className="block text-sm font-bold leading-snug text-red-700 sm:text-base">{tag}</span>
-          <p className="mt-2 text-base italic leading-relaxed text-slate-700 sm:text-lg">
-            &ldquo;{text}&rdquo;
+          <p className={`mt-2 text-base leading-relaxed text-slate-700 sm:text-lg ${plain ? "" : "italic"}`}>
+            {plain ? text : <>&ldquo;{text}&rdquo;</>}
           </p>
           {detail ? (
             <p className="mt-3 border-t border-slate-100 pt-3 text-sm leading-relaxed text-slate-600">
@@ -86,7 +87,16 @@ function PromptCard({
   );
 }
 
-export function PromptMarquee({ prompts, tone = "white" }: { prompts: Prompt[]; tone?: Tone }) {
+/** `plain` renders each prompt as a situation line: no quotation marks, no italic. */
+export function PromptMarquee({
+  prompts,
+  tone = "white",
+  plain = false,
+}: {
+  prompts: Prompt[];
+  tone?: Tone;
+  plain?: boolean;
+}) {
   // Cards carrying a `detail` paragraph are roughly twice as tall, so the
   // hook-only height would frame a single card and read as a broken viewport
   // rather than a loop. Derived from the prompts instead of a prop: the caller
@@ -113,14 +123,14 @@ export function PromptMarquee({ prompts, tone = "white" }: { prompts: Prompt[]; 
       <div className="marquee-track">
         <ul className="mb-4 flex flex-col gap-4">
           {prompts.map((prompt, i) => (
-            <PromptCard key={prompt.tag} {...prompt} index={i} tone={tone} />
+            <PromptCard key={prompt.tag} {...prompt} index={i} tone={tone} plain={plain} />
           ))}
         </ul>
         {/* Duplicate set completes the seamless loop; hidden from AT so the
             prompts are not announced twice. */}
         <ul aria-hidden className="mb-4 flex flex-col gap-4">
           {prompts.map((prompt, i) => (
-            <PromptCard key={prompt.tag} {...prompt} index={i} tone={tone} />
+            <PromptCard key={prompt.tag} {...prompt} index={i} tone={tone} plain={plain} />
           ))}
         </ul>
       </div>

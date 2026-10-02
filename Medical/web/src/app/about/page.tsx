@@ -116,7 +116,7 @@ export default function AboutPage() {
       </section>
 
       <p className="mx-auto max-w-3xl px-4 py-6 text-center text-sm leading-relaxed text-slate-700 sm:px-6 lg:px-8">
-        The detail, including how many firms your details can reach and how to opt out, is in our{" "}
+        How we handle your details, and how to opt out, is in our{" "}
         <Link href="/privacy-policy" className={`font-semibold text-primary-700 underline ${focusRing} rounded`}>
           privacy policy
         </Link>
@@ -146,7 +146,7 @@ export default function AboutPage() {
             <p>
               A generalist can process the numbers. Spotting that pension growth is about to trigger an
               annual allowance charge, or that incorporating private work will cut a GP&apos;s
-              pensionable pay, is a different job, and it is the reason the enquiry goes where it goes.
+              pensionable pay, is a different job, and it is the reason we work only with the medical professions.
             </p>
           </Prose>
         </div>

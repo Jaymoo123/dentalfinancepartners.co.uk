@@ -123,7 +123,7 @@ const whoWeWorkWith = [
 const howWeWorkItems = [
   {
     title: "Annual accounts and corporation tax",
-    body: "Prepared accurately, filed on time, and reviewed with you properly, not just emailed over as a PDF you will never open. The firm that takes you on explains what the numbers mean for your business.",
+    body: "Prepared accurately, filed on time, and reviewed with you properly, not just emailed over as a PDF you will never open. One of our specialists explains what the numbers mean for your business.",
   },
   {
     title: "Self assessment and personal tax",
@@ -368,8 +368,7 @@ export default function HomePage() {
         <DentistsBackdrop tone="navy" />
         <div className={`relative z-10 ${siteContainerLg} ${sectionYLoose}`}>
           <h1 className="hero-reveal max-w-4xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
-            <span className="block">Dental accountants for UK practices,</span>
-            <span className="block">associates and groups.</span>
+            Dental accountants for UK practices, associates and groups.
           </h1>
           <p className="hero-reveal-delay mt-6 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
             We are specialist dental accountants for UK dentists. NHS contracts, associate tax, VAT, and acquisitions. We only work with dental practices, so we understand the financial specifics that generalist accountants miss.

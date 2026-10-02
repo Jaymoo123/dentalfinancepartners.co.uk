@@ -54,7 +54,7 @@ keyTakeaways:
 
 <p>With a holding company structure, you can move valuable assets up into the holding company. Intellectual property, brand trademarks, cash reserves, property leases. These sit in the holding company, not the trading subsidiary. If the trading company hits trouble, those assets are out of reach.</p>
 
-<p>A 12-person digital agency in Shoreditch I worked with had built up £340,000 in cash reserves and owned their trademark and website IP. When a client threatened legal action over a scope creep dispute, their solicitor confirmed those assets were protected because they sat in the holding company. The trading subsidiary could be wound up without losing the core value of the business.</p>
+<p>Take a 12-person digital agency that has built up £340,000 in cash reserves and owns its trademark and website IP. If a client threatens legal action over a scope creep dispute, those assets are protected because they sit in the holding company. The trading subsidiary could be wound up without losing the core value of the business.</p>
 
 <h3>Tax Efficiency on Dividends</h3>
 
@@ -62,7 +62,7 @@ keyTakeaways:
 
 <p>This matters when you have multiple agencies. Say you own a digital agency and a PR agency. Without a holding company, each pays you dividends personally. You pay dividend tax on both. With a holding company, the PR agency pays dividends to the holding company tax-free. The holding company can then loan cash to the digital agency for expansion without you taking a personal tax hit.</p>
 
-<p>Here is a real example. A Bristol-based agency group with three subsidiaries: a web design agency turning over £420k, a SEO agency turning over £380k, and a content marketing agency turning over £290k. Each paid dividends to the holding company totalling £210,000 across the group in 2024/25. Because those were intra-group dividends, no corporation tax was due. The holding company then used £80,000 to fund a new subsidiary launch. The founder paid zero tax on that movement. Without the holding company, taking that cash out of one company to fund another would have triggered dividend tax at 35.75%.</p>
+<p>Here is an illustrative example. A Bristol-based agency group with three subsidiaries: a web design agency turning over £420k, a SEO agency turning over £380k, and a content marketing agency turning over £290k. Each paid dividends to the holding company totalling £210,000 across the group in 2024/25. Because those were intra-group dividends, no corporation tax was due. The holding company then used £80,000 to fund a new subsidiary launch. The founder paid zero tax on that movement. Without the holding company, taking that cash out of one company to fund another would have triggered dividend tax at 35.75%.</p>
 
 <h3>Exit Flexibility and BADR</h3>
 
@@ -70,7 +70,7 @@ keyTakeaways:
 
 <p>A holding company structure can make exit planning cleaner. You can sell shares in the holding company, which gives the buyer control of all subsidiaries. Or you can sell individual subsidiaries to different buyers. Each sale can qualify for BADR if structured correctly.</p>
 
-<p>I worked with a founder who owned two agencies: a creative agency and a recruitment agency. He wanted to sell the recruitment agency to a competitor but keep the creative agency. With a holding company structure, he sold the shares in the recruitment subsidiary. The gain qualified for BADR. The holding company retained the creative agency. Total CGT bill: 18% on £620,000 = £86,800, instead of 24% (£148,800).</p>
+<p>Take a founder who owns two agencies: a creative agency and a recruitment agency. They want to sell the recruitment agency to a competitor but keep the creative agency. With a holding company structure, they sell the shares in the recruitment subsidiary. The gain qualifies for BADR. The holding company retains the creative agency. Total CGT bill: 18% on £620,000 = £86,800, instead of 24% (£148,800).</p>
 
 <h2>When a Holding Company Does Not Make Sense</h2>
 

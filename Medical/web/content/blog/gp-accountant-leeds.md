@@ -19,7 +19,7 @@ h1: "GP Accountant Leeds: Expert Medical Tax & Accounting Services"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold, its sale has been prohibited since 1 April 2004, currently under SI 2019/251, so a GP transaction turns on tangible assets, premises and capital accounts rather than a goodwill multiple."
 - "GP partners are taxed on their allocated profit share, not their drawings, with Class 4 National Insurance at 6% between £12,570 and £50,270 and 2% above for 2025/26."
-- "The NHS pension annual allowance is £60,000 for 2025/26 and tapers by £1 for every £2 of adjusted income over £260,000, down to a £10,000 floor, tested on the pension input amount rather than contributions paid."
+- "The NHS pension annual allowance is £60,000 for 2026/27 and tapers by £1 for every £2 of adjusted income over £260,000, down to a £10,000 floor, tested on the pension input amount rather than contributions paid."
 - "The HMRC business mileage rate rose to 55p per mile for the first 10,000 business miles from 6 April 2026, then 25p thereafter."
 - "Making Tax Digital for Income Tax begins on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, which catches most full-time locums and unincorporated private GPs."
 summary: "Specialist GP accountant in Leeds providing medical tax advice, NHS pension annual allowance planning and GP partnership accounting for partners, salaried GPs and locum doctors across Yorkshire."
@@ -30,7 +30,7 @@ faqs:
   - question: "What are the main 2026/27 tax changes a Leeds GP should know about?"
     answer: "For 2026/27 the dividend ordinary rate rises to 10.75% and the upper rate to 35.75% (additional rate stays 39.35%, dividend allowance £500), which matters for any GP with a private-work company. The HMRC business mileage rate rose to 55p per mile for the first 10,000 business miles from 6 April 2026 (25p thereafter). Making Tax Digital for Income Tax begins on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, which catches most full-time locums and unincorporated private GPs. The pension annual allowance stays at £60,000 with the taper starting at £200,000 threshold income and £260,000 adjusted income."
   - question: "How does a GP accountant help with NHS pension annual allowance issues?"
-    answer: "Higher-earning Leeds GPs, especially partners and consultants with significant pensionable service, can breach the £60,000 annual allowance (2025/26) or the tapered allowance, which falls by £1 for every £2 of adjusted income over £260,000 down to a £10,000 floor. For the NHS defined-benefit scheme the test is the pension input amount (capitalised growth), not contributions paid, so it needs careful annual monitoring. We help you track input growth, use carry forward from the previous three years, and consider a Scheme Pays election where a charge arises. See our NHS pension annual allowance guide for the full mechanics."
+    answer: "Higher-earning Leeds GPs, especially partners and consultants with significant pensionable service, can breach the £60,000 annual allowance (2026/27) or the tapered allowance, which falls by £1 for every £2 of adjusted income over £260,000 down to a £10,000 floor. For the NHS defined-benefit scheme the test is the pension input amount (capitalised growth), not contributions paid, so it needs careful annual monitoring. We help you track input growth, use carry forward from the previous three years, and consider a Scheme Pays election where a charge arises. See our NHS pension annual allowance guide for the full mechanics."
   - question: "Can a Leeds locum GP save tax by using a limited company?"
     answer: "Sometimes, but only for private or outside-IR35 work, and never without modelling the pension cost. An NHS GMS or PMS contract sits with GPs, their partnerships or a company limited by shares whose shareholders all qualify, which a doctor's ordinary personal service company does not, and income taken as dividends is not NHS-pensionable, so you lose scheme accrual on that income. The 2026/27 dividend-rate rise narrows the pure tax saving further. The real drivers are usually managing the annual-allowance taper, retained profit and family planning, not a headline tax cut. We always pair any incorporation saving against the pension-accrual loss before advising."
   - question: "Do I need a Leeds-based accountant or can I work with a medical specialist remotely?"
@@ -46,7 +46,7 @@ faqs:
 <p>General high-street accountants often lack the specific knowledge medical professionals need. A specialist <strong>GP accountant in Leeds</strong> understands the issues that actually move the numbers for doctors:</p>
 
 <ul>
-<li>NHS pension annual allowance and pension input amount (the £60,000 allowance for 2025/26, tapered for high earners)</li>
+<li>NHS pension annual allowance and pension input amount (the £60,000 allowance for 2026/27, tapered for high earners)</li>
 <li>GP partnership profit sharing, where each partner is taxed on their profit share, not their drawings</li>
 <li>Type 1 (partner) and Type 2 (salaried) pension certification via PCSE, and Locum forms A and B for freelance locums</li>
 <li>Mixed NHS and private income, and how to allocate it correctly</li>
@@ -83,7 +83,7 @@ faqs:
 
 <h2>NHS Pension Planning for Leeds Doctors</h2>
 
-<p>The NHS pension annual allowance causes the most headaches for higher-earning Leeds medical professionals. The annual allowance is £60,000 (2025/26). It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. The lifetime allowance was abolished from 6 April 2024 and replaced by the Lump Sum Allowance (£268,275) and the Lump Sum and Death Benefit Allowance (£1,073,100).</p>
+<p>The NHS pension annual allowance causes the most headaches for higher-earning Leeds medical professionals. The annual allowance is £60,000 (2026/27). It tapers where threshold income exceeds £200,000 and adjusted income exceeds £260,000, falling by £1 for every £2 of adjusted income above £260,000, down to a minimum of £10,000. The lifetime allowance was abolished from 6 April 2024 and replaced by the Lump Sum Allowance (£268,275) and the Lump Sum and Death Benefit Allowance (£1,073,100).</p>
 
 <p>One point worth stressing: for a defined-benefit scheme like the NHS scheme, the measure is the pension input amount (capitalised growth across the year), not the contributions you pay. That is why pension growth can quietly outrun the allowance even when nothing feels different in your pay.</p>
 
@@ -96,7 +96,7 @@ faqs:
 <li>Plan around the £200,000 threshold income figure where additional income may trigger the taper</li>
 </ul>
 
-<p>For the full detail see our <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance guide</a>, the <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays deadlines guide</a>, and our <a href="/blog/nhs-pension-tax-charges-how-to-minimize">guide to minimising pension tax charges</a>. The annual allowance change from £40,000 to £60,000 took effect in April 2023; the figures above are the current 2025/26 position.</p>
+<p>For the full detail see our <a href="/blog/nhs-pension-annual-allowance-complete-guide">NHS pension annual allowance guide</a>, the <a href="/blog/nhs-pension-scheme-pays-doctors-deadlines">Scheme Pays deadlines guide</a>, and our <a href="/blog/nhs-pension-tax-charges-how-to-minimize">guide to minimising pension tax charges</a>. The annual allowance change from £40,000 to £60,000 took effect in April 2023; the figures above are the current 2026/27 position.</p>
 
 <h2>Common Tax Issues for Leeds GPs</h2>
 

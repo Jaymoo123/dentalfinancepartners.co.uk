@@ -56,7 +56,7 @@ metaDescription_prev: 'Annual Tax on Enveloped Dwellings 2026/27: who pays, the 
 
 <p>For 2026/27, the headline figures matter to anyone holding a single dwelling above the threshold in a non-natural person: the smallest band pays £4,600 a year and the largest pays £303,450. Both numbers can be reduced to nil by claiming the right relief on the return, but the return itself is not optional. Missing the 30 April filing deadline produces an immediate £100 penalty even where no tax is owed, and the cascade gets sharply worse from there.</p>
 
-<p>This guide is the pillar reference for the regime. It walks through who is caught, the 2026/27 bands, valuation and the five-year revaluation cycle, every available relief and exemption, how ATED interacts with SDLT, the annual return mechanics, the late-filing and late-payment penalty cascade, and the strategic question of whether to keep a property enveloped at all. Where a topic deserves its own dedicated guide (rental relief mechanics, the 17% SDLT interaction, penalty appeals) we link through to it.</p>
+<p>This guide covers the regime in full. It walks through who is caught, the 2026/27 bands, valuation and the five-year revaluation cycle, every available relief and exemption, how ATED interacts with SDLT, the annual return mechanics, the late-filing and late-payment penalty cascade, and the strategic question of whether to keep a property enveloped at all. Where a topic deserves its own dedicated guide (rental relief mechanics, the 17% SDLT interaction, penalty appeals) we link through to it.</p>
 
 <h2>Who Has to Pay ATED</h2>
 

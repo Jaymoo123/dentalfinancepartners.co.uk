@@ -57,9 +57,9 @@ export default function AboutPage() {
               About {siteConfig.name}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-              We set out to build a route into specialist advice that could keep pace with UK dentistry (mixed
-              payment models, changing associate relationships, and serious capital decisions) without treating
-              your practice like a generic small business.
+              We are a specialist accountancy firm for UK dentistry. Our advice keeps pace with mixed payment
+              models, changing associate relationships, and serious capital decisions, without treating your
+              practice like a generic small business.
             </p>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
           contained
           ground="white"
           title="Get a dental specialist on your numbers"
-          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and we will put you in front of one of our dental accounting specialists. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
+          description="Reading up is the right first step. The next one is someone looking at your actual position: your NHS and private mix, how you are set up, and what you are planning next. Tell us where you are and one of our dental accounting specialists will call you. No obligation and no hard sell. If your current arrangement is already right for you, they will say so."
           proofPoints={[
             { title: "Dental practices only", detail: "NHS pensions, UDAs and practice sales every day" },
             { title: "One accountant throughout", detail: "You speak to the person doing the work" },

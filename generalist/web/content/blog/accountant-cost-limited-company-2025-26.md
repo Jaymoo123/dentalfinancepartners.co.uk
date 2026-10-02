@@ -76,7 +76,7 @@ keyTakeaways:
 <li>Management accounts (usually not available at this tier)</li>
 <li>Tax planning beyond standard dividend/salary optimisation</li>
 </ul>
-<p><strong>Real example:</strong> A freelance graphic designer in Shoreditch, London, single director, no staff, turnover £72,000. Pays £95 per month on a rolling contract. Includes FreeAgent, year-end accounts, CT600, and personal tax return. VAT returns are extra at £30 per quarter.</p>
+<p><strong>Worked example:</strong> A freelance graphic designer in Shoreditch, London, single director, no staff, turnover £72,000. Pays £95 per month on a rolling contract. Includes FreeAgent, year-end accounts, CT600, and personal tax return. VAT returns are extra at £30 per quarter.</p>
 
 <h3>Tier 2: Growing Business (Employees, VAT, More Complexity)</h3>
 <p><strong>Typical monthly fee: £150 to £250 per month</strong><br>
@@ -90,7 +90,7 @@ keyTakeaways:
 <li>Quarterly management accounts or at least a profit and loss review</li>
 <li>Active tax planning (dividend strategy, pension contributions, capital allowances)</li>
 </ul>
-<p><strong>Real example:</strong> A digital marketing agency in Leeds Dock, 3 employees, turnover £340,000, standard VAT registered. Pays £195 per month. Includes Xero, VAT returns, payroll for 3 staff, year-end accounts, CT600, and two director personal tax returns. Management accounts are quarterly at an extra £50 per quarter.</p>
+<p><strong>Worked example:</strong> A digital marketing agency in Leeds Dock, 3 employees, turnover £340,000, standard VAT registered. Pays £195 per month. Includes Xero, VAT returns, payroll for 3 staff, year-end accounts, CT600, and two director personal tax returns. Management accounts are quarterly at an extra £50 per quarter.</p>
 
 <h3>Tier 3: Established Business (Multi-Director, Complex, High Turnover)</h3>
 <p><strong>Typical monthly fee: £300 to £600+ per month</strong><br>
@@ -105,7 +105,7 @@ keyTakeaways:
 <li>Strategic tax planning (exit planning, BADR, inheritance tax)</li>
 <li>Regular face-to-face or video meetings (monthly or bi-monthly)</li>
 </ul>
-<p><strong>Real example:</strong> A software consultancy in MediaCity, Manchester, 4 directors, 12 employees, turnover £1.2M, with an R&D claim worth £48,000. Pays £420 per month. Includes all compliance, quarterly management accounts, R&D claim preparation, payroll for 12, VAT, and monthly strategy calls.</p>
+<p><strong>Worked example:</strong> A software consultancy in MediaCity, Manchester, 4 directors, 12 employees, turnover £1.2M, with an R&D claim worth £48,000. Pays £420 per month. Includes all compliance, quarterly management accounts, R&D claim preparation, payroll for 12, VAT, and monthly strategy calls.</p>
 
 <h2>What Drives Accountant Costs for a Limited Company?</h2>
 <p>If you want to understand why two similar companies might pay different fees, look at these factors. They are the main drivers of <strong>limited company accountant cost</strong>.</p>

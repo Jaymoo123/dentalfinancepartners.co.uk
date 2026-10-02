@@ -66,9 +66,9 @@ const HOMEPAGE_FAQS = [
       "For a GP partner: partnership accounts, the profit allocation, the superannuation certificate, and the personal return. For a salaried GP: self-assessment where private, locum or sessional income sits alongside the NHS post. For a hospital consultant: the split between NHS employment, private practice and medico-legal work, plus the incorporation question if the private income is material. For a locum: IR35 status, the limited company versus umbrella versus sole trader decision, expense claims, and NHS Pension Forms A and B so that locum work counts towards pensionable service.",
   },
   {
-    question: "Which doctors is this site for?",
+    question: "Which doctors do you work with?",
     answer:
-      "GP partners and salaried GPs, hospital consultants with NHS and private income, locum and sessional doctors, junior doctors, and GP practices as entities. We work with nobody outside the medical professions, which is the point: the same questions recur, so the answers are already worked out. We publish the research, we build the calculators, and our medical accountants take the enquiries that come from them.",
+      "GP partners and salaried GPs, hospital consultants with NHS and private income, locum and sessional doctors, junior doctors, and GP practices as entities. We work with nobody outside the medical professions, which is the point: the same questions recur, so the answers are already worked out. We publish the research, we build the calculators, and we take the enquiries that come from them.",
   },
   {
     question: "Are you able to help doctors outside London?",
@@ -256,13 +256,13 @@ const serviceAreas = [
 const trustItems = [
   {
     title: "Medical work only",
-    stat: "Medical only",
-    body: "Nothing here is written for a general small business, and no enquiry is routed outside the medical professions. The NHS Pension, PCSE and partnership questions are the whole subject of this site, which is why they are answered rather than skirted.",
+    stat: "100%",
+    body: "Nothing here is written for a general small business, and we take on no work outside the medical professions. The NHS Pension, PCSE and partnership questions are the whole subject of this site, which is why they are answered rather than skirted.",
   },
   {
     title: "Free calculators, figure on the page",
     stat: String(allTools().length),
-    body: "Medical tax calculators covering NHS Pension annual allowance, tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings and the incorporation comparison. We ask once whether a specialist should confirm your figure, and you can skip that and still see it.",
+    body: "Medical tax calculators covering NHS Pension annual allowance, tapered allowance, Scheme Pays, tiered superannuation contributions, locum tax, GP partner drawings and the incorporation comparison. If you want one of our specialists to confirm your figure, say so at the end; you see the result either way.",
   },
   {
     /* The stat is the number of /for-* audience pages this site actually
@@ -460,11 +460,11 @@ export default function HomePage() {
                   Between the NHS Pension, mixed NHS and private income, locum engagements, practice partnerships and professional expenses, the pieces do not sit still. A generalist accountant will process what you hand over accurately. That is not the same as knowing what you should have handed over, or what the figures on a PCSE statement mean.
                 </p>
                 <p>
-                  The sentences alongside are the ones doctors actually open with. None of them is a client quote and none is attributed: they are here so you can tell quickly whether this is the right place to ask.
+                  Typical situations we are asked about. If yours is on the list, you are in the right place.
                 </p>
               </Prose>
             </div>
-            <PromptMarquee prompts={prompts} tone="white" />
+            <PromptMarquee prompts={prompts} tone="white" plain />
           </div>
         </div>
       </section>

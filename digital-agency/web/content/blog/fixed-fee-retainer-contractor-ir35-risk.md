@@ -76,7 +76,7 @@ keyTakeaways:
 
 <h3>Case Study: The SEO Contractor Retainer</h3>
 
-<p>Consider a real example. A Bristol-based digital agency engaged a contractor through their limited company to provide SEO services for three retainer clients. The contractor was paid £4,500 per month, fixed, regardless of workload. The contractor worked 20-25 hours per week across the three accounts, using the agency's reporting templates and attending weekly client calls.</p>
+<p>Consider an illustrative example. A Bristol-based digital agency engaged a contractor through their limited company to provide SEO services for three retainer clients. The contractor was paid £4,500 per month, fixed, regardless of workload. The contractor worked 20-25 hours per week across the three accounts, using the agency's reporting templates and attending weekly client calls.</p>
 
 <p>When HMRC investigated, they argued that the contractor was effectively an employee of the agency. The fixed retainer meant there was no financial risk. The agency controlled the work through client briefs and deadlines. The contractor could not substitute someone else because the clients expected to deal with them personally.</p>
 

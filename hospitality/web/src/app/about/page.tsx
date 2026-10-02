@@ -52,7 +52,7 @@ export default function AboutPage() {
             We only work with hospitality businesses.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            Because tronc and tips compliance, food and drink VAT, payroll for variable-hours teams and the specific requirements of the licensed trade are specific enough that general accounting experience is not the same as specialist experience.
+            We work only with hospitality businesses, because tronc and tips compliance, food and drink VAT, payroll for variable-hours teams and the requirements of the licensed trade are specific enough that general accounting experience is not the same as specialist experience.
           </p>
         </div>
       </section>

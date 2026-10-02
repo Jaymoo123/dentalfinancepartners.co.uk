@@ -32,7 +32,7 @@ faqs:
   - question: "How does LRR interact with section 198 fixtures elections?"
     answer: "A section 198 election at CAA 2001 fixes the disposal value of fixtures on acquisition for capital allowances purposes. LRR operates on the remediation expenditure incurred by the acquirer, not on the fixtures cost. Both regimes can apply on the same brownfield acquisition: section 198 election covers the pre-acquisition fixtures pool transfer; LRR covers the post-acquisition remediation expenditure. Sessions writing on brownfield acquisitions should run both regimes; they operate on different cost categories within the same transaction."
   - question: "Does the existing site coverage on Land Remediation Relief use the same framework?"
-    answer: "The existing site coverage uses the 150 percent shorthand framing rather than the additive 100 percent plus 50 percent framing per HP §25.12. This page anchors on the additive architecture as the structurally correct framing. The two pages are companions: the existing page covers the operational mechanics of the relief and worked claims; this page covers the architectural framework and the polluter and subsidy exclusions in depth."
+    answer: "The existing site coverage uses the 150 percent shorthand framing rather than the additive 100 percent plus 50 percent framing. This page anchors on the additive architecture as the structurally correct framing. The two pages are companions: the existing page covers the operational mechanics of the relief and worked claims; this page covers the architectural framework and the polluter and subsidy exclusions in depth."
 ---
 
 <p>Cleanup of brownfield land in the UK has long been a corporation-tax-mediated activity. The Finance Act 2001 introduced Land Remediation Relief as a targeted incentive for companies undertaking contaminated-land cleanup; the Finance Act 2009 extended the regime to long-derelict land; the relief was consolidated into CTA 2009 Part 14 in the 2009 corporation tax rewrite. The headline rate is widely cited in commentary as "150 percent relief" but the statutory architecture is additive: a 100 percent standard revenue or capital deduction at sections 1147 and 1148, plus a 50 percent additional deduction at section 1149. The additive framing is what makes the relief's interactions with other tax mechanics work cleanly.</p>
@@ -47,7 +47,7 @@ faqs:
 
 <p>Reading the structure as additive produces the correct interactions with other parts of the tax framework. Where capital allowances are claimed on a related plant-and-machinery cost on the same project, the LRR deduction (on the remediation cost) and the capital allowance (on the plant cost) operate on different expenditure categories without double-counting. Where interest is deducted on remediation finance, the interest is deducted on its own basis (subject to corporate interest restriction rules at TIOPA 2010 Part 10); the LRR deduction is layered separately. Where group relief is claimed on the loss flowing from the LRR deduction, the loss is surrendered at its post-LRR value reflecting the full 150 percent deduction.</p>
 
-<p>The bare "150 percent relief" shorthand misframes these interactions because it implies a single multiplicative figure rather than two separate statutory layers. HP §25.12.9 forbids the bare shorthand and requires the additive framing.</p>
+<p>The bare "150 percent relief" shorthand misframes these interactions because it implies a single multiplicative figure rather than two separate statutory layers. Our position is to avoid the bare shorthand and use the additive framing.</p>
 
 <h2>The six qualifying conditions A to F at section 1144</h2>
 
@@ -75,7 +75,7 @@ faqs:
 
 <p>Section 1150 is the operational restriction most LRR-eligible projects need to evidence around. Subsection (1)(b) prohibits relief if the contamination or dereliction results "wholly or partly" from acts or omissions by the company OR by persons with a "relevant connection". The wholly-or-partly trigger is broad; even partial responsibility disqualifies the expenditure.</p>
 
-<p>The "relevant connection" definition does not sit at section 1150(3). It sits at section 1178. Sessions writing on the polluter exclusion that cite section 1150(3) for the relevant-connection test are reading the wrong subsection; section 1178 holds the operative wording. This drift catch was surfaced at Stage 2 of Wave 8 preparation and is now reflected in HP §25.12.4.</p>
+<p>The "relevant connection" definition does not sit at section 1150(3). It sits at section 1178. Sessions writing on the polluter exclusion that cite section 1150(3) for the relevant-connection test are reading the wrong subsection; section 1178 holds the operative wording.</p>
 
 <p>Section 1178 provides a three-pathway test:</p>
 
@@ -120,7 +120,7 @@ faqs:
 
 <p>The section 198 fixtures election at CAA 2001 affects only the pre-acquisition fixtures pool transfer between vendor and acquirer; it does not interact with LRR on the post-acquisition remediation expenditure. Sessions writing on brownfield acquisition tax planning must address both regimes separately: the section 198 election on the fixtures cost (purchase-side capital allowances) and the LRR claim on the post-acquisition remediation expenditure.</p>
 
-<p>The Wave 7 deep-dive on the section 198 election sits at the relevant capital-allowances cluster page; the Wave 6 deep-dive on the CAA 2001 capital allowances framework sits at the capital-allowances pillar. Both should be read alongside this page for projects involving both regimes.</p>
+<p>Our deep-dive on the section 198 election and our guide to the CAA 2001 capital allowances framework sit in our capital allowances section. Both should be read alongside this page for projects involving both regimes.</p>
 
 <aside>
 <p>Multi-relief brownfield project review</p>
@@ -165,7 +165,7 @@ faqs:
 <li><a href="/blog/property-types-and-specialist-tax/transactions-in-uk-land-cta-2010-part-8zb-ita-2007-part-9a-four-conditions-test">Transactions in UK land: the four-conditions pillar</a> (trading-vs-investment line determines s.1147 vs s.1148 route)</li>
 <li><a href="/blog/property-types-and-specialist-tax/condition-d-development-main-purpose-convert-and-flip-trap-landlord-developers">Condition D development main-purpose</a> (developer SPVs holding brownfield land for development)</li>
 <li><a href="/blog/incorporation-and-company-structures/condition-c-trading-stock-section-162-incorporation-relief-denial-developers">Condition C trading stock</a> (trading-stock developer SPVs and the LRR route)</li>
-<li><a href="/blog/property-types-and-specialist-tax/land-remediation-relief-150-percent-claim-mechanics-ltdco-developer-investor">Land Remediation Relief: 150% claim mechanics</a> (operational companion page; this page supersedes for HP §25.12 framings)</li>
+<li><a href="/blog/property-types-and-specialist-tax/land-remediation-relief-150-percent-claim-mechanics-ltdco-developer-investor">Land Remediation Relief: 150% claim mechanics</a> (operational companion page)</li>
 </ul>
 
 <aside>

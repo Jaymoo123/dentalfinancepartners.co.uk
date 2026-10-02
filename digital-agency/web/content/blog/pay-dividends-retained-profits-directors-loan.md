@@ -98,7 +98,7 @@ keyTakeaways:
 
 <p>Only pay a dividend if the cash available after covering those obligations exceeds the dividend amount. If your cash position is tight, pay a smaller dividend or wait until debtor payments land.</p>
 
-<p>Let me give you a real example. A 12-person digital agency in Manchester Northern Quarter showed retained profits of £180,000 in their year-end accounts. The founder wanted to take a £60,000 dividend. But the company had only £45,000 in the bank, with a £28,000 corporation tax bill due in two months and £15,000 of outstanding supplier invoices. The available cash after those obligations was £2,000. Paying a £60,000 dividend would have created a director's loan of £58,000 immediately.</p>
+<p>Let me give you an illustrative example. A 12-person digital agency in Manchester Northern Quarter showed retained profits of £180,000 in their year-end accounts. The founder wanted to take a £60,000 dividend. But the company had only £45,000 in the bank, with a £28,000 corporation tax bill due in two months and £15,000 of outstanding supplier invoices. The available cash after those obligations was £2,000. Paying a £60,000 dividend would have created a director's loan of £58,000 immediately.</p>
 
 <p>We advised them to pay a £2,000 dividend that month, then revisit after the next client payment run. That is the disciplined approach.</p>
 

@@ -48,7 +48,7 @@ keyTakeaways:
 
 <p>HMRC does not look at your accounting year. They look at any consecutive 12 months. If your turnover hits £91,000 between March and February even though your year-end is December, you must register by the end of the month following the month you exceeded the threshold.</p>
 
-<p><strong>Real example:</strong> A freelance consultant in Bristol had turnover of £84,000 in the 12 months to October. In November she invoiced £8,000. That took her rolling 12-month total to £92,000. She had to notify HMRC by 31 December and was registered from 1 January.</p>
+<p><strong>Worked example:</strong> A freelance consultant in Bristol had turnover of £84,000 in the 12 months to October. In November she invoiced £8,000. That took her rolling 12-month total to £92,000. She had to notify HMRC by 31 December and was registered from 1 January.</p>
 
 <p>There is also a forward-looking test. If you expect your turnover to exceed £90,000 in the next 30 days alone, you must register immediately. This catches businesses that win a single large contract.</p>
 

@@ -166,7 +166,7 @@ keyTakeaways:
 
 <p><strong>Scenario B: A biotech startup in Cambridge.</strong> The founders use an accountant who specialises in startups. They incorporate with alphabet shares, set up an EMI pool, and file an R&D claim in year one worth £42,000 in cash. The accountant advises on a director pay strategy that saves £2,400 in personal tax. When the founders raise a £1M seed round, the accountant provides the financial pack to investors within 48 hours. Total value added: £44,400 plus time saved.</p>
 
-<p>Both startups are real examples from our client base. The difference is the accountant.</p>
+<p>Both startups are illustrative examples. The difference is the accountant.</p>
 
 <h2>Next Steps</h2>
 

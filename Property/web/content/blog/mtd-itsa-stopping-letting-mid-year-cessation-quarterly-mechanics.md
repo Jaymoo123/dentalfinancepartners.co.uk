@@ -46,7 +46,7 @@ faqs:
     answer: "Operationally, you can cancel the subscription after the EoPS and final declaration for the cessation year are filed (typically by 31 January of the following year). Keep the digital records and the audit trail for the seven-year retention period under TMA 1970 s.12B; some software vendors offer a read-only archive plan for this purpose at a much lower price than the active subscription. If you return to letting within seven years, you may pick up MTD ITSA again under whatever threshold applies at that point. The cessation does not permanently bar you from MTD ITSA participation; it ends the current obligation."
 dateModified: "2026-05-24"
 reviewedBy: "Property Tax Partners Editorial Team"
-reviewerCredentials: "UK-based tax advisers specialising in property income, MTD ITSA implementation, and the disposal-driven cessation route. Position aligned with house position §19.15 (mid-year cessation, Wave 4 extension, locked 2026-05-23) and §19.5 (income-drop exit contrast)."
+reviewerCredentials: "UK-based tax advisers specialising in property income, MTD ITSA implementation, and the disposal-driven cessation route."
 reviewedAt: "2026-05-23"
 editorialNote: "Operational mechanics page for landlords ceasing the rental business mid-year, either through disposal of the last property or through stopping letting with property retained. Authority sources: house position §19.15 + §19.5; ITTOIA 2005 s.354 (post-cessation receipts and expenses, importing Chapter 18 of Part 2); TMA 1970 Sch 3ZA (CGT 60-day return); TCGA 1992 ss.222-226 (Private Residence Relief). Anti-templating boundary: Wave 3 B4 (income-drop three-year sub-threshold exit) is the threshold-failure route; B9 is the business-cessation route. Defers Wave 3 B4 territory via cross-link."
 ---
@@ -92,7 +92,7 @@ editorialNote: "Operational mechanics page for landlords ceasing the rental busi
 <p>The cessation closes the MTD chapter. The CGT chapter remains open until eventual disposal, with the rental-period gain banked for a future calculation.</p>
 <h2>Post-cessation expense relief</h2>
 <p>After cessation, expenses related to the former rental business may still arise. A contractor invoices a repair bill three months after the sale completion. A bad debt on tenant arrears crystallises a year later. Legal fees defending an HMRC enquiry into the cessation year arrive eighteen months on.</p>
-<p>Under ITTOIA 2005 s.354 (which imports the Chapter 18 of Part 2 trader-side post-cessation rules into property businesses), expenses incurred within seven years of cessation that would have been deductible if the business had continued are allowable. Per house position §19.15, the seven-year window is the operational tail to plan against.</p>
+<p>Under ITTOIA 2005 s.354 (which imports the Chapter 18 of Part 2 trader-side post-cessation rules into property businesses), expenses incurred within seven years of cessation that would have been deductible if the business had continued are allowable. The seven-year window is the operational tail to plan against.</p>
 <p>Claim mechanics:</p>
 <ul>
 <li>The expense is claimed via your self-assessment return for the year of payment, in the post-cessation expenses section.</li>
@@ -164,7 +164,7 @@ editorialNote: "Operational mechanics page for landlords ceasing the rental busi
 </ul>
 <p>The joint-owner mechanic is covered in detail on our <a href="/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse">joint-owner quarterly filing page</a>; the cessation case applies the same per-owner discipline as the live cycle, just at the end rather than during.</p>
 <h2>Distinct from the income-drop exit rule</h2>
-<p>The other route out of MTD ITSA is the §19.5 income-drop exit: qualifying income falls below the threshold for three consecutive tax years, the taxpayer notifies HMRC, HMRC confirms removal from MTD obligations. That route applies where the rental business continues but the income trends down.</p>
+<p>The other route out of MTD ITSA is the income-drop exit: qualifying income falls below the threshold for three consecutive tax years, the taxpayer notifies HMRC, HMRC confirms removal from MTD obligations. That route applies where the rental business continues but the income trends down.</p>
 <p>Cessation differs in five ways:</p>
 <ul>
 <li>Timing: cessation is immediate at the cessation date; the income-drop exit requires three consecutive years.</li>
@@ -183,4 +183,4 @@ editorialNote: "Operational mechanics page for landlords ceasing the rental busi
 <li>The MTD overview (covered in our <a href="/blog/making-tax-digital-mtd/mtd-itsa-overview-six-changes-residential-landlords">bucket pillar page</a>).</li>
 </ul>
 <p>For the parallel CGT 60-day return mechanic in more depth, see our existing CGT-on-property content. For the joint-owner cessation pattern, see the <a href="/blog/making-tax-digital-mtd/mtd-itsa-joint-property-owners-quarterly-filing-mechanics-each-spouse">joint-owner quarterly filing page</a>. For the landlord-side ASA-engaged accountant flow that handles cessation submissions on behalf, see our <a href="/blog/making-tax-digital-mtd/mtd-itsa-agent-services-account-asa-authorisation-walkthrough">ASA authorisation walkthrough</a>.</p>
-<p>Source authority for the positions on this page: house position §19.15 (Wave 4 mid-year cessation extension, locked 2026-05-23) and §19.5 (income-drop exit, the contrast); ITTOIA 2005 s.354 (post-cessation receipts and expenses, importing Chapter 18 of Part 2 for property businesses); TMA 1970 Sch 3ZA (CGT 60-day return); TCGA 1992 ss.222-226 (Private Residence Relief); gov.uk MTD ITSA use-the-service guidance (cessation notification mechanic).</p>
+<p>Sources: ITTOIA 2005 s.354 (post-cessation receipts and expenses, importing Chapter 18 of Part 2 for property businesses); TMA 1970 Sch 3ZA (CGT 60-day return); TCGA 1992 ss.222-226 (Private Residence Relief); gov.uk MTD ITSA use-the-service guidance (cessation notification mechanic).</p>

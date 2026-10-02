@@ -112,7 +112,7 @@ export const udaNhsConfig: PremiumToolConfig = {
           { name: "Benchmark high", value: result.benchmarkHigh },
         ],
       },
-      note: "There is no national UDA value: only your contract's. Patient charges count towards the contract value, not on top of it (HP §3). The benchmark ranges are indicative; actual commissioner rates vary. The 2.5% CPI proxy is deliberately conservative: real erosion has been greater in several years. The tool does not model year-end reconciliation: deliver 96% to 100% of target and a 4% shortfall carries forward; below 96% the commissioner claws back the overpayment (HP §3.A). Scotland uses the item-of-service SDR, not UDAs, so this tool does not apply there (HP §3). These are estimates, not advice for your practice.",
+      note: "There is no national UDA value: only your contract's. Patient charges count towards the contract value, not on top of it. The benchmark ranges are indicative; actual commissioner rates vary. The 2.5% CPI proxy is deliberately conservative: real erosion has been greater in several years. The tool does not model year-end reconciliation: deliver 96% to 100% of target and a 4% shortfall carries forward; below 96% the commissioner claws back the overpayment. Scotland uses the item-of-service SDR, not UDAs, so this tool does not apply there. These are estimates, not advice for your practice.",
     };
   },
   chart: {
@@ -127,7 +127,7 @@ export const udaNhsConfig: PremiumToolConfig = {
     paragraphs: [
       "Your NHS contract pays a fixed annual amount for delivering a set number of Units of Dental Activity. The effective UDA value is simply your annual contract value divided by your UDA target. There is no single national rate: NHS England, NHS Wales and Health and Social Care in Northern Ireland each commission contracts individually, and the rate per UDA has historically varied widely between practices, commissioners and contract periods.",
       "The regional benchmark ranges shown are indicative 2025/26 figures based on NHS dental contract data. An effective UDA value below the benchmark range does not necessarily mean your practice is poorly run: older contracts signed before significant dental inflation can be structurally underfunded regardless of performance. The real-value calculation converts your current UDA rate back to its purchasing-power equivalent at the year the contract was signed, using a 2.5% annual CPI proxy (conservative: actual NHS dental cost inflation has been higher in several recent years).",
-      "The year-end reconciliation rule is critical for contract management: delivering between 96% and 100% of your UDA target means the 4% shortfall carries forward to the following year. Delivering below 96% triggers a clawback of the proportionate overpayment (HP §3.A). At very high UDA targets, the risk of a shortfall in a disrupted year is a significant cash-flow consideration.",
+      "The year-end reconciliation rule is critical for contract management: delivering between 96% and 100% of your UDA target means the 4% shortfall carries forward to the following year. Delivering below 96% triggers a clawback of the proportionate overpayment. At very high UDA targets, the risk of a shortfall in a disrupted year is a significant cash-flow consideration.",
     ],
   },
 };

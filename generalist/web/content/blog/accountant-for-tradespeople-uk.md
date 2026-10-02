@@ -116,7 +116,7 @@ keyTakeaways:
 
 <h2>Case Study: A Plumber in Manchester</h2>
 
-<p>Let us use a real example. A plumber in Manchester, trading as a limited company, turns over £120,000 per year. He works for a mix of domestic clients and a large developer. He has one van, one employee, and two regular subcontractors.</p>
+<p>Let us use a worked example. A plumber in Manchester, trading as a limited company, turns over £120,000 per year. He works for a mix of domestic clients and a large developer. He has one van, one employee, and two regular subcontractors.</p>
 
 <p>His old general accountant charged £180 per month. That covered his year-end accounts and corporation tax return. Everything else was extra: £50 per VAT return, £30 per CIS return, £40 per payroll run. He was paying over £3,000 per year in total.</p>
 

@@ -68,7 +68,7 @@ keyTakeaways:
 
 <p><strong>Adjusted EBITDA x Multiple = Indicative Valuation</strong></p>
 
-<p>Let us walk through a real example. Say you run a 12-person digital agency billing £800k per year. Your management accounts show a net profit of £120k. But that includes your salary of £80k, a company car, and some one-off legal fees from a contract dispute.</p>
+<p>Let us walk through a worked example. Say you run a 12-person digital agency billing £800k per year. Your management accounts show a net profit of £120k. But that includes your salary of £80k, a company car, and some one-off legal fees from a contract dispute.</p>
 
 <p>An acquirer will adjust that profit figure. They will add back your salary if you are leaving post-sale. They will add back discretionary costs like the car, the one-off legal fees, and any pension contributions above the norm. They might also deduct a market-rate salary for a replacement managing director if you are leaving.</p>
 

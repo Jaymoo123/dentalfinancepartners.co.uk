@@ -47,7 +47,7 @@ faqs:
 
 <p>Compare that to a software developer who can send another developer from their limited company. The developer passes the substitution test. The copywriter usually does not.</p>
 
-<p>Here is a real scenario. A 15-person digital agency in Manchester Northern Quarter takes on a six-month retainer for a fintech client. The retainer includes blog posts, landing pages, and email sequences. The agency hires Sarah, a freelance copywriter, at £350 per day. Sarah works from the agency's office two days a week, attends the client's weekly standup, and uses the client's brand guidelines and tone of voice document. She does not have a substitute. She does not work for any other client during that six months.</p>
+<p>Here is an illustrative scenario. A 15-person digital agency in Manchester Northern Quarter takes on a six-month retainer for a fintech client. The retainer includes blog posts, landing pages, and email sequences. The agency hires Sarah, a freelance copywriter, at £350 per day. Sarah works from the agency's office two days a week, attends the client's weekly standup, and uses the client's brand guidelines and tone of voice document. She does not have a substitute. She does not work for any other client during that six months.</p>
 
 <p>That engagement is almost certainly inside IR35.</p>
 

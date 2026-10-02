@@ -70,7 +70,7 @@ keyTakeaways:
 
 <h2>The Dual Filing Reality</h2>
 
-<p>Let us walk through a real scenario. A 15-person digital agency based in Shoreditch turns over £1.2 million per year. The founder moves to Dubai Marina in January 2025. The agency keeps its UK registered office, UK staff, and UK bank account. The founder works remotely from Dubai.</p>
+<p>Let us walk through an illustrative scenario. A 15-person digital agency based in Shoreditch turns over £1.2 million per year. The founder moves to Dubai Marina in January 2025. The agency keeps its UK registered office, UK staff, and UK bank account. The founder works remotely from Dubai.</p>
 
 <p>Here is what happens:</p>
 

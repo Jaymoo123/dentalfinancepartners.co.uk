@@ -106,7 +106,7 @@ keyTakeaways:
 <p>For smaller agencies, an EMI (Enterprise Management Incentives) share option scheme is often a better way to reward key staff. EMI options give employees the right to buy shares at a future date, with favourable tax treatment. They are simpler than alphabet shares for most situations. If you are considering equity for staff, speak to your accountant about whether EMI or alphabet shares better suits your situation.</p>
 
 <h2>Real Example: A 15-Person PR Agency</h2>
-<p>Here is a real scenario we worked through recently. A PR agency in Manchester's Northern Quarter, 15 people, billing £1.2m per year. The founder held 100% of the ordinary shares. She wanted to bring in two senior team members as shareholders, but she wanted to retain control and ensure they only benefited from dividends if the agency hit profit targets.</p>
+<p>Here is an illustrative scenario. A PR agency in Manchester's Northern Quarter, 15 people, billing £1.2m per year. The founder held 100% of the ordinary shares. She wanted to bring in two senior team members as shareholders, but she wanted to retain control and ensure they only benefited from dividends if the agency hit profit targets.</p>
 <p>We structured it as follows:</p>
 <ul>
 <li><strong>A shares:</strong> 80% of the equity, held by the founder. Full dividend rights, full voting rights, full capital entitlement on sale.</li>

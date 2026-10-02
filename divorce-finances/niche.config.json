@@ -16,20 +16,20 @@
   },
   "partner": { "name": "regulated firms in our specialist partner network", "descriptor": "", "privacy_policy_url": null },
   "entity": {
-    "firm": "Divorce Finance Specialists is the UK's specialist accountancy-side guide to the money in divorce and separation. We work out financial settlements, pension sharing and capital gains tax on divorce, and free calculators for the cost of divorce and settlement ranges. Where you need a solicitor, we introduce you to a regulated firm we work with, and we stay on the money side. Divorce Finance Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
+    "firm": "Divorce Finance Specialists is the UK's specialist accountancy-side guide to the money in divorce and separation. We work out financial settlements, pension sharing and capital gains tax on divorce, and free calculators for the cost of divorce and settlement ranges. Where you need a solicitor, we work alongside a regulated firm and stay on the money side. Divorce Finance Specialists is a trading name of Ashfield Trading Ltd, company number 16358723, registered office 20 Ashfield Avenue, Shipley, Bradford, BD18 3AL.",
     "serves": "We act for people in the UK going through divorce or separation who need to understand the financial side: settlements, pensions and tax.",
     "where": "We act for people across the United Kingdom and work remotely, by phone, video and email.",
     "howItWorks": [
       "You tell us your situation through the enquiry form: what you need worked out and where things stand.",
       "One of our team calls you to go through it and answer the immediate questions.",
-      "Where you need a solicitor, we introduce you to a regulated firm we work with.",
+      "Where you need a solicitor, we work alongside a regulated firm and stay on the money side.",
       "We stay on the money side throughout: settlements, pensions and tax."
     ],
-    "next": "We reply within 24 hours and one of our team comes back to you directly."
+    "next": "We reply within one working day and one of our team comes back to you directly."
   },
   "domain": "www.divorcefinancespecialists.co.uk",
   "tagline": "Clear, practical guidance on the money side of divorce and separation in the UK",
-  "description": "Divorce Finance Specialists. Plain-English guidance on financial settlements, pensions, tax and the family home for people divorcing or separating in the UK. Free calculators, no jargon. We connect readers with specialist help when their situation needs it.",
+  "description": "Divorce Finance Specialists. Plain-English guidance on financial settlements, pensions, tax and the family home for people divorcing or separating in the UK. Free calculators, no jargon, and our divorce finance specialists when you need the numbers done properly.",
   "brand": {
     "primary_color": "#1d4ed8",
     "logo_path": "/brand/primary-logo.png",
@@ -113,8 +113,8 @@
   },
   "blog": {
     "cta_heading": "Unsure what a fair settlement looks like?",
-    "cta_body": "Our free calculators give you a clear starting point in minutes, and if your situation is complex we can point you to the right specialist.",
-    "cta_button": "Use the free calculators"
+    "cta_body": "Our free calculators give you a clear starting point in minutes. When you want the figures done properly for your own situation, tell us about it and one of our divorce finance specialists will work through it with you.",
+    "cta_button": "Request a call"
   },
   "shared_components_version": "1.0.0",
   "last_sync": null

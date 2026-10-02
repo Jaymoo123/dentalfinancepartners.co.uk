@@ -52,6 +52,31 @@ export default function AboutPage() {
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">What we do</h2>
               <ul className="space-y-4">
                 <li>
+                  <span className="font-semibold text-neutral-900">Settlement figures.</span>{" "}
+                  What a fair split of the house, savings, debts and pensions looks like for your
+                  situation, with the working shown.
+                </li>
+                <li>
+                  <span className="font-semibold text-neutral-900">Pension sharing and offsetting.</span>{" "}
+                  The numbers behind a pension sharing order or an offset against the house, so you
+                  can see what each option is worth before you agree to it.
+                </li>
+                <li>
+                  <span className="font-semibold text-neutral-900">Tax on divorce.</span>{" "}
+                  Capital gains tax on transfers between you, the family home rules and their
+                  timing, and what to settle before the order is made.
+                </li>
+                <li>
+                  <span className="font-semibold text-neutral-900">Form E, the financial side.</span>{" "}
+                  Pulling together the figures, valuations and income evidence your disclosure
+                  needs, so your solicitor gets numbers that stand up.
+                </li>
+                <li>
+                  <span className="font-semibold text-neutral-900">Cost planning.</span>{" "}
+                  What each route is likely to cost from start to finish, so you can budget for the
+                  process rather than be surprised by it.
+                </li>
+                <li>
                   <span className="font-semibold text-neutral-900">Free calculators.</span>{" "}
                   Divorce costs by route, Help with Fees eligibility, consent order and clean break
                   costs, a financial settlement range estimator, and a mediation vs solicitor cost
@@ -76,11 +101,11 @@ export default function AboutPage() {
               <p>We think you should know exactly where our boundaries are:</p>
               <ul className="space-y-4">
                 <li>
-                  <span className="font-semibold text-neutral-900">We do not provide legal or financial advice.</span>{" "}
-                  Everything on this site is general information. It cannot take account of your
-                  personal circumstances, and it is not a substitute for advice from a qualified
-                  professional. Our settlement estimator gives an indicative range, never a figure
-                  you are &quot;entitled to&quot;.
+                  <span className="font-semibold text-neutral-900">We do not provide legal advice or regulated financial advice.</span>{" "}
+                  The guides and calculators are general information: they cannot take account of
+                  your personal circumstances, and our settlement estimator gives an indicative
+                  range, never a figure you are &quot;entitled to&quot;. The advice specific to you
+                  starts when you talk to us.
                 </li>
                 <li>
                   <span className="font-semibold text-neutral-900">We do not conduct divorces, draft orders or represent anyone.</span>{" "}
@@ -114,13 +139,12 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">How we choose the firms we work alongside</h2>
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">Working with solicitors and mediators</h2>
               <p>
-                Where you need a solicitor, we work alongside only firms regulated by the Solicitors Regulation
-                Authority and, for mediation, only to mediators accredited by the Family Mediation
-                Council, who are able to conduct the initial mediation meeting (MIAM) that most
-                court applicants need. Those firms are under no obligation to take on any
-                enquiry, and nothing in our working relationship with them affects the advice they give you.
+                Where the legal side needs one, we work alongside family law firms regulated by the
+                Solicitors Regulation Authority and mediators accredited by the Family Mediation
+                Council, who can conduct the initial mediation meeting (MIAM) that most court
+                applicants need. They advise independently on the law. We stay on the money side.
               </p>
             </div>
 

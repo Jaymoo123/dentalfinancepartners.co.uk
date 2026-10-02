@@ -23,7 +23,7 @@ faqs:
   - question: "How do I know if my current accountant understands legal practice requirements?"
     answer: "Test their knowledge by asking about SRA Accounts Rules, client money handling procedures, or partnership taxation specific to legal practices. If they cannot explain these concepts clearly or provide practice-specific examples, consider switching to a specialist solicitor accountant. Warning signs include treating your practice like any other business or lacking familiarity with legal practice management software."
   - question: "What makes an accountant suitable for solicitors different from a general accountant?"
-    answer: "A specialist accountant for solicitors understands SRA Accounts Rules, trust accounting requirements, and legal sector tax issues. They know how to handle client money properly, prepare compliant accountant's reports, and provide relevant business advice. General accountants typically lack this specialized knowledge, which can lead to compliance issues and missed opportunities."
+    answer: "A specialist accountant for solicitors understands SRA Accounts Rules, trust accounting requirements, and legal sector tax issues. They know how to handle client money properly, prepare compliant accountant's reports, and provide relevant business advice. General accountants typically lack this specialised knowledge, which can lead to compliance issues and missed opportunities."
   - question: "Can a general accountant handle my legal practice accounts?"
     answer: "While general accountants can prepare basic accounts, they typically lack the specialist knowledge required for SRA compliance, trust accounting, and legal sector taxation. Using a non-specialist accountant often results in higher long-term costs due to compliance issues, missed tax planning opportunities, and the need to seek separate advice for practice-specific matters."
   - question: "What qualifications should the best accountant for solicitors have?"
@@ -33,7 +33,7 @@ faqs:
   - question: "How often should my accountant review my practice finances?"
     answer: "Monthly reconciliations are essential for SRA compliance, but quarterly business reviews are recommended for strategic planning. Your accountant should also conduct annual tax planning sessions and provide regular updates on regulatory changes. More frequent contact may be needed during busy periods or when facing specific challenges."
   - question: "What's the difference between a general accountant and a law firm accountant?"
-    answer: "A law firm accountant specializes in legal sector requirements including SRA Accounts Rules, trust accounting, client money handling, and partnership taxation. They understand legal practice cash flows, work-in-progress valuations, and regulatory compliance requirements that general accountants typically lack expertise in."
+    answer: "A law firm accountant specialises in legal sector requirements including SRA Accounts Rules, trust accounting, client money handling, and partnership taxation. They understand legal practice cash flows, work-in-progress valuations, and regulatory compliance requirements that general accountants typically lack expertise in."
   - question: "Do I need a solicitor accountant if I'm a sole practitioner?"
     answer: "Yes, especially if you handle client money or have complex tax affairs. Sole practitioners must comply with SRA Accounts Rules, prepare annual accountant's reports, and manage self-assessment obligations. A specialist legal accountant ensures compliance while optimising your tax position and improving cash flow management."
 ---
@@ -129,7 +129,7 @@ faqs:
 <li><strong>SRA Accounts Rules compliance</strong>: proper handling of client money, office money separation, and regulatory reporting</li>
 <li><strong>Trust accounting</strong>: managing client funds, interest calculations, and reconciliation procedures</li>
 <li><strong>Partnership taxation</strong>: basis period reform impacts, profit allocation, and tax planning strategies</li>
-<li><strong>Practice cash flow</strong>: work-in-progress management, lock-up reduction, and billing optimization</li>
+<li><strong>Practice cash flow</strong>: work-in-progress management, lock-up reduction, and billing optimisation</li>
 <li><strong>VAT on legal services</strong>: disbursements treatment, partial exemption issues, and reverse charge procedures</li>
 </ul>
 
@@ -204,7 +204,7 @@ faqs:
 <h2>The Cost of Getting It Wrong</h2>
 <p>Choosing the wrong accountant can be expensive. SRA investigation costs, penalty interest on late tax payments, and missed planning opportunities quickly add up.</p>
 
-<p>More seriously, poor trust accounting or SRA compliance issues can threaten your practicing certificate. The cost of specialist expertise is small compared to the risks of getting it wrong.</p>
+<p>More seriously, poor trust accounting or SRA compliance issues can threaten your practising certificate. The cost of specialist expertise is small compared to the risks of getting it wrong.</p>
 
 <h2>Making Your Decision</h2>
 <p>The right <strong>accountant for solicitors</strong> becomes a strategic partner in your practice development. They should understand your challenges, anticipate problems, and provide solutions that help your practice thrive.</p>
@@ -328,4 +328,4 @@ faqs:
 
 <p>Start by gathering your recent accounts, management information, and any SRA correspondence. A specialist firm can review these quickly and identify areas for improvement.</p>
 
-<p>Plan the switch carefully around your accounting year-end and SRA reporting deadlines. Good timing minimizes disruption and ensures continuity of service.</p>
+<p>Plan the switch carefully around your accounting year-end and SRA reporting deadlines. Good timing minimises disruption and ensures continuity of service.</p>

@@ -48,7 +48,7 @@ keyTakeaways:
 
 <p>In the UK, you pay rent monthly. In Dubai, the default expectation for new arrivals without a credit history is a single post-dated cheque (or bank transfer) covering the entire 12-month tenancy.</p>
 
-<p>Let me give you a real example. A 12-person digital agency billing £800k per year might relocate a senior director to Dubai. That director needs a two-bedroom apartment in Dubai Marina. Annual rent: AED 180,000 (roughly £38,000 at current exchange rates). The landlord asks for one cheque upfront. That is AED 180,000 leaving your bank account before you have unpacked a single box.</p>
+<p>Let me give you an illustrative example. A 12-person digital agency billing £800k per year might relocate a senior director to Dubai. That director needs a two-bedroom apartment in Dubai Marina. Annual rent: AED 180,000 (roughly £38,000 at current exchange rates). The landlord asks for one cheque upfront. That is AED 180,000 leaving your bank account before you have unpacked a single box.</p>
 
 <p>This is not unusual. It is the standard arrangement for anyone who cannot show a local credit history or a strong UAE salary certificate.</p>
 

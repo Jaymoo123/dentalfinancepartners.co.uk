@@ -75,7 +75,7 @@ keyTakeaways:
 
 <p>If they meet those conditions, the gain on their shares is taxed at 18% instead of the normal 24% CGT rate. The lifetime limit is £1 million of gains. Most agency founders selling a minority stake will be well within that limit.</p>
 
-<p>Here is a real example. A co-founder of a 15-person digital agency in Manchester Northern Quarter holds 30% of the shares. They have been a director for four years. The agency is valued at £1.2 million. Their 30% stake is worth £360,000. They originally invested £20,000 for the shares. The gain is £340,000. Under capital treatment with BADR, they pay 18% CGT: £34,000. Under income treatment, they would pay 35.75% dividend tax: £114,750. The difference is £80,750.</p>
+<p>Here is an illustrative example. A co-founder of a 15-person digital agency in Manchester Northern Quarter holds 30% of the shares. They have been a director for four years. The agency is valued at £1.2 million. Their 30% stake is worth £360,000. They originally invested £20,000 for the shares. The gain is £340,000. Under capital treatment with BADR, they pay 18% CGT: £34,000. Under income treatment, they would pay 35.75% dividend tax: £114,750. The difference is £80,750.</p>
 
 <p>That is worth getting right.</p>
 

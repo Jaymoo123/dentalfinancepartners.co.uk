@@ -24,7 +24,7 @@ faqs:
     answer: "If your career runway is short, if acquisition debt is expensive, or if you are not willing to take on the management role, staying as an associate is a rational choice. Ownership makes most sense where the practice has an established list at a realistic price, you are prepared to manage staff and compliance, and you plan to hold for long enough to capture capital growth."
 ---
 
-<p>Most of the content on this site covers the mechanics of buying a dental practice: how valuations work, what due diligence to run, how to structure financing, and how goodwill is taxed. This page sits upstream of all of that. Before you engage a solicitor or approach a lender, you need an honest answer to the prior question: is practice ownership worth it for you at all?</p>
+<p>Most of our guides cover the mechanics of buying a dental practice: how valuations work, what due diligence to run, how to structure financing, and how goodwill is taxed. This page sits upstream of all of that. Before you engage a solicitor or approach a lender, you need an honest answer to the prior question: is practice ownership worth it for you at all?</p>
 
 <p>That is a harder question than it looks, because the answer is genuinely not always yes.</p>
 

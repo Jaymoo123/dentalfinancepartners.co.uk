@@ -221,6 +221,7 @@ export function SpecialistWidget() {
         /* ignore */
       }
     }
+    if (window.innerWidth < 768) return; // guard: no auto-open/peek under 768px (2026-10-02)
     const t = window.setTimeout(() => {
       if (engagedRef.current || openRef.current) return;
       try {
@@ -372,7 +373,7 @@ export function SpecialistWidget() {
             </span>
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">Dental Finance Partners</p>
-              <p className="truncate text-[11px] text-white/70">Goes to a dental specialist, not a general queue</p>
+              <p className="truncate text-[11px] text-white/70">Answered by one of our dental specialists, not a general inbox</p>
             </div>
             <button
               type="button"

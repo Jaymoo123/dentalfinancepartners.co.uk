@@ -67,7 +67,7 @@ keyTakeaways:
 <p>Most founders we work with end up in a simple position: the UK company pays UK corporation tax on its own profits. The Dubai agency pays no corporate tax. The founder takes a salary from the Dubai agency and dividends from the UK company. The UK dividends are taxed in the UK (at 10.75%, 35.75%, or 39.35% depending on your tax band). The Dubai salary is taxed in the UAE (at 0%). No double taxation arises, because the two companies are separate legal entities with separate income streams.</p>
 
 <h2>How to Structure It: A Worked Example</h2>
-<p>Let's use a real scenario. You own a 15-person digital agency in Shoreditch, billing £1.2m per year. You move to Dubai Marina. You set up a new Dubai agency. You keep the UK company open.</p>
+<p>Let's use a worked scenario. You own a 15-person digital agency in Shoreditch, billing £1.2m per year. You move to Dubai Marina. You set up a new Dubai agency. You keep the UK company open.</p>
 <p>Year one structure:</p>
 <ul>
 <li>UK company retains 10 UK staff, billing £800k from existing UK clients.</li>

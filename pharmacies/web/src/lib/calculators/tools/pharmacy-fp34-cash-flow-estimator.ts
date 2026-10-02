@@ -58,7 +58,7 @@ export const pharmacyFp34CashFlowEstimator: GenericTool = {
       min: 1,
       max: 6,
       step: 1,
-      help: "Months between FP34 submission and full settlement. Two months is the typical NHSBSA cycle (HP 7). Adjust if your payment schedule differs.",
+      help: "Months between FP34 submission and full settlement. Two months is the typical NHSBSA cycle. Adjust if your payment schedule differs.",
     },
   ],
   compute(v) {

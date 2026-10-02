@@ -39,7 +39,7 @@ export default function ForIndexPage() {
             For individuals
           </h2>
           <p className="text-neutral-400 text-sm mb-8 max-w-2xl">
-            People dealing with probate or planning their own estate. We explain the process and point you to the right specialist help.
+            People dealing with probate or planning their own estate. We explain the process, and our specialists take it on when the estate is complex.
           </p>
           <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {tradeSegment.map((type) => (
@@ -105,7 +105,7 @@ export default function ForIndexPage() {
                 The same probate process applies to every estate, but how it plays out depends on the family situation, the size and type of the estate, and whether inheritance tax is due. A surviving spouse has different reliefs available to a business owner. A blended family needs different will planning to a straightforward estate.
               </p>
               <p>
-                We explain the general position for each situation in plain English, and point you to the right specialist help when the estate is complex.
+                We explain the general position for each situation in plain English, and our specialists take it on when the estate is complex.
               </p>
             </div>
             <div className="mt-8">

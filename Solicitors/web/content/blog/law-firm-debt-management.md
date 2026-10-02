@@ -160,7 +160,7 @@ faqs:
 <li>Implementation of new billing and collection systems</li>
 </ul>
 
-<p>A specialist solicitor accountant can provide guidance on structuring debt recovery procedures while maintaining <a href="/sra-compliance">SRA compliance</a> and optimizing tax implications.</p>
+<p>A specialist solicitor accountant can provide guidance on structuring debt recovery procedures while maintaining <a href="/sra-compliance">SRA compliance</a> and optimising tax implications.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

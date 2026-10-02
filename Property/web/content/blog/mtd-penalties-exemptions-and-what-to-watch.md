@@ -66,10 +66,10 @@ reviewedAt: "2026-05-28"
 <tr><td>Late payment (accelerated)</td><td>FA 2021 Sch 26 as amended by Spring Statement 2025</td><td>Yes (15/30/31-day triggers at 3%/3%/10%)</td><td>3% of unpaid tax at day 15; additional 3% at day 30; 10% per annum from day 31 (replaces the legacy 31/46/91-day 2%/2%/4% schedule, which continues for non-MTD income tax and VAT)</td></tr>
 <tr><td>Digital-exclusion exemption</td><td>SI 2026/336 reg 18 + reg 20 + TMA 1970 Sch A1 para 14(2)</td><td>Yes (exemption where an exclusion notice is in place)</td><td>Exclusion notice for the duration of qualifying circumstances; person continues regular SA</td></tr>
 <tr><td>Income-exemption exit (3-year)</td><td>SI 2026/336 reg 24</td><td>Yes (applies post-2028/29 once the cumulative test is met)</td><td>Exit from MTD where qualifying income did not exceed qualifying amount for each of Y-3, Y-2, Y-1</td></tr>
-<tr><td>Limited-company categorical exclusion</td><td>House position §19.3</td><td>Outside MTD ITSA entirely (CT600 regime continues)</td><td>Permanent (subject to a future MTD for CT cycle, no confirmed date)</td></tr>
-<tr><td>Partnership and LLP deferral</td><td>House position §19.3</td><td>Deferred (originally April 2027 now to be confirmed)</td><td>Indefinite pending policy clarification</td></tr>
-<tr><td>Trustees</td><td>House position §19.3</td><td>Outside MTD ITSA (SA900 trust return continues)</td><td>Permanent</td></tr>
-<tr><td>Pension trustees (SIPP / SSAS)</td><td>House position §19.12</td><td>Outside MTD ITSA for scheme-held property</td><td>Permanent</td></tr>
+<tr><td>Limited-company categorical exclusion</td><td>Scope of the regime (individuals and partnerships only)</td><td>Outside MTD ITSA entirely (CT600 regime continues)</td><td>Permanent (subject to a future MTD for CT cycle, no confirmed date)</td></tr>
+<tr><td>Partnership and LLP deferral</td><td>HMRC mandation timetable</td><td>Deferred (originally April 2027 now to be confirmed)</td><td>Indefinite pending policy clarification</td></tr>
+<tr><td>Trustees</td><td>Scope of the regime (individuals and partnerships only)</td><td>Outside MTD ITSA (SA900 trust return continues)</td><td>Permanent</td></tr>
+<tr><td>Pension trustees (SIPP / SSAS)</td><td>Scope of the regime (scheme income is not the member's)</td><td>Outside MTD ITSA for scheme-held property</td><td>Permanent</td></tr>
 <tr><td>Reasonable-excuse defence</td><td>FA 2021 Sch 24 para 22; Perrin v HMRC [2018] UKUT 156 (TCC)</td><td>Yes (single statutory ground; objective test)</td><td>Discharges the point or £200 penalty where the excuse persists and the failure is remedied without unreasonable delay</td></tr>
 <tr><td>Special-circumstances reduction</td><td>FA 2021 Sch 24 para 17</td><td>Yes (HMRC discretion; FTT review supervisory only)</td><td>Reduction at HMRC discretion (excluded grounds: inability to pay; cross-taxpayer revenue balancing)</td></tr>
 </tbody>
@@ -147,7 +147,7 @@ reviewedAt: "2026-05-28"
 
 <h2>Categorical exclusions outside the individual exemption regime</h2>
 
-<p>House position §19.3 captures the categorical exclusions that operate independently of the qualifying-income test. Five categories sit entirely outside MTD ITSA:</p>
+<p>A set of categorical exclusions operate independently of the qualifying-income test. Five categories sit entirely outside MTD ITSA:</p>
 
 <ul>
 <li><strong>Limited companies.</strong> Outside MTD ITSA entirely. They file annual CT600s under the Corporation Tax framework, with separate digital-record rules and a future MTD for CT cycle whose go-live date has not been announced. A landlord operating through a limited company tests no personal MTD ITSA threshold on the company's rental income; the company is the taxpayer for that income, and the company is outside.</li>

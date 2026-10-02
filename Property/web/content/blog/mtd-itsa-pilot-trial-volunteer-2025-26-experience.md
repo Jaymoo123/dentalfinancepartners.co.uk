@@ -105,7 +105,7 @@ editorialNote: "Verified against gov.uk MTD ITSA pilot guidance and house positi
 
 <ol>
 <li>High Income Child Benefit Charge (HICBC) cases.</li>
-<li>Jointly-owned property income (excluded from the pilot, but in scope at mandate per house position §19.4).</li>
+<li>Jointly-owned property income (excluded from the pilot, but in scope at mandate).</li>
 <li>Members of general partnerships (deferred from the mandate too, no confirmed date).</li>
 <li>Furnished Holiday Let income (became moot from 6 April 2025 with FHL abolition; former FHL income now flows into ordinary property income).</li>
 <li>Variable-profits cases (where the year-on-year profit pattern was outside HMRC's pilot modelling).</li>

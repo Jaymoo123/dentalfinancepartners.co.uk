@@ -78,7 +78,7 @@ keyTakeaways:
 
 <h3>Worked Example: A 12-Person Digital Agency</h3>
 
-<p>Let us use a real scenario. You run a 12-person digital agency billing £800k per year. Your profit after corporation tax is £180k. You need to extract £90k personally to cover your living costs.</p>
+<p>Let us use a worked scenario. You run a 12-person digital agency billing £800k per year. Your profit after corporation tax is £180k. You need to extract £90k personally to cover your living costs.</p>
 
 <p>Option 1: Salary £12,570, dividends £77,430 (total £90,000).</p>
 

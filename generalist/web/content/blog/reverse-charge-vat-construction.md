@@ -62,7 +62,7 @@ keyTakeaways:
 
 <h2>How the Reverse Charge Works in Practice</h2>
 
-<p>Let us walk through a real example. ABC Builders Ltd, a VAT-registered contractor in Birmingham, hires XYZ Plumbing Ltd, a VAT-registered subcontractor in Digbeth, to install pipework on a commercial new build. The contract value is £12,000 plus VAT.</p>
+<p>Let us walk through a worked example. ABC Builders Ltd, a VAT-registered contractor in Birmingham, hires XYZ Plumbing Ltd, a VAT-registered subcontractor in Digbeth, to install pipework on a commercial new build. The contract value is £12,000 plus VAT.</p>
 
 <p>Under the reverse charge, XYZ Plumbing issues an invoice for £12,000 with a note stating "reverse charge: VAT to be accounted for by the customer". The invoice shows £0 VAT charged. XYZ Plumbing records the sale in its VAT return as a standard-rated supply but shows the net VAT as zero. It does not collect any VAT from ABC Builders.</p>
 

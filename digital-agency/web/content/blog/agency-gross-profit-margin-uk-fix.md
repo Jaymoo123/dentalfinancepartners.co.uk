@@ -64,7 +64,7 @@ keyTakeaways:
 
 <p>Your sales team, your finance function, your office manager, your own salary as founder, those are overhead. They exist whether you have client work or not.</p>
 
-<p>Here's a real example from a 12-person digital agency we work with. They were showing 68% gross margin on their management accounts. When we reclassified three account managers and two designers from overhead to direct costs, their true margin dropped to 51%. The founder had been making decisions on false data for 18 months.</p>
+<p>Take a 12-person digital agency showing 68% gross margin on its management accounts. Reclassifying three account managers and two designers from overhead to direct costs drops the true margin to 51%. The founder had been making decisions on false data for 18 months.</p>
 
 <h3>Mistake 2: Excluding Freelancer and Contractor Costs</h3>
 
@@ -135,9 +135,9 @@ keyTakeaways:
 
 <p>These are the clients who eat up your best people's time, demand endless revisions, pay late, and generate the most scope creep. They are costing you more than you think, because the direct costs of serving them are higher than your average.</p>
 
-<p>I worked with a Bristol-based PR agency last year. They had 18 clients. The bottom 4 generated 12% of revenue but consumed 28% of delivery hours. Their effective gross margin on those clients was 22%. The rest of the book ran at 58%. Dropping those four clients freed up capacity, reduced stress, and pushed overall margin from 48% to 56% within six months.</p>
+<p>Take a PR agency with 18 clients. The bottom 4 generate 12% of revenue but consume 28% of delivery hours. Its effective gross margin on those clients is 22%. The rest of the book runs at 58%. Dropping those four clients frees up capacity, reduces stress, and pushes overall margin from 48% to 56% within six months.</p>
 
-<p>The revenue drop was £42k. The profit impact was positive by £11k. And the team stopped dreading Monday mornings.</p>
+<p>The revenue drop is £42k. The profit impact is positive by £11k. And the team stops dreading Monday mornings.</p>
 
 <h3>Fix 3: Fix Your Scoping and Change Control</h3>
 

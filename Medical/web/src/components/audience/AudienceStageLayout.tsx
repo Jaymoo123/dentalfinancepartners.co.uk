@@ -160,7 +160,7 @@ export function AudienceStageLayout({ data }: Props) {
               Run the numbers before you send anything
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
-              Free to use, on 2026/27 rates. We ask once whether a specialist should check your figure, and skipping that still shows it.
+              Free to use, on 2026/27 rates. If you want one of our specialists to confirm your figure, say so at the end; you see the result either way.
             </p>
             {data.calculatorTabs && data.calculatorTabs.length > 0 ? (
               <div className="mt-8">

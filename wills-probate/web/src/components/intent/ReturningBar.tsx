@@ -37,12 +37,12 @@ export function ReturningBar() {
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-orange-700 bg-orange-900 text-white shadow-2xl">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 text-sm">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3 text-sm">
         <span className="min-w-0">
           <span className="font-semibold">Welcome back. {offer.reason}.</span>{" "}
           <span className="hidden text-orange-200 sm:inline">{offer.blurb}</span>
         </span>
-        <div className="flex shrink-0 items-center gap-3">
+        <div className="flex min-w-0 items-center gap-3">
           <Link
             href={offer.href}
             data-cta="returning_bar"

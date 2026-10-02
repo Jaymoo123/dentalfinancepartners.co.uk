@@ -30,7 +30,7 @@ faqs:
     answer: "The partnership's VAT registration cannot transfer to the LLP. The LLP must register for VAT separately as a new entity. This can create complications with asset transfers and timing differences that affect cash flow. Input VAT recovery on conversion costs may also be restricted."
 ---
 
-<p>Converting your law firm partnership to a Limited Liability Partnership (LLP) involves significant tax considerations that can impact both the practice and individual partners. LLP conversion tax rules require careful planning to avoid unexpected liabilities and optimize the overall tax position.</p>
+<p>Converting your law firm partnership to a Limited Liability Partnership (LLP) involves significant tax considerations that can impact both the practice and individual partners. LLP conversion tax rules require careful planning to avoid unexpected liabilities and optimise the overall tax position.</p>
 
 <p>For capital gains tax the conversion is normally a non-event: TCGA 1992 s.59A treats an LLP carrying on a business with a view to profit as a partnership, so the members are treated as continuing to own the same fractional interests in the underlying assets. No disposal, no deemed disposal, no CGT charge, provided membership and profit shares are unchanged at the point of conversion.</p>
 

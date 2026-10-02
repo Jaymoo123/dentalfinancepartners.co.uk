@@ -81,7 +81,7 @@ keyTakeaways:
 
 <p>For corporation tax purposes, the expense is treated as if the company incurred it on the date you actually paid it, not on the date of adoption. That means the company claims relief in its first accounting period, even if the expense was paid months before incorporation.</p>
 
-<p>Let us use a real example. You paid £1,200 for a laptop on 1 May. Your company was registered on 15 June. Your company's first accounting period runs from 15 June to 31 March. The £1,200 laptop cost is deductible against the company's profits for that first period. The company reimburses you the £1,200, and you receive it tax-free.</p>
+<p>Let us use a worked example. You paid £1,200 for a laptop on 1 May. Your company was registered on 15 June. Your company's first accounting period runs from 15 June to 31 March. The £1,200 laptop cost is deductible against the company's profits for that first period. The company reimburses you the £1,200, and you receive it tax-free.</p>
 
 <h3>What If You Did Not Keep the Receipts?</h3>
 

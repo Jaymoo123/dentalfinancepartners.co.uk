@@ -77,7 +77,7 @@ faqs:
 
 <h2>How the Lifetime Allowance Charge Worked for a Dubai QROPS Transfer</h2>
 
-<p>Let me give you a real example. A founder I worked with had a UK SIPP worth £1.4m. He held Fixed Protection 2016, which locked his lifetime allowance at £1.25m. He transferred his SIPP to a Dubai QROPS in March 2023.</p>
+<p>Here is an illustrative example. Take a founder with a UK SIPP worth £1.4m. He held Fixed Protection 2016, which locked his lifetime allowance at £1.25m. He transferred his SIPP to a Dubai QROPS in March 2023.</p>
 
 <p>At the point of transfer, his remaining lifetime allowance was £1.25m (his protected amount). His pension was worth £1.4m. The excess was £150,000.</p>
 

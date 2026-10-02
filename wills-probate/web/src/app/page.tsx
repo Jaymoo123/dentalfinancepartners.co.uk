@@ -51,9 +51,9 @@ const faqs = [
       "From 6 April 2027, most unused pension funds and death benefits are due to count as part of your estate for inheritance tax. For many families this is the biggest change to estate planning in a generation. Our 2027 pension exposure checker shows whether your family is likely to be affected and by roughly how much.",
   },
   {
-    question: "Is this site a law firm or financial adviser?",
+    question: "Are you a law firm or financial adviser?",
     answer:
-      `No. ${siteConfig.name} is an accountancy firm on the money side of estates, not a law firm or financial adviser. We provide free calculators and plain-English guides based on gov.uk, HMRC and HMCTS sources. If your situation needs professional hands, one of our estate planning specialists can help, but only with your consent and only if you choose to.`,
+      `No. ${siteConfig.name} is an accountancy firm on the money side of estates, not a law firm or financial adviser. Our free calculators and plain-English guides are built on gov.uk, HMRC and HMCTS sources. If your situation needs professional hands, one of our estate planning specialists takes it on.`,
   },
 ];
 
@@ -165,7 +165,7 @@ export default function HomePage() {
             <Users className="h-8 w-8 text-orange-600" strokeWidth={1.75} aria-hidden />
             <h2 className="mt-4 text-xl font-bold text-neutral-900">Specialist help, when you want it</h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600">
-              We are accountants, not a law firm. If your situation needs professional hands, our estate specialists cover the money side of wills, probate and estate planning, and where you need a solicitor we work alongside a regulated firm. You only hear from us if you send an enquiry, and you can tell us to stop at any time.
+              We are accountants, not a law firm. If your situation needs professional hands, our estate specialists cover the money side of wills, probate and estate planning, and where you need a solicitor we work alongside a regulated firm.
             </p>
           </div>
         </div>
@@ -264,7 +264,7 @@ export default function HomePage() {
               Built on official sources, not sales material
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-orange-200">
-              Built on official sources: gov.uk, HMRC and HMCTS. Figures current for the 2026/27 tax year. {siteConfig.name} is a trading name of Ashfield Trading Ltd. We provide information and tools, not legal or financial advice.
+              Built on official sources: gov.uk, HMRC and HMCTS. Figures current for the 2026/27 tax year. {siteConfig.name} is a trading name of Ashfield Trading Ltd. We are accountants, not solicitors or financial advisers; nothing here is legal or regulated financial advice.
             </p>
           </div>
         </div>
@@ -285,9 +285,9 @@ export default function HomePage() {
               </p>
               <div className="mt-8 space-y-4">
                 {[
-                  { title: "You choose if and when", sub: "No pressure, no cold calls" },
+                  { title: "You choose if and when", sub: "No pressure, no obligation" },
                   { title: "Our own specialists", sub: "Wills, probate or estate planning, whichever you need" },
-                  { title: "Only if you ask us", sub: "Nobody calls unless you send an enquiry, and you can object at any time" },
+                  { title: "No cold calls", sub: "We only contact you about the enquiry you send" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-center gap-4 text-neutral-200">
                     <div className="h-12 w-12 flex items-center justify-center bg-orange-700 text-white font-bold text-xl flex-shrink-0">

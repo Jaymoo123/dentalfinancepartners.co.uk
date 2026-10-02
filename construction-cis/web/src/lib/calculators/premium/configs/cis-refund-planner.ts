@@ -47,7 +47,7 @@ export const cisRefundPlannerConfig: PremiumToolConfig = {
       type: "currency",
       default: 5000,
       step: 500,
-      help: "Materials you personally purchase and include on your invoices. These are excluded from the CIS deduction base (HP §1).",
+      help: "Materials you personally purchase and include on your invoices. These are excluded from the CIS deduction base.",
     },
     {
       id: "status",
@@ -123,8 +123,8 @@ export const cisRefundPlannerConfig: PremiumToolConfig = {
         : "Sole traders reclaim at year-end through Self Assessment. File by 31 January to get the refund processed quickly.";
 
     const note =
-      `This estimate uses 2026/27 rates: PA £${PERSONAL_ALLOWANCE.toLocaleString("en-GB")}, basic rate 20%, Class 4 NI 6%/2% (HP §11a). ` +
-      `The deduction base is the labour element only (materials excluded, HP §1). ` +
+      `This estimate uses 2026/27 rates: PA £${PERSONAL_ALLOWANCE.toLocaleString("en-GB")}, basic rate 20%, Class 4 NI 6%/2%. ` +
+      `The deduction base is the labour element only (materials excluded). ` +
       routeNote +
       " A specialist will identify all allowable expenses and confirm your exact position.";
 
@@ -182,7 +182,7 @@ export const cisRefundPlannerConfig: PremiumToolConfig = {
     heading: "How the CIS refund works",
     paragraphs: [
       "CIS deductions are taken from your labour payments at source, before any account is made for your personal allowance, business expenses or materials costs. A registered subcontractor on a 20% rate may pay 20% on every labour pound received, even if their actual income tax liability for the year is far lower. The gap between what was deducted and what you actually owe is your refund.",
-      "The deduction base is the labour element of your invoices only. Materials you personally purchase and supply are excluded (HP §1). That means a subcontractor supplying significant materials has a smaller deduction base, and therefore smaller over-deductions, than one billing purely for labour at the same gross total.",
+      "The deduction base is the labour element of your invoices only. Materials you personally purchase and supply are excluded. That means a subcontractor supplying significant materials has a smaller deduction base, and therefore smaller over-deductions, than one billing purely for labour at the same gross total.",
       "The refund is reclaimed through Self Assessment (sole traders) or via the monthly Employer Payment Summary (limited companies). A specialist CIS accountant will identify every allowable expense, ensure the deduction base was correctly applied on your statements, and file your return to maximise the refund. This calculator uses 2026/27 rates and is an estimate only.",
     ],
   },

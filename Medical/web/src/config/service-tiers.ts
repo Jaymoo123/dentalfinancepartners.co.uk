@@ -12,7 +12,7 @@ export const serviceTiers: ServiceTier[] = [
       "Salaried doctor take-home pay",
       "GP partner drawings planner",
       "Consultant private vs NHS comparison",
-      "Free to use, and the one ask is skippable",
+      "Free to use, no sign-up",
     ],
     cta: "Open free calculators",
     ctaHref: "/calculators",

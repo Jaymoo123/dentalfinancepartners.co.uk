@@ -66,7 +66,7 @@ keyTakeaways:
 
 <h2>How a Sole Trader With Dividends Reports Under MTD ITSA</h2>
 
-<p>Let us walk through a real example. Say you are a freelance consultant in Manchester, running as a sole trader with self-employment profits of £65,000 a year. You also hold a portfolio of UK shares that pays £8,000 in dividends annually. Your total income is £73,000.</p>
+<p>Let us walk through a worked example. Say you are a freelance consultant in Manchester, running as a sole trader with self-employment profits of £65,000 a year. You also hold a portfolio of UK shares that pays £8,000 in dividends annually. Your total income is £73,000.</p>
 
 <p>Under MTD ITSA, here is what you report and when:</p>
 

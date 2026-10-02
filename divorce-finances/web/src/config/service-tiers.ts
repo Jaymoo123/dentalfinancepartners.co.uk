@@ -24,11 +24,10 @@ export const serviceTiers: ServiceTier[] = [
   {
     name: "Speak to a specialist",
     description:
-      "For when your situation needs professional hands. You cannot agree, there is a business, a serious pension or property abroad, disclosure is being dodged, or you simply want it done properly and once. Tell us about your situation and one of our divorce finance specialists will talk it through with you. Where you need a solicitor or mediator, we work alongside SRA-regulated family law firms and FMC-accredited mediators and stay on the money side. Your details are shared only with your consent, and you remain free to walk away at any stage.",
+      "For when your situation needs professional hands. You cannot agree, there is a business, a serious pension or property abroad, disclosure is being dodged, or you simply want it done properly and once. Tell us about your situation and one of our divorce finance specialists will talk it through with you. Where you need a solicitor or mediator, we work alongside SRA-regulated family law firms and FMC-accredited mediators and stay on the money side. No cold calls. We only contact you about the enquiry you send, and you remain free to walk away at any stage.",
     features: [
       "A free consultation with one of our specialists",
       "Family solicitors or FMC-accredited mediators alongside us as your situation needs",
-      "Shared only with your consent",
       "No obligation to proceed",
     ],
     cta: "Speak to a specialist",

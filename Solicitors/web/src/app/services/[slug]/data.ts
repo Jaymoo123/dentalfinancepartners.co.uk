@@ -41,7 +41,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     hero: {
       heading: "Solicitor accountants for UK law firms, partners and locum solicitors",
       intro:
-        "We work with solicitors only. Every client is a law firm, an LLP, a partnership, a sole practitioner, or a locum solicitor. The narrow focus is the point, the SRA Accounts Rules, the FA 2014 salaried-member tests, and the LLP profit-allocation methodology are reflexive after enough clients.",
+        "We work with solicitors only. Every client is a law firm, an LLP, a partnership, a sole practitioner, or a locum solicitor. The narrow focus is the point. The SRA Accounts Rules, the FA 2014 salaried-member tests and the LLP profit-allocation methodology are everyday work for us, not something looked up on your account.",
     },
     sections: [
       {
@@ -73,7 +73,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
         body: [
           "Some legal-sector accountancy firms have grown into corporate operations that allocate junior staff to client work and only escalate up when something goes wrong. The named partner is rarely on the call.",
           "We work the opposite way. The senior accountant working on your account is the senior accountant. The same person who reviews your year-end is the person you email when a buyer wants due diligence by Friday or a new COFA needs onboarding.",
-          "We staff it that way deliberately, so that stays real.",
+          "That is a deliberate choice about how we staff the firm, not a sales line.",
         ],
       },
     ],
@@ -88,8 +88,8 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
     workedExample: {
       heading: "Typical engagement: 6-partner LLP, conveyancing-heavy",
       body: [
-        "A 6-partner LLP in the South East, residential conveyancing volume around £2.4m gross fees. Annual SRA Accountant's Report due 4 months after year-end, 5 fee-earner FA 2014 audits required (3 fixed-share, 2 salaried).",
-        "The work: monthly management accounts splitting NHS-style by department (conveyancing / family / commercial), five-weekly client account reconciliations with the bookkeeper's evidence file reviewed quarterly, annual statutory accounts + SA800, FA 2014 audit each quarter, partner-by-partner SA filings in January.",
+        "A 6-partner LLP in the South East, residential conveyancing volume around £2.4m gross fees. Annual SRA Accountant's Report due within 6 months of the period end, 5 fee-earner FA 2014 audits required (3 fixed-share, 2 salaried).",
+        "The work: monthly management accounts split by department (conveyancing / family / commercial), five-weekly client account reconciliations with the bookkeeper's evidence file reviewed quarterly, annual statutory accounts + SA800, FA 2014 audit each quarter, partner-by-partner SA filings in January.",
         "Specialist work (sale planning, partner exit, ABS conversion) priced separately as a one-off engagement.",
       ],
     },
@@ -97,12 +97,12 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "Who delivers the SRA Accountant's Report?",
         answer:
-          "Yes. The reporting accountant must hold a current practising certificate from a recognised supervisory body such as the ICAEW, the ACCA or the ICAS, and must be independent of your firm. We provide an appropriately qualified independent reporting accountant, and help you get your client account records, reconciliations and breach log into a state the report can be built from. The report must be obtained within 6 months of your firm's accounting period end.",
+          "We do. Our reporting accountants hold a practising certificate with a recognised body and are independent of your firm, as the SRA requires. We also help you get your client account records, reconciliations and breach log into a state the report can be built from. The report must be obtained within 6 months of your firm's accounting period end.",
       },
       {
         question: "Do you only work with solicitors?",
         answer:
-          "Legal-sector work is the primary focus. We occasionally take other professional-services firms (accountants, surveyors), but the bulk of the book is solicitors, LLPs, partnerships, sole practitioners, conveyancers, and locum solicitors.",
+          "Yes. Every client is in the legal sector: solicitors, LLPs, partnerships, sole practitioners, conveyancers and locum solicitors. We do not take landlords, dentists or general businesses, so the whole firm's experience is legal-sector work.",
       },
       {
         question: "Can you handle our existing software (Leap, Clio, ProClaim)?",
@@ -112,7 +112,7 @@ export const SERVICE_SUB_PAGES: Record<string, ServiceSubPage> = {
       {
         question: "How much do you charge?",
         answer:
-          "Specialist work (sale, acquisition, ABS conversion) priced as a one-off engagement. All fixed-fee, no hourly billing on routine work.",
+          "Scope is agreed before any work starts, and ongoing work is a fixed monthly fee with no hourly billing. We quote after a free first conversation, once we know your partner count, client account activity and software. Specialist work (sale, acquisition, ABS conversion) is priced separately as a one-off engagement.",
       },
     ],
     relatedServices: [

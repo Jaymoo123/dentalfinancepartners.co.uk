@@ -93,7 +93,7 @@ editorialNote: metaTitle and metaDescription rewritten via meta_apply.py (SERP m
 
 <h2>Real Numbers: Freelancer vs Company for a 3-Person Agency</h2>
 
-<p>Let us take a real example. A UK agency founder moves to Dubai. They have one full-time employee (a project manager) and two regular subcontractors (a designer and a developer). The agency turns over AED 600,000 per year (roughly £130,000).</p>
+<p>Let us take an illustrative example. A UK agency founder moves to Dubai. They have one full-time employee (a project manager) and two regular subcontractors (a designer and a developer). The agency turns over AED 600,000 per year (roughly £130,000).</p>
 
 <p><strong>Freelancer permit scenario (non-compliant):</strong></p>
 <ul>

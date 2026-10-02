@@ -171,7 +171,7 @@ keyTakeaways:
 
 <h2>Practical Example: A Full Walkthrough</h2>
 
-<p>Let us put this together with a real scenario.</p>
+<p>Let us put this together with a worked scenario.</p>
 
 <p>You run a Bristol-based PR agency. You have three clients:</p>
 

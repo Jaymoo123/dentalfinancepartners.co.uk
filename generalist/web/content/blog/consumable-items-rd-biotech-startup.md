@@ -117,13 +117,13 @@ keyTakeaways:
 <h3>Not keeping purchase invoices</h3>
 <p>HMRC can ask to see evidence of the costs. Keep all supplier invoices, delivery notes, and internal records that link the consumable to the R&D project. Digital copies are fine.</p>
 
-<h2>Real example: a Manchester biotech startup's claim</h2>
+<h2>Worked example: a Manchester biotech startup's claim</h2>
 
-<p>A client of ours runs a biotech startup in Manchester's Corridor district, developing a novel cell therapy for autoimmune disease. In their first year, they spent £63,400 on consumables. We helped them identify £47,200 of qualifying costs.</p>
+<p>Take a biotech startup developing a novel cell therapy for autoimmune disease. In their first year, they spend £63,400 on consumables, and a line-by-line review identifies £47,200 of qualifying costs.</p>
 
-<p>The qualifying items included cell culture media (£8,400), custom antibodies (£12,600), PCR reagents and plasticware (£6,200), and third-party sequencing (£4,800). The remaining £15,200 was non-qualifying: general lab gloves, cleaning supplies, and equipment maintenance contracts.</p>
+<p>The qualifying items include cell culture media (£8,400), custom antibodies (£12,600), PCR reagents and plasticware (£6,200), and third-party sequencing (£4,800). The remaining £15,200 is non-qualifying: general lab gloves, cleaning supplies, and equipment maintenance contracts.</p>
 
-<p>The £47,200 was included in their RDEC claim, generating a gross 20% expenditure credit of £9,440. Because RDEC is taxable income, the net cash benefit after corporation tax is approximately £7,080 at the 25% main rate (or £7,646 at the 19% small-profits rate). Without proper categorisation, they would have claimed the full £63,400 and risked an enquiry.</p>
+<p>The £47,200 is included in their RDEC claim, generating a gross 20% expenditure credit of £9,440. Because RDEC is taxable income, the net cash benefit after corporation tax is approximately £7,080 at the 25% main rate (or £7,646 at the 19% small-profits rate). Without proper categorisation, they would have claimed the full £63,400 and risked an enquiry.</p>
 
 <h2>Record-keeping for consumable items</h2>
 

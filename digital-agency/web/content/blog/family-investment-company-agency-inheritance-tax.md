@@ -49,7 +49,7 @@ keyTakeaways:
 <p>This is not a trust. It is a company. That matters because company law is more flexible than trust law. You can retain voting rights, control dividends, and decide when your children get access to value.</p>
 
 <h2>How a Family Investment Company Saves Inheritance Tax on Your Agency</h2>
-<p>Let us walk through the numbers with a real example.</p>
+<p>Let us walk through the numbers with a worked example.</p>
 <p>You own 100% of a digital agency worth £2m. You are unmarried. Your estate is worth £2.5m including the agency, your home, and investments.</p>
 <p>Without a FIC, your estate pays IHT at 40% on everything above £325,000. That is 40% of £2,175,000, which comes to £870,000. Your children receive £1.63m. HMRC takes £870k.</p>
 <p>With a FIC, you transfer your agency shares into the FIC in exchange for shares in the FIC. You then gift shares in the FIC to your children over several years. Each gift is a potentially exempt transfer (PET). If you survive seven years after each gift, the value is outside your estate.</p>

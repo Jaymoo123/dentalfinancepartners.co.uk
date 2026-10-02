@@ -44,7 +44,7 @@ keyTakeaways:
 
 <p>When you are a sole trader, your side hustle profit is added to your main employment income. HMRC treats both as the same pot of money for income tax purposes.</p>
 
-<p>Let us use a real example. You earn £48,000 from your day job in 2026/27. Your side hustle makes £14,000 profit after expenses. Your total income is £62,000.</p>
+<p>Let us use a worked example. You earn £48,000 from your day job in 2026/27. Your side hustle makes £14,000 profit after expenses. Your total income is £62,000.</p>
 
 <p>The personal allowance of £12,570 comes off first. That leaves £49,430 of taxable income. The basic rate band runs from £12,571 to £50,270. You pay 20% on the first £37,700 of that. Then the remaining £11,730 sits in the higher rate band at 40%.</p>
 

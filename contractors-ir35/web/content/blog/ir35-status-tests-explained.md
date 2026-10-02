@@ -143,7 +143,7 @@ faqs:
 
 <p>Across every dimension of the control test and at the whole-picture stage, the working practices of an engagement carry more weight than the wording of the written contract. This is the consistent message of the case law, and it is the firm's own consistent line. A contract that describes professional autonomy over method but an engagement where the contractor attends a daily team stand-up, works to a task-managed backlog assigned by a line manager and is subject to an annual performance review does not survive a working-practices challenge.</p>
 
-<p>The <a href="/blog/ir35-status/outside-ir35">outside IR35 guide</a> on this site covers the practical steps for protecting your status through working practices and evidence gathering. This guide has deliberately not restated that ground: the outside-IR35 guide owns it.</p>
+<p>The <a href="/blog/ir35-status/outside-ir35">outside IR35 guide</a> on this site covers the practical steps for protecting your status through working practices and evidence gathering. This guide does not restate that ground.</p>
 
 <h2>Putting the three tests together</h2>
 

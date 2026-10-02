@@ -18,7 +18,7 @@ altText: "Professional accountant working with GP practice financial documents i
 h1: "GP Accountant Birmingham: Specialist Medical Accounting Services"
 keyTakeaways:
 - "Since 1 April 2022 every active NHS scheme member accrues in the 2015 CARE section at 1/54th of each year's pensionable earnings, revalued at CPI plus 1.5 per cent."
-- "For 2025/26 the NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor."
+- "For 2026/27 the NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor."
 - "GP partners are taxed on their profit share, not the drawings they actually take, which is one of the most common points of confusion for practices."
 - "From 6 April 2026 dividend tax rises to 10.75 per cent ordinary and 35.75 per cent upper (additional rate stays 39.35 per cent), narrowing the saving from incorporating private work."
 - "MTD for Income Tax starts at a £50,000 qualifying-income threshold from 6 April 2026, but limited companies are excluded and general partnerships are deferred with no confirmed date."
@@ -28,7 +28,7 @@ faqs:
   - question: "What does a specialist GP accountant in Birmingham do that a general accountant does not?"
     answer: "A medical specialist understands the parts of GP finance a general accountant rarely meets: the NHS Pension Scheme (everyone now accrues in the 2015 CARE section at 1/54th since 1 April 2022), the annual allowance and £200,000/£260,000 taper that catches higher-earning partners and consultants, GP profit-share accounting where partners are taxed on profit share not drawings, Type 1, Type 2 and locum pension certification, and the rule that NHS GP goodwill cannot be sold. That specialism is where the practical tax savings come from."
   - question: "Can a Birmingham GP accountant help with the NHS pension annual allowance?"
-    answer: "Yes. For 2025/26 the annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor. For defined-benefit NHS membership the test is pension growth (the pension input amount), not contributions paid. We model your input amount, check whether a charge arises and explain Scheme Pays. Our NHS pension annual allowance guide sets out the detail."
+    answer: "Yes. For 2026/27 the annual allowance is £60,000, tapering by £1 for every £2 of adjusted income above £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor. For defined-benefit NHS membership the test is pension growth (the pension input amount), not contributions paid. We model your input amount, check whether a charge arises and explain Scheme Pays. Our NHS pension annual allowance guide sets out the detail."
   - question: "Do you work with GP locums and salaried GPs in Birmingham, or only partners?"
     answer: "All three. Salaried GPs are employees taxed under PAYE with their own pension and private-work questions, freelance locums are usually sole traders pensioning income via Locum forms A and B, and partners file through the partnership return. Most full-time locums and unincorporated private GPs have qualifying income above £50,000, so they fall into Making Tax Digital for Income Tax from 6 April 2026."
   - question: "Should a Birmingham GP set up a limited company?"

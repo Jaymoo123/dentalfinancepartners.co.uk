@@ -29,11 +29,11 @@ const resourceCard =
 
 export const metadata: Metadata = {
   title: "Accountants for Solicitors UK 2026/27 | SRA + LLP + Partner Tax",
-  description: "Specialist accountancy matching for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
+  description: "Specialist accountants for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: "Accountants for Solicitors UK 2026/27 | SRA + LLP + Partner Tax",
-    description: "Specialist accountancy matching for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
+    description: "Specialist accountants for UK solicitors and law firms. SRA Accountant's Report, LLP and partnership tax, BADR pre-sale planning. Fixed monthly fees.",
     url: siteConfig.url,
     type: "website",
     images: [{ url: siteConfig.publisherLogoUrl, alt: siteConfig.name }],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 const realityPoints = [
   {
     title: "SRA Accounts Rules complexity",
-    body: "Managing client money, trust accounts, and 5-week reconciliations requires specialized knowledge. Generalist accountants often miss the nuances of SRA compliance, putting your practicing certificate at risk.",
+    body: "Managing client money, trust accounts, and 5-week reconciliations requires specialised knowledge. Generalist accountants often miss the nuances of SRA compliance, putting your practising certificate at risk.",
   },
   {
     title: "Partnership and LLP tax confusion",
@@ -63,7 +63,7 @@ const whoWeWorkWith = [
   {
     title: "Sole Practitioners",
     subtitle: "Self-assessment · Expenses · MTD compliance",
-    body: "From self-assessment tax returns to allowable expense claims and Making Tax Digital preparation. Our specialist accountants keep your practice finances compliant and your personal tax position optimized, particularly with the April 2026 MTD rollout.",
+    body: "From self-assessment tax returns to allowable expense claims and Making Tax Digital preparation. Our specialist accountants keep your practice finances compliant and your personal tax position optimised, particularly with the April 2026 MTD rollout.",
   },
   {
     title: "Law Firm Partners",
@@ -86,7 +86,7 @@ const howWeWorkItems = [
   {
     n: "02",
     title: "Partnership & LLP tax returns",
-    body: "Complete handling of partnership tax returns, LLP member allocations, and individual partner self-assessments. We navigate Basis Period Reform and optimize profit extraction strategies.",
+    body: "Complete handling of partnership tax returns, LLP member allocations, and individual partner self-assessments. We navigate Basis Period Reform and optimise profit extraction strategies.",
   },
   {
     n: "03",
@@ -131,11 +131,11 @@ const trustItems = [
 const whySpecialistItems = [
   {
     title: "Solicitor accountant expertise",
-    body: "Our accountants specialize in SRA Accounts Rules, client money compliance, partnership/LLP taxation, legal sector VAT, and practice succession planning. We speak your language and understand your regulatory environment.",
+    body: "Our accountants specialise in SRA Accounts Rules, client money compliance, partnership/LLP taxation, legal sector VAT, and practice succession planning. We speak your language and understand your regulatory environment.",
   },
   {
     title: "Proactive tax planning",
-    body: "Beyond compliance, we provide strategic tax planning, structure optimization, and practice finance advice, so legal professionals can make informed financial decisions to protect and grow the practice.",
+    body: "Beyond compliance, we provide strategic tax planning, structure optimisation, and practice finance advice, so legal professionals can make informed financial decisions to protect and grow the practice.",
   },
   {
     title: "Clear, accessible service",
@@ -240,7 +240,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <Eyebrow onDark>What the work looks like</Eyebrow>
             <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
-              Four situations legal sector accountants see repeatedly
+              Situations legal sector accountants see repeatedly
             </h2>
           </div>
           <div className="mt-10">
@@ -414,7 +414,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <Eyebrow>Why it matters</Eyebrow>
             <h2 className="text-3xl font-bold leading-tight text-slate-900 md:text-4xl">
-              Specialist vs generalist accountants
+              What changes with specialist solicitor accountants
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-[var(--ink-soft)]">
               When you work with accountants who specialise in the legal sector, here's what changes:

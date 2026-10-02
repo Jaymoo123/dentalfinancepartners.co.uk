@@ -149,9 +149,9 @@ keyTakeaways:
 <li>Problems when you try to open or maintain a corporate bank account</li>
 </ul>
 
-<p>We have seen a client who set up in DMCC on a flexi desk, then grew to a team of five. DMCC required them to move to a physical office. They had to spend £12,000 on a lease for a space they did not need, just to keep their licence. That is £12,000 they could have spent on a better CRM, a contractor, or a team offsite.</p>
+<p>Picture an agency that set up in DMCC on a flexi desk, then grew to a team of five. DMCC required them to move to a physical office. They had to spend £12,000 on a lease for a space they did not need, just to keep their licence. That is £12,000 they could have spent on a better CRM, a contractor, or a team offsite.</p>
 
-<p>Another client set up in DSO without realising the physical presence requirement. They were based in Manchester and visited Dubai once a quarter. DSO refused to renew their licence until they signed a physical lease. They ended up moving their entity to RAK ICC and paying for a dual setup for three months while the transition happened. Costly and avoidable.</p>
+<p>Another agency might set up in DSO without realising the physical presence requirement. They were based in Manchester and visited Dubai once a quarter. DSO refused to renew their licence until they signed a physical lease. They ended up moving their entity to RAK ICC and paying for a dual setup for three months while the transition happened. Costly and avoidable.</p>
 
 <h2>What to Ask Your Setup Agent Before You Pay</h2>
 

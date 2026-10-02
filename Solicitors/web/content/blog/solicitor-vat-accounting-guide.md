@@ -82,7 +82,7 @@ faqs:
 
 <p>Time recording systems need to capture sufficient detail to support VAT treatment decisions. This includes distinguishing genuine disbursements from recharges and identifying any genuinely exempt income streams (remembering that legal aid work is standard-rated, not exempt).</p>
 
-<p>Many law firms use specialized legal accounting software that integrates time recording, billing, and VAT compliance. This reduces manual errors and ensures consistent treatment across the practice.</p>
+<p>Many law firms use specialised legal accounting software that integrates time recording, billing, and VAT compliance. This reduces manual errors and ensures consistent treatment across the practice.</p>
 
 <h2>Quarterly VAT Returns and Deadlines</h2>
 
@@ -112,7 +112,7 @@ faqs:
 
 <p>Given the complexity of solicitor VAT accounting, most firms benefit from specialist accountancy support. This is particularly important for practices with mixed income streams or significant disbursement activity.</p>
 
-<p>A specialist solicitor accountant can help optimize VAT planning, ensure compliance with both VAT and SRA requirements, and provide ongoing support for quarterly returns and record-keeping.</p>
+<p>A specialist solicitor accountant can help optimise VAT planning, ensure compliance with both VAT and SRA requirements, and provide ongoing support for quarterly returns and record-keeping.</p>
 
 <p>For firms considering changes to their structure or services, early VAT advice can prevent costly mistakes and identify planning opportunities.</p>
 

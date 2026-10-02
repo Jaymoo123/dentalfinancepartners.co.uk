@@ -52,7 +52,7 @@ keyTakeaways:
 
 <p>If you earn freelance income outside your agency, that income goes on your personal tax return. And if that freelance income exceeds £50,000 in a tax year, you must comply with MTD ITSA for that part of your affairs.</p>
 
-<p>Here is a real example. You run a 12-person digital agency billing £800k per year. You pay yourself a salary of £12,570 and dividends of £60,000. That is all company income, taxed through PAYE and dividend tax. No MTD ITSA requirement there.</p>
+<p>Here is a worked example. You run a 12-person digital agency billing £800k per year. You pay yourself a salary of £12,570 and dividends of £60,000. That is all company income, taxed through PAYE and dividend tax. No MTD ITSA requirement there.</p>
 
 <p>But you also do freelance consulting for three clients directly, earning £55,000 per year. That is self-employed income. It goes on your SA100 self-assessment return. And because it is over £50,000, you must comply with MTD ITSA from April 2026.</p>
 

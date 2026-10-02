@@ -54,7 +54,7 @@ keyTakeaways:
 
 <h2>How a Remote Employee Creates a Permanent Establishment Risk</h2>
 
-<p>Let me give you a real scenario we worked through with a client last year.</p>
+<p>Let me give you an illustrative scenario.</p>
 
 <p>A 15-person digital agency in Shoreditch hired a senior account director who wanted to relocate to Lisbon. The agency had no Portuguese clients, no Portuguese bank account, and no plans to target the Portuguese market. The director worked from a co-working space in Lisbon, managing UK and US client accounts remotely.</p>
 

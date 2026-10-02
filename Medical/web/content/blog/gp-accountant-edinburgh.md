@@ -17,7 +17,7 @@ altText: "Edinburgh GP accountant providing specialist medical tax services"
 h1: "GP Accountant Edinburgh: Expert Tax Services for Medical Professionals"
 keyTakeaways:
 - "For 2026/27 a Scottish taxpayer enters the 42% higher rate at £43,663, well below the £50,270 point where the rest of the UK reaches 40%."
-- "The NHS pension annual allowance is £60,000 for 2025/26, tapering to a £10,000 floor once threshold income exceeds £200,000 and adjusted income exceeds £260,000."
+- "The NHS pension annual allowance is £60,000 for 2026/27, tapering to a £10,000 floor once threshold income exceeds £200,000 and adjusted income exceeds £260,000."
 - "NHS GP goodwill cannot be sold, as its sale has been prohibited since 1 April 2004 (now under SI 2019/251), so a partner's exit turns on tangible assets, premises and capital accounts."
 - "The HMRC approved mileage rate rose to 55p per mile for the first 10,000 business miles on 6 April 2026, then 25p per mile thereafter."
 - "Business Asset Disposal Relief is charged at 18% for disposals on or after 6 April 2026, up from 14% in 2025/26 and 10% before that."
@@ -32,7 +32,7 @@ faqs:
   - question: "Can I sell the goodwill in my Edinburgh GP practice when I retire?"
     answer: "No. The sale of NHS GP goodwill has been prohibited since 1 April 2004 (the prohibition is now in SI 2019/251). A partner's exit is about their share of tangible assets, owned premises and partnership capital accounts, not a goodwill sale, so the dentist-style 'sell the goodwill and claim relief' route does not apply to an NHS practice. Only genuinely private (non-NHS) goodwill can be sold."
   - question: "Does the NHS pension annual allowance still catch Edinburgh GPs?"
-    answer: "Yes. The annual allowance is £60,000 for 2025/26, tapering down to a £10,000 floor where threshold income exceeds £200,000 and adjusted income exceeds £260,000. For a defined-benefit scheme such as the NHS scheme it is the growth in your pension (the pension input amount), not the contributions you pay, that is measured. Higher-earning partners and consultants can breach the allowance and settle the charge through Scheme Pays."
+    answer: "Yes. The annual allowance is £60,000 for 2026/27, tapering down to a £10,000 floor where threshold income exceeds £200,000 and adjusted income exceeds £260,000. For a defined-benefit scheme such as the NHS scheme it is the growth in your pension (the pension input amount), not the contributions you pay, that is measured. Higher-earning partners and consultants can breach the allowance and settle the charge through Scheme Pays."
   - question: "When should I engage a medical accountant, before or after becoming a GP partner?"
     answer: "Ideally before. The tax treatment of a buy-in, the partnership profit-sharing ratio, your move from PAYE to self-employment and your Type 1 pension certificate are all easier to get right at the outset than to unpick later. Early advice also lets you plan payments on account and the move into Making Tax Digital for Income Tax."
 ---
@@ -68,7 +68,7 @@ faqs:
 
 <h2>NHS Pension Planning and the Annual Allowance</h2>
 
-<p>The NHS pension is the single biggest planning issue for most Edinburgh GPs, and the rules are UK-wide rather than devolved. The standard <strong>annual allowance is £60,000</strong> for 2025/26. It <strong>tapers</strong> where your threshold income exceeds £200,000 and your adjusted income exceeds £260,000, reducing to a floor of £10,000. The April 2023 increase (from the old £40,000 allowance to £60,000) eased the position for many doctors, but higher-earning partners and consultants who cross the taper can still face a charge.</p>
+<p>The NHS pension is the single biggest planning issue for most Edinburgh GPs, and the rules are UK-wide rather than devolved. The standard <strong>annual allowance is £60,000</strong> for 2026/27. It <strong>tapers</strong> where your threshold income exceeds £200,000 and your adjusted income exceeds £260,000, reducing to a floor of £10,000. The April 2023 increase (from the old £40,000 allowance to £60,000) eased the position for many doctors, but higher-earning partners and consultants who cross the taper can still face a charge.</p>
 
 <p>For a defined-benefit scheme such as the NHS scheme, it is the <strong>growth in your pension (the pension input amount), not the contributions you pay</strong>, that is tested against the allowance. That is why a single busy year, a pay award or a partnership profit spike can trigger a charge that takes doctors by surprise. Where a charge arises, <strong>Scheme Pays</strong> lets the NHS scheme settle it in exchange for a permanent reduction in benefits.</p>
 

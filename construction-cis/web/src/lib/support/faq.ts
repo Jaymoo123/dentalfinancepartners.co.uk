@@ -58,7 +58,7 @@ export const BY_TOPIC: Partial<Record<TopicKey, Faq[]>> = {
   "cis-deductions": [
     {
       q: "How much CIS is deducted from my pay?",
-      a: "The rate depends on your registration status. Gross payment status: 0 per cent (no deduction). Registered subcontractor: 20 per cent. Unregistered or unverified: 30 per cent. The deduction applies to the labour element only. Materials you pass on to the client are excluded from the deduction base (HP §1).",
+      a: "The rate depends on your registration status. Gross payment status: 0 per cent (no deduction). Registered subcontractor: 20 per cent. Unregistered or unverified: 30 per cent. The deduction applies to the labour element only. Materials you pass on to the client are excluded from the deduction base.",
     },
     {
       q: "Is CIS deducted on materials?",

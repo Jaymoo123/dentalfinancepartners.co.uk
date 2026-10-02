@@ -48,7 +48,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Annual accounts and tax returns for seller businesses",
-        body: `We prepare sole-trader <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> returns and limited company accounts for Amazon selling businesses, with COGS and inventory properly recognised and owner extraction structured against current rates. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model the options. Generic incorporation and salary/dividend mechanics: <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `We prepare sole-trader <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> returns and limited company accounts for Amazon selling businesses, with COGS and inventory properly recognised and owner extraction structured against current rates. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model the options.`,
       },
     ],
     faqs: [
@@ -105,7 +105,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Inventory, COGS and structure as the business scales",
-        body: `Shopify sellers buying stock for resale need accruals-basis accounts with a proper cost-of-goods-sold figure. Under <a href="https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim33115">BIM33115</a>, closing stock is valued at the lower of cost and net realisable value. Cash-basis accounting that expenses stock when purchased, regardless of when sold, produces a misleading profit figure. As revenue grows, many Shopify sellers consider incorporation; the decision affects income tax, National Insurance and owner extraction. For EU cross-border sales, see <a href="/services/selling-into-the-eu">Selling into the EU</a> and <a href="/vat/135-import-rule">/vat/135-import-rule</a> for low-value direct consignments. Generic incorporation mechanics at <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `Shopify sellers buying stock for resale need accruals-basis accounts with a proper cost-of-goods-sold figure. Under <a href="https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim33115">BIM33115</a>, closing stock is valued at the lower of cost and net realisable value. Cash-basis accounting that expenses stock when purchased, regardless of when sold, produces a misleading profit figure. As revenue grows, many Shopify sellers consider incorporation; the decision affects income tax, National Insurance and owner extraction. For EU cross-border sales, see <a href="/services/selling-into-the-eu">Selling into the EU</a> and <a href="/vat/135-import-rule">/vat/135-import-rule</a> for low-value direct consignments.`,
       },
     ],
     howWeHelp: [
@@ -119,7 +119,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Annual accounts and tax returns",
-        body: `We prepare sole-trader Self Assessment returns and limited company accounts for Shopify businesses, with stock and COGS properly recognised. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model extraction options. See also <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic salary/dividend and MTD ITSA mechanics at <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `We prepare sole-trader Self Assessment returns and limited company accounts for Shopify businesses, with stock and COGS properly recognised. Use our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/calculators/seller-take-home-calculator">seller take-home calculator</a> to model extraction options. See also <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>.`,
       },
     ],
     faqs: [
@@ -235,7 +235,7 @@ export const sellerHubs: SellerHub[] = [
       },
       {
         title: "Margin tracking and business structure for high-volume models",
-        body: `Dropshipping businesses often operate on thin margins across high order volumes. Bookkeeping that matches supplier costs to customer sales in the correct period is essential for an accurate profit figure. A business generating consistent revenue needs proper HMRC registration, a <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> return (or limited company accounts), and VAT registration once the threshold is approached. See our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>. Generic incorporation mechanics at <a href="https://www.hollowaydavies.co.uk">hollowaydavies.co.uk</a>.`,
+        body: `Dropshipping businesses often operate on thin margins across high order volumes. Bookkeeping that matches supplier costs to customer sales in the correct period is essential for an accurate profit figure. A business generating consistent revenue needs proper HMRC registration, a <a href="https://www.gov.uk/register-for-self-assessment">Self Assessment</a> return (or limited company accounts), and VAT registration once the threshold is approached. See our <a href="/calculators/sole-trader-vs-ltd-sellers">sole trader vs limited company calculator</a> and <a href="/blog/business-structure-and-tax/sole-trader-vs-ltd-online-sellers">sole trader vs limited company for online sellers</a>.`,
       },
     ],
     howWeHelp: [

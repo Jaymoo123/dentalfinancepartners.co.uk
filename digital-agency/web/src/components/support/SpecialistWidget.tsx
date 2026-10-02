@@ -230,6 +230,7 @@ export function SpecialistWidget() {
         /* ignore */
       }
     }
+    if (window.innerWidth < 768) return; // guard: no auto-open/peek under 768px (2026-10-02)
     const t = window.setTimeout(() => {
       if (engagedRef.current || openRef.current) return;
       try {

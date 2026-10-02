@@ -98,7 +98,7 @@ keyTakeaways:
 
 <h2>Real Numbers: The Cost of Compliance-Only Thinking</h2>
 
-<p>Let me give you a concrete example. I worked with a 15-person PR agency in Bristol Harbourside. They were billing £950k per year. Their compliance accountant charged £2,400 per year. That seemed cheap.</p>
+<p>Here is an illustrative example. Take a 15-person PR agency billing £950k per year. Its compliance accountant charges £2,400 per year. That seems cheap.</p>
 
 <p>But here is what the compliance accountant missed:</p>
 

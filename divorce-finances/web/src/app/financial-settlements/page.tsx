@@ -321,8 +321,8 @@ export default function FinancialSettlementsPage() {
               </div>
               <p className="mt-6 text-sm leading-relaxed text-neutral-400">
                 {siteConfig.name} is not a law firm and does not give legal advice. Where you need a
-                solicitor, we work alongside a regulated firm and stay on the money side. Your details are
-                shared only with your consent.
+                solicitor, we work alongside a regulated firm and stay on the money side. No cold calls. We
+                only contact you about the enquiry you send.
               </p>
             </div>
             <div className="bg-white p-6 sm:p-8 lg:p-10">

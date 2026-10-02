@@ -6,7 +6,7 @@
     "howItWorks": [
       "You tell us your situation through the enquiry form: what you sell, where and how it is structured.",
       "One of our accountants calls you to go through it and answer the immediate questions.",
-      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We agree the scope and the fee before any work starts.",
       "We do the work, deal with HMRC on your behalf, and keep you ahead of your deadlines."
     ],
     "next": "We reply within 24 hours and one of our accountants comes back to you directly."
@@ -32,8 +32,8 @@
     "enquiry_retention_months": 24
   },
   "domain": "www.ecommercefinance.co.uk",
-  "tagline": "UK ecommerce and marketplace sellers (Amazon, eBay, Etsy, Shopify): tax, VAT, platform reporting and seller accounts",
-  "description": "UK ecommerce and marketplace sellers (Amazon, eBay, Etsy, Shopify): tax, VAT, platform reporting and seller accounts",
+  "tagline": "Tax, VAT, platform reporting and seller accounts for UK ecommerce and marketplace sellers on Amazon, eBay, Etsy and Shopify.",
+  "description": "Tax, VAT, platform reporting and seller accounts for UK ecommerce and marketplace sellers on Amazon, eBay, Etsy and Shopify.",
   "brand": {
     "primary_color": "#c9861b",
     "logo_path": "/brand/logo.png",

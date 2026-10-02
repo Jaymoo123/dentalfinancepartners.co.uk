@@ -258,7 +258,7 @@ export function WhyChooseUsSection() {
           </div>
           <Prose>
             <p>
-              We quote a fixed fee in writing after a short discovery call, based on what the
+              We quote a clear fee after a short discovery call, based on what the
               work actually involves: turnover, payroll size, VAT scheme, number of directors,
               and whether you need management accounts as well as year-end. Nothing is added
               without your sign-off.

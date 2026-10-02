@@ -116,7 +116,7 @@ faqs:
 
 <p>Employment expenses are worth claiming and are not covered here. Flat-rate relief for uniforms and laundry, and the deductibility of professional subscriptions, are set out in the guide to <a href="/blog/nhs-uniform-tax-relief-laundry-allowance">NHS uniform tax relief and the laundry allowance</a>, which names physiotherapists and other therapists directly.</p>
 
-<p>The commercial questions, incorporating, taking on associates or buying a partner out, follow the same rules here as in any other private healthcare practice, and the existing private-practice material on this site covers them. What a specialist accountant does across healthcare more generally is in the guide to <a href="/blog/healthcare-accountants-uk">healthcare accountants</a>.</p>
+<p>The commercial questions, incorporating, taking on associates or buying a partner out, follow the same rules here as in any other private healthcare practice, and our private-practice guides cover them. What a specialist accountant does across healthcare more generally is in the guide to <a href="/blog/healthcare-accountants-uk">healthcare accountants</a>.</p>
 
 <p>If you are working out which side of the register your practice sits on, or what registering for VAT would do to your fees, our team will cover the liability question and the arithmetic before you change a price. <a href="/contact">Get in touch to arrange a call.</a></p>
 

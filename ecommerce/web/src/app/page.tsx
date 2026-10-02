@@ -142,15 +142,8 @@ const taxMoments = [
           6 April 2026
         </a>
         . The threshold drops to £30,000 from 6 April 2027 and to £20,000 from 6 April 2028. The
-        sole-trader seller cohort is hit first. For generic MTD mechanics and registration see{" "}
-        <a
-          href="https://www.hollowaydavies.co.uk"
-          className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
-          rel="noopener"
-        >
-          hollowaydavies.co.uk
-        </a>
-        ; we handle the seller-specific picture.
+        sole-trader seller cohort is hit first. We handle the registration, the digital records and
+        the seller-specific picture.
       </>
     ),
   },
@@ -270,7 +263,7 @@ const faqs = [
   },
   {
     q: "Should I trade as a sole trader or a limited company as a seller?",
-    a: "It depends on your income level and extraction plans. Incorporation can be tax-efficient above certain profit levels when salary and dividends are structured correctly, but adds compliance cost and complexity. Use our sole-trader-vs-Ltd calculator for a numbers comparison, and see hollowaydavies.co.uk for the generic incorporation picture. We advise on the seller-specific structuring.",
+    a: "It depends on your income level and extraction plans. Incorporation can be tax-efficient above certain profit levels when salary and dividends are structured correctly, but adds compliance cost and complexity. Use our sole-trader-vs-Ltd calculator for a numbers comparison. We advise on the structuring itself, including the seller-specific points.",
   },
 ];
 
@@ -447,7 +440,7 @@ export default function HomePage() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-400 opacity-75" />
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary-400" />
               </span>
-              From 1 January 2024, first reports January 2025
+              Platform reporting rules in force since 1 January 2024
             </div>
             <h1 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-7xl">
               Accountants for UK ecommerce and marketplace sellers.
@@ -533,8 +526,7 @@ export default function HomePage() {
       <section className="border-b border-slate-200 bg-[var(--ground-subtle)] py-10 sm:py-12">
         <div className={siteContainerLg}>
           <p className="max-w-3xl text-lg leading-relaxed text-slate-700 sm:text-xl">
-            A marketplace seller accountant owns the tax layer that SaaS tools and generalist firms
-            cannot credibly cover: the{" "}
+            We own the tax layer that SaaS tools and generalist firms cannot cover: the{" "}
             <a
               href="https://www.gov.uk/vat-registration"
               className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
@@ -543,15 +535,8 @@ export default function HomePage() {
             </a>{" "}
             the platform payout hides, deemed-supplier and establishment status, VAT on overseas
             marketplace fees, cross-border IOSS and OSS obligations, and settlement reconciliation
-            that turns platform reports into accurate accounts. For general ecommerce accounting see{" "}
-            <a
-              href="https://www.hollowaydavies.co.uk"
-              className="underline underline-offset-2 hover:text-[var(--brand-primary-text)]"
-              rel="noopener"
-            >
-              hollowaydavies.co.uk
-            </a>
-            ; we handle the multi-platform seller layer.
+            that turns platform reports into accurate accounts. That is the multi-platform seller layer,
+            and we handle all of it.
           </p>
         </div>
       </section>
@@ -735,9 +720,7 @@ export default function HomePage() {
                 the depth a working seller actually needs.
               </p>
               <p className="mt-4 text-sm text-slate-500">
-                Note: IOSS and OSS cross-border figures are EU law; our guides cite the correct
-                sources at each decision point rather than asserting figures from the wrong
-                jurisdiction.
+                IOSS and OSS figures are EU law and are cited to the EU source.
               </p>
             </div>
             <div>

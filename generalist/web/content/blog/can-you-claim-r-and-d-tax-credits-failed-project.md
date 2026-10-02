@@ -60,7 +60,7 @@ keyTakeaways:
 
 <p>HMRC's internal manual at <strong>CIRD81900</strong> is explicit. It states that "a project which does not succeed in achieving its aims or which is abandoned before completion can still be R&D." The manual goes on to say that the costs incurred up to the point of abandonment or failure are qualifying expenditure, provided they relate to resolving technological uncertainty.</p>
 
-<p>Consider a real example. A Manchester-based engineering consultancy spent £74,000 developing a new composite material for lightweight structural panels. After 14 months of work, the material failed stress testing at a level well below the target. The client abandoned the project. The commercial outcome was zero. No product, no revenue, no IP sale.</p>
+<p>Consider a worked example. A Manchester-based engineering consultancy spent £74,000 developing a new composite material for lightweight structural panels. After 14 months of work, the material failed stress testing at a level well below the target. The client abandoned the project. The commercial outcome was zero. No product, no revenue, no IP sale.</p>
 
 <p>But the technical work was substantial. They had tested four different resin formulations, modified curing processes, and developed new testing rigs. Every iteration resolved a specific technical question, even if the final answer was "this approach does not work." The claim was valid. They received £14,060 in repayable tax credit.</p>
 

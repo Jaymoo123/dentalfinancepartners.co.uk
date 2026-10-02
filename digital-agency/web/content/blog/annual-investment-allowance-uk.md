@@ -70,7 +70,7 @@ imageCredit:
 
 <h2>How the AIA Reduces Your Tax Bill</h2>
 
-<p>Let us use a real example. Say you run a 12-person digital agency billing £800k per year. Your profit after salaries and overheads is £120,000. Your corporation tax at 19% would be £22,800.</p>
+<p>Let us use a worked example. Say you run a 12-person digital agency billing £800k per year. Your profit after salaries and overheads is £120,000. Your corporation tax at 19% would be £22,800.</p>
 
 <p>Now suppose you spend £40,000 on new laptops, monitors, and a server upgrade. Under the AIA, you deduct that full £40,000 from your £120,000 profit. Your taxable profit drops to £80,000. Your corporation tax falls to £15,200. You have saved £7,600 in tax.</p>
 

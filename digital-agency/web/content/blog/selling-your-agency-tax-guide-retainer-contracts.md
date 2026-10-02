@@ -81,7 +81,7 @@ keyTakeaways:
 
 <h2>The Tax Treatment of Retainer Contract Value</h2>
 
-<p>Let us use a real example. You run a 12-person <a href="/agencies/digital-agencies">digital agency</a> billing £800,000 per year. Of that, £500,000 comes from retainer contracts with an average remaining term of 14 months. You agree a sale price of £600,000 with a buyer.</p>
+<p>Let us use a worked example. You run a 12-person <a href="/agencies/digital-agencies">digital agency</a> billing £800,000 per year. Of that, £500,000 comes from retainer contracts with an average remaining term of 14 months. You agree a sale price of £600,000 with a buyer.</p>
 
 <p>The buyer's solicitor drafts the sale agreement allocating the purchase price as follows:</p>
 

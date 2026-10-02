@@ -130,7 +130,7 @@ keyTakeaways:
 
 <p>When they submitted their R&D claim, the total qualifying expenditure was £187,000. The corporation tax saving was approximately £35,500. HMRC did not raise a single query. The evidence was complete, contemporaneous, and clearly linked to qualifying activities.</p>
 
-<p>Compare that to another agency we worked with who tried to reconstruct their R&D activity from memory six months after the project ended. HMRC opened an enquiry. The claim was ultimately reduced by 60% because they could not produce adequate contemporaneous evidence. The difference was documentation.</p>
+<p>Compare that to a hypothetical agency that tried to reconstruct their R&D activity from memory six months after the project ended. HMRC opened an enquiry. The claim was ultimately reduced by 60% because they could not produce adequate contemporaneous evidence. The difference was documentation.</p>
 
 <h2>Common Mistakes Agencies Make</h2>
 

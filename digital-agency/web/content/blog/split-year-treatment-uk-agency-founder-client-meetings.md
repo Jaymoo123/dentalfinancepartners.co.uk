@@ -62,7 +62,7 @@ keyTakeaways:
 
 <h3>How Client Meetings Break the Condition</h3>
 
-<p>Let me give you a real example. A founder of a 15-person digital agency in Manchester Northern Quarter moves to Dubai in June 2025. He keeps his UK agency running, visits clients quarterly, attends industry events, and spends Christmas with family. His pattern looks like this:</p>
+<p>Let me give you an illustrative example. A founder of a 15-person digital agency in Manchester Northern Quarter moves to Dubai in June 2025. He keeps his UK agency running, visits clients quarterly, attends industry events, and spends Christmas with family. His pattern looks like this:</p>
 
 <ul>
 <li>June to August 2025: in Dubai, no UK visits</li>

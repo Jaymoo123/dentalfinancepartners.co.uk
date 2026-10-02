@@ -139,7 +139,7 @@ export const solePractitionerConfig: PremiumToolConfig = {
         { label: "Limited company effective rate", value: effectiveRate(ltdTax, profit) },
       ],
       chart: { data: chartData },
-      note: "2026/27 basis (FA 2026 s.4: dividend rates 10.75% basic / 35.75% higher / 39.35% additional from 6 April 2026, HP §3). The company's retained profit is not your personal money: dividends extracted are taxed again at 2026/27 dividend rates, already included in the Ltd figure. An SRA-regulated firm cannot incorporate freely and must be authorised by the SRA as a recognised body (wholly lawyer-owned) or licensed as an ABS if non-lawyer owners are involved (Legal Services Act 2007 Part 5, HP §1). The Ltd scenario excludes student loans, Marriage Allowance, salary optimisation above the secondary threshold, and Employment Allowance (not available to a single-director company). These are estimates, not advice for your firm.",
+      note: "2026/27 basis (FA 2026 s.4: dividend rates 10.75% basic / 35.75% higher / 39.35% additional from 6 April 2026). The company's retained profit is not your personal money: dividends extracted are taxed again at 2026/27 dividend rates, already included in the Ltd figure. An SRA-regulated firm cannot incorporate freely and must be authorised by the SRA as a recognised body (wholly lawyer-owned) or licensed as an ABS if non-lawyer owners are involved (Legal Services Act 2007 Part 5). The Ltd scenario excludes student loans, Marriage Allowance, salary optimisation above the secondary threshold, and Employment Allowance (not available to a single-director company). These are estimates, not advice for your firm.",
     };
   },
   chart: {
@@ -155,7 +155,7 @@ export const solePractitionerConfig: PremiumToolConfig = {
     paragraphs: [
       "For a sole practitioner or partner in a tax-transparent partnership or LLP, practice profit is taxed as personal income: income tax at 20%, 40% and 45% plus Class 4 National Insurance at 6% on profits from £12,570 to £50,270 and 2% above. Class 2 NIC was abolished from 6 April 2024. The personal allowance (£12,570) is tapered above £100,000 and lost at £125,140.",
       "For a limited company, the calculator applies corporation tax on profits (19% on profits up to £50,000, 25% main rate above £250,000, marginal relief between), employer NIC at 15% on the minimum salary above £5,000, then dividend tax on the remaining distributable profit at 2026/27 rates (10.75% basic / 35.75% higher / 39.35% additional, FA 2026 s.4 from 6 April 2026). A fixed £2,500 annual admin cost is included.",
-      "Following the FA 2026 dividend rise, the tax advantage of a limited company over a partnership or LLP has narrowed at typical partner profit levels. Before incorporating, a solicitor must also weigh SRA authorisation requirements (HP §1): an SRA-regulated firm incorporating as a limited company needs recognition as a recognised body, or an ABS licence if any non-lawyer holds an interest.",
+      "Following the FA 2026 dividend rise, the tax advantage of a limited company over a partnership or LLP has narrowed at typical partner profit levels. Before incorporating, a solicitor must also weigh SRA authorisation requirements: an SRA-regulated firm incorporating as a limited company needs recognition as a recognised body, or an ABS licence if any non-lawyer holds an interest.",
     ],
   },
 };

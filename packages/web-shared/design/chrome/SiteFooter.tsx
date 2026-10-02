@@ -63,6 +63,14 @@ export type SiteFooterProps = {
    * commission the design passes `false`.
    */
   showBuilderCredit?: boolean;
+  /**
+   * Extra top-level nav hrefs to render as their own single-link column
+   * (title + href both taken from that nav item, no authored copy). For a
+   * flat nav item like hospitality's "/for" that has no children and isn't
+   * one of the fixed Services/Resources slots, so it would otherwise never
+   * appear in the footer at all.
+   */
+  extraNavHrefs?: string[];
 };
 
 type FooterColumn = { title: string; items: Array<{ label: string; href: string }> };
@@ -89,12 +97,23 @@ function buildFooterColumns(
   nav: NavItem[],
   resourcesHref: string,
   companyItems: Array<{ label: string; href: string }>,
-): FooterColumn[] {
+  extraNavHrefs: string[],
+  footerLinks: Array<{ label: string; href: string }>,
+): { columns: FooterColumn[]; footerLinks: Array<{ label: string; href: string }> } {
   const find = (href: string) => nav.find((item) => item.href === href);
   // Keeps the self-referential child ("All services", "Landlord tax guide"):
   // the column headings are not links, so dropping it would leave the hub pages
   // with no footer entry at all.
-  const childrenOf = (href: string) => find(href)?.children ?? [];
+  // Falls back to the nav item itself (its own label/href) when it has no
+  // children, so a flat nav (hospitality's Services/Research) still gets a
+  // footer column instead of silently dropping out.
+  const childrenOf = (href: string) => {
+    const item = find(href);
+    if (!item) return [];
+    return item.children && item.children.length > 0
+      ? item.children
+      : [{ label: item.label, href: item.href }];
+  };
 
   const calculators = find("/calculators");
   // One lead calculator per category, in the nav's own most-searched order.
@@ -102,15 +121,33 @@ function buildFooterColumns(
   // category shows up here automatically.
   const calcLeads = (calculators?.groups ?? []).map((group) => group.items[0]).filter(Boolean).slice(0, 5);
 
-  return [
+  const extraColumns = extraNavHrefs
+    .map((href) => find(href))
+    .filter((item): item is NavItem => Boolean(item))
+    .map((item) => ({ title: item.label, items: [{ label: item.label, href: item.href }] }));
+
+  const columns = [
     { title: "Services", items: childrenOf("/services") },
     { title: "Resources", items: childrenOf(resourcesHref) },
     {
       title: "Calculators",
       items: [...calcLeads, { label: "All calculators", href: "/calculators" }],
     },
+    ...extraColumns,
     { title: "Company", items: companyItems },
   ].filter((column) => column.items.length > 0);
+
+  // One register of hrefs across every footer link, columns included: no
+  // href appears twice in the footer regardless of which list it came from
+  // (companyItems, a column built from nav, or the legal footerLinks row).
+  const seenHrefs = new Set(columns.flatMap((column) => column.items.map((item) => item.href)));
+  const dedupedFooterLinks = footerLinks.filter((item) => {
+    if (seenHrefs.has(item.href)) return false;
+    seenHrefs.add(item.href);
+    return true;
+  });
+
+  return { columns, footerLinks: dedupedFooterLinks };
 }
 
 export function SiteFooter({
@@ -130,9 +167,16 @@ export function SiteFooter({
   resourcesHref = DEFAULT_RESOURCES_HREF,
   companyItems = DEFAULT_COMPANY_ITEMS,
   showBuilderCredit = true,
+  extraNavHrefs = [],
 }: SiteFooterProps) {
   const year = new Date().getFullYear();
-  const columns = buildFooterColumns(nav ?? fallbackNav ?? [], resourcesHref, companyItems);
+  const { columns, footerLinks: dedupedFooterLinks } = buildFooterColumns(
+    nav ?? fallbackNav ?? [],
+    resourcesHref,
+    companyItems,
+    extraNavHrefs,
+    footerLinks,
+  );
   const homeLabel = `${wordmarkTop} ${wordmarkBottom}, home`;
   return (
     <footer className="relative overflow-hidden bg-slate-900 text-white">
@@ -196,7 +240,7 @@ export function SiteFooter({
           {/* Legal/secondary row. `footer_links` is now scoped to exactly these:
               the primary link columns above come from the nav. */}
           <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            {footerLinks.map((item) => (
+            {dedupedFooterLinks.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}

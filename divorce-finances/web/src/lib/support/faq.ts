@@ -19,7 +19,7 @@ export const GENERIC: Faq[] = [
   },
   {
     q: "Is the first call free?",
-    a: "Yes. The initial conversation to understand your situation and point you in the right direction is free, with no obligation.",
+    a: "Yes. The initial conversation to understand your situation and work through where you stand is free, with no obligation.",
   },
   {
     q: "What should I have ready?",

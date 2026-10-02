@@ -124,7 +124,7 @@ keyTakeaways:
 
 <h2>PAYE Dividends Multiple Directors Agency: A Worked Example</h2>
 
-<p>Let's run through a real scenario. A digital agency in Manchester has three directors:</p>
+<p>Let's run through an illustrative scenario. A digital agency in Manchester has three directors:</p>
 
 <ul>
 <li>Sarah, 50% shares, works full-time as Managing Director</li>

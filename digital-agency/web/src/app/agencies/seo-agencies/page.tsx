@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "What is the most tax-efficient way to pay myself as an SEO agency founder?",
-    a: "The standard approach for limited company founders is a salary to the National Insurance primary threshold (£12,570 in 2025/26) and dividends for the remainder. Employer pension contributions from the company are often more efficient for higher earners. The exact optimal split depends on your total income, other sources of income, and any pension contributions. We model this individually each year.",
+    a: "The standard approach for limited company founders is a salary to the National Insurance primary threshold (£12,570 in 2026/27) and dividends for the remainder. Employer pension contributions from the company are often more efficient for higher earners. The exact optimal split depends on your total income, other sources of income, and any pension contributions. We model this individually each year.",
   },
 ];
 

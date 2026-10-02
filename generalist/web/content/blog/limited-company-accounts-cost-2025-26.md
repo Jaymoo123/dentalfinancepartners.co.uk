@@ -155,7 +155,7 @@ keyTakeaways:
 
 <p>Our typical range for a straightforward limited company with one director and turnover under £100k is between £600 and £900 a year. That includes the accounts, CT600, confirmation statement, and year end tax planning advice. If you need payroll, VAT, or director self assessment, we add those at transparent, pre-agreed rates.</p>
 
-<p>If you want a quote for your company, <a href="/contact">contact us</a>. We will ask about your turnover, transaction volume, and record keeping. Then we will give you a fixed fee in writing. No surprises.</p>
+<p>If you want a quote for your company, <a href="/contact">contact us</a>. We will ask about your turnover, transaction volume, and record keeping. Then we will give you a clear quote. No surprises.</p>
 
 <h2>Final Thoughts</h2>
 

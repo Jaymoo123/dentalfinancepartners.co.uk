@@ -44,7 +44,7 @@ export default function ServicesPage() {
         <div className={siteContainerLg}>
           <h2 className="text-2xl font-bold text-neutral-900">Not sure where to start?</h2>
           <p className="mt-3 max-w-2xl text-neutral-600">
-            Tell us about your situation and a specialist will point you in the right direction.
+            Tell us about your situation and one of our divorce finance specialists will work through it with you.
             Free, with no obligation.
           </p>
           <Link href="/contact" className={`${btnPrimary} mt-6 inline-flex`}>

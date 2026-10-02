@@ -52,7 +52,7 @@ const complianceAreas = [
   },
   {
     title: "Breach prevention",
-    description: "Proactive monitoring and guidance to prevent SRA Accounts Rules breaches. We help you implement proper controls and procedures to protect your practicing certificate.",
+    description: "Proactive monitoring and guidance to prevent SRA Accounts Rules breaches. We help you implement proper controls and procedures to protect your practising certificate.",
   },
   {
     title: "Client ledger management",
@@ -102,7 +102,7 @@ export default function SRACompliancePage() {
               SRA Accounts Rules compliance and trust accounting
             </h1>
             <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
-              Expert client money management, trust accounting, and SRA compliance for solicitors and law firms. We ensure your client accounts meet regulatory standards and protect your practicing certificate.
+              Expert client money management, trust accounting, and SRA compliance for solicitors and law firms. We ensure your client accounts meet regulatory standards and protect your practising certificate.
             </p>
             <div className="mt-8">
               <Link href="/contact" className={btnOnDark}>

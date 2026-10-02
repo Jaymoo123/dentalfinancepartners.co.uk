@@ -99,7 +99,7 @@ keyTakeaways:
 
 <p><strong>Overhead Rate (%) = (Total Overhead Costs / Total Revenue) x 100</strong></p>
 
-<p>Let me walk through a real example. Say you run a 12-person digital agency billing £800,000 per year.</p>
+<p>Let me walk through a worked example. Say you run a 12-person digital agency billing £800,000 per year.</p>
 
 <p>Your overhead costs for the last 12 months might look like this:</p>
 

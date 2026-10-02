@@ -28,7 +28,7 @@ faqs:
 - question: What is the difference between simplified expenses and actual costs for a home office?
   answer: Simplified expenses use HMRC's flat rates based on hours worked from home per month. Maximum claim is £312 per year. Actual costs involve calculating the business proportion of your actual household bills. For most sole traders with a dedicated home office, actual costs produce a higher claim. Simplified expenses are simpler but often lower. You choose whichever method you prefer, though most sole traders with a dedicated room find actual costs produce a larger deduction.
 metaTitle_prev: 'Allowable Expenses Sole Trader: 2025/26 Deductions Checklist'
-metaDescription_prev: Full list of allowable expenses for sole traders in 2025/26. Covers home office, vehicle, equipment, travel, and software. Real examples with HMRC rules.
+metaDescription_prev: Full list of allowable expenses for sole traders in 2025/26. Covers home office, vehicle, equipment, travel, and software. worked examples with HMRC rules.
 dateModified: '2026-06-12'
 reviewedBy: Holloway Davies Editorial Team
 reviewerCredentials: Reviewed against legislation.gov.uk and HMRC guidance
@@ -154,7 +154,7 @@ keyTakeaways:
 
 <p>For most sole traders with a dedicated home office, the actual cost method gives a higher claim than simplified expenses. It takes more record-keeping. But it is usually worth it.</p>
 
-<p>Let us run a real example. A freelance graphic designer in Bristol works from a spare bedroom that is 12 square metres. Her house is 100 square metres. That is 12% of the floor area. Her annual gas and electricity bill is £1,800. Her council tax is £2,400. Her internet is £360. Her home insurance is £200. Total relevant bills: £4,760. 12% of that is £571.20. That is £259 more than the simplified expenses rate. Over a few years, that adds up.</p>
+<p>Let us run a worked example. A freelance graphic designer in Bristol works from a spare bedroom that is 12 square metres. Her house is 100 square metres. That is 12% of the floor area. Her annual gas and electricity bill is £1,800. Her council tax is £2,400. Her internet is £360. Her home insurance is £200. Total relevant bills: £4,760. 12% of that is £571.20. That is £259 more than the simplified expenses rate. Over a few years, that adds up.</p>
 
 <h2>Vehicle Expenses: Mileage vs Actual Costs</h2>
 

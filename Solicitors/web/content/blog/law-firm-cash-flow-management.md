@@ -56,7 +56,7 @@ faqs:
 
 <p>Many solicitors dislike chasing payments, but systematic collection processes are essential for law firm cash flow management.</p>
 
-<p><strong>Age debt weekly:</strong> Review outstanding bills every week, categorizing by age (0-30 days, 30-60 days, 60+ days). Focus collection efforts on the oldest debts first.</p>
+<p><strong>Age debt weekly:</strong> Review outstanding bills every week, categorising by age (0-30 days, 30-60 days, 60+ days). Focus collection efforts on the oldest debts first.</p>
 
 <p><strong>Collection sequence:</strong> Develop a consistent approach - email reminder after 7 days overdue, phone call after 14 days, formal letter after 30 days, and cease work after 45 days unless payment arrangements are made.</p>
 

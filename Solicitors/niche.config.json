@@ -6,7 +6,7 @@
     "howItWorks": [
       "You tell us your situation through the enquiry form: what your practice is and what you need looked at.",
       "One of our accountants calls you to go through it and answer the immediate questions.",
-      "We agree the scope and a fixed fee in writing before any work starts.",
+      "We agree the scope and the fee before any work starts.",
       "We do the work, deal with HMRC and Companies House on your behalf, and keep you ahead of your deadlines."
     ],
     "next": "We reply within 24 hours and one of our accountants comes back to you directly."
@@ -32,8 +32,8 @@
     "privacy_policy_url": null
   },
   "domain": "www.accountsforlawyers.co.uk",
-  "tagline": "Specialist accountancy matching for UK solicitors and law firms",
-  "description": "We connect solicitors, law firms and legal practitioners with regulated accountancy firms that specialise in the legal sector. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
+  "tagline": "Specialist accountants for UK solicitors and law firms",
+  "description": "Specialist accountants for solicitors, law firms and legal practitioners. SRA Accounts Rules compliance, trust accounting, partnership tax, LLP conversion, and practice succession planning. Trusted by legal professionals across the UK.",
   "brand": {
     "primary_color": "#c41e3a",
     "accent_color": "#475569",
@@ -224,7 +224,7 @@
     "theme_color": "#c41e3a",
     "homepage_title": "Accountant for Solicitors UK | Specialist Law Firm Accountants",
     "homepage_h1": "Specialist Accountants for Solicitors & Law Firms",
-    "homepage_description": "We connect UK solicitors and law firms with specialist accountancy firms. SRA compliance, trust accounting, partnership tax, LLP conversion advice. Book free consultation with legal sector specialists."
+    "homepage_description": "Specialist accountants for UK solicitors and law firms. SRA compliance, trust accounting, partnership tax, LLP conversion advice. Book free consultation with legal sector specialists."
   },
   "lead_form": {
     "role_label": "I am a...",

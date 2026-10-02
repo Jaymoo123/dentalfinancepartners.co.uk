@@ -7,7 +7,7 @@ const data: AudienceStage = {
   title: "Accountants for UK Solicitor Partners and LLP Members",
   metaTitle: "Accountants for UK Solicitor Partners | LLP + Partnership Tax",
   metaDescription:
-    "Specialist accountancy matching for UK solicitor partners. LLP profit allocation, FA 2014 Salaried Member audit, partner self-assessment, BADR pre-sale planning.",
+    "Specialist accountants for UK solicitor partners. LLP profit allocation, FA 2014 Salaried Member audit, partner self-assessment, BADR pre-sale planning.",
   eyebrow: "For partners and LLP members",
   badge: "Equity partners · Fixed-share · Salaried · Senior associates approaching equity",
   heroHeading: "Tax and structural work for solicitor partners",

@@ -160,7 +160,7 @@ keyTakeaways:
 <li>Are you ACCA qualified or a member of a recognised professional body? Qualified firms are regulated and carry professional indemnity insurance.</li>
 </ul>
 
-<p>A good accountant should be able to give you a fixed fee in writing before you start. If they cannot, ask why. Most reputable firms will quote a fixed annual fee for a defined scope of work.</p>
+<p>A good accountant should be able to give you a clear quote before you start. If they cannot, ask why. Most reputable firms will quote a fixed annual fee for a defined scope of work.</p>
 
 <h2>Regional Variations in Accountant Fees</h2>
 

@@ -77,7 +77,7 @@ keyTakeaways:
 
 <h2>Step 3: Model your seasonal revenue dip with specific numbers</h2>
 <p>Here is where most agency forecasts fall apart. They assume revenue is steady month to month. For a creative agency with seasonal client work, that assumption is dangerous.</p>
-<p>Take a real example. A Bristol-based branding agency we work with has the following revenue pattern:</p>
+<p>Take an illustrative example. A Bristol-based branding agency has the following revenue pattern:</p>
 <ul>
 <li>September to December: £95,000, £110,000, £130,000, £85,000 (December dips because clients shut down early)</li>
 <li>January: £28,000. That is not a typo. January is dead. Clients are planning, not spending.</li>

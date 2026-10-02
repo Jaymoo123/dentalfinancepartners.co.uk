@@ -156,7 +156,7 @@ keyTakeaways:
 
 <h2>What a Good Accountant Saves You</h2>
 
-<p>Let's use a real example. A wedding photographer in Bristol earning £65,000 profit as a sole trader in 2025/26. They are paying roughly £15,990 in income tax and Class 4 NIC. Their accountant charges £1,200 per year.</p>
+<p>Let's use a worked example. A wedding photographer in Bristol earning £65,000 profit as a sole trader in 2025/26. They are paying roughly £15,990 in income tax and Class 4 NIC. Their accountant charges £1,200 per year.</p>
 
 <p>Switch to a limited company and corporation tax on £65,000 is £13,475 after marginal relief (2025/26). Add the personal tax on extracting the profit as salary and dividends and the structure saving on full extraction is marginal at current rates; it grows if you retain profit in the company or extract through employer pension contributions.</p>
 

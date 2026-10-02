@@ -93,7 +93,7 @@ keyTakeaways:
 
 <p>For commercial property, the gain is reported on your Self Assessment tax return (SA100) by 31 January after the tax year of disposal. You pay the tax as part of your balancing payment on 31 January, with payments on account if applicable.</p>
 
-<p>A client of ours sold a commercial unit in Glasgow in June 2025. The gain was reported on their 2025/26 Self Assessment, due by 31 January 2027. They did not need to file a 60-day return. If they had sold a residential investment property in the same month, they would have needed to file the 60-day return by August 2025.</p>
+<p>Take an investor who sells a commercial unit in June 2025. The gain is reported on their 2025/26 Self Assessment, due by 31 January 2027. They do not need to file a 60-day return. If they had sold a residential investment property in the same month, they would have needed to file the 60-day return by August 2025.</p>
 
 <h2>Business Asset Disposal Relief and Property</h2>
 

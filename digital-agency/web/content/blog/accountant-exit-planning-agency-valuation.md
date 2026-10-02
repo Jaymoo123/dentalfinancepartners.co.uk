@@ -60,7 +60,7 @@ keyTakeaways:
 
 <p>Here is why. BADR (Business Asset Disposal Relief) requires you to hold shares for at least two years before sale. That is the tax side. But the commercial side takes longer. Cleaning up your balance sheet, restructuring your director's loan account, and building a management team that can operate without you all take time.</p>
 
-<p>I worked with a Bristol-based digital agency founder who wanted to sell in 18 months. His director's loan account was £47,000 overdrawn. He had two clients representing 65% of revenue. His gross margin had bounced between 42% and 58% over three years. We could not fix all of that in 18 months. We fixed what we could, but the buyer discounted heavily for the client concentration. He sold at 3.2x instead of the 5x he wanted. That cost him roughly £400,000.</p>
+<p>Take a digital agency founder who wants to sell in 18 months. The director's loan account is £47,000 overdrawn. Two clients represent 65% of revenue. Gross margin has bounced between 42% and 58% over three years. Not all of that can be fixed in 18 months. The buyer discounts heavily for the client concentration, and the founder sells at 3.2x instead of the 5x they wanted. That costs roughly £400,000.</p>
 
 <p>Start early. Your accountant can model the timeline for you.</p>
 

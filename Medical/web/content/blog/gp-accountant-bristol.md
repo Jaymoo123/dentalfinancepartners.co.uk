@@ -18,7 +18,7 @@ altText: "Bristol GP practice accountant meeting with medical professionals to d
 h1: "GP Accountant in Bristol: Specialist Tax and Accounting for Doctors"
 keyTakeaways:
 - "NHS GP goodwill cannot be sold (prohibited since 1 April 2004, currently under SI 2019/251), so a Bristol practice entry or exit is priced on tangible assets and capital accounts, not a goodwill multiple."
-- "The 2025/26 NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income over £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor."
+- "The 2026/27 NHS pension annual allowance is £60,000, tapering by £1 for every £2 of adjusted income over £260,000 (where threshold income also exceeds £200,000) down to a £10,000 floor."
 - "For the NHS defined-benefit scheme the measure is your pension input amount (the capitalised growth in your benefits), not the contributions deducted from your pay, so a pay rise or step up to partner can generate input well above what reaches your bank account."
 - "Mandatory Scheme Pays is available where the charge exceeds £2,000 and your NHS pension input exceeds the £60,000 allowance, with the election due by 31 July in the year after the charge year (a 2025/26 charge by 31 July 2027)."
 - "Making Tax Digital for Income Tax started on 6 April 2026 for sole traders and landlords with qualifying income over £50,000, so most full-time Bristol locums and unincorporated private GPs are in scope, while limited companies are out and general partnerships are deferred."
@@ -26,7 +26,7 @@ summary: "Looking for a GP accountant in Bristol? We help partners, salaried GPs
 schema: ""
 faqs:
   - question: "What does a specialist GP accountant in Bristol do that a general accountant does not?"
-    answer: "A GP accountant in Bristol understands medicine-specific issues that a high-street firm rarely sees: the NHS pension annual allowance (£60,000 for 2025/26, tapering where threshold income is over £200,000 and adjusted income over £260,000), GP partnership profit sharing, the Type 1 and Type 2 pension certificates, Global Sum and Carr-Hill weighting, QOF and PCN income, and the interaction between NHS and private earnings. They also know that NHS GP goodwill cannot be sold, so a Bristol practice transaction turns on tangible assets, premises and capital accounts rather than a goodwill multiple."
+    answer: "A GP accountant in Bristol understands medicine-specific issues that a high-street firm rarely sees: the NHS pension annual allowance (£60,000 for 2026/27, tapering where threshold income is over £200,000 and adjusted income over £260,000), GP partnership profit sharing, the Type 1 and Type 2 pension certificates, Global Sum and Carr-Hill weighting, QOF and PCN income, and the interaction between NHS and private earnings. They also know that NHS GP goodwill cannot be sold, so a Bristol practice transaction turns on tangible assets, premises and capital accounts rather than a goodwill multiple."
   - question: "Should a Bristol GP partnership use a medical accountant?"
     answer: "Yes. Bristol GP partnerships carry complex profit sharing, varying tax positions per partner, premises arrangements and NHS pension certification (the Type 1 Annual Certificate of Pensionable Profits) that general practice accounting often gets wrong. A medical accountant prepares compliant partnership accounts (the SA800), allocates profit so each partner's share flows correctly to their own return, and flags annual allowance risk before it becomes a charge rather than after."
   - question: "Can a GP accountant in Bristol help with NHS pension annual allowance charges?"
@@ -49,7 +49,7 @@ faqs:
 
 <h2>NHS Pension Annual Allowance for Bristol GPs and Consultants</h2>
 
-<p>The NHS pension annual allowance is the single issue that catches most successful Bristol doctors. For 2025/26 the standard annual allowance is <strong>£60,000</strong>. It tapers where your <strong>threshold income exceeds £200,000 and your adjusted income exceeds £260,000</strong>, reducing by £1 for every £2 of adjusted income above £260,000, down to a floor of <strong>£10,000</strong>. The money purchase annual allowance, relevant where you flexibly access a defined-contribution AVC, is also <strong>£10,000</strong>.</p>
+<p>The NHS pension annual allowance is the single issue that catches most successful Bristol doctors. For 2026/27 the standard annual allowance is <strong>£60,000</strong>. It tapers where your <strong>threshold income exceeds £200,000 and your adjusted income exceeds £260,000</strong>, reducing by £1 for every £2 of adjusted income above £260,000, down to a floor of <strong>£10,000</strong>. The money purchase annual allowance, relevant where you flexibly access a defined-contribution AVC, is also <strong>£10,000</strong>.</p>
 
 <p>For a defined-benefit scheme like the NHS scheme, the measure is your <strong>pension input amount</strong>, the capitalised growth in your benefits over the year, not the contributions deducted from your pay. That distinction surprises many doctors, because a good pay rise or a step up to partner can generate input well above what landed in your bank account. Unused allowance can be carried forward from the previous three tax years, current year first.</p>
 

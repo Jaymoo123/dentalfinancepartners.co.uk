@@ -50,7 +50,7 @@ keyTakeaways:
 
 <h3>You Are Selling a Property That Has Increased in Value</h3>
 
-<p>Capital gains tax on residential property is charged at 18% for basic rate taxpayers and 24% for higher rate taxpayers. If you sell a buy-to-let in Leeds city centre that has gone up by £80,000, the CGT bill is £19,200 at the higher rate. A property tax advisor can review whether you have claimed all allowable costs: the initial SDLT, legal fees on purchase, capital improvements (not repairs), estate agent fees, and legal fees on sale. Missing one of these costs a client of ours £3,400 in overpaid tax.</p>
+<p>Capital gains tax on residential property is charged at 18% for basic rate taxpayers and 24% for higher rate taxpayers. If you sell a buy-to-let in Leeds city centre that has gone up by £80,000, the CGT bill is £19,200 at the higher rate. A property tax advisor can review whether you have claimed all allowable costs: the initial SDLT, legal fees on purchase, capital improvements (not repairs), estate agent fees, and legal fees on sale. Missing one of these can easily cost £3,400 in overpaid tax.</p>
 
 <p>If the property was your main residence at any point, you may qualify for private residence relief and the final 9 months of ownership exemption. A property tax advisor calculates that correctly.</p>
 

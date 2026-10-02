@@ -733,7 +733,7 @@ export default function LandlordAccountantPage() {
       <div id="book" className="scroll-mt-24">
         <LeadCTAPanel
           title="Speak to an accountant who only works with landlords"
-          description="Tell us what you own and how it is held. We will look at what it is costing you, then quote a fixed fee in writing."
+          description="Tell us what you own and how it is held. We will look at what it is costing you, then quote a clear fee."
           proofPoints={[
             { title: "Landlord specialists only", detail: "Rental income, Section 24 and MTD every day" },
             { title: "Fixed fees, quoted upfront", detail: "No hourly billing, no surprise invoices" },

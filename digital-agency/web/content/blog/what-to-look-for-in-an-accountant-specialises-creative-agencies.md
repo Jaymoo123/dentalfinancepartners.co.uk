@@ -59,7 +59,7 @@ keyTakeaways:
 <li>Do you understand utilisation rates, billable hours, and retainer profitability?</li>
 </ul>
 
-<p>A firm that genuinely works with agencies will answer those questions without hesitation. They will talk about specific scenarios, not general principles. They will mention things like "we helped a 15-person digital agency in Manchester Northern Quarter move from 45% gross margin to 62% over 18 months by restructuring their contractor agreements."</p>
+<p>A firm that genuinely works with agencies will answer those questions without hesitation. They will talk about specific scenarios, not general principles. They will mention things like "a 15-person digital agency in Manchester Northern Quarter moving from 45% gross margin to 62% over 18 months by restructuring their contractor agreements."</p>
 
 <p>If the answers are vague or generic, move on.</p>
 

@@ -112,7 +112,7 @@ keyTakeaways:
 
 <p>This catches single-director companies where the director takes dividends only. If you are in this position and claiming R&D credits above £20,000, you need to review your approach. Paying yourself a salary through payroll would increase your cap, but the salary itself has tax and NI costs. The maths needs to stack up.</p>
 
-<p>We worked with a Bristol-based tech startup that had one director on dividends only. Their R&D claim was £85,000. The cap was £20,000. They lost £65,000 of the credit. We restructured the director’s remuneration to include a salary of £30,000, which raised the cap to £110,000. The salary cost them about £3,500 in employer NI, but they recovered the full £85,000 credit. The net gain was significant.</p>
+<p>Take a tech startup with one director on dividends only. Their R&D claim is £85,000. The cap is £20,000. They lose £65,000 of the credit. Restructuring the director’s remuneration to include a salary of £30,000 raises the cap to £110,000. The salary costs them about £3,500 in employer NI, but they recover the full £85,000 credit. The net gain is significant.</p>
 
 <h2>Does The Cap Apply To RDEC Claims?</h2>
 

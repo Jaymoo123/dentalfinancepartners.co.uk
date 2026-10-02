@@ -75,7 +75,7 @@ export const sraClientAccountConfig: PremiumToolConfig = {
       max: 10000000,
       step: 500,
       advanced: true,
-      help: "Drives the Rule 12.2 exemption test: average not exceeding £10,000 (HP §5.G)",
+      help: "Drives the Rule 12.2 exemption test: average not exceeding £10,000",
     },
     {
       id: "maxBalance",
@@ -86,7 +86,7 @@ export const sraClientAccountConfig: PremiumToolConfig = {
       max: 100000000,
       step: 10000,
       advanced: true,
-      help: "Drives the Rule 12.2 exemption test: maximum not exceeding £250,000 (HP §5.G)",
+      help: "Drives the Rule 12.2 exemption test: maximum not exceeding £250,000",
     },
   ],
   compute({ values }): PremiumResult {
@@ -135,7 +135,7 @@ export const sraClientAccountConfig: PremiumToolConfig = {
         exemptionRow,
       ],
       chart: { data: chartData },
-      note: "The SRA Accounts Rules do not mandate a firm-side reserve: this is an operational risk-sizing estimate only. Client money is not the firm's income. The Rule 3.3 banking-facility prohibition (every payment must relate to regulated services) and the Rule 8.3 five-weekly reconciliation (signed off by the COFA or a manager) are the real compliance controls. Reserve decisions belong to the firm's COFA and its specialist accountant. The Rule 12.2 accountant's-report exemption applies where the average client-account balance in the period did not exceed £10,000 AND the maximum did not exceed £250,000 (HP §5.G): both conditions must be met. A firm that holds NO client money at all during an accounting period does not meet the Rule 12.1 report trigger and needs no report. These are estimates, not regulatory advice.",
+      note: "The SRA Accounts Rules do not mandate a firm-side reserve: this is an operational risk-sizing estimate only. Client money is not the firm's income. The Rule 3.3 banking-facility prohibition (every payment must relate to regulated services) and the Rule 8.3 five-weekly reconciliation (signed off by the COFA or a manager) are the real compliance controls. Reserve decisions belong to the firm's COFA and its specialist accountant. The Rule 12.2 accountant's-report exemption applies where the average client-account balance in the period did not exceed £10,000 AND the maximum did not exceed £250,000: both conditions must be met. A firm that holds NO client money at all during an accounting period does not meet the Rule 12.1 report trigger and needs no report. These are estimates, not regulatory advice.",
     };
   },
   chart: {
@@ -149,7 +149,7 @@ export const sraClientAccountConfig: PremiumToolConfig = {
     heading: "What this planner estimates",
     paragraphs: [
       "The SRA Accounts Rules 2019 do not require firms to hold a specific reserve against client money. However, a prudent operational buffer covers: shortfalls discovered at the five-weekly reconciliation (Rule 8.3) that need to be funded from the office account pending investigation, residual balances awaiting return to clients, and contingency for client-money interest payments (Rule 7). The planner estimates peak exposure (matters multiplied by the typical balance per volume band) and applies a risk factor by matter type. Conveyancing attracts the highest factor because of fraud risk, fund misdirection and Land Registry completion errors.",
-      "The Rule 12.2 accountant's-report exemption is separate from the reserve question. A firm that held client money during the accounting period must obtain an accountant's report (Rule 12.1), UNLESS both conditions of the Rule 12.2 exemption are met: the average client-account balance in the period did not exceed £10,000 AND the maximum did not exceed £250,000 (HP §5.G). A firm that holds no client money at all does not meet the Rule 12.1 trigger and needs no report.",
+      "The Rule 12.2 accountant's-report exemption is separate from the reserve question. A firm that held client money during the accounting period must obtain an accountant's report (Rule 12.1), UNLESS both conditions of the Rule 12.2 exemption are met: the average client-account balance in the period did not exceed £10,000 AND the maximum did not exceed £250,000. A firm that holds no client money at all does not meet the Rule 12.1 trigger and needs no report.",
       "The COFA (Compliance Officer for Finance and Administration) carries primary responsibility for SRA Accounts Rules compliance. Reserve sizing decisions should involve the COFA and the firm's specialist accountant, taking account of the firm's actual reconciliation history, matter profile and risk appetite.",
     ],
   },

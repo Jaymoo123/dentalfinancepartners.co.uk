@@ -109,7 +109,7 @@ faqs:
 <p>Effective working capital management can reduce external financing needs and improve practice profitability.</p>
 
 <h3>Client Money Management</h3>
-<p>Proper client money handling under <a href="/sra-compliance">SRA Accounts Rules</a> ensures compliance while optimizing interest earnings. Rule 7.1 requires firms to account to clients for a fair sum of interest on client money (the 2019 rules set no monetary threshold), and practices can still negotiate their own deposit rates with banks within that duty.</p>
+<p>Proper client money handling under <a href="/sra-compliance">SRA Accounts Rules</a> ensures compliance while optimising interest earnings. Rule 7.1 requires firms to account to clients for a fair sum of interest on client money (the 2019 rules set no monetary threshold), and practices can still negotiate their own deposit rates with banks within that duty.</p>
 
 <p>Client money float provides temporary working capital as payments clear, but practices must ensure sufficient liquid funds to meet client money obligations at all times.</p>
 
@@ -139,10 +139,10 @@ faqs:
 <h3>Start-Up Practices</h3>
 <p>New practices typically combine personal funds, bank loans secured on personal assets, and flexible overdraft facilities. Start-up grants and professional body loan schemes may also be available.</p>
 
-<p>Early-stage practices should prioritize flexibility over cost, as cash flow patterns are unpredictable and growth requirements uncertain.</p>
+<p>Early-stage practices should prioritise flexibility over cost, as cash flow patterns are unpredictable and growth requirements uncertain.</p>
 
 <h3>Established Practices</h3>
-<p>Established practices can access the full range of <strong>solicitor practice finance options</strong>, allowing them to optimize cost and terms. A typical structure might include core bank facilities, asset-based lending for working capital, and specialist equipment finance.</p>
+<p>Established practices can access the full range of <strong>solicitor practice finance options</strong>, allowing them to optimise cost and terms. A typical structure might include core bank facilities, asset-based lending for working capital, and specialist equipment finance.</p>
 
 <p>Larger practices often negotiate package deals combining multiple products with preferential pricing and relationship benefits.</p>
 
@@ -162,7 +162,7 @@ faqs:
 
 <p>Understanding the full range of <strong>solicitor practice finance options</strong> available helps law firms make informed decisions about funding their operations and growth. Each option has distinct characteristics suited to different circumstances, and most successful practices use a combination of funding sources tailored to their specific needs.</p>
 
-<p>When selecting financing arrangements, consider not just cost and availability, but also regulatory compliance, flexibility, and the lender's understanding of legal sector requirements. Professional advice from specialist solicitor accountants can help optimize your funding structure and ensure compliance with regulatory requirements.</p>
+<p>When selecting financing arrangements, consider not just cost and availability, but also regulatory compliance, flexibility, and the lender's understanding of legal sector requirements. Professional advice from specialist solicitor accountants can help optimise your funding structure and ensure compliance with regulatory requirements.</p>
 
 <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary); background-color: var(--surface); border-radius: 0.5rem;">
 <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.5rem;">📚 Related Guide</p>

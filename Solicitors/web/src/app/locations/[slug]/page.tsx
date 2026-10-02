@@ -70,7 +70,7 @@ const cityContent: Record<string, {
       },
       {
         title: "Partnership & LLP tax",
-        desc: "For London law firms with complex partnership structures or considering LLP conversion, we handle partnership tax returns, profit allocations, and structure optimization advice.",
+        desc: "For London law firms with complex partnership structures or considering LLP conversion, we handle partnership tax returns, profit allocations, and structure optimisation advice.",
       },
       {
         title: "Practice succession planning",
@@ -93,7 +93,7 @@ const cityContent: Record<string, {
       },
       {
         title: "Sole practitioner tax",
-        desc: "Manchester sole practitioners need reliable self-assessment and MTD compliance support. We handle tax returns, expense optimization, and quarterly submissions.",
+        desc: "Manchester sole practitioners need reliable self-assessment and MTD compliance support. We handle tax returns, expense optimisation, and quarterly submissions.",
       },
     ],
   },
@@ -108,7 +108,7 @@ const cityContent: Record<string, {
       },
       {
         title: "Partnership & LLP tax",
-        desc: "For Birmingham law firms with partnership or LLP structures, we handle tax returns, profit allocations, and structure optimization advice.",
+        desc: "For Birmingham law firms with partnership or LLP structures, we handle tax returns, profit allocations, and structure optimisation advice.",
       },
       {
         title: "Practice finance & cash flow",
@@ -146,7 +146,7 @@ const cityContent: Record<string, {
       },
       {
         title: "Partnership & LLP tax",
-        desc: "For Bristol law firms managing partnership taxation or LLP structures, we handle tax returns, profit allocations, and structure optimization.",
+        desc: "For Bristol law firms managing partnership taxation or LLP structures, we handle tax returns, profit allocations, and structure optimisation.",
       },
       {
         title: "Practice succession planning",

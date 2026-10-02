@@ -68,7 +68,6 @@ const PINNED = [
   // placement/goal to an existing id would split a locked baseline triple
   // (trap 22). Goal is `form` because the destination is an on-page form
   // anchor, per this site's taxonomy; `lead` is for a CTA that leaves the page.
-  "src/app/calculators/[slug]/page.tsx|calc_hero_help|hero|form",
   // Phase 2 / WP-B5, ADDITIVE. /blog made no ask at all: 110 sessions, 42 form
   // views, 0 completions over 19 days. A new id splits no existing history, so
   // the five baseline triples are untouched. Placement/goal follow the site's

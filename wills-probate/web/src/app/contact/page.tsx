@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: { absolute: `Contact ${siteConfig.name}` },
-  description: `Get in touch with ${siteConfig.name}. Questions, corrections, or a request to speak to one of our specialists. We reply within two working days.`,
+  description: `Get in touch with ${siteConfig.name}. Questions, corrections, or a request to speak to one of our specialists. We reply within one working day.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
 };
 
@@ -31,12 +31,12 @@ export default function ContactPage() {
             <div className="min-w-0">
               <h2 className="text-2xl font-semibold tracking-tight">What happens next</h2>
               <ul className="mt-8 space-y-6 text-base leading-relaxed text-neutral-600">
-                <li>We read every message and aim to reply within two working days.</li>
+                <li>We read every message and reply within one working day.</li>
                 <li>
-                  If you have asked to speak to a specialist, one of our estate planning specialists suited to your situation will contact you directly, usually within a few working days. Where you need a solicitor for the legal side, we work alongside a regulated firm and stay on the money side.
+                  If you have asked to speak to a specialist, one of our estate planning specialists suited to your situation will contact you directly. Where you need a solicitor for the legal side, we work alongside a regulated firm and stay on the money side.
                 </li>
                 <li>
-                  We cannot answer questions about your personal legal or tax position. That is what a call with one of our specialists is for.
+                  We cannot answer questions about your personal legal position by email. A call with one of our specialists covers your tax position.
                 </li>
               </ul>
 

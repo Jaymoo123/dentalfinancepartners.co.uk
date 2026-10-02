@@ -39,12 +39,10 @@ const wordmark = {
   wordmarkBottom: WORDMARK_BOTTOM,
 };
 
-// The old local footer carried this editorial-scope line next to the copyright
-// and the kit has no slot for it. Site identity wording is an open owner
-// decision, so it is carried over verbatim on the legal disclosure rather than
-// being dropped or reworded.
+// Firm tagline appended to the legal disclosure (the kit footer has no
+// separate slot for it). Firm voice per the 2026-09-28 owner ruling.
 const IDENTITY_LINE =
-  "Charity accounts and compliance research. Editorial content only. Send an enquiry about your own organisation.";
+  "Specialist accountants for charities, CICs and social enterprises. Free guides and calculators, and a call with one of our specialists about your own organisation.";
 
 export function PageShell({ children, nav }: { children: ReactNode; nav?: NavItem[] }) {
   return (

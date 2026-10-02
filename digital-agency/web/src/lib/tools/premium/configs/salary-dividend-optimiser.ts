@@ -52,7 +52,7 @@ export const salaryDividendOptimiserConfig: PremiumToolConfig = {
       label: "Claim the Employment Allowance",
       type: "toggle",
       default: false,
-      help: "The Employment Allowance is not available to a company whose only employee is a single director. Most solo founder-director agencies cannot claim it (HP §2). Switch on only if you employ someone other than a single director.",
+      help: "The Employment Allowance is not available to a company whose only employee is a single director. Most solo founder-director agencies cannot claim it. Switch on only if you employ someone other than a single director.",
     },
   ],
   compute({ values }): PremiumResult {
@@ -120,7 +120,7 @@ export const salaryDividendOptimiserConfig: PremiumToolConfig = {
           { name: "Dividend only", netCash: Math.round(r.dividendOnly.netCash), totalTax: Math.round(r.dividendOnly.totalTax) },
         ],
       },
-      note: "2026/27 basis: dividends taxed at 10.75% / 35.75% / 39.35% plus the £500 dividend allowance (FA 2026 s.4, HP §3). Employer NIC 15% above the £5,000 secondary threshold from 6 April 2025 (HP §2). EA £10,500 is not available to a company whose only employee is a single director (HP §2). Corporation tax 19% up to £50,000 / 25% main rate above £250,000 (marginal rate ~26.5% in the taper band). Personal allowance £12,570. These are estimates based on the profit figure entered and do not constitute advice for your company.",
+      note: "2026/27 basis: dividends taxed at 10.75% / 35.75% / 39.35% plus the £500 dividend allowance (FA 2026 s.4). Employer NIC 15% above the £5,000 secondary threshold from 6 April 2025. EA £10,500 is not available to a company whose only employee is a single director. Corporation tax 19% up to £50,000 / 25% main rate above £250,000 (marginal rate ~26.5% in the taper band). Personal allowance £12,570. These are estimates based on the profit figure entered and do not constitute advice for your company.",
     };
   },
   chart: {

@@ -83,7 +83,7 @@ howToSteps:
 
 <p>The standard fraction for 2025/26 is 3/200 (0.015). The upper limit is £250,000 (or the relevant proportion with associated companies).</p>
 
-<p>Let's work through a real example.</p>
+<p>Let's work through a worked example.</p>
 
 <h3>Worked Example: Camden Consultancy Ltd</h3>
 

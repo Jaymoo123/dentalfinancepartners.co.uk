@@ -76,7 +76,7 @@ export default async function CalculatorToolPage({ params }: Props) {
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {tool.name}
             </h1>
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg">{tool.intro}</p>
+            {/* tool.intro is rendered by the kit Calculator below; not repeated here. */}
           </div>
         </div>
       </section>

@@ -72,7 +72,7 @@ keyTakeaways:
 
 <p>Developing automated bidding algorithms, predictive audience models, or content optimisation engines can qualify. The question is whether you're applying existing machine learning libraries in an obvious way, or whether you're developing new approaches to solve problems specific to your data.</p>
 
-<p>I worked with a digital agency that built a custom NLP (natural language processing) model to analyse social media sentiment across multiple languages. Off-the-shelf sentiment tools didn't handle the slang and regional variations in their clients' sectors. The team had to develop new training datasets and modify existing models to get usable results. That qualified.</p>
+<p>Take a digital agency that builds a custom NLP (natural language processing) model to analyse social media sentiment across multiple languages. Off-the-shelf sentiment tools don't handle the slang and regional variations in its clients' sectors. The team has to develop new training datasets and modify existing models to get usable results. That qualifies.</p>
 
 <h3>Data Processing and Integration</h3>
 

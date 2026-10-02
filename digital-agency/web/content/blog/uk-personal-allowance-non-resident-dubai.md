@@ -81,7 +81,7 @@ keyTakeaways:
 
 <p>But there's a catch. If your UK-source income exceeds the personal allowance, you pay tax on the excess at the appropriate rates. And if your UK-source income is below the personal allowance, you pay no UK tax on it at all.</p>
 
-<p>Let's look at a real example.</p>
+<p>Let's look at an illustrative example.</p>
 
 <h3>Example: Sarah, Digital Agency Founder in Dubai</h3>
 

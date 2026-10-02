@@ -89,7 +89,7 @@ export const practiceSaleConfig: PremiumToolConfig = {
       max: 5000000,
       step: 5000,
       advanced: true,
-      help: "Note: WIP realised on sale is taxed as income, not as a capital gain (HP §4, ITTOIA 2005 ss.182 to 185)",
+      help: "Note: WIP realised on sale is taxed as income, not as a capital gain (ITTOIA 2005 ss.182 to 185)",
     },
     {
       id: "tangibleAssets",
@@ -234,7 +234,7 @@ export const practiceSaleConfig: PremiumToolConfig = {
         { label: "Net proceeds after CGT", value: gbp(cgt.netProceeds), strong: true },
       ],
       chart: { data: chartData },
-      note: "Goodwill multiples are indicative 2025/26 UK market ranges, not a formal valuation. BADR requires a qualifying business asset interest held for at least two years; a salaried or re-classified member (ITTOIA 2005 ss.863A to 863G) may not qualify (HP §2.A). WIP realised on sale of a law firm is taxed as an income receipt, not a capital gain (HP §4, ITTOIA 2005 ss.182 to 185): the seller's real tax is a mix of CGT on goodwill and income tax on WIP; this tool shows only the CGT layer. Transferring client-account balances on a sale requires client consent (HP §5). These are estimates, not advice for your firm.",
+      note: "Goodwill multiples are indicative 2025/26 UK market ranges, not a formal valuation. BADR requires a qualifying business asset interest held for at least two years; a salaried or re-classified member (ITTOIA 2005 ss.863A to 863G) may not qualify. WIP realised on sale of a law firm is taxed as an income receipt, not a capital gain (ITTOIA 2005 ss.182 to 185): the seller's real tax is a mix of CGT on goodwill and income tax on WIP; this tool shows only the CGT layer. Transferring client-account balances on a sale requires client consent. These are estimates, not advice for your firm.",
     };
   },
   chart: {
@@ -249,7 +249,7 @@ export const practiceSaleConfig: PremiumToolConfig = {
     heading: "How this planner works",
     paragraphs: [
       "The goodwill value is estimated from your normalised annual profit multiplied by an indicative market range. The range varies by firm type (sole practitioner, partnership/LLP, specialist and high-volume each attract different multiples), region (London commands a premium; north and Wales carry a discount) and buyer demand conditions. WIP and tangible assets are added to give an indicative total value.",
-      "The CGT and BADR layer takes the estimated chargeable gain (defaulting to the mid-point goodwill), deducts the £3,000 Annual Exempt Amount, and applies Business Asset Disposal Relief at 18% (from 6 April 2026, HP verification log) within the £1,000,000 lifetime limit. Gains above the BADR limit are taxed at standard CGT rates: 18% within any remaining basic-rate band and 24% above, effective from 30 October 2024 (HP §9).",
+      "The CGT and BADR layer takes the estimated chargeable gain (defaulting to the mid-point goodwill), deducts the £3,000 Annual Exempt Amount, and applies Business Asset Disposal Relief at 18% (from 6 April 2026) within the £1,000,000 lifetime limit. Gains above the BADR limit are taxed at standard CGT rates: 18% within any remaining basic-rate band and 24% above, effective from 30 October 2024.",
       "Important: unbilled WIP realised on a firm sale is an income receipt under ITTOIA 2005 ss.182 to 185, taxed as trading income rather than as a capital gain. The total tax on a practice sale is therefore a combination of CGT on the goodwill and income tax on any WIP realised, which this tool models separately.",
     ],
   },

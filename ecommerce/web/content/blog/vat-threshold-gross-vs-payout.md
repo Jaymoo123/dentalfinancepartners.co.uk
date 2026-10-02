@@ -158,7 +158,7 @@ faqs:
 
 <h2>What to do once you cross the threshold: the generic mechanics</h2>
 
-<p>The mechanics of VAT registration itself (completing VAT1, choosing an effective date, understanding your first return period) are covered in detail by our generalist partners at <a href="https://www.hollowaydavies.co.uk/blog/vat-and-making-tax-digital/vat-threshold-2025-26">Holloway Davies: VAT threshold guide</a>. We do not re-explain those mechanics here because they apply to any VAT-registered business and are not specific to marketplace sellers.</p>
+<p>The mechanics of VAT registration itself (completing VAT1, choosing an effective date, understanding your first return period) apply to any VAT-registered business and are not specific to marketplace sellers, so we do not re-explain them here. HMRC's <a href="https://www.gov.uk/vat-registration">VAT registration guidance</a> covers them, and we handle the registration for our clients.</p>
 
 <p>What is specific to marketplace sellers is making sure that the gross figures (not the payout figures) feed your VAT returns from day one, and that your settlement reconciliation correctly strips out the fees rather than treating the payout as the supply value. Our <a href="/services/settlement-payout-reconciliation">settlement and payout reconciliation service</a> covers exactly that.</p>
 

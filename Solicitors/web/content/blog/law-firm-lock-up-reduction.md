@@ -64,7 +64,7 @@ faqs:
 
 <p>Consider requiring payments on account for new clients or matters with uncertain outcomes. This reduces your exposure and improves cash flow timing.</p>
 
-<h3>Optimize Matter Management</h3>
+<h3>Optimise Matter Management</h3>
 
 <p>Effective matter management directly impacts lock-up levels. Long-running files with irregular billing create cash flow problems.</p>
 
@@ -78,7 +78,7 @@ faqs:
 
 <h2>Technology Solutions for Lock-Up Management</h2>
 
-<p>Modern practice management systems provide powerful tools for law firm lock-up reduction. Key features to utilize include:</p>
+<p>Modern practice management systems provide powerful tools for law firm lock-up reduction. Key features to utilise include:</p>
 
 <ul>
 <li>Automated time recording reminders</li>

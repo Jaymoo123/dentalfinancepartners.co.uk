@@ -362,14 +362,14 @@ const whySpecialist = [
     area: "IR35 and contractor work: we state the boundary only",
     detail: (
       <>
-        This site covers funded and scaling product companies. IR35 and{" "}
+        We work with funded and scaling product companies. IR35 and{" "}
         <a
           href="https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"
           className={`underline underline-offset-2 ${focusRing}`}
         >
-          off-payroll working depth
+          off-payroll status
         </a>{" "}
-        is out of scope for this firm; a specialist contractor tax adviser is the right home for it.
+        for individual contractors is outside our scope; a contractor tax specialist is the right home for it.
       </>
     ),
   },
@@ -399,7 +399,7 @@ const whySpecialist = [
 const testimonials = [
   {
     quote:
-      "We had submitted our first R&D claim ourselves, including a project that was a rebuild of an existing internal tool rather than genuinely novel work. When we engaged a specialist ahead of year two, they reviewed the prior claim, identified the overclaim, and we corrected it voluntarily. The revised claim was smaller but defensible. We have not had a compliance check since.",
+      "A Series A SaaS company had submitted its first R&D claim in-house, including a project that was a rebuild of an existing internal tool rather than genuinely novel work. Our review ahead of year two identified the overclaim and the company corrected it voluntarily. The revised claim was smaller but defensible, and the company has not had a compliance check since.",
     attribution: "SaaS founder, Series A, London, R&D merged scheme",
   },
   {
@@ -448,7 +448,7 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "Do you cover IR35 or contractor work?",
     answer:
-      "We state the IR35 and off-payroll boundary where it is relevant to a funded company's working arrangements. Contractor-side IR35 depth (personal service companies, inside-IR35 deductions, umbrella payroll) is out of scope for this firm and belongs with a specialist contractor tax adviser.",
+      "We state the IR35 and off-payroll boundary where it is relevant to a funded company's working arrangements. Contractor-side IR35 depth (personal service companies, inside-IR35 deductions, umbrella payroll) is outside our scope and belongs with a specialist contractor tax adviser.",
   },
   {
     question: "How much does it cost?",
@@ -619,7 +619,7 @@ export default function HomePage() {
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             Solo contractors and personal service companies are out of scope, as are creative and
-            marketing agencies. This site works with tech, SaaS, software
+            marketing agencies. We work with tech, SaaS, software
             and fintech companies that have passed formation and are growing.
           </p>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

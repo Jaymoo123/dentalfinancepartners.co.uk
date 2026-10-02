@@ -81,7 +81,7 @@ export const associateTakeHomeConfig: PremiumToolConfig = {
       max: 60000,
       step: 500,
       advanced: true,
-      help: "Deducted from taxable profit under the practitioner arrangement. Not all associate agreements qualify (HP §2.C).",
+      help: "Deducted from taxable profit under the practitioner arrangement. Not all associate agreements qualify.",
     },
     {
       id: "dayRate",
@@ -187,7 +187,7 @@ export const associateTakeHomeConfig: PremiumToolConfig = {
             },
           }
         : {}),
-      note: "2025/26 to 2026/27 basis (income-tax bands unchanged; Class 2 NIC not payable from 6 April 2024). Sole-trader associate only: the Ltd associate route is not modelled in the headline take-home line. NHS Pension contributions are treated as deductible from taxable profit under the practitioner arrangement, but not all associate agreements qualify (HP §2.C). The locum-structure comparison uses 2026/27 rates (employer NIC 15% above the £5,000 secondary threshold from 6 April 2025). The Ltd locum route loses NHS Pension access on the dividend portion, and IR35 can change the answer on NHS engagements (HP §1.A). Umbrella assumes a 5% margin. Excludes student loan repayments and Marriage Allowance. These are estimates, not advice for your practice.",
+      note: "2025/26 to 2026/27 basis (income-tax bands unchanged; Class 2 NIC not payable from 6 April 2024). Sole-trader associate only: the Ltd associate route is not modelled in the headline take-home line. NHS Pension contributions are treated as deductible from taxable profit under the practitioner arrangement, but not all associate agreements qualify. The locum-structure comparison uses 2026/27 rates (employer NIC 15% above the £5,000 secondary threshold from 6 April 2025). The Ltd locum route loses NHS Pension access on the dividend portion, and IR35 can change the answer on NHS engagements. Umbrella assumes a 5% margin. Excludes student loan repayments and Marriage Allowance. These are estimates, not advice for your practice.",
     };
   },
   chart: {
@@ -201,7 +201,7 @@ export const associateTakeHomeConfig: PremiumToolConfig = {
   explainer: {
     heading: "How this planner works",
     paragraphs: [
-      "Your associate take-home starts with the gross fees you generate, not the fees billed. Your fee split (typically 40 to 50%) gives your associate share. Lab fees come off that share, then your deductible expenses, then any NHS Pension contribution (under the practitioner arrangement, HP §2.C). The result is your taxable profit, which is subject to income tax at 20%, 40% or 45%, plus Class 4 National Insurance at 6% (up to £50,270) and 2% above. Class 2 NIC is not payable from 6 April 2024. The figures are on a 2025/26 to 2026/27 basis: the income-tax bands are unchanged between the two years.",
+      "Your associate take-home starts with the gross fees you generate, not the fees billed. Your fee split (typically 40 to 50%) gives your associate share. Lab fees come off that share, then your deductible expenses, then any NHS Pension contribution (under the practitioner arrangement). The result is your taxable profit, which is subject to income tax at 20%, 40% or 45%, plus Class 4 National Insurance at 6% (up to £50,270) and 2% above. Class 2 NIC is not payable from 6 April 2024. The figures are on a 2025/26 to 2026/27 basis: the income-tax bands are unchanged between the two years.",
       "Your fee split is not your take-home. A common planning error is to read the headline split percentage as the take-home percentage. Once lab fees, expenses, and the tax charge are accounted for, the effective take-home on a typical associate income can be 20 to 30 percentage points below the fee-split rate.",
       "The locum-structure panel compares three routes at your chosen day rate and working days: as a self-employed sole trader (Class 4 NIC on profit, no Class 2 and no employer NIC), through a limited company (£12,570 director salary plus dividends, 2026/27 dividend rates of 10.75%/35.75%/39.35%, employer NIC at 15% above the £5,000 secondary threshold, £1,800 annual admin), and through an umbrella company (a 5% umbrella margin, then employer NIC at 15% above £5,000 and PAYE on the balance). The comparison is indicative: the Ltd route loses NHS Pension access on the dividend portion and IR35 can override it on NHS engagements.",
     ],
