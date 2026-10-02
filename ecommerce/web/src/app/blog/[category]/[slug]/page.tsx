@@ -64,17 +64,23 @@ export default async function BlogPostPage({ params }: Props) {
     <div className="mx-auto max-w-6xl px-6 py-16 lg:grid lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-12 lg:items-start">
       <ReadingProgress />
       <div className="max-w-3xl lg:order-1">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: post.title, description: post.metaDescription, url: `/blog/${category}/${slug}`, dateModified: post.updatedDate || post.date }) }} />
-      {post.faqs && post.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: post.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer.replace(/<[^>]+>/g, "") },
-        })),
-      }) }} />}
-      {post.howToSteps && post.howToSteps.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildHowToJsonLd(post)) }} />}
+      {post.schema?.trim() ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: post.schema }} />
+      ) : (
+        <>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildArticleJsonLd({ title: post.title, description: post.metaDescription, url: `/blog/${category}/${slug}`, dateModified: post.updatedDate || post.date }) }} />
+          {post.faqs && post.faqs.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: post.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: { "@type": "Answer", text: faq.answer.replace(/<[^>]+>/g, "") },
+            })),
+          }) }} />}
+          {post.howToSteps && post.howToSteps.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildHowToJsonLd(post)) }} />}
+        </>
+      )}
       <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
         <Link href="/blog" className="hover:underline">Blog</Link> / <Link href={`/blog/${category}`} className="hover:underline">{post.category}</Link>
       </p>
@@ -92,6 +98,19 @@ export default async function BlogPostPage({ params }: Props) {
       >
         {niche.blog.cta_heading}
       </a>
+      {post.keyTakeaways && post.keyTakeaways.length > 0 && (
+        <section id="answer-box" className="not-prose mt-8 rounded-md border border-slate-200 p-6">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Key takeaways</p>
+          <ul className="mt-3 space-y-2">
+            {post.keyTakeaways.map((t, i) => (
+              <li key={i} className="flex items-start gap-2 text-slate-800">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--brand-primary)] shrink-0" />
+                <span className="text-base leading-relaxed">{t}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {headings.length >= 3 && (
         <div className="mt-8 lg:hidden">
           <TableOfContents headings={headings} />
