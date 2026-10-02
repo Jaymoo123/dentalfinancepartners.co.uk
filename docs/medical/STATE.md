@@ -1863,3 +1863,5 @@ tsc: `npx tsc --noEmit -p Medical/web` clean, zero errors. vitest: `npx vitest r
 `Medical/web`, 538 of 539 tests, one isolated flake in `medical-tools.test.ts` unrelated to this
 pass (passes clean when run alone; timing issue in the full-suite run, not caused by any edit
 here).
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

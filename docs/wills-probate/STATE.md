@@ -125,3 +125,5 @@ Topic pool ranked and wave-bucketed: wave1=14, wave2=13, wave3=28, wave4=64.
 - Prohibited topics: equity release, pension product recommendations/transfers,
   contentious probate legal strategy, personal injury, claims management.
 - Jurisdiction default: England and Wales; state explicitly where Scotland differs.
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

@@ -662,3 +662,5 @@ Full record: `WAVE1_TRACKER.md`.
 ### Model tiering observed
 
 Sonnet: scaffold, configs, cluster writes, cluster panels, all docs. Opus: house_positions, 3 pillar writes, 3 pillar panels, 1 batched fact-auditor. Haiku: banned from content. DeepSeek: banned. Per memory `feedback_no_deepseek_opus_only` Amendment 4.
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

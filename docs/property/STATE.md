@@ -2050,3 +2050,5 @@ A deploy ships the whole `main` HEAD (every committed-but-undeployed page goes l
 **FinanceMortgage (2):** `buy-to-let-refinancing-when-does-it-make-sense` ↔ `refinancing-rental-property-when-does-it-make-financial-sense` are near-dupes of EACH OTHER — write one, commit, then the second differentiates.
 
 **Incorporation seconds B/C (11):** the 11 in §2's NOT-STARTED list — same near-dupe groups as sub-batch A; compose B (one per group) then C.
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

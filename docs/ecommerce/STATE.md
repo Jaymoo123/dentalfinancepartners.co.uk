@@ -904,3 +904,5 @@ Index data run DONE 2026-07-15 (commit 73d25cc4); cohort survival curves deferre
 - [ ] Real phone number into `ecommerce/niche.config.json` -> contact.phone (placeholder ships as +44 20 0000 0000)
 - [ ] Brand assets: `public/brand/primary-logo.png` + `public/brand/icon-alt.png` (OG image route depends on them)
 - [ ] Resend routing ONLY if a partner firm is signed (partner CC only on partnered sites; otherwise leads route to owner inbox)
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

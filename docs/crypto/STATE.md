@@ -880,3 +880,5 @@ crypto-only fix). Needs the plumbing/shared agent: `optimisation_engine/indexing
 config.py` SITE_INDEXNOW_CONFIG has no `"crypto"` entry yet (host + key; key value
 now exists at `crypto/web/public/e5d6de7b226b004b5a743f74a184c0b6.txt`), and
 `google_analytics_id` is still empty in niche.config.json.
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

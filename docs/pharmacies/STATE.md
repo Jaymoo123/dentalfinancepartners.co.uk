@@ -141,3 +141,5 @@ territory per brief section 8, not touched here.
 audience-bespoke; Aswatax intro wording on `/thank-you` was left as-is (already correct per the
 research reader pass); `house_positions.md` (last touched 2026-07-14) was not re-checked against
 current ground-truth memory in this pass.
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

@@ -463,3 +463,5 @@ Project is still NAMED `contractor-finance-partners` (cosmetic).
 | `web_events` | "21 rows" (launch-day figure) | **5,427** |
 | Build size | "153 pages" | **UNVERIFIED at HEAD**; the phase 0 link floor crawled **157 URLs** at SHA `18b4f25f` |
 | Port status | no pickup block at all | see the PICKUP block at the top |
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

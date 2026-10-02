@@ -605,3 +605,5 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
   different inputs, each derivable). tsc clean, vitest 309/309. [deployed 2026-09-16, 90fbea9c]
   Standing rule for this file: a figure is allowed only if the paragraph states the
   facts that produce it, and the relief is chosen by the scenario, never for variety.
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

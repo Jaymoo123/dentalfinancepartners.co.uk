@@ -1264,3 +1264,5 @@ All substantive staleness-hit-list items (B1-B11 + B12-clear) done: SRA £250 ex
 - Rewrite worklist: `docs/solicitors/rewrite_worklist_2026-06-12.md`. Tier A+B = 2 pages (both Bing-dominant, both in SERP meta cooldown until 2026-06-26). Tier C = 38 deferred.
 - generator: frontmatter field now stamped on all posts and written by all pipelines going forward (see docs/_engines/ENGINE_MAP_AND_ONBOARDING.md section 5).
 - Methodology: docs/deepseek_quality_audit_2026-06-12.md + docs/provenance_summary_2026-06-12.md + docs/_engines/rewrite_gold_patterns.md.
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

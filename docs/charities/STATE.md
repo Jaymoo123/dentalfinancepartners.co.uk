@@ -490,3 +490,5 @@ sweeps, the 2026-08-24 consent-wording revert) is live and was deployed before t
 - [ ] Real phone number into `charities/niche.config.json` -> contact.phone (placeholder ships as +44 20 0000 0000)
 - [ ] Brand assets: `public/brand/primary-logo.png` + `public/brand/icon-alt.png` (OG image route depends on them)
 - [ ] Resend routing ONLY if a partner firm is signed (partner CC only on partnered sites; otherwise leads route to owner inbox)
+
+- 2026-10-02 Phase 0 pre-live gate (GEO programme): firm-voice, em-dash, pipeline-leak and engagement-claim sweep plus a rendered read at 1280/390 with fixes; local, committed, not deployed. Detail and open owner items: `docs/_engines/LEADS_250_PROGRAMME_2026-09-27.md` section 14.

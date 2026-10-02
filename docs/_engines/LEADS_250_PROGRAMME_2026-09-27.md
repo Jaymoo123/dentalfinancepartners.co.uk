@@ -113,9 +113,9 @@ And one thing we must do to know whether any of it works:
 
 - Google Business Profile: banned, suspension risk. Bing Places is the same class of risk;
   not proposed unless the owner wants it (decision 3).
-- Directory listings that describe a site as an accountancy firm: the sites are referral
-  networks, not practices. A listing that says otherwise is a false claim
-  (see `ESTATE_CLAIMS_INTEGRITY`). Not doing.
+- Directory listings: deferred. The 2026-09-28 ruling makes each brand the firm on every
+  prospect-facing surface (the earlier "referral network, not a practice" framing is dead), but
+  directory listings are an off-site claim with its own sign-off; not in this lane.
 - Reviews or ratings schema: no real reviews exist. Not doing.
 - Robots and bot access: audited live 2026-09-27, all AI crawlers allowed on all 15 sites,
   bot user-agents get identical HTML. Nothing to fix; robots.txt is hand-copied per site
@@ -305,6 +305,73 @@ is position (mid-list to top 3), coverage (every buyer situation has a page), co
 (one run is one sample; the monthly read uses three runs per prompt and a 30-prompt set),
 and volume (302 AI sessions a month while named 7 of 9 says the constraint is how many
 people ask and how often we are the one they click).
+
+## 14. Phase 0 pre-live integrity gate (2026-10-02)
+
+Plan: `.claude/plans/i-mean-let-s-do-twinkly-glade.md` (GEO programme, four phases). Phase 0 is
+the gate before the owner deploys the ~232 local commits across 17 sites. Everything here is local
+and committed; nothing pushed, deployed or submitted.
+
+What the sweep found and fixed, by class (all 17 sites, `ashfield` exempt):
+
+1. **Firm voice.** The 2026-09-28 ruling (the brand is the firm) had reached only the priority
+   five. Roughly 900 sentences on the other twelve, plus leftovers on the five, framed the brand as
+   a partner network, matcher, introducer, information service or fee-earning referrer: Solicitors
+   H1 "Specialist accountancy matching", Dentists homepage and 26 posts, wills and divorce
+   homepages ("free information service, not a law firm... the firm we introduce you to may pay us
+   a fee"), Medical "we publish the research and match enquiries to a regulated firm in our
+   partner network" in 21 posts, every site's reply-ack SMS, complete and thank-you pages. All
+   rewritten in first-person firm voice. Kept by rule: `leadConsentText`, privacy, terms, genuine
+   third-party referrals (solicitor, broker, IFA, independent examiner).
+2. **Em-dashes** in rendered copy: 267 (240 on Solicitors), now 0; rewritten as sentences, not swapped.
+3. **Pipeline leaks** rendering as copy: "House position §19.16", "(HP §5)" in calculator help text
+   on six sites, "Wave 6 B3 (forthcoming)", "the honesty moat on this page", "the only conversion on
+   this page", "deduplicated from the generic locum guidance", "sibling Contractor Tax Accountants
+   site", "content must be dated", "England default." All removed; Property alone had 115 lines.
+4. **Fabricated-engagement claims**: "I worked with a 14-person agency in Manchester", "a client of
+   ours sold a unit in Glasgow", quotes under "REAL OUTCOMES" with a composite disclaimer. 53 on
+   digital-agency, 14 on generalist, plus "Real example" labels, all reframed as illustrative;
+   outcome blocks retitled "Composite outcomes" with no quotation marks.
+5. **Rendered read** of every site at 1280 and 390 (homepage, about, services or audience page, one
+   post, one calculator) by an Opus reviewer, then fix loops: ecommerce About page was a live
+   placeholder and its homepage sent buyers to hollowaydavies.co.uk (eleven pointers removed, About
+   written from the site's own service config); Solicitors FAQ answered "Who delivers the report?"
+   with "Yes." and had the Accountant's Report deadline wrong (4 months, now 6 per the SRA rules);
+   digital-agency calculator showed two tax years; wills and divorce blog forms had a submit button
+   reading "Use the free calculators" (one `blog.cta_button` config value); response-time claims on
+   wills and divorce said one, two and "a few" working days on the same site.
+6. **Shared-kit defects fixed once**: footer listed Contact twice on eight sites
+   (`packages/web-shared/design/chrome/SiteFooter.tsx` now dedupes by href); the "Ask a specialist"
+   assistant auto-opened over the primary CTA on phones (kit and all ten site-local forks now
+   skip auto-open under 768px); pharmacies and care had no mobile navigation at all (added).
+7. **"Fixed fee in writing"** survived the 2026-09-30 revert in every `niche.config.json`
+   `entity.howItWorks`, six `llms.txt` files, care's services eyebrow and generalist copy; now
+   "we agree the scope and the fee before any work starts" / "a clear quote".
+8. **Tests**: five `lead-dossier` / `concierge` tests asserted the old partner-firm strings and the
+   construction-cis CTA snapshot pinned a removed link; updated. Known pre-existing failure:
+   `lead-submit-route.test.ts` route-module import timeout on Dentists and wills-probate.
+
+Build gate (`tsc`, `vitest`, `next build` per site, serialised, dev servers stopped): 17 of 17 green (tsc, vitest, next build), run 12:46 to 13:07 on 2026-10-02. `python scripts/check_dependency_closure.py` OK.
+
+Open owner items surfaced by the read (not fixable by copy):
+- The consent line under every form still says "your details may be shared with a firm from our
+  specialist partner network... passed to another firm in the network", directly beneath "one of
+  our own specialists will call you". It is the carve-out from the ruling, and it is the point at
+  which two reviewers said they would stop. Needs a ruling on the consent wording.
+- Medical `/contact` has no phone number and no email; no site names an accountant, a
+  qualification or a professional-body registration; "You'll get a text and email from us right
+  away. A quick reply locks in your callback" reads as a funnel.
+- Aswatax post-submit intro email (`Property/web/src/lib/leads/handoff-intro.ts:584`) names the
+  partner firm to the lead; open since 09-09.
+- Year labels: Medical and others still carry "2025/26" beside figures that are unchanged in
+  2026/27 (Class 4 NIC, MPAA, income bands). A year-label sweep, not a Phase 0 item.
+- Lead surface removed: construction-cis calculator pages went from three forms to one (the
+  resource-gate capture and a duplicate LeadForm were dropped). Deliberate; say if you want the
+  resource gate back.
+- The old "What we are not" entity block is gone by ruling and must not be re-added (`d4a68b95`).
+
+Agents used in Phase 0: about 60 against the 20 to 25 quoted. The overrun was discovered scope
+(the leak and engagement-claim classes, the twelve unswept sites), reported as it grew.
 
 ## 9. Cost and agents
 
