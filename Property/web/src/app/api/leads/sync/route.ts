@@ -28,6 +28,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import crypto from "node:crypto";
 import { prependLeadRow, sheetsConfigured } from "@/lib/leads/google-sheets";
+import { SHEET_EXCLUDED_SOURCES } from "@/lib/lead-routing";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -111,6 +112,12 @@ export async function POST(req: NextRequest) {
   const r = payload.record;
   if (!r || !r.email) {
     return NextResponse.json({ ok: false, error: "No record" }, { status: 400 });
+  }
+
+  // The legal sites are run separately from the accountancy hand-off and never
+  // appear in the triager's sheet (owner instruction 2026-10-05).
+  if (SHEET_EXCLUDED_SOURCES.includes((r.source || "").trim().toLowerCase())) {
+    return NextResponse.json({ ok: true, skipped: "source-excluded" });
   }
 
   // Columns A-I of the Lead Tracker sheet, in order. This array IS the contract:

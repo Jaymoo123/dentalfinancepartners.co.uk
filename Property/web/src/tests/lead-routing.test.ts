@@ -38,6 +38,12 @@ describe("resolveLeadCc", () => {
     expect(resolveLeadCc("test", empty)).toEqual([]);
   });
 
+  it("never copies the partner on the two legal sites (owner instruction 2026-10-05)", () => {
+    expect(resolveLeadCc("wills-probate", empty)).toEqual([]);
+    expect(resolveLeadCc("divorce-finances", empty)).toEqual([]);
+    expect(resolveLeadCc("Wills-Probate", empty)).toEqual([]);
+  });
+
   it("copies the partner when source is missing or empty", () => {
     expect(resolveLeadCc(undefined, empty)).toEqual([DEFAULT_PARTNER_CC]);
     expect(resolveLeadCc("", empty)).toEqual([DEFAULT_PARTNER_CC]);
@@ -61,9 +67,9 @@ describe("resolveLeadCc", () => {
 });
 
 describe("ccExcludedSources", () => {
-  it("defaults to synthetic test leads only", () => {
-    expect(ccExcludedSources(empty)).toEqual(["test"]);
-    expect(DEFAULT_CC_EXCLUDED_SOURCES).toBe("test");
+  it("defaults to synthetic test leads plus the two legal sites", () => {
+    expect(ccExcludedSources(empty)).toEqual(["test", "wills-probate", "divorce-finances"]);
+    expect(DEFAULT_CC_EXCLUDED_SOURCES).toBe("test,wills-probate,divorce-finances");
   });
 });
 

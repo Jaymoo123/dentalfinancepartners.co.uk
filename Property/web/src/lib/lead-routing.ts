@@ -22,8 +22,13 @@
 // Partner CC removed 2026-07-17, reinstated 2026-09-01 (owner instruction):
 // Umair at Property Tax Partners is copied on every site's lead notifications
 // except synthetic test leads. LEADS_NOTIFY_CC overrides this default outright.
+// 2026-10-05 (owner instruction): the two legal sites are run separately from
+// the accountancy hand-off. Their leads go to the owner only: no partner CC and
+// (see /api/leads/sync) no Lead Tracker row.
 export const DEFAULT_PARTNER_CC = "umair@propertytaxpartners.co.uk";
-export const DEFAULT_CC_EXCLUDED_SOURCES = "test";
+export const DEFAULT_CC_EXCLUDED_SOURCES = "test,wills-probate,divorce-finances";
+/** Sites kept out of the shared Lead Tracker sheet (owner instruction 2026-10-05). */
+export const SHEET_EXCLUDED_SOURCES = ["wills-probate", "divorce-finances"];
 
 // Lead-notification recipient (the "to"). Property's own leads go to the
 // dedicated Ashfield Trading inbox (the partner-forwarding inbox); every other site's leads
