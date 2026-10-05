@@ -32,6 +32,8 @@ Owner asked why Property leads felt lower. Traced deploy by deploy (Vercel prod 
 
 **DEPLOYED 2026-09-30 ~11:40 UTC:** wording revert `53584398` shipped ALONE on top of the live commit as `bb8d6bb5` (branch `deploy/property-copy-revert`, dpl_2kb42wc9FE3VKtA9CDXYL2xYhggy), owner decision. Live check: "free first call" 0 on homepage and contact, "free consultation" back. Phase 0 bundle and kit changes after `815ae7de` remain undeployed by design. Read: contact-form starts by real visitors, 4 for Mon to Wed 10am vs 7 to 11 normal; judge Friday 2026-10-03.
 
+**READ 2026-10-05 (Mon 10:46 UTC, pulled live from `leads` + `web_events`, test rows excluded):** revert HELD. Property leads 11 in the 4.5 days after the 09-30 deploy (Wed pm to Sun) vs 2 in the two days before it and ~16/wk baseline; by form_id: 5 contact/main, 3 `calc_result_form`, 2 `inline_mini`, 1 `mobile_tool`. Non-bot Property form_start per day Wed to Sun = 21, 13, 24, 11, 16 (Mon 09-28 figure of 24 is probe-polluted). Non-bot Property page views flat at 310 to 335 weekdays. Estate week Mon 09-28 to Sun 10-04 = 31 leads, best since w/c 08-24. No regression from either deploy; `calc_pdf_offer` still true in `site_flags` (code gone, owner SQL pending). Next read: week ending 2026-10-11, bar = Property >= 12 leads in 7 days (handoff A.0).
+
 **Open (owner call):** apply the one-form-per-page rule to Solicitors, Dentists and Generalist blog posts so the dead free-review form stops competing; follow-up gap (35% of leads unreachable, two complaints of no call back); `site_flags.calc_pdf_offer.enabled` still true with the code gone.
 
 ## 2026-09-28 phase 0 parity (not yet deployed)
